@@ -77,7 +77,9 @@ The exact same circuit (with identical component values: $R_G=3.3\text{M}\Omega$
 ### 3.2 Wien Bridge Oscillator Design
 
 "Design a Wien bridge oscillator at frequency $f_o$" appeared in **6 out of 8 years** with varying target frequencies ($10\text{ kHz}$, $15\text{ kHz}$, or $20\text{ kHz}$). The solution method is always identical:
-$$f_o = \frac{1}{2\pi RC}, \quad R_f = 2R_1$$
+$$
+f_o = \frac{1}{2\pi RC}, \quad R_f = 2R_1
+$$
 
 ### 3.3 The JFET Low-Cutoff Frequency Circuit
 

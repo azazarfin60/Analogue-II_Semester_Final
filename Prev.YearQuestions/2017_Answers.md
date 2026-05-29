@@ -88,14 +88,20 @@ The circuit is a JFET common-source amplifier employing **voltage-series negativ
 **1. Gain without feedback ($A$):**
 Without the feedback loop closed, the voltage gain is simply the open-loop gain of the JFET stage.
 The equivalent load resistance at the drain is $R_L' = R_D \parallel R_L \parallel (R_1 + R_2)$. Assuming $(R_1 + R_2) = 120\text{ k}\Omega$ is much larger than $R_D = 10\text{ k}\Omega$ and $R_L = 10\text{ k}\Omega$, we approximate $R_L' \approx R_D \parallel R_L = 5\text{ k}\Omega$.
-$$A = -g_m R_L' = -5800\times 10^{-6}\text{ S} \times 5000\ \Omega = -29$$
+$$
+A = -g_m R_L' = -5800\times 10^{-6}\text{ S} \times 5000\ \Omega = -29
+$$
 
 **2. Feedback Factor ($\beta$):**
 The feedback network samples the output voltage and returns a fraction to the source terminal.
-$$\beta = -\frac{R_2}{R_1 + R_2} = -\frac{20\text{ k}\Omega}{100\text{ k}\Omega + 20\text{ k}\Omega} = -\frac{20}{120} = -0.1667$$
+$$
+\beta = -\frac{R_2}{R_1 + R_2} = -\frac{20\text{ k}\Omega}{100\text{ k}\Omega + 20\text{ k}\Omega} = -\frac{20}{120} = -0.1667
+$$
 
 **3. Gain with feedback ($A_f$):**
-$$A_f = \frac{A}{1 + \beta A} = \frac{-29}{1 + (-0.1667)(-29)} = \frac{-29}{1 + 4.834} = \frac{-29}{5.834} = -4.97$$
+$$
+A_f = \frac{A}{1 + \beta A} = \frac{-29}{1 + (-0.1667)(-29)} = \frac{-29}{1 + 4.834} = \frac{-29}{5.834} = -4.97
+$$
 
 **Change in Gain:**
 *   Gain without feedback: $-29$
@@ -122,13 +128,21 @@ It is called a mirror because the current in the output branch is an exact refle
 **Solution:**
 This is a standard Wilson Current Mirror configuration.
 First, we calculate the reference current ($I_{ref}$) set by resistor $R = 1.3\text{ k}\Omega$. The voltage drop across $R$ is $V_{CC}$ minus the two base-emitter drops of $Q_1$ and $Q_3$ (or $Q_2$ and $Q_3$).
-$$I_{ref} = \frac{V_{CC} - V_{BE1} - V_{BE3}}{R} = \frac{6\text{ V} - 0.7\text{ V} - 0.7\text{ V}}{1.3\text{ k}\Omega} = \frac{4.6\text{ V}}{1.3\text{ k}\Omega} = 3.538\text{ mA}$$
+$$
+I_{ref} = \frac{V_{CC} - V_{BE1} - V_{BE3}}{R} = \frac{6\text{ V} - 0.7\text{ V} - 0.7\text{ V}}{1.3\text{ k}\Omega} = \frac{4.6\text{ V}}{1.3\text{ k}\Omega} = 3.538\text{ mA}
+$$
 
 The exact output current $I$ (which is the collector current of $Q_3$ and ultimately equal to the collector current of $Q_2$) for a Wilson current mirror with finite $\beta$ is given by:
-$$I = I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + \beta}} \right)$$
+$$
+I = I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + \beta}} \right)
+$$
 For $\beta = 100$:
-$$\frac{2}{100^2 + 100} = \frac{2}{10100} \approx 0.000198$$
-$$I = 3.538\text{ mA} \times \left( \frac{1}{1.000198} \right) \approx 3.537\text{ mA}$$
+$$
+\frac{2}{100^2 + 100} = \frac{2}{10100} \approx 0.000198
+$$
+$$
+I = 3.538\text{ mA} \times \left( \frac{1}{1.000198} \right) \approx 3.537\text{ mA}
+$$
 
 Because the Wilson mirror is highly accurate, the current $I$ through $Q_3$ (the output transistor) and $Q_2$ are essentially identical.
 *   Current through $Q_3 \approx 3.537\text{ mA}$
@@ -143,18 +157,28 @@ Because the Wilson mirror is highly accurate, the current $I$ through $Q_3$ (the
     The emitters of both $Q_1$ and $Q_2$ are tied together and connected to the $-9\text{V}$ rail through $R_{EE} = 3.3\text{ k}\Omega$.
     Assuming ideal matched transistors and $0\text{V}$ DC at the bases, the voltage at the common emitter node is $V_E = -0.7\text{ V}$.
     The total tail current $I_{EE}$ is:
-    $$I_{EE} = \frac{V_E - (-V_{EE})}{R_{EE}} = \frac{-0.7\text{ V} - (-9\text{ V})}{3.3\text{ k}\Omega} = \frac{8.3\text{ V}}{3.3\text{ k}\Omega} = 2.515\text{ mA}$$
+    $$
+    I_{EE} = \frac{V_E - (-V_{EE})}{R_{EE}} = \frac{-0.7\text{ V} - (-9\text{ V})}{3.3\text{ k}\Omega} = \frac{8.3\text{ V}}{3.3\text{ k}\Omega} = 2.515\text{ mA}
+    $$
 
 2.  **Individual Emitter/Collector Currents:**
     Because the circuit is symmetrical and $0\text{V}$ is applied to both bases, the tail current splits exactly in half.
-    $$I_{E1} = I_{E2} = \frac{I_{EE}}{2} = \frac{2.515\text{ mA}}{2} = 1.2575\text{ mA}$$
+    $$
+    I_{E1} = I_{E2} = \frac{I_{EE}}{2} = \frac{2.515\text{ mA}}{2} = 1.2575\text{ mA}
+    $$
     Assuming $I_C \approx I_E$:
-    $$I_{C1} = I_{C2} \approx 1.2575\text{ mA}$$
+    $$
+    I_{C1} = I_{C2} \approx 1.2575\text{ mA}
+    $$
 
 3.  **Output DC Voltages:**
     The DC output voltages are measured at the collectors.
-    $$V_{o1} = V_{CC} - I_{C1}R_{C1} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 9\text{ V} - 4.904\text{ V} = 4.096\text{ V}$$
-    $$V_{o2} = V_{CC} - I_{C2}R_{C2} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 4.096\text{ V}$$
+    $$
+    V_{o1} = V_{CC} - I_{C1}R_{C1} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 9\text{ V} - 4.904\text{ V} = 4.096\text{ V}
+    $$
+    $$
+    V_{o2} = V_{CC} - I_{C2}R_{C2} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 4.096\text{ V}
+    $$
 
 Therefore, $V_{o1} = V_{o2} = 4.096\text{ V}$.
 
@@ -187,16 +211,24 @@ The inductors are in series: $L_{eq} = L_1 + L_2 = 30\ \mu\text{H} + 10\ \mu\tex
 The capacitors are in series: $C_{eq} = \frac{C_1 C_2}{C_1 + C_2} = \frac{0.01\ \mu\text{F}}{2} = 0.005\ \mu\text{F} = 5\text{ nF}$.
 
 **(i) Oscillation Frequency ($f_o$):**
-$$f_o = \frac{1}{2\pi \sqrt{L_{eq} C_{eq}}} = \frac{1}{2\pi \sqrt{40 \times 10^{-6} \times 5 \times 10^{-9}}}$$
-$$f_o = \frac{1}{2\pi \sqrt{200 \times 10^{-15}}} = \frac{1}{2\pi \sqrt{2 \times 10^{-13}}} = \frac{1}{2\pi (4.47 \times 10^{-7})} = 355.88\text{ kHz}$$
+$$
+f_o = \frac{1}{2\pi \sqrt{L_{eq} C_{eq}}} = \frac{1}{2\pi \sqrt{40 \times 10^{-6} \times 5 \times 10^{-9}}}
+$$
+$$
+f_o = \frac{1}{2\pi \sqrt{200 \times 10^{-15}}} = \frac{1}{2\pi \sqrt{2 \times 10^{-13}}} = \frac{1}{2\pi (4.47 \times 10^{-7})} = 355.88\text{ kHz}
+$$
 
 **(ii) Feedback Factor ($\beta$):**
 In this type of parallel LC oscillator (similar to Colpitts), the feedback fraction determined by the capacitive voltage divider is:
-$$\beta = \frac{C_1}{C_2} = \frac{0.01\ \mu\text{F}}{0.01\ \mu\text{F}} = 1$$
+$$
+\beta = \frac{C_1}{C_2} = \frac{0.01\ \mu\text{F}}{0.01\ \mu\text{F}} = 1
+$$
 
 **(iii) Required Voltage Gain ($A_v$):**
 To satisfy the Barkhausen criterion for sustained oscillation, the magnitude of the loop gain must be at least 1:
-$$|A_v \beta| \ge 1 \Rightarrow A_v \ge \frac{1}{\beta}$$
+$$
+|A_v \beta| \ge 1 \Rightarrow A_v \ge \frac{1}{\beta}
+$$
 Since $\beta = 1$, the minimum required voltage gain of the amplifier is $A_v = 1$.
 
 ---
@@ -251,14 +283,24 @@ A voltage follower (or unity-gain buffer) is created by tying the output of an o
 1.  Assume an ideal op-amp. The non-inverting terminal is at ground ($0\text{V}$). Due to the virtual ground concept, the inverting terminal voltage is also $V_n \approx 0\text{V}$.
 2.  Since the op-amp has infinite input impedance, no current flows into its inputs.
 3.  Therefore, the current flowing through the input capacitor $C_1$ must exactly equal the current flowing through the feedback resistor $R_f$.
-    $$i_C = i_R$$
+    $$
+    i_C = i_R
+    $$
 4.  The current through a capacitor is proportional to the rate of change of the voltage across it:
-    $$i_C = C_1 \frac{d}{dt} (V_i - V_n) = C_1 \frac{dV_i}{dt} \quad (\text{since } V_n = 0)$$
+    $$
+    i_C = C_1 \frac{d}{dt} (V_i - V_n) = C_1 \frac{dV_i}{dt} \quad (\text{since } V_n = 0)
+    $$
 5.  The current through the feedback resistor is:
-    $$i_R = \frac{V_n - V_o}{R_f} = -\frac{V_o}{R_f}$$
+    $$
+    i_R = \frac{V_n - V_o}{R_f} = -\frac{V_o}{R_f}
+    $$
 6.  Equating the two currents:
-    $$C_1 \frac{dV_i}{dt} = -\frac{V_o}{R_f}$$
-    $$V_o(t) = -R_f C_1 \frac{dV_i(t)}{dt}$$
+    $$
+    C_1 \frac{dV_i}{dt} = -\frac{V_o}{R_f}
+    $$
+    $$
+    V_o(t) = -R_f C_1 \frac{dV_i(t)}{dt}
+    $$
 
 This proves that the output voltage is directly proportional to the time derivative (rate of change) of the input voltage, scaled by the constant $-R_f C_1$.
 
@@ -279,17 +321,27 @@ This proves that the output voltage is directly proportional to the time derivat
 
 **Solution:**
 First, determine the closed-loop voltage gain ($A_{CL}$) of the inverting amplifier:
-$$A_{CL} = -\frac{R_f}{R_1} = -\frac{100\text{ k}\Omega}{10\text{ k}\Omega} = -10$$
+$$
+A_{CL} = -\frac{R_f}{R_1} = -\frac{100\text{ k}\Omega}{10\text{ k}\Omega} = -10
+$$
 
 The output voltage $v_o(t)$ is:
-$$v_o(t) = A_{CL} \times v_i(t) = -10 \times 10\sin(2\pi f t)\text{ mV} = -100\sin(2\pi f t)\text{ mV} = -0.1\sin(2\pi f t)\text{ V}$$
+$$
+v_o(t) = A_{CL} \times v_i(t) = -10 \times 10\sin(2\pi f t)\text{ mV} = -100\sin(2\pi f t)\text{ mV} = -0.1\sin(2\pi f t)\text{ V}
+$$
 The peak output voltage is $V_{p(out)} = 0.1\text{ V}$.
 
 The slew rate equation for a sinusoidal signal is:
-$$SR \ge 2\pi f_{max} V_{p(out)}$$
+$$
+SR \ge 2\pi f_{max} V_{p(out)}
+$$
 Given $SR = 0.5\text{ V}/\mu\text{s} = 0.5 \times 10^6\text{ V/s}$:
-$$0.5 \times 10^6 = 2\pi f_{max} (0.1)$$
-$$f_{max} = \frac{0.5 \times 10^6}{2\pi \times 0.1} = \frac{5 \times 10^6}{2\pi} \approx 795,774\text{ Hz} \approx 795.8\text{ kHz}$$
+$$
+0.5 \times 10^6 = 2\pi f_{max} (0.1)
+$$
+$$
+f_{max} = \frac{0.5 \times 10^6}{2\pi \times 0.1} = \frac{5 \times 10^6}{2\pi} \approx 795,774\text{ Hz} \approx 795.8\text{ kHz}
+$$
 
 For the maximum allowable peak input voltage across the entire operational bandwidth, without slew-rate distortion, the output peak voltage cannot exceed the saturation rails (typically $\pm 15\text{V}$ for standard op-amps). If limited by the rails, $V_{in(max)} = V_{sat} / |A_{CL}| \approx 15\text{V} / 10 = 1.5\text{V}$. However, for the specific $10\text{mV}$ signal, it can operate linearly up to $795.8\text{ kHz}$.
 
@@ -325,14 +377,26 @@ In a 555 astable multivibrator:
 *   Time low ($t_L$) = $0.693 R_B C$
 
 Given $t_L = 10\ \mu\text{s}$ and $C = 0.01\ \mu\text{F} = 10\text{ nF}$:
-$$10 \times 10^{-6} = 0.693 \times R_B \times 0.01 \times 10^{-6}$$
-$$R_B = \frac{10}{0.693 \times 0.01} = \frac{1000}{0.693} = 1443\ \Omega \approx 1.44\text{ k}\Omega$$
+$$
+10 \times 10^{-6} = 0.693 \times R_B \times 0.01 \times 10^{-6}
+$$
+$$
+R_B = \frac{10}{0.693 \times 0.01} = \frac{1000}{0.693} = 1443\ \Omega \approx 1.44\text{ k}\Omega
+$$
 
 Given $t_H = 20\ \mu\text{s}$:
-$$20 \times 10^{-6} = 0.693 (R_A + 1443) \times 0.01 \times 10^{-6}$$
-$$\frac{20}{0.693 \times 0.01} = R_A + 1443$$
-$$2886 = R_A + 1443$$
-$$R_A = 2886 - 1443 = 1443\ \Omega \approx 1.44\text{ k}\Omega$$
+$$
+20 \times 10^{-6} = 0.693 (R_A + 1443) \times 0.01 \times 10^{-6}
+$$
+$$
+\frac{20}{0.693 \times 0.01} = R_A + 1443
+$$
+$$
+2886 = R_A + 1443
+$$
+$$
+R_A = 2886 - 1443 = 1443\ \Omega \approx 1.44\text{ k}\Omega
+$$
 
 **Design Values:**
 $R_A = 1.44\text{ k}\Omega$, $R_B = 1.44\text{ k}\Omega$.
@@ -368,7 +432,9 @@ Op-amp frequency compensation is required to prevent instability and unwanted hi
 **Solution:**
 The provided schematic consists of a 2nd-order active Low-Pass Filter cascaded with a 1st-order active Low-Pass Filter, making it a **3rd-order active Low-Pass Filter**.
 The cutoff frequency is identical for all RC sections:
-$$f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10\text{ k}\Omega)(0.1\ \mu\text{F})} = 159.15\text{ Hz}$$
+$$
+f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10\text{ k}\Omega)(0.1\ \mu\text{F})} = 159.15\text{ Hz}
+$$
 **Frequency Response Curve Description:**
 *   **Passband:** The gain remains relatively flat (at $0\text{ dB}$, assuming unity gain configurations) from $0\text{ Hz}$ (DC) up to the cutoff frequency of $159\text{ Hz}$.
 *   **Cutoff Point:** At $159.15\text{ Hz}$, the gain is down by $-3\text{ dB}$.
@@ -381,15 +447,23 @@ $$f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10\text{ k}\Omega)(0.1\ \mu\text{F})
 **Solution:**
 **Stage 1 Analysis:**
 The first op-amp is an inverting amplifier with $R_{f1} = 100\text{ k}\Omega$ and $R_1 = 10\text{ k}\Omega$.
-$$v_{o1} = -\left( \frac{R_{f1}}{R_1} \right) v_{s1} = -10 \times [10\sin(\omega t - 30^\circ)] = -100\sin(\omega t - 30^\circ)\text{ V}$$
+$$
+v_{o1} = -\left( \frac{R_{f1}}{R_1} \right) v_{s1} = -10 \times [10\sin(\omega t - 30^\circ)] = -100\sin(\omega t - 30^\circ)\text{ V}
+$$
 
 **Stage 2 Analysis:**
 The second op-amp is an inverting summing amplifier with inputs $v_{o1}$ and $v_{s2}$. $R_{f2} = 10\text{ k}\Omega$ and the input resistors $R$ are both $10\text{ k}\Omega$.
-$$V_o = -\left[ \frac{R_{f2}}{R} v_{o1} + \frac{R_{f2}}{R} v_{s2} \right] = -\left[ 1 \times v_{o1} + 1 \times v_{s2} \right] = -(v_{o1} + v_{s2})$$
+$$
+V_o = -\left[ \frac{R_{f2}}{R} v_{o1} + \frac{R_{f2}}{R} v_{s2} \right] = -\left[ 1 \times v_{o1} + 1 \times v_{s2} \right] = -(v_{o1} + v_{s2})
+$$
 
 Substitute $v_{o1}$:
-$$V_o = -(-100\sin(\omega t - 30^\circ) + 10\sin(\omega t + 30^\circ))$$
-$$V_o = 100\sin(\omega t - 30^\circ) - 10\sin(\omega t + 30^\circ)\text{ V}$$
+$$
+V_o = -(-100\sin(\omega t - 30^\circ) + 10\sin(\omega t + 30^\circ))
+$$
+$$
+V_o = 100\sin(\omega t - 30^\circ) - 10\sin(\omega t + 30^\circ)\text{ V}
+$$
 
 **Wave Shape Description:**
 The output waveform is a summation of two sine waves of the same frequency but different phases and drastically different amplitudes. Because the $100\text{V}$ component dominates, the output wave shape will closely resemble a very large sine wave of $100\text{V}$ peak amplitude (shifted $-30^\circ$ in phase), with slight morphological distortion and a small phase shift introduced by subtracting the smaller $10\text{V}$ signal. (Note: In reality, an op-amp outputting $100\text{V}$ is impossible with standard $\pm 15\text{V}$ supplies, so a real circuit would heavily saturate into a square wave. Mathematically, it is the composite sine wave described above).

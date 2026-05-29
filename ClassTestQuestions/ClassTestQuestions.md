@@ -225,7 +225,9 @@ Derive the output voltage expression $V_o(t)$ mathematically for both cases and 
 ##### AI-Ready Structural Walkthrough & Parameter Definitions:
 1. **Ideal Op-Amp Integrator:** Standard inverting configuration. The inverting terminal ($-$) acts as a virtual ground ($V_n \approx 0\text{ V}$).
 2. **Transfer Function:**
-   $$V_o(t) = -\frac{1}{R_1 C_f} \int V_i(t) dt + V_o(0)$$
+   $$
+   V_o(t) = -\frac{1}{R_1 C_f} \int V_i(t) dt + V_o(0)
+   $$
 3. **Offset Cancellation:** Resistor $R_{OM} = R_1 \parallel R_L$ is connected between non-inverting terminal ($+$) and ground to minimize input bias current offsets.
 4. **Behavior Analysis:** For $5\text{ Hz}$ input, the signal falls outside the high-pass integration limit ($10\text{ Hz} - 1\text{ kHz}$), leading to op-amp open-loop saturation behavior.
 
@@ -256,7 +258,9 @@ Analyze the corresponding output waveforms for both cases, clearly indicating th
 
 ##### AI-Ready Structural Walkthrough & Parameter Definitions:
 1. **Ideal Op-Amp Differentiator:** Standard inverting configuration. Output equation:
-   $$V_o(t) = -R_f C_1 \frac{d V_i(t)}{d t}$$
+   $$
+   V_o(t) = -R_f C_1 \frac{d V_i(t)}{d t}
+   $$
 2. **Inverting Virtual Ground:** $V_n \approx 0\text{ V}$. Input current is $i_i(t) = C_1 \frac{d V_i}{d t}$.
 3. **Feedback:** Feedback resistor $R_f$ is connected between inverting input and output node.
 
@@ -323,9 +327,13 @@ Analyze the corresponding output waveforms for both cases, clearly indicating th
    * Inductor $L$ is in series with the feedback loop, connected between output $V_o$ and feedback node $V_f$.
    * Capacitor $C_1$ is connected between feedback node $V_f$ and ground.
 3. **Resonant Frequency:**
-   $$f_o = \frac{1}{2\pi \sqrt{L C_{eq}}} \quad \text{where} \quad C_{eq} = \frac{C_1 C_2}{C_1 + C_2}$$
+   $$
+   f_o = \frac{1}{2\pi \sqrt{L C_{eq}}} \quad \text{where} \quad C_{eq} = \frac{C_1 C_2}{C_1 + C_2}
+   $$
 4. **Sustained Oscillation Condition:**
-   $$A_v \ge \frac{C_2}{C_1} \Rightarrow \frac{R_f}{R_i} \ge \frac{C_2}{C_1}$$
+   $$
+   A_v \ge \frac{C_2}{C_1} \Rightarrow \frac{R_f}{R_i} \ge \frac{C_2}{C_1}
+   $$
 
 ---
 

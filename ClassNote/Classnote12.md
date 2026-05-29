@@ -8,7 +8,9 @@
 
 #### 1. Inverting Summing Amplifier Design Problem
 * **Question:** Design an op-amp circuit to implement the logic:
-  $$v_o = -2 V_1 - 3 V_2$$
+  $$
+  v_o = -2 V_1 - 3 V_2
+  $$
   Determine the feedback resistor $R_f$ and input resistors $R_1, R_2$.
 
 #### Circuit Schematic:
@@ -26,10 +28,16 @@
 
 #### Calculations:
 We know the closed-loop output voltage of an inverting summing amplifier is:
-$$v_o = -\left( \frac{R_f}{R_1} V_1 + \frac{R_f}{R_2} V_2 \right)$$
+$$
+v_o = -\left( \frac{R_f}{R_1} V_1 + \frac{R_f}{R_2} V_2 \right)
+$$
 By comparing this with the required equation $v_o = -2 V_1 - 3 V_2$:
-$$\frac{R_f}{R_1} = 2 \Rightarrow R_1 = \frac{R_f}{2}$$
-$$\frac{R_f}{R_2} = 3 \Rightarrow R_2 = \frac{R_f}{3}$$
+$$
+\frac{R_f}{R_1} = 2 \Rightarrow R_1 = \frac{R_f}{2}
+$$
+$$
+\frac{R_f}{R_2} = 3 \Rightarrow R_2 = \frac{R_f}{3}
+$$
 * **Component Design Choice:** Let $R_f = 6\text{ k}\Omega$:
   * $R_1 = \frac{6\text{ k}\Omega}{2} = 3\text{ k}\Omega$
   * $R_2 = \frac{6\text{ k}\Omega}{3} = 2\text{ k}\Omega$

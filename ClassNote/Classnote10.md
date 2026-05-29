@@ -116,12 +116,22 @@
 
 #### Pulse Width Derivation ($T$):
 The capacitor charges from $0\text{ V}$ towards $V_{CC}$ via $R_1$:
-$$v_c(t) = V_{CC} \left( 1 - e^{-t / R_1 C_1} \right)$$
+$$
+v_c(t) = V_{CC} \left( 1 - e^{-t / R_1 C_1} \right)
+$$
 The output remains High until $v_c(t)$ reaches the upper threshold $\frac{2}{3} V_{CC}$:
-$$\frac{2}{3} V_{CC} = V_{CC} \left( 1 - e^{-T / R_1 C_1} \right)$$
-$$\frac{2}{3} = 1 - e^{-T / R_1 C_1} \Rightarrow e^{-T / R_1 C_1} = \frac{1}{3}$$
-$$-T / R_1 C_1 = \ln(1/3) \Rightarrow T = R_1 C_1 \ln(3)$$
-$$\therefore \boxed{T = 1.1 R_1 C_1}$$
+$$
+\frac{2}{3} V_{CC} = V_{CC} \left( 1 - e^{-T / R_1 C_1} \right)
+$$
+$$
+\frac{2}{3} = 1 - e^{-T / R_1 C_1} \Rightarrow e^{-T / R_1 C_1} = \frac{1}{3}
+$$
+$$
+-T / R_1 C_1 = \ln(1/3) \Rightarrow T = R_1 C_1 \ln(3)
+$$
+$$
+\therefore \boxed{T = 1.1 R_1 C_1}
+$$
 
 ---
 
@@ -133,7 +143,9 @@ $$\therefore \boxed{T = 1.1 R_1 C_1}$$
   * If $t_p > 2T \Rightarrow f_{\text{out}} = \frac{f_{\text{in}}}{3}$
   * If $t_p > 3T \Rightarrow f_{\text{out}} = \frac{f_{\text{in}}}{4}$
 * **General Condition:**
-  $$\boxed{t_p > (n-1)T}$$
+  $$
+  \boxed{t_p > (n-1)T}
+  $$
 
 ---
 
@@ -181,13 +193,19 @@ $$\therefore \boxed{T = 1.1 R_1 C_1}$$
 #### Detailed Operations & Waveforms:
 1. Capacitor $C$ charges exponentially through $R_1 + R_2$ towards $+V_{CC}$ when the output is High.
 2. The charging time ($t_1$) is the interval for the capacitor to charge from $\frac{1}{3}V_{CC}$ to $\frac{2}{3}V_{CC}$:
-   $$t_1 = 0.693 (R_1 + R_2) C$$
+   $$
+   t_1 = 0.693 (R_1 + R_2) C
+   $$
 3. Once $v_c$ reaches $\frac{2}{3}V_{CC}$, Comparator 1 resets the flip-flop, forcing Pin 3 Low and turning ON the discharge transistor $Q_1$.
 4. The capacitor then discharges from $\frac{2}{3}V_{CC}$ down to $\frac{1}{3}V_{CC}$ through resistor $R_2$ into Pin 7.
 5. The discharging time ($t_2$) is:
-   $$t_2 = 0.693 R_2 C$$
+   $$
+   t_2 = 0.693 R_2 C
+   $$
 6. Total Time Period ($T$):
-   $$\boxed{T = t_1 + t_2 = 0.693 (R_1 + 2 R_2) C}$$
+   $$
+   \boxed{T = t_1 + t_2 = 0.693 (R_1 + 2 R_2) C}
+   $$
 
 ---
 
@@ -196,9 +214,13 @@ $$\therefore \boxed{T = 1.1 R_1 C_1}$$
 ### Content
 
 #### Duty Cycle Analysis:
-$$D = \frac{t_1}{T} = \frac{R_1 + R_2}{R_1 + 2 R_2}$$
+$$
+D = \frac{t_1}{T} = \frac{R_1 + R_2}{R_1 + 2 R_2}
+$$
 * **Symmetric limitation:** Since $R_1$ cannot be zero (to prevent shorting Vcc to GND during discharge), the duty cycle of a standard astable circuit is always strictly greater than 50%:
-  $$\boxed{D > 50\%}$$
+  $$
+  \boxed{D > 50\%}
+  $$
 
 ---
 
@@ -229,11 +251,17 @@ $$D = \frac{t_1}{T} = \frac{R_1 + R_2}{R_1 + 2 R_2}$$
                 GND
 ```
 * **Charging path:** Through $R_1$ and forward-biased diode $D$ directly to capacitor $C$ (bypassing $R_2$).
-  $$t_1 = 0.693 R_1 C$$
+  $$
+  t_1 = 0.693 R_1 C
+  $$
 * **Discharging path:** Through $R_2$ and the internal discharge transistor to Ground.
-  $$t_2 = 0.693 R_2 C$$
+  $$
+  t_2 = 0.693 R_2 C
+  $$
 * **Duty Cycle control:**
-  $$D = \frac{R_1}{R_1 + R_2}$$
+  $$
+  D = \frac{R_1}{R_1 + R_2}
+  $$
   By setting $R_1 = R_2$, a perfect $50\%$ duty cycle is obtained.
 
 ---
@@ -258,12 +286,22 @@ $$D = \frac{t_1}{T} = \frac{R_1 + R_2}{R_1 + 2 R_2}$$
 
 #### Derivation of Closed-Loop Gain ($A_f$):
 Let $v_{id}$ be the differential input:
-$$v_{id} = v_i - v_f \quad \text{(Negative Feedback Case)}$$
-$$v_o = A v_{id} = A (v_i - \beta v_o)$$
-$$v_o (1 + A \beta) = A v_i$$
-$$\therefore \boxed{A_f = \frac{v_o}{v_i} = \frac{A}{1 + A \beta}}$$
+$$
+v_{id} = v_i - v_f \quad \text{(Negative Feedback Case)}
+$$
+$$
+v_o = A v_{id} = A (v_i - \beta v_o)
+$$
+$$
+v_o (1 + A \beta) = A v_i
+$$
+$$
+\therefore \boxed{A_f = \frac{v_o}{v_i} = \frac{A}{1 + A \beta}}
+$$
 For the general case (Positive and Negative Feedback):
-$$\boxed{A_f = \frac{A}{1 \pm A \beta}}$$
+$$
+\boxed{A_f = \frac{A}{1 \pm A \beta}}
+$$
 
 ---
 
@@ -274,11 +312,17 @@ $$\boxed{A_f = \frac{A}{1 \pm A \beta}}$$
 #### Effects of Negative Feedback on Amplifier Performance:
 1. **Gain Reduction:** Reduces gain by factor of $(1 + A\beta)$.
 2. **Gain Stabilization:** The gain becomes less dependent on internal parameters:
-   $$A_f \approx \frac{1}{\beta} \quad (\text{if } A\beta \gg 1)$$
+   $$
+   A_f \approx \frac{1}{\beta} \quad (\text{if } A\beta \gg 1)
+   $$
 3. **Bandwidth Extension:**
-   $$\boxed{BW_f = BW(1 + A\beta)}$$
+   $$
+   \boxed{BW_f = BW(1 + A\beta)}
+   $$
    * Cutoff frequencies shift:
-     $$f_{1f} = \frac{f_1}{1 + A\beta} \quad ; \quad f_{2f} = f_2(1 + A\beta)$$
+     $$
+     f_{1f} = \frac{f_1}{1 + A\beta} \quad ; \quad f_{2f} = f_2(1 + A\beta)
+     $$
 
 ```
    Voltage Gain
@@ -319,7 +363,9 @@ $$\boxed{A_f = \frac{A}{1 \pm A \beta}}$$
                                    (Beta)
 ```
 * **Closed-loop Gain:**
-  $$A_{vf} = \frac{v_o}{v_s} = \frac{A_v}{1 + A_v \beta}$$
+  $$
+  A_{vf} = \frac{v_o}{v_s} = \frac{A_v}{1 + A_v \beta}
+  $$
 
 #### 2. Voltage-Shunt Feedback:
 ```
@@ -331,4 +377,6 @@ $$\boxed{A_f = \frac{A}{1 \pm A \beta}}$$
                                    (Beta)
 ```
 * **Closed-loop Gain (Transresistance):**
-  $$A_{zf} = \frac{v_o}{I_s} = \frac{Z_t}{1 + Z_t \beta}$$
+  $$
+  A_{zf} = \frac{v_o}{I_s} = \frac{Z_t}{1 + Z_t \beta}
+  $$

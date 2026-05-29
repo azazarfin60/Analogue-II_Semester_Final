@@ -6,14 +6,22 @@
 
 ### Content
 
-$$\Rightarrow \frac{v_i}{v_s} = \frac{R_i}{R_i + R_s} \qquad \text{--- (I)}$$
+$$
+\Rightarrow \frac{v_i}{v_s} = \frac{R_i}{R_i + R_s} \qquad \text{--- (I)}
+$$
 
-$$v_o = \frac{R_L}{R_L + R_o} A_{v_{NL}} \cdot v_i$$
+$$
+v_o = \frac{R_L}{R_L + R_o} A_{v_{NL}} \cdot v_i
+$$
 
-$$\Rightarrow \frac{v_o}{v_i} = \frac{R_L}{R_L + R_o} A_{v_{NL}} \qquad \text{--- (II)}$$
+$$
+\Rightarrow \frac{v_o}{v_i} = \frac{R_L}{R_L + R_o} A_{v_{NL}} \qquad \text{--- (II)}
+$$
 
 * **Total/Overall Voltage Gain:**
-  $$\boxed{A_{v_T} = \frac{v_o}{v_s} = \frac{v_o}{v_i} \cdot \frac{v_i}{v_s}}$$
+  $$
+  \boxed{A_{v_T} = \frac{v_o}{v_s} = \frac{v_o}{v_i} \cdot \frac{v_i}{v_s}}
+  $$
 
 ---
 
@@ -28,10 +36,18 @@ A multi-stage cascaded amplifier system containing $n$ stages in series:
 ```
 
 * **Formulas:**
-  $$v_{i_1} = v_i \quad ; \quad v_{i_2} = v_{o_1}$$
-  $$\therefore v_{i_n} = v_{o_{n-1}}$$
-  $$A_{v_1} = \frac{v_{o_1}}{v_{i_1}} \quad ; \quad A_{v_2} = \frac{v_{o_2}}{v_{i_2}}$$
-  $$A'_{v_T} = \frac{v_{o_2}}{v_{i_1}} = \frac{v_{o_2}}{v_{i_2}} \cdot \frac{v_{o_1}}{v_{i_1}} = A_{v_2} \cdot A_{v_1}$$
+  $$
+  v_{i_1} = v_i \quad ; \quad v_{i_2} = v_{o_1}
+  $$
+  $$
+  \therefore v_{i_n} = v_{o_{n-1}}
+  $$
+  $$
+  A_{v_1} = \frac{v_{o_1}}{v_{i_1}} \quad ; \quad A_{v_2} = \frac{v_{o_2}}{v_{i_2}}
+  $$
+  $$
+  A'_{v_T} = \frac{v_{o_2}}{v_{i_1}} = \frac{v_{o_2}}{v_{i_2}} \cdot \frac{v_{o_1}}{v_{i_1}} = A_{v_2} \cdot A_{v_1}
+  $$
 
 ---
 
@@ -45,9 +61,13 @@ A multi-stage cascaded amplifier system containing $n$ stages in series:
 
 ### Content
 * Gain for first 2 stages:
-  $$\therefore A'_{v_T} = A_{v_1} \times A_{v_2}$$
+  $$
+  \therefore A'_{v_T} = A_{v_1} \times A_{v_2}
+  $$
 * Gain for $n$ stages:
-  $$\therefore A_{v_T} = A_{v_1} \times A_{v_2} \times A_{v_3} \times \dots \times A_{v_n}$$
+  $$
+  \therefore A_{v_T} = A_{v_1} \times A_{v_2} \times A_{v_3} \times \dots \times A_{v_n}
+  $$
 
 ---
 
@@ -86,21 +106,29 @@ A two-stage amplifier circuit represented by blocks:
 ### Solution to Example 5.14
 
 #### (a) Loaded Gain for Each Stage:
-$$A_{v_L} = \frac{R_L}{R_L + R_o} A_{v_{NL}}$$
-$$\Rightarrow v_o = \frac{R_L}{R_L + R_o} A_{v_{NL}} v_i$$
+$$
+A_{v_L} = \frac{R_L}{R_L + R_o} A_{v_{NL}}
+$$
+$$
+\Rightarrow v_o = \frac{R_L}{R_L + R_o} A_{v_{NL}} v_i
+$$
 
 1. **For Emitter-Follower (Stage 1):**
    * Input impedance of Stage 2 acts as load: $R_L = Z_{i_2} = 26\ \Omega$
    * Output impedance of Stage 1: $R_o = Z_{o_1} = 12\text{ k}\Omega$
    * No-load voltage gain: $A_{v_{NL}} \approx 1$
-   $$A_{v_1} = \frac{26}{26 + 12} \cdot 1 = 0.68$$
+   $$
+   A_{v_1} = \frac{26}{26 + 12} \cdot 1 = 0.68
+   $$
    *(Note: There is a unit mismatch in the student's notebook: $Z_{i_2} = 26\ \Omega$ and $Z_{o_1} = 12\text{ k}\Omega$. The calculation in the notes treats them both as unitless values ($26$ and $12$), yielding $\frac{26}{38} = 0.68$. The mathematically correct calculation with matching units is $\frac{26}{26 + 12000} \approx 0.002$.)*
 
 2. **For Common-Base (Stage 2):**
    * Load resistor: $R_L = 8.2\text{ k}\Omega$
    * Output impedance of Stage 2: $R_o = 5.1\text{ k}\Omega$
    * No-load voltage gain: $A_{v_{NL}} = 240$
-   $$A_{v_2} = \frac{8.2}{8.2 + 5.1} \times 240 = 147.96$$
+   $$
+   A_{v_2} = \frac{8.2}{8.2 + 5.1} \times 240 = 147.96
+   $$
 
 ---
 
@@ -110,17 +138,27 @@ $$\Rightarrow v_o = \frac{R_L}{R_L + R_o} A_{v_{NL}} v_i$$
 
 #### (b) Total Gain $A_v$ & $A_{v_s}$:
 * **Total loaded voltage gain ($A_v$):**
-  $$A_v = A_{v_1} A_{v_2} = 0.68 \times 147.96 = 100.61$$
+  $$
+  A_v = A_{v_1} A_{v_2} = 0.68 \times 147.96 = 100.61
+  $$
 * **Input Voltage Divider:**
-  $$\frac{v_i}{v_s} = \frac{R_i}{R_i + R_s} = \frac{10\text{ k}}{10\text{ k} + 1\text{ k}} = 0.9$$
+  $$
+  \frac{v_i}{v_s} = \frac{R_i}{R_i + R_s} = \frac{10\text{ k}}{10\text{ k} + 1\text{ k}} = 0.9
+  $$
   where $R_i = 10\text{ k}\Omega$ and $R_s = 1\text{ k}\Omega$.
 * **Overall loaded gain ($A_{v_s}$):**
-  $$A_{v_s} = \frac{v_i}{v_s} A_v = 0.9 \times 100.61 = 91.46$$
+  $$
+  A_{v_s} = \frac{v_i}{v_s} A_v = 0.9 \times 100.61 = 91.46
+  $$
 
 #### (c) Total Current Gain ($A_i$):
-$$A_i = -A_v \frac{Z_i}{R_L}$$
+$$
+A_i = -A_v \frac{Z_i}{R_L}
+$$
 where $Z_i = Z_{i_1} = 10\text{ k}\Omega$ and $R_L = 8.2\text{ k}\Omega$.
-$$A_i = -100.61 \times \frac{10\text{ k}}{8.2\text{ k}} = -122.69$$
+$$
+A_i = -100.61 \times \frac{10\text{ k}}{8.2\text{ k}} = -122.69
+$$
 
 ---
 
@@ -155,12 +193,20 @@ A two-stage Common-Emitter (CE) BJT amplifier circuit:
 
 #### (a) Solution Method:
 * Voltage gain of a single stage:
-  $$A_v = -\frac{R_C}{r_e}$$
+  $$
+  A_v = -\frac{R_C}{r_e}
+  $$
   *(Note: The writer uses $R_e$ to refer to the collector resistor $R_C$ in formulas.)*
 * Emitter impedance loading:
-  $$A_{v_1} = -\frac{R_{C1} \parallel R_{1(stage2)} \parallel R_{2(stage2)} \parallel \beta r_{e2}}{r_{e1}}$$
-  $$A_{v_2} = -\frac{R_{C2}}{r_{e2}}$$
-  $$\text{Total gain } A_{v_T} = A_{v_1} \cdot A_{v_2}$$
+  $$
+  A_{v_1} = -\frac{R_{C1} \parallel R_{1(stage2)} \parallel R_{2(stage2)} \parallel \beta r_{e2}}{r_{e1}}
+  $$
+  $$
+  A_{v_2} = -\frac{R_{C2}}{r_{e2}}
+  $$
+  $$
+  \text{Total gain } A_{v_T} = A_{v_1} \cdot A_{v_2}
+  $$
 
 ---
 
@@ -171,16 +217,22 @@ A two-stage Common-Emitter (CE) BJT amplifier circuit:
 * Syllabus note: Class Test 1 (CT-1) will cover Chapters 4-5 up to today's topic.
 
 #### (b) Output Voltage with Load $R_L = 4.7\text{ k}\Omega$:
-$$A_{v_T} = \frac{R_L}{R_L + Z_o} A_{v_{NL}}$$
+$$
+A_{v_T} = \frac{R_L}{R_L + Z_o} A_{v_{NL}}
+$$
 where:
 * $R_L = 4.7\text{ k}\Omega$
 * $Z_o = R_{C2} = 2.2\text{ k}\Omega$ (Output impedance of 2nd stage)
 
 #### (c) Impedances:
 * **Input Impedance ($Z_i$):**
-  $$Z_i = R_1 \parallel R_2 \parallel \beta r_{e1} \quad \text{(for 1st stage)}$$
+  $$
+  Z_i = R_1 \parallel R_2 \parallel \beta r_{e1} \quad \text{(for 1st stage)}
+  $$
 * **Output Impedance ($Z_o$):**
-  $$Z_o = R_{C2} = 2.2\text{ k}\Omega \quad \text{(for 2nd stage)}$$
+  $$
+  Z_o = R_{C2} = 2.2\text{ k}\Omega \quad \text{(for 2nd stage)}
+  $$
 
 ---
 
@@ -204,7 +256,9 @@ A stacked Cascode BJT connection:
 ```
 
 * Stage 1 Voltage Gain:
-  $$A_{v_1} = -\frac{R_C}{r_e}$$
+  $$
+  A_{v_1} = -\frac{R_C}{r_e}
+  $$
   * *Student's hand-written notes:*
     * "Re পাব না" (We won't get $R_E$ - since the emitter of $Q_1$ is grounded).
     * "Rc হবে second stage এর?" (Will it be $R_C$ of the second stage? No, the load for $Q_1$ is the input impedance of $Q_2$, which is $\approx r_{e2}$).
@@ -286,14 +340,22 @@ Determine the DC bias, voltage gain, input impedance, and output impedance of th
 
 #### Solution & AC Analysis:
 1. **Transconductance ($g_m$):**
-   $$g_m = 2.6\text{ mS} \quad (\text{calculated from DC Q-point})$$
+   $$
+   g_m = 2.6\text{ mS} \quad (\text{calculated from DC Q-point})
+   $$
 2. **Voltage Gain of Stage 2 ($A_{v_2}$):**
-   $$A_{v_2} = -g_m \cdot R_{D_2} = -2.6\text{ mS} \cdot 2.4\text{ k}\Omega = -6.24$$
+   $$
+   A_{v_2} = -g_m \cdot R_{D_2} = -2.6\text{ mS} \cdot 2.4\text{ k}\Omega = -6.24
+   $$
 3. **Voltage Gain of Stage 1 ($A_{v_1}$):**
    Since the input impedance of Stage 2 ($R_{G2} = 3.3\text{ M}\Omega$) is much larger than the collector load of Stage 1 ($R_{D1} = 2.4\text{ k}\Omega$):
-   $$A_{v_1} = -g_m \cdot (R_{D_1} \parallel R_{G_2}) \approx -g_m \cdot R_{D_1} = -6.24$$
+   $$
+   A_{v_1} = -g_m \cdot (R_{D_1} \parallel R_{G_2}) \approx -g_m \cdot R_{D_1} = -6.24
+   $$
 4. **Total Voltage Gain ($A_v$):**
-   $$A_v = A_{v_1} A_{v_2} = (-6.24) \times (-6.24) = 38.94$$
+   $$
+   A_v = A_{v_1} A_{v_2} = (-6.24) \times (-6.24) = 38.94
+   $$
 5. **Impedances:**
    * **Input Impedance ($Z_i$):** $Z_i = R_{G_1} = 3.3\text{ M}\Omega$
    * **Output Impedance ($Z_o$):** $Z_o = R_{D_2} = 2.4\text{ k}\Omega$
@@ -332,13 +394,21 @@ A JFET first stage cascaded into a BJT second stage:
 
 #### Solution Method:
 * **Total Gain:**
-  $$A_v = A_{v_1} \cdot A_{v_2}$$
+  $$
+  A_v = A_{v_1} \cdot A_{v_2}
+  $$
 * **Stage 2 Loaded Gain ($A_{v_2}$):**
-  $$A_{v_2} = -\frac{R_C}{r_{e2}}$$
+  $$
+  A_{v_2} = -\frac{R_C}{r_{e2}}
+  $$
 * **Stage 1 Loaded Gain ($A_{v_1}$):**
-  $$A_{v_1} = -g_m \cdot (R_D \parallel R'_i)$$
+  $$
+  A_{v_1} = -g_m \cdot (R_D \parallel R'_i)
+  $$
   where $R'_i$ is the AC input impedance of the second (BJT) stage:
-  $$R'_i = R_1 \parallel R_2 \parallel \beta r_{e2}$$
+  $$
+  R'_i = R_1 \parallel R_2 \parallel \beta r_{e2}
+  $$
 
 ---
 

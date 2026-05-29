@@ -38,25 +38,39 @@ The basic circuit consists of:
 
 #### 2. Mathematical Derivation
 By virtual short (assuming ideal op-amp):
-$$V^- = V^+ = V_{in}$$
+$$
+V^- = V^+ = V_{in}
+$$
 
 The current flowing through the inverting branch to the load $Z_L$ is:
-$$I_L = \frac{V^-}{Z_L} = \frac{V_{in}}{Z_L}$$
+$$
+I_L = \frac{V^-}{Z_L} = \frac{V_{in}}{Z_L}
+$$
 
 The output voltage of the op-amp is:
-$$V_{out} = V^- + I_L R_2 = V_{in} \left(1 + \frac{R_2}{Z_L}\right)$$
+$$
+V_{out} = V^- + I_L R_2 = V_{in} \left(1 + \frac{R_2}{Z_L}\right)
+$$
 
 Now, the current entering the input node ($V^+$ terminal) from the input source $V_{in}$ through the feedback resistor $R_1$ is:
-$$I_{in} = \frac{V_{in} - V_{out}}{R_1}$$
+$$
+I_{in} = \frac{V_{in} - V_{out}}{R_1}
+$$
 
 Substituting the expression for $V_{out}$:
-$$I_{in} = \frac{V_{in} - V_{in} \left(1 + \frac{R_2}{Z_L}\right)}{R_1} = -\frac{V_{in} R_2}{R_1 Z_L}$$
+$$
+I_{in} = \frac{V_{in} - V_{in} \left(1 + \frac{R_2}{Z_L}\right)}{R_1} = -\frac{V_{in} R_2}{R_1 Z_L}
+$$
 
 The equivalent input impedance seen by the source is:
-$$Z_{in} = \frac{V_{in}}{I_{in}} = -Z_L \left(\frac{R_1}{R_2}\right)$$
+$$
+Z_{in} = \frac{V_{in}}{I_{in}} = -Z_L \left(\frac{R_1}{R_2}\right)
+$$
 
 If $R_1 = R_2$, then:
-$$Z_{in} = -Z_L$$
+$$
+Z_{in} = -Z_L
+$$
 
 #### 3. Key Applications
 - **Cancelling Resistance**: Used to cancel positive resistance in telephone transmission lines to minimize signal attenuation.

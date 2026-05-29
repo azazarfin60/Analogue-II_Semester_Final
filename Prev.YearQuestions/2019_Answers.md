@@ -24,24 +24,38 @@
 **Derivations:**
 **(ii) Input Impedance ($Z_i$):**
 Looking into the input terminals (JFET gate), the only component is $R_G$ since the JFET gate draws zero current.
-$$Z_i = R_G$$
+$$
+Z_i = R_G
+$$
 
 **(iii) Output Impedance ($Z_o$):**
 Looking back into the output terminals (BJT collector) with $v_i = 0$ and removing $R_L$:
-$$Z_o = r_o \parallel R_C \approx R_C \quad (\text{since usually } r_o \gg R_C)$$
+$$
+Z_o = r_o \parallel R_C \approx R_C \quad (\text{since usually } r_o \gg R_C)
+$$
 
 **(i) Overall Voltage Gain ($A_v$):**
 Let $Z_{i2}$ be the input impedance of the second stage (BJT).
-$$Z_{i2} = R_1 \parallel R_2 \parallel \beta r_e$$
+$$
+Z_{i2} = R_1 \parallel R_2 \parallel \beta r_e
+$$
 The AC load on the JFET drain is $R_{L1} = r_d \parallel R_D \parallel Z_{i2}$.
 The voltage gain of the first stage (CS) is:
-$$A_{v1} = \frac{v_{b2}}{v_i} = -g_m (r_d \parallel R_D \parallel Z_{i2})$$
+$$
+A_{v1} = \frac{v_{b2}}{v_i} = -g_m (r_d \parallel R_D \parallel Z_{i2})
+$$
 The AC load on the BJT collector is $R_{L2} = r_o \parallel R_C \parallel R_L \approx R_C \parallel R_L$.
 The voltage gain of the second stage (CE) is:
-$$A_{v2} = \frac{v_o}{v_{b2}} = -\frac{r_o \parallel R_C \parallel R_L}{r_e} \approx -\frac{R_C \parallel R_L}{r_e}$$
+$$
+A_{v2} = \frac{v_o}{v_{b2}} = -\frac{r_o \parallel R_C \parallel R_L}{r_e} \approx -\frac{R_C \parallel R_L}{r_e}
+$$
 The overall voltage gain is the product of the two stage gains:
-$$A_v = A_{v1} \times A_{v2} = \left[ -g_m (r_d \parallel R_D \parallel Z_{i2}) \right] \times \left[ -\frac{R_C \parallel R_L}{r_e} \right]$$
-$$A_v = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C \parallel R_L}{r_e}$$
+$$
+A_v = A_{v1} \times A_{v2} = \left[ -g_m (r_d \parallel R_D \parallel Z_{i2}) \right] \times \left[ -\frac{R_C \parallel R_L}{r_e} \right]
+$$
+$$
+A_v = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C \parallel R_L}{r_e}
+$$
 
 ---
 
@@ -52,7 +66,9 @@ $$A_v = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C \parallel R_L}
 
 **Operating Principle:**
 1.  The reference current flows through $R$ and $Q_1$. Because $Q_1$ is diode-connected, it creates a specific base-emitter voltage drop ($V_{BE}$) based on this current.
-    $$I_{ref} = \frac{V_{CC} - V_{BE}}{R}$$
+    $$
+    I_{ref} = \frac{V_{CC} - V_{BE}}{R}
+    $$
 2.  Because $Q_1$ and $Q_2$ are precisely matched and their bases and emitters are wired in parallel, $Q_2$ is forced to have the exact same $V_{BE}$ as $Q_1$.
 3.  According to the Ebers-Moll equation, identical transistors with identical $V_{BE}$ will draw identical collector currents. Thus, $I_{out} = I_{ref}$ (ignoring small base current errors). The circuit "mirrors" the reference current into the load attached to $Q_2$.
 
@@ -65,9 +81,13 @@ $$A_v = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C \parallel R_L}
 **1. DC Analysis:**
 The base of $Q_2$ is biased by a voltage divider. The total resistance is $R_{total} = 7.5\text{k} + 6.2\text{k} + 3.9\text{k} = 17.6\text{ k}\Omega$.
 Voltage at Node A (Base of $Q_2$):
-$$V_{B2} = 20\text{V} \times \frac{6.2\text{k} + 3.9\text{k}}{17.6\text{k}} = 20 \times \frac{10.1}{17.6} = 11.47\text{ V}$$
+$$
+V_{B2} = 20\text{V} \times \frac{6.2\text{k} + 3.9\text{k}}{17.6\text{k}} = 20 \times \frac{10.1}{17.6} = 11.47\text{ V}
+$$
 Voltage at Node B (Base of $Q_1$):
-$$V_{B1} = 20\text{V} \times \frac{3.9\text{k}}{17.6\text{k}} = 4.43\text{ V}$$
+$$
+V_{B1} = 20\text{V} \times \frac{3.9\text{k}}{17.6\text{k}} = 4.43\text{ V}
+$$
 Emitter voltage of $Q_1$: $V_{E1} = V_{B1} - 0.7\text{V} = 4.43 - 0.7 = 3.73\text{ V}$.
 Emitter current of $Q_1$: $I_{E1} = V_{E1} / R_E = 3.73\text{V} / 1\text{ k}\Omega = 3.73\text{ mA}$.
 Since $Q_1$ and $Q_2$ are in series, $I_{E2} \approx I_{C1} \approx I_{E1} = 3.73\text{ mA}$.
@@ -75,11 +95,17 @@ Dynamic resistances: $r_{e1} = r_{e2} = \frac{26\text{ mV}}{3.73\text{ mA}} = 6.
 
 **2. AC Voltage Gains:**
 *   **Stage 1 ($Q_1$ - Common Emitter):** Its load is the input impedance of $Q_2$ (which is a Common Base stage). The input impedance of a CB stage is $r_{e2}$.
-    $$A_{v1} = -\frac{\text{Load}}{r_{e1}} = -\frac{r_{e2}}{r_{e1}} = -\frac{6.97}{6.97} = -1$$
+    $$
+    A_{v1} = -\frac{\text{Load}}{r_{e1}} = -\frac{r_{e2}}{r_{e1}} = -\frac{6.97}{6.97} = -1
+    $$
 *   **Stage 2 ($Q_2$ - Common Base):** Its load is $R_C = 1.5\text{ k}\Omega$. A CB stage is non-inverting.
-    $$A_{v2} = +\frac{R_C}{r_{e2}} = \frac{1500}{6.97} = 215.2$$
+    $$
+    A_{v2} = +\frac{R_C}{r_{e2}} = \frac{1500}{6.97} = 215.2
+    $$
 *   **Overall Gain ($A_v$):**
-    $$A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2$$
+    $$
+    A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2
+    $$
 
 **3. Output Wave Shape:**
 $v_o(t) = A_v \cdot v_i(t) = -215.2 \times 10\sin(\omega t)\text{ mV} = -2.15\sin(\omega t)\text{ V}$.
@@ -95,24 +121,42 @@ Composite $\beta_D \approx \beta_1 \beta_2 = 50 \times 120 = 6000$.
 Base voltage $V_B = 16 - I_{B1} R_B$.
 Emitter voltage $V_E = I_E R_E = (\beta_D I_{B1}) R_E = 6000 I_{B1} (510) = 3.06\times 10^6 I_{B1}$.
 KVL around Base-Emitter loop:
-$$V_{CC} - I_{B1}R_B - V_{BE1} - V_{BE2} - I_E R_E = 0$$
-$$16 - I_{B1}(2.4\text{ M}\Omega) - 0.7 - 0.7 - I_{B1}(3.06\text{ M}\Omega) = 0$$
-$$14.6 = I_{B1}(5.46\text{ M}\Omega) \Rightarrow I_{B1} = \frac{14.6}{5.46\times 10^6} = 2.67\ \mu\text{A}$$
-$$I_E = 6000 \times 2.67\ \mu\text{A} = 16.02\text{ mA}$$
-$$r_{e2} = \frac{26\text{ mV}}{16.02\text{ mA}} = 1.62\ \Omega$$
-$$I_{E1} \approx I_{B2} = I_E / \beta_2 = 16.02\text{ mA} / 120 = 133.5\ \mu\text{A} \Rightarrow r_{e1} = \frac{26\text{ mV}}{133.5\ \mu\text{A}} = 194.7\ \Omega$$
+$$
+V_{CC} - I_{B1}R_B - V_{BE1} - V_{BE2} - I_E R_E = 0
+$$
+$$
+16 - I_{B1}(2.4\text{ M}\Omega) - 0.7 - 0.7 - I_{B1}(3.06\text{ M}\Omega) = 0
+$$
+$$
+14.6 = I_{B1}(5.46\text{ M}\Omega) \Rightarrow I_{B1} = \frac{14.6}{5.46\times 10^6} = 2.67\ \mu\text{A}
+$$
+$$
+I_E = 6000 \times 2.67\ \mu\text{A} = 16.02\text{ mA}
+$$
+$$
+r_{e2} = \frac{26\text{ mV}}{16.02\text{ mA}} = 1.62\ \Omega
+$$
+$$
+I_{E1} \approx I_{B2} = I_E / \beta_2 = 16.02\text{ mA} / 120 = 133.5\ \mu\text{A} \Rightarrow r_{e1} = \frac{26\text{ mV}}{133.5\ \mu\text{A}} = 194.7\ \Omega
+$$
 
 **2. AC Parameters:**
 The input impedance looking into the base of $Q_1$:
-$$Z_{base} = \beta_1 [r_{e1} + \beta_2(r_{e2} + R_E)] \approx \beta_1 \beta_2 R_E = 6000 \times 510 = 3.06\text{ M}\Omega$$
+$$
+Z_{base} = \beta_1 [r_{e1} + \beta_2(r_{e2} + R_E)] \approx \beta_1 \beta_2 R_E = 6000 \times 510 = 3.06\text{ M}\Omega
+$$
 Total input impedance: $Z_i = R_B \parallel Z_{base} = 2.4\text{ M}\Omega \parallel 3.06\text{ M}\Omega = 1.34\text{ M}\Omega$.
 
 **Voltage Gain ($A_v$):**
-$$A_v = \frac{R_E}{R_E + r_{e2} + r_{e1}/\beta_2} = \frac{510}{510 + 1.62 + 194.7/120} = \frac{510}{513.24} = 0.993$$
+$$
+A_v = \frac{R_E}{R_E + r_{e2} + r_{e1}/\beta_2} = \frac{510}{510 + 1.62 + 194.7/120} = \frac{510}{513.24} = 0.993
+$$
 $A_v \approx 1$.
 
 **Current Gain ($A_i$):**
-$$A_i = \frac{i_o}{i_{in}} = \frac{v_o / R_E}{v_i / Z_i} = A_v \left( \frac{Z_i}{R_E} \right) = 0.993 \times \frac{1.34\text{ M}\Omega}{510\ \Omega} \approx 2609$$
+$$
+A_i = \frac{i_o}{i_{in}} = \frac{v_o / R_E}{v_i / Z_i} = A_v \left( \frac{Z_i}{R_E} \right) = 0.993 \times \frac{1.34\text{ M}\Omega}{510\ \Omega} \approx 2609
+$$
 
 ---
 
@@ -168,14 +212,20 @@ To find the upper-cutoff frequencies:
 **Design Strategy:**
 We will use three parallel stages feeding into a final inverting summer.
 *   **Stage 1: Differentiator for $v_2$.**
-    $$v_{o2} = -R_d C_d \frac{dv_2}{dt}$$
+    $$
+    v_{o2} = -R_d C_d \frac{dv_2}{dt}
+    $$
     We need a factor of $-7$ (so the final inverter makes it $+7$). Let $C_d = 10\ \mu\text{F}$ and $R_d = 700\text{ k}\Omega$, so $R_d C_d = 7$.
 *   **Stage 2: Integrator for $v_3$.**
-    $$v_{o3} = -\frac{1}{R_{int} C_{int}} \int v_3 dt$$
+    $$
+    v_{o3} = -\frac{1}{R_{int} C_{int}} \int v_3 dt
+    $$
     We need a factor of $-10$ (so the final inverter makes it $+10$). Let $C_{int} = 1\ \mu\text{F}$ and $R_{int} = 100\text{ k}\Omega$, so $1/(R_{int}C_{int}) = 10$.
 *   **Stage 3: Inverting Summer.**
     The inputs to the summer are $v_1, v_{o2},$ and $v_{o3}$. The output is:
-    $$v_o = -\left( \frac{R_f}{R_1} v_1 + \frac{R_f}{R_x} v_{o2} + \frac{R_f}{R_y} v_{o3} \right)$$
+    $$
+    v_o = -\left( \frac{R_f}{R_1} v_1 + \frac{R_f}{R_x} v_{o2} + \frac{R_f}{R_y} v_{o3} \right)
+    $$
     Let feedback resistor $R_f = 50\text{ k}\Omega$.
     *   For $v_1$: We want a total coefficient of $-5$. Thus $\frac{R_f}{R_1} = 5 \Rightarrow R_1 = 10\text{ k}\Omega$.
     *   For $v_{o2}$: We want a coefficient of $1$ (to pass the $-7$ cleanly to the inverter). Thus $R_x = R_f = 50\text{ k}\Omega$.
@@ -187,13 +237,23 @@ We will use three parallel stages feeding into a final inverting summer.
 
 **Solution:**
 The absolute maximum slew rate equation is:
-$$SR \ge 2\pi f V_{p(out)}$$
-$$0.5 \times 10^6\text{ V/s} = 2\pi (40,000) V_{p(out)}$$
-$$V_{p(out)} = \frac{500,000}{80,000 \pi} = \frac{50}{8\pi} = 1.989\text{ V (peak)}$$
+$$
+SR \ge 2\pi f V_{p(out)}
+$$
+$$
+0.5 \times 10^6\text{ V/s} = 2\pi (40,000) V_{p(out)}
+$$
+$$
+V_{p(out)} = \frac{500,000}{80,000 \pi} = \frac{50}{8\pi} = 1.989\text{ V (peak)}
+$$
 The peak-to-peak output voltage is:
-$$V_{p-p(out)} = 2 \times 1.989\text{ V} = 3.979\text{ V}_{p-p}$$
+$$
+V_{p-p(out)} = 2 \times 1.989\text{ V} = 3.979\text{ V}_{p-p}
+$$
 Since the closed-loop gain is 10, the maximum allowable peak-to-peak input voltage is:
-$$V_{p-p(in)} = \frac{V_{p-p(out)}}{\text{Gain}} = \frac{3.979\text{ V}}{10} = 0.398\text{ V}_{p-p} \quad (\text{or } 398\text{ mV}_{p-p})$$
+$$
+V_{p-p(in)} = \frac{V_{p-p(out)}}{\text{Gain}} = \frac{3.979\text{ V}}{10} = 0.398\text{ V}_{p-p} \quad (\text{or } 398\text{ mV}_{p-p})
+$$
 
 ---
 
@@ -233,18 +293,28 @@ A standard diode requires $\sim 0.7\text{V}$ to turn on, clipping small signals.
 **Stage 1 (Op-Amp A1):**
 This is a non-inverting amplifier. The non-inverting terminal is connected to $V_i$ through a $180\text{ k}\Omega$ resistor. Since ideal op-amps draw zero current, there is no voltage drop across $R_{in}$. Thus, $V_{in(+)} = V_i$.
 The feedback network consists of $R_2 = 200\text{ k}\Omega$ and $R_1 = 20\text{ k}\Omega$.
-$$V_{o1} = V_i \left( 1 + \frac{R_2}{R_1} \right) = V_i \left( 1 + \frac{200}{20} \right) = 11 V_i$$
+$$
+V_{o1} = V_i \left( 1 + \frac{R_2}{R_1} \right) = V_i \left( 1 + \frac{200}{20} \right) = 11 V_i
+$$
 
 **Stage 2 (Op-Amp A2):**
 This is a differential amplifier.
 *   The inverting input receives $V_{o1}$ via $R_4 = 50\text{ k}\Omega$, with feedback $R_5 = 500\text{ k}\Omega$.
 *   The non-inverting input is connected to the original $V_i$ node via $R_3 = 45\text{ k}\Omega$. Note there is no resistor from the non-inverting terminal to ground. Therefore, no current flows through $R_3$, and the voltage at the non-inverting terminal of A2 is exactly $V_i$.
 Using superposition for a differential amplifier:
-$$V_o = V_{in(+)} \left( 1 + \frac{R_5}{R_4} \right) - V_{in(-)} \left( \frac{R_5}{R_4} \right)$$
-$$V_o = V_i \left( 1 + \frac{500}{50} \right) - V_{o1} \left( \frac{500}{50} \right)$$
-$$V_o = V_i (11) - V_{o1} (10)$$
+$$
+V_o = V_{in(+)} \left( 1 + \frac{R_5}{R_4} \right) - V_{in(-)} \left( \frac{R_5}{R_4} \right)
+$$
+$$
+V_o = V_i \left( 1 + \frac{500}{50} \right) - V_{o1} \left( \frac{500}{50} \right)
+$$
+$$
+V_o = V_i (11) - V_{o1} (10)
+$$
 Substitute $V_{o1} = 11 V_i$:
-$$V_o = 11 V_i - 10(11 V_i) = 11 V_i - 110 V_i = -99 V_i$$
+$$
+V_o = 11 V_i - 10(11 V_i) = 11 V_i - 110 V_i = -99 V_i
+$$
 **Voltage Gain:** $A_v = \frac{V_o}{V_i} = -99$.
 
 ---
@@ -261,10 +331,14 @@ $$V_o = 11 V_i - 10(11 V_i) = 11 V_i - 110 V_i = -99 V_i$$
 **Design Strategy:** Cascade a High-Pass Filter (HPF) set to $f_L = 50\text{ kHz}$ and a Low-Pass Filter (LPF) set to $f_H = 100\text{ kHz}$.
 1.  **HPF Stage ($50\text{ kHz}$):**
     Let $C_H = 1\text{ nF}$.
-    $$R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi \times 50\times 10^3 \times 1\times 10^{-9}} = 3.18\text{ k}\Omega$$
+    $$
+    R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi \times 50\times 10^3 \times 1\times 10^{-9}} = 3.18\text{ k}\Omega
+    $$
 2.  **LPF Stage ($100\text{ kHz}$):**
     Let $C_L = 1\text{ nF}$.
-    $$R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi \times 100\times 10^3 \times 1\times 10^{-9}} = 1.59\text{ k}\Omega$$
+    $$
+    R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi \times 100\times 10^3 \times 1\times 10^{-9}} = 1.59\text{ k}\Omega
+    $$
 
 ---
 
@@ -278,14 +352,24 @@ $$V_o = 11 V_i - 10(11 V_i) = 11 V_i - 110 V_i = -99 V_i$$
 **(c) Design 555 astable: $f_o = 3.5\text{ kHz}$, Duty cycle $60\%$. [05 Marks]**
 **Solution:**
 Duty Cycle $D = \frac{R_A + R_B}{R_A + 2R_B} = 0.60$.
-$$R_A + R_B = 0.6 R_A + 1.2 R_B \Rightarrow 0.4 R_A = 0.2 R_B \Rightarrow R_B = 2 R_A$$
+$$
+R_A + R_B = 0.6 R_A + 1.2 R_B \Rightarrow 0.4 R_A = 0.2 R_B \Rightarrow R_B = 2 R_A
+$$
 Frequency $f_o = \frac{1.44}{(R_A + 2R_B)C} = 3500\text{ Hz}$.
 Substitute $R_B = 2R_A$:
-$$3500 = \frac{1.44}{(R_A + 4R_A)C} = \frac{1.44}{5 R_A C}$$
-$$5 R_A C = \frac{1.44}{3500} = 4.114 \times 10^{-4}$$
+$$
+3500 = \frac{1.44}{(R_A + 4R_A)C} = \frac{1.44}{5 R_A C}
+$$
+$$
+5 R_A C = \frac{1.44}{3500} = 4.114 \times 10^{-4}
+$$
 Choose a practical capacitor value, e.g., $C = 0.01\ \mu\text{F} = 10^{-8}\text{ F}$.
-$$5 R_A (10^{-8}) = 4.114 \times 10^{-4} \Rightarrow R_A = \frac{41140}{5} = 8228\ \Omega \approx 8.2\text{ k}\Omega$$
-$$R_B = 2 R_A = 2 \times 8228 = 16456\ \Omega \approx 16.5\text{ k}\Omega$$
+$$
+5 R_A (10^{-8}) = 4.114 \times 10^{-4} \Rightarrow R_A = \frac{41140}{5} = 8228\ \Omega \approx 8.2\text{ k}\Omega
+$$
+$$
+R_B = 2 R_A = 2 \times 8228 = 16456\ \Omega \approx 16.5\text{ k}\Omega
+$$
 **Design Values:** $C = 0.01\ \mu\text{F}$, $R_A = 8.2\text{ k}\Omega$, $R_B = 16.5\text{ k}\Omega$.
 
 ---
@@ -306,9 +390,15 @@ Thus, the digital binary stream modulates the analog output frequency.
 **Solution:**
 The oscillation frequency is $f_o = \frac{1}{2\pi \sqrt{6} RC}$.
 Let $C = 0.1\ \mu\text{F} = 10^{-7}\text{ F}$.
-$$R = \frac{1}{2\pi \sqrt{6} f_o C} = \frac{1}{2\pi \sqrt{6} (400) (10^{-7})} = \frac{1}{0.0006155} = 1624.7\ \Omega \approx 1.62\text{ k}\Omega$$
+$$
+R = \frac{1}{2\pi \sqrt{6} f_o C} = \frac{1}{2\pi \sqrt{6} (400) (10^{-7})} = \frac{1}{0.0006155} = 1624.7\ \Omega \approx 1.62\text{ k}\Omega
+$$
 To prevent loading the phase-shift network, the input resistor to the inverting amplifier should match $R$.
-$$R_1 = R = 1.62\text{ k}\Omega$$
+$$
+R_1 = R = 1.62\text{ k}\Omega
+$$
 For sustained oscillation, the gain must be 29 ($R_F / R_1 \ge 29$).
-$$R_F = 29 \times R_1 = 29 \times 1624.7 = 47116\ \Omega \approx 47\text{ k}\Omega$$
+$$
+R_F = 29 \times R_1 = 29 \times 1624.7 = 47116\ \Omega \approx 47\text{ k}\Omega
+$$
 **Design Values:** $C = 0.1\ \mu\text{F}, R = 1.62\text{ k}\Omega, R_1 = 1.62\text{ k}\Omega, R_F = 47\text{ k}\Omega$.

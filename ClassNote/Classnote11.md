@@ -10,19 +10,35 @@
 
 #### 1. Voltage-Series Feedback Gain ($A_f$):
 Feedback loop equations:
-$$v_{id} = v_s - v_f \quad \text{and} \quad v_f = \beta v_o$$
-$$v_o = A v_{id} = A(v_s - v_f) = A(v_s - \beta v_o)$$
-$$v_o (1 + \beta A) = A v_s$$
-$$\therefore \boxed{A_f = \frac{v_o}{v_s} = \frac{A}{1 + \beta A}}$$
+$$
+v_{id} = v_s - v_f \quad \text{and} \quad v_f = \beta v_o
+$$
+$$
+v_o = A v_{id} = A(v_s - v_f) = A(v_s - \beta v_o)
+$$
+$$
+v_o (1 + \beta A) = A v_s
+$$
+$$
+\therefore \boxed{A_f = \frac{v_o}{v_s} = \frac{A}{1 + \beta A}}
+$$
 
 ---
 
 #### 2. Voltage-Shunt Feedback Gain ($A_f$):
 Feedback loop equations:
-$$i_{id} = i_s - i_f \quad \text{and} \quad i_f = \beta v_o \quad (\text{where } \beta = -\frac{1}{R_f})$$
-$$v_o = Z_t i_{id} = Z_t (i_s - \beta v_o)$$
-$$v_o(1 + \beta Z_t) = Z_t i_s$$
-$$\therefore \boxed{A_f = \frac{v_o}{i_s} = \frac{Z_t}{1 + \beta Z_t}}$$
+$$
+i_{id} = i_s - i_f \quad \text{and} \quad i_f = \beta v_o \quad (\text{where } \beta = -\frac{1}{R_f})
+$$
+$$
+v_o = Z_t i_{id} = Z_t (i_s - \beta v_o)
+$$
+$$
+v_o(1 + \beta Z_t) = Z_t i_s
+$$
+$$
+\therefore \boxed{A_f = \frac{v_o}{i_s} = \frac{Z_t}{1 + \beta Z_t}}
+$$
 
 ---
 
@@ -47,16 +63,26 @@ $$\therefore \boxed{A_f = \frac{v_o}{i_s} = \frac{Z_t}{1 + \beta Z_t}}$$
                                            GND           GND
 ```
 * **KVL around input loop:**
-  $$I_i = \frac{v_{id}}{Z_i} = \frac{v_s - v_f}{Z_i} = \frac{v_s - \beta v_o}{Z_i}$$
-  $$I_i Z_i = v_s - \beta (A v_{id}) = v_s - \beta A (I_i Z_i)$$
-  $$v_s = I_i Z_i + \beta A I_i Z_i = I_i Z_i (1 + \beta A)$$
-  $$\therefore \boxed{Z_{if} = \frac{v_s}{I_i} = Z_i(1 + \beta A)}$$
+  $$
+  I_i = \frac{v_{id}}{Z_i} = \frac{v_s - v_f}{Z_i} = \frac{v_s - \beta v_o}{Z_i}
+  $$
+  $$
+  I_i Z_i = v_s - \beta (A v_{id}) = v_s - \beta A (I_i Z_i)
+  $$
+  $$
+  v_s = I_i Z_i + \beta A I_i Z_i = I_i Z_i (1 + \beta A)
+  $$
+  $$
+  \therefore \boxed{Z_{if} = \frac{v_s}{I_i} = Z_i(1 + \beta A)}
+  $$
   *(Note: Voltage-series feedback increases the input impedance by a factor of $(1+\beta A)$).*
 
 ---
 
 #### 2. Voltage-Shunt Feedback Input Impedance ($Z_{if}$):
-$$\therefore \boxed{Z_{if} = \frac{Z_i}{1 + \beta A}}$$
+$$
+\therefore \boxed{Z_{if} = \frac{Z_i}{1 + \beta A}}
+$$
 *(Note: Shunt mixing feedback decreases input impedance).*
 
 ---
@@ -81,15 +107,23 @@ To find output impedance, short the independent source ($v_s = 0$) and apply an 
 * **Analysis:**
   Since $v_s = 0 \Rightarrow v_{id} = -v_f = -\beta V$.
   Applying KVL to the output loop:
-  $$V = I Z_o + A v_{id} = I Z_o - A \beta V$$
-  $$V (1 + \beta A) = I Z_o$$
-  $$\therefore \boxed{Z_{of} = \frac{V}{I} = \frac{Z_o}{1 + \beta A}}$$
+  $$
+  V = I Z_o + A v_{id} = I Z_o - A \beta V
+  $$
+  $$
+  V (1 + \beta A) = I Z_o
+  $$
+  $$
+  \therefore \boxed{Z_{of} = \frac{V}{I} = \frac{Z_o}{1 + \beta A}}
+  $$
   *(Note: Voltage sampling feedback decreases the output impedance).*
 
 ---
 
 #### Output Impedance for Current-Series Feedback:
-$$\therefore \boxed{Z_{of} = Z_o(1 + \beta A)}$$
+$$
+\therefore \boxed{Z_{of} = Z_o(1 + \beta A)}
+$$
 *(Note: Current sampling feedback increases the output impedance).*
 * **Self-Study:** Look at Boylestad Table 14.1 & 14.2 for comprehensive feedback parameter comparisons.
 
@@ -118,15 +152,23 @@ $$\therefore \boxed{Z_{of} = Z_o(1 + \beta A)}$$
 ```
 
 #### 1. AC Gain Without Feedback ($A$):
-$$A = -g_m R_L$$
+$$
+A = -g_m R_L
+$$
 where:
-$$R_L = R_o \parallel R_D \parallel (R_1 + R_2) \approx R_o \parallel R_D$$
+$$
+R_L = R_o \parallel R_D \parallel (R_1 + R_2) \approx R_o \parallel R_D
+$$
 
 #### 2. Feedback Factor ($\beta$):
-$$v_f = \left( \frac{-R_2}{R_1 + R_2} \right) v_o \Rightarrow \boxed{\beta = \frac{v_f}{v_o} = -\frac{R_2}{R_1 + R_2}}$$
+$$
+v_f = \left( \frac{-R_2}{R_1 + R_2} \right) v_o \Rightarrow \boxed{\beta = \frac{v_f}{v_o} = -\frac{R_2}{R_1 + R_2}}
+$$
 
 #### 3. Closed-Loop Gain ($A_f$):
-$$A_f = \frac{A}{1 + \beta A} = \frac{-g_m R_L}{1 + g_m R_L \left( \frac{R_2}{R_1 + R_2} \right)}$$
+$$
+A_f = \frac{A}{1 + \beta A} = \frac{-g_m R_L}{1 + g_m R_L \left( \frac{R_2}{R_1 + R_2} \right)}
+$$
 
 ---
 
@@ -136,7 +178,9 @@ $$A_f = \frac{A}{1 + \beta A} = \frac{-g_m R_L}{1 + g_m R_L \left( \frac{R_2}{R_
 
 #### Closed-loop Gain Simplification:
 If loop gain is very large ($\beta A \gg 1$):
-$$A_f \approx \frac{1}{\beta} = -\left( \frac{R_1 + R_2}{R_2} \right)$$
+$$
+A_f \approx \frac{1}{\beta} = -\left( \frac{R_1 + R_2}{R_2} \right)
+$$
 
 ---
 
@@ -145,10 +189,18 @@ $$A_f \approx \frac{1}{\beta} = -\left( \frac{R_1 + R_2}{R_2} \right)$$
   * $R_1 = 80\ \Omega$, $R_2 = 20\text{ k}\Omega$, $R_o = 10\text{ k}\Omega$, $R_D = 10\text{ k}\Omega$, $g_m = 4000\ \mu\text{S}$.
 * **Calculate:** $R_L$, gain without feedback $A$, feedback factor $\beta$, and closed-loop gain $A_f$.
 * **Solution:**
-  $$R_L = R_o \parallel R_D = 10\text{ k}\Omega \parallel 10\text{ k}\Omega = 5\text{ k}\Omega$$
-  $$A = -g_m R_L = -4000\ \mu\text{S} \times 5\text{ k}\Omega = -20$$
-  $$\beta = -\frac{R_1}{R_1 + R_2} = -\frac{80\ \Omega}{80\ \Omega + 20\text{ k}\Omega} = -0.00398$$
-  $$A_f = \frac{A}{1 + \beta A} = \frac{-20}{1 + (-0.00398 \times -20)} = \frac{-20}{1 + 0.0796} = -18.52$$
+  $$
+  R_L = R_o \parallel R_D = 10\text{ k}\Omega \parallel 10\text{ k}\Omega = 5\text{ k}\Omega
+  $$
+  $$
+  A = -g_m R_L = -4000\ \mu\text{S} \times 5\text{ k}\Omega = -20
+  $$
+  $$
+  \beta = -\frac{R_1}{R_1 + R_2} = -\frac{80\ \Omega}{80\ \Omega + 20\text{ k}\Omega} = -0.00398
+  $$
+  $$
+  A_f = \frac{A}{1 + \beta A} = \frac{-20}{1 + (-0.00398 \times -20)} = \frac{-20}{1 + 0.0796} = -18.52
+  $$
 * **Self-Study Assignments:** Boylestad Example 14.4 & 14.5.
 
 ---
@@ -156,7 +208,9 @@ $$A_f \approx \frac{1}{\beta} = -\left( \frac{R_1 + R_2}{R_2} \right)$$
 ### Practical Voltage-Shunt Feedback JFET Circuit
 * **Feedback Configuration:** Resistor $R_f$ connected from Drain (output) directly back to the Gate (input).
 * **Gain Without Feedback ($A$):**
-  $$A = -g_m R_D R_s$$
+  $$
+  A = -g_m R_D R_s
+  $$
 
 ---
 
@@ -166,19 +220,29 @@ $$A_f \approx \frac{1}{\beta} = -\left( \frac{R_1 + R_2}{R_2} \right)$$
 
 #### Voltage-Shunt Feedback Analysis (Ex 14.6):
 * **Feedback Current ($I_f$):**
-  $$I_f = -\frac{V_o}{R_f}$$
+  $$
+  I_f = -\frac{V_o}{R_f}
+  $$
 * **Feedback Factor ($\beta$):**
-  $$\beta = \frac{I_f}{V_o} = -\frac{1}{R_f}$$
+  $$
+  \beta = \frac{I_f}{V_o} = -\frac{1}{R_f}
+  $$
 * **Closed-loop Gain (Transresistance):**
-  $$A_f = \frac{V_o}{I_s} = \frac{A}{1 + \beta A}$$
+  $$
+  A_f = \frac{V_o}{I_s} = \frac{A}{1 + \beta A}
+  $$
 * **Closed-loop Voltage Gain ($A_{vf}$):**
-  $$A_{vf} = \frac{V_o}{V_s} = \frac{V_o}{I_s \cdot R_s} = \frac{A_f}{R_s}$$
+  $$
+  A_{vf} = \frac{V_o}{V_s} = \frac{V_o}{I_s \cdot R_s} = \frac{A_f}{R_s}
+  $$
 
 ---
 
 #### Active Arithmetic Circuits Design:
 * **Question:** Design an active circuit to compute:
-  $$v_o = 2 V_1 - 3 V_2$$
+  $$
+  v_o = 2 V_1 - 3 V_2
+  $$
   *(Note: Must implement using inverting summing and cascading inverting topologies).*
 
 ```
@@ -317,7 +381,9 @@ To implement a CMOS OR gate, cascade a CMOS NOR gate stage with a CMOS Inverter 
                      +----+
 ```
 * **Closed-loop Output Voltage:**
-  $$\boxed{v_o = -\left( \frac{R_f}{R_1} V_1 + \frac{R_f}{R_2} V_2 + \frac{R_f}{R_3} V_3 \right)}$$
+  $$
+  \boxed{v_o = -\left( \frac{R_f}{R_1} V_1 + \frac{R_f}{R_2} V_2 + \frac{R_f}{R_3} V_3 \right)}
+  $$
 * Derived using the virtual ground principle and Superposition Theorem.
 
 ---
@@ -347,7 +413,9 @@ To implement a CMOS OR gate, cascade a CMOS NOR gate stage with a CMOS Inverter 
   * If $V_1 = 0 \Rightarrow V_{p2} = \left( \frac{R_1}{R_1 + R_2} \right) V_2$
   * Total $V_p = V_{p1} + V_{p2} = \frac{R_2 V_1 + R_1 V_2}{R_1 + R_2}$.
   * Overall Output Voltage:
-    $$\boxed{v_o = \left( 1 + \frac{R_f}{R_1'} \right) V_p}$$
+    $$
+    \boxed{v_o = \left( 1 + \frac{R_f}{R_1'} \right) V_p}
+    $$
 
 ---
 

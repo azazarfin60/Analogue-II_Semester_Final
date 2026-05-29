@@ -42,11 +42,21 @@
 ### Solution
 
 #### (i) DC Bias Analysis (Thevenin Equivalent at Base):
-$$R_{th} = R_1 \parallel R_2 = 10\text{ k} \parallel 40\text{ k} = 8\text{ k}\Omega$$
-$$V_{th} = \frac{R_2}{R_1 + R_2} V_{CC} = \frac{10\text{ k}}{40\text{ k} + 10\text{ k}} \times 20\text{ V} = 4\text{ V}$$
-$$I_b = \frac{V_{th} - V_{BE}}{R_{th} + (\beta + 1) R_E} = \frac{4\text{ V} - 0.7\text{ V}}{8\text{ k}\Omega + (101 \times 2\text{ k}\Omega)} = \frac{3.3\text{ V}}{210\text{ k}\Omega} = 0.0157\text{ mA}$$
-$$I_E = (\beta + 1) I_b = 101 \times 0.0157\text{ mA} = 1.59\text{ mA}$$
-$$r_e = \frac{26\text{ mV}}{I_E} = \frac{26\text{ mV}}{1.59\text{ mA}} = 16.36\ \Omega$$
+$$
+R_{th} = R_1 \parallel R_2 = 10\text{ k} \parallel 40\text{ k} = 8\text{ k}\Omega
+$$
+$$
+V_{th} = \frac{R_2}{R_1 + R_2} V_{CC} = \frac{10\text{ k}}{40\text{ k} + 10\text{ k}} \times 20\text{ V} = 4\text{ V}
+$$
+$$
+I_b = \frac{V_{th} - V_{BE}}{R_{th} + (\beta + 1) R_E} = \frac{4\text{ V} - 0.7\text{ V}}{8\text{ k}\Omega + (101 \times 2\text{ k}\Omega)} = \frac{3.3\text{ V}}{210\text{ k}\Omega} = 0.0157\text{ mA}
+$$
+$$
+I_E = (\beta + 1) I_b = 101 \times 0.0157\text{ mA} = 1.59\text{ mA}
+$$
+$$
+r_e = \frac{26\text{ mV}}{I_E} = \frac{26\text{ mV}}{1.59\text{ mA}} = 16.36\ \Omega
+$$
 
 ---
 
@@ -56,11 +66,15 @@ $$r_e = \frac{26\text{ mV}}{I_E} = \frac{26\text{ mV}}{1.59\text{ mA}} = 16.36\ 
 
 * **Approximation Rule Check:**
   Since $\beta R_E = 100 \times 2\text{ k}\Omega = 200\text{ k}\Omega$ and $10 R_2 = 10 \times 10\text{ k}\Omega = 100\text{ k}\Omega$:
-  $$\beta R_E \ge 10 R_2 \quad (200\text{ k}\Omega \ge 100\text{ k}\Omega)$$
+  $$
+  \beta R_E \ge 10 R_2 \quad (200\text{ k}\Omega \ge 100\text{ k}\Omega)
+  $$
   Since the inequality holds, the approximate method could also be used.
 
 #### (ii) Midband Voltage Gain ($A_{v_{\text{mid}}}$):
-$$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omega \parallel 2.2\text{ k}\Omega}{16.36\ \Omega} = -\frac{1100\ \Omega}{16.36\ \Omega} = -67.24$$
+$$
+A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omega \parallel 2.2\text{ k}\Omega}{16.36\ \Omega} = -\frac{1100\ \Omega}{16.36\ \Omega} = -67.24
+$$
 
 #### (iii) Cutoff Frequencies:
 * BJT & FET configurations cutoff frequency formulas summary. *(Done)*
@@ -123,9 +137,13 @@ $$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omeg
              -V (Biasing Voltage)
 ```
 * **Gain Relationship:**
-  $$A = \frac{v_o}{v_d}$$
+  $$
+  A = \frac{v_o}{v_d}
+  $$
   where $v_d$ is the differential input voltage:
-  $$v_d = v_1 - v_2$$
+  $$
+  v_d = v_1 - v_2
+  $$
 
 ---
 
@@ -145,7 +163,9 @@ $$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omeg
 ```
 * Inverting terminal is grounded ($v_2 = 0$). Input signal is applied to non-inverting terminal.
 * Output voltage:
-  $$v_o = A v_1 \quad (\text{in phase, } 0^\circ \text{ phase shift})$$
+  $$
+  v_o = A v_1 \quad (\text{in phase, } 0^\circ \text{ phase shift})
+  $$
 
 #### 2. Inverting Op-Amp Configuration (if $v_1 = 0$)
 ```
@@ -160,7 +180,9 @@ $$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omeg
 ```
 * Non-inverting terminal is grounded ($v_1 = 0$). Input signal is applied to inverting terminal.
 * Output voltage:
-  $$v_o = A(0 - v_2) \Rightarrow \boxed{v_o = -A v_2}$$
+  $$
+  v_o = A(0 - v_2) \Rightarrow \boxed{v_o = -A v_2}
+  $$
 * **Important Note (Bengali):** Inverting amplifier-এ output, input-এর চেয়ে $180^\circ$ phase difference-এ থাকে (phase shift). same ভাবে non-inverting-এর ক্ষেত্রে $0^\circ$ বা in phase-এ থাকে। (In the inverting amplifier, the output is $180^\circ$ out-of-phase with the input. Similarly, in the non-inverting amplifier, it is in-phase or at $0^\circ$).
 
 ---
@@ -169,7 +191,9 @@ $$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omeg
 
 ### Differential Op-Amp (if neither $v_1$ nor $v_2$ is grounded)
 * Gain is extremely high:
-  $$\boxed{A = 10^5 \text{ to } 10^6}$$
+  $$
+  \boxed{A = 10^5 \text{ to } 10^6}
+  $$
 
 ---
 
@@ -266,24 +290,42 @@ $$A_{v_{\text{mid}}} = -\frac{R_C \parallel R_L}{r_e} = -\frac{2.2\text{ k}\Omeg
 ```
 
 #### Derivation of Virtual Short:
-$$A = \frac{V_o}{V_d} \Rightarrow V_d = \frac{V_o}{A}$$
+$$
+A = \frac{V_o}{V_d} \Rightarrow V_d = \frac{V_o}{A}
+$$
 For $V_o = 10\text{ V}$ and open loop gain $A = 10^6$:
-$$V_d = \frac{10}{10^6} = 10\ \mu\text{V} \approx 0$$
-$$\because V_d = V_1 - V_2 \approx 0 \Rightarrow \boxed{V_1 \approx V_2}$$
+$$
+V_d = \frac{10}{10^6} = 10\ \mu\text{V} \approx 0
+$$
+$$
+\because V_d = V_1 - V_2 \approx 0 \Rightarrow \boxed{V_1 \approx V_2}
+$$
 If non-inverting terminal $V_2$ is grounded:
-$$\therefore V_1 \approx V_A \approx 0 \quad (\text{Virtual Ground})$$
+$$
+\therefore V_1 \approx V_A \approx 0 \quad (\text{Virtual Ground})
+$$
 
 ---
 
 #### Derivation of Closed-Loop Gain for Inverting Op-Amp:
 Applying KCL at node $V_A$:
-$$I_1 = I_2 + I_i$$
+$$
+I_1 = I_2 + I_i
+$$
 Since input impedance $R_i \rightarrow \infty$, the input current $I_i \rightarrow 0$:
-$$\therefore I_1 \approx I_2$$
-$$\frac{V_1 - V_A}{R_i} = \frac{V_A - V_o}{R_f}$$
+$$
+\therefore I_1 \approx I_2
+$$
+$$
+\frac{V_1 - V_A}{R_i} = \frac{V_A - V_o}{R_f}
+$$
 Since $V_A \rightarrow 0$ (virtual ground):
-$$\frac{V_1}{R_i} = \frac{-V_o}{R_f} \Rightarrow \boxed{A_v = \frac{V_o}{V_1} = -\frac{R_f}{R_i}}$$
-$$\Rightarrow \boxed{V_o = -\left( \frac{R_f}{R_i} \right) V_1}$$
+$$
+\frac{V_1}{R_i} = \frac{-V_o}{R_f} \Rightarrow \boxed{A_v = \frac{V_o}{V_1} = -\frac{R_f}{R_i}}
+$$
+$$
+\Rightarrow \boxed{V_o = -\left( \frac{R_f}{R_i} \right) V_1}
+$$
 
 ---
 ---
@@ -298,7 +340,9 @@ $$\Rightarrow \boxed{V_o = -\left( \frac{R_f}{R_i} \right) V_1}$$
 ### Topic: Slew Rate ($SR$)
 * **Definition (Bengali):** Time-এর সাপেক্ষে output max. যতটুকু change হতে পারে। (The maximum rate of change of the output voltage with respect to time).
 * **Mathematical Definition:**
-  $$\boxed{\text{Slew Rate} = \left. \frac{dV_{out}}{dt} \right|_{\max}}$$
+  $$
+  \boxed{\text{Slew Rate} = \left. \frac{dV_{out}}{dt} \right|_{\max}}
+  $$
 
 ---
 
@@ -358,11 +402,19 @@ $$\Rightarrow \boxed{V_o = -\left( \frac{R_f}{R_i} \right) V_1}$$
 
 ### Slew Rate Mathematical Derivation
 Let the input voltage be:
-$$v_{in}(t) = V_p \sin(\omega t)$$
-$$\frac{dv_{in}}{dt} = \omega V_p \cos(\omega t)$$
+$$
+v_{in}(t) = V_p \sin(\omega t)
+$$
+$$
+\frac{dv_{in}}{dt} = \omega V_p \cos(\omega t)
+$$
 The maximum value of the derivative is the slew rate ($SR$):
-$$\text{SR} = \left. \frac{dv_{in}}{dt} \right|_{\max} = \omega V_p$$
-$$\boxed{\text{SR} = 2\pi f V_p}$$
+$$
+\text{SR} = \left. \frac{dv_{in}}{dt} \right|_{\max} = \omega V_p
+$$
+$$
+\boxed{\text{SR} = 2\pi f V_p}
+$$
 where $f$ is the signal frequency and $V_p$ is the peak output voltage.
 
 ---
@@ -454,4 +506,6 @@ where $f$ is the signal frequency and $V_p$ is the peak output voltage.
 ```
 * **Mathematical Node Analysis:**
   Voltage at the non-inverting input terminal ($V_1$):
-  $$V_1 = \left( \frac{-j X_C}{R - j X_C} \right) v_{in} = \left( \frac{1}{1 + j \omega R C} \right) v_{in}$$
+  $$
+  V_1 = \left( \frac{-j X_C}{R - j X_C} \right) v_{in} = \left( \frac{1}{1 + j \omega R C} \right) v_{in}
+  $$

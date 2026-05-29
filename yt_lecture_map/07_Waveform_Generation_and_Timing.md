@@ -42,7 +42,9 @@ A **Quadrature Oscillator** generates two perfect sinusoidal outputs (typically 
   - To satisfy the Barkhausen criterion for oscillation at frequency $\omega_o$, the loop must have a total phase shift of $360^\circ$ (or $0^\circ$) and a loop gain magnitude of unity.
   - Using two cascading integrators provides a total of $-180^\circ$ phase shift. An additional inverting gain stage (or inverting integrator terminal) provides the remaining $-180^\circ$ to sustain stable, steady-state quadrature outputs ($V_{o1} = V_m\sin(\omega_o t)$ and $V_{o2} = V_m\cos(\omega_o t)$).
 - **Oscillation Frequency**:
-  $$\omega_o = \frac{1}{RC}$$
+  $$
+  \omega_o = \frac{1}{RC}
+  $$
 
 #### 2. Frequency Shift Keying (FSK) Modulator using 555 Timer
 **Frequency Shift Keying (FSK)** is a digital modulation scheme in which the frequency of a carrier wave is shifted between two discrete values according to a binary input (Logic 0 or Logic 1).

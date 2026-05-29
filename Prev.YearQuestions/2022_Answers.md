@@ -63,27 +63,61 @@ A 3-input CMOS NAND gate consists of 3 PMOS and 3 NMOS transistors.
 **(c) Calculate the voltage gain ($A_v$) of the cascaded CE-CS amplifier. [04 Marks]**
 **Solution:**
 **Stage 1 (NPN CE):**
-1.  $$V_{th1} = 10\text{ V} \times \frac{8.2\text{ k}\Omega}{24\text{ k}\Omega + 8.2\text{ k}\Omega} = 2.546\text{ V}$$
-2.  $$R_{th1} = 24\text{ k}\Omega \parallel 8.2\text{ k}\Omega = 6.11\text{ k}\Omega$$
-3.  $$I_{E1} = \frac{V_{th1} - 0.7}{R_E + R_{th1}/150} = \frac{1.846\text{ V}}{2200 + 40.7} = 0.824\text{ mA}$$
-4.  $$r_{e1} = \frac{26\text{ mV}}{0.824\text{ mA}} = 31.55\ \Omega$$
+1.
+
+    $$
+    V_{th1} = 10\text{ V} \times \frac{8.2\text{ k}\Omega}{24\text{ k}\Omega + 8.2\text{ k}\Omega} = 2.546\text{ V}
+    $$
+2.
+
+    $$
+    R_{th1} = 24\text{ k}\Omega \parallel 8.2\text{ k}\Omega = 6.11\text{ k}\Omega
+    $$
+3.
+
+    $$
+    I_{E1} = \frac{V_{th1} - 0.7}{R_E + R_{th1}/150} = \frac{1.846\text{ V}}{2200 + 40.7} = 0.824\text{ mA}
+    $$
+4.
+
+    $$
+    r_{e1} = \frac{26\text{ mV}}{0.824\text{ mA}} = 31.55\ \Omega
+    $$
 5.  Load on Stage 1 is $R_{C1} \parallel Z_{in2} = 2.7\text{ k}\Omega \parallel 10\text{ M}\Omega \approx 2.7\text{ k}\Omega$.
-6.  $$A_{v1} = -\frac{2700\ \Omega}{31.55\ \Omega} = -85.58$$
+6.
+
+    $$
+    A_{v1} = -\frac{2700\ \Omega}{31.55\ \Omega} = -85.58
+    $$
 
 **Stage 2 (JFET CS):**
 1.  Self-bias equation: $V_{GS} = -I_D R_S = -330 I_D$.
 2.  Shockley's equation: $I_D = I_{DSS} \left(1 - \frac{V_{GS}}{V_P}\right)^2 = 6\text{ mA} \left(1 + \frac{V_{GS}}{6}\right)^2$.
 3.  Substituting $I_D$:
-    $$\frac{-V_{GS}}{330} = 0.006 \left(1 + \frac{V_{GS}}{3} + \frac{V_{GS}^2}{36}\right)$$
-    $$-V_{GS} = 1.98 \left(1 + 0.333 V_{GS} + 0.0278 V_{GS}^2\right) = 1.98 + 0.66 V_{GS} + 0.055 V_{GS}^2$$
-    $$0.055 V_{GS}^2 + 1.66 V_{GS} + 1.98 = 0$$
+    $$
+    \frac{-V_{GS}}{330} = 0.006 \left(1 + \frac{V_{GS}}{3} + \frac{V_{GS}^2}{36}\right)
+    $$
+    $$
+    -V_{GS} = 1.98 \left(1 + 0.333 V_{GS} + 0.0278 V_{GS}^2\right) = 1.98 + 0.66 V_{GS} + 0.055 V_{GS}^2
+    $$
+    $$
+    0.055 V_{GS}^2 + 1.66 V_{GS} + 1.98 = 0
+    $$
     Using the quadratic formula yields $V_{GS} = -1.24\text{ V}$.
 4.  Transconductance:
-    $$g_m = \frac{2(6\text{ mA})}{6\text{ V}} \left(1 - \frac{-1.24}{-6}\right) = 2\text{ mS} \times (1 - 0.207) = 1.58\text{ mS}$$
-5.  $$A_{v2} = -g_m R_{D2} = -(1.58\text{ mS})(3.7\text{ k}\Omega) = -5.85$$
+    $$
+    g_m = \frac{2(6\text{ mA})}{6\text{ V}} \left(1 - \frac{-1.24}{-6}\right) = 2\text{ mS} \times (1 - 0.207) = 1.58\text{ mS}
+    $$
+5.
+
+    $$
+    A_{v2} = -g_m R_{D2} = -(1.58\text{ mS})(3.7\text{ k}\Omega) = -5.85
+    $$
 
 **Overall Voltage Gain ($A_v$):**
-$$A_v = A_{v1} \times A_{v2} = (-85.58) \times (-5.85) = 500.6$$
+$$
+A_v = A_{v1} \times A_{v2} = (-85.58) \times (-5.85) = 500.6
+$$
 
 ---
 
@@ -101,16 +135,28 @@ $I_{DSS} = 10\text{ mA}, V_P = -6\text{ V}, R_S = 2.2\text{ k}\Omega$.
 Calculated DC Bias: $V_{GS} = -3.58\text{ V}$, $g_m = 1.34\text{ mS}$.
 *   **Gate Input ($f_{LG}$):**
     Assuming the two $1\ \mu\text{F}$ capacitors shown at the input are in series, the equivalent input coupling capacitance is $C_{in} = 0.5\ \mu\text{F}$.
-    $$R_i = 220\text{ k}\Omega \parallel 68\text{ k}\Omega = 51.9\text{ k}\Omega$$
-    $$f_{LG} = \frac{1}{2\pi (R_s + R_i) C_{in}} = \frac{1}{2\pi (1.5\text{ k}\Omega + 51.9\text{ k}\Omega) 0.5\ \mu\text{F}} = 5.96\text{ Hz}$$
+    $$
+    R_i = 220\text{ k}\Omega \parallel 68\text{ k}\Omega = 51.9\text{ k}\Omega
+    $$
+    $$
+    f_{LG} = \frac{1}{2\pi (R_s + R_i) C_{in}} = \frac{1}{2\pi (1.5\text{ k}\Omega + 51.9\text{ k}\Omega) 0.5\ \mu\text{F}} = 5.96\text{ Hz}
+    $$
     *(Note: If interpreted as a single $1\ \mu\text{F}$ capacitor, $f_{LG} = 2.98\text{ Hz}$. Both are academically valid depending on visual interpretation).*
 *   **Output Coupling ($f_{LC}$):**
-    $$f_{LC} = \frac{1}{2\pi (R_D + R_L) C_{out}} = \frac{1}{2\pi (3.9\text{ k}\Omega + 5.6\text{ k}\Omega) 6.8\ \mu\text{F}} = 2.46\text{ Hz}$$
+    $$
+    f_{LC} = \frac{1}{2\pi (R_D + R_L) C_{out}} = \frac{1}{2\pi (3.9\text{ k}\Omega + 5.6\text{ k}\Omega) 6.8\ \mu\text{F}} = 2.46\text{ Hz}
+    $$
 *   **Source Bypass ($f_{LS}$):**
-    $$R_e = R_S \parallel \frac{1}{g_m} = 2200 \parallel 746 = 557\ \Omega$$
-    $$f_{LS} = \frac{1}{2\pi (557\ \Omega) 10\ \mu\text{F}} = 28.5\text{ Hz}$$
+    $$
+    R_e = R_S \parallel \frac{1}{g_m} = 2200 \parallel 746 = 557\ \Omega
+    $$
+    $$
+    f_{LS} = \frac{1}{2\pi (557\ \Omega) 10\ \mu\text{F}} = 28.5\text{ Hz}
+    $$
 **Overall Lower Cutoff Frequency:**
-$$f_L \approx f_{LS} = 28.5\text{ Hz}$$
+$$
+f_L \approx f_{LS} = 28.5\text{ Hz}
+$$
 
 ---
 
@@ -130,7 +176,9 @@ A triangular wave generator is created by feeding a $50\%$ duty cycle square wav
     To get a $50\%$ duty cycle, use the astable configuration with a bypass diode across $R_B$.
     $t_{charge} = 0.693 R_A C$. $t_{discharge} = 0.693 R_B C$.
     For $50\%$, $R_A = R_B$. Let $C = 10\text{ nF}$.
-    $$f_o = \frac{1.44}{2 R_A C} = 10,000\text{ Hz} \Rightarrow R_A = \frac{1.44}{20000 \times 10^{-8}} = 7.2\text{ k}\Omega$$
+    $$
+    f_o = \frac{1.44}{2 R_A C} = 10,000\text{ Hz} \Rightarrow R_A = \frac{1.44}{20000 \times 10^{-8}} = 7.2\text{ k}\Omega
+    $$
     Set $R_A = 7.2\text{ k}\Omega$ and $R_B = 7.2\text{ k}\Omega$.
 2.  **Stage 2: Op-Amp Integrator**
     Feed the $10\text{ kHz}$ square wave from the 555 output to an op-amp integrator.
@@ -158,11 +206,17 @@ Feed the outputs of all 4 stages into a final 4-input unity-gain inverting summi
 **(c) Determine the closed-loop output voltage $V_o$ of the multi-input summing circuit. [03 Marks]**
 **Solution:**
 Using Millman's Theorem, the voltage at the non-inverting node ($V_+$) is:
-$$V_+ = \frac{ \frac{V_a}{R_a} + \frac{V_b}{R_b} + \frac{V_c}{R_c} }{ \frac{1}{R_a} + \frac{1}{R_b} + \frac{1}{R_c} }$$
+$$
+V_+ = \frac{ \frac{V_a}{R_a} + \frac{V_b}{R_b} + \frac{V_c}{R_c} }{ \frac{1}{R_a} + \frac{1}{R_b} + \frac{1}{R_c} }
+$$
 The op-amp is configured as a non-inverting amplifier. The gain is:
-$$A_v = 1 + \frac{R_f}{R_1}$$
+$$
+A_v = 1 + \frac{R_f}{R_1}
+$$
 Therefore, the total closed-loop output voltage is:
-$$V_o = V_+ \left( 1 + \frac{R_f}{R_1} \right) = \left( 1 + \frac{R_f}{R_1} \right) \left[ \frac{ \frac{V_a}{R_a} + \frac{V_b}{R_b} + \frac{V_c}{R_c} }{ \frac{1}{R_a} + \frac{1}{R_b} + \frac{1}{R_c} } \right]$$
+$$
+V_o = V_+ \left( 1 + \frac{R_f}{R_1} \right) = \left( 1 + \frac{R_f}{R_1} \right) \left[ \frac{ \frac{V_a}{R_a} + \frac{V_b}{R_b} + \frac{V_c}{R_c} }{ \frac{1}{R_a} + \frac{1}{R_b} + \frac{1}{R_c} } \right]
+$$
 
 ---
 
@@ -179,10 +233,14 @@ $$V_o = V_+ \left( 1 + \frac{R_f}{R_1} \right) = \left( 1 + \frac{R_f}{R_1} \rig
 **Design Strategy:** Cascade a High-Pass Filter ($f_L = 100\text{ kHz}$) and a Low-Pass Filter ($f_H = 300\text{ kHz}$).
 1.  **Stage 1: High-Pass Filter ($100\text{ kHz}$):**
     Let $C = 1\text{ nF} = 10^{-9}\text{ F}$.
-    $$R = \frac{1}{2\pi f_L C} = \frac{1}{2\pi (100,000) (10^{-9})} = 1591\ \Omega \approx 1.6\text{ k}\Omega$$
+    $$
+    R = \frac{1}{2\pi f_L C} = \frac{1}{2\pi (100,000) (10^{-9})} = 1591\ \Omega \approx 1.6\text{ k}\Omega
+    $$
 2.  **Stage 2: Low-Pass Filter ($300\text{ kHz}$):**
     Let $C = 1\text{ nF} = 10^{-9}\text{ F}$.
-    $$R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (300,000) (10^{-9})} = 530.5\ \Omega \approx 530\ \Omega$$
+    $$
+    R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (300,000) (10^{-9})} = 530.5\ \Omega \approx 530\ \Omega
+    $$
 *(Note: At these frequencies, a high GBWP, high-slew-rate operational amplifier must be specified to prevent intrinsic op-amp roll-off from ruining the $300\text{ kHz}$ response).*
 
 ---
@@ -196,27 +254,47 @@ $$V_o = V_+ \left( 1 + \frac{R_f}{R_1} \right) = \left( 1 + \frac{R_f}{R_1} \rig
 Let the output of Stage 1 be $V_{o1}$. Let the output of Stage 2 be $V_o$.
 1.  **Stage 2:** This is a non-inverting amplifier. The input is $V_{o1}$.
     The feedback network is $R_{f2} = 2\text{ k}\Omega$ and $R_{g2} = 10\text{ k}\Omega$.
-    $$V_o = V_{o1} \left( 1 + \frac{2\text{k}}{10\text{k}} \right) = V_{o1} (1.2)$$
-    $$V_{o1} = \frac{V_o}{1.2} = \frac{5}{6} V_o$$
+    $$
+    V_o = V_{o1} \left( 1 + \frac{2\text{k}}{10\text{k}} \right) = V_{o1} (1.2)
+    $$
+    $$
+    V_{o1} = \frac{V_o}{1.2} = \frac{5}{6} V_o
+    $$
 2.  **Stage 1:** This is a summing inverting amplifier. By virtual ground, the inverting node voltage is $0\text{V}$.
     Applying KCL at the inverting node:
-    $$\frac{V_i - 0}{5\text{ k}\Omega} + \frac{V_{o1} - 0}{10\text{ k}\Omega} + \frac{V_o - 0}{4\text{ k}\Omega} = 0$$
+    $$
+    \frac{V_i - 0}{5\text{ k}\Omega} + \frac{V_{o1} - 0}{10\text{ k}\Omega} + \frac{V_o - 0}{4\text{ k}\Omega} = 0
+    $$
 3.  **Substitute $V_{o1}$ into KCL:**
-    $$\frac{V_i}{5} + \frac{\frac{5}{6} V_o}{10} + \frac{V_o}{4} = 0$$
-    $$\frac{V_i}{5} + \frac{V_o}{12} + \frac{V_o}{4} = 0$$
-    $$\frac{V_i}{5} + V_o \left( \frac{1}{12} + \frac{3}{12} \right) = 0 \Rightarrow \frac{V_i}{5} + V_o \left( \frac{4}{12} \right) = 0 \Rightarrow \frac{V_i}{5} + \frac{V_o}{3} = 0$$
+    $$
+    \frac{V_i}{5} + \frac{\frac{5}{6} V_o}{10} + \frac{V_o}{4} = 0
+    $$
+    $$
+    \frac{V_i}{5} + \frac{V_o}{12} + \frac{V_o}{4} = 0
+    $$
+    $$
+    \frac{V_i}{5} + V_o \left( \frac{1}{12} + \frac{3}{12} \right) = 0 \Rightarrow \frac{V_i}{5} + V_o \left( \frac{4}{12} \right) = 0 \Rightarrow \frac{V_i}{5} + \frac{V_o}{3} = 0
+    $$
 4.  **Solve for Gain:**
-    $$\frac{V_o}{3} = -\frac{V_i}{5}$$
-    $$A_v = \frac{V_o}{V_i} = -\frac{3}{5} = -0.6$$
+    $$
+    \frac{V_o}{3} = -\frac{V_i}{5}
+    $$
+    $$
+    A_v = \frac{V_o}{V_i} = -\frac{3}{5} = -0.6
+    $$
 
 **(c) Design an antilogarithmic amplifier circuit. [04/05 Marks]**
 **Design:**
 *(Schematic: Connect a matched PN junction diode or a diode-connected NPN BJT in the input path (from $V_i$ to the inverting terminal). Connect a resistor $R_f$ in the feedback loop from $V_o$ to the inverting terminal. Non-inverting terminal is grounded).*
 **Operation:**
 The current through the input diode is exponentially related to the input voltage:
-$$I_{in} = I_s e^{V_i / V_T}$$
+$$
+I_{in} = I_s e^{V_i / V_T}
+$$
 By virtual ground, all of $I_{in}$ flows through the feedback resistor $R_f$. The output voltage is the drop across $R_f$:
-$$V_o = - I_{in} R_f = - I_s R_f e^{V_i / V_T}$$
+$$
+V_o = - I_{in} R_f = - I_s R_f e^{V_i / V_T}
+$$
 The output is proportional to the antilog (exponential) of the input voltage.
 
 ---
@@ -237,9 +315,15 @@ A quadrature oscillator generates two perfect sinusoidal signals that are exactl
 
 **(c) Design a Wien bridge oscillator for $f_o = 10\text{ kHz}$. [04 Marks]**
 **Solution:**
-$$f_o = \frac{1}{2\pi R C} = 10,000\text{ Hz}$$
+$$
+f_o = \frac{1}{2\pi R C} = 10,000\text{ Hz}
+$$
 Let $C = 1\text{ nF} = 10^{-9}\text{ F}$.
-$$R = \frac{1}{2\pi (10000)(10^{-9})} = 15915\ \Omega \approx 15.9\text{ k}\Omega$$
+$$
+R = \frac{1}{2\pi (10000)(10^{-9})} = 15915\ \Omega \approx 15.9\text{ k}\Omega
+$$
 To satisfy the Barkhausen gain criterion ($A_v \ge 3$):
-$$1 + \frac{R_f}{R_1} \ge 3 \Rightarrow R_f = 2 R_1$$
+$$
+1 + \frac{R_f}{R_1} \ge 3 \Rightarrow R_f = 2 R_1
+$$
 Let $R_1 = 10\text{ k}\Omega$, then set $R_f = 20\text{ k}\Omega$ (use a $22\text{k}\Omega$ trim pot to fine-tune the amplitude and prevent clipping).

@@ -12,11 +12,17 @@
   * LC network $\rightarrow$ used to generate high frequencies (RF range).
 * **Gain Condition Comparison:**
   For a non-inverting op-amp configuration:
-  $$A_v = 1 + \frac{R_f}{R_1}$$
+  $$
+  A_v = 1 + \frac{R_f}{R_1}
+  $$
   Using the loop gain criteria:
-  $$\frac{R_1}{R_2} + \frac{C_2}{C_1} + 1 = 1 + \frac{R_f}{R_1} \Rightarrow \boxed{\frac{R_f}{R_1} = \frac{R_1}{R_2} + \frac{C_2}{C_1}}$$
+  $$
+  \frac{R_1}{R_2} + \frac{C_2}{C_1} + 1 = 1 + \frac{R_f}{R_1} \Rightarrow \boxed{\frac{R_f}{R_1} = \frac{R_1}{R_2} + \frac{C_2}{C_1}}
+  $$
 * **Symmetric Case ($R_1 = R_2$, $C_1 = C_2$):**
-  $$A_v = 3 \Rightarrow \boxed{R_f = 2 R_1}$$
+  $$
+  A_v = 3 \Rightarrow \boxed{R_f = 2 R_1}
+  $$
 
 #### Design Problem 7.13:
 * **Question:** Design the Wien bridge oscillator of fig (7.19) so that $f_o = 965\text{ Hz}$.
@@ -62,9 +68,13 @@
 
 #### Feedback Factor Analysis:
 * **Parallel Equivalent Impedance ($Z_p$):**
-  $$Z_p = Z_2 \parallel (Z_1 + Z_3)$$
+  $$
+  Z_p = Z_2 \parallel (Z_1 + Z_3)
+  $$
 * **Feedback Factor ($\beta$):**
-  $$V_f = \left( \frac{Z_1}{Z_1 + Z_3} \right) V_o \Rightarrow \boxed{\beta = \frac{V_f}{V_o} = \frac{Z_1}{Z_1 + Z_3}}$$
+  $$
+  V_f = \left( \frac{Z_1}{Z_1 + Z_3} \right) V_o \Rightarrow \boxed{\beta = \frac{V_f}{V_o} = \frac{Z_1}{Z_1 + Z_3}}
+  $$
 
 ---
 
@@ -83,19 +93,33 @@
                   GND
 ```
 * **Output Voltage:**
-  $$V_o = \left( \frac{Z_p}{Z_p + R_o} \right) (-A_v V_i)$$
-  $$\Rightarrow A = \frac{V_o}{V_i} = -A_v \frac{Z_p}{Z_p + R_o}$$
+  $$
+  V_o = \left( \frac{Z_p}{Z_p + R_o} \right) (-A_v V_i)
+  $$
+  $$
+  \Rightarrow A = \frac{V_o}{V_i} = -A_v \frac{Z_p}{Z_p + R_o}
+  $$
   If output resistance $R_o \rightarrow 0 \Rightarrow A \approx -A_v$.
 * **Loop Gain Equation:**
   Substitute $Z_p = \frac{Z_2(Z_1 + Z_3)}{Z_1 + Z_2 + Z_3}$:
-  $$A = -A_v \frac{Z_2 (Z_1 + Z_3)}{Z_2 (Z_1 + Z_3) + R_o (Z_1 + Z_2 + Z_3)}$$
-  $$\therefore A\beta = A \times \left( \frac{Z_1}{Z_1 + Z_3} \right) = \frac{-A_v Z_1 Z_2}{Z_2(Z_1 + Z_3) + R_o (Z_1 + Z_2 + Z_3)}$$
+  $$
+  A = -A_v \frac{Z_2 (Z_1 + Z_3)}{Z_2 (Z_1 + Z_3) + R_o (Z_1 + Z_2 + Z_3)}
+  $$
+  $$
+  \therefore A\beta = A \times \left( \frac{Z_1}{Z_1 + Z_3} \right) = \frac{-A_v Z_1 Z_2}{Z_2(Z_1 + Z_3) + R_o (Z_1 + Z_2 + Z_3)}
+  $$
 
 * **LC Substitutions:**
-  $$Z_1 = \frac{1}{j\omega C_1} \quad ; \quad Z_2 = \frac{1}{j\omega C_2} \quad ; \quad Z_3 = j\omega L$$
-  $$A\beta = \frac{-A_v \left( \frac{1}{j\omega C_1} \right) \left( \frac{1}{j\omega C_2} \right)}{R_o \left[ \frac{1}{j\omega C_1} + \frac{1}{j\omega C_2} + j\omega L \right] + \left( \frac{1}{j\omega C_2} \right) \left( j\omega L + \frac{1}{j\omega C_1} \right)}$$
+  $$
+  Z_1 = \frac{1}{j\omega C_1} \quad ; \quad Z_2 = \frac{1}{j\omega C_2} \quad ; \quad Z_3 = j\omega L
+  $$
+  $$
+  A\beta = \frac{-A_v \left( \frac{1}{j\omega C_1} \right) \left( \frac{1}{j\omega C_2} \right)}{R_o \left[ \frac{1}{j\omega C_1} + \frac{1}{j\omega C_2} + j\omega L \right] + \left( \frac{1}{j\omega C_2} \right) \left( j\omega L + \frac{1}{j\omega C_1} \right)}
+  $$
   Multiply numerator and denominator by $-\omega^2 C_1 C_2$:
-  $$\therefore A\beta = \frac{A_v}{j\omega R_o ( -C_1 - C_2 + \omega^2 L C_1 C_2 ) + ( -1 + \omega^2 L C_1 )}$$
+  $$
+  \therefore A\beta = \frac{A_v}{j\omega R_o ( -C_1 - C_2 + \omega^2 L C_1 C_2 ) + ( -1 + \omega^2 L C_1 )}
+  $$
 
 ---
 
@@ -105,19 +129,33 @@
 
 #### Resonant Frequency Analysis:
 For the loop phase shift to be $0^\circ$ (since $A\beta = 1$), the imaginary part of the denominator must equal zero:
-$$\text{Im} = 0 \Rightarrow \omega_o^2 L C_1 C_2 - (C_1 + C_2) = 0$$
-$$\Rightarrow \omega_o^2 = \frac{C_1 + C_2}{L C_1 C_2} = \frac{1}{L \left( \frac{C_1 C_2}{C_1 + C_2} \right)}$$
+$$
+\text{Im} = 0 \Rightarrow \omega_o^2 L C_1 C_2 - (C_1 + C_2) = 0
+$$
+$$
+\Rightarrow \omega_o^2 = \frac{C_1 + C_2}{L C_1 C_2} = \frac{1}{L \left( \frac{C_1 C_2}{C_1 + C_2} \right)}
+$$
 Let the equivalent series capacitance $C_{eq}$ be:
-$$C_{eq} = C_1 \parallel C_2 = \frac{C_1 C_2}{C_1 + C_2}$$
-$$\therefore \boxed{f = \frac{1}{2\pi \sqrt{L C_{eq}}}} \quad (\text{Colpitts Resonant Frequency})}$$
+$$
+C_{eq} = C_1 \parallel C_2 = \frac{C_1 C_2}{C_1 + C_2}
+$$
+$$
+\therefore \boxed{f = \frac{1}{2\pi \sqrt{L C_{eq}}}} \quad (\text{Colpitts Resonant Frequency})}
+$$
 
 #### Loop Gain Condition:
 Under resonant condition, the imaginary term disappears:
-$$A\beta = \frac{A_v}{-1 + \omega_o^2 L C_1}$$
+$$
+A\beta = \frac{A_v}{-1 + \omega_o^2 L C_1}
+$$
 Substitute $\omega_o^2 = \frac{C_1 + C_2}{L C_1 C_2}$:
-$$A\beta = \frac{A_v}{-1 + \left( \frac{C_1 + C_2}{C_2} \right)} = \frac{A_v}{\frac{C_1}{C_2}} \Rightarrow \boxed{A\beta = A_v \left( \frac{C_2}{C_1} \right)}$$
+$$
+A\beta = \frac{A_v}{-1 + \left( \frac{C_1 + C_2}{C_2} \right)} = \frac{A_v}{\frac{C_1}{C_2}} \Rightarrow \boxed{A\beta = A_v \left( \frac{C_2}{C_1} \right)}
+$$
 Using $A\beta = 1$:
-$$\Rightarrow \boxed{\beta = \frac{C_2}{C_1} \quad \text{and} \quad A_v = \frac{C_1}{C_2}}$$
+$$
+\Rightarrow \boxed{\beta = \frac{C_2}{C_1} \quad \text{and} \quad A_v = \frac{C_1}{C_2}}
+$$
 
 ---
 
@@ -130,11 +168,21 @@ $$\Rightarrow \boxed{\beta = \frac{C_2}{C_1} \quad \text{and} \quad A_v = \frac{
   * $C_1 = 8\text{ nF}$, $C_2 = 1\text{ nF}$, $L = 10\text{ mH}$.
 * **Calculate:** Oscillation frequency $f$, and resistors $R_1, R_f$.
 * **Solution:**
-  $$C_{eq} = \frac{C_1 C_2}{C_1 + C_2} = \frac{8 \times 1}{8 + 1} = 0.89\text{ nF}$$
-  $$f = \frac{1}{2\pi \sqrt{L C_{eq}}} = \frac{1}{2\pi \sqrt{10\text{ mH} \times 0.89\text{ nF}}} = 1687\text{ Hz} \approx 1.69\text{ kHz}$$
-  $$\beta = \frac{C_2}{C_1} = \frac{1\text{ nF}}{8\text{ nF}} = 0.125$$
-  $$A_v \ge \frac{C_1}{C_2} = 8 \Rightarrow R_f \ge 8 R_1$$
-  $$\text{If we select } R_1 = 1\text{ k}\Omega \Rightarrow R_f \ge 8\text{ k}\Omega \quad (\text{use } 10\text{ k}\Omega\text{ to ensure startup})$$
+  $$
+  C_{eq} = \frac{C_1 C_2}{C_1 + C_2} = \frac{8 \times 1}{8 + 1} = 0.89\text{ nF}
+  $$
+  $$
+  f = \frac{1}{2\pi \sqrt{L C_{eq}}} = \frac{1}{2\pi \sqrt{10\text{ mH} \times 0.89\text{ nF}}} = 1687\text{ Hz} \approx 1.69\text{ kHz}
+  $$
+  $$
+  \beta = \frac{C_2}{C_1} = \frac{1\text{ nF}}{8\text{ nF}} = 0.125
+  $$
+  $$
+  A_v \ge \frac{C_1}{C_2} = 8 \Rightarrow R_f \ge 8 R_1
+  $$
+  $$
+  \text{If we select } R_1 = 1\text{ k}\Omega \Rightarrow R_f \ge 8\text{ k}\Omega \quad (\text{use } 10\text{ k}\Omega\text{ to ensure startup})
+  $$
 
 ---
 
@@ -209,11 +257,15 @@ $$\Rightarrow \boxed{\beta = \frac{C_2}{C_1} \quad \text{and} \quad A_v = \frac{
                                 GND
 ```
 * **Transition Analysis:**
-  $$v_{id} = v_1 - v_2$$
+  $$
+  v_{id} = v_1 - v_2
+  $$
   * If $v_{id} > 0 \Rightarrow V_o = +V_{\text{sat}}$
   * If $v_{id} < 0 \Rightarrow V_o = -V_{\text{sat}}$
   * Feedback voltage at non-inverting terminal:
-    $$v_1 = \left( \frac{R_1}{R_1 + R_2} \right) V_o$$
+    $$
+    v_1 = \left( \frac{R_1}{R_1 + R_2} \right) V_o
+    $$
   * Initial State: Capacitor voltage $v_c = 0$, $v_2 = 0$, $V_o = +V_{\text{sat}} \Rightarrow v_1 > v_2$, which triggers output saturation.
 
 ---
@@ -224,11 +276,19 @@ $$\Rightarrow \boxed{\beta = \frac{C_2}{C_1} \quad \text{and} \quad A_v = \frac{
 
 #### Timing Analysis of Astable Multivibrator:
 Total period $T$ of square wave:
-$$\boxed{T = 2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}$$
-$$f_o = \frac{1}{2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}$$
+$$
+\boxed{T = 2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}
+$$
+$$
+f_o = \frac{1}{2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}
+$$
 * **Symmetric / Simplified Case:** If we choose $R_2 \approx 1.16 R_1$:
-  $$\ln\left( \frac{2 R_1 + R_2}{R_2} \right) = \ln(2.718) \approx 1$$
-  $$\therefore \boxed{f_o = \frac{1}{2 R C}}$$
+  $$
+  \ln\left( \frac{2 R_1 + R_2}{R_2} \right) = \ln(2.718) \approx 1
+  $$
+  $$
+  \therefore \boxed{f_o = \frac{1}{2 R C}}
+  $$
 * **Practice Question (Bengali):** দেখাও যে $f_o$-এর সাথে Resistance inversely proportional. (Show that oscillation frequency $f_o$ is inversely proportional to resistance).
 
 #### Design Problem 7.15:
@@ -237,7 +297,9 @@ $$f_o = \frac{1}{2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}$$
   Using the simplified case $R_2 = 1.16 R_1$:
   Let $R_1 = 10\text{ k}\Omega \Rightarrow R_2 = 11.6\text{ k}\Omega$.
   Choose $C = 0.05\ \mu\text{F}$:
-  $$f_o = \frac{1}{2 R C} \Rightarrow R = \frac{1}{2 f_o C} = \frac{1}{2 \times 1\text{ kHz} \times 0.05\ \mu\text{F}} = 10\text{ k}\Omega$$
+  $$
+  f_o = \frac{1}{2 R C} \Rightarrow R = \frac{1}{2 f_o C} = \frac{1}{2 \times 1\text{ kHz} \times 0.05\ \mu\text{F}} = 10\text{ k}\Omega
+  $$
 
 ---
 
@@ -264,12 +326,18 @@ $$f_o = \frac{1}{2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}$$
 
 #### Mathematical Formulations:
 * **Integrator Output Relation:**
-  $$v_o(t) = -\frac{1}{R_1 C} \int_{0}^{t} v_{o1}(\tau) d\tau$$
+  $$
+  v_o(t) = -\frac{1}{R_1 C} \int_{0}^{t} v_{o1}(\tau) d\tau
+  $$
 * **Schmitt Trigger Node Equation (KCL at $v_A$):**
-  $$\frac{v_o - v_A}{R_3} = \frac{v_A - v_{o1}}{R_2}$$
+  $$
+  \frac{v_o - v_A}{R_3} = \frac{v_A - v_{o1}}{R_2}
+  $$
   At the threshold of switching, the comparator input $v_A \approx 0$.
   For $v_{o1} = +V_{\text{sat}}$:
-  $$\frac{v_o}{R_3} = -\frac{V_{\text{sat}}}{R_2} \Rightarrow v_o = -\left( \frac{R_3}{R_2} \right) V_{\text{sat}}$$
+  $$
+  \frac{v_o}{R_3} = -\frac{V_{\text{sat}}}{R_2} \Rightarrow v_o = -\left( \frac{R_3}{R_2} \right) V_{\text{sat}}
+  $$
 
 ---
 
@@ -279,23 +347,35 @@ $$f_o = \frac{1}{2 R C \ln\left( \frac{2 R_1 + R_2}{R_2} \right)}$$
 
 #### 1. Peak-to-Peak Output Voltage:
 When $v_{o1} = -V_{\text{sat}}$, the switching occurs at:
-$$v_o = \left( \frac{R_3}{R_2} \right) V_{\text{sat}}$$
+$$
+v_o = \left( \frac{R_3}{R_2} \right) V_{\text{sat}}
+$$
 Thus, the total peak-to-peak output amplitude is:
-$$\boxed{V_{o(p-p)} = 2 \left( \frac{R_3}{R_2} \right) V_{\text{sat}} \qquad \text{--- (i)}}$$
+$$
+\boxed{V_{o(p-p)} = 2 \left( \frac{R_3}{R_2} \right) V_{\text{sat}} \qquad \text{--- (i)}}
+$$
 
 ---
 
 #### 2. Amplitude derivation from integration:
 During the half-period $T/2$, the integrator input $v_{o1}$ is at $-V_{\text{sat}}$:
-$$V_{o(p-p)} = -\frac{1}{R_1 C} \int_{0}^{T/2} (-V_{\text{sat}}) dt = \frac{V_{\text{sat}} \cdot T}{2 R_1 C} \qquad \text{--- (ii)}$$
+$$
+V_{o(p-p)} = -\frac{1}{R_1 C} \int_{0}^{T/2} (-V_{\text{sat}}) dt = \frac{V_{\text{sat}} \cdot T}{2 R_1 C} \qquad \text{--- (ii)}
+$$
 
 ---
 
 #### 3. Output Frequency Derivation:
 Equating (i) and (ii):
-$$2 \left( \frac{R_3}{R_2} \right) V_{\text{sat}} = \frac{V_{\text{sat}} \cdot T}{2 R_1 C}$$
-$$T = \frac{4 R_1 R_3 C}{R_2}$$
-$$\therefore \boxed{f = \frac{R_2}{4 R_1 R_3 C}}$$
+$$
+2 \left( \frac{R_3}{R_2} \right) V_{\text{sat}} = \frac{V_{\text{sat}} \cdot T}{2 R_1 C}
+$$
+$$
+T = \frac{4 R_1 R_3 C}{R_2}
+$$
+$$
+\therefore \boxed{f = \frac{R_2}{4 R_1 R_3 C}}
+$$
 * **Frequency Dependencies:**
   * $f \propto R_2$ (frequency increases linearly with comparator feedback resistor).
   * $f \propto \frac{1}{R_1 R_3}$ (frequency is inversely proportional to integrator components).

@@ -15,16 +15,26 @@ The circuit consists of a two-stage direct-coupled amplifier:
 
 **Phase Derivation:**
 1.  **Stage 1 ($Q_1$):** A signal $v_{in}$ applied to the base of a CE amplifier produces a collector voltage $v_{c1}$ that is amplified and inverted.
-    $$v_{c1} = A_{v1} \cdot v_{in} \angle 180^\circ$$
+    $$
+    v_{c1} = A_{v1} \cdot v_{in} \angle 180^\circ
+    $$
     This $180^\circ$ phase shift occurs because an increase in base voltage increases collector current, which increases the voltage drop across $R_C$, thus lowering the collector voltage.
 2.  **Stage 2 ($Q_2$):** The collector of $Q_1$ is directly coupled to the base of $Q_2$. Therefore, the input to Stage 2 is $v_{b2} = v_{c1}$.
     Stage 2 is also a CE amplifier (with a PNP transistor). It also introduces a phase inversion between its base and collector.
-    $$v_{o} = A_{v2} \cdot v_{b2} \angle 180^\circ$$
+    $$
+    v_{o} = A_{v2} \cdot v_{b2} \angle 180^\circ
+    $$
 3.  **Overall Phase Relationship:**
     Substituting $v_{b2}$ into the output equation:
-    $$v_o = A_{v2} \cdot (A_{v1} \cdot v_{in} \angle 180^\circ) \angle 180^\circ$$
-    $$v_o = |A_{v1} A_{v2}| \cdot v_{in} \angle (180^\circ + 180^\circ)$$
-    $$v_o = A_v \cdot v_{in} \angle 360^\circ \equiv A_v \cdot v_{in} \angle 0^\circ$$
+    $$
+    v_o = A_{v2} \cdot (A_{v1} \cdot v_{in} \angle 180^\circ) \angle 180^\circ
+    $$
+    $$
+    v_o = |A_{v1} A_{v2}| \cdot v_{in} \angle (180^\circ + 180^\circ)
+    $$
+    $$
+    v_o = A_v \cdot v_{in} \angle 360^\circ \equiv A_v \cdot v_{in} \angle 0^\circ
+    $$
 
 **Conclusion:** The total phase shift is $360^\circ$ (or $0^\circ$). The output voltage $V_o$ is exactly **in-phase** with the input voltage $V_i$.
 
@@ -50,9 +60,13 @@ The circuit consists of a two-stage direct-coupled amplifier:
 
 **3. Cascaded Calculations:**
 **(ii) Input Impedance ($Z_i$):**
-$$Z_i = Z_{i1} = 3.3\text{ M}\Omega$$
+$$
+Z_i = Z_{i1} = 3.3\text{ M}\Omega
+$$
 **(iii) Output Impedance ($Z_o$):**
-$$Z_o = R_C = 2.2\text{ k}\Omega$$
+$$
+Z_o = R_C = 2.2\text{ k}\Omega
+$$
 **(i) Voltage Gain ($A_v$):**
 *   Stage 1 Gain: $A_{v1} = -g_m (R_D \parallel Z_{i2}) = -2.625\text{ mS} \times (2.4\text{ k}\Omega \parallel 0.953\text{ k}\Omega) = -2.625\text{ mS} \times 0.682\text{ k}\Omega = -1.79$
 *   Stage 2 Gain: $A_{v2} = -R_C / r_e = -2200 / 6.5 = -338.46$
@@ -128,14 +142,24 @@ The circuit is a combined inverting and non-inverting amplifier. We solve it usi
 
 **Step 1: Find the voltage at the non-inverting terminal ($V_p$) due to $V_2$:**
 The non-inverting terminal is connected to a voltage divider consisting of the $150\text{ k}\Omega$ and $10\text{ k}\Omega$ resistors.
-$$V_p = V_2 \left( \frac{10\text{ k}\Omega}{150\text{ k}\Omega + 10\text{ k}\Omega} \right) = V_2 \left( \frac{10}{160} \right) = \frac{V_2}{16}$$
+$$
+V_p = V_2 \left( \frac{10\text{ k}\Omega}{150\text{ k}\Omega + 10\text{ k}\Omega} \right) = V_2 \left( \frac{10}{160} \right) = \frac{V_2}{16}
+$$
 
 **Step 2: Apply Superposition for $V_o$:**
 The output is the sum of the inverting response (due to $V_1$) and the non-inverting response (due to $V_p$).
-$$V_o = V_{o(inverting)} + V_{o(non-inverting)}$$
-$$V_o = -\left( \frac{R_f}{R_1} \right) V_1 + \left( 1 + \frac{R_f}{R_1} \right) V_p$$
-$$V_o = -\left( \frac{330\text{ k}\Omega}{10\text{ k}\Omega} \right) V_1 + \left( 1 + \frac{330\text{ k}\Omega}{10\text{ k}\Omega} \right) \left( \frac{V_2}{16} \right)$$
-$$V_o = -33 V_1 + (34) \left( \frac{V_2}{16} \right) = -33 V_1 + 2.125 V_2$$
+$$
+V_o = V_{o(inverting)} + V_{o(non-inverting)}
+$$
+$$
+V_o = -\left( \frac{R_f}{R_1} \right) V_1 + \left( 1 + \frac{R_f}{R_1} \right) V_p
+$$
+$$
+V_o = -\left( \frac{330\text{ k}\Omega}{10\text{ k}\Omega} \right) V_1 + \left( 1 + \frac{330\text{ k}\Omega}{10\text{ k}\Omega} \right) \left( \frac{V_2}{16} \right)
+$$
+$$
+V_o = -33 V_1 + (34) \left( \frac{V_2}{16} \right) = -33 V_1 + 2.125 V_2
+$$
 
 ---
 
@@ -152,7 +176,9 @@ $$V_o = -33 V_1 + (34) \left( \frac{V_2}{16} \right) = -33 V_1 + 2.125 V_2$$
 5.  Equating the currents:
     $\frac{V_i}{R} = -C \frac{dV_o}{dt} \Rightarrow dV_o = -\frac{1}{RC} V_i dt$
 6.  Integrating both sides:
-    $$V_o(t) = -\frac{1}{RC} \int V_i(t) dt + V_o(0)$$
+    $$
+    V_o(t) = -\frac{1}{RC} \int V_i(t) dt + V_o(0)
+    $$
 Because the output voltage is proportional to the time integral of the input voltage, the circuit perfectly functions as an integrating circuit.
 
 ---
@@ -162,7 +188,9 @@ Because the output voltage is proportional to the time integral of the input vol
 **Solution:**
 1.  The switch closes at $t=0$, applying a constant $V_i = 12\text{V}$ DC to the integrator.
 2.  The integration rate (slope) is:
-    $$\frac{dV_o}{dt} = -\frac{V_i}{RC} = -\frac{12\text{ V}}{200\text{ k}\Omega \times 1\ \mu\text{F}} = -\frac{12}{0.2} = -60\text{ V/s}$$
+    $$
+    \frac{dV_o}{dt} = -\frac{V_i}{RC} = -\frac{12\text{ V}}{200\text{ k}\Omega \times 1\ \mu\text{F}} = -\frac{12}{0.2} = -60\text{ V/s}
+    $$
 3.  **Waveform Sketch:** The output $v_o(t)$ starts at $0\text{V}$ at $t=0$. It ramps down linearly in a straight line with a constant slope of $-60\text{ V/s}$.
 4.  Since real op-amps have finite power supply limits, the ramp will not continue indefinitely. Assuming typical $\pm 15\text{V}$ supplies, the op-amp will saturate at approx $-14\text{V}$ or $-15\text{V}$. The time it takes to saturate is $t_{sat} = \frac{-14\text{ V}}{-60\text{ V/s}} = 0.233\text{ s}$ (or $233\text{ ms}$). After this time, the output is a flat horizontal line at $-14\text{V}$.
 
@@ -176,9 +204,13 @@ Because the output voltage is proportional to the time integral of the input vol
 
 **Frequency Limitation:**
 For a sinusoidal output signal $v_o(t) = V_p \sin(2\pi f t)$, the maximum rate of change occurs at the zero-crossing, mathematically given by the derivative evaluated at $t=0$:
-$$\left| \frac{dv_o}{dt} \right|_{max} = 2\pi f V_p$$
+$$
+\left| \frac{dv_o}{dt} \right|_{max} = 2\pi f V_p
+$$
 For the op-amp to output this signal without distortion, its Slew Rate must be greater than or equal to this required rate of change:
-$$SR \ge 2\pi f V_p \Rightarrow f_{max} = \frac{SR}{2\pi V_p}$$
+$$
+SR \ge 2\pi f V_p \Rightarrow f_{max} = \frac{SR}{2\pi V_p}
+$$
 This equation shows that for a given output amplitude $V_p$, there is an absolute maximum frequency limit ($f_{max}$). If the frequency exceeds this limit, the op-amp cannot "keep up" with the sine wave, and the output will distort into a triangular shape with attenuated amplitude.
 
 ---
@@ -188,22 +220,30 @@ This equation shows that for a given output amplitude $V_p$, there is an absolut
 **Design Strategy:**
 We can achieve this using three op-amp stages.
 *   **Stage 1: Differentiator for $v_3$.**
-    $$v_{a} = -R_d C_d \frac{d v_3}{dt}$$
+    $$
+    v_{a} = -R_d C_d \frac{d v_3}{dt}
+    $$
     Let $C_d = 1\ \mu\text{F}$ and $R_d = 200\text{ k}\Omega$. Then $R_d C_d = 0.2\text{ s}$.
     Result: $v_a = -0.2 \frac{d v_3}{dt}$.
 *   **Stage 2: Inverting Amplifier for $v_1$.**
-    $$v_b = -\left(\frac{R_{f1}}{R_{i1}}\right) v_1$$
+    $$
+    v_b = -\left(\frac{R_{f1}}{R_{i1}}\right) v_1
+    $$
     Let $R_{i1} = 100\text{ k}\Omega$ and $R_{f1} = 50\text{ k}\Omega$. Then $R_{f1}/R_{i1} = 0.5$.
     Result: $v_b = -0.5 v_1$.
 *   **Stage 3: Inverting Summing Amplifier.**
     We sum $v_a$, $v_b$, and the $v_2$ input into a final inverting stage.
-    $$v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)$$
+    $$
+    v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)
+    $$
     Let the feedback resistor $R_f = 100\text{ k}\Omega$.
     *   To process $v_a$: We want $+0.2 \frac{dv_3}{dt}$, so we need a gain of $-1$ for $v_a$. Thus, $R_a = 100\text{ k}\Omega$.
     *   To process $v_b$: We want $+0.5 v_1$, so we need a gain of $-1$ for $v_b$. Thus, $R_b = 100\text{ k}\Omega$.
     *   To process $v_2$: We want $-0.7 v_2$, so we need a gain of $+0.7$ overall. Since the summer is inverting, the summing gain must be $0.7$. Thus, $\frac{100\text{k}}{R_2} = 0.7 \Rightarrow R_2 = 142.8\text{ k}\Omega$.
 *   **Verification:**
-    $$v_o = -\left[ 1(-0.2 d v_3/dt) + 1(-0.5 v_1) + 0.7 v_2 \right] = 0.2 \frac{d v_3}{dt} + 0.5 v_1 - 0.7 v_2$$
+    $$
+    v_o = -\left[ 1(-0.2 d v_3/dt) + 1(-0.5 v_1) + 0.7 v_2 \right] = 0.2 \frac{d v_3}{dt} + 0.5 v_1 - 0.7 v_2
+    $$
 
 ---
 
@@ -228,8 +268,12 @@ The non-inverting input path forms a classic Wien Bridge frequency-selective net
 The series branch has $R_s = 51\text{ k}\Omega, C_s = 0.001\ \mu\text{F}$.
 The parallel branch has $R_p = 51\text{ k}\Omega, C_p = 0.001\ \mu\text{F}$.
 Since the components are identical ($R = 51\text{ k}\Omega, C = 0.001\ \mu\text{F}$), the resonant frequency is simply:
-$$f_o = \frac{1}{2\pi RC} = \frac{1}{2\pi \times 51\text{ k}\Omega \times 0.001\ \mu\text{F}} = \frac{1}{2\pi \times 51 \times 10^{-6}}$$
-$$f_o \approx 3120.7\text{ Hz} = 3.12\text{ kHz}$$
+$$
+f_o = \frac{1}{2\pi RC} = \frac{1}{2\pi \times 51\text{ k}\Omega \times 0.001\ \mu\text{F}} = \frac{1}{2\pi \times 51 \times 10^{-6}}
+$$
+$$
+f_o \approx 3120.7\text{ Hz} = 3.12\text{ kHz}
+$$
 
 ---
 
@@ -239,17 +283,33 @@ $$f_o \approx 3120.7\text{ Hz} = 3.12\text{ kHz}$$
 In a Colpitts oscillator, the feedback network is a parallel resonant LC tank circuit consisting of an inductor $L$ in parallel with two series capacitors, $C_1$ and $C_2$.
 For oscillation to occur, the total reactive impedance of the tank loop must sum to zero at the resonant frequency (Barkhausen phase condition).
 The sum of the reactances around the closed tank loop is:
-$$X_L + X_{C1} + X_{C2} = 0$$
+$$
+X_L + X_{C1} + X_{C2} = 0
+$$
 Substituting the complex impedances:
-$$j\omega L + \frac{1}{j\omega C_1} + \frac{1}{j\omega C_2} = 0$$
+$$
+j\omega L + \frac{1}{j\omega C_1} + \frac{1}{j\omega C_2} = 0
+$$
 Dividing by $j$ (where $1/j = -j$):
-$$\omega L - \frac{1}{\omega C_1} - \frac{1}{\omega C_2} = 0$$
-$$\omega L = \frac{1}{\omega} \left( \frac{1}{C_1} + \frac{1}{C_2} \right)$$
+$$
+\omega L - \frac{1}{\omega C_1} - \frac{1}{\omega C_2} = 0
+$$
+$$
+\omega L = \frac{1}{\omega} \left( \frac{1}{C_1} + \frac{1}{C_2} \right)
+$$
 Multiply both sides by $\omega$:
-$$\omega^2 L = \frac{C_1 + C_2}{C_1 C_2}$$
-$$\omega^2 = \frac{1}{L} \left( \frac{C_1 + C_2}{C_1 C_2} \right) = \frac{1}{L \cdot C_{eq}} \quad \text{where} \quad C_{eq} = \frac{C_1 C_2}{C_1 + C_2}$$
-$$\omega = 2\pi f_o = \frac{1}{\sqrt{L \cdot C_{eq}}}$$
-$$f_o = \frac{1}{2\pi \sqrt{L \left(\frac{C_1 C_2}{C_1 + C_2}\right)}}$$
+$$
+\omega^2 L = \frac{C_1 + C_2}{C_1 C_2}
+$$
+$$
+\omega^2 = \frac{1}{L} \left( \frac{C_1 + C_2}{C_1 C_2} \right) = \frac{1}{L \cdot C_{eq}} \quad \text{where} \quad C_{eq} = \frac{C_1 C_2}{C_1 + C_2}
+$$
+$$
+\omega = 2\pi f_o = \frac{1}{\sqrt{L \cdot C_{eq}}}
+$$
+$$
+f_o = \frac{1}{2\pi \sqrt{L \left(\frac{C_1 C_2}{C_1 + C_2}\right)}}
+$$
 
 ---
 
@@ -258,15 +318,23 @@ $$f_o = \frac{1}{2\pi \sqrt{L \left(\frac{C_1 C_2}{C_1 + C_2}\right)}}$$
 **Proof:**
 In an RC phase-shift oscillator, the feedback network consists of three identical cascaded RC high-pass sections.
 By performing nodal analysis on the three RC sections, the transfer function (feedback fraction $\beta$) relating the network output to its input is derived as:
-$$\beta = \frac{v_f}{v_o} = \frac{1}{1 - 5\alpha^2 - j(6\alpha - \alpha^3)}$$
+$$
+\beta = \frac{v_f}{v_o} = \frac{1}{1 - 5\alpha^2 - j(6\alpha - \alpha^3)}
+$$
 where $\alpha = \frac{1}{\omega RC}$.
 For the phase shift to be exactly $180^\circ$, the imaginary part of the denominator must be zero:
-$$6\alpha - \alpha^3 = 0 \Rightarrow \alpha^2 = 6$$
+$$
+6\alpha - \alpha^3 = 0 \Rightarrow \alpha^2 = 6
+$$
 Substitute $\alpha^2 = 6$ back into the real part of the transfer function:
-$$\beta = \frac{1}{1 - 5(6)} = \frac{1}{1 - 30} = -\frac{1}{29}$$
+$$
+\beta = \frac{1}{1 - 5(6)} = \frac{1}{1 - 30} = -\frac{1}{29}
+$$
 The negative sign indicates the expected $180^\circ$ phase shift. The magnitude of the feedback attenuation is exactly $1/29$.
 According to the Barkhausen criterion, for sustained oscillations, the magnitude of the loop gain must be at least 1:
-$$|A_v \beta| \ge 1 \Rightarrow A_v \ge \left| \frac{1}{\beta} \right| \Rightarrow A_v \ge 29$$
+$$
+|A_v \beta| \ge 1 \Rightarrow A_v \ge \left| \frac{1}{\beta} \right| \Rightarrow A_v \ge 29
+$$
 Thus, the amplifier must provide a voltage gain of at least 29 to compensate for the attenuation of the 3-stage RC network.
 
 ---
@@ -276,11 +344,17 @@ Thus, the amplifier must provide a voltage gain of at least 29 to compensate for
 
 **Proof:**
 1.  **Bandwidth:** All negative feedback topologies reduce the closed-loop gain ($A_f = \frac{A}{1+A\beta}$). Because the Gain-Bandwidth Product (GBP) of an amplifier is constant, a reduction in gain by a factor of $(1+A\beta)$ results in an exact proportional increase in bandwidth:
-    $$BW_f = BW \times (1+A\beta)$$
+    $$
+    BW_f = BW \times (1+A\beta)
+    $$
 2.  **Input Impedance ($Z_{if}$):** The "Series" connection at the input means the feedback voltage opposes the input voltage (a subtraction in a series loop). This requires the signal source to provide a higher voltage to drive the same input current into the amplifier. By Ohm's law, a higher required voltage for the same current implies a higher impedance.
-    $$Z_{if} = Z_i \times (1+A\beta)$$
+    $$
+    Z_{if} = Z_i \times (1+A\beta)
+    $$
 3.  **Output Impedance ($Z_{of}$):** The "Voltage" (or Shunt) connection at the output means the feedback network samples the output voltage in parallel. If the load changes causing the output voltage to dip, the feedback network immediately detects this and drives the amplifier harder to restore the voltage. This ability to maintain a constant voltage regardless of load is the definition of a low output impedance source (an ideal voltage source).
-    $$Z_{of} = \frac{Z_o}{1+A\beta}$$
+    $$
+    Z_{of} = \frac{Z_o}{1+A\beta}
+    $$
 Combining series input mixing and parallel voltage sampling provides the best of all worlds: vastly increased bandwidth, vastly increased input impedance (preventing source loading), and vastly decreased output impedance (improving load driving capability).
 
 ---
@@ -290,13 +364,19 @@ Combining series input mixing and parallel voltage sampling provides the best of
 **Solution:**
 First, calculate the desensitivity factor: $D = 1 + A\beta = 1 + (-100)(-0.1) = 1 + 10 = 11$.
 **(i) Closed-loop voltage gain ($A_f$):**
-$$A_f = \frac{A}{1+A\beta} = \frac{-100}{11} = -9.09$$
+$$
+A_f = \frac{A}{1+A\beta} = \frac{-100}{11} = -9.09
+$$
 **(ii) Closed-loop input impedance ($R_{if}$):**
 Because it is a series input connection, input impedance increases:
-$$R_{if} = R_i (1+A\beta) = 10\text{ k}\Omega \times 11 = 110\text{ k}\Omega$$
+$$
+R_{if} = R_i (1+A\beta) = 10\text{ k}\Omega \times 11 = 110\text{ k}\Omega
+$$
 **(iii) Closed-loop output impedance ($R_{of}$):**
 Because it is a voltage sampling (parallel) connection, output impedance decreases:
-$$R_{of} = \frac{R_o}{1+A\beta} = \frac{20\text{ k}\Omega}{11} = 1.818\text{ k}\Omega$$
+$$
+R_{of} = \frac{R_o}{1+A\beta} = \frac{20\text{ k}\Omega}{11} = 1.818\text{ k}\Omega
+$$
 
 ---
 
@@ -325,12 +405,20 @@ $$R_{of} = \frac{R_o}{1+A\beta} = \frac{20\text{ k}\Omega}{11} = 1.818\text{ k}\
 
 **Calculation with Ideal Diode:**
 1.  **Charging phase ($t_c$):** Output is HIGH. The current flows from $V_{CC}$ through $R_A$. Instead of passing through $R_B$, the current takes the path of least resistance through the forward-biased ideal diode. Therefore, the capacitor charges *only* through $R_A$.
-    $$t_c = 0.693 R_A C$$
+    $$
+    t_c = 0.693 R_A C
+    $$
 2.  **Discharging phase ($t_d$):** Output is LOW. The internal discharge transistor turns ON. The diode is now reverse-biased (blocking). The capacitor must discharge through $R_B$ to reach Pin 7.
-    $$t_d = 0.693 R_B C$$
+    $$
+    t_d = 0.693 R_B C
+    $$
 3.  **Duty Cycle:**
-    $$D = \frac{t_c}{t_c + t_d} = \frac{0.693 R_A C}{0.693 R_A C + 0.693 R_B C} = \frac{R_A}{R_A + R_B}$$
-    $$D = \frac{1\text{ k}\Omega}{1\text{ k}\Omega + 10\text{ k}\Omega} \times 100\% = \frac{1}{11} \times 100\% = 9.09\%$$
+    $$
+    D = \frac{t_c}{t_c + t_d} = \frac{0.693 R_A C}{0.693 R_A C + 0.693 R_B C} = \frac{R_A}{R_A + R_B}
+    $$
+    $$
+    D = \frac{1\text{ k}\Omega}{1\text{ k}\Omega + 10\text{ k}\Omega} \times 100\% = \frac{1}{11} \times 100\% = 9.09\%
+    $$
 
 ---
 
@@ -338,7 +426,9 @@ $$R_{of} = \frac{R_o}{1+A\beta} = \frac{20\text{ k}\Omega}{11} = 1.818\text{ k}\
 
 **Solution:**
 1.  **Pulse Width Calculation:**
-    $$W = 1.1 R C = 1.1 \times 4.7\text{ k}\Omega \times 0.1\ \mu\text{F} = 1.1 \times 4700 \times 10^{-7} = 0.000517\text{ s} = 0.517\text{ ms}$$
+    $$
+    W = 1.1 R C = 1.1 \times 4.7\text{ k}\Omega \times 0.1\ \mu\text{F} = 1.1 \times 4700 \times 10^{-7} = 0.000517\text{ s} = 0.517\text{ ms}
+    $$
 2.  **Waveform Description:**
     *   **$t = 0$ to $1\text{ ms}$:** The output is LOW ($0\text{V}$).
     *   **$t = 1\text{ ms}$:** The first trigger pulse arrives. The output instantly goes HIGH ($V_{CC} \approx 10\text{V}$). It stays HIGH for the duration of the pulse width $W = 0.517\text{ ms}$.
@@ -355,10 +445,14 @@ $$R_{of} = \frac{R_o}{1+A\beta} = \frac{20\text{ k}\Omega}{11} = 1.818\text{ k}\
 
 **Proof:**
 The closed-loop gain $A_f$ of a system with an open-loop gain $A$ and a positive feedback loop $\beta$ is:
-$$A_f = \frac{A}{1 - A\beta}$$
+$$
+A_f = \frac{A}{1 - A\beta}
+$$
 An oscillator is a circuit that generates an output signal without any external input signal. For a finite output to exist when the input is strictly zero, the closed-loop gain $A_f$ must be theoretically infinite.
 For $A_f \rightarrow \infty$, the denominator of the equation must be equal to zero:
-$$1 - A\beta = 0 \Rightarrow A\beta = 1$$
+$$
+1 - A\beta = 0 \Rightarrow A\beta = 1
+$$
 Since $A$ and $\beta$ are complex quantities possessing magnitude and phase, this translates to two conditions:
 1.  Magnitude: $|A\beta| = 1$
 2.  Phase: The total phase shift around the loop must be an integer multiple of $360^\circ$ (which is $0^\circ$).
@@ -376,13 +470,23 @@ The inverting op-amp naturally provides a $180^\circ$ phase shift. To achieve th
 
 **Derivation:**
 The transfer function of the 3-stage RC feedback network is:
-$$\beta = \frac{1}{1 - 5/(\omega RC)^2 - j[6/(\omega RC) - 1/(\omega RC)^3]}$$
+$$
+\beta = \frac{1}{1 - 5/(\omega RC)^2 - j[6/(\omega RC) - 1/(\omega RC)^3]}
+$$
 For the phase shift to be $180^\circ$, the imaginary component of the denominator must be zero:
-$$\frac{6}{\omega RC} - \frac{1}{(\omega RC)^3} = 0$$
-$$\frac{6}{\omega RC} = \frac{1}{(\omega RC)^3} \Rightarrow 6 = \frac{1}{(\omega RC)^2}$$
-$$\omega^2 = \frac{1}{6 (RC)^2} \Rightarrow \omega = \frac{1}{\sqrt{6} RC}$$
+$$
+\frac{6}{\omega RC} - \frac{1}{(\omega RC)^3} = 0
+$$
+$$
+\frac{6}{\omega RC} = \frac{1}{(\omega RC)^3} \Rightarrow 6 = \frac{1}{(\omega RC)^2}
+$$
+$$
+\omega^2 = \frac{1}{6 (RC)^2} \Rightarrow \omega = \frac{1}{\sqrt{6} RC}
+$$
 Since $\omega = 2\pi f_o$, we get the frequency of oscillation:
-$$f_o = \frac{1}{2\pi \sqrt{6} RC}$$
+$$
+f_o = \frac{1}{2\pi \sqrt{6} RC}
+$$
 
 ---
 
@@ -393,11 +497,15 @@ The resonant frequency of a Wien bridge oscillator is $f_o = \frac{1}{2\pi RC}$.
 We are given $f_o = 10,000\text{ Hz}$.
 1.  **Select a practical capacitor value:** Let $C = 10\text{ nF} = 0.01\ \mu\text{F}$.
 2.  **Calculate the resistor value ($R$):**
-    $$R = \frac{1}{2\pi f_o C} = \frac{1}{2\pi \times 10000 \times 10 \times 10^{-9}} = \frac{1}{2\pi \times 10^{-4}} = \frac{10000}{2\pi} \approx 1591.5\ \Omega$$
+    $$
+    R = \frac{1}{2\pi f_o C} = \frac{1}{2\pi \times 10000 \times 10 \times 10^{-9}} = \frac{1}{2\pi \times 10^{-4}} = \frac{10000}{2\pi} \approx 1591.5\ \Omega
+    $$
     Use a standard resistor value, $R = 1.6\text{ k}\Omega$.
 3.  **Determine Amplifier Gain Resistors:**
     For sustained oscillation, the non-inverting amplifier must have a gain $A_v \ge 3$.
-    $$A_v = 1 + \frac{R_f}{R_1} \ge 3 \Rightarrow \frac{R_f}{R_1} \ge 2 \Rightarrow R_f \ge 2 R_1$$
+    $$
+    A_v = 1 + \frac{R_f}{R_1} \ge 3 \Rightarrow \frac{R_f}{R_1} \ge 2 \Rightarrow R_f \ge 2 R_1
+    $$
     Let $R_1 = 10\text{ k}\Omega$. Then $R_f$ must be exactly $20\text{ k}\Omega$. To ensure oscillations start, we choose $R_f$ slightly larger, e.g., $R_f = 22\text{ k}\Omega$ (or a $20\text{k}\Omega$ fixed resistor with a small potentiometer).
 
 **Final Component Values:**

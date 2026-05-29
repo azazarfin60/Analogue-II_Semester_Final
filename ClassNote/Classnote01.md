@@ -76,8 +76,12 @@ Below is the Voltage Divider Bias Configuration for an NPN BJT:
 ```
 
 * We first find $I_B$:
-  $$\beta = \frac{I_C}{I_B}$$
-  $$R_{Th} = \frac{R_1 \cdot R_2}{R_1 + R_2}$$
+  $$
+  \beta = \frac{I_C}{I_B}
+  $$
+  $$
+  R_{Th} = \frac{R_1 \cdot R_2}{R_1 + R_2}
+  $$
 
 ---
 
@@ -96,11 +100,17 @@ Below is the Voltage Divider Bias Configuration for an NPN BJT:
 ```
 
 * **KVL around Base-Emitter Loop:**
-  $$-E_{Th} + R_{Th} I_B + V_{BE} + R_E I_E = 0$$
+  $$
+  -E_{Th} + R_{Th} I_B + V_{BE} + R_E I_E = 0
+  $$
   Since $I_E = (\beta + 1) I_B$:
-  $$-E_{Th} + R_{Th} I_B + V_{BE} + (\beta + 1) R_E I_B = 0$$
+  $$
+  -E_{Th} + R_{Th} I_B + V_{BE} + (\beta + 1) R_E I_B = 0
+  $$
   
-  $$\Rightarrow I_B = \frac{E_{Th} - V_{BE}}{R_{Th} + (\beta + 1) R_E} \approx \frac{E_{Th} - V_{BE}}{R_{Th} + \beta R_E}$$
+  $$
+  \Rightarrow I_B = \frac{E_{Th} - V_{BE}}{R_{Th} + (\beta + 1) R_E} \approx \frac{E_{Th} - V_{BE}}{R_{Th} + \beta R_E}
+  $$
 
 ---
 
@@ -140,15 +150,25 @@ Below is the Voltage Divider Bias Configuration for an NPN BJT:
 ### DC Bias Analysis & Voltage Gain Formulas
 
 * **Base Voltage ($V_B$):**
-  $$V_B = \frac{R_2 \cdot V_{CC}}{R_1 + R_2}$$
+  $$
+  V_B = \frac{R_2 \cdot V_{CC}}{R_1 + R_2}
+  $$
 * **Emitter Voltage ($V_E$):**
-  $$V_E = V_B - 0.7\text{ V}$$
+  $$
+  V_E = V_B - 0.7\text{ V}
+  $$
 * **Emitter Current ($I_E$):**
-  $$I_E = \frac{V_E}{R_E}$$
+  $$
+  I_E = \frac{V_E}{R_E}
+  $$
 * **Dynamic Emitter Resistance ($r_e$):**
-  $$r_e = \frac{26\text{ mV}}{I_E}$$
+  $$
+  r_e = \frac{26\text{ mV}}{I_E}
+  $$
 * **Voltage Gain of Stage 1 ($A_{V_1}$):**
-  $$A_{V_1} = \frac{- R_{C1} \parallel (R_3 \parallel R_4 \parallel \beta r_{e2})}{r_{e1}}$$
+  $$
+  A_{V_1} = \frac{- R_{C1} \parallel (R_3 \parallel R_4 \parallel \beta r_{e2})}{r_{e1}}
+  $$
 
 ---
 
@@ -228,16 +248,28 @@ Below is the Voltage Divider Bias Configuration for an NPN BJT:
 
 ### Derivations & Current Relationships
 * **Emitter Current of $Q_1$:**
-  $$I_{E_1} = (\beta_1 + 1) I_{B_1}$$
+  $$
+  I_{E_1} = (\beta_1 + 1) I_{B_1}
+  $$
 * **Emitter Current of $Q_2$:**
-  $$I_{E_2} = (\beta_2 + 1) I_{B_2}$$
+  $$
+  I_{E_2} = (\beta_2 + 1) I_{B_2}
+  $$
 * Since the emitter of $Q_1$ is directly tied to the base of $Q_2$:
-  $$I_{E_1} = I_{B_2}$$
+  $$
+  I_{E_1} = I_{B_2}
+  $$
 * **Total Emitter Current $I_{E_2}$:**
-  $$I_{E_2} = (\beta_2 + 1)(\beta_1 + 1) I_{B_1}$$
+  $$
+  I_{E_2} = (\beta_2 + 1)(\beta_1 + 1) I_{B_1}
+  $$
 * Under the approximation that $\beta \gg 1$:
-  $$I_{E_2} \approx \beta_1 \beta_2 I_{B_1}$$
-  $$\therefore I_{E_2} \approx \beta_D I_{B_1}$$
+  $$
+  I_{E_2} \approx \beta_1 \beta_2 I_{B_1}
+  $$
+  $$
+  \therefore I_{E_2} \approx \beta_D I_{B_1}
+  $$
   where $\beta_D = \beta_1 \beta_2$ is the total Darlington Beta.
 
 ---
@@ -251,18 +283,28 @@ Below is the Voltage Divider Bias Configuration for an NPN BJT:
 
 * **Step 1: Find Base Current ($I_{B_1}$)**
   Using KVL around the Base-Emitter loop:
-  $$I_{B_1} = \frac{V_{CC} - V_{BE_1} - V_{BE_2}}{R_B + (\beta_D + 1)R_E}$$
+  $$
+  I_{B_1} = \frac{V_{CC} - V_{BE_1} - V_{BE_2}}{R_B + (\beta_D + 1)R_E}
+  $$
 
 * **Step 2: Find Emitter Voltage of Second Transistor ($V_{E_2}$)**
-  $$V_{E_2} = I_{E_2} \cdot R_E$$
-  $$\therefore V_{E_2} = \beta_D \cdot I_{B_1} \cdot R_E$$
+  $$
+  V_{E_2} = I_{E_2} \cdot R_E
+  $$
+  $$
+  \therefore V_{E_2} = \beta_D \cdot I_{B_1} \cdot R_E
+  $$
   *(Note: Since $\beta_D \gg 1$, we use $I_{E_2} \approx I_{C_2} = \beta_D I_{B_1}$)*
 
 * **Step 3: Find Collector Voltage of Second Transistor ($V_{C_2}$)**
-  $$V_{C_2} = V_{CC}$$
+  $$
+  V_{C_2} = V_{CC}
+  $$
 
 * **Step 4: Find Collector-Emitter Voltage of Second Transistor ($V_{CE_2}$)**
-  $$V_{CE_2} = V_{C_2} - V_{E_2}$$
+  $$
+  V_{CE_2} = V_{C_2} - V_{E_2}
+  $$
 
 ---
 
@@ -321,7 +363,9 @@ A complementary transistor configuration containing a PNP first stage ($Q_1$) an
 
 ### DC Analysis: Step 1 (Convert all currents to $I_{B_1}$)
 * **KVL around Base-Emitter Loop:**
-  $$V_{CC} - R_C I_C - V_{BE_1} - I_{B_1} R_B = 0$$
+  $$
+  V_{CC} - R_C I_C - V_{BE_1} - I_{B_1} R_B = 0
+  $$
 
 * **Current relationships:**
   1. $I_C = I_{E_1} + I_{C_2}$
@@ -331,15 +375,27 @@ A complementary transistor configuration containing a PNP first stage ($Q_1$) an
   5. Thus, $I_{C_2} = \beta_2 (\beta_1 I_{B_1}) = \beta_1 \beta_2 I_{B_1}$
 
 * **Substituting back to find total current $I_C$:**
-  $$I_C = I_{E_1} + I_{C_2}$$
-  $$I_C = (\beta_1 + 1) I_{B_1} + \beta_1 \beta_2 I_{B_1}$$
-  $$I_C = I_{B_1} (\beta_1 + 1 + \beta_1 \beta_2)$$
+  $$
+  I_C = I_{E_1} + I_{C_2}
+  $$
+  $$
+  I_C = (\beta_1 + 1) I_{B_1} + \beta_1 \beta_2 I_{B_1}
+  $$
+  $$
+  I_C = I_{B_1} (\beta_1 + 1 + \beta_1 \beta_2)
+  $$
   Since $\beta \gg 1$:
-  $$I_C \approx \beta_1 \beta_2 I_{B_1}$$
+  $$
+  I_C \approx \beta_1 \beta_2 I_{B_1}
+  $$
 
 * **Final KVL Equation in terms of $I_{B_1}$:**
-  $$V_{CC} - R_C (\beta_1 \beta_2 I_{B_1}) - V_{BE_1} - I_{B_1} R_B = 0$$
-  $$\Rightarrow I_{B_1} = \frac{V_{CC} - V_{BE_1}}{R_B + \beta_1 \beta_2 R_C}$$
+  $$
+  V_{CC} - R_C (\beta_1 \beta_2 I_{B_1}) - V_{BE_1} - I_{B_1} R_B = 0
+  $$
+  $$
+  \Rightarrow I_{B_1} = \frac{V_{CC} - V_{BE_1}}{R_B + \beta_1 \beta_2 R_C}
+  $$
 
 ---
 
@@ -351,12 +407,20 @@ A complementary transistor configuration containing a PNP first stage ($Q_1$) an
 ### DC Voltages Calculation Steps
 
 * **Step 2: Base Voltages ($V_{B_1}$ & $V_{B_2}$)**
-  $$V_{B_1} = I_{B_1} \cdot R_B$$
-  $$V_{B_2} = V_{BE_2} = 0.7\text{ V}$$
+  $$
+  V_{B_1} = I_{B_1} \cdot R_B
+  $$
+  $$
+  V_{B_2} = V_{BE_2} = 0.7\text{ V}
+  $$
 
 * **Step 3: Collector Voltages ($V_{C_1}$ & $V_{C_2}$)**
-  $$V_{C_1} = V_{BE_2} = 0.7\text{ V}$$
-  $$V_{C_2} = V_{CC} - I_C R_C \quad (\text{where } I_C \approx I_{C_2})$$
+  $$
+  V_{C_1} = V_{BE_2} = 0.7\text{ V}
+  $$
+  $$
+  V_{C_2} = V_{CC} - I_C R_C \quad (\text{where } I_C \approx I_{C_2})
+  $$
 
 *(Note: Faint drawings and text on this page represent backside bleed-through from the physical notebook.)*
 
@@ -389,23 +453,41 @@ A complementary transistor configuration containing a PNP first stage ($Q_1$) an
 ### Analysis Steps & Equations
 
 * **Step 1: Perform Thevenin Equivalent at the Base of $Q_1$**
-  $$R_{Th} = R_1 \parallel R_2$$
-  $$E_{Th} = \frac{R_2}{R_1 + R_2} \cdot V_{CC}$$
-  $$I_{B_1} = \frac{E_{Th} - V_{BE_1}}{R_{Th} + (\beta_1 + 1)R_{E_1}}$$
+  $$
+  R_{Th} = R_1 \parallel R_2
+  $$
+  $$
+  E_{Th} = \frac{R_2}{R_1 + R_2} \cdot V_{CC}
+  $$
+  $$
+  I_{B_1} = \frac{E_{Th} - V_{BE_1}}{R_{Th} + (\beta_1 + 1)R_{E_1}}
+  $$
 
 * **Step 2: Find Base Voltage of Stage 2 ($V_{B_2}$)**
-  $$V_{B_2} = V_{CC} - I_{C_1} R_{C_1}$$
+  $$
+  V_{B_2} = V_{CC} - I_{C_1} R_{C_1}
+  $$
   Assuming base current $I_{B_2}$ is small enough that $I_{C_1} \approx \beta_1 I_{B_1}$:
-  $$V_{B_2} = V_{CC} - \beta_1 I_{B_1} R_{C_1}$$
+  $$
+  V_{B_2} = V_{CC} - \beta_1 I_{B_1} R_{C_1}
+  $$
 
 * **Step 3: Find Emitter Voltage of Stage 2 ($V_{E_2}$)**
-  $$V_{E_2} = I_{E_2} R_{E_2}$$
+  $$
+  V_{E_2} = I_{E_2} R_{E_2}
+  $$
   Since $V_{BE_2} = V_{B_2} - V_{E_2}$:
-  $$\therefore V_{E_2} = V_{B_2} - V_{BE_2}$$
+  $$
+  \therefore V_{E_2} = V_{B_2} - V_{BE_2}
+  $$
 
 * **Step 4: Find Collector Voltages & Output Limits**
-  $$V_{C_2} = V_{CC}$$
-  $$V_{CE_2} = V_{C_2} - V_{E_2}$$
+  $$
+  V_{C_2} = V_{CC}
+  $$
+  $$
+  V_{CE_2} = V_{C_2} - V_{E_2}
+  $$
 
 ---
 
@@ -447,19 +529,31 @@ A configuration stacking a common-emitter stage ($Q_1$) underneath a common-base
 
 * **Step 1: Base Biasing Voltages ($V_{B_1}$, $V_{B_2}$)**
   Using the voltage divider across $R_1, R_2, R_3$:
-  $$V_{B_1} = \frac{R_3}{R_1 + R_2 + R_3} \cdot V_{CC}$$
-  $$V_{B_2} = \frac{R_2 + R_3}{R_1 + R_2 + R_3} \cdot V_{CC}$$
+  $$
+  V_{B_1} = \frac{R_3}{R_1 + R_2 + R_3} \cdot V_{CC}
+  $$
+  $$
+  V_{B_2} = \frac{R_2 + R_3}{R_1 + R_2 + R_3} \cdot V_{CC}
+  $$
 
 * **Step 2: Emitter Voltages ($V_{E_1}$, $V_{E_2}$)**
-  $$V_{E_1} = V_{B_1} - V_{BE_1}$$
-  $$V_{E_2} = V_{B_2} - V_{BE_2}$$
+  $$
+  V_{E_1} = V_{B_1} - V_{BE_1}
+  $$
+  $$
+  V_{E_2} = V_{B_2} - V_{BE_2}
+  $$
 
 * **Step 3: Emitter Current ($I_{E_1}$)**
   From the Base-Emitter loop of $Q_1$:
-  $$-V_{B_1} + V_{BE_1} + I_{E_1} R_E = 0 \Rightarrow I_{E_1} = \frac{V_{B_1} - V_{BE_1}}{R_E}$$
+  $$
+  -V_{B_1} + V_{BE_1} + I_{E_1} R_E = 0 \Rightarrow I_{E_1} = \frac{V_{B_1} - V_{BE_1}}{R_E}
+  $$
   
   *Note: Due to series stacking, the currents are approximately equal:*
-  $$I_{C_2} \approx I_{E_2} \approx I_{C_1} \approx I_{E_1}$$
+  $$
+  I_{C_2} \approx I_{E_2} \approx I_{C_1} \approx I_{E_1}
+  $$
 
 ---
 
@@ -470,8 +564,12 @@ A configuration stacking a common-emitter stage ($Q_1$) underneath a common-base
 
 ### Cascode Configuration (Continuation)
 * **Step 4: Collector Voltages ($V_{C_1}$, $V_{C_2}$)**
-  $$V_{C_1} = V_{E_2}$$
-  $$V_{C_2} = V_{CC} - I_{C_2} R_C \quad (\text{where } I_{C_2} \approx I_{E_1})$$
+  $$
+  V_{C_1} = V_{E_2}
+  $$
+  $$
+  V_{C_2} = V_{CC} - I_{C_2} R_C \quad (\text{where } I_{C_2} \approx I_{E_1})
+  $$
 
 ---
 
@@ -506,15 +604,27 @@ A configuration stacking a common-emitter stage ($Q_1$) underneath a common-base
 
 #### Derivation of Current Relationships:
 * Feedback base current node:
-  $$I_B = I_{B_1} + I_{B_2} = 2 I_{B_1}$$
+  $$
+  I_B = I_{B_1} + I_{B_2} = 2 I_{B_1}
+  $$
 * Control current branch:
-  $$I_{control} = I_{C_1} + I_B$$
-  $$I_{control} = \beta_1 I_{B_1} + 2 I_{B_1} = (\beta_1 + 2) I_{B_1}$$
+  $$
+  I_{control} = I_{C_1} + I_B
+  $$
+  $$
+  I_{control} = \beta_1 I_{B_1} + 2 I_{B_1} = (\beta_1 + 2) I_{B_1}
+  $$
 * Assuming high beta ($\beta_1 \gg 2$):
-  $$I_{control} \approx \beta_1 I_{B_1}$$
-  $$\Rightarrow I_{B_1} \approx \frac{I_{control}}{\beta_1}$$
+  $$
+  I_{control} \approx \beta_1 I_{B_1}
+  $$
+  $$
+  \Rightarrow I_{B_1} \approx \frac{I_{control}}{\beta_1}
+  $$
 * Since the transistors are matched:
-  $$I_{L} = I_{C_2} = \beta_2 I_{B_2} = \beta_1 I_{B_1} \approx I_{control}$$
+  $$
+  I_{L} = I_{C_2} = \beta_2 I_{B_2} = \beta_1 I_{B_1} \approx I_{control}
+  $$
 
 ---
 
@@ -525,11 +635,17 @@ A configuration stacking a common-emitter stage ($Q_1$) underneath a common-base
 
 ### Current Mirror Stabilization (Negative Feedback Mechanism)
 If the load current $I_L$ fluctuates, negative feedback naturally stabilizes the circuit:
-$$\text{same হয়ে যাবে (It will become the same).}$$
-$$I_L \uparrow \;\rightarrow\; I_{C_2} \uparrow \;\rightarrow\; I_{B_2} \uparrow \;\rightarrow\; V_{BE_2} \uparrow \;\rightarrow\; V_{BE_1} \uparrow \;\rightarrow\; V_{CE_1} \uparrow \;\rightarrow\; I_{control} \downarrow \;\rightarrow\; I_B \downarrow \;\rightarrow\; I_{B_2} \downarrow \;\rightarrow\; I_{E_2} \downarrow \;\rightarrow\; I_L \downarrow$$
+$$
+\text{same হয়ে যাবে (It will become the same).}
+$$
+$$
+I_L \uparrow \;\rightarrow\; I_{C_2} \uparrow \;\rightarrow\; I_{B_2} \uparrow \;\rightarrow\; V_{BE_2} \uparrow \;\rightarrow\; V_{BE_1} \uparrow \;\rightarrow\; V_{CE_1} \uparrow \;\rightarrow\; I_{control} \downarrow \;\rightarrow\; I_B \downarrow \;\rightarrow\; I_{B_2} \downarrow \;\rightarrow\; I_{E_2} \downarrow \;\rightarrow\; I_L \downarrow
+$$
 
 From the control loop:
-$$-V_{CC} + I_{control} \cdot R + V_{CE_1} = 0 \Rightarrow V_{CE_1} = V_{CC} - I_{control} \cdot R$$
+$$
+-V_{CC} + I_{control} \cdot R + V_{CE_1} = 0 \Rightarrow V_{CE_1} = V_{CC} - I_{control} \cdot R
+$$
 
 ---
 
@@ -555,10 +671,18 @@ Using dual power supplies (Ground and $-V_{EE}$):
 ```
 
 * **Base Voltage ($V_B$):**
-  $$V_B = \frac{R_1}{R_1 + R_2} (-V_{EE})$$
+  $$
+  V_B = \frac{R_1}{R_1 + R_2} (-V_{EE})
+  $$
 * **Emitter Voltage ($V_E$):**
-  $$V_{BE} = V_B - V_E \Rightarrow V_E = V_B - V_{BE}$$
+  $$
+  V_{BE} = V_B - V_E \Rightarrow V_E = V_B - V_{BE}
+  $$
 * **Emitter Current ($I_E$):**
-  $$I_E = \frac{V_E - (-V_{EE})}{R_E}$$
+  $$
+  I_E = \frac{V_E - (-V_{EE})}{R_E}
+  $$
   Since $I_C \approx I_E$:
-  $$I_C \approx \frac{V_E + V_{EE}}{R_E}$$
+  $$
+  I_C \approx \frac{V_E + V_{EE}}{R_E}
+  $$

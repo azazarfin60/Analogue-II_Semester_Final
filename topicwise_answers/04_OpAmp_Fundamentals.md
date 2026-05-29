@@ -27,9 +27,13 @@ For an operational amplifier operating with negative feedback:
 1.  The open-loop gain $A_{OL}$ is extremely high ($>10^5$).
 2.  The output voltage is limited by the power supply rails ($V_{sat} \approx \pm 14\text{ V}$).
 3.  The differential input voltage $V_d = V_+ - V_-$ is related to the output by:
-    $$V_o = A_{OL} (V_+ - V_-) \Rightarrow V_+ - V_- = \frac{V_o}{A_{OL}}$$
+    $$
+    V_o = A_{OL} (V_+ - V_-) \Rightarrow V_+ - V_- = \frac{V_o}{A_{OL}}
+    $$
 4.  Since $A_{OL} \rightarrow \infty$, the differential input voltage must approach zero:
-    $$V_+ - V_- \approx 0 \Rightarrow V_- \approx V_+$$
+    $$
+    V_+ - V_- \approx 0 \Rightarrow V_- \approx V_+
+    $$
 This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) is connected physically to Ground ($0\text{V}$), the inverting terminal ($V_-$) is held at a potential of exactly $0\text{V}$, functioning as a **Virtual Ground**. It can sink or source current but cannot maintain any voltage relative to ground.
 
 ---
@@ -48,11 +52,19 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 
 1.  Assume an ideal op-amp. The input current into the inverting terminal is $I_- \approx 0$.
 2.  By the virtual short principle, the voltage at the inverting terminal tracks the input voltage:
-    $$V_- = V_+ = V_{in}$$
+    $$
+    V_- = V_+ = V_{in}
+    $$
 3.  Apply KCL at the inverting terminal node:
-    $$\frac{0 - V_-}{R_1} + \frac{V_{out} - V_-}{R_f} = 0 \Rightarrow -\frac{V_{in}}{R_1} + \frac{V_{out} - V_{in}}{R_f} = 0$$
-    $$\frac{V_{out}}{R_f} = V_{in} \left( \frac{1}{R_1} + \frac{1}{R_f} \right) \Rightarrow V_{out} = V_{in} \left( \frac{R_f}{R_1} + 1 \right)$$
-    $$A_v = \frac{V_{out}}{V_{in}} = 1 + \frac{R_f}{R_1}$$
+    $$
+    \frac{0 - V_-}{R_1} + \frac{V_{out} - V_-}{R_f} = 0 \Rightarrow -\frac{V_{in}}{R_1} + \frac{V_{out} - V_{in}}{R_f} = 0
+    $$
+    $$
+    \frac{V_{out}}{R_f} = V_{in} \left( \frac{1}{R_1} + \frac{1}{R_f} \right) \Rightarrow V_{out} = V_{in} \left( \frac{R_f}{R_1} + 1 \right)
+    $$
+    $$
+    A_v = \frac{V_{out}}{V_{in}} = 1 + \frac{R_f}{R_1}
+    $$
 
 ---
 
@@ -62,12 +74,18 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 *[Appeared in: 2024 Q5(a), 2022 Q5(a), 2017 Q6(a)]*
 
 *   **Input Bias Current ($I_B$):** The average of the DC currents flowing into the inverting ($I_{B-}$) and non-inverting ($I_{B+}$) input terminals required to bias the internal input transistors:
-    $$I_B = \frac{I_{B+} + I_{B-}}{2}$$
+    $$
+    I_B = \frac{I_{B+} + I_{B-}}{2}
+    $$
 *   **Input Offset Current ($I_{OS}$):** The algebraic difference between the individual input bias currents, resulting from slight mismatches in the input transistors:
-    $$I_{OS} = |I_{B+} - I_{B-}|$$
+    $$
+    I_{OS} = |I_{B+} - I_{B-}|
+    $$
 *   **Input Offset Voltage ($V_{OS}$):** The DC differential voltage that must be applied across the input terminals to force the output voltage to exactly $0\text{V}$.
 *   **PSRR (Power Supply Rejection Ratio):** The ratio of the change in input offset voltage to the corresponding change in one of the power supply voltages, expressed in decibels:
-    $$PSRR = 20\log_{10} \left( \frac{\Delta V_{OS}}{\Delta V_{CC}} \right)$$
+    $$
+    PSRR = 20\log_{10} \left( \frac{\Delta V_{OS}}{\Delta V_{CC}} \right)
+    $$
 
 ---
 
@@ -75,14 +93,20 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 *[Appeared in: 2019 Q4(b), 2017 Q4(a), 2017 Q6(b)]*
 
 **Slew Rate (SR)** is the maximum physical rate of change of the output voltage of an op-amp:
-$$SR = \left. \frac{dv_o}{dt} \right|_{max}$$
+$$
+SR = \left. \frac{dv_o}{dt} \right|_{max}
+$$
 It is typically expressed in $\text{V}/\mu\text{s}$. If the input signal demands a faster change than the slew rate can provide, the output will distort into a triangular shape.
 
 #### Maximum Frequency without Slew Distortion ($f_{max}$):
 For a sinusoidal output $v_o(t) = V_p \sin(2\pi f t)$:
-$$\frac{dv_o}{dt} = 2\pi f V_p \cos(2\pi f t) \Rightarrow \left. \frac{dv_o}{dt} \right|_{max} = 2\pi f V_p$$
+$$
+\frac{dv_o}{dt} = 2\pi f V_p \cos(2\pi f t) \Rightarrow \left. \frac{dv_o}{dt} \right|_{max} = 2\pi f V_p
+$$
 To prevent slew rate distortion, we must satisfy:
-$$SR \ge 2\pi f V_p \Rightarrow f_{max} = \frac{SR}{2\pi V_p}$$
+$$
+SR \ge 2\pi f V_p \Rightarrow f_{max} = \frac{SR}{2\pi V_p}
+$$
 
 ---
 
@@ -92,7 +116,9 @@ $$SR \ge 2\pi f V_p \Rightarrow f_{max} = \frac{SR}{2\pi V_p}$$
 ### 3.1 Why Frequency Compensation is Needed
 An operational amplifier consists of multiple cascaded internal transistor stages (differential input, level shifter, output buffer). Each stage introduces an RC pole, contributing to a high-frequency phase shift.
 If the op-amp is configured with negative feedback, the closed-loop transfer function is:
-$$A_f = \frac{A}{1 + A\beta}$$
+$$
+A_f = \frac{A}{1 + A\beta}
+$$
 If the cumulative phase shift of the open-loop gain $A$ reaches $-180^\circ$ at a frequency where the magnitude $|A\beta| \ge 1$:
 1.  The negative feedback term ($1+A\beta$) transforms into subtraction ($1 - |A\beta| \rightarrow 0$).
 2.  The closed-loop gain approaches infinity ($A_f \rightarrow \infty$).
@@ -121,16 +147,24 @@ An inverting op-amp has feedback resistor $R_f = 100\text{ k}\Omega$ and input r
 #### Step-by-Step Solution:
 
 ##### Step 1: Calculate the closed-loop voltage gain ($A_{CL}$)
-$$A_{CL} = -\frac{R_f}{R_1} = -\frac{100\text{ k}\Omega}{10\text{ k}\Omega} = -10$$
+$$
+A_{CL} = -\frac{R_f}{R_1} = -\frac{100\text{ k}\Omega}{10\text{ k}\Omega} = -10
+$$
 
 ##### Step 2: Determine output peak voltage ($V_{p(out)}$)
-$$V_{p(out)} = |A_{CL}| \times V_{p(in)} = 10 \times 10\text{ mV} = 100\text{ mV} = 0.1\text{ V}$$
+$$
+V_{p(out)} = |A_{CL}| \times V_{p(in)} = 10 \times 10\text{ mV} = 100\text{ mV} = 0.1\text{ V}
+$$
 
 ##### Step 3: Calculate $f_{max}$
 Convert the slew rate to standard SI units ($\text{V/s}$):
-$$SR = 0.5\text{ V}/\mu\text{s} = 0.5 \times 10^6\text{ V/s}$$
+$$
+SR = 0.5\text{ V}/\mu\text{s} = 0.5 \times 10^6\text{ V/s}
+$$
 Apply the slew rate frequency equation:
-$$f_{max} = \frac{SR}{2\pi V_{p(out)}} = \frac{0.5 \times 10^6\text{ V/s}}{2\pi \times 0.1\text{ V}} = \frac{5 \times 10^6}{2\pi}\text{ Hz} \approx 795.8\text{ kHz}$$
+$$
+f_{max} = \frac{SR}{2\pi V_{p(out)}} = \frac{0.5 \times 10^6\text{ V/s}}{2\pi \times 0.1\text{ V}} = \frac{5 \times 10^6}{2\pi}\text{ Hz} \approx 795.8\text{ kHz}
+$$
 
 ---
 
@@ -143,12 +177,20 @@ An op-amp circuit with a closed-loop gain of $10$ operates at $f = 40\text{ kHz}
 #### Step-by-Step Solution:
 
 ##### Step 1: Calculate the maximum output peak voltage ($V_{p(out)}$)
-$$SR \ge 2\pi f V_{p(out)} \Rightarrow V_{p(out)} = \frac{SR}{2\pi f}$$
-$$V_{p(out)} = \frac{0.5 \times 10^6\text{ V/s}}{2\pi \times 40,000\text{ Hz}} = \frac{500,000}{80,000\pi} = \frac{50}{8\pi} \approx 1.989\text{ V (peak)}$$
+$$
+SR \ge 2\pi f V_{p(out)} \Rightarrow V_{p(out)} = \frac{SR}{2\pi f}
+$$
+$$
+V_{p(out)} = \frac{0.5 \times 10^6\text{ V/s}}{2\pi \times 40,000\text{ Hz}} = \frac{500,000}{80,000\pi} = \frac{50}{8\pi} \approx 1.989\text{ V (peak)}
+$$
 
 ##### Step 2: Calculate the peak-to-peak output voltage ($V_{p-p(out)}$)
-$$V_{p-p(out)} = 2 \times V_{p(out)} = 2 \times 1.989\text{ V} \approx 3.978\text{ V}_{p-p}$$
+$$
+V_{p-p(out)} = 2 \times V_{p(out)} = 2 \times 1.989\text{ V} \approx 3.978\text{ V}_{p-p}
+$$
 
 ##### Step 3: Calculate the maximum peak-to-peak input voltage ($V_{p-p(in)}$)
 Since the closed-loop gain is $10$:
-$$V_{p-p(in)} = \frac{V_{p-p(out)}}{\text{Gain}} = \frac{3.978\text{ V}_{p-p}}{10} \approx 0.398\text{ V}_{p-p} \quad (\text{or } 398\text{ mV}_{p-p})$$
+$$
+V_{p-p(in)} = \frac{V_{p-p(out)}}{\text{Gain}} = \frac{3.978\text{ V}_{p-p}}{10} \approx 0.398\text{ V}_{p-p} \quad (\text{or } 398\text{ mV}_{p-p})
+$$

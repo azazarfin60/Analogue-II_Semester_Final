@@ -24,17 +24,27 @@
 To implement this equation using an inverting summing configuration ($v_o = -[V_A + V_B + V_C]$):
 1.  **Differentiator Channel ($v_3$):**
     Pass $v_3$ through an inverting differentiator stage:
-    $$v_a = -R_d C_d \frac{dv_3}{dt}$$
+    $$
+    v_a = -R_d C_d \frac{dv_3}{dt}
+    $$
     Choose $C_d = 1\ \mu\text{F}$ and $R_d = 200\text{ k}\Omega$ to yield:
-    $$v_a = -0.2 \frac{dv_3}{dt}$$
+    $$
+    v_a = -0.2 \frac{dv_3}{dt}
+    $$
 2.  **Inverting Gain Channel ($v_1$):**
     Pass $v_1$ through an inverting amplifier:
-    $$v_b = -\left( \frac{R_{f1}}{R_{i1}} \right) v_1$$
+    $$
+    v_b = -\left( \frac{R_{f1}}{R_{i1}} \right) v_1
+    $$
     Choose $R_{i1} = 100\text{ k}\Omega$ and $R_{f1} = 50\text{ k}\Omega$ to yield:
-    $$v_b = -0.5 v_1$$
+    $$
+    v_b = -0.5 v_1
+    $$
 3.  **Inverting Summing Stage:**
     Sum $v_a$, $v_b$, and the direct input $v_2$ into a final inverting summer:
-    $$v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)$$
+    $$
+    v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)
+    $$
     Let $R_f = 100\text{ k}\Omega$.
     *   To yield $+0.2 \frac{dv_3}{dt}$, set $R_a = 100\text{ k}\Omega$ (gain of $-1$ on $v_a$).
     *   To yield $+0.5 v_1$, set $R_b = 100\text{ k}\Omega$ (gain of $-1$ on $v_b$).
@@ -45,7 +55,9 @@ To implement this equation using an inverting summing configuration ($v_o = -[V_
 2.  **Gain Channel 2 ($V_2$):** Pass $V_2$ to a non-inverting stage with gain $+2$ ($R_i = 10\text{ k}\Omega, R_f = 10\text{ k}\Omega$), yielding $V_{2a} = 2V_2$.
 3.  **Differentiator Channel:** Pass $V_1$ through an inverting differentiator stage ($R_d = 300\text{ k}\Omega, C_d = 10\ \mu\text{F}$), yielding $V_d = -3 \frac{dV_1}{dt}$. Pass this to a unity inverter to yield $V_{da} = 3 \frac{dV_1}{dt}$.
 4.  **Inverting Summer:** Sum $V_{1a}, V_{2a}, V_{da}$ with unity gain:
-    $$V_o = -(V_{1a} + V_{2a} + V_{da}) = -(-3V_1 + 2V_2 + 3\frac{dV_1}{dt}) = 3V_1 - 2V_2 - 3\frac{dV_1}{dt}$$
+    $$
+    V_o = -(V_{1a} + V_{2a} + V_{da}) = -(-3V_1 + 2V_2 + 3\frac{dV_1}{dt}) = 3V_1 - 2V_2 - 3\frac{dV_1}{dt}
+    $$
 
 ---
 
@@ -104,25 +116,39 @@ An inverting op-amp configuration with a matched BJT placed in the feedback loop
 
 1.  By virtual ground, the inverting terminal voltage is $V_n \approx 0\text{V}$.
 2.  Input current flowing through resistor $R$:
-    $$I_{in} = \frac{V_{in} - 0}{R} = \frac{V_{in}}{R}$$
+    $$
+    I_{in} = \frac{V_{in} - 0}{R} = \frac{V_{in}}{R}
+    $$
 3.  Since the op-amp has infinite input impedance, all of $I_{in}$ must flow into the BJT's collector:
-    $$I_C = I_{in} = \frac{V_{in}}{R}$$
+    $$
+    I_C = I_{in} = \frac{V_{in}}{R}
+    $$
 4.  The BJT collector current is exponentially related to its base-emitter voltage:
-    $$I_C = I_s e^{V_{BE} / V_T}$$
+    $$
+    I_C = I_s e^{V_{BE} / V_T}
+    $$
     where $I_s$ is the reverse saturation current and $V_T \approx 26\text{ mV}$ at room temperature.
 5.  Since the base is grounded ($V_B = 0\text{V}$) and the emitter is tied to the output ($V_E = V_{out}$):
-    $$V_{BE} = V_B - V_E = -V_{out}$$
+    $$
+    V_{BE} = V_B - V_E = -V_{out}
+    $$
 6.  Substitute this expression into the BJT current equation:
-    $$I_C = I_s e^{-V_{out} / V_T} \Rightarrow \frac{V_{in}}{R} = I_s e^{-V_{out} / V_T} \Rightarrow \frac{V_{in}}{I_s R} = e^{-V_{out} / V_T}$$
+    $$
+    I_C = I_s e^{-V_{out} / V_T} \Rightarrow \frac{V_{in}}{R} = I_s e^{-V_{out} / V_T} \Rightarrow \frac{V_{in}}{I_s R} = e^{-V_{out} / V_T}
+    $$
 7.  Take the natural logarithm of both sides:
-    $$\ln \left( \frac{V_{in}}{I_s R} \right) = -\frac{V_{out}}{V_T} \Rightarrow V_{out} = -V_T \ln \left( \frac{V_{in}}{I_s R} \right)$$
+    $$
+    \ln \left( \frac{V_{in}}{I_s R} \right) = -\frac{V_{out}}{V_T} \Rightarrow V_{out} = -V_T \ln \left( \frac{V_{in}}{I_s R} \right)
+    $$
 The output voltage is proportional to the natural logarithm of the input voltage.
 
 ---
 
 ### 4.2 Antilogarithmic Amplifier
 Placing the BJT at the input and the resistor $R$ in the feedback loop reverses the mathematical operation:
-$$I_C = I_s e^{V_{in} / V_T} \quad \text{and} \quad V_{out} = -I_C R = -R I_s e^{V_{in} / V_T}$$
+$$
+I_C = I_s e^{V_{in} / V_T} \quad \text{and} \quad V_{out} = -I_C R = -R I_s e^{V_{in} / V_T}
+$$
 The output is exponentially proportional to the input voltage.
 
 ---
@@ -144,15 +170,25 @@ An NIC is an active op-amp configuration that simulates a negative resistance:
 
 **Mathematical Proof of Negative Input Impedance ($Z_{in}$):**
 1.  Assume $R_1 = R_2$. The feedback network to the inverting input is a voltage divider:
-    $$V_- = V_{out} \left( \frac{R_1}{R_1 + R_2} \right) = \frac{V_{out}}{2}$$
+    $$
+    V_- = V_{out} \left( \frac{R_1}{R_1 + R_2} \right) = \frac{V_{out}}{2}
+    $$
 2.  By the virtual short principle:
-    $$V_- = V_+ \Rightarrow V_{in} = \frac{V_{out}}{2} \Rightarrow V_{out} = 2 V_{in}$$
+    $$
+    V_- = V_+ \Rightarrow V_{in} = \frac{V_{out}}{2} \Rightarrow V_{out} = 2 V_{in}
+    $$
 3.  A positive feedback resistor $R$ is connected between the non-inverting input ($V_{in}$) and the output ($V_{out}$). The current $I_{in}$ flowing into the input terminal is:
-    $$I_{in} = \frac{V_{in} - V_{out}}{R}$$
+    $$
+    I_{in} = \frac{V_{in} - V_{out}}{R}
+    $$
 4.  Substitute $V_{out} = 2 V_{in}$:
-    $$I_{in} = \frac{V_{in} - 2 V_{in}}{R} = -\frac{V_{in}}{R}$$
+    $$
+    I_{in} = \frac{V_{in} - 2 V_{in}}{R} = -\frac{V_{in}}{R}
+    $$
 5.  The apparent input impedance is:
-    $$Z_{in} = \frac{V_{in}}{I_{in}} = -R$$
+    $$
+    Z_{in} = \frac{V_{in}}{I_{in}} = -R
+    $$
 The circuit acts as a negative resistor, pushing current back into the signal source.
 
 ---
@@ -177,21 +213,35 @@ Design an inverting Schmitt trigger with $V_{UT} = 7\text{ V}$, $V_{LT} = 3\text
 
 ##### Step 1: Write the threshold equations
 For an inverting Schmitt trigger biased with a reference voltage $V_{ref}$:
-$$V_{UT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) + V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 7\text{ V} \quad \text{--- (Eq. 1)}$$
-$$V_{LT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) - V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 3\text{ V} \quad \text{--- (Eq. 2)}$$
+$$
+V_{UT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) + V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 7\text{ V} \quad \text{--- (Eq. 1)}
+$$
+$$
+V_{LT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) - V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 3\text{ V} \quad \text{--- (Eq. 2)}
+$$
 
 ##### Step 2: Solve for resistor ratio ($R_F / R_1$)
 Subtract Equation 2 from Equation 1:
-$$2 V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 4\text{ V} \Rightarrow 2(14) \left( \frac{R_1}{R_1 + R_F} \right) = 4 \Rightarrow \frac{R_1}{R_1 + R_F} = \frac{4}{28} = \frac{1}{7}$$
-$$7 R_1 = R_1 + R_F \Rightarrow R_F = 6 R_1$$
+$$
+2 V_{sat} \left( \frac{R_1}{R_1 + R_F} \right) = 4\text{ V} \Rightarrow 2(14) \left( \frac{R_1}{R_1 + R_F} \right) = 4 \Rightarrow \frac{R_1}{R_1 + R_F} = \frac{4}{28} = \frac{1}{7}
+$$
+$$
+7 R_1 = R_1 + R_F \Rightarrow R_F = 6 R_1
+$$
 Choose $R_1 = 10\text{ k}\Omega$ as a standard design value:
-$$R_F = 6 \times 10\text{ k}\Omega = 60\text{ k}\Omega$$
+$$
+R_F = 6 \times 10\text{ k}\Omega = 60\text{ k}\Omega
+$$
 
 ##### Step 3: Solve for reference voltage ($V_{ref}$)
 Add Equation 1 and Equation 2:
-$$2 V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) = 10\text{ V} \Rightarrow V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) = 5\text{ V}$$
+$$
+2 V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) = 10\text{ V} \Rightarrow V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) = 5\text{ V}
+$$
 Substitute $R_F = 6 R_1$:
-$$V_{ref} \left( \frac{6 R_1}{7 R_1} \right) = 5\text{ V} \Rightarrow V_{ref} \left( \frac{6}{7} \right) = 5 \Rightarrow V_{ref} = \frac{35}{6} \approx 5.83\text{ V}$$
+$$
+V_{ref} \left( \frac{6 R_1}{7 R_1} \right) = 5\text{ V} \Rightarrow V_{ref} \left( \frac{6}{7} \right) = 5 \Rightarrow V_{ref} = \frac{35}{6} \approx 5.83\text{ V}
+$$
 
 ---
 
@@ -213,7 +263,11 @@ Used to amplify small differential sensor signals in high-noise industrial envir
 ```
 
 *   **Input Stage (Buffers):** Op-Amps $A_1$ and $A_2$ act as high input impedance buffers with a differential gain determined by a single gain resistor $R_g$:
-    $$V_{o2} - V_{o1} = \left( 1 + \frac{2 R}{R_g} \right) (V_2 - V_1)$$
+    $$
+    V_{o2} - V_{o1} = \left( 1 + \frac{2 R}{R_g} \right) (V_2 - V_1)
+    $$
 *   **Differential Stage:** Op-Amp $A_3$ is a standard differential stage with gain $R_f / R$. It rejects common-mode noise and provides single-ended output:
-    $$V_{out} = \left( \frac{R_f}{R} \right) (V_{o2} - V_{o1}) = \left( \frac{R_f}{R} \right) \left( 1 + \frac{2 R}{R_g} \right) (V_2 - V_1)$$
+    $$
+    V_{out} = \left( \frac{R_f}{R} \right) (V_{o2} - V_{o1}) = \left( \frac{R_f}{R} \right) \left( 1 + \frac{2 R}{R_g} \right) (V_2 - V_1)
+    $$
 *   **Benefit:** The extremely high CMRR isolates small sensor readings from large common-mode electrical noise.
