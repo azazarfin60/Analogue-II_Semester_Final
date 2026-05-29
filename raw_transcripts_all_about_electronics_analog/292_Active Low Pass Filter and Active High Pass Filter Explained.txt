@@ -1,0 +1,225 @@
+Title: Active Low Pass Filter and Active High Pass Filter Explained
+URL: https://www.youtube.com/watch?v=gEeF8sEQTEc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in this video we will learn about the active lopa and the active high pass filter.
+[00:26] So in the last couple of videos, we had seen that how by just using the resistor and capacitor,
+[00:31] we can design the passive RC lopas and the high pass filters.
+[00:35] But these passive filters have some limitations.
+[00:39] The first limitation is that the output of this passive filter will be always less than
+[00:44] the input signal.
+[00:46] And when you cascade many of such filters to design the higher order filter, the output
+[00:50] will be even much lesser than the input.
+[00:53] And not only that the cutoff frequency of such passive filters will also depend upon
+[00:58] the load.
+[00:59] So depending upon the load value, the cutoff frequency of such passive filters will get
+[01:04] modified.
+[01:05] Like as you can see in this high pass passive filter, depending upon the load value, the
+[01:10] effective resistance of this filter will get modified.
+[01:14] Hence the cutoff frequency will also get modified.
+[01:17] So these problems can be overcome by using the active filter.
+[01:21] So these active filter not only selectively passes the certain band of frequencies,
+[01:26] but it also provides the gain to the input signal.
+[01:30] And as its name suggests, these active filters are designed using the active components
+[01:35] like opem and the transistors.
+[01:38] So in this video, we will see the active lopas and the high pass filters which are designed
+[01:43] using the opem.
+[01:44] Now the main advantage of opem is it has a very high input impedance and very low output
+[01:51] impedance.
+[01:52] So because of these characteristics, we can use opem as a buffer to isolate the load from
+[01:57] the filter circuitry.
+[01:59] Or maybe we can use to isolate the different stages of the filter.
+[02:04] So now let us see how we can use this opem as a buffer.
+[02:08] So when we configure opem as a voltage follower circuit, then it will act as a buffer.
+[02:14] So in that case, we are providing the input to this non-inverting end of this opem and
+[02:19] output is getting shorted with the inverting end of the opem.
+[02:23] So in this configuration, the output will be equal to the input.
+[02:28] So we can say that the gain of the opem is 1.
+[02:32] So now in this configuration, suppose if we connect our filter circuit at this non-inverting
+[02:36] end and if we take the output at this end, then this opem will act as a buffer between
+[02:42] the load and the filter circuit.
+[02:45] But in this configuration, the gain of this opem will be 1.
+[02:49] So now suppose if we want to amplify the filter output, then we can configure this opem
+[02:54] in this configuration.
+[02:56] So this is known as a non-inverting amplifier configuration of the opem in which we are
+[03:01] providing the input at this non-inverting end and we are taking output over here.
+[03:07] So in this configuration, the gain or DC gain of this opem will be 1.
+[03:11] We are by RF plus R1.
+[03:15] So by changing the value of this feedback resistance in the value of R1, we can change
+[03:20] the gain of this opem.
+[03:22] So in this configuration, suppose if we connect our filter circuit at this end, then the
+[03:27] output of the filter will get amplified by this factor and the circuit will look like this.
+[03:33] So here will be the input to the filter and here we will take the output of this filter.
+[03:41] And let us say the intermediate stage which is the input to this non-inverting end will
+[03:46] be VX.
+[03:48] So for the low frequencies, the gain which is being provided by this opem will be 1 plus
+[03:54] RF by R1.
+[03:57] And let us denote that gain by a symbol AV.
+[04:00] That is a voltage gain that is provided by this opem.
+[04:03] Now in this configuration, the cutoff frequency will be FC that is equal to 1.
+[04:09] So we are by 2 pi into RC which is the same expression that we got for the passive
+[04:15] low pass filter.
+[04:17] So now earlier in the case of a passive low pass filter, we had seen that the ratio of
+[04:21] output there by the input is known as the transfer function of this filter.
+[04:26] So let us see how we can write the transfer function for this active low pass filter.
+[04:30] So the transfer function of this active low pass filter can be given by the equation AV
+[04:36] into 1 divided by under root 1 plus F over FC whole square where AV is nothing but 1 plus
+[04:49] RF by R1.
+[04:51] That is the gain that is provided by the opem.
+[04:54] So in this expression, there are 2 components.
+[04:56] The first is the voltage gain of the opem that is AV.
+[05:00] And the second component is this expression that is 1 over under root 1 plus F by FC
+[05:07] whole square.
+[05:08] And that is the response of a low pass filter.
+[05:11] And if you are wondering how we have arrived to this expression, so let us derive this
+[05:15] expression.
+[05:16] So in the case of a passive low pass filter, we had seen that the output can be given by
+[05:22] the expression XC divided by XC plus R into VIN.
+[05:30] Or we can write this expression as V out by VIN that is equal to XC divided by under
+[05:39] root R square plus XC square.
+[05:42] Or we can write it as a 1 over omega C divided by under root R square plus 1 over omega
+[05:51] C whole square.
+[05:53] Now suppose if you multiply numerator and denominator by that term omega C, then we
+[05:58] will get 1 divided by under root R square into omega square C square plus 1.
+[06:08] Now we know that for the low pass filter, the cutoff frequency omega C can be given by
+[06:12] the equation 1 over RC.
+[06:16] So we can write this expression as V out by VIN that is equal to 1 divided by under root
+[06:27] 1 plus omega over omega C whole square, where omega C is nothing but a 1 over RC.
+[06:37] And if we write this expression in terms of the frequency, then we can write it as a 1
+[06:42] divided by under root 1 plus F over FC whole square.
+[06:48] So in this way, we got the expression for this output over input for the passive low
+[06:54] pass filter.
+[06:55] And if you multiply this expression by the op-em gain, then that will be multiplied by
+[07:01] the expression 1 plus RF divided by R1.
+[07:05] So this will be the transfer function of a active low pass filter.
+[07:09] And if you see the frequency response of the active low pass filter, it will be very
+[07:13] similar to the passive low pass filter.
+[07:16] So this filter have a cutoff frequency of FC, where the output will be 0.707 times the
+[07:23] maximum value.
+[07:25] So now so far, we had seen that by using the op-em, we can isolate the load and the filter
+[07:30] circuit.
+[07:32] But what if my input that is coming to this filter is also coming from the another circuit
+[07:37] tree?
+[07:38] So in that case, it is quite possible that depending upon the impedance of that circuit,
+[07:43] the cutoff frequency of this filter will get changed.
+[07:46] And to avoid that, what we can do, we can provide that input to this filter by using
+[07:51] a 1 buffer circuit.
+[07:54] But in that case, we will require a 1 more buffer.
+[07:57] And if we want to eliminate 1 more buffer, then what we can do, we can connect this capacitor
+[08:03] in the feedback path.
+[08:05] And that circuit will look like this.
+[08:07] So in this case, we are applying input at the non-inverting end.
+[08:11] And instead of connecting the capacitor at this end, we have shifted that capacitor
+[08:16] in the feedback path.
+[08:18] So now let us understand how this circuit will also act as a low pass filter.
+[08:22] So at low frequencies, or let us take an extreme case at zero frequency, the value of Xe
+[08:28] will be infinity.
+[08:30] And hence, the parallel impedance of this Xe and RF will be RF.
+[08:35] So at low frequencies, the gain that is provided by this op-em will be 1 plus RF over R1.
+[08:42] And as we move towards the higher frequencies, or let us take a case at F is equal to infinity,
+[08:49] the value of this reactance will be zero.
+[08:52] And in that case, this op-em will act as a voltage follower.
+[08:56] So at that time, the output will follow the input.
+[08:59] And hence, the gain will be equal to 1.
+[09:02] So in this way, this circuit will also act as a low pass filter.
+[09:06] And by using this configuration, we can avoid the effect of loading from the input stage.
+[09:12] But the cutoff frequency for this filter can be given by the expression 1 divided by 2 pi
+[09:19] into RF into C.
+[09:21] So as you can see, our cutoff frequency has been slightly modified.
+[09:25] Because now, the resistance which decides the characteristic of the filter is not R,
+[09:31] but this feedback resistor RF.
+[09:34] In the gain of this op-em will be given by the expression 1 plus RF over R1.
+[09:40] All right.
+[09:41] Now let us take one example based on this active low pass filter.
+[09:46] So in this example, we have been given to find the cutoff frequency for the given filter.
+[09:51] So as you can see here, this filter is used in a non-inverting configuration.
+[09:56] And we know that the cutoff frequency expression for this filter will be 1 divided by 2 pi into
+[10:02] RC.
+[10:03] Now here, the value of R is 10 kilo ohm.
+[10:06] The value of capacitance is 0.1 microfaraday.
+[10:10] Now if you put all the values of this resistance and capacitance, then the cutoff frequency
+[10:15] will be approximately equal to 159 hertz.
+[10:20] And if you see here, the gain of this filter will be 1 plus RF by R1.
+[10:27] That is nothing but a 5.
+[10:29] So in this way, suppose if you are applying a signal of a 1 volt with a 1 hertz frequency,
+[10:35] then at the output, you will get a output signal of a 5 volt with a 1 hertz frequency.
+[10:42] So now like we have designed the active low pass filter, similarly we can design the active
+[10:47] high pass filter.
+[10:48] And here is the circuit of our active high pass filter with a unity gain.
+[10:53] So here, this opam is used as a buffer to isolate the load and the filter circuit dream.
+[10:58] And suppose if you want to amplify the filter output, then we can configure this high pass
+[11:03] filter in this configuration, which is very similar to the, we had seen for the active
+[11:08] low pass filter.
+[11:10] So the gain of this filter will be 1 plus RF by R1.
+[11:15] And the cutoff frequency FC can be given by the expression 1, d by 2 pi into RC.
+[11:21] So in this filter, we are applying the input at this end and we are taking the output over
+[11:26] here.
+[11:28] So now let us see the expression for the transfer function for this active high pass filter.
+[11:32] So the transfer function for this active high pass filter can be given by the expression
+[11:37] AV into F by FC, d by under root 1 plus F by FC whole square.
+[11:49] So here AV is nothing but 1 plus RF by R1.
+[11:55] That is the gain, which is provided by the opam.
+[11:58] So again here, as you can see, this expression have a two components.
+[12:02] One is the gain that is provided by the opam and one is the response of a high pass filter.
+[12:08] So now let us derive this expression.
+[12:10] So in the last video, we had seen that for the high pass filter, the ratio of output
+[12:15] over input can be given by the expression R by under root R square plus FC square.
+[12:22] And we can say that R d by under root R square plus 1 over omega c whole square.
+[12:31] So now if you multiply numerator and denominator by the term omega c, then we will get R into
+[12:37] omega c d by under root R square into omega square c square plus 1.
+[12:45] And we know that for the high pass filter, the cutoff frequency omega c will be 1 over
+[12:50] RC.
+[12:51] So we can write this expression as omega d by omega c divided by under root 1 plus omega
+[13:02] d by omega c whole square.
+[13:05] And if we write in terms of the frequency, then we can say that F by FC d by under root
+[13:13] 1 plus F by FC whole square.
+[13:17] So this will be the expression of a transfer function for the passive high pass filter.
+[13:22] And if we multiply this expression by the gain of opam, then we will get the expression
+[13:27] for the active high pass filter.
+[13:30] So now if you see the frequency response of this active low pass filter, it should look
+[13:35] very similar to the passive high pass filter.
+[13:38] That means it rejects the low frequency component and it passes all the high frequency components
+[13:44] up to the infinity.
+[13:46] But if you see the actual filter, it will not pass all the frequency components up to
+[13:50] the infinity.
+[13:51] And the frequency response is limited by the electrical components that is used in the
+[13:56] design.
+[13:57] Particularly in this case, if you see the response is limited by the gain characteristic
+[14:01] of the opam.
+[14:03] So if you see the gain characteristic of the opam, it will look like this.
+[14:07] So this opam provides the flat response for a frequency, let us say up to the 100 kilo
+[14:12] watts or maybe 1 megahertz.
+[14:15] And if you go beyond this frequency, then you will see the reduction in the gain.
+[14:20] So now if we see the combined response, then the combined response of this active low pass
+[14:24] filter will look like this.
+[14:26] So this will be the response of our active low pass filter.
+[14:31] So now so far whatever active filters we have designed, we have provided the input at
+[14:35] the non-inverting end of this opam.
+[14:38] But we can also design these active filters by providing the input at this inverting
+[14:43] end.
+[14:44] And if you see the active low pass filter in the inverting configuration, it will look
+[14:47] like this.
+[14:49] So here in this inverting configuration, the gain of the opam will be minus RF by R1.
+[14:56] So as you can see, the gain will be the minus RF by R1.
+[15:00] So the output will be 180 degree out of phase with the input.
+[15:05] And the cutoff frequency FC can be given by the expression 1, dR by 2 pi into RF into
+[15:11] C.
+[15:12] Similarly, we can design the active high pass filter in the inverting configuration.
+[15:17] That means we are providing the input at this inverting end of the opam.
+[15:22] So now suppose if we want to design the higher order filters, then we can cascade this first
+[15:26] order active filters and we can design the higher order filters.
+[15:30] And we will see more about it in the upcoming videos.
+[15:33] So before I end up this video, here I am giving you one exercise which is very simple.
+[15:38] So as you can see, in this example, you have to design the high pass filter which is having
+[15:43] a cutoff frequency of 5 kilohertz.
+[15:45] And not only that, for this filter, whenever you are applying input signal, let's say of
+[15:51] 100 milli volt with a frequency of 10 kilohertz, then at the output, you should get a output
+[15:59] of a 1 volt with a 10 kilohertz.
+[16:03] So you have to select the value of this RF, R1, C and R in such a way that all these
+[16:09] criteria will be fulfilled.
+[16:11] And do let me know your design values in the comment section below.
+[16:14] So I hope in this video you understood about the active low pass and the high pass filters.
+[16:19] So if you have any question or suggestion, please let me know in the comment section below.
+[16:23] If you like this video, hit the like button and subscribe to the channel for more such
+[16:27] videos.

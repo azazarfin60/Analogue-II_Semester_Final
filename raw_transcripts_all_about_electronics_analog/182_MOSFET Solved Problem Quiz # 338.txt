@@ -1,0 +1,62 @@
+Title: MOSFET Solved Problem | Quiz # 338
+URL: https://www.youtube.com/watch?v=gKRSIpPMTew
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this MOSFET circuit and we have been given that
+[00:15] all the MOSFETs are identical.
+[00:17] It means here that device characteristics of all MOSFETs are equal.
+[00:21] Moreover, we have been given that all the MOSFETs are biased in such a way that they
+[00:27] are operating in the saturation region.
+[00:29] So here, we have been asked to find the output voltage.
+[00:34] So if you look this circuit, then this portion of the circuit is the current mirror.
+[00:39] So in this case, this reference current is equal to 1 milliampere and the same current
+[00:46] is also flowing through the transistor M1.
+[00:49] That means here, this ID1 is equal to 1 milliampere and says the device characteristics of all
+[00:57] MOSFETs are equal.
+[00:58] So the current through the second MOSFET or the ID2 will also be equal to 1 milliampere
+[01:04] because for the current mirror in general, this ID2 can be given as W by L ratio of this
+[01:11] second MOSFET divided by W by L ratio of the first MOSFET times i reference.
+[01:18] So in this case, this i reference is equal to 1 milliampere and this W by L ratio of
+[01:25] these two MOSFETs are equal.
+[01:27] Therefore, this ID2 is equal to 1 milliampere.
+[01:32] That means the current through the transistor M2 is equal to 1 milliampere.
+[01:37] Now here, the gate current of all MOSFETs are negligible.
+[01:41] So we can assume that this same current ID2 is also flowing through this 4 kilo ohm resistor.
+[01:48] That means the current through this 4 kilo ohm resistor is also equal to 1 milliampere.
+[01:54] So if you see the voltage drop across this 4 kilo ohm resistor, then it is equal to 1
+[02:01] milliampere times 4 kilo ohm that is equal to 4 volt.
+[02:06] That means the voltage at this end or this VG3 is equal to 6 volt minus 4 volt that is
+[02:15] equal to 2 volt.
+[02:18] That means the gate voltage of this MOSFET M3 is equal to 2 volt.
+[02:23] Similarly, the gate voltage of this 4th MOSFET or the M4 is equal to 6 volt.
+[02:31] Now for this MOSFET M3, since the source terminal is at the ground potential, so we can say
+[02:36] that this voltage VGS3 that is VG3 minus VS3 is equal to 2 volt minus 0 volt that is equal
+[02:46] to 2 volt.
+[02:48] Similarly, for this MOSFET M4, this VGS4 is equal to VG4 minus V out because the voltage
+[02:58] at the source of this M4 is equal to V out that is equal to 6 volt minus V out.
+[03:06] Now here if you observe, then this M3 and M4 are connected in the series connection.
+[03:11] Therefore the drain current of this 2 MOSFET will also be equal.
+[03:16] Apart from that, here we have been given that all MOSFETs are operating in the saturation
+[03:21] region.
+[03:23] So in the saturation region, these drain current ID can be given as half times mu n times
+[03:30] cux times w divided by L times VGS minus VT whole square.
+[03:37] So let's say the current through this MOSFET M3 is equal to ID3 while the current through
+[03:43] this MOSFET M4 is equal to ID4 and since both MOSFETs are connected in the series connection,
+[03:51] so this ID3 is equal to ID4.
+[03:54] Moreover, since both MOSFETs are operating in the saturation region, so for both MOSFETs,
+[04:00] we can use same expression.
+[04:03] So for this MOSFET M3, these ID3 will be equal to half times mu n times cux times w divided
+[04:12] by L times these VGS3 minus VT whole square.
+[04:18] And similarly for this MOSFET M4, this current ID4 is equal to half times mu n times cux
+[04:26] times w divided by L times these VGS4 minus VT whole square.
+[04:33] Now here, since the device parameter of all MOSFETs are equal, so these device constant
+[04:39] as well as the threshold voltage for all MOSFETs will be equal.
+[04:43] So whenever we equate this ID3 and the ID4, then we will have these VGS3 minus VT whole
+[04:52] square that is equal to VGS4 minus VT whole square or we can say that these VGS3 minus
+[05:01] VT that is equal to VGS4 minus VT or we can say that these VGS3 should be equal to
+[05:11] VGS4.
+[05:13] Now we have already calculated the value of the VGS3 that is equal to 2 volt and this VGS4
+[05:20] is equal to 6 volt minus V out.
+[05:24] Therefore, this V out is equal to 4 volt.
+[05:28] That means for the given question, the value of the output voltage is equal to 4 volt.

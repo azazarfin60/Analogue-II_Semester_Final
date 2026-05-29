@@ -1,0 +1,139 @@
+Title: BJT Large Signal Model Explained
+URL: https://www.youtube.com/watch?v=ME41uPsDxFo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the large signal model of the BJT.
+[00:21] Now in the earlier videos of the BJT, we have discussed the basics of the BJT and we
+[00:27] have also seen the different configurations in which the BJT can be used.
+[00:31] Now one of the most common application of the BJT is to use it as an amplifier.
+[00:37] Now when we say the term amplifier, then it could be either a voltage, current or the
+[00:42] power amplifier.
+[00:43] But here I am referring to the voltage amplifier.
+[00:47] That means whenever we apply a small voltage signal at the input of this BJT, then using
+[00:52] the BJT, it is possible to amplify that signal.
+[00:57] And the common emitter is the most preferred BJT configuration for the voltage amplification.
+[01:03] So to use this BJT as an amplifier, we need to apply the DC voltage to the BJT and it
+[01:08] is called the biasing of the BJT.
+[01:11] So without the biasing, the BJT won't be able to amplify the input signal.
+[01:16] That means if we just connect the output of the microphone between this base and the emitter
+[01:21] terminal, then it won't be able to do that.
+[01:22] It is possible to amplify that signal.
+[01:25] So when we want to use the BJT as an amplifier, then we need to do the two types of analysis.
+[01:31] One is the DC analysis and the second is AC analysis.
+[01:35] So using the DC analysis, we can identify the operating point of the circuit and we can
+[01:41] identify in which region it is operating.
+[01:44] So as we have discussed in the earlier videos, to use the BJT as an amplifier, it should
+[01:49] be operated in the active region.
+[01:51] Now using the AC analysis, we can know the gain of the amplifier and we can find the input
+[01:57] as well as the output impedance of the amplifier because these are the sum of the important
+[02:02] specifications of the voltage amplifier.
+[02:06] And to do all these analysis, we need to model the BJT.
+[02:10] So this transistor model is the equivalent representation of the BJT which closely represents
+[02:15] the transistor characteristics.
+[02:18] And this transistor model consists of the familiar circuit elements so that the analysis
+[02:22] of the circuit becomes easier.
+[02:25] So based on the magnitude of the input signal, there are two transistor models.
+[02:29] One is the large signal model and the second is small signal model.
+[02:34] Now when the transistor is used as an amplifier, then it consists of the two components.
+[02:40] One is the DC component which is used for the biasing the transistor and second is the
+[02:44] time varying signal which we want to amplify.
+[02:48] So this DC signal is offered referred as the large signal while this time varying signal
+[02:53] is referred as the small signal.
+[02:57] So to understand the behavior of the device for this large signal, this large signal model
+[03:01] can be used.
+[03:04] Now we know that the BJT is non-linear device.
+[03:07] So for such device, when the input signal is large, then the behavior of the device is
+[03:12] also non-linear.
+[03:14] So for the analysis, we need the model which also accounts all these non-linearities.
+[03:20] Now the large signal model which we are going to discuss over here is valid only when the
+[03:25] BJT is operating in the forward active region.
+[03:29] That means whenever the base emitter junction is forward biased and the character base junction
+[03:34] is reversed bias.
+[03:36] So now let us draw this large signal model.
+[03:39] Now as you are aware, the BJT has the two pin junctions and it can be visualized as
+[03:45] if the two diodes are connected back to back.
+[03:48] Now in this common emitter configuration, let us say the voltage VCE is constant and
+[03:54] we are varying the voltage between this base and the emitter terminal.
+[03:58] Now by varying this voltage, if we measure the character current and if we draw the
+[04:03] vi characteristic, then it will look similar to the diode characteristic.
+[04:08] And the relationship between this character current and the base emitter voltage can be
+[04:11] given by this expression.
+[04:13] Where here, IS is the reverse saturation current and the VT is the thermal voltage.
+[04:20] And if we see this expression, then it is similar to the shock list diode equation.
+[04:26] So from this equation, as well as from this curve, we can say that the base emitter terminal
+[04:30] can be represented by the diode.
+[04:33] Now in the earlier videos, we have already seen the IC versus VCE curves for this common
+[04:38] emitter configuration.
+[04:41] That means for the fixed value of VBE or the fixed value of current IB, if we change
+[04:45] the voltage VCE, then in this active region, the current current almost remains constant.
+[04:52] That means the current which is flowing from current to emitter terminal can be assumed
+[04:56] to be a constant for the given value of VBE.
+[05:00] Or we can represent it as a voltage controlled current source.
+[05:04] So this is the equivalent representation of the BJT.
+[05:08] Or in other words, this is the large signal model of the BJT in the forward active region.
+[05:14] So here, the character current IC is equal to IS times e to the power voltage VBE divided
+[05:20] by VT.
+[05:22] And as you are aware, IC is equal to beta times IB.
+[05:27] That means base current IB can be given as IS divided by beta times e to the power voltage
+[05:32] VBE divided by VT.
+[05:35] And the emitter current is the summation of this character current and the base current.
+[05:39] That means emitter current IE is equal to beta plus 1 times IB.
+[05:45] That means beta plus 1 times IS divided by beta times e to the power voltage VBE divided
+[05:53] by VT.
+[05:56] So as you can see over here, the collector current depends on the value of voltage VBE.
+[06:01] And here, as the relationship is non-linear, so even if the voltage VBE changes by the
+[06:06] small amount, then there will be a significant change in the collector current.
+[06:11] So if we do the DC analysis using this large signal model, then we always need to deal
+[06:16] with this non-linear equations.
+[06:19] And because of that, the analysis of the circuit would become complicated.
+[06:24] Now in the earlier videos of the BJT, we have already talked about the various biasing
+[06:28] techniques and we have also discussed about the DC analysis.
+[06:32] But in the analysis, we never use the non-linear equations, right?
+[06:36] The reason is that we further use the approximation for the analysis.
+[06:41] So if you see this IC versus VBE curve, then the variation in the voltage VBE is very
+[06:46] small.
+[06:47] That means even if there is a small change in the voltage VBE, then there is a significant
+[06:51] change in the collector current.
+[06:53] So for the DC analysis of the BJT, we can approximate the value of VBE as 0.7 volt.
+[07:00] Now let's say for the given circuit, if we want to do the DC analysis, then by applying
+[07:05] the KVL equation on the input side, we can find the value of this base current.
+[07:10] And then using the expression IC is equal to beta times IB, we can find the value of the
+[07:15] collector current as well as the voltage VCE.
+[07:19] So of course, this method gives the approximate values of the operating point.
+[07:24] And if we want to find the exact values, then we need to do the iterations.
+[07:29] For example, let's say using this approximation, we have already found the value of the collector
+[07:34] current.
+[07:35] Now, if we put the value of this collector current in this expression, then from this,
+[07:40] we can find the value of the voltage VBE.
+[07:43] Let's say this voltage VBE is equal to VBE dash.
+[07:47] Now using this new value of the VBE dash, once again, we can find the value of the base
+[07:52] current as well as the collector current.
+[07:55] Let's say the new value of the collector current is equal to IC dash.
+[07:59] And once again, if we put this value of IC dash in this expression, then we will get the
+[08:03] new value of the voltage VBE.
+[08:06] Let's say it is equal to VBE double dash.
+[08:09] And in this way, we can repeat this procedure until we get the values which are very close
+[08:14] to the previous values.
+[08:16] That means we can repeat this procedure until the value of VBE and plus 1 is same as the
+[08:22] value of VBE.
+[08:23] And so, of course, it is very time consuming procedure when we do it with the pen and paper.
+[08:30] But if we follow the certain criteria, then many times using this approximation, we can
+[08:35] get the operating point which is close to the actual value.
+[08:39] For example, in the fixed bias configuration, if the voltage VBE is much greater than
+[08:44] voltage VBE and this base resistor RB is very high, then the base current and effectively
+[08:50] the collector current is almost in sensitivity to the value of VBE.
+[08:54] So, in this way, by following the certain criteria and using the approximation, we can
+[08:59] get rid of the non-linear equations.
+[09:02] But as we had seen in the earlier videos, this fixed bias configuration is very sensitive
+[09:06] to the value of beta.
+[09:09] So, for that, we had seen that the voltage divider or the collector feedback bias configuration
+[09:14] provides the better stability.
+[09:16] So, this is all about the last signal model of the BJT which can be used in the forward
+[09:21] active region.
+[09:22] So, in the upcoming videos, we will see the more general last signal model which can
+[09:28] be used in the different regions.
+[09:29] So, if you have any question or suggestion, do let me know here in the comment section
+[09:34] below.
+[09:35] And like this video, hit the like button and subscribe to the channel for most of
+[09:38] videos.

@@ -1,0 +1,75 @@
+Title: MOSFET - Common Source Amplifier | Quiz # 311
+URL: https://www.youtube.com/watch?v=umZpU0z8B-4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel AllAboode Electronics.
+[00:10] So in this question, we have been given this amplifier circuit and we have been given that
+[00:16] the two MOSFETs are operating in the saturation region and here we have been also given the
+[00:22] W by L ratio of the two MOSFETs.
+[00:25] So here we have been asked to find the voltage gain.
+[00:29] Now initially if you observe this circuit, then it appears that there is no resistor
+[00:33] in this amplifier circuit.
+[00:36] But if you see this MOSFET M1, then it is the diode connected transistor.
+[00:41] So this diode connected transistor is a technique to convert a 3 terminal device into the
+[00:46] 2 terminal device and in the AC equivalent circuit, it will appear as a resistor.
+[00:53] So to find the voltage gain, now let us replace this circuit by the AC equivalent circuit.
+[00:59] So for the AC analysis, these DC voltage sources will act as a zero and if you see the equivalent
+[01:05] circuit and it will look like this.
+[01:09] So now let us replace these two MOSFETs M1 and M2 by the small signal equivalent circuit.
+[01:15] And first of all, let us replace this MOSFET M1 by the small signal equivalent circuit.
+[01:21] So here if you observe, then the drain and the gate terminal are connected together and
+[01:26] the drain terminal is connected to the ground terminal.
+[01:30] So in the equivalent circuit, it can be represented like this.
+[01:34] Similarly, now let us see the small signal equivalent circuit of this MOSFET M2.
+[01:40] So in case of the M2, the small signal equivalent circuit will look like this.
+[01:45] So there is an input signal between the gate and the source terminal and the output is measured
+[01:50] between the drain and the source terminal.
+[01:53] And if you see the overall equivalents circuit, then it will look like this.
+[01:57] So here, the source of this MOSFET M1 is connected to the drain terminal.
+[02:03] So as I said, since the MOSFET M1 is a dead connected transistor, so it can be replaced
+[02:09] by the equivalent resistance.
+[02:11] And this resistance is the equivalent resistance which is seen from this side.
+[02:17] So to find the equivalent resistance, let us apply a test voltage to the M1.
+[02:22] And let us find the test current which is flowing through this voltage source.
+[02:27] So the ratio of this VX and IX will give us the equivalent resistance.
+[02:34] Let us call that resistance as the RX.
+[02:37] So here, this test voltage is applied between the source and the ground terminal.
+[02:43] And effectively, we can say that it is applied between the source and the gate terminal,
+[02:48] right?
+[02:49] That means here, this voltage VX is equal to minus VGS1.
+[02:55] And this current is equal to IX.
+[02:59] So if we apply the KCL at this node, then we can write current IX plus ID1 is equal to
+[03:06] 0.
+[03:08] Or we can say that current IX is equal to minus GM1 times VGS1.
+[03:16] And since the voltage VGS1 is equal to minus VX, so we can say that current IX is equal
+[03:22] to minus GM1 times minus VX.
+[03:27] That means VX divided by IX or the equivalent resistance is equal to 1 over GM1.
+[03:36] So this is the equivalent resistance which is seen from this side.
+[03:41] That means in the equivalent circuit, it can be represented like this.
+[03:46] And since this resistor is connected between the drain and the ground terminal, or effectively
+[03:51] between the drain and the source terminal, so it can be represented like this.
+[03:57] Therefore this circuit, the output voltage V out is equal to minus ID2 times 1 over GM1.
+[04:07] Or we can say that it is equal to minus GM2 times VGS2 divided by GM1.
+[04:15] And here since VGS2 is equal to the input signal, so we can say that this V out divided
+[04:22] by V in or the voltage gain is equal to minus GM2 divided by GM1.
+[04:31] That means for this amplifier circuit, the voltage gain is equal to minus GM2 divided
+[04:37] by GM1.
+[04:39] Now if you are aware, then this trans-connected GM can also be given as square root of 2 times
+[04:46] mu n times mu x times w by l times ID, where ID is the drain current.
+[04:55] And here since both transistors are connected in the series connection, so the same drain
+[05:00] current is flowing through both transistors.
+[05:03] That means here ID1 is equal to ID2 is equal to ID.
+[05:09] So for the first transistors, this GM1 can be written as square root of 2 times mu n times
+[05:17] Cu x times w by l 1 times ID.
+[05:22] Similarly, this GM2 will be equal to square root of 2 times mu n times Cu x times w by
+[05:31] l 2 times ID.
+[05:35] So if we take the ratio of this GM2 and the GM1, then this voltage gain can be given as
+[05:41] minus square root of w by l 2 divided by square root of w by l 1.
+[05:51] Now in the question, the event given that the w by l ratio of this second transistor is
+[05:57] equal to 25, while for the first transistor it is equal to 9.
+[06:02] That means the voltage gain is equal to minus of square root of 25 divided by 9.
+[06:09] Or we can say that it is equal to 5 by 3.
+[06:12] That means the voltage gain is equal to minus 1.667.
+[06:19] So this is the voltage gain of this amplifier circuit.
+[06:22] That means for the given question, the voltage gain is equal to minus 5 by 3 or it is equal
+[06:28] to minus 1.667.

@@ -1,0 +1,2154 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Clampers and Voltage Multipliers | Ankit Goyal
+URL: https://www.youtube.com/watch?v=WSv4x7WYRQY
+Source: Local Whisper (GPU Translation)
+
+[00:00] Put the dough in the mold and let it rest in the refrigerator for at least 30 minutes.
+[00:10] Put the dough in the mold and let it rest in the refrigerator for at least 30 minutes.
+[00:20] Put the dough in the mold and let it rest in the refrigerator for at least 30 minutes.
+[00:32] Good morning everyone!
+[00:34] A very good morning to all of you.
+[00:36] And welcome to Creatrix YouTube Channel.
+[00:38] My dear friends, we are live.
+[00:39] We are back again with Lakshya Batch 2.0 Analog Electronics.
+[00:44] And guys, you have covered one application of diode very well.
+[00:49] That was Clippers.
+[00:50] You saw how we clip waveforms on a certain level with the help of clippers.
+[01:02] And in yesterday's lecture, we saw two level clippers.
+[01:05] Where we understood that we can set an upper limit and a lower limit.
+[01:12] So the curve will not go above the upper limit and neither will it go below the lower limit.
+[01:18] That was the two level clipper.
+[01:20] So we saw series clippers, shunt clippers, we saw two level clippers.
+[01:25] So we have completed the application of clippers.
+[01:28] And a lot of kids were saying that our clipper lecture is over, so publish it.
+[01:33] That is why I have published the lecture of clippers.
+[01:35] But today it will be private.
+[01:37] So if you have not covered clippers, please immediately cover it.
+[01:41] Because it will not be possible to accept every kid's request.
+[01:45] There will be some kid who must have missed the lecture at all times.
+[01:49] If I think like this, then I will never be able to run a classroom-type course.
+[02:00] Because then you will go back to your comfort zone.
+[02:03] What do you think?
+[02:04] Guys, you can make the video public anytime.
+[02:06] We will request from you.
+[02:08] So okay, I will see the lecture tomorrow.
+[02:10] I will request from you that you should let it be public.
+[02:13] So please don't do this.
+[02:15] Okay, please don't do this.
+[02:17] As you can see, the message of the prince is that I am joining from today.
+[02:20] So publish the lecture at the back.
+[02:22] So there will always be a kid who is joining late, who is joining late.
+[02:29] So it is not feasible to satisfy everyone.
+[02:32] That is why you should try to read whatever I am teaching you all together.
+[02:36] Okay?
+[02:37] So today we will cover Clamper, which is another application of diode.
+[02:42] And the extension of Clamper is the voltage multiplier.
+[02:46] We are going to cover those things in this particular video.
+[02:49] So quickly, dear, like once and mark your attendance.
+[02:53] And share it to everyone that uncle sir is now live.
+[02:56] Okay, second thing.
+[02:58] The lectures of your clipper and today's Clamper.
+[03:03] I will discuss its assignment tomorrow.
+[03:05] How many hours will I discuss tomorrow?
+[03:07] It will be 5 o'clock in the evening.
+[03:09] So you see, your regular class will continue.
+[03:11] Your syllabus will continue daily.
+[03:13] And whenever the assignments of my 3-4 lectures are connected,
+[03:17] I will apply a different class and solve all your assignments.
+[03:21] This will make your practice.
+[03:23] Okay, kids?
+[03:24] So see, we will do all the work we have to do.
+[03:27] But we will clear your analog.
+[03:29] What do you want? Consistency.
+[03:31] You will not request again and again to public the lecture.
+[03:34] Public the lecture.
+[03:35] Rather than that, you attend as much content as you need.
+[03:39] As much as I need hard work.
+[03:41] I will definitely do it.
+[03:43] Okay, but you will have to come live.
+[03:46] Yes, dear, tomorrow will be class 11.30.
+[03:48] So tomorrow will be 2 sessions.
+[03:49] 11.30 and 5 o'clock in the evening.
+[03:52] Okay, let's go.
+[03:54] And see, now we are doing an amazing event.
+[03:58] It is on the 5th of September on Teacher's Day.
+[04:01] That means Monday at 6 pm.
+[04:03] That is on Academy One.
+[04:05] So here you will get a lot of major announcements.
+[04:08] You will get a lot of fun.
+[04:10] So please attend this event live at 5 pm.
+[04:15] Sorry, at 6 pm.
+[04:17] And you will enjoy a lot.
+[04:19] And this is going to be a grand scale event.
+[04:22] On this Monday, that is Teacher's Day.
+[04:24] So this Teacher's Day is going to be very special for you.
+[04:27] Okay, let's go.
+[04:29] So let's start, dear.
+[04:31] Now see, you have read the clippers, dear.
+[04:34] We call the clippers as wave shaping circuit.
+[04:38] Why wave shaping?
+[04:40] Because whatever you apply waveform, do you understand?
+[04:43] Whatever you apply waveform, sinusoidal, triangle, square.
+[04:48] So we can change its shape over there.
+[04:52] We can change its shape over there.
+[04:55] We can clip it. We can clip it from above.
+[04:58] We can clip it from below.
+[05:00] But we can modify the shape as we want.
+[05:04] Now what is this clamp?
+[05:06] There is a circuit on the clamp.
+[05:08] Which adds DC level in your waveform.
+[05:14] Or subtracts it.
+[05:16] That means it can shift the waveform vertically.
+[05:18] Or it can shift the waveform above.
+[05:20] Or it can shift below.
+[05:22] But my children, the shape will remain the same.
+[05:25] So the clamper here never changes the shape.
+[05:30] The shape remains the same because of the clamper.
+[05:34] It is just the vertical shifting of the waveform.
+[05:37] Either upwards or downwards.
+[05:39] Okay, so there are two ways of clamping.
+[05:42] Negative clamper and positive clamper.
+[05:45] Negative clamper means negative DC add.
+[05:49] Negative DC add means
+[05:52] here it means that the waveform shifts downwards.
+[05:58] Waveform shifts downwards.
+[06:03] Or you can think like this.
+[06:06] Like you read the Fourier series.
+[06:08] In the Fourier series, there is a component called C0 or A0.
+[06:12] Which is the DC value.
+[06:14] So a clamper changes the DC value.
+[06:17] It will not change the amplitude.
+[06:19] It will not change the peak to peak value.
+[06:21] The graph will either go up or down.
+[06:24] It is not amplifying.
+[06:26] Think that instead of 5 sine omega t,
+[06:28] 10 sine omega t will not be like this.
+[06:31] 5 sine omega t plus 2.
+[06:33] Or 5 sine omega t minus 2.
+[06:35] That means the shape will remain the same.
+[06:37] Its peak to peak value will remain the same.
+[06:39] But the entire graph can shift upwards or downwards.
+[06:43] And positive clamper means
+[06:46] waveform shifts upwards.
+[06:49] Waveform shifts upwards.
+[07:00] So either the waveform will shift downwards
+[07:03] or the waveform will shift upwards.
+[07:06] So we will call it a clamper.
+[07:10] Ok.
+[07:12] Now you have to ask the question of Faltu in the discussion.
+[07:16] I don't take a question by leaving studies.
+[07:21] Now the problem with this is that
+[07:23] the person named Batman on an immediate basis
+[07:26] has to know that the study material
+[07:28] that is coming in the physical copy
+[07:30] is sufficient for the gate and for the ESC.
+[07:33] And if this answer is not given in the next 2 seconds,
+[07:36] then their health can be very bad.
+[07:38] They can have stomach pain.
+[07:40] Maybe it will be better if they have stomach pain.
+[07:44] Leave studies but clear my query immediately.
+[07:47] Or else I might not be able to live with this query.
+[07:50] So let's tell.
+[07:52] There are so many problems.
+[07:53] Why does any child get sick because of us?
+[07:55] So the study material that is being sent to you in the physical copy
+[07:59] that is sufficient for the gate
+[08:01] but the ESC material is not included in it.
+[08:04] Only the gate material is included.
+[08:06] Ok.
+[08:07] And one of them is a soldier.
+[08:10] I think this is on our channel since the beginning of the channel.
+[08:13] Now I don't know what to do.
+[08:15] So there is no rule of Creatrix
+[08:18] that how long the video will be public in Creatrix.
+[08:20] Only my videos, the course of my analogue
+[08:23] will be public for 24 hours.
+[08:25] Ok.
+[08:26] And those who are late in this course
+[08:28] who are behind this course
+[08:29] there is no problem.
+[08:30] You can continue from here.
+[08:32] But every day 1 or 2 children
+[08:34] or 4 children are needed
+[08:36] who have no lectures.
+[08:38] In this way, I will keep playing public-private-public-private.
+[08:41] And the more I will public it, the more attendance it will be.
+[08:44] And the more attendance you see
+[08:47] there is a lot of demotivating attendance
+[08:50] in today's date.
+[08:51] See, yesterday there was less attendance and today there is less.
+[08:53] This means that you have stopped taking the course seriously.
+[08:56] Ok.
+[08:58] So what are the clampers?
+[09:00] Clampers are the diode circuits
+[09:02] which are used to shift the signal vertically.
+[09:05] They shift vertically, right?
+[09:08] See, you read two types of shifting in the signal system.
+[09:11] Horizontal shifting
+[09:13] in which there is delay and advance.
+[09:15] XT minus T naught, XT plus T naught.
+[09:18] But he is not talking about that.
+[09:20] He is talking about along the Y axis
+[09:22] going up or down of the graph.
+[09:24] Ok.
+[09:25] So if you are sending the graph up
+[09:27] then you are saying that the DC level is increasing.
+[09:30] It means going up means
+[09:32] increasing the average value or increasing the DC value.
+[09:35] And the negative clamper
+[09:37] means decreasing the DC level.
+[09:39] If the signal is going down
+[09:41] it means you are reducing the DC level.
+[09:45] You are reducing the DC level.
+[09:48] Ok.
+[09:49] So is this clear?
+[09:50] Yes.
+[09:51] It is called amplitude shifting in the signal.
+[09:53] Amplitude shifting means
+[09:55] when we shift along the Y axis
+[09:57] and time shifting means
+[09:59] when we shift along the X axis.
+[10:01] So there is no time shifting here.
+[10:03] Here we have amplitude shifting.
+[10:05] Ok.
+[10:06] So we will cover one by one.
+[10:08] First we will come to the negative clamper.
+[10:10] Now see how it is analysed
+[10:12] to understand the direction.
+[10:14] I will do it in a basic manner.
+[10:16] Ok.
+[10:17] So I say that
+[10:18] at
+[10:21] T equal to zero
+[10:24] assume
+[10:27] capacitor is uncharged.
+[10:30] You assume that
+[10:32] there is no charge on the capacitor.
+[10:34] You initially assume
+[10:36] that there is no charge on the capacitor.
+[10:39] Ok.
+[10:40] I will also tell you the general rule
+[10:42] of this.
+[10:43] How to solve the question of the clamper.
+[10:48] You have taken the input of sinusoidal.
+[10:52] So you are saying that
+[10:54] the capacitor is uncharged.
+[10:55] Which means the DC is zero.
+[10:58] Ok.
+[10:59] The initial voltage across the capacitor
+[11:02] is zero.
+[11:03] Ok.
+[11:04] Now the question is
+[11:06] if the initial voltage.
+[11:07] Ok.
+[11:08] If the initial voltage is zero
+[11:11] then you can initially
+[11:13] treat the capacitor as a short circuit.
+[11:16] Correct.
+[11:18] You can say that initially
+[11:21] capacitor
+[11:24] can be treated
+[11:30] as a short circuit.
+[11:33] I am just talking about T equal to zero.
+[11:42] If the capacitor is initially short-circuited
+[11:47] Listen carefully.
+[11:48] If initially you short-circuited the capacitor
+[11:52] then the entire voltage of the supply
+[11:55] will come across the diode.
+[11:58] Because if the capacitor is short-circuited
+[12:00] then the entire voltage appears
+[12:02] across the diode.
+[12:03] There is only one wire in between.
+[12:05] Is this all a miracle?
+[12:07] Now forget the capacitor.
+[12:08] Assume that there is only one wire here.
+[12:10] You can say that
+[12:12] the entire voltage of the supply
+[12:14] has come across the diode.
+[12:18] Ok.
+[12:19] You can say that.
+[12:21] Entire
+[12:24] supply voltage
+[12:27] appears across the diode.
+[12:30] Now after this
+[12:31] you have to see
+[12:33] when the diode will be on.
+[12:38] So what are you saying?
+[12:39] The voltage of the diode
+[12:41] which is V0 actually.
+[12:45] The voltage of the diode
+[12:47] VD
+[12:48] this is V0.
+[12:49] Why?
+[12:50] Because look.
+[12:51] Positive is connected to positive
+[12:52] negative is connected to negative.
+[12:54] So the voltage of the diode is V0.
+[12:56] So the voltage of the supply
+[12:58] on the diode
+[12:59] is Vm sin omega t.
+[13:02] So I say that
+[13:03] my diode will be on
+[13:07] when
+[13:09] VD is greater than 0.
+[13:13] Now VD is greater than 0
+[13:15] means
+[13:16] the positive of sin omega t.
+[13:19] Sin omega t is positive.
+[13:22] In the first and second quadrant
+[13:24] means 0 to 180 degree.
+[13:27] Correct?
+[13:30] Vm sin omega t is positive.
+[13:33] When
+[13:34] omega t lies between 0 and 180.
+[13:38] Means positive half cycle.
+[13:41] So in positive half cycle
+[13:43] the diode will be on.
+[13:45] Ok?
+[13:48] So we understood
+[13:50] that in positive half cycle
+[13:52] my diode will be on.
+[13:54] If my diode is on
+[13:56] then how will my circuit be?
+[14:02] Don't show the capacitor
+[14:04] because I am talking about 0 to 180 degree.
+[14:06] The capacitor was shorted
+[14:09] only on 0.
+[14:11] Initially, right?
+[14:13] Be careful.
+[14:14] The capacitor was shorted
+[14:16] but only t is equal to 0.
+[14:18] Now don't show the short circuit.
+[14:20] Now see that your diode is on.
+[14:23] With this logic
+[14:25] how much is your V naught? 0.
+[14:35] V i
+[14:37] V c
+[14:38] Ok?
+[14:39] Now see one thing here.
+[14:41] What will happen?
+[14:43] By turning on the diode
+[14:45] one current will get the way
+[14:47] to flow like this.
+[14:48] I.
+[14:50] So I say here
+[14:52] what will be Vc?
+[14:53] V i
+[14:54] which is Vm sin omega t
+[14:57] according to KVL.
+[15:00] So if you want a current
+[15:02] then you can write
+[15:04] CdVC by dt.
+[15:06] And this is the diode current too.
+[15:09] The direction of the current of the diode
+[15:11] is the same.
+[15:13] See
+[15:14] the direction of the current of the diode
+[15:16] will be lower than that.
+[15:18] So CdVC by dt
+[15:21] so if you do the derivative of this
+[15:23] the derivative of sin is cos
+[15:25] cos omega t.
+[15:28] Now dear, you know one thing
+[15:30] when you turn on the diode
+[15:32] or you make the diode short circuit
+[15:34] then you see the on-off of the diode
+[15:36] from its current, right?
+[15:38] When you keep the diode off
+[15:40] or keep it open
+[15:41] then you see the on-off from the voltage.
+[15:43] But when the diode is conducting
+[15:45] then you check the
+[15:47] switch on and the switch off condition
+[15:49] using the current.
+[15:51] So now I will say that
+[15:53] when will my diode be on?
+[15:55] When will my diode be on?
+[15:59] Till its current is positive
+[16:02] right?
+[16:05] i.e. cos omega t
+[16:08] greater than zero
+[16:10] then you can say 0 to 90.
+[16:12] After 90, the cost becomes negative, right?
+[16:16] i.e. after 90 degrees
+[16:19] when the cost will be negative
+[16:21] then the current will be negative.
+[16:23] So the current will try to be on the opposite side.
+[16:25] The negative current means
+[16:27] it will try to be on the opposite side.
+[16:29] It will try to go from the cathode to the anode in the diode
+[16:33] which will not accept the diode at all.
+[16:36] The diode will say that we do not allow
+[16:38] we allow only
+[16:40] the cathode from the anode.
+[16:42] If the current tries to take the wrong entry
+[16:44] then it will not get an entry in no entry
+[16:46] and the current will be zero.
+[16:48] So what do I say?
+[16:50] After
+[16:52] everyone be careful
+[16:54] after omega t equal to 90 degrees
+[16:58] cos omega t
+[17:00] is less than zero.
+[17:02] Right?
+[17:04] So we say current
+[17:07] tries to reverse
+[17:12] current tries to reverse
+[17:15] and
+[17:17] diode
+[17:19] does not allow
+[17:24] reverse current
+[17:32] and hence
+[17:36] diode turns off
+[17:39] the light
+[17:41] Everyone say the light is good
+[17:44] so the diode is off
+[17:47] Right?
+[17:49] Now on 90 degrees
+[17:51] capacitor
+[17:53] on 90 degrees
+[17:54] how much voltage will be
+[17:56] on capacitor
+[17:58] on 90 degrees
+[18:00] how much voltage will be
+[18:02] on capacitor
+[18:04] On capacitor across
+[18:06] Vm sin omega t
+[18:08] then Vc will be Vm
+[18:12] So capacitor
+[18:14] charge to
+[18:16] peak voltage
+[18:20] and this is the
+[18:22] basis of the clamper
+[18:24] The basis of the
+[18:26] basic
+[18:28] What is the basic of the clamper?
+[18:30] First of all
+[18:32] you have to judge
+[18:34] which cycle the diode will conduct
+[18:36] positive or negative
+[18:38] then in that cycle
+[18:40] the maximum possible voltage
+[18:42] will be charged to there
+[18:44] Now I will write you these steps
+[18:46] but for now understand it verbally
+[18:48] that what we have to do
+[18:50] first of all
+[18:52] if the capacitor is uncharged
+[18:54] then capacitor is uncharged on t equal to zero
+[18:56] ok?
+[18:58] listen carefully
+[19:00] if the capacitor is uncharged
+[19:02] only at that moment
+[19:04] then we make the capacitor short
+[19:06] but when on zero
+[19:08] ok?
+[19:10] after shorting the capacitor on zero
+[19:12] let's check
+[19:14] when the diode will be on
+[19:16] positive or negative cycle
+[19:18] once we know that
+[19:20] when the diode will be on
+[19:22] then in that cycle
+[19:24] the maximum voltage
+[19:26] will be charged to there
+[19:28] capacitor charges up to maximum
+[19:30] voltage in the cycle
+[19:32] in which diode is on
+[19:34] now we know
+[19:36] after this our diode
+[19:38] will be closed
+[19:40] after this our diode will be closed
+[19:42] now listen to the next story
+[19:44] now what happened?
+[19:46] when diode is closed
+[19:48] then there is no way left to the current
+[19:50] then neither capacitor
+[19:52] can be charged
+[19:54] nor can it be discharged
+[19:56] capacitor needs current
+[19:58] there is no current
+[20:00] ok?
+[20:02] so capacitor was charged up to 90 degrees
+[20:04] now
+[20:06] now the current is zero
+[20:08] means neither capacitor can be charged
+[20:10] nor can it be discharged
+[20:12] so the voltage will be fixed
+[20:14] V i
+[20:16] ok?
+[20:18] so I am saying
+[20:20] after
+[20:22] omega t equal to 90 degrees
+[20:24] current is zero
+[20:26] so I is zero
+[20:28] means
+[20:30] dVc by dt is zero
+[20:32] means
+[20:34] Vc is
+[20:36] constant
+[20:38] understood?
+[20:40] now
+[20:42] Vc constant is
+[20:44] capacitor
+[20:46] can neither charge nor discharge
+[20:50] ok?
+[20:52] now you will be patient
+[20:54] no matter how many questions you have
+[20:56] you will get the answer
+[20:58] just need to be patient
+[21:02] now what we do?
+[21:04] I am interested in V naught
+[21:06] ok I understood the working of the device
+[21:08] but what is the interest in V naught?
+[21:10] so let's put KVL
+[21:12] now if we put KVL
+[21:14] minus plus plus V i
+[21:16] plus minus minus V m
+[21:18] minus V naught
+[21:20] so
+[21:22] how much is V naught?
+[21:24] V i minus
+[21:26] V m
+[21:28] ok?
+[21:30] V m is a constant value
+[21:32] V m is a constant value
+[21:34] so you can say
+[21:36] negative
+[21:38] dc added
+[21:40] this was the work of the negative
+[21:42] clamper
+[21:44] the work of the negative clamper
+[21:46] to add negative DC voltage
+[21:48] or to shift the graph down
+[21:50] so see what is V naught?
+[21:54] V m sin omega t
+[21:58] minus V m
+[22:00] and this V naught
+[22:02] this is the voltage of the diode
+[22:04] this is the voltage of the diode
+[22:06] V d
+[22:10] now you know one thing
+[22:12] that V m sin omega t
+[22:14] can never be greater than V m
+[22:16] because sin omega t is always
+[22:18] smaller than 1 or 1
+[22:20] so you can say
+[22:22] V d is less than equal to
+[22:24] 0 for all t
+[22:26] so the diode
+[22:28] forever remains reverse bias
+[22:30] that is
+[22:32] the diode was once
+[22:34] conducted for 90 degrees
+[22:36] but now after that
+[22:38] reverse bias
+[22:40] will remain
+[22:42] so the diode will never conduct
+[22:44] because this voltage is always
+[22:46] negative
+[22:48] it will never be able to forward bias the diode
+[22:50] now if you want to see in the graphical terms
+[22:52] what happened
+[22:54] son
+[22:58] now we will see
+[23:00] in the graphical terms
+[23:14] okay
+[23:18] so see I have to make a graph of sin
+[23:20] so first I take
+[23:22] the markings of sin
+[23:24] from this type
+[23:26] on the gap of pi
+[23:28] pi 2 pi
+[23:30] 3 pi
+[23:32] now after this
+[23:34] let's take the amplitude of sin
+[23:36] see in actual question
+[23:38] in the square triangle of sin
+[23:40] anything can happen
+[23:42] now
+[23:44] pay attention
+[23:54] this is V naught
+[23:58] and this is your
+[24:00] V i
+[24:04] now see how your sine
+[24:06] graph will be which you have
+[24:08] put on the input
+[24:12] will come like this
+[24:14] this is your sine graph
+[24:16] now son
+[24:18] the peak value of this is
+[24:20] Vm
+[24:22] the peak value of this is
+[24:24] Vm and this is
+[24:26] minus Vm
+[24:28] now when we are writing
+[24:30] V naught to Vm sin
+[24:32] omega t minus Vm
+[24:34] then see this minus Vm
+[24:36] dc level has come and
+[24:38] minus 2 Vm can go
+[24:40] till Vm
+[24:42] if this Vm sin omega t
+[24:44] the value has become minus Vm
+[24:46] that is the value of sin
+[24:48] has become minus 1 then minus Vm
+[24:50] minus Vm how much can go
+[24:52] minus 2 Vm
+[24:54] so what you have to do son
+[24:56] subtract Vm from the graph of sin
+[24:58] so if you subtract
+[25:00] Vm from the graph of sin
+[25:02] then what you have to do
+[25:04] see
+[25:06] if I subtract Vm from 0
+[25:08] minus Vm
+[25:10] if I subtract Vm from Vm
+[25:12] then it will come 0
+[25:14] then if I subtract Vm from 0
+[25:16] then it will come minus Vm
+[25:18] then if I subtract
+[25:20] Vm from minus Vm
+[25:22] then it will come minus 2 Vm
+[25:24] if I subtract Vm from 0
+[25:26] then it will come minus Vm
+[25:28] if I subtract Vm from Vm
+[25:30] then what will come
+[25:32] 0
+[25:34] if I subtract Vm from 0
+[25:36] Do you understand? So if I connect these points, it will come like this. Now you can see that this graph will be completely negative only.
+[25:50] If this graph will be completely negative, then my diode can never be ON.
+[25:56] The diode will never be ON. The diode will remain permanently OFF.
+[26:01] Now do you understand? Now do you understand? Okay, it was coming to 0 till 90. Okay, let's delete the starting graph here.
+[26:11] Because my diode was conducting till 90. So V0 was coming out to be 0.
+[26:20] Right? My diode was ON till here. Right? Now it's clear.
+[26:24] My diode was ON till 90. So because of the short circuit, V0 was 0.
+[26:30] Did you understand? Did you understand what happened here?
+[26:33] So now let's go to the positive clamper. Let's understand that once.
+[26:37] Then I will write you the general procedure that how you have to analyze the clamper.
+[26:43] Now what did I do in the positive clamper? I turned the diode.
+[26:48] As you remember, what was happening in the positive and negative clippers?
+[26:51] The position of the diode, the orientation of the diode was changing.
+[26:55] So the nature of your clipper was changing. In the same way, even in the clamper,
+[27:00] when we change the position of the diode, then our clamper's nature will also change.
+[27:09] The nature of the clamper will also change. Now what are we saying here?
+[27:14] Look again. We will start from there.
+[27:45] So Vc0 is 0. Vc0 is 0. Right?
+[27:52] Now Vc0 is my 0. So if I make a circuit on 0 plus,
+[28:00] you have made the capacitor short on t equal to 0 plus.
+[28:08] Okay? Now when you shorted the capacitor, how did you get the circuit?
+[28:15] But pay attention to this. This circuit is only for an instant.
+[28:19] This circuit is not that it will always work. It is only for an instant.
+[28:28] Here it is.
+[28:33] Vi. This is Vd. The voltage across the diode has come. This is V0.
+[28:44] So now how many volts will go across the diode?
+[28:47] The polarity of the diode is opposite to the supply, so minus Vi, which is minus Vm sin omega t.
+[28:56] So we say during positive half cycle, that is when Vi is positive,
+[29:05] during positive half cycle, when your Vi is positive, then the voltage of the diode is negative,
+[29:15] so the diode is off, which means the diode is open.
+[29:23] And here V0 will be equal to your Vi.
+[29:28] Okay? Because both Vi and V0 are parallel, so V0 will be equal to Vi.
+[29:37] Now look, during negative half cycle, Vi is negative, so Vd is positive, so the diode will turn on.
+[29:54] So in positive half cycle, look, the diode will be off, but in negative half cycle, the diode will turn on.
+[30:02] So we understood the cycle from here that which cycle will conduct the diode.
+[30:06] First it was conducting in the positive cycle and now it will conduct in the negative cycle.
+[30:13] So we are saying during negative cycle, diode is on, so this is shorted.
+[30:32] Okay? Now look, in the negative cycle, I will not do that, I will change the polarity of the voltage of the input.
+[30:39] I will say that the input is sin omega t, right?
+[30:43] When the input is sin omega t, then sin omega t will be 180 to 360 negative.
+[30:49] What I need to do is the sin reverse.
+[30:52] Think, why should I reverse the sin, the value will be negative itself.
+[31:03] Here is Vi, Vi is Vm sin omega t.
+[31:11] And we are talking from 180 to omega t to 360 degrees.
+[31:18] The sin will be negative itself.
+[31:21] Okay? In 180 to 360, the sin will be negative itself.
+[31:25] Now in the negative half cycle, where will the capacitor charge?
+[31:30] Think, if this is Vm sin omega t, then if you make a current here,
+[31:38] suppose you are taking this current, then first you wrote from KVL that Vc is equal to Vi, which is Vm sin omega t.
+[31:51] Okay?
+[31:55] And now you are writing that I is CdVc by dt, which is omega Cvm cos omega t.
+[32:09] But you know, pay attention to one thing, if you reverse the diode this time, then the current of the diode will have to be like this.
+[32:16] So I took the current of the diode like this.
+[32:19] You have to know this too, how much does the diode conduct?
+[32:22] So the current of the diode is going backwards, so minus i.
+[32:27] Isn't it? The current of the diode is going backwards, so minus i.
+[32:31] So now what we will say is how much is the current of the diode?
+[32:35] Do you understand everyone?
+[32:38] Why didn't I reverse the polarity?
+[32:40] Because in this range, the sin is negative itself.
+[32:44] I don't need to reverse it.
+[32:47] Now I say that my diode on will be till the time when the id is positive.
+[32:53] Id being positive means the negative of cos omega t.
+[32:58] Now son, this is 180-360, this is 180-360, this is the third and the fourth quadrant.
+[33:08] Third and the fourth quadrant.
+[33:11] Now you are saying that the cos should be negative.
+[33:14] So which quadrant is negative in the third and fourth?
+[33:17] Third quadrant.
+[33:20] Third quadrant.
+[33:22] This means that the diode is on.
+[33:29] In the third quadrant, from 180 degrees to 270 degrees.
+[33:36] Correct?
+[33:38] At 270 degrees, the diode will be off.
+[33:46] Now how much is the Vc on 270 degrees?
+[33:52] Vm sin 270.
+[33:56] Sin 270 is minus 1, so Vc is minus Vm.
+[34:02] Vc is minus Vm.
+[34:06] Okay?
+[34:07] Now Devashish is saying that how long will the diode be connected?
+[34:12] Look Devashish, first we took out the voltage of the diode.
+[34:16] We found out that when the voltage is positive on the diode.
+[34:21] Now when the voltage is positive on the diode, the diode is switched on.
+[34:25] We switched on the diode.
+[34:27] Now we took out the current of the diode.
+[34:29] How does the current of the diode mean?
+[34:31] From anode to cathode.
+[34:35] From anode to cathode.
+[34:37] Now we said that if the diode is on, then its current should be cathode from anode.
+[34:42] That is, its current should be positive.
+[34:45] So when I took out the current of the diode, what was the condition?
+[34:48] That the current should be positive.
+[34:50] So till the current is positive, the diode will conduct.
+[34:53] If the current is positive here, then the cos will also have to be negative.
+[34:57] So that it becomes minus minus plus.
+[34:59] Cos is negative in the second and third quadrant.
+[35:02] But what is our range?
+[35:04] Third and fourth?
+[35:05] Omega t is in the third and fourth.
+[35:07] So which quadrant is the cos negative in the third and fourth?
+[35:11] That is in the third quadrant.
+[35:12] 180 to 270.
+[35:14] So we understood from here that current will be positive in the third quadrant.
+[35:19] So the diode will also conduct in the third quadrant.
+[35:22] Did you understand, Devashish?
+[35:24] When the diode is on, when will the diode be off?
+[35:28] How will you know from the current of the diode?
+[35:32] If the current of the diode is negative, then the diode will be off.
+[35:36] If the current is positive, then the diode will be on.
+[35:39] T is equal to zero and T is equal to zero plus.
+[35:42] The capacitor will be short on both because the capacitor voltage cannot change instantly.
+[35:49] So if the capacitor voltage was zero on zero, then zero will also come on zero.
+[35:54] Now the value of Vc has come.
+[35:56] Now we say that when our diode is off at 270 degrees.
+[36:03] Okay?
+[36:06] Then how did our circuit turn out?
+[36:09] It is minus Vm on Vc, so pay attention.
+[36:12] Or do one thing, you should not show this diode open.
+[36:27] Okay?
+[36:30] This is V0 because the diode was put from the bottom to the top.
+[36:34] This is Vd.
+[36:35] This is your Vi.
+[36:39] Now look, there is minus Vm on Vc.
+[36:42] Minus means polarity is wrong.
+[36:45] Either write minus Vm with the same polarity or write Vm with the same polarity.
+[36:52] It is the same thing.
+[36:54] Now you see that you will put KVL here.
+[36:58] Okay?
+[37:00] So Vi plus Vm minus V0 is zero.
+[37:08] So V0 came.
+[37:10] Vi plus Vm.
+[37:13] So understand this here, positive DC added.
+[37:17] That is why it happened on positive clamp.
+[37:20] That is why it happened on positive clamp.
+[37:23] And the voltage of the diode, the polarity of the diode and output is wrong.
+[37:27] So that is minus Vi minus Vm minus Vm sin omega t.
+[37:38] Minus Vm.
+[37:40] This will always be less than equal to zero.
+[37:43] So the diode will remain permanently off.
+[37:46] The diode will remain permanently off.
+[37:48] Yes, the third quadrant will be off as soon as it is finished.
+[37:52] After that, life will never be on again.
+[37:56] Okay?
+[37:57] And the voltage of the capacitor will be fixed.
+[38:00] Why?
+[38:01] You will get this voltage fixed because
+[38:05] current is zero.
+[38:07] Capacitor cannot charge or discharge.
+[38:12] Tell me, is it clear to everyone here?
+[38:17] If anyone has any doubt, then speak quickly.
+[38:21] If no one has any sympathy with this matter.
+[38:26] It is clear that the capacitor cannot charge or discharge here.
+[38:31] Now, let's talk about waveforms as we discussed earlier.
+[39:01] Look, Pi, 2 Pi, 3 Pi.
+[39:14] Then this is Vm and this is your minus Vm.
+[39:19] Then here, one is Vm.
+[39:22] You will get the level of Vm.
+[39:25] And one is at the level of 2 Vm.
+[39:29] Okay?
+[39:32] So this is your V0 graph here.
+[39:38] The VI graph will come here.
+[39:43] Okay?
+[39:44] Now look, here the supply is your sinusoidal.
+[39:49] And as I am telling you, the supply can be anything in the exam.
+[39:53] Often, we ask for a rectangular one with two levels like 20 and minus 5.
+[39:58] We will ask for something like that.
+[39:59] Now look, your output is VI plus Vm.
+[40:03] But look, in the first half cycle, in the first positive cycle,
+[40:07] V0 was equal to VI in the first positive cycle.
+[40:11] Diode was off from 0 to 180.
+[40:15] So your V0 was equal to VI.
+[40:18] V0 was equal to VI.
+[40:20] Here it is.
+[40:22] It came equal to VI.
+[40:24] Then, dear, from 180 to 270.
+[40:29] From 180 to 270.
+[40:31] Diode was on.
+[40:33] When the diode was on, then V0 came.
+[40:36] So from 180 to 270.
+[40:39] Zero came.
+[40:41] Now after this, after this, it came.
+[40:45] VI plus Vm.
+[40:47] Input plus Vm.
+[40:49] Now minus Vm plus Vm.
+[40:51] Zero comes.
+[40:53] Zero plus Vm.
+[40:55] Vm comes.
+[40:56] Vm plus Vm.
+[40:58] Two Vm comes.
+[40:59] Zero plus Vm.
+[41:01] Vm comes.
+[41:03] So now it will come like this.
+[41:05] Like this.
+[41:06] Do you understand?
+[41:07] The next graph will be like this.
+[41:09] So in the initial cycle, V0 was equal to VI.
+[41:13] Then from 180 to 270, the diode was on.
+[41:16] So your V0 was equal to zero.
+[41:19] Did you shine?
+[41:22] Now quickly write any doubt in the chat.
+[41:25] I am telling you.
+[41:27] Here V0 came VI.
+[41:29] And then from here,
+[41:31] V0 came VI plus Vm.
+[41:35] So the diode, if you see,
+[41:38] It conducts once in the whole.
+[41:40] Not that it will do it again and again in every cycle.
+[41:42] Even if it becomes 1000 cycles, but the diode comes once.
+[41:47] If you consider the negative half cycle,
+[41:50] If you consider the input, then it is the negative half cycle.
+[41:52] The diode was on in the half cycle of this negative half cycle.
+[41:56] And the diode was off in the half cycle of the negative half.
+[42:02] Shubham, I am coming to that right now.
+[42:04] What will happen if the resistor is on?
+[42:07] In the negative clamp.
+[42:11] In the negative clamp.
+[42:13] Look, when the diode is off,
+[42:15] The diode is off in the negative half cycle.
+[42:17] That's why it is functioning on the clamp.
+[42:20] When did this clamp start?
+[42:22] When the diode is off?
+[42:24] Till here, your diode was on.
+[42:26] So no clamping has been seen in the V0.
+[42:28] The clamping has started from here.
+[42:30] When the diode is off.
+[42:32] And you are saying that you will not consider it.
+[42:36] Here V0 came VI minus Vm.
+[42:40] After the capacitor is charged.
+[42:42] After the capacitor is charged, the clamping happens.
+[42:44] And after the capacitor is charged, the diode is off.
+[42:49] Okay?
+[42:52] Dear, look what you have to do.
+[42:54] I will also come to this.
+[42:58] Now look, I will tell you the steps.
+[43:03] Steps.
+[43:05] To solve.
+[43:08] Clampers.
+[43:12] Okay?
+[43:13] Now look.
+[43:16] What to do first?
+[43:19] Short capacitor.
+[43:25] And derive.
+[43:31] Vd, diode voltage.
+[43:36] Then check.
+[43:39] In which cycle.
+[43:44] Vd is positive.
+[43:49] And diode is on.
+[43:51] Is the diode on in the positive cycle or is it on in the negative cycle?
+[43:57] Third.
+[43:59] Charge capacitor.
+[44:07] To maximum value.
+[44:14] Off that cycle.
+[44:21] Using KVL.
+[44:23] Can you get KVL out of the voltage of the capacitor?
+[44:26] And during this time, your diode will be short.
+[44:31] Your diode will be short when you are putting KVL.
+[44:34] Then next.
+[44:37] Open the diode after this.
+[44:43] Apply KVL.
+[44:48] And find V0.
+[44:51] Then take out V0.
+[44:53] As we saw in 1, the capacitor was charged to Vm.
+[44:56] In 1, we saw that it was charged to minus Vm.
+[44:59] So find out where the capacitor is charging.
+[45:02] And then permanently stop the diode.
+[45:04] And find out how much voltage is going on V0.
+[45:08] Is it clear now?
+[45:11] Is it clear? Tell me.
+[45:13] Tell me quickly.
+[45:19] Tell me.
+[45:22] Rudresh, my brother, look.
+[45:25] You have talked very sweetly.
+[45:28] That when we work hard, you should get a rank in return.
+[45:32] But I would say that the first goal is more important than the easy objective or the first goal.
+[45:44] Because look, after getting a rank in today's time,
+[45:51] no one knows what kind of an institute it is.
+[45:56] And I will not say that something is bad, something is this.
+[46:00] There is no language on it.
+[46:02] That is the harsh reality.
+[46:04] So take attendance, we are happy in that.
+[46:07] If you get a rank, if you give us credit, it will be good.
+[46:10] If you don't give it, it won't be bad.
+[46:12] But if you don't get attendance, maybe you won't be able to study.
+[46:16] Sir, please public the old video for two days.
+[46:18] He has left me.
+[46:19] Nitin, tell me one thing.
+[46:21] If you had gone to an offline class, if you had missed the class,
+[46:24] then tell the teacher that if you study, then the next day someone else comes.
+[46:27] My child has left me.
+[46:28] So try to understand it the same way.
+[46:30] Now son, somewhere in free content, there will be some limitation.
+[46:34] You have to private it to get attendance from people.
+[46:37] Don't say that sir, it will be public, we will also come.
+[46:40] I have been watching this thing for three years that sir, we will come to study.
+[46:43] And this never happens.
+[46:45] It feels good to say big things in promises.
+[46:47] But practically this never happens.
+[46:49] It hasn't happened for three years.
+[46:51] Right?
+[46:52] Children are children.
+[46:53] Now it is not that this time the children have come down from a different top.
+[46:56] That is different.
+[46:57] They are the same children.
+[46:58] It is the same consistency.
+[46:59] It is the same level of motivation.
+[47:01] So this consistency will come.
+[47:03] Now if you are getting an offline value even in free content,
+[47:05] instead of getting more than offline,
+[47:07] even if one minute is left in offline,
+[47:10] I am still giving you a video for 24 hours.
+[47:12] Now even after that, if you are not able to do it,
+[47:14] that says a lot that how low is your consistency level.
+[47:19] That 24 hours video was read and we could not even see it.
+[47:22] So this is our level of seriousness towards gate exam.
+[47:27] So if you are so less serious about any competitive exam,
+[47:31] then it will be difficult to get it out.
+[47:35] Now look, what a child was also asking,
+[47:37] I am coming to the doubt that if across the load or across the diode,
+[47:43] the resistance is required,
+[47:45] then our capacitor can be discharged.
+[47:48] What did we say, dear?
+[47:50] When our diode is open,
+[47:53] when our diode is open,
+[47:55] then at that time the capacitor could neither be charged nor discharged,
+[48:00] because the current was zero in the open circuit.
+[48:03] But my children, despite the diode being on,
+[48:06] if I put a resistance on the load,
+[48:09] then my diode can be discharged despite being off.
+[48:15] Sir, why are you putting resistance?
+[48:17] Dear, think about the purpose of the clamper,
+[48:20] if you do not put a load in it.
+[48:22] That means you will run a device from the clamper.
+[48:25] You must be connecting the clamper somewhere.
+[48:28] Do you understand?
+[48:29] You must be connecting the clamper somewhere.
+[48:31] You must be connecting it from any circuit,
+[48:33] from any load.
+[48:35] So dear, what will be our load?
+[48:38] RL.
+[48:39] Because if we do not put any load,
+[48:42] then what will we do in the first place by making a circuit?
+[48:46] Okay?
+[48:47] What will we do by making a circuit?
+[48:50] Do you understand?
+[48:52] So that is why the waste is the circuit,
+[48:54] if it is not loaded across the circuit.
+[48:56] So let's talk in a practical situation,
+[48:58] then the load will come.
+[49:00] The load has to come.
+[49:02] So when the load comes,
+[49:04] then let's talk about the practical clamper.
+[49:06] Now let's talk about the discharge of the capacitor.
+[49:10] Shubh Ranshu, dear.
+[49:11] Now Shubh Ranshu is saying that
+[49:13] he heard the other teacher saying that
+[49:15] he does not know the rank from YouTube.
+[49:17] So dear, do one thing.
+[49:18] How many children go to the top of the stock
+[49:20] who have brought the rank from this channel?
+[49:23] Now either they are crazy,
+[49:25] because they have brought the rank from this channel.
+[49:28] Now how many children are there in your class chat
+[49:31] who come and say,
+[49:32] Sir, I used to read from YouTube.
+[49:33] Today I have been selected in this exam.
+[49:35] Then they are also lying.
+[49:37] Okay?
+[49:38] Now listen carefully.
+[49:41] Now what happens here is,
+[49:43] if the input voltage suddenly changes.
+[49:45] Suppose you have put a square wave
+[49:47] instead of sign on the input.
+[49:49] There is an edge in the square wave.
+[49:51] So if the input voltage suddenly changes, dear,
+[49:54] then your capacitor will be charged quickly.
+[49:57] The capacitor will also be charged quickly.
+[50:00] And if the capacitor is charged quickly,
+[50:03] then the current will be very high
+[50:05] according to the CDV by DT.
+[50:08] So to avoid this high current,
+[50:12] or say the transient of the capacitor.
+[50:15] Transient means when the capacitor is charged.
+[50:18] To improve that transient,
+[50:21] we can connect the resistance at the output.
+[50:24] And whose resistance will it work?
+[50:27] The resistance acts as a load.
+[50:31] Resistance connected
+[50:35] acts as a load.
+[50:47] Okay?
+[50:48] So the resistance will act like a load here.
+[50:52] Now look at this.
+[50:53] I have connected a resistance here.
+[50:55] This is an example of a negative clamper.
+[50:57] This is an example of a positive clamper.
+[50:59] Both your diode is connected
+[51:01] in the opposite configuration.
+[51:04] Now you understand, dear,
+[51:06] when your diode is forward biasing.
+[51:09] I am saying,
+[51:11] look at the negative clamper now.
+[51:13] During
+[51:15] charging of capacitor.
+[51:19] You will understand.
+[51:20] During charging of capacitor.
+[51:27] The diode will be on.
+[51:30] Only then the capacitor is charging
+[51:32] and the current is flowing.
+[51:34] So the diode's resistance
+[51:37] is RF in the state,
+[51:39] forward resistance.
+[51:41] Which is small.
+[51:43] So RF is small.
+[51:47] Now when RF is small, dear,
+[51:50] then R-equivalent
+[51:52] which will be diode resistance
+[51:55] in parallel with load resistance.
+[51:58] This will also be small.
+[52:00] Okay?
+[52:02] So the time constant
+[52:04] R-equivalent into C
+[52:06] will come here.
+[52:08] Therefore capacitor
+[52:10] This is also small.
+[52:12] Because the resistance is small.
+[52:14] The charge is fast.
+[52:17] So the capacitor will charge quickly.
+[52:20] It will not be instant, obviously.
+[52:22] I mean, even after putting the square wave,
+[52:25] the capacitor cannot be charged immediately.
+[52:29] Because the voltage of the immediate capacitor
+[52:31] cannot be changed.
+[52:33] So obviously the capacitor is charging fast.
+[52:36] But, but, my children,
+[52:38] instantaneous charging cannot be given.
+[52:40] In a practical situation,
+[52:42] the capacitor can never be charged
+[52:44] instantly.
+[52:46] Now look at the next case.
+[52:48] During
+[52:52] diode is
+[52:54] off. When the diode is off,
+[52:56] during the off state of the diode,
+[52:58] the resistance of the diode
+[53:00] is
+[53:02] R-R.
+[53:04] Reverse resistance.
+[53:06] You know, in mega ohm,
+[53:08] R-equivalent
+[53:10] is
+[53:12] R-R
+[53:14] parallel R.
+[53:16] Which is large.
+[53:18] So
+[53:20] tau
+[53:22] R-equivalent into C
+[53:24] is also large.
+[53:26] This means
+[53:28] capacitor
+[53:30] discharges
+[53:32] slowly.
+[53:34] If you look at the clamp, my brother,
+[53:36] listen carefully.
+[53:38] The capacitor never discharges, right?
+[53:40] In the ideal clamp,
+[53:42] what did you say?
+[53:44] When the diode is off,
+[53:46] the current is zero,
+[53:48] the capacitor will never be discharged.
+[53:50] We will understand.
+[53:52] And if the capacitor
+[53:54] will never be discharged,
+[53:56] that is the ideal situation.
+[53:58] So I will also want in practical
+[54:00] that the capacitor
+[54:02] is at least discharged.
+[54:04] Because the voltage of the capacitor
+[54:06] is Vm.
+[54:08] That is the level of clamping.
+[54:10] You shifted upward and downward from Vm.
+[54:12] That is, how much
+[54:14] the waveform will shift.
+[54:16] That depends on the voltage of the capacitor.
+[54:18] And if you get a constant
+[54:20] shift while wanting,
+[54:22] then you need a voltage constant of the capacitor.
+[54:24] That is, you want
+[54:26] the capacitor not to be discharged.
+[54:28] Do you understand?
+[54:30] It is desirable that the capacitor
+[54:32] is not discharged.
+[54:34] If the capacitor is discharged,
+[54:36] then the DC level that is
+[54:38] subtracted in your signal
+[54:40] will change the voltage of the capacitor.
+[54:42] So the signal
+[54:44] cannot be shifted properly
+[54:46] upward or downward.
+[54:48] That is why we want
+[54:50] the discharging to be very slow.
+[54:52] The discharging
+[54:54] should be very slow.
+[54:56] So what do we say?
+[54:58] We say
+[55:02] to make
+[55:06] discharge
+[55:12] slow
+[55:14] Tau must be large.
+[55:18] We say Tau
+[55:20] must be greater than 10 times T.
+[55:22] What is T?
+[55:24] T is the time period.
+[55:26] The time period of the supply
+[55:28] that you are applying is T.
+[55:30] That is, it repeats after every T time.
+[55:32] It repeats after every
+[55:34] T time.
+[55:36] So you are saying that
+[55:38] Tau is more than 10 times
+[55:40] of the time period.
+[55:42] In discharging,
+[55:44] leave one time period, it will take
+[55:46] 10 cycles.
+[55:48] And before this, 10 cycles are complete.
+[55:50] The capacitor will be charged in the second cycle.
+[55:52] You are saying that if you
+[55:54] leave it, it will be discharged in 10 cycles.
+[55:56] I am saying that it will be discharged in 10 cycles.
+[55:58] Before this, when the second cycle
+[56:00] starts again,
+[56:02] the capacitor will be charged again.
+[56:04] So the discharging of the capacitor
+[56:06] will not be equal to this logic.
+[56:08] Do you understand?
+[56:10] So listen carefully to the analog
+[56:12] in any circuit of analog.
+[56:14] If the capacitor is connected
+[56:16] in any circuit of analog,
+[56:18] then the comparison of Tau and time
+[56:20] period is written there.
+[56:22] If it is written there that Tau
+[56:24] is much much greater than time period,
+[56:26] then you understand
+[56:28] the charging of the capacitor
+[56:30] or the discharging is going to be very slow.
+[56:32] It is usually related to discharging.
+[56:34] Discharging will be very slow.
+[56:36] Your capacitor voltage
+[56:38] can be considered almost constant.
+[56:40] And if Tau is
+[56:42] much much less than T,
+[56:44] that is, the capacitor will
+[56:46] quickly discharge and discharge.
+[56:48] Because the time constant is very small.
+[56:50] So this can happen in many chapters of analog.
+[56:52] Even in opamp.
+[56:54] Where Tau and time period
+[56:56] are given,
+[56:58] if Tau is very big,
+[57:00] then the capacitor will be very slowly discharged.
+[57:02] The capacitor voltage
+[57:04] will almost remain constant.
+[57:06] If Tau is very very small,
+[57:08] the capacitor charges and discharges
+[57:10] rapidly.
+[57:12] Do you remember this?
+[57:14] If Tau
+[57:16] is equal to RC,
+[57:18] discharges
+[57:20] then the capacitor
+[57:22] discharges.
+[57:24] Capacitor discharges
+[57:26] very slowly.
+[57:28] Very slowly.
+[57:34] VC is almost
+[57:36] constant.
+[57:40] When we read the rectifier,
+[57:42] the next topic is the
+[57:44] filter in the rectifier.
+[57:46] See, Tau should be large
+[57:48] so that the capacitor is charged once.
+[57:50] So discharging is almost
+[57:52] a constant voltage.
+[57:54] And if Tau is equal
+[57:56] to RC is small,
+[58:00] then the capacitor
+[58:02] charges
+[58:04] and discharges rapidly.
+[58:10] What is happening in the practical
+[58:12] clamper?
+[58:16] See,
+[58:18] the practical clamper
+[58:20] has less chance.
+[58:22] But we should know
+[58:24] what is happening in the practical clamper.
+[58:26] So we want that the
+[58:28] time constant should be small
+[58:30] so that the capacitor charges
+[58:32] quickly and the time
+[58:34] constant should be large
+[58:36] so that the capacitor retains
+[58:38] its voltage and
+[58:40] the capacitor does not discharge.
+[58:42] Do you understand? So Tau should
+[58:44] be small and
+[58:46] during discharging
+[58:48] Tau should be large.
+[58:50] Tau should be large.
+[58:52] Just
+[58:54] just a minute.
+[58:56] Now,
+[58:58] usually
+[59:00] the value of R
+[59:04] was load resistance.
+[59:08] R is taken as
+[59:14] the geometric
+[59:16] mean of the forward and reverse
+[59:18] resistance of the diode.
+[59:20] That is, its value
+[59:22] is greater than RF,
+[59:24] is smaller than RR,
+[59:26] is somewhere between the two.
+[59:28] I will explain to you from the graph
+[59:30] what we want to do here.
+[59:36] See,
+[59:38] we understand from a graph.
+[59:44] Suppose
+[59:48] I put a square wave.
+[59:54] Okay?
+[60:14] Okay?
+[60:38] I put a square wave like this.
+[60:40] This is my input voltage.
+[60:44] I take it on a positive clamp.
+[60:46] Okay?
+[60:48] Or on a negative clamp.
+[60:50] Let's take it on a negative clamp
+[60:52] where the diode
+[60:54] is forward bias in the positive cycle.
+[60:56] Whose example am I taking,
+[60:58] son?
+[61:00] Or you are like a limit.
+[61:02] Plus, we run the class
+[61:04] for three hours a day. The child is reading.
+[61:06] He also gets a rank.
+[61:08] You start doing this after an hour on YouTube.
+[61:10] What happened?
+[61:12] The exam of the gate will be written in three hours.
+[61:14] And in the class of one and a half hours,
+[61:16] your condition gets spoiled.
+[61:18] How will you do it, brother?
+[61:22] Now look at the negative clamp.
+[61:24] What do I say?
+[61:26] That the diode
+[61:28] is my forward bias.
+[61:30] During
+[61:32] positive cycle.
+[61:34] Okay?
+[61:36] Okay?
+[61:38] Okay?
+[61:40] Okay?
+[61:42] And my capacitor starts charging.
+[61:44] Okay?
+[61:46] So, in the practical
+[61:48] clamper, what do we say?
+[61:50] That the capacitor
+[61:52] will charge
+[61:54] quickly.
+[61:56] Take a little less time
+[61:58] and see.
+[62:00] Like this.
+[62:02] The capacitor
+[62:04] quickly charged.
+[62:06] Now you know
+[62:08] as the capacitor is fully charged,
+[62:10] the diode will be closed.
+[62:12] Now when the diode is closed,
+[62:14] the capacitor will be discharged.
+[62:16] But the discharging of the capacitor
+[62:18] should be so less that
+[62:20] its value should be constant.
+[62:22] There is very little discharging.
+[62:24] Do you see?
+[62:26] So the discharging is very slow.
+[62:28] Now as soon as the positive cycle comes again,
+[62:30] the capacitor will be fully charged.
+[62:32] Then slowly discharging.
+[62:34] After the diode is closed.
+[62:36] Like this. Do you understand?
+[62:38] So what is happening here, son?
+[62:44] First the diode was on here.
+[62:50] Then the diode was off here.
+[62:54] Then the diode was on again.
+[62:56] This is our desire.
+[62:58] This is what we want to achieve
+[63:00] in a practical clamp.
+[63:02] So here my diode
+[63:04] is on.
+[63:06] So what do I see?
+[63:08] Fast charging.
+[63:16] From here to here, my diode
+[63:18] is off.
+[63:20] And I am seeing in the voltage of the capacitor
+[63:22] that the change is getting less and less.
+[63:24] So slow discharging.
+[63:26] Slow discharging.
+[63:30] And I don't have any problem.
+[63:32] I can do one class for an hour.
+[63:34] What is in this?
+[63:36] I am also comfortable.
+[63:38] And these days I am tired.
+[63:40] I am studying for 6 and a half hours daily.
+[63:42] So it is good for me too.
+[63:44] If the class of YouTube will be done in an hour.
+[63:46] So I will also be free from 12.25 to 1.
+[63:48] You also chill and we also chill.
+[63:50] So look, this is our desire.
+[63:52] This is what we want to achieve.
+[63:54] So at the time of charging,
+[63:56] we want the TOW low.
+[63:58] We want it small.
+[64:00] And at the time of discharging,
+[64:02] we want the TOW large.
+[64:06] Okay?
+[64:08] So we want to achieve such a conduction.
+[64:12] And look, this time this course
+[64:14] which is made for 2 hours.
+[64:16] There is only one reason for that.
+[64:18] If you see the control.
+[64:20] I started the control somewhere in April.
+[64:22] I started the control.
+[64:24] Usually this happens on YouTube.
+[64:26] Meaning 4 months and so on.
+[64:28] One course goes on.
+[64:30] And what happens on plus?
+[64:32] One course goes on for 40 days a month.
+[64:34] So that the syllabus of those people is on time.
+[64:36] So I thought this time I will increase the duration of the class of YouTube.
+[64:38] Because obviously the end of August is coming.
+[64:40] And you have to make a comprehensive subject.
+[64:42] The comprehensive subject
+[64:44] will take 100 hours to make.
+[64:46] If you study for an hour.
+[64:48] Then it will take 100 days.
+[64:50] 100 days means
+[64:52] it will take 4 months to count 120 days.
+[64:54] Because Saturday, Sunday,
+[64:56] sometimes it will be off on Sunday.
+[64:58] And sometimes it can be off on any other day.
+[65:00] It will take 4 months.
+[65:02] That is, September, October, November, December.
+[65:04] If the comprehensive subject is getting over till December.
+[65:06] That too like analog.
+[65:08] Obviously the public won't be able to take it till December.
+[65:10] So if we take this on 4 to 2 months.
+[65:12] How do we take it on 2 months?
+[65:14] By doing double duration.
+[65:16] So then,
+[65:18] I don't have any benefit in this.
+[65:20] Let me tell you the truth.
+[65:22] No one has ever told me
+[65:24] that you should study for 2 hours.
+[65:26] In fact, the academy has said
+[65:28] that you should study for 1 hour.
+[65:30] Now I have said that I will take an analog for 2 hours.
+[65:32] I have to quickly take care of the syllabus of the students.
+[65:34] Now you are saying that
+[65:36] no sir, 1 hour is enough.
+[65:38] So there are so many constraints.
+[65:40] So many things.
+[65:42] What do you want to do?
+[65:44] You have to study.
+[65:46] After that, you should be like this.
+[65:48] You should not be like this.
+[65:50] You know, this is the only difference.
+[65:52] There is a ranker and an average student.
+[65:54] A ranker,
+[65:56] from where you get knowledge, from where you get resources.
+[65:58] He takes the baton.
+[66:00] He uses it and takes out his best result.
+[66:02] And the children who remain as an average student.
+[66:04] I am not saying that from the brain.
+[66:06] An average student from his attitude.
+[66:08] So what do those children do?
+[66:10] It would have been better if it had been like this.
+[66:12] Look, there is no end to anything.
+[66:14] It would have been better if it had been like this.
+[66:16] It would have been better if it had been like this.
+[66:18] What do we think?
+[66:20] We modify the circumstances according to ourselves.
+[66:22] Rather than we think
+[66:24] that how can we overcome the circumstances?
+[66:26] How can we make an advantage of a drawback?
+[66:28] How can we make an advantage of a drawback?
+[66:30] Right?
+[66:32] So always keep this in mind.
+[66:34] Never be an average student.
+[66:36] Who has less knowledge.
+[66:38] Who has less brains.
+[66:40] Who is an average student.
+[66:42] Who has made an attitude loser.
+[66:44] That I will get like this.
+[66:46] I will get like this.
+[66:48] The child only demands.
+[66:50] He never uses it when the demand is fulfilled.
+[66:52] And on the top.
+[66:54] The child keeps the attitude.
+[66:56] As soon as he gets the support of a 3k.
+[66:58] I will be ready.
+[67:00] Do you understand?
+[67:02] So it is like this.
+[67:04] Now let's come to the voltage doubler.
+[67:06] Look, this is the application of the clamper.
+[67:08] This is the application of the clamper.
+[67:10] This is the application of the clamper.
+[67:12] This is the application of the clamper.
+[67:14] Now how to analyze this?
+[67:16] See again, consider the capacitor as an uncharge.
+[67:18] This voltage is given to you.
+[67:20] This is vc1.
+[67:22] This is capacitor 1.
+[67:24] This is vc2.
+[67:26] See this. Let's analyze it in two stages.
+[67:28] First, see the circuit of d1.
+[67:30] See the circuit of d1.
+[67:32] First,
+[67:34] see this circuit.
+[67:36] This part.
+[67:38] This part.
+[67:42] That's all.
+[67:44] That is d1.
+[67:46] Forget all d2.
+[67:48] So what will you say?
+[67:50] See again, we will start with such a basic.
+[67:52] Initially,
+[67:56] c1
+[67:58] is uncharged.
+[68:02] So what will you do?
+[68:04] What will you do, son?
+[68:06] You will short c1.
+[68:08] Okay?
+[68:10] So how much voltage will the across of diode 1 go?
+[68:14] Vm sin omega t.
+[68:18] And
+[68:20] this voltage will be positive.
+[68:26] During
+[68:28] positive half cycle.
+[68:34] So d1 will be on.
+[68:38] Okay?
+[68:40] So in the positive half cycle,
+[68:42] d1 is on.
+[68:44] Son, in the positive half cycle,
+[68:46] d1 is on.
+[68:48] Sir, I make hand to notes.
+[68:52] Due to fear of private lecture.
+[68:54] Hand to notes.
+[68:56] What is hand to notes?
+[68:58] And the second thing is that the lecture is private.
+[69:00] Or public notes, I am giving you separately
+[69:02] from all the lectures.
+[69:04] What to take from its private?
+[69:06] Okay?
+[69:10] Now see, if d1 is on in my positive half cycle,
+[69:14] then what will I say?
+[69:16] That the capacitor will start charging in the positive half cycle.
+[69:18] And do you know the capacitor?
+[69:20] How much will it charge?
+[69:22] That the capacitor will charge to maximum.
+[69:24] So d1 is on.
+[69:28] During positive half cycle.
+[69:32] Which means,
+[69:34] c1 charges
+[69:40] during
+[69:42] positive
+[69:44] cycle.
+[69:46] And do you know how much
+[69:48] the capacitor charges to maximum?
+[69:50] Maximum will charge.
+[69:52] Okay?
+[69:54] As soon as the capacitor
+[69:56] charges to maximum,
+[69:58] it will charge to maximum.
+[70:00] And as soon as the capacitor
+[70:02] charges to maximum,
+[70:04] you know the diode will be off.
+[70:06] Correct?
+[70:08] As soon as
+[70:10] vc1
+[70:12] is vm,
+[70:14] d1 turns
+[70:16] off.
+[70:18] Very good.
+[70:20] Now dear, if d1 is off,
+[70:22] then you can take out the voltage of d1.
+[70:24] Look at the circuit.
+[70:30] Now
+[70:36] do not go to the next circuit.
+[70:38] This is vi.
+[70:40] This is charged to vm.
+[70:42] I need the voltage of
+[70:44] diode.
+[70:46] Vd1.
+[70:48] So if you put
+[70:50] kvl here,
+[70:54] then vd1
+[70:56] will come out to be
+[70:58] minus vm.
+[71:02] vm sin omega t
+[71:06] minus vm.
+[71:08] Okay?
+[71:10] It will come out like this.
+[71:12] vm sin omega t minus vm.
+[71:14] Now look at the next circuit.
+[71:16] Now if you
+[71:18] look at the next circuit,
+[71:20] dear,
+[71:22] how did the capacitor go down?
+[71:24] The next circuit
+[71:26] is something like this.
+[71:38] Here is vd1.
+[71:42] Okay?
+[71:44] Now you will say
+[71:46] initially, initially
+[71:48] c2 is your
+[71:50] what is it? Initially c2
+[71:52] is your uncharge.
+[71:56] Okay?
+[72:06] And
+[72:10] with this logic
+[72:12] vd2
+[72:14] is minus vd1.
+[72:16] Because
+[72:18] if c2 is uncharged,
+[72:20] then you short it.
+[72:22] The voltage will be zero.
+[72:24] Now dear, vd2
+[72:26] is minus vd1.
+[72:28] Why is it minus vd1?
+[72:30] Because it is connecting from plus to minus.
+[72:32] It is connecting from minus to plus.
+[72:34] So if vd2 is minus vd1,
+[72:36] then vm minus
+[72:38] vm sin omega t.
+[72:40] Now think one thing.
+[72:42] vm sin omega t
+[72:44] will always be smaller than vm.
+[72:46] vm sin omega t
+[72:48] will always be smaller than vm.
+[72:50] So this is
+[72:52] greater than zero.
+[72:54] So vd2 is on.
+[72:56] Is vd2 on?
+[72:58] Understood?
+[73:00] Did you understand?
+[73:02] vm sin omega t is always smaller than vm.
+[73:04] So vd2 is always positive.
+[73:06] Means vd2 is
+[73:08] on.
+[73:10] Now as vd2 is on,
+[73:12] c2 charges
+[73:18] to
+[73:20] maximum value
+[73:24] of vd1.
+[73:26] Think like this.
+[73:28] If d2 is on,
+[73:32] then you shorted it.
+[73:46] So vc2
+[73:48] is minus vd1.
+[73:52] So vc2
+[73:54] comes out to be 2 vm.
+[73:58] Because here you see one thing.
+[74:02] Here you see one thing.
+[74:14] Let me talk about vd1 first.
+[74:18] Or do one thing.
+[74:30] Let me show you the whole graph.
+[74:48] Now see.
+[74:50] First of all,
+[74:52] who was charged with supply?
+[74:54] c1 was charged through d1.
+[74:56] Your c1 was charged
+[74:58] through d1.
+[75:08] Look at this.
+[75:10] I am making your supply voltage first.
+[75:18] Now
+[75:28] this is the supply voltage.
+[75:30] Now we know
+[75:32] that our diode
+[75:34] conducted in a positive cycle.
+[75:36] Our diode
+[75:38] conducted in a positive cycle.
+[75:40] And our c1
+[75:42] was charged.
+[75:44] So if I talk about vc1,
+[75:46] I will talk about it.
+[75:48] So vc1
+[75:50] is charged to 90 degrees.
+[75:54] Here it is 90 degrees.
+[75:58] So my c1
+[76:00] is charged
+[76:02] in a good way.
+[76:06] Now after this
+[76:08] the voltage of c1 is constant.
+[76:10] It is going to be constant.
+[76:14] It will be fixed like this.
+[76:16] It will not move.
+[76:18] c1 is charged to 90 degrees.
+[76:20] Do you understand?
+[76:22] c1 is charged to 90 degrees.
+[76:24] Is this clear?
+[76:28] Sir, it is not best to plot this graph.
+[76:32] I have not plotted anything yet.
+[76:34] I just said that you put
+[76:36] sinusoidal input.
+[76:38] And you said that
+[76:40] your d1 conducts in a positive cycle.
+[76:42] This is what you said.
+[76:44] d1 on during a positive cycle.
+[76:46] So the capacitor is charged.
+[76:48] How much is charged?
+[76:50] How much is charged to vm?
+[76:52] So the capacitor is charged in a positive cycle.
+[76:54] How much is charged to vm?
+[76:56] Okay, it is charged to vm.
+[76:58] Now what will happen after this?
+[77:00] After this, we will talk about the voltage of d1.
+[77:04] d1's vm sin omega t minus
+[77:06] what was it?
+[77:08] It was vm, right?
+[77:10] vm sin omega t minus vm.
+[77:14] That means the vm was shifted below.
+[77:18] The graph of sin omega t.
+[77:20] The vm shifted below.
+[77:22] So look, in the first positive half cycle
+[77:24] the diode was conducting
+[77:26] up to 90 degrees.
+[77:28] Then it is okay.
+[77:30] vm sin omega t minus vm.
+[77:32] This is the graph of sin.
+[77:34] So look.
+[77:36] This is the graph of sin omega t minus vm.
+[77:38] This is the graph of sin omega t minus vm.
+[77:40] This is the graph of sin omega t minus vm.
+[77:42] This is the graph of sin omega t minus vm.
+[77:44] This is the graph of sin omega t minus vm.
+[77:46] This is the graph of sin omega t minus vm.
+[77:48] This is the graph of sin omega t minus vm.
+[77:50] This is the graph of sin omega t minus vm.
+[77:52] This is the graph of sin omega t minus vm.
+[77:54] This is the graph of sin omega t minus vm.
+[77:56] This is the graph of sin omega t minus vm.
+[77:58] This is the graph of sin omega t minus vm.
+[78:00] This is the graph of sin omega t minus vm.
+[78:02] This blue curve is sin omega t, and Vm is to be eliminated from this.
+[78:08] Rajneesh, if Vm is to be eliminated, then this is also Vm, if Vm goes from Vm then 0, if Vm goes from 0 then minus Vm,
+[78:16] if Vm goes from minus Vm then minus 2 Vm, if Vm goes from 0 then minus Vm, then Vm goes from Vm to 0.
+[78:25] This type of graph is formed, whose graph you have? This graph is Vd1, now you know that the source works for the next clamper,
+[78:38] this works for the source for the next clamper, so now what happens is that until the second capacitor is charged to maximum voltage,
+[78:49] in this cycle your D2 turns on, D2 turns on and the second capacitor will be charged to 2 Vm,
+[79:01] you have to charge to peak value, you always know this, you have to charge to peak value,
+[79:10] so your capacitor will be on 0 voltage first, now here this capacitor will start charging to 2 Vm,
+[79:23] and its voltage will be constant on 2 Vm, that is why they call it voltage doubler,
+[79:30] because my children, the voltage on the second capacitor is double, that is double,
+[79:37] so what to do in the voltage doubler, you have to simplify both the clamper separately,
+[79:42] first talk about that clamper, which is with your supply, its diode voltage works for the source for the next clamper,
+[79:53] so that is how this voltage doubler works, so there is no more concept than the clamper in the voltage doubler,
+[80:01] so how will you recognize that voltage doubler is 2 diodes and 2 capacitors, that will be a voltage doubler,
+[80:09] the supply that is applied first, first solve it, take out the diode voltage, now the next clamper will work for the source,
+[80:20] the second capacitor equation, tell me one more time, see D2 is on, is this clear, why are you sure,
+[80:27] D2 is on, is this clear, this capacitor was uncharged, so it was shorted, so Vd2 and Vd1 are negative,
+[80:36] so Vd2 is Vm-Vm sin omega t, how is this negative, so what did we say, Vm sin omega t is smaller than Vm,
+[80:45] so this value will be positive, that is D2 will be on, as soon as D2 is on, I have done it short,
+[80:53] now this was my Vd1, this was Vc2, is this clear, see this is Vc2 and this is voltage Vd1,
+[81:04] so I have applied KVL, it is connecting from plus to minus from minus to plus, Vc2 is minus Vd1,
+[81:12] now in minus Vd1, this is charged to maximum, what will be the maximum of minus Vd1, see the minimum of Vd1 is minus 2Vm,
+[81:23] so the maximum of minus Vd1 will be 2Vm, what will be the maximum of its negative, think,
+[81:31] if we negative this graph, then its peak will be 2Vm, so Vc2 will be charged to 2Vm,
+[81:39] do you understand, this is coming, minus Vd1, minus Vd1 means the opposite graph, so if its minimum is minus 2Vm,
+[81:48] then its maximum will be 2Vm, so this is charged to 2Vm, so that is why it is called as doubler,
+[81:54] see another way to make this, what did you do here, here you made a clamp on one diode,
+[82:02] now what will you say, initially both capacitors are uncharged,
+[82:21] now what will you say, with this logic, short C1 and C2, if C1 and C2 are short, then the entire voltage of the supply will come across the diode,
+[82:47] so here see, according to polarity, Vd1 will come, Vm sin omega t, the diode of D2 is upside down, its voltage is upside down,
+[83:00] so minus Vm sin omega t, so during positive half cycle, what will happen, during positive half cycle,
+[83:11] sin omega t is greater than 0, which means Vd1 is positive, so this is on, Vd2 is negative, so this is off,
+[83:24] when D1 is on, then the capacitor will be charged, where will it charge to maximum, C1 charges to maximum value,
+[83:39] positive cycle will charge to maximum value, so how much Vc1 will come, Vm, Vc1 will come,
+[83:49] now in negative half cycle, sin omega t will be negative, sin omega t will come out to be positive, so D2 will turn on,
+[84:04] now when D2 will be turned on, then C2 charges to maximum value, but the maximum value of negative cycle,
+[84:13] the maximum value of negative cycle is minus Vm, how much is it, minus Vm, okay, so this is Vc1, this is Vc2,
+[84:27] now in this circuit, if you see from KVL, V0, then Vc1 minus Vc2, which will come out to be 2Vm,
+[84:37] now see, no capacitor was charged to 2Vm, no capacitor was charged to 2Vm, this time you gave both the capacitors VmVm,
+[84:49] but the opposite polarity, the opposite polarity which made both the potential difference to Vm,
+[84:57] here see what happened, here the first capacitor was charged to Vm, the second to 2Vm,
+[85:03] but here both are charged to VmVm with opposite polarity, their difference to Vm is coming, that is the second construction of voltage doubler,
+[85:13] did you understand this construction also, tell me, did you understand this construction, now the voltage multiplier is nothing,
+[85:22] the extension of the voltage doubler, see here is our Vm sin omega t, so this capacitor charges to Vm,
+[85:36] so here the voltage goes to input minus Vm on the first diode, it works as a supply for the next clamper and charges it to 2Vm,
+[85:53] then how much voltage goes here, here Vd2, if you take out Vd2 from KVL,
+[86:03] Vi minus Vm, I am putting KVL plus Vd2 plus 2Vm, so Vd2 comes minus Vm minus Vi minus Vi minus Vm,
+[86:27] so this can also be the maximum value of 2Vm, this can also be the maximum value of 2Vm, so the next capacitor will also be charged to 2Vm,
+[86:37] do not think that first Vm, then 2Vm, then 3Vm, you will not be able to go above 2Vm, so how far all the capacitors are charged to 2Vm,
+[86:48] now see, if you see this 2Vm then it is doubler, if you connect both Vm and 2Vm then it is tripler 3Vm,
+[86:56] if you connect these 2Vm and 2Vm then it is quadrupler because it is 4Vm, okay, 4Vm, did you understand what happened here,
+[87:08] if you take out any diode voltage, maximum 2Vm can come, so it cannot be charged to 3Vm to 4Vm,
+[87:17] if you see this 2Vm then it is doubler, Vm and 2Vm, that is 3Vm then it is tripler, 2Vm, 2Vm, 4Vm then it is quadrupler,
+[87:26] so with this type you can multiply the voltage with any factor, but keep this in mind,
+[87:33] with the help of the circuit on the clamp, no capacitor can be charged more than 2Vm,
+[87:40] remember that no capacitor can be charged above 2Vm,
+[87:54] so the direct fund of the clamp is diode, see which cycle is on, whatever peak value of that cycle is made,
+[88:07] assign that capacitor, close the diode, find out how much voltage is coming on the output,
+[88:14] now see I will apply the question, see this, the output voltage V0 for the clamper circuit shown below,
+[88:23] you have to know the output voltage, now listen to me carefully, first of all what to do,
+[88:29] you say capacitor is uncharged, I am doing one question because there is a reference voltage in it,
+[88:35] someone was asking, so short it, now what to do, now take out the diode voltage,
+[88:53] do not pay much attention to the resistance, it does not matter to us,
+[89:00] how will you write the polarity of the diode voltage, how will you write the cathode from the anode,
+[89:07] 4Vi, put the KVL, V in plus Vd minus 4, so Vd is how much, 4 minus V in,
+[89:22] so when V in less than 4 will happen, then diode will conduct, what can I say, diode is on,
+[89:32] when V in is less than 4, now here is 15, so here it will be off, here minus 25 is less than 4,
+[89:44] so here it will be on, now if your diode is on in the case of minus 25,
+[89:52] if your diode is on in the case of minus 25, then you switched on the diode,
+[90:03] now you have to see how much voltage will go on the capacitor, switch on the diode and put the KVL,
+[90:10] here is the Vc, if it is minus 25, then write it like this,
+[90:20] put the KVL, minus 25, minus Vc, minus 4 is 0, so Vc is minus 29,
+[90:34] now after this my diode will be off, after this my diode will permanently be off,
+[90:51] now you have to put the KVL and tell V0,
+[90:54] minus 29, so write it like this, 29, so V in,
+[91:08] put the KVL outside, plus 29, minus V0 is 0, so V0 is V in plus 29,
+[91:17] okay, V in plus 29, now if V in plus 29 comes, then it will be 15,
+[91:27] what will be 15, it will be 44, minus 25, it will be 4,
+[91:33] it will be 15, it will be 44, minus 25, it will be 4,
+[91:38] so it will be minus 25, it will be 44,
+[91:42] here it has made 4 out of 15, so it is wrong, it has made 4 out of 15,
+[91:50] here look, 4 and minus 36 is wrong, 15 and 4 is wrong, the answer is A,
+[92:01] the answer is A, you have come to know the level,
+[92:07] so V in plus 29 came, that is 1 level will be 44 and 1 will be 4,
+[92:13] 44 and 4 are in the same option in A, what is the mistake in B,
+[92:18] where 15 is making 4 there, whereas when will it be 4,
+[92:22] when it will be minus 25, so you should get 4 on minus 25,
+[92:27] that is here in T1 to T2, I am explaining again,
+[92:33] what will we do first, we will short the capacitor, it is uncharged,
+[92:37] we will take out the voltage of the diode, we will find out which cycle the diode is on,
+[92:43] positive or negative, the positive or negative in which it is on,
+[92:48] you short the diode, take out the maximum voltage of that cycle,
+[92:54] so the maximum of that cycle was minus 25, so 25 with reverse polarity,
+[93:00] you short the diode, take out the vc, vc came minus 29,
+[93:06] now turn off the diode, open it, put the KVL, take out the V0 from outside,
+[93:12] the end question, understood, first you have to judge the diode, when it will be on,
+[93:18] then turn on the diode and put the maximum input of that cycle, take out the vc,
+[93:24] then turn off the diode and put the KVL from outside and take out the V0,
+[93:29] this is what clamper is, if you can do this much, then everything will be done,
+[93:36] let's see the next one, now see there are two diodes and two capacitors,
+[93:43] if you put the mind, then the question is over,
+[93:59] what is 100, see, you can make only one mistake in this, that is polarity,
+[94:17] so first see, this will be on during which cycle, negative cycle,
+[94:36] okay, so this capacitor will charge to the maximum of negative,
+[94:43] that is, it will be like this till 50, reverse charging will come,
+[94:49] this diode will be on in the negative cycle, then it will be minus 50,
+[94:55] now if my brother has minus 50 on this, then how much is VD1, 50 sin omega t
+[95:06] plus 50 plus VD1 is 0, so VD1 is minus 50 sin omega t minus 50,
+[95:26] so the peak of VD1 will come, it will be minus 100,
+[95:35] now see this is connecting from negative to positive,
+[95:41] so the peak of VAB will be negative from the peak of VD1,
+[95:48] that means 100 will come, so the answer is correct,
+[95:52] but check the sign too, sometimes think directly,
+[95:56] because there were two diodes and two capacitors, you know that it is a doubler,
+[95:59] you know that it is a doubler, so first if it will be charged to 50,
+[96:03] second it will be 100, but will it be with this polarity,
+[96:06] it is necessary to check this, okay, will it be with this polarity,
+[96:10] it is necessary to check this, do you understand how I cracked it,
+[96:16] first the diode was judged, when will it be on,
+[96:19] then it was charged to C1, then it was taken out from VD1,
+[96:23] from VD1 to VAB, that is taking out the voltage of the second capacitor,
+[96:28] let's see the next one, in the voltage doubler circuit shown in the figure,
+[96:35] switch S is closed at t equal to 0, it is closing at 0,
+[96:40] D1, D2 are ideal, load resistance is infinity,
+[96:45] initial capacitor voltage is 0, steady state voltage across C1, C2,
+[96:51] now see you have to judge the width of the sign,
+[96:56] yes I have put minus VD1 in the peak,
+[96:59] I have put minus VD1, now check it,
+[97:04] because look at the option, the sign has also changed,
+[97:07] so the sign is necessary,
+[97:14] and when this is shown by the voltage arrow,
+[97:17] the arrow is always minus, if there is no voltage arrow in the network,
+[97:22] then the arrow should be from negative to the positive terminal,
+[97:29] so D is closed, D is the authentic C,
+[97:34] look at this capacitor, sorry diode,
+[97:39] it is going to be on in the positive cycle,
+[97:44] if it is on in the positive, then VC1 will be charged to VM5,
+[97:54] with this polarity,
+[97:57] positive to positive, negative to negative,
+[98:01] positive to the peak of the cycle will be charged to VM5,
+[98:05] so which option can it be, either C or D,
+[98:09] C and D have given 5 in both,
+[98:12] now let me take out VD1,
+[98:18] KVL,
+[98:22] 5 sin omega t
+[98:26] minus 5 minus VD1 is 0,
+[98:30] so how much is VD1,
+[98:32] 5 sin omega t minus 5,
+[98:38] now how much is the peak of this, minus 10,
+[98:41] minus 10,
+[98:44] now look at this, it is connecting to the positive,
+[98:47] it is connecting to the negative,
+[98:49] so the peak of VC2 will also be minus 10,
+[98:52] so the answer should be D,
+[98:55] okay, it will be D,
+[98:57] understand, how to judge,
+[98:59] is it clear to everyone,
+[99:01] VD1 is working as a source for the next one,
+[99:04] its peak is minus 10,
+[99:06] so it is connecting from plus to plus, minus to minus,
+[99:08] so the peak of VC2 will also be equal to the peak of VD1,
+[99:12] minus 10, simple KVL,
+[99:17] look at the next one,
+[99:18] this one has come on the Zener diode,
+[99:25] come on, you can do it,
+[99:28] the Zener diode across,
+[99:30] just consider it as a constant voltage,
+[99:32] reverse bias,
+[99:34] like this,
+[99:36] 6.8,
+[99:38] understood,
+[99:41] come on, look at it,
+[99:45] see what it says, D1 is a real silicon PN junction diode,
+[99:50] silicon PN junction means,
+[99:52] it has a drop of 0.7,
+[99:57] and D2 is a Zener diode with a breakdown voltage minus 6.8,
+[100:02] minus 6.8 means,
+[100:04] 6.8 is reverse,
+[100:06] 6.8 is reverse,
+[100:09] the input is a periodic square wave,
+[100:12] whose one period is shown in the figure,
+[100:15] now look at this, when will the diode conduct,
+[100:18] consider your capacitor to be uncharged,
+[100:22] look carefully,
+[100:23] consider your capacitor to be uncharged,
+[100:25] consider short,
+[100:28] now if you consider short,
+[100:31] then your supply looks like this,
+[100:34] Zener always wants to operate in the breakdown,
+[100:42] okay,
+[100:44] Zener wants to operate in the breakdown,
+[100:48] and normal diode wants to operate in the forward,
+[100:53] so when will they operate,
+[100:55] look they will operate in the positive cycle,
+[100:58] they are understanding with their polarity,
+[101:00] they are understanding with their polarity,
+[101:02] they will conduct during the positive cycle,
+[101:06] so what am I saying,
+[101:08] both D1 and Zener,
+[101:14] on,
+[101:18] during the positive cycle,
+[101:21] now what you have to do,
+[101:23] you have to turn on these diodes,
+[101:25] and you have to take out the voltage of the capacitor,
+[101:28] in the positive cycle,
+[101:30] how much voltage you have put,
+[101:32] you have put 14 volts,
+[101:34] you have put 14 volts,
+[101:41] how much voltage you have put here,
+[101:44] look,
+[101:45] you have put 14 volts,
+[101:49] this is 0.7,
+[101:51] this is 6.8,
+[101:54] now if you take out the vc from the KVL,
+[101:59] 14 minus vc,
+[102:05] so how much is the vc,
+[102:07] 6.5,
+[102:09] once you got the capacitor,
+[102:11] you got the voltage of the capacitor,
+[102:13] now what you have to do,
+[102:15] now you have to open the diode,
+[102:17] now you have to forget the diode,
+[102:19] right,
+[102:20] the diode has done the work,
+[102:22] you have to forget the diode,
+[102:31] remove the diode,
+[102:35] this is coming, you have 6.5,
+[102:39] this is vi,
+[102:41] now put the KVL from outside,
+[102:44] vi minus 6.5,
+[102:49] so how much is the v0,
+[102:52] vi minus 6.5,
+[102:54] means it is 6.5,
+[102:56] you have to shift below,
+[102:58] so look,
+[102:59] 14 minus 6.5,
+[103:01] how much will it be,
+[103:03] 7.5,
+[103:07] okay,
+[103:09] minus 14 minus 6.5,
+[103:12] minus 20.5,
+[103:16] so the answer will be A,
+[103:19] is it clear,
+[103:23] son, the topic of the voltage regulator,
+[103:26] the topic of this chapter,
+[103:28] which will be on Monday,
+[103:30] we will read the voltage regulator on Monday,
+[103:32] now tomorrow and tomorrow,
+[103:34] I will take the Sunday class,
+[103:36] tomorrow and tomorrow, I will rectify,
+[103:38] Monday will talk about the Zener diode as a voltage regulator,
+[103:41] but for now,
+[103:42] it is enough for this question,
+[103:44] that Zener diode works in the breakdown region,
+[103:47] so how many voltages do you have to take in reverse biasing,
+[103:51] equal to the breakdown voltage,
+[103:53] across that,
+[103:54] you get a voltage equal to the breakdown voltage,
+[103:57] so it is 6.8,
+[103:59] is it clear to everyone,
+[104:01] now it is clear,
+[104:03] how do you become a clamper,
+[104:05] please make this and tell me,
+[104:07] if it is clear,
+[104:09] make this and tell me,
+[104:14] if it is clear,
+[104:29] let's go,
+[104:36] one second,
+[104:39] one second,
+[104:42] you do it,
+[104:43] now,
+[105:09] one second,
+[105:19] what is coming, B is coming,
+[105:22] see,
+[105:23] see what to do again,
+[105:25] first you short the capacitor,
+[105:29] and take out the diode voltage,
+[105:38] so,
+[106:01] the voltage of the diode,
+[106:03] that will be 5 sin omega t plus 2,
+[106:09] so it will conduct in a positive cycle,
+[106:18] if it conducts in a positive cycle,
+[106:23] then you put the maximum of the positive here,
+[106:26] what will you put, 5,
+[106:29] you will short the diode,
+[106:32] the one who conducts in a cycle,
+[106:34] put the maximum of it,
+[106:37] put 5 here,
+[106:40] V C,
+[106:42] and 2,
+[106:43] you will put KVL 5,
+[106:46] minus V C plus 2 equal to 0,
+[106:49] so V C is 7,
+[106:52] if you have 7 volts here,
+[106:56] okay,
+[106:57] and this is your supply,
+[106:59] so when you put KVL from outside,
+[107:02] then you will write supply,
+[107:05] minus 7,
+[107:06] minus V naught is 0,
+[107:09] so V naught is supply minus 7,
+[107:12] so you have shifted the downward,
+[107:15] or say this is the DC value of minus 7,
+[107:18] so B is here,
+[107:20] how to do it,
+[107:21] first you have to judge the diode,
+[107:23] in which region it will conduct,
+[107:25] you have to put the maximum voltage of that region,
+[107:28] you have to take out V C,
+[107:30] then V naught from KVL,
+[107:31] the question of the clamp is the same,
+[107:33] it is a basic network,
+[107:35] okay,
+[107:36] next look,
+[107:37] the circuit which is used to move the positive or negative peak to a desired level,
+[107:43] from which circuit you can shift the positive or negative peak to a desired level,
+[107:49] yes,
+[107:50] that is the clamp,
+[107:52] from which circuit you shift from the clamp,
+[107:55] okay,
+[107:56] this is your assignment,
+[107:58] you will make this assignment,
+[108:00] we will discuss this assignment tomorrow,
+[108:02] and I will discuss the assignment of the clipper,
+[108:05] tomorrow evening at 5,
+[108:06] but tomorrow at 11.30,
+[108:08] there will be a class,
+[108:09] we will talk about rectifier,
+[108:10] and look,
+[108:12] you will get a lot of practice material on this link,
+[108:16] now here,
+[108:17] if you see,
+[108:18] gate PYQ by AIR-1,
+[108:20] here I have put all the PYQ of analog,
+[108:22] electrical as well as ECE,
+[108:25] no,
+[108:26] if the capacitor comes,
+[108:27] the capacitor either comes in rectifier,
+[108:29] or comes in the clamp,
+[108:31] and the diode and resistance comes in the clipper,
+[108:34] and look,
+[108:35] if you join Unacademy,
+[108:36] then you can go for plus,
+[108:38] and Iconic,
+[108:39] you will get top educators in both,
+[108:42] as much as there is study material,
+[108:44] it is uploaded in digital form on the app,
+[108:46] there are test series,
+[108:47] if the children of Iconic get doubt in any new question,
+[108:50] then they will get video solution,
+[108:52] printed notes will be delivered at home,
+[108:55] one to one mentorship,
+[108:56] strategy and study plan,
+[108:58] and interaction is also allowed in open house session,
+[109:02] okay,
+[109:03] and what you have to do,
+[109:04] just join Unacademy,
+[109:06] plus or choose Iconic,
+[109:08] and you have to use the code ANKIT-ESC,
+[109:12] for maximum discount,
+[109:14] if you see the result,
+[109:16] if you see the result,
+[109:17] we have produced an amazing result,
+[109:20] in top 10,
+[109:21] we have taken 6 ranks in electrical,
+[109:23] and these 6 rankers are from electrical,
+[109:26] rankers in top 10 from easy,
+[109:29] if you want to be a ranker,
+[109:31] join Unacademy quickly,
+[109:33] and you can apply the code ANKIT-ESC,
+[109:36] son,
+[109:37] there is no single test series,
+[109:39] test series plus study material is being sold,
+[109:42] and if there is financial issue,
+[109:44] then you can go to DL for EMI,
+[109:47] in EMI,
+[109:48] you can pay your face monthly,
+[109:51] in just 2 hours,
+[109:52] EMI will be approved,
+[109:53] at least it will be paperwork,
+[109:55] it looks like a PAN card,
+[109:57] or give it to a member in your family,
+[110:00] who has a salary,
+[110:02] because the salary person gets EMI quickly,
+[110:05] and this is the latest batch,
+[110:06] son, I am getting Manish sir network,
+[110:08] I am taking power system in the morning,
+[110:10] so this batch is going for your electrical EC,
+[110:13] and here is my telegram channel,
+[110:16] if you stay connected with this,
+[110:17] then no session will be your miss,
+[110:19] and this is the contact number of my team,
+[110:22] in case you need any help,
+[110:23] if you are a plus and an iconic subscriber,
+[110:26] then press 1,
+[110:27] the YouTube kids press 2,
+[110:29] now where will you get the PDF,
+[110:31] son,
+[110:32] you will download the Unacademy learning app,
+[110:34] you will download the Unacademy learning app,
+[110:36] in that,
+[110:38] you will have to choose gate and ESC,
+[110:40] electrical EC,
+[110:42] because you will ask,
+[110:43] which exam are you preparing,
+[110:45] so what you have to choose,
+[110:47] in Unacademy,
+[110:49] gate and ESC, electrical EC,
+[110:51] there will be a community in the bottom,
+[110:53] son,
+[110:54] go to the community and go to discover,
+[110:56] discover,
+[110:57] I will get you,
+[110:58] so you will reach my community,
+[111:00] there you will get all the PDFs,
+[111:02] son,
+[111:03] there is also a subscription for SSCJE,
+[111:06] yes, there is a subscription for SSCJE,
+[111:08] nowadays,
+[111:09] at 3 p.m. every day in SSCJE subscription,
+[111:12] I am teaching utilization,
+[111:15] so thank you everyone,
+[111:17] Rajneesh son,
+[111:18] you will have to download this on the app,
+[111:20] my son,
+[111:21] you will not be able to see it here,
+[111:23] on the Unacademy website,
+[111:24] confirm once,
+[111:25] there is a community on the website,
+[111:27] or is it just coming in the app,
+[111:28] it comes in the app only,
+[111:32] it comes in the app only,
+[111:33] maybe,
+[111:34] tell me,
+[111:36] the community feature only comes in the app,
+[111:40] in that too,
+[111:41] I think it is only in the android app,
+[111:51] hmm,
+[111:53] yes,
+[111:54] the community feature is only in the android app,
+[111:57] so,
+[111:58] if you,
+[111:59] see,
+[112:00] you have to choose in the app,
+[112:02] gate and ESC on the top,
+[112:05] then you will see the community below,
+[112:07] it is not on the website,
+[112:08] it is on the app only,
+[112:09] then the community below,
+[112:10] yes,
+[112:11] it is not in the iPhone,
+[112:12] son,
+[112:13] it is in the android,
+[112:14] I myself have an iPhone,
+[112:15] otherwise I would have shown you,
+[112:16] okay,
+[112:17] so it does not look in the iPhone,
+[112:19] it will look in the app,
+[112:20] in the android app,
+[112:21] you can download it in the community,
+[112:23] son,
+[112:24] Shubham,
+[112:25] I have told the team,
+[112:26] that if we can get the test series available,
+[112:28] the rest will be the decision of the higher management,
+[112:30] I have already told you this suggestion,
+[112:33] the feature of the free trial is over,
+[112:35] son,
+[112:36] it comes in the middle,
+[112:37] it keeps running a little,
+[112:38] free trial,
+[112:39] otherwise what will the kids do,
+[112:40] no, no, they will join with the ID,
+[112:41] it will keep running free,
+[112:43] it comes in the middle,
+[112:44] come on,
+[112:45] okay,
+[112:46] now we will meet,
+[112:47] tomorrow,
+[112:48] at 11 o'clock,
+[112:49] we will rectify,
+[112:50] then tomorrow,
+[112:51] at 5 o'clock,
+[112:52] we will discuss the assignment,
+[112:53] we will solve the clipper and clamper,
+[112:55] okay,
+[112:56] come on,
+[112:57] thank you.

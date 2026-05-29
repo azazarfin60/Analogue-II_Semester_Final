@@ -1,0 +1,1891 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Rectifiers and Filters Part-02 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=0Tzqr3m4Un4
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] We are back with Lakshya batch 2.2 Analog Electronics.
+[00:17] I know that you guys haven't been able to get a class for the last two days.
+[00:21] But we will continue from today and I will take a class on this Sunday as well.
+[00:25] So that we can compensate.
+[00:27] Okay?
+[00:28] So today we are going to continue our rectifier and filter topic.
+[00:33] Okay?
+[00:33] So I had the first part of the rectifier and filter.
+[00:36] In that I had explained you the half wave rectifier and full wave rectifier well.
+[00:41] They had made different parameters like peak inverse voltage, average output voltage,
+[00:47] RMS output voltage, rectification efficiency, transformer utilization factor.
+[00:53] I had made all these things better in a way.
+[00:57] Apart from this form factor, ripple factor, we had seen these things too.
+[01:01] So today we are going to rectify the third type that is the bridge rectifier.
+[01:06] And after that I am going to cover the filters as well.
+[01:10] So today your diode application will be completed.
+[01:13] So dear, before I start, I will quickly like all the kids once.
+[01:17] And will share the session and tell them that uncle sir is now live.
+[01:21] Okay?
+[01:22] Our course is going at a very good speed.
+[01:24] It has been a week since September.
+[01:26] And our diode is going to be completed.
+[01:27] In the diode, dear, if you will take 2-3 more lectures, then the diode will be completed this week.
+[01:32] Next week, what will we do?
+[01:35] We will start BJT.
+[01:37] Okay?
+[01:37] We will start BJT.
+[01:39] So let's start then.
+[01:41] So dear, this is the full wave bridge rectifier.
+[01:44] As you had seen the full wave rectifier, dear.
+[01:47] So there were two diodes in it.
+[01:49] Here you have 4 diodes.
+[01:51] And these 4 diodes are connected in the bridge structure.
+[01:55] 4 diodes, okay?
+[01:57] And these diodes connected in the bridge structure.
+[02:00] You see, they are parallel connected.
+[02:02] Like D3, D1, then D2, D4.
+[02:05] There is a kind of configuration.
+[02:07] And here through a transformer, we have applied the supply to the bridge rectifier.
+[02:14] So if you apply the supply on A and B terminals, dear.
+[02:18] If you apply the supply on A and B,
+[02:21] then you have to connect the output or the load on C and D.
+[02:25] Like a bridge, generally, there is a battery on two terminals.
+[02:29] And on the other two terminals, your resistance is connected.
+[02:33] Similarly, this is also something, right?
+[02:35] This diode is your dear, this is D1.
+[02:39] This is D2.
+[02:42] This is D4.
+[02:43] And this is D3.
+[02:46] Now look at this, dear.
+[02:47] Which terminal of these two diodes are connected in close proximity to anode?
+[02:52] So these two are called common anode.
+[02:56] Which terminal connected are these two diodes?
+[02:59] Dear, cathode.
+[03:00] So these two will be called common cathode, okay?
+[03:03] So the two diodes connected to anode, that is common anode.
+[03:07] And those two served are connected that is common cathode.
+[03:12] That is common cathode, okay?
+[03:14] And what is the resistance connected in this in the middle?
+[03:17] this is giving you the output voltage V0. What is it giving? It is giving V0.
+[03:22] Okay. BJT will start from Monday. It will start from the end of this week.
+[03:28] Hopefully, your BJT will start from next week.
+[03:32] Now, this lecture is left. After this, there are two regulators.
+[03:35] One is Assignment Discussion. After this, there are three or four more sessions in Diodes.
+[03:40] Okay.
+[03:42] Not for three days. It is not a Monday Tuesday class.
+[03:45] It was done on Sunday. You must have missed Sunday.
+[03:48] Okay.
+[03:50] This is a clear structure. Now, look at one thing.
+[03:54] What is the first change?
+[03:56] Here, four diodes are required instead of two.
+[04:02] Right?
+[04:04] First, you had two diodes required in full wave rectifier.
+[04:09] And now, four diodes are required.
+[04:17] What is the other change?
+[04:19] No requirement of center tapped transformer.
+[04:27] You saw that in full wave rectifier, center tapped transformer was installed.
+[04:32] Here, a normal transformer is being installed.
+[04:35] There is no need for center tapping here.
+[04:45] Okay.
+[04:46] No requirement of center tapped transformer.
+[04:50] Is this clear?
+[04:52] Is it clear? Come on.
+[04:54] Now, sir, how does this circuit work?
+[04:57] Sir, how does this circuit work for us?
+[05:00] If we talk about the positive half cycle,
+[05:05] then the polarity of input in the positive half cycle will be like this.
+[05:09] Okay.
+[05:10] Plus or minus.
+[05:13] Now, look at the plus.
+[05:15] It is connected with anode, right?
+[05:17] So, this diode is forward.
+[05:19] And it is connected with cathode, minus.
+[05:22] So, this diode is also forward bias.
+[05:24] Okay.
+[05:25] Why is this reverse bias?
+[05:27] Because here, negative terminal is connected with anode.
+[05:32] Why is this reverse bias connected with positive terminal with cathode?
+[05:37] If positive terminal is connected with cathode, then reverse bias.
+[05:41] If negative terminal is connected with anode, then also reverse bias.
+[05:44] That is, in the positive half cycle, D1, D2 will conduct.
+[05:49] D1 and D2 will be on.
+[05:51] The rest will be off.
+[05:54] And in the negative half cycle, the polarity will turn in the negative half cycle.
+[05:59] The polarity will turn in the negative half cycle.
+[06:02] When this polarity will turn, then D3, D4 will be on.
+[06:06] And D1, D2 will be off.
+[06:08] D3, D4 will be on.
+[06:10] And D1, D2 will be off.
+[06:13] It is clear now.
+[06:14] Okay.
+[06:16] So, look.
+[06:17] During the positive half cycle, D1, D2 are forward bias.
+[06:21] Okay.
+[06:22] So, D3 and D4 are off.
+[06:28] What did we do for this?
+[06:31] We did open circuit.
+[06:34] What did we do, dear?
+[06:36] We did open circuit.
+[06:39] Okay.
+[06:40] This happened.
+[06:42] Now here, this is VD3.
+[06:47] Okay.
+[06:49] And this diode is VD4.
+[06:55] Okay.
+[06:56] Now, look at the diode on.
+[06:59] How did you replace them?
+[07:01] From their forward resistance, RF.
+[07:04] From their forward resistance, RF.
+[07:07] Now, look at one thing here, dear.
+[07:10] This is V0.
+[07:11] Okay.
+[07:12] Now, how to remove V0?
+[07:14] If you look carefully, in the three resistance series, RF, RL and then RF.
+[07:20] RF, RL and then RF.
+[07:23] So, you will say V0 is VS RL by RL plus 2 RF.
+[07:38] This will be RL by RL plus 2 RF.
+[07:42] Now, you know VS, dear.
+[07:44] Vm sin of omega t RL by RL plus 2 RF.
+[07:59] This happened.
+[08:00] This happened, right?
+[08:01] V0.
+[08:02] Did you understand?
+[08:03] This is V0, dear.
+[08:05] How did you get this polarity of V0, dear?
+[08:08] According to the current.
+[08:10] The current went from here to the positive terminal.
+[08:16] So, it went like this.
+[08:21] So, this is the polarity of V0.
+[08:23] Because in the resistance, the current always goes from plus to minus.
+[08:28] Okay.
+[08:29] It goes from plus to minus.
+[08:31] Is this clear?
+[08:33] Come on, dear.
+[08:35] Okay.
+[08:36] Everyone is clear up to here.
+[08:38] There is no problem for anyone up to here.
+[08:42] Now, if I tell you to tell me VD3.
+[08:47] I tell you to tell me VD3.
+[08:50] You say, sir, there is no problem.
+[08:52] Let's put KVL like this.
+[08:54] So, let's do one thing for KVL.
+[08:57] First, let's take out the current.
+[08:58] The current will be VS by RL plus 2 RF.
+[09:06] So, let's say Vm sin of omega t by RL plus 2 RF.
+[09:15] Okay.
+[09:17] Now, if you see here, KVL will be minus VD3 minus IRF minus IRL.
+[09:29] Okay.
+[09:30] So, VD3 is minus IRF plus IRL.
+[09:39] So, minus Vm sin of omega t RL plus IRF by RL plus 2 RF.
+[09:54] Okay.
+[09:55] So, this is what you have.
+[09:57] Here, its value is approximately minus Vm sin of omega t.
+[10:03] Now, remember that there was 2 Vm sin of omega t in the full wave rectifier.
+[10:08] Remember that there was 2 Vm sin of omega t.
+[10:11] Here, Vm sin of omega t is coming.
+[10:14] Now, in the last lecture, someone was saying that, sir,
+[10:17] please reverse the polarity.
+[10:19] Today, I will teach you to reverse the polarity.
+[10:21] Please pay attention.
+[10:23] Okay.
+[10:24] One can be the diagram of this.
+[10:27] If you want, sir, we have to reverse the polarity.
+[10:30] So, see how it happens.
+[10:33] We want to see, sir, what are the things going to happen in the negative half cycle.
+[10:45] You know that in the negative half cycle,
+[10:48] we will conduct the rest of the two diodes.
+[11:03] Okay.
+[11:04] Now, we have to reverse the polarity.
+[11:33] Now, if you reverse the polarity, then write minus Vs instead of Vs.
+[11:40] Because in the negative half cycle, Vs is negative.
+[11:45] Which means minus Vs will be positive.
+[11:49] Right?
+[11:50] So, this value will be positive minus Vs.
+[11:53] Now, if you write minus Vs, then below plus and above minus.
+[11:57] Now, see how the current goes.
+[12:00] The current went like this.
+[12:02] Then it went like this from here.
+[12:07] Then it went like this from here.
+[12:10] Then it went like this.
+[12:12] Okay.
+[12:13] So, the current is going right to left.
+[12:15] So, the polarity of Vs is going to come like this.
+[12:18] Okay.
+[12:19] The polarity of Vs will come like this.
+[12:21] If you want to see the opposite polarity,
+[12:24] then the last time you were asking, sir, in the negative half cycle,
+[12:28] if we reverse the polarity and solve it, then how do we solve it?
+[12:32] Is it clear up to here?
+[12:34] Now, see here.
+[12:36] Now, see here.
+[12:38] What do we have to do here?
+[12:41] We have to write current I here.
+[12:44] I write minus Vs by RL plus 2RF.
+[12:52] Okay.
+[12:54] Now, if V0 is written from its logic,
+[12:57] let's write it on the next page.
+[12:59] If V0 is written, that is I RL,
+[13:05] then minus Vm sin of omega t
+[13:09] RL by RL plus 2RF.
+[13:17] Okay.
+[13:21] Minus Vm sin omega t RL by RL plus 2RF.
+[13:26] Yes.
+[13:27] Both the cycles are flowing towards one side.
+[13:29] This is the interesting thing.
+[13:31] That's why the polarity of V0 is same.
+[13:33] Because you think that when you are rectifying the full wave,
+[13:37] then when you are rectifying the full wave,
+[13:39] then both the half cycles should come like this.
+[13:42] That's why the full wave rectifier will come.
+[13:44] If the positive V0 is also positive,
+[13:47] if the negative V0 is also negative, then where is the rectification?
+[13:50] The rectifier is only when the positive I comes.
+[13:54] And the positive V0 is also when the negative I comes.
+[13:58] Okay.
+[13:59] This is V0.
+[14:01] Now, if I want Vd1,
+[14:05] then what do I say?
+[14:07] If you take out this I, then put KVL like this.
+[14:10] Okay. For Vd1.
+[14:12] What will you write from KVL?
+[14:14] Minus IRF minus Vd1 minus IRL is 0.
+[14:23] So, Vd1 is minus IRL plus RF.
+[14:31] Now, minus IR will come.
+[14:33] See, there was one more minus in I before.
+[14:36] So, this will be VS, IRL plus RF by IRL plus 2RF.
+[14:46] Okay.
+[14:47] And this will be approximately VS.
+[14:50] Which is Vm sine of omega t.
+[14:53] Everyone will be surprised.
+[14:55] This will come.
+[14:56] Vm sine omega t.
+[14:58] It is clear, right?
+[15:00] So, you should also be clear.
+[15:02] How do you solve by keeping the same polarity?
+[15:04] It is your wish.
+[15:05] If you do reverse polarity, then just do one thing.
+[15:08] Then write minus VS instead of VS.
+[15:11] You will have to do this much change.
+[15:13] Okay.
+[15:16] Yes.
+[15:17] Now, what do we do?
+[15:19] Let's talk about waveforms.
+[15:21] Look at the waveforms.
+[15:23] First, we will make the supply.
+[15:25] Okay.
+[15:26] First, we will make the waveform of the supply voltage.
+[15:30] Draw the supply voltage as a reference.
+[15:34] Then, we will draw the waveform.
+[15:38] Then, we will draw the output by making the supply.
+[15:45] Okay.
+[15:46] After making the output, we will make the diode.
+[15:51] Okay.
+[15:53] We will make another diode.
+[15:56] Come on.
+[16:17] Look at the amplitude of the supply.
+[16:20] I have drawn it.
+[16:46] So, look at this.
+[16:57] This is VS.
+[16:59] Write omega t.
+[17:01] Okay.
+[17:03] V naught.
+[17:05] Omega t.
+[17:07] Then, from here.
+[17:10] V d3.
+[17:13] And then, V d1.
+[17:16] Come on.
+[17:17] Now, look at the supply.
+[17:19] First, we will make a sinusoidal voltage.
+[17:26] This will become clear.
+[17:28] This is your supply.
+[17:35] Brother, why are you doing this for spam?
+[17:37] Come on.
+[17:38] No problem.
+[17:39] Remove the band.
+[17:44] Come on.
+[17:49] Okay.
+[17:51] Now, we have to make V naught.
+[17:53] We have to make V naught.
+[17:55] So, we have seen V naught.
+[17:57] Positive is also positive in the half cycle.
+[18:00] Positive is also positive in the half cycle.
+[18:04] Then again, positive is also positive in the half cycle.
+[18:08] So, positive is also positive.
+[18:10] Positive is also positive in the half cycle.
+[18:13] Right?
+[18:14] And we have seen the amplitude of this.
+[18:18] VmRl by Rl plus 2Rf.
+[18:23] Do you know that in the full wave rectifier,
+[18:25] Rl plus Rf comes down.
+[18:27] Because it conducts only one diode at a time.
+[18:30] If it conducts two diodes at a time,
+[18:33] then Rl plus 2Rf will come.
+[18:36] Okay.
+[18:37] Now, V d3.
+[18:38] Look, when we removed V d3,
+[18:40] then there was minus sign in the positive half cycle.
+[18:43] And it was conducting in the negative.
+[18:45] It was conducting in the negative.
+[18:48] So, how much will V d3 come in the negative?
+[18:55] It will come in the negative.
+[18:56] V d3.
+[18:58] I Rf.
+[19:00] I Rf.
+[19:02] Okay.
+[19:03] Now, as Shauri is saying that
+[19:05] we have to know the graph of current also.
+[19:07] First, I make the current side by side.
+[19:10] Look, I make the current here separately.
+[19:14] The graph of current is the same graph of V0.
+[19:18] Do you know why?
+[19:20] Current and V0 are defined in one resistance.
+[19:24] V0 and current are in both Rl.
+[19:28] And in one resistance,
+[19:29] current and voltage are always the same.
+[19:32] Because V is equal to IR.
+[19:34] Their value is different.
+[19:36] But the shape is exactly the same.
+[19:38] Because both are linearly related.
+[19:41] So, whenever it comes to resistance,
+[19:43] the shape of voltage and current will always be the same.
+[19:46] Whatever you want to see.
+[19:48] In any subject.
+[19:50] Okay.
+[19:51] Their current will always be the same.
+[19:56] Sorry.
+[19:57] Their shape will be the same.
+[19:59] This happened.
+[20:01] Its peak value is Vm by
+[20:05] Rl plus 2Rf.
+[20:08] So, in the positive cycle,
+[20:10] you said that Vd3 is
+[20:12] in the positive half cycle,
+[20:14] Vd3 is minus Vm sin omega t.
+[20:18] In the positive half cycle,
+[20:20] Vd3 is minus Vm sin omega t.
+[20:23] And in the negative half cycle,
+[20:25] current is in 2Rf.
+[20:27] This is written as Vd3 is I into Rf.
+[20:30] So, I into Rf is a small positive.
+[20:33] Then again negative.
+[20:36] Okay.
+[20:37] Now, let's talk about Vd1.
+[20:39] If we talk about Vd1.
+[20:42] Look here.
+[20:44] If you look at Vd1.
+[20:46] Vd1 is I into Rf.
+[20:50] I into Rf.
+[20:52] The current flowing that into resistance.
+[20:55] And in the negative half cycle,
+[20:57] Vm sin omega t.
+[20:59] In the positive half cycle,
+[21:01] current is in 2Rf.
+[21:04] And in the negative half cycle,
+[21:06] minus Vm sin omega t.
+[21:10] Okay.
+[21:11] It came like this.
+[21:12] Is this clear?
+[21:14] So, in both the cases,
+[21:16] in both the cases,
+[21:18] what will be the peak inverse voltage?
+[21:21] Vm.
+[21:22] In both the cases,
+[21:24] what will be the PIV?
+[21:27] Vm.
+[21:28] There was 2Vm coming.
+[21:30] So, it is less than
+[21:33] full wave rectifier.
+[21:35] There was 2Vm coming.
+[21:38] The average will be the same.
+[21:40] The one that was taken out there.
+[21:42] Because the graph is the same of V0.
+[21:45] V0 m by pi.
+[21:48] Sorry, 2V0 m by pi.
+[21:51] So, 2Vm Rl.
+[21:54] By pi.
+[21:56] Rl plus 2Rf.
+[22:01] Okay.
+[22:02] Rl plus 2Rf.
+[22:04] V0 Rms.
+[22:09] So, V0 m by root 2.
+[22:13] This is it.
+[22:14] Form factor.
+[22:15] It comes the same.
+[22:16] 2 root 2 by pi.
+[22:18] No, sorry, how much?
+[22:19] Pi by 2 root 2 actually.
+[22:22] Pi by 2 root 2.
+[22:24] Okay.
+[22:25] Voltage ripple factor will also come the same.
+[22:28] Voltage ripple factor will also come the same.
+[22:31] But here, you know, it will be different.
+[22:34] Here, your
+[22:37] first, let's talk about rectification efficiency.
+[22:41] It also comes the same.
+[22:43] V0 average.
+[22:45] I0 average.
+[22:48] V0 Rms.
+[22:50] I0 Rms.
+[22:58] V0 m by pi.
+[23:01] Sorry, 2V0 m by pi.
+[23:04] And because this is the current of resistance.
+[23:07] So, voltage by resistance.
+[23:11] Then, V0 Rms, V0 m by root 2.
+[23:15] And the current of resistance is the voltage by resistance.
+[23:20] Okay.
+[23:23] 8 by 8.
+[23:26] 8 by pi square.
+[23:28] So, remember, 81.05% was coming.
+[23:34] And when you will remove the TUF,
+[23:38] now, there is no trick in the TUF.
+[23:40] As I told you in the full wave rectifier,
+[23:42] that the primary and secondary were removed separately.
+[23:46] And then, they were averaged.
+[23:48] Here, because there is nothing like this.
+[23:50] That the primary is running for the full cycle.
+[23:52] The secondary is running for the half of cycle.
+[23:54] There is nothing like this.
+[23:56] Here, both are running for the full cycle.
+[23:58] There is no center tapping.
+[24:01] So, what happens here?
+[24:03] Vs Rms.
+[24:05] By Is Rms.
+[24:09] Okay.
+[24:10] So, this is 2V0 m by pi.
+[24:15] 2V0 m by pi Rl.
+[24:20] Now, the current of the supply of Rms.
+[24:23] It is equal to the load Rms.
+[24:25] We are considered as 1 is to 1 transformer.
+[24:28] Right?
+[24:29] So, it will be equal to the load Rms.
+[24:32] That is, 2V0 m by pi Rl.
+[24:36] Sorry, no.
+[24:38] How much was written now?
+[24:39] V0 m by root 2 Rl.
+[24:41] V0 m by root 2 Rl.
+[24:46] So, Rl to Rl is cut.
+[24:47] Root 2 root 2 is 2.
+[24:50] So, 8 by pi square.
+[24:52] I have believed that V0 m is approximately equal to Vm.
+[24:58] Okay, that is why.
+[24:59] So, this is also 0.8105.
+[25:02] So, this is the highest.
+[25:04] This is the highest value in the three rectifiers.
+[25:07] So, what does this mean?
+[25:09] What is the best rectifier in the three rectifiers that you have?
+[25:13] Which is the bridge rectifier?
+[25:17] The best rectifier in the three rectifiers.
+[25:20] That is the bridge rectifier.
+[25:24] Jayesh is asking, sir.
+[25:26] What is more important in rectification, efficiency and TuF?
+[25:29] I would say, rectification, efficiency.
+[25:32] Because, look, after TuF,
+[25:33] only when you are actually using a transformer.
+[25:37] But you can make a rectifier without a transformer.
+[25:40] What is the transformer giving you?
+[25:42] It is giving you isolation between the source and the circuit.
+[25:46] So, if you design it without a transformer,
+[25:50] even then, you will have to see the rectification and efficiency.
+[25:54] But then, you will not see TuF.
+[25:57] So, look, I have summarized all the parameters.
+[25:59] Let's go through it once.
+[26:01] The PI of the half-wave rectifier was Vm.
+[26:04] The full wave was 2 Vm.
+[26:06] And then, the bridge was Vm.
+[26:08] What was the average?
+[26:09] V0 m by pi.
+[26:11] 2 V0 m by pi.
+[26:13] And here too, 2 V0 m by pi.
+[26:15] RMS was V0 m by 2.
+[26:18] V0 m by root 2.
+[26:20] Here, V0 m by root 2.
+[26:22] Form factor was pi by 2.
+[26:24] Here, it was 1.11.
+[26:26] Here too, it was 1.11.
+[26:27] Ripple factor was 1.21.
+[26:30] Here, it was 0.48.
+[26:32] And here too, it was 0.48.
+[26:34] Rectification efficiency was 40.5.
+[26:37] The center tapped rectifier was 81.
+[26:40] And the bridge was also 81.
+[26:42] Look at TuF. 0.286.
+[26:45] 0.69.
+[26:46] And 0.81.
+[26:48] So, what are the advantages?
+[26:50] The efficiency of the bridge rectifier is also good.
+[26:53] The TuF of the bridge rectifier is also good.
+[26:56] But the improvement of the center tapped rectifier
+[27:01] is in which things?
+[27:03] One is PIV.
+[27:04] One is PIV from here to here.
+[27:07] Your TuF is bigger.
+[27:09] And the requirement of the center tapped rectifier is reduced.
+[27:15] There is no need for the center tapped rectifier.
+[27:18] Sorry.
+[27:19] There is no need for the center tapped transformer.
+[27:22] A normal transformer will work.
+[27:25] You don't have to give it tapping.
+[27:28] All of you, give a light.
+[27:30] Why don't you give a light?
+[27:33] Speak quickly.
+[27:35] Do you understand?
+[27:40] Okay.
+[27:43] Let's go.
+[27:45] Before I start the next topic.
+[27:47] There are more than two advantages here.
+[27:49] This is the drawback.
+[27:51] V0M and Vm can be called anything.
+[27:55] Here Vm0 means
+[27:58] Vm
+[28:00] RL
+[28:02] By RL plus RF
+[28:05] It looks like a voltage division.
+[28:09] If you take an ideal diode,
+[28:12] then V0M and Vm are equal.
+[28:15] If you take an ideal diode.
+[28:18] It just changes here.
+[28:20] Vm0 is Vm
+[28:24] RL
+[28:26] By RL plus 2 RF.
+[28:28] There are two diodes on here.
+[28:31] But if you take an ideal diode,
+[28:34] if you take RF0, then Vm0 and Vm are the same thing.
+[28:37] Light.
+[28:39] Now listen to me.
+[28:41] Before I move on, let me give you some answers.
+[28:44] Why do you have to remember the circuit?
+[28:46] The principle of Clipper and Clamper.
+[28:48] The circuit will be built in the gate.
+[28:50] If you don't understand the circuit,
+[28:52] then what will we analyze?
+[28:56] Surendra says that the efficiency is 81%
+[28:58] and it is 19%.
+[29:00] Surendra says that the efficiency is 81%.
+[29:02] The rectification efficiency is 81%.
+[29:05] What does rectification efficiency mean?
+[29:08] You get power on the output, on the load.
+[29:12] Out of that, how much power is only due to DC component
+[29:16] and how much power is due to harmonics.
+[29:19] So 81% means that the power developed in RL
+[29:24] is 81% due to DC
+[29:28] and the rest is because of 19% of your harmonics.
+[29:31] This is not efficiency.
+[29:33] This is rectification efficiency.
+[29:36] Don't think that there are losses.
+[29:39] This is not power output by power input.
+[29:42] This is how much DC component is in power
+[29:45] divided by total power.
+[29:48] In rectification efficiency, we only see the output.
+[29:50] We don't talk about the input.
+[29:52] V0 average, I0 average by V0 RMS, I0 RMS.
+[29:56] So all four terms are on the output.
+[29:58] So don't compare it with normal machine power system
+[30:00] or power system efficiency.
+[30:06] Okay?
+[30:08] Jayesh, I think there won't be such a thing
+[30:10] in analog, resistance of the secondary side of the transformer.
+[30:14] There won't be such an analog.
+[30:17] Okay?
+[30:19] So let me give you the answers of some things.
+[30:22] Then I am moving ahead.
+[30:24] Because otherwise you will keep troubling in between.
+[30:26] First thing, when will the video be public
+[30:29] then only that thing will be in my hands.
+[30:32] Okay?
+[30:33] You are getting free content.
+[30:35] So it is written in PIV that there is a bridge VME.
+[30:37] Read it.
+[30:39] Listen to me.
+[30:40] You are getting free content.
+[30:42] Video is free for 24 hours.
+[30:44] Do you understand?
+[30:46] You can watch it live.
+[30:48] You can watch it recorded.
+[30:49] Please don't expect more than this.
+[30:51] I am giving you daily assignment.
+[30:53] I am also solving assignments.
+[30:55] But let me tell you one thing.
+[30:57] If I take any day class,
+[30:59] there will be some child who will come to that class for the first time
+[31:03] and he will find the video of the background.
+[31:05] So if I public it for today or for tomorrow
+[31:10] or even for a month, it will never ever solve the problem for everyone.
+[31:15] Someone will be released.
+[31:17] So see, I can't help all the children of India.
+[31:20] I will always public it.
+[31:22] So the video is not in English, then in Hindi.
+[31:24] Then the English one is released.
+[31:26] In some way or the other, no child will always be released.
+[31:29] It is the objective of free content.
+[31:31] You can reach as many children as you want.
+[31:34] You are public for 24 hours.
+[31:36] Now someone will say, keep it for 36 hours or 48 hours.
+[31:40] Still no child will be released.
+[31:42] Do you understand?
+[31:43] If a child cannot watch it for 24 hours,
+[31:46] then he will never be released in 48 hours.
+[31:49] And then it will be said that only do 72.
+[31:51] Do you understand?
+[31:53] Like gate exam comes every year in FEP.
+[31:55] Now someone will say, if it was in March, I would have taken it better.
+[31:58] If it was in March, then someone will say, if it was in April, it would have been better.
+[32:01] So everyone can never be satisfied.
+[32:04] This is impossible.
+[32:06] Everyone is human.
+[32:08] Everyone is not happy with God.
+[32:10] We are still human.
+[32:12] So do this and do that.
+[32:14] Child, first follow what is happening.
+[32:17] Follow that.
+[32:19] Today we are public.
+[32:21] Even in the 12th lecture, there are 110 children.
+[32:23] In the 12th lecture, there were no more than 50 children.
+[32:26] Do you understand?
+[32:28] So you have to force yourself to call you in the lecture.
+[32:31] The day I stop doing this private,
+[32:33] this attendance will drop.
+[32:35] Because you will procrastinate.
+[32:37] That we will do it later.
+[32:39] The video is read.
+[32:41] The video is read.
+[32:45] Do you understand?
+[32:47] Come on.
+[32:48] It is clear.
+[32:50] This is also going on in the mind of children.
+[32:52] I will comment on it.
+[32:54] That Mr. Dhande said a lot about me.
+[32:56] The teachers of the gate academy said a lot about me.
+[32:59] Tell me,
+[33:01] is the industry of the gate about me?
+[33:03] Tell me this much.
+[33:05] Should I make a decision in the gate industry?
+[33:08] What do I like or don't like?
+[33:10] Or what can be for the students?
+[33:12] Just tell me this much.
+[33:14] Should I make a decision thinking of the students?
+[33:17] Or thinking of myself?
+[33:19] Should I become selfish?
+[33:21] I don't like this person.
+[33:23] Even if he studies very well,
+[33:25] I will not work with him.
+[33:27] Should this be the case?
+[33:29] Should the children's future be decided by personal grudge?
+[33:31] Now think about it.
+[33:33] If Mr. Dhande is connected to the academy,
+[33:35] I will not comment on this.
+[33:37] How is their personal relation with me?
+[33:39] There are two things.
+[33:41] In life, when you will do a job or work,
+[33:43] you will have many colleagues.
+[33:45] Will all your colleagues be your best friends?
+[33:47] No.
+[33:49] This cannot be the case.
+[33:51] Will all your colleagues be your family?
+[33:53] No. This cannot be the case.
+[33:55] What happens?
+[33:57] We have to carry two types of relations in life.
+[33:59] One is professional and one is personal.
+[34:01] So, the relation between the gate academy
+[34:03] and the unacademy has nothing to do
+[34:05] with my personal equation with Mr. Dhande.
+[34:07] And to be very frank with you guys,
+[34:09] I have a very big role in
+[34:11] agreeing with Mr. Dhande
+[34:13] and the unacademy.
+[34:15] Because what I believe is
+[34:17] that Mr. Dhande is one of the best
+[34:19] educators ever
+[34:21] for the subjects that he takes.
+[34:23] Whatever subjects he studies,
+[34:25] he studies with a lot of feelings and
+[34:27] with a lot of heart.
+[34:29] Whenever we have any issues,
+[34:31] I have said one thing.
+[34:33] I respect him a lot as a teacher.
+[34:35] Because his teaching is good.
+[34:37] There is nothing wrong in this.
+[34:39] If you have seen any of his videos,
+[34:41] then you must have liked the content.
+[34:43] It is a big fact.
+[34:45] You won't get less content.
+[34:47] And if all that content
+[34:49] can come in one subscription,
+[34:51] you can get it in one place.
+[34:53] You don't have to pay again and again
+[34:55] to buy test series from here,
+[34:57] to see lectures from there,
+[34:59] to see a non-core,
+[35:01] to see a core.
+[35:03] If you don't have to do these things,
+[35:05] then their life will be easy.
+[35:07] Will it happen or not?
+[35:09] Tell me.
+[35:13] Yes.
+[35:15] Now we are saying to clear Mr. Vishal.
+[35:17] Dear, we are talking to Mr. Vishal now.
+[35:19] But then again,
+[35:21] you can't force anyone against
+[35:23] someone's wish.
+[35:25] I also gave this example that
+[35:27] if Mr. Vishal
+[35:29] doesn't like coming to the academy,
+[35:31] or if Mr. Vishal wants to move on,
+[35:33] then I can request.
+[35:35] And why do you think that
+[35:37] such things haven't been done yet?
+[35:39] Are you thinking? Will this happen?
+[35:41] I must have not
+[35:43] thought this before you people.
+[35:45] But will I tie someone
+[35:47] and sit in a room,
+[35:49] so that I don't let you go anywhere?
+[35:51] This can happen.
+[35:53] Whenever a teacher studies somewhere,
+[35:55] if he studies from the mind, then it makes sense.
+[35:57] If you force someone,
+[35:59] if you study for 2-4 months,
+[36:01] then it won't be fun in content,
+[36:03] nor will it make the children feel.
+[36:05] I will say this in the case of Mr. Vishal,
+[36:07] that I want Mr. Vishal
+[36:09] to be connected with the academy.
+[36:11] Mr. Vishal will work with me
+[36:13] for a long time.
+[36:15] But do it with your heart.
+[36:17] And I know that
+[36:19] Mr. Vishal will be somewhere in life.
+[36:21] I know him that much
+[36:23] that he is one of the best
+[36:25] ever educator in the
+[36:27] industry. So wherever he is,
+[36:29] he will do well. He will do well for the children.
+[36:31] He will provide good content.
+[36:33] Don't ever think that Mr. Vishal
+[36:35] is with me or Mr. Vishal
+[36:37] is somewhere else.
+[36:39] So there is no personal tension between me and him.
+[36:41] Do you understand?
+[36:43] There is no personal tension between me and him.
+[36:45] There is nothing like that.
+[36:47] Mr. Vishal will be with me only then
+[36:49] he will love us as much as we do.
+[36:51] And he will be with me only then.
+[36:53] Do you understand?
+[36:55] It is not like that.
+[36:57] Like what happened previously,
+[36:59] when the faculty moves from here and there,
+[37:01] it gets dirty and dirty.
+[37:03] It is not like that.
+[37:05] People create such a host group of
+[37:07] Electrical EC here.
+[37:09] That the electrical engineering of the child
+[37:11] may be the best in the world.
+[37:13] Not the best in India, but the best in the world.
+[37:15] But
+[37:17] stay with your heart.
+[37:19] If you don't feel like it, then don't work in helplessness.
+[37:21] Because teaching is an art.
+[37:23] It cannot be in helplessness.
+[37:25] You also understand this, right?
+[37:27] Today someone forced me to say that
+[37:29] you might not get such good content
+[37:31] to study analog. The second thing
+[37:33] is, think about it. I am doing a private video.
+[37:35] There is attendance in the sticker.
+[37:37] And you must be feeling that this subject
+[37:39] is going to the next level.
+[37:41] Now I have solved the assignment of the clipper.
+[37:43] Did you see it? I asked one by one
+[37:45] question in it.
+[37:47] Do you understand? I asked one by one
+[37:49] question in it and made it from you.
+[37:51] You understood. You could crack
+[37:53] a tough question from tough.
+[37:55] So this is the level of the subject.
+[37:57] That is only and only because of your attendance.
+[37:59] Do you know when the control system
+[38:01] started going down? My motivation
+[38:03] was also going down.
+[38:05] When you see in front, 10 kids, 20 kids,
+[38:07] 30 kids are sitting.
+[38:09] So it is not fun to study.
+[38:11] And leave this 7 day free trial
+[38:13] when you have to give it to the academy.
+[38:15] It will come. It is not only for the gate.
+[38:17] It comes across categories.
+[38:19] It comes across an academy.
+[38:21] Look, any discount comes.
+[38:23] Any offer comes.
+[38:25] Any free trial comes.
+[38:27] These are all the people above.
+[38:29] I cannot help you in this.
+[38:31] And I am making one commitment to you.
+[38:33] Till now, the free initiative
+[38:35] came will be better than the free initiative.
+[38:37] Now Joseph, your location
+[38:39] will be searched for and beaten up.
+[38:41] Is this a paid initiative?
+[38:43] Joseph is asking when it will come free.
+[38:45] Is this a paid initiative in the lecture?
+[38:47] Is this paid or free?
+[38:49] Or let's stop this.
+[38:51] Let's start another free.
+[38:53] Let's do this. Let's be happy in it.
+[38:55] Amazing people.
+[38:57] Now let's move ahead.
+[38:59] We have to complete the analogue.
+[39:01] Right?
+[39:03] Or you tell me.
+[39:05] I will stop the lecture and then we will talk.
+[39:07] We don't do that.
+[39:09] We complete.
+[39:11] I have answered many queries.
+[39:13] I have given you in almost 10 minutes.
+[39:15] Only for your queries.
+[39:17] So let's go.
+[39:19] Now let's come to filters.
+[39:21] You remember, I told you
+[39:23] that your DC power supply.
+[39:25] Right?
+[39:27] What is DC power supply?
+[39:29] First of all, it is transformer.
+[39:31] After transformer, it is rectifier.
+[39:33] What is rectifier?
+[39:35] It gives you pulsating DC.
+[39:37] But there is a lot of fluctuation in it.
+[39:39] And do you know?
+[39:41] Which factor does this fluctuation show?
+[39:43] It shows ripple factor.
+[39:45] This ripple factor is telling you
+[39:47] how many harmonics are in your output.
+[39:49] So it is telling you
+[39:51] that there are more harmonics than DC.
+[39:53] It is telling you that there are 48%
+[39:55] harmonics here.
+[39:57] There are 48% harmonics here.
+[39:59] That is, there is a lot of harmonic content.
+[40:01] If there is a lot of harmonic content
+[40:03] then that harmonic content
+[40:05] is to filter out.
+[40:07] Like there is a lot of impurity in water.
+[40:09] So if you remove the water from the filter
+[40:11] then what happens? Impurity is reduced.
+[40:13] You get good pure water.
+[40:15] If you want pure DC waveform
+[40:17] then you get rectifier output
+[40:19] which you have to pass on
+[40:21] from the filter
+[40:23] so that the ripple in the output is reduced.
+[40:25] Now the easiest and straight way
+[40:27] of this is capacitor.
+[40:29] Because what does capacitor try?
+[40:31] That its voltage is constant.
+[40:33] So if my output
+[40:35] which is my load, if I put
+[40:37] capacitor across the load
+[40:39] then it will be
+[40:41] that the change in voltage
+[40:43] will be minimum.
+[40:45] Voltage will change from less to less
+[40:47] then your fluctuation will be minimized.
+[40:49] Minimized.
+[40:51] And you can take the same work
+[40:53] from current also.
+[40:55] If you want to take work from current
+[40:57] then what to do with current?
+[40:59] Put an inductor. The inductor will try
+[41:01] to give your current a minimum fluctuation
+[41:03] and if there is a minimum fluctuation
+[41:05] in current then
+[41:07] the voltage across the load
+[41:09] will also have fluctuation minimum.
+[41:11] Because what will be the voltage of the load?
+[41:13] I into R. So if
+[41:15] I minimize the fluctuation
+[41:17] then also the fluctuation of voltage
+[41:19] will be minimum.
+[41:21] So put an inductor in series
+[41:23] so that the fluctuation of current
+[41:25] will be minimized because
+[41:27] inductor opposes the change in current
+[41:29] or put a capacitor in parallel
+[41:31] so that the fluctuation of load
+[41:33] will be minimum because
+[41:35] capacitor opposes the change of voltage.
+[41:37] Now let's cover each filter
+[41:39] well.
+[41:41] And now let me tell you one thing
+[41:43] which is not related to analog
+[41:45] then it will be blocked
+[41:47] from this channel.
+[41:49] If there is a doubt of anything
+[41:51] related to analog
+[41:53] understood? Let's go.
+[41:57] Now see which filter
+[41:59] I am going to make you.
+[42:01] Capacitor filter, Inductor filter
+[42:03] LC filter,
+[42:05] CLC filter. These 4 types of filters
+[42:07] I am going to make you.
+[42:09] This is the most important one
+[42:11] for gate.
+[42:13] Okay.
+[42:15] And all the rest
+[42:17] can be asked in other exams.
+[42:19] The question that will come in the gate
+[42:21] will surely be based on
+[42:23] capacitor filter.
+[42:25] I will do all the analysis so that
+[42:27] there is no syllabus of any exam.
+[42:29] But what should be your major focus on
+[42:31] capacitor filter?
+[42:33] And the second thing is
+[42:35] that if you want to do an analysis of
+[42:37] capacitor filter then you should
+[42:39] analyze the child who gets
+[42:41] a transient very well.
+[42:43] But I will make it at a fundamental level
+[42:45] at the level of network analysis
+[42:47] no big things or
+[42:49] no advance concept will be used in it.
+[42:55] Okay.
+[42:57] Now see it is a very simple circuit
+[42:59] my brother. What is simple?
+[43:01] What is here is that
+[43:03] there is a diode, a capacitor
+[43:05] and a resistor of yours.
+[43:07] So what did we do?
+[43:09] We connected
+[43:11] a capacitor across the load
+[43:13] so that
+[43:15] we can minimize the fluctuation
+[43:17] of the voltage of the load.
+[43:19] Now I will talk
+[43:21] about the first analysis
+[43:23] at no load.
+[43:25] No load means
+[43:27] the resistance is R0.
+[43:29] No load means
+[43:31] R tending to infinity.
+[43:33] Sir, why?
+[43:35] Because no load means
+[43:37] there is no current in the load.
+[43:39] There is no current in the load.
+[43:41] Loading is
+[43:43] often associated with current.
+[43:45] Like in our house,
+[43:47] there is tube light, fan, AC.
+[43:49] What are we doing?
+[43:51] We are drawing current from the supply wire.
+[43:53] And we are working on the load on this system.
+[43:55] So whenever we talk about load
+[43:57] it talks about drawing current
+[43:59] from the source.
+[44:01] So load is directly associated with current.
+[44:03] So no load means
+[44:05] there is no current
+[44:07] which means the resistance is
+[44:09] infinity.
+[44:11] So this resistance is tending to infinity.
+[44:13] Now what will happen?
+[44:15] Here
+[44:17] your simple capacitor
+[44:19] is connected through a diode.
+[44:21] What is connected?
+[44:23] A capacitor is connected through a diode.
+[44:25] Now see what will happen?
+[44:27] You will say
+[44:29] diode will be on
+[44:31] in the positive half cycle.
+[44:33] Your diode will be on in the positive half cycle.
+[44:35] See
+[44:37] what do you expect?
+[44:39] Forget the capacitor for now.
+[44:41] What do you expect?
+[44:43] How should your half wave rectifier
+[44:45] output come?
+[44:47] Should positive half cycle come?
+[44:49] And negative half cycle should go away.
+[44:51] So it is half wave rectifier.
+[44:53] Why?
+[44:55] Do you understand?
+[44:57] This is what you expect.
+[44:59] There is an output
+[45:01] that positive half cycle should come
+[45:03] and negative half cycle should go away.
+[45:07] So you expect something like this.
+[45:15] Correct?
+[45:17] But do you know what will happen?
+[45:19] When your positive half cycle
+[45:21] diode will be on
+[45:23] remember a little clamper
+[45:25] when your positive half cycle
+[45:27] diode will be on
+[45:29] sorry capacitor will start charging.
+[45:31] And where does the capacitor
+[45:33] charge?
+[45:35] Maximum voltage
+[45:37] You remember once
+[45:39] capacitor charges to maximum voltage.
+[45:41] Then after that
+[45:43] it does not discharge.
+[45:45] Diode permanently
+[45:47] stays closed.
+[45:49] Right? This is how it happens.
+[45:51] Diode permanently
+[45:53] stays closed.
+[45:55] So the voltage of the capacitor gets fixed.
+[45:57] Do you understand?
+[45:59] Sir, why did not the capacitor discharge?
+[46:01] Son, to discharge the capacitor
+[46:03] the current has to be sent upside down.
+[46:05] When the capacitor
+[46:07] is charging then
+[46:09] the current is coming clockwise.
+[46:11] So in discharging
+[46:13] it will have to be sent anti-clockwise.
+[46:15] It will not be able to send anti-clockwise
+[46:17] because diode will not allow.
+[46:19] Do you understand?
+[46:21] If this current is coming
+[46:23] clockwise and the capacitor is charging
+[46:25] then in discharging
+[46:27] the current should be returned. It will not allow the diode.
+[46:31] You can notice one more thing here.
+[46:33] Son, the capacitor
+[46:35] is charged to maximum voltage
+[46:37] to Vm.
+[46:39] After this what will be the voltage of the diode?
+[46:41] Isn't it?
+[46:43] What will be the voltage of the diode?
+[46:47] This will be supply
+[46:49] minus capacitor
+[46:51] i.e. Vm sin of omega t
+[46:53] capacitor is charged to Vm
+[46:55] minus Vm.
+[46:57] So this is less than equal to 0.
+[46:59] So what will happen with this?
+[47:01] Diode remains
+[47:03] off.
+[47:05] Everyone is shocked.
+[47:07] So it has become like a clamper.
+[47:09] So the diode
+[47:11] capacitor is charged to Vm
+[47:13] and you got a flat waveform.
+[47:15] i.e. it has become a perfect DC.
+[47:17] Think once
+[47:19] if your capacitor is charged
+[47:21] then you got a
+[47:23] perfect DC on the output.
+[47:25] So this is what we want.
+[47:27] But son, when is this?
+[47:29] When there is no load.
+[47:31] Because when there is no load,
+[47:33] then there is no way of discharging
+[47:35] near the capacitor.
+[47:37] A very good question
+[47:39] is asked by Abhishek.
+[47:41] Sir, is this an output or a cross capacitor?
+[47:43] You fool.
+[47:45] Can't you see that this is an output
+[47:47] capacitor?
+[47:49] Can't you see that this is an
+[47:51] output or a capacitor voltage?
+[47:53] I am saying this.
+[47:55] From where?
+[47:57] What do you call this earth?
+[47:59] Try to understand this.
+[48:01] It is fortunate that this earth
+[48:03] has such children in this country.
+[48:05] Now it is good or bad that you decide.
+[48:07] Now the thing is
+[48:09] that practically there will be a load.
+[48:11] Practically there will be a load.
+[48:13] So if the diode is closed
+[48:15] then on the right hand side
+[48:17] there will be a RC circuit.
+[48:19] And if there is no
+[48:21] RC circuit in which there is no source
+[48:23] then obviously the capacitor
+[48:25] will discharge through the
+[48:27] resistance.
+[48:29] If there is a RC circuit
+[48:31] then obviously the capacitor
+[48:33] will discharge through the resistance.
+[48:35] That is what will happen
+[48:37] when there is a load.
+[48:39] That is, the waveform will not be flat.
+[48:41] The waveform will be discharging.
+[48:43] Now we want it to be as
+[48:45] close to the flat as possible.
+[48:47] It is better.
+[48:49] My brother is as close to the flat as possible.
+[48:51] It is better.
+[48:53] For that you will want it to be discharging.
+[48:55] Do you remember Minimum Discharging?
+[48:57] I told you this in Clamper
+[48:59] that Discharging should be Minimum.
+[49:01] If you want Minimum Discharging
+[49:03] then you have to
+[49:05] keep the time constant high.
+[49:07] Because the charging time
+[49:09] is directly charged from the diode.
+[49:11] When the time of discharging
+[49:13] is discharging through the resistance
+[49:15] then the time constant
+[49:17] must be high so that Discharging
+[49:19] should be Minimum.
+[49:21] This is what we have shown.
+[49:23] What we are saying is that
+[49:25] when
+[49:27] load gets connected
+[49:29] carefully understand
+[49:31] everyone
+[49:33] when load gets connected
+[49:41] capacitor
+[49:47] discharges
+[49:51] through resistor
+[49:59] when diode is off
+[50:01] when diode is off
+[50:03] capacitor discharges through resistor
+[50:05] but what we want
+[50:07] as I said
+[50:09] I will explain
+[50:11] some working
+[50:13] what will be
+[50:15] 0 to 90 degrees
+[50:17] what will be
+[50:19] capacitor
+[50:21] capacitor
+[50:23] capacitor
+[50:25] capacitor
+[50:27] capacitor
+[50:29] capacitor
+[50:31] discharges through
+[50:33] diode
+[50:39] capacitor, charges through
+[50:41] diode to Vm
+[50:45] after
+[50:47] omega t
+[50:49] equal to 90 degree
+[50:51] capacitor
+[50:55] discharges through R
+[50:59] Now my brother, the thing is that when your diode is off, listen to me carefully, when your
+[51:16] diode is off, so how many volts will it have across the diode, when diode is off, it will
+[51:25] be zero, so V diode is supply minus Vc, right? So we are saying whenever your capacitor
+[51:37] is discharged, whenever Vc falls below Vs, Vd is greater than zero, diode on, capacitor
+[51:54] again charges, okay brother, capacitor again charges, capacitor starts charging again,
+[52:08] brother, the thing is getting clear, capacitor starts charging again, tell me if everyone
+[52:15] is clear or not, tell me if everyone is clear or not, as soon as the voltage of the capacitor
+[52:24] decreases from supply, it will start charging again, first you know why it was not happening,
+[52:30] first the voltage of the capacitor stopped at Vm, now Vm will never go below supply,
+[52:36] supply is Vm sin omega t, when supply is Vm sin omega t, then the voltage of the capacitor
+[52:44] will never go below it, but now when the capacitor will be discharged, slowly its voltage
+[52:50] will start decreasing and slowly its voltage will start decreasing and it will be reduced from Vs,
+[52:56] your diode will be on, capacitor again will start charging, now during this time Vs will also
+[53:02] be changing because it is AC and Vc will also be changing due to discharging, now see
+[53:08] the waveform of this, see how it is working,
+[54:09] okay, now see first of all I will make the supply voltage for you, so how will the supply voltage
+[54:18] you will make, it will be like this, the supply voltage is changing, now what are you expecting
+[54:28] on the output, you are expecting this on the output from the halfway rectifier,
+[54:38] okay, you are expecting this, is this clear, now see here, see here that if we see,
+[54:57] the capacitor is fully charged to 90 degree, the capacitor is fully charged, now you know
+[55:05] that there is an exponential discharging in an RC circuit, but if you know that your time
+[55:11] is very constant, then the exponential curve looks like linear, so see what happens here,
+[55:18] almost linear discharging is seen, it is seen that the exponential will start falling like this,
+[55:24] now see as soon as the yellow curve is also telling the supply, as soon as you go down
+[55:31] here, your supply will increase again from VC, your supply will increase again from VC,
+[55:39] because the yellow curve is telling the supply itself, then the capacitor will be charged again
+[55:44] to peak, then it will be charged to peak again, then your discharging will start from here,
+[55:51] now during this time, when this sine curve is following, see here,
+[56:05] then you can say that your diode is on, so basically what I am talking to you here is that
+[56:23] when it was discharging or the capacitor, then my diode was off from here to here, and this
+[56:32] is a very small region, here my diode is on, tell everyone quickly, this is all clear,
+[56:41] it is clear, how does V0 look, tell me, but look at this, the ripple has been reduced from
+[56:52] earlier, the fluctuation was from Vm to 0, now from Vm to any value, which is not 0,
+[57:00] then this is the function of the filter to minimize the ripple, it cannot be 0, but it can
+[57:06] minimize the ripple, now what are we saying here to minimize to minimize fluctuation
+[57:19] in output or to minimize discharging
+[57:38] of capacitor, tau must be much greater than T, T is the entire waveform period, after which
+[57:57] the graph is repeated, so we are saying that tau should be much bigger than this time period,
+[58:03] if tau is bigger, then the discharging of capacitor will be very slow, how diode is on in the
+[58:11] negative half cycle, my child's negative half cycle was here, so here I have shown the diode
+[58:17] off, see, when I have shown the diode on, tell me, I have written the diode off below it,
+[58:24] I have not said it in the negative half cycle, this is a positive half cycle again, okay,
+[58:31] so till here the conceptually things are clear, do you understand, till here the things are
+[58:36] conceptually clear, now my child, let me tell you that the time period T I have shown,
+[58:41] I can divide it into two parts, how? In this, I will talk about one from here to here,
+[58:49] suppose T1, okay, and this is my small time, T2, right, so let me tell you that the time period
+[58:59] that is equal to T1 plus T2, okay, now a question is coming here, if tau is bigger,
+[59:07] then it will take time for charging, my child, how is the resistance involved during charging,
+[59:12] tell me, charging is directly from the source diode capacitor, right, discharging is happening
+[59:18] through the resistance, it is not in the middle of the source and capacitor, if it was here,
+[59:24] then we would have said that the charging of the capacitor would be slow by being RC high,
+[59:29] but here it is going directly to the current capacitor as the diode is on, the supply
+[59:34] voltage capacitor is coming, okay, now let's move ahead, now let's move ahead,
+[59:41] we say, look, during T1, we will talk about discharging, during T1, what will be the
+[59:51] initial voltage capacitor, what will be the Vm, so what will be the Vc, Vc is 0, e to the power
+[60:01] minus T by tau, so Vm, e to the power minus T by tau, okay, this will happen, I have
+[60:13] considered the point as T equal to 0, so this point is T equal to T1, now T equal to T1,
+[60:23] child, what is the voltage, let me say this, it is a minimum voltage, what is the voltage
+[60:34] Vmin, so we are saying at T equal to T1, Vc equal to Vmin, so Vmin is Vm,
+[60:56] I have understood this, I have written the discharging equation, I have written the discharging
+[61:02] equation, this is clear, tell me, the discharging equation is clear for the transient, okay,
+[61:11] now what are we saying, child, since tau is much much greater than T1, so the power minus
+[61:21] T1 by tau, this is written according to the Taylor series, this is called linear approximation,
+[61:31] see there are more terms ahead, the square one, the cube one, the power four one, there are many
+[61:37] terms ahead, but those terms are very small, because the denominator is big, now
+[61:44] this value is 0.1, so the square of 0.1 is 0.1, it would have been smaller, its cube would have been smaller,
+[61:52] its power four would have been smaller, because tau is very big, so this value is very small,
+[61:57] so its higher power would have been smaller, I have understood the gate aspirant, that is why
+[62:03] if you keep your mouth closed for a while, it would not have pain in the stomach, it would have
+[62:07] pain in the stomach, it would not have been unwell, the concept becomes clear, now you don't
+[62:12] know which one you live in, I have not understood till now, that we have to know right now,
+[62:18] let the derivation be completed, we will also get the result, right, but the stomach doesn't
+[62:23] feel pain immediately, now what I say here is that with this logic, what is my Vmin,
+[62:30] Vm, 1 minus T1 by tau, okay, 1 minus T1 by tau, now what we will say here is that if
+[62:44] I want peak to peak ripple, peak to peak ripple means what is Vmax minus Vmin, what is it,
+[62:55] Vmax minus Vmin, so this is it, Vmax is Vm, we took out Vmin, so Vm T1 by tau, okay,
+[63:20] Vm T1 by tau, okay, no problem, bye bye, I will also give your answer, I am blocking you
+[63:30] because you are spamming, the course of Dhandesar will start very soon, when a teacher
+[63:36] joins an academy, then it takes time to complete all the formalities, as their course
+[63:41] is created, as their educator profile is formed, there are many formalities, so all those
+[63:48] things will be completed, so he will start his course, it will start in the same month,
+[63:52] this is for sure, but you have to be patient, okay, and if you spam like this,
+[63:57] even then you will get the question genuine, Vm T1 by tau, now what I say here is that
+[64:03] approximately, listen carefully, approximately T1 is T, I say that the T2, the
+[64:13] charging time is very small, so ignore it, because it will take a lot of effort to
+[64:19] remove it, that is why we are doing it, okay, that is why we are doing it, T1 is considered T,
+[64:26] so delta V is Vm T by tau, now you can write T1 by F and you can write tau RC,
+[64:39] here F is the supply frequency, F is the supply or the best supply, I say F is the
+[64:49] frequency of output, because we were looking at the waveform of output, and here in the
+[64:57] half wave rectifier, F output is F supply, both the time periods are the same,
+[65:08] when we talk about the half wave rectifier, so both the time periods are the same,
+[65:13] that is why the frequency of output and the frequency of supply are equal, okay,
+[65:20] this thing has been cleared up to here, now you see this ripple is coming, this ripple
+[65:30] is coming, this R is inversely proportional, this ripple is coming, this R is inversely
+[65:36] proportional, therefore we have to minimize, the ripple ideally should be zero,
+[65:49] the graph should be constant, to minimize ripple, R must be high, if you are taking R high,
+[66:04] then you can say that therefore capacitive filter is used at high load resistance,
+[66:18] so the benefit of this is that when your load resistance is high, it is shining, okay,
+[66:28] this thing has been cleared up, it is so clear, now a child is asking sir, why is the charging
+[66:35] fast and why is the discharging slow, I had given the answer a little while ago,
+[66:41] that there is no resistance in the way of charging, when there is no resistance in the way of charging,
+[66:48] then the charging here will not be slow because of the resistance, but the discharging is
+[66:54] along with the resistance, so if there is R high, i.e. Tau high, then the discharging will be slow,
+[67:02] understand, okay, now let's see what we do, the game of charging and discharging,
+[67:13] let's approximate it, how do we approximate it, see I make it here, that your charging
+[67:22] sinusoidal is getting, that time is so small that it should also be linear, it is charging
+[67:28] , so consider it approximately linear, okay, now see what you did, I will tell you what type
+[67:44] you want to do, see this is vm, okay, now what we are saying is that the charging is happening,
+[67:55] the charging is also very much or do one thing, first of all, I make a yellow curve,
+[68:01] this is the output of the supply, see I made this, okay, this was the output of the half wave rectifier,
+[68:17] I am saying what will be the understeady state, first of all the capacitor will charge like this for the first time,
+[68:26] now after this you have shown the linear discharging, why have you shown the linear,
+[68:36] because your Tau was very high, now I am saying that the charging you want to show from here,
+[68:42] you want to show it, show it like this, instead of sign, show it like this, this type,
+[68:52] and then it will go like this, so by doing this, your triangular waveform will come,
+[68:59] what did you do approximately, you showed the graph instead of sign, so you can say that
+[69:05] here what is your v0, that is triangular waveform, so what can we say here, v0 charging is approximated
+[69:23] as linear, approximated as linear, so v0 is triangular, v0 has become triangular, okay,
+[69:48] now if v0 is triangular, then you know that the average of the straight line graph,
+[69:57] the average straight line graph always passes through the middle, the straight line graphs always pass through the middle,
+[70:19] so it happens like this, it goes through the middle, this is the average, so what happens here is the average is max plus min by 2,
+[70:37] so this is vm plus vm 1 minus T by tau, vm minus vm T by 2 tau, okay, this is done,
+[71:06] that is the average is vm minus ripple by 2, ripple by 2, average is maximum minus ripple by 2,
+[71:22] and if you write here, then this will be vm minus vm by 2 FRC, this 2 is here, T is written by F and tau is written by RC,
+[71:38] it is clear, some are saying that the curve is going straight, you have approximated the straight line,
+[71:56] you have approximated it from the straight line, and when some graph is made of straight line, then its average is midpoint,
+[72:09] that is maximum plus minimum by 2, maximum is visible, vm is there, minimum was just taken out, its value is divided by 2,
+[72:17] so it has been opened, what has it done, nothing at all, I understood the thing, tell me, I understood the thing,
+[72:27] the ripple here, look at this ripple, if I want to show you the ripple, how do you see this ripple,
+[72:35] look at this, look at this, this is basically ripple, maximum minus minimum, this is ripple, okay,
+[72:46] now look at this, what happens in this, son, that the sawtooth waveform or triangular waveform,
+[72:54] in this, the pink line I have shown from the center is average, there is fluctuation on both the sides of the average,
+[73:02] that is above and below, so if I remove the average, then I am saying that if we remove the average from V0 waveform,
+[73:27] then what will you say, tell me, then only ripple remains, ripple means harmonics, do you understand the thing,
+[73:43] think about it, son, if you remove the average, if you remove the DC, then the harmonics will be saved, okay,
+[73:52] now think about it, the fluctuation here is above and below the pink line, if I subtract the pink line from it,
+[74:04] then my fluctuations will be above and below the zero, okay, think about it, the pink line is 5 volts,
+[74:12] listen carefully, this pink line is 5 volts, your graph is going from 4.9 to 5.1, that is 0.1 below and 0.1 above,
+[74:22] if I subtract 5 from this graph, listen carefully again, the pink line is 5 volts, your graph is going from 4.9 to 5.1,
+[74:33] if you subtract 5, then what will remain, minus 0.1 to plus 0.1, understand, minus 0.1 to plus 0.1 will remain,
+[74:45] because if you subtract 5 from 4.9, then minus 0.1 and 5.1, then again 0.1, so minus 0.1 to plus 0.1 will remain,
+[74:59] if you subtract 5 from 5.1 to 4.9, then what was the fluctuation of 0.2, what was the fluctuation of 0.2,
+[75:11] when you removed the average from it, then it went from minus 0.1 to plus 0.1, right, that is ripple minus ripple by 2 to plus ripple by 2,
+[75:22] ripple was 5.1 minus 4.9, that is 0.2, when you removed 5, then it went from minus 0.1 to plus 0.1,
+[75:32] which means, minus ripple by 2 to plus ripple by 2, minus ripple by 2 to plus ripple by 2,
+[75:41] Mr. Usha, the yellow color is made because it should not be visible in the waveform, when you make a graph on the trace paper,
+[75:49] you will draw a little on the trace paper that you will make it stick on it, I made it just so that I can display the red waveform,
+[75:57] if I make it from dark color, then it will not understand, then the waveform, think and see,
+[76:04] so what did we say, when we remove, when we remove the average from it, understand the thing,
+[76:13] so where does the waveform go from, where does it go from minus ripple by 2 to plus ripple by 2,
+[76:20] okay, so it goes like this, charging, then discharging, long bc, then charging quickly, then long bc discharging,
+[76:32] like this, so this is V ripple by 2, I understood all this, how did I define minus ripple by 2 and plus ripple by 2,
+[76:45] this is it, this ripple is a triangular waveform, now if I say that I want rms value, rms value of ripple,
+[77:02] so what is the waveform of sawtooth, rms value amplitude by root 3, sawtooth and triangle are always rms amplitude by root 3,
+[77:17] okay amplitude by root 3, my son, do not create the controversy of force in my chat,
+[77:27] you have to pay attention to study, study, otherwise you can go, vm by 2 root 3 f rc,
+[77:36] this is the ripple of the harmonic, sorry, the rms of the harmonic or say the rms of the ripple,
+[77:42] ripple and harmonic are one and the same thing, ripple and harmonic are one and the same thing,
+[77:50] now we say voltage ripple factor, such an important concept is going on and people are thinking here,
+[78:00] what you did not write, root form factor square minus 1, this actually means that the harmonic rms by dc or average,
+[78:15] this is the sense, when I was telling you that when it was 0.48, this means that 48% of the content is of the harmonic,
+[78:25] 48% of the content is of the harmonic, okay, so you took out the rms of the harmonic, okay,
+[78:38] and you told the average now, now if you approximately vm the average,
+[78:48] if you approximately vm the average, then this will become, if you say that this ripple is very small compared to vm,
+[78:57] so here if you just do vm, then vm by vm will cut, then 1 by 2 root 3 f rc, it is clear,
+[79:05] 1 by 2 root 3 f rc, so here is the ripple factor, now if you look at this place, if your full wave rectifier is at this place,
+[79:18] if your full wave rectifier is at this place, then you know what the difference is in the waveform,
+[79:24] I will show you, okay, we do not need to complete the full wave rectifier again,
+[79:35] I am just telling you the conceptually and numerically, what changes will come,
+[79:42] see in the full wave rectifier, the negative half cycle does not disappear,
+[79:49] the negative is also positive,
+[80:12] now look at this, the output should come like this,
+[80:19] now what happens is that my capacitor is fully charged up to the top,
+[80:28] okay, my capacitor is fully charged up to the top,
+[80:31] now you know that the next positive half cycle will get it very soon,
+[80:35] it will not have to go up to the third cycle, see it went up to here, then it got charged up to here,
+[80:45] then it got charged up to here, so the ripple gets less in this, because now the interval is less for discharging,
+[80:52] first it was discharging up to the third cycle, then it was charged up to here, this time the charging came back quickly,
+[80:59] so here discharging gets less, okay, here discharging gets less,
+[81:10] so here the time period, the time period of output is the time period of input by 2,
+[81:18] half is the time period, that is, you can say the frequency of output is 2 times the supply frequency,
+[81:28] output frequency is 2 times the supply frequency,
+[81:32] so we say here that V peak to peak frequency double is Vm by 2 FRC,
+[81:43] okay, frequency double, V ripple RMS frequency double,
+[81:50] so first 2 root 3 was coming down, now 1 by Vm by 4 root 3 will come, okay, this is done,
+[82:00] voltage ripple factor 1 by 4 root 3 FRC, this will come,
+[82:10] that's it, what did you do, instead of F, you put 2F, because the frequency has already doubled,
+[82:18] okay, so the frequency has already doubled, then look, the ripple has also reduced, the ripple factor has also reduced,
+[82:24] the ripple or the harmonic RMS has also reduced, so we just replace F by 2F
+[82:35] in full wave rectifier, it's shining, tell everyone, it's clear, it's clear to everyone, it's clearly clear, okay,
+[82:51] you understood the C filter, so look, it can be a formula-based question, it can be the formula
+[82:58] that you are looking at in front, it can also be a conceptual question,
+[83:03] where you have to solve by using the network, like maybe you have to apply the transient equation,
+[83:12] or maybe you have to apply the current, any question can be of this type,
+[83:18] which can test the basics of your network, when you will ask a question, you will see,
+[83:28] let's go, now what are we saying, look, I have written the same thing here,
+[83:34] full wave rectifier, ripple voltage and ripple factor remain the same, but instead of F, what happens, 2F,
+[83:40] the next thing is the inductive filter, what are we saying in the inductive filter,
+[83:47] that as the capacitor was parallel to the resistance, so that the ripple of the voltage is changed,
+[83:53] or minimized, the inductor will be in the series, so that it carries the same current,
+[83:59] which is going to the load, if the current of the load passes through the inductor,
+[84:04] then the current of the load will be smooth, the fluctuation will be less in the current of the load,
+[84:10] do you understand, so the inductor minimizes fluctuation, minimizes fluctuation in the load current,
+[84:28] in the load current, okay, now look, if you see the output of the full wave rectifier,
+[84:37] then it looks like this, tell me, we are talking about V01, I am not talking about the final load,
+[84:44] I am not talking here, RK cross, I am talking immediately after the rectifier,
+[84:49] the output will look like this, now this is a periodic function,
+[84:53] do you understand, this is a periodic function, okay, it is periodic, E1 is also there,
+[85:04] and E1 is a half wave symmetry, like the odd half wave symmetry,
+[85:13] in which there are odd harmonics, so when there is a periodic function, then its Fourier series can be written,
+[85:24] and because this is E1, E1 means only cosine terms, only cosine terms,
+[85:33] and E1 is a half wave symmetry, this means, which frequency will come, E1 frequency,
+[85:44] do you know how you can understand E1 frequency, its frequency is 2FS, so the first term will be 2FS,
+[85:54] next double 4FS, next triple 6FS, then 4 times 8FS, so how is it going, 2FS, 4FS, 6FS, 8FS,
+[86:06] so E1 frequency is visible, whereas actually E1 was not there, it was F2F3, F4F,
+[86:12] because F itself is 2FS, so what are all the terms, E1, do you understand,
+[86:18] so all the E1 multiples of FS, the odd multiple of F will also be Fs E1 multiple, because F is equal to 2FS,
+[86:29] tell me, does everyone understand this, so this E1 half wave symmetry is actually nothing,
+[86:34] this means that the frequency itself is not doubled, so the odd multiples were also converted to E1 multiples,
+[86:42] so this is E1 half wave symmetry, so this E1 half wave symmetry is not a very big concept,
+[86:48] it is a juggard, how is it a juggard, if the frequency is doubled then all the E1s are done,
+[86:55] now look at my brother, in this, what we have is that we have given a periodic function,
+[87:02] so we write its Fourier series, sir why are you writing Fourier series, do you know its reason,
+[87:15] what is the reason, this is your V01, this V01 is a periodic, if it is a periodic,
+[87:22] there will be a lot of harmonics in it, and do you know for every harmonic frequency,
+[87:28] the reactance of the inductor will be different, for example, for the fundamental, omega L, for the second, 2 omega L,
+[87:35] for the third, 3 omega L, so the voltage that goes into the resistance every time will be less,
+[87:41] why will it be less, as the reactance of the inductor increases, both are in series,
+[87:48] so the voltage of the inductor will increase, look, if this reactance is very big,
+[87:54] then its cross voltage will be more, the cross of resistance will be less,
+[87:59] so as the frequency increases, its impedance will increase, the voltage of the cross of resistance will be less,
+[88:06] do you understand, do you understand the reason, because when your harmonics are there,
+[88:12] for every harmonic, the reactance of L will be different, so when you apply the voltage division,
+[88:17] then you will have to apply it separately, you cannot directly do the voltage division of V01,
+[88:22] because its impedance is dependent on the frequency, if there were two resistances,
+[88:27] then we would have applied the voltage division, okay, so if we write the Fourier series,
+[88:34] so look, the first average value comes, 2 Vm by Pi, okay, then look,
+[88:54] you know that your even multiple is going on, 2 4 6 8, so 4 Vm, okay, I am not deriving,
+[89:07] I am telling you the Fourier series directly, because Fourier series does not matter for us,
+[89:12] my brother, the final result will matter for us, cos k omega naught t, okay,
+[89:21] cos i terms are coming, even multiples are coming and this is the coefficient,
+[89:25] this 2 Vm by Pi is clear, right, this is the output of the full wave rectifier,
+[89:30] now you will understand one thing, if you want current, then the voltage by impedance is there,
+[89:36] right, if you want current, then you have to do the voltage by impedance,
+[89:42] now sir, how does the impedance depend on the frequency, I say that the resistance of Z
+[89:49] will remain the same with the frequency, but look, the inductance has changed,
+[89:55] has the inductance changed, so you write it as mod Z k, angle theta k, here mod Z k
+[90:07] will be the magnitude of this impedance, r square plus k omega naught l square and the
+[90:19] angle of this impedance of theta will be tan inverse k omega naught l by r, now
+[90:33] you see here, dear, now if I write current, then look, there will be no contribution of
+[90:42] the inductor in DC, think about it, the inductor will be short for DC, so this is the DC component,
+[90:50] now here the AC component, 4 Vm k minus 1 k plus 1 Pi mod Z k cos k omega naught t minus
+[91:17] theta k, this will be understood, the AC component you have divided it by impedance and
+[91:26] the DC component you have divided it by resistance because there is no inductor in DC, now you
+[91:33] understand one thing dear, as k increases, okay, mod Z k will increase, look a little k omega naught
+[91:47] l, then this k minus 1 k plus 1 factor will also increase, it will increase, sir, so you can say that
+[91:55] the current of the AC component will decrease, all the terms of the denominator are increasing,
+[92:02] all the terms of the denominator are increasing, k minus 1 k plus 1 and Z k, okay, k minus 1 k plus 1
+[92:11] and Z k, so when all these terms are increasing, then your value is decreasing, now we are only asking
+[92:19] why sir you solve example, my brother write in Hindi, no problem, it is not bad that
+[92:25] English does not come, why do you solve example, now what does this mean, why do you solve
+[92:33] examples, this means why do you solve examples, okay, why sir you solve example, now there is
+[92:39] no sense of this, and still I believe that you are asking why I solve examples, so that
+[92:46] you people understand how the questions will be made and how to tackle them, this is the
+[92:51] same thing, now look dear, when the higher order term will be ignored by you, then I am saying
+[92:59] because it will be very less, so I am saying that consider up to first AC term, consider the first AC term
+[93:13] and consider the first AC term, so you will say I is to Vm by Pi and in the first AC term
+[93:22] you will keep K2 in the first AC term, so look 2 minus 1 1 2 plus 1 3, so 4 Vm by 3 Pi
+[93:38] okay, this is your AC term, this is your AC term, now when we know DC and AC, then we can
+[93:59] get V0 okay, we can get V0, V0 is IR 2 Vm by Pi okay, 4 Vm R by 3 Pi mod Z2 cos 2 omega
+[94:28] naught T minus theta, this will come, this will be clear, this will come to you, now what I say
+[94:38] that this AC voltage, this DC voltage, if you say here that I need ripple factor, if you say that I need
+[94:51] ripple factor, then I will say V0 AC RMS by VDC RMS or VDC okay, so we represent the ripple factor
+[95:09] what will be its RMS, it will be very easy sir, single AC is the AC term, so peak by root 2, peak by root 2
+[95:30] okay so pi by pi fails, Vm by 2 by 3 root 2 and root 2 by 3
+[95:37] There is R here, root 2 by 3 R by mod Z2, now this mod Z 2 is under root R2 plus 2 omega naught L2
+[95:58] This is R square plus 2 omega 0 L square.
+[96:02] This is approximately, say that L is very big.
+[96:06] So this is 2 omega 0 L.
+[96:08] If L is very big, then 2 omega 0 L is very big.
+[96:14] So gamma is approximately root 2 by 3 R by 2 omega 0 L.
+[96:24] R by 3 root 2 omega 0 L.
+[96:30] Now my brother, understand one thing here.
+[96:35] This is directly proportional to R.
+[96:38] So what will you say?
+[96:40] That L filter should be used for low R.
+[96:53] For low resistances.
+[96:56] The capacitor you said will be used for high resistance.
+[97:00] So this is the important part of this ripple factor.
+[97:03] The entire derivation you have done is not important.
+[97:08] How did Fourier series come? How did AC come out?
+[97:11] Then AC by DC.
+[97:13] What is important is this ripple factor which is proportional to R.
+[97:17] Okay, this is your proportional to R.
+[97:20] Now I will do one thing.
+[97:21] Let me ask you some questions.
+[97:22] I will make you do these things later.
+[97:24] We will do the rest of the filters.
+[97:26] Just see this question.
+[97:28] I will make you do the rest of the filters.
+[97:32] The figure shows a half wave rectifier with a 475 micro farad capacitor.
+[97:40] The load draws a constant current of 1 ampere from the source.
+[97:44] So the load which was shown by the resistance,
+[97:47] What did you show instead of that constant current?
+[97:51] The figure also shows the input voltage.
+[97:55] The figure also shows the input voltage V i
+[97:58] and the output voltage V c.
+[98:00] This is the lower V c.
+[98:02] And peak to peak ripple U.
+[98:04] What is this peak to peak ripple?
+[98:06] What is U saying?
+[98:08] The input voltage is a triangular wave with an amplitude of 10 volts.
+[98:12] Yes, it is 10 or minus 10.
+[98:14] And time period is 1 millisecond.
+[98:16] Okay, this time period is from peak to peak.
+[98:20] You say this is 1 millisecond.
+[98:22] Okay, this is also okay.
+[98:24] Now what is the value of U?
+[98:27] U is asking you.
+[98:29] Okay, that is peak to peak ripple.
+[98:32] I can understand that the figure of V naught also shows
+[98:35] that it is slowly discharging from a minimum to maximum.
+[98:44] It will not be analog.
+[98:46] The link is hidden like PowerStream.
+[98:48] How will the link be made?
+[98:50] The video should be public for that.
+[98:52] And I am not going to public the analog video right now.
+[98:58] Right?
+[98:59] I will public all the videos for you.
+[99:01] Maybe it can be in January.
+[99:03] Maybe it can be in December.
+[99:05] But if you want to sit till then,
+[99:07] you will not come live.
+[99:08] You will not do it on the same day.
+[99:09] You will see analog in January.
+[99:10] You can do it.
+[99:11] But there is no surety at that time.
+[99:13] I will do it.
+[99:14] It can happen.
+[99:15] It can happen.
+[99:16] But I will not give any guarantee now.
+[99:21] You are used to seeing recorded content.
+[99:24] What happens with that?
+[99:26] Content quality falls.
+[99:27] When children do not come,
+[99:28] they do not want to study.
+[99:46] What difference does it make to us?
+[99:48] Will constant load current be inductive or not?
+[99:50] It is a very easy and very simple question.
+[99:54] It is a very easy question.
+[100:04] Should I make it?
+[100:06] Look.
+[100:08] You know that the time of discharging
+[100:11] is much bigger than the time of charging.
+[100:14] Correct?
+[100:15] You know this.
+[100:19] So you say that T1 is approximately
+[100:22] 1 mT.
+[100:23] You say that.
+[100:27] When the capacitor discharges,
+[100:30] this diode will be off.
+[100:32] During discharging.
+[100:37] When the capacitor discharges,
+[100:39] the current will go to 1 ampere.
+[100:44] So the current will go to 1 ampere.
+[100:46] Now when the current is discharged from 1 ampere,
+[100:49] then you can say that CdV by dT is 1.
+[100:52] You should say that in discharging,
+[100:54] minus CdV by dT is 1.
+[100:58] It is a constant current.
+[101:00] Can you say that?
+[101:04] Tell me quickly.
+[101:05] In discharging,
+[101:07] you can say that minus CdV by dT is 1.
+[101:11] Now here you can see that it is linear discharging.
+[101:22] Keep showing linear discharging in the VC graph.
+[101:27] So when the capacitor discharges,
+[101:30] then its voltage is VmaxVmin.
+[101:36] VmaxVmin.
+[101:38] So final voltage is Vmin.
+[101:40] Initial is Vmax.
+[101:42] How much time is going on in T1 time?
+[101:46] So this is your Vmax minus Vmin is U.
+[101:56] So U is T1 by C.
+[101:58] Got it?
+[102:00] Vmax minus Vmin is Ripple.
+[102:03] Now this T1 is approximately T.
+[102:09] T is 1 by F.
+[102:12] See now.
+[102:16] It is 475 and the time period is 1 millisecond.
+[102:20] So 1 millisecond by 475 microfarad.
+[102:29] So 1,000 by 475 will come.
+[102:31] How much is coming?
+[102:32] 1,000 by 475, 2.1.
+[102:36] So this is coming.
+[102:39] Is it clear?
+[102:41] Yes, my analog and PYQ will be enough if you follow it seriously.
+[102:46] Take these terms and conditions together.
+[102:49] If you do it seriously,
+[102:51] if you don't do it seriously, then nothing is enough.
+[102:54] A full wave rectifier with a load resistance of 15 kilo ohms
+[102:59] uses an inductor filter of 15 Henry.
+[103:02] Peak value of applied voltage Vm is 250.
+[103:05] Frequency is 50 cycle per second.
+[103:08] Cycle per second means Hertz.
+[103:12] DC load current and the DC output voltage.
+[103:17] DC load current and the DC output voltage.
+[103:22] Okay, you have to find out.
+[103:32] Okay.
+[103:50] Dear, that is why I am asking Arvind Ji a question in class.
+[103:53] See, it is not like this question should be made to you.
+[103:56] It will not be made, it is fine.
+[103:58] But when you see so many questions in the class,
+[104:01] 5 questions, 10 questions and then you will make 10 questions at home,
+[104:05] then it should be made.
+[104:10] Dear, put open circuit test, short circuit test in the short notes.
+[104:14] All the questions are there.
+[104:16] And if someone, like today I have told you the formula in the filter,
+[104:19] put the formula, put the rectifier table today,
+[104:22] put the method in the clamper to charge the capacitor.
+[104:26] These are the things with which the questions are made.
+[104:29] Look, dear, DC load current will be 2 Vm by Pi R.
+[104:37] Now I had told you that the DC voltage is 2 Vm by Pi.
+[104:43] See, it is 250.
+[104:46] Pi is 15 kilo ohm.
+[104:51] How much is it coming?
+[104:57] 250 i.e. 500 by Pi.
+[105:01] 10.61 milliampere.
+[105:04] And DC load voltage is asking.
+[105:08] It is 2 Vm by Pi only.
+[105:11] It is simple, isn't it?
+[105:14] Why?
+[105:15] There is no role of the inductor because it talked about the DC component.
+[105:20] The role of the inductor comes in the AC component.
+[105:26] Got it? The question is very easy.
+[105:33] A half-wave rectifier with capacitor filter is to supply 30 V to a 500 ohm load.
+[105:40] If ripple factor is 0.01, frequency is 50 Hz.
+[105:44] Calculate value of capacitance, average and the peak diode current.
+[105:50] Come on, make it.
+[105:57] Half-wave rectifier has a capacitor filter.
+[106:00] It has to supply 30 V to a 500 ohm load.
+[106:04] Ripple factor is 0.01, frequency is 50 Hz.
+[106:08] I have to tell you the capacitance.
+[106:11] Do you remember the ripple factor?
+[106:13] How much did you take out?
+[106:18] Don't forget.
+[106:20] Remember these to remember the formula of the filter.
+[106:24] Okay?
+[106:26] Only the filter is such a topic in the entire diode circuit where the formula works.
+[106:30] Your luck is good in that too.
+[106:32] There is only one filter in your gate that is asked in the exam.
+[106:39] So, see how the capacitance will come out.
+[106:41] It is given as 0.01.
+[106:43] Half-wave rectifier doesn't have to do the frequency twice.
+[106:48] Keep 50 Hz here.
+[106:50] R is 500 and asking C.
+[106:57] 250, 500, root 3.
+[107:02] 1.154 millifarad.
+[107:08] See, the big values come.
+[107:09] It doesn't come in micro-micro.
+[107:11] It is coming in milli.
+[107:13] Average and the peak diode current.
+[107:17] Average and the peak diode current.
+[107:21] How much will be the peak current?
+[107:22] It will be simple.
+[107:23] The peak will be your Vm by R.
+[107:28] Right?
+[107:29] It will be Vm by R.
+[107:34] Because across the resistance, peak voltage can be Vm.
+[107:37] So, Vm by R can be Vm only.
+[107:46] You should consider 30 volts as constant.
+[107:50] That is Vm and that is your average.
+[107:55] Do you understand?
+[107:56] What am I saying?
+[107:58] You should consider 30 volts as your Vm.
+[108:02] And that is the average.
+[108:03] Because the average value is very close to Vm.
+[108:06] R is much, much smaller than average.
+[108:10] That is why the peak value and average value are almost the same.
+[108:14] Do you remember in the capacitive filter?
+[108:16] When I took out the gamma, I put the average Vm at the bottom.
+[108:20] Now, we are talking about the average.
+[108:23] When does the current flow from the diode?
+[108:25] The current flows from the diode at the time of charging.
+[108:29] So, think about how much the current will be.
+[108:32] When the capacitor is charged, then the current passes from the diode.
+[108:38] So, according to me, the average diode current will be
+[108:47] the capacitor will be charged.
+[108:49] Vm is Vmax.
+[108:50] How are you taking out 18?
+[108:52] Are you doing 2im by pi?
+[108:56] There is no direct formula like that.
+[108:59] You think that when the capacitor will be charged,
+[109:02] then the current will pass from the diode.
+[109:05] So, we have to talk about that time.
+[109:07] When the current is flowing from the diode,
+[109:09] we will have to take out the average during that time.
+[109:13] How will you do it?
+[109:19] You have gamma, you know AC, DC.
+[109:36] According to me, the average and peak should be the same.
+[109:42] This should be 60mA.
+[109:44] Do you know why?
+[109:46] See what I say.
+[109:48] Pay attention.
+[109:50] What do I say?
+[109:52] Pay attention.
+[110:04] What do I say here?
+[110:06] That this is C and this is R.
+[110:10] The average current in the capacitor is zero.
+[110:13] Do you know why?
+[110:15] Because the capacitor opens for DC.
+[110:20] So, whatever DC current is going here,
+[110:28] according to KCL,
+[110:30] the same DC current will be coming from the diode.
+[110:32] What does the average mean?
+[110:34] The average means DC.
+[110:36] So, the DC current of the diode will be the same current of your load.
+[110:40] That is why the average should be 60mA.
+[110:43] Do you understand?
+[110:44] Vm by R.
+[110:45] In DC, the inductor shortens.
+[110:47] The capacitor opens.
+[110:50] See the next one.
+[110:51] A half wave rectifier is connected with a power supply of 50 hertz.
+[110:55] Provides a peak output of 50 volts across a 500 ohm resistor.
+[111:02] So, the peak output in the capacitor filter is approximately the same.
+[111:06] The average output is also the same.
+[111:09] 0 to 90 and T1 to T.
+[111:12] 0 to 90 has to be ignored, Saurav.
+[111:15] Because it happens only in the first cycle.
+[111:18] If the infinite number of cycles is formed in the next cycle,
+[111:20] we can never see that part.
+[111:23] Do you understand?
+[111:24] If 0 to 90 goes ahead, then it will go ahead.
+[111:26] If the capacitor is charged from 0 to full,
+[111:29] then what will happen every time?
+[111:31] The capacitor will go from max to max.
+[111:36] 0 to 90 is not considered.
+[111:39] If it is required to design a capacitor filter
+[111:42] which can limit the peak to peak voltage
+[111:45] across the load to 10 volts,
+[111:47] find value of capacitor.
+[111:49] Are you getting negative?
+[111:51] So, why are you getting negative?
+[111:54] There is a lot of time in the gate.
+[111:56] It is 4 months.
+[111:58] You get negative like this.
+[112:01] See the gate channels.
+[112:03] There is a strategy in the last month also.
+[112:05] How can 50 or 60 numbers come?
+[112:07] When we give you the strategy for the last month,
+[112:09] then why are you getting demotivated 4 months ago?
+[112:26] There is a lot of time.
+[112:28] It is 4 months.
+[112:30] Get ready.
+[112:32] Make a schedule.
+[112:34] You will keep following the schedule.
+[112:36] There is no problem.
+[112:38] Why are you getting scared?
+[112:40] I am sitting right now.
+[112:42] If I was not with you,
+[112:44] then I would have been scared.
+[112:50] I will announce new initiatives for you.
+[112:53] It will take some time.
+[112:55] Everything will be fine.
+[112:57] See, we had derived the formula.
+[113:00] So, how much is C?
+[113:02] 1 by 10 R.
+[113:04] 50 to 50 is cut.
+[113:06] 1 by 5000.
+[113:08] So, 0.2 millifarad.
+[113:12] 0.2 millifarad.
+[113:17] No problem.
+[113:19] Priyanshu, the first thing is that
+[113:21] Mr. Vishal has not gone anywhere.
+[113:23] And the second thing is that
+[113:25] if you are watching a recorded course
+[113:27] or an old course,
+[113:29] then that video will remain for the next 2 years.
+[113:31] Why are you getting scared?
+[113:33] Dear,
+[113:35] my students will not have any kind of
+[113:37] damage to their studies.
+[113:39] When I came to even an academy,
+[113:41] even then I brought all the children of my Creatrix.
+[113:43] If I did not have any damage,
+[113:45] then how will I have any damage now?
+[113:47] Make a measurement.
+[113:49] Dear, first do this.
+[113:51] Then it is the same thing.
+[113:53] Why are you running after the subject of the number?
+[113:55] It is not more than 2 numbers.
+[113:57] The measurement is 2 or maximum 3 numbers.
+[113:59] Why are you running after that?
+[114:01] When this subject is going on,
+[114:03] do it properly.
+[114:05] Yes, full wave rectifier using two ideal diodes.
+[114:07] Which one is the diode?
+[114:09] Is the center tapped?
+[114:11] VDC and VMR, DC and peak value
+[114:13] across our resistive load.
+[114:15] PIV,
+[114:17] and VDC,
+[114:19] what will happen?
+[114:21] What will happen?
+[114:25] V will come.
+[114:27] In the center tapped,
+[114:29] PIV2VM comes.
+[114:33] Yes, this video will be private tomorrow.
+[114:35] And the public who are still here
+[114:37] will be private today.
+[114:39] I will private them after this session.
+[114:41] Enough full wave rectifier
+[114:43] the input is from a 30 0 30
+[114:45] transformer.
+[114:47] I told you that this means
+[114:49] the center tapped
+[114:51] and every secondary is across 30 volts.
+[114:53] There are two parts of the secondary
+[114:55] both are across 30 volts.
+[114:57] The load resistance is RFB.
+[114:59] The average voltage,
+[115:01] tell me.
+[115:03] RL and RF both are given.
+[115:05] Tell me the average.
+[115:13] B is coming.
+[115:15] See this 30 0 30
+[115:17] means
+[115:21] each half of secondary
+[115:47] is coming.
+[115:51] So this is done.
+[115:53] Why did you put root 2?
+[115:55] To make peak.
+[115:59] So what is coming?
+[116:01] 24.55.
+[116:03] We forgot to put one thing in this.
+[116:05] Because you have given
+[116:07] these resistances.
+[116:09] So the voltage division factor will also be made.
+[116:17] 100 by 110.
+[116:19] I think this will be B.
+[116:21] Everyone is getting B.
+[116:23] Will you also put voltage division?
+[116:25] Rectification
+[116:27] efficiency.
+[116:29] Come on everyone.
+[116:31] Rectification
+[116:33] efficiency.
+[116:35] Rectification
+[116:37] efficiency.
+[116:39] Rectification
+[116:41] efficiency.
+[116:43] Rectification
+[116:45] efficiency.
+[117:01] What is this?
+[117:05] This is a center tapped rectifier.
+[117:15] Rectification
+[117:23] Rectification
+[117:25] Test
+[117:27] Full wave rectifier the center tapped
+[117:29] See this I show
+[117:31] the table made from there.
+[117:35] What did we write
+[117:37] Rectification efficiency
+[117:39] see.
+[117:45] see here 81 came from center tapped rectifier, so you will put the same option near 81,
+[117:55] otherwise it should be 81 exactly, I don't know why they have changed the option, because
+[118:01] there is no change in the question, the question is if you look at a standard center tapped rectifier,
+[118:06] now if you think that the resistance of the load and source is not kept, then it is anyway
+[118:11] up and down, it gets cancelled, so it should come near 81%, so according to me, you can put it as close as to 81%,
+[118:20] percentage regulation, percentage regulation, what did I tell you son, that if the diode
+[118:28] resistance was not there, then how much voltage would have been and how much was the resistance with,
+[118:33] so with resistance, now you told me 24.55, without resistance what would have been 2Vm by Pi,
+[118:49] the one I wrote earlier, 27, do you know how it was written, I know the value of 2Vm by Pi is 0.9,
+[118:59] so I wrote it like this, so percentage regulation, you do it like this, original value, practical value
+[119:09] by original value, do you understand, this always happens when it comes to regulation, so 2.45,
+[119:20] 9.07 is coming, so we can write 10%, closest is B, 10%, is it clear, 9.9 is coming,
+[119:35] 24.55 is also coming, so 2.45, okay, okay, so this is clear, this is your assignment,
+[119:48] make it, we will discuss the assignment, move ahead, now let's make it, before starting your BJT,
+[119:55] I will give all the assignments of this entire unit, now we will do one thing tomorrow,
+[120:00] tomorrow we will do the remaining filter and do the assignment of Clamper and Rectifier,
+[120:05] let's do one thing, tomorrow the remaining filter part and assignment part, tomorrow we will take these things,
+[120:11] then we will go to the part of the voltage regulator, okay, everyone will go, so tomorrow we will do this,
+[120:19] there is no problem, the assignment of Clamper and Rectifier and along with it, this is the filter part of you,
+[120:26] no dear, it is not that you will get the course of Gate Academy, but the teachers of Gate Academy will teach on Plus,
+[120:32] so whatever courses they will launch, they will be included for you, okay,
+[120:37] and you can apply PYQ from here, this week our diode will be over, so take care of all the PYQ of the diode,
+[120:45] okay, apart from this, if you join Plus or Iconic, you will get top teachers in both, okay,
+[120:52] here you will get digital notes which will be uploaded on the app, test series will be included,
+[120:58] your customized doubt will be solved, that is, if you post any new doubt,
+[121:04] the children of Iconic will get the video solution, printed notes will be delivered to your home in Iconic,
+[121:10] you will be assigned a mentor, a strategy will be made, study plan and interactive open house session will be yours,
+[121:17] and what you have to do, dear, you have to choose Plus or Iconic, you have to decide the duration,
+[121:23] and then you have to use the code ANKIT ESE to get the maximum discount,
+[121:28] and look, these are all my rankers of Gate 2022, dear, so you can see all these rankers,
+[121:35] how amazing we have broken them, and our target, dear, is to break even more than this in Gate 23,
+[121:43] that is why you have to apply the code ANKIT ESE, okay, and if there is a financial issue, dear,
+[121:50] you can go for EMI where the loan is approved in just 2 hours, then you can pay your fees month on month,
+[121:56] and there is no interest in this, you will give a minimum paperwork in your house,
+[122:01] of a member of your house, an Aadhar card, a Pankard, a member of whose salary comes so that their loan is approved,
+[122:08] and here you see that in the latest batch, Mr. Manish is teaching you the network, I am teaching the power system in the morning,
+[122:17] so you can attend this batch, this is my telegram channel, it will be connected to this channel,
+[122:22] you will get all the latest information, the rest is my team's contact number, dear,
+[122:28] here you can call, if you are a YouTube student, then press 2 plus and the Iconic one, press 1,
+[122:34] and if you want a PDF of this session, then go to the app's homepage, go to the community,
+[122:39] go to discover and you will get all the PDFs there, okay, so thank you everyone, dear,
+[122:46] the teachers of Gate Academy may be able to start around September 15th, 20th,
+[122:51] because it takes a little time to complete the formalities, to form profiles, to launch courses, okay,
+[122:57] dear, it doesn't happen that I put the hidden video special of Hennelok, why should I put it,
+[123:02] when I said it would be private in 24 hours, then you see it in 24 hours,
+[123:06] after that I am giving the PDF for revision, now this greed will never end, okay,
+[123:11] what else is there, only one hour is free, dear, it is a decision of higher management,
+[123:16] I said but I can't do much about it, how to read, give some tips, dear,
+[123:21] whatever you read from here, go home and revise these notes, and solve the assignment I gave,
+[123:26] and if the chapter ends, then solve the PYQ, if you do this much, then the command will come on the subject,
+[123:32] okay, Ashutosh, dear, it depends on which course of Gate Academy you are giving,
+[123:38] I think some children are given subscription of an Academy, according to different courses,
+[123:43] different things will be done, so you will be able to tell this to Dhandesar better,
+[123:47] to be very frank, I have no idea about this, and if you are on YouTube, dear,
+[123:51] I am always on YouTube, with Gate Academy or Unacademy, it doesn't connect,
+[123:55] you could have read from me on YouTube, right, so now we will meet tomorrow at 11.30, okay,
+[124:01] come on, thank you everyone, let's crack it.

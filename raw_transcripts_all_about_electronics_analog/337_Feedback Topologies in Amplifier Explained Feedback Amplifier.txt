@@ -1,0 +1,198 @@
+Title: Feedback Topologies in Amplifier Explained | Feedback Amplifier
+URL: https://www.youtube.com/watch?v=OoNluE5RLNg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oil Labo Electronics.
+[00:10] So in this video, we will see the different feedback apologies for the feedback amplifier.
+[00:16] So in the previous video, we have seen the general structure of the feedback amplifier
+[00:21] and we have also seen the effect of the naked feedback on the different characteristics
+[00:25] of the amplifier in detail.
+[00:27] So one of the property of the naked feedback is that heat modifies the input and output
+[00:31] impedance of the amplifier.
+[00:34] So this modification of the impedance depends on the feedback topology of the amplifier.
+[00:40] So if you see the general structure of the feedback amplifier, then it can be stopped
+[00:44] the two parts.
+[00:45] That is the sensing part and the mixing part.
+[00:49] So the sensing part senses the output signal and a fraction of the output signal is sent
+[00:54] to the input side.
+[00:56] So here this output signal can be the voltage or the current.
+[01:01] Similarly, the feedback signal which is mixed with the source signal can be the voltage
+[01:07] or the current.
+[01:08] So based on either current or voltage, both on the sensing as well as the mixing side,
+[01:13] we will have total four different feedback apologies for the amplifier.
+[01:18] That is voltage series, voltage shunt, current series and the current shunt.
+[01:23] So in all four feedback apologies, this first term shows the parameter which is sampled
+[01:28] at the output side.
+[01:30] And this next term shows the type of the connection of the feedback network with the input side.
+[01:36] So the different text books use a different naming for this for different feedback apologies.
+[01:42] So during our discussion, we will also see the alternate naming for this for topologies.
+[01:47] But in general, this is how we are going to represent this four feedback apologies.
+[01:53] So based on the type of the topology, the input and the output impedance of the amplifier
+[01:57] will change.
+[01:59] So the first feedback topology is the voltage series feedback.
+[02:03] So in this topology, the sampled signal is voltage and the signal which is sent to
+[02:07] the input side is also voltage.
+[02:10] And if we see the actual structure of this feedback topology, then this is how it can be
+[02:15] represented.
+[02:16] So here to sample the output voltage, the voltage across the two terminals of the basic amplifier
+[02:22] is connected to the feedback network.
+[02:25] So basically that is the shunt connection.
+[02:28] That means on the output side, when we want to sample the voltage, then the connection
+[02:33] has to be a shunt connection.
+[02:35] And through the shunt connection is output voltage is connected to the feedback network.
+[02:41] And as its name suggests on the input side, we will have the series connection.
+[02:46] So basically on the input side, this feedback voltage is subtracted from the source signal.
+[02:52] And the difference between them will be available as an input to this basic amplifier.
+[02:58] So if we apply the KVL in this loop and this input voltage V in, is equal to VS minus
+[03:03] VF.
+[03:05] That means whenever we want to subtract the two voltage sources, then on the input side,
+[03:10] it has to be a series connection.
+[03:12] So in general, we can say that when we want to sample the voltage, then on the output
+[03:17] side, it has to be a shunt connection.
+[03:20] And similarly on the mixing side, then we want to add or subtract the voltages, then
+[03:25] it has to be a series connection.
+[03:27] So alternatively, this feedback topology is also known as the shunt series feedback.
+[03:33] Because here on the output side, we have a shunt connection.
+[03:37] While on the mixing side, we have the series connection.
+[03:40] And in minute X-bok, sometimes it is also referred as the voltage voltage feedback.
+[03:45] Because here, both sensing signal, as well as the mixing signals are voltages.
+[03:51] And that is why this topology is also known as the voltage voltage feedback.
+[03:56] So typically, if you see all the voltage feedback amplifiers, then they use this feedback topology.
+[04:03] Because as you know, in the voltage amplifier, the input is the voltage signal, while the
+[04:08] amplifier signal is also voltage signal.
+[04:11] So in this topology also, if you see, then on the input side, we have the voltage source.
+[04:15] But at the output side also, we have the voltage.
+[04:19] And that is why in the voltage amplifiers, this feedback topology is used.
+[04:24] So now let us see in this feedback topology, how the input and output impedance gets modified.
+[04:30] So whenever we have a shunt connection, and the impedance reduces.
+[04:35] So here, if you see, then on the output side or on the sensing side, we have the shunt connection.
+[04:42] And because of that, here the output impedance will reduce.
+[04:46] So let us say without the feedback, if the output impedance of this basic amplifier is
+[04:50] equal to R0, and with the feedback, this output impedance will become R0 divided by 1
+[04:56] plus A beta.
+[04:59] That means in this topology, because of the shunt connection on the output side, the
+[05:03] effect the output impedance will reduce.
+[05:06] So similarly, when we have a series connection, then the effect impedance will increase.
+[05:12] So here on the input side, as you can see, we have the series connection.
+[05:16] And because of that, the overall input impedance of this feedback amplifier will increase.
+[05:22] So let us say without the feedback, if the RI is the input impedance of this basic amplifier,
+[05:27] then with the feedback, this input impedance will become RI times 1 plus A beta.
+[05:34] So as you can see, in this topology, with the feedback, this input impedance will increase.
+[05:40] So how we got this expression?
+[05:42] We will see that in the separate video.
+[05:44] But here, first let us see all the feedback topologies in the feedback amplifier.
+[05:49] So now, the next feedback topology is the voltage and feedback.
+[05:54] So as its name suggests, here on the output side, the voltage signal is sampled.
+[05:59] That means on the sensing side, we will have the shunt connection.
+[06:03] And as per the naming on the input side also, we will have the shunt connection.
+[06:09] So on the input side or on the mixing side, when we have a shunt connection, it means
+[06:14] that it is the current mixing.
+[06:17] Because as you can see, we are here at this node, the incoming current is equal to IES,
+[06:21] while the outgoing current is equal to IF.
+[06:24] So we can say that the input current to the basic amplifier or this IIs equal to
+[06:30] this IES minus IF.
+[06:34] And in this way, with this shunt connection, we will have the current mixing.
+[06:38] So in this topology, on the sensing side, since the voltage is sampled and on the mixing
+[06:44] side, since we have the shunt connection, so it is known as the voltage and feedback topology.
+[06:50] Now in this topology, in terms of the connections, if you see, then both on the sensing side, as
+[06:56] well as the mixing side, we have the shunt connection.
+[06:59] And that is why it is also known as the shunt shunt feedback.
+[07:03] And in many textbooks, it is also referred as the voltage current feedback.
+[07:08] Because in this topology, on the output side, the voltage signal is sampled, while on
+[07:12] the input side or on the mixing side, we have the current mixing.
+[07:17] And that is why, sometimes it is also referred as the voltage current feedback topology.
+[07:22] So this type of feedback topology is typically used in the Transimpedance Amplifiers.
+[07:28] Because in the Transimpedance Amplifier, if you see the input signal, then that is the
+[07:32] current and on the output side, if you see, then we have the voltage.
+[07:37] So similarly, in this feedback topology also, the input side, we have the current source,
+[07:42] while on the output side, we have the voltage.
+[07:45] And that is why, this feedback topology is typically used in the Transimpedance Amplifiers.
+[07:51] So now, for this topology, let us see how the input and output impedance will get modified.
+[07:58] So in this topology, on the output side, for on the sensing side, we have the shunt connection.
+[08:04] And as you have seen, when we have the shunt connection, then the impedance will reduce.
+[08:10] So in this case, if the R node is the impedance of the basic Transimpedance Amplifier, and with
+[08:15] the feedback, this output impedance will reduce.
+[08:18] And it will become this R node divided by 1 plus A beta.
+[08:23] Similarly, on the input side, since we have the shunt connection, so on the input side
+[08:27] also, the impedance will reduce.
+[08:31] So without the feedback, let us say, if R i is the input impedance of this basic Transimpedance
+[08:36] Amplifier, and with the feedback, it will become this R i divided by 1 plus A beta.
+[08:43] That means in this feedback topology, both input and output impedance will reduce.
+[08:48] So similarly, if you see the next feedback topology, then that is the current shunt feedback.
+[08:54] So as its name suggests, on the sensing side, we are sensing the current.
+[09:00] So here, to sample the current, we need the series connection.
+[09:04] So it is very similar to what we used to do in the A meter.
+[09:09] So as you know, in any circuit, then we want to measure the current.
+[09:12] Then we used to connect the A meter in the series with the given circuit.
+[09:16] So similarly, we are here to say as the current on the output side, we need to use the series
+[09:21] connection.
+[09:22] That means here, the feedback network is connected in series with the basic amplifier.
+[09:28] That means here, this i not current is directly going into the feedback network.
+[09:34] And similarly, as per the naming of this feedback topology, on the mixing side, we will
+[09:39] have the shunt connection.
+[09:41] So we know that on the mixing side, then we have the shunt connection.
+[09:45] Then it is basically a current mixing.
+[09:48] So connection wise, if you see, then in this topology on the output side, we have the
+[09:52] series connection.
+[09:53] While on the mixing side, we have the shunt connection.
+[09:57] And that is why, sometimes this topology is also referred as the series shunt feedback.
+[10:03] And in many textbooks, it is sometimes also referred as the current current feedback topology.
+[10:08] Because here on the sensing side, we are sensing the current.
+[10:12] And similarly on the mixing side, we also have the current mixing.
+[10:16] So that is why it is also known as the current current feedback topology.
+[10:20] So this type of feedback topology is mainly seen in the current amplifiers.
+[10:26] Because as you know in the current amplifiers, the input is the current signal, while the
+[10:30] output is also current signal.
+[10:32] So basically, this current amplifier amplifies the input current.
+[10:37] So similarly, in this topology also, on the input side, we have the current source.
+[10:42] While on the output side also, we have the current.
+[10:45] And that is why, this topology is used in the feedback current amplifiers.
+[10:51] So now, let us see how this feedback topology modifies the input and the output impedance.
+[10:58] So in this topology, on the output side, since we have the series connection, so
+[11:02] we can say that for this topology, the output impedance will increase.
+[11:07] That means without the feedback, if R naught is the output impedance of the basic amplifier,
+[11:12] then with the feedback, the output impedance will increase by the factor of 1 plus A beta.
+[11:18] Similarly, on the input side, if you see, then we have the shunt connection.
+[11:23] And because of the shunt connection, the input impedance will reduce.
+[11:27] So let us say without the feedback, if the input impedance of the basic amplifier is
+[11:32] equal to R i, then with the feedback, it will reduce by the factor of 1 plus A beta.
+[11:38] So we can say that with this current shunt feedback, the input impedance will reduce,
+[11:43] while the output impedance will increase.
+[11:46] So similarly, now let us see the last feedback topology.
+[11:50] That is the current series feedback.
+[11:52] So as its name suggests, in this topology on the output side, the current signal is
+[11:58] and as we have seen, to say the current on the output side, we require the series connection.
+[12:04] And as per the naming of this topology, on the mixing side also, we have the series connection.
+[12:10] And that is why this topology is known as the current series feedback.
+[12:15] So on the input side or on the mixing side, since we have the series connection,
+[12:20] so it is basically a mixing of the two voltages.
+[12:23] Or basically, here the feedback signal is subtracted from the source signal.
+[12:28] So we can say that in this topology on the output side, the current signal is sensed.
+[12:34] And on the input side, we have the voltage mixing.
+[12:37] And that is why, sometimes it is also referred as the current voltage feedback.
+[12:42] And similarly, based on the connections, if you see, and on the sensing side, we have the series connection.
+[12:48] While on the mixing side also, we have the series connection.
+[12:52] And that is why, this topology is sometimes also referred as the series feedback topology.
+[12:58] So this current series feedback topology is mainly used in the transconductance amplifiers.
+[13:04] Because in this type of transconductance amplifiers, if you see the input signal,
+[13:09] and that is the voltage signal, while the output signal is the current signal.
+[13:13] And similarly, in this topology also, the input is the voltage source, while the output is the current output.
+[13:20] So that is why, this topology is mainly used in the transconductance amplifiers.
+[13:26] So now, let us see the effect of this topology on the input and output impedance of the feedback amplifier.
+[13:33] So in this topology, on the output side, or on the sensing side, since we have the series connection,
+[13:39] so the output impedance will increase.
+[13:42] So without the feedback, if the output impedance of the basic amplifier is equal to R0, then with the feedback,
+[13:48] it will increase by the factor of 1 plus A beta.
+[13:51] And similarly, on the input side, since we have the series connection,
+[13:55] so once again, the input impedance will also increase.
+[13:59] That means without the feedback, if the input impedance of the basic amplifier is equal to RI,
+[14:04] then with the feedback, it will increase by the factor of 1 plus A beta.
+[14:08] That means, in this feedback topology, both input and output impedance will increase.
+[14:14] So, so far, we have seen that, with the each feedback topology, how the input and output impedance will get modified.
+[14:21] But from the next video onwards, we will also see that, how to derive the expression for the input and output impedance for the each feedback topology.
+[14:29] And first, we will start with the voltage series feedback.
+[14:33] And through the examples, we will also see that, in the actual circuits, how this feedback is implemented.
+[14:40] But I hope in this video, you understood the four different types of feedback topologies,
+[14:45] that is used in the feedback amplifier.
+[14:47] So, if you have any question or suggestion, then do let me know here in the comment section below.
+[14:53] If you like this video, hit the like button and subscribe the channel for more such videos.

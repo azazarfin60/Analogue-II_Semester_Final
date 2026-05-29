@@ -1,0 +1,54 @@
+Title: Active Filter (using op-amp) Solved Example | Quiz # 265
+URL: https://www.youtube.com/watch?v=VHbQiPQkR_U
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given the circuit and we have been asked to find the
+[00:22] cutoff frequency or the minus 3 dB frequency of the given circuit.
+[00:27] Now here we have been given that the given opium is the ideal opium and we have been given
+[00:32] the value of R as well as the capacitor.
+[00:36] So let us find out the cutoff frequency.
+[00:39] Now if you look the circuit, then it is the low pass filter.
+[00:44] But whenever you are in the doubt, then the best thing to do is to find the transfer function
+[00:49] of the circuit.
+[00:51] So let us find out the transfer function of the keyword circuit or in other words, let
+[00:55] us find out the ratio of v out and the v in.
+[01:01] Now if you look over here, then there is a negative feedback and we have been already
+[01:05] given that the opium is the ideal opium.
+[01:09] So here we can apply the concept of the virtual ground.
+[01:12] That means this node over here will be also at the ground potential.
+[01:18] That means at these two points also, the voltage will be equal to zero volt.
+[01:23] So to find the ratio of the v out and the v in, let us apply the KCL at this node.
+[01:29] So let us say the current which is going into this node is equal to I1.
+[01:36] And similarly, these two currents are I2 and I3.
+[01:41] So applying the KCL, we can write I1 plus I2 plus I3 is equal to zero.
+[01:49] And here, since these two nodes are at the same potential, so no current will flow
+[01:54] through these two components.
+[01:57] So from this, we can say that this I1 is equal to v in divided by R.
+[02:03] Similarly, this I2 and I3 are v out divided by XC plus v out divided by R and that is equal
+[02:12] to zero.
+[02:14] So from this, we can say that this VI divided by R is equal to minus v out times 1 divided
+[02:23] by XC plus 1 divided by R.
+[02:28] Now we know that this XC is equal to 1 divided by Jomega C, right?
+[02:34] So from this, we can write it as minus v out times Jomega C plus 1 by R.
+[02:44] That means the in divided by R is equal to minus v out times 1 plus Jomega C by R.
+[02:56] And if you further simplify it, then from this, we can say that this V out divided by V
+[03:02] in is equal to minus 1 divided by 1 plus Jomega C by R.
+[03:10] And here, if we just consider the magnitude, then it will be equal to 1 divided by square
+[03:19] root of 1 plus omega square C square R square.
+[03:25] So at minus 3dV frequency or at the cutoff frequency, this magnitude will be equal to 1
+[03:31] by root 2.
+[03:34] That means this magnitude is equal to 1 divided by 1 plus omega square C square R square.
+[03:43] Or from this, we can say that omega square C square R square plus 1 is equal to 2.
+[03:52] That means omega square C square R square is equal to 1, where omega is equal to 2 pi
+[03:59] f.
+[04:01] So from this, we can say that omega is equal to 1 divided by R C. Or in other words, f
+[04:08] is equal to 1 divided by 2 pi R C. So this frequency f will be equal to the cutoff frequency.
+[04:16] Let's call it as the fC.
+[04:19] And in this equation, if we put the value of R and C, then we can find the cutoff frequency.
+[04:26] That means cutoff frequency or minus 3dV frequency is equal to 1 divided by 2 pi times 2
+[04:34] kilo ohm times 1 microfaraday.
+[04:39] And if we calculate it, then it will come out as 79.58 hertz.
+[04:47] So from this, we can say that for the given equation, the cutoff frequency is equal to
+[04:52] 79.58 hertz.
+[04:54] That means for the given equation, A is the correct answer.

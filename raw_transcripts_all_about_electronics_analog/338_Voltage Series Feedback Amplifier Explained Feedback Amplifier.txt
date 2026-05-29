@@ -1,0 +1,178 @@
+Title: Voltage Series Feedback Amplifier Explained | Feedback Amplifier
+URL: https://www.youtube.com/watch?v=IuMlSU-D6lw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will learn about the voltage series feedback topology in detail.
+[00:16] So in the last couple of videos on the feedback amplifier, we have seen the general structure
+[00:20] of the feedback amplifier and we have also seen the effect of the negative feedback on
+[00:25] the amplifier.
+[00:27] And then we have discussed the four different feedback topologies.
+[00:31] That is the voltage series, voltage shunt, current shunt and the current series feedback.
+[00:37] So in this specific video, we will talk about the voltage series feedback topology in detail.
+[00:43] So in this voltage series feedback, we have seen that there is a voltage sampling and
+[00:47] the series mixing.
+[00:49] That means on the output side, the voltage signal is sampled and on the input side through
+[00:54] a series mixing, this feedback voltage is subtracted from the source signal.
+[00:59] So this feedback topology is also known as the voltage voltage feedback.
+[01:04] Because here on the output side, the voltage signal is sampled and on the input side also,
+[01:09] this voltage signal is mixed with the source signal.
+[01:13] And based on the connection, sometimes it is also known as the series shunt feedback topology.
+[01:19] Because here in this topology on the input side, for on the mixing side, we have the series
+[01:23] connection where on the output side or on the sampling side, we have the shunt connection.
+[01:29] So in the previous video, we have also seen that this type of feedback is mainly suitable
+[01:34] for the voltage amplifiers.
+[01:37] Because in this type of feedback, the input signal is voltage and the output is also voltage.
+[01:43] And then we have also seen that in this topology, since there is a series mixing on the input
+[01:49] side, so the input impedance of this feedback amplifier will increase.
+[01:53] And likewise, on the output side, since we have the shunt connection,
+[01:57] so the output impedance of this feedback amplifier will reduce.
+[02:01] That means if the RIs the input impedance of this basic voltage amplifier,
+[02:05] and with the feedback, this input impedance will increase by the factor of 1 plus A beta.
+[02:11] And similarly, if this R naught is the output impedance of this basic voltage amplifier,
+[02:16] and with the feedback, it will reduce by the factor of 1 plus A beta.
+[02:21] So now, let us see that in this feedback topology, how the input impedance increases
+[02:27] and how the output impedance reduces.
+[02:29] So here is the ideal structure of the voltage series feedback amplifier, where this A circuit
+[02:35] shows the ideal amplifier block, and this beta circuit shows the ideal feedback network.
+[02:41] So here, in this amplifier circuit, this RIs the input impedance of the amplifier,
+[02:47] and this A is the gain of this voltage amplifier.
+[02:50] That means if VIs the input to this amplifier, then it will get amplified by the factor of A.
+[02:56] So here, for the simplicity, it has been assumed that this voltage source is ideal,
+[03:02] and its source resistance Rs is equal to 0.
+[03:05] Likewise, on the output side, this R naught is the output impedance of the amplifier,
+[03:10] and this V out is the output voltage.
+[03:13] Similarly, this beta circuit is the feedback network.
+[03:17] So here, this feedback network samples the output voltage,
+[03:21] and a fraction of the output voltage is sent back to the input side.
+[03:26] So here, it has been assumed that this feedback network does not load the amplifier.
+[03:32] That means after connecting this feedback network, the output of this basic amplifier does not
+[03:38] get loaded. So here, this beta times V naught is the fraction of the output voltage,
+[03:44] which is sent back to the input side. And on the input side through a series mixing,
+[03:49] it is subtracted from the source signal. So now, let us find out the effective input impedance
+[03:55] with the feedback. So here, let's say this ion is the current that is flowing from the source side.
+[04:03] So here, after the feedback, the effect to input impedance, which is seen from the source side,
+[04:10] is equal to Vs divided by ion, or that is equal to RIF, that is the input impedance of the amplifier
+[04:17] with the feedback. So basically, to find that, here we need to find the ratio of this Vs divided
+[04:24] by ion. So here, if we apply the KVL in this loop, then we can write this VI is equal to
+[04:33] Vs minus Vf. And as you can see, we are here, this Vf is equal to beta times V naught.
+[04:40] So we can say that this VI is equal to Vs minus this beta times V naught. And here,
+[04:49] since the same current ion is flowing through the VI, so we can say that this VI is equal to
+[04:55] this ion times RI. So we can say that this ion times RI is equal to Vs minus this beta times V
+[05:05] naught. And as you can see, we are here, this output voltage V out is equal to 8 times V in.
+[05:11] So further, we can write it as this ion times RI, that is equal to Vs minus this 8 times
+[05:21] beta times VI. And we know that this VI is equal to 9 times RI. So further, we can write it as
+[05:30] this ion times RI, that is equal to Vs minus this ABTA times 9 times RI. So now, if we take this
+[05:43] term on the left hand side, then we can write it as this 1 plus ABTA times this ion times RI,
+[05:54] that is equal to Vs. Or we can say that this Vs divided by ion, that is equal to this RI times
+[06:03] 1 plus ABTA. So as you can see, now this Vs divided by ion, that is equal to this RI times
+[06:13] 1 plus ABTA. So as you can see with the feedback, now this input impedance of the amplifier,
+[06:20] will increase by the factor of 1 plus ABTA. And in this way, this effect to input
+[06:26] impedance of this feedback amplifier will increase. And this is actually happening because we have
+[06:32] the series connection on the mixing side. So similarly, now let us find out the output impedance
+[06:39] with the feedback. So to find the output impedance, we will set the source voltage Vs as 0.
+[06:45] And we will apply the test voltage at the output side. So let's say, this test voltage is equal
+[06:52] to Vx. So now, if Ix is the current that is flowing from the source Vx, then this output
+[07:00] impedance with the feedback or this ROF can be given as this Vx divided by Ix.
+[07:08] So basically, here to find the effective output impedance, we need to find the ratio of the Vx
+[07:13] and the Ix. So now, if you observe over here, and the sampled signal by this feedback network
+[07:20] is equal to Vx. Or we can say that over here, this feedback voltage Vf is equal to beta times Vx.
+[07:29] And here, if you apply the KVL in this loop, then we can say that here, this Vx is equal to
+[07:37] minus Vf. So now, if you apply the KVL in this loop, then we can write this Vx is equal to
+[07:46] this R0 times Ix plus A times Vi. And here, we know that this Vi is equal to minus Vf,
+[07:56] and this Vf is equal to beta times Vx. So we can say that this Vx is equal to this R0 times Ix
+[08:05] minus A times beta times Vx. So further, we can say that this Vx times
+[08:12] 1 plus A beta that is equal to this R0 times Ix. For further, we can write it as this Vx divided
+[08:22] by Ix that is equal to this R0 divided by 1 plus A beta. So as you can see, now this ratio of Vx
+[08:32] and the Ix is equal to R0 divided by 1 plus A beta. That means with the feedback, now this effect
+[08:40] to output impedance will reduce by the factor of 1 plus A beta. And that is actually happening
+[08:47] because we have the shunt connection on the output side because on the shunt connection,
+[08:52] the output impedance will reduce. So in this way, in this voltage series feedback,
+[08:58] the output impedance will reduce by the factor of 1 plus A beta and the input impedance will
+[09:03] increase by the same factor. And for this feedback amplifier, effectively, this is how the
+[09:10] equivalent circuit will look like. So for a voltage amplifier, the increase in the input impedance
+[09:16] and the reduction in the output impedance is the desired thing because if you see the actual
+[09:21] circuits and in the actual circuit, we will also have this source of distance.
+[09:27] So in this case, if we see the effective voltage that is applied to the amplifier or this
+[09:33] Vi is equal to RIF divided by this RIF plus RF times VS. That means the effect to input voltage
+[09:44] which is appearing across the amplifier can be given by this expression. And as you can see
+[09:50] in this voltage series feedback, since the input impedance increases, so the effect to input
+[09:55] voltage which is appearing across the amplifier will also increase. And that is what is required for
+[10:01] the voltage amplifier. That means the voltage amplifier should have a high input impedance,
+[10:07] so that whatever source signal is applied to the amplifier that appears across the amplifier.
+[10:14] Similarly, in the actual amplifiers, we will also have the load resistor.
+[10:20] So in that case, if we see the effective output voltage which is appearing across the load
+[10:25] voltage or this VOL, then that is equal to RL divided by this RIF plus RL times AF times Vi.
+[10:36] So in this case, we want that the maximum output voltage should appear across the load
+[10:42] of the resistor. And for that to happen, this output impedance of the amplifier should be minimum.
+[10:48] So in this voltage series feedback, since the output impedance reduces, so more voltage will
+[10:54] appear across the load of the resistor. So that is the desired thing for the voltage amplifier.
+[11:00] And that is why this feedback nopology is suited for the voltage amplifier.
+[11:06] So now let us see in the actual circuits how this voltage series feedback is implemented.
+[11:12] So as you know, in the voltage series feedback, we have a voltage sampling at the output side.
+[11:18] So in the actual circuits to sample the output voltage, we can use the resistor divider.
+[11:24] For example, in the given op-amp circuit, the output voltage is sampled using the voltage divider
+[11:30] circuit. So here, this feedback voltage VF is equal to R1 divided by this R1 plus R2 times V out.
+[11:41] And similarly, if we have a MOSFET based amplifier circuit, then also using the voltage divider,
+[11:47] the output voltage can be sampled. So similarly, now let us see in the actual circuits how to do the
+[11:54] series mixing. So in the series mixing, basically via subtracting the feedback voltage from the
+[12:01] source voltage. So here, this non-inverting op-amp configuration is one of the examples for the
+[12:07] series mixing. So here, this feedback voltage VF is connected to the negative terminal of the
+[12:14] op-amp and is input signal is connected to the positive terminal. So this op-amp will amplify
+[12:21] the difference between the two input signals. So in the op-amp based circuits, this is how the
+[12:27] series mixing is achieved. Similarly, in the transistor based circuits, a single transistor
+[12:34] connect as a voltage subtractor. So here, if the input is applied at the gate of the MOSFET,
+[12:40] and the feedback signal is applied to the source terminal of the MOSFET, then as you can see,
+[12:45] this VGS is equal to V in minus VF. So in this way, a single transistor can act as a voltage
+[12:54] subtractor. For alternatively, we can also apply the feedback signal to the gate terminal.
+[13:00] So in this case, the feedback signal is applied to the gate terminal, while the input signal is
+[13:06] applied to the source terminal. So in this case, if you see, then this voltage VGS is equal to
+[13:12] VF minus V in. So in any case, using a single transistor, it is possible to subtract the two voltages.
+[13:21] So apart from that, to subtract the two voltages, we can also use the differential pair.
+[13:27] So here, one of the input to the differential pair is equal to V in, while the other input is
+[13:32] equal to VF. And in this way, it is possible to perform the series mixing. So based on this,
+[13:40] this non-inverting configuration of the op-amp is one of the examples for the voltage series feedback.
+[13:46] So here, using a voltage divider, the output voltage is sampled, and on the input side,
+[13:52] this op-amp is performing the series mixing. Similarly, this is the another example of the
+[13:58] voltage series feedback. So here, as you can see, using the voltage divider, the voltage signal
+[14:04] is sampled, and it is connected back to the gate terminal of the MOSFET. And here, the input signal
+[14:11] is applied to the source terminal. So here, basically, this MOSFET will perform the series mixing.
+[14:18] That means here, this VGS is equal to VF minus V in. So in this way, here, this MOS transistor
+[14:28] is performing the voltage subtraction. So of course, this circuit is performing the voltage sampling
+[14:34] and the series mixing. But the only thing that we need to confirm is that whether we have a
+[14:40] negative feedback in the circuit or not, because we have seen that in all these topologies, we need to
+[14:45] have the negative feedback. So for this circuit, let us find the polarity of the feedback.
+[14:52] So here, let us say, due to some reason, this input voltage V in increases.
+[14:58] So if this input voltage V in increases, there, as you can see, here, this VGS, that is
+[15:05] VF minus V in will reduce. So we can say that when the V in increases, then this VGS will reduce.
+[15:14] And if you have followed my earlier videos on the MOSFET, then you must be aware that when the VGS
+[15:19] reduces, then this drain current ID will also reduce. So we can say that when the VGS reduces,
+[15:26] then this drain current ID will reduce. And if the drain current ID reduces, then the voltage
+[15:32] drop across this resistor RID will also reduce. That means now, the more voltage will be available
+[15:39] at the output side. So we can say that now this output voltage V out will also increase.
+[15:46] And if this output voltage V out increases, then this feedback voltage VF will also increase.
+[15:52] And if this VF increases, then this voltage VGS will also increase. So because of that,
+[15:59] now the drain current ID will increase. And the drop across the resistor RID will also increase.
+[16:04] And now, eventually, the output voltage will reduce. So as you can see, we're here,
+[16:10] the increase in the input voltage tries to increase the output voltage. But the feedback
+[16:15] tries to reduce the increase in this output voltage. So certainly, here we have the negative feedback.
+[16:22] So in short, to check the polarity, what we can do if the increase in the input voltage also
+[16:28] increases the feedback voltage, then we can say that the given feedback is the negative feedback.
+[16:34] That means if the VF changes in the same direction as the input voltage, then we can say that
+[16:39] in the circuit, we have the negative feedback. So similarly, in the first circuit also,
+[16:45] let us confirm whether we have a negative feedback or not. So in this circuit,
+[16:51] whenever this VS voltage increases, then this VS minus VF will increase. Or in other words,
+[16:58] this differential input voltage will increase. So due to that, this output voltage V out will also
+[17:04] increase. And if this output voltage increases, then this feedback voltage VF will also increase.
+[17:11] So due to that, now this differential input voltage that is VS minus VF will reduce.
+[17:18] So we can say that if the V out increases, then this differential input voltage VID will reduce.
+[17:24] And because of that, eventually, this output voltage V out will also reduce. So as you can see,
+[17:31] we are here, when the VS increases, then this feedback voltage VF will also increase.
+[17:37] And here, since both have the same polarity, so we can say that there is a negative feedback in the
+[17:43] circuit. So this is how in the actual circuits, this voltage series feedback is implemented.
+[17:50] So I hope in this video, you understood how in this voltage series feedback,
+[17:54] the input impedance increases and the output impedance reduces.
+[17:58] And how this feedback topology is actually implemented in the circuits.
+[18:03] So similarly, in the next video, we will cover the voltage and feedback.
+[18:08] So if you have any question or suggestion, then do let me know here in the comments section below.
+[18:14] If you like this video, hit the like button and subscribe to the channel for more such videos.

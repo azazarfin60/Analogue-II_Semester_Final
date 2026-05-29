@@ -1,0 +1,258 @@
+Title: Voltage Shunt Feedback Amplifier Explained | Feedback Amplifier
+URL: https://www.youtube.com/watch?v=yyF-V5ZpAZg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in the previous video, we have seen the voltage series feedback topology of the feedback
+[00:15] amplifier.
+[00:16] So similarly, in this video, we will learn about the voltage and feedback amplifier.
+[00:22] So if you see the basic topology of the voltage and feedback amplifier, then it consists
+[00:27] of the basic trans-imputed amplifier and the feedback network.
+[00:31] So in this feedback topology, the input signal is applied as the current source and the output
+[00:36] of this feedback amplifier is the voltage signal.
+[00:40] So here, this output voltage signal is sampled using the feedback network.
+[00:45] And on the input side, since we have the current source as an input signal, so it is mixed
+[00:50] with that input current with the shunt feedback.
+[00:53] That means in this feedback topology, we have a voltage sampling and the shunt mixing.
+[00:59] And that is why this type of feedback amplifiers are known as the voltage and feedback amplifier.
+[01:05] So as you can see, in this feedback topology, the connection of the feedback network to the
+[01:10] basic amplifier is via the shunt connection.
+[01:13] That means both on input and output side, it is connected via the shunt connection.
+[01:18] And that is why sometimes this topology is also known as the shunt shunt feedback.
+[01:24] And sometimes this topology is also referred as the voltage current feedback.
+[01:30] Because on the output side or on the sampling side, we are sampling the voltage signal
+[01:35] while on the mixing side or on the input side, we are mixing the current signal.
+[01:40] So these are the alternate naming for the voltage and feedback topology.
+[01:45] So previously, we have seen that this topology is mainly suited for the trans and
+[01:50] impedance feedback amplifier.
+[01:52] Because here, the input signal is the current signal while the output signal is the
+[01:56] voltage signal.
+[01:58] And here, since we have the shunt connection on the output side, so the effect the output
+[02:03] impedance of the feedback amplifier will reduce.
+[02:06] And similarly on the input side, since we have a shunt connection, so the input impedance
+[02:11] of this feedback amplifier will also reduce by the factor of 1 plus a beta.
+[02:17] Where here, this a is the gain of the basic trans impedance amplifier.
+[02:21] And this beta is the feedback factor of this feedback network.
+[02:25] So now, let us see that in this topology, how the input and output impedance reduces
+[02:31] and how we got these expressions.
+[02:34] So this is the idea structure of the voltage and feedback amplifier.
+[02:38] So here, this a circuit shows the basic trans impedance amplifier block while this beta
+[02:44] circuit shows the ideal feedback block.
+[02:47] So here, this arise the input impedance of the basic amplifier and this ii is the input
+[02:53] current.
+[02:54] And similarly on the output side, this input current ii is getting amplified by the gain
+[02:59] of this amplifier.
+[03:01] And then, we will get the voltage as a output.
+[03:05] Now here, if you see the unit for this trans impedance amplifier gain, then it will be
+[03:09] in the homes.
+[03:11] Because here, the output is the voltage signal while the input is the current signal.
+[03:17] And here, this R node is the output impedance of the basic amplifier.
+[03:22] So here, this feedback network samples the output voltage V out and it provides the feedback
+[03:28] current if.
+[03:30] So as you can see, at the input node, this feedback current if is getting subtracted
+[03:35] from the source signal.
+[03:37] So here, for the simplicity, it has been assumed that the input current source is the ideal
+[03:43] current source.
+[03:44] That means, its source impedance is equal to infinite.
+[03:48] And similarly, for the simplicity, here this load register RL is also not connected on
+[03:53] the output side.
+[03:55] Moreover, here it has been assumed that this feedback network is ideal and it does not
+[04:00] load the basic amplifier.
+[04:03] That means here, after connecting the feedback network, the output of the basic amplifier
+[04:08] will not change.
+[04:09] That means in this feedback network, if you remove the mixing side connection, then just
+[04:14] because of the voltage sampling, the output of the basic amplifier is not changing.
+[04:20] So with this consideration, now let us find the effective input impedance of this voltage
+[04:24] and feedback amplifier.
+[04:27] So here, the effective input impedance of this feedback amplifier is the impedance which
+[04:31] is seen through this current source.
+[04:34] That means here, if we take the ratio of this voltage across the current source to this
+[04:38] current source, i.s. itself, and that will be the effective input impedance of this feedback
+[04:43] amplifier.
+[04:45] So here, because of the standard connection, the voltage across the current source is
+[04:49] same as the Vi.
+[04:52] So we can say that over here, this Vi divided by i.s will be the effect to input impedance
+[04:58] of this feedback amplifier.
+[05:00] Let us say that is equal to RIF.
+[05:03] And now, let us find the relationship between this Vi and the i.s.
+[05:08] So here, if we have to the KCL on this input node, then we can write this i.s minus i.f.
+[05:16] That is equal to ii.
+[05:19] And as you can see, we are here, this i.f is equal to beta times V0.
+[05:23] So we can say that this i.s minus this beta times V0 that is equal to ii.
+[05:31] Or we can say that this ii is equal to ii plus this beta times V0.
+[05:39] So here, this output voltage V out is equal to A times ii.
+[05:44] So we can say that that is equal to ii plus this A times beta times ii.
+[05:52] Or we can say that this current is equal to ii times this 1 plus A beta.
+[06:00] And here, as you can see, this ii is equal to Vi divided by Ri.
+[06:06] So further, we can write it as this ii is equal to Vi divided by Ri times 1 plus A beta.
+[06:17] Or we can say that this Vi divided by ii is that is equal to Ri divided by 1 plus A beta.
+[06:28] So from this, we can say that the effect to input impedance of this feedback amplifier
+[06:32] is equal to Ri divided by this 1 plus A beta.
+[06:38] So in this way, because of the shunt connection, the effect to input impedance of this feedback
+[06:43] amplifier reduces.
+[06:46] So similarly, now let us find the effect to output impedance of this feedback amplifier.
+[06:51] So here, to find the output impedance, we will consider all the independent sources in
+[06:55] the circuit as 0.
+[06:58] That means here, this current source will act as an open circuit.
+[07:02] And here, we will have to add the test voltage on the output side.
+[07:07] So let us say, this test voltage is equal to Vx.
+[07:11] So here, this effect to output impedance, which is seen through this test voltage, is
+[07:17] equal to Vx divided by ix.
+[07:20] That means here, this effect to output impedance, or this ROF is equal to Vx divided by ix.
+[07:28] So now let us see how to find that.
+[07:31] So here, now since test voltage is sampled, so here, this voltage will be equal to Vx.
+[07:38] And now, this feedback current If is equal to beta times Vx.
+[07:44] And here, now we apply the KCL at this input node.
+[07:49] Then as you can see, now this If is equal to minus Ii.
+[07:55] So further, we can write it as, this beta times Vx is equal to minus Ii.
+[08:02] So now, let us apply the KVL equation on the output side.
+[08:07] So if we apply the KVL equation, then we can write, this Vx is equal to this R0 times
+[08:14] Ix plus A times Ii.
+[08:18] But this A is the trans impedance gain of this basic amplifier.
+[08:23] So now, further we can write this expression as, this R0 times Ix minus A times beta times
+[08:32] Vx equals here, this Ii is equal to minus beta times Vx.
+[08:38] So now, if you take this term on the left hand side, and further we can write it as, this
+[08:44] Vx times 1 plus A beta, that is equal to this R0 times Ix.
+[08:52] And we can say that this Vx divided by Ix is equal to this R0 divided by this 1 plus
+[09:00] A beta.
+[09:01] That means, now, this effect to output impedance R0F is equal to R0 divided by this 1 plus
+[09:09] A beta.
+[09:10] So, as you can see, because of the shunt connection, this effect to output impedance of this
+[09:16] feedback amplifier is reducing by the factor of 1 plus A beta.
+[09:21] So in this way, because of the shunt connection, both on the input and output side, the input
+[09:26] and output impedance of this feedback amplifier had used this.
+[09:30] And this is how the equivalent circuit of the feedback amplifier will look like.
+[09:35] Where this RIF is the effect to input impedance, while this R0F is the effect to output impedance.
+[09:42] And this AF is the closed loop gain of the feedback amplifier.
+[09:46] So here, if you see, then the reduction in both input and output impedance is a desired
+[09:51] thing for the trans impedance amplifier.
+[09:54] Because in the trans impedance amplifier, when we connect the current source as an input,
+[09:59] then it will also have some source resistance.
+[10:02] So, we want that the maximum current should reach to the amplifier.
+[10:07] And it will happen whenever this RIs much less than RIs.
+[10:13] That means, if the input impedance is much less than the source resistance, then the maximum
+[10:17] current will flow through this RI.
+[10:20] And in that case, this IS dash is approximately equal to IS.
+[10:26] So in this voltage and feedback amplifier, since the input impedance is reducing with the
+[10:31] feedback, so that is the desired thing for the trans impedance amplifier.
+[10:36] Similarly, if you see the output side of the trans impedance amplifier, then it will
+[10:40] also have the load of this star.
+[10:43] So in this case, if you see the actual voltage that is reaching to the load or this VOL,
+[10:49] then that is equal to this RL divided by this RL plus R0 times, these A times IS dash.
+[10:59] So here, you will get the more output voltage across the load of this star, whenever this
+[11:04] R0 is much less than RL.
+[11:07] So in this feedback topology, since the output voltage is also reducing, so that is the
+[11:12] desired thing for the trans impedance amplifier.
+[11:16] So in short, we can see that when the feedback amplifier is used in this voltage and feedback
+[11:21] topology, then both input and output impedance of the feedback amplifier reduces.
+[11:27] Alright, so now let us see in the actual circuits of this voltage and feedback is implemented.
+[11:34] So in this voltage and feedback, the output voltage is sampled and then it is sent back
+[11:38] to the input side as a feedback current.
+[11:41] So in the actual circuits, the one way to achieve the voltage to current conversion is
+[11:46] using the transistor.
+[11:47] So as you can see over here, the output voltage of the amplifier is apted to the gate terminal
+[11:53] of the MOSFET.
+[11:55] That means here, this VGS is equal to V out.
+[12:00] And as you know, according to this voltage VGS, the drain current that is flowing through
+[12:06] the MOSFET will change.
+[12:08] Or we can say that this feedback current IAF is directly related to this VGS or in other
+[12:14] words, it is directly related to this output voltage.
+[12:18] So here with the increase in the output voltage, this voltage VGS will increase.
+[12:24] And due to the increase in the voltage VGS, this drain current ID or this feedback current
+[12:29] IAF will also increase.
+[12:31] And because of that, now the net current IIE that is flowing into the basic amplifier
+[12:35] will reduce.
+[12:37] And because of that, this V out will also reduce.
+[12:41] So in this way using the MOSFET, it is possible to provide the negative feedback and it is
+[12:46] possible to perform the voltage sampling and the current mixing.
+[12:50] So when we use the transistor in the feedback circuit, then it is basically a active component.
+[12:55] But typically in the feedback network, the passive components are used so that the value
+[13:01] of the feedback components or this feedback factor does not change with the change in
+[13:05] the external parameters.
+[13:08] So as a passive element, we can even use a resistor for this voltage to current conversion
+[13:12] in the feedback network.
+[13:15] That means this feedback resistor can be connected between the output node and the input
+[13:19] current source.
+[13:21] So in this case, this feedback current IAF is equal to VX minus this V out divided by
+[13:27] RF, where this VX is the voltage at this node.
+[13:32] So if this VX is very small, and as you can see, this feedback current IAF is directly
+[13:38] proportional to the output voltage.
+[13:41] And in this way, just using the feedback resistor, it is possible to perform the voltage
+[13:45] sampling and the current mixing.
+[13:48] So based on that, now let us see the few circuits where this voltage and feedback is implemented.
+[13:55] So now, if you see this circuit, then the feedback topology of the given circuit is the
+[13:59] voltage and feedback.
+[14:01] Because here through the MOSFET, the output voltage is sampled, and the drain terminal
+[14:06] of this MOSFET is connected to the input current source.
+[14:11] So here, this feedback current IAF is the current that is flowing through the MOSFET.
+[14:16] That means here, through the MOSFET, we have a voltage sampling and the current mixing.
+[14:22] So similarly, this is another example of the voltage and feedback.
+[14:27] So here, instead of the transistor, using a resistor as a passive element, the output
+[14:32] voltage is sampled, and it is sent as a feedback current to the input side.
+[14:37] So here, since the feedback component is directly connected to the output node, so it is sampling
+[14:43] the voltage.
+[14:45] And on the input side, we have the current mixing.
+[14:48] So here, we use this circuit as an amplifier.
+[14:51] The only thing that we need to check is whether there is a negative feedback in the circuit
+[14:55] or not.
+[14:57] So here, the current that is going into the source terminal of the M1 is equal to IES-IAF.
+[15:03] So if the source current increases, and this current will also increase.
+[15:09] And because of that, the drain current ID, which is flowing through the MOSFET M1 will
+[15:13] reduce.
+[15:14] So due to the reduction in this drain current, the drop across the RID1 will also reduce.
+[15:21] And because of that, the output of this M1 will increase.
+[15:25] So now, this output of the M1 will go to the gate terminal of the M2.
+[15:30] That means now, this VGS2 will increase.
+[15:33] And as you know, as the VGS increases, then the drain current ID will also increase.
+[15:39] So we can say that for this MOSFET M2, the drain current ID2 will increase.
+[15:45] So this increase in the drain current will also increase the drop across the RID2.
+[15:50] And because of that, this output voltage V out will reduce.
+[15:55] And here, this feedback current IAF is the voltage difference between this node and
+[16:00] the output voltage V out, divided by RF.
+[16:03] So here, as the V out reduces, so this current IAF will increase.
+[16:09] And because of that, now the current that is going into the M1 will reduce.
+[16:13] So here, since the IES and IAF have the same polarity or anotherverse, since they are
+[16:20] changing in the same direction, so we can say that the given feedback is the negative
+[16:25] feedback.
+[16:26] And indeed, this is the example of the voltage and feedback amplifier.
+[16:30] So similarly, this is the another example of the voltage and feedback amplifier.
+[16:36] So here, the one end of the feedback resistor is connected to the output node.
+[16:41] And the other end of the resistor is connected to the source current at the input side.
+[16:46] So here, since the one end of the feedback component is directly connected to the output
+[16:51] voltage.
+[16:52] So it means that it is sampling the output voltage.
+[16:55] And as you can see, this feedback resistor is connected to the input current source via
+[17:00] the shunt connection.
+[17:02] So we can say that this circuit is the example of the voltage and feedback topology.
+[17:08] So similarly, this is the transmitter amplifier using the op-amp.
+[17:12] And here, once again, it is the example of the voltage and feedback.
+[17:17] So here, this feedback resistor RF is connected between the output and the inverting node.
+[17:23] So here, if you see the feedback current IAF, then roughly it is equal to minus V out
+[17:28] divided by RF.
+[17:30] Because here, the inverting node of the op-amp will act as a virtual crown.
+[17:36] And here, the input current of the op-amp will be very small.
+[17:40] So we can say that this IES is equal to IAF and that is equal to minus V out divided
+[17:45] by RF.
+[17:47] And if we see the transmitter gain of this feedback circuit or this V out divided by IES,
+[17:52] that is equal to minus RF.
+[17:55] So similarly, this inverting op-amp configuration of the op-amp is also example of the voltage
+[18:01] and feedback.
+[18:02] But you might ask, in the voltage and feedback, we have a current source as an input, right?
+[18:08] So how this circuit will act as a voltage and feedback?
+[18:12] So here, if you see this voltage source and the resistor, then using the source transformation,
+[18:17] it can be converted into the current source.
+[18:20] And here, this IES is equal to VSD by R1.
+[18:25] So that is why this is also example of the voltage and feedback.
+[18:29] Similarly, this common source amplifier where a drain feedback is used, it is also example
+[18:35] of the voltage and feedback.
+[18:37] Because here, once again using the source transformation, this voltage source can be converted
+[18:42] into the current source.
+[18:44] And once again, here, this IES is equal to VSD by RS.
+[18:49] So these are the few examples of the voltage and feedback topology.
+[18:54] So I hope in this video, you understood how in this voltage and feedback topology, both
+[18:59] input and output impedance reduces.
+[19:01] And how in the actual circuits, this feedback is implemented.
+[19:06] So similarly, in the next video, we will learn about the current series feedback topology.
+[19:11] So if you have any question or suggestion, then do let me know here in the comment section
+[19:16] below.
+[19:17] If you like this video, hit the like button and subscribe our channel for more such videos.

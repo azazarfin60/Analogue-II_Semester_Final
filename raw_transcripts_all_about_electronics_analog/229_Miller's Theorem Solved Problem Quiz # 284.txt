@@ -1,0 +1,75 @@
+Title: Miller's Theorem Solved Problem | Quiz # 284
+URL: https://www.youtube.com/watch?v=SDAyiJpSWBg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and here we have been asked to find
+[00:16] the equivalent capacitance across the node ANB.
+[00:20] So to find the equivalent capacitance, first of all let us consider all the independent
+[00:24] sources in the circuit as zero.
+[00:27] Let me see here, we will consider this voltage source as zero.
+[00:32] So once we short this voltage source, then this 7 microfaradic capacitor and 3 microfaradic
+[00:38] capacitors will come in parallel.
+[00:41] That means that the equivalent capacitance can be given as 7 microfaraday plus 3 microfaraday.
+[00:49] That is equal to 10 microfaraday.
+[00:51] And if you see the equivalent circuit, then it will look like this.
+[00:56] Now once again, here this 10 microfaradic capacitor and 4 microfaradic capacitors are connected
+[01:02] in the series connection.
+[01:04] That means that the equivalent capacitance will be equal to 10 times 4 divided by 10 plus
+[01:11] 4.
+[01:12] That is equal to 40 divided by 14 microfaraday.
+[01:17] And if you calculate the value, then it will come out as 2.857 microfaraday.
+[01:23] But approximately we can say that it is equal to 2.86 microfaraday.
+[01:29] So if you see the equivalent circuit, then it will look like this.
+[01:33] Now here, this 2 microfaradic capacitor is connected between the input and the output
+[01:38] side.
+[01:40] That means one end of this capacitor is connected to this node A.
+[01:44] So here we also need to consider the effect of this 2 microfaradic capacitor.
+[01:49] So here we can split this capacitor on the input and output side using the Miller's
+[01:54] theorem.
+[01:55] So according to the Miller's theorem, if we split this capacitor on the input and output
+[02:00] side, then these 2 capacitors that is C1 can be given as C times 1 minus G, while the
+[02:08] capacitor on the output side that is C2 can be given as C times 1 minus 1 divided by
+[02:15] G.
+[02:16] Where G is the gain of this amplifier.
+[02:19] So let me just quickly show you how we can get this expression.
+[02:23] So here let's say the voltage on the input side is equal to V1, while the voltage on
+[02:29] the output side is equal to V2.
+[02:32] And let's say the current which is flowing on this side is equal to I1 and the current
+[02:37] which is flowing from V2 to V1 is equal to I2.
+[02:41] Now after the transformation, the voltage at the both end will remain same, that is V1
+[02:46] and V2.
+[02:48] And after the transformation, the current which is flowing away from the node should remain
+[02:52] the same.
+[02:53] That means in this case, the current which is flowing away from this node V1 will be
+[02:58] equal to I1 and the current which is flowing away from this node V2 should be equal to
+[03:03] I2.
+[03:05] So here, this current I1 can be given as V1 minus V2 divided by XC, where the X is the
+[03:13] reactance of this capacitor.
+[03:15] Similarly, after the transformation, this current I1 should remain the same.
+[03:21] That is equal to V1 divided by XC1, where this XC1 is the reactance of this capacitor
+[03:28] C1.
+[03:29] Now here, this voltage V2 can be given as G times V1, because here this voltage V1 gets
+[03:37] amplified by the factor of G.
+[03:40] So from this, we can say that this current I1 is equal to V1 minus G times V1 divided
+[03:47] by XC.
+[03:48] That is equal to V1 times 1 minus G divided by XC.
+[03:54] And these two currents should be equal.
+[03:57] So from this, we can say that this V1 times 1 minus G divided by XC should be equal to
+[04:06] V1 divided by XC1.
+[04:09] Or from this, we can say that 1 minus G divided by 1 divided by omega C should be equal
+[04:16] to 1 divided by 1 divided by omega C1.
+[04:20] Or if you further simplified, then we can say that this capacitance C1 is equal to 1 minus
+[04:27] G times C.
+[04:29] Similarly, if we write the expression for this current I2, then similarly, we can get
+[04:35] the expression for the C2.
+[04:38] So here, this capacitance C1 is equal to C times 1 minus G.
+[04:45] Now here, the value of this capacitor C is equal to 2 microfaraday, while the gain of
+[04:51] this amplifier is equal to minus 5.
+[04:54] That means this term will be equal to 1 minus minus 5.
+[04:59] That means the value of this capacitance C1 is equal to 12 microfaraday.
+[05:05] And if you see over here, these two capacitors are connected in the series connection.
+[05:10] That means the equivalent capacitance across the node A and B is equal to C1 plus 2.86 microfaraday.
+[05:18] That is equal to 12 plus 2.86 microfaraday.
+[05:23] That means the equivalent capacitance across the node A and B is equal to 14.86 microfaraday.
+[05:31] And from this we can say that for the given question, the answer is 14.86.

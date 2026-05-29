@@ -1,0 +1,57 @@
+Title: Two-Port Network /Op-Amp Solved Example | Quiz # 239
+URL: https://www.youtube.com/watch?v=pmI00OcNuMc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given this op-amp circuit and in the feedback there is
+[00:22] a 2 port network.
+[00:24] So here, we have been given the z parameters of this 2 port network and we have been
+[00:29] asked to find the gain of this amplifier circuit.
+[00:33] So let us see how to solve this question.
+[00:36] So here, for the given 2 port network, we have been given the z parameters.
+[00:41] That is z11 and the z22 are 11 kilo ohm while the z12 and the z21 are 1 kilo ohm.
+[00:50] So for the z parameters, we know that the voltage V1 can be given as z11 times I1 plus z12
+[00:58] times I2.
+[00:59] Similarly, the voltage V2 can be given as z21 times I1 plus z22 times I2, where V1 and
+[01:08] V2 are the port voltages and I1 and I2 are the port currents.
+[01:13] So here, this voltage is the V1 while this current is the I1.
+[01:20] Similarly, this voltage is equal to V2 while the current which is entering the port is
+[01:25] equal to I2.
+[01:28] Now if you look this open circuit, then it is operating in the negative feedback configuration.
+[01:34] That means here, we can apply the concept of the virtual ground and if you look over
+[01:39] here, then this non-inverting terminal is at the ground potential.
+[01:45] So we can say that this inverting terminal is also at the ground potential.
+[01:50] That means this one terminal is also at the ground potential and if you look over here,
+[01:57] then this terminal 1 dash is also at the ground potential.
+[02:01] That means we can say that here voltage V1 is equal to 0.
+[02:06] Similarly, we can say that this voltage V2 is equal to V out.
+[02:13] Now here, let's say this current is equal to I dash.
+[02:18] So if we apply the KCL at this node, then we can say that this current I dash is equal
+[02:24] to I1.
+[02:26] That means I1 is equal to VID by 1 kilo.
+[02:32] So now let us put all these values in these two expressions and let us find the relationship
+[02:37] between the V out and the V in.
+[02:40] So first of all, let us put the value of V1 and I1 in first expression.
+[02:46] That means V1 is equal to Z11 times I1 plus Z12 times I2.
+[02:53] Now here voltage V1 is equal to 0 and this current I1 can be given as VID by 1 kilo.
+[03:04] Apart from that, here the value of Z11 is equal to 11 kilo ohm while the value of Z12
+[03:10] is equal to 1 kilo ohm.
+[03:12] That means we can write this expression as 0 is equal to 11 kilo ohm times VID by 1 kilo
+[03:22] ohm plus 1 kilo ohm times I2.
+[03:28] That means minus 11 VID is equal to 1 kilo ohm times I2 or we can say that I2 is equal
+[03:37] to minus 11 times VID by 1 kilo ohm and let's say this is the first expression.
+[03:46] So similarly, now let us put the value of V2 and I1 in the second expression.
+[03:52] So here we know that the voltage V2 is equal to V out.
+[03:57] That means we can write this expression as V out is equal to Z21 times I1 plus Z22 times
+[04:06] I2.
+[04:07] Now here Z21 is equal to 1 kilo ohm while the Z22 is equal to 11 kilo ohm.
+[04:15] Apart from that I1 is equal to VID by 1 kilo ohm while the I2 is equal to minus 11 times
+[04:23] VID by 1 kilo ohm.
+[04:26] So let us put all these values in this expression.
+[04:30] That means V out is equal to 1 kilo ohm times VID by 1 kilo ohm plus 11 kilo ohm times
+[04:43] minus 11 VID by 1 kilo ohm.
+[04:48] That means V out is equal to VI plus minus 11 times minus 11 VI.
+[04:57] That is equal to minus 120 times VI or we can say that the V out D by V in that is the
+[05:05] voltage gain is equal to minus 120.
+[05:10] That means for the given circuit the gain of the amplifier is equal to minus 120 and
+[05:16] hence the D is the correct answer.

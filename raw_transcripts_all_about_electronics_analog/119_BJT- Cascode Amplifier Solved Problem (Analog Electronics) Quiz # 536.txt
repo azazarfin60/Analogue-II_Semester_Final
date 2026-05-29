@@ -1,0 +1,148 @@
+Title: BJT- Cascode Amplifier Solved Problem (Analog Electronics) | Quiz # 536
+URL: https://www.youtube.com/watch?v=EEEBXxzPM0k
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this BJD cascode amplifier and we have been given
+[00:16] that it is biased with the current of 0.2 milli ampere.
+[00:20] So here we have been also given the parameters for the ampere as well as the pnp transistors.
+[00:26] That means here we have been given that for the ampere transistors, the beta is equal
+[00:31] to 100 while the early voltage is equal to 5 volt.
+[00:36] And similarly for the pnp transistors in this cascode amplifier, the value of the beta
+[00:41] is equal to 50 while the early voltage is equal to 4 volt.
+[00:47] So with this given parameters, here we have been asked to find the gain of this cascode
+[00:51] amplifier.
+[00:52] So let us find that.
+[00:55] So if you observe this circuit, then it is the cascode amplifier with the cascode current
+[01:00] source.
+[01:01] That means here, these two transistors Q3 and Q4 forms the cascode current source or
+[01:08] to be precise, it is the pnp cascode current source.
+[01:12] And this Q1 and Q2 run thisters forms the basic cascode amplifier.
+[01:18] So if you have followed the earlier video on the BJD cascode amplifier, then we have already
+[01:22] derived the expression for the voltage gain of this cascode amplifier.
+[01:27] And we have seen that for this cascode amplifier, this is how the equivalent circuit will look
+[01:32] like.
+[01:34] And from this small signal equivalent circuit, we also found the output impedance of this
+[01:38] given cascode amplifier.
+[01:40] So for that, we have added the test voltage at the output node and we found the test
+[01:46] current.
+[01:47] And the ratio of the test voltage to the test current gives us the output impedance.
+[01:52] So we have seen that for this cascode amplifier, its output impedance can be given by this
+[01:58] expression.
+[01:59] That is the gm2 times r02 times r1 parallel rpi2.
+[02:05] Where this r01 is the output impedance of this Q1 run thisters, while the r02 is the
+[02:11] output impedance of this Q2 run thisters.
+[02:15] That means this is the output impedance, but is seen through this node.
+[02:19] Similarly, if we see the cascode current source, then it is formed by this Q3 and the Q4
+[02:25] run thisters.
+[02:26] And if we see the equivalent output impedance, but is seen from this Q3 run thisters, then
+[02:31] similarly, it can be given as gm3 times r03 times r04 parallel rpi3.
+[02:40] And in the earlier video of the BJD cascode amplifier, we have already derived this part.
+[02:46] That is this entire portion can be represented by this equivalent output impedance.
+[02:51] And if we see the equivalent circuit of the amplifier, then this is how it can be represented.
+[02:57] That means this cascode current source can be represented by the current resistance of
+[03:01] the rop.
+[03:03] And then after, if we see the equivalent voltage gain of this cascode amplifier, then it
+[03:08] can be given as minus gm times this r0n parallel rop.
+[03:14] And the rop is the equivalent output impedance of this cascode current source, while the
+[03:19] rown is the output impedance, but is seen through this end.
+[03:24] And this transconnectance gm is the overall transconnectance of the cascode amplifier.
+[03:30] So in that video, we have also seen that this overall transconnectance of this cascode
+[03:35] amplifier is approximately equal to gm1.
+[03:39] That is the transconnectance of the Q1 transistor at which the input signal is applied.
+[03:45] So overall we can say that the gain of this cascode amplifier is equal to minus gm1 times
+[03:51] this rop parallel rown.
+[03:54] So here we need to find the value of the gm1, rop as well as the rown.
+[04:01] And from that, we can find the voltage gain of this cascode amplifier.
+[04:06] So first of all, let us find the value of this gm1.
+[04:10] So we know that this transconnectance gm1 can be given as this IC divided by Vt.
+[04:17] And here we have been given that the bias current of this cascode amplifier is equal to 0.2
+[04:23] milliampere.
+[04:25] So we can say that the collector current for all these transistors is equal to 0.2 milliampere.
+[04:31] Because here all these transistors are connected in the series connection.
+[04:37] So that is equal to 0.2 milliampere divided by 25 milliwold, where this Vt is the thermal
+[04:45] voltage.
+[04:46] So at the room temperature typically, the value of the Vt is equal to 26 milliwold.
+[04:52] But here for the simplicity, let us take it as the 25 milliwold.
+[04:57] So if we calculate the value, then it will come out as 8 milli cements.
+[05:02] That means the value of the gm1 is equal to 8 milli cements.
+[05:07] So now let us find the value of the rop.
+[05:11] So the equivalent output impedance of this cascode current source can be given by this
+[05:16] expression.
+[05:17] And for that, first we need to find the value of the gm3.
+[05:22] So here, since all these transistors are connected in the series connection, so the gm3
+[05:28] will also be same as the gm1.
+[05:31] That means the value of the gm3 will also be equal to 8 milli cements.
+[05:37] So now to find the value of this rop, we also need the value of this rop3, rop4 as well
+[05:43] as the rpi3.
+[05:45] So here, since the q3 and q4 are the PnPt undisters, so the value of the rop3 and rop4 will
+[05:52] be equal to same.
+[05:55] So this rop3 or the rop4 can be given as this Va divided by ic, that the Va is the early
+[06:02] voltage of this PnPt undisters.
+[06:05] So in the question we have been given that this early voltage for the PnPt undister is
+[06:10] equal to 4 volt and this bias current or the ic is equal to 0.2 milliampere.
+[06:18] So from this we can say that this rop3 and rop4 is equal to 20 kilo ohm.
+[06:25] So now we only need to find the value of the rpi3.
+[06:30] So this rpi3 can be given as beta divided by gm.
+[06:35] And for the PnPt undister here the value of the beta is equal to 50.
+[06:41] So we can say that this rpi3 is equal to 50 divided by 8 milliampere.
+[06:47] So if you calculate the value then that will come out as 6.25 kilo ohm.
+[06:54] So in this way we got the value of the rpi3, rop3 and rop4 as well as the gm3.
+[07:01] So from this now we can easily find the value of the rop.
+[07:06] That means this rop is equal to 8 milliampere times 20 kilo ohm times 20 kilo ohm in parallel
+[07:19] 6.25 kilo ohm.
+[07:22] So this 8 milliampere times 20 kilo ohm will be equal to 160.
+[07:28] And if you find the parallel combination of this 20 kilo ohm and the 6.25 kilo ohm
+[07:33] then that will be equal to 4.76 kilo ohm.
+[07:37] So if you multiply these two terms then the rop is equal to 763.1 kilo ohm or we can
+[07:46] say that that is equal to 0.763 mega ohm.
+[07:51] So in this way we got the value of the rop.
+[07:56] So similarly let us find the value of the ron.
+[08:01] So now to find the ron once again we need to find the value of the gm2 rr2r1 and the
+[08:08] rpi2.
+[08:10] So once again this gm1 and the gm2 will be equal to ic divided by Vt.
+[08:16] So once again that will be equal to this 0.2 milliampere divided by 25 milli volt.
+[08:24] And once again that is equal to 8 milli cements.
+[08:28] Similarly this rro1 and the rro2 will be also same because both this qr and the q2 transistors
+[08:35] are the npn transistors.
+[08:38] And here in the given question the value of the early voltage is also same for both
+[08:43] transistors.
+[08:45] So we can say that this rro1 is equal to rro2 is equal to Va divided by ic.
+[08:51] And in the question we have been given that for this npn transistor this early voltage
+[08:57] is equal to 5 volt.
+[08:59] So we can say that this rro1 is equal to rro2 is equal to 5 volt divided by 0.2 milliampere
+[09:06] and that is equal to 25 kilo ohm.
+[09:11] So now we only need to find the value of the rpi2.
+[09:15] So this rpi2 can be given as this beta divided by gm2.
+[09:21] And here for the npn transistor the value of the beta is equal to 100.
+[09:27] And we have seen that this gm2 is equal to 8 milli cements.
+[09:33] So from this we can say that the value of the rpi2 is equal to 12 point 5 kilo ohm.
+[09:41] So in this way we got the value of the gm2 rro1 and rro2 as well as the rpi2.
+[09:48] So from this we can say that the value of the rron is equal to these 8 milli cements times
+[09:57] 25 kilo ohm times 25 kilo ohm in parallel with 12 point 5 kilo ohm.
+[10:06] So this 8 milli cements time 25 kilo ohm is equal to 200.
+[10:11] And the parallel combination of this 25 kilo ohm and the 12 point 5 kilo ohm will be equal
+[10:16] to 8 point 33 kilo ohm.
+[10:20] So if we multiply these two terms then the value of this rron will come out as 1 666.6
+[10:28] kilo ohm.
+[10:29] Or we can say that that is equal to 1 point 667 mega ohm.
+[10:35] So in this way we also got the value of the rron.
+[10:40] So now we can easily find the value of the overall gain of the cascode amplifier.
+[10:46] So the overall gain of this cascode amplifier can be given by this expression.
+[10:51] So we can say that this gain is equal to 8 milli cements times rop in parallel with
+[10:59] rron.
+[11:00] So we have seen that this rop is equal to 0.763 mega ohm.
+[11:07] While this rron is equal to 1.667 mega ohm.
+[11:12] So if you see the parallel combination of this rron and the rop then that is equal to
+[11:18] 0.523 mega ohm.
+[11:22] So if you multiply these two terms then this overall voltage gain is roughly equal to
+[11:27] minus 4187.
+[11:30] That means the gain of this cascode amplifier is equal to 4187.
+[11:36] So depending on the rounding that you have taken for the value of the ropn the rron your
+[11:40] answer will slightly vary.
+[11:43] But based on this rounding this is the voltage gain of the cascode amplifier.
+[11:48] So from this we can say that for the given BJD cascode amplifier its voltage gain is
+[11:54] equal to minus 4187.
+[11:57] And as I said depending on the rounding that you have used your value might slightly
+[12:03] vary.
+[12:04] So that is the answer for the given question.

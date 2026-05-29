@@ -1,0 +1,210 @@
+Title: BJT- Current Mirror Explained
+URL: https://www.youtube.com/watch?v=VnJHXQCPIvs
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:16] So in this video we will learn about the current mirror circuits.
+[00:20] So first of all let us understand what is current mirror and why it is used.
+[00:26] And for that let me start with the current source.
+[00:30] So if we take an integrated circuit then it consists of so many amplifiers and to bias
+[00:35] these amplifiers we require the so many current sources.
+[00:40] Now the advantage of biasing the amplifier with the current source is that here the emitter
+[00:44] current is independent of the beta as well as the RB.
+[00:48] Moreover by increasing the value of RB we can increase the input impedance.
+[00:54] So for that this biasing current should be very stable.
+[00:58] That means the value of this biasing current should not change with the temperature as well
+[01:02] as the supply voltage.
+[01:05] For example if we take the case of the smart phone then as the battery discharges then there
+[01:11] is a reduction in the supply voltage.
+[01:14] So this current source should be able to maintain the constant current even if there is a change
+[01:18] in the supply voltage.
+[01:21] Well fortunately it is possible to design such current sources but it involves the lot
+[01:26] of circuitry.
+[01:28] So for the amplifiers of the integrated circuit if required such stable current sources.
+[01:34] So instead of designing a stable current source for each amplifier what is actually done
+[01:39] is when stable current source is fabricated in the integrated circuit itself and using
+[01:45] the current pinner circuit the same current source is replicated.
+[01:50] So this replicated current source has the same characteristic as the reference current
+[01:54] source.
+[01:55] That means this current source is as stable as the reference current source and this current
+[02:01] sources can be used to bias the amplifiers.
+[02:05] So this current mirror is the active circuit which senses the reference current and generates
+[02:11] the copy or the number of copies of this reference current with the same characteristics.
+[02:16] Now here this i copy could be same as this reference current or it could be either a
+[02:24] multiple or the fraction of the reference current.
+[02:27] That means this i copy can be equal to i reference or it could be equal to n times i reference
+[02:35] or i reference divided by n but in any case it is as stable as the reference current
+[02:42] source.
+[02:44] So now let us see how it can be designed using the BJT.
+[02:49] Now we know that the BJT can be used to generate the current source because the collector current
+[02:54] i c is the function of the voltage Vb.
+[02:58] That means by controlling this voltage Vb we can control this collector current.
+[03:04] So to generate this current mirror somehow we need to sense this reference current and
+[03:09] we need to convert this current into the voltage and we need to apply this voltage but
+[03:14] in the base and the emitter of this transistor.
+[03:17] So that this collector current i c is proportional to the reference current.
+[03:22] So this is the way by which we can convert the reference current into the voltage.
+[03:28] So here as you can see the collector and the base terminal of the transistors are connected
+[03:32] together.
+[03:34] So basically it is the diode connected transistor.
+[03:37] That means here the BJT X like a diode and here this reference current is applied at the
+[03:44] collector terminal.
+[03:47] Now here for a moment let us assume that this base current i b is negligible.
+[03:52] That means here we can assume that this collector current i c is approximately equal to i reference.
+[03:59] Now we already know the relationship between the collector current and the voltage Vb right.
+[04:05] So in this case we can say that this i reference or the collector current is equal to i s reference
+[04:12] times e to the power voltage Vb divided by Vt.
+[04:17] So here this i s reference is the reverse saturation current of the reference transistor.
+[04:23] And from this we can say that the voltage Vb is equal to Vt times natural log of i reference
+[04:31] divided by i s reference.
+[04:34] So as you can see here the voltage Vb is the function of the reference current.
+[04:40] Now let us apply this voltage Vb to the base of the second transistor.
+[04:45] So let us call this second transistor as the Q1.
+[04:49] So here this voltage Vb reference and the voltage Vb1 are same because here the base of
+[04:56] the both transistors are connected together and the emitter terminal of each transistor
+[05:00] is grounded.
+[05:02] That means here voltage Vb reference is equal to Vb1.
+[05:09] Let us call it as a Vb.
+[05:13] And as we have seen this collector current is the function of the voltage Vb.
+[05:18] That means i c1 is equal to i s1 times e to the power voltage Vb divided by Vt where
+[05:26] i s1 is the saturation current of the transistor Q1.
+[05:31] Now here only one thing which we need to ensure is that the collector base junction should
+[05:36] remain in the reverse biased because here this transistor Q1 should remain in the active
+[05:42] region.
+[05:43] That means the collector voltage should be always more than the base voltage.
+[05:48] So by ensuring this we can replicate this reference current.
+[05:53] So basically here what we did first of all we generated the voltage which is proportional
+[05:57] to this reference current.
+[06:00] And then we have applied this voltage as an input to the second transistor.
+[06:05] And this second transistor generates the collector current based on the input voltage.
+[06:10] So here the first transistor acts as a current to voltage converter while the second transistor
+[06:16] acts as a voltage to current converter.
+[06:20] So here this current current i c1 is proportional to the i reference.
+[06:25] And let us also see that mathematically.
+[06:28] So here this i reference can be given as i s reference times e to the power voltage Vb
+[06:34] divided by Vt.
+[06:37] So if we take the ratio of these two terms then we can write it as i c1 divided by i reference
+[06:44] is equal to i s1 divided by i s because these two exponential terms will get cancel out.
+[06:54] So from this we can say that this collector current i c1 is equal to i s1 divided by i s
+[07:02] reference times i reference.
+[07:09] Now here if both transistors are identical or they are the matched pairs then the reverse
+[07:14] saturation current of both transistors will be same.
+[07:18] That means in that case this current i s1 and the i s reference would be same.
+[07:25] And in that case we can say that this current i c1 is equal to i reference.
+[07:31] So in this way using this current feeder we can replicate this reference current.
+[07:38] Now in general this saturation current is proportional to the area of the emitter based
+[07:42] junction.
+[07:44] So here basically I am talking about this highlighted area.
+[07:48] So if the area of this transistor q1 is 5 times the area of this reference transistor
+[07:54] in that case this i s1 would be 5 times the i s reference.
+[08:01] And from the expression i c1 is equal to i s1 divided by i s reference times i reference
+[08:10] we can say that this current i c1 would be 5 times the i reference.
+[08:17] On the other end if the area of this transistor q1 is 1 fifth of the area of this reference
+[08:23] transistor or effectively 1 fifth of the area of the emitter based junction of this reference
+[08:29] transistor then in that case this i c1 would be 1 fifth of the i reference.
+[08:37] So in this way it is possible to generate the multiple or the fraction of the reference
+[08:42] current.
+[08:44] So now let us see how you can generate the multiple copies of this reference current.
+[08:50] So this is the way we can generate the multiple copies of the reference current.
+[08:55] So as you can see over here the base of each transistor is connected to the base of the
+[09:00] reference transistor or more commonly it can be shown in this fashion.
+[09:06] So depending on the area of the emitter based junction of each transistor the collector
+[09:11] current could be either multiple or the fraction of the reference current.
+[09:16] Now in the integrated circuits the area is usually defined in terms of the area of the
+[09:21] unit transistor.
+[09:22] So here let us say a is the area of the emitter based junction of the unit transistor.
+[09:28] So here the reference transistor has the area of a while the area of the emitter based
+[09:34] junction of this transistor q1 is equal to 3a.
+[09:38] So as you have seen earlier in this case the current i c1 would be 3 times the i reference
+[09:47] and the same current can also be generated if the 3 transistors are connected in the parallel
+[09:51] connection.
+[09:53] So here each transistor has the area of a and the collector terminal of each transistor
+[09:59] is connected together.
+[10:01] So here the current through the collector of this reference transistor is equal to i
+[10:06] reference and the same current will also flow through the collector of the each transistor.
+[10:12] That means here this current i c is equal to 3 times the i reference.
+[10:17] Similarly, if the 3 reference transistors with the area of a are connected in the parallel
+[10:22] connection then the collector current of each transistor is equal to i reference divided
+[10:28] by 3.
+[10:31] That means we can say that here this i c1 is also equal to i reference divided by 3.
+[10:37] So in this way we can generate the multiple or the fraction of the reference current.
+[10:43] Now so far in our discussion we have assumed that the base current i p is negligible.
+[10:50] So now let us see the effect of this base current on the replicated current i c1.
+[10:55] So here both transistors are of the same area.
+[10:59] That means here the current current of both transistors will be same.
+[11:05] That means here this current will be also equal to i c1.
+[11:10] Now we know that the base current i b is equal to i c divided by beta.
+[11:16] That means the base current of this transistor q1 will be equal to i c1 divided by beta.
+[11:22] Similarly the base current of this reference transistor is also equal to i c1 divided by beta.
+[11:29] That means the current which is flowing through this branch is equal to 2 i c1 divided by beta.
+[11:37] So now to find the expression of this i c1 let us apply the k cl at this node.
+[11:43] So applying the k cl we can write this i reference is equal to i c1 plus 2 i c1 divided by beta.
+[11:57] That means i c1 is equal to i reference divided by 1 plus 2 divided by beta.
+[12:07] Now usually the value of beta is very high.
+[12:11] That means in that condition we can neglect this second term and the i c1 will be approximately equal to i reference.
+[12:20] That means whenever the value of this beta is very high then the base current i b will be negligible.
+[12:27] And in that case this collector current i c is approximately equal to the reference current.
+[12:33] Now let us see instead of the one transistor if there are three transistors with the same area
+[12:40] then what would be the collector current. So here we are assuming that the i c1 is equal to i c2
+[12:48] is equal to i c3. Let us say it is equal to i c. That means here base current of each transistor
+[12:56] is equal to i cd divided by beta. That means here this current is equal to 3 i cd divided by beta.
+[13:06] And the current at the base of this reference transistor is also equal to i cd divided by beta.
+[13:12] That means current in this branch is equal to 4 i cd divided by beta.
+[13:19] And of course this collector current is equal to i c. So if we apply the KCL at this node then we can
+[13:28] write i reference is equal to i c plus 4 i cd divided by beta. That means collector current i c
+[13:40] is equal to i reference divided by 1 plus 4 divided by beta. So instead of three transistors in
+[13:50] general if the n transistors are connected then this collector current i c can be given as i reference
+[13:58] divided by 1 plus n plus 1 divided by beta. So as far as the value of n is moderate and the value
+[14:09] of beta is high then we can assume that this collector current i c is approximately equal to i
+[14:15] reference. Similarly now let us see the effect of this base current on this circuit.
+[14:22] So in this case the collector current through each transistor is equal to i cd divided by 3.
+[14:28] Right? And same current will also flow through this reference transistor or to be precise
+[14:35] through the collector of this reference transistor. So here this base current is equal to i c
+[14:43] divided by 3 beta. That means for the 3 transistors the base current would be equal to 3 i cd
+[14:52] divided by 3 beta. That means the current through this branch is equal to 4 i cd divided by 3 beta.
+[15:01] So to find the value of this i c let us apply the k c l at this node. That means applying the k c l
+[15:09] we can write i reference is equal to i c divided by 3 plus 4 i cd divided by 3 beta.
+[15:19] Or we can say that this current current i c is equal to 3 times i reference divided by
+[15:27] 1 plus 4 divided by beta. So if you neglect the base current then the collector current i c is
+[15:36] equal to 3 times i reference but with the base current this is the expression of the collector current.
+[15:43] Similarly if there are n transistors are connected in that case this collector current i c can
+[15:50] be given as n times i reference divided by 1 plus n plus 1 divided by beta. So as you can see
+[16:02] when the value of n is moderate and the value of beta is high then i c is equal to approximately
+[16:08] n times i reference. For example if n is equal to 5 and beta is equal to 100 in that case this i c
+[16:17] is approximately equal to n times i reference or to be precise it is equal to 5 times i reference.
+[16:26] But as the value of n increases then that will be an error in the approximation.
+[16:32] Similarly in this case also as we have seen this collector current i c is equal to i reference
+[16:40] divided by 1 plus n plus 1 divided by beta. So as the value of n increases then this collector current
+[16:49] i c would be less than the i reference and the error in the approximation increases.
+[16:55] That means here we cannot increase the value of n indefinitely. For example if the value of beta
+[17:03] is 100 and the value of n is also 100 in that case there will be a considerable amount of error
+[17:09] in the approximation and in fact the value of this collector current is almost half of this reference
+[17:17] current. So it shows that even though with the current mirror we can make the copies of this
+[17:23] reference current but we cannot increase the value of n indefinitely. But there are ways by which
+[17:30] the performance of the current mirror can be improved. So if you observe the circuit then one more
+[17:36] transistor is also added over here. So let us find out how it will improve the performance of the
+[17:43] current mirror. So here we are assuming that the character current of each transistor is the same.
+[17:50] Let us call this character current as the i c. So for the n transistors the base current over here
+[17:57] would be equal to n times i c divided by beta right while this current is equal to i c divided by
+[18:06] beta. That means here the emitter current of this transistor Q is equal to n plus one times
+[18:16] i c divided by beta and this current would be approximately equal to emitter current.
+[18:22] That means we can assume that this current is also n plus one divided by beta times i c right.
+[18:31] So if we see the base current of this transistor Q then it will be equal to i c q divided by beta
+[18:38] that is equal to n plus one times i c divided by beta square and of course this current over here
+[18:47] is equal to i c. So to find the value of current i c now let us apply the k c l at this node.
+[18:56] That means if we apply the k c l then we can write this current i reference is equal to
+[19:03] i b q that is the base current of this transistor Q plus i c that means i reference is equal to
+[19:13] n plus one times i c divided by beta square plus i c that means we can say that this
+[19:23] current current i c is equal to i reference divided by one plus n plus one divided by beta square.
+[19:34] So as you can see now in the expression instead of beta there is a beta square.
+[19:39] So for example now if the value of beta is 100 and the value of n is also 100 then in that case
+[19:48] still this i c is approximately equal to i reference or I would say that there will be only one
+[19:56] percent error. So with this configuration there is a significant improvement over the previous case.
+[20:02] Similarly in this case also if you follow the same procedure then this current current i c can
+[20:09] be given as n times i reference divided by one plus n plus one divided by beta square.
+[20:20] So by including this transistor we can improve the performance of this current mirror and very soon
+[20:27] you will take some examples on the current mirror on our second channel.
+[20:31] But I hope in this video you understood what is current mirror, why it is used and how it can
+[20:37] be implemented using the BJT. So if you have any question or suggestion,
+[20:43] do let me know here in the comment section below. If you like this video hit the like button
+[20:48] and subscribe our channel for more such videos.

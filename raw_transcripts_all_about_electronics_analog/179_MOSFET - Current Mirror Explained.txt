@@ -1,0 +1,190 @@
+Title: MOSFET - Current Mirror Explained
+URL: https://www.youtube.com/watch?v=Jmu02dErhdg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will learn about the current mirrors and we will see that how it can
+[00:15] be designed using the MOSFET.
+[00:18] So typically in the integrated circuits, the MOS amplifiers are biased using the current
+[00:24] source and typically in the ICs, this current mirror circuit is used as a current source.
+[00:31] The advantage of biasing the amplifier with the constant current source is that it provides
+[00:36] the high voltage gain and it also improves the biasing stability.
+[00:41] In the earlier videos, we have seen that actually how this current source can be implemented
+[00:46] using a single PMOS transistor or using the cascode current source.
+[00:51] But in this type of circuit, this biasing voltage should be as stable as possible.
+[00:57] So if there is any change in this biasing voltage, then it will affect the biaskurred and
+[01:02] it is particularly important in the battery operated devices where with the time the supply
+[01:08] voltage reduces.
+[01:10] Well, there are ways to minimize the change in the biasing voltage and let's say somehow
+[01:16] we are able to keep the biasing voltage stable.
+[01:19] But if you see any IC, then it contains hundreds or thousands of such amplifiers and each
+[01:25] amplifier is operating at a different operating point.
+[01:29] So to generate a stable biasing voltage, for each amplifier is another challenge.
+[01:34] Moreover, this drain current or this biasing current of this current source is a function
+[01:39] of temperature because this mu and n the VT are the temperature dependent.
+[01:45] So because of that, with the temperature, this biasing current will change.
+[01:50] So to overcome all these problems, what is actually done is a very stable current source
+[01:55] is generated in the IC and using the current mirror circuit, a copy or the number of copies
+[02:00] of this reference current source is generated.
+[02:03] So this generated copy could be same as the reference current source or it could be a
+[02:08] multiple or the fraction of this reference current source.
+[02:12] So now let us see how this current mirror circuit is design using the MOSFET.
+[02:18] So we know that the MOSFET is a voltage control device and in the saturation, the drain current
+[02:24] ID can be given by this expression.
+[02:28] So by controlling this gate to source voltage, this drain current ID can be changed.
+[02:33] So if you want to copy this reference current in this MOSFET, then first of all, we need
+[02:38] to generate a voltage which is proportional to this reference current and we need to
+[02:42] apply that voltage between the gate and the source terminal of this MOSFET so that this
+[02:48] drain current is a function of voltage VGS and in a way, we get a relationship between
+[02:53] this reference current and this drain current.
+[02:56] So using the diode connected transistor, we can generate a voltage VGS which is proportional
+[03:02] to this reference current.
+[03:04] So in this diode connected transistor, the drain and the gate terminals are connected
+[03:08] together.
+[03:09] That means in this case, this voltage VD is equal to VG.
+[03:15] So here, this voltage VDS is always greater than or equal to VGS minus VT.
+[03:22] That means this MOSFET always operates in the saturation region and therefore, this
+[03:28] drain current ID can be given by this expression.
+[03:32] So let's say these device parameters is equal to k.
+[03:37] That means the drain current ID can be given as k times VGS minus VT whole square and
+[03:45] here, this drain current ID is equal to I reference.
+[03:50] That means I reference is equal to k times VGS minus VT whole square or we can say that
+[03:59] this voltage VGS is equal to square root of I reference divided by k plus VT.
+[04:08] So depending on this reference current, this voltage VGS will change and the same voltage
+[04:13] VGS can be acted between the gate and the source terminal of this MOSFET.
+[04:19] So let's call this MOSFET as the reference MOSFET and this MOSFET as M1.
+[04:25] So if these two MOSFETs are perfectly matched or in other words, if the device parameters
+[04:31] of these two MOSFETs are identical, then for the same voltage VGS, this MOSFET M1
+[04:37] should also generate the drain current which is equal to the reference current, right?
+[04:42] So here, the only thing which we need to ensure is that this M1 should remain always in
+[04:47] the saturation so that it can be used as a current source.
+[04:52] That means this VDS1 should be greater than or equal to VGS minus VT.
+[04:59] So in general, let us find the relationship between this drain current ID1 and this reference
+[05:04] current.
+[05:06] So let's say for two MOSFETs, except the W by L ratio, all the device parameters are
+[05:12] same.
+[05:13] That means the oxide capacitance and these threshold voltage are equal.
+[05:18] So for the given value of the voltage VGS, the reference current or the drain current
+[05:23] of this reference transistor can be given as I reference that is equal to half times
+[05:31] nu and times CuX times W divided by L reference times VGS minus VT whole square.
+[05:40] While for this transistor M1, this drain current ID1 can be given as half times nu and
+[05:47] times CuX times W divided by L1 times VGS minus VT whole square.
+[05:56] So this W by L1 is the W by L ratio of this transistor M1, while this W by L reference
+[06:02] is the W by L ratio of this reference transistor.
+[06:06] So if we take the ratio of this ID1 and the I reference, then we can say that this ID1
+[06:12] divided by I reference is equal to W by L1 divided by W by L reference or we can say that
+[06:23] this ID1 is equal to I reference times this W by L1 divided by W by L reference.
+[06:35] So if the W by L ratio of the two MOSFETs are same, then this ID1 is equal to I reference
+[06:43] and by changing this W by L ratio, we can generate the new current which is multiple or the
+[06:48] fraction of this reference current.
+[06:51] For example, if the W by L ratio of this M1 is 5 times the reference transistor, then
+[06:57] this ID1 will be equal to 5 times I reference.
+[07:02] So in this way, we can generate a copies which is fraction or the multiple of this reference
+[07:07] current.
+[07:08] So typically in the ICs, the length of each MOSFET is kept fixed and only width is varied
+[07:15] and by changing this width, we can change the W by L ratio.
+[07:19] Now so far in our discussion, we have neglected the effect of the channel and modulation,
+[07:24] that means we have assumed that in the saturation region, even if the voltage VDS increases, then
+[07:30] also this drink current ID remains fixed.
+[07:34] But actually, the drink current does change with the change in the voltage VDS.
+[07:39] So if two MOSFETs are identical, then this drink current ID1 will be equal to I reference
+[07:46] and it will occur when this voltage VDS1 is equal to VGS.
+[07:51] So considering the channel and modulation effect, it is true when this voltage VDS1 is
+[07:57] equal to VGS because for this reference transistor, since the drain and the gate terminals
+[08:03] are connected together, so the voltage VDS is same as VGS.
+[08:09] That means for this MOSFET M1, to generate a same reference current, the voltage VDS1
+[08:15] should also be equal to VGS.
+[08:18] But if there is any change in this voltage VDS1, then the generated drain current will
+[08:22] also change.
+[08:24] So if this voltage VDS1 changes by delta VDS1, then let's say the change in the drain
+[08:31] current will be equal to ID1 plus delta ID1.
+[08:36] And with this change in the drain current, the drain current can be written as I reference
+[08:40] times 1 plus lambda times delta VDS1.
+[08:46] But this lambda is the channel and modulation coefficient of this M1.
+[08:50] So we can say that the change in the drain current is equal to I reference times this
+[08:57] lambda times delta VDS1.
+[09:00] Or we can say that it is equal to I reference times this delta VDS1 divided by VA.
+[09:08] But this VA is equal to 1 over lambda and this VA is also known as the early voltage.
+[09:16] So this is the expression of the change in the drain current due to the change in the
+[09:19] voltage VDS.
+[09:21] Now while writing this expression, we have assumed that the W by L ratio of these two
+[09:26] MOSFETs are identical.
+[09:29] But if the W by L ratio of these two MOSFETs are different, then let us see the general
+[09:33] expression of this drain current.
+[09:36] So in that case, this ID1 plus delta ID1 can be written as I reference times this W by
+[09:45] L of first transistor divided by W by L of these reference transistor times 1 plus lambda
+[09:54] times delta VDS1.
+[09:57] So in this way, with the change in the voltage VDS, there will be also change in this
+[10:02] drain current.
+[10:04] So this change can be minimized by increasing the length of these MOSFETs.
+[10:09] That means in the W by L ratio, if we increase the value of L, then we can minimize the effect
+[10:15] of the channel and modulation.
+[10:17] So on the second channel, we will cover a few examples based on it so that it will get
+[10:22] more clear to you.
+[10:23] Alright, so so far, we have seen the current mirror circuit using the endmost transistor.
+[10:29] Similarly, let us see the endmost current mirror.
+[10:33] And for time being, let us neglect the effect of the channel and modulation.
+[10:37] So here, this reference current is connected at the drain terminal of this reference
+[10:42] transistor, while the gate and the drain terminal of this reference transistor are connected
+[10:47] together.
+[10:48] So basically, it is the diode connected transistor.
+[10:51] And if you notice over here, then the source of both transistors are connected to the BDD.
+[10:57] That means here, voltage VSG for both transistors are equal.
+[11:03] Now once again, these drain current ID1 can be given as W by L of these first transistor
+[11:11] divided by W by L of this reference transistor times I reference.
+[11:17] So the only thing which we need to ensure over here is that this M1 should operate in
+[11:22] the saturation region.
+[11:24] That means here, this voltage VSD1 should be greater than or equal to VSD minus VT.
+[11:32] Alright, so now let us see the circuit.
+[11:35] We are using a single reference current source.
+[11:38] A multiple copies of this current are generated.
+[11:41] So here as you can see, using a single reference current source, a multiple copies are generated.
+[11:48] So here, this ID1 will be equal to W by L of this first transistor divided by W by L
+[11:56] of this reference transistor times I reference.
+[12:01] And if you notice over here, and the same voltage VGS is also applied to this transistor
+[12:06] M2.
+[12:07] That means for this transistor M2, this ID2 will be equal to W by L ratio of this second
+[12:15] transistor divided by W by L ratio of this reference transistor times I reference.
+[12:22] And the same current is also flowing through this transistor M3.
+[12:26] That means here, this ID2 will be equal to ID3.
+[12:31] So now this current ID2 will act as a reference current for this T most current mirror.
+[12:37] And here, this ID4 can be given as W by L ratio of this fourth transistor divided by W
+[12:46] by L ratio of this third transistor times ID2.
+[12:51] So now let us put some numbers so that it will get more clear to you.
+[12:55] So let us say the W by L ratio of this M1 transistor is 2 times this reference transistor,
+[13:01] while the W by L ratio of this second and the third transistor is equal to 3 times reference
+[13:06] transistor.
+[13:07] And let us say for this fourth transistor, the W by L ratio is 6 times reference transistor.
+[13:15] So with that, this ID1 will be equal to 2 times I reference.
+[13:21] While this ID2 and the ID3 will be equal to 3 times I reference.
+[13:27] And this ID4 will be equal to 6 divided by 3 times ID2.
+[13:33] That means ID4 will be equal to 2 times ID2.
+[13:37] And since ID2 is equal to 3 times I reference.
+[13:41] So we can say that this ID4 will be equal to 6 times I reference.
+[13:47] So in this way, we can generate a multiple for the fraction of this reference current
+[13:51] source.
+[13:52] So the only thing which we need to ensure over here is that all the MOSFETs should operate
+[13:57] in the saturation region.
+[13:59] Alright, so now this current ID1 can be used to bias the source follower while this
+[14:05] current ID4 can be used to bias the common source amplifier.
+[14:10] And the same is shown over here where this ID1 and the ID4 are generated using the current
+[14:17] mirror circuits.
+[14:19] So for this common source amplifier, this PMOS current mirror can be used as a load.
+[14:25] And using the small signal analysis, if you find the equivalent impedance which is seen
+[14:29] from this drain side, then it is actually the output impedance of this M1.
+[14:34] Let's say that is equal to RO1.
+[14:38] So if you use this PMOS current mirror as an active load, then the voltage gain of
+[14:42] this amplifier will be equal to GM2 times this RO2 parallel RO1, where this RO2 and the
+[14:52] GM2 are the output impedance and the transcurrents of this amplifying transistor.
+[14:58] So in the earlier videos, we have seen that to improve this voltage gain, a cascode amplifier
+[15:04] along with the cascode current source can be used.
+[15:07] But in that case, there will be an issue of the basing stability.
+[15:12] So if you want to improve the gain and the basing stability at the same time, then the
+[15:16] cascode current mirror can be used as an active load.
+[15:20] So if you want to know more about it, then let me know in the comments.
+[15:24] But I hope in this video, you understood what is current mirror and how it can be designed
+[15:29] using the MOSFET.
+[15:31] So if you have any question or suggestion, then do let me know here in the comments section
+[15:35] below.
+[15:36] If you like this video, hit the like button and subscribe to our channel for more such
+[15:39] videos.

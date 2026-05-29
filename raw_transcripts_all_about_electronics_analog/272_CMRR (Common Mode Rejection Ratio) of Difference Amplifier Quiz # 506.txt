@@ -1,0 +1,84 @@
+Title: CMRR (Common Mode Rejection Ratio) of Difference Amplifier | Quiz # 506
+URL: https://www.youtube.com/watch?v=KC6i-9M_Uuc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question, we have been given the different simplifiers circuit and here we
+[00:15] have been given that the op-em in the given circuit is the ideal op-em.
+[00:20] So here, we have been asked to find the common mode rejection ratio for the CMRR of the
+[00:25] given difference amplifier.
+[00:27] So here, before finding that, first of all let us find the expression of the output voltage
+[00:32] in terms of these two input voltages.
+[00:35] And to find that, first of all let us consider one of the voltage source at a time.
+[00:40] So here, if we just consider this input voltage V in 1, then in that case, this V in 2 will
+[00:46] act as a short circuit.
+[00:49] So in this condition, if we see the output voltage, then let's say that is equal to V
+[00:54] in 1 and it can be given as minus RF d by R1 times input voltage.
+[01:03] So in this condition, this output voltage V of 1 is equal to minus 101 divided by this
+[01:10] 10.5 kilo ohm times V in 1.
+[01:14] So this will be the output voltage of the given circuit and this V in 1 is acting alone.
+[01:19] Similarly, and this V in 2 is acting alone and this V in 1 will act as a short circuit.
+[01:26] And in this condition, this given difference amplifier will act as a non-inverting amplifier.
+[01:32] And in that case, let's say, this output voltage is equal to V of 2.
+[01:37] So that can be given as 1 plus RF d by R1 times V plus, where the V plus is the voltage
+[01:45] at this node.
+[01:47] So in that case, this output voltage is equal to 1 plus is 101 divided by 10.5 times V
+[01:55] plus.
+[01:56] What we can say that is V of 2 is equal to 1 plus is 101 divided by 10.5 times 101.5 divided
+[02:08] by 101.5 plus 9.5 times V in 2.
+[02:15] So basically, that is the voltage divided by 10, this 2 radisters.
+[02:19] So further, if we simplify it, then this V of 2 is equal to 9.71 times V in 2.
+[02:26] And likewise, this V of 1 is equal to minus 9.61 9 times V in 1.
+[02:34] So in this way, it got the value of the V of 1 and the V of 2.
+[02:38] And now, applying the superposition theorem, we can say that the overall output voltage,
+[02:43] that is the V of 2 is V of 1 plus V of 2.
+[02:48] That means the overall output voltage V of 2 is equal to V of 1 plus V of 2.
+[02:54] That is equal to minus 9.61 9 times V in 1 plus 9.71 1 times V in 2.
+[03:04] So let's say, this gain is equal to A1, while this gain is equal to A2.
+[03:11] That means here, this V out is equal to A1 times V in 1 plus A2 times V into.
+[03:20] Now here, to find the common mode rejection ratio, we need to find the ratio of the differential
+[03:25] gain to the common mode gain.
+[03:28] Because as you know, this CMRR is equal to the ratio of the differential gain to the
+[03:34] common mode gain.
+[03:35] So here, this differential gain can be given as this A1 minus A2 divided by 2.
+[03:43] And likewise, this common mode gain is equal to A1 plus A2.
+[03:49] So just in a second, I will show you how we got these two expressions.
+[03:54] But in this expression, if you put the value of A1 and A2, then this differential gain
+[03:59] will come out as minus 9.6645.
+[04:04] And similarly, this common mode gain AC will come out as 0.091.
+[04:11] So in this way, it got the value of the differential gain and the common mode gain.
+[04:16] And here, since we have been asked to find the value of the CMRR in the decibel, so it
+[04:20] will be equal to 20 log of this ADD divided by AC.
+[04:26] So just by putting these two values, we will easily find the value of the CMRR.
+[04:31] But first, let me show you how we got these two expressions.
+[04:36] So as you know, for the difference amplifier, the output voltage V out can be given as these
+[04:41] AD times VD plus AC times VC, where the AD is the differential gain and the AC is the
+[04:49] common mode gain.
+[04:51] So here, this VD is the difference between these two voltages, that is V in 1 minus V in
+[04:58] 2, while the VC is the common mode voltage.
+[05:02] So here, this VC is equal to V in 1 plus V in 2 divided by 2.
+[05:09] So from this, we can say that here, the output voltage is equal to AD times V in 1 minus
+[05:18] V in 2 plus AC times this V in 1 plus V in 2 divided by 2.
+[05:29] So now, if we separate the terms of the V in 1 and the V in 2, then we can write this
+[05:34] expression as this V out is equal to this V in 1 times AD plus AC divided by 2 plus V
+[05:45] in 2 times this AC divided by 2 minus AD.
+[05:51] So here, this term is nothing but the A1, while this term is equal to A2.
+[05:58] So from this, we can say that this A1 is equal to AD plus AC divided by 2, while the A2
+[06:06] is equal to minus AD plus AC divided by 2.
+[06:12] Or from this, we can say that this AC is equal to A1 plus A2.
+[06:18] That means here, if we combine these two expressions, then this AD will get cancelled out, and
+[06:23] the value of the AC is equal to A1 plus A2.
+[06:27] Likewise, this differential gain AD is equal to A1 minus A2 divided by 2.
+[06:33] So in this way, we got these two expressions, and based on that, we found the value of
+[06:39] the AC and the AD.
+[06:42] So earlier, we have seen that this common mode gain AC is equal to 0.091, while this differential
+[06:49] gain AD is equal to minus 9.6645.
+[06:55] And here, this common mode rejection ratio in the decibel can be given as 20 log of this
+[07:02] differential gain divided by common mode gain.
+[07:06] That means here, this CMRR is equal to 20 log of this 106.2, and that is equal to 40.52 dB.
+[07:17] So in this way, we got the value of the CMRR.
+[07:21] So from this, we can say that for the given question, the answer is equal to 40.52 dB.
+[07:28] So here, based on the truncation in the values for the AD and the AC, your answers slightly
+[07:34] differ.
+[07:35] But here, it should be around this value.
+[07:38] So we can say that for the given question, the CMRR in the decibel is equal to 40.52.

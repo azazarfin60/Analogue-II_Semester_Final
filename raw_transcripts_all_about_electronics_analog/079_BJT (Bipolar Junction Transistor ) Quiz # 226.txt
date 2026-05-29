@@ -1,0 +1,51 @@
+Title: BJT (Bipolar Junction Transistor ) | Quiz # 226
+URL: https://www.youtube.com/watch?v=78LhqU9YMS8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been given the transistor circuit and we have been asked
+[00:21] to find in which region this transistor is operating.
+[00:25] Now when I posted this question, then in that question the value of ICBO was 20 milli
+[00:30] ampere and with that value of ICBO, the transistor will definitely operate in the saturation
+[00:35] region.
+[00:36] So here I have changed the value of ICBO and for this value of ICBO, now let us find
+[00:42] out in which region this transistor is operating.
+[00:46] So first of all, for the given circuit, let us find out the value of the IC set.
+[00:51] That is the maximum value of the collector current which can flow through this transistor
+[00:54] circuit.
+[00:56] So in this case, the value of IC set that is the maximum current which can flow through
+[01:01] this transistor is equal to 12 volt divided by 2.2 kilo ohm.
+[01:08] That is equal to 5.45 milli ampere.
+[01:13] So this will be the maximum value of the collector current which can flow through this transistor
+[01:18] circuit.
+[01:19] So now, assuming this transistor is operating in the active region, let us find the value
+[01:24] of the base current.
+[01:26] So here, let us say this current is equal to IB while this current is I1 and this current
+[01:34] is I2.
+[01:36] Now here, as we are assuming that the transistor is operating in the active region, so the voltage
+[01:42] VBE will be approximately equal to 0.71 volt.
+[01:47] And here, as the emitter terminal is grounded, so the voltage VBE will be equal to 0.71
+[01:53] volt.
+[01:54] That means the voltage at this node will be equal to 0.71 volt.
+[01:58] So if we apply the KCL at this node, then we can write I1 is equal to IB plus I2.
+[02:08] That means current IB is equal to I1 minus I2.
+[02:14] Now here, we have been given that the input voltage VBE is equal to 5 volt.
+[02:20] That means current I1 is equal to 5 minus 0.71 volt.
+[02:25] That is the voltage at this node divided by 15 kilo ohm.
+[02:31] And similarly, the current I2 is equal to 0.71 volt minus of minus 12 volt divided by 100
+[02:40] kilo ohm.
+[02:43] That means current IB is equal to 0.286 milliampere minus 0.127 milliampere.
+[02:52] That means the value of the current IB is equal to 0.159 milliampere.
+[02:59] Now here, as the value of this current IB is positive, so the transistor is definitely
+[03:04] not operating in the cutoff region.
+[03:06] So now based on this, let us find the value of the collector current.
+[03:11] So the collector current IC can be given as beta times IB plus beta plus 1 times ICBO.
+[03:21] Now typically for the transistor, the value of ICBO is in the nano-ampere range.
+[03:26] But here, as the value is in the micro-ampere range, so we also into consider this term.
+[03:33] That means the collector current IC is equal to 30 times IB plus 31 times ICBO.
+[03:44] That is equal to 30 times 0.159 6 milliampere plus 31 times 20 microampere.
+[03:55] That means the collector current IC is equal to 5.41 milliampere.
+[04:02] And now here, the value of IC set is equal to 5.45 milliampere.
+[04:09] That means here, the collector current IC is less than IC set.
+[04:14] That means in this case, the transistor should operate in the active region.
+[04:19] So from this, we can say that the given transistor is operating in the active region.

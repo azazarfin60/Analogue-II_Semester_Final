@@ -1,0 +1,250 @@
+Title: Op-Amp Differentiator (with Derivation and Examples)
+URL: https://www.youtube.com/watch?v=aU24RWIgJVs
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:15] So in this video we will see how to use op-em as a differentiator.
+[00:19] Now here do not get confused between the differential amplifier and the differentiator.
+[00:24] So in case of this differential amplifier, this differential amplifier amplifies the
+[00:29] difference between the two input signals while in case of this differentiator, the output
+[00:34] will be the differentiation of the input signal.
+[00:37] So using this differentiator circuit, we can get an idea the rate at which the input
+[00:42] signal is changing.
+[00:43] So now suppose if you apply the DC signal to the differentiator, then the output of this
+[00:47] differentiator will be equal to 0 because here the signal is not at all changing with
+[00:52] the time.
+[00:54] And on the other end suppose if you apply the square wave which is having a very fast
+[00:58] rise time, then at the output you will get spikes where this very fast transition is
+[01:04] happening.
+[01:05] So in this way this differentiator circuit can be used to find the high frequency component
+[01:09] of the input signal or we can use this differentiator circuit for the edge detection purpose.
+[01:15] So now let us understand how we can design this differentiator circuit using the op-em.
+[01:20] So now in the last video of op-em, we have seen that how to use this op-em as an integrator.
+[01:25] So now in that circuit, suppose if we interchange the position of this capacitor and the resistor,
+[01:31] then the same circuit can be used as a simple differentiator.
+[01:35] So now let us understand how this circuit will act as a differentiator.
+[01:40] So let us say to this circuit we have applied some input signal and the current Ic is flowing
+[01:45] through this capacitor.
+[01:47] And let us say current If is the current which is flowing through this resistor RF.
+[01:52] And here we are assuming that our op-em is ideal op-em.
+[01:56] So no current is flowing inside this op-em.
+[01:59] Now because of this negative feedback, this node will act as a virtual ground.
+[02:04] So the potential at this node will be equal to 0.
+[02:08] So now let us apply a KCL at this node and let us find the output voltage in terms of
+[02:14] the input voltage.
+[02:15] So applying KCL at this node we can write current Ic that is equal to current If.
+[02:21] Now in the last video we have already seen that this capacitor current Ic can be given
+[02:26] by the expression C times dVc by dt where Vc is the voltage across this capacitor.
+[02:34] So we can write this expression as C dVc by dt that is equal to this current If.
+[02:42] And this current If will be equal to 0 minus V out.
+[02:47] We had by this feedback resistor RF.
+[02:50] Now here this capacitor voltage Vc is nothing but the input voltage V in because this node
+[02:56] will act as a virtual ground.
+[02:58] So we can write this expression as C times dV in dVdT that is equal to minus V out
+[03:07] dVd by RF.
+[03:09] And if we simplify it then we will get output voltage V out as minus RF times this capacitor
+[03:17] C multiplied by this dV in dVdT.
+[03:23] So in this way if you see this circuit in this circuit the output voltage will be differentiation
+[03:27] of the input signal and it will be get multiplied by this factor.
+[03:33] So using this differentiator circuit we can differentiate the different types of input
+[03:38] signals.
+[03:39] So like we have seen so far if we apply the DC signal then the output will be equal to
+[03:43] 0.
+[03:44] And suppose if we apply the square wave to the differentiator then in the output
+[03:48] we will get spikes at the transition points.
+[03:52] Similarly let us say if we apply the signal that is sine omega t then at the output we
+[03:57] will get minus cos of omega t.
+[04:01] And likewise if we apply the triangular wave at the input then at the output of this
+[04:06] differentiator we will get a square wave pulse.
+[04:09] And the amplitude of this different output signals depends upon the value of this feedback
+[04:13] resistor RF value of capacitor C.
+[04:17] So we will see more about it and we will take a different examples based on this differentiator.
+[04:23] So now let us see some limitations of this simple differentiator that means suppose if
+[04:27] you are designing the practical differentiator then what are the things which you need to take
+[04:31] care of.
+[04:32] So now before we understand let us write this output voltage V out in terms of the impedance
+[04:38] of this resistor and the capacitor.
+[04:41] So you can write this output voltage V out as minus RF divided by XE times this input
+[04:47] voltage V in where this XE is the reactance of this capacitor and it can be given by
+[04:53] the expression 1 divided by 2 pi times Fc.
+[04:57] So if you put this value then we can write V out divided by V in that is the gain of
+[05:04] this differentiator will be equal to minus RF times 2 pi into Fc.
+[05:13] So as you can see the gain of this differentiator is directly proportional to the frequency
+[05:19] F.
+[05:20] So as the frequency increases the gain of this differentiator will also increase.
+[05:24] So now if you see the frequency response of this simple differentiator then it will
+[05:29] look like this.
+[05:31] So at zero frequency the gain of this differentiator will be equal to zero and as the frequency
+[05:37] increases the gain of this differentiator will also increase.
+[05:41] Now at one particular frequency the gain of this differentiator will be equal to zero
+[05:46] dB and that frequency is known as zero dB frequency or simply F0.
+[05:51] So this F0 will be given by the expression 1 divided by 2 pi times this RF multiplied
+[05:58] by this capacitor C. So at this frequency the gain of this differentiator will be equal
+[06:04] to zero dB and as we go beyond this zero dB frequency then the gain of this differentiator
+[06:12] will also increase.
+[06:14] Now here the gain of this differentiator cannot increase indefinitely and the gain of this
+[06:19] differentiator will be restricted by the open loop gather response of the op-amp.
+[06:25] So the maximum gain which you can attend with this differentiator will be the intersection
+[06:30] point of this differentiator and the open loop gain response of the op-amp.
+[06:34] So if you see the frequency response of simple differentiator then the simple differentiator
+[06:38] response will look like this.
+[06:41] Now here in case of this differentiator circuit at zero hertz or at DC level the gain of
+[06:47] this differentiator is zero.
+[06:50] So here we will not face the problem of input offset voltage that we have faced during
+[06:54] the indicator circuit.
+[06:56] But in case of this differentiator circuit as the frequency will increase the gain of this
+[07:00] differentiator will also increase.
+[07:03] So we can say that this differentiator is very sensitive to the high frequency noise.
+[07:08] So even if your input signal frequency is low frequency signal but still the high frequency
+[07:14] noise will see more gain than this input signal frequency.
+[07:18] Apart from that if you see the input impedance of this circuit then the input impedance will
+[07:24] be equal to the reactance of this capacitor and as the frequency will increase the reactance
+[07:30] of this capacitor will reduce.
+[07:33] And because of that the input impedance that is seen through the source will also reduce.
+[07:38] So we can say that there are two limitations of this simple differentiator.
+[07:43] First as the frequency will increase the input impedance of the circuit will reduce.
+[07:48] In second this simple differentiator is very sensitive to the high frequency noise.
+[07:53] So now let us see how we can avoid these problems.
+[07:56] So now suppose if we introduce one more resistor in series with this capacitor then we can
+[08:02] avoid the problem of very low impedance and the high frequency sensitivity.
+[08:07] So now if you see this circuit the input impedance of this circuit not only depends upon the value
+[08:12] of capacitor but it also depends upon the value of resistor or precisely we can say that
+[08:18] the input impedance of this circuit will be equal to under root r square plus x square.
+[08:24] And as the frequency will increase the value of this capacitor reactance will reduce.
+[08:29] But because of this resistor r your input impedance of the circuit will be always greater
+[08:34] than value of resistor r.
+[08:37] So in this way we can ensure that even though we are operatic at high frequencies the
+[08:41] input impedance that is seen through the source will be at least equal to r.
+[08:46] Apart from that if you see at high frequencies the gain of this signal will be equal to minus
+[08:53] rf dR by r because at high frequencies the value of this capacitor reactance xc will
+[08:59] be very low.
+[09:01] So in this way by introducing this series resistor r we can restrict the high frequency gain
+[09:06] of this differentiator.
+[09:08] And moreover that suppose if we introduce this feedback capacitor CF then we can further
+[09:14] increase the stability of the output at high frequencies.
+[09:17] So this is how the practical differentiator circuit will look like.
+[09:21] So if you closely look this circuit this circuit contains the two low pass filters.
+[09:26] So this resistor capacitor pair will act as a one low pass filter and this feedback resistor
+[09:31] and capacitor pair will act as another low pass filter.
+[09:34] And because of that we will have a two cutoff frequencies.
+[09:38] So here the cutoff frequency because of this input resistor r and c is equal to 1 dR
+[09:44] by 2 pi times r into c.
+[09:47] And similarly the cutoff frequency because of this feedback resistor rf and CF will be
+[09:52] equal to 1 dR by 2 pi times rf into cf.
+[09:58] Now here let us assume that f2 is greater than f1.
+[10:03] Now let us see how the response of this practical differentiator will look like.
+[10:08] So here as the input signal increases the gain of this differentiator will also increase
+[10:13] at the rate of 20 dB per decade.
+[10:17] And once you reach at first cutoff frequency f1 then because of this low pass filter action
+[10:22] gain will also reduce at the rate of minus 20 dB per decade.
+[10:26] So this plus 20 dB per decade and minus 20 dB per decade will cancel out each other.
+[10:31] So because of that you will see the flat response.
+[10:35] And once again when you reach at cutoff frequency f2 then you will see the reduction in the
+[10:41] gain at the rate of minus 20 dB per decade.
+[10:47] So if you see the frequency response of practical differentiator then it will look like this.
+[10:53] So now when f1 is equal to f2 in that case if you see the response of this practical
+[10:58] differentiator then it will look like this.
+[11:01] So up to the cutoff frequency f1 the gain will increase at the rate of 20 dB per decade.
+[11:07] And if you go beyond this cutoff frequency then the gain will decrease at the rate of
+[11:12] minus 20 dB per decade.
+[11:15] So if you want to use this circuit as a differentiator then your input signal should be between this
+[11:21] 0 dB frequency f0 and this cutoff frequency f1.
+[11:26] So whenever this f1 is not equal to f2 in that case your input signal frequency should
+[11:32] be between this f0 and whatever is minimum between this f1 and f2.
+[11:38] Now for accurate differentiation your input signal frequency fs should be at least 10 times
+[11:45] less than the upper cutoff frequency of this differentiator.
+[11:50] And this point will be get clear to you when we will take one example.
+[11:54] So let us take one example based on this practical differentiator.
+[11:58] So here we have given the circuit for the practical differentiator and we have been asked
+[12:02] to find the useful range for the differentiation.
+[12:05] So if you see here the value of r is 100 ohm, value of c is 10 ohm of a rad A and value
+[12:13] of cf is 100 picofarad A.
+[12:17] Well if you see the value of rf that is equal to 5 kilo ohm.
+[12:23] So here we will have a two cutoff frequencies f1 and f2.
+[12:28] So let us first of all find the f1 and f2 and based on that we will decide the useful
+[12:33] range of the differentiation.
+[12:35] So the cutoff frequency f1 because of this input resistor r and c will be equal to 1 dR
+[12:41] by 2 pi times r into c.
+[12:44] And if we put the value of r as 100 ohm and c is 10 ohm of a rad A then the value of
+[12:50] this first cutoff frequency f1 will be equal to 159.2 kilohertz.
+[12:57] Similarly the second cutoff frequency because of this feedback resistor and capacitor will
+[13:02] be equal to 1 dR by 2 pi times rf into cf.
+[13:08] And if you put the value of this rf and cf then the value of f2 will come out as 318.3 kilohertz.
+[13:17] So in this way we found the value of f1 as 159.2 kilohertz and value of f2 as 318.3 kilohertz.
+[13:28] So here f1 is less than f2.
+[13:32] Therefore proper differentiation your input signal fs should be less than this cutoff
+[13:39] frequency f1 and for accurate differentiation your signal frequency fs should be at least
+[13:47] 10 times less than this upper cutoff frequency f1.
+[13:52] So here for proper differentiation your signal frequency should be less than 15.9 kilohertz.
+[14:01] So now based on this let us see some more examples on this practical differentiator.
+[14:07] So now in this example we have been given the same circuit but now our input signal is
+[14:12] a signal-futile signal and we have been asked to find the output signal.
+[14:17] So for this circuit we have already found the upper cutoff frequency and the value of
+[14:21] this upper cutoff frequency is 159.2 kilohertz and if you see here the signal frequency the
+[14:29] signal frequency fs is 3 kilohertz.
+[14:33] So it is way below this upper cutoff frequency.
+[14:36] So we can ensure that your input signal will be properly get differentiated.
+[14:41] So now let us find the output signal.
+[14:43] So the output signal V out can be given by the expression minus RF times C multiplied
+[14:50] by the DVN nearby DT that is the differentiation of the input signal.
+[14:56] Now here the value of RF is 5 kilohertz while the value of C is 10 nanofere day and our
+[15:05] input signal is 2 times sin of 2 pi times 3000 T.
+[15:13] So now if you put all these values then we can write output voltage V out as minus 10
+[15:19] to the power minus 4 into D by DT of sin 2 pi times 3000 T.
+[15:30] And if you take the differentiation then now we can write minus 10 to the power minus
+[15:35] 4 into 2 pi times 3000 into cos of 2 pi times 3000 T.
+[15:45] And if you further simplified then our output voltage V out will be equal to minus 1.885
+[15:52] multiplied by cos of 2 pi times 3000 T.
+[15:59] So this will be the output voltage.
+[16:01] So as you can see here if we apply the sinusoidal signal then the output of this circuit will
+[16:07] be equal to minus of cosine signal.
+[16:09] So here the output signal amplitude depends upon the value of this feedback register RF,
+[16:16] capacitor C and the input signal frequency FS.
+[16:20] So if you change any of these three parameters then based on that your output signal amplitude
+[16:24] will also change.
+[16:26] So now suppose if you operate the same circuit at 6 kilohertz then at 6 kilohertz your output
+[16:31] will be doubled.
+[16:33] Now one more thing which I need to tell you is that you can apply this expression for
+[16:39] this practical differentiator only when your input signal frequency is way below then
+[16:44] this upper cut of frequency.
+[16:47] So now based on this let us see one more example based on this practical differentiator.
+[16:52] So now here the circuit is same but instead of this sinusoidal signal we are applying
+[16:57] the triangular signals.
+[16:59] And the frequency of this triangular signal is 4 kilohertz.
+[17:03] For the given circuit we have already found that the upper cut of frequency is 159.2 kilohertz.
+[17:10] While here our signal frequency FS is 4 kilohertz.
+[17:15] So as our signal frequency is far below then this upper cut of frequency.
+[17:19] So it is ensure that our input signal will be properly get differentiated.
+[17:24] So now here let us find the waveform and the amplitude of the output signal.
+[17:28] So here the frequency of the input signal is 4 kilohertz.
+[17:32] So in time period if you see it will be equal to 250 microsecond.
+[17:38] That means this time period will be equal to 250 microsecond.
+[17:44] So you can say that the half time will be equal to 125 microsecond.
+[17:50] Now in this first 125 microsecond the input signal is varying from minus 3 volt to the
+[17:56] plus 3 volt.
+[17:57] So we can say that the slope of the input signal for the first 125 microsecond is 6 volt
+[18:04] dear by 125 microsecond.
+[18:08] That means 48000 volt per second.
+[18:12] Now we know that for the given circuit the output voltage V out will be equal to minus
+[18:18] RF times C multiplied by DV in dear by DT.
+[18:24] That is the slope of the input signal.
+[18:27] Now here we know that the value of RF is 5 kilo ohm in the value of C is 10, then of
+[18:34] Rade.
+[18:35] And we have already found the slope of this input signal for the first 125 microsecond.
+[18:40] And that is equal to 48000 volt per second.
+[18:46] So if we simplify it then we will get the output voltage V out as minus 2.4 volt.
+[18:52] So for the first 125 microsecond if you see our output voltage will be equal to minus
+[18:58] 2.4 volt.
+[19:00] So now if you see for the next 125 microsecond our slope is exactly opposite.
+[19:06] So if you calculate the output voltage for this 125 microsecond then you will find the
+[19:11] output voltage V out as positive 2.4 volt.
+[19:16] So in this way if you see the output voltage your output voltage will vary between the minus
+[19:21] 2.4 volt and plus 2.4 volt.
+[19:24] So in this way using this differentiator circuit we can perform the differentiation on any
+[19:29] given input signal.
+[19:30] So I hope in this video you understood how to design the differentiator using the opam.
+[19:35] And whenever you are designing the practical differentiator then what are the things which
+[19:39] you need to take care of.
+[19:41] So if you have any question or suggestion do let me know in the comment section below.
+[19:45] If you like this video hit the like button and subscribe to the channel for more such
+[19:49] videos.

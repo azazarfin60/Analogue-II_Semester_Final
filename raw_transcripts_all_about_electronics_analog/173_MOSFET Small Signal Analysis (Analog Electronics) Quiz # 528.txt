@@ -1,0 +1,56 @@
+Title: MOSFET Small Signal Analysis (Analog Electronics) |  Quiz # 528
+URL: https://www.youtube.com/watch?v=5uuZHR8t2_Q
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:11] So in this question, we have been given the small signal circuit for the end channel enhancement
+[00:16] type of MOSFET and we have been given that this MOSFET is biased in the saturation region
+[00:22] and its transconductance is equal to GM.
+[00:26] So here, the small signal voltage VD is aptly at this point and here we have been asked
+[00:32] to find the small signal gain VOD by VD.
+[00:36] So let us find that.
+[00:38] So here the given circuit is already a small signal circuit but further let us simplify
+[00:44] it and let us represent this MOSFET with the small signal model.
+[00:49] So if we replace this MOSFET with the small signal model then the equivalent small signal
+[00:53] circuit will look like this.
+[00:57] So we know that when we replace this MOSFET with the small signal model then it can be
+[01:02] represented by the current source that is id is equal to GM times VGS where the VGS is
+[01:10] the voltage between the gate and the source terminal.
+[01:13] So here the source terminal is connected to the ground terminal and here if you observe
+[01:19] then between the gate and the ground terminal of the MOSFET this resistor R is connected.
+[01:25] So here since the source is also connected to the ground potential so we can say that
+[01:30] this resistor R0 is effectively connected between the gate and the source terminal and
+[01:36] here this voltage VGS is the voltage across this resistor R0.
+[01:41] Moreover here there is also feedback between the drain and the gate terminal.
+[01:46] That means here this resistor R0 is connected between the drain and the gate terminal and
+[01:52] moreover here we also have the resistor at the drain terminal and at the other end of
+[01:58] this resistor a small signal voltage VGS applied and here the output voltage is seen at this
+[02:05] end.
+[02:06] That means here this will be the output voltage.
+[02:10] So now let us analyze this circuit and let us find the voltage gain VOD by VD.
+[02:16] So here as you have seen this voltage is equal to V0 that is the output voltage.
+[02:23] So as you can see here the voltage at this node is also equal to V0.
+[02:28] So if we apply the voltage divider rule but when these two resistors then we can say that
+[02:33] here this voltage VGS is equal to R0 divided by this R0 plus R0 times V0 or that is equal
+[02:43] to V0 divided by 2.
+[02:46] That means the voltage VGS is equal to V0 divided by 2.
+[02:50] So now let us apply the KCL at this node.
+[02:55] So now if we apply the KCL at this node then we can write this current ID plus V0 divided
+[03:04] by 2 times R0 that is this current that is equal to this VD minus V0 divided by R0.
+[03:12] That is this incoming current and here this ID is equal to GM times VGS and here the VGS
+[03:21] is equal to V0 divided by 2.
+[03:24] So further we can write it as this GM times this V0 divided by 2 that is this current
+[03:30] ID plus V0 divided by 2 times R0 plus V0 divided by R0 that is equal to this VD divided
+[03:41] by R0.
+[03:43] So now on the left hand side let us take this V0 outside.
+[03:48] So on the left hand side if you take the V0 outside and further simplify the equation
+[03:53] then we can write it as these V0 divided by R0 times GM times R0 divided by 2 plus 1
+[04:04] and similarly on the right hand side we will have this VD divided by R0.
+[04:13] So here this R0 will get cancel out and further if we simplify it then we will have this V0
+[04:21] times this GM times R0 divided by 2 plus 3 by 2 and on the right hand side we will have
+[04:30] the VD.
+[04:31] So now if you further simplify it then you can write it as this V0 divided by VD that
+[04:38] is equal to this inverse of this GM times R0 divided by 2 plus 3 by 2.
+[04:47] So in this way we got the expression of the V0 divided by VD and hence we can say that
+[04:54] this is the equivalent small signal gain of the given circuit.
+[04:58] So from this we can say that for the given equation this D is the correct answer.

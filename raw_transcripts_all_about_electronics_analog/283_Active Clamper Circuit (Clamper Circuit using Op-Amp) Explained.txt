@@ -1,0 +1,249 @@
+Title: Active Clamper Circuit (Clamper Circuit using Op-Amp) Explained
+URL: https://www.youtube.com/watch?v=xU7nGvADHZM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in the earlier video of the Clemper circuit, we have already seen what is Clemper circuit
+[00:21] and then we have discussed in detail about the positive and the negative Clemper circuit.
+[00:26] Now in case of the positive Clemper circuit, if we apply the sine wave with the peak value
+[00:31] of VM, then this circuit shifts the entire waveform upwards by the VM volt.
+[00:37] And if you see the ideal waveform, then the ideal waveform would look like this.
+[00:43] But due to the voltage drop across this diode, it would not behave like a perfect Clemper
+[00:47] circuit.
+[00:49] And if you see the actual waveform, then it will look like this.
+[00:53] So this problem can be avoided by using the active Clemper circuit.
+[00:58] So in this video, we will see the active Clemper circuit which is designed using the op-amp.
+[01:04] And this circuit is also known as the precision Clemper circuit because in this circuit, the
+[01:09] diode behaves like an ideal diode.
+[01:11] So there will not be any voltage drop across this diode.
+[01:15] So if we apply the sine wave with the peak value of VM to this circuit, then we will get
+[01:21] this type of waveform.
+[01:23] That means the entire waveform will get DC shifted by the VM volt.
+[01:28] So this circuit consists of the capacitor, the diode and the amplifier.
+[01:34] And here, the low register RL is connected at the output terminal.
+[01:38] And this register R1 is connected to prevent the op-amp from the excessive discharge current
+[01:43] through this capacitor.
+[01:45] Particularly, when all the DC voltage sources are switched off.
+[01:49] So if you see this circuit, here the diode is connected in the feedback loop.
+[01:55] So this op-amp will operate in the closed loop configuration whenever the diode is conducting.
+[02:01] And whenever it is non-conducting, then the op-amp will operate in the open loop configuration.
+[02:07] And it will get clear to you during the analysis of this circuit.
+[02:11] Now for the Clemper circuit, we know that the Rc time constant of the circuit should be
+[02:16] much larger than the time period of the signal.
+[02:19] So here, during the analysis, we will assume that the Rc time constant of this circuit is
+[02:24] much larger than the time period of the signal.
+[02:28] So with this assumption, now let us analyze this circuit.
+[02:32] So first of all, let us see what happens during the positive half cycle.
+[02:36] Now here, initially this capacitor is unchanged.
+[02:40] And during the positive half cycle, this input voltage V in will be greater than 0.
+[02:45] So here, let us say the voltage at this inverting terminal is equal to V minus and the voltage
+[02:51] at the non-inverting terminal of the op-amp is equal to V plus.
+[02:56] So here, this V plus is grounded, that means V plus is equal to 0 volt and this voltage
+[03:02] V minus is equal to V in plus Vc, where Vc is the voltage across this capacitor.
+[03:09] And here, there won't be any voltage drop across this resistor R1 because we know that
+[03:14] in case of the op-amp, there would be any flow of current into the op-amp terminals.
+[03:19] That means there won't be any voltage drop across this resistor R1.
+[03:22] And that is why V minus will be equal to V in plus Vc.
+[03:27] And initially, as the capacitor is unchanged, so we can say that this voltage V minus is
+[03:32] equal to V in.
+[03:35] So now during the positive half cycle, as the input voltage is greater than 0, so we can
+[03:40] say that this voltage V minus will be greater than 0.
+[03:44] That means this voltage V minus will be greater than V plus.
+[03:48] And due to that, this op-amp will go towards the negative saturation.
+[03:53] So the output of this op-amp will be equal to negative saturation voltage.
+[03:58] And due to that, this diode will remain off.
+[04:01] So if we see the equivalent circuit, then it will look like this.
+[04:06] So we can say that during the positive half cycle, this op-amp will operate in the
+[04:10] op-amp look configuration.
+[04:13] And the output voltage V out can be given as V in plus Vc.
+[04:19] So during the positive half cycle, the current will flow in this direction.
+[04:25] Now as I said earlier, the RC time constant of this clampers circuit is very large.
+[04:30] And due to that, the capacitor will not get charged during this period.
+[04:35] So we can assume that during this positive half cycle, the capacitor will remain uncharged.
+[04:41] And due to that, we can say that the output voltage V out will be equal to V in.
+[04:46] So during the positive half cycle, if you see the output voltage, then it will look like
+[04:51] this.
+[04:52] Now let's see what happens during the negative half cycle.
+[04:57] So after this time, T by 2, the input voltage is going into the negative direction.
+[05:03] So now this voltage V minus, which is equal to V in plus Vc, will become negative.
+[05:10] Or we can say that this voltage V minus is less than V plus.
+[05:15] So due to that, now the op-amp will go towards the positive saturation voltage.
+[05:20] And due to that, now this diode will get turned on.
+[05:23] So we can say that after this time, T by 2, now the op-amp will operate in the closed
+[05:28] loop configuration.
+[05:29] And due to the negative feedback, we can apply the concept of virtual ground.
+[05:34] That means if V plus is 0 volt, then the voltage at this negative terminal will be equal
+[05:40] to 0.
+[05:42] And the same voltage will also appear at this terminal.
+[05:47] That means the output voltage V out will be also equal to 0.
+[05:51] Because we know that no current will flow into the op-amp terminals.
+[05:54] And due to that, there would not be any voltage drop across this resistor R1.
+[05:59] So the same voltage will also appear at this terminal.
+[06:03] So if we redraw this portion of the circuit during the negative half cycle, then it will
+[06:08] look like this.
+[06:10] So during this negative half cycle, now the capacitor will start charging in this direction.
+[06:16] And it will charge up to the peak value of voltage Vm.
+[06:20] So starting from this time T by 2 to the time T3 by 4, this capacitor will get charged
+[06:26] to the peak value of voltage Vm.
+[06:29] And during that time, if you see the output voltage, then the output voltage V out will
+[06:33] be equal to 0.
+[06:36] So at time T3 by 4, the voltage across the capacitor will be equal to Vm.
+[06:41] And at that time, if you see the voltage V minus, then it can be given as V in plus Vm.
+[06:49] Now after this time T3 by 4, the input voltage starts increasing from minus Vm towards the
+[06:54] 0 volt.
+[06:56] That means after this time T3 by 4, this voltage V minus will become positive.
+[07:02] So we can say that after this time T3 by 4, this voltage V minus will be greater than V
+[07:07] plus.
+[07:08] And due to that, now the op-amp will go into the negative saturation.
+[07:12] And once again, this diode will get turned off.
+[07:16] So after this time T3 by 4, now the op-amp will
+[07:19] be operating the open loop configuration.
+[07:22] And in this configuration, the output voltage V out can be given as V in plus Vc.
+[07:29] And here, the voltage across the capacitor is equal to Vm.
+[07:33] That means the output voltage V out will be equal to input voltage V in plus Vm.
+[07:39] So during this time from T3 by 4 to T, if you see the output voltage, then it will look
+[07:44] like this.
+[07:47] Now after this, during the second positive half cycle, the voltage V minus will be equal
+[07:52] to V in plus Vm.
+[07:56] And now as the input voltage starts increasing in the positive direction, so this voltage V
+[08:01] minus will remain greater than 0.
+[08:04] So during this second positive half cycle, this voltage V minus is greater than V plus.
+[08:10] And due to that, this op-amp will operate in the open loop configuration.
+[08:15] And in this configuration, the output voltage V out can be given as V in plus Vm.
+[08:22] So during this second positive half cycle, if you see the output will form, then it will
+[08:26] look like this.
+[08:29] And then after during the negative half cycle also, the output voltage V out can be given
+[08:34] as V in plus Vm.
+[08:36] Because in this case also, the op-amp will operate in the open loop configuration.
+[08:42] Because this voltage V minus is still greater than V plus.
+[08:46] So in that case, the output voltage V out can be given as V in plus Vm.
+[08:51] So during this negative half cycle, if you see the output waveform, then it will look
+[08:56] like this.
+[08:58] So in short, in a steady state condition, if you see the output waveform of the circuit,
+[09:02] then it will look like this.
+[09:05] So we can say that this circuit is the active, positive, limper circuit.
+[09:10] Because this circuit shifts the entire waveform upwards by the Vm volt.
+[09:15] And here is the simulation result of the similar kind of circuit.
+[09:18] So here, the input signal is a sinusoidal signal and it is varying between minus 3 and 3
+[09:24] volt.
+[09:26] So if you see the output waveform of the circuit, then it will get this shifted upwards
+[09:29] by the 3 volt.
+[09:32] And here, just by reversing the direction of this diode, it is possible to use this circuit
+[09:37] as the negative limper circuit.
+[09:40] And not only that, by adding the reference voltage or the biasing voltage to this circuit,
+[09:45] it is possible to additionally de-shift this entire waveform upwards by the reference
+[09:50] voltage.
+[09:51] So this type of circuit is known as the active limper circuit with the biasing voltage.
+[09:57] So let us quickly analyze this circuit.
+[09:59] And to easily analyze this circuit, let us take some numbers.
+[10:03] So here, let us say, the biasing or the reference voltage is equal to 5 volt and the input voltage
+[10:09] is the sinusoidal voltage, which is varying from 12 volt to minus 12 volt.
+[10:15] So now let us see what happens during the first positive half cycle.
+[10:19] So in this circuit, at time t is equal to 0, the input voltage V in is equal to 0 and
+[10:25] initially the capacitor is uncharged.
+[10:29] So at time t is equal to 0, this voltage V minus will be equal to V in plus Vc.
+[10:38] And as the input voltage V in is equal to 0, so we can say that at time t is equal to
+[10:42] 0, this voltage V minus is equal to 0 volt.
+[10:46] And here, voltage V plus is equal to 5 volt.
+[10:51] So at time t is equal to 0, this voltage V plus is greater than V minus.
+[10:56] So due to that, the open will go towards the positive saturation voltage.
+[11:01] And due to that, this diode will become on.
+[11:04] So we can say that at time t is equal to 0, the open will operate in the closed loop configuration.
+[11:11] And due to this negative feedback, we can apply the concept of virtual ground.
+[11:16] So we can say that the voltage at this inverting terminal is also equal to 5 volt.
+[11:21] And the same voltage will also appear at the output terminal.
+[11:26] So at time t is equal to 0, the voltage at the output will be equal to 5 volt.
+[11:31] And the same voltage will also appear at across this capacitor.
+[11:36] Because initially, the input voltage V in is equal to 0.
+[11:40] So at time t is equal to 0, if we redraw this portion of the circuit, then it will look
+[11:44] like this.
+[11:46] So at time t is equal to 0, the capacitor will charge in this direction and immediately
+[11:52] it will get charged to the 5 volt.
+[11:55] So we can say that at time t is equal to 0, the voltage across the capacitor is equal
+[11:59] to 5 volt.
+[12:02] Now after this time t is equal to 0 or at time t is equal to 0 plus.
+[12:07] Now the input voltage starts increasing in the positive direction.
+[12:11] So at time t is equal to 0 plus, we can say that the voltage V minus is equal to V in
+[12:16] plus Vc.
+[12:18] That is equal to V in plus 5 volt.
+[12:23] And here the voltage V plus is equal to 5 volt.
+[12:28] So we can say that during this positive half cycle, this voltage V minus is greater than
+[12:32] V plus.
+[12:34] So due to that, now the open will go into the negative saturation.
+[12:39] And due to that, this diode will get turned off.
+[12:42] So during the positive half cycle, if you see the equivalent circuit, then it will look
+[12:46] like this.
+[12:49] And at that time, the output voltage V out can be given as V in plus Vc.
+[12:55] Or in this case, it will be equal to V in plus 5 volt.
+[13:00] So in short, we can say that during the positive half cycle, the entire waveform will get
+[13:05] DC shifted upwards by the 5 volt.
+[13:08] And if you see the output waveform, then it will look like this.
+[13:13] So now let's see what happens during the negative half cycle.
+[13:17] Now during the positive half cycle, as I said, the Rc time constant of the circuit is very
+[13:22] large.
+[13:23] So we can assume that the voltage across the capacitor is still almost equal to 5 volt.
+[13:29] That means whenever this negative half cycle starts, then the voltage across the capacitor
+[13:34] Vc will still remain 5 volt.
+[13:37] And now during this negative half cycle, starting from this T by 2 to T3 by 4 time, the input
+[13:44] voltage will reduce.
+[13:46] That means it will reduce from 0 volt to what is the minus Vm volt.
+[13:50] That means during this time, this voltage V minus will be equal to V in plus 5 volt.
+[13:57] And as the input voltage is reducing, so this voltage V minus will become less than V
+[14:02] plus.
+[14:04] So basically, for this time, T by 2 to 3T by 4 as the voltage V plus is greater than
+[14:10] V minus, the output will momentarily go into the positive saturation.
+[14:15] And that will turn on this diode.
+[14:17] And due to that, now this circuit will operate in the closed loop configuration.
+[14:22] And due to that, now the voltage which is appearing at the output terminal will be equal
+[14:27] to 5 volt.
+[14:29] That means during this time, from T by 2 to 3T by 4, the output voltage V out will be
+[14:34] equal to 5 volt.
+[14:36] And the same 5 volt will also appear at this terminal.
+[14:41] So if we redraw this portion of the circuit, then it can be redraw like this.
+[14:47] So during this time, from T by 2 to 3T by 4, the capacitor will start charging in this
+[14:53] direction.
+[14:54] And at time 3T by 4, the voltage across the capacitor will be equal to Vm plus 5 volt.
+[15:02] And in this case, I can say that it will be equal to 12 plus 5 volt that is equal to
+[15:07] 17 volt.
+[15:09] That means at time 3T by 4, the voltage across the capacitor will be equal to 17 volt.
+[15:16] Now at this time, this voltage V minus can be given as Vm plus 17 volt.
+[15:23] That means this voltage will appear at this terminal.
+[15:28] Now after this point, the input voltage starts increasing from minus Vm to 0.
+[15:33] Or in this case, it is start increasing from minus 12 towards the 0 volt.
+[15:38] So after this time, this voltage V minus will be greater than 5 volt.
+[15:44] So for this time, T3 by 4 to T, this voltage V minus will be greater than V plus.
+[15:51] And due to that, the open will go towards the negative saturation.
+[15:55] And we can say that due to that, this diode will remain off.
+[16:00] So for this time, starting from 3T by 4 to T, this op-amp will operate in the open
+[16:06] loop configuration.
+[16:07] And in this configuration, the output voltage V out can be given as Vm plus 17 volt.
+[16:16] So if you see the output will be formed during this time, then it will look like this.
+[16:22] That means the output voltage V out will go from 5 volt towards the 17 volt.
+[16:28] Now let us see what happens during the next positive half cycle.
+[16:32] So during the next positive half cycle, still this V minus can be given as Vm plus 17
+[16:38] volt.
+[16:40] And now as the input voltage is increasing in the positive direction, so this voltage
+[16:45] V minus will be greater than V plus.
+[16:48] So once again, this op-amp will operate in the open loop configuration.
+[16:53] And due to that, the output voltage V out can be given as Vm plus 17 volt.
+[16:59] So if you see the output waveform during this second positive half cycle, then it will
+[17:04] look like this.
+[17:06] And then after, during the next negative half cycle, still the output voltage V out can
+[17:11] be given as Vm plus 17 volt.
+[17:15] So if you see the output waveform, then it will look like this.
+[17:20] So in a steady state condition, if you see the output waveform, then it can be represented
+[17:25] like this.
+[17:27] So in this way, using this biasing voltage, it is possible to shift the output waveform
+[17:32] to the desired level.
+[17:35] And here is the simulation result of the similar type of circuit.
+[17:38] So here the reference voltage is 1 volt and the input voltage is a 3 volt, sinusoidal
+[17:43] signal.
+[17:45] So here the blue waveform is the input waveform and this green waveform is the output waveform.
+[17:51] So as you can see, using this active-lampers circuit, it is possible to eliminate the voltage
+[17:56] drop across this diode.
+[17:59] So I hope in this video, you understood how we can design this active-lampers circuit
+[18:03] using this op-amp.
+[18:05] And we will see some examples based on this type of circuit in the quiz section.
+[18:10] So if you have any question or suggestion, do let me know here in the comment section
+[18:14] below.
+[18:15] If you like this video, hit the like button and subscribe to channel for more such videos.

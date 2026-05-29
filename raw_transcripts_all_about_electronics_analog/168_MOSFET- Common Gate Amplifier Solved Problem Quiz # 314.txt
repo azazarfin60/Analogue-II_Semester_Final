@@ -1,0 +1,61 @@
+Title: MOSFET- Common Gate Amplifier Solved Problem | Quiz # 314
+URL: https://www.youtube.com/watch?v=DRRgj5UgREM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this common gate amplifier and we have been given
+[00:15] that the voltage gain of this amplifier is 5 and the input impedance is equal to 2N.
+[00:22] Now here we have been also given that the power which is supplied by these 5 volt voltage
+[00:27] is equal to 5 milli watt and here the current which is drawn by this voltage divider circuit
+[00:33] is negligible. That means this entire current is drawn by this MOSFET. So here to achieve the
+[00:40] voltage gain of 5 and the input impedance of 2N we have been asked to find the required value
+[00:46] of this RD and the RS and here we have been also given the required MOSFET parameters.
+[00:52] So here to find the voltage gain and the input impedance first of all we need the value of the
+[00:59] transcorrectance right and to find the value of the transcorrectance first of all let us do the
+[01:04] DC analysis. That means for the DC analysis all this coupling capacitors will act as a open circuit
+[01:12] and using the DC analysis first of all let us find the value of the transcorrectance.
+[01:18] So here we have been given that the power which is supplied by this 5 volt voltage source is
+[01:23] equal to 5 milli watt and this voltage divider circuit is drawing the negligible amount of current.
+[01:30] That means we can say that this 5 milli watt is equal to 5 times ID because here this current
+[01:39] will be equal to ID. So from this we can say that this strength current ID is equal to 1 milli
+[01:46] mpr. Now once we know the value of this strength current and we can use this expression for the
+[01:52] transcorrectance that is gm is equal to 2 times ID divided by VGS minus VT.
+[02:02] So first of all here we need to know the value of this VGS minus VT. Now whenever the MOSFET is
+[02:09] operating in the saturation region then this drain current ID can be given as half times
+[02:16] mu and times cux times w by l times VGS minus VT whole square right and here we have been
+[02:27] already given the value of this device parameters that means this strength current ID that is
+[02:34] 1 milli ampere is equal to half times 8 milli ampere per volt square times VGS minus VT whole square
+[02:46] or we can say that this 2 by 8 or 1 by 4 is equal to VGS minus VT whole square.
+[02:56] That means VGS minus VT is equal to 0.5. Now once we know the value of this VGS minus VT
+[03:06] then we can find the value of the transcorrectance. That means strength current
+[03:11] is equal to 2 times ID divided by VGS minus VT that is equal to 2 times 1 milli ampere
+[03:23] divided by 0.5 volt that is equal to 4 milli semen's that means the value of the transcorrectance
+[03:32] at the given operating point is equal to 4 milli semen's and here we have been given that the
+[03:38] voltage gain of this common gate amplifier is equal to 5. Now if you have followed the latest
+[03:44] video on the common gate amplifier on the main channel then you must be aware that the voltage
+[03:50] gain of this common gate amplifier can be given as gm times RD that means here this gm times RD
+[03:58] is equal to 5. So from this we can say that to get the gain of 5 the required value of this
+[04:05] train resistor should be equal to 5 divided by gm that is equal to 5 divided by 4 milli semen's
+[04:13] that is equal to 1.25 kilo ohm that means the required value of this train resistor is equal to 1.25
+[04:22] kilo ohm. Similarly now let us find the value of this source resistor. Now here to find the value
+[04:30] of RS there are two ways one is using the DC analysis we can directly find the value of the RS
+[04:37] and second method is we have been already given the value of the input impedance. So if you are
+[04:43] aware then the input impedance of this common gate amplifier that is Z in is equal to 1 over gm
+[04:50] in parallel with RS and here we have been given that the input impedance of this common gate amplifier
+[04:58] should be equal to 200 ohm that means 200 ohm is equal to 1 over gm times RS divided by
+[05:08] 1 over gm plus RS and this 1 over gm that is 1 divided by 4 milli semen's is equal to 250 ohm
+[05:17] that means 200 ohm should be equal to 250 times RS divided by 250 plus RS.
+[05:27] So if we solve this expression then we will get the value of RS as 1 kilo ohm.
+[05:34] So from this input impedance we can get the value of the RS. Second method is we can find the value
+[05:41] of RS using the DC analysis. So here we know that the value of bgs minus vt is equal to 0.5 volt
+[05:51] that means bgs is equal to 1 volt because the value of vt is equal to 0.5 volt and here this
+[06:01] voltage vg is equal to 2 volt because this voltage vg can be given as 2 mega ohm divided by
+[06:10] 2 mega ohm plus 3 mega ohm times 5 volt that is equal to 2 volt that means vgs that is
+[06:21] vg minus vs is equal to 1 volt and hence this vs is equal to 1 volt because this voltage vg
+[06:31] is equal to 2 volt that means the voltage at this end is equal to 1 volt and the drain current
+[06:38] id is equal to 1 milli ampere that means this voltage vs that is id times RS is equal to 1 volt
+[06:49] and therefore the value of RS is equal to 1 volt divided by 1 milli ampere that is equal to 1 kilo ohm.
+[06:58] So in this way using the DC analysis also we can find the value of the RS that means here for the given
+[07:06] amplifier to get the gain of 5 and the input impedance of 200 ohm the value of the RD should be
+[07:14] equal to 1.25 kilo ohm and the value of RS should be equal to 1 kilo ohm that means for the given
+[07:22] equation this RD is equal to 1.25 kilo ohm and the RS is equal to 1 kilo ohm.

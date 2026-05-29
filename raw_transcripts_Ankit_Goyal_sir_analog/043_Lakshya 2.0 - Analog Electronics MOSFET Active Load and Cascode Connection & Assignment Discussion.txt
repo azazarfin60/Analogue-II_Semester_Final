@@ -1,0 +1,1117 @@
+Title: Lakshya 2.0 - Analog Electronics | MOSFET Active Load and Cascode Connection & Assignment Discussion
+URL: https://www.youtube.com/watch?v=DMTPqEoWZf4
+Source: Local Whisper (GPU Translation)
+
+[00:00] You
+[00:30] You
+[01:00] You
+[01:21] Now tell me, are the voices coming?
+[01:26] Are the voices coming to everyone?
+[01:33] Let's go.
+[01:34] So, what I am going to tell you is that today we will talk about active load.
+[01:38] We will talk about caste food connection.
+[01:41] So, first of all what I am going to tell you is active load.
+[01:45] So, there are many times when we manufacture integrated circuits,
+[01:50] then it is better to manufacture resistance there or manufacture a large capacity.
+[01:56] All these things become tough.
+[01:58] So, what is better is that we manufacture a MOSFET or MOSFET on an integrated circuit.
+[02:05] And use this MOSFET as a resistance.
+[02:08] Use this MOSFET as a capacitor.
+[02:11] The device you want to use for any application,
+[02:15] the fabrication of the device will be the same.
+[02:18] That is a MOSFET.
+[02:19] And it will be used as a resistance as well as a capacitor.
+[02:24] Because what happens if the capacitor goes to manufacture separately
+[02:28] or the resistance goes to manufacture separately,
+[02:31] then in that case, your area gets used up a lot.
+[02:35] And that is why we avoid such cases.
+[02:38] So, we avoid it.
+[02:40] Do you understand?
+[02:43] So, what am I telling you here?
+[02:48] That fabricating
+[03:02] resistor
+[03:05] and capacitor
+[03:08] on
+[03:17] an integrated circuit
+[03:26] requires
+[03:31] large chip area
+[03:38] therefore
+[03:42] we can fabricate
+[03:50] MOSFET
+[03:55] which can act
+[04:02] as
+[04:05] an active load.
+[04:07] The logic is clear.
+[04:09] Because this is an active device
+[04:11] and this is the work of the load.
+[04:13] That is why we are telling it as an active load.
+[04:16] That is why we are telling it as an active load.
+[04:19] Now, in the active load,
+[04:21] there can be an enhancement MOSFET
+[04:24] whose drain and gate are shorted.
+[04:27] Okay?
+[04:28] The drain and gate are shorted.
+[04:30] Then the depletion MOSFET
+[04:32] whose gate and source are shorted
+[04:35] or the current mirror type circuit.
+[04:38] Whose circuit? Current mirror.
+[04:40] So, I have already taught you the current mirror.
+[04:42] That is why I will not talk much about the current mirror.
+[04:45] Okay? I will talk about the other two cases.
+[04:49] So, first of all, if we see
+[04:52] MOSFET with drain shorted to gate.
+[04:55] The drain and gate are shorted.
+[04:57] So, what is here is that
+[04:59] when the drain and gate are shorted,
+[05:03] that it will work in a saturation region.
+[05:08] Now, when it works in a saturation region,
+[05:11] it works as a resistance.
+[05:13] Sir, how much resistance is there?
+[05:15] Let's see how it works.
+[05:17] We have made a small signal model of MOSFET.
+[05:20] This VGS is equal to VX.
+[05:23] And this current source is GMVX.
+[05:27] In its parallel, there is a resistance RDS.
+[05:31] Now, when the drain and gate are connected,
+[05:36] the voltage between the gate and source,
+[05:39] that is the voltage between drain and source.
+[05:43] What we are saying is that drain and gate are shorted.
+[05:46] So, VGS is VD.
+[05:48] Therefore, VGS is equal to VDS.
+[05:54] VGS is equal to VDS.
+[05:57] Now, here, this voltage is VX.
+[06:01] Now, if I say how much IX is coming,
+[06:05] then VX upon RDS plus GMVX.
+[06:15] So, what you will say is IX by VX,
+[06:18] which is the total conductance.
+[06:21] It is GM plus 1 by RDS.
+[06:25] That means, the total resistance that will come,
+[06:29] that is RDS parallel 1 by GM.
+[06:35] Conductance is being added, meaning the parallel combination.
+[06:39] Conductance is being added, meaning the parallel combination.
+[06:43] So, RDS parallel 1 by GM.
+[06:46] Okay?
+[06:47] Sir, what is the lecture of the pressure, temperature and flow level?
+[06:51] From the instrumentation point of view of electrical EC,
+[06:54] I have provided a transducer on this channel.
+[06:56] Check it.
+[06:57] Search by creating transducer.
+[07:00] Did you understand this?
+[07:02] So, this will do the work of resistance.
+[07:04] So, where you should have made resistance,
+[07:08] instead of that, you can fabricate a MOSFET chip,
+[07:11] whose drain and gate are shorted.
+[07:15] Okay?
+[07:16] Now, next was depletion MOSFET.
+[07:19] Here also, what have you done?
+[07:22] You have to short the gate and source.
+[07:26] Actually, this terminal should be here.
+[07:31] This is the source.
+[07:33] This is the drain.
+[07:35] Now, when you short the gate and source,
+[07:38] then VGS becomes zero.
+[07:41] If the gate and source are shorted,
+[07:44] then your VGS becomes zero.
+[07:47] So that your current source, my child,
+[07:51] current source,
+[07:53] GM VGS,
+[07:57] that will become zero.
+[07:59] If current source becomes zero,
+[08:01] then this means it will act as an open circuit.
+[08:07] So, how much resistance will be seen from the outside?
+[08:11] That is RDS.
+[08:14] How much will be RDS?
+[08:16] Okay?
+[08:17] Is this clear?
+[08:20] Now, let's understand one thing.
+[08:22] Sir, why did you take depletion MOS?
+[08:24] Why didn't you take enhancement MOS here?
+[08:27] Dear, enhancement MOS is cut off on VGS zero.
+[08:32] But in depletion MOSFET,
+[08:34] if the voltage is negative,
+[08:37] then it will work on VGS zero.
+[08:40] It will work at zero gate to source voltage.
+[08:44] If your enhancement MOS is there,
+[08:46] then it doesn't work on zero gate voltage.
+[08:49] But it will do depletion MOS.
+[08:52] Okay? It will do depletion MOS.
+[08:55] Is this clear?
+[08:57] Deepak, my brother,
+[08:58] the measurement of temperature, flow level and pressure
+[09:01] is given in that.
+[09:03] What else should I tell you about the transducer video?
+[09:07] Is this clear?
+[09:09] Tell everyone.
+[09:11] So, only depletion MOS can work at zero VGS.
+[09:22] Now, you notice one thing, dear.
+[09:26] So, you understood that
+[09:28] if you want to implement a resistance,
+[09:31] then that resistance can be implemented
+[09:33] with the help of MOSFET.
+[09:35] You know, MOSFET is run like a capacitor.
+[09:39] We call it MOS capacitor.
+[09:42] What do you call it?
+[09:43] MOS capacitor.
+[09:45] Is this clear to everyone?
+[09:47] Tell me quickly.
+[10:09] Thank you.
+[10:39] Thank you.
+[10:51] Is this clear to everyone?
+[10:53] Tell me.
+[10:55] So, it is clear that you can make an active load
+[10:57] from MOSFET.
+[10:59] You can use MOSFET as a resistance, as a capacitor.
+[11:02] And when you read EDC,
+[11:05] you read it specifically in MOSFET.
+[11:09] So, dear, you can use MOSFET as a capacitor there.
+[11:14] So, when we fabricate IC,
+[11:17] I am showing you resistance,
+[11:19] I am showing you device,
+[11:21] I am showing you capacitor.
+[11:23] But from the implementation point of view,
+[11:25] all things are made from the transistor.
+[11:28] Okay, brother.
+[11:30] Now, let's go to the multi-stage amplifier.
+[11:33] That is the cascode connection.
+[11:36] What is your cascode connection?
+[11:39] Now, when you read cascode connection in BJT,
+[11:46] cascode in BJT,
+[11:52] what did you call it?
+[11:55] You called it, right?
+[12:00] Common emitter, common base amplifier.
+[12:04] And what did you call it?
+[12:08] It is a wide band amplifier.
+[12:12] Correct?
+[12:13] Its bandwidth is very high.
+[12:15] When you go to MOSFET,
+[12:17] it will become common emitter,
+[12:19] common source.
+[12:22] And the second one will become common gate.
+[12:25] Okay, common source and common gate.
+[12:28] So, look at the lower transistor,
+[12:31] look at the lower transistor,
+[12:33] by giving input on the gate.
+[12:35] This transistor,
+[12:42] by giving input on the gate,
+[12:49] you will take output on the drain.
+[12:55] And this transistor will be your common gate.
+[13:01] By giving input on the source,
+[13:07] you will take output on the drain.
+[13:11] Chamka?
+[13:13] Tell me.
+[13:14] What type of connection will this chamka become?
+[13:17] A common source amplifier
+[13:19] and a common gate amplifier.
+[13:21] When you connect them together,
+[13:24] then it will be called as cascode connection.
+[13:27] So, look at the AC model.
+[13:31] First of all,
+[13:34] what I do in the AC model,
+[13:36] I take the lower transistor first.
+[13:40] I have grounded its source.
+[13:47] This is the common source amplifier,
+[13:49] VGS1,
+[13:52] VIN.
+[13:54] Okay?
+[14:02] This is GM1,
+[14:07] VGS1.
+[14:15] This is my child, R01.
+[14:18] This is the drain terminal.
+[14:23] Now, this drain will be connected
+[14:25] to the source of the other transistor.
+[14:27] This drain
+[14:29] is connected to the source of the other transistor.
+[14:41] This is it.
+[14:54] This is it.
+[15:00] This is it.
+[15:02] Okay?
+[15:04] Now, you will take the output on the drain.
+[15:10] This will be the output.
+[15:12] Okay?
+[15:13] And you will ground its gate.
+[15:19] You will ground its gate.
+[15:22] So, this is your connection.
+[15:24] From one transistor's drain,
+[15:27] the source of the other is connected
+[15:29] and you have taken the final output
+[15:31] from the drain of the other transistor.
+[15:34] Tell me, is this clear to everyone?
+[15:37] Is this clear to everyone?
+[15:39] Tell me quickly.
+[15:41] Did you understand this model?
+[15:43] It is made from the style of the model.
+[15:45] Tell me quickly.
+[15:48] Is the model clear or not?
+[15:51] It is clear, isn't it?
+[15:53] A common gate amplifier is done
+[15:55] and one of your common source amplifier is done.
+[16:00] Now, look.
+[16:03] Here, VGS1
+[16:08] is equal to the input voltage.
+[16:11] VGS1 clearly shows the input voltage.
+[16:14] Now, what I want to know?
+[16:16] I want to know the V out.
+[16:19] Now, here, GM1, VGS1 is coming.
+[16:22] Here, R01 is coming.
+[16:25] If I turn this circuit
+[16:28] what is the need to turn it?
+[16:31] What will be the voltage of this terminal?
+[16:34] If you consider the voltage of this terminal as V
+[16:37] and put a nodal,
+[16:39] see, put a nodal.
+[16:43] So, V by
+[16:46] R01
+[16:52] Okay.
+[16:54] Then there is incoming
+[17:00] and outgoing.
+[17:04] Tell me, is this clear?
+[17:07] I have only put a nodal.
+[17:15] VGS1 will become V in.
+[17:18] VGS1 will become V in.
+[17:21] And what is the other thing?
+[17:23] Look here, if this is V, this is zero.
+[17:29] So, VGS2 is minus V.
+[17:32] Can you say this?
+[17:33] This is zero, this is V.
+[17:35] So, VGS2 is minus V.
+[17:39] Sir, source of MOSFET2 is connected to drain.
+[17:42] Then how is it common source?
+[17:44] The common source is at the bottom.
+[17:47] Its source is grounded.
+[17:51] This is a common source.
+[17:53] The upper one is a common gate.
+[17:55] The source of that is input.
+[17:57] You put an output on the drain.
+[17:59] So, this is a common gate, right?
+[18:01] Input on the source, output on the drain.
+[18:04] Okay.
+[18:06] Is it clear so far?
+[18:09] Now, what do we do?
+[18:12] V by
+[18:15] R01
+[18:17] plus GM1 VGS1
+[18:20] VGS2 minus V.
+[18:24] VGS1 is V in.
+[18:33] I have to eliminate V.
+[18:40] Now, if I put a nodal on the V out one,
+[18:42] V out by R02
+[18:51] plus GM1 VGS2
+[18:59] This should be zero.
+[19:01] Both the currents are out going.
+[19:05] Now, what do you do here?
+[19:07] VGS2 is minus V, right?
+[19:20] V out by R02
+[19:29] This is done.
+[19:34] And if you collect the terms of V here,
+[19:39] V
+[19:42] See, it is a little long,
+[19:44] but it is a basic network analysis.
+[19:47] I am doing it with a nodal, right?
+[19:51] V in
+[19:54] plus GM2
+[19:56] GM1 V in
+[20:03] minus V out by R02
+[20:10] Okay.
+[20:11] Now, if we put the terms of V out here,
+[20:20] V out 1 plus GM
+[20:26] V out
+[20:29] 1 by R01
+[20:33] plus 1 by R02
+[20:36] plus GM2
+[20:40] divided by 1 plus GM2 R02
+[20:47] minus 1 by
+[20:50] R02
+[20:58] Okay.
+[20:59] Now, if we take LCM
+[21:13] here R02 by R01
+[21:18] plus 1
+[21:20] plus GM2 R02
+[21:24] minus
+[21:26] 1
+[21:27] minus GM2 R02
+[21:30] So, these two terms are cut.
+[21:39] So, V out by V in
+[21:43] R02 by R01 are also cut from here.
+[21:51] This is done.
+[21:57] It is done.
+[21:58] It is out again.
+[21:59] Minus GM1 R01 into 1 plus GM2 R02
+[22:05] What is this you have?
+[22:06] It is out again.
+[22:08] R02 by R01 is okay.
+[22:11] It is done.
+[22:12] Tell me quickly.
+[22:14] Is this all done?
+[22:17] Yes, it is done.
+[22:18] Is it clear?
+[22:20] Now, if I tell you in this
+[22:22] I want overall transconductance.
+[22:25] What do you want?
+[22:26] I want overall transconductance.
+[22:29] So, if we talk about overall transconductance
+[22:34] then look at the connection.
+[22:40] This is enhancement MOSFET.
+[22:42] Just show it like this.
+[22:48] See, this is output current.
+[23:12] What do I say?
+[23:13] The input voltage is VGS1.
+[23:17] The input voltage is VGS1.
+[23:23] And the output current is common in both the transistors.
+[23:28] If you see the drain current of the first transistor
+[23:32] that is also I out.
+[23:34] So, if I tell you that
+[23:36] overall GM is taken out
+[23:38] which means I am saying
+[23:40] del I out by del V in
+[23:45] then you will say that I out
+[23:47] is the drain current of the first transistor.
+[23:50] And V in is VGS1.
+[23:53] Now, ID1 by VGS1 is GM1.
+[23:58] That is overall transconductance
+[24:00] that is the transconductance
+[24:02] of the common source stage.
+[24:05] It is the first stage transconductance.
+[24:08] Did you understand?
+[24:10] Overall transconductance
+[24:15] overall transconductance
+[24:22] is equal to
+[24:27] transconductance of first stage.
+[24:37] First, you tell me
+[24:39] whether it was clear or not.
+[24:41] And if it was clear
+[24:42] then tell me its output resistance.
+[24:44] Look, I gave the model.
+[24:46] I want its overall output resistance.
+[24:49] Zero the input.
+[24:51] Take out V0 by I0.
+[25:12] Look, I am copying this slide.
+[25:15] Okay.
+[25:16] I will take out the output resistance
+[25:18] and tell you.
+[25:22] Where did it go?
+[25:28] Okay.
+[25:30] Now, look at the output resistance
+[25:32] of the first transistor.
+[25:34] Now, look at the output resistance
+[25:36] of the first transistor.
+[25:38] Now, look at the output resistance
+[25:40] of the first transistor.
+[25:41] Now, look at the output resistance.
+[25:43] If you want to take out the output resistance
+[25:45] then VIN will have to be grounded.
+[25:50] VIN will be grounded.
+[25:53] VGS1 will be zero
+[25:56] with which the current source
+[25:58] will be open to you.
+[26:00] What will happen to you?
+[26:02] It will be open to you.
+[26:04] Okay.
+[26:05] Now, what I want to know is
+[26:08] take out V.
+[26:17] I want to know
+[26:21] V out by
+[26:23] I out.
+[26:25] Now, look carefully.
+[26:27] Look at the R01
+[26:29] in which terminal
+[26:31] it is called X.
+[26:33] It is between X terminal and ground.
+[26:36] Where is this R02?
+[26:38] It is between X terminal and ground.
+[26:40] Think carefully.
+[26:42] This R01 is in X and ground.
+[26:45] This R02 too.
+[26:47] But there is no V02 here.
+[26:49] Wait. It is not in X and ground.
+[26:52] This is coming in X and ground.
+[26:54] VGS2 is coming in X and ground.
+[26:57] And R01 is coming in X and ground.
+[27:00] So, if this terminal is X
+[27:04] VGS1 is zero.
+[27:06] So, show it here.
+[27:10] Between X and ground
+[27:14] this R01 is here.
+[27:21] This is ground. This is terminal X.
+[27:23] Okay.
+[27:25] R01 is in between X and ground.
+[27:29] And the voltage between X and ground
+[27:31] is VGS2.
+[28:01] This V out is also in respect to the ground.
+[28:08] Now, the current is I out here.
+[28:17] The thing is, it is in respect to the ground.
+[28:22] How can you simplify it here?
+[28:26] Or do it like this.
+[28:29] The same method will be better.
+[28:32] Because it is getting complicated.
+[28:35] Instead of redrawing it, let's consider it as V.
+[28:42] Now, VGS2 is
+[28:46] that is minus V.
+[28:49] Okay.
+[28:51] Now, here
+[28:53] how much is the current going?
+[28:55] It is going here.
+[28:57] V by R01
+[29:01] which is coming from here.
+[29:07] Now, if you put it on the V out node,
+[29:09] then I out
+[29:12] will be
+[29:14] V out minus V
+[29:17] by
+[29:19] R02
+[29:21] R02
+[29:23] plus GM VGS2.
+[29:26] Okay. VGS2 itself is minus V.
+[29:45] My brother and here
+[29:48] there can be one more thing.
+[29:51] If I out is entered in the parallel combination of both,
+[29:55] then I out will be leaving.
+[29:57] I mean, I say this I out
+[30:01] is V by R01.
+[30:04] So, V is I out into R01.
+[30:09] I believe that
+[30:11] if I out is entered here,
+[30:13] then I out will be leaving.
+[30:15] I out will be leaving you.
+[30:18] That is why I out is V by R01.
+[30:21] So, instead of V, if you put it,
+[30:25] then you take the terms of I out on one side.
+[30:27] I out R01
+[30:30] R01 multiplied.
+[30:32] I out.
+[30:44] So, look at it.
+[30:46] Output resistance.
+[30:49] How much is it?
+[30:51] GM2
+[30:53] R01
+[30:54] R02
+[30:56] plus R01.
+[30:58] V is here.
+[31:00] This is it.
+[31:01] V out by I out.
+[31:02] Tell me.
+[31:03] Is this what is coming?
+[31:05] Tell me quickly.
+[31:07] So, look here.
+[31:08] What did you see overall?
+[31:13] You saw the first thing.
+[31:15] Gain
+[31:19] comes in minus.
+[31:26] Do you know what its approximate value is?
+[31:29] Gain
+[31:37] Do you know the reason?
+[31:38] Look,
+[31:39] the gain of GM2 R02 MOSFET
+[31:42] will be almost 10-15.
+[31:44] It is bigger than 1.
+[31:45] It ignores 1.
+[31:46] So, this is the value.
+[31:48] GM1, GM2, R01, R02.
+[31:51] Overall, trans conductance.
+[31:53] How much is it?
+[31:55] GM1
+[31:56] How much is the overall output resistance?
+[32:06] So, which is approximately
+[32:08] GM2, R01, R02.
+[32:11] Sir, why is that?
+[32:13] Look,
+[32:14] if you consider GM2 into R02 as 10,
+[32:17] then this will be 10, R01
+[32:19] and this is R01.
+[32:21] So, what will you say approximately?
+[32:23] 10 times R01.
+[32:25] So, if you remember this,
+[32:27] then it is okay.
+[32:28] Otherwise, how do you derive from the cascode connection?
+[32:31] I have also taught you that.
+[32:32] Clear?
+[32:33] So, look,
+[32:34] there is more than sufficient knowledge
+[32:36] for you in MOSFET.
+[32:38] Now, after this,
+[32:39] what am I doing?
+[32:40] I am solving the DPP of the MOSFET amplifier.
+[32:43] Of the MOSFET amplifier.
+[32:46] Okay?
+[32:47] But before that,
+[32:48] let me tell you one more thing.
+[32:49] CMOS cascode.
+[32:50] Look at this in CMOS.
+[32:52] These are the two transistors.
+[32:54] These are PMOS.
+[32:56] These two are PMOS.
+[33:00] And these two are
+[33:04] NMOS.
+[33:07] Okay?
+[33:08] So, this is the cascode connection of CMOS.
+[33:11] Now, if I ask you the output resistance of PMOS,
+[33:15] of PMOS,
+[33:17] then what will you say?
+[33:18] Tell me.
+[33:19] The transistor near the output,
+[33:22] as you can see, there is GM2 in the output resistance, right?
+[33:25] GM2, which transistor was it?
+[33:27] Which one did you take the output from?
+[33:28] Look carefully.
+[33:29] GM2, which transistor was it?
+[33:32] Which one did you connect with the output?
+[33:35] So, look here.
+[33:36] Which transistor is it connected with?
+[33:39] Tell me quickly.
+[33:40] Which transistor is it connected with?
+[33:44] That is GM3.
+[33:48] Do you understand or not?
+[33:50] Here, we have to take the trans conductance of that transistor,
+[33:54] which is near to the output.
+[34:03] Okay?
+[34:04] The transistor near the output,
+[34:06] we will take it.
+[34:07] Tell me about NMOS resistance.
+[34:10] Tell me about NMOS resistance.
+[34:12] Come on.
+[34:16] R0N.
+[34:19] Tell me about the output resistance of NMOS.
+[34:22] What is the GM of the transistor?
+[34:25] Tell me quickly.
+[34:27] What is the GM of the transistor?
+[34:31] Tell me quickly.
+[34:33] Which transistor are you going to take?
+[34:38] Tell me quickly.
+[34:41] The second very good item.
+[34:44] GM2,
+[34:46] R01,
+[34:48] R02.
+[34:49] And what will be the overall trans conductance?
+[34:53] It will be GM1.
+[34:56] What will be the overall trans conductance?
+[34:59] GM1.
+[35:00] Is it clear?
+[35:01] Look at this gain.
+[35:03] You could have written this gain like this.
+[35:08] Look at it.
+[35:11] You could not have written this.
+[35:20] Tell me.
+[35:22] You could have written this too.
+[35:25] That minus GM into R out.
+[35:28] So if you get the trans conductance,
+[35:30] the output resistance,
+[35:32] then you can tell the gain.
+[35:34] Now look at what you will do.
+[35:36] You will ground the VSS at the top.
+[35:40] And you will ground the one at the bottom.
+[35:43] So you don't think these two branches will be parallel.
+[35:46] Tell me.
+[35:47] You don't think this PMOS and NMOS branch will be parallel.
+[35:51] When you ground this VSS,
+[35:54] then this PMOS and NMOS branch will be parallel in AC.
+[35:58] When VSS is grounded in AC analysis,
+[36:01] then PMOS and NMOS branch will be parallel.
+[36:04] And both of them will be connected from V0.
+[36:07] Where will both the branches come between V0 and ground?
+[36:10] If you ground the VSS,
+[36:12] then between V0 and ground it will come.
+[36:15] So I am saying that the overall output resistance which will be my
+[36:19] is R0 P
+[36:22] parallel
+[36:24] R0 N
+[36:26] and the gain which will come
+[36:28] will come.
+[36:33] Tell everyone.
+[36:36] Did you understand how to deal with the Cascode?
+[36:39] If you know about Cascode's transconductance output resistance
+[36:43] and gain,
+[36:45] then you can ask any question.
+[36:47] In fact, I will say that if you know about transconductance
+[36:50] and output resistance, then you can ask all the questions.
+[36:53] Because transconductance into the output resistance
+[36:56] will give you the gain.
+[37:16] Is it clear?
+[37:18] Tell me.
+[37:20] Let's see the assignment.
+[37:22] I gave you this assignment in the MOSFET amplifier.
+[37:26] Common source circuit with bypass capacitor signal frequency is large.
+[37:30] VTN KN lambda is given.
+[37:32] Ask the gain.
+[37:34] Now see here, the drain current DC one has already shown you.
+[37:40] 0.5 milli ampere.
+[37:46] Now your GM
+[37:48] 2 root KID
+[38:01] How much is coming?
+[38:03] This will become root 2.
+[38:08] Root 2 milli Siemens.
+[38:10] Lambda is 0,
+[38:12] meaning RD will tend to infinity.
+[38:16] Now I have to make its model.
+[38:18] Okay?
+[38:19] I have to make its model.
+[38:21] There is a source on the gate and a resistor of 20 kilo ohms.
+[38:25] A resistor.
+[38:45] And this capacitor shot has turned the source terminal ground.
+[38:56] Okay?
+[39:07] This is the GM VGS.
+[39:13] And this 7 kilo ohm will come between drain and ground.
+[39:17] This 7 kilo ohm resistor will come here.
+[39:22] And your output is also on the drain.
+[39:29] Okay?
+[39:30] Now what you will say is that VGS is equal to the source voltage.
+[39:36] And V0 is minus GM VGS into 7.
+[39:44] So V0 by Vs is minus root 2 into 7.
+[39:52] How much is coming? 7 root 2.
+[39:54] How much is 7 root 2 coming?
+[39:59] And if the milli and kilo are cut, then minus 9.9.
+[40:04] This is coming again.
+[40:06] Right?
+[40:07] This is coming.
+[40:08] This is also coming.
+[40:09] Very good.
+[40:10] 9.9.
+[40:12] Next look.
+[40:13] NMOS common gate circuit GM DI 2 R0 infinity voltage gain is asking.
+[40:20] So make the model again.
+[40:26] First of all,
+[40:29] you show open circuit between gate and source.
+[40:36] Now look, the gate terminal is grounded.
+[40:40] The gate is grounded.
+[40:42] Okay?
+[40:50] Here comes GM VGS.
+[40:54] R0 is infinity.
+[40:55] There is a 10 kilo ohm resistor with ground on the source.
+[40:59] Because this will be grounded in AC.
+[41:02] So there is a 10 kilo ohm resistor with ground on the source.
+[41:10] And an input voltage on the source.
+[41:20] Okay?
+[41:21] There is a 5 kilo ohm resistor with respect to ground on the drain.
+[41:25] And a 4 kilo ohm resistor with respect to ground.
+[41:30] So you can write 5 parallel 4.
+[41:40] Now what will be VGS here?
+[41:45] 0 minus VI.
+[41:48] That is VI is minus VGS.
+[41:51] And V0 will be
+[41:54] minus GM VGS
+[41:58] 5 parallel 4.
+[42:01] So if you do V0 by VI,
+[42:03] minus VGS will be cut off.
+[42:05] So if you do V0 by VI,
+[42:07] minus VGS will be cut off.
+[42:14] Okay?
+[42:18] So what is the voltage gain?
+[42:19] How much is GM?
+[42:20] 2 millisiemens.
+[42:25] 40 by 9.
+[42:28] Tell me, is this what is coming?
+[42:31] Is this what is coming?
+[42:32] 4.44.
+[42:33] Tell me quickly.
+[42:35] Your gain is 4.44.
+[42:39] Next, we have given a common gate circuit.
+[42:42] VTN, KN, Lambda.
+[42:44] Here you have given an ID.
+[42:46] First, from the constant current biasing,
+[42:49] you have given an ID first.
+[42:55] So you can take out GM.
+[43:04] So this is 1.
+[43:05] This is 1.
+[43:06] So 1 is here.
+[43:09] Lambda is 0.
+[43:10] So RD tends to infinity.
+[43:13] The first is small signal trans conductance.
+[43:15] This is directly here.
+[43:17] The first part is directly here.
+[43:21] You are understanding this, right?
+[43:22] When the current source is applied,
+[43:23] you have given directly biasing current.
+[43:26] So for you,
+[43:27] it is easy to take out the parameters of the amplifier.
+[43:30] Now when you do AC analysis,
+[43:32] when you do AC analysis,
+[43:34] this one will be ground.
+[43:37] This capacitor will be short.
+[43:41] This 5 volt will be ground.
+[43:44] This capacitor will be short circuit.
+[43:47] This too will be short circuit.
+[43:49] Okay?
+[43:50] So make a model of this.
+[43:55] Look, you have to ground the terminal of the gate
+[43:58] because of the capacitor.
+[44:02] You have shown the VGS between the gate and source.
+[44:06] Now look at the source.
+[44:07] The current source will be open on the source.
+[44:10] It is DC.
+[44:12] There is a supply and 50 kilo ohm resistor on the source terminal.
+[44:17] There is a supply and 50 kilo ohm resistor on the source terminal.
+[44:24] I write the supply as input.
+[44:26] That is why I am writing.
+[44:27] So that you do not get confused.
+[44:30] Supply and source terminal.
+[44:32] The source terminal is also like this.
+[44:35] Now 4 kilo ohm and 10 kilo ohm will come in parallel.
+[44:39] GMVGS will come here.
+[44:54] 4 parallel 10.
+[44:57] Okay?
+[44:59] This is done.
+[45:00] 4 and 10 came.
+[45:01] The capacitor will be short in parallel.
+[45:04] Now what is the next question?
+[45:06] The input current is giving I1 and the output voltage is asking V0.
+[45:11] Look at this.
+[45:12] This is I1.
+[45:15] How much is it?
+[45:17] 100 sine omega t micro ampere.
+[45:20] So this I1 is minus GMVGS.
+[45:32] There can be only one current in one branch.
+[45:35] There can be only one current in one branch.
+[45:38] And how much is your V0?
+[45:41] Minus GMVGS into 4 parallel 10.
+[45:48] So minus GMVGS is I1.
+[45:52] 100 sine omega t micro ampere.
+[45:56] 4 parallel 10 will be 40 by 14 kilo ohm.
+[46:02] Now what is kilo into micro?
+[46:04] It is milli.
+[46:06] It is milli.
+[46:10] So 0.2857 milli is also gone.
+[46:14] 0.2857.
+[46:17] Sine omega t volt.
+[46:21] This is coming.
+[46:22] Okay? 0.2857.
+[46:25] So you will write B.
+[46:27] This is the closest.
+[46:29] Okay?
+[46:30] This is the closest.
+[46:31] Clear.
+[46:32] Easy question.
+[46:33] Source follower circuit.
+[46:35] Look at this.
+[46:36] IQ is shown.
+[46:38] GM and R0 are given.
+[46:39] So there is no need for IQ.
+[46:40] If GM and R0 are given.
+[46:42] Voltage gain.
+[46:43] So first make a model.
+[46:46] Now I think the MOSFET amplifier is easy.
+[46:50] Now you have shown the output on the source terminal.
+[46:57] With the resistance 4 kilo ohm.
+[47:03] Okay?
+[47:04] There is a 500 kilo ohm resistor on the gate terminal.
+[47:16] And there is a supply.
+[47:19] I am giving it input.
+[47:23] This is VGS.
+[47:27] Now what will happen on the drain?
+[47:29] There will be a current source between drain and source.
+[47:34] GM VGS.
+[47:36] And the drain is directly connected to 5 volts.
+[47:39] The ground will be 5 volts.
+[47:41] Here it is.
+[47:43] It has become a model.
+[47:44] Now here you see.
+[47:47] GM VGS will run in this.
+[47:54] So V0 is.
+[48:02] This happened.
+[48:04] And what is the input voltage?
+[48:07] VGS.
+[48:08] VGS.
+[48:13] This is the sum of 2 voltages.
+[48:16] Put the KVL here.
+[48:18] So the voltage gain will be.
+[48:21] GM at 2 millisiemens.
+[48:24] 2 millis into 4 means 8.
+[48:29] That is 8 by 9.
+[48:34] 0.888.
+[48:35] 0.888.
+[48:37] And anyway the source follower's gain is smaller than 1.
+[48:41] R0.
+[48:43] R0 is 100 kilo ohm.
+[48:45] Much much greater than 4k.
+[48:48] So you ignore it.
+[48:50] 25 times higher.
+[48:54] Otherwise it would have gone in parallel with 4k.
+[48:57] Okay?
+[48:59] It would have gone in parallel with 4k.
+[49:01] This also comes between source and ground.
+[49:03] This also comes between source and ground.
+[49:07] Okay.
+[49:08] Next R0.
+[49:10] If you want to remove R0, it is simple.
+[49:14] I have already made you.
+[49:16] RS parallel 1 by GM.
+[49:20] 4 parallel 4k parallel.
+[49:23] 1 by 2 millis.
+[49:25] That is 0.5.
+[49:34] 4 by 9.
+[49:39] Okay?
+[49:40] This also comes.
+[49:42] No no.
+[49:43] You don't have to use KVL from R0.
+[49:46] If you show R0 here,
+[49:48] then it would have come between source and ground.
+[49:50] The ground itself is grounded.
+[49:52] This is between source and ground.
+[49:54] So basically it would have come in parallel.
+[49:57] Because it also comes between source and ground.
+[49:59] This also comes between source and ground.
+[50:01] Both would have come in parallel.
+[50:03] So your work is still not easy.
+[50:05] Next,
+[50:07] Depletion and MOS transistor is shown.
+[50:09] VTN is negative.
+[50:10] KN is lambda.
+[50:11] Voltage gain is asked.
+[50:13] Okay?
+[50:14] So first we have to do DC analysis.
+[50:17] What will you do in DC analysis?
+[50:23] You will say that because the gate current is 0,
+[50:28] the current in this is 0.
+[50:34] Which means the gate voltage will come 0.
+[50:38] Okay?
+[50:40] Now what is the voltage of your source?
+[50:43] This is PMOS.
+[50:44] It is NMOS.
+[50:45] You should have shown the arrow outside in NMOS.
+[50:53] This arrow should have been outside.
+[50:55] Okay?
+[50:57] Now VG is 0.
+[50:59] Your ID current will be increased here.
+[51:02] So how much is VS?
+[51:06] Minus 5
+[51:09] plus ID
+[51:12] RS.
+[51:14] Okay? Minus 5 plus ID RS.
+[51:17] Now you will do DC analysis.
+[51:19] With saturation.
+[51:21] ID
+[51:24] is KN
+[51:26] VGS
+[51:29] minus VT
+[51:31] whole square.
+[51:33] So ID.
+[51:34] Here VT will be negative.
+[51:37] VGS will be 0 minus this.
+[51:43] VT is negative.
+[51:45] So plus 2.
+[51:46] RS is 1.2.
+[51:53] RS is 1.2.
+[52:02] How much is ID?
+[52:04] 7 into 1.2 is 8.4.
+[52:11] Okay?
+[52:13] Now we will solve a quadratic here.
+[52:17] 1.44
+[52:20] minus 17
+[52:23] minus 49.
+[52:25] 6.805 or 5?
+[52:30] If you put 6.805
+[52:35] then VGS is your RS.
+[52:37] 5 minus ID RS.
+[52:39] This should be bigger than VT.
+[52:45] If you put 6.805
+[52:48] 5 minus 6.805 into 1.2
+[52:52] minus 3.1 is coming.
+[52:54] So it is smaller than VT.
+[52:56] Okay?
+[52:57] It is smaller than minus 2.
+[53:00] How many days do you have to plan the revision in the festive season?
+[53:03] Only Diwali day will not be class.
+[53:05] The rest of the day will be.
+[53:07] 5 minus 5 into 1.2 minus 1 is coming
+[53:10] which is bigger than VT.
+[53:12] So this is correct.
+[53:14] Okay?
+[53:15] Now here GM will be
+[53:19] 2 root KID.
+[53:20] Do you understand?
+[53:21] What do we have to do in depletion?
+[53:22] We have to keep VT negative.
+[53:24] 5 into 5 is 25.
+[53:26] So 10
+[53:28] R0
+[53:30] 1 by lambda ID
+[53:33] 0.05
+[53:35] 20 kilo ohms.
+[53:38] Okay?
+[53:39] 20 kilo ohms.
+[53:41] Is this clear?
+[53:42] Now we have to take out the gain.
+[53:45] There is an open circuit between the source and the gate.
+[53:55] Now what will you connect to the gate?
+[53:57] 200 kilo ohms and VS.
+[54:02] VS
+[54:08] I will write VIN as supply voltage.
+[54:12] On the source terminal
+[54:14] your 1.2 kilo ohms, parallel 2 kilo ohms.
+[54:17] And from here you have taken the output.
+[54:20] If the drain terminal is connected to 5 volts
+[54:23] then it will be ground.
+[54:48] R0 is here.
+[54:52] Now see what you were saying in the last question.
+[54:54] You have ignored R0.
+[54:55] You have considered here.
+[54:57] So this 20 kilo ohms will be parallel to it.
+[55:02] So here if you see the total resistance, R equivalent
+[55:07] that will be
+[55:09] 1.2, parallel 2, parallel 20.
+[55:12] 1.2, parallel 2, parallel 20.
+[55:16] Because this terminal
+[55:18] which is the source terminal and ground
+[55:20] this is also source and ground.
+[55:22] So this is parallel.
+[55:23] These three resistances are parallel.
+[55:33] 0.7229
+[55:39] Okay?
+[55:41] Now the input voltage is
+[55:45] VGS plus V0
+[55:49] and V0 is
+[55:52] GMVGS
+[55:55] into R equivalent
+[55:58] which means the input voltage is
+[56:00] if you put it
+[56:10] here.
+[56:25] GM how much was it?
+[56:27] GM was 10.
+[56:41] So this is 0.8784.
+[56:47] Did you understand?
+[56:49] Tell me.
+[56:50] This is again a very good answer.
+[56:52] 0.878
+[56:55] Next is depletion and MOS transistor.
+[56:58] This is the same question.
+[56:59] R0 is asking.
+[57:02] Now see what will be R0 here?
+[57:04] When you take it out on the source
+[57:07] R equivalent
+[57:09] parallel 1 by GM.
+[57:13] Okay?
+[57:14] So R equivalent is 0.72289
+[57:22] parallel 1 by GM is 0.1 kilo ohms.
+[57:25] GM is 10 millisiemens, right?
+[57:38] 0.08784
+[57:41] This is kilo ohms.
+[57:44] 87
+[57:46] So almost the closest option is D.
+[57:50] Okay?
+[57:51] Did you understand?
+[57:52] Like R is parallel 1 by GM.
+[57:54] Instead of R, R is equivalent.
+[57:57] So that's it.
+[57:59] So all your assignments are completed.
+[58:01] Your MOSFET is also completed.
+[58:03] Tomorrow we will do CMOS inverter
+[58:05] which is only relevant.
+[58:07] For EC students.
+[58:09] Tomorrow your MOSFET will be completed
+[58:11] in full and final.
+[58:12] And we will start OPAMP from Perso.
+[58:14] Okay?
+[58:15] And you go here and fill out PYQ.
+[58:18] BJT, diode, MOSFET.
+[58:20] All PYQs are done from here.
+[58:22] Gate PYQ by AIR1.
+[58:25] Electrical EC.
+[58:26] I have got both of them.
+[58:28] And if you join Unacademy
+[58:30] then you can choose any plus and icon.
+[58:33] You will get the chance to study
+[58:35] from the top educator.
+[58:37] You will get the study material on the app.
+[58:39] You will get the test series.
+[58:41] If a child with an iconic question
+[58:43] gets a doubt in a new question
+[58:45] then there is a custom doubt solving.
+[58:47] You will get printed notes delivered at home.
+[58:49] 1 to 1 mentorship,
+[58:51] strategy and study plan
+[58:53] and interactive open house session
+[58:55] where you can talk to the teacher.
+[58:58] And here see,
+[59:00] when you join Unacademy
+[59:02] you have to decide the plan,
+[59:04] the duration and the maximum discount.
+[59:06] And for my guidance,
+[59:08] you have to apply the code, Ankit ESE.
+[59:10] And this Sunday,
+[59:12] we are also doing a combat
+[59:14] so that the children who are meritorious
+[59:16] want to take a scholarship on their own.
+[59:18] They can win up to 90% scholarship.
+[59:20] There will be a test of 20 questions.
+[59:22] For an hour,
+[59:23] everyone will be in the branches.
+[59:25] So you all should appear in this.
+[59:27] In your own branch.
+[59:28] And prove your talent.
+[59:30] And win exciting scholarships on Unacademy.
+[59:33] We have launched a 15 month subscription.
+[59:36] The children who are preparing for gate 24
+[59:39] are getting 1 month extra at this time
+[59:41] so that gate 24
+[59:43] comes into their cycle.
+[59:45] So you can join Unacademy with this code.
+[59:48] And you can start your preparation quickly
+[59:51] and move ahead compared to the rest of the students.
+[59:54] And if you see the result,
+[59:56] we have produced 6 rankers in last year top 10.
+[60:00] You can also be one of the top 10 rankers
+[60:02] of this year's targeted top 10.
+[60:04] If you connect with us
+[60:06] and study under my personal guidance.
+[60:09] And if there is financial issue,
+[60:11] go for EMI
+[60:12] where you don't have to pay any interest.
+[60:15] And this EMI is approved in just 2 hours.
+[60:18] At least the paperwork is only
+[60:20] Aadhar card, pan card is also a member
+[60:22] of a family
+[60:24] who is on a salary.
+[60:26] Because the salary employees
+[60:28] give EMI.
+[60:30] And look at this.
+[60:32] Brahmaasar plus batch is going on for 23 aspirants.
+[60:34] There are daily doubts in this.
+[60:36] Children are getting daily DPP.
+[60:38] There are special live classes.
+[60:40] There are strategy sessions,
+[60:42] there are notes, study material,
+[60:44] paramount, PYQS.
+[60:46] Everything is available here.
+[60:48] And for the children of gate 24,
+[60:50] Guru Kool batch has started.
+[60:52] In which Guru Palsar and Dhande sir
+[60:54] have started with analog and math.
+[60:56] You can be a part of this batch
+[60:58] and can make a living out of it.
+[61:00] Okay.
+[61:02] And look, we have launched
+[61:04] for the children of gate 23.
+[61:06] 4 months subscription.
+[61:08] If the children are still with us,
+[61:10] then they can get a good rank.
+[61:12] We will also hold an event tomorrow.
+[61:14] Tomorrow, we will make a new initiative for you.
+[61:16] We will announce it with the team
+[61:18] Creatrix. Okay.
+[61:20] And this is my telegram channel.
+[61:22] Stay connected so that you get the notification.
+[61:24] If you don't miss any class,
+[61:26] then tomorrow we are going to
+[61:28] do CMOS inverter.
+[61:30] And the child who wants
+[61:32] the PDF of this session,
+[61:34] go to the app's home page,
+[61:36] go to the community,
+[61:38] go to discover.
+[61:40] You will get all my PDFs there.
+[61:42] The PDF of this session will be
+[61:44] uploaded within 15 minutes.
+[61:46] So, thank you everyone.
+[61:48] Rohit, I have already told that
+[61:50] the electrical people have to
+[61:52] do differential multi-stage things.
+[61:54] They can leave these things.
+[61:56] I have already informed you.
+[61:58] If you are following my lectures from the line,
+[62:00] then you will understand. Okay.
+[62:02] So, the electrical kids will come back
+[62:04] from Saturday. Tomorrow, our MOSFET
+[62:06] will be over. Okay.
+[62:08] Question bank, no, the question bank one
+[62:10] is not running yet.
+[62:12] Okay. Thank you everyone.
+[62:14] Then we will meet tomorrow at the same time, same place.
+[62:16] And we will learn CMOS inverter.
+[62:18] Let's crack it.

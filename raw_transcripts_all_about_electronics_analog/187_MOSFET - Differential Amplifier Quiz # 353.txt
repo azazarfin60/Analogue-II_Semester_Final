@@ -1,0 +1,73 @@
+Title: MOSFET - Differential Amplifier | Quiz # 353
+URL: https://www.youtube.com/watch?v=EnDJwCG2SJI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this differential pair and we have been given
+[00:14] that to this differential pair, some common mode input BCM is applied.
+[00:20] Now here both MOSFETs are identical and we have been also given the device parameters
+[00:25] of these MOSFETs.
+[00:27] So for the given differential pair, we have been asked to find the maximum and the minimum
+[00:31] allowable value of the common mode voltage over which this pair will work properly.
+[00:37] So here let's say this current is equal to ISS.
+[00:43] Now here since both MOSFETs are identical, so for a common mode input voltage, this current
+[00:49] will get equated divided between the two MOSFETs.
+[00:52] And here this train currents that is ID1 is equal to ID2 is equal to ISS divided by 2,
+[01:02] which is equal to 0.2 milliampere.
+[01:06] Now we know that in the saturation, the train current ID can be given by this expression
+[01:12] and here we have been given that the channel and modulation parameter lambda is equal to
+[01:16] 0.
+[01:17] So from this expression, we can find the value of the VGS.
+[01:22] So in this expression, if you put the value of ID1 and ID2 and solve this expression for
+[01:27] the VGS, then this voltage VGS will come out as square root of ISS divided by these Mu
+[01:37] and times CuX times W divided by L plus VTH.
+[01:44] So here we know that this ISS is equal to 0.4 milliampere while the VTH is equal to
+[01:50] 0.5 volt and here we have been already given the device parameters.
+[01:56] So from this, this VGS1 is equal to VGS2 is equal to square root of 0.4 milliampere
+[02:05] divided by these 4 milliampere per volt square plus 0.5 volt.
+[02:11] That is equal to square root of 0.1 plus 0.5 which is equal to 0.816 volt.
+[02:19] For approximately we can say that it is equal to 0.82 volt.
+[02:24] So in this way, we found the value of this VGS1 and the VGS2.
+[02:30] So with the help of this VGS, we can easily find the maximum and the minimum allowed value
+[02:34] of this BCM.
+[02:36] And first of all, let us find the maximum allowed value of this BCM.
+[02:41] So we know that for the proper operation of this differential pair, these 2 MOSFET should
+[02:46] operate in the saturation region.
+[02:48] That means for these 2 MOSFETs, these strain voltage BD should be greater than or equal
+[02:53] to these VG minus VTH.
+[02:57] So here, these VG is equal to VCM or the common word input voltage while the VTH is equal
+[03:04] to 0.5 volt.
+[03:05] So here we need to find this voltage VD.
+[03:10] So here, this strain voltage VD is equal to these VD minus these ISS divided by 2 times
+[03:17] RD.
+[03:18] But this ISS divided by 2 is the train current which is flowing through these 2 MOSFETs.
+[03:25] So from this, these VD1 is equal to VD2 is equal to 1.5 volt minus 0.2 milliampere times
+[03:35] 5 kilo ohm.
+[03:37] That means this VD1 is equal to VD2 is equal to 0.5 volt.
+[03:44] Now as I said, for these 2 MOSFETs to operate in the saturation, these strain voltage BD
+[03:50] should be greater than or equal to these VG minus VTH.
+[03:55] So in this expression, if you put the value of BCM, then we can say that these common
+[04:00] word input voltage should be less than or equal to these VD plus VTH.
+[04:07] That means these VCM should be less than or equal to this 0.5 volt plus 0.5 volt.
+[04:14] That means these VCM should be less than or equal to 1 volt.
+[04:19] That means the maximum allowed value of these VCM or the VCM max is equal to 1 volt.
+[04:26] So whenever this VCM is less than 1 volt, then these 2 MOSFETs will operate in the saturation
+[04:32] region.
+[04:33] So similarly, now let us find the minimum value of this BCM.
+[04:38] Now here we have been given that for these current source to operate properly, the minimum
+[04:43] voltage which is required across this current source is equal to 0.4 volt.
+[04:48] So with the help of it, we can easily find the minimum required value of the BCM.
+[04:54] So here when the 0.2 milliampere current is flowing through these 2 MOSFETs, then the
+[04:59] voltage VGS is equal to 0.82 volt.
+[05:04] So assuming the minimum required voltage across this current source, the minimum value of
+[05:08] this BCM or the BCM minimum is equal to this VGS plus 0.4 volt minus 1.5 volt.
+[05:20] That is this voltage.
+[05:22] That means this VCM minimum is equal to this 0.82 volt plus 0.4 volt minus 1.5 volt,
+[05:32] which is equal to minus 0.28 volt.
+[05:36] So this is the minimum required value of the BCM, which will ensure that the voltage across
+[05:41] the current source is at least equal to 0.4 volt.
+[05:46] So from this we can say that the maximum allowed value of this common mode input voltage
+[05:50] or this VCM max is equal to 1 volt while the minimum value of this common mode input
+[05:57] voltage is equal to minus 0.28 volt.
+[06:02] So as far as this common mode input voltage is within this range, then this differential
+[06:06] pair will work properly.

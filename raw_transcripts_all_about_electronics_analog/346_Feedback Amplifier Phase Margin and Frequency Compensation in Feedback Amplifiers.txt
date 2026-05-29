@@ -1,0 +1,251 @@
+Title: Feedback Amplifier: Phase Margin and Frequency Compensation in Feedback Amplifiers
+URL: https://www.youtube.com/watch?v=3MxPIunl2wY
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in the previous video, we have seen the condition for the stability in the feedback
+[00:14] amplifier and we understood the concept of the gain crossover frequency and the phase
+[00:19] crossover frequency.
+[00:21] So similarly, in this video, we will understand the concept of the phase margin and we will
+[00:27] also see that using the frequency combination technique, how to improve the phase margin
+[00:32] of the feedback amplifier.
+[00:34] So if you recall the previous video, then we have seen that typically in the feedback
+[00:38] amplifier, this open loop gain is the function of the frequency.
+[00:44] And we have also seen that typically this feedback network is the passive network.
+[00:49] And because of that, it is independent of the frequency.
+[00:53] So in such case, this closed loop gain can be given as a d by 1 plus a beta, where this
+[00:59] is the function of the frequency.
+[01:02] So we have seen that whenever this a beta is greater than 1 and the phase of the a beta
+[01:08] is equal to minus 180 degree, then this feedback amplifier will become unstable.
+[01:14] And then we have also seen that this mode plot is one of the way to finding the stability
+[01:19] of the feedback amplifier.
+[01:21] So then after we have proved that when the feedback amplifier has a one pole or the two
+[01:27] poles, then the response of the feedback amplifier will be inherently stable.
+[01:32] But when it has a three poles, that it is quite possible that the system might become unstable.
+[01:39] And it can happen whenever this gain crossover frequency is more than the phase crossover
+[01:44] frequency.
+[01:46] So the gain crossover frequency is the frequency at which the magnitude plot crosses the 0 dB.
+[01:53] Or we can say that when the magnitude will become 1.
+[01:57] So in this case, at the gain crossover frequency if we see, then the phase is less than minus
+[02:03] 180 degree.
+[02:04] So here the issue of the instability will occur because in the stable feedback amplifier,
+[02:10] and the phase which is the minus 180 degree at that time, the amplitude should be less
+[02:15] than 1.
+[02:16] But in this case, that is not satisfied.
+[02:20] So here the frequency at which this phase which is the minus 180 degree is known as the
+[02:25] phase crossover frequency.
+[02:28] So forced stability, this phase crossover frequency should arrive after the gain crossover
+[02:33] frequency.
+[02:34] Or in other words, this gain crossover frequency should be less than the phase crossover
+[02:39] frequency.
+[02:40] So that when the gain crosses the 0 dB at that time, this phase is more than minus 180
+[02:47] degree.
+[02:48] And hence, the issue of the instability won't occur.
+[02:51] So now the question is how these two frequencies should be apart from each other.
+[02:57] So here, first let us see the two cases.
+[03:00] So in the one case, this gain crossover frequency is same as the phase crossover frequency.
+[03:06] And in the second case, this gain crossover frequency is slightly less than the phase crossover
+[03:12] frequency.
+[03:13] So in the first case, when the magnitude of the A beta reaches the 1 at that time, the
+[03:19] phase is equal to minus 180 degree.
+[03:22] And we have seen that at that time, the response of the amplifier will be oscillatory.
+[03:27] And here, the frequency of the oscillation will be the frequency at which this condition
+[03:32] will get fulfilled.
+[03:34] From the other and in the second case, this gain crossover frequency is slightly less than
+[03:39] the phase crossover frequency.
+[03:42] But as you can see, it is less than by the small margin.
+[03:46] That means in this case, when the magnitude reaches the 0 dB at that time, the phase is
+[03:51] very close to minus 180 degree.
+[03:54] So in this case, the response of the feedback amplifier will be marginally stable.
+[03:59] And because of that, the response of the feedback amplifier will be oscillatory.
+[04:04] But eventually, these oscillations will die down.
+[04:07] So we can understand it more clearly when we apply the step response to the feedback
+[04:12] amplifier.
+[04:14] Because if you see the step signal input, then it can this stuff all sorts of frequencies.
+[04:19] So from the step response, we can identify how the feedback amplifier will respond over
+[04:24] the frequency range.
+[04:27] So whenever this gain crossover frequency is same as the phase crossover frequency.
+[04:32] And when we have the step input to this feedback amplifier, then its response will be oscillatory.
+[04:38] On the other end, in the second case, this gain crossover frequency is slightly less than
+[04:44] the phase crossover frequency.
+[04:46] So in this case, the feedback amplifier is marginally stable.
+[04:50] And in this case, when we apply a step input to the feedback amplifier, then its response
+[04:56] will look like this.
+[04:58] That means initially, we will get some oscillations.
+[05:01] But eventually, these oscillations will die down.
+[05:05] So for a better stability, we want that this gain crossover frequency should be less than
+[05:10] the phase crossover frequency.
+[05:12] And at the same time, they should not be very close to each other.
+[05:17] So this is the third case where this omega gc is less than the omega pc and both are apart
+[05:23] from each other.
+[05:25] So in this case, when we apply a step input, then this is how the response will look like.
+[05:31] And as you can see, it is the response of the more stable system.
+[05:36] That means whenever this gain crossover frequency is less than the phase crossover frequency.
+[05:42] And as they are apart from each other, then the response of the feedback amplifier will
+[05:46] be more stable.
+[05:48] So this stability of the feedback amplifier is typically measured in terms of the phase
+[05:53] margin.
+[05:54] So basically, the phase margin is the difference between the minus 180 degree and the phase at
+[06:00] which is gain crosses the zero db line.
+[06:04] So as we know, at the phase crossover frequency, the phase is equal to minus 180 degree.
+[06:10] And let's say at this gain crossover frequency, the phase is equal to 5.
+[06:16] So the difference between these two phases is known as the phase margin.
+[06:20] But we can say that this phase margin is equal to 5 plus 180 degree.
+[06:26] So for example, for a some feedback amplifier, if the phase at the gain crossover frequency
+[06:32] is equal to minus 135 degree, then we can say that the phase margin is equal to 45 degree.
+[06:39] So the higher phase margin indicates the better stability of the feedback amplifier.
+[06:44] So for the well optimized designs, this phase margin should be at least around 60 degree.
+[06:50] So now let us see for some feedback amplifier, if the phase margin is lower or not in the
+[06:56] acceptable range, then how to improve the phase margin.
+[07:00] So let's say for a some feedback amplifier, this is the magnetic response of the mode
+[07:05] plot.
+[07:06] So similarly, now let's see the phase response.
+[07:10] So we have seen that up to 0.1 omega p1, the phase will be almost zero.
+[07:16] So then after it will start increasing and it will reach to the minus 90 degree at the
+[07:21] 10 omega p1.
+[07:23] That means at the omega p1, the phase will be equal to minus 45 degree.
+[07:28] And at the 10 omega p1, it will be around minus 90 degree.
+[07:33] So now the second pole will arrive at the omega p2.
+[07:37] So due to the second pole, once again, the phase will start reducing and it will reach
+[07:42] to the minus 90 degree at the 10 omega p2.
+[07:45] So at the omega p2, it will be equal to minus 135 degree.
+[07:50] So once again, due to the third pole from the point omega p3 onwards, the phase will
+[07:55] start reducing and it will be close to the minus 270 degree at the 10 omega p3.
+[08:02] So at the omega p3, if we see, then the phase will be close to minus 25 degree.
+[08:07] And around 10 times omega p3, the phase will be close to minus 270 degree.
+[08:13] So from the given magnet plot, this is how the phase plot will look like.
+[08:18] So clearly as you can see, here the gain crossover frequency is more than the phase crossover
+[08:24] frequency.
+[08:25] And because of that, the given feedback amplifier is the unstable.
+[08:30] So here, one day of improving the response is by reducing the feedback factor.
+[08:36] So here in this A beta, if we reduce the value of the beta for another words, if we reduce
+[08:41] the feedback factor, then this 20 log A beta will reduce.
+[08:46] And in this case, if we see the magnitude response, then it will look like this.
+[08:51] So as you can see, here since you have reduced the beta, so the entire plot has been shifted
+[08:57] downwards.
+[08:58] And now this is the new gain crossover frequency.
+[09:02] So here, since we have reduced the beta by this factor, so the gain crossover frequency
+[09:08] will shifted towards the left hand side.
+[09:10] But here, since the beta is independent of the frequency, so it won't affect the phase
+[09:15] plot.
+[09:16] And the phase plot will remain the same.
+[09:19] So now if we see, then this gain crossover frequency is less than the phase crossover
+[09:24] frequency.
+[09:26] And now, if the reduced value of the beta, the response of the feedback amplifier will
+[09:30] be stable.
+[09:32] So here, since we are reducing the beta, so this 20 log A beta plot is reducing.
+[09:38] But if we see the close loop gain, then it will actually increase.
+[09:43] For example, let's add some frequency omega.
+[09:46] This open loop gain A is equal to 100.
+[09:50] And this beta is equal to 0.1.
+[09:52] So in that case, if we see the close loop gain, then that is roughly equal to 9.
+[09:58] But now, if the beta is reduced by the factor of 10, then the close loop gain will become
+[10:04] 50.
+[10:05] That means with the reduction in the beta, although this 20 log A beta plot is reducing.
+[10:10] But overall, if we see, then the close loop gain will increase.
+[10:14] Moreover, with the reducing the beta, although we can improve the stability, and we can
+[10:20] improve the phase margin to some extent.
+[10:22] But at the same time, we are also reducing the amount of feedback in the circuit.
+[10:27] And hence, we will not get the benefit of the negative feedback that we have discussed
+[10:32] earlier.
+[10:33] And to some extent, we have to compromise those benefits.
+[10:38] So the better way of improving the phase margin is by using the frequency compensation.
+[10:43] So in this case, the position of the dominant pole in the feedback amplifier is shifted.
+[10:49] So for example, let's say, this is the magnitude response of the A beta for the sum feedback
+[10:54] amplifier.
+[10:55] And this is the corresponding phase response.
+[10:59] So here, this is the gain crossover frequency.
+[11:02] And this will be the phase crossover frequency.
+[11:05] And as you can see, here the gain crossover frequency is more than the phase crossover
+[11:10] frequency.
+[11:11] It means that the feedback amplifier with the given response is unstable.
+[11:17] So here, somehow, by shifting the dominant pole towards the origin, it is possible to
+[11:22] move the gain crossover frequency towards the left.
+[11:25] And in this way, it is possible to get more stable response, and it is possible to improve
+[11:30] the phase margin.
+[11:32] So as you can see, the first pole is arising at the omega p1.
+[11:37] So now, if we shift this dominant pole to the new frequency omega p1 dash, then this
+[11:43] is how the new response will look like.
+[11:47] That means up to the omega p1 dash, we will have the flat response.
+[11:52] And then after due to the first pole, this magnitude will start reducing at the rate
+[11:57] of 20 dB per decade.
+[11:59] And it will continue to reduce until the second pole.
+[12:03] So as you can see, in this new case, the second pole will arrive at the omega p2.
+[12:08] So from this point onward, this magnitude plot will reduce at the rate of 40 dB per decade.
+[12:15] And later on, at the omega p3, it will reduce at the 60 dB per decade.
+[12:20] But here, the magnitude response only for the two poles is shown.
+[12:25] So now, if you see, and this magnitude plot will cross the zero dB line little earlier,
+[12:32] or in other words, now this gain crossover frequency has been shifted towards the left
+[12:37] and side.
+[12:38] So now, with the change in the position of this dominant pole, the phase curve will also
+[12:43] change.
+[12:44] So now, let us see the corresponding phase plot.
+[12:48] So here, since the first pole is arising very close to origin, so we can approximate that
+[12:54] from the starting itself, the phase will start reducing.
+[12:58] And it will reach to the minus 45 degree at this omega p1 dash.
+[13:02] And around 10 omega p1 dash, it will be close to minus 90 degree.
+[13:07] And then this plot will remain as it is until the point 1 omega p2.
+[13:13] And after that, once again, it will start reducing.
+[13:16] And around 10 omega p2, it will be close to minus 180 degree.
+[13:21] And then, from the point omega p3 onwards, once again, it will start reducing.
+[13:27] And at around 10 omega p3, it will become minus 270 degree.
+[13:32] So in this way, because of the shift in the dominant pole, this is how the new phase
+[13:37] plot will look like.
+[13:39] So here, now this is the phase crossover frequency.
+[13:43] And as you can see, now with the shift in the dominant pole, now this gain crossover
+[13:47] frequency, slightly less than the phase crossover frequency.
+[13:52] And hence, now the response of the feedback amplifier will be stable.
+[13:56] Well, how stable that depends on the phase margin.
+[14:00] So in this case, as you can see, this difference is minimal.
+[14:04] So this difference can be further improved by shifting the dominant pole towards the
+[14:09] origin.
+[14:10] So in this second case, as you can see, now this dominant pole is very close to origin.
+[14:17] So in this case, now if you see, then this gain crossover frequency will arise before
+[14:21] the second pole itself.
+[14:24] And in this case, now we have the sufficient phase margin.
+[14:28] So we can say that for the sufficient phase margin, this gain crossover frequency must
+[14:34] occur before the second pole.
+[14:36] So if this gain crossover frequency occurs before the second pole, then it is possible
+[14:41] to get the desired phase margin.
+[14:44] And hence, we can also ensure the desired stability in the feedback amplifier.
+[14:49] So now, the question is to get the desired phase margin, how to find the location of the
+[14:55] required dominant pole.
+[14:57] So it can be found from the body plot itself.
+[15:00] So let's say this is the body plot of some feedback amplifier.
+[15:05] And as you can see, here this is the gain crossover frequency.
+[15:08] So similarly, if you see the phase plot, then this is how it will look like.
+[15:14] And here, this is the corresponding phase crossover frequency.
+[15:18] So as you can see, since the gain crossover frequency comes after the phase crossover
+[15:23] frequency, so the response of the feedback amplifier will be unstable.
+[15:28] So let's say using the frequency compensation, we want to improve the stability.
+[15:34] And not only that, we also want the desired phase margin.
+[15:38] So for that, let us find out the required location of the dominant pole.
+[15:43] So let's say for this given feedback amplifier, this is the required phase margin.
+[15:49] That means with the frequency compensation, at the gain crossover frequency, this should
+[15:54] be the phase.
+[15:55] So now to find the desired location of the dominant pole from this point onward, let us draw
+[16:01] straight line towards the magnitude plot.
+[16:04] So on the magnitude plot, where it intersects from that point onwards, we will draw a line
+[16:10] at a 20 dB per decade towards the vertical axis.
+[16:14] So now when we draw this line, then this line will intersect with the original plot at
+[16:19] some point.
+[16:21] So now the frequency at this intersection point shows the new location of the dominant
+[16:26] pole.
+[16:27] That means to get this desired phase margin, the new dominant pole in the feedback amplifier
+[16:33] should be located over here.
+[16:35] So in this way, by shifting the dominant pole, it is possible to improve the phase margin
+[16:40] of the feedback amplifier.
+[16:42] And in this way, it is possible to improve the stability.
+[16:46] So of course, by doing so, it is possible to improve the stability.
+[16:50] But at the same time, if we see, then now at the low frequencies, we have a much lesser
+[16:55] gain.
+[16:56] That means now, the response of the feedback amplifier will be sluggish or in other words,
+[17:02] the bandwidth of the feedback amplifier will get compromised.
+[17:06] So in the actual circuits of the feedback amplifier, this dominant pole location is shifted
+[17:11] by adding the compensation capacitor at the suitable location in the circuit.
+[17:15] But in this video, we will not discuss that part.
+[17:19] So I hope in this video, you understood what is phase margin and how to improve the phase
+[17:24] margin of the feedback amplifier using the different techniques.
+[17:28] So if you have any question or suggestion, then do let me know here in the comment section
+[17:32] below.
+[17:33] If you liked this video, hit the like button and subscribe the channel for more such videos.

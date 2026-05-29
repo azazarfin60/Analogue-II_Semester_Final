@@ -1,0 +1,1120 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Assignment Discussion | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=0IWHV5nqCxc
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to creatrix youtube channel my dear friends we are live we are back again with laksha batch 2.0 analog electronics
+[00:20] and today we are going to discuss the assignments given to you by BJT for frequency response multi stage amplifier and the differential amplifier
+[00:31] after which your BJT becomes complete and then we are starting from Monday FET then a new unit will start from Monday after which we will do opamp
+[00:41] so now your syllabus will move fast because your 2 big chapters have been completed 3rd chapter FET is not as lengthy as BJT or diode
+[00:52] then after that the biggest topic is your opamp which will start after FET and because you have learnt all the concepts in BJT
+[01:02] whether it is multi stage amplifier, whether it is AC model, whether it is differential amplifier then all these concepts will be carried over in FET
+[01:14] and even biasing techniques like voltage divider bias, fixed bias, all these things will be carried over
+[01:23] so it will be very easy for you to relate and make connections in all the things
+[01:28] so let me tell you that the one who has done a good job of BJT, he cannot be stuck in FET at any point
+[01:36] so let's start then the assignment discussion is ready all of you will mark your attendance from time to time by liking the video
+[01:43] so let's start then
+[01:49] so this was the find the relation between FT GMC Pi CMU FT was the unity gain frequency
+[01:58] this relation was derived in high frequency response
+[02:04] okay
+[02:08] this was it
+[02:12] so here your total capacitance was C that is C Pi plus CMU and I also told you about gain bandwidth product
+[02:21] alpha into F alpha is beta into F beta is unity gain frequency
+[02:29] let's go ahead
+[02:33] consider the common emitter amplifier with the following parameters beta, GMR naught, R Pi, RS, RB, RC, RL, C1, C2
+[02:44] the lower cutoff frequency due to C2
+[02:47] which is C2? it is the coupling capacitor on the output
+[02:51] the coupling capacitor on the output is R equivalent across C2
+[02:59] if you look across C2 then this is RC plus RL
+[03:06] I also derived this in low frequency response because your circuit becomes like this on the output
+[03:13] this is C2 and this is RC and this is your son RL
+[03:20] correct
+[03:24] this was it
+[03:28] now RC plus RL 1 kilo ohm plus and your 250 ohm
+[03:34] so 1.25 kilo ohm
+[03:39] so lower cutoff frequency will be 1 by 2 Pi
+[03:46] R equivalent into C2
+[03:51] 1 by 2 Pi R equivalent into C2
+[03:55] here we see 1 by 2 divided by Pi by 1.25
+[04:00] C2 is 4.7 microfarad
+[04:05] so this is 27.09 hertz
+[04:10] see
+[04:13] it is easy, frequency response is not tough
+[04:16] you just need the cross resistance of the capacitor
+[04:20] the figure shows a common base amplifier
+[04:24] determine the time constant associated with Cb and Cs
+[04:28] approximate lower cutoff frequency
+[04:31] now this is a common base amplifier
+[04:34] first you have to make a model
+[04:36] I have explained what model you can draw normally
+[04:40] you don't need to change the model along with the configuration
+[04:44] so first you draw the model
+[04:48] now what will you see between emitter and base
+[04:52] I am making a beta model here
+[04:56] I am ignoring R0
+[05:00] so I will show only 2 things
+[05:04] this is my beta IB
+[05:08] this is emitter
+[05:11] sorry base
+[05:15] base emitter collector
+[05:19] Rc will come between the collector and the ground
+[05:23] see Rc will come between the collector and the ground
+[05:31] okay
+[05:33] V0 will be associated with the collector
+[05:36] this is it
+[05:38] the base will be your ground
+[05:42] with which R2 and R1 will be both short
+[05:46] understand this
+[05:50] if you take a ground below
+[05:54] when you ground Vcc
+[05:57] see this capacitor is based on short
+[06:00] this capacitor is based on short
+[06:03] with which R2 is ground or R2 is short
+[06:07] R1 is also short because the base is also grounded
+[06:10] and Vcc is also grounded
+[06:13] so R1 and R2 are both gone
+[06:16] when the base is connected through the capacitor
+[06:20] the ground below is also grounded
+[06:23] so R1 and R2 are shorted
+[06:26] and I can see one resistance on emitter
+[06:30] which is taking us to the ground
+[06:33] and from here CS, RS, VS
+[06:36] but the base is saying to show the capacitance
+[06:49] see I have changed the position of CS and RS
+[06:52] but it doesn't make any difference
+[06:54] do one thing about the base capacitance
+[06:56] don't do short
+[06:58] show only the capacitance
+[07:01] if you show like this
+[07:03] then there will be a resistance here
+[07:06] R1 parallel R2
+[07:11] now ask for time constant
+[07:14] don't short the capacitor
+[07:17] because we need time constant
+[07:20] so the first thing we have to do
+[07:24] we need the resistance of CS
+[07:27] and we need the resistance of CB
+[07:30] CS and CB
+[07:33] so if we want to remove the CB
+[07:37] I will talk to you first
+[07:40] I will say resistance across CB
+[07:48] it is very easy
+[07:51] you will feel what it is
+[07:55] see
+[07:58] if you want to cross CB
+[08:00] then first you will short this VS
+[08:03] correct right
+[08:05] first you will short VS
+[08:07] and you will also short CS
+[08:10] if both VS and CS are shorted
+[08:12] then R1 and RS will be parallel
+[08:15] see R1 and RS will be parallel
+[08:18] so what am I saying
+[08:22] short VS and CS
+[08:27] from this R1 and RS
+[08:32] will be parallel
+[08:37] okay
+[08:39] now the parallel combination of R1 and RS
+[08:43] you can take it in the base
+[08:46] by multiplying it with 1 plus beta
+[08:49] you can take the parallel combination of R1 and RS
+[08:52] in the base
+[08:54] and multiply it with 1 plus beta
+[08:56] and it will be added in Rpi
+[08:59] so you can say Rpi plus
+[09:02] 1 plus beta
+[09:07] into RE parallel RS
+[09:11] now the resistance which is being made
+[09:14] it will come in R1 parallel R2
+[09:17] the resistance which is being made
+[09:20] it will come in R1 parallel R2
+[09:23] so we say R equivalent
+[09:28] R equivalent is
+[09:31] R1
+[09:33] parallel R2
+[09:35] parallel
+[09:37] Rpi
+[09:39] now you will feel
+[09:41] this is a dangerous equation
+[09:44] but think if the values are given
+[09:47] then it is not a big thing to evaluate
+[09:49] the series is parallel
+[09:52] so I say that tau B
+[09:56] the base capacitance tau B
+[10:00] sorry
+[10:03] R equivalent into CB
+[10:07] correct
+[10:08] R equivalent into CB
+[10:10] this is done
+[10:12] tell me is this clear to everyone
+[10:14] this calculation of resistance is clear
+[10:18] now what I want
+[10:21] resistance across C E or C S
+[10:25] ok resistance across
+[10:28] C S
+[10:30] now what you do for this
+[10:32] you short the other capacitor
+[10:38] short CB
+[10:41] what will happen with this
+[10:43] R1 parallel R2
+[10:45] gets shorted
+[10:48] this resistance of R1 parallel R2
+[10:51] will also get shorted
+[10:53] gets shorted
+[10:55] ok
+[10:56] so this is also shorted
+[10:58] now what will happen here
+[11:00] will there be a ground here
+[11:02] Rpi will also run
+[11:04] Rpi will also run
+[11:06] what can you do
+[11:08] you need C S across resistance
+[11:12] ok
+[11:13] so let me redraw the circuit
+[11:18] see the ground is base
+[11:24] this is Rpi
+[11:34] see this is across
+[11:37] I am shorting VS
+[11:49] will there be a circuit like this
+[11:56] here IB
+[12:01] this beta IB
+[12:04] RE
+[12:06] RS
+[12:08] what you do here
+[12:10] put a source here
+[12:12] V
+[12:16] so V by I
+[12:18] right V by I
+[12:20] see how much current is coming here
+[12:23] here is 1 plus beta IB
+[12:28] ok
+[12:30] or this V source
+[12:32] let me modify it a little more
+[12:34] see
+[12:41] will look a little better
+[12:43] see this is V
+[12:45] this is I
+[12:47] ok
+[12:52] so now I say
+[12:54] current
+[12:55] into RE
+[12:57] is coming from one side
+[12:59] 1 plus beta IB is coming from one side
+[13:05] and if you put KVL like this
+[13:13] from this type
+[13:15] so what can you say
+[13:17] minus IB Rpi
+[13:20] plus I RS
+[13:23] minus V is 0
+[13:27] so IB is done from here
+[13:29] V
+[13:32] sorry I RS minus V
+[13:38] by Rpi
+[13:42] ok
+[13:43] and voltage across RE
+[13:46] is V minus I RS
+[13:52] I wrote from KVL
+[13:53] it is equal to I RE into RE
+[13:57] so V minus I RS
+[14:01] see this
+[14:03] is I
+[14:05] RE
+[14:07] I am putting value here
+[14:09] 1 plus beta IB
+[14:13] RE
+[14:14] if you put the value of IB here
+[14:25] if you put this
+[14:27] then put minus here
+[14:30] V minus I RS
+[14:33] 1 plus beta
+[14:36] RE by
+[14:38] Rpi
+[14:41] why did you put minus here
+[14:43] see I RS minus V
+[14:45] I put minus here and did V minus I RS
+[14:48] now this term of V minus I RS
+[14:51] take it to the left
+[14:53] V minus I RS
+[14:55] I RS
+[14:57] 1 plus
+[15:01] 1 plus beta
+[15:03] RE by Rpi
+[15:09] is equal to
+[15:11] I RE
+[15:14] so V by I which will be
+[15:18] RS plus RE upon
+[15:21] 1
+[15:23] 1 plus beta upon Rpi
+[15:25] this happens
+[15:29] this happens
+[15:31] do you know the approximate
+[15:33] what will happen
+[15:35] this will happen
+[15:37] do you know why
+[15:39] this RE by small RE
+[15:41] this is much much greater than 1
+[15:43] this capital RE by small
+[15:45] RE
+[15:47] this is much much greater
+[15:49] than 1
+[15:51] from this logic
+[15:53] see what will happen
+[15:55] second tau
+[15:57] RS plus
+[15:59] RE
+[16:01] into CS
+[16:03] and the lower cutoff frequency
+[16:05] is the maximum of these two frequencies
+[16:07] is
+[16:09] 1 by 2 pi
+[16:11] tau
+[16:13] and 1 by 2 pi
+[16:15] tau
+[16:17] yes
+[16:19] okay this
+[16:21] this is the maximum of these two frequencies
+[16:23] is it clear
+[16:25] tell me
+[16:27] is this derivation clear
+[16:29] whenever you have to
+[16:31] remove the cross resistance of the ammeter
+[16:33] then you have to make the voltage source
+[16:35] whenever you have to
+[16:37] remove the resistance on this terminal
+[16:39] is everything clear
+[16:43] okay
+[16:45] let's go
+[16:47] NPN BJT C pi C mu
+[16:49] Gm is given
+[16:51] Ft and F beta
+[16:53] now see what is Ft
+[16:55] son
+[16:57] Gm by
+[16:59] 2 pi
+[17:01] into C pi
+[17:03] plus C mu
+[17:07] Gm is
+[17:09] 38 milli ampere per volt
+[17:11] divided by
+[17:13] 2 pi
+[17:15] C pi plus C mu
+[17:17] will be
+[17:19] 40
+[17:21] is this 40 into 10
+[17:23] minus 14
+[17:29] see how much it comes
+[17:35] outer
+[17:37] RE and RE loop
+[17:39] is the relation between RE and RE
+[17:41] anyway you can do it
+[17:43] if I go from RE
+[17:45] then there will be a relation
+[17:47] between RE and RE
+[17:57] but now you understand
+[17:59] all these questions
+[18:01] this is being made
+[18:03] 14.75 Giga hertz
+[18:09] okay
+[18:11] this is being made
+[18:13] 14.75 Giga hertz
+[18:15] F beta is saying
+[18:17] then you know the relation between the product
+[18:19] beta into F beta is Ft
+[18:21] F beta is
+[18:23] Ft by beta
+[18:27] and how much beta is given
+[18:29] 90
+[18:31] Giga hertz
+[18:37] 163.9 mega hertz
+[18:43] this is coming
+[18:45] tell me
+[18:47] this is being made
+[18:49] come on
+[18:51] okay
+[18:53] let's come to the next
+[18:55] this question was
+[18:57] A cos 20t plus
+[18:59] beta sin 10 to the power
+[19:01] 60
+[19:03] so if you look carefully
+[19:05] this is a low frequency signal
+[19:07] and this signal is high frequency
+[19:09] so basically
+[19:11] there is a combination of two signals
+[19:13] a low frequency
+[19:15] and a high frequency
+[19:17] which expression
+[19:19] best approximates
+[19:21] v0 t is given to you by beta
+[19:23] hie
+[19:25] r pi is given
+[19:27] r pi
+[19:29] now the thing is
+[19:31] if we look at the low frequency
+[19:33] then these capacitances
+[19:35] should be considered
+[19:37] this is what you say
+[19:39] that brother
+[19:41] on low frequency
+[19:43] consider
+[19:49] coupling
+[19:51] and bypass capacitor
+[19:57] and
+[19:59] on high frequency
+[20:03] they should be shorted
+[20:07] okay
+[20:09] so first what is the output of high frequency
+[20:11] because the capacitor will be shorted
+[20:13] so I am making
+[20:15] the AC model of high frequency
+[20:17] internal capacitances
+[20:19] internal capacitances are not given
+[20:21] internal capacitances are not given
+[20:23] internal capacitances are not given
+[20:25] so don't consider
+[20:27] c pi and c mu
+[20:29] just short these capacitances
+[20:31] on high frequency
+[20:33] now you will ground vcc
+[20:35] 100k
+[20:37] and 200k should be
+[20:39] 100 and 200k
+[20:41] will come in parallel
+[20:43] 20 ohm is not possible
+[20:45] 100 and 200
+[20:47] will come in parallel
+[20:49] this is clear
+[20:51] this is 100 and 200
+[20:53] parallel
+[20:57] then hie
+[20:59] i.e.
+[21:01] r pi
+[21:11] you see bypass
+[21:13] if you short the capacitor
+[21:15] then emitter terminal will be ground
+[21:19] if you short the bypass
+[21:21] capacitor
+[21:23] then emitter terminal will also be ground
+[21:25] then this 3k ohm
+[21:27] vcc
+[21:29] sorry v0 and ground
+[21:37] here your v0 will come
+[21:39] so I want to remove the gain
+[21:41] I will come
+[21:47] so I will say
+[21:49] i.b is
+[21:51] vi upon r pi
+[21:53] and v0 is
+[21:55] minus beta r pi
+[21:57] i.b
+[21:59] into 3k
+[22:03] minus beta vi
+[22:05] into 3k by r pi
+[22:11] how much is the gain
+[22:13] on high frequency
+[22:15] how much is the gain
+[22:17] how much is the beta
+[22:19] beta is 150 hie
+[22:21] 3k ohm
+[22:23] 150
+[22:25] into 3k
+[22:27] by 3k
+[22:29] so minus 150
+[22:31] so v0
+[22:33] how much is the high frequency
+[22:35] beta
+[22:37] gain is 150
+[22:39] so minus 150
+[22:41] beta
+[22:43] sine 10 to the power of 60
+[22:45] the value of beta is 150
+[22:47] this is not the beta
+[22:49] this is the beta of amplitude
+[22:51] means amplitude is considered as beta
+[22:53] now low frequency omega is 20
+[22:55] at omega
+[22:57] equal to 20 radian per second
+[22:59] reactance
+[23:01] see
+[23:03] 1 by 20
+[23:05] into 100 nano farad
+[23:07] i.e. 10 to the power of minus 7
+[23:09] 10 to the power of minus 7
+[23:11] so this is 5
+[23:17] i.e. 500 kilo ohm
+[23:19] which is
+[23:21] very very high
+[23:23] 500 kilo ohm
+[23:25] if it is in series
+[23:27] see it goes in parallel
+[23:29] this 500 kilo ohm
+[23:31] is coming in series
+[23:33] if 500 kilo ohm is coming in series
+[23:35] then this signal will not let it pass
+[23:37] i.e. low frequency signal
+[23:39] will stop
+[23:41] so what is your answer
+[23:43] d
+[23:45] understand
+[23:47] tell me if you understood this
+[23:49] then do b instead of beta
+[23:51] because there is b in options
+[23:55] so this is not beta this is b
+[23:57] tell me is it clear
+[23:59] on your 20 radian
+[24:01] per second
+[24:03] the resistance of series
+[24:05] the impedance of series
+[24:07] has become 500 kilo ohm
+[24:09] 500 kilo ohm
+[24:11] 500 kilo ohm is very high
+[24:13] now vijesh is saying
+[24:15] sir i have covered power electronics series
+[24:17] in 7 days
+[24:19] i had to do it
+[24:21] because
+[24:23] if you stick to such fast series
+[24:25] then you will not be able to grasp anything
+[24:27] at least you should have given power electronics
+[24:29] 20 to 25 days
+[24:31] you should have asked questions from every lecture
+[24:33] you should have practiced
+[24:35] after every lecture
+[24:37] you should have done all the things
+[24:39] if you only came to the rank
+[24:41] by looking at the lecture
+[24:43] then all the rank
+[24:45] all the toppers are from this channel
+[24:47] because there are all the videos on this
+[24:49] this is not the subject
+[24:51] and the same thing about power system
+[24:53] the complete playlist of power system is here
+[25:01] ok
+[25:03] ok
+[25:05] Kunal
+[25:07] we are asking some questions
+[25:09] about the person who is asking questions
+[25:11] what should i say about this
+[25:13] find the mid band voltage gain
+[25:15] AV
+[25:17] now we have to take out the mid band gain
+[25:19] vt ic beta
+[25:21] so first
+[25:23] what i do
+[25:25] vt and ic is given
+[25:27] gm take out
+[25:29] ic by vt
+[25:33] 1 by 26
+[25:35] Re
+[25:37] is 1 by gm
+[25:41] i.e. 26 ohms
+[25:43] r pi
+[25:45] approximately
+[25:47] 1 plus beta Re
+[25:49] say beta Re
+[25:51] 5.2 kilo ohms
+[25:53] ok
+[25:55] now what you have to do here
+[25:57] here
+[25:59] the gain will be very less
+[26:01] in the series of 25 kilo ohms
+[26:03] you make the model
+[26:05] 25 kilo ohms
+[26:07] in the series
+[26:09] 25 kilo ohms
+[26:11] then
+[26:13] 5.2 kilo ohms
+[26:15] 5.2 kilo ohms
+[26:17] 5.2 kilo ohms
+[26:19] 5.2 kilo ohms
+[26:21] 5.2 kilo ohms
+[26:23] 5.2 kilo ohms
+[26:25] now
+[26:27] you can also use the gm side
+[26:29] so
+[26:37] if you short x you
+[26:39] are emitter the ground
+[26:41] all behnu are short
+[26:43] range
+[26:45] wont be good
+[26:47] point, out well
+[26:49] distance
+[26:55] V0 is minus GM, V pi, RC, okay?
+[27:22] So V0 by V in, mid band voltage gain will be minus GM 1 by 26, RC 1 kilo ohm, 1000 ohm and this is above and below 1 kilo ohm, so there is no need to convert this into ohm, okay?
+[27:52] 6.622, okay? 6.622, dear this link should be open, this is it, what is the next one? Find the value of CE if FCE is 10 hertz, i.e. cut off frequency is given for ammeter resistance, 10 hertz, so ammeter capacitance is asked from you, so here a resistor is given, okay?
+[28:22] You will have to take out one resistor, brother, you will have to take out one resistor here, so we are talking about the cut off frequency, so look, you supply the ground, now here it is 25 kilo ohm, here it is 5.2 kilo ohm,
+[28:53] then look, here 100 ohm is given, that is the method, dear, here you will have to put a voltage V and with this you will have to put I, okay?
+[29:07] Here GM V is required or you can do beta IB, I will do beta IB because in taking out such a resistor, this thing seems quite easy for me, this is 1 kilo ohm, okay?
+[29:25] This is 100 ohm, so 0.1, 5.2, 25 and this is IB, so look, the first thing we put KVL like this, so minus 25 IB, minus 5.2 IB, minus V equal to zero,
+[29:50] so IB is V upon 30 minus V upon 30.2, now here, dear, if you see in RE, how much current is coming, if you see in RE, I plus 1 plus beta IB, how much beta was given by the way?
+[30:12] 200 was given, yes, which is, if you take out V from here, 0.1 into IRE, that is, 0.1 I plus 20.1 IB, that is, 0.1 I minus 20.1 IB,
+[30:42] that is, 0.1 by 30.2 V, so V by I is given, see how much will come, 0.1 divided by 1 plus 20.1 divided by 30.2.
+[30:56] So, dear, look, from the side of the emitter, you have to work hard to remove the resistance, okay?
+[31:03] From the side of the emitter, the resistance you remove, you have to work hard in this, 0.06, so this is 60 ohm, okay?
+[31:16] Now, how much was the cutoff frequency given, brother, 10 hertz was given, CE was asked, 10 hertz is 1 by 2 pi, resistance 60 came, CE, so CE how much will it be?
+[31:34] 2.65, 265.25, or better, 0.265 millifarad, this is coming, tell me, is this what is being made?
+[31:52] Amit is saying, sir, the question of the cutoff of the boarday plot and opam is not made.
+[32:00] Look, in the boarday plot, the cutoff frequency is the same, the corner frequency is there and I will get the opam, then we will discuss, okay?
+[32:08] Look at the next one, VT, CE, CE pi, unity gain, IC is given, CMU is asked, so look, to remove CMU, you need GM, GM is IC by VT, so 1 by 26.
+[32:25] Now, FT, which is given, 400 megahertz, this will be GM by 2 pi, CE pi plus CMU, so look here, 400 megahertz, 1 by 26 divided by 2 pi, CE pi plus CMU, 0.3 plus CMU,
+[32:55] you take it in Pico, okay? So, see how much CMU comes, so what do you do from here, 10 to the power minus 12, so 1 by 26 divided by 2 divided by pi divided by 10 to the power minus 12 divided by 4 divided by 10 to the power 8.
+[33:18] So, CMU is coming from here, 15 Pico Farad, this is what you are also coming, tell me, 15 Pico Farad, this FT question is very common, if the question of high frequency response comes, then it will come only from the FT one and it is a pure formula based question, there is no question of mind in it.
+[33:39] Then look, GM, CE pi, CMU, FT and F beta are asking, this same question is done, this one is done, it is repeated, this is what we have just done, okay?
+[33:52] IC HFE AI at 10 mega radian per second, find CE pi plus CMU, AI current gain is given to you at 10 mega radian per second, it is asking you CE pi plus CMU.
+[34:12] Now the thing is, there is no unity gain, we have 100 beta here, I can say that current gain is beta, we do this, remember?
+[34:32] Let's do this, now this is given as 10, this is 100, 10 mega radian per second, okay?
+[34:59] So from here, you can get omega beta, that is, beta cutoff frequency, 99, then 10 to the power 14 or 10 to the power 7 by root 99 and approximately 10 to the power 6 will come.
+[35:20] Unity gain frequency will come like this, multiply by 100 and get 10 to the power 8 and this will be GM by CE pi plus CMU.
+[35:43] So CE pi plus CMU is GM by omega t, this is a good question, GM is there, IC upon VT, take VT 26 millivolts, it is not given, it is okay.
+[36:01] 10 to the power minus 1.92 nano farad, okay?
+[36:16] Okay, this is coming, do you understand how I did it?
+[36:21] Because look at this frequency, there is no gain 1 on it, if there was a gain 1 on it, then this would have become unity gain frequency, how much it gave, how much it gave, 10.
+[36:33] So I had to find out how much beta cutoff frequency is so that I can derive unity gain frequency.
+[36:41] Keep in mind that CE pi plus CMU will come with unity gain frequency, so you have to go around and reach unity gain frequency.
+[36:52] So first I took out beta cutoff and then what did I take out? Unity gain frequency.
+[37:00] EMT, COM, EDC, analog are left.
+[37:04] Son, I will say that you should record communication, Harsh.
+[37:09] EMFT, you should do EDC from Brahmastra Plus and you can also do analog from Brahmastra Plus, analog will make Dhandesar do well.
+[37:20] Yes, EMT, you should do EDC analog from Brahmastra Plus, record communication.
+[37:25] Because look, it's not like the time is over yet, it's been 3 months Harsh.
+[37:29] At least we think about December, so we have 3 months because you can do 4 subjects in 3 months easily, very easily.
+[37:37] Now come to the multi stage, RC coupled amplifier, the coupling capacitor limits the low frequency response.
+[37:46] The coupling capacitor affects the low frequency, right?
+[37:50] The low frequency affects the coupling capacitor and the internal and load capacitor affects the high frequency.
+[37:58] The bandwidth of an end stage tuned amplifier with each stage having a bandwidth B is given by, what will it be?
+[38:06] Which option will be the second bandwidth?
+[38:09] The bandwidth is scaled by so many factors, son, tell me quickly.
+[38:14] Come on everybody, what will be its bandwidth, how many factors will be scaled?
+[38:19] C, yes.
+[38:21] The bandwidth is approximately FH.
+[38:27] And you read the relation that the end stage FH is something like this.
+[38:37] Okay, something like this comes, right?
+[38:41] Next look, each transistor in the Darlington pair has HFE 100, overall HFE, how do you get it?
+[38:50] 1 plus HFE square, remember 1 plus beta square.
+[38:57] So 101 square, 100 plus 1 square is 100 square plus 1 square plus 2 into 100.
+[39:07] So 1,201, okay, which one will come? Approximately D will come.
+[39:16] Approximately D will come, correct?
+[39:21] 1 plus beta square, right?
+[39:25] How? Look here, if this is IB, overall HFE is asking, then 100 will come.
+[39:34] This is correct.
+[39:44] This will come.
+[39:47] Look here, this will come, 1 plus beta IB.
+[39:55] But from here, wait a minute.
+[40:04] HFE should be IC upon IB.
+[40:20] The final collector current is A, so it should be 100, 100, C.
+[40:31] Understand? The answer should be C.
+[40:33] Because HFE means IC upon IB, right?
+[40:37] So the collector current will come, right?
+[40:40] Do you understand what I am saying here?
+[40:42] The collector current will come.
+[40:45] Rudresh, look, the topic starting from Monday, FET is starting, JFET will start first.
+[40:51] It is a small topic, so you can start from Monday.
+[40:54] But remember that the 2-3 classes from Monday will be done by ESC, not by gate.
+[40:59] So MOSFET and JFET are related.
+[41:01] If you join from JFET, then it will also benefit from MOSFET.
+[41:08] Whatever will happen, make a daily ritual.
+[41:11] How many lectures are you watching daily?
+[41:13] For example, don't do more than 2 lectures per hour.
+[41:18] Pay more attention to practice, okay?
+[41:22] Darlington stage is asking you, trans conductance.
+[41:26] So look, GM is IC into C by VBEC, okay?
+[41:37] IC into C, this VBEC is the time of 2 VBEs, okay?
+[41:56] And the current of only the second transistor is 0.5 gm2.
+[42:03] I also derived this in the class, right?
+[42:05] Remember 0.5 gm2.
+[42:07] I basically said, look, the voltage is adding, the voltage is doubling.
+[42:13] But the current is only for the second transistor.
+[42:16] Whose is this?
+[42:18] This is for the second transistor.
+[42:20] And in the second transistor, when you do IC upon VBE, then it will give gm2.
+[42:27] So 0.5 gm2.
+[42:29] Next look, in the cascode amplifier shown, the cascode should be written.
+[42:34] Because this is a common emitter, this is a common base.
+[42:38] If the common emitter stage has a trans conductance gm1,
+[42:42] common base has gm2, overall trans conductance i0 by v1.
+[42:49] So look, this current i0, approximately this will also be i0.
+[42:54] So i0 upon vi, vi is equal to VBE.
+[42:59] i0 upon vi, this is the collector current of the first transistor.
+[43:07] And vi is equal to VBE1.
+[43:09] So gm1, remember I had done, alpha into gm1 comes.
+[43:13] And if alpha is considered as 1, then gm1 comes, okay?
+[43:18] If alpha is considered as 1, then gm1 comes.
+[43:21] As soon as the analog ends, I will start a new course.
+[43:25] That is Brahmastra batch.
+[43:27] Okay, so not before that.
+[43:29] Figure shows that two-stage amplifier transistor Q1 and Q2 are identical with current gain beta.
+[43:37] Beta AC and beta DC both are beta.
+[43:40] Often what happens is that current gain is slightly different in AC DC.
+[43:45] But he is saying that both have to take beta.
+[43:47] Xenar diode has a breakdown voltage of 10.7.
+[43:51] We will read the question carefully.
+[43:53] Assuming Xenar diode is in the breakdown region, okay?
+[43:57] Its dynamic resistance is zero.
+[44:00] This means that these two lines are combined and Xenar diode acts as a voltage source.
+[44:10] Acts as a battery.
+[44:13] Understood?
+[44:15] Because there is no resistance in it.
+[44:18] What is there in it?
+[44:20] There is a voltage that is Xenar voltage.
+[44:23] Amit, I said that the corner frequency in the body plot is cut off.
+[44:29] And I will do it in opamp when I do it.
+[44:31] Capacity C1 and C2 are large and provide zero impedance.
+[44:36] That is, you have to short C1 and C2.
+[44:40] The first question.
+[44:42] Identify configuration of each transistor.
+[44:47] Here is the circuit.
+[44:48] So look, the input is on the base.
+[44:51] The output is on the collector.
+[44:53] So this is the common emitter.
+[44:56] This is the common emitter.
+[45:01] The output of this is going to the other emitter.
+[45:04] There is input on the emitter.
+[45:06] There is output on the collector again.
+[45:08] There is a common base.
+[45:11] Common base.
+[45:14] So what is the connection?
+[45:16] Cascode.
+[45:18] Cascode.
+[45:20] Okay.
+[45:22] Cascode connection is done.
+[45:24] Determine quiescent quantities IC1 and VC2.
+[45:28] IC1 is here.
+[45:30] IC1 will be here.
+[45:32] VC2.
+[45:34] Okay.
+[45:37] So look, this is VZ.
+[45:41] Let's take blue.
+[45:43] This is 10.7.
+[45:49] And here it is written minus 10.
+[45:52] If 10.7 is added in minus 10, then this is 0.7.
+[45:57] Then 0.7 is subtracted here.
+[46:00] So VC1 is here.
+[46:02] VC1 is here.
+[46:04] Do you understand?
+[46:06] Look again.
+[46:07] It was minus 10.
+[46:09] 10.7 was added in this.
+[46:11] Zener's voltage is 0.7.
+[46:14] From base to emitter, the drop of 0.7 is VC1.
+[46:18] If this is 0.7, then you can subtract this from here.
+[46:24] 10 minus 0.7.
+[46:33] By 0.93 kilo ohm.
+[46:37] This is 10 milli ampere.
+[46:40] Okay.
+[46:41] But what is my goal?
+[46:43] What is the objective?
+[46:44] To subtract IC1 and VC2.
+[46:47] Now, I can't judge how much current is going in Zener.
+[46:52] 10 milli ampere is coming from here.
+[46:54] And I have this 0 volt.
+[46:58] What else can I do?
+[47:00] Look, there is also minus 10 here.
+[47:03] This will be 0.7.
+[47:06] If this is 0.7, then here it will be minus 9.3.
+[47:11] If minus 9.3 is here, then how much will come here?
+[47:19] From minus 9.3.
+[47:21] Current will come here.
+[47:23] Minus 10 milli ampere.
+[47:30] So, the base current has gone wrong.
+[47:50] I don't think 9.30 ohm should not be grounded.
+[47:56] I think it should be connected from here.
+[47:59] But no, it won't be possible from here.
+[48:02] Then this is 9.3.
+[48:11] The thing is, how will you subtract IC1?
+[48:13] Beta is late, but IV1 is not coming.
+[48:17] 10 milli ampere is coming, but the direction is wrong.
+[48:20] How can the BJT be on?
+[48:23] The current of the base should go inside.
+[48:26] My brother, the current of the base should go inside.
+[48:29] So, I am thinking that you put a resistance on the base here.
+[48:35] Do one thing, do one thing.
+[48:43] Okay, that's right.
+[48:46] The current will come like this.
+[48:48] What am I doing?
+[48:49] 10 milli ampere.
+[48:51] It will go from 0 to minus 9.3, right?
+[48:55] So, the first transistor of the base current is 10 milli ampere.
+[49:02] So, IC1 came from this.
+[49:05] 100 into 10 milli ampere, i.e. 1 ampere.
+[49:12] Now, this IC1 is IE for the other one.
+[49:18] This is IE for the other one.
+[49:23] And according to me, this 930 ohm should be 930 kilo ohm.
+[49:31] So, this current should be 10 micro ampere.
+[49:35] Because if the collector current is this big, then it will be wrong.
+[49:43] So, this 10 micro ampere should be 1 milli ampere.
+[49:52] So, IE2 is also 1 milli ampere.
+[49:57] Now, how much is the IC2 of this?
+[50:00] 1 into 100 by 101 beta by 1 plus beta.
+[50:06] Now, you can take out the VC2 from here by putting KVL on it.
+[50:13] 10 minus IC2 into 4 kilo ohm.
+[50:19] 10 minus 400 by 101.
+[50:25] 1010 is 610, but 101 is 66064, 97 and 8.
+[50:40] This is coming.
+[50:42] Okay?
+[50:43] Is this clear?
+[50:45] This should be 930 kilo ohm.
+[50:48] Otherwise, it will be wrong.
+[50:49] There will be a very high current.
+[50:51] This will be 1 milli ampere.
+[50:53] So, you understand that 4 kilo ohm will cross 4 kilo volt.
+[50:57] If this 1 ampere current comes, then it will be 4 kilo volt.
+[51:01] Derive an expression for voltage gain and find its value.
+[51:05] We had taken out the voltage gain.
+[51:08] We had taken out the voltage gain.
+[51:10] I will still derive it.
+[51:12] I will get the values straight away.
+[51:14] Look, the first stage is common emitter.
+[51:18] So, on the base, this resistance is 930 kilo ohm.
+[51:23] First, by transferring it.
+[51:28] Then, it will get the RPI here.
+[51:34] Ammeter will be grounded.
+[51:37] Here, IB will come.
+[51:42] Here, its collector will come, beta IB.
+[51:47] This will connect the second emitter.
+[51:50] You will show the resistance on its emitter, RE.
+[51:56] Here, its base will be grounded.
+[52:00] Why will the base be grounded?
+[52:02] Because you will show the Zener diode in a short circuit.
+[52:07] The base will be grounded.
+[52:11] You are considering the Zener diode as a battery.
+[52:15] So, you will show it in a short circuit.
+[52:17] This 4 kilo ohm will come between the collector and the ground.
+[52:21] Do you remember this model?
+[52:22] We had also made it for the cascode connection.
+[52:24] I had told you to put pi in one and T in the other.
+[52:34] So, to get the RPI, VT upon IB.
+[52:45] Have you given VT or thermal voltage?
+[52:47] Have you not given 26 millivolts?
+[52:52] By 10 microampere, 2.6 kilo ohm.
+[53:00] So, you will say, beta IB is VS upon RPI.
+[53:07] Then, you will say, beta IB is IE for the second transistor.
+[53:13] And V0 is minus alpha IE into 4K.
+[53:21] Minus alpha beta IB into 4K.
+[53:26] Now, if you put the value of IB, then V0 by VS will come.
+[53:31] Minus alpha beta 4K by 2.6K.
+[53:38] Alpha is beta upon 1 plus beta.
+[53:42] So, 100 by 101 into 100 into 4 by 2.6.
+[53:51] How much will it come?
+[53:53] Look at the voltage gain.
+[54:07] Now, the power systems are DPPs.
+[54:10] But, PYQ will also have to be made.
+[54:13] It will not work only with DPPs.
+[54:15] Is it clear?
+[54:16] Tell me.
+[54:17] Is this clear?
+[54:20] Tell everyone.
+[54:22] Now, is it clear?
+[54:23] Will you make the cascode connection, Darlington pair?
+[54:26] No big deal, dear.
+[54:28] And no need to remember the formula.
+[54:31] Just understand how the model is made.
+[54:33] This is the common base model.
+[54:35] This is the T model.
+[54:36] This is the common emitter model.
+[54:38] Now, come to the differential amplifier DPP.
+[54:43] In differential amplifier, CMRR can be used improved by increasing emitter resistance.
+[54:51] You know, RE increases.
+[54:54] So, common mode gain decreases.
+[54:57] With which CMRR increases.
+[55:02] Okay?
+[55:04] Next.
+[55:06] The differential voltage gain and common mode gain is given.
+[55:10] CMRR is asked by you.
+[55:12] CMRR is 20 log mod of AD by AC.
+[55:27] 20 log mod of AD.
+[55:36] So, see, it is given by default in DV.
+[55:46] C.
+[55:48] Okay?
+[55:49] Very good, Juhi.
+[55:51] Next.
+[55:52] V1, V2 is given.
+[55:54] CMRR is 1000.
+[55:56] What is the error in the differential output?
+[56:00] Sir, if we do it with a hybrid Pi model,
+[56:02] then the lower resistance will be 1 by GM2
+[56:05] not in cascode.
+[56:07] The lower one has only one resistance.
+[56:10] I don't understand.
+[56:11] The lower one has only one resistance,
+[56:13] 1 by GM2.
+[56:15] What are you trying to say?
+[56:18] CMRR.
+[56:19] This is not clear.
+[56:20] What are you trying to say?
+[56:24] Look here.
+[56:26] Ideally, your V0 should have been AD
+[56:31] into V0, V1 minus V2.
+[56:37] That is, it should have been 10AD.
+[56:42] Now, how much error will come?
+[56:44] Common mode.
+[56:46] AC.
+[56:49] There is so much change.
+[56:52] There is so much extra term,
+[56:54] which will be called an error.
+[56:56] So, 1000 AC.
+[57:00] Now, the percentage error
+[57:03] your change is coming,
+[57:07] means, how much error is coming?
+[57:09] The desirable output was 10AD
+[57:13] into 100.
+[57:15] Now, on the basis of CMRR,
+[57:18] we can say AD is 1000 AC.
+[57:22] If we put AD as 1000 AC,
+[57:25] then this will be 10%.
+[57:28] Okay? A.
+[57:32] The lower BJT.
+[57:34] So, you will show the whole thing in the lower BJT.
+[57:37] You will show a R Pi, a GMV Pi.
+[57:41] If the lower BJT is in cascode connection,
+[57:45] this is a common emitter.
+[57:47] So, here, this will come 930 KM.
+[57:50] A R Pi will come in parallel to this.
+[57:52] Similarly, this GMV Pi will come.
+[57:54] GMV Pi will be equal to IE.
+[57:58] So, why would this be just a 1 by GM resistance?
+[58:02] Tell me.
+[58:08] Okay?
+[58:09] In a single stage differential amplifier,
+[58:12] the output offset voltage basically is dependent
+[58:15] on the mismatch of
+[58:17] which mismatch depends on.
+[58:20] Tell me.
+[58:26] What are you saying? 100AD.
+[58:28] Okay, yes, this is 100AD.
+[58:32] You are right.
+[58:36] So, this is 1%.
+[58:39] The question of the output offset voltage
+[58:42] will be asked in O-Pamp.
+[58:44] What is the output offset voltage?
+[58:47] But it depends on VBE,
+[58:50] IBE and beta.
+[58:52] If you take input from the upper one,
+[58:55] then you will have to give the lower one.
+[58:57] The input is covered.
+[58:58] You will have to give the lower input.
+[59:00] Otherwise, the cascode will not remain.
+[59:02] Now, if you give input from the upper one,
+[59:04] if you ground the lower one,
+[59:06] then the RPI is gone.
+[59:08] So, if the VPI is also gone,
+[59:09] then from where will the 1 by GM be saved?
+[59:11] If you ground the base of the lower one,
+[59:14] Kuhar, understand this.
+[59:16] If this terminal is grounded,
+[59:18] the input will be placed in the upper one,
+[59:20] then this RPI voltage is zero.
+[59:22] So, if the GM VPI is zero,
+[59:24] then where did the GM be saved?
+[59:26] Do you understand?
+[59:27] The input is either one or two,
+[59:29] or in the lower one.
+[59:30] If it is given in the upper one,
+[59:31] then I will say the cascade connection.
+[59:33] Look, what is the meaning of the offset voltage?
+[59:35] What is the meaning of the offset voltage?
+[59:37] When both the inputs are the same,
+[59:40] when the differential input is zero,
+[59:43] then also the output comes.
+[59:45] Despite the differential input being zero,
+[59:47] the output comes.
+[59:48] Why?
+[59:49] Because of the common mode.
+[59:51] Why?
+[59:52] Because of the common mode.
+[59:53] And why is the common mode gain?
+[59:55] Because there is a mismatch
+[59:57] between the two transistors.
+[59:59] There is a mismatch between
+[60:01] VBE, IB and beta.
+[60:04] Look at the next one.
+[60:05] Difference amplifier is shown.
+[60:07] Transistors Q1, Q2 have identical parameter.
+[60:10] VBE is given.
+[60:11] Beta is given.
+[60:12] VS1, VS2 both are zero.
+[60:14] Collector current is given.
+[60:16] It is talking about DC biasing.
+[60:19] So, from here,
+[60:20] apply KVL.
+[60:23] Zero
+[60:25] minus 0.7
+[60:27] Current is given here.
+[60:29] IE
+[60:31] minus 14.3
+[60:33] IE
+[60:35] is equal to minus 15.
+[60:43] So, IE1
+[60:46] IE2
+[60:49] is 0.5 milliampere.
+[60:51] Half-half increases, right?
+[60:53] So, IC1
+[60:55] 0.5 into beta
+[61:02] by 1 plus beta.
+[61:03] Approximately 0.5 will be given.
+[61:06] I have also analyzed the DC.
+[61:10] Do you understand?
+[61:11] Collector current is of one transistor.
+[61:13] Half will be given.
+[61:16] So, all your assignments are done.
+[61:19] From Monday, we will start JFET.
+[61:22] So, you will enjoy a lot in FET as I said.
+[61:25] Till Monday, these videos are public.
+[61:27] Whatever you have to take care of,
+[61:29] whether it is diode or BJT,
+[61:30] you can cover it.
+[61:31] There are total 34 videos.
+[61:33] There is a content of around 55-56 hours
+[61:36] which is still covered.
+[61:37] Then, we will go to the next FET unit.
+[61:40] You can also apply PYQ from here.
+[61:42] Analog.
+[61:43] I have made electrical EC
+[61:45] for both the PYQ.
+[61:47] Go to gate PYQ by AIR1.
+[61:49] You apply diode and BJT.
+[61:52] If you want to join the academy,
+[61:54] there are plus and iconic two offerings.
+[61:56] There are top teachers in both.
+[61:58] Whatever is taught in the class,
+[62:00] is available in the form of study material digital notes.
+[62:02] Vijesh, put it again.
+[62:04] Look, I have opened the link yesterday.
+[62:06] This is opening.
+[62:08] I think you must be writing ankit-ESC-PS.
+[62:11] It is closed.
+[62:12] Write ankit-PS.
+[62:14] Test series is included.
+[62:16] Children with iconic,
+[62:18] get custom doubt solving.
+[62:19] If you get a doubt in a new question,
+[62:21] then its video solution.
+[62:23] You will get printed notes for the house.
+[62:25] You will get 1-1 live mentorship.
+[62:27] Strategy and study plan will be made.
+[62:30] Open house session will be interactive.
+[62:33] Okay.
+[62:34] What do you have to do here?
+[62:38] When you want to join the academy,
+[62:41] then apply ankit-ESC to get maximum discount.
+[62:45] And to get my personal guidance.
+[62:48] Ankit, wait for 2 minutes.
+[62:50] I will show you.
+[62:51] Okay.
+[62:52] And look here.
+[62:53] If you see the result,
+[62:55] we have produced 6 ranks in top 10 last year.
+[62:58] You can also be one of them.
+[63:00] You just have to join the academy using the code
+[63:03] Ankit-ESC.
+[63:05] And if you have a financial issue,
+[63:07] you can go for EMI.
+[63:09] Where you can pay monthly fees.
+[63:11] But you will not find any interest on it.
+[63:13] Don't worry.
+[63:14] And this EMI is approved in just 2 hours.
+[63:17] Here, it is a minimum paperwork.
+[63:19] You just have to apply your basic card and a pan card.
+[63:22] You can repay in a flexible tenure.
+[63:25] EMI.
+[63:26] Okay.
+[63:27] How many years have you done?
+[63:28] But give a basic card and a pan card to a person in your family
+[63:31] whose salary comes.
+[63:32] Because EMI quickly allocates the bank.
+[63:35] So, my dear.
+[63:36] Brahmashra Plus batch has started.
+[63:38] In which Dhandesar has taken the strategy session.
+[63:40] You are getting a daily doubt solution for its USPs.
+[63:44] You are getting a daily practice through DPP.
+[63:47] You are getting live classes.
+[63:49] You are getting a strategy session.
+[63:51] There is study material.
+[63:52] There are notes uploaded on the web.
+[63:54] The test series of Top Educator.
+[63:56] Paramount Study Material.
+[63:57] Gate Academy Workbook.
+[63:59] Gate Academy Previous Year Question.
+[64:01] You are getting all these things.
+[64:03] What are you getting in Brahmashra batch, dear?
+[64:05] Course Completion by Top Educator.
+[64:07] But all these facilities.
+[64:09] Doubt, Strategy, Motivation, PYQ, Workbook.
+[64:13] Paramount Study Material.
+[64:14] All of these are part of Brahmashra Plus.
+[64:18] And you saw that we have launched a 4 month subscription.
+[64:21] So, those who want to prepare for Gate 23.
+[64:24] They can join for 4 months.
+[64:26] And you will have to put a code here.
+[64:28] Ankit ESE.
+[64:29] And this is my telegram channel, dear.
+[64:31] Stay connected so that you do not miss any lecture from you.
+[64:34] You will get detailed information here.
+[64:37] And if you want PDF of this session.
+[64:40] Then go to the community.
+[64:42] You will find the Academy App community on the homepage.
+[64:45] Discover there.
+[64:46] I will find it in Discover.
+[64:48] All the PDFs are there.
+[64:49] Thank you, everyone.
+[64:50] Now I will show you the link.
+[64:53] Your query.
+[64:57] Yes, look.
+[64:59] First of all, whose query was it?
+[65:07] Look.
+[65:09] Here is the link of Power System.
+[65:11] You are saying that the link is not open.
+[65:13] Here are all the videos.
+[65:15] You do not even check.
+[65:16] I will write the link.
+[65:18] But you do not check.
+[65:19] You have to refuse first.
+[65:22] This is the problem, my brother.
+[65:24] How should I do it?
+[65:25] You do not even check.
+[65:26] You do not even understand.
+[65:32] Look at this special glass link.
+[65:34] Look at this special glass link.
+[65:39] Okay.
+[65:40] We will log in from Gmail.
+[65:50] Look, it will take some time to load.
+[65:52] Because it is a very big page.
+[65:56] What happened?
+[66:04] Now look, it is open.
+[66:06] Okay.
+[66:07] Now look at this.
+[66:08] If you want to practice.
+[66:10] So here is a series.
+[66:12] Concept through question.
+[66:14] Okay.
+[66:15] Concept through question.
+[66:16] You will go in this.
+[66:17] Look, the question of network is the question of signal.
+[66:20] The question of measurement.
+[66:21] Okay.
+[66:22] The question of network signal measurement.
+[66:24] If you want to use PYQs.
+[66:26] Then you have to use PYQs.
+[66:28] Okay.
+[66:29] If you want to use PYQs.
+[66:31] Then you have to use PYQs.
+[66:33] So the PYQ playlist is here.
+[66:36] Here it is.
+[66:37] Gate PYQ by IR1.
+[66:39] Look at this.
+[66:40] Network, Analog, Machine, Power System, Power Electronics, EMT.
+[66:44] You will get the link of all these PYQs.
+[66:48] So you can access PYQ from here.
+[66:50] Okay.
+[66:51] So all this material is already available.
+[66:54] You just have to access it.
+[66:56] It is free of cost.
+[66:57] Okay.
+[66:58] Who was the second child?
+[67:00] Vijesh.
+[67:02] Okay.
+[67:03] Let's go then.
+[67:04] Then we will meet on Monday.
+[67:05] You will come on Monday.
+[67:07] You will complete this BJT diode and come.
+[67:09] And we will go towards a new unit.
+[67:11] That is FET.
+[67:12] Thank you.

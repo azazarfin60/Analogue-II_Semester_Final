@@ -1,0 +1,1334 @@
+Title: Lakshya Batch 2.0 | Analog Electronics | Feedback Amplifiers | Part- 2 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=yNgqhsEAAnE
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone. Very good morning to all of you and welcome back to the Creatrix YouTube channel.
+[00:05] My dear friends, we are live again in Lakshya Batch 2.0 for Analog Electronics.
+[00:12] So, in Analog, we started the feedback amplifier yesterday.
+[00:16] Today, we are going to continue the same discussion.
+[00:20] We are going to see the remaining three topologies in feedback amplifiers.
+[00:24] You might remember that yesterday, I made you a topology.
+[00:28] That was the voltage series feedback, right?
+[00:31] The voltage series feedback that I made you yesterday, which was in a voltage amplifier.
+[00:37] Now, we will see the remaining three topologies.
+[00:39] Voltage shunt, current series and current shunt.
+[00:42] So, we are going to see these three topologies in this lecture.
+[00:45] And at the end of this lecture, I am going to tell you how topology is recognized, right?
+[00:51] So, first of all, you will see what is the effect of gain from topology.
+[00:55] What is the effect of input resistance?
+[00:57] What is the effect of output resistance?
+[01:00] Then, when I give you a practical amplifier, which is made from BJT, MOSFET or O-PAMP.
+[01:06] So, how do you recognize it by looking at it?
+[01:09] What kind of a topology is it?
+[01:11] Okay?
+[01:12] So, let's start today's discussion. Are you ready, everyone?
+[01:15] Hit the like button once quickly.
+[01:19] Come on, everyone.
+[01:20] Hit the like button quickly.
+[01:22] Mark the attendance so that we can move ahead.
+[01:29] Sir, the question of diode with capacitor is not able to be turned into PY.
+[01:32] Because what should we do?
+[01:33] Deepu, look at the lecture of Clamper once again.
+[01:36] Okay, make the DPP of Clamper once again.
+[01:39] It will start to be done according to me.
+[01:40] Because all the children who have attended the series of seriously analog,
+[01:44] they are now able to solve the problem.
+[01:46] So, it is possible that instead of one topic, you have to revise twice.
+[01:51] But it will be done.
+[01:52] Sir, there is no question in the live.
+[01:54] What to do?
+[01:54] Look at the recorded.
+[01:55] I think it will be done in the recorded.
+[01:56] What else will happen?
+[01:58] Let's talk weird.
+[01:58] Brother, if there is no question in the lecture in the live class,
+[02:02] it's not a big deal.
+[02:03] Whether the DPP is being made at home or not, it matters.
+[02:07] The question I get in the class is not because I can check if it will be made by you or not.
+[02:12] I get a question in the class to tell you that
+[02:15] how the question is framed in the gate on this topic and how to tackle that question.
+[02:21] Then after learning all those methods, when you go home and ask questions, they should be made.
+[02:25] Okay, if they won't be made, then it is a problem.
+[02:28] Let's start today's discussion.
+[02:32] Yes, so now we are coming to Shunt Shunt feedback.
+[02:36] Shunt Shunt means that when you took Shunt here, dear,
+[02:41] when you took Shunt here, you put it parallel, right?
+[02:46] Parallel means that you sampled the voltage, you picked up the voltage here.
+[02:54] And here Shunt means that it was mixed in Shunt.
+[02:59] Shunt means that it was mixed in parallel.
+[03:03] So what will you say here?
+[03:04] You will call it current mixing.
+[03:07] You will call it current.
+[03:10] Mixing, okay?
+[03:13] So you sampled it in Shunt and you mixed the current.
+[03:19] Now here it means that there is current on the input side and voltage on the output side.
+[03:24] Okay, when there is current on the input side and voltage on the output side,
+[03:28] then it is basically a trans-resistance type of an amplifier.
+[03:34] Do you understand what I am saying?
+[03:36] There is current on the input side and voltage on the output side,
+[03:39] so how is the amplifier?
+[03:40] Trans-resistance amplifier.
+[03:43] Now look, if you draw the model of the trans-resistance amplifier,
+[03:49] then what is the model?
+[03:55] This is the input resistance.
+[03:59] And here you have to show the voltage.
+[04:04] So a dependent voltage source and an output resistance in the series.
+[04:11] This is your trans-resistance amplifier.
+[04:15] Rn, in, this is rm into in, this is r0, okay?
+[04:30] Now what will you show here, dear?
+[04:32] That here this if is, if is beta v0, which means the unit of beta will be m, okay?
+[04:46] What will be the unit of beta?
+[04:48] m.
+[04:48] So actually what happens is that the amplifier is the unit of gain,
+[04:52] the unit of beta is always reversed.
+[04:55] If the gain is unitless, then beta will also be unitless.
+[04:58] If the gain is in your ohms, like the trans-resistance,
+[05:02] then the gain of this is in the ohms.
+[05:06] So what will be the unit of beta in this?
+[05:08] It will be m, that is opposite of the gain.
+[05:11] Always beta is opposite of the gain because it is converting the current to voltage
+[05:17] and it is converting the voltage back to current, so it is going reverse.
+[05:21] That is why the unit is also reversed.
+[05:24] Now what do we have to do, dear?
+[05:25] We have to make a complete model of this entire feedback amplifier,
+[05:30] in which we have to show feedback and we have to use the model of the trans-resistance amplifier.
+[05:36] Okay?
+[05:37] So what do we do now?
+[05:41] So first of all, make a model of the trans-resistance amplifier here.
+[05:51] Okay?
+[05:55] So, Rm, In, R0.
+[06:09] Now see what you have to show on the output side.
+[06:13] On the output side, you have to show a load resistance.
+[06:19] Rl, this will be your V0.
+[06:23] Okay?
+[06:24] Now on the input side, you can call this Ri, you can call it In here.
+[06:34] On the input side, you will make a current source, a dependent current source.
+[06:43] Like this.
+[06:43] This will be beta V0.
+[06:47] Okay?
+[06:49] Okay?
+[06:50] Now here you will connect an external current source.
+[06:55] The resistance of the external current source is always parallel to it.
+[06:59] A practical current source is like the voltage source in the resistance series,
+[07:06] the current source is parallel to it.
+[07:08] And what is this beta V0, what is this feedback telling you?
+[07:12] What is this beta V0 telling you, what is this feedback telling you?
+[07:15] So, this is how you connected with this type.
+[07:18] The feedback is always shown on the input side like a dependent source.
+[07:25] That is how you represent feedback in a model of amplifier.
+[07:31] Now here, where did we start yesterday?
+[07:33] KVL was put in the input loop.
+[07:35] First of all, I had to remove Rn.
+[07:38] So, here I say that if this is the ground
+[07:45] and this is the voltage Vn, okay?
+[07:49] So, we say Is minus beta V0 is equal to Vn by Rs
+[08:01] plus Vn by Ri.
+[08:05] This happened.
+[08:07] Now what can you write V0?
+[08:10] Rm, iin into Rl by R0 plus Rl.
+[08:19] So, the factor of the voltage division is included in the gain.
+[08:24] You do it like this, Rml, iin, okay?
+[08:29] What does Rml mean here?
+[08:31] Okay, this means Rm into Rl by R0 plus Rl.
+[08:43] Did you understand this?
+[08:45] This Rml is done, okay?
+[08:47] If this Rml is done, then what will you do here?
+[08:51] Okay, Is minus beta Rml, iin is Vn by Rs.
+[09:11] Now, write iin as Vn by Rn and take it to the right-hand side.
+[09:22] Take the term iin as Vn by Rn.
+[09:30] So, this will be 1 plus beta Rml.
+[09:34] So, the total term with Vn has come, right?
+[09:39] Rn with feedback.
+[09:42] Or you can say Rif, okay?
+[09:48] Why did I do Rn here?
+[09:50] This was Ri, right?
+[10:00] Rif is Ri upon 1 plus beta Rml.
+[10:06] So, less than Ri, right?
+[10:09] So, the input resistance has gone down.
+[10:11] There was also a need to happen, there is a shunt here.
+[10:14] Where there is a shunt connection, that will basically reduce the current.
+[10:20] How did beta Vn take the current?
+[10:22] Look here, how much current will this feedback network give?
+[10:25] Ravi, the feedback took the input Vn and is giving the output Iif.
+[10:30] And the gain of this feedback is beta.
+[10:33] So, output by input is equal to beta.
+[10:37] So, Iif is beta Vn.
+[10:40] Is this clear?
+[10:41] And how did you do the downward?
+[10:43] Why did you show the downward?
+[10:45] So that the current going to the input reduces, supply minus beta Vn.
+[10:51] Negative feedback, right?
+[10:53] So, your current should be reduced.
+[10:55] If there was positive feedback, then I would have shown it to the upper side.
+[10:58] That IIS is supporting it.
+[11:01] Not that it should be opposed.
+[11:03] Okay, brother?
+[11:04] The thing has been cleared up to this point.
+[11:10] Now, see, if we solve it on the output side.
+[11:14] What is Vn?
+[11:17] Rm.
+[11:21] Iin.
+[11:23] Minus I0.
+[11:26] R0.
+[11:27] And how can you take this Iin out of the current division?
+[11:31] Is minus beta V0 into current division.
+[11:41] If you take out the current of Rn, then it will be RS upon RS plus Rn.
+[11:47] So, V0 is Rm into a voltage, sorry, the factor of current division.
+[11:59] Is minus beta V0 minus I0 R0.
+[12:06] Now, this will be Rmsis minus Rms beta V0 minus I0 R0.
+[12:21] So, collect the terms of V0 on one side, dear.
+[12:26] 1 plus Rms beta Rmsis minus I0 into R0.
+[12:39] So, from here, what is V0?
+[12:42] Rms by 1 plus Rms into beta Is minus I0 R0 by
+[12:56] 1 plus Rms beta.
+[12:59] Now, the term with I0 has basically become output resistance with feedback.
+[13:07] What has become of your output resistance with feedback?
+[13:13] This has become ROF is R0 by 1 plus Rms beta.
+[13:28] Now, this has also become less because the output was also shant, so the resistance should have been less.
+[13:35] The output was also shant, so the resistance should have been less.
+[13:40] And here, what you have Rms is the factor of the factor of the current division of the gain into the source.
+[13:52] RS by RS plus Rn.
+[13:58] Okay, tell me this clear, how are we seeing this clear?
+[14:04] Look, I had told you this clear yesterday.
+[14:07] I had told you this clear yesterday that even the shant series knows whether the resistance will increase or decrease.
+[14:12] Today, I am going to derive it and show you.
+[14:14] I had asked a question on this yesterday.
+[14:16] Right?
+[14:23] Do you remember the shortcut?
+[14:24] Good, right?
+[14:26] This is a very small topic.
+[14:29] Okay, let's move on to the next one.
+[14:31] Series, series, feedback.
+[14:32] Now, you are understanding from the name that it is a series on both sides.
+[14:35] So obviously, what will happen here?
+[14:38] Your resistance should increase on both sides here.
+[14:42] Now, there is a series on the output.
+[14:44] If you put feedback in the series, it means current sampling.
+[14:52] Right?
+[14:54] Current sampling.
+[14:56] The meaning of the series in the input is that your voltages are being added.
+[15:03] So, this will be called as the voltage mixing.
+[15:08] Voltage mixing.
+[15:11] Okay?
+[15:12] So, the series is here, meaning current sampling.
+[15:15] If the series is coming in the input, then voltage mixing.
+[15:19] Okay?
+[15:20] Now, the input that is coming in the feedback is I0.
+[15:25] And the output that is going is Vf.
+[15:28] So, Vf is beta I0.
+[15:31] That is, the unit of beta is Ohms.
+[15:35] Because it is a transconductance amplifier whose unit is Siemens.
+[15:41] Right?
+[15:41] The input side is voltage, the output side is current.
+[15:45] So, what happened to the amplifier?
+[15:46] Transconductance amplifier whose gain will be in Siemens or you can say in Mo.
+[15:53] So, that is why the gain of beta will be of the opposite unit, of Ohms.
+[15:58] Now, if a transconductance amplifier is shown, then we have to see the voltage on the input side.
+[16:08] And we have to see a current source on the output side.
+[16:17] The resistance comes in parallel to the current source.
+[16:23] R I, V I, I I, this is GM, V I, R0.
+[16:40] This is what will happen.
+[16:42] Now, what do I have to do, dear?
+[16:44] This amplifier is a simple transconductance amplifier.
+[16:49] We have to put a source in it, put a load in it and what we have to put together, one more.
+[16:56] We have to put one in it, feedback.
+[17:00] We have to put one, feedback.
+[17:01] So, we have to connect three things, source, load and feedback.
+[17:06] Now, see, we will make this model.
+[17:10] First, make a simple transconductance amplifier.
+[17:14] Now, I will connect the rest of the components later.
+[17:20] Now, this is R I, V I, I I, GM, V I.
+[17:45] I I, GM, V I, R0.
+[17:54] Now, see, what will you put first on the load side, brother?
+[17:59] One load resistance.
+[18:02] Correct.
+[18:03] One load resistance came on the load side, RL.
+[18:07] What else will you put?
+[18:08] You have to put a feedback on the input side and put a voltage source.
+[18:13] So, see, this is the voltage source.
+[18:19] Now, the feedback element from the voltage source should be connected to the polarity so that it is subtracted.
+[18:29] ULTIPOLARITY.
+[18:31] And it will be written as beta I0.
+[18:35] Here is your I0.
+[18:38] See, beta I0, this is done, this is done, VS, this is done, RS.
+[18:44] Got it?
+[18:45] You will connect ULTIPOLARITY to VS, a dependent source of beta I0.
+[18:52] Now, again, what do we want?
+[18:54] Input resistance with feedback and output resistance with feedback.
+[18:59] We know about gain, right?
+[19:00] One by A beta becomes.
+[19:02] We have studied about gain well.
+[19:05] We have to read input and output resistance.
+[19:08] So, we are saying that if KVA is put in the input loop, VS minus beta I0 is II, RS plus II, RI.
+[19:24] Now, how can we remove I0, dear?
+[19:27] Now, from the current division, GmVi into R0 by R0 plus RL.
+[19:37] Now, you write it as GmLVi.
+[19:42] What happened to GmL?
+[19:45] It is GmR0 by R0 plus RL.
+[19:53] This is done.
+[19:54] Got it?
+[19:55] Now, you write VS, II, RS plus II, RI plus if you take it from beta, then beta GmLVi.
+[20:13] Can you write VI into RI again?
+[20:17] See in the network, on the left hand side, if you write VI into RI, then IIRI will be common.
+[20:25] This will be 1 plus GmL beta.
+[20:29] So, if you look at the IIRI term overall, then you can say input resistance with feedback.
+[20:42] Input resistance with feedback, RIF.
+[20:47] 1 plus GmL beta.
+[20:59] Got it?
+[20:59] This is done.
+[21:00] And this will be increased, which you said that there should be increased resistance in the series.
+[21:06] Here it is increased.
+[21:08] Isn't it?
+[21:09] Is this clear?
+[21:11] Now, I want the output side.
+[21:13] For the output side, what do I say?
+[21:18] How will you write I0?
+[21:20] If you want to write on the output side,
+[21:25] to take out R0, see the output side is mentioned.
+[21:31] So, you can write I0 is GmVi minus V0 by R0.
+[21:40] Now, see how much VI is there?
+[21:44] You combined two voltage sources.
+[21:48] And then you put a voltage division.
+[21:51] You combined two voltage sources and put a voltage division.
+[21:57] So, I0 is Gm into a voltage division factor.
+[22:05] With this, Vs minus beta V0 minus V0 by R0.
+[22:17] So, I0 is GmsVs minus Gms beta V0 minus V0 R0.
+[22:30] Wait a second.
+[22:31] GmVi, we took out VI like this.
+[22:36] Beta I0 actually.
+[22:38] We wrote it wrong.
+[22:40] This is beta I0.
+[22:46] I feel that things are not being added up anywhere.
+[22:51] Now, if you connect I0 to V0 or I0 to the left-hand side,
+[23:00] the terms of I0.
+[23:02] So, 1 plus Gms beta is GmsVs minus V0 by R0.
+[23:14] Now, if you take the coefficient of I0 down,
+[23:18] it will become Gms by 1 plus Gms beta Vs V0 by R0 1 plus Gms beta.
+[23:38] Now, what does this mean?
+[23:40] The term below I0 that represents output resistance with feedback.
+[23:58] R0 1 plus Gms beta.
+[24:06] Clear?
+[24:08] Supriya, when the analogue ends, we will start.
+[24:16] I am not discussing about this now.
+[24:18] Let this topic end once.
+[24:20] The analogue is almost at the ending stages.
+[24:24] We will discuss about it well.
+[24:26] I am going to make a lot of crash courses on YouTube.
+[24:30] All of you tell me if it is clear so far.
+[24:34] So, this resistance is more than your R0.
+[24:40] So, you said that if both the sides are series,
+[24:44] then you will always have the higher resistance.
+[24:48] Ravi, look at the standard circuit.
+[24:52] Current source direction is always shown upwards.
+[24:54] And the polarity of the voltage source is also shown plus and minus.
+[24:58] Suppose the actual circuit of BJT and Mosfet should be down.
+[25:04] So, I will put Gms negative here.
+[25:08] Clear?
+[25:10] So, this is the standard circuit.
+[25:14] This is the standard circuit.
+[25:16] The polarity of the voltage source in the standard circuit is plus and minus.
+[25:20] And you will show the current source upwards.
+[25:24] Now, I am not saying how this circuit is made.
+[25:26] This circuit is made of opamp, this is made of BJT, this is made of Mosfet.
+[25:30] I am not saying all this.
+[25:32] I am just saying that this circuit is made of you.
+[25:34] My brother, what did I say?
+[25:36] Before the lecture is completed, I don't want to ask anything.
+[25:40] What should I remember? I will tell you what should I remember.
+[25:42] But this is different.
+[25:44] Now, let's come to the last case.
+[25:48] Shunt series feedback.
+[25:50] That is, you are taking series on the output side.
+[25:54] If the feedback is in the series, then who are you sampling the current?
+[26:02] Okay?
+[26:04] And if the input side is shunt, then it is parallel.
+[26:10] Then the mixing is also current.
+[26:12] That is, the current on the input and the current on the output.
+[26:16] So, what is in the middle?
+[26:18] Current amplifier.
+[26:20] The gain is unitless.
+[26:22] Current upon current is unitless.
+[26:26] And the gain of the feedback is also unitless.
+[26:30] Now, what is this taking?
+[26:32] I0 in the input.
+[26:34] And what is this giving?
+[26:36] If in the output.
+[26:38] So, you will write If as beta I0.
+[26:42] Beta I0.
+[26:46] The point of Deepankar is that we amplify AC with Amplifier.
+[26:50] So, the polarity will be reversed after every half cycle.
+[26:54] That is fair.
+[26:56] But what I am showing directions and polarities are standard.
+[27:00] They are not dependent on your amplifier.
+[27:02] It is made from BJT and MOSFET.
+[27:04] This does not matter.
+[27:08] Okay?
+[27:10] Now, see how the current amplifier circuit will be shown.
+[27:14] You have to see the current on the input side.
+[27:20] And what do you have to show on the output side?
+[27:24] Current source.
+[27:38] Okay?
+[27:40] Here it is.
+[27:48] Here it is.
+[27:50] Isn't it?
+[27:52] Here it is.
+[27:54] So, dear, it is not like this.
+[27:56] Rajput, if you want to study, you have to do the whole process.
+[27:58] Because after all, you have to prepare.
+[28:00] Whatever happens is common for all children.
+[28:02] So, how will we go to do it separately for each child?
+[28:06] Sir, I want to study analog.
+[28:08] So, put the entire analog public for me.
+[28:10] When the analog public will be shown, then read it.
+[28:14] Now, what do we have to do, dear?
+[28:16] This circuit is of a simple current amplifier.
+[28:20] Now, we have to connect source and load in this circuit.
+[28:26] And what do we have to connect?
+[28:28] Feedback.
+[28:30] We have to connect source and load.
+[28:32] And we have to connect feedback in it.
+[28:34] So, again, first we will do this.
+[28:36] First, we will make the circuit of current amplifier.
+[28:56] And see, from tomorrow, your last topic will start.
+[29:00] Gate syllabus, which is Oscillators.
+[29:02] Which topic will start?
+[29:04] Oscillators.
+[29:14] And I am thinking to tell you one thing.
+[29:16] Should we apply a class on Sunday as well?
+[29:18] If we apply a class on Sunday, then the Sunday Oscillator will be over.
+[29:22] I need two classes in the Oscillator.
+[29:26] I mean, there are only two estimates so far.
+[29:28] If needed, we can apply three as well.
+[29:30] But as far as I am concerned, it should be done in two.
+[29:38] Now, see, here is your Beta I0.
+[29:42] This is the feedback.
+[29:44] Here, you will have a current source.
+[29:50] So, this is IS.
+[29:54] And it is parallel to RS.
+[29:58] Okay?
+[30:00] And here is the tie.
+[30:02] You will see the RL.
+[30:04] Whose across voltage is V0.
+[30:08] And current is I0.
+[30:12] Okay? Is this clear?
+[30:14] Is this clear?
+[30:16] It is a mega quiz.
+[30:18] How many times did you give it?
+[30:22] Not before 11.5.
+[30:28] Tell me.
+[30:30] Now, if we talk about the input side,
+[30:34] what can we say here?
+[30:38] What?
+[30:40] IS minus Beta I0.
+[30:44] I am applying KCL on the input side.
+[30:46] VI by RS plus VI by RI.
+[30:52] Now, how will you write I0?
+[30:56] AI
+[30:58] II
+[31:00] N2
+[31:02] R0
+[31:04] by R0 plus RL.
+[31:08] That is, AIL
+[31:10] II
+[31:12] AIL, what will happen now?
+[31:18] AI
+[31:20] R0 by R0 plus RL.
+[31:26] Okay?
+[31:30] Is this clear?
+[31:32] Now, what will we do here?
+[31:36] IS minus
+[31:38] AIL
+[31:40] Beta
+[31:42] N2 I0
+[31:44] Beta I0.
+[31:48] Wait a second. AIL into Beta II.
+[31:56] Is VI by RS
+[31:58] plus VI by RI.
+[32:04] From here, IS will be
+[32:06] written.
+[32:12] Now, this II is written as VI by RI.
+[32:14] So, it will be common.
+[32:18] This II term, take it to the right-hand side
+[32:22] and write VI upon RI.
+[32:24] Now, you can say input resistance
+[32:28] with feedback.
+[32:30] Input resistance
+[32:32] with feedback.
+[32:34] RI
+[32:36] F
+[32:38] is RI
+[32:40] upon
+[32:42] 1 plus AIL
+[32:44] Beta.
+[32:46] Which should have
+[32:48] reduced input resistance
+[32:50] because the input side is
+[32:52] shunt.
+[32:54] If the input side is your shunt,
+[32:56] then your input resistance
+[32:58] is reduced. Is this clear?
+[33:00] So, input resistance reduces
+[33:02] due to shunt connection.
+[33:04] And if you go to the output side,
+[33:06] then what will you write?
+[33:10] I0
+[33:12] equal to
+[33:14] AIII
+[33:18] minus
+[33:20] V0 by R0.
+[33:24] Okay?
+[33:26] How can you write AII?
+[33:28] AII
+[33:30] can write
+[33:32] IS
+[33:34] minus Beta I0
+[33:36] into
+[33:38] current division
+[33:40] RS by
+[33:42] RS plus RI.
+[33:44] So, if you
+[33:46] put it here,
+[33:48] then the factor of
+[33:50] current division with AI
+[33:52] is associated with it.
+[33:54] It is written as
+[33:58] AIS.
+[34:00] So,
+[34:06] AIS
+[34:08] into IS
+[34:10] minus AIS
+[34:12] Beta
+[34:14] I0
+[34:16] minus V0
+[34:18] by R0.
+[34:20] Now, write the terms of I0 together.
+[34:24] On the left-hand side,
+[34:26] write it together.
+[34:28] 1 plus AIS
+[34:30] Beta
+[34:32] is AIS into
+[34:34] IS.
+[34:36] Now, if you divide
+[34:38] the coefficient of I0
+[34:40] by this, then you can say
+[34:42] that I0 is
+[34:44] AIS
+[34:48] 1 plus AIS
+[34:50] Beta
+[34:52] into IS
+[34:54] and V0 by
+[34:58] R0
+[35:00] 1 plus AIS
+[35:02] Beta.
+[35:04] So, what does this mean?
+[35:06] The output
+[35:08] resistance with feedback
+[35:10] has increased because
+[35:12] the output side series was there.
+[35:16] So, the thing that I was
+[35:18] telling you directly yesterday,
+[35:20] we have derived the same thing today.
+[35:22] So, we have not seen
+[35:24] such a thing that
+[35:26] we had no idea about.
+[35:28] We already knew that this has to happen.
+[35:30] We have just derived it
+[35:32] circuit and mathematically.
+[35:34] Isn't it?
+[35:36] So, this has increased from R0
+[35:38] because the output had a series connection.
+[35:40] So, look, the changes
+[35:42] in the resistances in every amplifier
+[35:44] are being done in a desirable way.
+[35:46] In the current amplifier,
+[35:48] the only difference is that
+[35:50] the input resistance is less
+[35:52] and the output resistance is higher.
+[35:54] So, we have benefited from the feedback
+[35:56] that we had to keep the input resistance
+[35:58] less and keep the output more.
+[36:00] We have achieved that.
+[36:02] So, what is the meaning of the feedback?
+[36:04] The value of your resistances
+[36:06] is being adjusted in this way
+[36:08] that you are able to get
+[36:10] the desired result.
+[36:12] Do you understand the matter?
+[36:14] Do you understand the matter?
+[36:16] What happened?
+[36:18] If you have a voltage-controlled
+[36:20] voltage source,
+[36:22] what will we call it?
+[36:24] We will call it voltage amplifier.
+[36:26] We will call it voltage amplifier.
+[36:28] What is the feedback
+[36:30] in this?
+[36:32] Series shunt.
+[36:34] In the input, the series means
+[36:36] voltage mixing.
+[36:38] In the output, the shunt means
+[36:40] voltage sampling.
+[36:42] Here, the resistance increases
+[36:44] because it will increase in the series.
+[36:46] It will be less in the shunt.
+[36:48] Then, the voltage-controlled current source
+[36:50] is transconductance amplifier.
+[36:52] In this, there is voltage in the input.
+[36:54] So, the voltage mixing means
+[36:56] the series is current in the output.
+[36:58] That is, the current sampling is again
+[37:00] the series.
+[37:02] What can you say about this?
+[37:04] Can you also say about the current series?
+[37:06] The input resistance is also increasing.
+[37:08] The output resistance is also increasing.
+[37:10] Now, there are different things.
+[37:12] It is actually GM.
+[37:14] Okay?
+[37:16] That means, it is transconductance.
+[37:18] Third is the current-controlled voltage source.
+[37:20] That is, the current on the input
+[37:22] is voltage on the output.
+[37:24] Trans resistance amplifier.
+[37:26] Current mixing on the input
+[37:28] means shunt.
+[37:30] Voltage sampling on the output
+[37:32] means shunt.
+[37:34] Or voltage shunt.
+[37:36] Because of the shunt-shunt, the input
+[37:38] also decreased.
+[37:40] Again, A is actually
+[37:42] the value of the trans resistance.
+[37:44] And last, the current-controlled
+[37:46] current source
+[37:48] means the input is also current and the output is also current.
+[37:50] So, this is the current amplifier.
+[37:52] Current means shunt mixing on the input.
+[37:54] Current sampling on the output means
+[37:56] series sampling.
+[37:58] Shunt series or, say, current series.
+[38:00] Because of the shunt,
+[38:02] the input resistance decreased.
+[38:04] Because of the series, the output resistance increased.
+[38:06] So, you should know
+[38:08] about the current amplifier.
+[38:10] Now, see, all the dots
+[38:12] are connected. There were
+[38:14] four types of amplifiers.
+[38:16] There were four types of feedback.
+[38:18] And there are four conditions
+[38:20] of input and output resistances.
+[38:22] I know the gain.
+[38:24] The gain upon 1 plus A will be beta.
+[38:26] I know the gain.
+[38:28] A upon 1 plus A will be beta.
+[38:30] Yes, this current will be shunt.
+[38:34] Okay?
+[38:36] What is important?
+[38:38] Input and output resistance.
+[38:40] This is clear, right?
+[38:42] So, architect, we should know this.
+[38:44] Okay?
+[38:46] You know this.
+[38:48] Means, you have the full knowledge of the
+[38:50] feedback amplifier in and out.
+[38:52] Now, sir, how to know the feedback in a
+[38:54] circuit?
+[38:56] First of all,
+[38:58] draw
+[39:00] circuit of
+[39:02] amplifier.
+[39:04] Amplifier.
+[39:08] Okay?
+[39:10] Now, what do you do on this?
+[39:12] Check
+[39:14] KCL
+[39:16] and KVL
+[39:18] at input terminal.
+[39:20] At input terminal,
+[39:22] check the equation of KCL
+[39:24] or KVL, sir.
+[39:28] Now, see,
+[39:30] if you
+[39:32] make a case
+[39:34] that the input current amplifier
+[39:36] is equal to IS
+[39:38] and the VI
+[39:40] contains
+[39:42] feedback.
+[39:44] There is some extra term in the VI.
+[39:46] So, this is voltage
+[39:48] mixing.
+[39:50] Right?
+[39:52] So, you have to check the
+[39:54] input current of the amplifier
+[39:56] and the input voltage.
+[39:58] So, the input voltage is
+[40:00] equal to VS.
+[40:02] But, there is a
+[40:04] feedback term in IIS.
+[40:06] It means,
+[40:08] there is a third term in IIS
+[40:10] i.e.
+[40:12] current mixing.
+[40:14] So, it is very easy to recognize the mixing.
+[40:16] There is nothing to recognize the mixing.
+[40:18] You will see which mixing
+[40:20] it is.
+[40:22] If the IIS and IIS are equal,
+[40:24] then the voltage will be mixed.
+[40:26] If they are equal,
+[40:28] then the current will be mixed.
+[40:30] Now, the next thing you should do is
+[40:32] that
+[40:34] for current mixing,
+[40:36] if there is current mixing,
+[40:38] then you zero the VI
+[40:40] and
+[40:42] compute IF.
+[40:44] What will you compute?
+[40:46] IF.
+[40:48] Right?
+[40:50] And here,
+[40:52] IF will come
+[40:54] and that will be a function of
+[40:56] I0
+[40:58] and V0.
+[41:00] Now, you will say that
+[41:02] there is a function of either of them.
+[41:04] Listen carefully.
+[41:06] This must not contain
+[41:08] RL.
+[41:10] This must not contain
+[41:12] RL.
+[41:14] So, keep this in mind.
+[41:16] If there is a function of
+[41:18] RL, then RL is not there.
+[41:20] For example, if a child says
+[41:22] RL is equal to RL, then
+[41:24] I0 will also be a function of this logic.
+[41:26] Do you understand?
+[41:28] I0 will also be a function of this logic.
+[41:30] According to this,
+[41:32] we can say that it is dependent on V0.
+[41:34] So, it will also be dependent on I0.
+[41:36] But, you have to take
+[41:38] the dependency in which RL
+[41:40] does not come.
+[41:42] In which RL does not come.
+[41:44] If there was a voltage mixing like this,
+[41:46] if you caught it in the mixing,
+[41:48] if there is a voltage mixing,
+[41:50] if there is a voltage mixing,
+[41:52] then you zero the current.
+[41:54] And again,
+[41:56] what do you take out?
+[41:58] VF.
+[42:00] Okay?
+[42:02] Now, if VF is
+[42:04] a function of I0 or V0,
+[42:06] then you will know
+[42:08] which sampling is there.
+[42:10] If it is dependent on V0,
+[42:12] then it is dependent on voltage sampling
+[42:14] and I0, then it is a current sampling.
+[42:16] Again, this dependency
+[42:18] contains RL.
+[42:20] And do you know
+[42:22] the dependency that we take out,
+[42:24] beta also comes from here.
+[42:26] Beta also comes.
+[42:28] Wait, let's block it.
+[42:32] Let's go.
+[42:34] Like if there is a relation between
+[42:36] IF and I0, then IF by I0
+[42:38] will be beta.
+[42:40] IF by V0 will also be beta.
+[42:42] If there is a relation between
+[42:44] VF and I0, then VF by I0 will be
+[42:46] beta. If VF is in V0,
+[42:48] then VF by V0 will also be beta.
+[42:50] From here, you will get beta also.
+[42:52] Okay? I will show you this
+[42:54] with an example. First of all,
+[42:56] what we have to check is that we have to check the mixing.
+[42:58] It is a current mixing.
+[43:00] So, zero the VI and take out IF.
+[43:02] And if there is a voltage mixing, then zero the
+[43:04] VI and take out VF.
+[43:06] And in whose terms do we have to take out?
+[43:08] In I0 or V0 terms,
+[43:10] just keep this in mind. In that relation,
+[43:12] RL, i.e.
+[43:14] Let's see.
+[43:16] Now he is asking, whose
+[43:18] example is this circuit?
+[43:20] What do I do?
+[43:22] I make the circuit of this O-Pamp
+[43:24] inside.
+[43:26] What happens inside the O-Pamp?
+[43:28] There is one input resistance.
+[43:30] Okay?
+[43:32] This is positive.
+[43:34] This is negative.
+[43:36] And this is the input voltage
+[43:38] of the O-Pamp.
+[43:40] Okay?
+[43:42] Now what happens here?
+[43:44] Inside the O-Pamp?
+[43:46] This is A,
+[43:48] VI.
+[43:50] This is grounded.
+[43:52] And along with it,
+[43:54] an R-naught.
+[43:56] Now see, this negative terminal
+[43:58] is connecting through R2
+[44:00] from V-naught.
+[44:02] Look carefully.
+[44:06] This is connecting through R2
+[44:08] from V-naught.
+[44:10] This is connected.
+[44:12] And this is coming here,
+[44:14] R1.
+[44:18] Did you understand this?
+[44:20] Say the circuit.
+[44:22] Did you understand the circuit?
+[44:24] Tell me quickly.
+[44:26] This circuit is cleared.
+[44:28] The circuit inside the O-Pamp is open.
+[44:30] Now this is the voltage,
+[44:32] the source voltage.
+[44:34] Write this here, VS.
+[44:36] Now first of all,
+[44:38] think about it here.
+[44:40] Are VI and VS equal?
+[44:42] Tell me quickly.
+[44:44] Are VI and VS equal?
+[44:46] No.
+[44:48] So from here,
+[44:50] we came to know directly that
+[44:52] there is mixing in the voltage.
+[44:54] The input voltage is not equal to the source.
+[44:56] That is, the voltage
+[44:58] is mixed.
+[45:00] Which is mixed?
+[45:02] This is mixed.
+[45:04] This voltage is mixed.
+[45:06] What is the name of this?
+[45:08] VF.
+[45:10] I came to know directly here.
+[45:12] Voltage mixing.
+[45:14] How do you know that mixing is straight?
+[45:16] You can see mixing while making
+[45:18] the circuit of amplifier.
+[45:20] Okay?
+[45:22] What happened here?
+[45:24] If you write VI, it will be
+[45:26] VS-VF.
+[45:28] And this is current.
+[45:30] Come.
+[45:32] Now we have caught the mixing here.
+[45:34] Now what should we do?
+[45:36] If the voltage is mixing, then zero the current.
+[45:38] Make Ii equal to zero.
+[45:42] Will you do Ii equal to zero?
+[45:44] If my child Ii is zero,
+[45:46] then you don't think
+[45:48] these two are in series.
+[45:50] Tell me.
+[45:52] These two are in series, right?
+[45:54] If these two are in series,
+[45:56] then you don't think that the
+[45:58] V-NOT will come from the voltage division.
+[46:00] So from here,
+[46:02] I don't understand that it is
+[46:04] proportional to V-NOT.
+[46:06] So voltage sampling.
+[46:08] What is this?
+[46:10] Voltage sampling.
+[46:12] That is, if you want to
+[46:14] sample the voltage here,
+[46:16] then shunt.
+[46:18] And if you want to mix the voltage,
+[46:20] then series.
+[46:22] So the series shunt is done.
+[46:24] It came.
+[46:26] And this method never fails.
+[46:28] Never.
+[46:30] No matter how many questions
+[46:32] you ask.
+[46:34] These are my own
+[46:36] methods.
+[46:38] The style of
+[46:40] different teachers is different.
+[46:42] But I have made this method.
+[46:44] It goes in every question.
+[46:46] Whether it is MOSFET,
+[46:48] whether it is BJT, whether it is O-PAMP.
+[46:50] What don't you understand?
+[46:52] Tell me in this.
+[46:54] I have noticed
+[46:56] that
+[46:58] the input voltage
+[47:00] of O-PAMP
+[47:02] is not equal to the source.
+[47:04] There is another voltage in it.
+[47:06] That is, the voltage is mixed.
+[47:08] If the voltage is mixed,
+[47:10] then what did I do? I zeroed the I-I.
+[47:12] If I zeroed the I-I, then these two
+[47:14] came in series, then the value of VF
+[47:16] is proportional to V-NOT.
+[47:18] That is, the voltage sampling.
+[47:20] And a very good Deepanker.
+[47:22] What happened?
+[47:24] R1 by R1 plus R2.
+[47:26] Can I show you a magic?
+[47:28] Tell me.
+[47:30] Will you see a magic?
+[47:32] Tell me.
+[47:34] Look.
+[47:40] What will you write now?
+[47:42] Can you write like this?
+[47:54] If I say
+[47:56] open loop gain
+[48:04] tends to infinity
+[48:06] 1 by beta
+[48:10] means
+[48:12] R1 plus R2 by R1
+[48:18] You don't think
+[48:20] the gain of non-inverting amplifier
+[48:22] has become.
+[48:24] Look at this.
+[48:26] This was the gain of non-inverting amplifier
+[48:28] 1 plus R2 by R1.
+[48:30] The same formula has come.
+[48:32] Tell me.
+[48:34] The same formula has come.
+[48:36] Open loop gain infinity.
+[48:38] Because virtual ground only seems
+[48:40] when open loop gain infinity is there.
+[48:42] And there is a negative feedback.
+[48:46] The current control voltage
+[48:48] will be shunned in the source.
+[48:50] Current control voltage
+[48:52] will be shunned here.
+[48:54] This is the wrong type.
+[48:56] Okay.
+[48:58] Okay.
+[49:00] Come on.
+[49:02] Did you understand how to apply the method?
+[49:04] Tell me.
+[49:06] Did you understand?
+[49:08] Try the next question by yourself.
+[49:10] Now I have given the inverting amplifier.
+[49:12] Try.
+[49:14] Make a circuit like before.
+[49:16] Make a circuit once.
+[49:18] And write this input voltage as VS.
+[49:20] Otherwise you will get confused.
+[49:24] Make it.
+[49:28] Look. There are two types of questions.
+[49:30] One is that according to the feedback
+[49:32] input resistance, output resistance
+[49:34] as the question was asked yesterday
+[49:36] one is this type to identify the feedback.
+[49:38] These are the two types of questions
+[49:40] that are formed from this chapter.
+[50:00] Okay.
+[50:30] Voltage sampling shunt.
+[50:32] Mixing any shunt shunt.
+[50:34] Is it done?
+[50:36] This is called pure shunt shunt.
+[50:42] Look.
+[50:44] I will make its model.
+[50:48] First of all.
+[50:54] Inverting terminal.
+[50:56] Non-inverting terminal.
+[50:58] We have done the non-inverting terminal.
+[51:00] Ground.
+[51:02] According to a gain,
+[51:04] voltage source is formed.
+[51:06] Dependent voltage source AVI.
+[51:12] And with this comes R0.
+[51:14] And this is V0.
+[51:22] Now there is R2 here.
+[51:24] One resistance.
+[51:26] Between output and inverting terminal.
+[51:28] Look.
+[51:32] And here is R1.
+[51:38] And this is VS.
+[51:40] This will be current.
+[51:42] Ii.
+[51:44] Okay.
+[51:46] This will be Ii.
+[51:48] Now if you see here.
+[51:50] Here it is clear.
+[51:52] VI is minus VS.
+[51:54] VI.
+[51:56] There is no voltage in VI and VS.
+[51:58] There is no extra I.
+[52:00] Okay.
+[52:02] But if you talk about current.
+[52:04] Look.
+[52:06] If you talk about current.
+[52:08] What is happening in current?
+[52:10] If you consider current IIF here.
+[52:12] Or if you consider IIF down.
+[52:14] If you consider IIF down.
+[52:22] No problem.
+[52:24] You can say IIS.
+[52:26] Plus IIF.
+[52:28] Plus III.
+[52:30] Equal to 0.
+[52:32] Okay.
+[52:34] And here.
+[52:36] By the way, VI will not be minus VS.
+[52:38] It will stop.
+[52:40] Here your I.
+[52:42] How much will be I?
+[52:44] Minus IIS minus IIF.
+[52:46] So current mixing is caught from here.
+[52:50] What is caught?
+[52:52] Current mixing.
+[52:54] Okay.
+[52:56] And here if you want VI.
+[52:58] Then you can take it out like this.
+[53:00] So VS minus IIS RS.
+[53:02] Plus VI equal to 0.
+[53:04] So here there is no feedback in voltage.
+[53:08] There is no feedback in VI.
+[53:10] There is only source term in VI.
+[53:12] VS and IIS.
+[53:14] So current mixing is done.
+[53:16] As soon as current mixing is done.
+[53:18] What do you do?
+[53:20] Make.
+[53:22] VI equal to 0.
+[53:26] Now if you have zeroed VI.
+[53:28] What happened as soon as you zeroed VI?
+[53:30] Did the grounding come here?
+[53:32] As soon as the grounding came here.
+[53:34] What happened IIF?
+[53:36] Your.
+[53:38] V0 by R2.
+[53:40] V0 by R2.
+[53:42] Okay.
+[53:44] Now if IIF is V0 by R2.
+[53:46] It is proportional to V0.
+[53:48] So it is voltage sampling.
+[53:52] Okay.
+[53:56] So here you got beta as well.
+[53:58] What is beta?
+[54:00] 1 by R2 is done.
+[54:04] So voltage sampling is done.
+[54:06] So what do you call this?
+[54:08] Shunt shunt.
+[54:14] Okay.
+[54:16] Jagannath Ji is saying.
+[54:18] If feedback element is directly.
+[54:20] It is indicating voltage sampling.
+[54:22] Otherwise it is current sampling.
+[54:26] VS minus IIS R1.
+[54:32] Jagannath Ji.
+[54:34] If you remember this method.
+[54:36] You can remember it.
+[54:38] I use this method.
+[54:40] Because it is also found in O-Pamp.
+[54:42] In BJT and MOSFET.
+[54:44] Otherwise it happens a lot.
+[54:46] We make mistakes.
+[54:48] I have seen so many questions on this topic.
+[54:50] That I have seen almost every method fail.
+[54:52] But whatever method you like.
+[54:54] Do whatever shortcut you like.
+[54:56] There is only one benefit in this method.
+[54:58] That we get beta directly.
+[55:00] Okay.
+[55:02] An amplifier has
+[55:04] open loop gain of 100.
+[55:06] Lower and upper cutoff frequency are 100 hertz.
+[55:08] And 100 kilohertz.
+[55:10] Feedback network with feedback
+[55:12] factor 0.99.
+[55:14] Lower and upper cutoff frequency.
+[55:16] Take it out.
+[55:18] Did you make this type of equation yesterday also?
+[55:20] Do it.
+[55:32] Okay.
+[55:58] Okay.
+[56:02] Let's see.
+[56:04] See.
+[56:06] Let's take out 1 plus A beta.
+[56:18] 0.99.
+[56:20] So this is 100.
+[56:22] Now capital FL is.
+[56:32] So this is.
+[56:34] 1 hertz.
+[56:36] And capital FH is.
+[56:44] This is 10 megahertz.
+[56:46] Isn't it?
+[56:48] The bandwidth has increased a lot.
+[56:50] Is it clear?
+[56:52] Come on.
+[56:54] Look at the next one.
+[56:56] Let's see.
+[57:00] We have to comment on the feedback.
+[57:02] What kind of feedback is it?
+[57:16] Pramit, what do you want?
+[57:18] You came to the class with so much knowledge.
+[57:20] Come to the class.
+[57:24] Tell me.
+[57:26] We know that your rank is this year.
+[57:30] So all the knowledge is in our chat.
+[57:32] What are you showing?
+[57:40] Series and voltage series.
+[57:42] Let's see.
+[57:50] See how this amplifier will be.
+[57:52] This is a common gate.
+[58:00] Okay.
+[58:02] So the input is on its source terminal.
+[58:04] So we can see this here in the circuit.
+[58:06] That IIS
+[58:08] IS
+[58:10] minus IF.
+[58:12] That is, current mixing.
+[58:16] See, you made a mistake here.
+[58:18] But you made a mistake here.
+[58:20] This is current mixing.
+[58:22] You can see it directly.
+[58:24] That is, shunt.
+[58:26] If it is current mixing, then you zero VIN.
+[58:30] Zero VIN.
+[58:32] So IF
+[58:34] will be
+[58:36] zero minus
+[58:38] V out
+[58:40] by RF.
+[58:44] Proportional to V out.
+[58:46] And how much is beta?
+[58:48] Minus one by RF.
+[58:52] So this is voltage sampling.
+[58:56] Okay.
+[58:58] So this is also shunt.
+[59:04] So this is shunt-shunt feedback.
+[59:06] This is shunt-shunt feedback.
+[59:14] Okay.
+[59:15] This is shunt-shunt feedback.
+[59:17] Let's see the next one.
+[59:19] This one, tell me.
+[59:27] This is source current.
+[59:31] And this is its source resistance.
+[59:34] This is RL.
+[59:36] This is R1.
+[59:38] And this is R2.
+[59:40] Okay.
+[59:42] Let's go.
+[59:44] RF is very large.
+[60:04] Why RF is so large?
+[60:06] Deepankar, how did we come to know that RF is large?
+[60:11] And RF is very large.
+[60:13] So if it will be small, what else?
+[60:17] We have to do something with this, what is RFlarge?
+[60:20] If it is large and small, we have to solve it with that only.
+[60:33] What is it coming? Siri Shunt, see.
+[60:36] Take out the rest.
+[60:43] Look, the voltage across this source will be Vs.
+[60:48] And the voltage here is Vi.
+[60:52] So Vi is clearly visible minus Vs.
+[60:55] That is, there is no feedback in it.
+[60:59] But I can definitely say that the current Ii is going here.
+[61:04] Which comes from here.
+[61:07] There will be a feedback term in it here.
+[61:11] So the current is mixed.
+[61:14] If we get the current mixing, what will we do now?
+[61:18] We will zero V i.
+[61:20] So what will be if?
+[61:22] Zero minus V naught by R2.
+[61:26] So this is proportional to V naught.
+[61:29] That is, voltage sampling.
+[61:32] So the current is mixed, the voltage is sampling, Shunt Shunt is done.
+[61:37] Okay, it will come out to be Shunt Shunt.
+[61:40] Okay, it will come out to be Shunt Shunt, see.
+[61:48] Sai, for an ideal opamp, Ii is zero.
+[61:51] We are doing this to study the nature of the feedback.
+[61:54] Okay, that it is coming and going.
+[62:02] Is it clear?
+[62:05] Come on, look at the next one.
+[62:07] Look at the next one.
+[62:10] Look at the next one.
+[62:26] There is a question like this in the feedback amplifier.
+[62:29] If the question comes, I don't think you will need more than a minute to solve it.
+[62:34] More than a minute and a half.
+[62:40] Okay.
+[62:58] What is this?
+[63:00] Okay.
+[63:09] Now look, he has told the current.
+[63:11] So keep this one for sampling whenever it comes like this.
+[63:15] And this one for mixing.
+[63:18] Choose the option according to this.
+[63:21] When the current goes to the voltage, what does the first term tell?
+[63:24] Sampling.
+[63:27] What is it?
+[63:28] Come on, look.
+[63:30] Look, the entire source that is shown to you is a source.
+[63:35] If you want, make it a voltage source or whatever you want.
+[63:39] So basically you can say that you are getting a Vs source here.
+[63:43] And this is the voltage V in.
+[63:47] So I can say that V in is Vs minus Vf.
+[63:53] Now the feedback in the input voltage has been seen.
+[63:57] So from here it is clear that the voltage is mixing.
+[64:04] Okay.
+[64:05] Now if the voltage is mixing, then you will zero the current.
+[64:11] I will zero it.
+[64:13] That is, zero will come here.
+[64:15] So these two resistances will come in the series.
+[64:20] Okay.
+[64:21] So what will be V out?
+[64:23] Sorry, what will be Vf in the series?
+[64:25] So V out into 10 by 15.
+[64:30] So it is proportional to V out.
+[64:33] So that is voltage sampling.
+[64:37] So voltage is voltage.
+[64:41] So the answer will be B.
+[64:46] Okay.
+[64:47] The current source given here, don't think that the current source will be the current mixing.
+[64:51] The voltage source will be the voltage mixing.
+[64:53] I can transform the source and make the current source voltage source anything.
+[64:59] Did you understand?
+[65:00] I can transform the source and make the current source voltage source anything.
+[65:05] So you understand that the current from the source is Ies and the voltage is Vs.
+[65:10] Don't judge on the source.
+[65:11] I know that you will think more.
+[65:13] Where to save more effort?
+[65:14] The question that is being asked in 2-3 steps.
+[65:16] Why are you going to save more effort?
+[65:18] If you ignore the resistance of the current source, it doesn't matter.
+[65:23] Okay.
+[65:24] Because the resistance of the current source, this is a part of RS.
+[65:28] It is not a part of amplifier.
+[65:30] Do you know why it was read?
+[65:32] Because there is no current in an ideal opamp.
+[65:35] If I had shown the current source directly here, it would have been wrong.
+[65:39] Because opamp doesn't take any current.
+[65:41] So that is why we had to show resistance in a parallel.
+[65:44] But this resistance is not contributing in such an amplifier.
+[65:48] It is just a part of your current source.
+[65:52] Now it is getting clear.
+[65:53] How do we judge this?
+[65:57] Okay.
+[65:58] Okay.
+[65:59] Now look at this.
+[66:00] Solve your assignment.
+[66:03] This is a good question.
+[66:05] It will be fun if you make this.
+[66:07] I will light up the resistance in this.
+[66:10] This is RLA.
+[66:12] Remember what I said.
+[66:13] You shouldn't bring RL in beta.
+[66:15] You have to judge the sampling according to this.
+[66:18] Okay.
+[66:20] So I have given you different types of amplifiers.
+[66:23] Okay.
+[66:24] Now look at this.
+[66:25] You can apply PYQ on this link.
+[66:27] Your feedback amplifier is complete.
+[66:30] You can also apply PYQ on feedback amplifier.
+[66:33] Tomorrow we will meet and tomorrow we will cover oscillators.
+[66:37] Okay.
+[66:38] So tomorrow I will cover RC phase shift oscillator.
+[66:41] LC oscillator.
+[66:42] That is heartless colpid clap oscillator.
+[66:45] And tomorrow I will cover the positive feedback oscillator of opamp.
+[66:50] Schmidt trigger.
+[66:51] Astable multivibrator.
+[66:53] Monostable multivibrator.
+[66:55] Triangle wave generator.
+[66:57] We will do all these things in the second session of the oscillator.
+[67:00] Okay.
+[67:01] And if you want to join the academy, you can come to Plus and Iconic.
+[67:05] You will get the top teacher in two months.
+[67:08] The whole study is on the material app.
+[67:10] The test series is included.
+[67:11] Custom doubt solving is only for Iconic.
+[67:14] There is a doubt in any new question.
+[67:15] So the video solution.
+[67:16] Printed notes are sent at home.
+[67:18] One to one mentorship.
+[67:20] Strategy and study plan is given.
+[67:22] And you can interact in the open house session via audio.
+[67:26] Okay.
+[67:27] Raza is not necessary.
+[67:31] If you do PYQ electrical EC IN then more than enough.
+[67:35] Yes Sunday will be class.
+[67:37] Sunday will be work.
+[67:39] Class timing will be done at 12 o'clock.
+[67:41] Right?
+[67:42] Or I will see if the plus kids can do quiz reschedule.
+[67:45] They will do quiz reschedule.
+[67:48] No, my dear.
+[67:50] Do not take any of the input of current sampling.
+[67:53] No.
+[67:54] No, my dear.
+[67:55] Do not take any of the input of current sampling.
+[67:58] There can be voltage in the input.
+[68:00] There can be current in the Jyotishman.
+[68:02] But the feedback coming in the input.
+[68:04] If it is dependent on I0 then there is current sampling.
+[68:07] If it is dependent on I0 then there will be current sampling.
+[68:11] It is not that there should be current in the input.
+[68:13] There is voltage in the input.
+[68:14] What does it get from it?
+[68:15] It gets mixing by looking at the input.
+[68:18] And it is dependent on the parameter of output.
+[68:20] There is sampling from there.
+[68:23] Now, if you want to join the academy,
+[68:27] then decide your duration.
+[68:30] Decide which plan you want to take.
+[68:35] Plus or Iconic.
+[68:36] So, you can get maximum discount by applying the ankit-e-se code.
+[68:40] And you can prepare in my guidance.
+[68:43] And we have launched a 15 month subscription for the 24 kids.
+[68:47] So, they can purchase a 15 month subscription.
+[68:50] And from now, you can prepare for gate 24 with us.
+[68:54] And if you see, in gate 22, we have taken 6 ranks in top 10.
+[68:58] You can also get a result like this.
+[69:01] If you become a part of an academy.
+[69:03] Other than this, if it is a financial issue,
+[69:05] then you can go for EMI.
+[69:07] No one will be interested in EMI.
+[69:09] It gets approved in 2 hours.
+[69:11] Pay your fees monthly.
+[69:14] Give a member of minimum paperwork,
+[69:15] Aadhar card, pan card, family.
+[69:18] Give a member whose salary you get.
+[69:20] Because bank gives him EMI soon.
+[69:22] And for the 24 kids, Dhandesar has started Analog.
+[69:26] Guru Palsar's Maths is going on.
+[69:28] And for the 23 kids, we have launched the Rank Improvement Batch.
+[69:32] That is, Crash Course.
+[69:34] In this, in Electrical, Maths and Network is going on.
+[69:37] Revision is going on.
+[69:38] And in EC, Maths and Network, EDC is also going on.
+[69:41] And in this batch, from 9th of November,
+[69:43] I am going to start the revision of the machine.
+[69:46] And the kids who are the aspirants of our 23,
+[69:49] can take a subscription of 4 months or 3 months.
+[69:52] With which they will get the maximum discount.
+[69:55] Remember the code, Ankit ESE.
+[69:58] Okay.
+[69:59] And this is my telegram channel.
+[70:01] So, join this channel.
+[70:03] So that you get the latest updates.
+[70:05] No class is missing you.
+[70:07] And if you want a PDF of this session,
+[70:09] then go to the community.
+[70:11] In the community in the Academy App homepage,
+[70:13] you will go to discover there.
+[70:15] Yes, you and I will get all my PDFs.
+[70:17] You can download them.
+[70:19] So, thank you everyone.
+[70:20] We will meet tomorrow.
+[70:21] We will start new chapters from tomorrow.
+[70:23] Last chapter, that is, Oscillators.
+[70:25] So, see you tomorrow. Let's crack it.

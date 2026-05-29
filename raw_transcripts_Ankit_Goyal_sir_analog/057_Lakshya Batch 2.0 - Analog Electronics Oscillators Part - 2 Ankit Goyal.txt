@@ -1,0 +1,1974 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Oscillators | Part - 2 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=0sSenJy0n9w
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] A very good morning to all of you.
+[00:13] We are live on Creatrix YouTube channel.
+[00:15] My dear friends, back again with Lakshya batch 2.0 for Analog Electronics.
+[00:21] And today we are going to discuss the part 2 of Oscillators.
+[00:25] After which your topic of Oscillator is completed.
+[00:29] So today we will discuss about Schmidt Trigger.
+[00:33] Today we will discuss about Bistable, Monostable, Astable, Multivibrator.
+[00:39] And what you have to learn?
+[00:41] You have to learn that how to analyze the circuits of these topics.
+[00:48] What should be their approach and strategy.
+[00:52] Because if you learn the approach.
+[00:54] So if you get a new circuit in the exam tomorrow.
+[00:59] Which is different from everything you have studied.
+[01:02] Even then you will be able to solve it.
+[01:04] So watch this through a network analysis.
+[01:07] Understand its whole analysis.
+[01:09] Because here you will get the transient part.
+[01:13] In astable and monostable multivibrator.
+[01:16] So we will discuss all these things today.
+[01:18] So all the kids thought that they are not able to question positive feedback.
+[01:22] Now you will be able to solve the questions of positive feedback.
+[01:26] If you follow this lecture carefully.
+[01:28] So before I start.
+[01:30] Children hit like quickly.
+[01:32] Mark your attendance.
+[01:34] Tell everyone that Angusar is now live.
+[01:37] By sharing the link of the session as much as possible.
+[01:40] Share it.
+[01:42] Because we are coming to the end of the course.
+[01:45] In this week your entire analog electronics will be wind up.
+[01:49] So now in the last class we will show a little energy.
+[01:53] We will not have to study at all.
+[01:56] Because this course we have done in a fast track way.
+[01:59] If I say the number of days.
+[02:01] Then we have taken a minimum.
+[02:03] And we have not compromised in the number of hours.
+[02:07] Very good Vishal.
+[02:09] Very good thing if you have completed the course of analog.
+[02:12] Let's start.
+[02:14] So yesterday I left an oscillator for today.
+[02:17] First of all I will start from there.
+[02:19] That is the crystal oscillator.
+[02:22] So today's discussion which will be started.
+[02:24] That will start from crystal oscillator.
+[02:27] Now what is crystal oscillator?
+[02:29] A crystal which is piezoelectric in nature.
+[02:33] Where mechanical vibration.
+[02:35] You get an electrical oscillatory response.
+[02:41] Okay.
+[02:42] That means there is mechanical vibration in a crystal.
+[02:46] Because of which an electrical signal is generated.
+[02:49] Which is oscillatory in nature.
+[02:51] Which is like a square wave.
+[02:53] So what do we call it?
+[02:55] Crystal oscillator.
+[02:57] So what are we saying here?
+[02:59] Till now you have read all the resonance.
+[03:01] All the oscillations you have read.
+[03:03] There were electrical oscillations.
+[03:06] So what are we saying here?
+[03:08] Electrical resonant circuit.
+[03:11] Electrical resonant circuit.
+[03:17] Is replaced by.
+[03:20] Is replaced by.
+[03:26] Mechanical.
+[03:29] Mechanical resonant circuit.
+[03:40] Where a piezoelectric crystal.
+[03:52] Where a piezoelectric crystal.
+[03:55] You understand piezoelectric.
+[03:57] On which if mechanical force or pressure is applied.
+[04:00] So it generates the electrical signal.
+[04:02] So here the piezoelectric crystal.
+[04:06] It undergoes.
+[04:09] It undergoes.
+[04:10] Except for this month's end.
+[04:12] The video will not be public.
+[04:14] It undergoes mechanical oscillation.
+[04:20] Mechanical oscillations.
+[04:24] To produce.
+[04:33] Electrical.
+[04:36] Oscillatory response.
+[04:42] Okay.
+[04:44] When it has mechanical oscillation.
+[04:47] The output of it will come in electrical.
+[04:50] That will also be oscillatory in nature.
+[04:54] That will also be oscillatory in nature.
+[04:56] So you have replaced the electrical resonant circuit.
+[05:00] With a mechanical resonant circuit.
+[05:03] It has high degree of stability.
+[05:10] High degree of stability.
+[05:13] What does it mean?
+[05:15] It means that the electrical frequency.
+[05:20] That remains constant.
+[05:23] Frequency remains constant.
+[05:27] Okay.
+[05:29] So it does not change the frequency.
+[05:32] Suppose you bought a crystal oscillator today.
+[05:36] If you think what will be the frequency after a year.
+[05:41] The frequency will remain the same.
+[05:44] It will not change with the time.
+[05:46] It will not change with the temperature.
+[05:48] The frequency for which it is designed.
+[05:51] It will remain the same.
+[05:53] Do you know where it is used the most?
+[05:56] Microprocessor and microcontrollers.
+[06:00] The clock signal needed there.
+[06:03] It is generated with the help of a crystal oscillator.
+[06:08] Okay.
+[06:10] Useful for clock signal in microprocessor and microcontroller.
+[06:22] Okay.
+[06:24] So it is used a lot as a clock signal.
+[06:40] Okay.
+[06:42] So we use it as a clock signal in microprocessor and microcontroller.
+[06:48] Do you understand what a crystal oscillator is?
+[06:51] So basically it is a piezoelectric crystal in which mechanical vibrations are generated.
+[06:56] Electrical oscillation.
+[06:59] But to analyze it.
+[07:02] We make it an electrical equivalent.
+[07:06] That means we represent it with a circuit.
+[07:09] So that we can analyze.
+[07:11] Now see how its circuit is made.
+[07:14] Its circuit is made like this.
+[07:17] See.
+[07:22] You make a RLC series circuit.
+[07:27] And in its parallel you also get one capacitor.
+[07:38] Okay.
+[07:40] This is RLC and this is CP.
+[07:46] Okay.
+[07:48] So this is its electrical equivalent which is experimentally determined.
+[07:52] What is R here?
+[07:54] You can call R as damping or viscosity.
+[07:59] Okay.
+[08:01] So R is the viscous damping.
+[08:07] Or the losses in the crystal.
+[08:11] And internal losses.
+[08:15] Basically you show losses in the electrical network with resistance only.
+[08:20] So whatever losses are coming in the crystal here.
+[08:24] That you are representing as a resistor.
+[08:28] Now what is L?
+[08:30] L tells you the mass of the crystal.
+[08:33] Like you read in the control system.
+[08:35] Mechanical system.
+[08:37] So there also you read that you can replace the mass with inductance.
+[08:42] C tells you stiffness.
+[08:47] Okay.
+[08:48] This thing is actually read in the control system.
+[08:51] Where we read mathematical modeling.
+[08:53] So we see there how mechanical system is brought in electrical.
+[08:58] Okay.
+[08:59] Mechanical equivalent of electrical circuit.
+[09:01] No.
+[09:02] Electrical equivalent of mechanical system.
+[09:04] So don't go the other way.
+[09:06] What does mechanical equivalent mean?
+[09:08] Electrical circuit we converted it to mechanical.
+[09:12] But here there was a mechanical system.
+[09:15] There was a crystal.
+[09:16] I am making an equivalent circuit for that.
+[09:19] And what is CP?
+[09:20] CP is actual capacitance between anode and cathode.
+[09:32] What is the stiffness fund?
+[09:34] I will tell you one thing.
+[09:36] What did I say?
+[09:37] The atoms of the piezoelectric crystal are mechanically vibrating.
+[09:43] So whenever an atom moves from its position.
+[09:46] Then the rest of the atoms try to bring it to its original position.
+[09:51] So it behaves like a spring.
+[09:53] Like if the spring is stretched.
+[09:56] Then the spring will try to come back to its original condition.
+[10:00] So its stiffness is its reciprocal capacitance.
+[10:04] So what is C?
+[10:06] It is called stiffness.
+[10:07] Where when your atoms oscillate.
+[10:10] So how much they want to return to their original position.
+[10:15] Okay.
+[10:16] And look brother.
+[10:18] Your response is very bad.
+[10:20] If it stays like this.
+[10:22] I will discontinue this lecture right now.
+[10:24] Because you have to make so much consistency.
+[10:27] What attendance have you brought?
+[10:30] And if this seems that the videos will be published later.
+[10:34] Then we will see later.
+[10:36] Then I will also do that your analogue will be public.
+[10:39] But opamp will not be public again.
+[10:42] Means the lecture from MOSFET will never be public.
+[10:45] This is the last you can watch them till Tuesday.
+[10:49] After Tuesday, opamp will not be public.
+[10:51] Whatever will be public, the video will be before MOSFET.
+[10:54] Okay.
+[10:55] There is no lecture after opamp or after that.
+[10:58] Okay.
+[10:59] Now look brother.
+[11:00] There are two resonance frequencies here.
+[11:03] One is because of the series RLC circuit.
+[11:05] And one is because of the parallel capacitor.
+[11:08] So there will be two resonance frequencies in the circuit here.
+[11:12] Because it has an order higher than 2.
+[11:15] Its order is more than 2.
+[11:19] And we mean from resonance frequency.
+[11:22] The oscillation of that frequency will be.
+[11:26] So the circuit has.
+[11:31] Two resonance frequencies.
+[11:36] And if you want, you can also remove the imaginary part of admittance.
+[11:41] One due to.
+[11:46] Series RLC circuit.
+[11:52] And other.
+[11:56] Due to parallel capacitance Cp.
+[12:05] Okay.
+[12:06] Due to parallel capacitance Cp.
+[12:09] This is clear.
+[12:11] So there will be two here.
+[12:13] And if you want, you can derive like in the network.
+[12:16] That imaginary part of impedance or imaginary part of admittance will be zero.
+[12:22] Okay.
+[12:23] So the response of this, how does the response come?
+[12:26] If we represent impedance versus.
+[12:29] Omega.
+[12:40] Look, the response of this comes from something like this.
+[12:45] First it decreases, then increases and then decreases.
+[12:48] Mod Z versus Omega, if we talk about it.
+[12:52] Here you get two resonance frequencies.
+[12:56] One on which your impedance is getting minimum.
+[13:01] Okay.
+[13:02] One on which the admittance will be minimum or say that your impedance will be maximum.
+[13:09] Okay.
+[13:11] Here your admittance will be minimum.
+[13:13] Here your impedance will be maximum.
+[13:16] Here your admittance will be minimum or say that your impedance will be maximum.
+[13:22] Okay.
+[13:23] So this is Omega 1.
+[13:25] And this is Omega 2.
+[13:28] Now how is the response of the circuit in this?
+[13:30] Look, here it becomes capacitive.
+[13:33] Then it becomes inductive.
+[13:35] Then the parallel capacitance starts to dominate.
+[13:39] This becomes capacitive again.
+[13:41] Okay.
+[13:42] So in the beginning it becomes capacitive, that is, the impedance drops along with Omega.
+[13:46] And then it becomes inductive, that is, the impedance increases along with Omega.
+[13:52] And then it becomes capacitive again.
+[13:54] That is, the impedance starts to fall again along with Omega.
+[13:58] So Omega 1.
+[14:02] Is resonance frequency.
+[14:07] Due to series resonance.
+[14:13] Due to series resonance.
+[14:22] Okay.
+[14:26] So how much will its value come?
+[14:28] Its value comes.
+[14:32] 1 by root LC.
+[14:35] Okay.
+[14:36] And Omega 2.
+[14:42] Resonance frequency.
+[14:47] Due to parallel capacitance.
+[14:58] 1 by root L.
+[15:00] C equivalent.
+[15:02] And what is C equivalent?
+[15:05] C Cp by C plus Cp.
+[15:10] So by doing this, you have two resonance frequencies.
+[15:14] So there are two resonance frequencies in this crystal oscillator.
+[15:18] And this resonance frequency depends on the thickness of the crystal.
+[15:24] It depends on the thickness of the crystal.
+[15:27] That is, when you want to design a crystal,
+[15:31] then you have to keep in mind that how much thickness you are taking.
+[15:36] Depending upon how much frequency you have to generate.
+[15:45] So you say.
+[15:48] Resonance frequency.
+[15:52] F naught.
+[15:54] Is directly proportional to 1 by.
+[15:57] Thickness.
+[16:01] So therefore.
+[16:03] Thickness must be varied.
+[16:07] To vary.
+[16:09] F naught.
+[16:11] So according to the frequency you want, you set up the thickness of the crystal.
+[16:18] Because basically, this is mechanical vibration.
+[16:22] This is mechanical resonance.
+[16:25] That is, you have to design the crystal accordingly.
+[16:30] That you can give desired frequency.
+[16:34] And the benefit of the second crystal oscillator is that its quality factor is very high.
+[16:40] Which is desirable.
+[16:43] In any resonance circuit, the high quality factor is desirable.
+[16:47] What does the quality factor tell?
+[16:49] In one way, energy stored by energy dissipated.
+[16:52] So the high quality factor means that most of the energy is stored by you.
+[16:57] And very little energy is dissipated in your circuit.
+[17:01] That is, most of the energy gets stored.
+[17:04] And the right thing is that it shows the sharpness of the curve.
+[17:08] The sharper the curve is, the less your curve is spread.
+[17:13] Or the less the resonance frequency you can say is concentrated.
+[17:23] Hmm.
+[17:28] Now see.
+[17:30] Now see, we define a figure of merit in the oscillators.
+[17:34] What do we define?
+[17:35] Figure of merit.
+[17:37] Figure of merit tells us how good this oscillator is.
+[17:42] What does it tell us?
+[17:43] How good this oscillator is.
+[17:47] Describes the performance or quality of an oscillator.
+[18:09] Okay, the figure of merit describes the quality of an oscillator.
+[18:16] So the figure of merit of this oscillator is described as
+[18:20] d theta by d omega or d theta by df.
+[18:28] Okay.
+[18:29] Now what is d theta here?
+[18:32] Theta is the phase angle of oscillator.
+[18:39] Okay, phase angle of oscillator.
+[18:47] And this is taken out near to the resonance frequency.
+[18:53] As you can see, this graph with frequency is coming.
+[19:03] Now if you look inside this, you have a graph like this.
+[19:10] Okay.
+[19:12] Now if we look at this, just below fs and just after fs.
+[19:21] What is happening?
+[19:22] Your circuit's nature is inductive from the capacitive.
+[19:26] Here the circuit's nature is capacitive and here your nature is inductive.
+[19:33] So what you will say here is figure of merit.
+[19:37] You call this frequency as fs plus and this as fs minus.
+[19:44] So what will be the figure of merit?
+[19:47] You will take angle 90 for inductive and minus 90 for capacitive.
+[19:53] Upon df.
+[19:57] Okay.
+[19:58] This tends to infinity.
+[20:00] That is why it is highly stable.
+[20:03] Why is df infinity?
+[20:05] Why is df tending to zero?
+[20:07] Because these two points are very close to fs.
+[20:11] So if you want to judge the stability of any oscillator,
+[20:18] then you take out the figure of merit.
+[20:21] Even those who have read the oscillator.
+[20:24] If you want to read the stability or quality of a good oscillator,
+[20:29] then you take out the figure of merit.
+[20:31] The higher the value, the better your oscillator is.
+[20:35] What to do for this?
+[20:37] Whatever the oscillator is, you have to take out the phase shift.
+[20:40] After taking out the phase shift, after that d theta by df.
+[20:46] What is the figure of merit?
+[20:48] Is this clear?
+[20:50] So this parameter is important.
+[20:52] It is not in the gate.
+[20:53] But you can ask about it in other exams.
+[20:56] Is this clear?
+[20:58] So the question will not come in the gate about the crystal oscillator.
+[21:02] But it can be asked in other exams about the crystal oscillator.
+[21:06] So keep the back of the mind crystal oscillator in your mind.
+[21:10] Because practically speaking, it is a very useful device.
+[21:14] All the digital circuit that comes in the work of giving the clock,
+[21:18] you have to have a basic understanding that what is the crystal oscillator and how it works.
+[21:24] So tell me, is everyone clear here?
+[21:27] If it is clear here, then we will go to the multivibrator and Schmidt trigger.
+[21:31] But we will confirm once.
+[21:33] Is this clear?
+[21:36] Tell me.
+[21:38] Is it clear?
+[21:40] Very good.
+[21:42] Now we come to Schmidt trigger and bi-stable multivibrator.
+[21:47] First, what is multivibrator?
+[21:50] Look, vibrator means something that vibrates.
+[21:53] What does vibrates mean?
+[21:55] Which keeps changing its state continuously.
+[21:58] So multivibrator is the one whose multiple states vibrate in between.
+[22:04] Suppose there is a switch.
+[22:05] There can be two states of the switch.
+[22:07] That is, which state can be on and off.
+[22:12] On and off.
+[22:13] These two states can be of the switch.
+[22:15] So if you keep on and off the switch continuously,
+[22:19] then that is also a multivibrator with two states.
+[22:23] So such systems which vibrate between two or more states,
+[22:27] they are said to be multivibrator.
+[22:31] Okay?
+[22:33] So what do we say here?
+[22:36] Systems that oscillate.
+[22:41] Look, usually two states are taken,
+[22:44] but for general definition,
+[22:46] systems that oscillate between two or more than two states,
+[23:03] continuously,
+[23:11] are
+[23:14] called as
+[23:17] multivibrators.
+[23:19] Okay?
+[23:21] Now look, there are two types of states.
+[23:25] One is stable state and the other is unstable state.
+[23:31] Stable state, we call it,
+[23:33] in which if a multivibrator goes,
+[23:35] then we have to give some external input to take it out.
+[23:39] That is, without any input,
+[23:42] a multivibrator will not leave his stable state.
+[23:47] And the other is unstable state.
+[23:49] The state in which it switches itself,
+[23:52] in another state, without the need of an external input.
+[23:57] Okay?
+[23:58] So if it is in a stable state,
+[24:00] then it wants to stay there.
+[24:02] If you want to take it out,
+[24:04] then you have to give some input.
+[24:07] And the other is unstable state,
+[24:10] which comes out of it,
+[24:13] without the need of any external input.
+[24:16] Did you understand this?
+[24:18] Did you understand this?
+[24:20] There are two states of multivibrators.
+[24:23] Stable state.
+[24:27] So what is in this?
+[24:30] I am writing in short,
+[24:31] MV multivibrator.
+[24:34] Can stay in this state,
+[24:40] can stay in this state
+[24:43] for an indefinite amount of time,
+[24:52] for an indefinite amount of time,
+[25:04] until an external input is applied.
+[25:22] Okay?
+[25:23] Until an external input is applied.
+[25:28] Give an example.
+[25:30] We are not going to study multivibrators.
+[25:32] We are understanding the language,
+[25:33] then we will see the circuit of Himanshu.
+[25:35] How will you visualize it now,
+[25:37] without seeing the circuit?
+[25:39] I am a crazy man.
+[25:41] A little multivibrator will end here.
+[25:43] Today's whole lecture is dedicated for this.
+[25:47] The second is unstable state.
+[25:54] Unstable state.
+[25:57] So what is in this?
+[26:00] Multivibrator leaves this state
+[26:07] after a certain time,
+[26:11] after a certain time,
+[26:19] without the need of any external input.
+[26:26] Okay?
+[26:37] Okay?
+[26:39] Yes.
+[26:41] Is this clear?
+[26:43] Now listen carefully.
+[26:44] Let's give an example according to Himanshu,
+[26:47] so that he can visualize Himanshu.
+[26:49] Now all of you are children.
+[26:51] So your stable state is sleeping.
+[26:54] You can sleep comfortably.
+[26:56] You don't need any external input.
+[26:58] You will go to sleep to sleep
+[27:00] by losing tiredness.
+[27:01] Okay?
+[27:02] You will get bored and go to sleep.
+[27:03] But if you want to get me out of that state,
+[27:07] if you want to wake me up,
+[27:09] then you will need an external input.
+[27:11] It can be a mother and father's slippers.
+[27:13] Okay?
+[27:14] It can be an alarm.
+[27:16] It can be someone's call.
+[27:18] You can need any external input
+[27:20] to get out of that state.
+[27:22] And when you are awake,
+[27:24] that is your unstable state.
+[27:26] Okay?
+[27:27] Because you will go to sleep after a while.
+[27:30] If you sit for a while,
+[27:31] you will go to sleep after a while.
+[27:33] For this,
+[27:34] you will not need any external input.
+[27:36] You will leave this state to yourself.
+[27:39] But the stable state that you are going to sleep,
+[27:41] you need input to wake up from it.
+[27:43] So what do we call these types of systems?
+[27:46] Multivibrator.
+[27:48] Is it clear?
+[27:50] The meaning of multivibrator is clear.
+[27:52] Now look,
+[27:53] there are three types of multivibrator.
+[27:55] The first is bi-stable multivibrator.
+[27:58] What happens in this?
+[27:59] Both the states are stable.
+[28:02] That is,
+[28:03] if we talk in terms of two state digital,
+[28:06] high and low.
+[28:07] If the high and low are both stable,
+[28:09] then to go from high to low,
+[28:11] or to go from low to high,
+[28:13] you will have to give external input.
+[28:16] Otherwise,
+[28:17] if the system is low,
+[28:18] then it will remain low.
+[28:20] And if the system is high,
+[28:22] then it will remain high.
+[28:23] Can you take the best case example of this latch?
+[28:26] What happens in the latch in digital?
+[28:29] Whatever bit it has stored,
+[28:32] the same bit will remain stored forever.
+[28:35] That value can never change.
+[28:38] So that is a latch basically.
+[28:40] So we are talking about that.
+[28:42] Bi-stable multivibrator, bi-stable element latch.
+[28:45] All of these are the same thing.
+[28:47] Where both are state stable.
+[28:49] If you put high in it,
+[28:51] then it will remain high.
+[28:52] Until you change it to low,
+[28:55] it will not remain low.
+[28:58] And if you keep it low,
+[29:00] then it will remain low.
+[29:01] It will not go high by itself.
+[29:03] Until you don't take it high.
+[29:06] So what we are saying is that
+[29:08] this multivibrator
+[29:12] has
+[29:15] two stable states.
+[29:20] Two stable states.
+[29:23] Example
+[29:25] high
+[29:28] and low.
+[29:32] So when we
+[29:37] wish to
+[29:40] change the state,
+[29:42] when we wish to
+[29:44] change the
+[29:46] state
+[29:51] of multivibrator,
+[29:54] we need to apply
+[29:58] we need to apply
+[30:01] an external input.
+[30:04] Understood?
+[30:06] And Schmidt trigger is the same.
+[30:09] What is Schmidt trigger?
+[30:11] Schmidt was a scientist who told a circuit.
+[30:14] He made positive feedback from opamp.
+[30:17] If the state has to change in his case,
+[30:19] then you have to give an external input.
+[30:23] So what can be the example here?
+[30:25] Schmidt trigger can be.
+[30:28] Latch can be.
+[30:31] Tell me, is this clear?
+[30:33] Example latch also.
+[30:36] Speak fast.
+[30:39] Latches in digital
+[30:42] are also
+[30:44] bi-stable multivibrator.
+[30:48] Next is mono-stable multivibrator.
+[30:50] It is understood from the name.
+[30:52] One state will be stable.
+[30:54] As you have done, the state to sleep is stable.
+[30:56] One state will be stable.
+[30:58] To go to another state,
+[31:00] to go from stable to unstable,
+[31:02] you have to apply
+[31:04] external input.
+[31:06] To wake up from sleep,
+[31:08] you have to apply an alarm.
+[31:10] But after a while,
+[31:12] you will go to sleep.
+[31:14] This is for sure.
+[31:16] This multivibrator will come
+[31:18] from unstable state.
+[31:20] After a while, it is guaranteed.
+[31:22] But to take it from stable
+[31:24] to unstable,
+[31:26] what will happen?
+[31:28] You have to give an external input here.
+[31:30] Okay?
+[31:32] So we are saying this multivibrator
+[31:34] only has
+[31:38] one stable state
+[31:46] while
+[31:48] other state is unstable.
+[31:52] Other state
+[31:56] is unstable.
+[31:58] Okay?
+[32:06] To shift
+[32:08] multivibrator
+[32:12] from
+[32:14] stable to unstable state
+[32:20] from stable to
+[32:22] unstable state
+[32:28] we need
+[32:30] an external input
+[32:36] Okay?
+[32:40] While
+[32:44] it
+[32:46] itself
+[32:50] comes back
+[32:54] from unstable state to
+[32:56] stable state
+[32:58] from
+[33:00] unstable state
+[33:04] to stable state
+[33:10] after certain time
+[33:12] after
+[33:14] certain time
+[33:18] called as pulse width.
+[33:22] Okay?
+[33:24] After certain time it will come back
+[33:26] after certain time
+[33:28] after pulse width
+[33:32] pulse width.
+[33:34] Okay?
+[33:36] Is this clear?
+[33:38] So after so much time
+[33:40] it comes back to itself.
+[33:42] What do you call that duration?
+[33:44] Pulse width.
+[33:46] The purpose of mono-stable multivibrator
+[33:48] is to make pulse.
+[33:50] For example,
+[33:52] for some time it will be 1
+[33:54] and for rest time it will be 0
+[33:56] so who can you use there?
+[33:58] For mono-stable multivibrator
+[34:00] assume that its stable state is 0
+[34:02] you put an input and sent 0 to 1
+[34:04] after some time it will come back to itself
+[34:06] to 0.
+[34:08] After so much time it will come back to itself
+[34:10] you got pulse of that amount of time.
+[34:16] Is this clear?
+[34:18] Let me draw and show you
+[34:20] what I am trying to say here.
+[34:24] For example,
+[34:26] assume that its stable state is 0
+[34:28] you had to send it to 1
+[34:30] so you put an input
+[34:32] and it went to 1
+[34:34] but after some time it will come back to itself
+[34:36] to 0.
+[34:38] You don't have to work hard in this
+[34:40] and after so much time
+[34:42] it comes back to 0 that is called as pulse width.
+[34:44] Assume that it is stable
+[34:46] and this state
+[34:48] is unstable
+[34:50] ok
+[34:52] so to go from stable
+[34:54] to unstable
+[34:56] what you have to give here
+[34:58] external input
+[35:06] and this duration
+[35:08] will be called as your
+[35:10] pulse width
+[35:12] Is it clear now?
+[35:14] Is it clear now?
+[35:16] Is it clear now?
+[35:18] So you have to give input
+[35:20] ok, here it is stable
+[35:24] from unstable to stable state
+[35:26] it comes back to itself
+[35:28] after some time
+[35:30] after a duration called as pulse width
+[35:32] Now this is a stable multivibrator
+[35:34] whose both are
+[35:36] Rohit, I have taken an example
+[35:38] what I have said that
+[35:40] RC circuit is an exponential
+[35:42] that means
+[35:44] then you are entering the circuit
+[35:46] I have not said this
+[35:48] ok
+[35:50] and the way we will read the circuits
+[35:52] their output is not exponential
+[35:54] because if we take the output from opamp
+[35:56] then its output is Vsat
+[35:58] or minus Vsat
+[36:00] Aman is asking how will the pulse width be controlled
+[36:02] Aman brother will stop
+[36:04] when I will teach the mono-stable multivibrator
+[36:06] then I will also teach the pulse width
+[36:08] Now what I have told
+[36:10] if you understand what multivibrator is
+[36:12] how much it is
+[36:14] what is its name
+[36:16] how is its circuit
+[36:18] ok, its pulse width
+[36:20] will also derive
+[36:22] how to control the pulse width
+[36:24] all this will be discussed
+[36:26] just need to be patient
+[36:28] now what is the unstable multivibrator
+[36:30] now what is the unstable multivibrator
+[36:32] whose one
+[36:34] is not stable state
+[36:36] means it is not happy anywhere
+[36:38] it can never be happy
+[36:40] if its output is 1
+[36:42] then its unstable
+[36:44] it will go to 0 for a while
+[36:46] the output is 0 and still it is sold
+[36:48] it will come to 1 after a while
+[36:50] so this circuit will continue to cut
+[36:52] between 1 and 0
+[36:54] between high and low
+[36:56] it cannot be settled anywhere
+[36:58] so such a multivibrator
+[37:00] is called as the
+[37:02] unstable multivibrator
+[37:04] the thali's bag is not cut
+[37:06] its pulse is heavy
+[37:08] what is this
+[37:10] it is a person who is not happy
+[37:12] who never stays happy
+[37:14] so whatever you give it
+[37:16] it will not satisfy
+[37:18] so it will return to another state
+[37:20] ok, so what will you say here
+[37:22] both the states
+[37:28] are
+[37:30] unstable
+[37:36] so
+[37:40] multivibrator
+[37:42] keeps
+[37:46] oscillating
+[37:52] between the two states
+[38:00] after
+[38:02] regular
+[38:06] intervals
+[38:12] so the output
+[38:14] of such a multivibrator
+[38:16] which is the output of
+[38:18] such a multivibrator
+[38:22] is a periodic wave
+[38:24] periodic wave
+[38:26] will come, I am not saying
+[38:28] its duty cycle will be
+[38:30] 50% or less
+[38:32] but the output will be
+[38:34] periodic, this is for sure
+[38:36] ok, the output will be
+[38:38] periodic, this is for sure
+[38:40] the matter is cleared
+[38:42] this is cleared
+[38:44] as stable multivibrator
+[38:46] so what is the benefit of this
+[38:48] as if we need a square wave
+[38:50] as if we take the example of clock signal
+[38:52] we need a square wave
+[38:54] so what kind of multivibrator
+[38:56] is needed as stable
+[38:58] what is needed as stable
+[39:00] we are asking a question
+[39:02] how to practice analogue
+[39:04] study material and PYQ
+[39:06] and from electrical
+[39:08] analogue comes in 4 or 5 numbers
+[39:10] study material and PYQ
+[39:12] will be 1200 questions
+[39:14] and how much do you want to apply
+[39:16] for analogue
+[39:18] the weightage of it is
+[39:20] the time of preparation
+[39:22] that is 2000-3000 questions
+[39:24] so these common subjects
+[39:26] why study material and PYQ
+[39:28] are available to you
+[39:30] that there should be no need to think
+[39:32] in common subjects
+[39:34] and maximum of you people
+[39:36] don't practice
+[39:38] there is no problem in preparation
+[39:40] you people enjoy in theory
+[39:42] don't practice and you want a question
+[39:44] that you get 2000-2000 questions
+[39:46] when you don't want to apply
+[39:48] will you do 2000 questions
+[39:50] now
+[39:52] we will start the study of multivibrators
+[39:54] first I will take
+[39:56] bi-stable multivibrator
+[39:58] which is called Schmidt Trigger
+[40:00] what is called Schmidt Trigger
+[40:02] now look at Schmidt Trigger
+[40:04] there are two types
+[40:06] inverting and non-inverting
+[40:08] inverting means
+[40:10] the input given
+[40:12] that is given to the inverting terminal
+[40:14] and here
+[40:16] what have you applied
+[40:18] positive feedback
+[40:20] what have you applied
+[40:22] now look at Rohit
+[40:24] he was sweating since many days
+[40:26] that
+[40:28] we have to see positive feedback
+[40:30] or positive feedback
+[40:32] so inverting Schmidt Trigger
+[40:34] means
+[40:36] that V-in
+[40:38] is connected
+[40:44] at
+[40:46] inverting terminal
+[40:48] now look
+[40:50] in this situation
+[40:52] you know this is a linear region
+[40:54] it is very small
+[40:56] all of you know
+[40:58] the linear region of opam
+[41:00] is very small
+[41:02] now
+[41:04] if you apply positive feedback
+[41:06] then it is very small
+[41:08] linear region
+[41:10] and here your output
+[41:12] either is plus V-sat
+[41:14] or minus V-sat
+[41:16] means output always
+[41:18] remains in the saturation
+[41:20] because the linear region is very
+[41:22] very small
+[41:24] so I am saying
+[41:26] with positive feedback
+[41:32] with positive feedback
+[41:38] the linear region
+[41:42] the linear region
+[41:46] of opam characteristics
+[41:52] of opam
+[41:56] characteristics
+[42:04] becomes very narrow
+[42:14] and hence
+[42:16] and hence
+[42:18] always
+[42:20] always
+[42:22] always
+[42:24] saturates
+[42:26] so
+[42:28] output V-sat or minus V-sat
+[42:30] can come
+[42:32] okay
+[42:34] so in case of positive feedback
+[42:36] what is the fund of output
+[42:38] see
+[42:40] that if
+[42:42] the voltage of positive terminal
+[42:44] greater than negative terminal
+[42:46] V-sat will be plus V-sat
+[42:50] and if the voltage of positive terminal
+[42:52] is less than negative
+[42:54] then V-sat
+[42:56] will be minus V-sat
+[42:58] this is the fund
+[43:00] okay Rohit
+[43:02] that is why I was saying that
+[43:04] exponentially it does not decay
+[43:06] either V-sat or minus V-sat
+[43:08] exponentially does not go
+[43:10] here only two levels are possible
+[43:12] there is no value of the middle
+[43:14] how to do the analysis of the circuit
+[43:16] tell me is this fundamental clear
+[43:18] then I will come to the analysis of the circuit
+[43:20] if it is fundamental clear
+[43:22] and what you have to think here
+[43:24] you have to understand the analysis here
+[43:26] there is no decay
+[43:28] be careful
+[43:30] there is no decay
+[43:32] you have to understand the method
+[43:34] now see what I do
+[43:36] I can see the voltage of negative terminal
+[43:38] it is V-in
+[43:40] I want to get the voltage of positive terminal
+[43:42] what I say for that
+[43:44] see here is
+[43:46] zero ampere current
+[43:50] okay the input current of opamp
+[43:52] because of which R1 and R2
+[43:54] are in series
+[43:56] because of which your R1 and R2
+[43:58] are in series
+[44:00] now what can you say here
+[44:04] that the voltage of inverting terminal
+[44:06] is V-in
+[44:08] and the voltage of
+[44:10] terminal is the voltage
+[44:12] remove it from the voltage division
+[44:14] R2 by R1 plus R2
+[44:16] V-0
+[44:18] now listen to me one thing
+[44:20] when the voltage on the input
+[44:22] goes from V-0
+[44:24] you call it feedback
+[44:26] so this is V positive
+[44:28] the feedback voltage is correct
+[44:30] because it is going back to the input
+[44:32] from the output
+[44:34] so the feedback voltage
+[44:36] is that you cannot write it as beta V-0
+[44:38] you cannot write it as beta V-0
+[44:40] I told you in the feedback amplifier
+[44:42] that beta is the
+[44:44] beta is the
+[44:46] feedback factor
+[44:48] what is beta
+[44:50] feedback factor
+[44:52] which is for this circuit
+[44:54] R2 by
+[44:56] R1 plus R2
+[44:58] is this clear
+[45:00] this is your feedback factor
+[45:04] now what I say here
+[45:06] if you want to do
+[45:08] Schmidt trigger analysis
+[45:10] then you take the output
+[45:12] of both the states
+[45:14] like take case 1
+[45:16] because you have a
+[45:18] bi-stable multivibrator
+[45:20] so both the states are stable
+[45:22] case 1
+[45:24] V-0 equal to
+[45:26] V-SAT
+[45:28] we will analyze both the cases
+[45:30] V-0 equal to V-SAT
+[45:32] now
+[45:34] from this
+[45:36] the voltage of the negative terminal
+[45:38] is V-in
+[45:40] and the positive terminal
+[45:42] will be beta V-SAT
+[45:44] correct
+[45:46] you will say
+[45:48] if
+[45:50] beta V-SAT
+[45:52] is greater than
+[45:54] V-in
+[45:56] beta V-SAT is greater than
+[45:58] V-in
+[46:00] if the voltage of the terminal is more than
+[46:02] V-in
+[46:04] then what will you say here
+[46:06] V-0
+[46:08] remains at V-SAT
+[46:10] means
+[46:12] it is lying in its stable state
+[46:14] there is no tension
+[46:16] if both the states are stable
+[46:18] then it will be lying in it
+[46:20] it will not come out
+[46:22] you agree that it is V-SAT
+[46:24] and only V-SAT is coming
+[46:26] so V-0 will be on the same state
+[46:28] it will not do
+[46:30] but my brother
+[46:32] if the condition would have been reversed
+[46:34] if V-in
+[46:36] would have been greater than
+[46:38] beta V-SAT
+[46:40] if the voltage of the input voltage
+[46:42] means the voltage of the
+[46:44] inverting terminal
+[46:46] would have been greater than the non-inverting
+[46:48] if the voltage of the inverting is more
+[46:50] then V-0 should come
+[46:52] minus V-SAT
+[46:54] so I will not say this directly
+[46:56] V-0 switches from
+[46:58] because
+[47:00] earlier you considered V-SAT
+[47:02] V-0 switches from
+[47:04] plus V-SAT
+[47:06] to
+[47:08] minus V-SAT
+[47:10] so here
+[47:12] the switching came
+[47:14] means beta put more input
+[47:16] than V-SAT
+[47:18] when the output was V-SAT
+[47:20] then it will switch and come
+[47:22] minus V-SAT
+[47:24] now see, I have analyzed
+[47:26] the case 1
+[47:28] you do the case 2 with me
+[47:32] what will you say in case 2
+[47:36] that V-0 is
+[47:38] minus
+[47:40] V-SAT
+[47:42] if V-0 is
+[47:44] minus V-SAT
+[47:46] then you know that the
+[47:48] voltage of the negative terminal is V-in
+[47:50] and
+[47:52] what will be the voltage of the negative terminal
+[47:54] will be
+[47:56] minus beta V-SAT
+[47:58] how much will it be
+[48:00] minus beta V-SAT
+[48:02] okay
+[48:04] now we will do it again
+[48:06] if V-in
+[48:10] is greater
+[48:12] minus beta V-SAT
+[48:14] means
+[48:16] the voltage of the inverting terminal
+[48:18] is more
+[48:20] so V-0 should come
+[48:22] minus V-SAT
+[48:24] I have already taken minus V-SAT
+[48:26] so V-0 remains
+[48:28] at
+[48:30] minus V-SAT
+[48:32] okay
+[48:36] and if V-in is smaller
+[48:42] if the inverting terminal
+[48:44] voltage is smaller
+[48:46] then your V-0 should come
+[48:48] plus V-SAT
+[48:50] so we say
+[48:52] V-0 switches from
+[48:54] minus V-SAT
+[48:56] to plus V-SAT
+[49:00] so one thing
+[49:02] understand
+[49:04] the threshold for input
+[49:06] is beta V-SAT
+[49:08] and minus beta V-SAT
+[49:10] if you see threshold for V-in
+[49:12] one is beta V-SAT
+[49:14] and one is minus beta V-SAT
+[49:16] they are called
+[49:18] triggering point
+[49:20] what they call triggering point
+[49:22] the big value
+[49:24] is upper triggering point
+[49:26] UTP and the small value
+[49:28] is called as
+[49:30] lower triggering point
+[49:34] okay so
+[49:36] triggering point
+[49:38] okay
+[49:44] so what I am saying here
+[49:50] that threshold
+[49:52] voltage
+[49:58] for V-in
+[50:04] to change the
+[50:08] output state
+[50:14] is called
+[50:16] triggering point
+[50:22] okay so we don't have to value it
+[50:24] we just have to remember
+[50:26] what is threshold for V-in
+[50:28] so
+[50:30] the higher value is
+[50:32] upper triggering point
+[50:34] no one should think
+[50:36] what to take
+[50:38] remove both the values
+[50:40] the higher value is called
+[50:42] UTP
+[50:44] upper triggering point
+[50:46] the big value is the same
+[50:48] V-0 will get UTP
+[50:50] and minus
+[50:52] V-SAT will get LTP
+[50:54] remove both the values
+[50:56] the big one is UTP
+[51:00] and lower value
+[51:02] is called as
+[51:04] LTP
+[51:10] lower
+[51:16] triggering
+[51:18] point
+[51:20] okay
+[51:22] this was clear
+[51:24] two things happened one UTP
+[51:26] and one LTP
+[51:28] one UTP and one LTP
+[51:30] Nirmal
+[51:32] tell me where did you see
+[51:34] three phase
+[51:36] second case
+[51:38] second point
+[51:40] if V-in is less than
+[51:42] minus beta V-SAT
+[51:44] means the voltage of
+[51:46] inverting terminal is less than
+[51:48] non-inverting
+[51:50] if it is more than non-inverting
+[51:52] then V-0 should be V-SAT
+[51:54] how much are you taking
+[51:56] minus V-SAT
+[51:58] means you are switching
+[52:00] from minus V-SAT to V-SAT
+[52:02] understood
+[52:04] how much are you taking
+[52:06] it is written in the heading
+[52:08] now look at the output
+[52:10] you are getting two values
+[52:12] V-SAT and minus V-SAT
+[52:14] and the threshold of input is beta V-SAT
+[52:16] and minus beta V-SAT
+[52:18] according to this
+[52:20] its transfer characteristic is formed
+[52:22] this is important
+[52:24] to understand the transfer characteristic of Schmitt trigger
+[52:58] so
+[53:10] ok
+[53:14] what I did
+[53:16] I made thresholds here
+[53:22] V-in's thresholds
+[53:24] and the limits of output. Now understand how to draw a graph. Now understand that when
+[53:41] the value of V0 is Vsat, when the value of V0 is Vsat, if your input is below beta Vsat,
+[53:50] then V0 will be Vsat only. If your input is below beta Vsat, then V0 will be Vsat only.
+[53:58] See, you took input, sorry, output, Vsat. What are you saying that until the input is less than beta
+[54:09] Vsat, see, until your input is less than beta Vsat, take it from somewhere, but beta Vsat is less than beta Vsat,
+[54:21] then your output will be Vsat only. Did you understand this? You are increasing the input, but until you are less than beta Vsat,
+[54:32] then your output will be Vsat only. Now, as soon as you try to go up from beta Vsat,
+[54:41] the input, as soon as you try to go ahead from beta Vsat, the output is immediately minus Vsat.
+[54:48] The input, as soon as you try to go ahead from beta Vsat, the output will immediately switch to minus Vsat.
+[54:57] Did you understand this? It has switched. Now, when you come to minus Vsat, then you are saying that until the input is
+[55:05] before minus beta Vsat, before minus beta Vsat, then the output will remain minus Vsat only.
+[55:14] Until the input is before minus beta Vsat, then the output will remain minus Vsat only.
+[55:21] That is, until the input is before minus beta Vsat, then you will remain on this only.
+[55:29] And as soon as you try to go back from minus beta Vsat, you will immediately jump to minus Vsat.
+[55:43] Okay? As soon as you try to go up from minus beta Vsat, then it immediately jumps.
+[55:54] Okay? With this type.
+[56:00] This is clear. So, this is its transfer characteristic.
+[56:04] It is clear? Whenever you try to go ahead from beta Vsat, the output is minus from plus.
+[56:11] If you try to go back from minus beta, then it goes from minus to plus.
+[56:16] So, this is a clockwise graph. Okay?
+[56:19] Now, here you see, if I want to make a waveform, suppose I have taken an input of a sinusoidal wave.
+[56:27] I will also make a waveform and show you.
+[56:30] Suppose you have taken a sinusoidal wave of an input.
+[57:11] I have taken an input of a sinusoidal wave.
+[57:21] Now, if you try to go back from minus beta Vsat, then it will be minus beta Vsat.
+[57:29] So, this is a sinusoidal wave.
+[57:32] Now, if you try to go back from minus beta Vsat, then it will be minus beta Vsat.
+[57:39] Okay? I have taken this input.
+[57:41] Now, how to make a comparison of the input?
+[57:44] The comparison of the input is beta Vsat and minus beta Vsat.
+[57:52] The comparison of the input is beta Vsat and minus beta Vsat.
+[57:57] Suppose this is beta Vsat.
+[58:08] And this is your minus beta Vsat.
+[58:39] See this.
+[58:42] Now, what we have said is that when the input goes above beta Vsat,
+[58:48] the input is this threshold and the pink line is beta Vsat.
+[58:54] And this threshold is the threshold and the pink line is beta Vsat.
+[59:00] Then this threshold is this threshold and the pink line is beta Vsat.
+[59:04] This threshold and the pink line is beta Vsat and minus beta Vsat.
+[59:10] So, when the input goes above beta Vsat, then your output will go from Vsat to minus Vsat.
+[59:19] Where will it go? Then your output will go from Vsat to minus Vsat.
+[59:24] So, see I have made a line here. This is the line of Vsat.
+[59:28] Which we have to trace.
+[59:31] And this is the line of minus Vsat.
+[59:35] So, see when the input goes above the pink line,
+[59:41] then the output should come from Vsat to minus Vsat.
+[59:49] Okay.
+[59:52] And then when the minus beta Vsat goes down, then you should switch it to plus Vsat.
+[59:59] Okay.
+[60:00] Then you should switch it to plus Vsat.
+[60:02] Now, when the input goes above beta Vsat, then you should switch it to minus Vsat.
+[60:08] Then when the input goes below the minus beta Vsat.
+[60:14] Okay.
+[60:16] One minute.
+[60:19] What have we done?
+[60:21] We have sent it to minus beta Vsat and when it goes below it.
+[60:29] This is wrong.
+[60:30] Okay.
+[60:32] Okay.
+[60:39] Yes.
+[60:40] So, see when the input goes above beta Vsat, plus Vsat.
+[60:44] And when the input goes below minus beta Vsat,
+[60:49] plus Vsat.
+[60:52] Now, when the input goes above beta Vsat, then again minus Vsat.
+[61:01] Now, when the input goes below minus beta Vsat, plus Vsat.
+[61:09] Okay.
+[61:10] So, this type will be your output.
+[61:14] This square wave type will be Vsat and minus Vsat.
+[61:19] Now, a child is asking what will be the noise margin.
+[61:22] The noise margin is called this.
+[61:24] The noise margin is called this.
+[61:28] That is UTP minus LTP.
+[61:31] Because if you put any signal in the middle of it,
+[61:35] then your output will not change.
+[61:39] It is also called hysteresis voltage.
+[61:41] What else do we call it?
+[61:43] Hysteresis voltage.
+[61:47] Also called as hysteresis width.
+[61:54] Okay.
+[62:00] Okay.
+[62:02] This is clear.
+[62:03] It is also called hysteresis width.
+[62:05] UTP minus LTP.
+[62:08] This is clear.
+[62:09] When your input goes above beta Vsat,
+[62:16] then your output travels from Vsat to minus Vsat.
+[62:25] And when your input goes below beta Vsat,
+[62:32] then your output travels from minus Vsat to plus Vsat.
+[62:41] That's it.
+[62:42] There is so much logic.
+[62:46] Dear, this is the last class of analogue of gate syllabus.
+[62:51] So dear, we are not in the DLD class.
+[62:54] This is the class of analogue for electrical EC instrumentation.
+[62:57] Digital logic is a channel.
+[62:59] It is called computer science.
+[63:01] I have taken the entire DLD of computer science on that.
+[63:07] If I tell you, then UTP minus LTP.
+[63:10] What else do I have to do?
+[63:12] If you want to take out the noise margin.
+[63:15] If you want to take out the NMH, then this is VOH minus VIH Vsat minus beta Vsat.
+[63:31] If you want to take out the digital definition.
+[63:45] So you can take it out like this too.
+[63:51] Take it out from this type.
+[63:56] Come on.
+[63:57] This is clear.
+[63:59] Now let's come to this circuit.
+[64:02] Look at this circuit.
+[64:03] It has changed it.
+[64:04] It has also put a VR.
+[64:06] What has it put?
+[64:07] It has put reference voltage.
+[64:10] It has put reference voltage here.
+[64:13] So you guys do an analysis of this.
+[64:16] What you have to do is first take out the positive terminal voltage V plus.
+[64:22] What you have to do is first take out V plus.
+[64:25] Come on.
+[64:29] Kantilal, this was already told by Dhandesar that the video will be your premiere when you want to see.
+[64:35] After that it will be private.
+[64:37] It was never a promise that the video will always be public.
+[64:43] And the control system on this channel was public.
+[64:54] It was public.
+[64:55] It will be public.
+[64:58] Come on.
+[65:00] Take out the positive terminal voltage.
+[65:06] You have understood the analysis method.
+[65:08] How do you analyze Schmidt Trigger.
+[65:11] The method has been cleared well.
+[65:15] So look.
+[65:18] The voltage of the positive terminal will be taken out from the superposition like dual supply bias.
+[65:24] V0 R2 by R1 plus R2 plus reference voltage into R1 by.
+[65:36] Once we ground V0 once to VR.
+[65:39] And then we put it from the second voltage.
+[65:42] Voltage division.
+[65:44] If you have heard my sentence, this is the last lecture of Gate syllabus.
+[65:50] Tell me one thing.
+[65:51] Are you following this lecture from the beginning or not?
+[65:54] Because all the kids are with me regularly.
+[65:57] They know where the syllabus is.
+[65:59] And what is going to happen next.
+[66:01] They also know.
+[66:09] Let's write it like this for you.
+[66:13] Okay.
+[66:16] Now what did I tell you the way.
+[66:18] Once consider V0 as V sat.
+[66:20] And once consider minus V sat.
+[66:22] As I had written.
+[66:24] Just like I had made two cases here.
+[66:27] Make these two cases like this.
+[66:32] Come on.
+[66:37] You have understood.
+[66:40] Case one.
+[66:43] V0 equal to plus V sat.
+[66:50] Now how much is the positive terminal voltage.
+[67:10] Okay.
+[67:12] This is done.
+[67:14] Tell it like this.
+[67:25] So beta added a value in V sat.
+[67:29] Say it like this.
+[67:31] Right?
+[67:32] What is the value of beta.
+[67:34] R2 by R1 plus R2.
+[67:39] And inverting terminal voltage is V in.
+[67:44] Okay.
+[67:45] Now you will do comparison.
+[67:47] Now you will do comparison of positive and negative terminal voltages.
+[67:52] If the positive terminal voltage is greater than negative.
+[67:57] Means V in.
+[68:02] V in.
+[68:05] Less than.
+[68:07] Beta V sat.
+[68:10] Plus VR.
+[68:12] R1 by R1 plus R2.
+[68:18] So V0 remains at.
+[68:25] Plus V sat.
+[68:29] And if the inverting terminal is increased.
+[68:33] Means V in if it is increased.
+[68:39] Now you see that UTP has changed.
+[68:41] Which used to be beta V sat earlier.
+[68:44] Now there is one term added in it.
+[68:48] So what will happen here?
+[68:49] If the inverting terminal voltage is increased.
+[68:53] So V0 switches from.
+[68:58] Plus V sat to.
+[69:02] Minus V sat.
+[69:07] Okay.
+[69:08] V0 will switch.
+[69:11] Now take case 2.
+[69:19] V0 equal to minus V sat.
+[69:24] Now logic is clear.
+[69:25] How to use Schmidt trigger in any question.
+[69:29] Now V0 equal to minus V sat.
+[69:31] If you take it.
+[69:32] Then the positive terminal voltage will be.
+[69:36] Minus beta V sat.
+[69:39] This term will remain in plus.
+[69:41] There will be no difference in taking V sat and minus V sat.
+[69:48] Now if you say that the voltage of negative terminal.
+[69:52] Is greater than positive terminal.
+[69:54] Say.
+[69:56] Means V in is greater than.
+[69:59] Minus beta V sat.
+[70:02] Plus VR.
+[70:05] R1 by R1 plus R2.
+[70:09] If the inverting terminal is increased.
+[70:12] So V0.
+[70:16] Remains at.
+[70:19] Minus V sat.
+[70:22] And if the voltage of the inverting terminal is small.
+[70:28] Okay.
+[70:29] By the way, you don't need to write systematically in the exam.
+[70:33] You just have to think about it.
+[70:36] Okay.
+[70:37] And verify with options.
+[70:38] If you want to keep the graph of the transfer characteristic.
+[70:43] I am writing this for you.
+[70:45] So that you can never revise.
+[70:47] So you can understand the whole end to end.
+[70:50] So in such a situation V0 switches from.
+[70:56] Minus V sat to plus V sat.
+[71:03] Okay.
+[71:04] Minus V sat to plus V sat.
+[71:07] Is this clear?
+[71:08] Means this time what has changed?
+[71:20] Means this time your change.
+[71:22] Do you know what happened?
+[71:24] This time your UTP will come.
+[71:26] Only beta V sat is not coming.
+[71:31] Let me tell you.
+[71:36] This time your UTP is coming.
+[71:39] That is beta V sat.
+[71:43] Plus.
+[71:45] Minus V sat.
+[71:47] Plus.
+[71:48] V R.
+[71:51] R1 by R1 plus R2.
+[71:56] And your LTP is coming.
+[72:02] That is coming.
+[72:03] Means UTP and LTP are both right shifted.
+[72:07] With a particular voltage.
+[72:09] With a particular voltage.
+[72:16] So what are we saying?
+[72:17] Both UTP.
+[72:19] And LTP.
+[72:22] Are.
+[72:24] Right shifted.
+[72:29] By.
+[72:35] V R.
+[72:37] R1 plus R2 into.
+[72:40] R1.
+[72:41] But if you look at hysteresis width.
+[72:45] If you look at the width of hysteresis curve.
+[72:50] That will still come.
+[72:52] UTP minus LTP.
+[72:54] Because in that V R term will be cut.
+[72:57] It will remain the same.
+[72:59] Two beta V sat.
+[73:02] Okay.
+[73:07] V R.
+[73:11] Here also keep the noise margin digital.
+[73:20] Okay.
+[73:21] Keep the definition of noise margin.
+[73:23] Output high minus input high.
+[73:26] Is this clear?
+[73:37] What are you doing Uttkarsh?
+[73:40] Yes.
+[73:41] So in hysteresis width there is no change.
+[73:43] But your whole graph.
+[73:45] Is right shifted.
+[73:49] Your whole graph.
+[73:51] Is right shifted.
+[73:52] See what I did to show the right shift in the graph.
+[73:56] I left shifted the cursor or the arrow of the graph.
+[74:01] Left shifted.
+[74:05] Now how much is here.
+[74:09] This is minus beta V sat.
+[74:13] Plus.
+[74:15] V R.
+[74:17] R1 by.
+[74:19] R1 plus R2.
+[74:24] So the whole graph is right shifted.
+[74:29] Okay.
+[74:31] Is it clear?
+[74:35] This is clear.
+[74:36] What happened?
+[74:37] The whole graph is right shifted.
+[74:39] That is.
+[74:43] Using.
+[74:45] Reference voltage.
+[74:51] Shifts.
+[74:53] Hysteresis curve.
+[74:55] You can call it hysteresis curve.
+[74:58] Hysteresis curve.
+[75:02] Horizontally.
+[75:08] With no change.
+[75:11] With.
+[75:12] No change.
+[75:15] In height or width.
+[75:17] Neither the height of the graph changed.
+[75:20] Nor the width of the graph changed.
+[75:26] Is right shifted.
+[75:27] Okay.
+[75:28] So height and width does not change.
+[75:30] Only with reference voltage the graph shifts.
+[75:33] Tell me if anyone has any doubt.
+[75:36] Then I will go to the next circuit.
+[75:38] If it is clear.
+[75:48] Is it clear.
+[75:50] Say.
+[75:52] Let's go ahead.
+[75:54] Now the next is non-inverting Schmitt trigger.
+[75:57] What does it mean?
+[75:58] It means V in.
+[76:02] Is applied.
+[76:05] At.
+[76:07] Non-inverting terminal.
+[76:19] Okay.
+[76:20] We will do it with the basics.
+[76:22] Take out the positive terminal voltage again.
+[76:27] V plus.
+[76:28] Come on.
+[76:29] Take out V plus quickly.
+[76:35] Come on everybody.
+[76:37] I need V plus.
+[76:52] V plus.
+[77:14] Take out.
+[77:17] So see the dual supply bias.
+[77:19] Take out.
+[77:22] First ground V in or first ground V naught.
+[77:26] V in.
+[77:28] R1 by.
+[77:32] R1 plus R2.
+[77:34] V naught.
+[77:40] Now see I want the coefficient 1 of V in.
+[77:45] So I take out this thing.
+[77:47] Why is that sir.
+[77:48] Because threshold is required in V in.
+[77:51] That is why I have done the coefficient 1 of V in.
+[77:55] So this is left here.
+[78:01] Okay.
+[78:03] Is this clear.
+[78:05] Now what is the voltage of the inverting terminal.
+[78:08] The voltage of the inverting terminal is zero.
+[78:12] Correct.
+[78:13] The voltage of the inverting terminal is zero.
+[78:16] We will have to make two more cases.
+[78:19] We will have to make two more cases.
+[78:21] Come on.
+[78:22] Make it quickly.
+[78:23] Once V naught in case 1.
+[78:26] And in case number 2.
+[78:28] Take V naught minus V sat.
+[78:30] Come on everybody.
+[78:40] Come on.
+[78:41] Come on quickly.
+[78:48] Come on.
+[78:54] Don't take out the beta.
+[78:56] What am I saying now.
+[78:57] Listen carefully.
+[78:58] Make a case.
+[79:00] If you want then write it like this.
+[79:07] Now the beta will be.
+[79:12] R2 by R1.
+[79:15] Sir why.
+[79:16] Because in the equation of V in.
+[79:18] See this is the work of the voltage feedback with V in.
+[79:23] How much voltage is mixed in V in.
+[79:26] V naught R2 by R1.
+[79:28] So beta will be R2 by R1.
+[79:32] Come on.
+[79:33] Now see both the cases.
+[79:41] Case 1.
+[79:47] V naught is plus V sat.
+[79:53] Now what will be the voltage of your positive terminal.
+[80:08] This will be.
+[80:12] And the voltage of the inverting terminal will be zero.
+[80:16] Now I will say that if the positive terminal voltage is greater than 0 then V0 remains at Vsat, correct?
+[80:30] It will remain at Vsat only.
+[80:32] And what does this mean?
+[80:34] V in greater than minus beta Vsat, okay?
+[80:42] And if the positive terminal voltage is negative, that is, it is less than the inverting terminal,
+[80:50] then it switches from plus Vsat to minus Vsat, okay?
+[81:02] Then here, this means V in less than minus beta Vsat, okay?
+[81:13] This is clear here.
+[81:15] Compare the positive and negative terminal voltages.
+[81:20] Pay attention to this.
+[81:25] It is fun.
+[81:26] Now it seems that we will make a Schmitt trigger, whatever comes.
+[81:29] Tell me, is there confidence in the Schmitt trigger?
+[81:33] Because there is only one method, right?
+[81:35] There is no need to put any thought in the method here.
+[81:38] If V0 is taken as minus Vsat, then the positive terminal voltage will be R1 by R1 plus R2.
+[81:57] V in minus beta Vsat.
+[82:05] This will happen, okay?
+[82:07] Now what do you say here?
+[82:12] The negative terminal is grounded.
+[82:14] If the positive terminal voltage is less than zero, then V0 remains at minus Vsat.
+[82:27] Less than zero means V in less than beta Vsat.
+[82:35] Do you understand that the outside factor is actually irrelevant, right?
+[82:41] R1 by R1 plus R2.
+[82:43] Because the comparison of this voltage is happening from zero every time.
+[82:46] And if the positive terminal voltage is greater than zero, then V0 switches from minus Vsat to plus Vsat.
+[83:04] Okay?
+[83:06] This will happen.
+[83:08] If this happens, this means V in greater than beta Vsat.
+[83:16] Okay?
+[83:34] Now see, if we talk about the triggering point, then what did I tell you?
+[83:59] That the value higher is called UTP, the lower one is called LTP, correct?
+[84:07] The higher one is called UTP, the lower one is called LTP.
+[84:11] Now see, there are two thresholds in VIN.
+[84:14] One is beta Vsat minus beta Vsat and one is beta Vsat.
+[84:19] Who is bigger?
+[84:20] Beta Vsat, then you will call it UTP.
+[84:23] What will happen here?
+[84:25] UTP is beta Vsat and LTP is minus beta Vsat.
+[84:37] Okay?
+[84:39] So what happened to the hysteresis width?
+[84:43] UTP minus LTP, that is 2 beta Vsat.
+[84:59] Okay?
+[85:01] 2 beta Vsat.
+[85:03] Now see here, what is the change?
+[85:05] You said that if V0 plus Vsat and V in minus beta Vsat goes down, then it will switch from plus to minus.
+[85:16] If V in minus beta Vsat goes down, then it will switch from plus to minus.
+[85:23] That means, first remove this arrow.
+[85:35] You said that if your input goes down minus beta Vsat, then it will switch.
+[85:52] That means, it will remain on Vsat until the input is greater than minus beta Vsat.
+[86:00] Okay?
+[86:02] So this time the switching from plus to minus will be greater than minus beta Vsat.
+[86:12] See here, this time you said that until V in minus beta Vsat is greater than V0 will remain on Vsat.
+[86:20] That means, when V in is greater than minus beta Vsat, then V0 remains at Vsat.
+[86:27] As soon as you try to go back from this, it will switch immediately.
+[86:31] Then you said that if V in is smaller than beta Vsat, then V0 will remain on minus Vsat.
+[86:40] If beta Vsat is smaller than beta Vsat, then beta means smaller than beta Vsat.
+[86:47] Okay?
+[86:49] So it will remain as it is.
+[86:51] But dear, if you try to go up from beta Vsat, then your output will switch from minus to plus.
+[86:59] So if you try to go ahead from beta Vsat, then this switching came from minus to plus.
+[87:06] That means the graph that was clockwise became anti-clockwise.
+[87:13] Right?
+[87:14] What happened?
+[87:15] The traversal of hysteresis curve becomes anti-clockwise from clockwise.
+[87:36] So there is nothing in inverting or non-inverting, dear.
+[87:39] The value of beta has changed.
+[87:41] Here beta became R2 by R1.
+[87:44] There R2 by R1 plus R2 was there.
+[87:48] Here R2 by R1 has changed.
+[87:50] And your graph's traversal has changed.
+[87:53] If the graph's traversal changes, you know what the difference will be in waveform.
+[87:57] I will show you this too.
+[88:11] Okay?
+[88:12] What will the difference be here this time?
+[88:15] The difference is that if Vn is smaller than minus beta Vsat.
+[88:19] These conditions have been exchanged, right?
+[88:21] If Vn is smaller than minus beta Vsat, then your output will go from Vsat to minus Vsat.
+[88:30] And if beta is bigger than Vsat, then minus to plus.
+[88:34] Look, beta is going to Vsat from minus to plus.
+[88:38] And minus is going to beta Vsat from plus to minus.
+[88:42] Now what will happen here, dear?
+[88:44] Your graph will reverse.
+[88:48] Because the switching criteria has been reversed.
+[88:53] And the value of beta has changed.
+[88:55] There are only two things.
+[88:56] The switching condition has been reversed.
+[88:58] And the value of beta has changed.
+[89:01] Now look, first it was minus.
+[89:03] As soon as beta went up from Vsat, then it went from minus to plus.
+[89:09] Now it will go down from minus to beta.
+[89:13] It will have to go from plus to minus immediately.
+[89:19] Okay?
+[89:20] Then it will have to go from beta to plus from minus.
+[89:28] So the nature of the graph has changed.
+[89:30] You can say this in one way.
+[89:31] So the graph has been inverted.
+[89:33] Whatever was your graph, it has become negative compared to the previous one.
+[89:37] But what is being made in the graph?
+[89:39] Square wave is also being made, right?
+[89:43] Did you understand?
+[89:44] That's it.
+[89:46] The value of beta has changed.
+[89:48] And the nature of the graph has been reversed.
+[89:50] Tell me, is everyone clear?
+[89:53] Is everyone clear or not?
+[89:55] Tell me quickly.
+[89:59] Are you clear?
+[90:06] Okay?
+[90:07] Okay.
+[90:08] I am making another class circuit.
+[90:09] Today we will do a stable mono-stable multivibrator in the next lecture.
+[90:12] I will try to take a class tomorrow.
+[90:15] By the way, I am going to the office tomorrow.
+[90:16] I will try to take the class from there.
+[90:18] And I will try to wind these oscillators up.
+[90:22] And we can do this as well.
+[90:23] Like we can add triple-five timer in the class of the oscillator tomorrow.
+[90:26] Or we can keep the oscillator separate.
+[90:28] You people say.
+[90:29] We can connect the triple-five timer with the multivibrator and finish it tomorrow.
+[90:33] Or first I will make the multivibrator tomorrow and then I will make the triple-five timer later.
+[90:42] V positive is minus three.
+[90:44] V negative is minus five.
+[90:45] If the positive one is bigger, then V will come.
+[90:48] Keep it separate.
+[90:49] Okay.
+[90:53] Now look a little.
+[90:56] We are looking at an application of Schmitt Trigger.
+[90:59] That is Triangle Wave Generator.
+[91:02] So the part you are seeing is your non-inverting Schmitt Trigger.
+[91:11] What is this?
+[91:13] Non-inverting Schmitt Trigger.
+[91:17] I know what I can get out of this is a square wave.
+[91:22] Okay.
+[91:23] As you saw, you had to put input in the Schmitt Trigger.
+[91:28] Whenever the state was to be changed.
+[91:30] V-in is changing according to this.
+[91:33] Okay.
+[91:34] V-in is changing according to this state.
+[91:36] That is, it was bi-stable.
+[91:38] If the state is to be changed, then we have to change the value of V-in.
+[91:43] Okay.
+[91:44] We have to change the value of V-in.
+[91:47] Now if we want to make a triangle wave from this square wave, then what did we do?
+[91:53] We put an integrator in front of this.
+[91:56] What did we do?
+[91:59] We put an integrator.
+[92:02] The integration of the square wave is Triangle.
+[92:06] Okay.
+[92:09] Now this voltage you are seeing is the output V of Schmitt Trigger.
+[92:16] Output of non-inverting Schmitt Trigger equal to V.
+[92:37] Okay.
+[92:39] You don't have to put input.
+[92:40] This is what you have to pay attention to.
+[92:42] Now pay attention here.
+[92:44] What happened?
+[92:49] Schmitt Trigger can generate.
+[92:53] First understand the circuit well.
+[92:55] Schmitt Trigger can generate.
+[93:01] Can generate.
+[93:03] Square wave.
+[93:09] Which integrator, which integrator converts to Triangle wave.
+[93:30] Okay.
+[93:32] The integrator converts this to Triangle.
+[93:35] Now look at the output of the integrator.
+[93:38] This is the feedback that is making the input.
+[93:41] What is the input here?
+[93:43] In the non-inverting Schmitt Trigger, there was an input here.
+[93:47] So the input here is the output of the integrator.
+[93:51] What is the input?
+[93:52] It is the output of the integrator.
+[93:54] Now look at how to analyze the circuit if it comes into the exam.
+[93:59] Let's do it with the basics.
+[94:01] We say add t equal to zero.
+[94:04] Take your capacitor as uncharged.
+[94:08] What to do?
+[94:10] Take your capacitor as uncharged on t equal to zero.
+[94:15] Now take the capacitor as uncharged and take some value of V.
+[94:21] Now take V equal to plus Vsat.
+[94:28] Okay.
+[94:29] Take it like this.
+[94:30] You have to believe something in the beginning.
+[94:32] Now here the current I will come.
+[94:35] Look how much I will come.
+[94:36] Here zero will come.
+[94:38] This is the circuit of negative feedback.
+[94:40] The integrator is zero.
+[94:42] So I will become Vsat by R.
+[94:48] And this will go ahead.
+[94:58] So what will be Vc?
+[95:02] You will write CdVc by dt.
+[95:17] I have put it in the place where it came.
+[95:19] The capacitor voltage is zero on zero.
+[95:22] You can assume it as Vc on t time.
+[95:24] Okay.
+[95:25] Now how much Vc has come from here?
+[95:28] Vsat by RC into t.
+[95:34] Now the V0 is the V0 of your integrator.
+[95:39] Here you can write V0 is minus Vc.
+[95:43] It will be zero minus Vc.
+[95:45] So how much V0 has come from here?
+[95:48] Minus Vsat into t by RC.
+[95:54] Now look at this non-inverting Schmitt trigger.
+[95:58] In the non-inverting Schmitt trigger.
+[96:06] Pay attention.
+[96:09] The non-inverting.
+[96:14] If I don't know its working from the beginning.
+[96:16] I don't have any sense of non-inverting.
+[96:19] So I will do it from the basics.
+[96:22] That my non-inverting Schmitt trigger.
+[96:28] What do I do in this?
+[96:30] I take out the positive terminal voltage.
+[96:34] V into R.
+[96:38] R2 by R1 plus R2.
+[96:41] And the second input is V0.
+[96:45] V0 R1 by R1 plus R2.
+[96:50] V0 is doing the input for this.
+[96:53] So what do you say here?
+[96:59] Take out the common V0 coefficient.
+[97:07] R1 by R1 plus R2.
+[97:19] V0 plus beta V.
+[97:23] Now look at V.
+[97:25] What do you consider to be V?
+[97:27] V is considered to be Vsat.
+[97:30] So how much is the positive terminal voltage?
+[97:37] R1 by R1 plus R2.
+[97:41] V0 plus beta Vsat.
+[97:44] So I say as soon as this goes negative.
+[97:50] immediately V will switch to minus Vsat.
+[97:58] It will immediately switch to minus Vsat.
+[98:02] Is this clear?
+[98:04] Now when will this negative go?
+[98:06] V0 less than minus beta Vsat.
+[98:10] You just took out V0, right?
+[98:13] Minus Vsat T by RC.
+[98:18] Less than minus beta Vsat.
+[98:23] So T greater than beta RC.
+[98:28] That means beta RC will switch to minus Vsat.
+[98:39] Is this correct?
+[98:41] Did you understand everything?
+[98:43] Tell me quickly.
+[98:45] Is this clear?
+[98:47] Tell me quickly.
+[98:49] That beta RC will switch to minus Vsat.
+[98:54] Is there any need to give input?
+[98:57] The output of the integrator itself worked.
+[99:08] Your V has become minus Vsat.
+[99:13] V0.
+[99:15] How much is the capacitor voltage?
+[99:18] Capacitor voltage is beta RC.
+[99:25] How much is the capacitor voltage?
+[99:29] Beta Vsat.
+[99:33] Okay?
+[99:35] Now see.
+[99:37] Now how much will be i?
+[99:40] Minus Vsat by RC.
+[99:45] Now what will you say?
+[99:49] Integration, DVC.
+[99:55] Minus Vsat by RC.
+[100:02] DT.
+[100:04] Okay?
+[100:06] Now tell beta RC T1.
+[100:10] Vc is beta Vsat on T1.
+[100:16] Now there is initial voltage in the capacitor.
+[100:19] Can't you say that there is no initial voltage in the capacitor?
+[100:27] Minus Vsat T minus T1 by RC.
+[100:35] How much is V0?
+[100:37] Minus Vc.
+[100:44] Plus Vsat by RC.
+[100:49] T minus T1.
+[100:52] This is done.
+[100:54] Now when you have taken V as minus Vsat.
+[101:01] When your V is minus Vsat.
+[101:05] So how much is the positive terminal voltage?
+[101:09] Now you had taken it out from the voltage division.
+[101:15] V0 plus beta, sorry.
+[101:20] Plus beta V.
+[101:24] R1 by R1 plus R2.
+[101:28] V0 minus beta Vsat.
+[101:36] Now what do I say?
+[101:38] The negative terminal voltage is zero.
+[101:41] So as soon as V is positive greater than zero.
+[101:45] V switches.
+[101:48] V will switch again.
+[101:51] From minus Vsat to Vsat.
+[101:56] So what will be the condition for that?
+[101:59] The condition for that is that V0 must be greater than beta Vsat.
+[102:06] Now how much is V0?
+[102:12] Vsat by RC.
+[102:14] I call it T2 minus T1.
+[102:18] Minus beta Vsat is greater than beta Vsat.
+[102:25] So Vsat will be cut.
+[102:27] So T2 minus T1 is 2 beta RC.
+[102:35] So basically how much is the duration this time?
+[102:38] 2 beta RC.
+[102:40] And your capacitor voltage will be minus beta Vsat.
+[102:49] Where did the capacitor start?
+[102:52] Minus beta Vsat.
+[102:54] Now how much is it?
+[102:56] Minus beta Vsat.
+[102:58] So let me show you what is happening here.
+[103:00] You will understand.
+[103:02] V0 minus Vc is yours.
+[103:04] So I want to make two graphs.
+[103:12] One is Vc.
+[103:14] Or let's do one thing.
+[103:16] Let's make a graph of Vc.
+[103:18] One minute.
+[103:20] Vc, V.
+[103:22] And let's make one of V.
+[103:26] This is Vc.
+[103:30] V0.
+[103:32] And V.
+[103:34] Okay.
+[103:36] I want to show you three graphs here.
+[103:48] V0 is minus Vc.
+[103:52] Simple.
+[104:00] And V plus and minus Vsat is falling in between.
+[104:06] Come on.
+[104:08] Come on.
+[104:18] Okay.
+[104:20] Now what did you initially believe in Vc?
+[104:24] V0.
+[104:26] And it was linearly charged.
+[104:28] How far?
+[104:30] How far was it charged?
+[104:32] To beta Vsat.
+[104:34] It immediately switched to Vsat minus Vsat.
+[104:36] So you initially believed in V plus Vsat.
+[104:40] Initially you believed in V plus Vsat.
+[104:44] And this voltage was our linear charge.
+[104:52] To beta Vsat.
+[104:54] Okay.
+[105:00] So look, this voltage was charged to beta Vsat.
+[105:04] And till then your V was charged to Vsat.
+[105:14] And this V0 was minus Vc.
+[105:18] It was minus Vc.
+[105:20] So it was going like this.
+[105:22] As it was increasing in positive, V0 was increasing in negative.
+[105:26] Now your output has switched to minus Vsat.
+[105:30] This is the output of Schmitt trigger.
+[105:32] And your capacitor started to charge.
+[105:36] From beta Vsat to minus beta Vsat.
+[105:40] As soon as it reached minus beta Vsat.
+[105:44] Your output immediately switched again.
+[105:54] Where did it switch again?
+[105:56] The output immediately switched again.
+[106:00] From minus Vsat to plus Vsat.
+[106:04] So if you look at the terminal of V here.
+[106:08] You are getting such a square wave.
+[106:10] And you are getting a triangle on the capacitor.
+[106:12] When the voltage of the capacitor was coming from plus to minus.
+[106:16] So V0 was going from minus to plus.
+[106:18] Now what will happen again?
+[106:20] See again the capacitor will be charged.
+[106:22] From minus beta Vsat to plus beta Vsat.
+[106:26] And during this time.
+[106:34] Your output.
+[106:40] This will come to you.
+[106:46] Plus Vsat.
+[106:48] So you got a square wave on the terminal of V.
+[106:52] And you got a triangle on the V0.
+[106:54] Now look at this duration.
+[106:56] Your 2 beta RC.
+[107:02] And what should this duration be?
+[107:04] This should be T by 2.
+[107:06] Half of the time period of the wave.
+[107:10] And the amplitude of this wave.
+[107:12] This is beta Vsat.
+[107:14] And minus beta Vsat.
+[107:18] So we are saying T by 2.
+[107:20] And T by 2.
+[107:22] Is 2 beta RC.
+[107:26] So T equal to 4 beta RC.
+[107:32] 4 R2 by R2 RC by R1.
+[107:36] So how much is the frequency?
+[107:38] 1 upon time period.
+[107:42] Is this clear?
+[107:44] Tell me.
+[107:46] So you can control the frequency with the help of RC.
+[107:54] This is clear.
+[107:56] Tell me quickly.
+[107:58] How is the work going on here?
+[108:00] The final output here.
+[108:02] We have fed it back to Schmitt Trigger.
+[108:06] Now look at this.
+[108:08] There are two circuits left.
+[108:10] Astable multivibrator mono stable.
+[108:12] I will make that tomorrow.
+[108:14] I will create a session for you.
+[108:16] And tomorrow we will see the question of its multivibrator.
+[108:20] Then after discussing the perso assignment.
+[108:22] Perso will be your gate game over.
+[108:24] The gate will be completed by you.
+[108:26] And then if you say.
+[108:28] I will give you a triple 5 timer.
+[108:30] And I will give you a power amplifier.
+[108:32] Second graph.
+[108:34] The negative of Vc.
+[108:36] Because V0 is minus Vc.
+[108:38] Rahul.
+[108:40] So the graph of Vc is inverted.
+[108:42] It is going in positive.
+[108:44] It is going in negative.
+[108:46] This is minus.
+[108:48] This is minus.
+[108:50] V0 is minus Vc.
+[108:52] See in the circuit.
+[108:54] V0 is equal to minus Vc.
+[108:56] Is this clear to all?
+[108:58] You can make a square wave with Schmitt Trigger.
+[109:00] You can make a triangle wave.
+[109:02] You can generate this type of waveform.
+[109:04] You can generate this type of waveform.
+[109:06] Come on.
+[109:08] So this is the astable and mono stable.
+[109:10] I will give you this tomorrow.
+[109:12] I will give you some questions tomorrow.
+[109:14] I am not giving you any question or assignment today.
+[109:16] I will give you this assignment and question tomorrow.
+[109:18] I will give you this assignment and question tomorrow.
+[109:20] And after that we will discuss the assignment.
+[109:24] Now see.
+[109:26] You can attend special classes on this link.
+[109:28] You can make PYQ here.
+[109:30] You can make PYQ here.
+[109:32] And Rohit today will try.
+[109:34] There will be a lot of questions about positive feedback.
+[109:36] Today the astable will not be mono stable.
+[109:38] Mono stable is very rarely asked.
+[109:40] Today the astable is still asked.
+[109:42] And if you join Unacademy.
+[109:44] You have two plans.
+[109:46] Plus and iconic.
+[109:48] There are top teachers.
+[109:50] The full study material is available on the app.
+[109:52] The test series is included.
+[109:54] If the child who is iconic gets doubt in a new question.
+[109:56] Then there is a custom doubt solving for him.
+[109:58] Printed notes are being sent at home.
+[110:00] 1 to 1 mentorship is getting.
+[110:02] Strategy and study plan is being made.
+[110:04] And you can interact in the open house session.
+[110:06] You can interact via audio.
+[110:08] And you see here.
+[110:10] If you want to join Unacademy.
+[110:12] Then you put an Ankit ASC code.
+[110:14] Decide the plan.
+[110:16] Decide the duration.
+[110:18] You will get maximum discount.
+[110:20] And you will come under my personal guidance.
+[110:22] And the children of 24 can take a 15 month subscription.
+[110:24] And you can keep your preparation one step ahead.
+[110:26] Because you will go in advance from the rest.
+[110:28] Other than this.
+[110:30] If you see our results.
+[110:32] Then last year.
+[110:34] In the top 10.
+[110:36] We produced 6 ranks in Electrical.
+[110:38] And there were top rankers in EC.
+[110:40] So you can be one of them.
+[110:42] Next year.
+[110:44] In Gate 2024.
+[110:46] If you join Unacademy using code.
+[110:48] Ankit ASC.
+[110:50] If it is a financial issue.
+[110:52] You can go for EMI.
+[110:54] You don't have to pay any interest here.
+[110:56] Pay your fees monthly.
+[110:58] EMI is approved in just 2 hours.
+[111:00] At least it is paperwork.
+[111:02] Pay it in a flexible amount of time.
+[111:04] And see.
+[111:06] There is a Gurukul batch for our 24.
+[111:08] In which Dhandesar and Gurupals.
+[111:10] Analog and Maths are covering you.
+[111:12] And for the children of 23.
+[111:14] For revision.
+[111:16] Rank improvement batch.
+[111:18] In which your Maths and Network has started.
+[111:20] Electrical.
+[111:22] I am starting the machine.
+[111:24] Revision from 9th of November.
+[111:26] And for EC there are already 3 subjects.
+[111:28] Maths, Network and ADC.
+[111:30] If you want to join Unacademy for 23.
+[111:32] You can take subscription of 3 or 4 months.
+[111:34] Code.
+[111:36] You know Ankit ASC.
+[111:38] And this is my telegram channel.
+[111:40] Stay connected so that no class miss.
+[111:42] And you will get the PDF of this session.
+[111:44] On the community.
+[111:46] Go to Unacademy app's home page.
+[111:48] Discover in the community.
+[111:50] I will meet there.
+[111:52] And all the PDFs will be available.
+[111:54] So thank you everyone. Thanks a lot.
+[111:56] Now we will meet tomorrow.
+[111:58] Thank you.

@@ -1,0 +1,2974 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Clippers Part -2 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=LyOHOrTDtek
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you, we are live, we are back on
+[00:14] the Creatrix YouTube channel with Lakshya Batch 2.0 Analog Electronics.
+[00:18] So as you know, our meeting is at 11.30 am daily in which we discuss the best concepts
+[00:25] of Analog Electronics.
+[00:28] And I hope that I have discussed as much as I have discussed so far.
+[00:31] You are able to apply the concepts that you have taught, you are able to understand them.
+[00:36] So dear, in this session, we are going to continue the discussion of our Clippers.
+[00:41] Yesterday, I had explained to you series Clippers.
+[00:44] I had shown you that you can do the analysis of Clippers using the open circuit and the short circuit test.
+[00:52] And then we saw the questions based on Clippers.
+[00:55] Today, we will talk about Shunt Clippers and we will talk about 2 level Clippers.
+[01:00] And again dear, the solution that we will do is absolutely fundamental that is the open circuit test
+[01:07] and the short circuit test.
+[01:08] I hope that everyone is ready because this session is going to be very fun.
+[01:12] Like yesterday, we are going to enjoy a lot.
+[01:15] Dear Garima, all the notes of these sessions are available in the community of the
+[01:19] Shunt Clippers.
+[01:20] At the end of this session, I will give you the full details of where you will get the notes.
+[01:25] Till then, focus on the session.
+[01:27] All the PDFs are uploaded.
+[01:29] You can download them anytime.
+[01:31] Let's start.
+[01:33] Let's start today's discussion.
+[01:35] So today's discussion will start with Shunt Clippers.
+[01:38] So first of all, I am making Shunt a negative Clipper.
+[01:43] Negative Clipper means it clips the negative part of the waveform.
+[01:48] Or you can say that here the waveform will be clipped under a particular level.
+[01:55] Right?
+[01:56] It will be clipped.
+[01:58] What did I tell you about the negative clipper?
+[02:00] That under a particular voltage, the entire waveform is clipped.
+[02:06] It is cut.
+[02:07] That is the negative clipper.
+[02:10] So what do we call it?
+[02:13] Waveform below a certain threshold.
+[02:22] A certain threshold is clipped.
+[02:29] Why are you calling it Shunt?
+[02:32] Because if you look at the diode here, the diode is connected in parallel to the output.
+[02:39] The diode is connected in parallel to the output.
+[02:42] What was in the series clipper?
+[02:44] We said in the series clipper that the diode is connected in series with the source.
+[02:49] We are saying in the Shunt clipper that it is connected in parallel to the output.
+[02:56] Now look here.
+[02:58] I will deal with the open circuit tests of these three clippers.
+[03:04] And the positive three short circuit tests.
+[03:08] As I told you, you can do clipper analysis with any short circuit or open circuit test.
+[03:15] So I will show you three open circuits and three short circuit tests.
+[03:20] Now in the open circuit test, what will you do?
+[03:23] You will open the diode.
+[03:30] Now look here, Vi.
+[03:40] Okay?
+[03:44] Take this.
+[03:46] Okay?
+[03:48] This is R and this is V0.
+[03:52] Now how to take the voltage polarity of the diode?
+[03:56] This is the cathode from the anode.
+[03:58] This is the voltage of the diode.
+[04:01] Vd.
+[04:02] Okay?
+[04:03] Now as per the KVL here, it is understood that Vd is minus V0.
+[04:12] Understand the next thing.
+[04:14] The current is zero on the open circuit.
+[04:18] If the current is zero, then the voltage drop of resistance will be zero.
+[04:24] If the voltage drop of resistance is zero, then the entire input voltage will be available on the output.
+[04:32] V0 will be equal to Vi.
+[04:36] Which means that the diode voltage will be minus Vi.
+[04:42] The diode voltage will be minus Vi.
+[04:46] Now we will say that we have to turn off the diode.
+[04:50] That means the voltage of the diode should be negative.
+[04:53] It should be reverse bias.
+[04:55] The voltage negative of the diode means that Vi must be positive.
+[05:00] So when the diode is positive, then the diode will be off.
+[05:04] And if the diode is off, then the V0 will be equal to Vi.
+[05:09] If you take the second case of my kids.
+[05:12] Right?
+[05:13] What can be the second case?
+[05:14] Look here.
+[05:15] What is the case one?
+[05:17] Case one is done.
+[05:20] Vi.
+[05:22] greater than zero.
+[05:24] Your off is getting diode from this.
+[05:27] That means it will be open circuited.
+[05:31] And in such a situation, V0 is Vi.
+[05:35] Now if we talk about case two.
+[05:40] If we look here, then we say that Vi is less than zero.
+[05:46] So in this situation, the voltage of the diode will be positive.
+[05:50] And this will be on.
+[05:52] If the diode is on, you consider it as an ideal diode.
+[05:57] If you consider it as an ideal diode.
+[06:00] Then your short circuit will be diode when it is on.
+[06:05] Correct, right?
+[06:07] Your short circuit will be diode when it is on.
+[06:13] It will come like this.
+[06:15] That diode is your short circuit, my brother.
+[06:18] So here your V0, it will come out to be zero.
+[06:23] V0 will come out to be zero.
+[06:26] Okay?
+[06:27] So now see what we do now.
+[06:29] We make its transfer characteristic.
+[06:32] I am following the process of yesterday.
+[06:36] Same analysis.
+[06:37] Exactly same type of analysis.
+[06:40] Now in the transfer curve, it is on Y axis.
+[06:44] V0 on X axis is on Vi.
+[06:47] Now you said that when Vi is greater than zero.
+[06:50] That is, Vi is on the right hand side.
+[06:54] So when Vi is greater than zero, then diode will be off.
+[06:58] And V0 will be equal to Vi.
+[07:01] V0 will be equal to Vi.
+[07:07] So this slope came.
+[07:09] One.
+[07:12] And when Vi is negative.
+[07:16] When Vi is negative, then the voltage of the diode is positive.
+[07:21] The diode is on.
+[07:22] And V0 is zero.
+[07:25] So this came.
+[07:30] This is done.
+[07:31] So in the negative cycle, V0 is zero.
+[07:35] And in the positive cycle, your V0 is equal to Vi.
+[07:41] That is, the input as it is will be copy-pasted during the positive cycle.
+[07:46] And write the output zero during the negative cycle.
+[07:51] Okay?
+[07:53] Thank you.
+[07:55] If you are getting help from my content.
+[07:57] Obviously, the aim of the content is to reach as many people as possible.
+[08:02] And the more people will benefit, the more our efforts will be successful.
+[08:09] But look, I think a lot of children think that
+[08:12] I will not do the video privately.
+[08:14] I have published it for a few days.
+[08:16] So let me tell you, dear.
+[08:18] All the video analogs that are published today,
+[08:22] will be private after this lecture.
+[08:25] So if you are in this hope that now they will not do it privately,
+[08:29] they are fooling around, then you are thinking wrong.
+[08:32] I gave you time for two days because some children were late.
+[08:37] So they thought that if they are late, how will they do it later?
+[08:41] So I gave it for them.
+[08:45] But the same thing, you will not change.
+[08:48] Today, see the attendance.
+[08:50] Two days video was published privately.
+[08:53] The attendance dropped.
+[08:58] Okay?
+[08:59] Look at this.
+[09:01] We will make this cycle three cycles.
+[09:08] This is the amplitude.
+[09:15] This is the amplitude.
+[09:19] And this is also the amplitude.
+[09:21] Okay?
+[09:22] This is VI versus T.
+[09:26] So do you know how they take it?
+[09:28] They take sinusoidal.
+[09:30] Because most of the time, when we talk about AC waveform,
+[09:33] most of the time, when we talk about AC waveform,
+[09:35] it is taken as sinusoidal.
+[09:37] That is why.
+[09:38] There is no other reason.
+[09:40] That most of the time, we consider AC as a sine curve.
+[09:44] Even the cost is very less.
+[09:47] Most of the time, it is considered as sine.
+[09:50] This is the input.
+[09:52] Isn't it?
+[09:54] Now see what will happen after this?
+[09:58] In series negative and shunt negative clippers,
+[10:01] the transfer characteristic is identical.
+[10:03] The right thing is that both the work is the same.
+[10:06] Clip the negative cycle, pass the positive.
+[10:09] So when the work is the same, the characteristic will also be the same.
+[10:12] The circuit is different.
+[10:18] Okay?
+[10:19] Now when we talk about V naught,
+[10:21] as a reference,
+[10:26] we have made a sine curve.
+[10:31] We can trace it if we want.
+[10:34] And if we want, we can make some other curves.
+[10:37] We have made a sine curve for a reference.
+[10:40] Now I will save it so that it is useful in the future.
+[10:45] Now what we are saying is that in the positive cycle,
+[10:49] in the positive cycle,
+[10:52] your positive cycle is equal to V naught V i
+[10:56] and in the negative cycle, V naught is zero.
+[11:00] In the positive cycle, it is equal to V naught V i
+[11:04] and in the negative cycle, it is zero.
+[11:10] This is the result.
+[11:12] Now if it is zero, what will you have to do?
+[11:15] You will have to make a straight line.
+[11:17] You have made this.
+[11:21] Then the positive cycle came.
+[11:23] So it is the same as V i.
+[11:25] This has become like a half wave rectifier.
+[11:27] Just understand this.
+[11:29] It is a different construction of a half wave rectifier.
+[11:32] Now we are asking,
+[11:34] is the conduction angle less than 180 in the clipper?
+[11:37] Absolutely.
+[11:39] It can be more than 180 and less than 180.
+[11:42] Depending on the reference voltage.
+[11:44] If the reference voltage is zero,
+[11:46] then your conduction angle will be 180.
+[11:49] Meaning the output will be non-zero for 180 degrees.
+[11:52] But if your reference voltage is positive and negative,
+[11:56] then your conduction angle will change.
+[11:58] Now you will understand the next two circuits.
+[12:01] One will be greater than 180 in the conduction angle.
+[12:04] One will be smaller than 180.
+[12:06] But the rest of the kids will not be confused about the conduction angle.
+[12:09] That is not a part of analog electronics.
+[12:11] That is a part of power electronics.
+[12:13] So we are connecting power electronics and analog.
+[12:16] So you don't have to worry.
+[12:18] It is not something that is very very important.
+[12:21] There are many kids who have doubts in their minds.
+[12:23] But if every kid doesn't understand,
+[12:25] then it will work.
+[12:26] The more I am explaining,
+[12:27] the more important it is to understand.
+[12:29] Is everyone clear till here?
+[12:31] Let's go again.
+[12:33] Now let's come to positive bias.
+[12:35] Shunt negative clipper.
+[12:37] Positive bias means,
+[12:39] I have applied a positive reference voltage,
+[12:41] VR.
+[12:43] Positive reference voltage,
+[12:45] VR is applied.
+[12:47] Now see what will happen here.
+[12:49] Let's start again with the open circuit test.
+[12:52] Now you must have understood
+[12:54] that what should happen here is,
+[12:56] that all the value of VR
+[12:58] from below,
+[13:00] should be your clip.
+[13:02] That is what should happen.
+[13:04] So as I said,
+[13:06] I will do the open circuit test
+[13:08] of the three cases of Shunt negative clipper.
+[13:10] Then I will do the short circuit test
+[13:12] of the Shunt positive clipper.
+[13:14] So see this diode open.
+[13:16] So see this diode open.
+[13:34] Now here,
+[13:36] this is V0.
+[13:38] Obviously, the open circuit test
+[13:40] is current zero.
+[13:42] So the resistance voltage
+[13:44] will be zero.
+[13:46] V0 will come out to be VI.
+[13:48] But you know,
+[13:50] I am interested in the voltage of the diode.
+[13:52] You take the voltage of the diode
+[13:54] from anode.
+[13:56] Okay?
+[13:58] Now the voltage of the diode,
+[14:00] okay?
+[14:02] If you want to find out
+[14:04] the voltage of the diode,
+[14:06] then what will you have to do?
+[14:08] You will have to apply KVL.
+[14:10] So you wrote VI.
+[14:12] Then the drop of the resistance
+[14:14] is zero into R.
+[14:16] Then the voltage of the diode is VD
+[14:18] minus VR.
+[14:20] So from here,
+[14:22] the voltage of the diode is
+[14:24] VR minus VI.
+[14:26] VR minus VI.
+[14:28] Now what will you say here,
+[14:30] dear?
+[14:32] You will say that your assumption
+[14:34] that the diode is off.
+[14:36] It will be correct if
+[14:38] the VD is negative.
+[14:40] If my VD is negative,
+[14:42] means VR
+[14:44] less than VI.
+[14:46] Or VI greater than
+[14:48] VR.
+[14:50] VI greater than VR, the diode will be off.
+[14:52] The situation in which
+[14:54] V0 will be VI.
+[14:56] Okay?
+[14:58] So our assumption of off will be correct
+[15:00] if V0 is equal to
+[15:02] VI.
+[15:04] V0 is equal to VI.
+[15:06] Okay? Are you clear?
+[15:08] Now see.
+[15:10] Let's do two more cases.
+[15:12] Case one.
+[15:14] Now what you said
+[15:16] that
+[15:18] on VI greater than VR
+[15:20] your diode
+[15:22] is off.
+[15:24] That means it is open.
+[15:26] And in such a situation,
+[15:28] V0 is equal to VI.
+[15:30] In case two,
+[15:34] your VI
+[15:36] will be less than VR.
+[15:38] Because of which your
+[15:40] diode will be on.
+[15:42] If it is on, it will be short.
+[15:44] Now if the diode
+[15:46] is short, how will the circuit look?
+[15:48] Look at this.
+[16:06] Will it look like this?
+[16:14] Here
+[16:16] V0 will be
+[16:18] VR.
+[16:20] Simply.
+[16:22] The entire battery of V0
+[16:24] came across.
+[16:26] So V0 is equal to
+[16:28] VR.
+[16:30] V0 is equal to VR.
+[16:32] Are you clear?
+[16:34] Are you clear?
+[16:36] So when VI is greater than VR,
+[16:38] then your diode
+[16:40] will conduct.
+[16:42] Sorry, diode will be off.
+[16:44] V0 is equal to VI.
+[16:46] And when VI is less than VR,
+[16:48] then your diode will be on.
+[16:50] And here V0 will come out
+[16:52] to be equal to VR.
+[16:54] V0 will come out to be
+[16:56] VR.
+[16:58] Now look at this.
+[17:00] Whether it is input or output.
+[17:02] There is one condition.
+[17:04] Whether input or output.
+[17:06] There is one condition of VR in both.
+[17:08] So
+[17:10] how many thresholds will come in input?
+[17:12] There will be VR.
+[17:18] So look, there is a threshold in input
+[17:20] of VR.
+[17:24] And there is a threshold
+[17:26] in output of VR.
+[17:28] Amit dear,
+[17:30] please do not go into power electronics.
+[17:32] All the kids will get confused.
+[17:34] And there is no use.
+[17:36] Because here the question
+[17:38] of power electronics will not be asked.
+[17:40] You are trying to put the power
+[17:42] electronics concept here.
+[17:44] It will take place.
+[17:46] It is not that invalid.
+[17:48] But it is unnecessary.
+[17:50] Now when VI is greater than
+[17:52] VR, then
+[17:54] V0 should be equal to VI.
+[17:56] If V0 is equal to VI,
+[17:58] then you will get
+[18:00] a straight line
+[18:02] of slope equal to 1.
+[18:08] And if
+[18:10] VI is smaller than VR,
+[18:12] that is, here it is.
+[18:20] If VI is smaller than VR,
+[18:22] then V0 will be same as
+[18:24] VR.
+[18:26] Okay?
+[18:28] V0 will be same as VR.
+[18:32] Dear, the question of PYQ
+[18:34] comes in the paper of the conduction angle.
+[18:36] My children, it is the power electronics.
+[18:38] It does not come from the clipper.
+[18:40] Where did the conduction angle come from in the clipper?
+[18:42] Before that,
+[18:44] I have to define the conduction angle.
+[18:46] So the question of power electronics is analog.
+[18:48] Tell me, will the power electronics be strong?
+[18:50] No.
+[18:52] If we ask about the conduction angle,
+[18:54] then we will take it to any subject.
+[18:58] Okay?
+[19:00] It is clear till here.
+[19:02] Now what we will do after this?
+[19:04] After this, we will make
+[19:06] a waveform again.
+[19:08] Now
+[19:18] look at this.
+[19:20] This was your supply voltage.
+[19:22] This was the supply voltage.
+[19:24] Now you will draw a reference
+[19:26] in this.
+[19:28] Take this.
+[19:30] This is your reference.
+[19:32] Now
+[19:36] you will have to show the same here.
+[19:38] Even below.
+[19:40] Show this to the reference.
+[19:42] Take this.
+[19:44] This is the reference.
+[19:46] Now what you are saying is
+[19:48] when input voltage
+[19:50] exceeds the reference.
+[19:52] Okay?
+[19:54] When input voltage
+[19:56] exceeds the reference,
+[19:58] then your V0 will be
+[20:00] equal to VI.
+[20:02] When input voltage
+[20:04] exceeds the reference,
+[20:06] then V0 will be equal to
+[20:08] VI.
+[20:10] Like this.
+[20:14] Okay?
+[20:16] When input voltage
+[20:18] exceeds the reference,
+[20:20] V0 will come out
+[20:22] to be VI.
+[20:24] And when input voltage
+[20:26] is below the reference,
+[20:28] then V0 will come out to be VR.
+[20:30] Under the reference,
+[20:32] V0 will come out to be VR.
+[20:34] I will tell you.
+[20:36] You are not afraid of conduction angle.
+[20:38] Here.
+[20:40] Now the question of Amit is
+[20:42] conduction angle.
+[20:44] Okay? The question of Amit is
+[20:46] conduction angle.
+[20:48] Now what is the
+[20:50] heart of conduction angle?
+[20:52] What is the heart of conduction angle?
+[20:54] The heart of conduction angle
+[20:56] is such a scene.
+[20:58] What do you say?
+[21:00] Here your diode is off.
+[21:02] The question Amit is asking.
+[21:04] When V0
+[21:06] is equal to VI,
+[21:08] then your diode is off.
+[21:12] And when V0
+[21:14] is equal to VR, then your diode
+[21:16] is on.
+[21:18] From here to here.
+[21:22] If this angle is theta,
+[21:24] then where will it come next time?
+[21:26] 2pi plus theta.
+[21:28] Okay?
+[21:30] So where is the diode
+[21:32] from this point to this point
+[21:34] where V0 is equal to VR?
+[21:36] Now how does this work?
+[21:38] Look, this yellow graph
+[21:40] what is this?
+[21:42] Vm sin omega t
+[21:46] This value is Vm, right?
+[21:48] Maximum value.
+[21:50] Now what you will say
+[21:52] that this is equal to VR on theta.
+[21:54] Theta
+[21:56] this value is equal to VR.
+[22:00] So how much is this theta?
+[22:02] Sin inverse
+[22:04] VR by Vm.
+[22:06] But do you know
+[22:08] that I need this angle
+[22:10] where the diode is on.
+[22:12] If the diode was off
+[22:14] then I have to know this angle.
+[22:16] Now what will be this angle?
+[22:18] The value of sin
+[22:20] is at 60 degree, that is at 150 degree.
+[22:22] The value of sin
+[22:24] is at 60 degree, that is at 120 degree.
+[22:26] So if this angle is theta
+[22:28] then this angle will be
+[22:30] pi minus theta.
+[22:32] Sin pi minus theta
+[22:34] is equal to sin theta.
+[22:36] And you are seeing that the value is
+[22:38] coming on both the points.
+[22:40] That is, one angle is theta, then one
+[22:42] pi minus theta.
+[22:44] Now if I tell you that the diode
+[22:46] is on for how long
+[22:48] in one cycle?
+[22:50] Conduction angle means
+[22:52] that
+[22:54] for what angle
+[22:56] for what angle
+[22:58] diode is on
+[23:00] in one cycle?
+[23:02] For what angle
+[23:04] diode is on
+[23:06] for one cycle?
+[23:08] For what angle
+[23:10] diode is on
+[23:12] for one cycle?
+[23:14] Will you write
+[23:16] pi plus theta
+[23:18] pi minus theta
+[23:20] subtract it?
+[23:24] So this is pi plus 2
+[23:26] theta.
+[23:28] This is the angle.
+[23:30] Do you understand Amit?
+[23:32] First you have to take out the intersection
+[23:34] then you have to see
+[23:36] when diode will conduct
+[23:38] the difference of those two angles
+[23:40] that will be your
+[23:42] conduction angle.
+[23:44] That will be your
+[23:46] conduction angle.
+[23:48] Is the matter clear?
+[23:50] And my brother
+[23:52] see, I will answer
+[23:54] the questions of one or two children
+[23:56] then we will move ahead.
+[24:00] Now Shaurya is saying that
+[24:02] sir we feel analog is a little tough
+[24:04] that is why I am pausing the live lecture
+[24:06] to see that it is not synchronized.
+[24:08] Look my child, if you
+[24:10] listen carefully to me, then
+[24:12] analog cannot be tough here.
+[24:14] Do you know why it cannot be tough?
+[24:16] Because I am repeating the same concept
+[24:18] again and again.
+[24:20] See tomorrow we have analyzed
+[24:22] 6 clippers from open circuit
+[24:24] test and short circuit test.
+[24:26] Even today I am analyzing you
+[24:28] 6 clippers.
+[24:30] That is 12 clippers on one concept
+[24:32] and before that we have seen
+[24:34] many questions on the same concept.
+[24:36] We have seen the assignment of open circuit
+[24:38] test and short circuit test.
+[24:40] The question of 6 clippers is
+[24:42] done with the same concept
+[24:44] from open circuit and short circuit test.
+[24:46] So eventually you know
+[24:48] what is read in the numerical portion of the diode.
+[24:50] The model of the diode.
+[24:52] Ideal diode, CVD model, PWL model
+[24:54] and open circuit is short circuit test.
+[24:56] There is only one thing
+[24:58] that should be in your mind because
+[25:00] all the questions are coming from this.
+[25:02] All your questions are coming from this.
+[25:04] Do you understand my question?
+[25:06] So child, minimize the things
+[25:08] that you need to remember
+[25:10] that should be zero.
+[25:12] If you minimize the things
+[25:14] then the more you practice
+[25:16] one thing, the better it will be.
+[25:18] It is like this with every skill in life.
+[25:20] If you drive a cycle, the more you drive
+[25:22] the better it will be.
+[25:24] If you drive a bike, the more you drive
+[25:26] the more it will be practiced.
+[25:28] In the same way in the diode in analog
+[25:30] the more you will test the open
+[25:32] circuit and short circuit,
+[25:34] the stronger it will be.
+[25:36] That is why try to
+[25:38] cope up with it slowly.
+[25:40] If something goes off
+[25:42] then watch it again after the lecture.
+[25:44] If you pause the live lecture
+[25:46] then it will not sync.
+[25:48] If there is something left
+[25:50] then ask me in the chat
+[25:52] or watch it again after the class.
+[25:54] As I have cleared the doubt of Amit.
+[25:56] Now Bittu Ji is saying
+[25:58] to private the video after a few days
+[26:00] because they have to travel from 3 to 5 September.
+[26:02] If Bittu Ji says
+[26:04] that he has to travel from 3 to 10 September
+[26:06] then he will say
+[26:07] private it after 10.
+[26:09] If someone says after 11
+[26:10] then you understand that
+[26:12] there will be so many permutation combinations
+[26:14] that you will have to leave the video public.
+[26:16] Now I have seen that all the videos are public
+[26:18] then you can see the attendance has fallen.
+[26:20] This is the fact that if the lecture is public
+[26:22] then the children take the lecture for granted
+[26:24] and when the lecture is private
+[26:26] then everyone comes live.
+[26:28] Okay?
+[26:30] So what can we do now?
+[26:32] If it is private then we will have to follow
+[26:34] the same mindset.
+[26:36] Did you clear the matter?
+[26:40] Come on.
+[26:44] Anyone else?
+[26:48] Why are you taking 4 hours
+[26:50] in the video of 2 hours?
+[26:52] I am providing notes.
+[26:54] And there is nothing short notes in it.
+[26:56] Here I am thinking
+[26:58] like a question from one method.
+[27:00] Just visualize it as a question.
+[27:02] Why are you thinking that
+[27:04] I have to take care of it?
+[27:06] It is an application of open circuit and short circuit test.
+[27:08] Look at this.
+[27:10] I have not done any question directly
+[27:12] from the formula
+[27:14] or any question from any result.
+[27:16] I have still done it from OC and SC test.
+[27:18] I have still done it.
+[27:20] So you are doing the same thing here.
+[27:22] So what is the thing to put in the short
+[27:24] notes?
+[27:26] Okay?
+[27:28] Okay.
+[27:30] The video is missing from the power system playlist.
+[27:32] I have already given the link of the new
+[27:34] power system playlist.
+[27:36] You will go to that page and enter your details.
+[27:38] You will get all the lectures.
+[27:40] Search Creatrix power system.
+[27:42] I had also made shots.
+[27:44] In the power system playlist
+[27:46] there will be a shot where it will be told
+[27:48] where you will get the lecture.
+[27:50] Go and check.
+[27:52] Okay? I have put that video in the playlist.
+[27:54] Come on.
+[27:56] Now let's come to the negative bias.
+[27:58] What did I do in the negative bias?
+[28:00] Reverse the polarity of the VR.
+[28:02] Again we will take it from the basic.
+[28:04] Again we will take it from the basic.
+[28:06] Again we will take it from the basic.
+[28:12] Open circuit test.
+[28:14] Okay?
+[28:20] I am doing the next three clips
+[28:22] with short circuit test.
+[28:24] I am doing it.
+[28:26] Now what will we do in the open circuit again?
+[28:28] You will open the diode.
+[28:32] This is your VI.
+[28:36] And look at all the children
+[28:38] who are going to give gate 23.
+[28:40] Today I will fill the live form at 5 o'clock.
+[28:42] So come with me.
+[28:44] Fill the form with me.
+[28:46] Otherwise understand in today's video.
+[28:48] Then fill it with yourself at night.
+[28:50] As you like.
+[28:54] Okay?
+[28:56] Now look at this.
+[29:00] This is V0.
+[29:02] Okay?
+[29:06] This is the voltage of the diode.
+[29:08] This is the reference voltage.
+[29:10] Okay?
+[29:12] Here it is.
+[29:16] Shunt negative.
+[29:18] Okay? This is shunt negative.
+[29:24] Okay?
+[29:26] Did I write it like this before?
+[29:30] No, it was right here.
+[29:32] Yes, this is shunt negative.
+[29:34] Now listen carefully.
+[29:36] Listen carefully.
+[29:38] Current is zero.
+[29:40] Current is zero.
+[29:42] So the voltage of resistance
+[29:44] will be zero.
+[29:46] V0 will come out
+[29:48] to be VI.
+[29:50] And then to apply the diode voltage
+[29:52] KVL will be applied.
+[29:54] VI
+[29:56] minus zero into R
+[29:58] plus VD
+[30:00] plus VR
+[30:02] equal to zero.
+[30:04] So the diode voltage is
+[30:06] minus VI
+[30:08] minus VR.
+[30:10] Now we have assumed the diode off.
+[30:12] So we say the diode is off
+[30:14] if the VD is negative.
+[30:16] If the VD is negative
+[30:18] means minus VI
+[30:20] minus VR
+[30:22] will be negative.
+[30:24] Which means VI greater than
+[30:26] minus VR.
+[30:28] So this is the case 1 for us.
+[30:30] The case of diode off
+[30:32] has become a case.
+[30:34] The case of diode off
+[30:36] has become a case.
+[30:42] Case 1
+[30:44] VI
+[30:46] greater than minus VR
+[30:48] means the diode is off.
+[30:52] Open.
+[30:54] This means
+[30:56] V0 is equal to VI.
+[30:58] Okay.
+[31:00] Case 2
+[31:02] VI
+[31:04] less than
+[31:06] minus VR.
+[31:08] If you change the condition
+[31:10] then the diode will be on.
+[31:12] If the diode is on then it will be short.
+[31:14] If the diode is short
+[31:16] then the circuit will look like this.
+[31:18] Pay attention to this.
+[31:32] And do you know
+[31:34] as you keep saying that sir analog is weak
+[31:36] there is one thing.
+[31:38] If the subject was strong then obviously
+[31:40] why am I studying or why are you studying.
+[31:42] Subject is weak that is why
+[31:44] you are studying.
+[31:46] So before your mind
+[31:48] you have removed the phobia of the subject.
+[31:52] There are different topics in analog as well.
+[31:54] Diode is different, BJT is different,
+[31:56] MOSFET is different, OPAMP is different.
+[31:58] So it is said that analog is weak
+[32:00] that is why the diode is not understanding,
+[32:02] BJT is also not understanding.
+[32:04] It can be that one topic is more tough
+[32:06] and one topic is more easy.
+[32:08] But what we make Hauwa
+[32:10] in our mind is that
+[32:12] this is the thing which always keeps our subject weak.
+[32:14] Once you have the courage
+[32:16] to do it.
+[32:18] I too can understand all things.
+[32:20] Because I am doing everything from zero.
+[32:22] Let me tell you one thing. I would write directly to write
+[32:24] that if the diode is short then V0 will come out
+[32:26] to be minus VR.
+[32:28] But I am showing you by drawing here.
+[32:30] One KVL
+[32:32] I am showing you by putting you.
+[32:34] Because we are doing things with basics.
+[32:36] Now look, this negative one is connected
+[32:38] with positive.
+[32:40] So V0 will be minus VR.
+[32:42] V0 will be minus VR.
+[32:44] V0 will be minus VR.
+[32:46] So what is with me?
+[32:48] Analog, if any child
+[32:50] knows the network at the right level.
+[32:52] That is, in the network,
+[32:54] KVL, KCL, Nodal mesh knows.
+[32:56] I am saying that a single chapter of analog
+[32:58] cannot be tough.
+[33:02] Okay.
+[33:04] So now see what we are doing here.
+[33:10] Look, my brother.
+[33:12] You are asking if you can take VR as negative.
+[33:14] The value will be better than that.
+[33:16] If you have given VR as negative
+[33:18] in some question.
+[33:20] Then you can make it positive and change its polarity.
+[33:22] So it will be easy for you.
+[33:24] You will not have to deal with minus sign.
+[33:26] Otherwise, you can keep VR as VR.
+[33:28] And you can make its value negative.
+[33:30] That means you can call
+[33:32] positive bias as negative bias.
+[33:34] You can say that its value is
+[33:36] negative. That is, in positive bias
+[33:38] if the voltage of the battery is
+[33:40] minus 5 volts,
+[33:42] then it is negative bias.
+[33:44] But the confusion is increased there for us.
+[33:46] Instead of that, the better is that
+[33:48] the negative sign is given in the voltage.
+[33:50] You remove it and reverse it.
+[33:54] Can we take reference voltage
+[33:56] or is it predefined?
+[33:58] Reference voltage does not make
+[34:00] any sense to take waveform.
+[34:02] Deep because the purpose of the clipper is
+[34:04] to clip a certain voltage
+[34:06] at the bottom.
+[34:08] So we have to set the level.
+[34:10] Now if this level is fluctuating,
+[34:12] then the clipper definition is wrong.
+[34:14] Right?
+[34:16] Then the definition of clipper is wrong.
+[34:18] So the circuit is different.
+[34:20] You can make the circuit whatever you want.
+[34:22] But it will not be called as a clipper.
+[34:24] Is the matter clear?
+[34:28] Now let's see.
+[34:30] What is the condition?
+[34:32] First you understand
+[34:34] that the threshold you are getting is V i.
+[34:36] And V naught
+[34:38] is of minus V r.
+[34:40] So look, is there a threshold in V i
+[34:42] of minus V r?
+[34:44] Take a threshold in V naught
+[34:46] of minus V r.
+[34:48] It is also coming in V naught
+[34:50] of minus V r.
+[34:56] Now you said that
+[34:58] if V i is greater than minus V r
+[35:00] i.e. here
+[35:04] what you are going to do
+[35:06] is to keep V naught
+[35:08] V i.
+[35:10] It means to keep V naught
+[35:12] V i means a straight line
+[35:14] will come like this.
+[35:16] Here it is.
+[35:18] Here is a straight line
+[35:20] whose slope will be
+[35:22] 1.
+[35:24] And then you said
+[35:26] if V i is
+[35:28] smaller than minus V r
+[35:30] then we have to keep
+[35:32] V naught minus V r.
+[35:34] If V i is smaller than
+[35:36] minus V r then
+[35:38] we have to keep V naught
+[35:40] minus V r.
+[35:42] So here is
+[35:44] V i less than
+[35:46] minus V r.
+[35:48] This has become characteristic.
+[35:50] This has become characteristic.
+[35:52] Anand Ji is saying
+[35:54] how did V naught equal to
+[35:56] minus V r?
+[35:58] Anand Bhai,
+[36:00] the positive of V naught
+[36:02] i.e. the opposite of V r
+[36:04] is connected to minus plus
+[36:06] plus.
+[36:08] That is why both the voltages are
+[36:10] opposite of each other.
+[36:12] And this is seen that both are parallel.
+[36:14] Both are parallel and
+[36:16] the terminals of both are opposite.
+[36:18] So there will be a minus in between.
+[36:20] It is a simple KVL.
+[36:22] Otherwise do it like this.
+[36:24] Put KVL like this.
+[36:26] Minus minus minus
+[36:28] minus V naught
+[36:30] equal to zero.
+[36:32] When you take V naught to the right
+[36:34] hand side then minus V r will come.
+[36:36] This is what I am trying to explain
+[36:38] that the network should come.
+[36:40] If you are not able to put KVL then
+[36:42] you are doing wrong analog.
+[36:44] Then you should first do the network.
+[36:46] If you do like this then I don't
+[36:48] know KVL very well.
+[36:50] But I have to do analog strong.
+[36:52] Then you will do the same thing.
+[36:54] I don't study analog.
+[36:56] I am trying to understand the logic
+[36:58] where if you use the concept
+[37:00] then all the questions will be
+[37:02] created.
+[37:04] I don't know the way to write this.
+[37:06] I don't know how all the formulas
+[37:08] will work. I will write some things
+[37:10] but I cannot say that all the
+[37:12] formulas should be written.
+[37:14] Analog will be easy.
+[37:16] It will not work.
+[37:18] Okay.
+[37:20] Now see this.
+[37:22] Open circuit test and short circuit
+[37:24] will take place.
+[37:26] One diode is open and one is short.
+[37:28] Do you understand Ritu Raj?
+[37:30] In open circuit and short circuit test
+[37:32] either all the diodes are open
+[37:34] or all the diodes are short.
+[37:36] They don't give a different state.
+[37:38] Then it is a hit and trial.
+[37:40] What was the first statement in open circuit?
+[37:42] That open all the diodes.
+[37:44] What was in short?
+[37:46] Open all the diodes.
+[37:48] Now you are saying that open someone
+[37:50] and then this is a new method.
+[37:52] You will not say that.
+[37:54] Now see this.
+[37:56] Now what is your threshold of
+[37:58] minus Vr?
+[38:00] This is the threshold of minus Vr.
+[38:02] Okay.
+[38:04] And what did you say?
+[38:06] What did you say?
+[38:08] That if the voltage is
+[38:10] higher than minus Vr
+[38:12] if the input voltage is
+[38:14] higher than minus Vr
+[38:16] then the output
+[38:18] will be equal to the input.
+[38:20] Okay.
+[38:26] This is tracing the input.
+[38:30] Until the yellow curve
+[38:32] i.e. the input voltage
+[38:34] is greater than minus Vr.
+[38:36] Now when the input voltage
+[38:38] goes below minus Vr
+[38:40] i.e. the yellow curve
+[38:42] when it comes below the pink
+[38:44] when it comes below the pink
+[38:46] when it comes below the pink
+[38:48] when it comes below the pink
+[38:50] then my children
+[38:52] you have to take minus Vr.
+[38:54] See
+[38:56] the waveform cut
+[38:58] below the minus Vr.
+[39:00] If it goes below the minus Vr
+[39:02] then you have flattened the graph.
+[39:04] You have flattened the graph.
+[39:06] Did you understand?
+[39:10] Did you understand till here?
+[39:12] It has been cleared well.
+[39:14] Now in the next three clips
+[39:16] I will do a short circuit test.
+[39:18] These three are done with open circuit.
+[39:20] These three are done with open circuit.
+[39:22] Now we will talk about short circuit test.
+[39:24] Now I will come
+[39:26] Shunt positive clipper.
+[39:28] What does positive clipper mean?
+[39:32] It clips.
+[39:38] Voltage
+[39:42] Above
+[39:44] a certain level.
+[39:46] Now it was cutting below.
+[39:48] Now you will cut all the voltage from one level
+[39:50] above.
+[39:52] Above a certain level
+[39:54] you will clip the voltage.
+[39:56] Now what to do here?
+[40:00] Now here I will use
+[40:02] short circuit test.
+[40:04] What will you use?
+[40:06] Short circuit test.
+[40:08] Now I will make the next three clippers
+[40:10] short circuit test.
+[40:14] Short circuit test
+[40:20] Okay!
+[40:22] You have to make a circuit in the short circuit
+[40:24] by shorting the diode.
+[40:38] Look, I'll tell you a thing.
+[40:40] Dude, if I want to do analog
+[40:42] If I can do analogue, then you can do it too.
+[40:45] What will be the phobia in your mind that used to be in my mind earlier?
+[40:49] I thought that no child should just ask the doubt of analogue,
+[40:52] the rest is the best.
+[40:54] Now see here the V naught is zero.
+[40:56] Correct?
+[40:57] You can see the current of diode from anode to cathode.
+[41:02] And the current of this circuit will come out of the positive of the battery.
+[41:06] It will go like this.
+[41:08] I.
+[41:09] And what will be the I?
+[41:11] The voltage in this loop is V i.
+[41:13] Current is R.
+[41:14] This will be the I.D.
+[41:16] Because both are in the same direction.
+[41:19] In one branch, only one can be current.
+[41:21] I mean both will be equal.
+[41:23] So this is I.D.
+[41:25] Now what I will say is that my diode
+[41:28] will be on if I.D. is positive.
+[41:32] For I.D. to be positive, V i must be greater than zero.
+[41:36] V i should be positive.
+[41:38] Only then the I.D. will be positive.
+[41:40] And in such a situation, V naught will come out to be zero.
+[41:44] So see again we will talk about the same two cases.
+[41:48] Case I.
+[41:50] V i greater than zero.
+[41:56] So diode is on.
+[41:58] That means it is shorted.
+[42:01] Because of which V naught is zero.
+[42:05] Now talk about Case II.
+[42:07] Turn it upside down.
+[42:09] That V i should be negative instead of positive.
+[42:12] So your diode will be off.
+[42:15] Because of which you will have to open the diode.
+[42:19] If you have opened the diode.
+[42:38] See will you show like this?
+[42:41] Now as soon as you open the diode.
+[42:45] Your current is zero.
+[42:49] Which means there is no drop in resistance.
+[42:53] So V naught is equal to V i.
+[42:57] There is no drop in resistance.
+[42:59] So V naught comes out to be V i.
+[43:02] V naught comes out to be V i.
+[43:05] Aditya Narayan is asking,
+[43:07] Sir when we have applied AC supply.
+[43:09] Then why did we not use the AC model of the diode?
+[43:12] Because the AC model of the diode is for a small signal.
+[43:16] There the supply should be DC plus AC.
+[43:19] Before DC the diode is biased.
+[43:21] Its parameter is removed.
+[43:24] Then AC voltage is very small from DC.
+[43:27] Then it is linearized.
+[43:29] And then it is solved.
+[43:32] Can we use the voltage division rule?
+[43:34] There should be at least two resistances for the voltage division.
+[43:37] The resistance is that you are going to apply the voltage division.
+[43:45] Okay.
+[43:46] Now we will talk about the transfer characteristic.
+[44:00] Okay.
+[44:01] This is Y axis.
+[44:03] This is our X axis.
+[44:10] Now see what we are saying.
+[44:12] When V i is positive.
+[44:14] So the output voltage is zero.
+[44:18] V i is positive on the right-hand side.
+[44:21] V i is negative on the left-hand side.
+[44:23] So when V i is positive the output voltage is zero.
+[44:29] Here it is zero.
+[44:32] And when V i is negative.
+[44:34] When V i is negative the output voltage is equal to V i.
+[44:39] When V i is negative the output voltage is equal to V i.
+[44:44] Okay.
+[44:48] Here it is.
+[44:50] What will be the slope of this line?
+[44:55] One.
+[44:57] Clear?
+[44:58] So we are clipping the positive cycle.
+[45:01] In the negative cycle V naught is equal to V i.
+[45:06] Now see again if we draw the waveform of this.
+[45:27] So we are saying that here in the positive cycle when V i is positive then the output is zero.
+[45:35] When V i is positive then my output is zero.
+[45:39] See.
+[45:41] This is zero.
+[45:42] Output.
+[45:47] This is zero.
+[45:49] And when my children are negative then the output voltage is zero.
+[45:55] So the output is equal to V i.
+[45:57] So when V i is negative then the output voltage is zero.
+[46:03] Here it is.
+[46:04] So what did he do?
+[46:05] He clipped the positive cycle.
+[46:08] It has clipped the positive cycle.
+[46:11] That is why it is called as positive clipper.
+[46:15] Okay.
+[46:16] And why did he say shunt?
+[46:18] Because the diode shunt is used.
+[46:22] Now let's come to the next one.
+[46:26] Yes.
+[46:27] Positive bias shunt positive clipper.
+[46:31] Now see here we have applied bias.
+[46:33] Here we have applied bias V i.
+[46:35] Clear?
+[46:36] And you can try all this with me now.
+[46:40] At least try two cases with me in your copy.
+[46:44] I am writing one by one and you will be able to do fast analysis with me.
+[46:49] Because you will not write everything step by step.
+[46:52] I will do a short circuit test again.
+[47:23] Now when the diode shunt is circuit, do you see this?
+[47:27] See this is connecting from positive to positive.
+[47:30] It is connecting from negative to negative.
+[47:32] Both are in parallel.
+[47:33] So the value will be same.
+[47:35] Otherwise Anand my brother, Anand you can also apply KVL.
+[47:39] Minus plus plus VR then plus minus minus VR.
+[47:43] Sorry plus minus minus V naught.
+[47:46] VR minus V naught equal to zero.
+[47:49] VR minus V naught equal to zero.
+[47:52] That means V naught equal to VR.
+[47:54] V naught equal to VR.
+[47:57] Now what will happen here?
+[48:00] According to the short circuit test, the current should come like this.
+[48:04] Diode.
+[48:10] So if you write I in this loop, then the ID will be equal to I.
+[48:17] Which is V i.
+[48:20] Minus VR by R.
+[48:23] V i minus VR by R.
+[48:26] Now what I say, my assumption is that the diode is on.
+[48:30] That would be correct if the current is positive.
+[48:34] That means V i is bigger than VR.
+[48:37] In such a situation, V naught will be coming out to be VR.
+[48:42] This is my situation.
+[48:44] Diode will be on.
+[48:46] Diode will be on if my V i is greater than VR.
+[48:51] And in that situation, V naught will be VR.
+[48:54] V naught will be VR.
+[48:56] Okay.
+[48:58] So now we will do two more cases here.
+[49:02] Case one.
+[49:05] V i greater than VR.
+[49:10] So diode will be on.
+[49:13] Which means it will be shorted.
+[49:16] And V naught will come out to be VR.
+[49:23] Case two.
+[49:26] V i less than VR.
+[49:30] Diode will be off.
+[49:33] For shorting.
+[49:36] Sorry, diode will be off.
+[49:38] Off means open.
+[49:41] Okay.
+[49:42] Now what will happen in this?
+[49:45] If we open the circuit and make the diode open.
+[49:51] As soon as it opens, you will understand that no current is going to flow.
+[49:56] Because the current has opened the way.
+[49:58] Okay.
+[50:11] So see.
+[50:13] Here the current will be zero.
+[50:17] Which means there will be no voltage drop on the resistance.
+[50:22] The entire input voltage will come across the output.
+[50:26] Right?
+[50:27] There will be no drop on the resistance in the middle.
+[50:29] The current is zero.
+[50:31] Current is zero.
+[50:32] Now again the transfer characteristic will be discussed.
+[50:43] Our V naught y axis is here.
+[50:48] Okay.
+[50:50] Now after this, this vi's x axis is here.
+[50:56] Okay.
+[51:04] Now your threshold is VR.
+[51:08] Your threshold is VR.
+[51:13] And there is a level in your output that is VR.
+[51:23] Okay.
+[51:24] Now if vi is greater than vr, then v naught will come out to be vr.
+[51:30] So if vi is greater than vr, then v naught will be vr.
+[51:35] Understand?
+[51:36] Here on the right hand side, vi is greater than vr.
+[51:41] So your v naught is equal to vr.
+[51:44] And if vi is smaller than this, then a straight line will come.
+[51:48] V naught will be equal to vi.
+[51:51] So a straight line will come whose slope will be one.
+[51:55] Understand?
+[51:56] If vi is smaller than vr, then v naught will be equal to vi.
+[52:02] So it will be a straight line of slope equal to one.
+[52:05] Clear?
+[52:08] Now what do we do here?
+[52:16] We will talk about this waveform.
+[52:19] Now we will make a reference level vr.
+[52:23] Here it is vr.
+[52:26] So make it here too.
+[52:28] Now you said that if you go above vr, then you will clip the output.
+[52:36] You will fix the output at vr.
+[52:39] And if you go below vr, then the output will be same as input.
+[52:45] So below vr, i.e. below the pink line, you have to follow the input graph.
+[52:55] Follow the input below vr.
+[52:58] And what to do above vr?
+[53:01] What to do above vr?
+[53:03] Whenever you go up, then fix it on vr.
+[53:06] Okay? Fix it on vr.
+[53:15] Here it is.
+[53:19] So what did you do?
+[53:21] You clipped all the voltages above vr.
+[53:25] Do you know that once in the gate, maybe in 2021 or 2022, there was a question.
+[53:30] You were showing such a waveform, clipped.
+[53:33] Now you were getting an RMS of this.
+[53:36] RMS.
+[53:37] So what I just told Amit, I took out theta and showed it.
+[53:40] So what will you say?
+[53:42] From theta to 180-theta is the constant value.
+[53:46] And the rest is the graph sign.
+[53:48] If you go from 0 to 2 pi, then you will say that from 0 to theta is the sign.
+[53:53] Then from theta to 180-theta is the constant.
+[53:56] Then from 180-theta to 2 pi is the sign.
+[54:00] By doing this, the graph will be divided into three parts.
+[54:03] From 0 to theta or let's start with theta.
+[54:06] From theta to 180-theta is the constant.
+[54:08] And from 180-theta to 2 pi plus theta is the sign.
+[54:12] By doing this, the square of two waveforms will be integrated and the RMS will come out.
+[54:17] Let me take you out and show you.
+[54:19] See how it comes out.
+[54:22] The point is that the angle here, I just told you that this is theta.
+[54:28] So this is pi minus theta.
+[54:33] So let me tell you how much theta will be.
+[54:37] You will say that the graph of the sign is equal to Vr.
+[54:42] That is theta.
+[54:44] So theta is the sign inverse Vr by Vm.
+[54:48] Got it?
+[54:49] Theta is the same.
+[54:52] Where the graph of the sign is equal to your reference.
+[54:58] Now let me tell you that you have to take one cycle for RMS.
+[55:03] So one cycle means from theta to 2 pi plus theta.
+[55:09] This cycle will be complete.
+[55:13] It is 2 pi of one cycle.
+[55:15] So I am taking 2 pi from 0 to theta to 2 pi plus theta.
+[55:21] So I am saying that if you want RMS.
+[55:25] So the cycle period is 2 pi.
+[55:30] Now you have to divide it into two parts.
+[55:35] One is theta to pi minus theta.
+[55:38] This is Vr.
+[55:40] You integrate it by squaring for RMS.
+[55:44] Okay?
+[55:45] Do it like this.
+[55:48] The second is or do one thing.
+[55:52] Name it as d alpha.
+[55:55] The second is pi minus theta to 2 pi plus theta.
+[56:03] Vm sin alpha.
+[56:06] The graph of the sign.
+[56:08] I am calling the angle alpha.
+[56:10] You cannot call it theta.
+[56:11] It is coming in the theta limits.
+[56:12] So I said take alpha.
+[56:15] Like this.
+[56:18] So I have divided the waveform in two parts.
+[56:21] 1 is constant from theta to 180 minus theta.
+[56:24] And then from 180 minus theta to 360 plus theta.
+[56:28] It is following the sign.
+[56:30] So RMS will come from here.
+[56:31] RMS came out of it.
+[56:33] Do you understand how to do it?
+[56:34] If you have to take out RMS.
+[56:37] Tell me.
+[56:38] If you have to take out RMS.
+[56:39] Then it is clear how to do it.
+[56:42] Don't do Vm by root 2.
+[56:45] Do you understand?
+[56:46] Don't write it like this.
+[56:47] That Vm by root 2 will come.
+[56:49] It is for the sign.
+[56:50] This waveform is not a pure sign.
+[56:53] It is a distorted sign wave.
+[56:55] The sign has been cut in it.
+[56:57] So it will not be called a pure sign.
+[57:00] Okay.
+[57:01] Many children think that any graph comes.
+[57:04] RMS is equal to peak by root 2.
+[57:06] It is not like that.
+[57:11] Okay.
+[57:12] Let's go.
+[57:14] Now negative bias.
+[57:17] Shunt positive clipper.
+[57:19] We will start from there again.
+[57:22] Short circuit test.
+[57:33] Short circuit test.
+[57:35] Okay.
+[57:36] Now short circuit test.
+[57:39] Nikhil says that Kamesh sir's EDC lecture is not visible.
+[57:43] There is a policy of unacademy.
+[57:45] Whenever any teacher leaves.
+[57:47] Their lectures are valid for 2 years.
+[57:49] So the content of July 2020 will be removed.
+[57:53] And unacademy has not removed.
+[57:55] Unacademy has been given the threat of legal notice.
+[57:59] That it was a contract for 2 years.
+[58:01] If you will keep my lectures after 2 years.
+[58:03] Then I will sue you.
+[58:04] I will put your legal case on you.
+[58:06] Then you will have to remove it.
+[58:07] There is no solution for that.
+[58:09] Okay.
+[58:10] Come.
+[58:11] Now if you are seeing old content for 2 years.
+[58:14] If he will violate the agreement.
+[58:16] Then what can anyone do in that?
+[58:23] Now see.
+[58:24] This is VI.
+[58:32] This is resistance.
+[58:34] Now you have shorted the diode.
+[58:44] Okay.
+[58:56] Okay.
+[58:57] Now here you see.
+[59:00] Positive with negative terminal.
+[59:02] Positive with negative terminal.
+[59:05] So V0 will be minus VR.
+[59:08] Now here.
+[59:09] Okay.
+[59:10] Now here.
+[59:13] If you see the current of this diode.
+[59:17] And see this current.
+[59:19] I.
+[59:20] So the ID will be equal to I.
+[59:27] VI plus VR by R.
+[59:30] Yes.
+[59:31] It depends on the educator.
+[59:33] To keep your lectures or remove them.
+[59:35] It is beneficial to think about unacademy.
+[59:38] If you think about unacademy or unacademy.
+[59:41] If you use unacademy or unacademy content.
+[59:43] Then it is beneficial.
+[59:44] What is the loss of the company?
+[59:45] Why will the company remove it?
+[59:47] They are getting it free.
+[59:49] So the teacher who will not raise the objection on it.
+[59:52] He will continue to study.
+[59:53] Like I am in unacademy right now.
+[59:55] So my lectures will continue to study.
+[59:56] There is no problem.
+[59:57] Because I do not have any problem with that.
+[59:59] But if I say tomorrow.
+[60:01] If this lecture is 2 years old.
+[60:02] You will have to remove it.
+[60:03] Then we will remove it.
+[60:04] Because it is legal.
+[60:05] That thing is written.
+[60:07] Now come.
+[60:08] We do not waste time on all these things.
+[60:11] Now my diode will be on.
+[60:13] If the current is positive.
+[60:15] Means VI plus VR if it is positive.
+[60:19] That is VI greater than minus VR.
+[60:24] Okay.
+[60:25] So now see.
+[60:26] You came to know one thing.
+[60:28] When you tested your short circuit.
+[60:31] Case one.
+[60:32] If VI is bigger than minus VR.
+[60:36] Then the diode is on.
+[60:39] That is short circuit.
+[60:41] If the diode is on.
+[60:43] Then V naught comes out to be minus VR.
+[60:48] Case two.
+[60:52] If VI is less than minus VR.
+[60:57] Then the diode is off.
+[61:00] Which is open circuit.
+[61:03] Now let's draw the diagram of the open circuit.
+[61:34] Now see.
+[61:38] When the open circuit is on.
+[61:40] The current is off.
+[61:42] So the resistance drop is zero.
+[61:44] Now if you put the KVL like this.
+[61:46] Then V naught will come out to be VI.
+[61:49] V naught will come out to be VI.
+[61:52] Okay.
+[61:53] Now here if we go to make the transfer characteristic of it.
+[62:04] See this is our Y axis.
+[62:13] And this is the X axis.
+[62:19] Now I can see that the threshold in VI is minus VR.
+[62:24] And one level is coming in V naught.
+[62:27] Minus VR.
+[62:30] So first let's draw minus VR in both.
+[62:36] Okay.
+[62:38] This is also minus VR.
+[62:40] Threshold in VI and V naught.
+[62:42] Now you said that if VI is bigger than minus VR.
+[62:48] If VI is bigger than minus VR.
+[62:51] Then V naught will come minus VR.
+[63:01] If it is bigger, then V naught will come minus VR.
+[63:05] And if it is smaller, then V naught will come to be VI.
+[63:18] So if it is smaller, then V naught will come to be VI.
+[63:21] That is, this slope came to be one.
+[63:26] Okay.
+[63:27] This slope came to be one.
+[63:30] There will be no difference in graphs.
+[63:32] There is a difference in construction.
+[63:34] Otherwise the name would not have been different.
+[63:36] If both the working and characteristic would have been different.
+[63:39] Or the output would have been different.
+[63:40] So the name would have been different.
+[63:41] So if we are talking about a positive clipper.
+[63:43] Whether it is a series or a shunt, its work is the same.
+[63:46] Do you understand?
+[63:50] Now here if we go to take out its output.
+[63:58] Okay.
+[64:01] So what do we know?
+[64:02] We have to take the threshold.
+[64:04] We have to take it to minus VR.
+[64:08] Take this.
+[64:13] Now what we have to do is that if it is lower than minus VR.
+[64:18] Then it is okay.
+[64:20] Then our output will be VI.
+[64:23] But if it is higher.
+[64:25] Then our minus VR will come.
+[64:28] So if it is lower, then as it is, the output is equal to the input.
+[64:32] If you are lower than minus VR.
+[64:35] The output is equal to the input.
+[64:39] Okay.
+[64:40] This came.
+[64:41] And if you are higher.
+[64:43] Then your constant will come.
+[64:45] Which is equal to VI.
+[64:48] Sorry.
+[64:49] Which is equal to minus VR.
+[64:51] Son, there are two ways to do one work.
+[64:54] So both are being studied.
+[64:55] Okay.
+[64:56] Now open circuit and short circuit are two methods.
+[64:59] To analyze the diode.
+[65:01] So both are being studied.
+[65:02] Both are doing the same work.
+[65:04] This is what we are telling.
+[65:06] Which diode is on, which is off.
+[65:08] If there are two possibilities in something.
+[65:10] There are two ways to do one thing.
+[65:12] So both are being studied.
+[65:14] Is it clear up to here?
+[65:16] Tell me.
+[65:19] Now take a small example.
+[65:21] There are two ways to make a filter.
+[65:22] So make it with RC or with RL.
+[65:24] Both are being studied in this situation.
+[65:26] Both are being studied.
+[65:28] Okay.
+[65:29] Come on.
+[65:31] Now let us come to the two level clipper.
+[65:34] Two level clipper means.
+[65:36] That you set the upper and lower both the limits.
+[65:39] Now you are not saying.
+[65:41] That you have to cut one level above or one level below.
+[65:44] You are saying that you have to cut one level above.
+[65:48] And you have to cut one level below.
+[65:52] Now look at this.
+[65:54] I have made both the shunt clippers.
+[65:56] Shunt clippers.
+[65:57] So what will you say?
+[65:59] This is positive.
+[66:01] Sorry.
+[66:02] This is.
+[66:05] What is this?
+[66:06] This is a positive clipper.
+[66:10] Positive clipper.
+[66:15] Okay.
+[66:18] So what does this do?
+[66:20] Clips V greater than V1.
+[66:24] That means it will cut.
+[66:26] This is your negative clipper.
+[66:36] What will this do?
+[66:39] Clips V less than V2.
+[66:42] So it is clipping below V2.
+[66:45] Clipping above V1.
+[66:47] And the condition is that V1 is greater than V2.
+[66:51] Sir, why is there such a condition?
+[66:53] V1 is greater than V2.
+[66:55] Because these two diodes should not be on one side.
+[66:59] If they are on one side, then V1 on one side and V2 on one side.
+[67:02] KVL will be violated.
+[67:04] Do you understand what I mean?
+[67:05] If these two are on one side, then KVL will be violated.
+[67:09] There cannot be a different voltage in two parallel circuits.
+[67:14] There cannot be a different battery in two parallel branches.
+[67:18] That is why both should never be on one side.
+[67:20] Now think, will V greater than V1 turn on?
+[67:24] Will V greater than V1 turn on?
+[67:27] So here the voltage will be V1.
+[67:30] Here it will be V1.
+[67:32] What is the voltage on this node, V1?
+[67:34] What is V2 on this node?
+[67:36] So V1 should be greater than V2 so that it stays reverse bias.
+[67:40] Think again.
+[67:42] If my D1 is on, then the voltage on this node will be V1.
+[67:48] From the battery.
+[67:50] What is the voltage on this node, V1?
+[67:52] There is only one node. It is shorted.
+[67:54] This is the cathode voltage of diode 2.
+[67:58] So the cathode voltage should be more than anode so that it stays reverse.
+[68:03] When D1 is on, then D2 should be reverse.
+[68:07] For that, the condition is V1 greater than V2.
+[68:10] Now understand where this condition came from?
+[68:12] Now see how this graph is made here.
+[68:20] What is in this graph?
+[68:23] That you set it to two levels.
+[68:27] Suppose this is V1.
+[68:34] Suppose you have said that this is V1.
+[68:37] And you have taken a little below it, V2.
+[68:40] Here you can take V2 negative.
+[68:43] I am just taking an example.
+[68:45] Now you are saying that it cannot go above V1 and below V2.
+[68:50] If it goes above V1, then it will cut D1.
+[68:53] And if it goes below V2, then it will cut D2.
+[68:56] So what will you see here?
+[68:58] Whenever your graph will try to go above V1,
+[69:03] it will be flat.
+[69:05] If it tries to go below V2, then it will also be flat.
+[69:09] If it tries to go above V1, then it will also be flat.
+[69:14] And here in between these two levels,
+[69:18] it follows the input like this.
+[69:22] Now see, it has been cut from both the sides.
+[69:26] So what happened?
+[69:27] It has become a two level clipper.
+[69:29] Right?
+[69:30] It has become a two level clipper.
+[69:32] What happened to everyone?
+[69:33] What is happening here in the two level clipper?
+[69:35] So there are two diodes in the two level clipper.
+[69:38] Nothing is there.
+[69:39] Can you do it with open circuit test?
+[69:41] If you want to analyze it with open circuit test,
+[69:45] see.
+[69:46] If you analyze it with the same test,
+[69:50] assume that we want to apply the same test.
+[69:56] So what do you do?
+[69:59] You make it a circuit like this.
+[70:03] Okay?
+[70:05] You say that we have to do it with the basics.
+[70:08] Okay?
+[70:09] There is no problem.
+[70:10] Look, you won't be able to do it with the short circuit test
+[70:13] because if both of them are on together,
+[70:15] then the KVL will be violated.
+[70:17] So here the short circuit test will fail.
+[70:20] But yes, you can apply open circuit test.
+[70:24] Now see, there is no way of current flow here.
+[70:29] So there will be no drop of resistance.
+[70:32] That is, you can say that the voltage here will be VI.
+[70:37] Okay?
+[70:38] Now you will write this voltage VD1.
+[70:42] And this diode is connected upside down.
+[70:44] So VD2.
+[70:46] Okay?
+[70:48] This is V1 and this is V2.
+[70:51] So here the voltage is V1 and here is V2.
+[70:55] Now if you want a voltage of diode 1,
+[70:58] then subtract the negative from the positive terminal.
+[71:01] VI-V1.
+[71:03] And if you want a diode 2,
+[71:05] then subtract the negative from the positive.
+[71:07] V2-VI.
+[71:09] So here you can say that the diode 1 will turn on
+[71:14] if this voltage is positive.
+[71:17] That is, VI-V1 is increased.
+[71:19] And diode 2 will turn on if this positive comes.
+[71:22] That is, VI-V2 is reduced.
+[71:24] So we are saying that D1 will be on
+[71:29] when VI is greater than V1.
+[71:32] And D2 will be on
+[71:34] if VI is less than V2.
+[71:37] So if you subtract V1 from V2,
+[71:43] if you subtract V1 from V2,
+[71:45] that means V1 is smaller
+[71:47] and V2 is bigger,
+[71:49] then both will be off here.
+[71:52] Then your V0 is equal to the input.
+[71:55] Is it clear?
+[71:57] Is it clear?
+[71:58] You can do it like this.
+[71:59] Actually, you have to do it like this in the exam.
+[72:01] I just told you directly.
+[72:03] Otherwise, if you come to the exam,
+[72:05] then you do it with the basics.
+[72:07] Because the more you start making the question with the basics,
+[72:10] the fear of the question will come out.
+[72:12] Because you know the fear of what it is.
+[72:14] That today we can do it.
+[72:16] Today we remember it.
+[72:17] Tomorrow we will forget it.
+[72:18] I am not doing the forgotten work.
+[72:20] When we are not remembering it today,
+[72:22] then will we forget it?
+[72:23] We forget what we remember.
+[72:25] We will not forget it.
+[72:27] Is the risk minimized?
+[72:30] Okay.
+[72:33] And see, if there are some questions in the assignment,
+[72:35] there is no need to worry.
+[72:37] I will make an assignment.
+[72:38] I will also teach the clamper tomorrow.
+[72:40] Then we will see the assignment of the clipper and the clamper together.
+[72:46] Okay.
+[72:47] There will be three assignments.
+[72:49] Then we will do it together.
+[72:51] Okay.
+[72:52] Come to the question.
+[72:54] What is the question?
+[72:56] What is the circuit diagram of a clipper
+[73:00] for the transfer characteristic shown in the figure?
+[73:04] What is the circuit diagram of the clipper
+[73:08] whose transfer characteristic is given?
+[73:11] Tell me.
+[73:13] Tell me.
+[73:19] Okay.
+[73:36] Okay.
+[73:37] I will go to the side.
+[73:38] Can you see clearly from this side?
+[73:40] The whole question.
+[73:41] Look.
+[73:42] What is the word?
+[73:43] This one is C.
+[73:45] Neela Ashok is A.
+[73:50] This week, your diode
+[73:55] will be attracted to me a lot.
+[73:58] It will not be possible.
+[74:00] We'll do the clamper tomorrow.
+[74:02] Then there will be rectifars.
+[74:04] There is Saturday tomorrow and Friday is Friday tomorrow.
+[74:06] There will be rectifars.
+[74:09] It will not be able to be done completely.
+[74:11] You will end your diode till the next week.
+[74:15] What is the C coming?
+[74:16] Let's see.
+[74:17] Here, one thing you are noticing is that V0 and Vin have different thresholds.
+[74:25] If there are 8 in Vin, then Vin is 16.
+[74:29] If there are minus 4 in Vin, then Vin is minus 8.
+[74:33] In other words, you can see that Vin by 2 is going on.
+[74:40] Do you know why this is going on?
+[74:42] This is going on with potential division.
+[74:44] Look at this circuit. Vin RR is half.
+[74:48] If these two branches are open, then half will come.
+[74:52] Then Vin RR.
+[74:54] Look, it will not come in this. It is 2R.
+[74:57] This is wrong.
+[74:59] Vin RR can also come in this.
+[75:03] C is wrong because it should have equal division.
+[75:07] It should be A, B or D of voltage.
+[75:10] Now what we are saying here is that we have to clamp on 8V and clamp on minus 4V.
+[75:19] If you go ahead of 16, then you should stop at 8.
+[75:24] That is, there is a positive clip here.
+[75:28] You are clipping the value above with a particular value.
+[75:34] You are saying that if you go below minus 4, then the clip will be done.
+[75:39] This is the negative clip.
+[75:41] The value below is being cut.
+[75:46] Look, this one is the diode in this orientation.
+[75:51] This is the positive clip.
+[75:53] With this, you will have to clamp on 8.
+[75:59] This is the negative clip.
+[76:01] With this, you will have to clamp on minus 4.
+[76:06] Minus 4.
+[76:10] So B is correct.
+[76:14] B is correct.
+[76:16] Did you understand how I did it?
+[76:19] Tell me.
+[76:20] Did you understand?
+[76:22] It is not going above 8 here.
+[76:25] That is, you have to clip above 8.
+[76:28] It is not going below minus 4 here.
+[76:30] So you have to clip below minus 4.
+[76:32] So above 8, you will put 8 with a positive clipper.
+[76:36] Clipping below minus 4 means you will put minus 4 with a negative clipper.
+[76:42] And why is this half factor in V0 and VI?
+[76:46] It is because of this voltage division.
+[76:49] If you look at the outside circuit, then the factor will be half.
+[76:54] Till now, we were only taking one resistance.
+[76:57] So V0 equal to VI was coming.
+[76:59] The straight line whose slope was coming is 1.
+[77:02] This time, the slope will be half.
+[77:04] Because here, the voltage will be divided.
+[77:07] So the slope will come out to be half.
+[77:09] Look at the next one.
+[77:11] Assuming D1, D2 are to be ideal.
+[77:15] You have to make a transfer characteristic.
+[77:17] Now look at this.
+[77:18] RL infinity is given.
+[77:20] You can consider it as open.
+[77:24] Make one diode.
+[77:26] There are two diodes.
+[77:28] Let me call this D2.
+[77:30] This is 5V, this is 10V, this is D1.
+[77:34] Now do this from the basics.
+[77:36] You can see that the series and shunt clippers are combined.
+[77:40] Neither this is purely series nor this is purely shunt.
+[77:46] So make an open circuit or short circuit test.
+[78:54] Draw the option.
+[79:21] Draw the option.
+[79:23] Do you have an option?
+[79:25] Yes, you have an option.
+[79:27] Your luck is good.
+[79:29] Here are the options.
+[79:33] Is there any match?
+[79:35] Look at it quickly.
+[79:39] I will come back to the question.
+[79:41] Should I start it?
+[79:43] Let's go.
+[79:45] I will do an open circuit test.
+[79:47] Let's go.
+[79:51] We will do it from the basics.
+[79:57] Don't be scared by looking at the circuit.
+[80:01] It is a circuit.
+[80:03] Which will come out and eat us?
+[80:17] Sometimes I feel that it is still permissible to be scared by the teacher's question.
+[80:21] Because I could not make it.
+[80:23] So what will the children think?
+[80:25] Why do you people get scared by the question?
+[80:27] If you could not make it, then no one is going to think.
+[80:31] Look at this.
+[80:33] 10, 5, this is 2.
+[80:37] Now look, there is no way of current flow.
+[80:41] There is no closed path here.
+[80:43] The current cannot flow.
+[80:45] If the current is zero here.
+[80:49] Because it will not get any closed path.
+[80:53] So here you will get 10 volts.
+[80:55] The whole thing.
+[80:57] Because look, there is 10 volts in this.
+[80:59] And there is zero in this.
+[81:01] There is zero in this and there is 10 in this.
+[81:03] So it came together.
+[81:05] 10 volts.
+[81:07] Now what do I say?
+[81:09] I want the voltage of the diodes.
+[81:11] VD2
+[81:13] And VD1
+[81:17] Now if you look at KVL,
+[81:19] VD1.
+[81:21] The voltage here is VI.
+[81:23] The positive and the negative are 10.
+[81:25] So VI-10
+[81:27] VD2
+[81:29] The voltage of the positive is 5.
+[81:31] And the negative is 10.
+[81:33] So minus 5.
+[81:35] So this is reverse bias.
+[81:37] Okay?
+[81:39] Now we can still say
+[81:41] that D1 will be on.
+[81:43] When will it be on?
+[81:45] When VI is greater than 10.
+[81:49] Okay? D1 will be on.
+[81:51] Till then D1 will be off.
+[81:53] When VI is less than 10.
+[81:57] If VI is less than 10 and D1 is off.
+[81:59] So how much is the V-0 here?
+[82:03] Here the V-0 is coming.
+[82:05] 10.
+[82:07] The V-0 is coming.
+[82:09] 10.
+[82:15] So here the first case is
+[82:17] V-I
+[82:19] V-I
+[82:21] V-I
+[82:23] less than 10
+[82:25] So V-0 equal to 10
+[82:27] Both are diode off.
+[82:29] Both are diode off.
+[82:31] Both are diode off.
+[82:33] Both are diode off.
+[82:35] Okay?
+[82:37] Come to case 2.
+[82:41] VI greater than 10.
+[82:43] So D1 will be on.
+[82:45] Now when you turn on D1
+[82:47] my brother.
+[82:49] Then make a circuit.
+[82:51] You turned on D1.
+[83:07] So
+[83:13] Look
+[83:15] V-0 is coming.
+[83:17] VI equal to
+[83:19] V-0.
+[83:23] Now here the voltage is
+[83:29] V-D2.
+[83:31] How much is V-D2 here?
+[83:33] 5 minus VI
+[83:35] Because here
+[83:37] if you consider the ground
+[83:39] then VI will come here.
+[83:41] Now since
+[83:43] VI is greater than 10
+[83:45] V-D2 will come
+[83:47] negative.
+[83:49] That is D2 will be off.
+[83:51] So D2 is always
+[83:53] coming off.
+[83:55] When VI is smaller than 10
+[83:57] then also D2 is off.
+[83:59] When VI is greater than 10
+[84:01] then also D2 is off.
+[84:03] But
+[84:05] D1 can be on
+[84:07] from 10.
+[84:09] D1
+[84:11] can be on from 10.
+[84:13] But D2 is always off.
+[84:15] So the threshold
+[84:17] coming in input voltage
+[84:19] is coming out of 10.
+[84:27] We have drawn the line of 10V.
+[84:33] This is the line of 10V.
+[84:39] Now what you are saying
+[84:41] that if
+[84:43] VI is smaller than 10
+[84:45] then V-0 will come.
+[84:47] If VI is smaller than 10
+[84:49] then V-0 will come.
+[84:55] Here it is.
+[84:57] And if VI is bigger than 10
+[84:59] then VI will come.
+[85:01] So this is the line of slope 1.
+[85:03] This is done.
+[85:05] Now which graph will match?
+[85:07] Graph will match A.
+[85:09] A will be the correct answer.
+[85:11] Do you understand everyone?
+[85:13] How did this question
+[85:15] become clear?
+[85:17] Both have opened the diode
+[85:19] and removed the condition.
+[85:21] We got the threshold of VI
+[85:23] and we got the value of V-0.
+[85:25] Let's see the next one.
+[85:27] See the next one.
+[85:29] Do it again with a basic
+[85:31] open circuit test
+[85:33] in a fun way.
+[85:59] Let's see the next one.
+[86:11] Make it.
+[86:25] What is the meaning of A?
+[86:27] This is the next one.
+[86:29] Resistance 3 is coming.
+[86:31] The first one is coming.
+[86:33] V-0's cross is coming.
+[86:35] Brahmendra is saying A.
+[86:37] Nitish is saying A.
+[86:39] Allan Raju is saying A.
+[86:41] Very good.
+[86:43] Let me make it with both the methods.
+[86:45] Basic and direct.
+[86:47] First see the direct method.
+[86:49] If you see the direct method first
+[86:51] then this is your positive
+[86:53] shunt clipper.
+[86:57] Positive shunt clipper.
+[86:59] Positive shunt clipper.
+[87:01] What does this say?
+[87:03] That V-0
+[87:05] clipped at
+[87:07] 12 volts.
+[87:09] Means it cannot go above 12.
+[87:11] Okay?
+[87:13] This is your negative shunt clipper.
+[87:21] This is saying
+[87:23] V-0
+[87:25] clipped at
+[87:27] minus 9 volts.
+[87:31] It is upside down, isn't it?
+[87:33] Now you can take out one more thing.
+[87:35] Slope.
+[87:37] What can you do for the slope?
+[87:39] Turn off both the diodes.
+[87:45] So, V-0 will be
+[87:47] from the voltage division
+[87:49] if both the branches are open.
+[87:53] 3 by 4
+[87:55] V-I
+[87:57] 3 by 4
+[87:59] V-I
+[88:01] Now check which option is this.
+[88:03] Look, 12 and
+[88:05] minus 9 should be cut.
+[88:07] Good.
+[88:09] 16 and minus 12 is cut wrong.
+[88:11] Okay?
+[88:13] Then 12 and minus 9 is cut here.
+[88:15] This is also good.
+[88:17] Now see the slope here.
+[88:19] Slope is coming here.
+[88:21] What is the slope here?
+[88:23] 12 by 12.
+[88:25] Look at the slope here.
+[88:27] 12 by 16
+[88:29] means 3 by 4.
+[88:31] So, A.
+[88:33] Understood?
+[88:35] You can direct like this.
+[88:37] Now I will show you the basic method.
+[88:39] If you do the exam
+[88:41] you have no idea
+[88:43] about this.
+[88:45] You do the
+[88:47] open circuit test.
+[88:49] Open circuit test.
+[88:51] Why can't you do the short circuit?
+[88:53] Because KVL
+[88:55] will get violated.
+[88:57] If both the diodes are on
+[88:59] in the shunt
+[89:01] then KVL will get violated.
+[89:03] Now see
+[89:05] V-I
+[89:07] R
+[89:11] R
+[89:19] R
+[89:21] R
+[89:23] R
+[89:25] R
+[89:27] R
+[89:29] R
+[89:31] R
+[89:33] R
+[89:35] R
+[89:37] R
+[89:39] R
+[89:41] R
+[89:43] R
+[89:45] R
+[89:47] R
+[89:49] R
+[89:51] R
+[89:53] R
+[89:55] R
+[89:57] R
+[89:59] R
+[90:01] R
+[90:03] R
+[90:05] R
+[90:07] R
+[90:09] R
+[90:11] R
+[90:13] R
+[90:15] R
+[90:17] R
+[90:19] R
+[90:21] R
+[90:23] R
+[90:25] R
+[90:27] R
+[90:29] R
+[90:31] R
+[90:33] R
+[90:35] R
+[90:37] R
+[90:39] R
+[90:41] R
+[90:43] R
+[90:45] R
+[90:47] R
+[90:49] R
+[90:51] R
+[90:55] R
+[90:57] R
+[90:59] R
+[91:01] R
+[91:03] R
+[91:05] R
+[91:07] R
+[91:09] R
+[91:11] R
+[91:13] R
+[91:15] R
+[91:17] R
+[91:19] R
+[91:21] R
+[91:23] R
+[91:25] R
+[91:27] R
+[91:29] R
+[91:31] R
+[91:33] R
+[91:35] R
+[91:37] R
+[91:39] R
+[91:41] R
+[91:43] R
+[91:45] R
+[91:47] R
+[91:49] R
+[91:51] R
+[91:53] R
+[91:55] R
+[91:57] R
+[91:59] R
+[92:01] R
+[92:03] R
+[92:05] R
+[92:09] R
+[92:11] R
+[92:13] R
+[92:15] R
+[92:17] R
+[92:19] R
+[92:21] R
+[92:23] R
+[92:25] R
+[92:27] R
+[92:29] R
+[92:31] R
+[92:33] R
+[92:35] R
+[92:37] R
+[92:39] R
+[92:41] R
+[92:43] R
+[92:45] R
+[92:47] R
+[92:49] R
+[92:51] R
+[92:53] R
+[92:55] R
+[92:59] R
+[93:01] R
+[93:03] R
+[93:05] R
+[93:07] R
+[93:09] R
+[93:11] R
+[93:13] R
+[93:15] R
+[93:17] R
+[93:19] R
+[93:21] R
+[93:23] R
+[93:27] R
+[93:29] R
+[93:33] R
+[93:35] R
+[93:37] R
+[93:39] R
+[93:41] R
+[93:43] R
+[93:45] R
+[93:47] R
+[93:49] R
+[93:51] R
+[93:53] R
+[93:55] R
+[93:57] R
+[93:59] R
+[94:01] R
+[94:05] R
+[94:07] R
+[94:09] R
+[94:11] R
+[94:13] R
+[94:15] R
+[94:17] R
+[94:19] R
+[94:21] R
+[94:23] R
+[94:25] R
+[94:27] R
+[94:29] R
+[94:31] R
+[94:33] R
+[94:35] R
+[94:37] R
+[94:39] R
+[94:41] R
+[94:43] R
+[94:47] R
+[94:49] R
+[94:51] R
+[94:53] R
+[94:55] R
+[94:57] R
+[95:01] R
+[95:03] R
+[95:05] R
+[95:07] R
+[95:09] R
+[95:11] R
+[95:13] R
+[95:15] R
+[95:17] R
+[95:19] R
+[95:21] R
+[95:23] R
+[95:25] R
+[95:27] R
+[95:29] R
+[95:31] R
+[95:33] R
+[95:35] R
+[95:37] R
+[95:39] R
+[95:41] R
+[95:43] R
+[95:47] R
+[95:49] R
+[95:51] R
+[95:53] R
+[95:55] R
+[95:57] R
+[95:59] R
+[96:01] R
+[96:03] R
+[96:05] R
+[96:07] R
+[96:09] R
+[96:11] R
+[96:15] R
+[96:17] R
+[96:19] R
+[96:21] R
+[96:23] R
+[96:25] R
+[96:27] R
+[96:29] R
+[96:31] R
+[96:33] R
+[96:35] R
+[96:37] R
+[96:39] R
+[96:43] R
+[96:45] R
+[96:47] R
+[96:49] R
+[96:53] R
+[96:55] R
+[96:57] R
+[96:59] R
+[97:01] R
+[97:03] R
+[97:05] R
+[97:07] R
+[97:09] R
+[97:11] R
+[97:13] R
+[97:15] R
+[97:17] R
+[97:19] R
+[97:21] R
+[97:23] R
+[97:25] R
+[97:27] R
+[97:29] R
+[97:31] R
+[97:33] R
+[97:35] R
+[97:37] R
+[97:39] R
+[97:41] R
+[97:47] R
+[97:49] R
+[97:51] R
+[97:53] R
+[97:55] R
+[97:57] R
+[97:59] R
+[98:01] R
+[98:03] R
+[98:05] R
+[98:07] R
+[98:09] R
+[98:11] R
+[98:13] R
+[98:17] R
+[98:19] R
+[98:21] R
+[98:23] R
+[98:25] R
+[98:27] R
+[98:29] R
+[98:31] R
+[98:33] R
+[98:35] R
+[98:37] R
+[98:39] R
+[98:41] R
+[98:43] R
+[98:45] R
+[98:47] R
+[98:49] R
+[98:51] R
+[98:53] R
+[98:55] R
+[98:57] R
+[98:59] R
+[99:03] R
+[99:05] R
+[99:07] R
+[99:09] R
+[99:11] R
+[99:13] R
+[99:15] R
+[99:17] R
+[99:19] R
+[99:21] R
+[99:23] R
+[99:25] R
+[99:27] R
+[99:31] R
+[99:33] R
+[99:35] R
+[99:39] R
+[99:41] R
+[99:43] R
+[99:45] R
+[99:47] R
+[99:49] R
+[99:51] R
+[99:53] R
+[99:55] R
+[99:57] R
+[99:59] R
+[100:01] R
+[100:03] R
+[100:05] R
+[100:07] R
+[100:09] R
+[100:11] R
+[100:13] R
+[100:15] R
+[100:17] R
+[100:19] R
+[100:21] R
+[100:23] R
+[100:27] R
+[100:29] R
+[100:31] R
+[100:33] R
+[100:35] R
+[100:37] R
+[100:39] R
+[100:41] R
+[100:43] R
+[100:45] R
+[100:47] R
+[100:49] R
+[100:51] R
+[100:55] R
+[100:57] R
+[100:59] R
+[101:01] R
+[101:03] R
+[101:05] R
+[101:07] R
+[101:09] R
+[101:11] R
+[101:13] R
+[101:15] R
+[101:17] R
+[101:19] R
+[101:21] R
+[101:23] R
+[101:25] R
+[101:27] R
+[101:29] R
+[101:31] R
+[101:33] R
+[101:35] R
+[101:37] R
+[101:39] R
+[101:41] R
+[101:43] R
+[101:45] R
+[101:47] R
+[101:49] R
+[101:51] R
+[101:53] R
+[101:55] R
+[101:57] R
+[102:01] R
+[102:03] R
+[102:05] R
+[102:07] R
+[102:09] R
+[102:11] R
+[102:13] R
+[102:15] R
+[102:17] R
+[102:19] R
+[102:21] R
+[102:23] R
+[102:25] R
+[102:27] R
+[102:29] R
+[102:31] R
+[102:33] R
+[102:35] R
+[102:37] R
+[102:39] R
+[102:41] R
+[102:43] R
+[102:47] R
+[102:49] R
+[102:51] R
+[102:53] R
+[102:57] R
+[102:59] R
+[103:01] R
+[103:03] R
+[103:05] R
+[103:07] R
+[103:09] R
+[103:11] R
+[103:13] R
+[103:15] R
+[103:17] R
+[103:19] R
+[103:21] R
+[103:25] R
+[103:27] R
+[103:29] R
+[103:31] R
+[103:33] R
+[103:35] R
+[103:37] R
+[103:39] R
+[103:41] R
+[103:43] R
+[103:45] R
+[103:47] R
+[103:49] R
+[103:51] R
+[103:53] R
+[103:55] R
+[103:57] R
+[103:59] R
+[104:01] R
+[104:03] R
+[104:05] R
+[104:07] R
+[104:09] R
+[104:11] R
+[104:15] R
+[104:17] R
+[104:19] R
+[104:21] R
+[104:23] R
+[104:25] R
+[104:27] R
+[104:29] R
+[104:31] R
+[104:33] R
+[104:35] R
+[104:37] R
+[104:39] R
+[104:41] R
+[104:43] R
+[104:45] R
+[104:47] R
+[104:49] R
+[104:51] R
+[104:53] R
+[104:55] R
+[104:57] R
+[104:59] R
+[105:01] R
+[105:05] R
+[105:07] R
+[105:09] R
+[105:11] R
+[105:13] R
+[105:15] R
+[105:17] R
+[105:19] R
+[105:21] R
+[105:23] R
+[105:25] R
+[105:27] R
+[105:29] R
+[105:33] R
+[105:35] R
+[105:39] R
+[105:53] R
+[105:55] R
+[105:57] R
+[106:01] R
+[106:05] R
+[106:07] R
+[106:09] R
+[106:11] R
+[106:13] R
+[106:15] R
+[106:17] R
+[106:19] R
+[106:21] R
+[106:23] R
+[106:25] R
+[106:27] R
+[106:29] R
+[106:31] R
+[106:33] R
+[106:35] R
+[106:37] R
+[106:39] R
+[106:41] R
+[106:43] R
+[106:45] R
+[106:47] R
+[106:49] R
+[106:51] R
+[106:53] R
+[106:55] R
+[106:57] R
+[106:59] R
+[107:01] R
+[107:03] R
+[107:05] R
+[107:07] R
+[107:09] R
+[107:11] R
+[107:13] R
+[107:15] R
+[107:17] R
+[107:19] R
+[107:21] R
+[107:23] R
+[107:25] R
+[107:27] R
+[107:29] R
+[107:31] R
+[107:33] R
+[107:35] R
+[107:37] R
+[107:39] R
+[107:41] R
+[107:43] R
+[107:45] R
+[107:47] R
+[107:51] R
+[107:53] R
+[107:55] R
+[107:57] R
+[107:59] R
+[108:01] R
+[108:03] R
+[108:05] R
+[108:07] R
+[108:09] R
+[108:11] R
+[108:13] R
+[108:15] R
+[108:17] R
+[108:19] R
+[108:21] R
+[108:23] R
+[108:29] R
+[108:31] R
+[108:33] R
+[108:35] R
+[108:37] R
+[108:39] R
+[108:41] R
+[108:43] R
+[108:45] R
+[108:47] R
+[108:49] R
+[108:51] R
+[108:53] R
+[108:55] R
+[108:57] R
+[108:59] R
+[109:01] R
+[109:03] R
+[109:05] R
+[109:07] R
+[109:09] R
+[109:11] R
+[109:13] R
+[109:17] R
+[109:19] R
+[109:21] R
+[109:23] R
+[109:27] R
+[109:29] R
+[109:31] R
+[109:33] R
+[109:35] R
+[109:37] R
+[109:39] R
+[109:41] R
+[109:43] R
+[109:45] R
+[109:47] R
+[109:49] R
+[109:51] R
+[109:53] R
+[109:55] R
+[109:57] R
+[109:59] R
+[110:01] R
+[110:03] R
+[110:05] R
+[110:07] R
+[110:09] R
+[110:13] R
+[110:15] R
+[110:17] R
+[110:19] R
+[110:21] R
+[110:23] R
+[110:25] R
+[110:27] R
+[110:29] R
+[110:31] R
+[110:33] R
+[110:35] R
+[110:37] R
+[110:41] R
+[110:43] R
+[110:45] R
+[110:47] R
+[110:49] R
+[110:51] R
+[110:53] R
+[110:55] R
+[110:57] R
+[110:59] R
+[111:01] R
+[111:03] R
+[111:05] R
+[111:09] R
+[111:11] R
+[111:13] R
+[111:15] R
+[111:17] R
+[111:19] R
+[111:21] R
+[111:23] R
+[111:25] R
+[111:27] R
+[111:29] R
+[111:31] R
+[111:33] R
+[111:37] R
+[111:39] R
+[111:43] R
+[111:45] R
+[111:47] R
+[111:49] R
+[111:51] R
+[111:53] R
+[111:55] R
+[111:57] R
+[111:59] R
+[112:01] R
+[112:03] R
+[112:05] R
+[112:07] R
+[112:09] R
+[112:11] R
+[112:13] R
+[112:15] R
+[112:17] R
+[112:19] R
+[112:21] R
+[112:23] R
+[112:25] R
+[112:29] R
+[112:31] R
+[112:33] R
+[112:35] R
+[112:37] R
+[112:39] R
+[112:43] R
+[112:45] R
+[112:47] R
+[112:49] R
+[112:51] R
+[112:53] R
+[112:55] R
+[112:57] R
+[112:59] R
+[113:01] R
+[113:03] R
+[113:05] R
+[113:07] R
+[113:09] R
+[113:11] R
+[113:13] R
+[113:15] R
+[113:17] R
+[113:19] R
+[113:21] R
+[113:23] R
+[113:25] R
+[113:29] R
+[113:31] R
+[113:33] R
+[113:35] R
+[113:37] R
+[113:39] R
+[113:41] R
+[113:43] R
+[113:45] R
+[113:47] R
+[113:49] R
+[113:51] R
+[113:53] R
+[113:57] R
+[113:59] R
+[114:01] R
+[114:03] R
+[114:05] R
+[114:07] R
+[114:09] R
+[114:11] R
+[114:13] R
+[114:15] R
+[114:17] R
+[114:19] R
+[114:21] R
+[114:25] R
+[114:27] R
+[114:29] R
+[114:31] R
+[114:33] R
+[114:35] R
+[114:37] R
+[114:39] R
+[114:41] R
+[114:43] R
+[114:45] R
+[114:47] R
+[114:49] R
+[114:53] R
+[114:55] R
+[114:57] R
+[114:59] R
+[115:03] R
+[115:05] R
+[115:07] R
+[115:09] R
+[115:11] R
+[115:13] R
+[115:15] R
+[115:17] R
+[115:19] R
+[115:21] R
+[115:23] R
+[115:25] R
+[115:27] R
+[115:29] R
+[115:31] R
+[115:33] R
+[115:35] R
+[115:37] R
+[115:39] R
+[115:41] R
+[115:45] R
+[115:47] R
+[115:49] R
+[115:51] R
+[115:53] R
+[115:55] R
+[115:57] R
+[115:59] R
+[116:01] R
+[116:05] R
+[116:07] R
+[116:09] R
+[116:11] R
+[116:13] R
+[116:15] R
+[116:17] R
+[116:19] R
+[116:21] R
+[116:23] R
+[116:25] R
+[116:27] R
+[116:29] R
+[116:31] R
+[116:33] R
+[116:35] R
+[116:37] R
+[116:39] R
+[116:43] R
+[116:45] R
+[116:47] R
+[116:49] R
+[116:51] R
+[116:53] R
+[116:55] R
+[116:57] R
+[116:59] R
+[117:01] R
+[117:03] R
+[117:05] R
+[117:07] R
+[117:09] R
+[117:13] R
+[117:15] R
+[117:17] R
+[117:19] R
+[117:21] R
+[117:23] R
+[117:25] R
+[117:27] R
+[117:29] R
+[117:31] R
+[117:33] R
+[117:35] R
+[117:37] R
+[117:41] R
+[117:43] R
+[117:59] R
+[118:03] R
+[118:05] R
+[118:07] R
+[118:09] R
+[118:11] R
+[118:13] R
+[118:15] R
+[118:17] R
+[118:19] R
+[118:21] R
+[118:23] R
+[118:25] R
+[118:27] R
+[118:29] R
+[118:31] R
+[118:33] R
+[118:37] R
+[118:39] R
+[118:41] R
+[118:43] R
+[118:45] R
+[118:47] R
+[118:49] R
+[118:51] R
+[118:53] R
+[118:55] R
+[118:57] R
+[118:59] R
+[119:01] R
+[119:05] R
+[119:07] R
+[119:09] R
+[119:11] R
+[119:15] R
+[119:17] R
+[119:19] R
+[119:21] R
+[119:23] R
+[119:25] R
+[119:27] R
+[119:29] R
+[119:31] R
+[119:33] R
+[119:35] R
+[119:37] R
+[119:39] R
+[119:43] R
+[119:45] R
+[119:47] R
+[119:49] R
+[119:51] R
+[119:53] R
+[119:57] R
+[119:59] R
+[120:01] R
+[120:03] R
+[120:09] R
+[120:11] R
+[120:13] R
+[120:15] R
+[120:17] R
+[120:19] R
+[120:21] R
+[120:23] R
+[120:25] R
+[120:27] R
+[120:29] R
+[120:31] R
+[120:33] R
+[120:35] R
+[120:37] R
+[120:39] R
+[120:41] R
+[120:43] R
+[120:45] R
+[120:47] R
+[120:49] R
+[120:51] R
+[120:53] R
+[120:57] R
+[120:59] R
+[121:01] R
+[121:03] R
+[121:07] R
+[121:09] R
+[121:11] R
+[121:13] R
+[121:15] R
+[121:17] R
+[121:19] R
+[121:21] R
+[121:23] R
+[121:25] R
+[121:27] R
+[121:31] R
+[121:33] R
+[121:35] R
+[121:37] R
+[121:39] R
+[121:41] R
+[121:43] R
+[121:45] R
+[121:47] R
+[121:49] R
+[121:51] R
+[121:53] R
+[121:55] R
+[121:57] R
+[121:59] R
+[122:01] R
+[122:03] R
+[122:05] R
+[122:07] R
+[122:09] R
+[122:11] R
+[122:13] R
+[122:15] R
+[122:17] R
+[122:19] R
+[122:21] R
+[122:23] R
+[122:25] R
+[122:27] R
+[122:31] R
+[122:33] R
+[122:35] R
+[122:37] R
+[122:39] R
+[122:41] R
+[122:43] R
+[122:45] R
+[122:47] R
+[122:49] R
+[122:51] R
+[122:53] R
+[122:55] R
+[122:57] R
+[122:59] R
+[123:03] R
+[123:05] R
+[123:07] R
+[123:09] R
+[123:11] R
+[123:13] R
+[123:15] R
+[123:17] R
+[123:19] R
+[123:21] R
+[123:23] R
+[123:25] R
+[123:27] R
+[123:29] R
+[123:31] R
+[123:33] R
+[123:35] R
+[123:37] R
+[123:39] R
+[123:41] R
+[123:43] R
+[123:45] R
+[123:47] R
+[123:59] R
+[124:01] R
+[124:03] R
+[124:05] R
+[124:07] R
+[124:09] R
+[124:11] R
+[124:13] R
+[124:15] R
+[124:17] R
+[124:19] R
+[124:21] R
+[124:23] R
+[124:27] R
+[124:29] R
+[124:31] R
+[124:33] R
+[124:35] R
+[124:37] R
+[124:39] R
+[124:41] R
+[124:43] R
+[124:45] R
+[124:47] R
+[124:49] R
+[124:51] R
+[124:53] R
+[124:55] R
+[124:57] R
+[124:59] R
+[125:01] R
+[125:03] R
+[125:05] R
+[125:09] R
+[125:11] R
+[125:13] R
+[125:15] R
+[125:17] R
+[125:19] R
+[125:21] R
+[125:23] R
+[125:25] R
+[125:27] R
+[125:29] R
+[125:31] R
+[125:33] R
+[125:37] R
+[125:39] R
+[125:41] R
+[125:43] R
+[125:45] R
+[125:47] R
+[125:49] R
+[125:53] R
+[125:55] R
+[125:57] R
+[125:59] R
+[126:01] R
+[126:03] R
+[126:05] R
+[126:07] R
+[126:09] R
+[126:11] R
+[126:13] R
+[126:15] R
+[126:17] R
+[126:19] R
+[126:23] R
+[126:25] R
+[126:27] R
+[126:29] R
+[126:31] R
+[126:33] R
+[126:35] R
+[126:37] R
+[126:39] R
+[126:41] R
+[126:43] R
+[126:45] R
+[126:47] R
+[126:49] R
+[126:51] R
+[126:53] R
+[126:57] R
+[126:59] R
+[127:01] R
+[127:03] R
+[127:05] R
+[127:07] R
+[127:09] R
+[127:11] R
+[127:13] R
+[127:15] R
+[127:17] R
+[127:19] R
+[127:21] R
+[127:23] R
+[127:25] R
+[127:29] R
+[127:31] R
+[127:33] R
+[127:35] R
+[127:37] R
+[127:39] R
+[127:41] R
+[127:43] R
+[127:45] R
+[127:47] R
+[127:49] R
+[127:51] R
+[127:53] R
+[127:57] R
+[127:59] R
+[128:01] R
+[128:03] R
+[128:05] R
+[128:07] R
+[128:09] R
+[128:11] R
+[128:13] R
+[128:15] R
+[128:17] R
+[128:19] R
+[128:21] R
+[128:25] R
+[128:27] R
+[128:31] R
+[128:33] R
+[128:35] R
+[128:37] R
+[128:39] R
+[128:41] R
+[128:43] R
+[128:45] R
+[128:47] R
+[128:49] R
+[128:51] R
+[128:53] R

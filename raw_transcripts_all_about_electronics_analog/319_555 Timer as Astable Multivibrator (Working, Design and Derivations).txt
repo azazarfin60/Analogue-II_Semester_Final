@@ -1,0 +1,237 @@
+Title: 555 Timer as Astable Multivibrator (Working, Design and Derivations)
+URL: https://www.youtube.com/watch?v=iJYm_BGqa1A
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:16] In this video, we will learn how to design a stable multivibrator using the triple-fight
+[00:22] timer IC.
+[00:23] So if you are not aware, what is a stable multivibrator, then it is a circuit whose
+[00:29] both states are unstable state and output continuously used to change between the two
+[00:34] states.
+[00:36] And the most common application of this stable multivibrator is in the design of relaxation
+[00:41] oscillator.
+[00:42] So in this video, let us see how we can design this stable multivibrator using the triple
+[00:48] -fight timer IC.
+[00:50] So here is the circuit using which this triple-fight timer can be configured as a stable multivibrator.
+[00:58] So if you see over here, this reset and control pin is not used in the circuit.
+[01:04] So this reset pin is connected to the supply voltage, while this control pin is connected
+[01:09] to the ground via this capacitor C1.
+[01:13] And over here, this threshold and the trigger pins are connected together.
+[01:18] Now to understand the working of this circuit, let me just draw the same circuit along with
+[01:23] the internal block diagram.
+[01:25] Now whenever the circuit is just turned on, at that time, this capacitor will be fully
+[01:31] uncharged.
+[01:32] Or we can say that the voltage at this pin number 2 and 6 will be equal to 0 volt.
+[01:39] Now like we had seen in the previous videos, the voltage at these two nodes of the voltage
+[01:43] divider will be equal to 2 by 3vc and 1 by 3vc respectively.
+[01:49] So initially if you see, the second comparator output will be equal to logic 1, while the
+[01:54] first comparator output will be equal to logic 0.
+[01:58] Because initially for the second comparator, the voltage at this inverting node is less
+[02:04] than the voltage at this non-inverting node.
+[02:06] While for the first comparator, the voltage at this inverting node is more than the voltage
+[02:11] at the non-inverting node.
+[02:14] So initially if you see, the s will be equal to 1 and r will be equal to 0.
+[02:20] Or we can say that output of the flip flop will be equal to 1 and because of that, the
+[02:26] output of the triple phi timer will also equal to logic high value.
+[02:31] Now whenever this Q is equal to 1, at that time this Q bar will be equal to 0 and because
+[02:37] of that, this transistor will be in a off condition.
+[02:42] So this capacitor C1 will start charging through this resistor r1 and r2 and gradually the
+[02:49] voltage at this pin number 2 and 6 will start increasing.
+[02:54] So first of all let us see, whenever this voltage reaches the 1 by 3vc voltage.
+[03:00] So whenever this voltage just crosses this 1 by 3vc voltage, the output of the second comparator
+[03:06] will become logic low because at that time, the voltage at the inverting node will be slightly
+[03:12] more than the voltage at the non-inverting node.
+[03:15] While still the voltage is less than this 2 by 3vc voltage, so the output of the second
+[03:19] comparator will be equal to logic 0.
+[03:23] So in this condition both s and r equal to 0, so the output of the flip flop will retain
+[03:30] the previous state.
+[03:32] That means Q will remain to logic 1 value and hence the output of the triple phi timer
+[03:37] will also remain to the logic high value.
+[03:42] Now let us see what happens when this capacitor voltage reaches this 2 by 3vc voltage.
+[03:48] So whenever this capacitor voltage just crosses this 2 by 3vc voltage at that time, the output
+[03:55] of the first comparator will become logic high value because at that time, the voltage
+[04:00] at this pin number 6 is more than the reference voltage.
+[04:05] So now if you see, the s is equal to 0 and r is equal to 1.
+[04:11] So this flip flop will get reset to the logic 0 value and whenever this capacitor voltage
+[04:18] just reaches this 2 by 3vc voltage, then you will see the transition in the output from
+[04:23] logic high value to the logic low value.
+[04:27] Now whenever this Q is equal to 0, at that time, the value of Q bar will be equal to 1.
+[04:34] So now this transistor will become on and once this transistor will become on, this
+[04:41] capacitor C will start less charging through this transistor and gradually the voltage across
+[04:48] this capacitor will start reducing.
+[04:51] So as soon as the voltage just co-bellow this 2 by 3vc voltage, then the output of the
+[04:57] first comparator will become logic 0 because at that time, the voltage at this pin number
+[05:03] 6 is less than the reference voltage and if you see the second comparator, then the
+[05:10] output of the second comparator will also be equal to 0 because the voltage at this pin
+[05:15] number 2 is less than the reference voltage.
+[05:19] So in this condition both s and r is equal to 0 and the flip flop will retain its previous
+[05:26] state.
+[05:27] That means Q will be equal to logic 0 value and hence the output of the triple phi timer
+[05:33] will also remain to the logic 0 value.
+[05:36] Now let us see during the discharging process whenever the voltage across the capacitor
+[05:41] just co-bellow this 1 by 3vc voltage.
+[05:45] Now once this voltage goes below this 1 by 3vc voltage, then the output of the second comparator
+[05:52] will become logic high value because at that time, the voltage at this non-inverting terminal
+[05:58] is more than the voltage at this inverting terminal and in this condition s will be equal
+[06:04] to 1 and r will be equal to 0 and now the flip flop will get set to the logic 1 value
+[06:12] and at the same time, you will see your transition in the output from logic low value to the
+[06:17] logic high value.
+[06:19] Now once this Q will become 1, the Q bar will be equal to logic 0 and as soon as this
+[06:26] Q bar will become 0, this transistor will get off and now this capacitor will again
+[06:33] start charging through this resistor r1 and r2.
+[06:37] So in this way, this capacitor is charging between this 2 by 3vc and 1 by 3vc voltages
+[06:44] and because of the charging and discharging of this capacitor, we will see a transition
+[06:49] in the output voltage.
+[06:51] So during the charging process, whenever the voltage across the capacitor just crosses
+[06:56] this 2 by 3vc voltage, then there is a transition in the output from logic high value to the
+[07:01] logic low value and likewise during the discharging process, whenever the voltage across the
+[07:07] capacitor just go below this 1 by 3vc voltage, then there is a transition from logic low value
+[07:14] to the logic high value and if we see the same sequence in a timing diagram, then it will
+[07:21] look like this.
+[07:23] So here, this blue graph represents the charging and discharging of the capacitor while the yellow
+[07:29] graph represents the output of the triple phi timer.
+[07:33] So initially, whenever the circuit is just turned on at that time, the output of the triple
+[07:39] phi timer will be high and the capacitor will start charging towards the Vc voltage.
+[07:46] Now as soon as the voltage across the capacitor just reaches this 2 by 3vc voltage, then you
+[07:52] will see a transition in the output from logic high value to the logic low value and now
+[07:58] the capacitor will start discharging towards the 0 volt.
+[08:03] So now during the discharging process, as soon as it reaches this 1 by 3vc voltage, then
+[08:09] once again you will see a transition from logic low value to the logic high value and in
+[08:15] this way, the capacitor is charging and discharging between these 2 voltages.
+[08:21] So over here, T1 is the time for which the output of the timer is high while T2 is the
+[08:28] time for which the output of the timer remains the low value or in other way, we can say that
+[08:35] T1 is the time which capacitor requires to charge from 1 by 3vc voltage to the 2 by 3vc
+[08:42] voltage while T2 is the discharging time which is required by the capacitor to go from 2 by
+[08:48] 3vc voltage to the 1 by 3vc voltage.
+[08:52] So if we represent this T1 and T2 mathematically, then mathematically it can be represented like
+[08:58] this, that means T1 will be equal to 0.693 times R1 plus R2 while T2 will be equal to 0.693
+[09:07] times R2.
+[09:08] Now one more thing if you observe over here, this T1 is greater than T2 because during
+[09:14] the charging, the capacitor is charging through this resistor R1 and R2 while during the
+[09:20] discharging process, it is only discharging through this resistor R2 and that is why this
+[09:26] T1 will be always more than T2 or in another way, we can say that the duty cycle of this
+[09:32] A stable multivariator will be always more than 50%.
+[09:37] Now over here, the total time period T will be equal to the summation of this T1 and T2
+[09:43] that is 0.693 times R1 plus 2R2 and the duty cycle can be represented as the on time
+[09:51] divided by the total time period that is T1 divided by T.
+[09:57] What we can say that that is equal to 0.693 times R1 plus R2 divided by 0.693 times R1 plus
+[10:06] 2R2.
+[10:08] That means the duty cycle will be equal to R1 plus R2 divided by R1 plus 2R2.
+[10:14] So from the expression you can see that for this particular circuit, the duty cycle will
+[10:19] be always more than the 50%.
+[10:22] And to get a 50% of duty cycle, the value of R1 should be equal to 0.
+[10:29] So in this particular circuit, whenever R1 is equal to 0, at that time we can achieve
+[10:34] a 50% of duty cycle.
+[10:37] Now whenever this R1 is equal to 0, at that time the collector of this transistor will
+[10:42] get directly exposed to the supply voltage and whenever this transistor is on at that time,
+[10:48] it is possible that it will draw a more current and because of that this internal transistor
+[10:55] may get damaged.
+[10:57] Now there is one more alternative using which we can also achieve the 50% of duty cycle.
+[11:03] So now in this circuit, the diode is connected between this pin number 7 and 2.
+[11:09] So using this circuit, it is possible to achieve a duty cycle of 50% or even less than
+[11:15] the 50%.
+[11:17] So now let us see the working of this circuit.
+[11:20] So now during the charging of this capacitor, this diode will become on and in the on condition,
+[11:27] the resistance offered by the diode will be less than this R2.
+[11:32] So during the charging time, this capacitor will charge through this resistor R1 and through
+[11:37] this diode.
+[11:40] So the charging time T1 can be given as 0.693 times R1 plus Rd times C where Rd is the
+[11:48] forward resistance of this diode and during the discharging time, this diode will remain
+[11:55] of.
+[11:57] So this capacitor will get discharged through this resistor R2.
+[12:02] So the discharging time T2 can be given as 0.693 times R2 times C.
+[12:09] So now if we adjust the value of R1 in such a way that this R1 plus Rd is equal to R2,
+[12:16] then it is possible to achieve the 50% of duty cycle.
+[12:21] Now over here, suppose if we assume this diode as an ideal diode, in that case, its
+[12:26] forward resistance should be equal to 0.
+[12:30] So in that case, this T1 will be equal to 0.693 times R1 times C, while the T2 will be
+[12:37] equal to 0.693 times R2 times C. And in that condition, the duty cycle will become R1
+[12:46] divided by R1 plus R2.
+[12:49] So suppose if you want to achieve a 50% of duty cycle, then the value of R1 and R2 should
+[12:54] be equal to same.
+[12:57] And using this circuit, it is even possible to achieve either more or less than the 50%
+[13:02] of duty cycle.
+[13:04] So if R1 is greater than R2, in that case, the duty cycle will be more than the 50%.
+[13:12] While whenever this R1 is less than R2, in that case, the duty cycle will be less than
+[13:17] 50%.
+[13:19] So using this circuit, it is possible to achieve the desired duty cycle.
+[13:25] So now let us design one A stable multivariator whose frequency F is equal to 10 kHz and duty
+[13:32] cycle is equal to 50%.
+[13:35] So now to get a duty cycle of 50%, the value of R1 and R2 should be equal to same.
+[13:41] Let us say that is equal to R. And the total time period T will be equal to 0.693 times
+[13:49] R1 plus R2 times C. Now over here, as F is equal to 10 kHz, so the time period T will
+[13:58] become 0.1 millisecond.
+[14:01] Now here, let us assume the value of CS.1 microfaraday.
+[14:06] So we can write this expression as 0.1 millisecond that is equal to 0.693 times R1 plus R2 times
+[14:15] 0.1 microfaraday.
+[14:17] Or we can say that this R1 plus R2 will be equal to 0.1 millisecond divided by 0.693 times
+[14:28] 0.1 microfaraday.
+[14:31] Now over here, as this R1 and R2 are equal, so we can write it as 2R1.
+[14:36] And if we simplify it, then the value of R1 will roughly come around as 720 ohm.
+[14:43] So what we can do, we can use a potentiometer for this R1 and R2 and we can tune this potentiometer
+[14:50] to the value of 720 ohm.
+[14:53] And in this way, it is possible to design a stable multivariator which has a frequency
+[14:58] F of 10 kHz and duty cycle of 50%.
+[15:03] So now let us derive the expressions that we have used in the design of this stable
+[15:07] multivariator.
+[15:09] So over here, to find the time period T of this stable multivariator, we need to find
+[15:14] the value of this T1 and T2.
+[15:17] And like I said before, this T1 and T2 are the charging and discharging time of these
+[15:23] capacitors.
+[15:24] So first of all, let us find out the value of this T1.
+[15:29] Now like we had seen in the earlier video of transient analysis, the capacitor voltage
+[15:34] can be written as V final plus V initial minus V final times e to the power of minus T divided
+[15:43] by R dash times C.
+[15:46] Here R dash is equal to R1 plus R2 because during the charging time, the capacitor is
+[15:53] charging through the resistor R1 and R2.
+[15:56] Now initially, the voltage across the capacitor is equal to 1 by 3 which is the voltage.
+[16:03] So in this expression, the V initial will be equal to which is C by 3.
+[16:09] And it is charging towards the supply voltage.
+[16:12] So V final will be equal to the supply voltage.
+[16:17] So now let us put these values in this expression.
+[16:21] And over here, we want to find this time T1 whenever the voltage across the capacitor
+[16:26] reaches this 2 by 3 which is the voltage.
+[16:29] So we can write this expression as Vc of T1 will be equal to Vcc plus 1 by 3 which is
+[16:38] C minus Vcc times e to the power of minus T1 divided by R dash C.
+[16:46] And the value of this Vc of T1 is equal to 2 Vcc by 3.
+[16:51] So you can write this expression as 2 Vcc by 3 is equal to Vcc minus 2 Vcc by 3 times
+[17:01] e to the power of minus T1 divided by R dash C.
+[17:06] And further if we simplified, then we can write it as minus of Vcc by 3 is equal to minus
+[17:14] 2 Vcc by 3 times e to the power of minus T1 divided by R dash C.
+[17:21] Or we can say that 1 by 2 is equal to e to the power of minus T1 divided by R dash C.
+[17:28] So now if we take a natural log on both sides and if we simplify this expression, then
+[17:34] the value of this time T1 will come out as natural log of 2 times R dash times C.
+[17:41] Or we can say that this time T1 will be equal to 0.693 times R1 plus R2 times C.
+[17:52] So this is the time T1 which is required by the capacitor to charge from 1 by 3 which
+[17:57] is equal to the 2 by 3 versus equal to H.
+[18:00] So now similarly let us find out this time T2.
+[18:04] So once again let us write down the expression of this capacitor voltage that is Vc of T
+[18:10] will be equal to V final plus V initial minus V final times e to the power of minus T divided
+[18:18] by R2C.
+[18:20] Because during the discharging time, capacitor is discharging through this resistor R2.
+[18:26] And now during this time the initial voltage across the capacitor will be equal to 2 by
+[18:31] 3 Vcc.
+[18:32] So we can say that the V initial will be equal to 2 by 3 Vcc and it is discharging towards
+[18:39] the 0 voltage.
+[18:41] So the final voltage across the capacitor should be equal to 0V.
+[18:46] And we want to find the time T2 whenever the voltage across the capacitor just reaches
+[18:51] this 1 by 3 Vc voltage.
+[18:54] So considering all this we can write this expression as Vc of T2 will be equal to 0 plus 2 by
+[19:03] 3 Vcc minus 0 times e to the power of minus T2 divided by R2 times C. And the value of
+[19:12] this Vc of T2 is equal to 1 by 3 Vcc voltage.
+[19:17] So we can write this expression as 1 by 3 Vcc is equal to 2 by Vcc times e to the power
+[19:24] of minus T2 divided by R2 times C. And if you further simplify it, then we can write
+[19:32] it as 1 by 2 times e to the power of minus T2 divided by R2 times C. So if we take the
+[19:41] natural log on both sides and if you simplify it, then the value of T2 will come as R2 times
+[19:48] C times natural log of 2.
+[19:51] Or we can say that the value of T2 will be equal to 0.693 times R2 times C. So this is
+[20:00] the time required by the capacitor to discharge from this 2 by 3 Vcc voltage to the 1 by
+[20:05] 3 Vcc voltage.
+[20:07] And the total time period T will be the summation of this time T1 and T2 that is equal to 0.693
+[20:15] times R1 plus 2 R2 times C. So using this expression, we can find the time period or the frequency
+[20:24] of the A stable multivariator and we can design a A stable multivariator of the desired frequency.
+[20:31] So I hope in this video you understood how we can design a A stable multivariator using
+[20:36] this 2.5 timer IC.
+[20:39] So if you have any question or suggestion, do let me know in the comment section below.
+[20:43] If you like this video, hit the like button and subscribe to the channel for more such
+[20:47] videos.

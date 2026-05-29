@@ -1,0 +1,48 @@
+Title: MOSFET - Small Signal Analysis Solved Problem | Quiz # 316
+URL: https://www.youtube.com/watch?v=WxBLqFO2l9I
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question for the given MOSFET circuit, we have been asked to find the equivalent
+[00:15] resistance which is seen from this side.
+[00:18] Now to find that, let us replace this MOSFET circuit by the small signal model.
+[00:23] So for that, this DC voltage source will act as a zero and if you see the equivalent
+[00:29] circuit, then it will look like this.
+[00:32] So here, this gate terminal is grounded while this 1 kilo ohm resistor will appear
+[00:38] between the drain and the ground terminal.
+[00:41] And here, since we have been given the output resistance, so it will also appear between
+[00:46] the drain and the source terminal.
+[00:48] So here, we need to find the equivalent resistance which is seen from the source side.
+[00:53] So to find that, let us apply the test voltage and let us find this test current.
+[01:00] And the ratio of this test voltage to the test current will give us the equivalent impedance.
+[01:06] So here, let us say this current is equal to Ix.
+[01:11] So this current is entering into the source terminal.
+[01:14] So from the drain side, the same current should also come out.
+[01:18] That means this current should also be equal to Ix, right?
+[01:22] So here, this current is equal to gm times vgs or the id.
+[01:27] And let us say this current is equal to I.
+[01:30] So if we apply the KCL at this node, then we can write current id plus Ix plus I is
+[01:39] equal to 0, where this id is equal to gm times vgs.
+[01:47] Now here, if you observe, then this voltage vgs is appearing between the gate and the
+[01:52] source terminal.
+[01:53] And in fact, over here, this vgs is equal to minus vx.
+[02:00] That means we can say that this drain current id is equal to minus gn times vx.
+[02:08] That means here, we can say that this current I is equal to minus id minus Ix.
+[02:16] That is equal to gm times vx minus Ix.
+[02:20] All right.
+[02:22] So now, let us apply the KVL equation in this loop.
+[02:27] So if we apply the KVL equation, then we can write this voltage vx plus I times r0,
+[02:36] that is this voltage, that is equal to Ix times r, that is this voltage.
+[02:45] Or we can say that vx plus gm times vx minus Ix times r0, that is equal to Ix times r.
+[02:58] Or we can say that vx plus gm times r0 times vx, that is equal to Ix times r plus r0.
+[03:09] That means vx divided by Ix or the equivalent resistance, which is seen from the source
+[03:15] side is equal to r plus r0 divided by 1 plus gm times r0.
+[03:23] So here, this r is equal to 1 kilo ohm, while this r0 is equal to 100 kilo ohm, and this
+[03:30] gm is equal to 1 milli semenz.
+[03:33] That means the equivalent impedance r equivalent is equal to 100 kilo ohm plus 1 kilo ohm,
+[03:41] that is r divided by 1 plus 1 milli semenz times 100 kilo ohm.
+[03:49] That is equal to 101 kilo ohm divided by 1 plus 100, that means the equivalent resistance,
+[03:57] which is seen from the source side is equal to 101 kilo ohm divided by 101, that is equal
+[04:05] to 1 kilo ohm.
+[04:08] That means for the given circuit, the equivalent resistance, which is seen from the source side,
+[04:12] is equal to 1 kilo ohm.

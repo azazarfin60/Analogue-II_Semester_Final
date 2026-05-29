@@ -1,0 +1,48 @@
+Title: Operational Amplifier (Op-Amp) Solved Problem | Quiz # 487
+URL: https://www.youtube.com/watch?v=sfqny1UW7KI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this Open-Best Circuit and here we have been asked
+[00:16] to find the output voltage of the given circuit and here we have been also given that the
+[00:21] given open is the HADL-OPM.
+[00:25] If you closely observe this circuit then it can be retroned like this.
+[00:29] So here this resistor is the fed back resistor between the output and the inverting terminal,
+[00:35] while its H及 register is the register between the inverting terminal and the input voltage
+[00:44] Likewise, this H and N at the input voltage is the registered between the non-inverting terminal
+[00:47] And likewise, this 100 ohm resistor is the resistor between this non-inverting terminal and the
+[00:52] ground terminal. So in this circuit if you see, then this 4-world voltage source is shared between
+[00:59] these 2 resistors. So equivalently, the same circuit can be drawn like this. So basically,
+[01:06] the given circuit is the different amplifier. And now we can easily find the output voltage.
+[01:13] So here, to find the output voltage, we have two options. In the first option, what we can do?
+[01:19] We can apply the principle of the superposition theorem. So in the superposition theorem,
+[01:24] what we can do? We can consider only one voltage source at a time. And we will consider the
+[01:28] second voltage source as a zero. And in this condition, we will find the output voltage.
+[01:34] Let's say that is equal to DO1. Similarly, at the second time, we will consider only the
+[01:40] second voltage source at a time. And we will consider this first voltage source as a zero.
+[01:45] And in this condition, once again, we will find the output voltage. Let's say that is equal to
+[01:51] VO2. So the summation of this VO1 and VO2 will represent the overall output voltage. So this is
+[01:58] one we are finding the output voltage. So apart from that, even using the nodal analysis also,
+[02:04] we can easily find the output voltage. So in this video, we will use the second approach.
+[02:10] And using the nodal analysis, we will find the output voltage of this given circuit.
+[02:15] So for that, let's say the voltage at this node is equal to VX. Now here, since the opium is
+[02:22] operating with the negative feedback, so we can say that it is operating in the linear region.
+[02:27] And therefore, here we can apply the concept of the virtual ground. That means here,
+[02:33] this V minus is equal to V plus. That means here, this V plus is also equal to VX.
+[02:41] That means at this node also, the voltage will be equal to VX. So now, let us apply the KCL at this
+[02:48] node. And let us find the value of this voltage VX. So if we apply the KCL at this node,
+[02:54] then we can write this VX divided by 100 ohm, that is this current, that is equal to
+[03:01] 4 minus VX divided by 100 ohm, that is this incoming current. And here, since the opium is the
+[03:08] ideal opium, so no current is flowing into the opium terminal. So from this, we can say that
+[03:14] this VX is equal to this 4 minus VX. Or we can say that this VX is equal to 2 volt.
+[03:22] That means here, the voltage at this node is equal to 2 volt. So similarly, now let us
+[03:29] apply the KCL at this inverting node. And let us find the value of this output voltage.
+[03:34] So if we apply the KCL at this inverting node, then we can say that this 4 minus 2 volt,
+[03:39] divided by 100 ohm, that is this current, is equal to VX minus V out divided by 99 ohm,
+[03:47] that is this outgoing current. And here, this VX is equal to 2 volt. So further, we can write it as
+[03:54] 2 divided by 100, that is equal to 2 minus V out divided by 99. Or from this, we can say that
+[04:02] this 0.02 times 99, that is equal to 2 minus V out. Or from this, we can say that this V out is
+[04:10] equal to 2 minus 1.98, that is equal to 0.02 volt. Or that is equal to 20 milli volt.
+[04:20] So from this, we can say that for the given circuit, this output voltage V out is equal to 20 milli
+[04:26] volt. And therefore, for the given question, the answer is equal to 20 milli volt. Or that is
+[04:33] equal to 0.02 volt.

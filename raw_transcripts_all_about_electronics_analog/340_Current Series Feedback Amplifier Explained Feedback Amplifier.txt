@@ -1,0 +1,218 @@
+Title: Current Series Feedback Amplifier Explained | Feedback Amplifier
+URL: https://www.youtube.com/watch?v=sp_z2poAH8I
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in the previous videos, we have seen the voltage series and the voltage channel feedback
+[00:15] amplifiers.
+[00:16] So similarly, in this video, we will learn about the current series feedback amplifier.
+[00:23] So in this current series feedback amplifier, we have a basic transconductance amplifier
+[00:28] and the feedback network.
+[00:30] So if you see the connection between the basic amplifier and the feedback network on the
+[00:33] output side, then it is the series connection.
+[00:37] That means here, the feedback network is sampling the output current.
+[00:43] Similarly on the input side, this feedback voltage VF is mixed with the input signal
+[00:48] using the series connection.
+[00:50] So here, since the output current is sampled and it is sent to the input side using the
+[00:55] series mixing.
+[00:57] So this feedback amplifier is known as the current series feedback amplifier.
+[01:02] And here, both on the input and output side, since we have the series connection, so many
+[01:08] times, it is also known as the series feedback amplifier.
+[01:12] And sometimes, it is also known as the current voltage feedback amplifier.
+[01:18] Because here, on the output side or on the sampling side, the current signal is sampled
+[01:23] while on the mixing side or on the input side, this feedback voltage is mixed with the
+[01:29] input signal.
+[01:30] So in this feedback topology, since we have a series connection on the output side, so
+[01:35] it is output impedance increases.
+[01:38] Similarly on the mixing side or on the input side, since we have a series connection, so
+[01:43] with the feedback, the input impedance also increases by the factor of 1 plus A beta.
+[01:50] Where the A is the transconnectance gain of the basic amplifier, and this beta is the
+[01:54] feedback factor.
+[01:56] And this type of feedback amplifiers are mainly suitable for the transconnectance feedback
+[02:01] amplifiers.
+[02:03] Because here, the input signal is the voltage signal while the output signal is the current
+[02:07] signal.
+[02:08] So, if you see the unit of this transconnectance gain of this feedback amplifier or this
+[02:14] I out divided by V in, then that is inverse of the home.
+[02:18] Alright, so now let us see in this current series feedback amplifier, how the input and
+[02:24] output impedance increases with the feedback.
+[02:28] So this is the general structure of the ideal current series feedback amplifier.
+[02:32] So here, this A circuit represents the basic transconnectance amplifier while this beta
+[02:38] circuit shows the ideal feedback block.
+[02:42] So here, this RIs the input impedance of this basic amplifier while this A is the transconnectance
+[02:47] gain of this basic amplifier.
+[02:50] So here, when this input signal Vi is appearing across the basic amplifier, then it will get
+[02:57] amplified by this transconnectance gain of this amplifier.
+[03:01] And here, this R node is the output impedance of this basic amplifier.
+[03:06] So here, for the simplicity, we are assuming that the source resistance R is of this input
+[03:12] signal is 0.
+[03:14] And similarly, this load resistor RL is also not connected between these two terminals.
+[03:21] Moreover, here we are also assuming that when this beta circuit or the feedback network
+[03:26] is connected to the basic amplifier, then there is a no loading effect.
+[03:31] That means after connecting this feedback network, there is no variation in the output current
+[03:36] of this basic amplifier.
+[03:38] That means if you break the connection between the feedback network and the amplifier on
+[03:42] the input side, then just because of this feedback network, there is no variation in the output
+[03:48] current of this basic amplifier.
+[03:51] So considering this, let us find the effect to input impedance of this feedback amplifier.
+[03:57] So here, the effect to input impedance, which is seen through the voltage source Vs, is
+[04:02] equal to Vs divided by Ii.
+[04:05] But this Ii is the input current to the amplifier.
+[04:09] Let us say that is equal to RIF.
+[04:13] So now let us find the relationship between this Vs and the Ii.
+[04:18] So on the input side, if we apply the KVL in this loop, then we can write this Vs minus
+[04:25] Vf that is equal to Vi.
+[04:28] And here, this feedback voltage Vf is equal to beta times I0.
+[04:33] And as you can see, here this I0 is equal to A times Vi.
+[04:38] So we can say that this feedback voltage Vf is equal to A times this beta times Vi.
+[04:46] So from this, we can say that this Vs minus this A times beta times Vi that is equal to
+[04:53] Vi.
+[04:54] Or from this, we can say that this Vs is equal to this Vi times this 1 plus A beta.
+[05:04] Now here, if you observe, then this voltage Vi is equal to Ii times Ii because this current
+[05:10] Ii is actually flowing through this Ii.
+[05:13] So from this, we can say that this Vs is equal to this Ii times this Ii times this Ii times
+[05:20] this 1 plus A beta.
+[05:23] Or from this, we can say that this Vs divided by Ii that is equal to Ii times this 1 plus
+[05:31] A beta.
+[05:32] And as you can see, this Vs divided by Ii is nothing but the Ii f.
+[05:38] So from this, we can say that with the feedback, this effect to input impedance Ii f is equal
+[05:44] to Ii times this 1 plus A beta.
+[05:49] So as you can see, because of the series connection on the input side, this effect to input
+[05:54] impedance is increasing by the factor of 1 plus A beta.
+[05:59] So similarly, now let us find the effective output impedance of this feedback amplifier.
+[06:05] So to find the effective output impedance, we will consider all the independent sources
+[06:09] in the circuit as 0.
+[06:11] That means here, we will consider this voltage towards Vs as 0 and therefore, it will act
+[06:17] as a short circuit.
+[06:19] And then, we will apply the test current on the output side.
+[06:24] So here, since the output signal of the basic amplifier is the output current.
+[06:29] So here, we are applying the test current as an input to the output side.
+[06:34] So let us say, this test current is equal to Ix.
+[06:38] And let us also assume that the voltage across this current source is equal to Vx.
+[06:45] So here, the ratio of this Vx and the Ix represents the effect to output impedance, which
+[06:51] is seen through the output side.
+[06:54] Let us say, that is equal to R o f.
+[06:57] And now, let us find the relationship between this Vx and the Ix.
+[07:02] So here, on the input side, since the input signal is shorted.
+[07:06] So I have applied the KVL in this loop we can write.
+[07:09] This voltage V i is equal to minus V f.
+[07:13] So, if we apply the KCL on this output node, then we can write this current Ix that is
+[07:43] R0 plus A times V i.
+[07:47] And as you can see, we are here, this V i is equal to minus beta times Ix.
+[07:53] So further, we can write this expression as this Vx divided by R0 minus A times beta
+[08:00] times Ix.
+[08:02] So now, if we take this term on the left hand side and further, we can write it as this
+[08:08] Ix times this 1 plus A beta that is equal to Vx divided by R0.
+[08:16] But further, if we rearrange it, then we can write it as this Vx divided by Ix that is
+[08:23] equal to R0 times this 1 plus A beta.
+[08:29] And as you can see, this Vx divided by Ix is nothing but the R o f.
+[08:34] So from this, we can say that with the feedback, this effect to output impedance of this feedback
+[08:39] amplifier is equal to R0 times this 1 plus A beta.
+[08:46] That means here, because of the series connection on the output side, this effect to output
+[08:50] impedance is also increasing by the factor of 1 plus A beta.
+[08:55] So in general, we can say that because of the series connection both on the input and
+[08:59] output side, the input and output impedance of this current series feedback amplifier
+[09:04] will increase by the factor of 1 plus A beta.
+[09:08] And this is the equivalent circuit of the current series feedback amplifier, where this
+[09:12] R i f is the input impedance of the amplifier with the feedback.
+[09:16] And similarly, this R o f is the output impedance.
+[09:20] And if you see this A f, then it is the transconnectance gain of the amplifier with the feedback.
+[09:26] So here, the increase in both input and output impedance is a desired thing for the transconnectance
+[09:32] amplifier, because in the actual circuits, when we connect the voltage source as an input,
+[09:38] then it also has some source resistance.
+[09:42] So in that case, this input voltage Vi is equal to this R i divided by this RS plus this
+[09:52] R i times V s.
+[09:55] So here, the maximum voltage will reach to the amplifier whenever this R i is more
+[10:02] greater than RS.
+[10:04] So here, in this current series feedback amplifier, with the feedback, since the input
+[10:09] impedance is increasing, so that is a desired thing for the amplifier.
+[10:14] Similarly, in the actual circuits, we also have a load resistor through which this output
+[10:20] current I naught is passing.
+[10:22] So with the load resistor, if we see the output current I naught, and that is equal to R
+[10:28] o f divided by this R o f plus R n times this term that is equal to A f times Vi.
+[10:39] So basically, just using the current divider, we can find the current through the load
+[10:44] resistor.
+[10:46] So here, we want that the maximum output current should pass through the load resistor.
+[10:51] Or in other words, this I naught should be as close as this A f times Vi.
+[10:59] So that can happen whenever this R o f is much greater than R l.
+[11:06] So in this current series feedback amplifier, since the output impedance is increasing with
+[11:10] the feedback, so that is a desired thing.
+[11:14] So in short, we can say that in this current series feedback amplifier, both input and
+[11:19] output impedance is increasing with the feedback.
+[11:23] So now let us see in the actual circuits how this current series feedback is implemented.
+[11:29] So in this current series feedback, this feedback network is sampling the output current
+[11:35] and it is sending the feedback voltage to the input side.
+[11:39] So basically, here this feedback network is doing the current to voltage conversion.
+[11:45] So using a simple feedback resistor also, it is possible to perform this current to
+[11:49] voltage conversion.
+[11:51] And then using the op-em or the transistor, we can perform the series mixing and we can
+[11:57] subtract this feedback voltage from the source voltage.
+[12:01] So based on that, this circuit is one of the example of the current series feedback.
+[12:07] So as you can see over here, this output current is flowing through the load resistor.
+[12:12] And here, almost same current will also flow through this feedback resistor.
+[12:18] Because here, the current that is flowing into the op-em terminal is almost negligible.
+[12:23] So here, this voltage drop across this feedback resistor represents the feedback voltage.
+[12:30] And therefore, this part forms the feedback network.
+[12:34] So as you can see, this feedback voltage VF is applied to the invading terminal of the
+[12:39] op-em while the source voltage is connected to the non-vading terminal.
+[12:45] So here, basically, this op-em will perform the series mixing and it will subtract this
+[12:51] to voltages.
+[12:53] So here, this feedback voltage VF is equal to I0 times RF.
+[12:58] Or we can say that here, this feedback factor beta or this VF divided by I0 that is
+[13:05] equal to RF.
+[13:08] So as you can see over here, this feedback factor has the unit of the resistance.
+[13:13] While if you see the unit of this trans-currentance gain A, then that is inverse of the home.
+[13:20] And therefore, this A beta is the unit less.
+[13:24] And in fact, that has to be true for the whole feedback amplifiers, right?
+[13:29] Because then and then only all the equations for the input and output impedance, as well
+[13:33] as the feedback gain, which we have seen earlier will be true or right.
+[13:38] So now in this feedback amplifier, this output current is typically used to drive the LED
+[13:44] or the laser diodes.
+[13:47] So in such circuits, this LED or the laser diode will act as a load.
+[13:52] So in this circuit, as you can see, this series mixing is actually using the op-em.
+[13:58] But similarly, it can also be actually using the transistor.
+[14:03] So the second circuit is another example of the current series feedback, where the series
+[14:08] mixing is actually using the MOS transistor.
+[14:12] So as you can see, in this circuit, the source current of the MOSFET M2 is the output current.
+[14:19] And this current is flowing through the LED.
+[14:22] So here, to sample this current, this feedback resistor RF is connected.
+[14:28] And here, since the gate current of the MOSFET is negligible, so the current through
+[14:32] the feedback resistor RF is almost same as the output current.
+[14:37] So here, this feedback voltage VF is equal to I0 times RF.
+[14:42] And this voltage is applied to the gate terminal of this M1.
+[14:47] And as you can see, this input signal V in is applied to the source terminal of this
+[14:52] M1.
+[14:54] That means here, if you see this VGS1, then that is equal to this VF-V in.
+[15:01] That means here, this MOS transistor is performing the series mixing.
+[15:06] So in this way, in the given circuit, we have a current series feedback.
+[15:11] So to use this circuit as an amplifier, that should be a negative feedback in the circuit.
+[15:17] So let us check that whether there is a negative feedback in the circuit or not.
+[15:22] So here, let's say, you do some reason, this input voltage V in increases.
+[15:28] So as the voltage V in increases, then with the given feedback voltage VF, this VGS will
+[15:34] reduce.
+[15:35] And because of that, the drain current ID1 of this M1 will reduce.
+[15:40] So we can say that as the V in increases, then this drain current ID1 will reduce.
+[15:47] And as the ID1 reduces, then the drop across this R1 will also reduce.
+[15:53] And because of that, this output voltage of the M1 for this V01 will increase.
+[15:58] So as you can see over here, this output voltage of the M1 is connected to the gate terminal
+[16:03] of the M2.
+[16:05] That means as the V01 increases, then the VGS2 of the MOSFET M2 will increase.
+[16:12] And as this VGS2 will increase, then the drain current ID2 for this output current I0
+[16:18] will increase.
+[16:20] So we can say that as the VGS2 increases, then this I0 will also increase.
+[16:26] And as this output current increases, then this feedback voltage VF will also increase.
+[16:33] And this increase in the feedback voltage will once again increase the VGS of the M1.
+[16:39] And effectively, it will reduce the change in the output current of the given circuit.
+[16:44] So as you can see over here, both input voltage V in and this feedback voltage VF are changing
+[16:50] in the same direction.
+[16:52] So we can say that in the given circuit, we have a negative feedback.
+[16:57] And indeed, the given circuit will act as a current series feedback amplifier.
+[17:02] So these are the few examples of the current series feedback amplifier.
+[17:07] So I hope in this video, you understood in this current series feedback topology how
+[17:11] input and output impedance increases.
+[17:14] And in the actual circuits, how this feedback is implemented.
+[17:18] So similarly, in the next video, we will learn about the current current feedback amplifiers.
+[17:24] So if you have any question or suggestion, then do let me know here in the comment section
+[17:29] below.
+[17:30] If you like this video, hit the like button and subscribe to the channel for more such
+[17:34] videos.

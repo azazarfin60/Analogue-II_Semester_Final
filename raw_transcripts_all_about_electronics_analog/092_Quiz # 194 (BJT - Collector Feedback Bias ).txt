@@ -1,0 +1,53 @@
+Title: Quiz # 194 (BJT - Collector Feedback Bias )
+URL: https://www.youtube.com/watch?v=aE3XYWVO1C8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] So in this question, we have been asked to find the value of this base return, such that
+[00:21] the operating point of the circuit is exactly at the center of the load line.
+[00:26] And for that, first of all, let us draw the load line of the given circuit.
+[00:31] Now to draw the load line, let us apply the KVL on this output side.
+[00:36] And if we apply the KVL, then we can get this expression.
+[00:40] That means for the given circuit, this voltage Vc is equal to 12V minus IC times 3 KL plus
+[00:49] 1 KL.
+[00:52] That means the voltage Vc is equal to 12V minus IC times 4 KL.
+[00:59] Now for the given circuit, the load line defines all the possible values of the operating
+[01:04] point.
+[01:05] So to draw the load line, we require at least 2 points.
+[01:10] And we can find the 2 extreme points of the load line by putting the value of IC and
+[01:14] VCE as 0.
+[01:16] So if we put the value of VCE as 0, then we will get the maximum value of the character
+[01:21] current.
+[01:22] That means we can say that the value of IC max is equal to 12V divided by 4 KL.
+[01:30] That is equal to 3 milliampere.
+[01:33] And we can get this value whenever the voltage VCE is equal to 0.
+[01:38] Similarly, the maximum value of this VCE is equal to 12V.
+[01:43] And we can get this value whenever the value of IC is equal to 0 milliampere.
+[01:49] So in this way, we got the 2 points of the load line.
+[01:53] Now here we have been given that the operating point should be at the exactly center of the
+[01:58] load line.
+[02:00] That means at this point, the value of the character current will be equal to 1.5 milliampere.
+[02:06] And the value of voltage VCE will be equal to 6V.
+[02:10] That means for the given circuit, the operating point is such that the value of voltage VCE
+[02:15] is equal to 6V, while the character current IC is equal to 1.5 milliampere.
+[02:21] So now to get the value of this base resistor, let us apply the KVL on the input side.
+[02:29] So applying the KVL, we can write 12V minus IC times RC.
+[02:35] That is the drop of growth is 3 KM resistor minus IB times RB minus VBE minus IE times
+[02:47] RE that is equal to 0.
+[02:50] Now here we are assuming that the voltage VBE is equal to 0.7V, while the value of the
+[02:57] character current and the emitter current are approximately same.
+[03:02] And also here this base current IB can be given as IC divided by beta.
+[03:08] So now let us put this value in the first expression.
+[03:12] That means now we can say that 12V minus 0.7V is equal to IB times RB plus IC times RC plus
+[03:25] RE.
+[03:27] That means 11.3V is equal to IC divided by beta times RB plus IC times 3 KM plus 1 KM.
+[03:41] That means 11.3V is equal to 1.5 divided by 100 times RB plus 1.5 milliampere times 4 KM.
+[03:54] That means 11.3V minus 6V is equal to 1.5 milliampere times RB divided by 100.
+[04:06] That means the value of RB is equal to 5.3V times 100 divided by 1.5 milliampere.
+[04:16] And if you calculate the value then this RB will come out as 353.3 KM.
+[04:24] That means whenever the value of RB is 353.3 KM at that time the operating point is at
+[04:31] the center of the load line.
+[04:33] And if you want to validate the result then put the value of RB as 353.3 KM and try
+[04:39] to get the value of voltage VCE and the IC.
+[04:44] That means for the given equation whenever the RB is equal to 353.3 KM at that time the
+[04:49] operating point is at the center of the load line.

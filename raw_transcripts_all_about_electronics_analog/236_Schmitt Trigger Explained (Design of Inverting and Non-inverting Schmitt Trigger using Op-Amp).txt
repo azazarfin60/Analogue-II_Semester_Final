@@ -1,0 +1,259 @@
+Title: Schmitt Trigger Explained (Design of Inverting and Non-inverting Schmitt Trigger using Op-Amp)
+URL: https://www.youtube.com/watch?v=5-ohKRWeod4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:15] So in this video we are going to talk about the smith trigger and we will understand what
+[00:20] is this smith trigger, what is the purpose of using this smith trigger in electrical and
+[00:23] electronic systems and how it can be designed.
+[00:27] Now in the last video of comparator, we have seen that it can be used to compare the
+[00:32] two voltage levels.
+[00:34] But the problem with this comparator is that if input signal is noisy, in that case
+[00:39] your output will be get affected and you will not get the desired output.
+[00:44] So let's say we have one comparator and to this comparator we have applied these input
+[00:49] signals V1 and V2.
+[00:51] Now here assume that this signal V1 is the input signal and this signal V2 is the reference
+[00:56] signal and assume that this signal are ideal signals.
+[01:00] So in that case as V1 is greater than V2, so you should get a constant high output voltage.
+[01:07] But if this signal V1 is noisy in that case, it is possible that it can affect your output
+[01:13] voltage.
+[01:14] So let's say because of the noise, this V1 signal looks like this.
+[01:20] So if you observe this signal V1, then you can notice over here that this signal V1 crosses
+[01:25] this signal V2 at these two locations.
+[01:28] So for the time period for which this signal V1 is less than V2, for that duration you
+[01:35] will get a low voltage.
+[01:37] So because of the noise, you will see the transition in the output voltage or we can say that
+[01:42] your output will be get affected because of the noise in this input signal.
+[01:47] So we can say that this comparator is not immune to the noise and because of that it can
+[01:52] affect your output.
+[01:54] Now this kind of problem can be avoided by using the smittriger.
+[01:59] Now the smittriger is nothing but the comparator with the hysteresis.
+[02:04] It means that the smittriger has a two threshold voltage.
+[02:07] One is the upper threshold voltage that is for low to high transition and second is the
+[02:12] lower threshold voltage that is for high to low transition.
+[02:16] And this is the symbol of a smittriger.
+[02:18] So now let us understand how the smittriger circuit works.
+[02:22] So here let us say the signal which is represented in a red color is the input signal and this
+[02:29] to add the upper and the lower threshold voltage for the given smittriger.
+[02:33] So now let us see how the smittriger will respond to this given input signal.
+[02:38] And here let us assume that the initial voltage across the smittriger is 0.
+[02:44] So as you can see over here initially the input signal is 0 and gradually it is increasing.
+[02:50] So the output of this smittriger will remain low till the point this input signal crosses
+[02:55] this upper threshold voltage.
+[02:57] So up to this point your output signal will remain 0 and from that point onwards your
+[03:02] output signal will remain high.
+[03:05] Now if you observe over here once this input signal crosses this upper threshold voltage
+[03:10] then after it deviates around this upper threshold voltage.
+[03:14] But then also your output signal will remain high.
+[03:18] And it will go to the low voltage only when this input signal goes below this lower threshold
+[03:24] voltage.
+[03:25] So at this point once again your output will become low and it will remain low till the
+[03:31] point once again this input signal crosses this upper threshold voltage.
+[03:37] So again at this point your output will become high and it will remain high after that
+[03:43] point.
+[03:44] So you can see over here even if your input signal varies around this upper and the lower
+[03:50] threshold voltage then also your output signal will not get changed and it will remain constant.
+[03:57] So we can say that this smittriger provides the noise immunity over this band and the difference
+[04:03] between this upper and the lower threshold voltage is known as the hysteresis voltage
+[04:08] of the smittriger.
+[04:09] So basically this hysteresis voltage defines the noise immunity of the given smittriger.
+[04:14] So if you observe this example there are 4 parameters which is required to define the smittriger.
+[04:20] The first two are the high and the low output levels of the smittriger and the remaining
+[04:24] two are the upper and the lower threshold voltages which will decide the trigger instant
+[04:28] for the smittriger.
+[04:30] So these 4 parameters defines the characteristic of the smittriger.
+[04:35] And the characteristic of this smittriger graphically can be represented by this transfer
+[04:40] characteristic curve.
+[04:41] So here on the x-axis we have the input voltage and on the y-axis we have the output voltage.
+[04:47] So now for the given example let us draw the transfer characteristic of the smittriger.
+[04:53] So if your input signal is less than the upper threshold voltage level of the smittriger
+[04:58] in that case your output will remain low and as soon as it crosses this upper threshold
+[05:03] voltage level then your output will become high.
+[05:08] And if the input signal goes beyond this upper threshold voltage level then also your output
+[05:13] will remain high.
+[05:15] Now suppose if your input signal starts reducing then also your output signal will remain high
+[05:22] and it will remain high till the point your input signal goes below this lower threshold
+[05:27] voltage level.
+[05:28] So as soon as your input signal goes below this lower threshold voltage then again your
+[05:34] output will become low voltage.
+[05:37] And if your input signal goes below this lower threshold voltage then also your output
+[05:42] will remain low.
+[05:44] So this is how the smittriger can be represented using this transfer characteristic.
+[05:49] So this transfer characteristic is also known as the hysteresis curve for the smittriger.
+[05:55] Now here if your output voltage levels VH and VL are equal and opposite in polarity
+[06:00] in that case your transfer characteristic curve will be symmetric with respect to the
+[06:06] Y axis.
+[06:07] And by providing the reference voltage as input to this smittriger we can shift this
+[06:12] curve either to the right or the left hand side.
+[06:15] So for the smittriger which has this kind of transfer characteristic curve is known as
+[06:20] the non-inverting smittriger because here once your input signal crosses this upper
+[06:26] threshold voltage level then your output will become high and when your input signal is
+[06:31] less than this lower threshold voltage at that time your output will become low.
+[06:37] So we can say that this transfer characteristic curve is the curve for the non-inverting
+[06:41] smittriger.
+[06:42] Similarly we can have a hysteresis curve for the inverting smittriger.
+[06:47] So in case of this inverting smittriger whenever your input signal is less than the upper
+[06:51] threshold voltage level at that time your output will be high and once it crosses this upper
+[06:57] threshold voltage level then your output will become low voltage.
+[07:03] And if we go beyond this upper threshold voltage level then also your output will remain low.
+[07:08] Now suppose this input signal starts reducing then also your output will remain low and it
+[07:14] will remain low till the point your input signal crosses the lower threshold voltage level.
+[07:21] So once this input signal crosses this lower threshold voltage level then once again your
+[07:25] output will become high.
+[07:28] So this is the transfer characteristic curve of the inverting smittriger and this curve
+[07:33] can be shifted either to the right or left side by providing the external reference voltage
+[07:38] as I input to this inverting smittriger.
+[07:41] So this is the symbol of the inverting smittriger.
+[07:43] So if you observe over here the hysteresis curve inside this triangle is the hysteresis
+[07:48] curve for the inverting smittriger or it can be even represented by adding the bubble
+[07:54] at the notch of the non-inverting smittriger.
+[07:57] So now that is being said now let us see how we can design this inverting and the non-inverting
+[08:02] smittriger.
+[08:03] So there are many ICs are available which can be directly used as a smittriger but this
+[08:08] smittriger can also be designed by using the op-em and the comparators or even it can
+[08:14] be designed by using the transistors.
+[08:16] So in this video we will understand how this inverting and the non-inverting smittriger
+[08:21] can be designed by using the op-em.
+[08:23] So this is the example of inverting smittriger which is being designed using the op-em.
+[08:28] So here the input is applied at the inverting terminal and there is a positive feedback from
+[08:34] output to the input side.
+[08:36] So now let us understand how this circuit will act as an inverting smittriger.
+[08:42] So here assume that the voltage at this non-inverting terminal is equal to V+.
+[08:49] Now for this circuit whenever your V in is greater than V+.
+[08:56] At that time your output voltage will become low voltage and whenever your V in is less
+[09:03] than V+.
+[09:04] At that time your output will be high.
+[09:07] So first of all let us find the expression for this V+.
+[09:11] And it can be found by applying the KCL at this node.
+[09:15] So applying KCL we can write this V+.
+[09:19] Minus 0d added by R1 plus V+.
+[09:24] Minus V out divided by R2 that is equal to 0.
+[09:30] That means the summation of this 2 current is equal to 0.
+[09:35] And if we simplify it then we will get the expression for the V+.
+[09:39] As R1 divided by R1 plus R2 times this voltage V out.
+[09:45] Now here initially assume that the output of this smittriger is equal to high voltage
+[09:50] that is VH.
+[09:51] And in that condition let us assume this voltage V+.
+[09:55] That is equal to V1.
+[09:57] So we can write this voltage V1 as R1 divided by R1 plus R2 times this voltage VH.
+[10:06] So when your input signal V in is greater than this voltage V1 in that case the output
+[10:12] of this opam or the smittriger will become low voltage.
+[10:16] So now whenever your input signal V in is greater than this voltage V1 in that case your
+[10:22] output will become low.
+[10:24] And this voltage V1 is known as the upper threshold voltage of this inverting smittriger.
+[10:29] So we can say that the upper threshold voltage for the inverting smittriger is equal to R1
+[10:34] divided by R1 plus R2 times this voltage VH.
+[10:39] Now once this condition is satisfied at that time your output of this smittriger will
+[10:44] become low voltage.
+[10:46] And it will remain low till the point when this input signal V in is less than this voltage
+[10:53] V+.
+[10:55] Now once the output of this smittriger is low in that case your V+.
+[10:59] Will become R1 divided by R1 plus R2 times this voltage VL.
+[11:06] And let us say in this condition this voltage V+.
+[11:09] As V2.
+[11:11] Now in this condition the output of this smittriger will become high only when this input signal
+[11:16] V in is less than this voltage V2.
+[11:20] So whenever this condition is satisfied at that time the output of this smittriger will
+[11:26] become again high.
+[11:29] So this voltage V2 is known as the lower threshold voltage of the smittriger.
+[11:35] So we can say that the lower threshold voltage of this smittriger is equal to R1 divided
+[11:40] by R1 plus R2 times this voltage VL and the upper threshold voltage is equal to R1 divided
+[11:48] by R1 plus R2 times this voltage VH.
+[11:53] And the difference between this upper and the lower threshold voltage is known as the
+[11:57] hysteresis voltage of the smittriger.
+[12:00] And basically this hysteresis voltage defines the noise immunity of the smittriger.
+[12:05] So let us say for example in this condition the VH is equal to 12V and VL is equal to
+[12:12] minus 12V and R1 is equal to R2 is equal to R.
+[12:18] So in this condition the upper threshold voltage for the given smittriger will become 6V and
+[12:23] the lower threshold voltage will become minus 6V and the hysteresis will be equal to 6 minus
+[12:31] minus 6 that is equal to 12V.
+[12:34] So in this way we can design the invading smittriger by using the opamp and we can even
+[12:40] shift the transfer curve either right or to the left by providing the external reference
+[12:46] voltage as an input to this invading smittriger.
+[12:49] So now that is being said now let us see how we can design the non invading smittriger
+[12:54] by using this opamp.
+[12:56] So here we have applied the input at the non invading terminal and there is a positive
+[13:01] feedback from output to the input side.
+[13:03] So now let us understand how this circuit will act as a non invading smittriger.
+[13:08] So once again assume that the voltage at this node is equal to V plus and here if you
+[13:14] observe the invading terminal is at a ground potential.
+[13:18] So whenever the V plus is greater than 0 in that case the output of this opamp will be
+[13:25] high and whenever the V plus is less than 0 in that case the output of the opamp will
+[13:31] be low.
+[13:32] So first of all let us find the expression for this voltage V plus.
+[13:37] So once again let us apply the KCL at this particular node.
+[13:41] So applying KCL we can write V plus minus V in divided by R1 plus V plus minus V out
+[13:54] divided by R2 that is equal to 0 or we can say that V plus multiplied by 1 divided by
+[14:04] R1 plus 1 divided by R2 that is equal to V in divided by R1 plus V out divided by R2
+[14:16] and if you simplify it then we will get the expression of V plus as R2 divided by R1 plus
+[14:23] R2 times this input voltage V in plus R1 divided by R1 plus R2 times the voltage V out
+[14:34] divided.
+[14:35] So this is the expression of the V plus in terms of the input voltage and the output
+[14:39] voltage.
+[14:40] Now here initially assume that the output of this opamp is low that is V out is equal
+[14:46] to VL and in that condition let us say this voltage V plus as a voltage V1.
+[14:53] So the expression of the VL will become R2 divided by R1 plus R2 times this input voltage
+[14:59] V in plus R1 divided by R1 plus R2 times this voltage VL.
+[15:05] So whenever this voltage V1 is greater than 0 in that case the output of this opamp will
+[15:12] become high.
+[15:14] So we can say that for this condition R2 divided by R1 plus R2 times this V in should be
+[15:23] greater than minus VL multiplied by the R1 divided by R1 plus R2 or we can say that V
+[15:33] in should be greater than minus R1 divided by R2 times this voltage VL.
+[15:40] So whenever this condition is satisfied in that case the output of this opamp will become
+[15:46] high.
+[15:47] So this voltage is known as the upper threshold voltage for the smith trigger.
+[15:52] So we can say that the upper threshold voltage is equal to minus R1 divided by R2 times
+[15:59] this voltage VL.
+[16:02] Now here we are assuming that the low voltage level for this opamp is a negative.
+[16:07] So if you see the upper threshold voltage will become positive.
+[16:11] So this is the expression of the upper threshold voltage for the non-neverting smith trigger.
+[16:16] So whenever this condition is satisfied in that case the output of the opamp will become
+[16:21] high.
+[16:22] And once this output voltage will become high in that condition the expression for the
+[16:27] voltage V plus will get changed.
+[16:29] So in this condition when the output voltage V out is high then let us say the voltage V
+[16:35] plus that is equal to V2.
+[16:38] And for this condition the V2 will become R2 divided by R1 plus R2 times the input voltage
+[16:46] V in plus R1 divided by R1 plus R2 times this voltage VH.
+[16:54] So here basically we have replaced this output voltage V out by VH.
+[16:59] So now in this condition the output of this smith trigger will become low only when this
+[17:05] V2 is less than 0.
+[17:09] So we can say that for this condition this voltage R2 divided by R1 plus R2 times this
+[17:17] V in should be less than minus R1 divided by R1 plus R2 times this voltage VH.
+[17:26] Or we can say that the input voltage V in should be less than minus R1 divided by R2 times
+[17:33] this voltage VH.
+[17:35] So once this condition is satisfied in that case once again the output of this smith trigger
+[17:42] will become low voltage.
+[17:44] And for this input voltage for which this condition is satisfied is known as the lower
+[17:49] threshold voltage for the non-earning speed trigger.
+[17:53] So we can say that the lower threshold voltage is equal to minus R1 divided by R2 times
+[18:00] the voltage VH.
+[18:02] So in this way the expression for the upper threshold voltage is equal to minus R1 divided
+[18:08] by R2 times the voltage VL and expression for the lower threshold voltage is equal to
+[18:14] minus R1 divided by R2 times the voltage VH.
+[18:20] And here we are assuming that VH and VLR equal and opposite in the polarity.
+[18:26] So in this way we can design this non-earning smith trigger by using this opamp.
+[18:30] Now we can shift this transfer curve either to the right or left side by providing the
+[18:36] external reference voltage.
+[18:38] So if you provide the external reference voltage then according to the polarity of this reference
+[18:42] voltage we can shift this transfer curve either to the right or to the left side.
+[18:47] So in this way using this opamp circuit we can design this inverting and the non-earning
+[18:51] smith triggers.
+[18:53] So this smith trigger is particularly useful when we want to compare the two voltage levels
+[18:57] and we know that the input is noisy.
+[19:00] So this smith trigger can be used as a level comparator and it can be used in analog
+[19:05] to digital conversions.
+[19:07] Apart from that this smith trigger can be used as a wave shaping circuit.
+[19:12] So if you have a sine wave or triangular wave and if you want to convert that wave into
+[19:16] the square wave then using the smith trigger we can convert it.
+[19:20] Apart from that if you observe over here we are providing the positive feedback to the opamp
+[19:24] to design this smith trigger.
+[19:26] So using the smith trigger we can even design the multivibrator or the oscillator.
+[19:30] So these are the few applications in which the smith trigger can be used.
+[19:34] So in the next video we will take some examples and through the examples we will see the
+[19:39] different applications in which the smith trigger can be used.
+[19:43] So I hope in this video you understood about this inverting and the non-earning smith
+[19:48] triggers.
+[19:49] So if you have any question or suggestion do let me know in the comment section below.
+[19:52] If you like this video hit the like button and subscribe to the channel for more such
+[19:56] videos.

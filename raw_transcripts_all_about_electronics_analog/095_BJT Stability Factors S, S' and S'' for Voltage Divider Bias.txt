@@ -1,0 +1,130 @@
+Title: BJT: Stability Factors S, S' and S'' for Voltage Divider Bias
+URL: https://www.youtube.com/watch?v=O42V9TlCp1k
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will find out the stability factor for the voltage divider biasing circuit.
+[00:22] Now if you follow the previous videos, then we have already discussed about the voltage
+[00:26] divider biasing circuit.
+[00:28] And we have already seen that how we can find the expressions for the base current, the
+[00:32] character current and the voltage we see.
+[00:35] But let me just quickly go through the procedure, which we have followed during the analysis.
+[00:41] So what we did, we found the Thavenance equivalent circuit for this voltage divider circuit.
+[00:47] That means we found the Thavenance equivalent resistance RTH and the voltage VTH for this
+[00:53] voltage divider circuit.
+[00:55] And then by applying the KVL equations on the input and output side, we got these expressions.
+[01:02] Now during the analysis, often we write this character current ICS beta times IB.
+[01:08] But actually it is given by this expression.
+[01:11] But usually as this reverse saturation current is in the nano-ampere range, so this second
+[01:17] term is often neglected.
+[01:19] So now using these expressions, we will find the stability factors for this voltage divider
+[01:24] biasing circuit.
+[01:25] And first of all, we will find the stability factor as, so this stability factor as can
+[01:33] be given as del IC divided by del ICBO by keeping the value of voltage VB and the ICBO fixed.
+[01:45] Now if we differentiate this expression with respect to IC, then we can write del IC
+[01:51] divided by del IC is equal to beta times del IB divided by del IC plus beta plus 1 times
+[02:04] del ICBO divided by del IC.
+[02:09] Now if you notice over here, this del ICBO divided by del IC is equal to stability factor.
+[02:18] And we can say that this term is equal to 1 bias.
+[02:22] And here this del IC divided by del IC is equal to 1.
+[02:27] So if we rearrange this expression, then we can write 1 minus beta times del IB divided
+[02:34] by del IC is equal to beta plus 1 times 1 bias.
+[02:42] Or we can say that S is equal to beta plus 1 divided by 1 minus beta times del IB divided
+[02:53] by del IC.
+[02:56] So this is the general expression of the stability factor.
+[03:00] So in this expression, if we know the value of this del IB divided by del IC, then we
+[03:06] can find the value of the stability factor.
+[03:09] Now in the earlier video, we have derived the expression for the base current.
+[03:14] But let us rewrite the same expression so that it also involves the collector current.
+[03:20] So if we apply the KVL on this input side, then we can write voltage VTH minus IB times
+[03:29] VTH minus voltage VBE minus this V that is the IE times RE is equal to 0.
+[03:42] Now here we know that this emitter current IE is equal to IC plus IB.
+[03:50] That means we can say that voltage VTH minus IB times RTH minus VBE minus IC plus IB times
+[04:05] RE that is equal to 0.
+[04:09] Or we can say that IB times RTH plus RE is equal to voltage VTH minus VBE minus IC times
+[04:24] RE.
+[04:27] That means the base current IB is equal to voltage VTH minus VBE minus IC times RE divided
+[04:39] by RTH plus RE.
+[04:46] So this will be the expression of the base current, which also includes the collector current.
+[04:51] So now to get the value of this del IB divided by del IC, let us differentiate this expression
+[04:57] with respect to IC.
+[04:59] Now if you notice over here, this voltage VTH and the voltage VBE are the constant.
+[05:06] So whenever we differentiate this expression with respect to IC, then these two dumps
+[05:10] will become 0.
+[05:12] That means del IB divided by del IC is equal to minus RE divided by RTH plus RE.
+[05:27] So now let us put this value into this expression.
+[05:31] That means the stability factor as is equal to beta plus 1 divided by 1 minus beta times
+[05:41] minus RE divided by RTH plus RE.
+[05:48] That means S is equal to beta plus 1 divided by 1 plus beta times RE divided by RTH plus
+[06:00] RE.
+[06:01] Or we can say that it is equal to beta plus 1 times RTH plus RE divided by RTH plus RE divided
+[06:11] by RTH plus beta plus 1 times RE.
+[06:20] Or if we further rearrange this expression, then we can write this stability factor as
+[06:25] is equal to beta plus 1 times 1 plus RTH divided by RE divided by beta plus 1 plus RTH
+[06:39] divided by RE.
+[06:42] So this will be the expression of the stability factor for the voltage divided by a single
+[06:46] configuration.
+[06:48] Now as you can see, whenever this RTH divided by RE is much less than this beta plus 1,
+[06:57] then this term can be neglected.
+[07:00] And in that case, the stability factor as is approximately equal to 1.
+[07:06] That means whenever this condition is satisfied, then we get the best stability of the circuit
+[07:11] with respect to the change in the ICBO.
+[07:15] But whenever this RTH divided by RE is much greater than beta plus 1, at that time, this
+[07:24] beta plus 1 can be neglected.
+[07:26] And in that case, the stability factor as is approximately equal to beta plus 1.
+[07:32] So this will be the maximum value of the stability factor.
+[07:36] So similarly, now let us find the stability factor as dash.
+[07:41] So this stability factor as dash can be given as del IC divided by del VPE by keeping
+[07:49] the value of ICBO and the beta constant.
+[07:54] So to find the value of this stability factor as dash, let us put the value of this base
+[07:59] current IP into this expression.
+[08:02] And by putting the value, we can write this character current IC is equal to beta times
+[08:09] voltage VTH minus VBE divided by RTH plus beta plus 1 times RE plus beta plus 1 times
+[08:25] ICBO.
+[08:27] Now whenever we differentiate this expression with respect to VBE, then the beta and the
+[08:32] ICBO are fixed.
+[08:34] That means this second term will become 0.
+[08:38] That means del IC divided by del VBE is equal to minus beta divided by RTH plus beta plus
+[08:51] 1 times RE.
+[08:55] And this is nothing but the S dash.
+[08:59] So this will be the stability factor as dash for the voltage divided by the sin configuration.
+[09:04] And similarly, now let us find out the stability factor as double dash.
+[09:09] So this stability factor as double dash can be given as del IC divided by del beta by
+[09:17] keeping the value of ICBO in the VBE constant.
+[09:23] So once again, to find this stability factor as double dash, let us put the value of this
+[09:28] base current into this expression.
+[09:31] And if you put the value of this base current IB into this expression, then we will get
+[09:35] this expression.
+[09:37] So to find this stability factor as double dash, now let us differentiate this expression
+[09:42] with respect to beta.
+[09:45] And here as the ICBO is constant, so whenever we differentiate this expression with respect
+[09:50] to beta, then this term will become 0.
+[09:54] So now this del IC divided by del beta is equal to ICBO plus RTH plus beta plus 1 times
+[10:11] RE times voltage VTH minus VBE minus beta times RE times VTH minus VBE divided by RTH plus
+[10:31] beta plus 1 times RE whole square.
+[10:36] So basically, whenever we differentiate this term, then the first denominator is kept
+[10:42] constant and the numerator is differentiated with respect to beta.
+[10:47] And the second time, the numerator is kept constant and the denominator is differentiated
+[10:52] with respect to beta.
+[10:55] Now here, as this ICBO is very small, so we can neglect this term.
+[11:01] And also in the numerator, when this term is getting subtracted from this term, then
+[11:06] in the numerator, we will get RTH plus RE times voltage VTH minus VBE divided by RTH plus
+[11:23] beta plus 1 times RE whole square.
+[11:28] Now here, we know that this VTH minus VBE divided by RTH plus beta plus 1 times RE is nothing
+[11:35] but base current.
+[11:37] For approximately, we can say that it is equal to IC divided by beta.
+[11:42] So we can say that this del IC divided by del beta is equal to IC divided by beta times
+[11:51] RTH plus RE divided by RTH plus beta plus 1 times RE.
+[12:06] Or it is equal to IC divided by beta times RTH divided by RE plus 1 divided by RTH divided
+[12:17] by RE plus beta plus 1.
+[12:23] So this is the expression of the stability factor S double dash.
+[12:27] So in this way, we got the expression of the stability factor S, S dash and the S double
+[12:32] dash for the voltage divider biasing configuration.
+[12:36] So similarly, in the next video, we will find out the expressions of the stability factor
+[12:40] for the collector feedback biasing configuration.
+[12:43] But I hope in this video, you understood how to find the stability factors for the voltage
+[12:48] divider biasing circuit.
+[12:50] So if you have any question or suggestion, do let me know here in the comment section
+[12:54] below.
+[12:55] If you like this video, hit the like button and subscribe to the channel for more such
+[12:58] videos.

@@ -1,0 +1,61 @@
+Title: MOSFET - Biasing Solved Problem | Quiz # 326
+URL: https://www.youtube.com/watch?v=i5R1Cz9wVoo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the youtube channel all about electronics.
+[00:10] So in this question, we have been given this MOSFET circuit and for the given MOSFET circuit
+[00:15] we have been also given some device parameters.
+[00:19] Now this circuit works at the age of the saturation whenever the voltage BGS is equal to 1
+[00:25] WDF.
+[00:26] So for the given MOSFET circuit, we have been asked to find the threshold voltage of
+[00:30] the MOSFET.
+[00:32] Now we know that the MOSFET will operate in the saturation region whenever this voltage
+[00:37] VDS is greater than or equal to voltage VGS minus VT, where the VT is the threshold
+[00:44] voltage.
+[00:45] So it will operate at the age of the saturation whenever this VDS is equal to VGS minus
+[00:52] VT.
+[00:54] Now here we have been given that the voltage VGS is equal to 1 WDF.
+[01:00] That means at the age of the saturation, this voltage VDS will be equal to 1 minus VT.
+[01:07] Moreover here this voltage VDS can also be given as this VDD minus this ID times RD, where
+[01:19] this RD is equal to 20 kilo ohm.
+[01:22] And assuming this drain current ID is in milliampere, we can say that this voltage VDS is equal
+[01:29] to 3 volt minus 20 times ID.
+[01:34] So at the age of the saturation, this voltage VDS will be equal to 1 minus VT.
+[01:40] So if we equate this equation number 1 and 2, then we can say that this 1 minus VT
+[01:48] that is equal to 3 minus 20 times ID.
+[01:53] So now let us find the value of this ID.
+[01:57] Now we know that in the saturation, this drain current ID can be given as half times mu
+[02:04] and times cu x times WD by L times this VGS minus VT whole square.
+[02:12] So here we have been already given the values of the device parameters that is mu and times
+[02:19] cu x is equal to 100 micro ampere per volt square and this W by L ratio is equal to n.
+[02:28] So if you put all these values, then this drain current ID will be equal to half times
+[02:34] this 100 micro ampere per volt square times n times VGS minus VT whole square that is
+[02:43] 1 minus VT whole square.
+[02:46] That means drain current ID is equal to 500 micro ampere per volt square times 1 minus
+[02:53] VT whole square.
+[02:55] Or we can say that it is equal to 0.5 milli ampere per volt square times 1 minus VT whole
+[03:04] square.
+[03:05] So in this way, we got the expression of the drain current.
+[03:10] So now let us put the value of the drain current in the earlier expression that is this
+[03:15] expression.
+[03:17] So from this we can say that this 1 minus VT that is equal to 3 minus 20 times ID.
+[03:26] That means 1 minus VT that is equal to 3 minus 20 times 0.5 times 1 minus VT whole square.
+[03:37] That is equal to 3 minus n times 1 minus 2 times VT plus VT square.
+[03:47] Or we can say that this 1 minus VT is equal to 3 minus n plus 20 times VT minus 10 times
+[03:58] VT square.
+[04:00] So if you further simplify it, then we can say that this 10 times VT square minus 21 times
+[04:07] VT plus 8 that is equal to 0.
+[04:12] So in this way, we got the quadratic expression in terms of the VT.
+[04:17] So if you solve this expression and you will get the two roots and these two roots are
+[04:23] 1.6 and 0.5.
+[04:26] That means the value of VT could be either 1.6 or it could be equal to 0.5.
+[04:33] Now here we know that the voltage VGS is equal to 1 volt, right?
+[04:40] So if the value of VT is equal to 1.6 volt, in that case, the voltage VGS will be less
+[04:46] than VT and in that case, the MOSFET will operate in the cutoff region.
+[04:54] That means the value of VT has to be lower than VGS.
+[04:58] So whenever the MOSFET is operating at the edge of the saturation, then this VDS will be
+[05:03] equal to VGS minus VT and moreover, these VGS should be greater than or equal to VT.
+[05:12] That means in this case, the value of VT has to be lower than VGS.
+[05:18] That means in this case, the value of VT is equal to 0.5 volt.
+[05:24] So from this, we can say that for the given MOSFET circuit, whenever the threshold voltage
+[05:29] is equal to 0.5 volt at that time, this circuit will operate at the edge of the saturation.

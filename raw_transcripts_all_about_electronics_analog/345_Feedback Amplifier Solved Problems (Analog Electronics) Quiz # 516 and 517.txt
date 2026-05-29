@@ -1,0 +1,130 @@
+Title: Feedback Amplifier Solved Problems (Analog Electronics) | Quiz # 516 and 517
+URL: https://www.youtube.com/watch?v=ep-hfLxvL24
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel OilUpord Electronics.
+[00:10] So in this question, we have been given this feedback amplifier and for the given feedback
+[00:15] amplifier from the given options which one is the correct one.
+[00:20] So here basically we need to find the stability condition for the given feedback amplifier.
+[00:26] So let us see that.
+[00:28] So if you see over here, then first of all this input is applied to the low pass filter.
+[00:34] And then it is given to this amplifier circuit.
+[00:38] So as you can see, this amplifier circuit is inverting the input signal.
+[00:43] Moreover here nothing has been specified for the amplifier.
+[00:47] So we can assume that the open loop gain of this amplifier is independent of the frequency.
+[00:53] That means irrespective of the frequency, the open loop gain of this amplifier will
+[00:57] remain constant.
+[00:59] So apart from this low pass filter, if you see on the output side, then we have this
+[01:04] resistor.
+[01:05] And in the feedback, we have this resistor R2.
+[01:09] So here to take the stability, we need to find the expression of the V out divided by
+[01:14] V in.
+[01:15] And from this, we can easily find the condition for the stability.
+[01:19] So without going into the expression, if you just see the intuitively, then on the input
+[01:24] side, we have the low pass filter.
+[01:26] That means here, this low pass filter will add the one pole.
+[01:31] Moreover, here the open loop gain of the amplifier is independent of the frequency.
+[01:36] And similarly, this feedback network is also consistent of only resistor.
+[01:41] That means here, this feedback network beta is also independent of the frequency.
+[01:47] So we can say that the overall response of this feedback amplifier will be of the response
+[01:51] of the low pass filter.
+[01:54] And therefore, it will be inherently stable.
+[01:57] But here, still for the sake of completeness, let us derive the expression for the V out
+[02:02] divided by V in.
+[02:03] So if you observe over here, and this resistor R2 is connected in the feedback.
+[02:10] So using the Miller's theorem, we can represent this feedback resistor both on the input
+[02:15] and the output side.
+[02:17] So on the input side, if you see the equivalent resistance, then it can be given by the following
+[02:21] expression.
+[02:23] That means on the input side, this resistor will be equal to R2 divided by 1 minus G, where
+[02:29] the G is the open loop gain of this amplifier.
+[02:32] So in this case, the resistance on the input side will be equal to R2 divided by this
+[02:38] 1 plus A.
+[02:40] So let's say that is equal to Rx.
+[02:43] Similarly on the output side, the resistance R0 can be given as G times R2 divided by G
+[02:49] minus 1, where the G is the open loop gain of the amplifier.
+[02:54] So in this case, it will be equal to minus A times R2 divided by minus A minus 1.
+[03:01] Or in other words, that is equal to A times R2 divided by A plus 1.
+[03:07] So let's say that is equal to RY.
+[03:10] That means using the Miller's theorem, this feedback resistor R2 can be represented as
+[03:15] the RI and the R0.
+[03:17] And equivalently, that is equal to Rx on the input side and the RY on the output side.
+[03:23] So based on this, let's find the expression of the V out divided by V in.
+[03:28] So here, this will be the output voltage V out.
+[03:31] Well, this is the input voltage.
+[03:34] And let's say the voltage at this node is equal to Vx.
+[03:39] So we can say that here this V out divided by V in is equal to V out divided by Vx times
+[03:46] Vx divided by V in.
+[03:48] So here, as you can see, this V out divided by Vx is equal to minus A. So here, basically,
+[03:55] we need to find this Vx divided by Vi.
+[03:58] And for that, first of all, let us find the current resistance of this parallel combination.
+[04:04] Let's say that is equal to Zp.
+[04:07] So here, this Zp is equal to 1 divided by Geomega C. That is the reactance of this capacitor
+[04:15] times Rx divided by this 1 divided by Geomega C plus Rx.
+[04:22] So basically, that is the parallel combination of these two components.
+[04:26] Or we can say that that is equal to these Rx divided by this 1 plus Geomega C times Rx.
+[04:36] So that is the value of the Zp.
+[04:38] So here, this voltage Vx is equal to Zp divided by these Zp plus R1 times Vi.
+[04:48] So now, if you put the value of the Zp, then further, we can write it as these Rx divided
+[04:54] by these 1 plus Geomega C times Rx divided by these Rx divided by 1 plus Geomega C times
+[05:06] Rx plus R1.
+[05:09] And if you further simplify it, then we can write it as these Vx divided by Vi, that is
+[05:16] equal to these Rx divided by these Rx plus R1 plus Geomega C times Rx.
+[05:24] So here, if you divide both numerator and denominator by these Rx plus R1, then we can
+[05:36] write it as these Rx divided by these Rx plus R1.
+[05:41] And in the denominator, these 1 plus Geomega C times Rx times R1 divided by these Rx plus
+[05:52] R1.
+[05:53] So let's say these Rx divided by these Rx plus R1 is equal to K.
+[06:01] So further, we can write this expression as these Vx divided by Vi, that is equal to K divided
+[06:08] by these 1 plus Geomega C times K times R1.
+[06:15] And we know that these Vx divided by Vi is equal to Vx divided by Vx times Vx divided
+[06:23] by Vi.
+[06:24] So we can say that that is equal to minus A times this K divided by 1 plus Geomega C times
+[06:33] K times R1.
+[06:36] So in this way, we got the expression of the Vx divided by Vi.
+[06:41] So if you see over here, then this A is constant and similarly, this K is also constant.
+[06:48] And as you have seen, the value of the K is equal to Rx divided by these Rx plus R1,
+[06:55] where this Rx is equal to R2 divided by 1 plus A.
+[07:00] And further, if you write this expression in the S domain, then that is equal to minus
+[07:05] A times K divided by 1 plus is S times C times K times R1.
+[07:12] So as you can see, the response of this feedback amplifier is the single pole response.
+[07:18] And therefore, irrespective to the value of the CNR, this feedback amplifier will be inherently
+[07:24] stable.
+[07:26] So from this, we can say that for the given question, this is the correct answer.
+[07:32] So similarly, now let us see the next question.
+[07:36] So in this question also, we have been given the feedback amplifier.
+[07:40] And here we have been given that the Opalup transfer function of this amplifier has
+[07:45] the two poles in the left half of the HES plane.
+[07:48] And in this amplifier, there is a resistive negative feedback.
+[07:53] So for this amplifier, from the given options, which one is the correct one?
+[07:58] So once again, this question is related to the stability of the feedback amplifier.
+[08:04] So here we have been given that this Opalup transfer function has the two poles in the
+[08:09] left half of the HES plane.
+[08:11] And in the feedback amplifier, we have a resistive negative feedback.
+[08:16] That means here, in this feedback amplifier, this feedback block is the resistive block.
+[08:23] That means here, this feedback network is independent of the frequency.
+[08:28] And here, the Opalup gain of this amplifier has the two poles on the left half of the HES
+[08:33] plane.
+[08:34] That means here, if we see the expression of the A beta, then it will look something like
+[08:39] this.
+[08:40] So here, as you can see, these two poles are on the left half of the HES plane.
+[08:46] And on the HES plane, if we see, then it will look something like this.
+[08:51] So in the recent video, we have already seen that when the feedback amplifier has a two
+[08:56] pole response, then how the response will look like.
+[09:00] So here, this is the board of plot of the feedback amplifier, which has a two pole response.
+[09:06] And we have seen that in this type of system, the phase, which is the 180 degree at the
+[09:11] infinite frequency.
+[09:13] That means although at the very high frequency, the phase will be very close to 180 degree.
+[09:18] But still, it will not be equal to 180 degree.
+[09:22] So we can say that had the high frequencies, if the A beta is much greater than 1, and
+[09:28] in that case, this type of feedback amplifiers will be on the verge of instability.
+[09:34] But here, since the phase will not reach to the minus 180 degree, so we can say that
+[09:39] the issue of the instability will not occur in this feedback amplifier.
+[09:44] So we already know the condition for the instability, right?
+[09:48] That means whenever the phase is equal to minus 180 degree, and at that time, if this A
+[09:53] beta is greater than 1, in that case, the response of the feedback amplifier will be unstable.
+[10:00] But in this case, when the feedback amplifier has this type of response, and the phase is
+[10:05] not reaching the minus 180 degree until the omega is equal to infinite.
+[10:10] So we can say that for the all frequencies, the issue of the instability will not occur.
+[10:16] And from this, we can say that such amplifiers will be stable at the all frequencies.
+[10:22] And therefore, for the given question, this beats the correct answer.

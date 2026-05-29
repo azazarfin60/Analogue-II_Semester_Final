@@ -1,0 +1,121 @@
+Title: BJT - Differential Amplifier (Small Signal Analysis) Solved Problem | Quiz # 295
+URL: https://www.youtube.com/watch?v=SktYOIUYy-4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this differential amplifier circuit and here we
+[00:15] have been given that the collector registers of this differential amplifier are accurate
+[00:20] to within 1%.
+[00:23] Apart from that, here we have been also given that the output impedance of this current
+[00:27] source is equal to 200 kOhm.
+[00:30] So here we have been asked to find the CMRR or the common mode rejection ratio of this
+[00:35] differential amplifier.
+[00:37] Now before we move ahead, I would recommend you to go through the latest video on the main
+[00:41] channel so that whatever I am telling over here, you can relate to it.
+[00:46] And if you find this quiz useful, then like and share with your friends.
+[00:52] Now here, this CMRR can be given as the differential gain to the common mode gain.
+[01:00] And as we have seen, this differential gain is the ratio of the differential output to
+[01:05] the differential input.
+[01:08] Where this differential input is the input between the two base terminals.
+[01:12] But here if you observe that this differential input is applied through the series register.
+[01:18] So here this differential gain AD dash is equal to VOD divided by VID times VID divided
+[01:28] by V signal.
+[01:30] So basically this differential gain AD dash is equal to this VOD divided by V signal.
+[01:38] So first of all, here we will find the VOD divided by VID and then we will multiply it
+[01:43] with this factor.
+[01:46] And to find that, first of all, we need to find the transconductance.
+[01:51] So as you are aware, this transconductance GM can be given as IC divided by VT.
+[01:57] Now if you see over here, then this bias current IE is equal to 1 milliampere.
+[02:04] And here, since both transistors are same, so this bias current will get equality divided
+[02:10] between the two emitter currents.
+[02:12] That means here this emitter current IE1 and the IE2 is equal to IE divided by 2 that
+[02:21] is equal to 0.5 milliampere.
+[02:25] And here this collector current IC1 and the IC2 is equal to alpha times IE that is equal
+[02:33] to beta divided by beta plus 1 times I.
+[02:38] Now here, this beta is equal to 100.
+[02:41] So approximately we can say that this collector current is equal to emitter current.
+[02:47] That means IC1 and the IC2 is equal to 0.5 milliampere.
+[02:53] And hence this GM1 and the GM2, let us call it as GM is equal to 0.5 milliampere divided
+[03:03] by 25 milli volt that is IC divided by VT that is equal to 20 milliampere or if we see
+[03:13] 1 over GM, then it will be equal to 50 ohm.
+[03:18] So now first of all let us find the differential gain that is VOD divided by VID.
+[03:26] And for that we need to replace this circuit by the small signal model.
+[03:31] So if we see the small signal equivalent circuit, then it will look like this.
+[03:36] And here this node will act as a virtual ground.
+[03:40] That means if we see these two transistors, then it will act as a common emitter amplifier
+[03:44] with the emitter resistor.
+[03:47] And we have seen that its gain can be given as RC divided by 1 over GM plus RE.
+[03:56] So here I am just taking the magnitude.
+[03:59] So this gain will be equal to RC that is 10 kilo ohm divided by 1 over GM that is 50 ohm
+[04:08] plus RE that is equal to 150 ohm.
+[04:12] That means this differential gain AD is equal to 10 kilo ohm divided by 200 ohm that is
+[04:20] equal to 50.
+[04:22] Now this will be the differential gain if this input signal is applied directly.
+[04:28] But in this case it is applied through the series resistor.
+[04:32] And for that we need to find the ratio of this differential input to the V signal.
+[04:39] And for that we need to find the input impedance of this differential amplifier which is seen
+[04:44] through the two base terminals.
+[04:46] And to find that let us apply the input signal between the two base terminals.
+[04:52] So here we have replaced the differential amplifier with the small signal equivalent circuit.
+[04:57] And we have applied the input signal between the two base terminals.
+[05:01] Now here at this node the output impedance will also present.
+[05:06] But since this node will act as a virtual ground so it is not shown over here.
+[05:11] So let us say the voltage which is applied is equal to VX and the current which is supplied
+[05:15] by this voltage source is equal to IX.
+[05:19] Now here this current will also be the base current.
+[05:23] That means this IX is equal to IB.
+[05:27] And here the current which is flowing through the emitter resistor is equal to emitter current.
+[05:33] So this emitter current IE is equal to beta plus 1 times IB.
+[05:39] Or we can say that it is equal to beta plus 1 times IX.
+[05:45] So if we apply the KVL in this outer loop then we can write VX is equal to RPY times
+[05:54] IX plus beta plus 1 times IX times RE that is the voltage drop across this emitter resistor
+[06:04] plus beta plus 1 times IX times RE that is the voltage drop across this resistor plus
+[06:12] IX times RPY.
+[06:15] That means VX divided by IX or the input impedance is equal to 2 times RPY plus beta plus
+[06:24] 1 times RE.
+[06:27] Now we know that this RPY is equal to beta divided by GM.
+[06:31] So approximately we can say that this input impedance is equal to 2 times beta times 1 over
+[06:39] GM plus RE that is equal to 2 times 100 times 1 over GM that is 50 ohm plus 150 ohm.
+[06:51] That is equal to 200 times 200 or we can say that it is roughly equal to 40 kilo ohm.
+[06:59] That means the input impedance which is seen through the two base terminal is equal to 40
+[07:04] kilo ohm.
+[07:05] So this is the equivalent impedance or the input impedance which is seen through the two
+[07:10] base terminals and the voltage across these two terminals is equal to VID.
+[07:17] Now here let us say the current which is flowing through this loop is equal to I and by
+[07:23] applying the KVL we can find the ratio of this VID and the V signal.
+[07:28] So if we apply the KVL in this loop then we can say that V signal divided by 2 that
+[07:34] is equal to I times 5 kilo ohm plus 5 kilo ohm plus R in minus V signal divided by 2.
+[07:46] That means V signal is equal to I times 10 kilo ohm plus R in or we can say that I is
+[07:55] equal to V signal divided by 10 kilo ohm plus R in that means this VID is equal to I times
+[08:08] R in that is R in times V signal divided by 10 kilo ohm plus R in or we can say that this
+[08:19] VID divided by V signal is equal to R in divided by 10 kilo ohm plus R in that is equal to 40 kilo
+[08:30] ohm divided by 50 kilo ohm that is equal to 0.8 that means now if you see the total differential
+[08:39] gain that is AD dash then it is equal to VOD divided by VID times VID divided by V signal.
+[08:48] Now this VOD divided by VID is equal to 50 because we have already found that value and
+[08:55] this VID divided by V signal is equal to 0.8 that means this differential gain AD dash is
+[09:01] equal to 40.
+[09:04] So now we need to find the value of this common mode gain.
+[09:08] Now here while finding this differential gain we have neglected the accuracy of this
+[09:13] character registers because if you see the equation of this differential voltage gain
+[09:17] then it contains the RC divided by 1 over gm plus R e that means even if there is a 1%
+[09:24] inaccuracy in this character register then in the worst case the character register would
+[09:29] be 1.01 times RC or 0.99 times RC.
+[09:34] So because of that the gain will almost remain the same and that is why while finding this
+[09:39] differential gain we have neglected the inaccuracy in this character register but for the
+[09:44] common mode gain we have to consider this inaccuracy because if you see the equation
+[09:49] of this common mode gain then it is equal to delta R divided by 2 R e where this delta
+[09:57] R is the difference between the two character registers and this R e is the output impedance.
+[10:04] Now in the worst case let's say the 1 character register RC 1 is equal to 1.01 times RC and
+[10:11] the second character register RC 2 is equal to 0.99 times RC that means if you see the difference
+[10:17] between them that is delta R then maximum it would be equal to 0.02 times RC that means
+[10:24] in the worst case this common mode gain will be equal to delta R divided by 2 R e that
+[10:32] is equal to 0.02 times RC that is 10 kilo ohm divided by 2 times 200 kilo ohm that means
+[10:43] common mode gain is equal to 5 into 10 to the power minus 4 and if you see the CMRR that
+[10:51] is the ratio of this differential gain AD dash and this common mode gain then it will
+[10:56] be equal to 40 divided by 5 into 10 to the power minus 4 that is roughly equal to 80,000
+[11:06] and if you calculate the CMRR in the DB then in DB this CMRR is equal to 20 log of this
+[11:15] differential gain to the common mode gain that is equal to 20 log of 80,000 which is roughly
+[11:22] equal to 98 DB. So, we can say that when there is an inaccuracy of 1 percent in this
+[11:31] character register and the output impedance is equal to 200 kilo ohm then at that time the
+[11:37] CMRR of this given differential amplifier is equal to 98 DB that means for the given
+[11:44] question the answer is 98 DB.

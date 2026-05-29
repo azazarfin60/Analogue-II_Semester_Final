@@ -1,0 +1,45 @@
+Title: MOSFET  Solved Problem | Quiz # 212
+URL: https://www.youtube.com/watch?v=iyQYYAXBRVU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:17] So in this question, we have been asked to find the output voltage of the given circuit.
+[00:23] Now if you closely observe this circuit, then here this transistor's T1 and T2 are the
+[00:28] n-channel enhancement type of MOSFET.
+[00:32] So this terminal is the gate terminal, while these two terminals are the drain and the
+[00:37] source terminals respectively.
+[00:40] And as you can see over here, in both the transistor's T1 and T2, the gate terminal
+[00:46] is connected with the drain terminal.
+[00:49] So if we talk about the first transistor T1, then for the T1, the VD and the VG is equal
+[00:56] to 5V, while the VS or the voltage at the source terminal is equal to V out.
+[01:04] And we have been given that the threshold voltage of the transistor is equal to 1V.
+[01:10] So for the transistor T1, the voltage VDS is equal to 5V-V out.
+[01:19] Similarly the voltage VGS is also equal to 5V-V out.
+[01:25] So here this voltage VDS is greater than VGS-VT.
+[01:33] That means we can say that this transistor T1 is operating in the saturation region.
+[01:38] And same is to for the second MOSFET.
+[01:41] So for the second MOSFET, if you see, the voltage VD is equal to VG is equal to V0, while
+[01:48] the voltage VS is equal to 0V.
+[01:52] And for the second MOSFET also, the threshold voltage is equal to 1V.
+[01:57] So for this second MOSFET also, the voltage VDS is greater than VGS-VT.
+[02:06] That means we can say that both MOSFET T1 and T2 are operating in the saturation.
+[02:15] That means for this MOSFET, the drain current ID can be given as K times VGS-VT square,
+[02:25] where the K is the device parameter.
+[02:28] Now one more thing if you observe over here, the same drain current is flowing through
+[02:32] the both MOSFETs.
+[02:34] So let's say if drain current ID is flowing through the first MOSFET, then the same drain
+[02:39] current ID will also flow through the second MOSFET.
+[02:43] Because over here, this gate current ID is almost negligible.
+[02:49] That means we can say that for these two MOSFETs, the drain current are equal.
+[02:55] That means we can say that K1 times VGS1-VT square is equal to K2 times VGS2-VT whole square.
+[03:10] Now here we have been given that the K1 is equal to 36 micro-ampere divided by volt square,
+[03:18] while K2 is equal to 9 micro-ampere by volt square.
+[03:23] So from this we can say that 36 times VGS1-VT whole square is equal to 9 times VGS2-VT whole
+[03:36] square.
+[03:38] Or we can say that 4 times this VGS1 is equal to 5-V0-VT that is equal to 1 volt is equal
+[03:49] to VGS2 that is V0-0-1 whole square.
+[03:56] Or we can say that 4 times 4-V0 whole square is equal to V0-1 whole square.
+[04:06] That means 2 times 4-V0 is equal to V0-1 that means 8-V0 is equal to V0-1 and if
+[04:21] you further simplify it, then we will get V0 is equal to 3 volt.
+[04:28] That means for the given circuit, the output voltage V out is equal to 3 volt.
+[04:34] That means for the given question, C is the correct answer.

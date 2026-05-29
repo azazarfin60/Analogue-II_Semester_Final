@@ -1,0 +1,170 @@
+Title: Darlington Amplifier Explained | Darlington Pair as an Amplifier
+URL: https://www.youtube.com/watch?v=gXPipxBfIc4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in the last video we have seen that what is Darlington pair and how it can be used
+[00:22] as a switch.
+[00:24] So in this video we will see that how it can be used as an amplifier.
+[00:29] So this is the circuit of the Darlington amplifier which acts as a very high performance
+[00:34] a meter follower.
+[00:36] So as you can see over here, here the input is added at the base terminal while the output
+[00:42] is taken across the a meter terminal.
+[00:45] So we will do both AC and DC analogies of the given amplifier and first of all let us
+[00:50] do the DC analysis.
+[00:53] So for the DC analysis, these coupling capacitors will act as an open circuit and if you see
+[01:00] the equivalent circuit then it will look like this.
+[01:04] So here this current is the base current while this current over here is the collector
+[01:11] current and the current through this emitter register is the emitter current.
+[01:17] So to find all these currents, first of all let us apply the KBLN this loop.
+[01:23] So applying the KBL we can write voltage BCC minus IB times RB that is the voltage drop
+[01:33] across this resistor RB minus VBED that is the voltage drop across the base and the
+[01:40] emitter of this Darlington pair minus IE times RE is equal to 0.
+[01:48] So this IE times RE is the voltage drop across this emitter register.
+[01:54] So here this voltage VBED is the voltage drop across the base and the emitter of this
+[02:01] Darlington pair that is equal to VBE1 plus VBE2 and here this emitter current is equal
+[02:11] to beta D times IB where beta D is approximately equal to beta 1 times beta 2 where beta 1
+[02:21] and the beta 2 are the current gains of this transistor Q1 and the Q2.
+[02:27] So from this we can write the first expression as voltage VCC minus IB times RB minus VBED
+[02:38] minus beta D times IB times RE that is equal to 0 or from this we can say that this base
+[02:48] current IB is equal to voltage VCC minus VBED divided by RB plus beta D times RE.
+[03:02] So in this way we got the expression of the base current and here this current IC is
+[03:10] equal to beta D times IB because if you are aware this current IC is equal to beta 1
+[03:18] times beta 2 plus beta 1 plus beta 2 times IB or approximately we can say that it is equal
+[03:29] to beta 1 times beta 2 times IB.
+[03:33] So in this way we can find the different currents in the Darlington pair.
+[03:38] Now commercially as this Darlington pair is available in a single package so the value
+[03:43] of the beta D is given for the entire pair but for the academic purpose if we know the
+[03:49] value of this beta 1 and the beta 2 then we can also find the internal collector currents
+[03:56] that is IC 1 and the IC 2 and from this we can find the value of the GM1 as well as the
+[04:03] GM2 because this GM1 will be equal to IC 1 divided by BT while this GM2 will be equal
+[04:12] to IC 2 divided by BT.
+[04:15] So in this way using this DC analysis we can find the different currents of this Darlington
+[04:20] pair and from this we can also find the value of the transcontactance alright.
+[04:27] So now let us do the AC analysis or the small signal analysis of this Darlington pair.
+[04:33] So for the AC analysis these coupling capacitors will act as a short circuit while these DC
+[04:39] voltage source will act as a 0 and then we can replace this Darlington pair by its small
+[04:46] signal model.
+[04:48] So this is the small signal model of the Darlington pair.
+[04:52] So here this is the small signal model of the first transistor Q1 while this is the
+[04:57] small signal model of the second transistor and as you can see over here the collector
+[05:02] of both transistors are connected together.
+[05:06] Now here these input as well as these base resistor RB is connected between the base and
+[05:12] the ground terminal while the output is taken across the emitter terminal.
+[05:17] So this is the small signal equivalent circuit of this Darlington amplifier.
+[05:22] Now because of its very high value of this beta this Darlington amplifier provides the
+[05:28] very high input impedance.
+[05:30] So first of all let us find the input impedance of this Darlington amplifier and for that
+[05:36] first of all let us find the equivalent impedance which is seen through the base terminal.
+[05:41] Let us call that impedance as the ZB.
+[05:45] So here the voltage at this node is equal to VB and as you can observe this base voltage
+[05:51] VB is equal to the input voltage and the current to this base terminal is equal to IB.
+[06:00] So the ratio of this VB and the IB will give us the base resistance.
+[06:05] So to find this base resistance let us apply the KVL in this loop.
+[06:11] Now here this base current IB is equal to IB1.
+[06:16] So if we apply the KVL then we can write this input voltage V in is equal to voltage V
+[06:24] pi1 plus V pi2 plus V out that is the voltage across the emitter terminal.
+[06:34] Now here this V pi1 is equal to IB1 times R pi1 while the voltage V pi2 is equal to IB2
+[06:45] times R pi2 because here this current is equal to IB2 and this voltage V out is equal to
+[06:55] this IE2 times RE because here this current is equal to IE2.
+[07:02] Now if you observe over here this current is equal to IE1 and clearly you can see this
+[07:09] IB2 is equal to IE1 that is equal to beta1 plus 1 times IB1 and this emitter current
+[07:19] I2 is equal to beta2 plus 1 times IB2 which is equal to beta2 plus 1 times beta1 plus
+[07:30] 1 times IB1.
+[07:34] So let us put the value of this IB2 and IE2 in this expression that means this input
+[07:40] voltage V in is equal to IB1 times R pi1 plus beta1 plus 1 times IB1 times R pi2 plus
+[07:54] beta1 plus 1 times beta2 plus 1 times RE or we can say that this input voltage is equal
+[08:03] to IB1 times R pi1 plus beta1 plus 1 times R pi2 plus beta1 plus 1 times RE.
+[08:20] Now as the value of beta1 and beta2 is very high so approximately we can say that this
+[08:26] beta1 plus 1 is equal to beta1.
+[08:30] Similarly this beta2 plus 1 is equal to beta2 and this input voltage V in is same as the
+[08:38] base voltage.
+[08:40] So we can say that the voltage FB divided by IB or the base resistance ZB is equal to
+[08:47] R pi1 plus beta1 times R pi2 plus beta1 times beta2 times RE.
+[08:57] So this will be the exact expression of the base resistance but here this first term
+[09:03] is much less than the second and the third term that means here we can neglect this first
+[09:10] term.
+[09:11] Apart from that here we can write this R pi2 as beta2 divided by GM that means we can
+[09:17] write this base resistance ZB1 times beta2 divided by GM2 plus beta1 times beta2 times
+[09:28] RE and as we are aware this betaD is approximately equal to beta1 times beta2 that means we can
+[09:37] say that this base resistance ZB is equal to betaD times 1 over GM2 plus RE. So if you
+[09:49] neglect the first term then approximately this base resistance can be given by this expression.
+[09:56] Now typically as the value of this betaD is very high so the base resistance of this
+[10:02] Darlington amplifier is also very high. Let's say the value of the betaD is 10,000 and
+[10:11] if this term is equal to 100 ohm then this betaD times this expression will be equal to
+[10:18] 10 to the power 6 ohm or we can say that it is equal to 1 mega ohm. So as you can see
+[10:25] for this Darlington amplifier the value of the base resistance is very high. So now
+[10:31] we can replace this entire portion which is on the right hand side of this base terminal
+[10:36] by the ZB that means if we see the equivalent circuit then it will look like this.
+[10:43] So now the input impedance which is seen from the input terminal is the parallel combination
+[10:50] of this RB and the ZB that means input impedance is equal to RB parallel ZB where ZB can
+[10:59] be approximated given as betaD times 1 over GM2 plus RE. Now usually when this Darlington
+[11:11] pair is used as an amplifier then this base resistor RB is also very high and because
+[11:18] of that this input impedance of this Darlington amplifier is also very high.
+[11:23] Now similar to the voltage follower the voltage gain of this amplifier is close to unity.
+[11:30] So now let us find out the voltage gain. So the voltage gain is the ratio of the output
+[11:36] voltage to the input voltage right. So here this output voltage is equal to IE2 times
+[11:44] RE that is the voltage drop across this emitter resistor while the input voltage is the
+[11:51] summation of voltage drop across each element and as we have seen earlier the input voltage
+[11:58] can be given by this expression that means input voltage V in is equal to IB1 times
+[12:06] Rp1 plus beta1 plus 1 times Rp2 plus beta1 plus 1 times beta2 plus 1 times RE and as we
+[12:20] have seen earlier approximately it can be given as IB1 times betaD times 1 over GM2 plus
+[12:28] RE. Similarly this emitter current I2 is equal to betaD times IB1 right. So from this
+[12:42] we can say that this voltage gain that is V out divided by V in is equal to betaD times
+[12:49] IB1 times RE divided by betaD times IB1 times 1 divided by GM2 plus RE or we can say
+[13:05] that this voltage gain is equal to RE divided by 1 over GM2 plus RE. Now typically the value
+[13:12] of this 1 over GM2 is much less than the emitter resistor and because of that the voltage gain
+[13:24] of this amplifier is close to unity. So in this way we can also find the voltage gain
+[13:31] of this Darlington amplifier. Now if you look this term then it looks like the voltage
+[13:37] divider right because this voltage gain is equal to V out divided by V in which is equal
+[13:44] to RE divided by 1 over GM2 plus RE. So based on that if you draw the equivalent circuit
+[13:53] then it will look like this where this RX is approximately equal to 1 over GM2. So this
+[14:01] is the equivalent circuit of the amplifier which is seen from the output side and using
+[14:06] this circuit we can easily find the output impedance of this Darlington amplifier. That means
+[14:13] the output impedance is the equivalent impedance which is seen from the output terminal and
+[14:19] to find that we can consider this input voltage source as C0. So now if you see over here
+[14:27] these two resistors are connected in the parallel connection. That means output impedance
+[14:33] is the parallel combination of this RX and the RE and approximately it is equal to 1 over
+[14:40] GM2 in parallel with RE. Now as I said this 1 over GM2 is much less than the emitter resistor.
+[14:50] So approximately we can say that this output impedance is equal to 1 over GM2.
+[14:57] So similar to the emitter follower the voltage gain of this Darlington amplifier is close
+[15:02] to unity while the output impedance is very low. But this Darlington amplifier provides
+[15:08] the very high input impedance and at the same time it provides the high current gain. So
+[15:14] now for this circuit let us derive the expression of the AC current gain. So here this current
+[15:22] is the input current while the current which is flowing through this emitter resistor
+[15:27] is the output current. So the current gain of this circuit is the ratio of this output
+[15:32] current to the input current. Now here this output current is same as the IE2 right and
+[15:41] if you observe over here this input current gets divided into the two branches. Let us
+[15:48] see inside this current equal to IEQUANBY and in this current is the base current.
+[15:54] So here to find the current gain what we will do first of all we will find the ratio
+[15:59] of this output current to the base current and then we will find the ratio of the based
+[16:05] current to the input current. So in this way we will find the output current to the input
+[16:11] current. So first of all let us find the ratio of the output current to the base current.
+[16:17] Now here, this base current I b1 is same as the I b. That means here, I b1 is equal to I b,
+[16:27] right? And the output current I o is equal to I 2. Now we know that this output current I o
+[16:35] can be given as beta d times I b1 or it is equal to beta 1 plus 1 times beta 2 plus 1 times
+[16:46] I b1, right? So we can say that this output current to the base current I b is equal to
+[16:54] beta 1 plus 1 times beta 2 plus 1 or it is equal to beta d. So this is the ratio of the output
+[17:04] current to the base current. So similarly, now let us find the ratio of the base current to the
+[17:10] input current. And to find that, we can replace the entire portion of the circuit, which is on the
+[17:16] right hand side of this base terminal by its equivalent impedance. And as you are aware, it is
+[17:22] nothing but the base impedance. That means if you see the equivalent circuit, then it will look
+[17:28] like this. So here, this current is the input current, while this current is the base current.
+[17:36] And this base current I b can be found using the current divider rule. That means current I b
+[17:43] is equal to R b divided by R b plus Z b times input current. Or we can say that this I b divided
+[17:53] by input current is equal to R b divided by R b plus Z b, where Z b is approximately equal to
+[18:05] beta d times 1 over J m 2 plus R e. So in this way, we got the ratio of the I b and the input current.
+[18:17] So the overall current gain is equal to output current to the base current times base current to
+[18:24] the input current. That is equal to beta d times R b divided by R b plus Z b. So this is the
+[18:36] expression of the overall current gain. Now, as I said earlier, when this darlington pair is used
+[18:43] as an amplifier, then the value of this base resistor R b is higher or comparable to the base
+[18:49] resistance. So for a moment, if we assume that this R b is equal to Z b, in that case,
+[18:56] this current gain is equal to beta d divided by 2. For example, if beta d is 10,000, then this
+[19:05] current gain is still 5000. So as you can see, this amplifier provides the high current gain.
+[19:12] So in this way, this Darlington pair provides very high input impedance and the low output
+[19:19] impedance. And if we talk about the voltage in the current gain, then it provides very high current
+[19:24] gain and its voltage gain is close to uniting. So because of this amplifier characteristics,
+[19:31] this Darlington amplifier acts as a very good buffer at the low end of mid frequencies.
+[19:37] So I hope in this video, you understood how the Darlington pair can be used as an amplifier.
+[19:44] So if you have any question or suggestion, do let me know here in the comments section below.
+[19:49] If you like this video, hit the like button and subscribe to the channel for more such videos.

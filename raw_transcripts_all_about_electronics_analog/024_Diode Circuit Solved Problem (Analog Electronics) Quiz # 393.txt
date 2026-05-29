@@ -1,0 +1,248 @@
+Title: Diode Circuit Solved Problem (Analog Electronics) | Quiz # 393
+URL: https://www.youtube.com/watch?v=9zvwHxs59QQ
+Source: YouTube Subtitles
+
+[00:06] hey friends welcome to the youtube
+[00:08] channel all about electronics
+[00:10] so in this question we have been asked
+[00:13] to find the voltage between the two
+[00:14] nodes p and q at time t is equal to 60
+[00:17] millisecond
+[00:18] and here all the diodes are ideal diode
+[00:21] so here as you can see the input signal
+[00:24] is the sinusoidal signal and its peak
+[00:26] value is equal to 10 volt
+[00:29] and here
+[00:30] if we compare this 100 pi t
+[00:32] with
+[00:34] 2 pi f t
+[00:35] then here the frequency of oscillation
+[00:37] is equal to 50 hertz
+[00:40] that means time period t is equal to 20
+[00:43] millisecond
+[00:45] that means each cycle will repeat itself
+[00:47] after 20 millisecond
+[00:50] so here given us to find the voltage vpq
+[00:53] at 60 millisecond or equivalently it is
+[00:56] after three cycles
+[00:58] so first of all let us see how the diode
+[01:00] behaves during the positive as well as
+[01:02] the negative half cycle
+[01:04] so here this peak amplitude is equal to
+[01:08] 10 volt and during the negative half
+[01:09] cycle that is equal to minus 10 volt
+[01:13] now during the positive half cycle
+[01:16] this diode will try to conduct because
+[01:18] the anode is more positive than the
+[01:20] cathode
+[01:21] and if this diode is conducting then the
+[01:23] current should flow in this direction
+[01:25] and the same current will also try to
+[01:27] flow through the bottom diode
+[01:30] but if this diode is conducting then the
+[01:32] current should flow in the forward
+[01:34] direction that means the diode at the
+[01:36] bottom is off
+[01:37] and if this diode is off
+[01:39] then the upper diode will also remain
+[01:42] off
+[01:42] because there is no path for current to
+[01:44] flow
+[01:45] now one may assume that the current can
+[01:48] flow through this capacitor but if you
+[01:50] see when this diode is conducting then
+[01:53] it will act as a short circuit since all
+[01:56] these diodes are ideal diode and if it
+[01:58] acts as a short circuit then the both
+[02:00] terminals of the capacitor are at the
+[02:02] same potential
+[02:04] that means this current cannot flow
+[02:05] through the
+[02:06] capacitor that means whenever this
+[02:09] bottom diode is off in this condition
+[02:11] the upper diode will also remain off
+[02:15] now on this side if you see
+[02:17] then the cathode is more positive than
+[02:18] the anode that means the upper diode
+[02:21] will remain off
+[02:23] and now if you see then this bottom
+[02:25] diode is already isolated
+[02:27] so it will also remain off
+[02:30] that means during the positive half
+[02:31] cycle all the four diodes will remain
+[02:34] off
+[02:35] now let us see
+[02:36] how the circuit behaves during the
+[02:38] negative half cycle
+[02:39] so during the negative half cycle
+[02:42] this terminal will become negative and
+[02:44] this terminal will become positive
+[02:46] so now since the anode is more positive
+[02:49] than the cathode so this bottom diode
+[02:51] will become on
+[02:53] and the current will start flowing in
+[02:54] this direction
+[02:56] but in this condition if you see then
+[02:58] the upper diode will remain off
+[03:00] because the current through the diode
+[03:02] cannot flow through this direction
+[03:05] that means the upper diode will remain
+[03:07] off and in this condition
+[03:09] the current will flow through this
+[03:11] capacitor
+[03:12] and due to that this capacitor will
+[03:14] charge up to peak voltage that is equal
+[03:17] to 10 volt
+[03:19] that means during negative half cycle
+[03:21] this capacitor will charge up to 10 volt
+[03:25] now in this side if you see then this
+[03:27] bottom diode will remain off because
+[03:29] this cathode is more positive than the
+[03:31] anode
+[03:32] that means this bottom diode is off
+[03:35] but on the other end the upper diode
+[03:37] will starts conducting
+[03:40] and in this condition the current will
+[03:42] flow through this direction
+[03:44] and during this time
+[03:46] this capacitor will charge up to peak
+[03:48] voltage that is equal to 10 volt
+[03:51] that means during the negative half
+[03:53] cycle both the capacitors will charge up
+[03:55] to peak voltage
+[03:57] so now once again let us see what will
+[03:59] happen during the next positive half
+[04:01] cycle
+[04:03] so now during the next positive half
+[04:04] cycle the voltage across these two
+[04:06] capacitors is equal to 10 volt
+[04:11] now because of this polarity
+[04:13] if you see this diode
+[04:14] then this diode will remain off
+[04:17] because its cathode is more positive
+[04:19] than the anode so due to that this diode
+[04:22] will remain off
+[04:24] now in this condition
+[04:26] we see the voltage at this node
+[04:28] then this voltage vp is equal to
+[04:31] this vi plus 10 volt and of course here
+[04:35] we are assuming that this node is the
+[04:37] reference node
+[04:39] that means this voltage vp is equal to
+[04:42] this input voltage plus 10 volt
+[04:44] now during this next new cycle
+[04:47] the input voltage is changing from 0
+[04:49] volt to 10 volt
+[04:51] that means this vi max is equal to 10
+[04:53] volt while this vi minimum is equal to 0
+[04:56] volt
+[04:56] and therefore this voltage vp will vary
+[05:00] between 10 volt to 20 volt
+[05:02] on the other end this anode is already
+[05:04] at the ground potential
+[05:06] and therefore since the cathode is more
+[05:08] positive than the anode
+[05:10] so this diode will also remain in the
+[05:13] off condition
+[05:14] similarly on the right hand side if you
+[05:16] see
+[05:17] then this voltage vq is equal to -10
+[05:20] volt
+[05:21] and because of that
+[05:23] this upper diode will remain in the off
+[05:25] condition because the voltage at the
+[05:27] anode of this upper diode is equal to
+[05:29] minus 10 volt while the voltage at the
+[05:31] cathode is equal to vi
+[05:34] and during the positive half cycle since
+[05:36] the vi is varying between 0 to 10 volt
+[05:39] so this upper diode will remain in the
+[05:41] off condition
+[05:42] likewise since the vq is equal to minus
+[05:45] 10 volt so the voltage across this lower
+[05:48] diode is also equal to minus 10 volt and
+[05:51] therefore this lower diode will remain
+[05:53] in the off condition
+[05:54] that means once again during the
+[05:56] positive half cycle
+[05:57] all the four diodes will remain in the
+[05:59] off condition
+[06:01] but in this condition if you see the
+[06:02] voltage at the node p and q
+[06:04] then this vp is equal to vi plus 10 volt
+[06:07] while this vq is equal to -10 volt
+[06:10] so now let's see whether these voltages
+[06:13] will change or not during the negative
+[06:15] half cycle
+[06:16] so during this negative half cycle
+[06:19] now the polarity of the input voltage
+[06:20] will change
+[06:22] and in this condition
+[06:24] these two capacitors are already charged
+[06:26] up to 10 volt
+[06:29] so once again if you see
+[06:31] then this voltage vp
+[06:33] is equal to this vi plus 10 volt
+[06:36] and in this condition
+[06:38] these vi is changing from 0 to -10 volt
+[06:42] so once again this bottom diode will
+[06:44] even in the off condition
+[06:46] because at the most
+[06:48] this vi will become -10 volt
+[06:51] that means at this point both the anode
+[06:54] and cathode are at the zero potential
+[06:57] therefore this bottom diode will remain
+[06:59] in the off condition
+[07:01] and since the voltage across this
+[07:02] capacitor is equal to minus 10 volt so
+[07:05] this upper diode will also remain in the
+[07:07] off condition
+[07:09] that means both the upper and the lower
+[07:10] diodes will remain in the off condition
+[07:14] similarly if we see on this side
+[07:17] then the voltage across this lower diode
+[07:19] is equal to minus 10 volt and therefore
+[07:22] it will remain in the off condition on
+[07:24] the other end
+[07:26] these vq is equal to -10 volt
+[07:29] that means for the upper diode the
+[07:31] voltage at the anode is equal to minus
+[07:33] 10 volt
+[07:34] and the voltage at this end is equal to
+[07:37] vi
+[07:38] and during the negative half cycle since
+[07:40] the vi is varying from 0 to minus 10
+[07:42] volt so the voltage at the cathode at
+[07:45] the most can go up to minus 10 volt
+[07:48] and therefore
+[07:49] this upper diode will also remain in the
+[07:52] off condition
+[07:53] that means during the negative half
+[07:54] cycle also this voltage vp is equal to
+[07:58] vi plus 10 volt while the voltage vq is
+[08:00] equal to minus 10 volt
+[08:02] and the same thing will also repeat
+[08:04] during the next cycle
+[08:06] that means after the three cycle if you
+[08:08] see the voltage at time t is equal to 60
+[08:11] millisecond or at this point
+[08:14] then this
+[08:15] vp is equal to vi plus
+[08:18] 10 volt while this vq is equal to -10
+[08:21] volt
+[08:22] and at the beginning since the vi is
+[08:25] equal to 0
+[08:26] so this vp will become 10 volt
+[08:30] and this vq is already equal to minus 10
+[08:32] volt
+[08:34] that means at time t is equal to 60
+[08:36] millisecond
+[08:38] this vpq is equal to vp minus vq and
+[08:42] that is equal to 10 minus minus 10 volt
+[08:46] that is equal to 20 volt
+[08:49] that means after the three cycles
+[08:51] at t is equal to 60 millisecond or at
+[08:53] this point the voltage vpq is equal to
+[08:56] 20 volt
+[08:58] and therefore for the given question the
+[09:00] answer is 20 volt

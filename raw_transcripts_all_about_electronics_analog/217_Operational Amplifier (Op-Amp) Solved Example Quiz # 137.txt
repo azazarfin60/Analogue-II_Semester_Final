@@ -1,0 +1,43 @@
+Title: Operational Amplifier (Op-Amp) Solved Example | Quiz # 137
+URL: https://www.youtube.com/watch?v=panbdy3VUE8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given this op-em circuit and we have been asked to find
+[00:21] the overall voltage gain of the given circuit.
+[00:25] So here, the value of each register is 1 ohm while the value of inductor and the capacitor
+[00:31] are 1 micro-handry and 1 micro-faraday respectively.
+[00:35] So let us find out what is the overall voltage gain of the given circuit.
+[00:40] Now if you look over here, then the first op-em is configured in the non-inverting configuration.
+[00:47] So let's say the output of the first op-em is equal to Vx.
+[00:52] So this Vx will be of the form 1 plus Z2 divided by Z1 times Vin.
+[01:00] So here, this Z2 is equal to R1 while the Z1 is the reactance of the inductor.
+[01:07] That means we can say that the voltage Vx is equal to 1 plus R1 divided by J omega L times
+[01:17] Vin.
+[01:19] And now here, the value of R1 is 1 ohm while the value of inductance is equal to 1 micro-handry.
+[01:27] And this circuit is operated at 10 to the power 6 radian per second.
+[01:33] So from this, we can say that the voltage Vx is equal to 1 plus 1 divided by J times 10
+[01:42] to the power 6 times 10 to the power minus 6 times Vin.
+[01:48] That is equal to 1 plus 1 divided by J times Vin.
+[01:54] Or we can say that it is equal to 1 minus J times Vin.
+[02:01] That means this voltage Vx is equal to 1 minus J times input voltage.
+[02:07] Now this voltage Vx is then given to the second opam.
+[02:13] So if you see over here, then this second opam is configured in the inverting configuration.
+[02:19] So if the input to this opam is Vx, then the output of this opam can be given as V out
+[02:26] is equal to minus Z2 divided by Z1 times Vin.
+[02:31] So in this case, this feedback resistor is equal to R3 while this Z1 is the combination
+[02:37] of this capacitor and the resistor.
+[02:41] So here the value of R2 and R3 is equal to 1 ohm while the value of capacitance is equal
+[02:50] to 1 micro-faraday.
+[02:52] That means output voltage V out is equal to minus R3 divided by R2 plus 1 by J omega
+[03:01] C times Vx.
+[03:05] That means V out is equal to minus 1 divided by 1 plus 1 divided by J times 10 to the power
+[03:14] 6 times 10 to the power minus 6 times Vx.
+[03:20] Or if you further simplify it, then we can say that this V out is equal to minus 1 divided
+[03:27] by 1 plus 1 by J times Vx.
+[03:32] That is equal to minus 1 divided by 1 minus J times Vx.
+[03:38] And we know that Vx is equal to 1 minus J times Vin.
+[03:44] That means we can say that V out is equal to minus 1 divided by 1 minus J times 1 minus
+[03:52] J times Vin.
+[03:55] That means V out divided by Vin is equal to minus 1.
+[04:01] So from this we can say that for the given circuit, the voltage gain is equal to minus 1.

@@ -1,0 +1,87 @@
+Title: Quiz # 191 (Op-Amp - Schmitt Trigger)
+URL: https://www.youtube.com/watch?v=nO2wjsvh2ww
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All-Avul electronics.
+[00:16] So in this question, we have been given this smith trigger circuit and here we have been
+[00:21] given that the saturation levels of the OPMR plus minus 5 volt.
+[00:27] And here we have been asked to find the value of the SR1 whenever the hysteresis width
+[00:31] is equal to 500 milli volt.
+[00:35] Now if you see this circuit, then it is the non-inverting smith trigger.
+[00:39] And here let's say this resistor is equal to R2 and the saturation levels of the OPMR
+[00:46] plus minus VZ.
+[00:49] So the hysteresis width of this smith trigger, that is the difference between the upper and
+[00:53] the lower threshold voltage can be given as R1 divided by R2 times plus VZ minus R1
+[01:04] divided by R2 times minus VZ, which is the difference between the upper and the lower
+[01:11] threshold voltage.
+[01:13] That is equal to 2 times R1 divided by R2 times VZ.
+[01:19] Now here the value of the saturation voltage is equal to plus minus 5 volt, while the
+[01:24] value of the R2 is equal to 20 kilo ohm.
+[01:28] And here we have been given that the hysteresis width is equal to 500 milli volt.
+[01:34] So from this we can say that the value of R1 is equal to R2 times VH divided by 2 times
+[01:43] VZ.
+[01:46] That is equal to 20 kilo ohm times 0.5 volt divided by 2 times 5 volt.
+[01:54] And that is equal to 1 kilo ohm.
+[01:58] That means for the given equation, the value of R1 should be equal to 1 kilo ohm.
+[02:03] But some of you might be wondering how we got the expression for this hysteresis width.
+[02:09] So on the main channel, I have already discussed about this inverting and the non-inverting
+[02:13] smith triggers in the detail.
+[02:15] And I have also made the separate videos for the examples based on this smith trigger.
+[02:20] So for more information you can check that video.
+[02:23] But here for the sake of completeness, let me just quickly derive this expression.
+[02:29] So like I said, this smith trigger is the non-inverting smith trigger.
+[02:34] So in this smith trigger, there will be a transition from the low voltage to the high voltage
+[02:39] whenever the input voltage crosses the upper threshold voltage.
+[02:42] And similarly, there will be a transition from the high voltage to the low voltage whenever
+[02:47] the input voltage goes below this low voltage.
+[02:51] So with reference to the given circuit, there will be a transition in the output whenever
+[02:55] the voltage at this end changes.
+[02:58] So let's say the voltage at this end is equal to VX.
+[03:02] Now whenever this VX is greater than 0, at that time the output voltage will be equal
+[03:08] to positive saturation voltage.
+[03:10] And similarly, whenever the VX is less than 0, at that time the output voltage will be
+[03:16] equal to minus VZ.
+[03:19] So basically the voltage at this node decides the output of this smith trigger.
+[03:25] So initially let us assume that the output of the smith trigger is equal to minus VZ.
+[03:31] And there will be a transition in the output whenever this voltage VX becomes greater than
+[03:36] 0.
+[03:38] And the input voltage at which this VX becomes greater than 0, that input voltage is known
+[03:43] as the upper threshold voltage.
+[03:46] So first of all, let us find the expression for this upper threshold voltage.
+[03:50] And for that, first of all let us write down the KCL at this node.
+[03:55] So applying the KCL at this node, we can write voltage V in minus VX divided by R1, that
+[04:02] is equal to voltage VX minus V out divided by 20 kilo ohm.
+[04:07] And let us say that is equal to R2.
+[04:10] Now here initially we are assuming that the output voltage V out is equal to minus VZ.
+[04:17] And here there will be a transition in the output whenever this VX becomes greater than
+[04:21] or equal to 0.
+[04:23] And like I said at that time the input voltage will be equal to upper threshold voltage.
+[04:29] So we can say that whenever the output voltage goes from minus VZ to plus VZ at the
+[04:35] time, the required voltage VX should be greater than or equal to 0.
+[04:41] And for that the required input voltage should be greater than or equal to upper threshold
+[04:45] voltage.
+[04:48] So considering this, we can say that in this expression there will be a transition in
+[04:52] the output whenever the input voltage is greater than or equal to upper threshold voltage.
+[04:58] So here this V in is equal to upper threshold voltage and there will be a transition whenever
+[05:04] the VX is equal to 0.
+[05:07] So if you write down this expression then we can write this upper threshold voltage minus
+[05:12] 0 divided by R1 that is equal to 0 minus V out divided by R2.
+[05:19] And like I said initially the V out is equal to minus VZ.
+[05:23] That means we can say that the upper threshold voltage divided by R1 that is equal to minus
+[05:29] of minus VZ divided by R2.
+[05:33] That means the upper threshold voltage is equal to R1 divided by R2 times VZ.
+[05:44] And there will be a transition in the output whenever this VX becomes less than 0.
+[05:50] And for that the required input voltage is known as the lower threshold voltage.
+[05:55] So in this same expression if we put V out is equal to plus VZ and VX is equal to 0.
+[06:02] And if we find the expression for the input voltage then that input voltage will be equal
+[06:06] to the lower threshold voltage.
+[06:09] And if you find the expression then this lower threshold voltage VLT will come out as minus
+[06:15] R1 divided by R2 times VZ.
+[06:20] So the hysteresis width which is the difference between this upper and the lower threshold
+[06:24] voltage will come out as 2 times R1 divided by R2 times VZ.
+[06:30] So in this way we got the expression for this hysteresis width.
+[06:35] And if you want more information then you can check the video on the Smith trigger on our
+[06:39] main channel.
+[06:41] So for the given question whenever the R1 is equal to 1 kilo ohm at that time the hysteresis
+[06:46] width is equal to 5.8 milli volt.
+[06:49] That means the required value of the R1 should be equal to 1 kilo ohm.

@@ -1,0 +1,154 @@
+Title: Operational Amplifier: Non-Inverting Op-Amp and Op-Amp as Buffer (Op-Amp as Voltage Follower)
+URL: https://www.youtube.com/watch?v=uyOfonR_rEw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:22] So in this video, we are going to talk about the non-inverting op-amp configuration and
+[00:26] we will see how to use this op-amp as a voltage follower.
+[00:30] Now in the last video, we had seen the inverting op-amp configuration and in that configuration,
+[00:34] we had seen that using the negative feedback, we can control the gain of this op-amp.
+[00:39] And in that configuration, we have applied the input to this inverting terminal of the
+[00:43] op-amp and we have grounded the non-inverting terminal.
+[00:47] Now let us see what happens when we apply this input to this non-inverting terminal.
+[00:51] So let's say we have applied the input to this non-inverting terminal and we have grounded
+[00:56] this inverting terminal.
+[00:57] So this kind of configuration is known as a non-inverting op-amp configuration because
+[01:02] here the output and input are in a phase.
+[01:05] So now for this configuration, let us find the relation between this output and the input
+[01:10] voltage.
+[01:11] So now before we find the relationship between the output and input voltage, let me read
+[01:15] the same circuit so that you can have a better idea about the circuit.
+[01:19] So here I have read on the same circuit in a different way.
+[01:23] So here we have applied the input to this non-inverting input terminal and we have a feedback
+[01:28] resistance RF between the output and the inverting input terminal.
+[01:33] And if you see here, the one end of this resistance R1 is connected to the resistance RF and
+[01:38] another end of this resistor R1 is connected to the ground.
+[01:42] So if you see here, the fraction of output voltage is going as a feedback to this inverting
+[01:47] input terminal.
+[01:48] So let us say here at this point the voltage is Vx and this Vx voltage is going as a feedback
+[01:56] to this inverting input terminal.
+[01:58] Now using the voltage divider rule, we can say that this voltage Vx that is equal to
+[02:04] R1, dR by R1 plus RF into V out.
+[02:10] So this voltage will be going as a feedback to this inverting input terminal.
+[02:15] So at this point also the voltage will be equal to Vx.
+[02:19] Now in the last video we had seen that whenever we are using this op-em in a negative feedback
+[02:24] configuration, then there will be a virtual shot between the both the input terminals of
+[02:29] this op-em.
+[02:30] It means that whatever voltage that appears at one end of this input terminal, the same
+[02:34] voltage will appear at the another end of the input terminal.
+[02:38] It means that V plus that is equal to V minus and that is because of this virtual shot between
+[02:44] this non-inverting and the inverting input terminal.
+[02:47] So here in this configuration we are applying the input voltage to this non-inverting terminal.
+[02:53] That means V plus that is equal to V in.
+[02:56] So because of this virtual shot at this inverting input terminal also the voltage should be
+[03:01] equal to V in.
+[03:03] That means V minus should be equal to V in and we know that V minus that is equal to Vx.
+[03:10] So we can write this input voltage V in that is equal to R1 nearby R1 plus RF into V
+[03:20] out.
+[03:21] Or we can say that V out nearby V in that is equal to R1 plus RF nearby R1 that is equal
+[03:32] to 1 plus RF nearby R1.
+[03:37] So this will be the closed loop gain of this non-inverting opem configuration.
+[03:43] So in non-inverting opem configuration the relation between the output and input is equal
+[03:48] to 1 plus RF nearby R1.
+[03:51] So in this non-inverting opem configuration also just by controlling the value of this
+[03:56] RF and R1 we can control the gain of this opem.
+[03:59] But in this non-inverting opem configuration the output and input will have a same phase.
+[04:05] So let's say if I apply one volt of DC signal at this non-inverting input terminal and
+[04:10] if I take value of R1 is 1 kilo ohm then my gain of this opem will be equal to 1 plus
+[04:17] 2 nearby 1 that is equal to 3.
+[04:20] So at the output I will get 3 volt of DC signal.
+[04:25] Or instead of DC voltage let's say if I apply a one volt of sinusoidal signal and if
+[04:30] I have a value of RF as 2 kilo ohm and R1 as 1 kilo ohm then at the output I will get
+[04:36] a 3 volt of amplified DC signal which is having a same phase with respect to input signal.
+[04:43] So in this non-inverting opem configuration just by controlling the value of this feedback
+[04:47] resistance RF and R1 we can control the gain of this opem and in this configuration the
+[04:52] output and input are in a phase.
+[04:55] So this is all about the non-inverting opem configuration.
+[04:58] Now here the question is what is the advantage of this non-inverting opem configuration
+[05:03] over this inverting opem configuration because if you see both the configurations in both
+[05:07] the configurations we can control the gain using this feedback resistance RF and R1.
+[05:13] So let us find out some of the advantages of non-inverting opem configuration over
+[05:17] this inverting opem configuration.
+[05:19] Now one of the obvious advantage of this non-inverting opem configuration is that the output
+[05:23] and input both are in a phase.
+[05:26] While in case of this inverting opem configuration there is a 180 degree phase shift between the
+[05:30] output and the input voltage.
+[05:32] Apart from this if you see this non-inverting opem configuration then in this configuration
+[05:37] the input impedance of the circuit is very high and if we consider the ideal opem then in
+[05:42] that case the input impedance of this circuit is infinite.
+[05:47] While in case of this inverting opem configuration the input impedance depends upon the value of R1.
+[05:53] So if we consider the ideal opem then in that case the input impedance of this inverting
+[05:58] opem will be equal to R1.
+[06:01] So now let us derive the expression for this input impedance in case of this inverting
+[06:05] as well as the non-inverting opem configuration.
+[06:08] So now if you see the inverting opem configuration then in this configuration the input impedance
+[06:13] is the impedance that is seen through this voltage source within or in another words we
+[06:17] can say that the input impedance of this configuration is equal to the input voltage
+[06:24] divided by the current that is going into the circuit.
+[06:27] So let us say the current I in is going into this circuit.
+[06:31] So now here the ratio of input voltage divided by this input current will give us the input
+[06:36] impedance of this configuration.
+[06:39] Now we know that in this inverting opem configuration this node will act as a virtual
+[06:44] ground because here this non-inverting terminal is already grounded.
+[06:48] So we can say that this I in that is equal to V in dR by R1 or we can say that R1 that
+[06:57] is equal to V in dR by I in.
+[07:01] Now we know that V in dR by I in is equal to input impedance.
+[07:06] So we can say that the input impedance of this inverting opem configuration is equal to R1.
+[07:13] So the input impedance of this configuration depends upon the value of R1.
+[07:17] So let us say if value of R1 is very low then in that case the input impedance of the
+[07:22] circuit will be low.
+[07:23] So similarly let us find the input impedance of this non-inverting opem configuration.
+[07:28] So in this non-inverting opem configuration also the input impedance is the impedance
+[07:32] that is seen through this voltage source V in.
+[07:35] So let us once again assume that current that is being supplied by this voltage source
+[07:39] is I in and the ratio of this V in dR by I in will give us the input impedance of this
+[07:47] non-inverting opem configuration.
+[07:49] So now if we consider this opem as ideal opem then there will not be any current that is
+[07:54] going into this inverting and the non-inverting terminals or we can say that this input current
+[08:01] I in that is equal to approximately 0.
+[08:05] And hence we can say that the input impedance is equal to infinite.
+[08:09] So now in any circuit whenever we have a very high input impedance then that will ensure
+[08:14] that the source that is connected to that circuit will not be get loaded.
+[08:18] So let us understand this point.
+[08:20] So let us say we have one voltage source V as and it is having a source resistance R as
+[08:27] and it is connected to one circuit and this circuit as a input impedance Z in.
+[08:33] So now whenever the value of this input impedance is comparable to the value of this RS then in
+[08:39] that case the voltage that appears across the two terminal of the circuit will be equal
+[08:43] to Z in dR by Z in plus RS into Vs and Z in is equal to RS then the value of voltage
+[08:52] V will be equal to Vs by 2.
+[08:55] So only half of the voltage will appear across this circuit.
+[08:59] So in any circuit the value of input impedance should be very high.
+[09:03] So that whatever voltage that is being applied to that circuit will entirely appear across
+[09:08] that circuit.
+[09:10] So in this case of non-inverting open configuration as the input impedance is approximately equal
+[09:14] to infinite or in practical case it is very high.
+[09:18] So whatever voltage that is applied to that circuit will entirely appear across that circuit.
+[09:24] So that is the advantage of this non-inverting open configuration.
+[09:27] Now in this non-inverting open configuration let us say we have RF that is equal to 0 and
+[09:33] R1 that is equal to infinity then the circuit will look like this.
+[09:39] So this circuit is known as the open as a voltage follower circuit or open as a buffer.
+[09:45] So here we have shorted this output terminal with this invading open terminal.
+[09:51] So at this point voltage will be equal to V out and because of the feedback V minus
+[09:58] that is equal to V plus or we can say that because of the feedback we have a virtual short
+[10:03] between this invading and the non-inverting open terminals.
+[10:07] So we can say that V minus will be equal to V in or we can say that V in will be equal
+[10:14] to V out.
+[10:15] So it means that whatever voltage that is applied to this non-inverting open terminal the
+[10:21] same voltage will appear at the output of this open.
+[10:25] So we can say that the output voltage follows the input voltage and that is why this circuit
+[10:30] is known as the voltage follower circuit.
+[10:33] So the characteristic of this circuit is that the input impedance of this circuit is very
+[10:38] high or ideal it is infinite and the output voltage will be equal to input voltage.
+[10:45] So because of these two characteristics this circuit is also known as the buffer circuit
+[10:50] because it will pass whatever input that is coming to it as it is and it will provide
+[10:55] the very high input impedance.
+[10:57] So using this buffer circuit we can isolate the two different circuits and at the same
+[11:01] time we can ensure that whatever voltage that is appearing at the output of the one circuit
+[11:07] will appear at the input of the another circuit and that is particularly useful when we have
+[11:12] a low input impedance in one circuit.
+[11:14] So I hope in this video you understood the non-inverting open configuration and the advantage
+[11:19] is of this non-inverting open configuration over the inverting open configuration and how
+[11:23] to design the voltage follower or the buffer circuit using this open.
+[11:27] So if you have any question or suggestion, do let me know in the comment section below.
+[11:31] If you like this video hit the like button and subscribe to the channel for more such
+[11:35] videos.

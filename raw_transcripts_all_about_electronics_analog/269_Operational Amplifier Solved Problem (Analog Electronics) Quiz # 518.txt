@@ -1,0 +1,84 @@
+Title: Operational Amplifier Solved Problem (Analog Electronics) | Quiz # 518
+URL: https://www.youtube.com/watch?v=Bpo35HJ1S6Y
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this open-based circuit and here we have been given
+[00:16] that all the opems in the given circuit are the ideal opems.
+[00:20] Moreover here we have been also given that the value of this Vx is equal to 0.5 mV.
+[00:27] So here in the steady state condition, we have been asked to find the value of the output
+[00:32] voltage.
+[00:33] So let us find that.
+[00:36] So here let us say this is the first opem and this is the second opem.
+[00:41] So if we see over here that in the first opem is negative terminal, is connected to the
+[00:47] ground terminal via this 100 ohm resistor.
+[00:50] While on the positive terminal, this Vx voltage is applied.
+[00:54] And moreover here we have the positive feedback from output to the input side.
+[01:00] That means here in the first opem, we cannot apply the concept of the virtual ground.
+[01:05] Or we can say that this first opem will act as a comparator.
+[01:10] So for the first opem, here is V- or the voltage at the inverting terminal will be equal
+[01:16] to 0 volt.
+[01:19] On the other end, if we see the voltage at this V plus or this positive terminal, then
+[01:24] that is equal to this minus Vx plus Vy, where this Vy is the voltage at this node.
+[01:32] So here this voltage Vy is equal to 100 ohm divided by 100 ohm plus 99.9 kilo ohm times
+[01:44] V out.
+[01:46] Or we can say that that is equal to 0.1 kilo ohm divided by 100 kilo ohm times V out.
+[01:55] That means we can say that this Vy is equal to this V out divided by 1000.
+[02:02] So initially when the circuit is turned on at that time, this V out will be equal to 0.
+[02:09] And therefore this Vy will be also equal to 0.
+[02:13] So at that time, if we see this voltage V plus, then that is equal to minus Vx.
+[02:19] Or we can say that that is equal to minus 0.5 milli volt.
+[02:24] That means whenever the circuit is just turned on at that time, this V minus is greater
+[02:30] than V plus.
+[02:32] And therefore at that time, the output of the first opem will be equal to minus Vz.
+[02:39] So now this voltage will be applied to the second opem.
+[02:44] So now if you see the second opem, then that is nothing but the integrator.
+[02:50] And we know that the output of the integrator can be given as minus 1 divided by RC times
+[02:57] integration V in times dT.
+[03:01] So in this case, that is equal to minus 1 divided by this 100 nanofaraday times 20 kilo
+[03:09] ohm times integration minus Vz times dT.
+[03:15] Or we can say that that is equal to 500 times this Vz times E.
+[03:23] So as you can see, as this time T increases, then this output voltage V out will increase.
+[03:30] And we have seen that this voltage Vy is equal to this V out divided by 1000.
+[03:38] That means as the V out increases, then this voltage Vy will also increase.
+[03:43] And this voltage V plus is equal to minus Vx plus Vy.
+[03:49] So as this voltage Vy increases, then this voltage V plus will also reduce.
+[03:55] And whenever this voltage Vy will become 0.5 millivolt at that time, this V plus will
+[04:03] become 0 volt.
+[04:05] And now as this voltage Vy will become more than 0.5 millivolt at that time, this V plus
+[04:11] will be greater than V minus.
+[04:14] So this will happen whenever this Vy is more than 0.5 millivolt.
+[04:20] But from this equation, we can say that that will happen whenever this V out will process
+[04:27] 0.5 volt.
+[04:28] So graphically if we see, and from starting the circuit, the output voltage will look
+[04:33] like this.
+[04:34] That means the gradually, the output voltage will increase and it will rise to the 0.5
+[04:40] volt.
+[04:41] And as soon as it goes beyond the 0.5 volt, then this V plus is greater than the V minus.
+[04:49] And in this condition if we see, then the output of the first comparator will become
+[04:54] plus Vz.
+[04:56] So now the input to this integrator will be equal to plus Vz.
+[05:01] And in this condition if we see, then the output of the integrator will be equal to
+[05:07] this 0.5 volt minus 1 divided by Rc times integration V in times dt.
+[05:15] Or we can see that that is equal to 0.5 volt minus Vz times finite volt times t.
+[05:25] That means from this point, now the output voltage will start reducing.
+[05:30] So we have seen that this voltage V plus is equal to minus Vx times Vy.
+[05:37] And this voltage Vy is equal to V out divided by 1000.
+[05:42] So now as this output voltage V out reduces, so this V plus will also start reducing.
+[05:49] And once this Vy voltage goes below the 0.5 milli volt at that time, once again this
+[05:55] V plus will be less than 0 volt.
+[05:59] Here in this condition, now this V minus will be more than the V plus.
+[06:05] That means as soon as this Vy goes below the 0.5 milli volt, then this V minus will become
+[06:11] more than V plus.
+[06:13] And once again, the output of this first comparator will become minus Vz.
+[06:18] And from the output perspective, we can say that as the output voltage slightly goes below
+[06:23] the 0.5 volt, then this V minus will once again become more than V plus.
+[06:29] And the output of the first comparator will become minus Vz.
+[06:33] That means once again, now the output voltage will start increasing.
+[06:38] So in the actual circuit if we see, then this voltage will be actually very small.
+[06:43] And once again, if the output voltage tries to go below the 0.5 volt, then once again,
+[06:49] the output of the first comparator will become plus Vz.
+[06:53] So in this way, this circuit forces the output voltage to be remain at the 0.5 volt.
+[07:00] That means in the steady set condition if we see, then the output of this circuit is equal
+[07:05] to 0.5 volt.
+[07:07] And from this we can say that for the given circuit, the output voltage is equal to 0.5 volt.

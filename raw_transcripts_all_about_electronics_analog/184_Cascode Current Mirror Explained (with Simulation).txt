@@ -1,0 +1,231 @@
+Title: Cascode Current Mirror Explained (with Simulation)
+URL: https://www.youtube.com/watch?v=x9xt9ChSiow
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will learn about the Casco Current Mirror.
+[00:15] Now in the earlier video of the current mirror, we have seen that there are a couple of issues
+[00:19] with the simple current mirror.
+[00:22] The first is the output impedance.
+[00:24] If you see the output impedance from this end, then it is the output impedance of this
+[00:28] MOSFET M2.
+[00:31] Now many times, this current mirror circuit is used as an active load to drive the other
+[00:36] circuits.
+[00:37] For example, this PMOS current mirror can be used as an active load to drive the common
+[00:43] source amplifier.
+[00:45] And if this current source is ideal, in that case, the output impedance of this current
+[00:49] source will be infinite.
+[00:52] And in that case, the gain of the amplifier circuit is the intrinsic gain.
+[00:57] But when this current mirror circuit is used as an active load, then due to its finite
+[01:02] output impedance, the overall gain of the circuit will reduce.
+[01:06] So in this case, this RO2 is the output impedance of this current mirror, while the RO3 is the
+[01:13] output impedance of this M3, which is seen from this side.
+[01:17] So somehow, if the output impedance of this current mirror circuit can be increased.
+[01:22] For in this case, if RO2 is much greater than RO3, in that case, this amplifier gain
+[01:30] is close to intrinsic gain.
+[01:32] The second issue is, due to the channel and modulation effect, this copied current
+[01:37] ID2 is not the exact replica of this reference current.
+[01:41] So if there is no channel and modulation effect, then as far as this MOSFET M2 remains
+[01:46] in the saturation, then this copied current follows the reference current.
+[01:52] And even if there is a change in the trend to source voltage, then also, this trend current
+[01:57] ID2 should remain constant.
+[02:00] But due to the channel and modulation effect, as the trend to source voltage increases,
+[02:05] then the trend current also slightly increases.
+[02:08] So through a simulation, let me show you the effect of this channel and modulation on
+[02:12] the current mirror circuit.
+[02:15] So here, I have set the same W by L ratio and the other device parameters for this
+[02:20] to MOSFETs.
+[02:22] That means here, the threshold voltage is equal to 0.5V, while the W by L ratio for this
+[02:27] to MOSFET is equal to 1.
+[02:29] Moreover, here the process transcontentance is equal to 200 microampere per volt square,
+[02:35] while the channel modulation parameter is equal to 0.02.
+[02:39] So in this case, let me just run this simulation and let me show you the effect of this trend
+[02:44] to source voltage on the drain current.
+[02:48] So here, currently, the drain current ID is equal to 52 microampere.
+[02:54] Now let me just change this drain voltage and let us see the effect on this drain current.
+[03:00] So here, as I am changing this drain to source voltage, then as you can see, the drain current
+[03:06] ID is increasing.
+[03:08] So earlier, when the VDS was 3.3 volt at that time, the drain current was 52 microampere.
+[03:15] And as soon as this drain to source voltage becomes 5.1 volt, then this drain current is
+[03:20] approximately equal to 54 microampere.
+[03:23] So as you can see, as the drain to source voltage increases, then due to the channel and modulation
+[03:28] effect, this drain current also increases.
+[03:32] So this is the expression of the drain current, including the channel and modulation effect.
+[03:37] Now typically, the current mirror circuit is used in the integrated circuits.
+[03:42] So in the IC, we can fairly assume that the threshold voltage VT, as well as the channel
+[03:47] and modulation coefficient lambda is same for all MOSFETs.
+[03:52] Moreover, here this K2 source voltage is also same for both MOSFETs.
+[03:57] So considering the different W by L ratio for these two MOSFETs, the relationship between
+[04:02] the drain current ID2 and this ID1 can be given by this expression.
+[04:07] We are here, this ID1 is same as the IRF reference.
+[04:12] Now in this expression, if this W by L ratio of these two MOSFETs is same, in that case,
+[04:19] this ID2 is equal to ID1 whenever this VDS2 is equal to VDS1.
+[04:28] That means if this VDS2 is equal to VDS1, in that case only, this copied current is the
+[04:34] exact replica of this reference current.
+[04:37] Now here, this M1 is the diode connected transistor and since the gate and the drain terminals
+[04:44] are connected together, so here this VDS1 is equal to VDS.
+[04:51] Now actually, the voltage at the drain terminal of this M2 depends on the external circuit.
+[04:57] And therefore, it is difficult to control or predict the voltage at this drain terminal.
+[05:03] So basically, there are two issues with the simple current mirror.
+[05:07] One is the moderate output impedance and second is, this copied current is not the exact replica
+[05:13] of this reference current.
+[05:15] Or in other words, it does not exactly follow this reference current.
+[05:20] And these two issues can be resolved using the cascode current mirror.
+[05:24] So step by step, we will understand this cascode current mirror.
+[05:29] Now first, let us add one more MOSFET in series with this simple current mirror.
+[05:34] And let's say, some biasing voltage VB is applied to it.
+[05:38] Now we will shortly see that what should be the value of this VP?
+[05:43] But this circuit will solve two purposes.
+[05:46] First is, it increases the output impedance of this current mirror circuit.
+[05:51] And the second is, for this copied current, it reduces the voltage dependency on this voltage
+[05:56] VDS2.
+[05:57] Now, if you closely observe this M3, then it is the common gate stage.
+[06:03] Because here, this voltage VB is the DC biasing voltage.
+[06:06] So for the AC analysis, it will act as a ground terminal.
+[06:10] And if you see the series connection of this M2 and M3, then it is actually a cascode
+[06:15] connection.
+[06:17] That means if we see the output impedance from this end, then it is approximately equal
+[06:21] to GM3 times R0 3 times R0 2.
+[06:26] And in fact, we have already covered this cascode amplifier in the earlier video.
+[06:31] So for more information, you can check this video on the cascode amplifier.
+[06:35] So with this cascode connection, the output impedance is much greater than R0 2.
+[06:41] That means there is a significant improvement in the output impedance.
+[06:45] The second is, if the basing voltage VB is selected properly, then it is possible to
+[06:50] keep this voltage VDS2 very close to VGS.
+[06:54] And hence, it is possible to make this copied current the exact replica of this reference
+[06:59] current.
+[07:01] So now, let us understand what should be the value of this basing voltage.
+[07:06] So here, if we add to the KVL around this loop, then we can say that this voltage VB
+[07:12] is equal to this voltage VGS3 plus VDS2.
+[07:20] That is, this voltage.
+[07:22] So for simplicity, let us say the voltage at this end is equal to VX and the voltage at
+[07:28] this end is equal to VY.
+[07:31] So clearly, this VX is equal to VGS and this VY is equal to VDS2.
+[07:40] So here, if we want this ID2, same as the I reference, then in that case, this VY should
+[07:48] be equal to VX.
+[07:49] Or in other words, this VDS2 should be equal to VGS.
+[07:56] So here, if we select the value of VB is equal to 2 VGS, then in that case, this VX and
+[08:03] the VY will be very close to VGS.
+[08:07] So let us understand how.
+[08:09] So if we see over here, then this drain current ID can be given by this expression.
+[08:14] So clearly, because of this square term, this drain current is a strong function of this
+[08:20] VGS.
+[08:22] So if we add the voltage VGS2, then the drain current ID2 will start flowing through this
+[08:27] M2.
+[08:28] So of course, the VDS will also play a role in deciding the exit value of this ID2, but
+[08:34] its role will not be as much as the VGS.
+[08:38] So the exit value of the ID2 will depend on the value of this VDS2, but approximately
+[08:43] we can say that this ID2 is very close to I reference.
+[08:48] Now this M3 is also connected in series with this M2.
+[08:52] That means the same current ID2 will also flow through this M2.
+[08:56] Now here, for a time being, we are assuming that the drain terminal of this M3 is connected
+[09:02] to some fixed voltage such that the M3 is already in the saturation region.
+[09:07] So since the same current is flowing through the M3, so intuitively we can say that this
+[09:13] voltage VGS3 should also be very close to VGS.
+[09:18] Now more over, here this VB is equal to 2VGS.
+[09:23] That means 2VGS is equal to this VGS3 plus VDS2.
+[09:31] Or we can say that it is equal to VGS3 plus VY.
+[09:37] Now if the voltage at this end is slightly greater than VGS, in that case, this drain
+[09:43] current ID2 will be more than I reference, right?
+[09:47] That means whenever this VY is greater than VGS, then this drain current ID2 will increase.
+[09:53] And since this VGS3 is equal to VB minus VY, so as the voltage at this end or the VY
+[10:01] will increase, then the VGS3 will reduce.
+[10:05] That says there is a reduction in this voltage VGS3, so it will try to keep the ID2 same
+[10:10] as around I reference.
+[10:12] So in this way, there is a negative feedback.
+[10:15] And in a way, it will try to keep the ID2 same as the I reference.
+[10:20] That means in a way, when we set the value of VB is equal to 2VGS, then it ensures that
+[10:26] this VGS3 and VY are very close to VGS.
+[10:31] And due to that, this ID2 is following this high reference.
+[10:36] So I will also show you the same thing using the simulation.
+[10:39] But first, let us talk about the drain voltage VD3.
+[10:43] Now so far, we have assumed that the voltage VD3 is fixed and it is selected such that
+[10:49] the M3 remains in the saturation.
+[10:51] So to keep the MOSFET M3 in the saturation, this voltage VD3 should be greater than or
+[10:58] equal to this VB-VT.
+[11:02] And this VB is equal to 2VGS.
+[11:05] That means this voltage VD3 should be greater than or equal to 2VGS-VT.
+[11:12] Now if you are aware, then this VGS-VT is equal to overdrive voltage.
+[11:18] So in terms of the overdrive voltage, this voltage VD3 should be greater than or equal to 2 times
+[11:25] this overdrive voltage plus VT.
+[11:28] That means to keep the MOSFET M3 in the saturation, the drain voltage VD3 should be greater than
+[11:33] or equal to 2VGS-VT.
+[11:37] Now if the voltage at the drain terminal of this M3 is less than this 2VGS-VT, then the
+[11:43] M3 will operate in the prior region.
+[11:46] But still, this current ID2 will be very close to high reference.
+[11:51] So still, this M2 is operating in the saturation region.
+[11:55] So unless this VD3 drops substantially, this circuit tries to maintain the ID2 very close
+[12:01] to high reference.
+[12:03] But the downside is that if this M3 operates in the triad region, then the output impedance,
+[12:09] which is seen from this side, will also reduce.
+[12:12] That means to get the high output impedance, this M3 should also operate in the saturation
+[12:17] region.
+[12:19] Now in the saturation, if this VD3 is increased further, then of course, this ID2 will also increase,
+[12:25] but it is not as much as it was the case in the simple current mirror.
+[12:29] That means with the increase in this voltage VD3, there is a very small change in this
+[12:34] ID2.
+[12:35] So let us understand the same thing using the simulation.
+[12:40] So first of all, to set the value of VB is equal to 2VGS, we should know that what
+[12:45] is the value of the VGS?
+[12:47] So if we measure the voltage at the descent of this diode-generated transistor, then we
+[12:51] can find the value of the VGS.
+[12:54] So if I just run this simulation, then for a 50 micro-ampere current, the voltage which
+[13:00] we are getting is equal to 1.19V.
+[13:03] And here, the MOSFET parameters are same as the previous case.
+[13:08] So now let us set the value of VB, which is 2 times this value.
+[13:13] So here, the value of the VB is selected to 2.4V, which is very close to 2VGS.
+[13:21] And here, this voltage VD3 is selected such that these M3 remains in the saturation.
+[13:28] So with these values, if I run the simulation, then this current current ID2 is very close
+[13:34] to 50 micro-ampere.
+[13:36] And if you see over here, then the voltage VX and VY are also very close.
+[13:42] So now, let me just change the value of this VD3 and let me show you the impact on this
+[13:47] drain current.
+[13:49] And first of all, let us reduce the value of the VD3 and let us bring this M3 very close
+[13:53] to the diode region.
+[13:55] So as you can see, even if I am reducing the value of the VD3, then also the drain current
+[14:01] ID almost remains same.
+[14:04] On the other hand, if I increase the value of the VD3, then there is a very small change
+[14:08] in this ID2.
+[14:10] That means there is a very small change in this voltage VD3 on this ID2.
+[14:15] The reason is that as we increase the value of the VD3, then of course, the drain current
+[14:20] ID should increase.
+[14:22] And due to the increase in the VD3, the voltage at this end or the VY should also increase.
+[14:28] But as the voltage VY increases, then the voltage VGS3 will reduce.
+[14:33] And due to that, it will try to maintain the drain current ID2 very close to IRF.
+[14:39] That means with the change in the voltage VD3, there is a very small change in the drain
+[14:44] current.
+[14:45] And in a way, this circuit tries to maintain the copied current very close to the reference
+[14:50] current.
+[14:52] So now, the question is, how to generate a precise value of this voltage VB?
+[14:57] Well, it can be generated using this circuit.
+[15:00] So here, one more diode-connected transistor is connected in series with this M1.
+[15:06] And the gate of this M4 is connected to the M3.
+[15:10] Now since the current VG is flowing through the M4 is same as the IRF.
+[15:15] So this voltage VGS4 should also be equal to VGS.
+[15:20] That means if we see the voltage at this end, then it is equal to VGS plus VGS that is
+[15:26] equal to 2VGS.
+[15:29] And exactly, the same voltage is required to bias this M3.
+[15:34] So this circuit is known as the Cascot current mirror.
+[15:37] And using this circuit, it is possible to get the value of the ID2, which is exit replica
+[15:42] of the IRF reference.
+[15:44] Moreover, this circuit also improves the output impedance.
+[15:48] So now, let me just show you the simulation for the same circuit.
+[15:53] So here, the device parameters of all the four MOSFETs are kept same.
+[15:58] And these parameters are same as the previous case.
+[16:01] So if I run this simulation, then you can see this current ID2 is very close to IRF
+[16:07] reference.
+[16:08] And if you observe the voltage at this end, then it is very close to 2.4V.
+[16:14] And here, if I change this voltage VD3, then also there is a very small amount of change
+[16:19] in the ID2.
+[16:22] The only downside of this circuit is that to keep the MOSFET M3 in the saturation, the
+[16:27] voltage and descent or the VD3 should be greater than or equal to 2VGS-VT.
+[16:35] So when such a circuit is used for driving the amplifiers in the IC, then the available
+[16:39] voltage swing for the AC signal will reduce.
+[16:43] And it is particularly important in the ICs where the operating voltages are very low.
+[16:48] So that is the only downside of this Cascot current mirror.
+[16:51] But I hope in this video, you understood the working as well as the advantages of this
+[16:55] Cascot current mirror.
+[16:57] So if you have any question or suggestion, then do let me know here in the comment section
+[17:01] below.
+[17:02] If you like this video, hit the like button and subscribe to the channel for more such
+[17:05] videos.

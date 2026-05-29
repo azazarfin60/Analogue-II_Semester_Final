@@ -1,0 +1,160 @@
+Title: How to Generate a Triangular Wave (Part- 2)
+URL: https://www.youtube.com/watch?v=njbZCui4pDo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the first part of this video, we have seen that how to generate a triangular view using
+[00:21] the A stable multi-vibreter and the integrator circuit.
+[00:25] So in this video, we will see the second method and we will see that how you can generate
+[00:29] a triangular view using the smith trigger and the integrator circuit.
+[00:33] So here is the circuit diagram for the triangular wave generator.
+[00:37] And as you can see, the first part of the circuit is the smith trigger circuit and the second
+[00:42] part of the circuit is the integrator.
+[00:45] And if you observe, there is a feedback from the output of the integrator to the smith
+[00:49] trigger circuit.
+[00:50] So first of all, let us understand the working of this triangular wave generator.
+[00:55] Now if you are aware, this smith trigger is nothing but the comparator with the hysteresis,
+[01:02] meaning that whenever the voltage at this non-inverting node just go above or below this zero
+[01:07] volt, then the output of this comparator will get changed.
+[01:12] And it will change between the positive saturation voltage and the negative saturation voltage.
+[01:19] And these two voltages will act as input for this integrator circuit.
+[01:23] So this integrator circuit integrates this voltage for the finite time and the integrated
+[01:29] voltage will be given as a feedback to this smith trigger circuit.
+[01:34] So initially, let us assume that the output of the smith trigger is equal to positive saturation
+[01:40] voltage.
+[01:41] So in that case, this integrator will start integrating this positive saturation voltage.
+[01:46] So depending upon the value of this R3 and C1, the integrator will integrate this positive
+[01:53] saturation voltage.
+[01:54] And as soon as, this voltage just crosses some threshold voltage, then you will see
+[01:59] a transition in the output of the smith trigger from positive saturation voltage to the negative
+[02:04] saturation voltage.
+[02:05] And once there is a transition from positive to negative saturation voltage, then this
+[02:12] integrator will start integrating through this negative saturation voltage.
+[02:16] And once again, when this integrator reaches some finite threshold voltage, then you will
+[02:22] a transition from the negative saturation voltage to the positive saturation voltage.
+[02:28] So the output of this integrator will decide transition point for this smith trigger.
+[02:33] Now if you observe for this smith trigger there are two inputs at this non-inverting end.
+[02:39] One is the output of this smith trigger itself that is either positive or the negative saturation
+[02:44] voltage and the one input is the output from this integrator circuit.
+[02:49] So if you see the voltage at this non-inverting node it will be a summation due to the voltage
+[02:54] at this node let's say that is V1 and the voltage at this node.
+[03:00] So we can write this V plus as the R2 divided by R1 plus R2 times this voltage V1 plus
+[03:10] R1 divided by R1 plus R2 times Vx.
+[03:15] So basically this expression is written by considering only one voltage source at a time.
+[03:22] So if we consider this voltage source V1 alone at that time we have assumed that this Vx is
+[03:27] equal to 0 and just by using the voltage divider role we can find the voltage at this node.
+[03:35] So this will be the total voltage which will appear at this non-inverting node and whenever
+[03:41] this voltage just goes above or below this 0 volt then you will see a transition in
+[03:47] the smith trigger output.
+[03:48] So initially let us assume that the output of the smith trigger is equal to positive saturation
+[03:53] voltage and in that case let us find out the value of this Vx.
+[03:59] So if we assume that this V1 is equal to Vz in that case this V plus will be equal to
+[04:07] R2 divided by R1 plus R2 times Vz plus R1 divided by R1 plus R2 times Vx and let us equate
+[04:20] this expression to the 0 because whenever this voltage V plus will become 0 you will see
+[04:26] a transition in the output.
+[04:29] So equating this expression to the 0 and solving for Vx we will get the value of Vxs minus
+[04:35] R2 divided by R1 times Vz.
+[04:40] So this will be the one of the threshold voltage which will decide the output of this smith
+[04:44] trigger and if we assume this V1 as a negative saturation voltage that means minus Vz in
+[04:51] that case we will get the second expression.
+[04:54] So let us say this is equal to Vx1 which is the one threshold point and the second threshold
+[04:59] point will be equal to Vx2 which will be equal to R2 divided by R1 times Vz.
+[05:08] So this will be the upper threshold point and this will be the lower threshold point
+[05:13] and in the graph we can say that this is equal to Vx2 and this is equal to Vx1 where Vx2
+[05:20] is equal to R2 divided by R1 times Vz and Vx1 is equal to minus R2 divided by R1 times
+[05:29] Vz.
+[05:31] So whenever the output of the integrator just crosses this Vx2 voltage then you will see
+[05:37] a transition from the negative saturation voltage to the positive saturation voltage and
+[05:42] likewise whenever it crosses this lower threshold voltage then you will see a transition from
+[05:48] the positive saturation voltage to the negative saturation voltage.
+[05:53] Now if you observe the triangular wave voltage is varying between this upper and the lower
+[05:58] threshold voltage.
+[05:59] So we can find the peak to peak voltage from these two voltages that means Vp2p for the
+[06:05] triangular wave will be equal to Vx2 minus Vx1 or we can say that it is equal to 2 times
+[06:14] R2 divided by R1 times Vz.
+[06:17] So this will be the peak to peak voltage for the triangular wave.
+[06:22] Now let us find out the equation of the frequency for this triangular wave.
+[06:27] Now if you see over here the integrator integrates this positive or the negative saturation
+[06:32] voltage for this T by 2 time period.
+[06:35] So we can say that this Vp2p voltage will be equal to minus 1 by Rc times integration
+[06:44] 0 to T by 2 V in times dt.
+[06:49] So this will be the output of the integrator if we integrate the input voltage for the
+[06:54] T by 2 time period.
+[06:56] So in this case the peak to peak voltage will be equal to minus 1 by R3 times C1 multiplied
+[07:04] by minus Vz times T by 2.
+[07:09] And here the value of the peak to peak voltage is equal to 2 times R2 divided by R1 times
+[07:16] Vz.
+[07:17] So if you simplify this expression then you will get T by 2 times 1 by R3 times C1 multiplied
+[07:26] by Vz.
+[07:29] And if you simplify this expression in terms of this time period T then this T will be
+[07:35] equal to 4 times R3 R2 times C1 divided by R1.
+[07:41] Or we can say that the frequency F will be equal to R1 divided by 4 times R3 R2 times
+[07:50] C1.
+[07:51] So this will be the expression of a frequency for the triangular wave.
+[07:56] Now using these expressions let us design one triangular wave which has a specific frequency
+[08:01] as well as the peak to peak voltage.
+[08:04] So let's say we want to design a one triangular wave which has a frequency of 2 kilohertz and
+[08:09] a peak to peak voltage of 7 volts.
+[08:12] So first of all let us find out the value of R2 and R1 which is required to get this
+[08:17] desired peak to peak voltage.
+[08:20] So we know that the peak to peak voltage can be given as 2 times R2 divided by R1 times
+[08:26] Vz.
+[08:28] And here let us assume that the opium which we are using has a saturation voltage of 14
+[08:34] volts.
+[08:36] So from this the ratio of R1 and R2 should be equal to 2 times 14 volts divided by 7
+[08:44] volts which is equal to 4.
+[08:47] That means the ratio of R1 and R2 should be in a proportion of 4.
+[08:51] So let's say R1 is equal to 40 kilo ohm and R2 is equal to 10 kilo ohm.
+[09:00] Now similarly let us find out the value of R3 and C1 which is required to get this 2
+[09:05] kilohertz frequency.
+[09:07] Now we know that the frequency F can be given by the expression R1 divided by 4 times R
+[09:14] 3 R2 times C1.
+[09:17] Now here the frequency F is equal to 2 kilohertz and we already know the value of R1 and R2.
+[09:24] That means R1 is equal to 40 kilo ohm and R2 is equal to 10 kilo ohm.
+[09:31] So here we need to find the value of this R3 and C1 so that we can get the 2 kilohertz
+[09:36] frequency.
+[09:37] So here let us assume that the value of C1 is equal to 0.01 microfaraday.
+[09:43] And let us simplify this expression in terms of R3.
+[09:47] So if we simplify this expression then the value of R3 will come around as 50 kilo ohm.
+[09:54] That means for our design the value of R1 should be equal to 40 kilo ohm while the value
+[10:01] of R2 should be equal to 10 kilo ohm.
+[10:05] And here we have assume C1 as 0.01 microfaraday and from this the value of R3 is equal to
+[10:13] 50 kilo ohm.
+[10:14] So using this values we should get a triangular wave of 2 kilohertz frequency with a peak to
+[10:20] peak voltage of 7 volts.
+[10:23] So let us simulate this circuit using the multi-seam and let us validate our design.
+[10:28] So here I have already connected this circuit according to the design values and for the simulation
+[10:35] here I am using the op-em Lm 3 to 4.
+[10:38] And here I have connected the two probes at the output of this metricer as well as the
+[10:43] integrator.
+[10:44] Now here just one thing to notice the order of this resistor is slightly different from
+[10:51] the schematic which we have discussed earlier.
+[10:54] So anyway let us run this simulation and let us see the output of this triangular wave
+[10:58] generator.
+[11:00] So if we run the simulation then we will get this kind of waveform.
+[11:07] So for a minute let me just stop this simulation.
+[11:11] So first of all let us find out the peak to peak voltage of this triangular wave.
+[11:16] Say if you observe at one end we have a voltage of 4 volt while at the other end we have
+[11:24] a voltage of minus 3.5 volt.
+[11:27] That means the peak to peak voltage is roughly around 7.5 volt.
+[11:31] And now let us also see the frequency of this triangular wave.
+[11:35] So at this end the x-axis is equal to 68.051 millisecond and at this end it is equal to 68.67.
+[11:46] So roughly there is a difference of 0.5 millisecond between these two peaks.
+[11:51] That means the frequency f for this triangular wave generator is equal to 2 kilohertz.
+[11:56] Now here we can tune this peak to peak voltage by changing the value of this R3 and R1.
+[12:03] And according to our schematic by changing the value of R2 and R1.
+[12:08] Now here let me just tune the value of this R3 so that we can get the exit peak to peak
+[12:13] voltage of 7 volt.
+[12:16] So here if I change the value of this R3 from 40 to 45 kilo ohm then we should get a
+[12:23] peak to peak voltage of 7 volt.
+[12:26] So now if you see at one end now the peak to peak voltage is 3.7 volt and at the other
+[12:32] end of the triangular wave it is equal to minus 3.3 volt.
+[12:36] So now the peak to peak voltage is equal to 7 volt.
+[12:40] That means by tuning these two resistors you can get the exit value of desired peak to
+[12:44] peak voltage.
+[12:45] So I hope in this video you understood how you can design a triangular wave generator
+[12:50] using the smith trigger and the integrator circuit.
+[12:54] So if you have any question or suggestion do let me know here in the comment section
+[12:57] below.
+[12:58] If you like this video hit the like button and subscribe to the channel for more such
+[13:02] videos.

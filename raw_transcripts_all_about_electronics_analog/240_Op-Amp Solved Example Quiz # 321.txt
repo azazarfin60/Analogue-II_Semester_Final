@@ -1,0 +1,87 @@
+Title: Op-Amp Solved Example | Quiz # 321
+URL: https://www.youtube.com/watch?v=J7P15cMBero
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this op-amp circuit and in this circuit, these
+[00:16] Xeno diode Z1 and Z2 clamps the output voltage of this op-amp 2 plus minus 5 volt.
+[00:23] Now initially, this switch is in the closed condition and at time T is equal to 0, it
+[00:28] is opened.
+[00:30] So here, we have been asked to find the time T1 at which the state of the output voltage
+[00:35] will get changed.
+[00:38] So first of all, let us see the state of this circuit at time T is equal to 0 minus.
+[00:44] So at time T is equal to 0 minus, this switch is in the closed condition.
+[00:49] That means the voltage at this inverting terminal of the op-amp will be equal to 10 volt.
+[00:53] Let us call this voltage as Vn.
+[00:56] That means Vn is equal to 10 volt.
+[01:00] And let us say the voltage at this positive terminal or the non-interiminal is equal to
+[01:05] Vp.
+[01:07] So this voltage Vp can be given as Vout times 1 kilo ohm divided by 1 kilo ohm plus 4 kilo
+[01:16] ohm.
+[01:17] Or we can say that it is equal to Vout divided by 5.
+[01:22] Now initially, we do not know the state of this output voltage.
+[01:26] But we have been given that this Xenodad is at 1 and Z2, clamps the output voltage to
+[01:31] plus minus 5 volt.
+[01:33] That means this voltage could be the plus 1 volt or the minus 1 volt.
+[01:38] But anyway, at time T is equal to 0 minus, since the voltage Vn is greater than Vp, so
+[01:45] the output voltage Vout will be equal to negative.
+[01:49] Or in this case, this output voltage will get clamped to minus 5 volt.
+[01:56] That means at time T is equal to 0, this Vout is equal to minus 5 volt.
+[02:01] And hence, the voltage Vp will be equal to minus 5 divided by 5 that is equal to minus
+[02:08] 1 volt.
+[02:09] Now, at time T is equal to 0, this switch is getting opened.
+[02:14] So now, this capacitor starts charging.
+[02:18] And because of that, the voltage at this node will start changing.
+[02:22] And at one point, when the voltage at this node is less than minus 1 volt, then there
+[02:27] will be a transition in the output.
+[02:30] So here, we need to find this time T1 at which the transition in the output of this
+[02:35] open will occur.
+[02:37] So as I said, at the time T is equal to 0, this switch will get opened.
+[02:43] And now, this capacitor starts charging.
+[02:46] So now, let us see this portion of the circuit separately.
+[02:51] So here, I have drawn the same portion separately.
+[02:55] So here, the voltage between this to node is actually Vn.
+[03:00] That is, this voltage.
+[03:03] So let's say, the voltage across the capacitor is equal to Vc of T.
+[03:08] That means, this voltage Vn is equal to 10 volt minus Vc of T.
+[03:15] So first of all, let us find this voltage Vc of T.
+[03:18] And based on that, we will find this voltage Vn.
+[03:22] And using that, we will find the time T1.
+[03:26] So initially, this capacitor is unchanged.
+[03:29] That means, this Vc of 0 minus will be equal to 0.
+[03:34] And as you know, the capacitor opposes the instantaneous change in the voltage.
+[03:39] That means, the Vc 0 plus will also be equal to 0 volt.
+[03:44] Now at time T is equal to infinity, this capacitor will act as a open circuit.
+[03:50] And in this condition, the voltage across the capacitor, that is, Vc of infinity will
+[03:56] be equal to 10 volt minus minus 10 volt.
+[04:00] That is equal to 20 volt.
+[04:03] That means, Vc of infinity is equal to 20 volt, while the initial voltage across the
+[04:08] capacitor is equal to 0.
+[04:10] So we can say that this voltage Vc of T is equal to Vc of infinity plus Vc of 0 minus
+[04:21] Vc of infinity times e to the power minus T divided by RC.
+[04:28] That this R is equal to 10 kilo, and this C is equal to 100 microfaraday.
+[04:35] That means, this RC is equal to 1 second.
+[04:39] So if we put the value of this Vc of infinity and the Vc of 0, then we can say that this
+[04:45] Vc of T is equal to 20 volt plus 0 minus 20 times e to the power minus T.
+[04:54] That means, Vc of T is equal to 20 minus 20 times e to the power minus T.
+[05:02] That means, the voltage at this node or Vn of T is equal to n volt minus Vc of T.
+[05:10] That is equal to n minus minus 20 plus 20 times e to the power minus T.
+[05:18] That is equal to minus 10 plus 20 times e to the power minus T.
+[05:24] So this will be the expression of the voltage VnT.
+[05:28] So at time T is equal to 0, this voltage Vn is equal to n volt.
+[05:33] And at time T is equal to infinity, it will become minus 10 volt.
+[05:37] That means, the voltage at this node is going from n volt to minus 10 volt.
+[05:42] And at some point T is equal to T1, it will cross the minus 1 volt.
+[05:48] And wherever it happens, and the output of this open will get changed.
+[05:52] So to find this time T1, let us put the value of this VnT is equal to minus 1 volt.
+[05:58] And let's say it happens at time T is equal to T1.
+[06:03] So from this, we can say that this minus 1 is equal to minus 10 plus 20 times e to the
+[06:11] power minus T1.
+[06:13] That means, at time T is equal to T1, this voltage Vn is equal to minus 1.
+[06:19] Or we can say that 9 divided by 20 is equal to e to the power minus T1.
+[06:25] That means, T1 is equal to natural log of 20 divided by 9.
+[06:32] That is equal to 0.798 seconds.
+[06:36] That means, at this time, the voltage at this node will cross the minus 1 volt.
+[06:42] And hence, there will be a transition in the output voltage from minus 5 volt to the
+[06:47] plus 5 volt.
+[06:48] So we can say that this time T1 is equal to 0.789 seconds.

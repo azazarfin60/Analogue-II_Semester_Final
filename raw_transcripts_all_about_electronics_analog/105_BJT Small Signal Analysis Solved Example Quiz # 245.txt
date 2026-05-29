@@ -1,0 +1,69 @@
+Title: BJT Small Signal Analysis Solved Example | Quiz # 245
+URL: https://www.youtube.com/watch?v=-lFCoADrB5I
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All Our Electronics.
+[00:17] So in this question, we have been given this transistor circuit and in this circuit, the
+[00:21] BJT is used as an amplifier.
+[00:25] So we have been asked to find the voltage gain of the given amplifier circuit.
+[00:29] Now to find the voltage gain, first of all we need to find the small signal equivalent
+[00:33] circuit of the given amplifier.
+[00:36] And for that, we need to replace this BJT by the small signal model.
+[00:41] Now if you see this small signal model, then first of all we need to find the value of
+[00:46] this transconductance.
+[00:48] And this transconductance GM can be given as this character current divided by the thermal
+[00:53] voltage.
+[00:55] Now here, we have been already given the value of the thermal voltage.
+[00:59] That is the KT by Q is equal to 26 milli volt.
+[01:03] But here we need to find the value of the collector current.
+[01:07] So to find the collector current, first of all we need to do the DC analysis.
+[01:12] So for the DC analysis, all these capacitors will act as an open circuit and all the AC
+[01:18] signals can be assumed as a zero.
+[01:22] That means for the DC analysis, if you see the equivalent circuit, then it will look
+[01:26] like this.
+[01:28] So now for this given circuit, let us find the collector current.
+[01:33] Now here we have been given that the base current is negligible.
+[01:38] Or indirectly we can say that the value of beta is very high.
+[01:42] That means here this collector current IC is approximately equal to a meter current.
+[01:49] So first of all, let us find the value of this emitter current.
+[01:52] And for that, let us apply the KVL equation in this loop.
+[01:58] So if we apply the KVL equation, then we can write zero volt minus VBE minus VE minus
+[02:11] of minus 10 volt is equal to zero.
+[02:15] Now here we have been given that the value of VBE is equal to 0.71 volt.
+[02:21] That means we can say that this emitter voltage VE is equal to 10 volt minus 0.71 volt.
+[02:28] And this emitter voltage is equal to IE times RE.
+[02:33] That means IE times RE is equal to 9.3 volt.
+[02:38] Or we can say that this emitter current is equal to 9.3 volt divided by 20 kilo ohm.
+[02:48] That is equal to 0.46 5 milliampere.
+[02:53] So roughly we can say that this current current IC is equal to 0.46 5 milliampere.
+[03:01] That means we can say that this transconductance GM is equal to IC divided by VT.
+[03:08] That is equal to 0.46 5 divided by 26 milliampere.
+[03:14] So that is the value of the transconductance.
+[03:18] So once we know the value of this transconductance, then let us do the AC analysis of the given
+[03:22] circuit and let us find the value of the voltage gain.
+[03:27] So for the small signal analysis, if you see the equivalent circuit, then it will look
+[03:31] like this.
+[03:33] That means here this coupling and the bypass capacitors will act as a short circuit while
+[03:39] this DC voltage source is will also act as a short circuit.
+[03:44] Now here as this bypass capacitor gets short circuited.
+[03:48] So effectively we can say that this emitter terminal is also get short circuited.
+[03:55] That means now this input voltage is connected between the base and the emitter while this
+[04:01] collector resistor is connected between the collector and the emitter terminal.
+[04:06] And we can replace this transistor by the small signal model.
+[04:10] So now if we see the AC equivalent circuit, then it will look like this.
+[04:15] That means the input voltage is connected between the base and the emitter terminal while
+[04:20] this collector resistor is connected between the collector and the emitter terminal.
+[04:25] So now for the given circuit, the V out can be given as minus IC times RC parallel RL
+[04:35] where IC is equal to GM times V pi.
+[04:38] And if you see over here, then this input voltage V in is equal to V pi.
+[04:45] That means we can say that this V out is equal to minus GM times V in times RC parallel
+[04:54] RL. Or we can say that the V out divided by V in is equal to minus GM times RC parallel
+[05:05] RL.
+[05:08] Now here the value of RC and the RL are 10 kilo ohm.
+[05:12] That means V out by V in is equal to minus of 0.465 divided by 26 millivolts times 10 kilo
+[05:22] ohm in parallel with 10 kilo ohm.
+[05:26] That is equal to minus 0.465 divided by 26 times 5000.
+[05:34] And if we calculate the value, then the voltage gain will come out as minus 89.42.
+[05:42] That means we can say that for the given amplifier circuit, the voltage gain V out divided by V
+[05:47] in is equal to minus 89.
+[05:50] That means for the given question, this is the correct answer.

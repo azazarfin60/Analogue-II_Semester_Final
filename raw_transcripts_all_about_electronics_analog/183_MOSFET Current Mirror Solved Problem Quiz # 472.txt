@@ -1,0 +1,53 @@
+Title: MOSFET Current Mirror Solved Problem | Quiz # 472
+URL: https://www.youtube.com/watch?v=85X73dJO6Yw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this current mirror circuit and here we have been
+[00:15] asked to find this voltage VL.
+[00:18] So here if you closely observe this circuit, then here this three transistors forms the
+[00:24] PMOS current mirror.
+[00:26] So as you know in the current mirror circuit, we have one reference transistor and some
+[00:31] reference current source is connected with this reference transistor and through the
+[00:35] current mirror circuit this reference current is copied in the other transistors.
+[00:41] So to copy this current in the other transistors the source and the gate terminals of the other
+[00:45] transistors are connected with this reference transistor.
+[00:49] So if the W by L ratio of this other transistors is same as the reference transistor then
+[00:54] the same drain current will flow through this other transistors. But if this W-Bial ratio
+[01:00] is different, then based on this W-Bial ratio, the drain current will change proportionally.
+[01:06] So let's say this current is equal to i reference or the reference current,
+[01:11] and the current which is flowing through this transistor is equal to i1. So we can say that
+[01:16] this current i1 is equal to the W-Bial ratio of this transistor,
+[01:21] divided by the W-Bial ratio of this reference transistor times reference current.
+[01:25] So in this case, as you can see, the W-Bial ratio of this first transistor is equal to n,
+[01:32] while the W-Bial ratio of this reference transistor is equal to 1. So we can say that
+[01:37] this current i1 is equal to n divided by 1 times i reference, and that is equal to 1 milliampere.
+[01:44] So we can say that this current i1 is equal to 1 milliampere. So similarly, we will find the
+[01:51] current through each transistor, and by finding that eventually, we will find the current through
+[01:56] this 1 kilo ohm resistor, and by multiplying that current with this 1 kilo ohm resistor,
+[02:01] we will get this voltage VL. So now let us find this current i2.
+[02:07] So once again, this current i2 can be given as this W-Bial ratio of the second transistor,
+[02:14] divided by the W-Bial ratio of this reference transistor times reference current.
+[02:18] So here, the W-Bial ratio of the second transistor is equal to 7. So we can say that this current i2
+[02:26] is equal to 7 divided by 1 times i reference, and that is equal to 1 milliampere,
+[02:32] or this i2 is equal to 7 milliampere. So in this way, we also got this current i2.
+[02:39] That means now, this current i1 is equal to 10 milliampere, while this current i2 is equal to 7 milliampere,
+[02:46] and the same current i1 will also flow through this third transistor.
+[02:51] So here, this third and the fourth transistor is forming the endmost current mirror.
+[02:56] So if you see over here, and the gate and the sole stamina of these two
+[03:00] roundistors are connected together, and the reference current which is flowing through
+[03:05] this third transistor is same as the i1. So we can say that this i1 is equal to i3, or that is
+[03:12] equal to 10 milliampere. That means the current which is flowing through this third transistor
+[03:17] is equal to 10 milliampere. So in this way, we know this current i1 i2 and the i3.
+[03:24] That means the i1 and i2 is equal to 10 milliampere, while this i2 is equal to 7 milliampere.
+[03:31] So now, we just only need to know this current i4. So this current i4, n, we given as
+[03:38] the W by L ratio of this fourth transistor, divided by the W by L ratio of this reference
+[03:44] transistor, or in this case, that is the third transistor times the current through the third
+[03:50] transistor. So here, the W by L ratio of this fourth transistor is equal to 5. While the W by
+[03:57] L ratio of this third transistor is equal to 10, and this i3 is equal to 10 milliampere.
+[04:03] So we can say that this current i4 will be equal to 5 milliampere. So in this way,
+[04:09] this current i4 is equal to 5 milliampere. That means the i2 is equal to 7 milliampere, while the
+[04:16] i4 is equal to 5 milliampere. That means the remaining 2 milliampere current will flow through
+[04:21] this 1 kilo ohm resistor. So we can say that this VL is equal to this 1 kilo ohm times 2 milliampere,
+[04:30] but that is equal to 2 volt. That means the voltage VL is equal to 2 volt. That means for the given
+[04:38] question, this voltage VL is equal to 2 volt.

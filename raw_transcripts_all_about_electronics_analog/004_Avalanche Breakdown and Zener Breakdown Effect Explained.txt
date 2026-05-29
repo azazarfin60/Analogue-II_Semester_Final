@@ -1,0 +1,126 @@
+Title: Avalanche Breakdown and Zener Breakdown Effect Explained
+URL: https://www.youtube.com/watch?v=EzlSafjMltc
+Source: YouTube Subtitles
+
+[00:11] Hey friends welcome to the YouTube channel ALL ABOUT ELECTRONICS. In the
+[00:16] previous video we have seen that how the PN Junction diode can be operated in the
+[00:21] forward as well as the reverse bias condition. And we have seen that in the
+[00:25] forward bias condition when the applied voltage is more than this threshold
+[00:29] voltage or the Barrier potential of this PN Junction diode, then the current
+[00:33] starts flowing from the P side through the N side. On the other end in the
+[00:38] reverse bias condition there is a hardly any flow of current from P side to the N
+[00:43] side. But a small amount of reverse saturation current flows from the N side
+[00:47] to the P side. And we had seen that this current flows due to the minority charge
+[00:54] carriers. And then we had seen that even if we increase this reverse bias voltage
+[00:59] then also there is a hardly any change in this reverse saturation current. But
+[01:05] there is a maximum limit on the voltage which can be applied in this reverse
+[01:09] bias condition, and if we apply this voltage beyond this limit then the
+[01:13] suddenly lot of current starts flowing in this reverse direction. So this region
+[01:18] of operation of the diode is known as the breakdown region of operation and
+[01:23] the effect due to which it occurs is known as the Avalanche effect. So let us
+[01:28] understand what exactly happens in this effect and why suddenly current shoots up
+[01:32] after this breakdown voltage. now we know that in the reverse bias
+[01:37] condition the current which we are getting is due to the minority charge
+[01:41] carriers. so in the reverse bias as we increase the applied reverse voltage, the
+[01:46] width of the depletion region will increase and due to that the immobile
+[01:52] ions in this depletion region will also increase. So because of the increase in
+[01:57] this immobile ions, the electric field in the depletion region will become
+[02:00] stronger. And due to this stronger electric field now the minority charge carriers
+[02:06] which are in the vicinity to this depletion region will get accelerated.
+[02:10] And now they can move more quickly through this depletion region and while
+[02:16] moving this free charge carriers can collide
+[02:19] with this silicon atoms. But once the applied voltage reaches the breakdown
+[02:24] voltage then the kinetic energy which is gained by this charge carrier will be
+[02:30] such that they can knock off the bound or the valence electron of this silicon
+[02:34] atoms. so if we see the same thing at the crystal level then the accelerated
+[02:40] electron may collide with the silicon atom and when it has enough kinetic
+[02:44] energy then it can knock out a bound charge or the valence charge of this
+[02:48] atom. so after the collision instead of one electron now we have a two free
+[02:54] electrons. And under influence of the electric field, now these two electrons
+[02:59] can collide with the two more atoms and they can knock out the two more
+[03:03] electrons. Similarly now these four electrons will again collide with the
+[03:08] four more atoms and they can knock out the four more electrons. So due to this
+[03:13] collision the number of free charge carriers in the depletion region will
+[03:17] increase drastically. And due to the increase in this charge carrier, we will
+[03:22] see a sudden jump in the reverse saturation current. so this effect is
+[03:27] known as the Avalanche breakdown effect and the voltage after which it occurs is
+[03:31] known as the breakdown voltage. so, so far as we have seen this Avalanche breakdown
+[03:37] effect is caused by the impact ionization, meaning that the high-energy
+[03:42] charged particle can knock out the bound electrons from the silicon atom and in
+[03:47] this way it creates the electron hole pair. so for the normal diode this region
+[03:53] of operation should be avoided because when the applied voltage is more than
+[03:57] this breakdown voltage then the diode starts conducting in the reverse
+[04:01] direction also. Moreover that if there is no current limiting resistor in series
+[04:06] with this diode then due to the very large current or very high power
+[04:10] dissipation this diode may get damaged. so for the normal diode this region of
+[04:16] operation should be avoided but there are some diodes which are mean to be
+[04:21] used in this breakdown region, and this diode is known as the Zener diode. But in
+[04:28] the Zener diode in the breakdown mechanism is different
+[04:31] from the Avalanche effect and this breakdown mechanism is known as the
+[04:35] Zener breakdown effect. So now let us understand what exactly happens in this
+[04:41] Zener breakdown effect. so unlike the normal diode the p and n-type regions of
+[04:48] the Zener diodes are heavily doped, meaning that the number of impurity
+[04:52] atoms in this p and n region will be more and due to that the number of free
+[04:58] charge carriers in both regions will be more. so here instead of denoting these
+[05:04] two regions by p and n, here these two regions are denoted by the symbol P plus
+[05:09] and n plus. so basically it represents that these two regions are heavily doped
+[05:15] so now due to this heavy doping the width of the depletion region will be
+[05:20] much narrower compared to the normal diode, because now when the electron
+[05:24] diffuses from n side to the P side then it will get recombined very much near to
+[05:29] the junction itself. And moreover that due to this heavy doping this small
+[05:34] depletion region will now have a more number of immobile ions compared to the
+[05:38] normal diode. So due to this now the built-in electric field inside this
+[05:43] depletion region will be much stronger and when this diode is reverse bias then
+[05:49] the external electric field will also get added with this built-in electric
+[05:53] field. And due to that now the electric field in this depletion region will
+[05:58] become very strong. And at one particular voltage it will become so strong that it
+[06:04] can knock out the bound electrons of this silicon atom. So due to this very
+[06:09] strong electric field many charge carriers are generated and due to the
+[06:13] very narrow depletion region they can tunnel through it and they can reach the
+[06:17] other side of the depletion region. So in this way due to the very high electric
+[06:22] field, many charge carriers are generated in this depletion region and
+[06:26] suddenly a lot of current starts flowing in the reverse direction. so this effect
+[06:33] is known as the Zener breakdown effect. And  the voltage at which this Zener
+[06:38] effect starts is known as the Zener voltage. But the Zener effect is seen at
+[06:43] the lower breakdown voltages. Now from the graph if you
+[06:47] observe even if we increase the applied voltage beyond the Zener voltage then
+[06:52] the voltage across the diode will almost remains constant. And only the current
+[06:57] through the diode will increase. so because of this property the Zener diode
+[07:02] is used as a voltage regulator in many applications. And the commercially
+[07:07] available Zener diodes can have a Zener voltage from two volt to even two
+[07:11] hundred of volts. But for the Zener diodes whose breakdown voltage is less
+[07:17] than four volt the Zener effect is predominant. On the other end for the
+[07:21] Zener diodes where the breakdown voltage is more than six volt the Avalanche
+[07:25] effect is predominant. And for the breakdown voltages between this four
+[07:29] volt and six volt, both effects are usually seen. But irrespective of the
+[07:34] bread down mechanism all the diodes which are used as a voltage regulator
+[07:38] are categorized as Zener diode. so now before ending this video let us also see
+[07:44] the effect of temperature on this two breakdown mechanisms. So for the diodes
+[07:49] where the Zener breakdown effect is predominant the temperature coefficient
+[07:53] of breakdown voltage is negative, meaning that as the temperature increases the
+[07:57] breakdown voltage will reduce. On the other end in case of a diodes where the
+[08:03] Avalanche effect is the predominant,  the temperature coefficient of breakdown
+[08:07] voltage is positive, meaning that as the temperature increases the breakdown
+[08:12] voltage will increase. so now let us also see the reason behind these two effects.
+[08:17] so in case of a Zener effect the additional charge carriers are generated
+[08:22] due to the strong electric field. But as the temperature increases the more and
+[08:27] more number of electron hole pair will get generated. so due to that now we
+[08:31] require a less electric field to generate this additional charge carriers
+[08:34] or in other words we can say that the required breakdown voltage will reduce.
+[08:40] on the other end in case of a Avalanche breakdown effect, the additional charge
+[08:45] carriers are generated due to the impact ionization. Or in other words we can say
+[08:50] that it is generated due to the collision of the charge carrier with the
+[08:53] silicon atoms. so as the temperature increases the silicon
+[08:58] starts vibrating and due to this vibration the mean free path of the
+[09:03] collision will reduce. or we can say that the time required between the two
+[09:08] collision will reduce. so due to that now the electrons will not be able to gain
+[09:13] the sufficient kinetic energy and due to that now they will require a more
+[09:18] electric field. Or in other words we can say that they require the more external
+[09:23] voltage. so we can say that in case of a Avalanche Breakdown effect as the
+[09:28] temperature increases the breakdown voltage will also increase. so this is
+[09:33] all about the Avalanche and the zener breakdown effect and in summary here is
+[09:38] a list of a differences between the Avalanche and the Zener breakdown effect. so I hope
+[09:43] in this video you understood the two types of breakdown mechanism which is
+[09:47] commonly seen in the PN Junction diode. so if you have any question or
+[09:51] suggestion do let me know here in the comment section below. if you like this
+[09:55] video hit the like button and subscribe to the channel for more such videos.

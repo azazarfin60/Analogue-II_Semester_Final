@@ -1,0 +1,1803 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Active Filters | Part 2 | GATE 2023 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=I4-bHpHwlWw
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:10] A very good morning to all of you.
+[00:12] And welcome to Creatrix YouTube channel.
+[00:14] My dear friends, we are live.
+[00:16] We are back again with Active Filters Part 2
+[00:19] in Analog Electronics.
+[00:21] So yesterday we saw Active Filters.
+[00:23] I explained High Pass, Low Pass, Band Pass, Band Reject,
+[00:27] Notch Filters.
+[00:29] We will continue with that.
+[00:31] In today's lecture, the topic in Gate recently
+[00:34] has been added.
+[00:35] That is the Salon Filter.
+[00:37] We will discuss that as well.
+[00:39] Please join us quickly.
+[00:41] Please mark the attendance once.
+[00:44] Everyone, please mark the attendance once.
+[00:47] Like the session and let us know.
+[00:49] Yes sir, we have come to the session.
+[00:52] Let's go.
+[00:54] So let's start.
+[00:55] Today I am going to make you
+[00:57] Active Filters but of the inverting type.
+[01:00] Look at the things we covered yesterday.
+[01:02] Whatever was your filter circuit there.
+[01:05] You must have paid attention to that.
+[01:07] I put input there in Non-Inverting Terminal.
+[01:11] Correct.
+[01:12] But today we will talk about how we can design filters
+[01:16] if we put input in Inverting Terminal.
+[01:19] So first let me talk about the nature of filter.
+[01:23] What did I tell you about the nature of filter?
+[01:26] I told you that you must learn to check at 0 and infinity.
+[01:31] At omega equal to 0, this capacitor will behave as an open circuit.
+[01:38] If the capacitor opens, then V0 is VI into minus RF by R.
+[01:46] Minus RF by R.
+[01:49] Which means that your gain will be
+[01:54] minus RF upon R.
+[01:59] And at omega tending to infinity,
+[02:03] your short capacitor will be.
+[02:07] If this feedback capacitor is short,
+[02:11] then according to the virtual ground, it is 0V here.
+[02:15] Correct.
+[02:16] According to the virtual ground, it is 0V here.
+[02:20] As soon as this capacitor is short,
+[02:23] this 0V will come on V0.
+[02:27] And here V0 will be 0.
+[02:31] So that is gain is coming out to be 0.
+[02:36] Correct.
+[02:37] So that means that the gain is coming on low frequency
+[02:40] minus RF by R.
+[02:41] The gain is coming on high frequency, 0.
+[02:45] Therefore, it is a low pass filter.
+[02:50] What is this?
+[02:52] Low pass filter.
+[02:55] Correct.
+[02:56] Now, if you want to take out the transfer function,
+[03:00] pay attention to the lecture of the architect today.
+[03:03] You will understand how to take out the cutoff frequency.
+[03:06] If you want to take out the cutoff frequency here,
+[03:10] what will be the transfer function for that?
+[03:13] Now, this is working as an inverting amplifier.
+[03:17] Okay.
+[03:18] This is working as an inverting amplifier.
+[03:28] If my child is working as an inverting amplifier,
+[03:31] then your gain will be minus ZF by Z1.
+[03:35] ZF is the feedback impedance.
+[03:37] Z1 is the input impedance.
+[03:40] So you will say that the gain will be minus ZF by Z1.
+[03:50] What will be ZF?
+[03:52] RF in parallel with 1 upon SCF.
+[04:02] So RF upon 1 plus SCF RF.
+[04:09] So what will be the gain?
+[04:12] You have written R on the input, right?
+[04:15] So see.
+[04:17] First, separate the gain from the inverting amplifier.
+[04:21] And separate the remaining term.
+[04:24] Like yesterday, we had a non-inverting filter.
+[04:26] So what did we do?
+[04:28] If I remove the capacitor,
+[04:30] then the gain of the non-inverting amplifier was separated.
+[04:34] If I forget the capacitor here,
+[04:37] then the gain of the inverting amplifier was minus RF by R.
+[04:40] So the remaining term represents the filter.
+[04:44] The remaining term represents the filter.
+[04:49] And the coefficient of S in it is cut-off frequency.
+[04:55] Like here, RFCF.
+[04:58] So what will be the cut-off frequency here?
+[05:02] That will be omega C1 by RFCF.
+[05:09] The reciprocal of the coefficient of S.
+[05:13] 1 by 2 pi RFCF.
+[05:16] And you know, the cut-off frequency of low pass filter.
+[05:21] How does it write?
+[05:22] What representation is it?
+[05:24] FH.
+[05:25] Remember, let's show it with FH.
+[05:28] So here you will say that FH is 1 by 2 pi RFCF.
+[05:39] Okay?
+[05:40] And how will its response come?
+[05:43] So look at all these things.
+[05:45] When you take out the transfer function of the filter,
+[05:48] the nature of the amplifier,
+[05:51] when you take out its gain separately,
+[05:54] then the remaining term represents the filter.
+[05:57] And the reciprocal of the coefficient of S in it,
+[06:01] that represents the cut-off frequency.
+[06:05] So how will your gain versus omega graph be?
+[06:13] It will come like this.
+[06:16] Okay?
+[06:17] The gain here is RF by R.
+[06:23] Okay?
+[06:24] And where the gain becomes your 1 by root 2 times,
+[06:29] that is called as your cut-off frequency.
+[06:33] Correct?
+[06:34] Here the power becomes half.
+[06:36] The gain in your Db,
+[06:38] that becomes 1 by root 2,
+[06:41] sorry, minus 3 dB.
+[06:44] So here absolute value of gain gets divided by root 2.
+[06:49] This is FH.
+[06:51] And omega H.
+[06:56] Okay?
+[06:57] Tell me, is it clear?
+[06:59] Vishnu, if we talk about the syllabus of the gate,
+[07:03] then the syllabus of the gate will end on the next Tuesday.
+[07:07] Okay?
+[07:08] The next Tuesday will be 8th.
+[07:10] And if we finish the entire syllabus of ESC,
+[07:12] then maybe next weekend,
+[07:14] next Saturday, your syllabus of gate and ESC
+[07:17] can end.
+[07:19] Okay?
+[07:20] And according to me,
+[07:25] we have covered this subject in record time.
+[07:30] Passband.
+[07:33] Because in such a small number of days,
+[07:36] covering more than 100 hours of content
+[07:39] is not a small thing.
+[07:42] Okay?
+[07:44] In which we have given the maximum quality,
+[07:47] we have given the maximum quality,
+[07:49] we have given the assignment,
+[07:51] we have also discussed the assignment.
+[07:53] Okay?
+[07:54] We have given the assignment only.
+[07:56] We have also discussed the assignment.
+[07:58] We have made each concept in detail.
+[08:00] And I believe,
+[08:01] the level at which we have done the analogue,
+[08:03] you will do the analogue in any exam of India.
+[08:07] The second thing is,
+[08:08] you have changed the point of view of the analogue.
+[08:11] The biggest achievement of this course is,
+[08:14] that you have changed the point of view of the analogue.
+[08:16] Analogue is nothing but circuit analysis.
+[08:19] There is nothing like this in analogue,
+[08:21] that there is something very, very different.
+[08:23] There is something very difficult to learn.
+[08:25] We have just learnt that,
+[08:27] visualise the analogue like a network.
+[08:29] In the future, KCL, KVL,
+[08:31] Nodal mesh,
+[08:32] the same thing becomes work,
+[08:34] there is nothing more than that.
+[08:35] In fact, there are no very advanced concepts of the network.
+[08:39] Like the concept of reactants,
+[08:42] the concepts of AC phasers,
+[08:44] the transition is also very advanced.
+[08:46] It doesn't seem like big, big circuits are coming.
+[08:48] Or you have to put a second order circuit.
+[08:51] So, the very basic concepts of the network are used here.
+[08:58] Let's move ahead.
+[08:59] Now, this is the low pass filter.
+[09:01] Look at what is done in the high pass.
+[09:03] Make a kind of a dual.
+[09:05] There was R and C parallel,
+[09:07] and where were the feedback?
+[09:09] Here, R and C came into the series,
+[09:11] in the input.
+[09:12] The resistance that was in the input,
+[09:14] went into the feedback.
+[09:16] So, the series made the parallel,
+[09:18] and the feedback and the input branch
+[09:20] was exchanged.
+[09:22] Now, look again, we will do it with the basics.
+[09:24] First, we will try to judge the nature of the filter.
+[09:30] One minute.
+[09:31] Let's go.
+[09:32] Okay.
+[09:33] First, we will try to judge the nature of the filter.
+[09:37] At omega tending to zero.
+[09:40] The capacitor will open.
+[09:43] As soon as the capacitor opens,
+[09:45] the VI will disconnect.
+[09:51] The VI will disconnect.
+[09:55] Because of which,
+[09:56] V0 will be zero.
+[09:58] Look here.
+[09:59] Here, it is zero volt.
+[10:01] So, this whole zero will go away.
+[10:03] Because no current will come from here.
+[10:06] Now, at omega tending to infinity.
+[10:09] The capacitor is short.
+[10:11] If the capacitor is short,
+[10:13] this is an inverting amplifier.
+[10:20] This is your inverting amplifier.
+[10:23] In which, V0 is
+[10:25] minus RF by R
+[10:28] into VI.
+[10:31] So, what is the gain?
+[10:35] Minus RF by R.
+[10:39] So, what do you see now?
+[10:41] Your gain is more on high frequency.
+[10:44] Look at the magnitude.
+[10:45] Don't look at the sign.
+[10:46] The sign is inverting.
+[10:48] So, if you look at the magnitude,
+[10:50] you get more gain on high frequency.
+[10:52] As compared to low frequency.
+[10:55] So, this is basically your
+[10:57] high pass filter.
+[11:00] What is this?
+[11:03] High pass filter.
+[11:07] Now, if we want a 3 dB cut-off frequency,
+[11:10] then what do we have to do?
+[11:12] We need a transfer function.
+[11:14] For a transfer function,
+[11:16] it is very important for us to realize
+[11:18] that it is an inverting amplifier.
+[11:22] Okay?
+[11:24] The architect is in the lecture
+[11:26] and has left.
+[11:27] Then, you won't say,
+[11:28] he didn't understand.
+[11:30] Now, if this is an inverting amplifier,
+[11:32] then how will you write its gain?
+[11:37] The gain will come
+[11:42] minus ZF by Z.
+[11:45] The Z here is the input side.
+[11:48] It is R plus 1 by SC.
+[11:52] That is, 1 plus SCR
+[11:56] by SC.
+[11:59] Now, what is the gain because of this?
+[12:01] There is only one resistance in the feedback.
+[12:07] Okay?
+[12:09] So, what will happen with this?
+[12:11] It will go up by SC.
+[12:20] This will happen.
+[12:22] Now, if you multiply and divide
+[12:24] from R here.
+[12:27] Minus RF by R.
+[12:31] SCR
+[12:34] over 1 plus SCR.
+[12:37] This will happen.
+[12:39] Now, this is the function of the high-pass filter.
+[12:42] This is the function of the high-pass filter.
+[12:46] Now, architect,
+[12:48] what do we have to do here?
+[12:49] Look, the gain of the inverting amplifier
+[12:51] is different, minus RF by R.
+[12:53] So, in the remaining function,
+[12:55] the coefficient of S
+[12:57] will give you the cutoff frequency.
+[13:00] If you want,
+[13:02] you can take the gain in J omega.
+[13:10] Look, this is the gain of the inverting amplifier
+[13:12] which should have come without any capacitor.
+[13:19] So, when you take a transfer function
+[13:21] in a standard form,
+[13:23] then you get the
+[13:25] cutoff frequency.
+[13:27] What we did in this?
+[13:29] We took the J omega CR down.
+[13:32] So, 1 minus J by
+[13:34] omega CR.
+[13:38] How did we write this?
+[13:44] 1 by
+[13:52] okay.
+[13:54] What was omega L here?
+[13:56] This was your cutoff frequency.
+[14:03] Which is equal to 1 by CR.
+[14:07] Now, if you look at the magnitude of the gain here,
+[14:13] then RF by R
+[14:16] divided by
+[14:20] 1 plus
+[14:23] omega L by omega
+[14:25] square.
+[14:28] And if you look at the phase,
+[14:32] then
+[14:38] tan inverse omega L by
+[14:40] omega.
+[14:42] Is this clear?
+[14:44] Is this clear?
+[14:46] Okay.
+[14:48] Now, here,
+[14:50] if you make this frequency response,
+[14:54] if you make this frequency response,
+[14:58] i.e. gain versus omega,
+[15:01] then how will you see it?
+[15:14] Let it be like this.
+[15:21] Some of these types. Okay?
+[15:25] Now, here,
+[15:27] this is the maximum gain.
+[15:31] Okay?
+[15:35] This is your gain,
+[15:37] RF by R.
+[15:43] And where this gain
+[15:45] reduces by root 2,
+[15:49] what is your cutoff frequency?
+[15:52] Where this gain reduces by root 2,
+[15:56] what is your cutoff frequency?
+[16:00] So, FL.
+[16:07] Here it is.
+[16:09] Okay?
+[16:17] Venkatram might be a negative feedback.
+[16:20] Part 2 might not have been added to the playlist.
+[16:23] You can just search it on YouTube and watch it.
+[16:26] I still haven't made any videos of Oopam Private.
+[16:29] Okay?
+[16:31] But they might not be added to the playlist.
+[16:33] That might be the case.
+[16:35] So, you can just search it on YouTube and you can watch it.
+[16:37] Other than that, MOSFET, BJT,
+[16:39] diode, whatever lectures have been made private,
+[16:41] after the course is completed,
+[16:43] maybe by the end of November,
+[16:45] they will be made public.
+[16:47] Okay?
+[16:49] But for that, you will have to wait till the end of November.
+[16:51] Okay?
+[16:53] Is this clear?
+[16:55] Is this clear?
+[16:57] The second region,
+[16:59] you will call it the pass band.
+[17:05] And the region behind it,
+[17:07] that will be called as the stop band.
+[17:13] Okay?
+[17:15] So, this is a high pass type of a filter.
+[17:19] Now, the next one is the band pass filter.
+[17:21] We saw this yesterday.
+[17:23] The band pass filter that we covered,
+[17:25] that was actually inverting.
+[17:27] Right?
+[17:29] The band pass filter that we covered yesterday,
+[17:31] that was an inverting case.
+[17:33] It was a series, a parallel.
+[17:35] And how did we think about this?
+[17:37] Look, this part,
+[17:39] R and C,
+[17:41] you just saw,
+[17:43] this design was used in the high pass filter.
+[17:45] And this RF and CF design,
+[17:47] where is this used?
+[17:49] This is used in your low pass filter.
+[17:51] Okay?
+[17:53] So, here,
+[17:55] your high pass filter
+[17:57] will get FL.
+[17:59] That will be
+[18:01] 1 by
+[18:03] 2 pi Rc.
+[18:05] And the low pass
+[18:07] filter will get FH.
+[18:09] That will be
+[18:11] 1 by 2 pi
+[18:13] RF into CF.
+[18:15] And what did I tell you yesterday?
+[18:17] Yesterday, I told you that
+[18:19] to work on the band pass filter,
+[18:21] to work on this filter,
+[18:23] FH must be greater than
+[18:25] FL.
+[18:27] Which means,
+[18:29] RFCF
+[18:31] must be less than
+[18:33] RC.
+[18:35] This should be your condition.
+[18:37] Right? We saw this yesterday.
+[18:39] Tell me.
+[18:41] Remember, we saw this exact circuit.
+[18:43] I can write its gain and tell you
+[18:45] what its gain will be.
+[18:47] Look,
+[18:49] if you take out its gain,
+[18:51] it will be an inverting amplifier gain.
+[18:55] Then,
+[18:57] a high pass filter term
+[18:59] SCR
+[19:01] upon 1
+[19:03] plus SCR.
+[19:05] Then, a low pass filter term.
+[19:09] Yesterday, I told you that
+[19:11] to make a band pass filter,
+[19:13] an amplifier,
+[19:15] a high pass filter
+[19:17] and a low pass filter.
+[19:19] So, this will be
+[19:21] its gain from this type.
+[19:23] Is this clear?
+[19:25] This will be the gain.
+[19:27] If you want to take it to J omega,
+[19:37] 1 minus
+[19:39] J by
+[19:41] omega CR.
+[19:43] Okay?
+[19:45] So, 1 by
+[19:47] 1 plus J omega
+[19:49] RFCF.
+[19:51] How did this 1 minus happen, sir?
+[19:53] As I told you earlier,
+[19:55] look at the high pass filter.
+[19:57] When you brought down this J omega CR,
+[19:59] with that logic.
+[20:01] Clear?
+[20:03] So, this is the band pass filter.
+[20:05] You covered it yesterday.
+[20:07] So, I am not discussing it again.
+[20:09] But, I am telling you the logic directly.
+[20:11] The gain coming here,
+[20:13] if I are into transfer function of a high pass filter,
+[20:15] into the transfer function
+[20:17] of a low pass filter.
+[20:31] Okay?
+[20:33] Now,
+[20:35] if you want to make a second order low pass filter,
+[20:37] then,
+[20:39] in the case of non-inverting,
+[20:41] we take an R,
+[20:43] take a C in the feedback,
+[20:45] then take an R, then take a C.
+[20:47] So, basically,
+[20:49] the one network of the RC,
+[20:51] you put two sections of the RC,
+[20:53] in order to create a
+[20:55] second order low pass filter.
+[20:57] You saw the same design yesterday,
+[20:59] in the low pass filter,
+[21:01] that R and C were coming on the non-inverting terminal.
+[21:03] So, what did we do here?
+[21:05] Two sections
+[21:11] of
+[21:13] RC
+[21:15] voltage divider
+[21:17] network
+[21:19] voltage
+[21:21] divider
+[21:23] network
+[21:25] are used.
+[21:27] And yesterday, I told you
+[21:29] why do you want to go to higher order filter?
+[21:31] Tell me.
+[21:33] I told you the same thing.
+[21:35] Why do you want to go to higher order filter?
+[21:37] So that the slope of
+[21:39] our Bode plot
+[21:41] which we had said is the role of factor.
+[21:43] What we had said is the role of factor
+[21:45] increases.
+[21:47] That means, the response
+[21:49] decreases very steeply
+[21:51] and it becomes very very close
+[21:53] to the
+[21:55] it becomes very very close to the
+[21:57] ideal filter.
+[21:59] Right? It becomes very close
+[22:01] to the ideal filter.
+[22:03] So, what will be the role of factor here?
+[22:07] Was the role of factor clear to all?
+[22:09] What will be the role of factor here?
+[22:13] Minus 40 dB per decade
+[22:17] Minus 20 N
+[22:19] So, what does this mean?
+[22:23] Response
+[22:25] decreases
+[22:31] more steeply
+[22:33] as
+[22:35] compared to
+[22:41] as compared to
+[22:43] first order
+[22:45] filter
+[22:55] as compared to your first order
+[22:57] filter.
+[22:59] This is closer to
+[23:01] ideal filter
+[23:03] because in ideal filter
+[23:05] it becomes abruptly 0.
+[23:07] So, this is very very close
+[23:09] to the ideal
+[23:11] filter.
+[23:13] Did you understand?
+[23:15] What will you have to do to make the second order?
+[23:19] Tell me.
+[23:21] Was it clear to make the second order?
+[23:23] What will you have to do?
+[23:25] Now, see one thing
+[23:27] what I told you yesterday
+[23:29] there is a problem
+[23:31] that this
+[23:33] butterworth filter
+[23:35] which is your
+[23:37] butterworth filters
+[23:39] their
+[23:41] passband gain
+[23:43] is flat.
+[23:45] Have flat
+[23:47] gain in
+[23:49] passband.
+[23:51] In passband their gain
+[23:53] is flat.
+[23:55] And there is one more category
+[23:57] of filter which is called
+[23:59] shabby-chef filter.
+[24:03] What do you call it?
+[24:05] Shabby-chef
+[24:09] filter.
+[24:11] There is ripple in passband.
+[24:13] Have ripple in
+[24:15] passband.
+[24:17] As I told you in higher order filter
+[24:19] sometimes there is a problem
+[24:21] where ripple is born
+[24:23] in the passband
+[24:25] region.
+[24:27] So, if
+[24:29] you ever have a theory question
+[24:31] in other exam
+[24:33] what happens in shabby-chef filter
+[24:35] or what is the drawback
+[24:37] then you will say it will have
+[24:39] a ripple.
+[24:41] It will have a ripple.
+[24:43] Is it clear?
+[24:45] What will you do in high pass filter?
+[24:47] Will you exchange the position of R and C?
+[24:51] R and C
+[24:56] were taught in non-inverting filter
+[24:58] R and C
+[25:00] exchange the position
+[25:02] see C, R, C, R
+[25:05] So, what did we do here?
+[25:09] Positions
+[25:13] of R and C
+[25:15] and C have been exchanged.
+[25:22] Okay, will there be any difference in the cutoff frequency?
+[25:25] Look, if you are taking both the same resistance and both the same capacitance,
+[25:31] then the cutoff frequency remains the same.
+[25:34] That is, if you ask FH here, then 1 by 2 pi RC will come.
+[25:42] Look, if we would have used it separately, then the cutoff frequency would have come like this,
+[25:46] under root R1, R2, C1, C2.
+[25:49] Okay?
+[25:50] Or if you take it like this, then do one thing.
+[25:54] R3, C3, R4, C4.
+[25:58] If you do like this, then I will write the general formula.
+[26:02] So it comes here only.
+[26:05] R3, R4, C3, C4.
+[26:09] Okay?
+[26:10] In the same way, here C3, R3, C4, R4.
+[26:15] So the cutoff frequency of the second-order filter comes here.
+[26:20] This will be 1 by 2 pi root over.
+[26:29] Look, this is how much we can enter to enter the filter.
+[26:32] We can also do Shabbi-Shab filters.
+[26:34] We can also see how much Ripple is coming.
+[26:36] Why is it coming?
+[26:37] We can do everything.
+[26:39] But dear, then again, if the question is not coming in the exam, then there is no point.
+[26:45] And what will be the gain of this?
+[26:49] Because the non-inverting amplifier is 1 plus R2 by R1.
+[26:54] Okay?
+[26:55] This will happen.
+[26:57] Now let's come to the all-pass filter.
+[26:59] Remember yesterday, I had asked you a question of the all-pass filter, right?
+[27:04] When we were discussing the question in the class, then I have brought the same circuit.
+[27:10] Now what I say here is that there is a non-inverting and an inverting amplifier hidden in it.
+[27:16] Okay?
+[27:17] So what is the work of the all-pass filter?
+[27:20] It provides
+[27:24] constant gain
+[27:28] at all frequencies.
+[27:32] Constant gain
+[27:35] at all
+[27:37] frequencies
+[27:40] but
+[27:42] different
+[27:48] phase
+[27:50] at each frequency.
+[27:53] There are different phases on each frequency.
+[27:56] Your gain remains exactly the same.
+[28:00] Okay?
+[28:00] This is the all-pass filter.
+[28:02] What is the speciality of the all-pass filter?
+[28:07] Poles and zeros.
+[28:10] Poles and zeros
+[28:13] of
+[28:16] transfer function
+[28:21] are symmetric
+[28:33] about
+[28:35] imaginary X's.
+[28:38] Isn't it?
+[28:39] Poles and zeros are symmetric.
+[28:42] That means if there is a pole on minus 2, then there will be a zero on 2.
+[28:47] So the left pole will be your zero on the right.
+[28:53] Now how did you get the output here? Do you remember?
+[28:57] What did we do? We said that in this filter
+[29:02] an inverting amplifier is hidden.
+[29:05] For which the gain will be minus R1 by R1.
+[29:10] And a non-inverting amplifier is hidden.
+[29:12] But for the non-inverting one, you have to take out the positive terminal voltage.
+[29:17] How will you take out the voltage division?
+[29:21] 1 by SC
+[29:23] R plus 1 by
+[29:27] SC
+[29:30] So 1 plus R1 by
+[29:32] R1
+[29:35] So what will be the V naught here?
+[29:39] The first term minus VI
+[29:41] second term 2 VI
+[29:43] over
+[29:44] 1 plus SCR
+[29:48] So take out the common VI
+[29:52] 2 minus 1 minus SCR
+[29:55] over
+[29:57] 1 plus SCR
+[30:01] So the gain here
+[30:05] V naught upon VI
+[30:10] 1 minus SCR
+[30:15] Yeah
+[30:17] Okay?
+[30:18] 1 minus SCR
+[30:20] upon 1 plus SCR
+[30:21] Yes Ravi, you have two feedbacks in that.
+[30:27] Now if you take a gain here in j omega
+[30:32] 1 minus j omega
+[30:35] SCR
+[30:38] And if you want Ravi, you can also derive its transfer function.
+[30:43] Which I have shown in the second order filter.
+[30:46] It is not necessary, but if you want to derive it, there is no issue.
+[30:50] You can derive it.
+[30:55] Look, A minus IOTA B
+[30:57] or A plus IOTA B
+[30:59] I also said yesterday.
+[31:01] Both the modes are the same.
+[31:04] So the constant value of the gain has come to 1.
+[31:07] Okay?
+[31:08] If you wanted to take some other value of the gain
+[31:11] If you wanted to take some other value of the gain
+[31:14] Then take two different resistances.
+[31:16] Take R2 and R1.
+[31:17] So minus R2 by
+[31:19] R1 becomes your gain.
+[31:21] Okay?
+[31:23] Now if we talk about the phase
+[31:27] The phase of the numerator
+[31:32] minus tan inverse omega CR
+[31:40] So minus 2 tan inverse
+[31:45] omega CR
+[31:56] omega CR
+[32:06] Look, what happens here
+[32:09] If you look at the magnitude of the gain
+[32:13] versus omega
+[32:16] It will come out to be exactly constant.
+[32:20] Okay?
+[32:21] It will come out to be exactly constant.
+[32:27] Look at this.
+[32:34] Like this.
+[32:35] There will be constant on every frequency.
+[32:38] And if you talk about the phase
+[32:40] The phase is minus 2 tan inverse.
+[32:43] Tan inverse which is
+[32:45] It can go from 0 to minus 90.
+[32:48] Sorry, from 0 to 90.
+[32:50] So minus 2 tan inverse
+[32:52] It can go from 0 to minus 180.
+[32:55] How far can it go?
+[32:57] To minus 180.
+[32:59] So look at how it happens.
+[33:05] This is 0 degree.
+[33:07] This is minus 90 degree.
+[33:09] And this is minus 180 degree.
+[33:12] And how many frequencies are passing through minus 90?
+[33:17] 1 by RC.
+[33:20] This is omega.
+[33:22] And this is your phase.
+[33:25] So from this type.
+[33:27] You will get a different phase on different frequencies.
+[33:30] But you will get a constant gain.
+[33:33] Is this clear?
+[33:36] Sarant studying in BTEC which is better for me
+[33:39] SSEGE and gate.
+[33:40] Look, the better job.
+[33:41] If we talk about the better job
+[33:43] For more salary
+[33:44] Then it is found in the gate.
+[33:46] Okay?
+[33:47] And apart from this
+[33:49] If we talk about
+[33:50] Which one is easy?
+[33:51] Whose syllabus is a little easy?
+[33:53] Paper is a little easy.
+[33:54] It is SSEGE.
+[33:55] So the syllabus of the gate is tough.
+[33:57] So there is more opportunity in the gate.
+[34:03] Sir, when will the new educator launch?
+[34:05] Whose short has come.
+[34:07] You will come to know very soon.
+[34:09] Deepankar, these are both your board plots.
+[34:12] On Brahmastra YT
+[34:14] You were about to start the machine.
+[34:16] From 1 November.
+[34:17] It will be a little delay.
+[34:18] Meghal.
+[34:19] Its reason is analog.
+[34:20] Once analog will be over.
+[34:22] Then I can take the machine for you.
+[34:24] So you have to take the call.
+[34:26] Look, next Tuesday your analog is ending.
+[34:28] With the purpose of the gate.
+[34:30] So after that you have to pick the topic of SSEGE.
+[34:32] Or you have to jump right away on the crash course.
+[34:35] As you say.
+[34:36] According to that we will continue ahead.
+[34:39] Okay?
+[34:40] But from today.
+[34:41] I mean, it will take one more week.
+[34:43] To complete this analog.
+[34:45] It is my plan till 8th of November.
+[34:47] To complete the gate syllabus.
+[34:49] Come on.
+[34:50] Now let's come to the Salon filter.
+[34:53] Salon filter.
+[34:54] Look, what happens in the Salon filter?
+[34:56] It is generally made topology.
+[34:59] That a Salon filter looks like this.
+[35:02] That is, if you want to make any filter from Salon.
+[35:06] Then the topology will be the same.
+[35:08] But you are always going to change the component.
+[35:11] Z1, Z2, Z3 and Z4.
+[35:14] This is Z1.
+[35:15] This is Z2.
+[35:16] The feedback is Z3.
+[35:17] And this is your Z4.
+[35:19] And this is arranged in the Voltage Follower Configuration.
+[35:23] Okay?
+[35:25] Now here you will see.
+[35:27] What we have considered the voltage of this node?
+[35:30] VX.
+[35:31] What will be the voltage on this node?
+[35:33] Look, according to the virtual shot.
+[35:35] Here is V out.
+[35:37] So what will be here?
+[35:39] V out.
+[35:40] Now here is zero ampere.
+[35:43] So these are actually in your series.
+[35:47] Correct?
+[35:48] These are actually in your series.
+[35:51] No, dear.
+[35:52] Whenever negative feedback comes, you take negative feedback.
+[35:55] Unless it is an oscillator.
+[35:57] Okay, Gajendra?
+[35:58] In an oscillator, it is different.
+[36:00] That the capacitor takes time to charge.
+[36:03] There is no need to do such things here.
+[36:06] Now look at this.
+[36:08] When you take V out from VX.
+[36:11] Because in these two series.
+[36:13] You can apply voltage division.
+[36:15] VX into Z4.
+[36:18] Divided by Z2 plus Z4.
+[36:22] Okay?
+[36:23] Here it is.
+[36:26] Now here you got VX.
+[36:28] How?
+[36:29] In the terms of VX V out.
+[36:32] V out.
+[36:34] One plus.
+[36:36] Z2 by Z4.
+[36:41] Once my children, you got VX here.
+[36:43] In the terms of V out.
+[36:45] You can apply nodal on it.
+[36:48] What is the benefit of applying nodal?
+[36:50] That I will get the gain between V out and V in.
+[36:53] Okay?
+[36:55] So I write.
+[36:57] VX minus V in by Z1.
+[37:05] VX minus V out by Z2.
+[37:12] Okay?
+[37:13] VX.
+[37:14] The feedback on the top.
+[37:16] The current will go in that.
+[37:18] VX minus V out by Z3.
+[37:22] Okay?
+[37:23] This is done.
+[37:24] Z1, Z2 and Z3 are three branches.
+[37:26] Look from here.
+[37:28] This is V out in Z2.
+[37:30] And this is V out in Z3.
+[37:32] How much is the voltage here?
+[37:34] V out.
+[37:35] Now what will you say?
+[37:37] You will collect the terms of VX.
+[37:40] 1 by Z1.
+[37:52] Collect the terms of V out.
+[38:02] And bring in V in here.
+[38:04] V in by Z1.
+[38:08] Now if you put VX here in the terms of V out.
+[38:14] So V out will be your common.
+[38:19] This was Z2 plus Z4.
+[38:25] By Z4.
+[38:27] Okay?
+[38:33] 1 by Z1.
+[38:37] 1 by Z2.
+[38:43] Minus.
+[38:52] Okay?
+[38:53] This is actually equal to V in by Z1.
+[38:57] Now 1 plus Z2, 1 plus Z3.
+[39:00] If you take the common here.
+[39:04] Okay?
+[39:06] Look.
+[39:07] This is the same term.
+[39:09] Z2 plus Z4 by Z4.
+[39:12] Minus 1.
+[39:14] I took this term from both of them.
+[39:17] 1 by Z2 plus 1 by Z3.
+[39:22] Plus 1 by Z1.
+[39:26] 1 plus Z2 by Z4.
+[39:33] V in by Z1.
+[39:37] Okay?
+[39:38] Now this will be Z2 by Z4.
+[39:51] Into Z2 plus Z3.
+[39:54] Over Z2 Z3.
+[39:59] Plus Z2 plus Z4.
+[40:02] By Z1 Z4.
+[40:09] V in by Z1.
+[40:12] Okay?
+[40:13] Now what will happen here?
+[40:16] Look here.
+[40:17] This Z2 is cut off from Z2.
+[40:19] Okay?
+[40:20] This Z2 is cut off from Z2.
+[40:22] So what is left here?
+[40:25] V out.
+[40:26] V out.
+[40:30] Z2 plus Z3.
+[40:34] Divided by Z3 Z4.
+[40:42] Plus Z2 plus Z4 by Z1 Z4.
+[40:51] Now if you take LCM.
+[40:54] Of both the terms.
+[40:58] Then Z1 Z3 Z4 will be done.
+[41:03] Z1 Z2.
+[41:06] Plus Z1 Z3.
+[41:09] Plus Z2 Z3.
+[41:12] Plus Z2 Z4.
+[41:14] Z3 Z4.
+[41:17] Okay?
+[41:19] By Z1 Z3 Z4.
+[41:24] Now Z1 will be cut off from both the terms.
+[41:27] From the denominator.
+[41:29] Look.
+[41:30] Z1 is cut off from here.
+[41:33] So gain.
+[41:35] Or this is called transfer function.
+[41:38] V out by V in.
+[41:42] This is done.
+[41:44] Z3 Z4.
+[41:45] See there is no need to cut off.
+[41:46] Again I will tell you.
+[41:49] You should come to solve.
+[41:51] Z1 Z2.
+[41:53] Plus Z1 Z3.
+[41:56] Plus Z3 Z2.
+[41:58] Plus Z3 Z4.
+[42:02] This is done.
+[42:04] So this is done.
+[42:06] Overall gain.
+[42:07] Or transfer function of a.
+[42:09] Salen's filter.
+[42:11] Did you understand this?
+[42:14] Did you understand this?
+[42:15] Tell me.
+[42:16] Neeraj dear.
+[42:17] I have answered this in this session.
+[42:19] Just rewind and see.
+[42:22] This is done.
+[42:25] Now this is done.
+[42:26] Instead of Z,
+[42:27] connect different components.
+[42:29] Connect resistance and capacitance.
+[42:31] With this topology.
+[42:33] We can make different types of filters.
+[42:41] Okay?
+[42:42] So what did I do in this?
+[42:43] Voltage divider.
+[42:44] And a noodle.
+[42:45] That's all I did.
+[42:46] That's all I did.
+[42:48] Now see like a low pass filter.
+[42:51] If I want to make a low pass filter from this.
+[42:54] Then here Z1 will have one resistance.
+[42:59] Z2 will have one resistance.
+[43:03] Z3 will have one capacitance.
+[43:08] And Z4 will have one capacitance.
+[43:13] Okay?
+[43:15] Z1 and Z2 will have one resistance.
+[43:19] Z3 and Z4 will have one capacitance.
+[43:23] This topology will look the same.
+[43:26] As you can see the second order filter.
+[43:29] Look.
+[43:30] In low pass filter.
+[43:32] R
+[43:33] Then one C
+[43:34] With V out.
+[43:35] Then one R
+[43:36] Then one C.
+[43:37] This is what you can see.
+[43:38] Remember the second order filter of low pass.
+[43:41] Look.
+[43:42] Let me show you again.
+[43:44] Look.
+[43:46] Here you have removed this gain of R2 and R1.
+[43:49] But R
+[43:50] One C with V out.
+[43:52] One R
+[43:53] One C with ground.
+[43:55] Now this is what you can see here.
+[43:58] Think.
+[43:59] If R is written as Z1.
+[44:01] One C with V out.
+[44:03] One R
+[44:04] And one C with ground.
+[44:07] So this is very very similar to your
+[44:10] Same as the second order
+[44:12] Low pass filter.
+[44:14] So you don't need to derive the low.
+[44:18] I told you that you can derive the transfer function of the second order low pass filter at home.
+[44:23] I did it.
+[44:25] Let's put its values in the gain.
+[44:33] Look at the gain.
+[44:34] Z3 and Z4 are above.
+[44:36] Z3 and Z4 are above.
+[44:38] So 1 by
+[44:42] S square C3 C4
+[44:45] Below.
+[44:47] Z1 Z2
+[44:49] R1 R2
+[44:53] Okay.
+[44:54] Or do one thing for Z3.
+[44:57] Do this.
+[44:58] Because do C1 and C2.
+[45:01] This will not force the 3 and 4.
+[45:08] Okay.
+[45:09] Then Z1 Z3
+[45:11] Z1 Z3
+[45:13] R1 by SC1
+[45:16] Then Z2 Z3
+[45:19] R2 by SC1
+[45:24] And then below there is a Z3 Z4.
+[45:31] Now when you bring down S square C1 C2
+[45:36] So what will be left?
+[45:38] S square
+[45:40] R1 R2 C1 C2
+[45:44] S square C1 C2 then R1
+[45:48] S C1 plus C2
+[45:52] No sorry.
+[45:53] Below there is S C1.
+[45:57] So SC2
+[45:59] R1 plus R2
+[46:02] Plus 1
+[46:04] Plus 1
+[46:06] Will this be left?
+[46:07] Isn't it?
+[46:08] Now if you want you can convert this into a standard form.
+[46:12] By doing S square coefficient 1
+[46:25] Do this.
+[46:29] S square
+[46:31] Plus
+[46:33] Here R1 R2 C1 C2 is divided
+[46:37] S by
+[46:39] C1
+[46:41] R1 R2
+[46:44] R1 plus R2
+[46:47] Now look at the standard transfer function of the second order.
+[46:52] What is the standard transfer function of the second order?
+[46:55] This is.
+[46:56] Omega naught square
+[46:59] By S square
+[47:02] Omega naught by quality factor
+[47:06] This is.
+[47:07] Okay.
+[47:09] This is.
+[47:11] No dear.
+[47:12] Assignment discussion will be tomorrow.
+[47:14] Is it clear till here?
+[47:16] Now what do you call the omega naught here?
+[47:19] Natural frequency
+[47:21] And the natural frequency for the second order transfer function
+[47:25] Is also called your corner frequency.
+[47:29] So what is the omega naught here?
+[47:32] 1 by
+[47:35] R1 R2
+[47:37] C1 C2
+[47:39] Under root
+[47:42] Okay.
+[47:43] Or you can say that the cutoff frequency is done.
+[47:47] This is what I wrote to you in the second order filter.
+[47:53] This is what I wrote.
+[47:57] Okay.
+[47:58] This is clear.
+[47:59] 1 by 2 pi R1 R2 C1 C2
+[48:03] Now if you need its quality factor.
+[48:08] So you will say that sir, omega naught by Q
+[48:12] Is R1 plus R2
+[48:16] By C2
+[48:19] R1
+[48:20] R2
+[48:22] Okay.
+[48:23] C1 or C2?
+[48:25] C1
+[48:29] R2
+[48:32] So quality factor is omega naught
+[48:39] R1 R2
+[48:42] C1 C2
+[48:44] This is omega naught.
+[48:46] And take this here.
+[48:47] C1
+[48:48] R1 R2 by
+[48:50] R1 plus R2
+[48:55] So this is done.
+[48:56] 1 by
+[48:58] R1 plus R2
+[49:03] Under root C1 by C2
+[49:06] Into R1 R2
+[49:09] This is done.
+[49:10] This is the quality factor.
+[49:12] Is it clear?
+[49:13] If you compare it with a standard transfer function
+[49:17] Then this will be your quality factor.
+[49:20] Or you can write it like this.
+[49:22] 1 by
+[49:24] C2
+[49:25] R1 plus R2
+[49:31] Okay.
+[49:32] C1 C2
+[49:34] R1
+[49:35] R2
+[49:37] Now what will you do in the high pass filter?
+[49:40] What will you do in the high pass filter?
+[49:42] You will exchange the position of R and C.
+[49:46] This time
+[49:48] Z1 will be your...
+[49:50] See what was written earlier.
+[49:52] R1 was written.
+[49:53] R1 was written.
+[49:54] This time it will be C1.
+[49:56] 1 by
+[49:57] S1
+[49:58] Z2 will be your
+[50:00] 1 by
+[50:01] SC2
+[50:02] Z3
+[50:04] will be your R3
+[50:06] And Z4 will be your
+[50:08] R
+[50:09] Sorry, write R1.
+[50:13] R1 and Z4 will be your
+[50:15] R2
+[50:17] Correct.
+[50:18] Let's exchange R and C.
+[50:20] Now if the gain is written here
+[50:22] Look at the top.
+[50:24] Z3 Z4
+[50:26] Z3 Z4 means R1 R2
+[50:31] The first term was Z1 Z2
+[50:34] 1 by S2
+[50:36] C1 C2
+[50:38] Okay.
+[50:39] Then see what was your
+[50:41] Here
+[50:42] Z1 Z3
+[50:43] Z2 Z3
+[50:44] Z3 Z4
+[50:46] So Z1 Z3
+[50:49] R1 by SC1
+[50:52] Z3 Z2
+[50:54] R1 by SC2
+[50:58] And Z3 Z4 is
+[51:00] R1 R2
+[51:03] Now if you are my brother
+[51:05] If you take
+[51:07] SC2 C1 C2 to LCM
+[51:09] Then this will go up
+[51:11] SC2 R1 R2
+[51:13] C1 C2
+[51:18] There will be one left below.
+[51:20] Okay.
+[51:22] Now here R1
+[51:24] S2 C1 C2
+[51:26] So S
+[51:28] C1 plus C2
+[51:30] plus S2
+[51:32] C1 C2 R1 R2
+[51:36] Now if you divide C1 C2 R1 by R2
+[51:38] Then
+[51:40] S2 is left above
+[51:44] S2 is also below
+[51:46] C1 C2 R1 R2
+[51:48] C2 divided by R1 R2
+[51:57] C1 plus C2
+[51:59] Plus
+[52:00] 1 by
+[52:02] R1 R2
+[52:04] C1 C2
+[52:06] Okay.
+[52:07] This is done.
+[52:09] Now what you have
+[52:10] High pass filter has come
+[52:12] Because when you look at S tending to infinity
+[52:14] Then gain will come 1
+[52:16] And if you look at S tending to 0
+[52:18] Then gain will come 0
+[52:20] So the gain is coming 1
+[52:22] And the gain is coming 0
+[52:24] That is why this is a
+[52:26] High pass type of a
+[52:28] Filter
+[52:30] Okay. That is why this is a
+[52:32] High pass type of a filter
+[52:34] Now even in the high pass filter
+[52:36] If you want to take it out
+[52:38] Then you have to
+[52:40] Compare the gain with this
+[52:46] Omega naught square
+[52:48] S square
+[52:50] Basically
+[52:52] Our focus should be on the denominator
+[52:56] Our focus should be
+[52:58] On the denominator
+[53:00] So here also
+[53:02] Omega naught will come
+[53:04] The first one will come
+[53:06] 1 by under root
+[53:08] R1 R2
+[53:10] C1 C2
+[53:12] And this is the term
+[53:16] Omega naught by Q
+[53:18] This will come
+[53:20] C1 plus C2
+[53:22] Divided by
+[53:24] R2 C1 C2
+[53:28] So what will be the quality factor
+[53:34] You will simplify this
+[53:36] So here you know this kind of question
+[53:38] Can be made but don't think
+[53:40] You will not give a circuit
+[53:42] Whenever the question of the filter
+[53:44] Will give a circuit
+[53:46] It is not like you have to
+[53:48] Keep the circuit
+[53:56] R2 by R1 C1 C2
+[54:00] Okay. This is it
+[54:04] So here comes the quality factor
+[54:06] What can you ask
+[54:08] What else can you ask
+[54:10] Quality factor can be asked
+[54:12] Now see this is the topology
+[54:14] Of your band pass filter
+[54:16] But in the band pass filter
+[54:18] Here
+[54:20] A voltage divider feedback
+[54:22] Is also applied
+[54:24] Okay. So the salient key
+[54:26] This topology
+[54:28] Has to be changed
+[54:30] For the case of a
+[54:32] Band pass filter
+[54:34] Okay. But I am not deriving this
+[54:36] You can derive
+[54:38] How much will come
+[54:40] Its quality factor
+[54:42] And its cutoff frequency
+[54:44] Okay. Cutoff frequency
+[54:46] How much will come
+[54:48] And quality factor how much will come
+[54:50] It is very clear
+[54:52] Tell me
+[54:54] Tell me
+[54:56] If you want
+[54:58] I write cutoff frequency
+[55:02] 1 by
+[55:04] 2
+[55:06] 2 cutoff frequency
+[55:08] You have to derive
+[55:10] 2 cutoff frequency
+[55:12] If you want you can derive
+[55:14] Resonance frequency
+[55:16] Resonance frequency
+[55:18] I write
+[55:20] 2nd order transfer function
+[55:22] You can do it by comparison
+[55:24] Band widths are
+[55:26] Omega naught by Q
+[55:28] Omega naught by Q are
+[55:30] Band widths too
+[55:32] So here is
+[55:34] 1 by 2 pi
+[55:36] Under root
+[55:38] R1 plus
+[55:40] RF
+[55:42] Divided by
+[55:44] R1, R2, RF
+[55:46] C1, C2
+[55:48] Okay. This comes
+[55:50] So if you take out the bandwidth
+[55:52] Omega naught by
+[55:54] Quality factor
+[55:56] But it will not ask
+[55:58] Its very long expression
+[56:00] Okay. Let's
+[56:02] Do some questions
+[56:04] An O-Pamp has an open loop
+[56:06] Gain of 100
+[56:08] Input resistance
+[56:10] 1 Kilo ohm
+[56:12] Output resistance 0
+[56:14] Find the 3 dB cutoff frequency
+[56:16] Deepankar
+[56:18] In 2nd order
+[56:20] If there is an over damped system
+[56:22] Then it is different
+[56:24] If there is an over damped system
+[56:26] Then there are real and distinct roots
+[56:28] So the roots come from there
+[56:30] The corner frequency is different
+[56:32] Under damped and critically damped
+[56:34] Let's take Omega naught
+[56:46] Come on tell me
+[56:54] Here you have to make
+[56:56] an internal circuit
+[56:58] If you go to make
+[57:00] an internal circuit
+[57:06] Look at this resistance
+[57:08] This is the resistance
+[57:10] between the input terminals
+[57:12] Now we are done
+[57:24] Now what happens here
+[57:30] AV
+[57:32] V is
+[57:34] This is
+[57:42] Output resistance
+[57:44] 0
+[57:46] But here
+[57:48] Your capacitor is connected
+[57:54] Okay
+[57:56] So here your V naught
+[58:00] This is equal to AV
+[58:02] See you have to take out the transfer function
+[58:04] This V naught is equal to AV
+[58:08] Now if you see here
+[58:10] V in
+[58:12] This node is minus V
+[58:14] 1 by SC
+[58:16] Okay
+[58:18] So if you put a nodal
+[58:20] on the node of minus V
+[58:24] By 1K
+[58:26] Okay
+[58:28] Minus
+[58:30] V minus V naught
+[58:32] Upon 1 by SC
+[58:36] And
+[58:38] On the bottom
+[58:42] Equal to 0
+[58:44] Okay
+[58:46] Now what can you write here
+[58:48] V naught by A
+[58:54] Okay
+[58:56] So here take out all the minus
+[59:00] V naught by A
+[59:04] Into 1K
+[59:06] Plus V in
+[59:08] By 1K
+[59:10] Plus V naught
+[59:12] By A
+[59:14] 1K
+[59:16] Plus V naught
+[59:18] By 1K
+[59:30] Plus V naught by A
+[59:32] 1K
+[59:34] So now see all the terms of V naught
+[59:46] All the terms of V naught
+[59:50] A is 100
+[59:52] So 100K
+[59:54] Sorry 100K
+[59:58] A I am putting 100
+[60:00] SC by 100
+[60:04] SC
+[60:16] So V naught by V in
+[60:22] 2 by 100K means 1 by 50K
+[60:34] 1 by
+[60:36] 50K
+[60:38] Plus
+[60:40] 1.01
+[60:42] SC
+[60:46] Okay
+[60:48] Now here if you take out 50K
+[60:50] If you take out 50K
+[60:52] 1 by
+[60:54] 0.02
+[60:56] 1
+[60:58] Plus 50
+[61:00] It will be 50
+[61:02] 0.1
+[61:04] 50.5
+[61:06] SC
+[61:08] And this is going on in Kilo
+[61:10] So your cutoff frequency
+[61:12] Son
+[61:14] The coefficient of S is
+[61:16] Take the reciprocal of
+[61:18] 1 upon 2 pi
+[61:24] 50.5
+[61:26] Kilo
+[61:28] And how much is C
+[61:30] C is your
+[61:32] 1P
+[61:34] So
+[61:36] 10 power
+[61:38] Minus 9
+[61:40] Just a minute
+[61:42] So 10 power 9
+[61:44] 1000
+[61:48] 3.151
+[61:50] MHz
+[61:52] Okay
+[61:54] This came
+[61:56] Clear this
+[61:58] How did you take this out
+[62:00] And this 1 by 0.02
+[62:02] This will be 50
+[62:04] This will be 50
+[62:06] So this is done again
+[62:08] And what is down
+[62:10] Cutoff frequency
+[62:12] Do you understand how to take out this architect
+[62:18] 40-45
+[62:20] I have taken
+[62:22] Power Electronics without
+[62:24] This portion
+[62:28] I think it is around 60
+[62:30] 65Rs
+[62:32] Look at this
+[62:34] This phase shift is asking
+[62:36] by the all-pass filter at omega
+[62:38] equal to 1 by RC
+[62:40] Come on
+[62:42] Phase shift by the all-pass filter
+[62:44] at omega equal to
+[62:46] 1 by RC
+[62:54] 1 by RC
+[63:10] Minus 90
+[63:12] I have made this graph
+[63:14] That 1 by RC
+[63:16] Minus 90
+[63:18] Because this phase shift
+[63:20] was this
+[63:26] So at
+[63:28] omega equal to 1 by RC
+[63:30] So
+[63:32] Phase is done
+[63:34] Minus 210 inverse 1
+[63:42] Look at the next
+[63:44] Figure shows a pole 0 circuit
+[63:46] for the value of
+[63:48] capacitor C
+[63:50] If the pole frequency is 1 kHz
+[63:52] 0 frequency 10
+[63:54] DC gains 0 dB
+[63:56] Find C
+[63:58] You are telling me
+[64:00] which frequency is the pole and 0
+[64:02] asking you C
+[64:04] Take out C
+[64:14] DC gains 0 dB
+[64:16] You can see
+[64:18] 0 frequency
+[64:20] will open the capacitor at DC
+[64:22] This is 15.9 kOhm
+[64:24] Disconnected
+[64:26] Gain was minus 143 by 143
+[64:28] Which is 1
+[64:30] 20 log 1 is 0 dB
+[64:32] So you have gained 0 dB
+[64:34] That is why you said
+[64:36] DC gain is 0 dB
+[64:46] Take out the transfer function
+[64:48] and you will get the answer
+[65:16] C
+[65:18] C
+[65:20] C
+[65:22] C
+[65:24] C
+[65:26] C
+[65:28] C
+[65:30] C
+[65:32] C
+[65:34] C
+[65:36] C
+[65:38] C
+[65:42] C
+[65:44] C
+[65:46] C
+[65:48] C
+[65:50] C
+[65:52] C
+[65:54] C
+[65:56] C
+[66:00] C
+[66:02] C
+[66:04] C
+[66:06] C
+[66:08] C
+[66:10] C
+[66:12] C
+[66:14] I am writing this as RF
+[66:16] This is R
+[66:18] C
+[66:20] R1
+[66:22] Ok
+[66:26] In feedback
+[66:28] RF parallel
+[66:30] R plus 1 by SC
+[66:38] So RF
+[66:40] into
+[66:42] R by 1 plus SCR
+[66:50] RF plus R by
+[66:52] 1 plus SCR
+[66:56] If you take LCM
+[66:58] RF into R
+[67:00] Over
+[67:02] R
+[67:04] plus RF
+[67:06] plus SC
+[67:08] RF into R
+[67:10] Now the gain
+[67:16] minus ZF by
+[67:18] Z1
+[67:20] So minus RF
+[67:22] by R1
+[67:26] and here R
+[67:28] R
+[67:30] R
+[67:34] R
+[67:36] R
+[67:38] R
+[67:40] 1 plus
+[67:42] R
+[67:44] R
+[67:46] R
+[67:48] R
+[67:52] R
+[67:54] R
+[67:56] R plus 1 by SC what will happen, I made this mistake, this is 1 plus SCR by SC, I took a parallel
+[68:16] combination, 1 plus SCR by SC, if I take LCM, then RF, 1 plus SCR, this comes, okay,
+[68:43] now here 1 plus SCR, now see this standard form is coming, now if you see 0 frequency,
+[69:05] see numerator, 1 by 2 pi RC will come, how much is this, 10 kHz,
+[69:16] so see how much is coming from here, 1 by 2 pi, so 1 nano farad,
+[69:43] and you know I have also lost this very good curve, see what is the meaning of 0 frequency, where the gain is 0,
+[69:52] you know the gain is 0, then it will come when V0 comes, to come V0, this 0 volt should go as it is output,
+[70:03] for that the capacitor has to cancel the resistance, i.e. the reactance of the capacitor should be 15.9 kOhm,
+[70:12] so if I keep 1 by omega SC at 15.9, then I would have said that C will come out of here,
+[70:19] understand what happened, I said that 0 frequency means here the gain is 0,
+[70:24] when the gain is 0, when V0 is 0, for that the short circuit of this branch is necessary,
+[70:30] and this short circuit will happen when the capacitor will cancel the resistor, i.e. 1 by omega SC is 15.9 kOhm,
+[70:37] directly C came, without any transfer function,
+[70:40] let's see the next one, the figure shows the pole 0 circuit, find the transfer function,
+[70:47] find values of R1, R2 if 0 frequency is 100 hertz, and pole frequency 1 kHz with a high frequency gain of 0 dB,
+[70:56] i.e. how much the gain comes on high frequency, how is 1,
+[71:00] capacitor short on high frequency, so R2 is gone, what is left, R1, R1, so the gain is minus R1 by R1, that is 1,
+[71:08] let's do this quickly,
+[71:19] good afternoon Jyotesh man,
+[71:26] make it,
+[71:38] simple an inverting amplifier, first take out the input side impedance,
+[72:03] see, let me start, you also do,
+[72:07] input impedance will be R1 plus R2 parallel 1 by SC,
+[72:38] now if I take out its gain,
+[72:50] so minus R1, 1 plus SC R2,
+[72:57] and what to do from below, take R1 plus R2 common,
+[73:01] 1 plus SC R1 R2 by R1 plus R2,
+[73:11] so here the pole and 0 are clearly visible,
+[73:14] right, pole and 0 are clearly visible,
+[73:19] yes, if it is the same, if it is not the same, it means something is wrong in the data,
+[73:24] now 0 frequency, if you see from here, 1 by CR2 will come, 0 is given 100 hertz,
+[73:40] so how much R2 will come,
+[73:45] see, C is given 10 nanofarad,
+[73:50] 10 power minus 8,
+[73:53] and the frequency is 100, so 10 power 6 by 2 pi,
+[74:02] 159.15 kilo ohms,
+[74:08] and then 1 by 2 pi C,
+[74:14] R1 R2 by R1 plus R2,
+[74:18] how much is this pole frequency,
+[74:24] this is 1000 kilo hertz,
+[74:28] which means if the frequency is 10 times,
+[74:32] then your resistance should be 1 tenth,
+[74:36] first your resistance should be 1 tenth,
+[74:41] okay,
+[74:43] so 10 by R2, if you take the reciprocal,
+[74:47] 1 by R1 plus 1 by R2,
+[74:51] so from here R1 will come R2 by 9,
+[74:55] see how well it has multiplied,
+[74:58] if the frequency is 10 times,
+[75:00] then your resistance should be 1 tenth,
+[75:03] because the capacitance is same,
+[75:05] finish,
+[75:07] otherwise it would have taken a lot of time to calculate,
+[75:13] I don't understand the gain, which gain I don't understand,
+[75:18] tell me Jagannath,
+[75:21] which gain I don't understand,
+[75:22] what I am writing,
+[75:24] R1 by ZN,
+[75:25] or this is called DC gain or high frequency gain,
+[75:29] what I don't understand,
+[75:40] tell me brother,
+[75:44] let's go ahead,
+[75:47] see the next one,
+[75:50] input is given, output is given, R is asking,
+[75:53] so R1 by Z, there is an inverting amplifier,
+[76:00] this is your ZN,
+[76:02] this much part,
+[76:08] and here is the feedback resistance,
+[76:11] what was the gain of inverting amplifier,
+[76:14] Rf by R1 was there,
+[76:15] so Rf is written instead of R1,
+[76:17] and R1 is Z instead of R1,
+[76:19] so R1 by Z,
+[76:20] this is the gain of inverting amplifier,
+[76:23] and if there was non-inverting,
+[76:24] then 1 plus Rf by ZN,
+[76:29] come on, see the next one,
+[76:30] the value of input and output is given,
+[76:33] this you can see,
+[76:34] this is all pass filter,
+[76:39] do it quickly,
+[76:41] this question will be solved with phase shift,
+[76:46] the frequency is 60,
+[76:48] the phase shift is minus 120,
+[76:51] do it quickly,
+[77:08] and see,
+[77:09] we will discuss the assignment tomorrow,
+[77:11] filters also,
+[77:12] and non-linear applications,
+[77:15] in which I have read the rectifier,
+[77:18] okay, and we will start the new unit,
+[77:20] feedback amplifier,
+[77:28] the negative feedback part of the PAMP is completed,
+[77:32] the positive feedback left,
+[77:35] I will do it in oscillators,
+[77:37] come on,
+[77:38] make it,
+[77:40] the phase shift is minus 210 inverse,
+[77:45] omega RC,
+[77:53] 1060 is root 3,
+[78:05] see how much is it,
+[78:06] 0.1 microfarad,
+[78:15] 4.594 kilo ohms,
+[78:29] this is coming,
+[78:30] 45.94,
+[78:32] mine is 4.594,
+[78:38] capacitance 10 kP,
+[78:39] okay, I have taken 10 kP 6,
+[78:41] you are right,
+[78:43] 45.94,
+[78:49] okay,
+[78:50] come on,
+[78:51] see the next one,
+[78:52] find the value of C,
+[78:54] if the amplifier gives the gain of 20 dB at 100 hertz,
+[78:58] the gain is getting 20 dB at 100 hertz,
+[79:07] tell me,
+[79:08] how much is C,
+[79:13] come on,
+[79:15] come on everyone,
+[79:18] solve it like an amplifier,
+[79:21] like the negative feedback,
+[79:23] here,
+[79:25] this should be,
+[79:26] it will be wrong,
+[79:30] right,
+[79:31] the terminal is different,
+[79:34] make it,
+[79:35] make it,
+[79:41] I have given the gain at 100 hertz,
+[79:44] and I have asked you,
+[79:46] tell me C,
+[80:06] okay,
+[80:27] this is a non-inverting amplifier,
+[80:31] this is the feedback,
+[80:34] so the gain will be 1 plus ZF by Z1,
+[80:36] Jagannath,
+[80:37] but first take out V positive,
+[80:40] take out the voltage of the non-inverting terminal from the voltage division,
+[80:44] after that,
+[80:45] put the gain,
+[80:49] so V positive
+[80:51] is V in
+[80:55] 1 by SC,
+[81:03] see,
+[81:14] 1 by
+[81:16] 1 plus SCR,
+[81:19] 1 plus ZF by Z1,
+[81:23] 1 by SC
+[81:25] upon R,
+[81:29] so this is done,
+[81:31] 1 by
+[81:33] SCR,
+[81:34] take the LCM and cut it,
+[81:36] now 20 dB
+[81:38] is 20 log
+[81:40] gain,
+[81:43] so the mod of gain is 1,
+[81:46] so the mod of gain is 1 at 100 hertz,
+[81:52] so the gain is your,
+[81:56] if you put J omega instead of S,
+[81:58] 1 by omega CR is,
+[82:01] which should be 1,
+[82:03] so what do we ask from here,
+[82:05] we ask C,
+[82:07] 1 by 2 pi
+[82:09] is 100 hertz,
+[82:11] and R is 15.8 kilo ohms,
+[82:25] so 0.1 micro farad,
+[82:29] this is coming,
+[82:31] tell me,
+[82:34] sorry, the gain will be 10,
+[82:36] you are right,
+[82:44] so this will be 10 nano farad,
+[82:47] yes,
+[82:48] 10 nano farad,
+[82:51] we will not take C in ZF by R,
+[82:54] means if we take C, then ZF is 1 by SC,
+[82:57] so this is the feedback,
+[83:00] tell me,
+[83:01] this is ZF, 1 by SC,
+[83:03] and R is Z1,
+[83:08] what happened,
+[83:09] tell me the architect,
+[83:13] we will have to take 1 by SC,
+[83:14] we cannot write C only,
+[83:17] now this is your assignment,
+[83:19] solve this,
+[83:21] and apart from this,
+[83:23] C in Z1,
+[83:24] why will C come in Z1,
+[83:27] Z1 is the one who connects the negative terminal to the ground,
+[83:31] have you forgotten,
+[83:32] the structure of non-inverting amplifier,
+[83:39] the one who goes to the ground with the inverting terminal,
+[83:41] Z1,
+[83:43] didn't take the non-inverting terminal,
+[83:49] otherwise,
+[83:50] the feedback was getting positive,
+[83:52] Deepankar, how it will be an amplifier,
+[83:57] the amplifier cannot be made,
+[83:58] if you are giving positive feedback,
+[84:00] you are not giving negative feedback,
+[84:01] if you are giving both,
+[84:03] then I can say that it will be made from negative feedback,
+[84:05] but how can it be made from positive feedback,
+[84:08] now see,
+[84:09] the negative feedback part of OPAM is completed,
+[84:13] so you can go to this link and
+[84:15] done the PYQs,
+[84:16] gate PYQ by AIR1,
+[84:19] okay,
+[84:20] here you can apply Diode, BJT, Mosfet, OPAM,
+[84:22] all the PYQs now,
+[84:24] and if you come to Unacademy,
+[84:26] then you will get two offerings,
+[84:28] plus and Iconic,
+[84:29] both are top teachers,
+[84:31] the whole study material is on the app,
+[84:33] test series is included,
+[84:35] if the children who are Iconic,
+[84:37] if they have any doubt in a new question,
+[84:38] then custom doubt solving,
+[84:39] printed notes will be sent at home,
+[84:41] one to one mentorship,
+[84:43] strategy and study plan,
+[84:45] and they can interact in the open house session,
+[84:47] via audio,
+[84:49] and what you have to do,
+[84:50] go to Unacademy app,
+[84:51] you have to choose a plan,
+[84:53] plus or Iconic,
+[84:54] you have to decide the duration,
+[84:56] and for maximum discount,
+[84:57] for my guidance,
+[84:58] you have to apply the code,
+[85:00] Ankit ESE,
+[85:02] okay,
+[85:03] and the children who are preparing for 24,
+[85:05] they can go for a 15 month subscription,
+[85:08] what they have to do,
+[85:09] they have to apply the code Ankit ESE,
+[85:11] now if you take the subscription for 15 months,
+[85:14] then you can prepare for 24,
+[85:17] if you see the results,
+[85:19] then we have produced the results,
+[85:21] last year we had 6 anchors in top 10,
+[85:24] this year you can also be one of them,
+[85:27] or you can be one of them in 24,
+[85:30] what you have to do,
+[85:31] you have to join the Unacademy,
+[85:33] and the children who are going through financial issues,
+[85:36] they can go for EMI,
+[85:37] without any interest,
+[85:39] you can pay your fees month on month,
+[85:41] here,
+[85:42] there will be an approval in 2 hours,
+[85:44] okay,
+[85:45] apart from this,
+[85:46] there will be minimum paperwork,
+[85:48] i.e. basic card,
+[85:49] pan card,
+[85:50] and you can repay,
+[85:51] in a flexible amount of time,
+[85:53] and for those who are going for 24,
+[85:55] there is a Gurukul batch,
+[85:56] in which Mr. Dhandesar and Mr. Gurupal are taking,
+[85:58] Analog and Mathematics,
+[86:00] for both electrical and EC,
+[86:02] and for those who are going for 23,
+[86:04] we have launched the Crash Course,
+[86:05] Rank Improvement batch,
+[86:07] in this,
+[86:08] for electrical children,
+[86:09] Mathematics and Network is going on,
+[86:11] and for EC children,
+[86:13] Mathematics, Network and EDC,
+[86:15] so you can become a part of these batches,
+[86:17] and you can increase your score,
+[86:19] at least 20-25 marks,
+[86:21] by working with us,
+[86:23] you can go for a 3 month subscription,
+[86:25] son,
+[86:26] in which,
+[86:27] you can get a TSE code,
+[86:29] you can get a discount on a 3 month subscription,
+[86:31] and in 3 months,
+[86:33] you can revise with us,
+[86:35] and improve your rank,
+[86:37] and look,
+[86:39] this is the telegram channel,
+[86:41] where you will get all the information,
+[86:43] okay,
+[86:44] and here you will be connected,
+[86:46] and here,
+[86:47] look,
+[86:48] on the community,
+[86:49] you will get a PDF,
+[86:50] where you go to the academy app homepage,
+[86:52] Community Discover,
+[86:54] I will get it in Discover,
+[86:55] and all the PDFs,
+[86:56] Rohit brother,
+[86:57] I have not got positive feedback,
+[86:59] so how will we make a question?
+[87:00] You are talking nonsense,
+[87:02] I have told you,
+[87:03] that I will get positive feedback,
+[87:05] with the oscillator,
+[87:07] okay,
+[87:08] now,
+[87:09] tomorrow,
+[87:11] brother,
+[87:12] the video of Active Filter can not be private,
+[87:14] what are you saying?
+[87:15] I have just seen on the channel,
+[87:16] you don't know to search,
+[87:18] go to the videos,
+[87:19] there will be an option of Live,
+[87:21] you will get it there,
+[87:22] YouTube has changed the system a little,
+[87:25] now Live,
+[87:26] Shorts,
+[87:27] recorded videos look different,
+[87:28] so in YouTube,
+[87:29] you will go to the video section,
+[87:30] you will go to Live,
+[87:32] you will get the video of Active Filters,
+[87:35] okay,
+[87:36] come on,
+[87:37] now son,
+[87:38] we will discuss the assignment tomorrow,
+[87:40] after that,
+[87:41] we will start the feedback amplifier,
+[87:42] and after the feedback amplifier,
+[87:44] we will go to the oscillators,
+[87:45] okay,
+[87:46] so see you tomorrow,
+[87:47] same time, same place,
+[87:48] let's crack it.

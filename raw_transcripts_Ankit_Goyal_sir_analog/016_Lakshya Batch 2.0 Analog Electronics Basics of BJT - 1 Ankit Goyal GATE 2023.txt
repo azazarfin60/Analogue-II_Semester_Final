@@ -1,0 +1,1993 @@
+Title: Lakshya Batch 2.0 | Analog Electronics | Basics of BJT  - 1 | Ankit Goyal | GATE 2023
+URL: https://www.youtube.com/watch?v=wZHu2XuzbUI
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] So we are back with Lakshya Batch 2.2 Analog Electronics.
+[00:17] And today we are going to start a new chapter, a new topic.
+[00:21] That is Bipolar Junction Transistor BJT.
+[00:25] Okay.
+[00:26] So I hope you have enjoyed the diode.
+[00:29] And most importantly, you have completed the diode.
+[00:33] Because I had kept all the lectures public for you.
+[00:36] Today they will be private after this session.
+[00:39] So I hope you have covered each aspect well.
+[00:43] And the most important thing is that you have understood the basic things.
+[00:47] Because if you have understood the basic of the semiconductor well,
+[00:51] I will also use the same concepts in BJT.
+[00:55] Okay.
+[00:57] Is it clear to all of you?
+[00:59] Let's start a new topic from today.
+[01:02] We will take it to the level of zero to hero.
+[01:04] I know that BJT is such a topic which worries all the children.
+[01:09] Especially its AC analysis.
+[01:12] And I can promise you one thing.
+[01:14] If you will be with me in this series.
+[01:16] You should worry about the question of BJT.
+[01:19] One question of BJT that could not be made is impossible.
+[01:23] You will make all questions.
+[01:25] And you will make without rattas.
+[01:27] Do not remember anything.
+[01:29] Without rattas.
+[01:30] If you say from the limit.
+[01:32] If there are 5-6 formulas in the whole chapter.
+[01:35] There are a lot of rattas.
+[01:36] There will not be more than this.
+[01:37] Okay.
+[01:39] Let's go.
+[01:41] Now here you see.
+[01:42] If you want to join the academy now.
+[01:44] Then the best offer for you is 20% off.
+[01:47] What do you have to do?
+[01:49] You have to quickly go to the academy app and take the subscription.
+[01:54] And at the time of payment you have to apply the code Ankit ESE.
+[01:59] Ankit ESE.
+[02:01] And as soon as you apply the code.
+[02:03] You will immediately get 20% discount.
+[02:06] With which you will be able to save a lot of money in the subscription.
+[02:10] Okay.
+[02:11] Sir, I am not managing because of college.
+[02:14] There is a lot of difficulty.
+[02:15] Dear, if you want to study for 2 hours daily.
+[02:18] In which I keep the video public for 24 hours.
+[02:20] I don't think you can spend 2 hours with college.
+[02:22] You can't spend 2 hours for self-study.
+[02:25] You can't prepare for 2 hours.
+[02:27] If that is the case.
+[02:28] Then we should immediately think that we should not prepare in college.
+[02:32] We should do it with a drop.
+[02:33] Because my brother, I also prepared with college.
+[02:36] 2-3 hours would be enough to meet the college.
+[02:40] Okay.
+[02:41] Let's start with BJT.
+[02:43] What is the full form of BJT?
+[02:45] Bipolar Junction Transistor.
+[02:48] Sir, do you know why it is called bipolar?
+[02:52] Isn't it?
+[02:53] Let's go to the junction.
+[02:54] We still understand, dear.
+[02:55] PN junction is there.
+[02:57] Why is it called bipolar?
+[03:00] Look, bipolar devices, dear.
+[03:02] Those are devices.
+[03:04] Where electrons and holes.
+[03:07] Both of them are part of conduction.
+[03:10] That is, when the current flows.
+[03:12] The current flow is due to the flow of electrons.
+[03:16] As well as the flow of holes.
+[03:19] Sir, this was also happening in the diode.
+[03:22] Sir, this was also happening in the diode.
+[03:24] Yes, dear.
+[03:25] Diode will also be called as bipolar device.
+[03:28] So, you will also call the diode bipolar device.
+[03:31] Because there were holes from P to N.
+[03:34] And P came from N, the electron.
+[03:36] That is, the overall current flow in the device.
+[03:39] That was because of holes and electrons.
+[03:42] So, if anyone asks you, which are the bipolar devices?
+[03:45] This is the device where conduction or the flow of current.
+[03:58] Conduction or the flow of current.
+[04:10] Is due to both electrons and holes.
+[04:27] Okay?
+[04:29] So, on the basis of this definition, we can say that the diode is also a bipolar device.
+[04:36] It is clear.
+[04:37] BJT is also called a bi-junction transistor.
+[04:43] Bi-junction means there are two PN junctions within the BJT.
+[04:48] Like, there was only one PN junction in the diode.
+[04:50] Which was also called a metallurgical junction.
+[04:53] Which was also made around the depletion layer.
+[04:56] So, in the same way, dear, in BJT, you can say that there are two diodes.
+[05:03] Indirectly, what can you understand, dear?
+[05:06] That there are two diodes or two PN junctions in BJT.
+[05:11] Okay?
+[05:12] So, what can we say in bi-junction?
+[05:14] There are two PN junctions within the BJT.
+[05:33] So, BJT is often called a bipolar or bi-junction transistor.
+[05:39] Both have different logic.
+[05:41] Bipolar is related to electron and hole.
+[05:44] Bi-junction is related to the two PN junctions within the BJT.
+[05:49] Now, look, there are three terminals in BJT.
+[05:52] If you look at this diagram in the right.
+[05:54] There are three terminals here, dear.
+[05:56] The first terminal is called an emitter.
+[06:00] What is called an emitter?
+[06:02] Which is represented by E.
+[06:04] The second is called a base.
+[06:07] Which is shown by B.
+[06:09] The third is called a collector.
+[06:11] Which you have shown by C.
+[06:14] So, emitter, base and the collector.
+[06:18] So, these three terminals are defined in BJT.
+[06:22] Now, dear, if you pay attention to the construction of BJT.
+[06:27] So, here you see P substrate, okay?
+[06:30] Substrate.
+[06:31] Now, what is substrate, dear?
+[06:33] This is the base material.
+[06:35] On which the whole construction begins.
+[06:39] That is, when you bring a semi-conductor piece.
+[06:43] When you bring a semi-conductor from the market.
+[06:46] On which you have to fabricate the whole device.
+[06:48] So, that is the substrate.
+[06:50] So, how will you bring such a material?
+[06:52] P type material.
+[06:54] Now, what do you make by doping it?
+[06:58] What do you make?
+[06:59] N minus collector.
+[07:01] What does N minus collector mean?
+[07:03] That this is lightly doped.
+[07:06] Lightly doped.
+[07:09] You will do lightly doping of N type.
+[07:13] That is, the element of group 5.
+[07:16] Or the atom of group 5.
+[07:18] You will inject here.
+[07:20] Then, dear, in such a large collector.
+[07:24] You make a small region of the base.
+[07:27] What do you make of the base?
+[07:29] You made the base of P type.
+[07:32] How did you make the base of P type?
+[07:34] And in that, look, here is P.
+[07:37] So, P is neither plus nor minus.
+[07:39] Means, this is moderately doped.
+[07:43] This is moderately doped.
+[07:47] Then, in that, you made another small region.
+[07:51] N plus, this is emitter.
+[07:54] N plus means, this is highly doped.
+[07:57] So, you see, the most doping emitter is done.
+[08:01] Then, the base is done.
+[08:03] And the least of which is of collector.
+[08:07] The least of which is of your collector.
+[08:10] Now, how did you get a terminal from emitter?
+[08:14] You got a terminal from emitter.
+[08:18] From here, this white region is silicon dioxide.
+[08:23] This is SiO2.
+[08:26] This is insulator.
+[08:28] What is insulator?
+[08:31] Okay.
+[08:32] By removing a little region from this insulator.
+[08:36] By removing a little region, what did you add in the middle?
+[08:39] You added metal.
+[08:41] What did you add? You added metal.
+[08:43] And you added emitter terminal from here.
+[08:47] Then, you removed a small region near the base and added metal.
+[08:53] You can call this shaded region as aluminium.
+[08:57] By the way, mostly polycrystalline is also used.
+[09:01] Rather than metal, it is also a very good conductor.
+[09:04] But, you can consider it as aluminium.
+[09:07] You added aluminium here and added base terminal.
+[09:10] What did you remove by depositing aluminium on such a collector?
+[09:14] Collector.
+[09:15] This is how your BJT was constructed.
+[09:18] What is in BJT?
+[09:20] Highly doped emitter, moderately doped base, lightly doped collector.
+[09:25] And substrate is on the last.
+[09:29] And this is the opposite nature of substrate and collector.
+[09:33] If substrate is p, then collector is n.
+[09:35] If substrate is n, then collector is p.
+[09:38] Now, what do we call this transistor?
+[09:41] We call this transistor as NPN.
+[09:45] That is, emitter base collector NPN.
+[09:49] But, there are two possibilities in this.
+[09:52] One is NPN and one is PNP.
+[09:57] So, in NPN, you showed emitter as highly doped,
+[10:03] base moderate and collector lightly doped.
+[10:07] So, there is base region in the middle.
+[10:09] There is emitter above and there is collector below.
+[10:13] Now, if you see here, the symbol of BJT,
+[10:17] you show some symbol of this type.
+[10:20] So, here see, collector is N, base is B and emitter is N.
+[10:27] Okay?
+[10:28] Collector is N, base is P, emitter is N.
+[10:32] Now, you will understand one thing.
+[10:34] This base and emitter is PN junction in the middle of base and emitter.
+[10:41] This is PN junction.
+[10:44] And in PN junction, in forward biasing,
+[10:49] under forward bias,
+[10:52] where does current go?
+[10:54] Current goes to P2N.
+[10:58] Right?
+[10:59] Diffusion is current.
+[11:00] Remember, in forward biasing and in reverse biasing,
+[11:03] there is drift current.
+[11:04] So, current goes to your P to N.
+[11:08] Where does it go?
+[11:10] P to N.
+[11:11] Okay?
+[11:12] So, dear, what is P to N?
+[11:15] Current goes.
+[11:16] So, here you showed the arrow of P to N.
+[11:20] Here you showed the arrow of P to N.
+[11:22] So, after seeing this arrow,
+[11:24] actually, we understand the nature of BJT,
+[11:26] whether it is NPN or PNP.
+[11:28] We understand the nature of BJT.
+[11:30] Because this arrow will always be P to N.
+[11:34] So, by looking at the direction of arrow,
+[11:36] you can tell P and N,
+[11:37] which will understand the nature of BJT.
+[11:40] Now, look here.
+[11:41] Here, emitter is P, base is N, collector is P again.
+[11:46] So, look at PNP.
+[11:50] So, here too, the arrow is going from P to N.
+[11:53] It shows the direction of current.
+[11:56] It shows the direction of current.
+[11:59] So, arrow is always placed between.
+[12:03] Arrow is always placed between base and emitter.
+[12:15] This is what we have to show to everyone.
+[12:17] Arrow is always between base and emitter.
+[12:20] And in BJT, there are two possibilities.
+[12:23] NPN or PNP.
+[12:26] What are the two possibilities?
+[12:28] NPN or PNP.
+[12:30] Arrow will always come between base and emitter.
+[12:33] And it will always come from P to N.
+[12:36] It will always come from P to N.
+[12:39] Till here, the matter is shining.
+[12:41] Now, you must be wondering why Mr. Ankit is not telling the doubt.
+[12:45] You are writing a lot of doubts in the chat.
+[12:47] Because if you sit for another half an hour,
+[12:50] then all these doubts will end.
+[12:53] Do you think that the first slide came, the first thing
+[12:56] that we talked about BJT,
+[12:58] now you should understand everything.
+[13:00] I have to understand everything in 5 minutes.
+[13:02] So, in 5 minutes, you should understand everything.
+[13:04] This is not the subject of 100 hours.
+[13:06] Be patient.
+[13:08] When someone is telling something,
+[13:09] then their explanation will also come.
+[13:11] You just have to give some time.
+[13:18] Okay, this matter has been cleared up till here.
+[13:30] Nehari ka, look.
+[13:32] Now, Nehari ka is writing that
+[13:34] at this time, the class is attending in such a bad condition.
+[13:37] Her grandmother is not well.
+[13:39] Her mother, sister, everyone is caring.
+[13:42] And typhoid is also happening.
+[13:44] So, Nehari ka, look.
+[13:46] This is a very big victory in itself.
+[13:48] Don't demoralize.
+[13:50] Look, challenges come in life.
+[13:52] Everyone comes, I also come, you also come.
+[13:54] There is also a challenge in the life of other students.
+[13:56] But you know, eventually matter only does one thing in life.
+[14:00] Do you have the courage to overcome all those challenges?
+[14:04] Do you lose or fight with those challenges?
+[14:08] And son, as far as I understand from your words,
+[14:10] you are fighting at this time.
+[14:11] And this is a very big quality in itself.
+[14:13] It is a very good thing.
+[14:15] So, keep it continued.
+[14:17] As long as you can fight.
+[14:19] I don't say that you will always be able to fight.
+[14:21] I don't say that it will happen anytime,
+[14:23] that you will not miss the class,
+[14:25] that you will never miss the topic.
+[14:27] But as much as you can delay it,
+[14:30] as much as you can delay it,
+[14:32] as much as you can fight it,
+[14:34] you will not lose today.
+[14:35] Today more.
+[14:36] Do you understand?
+[14:37] Don't think too long.
+[14:38] Just think about it.
+[14:39] Today you have to stay on a ticket.
+[14:41] You have to be out today.
+[14:42] You have to lose today.
+[14:43] So, if we think like this,
+[14:45] then I am saying that every day,
+[14:47] just fight one day at a time.
+[14:49] Don't think too far.
+[14:50] If you think too long,
+[14:52] if you think too long,
+[14:53] then I am telling you,
+[14:54] you have to come with a demotivation.
+[14:56] Just think about it today.
+[14:57] Keep spreading your mind.
+[14:59] It is the same.
+[15:00] It is the same with Alizwell.
+[15:01] Alizwell was the same in 3 idiots.
+[15:03] That we will fight today.
+[15:04] So, as long as you will delay it,
+[15:06] you will play as long as you can.
+[15:08] That much knowledge will increase.
+[15:10] That much confidence will increase.
+[15:11] That much chances of rank will also increase.
+[15:13] Okay, let's go.
+[15:15] Now, let's go into more detail.
+[15:18] I have told you that doping is
+[15:21] in the decreasing order
+[15:23] of emitter, base and collector.
+[15:25] Isn't it?
+[15:26] What is NE?
+[15:30] This is the doping concentration
+[15:33] in emitter.
+[15:36] Doping concentration in emitter.
+[15:42] Okay.
+[15:43] What is NE?
+[15:45] Doping concentration in base.
+[15:48] Because emitter is highly doped,
+[15:50] so NE is very big.
+[15:53] Base is moderately doped,
+[15:55] so NE is smaller.
+[15:57] And NC, collector was the lightest doped.
+[16:01] So, doping concentration in collector is the smallest.
+[16:05] And you know, in EDC,
+[16:07] I had also asked a question.
+[16:09] It was a statement type question.
+[16:11] I think it is about 2022 or 2021.
+[16:13] In EDC,
+[16:15] there was a statement type question
+[16:17] about doping.
+[16:19] Now, we will understand the logic of all things one by one.
+[16:22] Do you understand?
+[16:23] It is not just a matter of saying.
+[16:25] We will understand the logic.
+[16:27] Now, look, this is what happened
+[16:28] on doping concentration.
+[16:30] Apart from doping concentration,
+[16:33] I will also talk about the sizes here.
+[16:36] Which region is the biggest
+[16:38] and which is the smallest.
+[16:40] We will talk one by one.
+[16:48] So, first of all, I will start my discussion
+[16:51] with emitter.
+[16:55] Okay.
+[16:57] Let's understand all your queries.
+[17:00] Everything will be clear.
+[17:02] Now, what is emitter?
+[17:04] Look, emitter means
+[17:07] to emit.
+[17:08] Emitting means like a bulb.
+[17:10] A bulb emits a light.
+[17:12] That is, it leaves the rays of light.
+[17:15] In the same way, emitter
+[17:17] means in BJT,
+[17:19] which can emit the charge carriers.
+[17:22] So, basically,
+[17:24] to make the current flow,
+[17:26] you will need charges.
+[17:27] Whether they may be electron
+[17:29] or they may be holes.
+[17:30] But where will these charge carriers come from?
+[17:33] Who is supplying these charge carriers?
+[17:35] That is what emitter is.
+[17:38] So, what is your emitter?
+[17:40] So, what do we say?
+[17:42] Emitter
+[17:45] emitter
+[17:48] is the
+[17:52] source of
+[17:54] charge
+[17:59] carriers
+[18:06] within
+[18:07] a
+[18:09] BJT.
+[18:10] That is why it is called emitter.
+[18:13] Do you understand why it is called emitter?
+[18:15] Because it is emitting.
+[18:17] Because it is emitting.
+[18:20] Now, let's keep this,
+[18:22] it is most highly doped.
+[18:25] Most highly doped.
+[18:28] So, what do we say here?
+[18:31] It is the
+[18:33] most highly doped
+[18:38] most highly doped
+[18:44] region
+[18:47] in a BJT.
+[18:52] Sir, why is it highly doped?
+[18:55] Now, think of one thing.
+[18:57] If you want to supply charges to someone,
+[19:00] if you want to supply the emitter,
+[19:02] then you should have more charges
+[19:04] near the emitter itself.
+[19:06] Only then can you give charges to the emitter.
+[19:08] You can give charges to the base collector.
+[19:10] When it has
+[19:12] many charges near it.
+[19:14] And this will only happen
+[19:16] when it is highly doped.
+[19:18] It looks logical.
+[19:20] Tell me.
+[19:22] Does it look logical?
+[19:24] Does it look like the emitter is just throwing?
+[19:26] Look at the things on the common sense.
+[19:30] Look at its doping
+[19:32] concentration is greater than or equal to
+[19:34] 10 to the power of 18.
+[19:36] Approximately
+[19:38] 10 to the power of 18 per centimeter cube.
+[19:40] What does this mean?
+[19:42] Suppose here you
+[19:44] added the element of group 3.
+[19:46] You added boron.
+[19:48] In every centimeter cube
+[19:50] 10 to the power of 18
+[19:52] will be added.
+[19:54] This is considered as
+[19:56] High doping.
+[19:58] High doping.
+[20:00] Did you understand?
+[20:02] The work of the emitter is to
+[20:04] give charges to the entire device.
+[20:06] My device will work on its basis.
+[20:08] Otherwise, how will my device work?
+[20:10] It is a simple thing.
+[20:12] There should be charges somewhere.
+[20:14] Now, what is the next region?
+[20:16] There is a base.
+[20:20] There is a base.
+[20:22] Now, what happens?
+[20:24] Suppose there was an emitter N type.
+[20:26] What charges did the emitter
+[20:28] take?
+[20:30] He took the electron.
+[20:32] If the emitter was P type, he took the
+[20:34] holes.
+[20:36] Now, what happens?
+[20:38] When the charges go from the emitter
+[20:40] Suppose there is an emitter N type,
+[20:42] then the electron goes from there.
+[20:44] Where will it enter?
+[20:46] It will enter the base.
+[20:48] Where will it enter? In the base.
+[20:50] Now, the nature of the emitter and the base
+[20:52] is always opposite.
+[20:54] If there is an emitter N type, then the base
+[20:56] will be P type.
+[20:58] If there is an emitter P type, then the base
+[21:00] will be N type.
+[21:02] Suppose there is an emitter N type, then the
+[21:04] electron goes from the emitter
+[21:06] into the base.
+[21:08] The base was P type.
+[21:10] They will get holes there.
+[21:12] Now, there are few electrons
+[21:14] from the emitter that are coming from the
+[21:16] electron.
+[21:18] Some electrons will be combined with
+[21:20] these holes and the other
+[21:22] electrons will go ahead
+[21:24] in the collector.
+[21:26] Some electrons will be combined
+[21:28] with holes and some
+[21:30] electrons will go ahead in the
+[21:32] collector.
+[21:34] We want these
+[21:36] charge more than
+[21:38] the charge coming from the emitter
+[21:40] more and more charges reach the collector, that is why we want the electrons here to be combined with the holes,
+[21:49] they should be less and less, we will understand again, if the electron comes from the emitter, then the holes in the base will be recombination there and the remaining electrons will go to the collector,
+[22:01] I want more and more electrons reach the collector from the emitter, that is, the charges that were combined in the base should be less,
+[22:11] that is why the base is made thin, it is made thin so that more and more charges cross and reach the collector.
+[22:21] Ok, so what are we saying?
+[22:24] Base is moderately doped, base is moderately doped, and when charge carriers, when charge carriers enter base,
+[22:55] from emitter, when charge carriers enter base from emitter, they recombine, they recombine and we want,
+[23:15] and we want majority of charges to reach collector and hence
+[23:46] base is made thin, ok, the base is kept thin, because the length of the base, son, the longer you make, the more charges will end,
+[24:05] ok, now you think like this, take a battlefield, take a battlefield as an example,
+[24:15] now take this as, where I am standing, I am a soldier, ok, and in front of me is a fort,
+[24:24] visualize things, in front of me is a fort, understand what I am saying, in front of me is a fort, where our enemy army is,
+[24:32] in that fort is the enemy army, now son, when I will move towards the fort, then the enemy army will hit our soldiers,
+[24:42] now this gate, son, this gate will be as far as it is, that is, the width of the base will be as much as it is,
+[24:53] this gate will be as far as it is, the more the sannic will die and the less the sannic will reach the gate,
+[25:01] now relate this to BJT, these sannic battlefields are going on, battlefield is base,
+[25:07] ok, the gate, the gate of the fort, I am talking about is the collector and base junction,
+[25:14] that is the region, see this is the region, this is the door, which I have to cross,
+[25:22] so what did I say, see when the electrons will come from here, like this, then the holes will end here,
+[25:32] now the longer the region will be, the more the electrons will end, the less the collector will reach,
+[25:40] so I am saying this, that is why the base is kept thin, that is why the base is kept thin,
+[25:49] tell me, tell me something, now the question is, why did the base doping change,
+[25:57] why did not the doping change, if the base was also highly doped, then there would be a lot of holes in the base,
+[26:04] then a lot of electrons would end up in the middle, right, a lot of electrons would end up in the middle,
+[26:11] that is why it was necessary to keep the doping less than the ammeter, if there were more holes,
+[26:16] then more electrons would be recombined and less electrons would reach the collector,
+[26:22] tell me something, the base doping, most of the explanation is about the NPN,
+[26:36] because you have to exchange the electron from the hole in the PNP, so you understand the base doping as NPN,
+[26:43] so doping is kept less than ammeter, so that, so that number of holes in base
+[27:13] are less, so only few electron from ammeter, from ammeter recombine with holes
+[27:37] and most of them reach collector, okay, most of them reach collector,
+[27:59] so very few holes would recombine in the middle, okay, is this clear, is this clear,
+[28:12] tell me if anyone has any doubt, if anyone has any doubt, tell me, is it clear, now let's move on to the next,
+[28:26] what is the next region, dear collector, I said, don't ask questions, just pay attention to listening,
+[28:33] you will get answers to all your questions, if you sit for a while more, you will get answers to many questions,
+[28:41] okay, you will get answers to many more questions, so think as much as I am telling you,
+[28:47] now I will talk about the collector, so why are you thinking about the collector first,
+[28:51] I will tell you, if you think so much, you don't need to come here,
+[28:55] now look, the collector is the least doping in all three regions, okay,
+[29:01] who is the least doping of the collector, collector is most lightly doped and it is largest in size,
+[29:30] okay, it is the largest in size, it is the least doped and it is the largest in size, okay,
+[29:40] it is the largest in size, now the question comes, sir, why is it the least doping,
+[29:46] you understand this, look, look, this is the smallest, this is P plus or wait, take N plus,
+[30:10] take NPN, what did I tell you, in NPN and PNP, there is a change in the holes and electrons,
+[30:16] like in NPN, you are saying that electrons are coming from the emitter, so in PNP,
+[30:23] we will bring holes from the emitter, okay, now what do we say, dear, that this is the collector base
+[30:29] junction, you see this junction, what will you call it, collector base junction,
+[30:36] here it will be a depletion layer, dear, the depletion layer here will be because your collector is lightly doped,
+[30:47] so it will be more in the collector, it will be less in the base, it will be more in the collector and less in the base,
+[30:57] sir, why is this, dear, I had taught you a condition, when the basic of the semiconductor is called charge neutrality,
+[31:06] because there is less dense atom here, it is spread comfortably, it is open, so you have to take it too far,
+[31:14] okay, and here the atom is completely densely packed, so the distance here will be less, so what are we saying,
+[31:21] this depletion layer, so depletion layer, depletion layer extends more in collector, more in collector than base,
+[31:46] I have also written the condition of it, how did I write the condition, this one, suppose XB is in the base,
+[31:59] and this one is in the collector, so you said NBXB is NCXC, because NC is small, so XC will be big,
+[32:13] NC is small, so XC will be big, is the matter clear, tell me, the matter is shining that the collector is kept the most lightly doped,
+[32:24] so that the depletion layer is in the most collector, okay, the depletion layer is spread the most in the collector,
+[32:33] for this we have kept the collector lightly doped, okay, now why is it like this, it spreads more in the base, what would I do,
+[32:42] children, the base is very thin, if the depletion layer spreads more in the base, then it can be that the base region ends,
+[32:51] we will read it further in the early effect, it is called punch through, what is called punch through,
+[32:59] so if you keep the depletion layer less than the base doping collector, then the depletion layer spreads more in the base,
+[33:05] and because the base is thin, then it can be that the depletion layer eats the whole base, if it eats the whole base,
+[33:14] then the base ends, that will be called as a punch through, did you understand, did you understand,
+[33:23] if what you were trying to assume from me, if NB is less than NC,
+[33:32] the depletion layer would extend, would extend more in base, would extend more in base,
+[33:49] and since base layer is kept thin, base layer is kept thin,
+[34:06] then the entire base may get depleted called as punch through, okay,
+[34:33] now everyone is clear, why is the doping of the collector less, now sir, you also said that the collector is the largest,
+[34:45] yes, what happens is that the collector base junction is very much heated here,
+[34:51] because often the junction of the collector base is kept as reverse bias, and you know that the voltage in reverse bias is more,
+[35:00] that is why the heating can be high, so you understand that most of the heat generated by a BJT is generated in the collector base junction,
+[35:10] now I want this heat to be easily radiated to the atmosphere, and since I want this atmosphere to be radiated,
+[35:20] then I will have to keep the area of the collector more, because the more the surface area is, the more easily the heat radiates in the atmosphere,
+[35:31] so what are we saying, the collector is made largest, so that heat generated in CB junction,
+[36:01] can easily be radiated to the atmosphere, okay, that is why the collector size is kept the most,
+[36:25] now your question was that sir, you showed a small region in the collector in which you showed heavy doping,
+[36:39] now what happens is that the less you keep doping, the more your voltage drops, or the less your conductivity is,
+[36:59] doping means how much is the charge carrier, if the charge carrier is more, then the conductivity will be less,
+[37:08] so because it is lightly doped, its conductivity is very low, because of which its resistance will be made with metal,
+[37:17] when it will be connected with metal, that resistance can be high,
+[37:20] if I tell that resistance, which we call contact resistance, contact resistance means when two different materials are touch each other,
+[37:31] the resistance on their junction is like this aluminum, this is silicon, aluminum and silicon when they are touch each other,
+[37:40] so the resistance on their junction is contact resistance, so if we want to reduce contact resistance,
+[37:48] then we have to keep a small region high doping, so that it has more charges, more conductivity and less resistance,
+[37:58] so what was the reason for this small region to be high doped, so that when it comes to the contact of metal,
+[38:04] so here the resistance is less and here the voltage drop is also less, the voltage drop will go between the base collector,
+[38:12] I want to minimize the drop between the collector and the metal and for that I have kept a small heavily doped region in the collector,
+[38:22] ok, now it is clear, a small region in collector, in collector is kept heavily doped,
+[38:40] in collector is kept heavily doped to minimize effect to increase conductivity,
+[39:00] and minimize contact resistance with the metal, ok, contact resistance with the metal,
+[39:15] now we got the answer to all the questions, whatever you were asking, this is what I say,
+[39:20] this is what I say, be patient, so all the things will be discussed,
+[39:25] ok, N minus will also get a voltage drop in N plus, as long as the material remains the same,
+[39:33] then there is no such special voltage drop, ok, N minus will get a voltage drop in between N plus,
+[39:42] because it is silicon, it is N type, what is the difference between doping and concentration,
+[39:48] neither did the nature change nor did the material change, it is clear, tell me the whole construction,
+[39:54] it is clear, the construction is good, now see, we visualize BJT, my child, like two diodes,
+[40:03] this diode is called ammeter base junction, what do you say, ammeter base junction,
+[40:12] I said bi-junction transistor, there are two PN junctions, and this is called collector base junction,
+[40:23] what does it say, collector base junction, ok, collector base junction, so there are two types of junction,
+[40:36] now my child, how are you bias these junctions, you are bias forward, you are bias reverse,
+[40:43] on the basis of this, BJT's operating mode is there, ok, BJT's operating mode is there,
+[40:51] that is, there are two modes in the diode, forward bias, reverse bias, so there are two diodes here,
+[40:56] so there will be four combinations of two diodes, forward, forward, reverse, reverse, reverse, reverse,
+[41:02] on the basis of this, BJT's operating mode will be there, as you see, ammeter base is kept reverse,
+[41:08] the collector is also kept reverse, when both are reverse, then the current cannot flow,
+[41:14] cut-off, cut-off means no current, ammeter is kept forward, the collector is kept reverse,
+[41:21] this is the most important operating region, it is used the most, it is called active, what do you say,
+[41:29] active, and in this region, a BJT amplifier can work, that is, if you want to increase the amplitude of the signal,
+[41:39] if you want to make an amplifier, then you have to work in an active region, in which the ammeter base is forward,
+[41:46] the collector base is reverse, then the next child, ammeter base reverse collector forward,
+[41:52] that is, the opposite of the upper one, the reverse of the forward and the reverse of the forward,
+[41:56] so when the upper one is the opposite, then it is called inverse active, inverse active, just opposite of active,
+[42:04] okay, now both are forward, so that is saturation, that is what saturation, okay,
+[42:13] why is it called saturation, it will understand you later, now don't focus on it more,
+[42:19] why did you say saturation, why did you say cut-off, now you should remember this table very well,
+[42:25] child, what is the state of different different junctions in a different operating mode,
+[42:30] because you know, these small exams, there are only these exams, engineering services,
+[42:36] it is asked, what do you tell, if I am talking about cut-off mode, then what will be the state of my ammeter base
+[42:43] and collector base, when such a question can be asked, then you should get this table,
+[42:48] look at this, we can show it in the graph, we can show it in the graph,
+[42:54] and look, this is the reverse active one, we will not see this anywhere because it is not used practically,
+[43:03] I will tell you what is happening in the reverse active, what is the problem, we will see in the future,
+[43:08] when I teach active, then I will tell you, so remember to ask me, it may be, I will forget,
+[43:14] okay, see this forward bias, this forward bias, so when you see, if you see here,
+[43:27] you will say ammeter base reverse bias and here you will say collector base reverse bias,
+[43:37] when both the junction forward first quadrant, then saturation, ammeter base forward,
+[43:48] collector base reverse active, both reverse cut-off, ammeter base reverse or collector base forward,
+[44:01] reverse active, now look, many children must be thinking that sir, if this is working like an amplifier in the active,
+[44:11] then if I talk about the reverse active, then this will become an attenuator in the inverse active,
+[44:17] this will become an attenuator in the inverse active, that is, if this was the gain of 10 in the active,
+[44:25] then sir, in the inverse active, then this will give the gain of 1 by 10, in the inverse active, this will give the gain of 1 by 10,
+[44:33] but do you know, this does not happen, why does it not happen, in the active and inverse active,
+[44:40] basically you know what you did, you exchanged the role of ammeter and collector,
+[44:44] that is, now you have to give the collector the charges and take the ammeter charges,
+[44:50] now the collector is lightly doped, it will give the charges less, ammeter is highly doped,
+[44:56] ammeter but the size is less, now when the heat dissipates on the ammeter, then the ammeter will burn,
+[45:02] so most of the chances are that the device will be damaged in the inverse active,
+[45:06] because brother, the construction of ammeter and collector is not the same,
+[45:10] so if you say that the ammeter works as a collector, the collector works as an ammeter,
+[45:16] then it will be very bad, in the active and inverse active, this is the difference,
+[45:20] like here you forwarded the ammeter base, here you forwarded the collector base,
+[45:26] here you reversed the collector base, here you reversed the ammeter base,
+[45:31] this means the ammeter base work will be done by the collector base,
+[45:35] and the collector base work will be done by the ammeter base,
+[45:39] so you can say that the ammeter and collector are exchanging the role, listen again,
+[45:43] But Ammeter had more charges.
+[45:46] Now you are telling the collector to give 2 charges.
+[45:49] It has less.
+[45:50] The collector had more area.
+[45:52] He would have radiated the heat easily.
+[45:54] Now you are telling the ammeter to radiate 2 heat.
+[45:57] Which is small.
+[45:58] So there is more danger of device damage.
+[46:01] That is why the inverse active region is rarely used.
+[46:08] It is used in a digital device in the logic family.
+[46:11] But it is not used anyway.
+[46:13] Right?
+[46:14] It is not used anywhere in analog.
+[46:17] It comes in a logic family.
+[46:19] If the matter is cleared then our meaning will be more than 3 things.
+[46:23] Is it cleared? Tell me.
+[46:34] So what can you say in inverse active region?
+[46:38] I will write the role of...
+[46:41] So that you remember.
+[46:43] Ammeter and collector.
+[46:49] Interchanged.
+[46:51] Right?
+[47:00] Role of ammeter and collector.
+[47:02] Interchanged.
+[47:03] Right?
+[47:04] Yes.
+[47:05] Whether it is stable or graph.
+[47:07] It will remain the same according to the forward reverse.
+[47:10] It does not depend on NPNP and PNP.
+[47:12] It depends on forward biasing and reverse biasing.
+[47:20] Sir, there is a doubt.
+[47:21] Why do we make p-type and diode formation in anti-semi-conductor?
+[47:25] Why don't we do inverse?
+[47:27] What do you mean?
+[47:29] In anti-bulk because anti-semi-conductors are more readily available in the market.
+[47:34] And the other thing is that in anti-type your majority carrier is electron.
+[47:38] Its mobility is more.
+[47:40] That is why anti-type is always given more preference than p-type.
+[47:46] Okay?
+[47:47] Is the matter clear?
+[47:48] Come on.
+[47:51] Now let's see how BJT works.
+[47:53] Okay?
+[47:54] We will understand well how we are working.
+[47:59] I have already taken an example of NPNP.
+[48:01] That is why I will take an example of PNP.
+[48:08] Now you will enjoy understanding its working.
+[48:24] Okay?
+[48:26] So look.
+[48:27] This is P plus.
+[48:31] Wait, let's write it up.
+[48:33] This is P plus.
+[48:35] This is N.
+[48:37] P minus.
+[48:39] Now do you know what we do?
+[48:42] This emitter and base region keeps it forward bias.
+[48:47] I will talk about active region because it works in the same way.
+[48:52] Okay?
+[48:53] Look at the base region.
+[48:55] People don't show it.
+[48:57] But we should show resistance.
+[49:00] Otherwise how much current can be?
+[49:02] So what does resistance do?
+[49:04] It limits the current.
+[49:06] Now forward bias means you will put positive on P of the battery.
+[49:10] And you will put negative on N.
+[49:13] This is what forward biasing means.
+[49:15] So positive on P.
+[49:17] And look at this.
+[49:18] This is negative on N.
+[49:20] This is negative.
+[49:26] Look at this.
+[49:35] What is happening?
+[49:37] Okay?
+[49:39] Now reverse bias is to be done on the other junction.
+[49:43] If reverse bias is to be done, then positive on N and negative on P.
+[49:48] Okay?
+[49:49] Okay?
+[49:50] There is more voltage in reverse biasing.
+[49:53] As compared to base emitter, there is more voltage on collector base.
+[50:01] You should also put resistance here.
+[50:04] So that your current is limited.
+[50:07] Otherwise if the current is very high, then the device will be damaged.
+[50:18] Okay?
+[50:28] Okay?
+[50:30] It is so clear.
+[50:31] I have forward biased the emitter base.
+[50:34] And I have reverse biased the collector base.
+[50:37] Now look at this.
+[50:38] Let's write this resistance R E.
+[50:42] Let's write this on VEE emitter.
+[50:46] Let's write this on RC.
+[50:48] And let's write this on VCC.
+[50:52] Now look at what happens?
+[50:54] If you forward bias a junction here.
+[50:58] In forward bias junction, you know that there is diffusion.
+[51:03] Correct?
+[51:04] There is diffusion.
+[51:06] You know this very well.
+[51:10] N
+[51:11] Forward biased.
+[51:16] P N junction.
+[51:29] Charge carriers.
+[51:31] Reversed bias voltage is always more than forward.
+[51:46] You can keep applied voltage similar.
+[51:50] You can keep the same.
+[51:52] But the voltage that will make the junction cross will be more.
+[51:56] There is 0.7 in forward bias.
+[51:58] And how much is the cross of the junction?
+[52:01] Right?
+[52:02] Now look.
+[52:03] In forward bias P N junction, the charge carriers will diffuse.
+[52:07] Now dear, when the charge carriers will diffuse, what will happen?
+[52:11] P to N will start going to holes.
+[52:15] What will start going to holes?
+[52:19] Okay?
+[52:20] And what will start coming from N?
+[52:22] Electron.
+[52:24] Now look, I am making the electron arrow small.
+[52:27] Do you know why?
+[52:28] Because N has less electron.
+[52:31] P is highly doped.
+[52:33] It has more holes.
+[52:35] Think about it.
+[52:36] When the P has more doping, there are more holes on it.
+[52:39] When the N has less doping, then the electron is less.
+[52:42] That is, the more holes you are going from P to N, that will be more.
+[52:46] Okay?
+[52:47] And the more electrons you are going from N, they will be less.
+[52:55] Rajneesh, dear, if you comment in such a bad language next time, then you will be blocked from this channel.
+[53:02] Okay?
+[53:03] And then you will not be able to comment.
+[53:05] Neither will I be able to give a single day in my entire life.
+[53:08] I will revert to your query.
+[53:10] This is not the way you talk about the faculty.
+[53:13] Okay?
+[53:16] Now look, when the holes are going from P to N, when your holes are going from P to N,
+[53:22] then you will show the current in the direction of the holes, right?
+[53:27] Then you will show the current in the direction of the holes.
+[53:34] This is IE1.
+[53:38] Did you understand?
+[53:39] What is IE1?
+[53:41] What is IE1?
+[53:43] IE1 is the current because of the holes.
+[53:47] The holes that are going from P to N.
+[53:50] The holes that are going from P to N.
+[53:53] Did you understand the first current or not?
+[53:56] IE1 is current due to movement of holes from P to N.
+[54:17] Ammeter to base.
+[54:19] If this was the NPN transistor, then instead of holes, you were writing electrons.
+[54:25] If this was the NPN, then instead of holes, you were talking about electrons.
+[54:30] Now the second current will be smaller than this, the electron one.
+[54:35] And the current of the electron is opposite to the electron.
+[54:38] Everyone believes that the current of the electron is opposite to the electron.
+[54:43] If the current of the electron is opposite to the electron, then how will it go?
+[54:50] It went like this.
+[54:53] And it came like this.
+[55:03] It came like this.
+[55:05] I called it IE2 in the emitter.
+[55:08] And when it entered the base, it was called IB2.
+[55:12] I gave the second name to one current when it was in the emitter, IE2.
+[55:18] And when it entered the base, then it becomes IB2.
+[55:22] Then it becomes IB2.
+[55:24] So what are we saying?
+[55:27] Let's add one more page.
+[55:29] Let's write it well.
+[55:31] IE2 is equal to IB2 is current due to flow of electrons from base to emitter.
+[55:58] And here you also know that IE2 is less than IE1.
+[56:08] Okay?
+[56:10] Is this clear?
+[56:12] Understand one more thing.
+[56:14] If I put KCL here and ask you, tell me the current of emitter.
+[56:22] So you can say it clearly.
+[56:24] Sir, there are two currents, IE1 and IE2.
+[56:29] Nikhil, you can see the playlist of the machine on this channel.
+[56:33] Okay?
+[56:35] There are 64 videos, I think.
+[56:37] There are 166 actually.
+[56:39] There is a whole machine in it.
+[56:41] All you have to see is the basics.
+[56:43] IE1 plus IE2.
+[56:48] Is this clear?
+[56:50] Is this clear?
+[56:52] Okay?
+[56:54] Now see what happens, dear?
+[56:57] The current of IE1.
+[57:00] IE1.
+[57:01] Whose was this?
+[57:02] It was because of holes.
+[57:03] Okay?
+[57:04] This IE1 was because of holes.
+[57:07] Now when these holes are entered,
+[57:10] when these holes are entered in the end region,
+[57:14] then they will start recombining with electrons.
+[57:17] Correct?
+[57:18] They will start recombining with electrons.
+[57:21] So when this hole comes into your base,
+[57:26] then they will recombine with electrons.
+[57:29] Because of which electrons will start to end in the end region.
+[57:34] Because of which electrons will start to end in the end region.
+[57:38] And if electrons start to end in the end region,
+[57:42] then the responsibility of giving them back is of the battery.
+[57:48] So the battery gives another current from here, dear.
+[57:52] Wait.
+[57:55] The battery gives another current from here.
+[57:59] Or what is this?
+[58:00] First it gives electrons.
+[58:02] Who?
+[58:03] The end region.
+[58:05] It gives such an electron to the end region.
+[58:08] That means another current will come in the battery.
+[58:16] Like this.
+[58:19] Or what is this?
+[58:21] Dear, stop.
+[58:24] Let's take this arrow a little further back.
+[58:38] Okay?
+[58:51] Now...
+[59:05] Look, this battery has given an electron.
+[59:08] So when the battery has given an electron, dear,
+[59:11] then another current will come in the battery.
+[59:15] I will call it IB1.
+[59:18] So there are two current in the base.
+[59:21] One is because of the electron flow, which is made by IB2.
+[59:24] And the other is because of the battery electron, which is made by IB1.
+[59:29] This is going from the battery to the electron.
+[59:32] So what am I saying?
+[59:35] When holes from ammeter
+[59:44] enter base,
+[59:53] they recombine
+[59:58] with electrons in base
+[60:04] and
+[60:08] electron reduce.
+[60:12] So these electrons,
+[60:17] these electrons are replanished.
+[60:22] Replanished means they are renewed
+[60:26] by battery
+[60:30] through current IB1.
+[60:33] So there are two current in the base, right?
+[60:37] There are two current in the base.
+[60:40] One IB1 and one IB2.
+[60:42] Why IB2?
+[60:44] The electron flowing in forward biasing,
+[60:48] which is because of the ammeter and IB2.
+[60:51] IB1 is because of the electron flowing in forward biasing.
+[60:55] Because of the holes coming from the ammeter,
+[60:59] we called them IB1.
+[61:02] Their current was IB1.
+[61:05] Now you yourself said, dear,
+[61:08] that the holes coming from the ammeter,
+[61:10] the holes coming from the ammeter,
+[61:13] some of them are finished by you.
+[61:16] Some of them are finished, right?
+[61:18] Because they ate the electron in the end region.
+[61:21] Now the remaining holes that will go forward,
+[61:24] the remaining holes that will go forward, dear,
+[61:27] they will be called as IC1.
+[61:30] The remaining holes that will go forward,
+[61:33] they will be called as IC1.
+[61:36] IC1.
+[61:38] Okay?
+[61:39] And here, dear,
+[61:41] we will understand one more thing.
+[61:43] Because this junction is reverse bias,
+[61:46] there is also a reverse saturation current here.
+[61:49] ICBO.
+[61:51] What is this?
+[61:53] The reverse saturation current of PN junction.
+[61:57] Because you have kept the reverse bias, right?
+[62:00] So reverse saturation current.
+[62:03] So there are two currents in IC as well.
+[62:06] IC1 plus ICB.
+[62:09] Okay? What is IC1?
+[62:11] The hole coming from the ammeter is 100 holes.
+[62:14] Out of which, 10 holes combine with the electron in the base.
+[62:18] The remaining 90 holes reach the collector.
+[62:21] That is the current of the 90 holes, IC1.
+[62:24] And ICBO is a reverse saturation current.
+[62:28] Which is going across this collector base junction.
+[62:32] Because it is a reverse current, so it is going from N to P.
+[62:35] Because the reverse current is going from N to P.
+[62:40] So what do we say?
+[62:43] Some holes from ammeter.
+[62:48] Some holes from ammeter.
+[62:56] Recombine with electron in base.
+[63:06] But remaining holes reach collector.
+[63:25] And constitute IC1.
+[63:35] Okay?
+[63:39] ICBO is the reverse bias or reverse saturation current.
+[63:49] Across reverse biased collector base junction.
+[63:59] Okay?
+[64:09] So here if you talk about ICBO, sorry, collector current KCL.
+[64:15] It is IC1 plus ICBO.
+[64:20] So there are two components in each current.
+[64:23] Okay?
+[64:24] There are two components in each current.
+[64:28] IC1 plus ICBO, IB1 plus IB2, IE1 plus IE2.
+[64:36] Now tell me, son, whether all the currents are understood or not?
+[64:41] IB1 plus IB2, son, think like this instead of KCL.
+[64:45] There are two currents in one wire.
+[64:47] So what is the total current in the base wire?
+[64:50] IB1 plus IB2.
+[64:53] So son, KCL will be satisfied from all three, right?
+[64:59] It will not be that IE and IC are equal.
+[65:02] KCL will be IE is equal to IB plus IC.
+[65:07] Outgoing is two current from devices.
+[65:10] One IE came, some current came out in the base, IB, some came out in the front, IC.
+[65:15] So IE and IC will not be equal.
+[65:18] IB will be equal to IB plus IC.
+[65:22] Did you understand?
+[65:26] Didn't you get ICBO?
+[65:28] Hey, this collector base junction is a reverse bias.
+[65:32] There was an IS name current in the reverse bias that doubled every 10 degrees centigrade
+[65:38] at rise in temperature.
+[65:40] Remember the characteristic of diode in reverse biasing.
+[65:44] A nano ampere current flows.
+[65:47] This is the current.
+[65:49] When you keep a junction reverse bias, its reverse current will also flow.
+[65:54] Even though it will be very small, but it will be right.
+[65:57] You will ignore it.
+[65:59] Tell me, is this clear?
+[66:04] Is this clear?
+[66:06] Son, the electron is not increasing in the base, Ravi.
+[66:08] As you see, let me explain again.
+[66:10] There are 100 holes from here.
+[66:12] Now 10 holes in the base are recombined from 10 electrons.
+[66:16] Where do the remaining 90 holes go in the collector?
+[66:20] The 10 holes here recombined from 10 electrons,
+[66:24] so 10 electrons in the base are gone.
+[66:26] These 10 electrons give this battery, which we showed the current of IB1.
+[66:32] So the more electrons end in the base,
+[66:35] this battery will be returned to IB1 with the current.
+[66:40] Yes, it is a drift current, son, ICBO.
+[66:43] It is a drift current, ICBO.
+[66:46] Why E is kept open in ICBO?
+[66:49] Son, I will not tell the meaning of ICBO later.
+[66:52] The full form of ICBO is collector base with emitter open.
+[66:56] That means if there was no current on the emitter,
+[67:00] then IC1 would not be there.
+[67:02] Then the only current in the collector would be ICBO.
+[67:05] This means that collector base current with emitter open.
+[67:08] If there was no current from the emitter,
+[67:10] then there would be only one current in the collector base.
+[67:12] That would be ICBO.
+[67:14] So this is the full form of ICBO.
+[67:16] Collector base current with emitter open.
+[67:20] Okay.
+[67:22] Yes, this is a reverse saturation current.
+[67:25] I have also written it.
+[67:27] Then you are asking the same question.
+[67:31] Did you understand everyone?
+[67:33] If you understand, I will show you a miracle.
+[67:37] That you will have a lot of fun.
+[67:39] That means the concept and mind will be fully open.
+[67:46] Okay.
+[67:49] Now son, don't go to VCC.
+[67:51] I have not even applied VCC.
+[67:53] Why do you run ahead?
+[67:54] Yes, IB1 and IB2 are two components of IB.
+[67:58] Explain IB2 and IB1.
+[68:01] IB1 was explained to everyone just now.
+[68:04] What is happening here?
+[68:07] Try to understand again, Harsh.
+[68:09] From here, 100...
+[68:16] See.
+[68:17] 100 holes run from base to base.
+[68:20] Okay. 100 holes run from base to base.
+[68:22] The current of 100 holes is IE1.
+[68:25] The current of 100 holes is IE1.
+[68:27] Who will enter the 100 holes?
+[68:29] In your end region.
+[68:31] Out of 100 holes, 10 holes were recombined from electrons.
+[68:35] So 10 holes were destroyed.
+[68:37] The remaining 90 holes were made in the collector, IC1.
+[68:41] So IC1 is corresponding to 90 holes.
+[68:44] IE1 is corresponding to the 100 holes.
+[68:47] Now the 10 holes that ended here.
+[68:51] The 10 electrons that ended along with them.
+[68:54] And the 10 electrons that ended.
+[68:56] They will supply the battery back.
+[68:59] So these 10 electrons will go up.
+[69:01] Meaning their current will come down.
+[69:03] That current is IB1.
+[69:05] Okay.
+[69:06] If the holes were going from P to N,
+[69:08] then the electrons would be coming from N to P.
+[69:10] Even though they are coming less, but the electrons would be coming.
+[69:13] The current of those electrons is IE2.
+[69:16] Or say IB2.
+[69:18] That is the current of the electrons.
+[69:20] Okay.
+[69:23] Now tell me, are you clear?
+[69:26] Are you all clear now?
+[69:28] Yes.
+[69:34] Dear, there is no need to charge the ICBO's base.
+[69:39] ICBO is simply the reverse saturation current.
+[69:42] Dear, if the emitter is not there.
+[69:44] Do you understand?
+[69:45] If the emitter is not there, then this current would be ICBO.
+[69:49] Now understand this.
+[69:51] If you remove this battery,
+[69:53] circuit it open.
+[69:55] No holes will come.
+[69:57] If the emitter is not coming from the emitter,
+[69:59] then this current will flow, ICBO.
+[70:02] Because this will work as a diode.
+[70:05] And that diode is reverse bias.
+[70:08] If you are making one PN junction out of two PN junctions,
+[70:12] you are running one out of two and keeping it reverse,
+[70:15] then the current will also come.
+[70:17] Oh God!
+[70:19] I will break my mother.
+[70:21] Look at the donkey.
+[70:23] He is saying that the IE1 has become IB1.
+[70:25] The donkey Prasad.
+[70:26] I just told you that the IE1 is the current of 100 holes.
+[70:29] Out of which 10 holes have ended in the end region.
+[70:33] And if 10 holes have ended, then 10 electrons have also ended.
+[70:36] The current of 10 electrons is IB1.
+[70:39] So who is the IE1?
+[70:41] Who is the IE1?
+[70:43] The current of 10 electrons is IB1.
+[70:45] So whose current is IE1?
+[70:47] The current of 100 holes.
+[70:49] Out of which 10 holes have ended.
+[70:51] Out of which 10 electrons have ended.
+[70:53] The current of those 10 electrons is IB1.
+[70:55] How did it become equal?
+[70:57] How did it become equal?
+[71:04] Brother, what kind of instrument are you playing?
+[71:06] Now I have explained it so well.
+[71:09] Now if you will not listen, then tell me how I will clear this thing.
+[71:12] I have explained all the currents well.
+[71:14] I have also written one thing.
+[71:16] Whose current is IE1?
+[71:18] Whose current is IB1?
+[71:20] Whose current is IB2?
+[71:22] I have written all the things.
+[71:28] Did it shine?
+[71:29] Now see, in the mind, one question of the children remains that
+[71:33] Brother, if the ammeter base was forward,
+[71:36] come on, the charges flowed there.
+[71:38] Sir, he understands that there is current in the forward bias diode.
+[71:41] The current flows.
+[71:43] But if the collector base was my reverse,
+[71:46] then how did the current cross in it?
+[71:48] How did you say that when IE1 reaches the collector,
+[71:52] it will become IC1.
+[71:56] So it will become IC1.
+[71:58] Okay, so let me show you what happens for this.
+[72:04] Understand it carefully.
+[72:07] It is possible that you will get a little more clarity from here.
+[72:14] See, the ammeter base junction is forward biased.
+[72:19] So then I am not showing any depletion layer there.
+[72:22] But the collector base is reverse.
+[72:28] If the collector base is reverse,
+[72:30] then I will show it in the depletion layer.
+[72:33] And the depletion layer will be drawn more to the side where the doping is less.
+[72:37] Where is the doping?
+[72:39] There is less in the collector.
+[72:41] So show the depletion layer more towards the collector.
+[72:44] Okay, this is PNPN.
+[72:48] So there are positive ions in the N region because the electrons are donated.
+[73:04] Okay?
+[73:20] Try to understand things properly again.
+[73:33] Now I am showing the battery directly.
+[73:36] Don't worry by looking at the battery.
+[73:39] Okay, I will not show it again and again that the resistance is also applied.
+[73:42] Understand it.
+[73:43] Why do I have to apply the resistance so that I can limit the current?
+[73:49] Because if the current is too much, then the problem will be solved.
+[74:04] Now it is PNPN.
+[74:11] So reverse bias has more voltage across the device.
+[74:15] Don't do the breakdown.
+[74:17] Don't apply so much voltage that the breakdown is done.
+[74:21] And do you know which breakdown comes here in the collector base?
+[74:25] There will be a breakdown here.
+[74:27] Avalanche breakdown.
+[74:28] Because there is light doping.
+[74:29] You know that in heavy doping comes the Zener breakdown.
+[74:32] And in light doping comes the Avalanche breakdown.
+[74:35] So in the collector base, what is the danger of breakdown?
+[74:38] Always the Avalanche breakdown.
+[74:41] Okay?
+[74:47] Sir, for plus students, don't privatize these videos.
+[74:52] Tell me how to do it?
+[74:55] Now I am coming from YouTube.
+[74:57] So today I will talk and see that our Academy Plus users
+[75:01] will give a new feature in the YouTube app.
+[75:03] That for the plus students, all the content of YouTube will be public.
+[75:06] And for the rest of the students, it will be private.
+[75:09] Now this can be made YouTube.
+[75:11] I will not be able to do anything in it.
+[75:16] Now see.
+[75:19] P plus and P minus.
+[75:23] Okay?
+[75:24] We said this.
+[75:26] Look.
+[75:27] Here, now you understand carefully, there are a lot of holes here.
+[75:33] There are a lot of holes here.
+[75:36] Here are the holes.
+[75:40] There are a lot of holes like this.
+[75:44] Okay?
+[75:45] There were a lot of holes like this here.
+[75:48] Now what will happen here?
+[75:51] Now these holes will diffuse here.
+[75:55] Okay?
+[75:56] So the current of the emitter base is what current?
+[75:59] It is a diffusion current.
+[76:01] So a lot of holes have come here.
+[76:06] Now there will be some electrons here.
+[76:09] Present.
+[76:16] These will be some electrons.
+[76:19] Now believe it.
+[76:21] Here, two electrons and holes combine.
+[76:24] Look at this.
+[76:26] These two have combined.
+[76:28] These two have combined.
+[76:29] Here, two holes have ended.
+[76:31] And two electrons have ended.
+[76:33] When two electrons have ended,
+[76:36] the battery will send two electrons from here.
+[76:42] These two electron batteries have sent.
+[76:44] Okay?
+[76:45] The current caused by them is IB1.
+[76:50] IB1.
+[76:52] Now believe it.
+[76:55] How many holes are coming from here?
+[76:56] Six holes are coming.
+[76:58] Suppose here, one electron is going like this.
+[77:02] One electron is coming like this.
+[77:05] So the current here is IB2.
+[77:08] This is the current of this one electron.
+[77:11] Okay?
+[77:12] If six holes are going from P to N,
+[77:14] then one electron is coming from N to P.
+[77:17] This is diffusion.
+[77:19] Okay?
+[77:20] These two current.
+[77:23] What is happening?
+[77:24] This is the diffusion
+[77:28] of majority carrier.
+[77:31] Now you understood IB1 and IB2.
+[77:33] IB2.
+[77:39] Now look.
+[77:40] Your six holes went from here.
+[77:41] Count the blue one.
+[77:42] One, two, three, four, five, six.
+[77:44] Two here.
+[77:46] Two electrons and holes have been combined.
+[77:48] There are four left.
+[77:50] Now the depletion layer.
+[77:52] How is the electric field in this?
+[77:54] Positive and negative charge.
+[77:57] This is the electric field.
+[77:59] This is the electric field.
+[78:00] The electric field forces on positive charges in the direction of field.
+[78:07] Okay?
+[78:08] In the direction of field.
+[78:11] The force on positive charges.
+[78:14] That will be in the direction of field.
+[78:17] So actually this reverse bias junction
+[78:20] will not stop the holes.
+[78:22] Instead, it will cross the holes.
+[78:25] Because the holes are positive charges.
+[78:27] The holes are our positive charges.
+[78:29] So the positive charge holes will cross here.
+[78:33] Okay?
+[78:35] So they will cross like this.
+[78:40] This electric field is helping them.
+[78:43] Okay?
+[78:47] Now the current made by flowing them.
+[78:50] That is IC1.
+[78:52] IC1.
+[78:54] Okay?
+[78:55] Now dear, this is in the n region.
+[78:57] Even though there were more electrons.
+[78:59] There must be some holes in it.
+[79:01] They will also cross.
+[79:02] The current that will be made by them is ICBO.
+[79:05] So the hole that came from the emitter.
+[79:07] That is IC1.
+[79:09] And the first minority carrier hole in the n region.
+[79:13] When they will cross that is ICBO.
+[79:16] And that happens in every reverse diode.
+[79:19] So I am trying to explain this to you.
+[79:22] This reverse bias junction.
+[79:24] Instead of opposing the emitter charges.
+[79:27] It allows.
+[79:30] It allows.
+[79:32] Do you understand this?
+[79:35] So what am I trying to tell you here?
+[79:38] Reverse bias.
+[79:44] Across.
+[79:48] Collector base junction.
+[79:51] Supports.
+[79:57] The crossover.
+[80:04] Of emitter charges.
+[80:13] From base to collector.
+[80:20] Now you understood.
+[80:24] Now you understood all the currents.
+[80:27] Tell me.
+[80:28] Is there any doubt here?
+[80:31] Now the gate aspirant is saying.
+[80:33] Diffusion is due to difference in charge density.
+[80:36] There are more holes in the p region than in the n region.
+[80:39] So the holes in the p region will go to n.
+[80:41] There are more electrons in the n region than in the p region.
+[80:44] So the electrons of n will go to p.
+[80:46] So they are indicating these two arrows.
+[80:48] Pink one and blue one.
+[80:52] Yes.
+[80:53] There will be the same argument in NPN.
+[80:55] But the nature of the charges and the direction of the currents.
+[80:58] Both things will be reversed.
+[81:00] All the currents will go back.
+[81:02] And the charges will be instead of holes.
+[81:04] Instead of electrons, instead of holes.
+[81:06] Okay.
+[81:07] So what happens in NPN and PNP?
+[81:09] The direction of the current is reversed.
+[81:13] Yes.
+[81:14] So this is the point.
+[81:15] Gate aspirant.
+[81:16] Think carefully here.
+[81:17] This is the n region.
+[81:19] This is the n region.
+[81:20] When holes come in it.
+[81:21] So holes are minority carrier.
+[81:24] Reverse bias actually allows the flow of minority carrier.
+[81:28] Reverse bias doesn't allow the majority.
+[81:31] Reverse bias won't let holes go to n.
+[81:34] The electron won't let it go to n.
+[81:37] But it allows the minority carrier.
+[81:39] So the holes in the n region.
+[81:41] These are minority carrier.
+[81:42] The reverse bias will allow the flow of these minority carrier.
+[81:46] From base to the collector.
+[81:49] From base to the collector.
+[81:51] It's shining now.
+[81:53] Tell me brother.
+[81:54] Should I tell you whether it's shining or not?
+[81:58] All of you tell me.
+[82:01] It's shining well.
+[82:02] 6 current.
+[82:03] In 2 ammeter, 2 base and 2 collector.
+[82:08] Okay.
+[82:09] ICBO etc.
+[82:10] ICBO etc.
+[82:11] It will come ahead.
+[82:12] I will discuss it again.
+[82:14] But for now,
+[82:15] When there is any junction reverse bias.
+[82:18] So are there any charges coming from the back or not?
+[82:21] But there will be a reverse saturation current in reverse bias.
+[82:25] Right?
+[82:29] Dear, there won't be an electric field here.
+[82:31] This is a forward bias.
+[82:32] The electric field that comes here.
+[82:34] It removes the depletion layer.
+[82:37] Who makes the electric field in the depletion layer?
+[82:40] When this junction is a forward bias.
+[82:44] So there is no depletion layer here.
+[82:46] So there won't be an electric field here.
+[82:50] Have you forgotten?
+[82:51] The basic of PN junction.
+[82:53] I have studied this in the entire diode.
+[82:56] Yes, this IC1 will be called as drift current.
+[83:05] Now there is one question.
+[83:06] What will happen if the VCC disappears?
+[83:09] Dear, there will be a diode in the middle of the emitter base.
+[83:13] And it will behave like a PN junction.
+[83:17] If you remove the VCC.
+[83:20] Then what will happen here?
+[83:21] The collector part is open.
+[83:23] So there is a diode in the middle of the emitter base.
+[83:25] You know the working of the diode.
+[83:27] That is how you can actually operate BJT as a diode.
+[83:33] ICBO is also drift.
+[83:35] That is why I am not showing it here.
+[83:37] Otherwise you will get confused.
+[83:40] Nillimesh, tell me this.
+[83:42] You have blown the diode out of the diode.
+[83:45] Tell me this.
+[83:47] I have studied all these things in the diode.
+[83:49] And you are repeating all the things that we have forgotten.
+[83:52] Bro, these holes are positive charge.
+[83:55] Plus or minus is the electric field.
+[83:58] The electric field forces the positive charges in its own direction.
+[84:03] That is in the right.
+[84:04] So when these positive charges are in the right,
+[84:07] then they will cross.
+[84:09] Tell me how difficult it is.
+[84:11] It is the basic EMT.
+[84:13] The force on the positive charge.
+[84:15] That is always in the direction of the electric field.
+[84:18] So the electric field is in the right.
+[84:20] The force is in the right.
+[84:21] So the holes crossed.
+[84:24] Electric field is due to high barrier potential.
+[84:27] Barrier potential is due to electric field.
+[84:30] Hemal.
+[84:31] The barrier potential that will be here.
+[84:33] It will be the cause of the electric field.
+[84:35] It will be the cause of the electric field.
+[84:39] Let's neglect the ICBO in maximum cases.
+[84:43] But the ICBO is there.
+[84:45] You have to recognize it.
+[84:47] Let's do one thing.
+[84:49] Let me show it here.
+[84:50] Look.
+[84:52] Let's do one thing to show the ICBO.
+[84:56] Let's make it separately.
+[85:03] Look.
+[85:05] You have to recognize the ICBO.
+[85:08] Only then you will understand.
+[85:28] Now look.
+[85:29] I am not putting anything on the emitter.
+[85:32] Okay.
+[85:36] Okay.
+[85:42] So I am not putting anything on the emitter.
+[85:47] I am putting a battery in between the collector and the base.
+[85:50] I am putting a battery in between the collector and the base.
+[86:15] Okay.
+[86:20] Okay.
+[86:33] Okay.
+[86:34] Now look at this.
+[86:36] This is P plus.
+[86:38] This is N.
+[86:39] And this is P minus.
+[86:41] Okay.
+[86:42] Here the emitter is open.
+[86:46] I did not put any current in the emitter.
+[86:51] I did not put any battery.
+[86:54] Now what are we saying?
+[86:55] There will be positive ions on N plus.
+[87:03] And in P,
+[87:05] because your doping is decreasing,
+[87:07] there will be negative ions spreading.
+[87:11] Now because of this,
+[87:12] an electric field will be made.
+[87:14] P, sorry.
+[87:15] Positive and negative.
+[87:17] Now this N region,
+[87:19] dear,
+[87:20] it will have its own electrons.
+[87:24] Like this.
+[87:26] There will be a lot of electrons.
+[87:29] And there will be a hole of one.
+[87:32] And this P region,
+[87:34] it will have a lot of holes.
+[87:41] And brother,
+[87:42] it will also have an electron of one.
+[87:46] Now this electric field, dear,
+[87:49] because of the electric field,
+[87:51] the force that is always in the direction of the electric field
+[87:54] for the positive charge.
+[87:57] The force on the positive charge is always
+[88:00] in the same direction as the electric field.
+[88:03] And the force on the negative charges is
+[88:06] opposite to the electric field.
+[88:09] So positive charge means holes.
+[88:11] So the force on the holes is on the right.
+[88:14] So the holes will start coming here.
+[88:18] And the force on the electron,
+[88:20] that is moving in the left direction.
+[88:22] So these electrons will come here.
+[88:26] Okay.
+[88:27] So this means your holes are going like this.
+[88:31] In the right.
+[88:33] And your electrons are going like this.
+[88:36] So the current of the holes and electrons
+[88:39] will come in the direction of the current, dear.
+[88:42] What color do we see?
+[88:44] The current will come like this.
+[88:47] I CBO.
+[88:50] So the current will keep flowing here.
+[88:53] I CBO.
+[88:56] I CBO.
+[88:58] One current will flow here.
+[89:00] Okay.
+[89:01] Because if the electrons are going to the left,
+[89:04] then the current of the electrons will be in the right.
+[89:06] The holes are going to the right.
+[89:08] The current of the holes will also be in the right.
+[89:10] And the current of the electron will be
+[89:12] I CBO.
+[89:14] It is equal to I holes
+[89:17] plus I electron.
+[89:19] In both the current right.
+[89:21] Is I CBO clear now?
+[89:23] Tell me.
+[89:25] Is I CBO clear now?
+[89:37] Tell me.
+[89:39] Is I CBO clear now?
+[89:43] So what is I CBO basically?
+[89:45] I CBO is the
+[89:48] reverse saturation current
+[89:54] of collector base
+[89:56] junction.
+[90:02] And what do we say about this?
+[90:04] Doubles
+[90:06] for every
+[90:09] 10 degree centigrade
+[90:12] rise and temperature.
+[90:17] I also told this in the diodes.
+[90:21] Okay.
+[90:26] Yes.
+[90:27] Since Brahmindra.
+[90:28] This is what I am telling.
+[90:29] Like a diode.
+[90:30] Like a diode.
+[90:31] Like a diode.
+[90:32] Now I drew it and showed it.
+[90:33] Earlier I was saying it.
+[90:34] I didn't understand it like a diode.
+[90:36] Now if I draw it and show it,
+[90:37] I am asking it.
+[90:38] Is it like a diode?
+[90:40] How will you believe it?
+[90:50] Everything
+[90:52] is
+[90:54] a way to explain it.
+[90:56] Now I have explained it to you in every way.
+[90:58] Related to the back concept
+[91:00] and told it in a fresh way.
+[91:05] Look at this.
+[91:06] Now look at Ujjal.
+[91:08] What is the full form of I CBO?
+[91:10] Read Ujjal.
+[91:12] What is written under I CBO?
+[91:16] Read it.
+[91:24] Okay.
+[91:25] Let's move forward.
+[91:26] Say it.
+[91:28] Shall we move forward?
+[91:30] Let's go.
+[91:32] Now the transistor current relationship.
+[91:34] Okay.
+[91:35] Transistor current relationship.
+[91:37] And what is the relationship
+[91:39] between the currents of the transistor?
+[91:41] So look.
+[91:42] I E
+[91:44] which was
+[91:46] I E1
+[91:48] plus I E2
+[91:50] What is this?
+[91:52] Simply
+[91:53] this is the diffusion current.
+[92:00] Diffusion current of
+[92:04] forward biased
+[92:07] PN
+[92:10] junction.
+[92:12] Okay.
+[92:14] Ammeter based junction was forward.
+[92:16] This is its diffusion current.
+[92:18] Okay.
+[92:19] This is its diffusion current.
+[92:22] Now here
+[92:24] if you want to write a diode current
+[92:26] then what will you write?
+[92:28] I ES
+[92:31] E to the power
+[92:33] V EB
+[92:36] by eta VT
+[92:39] minus 1.
+[92:41] Okay.
+[92:42] This one will go in PNP.
+[92:46] If it was NPN
+[92:48] then the voltage would not have turned upside down.
+[92:50] Why would it have turned upside down?
+[92:51] Because P and N exchange would have been there.
+[92:53] In PNP and NPN
+[92:55] P and N exchange would have been there.
+[92:57] So instead of EB
+[92:59] then BE comes.
+[93:01] And do you know that we
+[93:03] can still read this equation
+[93:05] but we forget it later.
+[93:07] But keep in mind
+[93:09] that this diode equation
+[93:11] is applicable in BJT as well.
+[93:13] And there are questions on it
+[93:15] by applying this equation.
+[93:17] There are so many questions on this equation
+[93:19] that I might not have come in the diode
+[93:21] as much as in BJT.
+[93:23] Is this clear?
+[93:25] Is this clear?
+[93:27] Ammeter current is clear.
+[93:31] Now
+[93:33] we know
+[93:35] that the current in the ammeter
+[93:37] is simply
+[93:39] the forward biased current
+[93:41] of a PN junction.
+[93:43] Right?
+[93:45] Now what we say
+[93:47] is the current of the collector
+[93:49] that is
+[93:51] IC1 plus IBU.
+[93:55] Okay.
+[93:57] Now
+[93:59] what was IC1?
+[94:01] Do you remember IC1?
+[94:03] This was a portion
+[94:07] of
+[94:09] IE1
+[94:11] after
+[94:13] recombination.
+[94:15] When the charges
+[94:17] were recombined in the base
+[94:19] then the current of the remaining charges
+[94:21] was IC1.
+[94:23] What was that current? Was it IC1?
+[94:25] Now I have IE
+[94:27] Actually
+[94:29] IE2 was
+[94:31] much less than IE1.
+[94:33] Do you remember?
+[94:35] Let me show you again.
+[94:37] Look.
+[94:39] The current of IE1
+[94:41] was because of the
+[94:43] holes.
+[94:45] And the number of holes was more.
+[94:47] The current of IE2 was because of the
+[94:49] electron.
+[94:51] That is why IE1 was
+[94:53] much more than IE2.
+[94:55] Because the holes are
+[94:57] more due to the heavily doped.
+[94:59] Electrons are less
+[95:01] due to moderate doping.
+[95:03] That is why the current of the holes
+[95:05] dominates the current of the electron.
+[95:07] So we say that the emitter current
+[95:09] that is actually
+[95:11] approximately IE1.
+[95:13] Okay?
+[95:15] If this is approximately IE1
+[95:19] then do you know what you write
+[95:21] ?
+[95:25] ?
+[95:27] ?
+[95:29] ?
+[95:31] ?
+[95:33] ?
+[95:35] ?
+[95:37] ?
+[95:39] ?
+[95:41] ?
+[95:43] ?
+[95:45] ?
+[95:47] ?
+[95:49] ?
+[95:51] ?
+[95:53] ?
+[95:55] ?
+[95:57] ?
+[95:59] ?
+[96:01] ?
+[96:03] ?
+[96:05] ?
+[96:07] ?
+[96:09] ?
+[96:11] ?
+[96:13] ?
+[96:15] ?
+[96:17] ?
+[96:19] ?
+[96:21] ?
+[96:23] ?
+[96:25] ?
+[96:27] ?
+[96:31] ?
+[96:33] ?
+[96:35] ?
+[96:37] ?
+[96:39] ?
+[96:41] ?
+[96:43] ?
+[96:45] ?
+[96:47] ?
+[96:49] ?
+[96:51] ?
+[96:53] ?
+[96:55] ?
+[96:57] ?
+[96:59] ?
+[97:01] ?
+[97:03] ?
+[97:05] ?
+[97:07] ?
+[97:09] ?
+[97:11] ?
+[97:13] ?
+[97:15] ?
+[97:17] ?
+[97:19] ?
+[97:21] ?
+[97:23] ?
+[97:25] ?
+[97:27] ?
+[97:29] ?
+[97:31] ?
+[97:33] ?
+[97:35] ?
+[97:37] ?
+[97:39] ?
+[97:41] ?
+[97:43] ?
+[97:45] ?
+[97:47] ?
+[97:49] ?
+[97:51] ?
+[97:53] ?
+[97:55] ?
+[97:57] ?
+[97:59] ?
+[98:01] ?
+[98:03] ?
+[98:07] ?
+[98:09] ?
+[98:11] ?
+[98:13] ?
+[98:15] ?
+[98:17] ?
+[98:19] ?
+[98:21] ?
+[98:23] ?
+[98:25] ?
+[98:27] ?
+[98:29] ?
+[98:31] ?
+[98:33] ?
+[98:35] ?
+[98:37] ?
+[98:39] ?
+[98:41] ?
+[98:43] ?
+[98:45] ?
+[98:47] ?
+[98:49] ?
+[98:51] ?
+[98:53] ?
+[98:55] ?
+[98:57] ?
+[98:59] ?
+[99:01] ?
+[99:03] ?
+[99:05] ?
+[99:07] ?
+[99:09] ?
+[99:11] ?
+[99:13] ?
+[99:15] ?
+[99:17] ?
+[99:19] ?
+[99:21] ?
+[99:23] ?
+[99:27] ?
+[99:29] ?
+[99:31] ?
+[99:33] ?
+[99:35] ?
+[99:37] ?
+[99:39] ?
+[99:41] ?
+[99:43] ?
+[99:45] ?
+[99:47] ?
+[99:49] ?
+[99:51] ?
+[99:53] ?
+[99:55] ?
+[99:57] ?
+[99:59] ?
+[100:01] ?
+[100:03] ?
+[100:05] ?
+[100:07] ?
+[100:09] ?
+[100:11] ?
+[100:13] ?
+[100:15] ?
+[100:17] ?
+[100:19] ?
+[100:21] ?
+[100:23] ?
+[100:25] ?
+[100:27] ?
+[100:29] ?
+[100:31] ?
+[100:33] ?
+[100:35] ?
+[100:37] ?
+[100:39] ?
+[100:41] ?
+[100:43] ?
+[100:45] ?
+[100:47] ?
+[100:49] ?
+[100:53] ?
+[100:55] ?
+[100:57] ?
+[100:59] ?
+[101:01] ?
+[101:03] ?
+[101:05] ?
+[101:07] ?
+[101:09] ?
+[101:11] ?
+[101:13] ?
+[101:15] ?
+[101:17] ?
+[101:19] ?
+[101:21] ?
+[101:23] ?
+[101:25] ?
+[101:27] ?
+[101:29] ?
+[101:31] ?
+[101:33] ?
+[101:35] ?
+[101:37] ?
+[101:39] ?
+[101:41] ?
+[101:43] ?
+[101:45] ?
+[101:47] ?
+[101:51] ?
+[101:53] ?
+[101:55] ?
+[101:57] ?
+[101:59] ?
+[102:01] ?
+[102:03] ?
+[102:05] ?
+[102:07] ?
+[102:09] ?
+[102:11] ?
+[102:13] ?
+[102:15] ?
+[102:17] ?
+[102:19] ?
+[102:21] ?
+[102:23] ?
+[102:25] ?
+[102:27] ?
+[102:29] ?
+[102:31] ?
+[102:33] ?
+[102:35] ?
+[102:37] ?
+[102:39] ?
+[102:41] ?
+[102:43] ?
+[102:45] ?
+[102:47] ?
+[102:49] ?
+[102:51] ?
+[102:53] ?
+[102:55] ?
+[102:57] ?
+[102:59] ?
+[103:01] ?
+[103:03] ?
+[103:05] ?
+[103:07] ?
+[103:09] ?
+[103:11] ?
+[103:13] ?
+[103:15] ?
+[103:17] ?
+[103:19] ?
+[103:21] ?
+[103:23] ?
+[103:25] ?
+[103:27] ?
+[103:29] ?
+[103:31] ?
+[103:33] ?
+[103:35] ?
+[103:37] ?
+[103:39] ?
+[103:43] ?
+[103:45] ?
+[103:47] ?
+[103:49] ?
+[103:51] ?
+[103:53] ?
+[103:55] ?
+[103:57] ?
+[103:59] ?
+[104:01] ?
+[104:03] ?
+[104:05] ?
+[104:07] ?
+[104:11] ?
+[104:13] ?
+[104:15] ?
+[104:17] ?
+[104:19] ?
+[104:21] ?
+[104:23] ?
+[104:25] ?
+[104:27] ?
+[104:29] ?
+[104:31] ?
+[104:33] ?
+[104:35] ?
+[104:37] ?
+[104:39] ?
+[104:41] ?
+[104:43] ?
+[104:45] ?
+[104:47] ?
+[104:49] ?
+[104:51] ?
+[104:53] ?
+[104:55] ?
+[104:57] ?
+[104:59] ?
+[105:01] ?
+[105:03] ?
+[105:05] ?
+[105:07] ?
+[105:09] ?
+[105:11] ?
+[105:13] ?
+[105:15] ?
+[105:17] ?
+[105:19] ?
+[105:21] ?
+[105:23] ?
+[105:25] ?
+[105:27] ?
+[105:29] ?
+[105:31] ?
+[105:33] ?
+[105:35] ?
+[105:37] ?
+[105:39] ?
+[105:41] ?
+[105:43] ?
+[105:45] ?
+[105:47] ?
+[105:49] ?
+[105:51] ?
+[105:53] ?
+[105:55] ?
+[105:57] ?
+[105:59] ?
+[106:01] ?
+[106:03] ?
+[106:05] ?
+[106:07] ?
+[106:09] ?
+[106:11] ?
+[106:13] ?
+[106:15] ?
+[106:17] ?
+[106:19] ?
+[106:21] ?
+[106:23] ?
+[106:25] ?
+[106:27] ?
+[106:29] ?
+[106:31] ?
+[106:33] ?
+[106:35] ?
+[106:37] ?
+[106:39] ?
+[106:41] ?
+[106:43] ?
+[106:45] ?
+[106:47] ?
+[106:49] ?
+[106:51] ?
+[106:53] ?
+[106:55] ?
+[106:57] ?
+[106:59] ?
+[107:01] ?
+[107:03] ?
+[107:05] ?
+[107:07] ?
+[107:09] ?
+[107:11] ?
+[107:13] ?
+[107:15] ?
+[107:17] ?
+[107:19] ?
+[107:21] ?
+[107:23] ?
+[107:25] ?
+[107:27] ?
+[107:29] ?
+[107:31] ?
+[107:33] ?
+[107:35] ?
+[107:37] ?
+[107:39] ?
+[107:41] ?
+[107:43] ?
+[107:45] ?
+[107:47] ?
+[107:49] ?
+[107:51] ?
+[107:53] ?
+[107:55] ?
+[107:57] ?
+[107:59] ?
+[108:01] ?
+[108:03] ?
+[108:05] ?
+[108:07] ?
+[108:09] ?
+[108:11] ?
+[108:13] ?
+[108:15] ?
+[108:17] ?
+[108:19] ?
+[108:21] ?
+[108:23] ?
+[108:25] ?
+[108:27] ?
+[108:29] ?
+[108:31] ?
+[108:33] ?
+[108:35] ?
+[108:37] ?
+[108:39] ?
+[108:41] ?
+[108:43] ?
+[108:45] ?
+[108:47] ?
+[108:49] ?
+[108:51] ?
+[108:53] ?
+[108:55] ?
+[108:57] ?
+[108:59] ?
+[109:01] ?
+[109:03] ?
+[109:05] ?
+[109:07] ?
+[109:09] ?
+[109:11] ?
+[109:13] ?
+[109:15] ?
+[109:17] ?
+[109:19] ?
+[109:21] ?
+[109:23] ?
+[109:25] ?
+[109:27] ?
+[109:29] ?
+[109:31] ?
+[109:33] ?
+[109:35] ?
+[109:37] ?
+[109:39] ?
+[109:41] ?
+[109:43] ?
+[109:45] ?
+[109:47] ?

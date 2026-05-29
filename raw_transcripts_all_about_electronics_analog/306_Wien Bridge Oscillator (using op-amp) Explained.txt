@@ -1,0 +1,142 @@
+Title: Wien Bridge Oscillator (using op-amp) Explained
+URL: https://www.youtube.com/watch?v=gbUXbaxvX94
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous videos, we understood the basic working principle of the oscillator.
+[00:21] And then we have also seen how to design the RC phase shift oscillator.
+[00:26] So in this video, we will see a one more type of RC oscillator, which is known as the
+[00:31] Vain Bridge oscillator.
+[00:33] So this Vain Bridge oscillator is the harmonic oscillator, meaning that the output of the
+[00:38] oscillator is the sinusoidal signal.
+[00:41] And it is used for the generation of a sine wave, typically in the range of audio frequency.
+[00:46] So if you see the circuit of the RC oscillator, then it will look like this.
+[00:51] So as you can see over here, it involves the bridge circuit.
+[00:55] Now let me just read out the same circuit in a different way.
+[00:59] So as you can see over here, this resistor R3 and R4 are the part of this amplifier.
+[01:05] And these two branches of the bridge circuit forms the RC feedback network.
+[01:11] So here, the op-em is used in the non-inverting configuration.
+[01:15] And the positive feedback is provided to this op-em through this RC feedback circuit.
+[01:19] So now if you see this RC circuit, it consists of a two-arcinate work.
+[01:25] The one is the series-arcinate work and the other one is the parallel RC network.
+[01:30] So here, this series-arcinate circuit acts like a high pass filter, while this parallel
+[01:38] RC circuit acts like a low pass filter.
+[01:42] So at low frequencies, this capacitor acts like an open circuit, so it does not pass the
+[01:48] low frequency signals.
+[01:49] On the other hand, at high frequencies, this capacitor provides the very low impedance.
+[01:55] So it easily allows the high frequency components.
+[01:58] So in a way, it acts like a high pass filter.
+[02:02] On the other hand, if you see this parallel RC circuit, at low frequencies, this capacitor
+[02:07] will act as an open circuit.
+[02:10] So the output voltage at this node will directly appear across this resistor R2.
+[02:16] And at very high frequencies, the impedance of this capacitor will be very low.
+[02:22] So the output will get short-circuited to the ground terminal.
+[02:26] So in a way, this parallel RC network will act like a low pass filter.
+[02:31] So this RC network does not allow low frequencies as well as high frequencies.
+[02:37] But at one particular frequency, the output of the circuit will be maximum.
+[02:42] And that frequency is known as the resonant frequency.
+[02:46] So in a way, this RC feedback network will act as a notch filter.
+[02:51] And if you see the response, then the response of this RC feedback network will look like
+[02:55] this.
+[02:56] So only at a one particular resonant frequency, the output of this circuit will be maximum.
+[03:02] And at the rest of the frequencies, the output will be minimum.
+[03:07] So at this resonant frequency, the phase shift of the circuit will be equal to 0.
+[03:12] And the ratio of output by input will be equal to 1 by 3.
+[03:18] And if you consider this R1 is equal to R2 and C1 is equal to C2, in that case, this
+[03:26] resonant frequency FR can be given by the expression 1 divided by 2 pi times RC.
+[03:33] And if this condition is not true, in that case, the resonant frequency FR can be given
+[03:39] as 1 divided by 2 pi under root R1R2 into C1 into C2.
+[03:48] So this is the expression of a resonant frequency in a case when R1R2 and C1C2 are different.
+[03:55] And here, the ratio of output by input is also known as the feedback fraction.
+[04:01] So here, we have a feedback fraction beta is equal to 1 by 3.
+[04:06] And to get a sustained oscillations, the A beta of this oscillator should be equal to 1.
+[04:12] So in a way, we can say that the gain of this amplifier should be equal to 3.
+[04:18] Now as we know, this opium is configured in a non-emitting configuration.
+[04:23] So the gain of the opium will be equal to 1 plus R4 divided by R3.
+[04:30] And we can say that 1 plus R4 divided by R3 that is equal to 3.
+[04:37] That means R4 divided by R3 will be equal to 2.
+[04:43] So in this way, at the resonant frequency, feedback fraction of this feedback network
+[04:48] will be equal to 1 by 3.
+[04:50] And at that frequency, if we want to get a sustained oscillations, then the ratio of R4
+[04:56] by R3 should be equal to 2.
+[04:59] So whenever these conditions are satisfied, at that time, at the resonant frequency, we
+[05:04] will get the sustained oscillations.
+[05:07] So now considering R1 is equal to R2 and C1 is equal to C2, let us design a pain bridge
+[05:12] oscillator of frequency 10 kilohertz.
+[05:16] So here, we are assuming that R1 is equal to R2 and C1 is equal to C2.
+[05:23] And the frequency of this oscillator is equal to 10 kilohertz.
+[05:28] So under this condition, the resonant frequency FR can be given by the expression 1 divided
+[05:34] by 2 pi times RC.
+[05:37] Now here, let us assume that C is equal to 0.01 microfarad A.
+[05:44] So let us find out the value of R for the given values.
+[05:48] So R will be equal to 1 divided by 2 pi times FC.
+[05:54] That means 1 divided by 2 pi times 10 to the power 4 into 10 to the power minus 8.
+[06:03] Or if we calculate the value of R, then it will roughly come around 1.99 kilo ohm.
+[06:11] And in this design, the gain of this amplifier should be equal to 2.
+[06:17] So let us assume that R4 is equal to 20 kilo ohm and R3 is equal to 10 kilo ohm.
+[06:26] And here, C1 and C2 are 0.01 microfarad A and R1 and R2 are 1.99 kilo ohm.
+[06:36] Now what we can do, we can use a potentiometer of 5 kilo ohm for these two resistors and we
+[06:42] can tune these two resistors to the value of 1.99 kilo ohm.
+[06:48] So in this way, by using this expression, we can select the values of R1, R2 and C1,
+[06:53] C2 and we can design a wind bridge oscillator of a desired frequency.
+[06:58] Now so far, we have directly used this expression for this wind bridge oscillator.
+[07:03] So let us derive this expression for the wind bridge oscillator and let us also see at
+[07:08] this resonant frequency FR, why the feedback fraction of this Rc network is equal to 1 by
+[07:13] 3.
+[07:14] So for the derivation, let us assume that the impedance of this series Rc circuit is equal
+[07:20] to Z1 and the impedance of this parallel Rc circuit is equal to Z2.
+[07:26] Now for this Rc network, the output voltage V out can be given as Z2 divided by Z1 plus
+[07:34] Z2 times input voltage or we can say that V out by V in is equal to Z2 divided by Z1
+[07:43] plus Z2.
+[07:45] Now here Z2 is equal to R2 in parallel with 1 by Jomega C2 or we can say that that is
+[07:53] equal to R2 divided by 1 plus Jomega R2 times C2.
+[08:00] Similarly, this Z1 is equal to R1 plus 1 by Jomega C1.
+[08:09] So let us put the value of Z1 and Z2 in this expression.
+[08:13] So we can write V out by V in is equal to R2 divided by 1 plus Jomega R2 times C2 divided
+[08:24] by R1 plus 1 by Jomega C1 plus R2 divided by 1 plus Jomega C2 into R2.
+[08:37] So if we simplify this expression then we can write this expression as V out by V in will
+[08:43] be equal to R2 times Jomega C1 divided by R1 times Jomega C1 multiplied by 1 plus Jomega
+[08:57] C2 into R2 plus 1 plus Jomega C2 times R2 plus Jomega R2 times C1.
+[09:11] And further if we simplify it then we can write this expression as V out by V in will be
+[09:16] equal to Jomega R2 times C1 divided by 1 minus omega square R1 R2 C1 C2 plus Jomega R1 C1
+[09:32] plus R2 C2 plus R2 times C1.
+[09:39] So after simplification we will get this expression.
+[09:43] Now like we have discussed at the resonant frequency the phase shift that is offered by this
+[09:48] feedback network will be equal to 0.
+[09:51] That means this term should be equal to 0 so that this Jomega will get cancelled out
+[09:57] at numerator and the denominator and the overall phase shift that is provided by the circuit
+[10:02] will be equal to 0.
+[10:05] So from this we can say that at resonant frequency this omega square R1 R2 C1 C2 will
+[10:11] be equal to 1 or we can say that omega will be equal to 1 by under root R1 R2 into C1
+[10:21] into C2.
+[10:23] That means F will be equal to 1 divided by 2 pi times under root R1 R2 into C1 into C2.
+[10:34] Now if we consider R1 is equal to R2 and C1 is equal to C2 in that case this expression
+[10:41] will get simplified to 1 divided by 2 pi times Rc.
+[10:47] But for a moment let us assume that R1 R2 and C1 C2 are different.
+[10:53] So now if we consider this condition then V out by V in will be equal to R2 times C1
+[11:01] divided by R1 C1 plus R2 C2 plus R2 times C1.
+[11:09] Now if R1 R2 and C1 C2 are equal in that case this V out by V in or the feedback fraction
+[11:16] beta will become 1 by 3.
+[11:19] But if they are different then this will be the feedback fraction for this Rc network.
+[11:25] Now like we have discussed for the sustained oscillations the A beta of this oscillator
+[11:30] should be equal to 1 or we can say that the loop can should be equal to 1.
+[11:35] Now this is the value of beta for this feedback network.
+[11:39] So we can say that A should be equal to 1 divided by beta or we can say that this gain
+[11:46] of this amplifier should be equal to R1 C1 plus R2 C2 plus R2 C1 divided by R2 times C1.
+[11:58] And if we simplify it then we can say that the amplifier gain A will be equal to R1 by
+[12:04] R2 plus C2 by C1 plus 1.
+[12:08] Now here the gain of this op-em will be equal to 1 plus R4 by R3 because it is configured
+[12:14] in the non-inverting configuration.
+[12:16] So we can say that A is equal to 1 plus R4 by R3 should be equal to this R1 by R2 plus
+[12:27] C2 by C1 plus 1 or we can say that this R4 by R3 should be equal to R1 by R2 plus C2 by C1.
+[12:40] So this is the condition which should get satisfied for the sustained oscillations.
+[12:46] Now if we consider R1 is equal to R2 and C1 is equal to C2 then we will get the condition
+[12:52] that we have discussed earlier that is R4 by R3 should be equal to 2.
+[12:59] So in this way we have derived the expression of the resonant frequency and we have also
+[13:03] seen at the resonant frequency the feedback fraction beta will be equal to 1 by 3.
+[13:09] Provided R1 is equal to R2 and C1 is equal to C2 and to get a sustained oscillations the
+[13:16] ratio of R4 by R3 should be equal to 2.
+[13:20] So I hope in this video you understood how we can design a Vain Bridge oscillator using
+[13:25] the opamp.
+[13:26] So if you have any question or suggestion do let me know in the comment section below.
+[13:31] If you like this video hit the like button and subscribe bell for more such videos.

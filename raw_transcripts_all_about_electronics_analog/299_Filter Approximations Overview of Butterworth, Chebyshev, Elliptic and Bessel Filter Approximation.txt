@@ -1,0 +1,152 @@
+Title: Filter Approximations: Overview of Butterworth, Chebyshev, Elliptic and Bessel Filter Approximation
+URL: https://www.youtube.com/watch?v=JXcbbBMrLYE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:22] So in this video we will learn about the different filter approximations which are used
+[00:26] in the analog filter design.
+[00:27] So in the earlier videos of the analog filters, we have seen that what is low pass filter,
+[00:32] what is high pass filter, what is band pass filter and what is band reject or band stop
+[00:36] filter.
+[00:37] And we have seen that how to design these filters using the simple components like resistor
+[00:42] and the capacitor.
+[00:43] And we have also seen how to design these filters using the active components like a
+[00:47] op-amp.
+[00:48] So now in this video we will understand the different filter approximations by taking the
+[00:52] example of an ideal low pass filter.
+[00:55] So in the earlier videos we have seen that this ideal low pass filter passes only the
+[00:59] low frequency components in the input signal and it rejects all the frequency components
+[01:03] beyond some cutoff frequency.
+[01:05] So the frequency band which is being supported by this filter is known as the pass band.
+[01:10] In the frequencies which is being rejected by this filter is known as the stop band.
+[01:15] And in this pass band if you see the frequency response is very flat.
+[01:20] While above this cutoff frequency it rejects all the frequencies and it provides the infinite
+[01:25] attention for those frequencies.
+[01:27] So there is a vertical transition between this pass band and the stop band.
+[01:32] So such kind of response is known as the brick wall response.
+[01:36] But whenever we are designing the practical filters it is almost impossible to achieve this
+[01:40] vertical transition from the pass band to stop band.
+[01:43] So the transition from the pass band to stop band will be always gradual.
+[01:48] And we have already seen that in the earlier videos while we have designed the first
+[01:51] order RC low pass filter.
+[01:53] And in that design we had seen that the transition from the pass band to stop band is very gradual.
+[01:59] And for the first order filter it will be at the rate of 20 dB per decade.
+[02:04] Now whenever we are designing the higher order filters then not only this transition but
+[02:09] many other parameters will also come into the picture.
+[02:12] Like here in this case of ideal low pass filter this pass band is very flat.
+[02:16] But if you see the realistic design of higher order filters it might have some repels in
+[02:22] the pass band.
+[02:23] And particularly when you are designing the second order low pass filter then you might
+[02:28] see a picking around this cutoff frequency FC.
+[02:31] Or whenever you are designing the higher order low pass filters then you might see some kind
+[02:36] of ripple in the pass band.
+[02:38] Similarly it is quite possible that you have a flat pass band and you have a ripple in
+[02:43] the stop band or even you can have a ripple in both pass band as well as the stop band.
+[02:49] So in the case of a filter design it is almost impossible to achieve the frequency response
+[02:54] of a ideal filter.
+[02:56] And to overcome this problem there are 5 different filter approximations which are quite commonly
+[03:01] used in the filter design.
+[03:03] So these are the 5 different filter approximations which are quite commonly used in the filter
+[03:07] design.
+[03:08] So let us see them one by one.
+[03:10] So the first filter approximation is the butterworth filter approximation.
+[03:14] So in case of this butterworth filter approximation your pass band is very flat.
+[03:19] So that is why this approximation is also known as the maximal flat approximation.
+[03:25] And in this approximation the roll of from the pass band to stop band is at the rate of
+[03:30] 20 dB per decade.
+[03:32] So suppose if you are designing the butterworth filter of a second order then it will have
+[03:36] a roll of of 40 dB per decade.
+[03:39] Similarly let us say if you are designing the butterworth filter of a fifth order then
+[03:43] it will have a roll of at the rate of 100 dB per decade.
+[03:47] So in this butterworth filter approximation you will not see any kind of ripple in the
+[03:51] stop band as well.
+[03:53] So this butterworth filter approximation is quite common in the filter design.
+[03:56] And particularly in the audio processing most of the filters which are designed using
+[04:00] this butterworth approximation.
+[04:02] Similarly now let us see the second approximation that is Chabishau filter approximation.
+[04:07] So in case of this Chabishau filter approximation in the pass band you will have some ripples.
+[04:13] While in stop band you will not see any ripples.
+[04:15] And in this Chabishau filter approximation the roll of or a transition from the pass band
+[04:20] to stop band is quite faster compared to the butterworth filter.
+[04:24] So suppose in your filter design if flat response in your pass band is not a priority and
+[04:28] if you required a faster transition then in such cases this Chabishau filter can be
+[04:33] used.
+[04:34] Now in case of this Chabishau filter the number of ripples in the pass band will be equal
+[04:39] to the n by 2 where n is the order of the filter.
+[04:43] So as you can see here for the fourth order filter the number of ripples in the pass band
+[04:47] will be equal to 2.
+[04:49] So now in the case of this Chabishau filter design you also need to provide the maximum
+[04:53] amount of ripple which is being acceptable by this filter design.
+[04:57] So in most cases this ripple is in the range of 0.1 dB up to the 3 dB.
+[05:02] Apart from that in case of this Chabishau filter design the amplitude of this ripple is
+[05:06] same for all the ripples.
+[05:08] So that is the reason this filter is also known as the equal ripple filter.
+[05:12] Similarly now let us see the inverse Chabishau filter.
+[05:15] So this inverse Chabishau filter having a flat pass band and it is having a ripple in
+[05:20] the stop band.
+[05:21] When the transition or the roll of of this inverse Chabishau filter is same as the Chabishau
+[05:26] filter.
+[05:27] So whenever in your application you require the flat frequency response in the pass band
+[05:32] as well as the required the faster transition and you are not bothered about the any kind
+[05:36] of ripple in the stop band then in such cases this inverse Chabishau filter can be used.
+[05:41] So now whenever you have a ripple in the stop band then you also need to provide the amount
+[05:45] of attenuation which is being provided in the stop band because it is quite possible
+[05:50] that the amplitude of the ripple might touch that value of a stop band rejection.
+[05:55] So let us say in this case suppose the filter is providing the attenuation in the stop
+[06:00] band is minus 45 dB.
+[06:02] So you need to make sure that the amplitude of the ripple is always less than this value.
+[06:07] So now let us see the elliptic filter approximation.
+[06:10] So in this filter approximation you will see the ripple in both pass band as well as the
+[06:14] stop band.
+[06:15] But this filter approximation provides the fastest transition from the pass band to stop
+[06:20] band or in another way this filter approximation provides the fastest roll of among all the
+[06:26] filter approximations.
+[06:27] So whenever in application the ripple in the pass band and stop band is not a concern
+[06:32] and you require the fastest possible transition then in such designs you can use this elliptical
+[06:38] filter approximation.
+[06:40] Similarly now let us see the fifth approximation that is basal filter approximation.
+[06:45] So this basal filter approximation provides the flat response in the pass band and it
+[06:50] do not have any kind of ripple in the stop band.
+[06:53] But the roll of from the pass band to stop band will be slowest among all the filter
+[06:57] approximations.
+[06:58] So now the question is when you have a butterworth filter approximation which is providing the
+[07:03] flat pass band and the flat stop band then what is the purpose of having this basal
+[07:07] filter approximation.
+[07:09] So answer is in this basal filter approximation the phase 2 frequency relationship is quite
+[07:14] linear.
+[07:15] So this is particularly useful when you are in your application you are having a non-signal
+[07:20] signal.
+[07:22] Let us say in your application you have a square wave then this filter will provide the
+[07:27] linear phase shift to the all the frequency components and because of that in the time
+[07:31] domain if you see it will provide the constant amount of delay to the input signal and because
+[07:36] of that this filter approximation has a very good step response.
+[07:40] So let us say if you are applying a particular square wave to this basal filter then this
+[07:46] basal filter will provide the particular amount of delay to this square wave.
+[07:51] So now let us compare the roll of rate of all the filter approximations.
+[07:55] So as you can see here this elliptic filter provides the maximum amount of attenuation.
+[08:00] So as you go from this cutoff frequency FC to the 2 FC then the amount of attenuation which
+[08:05] is being provided by this 6th order elliptic filter will be equal to 93 dB.
+[08:11] While if you consider the same 6th order butterworth filter then it will provide the attenuation
+[08:16] of 36 dB.
+[08:18] While if you consider the 6th order basal filter then it will only provide the 14 dB of attenuation.
+[08:24] So in terms of the roll of rate this basal filter is the slowest one.
+[08:28] While the elliptical filter is having a highest roll of rate among the all the filter approximations.
+[08:34] So here is the comparison of the all the 5 filter approximations.
+[08:37] So as in the case of butterworth filter it is having a flat pass band and a monotonic
+[08:42] stop band that means it do not have any kind of ripple in the stop band.
+[08:47] While in case of the chavishu filter it is having a ripple pass band and a monotonic
+[08:51] stop band.
+[08:52] While the inverse chavishu filter having a flat pass band and a ripple stop band.
+[08:58] Now if you compare the elliptical filter then it is having a both ripple pass band as
+[09:03] well as the stop band.
+[09:04] But the roll of rate of this elliptical filter will be the base among all the filter approximations.
+[09:09] But if you see the step response of this elliptical filter it will be very poor.
+[09:14] And the basal filter is having a flat pass band as well as the monotonic stop band.
+[09:19] And in terms of the step response it is the base among all the filter approximations.
+[09:24] So this is the basic overview of all the filter approximations.
+[09:28] So now in the next video we will learn about this butterworth filter design in a detail.
+[09:33] So I hope in this video you understood about the different kind of filter approximations
+[09:37] which are quite commonly used in the filter design.
+[09:40] So if you have any question or suggestion do let me know in the comments section below.
+[09:44] If you like this video hit the like button and subscribe with the channel for more such
+[09:48] videos.

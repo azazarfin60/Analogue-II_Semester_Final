@@ -1,0 +1,35 @@
+Title: MOSFET Biasing : P-Channel MOSFET Biasing | Quiz # 306
+URL: https://www.youtube.com/watch?v=QdWZASIo3sI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this transistor circuit and for the given circuit,
+[00:16] we have been asked to find the maximum value of the RD such that the MOSFET will still operate
+[00:20] in the saturation region.
+[00:23] So first of all if you observe, then this is the P-channel MOSFET and for the P-channel
+[00:28] MOSFET to operate in the saturation region, the condition is the voltage VST should
+[00:34] be greater than or equal to voltage VST-VT and in the saturation the drain current ID can
+[00:43] be given as half times mu P times COX times W by L times VST-VT whole square.
+[00:57] So this will be the expression of the drain current in the saturation region and here
+[01:02] we have been already given the value of this mu P times COX times W by L. So here this
+[01:09] threshold voltage VT is equal to 1V while this mu P times COX times W by L or the process
+[01:17] transconductance is equal to 1 milliampere per volt square and here we have been given
+[01:23] that the drain current ID is equal to 0.5 milliampere.
+[01:29] So let us put all these values in this expression and let us find the value of the VST-VT.
+[01:37] That means here this ID is equal to half times 1 milliampere per volt square times VST-VT
+[01:48] whole square and the ID is also equal to 0.5 milliampere that means 0.5 milliampere is
+[01:54] equal to 0.5 milliampere per volt square times VST-VT whole square. That means from this
+[02:04] we can say that voltage VST-VT is equal to 1V and since the VT is equal to 1V so we can
+[02:14] say that voltage VST is equal to 2V that means the difference between the source and the
+[02:21] gate voltage is equal to 2V. Now here VST is already equal to 5V that means voltage
+[02:29] VG is equal to VST-VST that is equal to 3V that means the voltage at this terminal is
+[02:39] equal to 3V. Now as I said to operate the MOSFET in the saturation region the voltage VSD
+[02:46] should be greater than or equal to voltage VST-VT or in the worst condition the voltage VSD is
+[02:56] equal to VST-VT. So here voltage VST is equal to 2V while the VT is equal to 1V that means
+[03:06] voltage VSD is equal to 1V. Now the source voltage is equal to 5V that means voltage VD will
+[03:14] be equal to VST-VSD that is equal to 4V that means whenever the VD is equal to 4V at that
+[03:23] time the MOSFET is at the age of the saturation. So to get the drain voltage of 4V let us find
+[03:30] the value of the RD. So here voltage VD is equal to ID times RD that means RD is equal to VD
+[03:41] divided by ID that is equal to 4V divided by 0.5 mpR that is equal to 8KOM. That means to
+[03:51] maintain the operation of the MOSFET in the saturation region the maximum value of the RD is
+[03:56] equal to 8KOM and hence we can say that for the given equation the answer is 8KOM.

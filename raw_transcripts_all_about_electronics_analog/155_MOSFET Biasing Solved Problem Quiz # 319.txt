@@ -1,0 +1,54 @@
+Title: MOSFET Biasing Solved Problem | Quiz # 319
+URL: https://www.youtube.com/watch?v=V33ha7yOAc0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel OlaboD Electronics.
+[00:10] So in this question, we have been given this amplifier circuit and here we have been given
+[00:15] that the MOSFET is operating in the saturation region and in the saturation region, the drain
+[00:21] current ID can be given by this expression.
+[00:25] So here the voltage Vs is equal to 5V and here we have been asked to find the value
+[00:31] of this RS and the maximum value of the RD to keep the MOSFET in the saturation region.
+[00:38] So here these drain current ID can be given as half times Vgs minus 1 whole square.
+[00:47] That means here this threshold voltage Vt is equal to 1V.
+[00:52] Now here we have been also given that this voltage Vs is equal to 5V.
+[00:59] That means the voltage at this node is equal to 5V.
+[01:02] And as you know this voltage Vs is equal to ID times RS.
+[01:09] So here first of all let us find the value of this ID and for that we need the value of
+[01:15] this Vgs.
+[01:17] So here to find the value of Vgs let us find this gate voltage.
+[01:23] So here these gate voltage Vg can be given as these 7 mega ohm divided by 7 mega ohm
+[01:33] plus 8 mega ohm times 15 volt.
+[01:37] Because here we are assuming that this gate current ID is approximately equal to 0.
+[01:44] That means no current is flowing into the gate terminal and hence these gate voltage
+[01:49] can be found using the voltage divider rule.
+[01:53] That means this voltage Vg is equal to 7 volt and we already know the value of this Vs
+[02:00] that is equal to 5 volt.
+[02:03] That means voltage Vgs that is Vg minus Vs is equal to 7 volt minus 5 volt that is equal
+[02:12] to 2 volt.
+[02:14] So now we got the value of this Vgs that means this drain-grunt ID can be given as half
+[02:22] times Vgs minus 1 whole square that is equal to half times 2 minus 1 whole square.
+[02:31] That means in this case this drain-grunt ID is equal to 0.5 milliampere.
+[02:38] That means this current is equal to 0.5 milliampere and this Vs is equal to ID times Rs.
+[02:48] That means Rs is equal to Vs divided by ID.
+[02:54] So to get the value of Vs as 5 volt the value of Rs should be equal to this 5 volt divided
+[03:00] by 0.5 milliampere that is equal to 10 kilo ohm.
+[03:07] So in this way we got the value of Rs.
+[03:10] Similarly, now let us find the maximum value of the Rd to keep the MOSFET in the saturation
+[03:16] region.
+[03:18] So we know that to keep the MOSFET in the saturation region this voltage Vds should
+[03:23] be greater than or equal to Vgs minus Vt or we can say that this Vd minus Vs should be
+[03:31] greater than or equal to Vg minus Vs minus Vt that means the drain voltage Vd or the voltage
+[03:39] at this node should be greater than or equal to Vg minus Vt.
+[03:45] So here this Vg is equal to 7 volt and this Vt is equal to 1 volt that means to keep the
+[03:52] MOSFET in the saturation region this drain voltage should be greater than or equal to 7
+[03:58] volt minus 1 volt that means Vd should be greater than or equal to 6 volt.
+[04:05] Now this voltage Vd can be given as 15 minus id times Rd.
+[04:12] So this id times Rd is the voltage drop across this resistor Rd that means to keep the MOSFET
+[04:19] in the saturation region this 15 minus id times Rd should be greater than or equal to 6
+[04:26] volt or in other words this id times Rd should be less than or equal to 9 volt that means
+[04:34] this value of Rd should be less than or equal to 9 volt divided by 0.5 milliampere that is equal
+[04:43] to 18 kilo ohm that means the value of Rd should be less than or equal to 18 kilo ohm that means
+[04:51] the maximum possible value of this Rd to keep the MOSFET in the saturation region is equal
+[04:56] to 18 kilo ohm. So from this we can say that for the given circuit the value of Rs is equal
+[05:04] to 10 kilo ohm and the maximum possible value of this Rd to keep the MOSFET in the saturation
+[05:10] region is equal to 18 kilo ohm and hence for the given question this sees the correct answer.

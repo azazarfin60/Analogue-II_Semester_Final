@@ -1,0 +1,151 @@
+Title: Half wave Rectifier Explained
+URL: https://www.youtube.com/watch?v=Ll0IOk_Ltfc
+Source: Local Whisper (base)
+
+[00:00] In the previous videos of the diode, we learned that the diode allows the flow of current
+[00:17] on Lina, one direction, and it blocks the current in the reverse direction.
+[00:22] Now this property of the diode is very useful in certain application and one such application
+[00:28] in which this diode can be used is AC to DC conversion.
+[00:33] Now the process of converting the AC voltage signal into the DC voltage is known as the
+[00:38] rectification and the circuit which is used for this rectification is known as the rectifier.
+[00:45] Now broadly these rectifiers can be classified in two categories.
+[00:50] One is known as the half wave rectifier and the second one is known as the full wave
+[00:54] rectifier.
+[00:55] So in this video, we will learn about the half wave rectifier.
+[01:00] Now whenever the sinusoidal signal is applied as an input to this half wave rectifier,
+[01:06] then this rectifier only allows the one half of the sine wave and it rejects the other half
+[01:11] of the sine wave. Like here as you can see, it only allows the positive half cycle and it
+[01:17] completely rejects the negative half cycle. And similarly, it is also possible to get this
+[01:23] kind of waveform where this rectifier completely blocks the positive half cycle and it only passes
+[01:30] the negative half cycle. So in this way, this half wave rectifier converts the AC signal to the
+[01:37] pulsating DC signal. Now let us see the circuit of this half wave rectifier.
+[01:42] So as you can see over here, the input signal is applied to the load through this diode.
+[01:49] So whenever the sine wave is applied as an input, then at the output, you will get this kind of
+[01:55] waveform. So here the circuit only passes the positive half cycle of the sine wave and it
+[02:00] completely rejects the negative half cycle. So now let us understand how the circuit works.
+[02:07] And for the analogous purpose, for a moment, let us assume that this diode is an ideal diode.
+[02:13] So during the positive half cycle, the voltage which appears across the
+[02:17] anodine cathode of the diode will be positive. It means that this diode will get forward biased.
+[02:23] And simply we can replace this diode by the close switch. So this entire voltage will appear
+[02:29] across the load. So during the positive half cycle, from 0 to T by 2, the complete input wave
+[02:36] will appear across the load. Now during the negative half cycle, the voltage which appears across
+[02:42] anodine cathode will be negative. So this diode will get reverse biased. And simply it will act as
+[02:49] an open switch. So there will not be any flow of current through the circuit. And at the output,
+[02:54] we will get zero voltage. So during the negative half cycle, we will get zero voltage.
+[03:01] And in this way, whenever the continuous sine wave is applied as an input to this rectifier,
+[03:07] then at the output, we will get either positive or negative pulse strains.
+[03:12] Now, so far in our analysis, we have assumed that the diode which is connected in the rectifier
+[03:17] circuit is an ideal diode. But now let us also consider the forward voltage drop across the diode.
+[03:25] So now the diode will get forward biased only when the applied input voltage is more than
+[03:30] threshold voltage. And here, we are assuming that the connected diode is silicon diode.
+[03:36] It means that it has a threshold voltage of 0.7 volt. So the diode will get forward biased
+[03:42] only when the input applied voltage is more than 0.7 volt. So now the circuit will start
+[03:48] conducting only during this period. So during the positive half, if you see the output wave form,
+[03:54] it will look like this. And if you see the peak voltage at the output wave form,
+[03:59] it will be slightly less than Vm. Because now we are also considering the forward
+[04:04] voltage drop across the diode. So instead of Vm, it will be equal to Vm minus 0.7.
+[04:11] Now during the negative half cycle, the voltage which appears across the diode will be negative.
+[04:16] And simply it will act as an open circuit. And the output voltage across the load will be
+[04:21] equal to 0. So during the negative half cycle, we will get 0 voltage. Now in most of the cases,
+[04:29] during this rectification process, the peak amplitude of the applied input voltage used to be
+[04:34] much larger than the diode voltage. So the output wave form of the rectifier will be much
+[04:40] closer to the ideal wave form. And in that case, we can simply neglect the drop across the diode.
+[04:47] Now that is being said, let us see few performance related parameters for this half-hour rectifier.
+[04:53] And the first parameter which is defined for this half-hour rectifier is the average value.
+[04:58] Now if you see the waveform of the half-hour rectifier, then mathematically it can be
+[05:04] represented like this. So during the first half from 0 to T by 2, the waveform can be expressed as
+[05:11] Vm sin omega t. While for the other half from T by 2 to capital T, it will be equal to 0.
+[05:20] So the average value can be given as 1 by T integration 0 to T Vt dt.
+[05:29] And if you put the value of this Vt, then we can write the average voltages 1 by T integration 0 to
+[05:37] T by 2 Vm sin omega t dt. And if you solve this expression, then the average value for this half-hour
+[05:47] rectifier will come out as Vm by pi. Now we have already derived this expression in the earlier
+[05:54] video of RMS and average value. So I will give the link in the description for that video. So you
+[06:00] can check that video for the more information. Similarly, the next parameter which is defined for
+[06:06] this half-hour rectifier is the RMS value. So the RMS value of any given signal is given by
+[06:13] this expression that is the square root of 1 by T integration 0 to T V square T dt.
+[06:21] And if you put the value of this Vt in this expression and if you evaluate the value,
+[06:26] then the RMS value for this half-hour rectifier will come out as Vm by 2.
+[06:32] Now if you are wondering that from this integration, how we have arrived to this expression,
+[06:37] then don't worry, we will derive this expression in the next video.
+[06:41] Now so far in our discussion of this half-hour rectifier, we have only discussed about the
+[06:46] output waveform of the voltage. But whenever this diode is conducting at that time, finite amount
+[06:53] of current will also flow through the circuit. So if Vm is the peak amplitude of the sinusoidal wave,
+[07:00] then the peak amplitude of the current can be given by the expression Vm divided by RL.
+[07:08] And if you see the output waveform of the current, then it looks very similar to the voltage waveform.
+[07:14] And mathematically, it can be represented like this. So if you find the average value of this current,
+[07:22] then it can be given as Im divided by pi. That is equal to Vm divided by pi times RL.
+[07:32] So in this way, we can find the average value of the current.
+[07:35] So the next parameter for the rectifier is the peak inverse voltage.
+[07:39] And it defines the maximum reverse voltage, which appears across the diode during the operation.
+[07:45] So here, if Vm is the peak amplitude of the applied sine wave, then during the negative half cycle,
+[07:53] the maximum voltage, which appears across the diode in reverse condition, will be equal to minus Vm.
+[07:59] So we can say that for this half-favorite modifier, the peak inverse voltage or the peak reverse
+[08:05] voltage will be equal to Vm. Now whenever you are selecting the diode for the rectifier,
+[08:11] then you should need to check the PIV rating of the diode. So the peak amplitude of the applied
+[08:17] input voltage should be less than this PIV rating. So now let's move to the next parameter.
+[08:24] So so far, we have seen that whenever the sine wave is applied to this half-favorite modifier,
+[08:29] then at the output, we will get a pulsating DC voltage. It means that it has some finite ripple.
+[08:36] Now this ripple defines the periodic variation in the output DC voltage because of the imperfect
+[08:42] separation of the AC signal. So to define how much ripple is there in the output waveform,
+[08:47] this ripple factor is used. And this ripple factor is defined as the ratio of RMS value of the
+[08:55] ripple in the output waveform to the total average value of the output waveform. And for the half-favorite
+[09:01] modifier, the value of this ripple factor is equal to 1.21. So we will derive this expression
+[09:07] for the ripple factor in the next video. Now the ripple in the output waveform can be reduced by using
+[09:13] the filter circuit. So just by connecting the capacitor across this load, we can reduce the ripple
+[09:19] in the output waveform. So let us understand how this circuit will reduce the ripple.
+[09:25] And for a moment, let us assume that the diode is an ideal diode. Now during the positive half-cycle,
+[09:33] whenever the applied input voltage across the diode is positive, at that time, this diode will get
+[09:39] forward biased. And simply it will act as a close switch. So through this diode, this capacitor will
+[09:45] get charged. And it will get charged up to the peak voltage of VM. Now once this capacitor will get
+[09:52] charged up to this voltage VM, then the diode will become reverse bias because at that point,
+[09:59] at both anodon cathode, it has a same voltage. So at that time, this diode simply will act as
+[10:05] open switch. So after this time, the charge across the capacitor will get discharged through this
+[10:12] resistor RL. So this yellow line, which you are seeing in the waveform is the discharging of the
+[10:19] capacitor. Now here, we are assuming that the RC time constant of the circuit is much larger than
+[10:25] the time period of the waveform. So if this condition is true, then we can assume that the capacitor
+[10:31] is discharging linearly. Now once again, whenever the capacitor reaches at this point, at that time,
+[10:39] the input voltage is greater than the capacitor voltage. And once again, diode will become
+[10:45] forward biased. So during this portion, the capacitor will get charged through this diode. And once
+[10:52] again, it will get charged up to the peak voltage VM. And then after again, it will get discharged
+[10:59] through this resistor. So in this way, because of the charging and discharging of the capacitor,
+[11:04] we will get this kind of waveform. So here, this time T1 is the charging period of the capacitor.
+[11:11] And this time T2 is the discharging time of the capacitor. Now like I said before, here we are
+[11:17] assuming that the RC time constant of this filter is much larger than the time period of the waveform.
+[11:24] And if this condition is not satisfied, then the capacitor will get discharged rapidly.
+[11:29] And to avoid that problem, we should always check this condition.
+[11:34] So by properly selecting the RC time constant of the filter, we can reduce the discharging of
+[11:39] the capacitor. And hence, we can also reduce the ripple in the output waveform.
+[11:45] So as you have seen, using this filter circuit, we can reduce the ripple in the output waveform.
+[11:51] But still, if you see the output waveform, it has some finite ripple. And the peak to peak ripple
+[11:57] can be given by this expression, that is, IDC divided by FC, where IDC is the average current,
+[12:04] which is flowing in the given circuit, while F is the output frequency of the
+[12:08] half-wave rectifier, hence is the filter capacitance. Then the next parameter, which is used for
+[12:14] this rectifier, is the efficiency. So this parameter defines how efficiently the AC input power is
+[12:21] converted into the DC output power. And for this half-wave rectifier, the efficiency is equal
+[12:27] to 40.6%. It means that from the given input power, only 40.6% of power is getting converted into
+[12:35] the DC power. And as you can see, in case of this half-wave rectifier, the efficiency is less than
+[12:41] 50%. So these are the few performance parameters for the half-wave rectifier. And this
+[12:48] parameters can be improved by using the next type of rectifier circuit, that is the
+[12:52] full-wave rectifier circuit. And we will see about it in the separate video.
+[12:57] Now, before ending this video, let us see few applications of this half-wave rectifier.
+[13:03] And one of the most obvious applications of this half-wave rectifier is in AC to DC conversion.
+[13:09] So here, the block diagram of linear power supply has been shown. So as you can see from the
+[13:15] block diagram, at the first stage, the input voltage is stepped down using the
+[13:19] stepped down transformer. And then it is applied to the rectifier circuit. So at the output of
+[13:24] the rectifier circuit, you will get pulsating DC voltage. And the ripple in the output waveform
+[13:30] is reduced using the filter circuit. Now, although this filter circuit will reduce the ripple
+[13:36] in the output waveform, but still some variation will be presented in the output waveform. And that
+[13:41] can be removed using this regulator circuit. So any variation which is present at the input of
+[13:46] this regulator will be taken care by this regulator circuit. So in this way, using this half-wave
+[13:52] rectifier circuit, it is possible to convert the AC signal into the DC signal. But in practical
+[13:57] cases, this half-wave rectifier circuit is badly used because it has very poor efficiency as well
+[14:03] as large ripple. So in practical cases, full-wave rectifier circuits are more preferred over this
+[14:09] half-wave rectifier circuits. Then the next application of this half-wave rectifier is in
+[14:14] demodulation of the signal. So if we apply this modulated signal to this half-wave rectifier circuit,
+[14:20] then it is possible to recover the envelope from the carrier frequency. So these are the few
+[14:25] applications in which this half-wave rectifier circuit can be used. And in summary,
+[14:30] here is the list of different parameters which is defined for the half-wave rectifier.
+[14:35] Now among these parameters, we will derive few parameters in the next video.
+[14:40] So I hope in this video, you understood about the half-wave rectifier circuit.
+[14:45] If you have any question or suggestion, do let me know in the comment section below.
+[14:49] If you like this video, hit the like button and subscribe to the channel for more such videos.

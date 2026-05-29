@@ -1,0 +1,106 @@
+Title: Zener Diode  Solved Problem (Analog Electronics) |  Quiz # 497
+URL: https://www.youtube.com/watch?v=7i-VQCoimuI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question, we have been given this circuit and here we have been asked to find
+[00:15] the total energy that is dissipated across this Xena diode.
+[00:20] So if you see this circuit, then here the initial voltage across the capacitor is equal to
+[00:25] 10 volt and at time t is equal to 0.
+[00:28] This switch has been closed.
+[00:30] That is at time t is equal to 0.
+[00:32] If you see the equivalent circuit, then this is how it will look like.
+[00:36] So as soon as the switch gets closed and this capacitor will start discharging through
+[00:41] this resistor as well as the Xena diode.
+[00:44] Let's say this current is equal to Ic of t.
+[00:48] So here the total energy that is dissipated across this Xena diode can be given as integration
+[00:54] 0 to infinity, this p of z times dt, where this pz is the total power that is dissipated
+[01:01] across this Xena diode.
+[01:03] For further we can write it as integration 0 to infinity, this vz times this Ic of t times
+[01:10] dt, where this vz is the voltage across this Xena diode and this Ic of t is the current
+[01:17] that is flowing through the Xena diode.
+[01:20] So here we already know that the Xena voltage is equal to 5 volt.
+[01:24] That means whenever the Xena diode is conducting and the voltage across the Xena diode or this
+[01:29] vz is equal to 5 volt.
+[01:32] That means here the only thing that we need to find is this capacitor current.
+[01:37] So here we have been given that initially this voltage across the capacitor is equal
+[01:42] to 10 volt.
+[01:43] That means here this vz of 0 minus is equal to 10 volt.
+[01:48] And we know that the capacitor opposites the instantaneous change in the voltage.
+[01:53] That means at time t is equal to 0 plus also the voltage across the capacitor will still
+[01:57] remain 10 volt.
+[01:59] Now here if you observe and this Xena diode will conduct whenever the voltage across it
+[02:04] is greater than 5 volt.
+[02:06] That means as soon as the voltage across the capacitor goes below 5 volt and this Xena
+[02:10] diode will turn off and in this condition it will act as a open circuit.
+[02:16] So we can say that during the discharging of this capacitor the minimum voltage across
+[02:21] the capacitor will be equal to 5 volt or we can say that this vz of infinity will be
+[02:27] equal to 5 volt.
+[02:29] And from this we can easily find the equation for the voltage across the capacitor.
+[02:34] So we know that this vz of t is equal to vz of infinity plus vz of 0 minus vz of infinity
+[02:44] times e to the power minus t divided by rc.
+[02:48] So here is vz of infinity is equal to 5 volt while the vz of 0 is equal to 10 volt.
+[02:55] That means we will have 5 plus 10 minus 5 times e to the power minus t divided by rc.
+[03:03] Or we can say that this vz of t for the voltage across the capacitor is equal to 5 plus 5
+[03:09] times e to the power minus t divided by rc.
+[03:13] And as you can see whenever the t is 0 then the voltage across the capacitor is equal
+[03:17] to 10 volt and at time t is equal to infinity this voltage is equal to 5 volt.
+[03:23] So this will be the equation of the voltage across the capacitor.
+[03:27] And from this if you want to find the capacitor current then we can easily find that.
+[03:32] So let us see that.
+[03:34] So we know that this capacitor current ic of t can be given as c times this dvd divided
+[03:39] by dt.
+[03:42] And here since the capacitor is discharging so here we will have the negative sign which
+[03:47] indicates that here the rate of change of voltage is negative.
+[03:51] That means here this capacitor current is equal to minus c times the differentiation
+[03:56] of this hub of expression.
+[03:58] So here the differentiation of the phi is equal to 0.
+[04:02] And if we differentiate this term then we will get this phi divided by minus rc times
+[04:08] is e to the power minus t divided by rc.
+[04:12] So here this c will get cancel out and we will have this phi divided by r times this e
+[04:17] to the power minus t divided by rc.
+[04:21] So here the value of the r is equal to 10 kilo ohm while the value of the c is equal to
+[04:26] 10 microfaraday.
+[04:28] That means here if we calculate the value of rc and that is equal to 0.1.
+[04:34] So in the above expression if we put the value of r and c then we can write it as phi
+[04:39] divided by 10 kilo ohm times this e to the power minus 10 times t.
+[04:45] For that is equal to 0.5 times e to the power minus 10 times e milli ampere.
+[04:51] So in this way we got the expression of the capacitor current.
+[04:56] So in case if you do not want to find the capacitor current in this way then using the initial
+[05:00] and the final values of the capacitor current also you can find the same expression.
+[05:05] So let us also see that.
+[05:06] So here as soon as the switch gets closed and the current Ic of table start flowing
+[05:11] through this circuit.
+[05:13] So here this Ic of 0 plus will be equal to Vc of 0 plus that is this voltage minus
+[05:20] vz divided by r.
+[05:22] Where the vz is the voltage across the zener diode and this r is the 10 kilo ohm resistor.
+[05:28] That means this Ic of 0 plus is equal to 10 minus phi divided by r.
+[05:33] That is equal to phi divided by 10 kilo ohm.
+[05:36] For that is equal to 0.5 milli ampere.
+[05:40] That means this Ic of 0 plus is equal to 0.5 milli ampere and we know that at time t is
+[05:46] equal to infinity this capacitor current will be equal to 0.
+[05:51] So in this way we got the initial and the final value of the capacitor current.
+[05:55] So we know that this capacitor current Ic of t can be given as this Ic of infinity plus
+[06:02] Ic of 0 minus Ic of infinity times e to the power minus t divided by rc.
+[06:09] Where the rc is the time constant of the given circuit.
+[06:14] So here if you put the initial and the final values and this Ic of t will come out as 0
+[06:19] plus 0.5 minus 0 times e to the power minus 10 times t or that is equal to 0.5 times e
+[06:28] to the power minus 10 t milli ampere.
+[06:32] So in this way using both methods we can easily find the expression of the capacitor current
+[06:38] and once we know the values of this capacitor current then we can easily find the energy
+[06:43] that is dissipated across this zener diode.
+[06:46] So this z will be equal to 0 to infinity this vz times this Ic of t times dt.
+[06:54] So here this vz is equal to 5 volt and this Ic of t is equal to 0.5 times e to the power
+[07:02] minus 10 t times dt and here since this current is in the milli ampere so once we find the
+[07:08] value of the energy then directly it will be in the milligule.
+[07:12] So further we can write it as this 2.5 times integration 0 to infinity e to the power minus
+[07:19] 10 t times dt.
+[07:21] So if we integrate this term and we will get 2.5 times e to the power minus 10 t divided
+[07:29] by minus 10 and here the limits will be from 0 to infinity.
+[07:35] So that is equal to 0.25 times minus e to the power minus 10 t with limits from 0 to
+[07:42] infinity.
+[07:44] So further we can write it as 0.25 times this e to the power minus infinity is 0 while
+[07:50] the e to the power 0 is 1 and that is equal to 0.25.
+[07:55] So we can say that the energy that is dissipated across this inner diode is equal to 0.25
+[08:01] each volt.
+[08:03] And therefore for the given question the answer is equal to 0.25.

@@ -1,0 +1,144 @@
+Title: Introduction to Operational Amplifier: Characteristics of Ideal Op-Amp
+URL: https://www.youtube.com/watch?v=kiiA6WTCQn0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in this video, we are going to talk about the basics of the operational amplifier.
+[00:28] And in the upcoming videos, we will talk more about this operational amplifier.
+[00:32] And we will see how we can design the different circuits using this operational amplifier.
+[00:37] So as its name suggests, this op-em is basically a amplifier and the basic job of any amplifier
+[00:43] is to amplify the input signal.
+[00:46] Now let us understand why it is known as the operational amplifier.
+[00:50] So in early days, when digital computers were not evolved, at that time, the different
+[00:56] mathematical functions like addition, subtraction, integration and differentiation were
+[01:01] performed using this operational amplifier.
+[01:04] So, just by connecting few registers and capacitors, it is possible to perform different
+[01:09] mathematical operations.
+[01:10] And that is why this amplifier is known as the operational amplifier.
+[01:15] So now if you see the circuit symbol of operational amplifier, it can be represented by this symbol.
+[01:22] So it consists of two inputs and one output.
+[01:26] And most of the amplifiers consist of a two power supply, the positive and the negative
+[01:31] power supply.
+[01:32] But there are many opa mice which runs on the single power supply.
+[01:36] So now in this operational amplifier, the input terminal which is marked by this positive
+[01:41] sign is known as the non-inverting input terminal and the another input terminal which
+[01:46] is marked by this negative sign is known as the inverting input terminal.
+[01:50] And it will be get clear to you very shortly why it is known as a non-inverting as well
+[01:55] as the inverting input terminals.
+[01:57] So now if you see this operational amplifier, it is a one kind of differential amplifier
+[02:01] with a single output.
+[02:03] It means that this amplifier amplifies the difference between the two input signals.
+[02:08] So let's say V1 and V2 are the input signals which is being applied to this operational amplifier.
+[02:14] And let's say the gain of this operational amplifier is A, then the output will be equal
+[02:19] to A times the V1 minus V2.
+[02:23] So let's say if we have applied the single input to this operational amplifier and we have
+[02:29] grounded the another input terminal, then at the output you will get a A times V1 where
+[02:35] A is the open loop gain of this operational amplifier.
+[02:39] The reason it is being known as the open loop gain because it is the gain of the operational
+[02:44] amplifier when there is no feedback from the output to the input side.
+[02:48] So suppose if you are applying the sinusoidal signal over here, then at the output that sinusoidal
+[02:54] signal should be get multiplied by the factor of this gain and at the output you should get
+[02:59] a amplified sinusoidal signal.
+[03:03] Now here the phase of this output voltage will be the same as the input voltage.
+[03:07] Likewise whenever we are applying input to this negative terminal and we are grounding
+[03:13] the another terminal, then the output of this amplifier will be equal to minus A times
+[03:18] the V2 because the difference between these two input terminal will be equal to 0 minus
+[03:25] V2 that is equal to minus V2.
+[03:27] So suppose let's say if we are applying the sinusoidal signal at the input, then at the
+[03:32] output we will get the amplified sinusoidal signal which is having a monetary degree phase
+[03:37] with respect to input signal.
+[03:40] That means the output will be get inverted by a monetary degree and that is why this
+[03:45] input terminal is known as the inverting terminal because the output will be get inverted
+[03:50] with respect to input.
+[03:52] So now here suppose if we apply the input signal between these two positive and the negative
+[03:57] terminals, then at the output we will get a A times this differential input signal where
+[04:04] here this A represents the open loop gain of this operational amplifier.
+[04:08] Now this operational amplifier is very high gain amplifier in the value of gain used
+[04:13] to be in the range of 10 to the power 5 to the 10 to the power 6.
+[04:18] So let's say even if we apply the 1 milli volt of signal between these two terminals
+[04:24] and let's say if the gain of this open is 10 to the power 5, then at the output theoretically
+[04:28] we should get 1 milli volt signal that is multiplied by the 10 to the power 5 that is equal
+[04:36] to 100 volt or let's say if we apply 1 volt of signal then theoretically we should get
+[04:43] a output as a 10 to the power 5 volt but that is not possible and the output of this
+[04:49] open is restricted by the biasing voltages that is being applied to this open.
+[04:55] So the output voltage will be between this biasing voltages.
+[05:00] So if you see the voltage transfer curve of open then it will look like this.
+[05:06] So here the x axis represents the differential input that is being applied to this operational
+[05:11] amplifier and the y axis represents the output voltage of the amplifier and here the slope
+[05:17] basically represents the gain of the amplifier which used to be in the range of 10 to the
+[05:22] power 5 to the 10 to the power 6.
+[05:26] Now here let's say the gain of the open is 10 to the power 6 and let's say we are applying
+[05:30] a 1 micro volt of signal then at the output we should get a 1 volt of signal likewise
+[05:37] let's say if we apply a 10 micro volt of signal then at the output we will get a 10 volt
+[05:42] of output but as we increase this input signal then you will find that after some value of
+[05:49] input signal the output will be get saturated to the value plus V set which used to be less
+[05:55] than the positive biasing supply. So in this way as soon as the input voltage goes beyond some certain
+[06:01] value the output will be get saturated to the plus saturation voltage and same is true for the
+[06:08] negative input voltages. So as soon as the input voltage goes beyond some threshold value
+[06:14] at the output you will get a minus saturation voltage. So whenever this operational amplifier
+[06:20] is used in an open loop configuration that means there is no feedback from output to the input
+[06:25] side at that time even if we apply a small input signal between these two input terminals then also
+[06:31] you will find that the output will be get saturated towards the positive or the negative biasing
+[06:37] voltages. So this particular characteristic of the opam is particularly useful when we use this
+[06:42] opam as a comparator. So this is one of the application in which this opam can be used but if you
+[06:48] see this opam this opam can be also be used in so many other applications like in desiring the
+[06:53] active filters oscillators you form converters and analog to digital and digital to analog converters
+[06:59] and if we count the list the list will go on. So basically this opam is very versatile I see and
+[07:06] you will find this opam in so many applications. Now the reason this opam is used in so many application
+[07:12] is because of its different characteristic. So let us see the different characteristic of the opam
+[07:18] because of which it is being so versatile and used in different applications. So before we see
+[07:23] that let us see the equivalent circuit of the opam. So as you can see here this R i is the input
+[07:28] impedance of this opam likewise this RO represents the output impedance of this opam and the output
+[07:35] voltage of the opam will be the open loop gain multiplied by the difference between the input
+[07:41] signals V1 and V2. So now before we see the different characteristic of the opam let us see the
+[07:47] different characteristic of the ideal opam. So the ideal opam should have this input impedance R i
+[07:53] that is equal to infinity. So that whatever input that is being applied between the input terminals
+[07:59] will directly get applied to the opam. Similarly the output impedance of this opam should be equal to
+[08:06] 0 that means whenever we are applying the output load to this opam then the output voltage should
+[08:13] directly come across this output load. Then if you see the bandwidth of the ideal opam the bandwidth
+[08:19] of the ideal opam should also be equal to infinity. It means it should support all the frequencies
+[08:25] starting from the 0 hertz up to the infinite. Similarly the gain of the ideal opam should also be
+[08:31] equal to infinite. Apart from that whenever these two input terminals are 0 that means the input
+[08:38] to this opam is 0 at that time the output of this ideal opam should be equal to 0.
+[08:44] Now apart from these characteristics there are few more characteristic of the ideal opam that is
+[08:51] slew rate and the common mode rejection ratio. So we will see more about this different characteristic
+[08:59] in detail in separate videos but let us see the basics of this different characteristic. So in a
+[09:05] simple way if I say this slew rate is basically how fast the opam is able to reach its final value
+[09:12] and that is particularly useful when we are applying a square wave to the opam. So let's say
+[09:18] we have applied this square wave to the input of this opam and at the output we are getting this
+[09:25] output wave form that is varying from 0 volt to the V saturation voltage. So the ideal opam should
+[09:32] be able to reach from the 0 volt to the V set volt in a 0 time. So for the ideal opam the slew
+[09:39] rate should be equal to infinity. Generally this slew rate is defined in a unit of volt per microsecond
+[09:47] that means how fast the opam is able to respond to the output voltage. Then there is another parameter
+[09:53] which is known as the common mode rejection ratio. So let us understand very briefly what do we
+[09:59] mean by this common mode rejection ratio. We will talk more about it in a separate video.
+[10:05] So let's say if we are applying the same input voltage to this V1 and V2 then the difference between
+[10:10] the these two voltage will be equal to 0 and at the output we should get a 0 volt. Likewise when
+[10:17] we are applying a different input voltage is V1 and V2 to this opam then at the output the difference
+[10:23] between these two voltages will be get amplified by certain amplifier gain. So this common mode
+[10:28] rejection ratio basically defines how well the opam is able to reject the common input voltages
+[10:35] that is being applied to both its input terminals and how well it is able to amplify the difference
+[10:41] between the two voltages and it is generally defined as the ratio of differential gain
+[10:47] dear by the common mode gain. So for the ideal opam the value of this common mode rejection ratio
+[10:53] should be equal to infinity. So here is the list of different ideal opam characteristic. So the
+[10:58] ideal opam has infinite input impedance 0 output impedance infinite open loop gain and infinite
+[11:06] bandwidth and slew rate and in this ideal opam whenever the input is equal to 0 then at the time the
+[11:13] output is also 0 and this ideal opam has a infinite common mode rejection ratio. But if you see any
+[11:21] practical opams they used to have finite input as well as the output impedance. Generally this
+[11:27] input impedance is in the range of mega-homes while the output impedance is in the range of few
+[11:33] ohms. Similarly the open loop gain of the opam is not infinity but it used to be in the range of
+[11:39] 10 to the power 5 to the 10 to the power 6. Likewise for the practical opams whenever the input is
+[11:45] equal to 0 at that time also you will get some output at the opam generally used to be in the range
+[11:52] of millivolts that is known as the offset voltage and we will talk more about it in the separate
+[11:58] video. So here is the list of different parameters and the values of different parameters for
+[12:02] the general purpose 7 for 1 opam Ic. So now if you see the different opam Ic's they are optimized
+[12:08] for the different parameters. So let's say if one opam is optimized for the very high slew rate
+[12:14] while the another opam is optimized for the very high open loop gain and if you see some other Ic
+[12:21] you might find that it is optimized for the very low offset voltages. So depending upon your
+[12:27] application you need to decide which parameter is critical for your application and based on that
+[12:32] you can decide which opam is suitable for your particular application. Now so far we have seen
+[12:39] this opam in an open loop configuration that means there was no feedback from output to the input.
+[12:45] Now in the next video we will see what happens when we provide the feedback from output to the
+[12:50] input side. So I hope in this video you understood the different characteristics of this opam.
+[12:57] So if you have any question or suggestion do let me know in the comment section below.
+[13:00] If you like this video hit the like button and subscribe to channel for more such videos.

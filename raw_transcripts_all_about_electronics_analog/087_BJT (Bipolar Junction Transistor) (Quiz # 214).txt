@@ -1,0 +1,83 @@
+Title: BJT (Bipolar Junction Transistor) (Quiz # 214)
+URL: https://www.youtube.com/watch?v=zMc50pHz9RU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been given this transistor circuit and we have been asked
+[00:21] to find the correct current.
+[00:23] Now first of all, we need to find out whether this transistor is operating in the active
+[00:28] region or the saturation region.
+[00:30] But initially, let us assume that it is operating in the active region.
+[00:35] And assuming that, first of all, let us find out the base current.
+[00:40] So here, these terminals are the base, collector and the emitter terminals.
+[00:47] So first of all, let us find out the base current.
+[00:50] And for a moment, let us assume that this Zener diode is operating in the breakdown region.
+[00:56] That means the voltage drop across this Zener diode is equal to 5V.
+[01:01] So here, if the voltage at the end of this Zener diode is minus 12V, then the voltage
+[01:06] at the cathode of this Zener diode should be equal to minus 7V.
+[01:12] And as you can see, this terminal is at the ground potential.
+[01:16] That means current through this 15 KM resistor is equal to 0 minus 7V divided by 15 KM.
+[01:25] And let us say, this current is equal to I.
+[01:28] So this current I is equal to 0.466 milliampere.
+[01:36] That means if this Zener diode is operating in the breakdown region, then the current through
+[01:41] this 15 KM resistor is equal to 0.46 milliampere.
+[01:46] Now if this transistor is operating in the active region, then the base emitter junction
+[01:50] is far biased.
+[01:52] So here if you observe, the voltage at the emitter is equal to minus 12V.
+[01:58] And here we have been given that the voltage VBE is equal to 0.7V.
+[02:03] That means the voltage at the base terminal will be equal to minus 12 plus 0.7V.
+[02:10] Similarly, we have been given that the voltage drop across the diode is equal to 0.7V.
+[02:17] That means if we see the voltage at this node or let us say at this node VA, then the
+[02:23] voltage at the VA is equal to minus 12 plus 0.7V plus the voltage drop across this diode.
+[02:32] That is equal to 0.7V.
+[02:34] That means the voltage VA will be equal to minus 10.6V.
+[02:41] So in this case, if this Zener diode is turned on, then the current will flow through
+[02:45] this 1KM resistor and it will flow in this direction.
+[02:50] So the current through this 1KM resistor I will be equal to minus 7 minus 10.6V divided
+[02:59] by 1KM.
+[03:01] That is equal to 3.6 milliampere.
+[03:06] Now we have just seen that the current through the 15KM resistor is equal to 0.46 milliampere.
+[03:14] And the current which is flowing through the 1KM resistor is equal to 3.6 milliampere.
+[03:20] So the remaining current should flow in this direction.
+[03:23] That means if we apply the KCL at this node, then the remaining current should flow in
+[03:29] the upward direction through this Zener diode.
+[03:32] But if this Zener diode is operating in the breakdown region, then the current should
+[03:36] flow in the downward direction.
+[03:38] That means this Zener diode is not operating in the breakdown region.
+[03:43] And simply it will act as an open circuit.
+[03:47] So now if we see the equivalent circuit, then the equivalent circuit will look like this.
+[03:52] And for this circuit, now let us find out the base current.
+[03:56] So here the base current IB will be equal to 0 minus the voltage at this node.
+[04:05] That is 0 minus VA divided by 15KM plus 1KM.
+[04:13] And we have seen that the voltage VA is equal to minus 10.6V.
+[04:18] That means base current IB is equal to 0 minus 10.6V divided by 16KM.
+[04:28] That is equal to 0.66 milliampere.
+[04:33] That means this will be the value of the base current.
+[04:36] Now if this transistor is operating in the active region, then the collector current IC
+[04:41] should be equal to beta times IB.
+[04:44] That is equal to 30 times 0.662 milliampere.
+[04:50] And if we calculate the value, then the collector current IC should be equal to 19.8 milliampere.
+[04:58] That means if this transistor is operating in the active region, then this should be the
+[05:03] value of the collector current.
+[05:05] But first of all, let us check whether this much amount of collector current can flow
+[05:09] through this given transistor.
+[05:12] And for that, let us find out the maximum collector current which can flow through this transistor
+[05:16] circuit.
+[05:18] So for that, we will assume that the transistor is operating in the saturation region.
+[05:23] That means the VCE set is equal to 0.2V.
+[05:26] So here the voltage at the emitter terminal is equal to minus 12V.
+[05:32] So if the transistor is operating in the saturation region, then this collector voltage VCE will
+[05:37] be equal to minus 12 plus 0.2V.
+[05:41] And the collector current IC will be equal to 0 minus minus 12 plus 0.2V divided by 2.2
+[05:50] kilo ohm.
+[05:52] That is equal to 5.36 milliampere.
+[05:57] So this is the maximum value of the collector current which can flow through the transistor
+[06:01] circuit.
+[06:04] That means the collector current cannot be equal to 19.8 milliampere.
+[06:08] Or in other words, we can say that the transistor is operating in the saturation region.
+[06:13] Or if we see the same thing in a different way, then we can say that here the base current
+[06:19] IB is greater than IC set divided by the value of beta in the active region.
+[06:25] That means the transistor is operating in the saturation region and the value of the
+[06:29] collector current IC will be equal to IC set.
+[06:33] That means the value of the collector current IC is equal to 5.36 milliampere.
+[06:40] That means for the given question, see is the correct answer.

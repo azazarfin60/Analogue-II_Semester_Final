@@ -1,0 +1,351 @@
+Title: What is Zener Diode ? Zener Diode as a Voltage Regulator Explained (with solved Examples)
+URL: https://www.youtube.com/watch?v=MZPeRlst8rQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel OJ about Electronics.
+[00:16] In this video, we will learn about the Xinner diode and we will see that how the Xinner
+[00:21] diode can be operated as a voltage regulator.
+[00:24] Now in the previous videos, we have seen that how this PN junction diode can be operated
+[00:29] in the forward as well as in the reverse direction.
+[00:33] And we have also seen that in case of a reverse bias condition, when the applied voltage
+[00:38] is less than this breakdown voltage, then there is hardly any flow of current through
+[00:42] the diode.
+[00:44] But as soon as the voltage across the diode is more than this breakdown voltage, then
+[00:48] suddenly a lot of current starts flowing in the reverse direction.
+[00:52] So this region of operation of the diode is known as the breakdown region of operation.
+[00:57] And for normal diode, this region of operation should be avoided.
+[01:02] But there are some diodes which are meant to be used in this breakdown region.
+[01:07] And these diodes are known as the Xinner diode.
+[01:11] So here is the symbol of the Xinner diode.
+[01:13] And if you see the VIA characteristic of the Xinner diode, then it looks quite similar
+[01:17] to the normal diode.
+[01:19] So as you can see, in the forward bias condition, it just works similar to the normal diode.
+[01:26] And in the reverse direction, when the applied voltage is more than the threshold voltage,
+[01:31] then suddenly the diode starts operating in the breakdown region.
+[01:35] So the voltage after which the Xinner diode operates in this breakdown region is known
+[01:40] as the Xinner voltage.
+[01:42] And the corresponding current which is flowing through the Xinner diode is known as the Xinner
+[01:46] current.
+[01:48] Now unlike the normal diodes, these Xinner breakdown voltage can be as low as 2V or as
+[01:54] high as 2N of volts.
+[01:56] But if you see the normal diodes, typically the breakdown voltage used to be more than
+[02:00] 20V.
+[02:02] So unlike the normal diodes, these Xinner diodes are heavily doped.
+[02:07] And by changing the doping concentration, we can change the Xinner voltage of this Xinner
+[02:12] diode.
+[02:13] So for the Xinner diodes, where the breakdown voltage is less than 4V, the Xinner effect
+[02:18] is the predominant effect.
+[02:20] On the other end, for the Xinner diodes, whose breakdown voltage is more than 6V, the
+[02:25] avalanche effect is the predominant effect.
+[02:29] And we have already discussed about these two effects in the previous video.
+[02:33] So for more information, you can check that video.
+[02:37] But irrespective of the breakdown mechanism, all the diodes which are meant to be used
+[02:41] in this breakdown region are known as the Xinner diodes.
+[02:45] Now in this Xinner diode, in the reverse bias condition, when the applied voltage is
+[02:49] more than the Xinner voltage, then this Xinner diode will operate in the breakdown region.
+[02:55] And if there is no current limiting resistor in series with Xinner diode, then suddenly
+[03:00] a excessive amount of current starts flowing through this Xinner diode.
+[03:04] And in a way, because of the excessive power dissipation, this Xinner diode may get damaged.
+[03:10] So to limit this current, it is required to connect a current limiting resistor in series
+[03:14] with this Xinner diode.
+[03:17] And if you see the data sheet of Xinner diode, then you will find that the maximum Xinner
+[03:22] current is defined for the Xinner diode.
+[03:25] It means that the maximum allowable current through Xinner diode should be less than this
+[03:30] current.
+[03:31] And if you see the data sheet, one more current is also defined for Xinner diode, which
+[03:35] is known as the Minimum Xinner current.
+[03:38] So basically, this current defines the minimum current which should be required to use Xinner
+[03:44] diode in this breakdown region.
+[03:46] So whenever the Xinner diode is used in this breakdown region, then the operating current
+[03:51] of Xinner diode should be between these two limits.
+[03:54] So for any Xinner diode, when the applied voltage Vs is more than this Xinner voltage,
+[04:01] and the operating current is in between this IZK and the IZM, then we can say that the
+[04:08] Xinner diode is operating in this breakdown region.
+[04:11] So now if you see the voltage characteristic of this Xinner diode, then you can see that
+[04:16] even if you go beyond this Xinner voltage, then also there is hardly any change in the
+[04:21] voltage across this Xinner diode.
+[04:23] Or in other words, we can say that the voltage across the Xinner diode remains constant.
+[04:30] So in a way, this Xinner diode can be operated as a voltage regulator.
+[04:35] So in the first approximation, we will assume that whenever the voltage across the Xinner
+[04:39] diode is more than the Xinner voltage, in that case, the Xinner diode can be replaced
+[04:44] by a constant voltage source of VZ.
+[04:48] But in reality, if you see, this curve is not a straight line.
+[04:52] It means that this Xinner diode should have some series resistance, and this series resistance
+[04:58] is known as the Xinner resistance.
+[05:01] So because of this Xinner resistance, if the current which is flowing through the Xinner
+[05:04] diode will increase, then the voltage drop across this Xinner resistor will increase.
+[05:10] And due to that, the overall voltage which appears across this Xinner diode will increase.
+[05:16] But here for our analysis, we will assume that the Xinner resistance of the Xinner diode
+[05:20] is zero.
+[05:22] Apart from that, we will also assume that the Xinner current IZK is equal to zero.
+[05:28] That means in the reverse bias condition, the current which is required to turn on this
+[05:32] Xinner diode is also zero.
+[05:35] So under these assumptions, now let us see how the Xinner diode can be operated as a
+[05:39] voltage regulator.
+[05:41] So under this approximation, if the supply voltage VZ is more than VZ, in that case, the Xinner
+[05:48] diode will operate in the breakdown region, and it will provide a constant voltage VZ
+[05:52] across the two terminals.
+[05:55] So in a way, we can use this Xinner diode as a voltage regulator.
+[05:59] And this is particularly useful for designing the power supplies.
+[06:03] So let's say we are designing the power supply using the full-overactive gas circuit.
+[06:08] And for the filter ration, here we are using the capacitor filter.
+[06:12] Now if you recall, even if you use this capacitor filter, then also there is some final triple
+[06:18] in the output waveform.
+[06:20] And this ripple can be further reduced if we use this Xinner diode at the output of this
+[06:25] capacitor filter.
+[06:27] So in this way, this Xinner diode acts as a voltage regulator, and it provides a constant
+[06:32] voltage across the two terminals.
+[06:35] Now here, even if we connect the load resistance across this Xinner diode, then also it will
+[06:40] provide a constant voltage across this load resistance.
+[06:44] But now whenever we connect this load resistance, then first of all, we need to find the Thavinian's
+[06:50] equivalent voltage across these two terminals.
+[06:53] Because under the no load condition, whenever we apply the supply voltage, then the entire
+[06:59] voltage is appearing across this Xinner diode.
+[07:03] But when we connect this load resistance RL, then first of all, we need to ensure that
+[07:08] the voltage across this two terminal is more than the Xinner voltage.
+[07:13] So to find this voltage across this Xinner diode, first of all, we will find the Thavinian's
+[07:18] equivalent voltage across this two terminal.
+[07:21] And it can be given as RL divided by RL plus RS times VS.
+[07:29] Now if this Thavinian's voltage is more than VZ, in that case, this Xinner diode will
+[07:34] operate in the breakdown region.
+[07:37] So if this Xinner diode operates in the breakdown region, then it will provide a constant voltage
+[07:41] VZ to this load resistor.
+[07:44] And in that case, the load current IL will be equal to VL divided by RL.
+[07:51] And here VL is nothing but the VZ.
+[07:54] That means the load current IL will be equal to VZ divided by RL.
+[08:00] Similarly, now let us see what is the source current or the series current which is flowing
+[08:05] through this resistor RS.
+[08:08] So this source current IS can be given as VS minus VZ divided by RS.
+[08:19] So this is the source current which is supplied by this voltage source.
+[08:24] So now we know the source current and this load current.
+[08:28] And the remaining current will flow through this Xinner diode.
+[08:32] And this current is known as the Xinner current.
+[08:35] So if we apply the KCL at this node, then we can say that this current IS is equal to
+[08:41] IZ plus IL.
+[08:44] Or we can say that the Xinner current IZ is equal to IS minus IL.
+[08:49] So this is the current which is flowing through this Xinner diode.
+[08:53] And the power which is getting dissipated across the Xinner diode is equal to VZ times
+[08:59] IZ.
+[09:00] So basically it is the product of Xinner voltage and the Xinner current.
+[09:05] So in this way we can find the Xinner current through the Xinner diode.
+[09:09] So let us take one simple example so that this concept will get clear to you.
+[09:14] So in this example, we have been asked to find the Xinner current and the power which
+[09:19] is getting dissipated across this Xinner diode.
+[09:23] So first of all, we need to ensure that the voltage across the Xinner diode is more
+[09:28] than 10V.
+[09:30] So for that, we will find the Thavelin's equivalent voltage across these two terminals.
+[09:35] So here this VTH can be given as 1K ohm divided by 1K ohm plus 250 ohm times 18V.
+[09:46] And if we calculate the value, then it will come out as 14.4V.
+[09:51] So as this Thavelin's equivalent voltage is more than 10V.
+[09:55] So this Xinner diode will operate in the breakdown region and it will provide a constant
+[10:00] voltage of 10V across this load resistor.
+[10:04] So from this we can say that the load current IL will be equal to 10V divided by 1K ohm
+[10:11] which is equal to 10 milliampere.
+[10:15] And here the series current IS or the source current IS will be equal to 18V minus 10V divided
+[10:24] by 250 ohm and it will be equal to 32 milliampere.
+[10:31] So this current IS is equal to 32 milliampere.
+[10:36] Now we know that Xinner current IZ can be given as IS minus IL that is equal to 32 minus
+[10:46] 10 milliampere which is equal to 22 milliampere.
+[10:51] So this is the Xinner current which is flowing through this Xinner diode and the power which
+[10:56] is getting dissipated can be given as IZ times phiZ that is equal to 22 milliampere times
+[11:04] 10V.
+[11:06] So the power which is getting dissipated across this Xinner diode is equal to 220 milliwatt.
+[11:13] So in this way we can find the Xinner current as well as the power dissipation.
+[11:18] Now whenever the Xinner diode is used as a voltage generator then depending on the application
+[11:24] the supply voltage or the load resistance will change.
+[11:28] But despite the change in these parameters, this Xinner diode should provide a constant
+[11:32] voltage across the load or in other words it should work properly as a voltage regulator.
+[11:39] So in general we can say that whenever the Xinner diode is used as a voltage regulator
+[11:44] then there are three variables.
+[11:46] One is the supply voltage and the other one is the load resistance.
+[11:51] And the third variable is the series resistance.
+[11:54] So here what we will do we will consider the two parameters constant and we will assume
+[12:00] that the third parameter is a variable and we will find the maximum and the minimum value
+[12:05] of this parameter such that the Xinner diode will operate in the breakdown region or
+[12:11] in other words this regulator circuit will work properly as a voltage regulator.
+[12:17] So first of all we will assume that this supply voltage Vs and this series resistance
+[12:22] are as a constant and the load resistance RL is variable.
+[12:27] So we will find the minimum and the maximum value of this load resistor such that the
+[12:31] Xinner diode will work properly as a voltage regulator.
+[12:35] So first of all let us find out the minimum value of this load resistance and to find that
+[12:41] first of all let us write the feminine sequence voltage across this Xinner diode.
+[12:46] So this voltage Vth can be given as RL divided by RL plus RS times Vs.
+[12:56] Now from the equation if you observe as the value of this load resistance RL reduces
+[13:01] in the feminine sequence voltage across this two terminal will reduce.
+[13:06] But if this feminine sequence voltage goes below this voltage Vz in that case this Xinner
+[13:12] diode will come out of the breakdown region.
+[13:15] So the Thavian's apparent voltage should be at least equal to Xinner voltage and from
+[13:21] this we can find the minimum value of this load resistance.
+[13:25] So if we equate this expression with Vz and if we rearrange the terms then the minimum
+[13:31] value of this load resistance can be given as RS times Vz divided by Vs minus Vz.
+[13:41] So this will be the minimum value of the load resistance to ensure that the Xinner diode
+[13:45] works properly in the breakdown region.
+[13:48] Similarly now let us find out the maximum value of this load resistor.
+[13:53] Now whenever this load resistance RL is maximum at that time the current which is flowing
+[13:57] through this load is minimum or in other words we can say that the IL minimum will be equal
+[14:04] to Vz divided by RL maximum.
+[14:10] Now here as the Vs and RS are fixed so the value of current Is will be fixed.
+[14:16] So this current Is can be given as Vs minus Vz divided by RS.
+[14:25] So this current Is will remain fixed.
+[14:28] Now as we increase the value of this RL then the current which is flowing through this
+[14:32] load resistor will reduce and at the same time the current which is flowing through
+[14:37] the Xinner diode will increase.
+[14:39] So as we keep on increasing the value of RL then the current which is flowing through
+[14:43] the Xinner diode will increase.
+[14:45] But we know that current which is flowing through Xinner diode should be less than the
+[14:49] maximum rating or in other words it should be less than IZM.
+[14:54] So whenever the maximum current is flowing through Xinner diode at that time the current
+[14:59] which is flowing through this load RL is minimum or mathematically we can write it as
+[15:05] Is is equal to IZM plus IL minimum.
+[15:11] That means the IL minimum is equal to Is minus IZM and from this we can find the maximum
+[15:19] value of this load resistor.
+[15:22] So to understand it better let us take one example.
+[15:26] So in this example we have been given this Xinner regulator circuit and we have been asked
+[15:31] to find the minimum and the maximum value of this load resistor.
+[15:35] So first of all let us find the minimum value of this load resistor and we know that the
+[15:41] minimum value of this load can be given as RS times VZ divided by Vs minus VZ and if
+[15:50] you put the values then we can write it as 100 ohm times 5 volt divided by 5 volt.
+[15:59] That means the minimum value of this load resistor is equal to 100 ohm.
+[16:03] Similarly now let us find out the maximum value.
+[16:07] So for finding the maximum value first of all we will find the source current Is and
+[16:13] the source current Is can be given as 10 volt minus 5 volt divided by 100 ohm that is
+[16:22] equal to 50 milliampere.
+[16:25] So this is the source current which is supplied by this 10 volt source and from this we can
+[16:32] say that the IL minimum will be equal to Is minus IZM that is equal to 50 minus 30
+[16:42] that means 20 milliampere.
+[16:45] So this will be the minimum current which will flow through this load resistor and from
+[16:50] this we can say that the maximum value of the load resistor will be equal to VZ divided
+[16:56] by IL minimum that means 5 volt divided by 20 milliampere.
+[17:04] So the maximum value of the load resistor will be equal to 250 ohm.
+[17:11] So from this we can say that for the given parameters when the value of load resistor
+[17:16] is in between 100 ohm and the 250 ohm then the given circuit will work properly as a
+[17:21] voltage regulator.
+[17:23] So now we will assume that this series resistor RS and the load resistor RLR constant
+[17:30] and this supply voltage VS is variable.
+[17:33] So we will find the minimum and the maximum value of the VS such that the senior diode
+[17:38] will work properly in the breakdown region or in other words this circuit will work properly
+[17:44] as a voltage regulator.
+[17:46] So first of all we will find the minimum value of this supply voltage and for that once
+[17:53] again let us write down the Thavinen's equivalent voltage which appears across this senior diode
+[17:59] that is equal to VS times RL divided by RS plus RL.
+[18:06] Now from the expression if you observe as we reduce the value of this VS then the Thavinen's
+[18:11] equivalent voltage which appears across this senior diode will reduce and if it goes
+[18:16] below this VZ then the senior diode will come out of the breakdown region.
+[18:22] So the minimum value of this Thavinen's equivalent voltage should be equal to VZ and from this
+[18:28] we can find the minimum value of this supply voltage.
+[18:31] So the VS minimum will be equal to RS plus RL divided by RL times VZ.
+[18:42] So this will be the minimum value of the supply voltage which will ensure that the senior
+[18:46] diode will work in the breakdown region.
+[18:50] Similarly now let us find out the maximum value of this supply voltage.
+[18:55] Now here if you observe as this senior diode is operating in the breakdown region so the
+[19:00] voltage at this node will be equal to VZ that means the lower current IL will be equal
+[19:06] to VZ divided by RL.
+[19:09] Now here as this VS is variable so as we increase the supply voltage then the source current
+[19:15] IS will increase and here the source current IS can be given as VS minus VZ divided by
+[19:25] RS.
+[19:27] So from the expression we can say that as the value of VS will increase the source current
+[19:33] IS will increase but here as this lower current ILS fixed so the remaining current will
+[19:39] flow through this senior diode.
+[19:42] So as we keep on increasing the value of VS the current which is flowing through the
+[19:46] senior diode will increase but we know that the maximum alivable senior current is equal
+[19:52] to IZM.
+[19:54] So this will limit the maximum value of this source current or in other words we can
+[19:59] say that the IS max will be equal to IZM plus IL and from this IS max we can find the
+[20:10] maximum value of this source voltage that means the IS max will be equal to VS max minus
+[20:20] VZ divided by RS.
+[20:24] So in this way we can also find the maximum value of the supply voltage.
+[20:29] So based on this let us take one example and in this example we have been asked to find
+[20:35] the minimum and the maximum value of the supply voltage such that the senior diode will
+[20:39] work properly in the breakdown region.
+[20:42] So first of all let us find out the minimum value of this supply voltage and this minimum
+[20:48] value can be given by the expression VZ times RS plus RL divided by RL and if you put
+[20:57] the value of VZ, RS and RL then we can write this expression as 10 volt multiplied by 100
+[21:05] ohm plus 5 net ohm divided by 5 net ohm and if you simplify it then the minimum value
+[21:13] of the supply voltage will be equal to 12 volt.
+[21:17] So this 12 volt will ensure that the senior diode will work in the breakdown region.
+[21:22] Similarly now let us find out the maximum value of this source voltage.
+[21:28] Now to find that value first of all let us find out the load current that is equal to
+[21:32] VZ divided by RL and here VZ is equal to 10 volt and RL is equal to finite ohm.
+[21:42] That means the IL will be equal to 20 milliampere.
+[21:47] Now here we have been given that the IZM is equal to 25 milliampere that means the IS
+[21:55] max will be equal to IZM plus IL that is equal to 25 milliampere plus 20 milliampere
+[22:06] which is equal to 45 milliampere and from this we can find the maximum value of this source
+[22:14] voltage.
+[22:16] So we can write this expression as IS max is equal to VS max minus VZ that is 10 volt
+[22:26] divided by 100 ohm and here the value of IS max is equal to 45 milliampere.
+[22:33] So if we simplify this expression then the value of this VS max will come out as 14.5 volt.
+[22:45] So this will be the maximum value of the supply voltage.
+[22:48] So for the given Zinner regulator whenever the supply voltage is in between this 14.5 volt
+[22:54] and the 12 volt then this circuit will work properly in the breakdown region.
+[22:59] Similarly now we will assume that the supply voltage VS and the load resistor RL are constant
+[23:06] and this series resistor RS is variable.
+[23:09] So here we will find the minimum and the maximum value of the RS such that the Zinner diode
+[23:14] will work in the breakdown region.
+[23:17] So first of all let us find out the maximum value of this series resistor and to find
+[23:23] that once again let us write down the expression for this Theminine Secretant Voltage is equal
+[23:30] to RL divided by RL plus RS times VS.
+[23:37] Now if you observe over here as we increase the value of RS then the Theminine Secretant
+[23:42] Voltage will reduce.
+[23:45] But this voltage should be at least equal to Zinner voltage such that the Zinner diode
+[23:50] will not come out of the breakdown region.
+[23:53] And from this we can find the maximum value of this RS.
+[23:57] So if we equate this term with VZ and if we rearrange it then the maximum value of this
+[24:03] series resistance RS will be equal to RL times VS minus VZ divided by VZ.
+[24:12] So this will be the maximum value of the series resistor.
+[24:16] Similarly now let us find out the minimum value.
+[24:20] Now here as the value of low resistor RL is fixed so the low current IL will also remain
+[24:25] fixed and this low current IL will be equal to VZ divided by RL.
+[24:32] Now here these source current IS can be given as VS minus VZ divided by RS.
+[24:41] So from the expression as we reduce the value of RS then the source current IS will increase.
+[24:47] So if we keep on reducing the value of RS then the value of IS will increase.
+[24:52] But here as the IL is fixed so the remaining current will flow through this Zinner diode.
+[24:59] And we know that the maximum allowable Zinner current is equal to IZM.
+[25:03] So that will limit the minimum value of this RS.
+[25:07] So we can say that this IS max is equal to IZM plus IL.
+[25:15] And from this IS max we can find the value of this minimum series resistor.
+[25:20] That means IS max is equal to VS minus VZ divided by RS minimum.
+[25:31] So in this way we can also find the minimum value of this series resistor.
+[25:37] So based on this let us take one example.
+[25:40] So in this example we have been asked to find the minimum and the maximum value of the
+[25:44] RS such that the Zinner diode works in the breakdown region.
+[25:49] So the maximum value of this series resistor RS can be given as RL times VS minus VZ divided
+[25:59] by VZ.
+[26:02] And if you put the values then the RS max will be equal to 1 kilo ohm times this VS minus
+[26:08] VZ is equal to 10 volt and VZ is also equal to 10 volt.
+[26:13] That means the maximum value of this series resistor will be equal to 1 kilo ohm.
+[26:20] Similarly to find the minimum value, first of all let us find out the load current which
+[26:26] is equal to 10 volt divided by 1 kilo ohm and that is equal to 10 milliampere.
+[26:35] Now here we know that the maximum allowable Zinner current is equal to 40 milliampere.
+[26:41] So from this we can say that this IS max is equal to IZM plus IL that is equal to 50
+[26:51] milliampere and from this we can find the minimum value of this RS.
+[26:57] That means this IS max will be equal to 20 minus 10 divided by RS minimum.
+[27:06] That means RS minimum will be equal to 10 divided by 50 milliampere which is equal to 2
+[27:15] nado.
+[27:17] So from this we can say that for the given example whenever the value of this series resistor
+[27:22] is in between the 2 nado and 1 kilo ohm then the circuit will work properly as a voltage
+[27:27] regulator and the Zinner diode will not come out of the breakdown region.
+[27:32] And in this way we can analyze as well as the design the circuits where the Zinner diode
+[27:37] is used as a voltage regulator.
+[27:40] Now so far in our analysis we have assumed that the Zinner resistance of the Zinner diode
+[27:45] is 0.
+[27:46] But in practical case if you see the Zinner diode has some finite resistance and due to
+[27:52] this resistance as the current which is flowing through the Zinner diode will increase.
+[27:56] The voltage drop across the Zinner resistor will also increase.
+[28:00] And due to that the overall voltage which appears across the Zinner diode will increase.
+[28:06] So when we are designing a practical Zinner regulator circuit and we should also consider
+[28:10] this Zinner resistor.
+[28:13] Apart from that we had also assumed that the current IZK for the Zinner diode is equal
+[28:18] to 0.
+[28:19] It means that in reverse bias condition to turn on the Zinner diode the required current
+[28:24] is 0.
+[28:25] But in practical case we require some finite current to turn on this Zinner diode.
+[28:31] So while designing the practical circuits we should also consider this minimum Zinner
+[28:35] current.
+[28:36] So I hope in this video you understood what is Zinner diode and how we can use this Zinner
+[28:41] diode as a voltage regulator.
+[28:43] So in the next video we will solve few more examples based on this Zinner regulator
+[28:47] circuits.
+[28:48] So if you have any question or suggestion do let me know here in the comment section
+[28:52] below.
+[28:53] If you like this video hit the like button and subscribe to the channel for more such
+[28:57] videos.

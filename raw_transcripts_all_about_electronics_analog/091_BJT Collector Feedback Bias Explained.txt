@@ -1,0 +1,187 @@
+Title: BJT: Collector Feedback Bias Explained
+URL: https://www.youtube.com/watch?v=oshGLNVvS4w
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this video, we will learn about the character feedback biasing configuration of the
+[00:21] BJT.
+[00:23] Now in the earlier videos, we had seen the different biasing configuration of the BJT.
+[00:29] And we had seen that for the BJT, the design biasing circuit should be such that even
+[00:34] if there is a change in the external parameters like a temperature, then there should be a
+[00:39] minimum change in the operating point.
+[00:42] So in this character feedback biasing configuration, the circuit tries to stabilize the operating
+[00:47] point through the negative feedback.
+[00:50] And as its name suggests, here the feedback is provided from the character to best terminal
+[00:55] where this register Rb.
+[00:58] Now here, as we are interested in the DC analysis, so for the DC voltages, this capacitors
+[01:05] will act as an open circuit.
+[01:08] And before we jump into the DC analysis, let us intuitively understand how the circuit
+[01:13] tries to stabilize the operating point.
+[01:16] So let's say due to the temperature, if the character current IC increases, then the
+[01:21] voltage drop across the register Rc will also increase.
+[01:26] And due to that, the collector voltage or the voltage at this node will reduce.
+[01:32] Now if we assume this base emitter junction is far biased, then the voltage at this node
+[01:37] is equal to Vb or that is equal to roughly 0.7 volt.
+[01:43] So as the voltage Vc reduces, then the base current IB will also reduce.
+[01:47] And due to that, the collector current IC will also reduce because this collector current
+[01:53] IC is equal to beta times IB.
+[01:57] So in this way, this circuit tries to stabilize the any change in the collector current.
+[02:03] But let us do the DC analysis and let us understand how well the circuit is able to stabilize
+[02:09] the operating point.
+[02:11] And first of all, let us mark all the currents in the circuit.
+[02:16] Now the first thing, if you notice over here, the current through the register Rc is equal
+[02:20] to IC dash.
+[02:22] And that is the summation of the base current and the collector current.
+[02:28] And here, this collector current IC is equal to beta times IB.
+[02:34] So if the value of beta is very high, in that case, this collector current is much larger
+[02:40] than the base current.
+[02:42] And due to that, in this expression, we can neglect the base current.
+[02:47] For approximately, we can say that this current IC dash is equal to IC.
+[02:53] So now we can say that the current through the register Rc is equal to IC, while the current
+[03:00] through the register RB is equal to IB.
+[03:03] And the voltage between this base and the emitter terminal is equal to VBE.
+[03:10] So now to find the base current, let us apply the KVL on the input side.
+[03:17] So applying the KVL, we can write voltage VCC minus IC times RC, that is the voltage
+[03:26] drop across the register Rc minus IB times RB minus VBE, that is the voltage drop between
+[03:36] this base and the emitter terminal, that is equal to 0.
+[03:41] That means voltage VCC minus VBE is equal to IB times RB plus IC times RC.
+[03:54] Now we know that the current current IC is equal to beta times base current.
+[04:01] So we can write this expression as voltage VCC minus VBE is equal to IB times RB plus
+[04:12] beta times IB times RC.
+[04:17] Or we can say that the base current IB is equal to voltage VCC minus VBE divided by RB
+[04:27] times RC.
+[04:31] So this will be the expression of the base current.
+[04:35] And we know that the collector current IC can be given as beta times IB.
+[04:41] So once we know the value of this collector current, then by applying the KVL on this output
+[04:46] side, we can find the value of the voltage VCE.
+[04:51] So applying the KVL, we can write voltage VCC minus IC times RC, that is the drop across
+[04:59] the register Rc minus voltage VCE that is equal to 0.
+[05:06] Or we can say that this voltage VCE is equal to VCC minus IC times RC.
+[05:16] And in this way, we got the expressions for the base current, the collector current
+[05:21] and the voltage VCE for this given configuration.
+[05:24] Now although through the negative feedback, this circuit tries to stabilize the operating
+[05:29] point, but here there is enough negative feedback.
+[05:33] So to improve the stability, the additional feedback can be applied through the A-meter
+[05:38] register.
+[05:40] So this circuit is the collector feedback bias with the A-meter register.
+[05:45] And this circuit is also known as the collector and the A-meter feedback bias.
+[05:51] So now let us find the expressions for the collector current and the voltage VCE.
+[05:57] And for that, first of all, let us mark the currents in the given circuit.
+[06:02] Now once again, here the current through the register RC is equal to IC dash.
+[06:08] And this current IC dash is equal to IC plus IB.
+[06:13] But as I said earlier, we can approximately say that this current IC dash is equal to
+[06:19] IC.
+[06:20] Similarly, here we are assuming that this current to current is approximately equal to A-meter
+[06:27] current.
+[06:29] So considering that, now let us find the expression of the base current.
+[06:34] And for that, now let us apply the KVL on this input side.
+[06:41] So applying the KVL, we can write voltage VCC minus IC times RC.
+[06:47] That is the drop across register RC minus IB times RB minus voltage VB minus IE times
+[06:59] RE.
+[07:00] That is the drop across register RE.
+[07:03] That is equal to zero.
+[07:06] Now here, we are assuming that this emitter current and the collector current are almost
+[07:11] same.
+[07:12] So we can replace this emitter current with the collector current.
+[07:17] And we can write this expression as voltage VCC minus VBE that is equal to IB times RB plus
+[07:27] IC times RC plus RE.
+[07:32] And here, this current current IC can be given as beta times IB.
+[07:38] So from this, we can say that voltage VCC minus VBE is equal to IB times RB plus beta
+[07:49] times IB times RC plus RE.
+[07:54] Or we can say that the base current IB is equal to voltage VCC minus VBE divided by
+[08:03] RB plus beta times RC plus RE.
+[08:10] So this will be the expression of the base current.
+[08:14] And we know that this collector current IC is equal to beta times IB.
+[08:21] So in this way, we can also find the collector current.
+[08:25] And once we know the value of this collector current, then we can easily find this voltage
+[08:29] VCE.
+[08:31] And for that, let us apply the KVL on this output side.
+[08:35] So applying the KVL, we can write voltage VCC minus IC times RC minus voltage VCE that
+[08:45] is the drop between these two terminals minus IE times RE that is equal to 0.
+[08:53] Or we can say that voltage VCE is equal to VCC minus IC times RC plus RE.
+[09:04] So this will be the expression of the voltage VCE.
+[09:07] So in this way, we got the values of the base current, the correct current and the voltage
+[09:12] VCE.
+[09:14] Now here if you observe, if the value of RB is much less than this term, that is the
+[09:20] beta times RB plus RE, in that case, this resistor RB can be neglected.
+[09:26] And in that case, this base current IB can be given as voltage VCC minus VBE divided
+[09:34] by beta times RC plus RE.
+[09:41] And as the correct current IC is equal to beta times IB, so this beta will get cancelled
+[09:47] out.
+[09:48] And you do that, this current IC will become independent to the value of beta.
+[09:54] That means whenever this condition is satisfied, then this correct current IC will become independent
+[10:00] to the variation in the beta.
+[10:03] But practically, to operate this BJT in the linear region, it is not possible to make
+[10:08] the value of RB very small.
+[10:11] And it will get clear to you once we go through the example.
+[10:15] And in that example, we will also see how the operating point of the circuit changes if
+[10:20] there is a variation in the beta.
+[10:23] So let us take one example.
+[10:25] So in this example, first of all, let us find the value of the correct current and the
+[10:29] voltage VCE.
+[10:32] And for that, first of all, let us find the value of the base current using this expression.
+[10:37] So we can say that the base current IB is equal to 12V minus 0.7V divided by 300 Kilo
+[10:46] Homb plus 50 times 4.7 plus 1 Kilo Homb.
+[10:54] And that is equal to 19.6 microampere.
+[10:58] So this will be the value of the base current.
+[11:02] And the correct current IC can be given as beta times IB.
+[11:06] That means this collector current IC is equal to 50 times 19.6 microampere.
+[11:14] And that is equal to 0.965 milliampere.
+[11:19] And once we get the value of this collector current, then using this expression, we can
+[11:24] find the value of the voltage VCE.
+[11:27] So this voltage VCE can be given as 12V minus 0.965 milliampere times 4.7 Kilo Homb plus 1
+[11:37] Kilo Homb.
+[11:39] And that is equal to 6.5V.
+[11:44] So in this way, the value of the correct current IC is equal to 0.965 milliampere, while
+[11:50] the value of voltage VCE is equal to 6.5V.
+[11:54] And if you see over here, on the load line, the opening point would be somewhere around
+[11:58] here.
+[12:00] Because here, the maximum value of the voltage VCE could be equal to 12V, while the maximum
+[12:05] collector current is equal to 12V divided by 5.7 Kilo Homb.
+[12:10] That is roughly equal to 2.1 milliampere.
+[12:15] Now in the same circuit, let's see what happens when the value of the beta increases to 100.
+[12:21] So once again, let us find the value of the base current using this expression.
+[12:26] That means the base current IB can be given as 12V minus 0.7V divided by 300 Kilo Homb
+[12:36] plus 100 times 5.7 Kilo Homb.
+[12:42] And if you calculate the value, then this base current IB is equal to 12.98 microampere.
+[12:50] And the correct current IC is equal to beta times IB.
+[12:54] That means this correct current IC is equal to 100 times 12.98 microampere.
+[13:02] That is equal to 1.298 milliampere.
+[13:05] Or roughly we can say that it is equal to 1.3 milliampere.
+[13:11] And once we know the value of this correct current, then using this expression, we can
+[13:16] find the value of the voltage VCE.
+[13:19] So this voltage VCE is equal to 12V minus 1.3 milliampere times 5.7 Kilo Homb.
+[13:30] That is the summation of this 4.7 and 1 Kilo Homb.
+[13:33] So if we calculate the value, then this voltage VCE will come out as 4.6V.
+[13:40] That means now due to the change in the value of beta, the voltage VCE has become 4.6V,
+[13:47] while the value of the correct current IC has become 1.3 milliampere.
+[13:52] That means with the increase in the value of beta by 100%, this correct current has
+[13:58] increased by roughly 30%.
+[14:01] While the value of the voltage VCE is roughly reduced by the 34%.
+[14:07] That means we can say that although this corrector feedback bias provides the improved performance
+[14:12] over the fixed bias configuration, but still there is a variation in the operating point.
+[14:18] Now if you notice over here, in this example, this condition that is the RB is much less
+[14:24] than beta times RC plus RE is not satisfied.
+[14:28] Because over here, the value of RB is 300 Kilo Homb, while the value of beta times RC plus
+[14:36] RE is equal to 5.7 Kilo Homb.
+[14:41] Considering the value of beta is equal to 100, and if we consider the value of beta
+[14:46] is 50, in that case, this term will be equal to 280 5 Kilo.
+[14:53] But to satisfy this condition, suppose if we reduce the value of RB by 10 times or increase
+[14:59] the value of this RC and RE by 10 times, in that case, the operating point would go near
+[15:05] the saturation.
+[15:07] And we are no longer able to use this BJT as an amplifier.
+[15:12] And even you can try it by yourself.
+[15:15] So try to get the operating point whenever the value of RB is equal to 30 Kilo.
+[15:21] So in conclusion, this configuration provides the slight improvement in the stability, but
+[15:26] still there is a variation in the operating point due to the external parameters.
+[15:32] And when someone requires a very stable operating point, then one should prefer a voltage
+[15:37] divider configuration over the other configurations.
+[15:40] Because by properly serating the values, that configuration provides the better stability.
+[15:46] And that is why it is the widely used biasing configuration.
+[15:50] So in the next couple of videos, we will talk more about the stability.
+[15:55] But I hope in this video, you understood the character feedback biasing configuration
+[15:59] of the BJT.
+[16:01] So if you have any question or suggestion, do let me know here in the comment section
+[16:05] below.
+[16:06] If you like this video, hit the like button and subscribe to the channel for more such
+[16:09] videos.

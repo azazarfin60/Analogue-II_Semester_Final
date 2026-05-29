@@ -1,0 +1,114 @@
+Title: Operational Amplifier / MOSFET Solved Problem (Analog Electronics) | Quiz # 355
+URL: https://www.youtube.com/watch?v=ohkgk54P5uM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this circuit which consists of the op-amp and the
+[00:15] MOSFET.
+[00:16] So here the op-amp is the ideal op-amp and for the MOSFET we have been given this device
+[00:21] parameters.
+[00:23] So this input is applied to this MOSFET and we have been asked to find the output voltage.
+[00:29] So here to find the output voltage, first of all let us do the DC analysis.
+[00:35] So for the DC analysis, we will consider all the AC sources in the circuit as zero.
+[00:40] So first of all, let us find this drain current through this MOSFET.
+[00:45] So here if you observe, then this voltage VG is equal to zero because during the DC
+[00:51] analysis, this gate terminal is connected to the ground.
+[00:55] Similarly, the voltage at the source terminal is equal to minus 2 volt.
+[01:01] That means we can say that the voltage VG is that is VG minus VS is equal to 2 volt.
+[01:09] Now here we have been given that the op-amp is the ideal op-amp and because of the negative
+[01:14] feedback, here we can apply the concept of the virtual ground.
+[01:18] That means here V plus will be equal to V minus.
+[01:22] So this same 4 volt will also appear at the inverting terminal.
+[01:27] That means the voltage at this node will be also equal to 4 volt.
+[01:31] Or in other words, we can say that this drain voltage of this MOSFET is equal to 4 volt.
+[01:38] So now if you see, then this voltage VD is equal to 4 volt.
+[01:43] Moreover, this voltage VGS is equal to 2 volt.
+[01:47] And here since drain voltage is greater than VGS minus VT, so we can say that this MOSFET
+[01:53] is operating in the saturation region because over here, this threshold voltage is equal
+[01:59] to 1 volt.
+[02:00] That means this VGS minus VT is equal to 1 volt.
+[02:04] And since the drain voltage is greater than 1 volt, so we can say that this MOSFET is
+[02:09] operating in the saturation region.
+[02:12] And we know that in the saturation, the drain current ID can be given by following expression.
+[02:18] And of course, here we have been neglected the effect of the channel modulation.
+[02:23] So using this expression, we can find this drain current.
+[02:27] That means this drain current ID is equal to these half times, these mu and times COX,
+[02:33] that is 100 micro-ampere per volt square times N divided by 2.5 times 2 minus 1 whole
+[02:42] square, where this VGS minus VT is equal to 1, while this W by L ratio is equal to 4.
+[02:50] So from this, we can say that this drain current ID is equal to 200 micro-ampere.
+[02:58] So this will be the value of the drain current.
+[03:01] That means here, this current ID is equal to 200 micro-ampere.
+[03:07] Now as we have seen, the voltage at this node is equal to 4 volt.
+[03:12] And here, since the opem is the ideal opem, so no current is flowing into the opem terminal.
+[03:18] That means the same current ID should also flow through this 20 kilo ohm resistor.
+[03:23] That means this current is also equal to co-net micro-ampere.
+[03:28] And let's say this current is equal to I.
+[03:32] That means this current I is equal to these V out minus 4 volt divided by 20 kilo ohm.
+[03:41] And as we know, this current I is equal to 200 micro-ampere.
+[03:46] That means V out minus 4 is equal to these 20 kilo ohm times 200 micro-ampere.
+[03:54] Or in other words, it is equal to 0.2 milliampere.
+[03:59] That means V out minus 4 is equal to 4 volt.
+[04:03] Or we can say that this output voltage is equal to 8 volt.
+[04:08] So through the DC analysis, we got the output voltage as the 8 volt.
+[04:13] And this voltage is the DC voltage.
+[04:15] So let's say this VODC is equal to 8 volt.
+[04:20] So similarly, now let us do the AC analysis and let us find out the AC component of the
+[04:25] output voltage.
+[04:27] So for the AC analysis, we will consider all the DC sources in the circuit as 0.
+[04:33] That means these two voltage sources will act as a 0.
+[04:37] And now we will replace this MOSFET by the small signal model.
+[04:41] So once we replace this MOSFET by the small signal model, then the equivalent circuit
+[04:45] will look like this.
+[04:48] So as you can see, here the input signal is apted between the gate and the ground terminal.
+[04:53] And here, since the source terminal is also at the ground potential.
+[04:57] So we can say that, equivalently, the input signal is apted between the gate and the
+[05:02] ground terminal.
+[05:03] Moreover, this inverting terminal of the op-amp is connected to the drain terminal of
+[05:08] this MOSFET.
+[05:10] That means this is the equivalent circuit for the AC analysis.
+[05:13] So once again, this current is the drain current.
+[05:17] But now this is the AC drain current.
+[05:20] And once again, since the op-amp is ideal, so no current is flowing into the op-amp terminal.
+[05:25] That means this current should also be equal to ID.
+[05:29] So now we can say that this uprooted V out or the V out AC is equal to these ID times
+[05:37] 20 kilo ohm, right?
+[05:40] Because now this node will act as a virtual ground.
+[05:44] That means this V out AC is equal to these ID times 20 kilo ohm.
+[05:50] Or we can say that it is equal to these GM times VGS times 20 kilo ohm.
+[05:58] Now if you notice over here, then this VGS is equal to V in.
+[06:03] That means we can say that this output voltage is equal to GM times these V in times 20 kilo
+[06:10] ohm.
+[06:11] So we already know the value of this V in.
+[06:14] But the only thing which we need to find is this transcurrent tons.
+[06:18] So as you know, this transcurrent does GM can also be given as 2 times ID divided by these
+[06:25] VGS minus VTH, where this ID is the DC drain current.
+[06:31] And earlier during the DC analysis, we already found the value of this drain current.
+[06:36] That means this transcurrent does GM is equal to 2 times these 2N micro-ampere divided by
+[06:43] these 2 minus 1.
+[06:45] Or we can say that this transcurrent does GM is equal to 400 micro-ampere per volt.
+[06:52] Or in other words, it is equal to 0.4 milliampere per volt.
+[06:57] That means the AC output voltage, V out AC is equal to 0.4 milliampere per volt times
+[07:04] these 20 kilo ohm times V in.
+[07:08] That means V out AC is equal to 20 kilo ohm times 0.4 milliampere per volt times these 100
+[07:20] times sin of 2 pi times 10 to the power 3 times E.
+[07:26] And here this amplitude is in milli volt.
+[07:30] So if you simplify it, then this V out AC will come out as 0.8 times sin of 2 pi times
+[07:38] 10 to the power 3 times E. So this will be the AC component of the output voltage.
+[07:45] That means if you see the overall output voltage, then it will be the combination of the DC
+[07:49] and the AC component.
+[07:51] That means overall output voltage V out T will be equal to 8 plus 0.8 times sin of 2
+[08:00] pi times 10 to the power 3 times E. So this will be the overall output voltage of the given
+[08:06] circuit.
+[08:08] And the same result, we can also get with the help of the simulation.
+[08:13] So in the simulation software, I have connected the same circuit which is given to us in the
+[08:17] equation.
+[08:18] And here the MOSFET parameters are also set according to the equation.
+[08:24] So now if I run this simulation, then this is how the output will look like.
+[08:31] So here this green signal is the input signal while this blue signal is the output signal.
+[08:37] So here the input signal is varying by 100 milli volt.
+[08:42] While if you see this output voltage, then the DC component of the output voltage is equal
+[08:46] to 8 volt.
+[08:48] And the maximum amplitude of the output signal is equal to 0.8 volt.
+[08:52] And as you can see, this result is very similar to our theoretical calculation.
+[08:58] That means we can say that this will be the expression of the output voltage for the given
+[09:02] circuit.

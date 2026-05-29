@@ -1,0 +1,240 @@
+Title: MOSFET Biasing : Enhancement Type MOSFET Biasing Explained
+URL: https://www.youtube.com/watch?v=Ae8L9-WOiVE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in the previous video, we have seen the biasing of the depression type of MOSFET.
+[00:15] So similarly, let us see the biasing of the enhancement type of MOSFET in this video.
+[00:21] And before we jump into it, first let us quickly understand why we need to biase the MOSFET.
+[00:27] Now although for the BJT and the JFD, I have already explained it in detail.
+[00:33] But those who have not watched those videos, let me just quickly explain the need of the
+[00:37] biasing.
+[00:38] So here, we want to use the MOSFET as an amplifier.
+[00:42] That means whenever we apply a small input to the MOSFET, then we should get the amplified
+[00:47] signal at the output.
+[00:49] But if we just apply a small input signal between the gate and the source, then we directly
+[00:54] cannot get the amplified output.
+[00:57] And that is because of the MOSFET characteristic.
+[01:00] If you see the transfer characteristic of this enhancement type of MOSFET, then it starts
+[01:04] conducting when the voltage VGS is greater than the threshold voltage.
+[01:10] That means whenever we directly apply a small input signal of few milli volt between this
+[01:15] gate and the source terminal, then the MOSFET will not get turned on.
+[01:19] That means there has to have some DC basing voltage, which is greater than the threshold
+[01:23] voltage.
+[01:24] So that whenever we apply a small input on top of it, then the MOSFET will remain in
+[01:29] the on condition.
+[01:31] Apart from this voltage VGS, we also need to ensure the proper voltage at the drain terminal
+[01:36] of the MOSFET.
+[01:38] So as we have discussed previously, the MOSFET can be operated in the three regions.
+[01:43] That is the linear region or the omic region, the cutoff region and the saturation region.
+[01:49] Now whenever we want to use the MOSFET as an amplifier, then it needs to be operated
+[01:54] in this saturation region.
+[01:56] Because in this saturation region, if you observe, even if there is an increase in the
+[02:00] drain to source voltage, then the drain current almost remains constant.
+[02:05] So in this region, the MOSFET acts like a voltage controlled current source.
+[02:10] That means by controlling the voltage VGS, the drain current can be controlled.
+[02:15] And to operate the MOSFET in this region, the voltage VGS should be greater than or equal
+[02:20] to VGS minus VT.
+[02:23] And using the voltage transfer characteristic of the MOSFET, we can understand more intuitively
+[02:27] why the MOSFET should be used in the saturation region for the amplification.
+[02:32] So this is the typical voltage transfer characteristic of the MOSFET.
+[02:37] And as you can see, it shows the relationship between the input voltage VGS and the output
+[02:41] voltage VGS.
+[02:43] So as you can see, when the voltage VGS is less than the threshold voltage, then the MOSFET
+[02:48] will remain in the off condition.
+[02:51] That means during this region, the voltage VDS is equal to VDD.
+[02:56] Then the next region is the saturation region, where the voltage VDS is greater than or
+[03:01] equal to VGS minus VT.
+[03:03] And as we increase the VGS further, that means whenever the VDS is less than or equal
+[03:09] to VGS minus VT, then the MOSFET will operate in the linear or the OME region.
+[03:14] So as you can see from this curve, in this saturation region, it is possible to get the
+[03:19] maximum amplification.
+[03:21] That means on top of this DC-basing voltage, whenever we apply a small input signal, then
+[03:27] it is possible to get the amplified output with the minimum distortion.
+[03:31] And we will talk more about it during the small signal operation of the MOSFET.
+[03:36] But the thing is, to use the MOSFET as an amplifier, it needs to be biased properly
+[03:42] so that it operates in the saturation region and it can provide almost linear amplification.
+[03:49] Now the easiest way to bias this MOSFET is by applying a fixed voltage between this gate
+[03:54] and the source terminal.
+[03:56] So here, since this gate current IG is approximately equal to 0, so there will not be any voltage
+[04:02] drop across this resistor RG.
+[04:05] That means in this case, this voltage VGS is equal to VGG.
+[04:12] And on top of it, a small input signal can be applied through this coupling capacitor.
+[04:17] But for the DC analysis, this coupling capacitor will like as an open circuit.
+[04:23] So if this DC voltage is greater than the threshold voltage of the MOSFET, then the MOSFET
+[04:28] will start conducting.
+[04:30] And if it operates in the saturation region, then this drain current ID can be given by
+[04:35] this expression, where this gate depends on the device parameters.
+[04:40] And if you see the x-z expression, then the x-z expression of this drain current is equal
+[04:45] to 1 by 2 times mu n times COx times w by l times VGS minus VT whole square.
+[04:53] So here, for the n channel MOSFET, this mu n is the mobility of the electron in the channel.
+[05:00] While this COx is the oxide capacitance, and this oxide capacitance depends on the thickness
+[05:06] and the area of this oxide layer.
+[05:09] Then this l is the length of the channel, and the w is the width of the channel.
+[05:14] So basically, this k depends on the device parameters.
+[05:19] And during the fabrication, by varying any of these parameters, the relationship between
+[05:24] the drain current and the voltage VGS can be changed.
+[05:28] But as a circuit designer, when we want to use this discrete MOSFET as an amplifier,
+[05:34] then these parameters are not known to us.
+[05:37] And instead in the data sheet, if you see for the particular value of the VGS, the drain
+[05:42] current ID is given.
+[05:44] That means if you see the data sheet, then for the VGS on, we have been given a value
+[05:49] of the ID on.
+[05:53] Now academic perspective, in some examples, sometimes these device parameters are given,
+[05:59] while sometimes the value of the VGS on and the ID on are given to find the value of the
+[06:05] K. But using all these values, or using all these device parameters, we can find the
+[06:11] drain current ID at any given value of the VGS.
+[06:15] Alright, so using this expression for the given value of the VGS, we can find the drain
+[06:21] current ID, or a vice versa.
+[06:24] For the required value of the drain current, we can find the required value of the voltage
+[06:29] VGS.
+[06:31] So once we know this drain current ID, then by properly selecting this drain register,
+[06:36] we can ensure that the MOSFET indeed operates in the saturation region.
+[06:41] And the same can also be seen graphically.
+[06:44] So here, this yellow line shows the load line.
+[06:48] That means whenever the voltage VDS is equal to 0, then the drain current ID is equal to
+[06:54] VDD divided by RD.
+[06:57] And whenever this ID is equal to 0, then the voltage VDS is equal to VDD.
+[07:03] So let's say the MOSFET is operated at VGS is equal to 4V.
+[07:08] So the intersection of this load line with this VGS is equal to 4V curve will give us
+[07:14] the operating point.
+[07:16] That means this is the operating drain current, and this is the operating value of the voltage
+[07:21] VDS.
+[07:23] Now here, if the value of the RD is too small or the too large, then the MOSFET may operate
+[07:28] in the saturation region, and we may not get the full voltage swing of the output.
+[07:33] For example, if RD is too large, then the operating point may shift towards the OMEG region.
+[07:40] And if the RD is too small, then the operating point may shift towards the VDD.
+[07:46] And in either case, the voltage swing of this AC signal will get reduced.
+[07:51] For example, if we consider this green line, then the maximum voltage swing will be equal
+[07:57] to VDD minus VDS.
+[08:00] That means for the AC signal, the maximum voltage swing is equal to VDD minus VDS.
+[08:06] On the other end, if we consider this red line, then the maximum voltage swing is equal
+[08:11] to VDS minus 0.
+[08:14] That means as the operating point moves towards the OMEG region or towards the VDD, then the
+[08:19] maximum voltage swing for the AC signal will get reduced.
+[08:23] So to get the maximum voltage swing for the amplified output, and to ensure that the
+[08:28] MOSFET operates in the saturation region, the value of the RD should be selected properly.
+[08:34] Now although this fixed bias is very simple biasing technique, it is not a good approach
+[08:40] to bias the MOSFET.
+[08:42] The reason is, in this configuration, the biasing point is very susceptible to the change
+[08:47] in the temperature as well as the other MOSFET parameters.
+[08:51] For example, this mobility and this threshold voltage are the temperature dependent.
+[08:57] That means with the temperature, the drain current ID will change.
+[09:01] That means even if we keep the value of VDS fixed, then the drain current ID will change.
+[09:07] Moreover, the other MOSFET parameters, like the oxide capacitance and this W by L, may
+[09:13] vary from device to device.
+[09:16] That means even if we take the two discrete MOSFETs of the same model number, then they
+[09:20] might have slight difference in this parameters.
+[09:24] And because of that, there will also be a slight difference in the device characteristic.
+[09:29] So let's say, this two cows shows the extreme variation in the device parameters for the
+[09:34] two similar type of MOSFET.
+[09:36] Now if the MOSFET is biased with the fixed gate to source voltage, then this is the maximum
+[09:41] variation in the drain current for the two devices.
+[09:45] That means in terms of the biasing stability, this fixed bias is not an ideal biasing
+[09:50] technique.
+[09:52] And this biasing stability can be improved using the voltage divider bias.
+[09:57] So in this voltage divider bias, a fixed gate to source voltage is applied using the
+[10:02] voltage divider.
+[10:04] Because here, since this gate current IG is approximately equal to 0, so the current
+[10:09] is flowing through this resistor R1 and R2.
+[10:13] That means using these two resistors, we can decide the gate voltage.
+[10:18] Now this voltage divider biasing configuration is particularly useful when only a single
+[10:23] supply is available.
+[10:25] So here, the AC input signal is applied using the coupling capacitor.
+[10:30] But for the DC analysis, this coupling capacitors will act as an open circuit.
+[10:36] So as I mentioned, here the gate voltage VG can be given as R2 divided by R1 plus R2
+[10:44] times VDD.
+[10:47] And once we know this gate voltage, then by applying the KVL in this loop, we can find
+[10:52] the relationship between the voltage VGS and the drain current.
+[10:56] So in terms of the biasing circuit, if you see, there is an additional resistor RS at
+[11:00] the source terminal.
+[11:03] So if we apply the KVL in this loop, then we can write voltage VG minus VGS minus
+[11:11] ID times RS that is equal to 0.
+[11:14] Because here, the current VG is flowing through this source resistor is equal to ID.
+[11:20] And this ID times RS is the voltage drop across this resistor RS.
+[11:25] So from this, we can say that voltage VGS is equal to VG minus ID times RS.
+[11:34] Now assuming the MOSFET is operating in the saturation region, the drain current ID
+[11:38] can be given by this expression.
+[11:41] So by putting the value of VGS from the previous expression and solving this quadratic equation,
+[11:47] we can find the drain current for the given value of the voltage VG.
+[11:52] And once we know this drain current ID, then by properly selecting the value of this
+[11:56] resistor RD, we can ensure that the MOSFET is operating in the saturation region.
+[12:02] Because if we apply the KVL in this outer loop, then we can write voltage VDD minus ID
+[12:09] times RD minus VDS minus RD times RS that is equal to 0.
+[12:17] And in other words, voltage VDS is equal to VDD minus ID times RD plus RS.
+[12:27] So this is how we can bias the MOSFET using this voltage divider-basing configuration.
+[12:32] Now let's see the biasing stability of this particular configuration.
+[12:37] So let's say this is the transfer characteristic of one MOSFET and this yellow line represents
+[12:43] the equation voltage VGS is equal to VG minus ID times RS.
+[12:50] That means whenever this ID is equal to 0, then this voltage VGS is equal to VG.
+[12:56] And whenever this voltage VGS is equal to 0, then this drain current ID is equal to VG
+[13:03] divided by RS.
+[13:05] So the intersection of this line with the transfer curve will give the operating value of the
+[13:10] voltage VGS and the drain current ID.
+[13:14] Now let's say this is the transfer characteristic of another similar type of MOSFET and let's
+[13:20] assume that this is the maximum variation in the device characteristic for the similar
+[13:24] type of MOSFET.
+[13:26] So in this voltage divider-basing configuration, this is the maximum variation in the drain
+[13:31] current.
+[13:32] And as you can see, here the variation is much lesser compared to the fixed bias configuration.
+[13:38] The reason is there is an inherent negative feedback in this particular configuration.
+[13:43] So let's say for some reason, if the drain current ID increases, then the voltage drop across
+[13:49] this resistor RS will also increase.
+[13:52] And as we have seen, the voltage VGS can be given as VG minus ID times RS.
+[13:59] So as the drain current ID increases, then the voltage VGS will reduce.
+[14:04] And as the voltage VGS reduces, then the drain current ID will also reduce.
+[14:10] That means this circuit prevents the increase in the drain current and it tries to maintain
+[14:14] the drain current.
+[14:16] That means by adding the source resistor, the effect of the variation in the MOSFET parameters
+[14:21] can be minimized.
+[14:23] Now whenever the positive and the negative supplies are available, then we can also bias the
+[14:28] MOSFET in this fashion.
+[14:30] So here, this gate resistor provides a DC ground at the gate terminal and it provides a
+[14:36] high input impedance whenever we connect the AC input signal through the coupling capacitor.
+[14:42] Now another biasing configuration that is commonly used with the MOSFET is the drain feedback
+[14:47] biasing.
+[14:48] So in this configuration, where this resistor RG, the feedback is provided from the drain
+[14:53] terminal to the gate terminal.
+[14:56] And here, the AC input signal is applied to the gate terminal via the coupling capacitor.
+[15:03] But for the DC analysis, this coupling capacitors will act as an open circuit.
+[15:08] Now here, since the gate current ID is equal to 0, so this drain voltage VD is equal to
+[15:14] VG.
+[15:15] Or in other words, we can say that voltage VDS is equal to VGS.
+[15:20] And this voltage is equal to VDD minus ID times RD.
+[15:26] Now assuming the MOSFET is operating in the saturation region, the drain current ID
+[15:31] can be given by the following expression.
+[15:33] And in this expression, by putting the value of the VGS from the previous expression,
+[15:38] it is possible to find the value of the ID.
+[15:41] So through the feedback, this configuration also tries to stabilize the operating point.
+[15:47] So let's say somehow, if the drain current ID increases, then the voltage VGS will reduce.
+[15:54] And as the voltage VGS reduces, then the drain current ID will also reduce.
+[15:59] So in this way, this circuit tries to stabilize the operating point if there is any change
+[16:04] in the drain current.
+[16:05] Alright, so in many text books, you may find these symbols for the enhancement type of MOSFET.
+[16:13] And you might see the basing circuit with these symbols.
+[16:17] But this symbol also represents the enhancement type of MOSFET.
+[16:21] Now so far as we have seen, if there is any variation in the external parameters,
+[16:26] like the temperature, then there will be a change in the basing point.
+[16:30] But this voltage divider bias and the drain feedback bias tries to stabilize the operating
+[16:35] point.
+[16:36] But still, some variation will remain there.
+[16:39] Because as we have seen, these mu and N in the VTR, the temperature dependent.
+[16:44] So if we want a more robust operating point, then the MOSFET can be biased using the
+[16:49] constant current source.
+[16:51] So this constant current source ensures that the drain current remains constant, even
+[16:55] if there is a change in the external parameters.
+[16:59] Now this type of circuit is typically used in the integrated circuit as a MOS amplifier.
+[17:04] And in the ICs, this constant current source is generated using the current mirror.
+[17:10] So in the upcoming videos, we will also see that how the current mirror can be designed
+[17:14] using the MOSFET.
+[17:16] And for a moment, just assume that this constant current source is readily available.
+[17:21] And using this constant current source, it is possible to bias the MOSFET in a more
+[17:25] robust manner.
+[17:27] And once we cover few examples for both P channel and the internal MOSFET biasing on our
+[17:32] second channel, then it will get more clear to you.
+[17:35] But I hope in this video, you understood the need of the biasing and how the enhancement
+[17:39] type of MOSFET can be biased in the different configurations.
+[17:43] So if you have any question or suggestion, do let me know here in the comment section
+[17:47] below.
+[17:48] If you like this video, hit the like button and subscribe to the channel for more such
+[17:51] videos.

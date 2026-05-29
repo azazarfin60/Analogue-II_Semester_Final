@@ -1,0 +1,66 @@
+Title: Op-Amp as Integrator (Analog Electronics) | Quiz # 498
+URL: https://www.youtube.com/watch?v=us53VoIMwxE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, given given the Open-Based Integrator Circuit and here, given asked to find
+[00:16] the voltage of the given circuit at time t is equal to 2 millisecond.
+[00:21] So here, the given Open is the ideal Open and as you can see, this is the input signal
+[00:26] which is applied to the given circuit.
+[00:29] So now let us see how the voltage of the given circuit will look like.
+[00:33] So as you can see, the given circuit is the integrator circuit and in the earlier videos
+[00:38] of the Open, we have seen that the output of the integrator circuit can be given as minus
+[00:44] 1 divided by RC times integration 0 to infinity, this V in t times dt where this V in t is
+[00:53] the applied input signal to this integrator circuit.
+[00:56] So in case, if you do not know how we got this expression, then quickly let me show you
+[01:01] how we can get this expression.
+[01:04] So here let us say this current is the IR that is the current flowing through the
+[01:08] resistor and this current is the IC that is the current flowing through the capacitor.
+[01:14] So if we apply the KCL at this node, then we can say that this IR plus this IC is equal
+[01:21] to 0, that means the summation of all the incoming currents is equal to 0.
+[01:26] So here since the Open is the ideal Open and since it is operated with the negative feedback,
+[01:32] so this node will act as a virtual ground.
+[01:35] So here we can say that this IR is equal to is V in divided by R and this current IC
+[01:42] or the current so the capacitor can be given as C times is dV out divided by dt where
+[01:49] the V out is the voltage across the capacitor because like I said this node is at the virtual
+[01:54] ground.
+[01:55] That means if you see the voltage across the capacitor and that is equal to V out.
+[02:00] That means the expression for this capacitor current is equal to C times is dV out divided
+[02:05] by dt and that will be equal to 0.
+[02:09] So further we can say that is C times dV out divided by dt that is equal to minus V in
+[02:16] divided by R. For further we can say that this dV out divided by dt is equal to minus RC times
+[02:24] V in.
+[02:25] So if we integrate both sides then we can say that this V out of t or this output
+[02:31] voltage of the integrator is equal to minus RC times integration 0 to infinity, this
+[02:38] V in t times dt.
+[02:41] So in this way we got this expression.
+[02:45] So here this is the input signal which is applied to the given integrator circuit and here
+[02:51] we have been asked to find the voltage of the given circuit at time t is equal to 2 millisecond
+[02:56] and therefore here we will integrate this expression only up to 2 millisecond.
+[03:02] So we can say that the output voltage up to time t is equal to 2 millisecond is equal
+[03:08] to minus 1 divided by RC times integration 0 to 1 millisecond times V in t times dt plus
+[03:18] integration 1 millisecond to 2 millisecond times V in t times dt. So as you can see we are
+[03:26] here during this time this input voltage is equal to 0 and up to 1 millisecond the input
+[03:33] voltage is equal to 5 volt.
+[03:36] Moreover here the value of R is equal to 1 kilo ohm while the value of C is equal to 2
+[03:41] microfaraday.
+[03:42] That means here if you calculate the value of RC and that is equal to 1 kilo ohm times
+[03:48] 2 microfaraday that is equal to 2 times 10 to the power minus 3.
+[03:54] So further we can write this expression as minus 1 divided by 2 times 10 to the power
+[04:00] minus 3 times integration 0 to 1 millisecond 5 times dt plus 0 or that is equal to minus 1
+[04:11] divided by 2 times 10 to the power minus 3 times 5 times 10 to the power minus 3 because
+[04:18] here if we integrate this 5 then we will get 5 t and if you put the limits from 0 to
+[04:24] 1 millisecond then we will get 5 times 10 to the power minus 3. So here this we will
+[04:30] get cancel out and the value of output voltage will come out as minus 2.5 volt. So in a
+[04:37] time domain let us see how the output voltage will look like. So in the time domain if you
+[04:42] see then for the given input voltage this is how the output voltage will look like.
+[04:48] That means during the 0 to 1 millisecond the output voltage will gradually reduce from
+[04:53] 0 to minus 2.5 volt and from 1 to 2 millisecond since the input voltage is 0 so the output voltage
+[05:00] will remain as it is. That means at time t is equal to 2 millisecond if we see the output
+[05:06] voltage then that is equal to minus 2.5 volt. Now after 2 millisecond if we add this input
+[05:12] pulse then once again the output voltage will go from minus 2.5 volt to minus 5 volt
+[05:19] and once again after 3 millisecond since the input voltage is 0 so the output voltage
+[05:24] will remain as it is. That means this is how the output voltage will look like and if
+[05:30] we see the output voltage at time t is equal to 2 millisecond then that is equal to minus
+[05:35] 2.5 volt. So from this we can say that for the given integrator circuit the output voltage
+[05:42] at time t is equal to 2 millisecond is equal to minus 2.5 volt.

@@ -1,0 +1,1913 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | CMOS Inverter | Ankit Goyal
+URL: https://www.youtube.com/watch?v=Fdwhr8slhZY
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:30] So we are live, we are back on Creatrix YouTube channel with Lakshya Batch 2.0 Analog Electronics.
+[00:38] So this is the last session of our MOSFET in which we are going to discuss C-MOS Inverter.
+[00:45] So today's session is EC specific. It is asked at the gate of EC.
+[00:53] And if you are preparing for engineering services, whether it is electrical or EC,
+[01:00] you should watch this session.
+[01:02] But C-MOS Inverter is a topic which has been seen a lot in the gate of EC from MOSFET.
+[01:08] So I am going to deal with this from an analog point of view.
+[01:12] C-MOS Inverter.
+[01:14] Whereas C-MOS is a technology, complementary MOS is a technology which is seen in digital as well.
+[01:21] In digital as well, you have to design a logic gate using the C-MOS technology.
+[01:29] But today I am only going to talk about one logic gate.
+[01:33] That too in a lot of detail. That is your inverter.
+[01:36] Okay.
+[01:37] So quickly once we will like the session, share it, we will tell everyone that
+[01:41] Ankit sir has come live so that all the kids can join live in this session with me.
+[01:47] Come on everybody share this session as well.
+[01:50] Share this session as much as possible.
+[01:52] Let's start with C-MOS Inverter.
+[01:55] Okay.
+[01:56] Let's go.
+[01:57] So first of all let's talk about an inverter.
+[02:00] So what is an inverter?
+[02:02] This is the symbol of an inverter in terms of logic gate.
+[02:06] A triangle with a bubble.
+[02:08] Bubble means inversion.
+[02:11] What an inverter does here?
+[02:13] If you give 0 in input, it gives 1 in output.
+[02:17] And if you give 1 in input, it gives 0 in output.
+[02:21] That means it inverts the logic level.
+[02:25] For low input, high output.
+[02:28] And for high input, low output.
+[02:31] So what is the logic level?
+[02:33] It inverts you.
+[02:35] So what is an inverter actually?
+[02:39] It is a logic circuit.
+[02:44] It is a logic circuit that inverts or complements the input logic level.
+[03:13] Input logic level.
+[03:19] Okay.
+[03:20] It inverts or complements the input from 0 to 1 or 1 to 0.
+[03:27] If we talk in simple words, if we talk in digital language,
+[03:31] that is what an inverter does.
+[03:34] But my interest is not in this.
+[03:36] What does an inverter do in digital?
+[03:38] My interest is not in this thing that 0 to 1 makes 0.
+[03:42] My interest is in the process, in the transistor,
+[03:47] in the operation.
+[03:50] Do you understand?
+[03:51] My interest is in the working of the device.
+[03:54] So first of all, how can you make an inverter from BJT?
+[03:59] If you take a simple NPN transistor from a BJT,
+[04:03] you can easily construct an inverter.
+[04:09] Okay.
+[04:10] Here is a common emitter circuit.
+[04:13] In the common emitter circuit, you have given input on the base.
+[04:18] And where are you taking the output?
+[04:20] You are taking the output on the collector.
+[04:23] Where are you taking it, my children?
+[04:25] You are taking the output on the collector.
+[04:27] So how does this circuit work?
+[04:29] We have to talk about it.
+[04:31] Is everyone clear up to here?
+[04:33] Is everyone clear up to here?
+[04:35] Now look, there is current here.
+[04:37] IC.
+[04:39] IC.
+[04:40] First of all, if I take out the base current in this circuit, IB,
+[04:45] then you will write IB.
+[04:48] Or you can think like this.
+[04:52] Vin is equal to VBE.
+[04:59] So as input voltage.
+[05:02] You can see a resistance on the base, RB.
+[05:05] But still, if you increase the input voltage,
+[05:08] then the base current will increase.
+[05:10] Okay.
+[05:11] Because the base emitter works like a diode.
+[05:15] So if you increase the base emitter diode voltage,
+[05:19] then its current is increasing.
+[05:21] If the base current is increasing,
+[05:24] then its collector current will also increase.
+[05:27] If the collector current increases,
+[05:29] then if you write V0,
+[05:31] V0 will be VCC minus IC into RC.
+[05:38] This will be reduced.
+[05:42] So as input voltage increases,
+[05:45] output voltage reduces.
+[05:47] That is the basic purpose.
+[05:49] And that is the basic working of an inverter.
+[05:53] It is simple.
+[05:54] The important thing is that when you increase the input,
+[05:56] the output should be less.
+[05:58] That is, the more the input,
+[06:00] the less your output is.
+[06:02] Okay.
+[06:03] Till here, you can understand that
+[06:05] you can operate a simple NPN transistor
+[06:08] like an inverter.
+[06:10] Now look here.
+[06:12] Let me show you some cases.
+[06:14] Case 1.
+[06:17] Case 2.
+[06:19] Case 3.
+[06:21] Case 4.
+[06:23] Case 5.
+[06:25] Case 6.
+[06:27] Case 7.
+[06:29] Case 8.
+[06:31] Case 9.
+[06:33] Case 10.
+[06:35] Case 11.
+[06:37] Case 12.
+[06:39] Case 13.
+[06:41] Case 14.
+[06:43] Case 15.
+[06:45] Case 16.
+[06:47] Case 16.
+[06:51] Case 17.
+[06:53] Case 19.
+[06:55] Case 21.
+[06:57] Case 23.
+[06:59] Case 24.
+[07:01] Case 25.
+[07:03] Case 26.
+[07:05] Case 27.
+[07:07] Case 28.
+[07:09] Case 29.
+[07:11] Case 29.
+[07:13] So the output came to you high, the output came to you high.
+[07:19] Now, if my children, if you talk about the transistor here, then your transistor here is cut off.
+[07:26] In what? It is cut off.
+[07:29] Because the base emitter junction did not work.
+[07:32] If you talk about case 2, now you put high on the input.
+[07:38] If you put 5 volts on the input, which is high,
+[07:46] then your transistor will move in saturation.
+[07:50] In what? In saturation.
+[07:56] If my brother moved in saturation, then what will happen here?
+[08:03] VCE, which is V0, will be 0.2 volts in saturation, which is low.
+[08:12] So when you put high on the input, then the output came low.
+[08:17] When you put low on the input, then your output came high.
+[08:21] If we put it in between these two,
+[08:26] if I take it from 0.7 to 5,
+[08:37] then my transistor will work in an active region.
+[08:41] In what? In an active region.
+[08:45] What will happen in an active region?
+[08:47] As VIN increases, IB will increase, IB will increase, then IC will increase,
+[08:55] IC will increase, then V0 will decrease.
+[08:59] V0 will decrease.
+[09:02] That is the transition region.
+[09:04] The active region of the base is the transition.
+[09:07] As the input is increasing, the output is decreasing.
+[09:11] So if you think what will happen?
+[09:13] When the input is low, then the output is high,
+[09:15] the input will increase, the output will decrease,
+[09:17] it will decrease, it will decrease, then the output will be low.
+[09:20] So something like this will vary the output of your transistor.
+[09:24] Let me draw you and show you.
+[09:31] If you want to make an output versus input graph here,
+[09:41] then my brother,
+[09:51] if you keep it below 0.7, then the output will be high.
+[09:59] And if you keep the input 5, then the output will be very low.
+[10:07] So how will your output vary?
+[10:10] First, the output will be high when the input is low,
+[10:14] then the output will start decreasing.
+[10:16] Actually, it is not necessary for a perfect linear characteristic.
+[10:20] The graph is a little curved.
+[10:22] We are just showing you the approximation.
+[10:25] Okay?
+[10:28] Here is the cutoff.
+[10:36] Here is your active region.
+[10:39] Here is your saturation region.
+[10:43] Okay?
+[10:44] Here is your saturation region.
+[10:48] VCE will depend on RC in the second.
+[10:51] In the saturation region, VCE is fixed.
+[10:54] Did you forget Saurav?
+[10:56] In the saturation region, in fact, IC depends on VCE.
+[11:01] We used to keep VCE at 0.2 and remove IC.
+[11:04] Remember, in BJT?
+[11:06] In the saturation region, it was fixed at 0.2V.
+[11:15] Did you forget?
+[11:16] In saturation.
+[11:17] Tell me.
+[11:18] It was done when our VCE comes down from 0.2 in the transistor.
+[11:23] Now let's consider VCE as 0.2.
+[11:26] Is it clear?
+[11:28] Now see what is happening here.
+[11:30] When this transistor is on, that is, going in saturation,
+[11:34] then your V0 is going low.
+[11:37] How is it going low?
+[11:38] Basically, this transistor is connecting this V0 from the ground.
+[11:42] Okay?
+[11:43] As soon as this transistor is on,
+[11:46] this V0 will be connected from the ground,
+[11:49] that is, the output will be low.
+[11:51] If the transistor is off,
+[11:53] then this will be output through resistance, VCC.
+[11:57] So, the output that is taken high,
+[12:00] the output that is taken high is called pull up.
+[12:04] What do you call it?
+[12:06] Pull up.
+[12:07] And the output that is taken low is called pull down.
+[12:11] Because the output is pulling down.
+[12:14] And the pull up is pulling up.
+[12:16] The pull up output is trying to make it high.
+[12:19] And the pull down output is trying to make it low.
+[12:25] So, see, in BJT, you used a transistor in pull down.
+[12:29] And what did you use for pull up logic?
+[12:32] You used a resistor.
+[12:34] Okay?
+[12:35] And PN transistor is used to create a pull down network.
+[12:57] And resistor is used to create a pull up network.
+[13:19] Okay?
+[13:20] So, I will tell you now,
+[13:22] what we differentiate in CMOS in a while.
+[13:25] I am telling you a basic inverter that can be made from BJT.
+[13:29] If we want an ideal inverter,
+[13:33] what should be the ideal characteristic?
+[13:35] It is called a voltage transfer characteristic.
+[13:39] As you remember, we were making a transfer characteristic in the clipper.
+[13:42] V naught versus V in.
+[13:44] So, what should be the ideal characteristic of an inverter?
+[13:55] See, the ideal characteristic should be
+[14:07] that the output should be high.
+[14:10] And then suddenly it should be low on threshold voltage.
+[14:14] There should be a threshold between low and high.
+[14:17] Okay?
+[14:19] This is like V naught.
+[14:21] This is V in.
+[14:23] This is 5 volts.
+[14:26] This is 0 volts.
+[14:28] And this threshold is between 2.5 volts.
+[14:32] So, it should be like this.
+[14:34] That the output should be either high or low.
+[14:38] That is, the transition of the middle should be missing.
+[14:41] And if there is a switch,
+[14:44] then the switch should never work in an active region.
+[14:47] Now, it is our helplessness to take a BJT or MOSFET.
+[14:51] In that, a region comes in your linear.
+[14:55] An active region comes in.
+[14:57] They cannot be perfect switches.
+[15:00] It cannot be a perfect switch that will work only in cut-off and saturation.
+[15:04] If you take a transistor,
+[15:06] then a transition region of the middle is also going to be made.
+[15:09] So, we are getting the same thing here.
+[15:12] Okay?
+[15:14] Now, let's come to CMOS.
+[15:17] We come to CMOS inverter.
+[15:19] What happens in CMOS inverter?
+[15:22] Here, you use an NMOS transistor.
+[15:26] And a PMOS transistor.
+[15:29] Here, the work of PMOS is to make a pull-up network.
+[15:34] What to make?
+[15:36] Pull-up network.
+[15:38] That is, it tries to take this output high.
+[15:42] And the work of NMOS, if NMOS is on,
+[15:46] then it will work as a pull-down network.
+[15:50] It will work as a pull-down network.
+[15:53] And when you use PMOS and NMOS together,
+[15:57] then it is called as the CMOS.
+[16:00] That is the complementary MOS.
+[16:03] So, what is the full form of CMOS?
+[16:07] Complementary MOS.
+[16:19] Okay?
+[16:20] Complementary means A P and N.
+[16:23] So, we call this CMOS inverter.
+[16:26] So, basically, your pull-up network was first made with resistance.
+[16:31] Now, you replaced it with a transistor.
+[16:35] And in yesterday's class, you taught that actually,
+[16:38] you can create a resistance using a transistor.
+[16:42] What else did I tell you?
+[16:44] When ICs fabricate,
+[16:46] it is always better to implement everything
+[16:49] with the help of a transistor
+[16:51] rather than using resistor or capacitor.
+[16:55] Do you remember?
+[16:56] I told you that if you go to make resistors or capacitors,
+[16:59] then you use a lot of chip area.
+[17:02] That is why we always prefer to use
+[17:05] a transistor instead of everything.
+[17:08] So, I used a transistor without using resistance in the pull-up network
+[17:12] because in one IC, I can fabricate a lot of transistors
+[17:15] and make some connection.
+[17:18] Now, if you notice here,
+[17:21] you will see that input is connected.
+[17:26] Input is connected.
+[17:31] At gate terminal,
+[17:36] at gate terminal
+[17:42] of two transistors
+[17:53] and
+[17:58] output is
+[18:03] taken from
+[18:07] their drain terminals.
+[18:11] You took the output from both the drain terminals.
+[18:15] Both the drain terminals are connected together.
+[18:19] So, what did you do from there?
+[18:21] You took the output from there.
+[18:27] Well, Akshay, this is a very good thing.
+[18:29] It felt good to hear that your placement is done.
+[18:32] So, first of all,
+[18:33] very, very hearty congratulations to you.
+[18:36] But keep this in mind.
+[18:37] From this channel,
+[18:39] what you have learnt from this environment
+[18:41] is that you can move forward
+[18:43] by struggling and working hard in life.
+[18:46] So, don't forget this attitude in this lesson in life.
+[18:50] If you want to move forward in life,
+[18:52] then you have to work hard.
+[18:53] You have to work hard.
+[18:54] You have to work hard.
+[18:55] You have to work hard.
+[18:56] You have to work hard.
+[18:57] And if you have made this attitude in your life,
+[19:00] then I am telling you,
+[19:01] at any stage in your life,
+[19:03] no one can beat you.
+[19:05] You will never give up.
+[19:07] You will never lose.
+[19:09] Okay?
+[19:10] Is this clear?
+[19:11] What does CMOS mean?
+[19:13] So, first of all,
+[19:15] let's talk about the output of high voltage.
+[19:17] So, what happens?
+[19:19] When input voltage is zero,
+[19:23] then your PMOS is ON,
+[19:30] and NMOS is OFF.
+[19:35] So, the output here is your VDD,
+[19:39] which we call VOH.
+[19:42] That is,
+[19:43] voltage output voltage under high state.
+[19:48] Okay?
+[19:49] Output voltage under high state.
+[19:51] So, when input is low,
+[19:53] then the voltage on the output,
+[19:55] in an inverter's case,
+[19:57] what do you call it?
+[19:58] V0H.
+[20:01] So, basically,
+[20:02] here you can say that
+[20:04] at low input,
+[20:10] PMOS turns ON.
+[20:13] At low input,
+[20:15] PMOS turns ON.
+[20:18] Pulling
+[20:23] the output high.
+[20:28] Pulling the output high.
+[20:31] That is why we call it a pull-up network.
+[20:33] Did you get it?
+[20:35] That is why we call it a pull-up network.
+[20:40] Okay?
+[20:46] Now, let's come to the output at low voltage.
+[20:49] What is the output at low voltage?
+[20:52] What is the output at low voltage?
+[20:55] That you take VIN as high.
+[20:59] Now, because it is an inverter,
+[21:03] then the output comes to your low.
+[21:05] What happens here?
+[21:07] That NMOS turns ON.
+[21:10] PMOS turns OFF.
+[21:14] So, the output comes to your
+[21:18] zero or low.
+[21:22] So, this output,
+[21:24] you call it VOL.
+[21:27] Output voltage under low state.
+[21:30] So, you are saying that
+[21:32] at high input,
+[21:35] at high input,
+[21:38] PMOS turns ON.
+[21:44] Pulling the output low.
+[21:51] This output is making low.
+[21:56] Okay?
+[21:59] So, remember one term.
+[22:01] Your V naught H and V naught L.
+[22:03] in VLSI because what happens in VLSI mainly you see the logic of CMOS
+[22:09] how it is used in digital. So there V0H, V0L will help you a lot.
+[22:16] Now if we talk about how much swing can come in V0,
+[22:21] means how much change allowed in V0, maximum swing of V0
+[22:30] basically it is V0H minus V0L which is VDD
+[22:40] So this is the swing of your voltage, whose swing is this?
+[22:45] This is V0's swing.
+[22:48] Now comes the operation of NMOS and PMOS.
+[22:52] I will make you revise it quickly.
+[22:55] As you know different regions of NMOS and PMOS
+[22:59] like if we talk about VGS in NMOS less than VTN
+[23:05] then here is cutoff and ID is 0
+[23:14] Then there is VGS greater than VTN
+[23:19] but VDS less than VGS minus VTN
+[23:27] Then what is your ID here?
+[23:31] Your ID is 2K
+[23:37] I am taking K, mu and COX W by 2L
+[23:41] VTN, VDS
+[23:52] And then there is VGS greater than VTN
+[23:58] and VDS greater than VGS minus VTN
+[24:07] So your ID is K, VGS minus VTN
+[24:19] So whose second case is this?
+[24:22] This is the linear region which is desirable here
+[24:26] and this region is your saturation
+[24:30] You have read that when MOSFET works in saturation
+[24:35] then it acts as an amplifier
+[24:40] So we don't need that
+[24:43] We need a cutoff and linear region
+[24:46] where the device works like a switch
+[24:49] We do not want the saturation region
+[24:53] What is Rohit?
+[24:57] Rohit is your name
+[24:59] Rohit is coming from here
+[25:02] So it is a very good Rohit
+[25:04] But you don't have to be an expert
+[25:07] You have given a lot of subjects here
+[25:10] Every one has to be an expert
+[25:12] Like children generally say that
+[25:15] the electrical part of the cutoff is good
+[25:18] But now you see that even in non-cutoff
+[25:22] Analog like subject
+[25:24] I am giving such a solid, pure content
+[25:28] that there is no drama in it
+[25:30] There is no drama in it
+[25:32] You will get pure content in it
+[25:34] You will see any topic
+[25:36] It will be clear from the root to the advanced level
+[25:38] And from tomorrow we are starting
+[25:40] The biggest topic of analog
+[25:42] The most important topic that is opamp
+[25:45] It will start from tomorrow
+[25:47] What did I tell in PMOS?
+[25:49] I told that instead of GS
+[25:52] it becomes SG
+[25:54] And here we take mod
+[25:56] Sorry, less than
+[26:01] So this is the cutoff
+[26:06] And here the id is 0
+[26:11] Now the next is when VSG
+[26:16] is bigger than mod VTP
+[26:22] And VSG is smaller
+[26:30] So this is linear
+[26:32] Which is desirable for us
+[26:36] I will write 2kp here
+[26:39] Because mu p c o x will be
+[26:48] And I told one more thing
+[26:50] Maximum time is
+[26:51] Let's ignore the square term in linear case
+[26:54] By saying that VSG will be quite small
+[26:58] VSG will be quite small
+[27:03] Earlier many kids were saying
+[27:05] Sir, you study analog on electrical level
+[27:08] Now tell me one thing
+[27:10] Brother, is analog on the EC level or not?
+[27:16] Because CMOS is not in the electrical
+[27:20] I think if I study any subject
+[27:23] I should study its maximum potential
+[27:27] Not that I should study branch specific
+[27:34] This becomes your saturation
+[27:36] Which I don't mean
+[27:39] So you were still liking saturation in the chapter of MOSFET
+[27:43] And what do you like in this topic?
+[27:46] Cutoff and linear
+[27:48] What is your work?
+[27:50] Cutoff and linear
+[27:52] Is it clear?
+[27:53] Your device will work as a switch in cutoff and linear
+[27:57] If you see in saturation
+[28:00] It will work as an amplifier
+[28:08] Rohil, if you are working so hard
+[28:14] When you don't give input on VIN
+[28:16] If you keep open circuit
+[28:18] Then it is called high Z condition
+[28:20] What happens in high impedance?
+[28:22] Both of you are off the transistor
+[28:26] So it is called high Z condition
+[28:28] High impedance means
+[28:29] Output is working as an open circuit
+[28:34] Yes, it will be in the electrical ESC
+[28:40] I will use these conditions
+[28:42] Now let's talk about the voltage transfer characteristic
+[28:47] If I come to make the voltage transfer characteristic
+[28:53] I don't understand how the voltage transfer characteristic is
+[29:00] For a CMOS inverter
+[29:04] As soon as I showed you the BJT
+[29:08] Something like that
+[29:14] Here look, there are 5 regions
+[29:16] I will tell you the regions
+[29:18] And in every region, how will the transistor operate
+[29:21] Which transistor
+[29:23] We will see everything
+[29:25] This is the second region
+[29:29] This is the third region
+[29:34] And this is your fourth region
+[29:40] See how the characteristic is made here
+[29:44] This type
+[29:48] These are the 4 regions basically
+[29:52] There is no need to go ahead from here
+[30:00] Now what is this region
+[30:02] What are the points here
+[30:04] This is VTN, the threshold voltage of NMOS
+[30:08] This is VDD by 2
+[30:12] This point is VDD
+[30:15] Minus mod VTP
+[30:18] And this point is VDD
+[30:22] So here is the input voltage
+[30:24] And here is your
+[30:26] Output voltage
+[30:28] Output versus input
+[30:30] This type came
+[30:32] Here we draw another line
+[30:35] We draw a line of V0 equal to VN
+[30:39] At 45 degrees
+[30:41] Let's make it with some other color
+[30:44] It won't be fun with this color
+[30:46] See like this
+[30:48] Which line is this
+[30:51] This line is V0 equal to VN
+[30:55] This intersects here
+[30:58] That is VDD by 2
+[31:00] When your input is VDD by 2
+[31:03] Your output also comes to VDD by 2
+[31:06] Now what are the operating regions here
+[31:09] See NMOS is in the cutoff
+[31:12] PMOS is in the linear
+[31:15] NMOS is in the cutoff
+[31:17] And PMOS is in the linear
+[31:19] Then here NMOS is in the saturation
+[31:22] PMOS is in the linear
+[31:25] NMOS saturation
+[31:27] PMOS linear
+[31:29] Here PMOS saturation
+[31:31] NMOS linear
+[31:33] Here PMOS cutoff
+[31:35] And NMOS linear
+[31:38] Okay
+[31:39] And here this VDD by 2 point
+[31:42] Here both the transistors are in saturation region
+[31:47] Both the transistors are in saturation
+[31:51] Which is the center point
+[31:55] Okay
+[31:56] So if you want to plot the current here
+[32:00] The drain current which is going from one transistor to another transistor
+[32:05] Which means from supply to PMOS
+[32:08] Then it is going to the ground on the way to NMOS
+[32:12] If you want to plot the drain current
+[32:16] Till the time any transistor is in cutoff
+[32:19] The current remains zero
+[32:21] If any transistor is in cutoff
+[32:23] Then no current will flow
+[32:25] Think of these two switches in series
+[32:28] So it is necessary to be on for the current to flow
+[32:32] So the current comes to your maximum at the midpoint
+[32:36] Where both are in saturation
+[32:38] So this is the waveform of your current
+[32:41] Okay
+[32:42] This is the waveform of your current
+[32:44] When both are in saturation
+[32:46] Your current is maximum
+[32:48] Rohil, I had read it last year
+[32:51] But I had read it on the other channel
+[32:53] It is a channel by uncode computer science
+[32:57] I had read it on digital there
+[32:59] But I had read it in English
+[33:01] Is this clear till here?
+[33:03] Should I tell you?
+[33:04] Is this clear?
+[33:05] If any transistor is in cutoff
+[33:07] Then your current will be zero
+[33:10] And when one linear, one saturation
+[33:12] Then the current is gradually increasing
+[33:14] When both are in saturation
+[33:16] Then the current comes to your maximum
+[33:19] So as you know the current comes to maximum
+[33:21] Here the power dissipation also becomes maximum
+[33:25] Here your power dissipation also becomes maximum
+[33:31] So you should remember this characteristic
+[33:34] That in which region is the operating region of the transistor
+[33:38] I will explain
+[33:39] I will explain you region by region
+[33:41] But you should still be careful
+[33:43] For solving any sort of numerical
+[33:46] Which region does your transistor lie in
+[33:49] Okay
+[33:50] Now see if I want to know
+[33:53] Here is a small question
+[33:55] For what value
+[34:00] For what value
+[34:03] Of V in
+[34:06] Are both transistor in saturation
+[34:10] I have written VDD by 2
+[34:12] But I have to prove it
+[34:17] I have to prove it
+[34:19] Okay
+[34:20] So where are the two transistors in saturation
+[34:24] What will you say?
+[34:26] That if both are in saturation
+[34:29] You should compare IDP and IDN
+[34:33] Now you should understand one thing
+[34:35] My children from this diagram
+[34:37] Here
+[34:39] If you look at VSG
+[34:42] Of PMOS
+[34:44] Then it is VDD minus V in
+[34:48] And if you look at the VGS of NMOS
+[34:52] Gate to source
+[34:53] Then this is V in
+[34:55] I understood that in PMOS
+[34:57] You will look at the voltage of source to gate
+[35:00] And in NMOS
+[35:01] You will look at the voltage of gate to source
+[35:04] When you are equaling both the currents
+[35:06] Then you have written KP
+[35:11] VSGP
+[35:14] Minus the square of VTP
+[35:18] Is equal to KN
+[35:21] VGSN
+[35:24] Minus VTN
+[35:26] Whole square
+[35:28] Okay
+[35:30] Now here you have put VSGP
+[35:34] VDD
+[35:36] Minus V in
+[35:38] Minus mod VTP
+[35:41] Whole square
+[35:44] KN
+[35:46] V in
+[35:48] Minus VTN
+[35:50] Whole square
+[35:52] Okay
+[35:54] Now here if you take the square root
+[35:56] VDD
+[36:10] V in minus VTN
+[36:13] Now you collect the VIN terms
+[36:29] Okay
+[36:30] So what will happen here
+[36:32] This term came here
+[36:43] This will happen
+[36:45] You are understanding this
+[36:47] KN and KP
+[36:56] Now if you take the VIN from here
+[37:01] What will you get?
+[37:03] VDD
+[37:04] Minus mod VTP
+[37:07] Plus
+[37:09] VTN
+[37:13] Minus VTN
+[37:16] Minus VTN
+[37:18] root KN by KP
+[37:30] Minus VTN
+[37:32] So 1 plus
+[37:35] Minus VTN
+[37:38] Minus VTN
+[37:40] This happened
+[37:42] Okay
+[37:43] You don't need to keep this
+[37:45] But you should know
+[37:47] How much value of VIN comes in both the transistors
+[37:50] in saturation
+[37:52] What is KN here?
+[37:56] Minus VTN
+[37:58] Minus VTN
+[38:00] Minus VTN
+[38:02] Minus VTN
+[38:08] Minus VTN
+[38:10] Minus VTN
+[38:12] Okay
+[38:13] Now you said VDD by 2
+[38:15] How does it come?
+[38:17] If both the transistors
+[38:22] Are identical
+[38:24] Even if they are PMOS
+[38:26] But both are identical in other aspects
+[38:30] That means
+[38:32] Mod of VTP
+[38:34] Is same as VTN
+[38:37] KN equal to KP
+[38:40] So root KN by KP will be 1
+[38:44] So VTN and VTP will be cut
+[38:47] KN by KP is 1
+[38:49] That means 2 is here
+[38:50] So how much VIN will come here?
+[38:53] VDD by 2
+[38:55] How much will come?
+[38:57] VDD by 2
+[39:00] So when I showed VDD by 2
+[39:02] I had shown it
+[39:04] That there is a symmetrical transistor
+[39:08] What can you say?
+[39:10] Symmetrical transistor
+[39:22] Both the transistors are identical
+[39:25] It is clear
+[39:27] It is clear to me
+[39:30] Now let's see in different operating regions
+[39:34] Let's see in different operating regions
+[39:36] How I have written the state of devices
+[39:39] So first I am starting
+[39:41] From 0 to VTN
+[39:44] From 0 to VTN
+[39:47] Okay
+[39:48] If input is from 0 to VTN
+[39:51] Now see
+[39:54] VSG PMOS
+[40:00] And VGS NMOS
+[40:04] Is equal to VIN
+[40:06] And you are saying VIN is less than VTN
+[40:10] If VIN is less than VTN
+[40:13] Then you will say that your NMOS
+[40:17] Will be in cutoff
+[40:20] NMOS will be in cutoff
+[40:23] This is clear
+[40:25] If input is less than VTN
+[40:27] Then your NMOS will be in cutoff
+[40:30] Okay sir
+[40:31] Now tell me how it is in saturation
+[40:34] Tell me how it is in saturation
+[40:36] See
+[40:38] Here V0
+[40:42] It is slightly
+[40:47] Less than VDD
+[40:54] Slightly less than VDD
+[40:57] Now see
+[41:00] This circuit
+[41:02] Here
+[41:04] VSD
+[41:06] And VDS
+[41:10] This VDSN is V0
+[41:13] VSDP is VDD-V0
+[41:17] Okay
+[41:18] So when we are saying input is small
+[41:21] Do you understand?
+[41:22] When input is slightly bigger than zero
+[41:25] That is the value of input
+[41:27] We have kept it quite small
+[41:29] Then what happened to my children
+[41:31] The value of output will be less than VDD
+[41:36] If VDD is 5V
+[41:39] Then the value of output will be 4.9-4.8V
+[41:43] Okay
+[41:44] So V0 is slightly less than VDD
+[41:47] Which means
+[41:49] Sd of PMOS
+[41:51] VDD-V0
+[41:54] Is very very low
+[41:57] Okay
+[41:58] And when this Sd will be very less
+[42:04] Okay
+[42:07] Then which region will come
+[42:09] Linear
+[42:11] Do you have a light?
+[42:13] Or should I tell you from the value?
+[42:16] Is this light or not?
+[42:20] Dinesh my child
+[42:21] The electrical people can join from tomorrow
+[42:23] The opamp is starting from tomorrow
+[42:25] See, let me tell you an example
+[42:31] How much threshold voltage do you believe?
+[42:34] Tell me
+[42:35] How much threshold voltage do you believe?
+[42:37] Do you believe in 0.5?
+[42:39] Tell me
+[42:40] How much threshold voltage do you believe?
+[42:42] Do you believe in 0.5 of both the transistors?
+[42:45] Tell me quickly
+[42:49] Or believe in threshold voltage 1
+[42:52] The calculation will be simple
+[42:56] Okay
+[42:59] Now believe
+[43:01] That V in is less than 1
+[43:04] 0.5
+[43:06] Okay
+[43:07] So you have
+[43:08] VSG
+[43:11] P
+[43:14] VDD-VIN
+[43:16] This is 4.5 volts
+[43:19] Okay
+[43:20] And you said the output is slightly less than VDD
+[43:29] Just believe
+[43:33] That V0 is 4.8 volts
+[43:37] So now when you take out VSDP
+[43:40] Which is VDD-V0
+[43:43] I have believed in VDD
+[43:46] This is 0.2
+[43:48] And what is 0.2?
+[43:51] It is smaller than 4.5 minus mod VTP
+[43:55] That is why it is linear
+[43:59] Now understand
+[44:01] Now it is clear
+[44:02] Take the value
+[44:03] Tell me
+[44:04] What I wanted to explain
+[44:06] That PMOS will come in linear
+[44:08] And NMOS will come in cutoff
+[44:10] But you know
+[44:11] You will sit in the exam and derive
+[44:13] It will take a lot of time
+[44:14] You should remember the regions
+[44:18] Next look
+[44:19] From VTN to VDD-2
+[44:21] So as an example
+[44:25] From 1 to
+[44:29] 2.5
+[44:32] From 1 to 2.5
+[44:34] Okay
+[44:35] Now you know
+[44:36] 2.5 means VDD-2
+[44:38] Only VDD-2 is available
+[44:40] So when you are on this side
+[44:43] When you are on this side
+[44:45] The V0 you will get
+[44:47] That will be greater than VDD-2
+[44:51] VDD-2 will be bigger than V0
+[44:54] Understand
+[44:55] When you get VDD-2 on VDD-2
+[44:58] It is getting bigger than this
+[45:00] It is getting bigger than this
+[45:11] Suppose we have taken V0
+[45:14] 3.5V
+[45:16] And we have taken VIN 2V
+[45:19] Okay
+[45:20] Suppose like this
+[45:22] Now look
+[45:26] V
+[45:29] SGP
+[45:31] VDD
+[45:33] minus VIN
+[45:34] 5 minus 2
+[45:37] 3V
+[45:38] 3V
+[45:41] And
+[45:42] V
+[45:43] SGP
+[45:45] VDD
+[45:48] minus V0
+[45:50] 1.5V
+[45:53] Now this V, SGP
+[45:56] That is less than
+[46:02] 3 minus 1, 2
+[46:04] So how did this region come from here?
+[46:08] Linear
+[46:10] Okay
+[46:11] 1.5 is less than 3 minus 1
+[46:13] So this came in linear
+[46:15] Now if you talk about NMOS
+[46:20] VGSN
+[46:22] Is VIN
+[46:26] 2V
+[46:27] Okay
+[46:28] VG
+[46:29] Sorry
+[46:30] VDS
+[46:32] S
+[46:35] N
+[46:36] V0
+[46:37] 3.5V
+[46:40] So VDSN
+[46:43] Is greater than VGSN
+[46:46] Minus VTN
+[46:49] This means NMOS came
+[46:51] In saturation
+[46:53] Tell me if both the regions are clear
+[46:57] Speak quickly
+[46:59] If both the regions are clear
+[47:02] From 1 VTN to 1 VDD-2
+[47:06] Are you both clear or not?
+[47:08] Speak quickly
+[47:10] Speak quickly
+[47:12] Is this clear?
+[47:14] Right?
+[47:16] So let's take a drink break
+[47:18] Let's drink water
+[47:28] Do you understand?
+[47:30] Now I will show you the questions
+[47:32] It will be completely clear
+[47:33] Don't worry about anything
+[47:37] This one is done
+[47:38] We took it out
+[47:58] If the question is asked
+[48:00] The question I have written
+[48:02] You should know how to derive
+[48:07] Okay?
+[48:08] We have already taken this out
+[48:10] Now the next son
+[48:11] From VDD-2
+[48:13] From VDD-2
+[48:14] How far do you have to take?
+[48:16] From VDD-VTP
+[48:18] Okay?
+[48:19] From VDD-2
+[48:20] From VDD-VTP
+[48:25] Just a minute
+[48:30] Okay?
+[48:32] Now how much will be done here?
+[48:35] From VDD-2.5
+[48:48] From VDD-4
+[48:49] This is done
+[48:52] Okay?
+[48:53] It is a very good thing
+[48:57] Mosfet amplifier
+[48:58] No, after the mosfet amplifier
+[49:00] The electrical people have to open it directly
+[49:02] Okay?
+[49:05] Now here you see
+[49:08] If we go back to P-MOS
+[49:13] The output here will be less than VDD-2
+[49:16] When you go ahead of VDD-2
+[49:19] So let's assume V0 as 2.5V
+[49:23] Let's assume this
+[49:27] And take the input
+[49:30] From 2.5 to 4
+[49:34] Sorry, you have to take it smaller than 2.5
+[49:37] Come on, you have assumed 1.5V
+[49:40] And you have assumed this as 3.5V
+[49:44] Okay?
+[49:46] Now look at VSGP
+[49:50] VDD-VIN
+[49:55] 5-3.5
+[49:58] That is 1.5V
+[50:01] Now VSDP
+[50:05] VDD-V0
+[50:08] That is 3.5V
+[50:12] So what will you say now?
+[50:14] VSDP
+[50:16] Is much greater than VSGP
+[50:19] Minus VTP
+[50:21] This is 3.5V
+[50:23] Sorry
+[50:25] 1.5-1.5
+[50:27] So this means P-MOS is in saturation
+[50:32] P-MOS is in saturation
+[50:35] And here when you look at N-MOS
+[50:38] VGSN
+[50:40] This will be
+[50:42] VIN
+[50:43] Which you have taken 3.5V
+[50:46] And VDSN
+[50:48] Which you will see
+[50:50] That is V0
+[50:51] Which is 1.5V
+[50:54] So you can say that VDSN
+[50:58] Is less than VGSN
+[51:01] Minus VTN
+[51:04] Which means N-MOS is in linear
+[51:11] N-MOS is in linear region
+[51:14] Is this clear?
+[51:16] Is this clear?
+[51:19] Now
+[51:20] In the first case, VDD-VTP
+[51:24] Is from 5-1
+[51:27] To 5
+[51:30] Which means from 4 to 5
+[51:35] So as you can see, VIN is
+[51:38] 4.5V
+[51:40] The output will be very small
+[51:43] So it is 0.5V
+[51:46] Now look here
+[51:50] VSGP
+[51:52] VDD
+[51:54] Minus VIN
+[51:56] Which is 0.5
+[51:59] So this SGP-MOS is coming
+[52:03] It is less than its threshold
+[52:06] Which means P-MOS is in cut-off region
+[52:12] Cut-off region
+[52:15] And
+[52:16] VGSN
+[52:19] VIN is equal to
+[52:21] Which is 4.5V
+[52:24] And VDSN
+[52:26] V0 is equal to
+[52:29] Which is 0.5V
+[52:32] So you can say that VDSN
+[52:35] Is less than VGSN
+[52:38] Minus VTN
+[52:41] Which means
+[52:42] N-MOS is in linear
+[52:45] region
+[52:48] Okay
+[52:49] All regions are clear
+[52:51] Tell me
+[52:52] All regions are clear
+[52:53] So the diagram I have made you
+[52:56] That diagram is very important
+[52:58] Do you understand?
+[53:00] So the diagram made
+[53:01] Transfer characteristics
+[53:02] That is very very important
+[53:06] Now look here
+[53:07] In the transfer characteristic
+[53:09] You should remember these regions
+[53:11] The regions I have told you
+[53:12] These regions you must always remember
+[53:15] Remember
+[53:16] Do you remember these regions?
+[53:18] Tell me
+[53:19] You can make it in a table form
+[53:22] You can keep it in a diagram form
+[53:26] On the midpoint
+[53:27] Both the transistors come in saturation
+[53:32] And there your current and power loss
+[53:35] Is maximum
+[53:37] Okay
+[53:40] Now let's talk about the noise margin
+[53:42] What does noise margin mean?
+[53:44] It is very significant in digital
+[53:46] What does it mean?
+[53:47] When you use a logic family
+[53:49] Logic family means
+[53:51] That the logic gate you are making
+[53:53] You are making it from BJT
+[53:54] You are making it from diode
+[53:55] You are making it from MOSFET
+[53:56] It is called logic family
+[53:58] So what happens many times
+[54:00] Like we sent 0
+[54:02] Now there is some unwanted signal in it
+[54:05] Now because of this
+[54:07] The value of this signal has gone up from 0
+[54:10] Now the next logic gate
+[54:12] He understood it by mistake
+[54:14] If he understood it high by mistake
+[54:17] Then it will be a mistake
+[54:18] I had sent a low signal
+[54:20] Because of the noise add
+[54:22] The logic gate understood it high
+[54:25] That will be a problem
+[54:27] So how much noise can be added
+[54:30] Until the logic gate does not make this mistake
+[54:34] Means how much noise can your system tolerate
+[54:37] Before the logic gate
+[54:39] That the logic gate should understand it high
+[54:41] Or low
+[54:43] That is called as the noise margin
+[54:45] What is the significance of this?
+[54:48] The logic gate is usually cascaded after one
+[54:52] That means the output of one logic gate
+[54:54] Is the input of the other one
+[54:56] Suppose the output is high
+[54:58] But because of the noise
+[55:00] The next person understood it low
+[55:02] So the operation is wrong
+[55:04] The operation is wrong
+[55:05] The output will be wrong
+[55:07] That is why we need to understand
+[55:09] Which logic family
+[55:11] Which technology
+[55:12] How much noise margin
+[55:14] Means how much noise can it tolerate
+[55:17] So first I will explain the noise margin
+[55:21] What does it mean?
+[55:23] Maximum value
+[55:29] Of
+[55:31] Noise signal
+[55:38] That can be tolerated
+[55:51] By
+[55:53] A system
+[55:57] Before
+[56:00] Misinterpreting
+[56:07] The
+[56:12] Logic level
+[56:20] By misinterpreting the logic level
+[56:24] How much maximum noise can you tolerate
+[56:27] That is called as the noise margin
+[56:30] Now as you defined on the output
+[56:33] VOH and VOL
+[56:35] We define on the input
+[56:37] What is the limit of the input low
+[56:39] And the output low
+[56:41] What is the limit of the input high
+[56:47] So input
+[56:49] Low
+[56:50] Voltage
+[56:52] Do you know how do you know?
+[56:54] Your transfer characteristic
+[56:56] Make a tangent on it
+[56:59] Where the slope of the tangent is minus
+[57:03] We take VIL on it
+[57:06] What should you get the slope of the tangent?
+[57:09] Minus one
+[57:12] So this voltage is VIL
+[57:15] This means that the input
+[57:17] Will recognize the maximum voltage low
+[57:21] A logic gate
+[57:22] If you give more input than this
+[57:24] That will not be considered as low voltage
+[57:28] So low voltage
+[57:30] What is your low logic level?
+[57:34] What does logic 0 mean?
+[57:37] This means the input voltage is less than
+[57:41] VIL
+[57:43] Okay
+[57:44] Less than equal to or less than VIL
+[57:48] So this point
+[57:49] The point I showed on the plot
+[57:51] This point
+[57:53] So that is your input low
+[57:58] Okay
+[57:59] This is how the input high voltage
+[58:04] Means if you put more voltage than this
+[58:08] On the input
+[58:09] So that will be considered as a high level
+[58:13] What will it be considered?
+[58:15] It will be considered as high
+[58:34] So for logic one
+[58:37] It will be more than VIL
+[58:39] Here B is seen on the point
+[58:41] Here also the slope of the tangent
+[58:44] Is minus one
+[58:46] Okay
+[58:47] So this is considered as point B
+[58:50] Tell me, did you understand this?
+[58:52] VIL and VIH
+[58:54] Means how much input
+[58:56] Is considered as a logic gate high
+[58:59] Or low
+[59:01] That is VIH and VIL
+[59:04] And such a logic gate
+[59:05] How much high output is given
+[59:07] That is VOH
+[59:08] And how much low output is given
+[59:10] Now see there are two types of noise margin
+[59:13] Noise margin high
+[59:17] Is VOH
+[59:19] Minus VIH
+[59:22] Okay
+[59:23] And noise margin low
+[59:27] VIL
+[59:29] Minus VOL
+[59:32] So here the overall noise margin
+[59:34] Of a logic family is the minimum of both
+[59:37] Why the minimum is to be on the safe side
+[59:41] That the noise margin is less
+[59:44] There should be less noise
+[59:46] Right?
+[59:47] One of the two should not be level void
+[59:49] What did you do for this?
+[59:51] For this you took the minimum of both
+[59:54] Is the matter clear?
+[59:56] So see what we are saying here
+[59:58] See to understand its significance
+[60:00] As a logic gate there are two inverters
+[60:04] Understand it like this
+[60:11] Suppose there are two inverters
+[60:13] Okay
+[60:14] Now the first inverter in this
+[60:16] It has given high
+[60:19] It has given high
+[60:20] The first one
+[60:21] So how much voltage will it give
+[60:23] VOH will it give
+[60:25] Now we want when the first one has given high
+[60:27] The second one should understand it as high
+[60:30] The second one should understand it as high
+[60:33] So the second high will understand
+[60:35] When the input will be greater than VIH
+[60:38] I am saying this
+[60:40] See how much it has given
+[60:43] It has given VOH
+[60:46] And how much it should give
+[60:48] Greater than VIH
+[60:50] It should be this much
+[60:52] So I say how much noise
+[60:54] It can be subtracted
+[60:56] From the high output
+[60:58] How much noise can be subtracted
+[61:00] That it will also get high
+[61:02] That will be VOH minus VIH
+[61:05] Suppose VOH is 5
+[61:07] VIH is 4
+[61:09] So I am saying the negative noise of 1V
+[61:12] It is maximum tolerable
+[61:14] Because more than 1 more noise came
+[61:17] That means the 5th signal
+[61:19] If you drop it below 4
+[61:21] Then the next one will not understand it as high
+[61:23] The next one will interpret it as wrong
+[61:25] It will interpret it as wrong
+[61:27] I understood it
+[61:29] What is VOH?
+[61:31] How much high output it gives
+[61:33] And how much it should be
+[61:35] To understand it as high
+[61:37] That is VIH
+[61:39] So why are they not equal?
+[61:41] Because the noise is coming in the middle
+[61:43] We are saying this, the other one is saying
+[61:45] If it comes at least 4V
+[61:47] Then I will consider it as high
+[61:49] It is giving 5
+[61:50] So I have a noise margin of 1V
+[61:52] And the noise of 1V will go away
+[61:54] If it is more than 1
+[61:56] Then it will be wrong
+[61:58] Suppose it gave 0 in low
+[62:00] And it is saying
+[62:02] I can consider it as low up to 1V
+[62:04] I can consider it as low up to 1V
+[62:07] So how much noise can you give
+[62:09] The noise of 1V
+[62:11] You can give the noise of 1V only
+[62:14] Suppose VOL is 0
+[62:16] And this is 1
+[62:18] So what are we saying?
+[62:20] It is giving 0
+[62:21] If it will be low up to 1V
+[62:23] Then the noise should not be more than 1V
+[62:25] Otherwise it will not consider low
+[62:27] Otherwise it will not consider low
+[62:30] Did you understand what I said?
+[62:32] I have said this many times
+[62:34] If you are watching my lectures
+[62:36] I told you after Amplifier
+[62:38] That there is no need for electrical people
+[62:40] I told you
+[62:42] There is no need for frequency response
+[62:44] Cast code, all these things
+[62:46] Electrical people
+[62:47] I have said this many times
+[62:49] You are not listening to me
+[62:51] You are not listening to me
+[62:53] Did you get the feeling of noise margin
+[62:55] Or not?
+[62:57] Did you understand the noise margin?
+[62:59] What happens?
+[63:05] Sir, VIL and VIH can be expressed
+[63:07] In the form of VT and VDD
+[63:09] And how to relate the level of input
+[63:11] from slope minus 1
+[63:13] Look, there is a standard
+[63:15] There is a standard
+[63:17] Look, the output in the beginning
+[63:19] It slowly falls
+[63:21] That means it will be high
+[63:23] The slope of minus 1
+[63:25] After this, the output falls very fast
+[63:27] We ideally want this
+[63:29] The transition region to be very narrow
+[63:31] That is why I said where slope minus 1
+[63:33] After that the slope will be very high
+[63:35] The output will fall very fast
+[63:37] So we defined threshold
+[63:39] We defined threshold
+[63:43] Did you clear the matter?
+[63:45] And the level of VIL
+[63:47] Will be approximately
+[63:49] Around VTN
+[63:51] Threshold of NMOS
+[63:53] And this VIL
+[63:55] Will be approximately
+[63:57] equal to VDD minus VTP
+[63:59] Clear the matter?
+[64:01] Clear the matter?
+[64:03] Now CMOS transient response
+[64:05] What will be the meaning of transient response
+[64:07] When you are
+[64:09] changing the input from low to high
+[64:11] From high to low
+[64:13] When you are changing the output
+[64:15] The transition that will be called
+[64:17] as the transient
+[64:19] And in this transition
+[64:21] It becomes RC circuit
+[64:23] NMOS and PMOS transistors
+[64:25] They have
+[64:27] Some resistance
+[64:29] And there will be
+[64:31] Capacitance in the circuit
+[64:33] Like there will be input
+[64:35] Capacitance in the output
+[64:37] You understand this
+[64:39] You know that in a MOSFET
+[64:41] There are Capacitance
+[64:43] There is Capacitance between gate source
+[64:45] Now you know
+[64:47] After logic gate
+[64:49] There are cascaded
+[64:51] So son, your second stage
+[64:53] The input capacitor
+[64:55] What will it be for the first stage?
+[64:57] Output capacitor
+[65:01] So if I want to give
+[65:03] High input to the second stage
+[65:05] Then I will have to
+[65:07] Charge the input capacitor
+[65:09] If the second stage
+[65:11] The input capacitor is charged
+[65:13] Then I will say that its input is high
+[65:15] And if you want to give it low input
+[65:17] Then you have to discharge its capacitor
+[65:19] Who will charge
+[65:21] PMOS and who will discharge
+[65:23] Your NMOS
+[65:25] See what I am saying
+[65:31] Understand this
+[65:33] I will draw you
+[65:35] and show you
+[65:39] Basically what I am saying is
+[65:41] That
+[65:43] Your
+[65:45] Output capacitor
+[65:47] Or your load capacitor
+[65:49] What it is actually
+[65:51] Is the input capacitor of the next stage
+[66:03] This is your C load
+[66:05] This is actually
+[66:07] This is actually
+[66:11] Input capacitor of
+[66:13] Next stage
+[66:19] Okay
+[66:21] Now if we want to charge it
+[66:23] Then who charges
+[66:25] See PMOS charges like this
+[66:31] And if we want to discharge
+[66:33] Then NMOS discharges like this
+[66:35] So what I have said
+[66:37] PMOS and NMOS have some resistance
+[66:39] Which is based on
+[66:41] Your time constant
+[66:43] And from time constant
+[66:45] It will be about charging and discharging
+[66:47] And from that
+[66:49] The speed of the system will be decided
+[66:51] Now tell me
+[66:53] What I am trying to explain
+[66:55] How much PMOS
+[66:57] Will charge the capacitor
+[66:59] Or how much NMOS
+[67:01] Will discharge the capacitor
+[67:03] The speed of the system will be decided
+[67:05] And this is called
+[67:07] Transient response
+[67:09] Now see in the linear region
+[67:13] Talking about on state
+[67:17] If you talk about IDP
+[67:19] Then 2KP
+[67:33] I have ignored VDS
+[67:35] Square by 2
+[67:37] I have told
+[67:39] If it is small
+[67:41] Then ignore it
+[67:43] Now if you take out
+[67:45] Conductance of drain source
+[67:49] GDSP
+[67:51] Then Dell IDP
+[67:55] By Dell VSD
+[68:03] Here
+[68:19] Okay
+[68:21] So this will be 2KP
+[68:27] VSD minus mod VTP
+[68:29] I have derived this in the chapter
+[68:31] In the same chapter
+[68:35] In NMOS
+[68:47] Now what have you done here
+[68:51] I have ignored VDS
+[68:53] Square by 2
+[68:57] Okay
+[68:59] If you take out the conductance
+[69:01] Of NMOS
+[69:03] Then Dell IDN
+[69:05] By Dell VDS
+[69:09] So that is 2KN
+[69:13] VGS minus mod
+[69:15] Or VTN
+[69:17] Okay
+[69:19] The resistance can come from this
+[69:21] As soon as the conductance comes
+[69:23] The resistance will come
+[69:25] So what will be the resistance of PMOS
+[69:27] 1 by
+[69:31] 2KP
+[69:33] VSG
+[69:35] Minus mod VTP
+[69:39] And what about NMOS
+[69:41] 1 by
+[69:43] The time constant will be decided from this
+[69:45] What will you have to take on the time of discharging
+[69:47] What will you have to take on the time of discharging
+[69:49] What will you have to take on the time of discharging
+[69:51] Will take the resistance of NMOS
+[69:53] And on the time of charging
+[69:55] What about PMOS
+[69:57] Did you understand what I said
+[69:59] But sir when will it be charged
+[70:01] When will it be discharged
+[70:03] When the input is low
+[70:05] Then what will happen
+[70:07] When the PMOS is on
+[70:09] Then it will charge the capacitor
+[70:11] When the input is high
+[70:13] Then when the NMOS is on
+[70:15] Then it will discharge the capacitor
+[70:17] When the input is low
+[70:19] Then the output should be high
+[70:21] To get the output high
+[70:23] When the input is high
+[70:25] Then the output should be low
+[70:27] So the output should be low
+[70:29] The capacitor should be discharged
+[70:31] NMOS
+[70:33] Okay?
+[70:35] We will go in all the kilo ohms
+[70:37] Means for the output of the second stage
+[70:39] The first stage of PMOS
+[70:41] For the input of the second stage
+[70:43] The output of the first stage
+[70:45] The input of the next stage
+[70:47] For the input of the next stage
+[70:49] The PMOS will have to be charged
+[70:51] And for the input of the next stage
+[70:53] NMOS will have to be discharged
+[70:55] Will it be clear
+[70:57] Will it be about charging and discharging
+[70:59] Will it be about charging and discharging
+[71:03] Okay
+[71:09] Now see
+[71:11] First let's talk about the fall time
+[71:13] What will happen in fall time
+[71:15] As soon as you have highlighted
+[71:17] the input
+[71:19] The output was high before
+[71:21] See the input was low and the output high
+[71:23] As soon as the input went high
+[71:25] The output was low
+[71:27] The output was low
+[71:29] Then the input went low
+[71:31] The output started going high
+[71:33] So after going high
+[71:35] How much time did you put during the low
+[71:38] That is the fall time
+[71:39] After going low
+[71:41] How much time did you put during the high
+[71:43] That is rice time
+[71:45] So in fall time
+[71:47] let's say input is made low, output becomes high, sorry input is made high, I wrote the
+[72:09] opposite, I wrote the input is made high, output becomes low in time tf, output is the voltage of the
+[72:24] capacitor, now on the voltage of the capacitor, how much voltage will be there, VDD, so how will you write
+[72:33] the equation, how will you write VDD 1 minus, how will you write tau n, tau n is Rn C load,
+[72:51] because NMOS must be discharged, NMOS must be discharged, so in time constant, you will have to
+[72:59] take Rn, Rn will have to be taken, now what is the general definition of the fall time, son,
+[73:06] that here we see the time from 90% to 10% that the output is going from 90% to 10% in how much time,
+[73:19] like T1 by tau n, so here T1 will be minus tau n ln 0.1, this will be VDD from 0.9 to 0.1,
+[73:40] as same 0.1 VDD is talking about 90% to 10%, this you must have heard in control,
+[73:52] the definition of rise time, fall time, I had read the control whenever I told, so fall time is T2 minus
+[74:06] T1, okay, so T2 minus T1, oh man, I am thinking what is the mistake, what am I doing? Discharging
+[74:29] capacitor is talking, you people are also not telling,
+[74:45] to tau n ln 9, okay, tau n ln 9, is this clear, so log 9 will come, if you take ln 9 out,
+[75:08] approximately 2.2 comes, 2.2 tau n, clear, now see if we talk about the rise time,
+[75:17] if we talk about the rise time, then what will happen here, PMOS will charge the capacitor,
+[75:23] PMOS charges capacitor towards VDD, so what will you see in rise time, time taken to,
+[75:48] time taken for output to increase from, to increase from 10% to 90%
+[76:13] of steady state value, okay, is called rise time, now if you take the charging equation,
+[76:32] so what will be the time constant here, tau p is Rp into C load, okay, Rp into C load, now
+[76:48] we will take the charging capacitor, VDD 1 minus A to the power minus T by tau p, so now
+[77:01] I take point 1 first, VDD 1 minus A to the power minus T1 by tau p, so here T1 came minus
+[77:15] tau p ln 0.9, then like this 0.9 VDD, VDD 1 minus, so here T2 came, now here the rise
+[77:41] time, tau p ln 0.9, this happened, 2.2 tau p, clear, so you got rise time and fall time,
+[78:02] and you know the maximum frequency of the circuit is decided here, that how much frequency
+[78:09] you can put in input, okay, because when your input fluctuates, at least it will give rise time
+[78:20] after it is high, then the output will be stable, immediately you have increased the input,
+[78:26] the output will start falling, the output will start falling, so at least you have to wait for tf time
+[78:32] that the output falls, that means if you want a stable output, you need a proper output,
+[78:37] so you cannot put more frequency than this, because at least you have to give the output tr time
+[78:44] to increase, and tf time will have to be given to decrease, now the next is propagation delay,
+[78:52] what do you see for propagation delay, look like the input was high here, so when the output
+[78:58] falls to 50%, then it is called propagation delay, okay, and when the input is going low,
+[79:10] then the output will increase, so when the output reaches 50%, that is called as the propagation delay,
+[79:18] so there are two types of propagation delay, one is when the output goes high and the other is when the output goes low,
+[79:26] there are two propagation delays, why do these propagation delays come?
+[79:31] This is why they come due to charging and discharging of capacitor, due to charging and discharging of capacitor,
+[80:01] there is a propagation delay as signal propagates, do you know the propagation delay?
+[80:24] People say that the signal is propagating, from input to output, from input to output of logic gate,
+[80:41] now the propagation delay is seen, it goes like this, delay between edge of input and the time instant
+[81:05] at which V0 is half of VDD, i.e. let's take threshold of 0.5 VDD, so when the output reaches half value,
+[81:25] till that time you see the propagation delay, okay, now if we talk here, initially you
+[81:36] high the input, initially you high the input, then the output will go down, case 1,
+[81:47] when you high VIN, then V0 falls, V0 starts to fall, if my children start falling V0, then here we talk about TPHL,
+[82:07] TPHL, i.e. how much time V0 has come on your 50%, okay, propagation delay for high to low transition,
+[82:31] HL means high to low, okay, you know when V0 falls, then it starts to fall, NMOS, NMOS only happens,
+[82:43] so that's why you define tau N as RN into C load, here your VC is VDD A to the power minus T by tau N, okay,
+[83:00] now how much you take the output, 0.5 VDD, TPHL by tau N, so from here TPHL came, tau N, LN2, okay, tau N, LN2,
+[83:23] what's the matter Zainul, very good, okay, very good, now see the next case 2, when you lower the input,
+[83:32] when my children lower the input, then your output will increase, your output will increase, and whose help will it increase,
+[83:47] so here we talk about TPLH which is propagation delay, propagation delay for low to high transition,
+[84:04] so here you take tau PLO, RPC load, and here your capacitor charge will be,
+[84:35] you have to see upto 50%, that's why what you will do, 0.5 VDD,
+[84:42] now see what we do,
+[85:02] we take the overall propagation delay,
+[85:33] so see this happens, overall propagation delay is the average of both,
+[85:40] because we won't mention two propagation delays, one logic gate has one propagation delay,
+[85:47] you must have done it in digital, you have done it in the adder questions,
+[85:51] propagation delay, so the propagation delay comes like this, that is average of TPHL and TPLH,
+[86:01] now last thing, in a logic gate is the power dissipation,
+[86:06] now see there are two types of power dissipation, in a logic gate or CMOS, one is called as the static power dissipation,
+[86:15] static power dissipation means when your input is not changing,
+[86:21] you have kept the input at a constant level, so the power dissipation that is the static power dissipation,
+[86:28] so power dissipation when input is constant,
+[86:42] in any region the input should be at a constant value,
+[86:50] now see here the power will be zero, here the power is increasing,
+[86:56] here when both the transistors give maximum current then the power is maximum,
+[87:01] then the power is decreasing and again the power is zero,
+[87:05] so what is the power in the non-zero region, when both the transistors are on,
+[87:11] in one saturation and one in your linear,
+[87:15] so what do you call it, static power dissipation,
+[87:19] so here if any transistor went to cut-off,
+[87:24] then if any transistor is in cut-off,
+[87:34] so id equal to zero,
+[87:38] which means power in the transistor is zero,
+[87:44] power is maximum when V in is VDD by 2,
+[87:58] both the transistors are in saturation,
+[88:07] both the transistors are in saturation,
+[88:13] do you understand how power dissipation is taken out,
+[88:17] now there is dynamic power dissipation,
+[88:20] this means when you change the input, your output changes,
+[88:25] during the charging and discharging of the capacitor,
+[88:29] the power dissipation that is dynamic power dissipation,
+[88:34] when your V in variable is,
+[88:39] so V0 will also vary,
+[88:43] so power dissipation,
+[88:47] power dissipation,
+[88:50] during charging and discharging of capacitor,
+[89:00] charging or discharging of capacitor,
+[89:15] is dynamic power dissipation,
+[89:23] so we call it dynamic power dissipation,
+[89:34] is it clear,
+[89:36] this dynamic power dissipation,
+[89:40] let's talk about energy first,
+[89:43] Q into VDD,
+[89:46] Q is CL VDD,
+[89:51] so power is energy by time period,
+[89:57] so I can make numerical on this also,
+[90:01] CL means load capacitance,
+[90:04] so when you charge load capacitance from zero to VDD,
+[90:08] then how much energy you will have to give,
+[90:11] or how much charge you will have to give first,
+[90:13] CL into VDD,
+[90:15] so energy will be QV or divided by time period,
+[90:21] okay,
+[90:24] now let's look at the question,
+[90:27] yes,
+[90:29] consider the CMOS circuit shown where VG,
+[90:33] VG means gate voltage of NMOS is increased from zero,
+[90:38] and gate voltage of PMOS is constant at three,
+[90:42] so let's see how the question is attempted,
+[90:45] this PMOS voltage is fixed at two,
+[90:51] okay VSG,
+[90:53] magnitude of both transistors is one volt,
+[90:56] trans conductance parameter is 1 milli ampere per volt square,
+[91:02] product of trans conductance parameter and W by L,
+[91:09] this means that mu P COX,
+[91:13] this is trans conductance parameter,
+[91:17] and mu N COX W by L are both equal,
+[91:22] for small increase in VG beyond one volt,
+[91:26] find the region of operation of both the transistors,
+[91:29] okay,
+[91:30] and for VG equal to 1.5 volt,
+[91:33] find V0,
+[91:36] now let's see how to attempt this question,
+[91:43] see,
+[91:44] the SGP of PMOS is 5 minus 3,
+[91:51] it is constant at two volts,
+[91:53] let's see,
+[91:56] and VGSN of NMOS is VI,
+[92:03] SGP of PMOS is 5 minus V0,
+[92:11] and SD, sorry SD means DS,
+[92:17] which is of N, that is V0,
+[92:22] okay,
+[92:23] now you have said that the input is slightly bigger than one,
+[92:29] so we are saying,
+[92:33] if first take VI greater than one,
+[92:38] then VGSN is less than VT,
+[92:43] VT1,
+[92:44] so NMOS must be in cutoff,
+[92:51] so ID will be zero,
+[92:59] and V0 will be approximately VDD,
+[93:02] because of PMOS, 5 volts,
+[93:05] correct,
+[93:06] V0 approximately 5 volts will come when NMOS is closed,
+[93:10] because PMOS will make it high,
+[93:12] now what you say that VI is slightly increased above one,
+[93:29] assume 1.1 volts,
+[93:32] okay,
+[93:33] what do you say,
+[93:34] slightly increased above one,
+[93:37] assume VI is 1.1 volts,
+[93:46] so VGSN,
+[93:50] VI is greater than VT,
+[93:54] okay,
+[93:55] now as you increase VI to one,
+[93:59] V0 slightly reduces,
+[94:04] because NMOS will try to take it down,
+[94:09] so V0 slightly reduces below 5 volts,
+[94:13] so assume V0 is 4.5,
+[94:19] we have to judge the region,
+[94:22] now look at NMOS,
+[94:25] VDS of NMOS is equal to V0,
+[94:30] and this is quite big,
+[94:32] VGSN minus VT,
+[94:35] because VGSN is 1.1,
+[94:39] and VT is 0.1,
+[94:41] so 1.1 minus 0.1 will be equal to 0.1,
+[94:45] and V0 is 4.5,
+[94:48] so 4.5 is much much greater than 0.1,
+[94:51] this means saturation,
+[94:54] so NMOS is in saturation,
+[94:57] now VSDP,
+[95:01] VDD minus V0,
+[95:05] so that is 0.5 volts,
+[95:08] okay,
+[95:10] or VSGP is 2 volts,
+[95:15] so VSDP minus,
+[95:19] sorry VSDP is less than VSGP,
+[95:24] minus mod VTP,
+[95:26] that is linear,
+[95:28] so PMOS will remain in linear in NMOS saturation,
+[95:32] PMOS linear NMOS saturation,
+[95:35] is it clear, tell me till here,
+[95:38] this question is clear till here,
+[95:40] now look at the next part,
+[95:43] if VG is 1.5,
+[95:46] if VG is 1.5,
+[95:50] then using approximate current voltage equation,
+[95:53] V0, tell me, okay,
+[95:56] now 1.5 is slightly above 1 volt,
+[96:01] so this is a kind of a linked answer question,
+[96:05] that earlier you found out that PMOS is linear,
+[96:10] and NMOS is in your saturation,
+[96:14] now the current will be equal to both,
+[96:16] series is connected,
+[96:19] what was the meaning of approximate,
+[96:24] you take this in linear,
+[96:37] okay, ignore the square term,
+[96:41] that is why you said approximate,
+[96:43] ignore the square term,
+[96:53] so look,
+[96:57] this term is cut,
+[96:59] there is a 2 left,
+[97:01] SGP is 2,
+[97:07] VDD minus V0,
+[97:11] here a 2 is left,
+[97:13] GS is VI,
+[97:17] so VDD
+[97:23] half VI is 1.5,
+[97:26] VDD minus V0,
+[97:39] this is it,
+[97:40] is it clear,
+[97:42] what type you want to do,
+[97:44] if you know the region of operation,
+[97:47] then you can equate both the currents
+[97:50] and solve any questions,
+[97:52] see the next one,
+[97:54] in the CMOS circuit,
+[97:56] assume electron and hole mobility are equal,
+[97:58] transistors are equally sized,
+[98:02] okay, that is W by L ratio is equal,
+[98:06] and the mobility of PMOS and NMOS is also equal,
+[98:10] that is KN and KP is equal to you,
+[98:16] so this is what I want to say,
+[98:19] now ask when M1 will be in the linear region,
+[98:27] the condition of being in the linear region of M1,
+[98:30] that is,
+[98:31] the condition of being in the linear region of PMOS,
+[98:34] tell me,
+[98:50] tell me,
+[99:07] VDD is VDD 5,
+[99:09] V is their condition,
+[99:11] both are threshold voltage 11,
+[99:15] I started showing my career in the material,
+[99:19] okay, in the material,
+[99:21] which material,
+[99:22] are you talking about material science,
+[99:28] tell me,
+[99:29] this is very easy,
+[99:31] oh, look,
+[99:34] we derived an input voltage today,
+[99:37] we derived it,
+[99:42] for whom,
+[99:44] when both the transistors go into saturation,
+[99:50] right,
+[99:51] before this, your PMOS will be in the linear region,
+[99:54] and after this, NMOS will be in the linear region,
+[100:03] so less than this,
+[100:08] PMOS is linear,
+[100:15] and if you put more voltage than this,
+[100:17] then NMOS is linear,
+[100:24] so what will be the condition of PMOS is linear,
+[100:27] when everything is identical,
+[100:29] then the condition will be this,
+[100:33] on identical transistors,
+[100:37] okay,
+[100:40] V in less than VDD by 2,
+[100:43] that is 2.5 volts,
+[100:47] okay,
+[100:48] done,
+[100:49] very good,
+[100:51] less than 2.5,
+[100:53] the answer you are giving,
+[100:55] less than 4,
+[100:56] between 2.5 and 4,
+[100:58] PMOS goes into saturation,
+[101:00] from 2.5 to 4,
+[101:02] PMOS stays in saturation,
+[101:04] but if you talk about linear,
+[101:07] look at the next one,
+[101:09] 2 identical NMOS transistors,
+[101:11] these are both NMOS,
+[101:13] and they are connected as shown in the figure,
+[101:17] V,
+[101:18] tell me,
+[101:19] if two transistors look like this,
+[101:20] then what will happen?
+[101:23] this is the cascode connection,
+[101:26] pay attention to it,
+[101:28] this is the cascode,
+[101:32] yesterday it was derived,
+[101:34] what is the trans conductance,
+[101:36] tell me,
+[101:40] what is the trans conductance,
+[101:43] tell me,
+[101:44] what is the trans conductance,
+[101:47] what is the trans conductor,
+[101:49] Do you know how many trans conductance are there?
+[101:52] Akash, please cover the lectures quickly.
+[101:55] If it is private, then the course will be incomplete.
+[101:58] GM of M1.
+[102:02] Okay?
+[102:02] Let's see the next one.
+[102:04] Look, let's show PMOS a lot of times with a bubble.
+[102:08] To show PMOS, let's put a bubble and the bubble remains missing on NMOS.
+[102:13] So this is also a representation.
+[102:15] It is mostly used in digital.
+[102:19] I am asking,
+[102:22] has VDD by 2 voltage been applied?
+[102:25] Tell me a little.
+[102:27] It is very easy again.
+[102:29] When VDD by 2, if VDD by 2 is applied, then what is the state of the transistor?
+[102:36] When VDD by 2 is applied, then what is the state of the transistor?
+[102:41] Akash, most probably till the end of this month.
+[102:45] Both are in saturation.
+[102:47] Tell me the current.
+[102:52] It seems easy.
+[102:53] Tell me the question of CMOS.
+[102:55] The first question I asked was the best question.
+[102:58] It came in the gate.
+[103:00] So now you can determine the full PYQ of MOSFET.
+[103:04] Full PYQ.
+[103:06] So how much is VGS of NMOS?
+[103:11] 2.5.
+[103:16] 2.5.
+[103:30] 4.0.
+[103:36] So 90 micro mpa is coming, right?
+[103:40] Tell me.
+[103:42] Micro is coming, right?
+[103:44] It has given a voltage square on micro mpa, right?
+[103:50] So, one last question.
+[103:52] NMOS circuit has given a specification.
+[103:55] VDS and RD.
+[103:56] I think we have done this.
+[104:07] Still do it.
+[104:12] 1.5.
+[104:19] This is a simple question of NMOS.
+[104:21] There is no CMOS or any new concept in it.
+[104:42] 1.5.
+[104:50] Akash, son, doesn't get attendance in the live class.
+[104:53] You see, attendance is helpless.
+[104:57] Look, this MOSFET will be in your saturation.
+[105:00] This is for sure.
+[105:02] Here the ID has given 0.5.
+[105:06] Mu and Cu x W by 2 L.
+[105:10] So here 2.
+[105:12] VGS minus VT whole square.
+[105:19] So this will be 0.1.
+[105:24] This will be 10, right?
+[105:26] 4.162.
+[105:28] I have done this.
+[105:30] And this will be equal to VDS because it is saturation, right?
+[105:34] So if you take out RD here,
+[105:38] 10 minus VDS by I.
+[105:44] Okay, 5.84.
+[105:47] So 11.68 kilo ohms.
+[105:52] Okay?
+[105:54] Come on.
+[105:55] Look at this.
+[105:57] This is a NMOS-PMOS transistor.
+[105:59] This will be 1 million.
+[106:00] Don't think it's mega.
+[106:03] VT lambda node voltages.
+[106:05] V in 0 is 2.5 and minus 2.5.
+[106:09] Now you will do it according to me.
+[106:11] When this is 0, this is the midpoint of both the supplies.
+[106:14] Okay?
+[106:15] This is the midpoint of both the supplies.
+[106:17] Both the transistors will be in saturation.
+[106:20] This is the midpoint.
+[106:23] So both the saturation.
+[106:29] Okay?
+[106:30] When V in 2.5,
+[106:32] the first PMOS
+[106:34] will be 0 across the gate-to-source voltage.
+[106:38] So this is cutoff.
+[106:40] And NMOS will come in linear.
+[106:43] When V in minus 2.5,
+[106:45] that is, it will be at a minimum value.
+[106:48] So PMOS will be in linear.
+[106:50] NMOS will be in cutoff.
+[106:52] Okay?
+[106:53] You know the region, right?
+[106:55] It used to be 5 and 0.
+[106:57] What did it do this time?
+[106:58] 2.5 and minus 2.5.
+[107:00] Okay?
+[107:04] Dear, it won't be digital now, Aakash.
+[107:06] It's not even possible because there is a gate exam in FAP.
+[107:09] Now it will be a crash course.
+[107:11] Okay?
+[107:13] Now look, this is the link where you can do special classes.
+[107:18] So from here, you can make a PYQ of MOSFET.
+[107:21] I have asked you the questions of CMOS for EC children.
+[107:25] So here it will be in gate PYQ by AIR-1.
+[107:28] And the children who want to come to the academy,
+[107:30] they can choose among plus and iconic.
+[107:33] You get top teachers in two months.
+[107:35] You get test series on the entire study material app.
+[107:38] It is custom doubt-solving for the children of Iconic.
+[107:41] Where their new doubt is answered in the form of video solution.
+[107:46] Printed notes are sent at home.
+[107:49] There is one-to-one mentorship.
+[107:51] They make a strategy and study plan.
+[107:53] And open house sessions are interactive.
+[107:57] And what you have to do is,
+[107:59] you have to decide the duration of the plan on the academy app.
+[108:03] And apply the code on the time of payment to get maximum discount.
+[108:08] Okay?
+[108:09] And this Sunday, we are also making a combat.
+[108:12] It is a 60-minute test of 20 questions.
+[108:14] If you give it, you can win the scholarship up to 90%.
+[108:19] And if you keep the scholarship aside,
+[108:22] the questions of this test,
+[108:24] they are very very relevant to the gate exam.
+[108:26] And you get to compete in real time at all India level.
+[108:30] So you don't have to lose this opportunity.
+[108:32] You have to compete at all India level.
+[108:34] You have to show your talent.
+[108:36] And you have to get into combat.
+[108:38] Okay?
+[108:39] And we have launched a 15-month subscription.
+[108:42] For the children of gate 24.
+[108:44] So they are being given extra one month
+[108:47] so that the gate 24 is also covered in their subscription.
+[108:51] So if you want, you can join Unacademy using code ANKET ESE.
+[108:55] And if you see the results,
+[108:57] we have produced the results.
+[108:59] We have taken out 6 anchors in the top 10.
+[109:02] You can also be one of them.
+[109:04] What do you have to do?
+[109:06] You have to become a part of Unacademy
+[109:08] and prepare under my personal guidance.
+[109:11] And there is a financial issue.
+[109:13] You can go for EMI.
+[109:15] This EMI is approved in just 2 hours.
+[109:17] It is at least paperwork.
+[109:19] And you can repay it in a flexible amount of time.
+[109:22] So here in your family,
+[109:24] give a basic card or a pen card of any person
+[109:27] whose salary comes because they get EMI early.
+[109:31] Crash course, son.
+[109:32] I will start after this analogue is over.
+[109:34] Look at this.
+[109:35] We have started the Brahmastra Plus batch.
+[109:37] For the 2023 gate.
+[109:39] On Unacademy.
+[109:41] There is a daily doubt solution here.
+[109:44] There is daily practice.
+[109:46] There are some exclusive classes here.
+[109:48] There is study material, son.
+[109:50] You are getting notes on the app.
+[109:52] There are test series.
+[109:53] Gate Academy, Paramount.
+[109:54] Gate Academy, Workbook.
+[109:55] Gate Academy, PYQ.
+[109:57] You are getting all these things.
+[109:59] And for the 24 students,
+[110:01] there is an analogue and maths class.
+[110:03] In which Dhande Sir and Guru Pal Sir are taking classes.
+[110:07] So you can start the preparation of 24 with us.
+[110:10] You can check the website of the bank.
+[110:12] gate.unacademy.com
+[110:14] Yes, son.
+[110:15] The op-amp will start tomorrow.
+[110:17] And for the 24 aspirants of EC,
+[110:19] there is an analogue and maths going on.
+[110:21] The 23 students don't have to take long subscriptions.
+[110:24] So they can take 4 month subscription.
+[110:26] You can apply code here, son.
+[110:28] Ankit ESE to come under my personal guidance.
+[110:31] And this is our telegram channel
+[110:33] where you get all the information.
+[110:35] And apart from this,
+[110:37] if you want the PDF of this session,
+[110:40] then go to the academy app on the homepage.
+[110:43] Go to the community.
+[110:44] You will get all the PDFs after going to the discover.
+[110:48] Download it quickly.
+[110:50] So thank you, everyone.
+[110:51] Thanks a lot, kids.
+[110:52] Now we will meet tomorrow.
+[110:54] A new start will start from tomorrow.
+[110:55] We will start the op-amp.
+[110:57] Your most awaited topic will start from tomorrow.
+[111:00] So you are PYQ Nipthalo,
+[111:02] the op-amp of the diode BJT MOSFET.
+[111:04] It is not such a big chapter.
+[111:06] It will be much faster than the competition between the diode and BJT.
+[111:10] So see you tomorrow at 11.30.
+[111:12] Let's crack it.

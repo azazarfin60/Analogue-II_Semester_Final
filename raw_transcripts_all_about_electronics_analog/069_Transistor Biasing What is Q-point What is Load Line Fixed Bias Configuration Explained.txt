@@ -1,0 +1,180 @@
+Title: Transistor Biasing: What is Q-point? What is Load Line? Fixed Bias Configuration Explained
+URL: https://www.youtube.com/watch?v=5T84Jzcgj7M
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:17] So in this video, we will learn about the basics of the transistor biasing and we will
+[00:22] also learn the different terminologies like Q point and the load line in the context
+[00:27] of the transistor biasing.
+[00:30] So first of all, let us understand what is biasing and why we need to buy a transistor.
+[00:37] Now as you are aware, one of the most common application of the BJT is to use it as an
+[00:42] amplifier.
+[00:43] Where if we apply the time varying signal as an input, then it amplifies the input signal.
+[00:50] But this BJT would amplify the input signal until we apply the DC power supply.
+[00:57] And in fact, the energy supplied by this DC supply is used to amplify the input signal.
+[01:04] So the process of applying this DC voltage source to the BJT is known as the biasing.
+[01:10] And if you have followed the previous videos, we have seen that the common emitter configuration
+[01:15] of the BJT is frequently used for the signal amplification.
+[01:19] So for understanding the transistor biasing, we will use the common emitter configuration.
+[01:25] Now whenever the BJT is used as an amplifier, then it is biased in such a way that base emitter
+[01:31] junction gets fault biased and the collector base junction gets reversed biased.
+[01:37] And once we apply the DC voltage sources to the BJT, then the current and the voltage
+[01:41] bill establish in the circuit.
+[01:44] And as we are seeing in the previous video, this voltage VBE and the IB are the parameters
+[01:50] on the input side, while this voltage VCE and IC are the parameters of the output side.
+[01:57] And after biasing the BJT in the active region, if we apply the sine wave as an input,
+[02:03] then we should get the amplified signal at the output.
+[02:07] But whether we will get the proper amplified output or not, that depends on how well
+[02:12] the BJT is biased in the active region.
+[02:15] So let us understand it through the output characteristics.
+[02:19] So let us say the BJT is biased in such a way that the VCE is equal to 5V and the collector
+[02:26] current IC is equal to 10 milliampere.
+[02:31] And this point on this collector curve is known as the operating point or the Q point
+[02:35] of the BJT.
+[02:37] And the reason it is known as the operating point, because it tells us the operating voltage
+[02:42] and the current of the Q and transistor.
+[02:45] So this particular operating point tells us that the transistor is biased in such a way
+[02:50] that the base current IB is equal to 30 microampere and the voltage VCE and the IC are 5V and
+[02:57] the 10 milliampere respectively.
+[03:00] So basically this point on the collector curve tells us the operating condition of the transistor.
+[03:07] Now as I said earlier, the operating point should be in the active region.
+[03:12] But in the active region it could be set anywhere.
+[03:16] So this point could be in the center or it could be over here or maybe it could be over here
+[03:21] also.
+[03:24] So whenever the operating point is over here and on top of it whenever we apply the AC signal,
+[03:30] then some portion of the amplified signal will get clipped.
+[03:34] Because as you can see this voltage VCE cannot go below zero volt.
+[03:39] Similarly whenever it is operated at this point then also some portion of the current will
+[03:45] get clipped.
+[03:47] Because the collector current can't go below zero ampere and due to that some portion
+[03:53] of this voltage VCE will also get clipped.
+[03:56] That means whenever the operating point is near saturation or the cutoff region then
+[04:02] it may lead to the non-linear distortion in the output waveform.
+[04:06] Also if you notice over here when the BJT is operating in this region then it is operating
+[04:11] near the breakdown region and the operation of the BJT in this region should be avoided.
+[04:18] On the other end when the operating point is in the center of the collector curve then
+[04:23] it is possible to amplify the input signal without any kind of distortion.
+[04:28] And also in this region the gain of the BJT is also almost constant.
+[04:33] That means for the small signal amplification the biasing point or the operating point should
+[04:39] be in the center region of the collector curve.
+[04:43] Now another important aspect of the biasing is the stability of the operating point.
+[04:49] Because with temperature the operating point may get changed.
+[04:53] Because with temperature the device parameters like the transistor current gain and the reverse
+[04:58] saturation current will get changed.
+[05:01] So the designed biasing circuit should provide the temperature stability such that even
+[05:06] if there is a change in the temperature then there is a minimum change in this operating
+[05:10] point.
+[05:12] And the stability of the operating point is defined by the term stability factor which indicates
+[05:19] the change in the operating point with the change in the temperature.
+[05:23] So in this video as well as in the upcoming videos we will see the different biasing techniques
+[05:28] for the BJT and we will compare the stability of the different biasing configurations.
+[05:35] So first of all let us start with the very simple fixed biasing configuration.
+[05:41] So this is the circuit of the fixed biasing configuration or if I read out the same circuit
+[05:47] then it can be read around like this.
+[05:50] So as you can see over here the AC input signal is applied between the base and the emitter
+[05:55] terminal while the output is taken across this collector and the emitter terminal.
+[06:01] Now here as we are interested in the DC analysis of the circuit so we can replace all the capacitors
+[06:07] with the open circuit and then after if you see the equivalent circuit then it will look
+[06:13] like this.
+[06:15] Now the reason it is known as the fixed biasing configuration because for the given power
+[06:20] supplies if we fix the value of this base resistor then this base current IB will get fixed
+[06:26] and here if we mark the voltages then this voltage VBE is the voltage on the input side
+[06:33] while the voltage VCE is the voltage on the output side.
+[06:37] So first of all now let us find the expression for this base current IBE.
+[06:43] So if you notice over here the voltage at this node is equal to VBE.
+[06:49] So from this we can say that this base current IBE is equal to this voltage VBE minus VBE
+[06:58] divided by RB.
+[07:02] Now here the typical value of VBE is equal to 0.7 volt.
+[07:08] So for the given supply voltage once we set the value of RB then this base current IBE
+[07:13] will get fixed and once we know the value of this base current then we can find the value
+[07:19] of this collector current and the voltage VCE.
+[07:23] Now we know that this collector current ICE can be given as beta times IBE.
+[07:30] So from the base current IBE we can find the value of this collector current.
+[07:35] Now if we apply the KVL in this output side then we can write the expression as VCC minus
+[07:42] voltage across this resistor RC.
+[07:45] Let's say that is equal to minus VRC minus VCE that is equal to 0 or from this we can
+[07:54] say that this voltage VCE is equal to VCC minus VRC that is equal to VCC minus IC times RC.
+[08:09] So in this way we can also get the value of the VCE.
+[08:13] So here this voltage VCE and the collector current IC defies the operating point of the
+[08:19] transistor.
+[08:21] Now from the equations if you observe if the value of RB or RC changes or the value of VCC
+[08:27] changes then the operating point will also change.
+[08:31] So now let us find out how this network parameters defines the possible values of the
+[08:37] operating point.
+[08:39] Now from this expression we can write this collector current IC is equal to voltage VCC
+[08:46] minus VCE divided by RC.
+[08:51] So this collector current IC will be maximum whenever this voltage VCE is equal to 0.
+[08:57] That means the maximum value of the collector current will be equal to voltage VCC divided
+[09:02] by RC.
+[09:04] That means this collector current will be maximum whenever the voltage VCE is equal to 0.
+[09:11] Similarly whenever this collector current IC is 0 at that time the value of VCE will be
+[09:17] maximum.
+[09:18] So we can say that voltage VCE max is equal to VCC.
+[09:24] So from this graph we can say that whenever the collector current IC is 0 at that time the
+[09:30] value of VCE is maximum.
+[09:33] So if we join these two points then we will get the possible values of the operating point
+[09:38] for the given values of VCC and the RC.
+[09:42] So this line is also known as the load line because it is defined by the value of this
+[09:47] resistor RC.
+[09:50] Now here if the value of IB is changed by varying this RB then the Q point will also change.
+[09:57] So for the given value of VCC and RC if the value of IB is increased then the Q point
+[10:02] will also move upwards.
+[10:05] Similarly by keeping the VCC fixed if we change the value of RC then the load line will
+[10:10] also change.
+[10:12] So here three different load lines are shown for the different values of the RC.
+[10:18] And as you can see for the fixed value of the base current if the load line changes then
+[10:24] the operating point will also shift towards the left hand side.
+[10:28] And similarly by keeping the value of RC fixed if we change the value of VCC then the load
+[10:34] line will look like this.
+[10:37] So here the different load lines are shown for the different values of VCC.
+[10:42] But let's say for the given value of VCC and RC we are getting this load line.
+[10:48] And the operating point is also set over here.
+[10:52] Now as I said earlier as the temperature changes then the operating point will also change
+[10:58] because with temperature the value of beta or the current gain of the transistor will
+[11:02] also change.
+[11:03] Or in case if we replace the transistor then also the value of beta will change because
+[11:10] if you take the similar transistors then also they have the different values of beta.
+[11:15] So now let us take one simple example and let us understand how the variation in this
+[11:20] beta can affect the operating point.
+[11:24] So let's say for a one transistor the nominal value of the beta is equal to 100.
+[11:30] And due to the change in the temperature or due to the replacement of the transistor this
+[11:34] beta varies from 50 to 200.
+[11:40] And assuming this voltage VBE is not changing with the temperature this base current IB is
+[11:45] set to 30 micro ampere.
+[11:48] Now here let's say the value of RC is equal to 1.5 kilo ohm and the value of VCC is equal
+[11:54] to 10 volt.
+[11:57] So whenever the beta is equal to 100 at the time this collector current IC will be equal
+[12:02] to 100 times 30 micro ampere that is equal to 3 milli ampere.
+[12:09] And for that if you calculate the value of VCE then it will be equal to 10 volt minus
+[12:16] 1.5 times 3 milli ampere that is equal to 5.5 volt.
+[12:23] So at that time the operating point would be over here that VCE is equal to 5.5 volt and
+[12:29] that collector current IC is equal to 3 milli ampere.
+[12:34] Now let's say we have replaced the transistor and due to that now the new value of the beta
+[12:39] is equal to 50.
+[12:42] So in that case this collector current IC will be equal to 50 times 30 micro ampere that
+[12:49] is equal to 1.5 milli ampere.
+[12:53] And at that time if you calculate the value of VCE then it will be equal to 10 volt minus
+[12:59] 1.5 times 1.5 milli ampere that is equal to 7.75 volt.
+[13:07] That means whenever the value of beta becomes 50 at that time the operating point would
+[13:12] be somewhere around here because at that time the value of VCE is equal to 7.75 volt and
+[13:19] the value of IC is equal to 1.5 milli ampere.
+[13:25] And similarly that is also see whenever the beta becomes 200.
+[13:30] So at that time the collector current IC will be equal to 200 times 3rd micro ampere that
+[13:37] is equal to 6 milli ampere.
+[13:40] And at that time the value of VCE will be equal to 10 volt minus 1.5 times 6 milli ampere
+[13:48] that is equal to 1 volt.
+[13:51] So at that time the operating point would be somewhere around here because at that time this
+[13:57] collector current IC is equal to 6 milli ampere and the voltage VCE is equal to 1 volt.
+[14:07] So this shows the maximum possible change in the operating point due to the change in
+[14:12] the temperature or due to the change in the transistor.
+[14:16] That means in this fixed bias configuration even if you set the fixed value of the base
+[14:21] current then also the operating point may vary due to the change in the external parameters.
+[14:27] And in the upcoming videos we will see some other biasing configurations which can provide
+[14:32] a relatively stable operating point.
+[14:35] And also we will solve some examples on this fixed bias configuration on our second channel.
+[14:42] So I hope in this video you understood the basics of the transistor biasing as well as
+[14:46] the fixed bias configuration.
+[14:49] So if you have any question or suggestion do let me know here in the comment section
+[14:53] below.
+[14:54] If you like this video hit the like button and subscribe to the channel for more such
+[14:58] videos.

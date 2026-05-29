@@ -1,0 +1,70 @@
+Title: Quiz # 192 (BJT- Voltage Divider Bias)
+URL: https://www.youtube.com/watch?v=gpD6ogEWjRU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:16] So in this circuit, we have been asked to find the collector current IC and the voltage
+[00:21] VCE.
+[00:23] Now the first thing, if you notice over here, this transistor is the PNP transistor because
+[00:28] over here, this arrow is going inwards.
+[00:32] That means here, this terminal is the emitter terminal while these two terminals are
+[00:36] based on the collector terminals.
+[00:39] And here, this transistor is biased in the voltage divider biasing configuration.
+[00:45] So first of all, let us find the Thavenance equivalent of the given portion.
+[00:50] And to find the Thavenance equivalent circuit, if we read of the same circuit, then it can
+[00:55] be written like this.
+[00:58] So for the given circuit, the Thavenance equivalent resistance that is RTH is equal to 2.2
+[01:05] kilo ohm in parallel with 10 kilo ohm.
+[01:10] That is equal to 2.2 into 10 kilo ohm divided by 2.2 plus 10 kilo ohm.
+[01:18] That is equal to 1.8 kilo ohm.
+[01:22] And similarly, see find the Thavenance equivalent voltage over here, then VTH can be given as
+[01:28] 10 kilo ohm divided by 10 kilo ohm plus 2.2 kilo ohm times 10 volt.
+[01:36] That is equal to 8.2 volt.
+[01:42] Now we had seen that for this voltage divider biasing configuration, if this Thavenance
+[01:47] equivalent resistance is much less than VTH plus 1 times the emitter resistance, in that case,
+[01:54] we can use the approximate analysis.
+[01:57] Now over here, this resistor is the emitter resistor, while this resistor is the collector
+[02:03] resistor.
+[02:05] And here we have been given that the value of beta is equal to 100.
+[02:11] That means over here, the value of beta plus 1 times R E is equal to 101 times 1 kilo ohm.
+[02:18] That is equal to 101 kilo ohm.
+[02:22] And as it is much higher than this Thavenance equivalent resistance, so we can use the
+[02:26] approximate analysis.
+[02:28] So in this approximate analysis, what we can do?
+[02:31] We can apply the voltage divider rule for these resistors and we can find the voltage
+[02:36] at this node.
+[02:38] And while finding the voltage, we can neglect the remaining circuitry.
+[02:42] So considering this, under this approximate analysis, if you see the equivalent circuit,
+[02:47] then it will look like this.
+[02:49] And as we have calculated, this Thavenance equivalent voltage or the base voltage VV is equal
+[02:55] to 8.2 volt.
+[02:57] Now in this circuitry, this emitter base tension is power bias, right?
+[03:02] That means voltage VEB is equal to 0.7 volt.
+[03:06] Or we can say that voltage VE minus VB is equal to 0.7 volt.
+[03:12] That means the voltage VE is equal to VB plus 0.7 volt.
+[03:18] Or we can say that the voltage at this node is equal to 8.2 volt plus 0.7 volt.
+[03:26] That is equal to 8.9 volt.
+[03:30] And once we know the value of this emitter voltage, then we can easily find this emitter
+[03:35] current.
+[03:37] So this emitter current I can be given as 10 volt minus VE divided by 1 kilo ohm.
+[03:46] That is equal to 10 volt minus 8.9 volt divided by 1 kilo ohm.
+[03:53] And if we calculate the value, then this emitter current I is equal to 1.1 milliampere.
+[04:00] And here we are assuming that this collector current Ic is approximately equal to emitter
+[04:06] current.
+[04:07] That means the same current is also flowing through this resistor.
+[04:12] That means we can say that this collector current Ic is also equal to 1.1 milliampere.
+[04:18] So once we know the value of this collector current, then we can easily find the voltage
+[04:22] across this 3.6 kilo ohm resistor.
+[04:25] And in fact, that voltage is equal to VC.
+[04:29] So you can say that this collector voltage VC is equal to 3.6 kilo ohm resistor times
+[04:35] 1.1 milliampere.
+[04:38] That is equal to 3.96 volt.
+[04:43] So in this way, we got the value of the collector voltage.
+[04:47] And we already know that this emitter voltage VE is equal to 8.9 volt.
+[04:52] That means VE is equal to 8.9 volt.
+[04:56] So from this, we can calculate the value of VC.
+[05:00] That means VC is equal to voltage VC minus VE.
+[05:05] That is equal to 3.96 volt minus 8.9 volt.
+[05:11] That means VC is equal to minus 4.94 volt.
+[05:20] So in this way, using this approximate analysis, we got the value of this collector current
+[05:24] IC has 1.1 milliampere while the voltage VCE is equal to minus 4.94 volt.

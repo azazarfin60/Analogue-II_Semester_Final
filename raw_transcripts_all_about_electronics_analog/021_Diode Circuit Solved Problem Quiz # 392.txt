@@ -1,0 +1,181 @@
+Title: Diode Circuit Solved Problem | Quiz # 392
+URL: https://www.youtube.com/watch?v=CPGxFlmt0Ys
+Source: YouTube Subtitles
+
+[00:06] hey friends welcome to the youtube
+[00:08] channel all about electronics
+[00:10] so in this question we have been given
+[00:12] this diode circuit
+[00:14] and we have been also given the
+[00:15] characteristic of this diode
+[00:17] so here we have been asked to find the
+[00:19] ratio of this minimum to maximum small
+[00:22] signal voltage gain
+[00:23] so first of all let us understand the
+[00:26] question
+[00:27] so in this circuit we have been already
+[00:29] given the characteristic of this diode
+[00:32] so if you see the characteristic then
+[00:34] this diode will act as open circuit
+[00:36] until the voltage across it is equal to
+[00:38] 0.7 volt
+[00:40] and after that it will act as a voltage
+[00:42] source of 0.7 volt
+[00:44] now in this circuit the input could
+[00:47] contain the two dumps that is the dc
+[00:49] term and the ac term where the ac term
+[00:52] is the small signal term so we can say
+[00:54] that
+[00:55] this input is equal to
+[00:57] v dc plus v signal
+[01:00] and based on this input we will get the
+[01:03] output
+[01:04] so this v signal is the small signal
+[01:06] input and typically its input range will
+[01:09] be in the millivolt
+[01:11] while this vdc will decide whether this
+[01:13] diode is conducting or not
+[01:16] so based on that we will have two
+[01:18] scenarios
+[01:19] the first case is when this diode is in
+[01:22] the of condition
+[01:23] so in that condition let us find the
+[01:26] output voltage of this circuit
+[01:28] so when this voltage across the diode is
+[01:30] less than 0.7 volt then this diode will
+[01:33] act as a open circuit
+[01:35] so in this condition this v out is
+[01:37] actually the voltage between this node
+[01:39] and this node
+[01:41] for effectively it is the voltage across
+[01:43] these two resistors
+[01:45] so we can say that when the diode is in
+[01:48] the off condition
+[01:49] then this v out is equal to
+[01:51] this 2 plus 2 kilo ohm or four kilo ohm
+[01:55] divided by
+[01:57] four kilo ohm plus
+[01:58] two kilo ohm times mean
+[02:01] where this two kilo ohm is this resistor
+[02:05] that means in this condition this v out
+[02:07] is equal to 4 divided by 6 times v in
+[02:11] or we can say that it is equal to 2 by 3
+[02:14] times v in
+[02:16] now here as i said this vin is equal to
+[02:19] this v dc plus vsignal
+[02:24] that means if you see the output then it
+[02:26] will contain two terms
+[02:28] that means v out will have one term that
+[02:31] is v out dc and the second term is small
+[02:35] v out that is the small signal component
+[02:38] so in this case this v out dc is equal
+[02:41] to
+[02:42] 2 by 3 times v dc
+[02:44] while this small signal component is
+[02:47] equal to 2 by 3 times v where this v in
+[02:51] is our small signal input
+[02:53] so if you differentiate this output with
+[02:54] respect to v in
+[02:56] then this d v out divided by dvn
+[03:00] is equal to 2 by 3
+[03:02] because this term is the static term
+[03:04] so this is the small signal gain when
+[03:06] this diode is in the off condition
+[03:09] similarly let us find the small signal
+[03:11] gain when the diode is conducting
+[03:14] so the second case is when this dc term
+[03:17] of the input signal is such that this
+[03:19] diode is conducting and in that case the
+[03:22] voltage across the diode will be equal
+[03:24] to 0.7 volt
+[03:26] so in this condition let us find the
+[03:29] ratio of this v out and v in
+[03:31] so let's say the input current is equal
+[03:34] to i
+[03:36] and the same current will also come out
+[03:38] from this end that means this current is
+[03:41] also equal to i or in other words the
+[03:44] current through this 2 kilo ohm resistor
+[03:46] is also equal to i
+[03:48] so now if we apply the kvl in this loop
+[03:52] then we can write
+[03:53] this v out is equal to
+[03:56] this 0.7 volt plus
+[03:58] 2 kilo ohm times i
+[04:01] so that is our one equation
+[04:04] similarly we can also write the cable
+[04:06] equation for
+[04:07] this loop
+[04:09] so if we write the cable equation and it
+[04:12] is equal to these vin is equal to 2 kilo
+[04:15] ohm times i that is the voltage drop
+[04:18] across this 2 kilo ohm resistor
+[04:20] plus
+[04:21] 0.7 volt that is this voltage
+[04:24] plus 2 kilo ohm times i
+[04:27] that is this voltage
+[04:29] that means
+[04:30] vin is equal to
+[04:32] these 0.7 plus
+[04:35] 4i
+[04:36] and this is our second equation
+[04:39] so from the second equation we can say
+[04:41] that
+[04:42] this current i
+[04:43] is equal to v in minus
+[04:46] 0.7 divided by
+[04:47] 4
+[04:48] so let us put the value of current i in
+[04:50] the first equation
+[04:52] that means v out is equal to
+[04:55] 0.7 plus
+[04:57] 2 times
+[04:58] these we in minus
+[05:00] 0.7 divided by 4
+[05:03] so that is equal to
+[05:05] 0.7 plus
+[05:08] in divided by 2 minus
+[05:11] 0.7 divided by 2
+[05:13] that means v out is equal to
+[05:15] this 0.35
+[05:17] plus v in divided by 2.
+[05:20] so once again as i said
+[05:22] this input will have two terms
+[05:24] that is the dc term and the small signal
+[05:27] term
+[05:28] that means this v out will be equal to
+[05:30] 0.35
+[05:31] plus 1 by 2 times
+[05:34] this v dc plus v signal
+[05:37] but here we are only interested in this
+[05:40] small signal term
+[05:41] so if we differentiate this output with
+[05:43] respect to the small signal term
+[05:46] then this d v out divided by dvn
+[05:49] will come out as 1 by 2
+[05:52] because this will become 0 as well as
+[05:54] this dc term will also become 0 because
+[05:58] this term is the static term so the only
+[06:00] thing which will remain is this 1 by 2
+[06:03] that means whenever this diode is in the
+[06:05] on condition then the small signal
+[06:07] voltage gain is equal to 1 by 2.
+[06:11] so in this way we got 2 ratios so this
+[06:14] is the minimum ratio
+[06:16] while the maximum ratio is
+[06:19] 2 by 3
+[06:22] so if you see the ratio of the minimum
+[06:24] to maximum small signal voltage gain
+[06:26] then this minimum divided by maximum
+[06:29] is equal to
+[06:30] this 1 by 2 divided by 2 by 3 and that
+[06:34] is equal to
+[06:35] this 1 by 2
+[06:37] times
+[06:38] 3 by 2
+[06:39] that is equal to 3 by 4
+[06:42] and it will come out as 0.75
+[06:46] that means for the given diode circuit
+[06:48] the ratio of the minimum to maximum
+[06:49] small signal voltage gain is equal to
+[06:53] 0.75

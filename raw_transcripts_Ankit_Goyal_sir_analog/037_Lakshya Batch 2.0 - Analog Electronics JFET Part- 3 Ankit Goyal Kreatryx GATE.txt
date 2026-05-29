@@ -1,0 +1,850 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | JFET | Part- 3 | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=ppcCixZid-o
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome back to the Creatrix
+[00:11] YouTube channel my dear friends we are live again in Lakshay batch 2.0 Analog Electronics
+[00:17] so this is your last session of JFET we will wind up JFET after which we will be starting
+[00:26] with MOSFET ok so MOSFET is a topic which you can see in today's date so IITs like it a lot
+[00:33] a lot of exams are being asked so we will do MOSFET from basic to advanced but before that
+[00:40] today we will do JFET in a great way in JFET we have one amplifier left in multi stage amplifier
+[00:48] left and there is a frequency response left there are small topics BJT is not as vast as it is
+[00:53] so we will wind up these things quickly ok but before that I will start my dear one thing
+[00:59] is going on right now on academy subscription 20% discount so you can avail this 20% discount
+[01:07] simply by using the code Ankith ESE ok Ankith ESE code you can avail this discount you
+[01:15] can take any subscription on every subscription you are going to get 20% off and if you go for
+[01:22] advanced learning i.e. in which you are going to get test series and study material then you will get 20%
+[01:29] on that too if you use the code Ankith ESE if you use the code Ankith ESE ok so you will get 20%
+[01:40] off on this too ok so let's start bro start everyone is ready we will like once before
+[01:48] the class starts so that we know how many children are watching this session ok so let's start
+[02:05] sometimes our remote gets washed away so today the first amplifier the first amplifier we are
+[02:17] seeing common drain amplifier which we know by the name of source follower source follower
+[02:26] by the name of common drain amplifier so what happens in common drain amplifier input
+[02:33] is connected to your gate terminal you see the output source terminal and the drain terminal
+[02:39] is directly connected to your supply now if we have to do its AC analysis dear then we have to make
+[02:47] an AC model then we start making an AC model ok you will see the open circuit between the gate and
+[02:54] source you will see the open circuit here you will write gmvgs
+[03:10] then son you will see another resistance between the drain and the source that is rd
+[03:17] ok here this is vgs
+[03:28] this is the gate drain source ok now you will see on the gate son there is a resistance on the gate
+[03:38] rg to the ground there is a resistance on the gate rg to the ground
+[03:52] there is an input on the gate to the ground sorry vi here there is a resistance on the source
+[04:03] rs to the ground
+[04:10] rs we are deriving v0 and this drain terminal will be grounded as soon as you ground vdd
+[04:21] as soon as you ground vdd then this drain terminal will be your ground it is clear
+[04:28] model is clear tell everyone quickly model is clear tell everyone model is clear now
+[04:41] here see rs and rd this terminal is connected and this one is also connected so these two are parallel
+[04:49] rs and rd are parallel you can see see two terminals are common one terminal
+[04:57] and this is the second terminal these two terminals when they are common both are in parallel
+[05:02] mosfet will start from the purse ok so now what do we do
+[05:09] we make another circuit we do
+[05:18] so
+[05:24] see i have brought rs and rd parallel
+[05:49] okay
+[05:59] rg and this vi okay this rs this rd now see v0 is very simple
+[06:10] v0 what is your gm vgs rs parallel rd gm vgs rs parallel rd this is okay amit child on this
+[06:30] i have talked yesterday in the session now you will talk about one thing every day that is also
+[06:34] not possible to talk about one thing now input voltage vgs plus v0 if you put kvl
+[06:46] so if you put the value of v0 1 plus gm
+[06:53] rs parallel rd now if you want voltage gain
+[07:06] if you want voltage gain v0 upon vi
+[07:13] gm
+[07:22] rs parallel rd
+[07:28] see so this is your gain you remember near to unity like the common
+[07:35] collector amplifier or ammeter follower used to come there so there was a gain approximately one
+[07:42] correct this is approximately one did you remember tell me did you remember
+[07:54] sir i have started jfet leaving the current mirror amplifier after bjt compensation
+[08:00] my child you left your important topic ramesh current mirror important voltage regulator
+[08:07] important amplifier important you are doing jfet leaving all that which is not even in the syllabus of the gate
+[08:13] this is a little tricky strategy okay so this ammeter follower is like a source follower
+[08:20] source and ammeter is the same thing now you will tell me this inside it input impedance
+[08:27] input impedance will be removed brother come on input impedance will be removed tell me
+[08:33] how much will it come come on everybody input impedance or input resistance tell me what will be rg
+[08:43] very good input resistance is rg okay rg okay ammeter is saying sir
+[08:54] play list public don't let it be private see attendance public is sitting 20 children
+[09:00] this will happen then i will leave the analog what will be the benefit of it that it will get mosfet
+[09:04] and the syllabus will ditch keep the public playlist in mine what goes in it
+[09:11] now brother in both the hands you can't get a laddu that the syllabus is also completed
+[09:15] the play list is also public you people don't come to class everything is going well there is no problem
+[09:20] right everything we need in our favor now brother I want output impedance here
+[09:27] output impedance whenever I have told you whenever source or ammeter
+[09:32] you will remove the impedance on the terminal v by i v by i will have to remove it okay v by
+[09:40] i will have to remove it will not write rs parallel id rs parallel id will not write
+[09:49] okay so what was the way it was told dear output impedance what was the way I told
+[09:59] whenever you want to remove the impedance input or output if you remove it on ammeter or source terminal
+[10:06] then v by i will have to go directly not to write so see you have ground the input first
+[10:14] so see this rg resistance is ruined it has ground on both the sides okay
+[10:25] here I will write it directly rs parallel rd
+[10:44] this is vgs
+[10:52] okay now here is v not
+[10:57] i not first of all I put kvl from here so what will happen here minus vgs
+[11:07] minus v not is zero so vgs is minus v not
+[11:14] and the current going in this resistance will be i not plus gm vgs
+[11:27] rs parallel rd
+[11:31] okay vgs is minus v not so if you put minus v not then it will be plus by taking it to the left
+[11:40] it will be plus by taking it to the left dear
+[11:46] now v not by i not which will come
+[11:55] rs parallel rd
+[12:10] this is actually what is being made this is being made one by gm parallel rs parallel rd
+[12:19] okay that is why you guys if you want an output impedance here then you have to remove it
+[12:26] from this type it will not come directly so don't say it directly rs parallel rd okay
+[12:34] okay this thing is clear come on it is very good tell me it is clear
+[12:41] all these amplifiers are covered see like common gate amplifiers in common gate you give input
+[12:48] on which source you give then there is an input impedance like this and such a common drain
+[12:54] amplifier then your output source is coming so if the output is coming on the source then you will
+[12:59] remove the output impedance like this i.e. whenever the input or output terminal source or emitter
+[13:05] will be connected v by i not directly clear now see a lot of times what happens is that we
+[13:14] are given a resistance of supply which is the resistance of the source which is before the
+[13:19] coupling capacitor and yesterday you saw the load resistance in the question which is after the
+[13:26] coupling capacitor so what does it matter on our voltage gain remember in BJT
+[13:35] 3 voltage gain was written AV AVL AVS remember so the first thing
+[13:46] source resistance
+[13:48] is the resistance
+[13:57] connected before
+[14:00] 4 input coupling capacitor okay and load resistance
+[14:17] resistance
+[14:23] resistance this is their identity which resistance load is the resistance connected after
+[14:33] output coupling capacitor now it seems like an amplifier is playing or not it seems like
+[14:40] even today I see so many children ask me that sir should I leave the amplifier
+[14:45] but you tell me amplifier now it seems like a game nothing is there child thing is amplifier
+[14:50] what is tough in it now see we have three types of voltage gain AV is gain ignoring
+[15:01] RS and RL if you ignore both RS and RL
+[15:07] okay AVL
+[15:14] gain considering
+[15:19] RL
+[15:24] AVS
+[15:27] gain considering
+[15:29] and this is the memory I told you that in input resistance never consider RS and
+[15:37] never consider RL in such an output resistance and you also know that
+[15:44] AV less than AVL and the smallest gain is AVS correct this way the gain decreases
+[15:59] now see what I did here with the source signal resistance i.e. input resistance
+[16:06] and this is my load resistance now here if you talk about VGS
+[16:13] if you talk about VGS with me then it will come from the voltage division
+[16:18] VS into RG by RG plus R signal
+[16:31] and if you talk about output voltage then minus gm VGS
+[16:37] RD parallel capital RD parallel RL so if you take out the overall voltage gain
+[16:57] okay so it comes
+[17:07] one is here and one is the term of the voltage division so see RL parallel is coming
+[17:16] and the resistance is decreasing and the voltage division term is also reducing the gain
+[17:22] if you ask AVL what will happen then you let this R signal term go then it will come
+[17:31] do you understand this voltage division term let the source resistance be ignored
+[17:39] and if you ask AVL the source and load both the resistance should be ignored
+[17:44] this will happen
+[17:47] then you ignored the source and load both the resistance
+[17:53] this is how your three gains are made, is it clear or not, tell me, is it clear or not,
+[17:59] it is just one mistake that you have sent by typing, the mistake is that you did not remove VGS
+[18:07] there will be no voltage in the gain,
+[18:12] VGS will have to be removed, it is clear, it is clear, now let's go towards an interesting topic,
+[18:21] the amplifier part is completed, now let's go to the multi stage amplifier cascade configuration
+[18:29] now dear you know that it may be that if there is a cascade configuration, that is, two common source
+[18:36] amplifiers are connected one after the other, like in BJT, who was called a cascade,
+[18:43] common emitter, common emitter, common emitter, common emitter, common emitter, common emitter,
+[18:48] then who will be called a cascade here, common source, common source,
+[18:57] like in BJT, common emitter is the most used type of amplifier, in such JFET and MOSFET,
+[19:06] common source amplifier that is the most commonly used amplifier, so we are saying when
+[19:14] two common source amplifiers
+[19:26] are connected,
+[19:28] are connected one after other then it is called
+[19:46] cascade configuration
+[20:08] okay then we call it cascade configuration in cascade you know that the gain is multiplied
+[20:15] and the interesting thing is dear here if you remove this RG, then there will be no loading effect,
+[20:23] if you remove the RG, then there will be no loading effect because the input of the second transistor
+[20:29] will be open circuit or say that its input impedance will be infinite, now see why did you call
+[20:36] your input impedance RG here because it was RG connected, if I remove this, then here it was open circuit,
+[20:43] you would say sir input impedance is infinite, so what am I saying if RG is not here, then
+[20:53] the input impedance will be infinite which means that there will be no loading effect,
+[21:01] still you say that since RG is high, RG is very high,
+[21:08] input impedance is very high, RG is also in mega ohm, so we can ignore
+[21:19] we can ignore loading effect you remove the loading effect okay
+[21:27] now according to this what will be its gain AV 1 AV 2 AV 1 will be g m 1
+[21:42] r d 1 dot g m 2 r d 2 chamka chamka bhai
+[21:55] yes it will be better aakash but the problem will come in which problem will come in biasing
+[22:00] what will come in biasing when I put the KVL of biasing, if I remove this resistance from here, then the gate
+[22:07] terminal will be open circuit, so the KVL will not be made, do you understand, now I will go from zero to zero
+[22:13] in KVL, if I remove this resistance, then you can't call it zero here, you can't call it zero here,
+[22:19] now what will you say in biasing that the gate current is very small or zero, because of which
+[22:25] no effect of RG will come, what did you get on the gate, the ground came on the gate, the ground came on the gate,
+[22:33] otherwise how will the KVL be made in biasing, how will this VGS come when you solve the biasing,
+[22:38] that is why we put RG otherwise DC analysis will be difficult, but RG is also put in mega ohm,
+[22:46] and the second thing is that the output resistance of this will come in kilo ohm, RG is in mega ohm,
+[22:52] so anyway the effect of loading effect is not made when you will also put the factor of voltage division,
+[22:57] RIN upon RIN plus R naught, so the output resistance is very less than the input,
+[23:03] when the division factor will come, I write it here, so the voltage division factor does not come,
+[23:11] RIN by RIN plus R naught, now here RIN is much much greater than R naught,
+[23:20] so this division factor will be 1, understand, it will be 1, the location here we did self bias,
+[23:29] self bias is better as compared to fixed bias, self bias is much better than fixed bias,
+[23:37] because it needs one source, and if you do voltage divider biasing, then also two resistances
+[23:45] are coming, R1 and R2, then also two resistances would have come, that would have become RG,
+[23:50] while removing the gain, R1 parallel R2 would have become RG, do you understand everyone,
+[23:57] tell me, is all the doubt cleared or not, speak quickly, things should be clear in mind,
+[24:05] if any doubt is coming, why are you doing this, why are you doing this, all the things are logical,
+[24:10] they are not talking in the air, I am not removing the formula, remember, this is how it is,
+[24:16] why should this be known, now see how much knowledge you have gained in BJT,
+[24:22] now come to the frequency response, what do you know, in the frequency response,
+[24:28] which capacitors dominate at low frequency, tell me quickly, which capacitors dominate at low frequency,
+[24:38] tell me quickly, which capacitor has to be supported for low frequency or lower cutoff frequency,
+[24:46] Sai is saying coupling, others say coupling, did you forget bypass, only Saurav has said coupling and
+[24:54] bypass, on low frequency, two types of capacitors have to be considered, coupling and bypass,
+[25:08] at low frequency, coupling and bypass capacitors,
+[25:22] coupling and bypass capacitors are considered,
+[25:26] okay,
+[25:37] now I told you, how do you remove the lower cutoff frequency, three frequencies are removed,
+[25:43] and take the maximum of three, remember, I have made this in BJT, and this was also told,
+[25:52] if the three frequencies are very close, then what do we do, 1.1, remember that 1.1 was told,
+[26:02] now we have to remove 1 by 1, first remove the resistance for C1, and here you will also remember
+[26:08] how to remove 1 by 2 pi R1 C1, 1 by 2 pi R2 C2,
+[26:26] and FL3 1 by 2 pi R3 CS, remember, we remove RC, so I used to say remove the resistance,
+[26:36] first remove the cross of someone, and then you tell, thank you Pavitra, now remove the answer,
+[26:45] quickly remove the answer, you know the procedure ahead, it is a very easy procedure,
+[26:51] you first make a diagram, make an AC model of it, now you are smart people, now in transistors,
+[27:01] you have become absolutely smart people, now look, when you start MOSFET, you will enjoy it more
+[27:08] from day one, you will say, sir, now it is done, one thing, one thing, you are going in every transistor,
+[27:14] okay, you will say this, sir, you are bored, you are doing the same thing again and again,
+[27:20] you have become so good in the transistors, okay, first look, I will make this one of JFET,
+[27:29] right,
+[27:33] for now, I will also show you the Rd, if you need it, remove it,
+[27:40] Rd is lost when you need it,
+[27:50] he says, what is my fault, why do you remove me from the way, now see rscs rscs
+[28:02] what joke did Sahil, why are you so happy,
+[28:20] okay, now here rd, rl, one resistance rda, then c2, then rl,
+[28:27] here r signal rg and vs,
+[28:57] okay,
+[29:09] okay, you understood, this is what is being made,
+[29:16] proposal, my brother does not have a proposal when a child is a student teacher, he says that
+[29:24] he loves the student, okay, he does not have a proposal, he does not see everything in a bad way,
+[29:30] if you say I love you to your parents or your father, then it is not wrong to say this to your parents,
+[29:36] that is what a teacher is, because your parents are the first teachers in your life,
+[29:43] so what happens is that after parents, there is a place for the teacher, then there is a proposal
+[29:48] and this is what your thought process shows that your thought goes in which direction,
+[29:57] now see first consider c1, when you are considering c1, then you will circuit c2 and cs,
+[30:11] you will circuit c2 and cs, now as soon as you will circuit c2 and cs, rs is gone,
+[30:18] okay, look at the circuit here, you know what you want, you want resistance across c1,
+[30:27] you want resistance across c1, now remember that when the thevenin was removed,
+[30:35] so we used to circuit supply short, we used to circuit supply short, so r1 will come,
+[30:44] these two resistance series will come, let's zero vs, r signal plus rg, so from here fl1 will come,
+[30:54] so C1 is 1 by 2 pi, r1 c1, do you understand what I said, okay, do you understand this,
+[31:09] this is clear, see the location, look at the meaning of your sentence, what is the location,
+[31:15] Dhandesar has a lot of knowledge and I respect him, but your teaching style is incredible,
+[31:21] Dhandesar has the knowledge and respect of Dhandesar.
+[31:25] Neither should I give him my teaching style, nor should I give him my knowledge.
+[31:31] You are saying two different things.
+[31:33] You should have said that your teaching is good, but at the same time, I also like Dhandesar's teaching very much.
+[31:39] Even if he doesn't say it, it also works. I mean there is no link in both the things.
+[31:42] To make it a little visualized, let me show you like this.
+[31:47] When you ground this VS, then both the resistance will come into the series like this.
+[31:52] As soon as you zero this VS, both the resistance will come into the series like this across C1.
+[31:58] Both the resistance will come into the series like this, okay?
+[32:01] Do the C2 one now.
+[32:03] Do the C2 one now.
+[32:12] Consider C2.
+[32:15] Short circuit C1 and Cs.
+[32:20] If you ground the CS, then the ground is down here.
+[32:27] How much will R2 come?
+[32:28] As soon as the ground is down here, as soon as the ground is down here, Rd, Rd will come parallel.
+[32:40] And RL along with them in the series.
+[32:43] Look, what am I saying?
+[32:46] As soon as the ground comes down, look, this capacitor shot came, the ground came like this.
+[32:50] So these two resistances are parallel, look.
+[32:53] These two resistances are parallel.
+[32:56] And then their parallel combination came into the series along with RL.
+[33:02] Their parallel combination came into the series along with RL.
+[33:05] Do you understand?
+[33:07] So from here, we got the second value of the lower cutoff frequency.
+[33:12] 1 by 2 pi R2 C2.
+[33:18] Now do you want the cross of the CS?
+[33:21] Do you want the cross of the CS?
+[33:23] Dear, if you want the cross of the CS, then you know,
+[33:26] the source or emitter does not directly come out on the terminal.
+[33:31] You will have to zero the input.
+[33:34] You will have to take out V by I here.
+[33:36] Do it.
+[33:38] Take out V by I.
+[33:41] Sir, I am doing BTECH optics and optoelectronics.
+[33:44] I am eligible for MTECH VLSI, IITs.
+[33:46] Yes, you can do it.
+[33:48] If you crack the gate easily, Kaushik, then you can go to VLSI.
+[33:52] Because there is only one field of VLSI, dear, opto.
+[33:55] So you can specialize in optics in the MTECH VLSI.
+[34:00] There is no problem.
+[34:04] Come on, make it a little.
+[34:06] I will also draw a system of it.
+[34:10] Now see what kind of a circuit it will be.
+[34:25] First, you will ground the supply.
+[34:28] So, both the resistances have been destroyed.
+[34:58] Do one thing, ignore that small rd from here for now.
+[35:10] Because the small rd is a very big resistance.
+[35:14] I have ignored the small rd.
+[35:18] What? R1, R2 are equivalent.
+[35:21] Where is R1, R2?
+[35:23] R1, yes, R1 and R2 are equivalent.
+[35:27] What was written here?
+[35:29] Resistance across C1 is R1.
+[35:32] Such resistance across C2 is R2.
+[35:40] This is the work of Thevenin.
+[35:42] Sahil, this is the work of Thevenin.
+[35:46] Now see what I have done for simplification here.
+[35:50] I have ignored the small rd.
+[35:52] Okay, it is fun.
+[35:56] Now here the voltage is V and this is I.
+[35:59] See, R signal and RG have been destroyed.
+[36:03] Okay, here it is VGS.
+[36:09] So, if I put KVL, some of this type.
+[36:17] So, minus VGS, minus V equal to 0.
+[36:26] Now, how much current will go here?
+[36:32] In the resistance of RS, along with I, GMVGS will also go.
+[36:38] VGS is minus V0.
+[36:48] If it is minus V, then you will take it to the left.
+[36:54] It will become plus.
+[36:56] So, V by I is RS by 1 plus GMRS.
+[37:06] What is your FL3?
+[37:12] 1 by 2 pi.
+[37:16] Sorry, R3 CS.
+[37:22] Understood?
+[37:24] Here it is.
+[37:26] It is made by everyone.
+[37:28] Very good.
+[37:30] Saurav, Sai and Juhi.
+[37:32] Very good.
+[37:34] Is it clear how it will be made?
+[37:36] Clear.
+[37:38] And how did you bring them parallel?
+[37:42] Where did you bring the RDRL from?
+[37:44] RDRL will not come.
+[37:46] Okay, let's go.
+[37:50] Because the top terminal is different.
+[37:52] The top and the top of this resistance are different.
+[37:54] The bottom is the same.
+[37:56] But the top is different.
+[37:58] So, how will they be parallel?
+[38:00] Okay, let's go.
+[38:02] Now, come to the high frequency response.
+[38:06] I will write here as well.
+[38:08] FL will be maximum of the 3.
+[38:12] Now, tell me in the high frequency response
+[38:14] which capacitor is considered?
+[38:18] Small ones?
+[38:20] That is, parasitic capacitances.
+[38:22] Do you remember?
+[38:24] Small capacitance in Pico Farad
+[38:26] which is the internal capacitance of the device
+[38:30] is considered in the high frequency response.
+[38:34] We consider
+[38:38] internal parasitic capacitances.
+[38:52] Now, here you see
+[38:54] which parasitic capacitances are present.
+[38:58] Here, one is C, G, D
+[39:02] between gate and drain.
+[39:04] Between drain and source.
+[39:06] Between gate and source.
+[39:08] These are three.
+[39:10] Okay, don't think like this.
+[39:12] Gate and drain, gate and source
+[39:14] were the depletion layer everywhere, Akash?
+[39:16] Were there depletion layer everywhere?
+[39:18] Where there is depletion layer,
+[39:20] there are junction capacitance there.
+[39:24] There are junction capacitance there.
+[39:26] There are junction capacitance there.
+[39:28] That is why there are three capacitors.
+[39:30] And you know, these three capacitors
+[39:32] will come exactly in MOSFET.
+[39:34] Where they will come?
+[39:36] They will come in MOSFET
+[39:38] because there is similar working there.
+[39:42] So, the things you are reading in JFET
+[39:44] maximum part of this,
+[39:46] maximum part as it comes in JFET.
+[39:50] Between drain and source.
+[39:52] What is between drain and source?
+[39:54] There is one depletion layer.
+[39:56] It may be because of gate.
+[39:58] But it is blocking the path of drain and source.
+[40:00] So, there are two terminals of drain and source.
+[40:02] There is depletion layer in the middle.
+[40:04] So, there will be capacitance in the middle.
+[40:06] There will be capacitance in the middle.
+[40:08] Means, there is depletion layer in the middle
+[40:10] while going from drain to source.
+[40:12] There is depletion layer in the middle.
+[40:14] Okay?
+[40:16] Shall we move ahead?
+[40:18] Look.
+[40:20] Now, we have to make this model.
+[40:22] Let's say
+[40:24] at high frequency
+[40:30] short circuit
+[40:32] coupling and bypass capacitors.
+[40:36] You make the coupling and bypassers
+[40:38] short circuit.
+[40:46] Okay?
+[40:48] And see what is shown?
+[40:52] This CWI
+[40:54] input wire capacitance
+[40:58] which you are applying
+[41:00] basically becomes stray capacitance.
+[41:02] Similarly,
+[41:04] output wire capacitance.
+[41:06] We are showing this too.
+[41:10] Okay? We are showing this too.
+[41:12] Okay?
+[41:16] Akash, my brother.
+[41:18] Sorry, Sahil.
+[41:20] I am telling you something.
+[41:22] You brought your doubt in between
+[41:24] about tomorrow's lecture.
+[41:26] How did 2GM come in tomorrow's lecture?
+[41:28] There were two JFETs in parallel.
+[41:30] So, both the current add
+[41:32] will be i and i will be 2i.
+[41:34] So, both the current sources are GMVGS.
+[41:36] Okay? GMVGS is
+[41:38] both the current add.
+[41:40] So, GMVGS is
+[41:42] 2GM into VGS.
+[41:44] It is a simple thing.
+[41:46] Okay? Now, I will make this model.
+[41:50] If you make a model
+[41:52] then what will you show?
+[41:56] One capacitance will be here.
+[42:02] Okay? I will show it in dotted.
+[42:06] This C was GD.
+[42:08] Okay?
+[42:10] CGD.
+[42:12] You know that the capacitance
+[42:14] is in the middle, right?
+[42:16] It is resolved with Miller's effect.
+[42:18] So, what do we say?
+[42:20] First,
+[42:22] compute
+[42:26] gain
+[42:30] in absence of
+[42:32] capacitor.
+[42:38] Look at the gain.
+[42:40] If we do not consider capacitors
+[42:42] then
+[42:50] the gain that I have
+[42:52] removed in R signal
+[42:54] and RL effect
+[43:02] remember
+[43:04] or have I just removed it?
+[43:08] A, B, S that I have written.
+[43:12] Here it is.
+[43:14] First, this is removed.
+[43:16] Okay? This is removed.
+[43:18] Now, what do we do?
+[43:20] Now, we use the Miller's effect.
+[43:22] Whom do we use?
+[43:24] Miller's effect or say,
+[43:26] Miller's theorem.
+[43:32] This way,
+[43:34] CGD
+[43:36] is divided into two parts.
+[43:38] One is input
+[43:42] and one is
+[43:44] output.
+[43:46] Remember,
+[43:48] there was C mu in BJT.
+[43:50] There was C mu there.
+[43:56] Open it.
+[43:58] Is this clear?
+[44:00] Is this clear?
+[44:04] Whittle is saying,
+[44:06] sir, in syllabus of gate E
+[44:08] they mentioned frequency response.
+[44:10] I understood low frequency.
+[44:12] But I did not understand high frequency.
+[44:14] Dear, look at the lecture again of high frequency.
+[44:16] Because
+[44:18] high frequency is a little different
+[44:20] low frequency.
+[44:22] There is no problem in understanding low frequency.
+[44:24] Because what to do? Thevenin theorem is to be applied.
+[44:26] We just have to find the Thevenin's
+[44:28] resistance across each capacitor.
+[44:30] So, there is no such concept there.
+[44:32] But the high frequency response
+[44:34] becomes a little complicated.
+[44:36] Because there,
+[44:38] there is a hybrid pi model,
+[44:40] there is a glato model.
+[44:42] Then we resolve the capacitance with Miller's theorem.
+[44:44] There, unity gain frequency,
+[44:46] beta cutoff frequency, alpha cutoff frequency
+[44:48] takes three types of frequencies.
+[44:50] So, it is a little comprehensive topic.
+[44:52] It is a little big topic as compared to
+[44:54] low frequency.
+[44:56] But all the children have prepared
+[44:58] for the high frequency.
+[45:00] Whether it is the electrical one or the ECE one.
+[45:02] I know so much that when they
+[45:04] have studied that topic well
+[45:06] and have asked questions, they have made
+[45:08] all the questions.
+[45:10] Dear, I do not understand the difference
+[45:12] in electrical ECE. I will tell you the truth.
+[45:14] An electrical student also knows the network
+[45:16] as much as the ECE one knows.
+[45:18] What is the difference in both the syllabus?
+[45:20] Is there a difference in their ability?
+[45:22] Is there a difference in their ability to learn?
+[45:24] There is no difference.
+[45:26] So, is the child in the electrical or the ECE one?
+[45:28] If the ECE one can learn,
+[45:30] then the electrical one can also learn.
+[45:32] It is not possible that the ECE one
+[45:34] cannot learn the machine.
+[45:36] If the machine gives sufficient time,
+[45:38] then the machine will also learn.
+[45:40] Can the electrical one not learn the communication?
+[45:42] It is absolutely wrong.
+[45:44] So, the electrical one and the ECE one
+[45:46] can learn the whole syllabus of each other.
+[45:48] Because they are equally capable.
+[45:50] But the difference is that the syllabus
+[45:52] does not want to learn.
+[45:54] That is the difference.
+[45:56] Even if you leave the frequency response,
+[45:58] it is fine. Because you have not seen
+[46:00] the question for many years.
+[46:02] Okay?
+[46:04] Now, when you take out the input
+[46:06] capacitance,
+[46:12] when you take out the input
+[46:14] capacitance,
+[46:18] what will come in it?
+[46:20] Look, one will come
+[46:22] CGS,
+[46:24] one will come
+[46:26] with the input wire capacitance,
+[46:28] one will come with CGD.
+[46:32] When you take out the output
+[46:34] capacitance,
+[46:42] one will come
+[46:44] with C drain to source,
+[46:46] C wire output
+[46:48] will come and CGD
+[46:50] will come.
+[46:52] Now, here for both the capacitance,
+[46:58] what you take out?
+[47:00] Take out the resistance. First, you short
+[47:02] the VS.
+[47:04] See what is coming across it.
+[47:06] R signal parallel RG.
+[47:08] What is coming? R signal parallel
+[47:10] RG.
+[47:12] See,
+[47:16] when you short the VS,
+[47:18] R signal parallel RG
+[47:20] will come.
+[47:22] Now, look here.
+[47:24] Here you will see RD parallel RD
+[47:26] parallel RL.
+[47:28] Correct.
+[47:38] Now, here
+[47:40] FH1
+[47:42] There will be two upper cutoff frequency
+[47:44] 1 by 2 pi
+[47:46] RI
+[47:48] CI
+[47:50] and FH2
+[47:52] 1 by 2 pi
+[47:56] ROCO
+[47:58] and FH
+[48:02] that will be minimum
+[48:04] minimum
+[48:08] of FH1
+[48:10] FH2
+[48:12] Ok. Minimum of FH1
+[48:14] and FH2.
+[48:16] I told you earlier, let's take minimum.
+[48:18] Clear?
+[48:20] What did you do? We resolved
+[48:22] the capacitance of the middle
+[48:24] and took out the equivalent.
+[48:26] And then the cross resistance
+[48:28] is over.
+[48:30] Come on to the questions.
+[48:32] Did we do this yesterday?
+[48:34] Same question.
+[48:36] See, the value seems to be the same.
+[48:38] Tell me.
+[48:40] We did the same question, right?
+[48:42] We didn't ignore 3 with 30.
+[48:44] I think it was 5.45.
+[48:46] This is done, right?
+[48:50] When I said
+[48:52] don't ignore 30 in front of 3.
+[48:58] Look at the next one.
+[49:00] High frequency voltage gain
+[49:02] and the 3 dB cutoff frequency.
+[49:06] High frequency voltage gain.
+[49:14] The upper cutoff frequency is asking for
+[49:16] no value of the capacitance.
+[49:26] I am thinking when there is no value
+[49:28] of the capacitance,
+[49:30] then you don't take out the high frequency
+[49:32] voltage gain.
+[49:34] Where will you take out the upper cutoff frequency?
+[49:36] Because for that
+[49:38] you need to know the capacitance.
+[49:40] The CGD one.
+[49:42] CGD, CDS, CD,
+[49:44] CGS.
+[49:46] You need to know the three capacitance.
+[49:48] Take out the high frequency gain.
+[49:50] See, what will happen in this?
+[49:52] High frequency
+[49:54] coupling
+[49:56] and bypass capacitor
+[49:58] will be short.
+[50:12] Coupling and bypass capacitor
+[50:14] will be short.
+[50:16] Now the circuit
+[50:18] will be something like this.
+[50:20] Input voltage
+[50:22] RG
+[50:26] Gate to source junction
+[50:28] open.
+[50:30] The source grounded
+[50:32] from here
+[50:38] GMVGS
+[50:46] from here
+[50:48] RD
+[50:52] V0
+[50:56] RG
+[51:04] VGS
+[51:06] VIN
+[51:08] V0
+[51:10] RG
+[51:12] RG
+[51:14] RG
+[51:16] RG
+[51:18] RG
+[51:20] RG
+[51:22] RG
+[51:24] And if you want to write the gain
+[51:26] then
+[51:28] you can say that this is mid band
+[51:30] gain.
+[51:32] So what happens on high frequency?
+[51:34] It looks like a low pass filter.
+[51:36] What happens in low pass filter?
+[51:38] 1 plus
+[51:40] F by FH
+[51:42] kSquare
+[51:44] And this is FH
+[51:46] 3 dB cutoff frequency.
+[51:48] This is how it looks.
+[51:50] This is how it looks.
+[51:52] You will remove the minus from here.
+[51:54] Because let's take the mod.
+[51:56] Did you understand what I said?
+[51:58] This is the gain.
+[52:00] This is the mid band gain.
+[52:02] If the mid band gain is there
+[52:04] then at high frequency root of
+[52:06] 1 plus F by FH
+[52:08] kSquare
+[52:10] If your low frequency gain is there
+[52:12] then what comes down?
+[52:14] FL by F
+[52:16] FL by F
+[52:18] high pass filter
+[52:20] It is like a high pass filter.
+[52:22] Watch the next one.
+[52:24] A JFET with the following parameter is used
+[52:26] as a single stage common source amplifier
+[52:28] with
+[52:30] load resistance 100 kOhm
+[52:32] Calculate the high frequency
+[52:34] upper cutoff frequency
+[52:36] of the amplifier.
+[52:38] Gm is given, Cgd is given, R0 is cds.
+[52:40] cds
+[52:42] Ok
+[52:44] Make the questions better.
+[52:46] Our practice will be better.
+[52:48] Whatever comes up, we will not do that.
+[52:50] Whatever comes up, we will not do that.
+[52:52] Whatever comes up, we will not do that.
+[52:54] Irrelevant things are beneficial.
+[52:56] Everyone's time is wasted.
+[52:58] We are making a question from you.
+[53:00] You go out and give this question to someone else.
+[53:02] Either it will not be made
+[53:04] or it will not come.
+[53:06] It will not be asked like that.
+[53:08] Do you understand?
+[53:10] So you are making a question from you.
+[53:12] It is not like that, the question is useless.
+[53:42] Ok
+[53:52] Look here, how will you do it?
+[53:54] First, take out the voltage gain.
+[53:58] I will show it by making a diagram.
+[54:00] Then you will say how you did it directly.
+[54:02] Look, you did not tell anything on the input.
+[54:04] Common source amplifier
+[54:06] Ground the source if you did not say anything about the source.
+[54:12] Ok
+[54:42] Now see, when he gave the Cgd,
+[54:52] between gate and drain,
+[54:56] then it will have to be resolved.
+[54:58] Ok, you have to apply Millers theorem.
+[55:02] First, take out the gain without capacitor
+[55:06] Gain without capacitor, so you will say Gain is equal to minus gm R0 parallel RL, okay?
+[55:26] R0 is 100, this is also 100, it is 50, so minus 2 into 50 kilo semilycancel minus 100.
+[55:36] This is Gain, tell me, Akash brother forgot to do 100 parallel 100, he took 100 straight away.
+[55:44] Now break Cgd on both sides, but there is no resistance on the input side, that is why there is no point in taking it on the input.
+[55:55] There is no resistance on the input, so it is better to take it on the output, Cgd is 2 picofarad.
+[56:04] 1 plus 1 by 100, so 2.02 picofarad, correct?
+[56:13] This is it, right? Now there is Cds here, so if I talk about output capacitance, you will say Cds plus Cgdo.
+[56:27] So, how much is Cds? 1, right? And how much is its cross resistance? 100 parallel 50 kilo.
+[56:40] Now take out the 3 dB frequency, 1 by 2 pi 50 3.02, tell me.
+[56:56] How much?
+[57:03] Tell me quickly, this is kilo ohm and this picofarad means 10 power 9 will be above, 10 power 7 will be pi.
+[57:12] So in megahertz, 10 by pi, 1.054 megahertz.
+[57:27] This is coming.
+[57:29] Did you understand how to deal with high frequency response?
+[57:35] Tell me, is it easy?
+[57:38] Let's see the next one.
+[57:40] Two identical FETs are characterized by GM and RD connected in parallel.
+[57:45] What will happen?
+[57:46] The same question was used yesterday.
+[57:49] When two identical FETs are connected in parallel, what will the difference between GM and RD?
+[57:55] The one who was asking about Akash, Akash was also asking about it.
+[58:00] Very good Akash.
+[58:02] Two GM and RD by two current source double and half resistance, current source double, resistance will be half.
+[58:10] This is your last assignment of JFET.
+[58:14] You will do this.
+[58:16] And what will we do tomorrow?
+[58:18] We will discuss the assignment tomorrow.
+[58:20] And we will start the MOSFET from the day after tomorrow.
+[58:23] So we have to come regularly to the electrical people from the day after tomorrow.
+[58:26] This is the link of the special classes.
+[58:28] You will get a previous year question here.
+[58:31] Now our JFET is also finished.
+[58:34] Now we will talk about MOSFET.
+[58:36] The knowledge you have taken in BJTO JFET is going to be very useful in MOSFET.
+[58:41] And I will make the CMOS inverter on the end of MOSFET especially for the EC children.
+[58:46] The digital aspect and analog aspect will cover all the things.
+[58:52] So CMOS will also do the inverter.
+[58:54] Don't worry.
+[58:55] This analog course is going to be the most comprehensive course so far.
+[58:59] That is, you will need to study any topic in analog for lifelong.
+[59:04] It will be available in this course.
+[59:06] And if you join the Anacademy, you can come in any plus or icon.
+[59:12] There are top educators in both.
+[59:14] There are test series on the study material app.
+[59:17] If the children who are iconic get doubt in any new question, then you will get a video solution.
+[59:21] Printed notes are included for you.
+[59:23] There is 1 to 1 mentorship.
+[59:25] There is a strategy and study plan in Iconic.
+[59:27] And you can interact in the open house session via audio.
+[59:31] And the fun thing is that if you join the Anacademy, then 20% off is going on.
+[59:36] And our team is going to start the crash course very soon.
+[59:40] So if you want to do the crash course with us.
+[59:43] If you want to do revision and practice before the gate exam.
+[59:46] Then join quickly.
+[59:48] Now we have launched the subscription for 4 months.
+[59:52] And if someone takes a distance learning program.
+[59:55] In which you get books and test series.
+[59:58] So that child is also getting 20% discount using the code ANKETESE.
+[60:03] What do you have to do?
+[60:06] Go to the Anacademy app and choose plus iconic.
+[60:10] You have to decide the duration.
+[60:12] And for maximum discount, i.e. 20% discount.
+[60:15] You have to apply the code ANKETESE during the payment.
+[60:18] Okay.
+[60:20] Now look at our results.
+[60:23] We have taken 6 ranks in the top 10 in the gate in 2022.
+[60:26] And I hope in the top 10 next year.
+[60:28] 10 to 10 ranks.
+[60:30] Our students will be from YouTube, plus iconic.
+[60:33] So if you also want an added advantage in your preparation.
+[60:37] Then you can join the Anacademy.
+[60:39] What is the matter, Manthan?
+[60:41] Manthan is also asking the question of UPSC optional.
+[60:43] Very good.
+[60:45] Okay.
+[60:47] Now look, if you join the Anacademy.
+[60:49] It is a financial issue.
+[60:51] You can also go for EMI.
+[60:53] No one will have to pay for interest.
+[60:55] EMI is approved in 2 hours.
+[60:57] In the paperwork, you have to give only the basic card.
+[61:00] You have to give a member in the family.
+[61:02] The member who gets the salary.
+[61:05] Okay.
+[61:07] It is a flexible tenure in which you can repay.
+[61:09] Okay.
+[61:15] One second.
+[61:17] Yesterday you made the curve of GM and ID.
+[61:19] Maximum limit in that.
+[61:21] GM not at ID 0.
+[61:23] Okay.
+[61:25] I extended that.
+[61:27] No, keep it till there.
+[61:29] We do not bias it forward.
+[61:31] That means we do not take the ID negative.
+[61:33] Okay.
+[61:35] Okay.
+[61:37] And look, here the Brahmashra Plus batch has started.
+[61:39] It has started from the 14th date.
+[61:41] That means when is the 14th date?
+[61:43] What is tomorrow?
+[61:45] Tomorrow is the day after tomorrow.
+[61:47] From the day after tomorrow, Dhandesar and
+[61:49] the course of Gurupal sir has started.
+[61:51] Dear here, daily night, the toppers are answering your doubts.
+[61:53] Daily practice paper is getting.
+[61:55] There are exclusive live classes in the batch.
+[61:57] There are practice and strategy sessions.
+[61:59] You are getting notes on the app.
+[62:01] You are getting test series.
+[62:03] You are getting gate academy, paramount.
+[62:05] Gate academy, workbook, PYQ.
+[62:07] You are getting all the things in this batch.
+[62:09] You are getting included.
+[62:11] Which will put 4 charts in your preparation.
+[62:13] If you are attending Brahmashra batch on YouTube.
+[62:15] You are getting classes in this.
+[62:17] You are getting material.
+[62:19] But if you are attending on an academy.
+[62:21] Daily your doubts are getting answered.
+[62:23] You are getting DPPs.
+[62:25] You are getting workbooks, PYQs.
+[62:27] You are getting the paramount of gate academy.
+[62:29] You are getting strategy guidance.
+[62:31] You are getting Brahmashra plus.
+[62:33] As I told you, we have launched the subscription of 4 months.
+[62:35] You can join this using code
+[62:39] and you will get 20% off.
+[62:43] You will get 20% off in this.
+[62:45] And see, whoever wins the combat.
+[62:49] Those who have the discount offer.
+[62:51] Those who have the validity of 14th of October.
+[62:55] You can apply your combat scholarship code.
+[62:59] After this, the code will expire.
+[63:01] Don't wait for it.
+[63:03] Use the code quickly.
+[63:05] Use the achievement you have achieved.
+[63:09] This is my telegram channel.
+[63:11] All the lecture notifications will come here.
+[63:13] Along with that, you can go to the community.
+[63:17] To take the PDF of this session.
+[63:19] You will go to the community on the academy app.
+[63:21] You will get the discovery there.
+[63:23] And all my PDFs too.
+[63:25] So thank you everybody.
+[63:27] Thanks a lot kids.
+[63:29] Now we will meet tomorrow.
+[63:31] And tomorrow we will do the end of the questions.
+[63:33] I have given you very good questions in JFET.
+[63:35] There will be 15-16 questions.
+[63:37] We will discuss them tomorrow.
+[63:39] If you haven't made a DPP yet, then come tomorrow.
+[63:41] Then we will start the MOSFET from Perso.
+[63:43] So we will meet Perso in MOSFET.
+[63:45] And tomorrow we will meet to discuss the assignment.
+[63:47] Let's crack it.

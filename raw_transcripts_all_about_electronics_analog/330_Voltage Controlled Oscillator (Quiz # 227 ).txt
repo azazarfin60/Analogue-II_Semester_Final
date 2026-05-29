@@ -1,0 +1,47 @@
+Title: Voltage Controlled Oscillator (Quiz # 227 )
+URL: https://www.youtube.com/watch?v=XzATHq1cw88
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been given one voltage control oscillator circuit and this
+[00:21] oscillator circuit is implemented using the call speed oscillator.
+[00:26] Now in this call speed oscillator, using the varactored diode, the oscillated frequency
+[00:30] is tuned.
+[00:31] So here, to generate a 1 megarts of oscillation frequency, we have been asked to find the required
+[00:37] control voltage for the varactored diode.
+[00:40] Now if you are aware, then for the call speed oscillator, the frequency of oscillation can
+[00:45] be given by the following expression.
+[00:47] Where L is the inductor of this tank circuit and CT is the total capacitance of these two
+[00:52] capacitors.
+[00:54] So let's say here, this capacitor is equal to C1, while the capacitance of this varactored
+[01:00] diode is equal to C2.
+[01:03] So the total capacitance CT can be given as C1C2 divided by C1 plus C2.
+[01:10] So here, to get the 1 megarts of oscillation, first of all, let's find the value of the CT.
+[01:17] So from this expression, we can say that the capacitance CT is equal to 1 divided by 2
+[01:24] pi times f0 whole square times L.
+[01:29] And now let us put the value of this frequency as well as the inductance.
+[01:34] That means CT is equal to 1 divided by 2 pi times 10 to the power 6 whole square times
+[01:43] 10 to the power minus 3.
+[01:46] And if we calculate the value, then this capacitance CT will be roughly equal to 25pK.
+[01:54] And we had seen that this CT can be given as C1C2 divided by C1 plus C2.
+[02:02] Now here, the value of C1 is equal to 50pK.
+[02:07] So to get the value of CTS 25pK, the value of C2 should also be equal to 50pK.
+[02:15] That means in other words, the capacitance of this varactored diode should be equal to
+[02:20] 50pK.
+[02:22] So now let us find the value of this control voltage, such that we get the value of C2
+[02:28] as 50pK.
+[02:30] Now on the main channel, if you have followed the previous video on the varactored diode,
+[02:35] then you must be aware that for the hyper-ablet varactored diode, the capacitance can be given
+[02:39] by the following expression, where C0 is the capacitance of the varactored diode whenever
+[02:45] it is unbiased.
+[02:47] And here we have been given that the value of C0 is equal to 200pK.
+[02:53] And the required value of the capacitance is equal to 50pK.
+[02:58] That means here the value of C is equal to 50pK.
+[03:02] That means from this expression, we can write 50 is equal to 200 divided by 1 plus V divided
+[03:13] by Vf whole square.
+[03:17] That means 1 plus V divided by Vf whole square is equal to 4.
+[03:26] That means 1 plus V divided by Vf is equal to 2.
+[03:33] That means the value of V should be equal to Vf, where Vf is the far resistance of the
+[03:39] diode and usually the value of Vf is equal to 0.7V.
+[03:44] That means from this, we can say that when the value of control voltage is equal to 0.7V,
+[03:50] at that time the oscillation frequency will be equal to 1 megahertz.

@@ -1,0 +1,2474 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Current Mirror and Voltage Regulator Circuit | Ankit Goyal
+URL: https://www.youtube.com/watch?v=mlTjBH7CRWM
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to Creatrix YouTube channel my dear friends we are live we are back again with the Lakshaya batch 2.0 Analog Electronics.
+[00:21] So dear in Analog Electronics we were discussing BJT, we had completed BJT's biasing, we had discussed the compensation techniques of BJT and today I am going to give you the application of BJT.
+[00:36] In the application today we will mainly discuss 2 applications, one is the current mirror and one is the voltage regulator.
+[00:45] So we are going to discuss 2 applications today, after this from tomorrow we will start the AC analysis of BJT, the part of the amplifier of BJT which I believe that many children are scared but from tomorrow its fear will start coming out and you will face a bravely one question.
+[01:04] Jaiesh, the results of the combat have been announced, today I will share it on my telegram, today I will share the results on YouTube, don't worry about it.
+[01:12] So tomorrow there will be a little share, tomorrow there will be a lot of things, otherwise the result would have come tomorrow, so today I will announce it.
+[01:21] And see if anyone wants to join the academy, dear you have a golden opportunity, you are getting 20% discount in the next 5 days.
+[01:29] So usually you get 10%, now you are getting 20% and very soon we are going to announce a new batch on Plus in which you will get the best of the best educators at a single place.
+[01:42] So if you haven't joined yet, now join, you can also join a 3 month subscription which you can get a rank in the GATE 2023.
+[01:54] And if you take an academy light in which you are getting books and test series, you are also getting 20% discount.
+[02:05] In that you are getting 20% discount, you will remember the code, dear Ankit ESE.
+[02:11] And dear if you want to do the non-tech of ESE, then take a subscription of 3 months, here you will get the entire recorded content.
+[02:18] Do you understand, here you will get the entire recorded content of Tarun ESE non-tech, so take a subscription of 3 months from here.
+[02:26] Let's start today's discussion.
+[02:30] So the first application that I am taking today is my voltage regulator.
+[02:35] Okay, that is my voltage regulator.
+[02:39] Now if we talk about the voltage regulator, then where does the voltage regulator use?
+[02:45] Do you remember I taught you DC power supply in diode.
+[02:50] There I told you how the DC power supply is made.
+[02:53] First AC input comes, it steps down from the transformer.
+[02:58] Then we make it pulsating DC from rectifier.
+[03:02] Then we reduce its fluctuation from the filter.
+[03:06] And after that we apply a voltage regulator which gives us the perfect DC output.
+[03:14] So here the same thing is there, the voltage regulator will take input from the filter and it will give you a constant output voltage.
+[03:25] So what do we say here?
+[03:28] It takes the input or let's do one thing.
+[03:34] Let's show it with a diagram, why to write it.
+[03:38] Diagram clears things much better.
+[03:45] So see what is going to happen here.
+[03:56] Input from filter.
+[04:12] And this is perfect DC output.
+[04:23] What is there in the middle?
+[04:29] There is a voltage regulator in the middle.
+[04:34] Okay.
+[04:36] So it gives you a perfect DC output with the input from the filter, voltage regulator.
+[04:42] So sir, why are we reading the voltage regulator here?
+[04:47] We have read it in diode.
+[04:49] So now I will tell you what were the missing things in the diode.
+[04:54] There were many problems in the diode which we had to make a voltage regulator along with BJT.
+[05:02] But before that I will tell you one thing.
+[05:05] What happens here is that BJT works in an active region.
+[05:17] So we call it linear power supply.
+[05:29] So you run BJT in an active region because it is called linear power supply.
+[05:36] And here there is a drawback.
+[05:39] As you know that in an active region power consumption is high.
+[05:44] So the linear power supply has an inherent drawback.
+[05:49] That here the active device is working as a linear device in the active region.
+[05:56] So power consumption will be high.
+[06:04] In the active region the power of the transistor is VCE, IC.
+[06:10] So power consumption is high.
+[06:14] Tell me my children, did you understand that the power consumption here is going to be high?
+[06:23] It will be high, right?
+[06:26] Okay.
+[06:27] So that's why when we read power electronics, we won't be able to relate too much with EC children.
+[06:33] But listen to me.
+[06:34] There is a topic in power electronics which is called switch mode power supply.
+[06:40] In EC power electronics, listen to me.
+[06:43] We cover a topic in power electronics which is switch mode power supply.
+[06:48] What happens there is that the device is like BJT.
+[06:51] So BJT is used like a switch in cut-off and saturation.
+[06:56] There also DC power supply is being made.
+[06:58] There also we need constant DC.
+[07:00] But there we are using the device as a switch.
+[07:03] And in switching mode, in cut-off and saturation, power consumption is very low.
+[07:09] Why is that, sir?
+[07:10] Because in cut-off, your current is zero.
+[07:13] If the current is zero, then also the power will be zero.
+[07:16] And the voltage in saturation is 0.2.
+[07:19] That is approximately zero.
+[07:21] So again, what will be your power?
+[07:23] Zero.
+[07:24] So you take cut-off or saturation.
+[07:26] Power is almost your zero.
+[07:28] That is why cut-off and saturation region is more preferable.
+[07:33] If you want to save power.
+[07:36] If you want to save power.
+[07:37] But this is the drawback of linear power supply.
+[07:40] Here power consumption is high.
+[07:42] Now see here, the V0 that comes here.
+[07:45] It is the function of three things.
+[07:48] What is the thing?
+[07:49] V0 is actually a function of VI, temperature and IL.
+[07:59] That is, how much input voltage is there, how much temperature is there.
+[08:03] And how much load you are drawing.
+[08:07] How much load your current is drawing from the system.
+[08:11] Because you know, dear, if the load in the system starts drawing more current.
+[08:16] Then the drop will start coming.
+[08:19] Then the V0 will also start decreasing.
+[08:22] Now if I tell you here.
+[08:24] How much fluctuation is coming in V0.
+[08:27] So you will say, sir, if the delta V0 is fluctuation.
+[08:31] Sir, then you write like this.
+[08:33] Del V0 by del VI into delta VI.
+[08:38] Del V0 by del T into delta T.
+[08:44] Plus del V0 by del IL into delta IL.
+[08:52] Okay.
+[08:55] So you can write like this.
+[08:57] You wrote like this in stability, in Q point stability.
+[09:00] Now what can you write here?
+[09:03] The formula is sensitivity with respect to VI.
+[09:10] Del V0 by del T you can write sensitivity with respect to temperature.
+[09:15] And you can write del V0 by del IL.
+[09:19] Output resistance.
+[09:21] What can you write? Output resistance.
+[09:23] Because its unit resistance will not be there.
+[09:26] Output voltage by output current will become the resistance.
+[09:31] Will become the resistance.
+[09:35] Is this clear?
+[09:38] Son, when I have publiced compensation and problem on BJT.
+[09:43] Right?
+[09:44] The day I did private, I did public that day in the evening.
+[09:48] Because the team did private by mistake.
+[09:50] And the strange thing is, Dinesh, you didn't check it again on Saturday.
+[09:55] You didn't check it again on Sunday.
+[09:57] Now it will become private today.
+[09:59] Today you check it.
+[10:00] Okay, it has become public.
+[10:01] I didn't public today.
+[10:02] I only publiced on Saturday.
+[10:04] But now you people don't check.
+[10:06] You saw it once, you didn't check it again.
+[10:09] You didn't understand.
+[10:10] When there is a commitment of 24 hours, then we will keep it for 24 hours.
+[10:13] Now the person who asked to do private, he didn't understand.
+[10:16] He gave all the reports.
+[10:19] Right?
+[10:20] He gave all the reports.
+[10:21] Now tell me what to do?
+[10:22] And I also sent him a message on Thursday or Friday.
+[10:25] He gave all the reports on Saturday.
+[10:27] Now such mismatches happen.
+[10:29] A little mis-happening happens.
+[10:31] Okay, but there is a commitment of 24 hours.
+[10:33] It will remain 24 hours.
+[10:35] But
+[10:37] Do you know what the problem is?
+[10:38] Now your attendance has fallen.
+[10:40] Okay.
+[10:41] Now I am seeing that on any video,
+[10:43] there were 3,000 views in 24 hours.
+[10:44] Now there are 1,500 views.
+[10:46] If you do this, then it will be very difficult to go ahead of the Mosfet.
+[10:49] What will I do?
+[10:50] O-Pamp, Oscillator, Power Amplifier,
+[10:52] I am trying to do a 100 hour course.
+[10:56] And you have become flat in 30-35 hours.
+[10:59] So where will I get mileage to go to 100 hours?
+[11:02] Where will I get energy from?
+[11:04] You guys do it every time.
+[11:06] Now the video has started to be private.
+[11:08] Even then you are not getting the consistency.
+[11:10] Then what will you say?
+[11:12] Sir, when you give money,
+[11:14] then there is a little seriousness.
+[11:16] You are getting the content of this quality free of cost.
+[11:18] And you are thinking of giving money.
+[11:20] That brother, if you give money, then it will be serious.
+[11:22] I mean, if I start charging 4000 rupees for this course,
+[11:25] then you will start seeing it.
+[11:27] If I am giving it for free, then its value is not there.
+[11:29] This is wrong, my brother.
+[11:31] At this time, think about it.
+[11:33] How many courses are there on me.
+[11:35] Even in October, my effort will be doubled.
+[11:38] But I am ready to do it.
+[11:40] And if you guys just want to sit and watch,
+[11:42] then you will not be able to watch.
+[11:47] Isn't it?
+[11:50] Come on.
+[11:52] Now dear, we will be low.
+[11:54] When our own children travel,
+[11:56] message our own children every day.
+[11:58] Sir, how will we get the rank?
+[12:00] Then how will the teacher not get depressed?
+[12:02] Tell me.
+[12:03] The preparation of the children in the last 6-7 months.
+[12:06] If the preparation of the children starts to suffer in the end,
+[12:08] then I will also suffer in that thing.
+[12:11] Come on.
+[12:13] Now the thing is, sir.
+[12:15] Why did BJT enter the diode voltage regulator?
+[12:18] Except that we had to trouble you.
+[12:20] Now you must be thinking that,
+[12:22] Sir, the IIT people must have thought
+[12:24] that how to let the children live peacefully.
+[12:26] Come on, let's do one thing.
+[12:28] If we make a tough question,
+[12:30] then we will enter BJT in the voltage regulator.
+[12:32] But it is not like that.
+[12:34] It has a practical application.
+[12:36] It has a practical reason.
+[12:38] That is why it came.
+[12:39] The first thing is the poor stability of the diode voltage regulator.
+[12:45] Sir, what is the significance of poor stability?
+[12:49] The significance of poor stability is
+[12:52] that what you have written is SV, ST, R0.
+[12:58] All these factors are high.
+[13:01] That means if any parameter changes,
+[13:05] then the output voltage will change.
+[13:08] Now I don't want that.
+[13:10] That's right.
+[13:11] I don't want that.
+[13:12] What do I want from the voltage regulator?
+[13:14] That the voltage constant should be given to me
+[13:18] by giving me a DC voltage,
+[13:20] giving me a flat waveform.
+[13:22] That's all I want.
+[13:23] But if my temperature changes,
+[13:26] my input voltage changes
+[13:28] or my load changes
+[13:30] and my voltage fluctuates because of that,
+[13:33] then that is not at all desirable.
+[13:36] Okay.
+[13:41] Non-zero R0.
+[13:44] Sir, we want that R0 be zero.
+[13:47] Okay.
+[13:48] Because if R0 is zero,
+[13:50] then how much load should be given?
+[13:51] The voltage will be constant.
+[13:53] Think about it.
+[13:54] How many devices should you run in your house?
+[13:57] If you are getting a constant of 220 volts,
+[14:03] then that is good.
+[14:05] Isn't it?
+[14:06] That is good.
+[14:07] Do you understand what I am saying?
+[14:08] Then we will call it zero R0.
+[14:10] That means how much load did you put?
+[14:12] You burned the tube, ran the fan, ran the AC,
+[14:15] but you are getting 220.
+[14:16] So, this is a very good thing.
+[14:18] You may say,
+[14:19] Sir, I turned on the AC.
+[14:20] My tube light dimmed.
+[14:22] Sir, I turned on the AC.
+[14:23] My fan slowed down.
+[14:24] Isn't this a good thing?
+[14:26] When is it a good thing?
+[14:27] Whenever we connect any number of loads,
+[14:30] we get the constant voltage.
+[14:32] For that, R0 should be zero.
+[14:35] But in a diode voltage regulator,
+[14:37] R0 is not zero.
+[14:40] R0 is not zero.
+[14:43] Third,
+[14:45] Large power dissipation.
+[14:47] There, across the Zener diode,
+[14:49] a lot of power dissipates.
+[14:53] And Zener diode is not so much power that it can be poisoned.
+[14:58] Do you know the regulator we make?
+[15:01] The efficiency here is a big concern.
+[15:03] Do you know why it is a concern?
+[15:04] You are making a power supply.
+[15:06] Where, as you believe,
+[15:08] you have put the power supply in your house,
+[15:10] then you pulled the AC power from the socket
+[15:12] and you are giving DC outside.
+[15:14] But the AC you are pulling,
+[15:16] you are giving half of it outside.
+[15:18] Isn't this a good thing?
+[15:20] You made a power supply and the power supply
+[15:22] itself ate half of it.
+[15:24] That is the thing.
+[15:25] When you used the bank,
+[15:27] in the transaction, the bank took 50% money.
+[15:30] Right?
+[15:31] When we are fed up with the tax,
+[15:33] the more we get fed up, the more the tax goes away.
+[15:36] If you start hitting the bank,
+[15:38] you have taken 100 rupees of the transaction,
+[15:39] send it 50 in your pocket.
+[15:41] If you are angry,
+[15:43] then something like this is happening because of power dissipation.
+[15:45] That the power supply was made
+[15:47] to give power, not to keep the power.
+[15:49] But what is he saying?
+[15:51] Let us also keep it.
+[15:52] Let us also wash our hands in the bath.
+[15:54] Give us some power too.
+[15:55] That is not a good thing.
+[15:56] It is not a good thing to have a large power dissipation.
+[15:58] So, the zener diode regulator
+[16:01] that you have read,
+[16:03] the zener diode regulator that you have read,
+[16:11] do you know where it is used?
+[16:14] It is used for low voltage.
+[16:21] Low current.
+[16:24] Low power.
+[16:26] Right?
+[16:27] Where there is a little more power,
+[16:29] or there is more voltage current,
+[16:31] we do not use it there.
+[16:32] Okay?
+[16:33] So, now let us see
+[16:35] what is so special about the BJT?
+[16:37] What is so special about the BJT?
+[16:40] How is it giving better stability?
+[16:42] How is BJT stabilizing?
+[16:44] We will talk about it.
+[16:45] Now, look at this.
+[16:46] There are two types of voltage regulator.
+[16:48] The first is series, the second is shunt.
+[16:50] Why is the series?
+[16:52] The load here is in the series of BJT.
+[16:55] Look at this.
+[16:56] The IE current is going into the load as it is.
+[16:59] So, why is it called series voltage regulator?
+[17:02] Load is connected.
+[17:05] Load is connected.
+[17:08] In series.
+[17:11] In series with BJT.
+[17:17] By the way, I was just watching.
+[17:19] The class time is 11.30 pm.
+[17:21] I started at 11.30 pm.
+[17:23] And this boy is so depressed.
+[17:25] He is writing like this.
+[17:26] Hey, isn't there class today also?
+[17:28] Hey, how big is 11.30 pm from 11.30 pm?
+[17:32] People start half an hour late.
+[17:35] People delay events for 2-3 hours.
+[17:38] Or you are going away in 2 minutes.
+[17:41] Don't do this.
+[17:42] Wait for a while.
+[17:44] Sometimes we start drinking water.
+[17:47] Some take medicines.
+[17:49] Don't do this.
+[17:51] Digital electronics has increased by 100K.
+[17:54] I will do one thing.
+[17:55] Next year, definitely next time.
+[17:57] I will provide you with digital again.
+[18:00] How will it be?
+[18:02] Will it be fun?
+[18:04] For 2024.
+[18:05] But I won't promise for 2023.
+[18:07] There are no such promises.
+[18:09] But this time, like Brahmastra Crash Course.
+[18:12] I will make measurements in it.
+[18:14] I won't make measurements in the whole now.
+[18:16] I will make it in the crash course.
+[18:17] Your whole number will come.
+[18:19] I guarantee you, you will get 100% marks in the measurement from my crash course.
+[18:22] Thank you.
+[18:24] I hope you will continue to make trust in this channel.
+[18:28] Don't leave this channel.
+[18:30] Otherwise, my hope will be over.
+[18:32] No, sir.
+[18:34] Our hope will be good this year.
+[18:36] If you are in the year of 2023, take it out this year.
+[18:38] I have kept it digital once.
+[18:40] I will make it new again.
+[18:42] Right?
+[18:43] And the second thing.
+[18:44] I told you yesterday.
+[18:46] There are a lot of surprises.
+[18:48] There is a plan.
+[18:50] The EDC course will be launched soon.
+[18:53] The EDC will launch Shishir Sir.
+[18:55] But now I am planning very well.
+[18:57] I am telling you the truth.
+[18:59] I am putting so much effort into it.
+[19:02] I am working so hard.
+[19:03] I hope that I don't have to prepare for the EDC course.
+[19:07] Right?
+[19:08] Then it will happen that I will prepare for the EDC course.
+[19:11] Then I will write a gate from the EDC.
+[19:13] I am telling you the truth.
+[19:14] If I have prepared for the EDC course.
+[19:16] Then I will see the paper of the EDC.
+[19:18] Right?
+[19:19] Come on.
+[19:20] Come back.
+[19:21] There are still a lot of surprises for you.
+[19:24] There are at least three or four more initiatives.
+[19:26] Don't worry.
+[19:27] We will announce one by one.
+[19:28] Tomorrow we have announced Brahmastra.
+[19:30] Let Brahmastra start.
+[19:32] Then I will announce more.
+[19:33] Okay?
+[19:34] Come on.
+[19:35] Now see here.
+[19:36] Let's feel the circuit first.
+[19:38] Let's observe the circuit a little.
+[19:40] Look here.
+[19:42] This is the input voltage.
+[19:43] Where is this coming from?
+[19:45] This input voltage is coming from the filter.
+[19:48] Where is it coming from?
+[19:50] From the filter.
+[19:52] Do you remember?
+[19:53] There was a resistance in the Zener diode regulator.
+[19:56] This is the same resistance.
+[19:58] Why did we put this?
+[20:00] Current limiting resistor.
+[20:03] Do you remember?
+[20:04] I told you that Zener diode will burn if you don't put current.
+[20:07] You won't put resistance in between.
+[20:09] Current limiting resistor.
+[20:12] And look here.
+[20:13] You don't have to remember the circuit work.
+[20:15] You see how I analyze the circuit from the network.
+[20:18] How I solve it from the network.
+[20:20] You see here.
+[20:21] And if you learn that skill.
+[20:23] And there is a random circuit in the gate.
+[20:25] Like BJT is connected.
+[20:26] Do you remember?
+[20:27] I had asked a question in the last DPP.
+[20:30] Where there was a Zener diode connected with BJT.
+[20:32] And you guys got the right answer.
+[20:34] So if you approach with the network analysis.
+[20:37] Tomorrow there will be a new circuit.
+[20:39] Where Zener diode, diode, BJT, opamp.
+[20:41] If you connect everything.
+[20:43] Then you will solve it.
+[20:44] You will solve the guaranteed.
+[20:46] Okay.
+[20:47] So from here.
+[20:48] See this i current is coming.
+[20:49] Which was coming first.
+[20:50] Now it is divided into two parts.
+[20:52] One is the base current.
+[20:54] It went in the transistor.
+[20:55] And one is the Zener diode.
+[20:57] Zener current went.
+[20:58] Now according to this base current.
+[21:00] Ammeter current came from here.
+[21:02] Which went in your load.
+[21:04] Now the first question should come in your mind.
+[21:08] Sir.
+[21:09] How is this circuit stabilizing the output.
+[21:12] Okay.
+[21:13] Here keep in mind that VZ is your constant.
+[21:17] And this RLA is the load resistance.
+[21:20] It has a voltage V0 across it.
+[21:23] And I have to stabilize it.
+[21:26] Stabilize means if there is a fluctuation in it.
+[21:30] Then I have to cancel that fluctuation.
+[21:34] Okay.
+[21:35] I have to cancel it.
+[21:36] Is the matter clear?
+[21:38] Come on.
+[21:39] It is so clear.
+[21:41] Come on.
+[21:42] So let's see how it will stabilize.
+[21:45] First look at one more thing.
+[21:47] If I put KVN.
+[21:49] Then you will tell me how much V0 comes from here.
+[21:52] If I put KVN like this.
+[21:54] Tell me how much it will come.
+[21:57] V0 will be VZ minus VBE.
+[22:04] VZ minus VBE.
+[22:08] Now what I am saying is how it is stabilizing.
+[22:11] Look at it.
+[22:13] Suppose that V0 has increased.
+[22:17] Listen.
+[22:18] Okay.
+[22:19] I know there are many things to talk about.
+[22:21] I will do one thing.
+[22:23] I will talk to the team.
+[22:24] If I do an AMA today.
+[22:27] Should I do it on special AMA?
+[22:29] Should I do it on special AMA instead of YouTube?
+[22:33] Or should I do it on YouTube?
+[22:35] So IE is V0 by RL.
+[22:39] This will also increase.
+[22:41] Ammeter's current is V0 by RL.
+[22:45] Ammeter's current is V0 by RL.
+[22:48] If IE is increasing.
+[22:50] Listen carefully.
+[22:52] If IE is increasing.
+[22:54] Or V0 is increasing.
+[22:56] So look at this.
+[22:59] V0 is VZ minus VBE.
+[23:03] Which has constant VZ.
+[23:08] So if V0 is increasing.
+[23:13] Then VBE will be decreasing.
+[23:18] VBE will be decreasing.
+[23:22] If V0 is increasing.
+[23:24] Then VBE will be decreasing.
+[23:26] Now someone will be able to do 2 plus 2 4.
+[23:29] Tell me.
+[23:31] I told you something.
+[23:32] There is one equation in BJT.
+[23:34] Which is used more than diode.
+[23:37] Think.
+[23:38] Think.
+[23:39] You must be clicking something.
+[23:40] Which equation was also in diode.
+[23:43] And I told you to remember this.
+[23:45] It will also be in the questions of BJT.
+[23:47] What?
+[23:48] I will also decrease.
+[23:50] No.
+[23:51] Negative feedback.
+[23:52] What was the equation?
+[23:54] Exponential.
+[23:56] Remember.
+[23:57] The equation of diode current was said.
+[23:59] It is in BJT's base emitter junction.
+[24:02] Remember.
+[24:03] The base emitter of BJT behaves like diode.
+[24:07] So if we look at the equation of diode current.
+[24:10] Shockly equation.
+[24:11] Yes.
+[24:12] Shockly equation.
+[24:13] It is also in BJT.
+[24:15] So if VBE decreases.
+[24:17] You will tell me.
+[24:19] Ammeter current will decrease.
+[24:21] Tell me brother.
+[24:24] According to diode current equation.
+[24:27] Ammeter current will decrease.
+[24:30] We will say brother.
+[24:32] Tell me.
+[24:34] Will it decrease?
+[24:36] Will it decrease?
+[24:37] It will absolutely decrease.
+[24:38] If you say it will decrease.
+[24:39] But not by talking to me.
+[24:41] Think from your mind.
+[24:42] I just said a little.
+[24:44] Now brother.
+[24:45] If it decreases.
+[24:46] Will V not decrease?
+[24:48] Tell me.
+[24:50] Will V not decrease?
+[24:54] It will absolutely decrease.
+[24:56] The effect is cancelled.
+[24:58] V not increased.
+[25:00] And V not decreased.
+[25:02] V not increased.
+[25:03] And V not decreased.
+[25:05] Stabilized.
+[25:06] And what is the reason?
+[25:08] Look carefully.
+[25:10] It was because of VBE.
+[25:12] Because of VBE.
+[25:14] If it was not BJT.
+[25:16] Then this effect would not be seen.
+[25:18] If it was not BJT.
+[25:21] Then this effect would not be seen.
+[25:23] What do you think?
+[25:25] By applying a BJT.
+[25:27] Your voltage gets stabilized.
+[25:29] Or this voltage could never be stabilized.
+[25:33] So if you had gone with a Zener diode regulator.
+[25:37] Then it is guaranteed that.
+[25:39] Your output would be stabilized.
+[25:41] the output is not stabilized.
+[25:43] Let's go.
+[25:44] It was fun.
+[25:45] Now, sir, please tell me how to make a question on this.
+[25:49] It must have been painful in the stomach.
+[25:50] After all, the class has been 25 minutes.
+[25:52] We didn't talk about the question.
+[25:54] Right?
+[25:55] Our children think about the question only.
+[25:57] They don't know how to break the question.
+[25:59] So, look, the question will be the power rating of Zener diode.
+[26:02] He will ask you that when I am buying Zener diode from the market,
+[26:06] please tell me the line of power rating.
+[26:10] Let's start.
+[26:11] Let's start the network analysis.
+[26:14] First of all, let me talk about I.
+[26:17] How will you take out I?
+[26:18] Here is VI.
+[26:19] Here is VZ.
+[26:20] So, this I will be like Zener diode regulator.
+[26:24] VI-VZ by R.
+[26:27] You can go below 0.7.
+[26:30] Look, the questions which have no info about VBE,
+[26:34] I can take out VBE.
+[26:35] I will go there as 0.7.
+[26:37] But you know, you will get to see such questions in the gate.
+[26:40] Like the questions which are based on the current mirror,
+[26:43] or the questions which are based on the differential amplifier,
+[26:47] where VBE has to be taken out according to the current.
+[26:50] If you are in today's assignment,
+[26:52] you will definitely get to see such questions.
+[26:54] Otherwise, you can also see such questions in PYQ.
+[26:57] Right?
+[26:58] So, there are many times when VBE is unknown.
+[27:00] So, according to the current, we take out diode equations.
+[27:03] So, sometimes 0.65, 0.6, sometimes 0.7,
+[27:06] you get to see such values.
+[27:09] Let's come back.
+[27:10] What is the value of I?
+[27:12] VI-VZ by R.
+[27:15] Okay?
+[27:16] So, let me tell you.
+[27:17] The current coming from I,
+[27:24] which is equal to IB
+[27:28] plus IZ.
+[27:31] Okay?
+[27:32] Now, what do I say?
+[27:35] If you want to take out IZ maximum,
+[27:40] then I minus IB will be minimum.
+[27:45] Sir, what does IB mean by minimum?
+[27:47] Look, you want to operate BJT in your active region.
+[27:51] How much should be the minimum current to run in the active region?
+[27:56] That's it.
+[27:57] Minimum current required
+[28:02] Minimum current required
+[28:06] to operate
+[28:11] in active region.
+[28:16] Okay?
+[28:17] Means, if you take the current from below,
+[28:19] then BJT will not remain in the active region.
+[28:21] It will come out of the active region.
+[28:23] So, that is IB minus.
+[28:25] So, IZ maximum is here?
+[28:27] Not a point, son.
+[28:29] Point is the limit of VCE.
+[28:31] It is not IB.
+[28:33] Okay?
+[28:34] Why don't we call it Zener BJT?
+[28:36] Voltage regulator is saying that
+[28:37] Zener BJT has two devices in it.
+[28:39] Tomorrow, you will apply BJT with opium diode.
+[28:42] Then you will say opium BJT diode.
+[28:44] According to the work of the circuit,
+[28:46] it will be its name.
+[28:47] Why do students say it?
+[28:49] Because they are studying.
+[28:50] Why do teachers say it?
+[28:51] Because they are studying.
+[28:52] Now, I will not say it.
+[28:53] The kidney, lungs, heart, brain of the teacher.
+[28:55] You will say it a little.
+[28:56] There are components inside it.
+[28:58] But you will give the name according to the work.
+[29:00] Now, look.
+[29:02] Now, I say that power rating
+[29:05] of Zener diode
+[29:08] should be
+[29:10] greater than or equal to
+[29:12] VZ
+[29:13] into IZ max.
+[29:16] VZ into IZ max.
+[29:20] Isn't it?
+[29:21] Is it clear?
+[29:23] Tell me.
+[29:24] I told you that the maximum power dissipation
+[29:28] is greater than the diode of rating.
+[29:31] So that it doesn't burn.
+[29:32] Don't ask like this.
+[29:34] If someone asks tomorrow
+[29:36] that tell me the minimum power rating.
+[29:38] I told you that
+[29:39] Zener's questions were also asked a lot.
+[29:41] What are your mistakes?
+[29:43] If someone asks about the minimum power rating,
+[29:45] you will take the minimum current.
+[29:47] The minimum power rating means
+[29:49] at least how much the Zener diode of rating
+[29:52] should be kept safe.
+[29:54] So, it will have to be maximum for that.
+[29:56] If you put more than the maximum current
+[29:58] of rating, then your Zener diode
+[30:01] will always be safe.
+[30:04] That's why I asked so many questions on Zener.
+[30:07] Because what do kids think?
+[30:08] If they ask, then take out the min.
+[30:09] If they ask max, then take out the max.
+[30:11] They don't think conceptually.
+[30:13] That's why I put a sign of greater than or equal to
+[30:15] that if I ask from here
+[30:17] the minimum power rating, then it would be equal to that.
+[30:19] If you take out more than that,
+[30:21] then there is no problem.
+[30:23] It will be safe.
+[30:24] But less than that, the rating won't work.
+[30:26] Now the second question is
+[30:28] power dissipation in BJT.
+[30:30] Now see the power dissipation of BJT is
+[30:32] for that,
+[30:34] VCE is required here.
+[30:36] VCE.
+[30:38] And the second current is required.
+[30:40] Other than voltage, current IC.
+[30:42] I told you, the power dissipation of transistor
+[30:45] is VCE into IC.
+[30:47] And the second is
+[30:49] VBE into IBB.
+[30:51] But what did I tell you?
+[30:52] Let's ignore VBE into IB.
+[30:54] Because IB current is very very small.
+[30:57] Remember, I told you.
+[30:59] Total power dissipation is made of 2 powers.
+[31:01] VCE into IC.
+[31:03] VBE into IB.
+[31:05] But IB current is in microampere.
+[31:07] It is small.
+[31:08] So let's ignore that component.
+[31:10] Let's just take VCE into IC.
+[31:12] I know everything.
+[31:14] And I don't know why the concept of
+[31:16] VCE is revised.
+[31:18] Because if someone wrote it somewhere
+[31:20] and gave it a number,
+[31:22] MCQ type question.
+[31:24] What is the formula of power dissipation?
+[31:26] Now you will keep forgetting that
+[31:28] VBE into IBB.
+[31:30] Let's ignore it.
+[31:32] Because it is not like that.
+[31:34] Now what I tell you?
+[31:36] If you see from KVL,
+[31:38] here is its input voltage.
+[31:40] Here is its output voltage.
+[31:42] So what is VCE actually?
+[31:52] This will happen.
+[31:53] Okay?
+[31:54] This will be the VCE of transistor.
+[31:57] Okay?
+[32:00] The maximum power dissipation is not in BJT.
+[32:03] It is in your Zener.
+[32:05] Whatever the question of BJT is,
+[32:07] the power dissipation will come.
+[32:09] Dear, you can ask in EC.
+[32:11] The gate one is not correct in electrical.
+[32:13] There is a 4 number scope in electrical.
+[32:15] What is the theory?
+[32:17] Now I say that
+[32:19] IC will be approximately IE.
+[32:22] If you say that beta is large.
+[32:25] Correct?
+[32:26] If beta is large,
+[32:28] then IC will be approximately IE.
+[32:30] That is, V0 by RL.
+[32:35] So the power dissipation will come.
+[32:39] Okay?
+[33:04] Okay?
+[33:05] So this came.
+[33:06] It is clear how the power dissipation came?
+[33:08] Now if anyone asks,
+[33:10] tell maximum.
+[33:11] Dear, you know,
+[33:13] the voltage coming from the filter is fluctuating.
+[33:18] There is fluctuation in it.
+[33:21] So if it is like this.
+[33:32] So this will come.
+[33:33] Okay?
+[33:34] VI max minus V0 into V0 by RL.
+[33:38] Now value of resistance R.
+[33:41] Do you remember?
+[33:42] We have to take resistance R, dear.
+[33:45] For which, okay?
+[33:47] For which the zener should be kept inside the breakdown region.
+[33:52] Let the zener not come out of the breakdown region.
+[33:56] Okay?
+[33:57] So what do we say?
+[33:58] R must be chosen.
+[34:01] Vishal, dear,
+[34:02] now I am not going to talk about this topic.
+[34:05] Okay?
+[34:06] So please, if you want to read from me,
+[34:09] if you want to read on this channel,
+[34:10] then you can study.
+[34:11] If you want to discuss this topic,
+[34:12] I will not discuss it.
+[34:14] To be very frank.
+[34:16] R must be chosen such that
+[34:22] zener diode
+[34:27] operates
+[34:32] in breakdown region.
+[34:37] Okay?
+[34:41] Zener diode should not come out of the breakdown region.
+[34:47] Okay?
+[34:48] So at least give it a negative current.
+[34:51] The thing is, at least give it a negative current.
+[34:54] Now listen carefully what will happen in the worst scenario.
+[34:58] What will happen in the worst scenario?
+[35:01] We are saying I must be greater than equal to
+[35:04] IZ minimum
+[35:07] plus IB maximum.
+[35:10] It means,
+[35:12] suppose the current is less than the supply.
+[35:16] If the current is less than the supply,
+[35:18] then the I is minimum
+[35:20] and the base is pulling the maximum.
+[35:23] If the current is less than the supply
+[35:25] and the base is still pulling the maximum,
+[35:28] then how much current should the zener get?
+[35:32] That is the minimum current.
+[35:35] That is the minimum current.
+[35:37] Okay?
+[35:38] And what does the maximum current mean?
+[35:41] Limit of IB
+[35:46] so that
+[35:51] BJT
+[35:55] does not enter
+[35:59] saturation region.
+[36:02] Okay?
+[36:10] Limit of IB
+[36:12] such that Zener, BJT does not enter saturation region
+[36:15] because you know,
+[36:17] if you increase the IB of BJT,
+[36:19] then it will go to saturation
+[36:21] in one or two times.
+[36:23] It will go to saturation.
+[36:25] We did that just to get the power of a transistor.
+[36:29] Because we used IC there.
+[36:31] So, we said that IC and I are approximately the same.
+[36:34] That's it.
+[36:35] Okay?
+[36:36] Not just that,
+[36:37] ignore IB in KCL as well.
+[36:39] Now, what will be Imin?
+[36:41] Look,
+[36:48] because you know,
+[36:49] the input fluctuates.
+[36:52] Must be greater than equal to
+[36:54] Izmin
+[36:56] plus IB max.
+[36:58] So, the limit of R has come from here.
+[37:00] If you look carefully,
+[37:02] then R must be less than equal to
+[37:05] V Imin
+[37:07] minus Vz
+[37:12] by
+[37:15] Izmin
+[37:18] plus IB
+[37:21] max.
+[37:24] Okay?
+[37:25] V Imin minus Vz by Izmin
+[37:27] plus IB max.
+[37:29] Is that clear?
+[37:33] Is that clear?
+[37:37] Let's go.
+[37:39] Okay?
+[37:40] Now, let's move on to the next one.
+[37:42] Next is Shunt Voltage Regulator.
+[37:44] Now, I can understand from the name
+[37:46] that it is connected to the shunt of the BJT load.
+[37:48] It is connected to the parallel.
+[37:50] So, what is its name?
+[37:52] Shunt Voltage Regulator.
+[37:54] Shunt Voltage Regulator.
+[38:23] Hence, called as shunt.
+[38:29] Let me write it in short, Voltage Regulator.
+[38:32] Shunt Voltage Regulator.
+[38:34] Is that clear?
+[38:36] Now, dear,
+[38:38] first of all, let's understand the circuit.
+[38:40] Look,
+[38:41] if you put KVL here,
+[38:44] look a little,
+[38:48] if you put KVL like this,
+[38:50] then you can say that V0 is what?
+[38:53] Vz plus Vbe.
+[38:55] Was there Vz minus Vbe?
+[38:58] Or is Vz plus Vbe coming here?
+[39:01] Second thing is,
+[39:03] you can also say that the I coming here,
+[39:06] that is,
+[39:07] VI minus V0
+[39:10] by R.
+[39:12] And what can you say?
+[39:14] That the I coming here,
+[39:17] this is Iz
+[39:19] plus Ic
+[39:22] plus Il.
+[39:24] And how much is Il?
+[39:26] It is V0 by Rl.
+[39:28] If you see V0,
+[39:30] because it is a cross of the transistor,
+[39:33] then Vce by Rl.
+[39:36] V0 is equal to the collector emitter voltage.
+[39:39] How much is V0?
+[39:41] Vce.
+[39:44] The base emitter,
+[39:47] not the KVL of the collector,
+[39:49] the base emitter,
+[39:51] the collector base is the reverse bias.
+[39:54] Now again, first of all,
+[39:56] the same question,
+[39:58] how is the circuit output stabilizing?
+[40:00] Let's see.
+[40:01] We say that
+[40:05] if V0 is increased,
+[40:09] then V0 is Vz plus Vbe,
+[40:12] in which Vz is constant.
+[40:16] This means Vbe will increase.
+[40:28] If Vbe will increase,
+[40:30] then notice that
+[40:32] the Iz current
+[40:34] is also your base current.
+[40:37] This Iz current
+[40:39] is your base current.
+[40:54] Iz and Ib will also increase,
+[40:56] okay?
+[40:57] Now if Iz and Ib
+[40:59] start to increase,
+[41:01] then we have understood that
+[41:03] Ib is increasing.
+[41:04] Now this Ic is also
+[41:06] beta Ib, so Ic will also increase.
+[41:10] This also increased.
+[41:13] Now you can see one thing.
+[41:15] What did you write here?
+[41:17] Vi minus V0 by R.
+[41:19] Okay?
+[41:21] You wrote I is
+[41:23] Vi minus V0 by R.
+[41:27] So you don't think that
+[41:29] with V0 increasing,
+[41:31] I will decrease.
+[41:33] And the value of I was
+[41:35] Iz
+[41:37] plus Ic
+[41:39] plus Il.
+[41:41] Which means the current of the load
+[41:43] is I
+[41:45] minus Iz plus Ic.
+[41:47] Now I is your base current.
+[41:51] I is your base current.
+[41:53] Iz and Ic are increasing.
+[41:55] The first value is decreasing
+[41:57] and Iz and Ic are increasing.
+[41:59] So this will decrease.
+[42:01] If Il decreases, then V0
+[42:03] will decrease.
+[42:05] Il into Rl
+[42:07] will decrease.
+[42:09] Now did you stabilize the circuit?
+[42:11] Did you stabilize the circuit?
+[42:13] Did you stabilize the circuit?
+[42:15] Explain the second and last equation once.
+[42:17] Which one is this?
+[42:19] Left side
+[42:21] Iz equal to Ib.
+[42:23] Look at this.
+[42:25] The current of the zener is going
+[42:27] to the transistor base.
+[42:29] The current of the zener
+[42:31] is going to the transistor base.
+[42:35] But sir, how can Vb increase more than 0.7?
+[42:37] Why can't it increase?
+[42:39] Who said that more than 0.7
+[42:41] can't go to the voltage across the diode?
+[42:43] When the diode is replaced
+[42:45] with CVT model, constant voltage
+[42:47] drops, then let's assume 0.7.
+[42:49] But practically, the voltage of the diode
+[42:51] depends on its current.
+[42:53] If the current of the diode is more,
+[42:55] then it can come more than 0.7.
+[42:57] Look at the characteristic.
+[42:59] It is exponential.
+[43:01] The current will go back
+[43:03] according to the graph.
+[43:11] These are the questions.
+[43:13] Let's approximate the constant.
+[43:15] Is it like this?
+[43:17] Vb is always constant.
+[43:21] Now let's come again to the power rating of the zener diode.
+[43:23] Now look at the zener diode.
+[43:25] We understand that the base current is flowing.
+[43:27] Correct?
+[43:29] The base current is flowing in the zener diode.
+[43:31] So now if I talk to you about
+[43:33] the power rating of the zener diode,
+[43:35] then what will you say?
+[43:37] Pz
+[43:39] is
+[43:41] Vz into Iz.
+[43:43] Iz is
+[43:45] Ib.
+[43:47] So if I tell you
+[43:49] that the rating of the zener diode
+[43:51] is
+[43:55] that should be greater than equal
+[43:57] to Vz
+[43:59] into Iz max.
+[44:11] Now what is Ib max?
+[44:13] Maximum
+[44:15] base current
+[44:21] to keep BJT in active region.
+[44:25] Because if you go
+[44:27] above this
+[44:29] then
+[44:31] then BJT will go in saturation.
+[44:35] If you go above this,
+[44:37] then BJT will go in
+[44:39] saturation.
+[44:41] Is it clear?
+[44:43] Tell me, is this clear?
+[44:45] So you will have to take Ib max.
+[44:47] You will have to take Ib max.
+[44:51] If you are taking Ib max,
+[44:53] then you understand one thing,
+[44:55] Ib will also be maxed.
+[44:59] Shubham, what did I say?
+[45:01] Generally, we consider Vbe as 0.7.
+[45:03] But where we don't know
+[45:05] Vbe,
+[45:07] if we have given the diode data
+[45:09] like saturation, current, VT,
+[45:11] then we can
+[45:13] take Vbe out there.
+[45:15] It's not necessary that it is always 0.7.
+[45:17] But the biasing questions
+[45:19] have been asked, even the
+[45:20] regulator questions have been asked.
+[45:22] You won't believe it is 0.7.
+[45:24] How am I stabilizing you?
+[45:26] I am proving it.
+[45:27] We have to do it in numerical.
+[45:29] We have to believe it is 0.7 in numerical.
+[45:31] But some questions are like
+[45:33] as I told you, sometimes on current mirror
+[45:35] or on differential amplifier
+[45:37] sometimes.
+[45:38] So such questions can be made
+[45:40] where you have to
+[45:42] take Vbe out.
+[45:44] This can happen.
+[45:46] Now you see one thing kids,
+[45:48] the current coming from supply
+[45:50] was IZ
+[45:53] plus IC
+[45:55] plus IL.
+[45:57] So what do we say?
+[45:59] IZ was equal to IB.
+[46:01] So this is IZ.
+[46:03] So IC was beta IB.
+[46:04] So beta IZ
+[46:05] plus IL.
+[46:07] So you can take IZ out from here too.
+[46:09] If you want.
+[46:11] What will you write?
+[46:12] I minus IL
+[46:14] by 1 plus beta.
+[46:16] Now if you want IZ
+[46:18] maximum
+[46:20] then you can think
+[46:22] that
+[46:24] from supply
+[46:26] there is maximum current.
+[46:28] There is minimum current in load.
+[46:34] Divided by
+[46:36] 1 plus beta.
+[46:38] So this is your IZ
+[46:40] maximum value.
+[46:42] This is your IZ
+[46:44] maximum value.
+[46:46] Now sir,
+[46:48] how will we take IMAX out?
+[46:50] I was VI minus V0 by R.
+[46:52] So if you want
+[46:54] I maximum value.
+[46:56] I will write IMAX here.
+[46:58] How much will this be?
+[47:00] Because if the VI fluctuates
+[47:02] then VI max
+[47:04] minus V0
+[47:06] upon R.
+[47:08] Okay.
+[47:10] This will happen.
+[47:11] VI max minus V0
+[47:13] upon R.
+[47:14] The matter is cleared.
+[47:16] Tell me quickly.
+[47:17] VI max minus V0 upon R.
+[47:19] Clear?
+[47:21] Now power dissipation of
+[47:23] BJT.
+[47:25] Yes, what is VI max?
+[47:27] Power dissipation of BJT.
+[47:29] The power dissipation of BJT is
+[47:31] VCE.
+[47:33] VCE.
+[47:35] In VCE
+[47:37] multiply IC.
+[47:39] Power dissipation will come.
+[47:41] So here the power dissipation is
+[47:43] VCE
+[47:45] into IC.
+[47:47] VCE is V0 itself.
+[47:49] If you want
+[47:51] maximum of this power
+[47:57] then you will say
+[47:59] V0 into
+[48:01] IC max.
+[48:03] Sir, how will we take out IC max?
+[48:05] We will take it out.
+[48:09] Look.
+[48:10] IC is beta IB
+[48:12] and IB is the current of the Zener.
+[48:15] Beta IZ max
+[48:23] IMAX
+[48:24] minus IZ min
+[48:29] Sorry.
+[48:30] IMAX minus
+[48:32] IL min
+[48:36] Okay.
+[48:38] Take it out from this type.
+[48:40] And you have taken out IMAX.
+[48:42] Okay.
+[48:43] There was 1 plus beta below.
+[48:47] You have taken out IMAX.
+[48:49] Look.
+[48:50] VI max minus
+[48:52] V0 upon R.
+[48:53] VI max minus
+[48:54] V0 upon R.
+[48:55] Dear, after this class
+[48:57] I will give you the result of combat on telegram.
+[48:59] Today I will make a video about it.
+[49:01] Okay.
+[49:02] Don't you worry about anything.
+[49:04] And the rest I am thinking
+[49:06] I will plan for you in IMAX.
+[49:08] I am doing so many things.
+[49:10] Slowly, the body has stopped giving support.
+[49:12] It is going so hard work.
+[49:14] This body is not able to tolerate.
+[49:16] Now look at value of R.
+[49:18] Again, dear, what was the fund of value of R?
+[49:20] The fund of value of R was
+[49:22] that it should be enough
+[49:24] to ensure that Zener
+[49:26] gets the minimum current.
+[49:28] That is the
+[49:29] Ne current.
+[49:32] This value should be enough
+[49:34] to ensure
+[49:37] Zener stays in
+[49:39] breakdown region.
+[49:42] Look, the voltage regulator
+[49:44] will not be made without Zener diode.
+[49:47] Okay.
+[49:48] Without
+[49:50] Zener diode, it will not be made.
+[49:52] It will not be made.
+[49:59] Now how do we take this out, sir?
+[50:01] Now here, dear,
+[50:03] we will have to take the minimum value of IZ.
+[50:05] Okay.
+[50:06] We will have to take the minimum value of IZ.
+[50:08] So, first look at I.
+[50:10] Because R comes in I, right?
+[50:12] This was IZ
+[50:14] plus IC
+[50:16] plus IL.
+[50:18] IZ is
+[50:20] beta IZ, right?
+[50:26] So, we say
+[50:28] that, suppose I is getting the minimum.
+[50:31] It should still be greater than
+[50:34] 1 plus beta IZ minimum
+[50:38] plus IL maximum.
+[50:40] That the load took the maximum
+[50:42] and the supply was getting the minimum.
+[50:44] Still, Zener should get
+[50:46] at least the minimum.
+[50:48] Do you understand what I mean?
+[50:50] At least, Zener should get
+[50:52] at least the minimum that he should go
+[50:54] to the breakdown region.
+[50:56] Whereas, the average was
+[50:58] Rs. 8 and the expense was Rs.
+[51:00] Rs. 4.
+[51:01] Think about it.
+[51:02] Zener gets some kind of current.
+[51:04] The supply comes
+[51:06] minus the load.
+[51:08] So, the supply came less.
+[51:10] The load took the maximum.
+[51:12] Still, Zener got the minimum
+[51:14] that he should operate in the breakdown region.
+[51:16] Do you understand
+[51:18] how I am getting it?
+[51:20] Think about the worst case.
+[51:22] When will Zener get the minimum current?
+[51:24] If you figure this out
+[51:26] then you will get the R.
+[51:36] And Zener gets the minimum
+[51:38] always only when the supply
+[51:40] gets the minimum and the load
+[51:42] takes the maximum.
+[51:44] Dear, there are top 3000
+[51:46] across branches.
+[51:48] Not every branch has 3,000 children.
+[51:50] Do you understand that
+[51:52] every branch has 3,000 children?
+[51:54] The scholarship of 111 lakhs
+[51:56] is 3 crores in every branch.
+[52:00] R should be
+[52:02] less than or equal to.
+[52:08] Okay?
+[52:10] Yes, less than or equal to.
+[52:12] Now, let's look at the question.
+[52:16] Can you see this question?
+[52:18] This question is Halwa.
+[52:20] It is a very easy question.
+[52:22] You just have to read it once.
+[52:24] You have to see the circuit.
+[52:26] Make it.
+[52:28] You will get the same question.
+[52:30] It looks like it will break
+[52:32] if it is published in the exam.
+[52:34] It will get confused.
+[52:36] But it won't happen.
+[52:38] It won't happen with its students.
+[52:42] Let's make it.
+[52:44] Let's drink some water.
+[52:46] Let's make it.
+[53:12] Let's make it.
+[53:30] Dear, we are trying to
+[53:32] finish it by October end.
+[53:34] If it doesn't happen,
+[53:36] then let's consider it by October end.
+[53:38] It will be 95% analog.
+[53:40] Let's consider it by 20% minimum.
+[53:42] That means, it will be guaranteed
+[53:44] by November 1st week.
+[53:46] I will finish it by October
+[53:48] so that your gate syllabus
+[53:50] can be prepared in a very good way.
+[53:52] Because after this, the AC analysis
+[53:54] of BJT will come.
+[53:56] Then BJT will come to a halt.
+[53:58] Then I will first get the MOSFET.
+[54:00] I will get the JFET later.
+[54:02] Or you will say, if you get the JFET,
+[54:04] then you will get the JFET and then you will get the MOSFET.
+[54:06] Look, the transistor,
+[54:08] which is a shunt regulator shown in the figure
+[54:10] as a regulated output of 10V.
+[54:12] Here is 10V.
+[54:14] When input varies from 20 to 30V,
+[54:16] Zener diode
+[54:18] VZ is 9.5.
+[54:22] This is a shunt regulator.
+[54:26] 9.5.
+[54:28] And VBE is
+[54:30] 0.5.
+[54:32] And look, it is correct.
+[54:34] 9.5
+[54:36] or 0.5.
+[54:38] 9.5 or 0.5
+[54:40] will be 10.
+[54:42] 9.5 or 0.5
+[54:44] will be 10.
+[54:46] Neglect the current through RB
+[54:48] and find maximum power dissipation
+[54:50] through Zener diode
+[54:52] and BJT.
+[54:54] Maximum power dissipation through Zener diode
+[54:56] and BJT.
+[54:58] Mr. Murtazaji is asking when I will switch the organization.
+[55:00] Mr. Murtazaji, first tell me
+[55:02] which subjects I have studied on this channel.
+[55:04] If you are my student,
+[55:06] then you must know about this.
+[55:08] Which subjects I have dealt on this channel.
+[55:10] Tell me.
+[55:12] And if you have given the answer in the next 3 minutes,
+[55:14] then I will agree that you are a genuine student.
+[55:16] Otherwise, it is a fake idea.
+[55:18] If you are my genuine student,
+[55:20] then tell me.
+[55:22] Let's see.
+[55:24] Now, this 10V fund
+[55:26] is 4.9.5 or 0.5.
+[55:28] That is 10.
+[55:30] That is 10.
+[55:32] Neglect the current through RB.
+[55:34] That is 0 here.
+[55:36] This means
+[55:38] the current in Zener
+[55:40] will be the same current from here.
+[55:42] It will go like this.
+[55:44] Isn't it?
+[55:46] E.E.
+[55:48] Now, let's see which subject I have not taken.
+[55:50] Aman is asking which subject I have not taken.
+[55:52] So, you are telling me electrical, don't tell me electrical.
+[55:54] Tell me the subject.
+[55:56] I have not taken any electrical subject on this channel.
+[55:58] Tell me.
+[56:00] Come.
+[56:02] So, the current of Zener diode will go directly into its base.
+[56:04] Now, maximum power dissipation
+[56:06] through Zener diode and BJT.
+[56:08] If you want to take out the maximum power dissipation,
+[56:10] then you have to take the maximum voltage here.
+[56:12] Because when the supply voltage is taken
+[56:14] when the maximum voltage is taken,
+[56:16] when the supply voltage is taken
+[56:18] when the maximum voltage is taken,
+[56:20] then the current coming from the supply
+[56:22] will be maximum.
+[56:26] I just want to tell you what I want to tell you.
+[56:28] I am not a spammer.
+[56:30] I just wanted to tell you
+[56:32] this example.
+[56:34] Look, E comes in EDC and MFT.
+[56:36] I just wanted to tell you
+[56:38] that many children
+[56:40] or many ideas are planted
+[56:42] just to divert you
+[56:44] just to create a doubt in your mind.
+[56:46] Just to divert you
+[56:48] just to create a doubt in your mind.
+[56:50] Do you understand?
+[56:52] So, understand this.
+[56:54] No matter how big the organization is
+[56:56] no matter how big the revolution is
+[56:58] but this is the truth of this market.
+[57:00] And this is the live demo
+[57:02] of this thing in front of you.
+[57:04] It is not that I have sent someone
+[57:06] or I want to prove you.
+[57:08] So, trust your uncle.
+[57:10] I have known the market for so many years
+[57:12] that what people do.
+[57:14] You will see comments on many of my videos
+[57:16] that uncle studies so well.
+[57:18] But the organization is bringing revolution.
+[57:20] This is what he is doing.
+[57:22] Everyone's suffering.
+[57:26] So, uncle is not going anywhere.
+[57:30] Uncle is happy with his children
+[57:32] because Creatrix is my creation.
+[57:34] I will not leave this Creatrix.
+[57:36] No matter how big a platform I get
+[57:38] this is something
+[57:40] which I have done in the last 3 years
+[57:42] and we have increased the subscriber of this channel
+[57:44] by more than 3 times.
+[57:46] So, I am not going to leave this.
+[57:48] Now, look at this I.
+[57:50] Look at this I.
+[57:52] How much would be I?
+[57:54] This is the live demo of the fake ID.
+[57:56] Tell me.
+[57:58] The poor man must have asked somewhere
+[58:00] what uncle did not buy.
+[58:02] So, someone must have said
+[58:04] EDC EMT does not buy.
+[58:06] Right?
+[58:08] So, this is one ampere.
+[58:10] Now, one ampere is here.
+[58:12] Look here, this IZ is IB.
+[58:14] This will be beta IB.
+[58:16] So, I am saying
+[58:18] the current of one ampere
+[58:20] is IB
+[58:24] plus beta IB.
+[58:32] Look, IB has come out.
+[58:36] And look, I do not even know
+[58:38] how to approach the question.
+[58:40] I am telling you the truth.
+[58:42] I do not know the answer.
+[58:44] I am also doing it through the network.
+[58:46] Now, it is 0.01.
+[58:48] Now, it is 0.01.
+[58:50] What was the question?
+[58:52] The power dissipation of Zener and BJT.
+[58:54] Now, it will come out of Zener.
+[58:56] Now, it will come out of Zener.
+[59:00] And the funny thing is
+[59:02] the fake ID that we are writing
+[59:04] about the teacher
+[59:06] do some research about it.
+[59:08] Do some homework.
+[59:12] While counting our videos
+[59:14] we have made so many kids.
+[59:18] Now, look here.
+[59:20] This is BJT's
+[59:22] V0 at 10.
+[59:24] So, this is VCE.
+[59:26] This is IB.
+[59:32] Let me record it.
+[59:34] If we are recording our statement
+[59:36] like this,
+[59:38] think about how many memes
+[59:40] are surviving.
+[59:42] People are getting a job.
+[59:44] You guys stop that too.
+[59:48] Now,
+[59:54] it is 9.9.
+[59:56] Is it clear?
+[59:58] Tell me.
+[60:00] Look at the next one.
+[60:02] Look at the next one.
+[60:04] This is Zener.
+[60:06] Now, it is VCE 0.7.
+[60:08] Ever since it got sad
+[60:10] it is not 0.7.
+[60:12] What kind of scam did you do?
+[60:14] Right?
+[60:16] Kids got sad.
+[60:20] It is fun.
+[60:22] This is 50% BJT.
+[60:26] Explain it once.
+[60:28] Look, what did I do?
+[60:30] I asked for maximum power dissipation.
+[60:32] So, I took the maximum voltage
+[60:34] from the supply
+[60:36] from which the maximum current came.
+[60:38] First, I took the supply current
+[60:40] 30-10 upon 21 ampere.
+[60:42] I said this current
+[60:44] is going to Zener
+[60:46] and this is the current in the collector.
+[60:48] So, Zener and the current of the base is equal
+[60:50] and beta IB.
+[60:52] So, the sum of IB and beta IB
+[60:54] is equal to I.
+[60:56] So, IB came from here.
+[60:58] IB came from IZ.
+[61:00] Sorry, Zener's power came.
+[61:02] VCE is showing 10.
+[61:04] We took it out from beta IB.
+[61:10] I was scared of analog.
+[61:12] I did not tell the doubt of any child's analog.
+[61:14] I am studying analog in today's date.
+[61:16] So, I have also learnt.
+[61:18] You will also learn.
+[61:22] Now, son, I will have to see this.
+[61:24] Why do you feel that
+[61:26] if an academy takes any initiative,
+[61:28] then I keep it first.
+[61:30] What is on the 4th rank?
+[61:32] What is on the 5th? What is on the 6th?
+[61:34] Do you remember such things at a time?
+[61:36] Yes, if the VCE is not given,
+[61:38] then do not take 0.7.
+[61:40] Those questions are different.
+[61:42] I will show you in Zainul
+[61:44] where you have to take out the VCE.
+[61:46] You will get to know those questions.
+[61:48] Do not be scared.
+[61:50] I made a mistake by saying that
+[61:52] sometimes you have to take out the VCE.
+[62:04] After this, I will focus on the crash course.
+[62:08] I will start on EMT+.
+[62:10] I will start on EMT+.
+[62:12] But if I start one more comprehensive,
+[62:14] then I will not be able to take Brahmastra.
+[62:16] Or you will say that you broke it with a promise.
+[62:18] See, what did I say?
+[62:20] In the regulator circuit,
+[62:22] find the current through the Zener diode.
+[62:24] Let's go.
+[62:26] First, let's make a VZ.
+[62:28] Now, you put KVL.
+[62:38] KVL.
+[62:48] So, this is 11.3 milliampere.
+[62:52] 11.3 milliampere.
+[62:54] I divided it directly from 1 kilo ohm.
+[62:58] Now, take out the current here.
+[63:00] I.
+[63:04] So, what will be I?
+[63:06] 20 minus 12 by 220.
+[63:08] 8 by 220.
+[63:10] 4 by 110.
+[63:12] 2 by 55.
+[63:16] Let's go.
+[63:18] Now, this current will be divided into two parts.
+[63:20] Look, IB
+[63:22] and IZ.
+[63:26] Now, this current is IE.
+[63:30] Now, see.
+[63:32] If you know IE,
+[63:34] then you also know IB.
+[63:36] I am writing a little directly.
+[63:38] IE is 11.3 milliampere.
+[63:42] Divided by 1 plus beta.
+[63:44] This IB is done.
+[63:46] Plus IZ.
+[63:48] So, IZ will come from here.
+[63:50] Okay.
+[63:52] How much will it come?
+[63:54] Wait, let me check in the calc.
+[64:04] 0.036 is being made.
+[64:06] 36.14 milliampere.
+[64:08] This is also coming for us.
+[64:12] Tell me.
+[64:16] You won't believe in the breakdown of the Zener.
+[64:18] The voltage regulator.
+[64:20] Because Shishir,
+[64:22] the regulator is only when the Zener is in the breakdown.
+[64:24] You don't have to check in these questions.
+[64:26] Let's see.
+[64:30] In the series voltage regulator circuit,
+[64:32] VBE is given as 0.7.
+[64:34] VZ is given as 8.3.
+[64:36] Output voltage is V0.
+[64:38] This is V0.
+[64:40] All the resistances are coming.
+[64:42] 20, 30, 50, 50, 220 ohms.
+[64:46] Come on, make it.
+[64:50] Let me explain again.
+[64:52] I didn't do anything in this question.
+[64:54] This was 12.
+[64:56] This is 0.7.
+[64:58] KVL is 11.3.
+[65:00] 12 here is 20.
+[65:02] So I came.
+[65:04] Now I will go to I2.
+[65:06] This current is ammeter current.
+[65:08] If you know ammeter current, then take out the base.
+[65:10] How? Ammeter upon 1 plus beta.
+[65:12] Plus IZ.
+[65:14] Is equal to total current I.
+[65:16] So I came.
+[65:18] It will come.
+[65:20] The email will also come.
+[65:22] It is a very big database.
+[65:24] More than 30,000 children have tested it.
+[65:26] So it will take time to do things.
+[65:28] It will come.
+[65:30] Don't worry.
+[65:32] I have promised.
+[65:36] Now you can understand it in one time.
+[65:38] You have repeated the last two questions.
+[65:42] VBE is 0.7.
+[65:44] Why is VCE 0.7?
+[65:46] VCE is complete.
+[65:48] VCE will have to be taken out.
+[65:50] 20 minus 11 is 0.3.
+[65:52] So 8.7 will come.
+[65:54] VCE is 0.7.
+[65:56] VBE is 0.7.
+[65:58] What is coming?
+[66:00] 15.
+[66:02] Tell the rest of the people.
+[66:06] Sir, public all the videos.
+[66:08] I will not be able to do this.
+[66:10] I have left the public for so many days.
+[66:12] Now you do not cover it.
+[66:14] Still you remain.
+[66:16] 15 is coming.
+[66:18] The rest of the people also say 15.
+[66:20] Lock it.
+[66:22] Lock it.
+[66:24] Let's see.
+[66:26] Look.
+[66:28] It is 0.7 here.
+[66:32] And it is in reverse bias.
+[66:34] It is 8.3.
+[66:36] Now if you put KVL like this.
+[66:42] You can say that
+[66:44] The voltage here.
+[66:46] It will be 9 volts.
+[66:48] How?
+[66:50] The gain of 0.7
+[66:52] plus 8.3.
+[66:54] So here it is 9.
+[66:56] Now if I consider
+[66:58] that the current of the Zener
+[67:00] is very small.
+[67:02] Approximately 0.
+[67:04] Sir, why is it 0?
+[67:06] Because there is a very big resistance here.
+[67:08] So I considered that the current of the Zener
+[67:10] is almost 0.
+[67:12] Okay.
+[67:14] If the current of the Zener is almost 0.
+[67:16] Then it will come in 20 and 30 series.
+[67:18] So you can say that
+[67:20] it is total voltage V0.
+[67:22] So in 20 and 30 series,
+[67:24] put the voltage division.
+[67:26] And it should come 9.
+[67:28] So V0 will come out
+[67:30] to be 15.
+[67:32] Let me give you its logic.
+[67:34] How did I consider the current of the Zener as 0?
+[67:36] The current of the Zener
+[67:38] will be the sum of two things.
+[67:40] The base current.
+[67:42] And the current of this resistance.
+[67:44] The current in this resistance
+[67:46] is 0.7 by 50 kilo.
+[67:48] Do you understand?
+[67:50] It is a very small current.
+[67:52] And the base current is also very small.
+[67:54] So I considered that the current of the Zener
+[67:56] diode will be very small.
+[67:58] So you get these two series.
+[68:00] And then you get V0 from the voltage divider.
+[68:02] See how scary the circuit is
+[68:04] and how small the solution is.
+[68:06] Do you see?
+[68:08] This is what happens, son.
+[68:10] The big, big, long, and small questions
+[68:12] come out like this.
+[68:14] Because the data is given in them
+[68:16] and you can't finish it.
+[68:18] Now let's come to the current mirror circuit.
+[68:20] Current mirror.
+[68:22] That is, the mirror which
+[68:24] makes the current.
+[68:26] So current mirror is a circuit
+[68:28] whose output current
+[68:30] is a mirror image of the
+[68:32] reference current.
+[68:34] Or mirror image means it is
+[68:36] equal to the reference current.
+[68:38] So let's say
+[68:40] a current mirror circuit
+[68:42] a current mirror
+[68:44] a current mirror
+[68:46] See, this is also very easy.
+[68:48] First of all, I was also scared
+[68:50] of the current mirror circuit.
+[68:52] A current mirror circuit
+[68:54] produces
+[68:56] output
+[68:58] current
+[69:04] equal to
+[69:08] reference
+[69:10] current
+[69:16] Okay?
+[69:18] A current mirror circuit
+[69:20] makes an output current
+[69:22] which is equal to the reference current.
+[69:24] Okay?
+[69:26] Now, sir, what is the work of this?
+[69:28] What is the work of this?
+[69:30] Son, this works as if you remember
+[69:32] I had studied a biasing technique
+[69:34] constant current bias.
+[69:36] Where I told you that
+[69:38] you are bias a BJT with the help of this technique.
+[69:40] Now, suppose you have
+[69:42] an integrated circuit in which
+[69:44] there are many BJTs.
+[69:46] You want to bias
+[69:48] every BJT on the same current.
+[69:50] So there you can
+[69:52] apply a current mirror.
+[69:54] Where the copies of one current
+[69:56] will be made, the mirror images will be made.
+[69:58] And all the mirror images you will make
+[70:00] can be used to bias
+[70:02] each and every transistor.
+[70:04] Suppose I have 10 transistors.
+[70:06] I want to bias everyone on the same current.
+[70:08] So what will I do?
+[70:10] I will generate 10 copies of each current.
+[70:12] And I will connect each copy
+[70:14] from each transistor.
+[70:16] So 10 to 10 transistors will be bias on the same current.
+[70:18] Son, this current mirror circuit
+[70:20] is a
+[70:22] building block
+[70:26] building block
+[70:30] of
+[70:32] current sources
+[70:36] and
+[70:38] can be used
+[70:46] for
+[70:48] constant
+[70:50] current
+[70:52] biasing.
+[71:02] Okay.
+[71:04] These things can be useful in
+[71:06] constant biasing.
+[71:08] Now let's talk about the circuit analysis.
+[71:10] Shall we start the analysis?
+[71:12] Tell me, are you ready?
+[71:14] Shall we start the analysis?
+[71:16] Now, in the current mirror circuit
+[71:18] the first thing you have to see is
+[71:20] that as per KVL
+[71:22] both the bases are
+[71:24] connected
+[71:26] and both the ammeters are grounded.
+[71:28] Both the bases are connected
+[71:30] and both the ammeters are
+[71:32] grounded. So can you say that
+[71:34] both the bases are equal?
+[71:36] Can you say that?
+[71:38] Both the bases are equal.
+[71:40] There may be such questions where they are not equal
+[71:42] but this is a standard circuit.
+[71:44] Can you say that both the bases are equal?
+[71:46] So I can say
+[71:48] that
+[71:50] VBE1
+[71:54] I am saying this from KVL.
+[71:58] So can you say this from this logic
+[72:00] or can you say that from
+[72:02] IBE1 equal to IBE2
+[72:04] diode equation?
+[72:06] Here we are assuming that
+[72:08] both the BJT are identical.
+[72:10] Because you only
+[72:12] listen carefully to the voltage
+[72:14] equal.
+[72:16] You cannot say that
+[72:18] the current is not equal
+[72:20] for that saturation current
+[72:22] should also be equal.
+[72:24] Why, sir? Because the equation
+[72:26] of diode is that
+[72:28] the base current is
+[72:30] the base saturation current
+[72:32] e to the power VBE
+[72:34] by
+[72:36] eta VT
+[72:38] minus 1.
+[72:40] Okay? So what are we saying,
+[72:42] dear? That if
+[72:44] VBE is equal, then both the
+[72:46] current should be equal. Provided
+[72:48] both the saturation current
+[72:50] should also be equal.
+[72:52] And both the saturation current
+[72:54] should be equal. Both the BJT
+[72:56] should be identical.
+[72:58] Do you understand? Both the BJT
+[73:00] must be identical.
+[73:04] The light
+[73:06] should not be equal to the voltage,
+[73:08] it should be equal to the current.
+[73:10] The construction should also be
+[73:12] equal.
+[73:16] The size of the construction
+[73:18] should be equal.
+[73:20] The doping should be equal.
+[73:22] Then you can say that both the current
+[73:24] should be equal.
+[73:26] Now if both the current is equal
+[73:28] then you see this.
+[73:30] From KCL
+[73:32] you can say here
+[73:34] that I will be equal
+[73:36] to 2IB.
+[73:38] You can say
+[73:40] I will be equal to 2IB.
+[73:42] Sir, I want to talk to you
+[73:44] so dear, message me
+[73:46] on social media.
+[73:48] I became 2IB.
+[73:50] Now here if you
+[73:52] can say I reference
+[73:54] I and IC1.
+[73:56] I reference is the current
+[73:58] whose mirror image I want to make.
+[74:00] I not output current.
+[74:02] I reference is the current
+[74:04] whose mirror image I want to make.
+[74:06] Yes, it is a common emitter.
+[74:08] Now see this.
+[74:10] I say
+[74:12] from KCL
+[74:14] that I reference
+[74:16] is I
+[74:18] plus IC1.
+[74:20] And IC1 is
+[74:22] beta into base current.
+[74:24] So this means
+[74:26] what is the base current?
+[74:28] I reference
+[74:30] upon 2 plus beta.
+[74:32] Okay.
+[74:34] Now see this.
+[74:36] This is the collector current
+[74:38] of the other transistor.
+[74:40] The collector current
+[74:42] of the other transistor
+[74:44] will be beta times the base current.
+[74:46] So both are the same.
+[74:50] That is
+[74:54] this.
+[75:06] If you take the beta below
+[75:16] then this will come.
+[75:18] This is the relation you have to remember in the current mirror.
+[75:24] If the beta becomes very large, then here i0 becomes exactly equal to i reference.
+[75:34] And you will also see this in MOSFET, current mirror also comes in MOSFET.
+[75:38] And in MOSFET, as the base current is here,
+[75:41] So there is no base current, there is zero gate current.
+[75:46] So both are exactly equal there.
+[75:48] For example, here the factor of 1 plus 2 by beta is coming down,
+[75:51] There will be no such factor,
+[75:54] There your simply i0 and i reference will be equal.
+[75:58] Now do you know, if you use NPN transistor here,
+[76:03] NPN transistor,
+[76:05] So you call it current sink,
+[76:08] Because it is taking the current inside,
+[76:10] The current is going inside the transistor.
+[76:13] And if you see PNP,
+[76:15] So its current direction is wrong,
+[76:17] The current will go out of it,
+[76:19] So that is current source.
+[76:22] Sink means take it.
+[76:24] Here i0 and i reference are going inside BJT.
+[76:27] Look at the direction.
+[76:30] Look at the direction, i reference and i0 are going inside.
+[76:33] Tarun, the first question that I asked you today,
+[76:36] I asked for maximum power dissipation.
+[76:38] So maximum current will be required.
+[76:40] For maximum current, the supply voltage will be maximum.
+[76:45] Yes, if more than one BJT is coming on it,
+[76:48] I am a little patient,
+[76:50] This is clear, in which there are two BJT,
+[76:52] One's mirror goes to the other,
+[76:54] One's mirror image is going to the other,
+[76:57] Is this clear?
+[76:58] Remember this relation.
+[77:00] Now look, if beta is not high,
+[77:03] So in i0 and i reference,
+[77:05] There can be a lot of difference.
+[77:08] If beta is not high,
+[77:12] If beta is not high,
+[77:16] Then,
+[77:18] i0 and i reference
+[77:25] may be different.
+[77:29] So what do you have to do?
+[77:31] Then we use three transistors.
+[77:35] Then we use three transistors.
+[77:38] Don't forget this.
+[77:40] We understand its analysis.
+[77:42] Right?
+[77:43] We understand its analysis.
+[77:45] Now we will do it with basic.
+[77:47] Look, this current is i reference.
+[77:49] And do you know, we call this resistance as r reference.
+[77:52] The resistance in which there is i reference,
+[77:55] We call that resistance as r reference.
+[77:57] This is the supply.
+[77:59] Now look, this is an extra transistor, Q3.
+[78:02] This is an extra transistor, Q3.
+[78:04] Earlier it was Q1 and Q2.
+[78:06] So we will start from there with basic.
+[78:08] Both the VBEs are still the same.
+[78:11] Tell me.
+[78:13] Both the VBEs are still the same.
+[78:15] Your start will be from VBE.
+[78:18] VBE1 is equal to VBE2.
+[78:25] And both the transistors or both Q1 and Q2
+[78:30] are identical.
+[78:32] Both the voltage is same.
+[78:34] Both the transistors are identical.
+[78:36] It means both the current is same.
+[78:39] So you will say,
+[78:41] IB1 is equal to IB2.
+[78:44] Both the current are same.
+[78:46] Now if you apply KCL,
+[78:49] You will say,
+[78:50] IE3 is 2 times the base current.
+[78:55] Right?
+[78:56] IE3 is equal to 2 times the base current.
+[79:00] 2 times the base current.
+[79:03] Right?
+[79:05] Now look at this.
+[79:10] This is it.
+[79:15] Right?
+[79:16] What can we do now?
+[79:17] My aim is to remove this I0
+[79:20] which is IC2 which is beta IB.
+[79:23] So what does it mean?
+[79:25] Think about removing it.
+[79:27] You want I0 to be beta IB.
+[79:30] You want IB in which terms?
+[79:32] In the terms of I reference.
+[79:34] Which terms do you want?
+[79:36] In the terms of I reference.
+[79:37] Now look at this.
+[79:40] I reference is equal to 2 currents.
+[79:44] IB3 and IC1.
+[79:47] IB3 and IC1 are equal.
+[79:50] Think about it.
+[79:53] Right?
+[79:55] I reference
+[79:58] is IB3
+[80:01] plus IC1.
+[80:04] You write IB3
+[80:08] over 1 plus beta 3
+[80:12] and IC1 is beta IB.
+[80:16] Right?
+[80:17] Beta IB.
+[80:18] Now this is IE3.
+[80:20] IE3 is also IB.
+[80:34] This is it.
+[80:35] Now how much is IB from here?
+[80:40] Now look at the thing.
+[80:42] Beta plus 2.
+[80:49] So look at this.
+[80:50] Take all the KCL.
+[80:58] What was my aim?
+[81:00] I also wanted to remove it.
+[81:02] In terms of I reference.
+[81:04] If I do this once.
+[81:08] Right?
+[81:12] My job is done.
+[81:33] This is it.
+[81:34] Right?
+[81:35] Now look at this.
+[81:36] Earlier only 2 by beta was coming.
+[81:38] Now one more term came along with beta.
+[81:41] Which means that
+[81:43] if beta is not high.
+[81:45] Then also
+[81:47] I0 and I reference will come very close.
+[81:50] Then also I0 and I reference will come very close.
+[81:53] Now do you know why children get scared of these derivations?
+[81:56] They think that how will we derive in the exam?
+[81:59] How will we remember so much derivation?
+[82:01] My children don't remember this.
+[82:03] That is the most special thing.
+[82:05] What are we doing?
+[82:07] We are putting KCL on different nodes.
+[82:09] Our aim was to write Ic to beta IB.
+[82:11] And how to connect IB with I reference.
+[82:15] That's it.
+[82:16] Question is over.
+[82:17] Derivation is over.
+[82:18] Okay?
+[82:20] Now comes the multiple current source.
+[82:22] Which you also remain asking.
+[82:24] Sir, if multiple transistors are connected.
+[82:26] Then how will it look?
+[82:27] So look here.
+[82:28] It is not that one wire is cutting like this.
+[82:30] No, no.
+[82:31] Don't understand this at all, children.
+[82:33] This means that
+[82:35] all the transistors base
+[82:38] is connected with one wire.
+[82:40] It is connected with one wire.
+[82:42] I told you in real life.
+[82:44] Genuine.
+[82:45] That it is used for current biasing.
+[82:47] It is used like a current source.
+[82:49] I just told you.
+[82:50] Did you forget?
+[82:51] Do you understand this?
+[82:52] What is happening?
+[82:53] There are many transistors here.
+[82:54] Whose base terminal is connected with each other.
+[82:57] So look here.
+[82:58] There is one transistor.
+[83:00] Q1.
+[83:01] Q2.
+[83:02] Do like this.
+[83:03] Up to.
+[83:04] N transistor.
+[83:06] There is total N including this.
+[83:09] There is total N including this.
+[83:12] Now comes the thing.
+[83:13] Sir, what will happen here?
+[83:14] Look here.
+[83:15] This I current.
+[83:18] This I current.
+[83:20] This I current.
+[83:22] N IB.
+[83:24] How much will it be?
+[83:25] N IB.
+[83:26] And this I reference.
+[83:32] Is equal to all VBE.
+[83:34] I am saying here.
+[83:35] All VBE.
+[83:39] Are equal.
+[83:41] And.
+[83:43] All transistors are identical.
+[83:47] That is why I have done N IB.
+[83:51] All transistors are identical.
+[83:53] Everyone's voltage is same.
+[83:55] Now I say this I reference is the sum of IC and I.
+[84:01] I reference is.
+[84:03] IC plus I.
+[84:09] IC is beta IB.
+[84:12] Plus.
+[84:13] N IB.
+[84:16] So IB what happened?
+[84:19] I reference.
+[84:22] Over.
+[84:23] N plus beta.
+[84:26] Now if you see I naught.
+[84:29] I naught is the collector current.
+[84:31] So beta IB.
+[84:42] This came.
+[84:43] So instead of 2 by beta.
+[84:45] N by beta.
+[84:46] That means if you put N transistor.
+[84:48] Then the factor below.
+[84:51] That will not be 2.
+[84:53] It will be N.
+[84:54] Earlier there were two transistors.
+[84:56] So 2 by beta.
+[84:57] N transistor is N by beta.
+[85:00] So the more you connect the transistors.
+[85:02] The difference will be in I naught and I reference.
+[85:05] Because this term will increase.
+[85:07] So by connecting more transistors.
+[85:09] Then I naught and I reference are not equal.
+[85:11] Then both are different.
+[85:13] Clear.
+[85:15] Now trans linear property.
+[85:17] Trans linear property.
+[85:19] It says that.
+[85:20] Even if two transistors are equal.
+[85:23] But if their cross sectional area is different.
+[85:28] If their cross sectional area is different.
+[85:31] Then their currents will be different.
+[85:34] What will happen?
+[85:35] Their currents will be different.
+[85:37] So what happens?
+[85:39] Look.
+[85:41] I E1.
+[85:43] Is I E naught 1.
+[85:46] E to the power VBE1.
+[85:49] By VT.
+[85:52] Minus 1.
+[85:54] I E2.
+[85:56] I E2.
+[85:58] I E2.
+[86:00] I E2.
+[86:02] I E2.
+[86:04] I E2.
+[86:06] I E2.
+[86:08] I E2.
+[86:10] I E2.
+[86:12] I E2.
+[86:14] Since.
+[86:19] Both are equal in voltage.
+[86:22] So the bracket term is equal.
+[86:25] But this is I E1 by I E2.
+[86:29] Who is this equal?
+[86:31] I E naught 1.
+[86:33] By I E naught 2.
+[86:37] And if look.
+[86:38] The doping of transistors is equal.
+[86:41] Only the area is different.
+[86:43] If only the area is different.
+[86:45] Then this will give me I E1 by I E2.
+[86:50] So what are we saying here?
+[86:52] Transistors are identical.
+[86:54] In all respects.
+[87:00] In all respects.
+[87:03] Except.
+[87:06] Except.
+[87:08] Cross sectional area.
+[87:12] Okay.
+[87:14] So transistors are all the same.
+[87:16] They have the same doping.
+[87:18] They are all the same.
+[87:19] What is the difference?
+[87:21] What is the difference in their area?
+[87:23] So it is in the ratio of the area.
+[87:25] If you say this.
+[87:27] Beta is large.
+[87:29] If you say this.
+[87:30] Beta is large.
+[87:31] So the ratio of I naught and I reference.
+[87:34] It will be A2 by A1.
+[87:37] Do you understand?
+[87:40] Then 1 plus 2 by beta will not get the factor.
+[87:43] 1 plus 2 by beta will not get the factor.
+[87:45] Sai, you can write IB1.
+[87:47] You can write emitter current.
+[87:49] You can write both.
+[87:51] Do you understand?
+[87:52] You can write both things.
+[87:54] Is this clear?
+[87:56] So if beta is large.
+[87:58] The ratio of both the currents will come in the ratio of the area.
+[88:01] Sir, why are you saying this?
+[88:03] What is the benefit from this?
+[88:04] Son, this is the benefit from this.
+[88:06] Suppose I don't need the same current.
+[88:08] I want the current to be double.
+[88:10] So what will I do?
+[88:11] I will make the second transistor double in size.
+[88:14] Is it easy?
+[88:15] If I want a particular ratio in the current.
+[88:18] Then I will take the ratio of the area.
+[88:20] Then the current will come in the same ratio.
+[88:23] Son, the emitter current of both the currents
+[88:25] will be approximately I reference and I naught.
+[88:27] Because beta is large.
+[88:29] Look, if beta is large.
+[88:31] So the base current is almost zero.
+[88:34] Son, the base current is almost zero.
+[88:40] Okay.
+[88:41] So the reference I will come here.
+[88:46] So basically.
+[88:50] The collector current of both the currents is I reference and I naught.
+[88:53] So when the ratio of both the emitter currents is A1 by A2.
+[88:56] So what will be the ratio of the collector current of both the currents?
+[88:59] A1 by A2 or A2 by A1?
+[89:01] Think about it.
+[89:02] When both the emitter currents are making some ratio.
+[89:05] The base current is not equal.
+[89:07] So the same ratio will be made in the collector.
+[89:13] The base current is equally ignored by the collector emitter.
+[89:18] Now look at the modified current source.
+[89:21] Okay.
+[89:22] If we talk about the modified current source here.
+[89:26] Let me tell you one thing.
+[89:27] What do you have to do here?
+[89:29] First of all, we have to remove the I reference here.
+[89:34] I reference.
+[89:35] Do you know how to remove it?
+[89:37] See.
+[89:38] Let's go like this.
+[89:41] I mean, if I talk about the exam, the I reference will not be given in the exam.
+[89:45] We have to put KVL like this.
+[89:46] So what do we write?
+[89:48] VCC minus I reference.
+[89:53] R reference minus VBE1.
+[89:59] Is equal to 0.
+[90:02] So I reference comes out from here.
+[90:05] VCC.
+[90:15] And what is I0 here?
+[90:19] If both the transistors are identical.
+[90:22] 1 plus 2 by beta.
+[90:25] And your area is different.
+[90:27] So you do A2 by A1.
+[90:32] Understood?
+[90:33] It will come out like this.
+[90:34] If you say that the beta is large.
+[90:40] So I0 will be I reference into A2 by A1.
+[90:50] It will come out like this.
+[90:52] Okay.
+[90:53] Why is there no resistance later?
+[90:55] It means where later?
+[90:56] In the base.
+[90:57] What is the need for resistance in the base?
+[90:59] We have given a current limiting resistor.
+[91:02] The current is limited by itself.
+[91:04] Why will you put it in the base?
+[91:05] You have to put it.
+[91:06] There is no problem if you put it.
+[91:07] But why do you need to?
+[91:11] Now comes the next one.
+[91:12] Wilson current source.
+[91:14] All the transistors are identical here.
+[91:16] That means all the beta is the same.
+[91:20] Look at this.
+[91:21] Think like a network analysis.
+[91:23] Okay.
+[91:24] Don't think too much.
+[91:26] How do we remember?
+[91:28] We don't have to remember anything.
+[91:30] We will do it simply.
+[91:31] Here use of KCL and KVL.
+[91:34] Now look.
+[91:36] All the transistors are identical.
+[91:39] Here VBE1 and VBE2.
+[91:44] Both are equal.
+[91:47] So both the base currents are equal.
+[91:53] Now don't say that the base current of the third one will also be equal.
+[91:56] Its VBE is different.
+[91:59] Both of them are connected to the base.
+[92:01] The emitter is also connected to the emitter.
+[92:04] So both the base emitter voltage is equal.
+[92:08] So both the base currents are also equal.
+[92:11] Both the base currents are also equal.
+[92:14] The modified current source is based on the translinear property.
+[92:17] The translinear circuit is nothing like that.
+[92:19] What is the translinear property?
+[92:22] If you want a ratio in currents,
+[92:25] you can scale the area of the transistor.
+[92:27] That's it.
+[92:29] The current will depend on the temperature.
+[92:31] Which current is it?
+[92:32] Reverse saturation current.
+[92:34] It doubles for every 10 degree rise.
+[92:36] That's right.
+[92:38] Come.
+[92:39] Now look here.
+[92:40] The current coming here will be 2IB.
+[92:46] Your IB3 will be current here.
+[92:52] This I1 is the collector current.
+[92:55] It is beta IB.
+[93:00] Now what I say is that
+[93:02] I reference is
+[93:05] that is beta IB
+[93:08] plus IB3.
+[93:13] Now look here also beta IB.
+[93:17] So how much is here?
+[93:20] 2 plus beta IB.
+[93:23] Now if you want IB3,
+[93:29] if you want IB3,
+[93:31] then remove it from the emitter current.
+[93:35] So this is IB
+[93:38] into 2 plus beta
+[93:40] divided by 1 plus beta.
+[93:43] So I got IB from here, right?
+[93:47] IB is I reference
+[93:54] upon beta.
+[93:56] You can understand all this, right?
+[93:58] 2 plus beta
+[93:59] divided by 1 plus beta.
+[94:02] What is M?
+[94:03] It is M to remove I0.
+[94:05] I0 will be beta into IB3.
+[94:08] I0 will be beta into IB3.
+[94:10] IB3 is here, right?
+[94:16] I0 is beta into IB3.
+[94:23] And how much is IB3?
+[94:25] Look here.
+[94:27] IB into 2 plus beta divided by 1 plus beta.
+[94:37] So put the value of IB here.
+[94:40] IB3
+[94:45] When you put the value of IB,
+[94:48] what will you get? I reference.
+[95:04] This was it, right?
+[95:06] Sorry, beta.
+[95:09] Now if you divide
+[95:12] the whole term, right?
+[95:18] If you bring it down,
+[95:20] 1 plus beta upon beta plus 2 by beta,
+[95:25] then it will be 1 plus beta over 2 plus beta
+[95:29] plus 1 upon beta.
+[95:32] This is it, right?
+[95:34] Where did you get this?
+[95:37] I have taken the same beta of all three, right?
+[95:39] I have written it above.
+[95:40] Architect, all three transistors are identical.
+[95:43] If you write it, all the transistors are identical.
+[95:46] So everyone's beta is the same.
+[95:48] How did you solve it?
+[95:49] You have to solve it.
+[95:51] You don't have to remember anything in this.
+[95:53] So please don't be afraid of the current mirror.
+[95:55] Because you don't have to take anything in the exam.
+[95:58] You just have to take the brain.
+[96:00] The rest will be done.
+[96:02] Now a last circuit.
+[96:04] What is current steering?
+[96:06] What happens in current steering?
+[96:08] We can derive as much current as we want.
+[96:11] As much current as we want,
+[96:13] we can take as much current as we want.
+[96:15] How, sir?
+[96:17] Look.
+[96:19] You believe that
+[96:22] beta is large.
+[96:28] So I naught is
+[96:30] I reference.
+[96:32] Okay.
+[96:34] Now my children,
+[96:36] if you want to take out the current here,
+[96:39] there is only one transistor, I naught equal to I reference.
+[96:42] If you connect it in two parallel,
+[96:44] then two I naught comes.
+[96:46] That is two times I reference.
+[96:48] Okay.
+[96:50] Look here.
+[96:52] Here I naught will be I reference.
+[96:55] If you connect three transistors here,
+[96:58] then it will be three I reference.
+[97:01] So one way I told you,
+[97:03] when you want a ratio in current,
+[97:06] then you scale the area in that ratio.
+[97:08] And what is the second way?
+[97:10] The second way is,
+[97:12] you connect multiple transistors in parallel.
+[97:15] Did you understand?
+[97:17] Connect
+[97:19] multiple transistors in parallel.
+[97:25] Multiple transistors in parallel.
+[97:28] And
+[97:30] and
+[97:34] scale
+[97:36] area.
+[97:38] Scale the area.
+[97:40] Now if you look up,
+[97:42] there are PNP transistors.
+[97:44] If you look up,
+[97:46] there are PNP transistors.
+[97:48] So what is this?
+[97:50] These are the current source.
+[97:52] The upper ones will be the current source.
+[97:55] If you look down,
+[97:57] there are NPN transistors,
+[97:59] then they will become current sync.
+[98:01] The logic is clear.
+[98:03] And sir, how will we take out I reference?
+[98:05] Again, when you have to take out I reference,
+[98:07] then it looks like KVA.
+[98:09] So look here,
+[98:11] you will go like this.
+[98:15] I think this is the mistake here.
+[98:17] It should be like this.
+[98:21] So look here,
+[98:23] you will go like this.
+[98:25] You will go like this.
+[98:33] Okay?
+[98:37] After coming here,
+[98:39] then we came to the collector base.
+[98:47] Let's go with I reference.
+[98:49] Go like this.
+[98:51] Now here,
+[98:53] it is missing here.
+[98:57] There is a line drawn here.
+[99:07] Look, there will be a line like this.
+[99:11] Now from here, you will come down like this.
+[99:13] Then turn like this.
+[99:15] Then like this.
+[99:17] Then like this.
+[99:19] Do you understand how KVL will look?
+[99:21] How will KVL look?
+[99:23] It is clear. For I reference,
+[99:25] VEE minus VEB
+[99:27] which is 0.7.
+[99:29] Then minus I reference, R reference.
+[99:31] Then minus 0.7
+[99:33] equal to minus VEE.
+[99:35] It will come like this.
+[99:37] All the bottom ones are NPN.
+[99:39] All these are NPN.
+[99:41] All the top ones are PNP.
+[99:43] So we have just shown
+[99:45] that in this circuit,
+[99:47] you are using NPN and PNP
+[99:49] for both the transistors.
+[99:51] Okay?
+[99:53] It looks like such a dangerous circuit.
+[99:55] It is good that I took IEEE.
+[99:57] What is the difficulty in this?
+[99:59] Yes, all the bases will be connected.
+[100:03] Look, all the bases are connected.
+[100:07] Okay?
+[100:09] It is clear. There is nothing in this circuit.
+[100:11] It looks dangerous by looking at it.
+[100:13] We are saying that if you connect
+[100:15] multiple transistors in parallel,
+[100:17] then how many transistors will be connected
+[100:19] in parallel with the current?
+[100:21] We have not said anything else.
+[100:23] We have shown that how I reference
+[100:25] KVL.
+[100:27] Look at this question.
+[100:29] Make it fast.
+[100:31] Now you have learnt.
+[100:33] You have to take out IC2, i.e. I0.
+[100:35] I reference is given.
+[100:37] 25 micro ampere.
+[100:39] Come on.
+[100:41] Come on everybody.
+[100:51] We will start the AC model from tomorrow.
+[100:53] We will start the Amplifier topic.
+[100:55] It will be fun.
+[101:11] Come on.
+[101:31] What is coming?
+[101:33] Look.
+[101:35] IC2 will be
+[101:37] I reference
+[101:39] over
+[101:41] 1 plus 2 by beta
+[101:45] i.e.
+[101:47] 25 micro ampere.
+[101:53] What is coming?
+[101:55] 23.14
+[102:01] 23.148
+[102:05] milli ampere.
+[102:07] Did you get micro?
+[102:09] Micro ampere.
+[102:15] Okay.
+[102:16] Look at the next one.
+[102:17] The next one.
+[102:19] VBE is given.
+[102:21] 0.7, early voltage infinity.
+[102:23] There is no use of the early voltage here.
+[102:25] This means that R0 is infinity.
+[102:31] I0 is to be told.
+[102:33] Do it. It is a Halua question.
+[102:37] No. There is no use of it.
+[102:39] It will be useful in the amplifiers of the early voltage.
+[102:41] Look.
+[102:43] I have revised that part yesterday.
+[102:45] I have given the basic notes of BJT.
+[102:47] In which I had told the trans conductance.
+[102:49] I had told the RE resistance.
+[102:51] I had told the beta RE.
+[102:53] I had told the R0 funda.
+[102:55] That should be revised.
+[102:57] Because now everything will be used in the amplifier.
+[102:59] Right?
+[103:01] So I had read this for the amplifier.
+[103:03] The characteristic part.
+[103:05] The characteristic part.
+[103:07] The common base. The common emitter.
+[103:09] It will be used now.
+[103:11] 0.961.
+[103:13] See. The question is child.
+[103:15] You say that it is good.
+[103:17] Take it electrically.
+[103:19] I am saying that if you read it correctly.
+[103:21] Then it is an electrical child.
+[103:23] It is an EC child.
+[103:25] You will get both the ranks.
+[103:27] Now the EC people think that
+[103:29] I don't teach the EC people.
+[103:31] But look carefully.
+[103:33] 1.
+[103:35] 2.
+[103:37] 3.
+[103:39] 4.
+[103:41] 5.
+[103:43] 6.
+[103:45] 7.
+[103:47] 8.
+[103:49] 9.
+[103:51] 9.
+[103:53] 9.
+[103:55] 10.
+[103:57] 11.
+[103:59] 12.
+[104:01] once send it to me on telegram, what are you saying, there may be some other funda in it,
+[104:07] let's make it, now look at it, I have not even given reference, beta has also been given separately,
+[104:15] the area has also been given separately, B 2mA, beta has also been given separately,
+[104:30] once send it to me on telegram, because I will not comment anything until I see the question,
+[104:44] because what happens is that now someone will start telling the funda and the thing is that there is something else in the question,
+[104:50] then the rest of the children will also be wrong, let's make it, by the way, look carefully,
+[104:57] it is asking approximate value from here,
+[105:12] first complete it, I can't leave it in half analog, see,
+[105:22] what do we do first, first we take out i reference, okay, here i reference will be coming,
+[105:35] what will happen, let's put KVL like this, 0 minus i reference into 9.3 minus 0.7 is equal to minus 10,
+[106:00] so i reference is 1mA, now look, because beta is very large, 700 and 715,
+[106:14] so I will say i0 by i reference is approximately area of transistor 2 by area of transistor 1, that is 2,
+[106:26] so i0 is 2mA, okay, so the answer will be B, if beta is not large, then it will have to be done with basic,
+[106:43] I will put it in October, okay, till now nothing like this has not come,
+[106:52] which is less important for EE, now it is the basic of BJT, if you want to talk about less important, then don't amplify from tomorrow,
+[106:58] it is in syllabus, but it is less important, okay, so this is your assignment, do it in a good way,
+[107:07] okay, everyone will make an assignment, and apart from this, you can do special classes from here,
+[107:14] the DC part of BJT has been completed, the diode has been completed, then you can put PYQ, here gate PYQ by AIR1,
+[107:23] there is electrical EC of both, and if you join the academy right now, then there will be a lot of batches,
+[107:30] which we will announce very soon, so if you want, then you can take subscription of 3 months,
+[107:34] now if you are going to give 23, and if you are going to give 24, then take subscription of 1.5 years,
+[107:39] you know the code of 18 months, you will get 20% off, and if someone wants to take books plus test series,
+[107:51] then also 20% off is going on, so don't waste this opportunity, join quickly,
+[107:55] if you join the academy, then plus and iconic, you will get top educators, okay,
+[108:01] the class that will be taught, will be uploaded on the study material app,
+[108:05] test series, in iconic, there is a custom doubt solving, that is doubt on any new question,
+[108:10] so we will solve it, we will send printed notes at home,
+[108:14] there will be 1 to 1 live mentorship, there will be a strategy and study plan,
+[108:19] and there will be interactive open house session, where you can talk to the teacher on audio,
+[108:25] so as many questions as possible, there will be gate IIT new questions,
+[108:28] no, there is no such thing, there are such questions in gate IIT, which I am getting,
+[108:32] you should be clear on the concept, you should crack the question like that,
+[108:36] what will happen, the data will change, there will be very small things here and there,
+[108:40] everything will remain the same, now see what you have to do, you have to apply the code,
+[108:46] to get immediate 20% discount, and you have to choose the plan, you have to choose the duration,
+[108:53] if you see the results, we have produced 6 rankups in top 10 in electrical,
+[108:58] ranked in top 10 in EC, you can also be one of them next year,
+[109:03] if you join an academy using the code, and if there is a financial issue, then you can join EMI,
+[109:10] where you have to pay month on month fees, there will be no interest on EMI,
+[109:16] and here there is a minimum paperwork, only the basis card, the payment card is given,
+[109:21] there is a flexible tenure, how much time do you want to repay,
+[109:25] and see that the latest batch for the 24 children, we have started from math,
+[109:31] for the 23 children, we are going to announce the new batches soon,
+[109:35] the rest is my telegram channel, join it, here you will get regular notifications,
+[109:40] and if there is a query, then you can call my team on this number,
+[109:44] press the 2 button on YouTube, and press the 1 button on Iconic,
+[109:47] and here you can go to the Home page of the Anacademy app,
+[109:52] if you want the PDF of this session, go to the community,
+[109:55] go to Discover, you will get my community, all the PDFs are already uploaded there,
+[110:00] so thank you everyone, thanks a lot children, we will meet tomorrow,
+[110:03] a new start will be from tomorrow, we will start the AC analysis,
+[110:06] it is going to be very fun, the FOBIA of the AC analysis is going to be removed,
+[110:11] but you have to come live, so that you can answer your doubts,
+[110:16] we will talk about the assignment discussion, where are the assignments related,
+[110:20] I mean we have completed the BGT biasing,
+[110:24] we have done the assignment of BGT biasing, yes, the assignment of biasing is done,
+[110:28] there is only one more assignment, so I will do it later,
+[110:32] so thank you everyone, thanks a lot children, let's crack it.

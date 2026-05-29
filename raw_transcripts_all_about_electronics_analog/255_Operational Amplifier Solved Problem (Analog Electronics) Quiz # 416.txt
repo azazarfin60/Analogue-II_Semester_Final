@@ -1,0 +1,101 @@
+Title: Operational Amplifier Solved Problem (Analog Electronics) | Quiz # 416
+URL: https://www.youtube.com/watch?v=glvuXgTZnuU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and here we have been asked to find
+[00:16] the output voltage.
+[00:18] So if you observe this circuit, then here we have the capacitive transitive serve.
+[00:23] So as you can see here the gap between the two parallel plates is changing with the time
+[00:28] and its variation can be given by this expression.
+[00:32] That means here its capacitance is also changing with the time.
+[00:37] So here we have been asked to find the output voltage at t is equal to 2 millisecond.
+[00:43] So if you observe this circuit, then it is basically the differentiator circuit.
+[00:48] Now typically if you see the open based differentiator circuit, then in that circuit the input voltage
+[00:54] is changing with the time while the value of the capacitor is fixed.
+[00:59] So in that circuit, if I see the current through the capacitor and if the open is ideal,
+[01:05] then we can say that this capacitive current I see is equal to 0 minus V out divided by
+[01:11] RF.
+[01:13] So if the open is the ideal open, then this node will act as a virtual ground and since no
+[01:20] current is flowing into the open terminal, so this current should also be equal to I
+[01:24] see.
+[01:25] That means in that case this I see is equal to minus V out divided by RF.
+[01:32] And as you know, this current I see is equal to dq divided by dt.
+[01:37] That is the rate of change of charge.
+[01:40] And as you know, this q is equal to cv.
+[01:43] So we can say that this current I see is equal to d by dt times cv.
+[01:50] And if the capacitor is not changing with the time and this current I see is equal to
+[01:55] c times dv divided by dt.
+[01:59] That means in that circuit this open voltage V out is equal to minus RF times c times dv
+[02:06] divided by dt.
+[02:08] Because in that circuit, this input voltage is the function of time.
+[02:13] But if you observe this circuit, then here this input voltage is the fixed value, while
+[02:18] the capacitance is changing with the time.
+[02:21] Because if you see the expression of the capacitor and this c is equal to epsilon a divided by
+[02:26] d.
+[02:27] And in this case, if you see, then here the distance between the two plates is changing
+[02:32] with the time.
+[02:34] That means here this capacitance is also changing with the time.
+[02:38] So for the given circuit, if you write the same expression, then this current I see is
+[02:44] equal to d divided by dt times cv.
+[02:49] And in this case, since the input voltage is of fixed value.
+[02:52] So we can say that this current I see is equal to V times d divided by dt times c.
+[02:59] And that will be equal to 0 minus V out divided by RF.
+[03:05] That means for the given circuit, this output voltage V out is equal to minus RF times v times
+[03:12] dc divided by dt.
+[03:15] And further if you put the value of c, then we can say that this output voltage is equal
+[03:20] to minus RF times v times epsilon a times d by dt times 1 by d.
+[03:29] Because here both epsilon and the area of the capacitor are fixed.
+[03:34] That means the output voltage V out can be given as minus RF times v times epsilon times
+[03:41] a times dd divided by dt times 1 over dt.
+[03:47] So here we have been given that the distance between the two plates can be given as 10 to
+[03:53] the power minus 3 times 1 plus 0.1 times sin of 1000 pi t.
+[04:03] So this is the expression of the dt.
+[04:06] So now let us differentiate this expression and let us find the output voltage V out at
+[04:11] t is equal to 2 millisecond.
+[04:14] That means here this output voltage V out is equal to minus RF times v times epsilon a
+[04:22] times d divided by dt times 1 over dt.
+[04:28] So further it can be written as minus RF times v times epsilon a times minus 1 divided
+[04:37] by d of t whole square times d divided by dt times this d of t and that is equal to n
+[04:47] to the power minus 3 times this 1 plus 0.1 times sin 1000 pi t.
+[04:58] So first of all let us differentiate this expression and then after we will put the value
+[05:03] of this RFV as well as the d of t.
+[05:06] That means this V out is equal to minus RF times v times epsilon a times this 1 divided
+[05:14] by V of t whole square times 10 to the power minus 3 times 0.1 times the differentiation
+[05:24] of this sin that is equal to cos of 1000 pi t and further the differentiation of this
+[05:32] 1000 pi t is equal to 1000 pi.
+[05:36] So in the numerator after the differentiation we will have all these terms.
+[05:41] So now let us put the value of this RFV as well as the d of t.
+[05:46] But here we also need to know the value of this epsilon a.
+[05:51] So to get this value we have been given that this capacitance c is equal to 2 picofaraday
+[05:57] at t is equal to 0 millisecond.
+[06:01] So we know that this c is equal to epsilon a divided by d and here this d can be given
+[06:09] as 10 to the power minus 3 times 1 plus 0.1 times sin of 1000 pi t.
+[06:20] So in this expression if you put the value of t is equal to 0 then we can easily find
+[06:24] the value of the epsilon a.
+[06:27] And as you know the sin of 0 is equal to 0 that means this c is equal to this epsilon
+[06:33] a divided by 10 to the power minus 3 times 1 plus 0.
+[06:39] Or we can say that this epsilon a is equal to 10 to the power minus 3 times 2 picofaraday.
+[06:47] That is equal to 2 times 10 to the power minus 15 and its unit is equal to ferradodometer.
+[06:56] So this is the value of the epsilon a.
+[06:59] So let us put this value of the epsilon a in the earlier expression and let us find the
+[07:04] output voltage at t is equal to 2 millisecond.
+[07:08] So in this expression this RF is equal to 1 mega ohm and the value of v is equal to 5
+[07:15] So if you put all these values and this output voltage v out can be written as 1 mega
+[07:20] ohm times 5 volt times 2 times 10 to the power minus 15 and further we will have this 10
+[07:29] to the power minus 4 times 10 to the power 3 times pi times cos of 1000 pi t.
+[07:38] And in the denominator we will have this d of a square and that is equal to and to
+[07:45] the power minus 6 times 1 plus 0.1 times sin of 1000 pi t whole square.
+[07:54] So in this expression if you put t is equal to 2 millisecond then this cos of this 1000
+[08:02] pi t is equal to cos of 2 pi and that is equal to 1.
+[08:09] Similarly the sin of 1000 pi t will become sin of 2 pi and that is equal to 0.
+[08:20] That means this will be the 2 values of the cos and sin at t is equal to 2 millisecond.
+[08:27] So if you put these 2 values of sin and cos and further this expression can be written
+[08:31] as this v of t is equal to this 10 to the power 6 times 5 times 2 times 10 to the power
+[08:40] minus 15 times 10 to the power minus 1 times pi divided by 10 to the power minus 6 times
+[08:50] 1 plus 0. So that is equal to 10 to the power 13 times 10 to the power minus 16 and here
+[08:59] we will also have this pi or if you further simplified then we can write it as this pi times
+[09:06] 10 to the power minus 3 volt.
+[09:09] But we can say that at t is equal to 2 millisecond this output voltage is equal to pi milli
+[09:15] volt. So from this we can say that this output voltage v out at 2 millisecond is equal
+[09:22] to pi milli volt and therefore for the given question this b is the correct answer.

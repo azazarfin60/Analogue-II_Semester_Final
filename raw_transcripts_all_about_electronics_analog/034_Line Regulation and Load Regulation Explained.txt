@@ -1,0 +1,232 @@
+Title: Line Regulation and Load Regulation Explained
+URL: https://www.youtube.com/watch?v=Y79V0f9corc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will learn about the line and the load regulation.
+[00:16] And we will understand that by these parameters are very important for selecting any power
+[00:22] supply or the voltage regulator for your application.
+[00:26] So if you take any ideal power supply, then at the given load, even if there is a variation
+[00:32] in the input line voltage, then also it should provide the constant output.
+[00:38] That means the variation in the line voltage or the input voltage should not have any effect
+[00:43] on the output voltage.
+[00:45] Similarly, at the given input voltage, even if there is a variation in the load current,
+[00:51] then also it should not affect the output.
+[00:54] And its output should remain constant.
+[00:57] But in the actual power supply, if you see, then we do get some output voltage variation
+[01:02] because of the change in the line voltage and the load current.
+[01:06] So this line regulation and the load regulation shows that how well the power supply or the
+[01:12] voltage regulators are able to maintain the constant output voltage despite the change
+[01:17] in the line voltage or the load current.
+[01:20] So one by one, let us understand them in detail.
+[01:23] And let us also see for the different power supplies and the voltage regulators, how
+[01:28] these parameters are represented in the different ways.
+[01:32] So as I said earlier, this line regulation shows that how well the power supply is able
+[01:38] to maintain the constant output voltage despite the change in the line voltage.
+[01:44] So mathematically, it can be expressed as the change in the output voltage due to the
+[01:49] change in the input voltage.
+[01:52] And if you see the unit of this line regulation, then typically it is represented in the
+[01:57] middle of the world per world.
+[01:59] And in many textbooks, you will also find that in the percentage, it is also defined
+[02:04] as this delta V out delta by delta V in times 100.
+[02:09] But where is one we will see that in the data sheets of the power supply, when this
+[02:13] line regulation is defined in the percentage, then it is defined slightly differently.
+[02:19] But mathematically, this is how it can be represented.
+[02:23] So let us take few examples and let us understand how to find the line regulation for the
+[02:29] any power supply.
+[02:31] So let us say we have a one five volt voltage regulator.
+[02:34] And for this voltage regulator, the input voltage range is from 7 to 12 volt.
+[02:41] And for this input variation, the change in the output voltage is from 4.95 volt to
+[02:46] the 5.05 volt.
+[02:49] So based on that, let us find its line regulation.
+[02:53] So we have seen that this line regulation can be defined as the change in the output
+[02:58] voltage to the change in the input voltage.
+[03:02] So here, the change in the output voltage is from the 4.95 volt to the 5.05 volt.
+[03:09] And similarly, the change in the input voltage is from 12 volt to the 7.
+[03:15] That means here, this line regulation is equal to 100 milli volt divided by 5.
+[03:21] Or we can say that that is equal to 20 milli volt per volt.
+[03:27] That means if the input voltage changes by the 1 volt, then the change in the output
+[03:32] voltage will be equal to 20 milli volt.
+[03:35] That means for the given voltage regulator, when the input voltage is equal to 8.5 volt,
+[03:40] at that time, we are getting the nominal output voltage.
+[03:45] That is equal to 5 volt.
+[03:47] But whenever the input goes to the 7 volt, then the output will change by the 50 milli
+[03:52] volt.
+[03:53] And it will become 4.95 volt.
+[03:56] So from the line regulation, we know that for the given change in the input voltage,
+[04:02] how much output voltage will change.
+[04:05] So while selecting the power supply or the voltage regulator for any application, by
+[04:10] looking at this parameter, we know that however power supply will remain stable against
+[04:16] the change in the input voltage or the line voltage.
+[04:20] So for the voltage regulators, typically, the input is a DC voltage or the 100 regulated
+[04:26] DC voltage.
+[04:27] But when it comes to the power supplies, like the SMPS power supply or the linear power
+[04:33] supply, then the input is the AC line voltage.
+[04:37] So normally, the AC line voltage is equal to 230 volt.
+[04:42] But typically, this line voltage may change by the plus minus 10%.
+[04:48] But here, let us consider little broader range.
+[04:52] And let's say, this AC line voltage changes between the 200 volt to the 260 volt.
+[04:58] So even with this change, the change in the DC output voltage should be as minimum as
+[05:03] possible.
+[05:05] So let's say, for a some 5 volt DC power supply, when the line voltage is changing from
+[05:11] the 200 volt to the 260 volt, then there is a change in the output voltage from the 4.9
+[05:17] volt to the 5.1 volt.
+[05:19] So for that, let us find its line regulation.
+[05:23] So once again, we will use the same equation.
+[05:27] So here, the change in the output voltage is from 5.1 volt to the 4.9 volt.
+[05:33] And similarly, the change in the AC input voltage or the line voltage is from 260 volt to
+[05:39] the 230 volt.
+[05:41] That means here, this line regulation is equal to 200 milli volt divided by 60 volt.
+[05:47] And if you calculate the value, then that will come out as 3.33 milli volt per volt.
+[05:54] That means for that given DC power supply, if the line voltage changes by the 1 volt,
+[05:59] then the output voltage will change by 3.33 milli volt.
+[06:04] So here, if you compare the specs of the line regulation for the given DC power supply
+[06:09] and the voltage regulator, that we have discussed earlier, then it seems that this SMPS based
+[06:15] power supply provides the meta line regulation.
+[06:19] Because if you see over here, then for this DC power supply, its line regulation is equal
+[06:25] to 3.3 milli volt.
+[06:27] While for the earlier voltage regulator, that was equal to 20 milli volt per volt.
+[06:33] But in reality, if you see the actual variation in the voltage, then for this SMPS based DC
+[06:38] power supply, that variation is more.
+[06:42] Because here, that is varying from 4.9 volt to the 5.1 volt.
+[06:47] Because here, if you see the change in the line voltage, then that is also more.
+[06:52] And in fact, that will remain true for any DC power supply.
+[06:57] So typically, for the power supplies, this line regulation is expressed in the percentage.
+[07:04] So typically in the data sheets, when this line regulation is mentioned in the percentage,
+[07:09] then it is defined over the specific input range.
+[07:13] For example, let's say, for some 5 volt DC power supply, the line regulation is equal
+[07:19] to plus minus 0.5 percent.
+[07:22] And it is defined over the input range of 100 volt to the 280 volt.
+[07:26] So with the given line regulation, if you see the change in the output voltage of the power
+[07:30] supply, then that will be equal to 0.5 percent of the 5 volt.
+[07:35] But the 5 volt is the nominal voltage of the DC power supply.
+[07:39] And if you calculate the value, then that will come out as 25 milli-volt.
+[07:44] So if we consider the plus minus 0.5 percent variation, then the change in the output
+[07:49] voltage will be equal to plus minus 25 milli-volt.
+[07:53] So we can say that the change in the output voltage will be from 4.975 volt to the 5.025
+[08:00] volt.
+[08:01] And in fact, that is a very good line regulation.
+[08:05] So for the power supplies, typically, this line regulation is mentioned in the percentage.
+[08:12] But if you see the voltage regulators or the LDOs, that is the low-drop-out voltage
+[08:17] regulators, for them, this line regulation is typically mentioned in the milli-volt per
+[08:22] volt or the percentage per volt.
+[08:26] Because many of the voltage regulators and the LDOs are typically used in the low voltage
+[08:31] applications.
+[08:33] And in such applications, many times, a very tight tolerance are required.
+[08:38] So in such applications, this line regulation is mentioned in the milli-volt per volt.
+[08:44] So we have already seen that how the line regulation is represented in the milli-volt per
+[08:49] volt.
+[08:50] But similarly, many times, this line regulation is also represented in the percentage per
+[08:57] volt.
+[08:58] So this line regulation in the percentage per volt is defined as the change in the output
+[09:03] voltage.
+[09:04] That is normalized to the nominal voltage divided by the change in the input voltage.
+[09:09] And for the percentage, it is multiplied by the 100.
+[09:13] So once again, let us take one example.
+[09:16] And through that, let us find out the line regulation in percentage per volt for the
+[09:21] given same 5 volt regulator, which you have seen earlier.
+[09:25] So we have seen that for the earlier 5 volt regulator, the input voltage was varying
+[09:31] from 7 volt to 12 volt.
+[09:33] When the change in the output voltage was from 4.95 volt to the 5.05 volt.
+[09:40] So if we see the line regulation in percentage per volt, then it can be given as this 100 milli-volt
+[09:46] divided by the 5 volt.
+[09:48] That is the nominal voltage of the regulator divided by the change in the input voltage.
+[09:53] So in this case, that is also equal to 5 volt.
+[09:57] So if you further simplify it, then it will come out as 0.4% per volt.
+[10:03] So from this, we can say that with the 1 volt change in the input voltage, the output
+[10:08] of this regulator will change by the 0.4% of its nominal voltage.
+[10:14] So in this case, with the change in the 1 volt of the input voltage, the voltage regulator
+[10:19] output will change by the 0.4% of the 5 volt.
+[10:23] So here, if the input voltage changes by the 2 volt, then the change in the output voltage
+[10:30] will be equal to the 0.8% of the 5 volt, that is equal to 40 milli-volt.
+[10:36] So this percentage per volt representation also gives us the clear indication that when
+[10:41] the input changes in the specific range, then what is the expected change in the output
+[10:46] voltage?
+[10:47] And many times, for the adios also, this line regulation is mentioned in the percentage
+[10:53] per volt.
+[10:54] So let us take one more example to understand it clearly.
+[10:59] So let us say we have a 3 volt adio and its line regulation is equal to 0.1% per
+[11:05] volt.
+[11:06] And let us say, the input to this adio is varying from the 4 volt to the 3.5 volt.
+[11:13] Let us say, the input to the adio is a paired via the battery.
+[11:18] Where the battery voltage is changing from the 4 volt to the 3.5 volt.
+[11:24] That means initially, it is equal to 4 volt and as the battery discharges, then it reaches
+[11:30] to the 3.5 volt.
+[11:32] So here we can say that the change in the input voltage is equal to 0.5 volt.
+[11:38] So once again, the line regulation in the percentage per volt can be given by this
+[11:43] expression.
+[11:45] So here, to find the delta V out, we need to multiply the line regulation with the delta
+[11:50] V in as well as the nominal voltage.
+[11:54] That means here, this 0.1% will be multiplied by this 0.5 volt as well as the 3 volt because
+[12:01] the nominal voltage for the adio is equal to 3 volt.
+[12:05] And moreover, it will also get divided by the 100.
+[12:09] So if we see the change in the output voltage, then that is equal to 1.5 milli volt.
+[12:15] We chose that, even if the input changes from the 4 volt to the 3.5 volt, then the change
+[12:20] in the output voltage is equal to only 1.5 milli volt.
+[12:25] So while selecting the voltage regulators or any power supply, we should select the
+[12:30] such power supply, which has the lower line regulation.
+[12:34] So that, even if there is any variation in the input voltage or the line voltage, the
+[12:39] change in the output voltage will remain minimal.
+[12:43] So similarly, let us see the load regulation.
+[12:47] So the load regulation defines that how well the power supply or the voltage regulator
+[12:53] maintains the constant output voltage despite the change in the load current.
+[12:58] So this parameter is also very important because many times, the power supply will see
+[13:03] the abrupt change in the load current.
+[13:05] And in such case, the change in the power supply voltage would be minimum.
+[13:10] For example, the power supply, which is driving the CPU, might be operating in the sleep mode
+[13:16] at one time.
+[13:18] But suddenly at another second, it is operated at the full capacity.
+[13:23] So during this abrupt change in the load, if there is a sudden drop in the voltage,
+[13:27] you under certain limit, then it is quite possible that the CPU may not operate properly.
+[13:33] So that is why this load regulation is also very important specification of the power
+[13:39] supply as well as for the many voltage regulators.
+[13:43] So mathematically, this load regulation can be given as the no load voltage minus full
+[13:50] load voltage divided by full load voltage.
+[13:53] And for the percentage, of course, it is multiplied by the 100.
+[13:57] So here, this VNL is the no load voltage of the power supply when the current through
+[14:03] the power supplies minimum.
+[14:05] And similarly, this VFL is the full load voltage of the power supply when the current through
+[14:10] the power supplies maximum.
+[14:13] So for any good power supply or the voltage regulator, the value of this load regulation
+[14:19] should be as minimum as possible.
+[14:21] So let us understand that by taking one example.
+[14:26] So let's say we have a 5-volt to ampere power supply.
+[14:30] So for this power supply, let's say the no load voltage is equal to 5-volt.
+[14:36] And similarly, the full load voltage is equal to 4.95-volt.
+[14:42] That means whenever the current through the power supplies maximum at that time, this
+[14:46] full load voltage is equal to 4.95-volt.
+[14:50] So based on that, let us find its load regulation.
+[14:54] So as we have seen, this load regulation can be given as the no load voltage minus full
+[15:01] load voltage divided by full load voltage.
+[15:04] So here, if you put the value of the no load voltage and the full load voltage, then the
+[15:09] percentage load regulation will come out as 1.01%.
+[15:14] For approximately, we can say that that is equal to 1%.
+[15:19] So in the data sheets, for any power supply, if its load regulation is equal to plus minus
+[15:24] 1%, it means that even at the full load, its output voltage will not change by more
+[15:30] than plus minus 1%.
+[15:33] On the other end, suppose we have another power supply with the same specs, but with the
+[15:38] value of the load regulation as plus minus 0.5%, then that power supply will perform better
+[15:44] at the full load.
+[15:46] That means while selecting the power supply, we should always check this specification.
+[15:52] Now many times for the load robot voltage regulators or the LDOs, this load regulation
+[15:58] is also defined in the milli-volt per milli-ampere.
+[16:02] So it shows that when the load current changes in the milli-ampere, then how the output voltage
+[16:07] will change in the milli-volt.
+[16:09] So now, let us take the example of the 1.3-volt LDO.
+[16:14] So let us say for the given LDO, the current is changing by the 100-volt.
+[16:19] And with that change in the load current, the change in the output voltage is equal to
+[16:24] 10 milli-volt.
+[16:25] So we can say that for this LDO, the load regulation is equal to 10 milli-volt divided
+[16:30] by 100 milli-ampere, and that is equal to 0.1 milli-volt per milli-ampere.
+[16:36] So we can say that for this LDO, when the load current changes by even a 1 milli-ampere,
+[16:42] then the change in the output voltage is not more than 0.1 milli-volt.
+[16:47] So by knowing this pack, the designer can select the specific regulator or the power supply
+[16:52] based on the load current.
+[16:54] And based on that, he can find units designed.
+[16:58] And that is why this load regulation is also very important parameter.
+[17:03] So I hope in this video you understood what is line and the load regulation, and while
+[17:08] selecting any power supply or any voltage regulator for any specific application, why
+[17:13] it is important to check these specifications.
+[17:17] So if you have any question or suggestion, then do let me know here in the comment section
+[17:22] below.
+[17:23] If you like this video, hit the like button and subscribe the channel for more such videos.

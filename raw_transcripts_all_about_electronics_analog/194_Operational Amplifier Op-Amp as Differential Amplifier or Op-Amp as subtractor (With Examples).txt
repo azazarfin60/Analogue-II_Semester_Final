@@ -1,0 +1,183 @@
+Title: Operational Amplifier: Op-Amp as Differential Amplifier or Op-Amp as subtractor (With Examples)
+URL: https://www.youtube.com/watch?v=ltVspUteuuI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:22] So in this video, we will see how to design the differential amplifier or a subtrector
+[00:27] circuit using the opamp.
+[00:29] Now we already know that this opamp is differential amplifier, which amplifies the difference between
+[00:35] the inverting and the non-inverting terminal.
+[00:38] But whenever this opamp is used in the open loop configuration, then the gain of this
+[00:42] opamp is quite high.
+[00:44] And because of that, your output will always be get saturated.
+[00:48] And to avoid that, we always need to use this opamp in a feedback circuit.
+[00:52] So then we had seen this inverting and the non-inverting opamp configuration, where we
+[00:57] have applied the input either to the non-inverting or the inverting input terminal.
+[01:02] So now let us see how by combining the inverting and the non-inverting opamp configuration,
+[01:07] we can design the differential amplifier.
+[01:09] So by using this configuration, we can use this opamp as a differential amplifier in a
+[01:14] true sense.
+[01:15] Because here we can control the gain of the opamp by controlling the value of this resistor
+[01:19] R2 and R1.
+[01:21] So let us see how this configuration will act as a differential amplifier.
+[01:25] So now if you closely look this configuration, it is the combination of inverting and the
+[01:30] non-inverting configuration.
+[01:32] So if you consider this voltage source V1 alone, and consider this voltage source V2 as
+[01:38] 0, then it will be the inverting configuration.
+[01:41] Similarly, if you consider only this voltage source V2 and if you consider this voltage
+[01:46] source V1 as 0, then it will be the non-inverting configuration.
+[01:50] So this configuration is the combination of inverting and the non-inverting configuration.
+[01:55] So to get the final output, we need to use the superposition theorem.
+[01:59] So what we will do, we will consider only one voltage source at a time and we will consider
+[02:04] the remaining voltage source as a zero.
+[02:06] So first we will consider this voltage source V2 as zero and we will assume that this voltage
+[02:11] source V1 is acting alone.
+[02:13] So let us say in this configuration the output voltage is V0 1.
+[02:18] So this output voltage V1 can be given as minus R2 divided by R1 times this voltage
+[02:25] V1 as it is the inverting configuration.
+[02:29] Similarly let us say if voltage V1 is zero and let us say this voltage V2 is acting alone
+[02:35] then in that case our output voltage let say V0 2 will be equal to 1 plus R2 divided
+[02:43] by R1 times this voltage source V2.
+[02:47] So now if we consider this voltage source V1 and V2 acting simultaneously then our output
+[02:52] voltage V1 plus V0 2 that is equal to minus R2 divided by R1 times this voltage V1 plus
+[03:05] R2 divided by R1 times this voltage source V2.
+[03:12] So now if you observe here the gain that is applied to both the input is different and
+[03:18] suppose if you want this output voltage V0 as K times the difference between the two
+[03:23] voltages let say that is equal to V2 minus V1 then we need to ensure that the gain that
+[03:30] is applied to both the input is equal.
+[03:33] So suppose in this case if the gain that is applied to both the input is let say that
+[03:38] is equal to R2 divided by R1 then in a true sense we can use this configuration as a differential
+[03:44] amplifier where the output will be the difference between the two input voltages multiplied
+[03:49] by the some gain factor K.
+[03:52] So now let us see how we can achieve this equal gain.
+[03:56] So here in this second term instead of this 1 plus R2 divided by R1 we require the
+[04:04] term that is equal to R2 divided by R1.
+[04:08] So somehow we need to arrange this term in such a way that we can get this term R2 divided
+[04:13] by R1.
+[04:15] So now we can write this term 1 plus R2 divided by R1 as R1 plus R2 divided by R1 and if
+[04:23] we want this term R2 divided by R1 then we need to multiply this term by the factor of
+[04:29] R2 divided by R1 plus R2.
+[04:33] So here to get this term what we can do instead of applying this voltage source V2 directly
+[04:39] we can apply this voltage source V2 by using the voltage divider.
+[04:43] So let us see how we can achieve this term R2 divided by R1.
+[04:47] So here what we have done now we have applied this voltage source V2 using this voltage
+[04:51] divider circuit.
+[04:53] So now if you see at this point then at this point let us say the voltage is V plus.
+[04:59] So this voltage V plus will be equal to R2 divided by R1 plus R2 times this voltage V2
+[05:07] right.
+[05:08] So our voltage V plus will be equal to this term.
+[05:12] Now we know that the output voltage V out because of this voltage source V2 will be
+[05:16] equal to 1 plus R2 divided by R1 times this voltage V plus.
+[05:24] Now if we put this value of V plus then we will get 1 plus R2 divided by R1 times R2
+[05:33] divided by R1 plus R2 times this voltage V2.
+[05:38] So if we simplify it then we will get the term R2 divided by R1 times this voltage V2.
+[05:46] So now if you see if we consider this voltage source V1 and V2 simultaneously then our
+[05:52] output V out will be equal to minus R2 divided by R1 times this voltage V1 plus R2 divided
+[06:01] by R1 times this voltage source V2 or we can say that our output voltage will be equal
+[06:07] to R2 divided by R1 times the difference between the voltage source V2 and V1.
+[06:14] So now if you see this configuration here the output voltage is the difference between
+[06:19] the two input voltage multiplied with the factor of R2 divided by R1.
+[06:24] So in this way using this configuration in a true sense we can use this opium as a differential
+[06:29] amplifier.
+[06:30] So now let us see where this differential amplifier can be used.
+[06:35] So apart from performing the mathematical operations this differential amplifier can
+[06:39] also be used along with the sensors.
+[06:42] So let us say here we have a RTD and it is connected in a balance bridge circuit and
+[06:47] the output of the two arms of this balance bridge is connected as input to the two ends
+[06:51] of the differential amplifier.
+[06:54] So here initially this bridge is balanced but as the temperature changes the value of
+[06:59] this resistance R will change and because of that the voltage that appears at the two
+[07:04] input will also change.
+[07:06] So when the bridge is balanced then the input at the both ends of this differential amplifier
+[07:11] will be equal that is V1 equal to V2.
+[07:15] But as the temperature changes the value of this resistance R will change and because
+[07:19] of that the voltage that appears at this end will also change and we can amplify the difference
+[07:26] between the V1 and V2 and we can use this output to control the another circuitry.
+[07:32] So let us say if you want to control the temperature of some room then we can use this sensor
+[07:37] along with this differential amplifier.
+[07:39] So by triggering the another circuitry based on this output voltage we can control the
+[07:45] temperature of the room.
+[07:48] So this is how this differential amplifier can be used along with the sensors.
+[07:53] Now here the problem with this differential amplifier is that the input impedance of this
+[07:57] differential amplifier is very low and it depends upon the value of this R1 and the R2.
+[08:04] So if you see in this configuration the input impedance that is seen through this end will
+[08:09] be equal to R1.
+[08:11] While at this end if you see the input impedance is equal to R1 plus R2 or in general term let
+[08:18] us say if you are applying the input voltage between the two ends then in this case the
+[08:23] input impedance Z will be equal to 2 times R1.
+[08:28] So as you can see here the input impedance of this differential amplifier is very low
+[08:33] and because of that it is quite possible that your source might get loaded.
+[08:38] So one way we can avoid this by using the buffers before the input voltage is.
+[08:43] So as you can see here before applying this voltage V1 suppose if you use the buffer
+[08:48] then the input impedance of this buffer is very high and in this way we can avoid the loading
+[08:54] of this source voltages.
+[08:57] But in most of the practical cases where you are dealing with the very small input voltages
+[09:03] which is coming from the sensors in such cases instead of this differential amplifier
+[09:08] the instrumentation amplifier is used and we will talk more about this instrumentation
+[09:12] amplifier in a separate video.
+[09:14] So this instrumentation amplifier is a very high gain differential amplifier and the
+[09:19] main advantage of this instrumentation amplifier is that it is having a very high input impedance.
+[09:25] So that is particularly useful when we are dealing with the sensors.
+[09:30] But in our general applications we can use this differential amplifier along with this
+[09:34] buffers.
+[09:35] So that is being said now let us see some examples based on this differential amplifier.
+[09:41] So here we have one differential amplifier and we need to find the output voltage of this
+[09:46] differential amplifier and here assume that the biasing voltage is which is being applied
+[09:52] to this opium is plus 15 and minus 15 volt.
+[09:56] So here to find the output voltage what we will do we will consider one voltage source at
+[10:01] a time.
+[10:02] So first let us assume that this two volt voltage source is acting alone.
+[10:06] So if we consider this two volt voltage source acting alone then in that case let us output
+[10:11] voltage is V o 1 and that will be equal to minus 5 dR by 1 times this two volt and that
+[10:18] will come out as a minus 10 volt.
+[10:21] Similarly if we assume that this three volt voltage source is acting alone and this two
+[10:26] volt voltage source is equal to 0 then in that case our output voltage let us say V o 2
+[10:32] will be equal to 1 plus 5 dR by 1 times this voltage V plus and here this voltage V plus
+[10:41] is equal to 8 dR by 8 plus 1 times this input voltage that is equal to 3 volt.
+[10:52] So our output voltage V o 2 will be equal to 16 volt.
+[10:57] So now if we combine these two input voltages and assume that these two input voltages are
+[11:03] acting simultaneously then in that case our output voltage V o 2 will be equal to V o 1
+[11:09] plus V o 2.
+[11:11] So our output voltage will be equal to 16 minus 10 that is equal to 6 volt.
+[11:17] So this is very simple and basic example based on this differential amplifier.
+[11:22] Now here you also need to consider the biasing voltage that is being applied to the
+[11:27] differential amplifier.
+[11:28] So let us take one more example and we will see how this biasing voltage can affect your
+[11:33] output.
+[11:34] So if you see this example this is very similar to the previous example but here in this
+[11:39] case let us assume that our biase voltage is plus 12 volt and minus 12 volt and we want
+[11:46] to find the output voltage.
+[11:49] So here once again what we will do we will assume only one voltage source is acting at a
+[11:53] time and we will find the output voltage and then we will combine the individual responses.
+[12:00] So let us say output voltage V o 1 is the output voltage when these two voltage sources
+[12:05] acting alone.
+[12:07] So our output voltage will be equal to minus 5, nearby 1 times these two volt voltage
+[12:13] source.
+[12:14] So that will come out again as a minus 10 volt and now let us assume this 5 volt voltage
+[12:20] source is acting alone.
+[12:21] So in that case our output voltage V o 2 will be equal to 1 plus this 5, nearby 1 times
+[12:27] this voltage V plus that will be equal to 6 times V plus.
+[12:34] Now this voltage V plus will be equal to voltage divider that is applied at this point.
+[12:39] So it will be equal to 4, nearby 4 plus 1 times this 5 volt input voltage and it will
+[12:47] come out as a 24 volt.
+[12:50] So our output voltage V o 2 will be equal to 24 volt.
+[12:54] So now in this case if you see our total output voltage V o 2 will be equal to V o 1 plus
+[13:01] V o 2 and if you see it will come out as a 24 minus 10 that is equal to 14 volt.
+[13:10] But in this example we have applied the plus minus 12 volt.
+[13:14] So our output voltage cannot go beyond this plus minus 12 volt.
+[13:19] So our output voltage will be get saturated at the 12 volt.
+[13:23] So apart from the input voltages you also need to consider the biasing voltages which
+[13:28] is being applied to this op amp.
+[13:31] So that is being said now let us see the third example and this example is for your exercise.
+[13:36] So here instead of single input voltages we have applied the multiple input voltages
+[13:41] at the inverting and the non-inverting terminal and we need to find the output voltage of
+[13:46] this configuration.
+[13:48] And here once again assume that the biasing voltage is for this circuit is plus 15 and
+[13:53] minus 15 volt.
+[13:55] So try to solve this example by yourself and do let me know your answer in the comment
+[13:59] section below.
+[14:00] So I hope in this video you understood how to use the op amp as a differential amplifier
+[14:05] or as a sub-tector.
+[14:07] So if you have any question or suggestion do let me know in the comment section below.
+[14:11] If you like this video hit the like button and subscribe to the channel for more such
+[14:15] videos.

@@ -1,0 +1,65 @@
+Title: Transient Analysis / Comparator Solved Problem | Quiz # 407
+URL: https://www.youtube.com/watch?v=8QNO7a-LcyI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube Share and All About Electronics.
+[00:11] So in this question, we have been given the Comparator-based circuit and here, we have
+[00:16] been asked to find the time at which the output of this comparator will become low.
+[00:21] So here, to solve this question, you should have the knowledge of the transient analysis
+[00:26] as well as the comparator.
+[00:29] So as you know, depending on the voltage at the input terminals, the output of the comparator
+[00:33] will be there high or low.
+[00:35] So, if the voltage at this positive terminal is more than the negative terminal, and
+[00:39] the output of the comparator will be high.
+[00:43] And on the other end, if the voltage at this inverting terminal is more than the voltage
+[00:47] at this non-inverting terminal, and the output of the comparator will be low.
+[00:51] So, here at this inverting terminal, the voltage is applied through the voltage divider.
+[00:58] whatever voltage which is appearing over here, the same voltage will appear at this
+[01:03] inverting terminal. Let us say the voltage at this inverting terminal is equal to V minus.
+[01:09] So, this V minus is equal to 400 kilo ohm divided by 400 kilo ohm plus 600 kilo ohm times
+[01:20] 5 volt. And if you calculate, then this V minus will come out as 2 volt. That means
+[01:28] the voltage at this end is equal to 2 volt. Similarly, let us find the voltage at this positive
+[01:35] terminal. So, here initially this switch was in the close condition. That means, at t is
+[01:41] equal to 0 minus if you see the condition of the circuit, then the switch was in the close
+[01:46] condition. And since the circuit was in this condition since a long time, so we can say
+[01:52] that initially the circuit was already in the steady state condition. And therefore, at t is
+[01:57] equal to 0 minus, this capacitor will act as a open circuit. That means, at t is equal
+[02:03] to 0 minus, if you see the voltage across this capacitor, then it will be the same as the
+[02:08] voltage across this resistor. So, in this condition, if you see the voltage across this resistor,
+[02:14] then we can find it with the help of the voltage divider. We call here, since the comparator
+[02:20] is the idle comparator, so no current is flowing into this comparator. And therefore, just
+[02:26] using the voltage divider, we can easily find the voltage across this 5 kilo ohm resistor.
+[02:31] So, in this case, the current is flowing in this way. So, let us say the voltage across
+[02:37] the capacitor at t is equal to 0 minus is equal to V c 0 minus. So, this V c 0 minus is equal
+[02:46] to 5 kilo ohm divided by 5 kilo ohm plus 1 kilo ohm times 5 volt. So, basically it is
+[02:55] the voltage across this 5 kilo ohm resistor. And that is equal to this 25 divided by 6 volt.
+[03:02] That means, initially at t is equal to 0 minus, the voltage at this non-inverting terminal
+[03:09] of this comparator is equal to 25 divided by 6 volt. And the voltage at this inverting
+[03:15] terminal is equal to 2 volt. So, as you can see, this V plus is greater than V minus.
+[03:23] And therefore, initially the output of the comparator was high that is equal to plus 5 volt.
+[03:30] Now, at t is equal to 0, this switch was opened and therefore, now this capacitor will
+[03:37] discharge through this resistor. That means, gradually the voltage at this non-inverting
+[03:42] terminal will reduce. And at one point, when it becomes less than 2 volt, then the output
+[03:49] of the comparator will become low. So, we need to find the time t at which the output
+[03:54] of this comparator is getting low. So, here if we see the voltage across this capacitor,
+[04:01] then this V c of t can be given as this V c of 0 times e to the power minus t divided
+[04:07] by r c. So, basically it is the capacitor discharge equation. So, here initially this V
+[04:15] c of 0 is equal to 25 divided by 6 volt. That means, this V c of t is equal to 25 divided
+[04:22] by 6 times e to the power minus t divided by r c. So, at t is equal to 0, this voltage
+[04:30] across the capacitor is 25 divided by 6 volt. But at t is equal to infinity, it will be
+[04:35] the 0 volt. Now, let us say at some time t 1, the voltage across the capacitor becomes
+[04:42] 2 volt. That means, this V c of t becomes 2 volt. So, here we need to find this time t
+[04:48] 1 at which this V c of t becomes 2 volt. Because at that time, we will see the transition
+[04:55] in the output of the comparator. So, for that we can write this equation as 2 volt,
+[05:01] that is equal to 25 divided by 6 times e to the power minus t 1 divided by r c. So,
+[05:09] for the ref is simplified, then we can write it as this 12 divided by 25, that is equal to e
+[05:16] to the power minus t 1 divided by r c. Or we can say that this t 1 divided by r c is
+[05:24] equal to natural log of this 25 divided by 12. That means, t 1 is equal to r c times natural
+[05:33] log of this 25 divided by 12. So, here the value of r is 5 kilo ohm, while the value of c
+[05:42] is equal to 0.1 microfarad. And this natural log of 25 divided by 12 will come out as 0.733.
+[05:50] That means, this t 1 is equal to this 0.5 millisecond times 0.733. So, further if we calculate
+[05:59] the value of this t 1, then it will come out as 0.367 millisecond. That means, at this
+[06:07] time, the voltage at this non-inviting terminal will be same as the invading terminal. And
+[06:12] therefore, just after that, we will see the transition in the output voltage of this comparator.
+[06:19] That means, here the output of the comparator will become low at the time t is equal to
+[06:23] 0.367 millisecond.

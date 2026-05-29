@@ -1,0 +1,102 @@
+Title: Bistable Multivibrator using BJT Explained
+URL: https://www.youtube.com/watch?v=FZTvOU8iDYE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All Abode Electronics.
+[00:16] So in this video, we will learn how the buy stable multivapitor can be designed using
+[00:21] the BJT.
+[00:23] So in case of the buy stable multivapitor, both states are stable state and the output
+[00:29] of the multivapitor can be any of the two stable states.
+[00:33] Now when we apply this trigger signal, then the output goes from one stable state to
+[00:37] the another stable state.
+[00:40] And if no triggering action occurs after that, then the output will remain in this second
+[00:45] stable state.
+[00:47] But suppose if the triggering action occurs once again, then the output will go back into
+[00:52] the another stable state.
+[00:55] And it will remain in that stable state unless some triggering action occurs once again.
+[01:00] So this type of buy stable multivapitor can be used as a flip flop.
+[01:06] So now let us understand how it can be designed using the BJT.
+[01:12] So this is the circuit of the buy stable multivapitor.
+[01:15] And as you can see, here the two transistors are cross coupled.
+[01:20] That means the collector of the one transistor is connected to the base of the second transistor.
+[01:26] And initially when we power up the circuit, then one transistor will be on while the
+[01:31] another transistor will be off.
+[01:34] That means one transistor will operate in the saturation while the another transistor
+[01:39] will operate in the cutoff region.
+[01:42] So let us understand how the circuit works whenever we power it up.
+[01:47] So initially after the power up, both transistors try to conduct.
+[01:51] But let us say one transistor conducts more.
+[01:55] For example, let us say this transistor Q1 conducts more.
+[02:00] That means the collector current of this transistor Q1 is more.
+[02:05] And because of this more collector current, the voltage drop across this resistor RC1
+[02:09] will be also more.
+[02:11] So because of that, the voltage at the collector terminal will be less.
+[02:16] And as the same voltage is also applied at the base of this transistor Q2.
+[02:21] So the voltage which is appearing at the base of this transistor Q2 will be also less.
+[02:26] So because of that, this transistor Q2 will conduct less.
+[02:30] And due to that, the current current IC of this transistor Q2 will be also less.
+[02:36] So because of that, the drop across this resistor RC2 will be less.
+[02:41] And due to that, the more voltage will appear at the collector of this transistor Q2.
+[02:47] And as the same voltage is also applied to the base of this transistor Q1.
+[02:51] So this transistor Q1 will conduct more and more.
+[02:55] And eventually, it will go into the saturation.
+[02:59] So we can say that this transistor Q1 will act as a short circuit.
+[03:05] And because of that, the voltage at the collector of this transistor Q1 will be approximately equal
+[03:10] to 0.
+[03:12] Moreover, the same voltage will also appear at the base of this transistor Q2.
+[03:17] So because of that, this transistor Q2 will operate in the cutoff region.
+[03:22] And it will act as an open circuit.
+[03:25] So because of that, the voltage at the collector of this transistor Q2 will be approximately equal
+[03:30] to VCC.
+[03:32] That means initially after the power up, the transistor Q1 will be on and the Q2 will be off.
+[03:39] And in this condition, this output Q will be low, while the output at the Q bar will
+[03:44] be high.
+[03:46] But depending on the which transistor conducts more, the reverse case is also possible.
+[03:52] But in any case, when we apply the trigger pulse to the base of this transistor Q1, then
+[03:58] it will set the output Q to the high.
+[04:01] That means whenever we apply the negative going trigger pulse to the base of this transistor
+[04:05] Q1, then this transistor Q1 will go into the cutoff region.
+[04:10] And because of that, it will act as an open circuit.
+[04:14] So in this condition, the voltage at the collector of this transistor Q1 will become high.
+[04:20] That means we can say that this output Q will become high.
+[04:25] And as the same voltage is also applied to the base of this transistor Q2.
+[04:30] So this transistor Q2 will go into the saturation.
+[04:34] And because of that, it will act as an short circuit.
+[04:37] That means now the output of this transistor Q2 will become low.
+[04:42] Or we can say that this output Q bar will become low.
+[04:47] And as the same voltage is also applied to the base of this transistor Q1.
+[04:52] So this transistor Q1 will still remain in the cutoff region.
+[04:56] That means this output Q will remain high until we apply the reset pulse.
+[05:02] So as soon as we apply the reset pulse or the negative going trigger pulse to the base
+[05:07] of this transistor Q2, this transistor Q2 will go into the cutoff region.
+[05:12] And because of that, it will act as an open circuit.
+[05:16] That means now this output Q bar will become high.
+[05:22] And as you can see, as the same voltage is also applied to the base of this transistor
+[05:27] Q1.
+[05:28] So because of that, this transistor Q1 will go into the saturation.
+[05:33] And due to that, it will act as an short circuit.
+[05:36] That means in this condition, this output Q will become low.
+[05:41] That means we can say that due to this triggering pulse, the output of the multivibriter has
+[05:46] gone from the one stable state to the another stable state.
+[05:50] So in this way, by applying the trigger pulse, we can set the output of this multivibriter
+[05:55] in any of the two stable states.
+[05:58] Now when we apply the trigger pulse to this transistor, then it takes sometimes to come
+[06:03] from the cutoff to the saturation region or from saturation to the cutoff region.
+[06:08] So many times, to speed up this transition, the speed up capacitors are also connected
+[06:14] in parallel with these registers.
+[06:17] So in this way, this my stable multivibriter can be used as a flip flop or it can be used
+[06:23] to generate the gate pulse of the finite duration.
+[06:27] For example, when the set trigger pulse is applied, then the output will go from the low
+[06:32] state to the high state.
+[06:34] And similarly, when the reset trigger pulse is applied, then the output will go from the
+[06:39] high state to the low state.
+[06:41] And the duration of the gate pulse will depend on the triggering instances of the set
+[06:45] and the reset pulse.
+[06:48] So in this way, we can generate the gate pulse of the finite duration.
+[06:52] And this gate pulse can be used to control any other circuit or the instrument.
+[06:58] So I hope in this video, you understood how the by stable multivibriter can be designed
+[07:03] using the BJT.
+[07:05] So if you have any question or suggestion, do let me know here in the comment section
+[07:09] below.
+[07:10] If you like this video, hit the like button and subscribe to the channel for more such
+[07:14] videos.

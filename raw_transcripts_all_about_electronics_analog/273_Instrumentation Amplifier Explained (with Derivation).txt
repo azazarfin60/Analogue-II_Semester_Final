@@ -1,0 +1,228 @@
+Title: Instrumentation Amplifier Explained (with Derivation)
+URL: https://www.youtube.com/watch?v=pSctPegtZfc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:15] So in this video we will understand about the instrumentation amplifier.
+[00:19] Now this instrumentation amplifier is a one kind of differential amplifier but it has
+[00:24] a very high gain as well as very high common mode rejection ratio and very high input
+[00:28] impedance.
+[00:29] And this instrumentation amplifier is used in industrial applications as well as in
+[00:33] test and measurement circuits.
+[00:36] So now in this video let us understand how this instrumentation amplifier is different
+[00:41] from the differential amplifier which is designed using the op-amp and in certain industrial
+[00:46] applications why this instrumentation amplifier is preferred over the differential amplifier.
+[00:52] So first of all let us see some problems that we can face if we use this normal differential
+[00:57] amplifier in certain industrial applications.
+[01:00] So now in many industrial applications it is required to measure the certain parameters
+[01:04] like temperature, flow, humidity, etc.
+[01:07] And these parameters are measured using the transduceres like RTD strain gauge and thermocouples.
+[01:13] So these transduceres convert the measured parameter into the electrical signals and many
+[01:18] times to convert this measured parameter into the electrical signals these bridge circuits
+[01:23] are used.
+[01:24] For example if we take the case of RTD, in RTD as the temperature changes the resistance
+[01:30] of RTD will also change.
+[01:32] So if we connect this RTD at one of the arm of this bridge circuit then the resistance
+[01:38] of this particular arm will change according to the temperature.
+[01:42] And accordingly the voltage that is generated at particular node will also change.
+[01:47] So if we measure the voltage across these two terminals A and B then the voltage will
+[01:51] change according to the temperature.
+[01:54] And this generated differential voltage can be amplified using the differential amplifier.
+[01:59] Now many times in industrial applications it is quite possible that the location where
+[02:04] these measurements are carried out and the locations where these sensors are deployed
+[02:08] are quite far away from each other.
+[02:10] So in this case it is quite possible that the noise or the interference signal will
+[02:15] get superimposed over the measured signal.
+[02:18] And to avoid the problem of this noise or interference many times the signal is measured
+[02:23] using the differential measurement technique.
+[02:26] For example if we take the case of this bridge circuit the output that we are getting through
+[02:30] this bridge circuit is also differential signal and this differential signal further can be
+[02:35] amplified using the amplifier.
+[02:38] So as you can see over here the output of this bridge circuit is given to this differential
+[02:42] amplifier.
+[02:43] So the advantage of this differential amplifier is that whatever common mode noise or the
+[02:48] common mode interference signal which appears at the two terminal of this differential amplifier
+[02:53] should ideally get eliminated and only the differential signal across the two terminals
+[02:57] should get amplified.
+[02:59] So if V and VB are the voltages that appears across the two terminal of this differential
+[03:04] amplifier then the output of this differential amplifier can be given by this expression.
+[03:09] So at the non-inverting terminal the voltage will be equal to this R4 divided by R3 plus
+[03:15] R4 times the voltage VA.
+[03:18] And that voltage will get amplified by the factor of 1 plus R2 divided by R1.
+[03:24] Similarly the output voltage because of the input at this inverting terminal will be
+[03:28] equal to minus R2 divided by R1 times this voltage VB.
+[03:33] So if we rearrange these terms then we can write this same expression like this.
+[03:38] Now here if we assume that the ratio of this R4 by R3 is equal to this ratio of R2 by
+[03:43] R1 in that case the output voltage can be given by the expression R2 divided by R1 times
+[03:51] the voltage VA minus VB.
+[03:54] So in this case as you can see the output voltage V out will be the difference between the two
+[03:58] input signals multiplied by the gain of this circuit.
+[04:02] Now so far we have assumed that there is a no common mode of voltage present at the input
+[04:06] terminals but if common mode of voltage is also present along with the differential input
+[04:10] voltage in that case in general the output voltage of this differential amplifier can be
+[04:15] given by this expression.
+[04:17] So the differential input voltage will get amplified by the differential gain while the
+[04:22] common mode of voltage will get amplified by the common mode again.
+[04:27] Now in this case suppose if common mode of voltage is also present then we can say that
+[04:32] the voltage VA will be equal to this common mode of voltage VCM plus VD by 2.
+[04:38] And likewise this voltage VB will be equal to VCM minus VD by 2.
+[04:44] So if we assume that the ratio of R4 divided by R3 that is equal to R2 divided by R1 in
+[04:50] that case the output voltage V out will be equal to R2 divided by R1 times this voltage
+[04:56] VM minus VB and if we put these two values of V and VB then the output voltage V out
+[05:03] will be equal to R2 divided by R1 times this differential voltage VD.
+[05:08] So if we assume that this open is ideal in that case this circuit should amplify only
+[05:14] differential input signal and it should reject the common mode signal.
+[05:18] But even if we assume this open is ideal then also because of the mispage between these
+[05:23] resistor pairs the common mode signal will also present at the output terminal.
+[05:28] So even if there is a 1% error in any of the resistors then also the common mode rejection
+[05:33] ratio will get affected and the common mode signal will present at the output terminal.
+[05:39] And this particular scenario will become critical when your differential input signal is very
+[05:44] small and the common mode signal which is present at the 2 input terminal is larger than
+[05:49] the differential signal.
+[05:51] So let us take some values of these resistors as well as the input voltage is and let us
+[05:56] see how the mismage between these resistor pairs can affect the output voltage.
+[06:01] So here let us assume that the resistance R1 and R3 are 1 kilo ohm while the resistor
+[06:08] R2 is equal to 10 kilo ohm and here we are assuming that there is a 1% error in this
+[06:14] resistor R4.
+[06:15] So instead of 10 kilo ohm the value of this R4 is equal to 10.1 kilo ohm and the differential
+[06:22] input to this differential amplifier is equal to 10 milli volt while the common mode input
+[06:27] to this differential amplifier is equal to 1 volt.
+[06:31] So in this case let us find out the output voltage of this differential amplifier.
+[06:36] Now we know that the output of this differential amplifier can be given by this expression
+[06:41] and if you put the value of these 4 resistors in this expression then we will get the output
+[06:46] voltage V out as 10.009 times this voltage VA plus 10 times this voltage VB.
+[06:54] So now let us put the value of this VA and VB in terms of this common mode of voltage
+[06:59] and the differential input voltage.
+[07:01] So if we put the value of this V and VB then we will get the output voltage V out as
+[07:06] 0.009 times the common mode of voltage plus 10.0045 times this differential input voltage
+[07:17] and if we compare this expression with this expression then we can say that the common
+[07:23] mode of gain of this circuit will be equal to 0.009 while the differential gain will be
+[07:29] equal to 10.0045 and if we find the common mode rejection ratio that is the ratio of this
+[07:37] differential gain and the common mode gain then that will be equal to roughly around 61
+[07:44] dB.
+[07:46] So ideally this common mode rejection ratio should be infinite but because of the slight
+[07:51] mismatch in any of this resistor the value of this common mode rejection ratio has been
+[07:55] reduced to 61 dB.
+[07:58] Now let us see how it will affect the output voltage.
+[08:01] So here the value of this common mode voltage is equal to 1 volt.
+[08:06] So this common mode voltage will get amplified by this factor and because of that the output
+[08:11] voltage V out will be equal to 9 milli volt while the differential input to this circuit
+[08:17] is 10 milli volt.
+[08:19] So it will be amplified by the factor of 10.
+[08:22] So at the output we will have 9 milli volt because of this common mode signal and almost
+[08:28] 100 milli volt because of this differential input signal.
+[08:31] So as you can see 9% error will get introduced in the output voltage and it will further
+[08:37] increase if there is a mismatch between more than 1 resistors or if the common mode signal
+[08:43] that is present at the input terminal is more than 1 volt.
+[08:46] So in that case this error will further increase.
+[08:50] So as you can see over here the mismatch between the resistors can affect the output drastically
+[08:55] and it can reduce the common mode rejection ratio of this differential amplifier.
+[08:59] So the one way to solve this problem is to use the monolithic ISIS for this differential
+[09:04] amplifier.
+[09:05] So one can use readily available differential amplifier ISIS like 8629 and INA 106.
+[09:12] So in this ISIS the resistors are fabricated in the ISIS itself and in this ISIS the ratios
+[09:19] of this resistors are matched quite accurately.
+[09:22] So using this ISIS you can increase the common mode rejection ratio and you can minimize
+[09:27] the error in the output voltage.
+[09:29] So even if you use such monolithic ISIS for this differential amplifier then also will
+[09:34] face the problem of this input impedance because if you see over here the input impedance
+[09:39] at this inverting terminal is equal to R1 while the input impedance of this differential
+[09:43] amplifier at this non-ending terminal will be equal to R3 plus R4.
+[09:48] So if these input impedance are comparable to the resistance of this bridge circuit in that
+[09:53] case the differential input that is available at the two input terminals will also reduce.
+[10:00] So it is highly required that the input impedance of this differential amplifier should be very
+[10:05] high.
+[10:06] One way we can solve this problem is to use the buffers before the inputs.
+[10:11] So if we use the buffer circuits then we can increase the input impedance of this differential
+[10:15] amplifier.
+[10:16] So in this way by using this buffer circuits along with this monolithic ISIS we can solve
+[10:21] the problem of this input impedance as well as the problem of this mismatch between the
+[10:25] resistors pairs.
+[10:26] But the problem with this monolithic ISIS are that the gain that is provided by these
+[10:30] ISIS are fixed.
+[10:32] So you cannot change the gain of this differential amplifier and in your application if you want
+[10:37] to change the gain then using this ISIS you cannot change the gain.
+[10:41] So one way we can avoid this problem is by using the non-inverting opams instead of this
+[10:46] buffer circuits.
+[10:47] So the same circuit can be represented like this.
+[10:50] So in this circuits the initial gain can be provided by this non-inverting buffers.
+[10:56] But the problem with this circuit is that along with the differential input signal the
+[11:00] common amount input signal will also get amplified.
+[11:03] So you will not get any improvement in the signal to noise ratio.
+[11:06] Apart from that in this circuit you also need to match this for resistors because if
+[11:12] there is a slight mismatch in this resistors then once again the common amount rejection
+[11:16] ratio of this circuit will get compromised.
+[11:19] So these are the problems that you face with this differential amplifier circuits and
+[11:23] the one way we can avoid this problem is by using the instrumentation amplifier.
+[11:28] So in terms of the circuit if you see there is only one difference between the this circuit
+[11:32] and this circuit.
+[11:34] So over here this resistor RG is common between the two opams.
+[11:38] Now the advantage of this configuration is that only the differential signal will get
+[11:43] amplified by these opams while the common node signal will pass as it is.
+[11:48] So this instrumentation amplifier is available in an IC format and except this resistance
+[11:53] RG all the resistors are fabricated internally and because they are fabricated internally they
+[11:59] are highly matched.
+[12:00] So just by connecting this resistor RG externally we can set the gain of this instrumentation amplifier.
+[12:06] So for this configuration if you assume that this RFI is equal to R6 and the ratio of this
+[12:11] R4 by R3 and R2 by R1 are matched in that case the output voltage V out can be given by
+[12:18] this expression.
+[12:19] So now let us derive this expression and during the derivation let us also understand
+[12:24] how this circuit will amplify the differential input signal and it will pass the common node
+[12:28] signal as it is and using this how we can improve the common node ejection ratio of the circuit.
+[12:34] Now in this circuit let us assume that the voltage at this node is equal to VB dash and the
+[12:40] voltage at this node is equal to VA dash.
+[12:44] So the output voltage V out can be given by the expression R2 divided by R1 times this
+[12:51] voltage VA dash minus VB dash provided the resistance R4 divided by R3 that is equal
+[12:59] to R2 divided by R1.
+[13:02] So first of all we need to find the difference between this VA dash and the VB dash voltages.
+[13:07] Now if you observe this circuit the voltage at this node will be equal to VB because
+[13:14] here we are assuming that all the opems are ideal.
+[13:17] So whatever voltage that appears at this terminal the same voltage will also appear at this terminal
+[13:23] and likewise the voltage at this node will be equal to voltage VA.
+[13:29] So from this we can say that the current that is flowing through this resistor RG will
+[13:33] be equal to VB minus VA divided by this resistance RG and let us say this current is equal
+[13:40] to IG.
+[13:41] So we can say that current IG will be equal to VB minus VA divided by this resistance RG.
+[13:48] Now the same current IG will also flow through this resistance R5 and R6 because here we are
+[13:53] assuming the opems are ideal so no current is flowing into the opem terminals.
+[13:58] So we can say that the same current IG is flowing through this resistor R5, RG and R6.
+[14:05] And using this we can find the difference between this voltage VB dash and VA dash.
+[14:10] So we can say that VB dash minus VA dash will be equal to this current IG times resistance
+[14:19] R5 plus RG plus R6.
+[14:23] And if we assume that this resistance R5 is equal to R6 in that case we can say that
+[14:28] VB dash minus VA dash will be equal to IG times 2 times this resistance R5 plus RG.
+[14:37] So now if you put the value of this current IG from this expression then we can write
+[14:41] VB dash minus VA dash will be equal to VB minus VA multiplied by 1 plus 2 times R5 divided
+[14:51] by this resistance RG.
+[14:54] Or we can say that VA dash minus VB dash will be equal to VA minus VB times 1 plus 2 times
+[15:04] R5 divided by this resistance RG.
+[15:08] So this is the voltage that will be present between the two input terminals of this differential
+[15:12] amplifier and the output voltage V out will be equal to R2 divided by R1 times this voltage
+[15:21] VA dash minus VB dash that is equal to R2 divided by R1 times 1 plus 2 times this resistance
+[15:32] RF divided by RG times this voltage VA minus VB.
+[15:39] So in this way this differential input will get amplified using this instrumentation amplifier.
+[15:45] So now let us also understand how this instrumentation amplifier will pass the common order voltage
+[15:50] as it is and it will only amplify the differential input signal.
+[15:55] So now let us say the common order voltage VCM is present at this two terminals.
+[16:01] So the same voltage will also present at this two terminals.
+[16:04] Now because the voltage at this two terminal is same so no current will flow through this
+[16:08] resistance RG.
+[16:11] And because of that we can say that the no current is also flowing through this resistor
+[16:15] R5 and R6.
+[16:18] And in a way we can say that the same voltage is also present at this terminal and this
+[16:22] terminal as well.
+[16:24] So we can say that for the common order voltage these two amplifiers will act as a buffer
+[16:29] or a unity fallover while it will amplify only the differential input signals.
+[16:34] So in this way by using this instrumentation amplifier the common order rejection ratio
+[16:39] of the circuit can be further increased.
+[16:42] And this instrumentation amplifier is particularly useful in an environment where the differential
+[16:47] input signal is very small and the common order input signal which is present at the two
+[16:51] terminals is larger than the differential input signals.
+[16:55] And that is why this instrumentation amplifier is preferred over the differential amplifier
+[16:59] in industrial as well as the test and measurement circuits.
+[17:03] So I hope in this video you understood the importance of this instrumentation amplifier
+[17:07] and why this instrumentation amplifier is preferred over the differential amplifier in certain
+[17:11] applications.
+[17:12] So if you have any question or suggestion do let me know in the comment section below.
+[17:17] If you like this video hit the like button and subscribe to the channel for more such
+[17:20] videos.

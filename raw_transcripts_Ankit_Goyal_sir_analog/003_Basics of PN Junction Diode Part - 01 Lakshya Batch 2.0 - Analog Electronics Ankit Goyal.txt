@@ -1,0 +1,3242 @@
+Title: Basics of PN Junction Diode Part - 01 | Lakshya Batch 2.0 - Analog Electronics | Ankit Goyal
+URL: https://www.youtube.com/watch?v=mc6VFO6ooo8
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:04] Very good morning to all of you.
+[00:06] And welcome to Creatrix YouTube Channel.
+[00:08] My dear friends, we are back again
+[00:10] with the Lakshya Batch 2.0 Analog Electronics.
+[00:14] So as you know, we started the course from yesterday.
+[00:18] And yesterday we saw that
+[00:21] what types of semiconductors do you have?
+[00:24] How do you have intrinsic semiconductors?
+[00:27] How do you have extrinsic semiconductors?
+[00:30] And how do you make them doping?
+[00:34] What is P type? What is N type?
+[00:37] We saw all these things yesterday.
+[00:39] And we also studied Law of Mass Action.
+[00:43] And today I am going to teach you
+[00:45] about the current in semiconductors.
+[00:47] What is the current in the semiconductor?
+[00:50] That is your drift and the diffusion current.
+[00:53] And after that we are going to discuss
+[00:55] about diodes today.
+[00:57] We will cover the basic of the diode
+[00:59] that how the diode is constructed.
+[01:01] How does the diode work?
+[01:03] What is forward biasing?
+[01:05] What is reverse biasing?
+[01:07] So let's start.
+[01:09] But before we start, let me tell you one thing.
+[01:11] If you want to join an academy,
+[01:13] there is another offer for you today.
+[01:15] It is 20% off.
+[01:17] What do you have to do?
+[01:19] You have to join with an unclean TSE code.
+[01:21] You will get a 20% discount
+[01:23] and this is going to help you a lot
+[01:25] in your preparation.
+[01:27] Let's start.
+[01:29] In the semiconductor,
+[01:31] we talk about currents.
+[01:33] There are two types of currents.
+[01:35] One is the diffusion current
+[01:37] and the other is the drift current.
+[01:39] Now what is diffusion?
+[01:41] Diffusion is a phenomenon
+[01:43] where any material,
+[01:45] any particle
+[01:47] from a region
+[01:49] where there is more concentration
+[01:51] is more.
+[01:53] It goes from such a region
+[01:55] to another region
+[01:57] where there is less concentration.
+[01:59] So any material
+[02:01] moves in a direction
+[02:03] from higher concentration
+[02:05] to the lower concentration
+[02:07] that is what diffusion is
+[02:09] all about.
+[02:11] Diffusion means always
+[02:13] lower concentration from higher concentration.
+[02:15] Sir, why is this concentration different?
+[02:17] Due to non-uniform doping.
+[02:19] If your doping is different
+[02:21] for example,
+[02:23] doping is more
+[02:25] for example, take n-type semiconductor
+[02:27] where doping is more
+[02:29] there will be more electrons
+[02:31] and where doping is less
+[02:33] there will be less electrons.
+[02:35] So electrons go where their number is more
+[02:37] from that side
+[02:39] where their number is less.
+[02:41] So that is what
+[02:43] is diffusion all about.
+[02:45] Movement from higher to the lower
+[02:47] concentration.
+[02:49] For example, if we talk about the electron
+[02:51] if I talk about the electron
+[02:53] assume that it is n-type semiconductor
+[02:55] if you see here
+[02:57] more electrons are visible
+[02:59] red dots are
+[03:01] these are the electrons
+[03:03] and here
+[03:05] less dots are visible
+[03:07] so this is the low concentration
+[03:09] so your electrons
+[03:11] are going towards
+[03:13] less concentration
+[03:15] that is what diffusion is all about.
+[03:17] If
+[03:19] electron is going right
+[03:21] higher to lower concentration
+[03:23] then here your current
+[03:25] current will go to your left
+[03:27] from the
+[03:29] lower concentration
+[03:31] to the higher concentration.
+[03:33] Just a minute
+[03:35] there is not much brightness
+[03:37] I will close the window
+[03:39] now it will be better according to me
+[03:41] now it will be better according to me
+[03:43] if the electron is going
+[03:45] left to the right
+[03:47] then the current based on that
+[03:49] will go left to the right.
+[03:51] Now these electrons
+[03:53] these electrons
+[03:55] which direction are they going
+[03:57] which direction
+[03:59] your concentration is going down
+[04:01] going from higher to lower
+[04:03] then the charges are moving in the direction
+[04:05] of reducing
+[04:07] concentration
+[04:09] what we are saying
+[04:11] charges move
+[04:17] in the direction
+[04:23] of
+[04:25] reducing
+[04:35] concentration
+[04:37] ok
+[04:39] you can also say
+[04:41] current flows
+[04:47] from
+[04:49] lower to higher concentration
+[04:51] in the case of electron
+[04:53] ok
+[04:55] especially in the case of electron
+[04:57] you can say
+[04:59] lower to higher concentration
+[05:01] your current is going
+[05:03] now it is clear
+[05:05] current is moving from lower to higher
+[05:07] concentration
+[05:09] now here
+[05:11] when concentration is going from higher
+[05:13] then there is a change in concentration
+[05:15] there is a change in concentration
+[05:17] and how much
+[05:19] is the change in concentration
+[05:21] per unit distance
+[05:23] that is called as the
+[05:25] concentration gradient
+[05:27] so what we are saying
+[05:29] concentration gradient
+[05:31] is
+[05:33] equal to
+[05:35] dc by dx
+[05:39] dc by dx
+[05:41] i.e. change in concentration
+[05:43] per unit distance
+[05:45] now what we are saying
+[05:47] these charges
+[05:49] how fast they will move
+[05:51] listen carefully
+[05:53] how fast they will move
+[05:55] from one region to another
+[05:57] it depends on the
+[05:59] concentration gradient
+[06:01] the faster the
+[06:03] concentration will change
+[06:05] the faster your charges
+[06:07] will also migrate
+[06:09] from higher to lower
+[06:11] concentration
+[06:13] the faster the concentration
+[06:15] changes
+[06:17] so what we are saying
+[06:19] this current density
+[06:21] this is current density
+[06:23] this is current density
+[06:25] because i am not talking about area
+[06:27] i am only talking about density
+[06:29] i am talking about
+[06:31] current density is proportional
+[06:33] to charge on an electron
+[06:35] and
+[06:37] concentration gradient
+[06:39] charge on an electron
+[06:41] and concentration gradient
+[06:43] why dn by dx
+[06:45] because n is the concentration of electron
+[06:47] and you are reading this for electron
+[06:49] not for holes
+[06:51] if there were holes
+[06:53] then instead of n we would have used p
+[06:55] then i am writing dp by dx
+[06:57] now here
+[06:59] the proportionality constant
+[07:01] will have to be added
+[07:03] so this will be added
+[07:05] dn by
+[07:07] dn upon dx
+[07:09] and you understood the direction
+[07:11] charges will go, electrons will go
+[07:13] from higher to lower concentration
+[07:15] current will go from lower to higher
+[07:17] concentration
+[07:19] this dn is
+[07:21] diffusion coefficient
+[07:23] for holes
+[07:25] what happens
+[07:27] diffusion coefficient for
+[07:29] holes
+[07:31] dn sorry for electron
+[07:35] for electron
+[07:37] okay
+[07:39] now see there if we
+[07:41] talk about holes
+[07:43] holes are considered
+[07:45] in the system as positively charged
+[07:47] it is not that hole is positively charged
+[07:49] hole is a vacancy
+[07:51] but because there is
+[07:53] absent or electron is missing
+[07:55] then how do you treat it
+[07:57] as a positive charge
+[07:59] so if i talk about
+[08:01] positive charge i.e.
+[08:03] holes
+[08:05] if i talk about holes
+[08:07] again see here
+[08:09] this is high concentration
+[08:11] and this is
+[08:13] low concentration
+[08:17] high concentration
+[08:19] and this is low concentration
+[08:21] so your holes are going
+[08:23] from high to low concentration
+[08:25] where are they going
+[08:27] from high to low concentration
+[08:29] and
+[08:31] because holes are considered as positive charge
+[08:33] because of positive charges
+[08:35] the current
+[08:37] goes in the direction of
+[08:39] positive charge
+[08:41] so this time the current
+[08:43] is shown in the direction of holes
+[08:45] the current of negative charge
+[08:47] take the opposite of negative charge
+[08:49] but the current of positive charge
+[08:51] comes in the direction of charge
+[08:53] so the current density
+[08:55] will go from high to low concentration
+[08:57] so here
+[08:59] what am i saying
+[09:01] holes as well
+[09:03] as current
+[09:05] holes as well as
+[09:07] current
+[09:11] move from
+[09:13] move from
+[09:15] from
+[09:17] our region
+[09:19] of
+[09:21] higher concentration
+[09:27] to
+[09:29] lower concentration
+[09:31] to lower
+[09:33] concentration
+[09:35] okay holes and current
+[09:37] are going from higher to lower
+[09:39] okay
+[09:41] okay i told you yesterday
+[09:43] how do holes move
+[09:45] actually electrons don't move
+[09:47] but for future you won't go into detail
+[09:49] for future you will believe
+[09:51] that holes are moving
+[09:53] yesterday you gave a bench example
+[09:55] very well
+[09:57] now look here
+[09:59] what you will say here
+[10:01] that this Jp
+[10:03] that is proportional to E into
+[10:05] dp by dx
+[10:07] what is P
+[10:09] P is the hole
+[10:11] concentration
+[10:29] hole concentration gradient
+[10:31] now the proportionality
+[10:33] will be constant in the middle
+[10:35] okay
+[10:39] so what is dp
+[10:45] diffusion
+[10:51] coefficient
+[10:53] for holes
+[10:55] okay
+[10:57] have you understood everyone
+[10:59] this is diffusion current
+[11:01] diffusion current
+[11:03] okay
+[11:05] is the matter clear
+[11:07] is the matter clear
+[11:09] let me tell you
+[11:11] if everyone agrees to this
+[11:13] then i will go to the drift current
+[11:15] if everyone is satisfied
+[11:17] then i will teach you the next current
+[11:19] that is drift current
+[11:21] but do you know here
+[11:23] there is one more thing
+[11:25] here you have to put a minus
+[11:27] do you know why
+[11:29] because the direction of current
+[11:31] is higher to lower concentration
+[11:33] that means
+[11:35] here if you see dp by dx
+[11:37] then negative will come
+[11:39] current is going in the direction of reducing
+[11:41] current is going
+[11:43] in the direction of reducing
+[11:45] concentration
+[11:47] then this will be negative and we will
+[11:49] put a minus and we will plus it
+[11:51] what is this minus
+[11:53] minus
+[11:55] Jp
+[11:57] is in
+[11:59] reducing current
+[12:01] reducing concentration direction
+[12:03] now one child is saying
+[12:05] instead of e here p should come
+[12:07] e is charge of an electron
+[12:09] electron and hole is
+[12:11] charge of 1.6 into 10
+[12:13] power minus
+[12:15] 19
+[12:17] do you understand
+[12:19] e does not mean how many holes
+[12:21] e does not mean how many electrons
+[12:23] e is the charge of an electron
+[12:25] which is same as the charge of an hole
+[12:27] if
+[12:29] concentration is uniform
+[12:31] then diffusion current will not come
+[12:33] if your concentration is not changing
+[12:35] then this dp by dx
+[12:37] would be 0 there will be no
+[12:39] diffusion current
+[12:41] there will be no diffusion current
+[12:43] the current density is
+[12:45] current per unit area
+[12:47] nothing else
+[12:49] current density is I upon A
+[12:51] if you multiply it from area
+[12:53] then current will come
+[12:55] this is clear why minus came
+[12:57] why did not come here
+[12:59] here because current
+[13:01] was going higher than lower
+[13:03] that is increasing
+[13:05] in increasing direction
+[13:07] then dn by dx would be positive
+[13:09] then current would also be positive
+[13:11] that is in which direction
+[13:13] your density
+[13:15] will increase
+[13:17] but here
+[13:19] in which direction
+[13:21] negative will occur
+[13:23] in that direction
+[13:25] then to make current positive
+[13:27] there is a minus
+[13:29] there is a difference
+[13:31] electrons current goes
+[13:33] higher than lower
+[13:35] and holes current goes
+[13:37] higher than lower
+[13:39] that is why there is a minus sign
+[13:41] now come to drift current
+[13:43] now if we talk about drift current
+[13:45] then what is drift
+[13:47] drift is
+[13:49] under any force
+[13:51] when someone is pushing you
+[13:53] when someone is forcing you
+[13:55] and then you move
+[13:57] okay
+[13:59] when someone is pushing you
+[14:01] when someone is forcing you
+[14:03] and then you move
+[14:05] that is called as a drift
+[14:07] that is
+[14:09] called as a drift
+[14:11] now where is this electric field coming from
+[14:13] electric field is coming
+[14:15] from this battery
+[14:17] what you did
+[14:19] you put a battery
+[14:21] in a semiconductor
+[14:23] a battery
+[14:25] with a positive and negative
+[14:27] terminal
+[14:29] so electric field you know
+[14:31] it goes from plus to minus
+[14:33] so electric field is going
+[14:35] from positive to negative terminal
+[14:37] and holes are our positive charge
+[14:39] the force on positive charge
+[14:41] that is
+[14:43] from positive to negative
+[14:45] that is in the direction of electric field
+[14:47] that is what it looks like
+[14:49] you know this
+[14:51] force due to electric field
+[14:55] force due to
+[15:01] electric field
+[15:05] is q into e vector
+[15:09] so if charge is positive
+[15:11] then f vector
+[15:13] is parallel to e vector
+[15:15] and if charge is negative
+[15:17] then minus will come
+[15:19] f vector opposite
+[15:21] to
+[15:23] e vector
+[15:25] f vector opposite
+[15:27] to e vector
+[15:29] okay
+[15:31] so when you put an electric field
+[15:33] when you put an electric field
+[15:35] then holes are
+[15:37] going in the direction of electric field
+[15:39] holes are going in the direction of electric field
+[15:41] and the current
+[15:43] that is coming from holes
+[15:45] is coming in the direction of holes
+[15:47] if holes are going
+[15:49] then the current of holes
+[15:51] is also going in the right
+[15:53] but now see this
+[15:55] electron
+[15:57] is an electronic negative charge
+[15:59] negative charge is going
+[16:01] from electric field opposite
+[16:03] negative charge is going
+[16:05] from electric field opposite
+[16:07] and current coming from negative charge
+[16:09] what happens
+[16:11] the current of electron
+[16:13] is opposite of
+[16:15] electron
+[16:17] in the same direction of electric field
+[16:19] did you understand
+[16:21] the force on electron
+[16:23] because negative charge was opposite
+[16:25] of electric field
+[16:27] so it went to left
+[16:29] but when electron goes to left
+[16:31] then where will the current go
+[16:33] will go to right
+[16:35] parallel to electric field
+[16:37] means here holes and electrons
+[16:39] that is why their current is coming
+[16:41] in the same direction
+[16:43] the movement of holes and electrons is opposite
+[16:45] but both the current
+[16:47] is in the same direction
+[16:49] the matter is clear
+[16:51] tell me quickly
+[16:53] the matter is clear
+[16:55] now see the drift current density
+[16:57] the drift current density
+[17:01] it is written C
+[17:03] E
+[17:05] VD
+[17:07] VD is
+[17:09] your drift velocity
+[17:11] what is VD
+[17:13] VD is
+[17:15] your
+[17:17] drift velocity
+[17:27] and this drift velocity
+[17:29] is mu into E
+[17:31] where
+[17:33] mu is the mobility
+[17:37] its unit is
+[17:39] cm2
+[17:41] many exams
+[17:43] ask about mobility
+[17:45] cm2
+[17:47] per volt second
+[17:49] what is the meaning of mobility
+[17:51] mobility
+[17:53] means
+[17:55] how easily
+[17:57] how easily
+[17:59] can charges
+[18:03] flow through a medium
+[18:05] how easily
+[18:07] can charges flow
+[18:09] through a medium
+[18:11] that is your
+[18:13] mobility
+[18:17] that is your
+[18:19] mobility
+[18:21] now if you
+[18:23] write this current density
+[18:25] in current density
+[18:27] C E VD
+[18:29] if you put mu into E
+[18:31] if you put mu into
+[18:33] 2 mu into E
+[18:35] then the drift current density
+[18:37] is
+[18:39] C E mu into E
+[18:41] now you have to see two current densities
+[18:43] of one electron
+[18:45] and one hole
+[18:47] if you see the holes
+[18:49] then you will write
+[18:53] E
+[18:55] concentration of holes is P
+[18:57] mobility is
+[18:59] mu P
+[19:01] mu P into
+[19:03] E
+[19:09] electron concentration
+[19:11] N mobility and mu N
+[19:13] E
+[19:15] now mu P
+[19:17] this is your hole mobility
+[19:21] hole mobility
+[19:25] and mu N
+[19:27] is your electron mobility
+[19:31] and
+[19:33] mu P is
+[19:35] smaller than mu N
+[19:37] means in one semiconductor
+[19:39] flow of electrons
+[19:41] flow of electrons
+[19:43] is much easier
+[19:45] compared to holes
+[19:47] what is the meaning of electrons
+[19:49] I told you yesterday
+[19:51] conduction band of electrons
+[19:53] means conduction band of electrons
+[19:55] can be easily flowed
+[19:57] where are the holes in the valence band
+[19:59] the holes never flow
+[20:01] the flow is electron
+[20:03] so this hole mobility
+[20:05] actually what it is saying
+[20:07] that will the valence band
+[20:09] flow of electrons
+[20:11] if the electron of valence band
+[20:13] jumps from one atom to another
+[20:15] that is the flow of
+[20:17] valence band electron
+[20:19] or that is the flow of hole
+[20:21] what was the meaning of the flow of holes
+[20:23] I told you that the vacancy
+[20:25] went from one atom to another
+[20:27] as I told you
+[20:29] if Rahul occupied the bench
+[20:31] if Rahul occupied the bench
+[20:33] of Rupankar
+[20:35] then the vacancy has shifted
+[20:37] do you understand now you think like this
+[20:39] think like this
+[20:41] conduction band is the area outside the classroom
+[20:43] imagine everyone close your eyes
+[20:45] remember your school
+[20:47] there used to be a street outside the classroom
+[20:49] there used to be an alley
+[20:51] any hall
+[20:53] okay
+[20:55] one classroom
+[20:57] in the classroom there is a valence band
+[20:59] in the valence band the child is locked
+[21:01] the child is stuck in the classroom
+[21:03] and outside the alley
+[21:05] the lobby
+[21:07] that is the conduction band
+[21:09] children are roaming around there
+[21:11] talking and having fun
+[21:13] that is the conduction band
+[21:15] that is the corridor
+[21:17] that is the corridor of your conduction band
+[21:19] now son
+[21:21] as I told you Rupankar
+[21:23] his bench got empty
+[21:25] remember
+[21:27] when Rupankar got up from the bench
+[21:29] his bench got empty
+[21:31] now Rahul occupied his bench
+[21:33] Rahul is an electron
+[21:35] Rahul occupied the bench of Rupankar
+[21:39] now when Rahul occupied the bench of Rupankar
+[21:41] the empty seat
+[21:43] now he came to Rahul's position
+[21:45] where Rahul was sitting
+[21:47] that seat got empty
+[21:49] so you can say that empty seat
+[21:51] went from Rupankar to Rahul
+[21:53] and Rahul came
+[21:55] from Rahul to Rupankar
+[21:57] that is if the electron is going from A to B
+[21:59] then the hole is going from B to A
+[22:01] and where is this movement
+[22:03] this movement is happening in the classroom
+[22:05] and the movement of the electron
+[22:07] the movement of the electron
+[22:09] this is happening in the corridor
+[22:11] now tell me one thing
+[22:13] son
+[22:15] is it easier to roam around in the corridor
+[22:17] or in the classroom
+[22:19] to go from one bench to another
+[22:21] obviously in the corridor
+[22:23] there is more free movement
+[22:25] so the mobility of the electron
+[22:27] because it is in the conduction band
+[22:29] they are free from the grip
+[22:31] of a nucleus
+[22:33] they are free from the nucleus
+[22:35] so they can move easily
+[22:37] and to move the hole
+[22:39] a valence electron
+[22:41] will have to jump from one atom
+[22:43] and this valence electrons
+[22:45] are in the grip of the nucleus
+[22:47] and will have to sit on the other atom
+[22:49] that is the hole mobility
+[22:51] so the mobility of the hole
+[22:53] will always be less
+[22:55] because to move the hole
+[22:57] son, you have to move the valence electron
+[22:59] of the valence band
+[23:01] and moving the electron of the valence band
+[23:03] means
+[23:05] you have to get out of one atom
+[23:07] and go into the other atom
+[23:09] which is more tough
+[23:11] and the electron free
+[23:13] which no one has caught
+[23:15] and its mobility will be more
+[23:17] understood?
+[23:19] understood kids?
+[23:21] now you have said that
+[23:23] these two come in the same direction
+[23:25] ok, these two come in the same direction
+[23:27] so if I say
+[23:29] drift
+[23:31] current
+[23:33] density
+[23:37] if I talk about
+[23:39] total drift current density
+[23:41] then you will say Jp
+[23:43] plus Jn
+[23:45] ok
+[23:47] now in Jp plus Jn
+[23:49] you can take out E
+[23:53] you can take out
+[23:55] capital E
+[23:57] ok, here it comes
+[23:59] P mu P plus N mu N
+[24:01] into E
+[24:03] now remember one ohms law
+[24:05] ohms law
+[24:07] if you remember
+[24:09] point form in the network
+[24:11] let's do it
+[24:15] ohms law used to say
+[24:17] J is equal to
+[24:19] sigma E
+[24:21] and now you are saying
+[24:23] this
+[24:25] so here
+[24:27] there is conductivity
+[24:29] look
+[24:33] if you compare
+[24:35] both
+[24:37] then you can say
+[24:39] comparing sigma equal to
+[24:41] E into
+[24:43] P mu P
+[24:45] plus N
+[24:47] mu N
+[24:49] here you have conductivity
+[24:51] so the conductivity
+[24:53] is the formula
+[24:55] here P is the whole concentration
+[24:57] and N is the electron
+[24:59] concentration
+[25:01] that is your conductivity
+[25:03] ok, here one more relation is read
+[25:05] which we call
+[25:07] Keynes relation
+[25:11] which you have read
+[25:13] drift and diffusion
+[25:17] what happens
+[25:21] that Dp by mu P
+[25:25] your diffusion was efficient
+[25:27] now the Dp and Dn
+[25:29] its value is
+[25:31] Kt by E
+[25:33] K here is your
+[25:35] Boltzmann constant
+[25:37] I think
+[25:39] many people must know about the Boltzmann constant
+[25:43] this comes to the use of
+[25:45] thermal energy
+[25:53] ok
+[25:55] so this is Boltzmann constant
+[25:57] so here
+[25:59] E Dp by mu P
+[26:01] is equal to Dn by mu N
+[26:03] equal to Kt by E
+[26:05] so you should know
+[26:07] all these things in the semiconductor
+[26:09] the part of the semiconductor
+[26:11] is complete
+[26:13] now Deep is asking
+[26:15] how can we calculate the mobility
+[26:17] from current
+[26:19] if you know the conductivity
+[26:21] if you know the concentration
+[26:23] then mobility will also come
+[26:25] and the second thing is
+[26:27] don't go so deep in the semiconductors
+[26:29] even though your name is Deep
+[26:31] your major part will start after this
+[26:33] from today
+[26:35] that is far more important
+[26:37] than all of this
+[26:39] then the same thing is analog
+[26:41] not EDC
+[26:43] I have given you the fundamental of EDC
+[26:45] I have explained the basics of semiconductor
+[26:47] that now when you will read
+[26:49] diodes then you will get a lot of fun
+[26:51] and you will get a lot of learning
+[26:53] let me ask you a few questions
+[26:55] which were asked to leave yesterday
+[26:57] heavily doped N type semiconductor
+[26:59] hold to
+[27:01] electron mobility ratio
+[27:03] i.e. mu P by mu N
+[27:07] 0.4
+[27:09] doping concentration
+[27:11] intrinsic concentration
+[27:13] ratio of conductance
+[27:15] of the N type semiconductor
+[27:17] to the intrinsic
+[27:19] semiconductor of same material
+[27:21] at same temperature
+[27:23] one is saying
+[27:25] take N type semiconductor
+[27:27] one is saying intrinsic
+[27:29] take the ratio of conductance
+[27:31] of both
+[27:33] the ratio of conductance
+[27:35] will be equal to the ratio of conductivity
+[27:37] conductance
+[27:39] will be equal to the ratio of conductivity
+[27:41] sigma N
+[27:43] upon
+[27:45] sigma intrinsic
+[27:47] this is asking
+[27:49] sigma N and sigma intrinsic
+[27:51] ratio
+[27:53] now see
+[27:55] the value given to you
+[27:57] is
+[27:59] Nd
+[28:01] which you will consider
+[28:03] N0 or N
+[28:05] if I tell you to take P0
+[28:07] then
+[28:09] you will say Ni2 by
+[28:11] Nd
+[28:13] which is
+[28:15] this is Ni
+[28:17] okay
+[28:19] so how much is Ni2
+[28:21] 2.25
+[28:25] so
+[28:31] this is even less than
+[28:33] 1 value
+[28:35] this is a very small value
+[28:37] if you see
+[28:39] this whole
+[28:41] concentration is very small
+[28:43] power of electron
+[28:45] is running in 8 and this is
+[28:47] smaller than 1
+[28:49] this is smaller than 1
+[28:51] so you can say
+[28:53] we will ignore this
+[28:55] you can say
+[28:57] we will ignore this concentration
+[28:59] so I say that the
+[29:01] concentration of N type material
+[29:03] will be E N mu N
+[29:05] E mu N
+[29:07] write like this
+[29:09] and N is this
+[29:11] understood
+[29:13] now
+[29:15] the intrinsic
+[29:17] semiconductor in it
+[29:19] the whole and electron
+[29:21] are equal to Ni
+[29:23] remember
+[29:25] in both types of semiconductor
+[29:27] the whole and electron are equal
+[29:29] so when I talk about
+[29:31] sigma intrinsic
+[29:33] then I will say
+[29:35] E N mu N
+[29:37] plus E P mu P
+[29:39] okay
+[29:41] so what will be here
+[29:43] E Ni
+[29:45] mu N plus mu P
+[29:47] mu N plus mu P
+[29:49] mu P
+[29:51] both the values are equal to Ni
+[29:53] in intrinsic
+[29:55] now you have to take the ratio of both
+[29:57] so what will you say
+[29:59] that sigma N
+[30:01] by sigma intrinsic
+[30:05] E mu N
+[30:07] 4.2 into 10
+[30:09] power 8
+[30:13] by E
+[30:15] mu N plus mu P
+[30:17] mu N plus mu P
+[30:19] and the Ni
+[30:23] okay
+[30:25] this was it
+[30:27] now see E is cut
+[30:29] bring down mu N
+[30:31] and cut this 10 to the power 4
+[30:33] 42 by 15 14 by 5
+[30:35] 2.8
+[30:39] into 10 to the power 4
+[30:43] 1 plus mu N
+[30:45] mu P by mu N
+[30:47] mu P by mu N is 0.4
+[30:49] so this is 1.4
+[30:51] so this is 20,000
+[30:53] so 20,000
+[30:55] is D
+[30:57] understood
+[30:59] now you understood
+[31:01] yesterday a child was asking
+[31:03] that sir when the whole and electron are present in intrinsic
+[31:05] then what is the work of extrinsic
+[31:07] you are seeing the difference
+[31:09] of the earth and sky in conductivity
+[31:11] 20,000 times more
+[31:13] conducting
+[31:15] your N type semiconductor
+[31:17] as compared to intrinsic semiconductor
+[31:19] this is the reason
+[31:21] why you do doping
+[31:23] understood
+[31:25] yesterday I told you
+[31:27] that the range of semiconductors is very big
+[31:29] where you can control
+[31:31] its conductivity
+[31:33] so you have controlled
+[31:35] you have done 20,000 times more conductivity
+[31:37] what else do you want
+[31:39] you will try this one
+[31:41] now try
+[31:43] here resistivity is given
+[31:45] so 1 upon conductivity is the resistivity
+[31:47] come on
+[31:49] do it
+[31:51] you have given the mobility of electron and hole
+[31:53] density of electron in
+[31:55] intrinsic semiconductor
+[31:57] pay attention to intrinsic
+[31:59] intrinsic means
+[32:01] which is equal
+[32:03] N i is equal to N and P
+[32:05] both value
+[32:07] do it
+[32:41] did anyone get the answer
+[32:43] now
+[32:45] son
+[32:47] this request will not be accepted
+[32:49] okay
+[32:51] so please don't make this request
+[32:53] there is no difference in 24 and 36
+[32:55] the child
+[32:57] who cannot see video in 24 hours
+[32:59] will not see it in 36
+[33:01] okay
+[33:03] come on
+[33:05] see intrinsic resistivity
+[33:07] is given
+[33:09] so what will be conductivity
+[33:11] 1 by rho
+[33:13] so 1 by 0.47
+[33:17] okay
+[33:19] now see this is given in centimeter
+[33:21] and this is going in meter
+[33:23] if given in centimeter
+[33:25] then
+[33:27] take 10 power minus 2
+[33:31] now what you will say here
+[33:33] E
+[33:35] N i
+[33:37] mu P
+[33:38] plus N i
+[33:40] mu N
+[33:52] E is
+[33:54] N i
+[33:56] mu P plus mu N
+[33:58] how much is 0.58
+[34:00] so see from here
+[34:02] N i will come
+[34:04] understand
+[34:06] I will take calculator
+[34:10] so
+[34:12] 100 by 0.47
+[34:14] by 1.6
+[34:16] by 0.58
+[34:18] so this is 10 power
+[34:20] 11
+[34:22] 2.29
+[34:26] N to 10 power 3
+[34:28] per meter cube
+[34:30] why meter cube will come
+[34:32] because you are walking in meter
+[34:34] 2.29
+[34:36] into 10 power
+[34:38] 1 second 13
+[34:40] per meter cube
+[34:42] if you write meter cube as 10 power
+[34:44] 6 centimeter cube
+[34:46] then this will become 10 power 7
+[34:48] now this is asking
+[34:50] tell me drift velocity
+[34:52] drift velocity is mu into E
+[34:54] this is mobility
+[34:56] and this is electric field
+[34:58] will become mu into E
+[35:00] both will come separately
+[35:02] don't add like drift velocity
+[35:04] someone has done
+[35:06] 2 different body velocity
+[35:08] 1 particle is hole
+[35:10] 1 particle is electron
+[35:12] how will the velocity be added
+[35:14] think
+[35:16] if there are 2 different vehicles on the road
+[35:18] at different speed
+[35:20] will you add them
+[35:24] now let's come on diodes
+[35:26] so first I will explain you
+[35:28] basic p-n junction
+[35:30] means when p-type material
+[35:32] and n-type material are combined
+[35:34] then what type of junction
+[35:36] is there
+[35:38] I have wrong power
+[35:40] yes this is 19
+[35:42] so this will become 21
+[35:48] and 23 actually
+[35:52] okay thank you
+[35:54] okay
+[35:56] now see
+[35:58] when we talk about diodes
+[36:00] first we have to understand
+[36:02] how diodes are made
+[36:04] what is the structure of diodes
+[36:06] how p-type and n-type material
+[36:08] are combined
+[36:10] how they work together
+[36:12] do you understand
+[36:14] so first we will understand
+[36:16] in today's and tomorrow's lecture
+[36:18] then I will start teaching
+[36:20] application of diodes
+[36:22] which is Clipper, Clamper
+[36:24] Multiplier Regulator
+[36:26] but first understand
+[36:28] what diodes are
+[36:30] because if you feel
+[36:32] the working of diodes
+[36:34] then you will get the feeling of devices
+[36:36] very well
+[36:38] and even in power electronics
+[36:40] when the first chapter of electrical students will study
+[36:42] they will be able to connect very well
+[36:44] so see if we talk about diodes construction
+[36:46] to construct diodes
+[36:48] what do we do first
+[36:50] we take n plus silicon material
+[36:52] what is n plus
+[36:54] what does it mean
+[36:56] plus indicates
+[36:58] highly doped
+[37:02] indicates heavy
+[37:04] doping
+[37:06] okay
+[37:08] where doping concentration is kept
+[37:10] too much
+[37:12] we call it plus
+[37:14] we call it plus
+[37:16] so first you took n plus
+[37:18] material
+[37:20] you took n plus material
+[37:22] on that you deposited p silicon
+[37:24] you took n plus
+[37:26] silicon
+[37:28] on that you deposited p silicon
+[37:30] okay
+[37:32] so it became p and n junction
+[37:34] p and n junction
+[37:36] means this line
+[37:40] this line is called
+[37:42] metallurgical junction
+[37:48] what does this line say
+[37:50] metallurgical junction
+[37:54] okay this is p and n junction
+[37:56] p and n junction
+[37:58] now what did you do
+[38:00] to make metal contact
+[38:02] you deposited aluminium
+[38:04] what did you do
+[38:06] deposited aluminium
+[38:08] deposited metal
+[38:10] and then the terminal
+[38:12] written with p material
+[38:14] that is anode and the terminal
+[38:16] written with n material
+[38:18] now you should have one question
+[38:20] that
+[38:22] why didn't we connect the terminal directly
+[38:24] why didn't you take out
+[38:26] straight wire from p
+[38:28] why didn't you take out straight wire from n
+[38:30] son if you take out
+[38:32] straight wire from p or n
+[38:34] then this contact area
+[38:36] would have become very small
+[38:38] and this contact area
+[38:40] would have become very small
+[38:42] the resistance would have been very high
+[38:44] so why did you deposit metal
+[38:46] why did you deposit metal
+[38:50] metal deposited
+[38:52] to reduce contact resistance
+[38:54] contact resistance
+[39:14] okay you deposited metal
+[39:16] to reduce contact resistance
+[39:18] otherwise the diode
+[39:20] would have been placed in a circuit
+[39:22] the voltage drop would have come here
+[39:24] that is not good
+[39:26] we don't want the voltage drop to be too high
+[39:28] especially on the junction
+[39:30] where we have made the terminal
+[39:32] the objective of this terminal is
+[39:34] to get the wire out of the diode
+[39:36] we want the terminal of the diode
+[39:38] we want the resistance to be
+[39:40] too high here
+[39:42] okay
+[39:44] son if you remove the middle layer
+[39:46] this shaded region
+[39:48] if you remove it
+[39:50] if you connect this wire directly to the p
+[39:52] then the region between the wire
+[39:54] and the p
+[39:56] or the overlap between the wire and the p
+[39:58] will become very small
+[40:00] and that area will become very small
+[40:02] so the resistance will become very high
+[40:04] now see this
+[40:06] the overlapping area in the semiconductor and metal
+[40:08] is so big
+[40:10] and if this wire
+[40:12] would have connected directly
+[40:14] then it would have been a point
+[40:16] and if it would have been a small point
+[40:18] then it would have become very high
+[40:20] did you understand
+[40:22] so here you have increased the contact area
+[40:24] between the contact resistance
+[40:26] between metal and
+[40:28] semiconductor
+[40:30] did you understand
+[40:32] now I will explain the working
+[40:34] son don't worry about p-n junction
+[40:36] but tell me
+[40:38] did you understand
+[40:40] did you understand till here
+[40:42] come on
+[40:44] now what is the other way
+[40:46] the construction is something like this
+[40:48] that first take the entire n-type material
+[40:50] first take the entire n-type material
+[40:52] now in this n-type material
+[40:54] add the impurity of group 3
+[40:56] add the impurity of group 3
+[40:58] convert a small box
+[41:00] into p-type
+[41:02] means the n-type
+[41:04] has converted the n-type into p-type
+[41:06] okay
+[41:08] why the contact resistance of wire and metal
+[41:10] it is made of the same material
+[41:12] there won't be any resistance on their contact
+[41:14] they are made from the same material
+[41:16] when different material
+[41:18] elements are connected
+[41:20] or different material are connected
+[41:22] then the contact resistance comes
+[41:24] now listen
+[41:26] you made the entire box of n-type
+[41:28] now in one of its regions
+[41:30] you added the impurity of group 3
+[41:32] and created a small p-region
+[41:34] in between
+[41:36] now you added this on the top
+[41:38] oxide
+[41:40] oxide means SiO2
+[41:42] oxide means
+[41:44] SiO2
+[41:46] it works as an insulator
+[41:50] okay
+[41:52] it works as an insulator
+[41:54] so you deposited the insulator
+[41:56] then after removing
+[41:58] this insulator
+[42:00] after removing this part
+[42:02] you deposited this aluminium
+[42:04] this part is removed
+[42:06] it is called itching
+[42:08] itching means
+[42:10] not itching
+[42:12] E-T-C-H-I-N-G
+[42:14] itching
+[42:16] so you removed
+[42:18] some material from there
+[42:20] and deposited the aluminium
+[42:22] again why aluminium is deposited here
+[42:24] why the wire is not connected
+[42:26] so that you can reduce the contact
+[42:28] resistance
+[42:30] did you understand how a diode is made
+[42:32] tell me quickly
+[42:34] how a diode is made
+[42:36] did you understand this
+[42:38] tell me quickly
+[42:40] how a diode is made
+[42:42] itching means itching
+[42:44] did you understand
+[42:46] should I drink water
+[42:48] give me permission
+[42:50] should I drink water and then go ahead
+[42:52] it takes 2 hours
+[42:54] water is necessary
+[42:56] let's go
+[43:08] now let's talk about the depletion region
+[43:10] before going on the depletion region
+[43:12] I want to explain
+[43:14] how the charge concentration
+[43:16] will be
+[43:18] in p-type and n-type region
+[43:20] p-type
+[43:22] and n-type region
+[43:24] so what is the definition of a diode
+[43:26] there is a device
+[43:28] what is the definition of a laptop
+[43:30] do you understand
+[43:32] what is the definition of a tube light
+[43:34] what is the definition of a fan
+[43:36] these are all appliances
+[43:38] similarly a diode is a device
+[43:40] it is not defined
+[43:42] if there is a term
+[43:44] or a property
+[43:46] it is a device
+[43:48] what will you define it
+[43:50] the junction of p and n
+[43:52] the device that is made
+[43:54] is called as a diode
+[43:56] now see
+[43:58] this x is equal to 0
+[44:00] let me make a graph
+[44:14] here
+[44:16] this line
+[44:18] this x is equal to 0
+[44:22] here I went in n-type
+[44:26] see
+[44:28] here I went in n-type
+[44:34] and here I went in p-type
+[44:44] okay let's go
+[44:46] now this x is equal to 0
+[44:48] this is the junction of p and n
+[44:50] this is the junction
+[44:52] and I said p and n-type
+[44:54] the junction of x is equal to 0
+[44:56] what will you call it
+[44:58] you will call it as
+[45:00] a
+[45:02] metallurgical junction
+[45:04] what will you call it
+[45:06] metallurgical
+[45:08] junction
+[45:12] okay this is x
+[45:14] now let me draw a line from here
+[45:16] let me draw a line from here
+[45:18] as far as my device is
+[45:20] okay
+[45:22] this is my device
+[45:24] here n-type
+[45:26] means n-doping
+[45:28] here p-type
+[45:30] means p-doping
+[45:32] in n-type
+[45:34] what is the electron concentration
+[45:36] in n-type
+[45:38] what is the electron concentration
+[45:40] n-d
+[45:46] n-n-0
+[45:50] what does n-n-0 mean
+[45:52] n-n-0 means
+[45:54] electron concentration
+[45:56] on the n-side
+[45:58] and o means
+[46:00] thermal equilibrium
+[46:02] till now you were writing p-n-n-0
+[46:04] because
+[46:06] either you were talking about p-type
+[46:08] or you were talking about n-type
+[46:10] you were not talking about both
+[46:12] here both are
+[46:14] electron concentration
+[46:16] so you will have to tell
+[46:18] which region you are talking about
+[46:20] whether you are talking about
+[46:22] electron on n-side
+[46:24] or you are talking about
+[46:26] electron on p-side
+[46:28] so n-n-0 was written
+[46:30] electron concentration
+[46:32] on the n-side
+[46:34] under thermal equilibrium
+[46:36] so what is this
+[46:38] electron concentration
+[46:40] on
+[46:42] p-side
+[46:44] under
+[46:46] thermal
+[46:48] equilibrium
+[46:50] okay
+[46:52] now again and again
+[46:54] I will not write thermal equilibrium
+[46:56] what is written as o
+[46:58] it represents that it is thermal equilibrium
+[47:00] now my children
+[47:02] think one thing
+[47:04] if you know the electron concentration
+[47:06] then you can remove the hole
+[47:08] how
+[47:10] how much is the product of
+[47:12] electron and hole concentration
+[47:14] that comes
+[47:16] n-i-square
+[47:18] n-i-square
+[47:20] so this is p-n-0
+[47:22] n-i-square
+[47:24] by n-d
+[47:26] and what will you call this
+[47:28] child
+[47:30] you will call this
+[47:32] hole concentration
+[47:34] on
+[47:36] n-side
+[47:38] now understand
+[47:40] under thermal equilibrium
+[47:42] I am not writing that again
+[47:44] hole concentration on
+[47:46] n-side
+[47:48] tell me
+[47:50] and it is n-type so electron
+[47:52] concentration is more
+[47:54] hole concentration is less
+[47:56] hole concentration is less
+[47:58] now come to p-side
+[48:00] who will dominate on p-side
+[48:02] who is the majority carrier
+[48:04] there are holes
+[48:06] the number of holes will be more
+[48:08] so what will you show
+[48:10] the concentration of holes here
+[48:12] n-a
+[48:14] what will you show here
+[48:16] here you will show p-p-0
+[48:18] n-a
+[48:20] sir why did you make the n-a line
+[48:22] lower than n-d
+[48:24] why did you make the n-a line
+[48:26] lower than n-d
+[48:28] just see
+[48:30] here n-doping was more
+[48:32] plus means more doping
+[48:34] and p was less doping
+[48:36] not plus here
+[48:38] not plus on p
+[48:40] means in p region doping is less
+[48:42] as compare to n-region
+[48:44] so there is more doping in n
+[48:46] so there is more concentration
+[48:48] and there is less doping in p
+[48:50] here concentration is less
+[48:52] let me tell you
+[48:54] what will you tell p-p-0
+[48:56] what will you tell p-p-0
+[48:58] hole concentration
+[49:00] on P side under thermal equilibrium.
+[49:12] I am telling you that I will not write thermal equilibrium again and again on both sides.
+[49:19] But all the concentration is on thermal equilibrium.
+[49:23] Because your mass action law only works when there is thermal equilibrium.
+[49:29] Now here what will be the next one?
+[49:35] NP0.
+[49:37] So what is this? NP0.
+[49:51] This is electron concentration on P side.
+[49:59] Sir why did you make this much?
+[50:02] Logically if the concentration of the hole is less then the electron will rise.
+[50:08] Logically if the concentration of the hole is less then the concentration of the electron will rise.
+[50:16] Do you understand? Tell me.
+[50:19] Do you understand the game of concentration?
+[50:22] Do you understand?
+[50:25] Tell me.
+[50:27] Tell me quickly.
+[50:29] Do you understand?
+[50:31] Did you enjoy it?
+[50:35] Very good.
+[50:37] Now see the gun.
+[50:39] Now I will do one thing.
+[50:47] Look at this.
+[50:49] Let's change its color.
+[50:51] Isn't it?
+[50:54] Let's go.
+[50:59] I showed the electron concentration with the blue and the hole concentration with the red.
+[51:06] Now see there are more electrons on the N side and less on the P side.
+[51:10] There are many electrons on the N side.
+[51:13] There are few on the P side.
+[51:15] There are more holes on the P side and few on the N side.
+[51:19] Do you understand?
+[51:21] There are more holes on the P side and less on the N side.
+[51:25] There are more electrons on the N side and less on the P side.
+[51:28] So what will happen?
+[51:30] Put your mind to guess what will happen?
+[51:33] Now guess what will happen?
+[51:36] I think all my children can guess this.
+[51:40] What will happen? What do you think?
+[51:42] Wow!
+[51:44] Sai answered it correctly.
+[51:46] There will be a diffusion.
+[51:48] There will be a diffusion.
+[51:50] Because electrons will go from N to P and holes will go from P to N.
+[51:57] Okay?
+[51:59] Electrons will go from N to P and holes will go from P to N.
+[52:04] So holes will be diffusion from P side to N side and electrons will be diffusion from N side to P side.
+[52:12] And keep this in mind.
+[52:14] Where is the movement of holes in the valence band?
+[52:17] And where is the movement of electrons in the conduction band?
+[52:21] Do you understand?
+[52:22] Where are the holes present in the valence band?
+[52:25] And where are the electrons present in the conduction band?
+[52:29] Chamka!
+[52:31] So let me move ahead.
+[52:33] Let's see how to show P-type and N-type materials.
+[52:37] Let's show P-type material like this.
+[52:39] Negative ions with a hole.
+[52:42] What happens?
+[52:44] This hole is considered as a positive charge.
+[52:52] Sir, why did you show this negative ion?
+[52:57] Dear, I showed this negative ion because
+[53:01] as soon as the acceptor impurity, as soon as the boron,
+[53:06] as soon as the boron acceptor impurity,
+[53:08] as soon as it catches an electron,
+[53:11] as soon as it catches an electron,
+[53:14] it will immediately become a negative ion.
+[53:17] So what is this negative ion telling?
+[53:19] It is telling when
+[53:22] acceptor impurity
+[53:24] when
+[53:26] acceptor impurity
+[53:32] accepts an electron,
+[53:40] hole vanishes
+[53:46] and
+[53:48] resulting ion.
+[53:52] Is a negative ion.
+[53:56] What is the meaning of showing a negative ion?
+[53:59] If any atom accepts an electron,
+[54:03] it will become a negative charge, right?
+[54:06] So overall this combination, dear,
+[54:09] overall if you see this combination,
+[54:12] a negative ion and a positive charge,
+[54:16] this is electrically neutral.
+[54:18] So don't think that when you add boron atom in doping,
+[54:23] then your neutrality gets lost.
+[54:26] It doesn't happen like this.
+[54:28] Don't think that when you put boron atom in the crystal of silicon,
+[54:32] it will positively charge.
+[54:34] No, it remains neutral.
+[54:36] Because when boron comes,
+[54:38] a negative ion is bringing a hole.
+[54:40] So what is the net charge of boron?
+[54:42] It is zero.
+[54:43] Otherwise think like this, dear.
+[54:44] If you enter atom in atom,
+[54:45] where will the charge come from?
+[54:47] The charge comes from the ion.
+[54:49] We didn't put the ions in the crystal.
+[54:51] We put the boron atom in the crystal,
+[54:53] in the silicon crystal.
+[54:55] And an atom is electrically neutral
+[54:57] because there are as many protons in it as there are electrons.
+[55:01] That is different when we are talking about semiconductors.
+[55:04] We don't talk about protons.
+[55:06] Because protons are kept in the nucleus.
+[55:08] Neither can the proton flow,
+[55:10] nor can the proton charge flow,
+[55:12] nor can the current flow.
+[55:14] So it is not about the proton.
+[55:16] So by default,
+[55:17] whether it is p-type semiconductor,
+[55:19] or n-type semiconductor,
+[55:20] it is always neutral.
+[55:22] Because as many protons are there,
+[55:24] only electrons are there.
+[55:25] It is neutral.
+[55:26] Don't think that p-type semiconductor
+[55:28] is positively charged.
+[55:30] And n-type is negatively charged.
+[55:32] Don't ever think like that.
+[55:33] Got it?
+[55:34] You are just talking about electrons
+[55:36] because protons are in the nucleus.
+[55:38] So where there are electrons,
+[55:40] there is talking about electrons.
+[55:41] And where electrons disappear,
+[55:42] there is talking about the hole.
+[55:44] Hole is not a proton.
+[55:46] Do you understand?
+[55:47] Proton is in the nucleus.
+[55:49] If an electron runs away from an orbit,
+[55:51] then the vacancy created in that orbit is the hole.
+[55:55] So the hole is also connected to the electron.
+[55:57] As it is said, what is darkness?
+[56:00] There is no light.
+[56:02] It is called the absence of light is dark.
+[56:05] In the same way, the absence of electron is the hole.
+[56:08] Hole is not a proton.
+[56:10] Got it?
+[56:11] Did you understand what I said about the neutral?
+[56:13] Now look at n-type.
+[56:15] In n-type, we had put donor impurity.
+[56:19] So donor atom contains one extra electron.
+[56:28] Remember, there used to be 5 electrons.
+[56:31] And it betrayed its own electron.
+[56:35] What did it do?
+[56:37] What did it do?
+[56:38] Phosphorus made a bond with 4 silicon
+[56:42] and betrayed its own proton, sorry,
+[56:46] its own electron.
+[56:47] That let's go, let's go.
+[56:48] It became its own 8-pore.
+[56:50] It should not have its own 9-pore.
+[56:52] So it had run away.
+[56:53] Right?
+[56:54] It had run away.
+[56:56] Now this is positive ion.
+[57:00] Because when donor atom,
+[57:05] when donor atom donates an electron,
+[57:17] it becomes positive ion.
+[57:22] So this is also neutral.
+[57:24] Think about it.
+[57:26] This is also neutral.
+[57:30] Now a child has asked a very good question.
+[57:32] Sir, why do we consider the whole as a positive charge?
+[57:35] What is the whole, son?
+[57:37] Absence of electron.
+[57:39] As the electron is absent,
+[57:41] proton and electron will become imbalanced.
+[57:44] So how will the net charge be positive?
+[57:49] Okay?
+[57:51] Okay, Ravi.
+[57:52] Got it?
+[57:53] The representation of p-type and n-type.
+[57:55] Now come back to your story.
+[57:57] We said that there are a lot of electrons near n-type.
+[58:02] There are a lot of electrons.
+[58:04] There are a lot of electrons.
+[58:05] P-type is saying that I am poor.
+[58:07] I don't have an electron.
+[58:09] What should I do?
+[58:10] So what will happen?
+[58:11] The n-type p-type will give its electron to p-type.
+[58:17] The n-type p-type will give its electron to p-type.
+[58:21] Now p-type is very happy that you gave me your electron.
+[58:25] So let's take a hole from me.
+[58:27] I have more holes, right?
+[58:29] I have more holes.
+[58:31] The p-type will give its electron to its holes.
+[58:35] So holes will start traveling from p-type to n-type.
+[58:38] And electrons will start traveling from n-type to p-type.
+[58:42] Okay?
+[58:43] So look.
+[58:44] What happened here?
+[58:46] This is your p-side.
+[58:51] Okay?
+[58:52] And this is your n-side.
+[58:57] Now when the electron starts coming from here.
+[59:01] When the electron starts coming from here.
+[59:08] Yes, so look.
+[59:09] I have also written here that after doping,
+[59:12] the concentration is gradient.
+[59:14] Because of which the holes go from p to n.
+[59:16] And the electron diffuses from n to p.
+[59:19] Okay?
+[59:20] So here the electron will start coming from here.
+[59:27] And here the hole will start coming from here.
+[59:32] Now look what are the holes?
+[59:34] The holes are the lack of electrons.
+[59:36] Right?
+[59:37] So when electrons start coming from p-type region,
+[59:40] then they will start filling up empty space.
+[59:42] So what will happen?
+[59:43] The donor atom will give its electron.
+[59:45] And it will become positively charged.
+[59:48] And the acceptor atom will take its electron.
+[59:51] That I have the lack of electrons.
+[59:53] So both are happy.
+[59:55] There is a problem on the n-side because it is a phosphorous.
+[59:58] It has 9 electrons.
+[60:00] How many should it have?
+[60:01] 8.
+[60:02] So there is one extra.
+[60:03] There is a problem on the p-side because it is a boron.
+[60:05] It has 7 electrons.
+[60:07] If it has 7 electrons,
+[60:09] how many should it have?
+[60:11] 8.
+[60:12] So it has less.
+[60:13] It has less.
+[60:15] So what happened?
+[60:16] The electron started coming from here on the p-side.
+[60:20] When the electron started coming from the p-side,
+[60:22] then the boron also got 8.
+[60:24] That is also happy.
+[60:25] And the phosphorous also got 8.
+[60:27] That is also happy.
+[60:28] Brother!
+[60:29] Both the problems are solved.
+[60:30] Right?
+[60:31] We solved both the problems.
+[60:33] But when the electron comes from here,
+[60:36] then the electron ends here.
+[60:38] When the hole comes from here,
+[60:40] then the hole ends here.
+[60:41] So this region is called a depletion region.
+[60:44] There were no holes in this region.
+[60:46] Nor were there electrons.
+[60:48] So this region is depleted of any charge carriers.
+[60:53] Here the charge carriers are missing.
+[60:55] Here the charge carriers are missing.
+[60:57] The ions cannot flow to the current.
+[61:00] The ions are in the lattice.
+[61:02] The ions are in the crystal.
+[61:04] The ions will not leave the crystal.
+[61:07] The current flows through the electron and the hole.
+[61:10] Right?
+[61:11] Who flows through the current?
+[61:12] The electron and the hole.
+[61:14] So neither the electron nor the hole is left here.
+[61:17] And the n-type has finished the hole
+[61:20] by giving the electron p-type.
+[61:22] And the electron has also finished the hole.
+[61:24] So neither the electron nor the hole is left here.
+[61:28] So this region is called as a depletion region.
+[61:32] What is it called as?
+[61:33] It is called as a depletion region.
+[61:36] Tell everyone the name of the depletion region.
+[61:38] Tell everyone whether it is a depletion region or not.
+[61:45] So what are we saying?
+[61:49] When electrons travel from
+[61:59] n to p,
+[62:01] they neutralize
+[62:11] holes present
+[62:20] on p-side.
+[62:23] They neutralize holes present on p-side.
+[62:26] Right?
+[62:27] So this leads to
+[62:32] formation
+[62:41] of negative ions
+[62:47] on p-side
+[62:52] and positive ions
+[62:58] on n-side.
+[63:02] Right?
+[63:03] Negative ions on p-side and positive ions on n-side.
+[63:09] Now what are we saying?
+[63:11] The region
+[63:14] containing
+[63:19] just ions
+[63:24] just the ions
+[63:28] is devoid
+[63:33] of
+[63:36] holes and electrons
+[63:41] and called as
+[63:43] depletion region.
+[63:58] Right?
+[64:00] Did you understand?
+[64:02] Now look at this depletion region.
+[64:05] Right?
+[64:06] This is the depletion region.
+[64:09] What will happen in the depletion region here?
+[64:13] What will happen in the depletion region?
+[64:15] Do you have positive ions?
+[64:17] Do you have negative ions?
+[64:19] So it will start becoming an electric field.
+[64:22] And this electric field will only remain in the depletion region.
+[64:25] Why, sir?
+[64:26] Because the region outside is neutral.
+[64:28] Dear, this side is neutral.
+[64:32] When there is no charge here,
+[64:34] the net charge is zero,
+[64:35] then there will be no electric field.
+[64:37] When the net charge is zero,
+[64:39] then there will be no electric field.
+[64:41] So this electric field is becoming
+[64:43] positive ions and negative ions.
+[64:47] And it is only
+[64:49] concentrated within the
+[64:51] depletion region.
+[64:53] It is only concentrated
+[64:55] within the depletion region.
+[64:57] Did you understand?
+[64:59] So what are we saying here?
+[65:01] What am I saying at the next point?
+[65:04] An electric field
+[65:09] an electric field
+[65:12] is created
+[65:17] from N side to P side
+[65:26] N side to P side
+[65:30] that is from
+[65:33] positive to negative ion
+[65:38] positive to negative ion
+[65:41] and it is concentrated.
+[65:44] It is
+[65:46] N side
+[65:52] N side
+[65:56] depletion
+[65:58] region.
+[65:59] It is only concentrated
+[66:01] within the depletion region.
+[66:03] It cannot come out of it.
+[66:05] Did you understand?
+[66:06] It cannot come out of it.
+[66:09] Dear, this electric field
+[66:11] will force on the electrons
+[66:13] from the field
+[66:15] because the force on the negative charge
+[66:17] that is opposite to the field
+[66:19] will force on the electrons
+[66:21] on the right and
+[66:23] force on the holes
+[66:25] parallel.
+[66:26] Force on the holes
+[66:27] parallel.
+[66:29] That is left.
+[66:31] So what is this?
+[66:33] What is Fe?
+[66:34] Force on the electron
+[66:38] due to the electric field
+[66:41] okay.
+[66:43] And what is Fp?
+[66:46] This is force on the holes
+[66:50] due to the electric field.
+[66:53] Dear, look at the
+[66:55] diffusion on the holes.
+[66:57] If you look at the figure of the
+[66:59] diffusion on the holes
+[67:01] on the right.
+[67:03] The holes went to the right.
+[67:05] Where is the force on the
+[67:07] electric field on the holes on the left?
+[67:09] Electrons went to the left.
+[67:11] Electrons went to the left.
+[67:13] Where is the force on the
+[67:15] electric field on the right?
+[67:17] Dear, this electric
+[67:19] field is
+[67:21] hitting the holes on the
+[67:23] own feet.
+[67:25] The side where the diffusion is
+[67:27] is opposing it.
+[67:29] This diffusion is
+[67:31] opposing it.
+[67:33] That is why
+[67:35] under equilibrium
+[67:37] the diffusion cannot be
+[67:39] drifted.
+[67:41] The net effect will be cancelled out.
+[67:43] The depletion region will stop
+[67:45] as much as it is made.
+[67:47] In equilibrium
+[67:49] the depletion region will not increase
+[67:51] nor will it decrease.
+[67:53] As much as it is made
+[67:55] will remain as much as it is made.
+[67:57] Because now the hole
+[67:59] which tries to diffuse
+[68:01] will oppose the electric field.
+[68:03] The one who tries to diffuse
+[68:05] will oppose the electric field.
+[68:07] Understood?
+[68:09] So under
+[68:11] equilibrium, this electric field
+[68:13] will stop the diffusion
+[68:15] of charges from one side to the other.
+[68:17] So the width of the
+[68:19] depletion region will become
+[68:21] constant.
+[68:23] The width of the depletion region
+[68:25] will become constant.
+[68:27] Understood? Tell me.
+[68:31] So under
+[68:33] equilibrium
+[68:39] force
+[68:41] due to electric field
+[68:45] force due to
+[68:47] electric field
+[68:51] compensates
+[68:59] that diffusion
+[69:03] of charges
+[69:07] tendency
+[69:11] of charges
+[69:19] from one side to other
+[69:27] from one side to
+[69:29] other.
+[69:31] Okay?
+[69:33] And what I will say here
+[69:35] that no charge movement
+[69:37] no charge movement
+[69:43] takes place
+[69:51] current is zero
+[69:57] depletion width
+[70:01] remains
+[70:05] same.
+[70:09] Depletion width
+[70:11] remains the same.
+[70:13] Understood? Depletion layer
+[70:15] nicely.
+[70:17] Understood? So the electric field
+[70:19] stopped the diffusion. Otherwise
+[70:21] all the electrons
+[70:23] came up from N side to P side
+[70:25] and all the holes
+[70:27] also ended.
+[70:29] Understood?
+[70:31] If there were 100 holes
+[70:33] on P side, 100 electrons
+[70:35] would come up from there
+[70:37] and end the 100 holes here
+[70:39] and no hole would be left
+[70:41] in the end diode.
+[70:43] No electron would be left.
+[70:45] But now it is saved.
+[70:47] Depletion layer is formed
+[70:49] all the nanometers are formed
+[70:51] and all our work
+[70:53] stopped.
+[70:55] Okay?
+[70:57] Now let's talk about
+[70:59] charge neutrality.
+[71:01] Charge neutrality.
+[71:03] Let me make a diagram
+[71:05] and explain what charge neutrality is.
+[71:07] Look, this was your diode.
+[71:09] Okay?
+[71:11] What was in between?
+[71:13] Metallurgical junction
+[71:15] which was the junction of P and N side.
+[71:17] What was on one side of this
+[71:19] son? P side
+[71:21] where you had all
+[71:23] negative ions.
+[71:25] And on one side you had
+[71:27] N side where all the positive ions
+[71:29] were.
+[71:31] So look, these were the negative ions
+[71:33] on P side.
+[71:41] Okay?
+[71:43] And here on N side
+[71:45] were positive ions.
+[71:47] Now think about
+[71:49] one thing, son.
+[71:51] All the electrons
+[71:53] from N to P
+[71:55] would have ended the hole.
+[71:57] Think about it.
+[71:59] If 10 electrons from N to P
+[72:01] would have ended the hole in the P region.
+[72:03] Would have ended the hole in the P region.
+[72:05] What does this mean?
+[72:07] What does this mean?
+[72:09] How much charge would have been made
+[72:11] positive.
+[72:13] How much charge would have been made negative.
+[72:15] Can you say it, son?
+[72:17] Can you say it?
+[72:19] How much charge would have been made
+[72:21] when electrons were donated?
+[72:23] If electrons were donated,
+[72:25] as much as electrons were donated
+[72:27] the holes would have ended.
+[72:29] If the holes had ended
+[72:31] the negative and positive charge
+[72:33] would have been equal.
+[72:35] So that is what is called as
+[72:37] the charge neutrality.
+[72:39] This is called charge neutrality.
+[72:41] So look,
+[72:43] the device is 3D.
+[72:45] This is the cross section area.
+[72:47] What is this?
+[72:49] The cross section area is A.
+[72:55] Okay.
+[72:57] What do I say, son?
+[72:59] What is the density here?
+[73:01] What is the density here?
+[73:03] N is A.
+[73:05] What is the density of
+[73:07] the boron atoms of the doping atoms?
+[73:09] N is A.
+[73:11] What is the density of the
+[73:13] phosphorous atoms here?
+[73:15] N is A.
+[73:17] The boron atoms are N A
+[73:19] and the phosphorous atoms are N D.
+[73:21] So what do I say?
+[73:23] Negative charge
+[73:25] in
+[73:27] p region
+[73:29] is equal
+[73:31] to positive charge
+[73:33] in
+[73:35] n region
+[73:37] is equal to positive charge
+[73:39] in
+[73:41] n region
+[73:43] n region
+[73:47] Okay.
+[73:49] Negative charge in p region is equal to
+[73:51] positive charge in n region.
+[73:53] So what are we saying here?
+[73:55] How much is the negative charge?
+[73:57] Density into volume.
+[73:59] Now, sir, how much is the volume?
+[74:01] The volume is
+[74:03] area into distance.
+[74:05] So what will be the distance?
+[74:07] Let's take this
+[74:09] x equal to 0.
+[74:11] Let's take this edge
+[74:13] x equal to minus x p.
+[74:15] And let's take this one
+[74:17] because it is going to the right.
+[74:21] x equal to x n.
+[74:23] Okay.
+[74:25] So how much distance is
+[74:27] on p region?
+[74:29] How much distance is on p region, son?
+[74:31] x p.
+[74:33] How much distance is on p region?
+[74:35] x p. And how much area is A?
+[74:37] How much area is A?
+[74:39] Now you are congratulating for the emotion
+[74:41] which has been passed for 6 months.
+[74:43] How is that?
+[74:45] Now look here, density.
+[74:47] Density is here
+[74:49] nd.
+[74:51] And
+[74:53] how much is the volume of this?
+[74:55] Area. Area is same.
+[74:57] Length is x n.
+[74:59] So what relation
+[75:01] n A x p
+[75:03] is equal to nd
+[75:05] x n.
+[75:07] So it is called charge neutrality.
+[75:09] Did you understand the condition?
+[75:11] n A x p
+[75:13] is equal to nd x n.
+[75:15] Now look, generally
+[75:17] you know that
+[75:19] n side doping
+[75:21] is more than p side.
+[75:23] You yourself know
+[75:25] that I have shown
+[75:27] that your n side doping
+[75:29] is more than p side.
+[75:33] So usually
+[75:37] nd
+[75:39] is greater than n A
+[75:41] which means
+[75:43] its x
+[75:45] will be less.
+[75:47] What do you understand from this
+[75:49] that where doping is less
+[75:51] your p side doping is less
+[75:53] there is more depletion width.
+[75:55] Depletion layer
+[75:57] spreads more in that area
+[75:59] where doping is less.
+[76:01] Or say
+[76:03] where doping is more
+[76:05] where depletion layer is less.
+[76:07] So we say
+[76:11] depletion region
+[76:15] depletion region
+[76:17] penetrates
+[76:21] penetrates
+[76:25] more into
+[76:29] lower doping
+[76:31] region
+[76:35] lower doping
+[76:37] region
+[76:39] where depletion layer
+[76:41] is more.
+[76:43] Is it clear?
+[76:45] I was told that the result
+[76:47] was clear from charge neutrality.
+[76:51] The result was clear.
+[76:53] You did not understand this.
+[76:55] There will be some questions on this condition.
+[76:57] You have to understand this.
+[76:59] If there is a question on this condition,
+[77:01] then it will come in EDC.
+[77:03] This means that
+[77:05] where is the depletion layer
+[77:07] where doping is less.
+[77:09] Is it clear?
+[77:11] Is it clear?
+[77:13] Now see, before I go to the voltage
+[77:15] I would like to talk about the
+[77:17] electric field first.
+[77:21] Now you have read this
+[77:23] about the electric field
+[77:25] that
+[77:27] the electric field
+[77:29] is only inside the depletion layer.
+[77:31] There is nothing outside it.
+[77:33] Why is there nothing outside it?
+[77:35] Because there is no charge outside it.
+[77:37] When there is no charge outside it,
+[77:39] then there will be no
+[77:41] electric field.
+[77:55] Now see.
+[78:01] This was your
+[78:05] device.
+[78:09] This was your
+[78:11] device.
+[78:13] Here were your
+[78:15] negative charges.
+[78:25] And here were your
+[78:27] positive charges.
+[78:29] Here you had
+[78:31] donor atom
+[78:33] which was a positive ion
+[78:35] of the electron donated.
+[78:37] This is your N.
+[78:39] This is your P.
+[78:43] Now I want to know
+[78:45] the graph of the electric field.
+[78:59] Okay.
+[79:03] I want to know the
+[79:05] graph of the electric field.
+[79:07] Like this.
+[79:09] Now see, X is increasing
+[79:11] in your right.
+[79:13] X is increasing in your right.
+[79:17] Look here.
+[79:19] I have
+[79:23] brought the line down like this.
+[79:25] X is your left
+[79:27] and X is your right.
+[79:31] You call this length
+[79:33] minus XP.
+[79:35] You call this XN.
+[79:37] Your electric field
+[79:39] is like this.
+[79:41] Positive and negative charge.
+[79:43] So the electric field is going
+[79:45] upside down in minus X direction.
+[79:47] X is going to your
+[79:49] right and the electric field
+[79:51] is going to your left.
+[79:53] So when the electric field
+[79:55] is going upside down,
+[79:57] what can we say?
+[79:59] The electric field
+[80:01] is in minus AX cap
+[80:03] direction.
+[80:05] So we can consider
+[80:11] negative
+[80:13] electric field.
+[80:21] So we can consider
+[80:23] the electric field.
+[80:25] Okay.
+[80:27] Now you also know the electric field
+[80:29] of positive charge
+[80:31] is away from the charge.
+[80:33] And the electric field of negative charge
+[80:35] is towards the charge.
+[80:37] So this metallurgical junction
+[80:39] X is equal to 0.
+[80:41] Here you will get
+[80:43] maximum field.
+[80:45] Because the entire charge
+[80:47] of the right hand side
+[80:49] will be made away.
+[80:51] The electric field
+[80:53] of negative charge
+[80:55] will come to your side.
+[80:57] And because of positive charge
+[80:59] it will be away.
+[81:01] Okay.
+[81:03] Because of positive charge it will be away.
+[81:05] Because of negative charge
+[81:07] it will be towards the charge.
+[81:09] So both the electric fields will be added.
+[81:11] So where will you get
+[81:13] maximum electric field?
+[81:15] Metallurgical junction.
+[81:17] So at
+[81:19] X is equal to 0
+[81:23] E positive
+[81:25] and E negative
+[81:27] get added
+[81:29] and we get
+[81:35] maximum field
+[81:39] at X is equal to 0.
+[81:41] Do you understand this?
+[81:43] Tell me
+[81:45] whether I understood this or not?
+[81:47] Tell me everyone,
+[81:49] whether Arvind Preeti understood this or not?
+[81:51] Tell me quickly.
+[81:53] Maximum electric field
+[81:55] will come to the center.
+[81:57] Because the field of positive charge
+[81:59] will be away and the two words of negative charge
+[82:01] will be added.
+[82:03] And you also know that my children
+[82:05] you also know
+[82:07] that
+[82:09] there is no need to say
+[82:11] that there is no electric field
+[82:13] outside this region.
+[82:15] So
+[82:17] do you know how the electric field
+[82:19] comes like this?
+[82:23] It is negative
+[82:25] and outside the depletion layer
+[82:27] it is 0.
+[82:29] Outside the depletion layer it is 0.
+[82:31] So Arvind I said
+[82:33] there is positive charge.
+[82:35] The electric field will go away from this.
+[82:37] It means it will go to the left.
+[82:39] There is negative charge.
+[82:41] The electric field will pull towards it.
+[82:43] I am saying that the electric field should come towards me.
+[82:45] And if I become positive here
+[82:47] then I am saying that it should go away from me.
+[82:49] So the negative one is calling me.
+[82:51] The positive one is sending me away.
+[82:53] Both are going to the left.
+[82:55] So both are added at the center.
+[82:57] And when both are added at the center
+[82:59] then your electric field
+[83:01] has become maximum.
+[83:03] Okay?
+[83:05] Did you understand?
+[83:07] Tell me quickly. Did you understand?
+[83:09] The graph of this electric field
+[83:11] is called
+[83:13] at the metallurgical
+[83:15] junction.
+[83:17] Did you understand?
+[83:19] Why did we show the negative?
+[83:21] It was in the minus AX cap.
+[83:23] So we showed the negative.
+[83:25] Now dear, where there is an electric field
+[83:27] there is voltage. We teach the EMT.
+[83:29] Where there is an electric field
+[83:31] there is voltage.
+[83:33] So when we talk about voltage
+[83:35] then we talk about the built-in potential.
+[83:37] This is the relation of the electric field
+[83:39] minus E dot DL
+[83:41] gives us the voltage.
+[83:43] Or the electric field
+[83:45] is the negative of gradient of voltage.
+[83:49] Dear, you must know this.
+[83:51] With electrostatic
+[83:53] electric field is minus gradient of voltage
+[83:55] or voltage is minus
+[83:57] E dot DL.
+[83:59] Now see, DL
+[84:01] is in this direction.
+[84:05] Okay?
+[84:07] The electric field is on your left side.
+[84:11] So E and DL's
+[84:13] dot product will be negative.
+[84:15] Okay?
+[84:17] E and DL's dot product will be negative.
+[84:19] Dear, the electric field
+[84:21] will be negative from P to N.
+[84:23] I just told you
+[84:25] that P side
+[84:27] is neutral.
+[84:29] N side is neutral.
+[84:31] Don't think that P side
+[84:33] means positive. N side
+[84:35] means negative. Now the proton and electron
+[84:37] were explained.
+[84:39] If N side is more than the proton
+[84:41] then is it more than the proton?
+[84:43] No, it is more than the proton.
+[84:45] In P side,
+[84:47] it is more than the electron.
+[84:49] But is the electron
+[84:51] not equal to the proton?
+[84:53] It is equal.
+[84:55] But we don't talk about the proton
+[84:57] in analog or EDC.
+[84:59] It is stuck in the nucleus.
+[85:01] I just explained all the stories.
+[85:03] It is electrically neutral.
+[85:05] Look, it was also written.
+[85:07] Peace, type and entire
+[85:09] both are electrically neutral.
+[85:11] It is also written here that they are neutral.
+[85:13] So the electric field
+[85:15] comes because of the charges.
+[85:17] This is the positive charge.
+[85:19] This is the negative charge.
+[85:21] Both the electrons have been donated and become positive.
+[85:23] Except the electrons have been gained and become negative.
+[85:25] That is why it is going from plus to minus.
+[85:27] It is not P to N.
+[85:29] This is a very common misconception.
+[85:31] That is why I explained it.
+[85:33] Now what I was telling you.
+[85:35] Electric field is going left.
+[85:37] DL is going right.
+[85:39] So the dot product will be negative.
+[85:41] But there is already a minus sign in this relation.
+[85:43] So this will come out to be
+[85:45] positive.
+[85:47] This will come out to be positive.
+[85:49] Because the dot product of E and DL
+[85:51] will be negative.
+[85:53] And minus will be plus.
+[85:55] Right?
+[85:57] I will also write.
+[85:59] E vector
+[86:01] and DL vector
+[86:03] are opposite
+[86:09] E dot DL.
+[86:11] Look,
+[86:13] I can make you derive the electric field fully.
+[86:15] No big thing.
+[86:17] It will be derived by using Gauss law.
+[86:19] Graph.
+[86:21] The graph I made linear.
+[86:23] It will be derived fully.
+[86:25] But I don't want to go in detail.
+[86:27] There is a child writing.
+[86:29] Sir, this is the meaning of linear graph.
+[86:31] Uniform doping.
+[86:33] It is absolutely correct.
+[86:35] The meaning of linear graph is
+[86:37] uniform doping.
+[86:39] The meaning of uniform doping is
+[86:41] the value of N A and N D.
+[86:43] It is constant.
+[86:45] It means you will see the doping anywhere
+[86:47] in the whole P region.
+[86:49] You will see the doping anywhere in the whole N region.
+[86:51] You will see the doping anywhere.
+[86:53] It is not that you have put more boron atom
+[86:55] in it. That is uniform doping.
+[86:57] There are different types of doping.
+[86:59] Then a graph will change there.
+[87:01] But we don't have to go in detail in the analog.
+[87:03] Now see,
+[87:05] we have to integrate this graph.
+[87:07] Look, integration will come
+[87:09] to zero till here.
+[87:11] Because E was zero.
+[87:13] Then integration will start to increase.
+[87:15] It will increase.
+[87:17] Don't think that integration will decrease from here.
+[87:19] Because the gun.
+[87:21] Look,
+[87:23] if I take so many areas.
+[87:25] So many areas have come.
+[87:29] Come a little ahead.
+[87:31] So many areas have come.
+[87:33] So many more have come.
+[87:37] So many more have come.
+[87:39] So many more have come.
+[87:41] Look at the area.
+[87:43] Don't look at the value.
+[87:45] See the area of electric field, the shaded region.
+[87:47] So many more have come.
+[87:49] Shaded region has increased.
+[87:51] Okay, move ahead. Shaded region is increasing. Okay? Shaded region is increasing.
+[88:02] So, the shaded region is increasing. It is increasing. It is increasing.
+[88:06] And when you come to zero, then your shaded region will be constant.
+[88:11] Do you understand? No matter how much you integrate, this shaded region will be constant.
+[88:18] So, first it will be zero, then the area will increase, increase, increase, increase, increase, then it will be constant.
+[88:25] And the integration of linear is parabolic.
+[88:28] That is why the graph of voltage is parabolic.
+[88:31] It is increasing from minus to Xp.
+[88:34] And as soon as you reach Xn, it becomes constant.
+[88:38] Because the electric field is zero.
+[88:40] Electric field is zero.
+[88:43] Do you understand or not? Tell me.
+[88:46] Tell me quickly.
+[88:48] What did we say here?
+[88:50] That this graph is our parabolic because this is integration of linear curve.
+[89:02] Okay?
+[89:14] So, the potential difference between p-type and n-type is called built-in potential.
+[89:21] Built-in means this potential develops by default inside a p-n junction.
+[89:30] Inside a p-n junction that is built-in potential.
+[89:36] And the electric field is always higher voltage and lower voltage.
+[89:40] The fun part is that the voltage of n-side is more than p-side.
+[89:46] Okay?
+[89:47] Potential of n-side is greater than p-side.
+[89:56] Do you understand?
+[89:58] And the electric field is always higher than lower voltage.
+[90:02] So, the electric field will be like this.
+[90:05] And the electric field was shown here.
+[90:07] We saw p-side from n-side.
+[90:09] See, the electric field was shown from n-side in the left.
+[90:12] Higher than lower voltage.
+[90:14] Okay?
+[90:15] Now, what is the logic of built-in potential or what is its significance?
+[90:20] Dear, this potential, as you said, the electric field was being built.
+[90:26] It stopped the diffusion of the charges.
+[90:29] When I made the depletion layer, when I made the depletion region,
+[90:33] what did I tell you?
+[90:34] That this electric field is stopping the diffusion.
+[90:37] It says that we will not let the charge go.
+[90:39] No matter how many hands you hit, if this charge cannot flow,
+[90:44] then the electric field and voltage are related.
+[90:47] So, what is built-in potential?
+[90:49] It is acting as a barrier potential for the movement or for the diffusion of charges.
+[90:58] It works like a barrier potential for diffusion of charges.
+[91:05] Okay?
+[91:06] What is the movement of diffusion?
+[91:18] Now, the value of this is not derived in its value.
+[91:22] It is derived in EDC.
+[91:24] KT by ELN, NAND by NI square.
+[91:29] KT by ELN, NAND by NI square.
+[91:33] This is your formula for built-in potential.
+[91:37] That is, if you increase the doping,
+[91:40] if you increase the doping, then your built-in potential will increase.
+[91:46] Understood?
+[91:47] By increasing the doping, the built-in potential increases.
+[91:53] Is the built-in potential and the cut-in voltage the same?
+[91:58] They are almost equal but not the same.
+[92:02] Because on the cut-in voltage, we say that the current should be 10% of the steady state value,
+[92:09] whatever the final value is, the current should be 10%.
+[92:12] That is the cut-in voltage.
+[92:15] The built-in potential is not that.
+[92:17] The built-in potential is not at all related to forward biasing.
+[92:21] If there is no voltage on a diode,
+[92:25] if you measure the voltage of the diode from a voltmeter,
+[92:29] then the voltage is the built-in voltage.
+[92:32] The built-in voltage is the potential difference between the two parts.
+[92:37] Let's talk about the cut-in voltage only when it is forward biased.
+[92:44] We say that 10% current started flowing.
+[92:47] Yes, it must be in the D subscript.
+[92:49] Understood?
+[92:54] What is the typing team error in mathematics?
+[92:58] Is it correct now?
+[93:00] NAND.
+[93:02] It is clear what is happening in a diode without any biasing.
+[93:06] Now I will talk about biasing.
+[93:08] First of all, I will talk about the forward bias.
+[93:12] What does forward bias mean?
+[93:14] When you put a battery on the diode from the outside,
+[93:18] and put something like the positive terminal of the battery,
+[93:23] and the negative terminal of the battery is connected to the N region.
+[93:30] So we are saying that
+[93:52] is made more positive
+[94:04] than cathode
+[94:13] by means of
+[94:18] an external source
+[94:29] than diode is said to be forward biased.
+[94:35] Now I will show you what is diode is said to be forward biased.
+[94:47] So diode will start to bias your forward bias.
+[94:58] Now what did you do here?
+[95:02] You put a battery from the outside,
+[95:04] the positive terminal of the battery is connected to the anode,
+[95:07] and the negative terminal is connected to the cathode.
+[95:10] So when we put a battery,
+[95:15] what will the battery do?
+[95:17] It will also make an electric field.
+[95:20] Your battery will also make an electric field.
+[95:25] I had analyzed in 2020,
+[95:28] I had taken 4-5 classes in special,
+[95:30] I had not done it completely.
+[95:32] I have done it completely on YouTube,
+[95:34] I have taught it in English language.
+[95:37] You will not be able to measure exactly,
+[95:40] if you go directly to VBI from the voltmeter.
+[95:43] You will not be able to measure exactly.
+[95:45] Come.
+[95:47] So what were we saying?
+[95:49] What was I saying?
+[95:51] I am saying when voltage is applied,
+[95:59] when voltage is applied,
+[96:04] an external,
+[96:08] an external field
+[96:13] gets created.
+[96:15] An external field will be created.
+[96:21] A cross diode
+[96:29] from p region to n region
+[96:33] from p region to n region
+[96:43] an external field will be created.
+[96:46] From p to n.
+[96:48] From p to n.
+[96:51] This is clear.
+[96:53] Now see how it will be.
+[96:55] Look, we have applied the battery.
+[96:57] We have applied the battery.
+[96:59] The orange atom here,
+[97:01] these are negative ions.
+[97:03] The white atom here,
+[97:04] these are positive ions.
+[97:06] So what we applied the battery,
+[97:08] this battery developed an electric field like this.
+[97:12] This battery developed an electric field like this
+[97:16] across the p-n junction.
+[97:18] So what did the battery do?
+[97:20] The battery
+[97:24] started giving electrons here.
+[97:27] With negative terminals.
+[97:31] So this is what we are writing.
+[97:33] Free electrons started coming from here.
+[97:35] And they started taking electrons from here.
+[97:38] The battery never gives anything to anyone.
+[97:40] It also takes as much as it gives.
+[97:43] So the electron started pulling from here.
+[97:46] The meaning of pulling the electron is that
+[97:49] if the electron is removed,
+[97:51] then you are creating vacancy.
+[97:53] So this means you started giving holes.
+[97:56] You started giving vacancy.
+[98:00] So see when the battery will start entering here,
+[98:03] when the battery will start entering here,
+[98:05] see what happened,
+[98:06] look at the depletion layer again.
+[98:08] So these positive ions did not have electrons.
+[98:11] Now from here the battery,
+[98:13] from here the battery started giving you electrons.
+[98:16] So these positive ions will get electrons.
+[98:20] And these negative ions, the battery is giving holes from here.
+[98:23] They will get holes.
+[98:25] Or say the battery is taking out the electron.
+[98:29] And it is giving the electron.
+[98:31] This way the depletion layer will become smaller.
+[98:35] Because what does the depletion layer mean?
+[98:37] That region in which there is no electron or hole.
+[98:40] So the battery gave the hole to this region.
+[98:42] It gave the electron to this region.
+[98:44] So the depletion layer will become smaller.
+[98:46] Think about it.
+[98:48] Think about it.
+[98:50] That the depletion layer should not be small.
+[98:52] So here it is written narrow depletion region.
+[98:56] Narrow depletion region.
+[98:58] And after one voltage,
+[99:01] the depletion region will vanish.
+[99:04] If the depletion region disappears,
+[99:07] then the depletion region was the one that stopped the diffusion.
+[99:12] The depletion region was the one that stopped the diffusion.
+[99:17] If the depletion region disappears,
+[99:20] then what will happen?
+[99:21] It will be a diffusion.
+[99:23] Yes, the top rank can come.
+[99:25] The top rank people do not come down from the top.
+[99:28] They sit in a UFO,
+[99:30] then come and give the gate, then take out the rank.
+[99:33] These are the common people.
+[99:35] They will work hard.
+[99:36] They will not come by spamming the chat.
+[99:39] So the depletion region will vanish.
+[99:42] The depletion region will vanish.
+[99:44] So the diffusion will start.
+[99:46] That is, the holes will start flowing.
+[99:48] P to N.
+[99:49] And the electrons will start flowing.
+[99:51] N to P.
+[99:53] You call this voltage cut-in voltage.
+[99:58] What do you call it?
+[100:00] Cut-in voltage.
+[100:02] What happened in forward biasing?
+[100:04] Did you understand what happened in forward biasing?
+[100:06] The region in which the hole was finished,
+[100:08] the battery gave it a hole.
+[100:10] The region in which the electron was finished,
+[100:12] the battery gave it an electron.
+[100:14] The region in which the charges were finished,
+[100:17] now the charges started coming in that region.
+[100:20] And if the charges started coming in that region,
+[100:23] then that region will be small.
+[100:25] It will shrink.
+[100:26] And it will vanish in one time.
+[100:29] The voltage for that is the cut-in voltage.
+[100:33] Otherwise, you can also think that
+[100:35] the battery made the electric field in the right.
+[100:39] And the electric field of the depletion layer was in the left.
+[100:42] Listen carefully.
+[100:44] The electric field of the depletion layer was in the left.
+[100:47] If this electric field of the battery
+[100:50] overcomes the electric field of the depletion,
+[100:53] the electric field that we are putting from outside,
+[100:56] if it overpowers the electric field of the depletion layer,
+[101:00] then no one can stop the charges.
+[101:03] It is the electric field of the depletion layer that
+[101:06] doesn't want the charges to flow.
+[101:08] If you put more electric field than that,
+[101:11] if you overcome it,
+[101:13] then what will happen?
+[101:15] Then your charges can diffuse.
+[101:18] Okay?
+[101:19] So when you put more voltage than this,
+[101:22] or more than 0.7 in Germanium,
+[101:24] or more than 0.3 in Germanium,
+[101:26] then the diffusion will start.
+[101:28] Again and again, pay attention to one thing.
+[101:30] I am using the word diffusion.
+[101:32] What am I saying?
+[101:34] When
+[101:37] applied
+[101:40] electric field
+[101:46] overcomes
+[101:52] the electric field of the depletion layer,
+[102:05] there is
+[102:07] one second.
+[102:14] Wait a minute.
+[102:23] The feet are standing.
+[102:26] The nose is stuck.
+[102:28] So the whole leg is stuck.
+[102:30] Then
+[102:32] there is
+[102:37] no opposition.
+[102:41] There is no opposition
+[102:45] to the
+[102:49] diffusion of charges.
+[102:53] And
+[102:56] holes diffuse
+[103:02] from P to N
+[103:08] and
+[103:09] electron diffuse
+[103:15] from
+[103:18] N to P
+[103:22] So
+[103:28] current flows
+[103:34] from
+[103:36] P side to N side.
+[103:41] Current starts flowing from P side to N side.
+[103:44] And which current is this?
+[103:46] Which current is this? This is diffusion current.
+[103:49] Which current is this?
+[103:51] Do you know the diffusion current?
+[103:53] This is very important.
+[103:55] Many times we ask,
+[103:57] which current flows in forward biasing?
+[103:59] What do you have to say?
+[104:01] Which current flows in forward biasing?
+[104:04] Which current flows in forward biasing?
+[104:06] There is diffusion current.
+[104:20] Okay.
+[104:24] See, the current of diode
+[104:27] remains zero
+[104:31] until the voltage of the diode
+[104:33] is less than the cut-in voltage.
+[104:37] And if it is more than the cut-in voltage,
+[104:39] then the current comes non-zero.
+[104:41] Sir, how much current does it come?
+[104:43] Son, it depends on this.
+[104:45] Son, it depends on this.
+[104:49] It depends on the external circuit.
+[104:53] What is your external circuit?
+[104:55] How much voltage battery is there outside?
+[104:57] How much resistance is there?
+[104:59] All these things depend on this.
+[105:01] It is not that if it is non-zero current,
+[105:03] then we already know that it will be 1 ampere.
+[105:05] It will be 2 ampere.
+[105:07] It will be 5 ampere. We don't know anything.
+[105:09] We only know how much current will flow.
+[105:11] It will depend on this
+[105:13] that how is the external circuit.
+[105:15] Now, see what happens?
+[105:19] Diodes have an equation.
+[105:21] Diodes current equation
+[105:25] which was a scientist, Shockley
+[105:27] gave.
+[105:29] He told about this equation.
+[105:35] Diodes current equation.
+[105:37] Diodes current equation.
+[105:41] What did he tell in this equation?
+[105:45] Id
+[105:47] is
+[105:49] Is
+[105:51] e to the power Vd
+[105:53] by eta Vt
+[105:55] minus
+[105:57] 1.
+[105:59] This is called as
+[106:01] reverse saturation current.
+[106:03] What is it called?
+[106:05] Reverse
+[106:07] saturation current.
+[106:11] Okay?
+[106:13] Vd is
+[106:15] diode voltage.
+[106:17] It is taken positive in forward bias
+[106:19] and
+[106:21] negative in reverse bias.
+[106:23] Vt is
+[106:25] thermal voltage.
+[106:27] Which I showed today in Einstein
+[106:29] relation, the Kt by e
+[106:31] was coming.
+[106:33] This is the thermal voltage
+[106:35] Kt by e.
+[106:37] Its value is
+[106:41] T by 11,600
+[106:43] volts.
+[106:45] And this is
+[106:47] temperature in Kelvin.
+[106:53] And its value is
+[106:55] 26 millivolts
+[106:57] at
+[106:59] 300 Kelvin.
+[107:01] Okay?
+[107:03] 26 millivolts
+[107:05] at 300 Kelvin.
+[107:07] Now here,
+[107:09] eta is called
+[107:11] Ideality Factor.
+[107:13] Most of the time, when it is not
+[107:15] given, we take 1.
+[107:17] When the
+[107:19] Ideality Factor is not given in question,
+[107:21] what do we take?
+[107:23] We take 1.
+[107:25] The practical values of eta
+[107:27] are 1 for
+[107:29] aluminum
+[107:31] and 2 for silicon.
+[107:33] But if it is not given,
+[107:35] there is no problem.
+[107:37] Even in the exam, it is
+[107:39] taken as 1.
+[107:41] Sir, why we are calling as
+[107:43] diffusion not drift because
+[107:45] diffusion is starting due to external bias.
+[107:47] External bias
+[107:49] breaks the barrier.
+[107:51] Now, after breaking the barrier,
+[107:53] why should we move the charges?
+[107:55] They are not saying
+[107:57] why should we move them.
+[107:59] It is okay to move them.
+[108:01] But why did you move them?
+[108:03] Because your concentration was
+[108:05] more here and less there.
+[108:07] So, the reason behind the movement is
+[108:09] we are talking about why the charges are moving.
+[108:11] Okay? The bias has removed
+[108:13] the value of the charges.
+[108:15] But the reason for the
+[108:17] movement of the charges is
+[108:19] the concentration gradient.
+[108:21] Because of this, the charges
+[108:23] will move them.
+[108:25] So, if the diode current
+[108:27] is your equation.
+[108:29] Okay?
+[108:31] Clear?
+[108:33] So, here,
+[108:35] if the diode voltage
+[108:37] is increased
+[108:39] by 3 eta VT,
+[108:41] then it will
+[108:43] ignore the factor of 1.
+[108:45] We say that the value of
+[108:47] exponential will be so much
+[108:49] that you can ignore 1.
+[108:51] Then you say
+[108:53] okay?
+[108:55] Okay?
+[108:57] You have ignored 1 here.
+[108:59] Okay?
+[109:01] Dear,
+[109:03] your electric field
+[109:05] can make the charges flow.
+[109:07] But here, the electric field
+[109:09] will break the barrier.
+[109:11] That means, the diode cross
+[109:13] will generate the voltage
+[109:15] as much as the voltage
+[109:17] will overcome the electric field.
+[109:19] The other voltage will
+[109:21] come like resistance.
+[109:23] The battery will come.
+[109:25] The diode cross will
+[109:27] generate only that much voltage.
+[109:29] Which can break the barrier.
+[109:31] Once the barrier is broken, the charges flow.
+[109:33] Now, you know that this is why it seems
+[109:35] because I have connected
+[109:37] the battery directly to the diode.
+[109:39] But this does not happen. The battery
+[109:41] does not connect directly.
+[109:43] Because,
+[109:45] you know, if you have connected
+[109:47] the VD directly to the battery
+[109:49] then there will be a lot of time
+[109:51] that the current will be so high
+[109:53] that the diode will burn.
+[109:55] Do you understand?
+[109:57] That is why, you have to see
+[109:59] that in the college lab,
+[110:01] the LED that you get
+[110:03] is directly inserted into the supply.
+[110:05] Will it be inserted into the supply
+[110:07] or will the LED fly away?
+[110:09] So, when you have connected
+[110:11] the LED in the circuit,
+[110:13] then you must have connected
+[110:15] a resistance along with it
+[110:17] so that the supply voltage comes across the diode.
+[110:19] The diode cross is a very small voltage
+[110:21] which is 0.7-0.8V.
+[110:23] Most of the voltage is
+[110:25] across the resistance.
+[110:27] So, the voltage across the diode
+[110:29] will never be so much
+[110:31] that its electric field will flow.
+[110:33] Its electric field only
+[110:35] is used to overcome
+[110:37] the internal electric field.
+[110:39] Now, let's talk about reverse biasing.
+[110:41] What happens in reverse biasing
+[110:43] is that we connect the battery
+[110:45] in the opposite direction.
+[110:47] The negative terminal of the battery
+[110:49] is connected with P type.
+[110:51] The positive terminal is connected with N type.
+[110:53] So, the electric field
+[110:55] that is made of the battery
+[110:57] comes like this, P to N.
+[110:59] Now, the P to N
+[111:01] is coming.
+[111:03] And the internal
+[111:05] electric field
+[111:07] was also like that of the depletion layer.
+[111:09] So, the electric field
+[111:11] of the battery
+[111:13] will not cancel the electric field
+[111:15] of the depletion layer.
+[111:17] Instead, it will help it.
+[111:19] How will it help it?
+[111:21] Look, the battery
+[111:23] will draw
+[111:25] more electrons from here.
+[111:27] If the battery starts
+[111:29] to draw electrons from here,
+[111:31] then these charges will start
+[111:33] to become positive ions here.
+[111:35] If the positive ion starts to become here,
+[111:37] then the depletion layer will start to grow.
+[111:39] And the battery will supply
+[111:41] electrons.
+[111:43] If the electron supplies
+[111:45] electrons, then these
+[111:47] holes will be cancelled.
+[111:49] If these holes are cancelled,
+[111:51] then the negative ions will start to
+[111:53] become here.
+[111:55] So, look, the depletion layer
+[111:57] will start to grow.
+[111:59] What is the battery doing?
+[112:01] It is drawing electrons from the N side.
+[112:03] And it is giving electrons in the P side.
+[112:05] The meaning of giving electrons is
+[112:07] to draw out the holes.
+[112:09] So, when the
+[112:11] charges come out
+[112:13] from both sides,
+[112:15] then the depletion layer,
+[112:17] the region in which the charges
+[112:19] do not come out, will start to grow.
+[112:21] Because the battery will
+[112:23] take out the charges from it.
+[112:25] Okay?
+[112:27] So, what are we saying here?
+[112:31] Battery
+[112:35] Draws
+[112:39] electron
+[112:41] from N region
+[112:45] and holes
+[112:49] from P region.
+[112:57] So,
+[112:59] charge carriers
+[113:01] reduce
+[113:11] in both regions
+[113:17] and depletion layer grows.
+[113:31] Depletion layer
+[113:33] depletion layer grows.
+[113:35] Okay?
+[113:37] And here you have noticed one more thing.
+[113:39] You have noticed one more thing
+[113:41] that the electric field battery has applied
+[113:43] and the internal
+[113:45] electric field
+[113:47] is being added.
+[113:49] So, applied electric field
+[113:55] applied electric field
+[114:01] aids
+[114:03] aids means help.
+[114:05] Aids
+[114:07] internal electric field
+[114:09] Now, see
+[114:11] this internal electric field
+[114:13] was already stopped by diffusion.
+[114:15] The applied one
+[114:17] made it stronger.
+[114:19] Now, can't it be diffusion?
+[114:21] Can't it be diffusion?
+[114:23] Do you understand what I mean?
+[114:25] Can't it be diffusion?
+[114:27] Because applied field
+[114:29] stopped diffusion.
+[114:31] Depletion layer
+[114:33] increased the applied field.
+[114:35] Now, it won't be diffusion.
+[114:37] Yes, what are you asking?
+[114:39] Sir, why did depletion layer grow?
+[114:41] Look, my child,
+[114:43] there were donor atoms here.
+[114:45] Battery said to them, I need your electron
+[114:47] because battery has a positive terminal here.
+[114:49] It attracts the electron.
+[114:51] So, donor atoms
+[114:53] gave their electrons.
+[114:55] So, here positive ions are formed.
+[114:57] What did such a battery do?
+[114:59] Did it give electrons?
+[115:01] Or did it take a hole here?
+[115:03] If it gave electrons, it would have
+[115:05] accepted the atom here.
+[115:07] They accepted the electrons.
+[115:09] They became negative ions.
+[115:11] Now, the donor atom
+[115:13] has given its electron.
+[115:15] The charge is over here.
+[115:17] This electron has taken it.
+[115:19] The hole is over here.
+[115:21] The electron is over here.
+[115:23] Now, this is also part of the diffusion layer.
+[115:25] Earlier, it was this much.
+[115:29] Now, it has increased.
+[115:31] Do you understand?
+[115:33] What is your name? Krithibas.
+[115:35] Do you understand Krithibas or not?
+[115:37] Tell me.
+[115:39] Battery gave electron to the
+[115:41] acceptor atoms.
+[115:43] They accepted and became negative ions.
+[115:45] They took the electron from the donor.
+[115:47] They donated the electron and became positive ions.
+[115:49] So, these two came into the depletion layer.
+[115:51] So, your depletion layer has increased.
+[115:53] Do you understand?
+[115:57] Depletion layer has increased.
+[115:59] Do you understand?
+[116:01] So, what are we saying?
+[116:03] Since
+[116:07] net field
+[116:11] increases
+[116:15] diffusion
+[116:17] of charge carriers
+[116:19] is not
+[116:21] possible.
+[116:33] Diffusion of charge carriers
+[116:35] is not
+[116:37] possible.
+[116:39] Do you understand one more thing?
+[116:45] I told you that
+[116:47] there is a diffusion current in the forward bias.
+[116:49] There is a diffusion current in the forward bias.
+[116:51] There is a diffusion current in the forward bias.
+[116:55] Here, the holes were going from P to N.
+[116:59] The electrons were going from N to P.
+[117:01] So, you can say that
+[117:05] this is the movement of
+[117:07] majority charge carriers.
+[117:17] Here,
+[117:25] this is the movement of
+[117:27] majority charge carriers.
+[117:29] Because what are the holes in P region?
+[117:31] Majority charge carriers
+[117:33] and what is the electron in N region?
+[117:35] They are the majority charge carriers.
+[117:37] So, the majority charge carriers are moving here.
+[117:39] Now,
+[117:41] look at this.
+[117:43] Diffusion is not possible.
+[117:45] But if you look at the diode
+[117:47] in reverse biasing.
+[118:01] If you look at the diode in reverse biasing.
+[118:11] So, here you have
+[118:13] all the charges.
+[118:15] In the depletion layer.
+[118:17] And because of this,
+[118:19] there was an electric field.
+[118:21] The net electric field
+[118:23] that is the battery plus
+[118:25] internal one.
+[118:27] The battery plus internal one
+[118:29] was the electric field.
+[118:31] Which will come
+[118:33] from positive to
+[118:35] negative charge.
+[118:37] This is the electric field.
+[118:39] This is the electric field.
+[118:41] On the left side.
+[118:43] Okay.
+[118:47] Now, this is N and this is P.
+[118:49] Now,
+[118:51] this electric field coming in your left
+[118:53] side.
+[118:55] How will you force these holes?
+[118:57] How will you force these holes?
+[118:59] Like this.
+[119:03] How will you force these electrons?
+[119:05] Opposite to the field.
+[119:09] Okay.
+[119:11] So, this will try to take
+[119:13] the electrons from P to N.
+[119:15] And try to bring the holes
+[119:17] from N to P.
+[119:19] Now, you will say, sir, there are
+[119:21] electrons in N. How will the holes come from N to P?
+[119:23] There are more electrons.
+[119:25] But there will be some holes.
+[119:27] Here,
+[119:29] there will be holes in the minority.
+[119:31] There will be less.
+[119:33] But there will be zero.
+[119:35] And in this P region,
+[119:37] there will be
+[119:39] electron minority.
+[119:41] So, this electric field
+[119:43] is coming.
+[119:45] This is trying to
+[119:47] move the minority carriers.
+[119:49] What is it doing?
+[119:51] Electric field
+[119:53] allows
+[119:57] electric field
+[119:59] allows
+[120:01] electric field
+[120:03] electric field
+[120:05] allows
+[120:07] drift
+[120:09] of minority
+[120:11] charge carriers.
+[120:13] Okay.
+[120:15] Allows drift of
+[120:17] minority charge
+[120:19] carriers.
+[120:23] Okay.
+[120:25] So, which current flows
+[120:27] in reverse bias?
+[120:29] Drift current.
+[120:31] Drift current.
+[120:33] As I taught in the forward bias,
+[120:35] diffusion current comes.
+[120:37] In reverse bias,
+[120:39] drift current comes.
+[120:41] Okay.
+[120:43] Now, see,
+[120:45] if the holes are going from N to P,
+[120:47] then the current
+[120:49] of the holes
+[120:51] will go from N to P.
+[120:55] The current of the holes
+[120:57] will go from N to P.
+[120:59] And the current of the electron
+[121:01] goes opposite to the electron
+[121:03] will go from N to P.
+[121:07] So, here J will come
+[121:09] J P plus J N will come.
+[121:11] And this is the drift current.
+[121:13] This is the drift current density.
+[121:15] J N
+[121:17] is the unit area of the current.
+[121:19] So, this is the drift current
+[121:21] density.
+[121:23] Okay.
+[121:25] So,
+[121:27] in reverse bias,
+[121:31] current flows from N side
+[121:33] to P side.
+[121:35] Current is going from N to P.
+[121:39] Current flows
+[121:41] from N to P.
+[121:43] And which current
+[121:45] is flowing from N to P?
+[121:47] Which current is this?
+[121:49] This is the reverse saturation current.
+[121:57] Reverse saturation current.
+[121:59] Did you understand?
+[122:09] What are you asking?
+[122:11] Sir, by increasing the width of the depletion layer,
+[122:13] the doping will decrease.
+[122:15] We do doping first.
+[122:17] We do doping first.
+[122:19] We can't increase the doping.
+[122:21] It's done.
+[122:23] Depletion width is increasing by applying voltage.
+[122:25] It's doping is not required.
+[122:27] When you doped,
+[122:29] a depletion layer is formed.
+[122:31] If you do forward bias,
+[122:33] the depletion layer will be reduced.
+[122:35] If you do reverse bias, the depletion layer will grow.
+[122:37] Why do you say saturation current?
+[122:39] I will come to this.
+[122:41] Now,
+[122:43] if you see in forward bias,
+[122:45] current is zero.
+[122:47] Till,
+[122:49] cut-in voltage.
+[122:51] Say ne voltage, say cut-in voltage.
+[122:53] After that, the current is increasing exponentially.
+[123:13] And look at this.
+[123:15] In reverse bias,
+[123:17] in reverse bias,
+[123:19] your current is constant.
+[123:23] Minus IS.
+[123:25] That's why saturation is said.
+[123:27] In reverse bias,
+[123:29] your current is constant.
+[123:31] Minus IS.
+[123:33] And you know, the feature of this IS is that,
+[123:35] whenever you increase the temperature
+[123:37] by 10 degrees,
+[123:39] if you increase the temperature
+[123:41] by 10 degrees,
+[123:43] then your reverse saturation current
+[123:45] will double.
+[123:47] So, reverse saturation current
+[123:49] is written like this.
+[123:53] If you want at any other temperature,
+[123:57] power of 2.
+[123:59] T2 minus T1 by 10.
+[124:01] Now,
+[124:03] if there is a difference of 10 degrees
+[124:05] between T2 and T1, 10 by 10
+[124:07] will come, then the current will double.
+[124:09] If there is a difference of 20 degrees,
+[124:11] then 4 will come, the current will be 4 times.
+[124:13] If there is a difference of 30 degrees,
+[124:15] then 8 times.
+[124:17] So, on every 10 degrees rise,
+[124:19] your current will double.
+[124:21] That is your reverse saturation current.
+[124:23] Okay?
+[124:25] Now, I will teach you the breakdown topic
+[124:27] tomorrow. Okay?
+[124:29] So, don't worry about it.
+[124:35] This is the question on the breakdown.
+[124:37] This is on the diffusion capacitance.
+[124:39] Capacitance will come later.
+[124:41] Look at this.
+[124:43] The built-in potential.
+[124:45] The built-in potential
+[124:47] in a p-n junction
+[124:49] is equal to difference in Fermi level.
+[124:51] Increases with increase
+[124:53] in doping level.
+[124:55] Increases with temperature
+[124:57] is equal to Fermi level.
+[124:59] What will happen?
+[125:03] No, no, it is not like that.
+[125:05] The current will increase immediately after the breakdown.
+[125:07] After the breakdown, how much will the current be?
+[125:09] It depends on this.
+[125:11] How is the external circuit?
+[125:13] It looks in the graph that the current will increase immediately.
+[125:15] But it does not happen.
+[125:17] The answer will come here.
+[125:19] B.
+[125:21] Now, you must be thinking why not C?
+[125:23] We can see in the built-in potential
+[125:25] that
+[125:27] it should also increase
+[125:29] with the temperature.
+[125:31] Am I right?
+[125:35] What happens?
+[125:37] Ni square is
+[125:39] proportional to temperature cube.
+[125:41] Therefore,
+[125:43] as temperature increases
+[125:45] VBI decreases.
+[125:47] Think like this.
+[125:49] If you increase the temperature
+[125:51] then the electron atom
+[125:53] will be free.
+[125:55] If the electron atom is free
+[125:57] then it is easy to flow the current.
+[125:59] The barrier
+[126:01] that is stopped will decrease.
+[126:03] VBI is stopped in the current flow.
+[126:05] It will reduce.
+[126:07] Will it increase?
+[126:13] There will be a very small current.
+[126:15] It will not be measurable Db.
+[126:17] That will be very very small current.
+[126:19] That will not be measurable.
+[126:21] Now, look at this question.
+[126:23] We have been told that
+[126:25] the current of the diode
+[126:27] is characteristic of IV.
+[126:29] See,
+[126:31] when this happens,
+[126:33] this is diode characteristic.
+[126:37] And there will be an IV relation
+[126:39] of a circuit.
+[126:41] This is I.
+[126:43] What can you say
+[126:45] from KVL in the circuit?
+[126:47] That I is
+[126:49] 10-V
+[126:51] by 10 kilo ohm.
+[126:53] This is also 10.
+[126:57] Okay? 10-V
+[126:59] by 10 kilo ohm.
+[127:01] Now, diode is telling
+[127:03] the relation of one IV.
+[127:05] The relation of IV is telling KVL.
+[127:07] Both of them should be told
+[127:09] in the same way.
+[127:13] If we cut it from 10 to 10,
+[127:15] then 2-V
+[127:17] will be 10.7.
+[127:19] So, V will be
+[127:21] 5.35.
+[127:23] And
+[127:27] what is I?
+[127:29] 5.35, 4.65.
+[127:31] 5.65,
+[127:33] 5.465.
+[127:35] None of these will be done
+[127:37] if it is 10K.
+[127:39] 5.465.
+[127:41] Okay?
+[127:43] Is this clear?
+[127:47] Neeraj, son, it is running from zero.
+[127:49] But to read the analog,
+[127:51] you should basically come to the network.
+[127:53] Come on, look at this.
+[127:55] 20 degrees centigrade
+[127:57] of silicon PN junction
+[127:59] Okay? Reverse saturation current.
+[128:01] Is it 1K in the question?
+[128:03] Ohm.
+[128:07] Wait again.
+[128:11] Here it is 1K.
+[128:13] So, 100-10V
+[128:15] is
+[128:17] V-0.7.
+[128:19] So, how much is V?
+[128:21] 11.
+[128:23] Okay?
+[128:27] So, how much will it be?
+[128:35] 9.
+[128:45] 0.845.
+[128:49] Okay?
+[128:51] Okay?
+[128:53] Come on.
+[128:55] Hmm.
+[128:57] Yes.
+[128:59] So, it is said that the reverse saturation current
+[129:01] is 20 degrees centigrade.
+[129:03] So, what will happen at 40 degrees?
+[129:05] Tell me.
+[129:07] What will happen at 40 degrees?
+[129:09] Tell me quickly.
+[129:11] It is given at 20 degrees.
+[129:13] What will happen at 40 degrees?
+[129:21] Okay?
+[129:41] This happens, right?
+[129:43] So, first is 10 pico ampere.
+[129:51] 40 pico ampere.
+[129:53] B.
+[129:55] Okay?
+[129:57] Answer will be B.
+[129:59] Look at the next one.
+[130:01] Anyway, this is the question of the circuit.
+[130:03] Leave it now.
+[130:05] We will do it later.
+[130:07] Okay? This is the question of the circuit.
+[130:09] We have not come to the circuit yet.
+[130:11] I will do it later.
+[130:13] The rest is your assignment.
+[130:15] Solve it.
+[130:17] Because the theory is going on,
+[130:19] don't worry.
+[130:21] When we see the circuits of the diode,
+[130:23] we will see tough questions.
+[130:25] Don't worry.
+[130:27] Okay?
+[130:29] As I said, the question of analog will not be saved.
+[130:31] And if you want to attempt PYQ
+[130:33] of analog, then go to this link.
+[130:35] There will be a folder on this link.
+[130:37] Gate PYQ by AIR1.
+[130:39] Here, I have made all the PYQ of analog
+[130:41] of electrical EC.
+[130:43] I have not reached numerical yet.
+[130:45] So, how will you do numerical more?
+[130:47] How will you start numerical from the second class?
+[130:49] How will it happen?
+[130:51] Tell me, can I get some numerical from day one?
+[130:53] And if you join Unacademy,
+[130:55] you have two options.
+[130:57] Plus and Iconic.
+[130:59] Both are top educators.
+[131:01] Whatever is taught in the class is
+[131:03] proper PDF.
+[131:05] And apart from this, proper study material
+[131:07] is uploaded on the app.
+[131:09] There are test series.
+[131:11] But what is extra in Iconic?
+[131:13] There is doubt in any new question.
+[131:15] The notes will be delivered at home.
+[131:17] One to one live mentorship will be provided.
+[131:19] Strategy and study plan will be made.
+[131:21] Open house sessions
+[131:23] will be interactive.
+[131:25] Okay.
+[131:27] And what you have to do,
+[131:29] you have to choose one of the plus Iconic.
+[131:31] You have to put the code on the time
+[131:33] of payment.
+[131:35] And till tonight,
+[131:37] you are getting 20% off.
+[131:39] Okay.
+[131:41] And you see the results.
+[131:43] The results are produced in the top 10.
+[131:45] Take out 6 anchors.
+[131:47] You can also come in the next year in Toppers.
+[131:49] You just have to join immediately
+[131:51] using code ANKIT ESE.
+[131:53] And look at this.
+[131:55] If you have any financial issue,
+[131:57] you can take it on EMI
+[131:59] where you can give your fees monthly.
+[132:01] EMI is approved in just 2 hours.
+[132:03] It is a minimum paperwork
+[132:05] where you have to give only the basic
+[132:07] card and the pan card.
+[132:09] There is an asset person in your family
+[132:11] who is withdrawing because the government
+[132:13] approves EMI for them.
+[132:15] And look at this.
+[132:17] It is 20% off till tonight.
+[132:19] It will expire at 12 o'clock tonight.
+[132:21] So if you want to join,
+[132:23] do it quickly.
+[132:25] My power system has started.
+[132:27] It was our 3rd day today.
+[132:29] If you still join, you can still catch up.
+[132:31] Okay.
+[132:33] And I have told you
+[132:35] that it is 20% off.
+[132:37] The rest is the latest batch in which
+[132:39] the network has started.
+[132:41] My power system has started at 7 o'clock in the morning.
+[132:43] And this is my telegram channel
+[132:45] where you will get details
+[132:47] of every lecture.
+[132:49] This class starts at 11.30 daily.
+[132:51] You come live.
+[132:53] After 24 hours, the lecture will be private.
+[132:55] So please watch it live.
+[132:57] And this is the contact number of my team.
+[132:59] You can call it in case of any query.
+[133:01] If you are a YouTube student, press 2.
+[133:03] If you are an iconic person, press 1.
+[133:05] And if you want a session
+[133:07] you need a PDF of the session.
+[133:09] You will get it within half an hour.
+[133:11] You have to go to the Home page of Unacademy app.
+[133:13] There on the community, on Discover.
+[133:15] Go to Discover and find me.
+[133:17] The PDF will be uploaded there.
+[133:19] After half an hour.
+[133:21] And the community link is also in the description of this video.
+[133:23] So thank you everyone. Thanks a lot.
+[133:25] See you tomorrow at 11.30.
+[133:27] Let's crack it.

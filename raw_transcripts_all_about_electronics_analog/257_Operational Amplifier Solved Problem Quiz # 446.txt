@@ -1,0 +1,109 @@
+Title: Operational Amplifier Solved Problem | Quiz # 446
+URL: https://www.youtube.com/watch?v=-IMpyuWgdU8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question as you can see, we have been given the circuit based on the op-amp.
+[00:16] So here this VS1 and VS2 are the input to the op-amp circuit and here we have been asked
+[00:22] to find the average value of the output voltage.
+[00:26] So in the question we have been given that the given op-amp are the ideal op-amps.
+[00:31] So since the op-amp are the ideal op-amps, so no current is flowing into the op-amp terminals.
+[00:37] And therefore through all these three resistors, the same current will flow.
+[00:42] So let's say the current through all these three resistors is equal to I.
+[00:47] So here let's say the voltage at this node is equal to V1, while the voltage at this
+[00:52] node is equal to V2.
+[00:55] So here because of the negative feedback in the op-amp circuit, the voltage at the
+[00:59] inverting terminal of the op-amp will be same as the non-inverting terminal.
+[01:04] Therefore over here, this V plus is same as the V minus.
+[01:09] That means here, this V1 is same as the VS1, while the V2 is same as the VS2.
+[01:16] That means let us replace this V1 and V2 with the VS1 and the VS2.
+[01:21] But from that, let's say the output of this first op-amp is equal to V1, while the output
+[01:26] of this second op-amp is equal to V02.
+[01:31] So here to find this output voltage, first of all we should know this voltage V1 and the
+[01:35] V02.
+[01:37] And once we know this voltage V01 and the V02, and with the help of the superposition
+[01:41] theorem, we can easily find the output voltage.
+[01:44] So for that, first of all let us find this voltage V01 and the V02.
+[01:49] So here we have assumed that the current through all these three resistors is equal to
+[01:53] I.
+[01:54] So because of the flow of this current, there will be a voltage drop across all these
+[01:59] resistors.
+[02:00] So here, using these two nodes, we can say that this current I is equal to V01 minus
+[02:07] VS1 divided by R.
+[02:10] Or from this we can say that this voltage V01 is equal to I times R plus VS1.
+[02:17] So here, basically we need to find the value of the voltage V01 and the V02 in terms of
+[02:22] the voltage is VS1 and the VS2.
+[02:25] So here, if we see these two nodes, then the voltage at these two nodes is equal to VS1
+[02:30] and the VS2.
+[02:32] So if we apply the KVL between these two nodes, then we can say that this current I is
+[02:38] equal to VS1 minus VS2 divided by R.
+[02:43] So let's say this is the equation number 1.
+[02:46] So now we can put the value of this current I in the above expression.
+[02:51] So we can say that this voltage V01 is equal to R times this VS1 minus VS2 divided by R
+[03:00] plus VS1.
+[03:03] Or further if we simplify it, then we can say that this voltage V01 is equal to 2 times
+[03:08] VS1 minus VS2.
+[03:11] And let's say this is the equation number 2.
+[03:15] So in this way, we got the value of the V01 in terms of the VS1 and the VS2.
+[03:21] So similarly, now let us find the output voltage V02 in terms of the VS1 and the VS2.
+[03:27] So for that, let us apply the KVL between these two nodes.
+[03:32] So applying the KVL between these two nodes, we can say that this voltage VS2 is equal
+[03:37] to I times R plus V02.
+[03:41] Or from this, we can say that this output voltage V02 is equal to VS2 minus IR.
+[03:48] And earlier, we have already find the expression of the I in terms of the VS1 and the VS2.
+[03:54] So further we can write this expression as this VS2 minus VS1 minus VS2 divided by R times
+[04:04] R.
+[04:05] So basically we are here.
+[04:06] We have put the value of this current I.
+[04:09] So if we further simplified, then we can write this expression as this V02 is equal to
+[04:15] VS2 minus VS1 plus VS2.
+[04:19] Or we can say that this voltage V02 is equal to 2 times VS2 minus VS1.
+[04:26] And let's say this is the equation number 3.
+[04:29] So in this way, we got the value of the V01 and the V02 in terms of the voltage is VS1
+[04:35] and the VS2.
+[04:37] So now let us find this output voltage V02 from this V02 and the V02.
+[04:42] So like I said earlier, using the superposition theorem, we can easily find this output voltage
+[04:48] V out.
+[04:49] So initially, let us assume that this V02 is equal to 0 and this voltage V01 is acting alone.
+[04:56] That means this node will be at the ground potential.
+[04:59] So in that case, with the help of the voltage divider rule, we can say that this output
+[05:04] voltage V out is equal to R divided by R plus R times V01.
+[05:10] And let's say this output voltage is equal to V02.
+[05:14] Similarly, in the second case, let us assume that this output voltage V01 is equal to 0
+[05:20] and this voltage V02 is acting alone.
+[05:23] So in that case, let's say the output voltage is equal to V02.
+[05:28] And once again, with the help of the voltage divider rule, this voltage V02 is equal to
+[05:33] R divided by R plus R times V02.
+[05:37] That means the overall output voltage will be the summation of these two voltages.
+[05:42] That means the output voltage V out is equal to VO dash plus VO double dash.
+[05:47] And that is equal to R divided by R plus R times V01 plus R divided by R plus R times
+[05:56] V02.
+[05:58] Or basically, that is equal to V01 plus V02 divided by 2.
+[06:04] Now earlier, we have already find the value of the voltage V01 and the V02 in terms of
+[06:09] the V01 and the V02.
+[06:12] So we have seen that this V01 is equal to 2 times V01 minus V02, while the V02 is equal
+[06:21] to 2 times V02 minus V01.
+[06:24] And just we have seen that this output voltage V out is equal to V01 plus V02 divided by
+[06:30] 2.
+[06:32] So now in this expression, if you put the value of the V01 and the V02, then we can write
+[06:36] this expression as this 2 times V01 minus V02 plus 2 times V02 minus V01 divided by 2.
+[06:47] Or that is equal to this V01 plus V02 divided by 2.
+[06:53] So in this way, we got the output voltage V out in terms of the input voltage is VS1
+[06:59] and the VS2.
+[07:01] So now let us put the value of the voltage is VS1 and the VS2 in the given expression.
+[07:07] So in the question, we have been given that this VS1 is equal to 3 plus 0.1 times sin
+[07:13] 300T, while the VS2 is equal to minus 2 plus 0.1 times sin 380V.
+[07:20] So if you put these two values, then the output voltage V out is equal to 3 plus 0.1 times
+[07:28] sin 380 plus minus 2 plus 0.1 times sin 380.
+[07:40] And we need to divide this expression by 2.
+[07:44] So further we can say that this output voltage V out is equal to 1 divided by 2 plus 0.2
+[07:51] times this sin 300T divided by 2.
+[07:57] So this will be the expression of the output voltage.
+[08:01] Now here we have been asked to find the average value of this output voltage.
+[08:05] Now you know that the average value of the sine wave is equal to 0.
+[08:09] Therefore if we take the average value of this term and that will be equal to 0, that
+[08:15] means overall if we see the average value of the output voltage and that is equal to 1 by
+[08:20] 2.
+[08:21] So we can say that this VO average is equal to 1 by 2 or that is equal to 0.5V.
+[08:30] So from this we can say that for the given circuit the average value of the output voltage
+[08:35] is equal to 0.5V.

@@ -1,0 +1,2373 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Voltage Regulators | Ankit Goyal
+URL: https://www.youtube.com/watch?v=-nDua50ugB8
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone. A very good morning to all of you and welcome to Lakshya Batch 2.0 Analog Electronics.
+[00:15] So we have come live for Analog Electronics.
+[00:18] And in this session we are going to discuss what?
+[00:22] We are going to discuss the voltage regulator from Zener diode.
+[00:27] So we will discuss about the voltage regulator.
+[00:31] You were saying for a long time that you will study Zener diode.
+[00:35] You tell me how it works like a voltage regulator.
+[00:38] So it will be fully covered in this session.
+[00:41] We will also look at the questions based on that.
+[00:44] Because the questions in it are a little bit logical.
+[00:47] Logical means that you have to keep analytical thinking there.
+[00:51] You cannot solve it directly by using the formula.
+[00:54] That is why this session is going to be very important for you.
+[00:57] And from here you have to learn the problem solving technique well.
+[01:00] Okay.
+[01:02] Now see if someone joins the academy right now.
+[01:05] So at this time you are getting 20% discount.
+[01:08] So you take any course, take plus, take iconic, take any duration of the month.
+[01:14] You are getting 20% off on everything.
+[01:17] And it will come back very soon to 10%.
+[01:20] So you don't have to take this opportunity.
+[01:22] You know the code that you have to apply.
+[01:24] That is Ankit ESE.
+[01:26] Okay.
+[01:27] So let's start today's discussion.
+[01:29] So first of all, let's discuss about Zener diode.
+[01:33] Now see when I taught you the basics of diode.
+[01:36] So I told you two ways because the diode breaks down.
+[01:41] Okay.
+[01:42] Because of which the diode breaks down.
+[01:45] There were two things.
+[01:46] One was the Avalanche breakdown.
+[01:48] The other was the Zener breakdown.
+[01:51] So what happened in the Avalanche breakdown, dear?
+[01:54] Under the high electric field, a lot of electrons were accelerated.
+[02:00] When the electrons were accelerated and they broke through the atoms.
+[02:05] So what happened?
+[02:06] Out of those atoms, more electrons were released.
+[02:10] So in this way, the number of electrons increases.
+[02:13] Because whatever electron comes, accelerates.
+[02:16] Gains kinetic energy.
+[02:18] Changes from the other atom and releases electrons from there.
+[02:25] So with this type, your electrons keep increasing.
+[02:30] That is what is called as the Avalanche breakdown.
+[02:34] Now let's talk about the Zener breakdown, dear.
+[02:37] What did I say in the Zener breakdown, dear?
+[02:39] High electric field.
+[02:41] And the electric field is so high.
+[02:43] If we talk about the electric field so high that it is capable of releasing electrons from an atom.
+[02:50] That is what is called as the Zener breakdown.
+[02:53] If you put the electric field so high that the electric field itself releases electrons from an atom.
+[02:59] So that is the Zener breakdown.
+[03:01] Now I told you that the Zener breakdown is always in the highly doped PN junction.
+[03:07] Okay.
+[03:08] Highly doped PN junction.
+[03:10] And the Avalanche breakdown is in the lightly doped PN junction.
+[03:15] Right?
+[03:16] So today we will talk about the Zener diode.
+[03:19] A diode was made like this.
+[03:22] Which was highly doped.
+[03:24] Which we wanted to work in the breakdown region.
+[03:28] Because the voltage in the breakdown region almost remains constant at all the currents.
+[03:34] That is what is your Zener diode.
+[03:37] This diode is made for this reason.
+[03:39] Neither should I run it in forward bias.
+[03:41] Nor should I run it in reverse bias.
+[03:43] I want to actually operate it in the breakdown region.
+[03:47] Look at the normal diodes that you have read in the clippers.
+[03:50] Which you have read in the clampers.
+[03:52] In all these diodes, your diode was in the on-state forward bias.
+[03:56] So it was in the off-state reverse bias.
+[03:58] But your objective in the Zener diode is that it should operate in the breakdown region.
+[04:04] And what will be the phenomenon of the breakdown region?
+[04:07] That will be Zener breakdown.
+[04:10] So what are we saying?
+[04:12] Zener diode.
+[04:16] Listen carefully.
+[04:18] Zener diode is a highly doped PN junction.
+[04:30] Highly doped PN junction.
+[04:36] Highly doped PN junction.
+[04:38] That works.
+[04:41] That works.
+[04:43] In the breakdown region.
+[04:45] And remember I told you that Zener breakdown comes at a low voltage.
+[04:50] As compared to Avalanche breakdown.
+[04:53] That is why Zener diode's breakdown voltage is quite low.
+[04:56] 5V, 10V is enough.
+[04:59] In the breakdown region.
+[05:01] To maintain.
+[05:03] To maintain.
+[05:06] Almost.
+[05:09] Constant voltage.
+[05:17] To maintain almost.
+[05:20] Constant voltage.
+[05:23] Okay.
+[05:25] Is this clear?
+[05:27] Is this clear?
+[05:29] You tell me.
+[05:30] Did you understand what we are doing?
+[05:32] Now this also happens.
+[05:35] You can ask this.
+[05:37] You can't see here.
+[05:39] I have written P plus N plus.
+[05:41] Plus means heavy doping.
+[05:44] And minus means light doping.
+[05:47] Plus means heavy doping.
+[05:49] And minus means light doping.
+[05:52] So you can also ask this question in your mind.
+[05:55] Sir, why?
+[05:57] Heavy doping.
+[05:59] The primary reason for this is.
+[06:02] The phenomenon of Zener breakdown.
+[06:05] It is seen in the highly doped PN junction only.
+[06:09] If you see in the lightly doped PN junction.
+[06:12] There comes Avalanche breakdown.
+[06:15] Not Zener breakdown.
+[06:17] Okay.
+[06:18] So what am I saying?
+[06:20] First thing.
+[06:22] Zener breakdown.
+[06:24] Is observed.
+[06:30] In case of.
+[06:35] Highly doped PN junction.
+[06:41] Zener breakdown is seen in the highly doped PN junction only.
+[06:47] What else, sir?
+[06:49] What else is the reason?
+[06:51] And what happens?
+[06:53] With heavy doping.
+[06:55] With high doping.
+[06:57] Your depletion layer is less.
+[06:59] What happens if your depletion layer is less?
+[07:01] Even at a low voltage.
+[07:03] You can see the breakdown.
+[07:05] So we want the breakdown voltage.
+[07:07] That is your manageable.
+[07:09] That voltage.
+[07:11] As required.
+[07:13] Like a DC power supply.
+[07:15] DC power supply which you use in your lab.
+[07:17] How much is your requirement?
+[07:19] 5 volts, 10 volts, 15 volts.
+[07:21] It is not in kilo volts, right?
+[07:23] So I want the breakdown voltage to be less.
+[07:26] Stay at the same value as we are required.
+[07:29] In case of a DC power supply.
+[07:31] If you remember when I started rectifier for you.
+[07:34] I talked about power supply first.
+[07:37] I said that when a power supply goes from AC to DC.
+[07:40] First it looks like a transformer which steps down.
+[07:44] After that it looks like a rectifier.
+[07:46] Which makes AC pulsating in DC.
+[07:48] Then we read the filter.
+[07:50] The work of the filter is to reduce the fluctuation.
+[07:52] And later we put the regulator.
+[07:54] Which will give us the constant output voltage.
+[07:57] We have learnt these things.
+[07:59] So I am saying that the final output.
+[08:01] From the Zener diode regulator.
+[08:03] If you want 5, 10 or 15 volts in the final output.
+[08:07] Then you people.
+[08:09] Understand one thing.
+[08:11] Your breakdown voltage.
+[08:13] It should be 5, 10 or 15 volts.
+[08:15] So the breakdown voltage should be less.
+[08:17] And it can be in heavy doping only.
+[08:20] So what are we saying?
+[08:22] High doping.
+[08:26] Reduces.
+[08:29] High doping.
+[08:31] Reduces.
+[08:34] Breakdown voltage.
+[08:40] And hence reduces.
+[08:44] Power dissipation.
+[08:47] So your power dissipation will also be less.
+[08:50] Because what is power dissipation?
+[08:52] Voltage into current.
+[08:54] You understand what I am saying.
+[08:57] Many people know.
+[08:59] This is a misconception.
+[09:01] I have already talked about it.
+[09:03] When the diode breaks down.
+[09:05] It is a very high current.
+[09:07] It is a very high current.
+[09:09] There is nothing like this.
+[09:11] Even if there is a breakdown.
+[09:13] Even then the current will depend on this.
+[09:15] How is the outside circuit?
+[09:17] I mean how much supply voltage you have put.
+[09:19] How much resistance you have put.
+[09:21] It cannot be that how much current can be.
+[09:23] Current cannot be having
+[09:25] indefinite value or infinite value.
+[09:27] Current always depends on the
+[09:29] external circuit.
+[09:31] Suppose you have put 10 volts outside.
+[09:33] And you have put 1 ohm resistance.
+[09:35] Maximum current can be 10 ampere.
+[09:37] Maximum 10 ampere.
+[09:39] Maximum 10 ampere.
+[09:41] Only the 10 ampere can come.
+[09:43] We will understand this.
+[09:45] Maximum current can be 10 ampere.
+[09:47] The less the breakdown voltage.
+[09:49] The less the power dissipation will come in this.
+[09:51] Because what is power dissipation?
+[09:53] The voltage of the Zener diode
+[09:55] into current.
+[09:57] You know the power of the network.
+[09:59] V into i is the voltage.
+[10:01] So the voltage across the Zener diode
+[10:03] multiplied by its current
+[10:05] will be power dissipation.
+[10:07] and power dissipation should be less because the power dissipation in any device is the same as the heat is generated,
+[10:15] the temperature of the device is the same as the temperature of the device,
+[10:18] then the danger of the device being damaged increases.
+[10:22] So that's why we want the heat dissipation to be less, the power dissipation to be less,
+[10:27] so the breakdown voltage should be less.
+[10:30] But how much will you keep the breakdown voltage as required for us?
+[10:34] What is required? In DC power supply in which usually 3 levels are given,
+[10:40] 5V, 10V and 15V.
+[10:43] Has the matter been cleared up to here?
+[10:45] Has the matter been cleared up to here?
+[10:47] Tell me quickly.
+[10:50] Tell me, is everyone clear up to here?
+[10:53] Is there any problem?
+[10:54] What is the Zener diode?
+[10:56] How is the construction inside it?
+[10:58] And what are you doing? Is it clear?
+[11:00] Come on, this is very good.
+[11:02] Now before I go to the modelling, I will talk about the characteristics of the Zener diode.
+[11:12] I will make the entire diode characteristic for you.
+[11:16] Understand?
+[11:18] Okay?
+[11:31] This is the current of the diode and this is the voltage of the diode.
+[11:38] Now dear, you know one thing in forward biasing that the current is zero first,
+[11:44] then it increases exponentially, correct?
+[11:46] After which voltage does it increase exponentially?
+[11:49] Dear, after the new voltage.
+[11:51] Okay? After which voltage does it increase exponentially?
+[11:54] That is after the new voltage.
+[11:57] And what happens in reverse bias?
+[12:00] That the current goes like this.
+[12:03] Till the breakdown.
+[12:05] And then what happens in the breakdown?
+[12:08] It goes like this.
+[12:11] Now we feel that the current is going to increase in the negative.
+[12:15] But this does not happen.
+[12:17] Actually what happens here?
+[12:19] Here is the breakdown region in which I have interest.
+[12:24] This is the minimum current of it.
+[12:27] Means this is its minimum current.
+[12:29] And one thing happens, do you know its maximum current?
+[12:33] Sir, how is this minimum and maximum?
+[12:35] Dear, the minimum is a simple fund.
+[12:37] From where your breakdown region started.
+[12:40] What happened?
+[12:42] IZ minimum.
+[12:44] This is called IZK.
+[12:48] Means,
+[12:50] Ne current of Zener diode.
+[12:54] How much minimum current do you need to work in the Zener region or in the breakdown region?
+[13:02] And this happens dear, IZ max.
+[13:06] What does this depend on?
+[13:08] It depends on maximum power dissipation.
+[13:11] That how much diode can dissipate maximum power?
+[13:16] Or how much heat can be jealous?
+[13:19] So always there are two limits in Zener diode.
+[13:23] One is minimum current and one is your maximum current.
+[13:28] One is minimum current and one is your maximum current.
+[13:33] And here look at the voltage of Zener diode, that is VZ.
+[13:38] Reverse bias.
+[13:40] So this voltage is negative.
+[13:42] Because it is negative, that is why you take the polarity upside down.
+[13:46] The polarity is to take the positive on the cathode.
+[13:51] And my children take the negative on the anode.
+[13:57] Because this is reverse.
+[14:00] That is why cathode is positive.
+[14:05] And my children, first pay attention to reading.
+[14:09] Right?
+[14:11] These doubts and queries will continue.
+[14:15] Your rank will never stop.
+[14:18] You people think that these things are more important.
+[14:21] But look, if I change this session in AMA, then it is very easy for me.
+[14:25] See what I have to do every day.
+[14:27] Like I took it from the office yesterday in AMA.
+[14:29] I will buy a good chair at home.
+[14:31] Okay?
+[14:32] I will do what I will do every day.
+[14:33] It came live at 11.30.
+[14:34] I will sit on the chair and answer your questions.
+[14:37] You are also happy.
+[14:38] I am also happy.
+[14:39] But the rank will not come from it.
+[14:40] The rank does not come from reading the knowledge.
+[14:42] No matter how much knowledge I give you.
+[14:44] No matter how much strategy I tell you.
+[14:46] But the rank will not come without knowledge, without content.
+[14:49] The strategy is only beneficial when you provide content.
+[14:53] If I am providing content, then you people need the answer of queries.
+[14:57] Now you are saying that all the query answers are not there in AMA.
+[15:00] When you will ask such a long query.
+[15:02] If I tell you quickly, I will not tell you properly.
+[15:04] Then you will not be satisfied.
+[15:06] And I cannot give the answer of all the questions of 2500 children.
+[15:10] Right?
+[15:11] That is why sometimes you ask something in between.
+[15:13] So discuss those things in between anyway.
+[15:17] It is not necessary that you always ask everything from me.
+[15:21] Now I will show you one more thing here.
+[15:24] What happens a lot in the characteristics of Zena Diode.
+[15:27] That it does not go vertically.
+[15:29] This goes a little tilted.
+[15:32] Understand.
+[15:34] This goes a little tilted.
+[15:36] Are you seeing?
+[15:37] The characteristic is going straight.
+[15:44] Look at this straight.
+[15:52] Okay.
+[15:55] So this straight is going.
+[15:57] There must be some slope of this characteristic.
+[16:00] Isn't it correct?
+[16:01] There must be some slope of this characteristic.
+[16:04] Now my children, if you go to take out its slope.
+[16:08] Look a little.
+[16:11] You took out the slope.
+[16:13] The slope will be very high.
+[16:15] You are seeing.
+[16:16] It is a very steep characteristic.
+[16:18] So you will take out its slope.
+[16:27] Delta i by delta v.
+[16:31] We call it 1 by Zena resistance.
+[16:35] 1 by Zena resistance.
+[16:37] So this characteristic is ideally perfectly vertical.
+[16:42] Ideally it should go perfectly vertical.
+[16:44] But practically it goes a little tilted.
+[16:47] So its slope comes 1 by RZ.
+[16:50] And look at its slope is high.
+[16:53] The slope is high.
+[16:55] Because of this, the resistance will be low.
+[16:58] Slope high means when a line is vertical.
+[17:02] The more the line is vertical, the higher its slope will be.
+[17:07] If this slope is high, that means its resistance is low.
+[17:10] What do we call RZ?
+[17:12] We call it Zena resistance.
+[17:17] Zena resistance.
+[17:20] Do you understand?
+[17:23] So if there is an ideal Zena diode, its resistance will be zero.
+[17:27] Because its slope will be infinite.
+[17:30] And if you take a practical Zena diode, it will have a certain resistance.
+[17:36] Do you understand?
+[17:38] Ideal Zena diode.
+[17:42] Slope tends to infinity.
+[17:50] RZ tends to zero.
+[17:53] Is everything shining here?
+[17:55] Everything is shining here.
+[17:57] What type of characteristic of Zena diode is it?
+[18:00] So when we talk about Zena diode,
+[18:02] then this is the interesting reason for me.
+[18:04] The blue graph, that is why I have made three different ones.
+[18:07] This red means forward bias.
+[18:09] Green means reverse bias.
+[18:11] And blue means breakdown.
+[18:13] So my interested region is that is the blue region.
+[18:16] That is the breakdown region.
+[18:18] Now look, when you read in the diode,
+[18:21] open circuit test, short circuit test,
+[18:24] you saw that open circuit test or say that
+[18:27] when you read forward and reverse bias in diode,
+[18:30] then you read that you open the diode in reverse bias.
+[18:34] Because the current flowing in the green region here
+[18:37] is in nano amperes.
+[18:39] And the current flowing in forward bias,
+[18:42] that is in milli ampere.
+[18:44] So you said that the current of reverse bias
+[18:47] is the current of nano amperes.
+[18:49] This is the reverse saturation current.
+[18:51] And what did we learn about reverse saturation current?
+[18:55] We learned that reverse saturation current
+[18:58] doubles for every 10 degrees centigrade
+[19:01] rise in temperature.
+[19:03] So we said that reverse saturation current is in nano ampere.
+[19:07] If it is considered almost zero,
+[19:10] then diode in reverse bias will be your open view.
+[19:14] Then in forward bias, you read different types of models.
+[19:18] Like the first model was ideal diode,
+[19:21] then diode in forward bias was short circuit.
+[19:23] The second model was your what?
+[19:26] The second model was CVD model,
+[19:28] where you replaced the diode with a battery.
+[19:31] The third was PWL model,
+[19:33] where you made battery plus resistance.
+[19:35] And why did you do all this?
+[19:37] Because if you want to apply the theory of network analysis,
+[19:41] then you have to replace it with network element.
+[19:44] An analogue device.
+[19:46] If the analogue device remains like this,
+[19:49] if it remains exponential,
+[19:50] then we will not be able to manually solve the exponential equation.
+[19:54] What do we have to take for this?
+[19:56] For linear equation and linear equation,
+[19:58] we will have to come to the network element.
+[20:01] So now we will do this work for Zener.
+[20:04] We will do the same work for Zener.
+[20:06] We will see what is the circuit model of Zener.
+[20:10] You can relate everything to me.
+[20:13] All the children who have started with me,
+[20:16] who have done all the classes of this diode circuit,
+[20:19] now they will be able to connect all the things from the beginning.
+[20:22] And they will be able to see everything like a story.
+[20:25] You will have clear objectives of each thing.
+[20:28] You will have conceptual clarity of each thing.
+[20:31] And at the same time,
+[20:33] you will have numerical clarity.
+[20:35] Okay?
+[20:36] Let's move ahead.
+[20:38] Now we say, believe it or not,
+[20:40] we have forward biased Zener diode.
+[20:43] Sir, why will we do this?
+[20:44] Believe it or not,
+[20:45] you applied AC supply related to Zener diode.
+[20:49] Now half of the cycle has been forward biased,
+[20:51] even in AC supply.
+[20:53] Half of the cycle will be forward biased.
+[20:55] So there is nothing like this.
+[20:57] It is a sin to forward bias Zener diode.
+[20:59] We can do it.
+[21:00] Now what can we do if we can forward bias?
+[21:02] Dear, the first thing to understand.
+[21:06] Zener diode
+[21:11] behaves as
+[21:17] normal diode
+[21:23] and forward bias.
+[21:28] It works as normal diode.
+[21:30] There is nothing different in it.
+[21:32] There is nothing different, dear.
+[21:34] Okay?
+[21:37] Now see.
+[21:38] Now they are saying that
+[21:40] I want to take a plus subscription,
+[21:42] but I am getting more on YouTube.
+[21:44] I mean, I will have to reduce it on YouTube.
+[21:49] We didn't even think about this.
+[21:54] Look, the symbol of Zener diode is
+[21:58] the three-dimensional line that is making
+[22:00] the normal cathode on top.
+[22:02] This tells that this is Zener diode.
+[22:05] The difference should be understood
+[22:07] in normal diode and Zener diode.
+[22:09] Because normal diode is not used in breakdown region.
+[22:12] Zener diode is used in breakdown region.
+[22:15] Okay?
+[22:17] Now see this.
+[22:18] What does it mean to forward bias?
+[22:21] It means that this is anode, right?
+[22:24] And this is cathode.
+[22:26] So you put positive voltage on anode
+[22:28] and negative on cathode.
+[22:30] That's right.
+[22:31] That's it.
+[22:33] Now don't think that it is negative on top.
+[22:35] Why?
+[22:36] Zener diodes draw like this.
+[22:38] They usually show cathode on top and anode on bottom.
+[22:41] Because usually it is used in reverse bias.
+[22:43] Reverse bias means positive on top and negative on bottom.
+[22:46] Like a normal diode's general condition
+[22:49] is forward bias.
+[22:50] It is mostly used in forward bias.
+[22:52] Zener diode is just opposite.
+[22:54] It is mostly used in reverse.
+[22:56] It is usually used in reverse.
+[22:58] That's why its cathode is usually shown on top.
+[23:01] Do you understand?
+[23:02] It is usually shown on top.
+[23:05] Now see.
+[23:08] What are the possibilities here?
+[23:11] If you consider the ideal diode model.
+[23:16] You will make the ideal one.
+[23:19] Okay?
+[23:22] So what do we say?
+[23:23] The diode is in forward bias.
+[23:25] Short.
+[23:26] Correct?
+[23:30] You will say that the diode is in forward bias.
+[23:32] Short.
+[23:34] Next is CVD model.
+[23:36] Constant voltage drop.
+[23:38] Take care of polarity.
+[23:40] How is polarity?
+[23:41] It is positive on top and negative on bottom.
+[23:49] Okay?
+[24:01] So this is V gamma.
+[24:04] Okay?
+[24:05] You will show 0.7 volts.
+[24:08] 0.7 volts.
+[24:11] Ash is asking,
+[24:13] How much did Mr. Umesh Dhande buy?
+[24:16] Son, you don't have the time to talk like this.
+[24:19] You are talking so loudly.
+[24:21] First make something in life.
+[24:23] Then talk loudly.
+[24:26] How much did he buy?
+[24:27] How much did he sell?
+[24:32] He doesn't have 10,000 jobs in his hand.
+[24:34] He has to talk loudly.
+[24:36] This will be the business tycoon of India.
+[24:42] Where do you come from?
+[24:44] Now see, if you do PWL,
+[24:50] then what will you do?
+[24:53] This is RF and this is V gamma.
+[24:57] Forward resistance and V gamma.
+[25:00] Isn't it?
+[25:03] Tell me.
+[25:04] Is this clear?
+[25:05] So it is a normal diode.
+[25:07] There is no difference.
+[25:09] Shubham, son,
+[25:10] you are not a student or a politician.
+[25:12] You are a student or a politician.
+[25:13] Politics is a domain.
+[25:14] A politician is a human being.
+[25:16] Now I started the verbal class because of this.
+[25:18] But you did not attend the verbal class.
+[25:20] Then I left it.
+[25:21] Otherwise the verbal shots were made because of this.
+[25:23] So that you can improve your verbal skills.
+[25:27] You know, verbal is that
+[25:28] the demand for English is very high in the market.
+[25:30] That means every child wants us to learn verbal.
+[25:32] Our English improves.
+[25:35] Okay?
+[25:36] So every child wants this.
+[25:38] But what happens when the class of verbal looks like this?
+[25:41] It means that the class of verbal looks like this.
+[25:43] But what happens when the class of verbal looks like this?
+[25:45] It means that I had seen this in offline too.
+[25:47] The attendance drops completely.
+[25:49] No one wants to read English.
+[25:51] And the English needs to be improved too.
+[25:55] Isn't it?
+[25:56] Is this all with everyone?
+[25:57] Now look, Krithi is saying,
+[25:59] Sarcastic.
+[26:00] Sarcasm, son.
+[26:02] Not sarcastics.
+[26:04] If I were to say sarcastics,
+[26:06] I would not be S.
+[26:07] I am singular.
+[26:08] I am not plural.
+[26:09] Or say sarcastics,
+[26:10] I am being sarcastic.
+[26:11] Or say,
+[26:12] sarcastics.
+[26:13] That means what I am doing is sarcasm.
+[26:18] Come on.
+[26:19] This is clear.
+[26:20] Tell me, is there any problem in forward bias?
+[26:22] There will be very few questions
+[26:24] where the zener diode will be forward bias.
+[26:27] But still,
+[26:28] the model of forward bias should be clear to you.
+[26:31] Okay?
+[26:32] The model of forward bias should be clear to you.
+[26:35] Saksham, son,
+[26:36] when did the synchronic bias come into the analogue?
+[26:38] Is it?
+[26:40] Now let's talk about reverse bias.
+[26:42] I am talking about the reverse bias, son.
+[26:44] When there is no,
+[26:46] when the voltage is less than the breakdown.
+[26:50] I am talking about less than the breakdown.
+[26:54] Okay, son?
+[26:56] So, we are saying,
+[26:58] cathode is positive.
+[27:03] Anode is negative.
+[27:05] But,
+[27:08] voltage across diode
+[27:21] is less than
+[27:25] VBD,
+[27:26] breakdown voltage.
+[27:28] You know,
+[27:29] to judge this,
+[27:30] whether the diode is in reverse bias
+[27:32] or not,
+[27:33] do you know what you can do?
+[27:34] You can test the open circuit.
+[27:36] You can circuit the diode
+[27:38] and take out the voltage of the cross.
+[27:41] When you take out the voltage
+[27:43] by doing the open circuit,
+[27:45] if the voltage is more than the breakdown,
+[27:47] then the diode will go into the breakdown region.
+[27:49] And if the voltage is less than the breakdown region,
+[27:52] if the breakdown is less than the voltage,
+[27:54] then it will remain in normal reverse bias.
+[27:56] Now what happens in normal reverse bias, son?
+[28:03] Okay?
+[28:09] This is our Xenar diode.
+[28:11] It looks like someone is dancing.
+[28:13] Only a doll is missing from the body.
+[28:16] Otherwise, two hands are left.
+[28:18] This is cathode.
+[28:19] This is anode.
+[28:21] So, you have to put positive on cathode
+[28:23] and negative on anode.
+[28:25] So, normally,
+[28:26] in a diode,
+[28:27] you would circuit the open circuit in reverse bias.
+[28:30] Son, you have to do the same thing here as well.
+[28:33] You have to keep the open circuit in reverse bias.
+[28:44] Okay?
+[28:48] We did this.
+[28:50] What did you do in reverse bias?
+[28:52] You did the open circuit.
+[28:54] What did you do?
+[28:58] Did you understand the technique?
+[29:00] I will also write the point.
+[29:05] If we know
+[29:11] or do one thing,
+[29:12] if we wish to know
+[29:21] operating region
+[29:25] of diode,
+[29:33] then we say open circuit diode
+[29:44] and compute
+[29:49] VAK.
+[29:52] Okay?
+[29:53] And compute VAK.
+[29:56] Now, you took out the VAK anode cathode voltage.
+[30:00] If VAK is positive,
+[30:04] then it will be forward bias.
+[30:07] If VAK is negative
+[30:11] and mod VAK
+[30:14] is less than mod breakdown,
+[30:18] then it will be reverse bias.
+[30:21] VAK is negative.
+[30:23] The voltage of anode cathode is negative.
+[30:26] And the magnitude of it
+[30:28] is more than the magnitude of the breakdown.
+[30:31] Then this is not reverse bias.
+[30:33] Then it will be in the breakdown region.
+[30:35] Okay?
+[30:36] You can judge from this type.
+[30:38] If you cannot clear directly
+[30:40] which region the diode is operating in.
+[30:44] Okay?
+[30:45] Which region the diode is operating in if you want to understand.
+[30:48] Now, let's talk about the breakdown region.
+[30:50] If the diode is operating in the breakdown region,
+[30:53] then when the diode is operating in the breakdown region,
+[30:55] there is no short circuit.
+[30:57] Because as per the characteristics,
+[30:59] the voltage is zero.
+[31:01] What does short circuit mean?
+[31:03] Short circuit means the voltage should be zero,
+[31:06] but the voltage is VZ.
+[31:07] That is why we say
+[31:09] if an ideal Zener diode is there,
+[31:11] then it will be just as a battery.
+[31:14] This is ideal Zener diode.
+[31:18] And what is the characteristic of
+[31:21] ideal Zener diode?
+[31:23] Its characteristic is perfectly vertical.
+[31:25] Perfectly
+[31:27] Vertical
+[31:29] Characteristic.
+[31:31] What happens in vertical characteristics?
+[31:33] It slows down to infinity.
+[31:35] And
+[31:37] it becomes zero.
+[31:39] And if a practical Zener diode is there,
+[31:41] then it will be zero.
+[31:43] And if a practical Zener diode is there,
+[31:45] then a practical Zener diode is there.
+[31:47] Then in a practical Zener diode,
+[31:49] there will be a battery and a resistance.
+[31:51] Sir, how will we take the polarity of the battery?
+[31:53] Practical Zener diode
+[31:55] or ideal Zener diode
+[31:57] how to take the polarity of the battery?
+[31:59] That the positive terminal is on the cathode
+[32:01] and the negative on the anode.
+[32:03] The positive should be on the cathode
+[32:05] and the negative on the anode.
+[32:07] Because there is reverse bias.
+[32:09] There is reverse bias.
+[32:11] Is it clear?
+[32:13] Is it clear?
+[32:15] Mr. Pawan is asking
+[32:19] Mr. Pawan is asking
+[32:21] What is the difference between
+[32:23] Zener Breakdown and Avalanche Breakdown?
+[32:25] Mr. Pawan, if you look at the beginning of this lecture,
+[32:27] I have talked about it.
+[32:29] What is the difference between Zener Breakdown and Avalanche Breakdown?
+[32:31] What is the second thing?
+[32:33] The lecture I took
+[32:35] in which I studied the basic of diode
+[32:37] and its working
+[32:39] I also talked about
+[32:41] Zener Breakdown.
+[32:43] Okay?
+[32:45] Now you have to argue again
+[32:47] whether you are educated from Mr. Ranjeet.
+[32:49] Yes, we are educated from Mr. Ranjeet.
+[32:51] Okay?
+[32:53] We are educated from chemistry.
+[32:55] When I.T. Jai was preparing.
+[32:57] Now one query,
+[32:59] provide the notes of power electronics.
+[33:01] Read it, write it.
+[33:03] If you work hard, you will not go to Ghis.
+[33:05] Tomorrow mom and dad will say this.
+[33:07] Son, how did Ghis become so big?
+[33:09] You will work hard.
+[33:11] Everything should be in the plate.
+[33:13] Yes.
+[33:15] Now let's talk about the voltage regulation.
+[33:17] See what happens when Zener
+[33:19] comes in resistance in the diode.
+[33:21] Listen carefully.
+[33:23] When Zener comes in resistance in the diode.
+[33:25] You have to see one thing here.
+[33:27] If I tell you that
+[33:29] current is going in Zener
+[33:31] IZ.
+[33:33] Okay? IZ.
+[33:35] So you can tell KVL
+[33:37] what will happen?
+[33:39] You can say that the voltage of Zener
+[33:41] will be VZK
+[33:43] plus IZ
+[33:45] RZ.
+[33:47] This will happen.
+[33:49] VZK plus IZ
+[33:51] RZ.
+[33:53] Okay?
+[33:55] Now if you think one thing here.
+[33:57] If I vary the current of Zener
+[33:59] then its voltage will change.
+[34:01] If I vary the current of Zener
+[34:03] then its voltage will change.
+[34:05] Sir.
+[34:07] And my children, if its voltage will change
+[34:09] then the voltage regulation will be discussed here.
+[34:11] We will say that
+[34:13] if I vary the load
+[34:15] in a voltage regulator.
+[34:17] If I vary the load of the load
+[34:19] then the current of the load
+[34:21] changes.
+[34:23] What happens if the current of the load
+[34:25] changes?
+[34:27] If the current of the load changes
+[34:29] then the current of the Zener
+[34:31] changes.
+[34:33] Okay? What happens?
+[34:35] First of all, if the load's resistance changes
+[34:37] then the current of the load changes.
+[34:39] If the load's current changes
+[34:41] then the current of Zener changes.
+[34:43] If the current of Zener changes
+[34:45] then the voltage of Zener changes.
+[34:47] That is the reason for the voltage regulation.
+[34:49] What does the voltage regulation mean?
+[34:51] When we change the load
+[34:53] then
+[34:55] how much the power supply
+[34:57] of our voltage regulator
+[34:59] changes.
+[35:01] Look, when you are making a voltage regulator
+[35:03] or you are taking a DC power supply
+[35:05] and you want
+[35:07] to get 5 volts.
+[35:09] So, it doesn't matter
+[35:11] how much the resistance is connected
+[35:13] across those 5 volts.
+[35:15] It doesn't matter how much the current is drawn
+[35:17] from those 5 volts.
+[35:19] What are you expecting?
+[35:21] You are expecting an ideal
+[35:23] voltage source.
+[35:25] What is an ideal voltage source?
+[35:27] No matter how much the current is drawn
+[35:29] the voltage is constant.
+[35:31] Which is an ideal voltage source.
+[35:33] But there is also
+[35:35] a resistance in a practical voltage source
+[35:37] because if the current
+[35:39] changes then the voltage also changes.
+[35:41] To understand again
+[35:43] when I am creating a power supply
+[35:45] my expectation is
+[35:47] that I am making an ideal voltage source
+[35:49] then how much
+[35:51] the current I am drawing
+[35:53] will be constant.
+[35:55] But this cannot happen.
+[35:57] This is a practical voltage source
+[35:59] in which there is some resistance.
+[36:01] So, when our current
+[36:03] changes, the current we are drawing
+[36:05] from the system. In that case
+[36:07] the voltage also
+[36:09] changes.
+[36:11] The voltage also
+[36:13] changes. This is what is called as
+[36:15] the voltage regulation.
+[36:17] So, what is the voltage regulation?
+[36:19] The purpose
+[36:21] of voltage regulator
+[36:23] is to
+[36:25] maintain voltage of an electronic device
+[36:27] within
+[36:29] an acceptable limit
+[36:31] during current fluctuation.
+[36:33] The voltage will change.
+[36:35] You cannot do anything about it.
+[36:37] But I want the voltage to
+[36:39] have a minimum fluctuation.
+[36:41] Like 4-5%
+[36:43] is not more than this.
+[36:45] In voltage
+[36:47] there should be a minimum fluctuation.
+[36:49] So, this is the
+[36:51] formula of voltage regulation.
+[36:53] As you can see here.
+[36:55] But you can also recognize this
+[36:57] child.
+[36:59] Here, no load minus full load by
+[37:01] full load into 100%.
+[37:03] No load means
+[37:07] voltage output
+[37:13] when
+[37:17] IEL is 0.
+[37:19] And full load
+[37:21] is
+[37:23] voltage output
+[37:25] when
+[37:29] IEL is IEL maximum.
+[37:31] The maximum current of the load
+[37:33] can be done. Let me explain
+[37:35] as an example.
+[37:37] As you can see.
+[37:39] In my house,
+[37:41] suppose a meter of 5kW is
+[37:43] placed in my house.
+[37:47] So, what is the assumption
+[37:49] of electricity company?
+[37:51] What is the assumption of electricity company?
+[37:53] That I will not use
+[37:55] more than 5kW power.
+[37:57] That is why I have given a meter of 5kW.
+[37:59] If I use more, then I will have to increase the meter.
+[38:01] You must have heard that
+[38:03] increasing the capacity of the meter
+[38:05] requires a lot of money.
+[38:07] But understand the basic thing.
+[38:09] They have agreed that I will not use
+[38:11] more than 5kW.
+[38:13] If in my house,
+[38:15] I run so many fan AC lights
+[38:17] that I start consuming 5kW
+[38:19] that they say full load.
+[38:21] Full load.
+[38:23] What will they say? Full load.
+[38:25] At one time, you run so many devices
+[38:27] which
+[38:29] consumed 5kW
+[38:31] that is full load.
+[38:33] And in the house, all the light,
+[38:35] fan, AC, stop everything
+[38:37] and stop charging.
+[38:39] Or down the MC as well.
+[38:41] So, nothing is going on in the house.
+[38:43] That is the no load.
+[38:45] So, when the load is not charged,
+[38:47] then the voltage that is the no load
+[38:49] and when the rated value
+[38:51] or the maximum load you charge
+[38:53] and the maximum current you draw
+[38:55] then the voltage that is
+[38:57] the full load value.
+[38:59] We want to
+[39:01] run so many light, fan, AC
+[39:03] in the house.
+[39:05] There should be 220V
+[39:07] in my house.
+[39:09] I want this.
+[39:11] No matter how many light, fan, AC
+[39:13] should be 220.
+[39:15] If I don't run, then also 220.
+[39:17] If I run, then also 220.
+[39:19] So, what should be the regulation?
+[39:21] It should be 0.
+[39:23] But practically, this is not the case.
+[39:25] So, this value
+[39:27] should be as small
+[39:29] as possible.
+[39:31] As small
+[39:33] as
+[39:35] possible.
+[39:39] Okay?
+[39:41] It was clear that the regulation of voltage
+[39:43] was understood. Ideally, it should be 0.
+[39:45] That is, there should be no fluctuation
+[39:47] in the voltage.
+[39:49] Okay? Ideally.
+[39:51] Okay? Krithi Ji, the 1kW meter one.
+[39:53] It was clear that
+[39:55] ideally, it should be 0.
+[39:57] It doesn't come. That is different.
+[39:59] The first thing is that the zero value is desirable.
+[40:01] If you have an egg in your exam,
+[40:03] then it is undesirable. But if the egg is
+[40:05] coming here, then it is a very good thing.
+[40:07] Now, look at the sea
+[40:09] sugar.
+[40:13] What is the cause of the sea sugar?
+[40:15] Firstly,
+[40:17] today,
+[40:19] especially today,
+[40:21] the name of the girl
+[40:23] and I also took the audio in the class
+[40:25] today. The boy came out.
+[40:27] I said, what is going on?
+[40:29] How many angels are there in our country?
+[40:31] They are full of girls.
+[40:33] They are sitting with the girl's ID.
+[40:35] And you all should enjoy.
+[40:37] You all should share your doubts.
+[40:39] You all should share your doubts.
+[40:41] It is a very easy way to discuss.
+[40:43] WhatsApp, Facebook
+[40:45] or Telegram group.
+[40:47] All the boys
+[40:49] will definitely share their doubts.
+[40:51] They will definitely share their doubts.
+[40:53] Right?
+[40:55] Because what do you think?
+[40:57] While preparing the gate,
+[40:59] let's make some extra use of it.
+[41:01] In the case of gate aspirants,
+[41:03] make any group in the case of
+[41:05] Telegram, WhatsApp,
+[41:07] Facebook. Eventually, it will be a dating website.
+[41:09] Right?
+[41:11] Because boys have a different expectation.
+[41:13] If I tell the girl,
+[41:15] if I read from this book,
+[41:17] then our relationship will definitely start.
+[41:19] I mean,
+[41:21] look at the imagination.
+[41:23] It is of a different level.
+[41:25] And watching the movies,
+[41:27] while walking on the road,
+[41:29] the love story started.
+[41:31] So, what do they think?
+[41:33] We told them in the chat of Facebook,
+[41:35] we told them in the chat of WhatsApp,
+[41:37] that look,
+[41:39] pay attention to studies.
+[41:41] Don't distract too much.
+[41:43] Stay away from mobile.
+[41:45] Now, we have written it.
+[41:47] Now, we are sitting and waiting.
+[41:49] I had written a very good message.
+[41:51] Now, I will get the answer.
+[41:53] I am checking again and again.
+[41:55] Will the answer come or not?
+[41:57] And son, it will be your neighbor's friend
+[41:59] who must have killed him.
+[42:01] See, study material is also available.
+[42:03] The answer of doubt is also available.
+[42:05] The notes of a teacher are also available.
+[42:07] And you are lost in your own dreams.
+[42:09] You have already seen the family planning
+[42:11] of marriage and future.
+[42:13] Right?
+[42:15] And later, when you come to know,
+[42:17] someone else was running the ID.
+[42:19] So, don't read too much online.
+[42:21] Don't read too much online.
+[42:23] If you want to do dating,
+[42:25] then do it with a proper dating website.
+[42:27] Because of this,
+[42:29] you can make this cheap dating website
+[42:31] on YouTube, Facebook, Instagram, etc.
+[42:33] It is useless after them.
+[42:35] It is useless after them.
+[42:37] Do you understand?
+[42:39] This is how it is.
+[42:41] And even more than you,
+[42:43] these days, you are still serious.
+[42:45] You know, if you don't get a job,
+[42:47] then where will you get a girl?
+[42:49] So, you are still serious.
+[42:51] But the 11th and 12th ones,
+[42:53] the famous names of Nibba, Nibbi,
+[42:55] Satcha Pyaar have also been done.
+[42:57] They are ready to die.
+[42:59] And they don't know who is talking in front of them.
+[43:01] But brother, it is going on at a different level.
+[43:03] They are sitting in the class of YouTube
+[43:05] and waiting for someone to come.
+[43:07] If someone talks to them,
+[43:09] then their love story will continue.
+[43:11] It is different.
+[43:13] Neither they are interested in becoming a doctor,
+[43:15] nor in becoming an CA,
+[43:17] nor in becoming an engineer.
+[43:19] They say that Satcha Pyaar
+[43:21] doesn't matter in life.
+[43:23] They want love.
+[43:25] And at what age do they need it?
+[43:27] 11th, 12th, 13th years.
+[43:29] Right?
+[43:31] At this age, they should get real love.
+[43:33] They should get real love.
+[43:35] They should get married.
+[43:37] I am telling you, earlier,
+[43:39] Bal Viva was illegal in the country.
+[43:41] Now, our students will make it legal.
+[43:43] They will say that it was a good idea.
+[43:45] Why did they make it illegal?
+[43:47] At a young age, they would get married.
+[43:49] They would get real love.
+[43:51] Careers are oriented.
+[43:53] First priority is to keep a career.
+[43:55] Make a career in a good way.
+[43:57] Make a good career.
+[43:59] Everything will be set in life gradually.
+[44:01] But if career is not there,
+[44:03] the basics are not there.
+[44:05] If you are not earning well,
+[44:07] then whatever things are in life,
+[44:09] will be left by hand.
+[44:11] Things will be left by hand.
+[44:13] Now, you have understood that
+[44:15] the matter of voltage regulation has been cleared.
+[44:17] Come on.
+[44:19] Now, why will voltage fluctuate?
+[44:21] One thing is
+[44:23] that voltage fluctuates
+[44:25] when the load varies.
+[44:27] Now, the load means
+[44:29] how much current we are drawing.
+[44:31] How much current we are drawing.
+[44:33] So, at no load,
+[44:35] our current is 0.
+[44:37] Resistance is infinity.
+[44:39] Right?
+[44:41] And at full load, there is maximum current.
+[44:43] Which means
+[44:45] there is minimum resistance.
+[44:47] Right? So, at no load,
+[44:49] your current is 0.
+[44:51] Meaning, it is an open circuit.
+[44:53] If it is an open circuit, then resistance is infinity.
+[44:55] If the current is maximum at full load,
+[44:57] then resistance is minimum.
+[44:59] Don't say that the full load means
+[45:01] that the resistance is 0 and the current is infinity.
+[45:03] It is not like that.
+[45:05] It is not like that.
+[45:07] Because, the limit of current is
+[45:09] as I told you that
+[45:11] the meter is 5 kW in my house.
+[45:13] Take out the maximum current
+[45:15] given by the government.
+[45:17] Right? So, the limit of current
+[45:19] is of this type. So, the maximum current
+[45:21] means the minimum resistance.
+[45:23] How is the minimum resistance in the house?
+[45:25] Suppose, all my devices are resistive.
+[45:27] Whether it is tube, light, fan, AC,
+[45:29] all are resistive.
+[45:31] You know that there is a parallel connection in the house.
+[45:33] So, the more devices you run,
+[45:35] they will be connected in parallel.
+[45:37] The resistance will decrease.
+[45:39] The resistance will decrease and the current will increase.
+[45:41] Is this a miracle?
+[45:43] In this relation, even in the house,
+[45:45] when you run more devices in the house,
+[45:47] the current is more or less.
+[45:49] Why? Because it is parallel.
+[45:51] The more things will be connected in parallel,
+[45:53] the equivalent resistance will be less.
+[45:55] It will be less.
+[45:57] Is this clear?
+[46:01] Let's go.
+[46:03] Joseph, my brother, we will talk in a little while
+[46:05] on false questions.
+[46:07] I know. I also enjoy.
+[46:09] What is my time pass?
+[46:11] I have to study for 2 hours.
+[46:13] If you entertain me in those 2 hours,
+[46:15] then I am good.
+[46:17] If I get bored, then what is my benefit?
+[46:19] But let's not talk about anything.
+[46:21] We will talk about the fizzles.
+[46:23] Wait for some time.
+[46:25] See, this type of voltage regulator
+[46:27] has a full circuit.
+[46:29] This circuit is fixed.
+[46:31] You will get this circuit made.
+[46:33] The input in this voltage regulator
+[46:35] comes from the filter.
+[46:37] I told you, in DC power supply,
+[46:39] and then the regulator.
+[46:41] Then the regulator.
+[46:43] What is the input coming from?
+[46:45] It is coming from the filter.
+[46:47] This R is the series resistance.
+[46:49] This is the
+[46:51] current limiting resistor.
+[46:53] Sir, why is this?
+[46:55] My brother, think like this.
+[46:57] You people
+[46:59] keep running.
+[47:01] Suppose
+[47:03] someone is running from you.
+[47:05] And what did you do?
+[47:07] You removed it.
+[47:09] What happens after removing it?
+[47:11] Right?
+[47:13] So you removed the resistance.
+[47:15] See, what is the fun?
+[47:17] So what will happen?
+[47:19] Will the supply current go into the Zener diode?
+[47:21] Will the supply current go into the Zener diode?
+[47:23] If the resistance was not there on the way,
+[47:25] then the current would have been so high
+[47:27] that the Zener diode would have burned.
+[47:29] Right?
+[47:31] The Zener diode would have burned.
+[47:33] So what are we talking about?
+[47:35] What are we talking about?
+[47:37] If I want a
+[47:39] limited current in the Zener diode,
+[47:41] then I will have to give a resistance
+[47:43] for safety on the way.
+[47:45] Did you understand this?
+[47:47] Did you understand this?
+[47:49] What are we saying?
+[47:51] This VI
+[47:53] must be greater than VZ.
+[47:55] So that
+[47:59] Zener diode
+[48:01] operates in
+[48:03] breaks in
+[48:05] breakdown region.
+[48:11] Right?
+[48:15] Now see,
+[48:17] the voltage polarity of the Zener diode
+[48:19] is also shown like this.
+[48:21] Positive on the cathode and negative on the anode.
+[48:23] And the current will also be shown
+[48:25] where the anode goes from the cathode.
+[48:27] Right? The current will also be shown
+[48:29] where the anode goes from the cathode.
+[48:31] Now here the current
+[48:33] is the limit of the current
+[48:35] from IZK
+[48:37] to
+[48:39] IZ Maximum.
+[48:45] IZK to IZ Maximum.
+[48:47] What is this IZK?
+[48:49] What is this?
+[48:51] This is the Ni current.
+[48:53] Ni current
+[48:57] and
+[48:59] Minimum
+[49:03] Zener current.
+[49:07] Right?
+[49:09] And IZ Max I told you
+[49:11] depends on power dissipation.
+[49:21] Depends on power dissipation.
+[49:23] How much power
+[49:25] Zener diode can handle.
+[49:27] If in any question
+[49:29] if IZK is not
+[49:31] given
+[49:33] if IZK
+[49:35] is not mentioned
+[49:37] then you will
+[49:39] consider IZK to be zero.
+[49:41] What will you say?
+[49:43] If any current, meaning
+[49:45] Minimum current is zero.
+[49:47] So Minimum current is zero means
+[49:49] if any current
+[49:51] is going from the cathode
+[49:53] if any current is going from the cathode
+[49:55] then my Zener diode
+[49:57] is going in the breakdown region.
+[49:59] I don't mean
+[50:01] how much current is going but I am saying
+[50:03] if any current is greater than zero
+[50:05] then it will operate in the breakdown
+[50:07] region. Did you understand?
+[50:09] Did you understand or not?
+[50:11] If Minimum current is not given
+[50:13] then you will consider Minimum current to be zero.
+[50:15] That means if any current is greater than zero
+[50:17] if it goes from the cathode
+[50:19] then here
+[50:21] it will operate in the breakdown region.
+[50:25] Now you can see
+[50:27] there may be different cases but this circuit
+[50:29] will be common. There are different cases in this circuit.
+[50:31] First I am saying
+[50:33] VI and RL are fixed.
+[50:35] Now see in this circuit
+[50:37] how I take out this current.
+[50:39] VI
+[50:41] Minus VZ by R
+[50:43] that is what you will say.
+[50:45] I will be
+[50:47] VI
+[50:49] Minus
+[50:51] VZ by R
+[50:53] this is constant
+[50:55] because
+[50:57] VI is constant.
+[50:59] VZ is
+[51:01] constant and Zener voltage is fixed.
+[51:03] And R is also fixed.
+[51:05] But because VI is
+[51:07] constant this current is constant.
+[51:09] Now how much current
+[51:11] will go in the load?
+[51:13] See.
+[51:15] The voltage across the load is VZ.
+[51:17] Zener diode is parallel to the load.
+[51:19] It should be parallel. If
+[51:21] you are fixing the load voltage
+[51:23] you have to fix the load voltage
+[51:25] then you will give a parallel connection
+[51:27] of the series.
+[51:29] Do you understand? You have to give it parallel.
+[51:31] If it fixes the voltage
+[51:33] and I have to fix the load voltage
+[51:35] then they must be connected in
+[51:37] parallel.
+[51:39] So you will say IL will be
+[51:41] VZ by RL.
+[51:43] Now what is your IZ?
+[51:45] This comes from KCL.
+[51:47] I minus IL.
+[51:49] So here all the
+[51:51] things are constant.
+[51:53] All the things are constant
+[51:55] because the input
+[51:57] is changing
+[51:59] and the load resistance is not there.
+[52:01] So I have not left
+[52:03] any variable. Everything is constant.
+[52:05] If I tell you
+[52:07] to remove the power dissipation
+[52:09] of Zener diode
+[52:11] if I tell you
+[52:13] to remove the power dissipation
+[52:15] of Zener diode
+[52:17] then
+[52:19] okay
+[52:21] Okay
+[52:23] So what will you say?
+[52:25] Sir it will be
+[52:27] VZ
+[52:29] into IZ
+[52:31] VZ into IZ.
+[52:33] Okay.
+[52:35] Now if VI is variable
+[52:37] and RL is fixed. Listen carefully.
+[52:39] VI is variable and RL is fixed.
+[52:41] So the I current
+[52:43] you wrote
+[52:45] VI.
+[52:47] This is variable
+[52:49] by becoming VI's variable.
+[52:51] If
+[52:53] VI is varying
+[52:55] then it will have a minimum value
+[52:57] and maximum value.
+[52:59] Think about it.
+[53:01] VI has a minimum
+[53:03] and a maximum value.
+[53:05] So I's
+[53:07] minimum value will come from
+[53:09] VI's minimum and
+[53:11] I's maximum value
+[53:13] will come from VI's maximum
+[53:15] value.
+[53:17] But
+[53:19] because my kids are RL fixed
+[53:21] listen carefully
+[53:23] RL because it is fixed.
+[53:25] So IL was
+[53:27] VZ by RL.
+[53:29] This is fixed.
+[53:31] Now you say this in KCL
+[53:33] son. In KCL
+[53:35] you say that the current of Zener
+[53:37] is I minus
+[53:39] I L
+[53:41] I L.
+[53:43] Jayesh said that
+[53:45] if the current of the load changes
+[53:47] then VZ will change.
+[53:49] Then when the Zener will take the resistance
+[53:51] and run.
+[53:53] Now I am going as an ideal Zener diode
+[53:55] whose voltage is fixed.
+[53:57] I told you that see here.
+[53:59] It is lost in the circuit.
+[54:01] I told you that when IZ will change
+[54:03] then VZ will change.
+[54:05] Why does IZ change? Because IL changes.
+[54:07] IL and IZ are parallel
+[54:09] if it takes more current then Zener will decrease.
+[54:11] If the load takes less
+[54:13] then Zener will increase.
+[54:15] So IZ changes by changing the load current.
+[54:17] But VZ will only change if
+[54:19] I consider this resistance.
+[54:21] I am taking this model where Zener is behaving
+[54:23] like just a battery.
+[54:25] So its voltage is fixed.
+[54:27] Okay. That is why I am
+[54:29] taking the voltage as fixed.
+[54:31] Now your IL is fixed here.
+[54:33] Now I say
+[54:35] what will be IZ from KCL
+[54:37] it will be I-IL.
+[54:39] In which
+[54:41] I is varying
+[54:43] and IL is fixed.
+[54:45] So if I say
+[54:47] what will be the minimum current of Zener
+[54:49] I-IL
+[54:51] and it should be bigger
+[54:53] than Zener's
+[54:55] NE current.
+[54:57] If you want to run in breakdown
+[54:59] then it must be greater than the NE current
+[55:01] because Zener
+[55:03] to work in breakdown
+[55:05] the minimum current
+[55:07] that is the NE current
+[55:09] the minimum current
+[55:11] should be higher than that
+[55:13] and IZ maximum
+[55:17] what will be
+[55:19] Imax
+[55:21] minus IL.
+[55:23] Now I say
+[55:25] that the rating of Zener diode
+[55:27] will be
+[55:31] rating of
+[55:33] Zener diode
+[55:37] should be
+[55:39] greater than
+[55:41] VZ into IZ maximum.
+[55:43] Means
+[55:45] if maximum 5 ampere current
+[55:47] comes in Zener
+[55:49] consider this is the voltage of 5 volts
+[55:51] and this is the maximum
+[55:53] current of 5 ampere
+[55:55] that is 25 watt
+[55:57] then you will buy Zener diode
+[55:59] whose rating is more than 25
+[56:01] because the maximum power
+[56:03] is 25 in the circuit
+[56:05] so to be safe
+[56:07] you will have to buy Zener
+[56:09] which has the rating
+[56:11] more than the maximum power
+[56:13] dissipation.
+[56:15] Do you understand?
+[56:17] You will buy Zener diode
+[56:19] of the maximum power dissipation
+[56:21] so that it is safe
+[56:23] and do you understand
+[56:25] once you are asked in the gate
+[56:27] listen carefully
+[56:29] rating of Zener diode
+[56:31] minimum rating
+[56:33] minimum rating
+[56:35] so many children
+[56:37] thought that minimum rating
+[56:39] means not minimum current
+[56:41] it will be
+[56:43] VZ IZ max
+[56:45] maximum power dissipation
+[56:47] and at least bring
+[56:49] the same rating
+[56:51] it will be more than that
+[56:53] no problem but at least bring
+[56:55] otherwise my Zener diode will burn
+[56:57] when there will be high current
+[56:59] Do you understand?
+[57:01] Do you understand this question?
+[57:03] children came in the gate with minimum
+[57:05] because you people don't think logically
+[57:07] what do you think?
+[57:09] put minimum here
+[57:11] maximum here
+[57:13] this will also tell the child of 10th
+[57:15] put your mind a little
+[57:17] this is what I am saying
+[57:19] yesterday also a child was saying
+[57:21] that if you say minimum then take minimum
+[57:23] it doesn't happen
+[57:25] you have to think conceptually
+[57:27] ok
+[57:29] it is clear
+[57:31] if maximum rating
+[57:33] then there is no limit of maximum
+[57:35] you think this is good
+[57:37] assume that you have spent
+[57:39] 10,000 in a month
+[57:41] so you will get 11,000 also
+[57:43] will get 12,000 also
+[57:45] but at least you need 10,000
+[57:47] right? you need 10,000
+[57:49] now I say how much maximum you want
+[57:51] so there is nothing maximum
+[57:53] do you understand? but how much is minimum
+[57:55] 10,000
+[57:57] I say if your maximum expense is of 10,000
+[57:59] then your minimum expense
+[58:01] should be 10,000
+[58:03] then your maximum expense
+[58:05] should be your minimum salary
+[58:07] then you people will be able to save
+[58:09] and how much maximum salary
+[58:11] should be? there is no limit
+[58:13] as much as you get it is good
+[58:15] do you understand?
+[58:17] when you buy Zener diode from market
+[58:19] with safety purpose
+[58:21] you will buy more rating than power
+[58:23] so that it never burns
+[58:25] how much you will buy
+[58:27] how much money you have in your pocket
+[58:29] if you have 25 W maximum power
+[58:31] if you buy 50 W
+[58:33] then you will get some expense
+[58:35] 75 W will be more expensive
+[58:37] 100 W will be more expensive
+[58:39] so the affordability of which
+[58:41] you will buy
+[58:43] now next is VI fix
+[58:45] but RL variable
+[58:47] I think it is wrong
+[58:49] RL variable
+[58:51] now let's vary RL
+[58:55] now see what will happen
+[58:57] by fixing VI
+[58:59] I
+[59:01] VI minus
+[59:03] VZ by R
+[59:05] this is fixed
+[59:09] okay
+[59:11] this I is fixed
+[59:13] now I say IL
+[59:15] VZ by
+[59:17] RL
+[59:19] because RL is variable
+[59:23] okay
+[59:25] so I say
+[59:27] what will be the maximum value of IL
+[59:29] that will happen
+[59:31] when RL will be minimum
+[59:33] do you understand
+[59:35] when it will be minimum in denominator
+[59:37] then IL will be maximum
+[59:43] and when will be
+[59:45] when will be
+[59:47] when RL
+[59:51] will be maximum
+[59:53] when RL will be maximum
+[59:55] then IL will be minimum
+[59:57] now IZ
+[59:59] you know
+[60:01] I minus IL
+[60:03] I is fixed
+[60:05] so I say
+[60:07] IZ minimum
+[60:09] then it will come when the load will be maximum
+[60:11] because when you subtract the maximum
+[60:13] you will get minimum
+[60:15] this must be greater than IZK
+[60:17] and
+[60:19] when will be the maximum current of IZ
+[60:21] when the load will be minimum
+[60:25] understood
+[60:29] again you will say
+[60:31] rating must be greater than VZ
+[60:33] into IZ maximum
+[60:35] so it is clear
+[60:37] what type you have to think
+[60:39] if I ask you this
+[60:41] minimum
+[60:43] power rating
+[60:45] of Zener diode
+[60:49] if there is any doubt
+[60:51] then I will show
+[60:53] how to make a question
+[60:55] the concept is very simple
+[60:57] if you know the model of Zener diode
+[60:59] then anyone can make it
+[61:01] that is you will make a mistake
+[61:03] in min max
+[61:05] so keep this in mind
+[61:07] don't think mathematically
+[61:09] think logically
+[61:11] this condition
+[61:13] is most important
+[61:15] in every condition
+[61:17] Zener should be more than
+[61:19] current or not
+[61:21] otherwise it will not work
+[61:23] like voltage regulator
+[61:25] Zener diode works only
+[61:27] like voltage regulator
+[61:29] when it is more than
+[61:31] current or not
+[61:33] when it is more than
+[61:35] current minimum
+[61:37] it works
+[61:39] so you have to find the worst case situation
+[61:41] in which situation Zener's current
+[61:43] will be minimum
+[61:45] in that situation
+[61:47] it should be more than current or not
+[61:49] so if you find the worst case
+[61:51] and at that time Zener's current
+[61:53] is more than current
+[61:55] then you can say that your Zener diode
+[61:57] will always work in breakdown
+[61:59] understood
+[62:01] if someone asks what is the maximum R
+[62:03] what is the minimum this what is that
+[62:05] Zener diode works
+[62:07] in the breakdown region
+[62:09] then check the worst situation
+[62:11] check such situation
+[62:13] where the lowest current can go in Zener
+[62:15] the lowest current
+[62:17] can go in Zener
+[62:19] if the lowest current is going in Zener
+[62:21] even at that time
+[62:23] it is more than current then you are safe
+[62:25] you are safe
+[62:27] and the correct answer is
+[62:29] if Zener's current
+[62:31] is less than minimum current
+[62:33] then it will work
+[62:35] but if it is not in the breakdown
+[62:37] then you will treat it as an open circuit
+[62:39] yes Rudresh, why do you have to apply PYQ
+[62:41] you can start
+[62:43] Pushpendra is saying give me the time
+[62:45] you will see one function in the video of YouTube
+[62:47] do it a little back sir
+[62:49] and you will see that we have traveled
+[62:51] in the past
+[62:53] where I am telling you all things again
+[62:55] okay
+[62:59] Aman is saying that which subject should I give
+[63:01] I don't need anything other than electrical
+[63:03] then save Rs. 1700
+[63:05] give only electrical
+[63:07] do IN or ECE
+[63:09] you have to do extra subject and syllabus
+[63:11] otherwise there is no point in giving
+[63:13] okay
+[63:15] ECE's extra syllabus is more than electrical
+[63:17] IN is a little less
+[63:19] okay, extra is in both
+[63:23] since IIT has allowed
+[63:25] children have started thinking that it is mandatory
+[63:27] to give only two
+[63:29] two
+[63:31] you will not be able to do one exam
+[63:33] of gate
+[63:35] you keep crying
+[63:37] do something
+[63:39] do this, do that, do that
+[63:41] you will not be able to do one exam
+[63:43] and you have a dream that you will be able to fill two forms
+[63:45] Rajnikan is not a student
+[63:55] let's make
+[63:57] a zero zener diode
+[63:59] when we say directly 6V
+[64:01] i.e. if you are not talking about resistance
+[64:03] replace it like an ideal battery
+[64:05] has a zero zener resistance
+[64:07] see it has given a bole
+[64:09] it has also given a bole
+[64:11] that it has zero resistance
+[64:13] and NE current of 5 milli ampere
+[64:15] it has given you a minimum current
+[64:19] find the minimum value of R
+[64:21] such that voltage across the diode
+[64:23] does not fall
+[64:25] all below 6V
+[64:27] i.e. it should not go below 6V
+[64:29] it should not go below 6V
+[64:31] i.e.
+[64:33] always
+[64:35] break down
+[64:37] the minimum value of R
+[64:39] is saying
+[64:41] who is R?
+[64:43] now do some analysis
+[64:45] before solving
+[64:47] if R's value is minimum
+[64:49] then the load current will be maximum
+[64:51] tell me
+[64:53] if R's value is minimum
+[64:55] then the load current will be maximum
+[64:57] if the load current is maximum
+[64:59] then automatically
+[65:01] the zener current will be less
+[65:03] but the zener current
+[65:05] should never be less than the current
+[65:07] i.e. NE current
+[65:09] what am I saying?
+[65:11] I am saying
+[65:13] if R's value is minimum
+[65:15] then
+[65:17] iL's value will be maximum
+[65:19] in such a situation
+[65:21] the zener current will be minimum
+[65:23] because there is a divide in 2
+[65:25] if the load takes maximum
+[65:27] then the zener will be saved
+[65:29] the minimum will go
+[65:31] but still
+[65:33] we want
+[65:35] the zener current to be more than NE
+[65:37] current
+[65:39] now see
+[65:41] take out the first current from here
+[65:45] the i's value will be fixed
+[65:47] 10-6.50
+[65:49] 4x50
+[65:51] 4x508
+[65:53] 80mA
+[65:57] now I am saying
+[65:59] the minimum current of the zener
+[66:01] the least current
+[66:03] can be 5mA
+[66:05] equal to NE current
+[66:07] so how much current can be
+[66:09] maximum in the load
+[66:11] 80-5
+[66:13] if the zener is given 5
+[66:15] as much as it needs
+[66:17] now if I ask you
+[66:19] R then you will say
+[66:21] 6x
+[66:23] iL 6x
+[66:25] 0.075
+[66:27] 0.75x4
+[66:29] 3
+[66:31] 8
+[66:33] 80
+[66:35] the answer will be 80
+[66:37] O
+[66:39] how to think
+[66:41] the question of zener is not long
+[66:43] if you understand the question
+[66:45] I believe
+[66:47] that you can crack the question
+[66:49] in 1-1.5 minutes
+[66:51] and you get it in the gate
+[66:53] for almost 2-3 minutes
+[66:55] so if the question is being cracked
+[66:57] then first 20-30 seconds
+[66:59] you can absorb it
+[67:01] analyze it
+[67:03] then start the calculation
+[67:05] if you calculate it
+[67:07] then it will be a mistake
+[67:09] here it is compulsory
+[67:11] it happens with the kids
+[67:13] see the next one
+[67:17] same data is given
+[67:19] but maximum power dissipation is given
+[67:39] here it is 9V
+[67:41] if you are not able to see
+[67:43] 9V
+[67:45] 50 ohm
+[67:47] 6
+[67:49] okay
+[67:57] yes I say the green color
+[67:59] instead of green
+[68:01] use red and blue
+[68:07] come on make it
+[68:09] I will make sure
+[68:13] now in the middle
+[68:15] Josephine was messaging
+[68:17] that
+[68:19] when will the joint initiative come
+[68:21] you will be patient
+[68:23] when Dhande sir can come
+[68:25] then we will do something
+[68:27] we will come and sleep
+[68:29] we will do it together
+[68:31] we will come for free initiative
+[68:33] but
+[68:35] you have to be patient
+[68:37] you will have to do everything
+[68:41] son this thing
+[68:43] you can better tell
+[68:45] tell one thing
+[68:47] if any person takes some decision
+[68:49] then the other person will not be completely clear
+[68:51] you are understanding A to Z
+[68:53] I can have an opinion
+[68:55] I can have an opinion
+[68:57] but if you look at things from their perspective
+[68:59] then you will understand more
+[69:01] you understand
+[69:03] so if you look at it from any teacher
+[69:05] if every teacher is there
+[69:07] then eventually for the child
+[69:09] the people whom we have made
+[69:11] will reach anywhere in life
+[69:13] so eventually when all of you
+[69:15] are there for us
+[69:17] then you should never
+[69:19] talk to the teacher
+[69:21] you should know things
+[69:23] you should understand
+[69:25] this is a very good relationship
+[69:27] any third person
+[69:29] if I say something today
+[69:31] then why should I create a doubt
+[69:33] why should I pass some information
+[69:35] so that tomorrow Mr. Vishal
+[69:37] gets hurt or someone gets hurt
+[69:39] and this is not wrong about me
+[69:41] you talk once
+[69:43] I believe that whatever decision you take
+[69:45] they will definitely explain you
+[69:47] they will tell you everything well
+[69:49] because they have done it since today
+[69:51] what is the difference
+[69:57] 4 subjects are completed
+[69:59] 5th is analog
+[70:01] can I go for complete syllabus
+[70:03] Jayesh you should
+[70:05] do multiple subjects at a time
+[70:07] if you do one subject
+[70:09] then there will be a problem
+[70:11] now see
+[70:13] here it is said to load the minimum and maximum
+[70:15] first of all
+[70:17] the power dissipation of the Zener
+[70:19] will result in IZ max
+[70:21] and
+[70:23] let me tell you one thing
+[70:25] I am trying my best that I can
+[70:27] but I will not let the IC kids
+[70:29] get hurt
+[70:31] even if I study more
+[70:33] obviously my electrical background
+[70:35] but keep in mind
+[70:37] that I will
+[70:39] consider the IC kids
+[70:41] to be the same
+[70:43] they will not get hurt
+[70:45] a single IC kid
+[70:47] okay
+[70:49] so
+[70:57] now he is asking
+[70:59] how much maximum and minimum
+[71:01] current can come
+[71:03] so how much will it come
+[71:05] 9
+[71:07] minus 6
+[71:09] by 50
+[71:11] 3
+[71:13] by 50
+[71:15] so 60 milli ampere came
+[71:19] now I
+[71:21] L minimum
+[71:23] how much current will go in the load
+[71:25] the minimum of the load will be
+[71:27] maximum in the Zener
+[71:29] if the total current is constant
+[71:31] then if Zener takes the maximum
+[71:33] then the minimum will go in the load
+[71:35] saved
+[71:37] and if Zener takes the minimum
+[71:39] then it will go more in the load
+[71:43] okay
+[71:49] so IZ minus 5
+[71:53] okay
+[71:55] so 10 or 55
+[71:57] very good
+[71:59] this means you are starting to understand
+[72:01] the questions
+[72:03] next
+[72:05] the Zener diode regulator shown in the figure
+[72:07] has Zener voltage 5.8 volt
+[72:09] at a knee current
+[72:11] 0.5 milli ampere
+[72:13] find the maximum value of IEL
+[72:15] that can be drawn from this circuit
+[72:17] ensuring proper fluctuation
+[72:19] when V I varies
+[72:21] between 20 and 30
+[72:23] so see
+[72:25] this is 1000 ohm
+[72:29] 5.8
+[72:31] volt is said
+[72:33] okay and this is V I
+[72:35] now V I is varying
+[72:37] from 20 to 30
+[72:39] the minimum current of Zener
+[72:41] 0.5 milli ampere
+[72:43] now you have to tell
+[72:45] how much maximum IEL can be
+[72:47] IEL is going in the load
+[72:49] IEL is going in the load
+[72:57] IEL is going in the load
+[72:59] IEL is going in the load
+[73:03] yes
+[73:05] now if you are asking about dark night
+[73:07] how to prepare the signal
+[73:09] there is a problem in the conceptual question
+[73:11] see there is no conceptual in the signal
+[73:13] you are saying that
+[73:15] where you have to do analysis
+[73:17] without any numerical value
+[73:19] otherwise the signal always comes
+[73:21] analytical
+[73:23] whatever you are reading in transforms
+[73:25] whatever you are reading about LTI system
+[73:27] you have to apply those things
+[73:29] conceptually
+[73:31] see there is one way
+[73:33] how to read the signal
+[73:35] no matter how much you read
+[73:37] unless you start applying things
+[73:39] your concept will not be clear
+[73:41] now see
+[73:43] what will come in our mind
+[73:45] that the maximum current going in the load
+[73:47] should be for maximum voltage
+[73:49] right?
+[73:51] this is what you will think
+[73:53] maximum voltage should be there
+[73:55] but I had told you one thing
+[73:57] analyze worst case
+[73:59] analyze
+[74:01] worst case
+[74:03] when will be the worst case
+[74:05] when the supply voltage
+[74:07] will be minimum
+[74:09] okay?
+[74:11] now I will explain you
+[74:13] the whole question
+[74:15] don't worry I will tell you
+[74:17] the answer you have asked
+[74:19] why is it wrong
+[74:21] so what will be I?
+[74:23] 20-5.8
+[74:25] and this is what I had said
+[74:27] this is where you will get stuck
+[74:29] so this will come
+[74:31] 14.2 milli ampere
+[74:33] now I will say
+[74:35] I L maximum
+[74:37] I-IZ minimum
+[74:41] minimum current
+[74:43] not current
+[74:47] 13.7
+[74:49] this should be the answer
+[74:51] you will get 23.7
+[74:53] do you know how?
+[74:55] you must have used 30
+[74:57] so this will be 24.2
+[74:59] your answer will be 23.7
+[75:01] now why is it wrong
+[75:03] okay? now why is it wrong
+[75:05] this is also wrong
+[75:07] because
+[75:09] suppose you took 23.7 in load
+[75:11] you took 23.7
+[75:13] you can take load
+[75:15] 23.7
+[75:17] suppose the VI has gone
+[75:19] the supply is 14.2
+[75:21] the VI has gone
+[75:23] the supply is 14.2
+[75:25] what is the load
+[75:27] 23.7
+[75:29] will Zener get 0.5?
+[75:31] no
+[75:33] Zener will get forward bias
+[75:35] will it not remain in breakdown
+[75:37] my brother
+[75:39] it will not remain in breakdown
+[75:41] so always see that
+[75:43] Zener should remain in breakdown
+[75:45] if you keep 23.7
+[75:47] then when the value of VI
+[75:49] will decrease
+[75:51] it will no longer get the minimum
+[75:53] current
+[75:55] okay it will no longer get the
+[75:57] minimum current
+[75:59] because load is independent
+[76:01] if the VI is 20
+[76:03] then the load current will also be less
+[76:05] load is independent
+[76:07] that will be 5.8
+[76:09] upon RL
+[76:11] that does not mean
+[76:13] how much is coming from supply
+[76:15] if the load asks for 23.7
+[76:17] and if it earns from supply
+[76:19] then Zener will not remain
+[76:21] in breakdown
+[76:23] so keep this term in mind
+[76:25] see the worst case
+[76:27] always think how Zener
+[76:29] can get minimum
+[76:31] if Zener's current is minimum
+[76:33] even then
+[76:35] even then it is regulating
+[76:37] if it is in breakdown
+[76:39] then you will always get
+[76:41] regulated output
+[76:43] this question was very controversial
+[76:45] when it came
+[76:47] there was a lot of debate
+[76:49] but logically think
+[76:51] not only mathematically
+[76:53] you people did the mistake
+[76:55] that you think mathematically
+[76:57] think in deep
+[76:59] come on next
+[77:09] come on do it quickly
+[77:11] do it quickly
+[77:13] just make it a little round
+[77:15] it comes horizontally
+[77:17] don't think that the circuit has changed
+[77:19] the circuit is the same
+[77:23] son see as much as I am teaching
+[77:25] this much is enough for you
+[77:27] what you have to do
+[77:29] the one who is preparing the exam
+[77:31] why put the PYQ
+[77:37] son now
+[77:39] see the domain is good
+[77:41] physical design and analog design
+[77:43] because the electronics industry
+[77:45] the designing team is there
+[77:47] that designs are different kind of devices
+[77:49] that designs are different kind of circuit
+[77:51] so you are getting a job on device level
+[77:53] and it is the
+[77:55] one way or the other
+[77:57] deepest job
+[77:59] so if you are interested then go for it
+[78:01] scope is good but it is also important
+[78:03] to be interested in it because sometimes
+[78:05] things can be boring
+[78:07] things can look very stagnant
+[78:09] it will require a lot of hard work
+[78:11] and for this
+[78:13] the person should be there
+[78:15] the interest should be there
+[78:17] the answer is
+[78:19] what did you say
+[78:21] the minimum current of the designer
+[78:23] is 10 milli ampere
+[78:25] you need 5 volts of RL
+[78:27] across
+[78:29] how much RL you have to take
+[78:31] the minimum RL means
+[78:33] that the I load will be your I max
+[78:37] okay
+[78:39] now I say how much I will go from here
+[78:43] I
+[78:45] it will be simple I 10-5
+[78:47] by 100
+[78:51] so this is 50 milli ampere
+[78:55] now the current of the designer
+[78:57] take the minimum 10 milli ampere
+[78:59] okay
+[79:01] so the maximum will go in the load
+[79:03] maximum will go
+[79:05] maximum in the load
+[79:07] I L max is
+[79:09] I-Iz min
+[79:13] that is 40 milli ampere
+[79:17] now if the maximum current is going in the load
+[79:19] then the resistance will be
+[79:21] minimum
+[79:23] that is 5 by 40
+[79:27] so 5000 by 40
+[79:29] so 125 ohm
+[79:31] okay 125 ohm
+[79:33] now the question is
+[79:35] minimum power rating
+[79:37] the meaning of minimum power rating
+[79:39] is that in the zener
+[79:41] you have to see the maximum current
+[79:43] I say in the zener
+[79:45] the maximum current will be
+[79:47] when you remove the load
+[79:49] then the
+[79:51] current will go in the zener
+[79:53] when you will
+[79:55] infinity to the RL
+[79:57] when you will infinity to the RL
+[79:59] then the current will go in the zener
+[80:01] then the power rating
+[80:03] should be greater than equal to
+[80:05] 5 into
+[80:07] 50 milli ampere
+[80:09] 250 milli watt
+[80:11] okay
+[80:13] so the minimum power rating will come
+[80:15] 250 milli watt
+[80:17] very good
+[80:19] I am seeing that many children have
+[80:21] got the correct answer
+[80:23] and do you know in gate 2013
+[80:25] okay
+[80:27] the question came in gate 2013
+[80:29] at that time I was not going to explain
+[80:31] so I did the same
+[80:33] as you might have thought that
+[80:35] the minimum power rating
+[80:37] means the minimum current was 25 milli watt
+[80:39] 5 into sorry 50 milli watt
+[80:41] 5 into 10 milli ampere
+[80:43] think logically
+[80:45] it is very easy to calculate
+[80:47] any subject
+[80:49] you get a tough question
+[80:51] so it is very easy
+[80:53] but only a little child needs
+[80:55] critical thinking
+[80:57] see the next
+[80:59] so the question that
+[81:01] has been wrong in my gate
+[81:03] I still remember
+[81:07] any mock interview
+[81:09] preparation for HPSC
+[81:11] in this type of country
+[81:13] there are many
+[81:15] exams in the country
+[81:17] now everyone
+[81:19] can not do mock interview
+[81:21] HPSC lecture R
+[81:23] Polytechnic lecture R
+[81:25] BPSC
+[81:27] UPRVUNL
+[81:29] just keep your knowledge
+[81:31] on top
+[81:33] study about that job
+[81:35] and talk confidently
+[81:37] interview is nothing
+[81:39] it is not a paper
+[81:41] it is a pant shirt
+[81:43] everything will be checked
+[81:45] then I will ask you puzzles
+[81:47] mind bending questions
+[81:49] this is all in UPSC
+[81:51] except UPSC
+[81:53] any interview is not that difficult
+[81:55] let's take engineering services after UPSC
+[81:57] because that is also UPSC
+[81:59] civil service and engineering services
+[82:01] but the rest of the country's interviews are not that good
+[82:03] come on Abhinav
+[82:11] very good
+[82:13] your interview is cleared
+[82:17] and the most interesting thing is
+[82:19] when you get compliments in electronics
+[82:21] because now everyone knows
+[82:23] machine power, steam, power electronics
+[82:25] I have given it on YouTube
+[82:27] children know content quality
+[82:29] and I believe that any institute
+[82:31] must be studying somewhere
+[82:33] but once the electrical child
+[82:35] must have seen my video
+[82:37] but when you
+[82:39] like analog and digital
+[82:41] then it is a real victory
+[82:43] where to prepare the signal
+[82:45] it is read on this channel
+[82:47] see
+[82:49] let me ask you a question
+[82:51] I have not even read
+[82:53] 5V Zener diode
+[82:55] which is used to regulate the voltage
+[82:57] across the load resistance
+[82:59] which is written as S
+[83:01] this is 5V
+[83:03] input is an unregulated voltage
+[83:05] with a minimum value
+[83:07] 6V maximum 8V
+[83:09] RS is equal to 6 ohm
+[83:11] maximum power dissipation
+[83:13] 2.5W
+[83:15] Zener diode to be ideal
+[83:17] minimum R0
+[83:19] what does minimum R0 mean
+[83:21] minimum R0 means
+[83:23] maximum current in the load
+[83:29] minimum is down to maximum
+[83:47] now let me ask you
+[83:49] to do the worst case analysis
+[83:51] in the worst case analysis
+[83:53] even the Zener should get
+[83:55] minimum-room zero current
+[83:57] For the first case analysis, if you take i less than or less, then 6-5 by 6 ohm, then 1 by 6 ampere.
+[84:07] How much is the minimum current of the zener? 0.
+[84:15] So how much is il max? 1 by 6 minus 0.
+[84:21] 1 by 6 ampere, then how much is r0 here?
+[84:27] r0 minimum 5 upon 1 by 6 30 ohm.
+[84:35] If you have the light, then you have to keep the minimum resistance 30 ohm.
+[84:43] Clear? You have to keep 30 ohm.
+[84:49] Clear? How to think of the worst case?
+[84:53] Now assume that you have i z maximum from 2.5 here.
+[85:09] 0.5 ampere.
+[85:11] And see i z maximum, see 1 i maximum, i maximum 8 minus 5 by 6, this is also 0.5.
+[85:21] So are they matching? This means that if you do this resistance infinity, and the maximum current comes from here and goes into the zener, then it will not work.
+[85:30] Clear? See here the maximum is 8 minus 5 by 6, it will be 0.5 and its maximum current is 0.5.
+[85:39] That means if you keep r0 infinity, the current of the load is zero, then the zener will not work.
+[85:45] So the maximum limit is also satisfying.
+[85:49] Because this is the minimum resistance 30, you can take anything above 30.
+[85:54] 40, 50, 60, 100, infinity, you can take anything.
+[85:58] So I am saying that if you keep r0 infinity, then this zener will not work.
+[86:02] Because the maximum current will be 0.5 and its maximum limit is 0.5 only.
+[86:07] Sir, you are not getting maths on this channel.
+[86:10] If you have it, then it is Vishal sir's engineering mathematics.
+[86:13] If you search, then you will get everything.
+[86:16] God also gets it.
+[86:18] We are talking about the playlist of maths.
+[86:22] Do you want to be an expert faculty of Kaur?
+[86:28] Look, there is a problem in college and school.
+[86:32] There is no money in all these things.
+[86:34] Let me tell you the truth.
+[86:35] There is no special salary for any teacher.
+[86:38] And the issue of gate, the state of technical education in our country.
+[86:43] So right now is not the right time to enter into teaching domain.
+[86:47] Which I am telling you an honest approach.
+[86:49] You become an expert in Kaur.
+[86:51] You do MTech in Kaur.
+[86:52] Do more degree in an industry.
+[86:54] And whenever the time is right, you can always enter into teaching.
+[87:05] Belong to a good college placements are going on.
+[87:08] Partha depends on what you want in life.
+[87:11] If you want a good job in life, a challenging job is a priority.
+[87:15] And if you want a stable life where you can easily earn, then the public sector should leave you a placement.
+[87:23] Now you won't be able to walk with a laddu in both your hands.
+[87:26] Current through the Zena diode.
+[87:28] Now you are seeing that the resistance of the Zena diode is also given.
+[87:31] So the resistance is also given here, 0.1.
+[87:35] This is given as 3.5.
+[87:38] So I say that when both are parallel, then 3.5 is equal to 3.3 plus IZ into 0.1.
+[87:53] So how much is IZ?
+[87:55] 2 milli ampere is given.
+[87:59] So the answer will be C.
+[88:01] Isn't it easy?
+[88:04] Teaching line has less workload and higher salary than IAS officer.
+[88:11] You wish.
+[88:12] The workload in the teaching line is less.
+[88:15] I have been studying for 6 hours from 7 am to 4 pm.
+[88:21] Now this is your assignment.
+[88:23] I will discuss this tomorrow and I will also bring some questions from my side.
+[88:28] So we will wind up the diode tomorrow.
+[88:31] Then I am giving off Sunday.
+[88:33] If I am giving off Sunday, then whatever revision your child has, do it on Sunday.
+[88:37] And we will start BJT from Monday.
+[88:39] Okay?
+[88:41] It is easy to say.
+[88:43] Teaching is very good.
+[88:45] It should be easy.
+[88:47] Who wants to be tough in life?
+[88:48] Look at this link.
+[88:50] Why will you get analog PYQ here?
+[88:53] Because the concept of the diode has been completed.
+[88:55] So why can you use the diode PYQ here?
+[88:58] Okay?
+[88:59] And apart from this, if you join the academy right now, then you will get 20% off.
+[89:04] So you will get 20% off here.
+[89:07] It is all in the subscription.
+[89:09] Whether it is plus or iconic, whatever the duration of the month, you will get 20% off.
+[89:15] What do you have to do?
+[89:17] You just have to apply ankit ESE code and you have to join the academy.
+[89:22] Okay?
+[89:24] And if you join the academy, then you have two subscriptions.
+[89:28] Plus and iconic, you get top teacher in both.
+[89:32] Okay?
+[89:33] You get digital notes uploaded on the app.
+[89:36] You get test series.
+[89:38] But what is extra in iconic?
+[89:40] Extra is customized doubt solving.
+[89:42] We will make a video solution for any doubt in the new question.
+[89:46] You will get printed notes.
+[89:48] You will get 1 to 1 mentorship.
+[89:50] You will get strategy and study plan.
+[89:52] Open house sessions are interactive.
+[89:55] You can talk in that.
+[89:57] Okay?
+[89:58] And what do you have to do?
+[89:59] You just have to decide the duration.
+[90:01] You have to decide the plan.
+[90:03] And you have to apply the code on the time of payment.
+[90:05] Ankit ESE to get 20% off.
+[90:08] After this, look at the results.
+[90:10] Look at the results.
+[90:11] We have produced very good results.
+[90:13] And this year, I am giving you one guarantee.
+[90:15] We will produce better than this.
+[90:17] We will also produce better results than this.
+[90:20] Because personally, me as a teacher, I live for these results.
+[90:24] Not only in top 10, top 100, top 500 for every child.
+[90:28] Because in the end, if the child has achieved his goal,
+[90:30] then he is a successful teacher.
+[90:32] Otherwise, a teacher is unsuccessful.
+[90:34] Okay?
+[90:35] Yes, son, I am talking about the test series of Unacademy.
+[90:37] I will try to activate it again.
+[90:39] Please answer this.
+[90:43] And if you join Unacademy, it is a financial issue.
+[90:46] You can go to EMI.
+[90:48] EMI is approved in just 2 hours.
+[90:50] You can pay monthly and monthly fees.
+[90:52] There will be no interest in it.
+[90:54] At least, give the payment card of the paperwork.
+[90:56] Give it to any person in the family.
+[90:58] The person who is taking the salary.
+[91:00] Because the bank gives them EMI.
+[91:02] And as I told you, son, 20% off is going on.
+[91:05] Even on distance learning program is going on.
+[91:08] Okay?
+[91:09] This is the latest batch, son.
+[91:10] Manish sir has started the network.
+[91:12] I have started the power system.
+[91:13] And this is my telegram channel.
+[91:15] Stay connected so that I don't miss any class.
+[91:17] And this is the contact number of my team.
+[91:19] Where you can call for any sort of help.
+[91:22] Any sort of guidance.
+[91:23] Plus, press the children of Iconic 1.
+[91:25] And press the children of YouTube 2.
+[91:27] And if you want the PDF of this session,
+[91:29] then go to the Homepage of Unacademy app.
+[91:31] You will see the community at the bottom.
+[91:33] Go to that.
+[91:34] Then click there and click on Discover.
+[91:37] I will get it.
+[91:38] You will get all my PDF there.
+[91:39] Okay?
+[91:40] So, thank you everyone.
+[91:42] Giten, son.
+[91:43] Till the end of this month, everyone will start teaching.
+[91:46] Many courses will be launched for you.
+[91:48] Don't worry at all.
+[91:50] A, J, E, Gate.
+[91:52] We are collaborating in everything.
+[91:54] And you will get initiative in a very nice way.
+[91:57] Okay?
+[91:59] Son, I will launch the quick revision course of Gate.
+[92:02] We will launch it together.
+[92:03] Groupesh.
+[92:04] But what can you do now?
+[92:05] You can take a subscription of 6 months.
+[92:07] So, in 6 months, you will get all the comprehensive courses.
+[92:11] And you will get the coming crash courses.
+[92:13] Okay?
+[92:14] Don't take 6 years.
+[92:15] Take 6 months now.
+[92:18] He is saying that, son, guide like this.
+[92:20] There is a question to guide.
+[92:22] I will answer it.
+[92:23] Okay?
+[92:24] Come on.
+[92:25] Clear?
+[92:26] Take the subscription of your query of 6 months.
+[92:28] You will get all the courses in it.
+[92:30] What has happened in the past 2 years.
+[92:32] And what is going on now.
+[92:33] And you will also get the new courses.
+[92:35] Okay?
+[92:37] Abhishek, son.
+[92:38] What will we provide on YouTube about all these things?
+[92:41] What will be the new initiatives?
+[92:42] We will do an event very soon.
+[92:43] But when there is an event, there should be a record-breaking attendance.
+[92:47] When you will get to know how Unacademy and Gate Academy teachers are bringing initiatives for you.
+[92:52] If they are not there, then there is no initiative.
+[92:54] There should be a record-breaking attendance that day.
+[92:56] Okay?
+[92:57] And Sunday will be a neemlish video public for Sunday.
+[93:00] Okay?
+[93:01] So, it will be public on Saturday.
+[93:02] It will be public till Monday.
+[93:03] Almost 48 hours.
+[93:05] And then when we will read BJT on Monday, then your video will be private again.
+[93:09] Okay?
+[93:12] Yes, Pankaj sir, study well.
+[93:14] Obviously, he is a great teacher.
+[93:16] Come on.
+[93:17] Why is the use of Blader Resistance?
+[93:19] If the regulator uses it.
+[93:21] The filter capacitor will still be charged.
+[93:24] If the filter capacitor is charged and I have touched it, then I will be shocked.
+[93:28] So, the filter capacitor is discharged by the Blader Resistance.
+[93:32] That too when you disconnect all the circuits.
+[93:35] Meaning, after the filter, there is a regulator.
+[93:37] After the regulator, there is a load.
+[93:38] You have switched off all the power.
+[93:40] Now, if you have touched the filter, then you may be shocked.
+[93:43] There is a Blader Resistance to save it.
+[93:45] Okay?
+[93:46] Come on then.
+[93:47] So, we will meet tomorrow at 11.30.
+[93:48] Tomorrow, we will see more questions on the regulator.
+[93:51] Because this is a topic, son.
+[93:53] In which you have to think a little.
+[93:57] Current brother, you are limiting the regulator.
+[94:00] You are not limiting it from your body.
+[94:02] The regulator will not work.
+[94:04] My gun, if you have touched the capacitor, then you will be shocked.
+[94:08] Understand the matter.
+[94:10] Sir, I am confused with PD and Analog Layout.
+[94:13] What should I do regarding my career growth?
+[94:15] And PD means physical design and Analog Layout.
+[94:21] So, son, look.
+[94:23] Both the scopes are good.
+[94:24] You choose anything.
+[94:26] But then again, what to do once?
+[94:27] Study their course curriculum.
+[94:29] And look, the topics and subjects in their curriculum.
+[94:33] Is that interesting to you?
+[94:35] If you like it, then you go for it.
+[94:37] Okay.
+[94:38] Now, we will meet tomorrow at 11.30.
+[94:40] We will also rest a little.
+[94:41] Because at 3 o'clock, there is a class of SSC JE.
+[94:44] There are different syllabus.
+[94:45] I am studying for the first time.
+[94:46] Illumination, Electric Heating.
+[94:48] There are so many basic things that we see on all sides.
+[94:51] But it is also fun.
+[94:52] My knowledge is increasing, the children's knowledge is also increasing.
+[94:54] Right?
+[94:55] So, those who want to study SSC JE, I am utilizing it.
+[94:58] There are 3 to 4 classes.
+[95:00] Okay.
+[95:01] Thank you. Let's crack it.

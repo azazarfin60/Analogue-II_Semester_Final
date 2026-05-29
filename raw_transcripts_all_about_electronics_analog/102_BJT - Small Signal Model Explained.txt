@@ -1,0 +1,168 @@
+Title: BJT -  Small Signal Model Explained
+URL: https://www.youtube.com/watch?v=i2t9GTAd2I0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All Abode Electronics.
+[00:16] So in this video we will learn about the small signal model of the BJT.
+[00:22] So in the previous video we have discussed that based on the magnitude of the input signal
+[00:27] we can model the BJT as either a large signal or the small signal model.
+[00:32] And then we have discussed about the large signal model of the BJT.
+[00:37] So similarly now let us understand about the small signal model.
+[00:42] But before that first of all let us understand what do we mean by the small signal and for
+[00:48] what magnitude of the input signal we can use this small signal model.
+[00:53] Now during the discussion of the large signal model we have already seen the IC versus
+[00:58] VBE curve for the BJT.
+[01:01] So let us say for some large signal voltage VBE we are getting some character current.
+[01:07] And here the subscript Q defines the biasing or the operating voltages.
+[01:13] So when we apply some voltage VBE then the character current IC can be given by this
+[01:18] expression that is IC is equal to IS times e to the power voltage VBE divided by VT.
+[01:26] Where IS is the saturation current and VT is the thermal voltage.
+[01:31] Now let us say on this large DC signal a small perturbation or the small AC signal is also
+[01:38] added.
+[01:39] Let us say this voltage is equal to delta VBE.
+[01:43] So because of this small perturbation there will also be a change in the collector current.
+[01:49] So this change in the collector current to the change in the voltage VBE can be given
+[01:54] as the transconductance.
+[01:56] And it shows how the change in the voltage VBE gets translated into the change in the
+[02:01] collector current.
+[02:04] So the unit of this transconductance is either ampere prevolved or the cements.
+[02:10] Now let us say this small perturbation which we have applied is the sinusoidal in nature.
+[02:16] That means delta VBE is equal to VEM sign omega t.
+[02:24] So because of this small perturbation let us say the total character current is equal
+[02:28] to IC dash.
+[02:30] And this IC dash can be given as IS times e to the power voltage VBE plus delta VBE
+[02:40] divided by VT.
+[02:44] Or we can say that it is equal to IS times e to the power voltage VBE divided by VT
+[02:53] where delta VBE is equal to VEM sign omega t.
+[03:05] So if you see this expression then here the collector current involves the exponential
+[03:10] term.
+[03:12] And because of that it is difficult to find the change in the collector current because
+[03:16] of the change in the voltage VBE.
+[03:19] But if we use the approximation then we can find the change in the collector current.
+[03:24] So let us see that.
+[03:27] Now if you look this expression then here first term is nothing but the collector current.
+[03:33] That means we can say that IC dash is equal to IC times e to the power delta VBE divided
+[03:43] by VT.
+[03:46] Now let us say this voltage delta VBE is very small.
+[03:52] And let us say this delta VBE divided by VT is much less than 1.
+[03:59] Now when this delta VBE is very small then we can say that we are operating in the linear
+[04:04] region of this exponential curve.
+[04:08] That means if the change in the voltage VBE is sinusoidal then the change in the collector
+[04:12] current will also be a sinusoidal.
+[04:15] And mathematically we can say that the collector current IC dash is equal to IC times 1 plus
+[04:24] delta VBE divided by VT.
+[04:29] So basically here e to the power delta VBE divided by VT is expressed as 1 plus delta
+[04:39] VBE divided by VT.
+[04:42] Because if you are aware the e to the power x can be expanded as 1 plus x plus x square
+[04:50] by 2 factorial plus so on.
+[04:53] So when this term x is very small then we can neglect the higher order terms and we can
+[04:59] approximate this e to the power x as 1 plus x.
+[05:04] So similarly when this delta VBE divided by VT is very small then we can approximate this
+[05:11] e to the power delta VBE by VT as 1 plus delta VBE divided by VT.
+[05:18] That means the total collector current IC dash is equal to IC times 1 plus delta VBE divided
+[05:24] by VT.
+[05:26] Or we can say that this collector current IC dash is equal to IC plus IC times delta VBE
+[05:36] divided by VT.
+[05:39] So this term shows the change in the collector current because of the change in the voltage
+[05:44] VBE.
+[05:45] Let us say it is equal to delta IC that means delta IC is equal to IC times delta VBE
+[05:56] divided by VT.
+[05:59] Now as we have discussed earlier this delta IC divided by delta VBE is the transconductance
+[06:07] right that means from this we can say that this transconductance GM is equal to IC
+[06:15] divided by VT.
+[06:18] And when this delta IC by delta VBE is very small then we can represent it as DIC divided
+[06:26] by VBE.
+[06:29] And in that case just by differentiating this expression we can get the value of the trans
+[06:35] conductance.
+[06:36] For example if we differentiate this collector current with respect to voltage VBE then
+[06:42] we can write it as DIC divided by DVBE is equal to IC times e to the power voltage VBE
+[06:53] divided by VT times 1 by VT.
+[06:58] And here this term is the collector current.
+[07:02] That means DIC divided by DVBE that is the transconductance is equal to IC times 1 by
+[07:10] VT.
+[07:11] So this is the expression of the transconductance.
+[07:16] And as you can see this transconductance depends on the operating point.
+[07:21] That means as the value of the collector current increases then the transconductance will
+[07:25] also increase.
+[07:27] And in fact that is also evident from the given curve.
+[07:31] So if the collector current increases then for the same change in the base emitter voltage
+[07:37] there will be a more change in the collector current.
+[07:41] Alright so once again now let us come back to this expression.
+[07:46] And as you have just discussed we can write this expression as IC plus GM times delta VBE
+[07:54] right.
+[07:55] Where here this collector current IC can be given as IS times e to the power voltage VBE
+[08:03] divided by VT.
+[08:06] So the total collector current IC dash can be given as IC plus GM times delta VBE.
+[08:15] So here the first term represents the collector current due to the DC biasing voltage VBE
+[08:22] while the second term represents the change in the collector current due to the small
+[08:26] signal.
+[08:28] So in the first term the collector current can be found using this large signal model
+[08:33] while we can find the change in the collector current by multiplying the change in the signal
+[08:38] with the transconductance.
+[08:41] So as you can see over here now we can treat these large DC signal in the small signal separately.
+[08:48] Or in other words by using the small signal approximation we can apply the principle of
+[08:53] the superposition.
+[08:56] That means during the DC analysis we can consider all the AC sources as 0 and we can find
+[09:02] the operating point.
+[09:03] Similarly for the small signal analysis we can consider all the DC sources as 0 and
+[09:09] we can find the AC response and the total response will be the summation of the individual
+[09:15] response.
+[09:17] For example here we can find the required collector current for the biasing using this DC
+[09:22] analysis and then using the small signal analysis we can find the change in the collector
+[09:28] current.
+[09:30] So now let's draw this small signal model of the BJT which can be used for the small signal
+[09:35] analysis.
+[09:37] So as we have seen so far when we apply a small perturbation delta VBE but when this base
+[09:43] and the emitter terminal then the change in the collector current IC can be given as
+[09:48] GM times delta VBE.
+[09:50] That means the change in the collector current is linearly proportional to the change in the
+[09:54] voltage VBE.
+[09:57] So in the small signal model we can represent it as a voltage control current source but
+[10:02] when this collector and the emitter terminal.
+[10:06] Now when there is a change in the collector current then there is also change in the base
+[10:10] current because as you are aware this collector current IC can be given as beta times IB.
+[10:19] That means whenever there is a change in the collector current then the change in the
+[10:23] base current delta IB can be given as delta IC divided by beta.
+[10:30] And as the base current exists then there has to have some element between this base
+[10:35] and the emitter terminal.
+[10:38] So let's find out that.
+[10:40] Now we know that the change in the collector current IC can be given as GM times delta VBE
+[10:46] right and we also know that the change in the base current can be given as delta IC
+[10:53] divided by beta.
+[10:56] That is equal to GM times delta VBE divided by beta.
+[11:03] So this expression shows when there is a change in the base emitter voltage then how
+[11:08] the base current changes and as you can see the relationship between the two is linear.
+[11:14] That means we can say that in the small signal model the resistor exists between the base
+[11:19] and the emitter terminal and let's call this resistor as the RPI.
+[11:25] So the value of this resistor RPI can be found by taking the ratio of the voltage delta
+[11:31] VBE to the delta IB.
+[11:36] So from this expression we can say that this delta VBE divided by delta IB is equal to
+[11:44] beta divided by GM and this ratio is nothing but the RPI.
+[11:52] That means the value of this resistor is equal to beta divided by GM.
+[11:58] Now here to make this representation a bit simpler let us represent the change in the
+[12:03] base emitter voltage as the VBE.
+[12:07] That means now the change in the current is equal to GM times VBE.
+[12:14] And here let's also represent this change in the current delta IC as the IC.
+[12:21] Now in general when we refer to the DC signals then they are referred by the uppercase
+[12:26] letters and similarly when we refer to the AC signals then they are referred by the
+[12:32] lower case letters.
+[12:35] For example over here this current IC represents the DC collector current while this current
+[12:41] IC represents the change in the collector current or basically it is the AC collector
+[12:47] current.
+[12:48] So considering this now the current IC can be given as GM times VBE while the base
+[12:55] current is equal to IB.
+[12:59] So the total collector current IE is the summation of this base current and the collector current.
+[13:05] So this is the small signal model of the BJT which can be used for the small signal analysis.
+[13:12] Now so far while drawing this large and the small signal model we have assumed that even
+[13:18] if there is a change in the collector to emitter voltage then there is a no change in the
+[13:23] collector current.
+[13:24] That means the collector current IC remains the constant but actually the collector current
+[13:29] does change with the change in the voltage we see.
+[13:33] So this effect is known as the early effect.
+[13:37] So in the next video we will discuss about it in detail and we will also take into account
+[13:43] this early effect in the small signal model.
+[13:46] So I hope in this video you understood the small signal model of the BJT.
+[13:51] So if you have any question or suggestion, do let me know here in the comment section
+[13:55] below.
+[13:56] If you like this video hit the like button and subscribe to the channel for more such
+[14:00] videos.

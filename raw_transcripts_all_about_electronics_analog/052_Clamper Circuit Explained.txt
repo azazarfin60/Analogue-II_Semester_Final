@@ -1,0 +1,239 @@
+Title: Clamper Circuit Explained
+URL: https://www.youtube.com/watch?v=7O3Hbkkt624
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the youtube channel All About Electronics.
+[00:16] In this video, we will learn about the Clamper Circuit.
+[00:19] A Clamper Circuit changes the DC level of the signal to the desired level and at the
+[00:25] same time, it does not change the shape of the waveform.
+[00:30] So as you can see over here, in this diagram, this Clamper Circuit shifts the entire waveform
+[00:35] upwards.
+[00:36] Or we can say that this Clamper Circuit shifts the entire waveform towards the positive
+[00:41] side.
+[00:42] So, this type of Clamper Circuit is known as the positive Clamper Circuit.
+[00:47] Similarly, if the Clamper Circuit shifts the DC level towards the negative side, then such
+[00:53] Clamper Circuit is known as the negative Clamper Circuit.
+[00:57] And this Clamper Circuit can be designed using the diode, resistor and the capacitor.
+[01:03] And many times, to shift the DC level to the desired voltage, the reference level or the
+[01:09] biasing voltage is also added with this Clamper Circuit.
+[01:13] So this Clamper Circuit can be classified broadly in a three categories.
+[01:17] The positive Clamper Circuit, the negative Clamper Circuit, and the Clamper Circuit with the
+[01:22] biasing voltage.
+[01:23] So, in this video, one by one, we will see all the three types of Clamper Circuit.
+[01:28] But first of all, let us talk about the positive Clamper Circuit.
+[01:33] So this circuit, which is shown over here, is the example of the positive Clamper Circuit.
+[01:38] Now in general, any type of waveform can be applied to this Clamper Circuit.
+[01:43] But here, we will analyze the circuit by applying a sign view to this circuit.
+[01:48] So let us say, a sign view with a peak value of Vm is applied to this Clamper Circuit.
+[01:55] So at the output, this entire waveform will get shifted by a DC value of Vm.
+[02:00] So let us analyze the circuit and let us find out how we will get this type of waveform.
+[02:07] But before we do that, here we are assuming that the Rc time constant of the circuit is very
+[02:12] large.
+[02:14] So if T is the time period of the signal, then the Rc time constant of the circuit should
+[02:19] be much larger than this time period.
+[02:22] Or in general, it should be at least 10 times more than the time period of the signal.
+[02:27] Alright, so considering this assumption, let us analyze this circuit.
+[02:32] So during this positive half cycle, this diode will act as an open circuit, because the
+[02:38] voltage at the cathode is more than the N-ode.
+[02:42] So considering the ideal diode, it will act as an open circuit.
+[02:47] So during the positive half cycle, this capacitor will get charged through this path.
+[02:53] But considering the Rc time constant is very large than the time period.
+[02:57] During the positive half cycle, it will not be able to charge to the peak value.
+[03:02] And we can assume that during the positive half cycle, the output will follow the input
+[03:07] signal.
+[03:08] So during the positive half cycle, you will get this type of waveform.
+[03:13] Now during the negative half cycle, the polarity of the input voltage will get reversed.
+[03:19] So now this diode will act as a short circuit.
+[03:22] And effectively, this resistor R-I will also get short circuit aid.
+[03:27] So during this negative half cycle, this capacitor will get charged through this path.
+[03:33] And it will get charged to the peak value of Vm.
+[03:38] And during the negative half cycle, if you see the output, then up to this point, it will
+[03:43] be equal to 0.
+[03:46] And during that time, the capacitor will get charged to the peak value of Vm.
+[03:52] Now after this point, if you see the voltage across the diode, it will be equal to Vn
+[03:57] plus Vm.
+[03:59] So this is the voltage, which will appear between these two terminals.
+[04:05] Now after this point, as the Vn is going from minus Vm to 0, so this voltage will be
+[04:12] always greater than 0.
+[04:14] So due to that, now the cathode of the diode is more positive than the N-ode.
+[04:20] That means after this point, this diode will act as an open circuit.
+[04:26] And then after the voltage Vm can be given as Vn plus Vm.
+[04:33] So whenever this Vn is equal to minus Vm, at that time, the output will be equal to 0.
+[04:40] And similarly, whenever the Vn is equal to 0, at that time, the output voltage will be
+[04:45] equal to Vm.
+[04:47] So during this time, the output will look like this.
+[04:53] That means this portion of the waveform will get DC shifted by a Vm-volt.
+[05:00] Now doing the next positive half cycle, this diode will still remain reversed by a
+[05:04] st.
+[05:05] Because the voltage across the diode is equal to Vn plus Vm.
+[05:10] And as Vn is greater than 0, so the voltage at the cathode is more than the N-ode.
+[05:16] So this diode will still remain reversed by a st.
+[05:21] And during the positive half cycle, the output voltage Vm can be given as Vn plus Vm.
+[05:28] So due to that, during the next positive half cycle, you will get this type of waveform.
+[05:34] That means the entire waveform will get DC shifted by a Vm-volt.
+[05:40] And during the next negative half cycle also, this diode will still remain reversed by
+[05:44] a st.
+[05:46] So due to that, you will get this type of waveform.
+[05:49] So in a steady state condition, if you see the output waveform, then it will look like
+[05:54] this.
+[05:55] That means the entire waveform will get shifted upwards by a Vm-volt.
+[06:01] And this is the simulation result of the positive length of the circuit.
+[06:06] So as you can see, after the couple of half cycles, the output will reach the steady state
+[06:10] condition.
+[06:12] So here this blue waveform is the input waveform and this green waveform is the output waveform.
+[06:18] And here as the diode is non-ideal, so there will be voltage drop across the diode also.
+[06:25] And that is why this output is going below this 0 volt.
+[06:29] Alright, so this is all about the positive length of the circuit.
+[06:33] And in this circuit, just by reversing the direction of the diode, it can be converted into
+[06:38] the negative length of the circuit.
+[06:41] So here, we will analyze the circuit by considering the square wave as an input waveform.
+[06:48] So to this circuit, if we apply a square wave, which is varying from Vm to minus Vm, then
+[06:53] at the output, we will get this type of waveform.
+[06:57] That means the entire waveform will get shifted downwards by a Vm-volt.
+[07:02] So let us analyze this circuit and let us see how we will get this type of waveform.
+[07:08] So during the positive half cycle, the input of this circuit is equal to Vm-volt.
+[07:14] And due to that, this diode will get far biased.
+[07:17] And considering the ideal diode, it can be represented as a short circuit.
+[07:23] And due to that, effectively, this resistor will also get short circuited.
+[07:28] So due to that, during the positive half cycle, this capacitor will get charged through
+[07:33] this path.
+[07:34] And it will get charged to the peak value of voltage Vm.
+[07:38] And during the positive half cycle, the output voltage Vm-volt will be equal to 0.
+[07:44] Now after that, during the negative half cycle, the priority of the input voltage will get
+[07:49] reversed.
+[07:51] And now if you observe, the voltage which is appearing across the diode is equal to minus
+[07:56] to Vm.
+[07:58] That means the summation of these two voltages.
+[08:01] And due to that, this diode will get reversed bias.
+[08:05] And we can replace it by an open circuit.
+[08:09] So during the negative half cycle, the output voltage Vm will be equal to minus Vm-Vm.
+[08:17] Minus Vm, that is equal to minus to Vm.
+[08:22] So during the negative half cycle, the output waveform will look like this.
+[08:28] Now once again, during the next positive half cycle, this diode will act as a short circuit.
+[08:34] Because now, the voltage which is appearing across the diode will be positive.
+[08:39] Because during the previous cycle, the capacitor has lost some finite charge.
+[08:44] And due to that, the voltage across the capacitor will be slightly less than Vm.
+[08:50] And due to that, the voltage which is appearing across the diode will be positive.
+[08:55] So during this positive half cycle, this diode will act as a short circuit.
+[09:00] And due to that, once again, this capacitor will get charged to the peak value of voltage
+[09:05] Vm.
+[09:06] And during this cycle, the output voltage Vm will be equal to 0.
+[09:12] And once again, during the negative half cycle, we will get a output voltage Vm that is
+[09:17] equal to minus to Vm.
+[09:20] So if you see the overall output waveform, then it will look like this.
+[09:25] That means the entire input waveform has been shifted by a voltage of minus Vm.
+[09:31] Now even though this clampar circuit changes the DC level of the input waveform, but the
+[09:37] peak to peak voltage of the output waveform is same as the input waveform.
+[09:42] So here, if you see, the input waveform is varying from Vm to minus Vm.
+[09:48] That means the peak to peak voltage of the waveform is equal to Vm.
+[09:52] While at the output, the waveform is varying from 0 to minus to Vm.
+[09:58] That means here also, the peak to peak voltage is equal to Vm.
+[10:03] So in this way, using this negative clampar circuit, the DC level of the input waveform
+[10:08] can be shifted towards the negative side.
+[10:12] Now as I said earlier, to shift the reference level or the DC level of the waveform, sometimes
+[10:18] the basing voltage is also used with this clampar circuit.
+[10:22] So now let us see the clampar circuit with the basing voltages.
+[10:28] So this circuit, which is shown over here, is the negative clampar circuit with the basing
+[10:33] voltage.
+[10:35] So let us analyze this circuit by applying a square wave as an input.
+[10:40] So here, this V-volt is the applied basing voltage.
+[10:45] And here, we are assuming that this voltage Vm is greater than V-volt.
+[10:51] So now during the positive half cycle, this diode will act as a short circuit.
+[10:56] Because here, this voltage Vm is greater than V-volt.
+[11:01] So during the positive half cycle, this capacitor will start charging through this path.
+[11:07] And if you apply the KVL, then the voltage across this capacitor will be equal to Vm minus
+[11:12] V-volt.
+[11:14] And during this positive half cycle, if you see the output voltage, then it will be equal
+[11:19] to V-volt.
+[11:21] Now during the negative half cycle, if you see the voltage at the end of this diode, it
+[11:26] will be equal to minus 2Vm plus V-volt.
+[11:31] That means, during this negative half cycle, this diode will act as an open circuit.
+[11:38] During this negative half cycle, the output voltage V-out will be equal to minus 2Vm plus
+[11:45] V-volt.
+[11:47] So during the negative half cycle, if you see the output waveform, then it will look like
+[11:52] this.
+[11:53] So the peak value of the waveform will be equal to minus 2Vm plus V-volt.
+[12:00] And then after, once again, you will get this type of repetitive waveform.
+[12:05] So if you see the overall output waveform, then it can be represented by this peak waveform.
+[12:11] That means, this waveform is varying from V-volt to the minus 2Vm plus V-volt.
+[12:18] Now without this biasing voltage, the output waveform would have been varied from 0 to
+[12:23] minus 2Vm-volt.
+[12:25] But due to this biasing voltage, the entire waveform has been recie shifted by a V-volt.
+[12:32] So this circuit, which we have discussed, is the negative limper circuit with the biasing
+[12:37] voltage.
+[12:39] And similarly, we can also design a positive limper circuit with the biasing voltage.
+[12:45] And here, for the analysis, we will assume a sine wave as an input.
+[12:51] Now here, to easily analyze this circuit, let us take some numbers.
+[12:56] So let's say, here the biasing voltage is equal to 3V, and the input waveform is varying
+[13:02] from 10 to minus 10V.
+[13:05] Now in this circuit, if the biasing voltage is not there, then the output waveform would
+[13:10] look like this.
+[13:11] That means, the output waveform would get DC shifted by a 10V.
+[13:17] But due to this additional 3V, this waveform will get further shifted by a 3V.
+[13:23] And due to that, we will get this type of waveform.
+[13:26] So let us analyze this circuit.
+[13:28] And let us find out why we will get this type of waveform.
+[13:33] Now during the positive half cycle, whenever the input is 0, that means at this point,
+[13:39] this that will get far biased.
+[13:42] And due to that, it will act as a short circuit.
+[13:45] So when V-volt is equal to 0, at that time, this capacitor will get charged through this
+[13:51] path, and it will get charged the voltage of 3V.
+[13:56] So when V-volt is equal to 0, at that time, the voltage across the capacitor will be equal
+[14:01] to 3V.
+[14:04] Now after that, whenever V-volt goes about this 0V, at that time, this diode will act
+[14:10] as an open circuit.
+[14:12] Because if you observe, the voltage at the cathode of the diode is equal to 3V, while
+[14:17] the voltage at the n-out of the diode is equal to V-volt plus 3V.
+[14:23] And as V-volt is increasing, so the voltage at the cathode will be more than the n-out.
+[14:29] And due to that, this diode will get reversed bias.
+[14:33] And we can represent it via open circuit.
+[14:36] So whenever this V-volt plus V-c is greater than 3V, or in other words, whenever V-volt
+[14:44] is greater than 0, at that time, the output voltage V-out can be given as V-volt plus 3V.
+[14:52] And during this time, the output waveform will look like this.
+[14:57] That means the output waveform will get bc shifted by a 3V.
+[15:02] Now as I said earlier, the voltage at the cathode of the diode is equal to V-volt plus 3V.
+[15:09] And during the negative half cycle, as this V-volt becomes more and more negative, so this
+[15:13] term will be less than 3V.
+[15:17] So due to that, during the negative half cycle, this diode will get 4V.
+[15:22] And we can represent it via short circuit.
+[15:26] So during the negative half cycle, up to this point, the output voltage V-out will be
+[15:30] equal to 3V.
+[15:33] And during that time, this capacitor will get charged to the voltage of V-volt plus 3V.
+[15:40] And up to this point, this capacitor will get charged to the voltage of 3V plus 10V.
+[15:46] That is equal to 13V.
+[15:49] So after this point, you see the output waveform, then it will look like this.
+[15:55] Now after this point, the voltage at the cathode of the diode will be equal to V-volt plus
+[16:00] 13V.
+[16:02] And after this point, as V-volt is going from minus 10 to 0V, so this term will be greater
+[16:08] than 3V.
+[16:11] So after this point, this diode will act as a reverse bias.
+[16:15] And we can represent it via open circuit.
+[16:19] So after this point, the output voltage V-out can be given as V-in plus 13V.
+[16:27] So whenever V-in is equal to minus 10V, at that time, the output will be equal to 3V.
+[16:34] And when V-in is equal to 0V, at that time, the output will be equal to 13V.
+[16:40] So during this time, if you see the output waveform, then it will look like this.
+[16:46] That means this portion of the waveform will get shifted by a 13V.
+[16:53] Now during the next positive half cycle, still this diode will remain reverse biased.
+[16:58] Because as I said, the voltage at the cathode is equal to V-in plus 13V.
+[17:04] And as this V-in is positive, so the voltage at the cathode will be more than the N-volt.
+[17:11] So due to that, this diode will still remain reverse biased.
+[17:15] And during this time, the output waveform V-out will be equal to V-in plus 13V.
+[17:22] So during the positive half cycle, if you see the output waveform, then it will look like this.
+[17:28] And then after, during the negative half cycle also, this diode will still remain reverse biased.
+[17:35] So during the negative half cycle also, this entire waveform will get
+[17:39] DC shifted by a 13V.
+[17:43] So in a steady state condition, if you see the output waveform, then it will look like this.
+[17:49] That means now, the entire waveform has DC shifted by a 13V.
+[17:55] And here is the simulated result for the simulator type of clampers circuit.
+[18:00] So here, this blue waveform is the input waveform.
+[18:03] And the green waveform is the output waveform.
+[18:06] And as you can see, the output waveform looks similar to the waveform,
+[18:10] which we have drawn during the analysis.
+[18:13] But here, as this diode is non-ideal, so there will be a voltage drop across this diode also.
+[18:20] So in this way, by using the basing voltage with this clampers circuit,
+[18:24] we can shift the DC level of the waveform to the desired level.
+[18:28] So I hope in this video, you understood the different types of clampers circuits.
+[18:34] And in the next video, we will take a few examples based on this clamper,
+[18:38] as well as the clipper circuit.
+[18:40] So if you have any questions or suggestions, do let me know here in the comment section below.
+[18:45] If you like this video, hit the like button and subscribe to channel for more such videos.

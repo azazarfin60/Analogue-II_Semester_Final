@@ -1,0 +1,222 @@
+Title: What is Phase Lock Loop (PLL)? How Phase Lock Loop Works ? PLL Explained
+URL: https://www.youtube.com/watch?v=Q5dC9TbzR9k
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video we will learn about the phase lock loop.
+[00:21] Starting from computing to the communication, the phase lock loops are widely used in many
+[00:25] electronics application.
+[00:28] So in the communication, they are used in the synchronization and the demodulation
+[00:32] circuits.
+[00:33] For example, in the FM demodulation and in the frequency shift king, they are commonly
+[00:38] used.
+[00:39] Apart from that, when one wants to recover the clock from the incoming midstream, then using
+[00:45] the phase lock loop, it is quite possible.
+[00:47] Moreover, in the communication system, for jitter and noise reduction, the phase lock
+[00:54] loop is commonly used.
+[00:56] And one of the most common application of the PLL is in the frequency synthesizers,
+[01:01] as well as in the tone generation.
+[01:04] So using this phase lock loop, it is possible to generate the output frequency, which is
+[01:08] multiple of the input frequency.
+[01:11] And in the microprocessors, they are used in the generation of the stable system clock.
+[01:17] So these are the some of the common applications of the phase lock loop.
+[01:21] So now let us understand how this phase lock loop works.
+[01:25] So as its name suggests, it is a control system or the control loop, which maintains the
+[01:29] same phase between the input and the output signal.
+[01:33] So first of all, let us understand what do we mean by the phase difference.
+[01:37] So as you can see over here, the two signals are of the same frequency, but there is a constant
+[01:42] phase difference between the two signals.
+[01:45] While in this second figure, the two waveforms starts at the same time, but they are of the
+[01:50] different frequency.
+[01:53] So in this case, the phase between the two signals is continuously changing with the time.
+[01:59] So the phase lock loop system synchronizes the output signal with the input signal in
+[02:03] the phase as well as in the frequency.
+[02:06] So when the output frequency is equal to the input frequency, and there is no phase difference
+[02:12] or the constant phase difference between the two signals, then we can say that the loop
+[02:16] is in the lock condition.
+[02:19] So the phase lock loop consists of three basic blocks.
+[02:22] The phase detector, the loop filter or the low pass filter and the voltage control oscillator.
+[02:28] Now we have already discussed about the low pass filter and the voltage control oscillator
+[02:32] in the earlier videos.
+[02:34] So as we have discussed in the voltage control oscillator, as the control voltage changes,
+[02:40] then the frequency of the oscillation also changes.
+[02:43] So whenever the loop is just turned on, then the VCO runs at the center frequency.
+[02:50] And this frequency is also known as the free running frequency.
+[02:54] Now the phase detector compares the input or the reference signal with the oscillator
+[02:59] frequency.
+[03:00] And based on that, it generates the error signal.
+[03:04] Now this error signal is passed through the low pass filter and the low pass filter generates
+[03:09] the error voltage based on the error signal.
+[03:12] And based on this error voltage, the VCO either increase or reduce the oscillator frequency
+[03:18] until the oscillator frequency locks to the input frequency.
+[03:22] And under the lock condition, there may be a no phase difference or the constant phase
+[03:27] difference between the two signals.
+[03:30] Now under the no lock condition, the PLL can acquire the lock only if the input signal
+[03:35] is within the capture range of the PLL.
+[03:39] That means whenever the input signal is within the capture range, then the VCO can lock
+[03:44] to the input signal.
+[03:46] That means the capture range is the range of input frequencies around the VCO center
+[03:51] frequency onto which the loop can lock whenever it starts from the unlock condition.
+[03:57] Then another important specification of the PLL is the lock range.
+[04:02] So the lock range defines the range of input frequencies over which the loop remains in
+[04:07] the lock condition once it has captured the input signal.
+[04:11] So let's say the VCO is already locked to the input frequency F.
+[04:17] Now if the input frequency changes, then the VCO will follow that frequency provided
+[04:22] the input frequency is within the lock range.
+[04:26] But if the input frequency goes out of the lock range, then the VCO starts running at the
+[04:32] free running frequency.
+[04:35] And it won't be able to lock to the input frequency until the input frequency is within
+[04:40] the capture range of the PLL.
+[04:43] So these two are the important specifications of the phase lock loop.
+[04:47] So as I said earlier, the phase lock loop contains the three blocks.
+[04:52] The phase detector, the low pass filter and the VCO.
+[04:56] And we have already talked about the working of the low pass filter and the VCO in the earlier
+[05:01] videos.
+[05:02] So in this video, let us see in general how this phase detector circuit works and how it
+[05:08] identifies the phase difference between the two signals.
+[05:12] So let's say at a given point of time, one signal has some phase alpha while another
+[05:18] signal has some phase beta.
+[05:20] That means the phase difference between the two signals is equal to alpha minus beta.
+[05:26] And if the phase difference is very small, then we can say that the sine alpha minus beta
+[05:31] is approximately equal to alpha minus beta.
+[05:34] And this sine alpha minus beta can be written by the following expression.
+[05:39] Or from this, we can say that when we multiply the two signals, then we will get the two
+[05:44] terms.
+[05:45] So the first term is the difference between the two phases while the second term is the
+[05:50] summation of the two phases.
+[05:53] So the second term is the high frequency signal and it can be eliminated using the low pass
+[05:58] filter.
+[05:59] That means just by multiplying the two signals, it is possible to generate the phase difference
+[06:04] between the two signals.
+[06:06] Now in the frequency domain, if we see the same phenomenon, then when we multiply the
+[06:11] two signals, then we get the two terms.
+[06:14] One is the summation of two frequencies and the second is the difference between the
+[06:17] two frequencies.
+[06:19] So this high frequency component can be eliminated using this low pass filter while this difference
+[06:25] between the two frequencies contains the phase difference.
+[06:29] And when this signal is passed through the low pass filter, then it provides the required
+[06:33] error voltage for the VCO.
+[06:36] So using this error voltage, it is possible to log the VCO to the input frequency.
+[06:41] So at the radio frequencies, the balance mixer is used as a phase detector.
+[06:46] While for the digital signals, the phase frequency detector or even an XOR gate can be used
+[06:52] for the phase detection.
+[06:55] So let us understand how the XOR gate can be used as a phase detector.
+[07:00] So this is the true table of the XOR gate.
+[07:03] So the output of the XOR gate will be high when the two inputs are different.
+[07:08] That means whenever the two signals are identical or whenever there is no phase difference between
+[07:14] the two signals, then ideally the output of the XOR gate should be equal to zero.
+[07:20] But actually if you see, you will find some spikes at the transitions.
+[07:24] So if we take the average of this phase difference signal, then it will be approximately equal
+[07:28] to zero.
+[07:31] Similarly when the phase difference between the two signals is 90 degree, then at the output
+[07:35] we will get this type of waveform.
+[07:38] And if we take the average of this phase difference signal, then we will get the output voltage
+[07:43] which is half of the peak value.
+[07:46] And whenever the phase difference between the two signals is 180 degree, then the output
+[07:51] will be maximum and ideally it should be high for the all time.
+[07:56] But actually there will be some spikes at the transitions.
+[08:00] So if we take the average of this output waveform, then it will be the maximum value.
+[08:05] That means as the phase difference between the two signal increases, then the average value
+[08:10] of the output waveform will increase.
+[08:13] So this is the plot of the phase difference and the average output value of the low pass
+[08:17] filter.
+[08:18] So as you can see, as the phase difference between the two signal increases from zero to 180
+[08:23] degree, then the average output voltage will also increase linearly.
+[08:28] That means this phase detector is the linear phase detector.
+[08:32] But the phase relationship is linear only for zero to 180 degree.
+[08:36] Now ideally the phase detector should provide a linear phase relationship from zero to
+[08:41] 360 degree.
+[08:43] But in the XOR phase detector, as the phase difference increases beyond the 180 degree,
+[08:48] then the average output voltage will start reducing.
+[08:52] Moreover it is difficult to identify which signal is leading or lagging.
+[08:57] For example, irrespective of V1 is leading or lagging the V2 by 90 degree, we get the
+[09:02] same output waveform.
+[09:04] Apart from that, for the XOR gate to work as a linear phase detector, both signals should
+[09:09] have approximately 50% of duty cycle.
+[09:13] And whenever the two waveforms are operating at the different frequencies, then it is quite
+[09:17] possible that the loop can get locked to the harmonic frequency.
+[09:22] So these are the some of the problems with the XOR phase detector.
+[09:26] And these problems can be eliminated using the phase frequency detector.
+[09:32] So as shown in the figure, the phase frequency detector is designed using the D flip flop
+[09:37] and the AND gate.
+[09:39] And the output of the detector is usually given to the charge pump circuit.
+[09:44] So here, the output of the detectors is given to the PMOS and the AND MOS circuits.
+[09:49] So let us quickly understand the working of this phase frequency detector.
+[09:54] So as you can see over here, the inputs of this both D flip flops are connected to the
+[09:59] logic high.
+[10:00] And the two signals between which we want to measure the phase difference are given as
+[10:05] a clock signal to this D flip flops.
+[10:08] So here, the signals V1 and V2 are given as a clock signal to this D flip flops.
+[10:14] So at the rising age of this input signals, the output of the D flip flop will become high.
+[10:20] And here, these two flip flops are marked as up and down.
+[10:25] So when the up and down outputs are high, then the output of the AND gate will also become
+[10:30] high.
+[10:31] And that will reset this D flip flops.
+[10:34] And once the D flip flops receives the clear signal, then the up and the down outputs
+[10:38] will become zero.
+[10:40] So in this particular case, when both up and down outputs are zero, then the output will
+[10:45] get isolated from the detector circuit.
+[10:48] And in this case, the V out is the output of this voltage divider circuit.
+[10:53] So in this particular case, it will be equal to V dt by 2.
+[10:57] Now whenever only this up output is high, then the upper transistor will become high.
+[11:03] And because of that, it will act as a short circuit.
+[11:06] And in that case, the V out will become VDD.
+[11:10] Similarly, when the down output is high, at that time, this lower transistor will become
+[11:15] high.
+[11:16] And that will pull down the output V out to the zero volt.
+[11:20] So using this circuit, it is possible to identify with signal is letting or lagging.
+[11:25] Moreover, if both signals are running at the different frequencies, then also it is
+[11:30] possible to correct them.
+[11:32] For example, let's say here V1 is the input signal to the PLL and the V2 is the output
+[11:38] of the VCO.
+[11:39] So as you can see, here the V1 is running at the higher frequency.
+[11:44] Moreover, this V1 signal is also letting the V2.
+[11:48] So at the rising edge of this V1 signal, the up signal will become high.
+[11:54] And it will remain high till the rising edge of this V2.
+[11:58] And once again, this up output will become high at the rising edge of this V1.
+[12:04] And it will remain high until the rising edge of this V2.
+[12:08] So in this case, as the V1 is leading the V2, so the up output will become high.
+[12:13] But on the other end, if V2 is leading the V1, or V1 is lagging the V2, in that case,
+[12:20] this down output will become high.
+[12:23] So from the up and the down output, it is easy to identify which input is leading and
+[12:28] lagging.
+[12:29] So in this case, and the up output is high, then the overall output voltage will be pulled
+[12:34] up from the V2 to the V2.
+[12:38] So if we take the average of this output voltage, then it will be more than the V2.
+[12:44] That means the VCO frequency will increase until it matches the input frequency.
+[12:49] Similarly, let us see the case and the input frequency is less than the oscillator frequency.
+[12:56] So in this case, as V2 is leading the V1, so the down output will become high.
+[13:02] And it will remain high till the rising edge of this V1.
+[13:07] And whenever this down output is high, at that time, the overall output will be pulled
+[13:12] down to the 0 volt from the V2.
+[13:16] So if we take the average of the overall output waveform, then in this case, it will be
+[13:20] less than the V2.
+[13:23] That means in this case, the control voltage of the VCO will reduce.
+[13:28] And due to that, it will bring down the VCO frequency.
+[13:32] So this is the basic working principle of this phase frequency detector.
+[13:36] Now as I mentioned earlier, the phase lock loop is commonly used in the frequency synthesizer
+[13:41] circuit.
+[13:43] So in this basic PLL loop, when we introduce the divide by N counter in the feedback, then
+[13:48] it is possible to multiply the output frequency by the factor of N.
+[13:53] So let us say the input frequency or the reference frequency to the PLL is equal to 1 megahertz.
+[13:59] And let us say the VCO frequency is also 1 megahertz.
+[14:03] Now when we introduce the divide by 10 counter in the feedback, then the output of that counter
+[14:08] will be 100 kilohertz frequency.
+[14:11] That means the 1 input to the phase detector is 1 megahertz frequency, while the second
+[14:15] input is 100 kilohertz.
+[14:18] So now the phase lock loop controls the VCO in a such a way that the output of the counter
+[14:23] provides the 1 megahertz frequency.
+[14:26] That means the output of the VCO has to be at the 10 megahertz frequency.
+[14:31] Or in other words, we can say that the output of the phase lock loop is 10 times the input
+[14:36] frequency.
+[14:38] So in this way, using this phase lock loop, it is possible to multiply the input frequency.
+[14:44] Similarly, if we introduce this divide by N counter block before the phase detector, then
+[14:50] it is possible to divide the output frequency by the factor of N. That means if FI is the
+[14:56] input frequency, then the output frequency will be equal to FI divided by N. So in this
+[15:03] way, the phase lock loop can be used in the frequencies in this size to multiply or divide
+[15:08] the input frequency by the factor of N.
+[15:11] So I hope in this video you understood what is phase lock loop, what are the applications
+[15:16] of the phase lock loop and how this phase lock loop system works.
+[15:20] So if you have any question or suggestion, do let me know here in the comment section
+[15:24] below.
+[15:25] If you like this video, hit the like button and subscribe with an inform, more such videos.

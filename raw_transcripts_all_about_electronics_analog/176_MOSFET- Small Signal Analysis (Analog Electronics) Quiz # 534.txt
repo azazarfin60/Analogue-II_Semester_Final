@@ -1,0 +1,65 @@
+Title: MOSFET- Small Signal Analysis (Analog Electronics) | Quiz # 534
+URL: https://www.youtube.com/watch?v=2LXfVzZA0wc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, even given this MOSFET based circuit, and here, even given that,
+[00:17] these two MOSFETs MR and M2 are biased in the saturation.
+[00:22] So here, even asked to find the exact magnitude of the small signal voltage gain for the given
+[00:27] circuit.
+[00:28] So let us find that.
+[00:29] So in the question, we have been given this circuit, and given given that, the small
+[00:35] signal transcomantance for the MOSFET M1 and M2 are GM1 and GM2 respectively.
+[00:42] Moreover, in the question, here we have been also asked to neglect the effect of a
+[00:47] channel modulation as well as the body effect for the MOSFETs M1 and M2.
+[00:53] So now, to find the small signal voltage gain, let us replace each MOSFET by their small
+[00:58] signal model. So for the AC analysis, all the DC sources in the circuit will act as a zero.
+[01:05] That means here, this DC voltage source is VDD, will act as a zero volt, while this DC
+[01:12] current source will act as a open circuit. Moreover, here this capacitor C1 will also act as a
+[01:19] short circuit. So now, here we need to replace the MOSFET M1 and M2 by their small signal model.
+[01:26] So here, for this MOSFET M2, if you see, then this input voltage source, and this resistor R is
+[01:33] disconnected at the gate terminal. While the source terminal of the MOSFET M2 is connected to the
+[01:39] ground potential. Similarly, on the input side, this drain resistor RD will get connected between
+[01:46] the drain terminal and the ground terminal. Or we can say that it is connected between the drain
+[01:51] and the source terminal. And the output is also measured at the drain terminal. So now, if we move
+[01:58] to the M1 transistor, then here, this resistor RB is connected between the gate terminal of the MOSFET
+[02:04] M2 and the gate terminal of the MOSFET M1. And moreover, for this MOSFET M1, the drain and the gate
+[02:12] terminals are connected together. That means this MOSFET M1 is nothing but the diode connected
+[02:19] on this star. That means here, the gate and the drain terminals are shorted together.
+[02:26] And here, since the DC current source will act as open circuit, so this drain terminal is kept
+[02:33] open. That means for the given circuit, if we see the small signal equivalent circuit,
+[02:38] then this is how it will look like. So now, to find the voltage gain for the given circuit,
+[02:44] first let us simplify this circuit and let us find the equivalent resistance, which is seen through
+[02:49] this resistor RB. And if you see this resistance, then that is nothing but the input impedance of
+[02:55] this diode connected transistor. So like I said, here this MOSFET M1 is connected in the
+[03:02] diode connected transistor configuration. And if you are aware, then for the diode connected
+[03:08] transistor, its input impedance can be given as 1 divided by GM. So if you are not aware,
+[03:16] then here let me also prove that and let me show you, indeed it is equal to 1 divided by GM.
+[03:22] So here, to find the input impedance of this diode connected transistor,
+[03:26] first let us draw the small-scary model of this part. And if you see that, then this is how it will
+[03:32] look like. So here, to find the input impedance, what we will do, we will apply the test voltage VX,
+[03:40] and we will find this test current IX. And the ratio of this VX and the IX will give us the
+[03:47] input impedance. So here, if you see, then this VX is nothing but the VGS, because this voltage
+[03:56] is at the between the gate and the source terminal. So we can say that this VX is equal to VGS1.
+[04:03] And here if you see, then this current IX is nothing but the IAD1. So we can say that this
+[04:10] current IX is equal to GM1 times VGS1. So here, both on the numerator and the denominator,
+[04:18] this VGS1 will get cancelled out. And this input impedance is nothing but the 1 divided by GM1.
+[04:26] That means the input impedance, which is seen through this resistor RB is equal to 1 divided by GM1.
+[04:33] Or in a small signal model, if you see, then the input impedance, which is seen through this
+[04:38] resistor RB is equal to 1 divided by GM1. And now, if you see the equivalent circuit, then this is
+[04:46] how it will look like. That means now, if you see, then this resistor RB, and this resistor 1 divided
+[04:53] by GM1 are connected between the gate and the source terminal of the MOSFET M2. So,
+[04:59] equivalently, this is how it can be represented. And now, from this simplified small signal
+[05:05] equivalent circuit, it is easy to find the voltage gain. So let us see that. So here, this output
+[05:13] voltage V out is equal to minus ID2 times RD, where this ID2 is equal to minus GM2 times VGS2.
+[05:27] And here, if you see, then this VGS2 is the voltage across the resistor RB and the 1 divided by GM1.
+[05:36] So using the voltage divider rule, we can easily find this voltage VGS2. So we can say that
+[05:42] this voltage VGS2 is equal to RB plus 1 divided by GM1 divided by this RS plus RB plus 1 divided by GM1.
+[05:57] And of course, it will also get multiplied by the voltage gain. So basically, using the voltage
+[06:04] divider rule, we can easily find the voltage VGS2. So from this, we can say that this V out is
+[06:12] equal to minus GM times RD times this RB plus 1 over GM1 divided by this RB plus RS plus
+[06:29] 1 divided by GM1 times input voltage. So here, I am writing over here. So from this, we can say that
+[06:40] the magnitude of the voltage gain for the V out divided by V in is equal to GM times RD times
+[06:49] these RB plus 1 divided by GM1 divided by these RB plus RS plus 1 divided by GM1. So that is the
+[07:04] expression of the voltage gain for the given circuit. And from this, we can say that for the given
+[07:11] equation, this is the correct answer.

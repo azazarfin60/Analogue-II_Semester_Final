@@ -1,0 +1,113 @@
+Title: Operational Amplifier (Op-Amp) / BJT Solved Problem (Analog Electronics) | Quiz # 479
+URL: https://www.youtube.com/watch?v=u15Ims98Ofk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:10] So in this question, we have been given this circuit and here we have been asked to find
+[00:15] the output voltage of the given circuit.
+[00:18] So in this question, we have been given that all the transistors are identical and they
+[00:23] have a very large value of the common emitter again beta.
+[00:27] And here we have been also given the relationship between the base emitter voltage Vb and the
+[00:31] collector current Ic.
+[00:34] So here we have been also given that the voltage at this node or this Vp is equal to 0.7
+[00:39] volt and the thermal voltage is equal to 26 milli volt.
+[00:44] So here we have been given that the voltage at this node is equal to 0.7 volt.
+[00:51] Now if you see over here, then all the transistors are the narrow connected transistors, meaning
+[00:56] that here the collector and the base terminals of these transistors are connected together.
+[01:02] That means the voltage at the collector and the base terminals will be the same.
+[01:06] And here the emitter terminal of these transistors is connected to the ground terminal.
+[01:12] So if you see over here, then for the transistors from Q2 to Q32, the collector voltage Vc is
+[01:18] equal to 0.7 volt and the same voltage will also appear at the base terminals.
+[01:24] So we can say that over here this Vb2 is equal to Vb3 that is equal to this Vb32 that is
+[01:33] equal to 0.7 volt.
+[01:36] And here the emitter terminal of all the transistors is connected to the ground terminal.
+[01:41] That means over here this Vb will be equal to 0.7 volt.
+[01:46] So we can say that for the transistors from Q2 to Q32, this Vb2 that is equal to this
+[01:54] Vb3 that is equal to this Vb32 will be equal to 0.7 volt.
+[02:02] That means for all the transistors, the base emitter voltage Vb will be equal to 0.7 volt.
+[02:09] And here we have been given that the relationship between the collector voltage and the base emitter
+[02:13] voltage is equal to IS times this e to the power, this Vb divided by Vt.
+[02:22] So here for the transistors from Q2 to Q32, since the base emitter voltage is equal to 0.7
+[02:27] volt, so the collector current from all the transistors will remain the same.
+[02:32] So we can say that over here this Ic2 that is same as the Ic3 and similarly that is same
+[02:38] as the Ic32.
+[02:41] So in general let's say that is equal to collector current Ic.
+[02:45] So now let's say the current through this branch is equal to Ix.
+[02:50] So by applying the KCL we can say that this current Ix is the summation of all the collector
+[02:55] currents of these transistors.
+[02:58] That means here this current Ix is the summation of the collector currents from the transistor
+[03:03] Q2 to Q32.
+[03:04] But that is equal to 31 times Ic.
+[03:09] Let's say this is the equation number 1.
+[03:12] That means here this current Ix is equal to 31 times Ic.
+[03:17] So similarly now let's see the collector current of this transistor Q1.
+[03:22] Now here if you see this op-amp then it is used with the negative feedback.
+[03:26] And here since the op-amp is the ideal op-amp so we can apply the concept of the virtual
+[03:31] ground.
+[03:32] That means here the voltage at this V minus or the inverting terminal of the op-amp will
+[03:37] be same as the voltage at the non-inverting terminal.
+[03:40] For another words we can say that for this given op-amp this V minus is same as the V
+[03:46] plus.
+[03:47] So here if you see this voltage V plus and that is same as the voltage which is appearing
+[03:52] at the base terminal of this transistor Q1 or another words that is same as the voltage
+[03:57] VB1.
+[03:58] So we can say that over here is V minus is same as the V plus and that is equal to this
+[04:06] VBE1.
+[04:08] So now as per this relation we can say that the collector current of this first transistor
+[04:13] or this Ic1 is equal to Ix times this e to the power this VBE1 divided by VT where the
+[04:23] VT is the thermal voltage.
+[04:25] And here is V plus and the V minus is same as the VBE1 more over the voltage at this node
+[04:33] is equal to V out.
+[04:35] So we can say that this current Ic1 is equal to this V out minus this VBE1 divided by
+[04:44] 20 kilo ohm.
+[04:46] That means here the current which is flowing through this 20 kilo ohm resistor is same
+[04:50] as the Ic1 because here since the op-amp is the ideal op-amp so no current is flowing
+[04:55] into the op-amp terminals.
+[04:58] And therefore this current Ic1 will be same as this current.
+[05:02] So similarly now let us find the current through this another 20 kilo ohm resistor.
+[05:08] So once again the voltage at this node is equal to VBE1.
+[05:12] So we can say that this current is equal to V out minus VBE1 divided by 20 kilo ohm.
+[05:19] Or if you see this current then that is same as the current Ix.
+[05:23] So we can say that this current Ix is equal to V out minus this VBE1 divided by 20 kilo
+[05:31] ohm.
+[05:32] And the same current will also flow through this 5 kilo ohm resistor.
+[05:36] So further we can say that this current is same as this VBE1 minus VPD divided by 5 kilo
+[05:45] ohm.
+[05:46] Where this VBE is equal to 0.7 volt.
+[05:49] And we know that this current Ix is equal to 31 times Ic.
+[05:55] So we can say that this 31 times Ic is equal to V out minus this VBE1 divided by 20 kilo
+[06:03] ohm.
+[06:04] That is equal to this VBE1 minus 0.7 divided by 5 kilo ohm.
+[06:12] That means if we compare this second and the third equations then we can say that this
+[06:17] current Ic1 is same as the current Ix.
+[06:22] That means this current Ic1 is equal to 31 times Ic.
+[06:27] And we know that this current Ic1 is equal to Is times this e to the power this VBE1
+[06:34] divided by VT.
+[06:36] Where this VBE1 is the voltage across the Bayesian A meter terminal of this transistor
+[06:41] Q1.
+[06:42] And similarly this Ic is equal to this Is times e to the power this 0.7 divided by VT.
+[06:52] Because for this 31 transistors this VBE is equal to 0.7 volt.
+[06:58] So here this Is will get cancelled out on both sides.
+[07:02] And further if we simplify it then we can write it as this 31 is equal to this e to the
+[07:08] power this VBE1 minus 0.7 divided by VT.
+[07:15] So now if we take the natural log on both sides then we can write it as this natural log
+[07:21] of 31 that is equal to this VBE1 minus 0.7 divided by VT.
+[07:29] And here is VT is equal to 26 milli volt.
+[07:33] So if we further solve it this equation for the VBE1 then the value of this VBE1 will
+[07:38] come out as 0.7892 volt.
+[07:42] That means this voltage is equal to 0.7892 volt.
+[07:47] So now since we know this voltage then we can easily find the output voltage.
+[07:52] So now to find the output voltage once again let us compare these two equations.
+[07:58] Because we know that this current IC1 is same as the current IX that is V out minus VBE1
+[08:05] divided by 20 kilo ohm.
+[08:07] He is same as the VBE1 minus 0.7 divided by 5 kilo ohm.
+[08:12] So now we already know the value of this VBE1 and from that we can easily find this output
+[08:18] voltage.
+[08:19] So further we can write this expression as V out minus this 0.7892 volt divided by 20
+[08:28] kilo ohm that is equal to this 0.7892 volt minus 0.7 volt divided by 5 kilo ohm.
+[08:38] So now if we further simplify this expression for the output voltage V out then the value
+[08:42] of this V out will come out as this 1.1463 volt.
+[08:48] That means this output voltage V out is equal to 1.1463 volt.
+[08:53] So in this way we found the output voltage for the given circuit.
+[08:57] So from this we can say that for the given circuit the output voltage V out is equal to
+[09:02] 1.1463 volt.

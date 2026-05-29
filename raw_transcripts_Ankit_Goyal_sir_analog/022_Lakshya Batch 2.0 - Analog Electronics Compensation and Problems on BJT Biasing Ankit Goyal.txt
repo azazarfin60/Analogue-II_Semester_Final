@@ -1,0 +1,1769 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Compensation and Problems on BJT Biasing | Ankit Goyal
+URL: https://www.youtube.com/watch?v=y269SV-YV7U
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:10] A very good morning to all of you.
+[00:12] We are back in the Lakshya batch 2.0 for Analog Electronics.
+[00:16] And we saw the questions of BJT Bison yesterday.
+[00:20] We did the assignment of BJT Bison yesterday.
+[00:24] Today we are going to continue.
+[00:26] Today we will talk about compensation techniques.
+[00:29] And I am going to give you some more questions of Bison.
+[00:32] After which your Bison partner will be finished once and for all.
+[00:38] Okay.
+[00:39] Now if I start talking about compensation first.
+[00:43] When I told you about Q point.
+[00:46] I told you about Q point.
+[00:48] What is the relevance of Q point?
+[00:50] Why is Q point found out?
+[00:53] Because it comes from DC analysis.
+[00:55] And it fluctuates around your AC signal.
+[00:59] It oscillates around your AC signal.
+[01:03] And we linearize the characteristic on Q point.
+[01:08] Which makes AC model our linear.
+[01:11] Right?
+[01:12] AC model which makes our linear.
+[01:15] Now we had read how Q point is taken out.
+[01:18] It is determined by the intersection of
+[01:22] transistor characteristic and the load line.
+[01:25] It comes from the intersection of two graphs.
+[01:27] Characteristic and load line.
+[01:29] After this we said that because of temperature,
+[01:34] Q point is unstable.
+[01:36] Where we saw that Q point increases temperature.
+[01:39] From active region to saturation region.
+[01:43] And we defined the stability factor there.
+[01:46] In the stability factor we saw the most dependency.
+[01:50] That dependency is on reverse saturation current.
+[01:54] ICBO or you can say ICO.
+[01:58] Then I gave you different biasing techniques.
+[02:01] And in every biasing technique we found the stability factor.
+[02:05] So we saw that the collector to base bias has less stability factor.
+[02:09] Ammeter resistance has lessed your stability factor.
+[02:13] So these are the good biasing techniques.
+[02:16] Today I will continue from there.
+[02:18] I will talk about the stability of Q point.
+[02:21] But not from its stability biasing techniques.
+[02:24] We will use some non-linear devices to control.
+[02:28] Like diode, transistor, thermistor,
+[02:32] sensor, some such devices will try to make Q point stable.
+[02:38] And that is known as the compensation technique.
+[02:41] Okay so everyone is ready.
+[02:44] Like the session quickly.
+[02:46] Share the session everywhere.
+[02:49] Tell everyone that uncle sir is now live.
+[02:51] So that everybody connects with me live in this session.
+[02:55] But before we start let me also tell you about one thing.
+[02:58] Tomorrow your son is going to be in combat.
+[03:02] This is the biggest combat of the day.
+[03:04] Tomorrow it will be 11 o'clock.
+[03:07] Tomorrow it will be 11 o'clock.
+[03:08] There will be a test of 60 minutes.
+[03:11] Your majority of the portion will be of max and apt.
+[03:15] That is why everyone give this test.
+[03:19] It will be in 6 branches.
+[03:21] And the children who have filled the form of gate 23.
+[03:23] The most important for them is that.
+[03:26] In every branch 500 children's gate fees will be refunded.
+[03:31] Apart from this the children who want to come to the academy.
+[03:34] They will get scholarship from the pool of 30 crore.
+[03:38] Your college fees will also be refunded.
+[03:41] And there are many attractive prizes which you can win.
+[03:44] Like MacBook Air, iPhone, Dell laptop, Samsung mobile.
+[03:48] You can win all these things.
+[03:51] You can win all these things.
+[03:53] So dear do enroll for this.
+[03:55] There is a link in the description of this video.
+[03:57] Go and enroll quickly.
+[03:59] And if you ask for invite code.
+[04:01] Use the invite code.
+[04:04] Tomorrow in this combat you have to set fire to the children.
+[04:07] I want all my children's fees to be refunded.
+[04:10] Electrical and EC.
+[04:12] Students' fees to be refunded.
+[04:14] And for that you have to attend all of them.
+[04:18] Okay.
+[04:20] Shaurya, look.
+[04:21] The region of operation of transistor is taken out.
+[04:24] My child.
+[04:25] It is a simple biasing question.
+[04:27] Like I asked you the question of biasing yesterday.
+[04:29] IC and VCE came out.
+[04:32] Now if VCE is increased from point 2.
+[04:34] Then it is active.
+[04:35] Point 2 is smaller.
+[04:36] Saturation is over.
+[04:37] The region of operation has come.
+[04:39] Work has to be done in it.
+[04:41] Work has to be done anywhere.
+[04:43] The question we asked yesterday.
+[04:44] It will take as much effort.
+[04:46] You just have to check with the value of VCE.
+[04:49] And if you are going to a common base.
+[04:51] Then check with VCB.
+[04:53] If the collector base is reverse then it is active.
+[04:55] And if it is forward then it is saturation.
+[04:58] How many marks will be refunded at the minimum.
+[05:01] Look at the criteria.
+[05:03] Top 25 children.
+[05:05] Sorry, top 500 children.
+[05:07] Now if it goes to high scoring.
+[05:09] Then the score will be high.
+[05:12] What will be the MC?
+[05:13] The entire test will be MC.
+[05:15] One out of four choices.
+[05:17] You don't understand the cutoff.
+[05:19] There is no cutoff.
+[05:20] There is no cutoff.
+[05:22] There will be cutoff when your IB is negative.
+[05:25] Do you understand?
+[05:27] If your IB is negative.
+[05:29] Means the current has to go back.
+[05:31] Then you will call it cutoff.
+[05:33] That means the base emitter is reverse biased.
+[05:35] By the way, the question of cutoff will not be made.
+[05:37] Because all the things in the cutoff are zero.
+[05:39] What does the question mean?
+[05:42] And if you look at it like this.
+[05:44] You can judge the cutoff directly.
+[05:46] You can see in NPN or PNP transistor.
+[05:49] The voltage of the base or emitter is higher.
+[05:52] Then you will understand.
+[05:54] That is the forward bias or emitter based junction or reverse bias.
+[05:58] Zainul, I told you.
+[06:00] The changes in PNP and NPN.
+[06:02] That is in the direction of current.
+[06:04] And the voltage polarity.
+[06:06] Like in NPN transistor.
+[06:08] You talk about VBE.
+[06:10] You talk about VCE.
+[06:12] In PNP.
+[06:14] You will talk about VBC.
+[06:16] Sorry.
+[06:17] You will talk about VEB in the emitter base.
+[06:19] And you will talk about EC in the collector emitter.
+[06:21] In the place of CE.
+[06:23] Only the voltage will be plus or minus reverse.
+[06:25] The direction of the current will be reverse.
+[06:27] There will be no change.
+[06:29] The criteria is the same.
+[06:31] The criteria is the same.
+[06:33] The forward and reverse bias is the same.
+[06:35] There is no change.
+[06:37] The question of PNP.
+[06:39] Okay.
+[06:40] Let's go.
+[06:41] For the first time, the video was private for many days.
+[06:43] Now see, children will join in the middle.
+[06:45] Nothing can be done in this.
+[06:47] Obviously, some new child will join every day.
+[06:49] And for every child, the video cannot be public.
+[06:51] The attendance of this course.
+[06:53] It started from 300-400.
+[06:55] It has reached 50.
+[06:57] If I keep the video public, it will be 10 out of 50.
+[06:59] Okay.
+[07:01] What is the difference between
+[07:03] power amplifier and voltage amplifier?
+[07:05] Power amplifier is a large signal amplifier.
+[07:07] Where the input signal, the input AC signal
+[07:09] is comparable to DC.
+[07:11] It is not much smaller than DC.
+[07:13] Whereas in a voltage amplifier,
+[07:15] AC is much less than DC.
+[07:17] We also call it as the small signal amplifier.
+[07:19] Nice annual
+[07:21] point 2 will be
+[07:23] the criteria of point 2.
+[07:25] The criteria of zero
+[07:27] is on the collector base
+[07:29] and not on the collector emitter.
+[07:31] The criteria of zero is
+[07:33] on the collector emitter.
+[07:35] The criteria of collector emitter is
+[07:37] point 2.
+[07:39] But sir, for some time it was public.
+[07:41] Children, it was public.
+[07:43] It was public since last 7 days.
+[07:45] It is only private.
+[07:47] Now don't do this.
+[07:49] Now if you will show the quality,
+[07:51] that you are showing the quality,
+[07:53] that the public will see what is the speed.
+[07:55] Then I cannot help in that.
+[07:57] You will have to be proactive.
+[07:59] You will have to do hard work.
+[08:01] You will have to do hard work.
+[08:03] You will have to do hard work.
+[08:05] Let's start.
+[08:07] Compensation technique.
+[08:09] What were we doing in the biasing technique?
+[08:11] With the help of resistances,
+[08:13] we were stabilizing the Q point.
+[08:15] With the help of resistances,
+[08:17] we were stabilizing the Q point.
+[08:19] With the help of resistances,
+[08:21] we were stabilizing the Q point.
+[08:23] In the compensation technique,
+[08:25] we will use temperature dependent devices.
+[08:27] We will use which?
+[08:29] Temperature dependent devices.
+[08:31] We will use which?
+[08:33] Like diode, transistor,
+[08:35] thermistor, transistor.
+[08:37] We will cut the effect
+[08:39] of the temperature.
+[08:41] First we have used resistors.
+[08:43] Remember, one resistor
+[08:45] was placed between the collector and base.
+[08:47] Collector to base bias.
+[08:49] One resistor was placed between
+[08:51] the emitter and the ground.
+[08:53] The emitter was called resistance.
+[08:55] With the help of resistances,
+[08:57] we were stabilizing the Q point.
+[08:59] But now you will use
+[09:01] temperature sensing devices.
+[09:03] The first technique in this
+[09:05] is diode compensation.
+[09:07] But the diode
+[09:09] that you are going to use
+[09:11] in diode compensation,
+[09:13] will have the same material
+[09:15] like transistor.
+[09:17] If transistor is of silicon,
+[09:19] then diode will also be of silicon.
+[09:21] If transistor is of germanium,
+[09:23] then diode will also be of germanium.
+[09:25] The effect of temperature
+[09:27] is the same.
+[09:29] If the river saturation current
+[09:31] is double with the temperature,
+[09:33] then it will be double.
+[09:35] If the VBE is
+[09:37] 2.5 millivolts,
+[09:39] then it should be 2.5.
+[09:41] I want that identical variation.
+[09:43] I am not saying that all the
+[09:45] values are identical.
+[09:47] I am not saying that if it is
+[09:49] 0.7 in BJT, then it is 0.7 in diode.
+[09:51] But the change
+[09:53] in VBE
+[09:55] should be the same as
+[09:57] the change in diode voltage
+[09:59] with the temperature.
+[10:01] So what I am saying is that
+[10:03] the temperature should be the same.
+[10:05] And the temperature should be the same
+[10:07] when your material
+[10:09] will be the same.
+[10:11] Do you understand?
+[10:13] You can keep the doping separately.
+[10:15] One is more doping in BJT,
+[10:17] the other is less in diode.
+[10:19] But the material should be the same.
+[10:21] Clear? Tell me quickly.
+[10:23] Is this clear? I just want
+[10:25] that the variation
+[10:27] that came in BJT with the temperature
+[10:29] should be the same with the temperature
+[10:31] in diode.
+[10:33] Okay?
+[10:35] So let's see diode compensation.
+[10:37] Look at this circuit.
+[10:39] Under the emitter resistance
+[10:41] I put an extra circuit
+[10:43] which contains diode
+[10:45] resistance and a battery.
+[10:47] Isn't it? This battery
+[10:49] has forward biasing.
+[10:51] This battery
+[10:53] is basically
+[10:55] forward biasing
+[10:57] the diode.
+[11:07] Because of this battery,
+[11:09] our diode is in forward biasing.
+[11:11] Now sir,
+[11:13] let's see how the diode
+[11:15] cancels the effect
+[11:17] of the current.
+[11:19] Look at this. I have shown
+[11:21] the current of the diode.
+[11:25] Okay?
+[11:27] This is the voltage of the diode.
+[11:29] According to the forward biasing,
+[11:31] the polarity is VD.
+[11:33] Now what do I say here?
+[11:35] Look at this.
+[11:37] The current is coming here.
+[11:39] The current is coming here.
+[11:41] IE IC plus IB.
+[11:43] The current
+[11:45] is believed to be I
+[11:47] in the resistance of the diode.
+[11:49] It is believed to be I.
+[11:51] Okay?
+[11:53] And the current of the diode is your ID.
+[11:55] How much is the current of the diode?
+[11:57] ID.
+[11:59] The thing is clear that the current of the diode
+[12:01] is your ID.
+[12:03] Now what do I say here?
+[12:05] If we put KCL
+[12:07] then the current of the diode
+[12:09] is
+[12:11] I
+[12:13] is equal to E.
+[12:15] Correct? Yes.
+[12:17] Because the current of the diode
+[12:19] and IE is connected to I.
+[12:21] So the current of the diode
+[12:23] is I minus IE.
+[12:25] So we say
+[12:27] diode is on.
+[12:29] When will the diode
+[12:31] be on?
+[12:33] When will this ID
+[12:35] positive come?
+[12:37] When will the ID positive come?
+[12:39] When I minus IE
+[12:41] means I will be greater than IE.
+[12:45] How can you write IE?
+[12:47] How can you write IE?
+[12:49] You can write
+[12:51] battery
+[12:53] minus the voltage of the diode
+[12:55] by the resistance of the
+[12:57] and you can write IE
+[12:59] IC plus IB.
+[13:01] So this is the condition
+[13:03] in which you can say
+[13:05] your diode will be on.
+[13:07] Okay?
+[13:09] This is the condition.
+[13:11] Did you understand? I will write I from this loop KVL.
+[13:13] From this loop KVL.
+[13:15] How? This is zero.
+[13:17] The voltage here is minus VDD.
+[13:19] The voltage here is minus VD.
+[13:21] So minus VD minus
+[13:23] minus VDD
+[13:25] upon RD.
+[13:27] So this will be.
+[13:29] Think about it. This is zero.
+[13:31] So this is minus VD.
+[13:33] And this is minus VDD.
+[13:35] So the current is going
+[13:37] towards minus VDD.
+[13:39] So this will be the equation of the current.
+[13:41] Now the thing is
+[13:43] it is clear that when the diode
+[13:45] will be on.
+[13:47] Now how will we make sure
+[13:49] that here the effect of
+[13:51] diode temperature
+[13:53] is going to be cancelled.
+[13:55] It is going to be cancelled.
+[13:57] What do I do for that?
+[13:59] I say you put KVL.
+[14:01] You put KVL.
+[14:03] Okay?
+[14:05] Now when you will put KVL
+[14:07] my children.
+[14:09] So this current is your IB.
+[14:11] Okay? You will write
+[14:13] VTH
+[14:15] minus IB
+[14:17] RTH
+[14:19] minus
+[14:21] VBE
+[14:23] minus
+[14:25] IERE
+[14:27] plus
+[14:29] VD
+[14:31] equal to zero.
+[14:33] Plus VD equal to zero.
+[14:35] The thing is clear.
+[14:37] Now what will you write
+[14:39] IERE?
+[14:41] IC plus IB.
+[14:43] Okay? IC plus IB.
+[14:45] Do you understand?
+[14:47] So here it is VTH
+[14:51] IB.
+[14:53] Because of IC plus IB.
+[14:55] So RTH plus is coming.
+[14:57] I took the term IB.
+[14:59] Minus VBE
+[15:01] plus VD
+[15:03] plus. Sorry.
+[15:05] Minus
+[15:07] IERE.
+[15:13] This is zero.
+[15:15] Okay?
+[15:17] What is my aim here?
+[15:19] My aim is to take out IB.
+[15:21] So what do I do?
+[15:23] I tell you that
+[15:25] IC is
+[15:27] IC is
+[15:29] beta IB
+[15:31] plus
+[15:33] 1 plus
+[15:35] beta
+[15:37] ICBO.
+[15:39] This is how it is.
+[15:41] Beta IB plus 1 plus beta ICBO.
+[15:43] If you keep it like this
+[15:45] then
+[15:47] see take these terms together
+[15:49] which are the voltages.
+[15:55] Take these together.
+[15:57] Okay? Minus IB
+[16:03] RTH plus RE
+[16:09] Minus beta IB
+[16:13] RE
+[16:15] Minus 1 plus beta
+[16:17] ICBO
+[16:19] RE
+[16:21] So see
+[16:23] you can take out IB from here.
+[16:25] Children
+[16:27] take the term IB
+[16:29] to the right hand side.
+[16:35] See
+[16:37] this is it.
+[16:47] Now the term IB
+[16:49] connect
+[16:55] you can write
+[16:57] RTH
+[16:59] plus RE
+[17:03] plus beta RE
+[17:05] This is it.
+[17:07] Now we have to think
+[17:09] what is the benefit of using diode in this?
+[17:11] What has happened
+[17:13] that you have to use diode
+[17:15] or with diode
+[17:17] what is the benefit of using it?
+[17:19] You should notice
+[17:21] VBE and VD
+[17:23] both are signing the opposite sign
+[17:25] which means both are actually
+[17:27] subtracting.
+[17:29] If I say that
+[17:31] the temperature is the same in both
+[17:33] which means
+[17:35] 2.5 millivolts per
+[17:37] degree centigrade
+[17:39] changes.
+[17:41] 2.5 millivolts
+[17:43] per degree centigrade
+[17:45] then the difference between
+[17:47] both will be constant.
+[17:49] Think about it.
+[17:51] If both are changing
+[17:53] from the same amount
+[17:55] then the difference between both will be constant.
+[17:57] Means the problem of drift
+[17:59] remember I said that the temperature
+[18:01] that VBE changes
+[18:03] the problem is called drift.
+[18:05] The problem of drift is gone.
+[18:07] But the ICBO is not removed.
+[18:09] Can you see this? ICBO is not cancelled.
+[18:11] ICBO is still there.
+[18:13] So this method is canceling
+[18:15] the drift problem but not
+[18:17] the effect of ICBO.
+[18:19] Right?
+[18:21] The logic is clear.
+[18:25] VBE
+[18:27] and VD
+[18:29] are being
+[18:31] subtracted
+[18:35] are being subtracted.
+[18:39] So
+[18:41] if they have
+[18:47] if they have
+[18:49] same temperature
+[18:51] coefficient
+[18:57] their difference
+[19:03] does not vary
+[19:05] with
+[19:09] temperature
+[19:17] and hence
+[19:19] problem of
+[19:21] drift
+[19:23] is eliminated.
+[19:27] Is this all clear?
+[19:29] Because if this is clear
+[19:31] then we will go to the other problem.
+[19:33] The problem of ICBO is also a problem for us.
+[19:35] In fact, it is a big problem.
+[19:37] VBE
+[19:39] means the problem of drift is not as big
+[19:41] as ICBO.
+[19:43] Right?
+[19:45] The problem of ICBO is not as big as the problem of drift.
+[19:47] So we eliminated
+[19:49] a problem of drift here.
+[19:51] Now my aim is
+[19:53] how to cut
+[19:55] the ICBO factor.
+[19:57] Right?
+[19:59] So let's move on to the next.
+[20:01] The sensation of ICO.
+[20:03] Now see, they write ICBO in many places.
+[20:05] They write ICBO in many places.
+[20:07] The value of both is almost the same.
+[20:09] But if we go in detail
+[20:11] of the device.
+[20:13] What is the difference between ICBO and ICBO?
+[20:15] Other than ICBO,
+[20:17] there is also a contribution of surface currents.
+[20:19] Some currents flow
+[20:21] on the surface of the device,
+[20:23] not in the body of the device.
+[20:25] So ICBO is made of those two types of currents.
+[20:27] From ICBO and
+[20:29] surface currents.
+[20:31] But in general, we use ICBO
+[20:33] interchangeably.
+[20:35] Now see, I have shown you a new connection.
+[20:37] Here, the diode
+[20:39] is placed in reverse biasing.
+[20:41] Look, this is the positive terminal
+[20:43] of VBE.
+[20:45] It is connected with the cathode.
+[20:47] It is connected with the anode of negative terminal.
+[20:49] So we placed the diode in reverse bias.
+[20:51] Right?
+[20:53] So where do we use this?
+[20:55] In the Germanium transistor.
+[20:57] The temperature variation of ICBO
+[20:59] dominates VBE.
+[21:01] Which means,
+[21:03] in the Germanium transistor,
+[21:05] ICBO is a much bigger problem
+[21:07] than VBE.
+[21:09] Look, you cannot remove all the problems
+[21:11] from the transistor.
+[21:13] The problems will be something.
+[21:15] What will you do? You will eliminate the biggest problem.
+[21:17] In the Germanium,
+[21:19] the problem of ICBO is a big problem.
+[21:21] So we will use this.
+[21:23] In the silicon transistor,
+[21:25] if the problem of VBE is a big problem,
+[21:27] then you will use the previous circuit.
+[21:29] So what do we say here?
+[21:33] Diode
+[21:35] is
+[21:37] reverse biased.
+[21:39] Look,
+[21:41] the diode was biased forward.
+[21:43] Here reverse biased.
+[21:45] And carries
+[21:49] reverse
+[21:51] saturation current.
+[21:55] I0
+[22:05] I0
+[22:07] I0 carries.
+[22:09] The matter has been cleared up to here.
+[22:11] I0 carries.
+[22:13] Now look here,
+[22:15] if you write current I1.
+[22:17] I1
+[22:25] VCC-VBE
+[22:29] by R1.
+[22:31] Look,
+[22:33] VCC-VBE
+[22:35] by R1.
+[22:37] This is I1.
+[22:39] This is a constant value because you are not taking
+[22:41] the change of VBE.
+[22:43] Now I am not talking about the change of VBE.
+[22:45] I mean, whose purpose is it?
+[22:47] ICBO.
+[22:49] Now I say that if you ask me
+[22:51] what will be the base current?
+[22:53] So let's put KCL,
+[22:55] reverse saturation current from I1,
+[22:57] remove it.
+[22:59] What is IB?
+[23:01] I1-I0
+[23:03] KCL
+[23:05] I have put.
+[23:07] Now if you see,
+[23:09] if you want IC
+[23:13] put the first equation
+[23:15] beta IB
+[23:19] plus 1 plus beta
+[23:21] ICBO.
+[23:25] Okay?
+[23:27] Now how much is IB?
+[23:29] I1-I0
+[23:37] If I say that
+[23:39] beta is quite large
+[23:41] if my beta is
+[23:43] quite large
+[23:45] then 1 plus beta will be
+[23:47] approximately beta.
+[23:49] Suppose if beta is 100
+[23:51] then there is no difference
+[23:53] between 101 and 100.
+[23:57] So IC will be
+[23:59] beta I1
+[24:01] plus beta
+[24:03] ICBO
+[24:05] minus I0.
+[24:07] See?
+[24:09] Minus I0.
+[24:11] Now see what is here
+[24:13] that if these two
+[24:15] have the same temperature variation
+[24:17] that means
+[24:19] double for every 10 degree centigrade
+[24:21] rise in temperature
+[24:23] if both have the same
+[24:25] temperature variation
+[24:27] then their difference
+[24:29] that is
+[24:31] independent of
+[24:33] temperature.
+[24:35] Okay? That is
+[24:39] independent of
+[24:41] temperature.
+[24:43] Okay?
+[24:45] Okay?
+[24:47] This was clear
+[24:49] as you said about VBE and VD
+[24:51] that if both have the same temperature variation
+[24:53] then difference will become
+[24:55] independent of temperature
+[24:57] as well as here
+[24:59] this becomes independent of
+[25:01] temperature.
+[25:07] Okay? Clear?
+[25:09] Come on.
+[25:11] Now let's talk about
+[25:13] thermistor and transistor.
+[25:15] See?
+[25:17] If a light doping
+[25:19] has the same temperature variation
+[25:21] from the same material
+[25:23] then the same temperature
+[25:25] variation will occur.
+[25:27] Shreya has the effect on beta
+[25:29] of the temperature
+[25:31] but what did I say?
+[25:33] 3 things change from the temperature
+[25:35] VBE, ICBO and beta
+[25:37] You can cancel one variation
+[25:39] but not three.
+[25:41] So the first circuit was
+[25:43] canceling the effect of VBE
+[25:45] and the second circuit was
+[25:47] doing ICBO.
+[25:49] If you want to do beta then you have to
+[25:51] apply a different compensation.
+[25:53] But the change of beta is
+[25:55] so less that
+[25:57] no compensation is done for beta.
+[25:59] Come on.
+[26:01] Now see if we
+[26:03] talk about thermistor and transistor
+[26:05] later we will use them.
+[26:07] Now let's talk about the doping
+[26:09] semiconductor.
+[26:11] There is no doping in the
+[26:13] semiconductor.
+[26:15] There are very few charges in which
+[26:17] doping is less.
+[26:19] Because the doping atom
+[26:21] of the fifth group and third group
+[26:23] comes with charge carriers.
+[26:25] Third group comes with holes.
+[26:27] Fifth group comes with
+[26:29] electrons.
+[26:31] They bring a certain charge carrier.
+[26:33] So what are we saying?
+[26:35] The charge carriers will be very less.
+[26:37] As we increase the
+[26:39] temperature there
+[26:43] Double means 2 times
+[26:45] Oh God!
+[26:47] Who is the planet
+[26:49] that double means 2 times?
+[26:51] We have to confirm this also.
+[26:53] It's amazing.
+[26:55] Now listen, there is no chat in the middle.
+[26:57] Yes.
+[26:59] So the lightly doped semiconductor
+[27:01] has less doping in them.
+[27:03] There are very few charges in it.
+[27:05] Okay.
+[27:07] There are very few charges in it.
+[27:09] If there are few charges in it
+[27:11] then when you
+[27:13] increase the temperature
+[27:15] when you increase the temperature
+[27:17] when you increase the temperature
+[27:19] then there are
+[27:21] electron and hole
+[27:23] generated by the bond break.
+[27:25] What happens?
+[27:27] Electron and hole are generated by the bond break.
+[27:29] Okay.
+[27:31] When electron and hole are generated
+[27:33] then the charge carrier will increase there.
+[27:35] If the charge carrier increases
+[27:37] then the current can flow easily.
+[27:39] So you can say that resistance
+[27:41] will reduce.
+[27:43] Resistance will reduce.
+[27:45] Such devices are called
+[27:47] thermistor. Where the
+[27:49] resistance decreases by increasing the temperature
+[27:51] i.e. negative temperature
+[27:53] is coefficient.
+[27:55] What do you call it there?
+[27:57] You call it thermistor.
+[27:59] It is highly doped.
+[28:01] If it is highly doped
+[28:03] then the charge carrier is already
+[28:05] more than 1 lakh electrons in it.
+[28:07] If 4-5 electrons are added
+[28:09] then there will be no difference.
+[28:11] But with increasing the temperature
+[28:13] the collision also increases.
+[28:15] If the collision increases
+[28:17] then the current flows.
+[28:19] i.e. the obstacle will come.
+[28:21] Because of which
+[28:23] the current cannot flow easily
+[28:25] then with increasing the temperature
+[28:27] the charges will increase.
+[28:29] i.e. there are two things.
+[28:31] Either if the charges are less
+[28:33] then with increasing the temperature
+[28:35] the charges will increase
+[28:37] and the rate at which the charges will increase
+[28:39] will dominate.
+[28:41] And it will dominate
+[28:43] because of this
+[28:45] your current will increase with the temperature
+[28:47] or say that resistance
+[28:49] will decrease with the temperature.
+[28:51] So it is said that the thermistor is
+[28:53] negative temperature coefficient.
+[28:55] And if the charges are more than before
+[28:57] i.e. there is high doping
+[28:59] then the temperature increases
+[29:01] and the collision increases.
+[29:03] The changes in the charge carriers are very less
+[29:05] and very insignificant.
+[29:07] So there the resistance
+[29:09] increases with the temperature.
+[29:11] It is called as Sensistor.
+[29:13] Sensistor.
+[29:15] So the Sensistor is highly doped
+[29:17] and the thermistor is made of light doping.
+[29:21] Now the question was
+[29:23] if these two are double
+[29:25] then the difference will also be double.
+[29:27] The difference is
+[29:29] approximately zero
+[29:31] that is why there is no difference.
+[29:33] If this value is almost zero
+[29:35] then the double of zero will not make any difference.
+[29:37] That is why it happens.
+[29:39] Okay.
+[29:41] Now look at the first circuit.
+[29:43] What did I do here?
+[29:45] I put a thermistor here.
+[29:47] Is it fun to read analog?
+[29:49] Okay.
+[29:51] This is the VTH-RTH circuit.
+[29:53] It is not shown here.
+[29:55] It is voltage divider biasing.
+[29:57] You simplify the voltage divider biasing
+[29:59] and make it like this.
+[30:01] And here I put a thermistor
+[30:03] between supply and ammeter.
+[30:05] Between supply and ammeter.
+[30:07] Now look.
+[30:09] The current coming out of the ammeter
+[30:11] will be IE.
+[30:13] The current coming out of the ammeter
+[30:15] will be IE.
+[30:17] The current coming out of the thermistor
+[30:19] will be the current coming out of the ammeter.
+[30:21] That will be the sum of the two
+[30:23] IE plus IT.
+[30:25] How much will be IE plus IT?
+[30:27] Now sir,
+[30:29] see how the Q point is stable here.
+[30:31] Let me explain.
+[30:33] Let me tell you.
+[30:35] As temperature increases
+[30:39] ICO
+[30:41] increases
+[30:43] CO and CBO are same for you.
+[30:45] ICO increases
+[30:47] ICO increases
+[30:49] Collector current increases
+[30:51] Collector current increases
+[30:55] If my children are increasing
+[30:57] Collector current increases
+[30:59] the Ammeter current increases
+[31:01] Ammeter current increases
+[31:03] one second
+[31:05] If collector current increases
+[31:07] The rest temperature increases
+[31:09] your RT will decrease.
+[31:13] If resistance
+[31:15] If this resistance decreases, then the current will increase in this thermistor.
+[31:21] If the current increases in the thermistor, then this IE plus IT will increase.
+[31:27] IE plus IT will increase.
+[31:32] Which means if you see the voltage of this emitter,
+[31:38] call it as VEN, till the neutral ground, then IE plus IT will increase.
+[31:50] So if IT increases, then VEN will increase.
+[31:56] It will increase, right?
+[31:58] Now if I take out VBE from here, what should I take out? VBE.
+[32:04] So I will put KVL in this loop, dear.
+[32:07] I will put KVL in this loop.
+[32:10] You see.
+[32:12] I write VTH minus IBRTH minus VBE minus VEN.
+[32:26] So if you want, then you can take out IB.
+[32:30] Consider VBE as constant for now.
+[32:33] Because you are seeing the effect of ICBO, right?
+[32:36] So don't take any change on VBE.
+[32:40] Consider VBE as fixed.
+[32:43] Dear, what am I saying?
+[32:45] If VEN increases, then IB will decrease.
+[32:49] And IB will decrease, then IC will decrease.
+[32:53] If beta depends on IB, then IC will decrease.
+[32:57] Did you understand?
+[32:59] Did you understand?
+[33:01] Now I have told you that both the values are very close, dear.
+[33:05] So the difference between the two is not equal.
+[33:08] And because the difference is not equal, then you can say that
+[33:12] the effect of temperature is cancelled out.
+[33:15] Now what are you taking?
+[33:16] You are taking a double relation between ICBO and I0.
+[33:19] Both are almost equal.
+[33:22] Is it clear?
+[33:24] So dear, what basically happened here?
+[33:26] What happened here is that this voltage is VEN.
+[33:30] This is the work of negative feedback.
+[33:33] VEN is acting as negative feedback.
+[33:39] Sir, how is negative feedback?
+[33:41] Because, dear, is it connected with output or with collector?
+[33:45] Okay, what is the criteria of negative feedback?
+[33:50] First of all, this is connected to output.
+[33:53] It is connected on the collector side.
+[33:56] Second thing, it is reducing input current.
+[34:02] Negative feedback always cancels the input.
+[34:06] It always reduces the input.
+[34:09] So it is connected with output and the input is dropping.
+[34:13] Okay?
+[34:14] It is connected with output and the input is dropping.
+[34:18] This means it is acting as a negative feedback.
+[34:22] It is acting as a negative feedback.
+[34:25] Aniket, dear, how many years have you slept and where are you today?
+[34:29] This is the question you are asking.
+[34:32] How many years ago did you sleep which is open today?
+[34:36] Okay?
+[34:37] Did you understand the negative feedback?
+[34:39] What happens?
+[34:40] A system which is connected with output and is dropping the input.
+[34:44] Then you will say negative feedback.
+[34:46] Next is, dear, SENSISTER COMPENSATION.
+[34:50] What happens?
+[34:51] SENSISTER, dear.
+[34:52] VCC means collector side is output.
+[34:55] Collector emitter is always output.
+[34:57] Base emitter is the input.
+[34:59] So whatever is connected to collector emitter, it is called output.
+[35:02] Next, look at SENSISTER.
+[35:05] I have made this RE from which?
+[35:07] From SENSISTER.
+[35:09] From which?
+[35:10] From SENSISTER.
+[35:11] Now, look again.
+[35:14] As temperature increases,
+[35:17] ICO increases,
+[35:22] IC increases.
+[35:25] Now, if you put KVL here, dear,
+[35:31] then I say,
+[35:33] VTH
+[35:36] minus IBRTH
+[35:40] minus VBE
+[35:44] minus IERE.
+[35:50] Okay?
+[35:51] So, if you write IEC plus IB,
+[35:56] then you can write IB like this.
+[35:58] VTH
+[36:00] minus VBE
+[36:03] minus ICRE
+[36:06] by
+[36:08] RTH plus RE.
+[36:10] I have written IEC plus IB.
+[36:14] Now, what am I saying?
+[36:16] Okay?
+[36:17] What am I saying?
+[36:18] Or do you know that you can write like this?
+[36:20] Let me tell you one more easy way,
+[36:22] that you let IEC stay here.
+[36:25] It will look a little more simple.
+[36:30] Come on, write like this.
+[36:32] No problem.
+[36:37] Now, what am I saying, dear?
+[36:39] If the temperature increases,
+[36:43] the resistance of SENSISTER will increase.
+[36:47] Which means the IB will decrease if the RE increases.
+[36:51] If the IB decreases, then the IC will also decrease.
+[36:55] So, even if the temperature increases,
+[36:57] because of the ICBO,
+[36:58] the IC was increasing,
+[37:00] but because the IB was decreasing,
+[37:03] the IC was decreasing.
+[37:04] So, you compensated.
+[37:06] The increment that has come because of the ICBO,
+[37:10] you reduced it by reducing the value of IB.
+[37:14] You reduced it by reducing the value of IB.
+[37:18] Now, if we use both together.
+[37:22] We use both together, dear.
+[37:25] What will we say?
+[37:26] This is R2 resistance thermistor,
+[37:29] R1 SENSISTER.
+[37:31] Now, you know this very well, dear.
+[37:35] As the temperature increases,
+[37:38] the IC will increase.
+[37:41] The IC will increase from this.
+[37:44] But you also see this, dear.
+[37:47] What will be VTH?
+[37:52] VCC
+[37:55] into R2
+[37:58] by R1 plus R2.
+[38:00] This will happen.
+[38:02] So, as the temperature increases,
+[38:06] R2 decreases
+[38:09] and R1 increases.
+[38:13] R2 decreases
+[38:15] and R1 increases.
+[38:17] Therefore,
+[38:19] VTH reduces.
+[38:23] Now, dear, if VTH is reduced, my child,
+[38:26] that is, the supply voltage is reduced,
+[38:29] so the current of the base will also be reduced.
+[38:32] The current of the base will also be reduced.
+[38:37] IB decreases.
+[38:40] If IB decreases, that means the IC will decrease.
+[38:45] Isn't it?
+[38:47] Clear?
+[38:48] If you make a voltage divider network
+[38:50] using thermistor and SENSISTER,
+[38:53] then you can compensate the effect of temperature.
+[38:57] Tell me, did you understand or not?
+[38:59] Speak quickly, brother.
+[39:13] Did you understand?
+[39:15] Now, the third is, dear,
+[39:17] Transistor Compensation.
+[39:19] Which is it?
+[39:20] Transistor Compensation.
+[39:22] Look here, you have started two transistors.
+[39:25] Right?
+[39:26] You have started two transistors.
+[39:28] Both of them are NPN.
+[39:30] Both of them are NPN.
+[39:32] The base is connected to the collector from this.
+[39:35] The base is connected to the collector from the previous one.
+[39:38] Jaiesh, dear, stop for a while.
+[39:40] What will I do from tomorrow?
+[39:41] We will ask questions before studying.
+[39:43] Then we will study theory, right?
+[39:45] So, from the beginning, you will have an idea
+[39:46] of how numerical will come.
+[39:48] What will you do next time?
+[39:49] First numerical, then theory.
+[39:51] Now, look here, the collector is connected to the base.
+[39:54] And its emitter is connected to the base again.
+[39:58] That is, this resistance is
+[40:01] doing the work of feedback.
+[40:03] Because it is coming back from the output transistor
+[40:06] to the input.
+[40:08] Okay?
+[40:09] It is coming back from the output transistor
+[40:11] to the input.
+[40:12] The rest, look at both the emitter resistance
+[40:15] and both the collector resistance.
+[40:17] Okay?
+[40:19] Now, sir, how will this help
+[40:21] to compensate the temperature?
+[40:24] How will this help?
+[40:28] Now, look.
+[40:30] As temperature increases,
+[40:33] ICO increases,
+[40:35] I say that the output transistor
+[40:38] will increase its collector current.
+[40:40] Will it increase?
+[40:42] Tell me.
+[40:43] Will the collector current increase?
+[40:44] Is there any doubt in this?
+[40:46] Is there any doubt in this?
+[40:48] Will the collector current increase?
+[40:50] If my child is increasing its collector current,
+[40:53] then can you say this?
+[40:58] If its collector current is increasing,
+[41:01] then can I say this?
+[41:03] The voltage of this point is VA.
+[41:06] Don't think that it is written as early voltage.
+[41:08] If the voltage of this point is VA,
+[41:11] then will the VA increase?
+[41:13] Tell me.
+[41:15] Okay, look at one thing here.
+[41:17] This current
+[41:19] is this one.
+[41:23] This is IB1.
+[41:25] It is coming here.
+[41:27] IE2
+[41:29] which is IC2 plus IB2.
+[41:31] Out of that, IB1 is gone.
+[41:33] So, this is approximately
+[41:35] IC2.
+[41:37] IC2.
+[41:38] The current between B1 and B2 is cut.
+[41:41] Now, here I say
+[41:43] that if IC2 increases,
+[41:45] VA
+[41:46] which is approximately
+[41:48] IC2 into RE2
+[41:50] will also increase.
+[41:52] This VA
+[41:54] which is increasing
+[41:56] is increasing the base voltage of the first transistor.
+[42:00] Do you understand this?
+[42:02] This VA which is increasing
+[42:04] is increasing the base voltage of the first transistor.
+[42:06] If you say
+[42:08] the voltage of this point is VB1,
+[42:11] then you can say
+[42:13] that if VA is increasing,
+[42:15] then this IB1 current
+[42:17] VA minus VB1 by R
+[42:21] will also increase this current.
+[42:25] Okay.
+[42:26] If IB1 increases,
+[42:28] listen carefully, if IB1 increases,
+[42:31] then what will happen?
+[42:33] Then IC1 will also increase.
+[42:35] The first transistor
+[42:37] which is the collector current will also increase.
+[42:39] If IC1 increases,
+[42:41] then see this current
+[42:43] is IC1 plus IB2.
+[42:47] If IC1 plus IB2 increases,
+[42:49] then what can you say
+[42:51] when you put KVL like this?
+[42:56] What will you write if you put KVL?
+[42:58] VCC
+[43:03] IC1 plus IB2
+[43:06] RC1
+[43:08] minus
+[43:10] VBE2
+[43:12] I am putting this in the arrow direction
+[43:14] KVL
+[43:16] is equal to VA.
+[43:18] Isn't it?
+[43:19] You have come to VA.
+[43:22] What will happen here?
+[43:24] As soon as your
+[43:26] IC1 increases,
+[43:30] then your IC1 plus IB2
+[43:32] is removed from here.
+[43:34] See, do one thing.
+[43:36] Remove IC1 plus IB2.
+[43:46] You are saying that VA is increasing.
+[43:49] If VA is increasing,
+[43:51] then this value will be reduced.
+[43:53] Think about it.
+[43:55] If VA is increasing, then this value will be reduced.
+[43:57] But sir, IC1 was increasing.
+[43:59] But sir, IC1 was increasing.
+[44:01] So we think this should increase.
+[44:03] That's right.
+[44:04] Overall, the value is decreasing
+[44:06] because VA is increasing.
+[44:08] But IC1 is increasing.
+[44:10] This means therefore
+[44:12] IB2 decreases.
+[44:15] And if IB2 decreases,
+[44:17] then IC2 decreases.
+[44:19] Understood?
+[44:20] If the sum of two values is increasing,
+[44:23] but one value is increasing,
+[44:25] this means that the other one
+[44:27] will have to decrease.
+[44:29] This means that the other one
+[44:31] will have to decrease.
+[44:32] Do you understand?
+[44:33] The sum of two values
+[44:35] was reduced.
+[44:36] When one value was increased,
+[44:39] this means that the other value
+[44:41] would have been reduced.
+[44:42] So IB2 would have been reduced.
+[44:44] That means IC2 would have been reduced.
+[44:46] So this is how
+[44:48] the transistor compensation works.
+[44:50] Right?
+[44:51] So basically, all in all,
+[44:53] you can think that,
+[44:54] this is your transistor,
+[44:56] thermistor,
+[44:57] transistor compensation.
+[44:59] What have you tried everywhere?
+[45:01] Increasing the temperature
+[45:03] increases ICBO.
+[45:04] So if I
+[45:06] drop the base current,
+[45:08] then I can compensate the collector current.
+[45:11] So I tried to reduce the base current
+[45:13] by compensating the collector current.
+[45:15] Okay?
+[45:16] Let's come to numericals.
+[45:18] Diodes are used to compensate
+[45:20] which of the following parameters
+[45:23] will be VEB.
+[45:27] Okay?
+[45:29] Which parameters
+[45:31] are used to compensate?
+[45:33] Tell me.
+[45:36] Which parameters
+[45:38] can you compensate from the diode?
+[45:43] Okay.
+[45:59] What is this?
+[46:00] A?
+[46:01] Yes.
+[46:02] I had told you about two circuits.
+[46:04] The first circuit was ICBO
+[46:06] and the second circuit was VBE.
+[46:08] Sorry.
+[46:09] The first was VBE
+[46:10] and the second was ICBO.
+[46:12] So the answer should be A.
+[46:14] Okay?
+[46:15] Let's compensate the beta.
+[46:17] Have you forgotten?
+[46:18] In the first circuit,
+[46:19] there was a drift problem.
+[46:20] VBE was cancelled by VD.
+[46:23] In the second circuit,
+[46:24] ICBO was cancelled by I0.
+[46:27] So you cancelled only two parameters.
+[46:30] You cancelled the beta a little.
+[46:33] Look at the next one.
+[46:35] In the circuit shown below,
+[46:37] VBE is 0.7,
+[46:39] beta of the transistor and
+[46:42] VBE are respectively
+[46:45] VBE
+[46:47] No, it must be VCE.
+[46:50] Beta and VCE.
+[46:56] Look at this circuit.
+[46:58] You don't even know beta.
+[46:59] You just know VBE.
+[47:13] Now look at the next class.
+[47:15] It will be Monday, right?
+[47:17] So tomorrow is a combat.
+[47:19] Give combat well.
+[47:20] Give a little work.
+[47:22] Sit in a relaxed environment.
+[47:24] You will do well.
+[47:25] Focus on the right answer.
+[47:27] I will tell you this.
+[47:29] If you get 100% answers right.
+[47:31] Speed will be a little bit 19-20.
+[47:33] Then you will win.
+[47:35] From the first rank,
+[47:36] you will be in the top 100.
+[47:38] So don't do this because of speed.
+[47:40] Do mistakes.
+[47:41] Because it is difficult to recover
+[47:43] the marks you lose.
+[47:50] The control system is getting controlled.
+[47:52] It is a very good thing.
+[47:54] Tell me, have you made it?
+[47:58] Have you made it or not?
+[48:01] I am taking a lot of time.
+[48:11] See it.
+[48:23] Man, I've seen some lectures in Power Electronics.
+[48:25] Can I make it later?
+[48:28] What is coming?
+[48:29] Look.
+[48:31] Look.
+[48:33] I don't know beta here.
+[48:35] Alright.
+[48:36] But I know that
+[48:37] Zeener diode is 6 volts.
+[48:39] Voltage.
+[48:40] 0 means 6 here, so if I take out I from here, then how will you take out I, there is 10 at the top and 6 at the bottom.
+[48:51] The current of 4 KM is 10-6 by 4K, 1 milliampere.
+[48:58] Now see this I is coming, 1 milliampere from which 0.5 milliampere is going in Zener.
+[49:06] 1 milliampere is coming, 0.5 is going in Zener.
+[49:10] This means the remaining 0.5 will go into the base.
+[49:14] The remaining 0.5 will go into the base.
+[49:18] Now look at the other thing, there are 6 volts here.
+[49:21] VBE said that it is 0.7.
+[49:24] So it means the drop of 0.7 is coming.
+[49:28] So if a drop of 0.7 comes out of 6, then it will be 5.3 volts.
+[49:36] What will it be here? 5.3 volts.
+[49:40] Now if I ask you IE.
+[49:58] I have done it in KM, this is done.
+[50:01] Now my children IE is 1 plus beta IB.
+[50:06] IB is 0.5 milliampere.
+[50:10] So from here beta will come 19.
+[50:14] OK, you have shown IB is 0.5.
+[50:17] The one who is entering in the base, beta is 19.
+[50:20] Now he is asking VCE.
+[50:22] So if I take out IC, beta IB will be 9.5 milliampere.
+[50:34] So if I ask you how much is the collector voltage,
+[50:39] then you will say sir 10 minus 9.5 into 0.2.
+[50:48] 8.1 volts.
+[50:50] So VCE, collector minus emitter is 2.8.
+[50:57] So what did it come?
+[50:59] It came.
+[51:00] Right?
+[51:01] The collector's voltage is different.
+[51:03] The emitter is different.
+[51:04] It has subtracted both.
+[51:06] Is it clear?
+[51:08] Tell me.
+[51:09] Is it clear to everyone?
+[51:11] Come on.
+[51:12] Try the next one.
+[51:13] It is a similar type question.
+[51:15] Base emitter drop is 0.6.
+[51:18] Zener voltage is 5.3.
+[51:21] I have asked you, tell me beta.
+[51:24] Tell me beta.
+[51:26] It is a similar question.
+[51:28] Now see, I have included Zener in BJT.
+[51:32] And you are able to take it out.
+[51:34] So if you see, overall the game is all about the circuit.
+[51:38] I am putting some big and small concept in it.
+[51:41] So analog is all about circuits.
+[51:43] So if you are good at solving circuits,
+[51:45] then you can solve every question of analog.
+[51:49] Come on, make it.
+[51:51] I have given you the entire space.
+[51:54] Solve it.
+[52:07] Rudresh, the basic of electrical will come.
+[52:09] And its weight will also be less.
+[52:11] Okay.
+[52:12] The basic of electrical is going to come.
+[52:14] And it will be like this.
+[52:16] The second year kids will also solve it.
+[52:18] They will not come to the subject of third year.
+[52:20] It is 19 again.
+[52:22] See.
+[52:23] See this is 0 volt.
+[52:25] This voltage of Zener is reverse bias.
+[52:29] So here it is 5.3.
+[52:32] Again if I take out I.
+[52:38] 10 minus 5.3.
+[52:42] By 4.7 K.
+[52:46] So this is 1 milli ampere.
+[52:50] Okay.
+[52:51] Out of which 0.5 went in Zener.
+[52:54] So the remaining 0.5 will come in the base.
+[52:59] Okay.
+[53:00] Rest here it is 5.3.
+[53:02] And this is the drop of 0.6.
+[53:06] So the voltage of the emitter will come.
+[53:19] So the current of the emitter will come.
+[53:32] 10 milli ampere.
+[53:34] And this will be 1 plus beta I B.
+[53:44] So beta will come 19.
+[53:46] Okay.
+[53:47] Beta will come out to be 19.
+[53:50] Is it clear?
+[53:52] Let's see the next one.
+[53:54] In the fixed bias method.
+[53:56] Silicone transistor.
+[53:58] Okay.
+[53:59] With beta 100 is used.
+[54:01] VCC RC RB is also given.
+[54:04] This will be kilo ohm.
+[54:06] This will not be J.
+[54:07] This will be K.
+[54:09] D.C. load line is to be made.
+[54:11] Operating point is to be shown.
+[54:13] Stability factor is to be shown.
+[54:16] I will show you the circuit.
+[54:19] Because they did not give the circuit.
+[54:21] They have directly asked.
+[54:31] Okay.
+[54:43] See till now I did not ask you the question of stability factor.
+[54:47] So here it is.
+[54:49] Here it is.
+[54:50] Okay.
+[54:51] Like this.
+[54:52] Fixed bias used to be like this.
+[54:54] VCC used to be connected to the base.
+[55:02] VCC used to be connected to the base.
+[55:05] VCC used to be connected to the base.
+[55:09] VCC used to be connected to the base.
+[55:11] VCC used to be connected to the base.
+[55:14] So here it is.
+[55:16] So there will be no problem with the diagram.
+[55:18] So we will see.
+[55:22] Okay.
+[55:23] It is very easy to make a DC load line,
+[55:50] The load line is the graph of IC and VCE.
+[56:00] Just write KVA, that is the load line.
+[56:03] Just write KVA and tell the value of IC in this circuit.
+[56:07] In terms of VCE, what will come?
+[56:12] Tell as much as you want.
+[56:17] First ask for the load line and draw the DC load line.
+[56:23] How will you write KVL?
+[56:25] So IC is 6-3IC-VCE is 0.
+[56:33] So IC is 6-VCE by 3.
+[56:51] This is the load line.
+[56:54] Now what is it saying?
+[56:56] Operating point means IC and VCE.
+[57:01] Now see how it will happen.
+[57:03] The current here will be base current.
+[57:06] Here you will take the drop of 0.7.
+[57:10] Which means the voltage is 0.7 directly.
+[57:14] Because the gain of 0.7 is 0.
+[57:17] So if I say to take out the base current,
+[57:20] you will say 6-0.7 by 530 kilo ohms.
+[57:28] 5.3 by 530 is 0.01 milliampere.
+[57:34] With which you can write IC as beta.
+[57:37] Remember to always take the resistance in kilo.
+[57:40] So the current will come in milliampere.
+[57:43] 1 milliampere.
+[57:45] And if you take out VCE from here.
+[57:52] From load line VCE is 6-3IC is 3V.
+[58:02] So 1 milliampere or 3V.
+[58:05] Very good.
+[58:07] So Swati, your voltage is wrong.
+[58:09] 2.3 is not 3.
+[58:11] Now last stability factor.
+[58:13] What was the way of the stability factor?
+[58:16] The way of the stability factor was
+[58:19] to put KVL in the input loop.
+[58:23] Like this.
+[58:25] So we used to write
+[58:29] 6-530 IB
+[58:33] minus VBE is 0.
+[58:37] Now what you used to do is differentiate both sides.
+[58:42] With respect to IC.
+[58:50] So we try to take out the derivative of IB.
+[58:53] Del IB by Del IC.
+[59:06] So the stability factor was 1 plus beta.
+[59:14] Del IB by Del IC was 0.
+[59:18] So this was 1 plus beta.
+[59:21] Which becomes 101.
+[59:24] Okay?
+[59:25] 101. Very good.
+[59:27] Because there is no R in it.
+[59:29] So the stability factor will not be reduced.
+[59:31] It will be 101.
+[59:33] 1 plus beta.
+[59:35] There is no resistance in meter.
+[59:37] The next question is similar.
+[59:39] I have given the same.
+[59:41] Let's come to the next.
+[59:43] In the BJT circuit,
+[59:45] beta 125 VBE 0.7
+[59:47] Q point or stability factor.
+[59:49] Come on.
+[59:51] Dual supply bias is done.
+[59:55] Q point or stability factor.
+[59:57] First we will work on Q point.
+[59:59] Take out IC and VC.
+[60:05] As you can see in the last question,
+[60:08] our answer for VCE is 3 volts.
+[60:10] It is more than point 2.
+[60:12] That means active region of operation is over.
+[60:14] This is the fund of region of operation.
+[60:34] Power electronic pdf will be on my telegram channel.
+[60:44] Because I haven't checked it for a long time.
+[60:46] I think it has been up since 1 year.
+[60:48] I have covered it.
+[61:04] Q point has come.
+[61:34] Q point.
+[61:54] See.
+[61:56] First of all,
+[61:58] because of voltage divider network,
+[62:00] we take out VTH.
+[62:02] Now it is clear how we take out VTH.
+[62:04] First we take A10.
+[62:06] We ground it.
+[62:08] Then we take out 40 k cross.
+[62:10] When we ground the lower one,
+[62:12] we take out 40 k cross.
+[62:18] Then we ground the upper one.
+[62:22] Then we take out 60 k cross from the lower one.
+[62:26] I told this in yesterday's lecture.
+[62:28] So, 400, 600, 200.
+[62:32] So, minus 2 volts.
+[62:34] RTH will be
+[62:40] 40 parallel 60
+[62:46] 24 kilo ohms.
+[62:48] They get 24 kilo ohms.
+[62:58] Now,
+[63:18] See,
+[63:20] what you are saying is cut off.
+[63:22] I will tell you that.
+[63:24] First,
+[63:26] you have to see the nature of the transistor.
+[63:30] What is its nature?
+[63:32] It is NPN.
+[63:36] Now, see in the base emitter.
+[63:38] It is on P, minus 2.
+[63:40] It will look like cut off.
+[63:42] But no.
+[63:44] Look at N, minus 10.
+[63:46] That is, the voltage of N is less than P.
+[63:48] If the voltage of N is less than P,
+[63:50] then it is forward biased.
+[63:52] So, it will not go into cut off.
+[63:54] So, you have to check the voltage of P and N
+[63:56] directly in the base emitter.
+[63:58] Check the forward reverse.
+[64:00] If the reverse was done.
+[64:02] Suppose here minus 10, here minus 2.
+[64:04] Then it would be cut off.
+[64:06] But minus 2 and minus 10 are there.
+[64:08] So, it is forward.
+[64:10] There are two options left.
+[64:14] Now, the voltage of the base emitter is
+[64:16] 0.7.
+[64:18] Okay.
+[64:20] Now, you solve it.
+[64:22] So, minus 2,
+[64:26] minus 24 IB
+[64:30] minus 0.7
+[64:32] minus 2 IE
+[64:34] is minus 10.
+[64:38] So, 8, 7.3
+[64:42] is IB.
+[64:46] You can write IE as 1 plus beta, right?
+[64:48] IB.
+[64:50] Beta IB.
+[64:56] Okay.
+[65:02] 276
+[65:06] 0.02645
+[65:14] Now, take out IC.
+[65:20] 125
+[65:22] into this.
+[65:24] 3.306
+[65:28] milli ampere.
+[65:30] Okay.
+[65:32] Now, here
+[65:38] we need VCE.
+[65:40] Okay.
+[65:42] So, we say 10
+[65:44] minus 2 IC
+[65:50] Okay.
+[66:02] So, look at it.
+[66:06] 20 minus 2 into answer
+[66:08] minus 2 into answer into
+[66:10] 126 by 125.
+[66:12] 6.722 volt.
+[66:16] Okay.
+[66:18] This is coming.
+[66:20] Tell others.
+[66:22] Yes, this is the answer of Swati.
+[66:24] So, this will be the answer.
+[66:26] Now, you need a stability factor.
+[66:28] For stability factor,
+[66:30] the KVL of input loop
+[66:32] which you are writing
+[66:34] VTH
+[66:36] minus IB
+[66:38] into 24
+[66:40] minus
+[66:42] VBE
+[66:44] write IE as IC plus IB
+[66:48] is equal to
+[66:50] minus 10.
+[66:52] Now, what will you say?
+[66:54] Differentiate
+[66:56] both sides
+[66:58] with respect to IB
+[67:08] del IB by del IC
+[67:18] plus IB
+[67:26] by del IC
+[67:34] by del IC
+[67:36] by del IC
+[67:44] by del IC
+[67:46] So 1 plus beta is 126, tell me how much is coming, this is how much is coming, 11.87, see
+[68:10] the stability factor is reduced and it is mainly because of which the resistance that you have
+[68:15] put in ammeter. So that's why I told you that ammeter resistance stabilizes the Q point but
+[68:21] the loss is that it reduces the gain. If you want to save the gain from reducing then you
+[68:27] put a capacitor in its parallel that is the bypass capacitor. Now I have given you PNP,
+[68:34] you keep crying for PNP, okay? The value of RC is asking and this is PNP. So this voltage
+[68:52] must be positive, both are made in the same way, so let's do it. Now look at the
+[69:00] positive terminal connected to P and negative means forward bias, okay? So ammeter base is forward
+[69:08] bias, so active or saturation is not possible, okay? Cutoff will not go.
+[69:39] Come on, make it.
+[69:44] By the way, you know this thing is very good that some children come to this class in such a consistent
+[69:49] time, they come every day, then what is it that they are writing in chat after removing the answer, otherwise
+[69:54] usually my experience of YouTube, I have seen that when we get questions of the gate level,
+[70:00] there are some lengthy questions, then the child does not have the motivation to remove the answer,
+[70:04] they leave the lecture and go to see later, they run away from things and if you run away,
+[70:11] the truth is this is the type of question that is going to come in the exam, if these things
+[70:15] run away, then how will it go? Then there will be a little exam, okay? See, do you know why
+[70:22] it is written here as mod because the voltage is V E B in PNP and it is written as V B E,
+[70:28] so it is written by mod that if you take NPN, take 0.7 and take PNP in minus because
+[70:35] the polarity will be opposite there, that is why it is given as mod because the voltage is opposite
+[70:40] between PNP and NPN, right? See, should I make it? Come on, I will make it.
+[70:49] See, take the voltage from P to N like this, 0.7, okay? See, what will happen here?
+[70:58] There will be an IB current here, so if you put KVL in the loop, then 10 minus 0.7 minus
+[71:10] IB RB is 0, so from here IB will be 9.3 by 100, 0.093 milli ampere, okay?
+[71:32] This is IB, IC which is beta IB, 0.93 into 5, 4.5, 4.65 milli ampere, okay?
+[71:50] See, this is IC. Now, he is saying that it is V0 and 5, so what will happen to RC?
+[72:01] See, it is very easy, the current going in RC is IC, it is going from V0 to 0, so V0 by IC,
+[72:09] so 5 by 4.65, 1.0752, simple, right? 1.0752, very good.
+[72:28] These classes are only live, it is up to 24 hours, the class is public, you can see it recorded.
+[72:35] How do I find out if it is PNP or NPN?
+[72:37] If I tell you, when Rudrey studied Transistor, the arrow is going from Ammeter to Base, so Ammeter will be P and Base will be N.
+[72:46] If the arrow comes from Base, Base will be P and Ammeter will be N.
+[72:51] Arrow always comes from P to N.
+[72:54] Now see, the arrow is coming from Base to Ammeter, so this will be P and this will be N.
+[72:59] So NPN is done, right?
+[73:09] Now see, you are making questions about BJT Biasing, and what are you stuck in?
+[73:13] PNP or NPN, how do you recognize?
+[73:19] Come on, 90% are becoming a question, it is a very good thing.
+[73:23] Rest, I will say that I am giving DPP, it should be done at home, right?
+[73:30] What happens in the class that it takes more time for a child, obviously I cannot give much time,
+[73:36] I cannot do that, I am standing for 10-15 minutes to get the answer,
+[73:40] so do not worry if the answer is not coming in the class,
+[73:42] when you sit at home at the end of the day, then it should be done.
+[73:46] Because it will not be like the class, you have to sit alone in the gate and ask questions.
+[73:51] So it should be done in the same environment.
+[73:58] VCE is asking, it is a silicon transistor.
+[74:01] When the silicon word comes, then immediately understand that the base emitter drop is to take 0.7.
+[74:08] See, see, this is to take 0.7.
+[74:14] Here it is 0, so it means 0.7.
+[74:19] Now this is to take out I.
+[74:23] So what will be I?
+[74:25] This will be I, okay?
+[74:45] Now once you get the base current, this is the base current,
+[74:53] so you take out the collector current,
+[74:56] beta 80, right?
+[75:03] 80 into this, if you do this,
+[75:08] 9.04,
+[75:14] once IC came,
+[75:17] then you put KVL,
+[75:20] 12 minus ICRC minus VCE is 0.
+[75:27] So VCE.
+[75:31] Now see, many children must be telling the answer A,
+[75:34] but my brother, when this is less than 0.2,
+[75:38] see, if this is less than 0.2, then the saturation will come
+[75:43] and in saturation VCE is 0.2, okay?
+[75:48] And if you want to take it out again,
+[75:51] meaning if you ask IC, then you will take out IC again,
+[75:55] you will say it is 12 here,
+[75:58] it is 0.2 here, so it is across 11.8.
+[76:02] 11.8 means the current will be 5.9
+[76:06] because 11.8 divided by 2.
+[76:09] So if I ask IC, then IC comes 5.9 milliampere, okay?
+[76:16] Yes, VCE is 0, it will not be given there,
+[76:20] there will be a qualitative question,
+[76:22] if there are numericals, you should take 0.2 in numericals.
+[76:27] Come on, see this.
+[76:29] Now see, brother Rudresh,
+[76:32] if the arrow goes from P to N,
+[76:34] then this transistor is PNP, okay?
+[76:46] He is asking V2, this voltage.
+[76:50] We have taken some measurements,
+[76:52] I have shown the current voltage,
+[76:54] now tell me, what will come V2?
+[77:05] And see, I will teach you Monday,
+[77:07] current mirror and apart from this,
+[77:09] voltage regulator, okay?
+[77:12] Current mirror and voltage regulator,
+[77:14] I am going to teach you.
+[77:18] Dear, why do you come with this fake idea
+[77:21] to promote?
+[77:23] Whoever wants to go, he will read it.
+[77:25] Why are you talking on chat?
+[77:28] Are you a watchman or a watchkeeper?
+[77:37] Come on.
+[77:39] I am also coming 0.
+[77:41] Let's see.
+[77:45] VCE is, according to me,
+[77:47] the base emitter junction is forward by S,
+[77:49] because it is 12 on P and minus 2.7 on N.
+[77:56] Let's see.
+[77:58] The question is very halloween.
+[78:00] Look, P to N, you took 0.7.
+[78:04] Okay, P to N, you took 0.7.
+[78:08] So, this added 0.7 in minus 2.7.
+[78:12] So, this is minus 2 volt.
+[78:15] How much is it?
+[78:17] It is minus 2 volt, it is over.
+[78:19] Right?
+[78:20] It is over, right?
+[78:22] And if you want, you can see this too.
+[78:24] Look, take out this VEC.
+[78:26] If you want VEC,
+[78:29] minus 2 minus minus 4,
+[78:32] this is 2.
+[78:34] It is bigger than 0.2.
+[78:37] Come on.
+[78:38] Last question, dear.
+[78:40] Here, the collector voltage has given 9 volts.
+[78:42] The ratio of RB and RC is asked.
+[78:45] Beta is 75.
+[78:47] The collector voltage is 9 volts.
+[78:50] The ratio of RB and RC is asking.
+[79:07] Thank you.
+[79:37] What should I say?
+[80:00] Tell me something for ESE.
+[80:03] There is no limit for something like this.
+[80:06] Starting from the full form of ESE,
+[80:08] taking from the department,
+[80:10] taking from the pattern, taking from the strategy,
+[80:12] taking from the required mark,
+[80:14] taking from the previous year result,
+[80:16] anything can happen.
+[80:19] For non-tech, dear,
+[80:21] we have made a channel.
+[80:23] Unacademy Engineers Today.
+[80:25] Right?
+[80:26] Let's take Saurabh Pandey Sir's class.
+[80:28] He will guide you very well in non-tech.
+[80:30] Come on, let's see.
+[80:32] See, this VEC is called 9 volts.
+[80:35] Okay?
+[80:37] This is 0.7.
+[80:41] So, the current here is
+[80:44] IB.
+[80:46] How much is this?
+[80:51] 9 minus 0.7
+[80:54] by
+[80:56] RB.
+[80:58] Okay?
+[81:00] Now, there will be IC here.
+[81:02] IC and IB will be coming here.
+[81:04] IE.
+[81:06] Now, if I write IE, dear,
+[81:10] 15 minus 9
+[81:12] by RC.
+[81:15] Okay?
+[81:17] Okay?
+[81:30] Now, this will happen.
+[81:47] See.
+[81:59] How much is this coming?
+[82:07] 105.13
+[82:13] Okay?
+[82:14] Come on.
+[82:15] Is this clear?
+[82:17] This is clear.
+[82:18] 105.13 is coming.
+[82:20] The ratio of RB and RC.
+[82:22] I think some children must have taken 75.
+[82:24] That is why they have made a mistake.
+[82:26] Because this current will not be IC, dear.
+[82:28] This will be IE.
+[82:30] According to KCL, this should be IE.
+[82:33] Don't think that the current is IC in RC.
+[82:35] The current of the collector is IC.
+[82:37] There is another node in the middle.
+[82:39] Okay?
+[82:41] Is everyone clear?
+[82:43] Come on.
+[82:44] Now, see, this is your assignment.
+[82:47] You will do it.
+[82:48] Okay? We will discuss the assignment.
+[82:50] Next time, we will do it.
+[82:51] And this link is here.
+[82:53] Keep putting PYQ.
+[82:55] The diode is complete.
+[82:57] You can also put PYQ on BJT Bicing.
+[82:59] The gate is PYQ by AIR-1.
+[83:01] You have to put it.
+[83:03] And see, your combat is going to be tomorrow.
+[83:05] There will be a 60-minute test.
+[83:07] The link is in the description at 11 o'clock.
+[83:09] Roll it quickly.
+[83:11] In every branch, the gate fees of 500 children will be refunded.
+[83:15] The college fees of 1 year will be refunded.
+[83:18] You can win scholarship from 30 crore scholarship pool.
+[83:22] And you can win a lot of prizes.
+[83:25] Okay?
+[83:26] And see, you have two choices in the academy.
+[83:29] Plus and Iconic.
+[83:31] You get top teachers in both.
+[83:33] Okay?
+[83:34] The study material uploaded in the class is uploaded on the study material app.
+[83:37] Test series is included.
+[83:39] If the children of Iconic get doubt in a new question,
+[83:42] then there will be a doubt answer.
+[83:44] Printed notes will be sent home.
+[83:46] One-to-one mentorship will be done.
+[83:48] Strategy and study plan will be provided.
+[83:50] And open house session will be interactive.
+[83:53] This is all that you get extra in Iconic.
+[83:56] What you have to do, son?
+[83:58] You have to choose a plan.
+[83:59] You have to decide the duration.
+[84:01] And you have to apply the court.
+[84:03] Okay?
+[84:04] And if you apply the Iconic,
+[84:06] then you connect directly with me.
+[84:08] And take so much care if I am with you.
+[84:10] Then I will support you till the end.
+[84:12] Even after the gate exam.
+[84:14] And we will make sure that you take a top rank.
+[84:17] Okay?
+[84:18] And see, if you see the results,
+[84:21] in the previous year, we have taken out 6 in the top 10.
+[84:24] So if you want to be one of them,
+[84:27] then come to Fata Fata Academy.
+[84:29] Using code ANKIT ESE.
+[84:31] And if you have financial issue, son,
+[84:33] then you can take it on EMI.
+[84:35] Where you don't have to pay any interest.
+[84:38] EMI will be approved in just 2 hours.
+[84:41] You have to pay a minimum payment in your family.
+[84:45] Whose regular salary comes so that you can allot EMI.
+[84:50] This is the latest batch, son.
+[84:52] It has started from Math from the 24 aspirants.
+[84:55] It is not yet late.
+[84:56] You can still join the Pragati batch.
+[84:58] And this is my telegram channel.
+[85:00] If you come to this channel,
+[85:02] then my free content will not be missed.
+[85:04] I will not miss any live class.
+[85:06] This is the contact of my team.
+[85:08] If there is any query, call it.
+[85:10] Press the YouTube kids 2 plus and the iconic ones 1.
+[85:13] And see here, on the community,
+[85:15] you will get the PDF of this session.
+[85:17] You will go to the Academy app homepage,
+[85:20] on the community.
+[85:21] I will meet you in the discover.
+[85:23] You will get all the PDF there.
+[85:25] Thank you everyone.
+[85:27] Thanks a lot, kids.
+[85:28] Deepankar, son, the target of this course is October end.
+[85:31] Okay?
+[85:32] Then we will meet again.
+[85:33] We will meet on Monday.
+[85:34] But no one will forget to give the combat.
+[85:36] Everyone has to come to the combat.
+[85:37] Tomorrow I have to show the record and attendance.
+[85:39] Okay?
+[85:40] Thank you. Let's crack it.

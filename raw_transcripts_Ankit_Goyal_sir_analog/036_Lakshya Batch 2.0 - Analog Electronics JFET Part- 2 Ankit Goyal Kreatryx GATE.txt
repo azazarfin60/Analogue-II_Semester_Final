@@ -1,0 +1,1278 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | JFET | Part- 2 | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=K7NS_oNA4S8
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to creatrix youtube
+[00:12] channel my dear friends we are live once again in lakshy batch 2.0 analog electronics and
+[00:18] we started a new journey yesterday, we started a new topic that was JFET and I covered the
+[00:26] part of the bicing, I told you how JFET works, what kind of depletion layer is made in JFET,
+[00:34] I told you all these things in a very good way and now it's time when we talk about JFET amplifiers,
+[00:42] when we talk about the small signal model of JFET, then you will enjoy a lot, if you
+[00:49] enjoyed the BJT amplifier, then you will be able to fly the drone here, you will be able to fly in the
+[00:57] amplifier of JFET because I had already said that the child who understood BJT is not difficult for him,
+[01:03] neither is it difficult for him, nor is it difficult for him, neither is it difficult for him, there is no
+[01:09] difficulty if once your command comes to BJT and I believe that my children have done very well
+[01:15] because they have made all the assignments, the answer to every question of every assignment has been figured out
+[01:21] with honesty, then you will enjoy a lot in today's lecture, okay, but before we start,
+[01:28] let me tell you that the recent 20% offer has come to the academy, so if you join the academy right now,
+[01:36] then you are getting 20% discount, what do you have to do, you have to immediately join the code
+[01:44] so that you can avail this 20% discount, you get maximum discount, you get maximum benefits,
+[01:52] okay, so you guys join quickly and the children who take distance learning programs in which the test
+[01:58] series and you are being sent study material, that child is also getting 20% off using the code
+[02:05] ANKIT ASE, now quickly tell me, are you all ready for today's lecture, are you all ready or not,
+[02:13] we will say it quickly, tomorrow's lecture is clear to everyone, tomorrow's lecture is clear to all the children,
+[02:20] come on, welcome Ankit, welcome, thanks a lot, son, come on, and I will tell you, son, that this analogue series,
+[02:31] like Ankit has seen the control series, he is saying that the control series is very good, this analogue series,
+[02:37] son, this is the next level, to be very very frank, this is absolutely next level, this is the best way to
+[02:45] analogue that too on YouTube, you are not going to get it, this comprehensive course is going on,
+[02:51] so far we have done 57 hours of analogue, and we will talk about JFET, then we will talk about MOSFET,
+[02:58] we will talk about O-PAMP, we will talk about feedback amplifier, we will talk about oscillator,
+[03:02] we will talk about multivibrators, we will talk about power amplifiers, so son, there are a lot of things,
+[03:09] there are a lot of things that you are going to get, okay, Anurag, son, I will try, I can do some power
+[03:15] electronics, but I don't have pdf, I have to see something, if something happens, then I will definitely
+[03:21] do it, but don't keep such expectations here that I am going to give pdf, because I had announced in it that
+[03:28] you have to note down everything yourself, okay, so let's start, now look at the biasing, there is another
+[03:35] configuration that is called common gate configuration, what do you say, common gate configuration
+[03:43] here, look at the gate terminal you have grounded, you have given a supply on the drain, VDD, you have
+[03:51] given a supply VSS, first I will explain the part of the biasing, son, if you do DC analysis,
+[04:00] okay, that is the biasing DC analysis, then you have to say that C1 and C2 are open, and look,
+[04:10] this is a common gate amplifier, this is a common gate amplifier, so look at this, the supply you have
+[04:17] put on the source, where are you taking the output from, son, from the drain, you have applied the supply from the source,
+[04:31] okay,
+[04:35] you are taking the output from the drain,
+[04:37] okay, now son, when you open the capacitors for DC analysis, quickly make a circuit, what will
+[04:50] be today's analysis, you will do it with me, son, because today it will be a good way to do the circuit
+[04:56] analysis, so you have to make it with me,
+[05:08] okay,
+[05:18] VDD,
+[05:21] RDD,
+[05:23] ID,
+[05:25] RS,
+[05:27] VSS,
+[05:30] this is also ID,
+[05:32] this is the voltage VGS, okay, now see, put KVL here, because what we have to do first, we have to
+[05:44] take out VGS, right, you saw it yesterday, what will you do, son, 0, minus VGS, minus ID, RS, minus VSS,
+[05:58] equal to 0, okay, so what will become of VGS from here, what will become of VGS, how much will it come,
+[06:09] minus,
+[06:14] this is it, okay, now what will you do, son, now you will apply the drain current equation of JFET here,
+[06:26] IDSS,
+[06:29] 1 minus VGS by VP whole square, this is what you did, so solve quadratic
+[06:47] and determine ID, okay, you take out ID once, son,
+[06:55] then how do you verify the value, you verify the value like this, after ID you will take out VGS,
+[07:04] write it up, how much is VGS, VSS plus ID, RS, this is your VGS, and this VGS should be bigger than VP,
+[07:17] and should be smaller than 0, so here check the validity of ID, you can check the validity of ID with this logic,
+[07:31] okay, the validity of ID will be checked, now what will you do after this, after this you can take out VDS from here,
+[07:40] after applying KVL, how much will VDS come, son,
+[07:49] VDD minus IDRD minus IDRS minus VSS, this will come, okay, this will come according to your KVL,
+[08:06] if you want to go more safe, to check the validity of ID, this VGS concept is better,
+[08:12] that VGS should be bigger than your PINCHOFF voltage, but should be smaller than 0,
+[08:17] that is, PN junction reverse bias should be there, but PINCHOFF's beyond is not there, because PINCHOFF's beyond is gone,
+[08:25] so current will be 0, so you can solve this type, so tell me once, is the biasing clear to you,
+[08:34] why is Depletion width more than the drain, look, the drainage voltage, this is your device N type,
+[08:43] and the drain voltage is more than the source, that is, the drain voltage is more than the drain,
+[08:51] now if the drain voltage is more than the drain region, that is, the reverse biasing is more,
+[08:56] The reverse biasing of PN junction is more near the drain
+[09:00] because there is more voltage of N region there.
+[09:03] So if the reverse biasing is more, then the depletion width will also be more.
+[09:07] Do you understand Sahil?
+[09:08] There is more voltage on the drain, like here there is zero on the gate, there is zero on P.
+[09:13] But there is more voltage on the drain, this is P and this is your N.
+[09:18] So here the reverse biasing is more as compared to between gate and source.
+[09:23] So there is more reverse biasing between gate and drain.
+[09:26] So the depletion layer will be more near the gate and drain.
+[09:29] Depletion layer will be less between the gate and source.
+[09:32] Okay?
+[09:33] Now let's talk about the small signal model of JFET.
+[09:40] When we talk about the small signal model, the first thing we talk about is the trans conductance.
+[09:47] Now you guys see one thing in JFET that your VGS is the voltage of the source from the gate
+[09:54] that controls the drain current.
+[09:57] Okay?
+[09:59] So what we are saying here is the gate to source voltage
+[10:04] gate to source voltage controls drain current.
+[10:22] So what happens here?
+[10:24] Here ID is a function of VGS.
+[10:31] You know, you can also think that JFET is a voltage controlled current source.
+[10:38] You can also think that JFET is a voltage controlled current source.
+[10:45] If the ID is dependent on VGS, then you...
+[10:49] Yes, if your P channel is JFET, then instead of VGS, you will take VSG.
+[10:56] You don't need to change the condition, you can take VSG.
+[11:00] Do you understand?
+[11:01] And if its VP is positive, then you will say VSG will lie between zero and VP.
+[11:06] Zero and VP.
+[11:08] That is, you will reverse inequality.
+[11:11] Okay?
+[11:12] Now listen.
+[11:13] If your drain current depends on VGS, okay?
+[11:18] So what will happen here, dear?
+[11:21] What will happen here?
+[11:22] Here, your drain current will change by changing VGS.
+[11:28] By changing VGS, your drain current will change.
+[11:32] Dear, I don't think the other Ankit Gowel sir's videos are logged.
+[11:37] And for now, my videos are not even logged.
+[11:40] So what do you want to unlock?
+[11:44] Now there is Unlock 20, which means 20% discount is being unlocked.
+[11:49] What do you want to unlock?
+[11:50] Tell me.
+[11:55] Okay?
+[11:55] Changing VGS changes ID.
+[11:59] Now, dear, the ID is changing by changing VGS.
+[12:02] And the ratio of these two changes is your trans conductance.
+[12:07] So what do you say?
+[12:08] So, Delta ID is GM Delta VGS.
+[12:17] You know, dear, you have read the trans conductance in BJT as well.
+[12:22] There, Delta IC upon Delta VBE used to happen.
+[12:26] Because we used to say there, IC actually depends on VBE.
+[12:31] Why, sir?
+[12:32] Because, dear, the current of the emitter used to change from VBE.
+[12:36] And the current of the collector used to change from the current of the emitter.
+[12:40] Even here, we are saying that ID depends on VGS.
+[12:43] So if you change VGS, ID will change.
+[12:47] So here, if you draw a tangent at a cue point,
+[12:53] then you can actually see the slope will be called as your trans conductance.
+[13:06] Okay?
+[13:07] Did you understand?
+[13:09] Wait, I'll make a little thick.
+[13:11] Tension.
+[13:16] Look.
+[13:20] This is the tangent.
+[13:22] Now, can you see the tangent?
+[13:23] To all of you.
+[13:24] So this tangent is slope of this tangent.
+[13:28] Slope of this tangent will give you trans conductance.
+[13:36] Okay?
+[13:55] Tell me, is it clear?
+[13:57] Now, we will derive trans conductance.
+[14:01] Okay?
+[14:02] We will derive trans conductance.
+[14:05] And how will you derive trans conductance here?
+[14:09] You know, dear, the function of ID, that is IDSS 1-VGS upon VP square.
+[14:25] So if you do Dell ID by Dell VGS,
+[14:30] then minus 2
+[14:43] 1-VGS by VP.
+[14:48] Okay?
+[14:49] Now, VP is negative.
+[14:51] So don't be afraid.
+[14:52] If VP is negative, then this value will actually be positive.
+[14:55] Because if VP is negative, then this value will be positive.
+[15:00] Okay?
+[15:01] Now, what will happen here?
+[15:04] Here,
+[15:07] this value,
+[15:11] you make it GM naught.
+[15:14] GM naught means GM when VGS is zero.
+[15:21] So, if your gate source voltage is zero, then we are calling the trans conductance as GM naught.
+[15:29] GM naught.
+[15:31] Okay?
+[15:34] So what will we say here, dear?
+[15:36] GM is GM naught 1-VGS upon VP.
+[15:46] 1-VGS upon VP.
+[15:49] Is this clear?
+[15:50] Okay?
+[15:51] 1-VGS upon VP.
+[15:54] Now, 1-VGS upon VP.
+[15:59] What is happening?
+[15:59] You are promoting another channel on my channel, brother.
+[16:04] Anna Cholbe.
+[16:07] This will be a mistake, brother.
+[16:12] Now, look here.
+[16:14] If you want to extract 1-VGS by VP, then you can also extract it from here.
+[16:20] ID by IDSS.
+[16:25] So, you can say that GM is actually GM naught root over, okay?
+[16:40] So, this part is important.
+[16:43] This part is important.
+[16:45] How trans conductance, okay?
+[16:48] How trans conductance can be derived?
+[16:52] Is this clear?
+[16:54] Now, look here.
+[16:54] If you plot against GM with VGS.
+[16:59] Oh, my God!
+[17:00] Look here.
+[17:01] If GM is plotted against VGS, then this is a straight-line relation for us.
+[17:11] This type of relation.
+[17:13] If GM is plotted against VGS, then this is a straight-line relation for us.
+[17:28] This type of relation is giving.
+[17:31] This value is GM naught and this is VP.
+[17:38] Because when you keep VGS as VP, trans conductance will be zero.
+[17:44] When you keep VGS as VP, then trans conductance will be zero.
+[17:51] If you plot against GM with ID,
+[17:54] if you plot against GM with ID,
+[18:02] okay, then what will you get?
+[18:05] You will get a square root function, okay?
+[18:12] GM versus ID.
+[18:17] You will get a square root function like this.
+[18:24] Okay?
+[18:25] GM versus ID.
+[18:27] The thing is clear.
+[18:28] How does trans conductance vary?
+[18:31] Is everyone clear?
+[18:35] Dear, do one thing about the semester.
+[18:37] Pick up the previous year's paper and ask your senior.
+[18:40] What do you ask in your paper?
+[18:42] Okay?
+[18:42] Get the same topic ready with this playlist.
+[18:45] It's over.
+[18:46] Parabolic won't come.
+[18:47] The graph of the root is the inverse of the parabola.
+[18:51] Okay, Aman?
+[18:52] The graph of the root is the inverse of the parabola.
+[18:56] Everyone has fun here.
+[18:57] Clear is trans conductance.
+[18:59] So, this part is very important because it will work in a small signal model.
+[19:04] When you take out ID by biasing or VGS by biasing,
+[19:10] then what will you get by putting in this formula?
+[19:13] Trans conductance.
+[19:14] Remember what did you do in the BJT amplifier before?
+[19:17] You used to do DC analysis, right?
+[19:19] And with DC analysis, you used to get AC model parameters.
+[19:23] So, that's why you studied biasing first.
+[19:25] You did biasing.
+[19:26] From there, you got DC parameter.
+[19:29] And you will get AC model parameters as trans conductance.
+[19:34] The next parameter is the input impedance of JFET.
+[19:38] Now, what do you know?
+[19:40] We know that the gate and body PN junction is reverse biased.
+[19:58] That is reverse biased.
+[20:04] Therefore, IG is zero and input impedance is tending to infinity.
+[20:15] Input impedance will tend to infinity.
+[20:19] Why is graph left side?
+[20:20] Because VGS is always negative.
+[20:23] As I told you yesterday, VGS is always negative.
+[20:26] So, graph is left side.
+[20:27] ID is positive.
+[20:28] So, graph is right side.
+[20:30] So, you will show the input impedance to infinity.
+[20:35] That is, we will show it as open circuit.
+[20:41] Yes, electrical material and ESC prelames will work in both.
+[20:45] Now, we will talk about output impedance.
+[20:48] For output impedance, we will talk about output characteristics.
+[20:54] Do you remember that you studied early effect in BJT?
+[20:58] So, what did you notice?
+[21:00] What did you notice?
+[21:02] As you change voltage, you get slight change in current.
+[21:09] And you will notice one thing.
+[21:12] This JFET, I told you this region is omic region.
+[21:21] This is your saturation.
+[21:28] So, JFET will work in this region like amplifier.
+[21:33] This region was also taken in BJT for amplifier.
+[21:37] Remember, this region was also taken in BJT for amplifier.
+[21:42] So, JFET and MOSFET are devices that work like amplifier in saturation.
+[21:50] Yes, there will be VDS here.
+[21:52] Do you understand?
+[21:55] JFET and MOSFET
+[22:04] act as amplifier in saturation region.
+[22:16] Okay?
+[22:25] So, the slope of this graph here will give you 1 by the output resistance.
+[22:34] So, what are we saying?
+[22:36] It is the reciprocal, output impedance is the reciprocal of output characteristics
+[22:57] in saturation region.
+[23:07] The slope of output characteristics in saturation region is the reciprocal of output resistance.
+[23:17] So, here we write RD.
+[23:20] This is 1 upon del ID by del VDS.
+[23:27] Del ID upon del VDS.
+[23:31] Is this clear?
+[23:33] Yes, it will be done.
+[23:35] It will be ready for semester.
+[23:37] Whatever subject I am taking, any exam in India.
+[23:41] Semester exam, gate exam, engineering services, civil services, you can clear all the exams from this content.
+[23:49] Content wise, you are being made so strong.
+[23:53] Now, if you just have to pass the semester by running, then things get separated.
+[23:57] My aim is that you should learn the subject.
+[24:03] Amman, what happens here is that the current becomes approximately constant.
+[24:09] You are right.
+[24:11] But our AC signal also varies very slightly.
+[24:15] AC signal also varies very slightly.
+[24:18] Do you understand?
+[24:20] We should not have a large variation in the current.
+[24:22] There is a small variation in the Q point.
+[24:24] What I am telling you is that BJT and your MOSFET, JFET have changed the definition of saturation.
+[24:34] In BJT, you used to call this region as saturation.
+[24:38] You used to call it active.
+[24:40] Now, you are calling it omic.
+[24:42] You are calling it saturation.
+[24:44] But basically, you are making the amplifier in this region.
+[24:47] Do you understand?
+[24:49] You are making the amplifier in this region.
+[24:55] How many lectures have you seen, Akash?
+[24:57] A few days ago, you were asking about the analog series.
+[25:03] Do you understand?
+[25:05] Amman, the amplifier was being made in this region.
+[25:07] In BJT, it was called active.
+[25:09] Here, it was called saturation.
+[25:11] But the amplifier was defined in the same region.
+[25:15] Let's go.
+[25:17] Now, let's come to AC equivalent circuit.
+[25:19] In AC circuit, here, your gate current is zero.
+[25:25] To show this, you have made an open circuit.
+[25:29] Is this a hybrid Pi model?
+[25:31] This is a hybrid Pi model.
+[25:33] Think about it.
+[25:35] You used to write VPI over there.
+[25:37] You are writing VGS.
+[25:39] You are writing VPI.
+[25:41] GMVGS.
+[25:44] And this is your resistance, RD.
+[25:46] You used to write R0 over there.
+[25:48] So, do you see the same model?
+[25:50] The same model is visible.
+[25:52] Instead of the base, there was a gate.
+[25:54] Instead of the emitter, there was a source.
+[25:56] And the drain came instead of the collector.
+[25:58] Which was also their name.
+[26:00] In BJT, there was a base terminal.
+[26:02] Which was on and off the device.
+[26:04] Here, it is the gate.
+[26:06] In BJT, it was emitting the charges.
+[26:08] The emitter is the source.
+[26:10] In BJT, the collector was taking the charges.
+[26:12] The collector was taking the charges.
+[26:14] The collector is the drain.
+[26:16] So, the name of the terminals is exchanged.
+[26:18] And what happened to you?
+[26:20] Instead of VPI, there is VGS.
+[26:22] So, I will also write.
+[26:28] Comparing to
+[26:30] BJT
+[26:32] Think about how much fun it is going to be in its amplifier.
+[26:36] Because its amplifier is going to be easy for us.
+[26:38] Why is it going to be easy?
+[26:40] Because
+[26:42] There is an open circuit here.
+[26:44] One resistance is reduced.
+[26:46] One resistance is reduced.
+[26:48] Roshan is asking.
+[26:50] When do you interact with the plus kids?
+[26:52] Whenever I am not taking classes.
+[26:54] My team connects me with the plus kids.
+[26:56] They connect me.
+[26:58] If someone wants to talk on the phone.
+[27:00] Or otherwise, I take it on the daily audio.
+[27:02] In the plus class.
+[27:04] If you want to talk on the audio on the plus class.
+[27:06] Then every Tuesday, Thursday, Saturday.
+[27:08] There is no tension.
+[27:10] Come easily.
+[27:12] There is no tension.
+[27:14] Comparing to BJT
+[27:16] Your base terminal
+[27:18] Has become a gate.
+[27:20] Okay.
+[27:22] Which is your drain terminal
+[27:24] Sorry.
+[27:26] Which is your
+[27:28] Ammeter
+[27:30] Has become a source.
+[27:32] Okay.
+[27:34] And the collector.
+[27:36] Has become a drain.
+[27:38] Okay.
+[27:40] Okay.
+[27:42] Okay.
+[27:44] Okay.
+[27:46] Okay.
+[27:48] Okay.
+[27:50] Okay.
+[27:52] Okay.
+[27:54] Okay.
+[27:56] Okay.
+[27:58] Okay.
+[28:00] Okay.
+[28:02] Okay.
+[28:04] Go ahead.
+[28:06] Now we have to take out the gain of 1 by 1 amplifier.
+[28:08] First we will talk about fixed bias
+[28:10] Configuration.
+[28:12] Okay.
+[28:14] We have already done its DC analysis.
+[28:16] So what is step 1?
+[28:20] Step 1 is
+[28:24] Perform
+[28:28] DC analysis
+[28:32] Okay.
+[28:34] Okay.
+[28:36] When you do DC analysis
+[28:38] Determine what you do.
+[28:44] ID
+[28:46] Or VGS
+[28:48] Now you will write GM.
+[28:52] GM not.
+[28:56] Write like this.
+[28:58] Where
+[29:04] GM is
+[29:06] Sorry.
+[29:08] GM not is
+[29:10] Root.
+[29:12] Sorry.
+[29:14] ID SS by VP.
+[29:16] Okay.
+[29:18] Then what do you do here?
+[29:20] Take out an ID.
+[29:22] Give it to me.
+[29:24] Look at it.
+[29:26] You ignore it.
+[29:32] You will ignore it often.
+[29:34] Because
+[29:36] You have to give it to RD.
+[29:38] RD knows why you have to give it.
+[29:40] Because I do not have any relation
+[29:42] of ID and VDS.
+[29:44] I will take it out of its differentiation.
+[29:46] When I teach you MOSFET
+[29:48] There is a concept in MOSFET.
+[29:50] Which is called channel length modulation.
+[29:52] Okay.
+[29:54] Channel length modulation.
+[29:56] In channel length modulation
+[29:58] We see that
+[30:00] With changing VDS voltage
+[30:02] The length of the channel
+[30:04] Which changes the ID
+[30:06] And there
+[30:08] And there is a direct formula
+[30:10] to take out your RD.
+[30:12] Okay.
+[30:14] Your direct formula to take out RD.
+[30:16] Is it clear?
+[30:20] Dear.
+[30:22] Talk to him.
+[30:24] Which lectures are missing from him.
+[30:26] It is not that any video is private
+[30:28] Or any video is deleted.
+[30:30] If there is no add in the playlist
+[30:32] You will have to tell them which lectures are missing.
+[30:34] This is not in my hands.
+[30:36] I will find each lecture and add it in the playlist.
+[30:38] I understood.
+[30:40] Tell me till here.
+[30:42] You will ignore RD here.
+[30:44] But there is a way to take it out in MOSFET.
+[30:46] So I am going to consider it in MOSFET.
+[30:48] So I am going to consider it.
+[30:50] I will ignore it here.
+[30:52] Is it clear?
+[30:54] Now see its AC model is to be made.
+[30:56] Now what to do?
+[30:58] Its AC model is to be made.
+[31:00] Somehow
+[31:16] Now the same method must be kept.
+[31:18] First of all
+[31:20] Make your basic model of the device.
+[31:30] and Aman has only one model in it, son, there are no two or three models in it, okay, we have made this,
+[31:39] this is the gate, this is the source and this is your drain, okay, that's how much you have made, now here
+[31:51] see that this is your drain terminal, your RD will come in between the ground from the drain, you will
+[32:00] ground this VDD, you will ground this VDD, so an RD will come between the ground from the drain,
+[32:07] here is the RD, okay, this is the source terminal, you can see it directly grounded,
+[32:24] here it is and your gate is connected to VI, you will ground this VGG, if you short VGG, then an
+[32:37] RG resistance will be left between gate and ground, an RG resistance will be left between gate and ground,
+[32:46] see this RG came and you shorted the capacitor, so I write what you did here, see you shorted the
+[33:00] capacitor, you grounded the VDD and you zeroed the VGG, that is, you
+[33:15] shorted it, you also shorted it, okay, now see the parameters of this amplifier, the circuit is
+[33:24] quite simple, let's talk about gain first, so you can write V0 minus GM VGS RD, okay, and the input
+[33:39] voltage is directly equal to VGS, so gain which is V0 by VI is minus GM RD, okay, this happened minus GM
+[33:57] into RD, the first thing that was cleared was the voltage gain, the voltage gain was cleared,
+[34:04] it is easy, now tell me the input resistance in this, come on everybody, input resistance,
+[34:14] all of you will say, come on, don't take time, input resistance, input resistance, and look at it,
+[34:24] remember the formula one in the whole, one, two, say one is the current equation and one is
+[34:29] the transconductance, remember these two things, RG, very good, output resistance, output resistance
+[34:38] son, how much output resistance RD, very good, very good, very good, okay, Manthan also
+[34:53] very good, very good, so this thing is clear, now you are seeing that there is a gain negative here,
+[35:00] there is a gain negative here, what does gain negative mean, son, 180 degree phase shift between input
+[35:10] and output, this also happened in BJT, in which common emitter amplifier and here is common source
+[35:20] amplifier, because here the input is on the gate, the output is on the drain, it is a common source
+[35:26] amplifier, do you understand, do you see the analogy in both, so 180 degree shift between VI and V0,
+[35:43] similar to BJT common emitter amplifier, okay, similar to BJT common emitter amplifier,
+[36:05] yes, and emitter and source are comparable, now the feel is coming, everything is connected with BJT,
+[36:12] there is a lot of analogy in both, there is no difference, but the difference is that the gain of it
+[36:18] comes, it comes much less than BJT, look at the next self-bias configuration, what was the benefit of
+[36:29] it, in self-bias, only one voltage source is required, only one source is required while in fixed bias
+[36:53] we need two voltage sources, there was a VGG and a VDD, now look, there can be two things, one is
+[37:13] the cross of RS, one is the bypass capacitor, like the cross of RE, because what did we read there,
+[37:20] emitter resistance acts as a negative feedback, correct, we read there, emitter resistance acts as a
+[37:29] negative feedback, this is how the RS will act as a negative feedback, which will reduce the gain,
+[37:45] so what did you put in its parallel, you put a bypass capacitor in its parallel, what does this bypass
+[37:56] capacitor do, it saves the gain from decreasing, it saves the gain from decreasing, let's make its AC
+[38:04] model, let's make its AC model and do one thing this time, don't ignore RD, RD, the small RD,
+[38:14] don't ignore it, let's consider it, what does it matter, do it, look at the maximum place, it will be ignored,
+[38:22] you also read in BJT, you would ignore the R0, it stays here like this, but let's consider it at once,
+[38:28] okay, son, what is the name of this ID, good afternoon brother, son, there are so few formulas in it,
+[38:45] by the way, I haven't taken any special class of analog yet, but there are so few formulas in it,
+[38:50] I don't know where the problem is coming from, first of all, you show it between the gate and the source,
+[39:00] VGS, here you put a current source, GM, VGS, now this bypass capacitor, because of this, the source
+[39:22] is ground, you show the resistance here, it stays in parallel to the current source, RD, now
+[39:34] see this capital RD will go between the drain and the ground, this capital RD will go between the drain and the
+[39:45] ground, the RG is between the gate and the ground, it is the same model as the previous one, so look here,
+[39:55] all the parameters will be the same, what is the difference that there is only one source needed in the biasing
+[40:03] and there was a need for two sources, okay, there was a need for two sources, okay,
+[40:14] look Akash, I will recommend that you read without writing, write it digitally because its notes are not available,
+[40:21] here all the things are written in Akash, so you don't have to make notes for it, the things I make important,
+[40:28] so I will keep telling you that what is important and what is not, okay, if you do it like this, you will be able to see more
+[40:34] number of videos, you will be able to go faster in one day, you will go to write all the things, it will be fun, it will feel good, but
+[40:41] it will take more time, now its voltage gain, tell me, its voltage gain, if you see the input voltage is
+[40:51] VGS, correct, output voltage is now minus Gm VGS current, it is going in two resistances,
+[41:02] RD parallel capital RD, so if you go to take out the gain, so what is this small RD, the name is small,
+[41:16] it is very big resistance, that is why it comes approximately the same, there is no difference,
+[41:23] input resistance, you know sir, RG will come and output resistance, now think, children think that sir,
+[41:39] this amplifier leaves the FET, right, FET leaves the FET, but think that the amplifier of FET is easier than BJT,
+[41:47] is it not, it is working in less steps here, sir, I am pausing from here, the series and lock of my 4
+[42:02] paper is going to start, okay, it is easy, now tell me, make a little unbiased, ignore RD in this,
+[42:13] make a small RD in this quickly, because it will spread by considering small RD, there is no
+[42:23] benefit, so ignore small RD and make a model, see a little,
+[42:35] just understand that your JFET is almost complete, JFET will be finished tomorrow, then it is okay, then we will start the
+[42:41] MOSFET, so tomorrow after finishing the JFET, I will discuss all its assignments with you, then
+[42:47] we will start the MOSFET from Friday, it is very good, people also take it out,
+[43:07] what happened, why are you worried about the attendance, the syllabus of engineering services is going on,
+[43:11] then the attendance will be less, to make it, I can leave the part of the ES, it is said that the attendance
+[43:17] does not come, but when the playlist is being made once, then we make it in a way,
+[43:21] come on, thank you, Rudresh, tell me, have you made its circuit,
+[43:37] see, first of all, you have shown this open circuit between the gate and the source,
+[43:51] gate drain source, now show a resistance on the source by RS, this time
+[44:21] it is unbiased, okay, you had a resistance on the gate, RG, VIN, RD, V naught,
+[44:51] see, this current will come like this, so what can you write V naught,
+[45:05] you can write this, okay, now the current going here, that will be gmvgs, so if you
+[45:15] put KVL, input voltage is VGS plus gmvgs into RS, so when you do V naught by VIN for the voltage gain,
+[45:34] then what will come, minus gmRD by 1 plus gmRS, see the gain is reduced,
+[45:50] gmRD was coming earlier, now gmRD by 1 plus gmRS is coming, so gain reduces due to RS,
+[46:00] you can say the magnitude of gain decreases due to RS, okay, now say its input resistance,
+[46:18] input resistance is simple, RG, okay, if we talk about the output resistance,
+[46:28] what will be the output resistance, yes, you can say this is the work of negative feedback,
+[46:35] output resistance will be simply RD, right, and you can think like G upon 1 plus G H comes,
+[46:46] so this is the factor of 1 plus G H type, no, no, RS is not parallel RD, so think,
+[46:53] as soon as you do VIN, your VGS will also come, as soon as you do VIN, VGS will also come,
+[47:03] then this gmvgs will be removed, only RD will be left, okay, how can these two come in parallel,
+[47:09] there is a current source between them, how will these two come in parallel,
+[47:14] do you understand, because when you do VIN, VGS is zero, then a current source will be zero,
+[47:22] current source is zero means open circuit, not short circuit, if this voltage source was zero,
+[47:30] then these two would have come parallel, because short circuit would have been zero,
+[47:35] but now the current source is zero means open, as soon as it is open, then this RS is disconnected,
+[47:41] what is left, RD, what is left, you have only RD, okay, now the thing comes,
+[47:48] child, of the voltage divider configuration, whose is it, voltage divider configuration,
+[47:54] so I am giving you by making a circuit, you people make it,
+[48:24] okay, okay, okay, okay.
+[48:55] Make it a little, this is your VDD,
+[49:08] which one are you saying, only in the terms of 5th voltage VDS or in the terms of VGS,
+[49:14] if you are saying in the terms of VDS, then the charge carriers that will cross,
+[49:19] they will cross in the electric field terms of the depletion layer,
+[49:23] which will exist in the electric field in the depletion layer, it will help them cross,
+[49:28] and if you are saying this, in the term of VGS, when you put a pinch off in VGS,
+[49:33] then the current becomes zero, we say this, there is another problem in VDS,
+[49:38] if you say this in VDS, the channel is pinch off, now the current should be zero,
+[49:42] if the current is zero, then the reverse biasing will also go away, and if the reverse biasing goes away,
+[49:47] then what is the depletion layer, do you understand, if you say in VDS, if you put a VP,
+[49:54] the channel went away, the channel went away, then the current became zero, the current became zero,
+[49:59] so the reverse biasing went away, the reverse biasing went away, so your depletion layer also went away,
+[50:04] that is why the equilibrium is maintained that it keeps flowing the constant amount of current.
+[50:11] If you make an AC model of this child, it is fun in its amplifier,
+[50:17] I think it should be more fun than BJT.
+[50:21] Think about it, you people used to be scared of such topics, this source is now ground,
+[50:46] what will happen on the gate, this time R1, R2 will be parallel,
+[50:53] what will happen on the gate, R1, R2 will be parallel, okay, and input voltage from here,
+[51:04] what will happen on the drain, RD will come to you with respect to ground,
+[51:09] this is clear, R1, R2 are parallel, we have done this many times, there is no doubt in this,
+[51:17] so here you see, input voltage is still VGS, this is output voltage which is minus GM VGS RD,
+[51:34] so V0 by Vin, that is the voltage gain, here it is,
+[51:48] input resistance you can see, the first one you were writing RG,
+[51:53] now R1 is parallel R2, and lastly output resistance is RD,
+[52:00] so tell me, is everyone clear here or not, is the result coming or not,
+[52:05] is the voltage gain of everyone, only the place of RG came, R1 parallel R2 came,
+[52:12] okay, the topic comes, sir's questions are correct for DPP,
+[52:19] one child is saying, make a microprocessor, Shankar sir is making the microprocessor on this channel,
+[52:29] I think it will be over or it will be going to be done, make a microprocessor,
+[52:35] now let's come to the next one, see the common gate configuration,
+[52:40] till now we have read the common source amplifier,
+[52:43] look at all the configurations, look at the common source,
+[52:46] and every one has a gain negative, and the gain negative which has come,
+[52:51] the gain is telling the phase shift of your 180 degree between input and output,
+[52:57] the assignment is attached in daily notes, let's call it DPP,
+[53:02] now see how the common gate amplifier looks,
+[53:08] first of all I made a JFET,
+[53:14] this is how the JFET is made, okay, now what you do here,
+[53:20] you will have to put input on the source,
+[53:28] so you put a resistance on the source,
+[53:33] put this capacitor and put input,
+[53:38] now you will have to put output on the drain,
+[53:44] okay, on the drain here,
+[53:53] put output like this,
+[54:02] okay, you can make it,
+[54:10] make it, here I will also show that this terminal is grounded,
+[54:19] okay, this is the circuit, now make its AC model,
+[54:24] you guys make its AC model,
+[54:32] okay,
+[55:02] what will be called in BJT, common base amplifier will be called,
+[55:07] here the common gate is the common base of BJT,
+[55:23] make its model,
+[55:27] see,
+[55:33] this is the gate, this is the source,
+[55:39] this is the source of drain and source,
+[55:43] okay, I am ignoring RD,
+[55:51] now the gate terminal is grounded, okay,
+[55:57] between the source and the gate,
+[56:01] no, between the source and the ground, there is an RS,
+[56:11] and on the source terminal, you have put VIN,
+[56:17] okay, there will be an RD between the drain and the ground,
+[56:22] you will ground VDD, you will short it,
+[56:32] okay, this is done, okay,
+[56:36] it is clear till here,
+[56:39] now what should we do sir,
+[56:41] now see, it is very easy for us,
+[56:44] what we have to do, first we have to put KVL,
+[56:47] so I say minus VGS, minus VIN,
+[56:53] S0,
+[57:00] so VGS is minus VIN,
+[57:03] okay, now this is done,
+[57:07] now if we talk about the output,
+[57:11] minus GM VGS RD,
+[57:18] so V0 by VIN is plus GM RD,
+[57:25] understand, plus GM RD,
+[57:28] so this gain is positive,
+[57:31] this gain is your positive,
+[57:34] that is zero degree shift,
+[57:40] okay, zero degree shift is done,
+[57:46] after this much,
+[57:48] now you need input resistance and output resistance,
+[57:51] output resistance will directly come as RD,
+[57:58] because if you do input voltage zero,
+[58:01] VGS will be zero,
+[58:03] input will not be zero, VGS zero, so this is GM VGS zero,
+[58:06] so what will be left here, RD,
+[58:09] now you tell me input resistance,
+[58:12] how will you do input resistance,
+[58:15] here you will consider current IIN,
+[58:20] now you will say here voltage is going,
+[58:23] current is going,
+[58:25] GM VGS plus IIN,
+[58:30] okay, I say this,
+[58:33] VIN is GM VGS,
+[58:40] plus IIN into RS,
+[58:44] VGS is minus VIN,
+[58:47] see VGS is minus VIN,
+[58:58] so VIN upon IIN,
+[59:01] as I told you there,
+[59:03] if you output resistance on ammeter,
+[59:06] then you will output only after V by I,
+[59:09] do not directly say RS,
+[59:12] remember, I told you there,
+[59:14] if you output resistance on ammeter,
+[59:17] then you will output only after V by I,
+[59:20] the thing is clear,
+[59:22] Rahul child, tell me,
+[59:24] it is 11.30 am,
+[59:26] starting time is telling,
+[59:27] it is 12.30 am,
+[59:28] so it is an hour to go to class,
+[59:31] okay, it is clear,
+[59:34] this is clear,
+[59:36] let's put a question,
+[59:38] there is only one amplifier,
+[59:40] see the drain follower,
+[59:42] sorry source follower,
+[59:44] like there was ammeter follower,
+[59:46] rest frequency, response, multi stage,
+[59:49] we will do all this tomorrow,
+[59:51] let's make a question first,
+[59:53] okay, in the common source amplifier given,
+[59:56] calculate the voltage gain and input resistance,
+[59:59] if mu is 60,
+[60:01] RDS is 30 kilo ohm,
+[60:03] do it,
+[60:05] do it,
+[60:29] mu, what is mu,
+[60:49] remember this,
+[60:51] GM into RDS,
+[60:53] what we were writing RD,
+[60:55] it is RDS,
+[60:57] this happens,
+[61:01] that is why it is unit less,
+[61:03] make it,
+[61:05] you will get GM from here,
+[61:09] what can you say, kind of,
+[61:13] by the way, mu is the ratio of voltage to voltage,
+[61:16] beta is the current to current ratio,
+[61:57] RDS,
+[62:05] gain is 6,
+[62:07] see first we take out GM,
+[62:11] 2 millisiemens will be coming,
+[62:13] now I will make its model,
+[62:15] first from gate,
+[62:17] you show the source till open,
+[62:21] then you show the source till drain,
+[62:27] GMVGS,
+[62:39] but this time,
+[62:41] in the parallel of the source,
+[62:43] you will have to show RDS also,
+[62:49] okay,
+[62:51] here your source terminal will be grounded,
+[62:55] there will be a 10 mega ohm resistor on the gate,
+[63:03] and here will be the input voltage,
+[63:21] okay, this happened,
+[63:23] till the end it is clear,
+[63:25] now you see here,
+[63:27] VGS and input voltage are equal,
+[63:33] but what is V0 here,
+[63:43] 30 parallel 3,
+[63:45] this happened, okay,
+[63:47] now if you want gain,
+[63:49] okay,
+[63:51] minus 2 into 30 by 11,
+[63:53] will be,
+[63:55] minus 60 by 11,
+[63:57] minus 5.555,
+[64:01] and the input resistance is coming directly,
+[64:03] 10 mega ohm,
+[64:07] okay,
+[64:09] is it clear,
+[64:11] 5.45,
+[64:13] 5.45,
+[64:15] sorry,
+[64:17] okay,
+[64:19] 6 will not come,
+[64:23] son, this is the link of the power system,
+[64:25] which is running,
+[64:27] where did you guys go,
+[64:29] I gave you a new link,
+[64:31] yesterday also I have put the shots,
+[64:35] this is the link,
+[64:39] okay,
+[64:41] let's try the next one,
+[64:47] Gm is given,
+[64:49] RDS is given,
+[64:51] the values of Gm and RDS are same,
+[64:53] the bus amplifier has changed,
+[64:55] the common gate has been made,
+[65:07] Saurav,
+[65:09] according to me,
+[65:11] 6 or 5.4545,
+[65:13] would have gone out of the range,
+[65:17] son, I have not taken the signal yet,
+[65:19] next year I am planning on YouTube,
+[65:21] that I will make you guys signal,
+[65:23] so whoever is going to give it in 24-25,
+[65:25] they will benefit,
+[65:27] I have not taken it yet,
+[65:29] according to me,
+[65:31] there is a signal left on YouTube,
+[65:33] an EMT, a measurement,
+[65:35] in all these courses, I will probably make you cry next year,
+[65:39] no tension,
+[65:41] come on, make it,
+[65:47] okay,
+[66:03] 1.935,
+[66:05] see,
+[66:09] look, I have shown the gate and source,
+[66:13] now what is on the source,
+[66:15] there is a resistor of 1.2 kOhm,
+[66:21] on which we have kept the voltage,
+[66:23] Vin,
+[66:35] this is GmVGS,
+[66:37] okay,
+[66:41] in this parallel,
+[66:43] RDS,
+[66:45] okay,
+[66:51] from here,
+[66:53] between drain and ground,
+[66:55] 1 kOhm,
+[66:57] and this V0,
+[66:59] okay, your gate is grounded,
+[67:07] okay,
+[67:17] okay,
+[67:19] yes, now what should we do,
+[67:21] now one thing is being seen here,
+[67:23] that VGS is minus Vin,
+[67:25] sir, how is it seen,
+[67:27] look, here is 0,
+[67:29] here is Vin,
+[67:31] so 0 minus Vin is
+[67:33] minus Vin,
+[67:35] now the thing is,
+[67:37] should we ignore 30 kOhm,
+[67:39] so I believe that you can ignore 30 kOhm now,
+[67:43] because it is 30 times more than
+[67:45] 1 kOhm,
+[67:47] first it was 10 times,
+[67:49] so according to 10 times,
+[67:51] there was almost 10% change in the answer,
+[67:53] but now it is 30 times,
+[67:55] which means how much change will be there,
+[67:57] around 3% which is tolerable,
+[67:59] okay,
+[68:01] so what am I saying, ignore 30 kOhm,
+[68:05] okay,
+[68:07] so V0 will be there,
+[68:09] and you did not connect the parallel,
+[68:11] 30 and 1 kOhm,
+[68:13] why,
+[68:15] why,
+[68:17] did not connect the parallel,
+[68:27] gain RIT 2,
+[68:31] okay,
+[68:33] there is no parallel between RDS and 1,
+[68:35] so what you have to do here,
+[68:37] you have to put a nodal,
+[68:39] do you understand,
+[68:41] you have to put a nodal,
+[68:43] like if you put a nodal on the V0 node,
+[68:45] I will tell you how to do it,
+[68:47] you put a nodal,
+[68:49] V0,
+[68:55] do this,
+[69:03] okay,
+[69:19] write VGS-VN,
+[69:21] GM-2,
+[69:33] so V0 by VIN,
+[69:45] 61
+[69:47] by 31,
+[69:49] this comes,
+[69:51] do you understand,
+[69:53] how to do it,
+[69:55] tell me, did you connect the parallel,
+[69:57] did you connect the parallel,
+[69:59] what else do you ask,
+[70:01] did you ask the gain,
+[70:03] if the source is ground,
+[70:05] then RDS and RD are parallel,
+[70:07] yes, if this source is ground,
+[70:09] that is, VIN is ground,
+[70:11] that is, if I ask like this,
+[70:13] so what of output resistance,
+[70:15] for output resistance,
+[70:17] if you ground VIN,
+[70:19] then you can say that these two parallel will come,
+[70:21] okay,
+[70:23] if I ask you output resistance,
+[70:25] then you ground the input,
+[70:27] then these two parallel will come,
+[70:29] then RDS is parallel,
+[70:31] let's see the next one,
+[70:33] it looks very dangerous,
+[70:35] current gain and voltage gain are coming out,
+[70:37] it has put 2JFET,
+[70:43] 2JFET is put in parallel,
+[70:45] source is source,
+[70:47] drain is drain, gate is connected,
+[70:59] double all the things,
+[71:01] double all the things,
+[71:03] when two are parallel,
+[71:05] then their current will double,
+[71:07] and voltage will remain the same,
+[71:09] if you think that all the terminals are connected,
+[71:11] then the voltages will remain the same,
+[71:13] current will double,
+[71:15] that is, the current source you make,
+[71:17] GMVGS will be 2GMVGS,
+[71:19] the RDS will be half,
+[71:21] resistance,
+[71:23] current mirror is not there,
+[71:25] current mirror is not there,
+[71:27] current mirror is not there,
+[71:29] current mirror is a different thing,
+[71:31] the current mirror is not parallel,
+[71:33] the current mirror has two terminals,
+[71:35] no three of the transistors,
+[71:37] like ammeter to ammeter was connected,
+[71:39] base to base, but the collectors were not connected,
+[71:41] here all the terminals are connected,
+[71:43] my point is clear,
+[71:45] I am saying,
+[71:47] both the transistors
+[71:51] have
+[71:53] all their terminals
+[72:03] connected together,
+[72:11] so
+[72:17] both are in parallel,
+[72:23] okay,
+[72:25] if both are parallel,
+[72:27] then what will you say,
+[72:29] you will say,
+[72:31] both are in parallel,
+[72:33] therefore,
+[72:35] I
+[72:37] double
+[72:39] resistance
+[72:41] half
+[72:45] voltage same,
+[72:49] understand,
+[72:51] so make this model,
+[72:53] first of all,
+[72:55] there is a 5 km on the gate,
+[72:57] 100 km on the gate,
+[73:01] first of all, make a simple transistor model,
+[73:15] the current source you are making,
+[73:17] make this 2GMVGS,
+[73:21] the current is double,
+[73:33] half resistance,
+[73:35] okay,
+[73:37] now this source is bypassed,
+[73:39] the source is bypassed,
+[73:43] so here you have
+[73:45] grounded,
+[73:47] okay,
+[73:49] what is on the gate,
+[73:51] 5 km and 100 km,
+[73:53] what is on the gate,
+[73:55] 5 km
+[73:57] and 100 km,
+[74:09] what is on the drain,
+[74:11] 1 km to the ground
+[74:13] and 1 km to the ground,
+[74:15] basically,
+[74:17] there is one RDA and one RL,
+[74:29] because after the capacitor,
+[74:31] the resistance comes, you call it load,
+[74:33] after the output,
+[74:35] after the capacitor,
+[74:37] the resistance comes, that is load,
+[74:39] and the capacitor that comes first,
+[74:41] that is the source,
+[74:43] that is the source, okay,
+[74:47] okay, very good,
+[74:49] very good,
+[74:51] your placement is done,
+[74:53] what else do you want,
+[74:55] now if you double this GM,
+[74:57] it is 2.5 millisiemens,
+[74:59] so it is 5
+[75:01] VGS
+[75:03] and this is 12.5K,
+[75:07] now I want to know,
+[75:09] what is the question, voltage gain and current gain,
+[75:11] okay,
+[75:13] voltage gain and current gain,
+[75:15] now I say,
+[75:17] R0 dash,
+[75:19] how much will be total, 12.5K,
+[75:21] parallel 2,
+[75:23] parallel 2,
+[75:25] this will happen,
+[75:27] that is, how much will come,
+[75:29] where is our calc,
+[75:31] it seems,
+[75:33] our calculator is gone,
+[75:35] not found,
+[75:39] okay, 12.5K,
+[75:41] 13.5K,
+[75:43] 9.2, 5.9.2,
+[75:51] V0 will be,
+[75:55] minus 5G,
+[75:57] 5VGS,
+[76:01] the combination of all the resistances,
+[76:03] and this VGS,
+[76:05] it will come from the input voltage,
+[76:07] through the voltage division,
+[76:09] because there are two resistances,
+[76:11] and both are in series,
+[76:13] why in series, because there is no current ahead,
+[76:15] that is why,
+[76:17] 5 and 100 are in series,
+[76:19] now if you take V0 by V in,
+[76:21] then it will come,
+[76:23] minus 5,
+[76:25] look, it is in milli,
+[76:27] 5 is going in milli,
+[76:29] resistance is going in kilo,
+[76:31] that is why, there is no difference,
+[76:33] now you see yourself,
+[76:35] how much gain you are getting here,
+[76:37] can you see,
+[76:39] it is coming,
+[76:41] now like 5.45 came,
+[76:43] here 4.409 is coming,
+[76:45] in BJT,
+[76:47] there was a lot of gain,
+[76:49] compared to this,
+[76:51] here you are getting a lot less gain,
+[76:53] and what are you asking,
+[76:55] current gain,
+[76:57] we need I0 for current gain,
+[77:01] I0 will come from your current division,
+[77:03] otherwise do like this,
+[77:05] I0 is,
+[77:07] V0 by 2K,
+[77:11] and current supply,
+[77:13] V in by 105,
+[77:17] so if you take I0 by Is,
+[77:19] if you take it out,
+[77:21] it is V0 by V in,
+[77:25] into 105 by 2,
+[77:29] so what is the current gain,
+[77:31] how much is it,
+[77:35] 231.48,
+[77:39] understood,
+[77:41] if you take it out like this,
+[77:43] current gain from the voltage gain,
+[77:45] is it clear,
+[77:47] this is IS,
+[77:49] V in by 105,
+[77:51] or V in by 105,
+[77:53] okay,
+[77:55] see the next, current gain, voltage gain,
+[77:57] take out this time,
+[77:59] okay,
+[78:05] this one will be 800 kilo ohms,
+[78:09] the lower one is 200 K,
+[78:11] the upper one is 800 K,
+[78:29] okay,
+[78:59] okay,
+[79:25] did you make it,
+[79:27] tell me,
+[79:29] should I start drawing,
+[79:53] this is done,
+[79:55] now see here,
+[79:57] you are grounding the source,
+[80:03] okay,
+[80:05] a 2 kilo ohm resistor is coming
+[80:07] between the drain and the ground,
+[80:17] and another 2 kilo ohm resistor
+[80:19] is coming between the drain and the ground,
+[80:25] okay,
+[80:29] and what will be on the gate,
+[80:31] 800 and 200 parallel,
+[80:43] and here 5 kilo ohms and V in,
+[80:55] here it is,
+[80:59] RDS is also given,
+[81:01] 30,
+[81:03] see,
+[81:05] you can ignore RDS,
+[81:07] because these two are becoming 1,
+[81:11] so what will be V naught,
+[81:19] 30 parallel 2,
+[81:21] parallel 2,
+[81:25] and VGS is V in,
+[81:27] 800 parallel 200 is 160,
+[81:35] so voltage gain,
+[81:45] you take this 2 parallel 2,
+[81:47] that is 1,
+[81:51] 1 kilo ohms is coming,
+[81:53] Gm millimetre 2,
+[82:01] how much will this come,
+[82:03] 1.876,
+[82:09] my 1.94 is coming,
+[82:13] you tell me, if I had taken 30 parallel 1,
+[82:15] how much will this come,
+[82:21] let us not take 1 here,
+[82:37] let us take exact AER,
+[82:39] 1.8768,
+[82:41] okay,
+[82:43] 1.8768,
+[82:45] now if you want current gain,
+[82:47] again,
+[82:49] show the same way,
+[82:53] that I naught is V naught by 2K,
+[82:57] and supply current is,
+[83:03] I in,
+[83:05] how much is I in,
+[83:11] V in by
+[83:13] 165,
+[83:17] so if you take out current gain,
+[83:19] I naught upon I in,
+[83:23] so this will be V naught by V in,
+[83:27] into 165 by 2,
+[83:31] how much is coming,
+[83:33] 154.83,
+[83:35] okay,
+[83:39] so see,
+[83:41] current gain is coming well in JFET,
+[83:43] but look at this,
+[83:45] voltage gain is very poor in JFET,
+[83:47] see the next one,
+[83:49] consider the following statements,
+[83:51] in regard to and channel JFET,
+[83:53] the maximum drain current,
+[83:55] IDSS,
+[83:59] what is the matter,
+[84:01] make a model and take out the answer,
+[84:03] it is very good,
+[84:05] the maximum drain current IDSS,
+[84:07] occurs when VGS is 0,
+[84:09] and VDS is greater than equal to
+[84:11] mod VP,
+[84:13] VP is the pinch off voltage,
+[84:15] for gate to source voltage,
+[84:17] VGS less than the pinch off level,
+[84:19] drain current is 0,
+[84:21] for all level of 0,
+[84:23] to pinch off level,
+[84:25] ID will range between,
+[84:27] IDSS and 0,
+[84:29] tell me,
+[84:33] what is it,
+[84:35] all are correct,
+[84:37] yes,
+[84:39] all are correct,
+[84:41] yes,
+[84:43] all are correct,
+[84:45] your IDSS current is
+[84:47] available,
+[84:49] when your VGS is 0,
+[84:51] and on drain,
+[84:53] you use more than pinch off voltage,
+[84:55] if you take VGS
+[84:57] behind the pinch off,
+[84:59] then your channel ends,
+[85:01] if VGS is from 0 to pinch off,
+[85:03] then your current is
+[85:05] going to be from 0 to IDSS,
+[85:07] okay, so the answer is C,
+[85:09] it is clear,
+[85:11] now this is your assignment,
+[85:13] try it out,
+[85:15] see this also looks good,
+[85:17] where did it go,
+[85:19] JFET and BJT are connected, try it,
+[85:21] JFET and BJT made a Darlington pair,
+[85:23] wow,
+[85:25] you will enjoy it, literally,
+[85:27] when we discuss this assignment,
+[85:29] this Darlington pair is made,
+[85:31] JFET and BJT,
+[85:33] now I don't know,
+[85:35] where is my content developer question coming from,
+[85:37] but it is a very solid question,
+[85:39] it is a very interesting thing,
+[85:41] now see this link,
+[85:43] you guys go on it,
+[85:45] put the PYQs of BJT,
+[85:47] tomorrow your JFET will be over,
+[85:49] then we will start MOSFET,
+[85:51] I know in MOSFET,
+[85:53] there is a very special thing for EC kids,
+[85:55] CMOS inverter,
+[85:57] so don't worry,
+[85:59] every topic will be like this,
+[86:01] that after this,
+[86:03] you will never have to see it,
+[86:05] say the last option once,
+[86:07] this graph is,
+[86:09] Susobhan,
+[86:11] when VGS remains from 0
+[86:13] to VP,
+[86:15] then current is between IDSS and 0,
+[86:17] this is what happens,
+[86:19] this is what is saying,
+[86:21] when VGS remains from 0 to VP,
+[86:23] then current is between IDSS and 0,
+[86:25] it will remain between IDSS and 0,
+[86:27] okay,
+[86:29] now see, if you join Anacademy,
+[86:31] plus and iconic,
+[86:33] you have two options,
+[86:35] there are top teachers,
+[86:37] the entire study material is uploaded on the app,
+[86:39] the test series is included,
+[86:41] but if you doubt the new questions,
+[86:43] then you will get the video solution,
+[86:45] printed notes,
+[86:47] 1 to 1 mentorship,
+[86:49] strategy and study plan,
+[86:51] and in the open house session,
+[86:53] audio, okay,
+[86:55] and now 20% off is going on,
+[86:57] if you want to join anyone,
+[86:59] we have started Brahmastra plus batch,
+[87:01] and very soon,
+[87:03] I am also bringing a crash course for you,
+[87:05] on plus, so you join quickly,
+[87:07] using code ANKIT ESE,
+[87:09] and you are getting 20% off
+[87:11] on distance learning program,
+[87:13] so you will get books and test series,
+[87:15] you can also go for it,
+[87:17] and you just have to do it,
+[87:19] go to Anacademy app,
+[87:21] you have to choose the plan,
+[87:23] you have to decide the duration,
+[87:25] and while paying,
+[87:27] you have to code ANKIT ESE,
+[87:29] where you will get straight away 20% off,
+[87:31] and if you see the results,
+[87:33] we have produced the results,
+[87:35] we have taken out 6 anchors in the top 10,
+[87:37] last year,
+[87:39] your face can be on the next year's poster,
+[87:41] if you join
+[87:43] Anacademy using ANKIT ESE,
+[87:45] and what you have to do,
+[87:47] if you have a financial issue,
+[87:49] then you can also go for EMI,
+[87:51] you don't have to give any interest on EMI,
+[87:53] EMI is approved in 2 hours,
+[87:55] at least it is a paper work,
+[87:57] that is,
+[87:59] there is only a half card
+[88:01] pen card here,
+[88:03] and in the half card pen card,
+[88:05] give a member like this in your family,
+[88:07] who does the job,
+[88:09] because he gives EMI to them,
+[88:11] and you can repay in a flexible tenure,
+[88:13] last question,
+[88:15] is VDS written,
+[88:17] for all levels of VDS,
+[88:19] is it correct,
+[88:21] correct,
+[88:23] where is VDS written,
+[88:25] here also VDS
+[88:27] is written less than
+[88:29] pinch off,
+[88:31] and this one is correct,
+[88:33] in the first option VDS,
+[88:35] VDS is written on the pinch off,
+[88:37] so now remember,
+[88:39] remember the first graph,
+[88:41] where the graph was turned,
+[88:43] the voltage was VDS,
+[88:45] where the graph was turned,
+[88:47] the voltage was marked as VP,
+[88:49] the VDS graph also showed VP,
+[88:51] remember, I said,
+[88:53] when you take the drain source voltage
+[88:55] on the pinch off,
+[88:57] then your current becomes constant,
+[88:59] the saturation comes,
+[89:01] remember Saurav,
+[89:03] and see,
+[89:05] as I told you,
+[89:07] Brahmashra Plus batch has started,
+[89:09] what is the benefit in this,
+[89:11] daily doubts are being answered,
+[89:13] there are exclusive classes in the batch,
+[89:15] strategy by top teachers,
+[89:17] material is uploaded on the app and web,
+[89:19] there is a test series,
+[89:21] there is a paramount of Gate Academy,
+[89:23] Gate Academy Workbook and Gate Academy PYQs,
+[89:25] okay,
+[89:27] and if you follow Brahmashra
+[89:29] batch on YouTube,
+[89:31] here you will get syllabus completion
+[89:33] from top teacher,
+[89:35] but all these added benefits,
+[89:37] Gate Academy Workbooks, PYQs,
+[89:39] test series, all these things
+[89:41] are included in Brahmashra Plus,
+[89:43] and the fun part is,
+[89:45] when you come to the Academy,
+[89:47] there is a daily doubt session,
+[89:49] where you can ask your doubts,
+[89:51] and daily, my two subjects are going on,
+[89:53] in the morning, power electronics,
+[89:55] in the evening, EMT, you can attend that too,
+[89:57] and see, we have launched
+[89:59] the subscription of 4 months,
+[90:01] which kids want to prepare for
+[90:03] Gate 23,
+[90:05] they have to quickly apply the
+[90:07] TSE code and join the Academy,
+[90:09] so that you study under my
+[90:11] personal guidance,
+[90:13] and this is my telegram channel,
+[90:15] we will join it, so that
+[90:17] you get the notification of all the lectures,
+[90:19] and if you want the PDF of this session,
+[90:21] immediately you will go,
+[90:23] on the Home page of the Academy app,
+[90:25] there will be a community at the bottom,
+[90:27] I will be able to go to the Discover
+[90:29] in the community, and there,
+[90:31] all my PDF will be available,
+[90:33] so thank you everyone, thanks a lot, kids,
+[90:35] now we will meet tomorrow, we will
+[90:37] share the same time, same place,
+[90:39] let's crack it.

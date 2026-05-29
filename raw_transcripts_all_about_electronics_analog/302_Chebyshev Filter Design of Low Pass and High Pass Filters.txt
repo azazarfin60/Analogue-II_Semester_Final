@@ -1,0 +1,299 @@
+Title: Chebyshev Filter : Design of Low Pass and High Pass Filters
+URL: https://www.youtube.com/watch?v=6JbOAxCAxGo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel, all about electronics.
+[00:22] So in the last video of filter design, we had seen that how to design the low pass as well
+[00:26] as the high pass but the width filters using the silenky filter topology.
+[00:31] So in that video, we had seen that this but a width filter is having a flat pass band
+[00:36] and the roll of of this filter is at the rate of 20 and dp per decade.
+[00:41] That means suppose if you are designing the fourth order filter, then the roll of that
+[00:45] you will get with this filter will be at the rate of 80 dp per decade.
+[00:50] So now in this video, we will see how to design the low pass as well as the high pass
+[00:54] chaviche filters using the silenky filter topology.
+[00:58] So this chaviche filter provides the faster roll of rate compared to the but a width filter.
+[01:03] But in this chaviche filter, you will see some sort of repels in the pass band.
+[01:08] So now suppose if you want to design the chaviche filter, then we need to know some parameters
+[01:12] about this filter design.
+[01:14] So let us see those parameters one by one.
+[01:17] So the first parameter about this design is the pass band ripple.
+[01:20] That is the maximum allowable ripple in the pass band.
+[01:24] Now the second parameter of the design is the pass band cutoff frequency.
+[01:28] So now the filters which is having a flat pass band, like in the case of butterwath filter,
+[01:34] the cutoff frequency is defined as the frequency where the output is 0.707 times the maximum
+[01:40] value.
+[01:41] Or it is also known as the 3db frequency.
+[01:44] But for the filters which is having a ripple in the pass band, the cutoff frequency is
+[01:48] defined as the frequency beyond which you will not see any kind of ripple.
+[01:53] So for this filter, this frequency is known as the pass band cutoff frequency that is
+[01:59] omega p.
+[02:00] So as you can see here, beyond this cutoff frequency, you will see the monotronic response
+[02:05] of this filter.
+[02:07] And below this frequency, you will see the ripple in the pass band.
+[02:11] So apart from these two parameters, the remaining two parameters are stop band cutoff frequency
+[02:17] and stop band attenuation.
+[02:19] So the stop band cutoff frequency is the frequency beyond which the stop band of that filter
+[02:24] will start.
+[02:25] And the stop band attenuation defines the minimum amount of attenuation that you will
+[02:30] get in the stop band.
+[02:31] So suppose let us say for this filter, this frequency defines the stop band cutoff frequency.
+[02:37] Let us say that is omega s.
+[02:40] And let us assume that in this stop band, minimum amount of attenuation that is being
+[02:45] provided by the filter is 60 dB.
+[02:47] So these two parameters defines that if you go beyond this stop band cutoff frequency,
+[02:53] then you will get at least 60 dB of attenuation.
+[02:56] So this region is known as the stop band of this particular filter.
+[03:01] So now to design the Cheviju filter for our requirement, we should know all these four
+[03:05] parameters.
+[03:07] So now generally these type of filters are designed using the filter tables.
+[03:11] So here are the some of the parameters which you will find in the filter table.
+[03:15] So in this video, we will learn what are these different parameters and what is the significance
+[03:20] of all these parameters and using these parameters, how we can design our filter.
+[03:25] Now before we understand this filter table, let us see some mathematics which is involved
+[03:29] with this Cheviju filter.
+[03:31] Now for the filter design, this mathematics is not at all required.
+[03:35] But to get a better idea of this filter, let us see some mathematics which is involved
+[03:40] with this filter.
+[03:41] So now here as you can see, here is the normalized response of this Cheviju filter.
+[03:46] So the maximum value represents the value 1.
+[03:49] So now this type of response mathematically can be represented by this equation, where
+[03:54] here this epsilon represents the ripple factor of this filter.
+[03:59] That means the amount of ripple which you see in the response.
+[04:03] And this term represents the Cheviju polynomial for the nth order.
+[04:08] And here this polynomial is also normalized with respect to cutoff frequency or a pass
+[04:13] band frequency omega p.
+[04:15] So whenever this term is less than 1, that means frequencies which are less than omega p,
+[04:22] the function we can be represented by this equation.
+[04:26] And as you can see, it is having a periodic behavior.
+[04:29] In the frequencies which are beyond this pass band cutoff frequency, the expression can
+[04:35] be represented by this expression.
+[04:38] And as you can see, as you go beyond this cutoff frequency omega p, you will see the monotonic
+[04:44] behavior.
+[04:45] So now as we have a basic idea about this Cheviju filter response, now let us see how
+[04:51] to design this Cheviju filter by taking one example.
+[04:54] So in this example, we have given that we have to design the low pass Cheviju filter which
+[05:00] provides the maximum gain of phi db, which is having a pass band ripple of 0.5 db and
+[05:07] the cutoff frequency of this filter is 2500 radian per second.
+[05:11] Apart from that, we have been given the stop band frequency that is 12.5 kilo radian
+[05:17] per second and the stop band attenuation which is required for this filter is 30 db or
+[05:23] more.
+[05:24] So as you can see here, we have been given the four different parameters which are required
+[05:28] for the filter design.
+[05:29] So now from these four parameters, first of all, we should decide what should be the
+[05:33] order of the filter for our design.
+[05:35] And that can be decided by this expression, where here as represents the stop band attenuation,
+[05:41] a p represents the pass band ripple omega s is the stop band cutoff frequency and omega
+[05:47] pays the pass band cutoff frequency.
+[05:50] So we have all these four parameters.
+[05:52] So let us put all these four parameters inside this equation and let us find the order
+[05:57] of the filter for this design.
+[05:59] So if you put all these values and solve the equation, then we will get value of n as
+[06:04] 2.267.
+[06:07] Now here the value of n should be integer.
+[06:10] So the value of n should be equal to 3.
+[06:13] That means for this design, we require the third order of Chabishu filter.
+[06:18] So now once we know the order of the filter, then by using the mathematical equations,
+[06:23] we can find the transfer function of this filter.
+[06:27] And through that we can design the filter.
+[06:29] But the same thing can be done just by using the filter table.
+[06:33] So here we will solve this problem using the both the methods.
+[06:37] That means by using the equations and then using the filter table.
+[06:41] And at the end we will see that we will get the same result.
+[06:44] So let us first of all solve this problem by using the mathematical equations.
+[06:49] So here I will quickly go through the mathematical equations.
+[06:53] So wherever you feel, you can pause the video and you can try to get those values by yourself.
+[06:58] So the next step is to get the transfer function of that particular filter.
+[07:02] And to get the transfer function, we need to first of all find the different poles of
+[07:06] this particular filter.
+[07:08] And these poles can be found out by using this expression.
+[07:13] Where this phi is nothing but 1 by n, sine hyperbolic inverse 1 over epsilon.
+[07:19] Where here n represents the order of the filter.
+[07:22] The value of epsilon can be found by using this expression.
+[07:26] While theta can be represented by this expression, where the value of k is from 1 to n.
+[07:34] So now for our design, the value of n is 3.
+[07:38] So first you need to get the value of this epsilon.
+[07:41] And from that try to get the value of this phi.
+[07:45] And once you know the value of phi, then find the value of these different theta's.
+[07:51] And if you put the values of this phi and theta inside this equation, then you will
+[07:55] get the 3 different number of poles.
+[07:58] So here is the value of epsilon and different values of poles.
+[08:02] So try to get those values by yourself by putting the value of this phi and theta inside
+[08:07] this equation.
+[08:09] And from this poles, we will get this transfer function.
+[08:12] Where here this h naught represents the value of this transfer function at omega is equal
+[08:17] to 0.
+[08:19] So when we put s is equal to 0, then we will get the value of this h naught.
+[08:24] And we know that when the order of the filter n is odd, that means n is equal to 3, then
+[08:31] at omega is equal to 0, the value of this transfer function will be equal to 1.
+[08:37] So that means h of 0 will be equal to 1.
+[08:41] And through that we will get the value of h naught as 0.715.
+[08:46] So in this way, we will get a transfer function of our filter.
+[08:50] Now apart from this, in this example, we have been given that we are providing a phi
+[08:55] db of gain to this filter.
+[08:57] Now this phi db is nothing but 10 to the power of 0.25, which you can get by equating
+[09:04] it with 20 log of a.
+[09:08] So from this, you will get the value of a s 10 to the power of 0.25.
+[09:13] That is nothing but 1.7783.
+[09:17] So we also need to multiply this expression by this factor.
+[09:21] So now our overall expression will look like this.
+[09:24] So this is the transfer function of our filter.
+[09:27] And using this transfer function, we can design our filter.
+[09:31] So now if you see here, this filter consists of two stages.
+[09:35] The one is the second order stage and another is the first order stage.
+[09:40] So by combining these two stages, we can design this filter.
+[09:43] Now if you know, in the last video, we had seen that the transfer function of second
+[09:48] order filter can be given by this expression.
+[09:51] So if we compare that expression with this term, then we can get the value of q and omega.
+[09:58] So if we compare these expressions, then the value of omega n square is nothing but 1.1424.
+[10:08] That means the value of omega n will be equal to 1.06 double 8 radian per second.
+[10:16] And similarly, if we compare this omega n by q with this value, then we can get the value
+[10:21] of q as 1.7063.
+[10:26] Similarly, if you compare this first order stage with this expression, then you will get
+[10:32] 0.6264, nearby as plus 0.6264.
+[10:40] That means for this first order filter, the cutoff frequency omega n will be equal to 0.6264.
+[10:48] So these are the parameters which are required to design our silenky filter.
+[10:53] And if you look this parameters inside this filter table, then indeed you will find that
+[10:58] the values are exactly matching.
+[11:01] Like here, you can see for the third order filter, the first section is the second order
+[11:06] filter and the second section is the first order filter.
+[11:10] So here, this f naught represents the scaling factor of this filter.
+[11:16] Now here, this filter table is designed for the cutoff frequency of 1 radian per second.
+[11:22] So this scaling factor basically represents the amount by which we should scale our cutoff
+[11:26] frequency of that particular section.
+[11:29] So as you can see here, for this first stage, the cutoff frequency is 1.0688.
+[11:36] And if you see here, exactly we got that value.
+[11:40] Similarly if you see the value of q for that section, that is equal to 1.7061.
+[11:46] And here this alpha is nothing but 1 over q.
+[11:49] And similarly for the second section, the cutoff frequency is 0.6265.
+[11:55] And exactly we got that value.
+[11:58] So in this way, if you know the order of the filter, then using this filter table, we
+[12:03] can directly get that transfer function.
+[12:05] And we do not require to go through that all the mathematical steps.
+[12:10] So now let us quickly see using this filter table, how we can get that transfer function.
+[12:15] So now let us quickly see using this filter table, how we can directly get that transfer
+[12:19] function.
+[12:20] So the following are the scaling factor for the two sections.
+[12:24] Now the quality factor for that second order section is 1.7061.
+[12:30] That is 1.7061.
+[12:33] Now we know that the second order transfer function can be given by the expression K into
+[12:37] omega n square, dR by S square plus omega n by q into S plus omega n square.
+[12:44] Now here the value of omega n will be equal to 1.0688.
+[12:50] And the value of q will be 1.7061.
+[12:53] And if you put all these values inside this equation, then we will get the expression
+[12:58] that is 1.1424 dR by S square plus 0.6264 S plus 1.1424.
+[13:10] Which is the same expression that we have got by using the mathematical equations.
+[13:15] Similarly, for the first order stage, if we compare this equation with the transfer function
+[13:21] omega n, dR by S plus omega n, then we can write it as a 0.6264 dR by S plus 0.6264.
+[13:32] And if you multiply these two expressions, then we get the same transfer function that
+[13:37] we have got using the mathematical equations.
+[13:40] So in this way, using this filter table, we can very easily get this transfer function.
+[13:46] So now once we know the transfer function of that filter, then the next step is to decide
+[13:50] the values of this R and C's for the given filter.
+[13:53] So our third order filter should look like this, which consists of second order saline
+[13:58] k filter followed by the first order lopa's filter.
+[14:02] So let us decide the values of this R and C's from the transfer function.
+[14:06] And first let us take the case of this second order section.
+[14:10] So for this section, let us decide the values of this R and C's.
+[14:14] And in the last video, we had seen that the transfer function of this saline k filter topology
+[14:18] can be given by this expression.
+[14:21] So in the last video, we had seen that when the value of R1 is equal to R2 is equal to
+[14:25] R and C1 is equal to C2 is equal to C. Then the value of Q can be given by the expression
+[14:31] 1 over 3 minus k, where k represents the gain of this filter.
+[14:36] So just by adjusting the gain, we can get the desired value of Q.
+[14:40] Now, if you closely see this example, in this example, we have been also asked to get
+[14:44] a gain of phi db, which corresponds to the value 1.77.
+[14:49] And for this design, we have just found out that the value of Q should be equal to 1.7063.
+[14:57] Now if you put the value of Q that is equal to 1.7063, then the value of gain will be
+[15:02] more than 1.77.
+[15:05] So in this particular example, we will not go through this procedure.
+[15:09] Rather, we will go through the different procedure.
+[15:11] But suppose if you are not given the value of gain, then you can follow the same procedure,
+[15:16] which we have followed in the but-a-butth filter design.
+[15:18] So here, what we will do?
+[15:20] Instead of using this feedback gain, we will use the unity gain, silent key filter.
+[15:26] So the value of k will be equal to 1.
+[15:29] And well in the value of k is equal to 1, then the Q can be given by the expression under
+[15:35] root R1 R2 C1 C2, dR by R1 C2 plus R2 into C2.
+[15:44] Now here, we will take R1 is equal to R2 is equal to R, and we will choose different values
+[15:50] of C1 and C2.
+[15:52] So now in this expression, when we will take R1 is equal to R2 is equal to R, then the
+[15:57] value of Q will be equal to 0.5 under root C1 by C2.
+[16:03] So now here, just by adjusting the value of C1 and C2, we can get the desired value of
+[16:09] Q.
+[16:10] In the cutoff frequency, omega can be given by the expression 1, dR by R into under root
+[16:16] C1 into C2.
+[16:19] So in this way, just by adjusting the value of C1, C2 and R, we can get the value of Q
+[16:24] as well as the omega for our given example.
+[16:27] So now so far, we have considered this transfer function for the frequency that is equal to
+[16:32] 1 radian per second, but in our design, we require the cutoff frequency omega C or omega
+[16:38] P that is equal to 2500 radian per second.
+[16:43] So now to get the transfer function, simply replace S by S divided by 2500, and replacing
+[16:51] that, you will get the transfer function for the cutoff frequency of 2500.
+[16:56] So now here, the cutoff frequency omega will be equal to 2500 into the scaling factor
+[17:01] that is equal to 1.06 double 8, and that value will come out as 2670 radian per second.
+[17:10] So this will be the cutoff frequency of our filter design.
+[17:14] Let us also assume that the value of R for this case is 10 kilo ohm.
+[17:19] So if we put this value, then we will get under root C1 into C2 as 37.4 nano faraday.
+[17:28] And let us say this is our expression number 1.
+[17:31] Likewise, we know the value of Q that is equal to 1.7063.
+[17:38] So now if you put this value in this equation, then we will get under root C1 by C2 as 3.4126.
+[17:47] And let us say this is our equation number 2.
+[17:50] So by multiplying this equation 1 and 2, we will get C1 as 127.6 nano faraday.
+[17:58] And if we put this value of C1 in either of these equations, then we will get the value
+[18:03] of C2 as approximately equal to 11 nano faraday.
+[18:08] And we have already assumed the value of R1 and R2 as 10 kilo ohm.
+[18:12] So in this way, we have found the value of C1, C2 and R1, R2.
+[18:17] So in this way, we have designed the first section of this filter.
+[18:21] Now let us similarly design the second section of this filter.
+[18:25] Now here, the gain that is required in our case is 1.77.
+[18:30] That is 1 plus R7 by R6 should be equal to 1.77.
+[18:36] Or we can say that R7 by R6 should be equal to 0.77.
+[18:42] So if we assume the value of R6 as 10 kilo ohm, then the value of R7 should be equal to
+[18:48] 7.7 kilo ohm.
+[18:50] So these two values will define the gain of this particular filter.
+[18:55] Now let us decide the value of R5 and C5.
+[18:58] Now for the second section, we know that the cutoff frequency omega p will be equal to
+[19:04] 0.6264.
+[19:06] And let us multiply this cutoff frequency with our desired cutoff frequency that is 2500
+[19:12] radian per second.
+[19:14] And by multiplying, we will get value as 1566 radian per second.
+[19:21] So this will be the cutoff frequency of that second section.
+[19:25] And this cutoff frequency is given by 1 over RC.
+[19:29] So now let us assume the value of CS.1 microfaraday.
+[19:34] And if we put the value of CS.1 microfaraday, then we will get the value of R as 6.38 kilo ohm.
+[19:42] So in this way, we have got the value of R5 as 6.38 kilo ohm and value of C5 as 0.1 microfaraday.
+[19:52] So in this way, we have decided all the values of R and C's for this particular design.
+[19:57] So in this way, by using this filter table, we can design the any order of Chabeshau filter.
+[20:03] Now these filter tables are defined for the different values of passband ripple.
+[20:08] Like here, this filter table is defined for the passband ripple of 0.5 dB.
+[20:13] And likewise, we can have a different filter tables for the different values of passband ripple.
+[20:19] So in the description, I will provide the different filter tables for the different values
+[20:23] of passband ripple.
+[20:24] Now so far, whatever discussion that has been carried out, that was for the low pass
+[20:29] filter design.
+[20:30] Now similarly, let us see how to design the Chabeshau high pass filter.
+[20:33] Now let us say, we want to design the high pass filter, which is having a same cutoff
+[20:38] frequency that is equal to 2500 radian per second.
+[20:42] And it is having a same roll of rate that was for the low pass filter.
+[20:46] So simply by replacing S by 1 by S, we can transform any low pass filter into the high
+[20:51] pass filter, which is having a same cutoff frequency.
+[20:54] So now in this expression, if you replace this S by 1 over S, then you will get the high
+[20:59] pass filter, which is having a cutoff frequency of 1 radian per second.
+[21:04] And after that, if you replace this S by S divided by 2500, then you will get the transfer
+[21:11] function for the high pass filter, which is having a cutoff frequency of 2500 radian
+[21:16] per second.
+[21:18] So try to do it by yourself and do let me know the new values of this Q and the frequency
+[21:23] scaling factor F naught.
+[21:25] And once you get the transfer function, then using this Sarenky filter topology, you can
+[21:29] decide the value of R and C's.
+[21:32] So try to get the value of R and C's for the high pass filter and do let me know your
+[21:37] design values.
+[21:38] And in the last video, we had seen that the transfer function for the high pass filter
+[21:42] can be given by this expression.
+[21:44] So using this expression, you can find the values of R and C's.
+[21:48] So this is all about the Chebyshev low pass as well as the high pass filter design.
+[21:52] So I hope in this video, you understood how to design the low pass as well as the high
+[21:56] pass Chebyshev filters.
+[21:58] So if you have any questions or suggestions, do let me know in the comments section below.
+[22:02] If you like this video, hit the like button and subscribe to the channel for more such
+[22:05] videos.

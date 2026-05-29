@@ -1,0 +1,47 @@
+Title: BJT: Common Emitter Amplifier Solved Example | Quiz # 247
+URL: https://www.youtube.com/watch?v=a9rQJTHNFnM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given this common emitter amplifier circuit and we have
+[00:22] been asked to find the resistance which is seen by this voltage source as well as the voltage
+[00:26] gain V O divided by V S for the amplifier.
+[00:30] Now when I posted this question, then by mistake the value of RC was 250 kilo ohm but actually
+[00:36] it is 250 ohm.
+[00:39] Now here we have been already given the parameters which is required for the small signal analysis.
+[00:45] That means we don't need to do the DC analysis of the circuit.
+[00:49] Alright so first of all let us replace this BJT by the small signal model.
+[00:55] That means for the small signal analysis we can consider all the DC sources in the
+[00:59] circuit as 0 while we can replace this coupling capacitors by the short circuit and after
+[01:06] that we can replace this BJT by the small signal model.
+[01:10] So if we see the AC equivalent circuit then it will look like this.
+[01:15] So here the equivalent impedance which is seen by the voltage source let's say it is equal
+[01:20] to Z in.
+[01:23] So this impedance Z in can be given as RS plus RV parallel RY.
+[01:32] That means Z in is equal to 1 kilo ohm plus 93 kilo ohm in parallel with 259 ohm.
+[01:43] That is equal to 1 kilo ohm plus 258 ohm.
+[01:49] That means the input impedance which is seen by the source is equal to 1 to 5 ohm.
+[01:56] So similarly now let us find out the voltage gain.
+[02:00] So here we know that the output voltage V out can be given as minus IC times RC parallel
+[02:08] RL.
+[02:10] That is equal to minus GM times V pi times RC parallel RL.
+[02:19] So here we need to find the value of V pi in terms of the input voltage.
+[02:24] So here this voltage V pi can be given as RV parallel RY divided by RS plus RV parallel
+[02:36] RY times input voltage.
+[02:41] That means V pi divided by V in is equal to RV parallel RY divided by RS plus RV parallel
+[02:52] RY.
+[02:55] Now we already know that the parallel combination of RV and RY is equal to 258 ohm.
+[03:01] That means V pi divided by V in is equal to 258 ohm divided by 258 ohm plus 1000 ohm.
+[03:14] That is equal to 0.205.
+[03:18] That means we can say that this V out is equal to minus GM times RC parallel RL times 0.205
+[03:28] times V in.
+[03:30] That means V out divided by V in or the V out divided by V s is equal to minus GM times
+[03:38] RC parallel RL times 205.
+[03:43] Now here the value of GM is equal to 0.3861 while the value of RC and RL are 250 ohm and
+[03:51] 1 kilo ohm.
+[03:53] That means V out divided by V in is equal to 0.3861 times 1 kilo ohm in parallel with 250 ohm
+[04:04] times 0.205.
+[04:08] So if we calculate the value then it will come out as minus 15.83.
+[04:14] So from this we can say that for the given circuit the input resistance which is seen by
+[04:19] the voltage source is equal to 1258 ohm while the voltage gain V out divided by V s is
+[04:26] equal to minus 15.83.

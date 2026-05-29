@@ -1,0 +1,2640 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Rectifiers and Filters - 01 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=QguFE841eXs
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to Creatrix YouTube channel my dear friends, we are live again, we are back again with Lakshaya batch 2.0 Analog Electronics.
+[00:20] As you all know, we have covered many things related to diode in Analog.
+[00:28] We have seen diode construction, working parameters, open circuit test, short circuit test, then we have seen clippers and clampers in diode application.
+[00:41] Today I am going to teach you the next application of diode that is going to be rectifiers.
+[00:48] In this session, we will talk about rectifier.
+[00:51] I will talk about a half wave rectifier on a full wave rectifier and in the next session, I will talk about the remaining bridge rectifier and filters.
+[01:01] In these two sessions, we are going to cover rectifier and filter completely, you will enjoy a lot.
+[01:08] You will learn basic things. If you have never read rectifier in your life, there is no problem.
+[01:13] You just need to understand how to do diode analysis, which you are doing in clipper or clamper.
+[01:21] If you go from a fundamental level, then rectifier is not at all difficult.
+[01:25] I would say it is one of the most easy topics.
+[01:29] Let's start today's discussion.
+[01:32] Let's start by liking the video. We will mark attendance for all the kids and share it with everyone.
+[01:37] We will tell everyone that we are live so that all the kids can be connected live.
+[01:42] Sir, how the negative clamper works in the second cycle of sine wave.
+[01:46] If you are talking about negative clamper, then the capacitor is charged in positive cycle.
+[01:52] So, the diode will be switched off in negative cycle only after 90 degrees.
+[01:56] The diode will never be on.
+[01:59] So, the positive cycle of negative cycle or 90 to 180, the diode will be switched off in all.
+[02:06] And your output will be VI-VM.
+[02:11] One information for all of you.
+[02:15] On the 5th of September, at 6 pm, we are going to do a big event.
+[02:21] That is Unacademy 1.
+[02:23] There are going to be a lot of things for you.
+[02:25] So, please attend this session.
+[02:28] It will be live streamed at 6 pm.
+[02:31] And there are a lot of your teachers, a lot of your known celebrities.
+[02:36] A lot of people are going to see you in this event.
+[02:39] It is one of the most major announcements from Unacademy.
+[02:43] So, definitely attend this Unacademy 1.
+[02:46] So, now let's talk about rectifiers.
+[02:49] How do we get peak to peak?
+[02:51] Peak to peak means maximum minus minimum.
+[02:54] And the concept of peak to peak voltage is more useful in filters.
+[02:59] So, we will discuss in filters to get peak to peak value.
+[03:03] If you want to get peak to peak in any graph, then the maximum value minus minimum value is the peak to peak value.
+[03:13] Okay?
+[03:14] And RG, there is no doubt clearing session.
+[03:17] You can ask any random topic and then I will start discussing it.
+[03:21] It is not like that.
+[03:22] We will go in flow, we will go in sequence.
+[03:24] Everything will be clear.
+[03:25] Now, it is possible for any child to have a problem in BJT or in Mosfet.
+[03:29] So, we cannot discuss everything at the time.
+[03:32] Let's go.
+[03:33] Now, the thing is about regulated DC power supply.
+[03:38] Regulated DC power supply means that we are trying to make a power supply here.
+[03:47] Whose DC value I can control.
+[03:50] That is, I should be able to control how much DC voltage is being generated.
+[03:55] And the DC power supply we are making, we are making it from AC.
+[04:00] From whom?
+[04:01] We are making it from AC.
+[04:02] So, this power supply uses a lot of components in which the first component is your rectifier.
+[04:10] So, if you look here, first of all, what did I put?
+[04:13] Transformer.
+[04:14] What did I do with the transformer?
+[04:15] Suppose, I have 220V AC in my house.
+[04:18] Okay?
+[04:19] Now, I have to make it in DC only 5V.
+[04:22] So, I cannot rectify 220V and make it 5V.
+[04:25] Before that, I will have to step down it.
+[04:29] Okay?
+[04:30] So, what is this doing?
+[04:31] This transformer is stepping down.
+[04:34] That is, it is reducing the voltage.
+[04:36] As you can see.
+[04:38] Now, the charger of my mobile.
+[04:41] It will give 220V to the mobile.
+[04:44] So, the charger of the mobile.
+[04:47] By default, there will be a small transformer in it.
+[04:50] Which will step down the voltage.
+[04:52] After that, it will convert it to DC.
+[04:55] Sir, first step down in DC.
+[04:57] It would have been more costly.
+[04:59] Because when we convert high voltage to DC,
+[05:02] the elements used to us.
+[05:04] The components that we need are more rated components.
+[05:08] And their cost is also more.
+[05:10] Their costing is also more.
+[05:12] That is why it is better.
+[05:13] Because transformer is a cheap component.
+[05:15] Don't think that the transformer that is in the street area.
+[05:18] No, man.
+[05:19] In electronic devices, there are small transformer.
+[05:22] So, that transformer is a very cheap thing.
+[05:24] So, before that, you step down the voltage.
+[05:27] Then the next circuit will be the low rating circuit.
+[05:30] And its costing will also be less.
+[05:32] So, first we will step down.
+[05:35] Now, what will the rectifier do?
+[05:37] It will rectify this waveform.
+[05:39] Will it convert the negative part to positive?
+[05:43] Or will it disappear the negative part?
+[05:45] For example, if there was a negative clipper.
+[05:47] Then it cut the negative part.
+[05:49] If there is a full wave rectifier.
+[05:51] Then it will also positive the negative part.
+[05:53] So, what does the half wave rectifier do?
+[05:55] It will delete the negative part.
+[05:57] And what does the full wave rectifier do?
+[05:59] It also positives the negative part.
+[06:01] Now, after rectifying this waveform.
+[06:04] It is called pulsating DC.
+[06:07] That is why DC is called.
+[06:09] Because its polarity is not changing.
+[06:11] Look, it is always positive.
+[06:14] It is never negative.
+[06:16] That is, it is DC.
+[06:17] What is the difference between DC and AC?
+[06:19] AC is a current or voltage.
+[06:21] In which its sign and polarity changes after some time.
+[06:26] But what happens in DC?
+[06:28] The polarity remains the same.
+[06:30] Even though the polarity is the same here.
+[06:32] But there are fluctuations.
+[06:34] That is why pulsating.
+[06:36] That is, there are pulses and fluctuations.
+[06:38] So, this is not a good DC.
+[06:39] It is a good DC.
+[06:40] It is constant.
+[06:41] That is why, after rectifying,
+[06:43] we apply the filter.
+[06:45] What does the filter do?
+[06:46] It reduces the fluctuation.
+[06:48] It doesn't do zero.
+[06:49] But it reduces.
+[06:51] Now, as a child was asking,
+[06:52] what is the peak-to-peak value?
+[06:54] It is this.
+[06:55] So, this peak-to-peak is ripple.
+[06:58] It will reduce.
+[07:00] Peak-to-peak ripple will reduce.
+[07:03] After this, we apply the voltage regulator.
+[07:05] Which is made of Zener diode.
+[07:08] And it gives you almost constant output.
+[07:12] Almost a constant output.
+[07:15] Perfect DC is made.
+[07:17] That is, if you want to make a perfect DC from an AC,
+[07:20] then you need three components.
+[07:21] Rectifier, Filter and Regulator.
+[07:24] And the next three components,
+[07:26] you are going to study this.
+[07:27] You are going to study these three circuits.
+[07:29] For example, today I will study Rectifier.
+[07:31] Tomorrow I will study Filter.
+[07:32] And tomorrow I will study Regulator.
+[07:34] So, in one way,
+[07:35] your entire power supply will be completed.
+[07:38] So, have you understood the physical significance?
+[07:41] Have you understood the physical significance?
+[07:45] Tell me.
+[07:47] Now, what is your name?
+[07:49] Your RG.
+[07:51] Dear, this is a strange question.
+[07:53] Can you make DC to AC?
+[07:55] Yes, you can.
+[07:56] The UPS that we use at home,
+[07:58] the inverter that we use,
+[07:59] converts the DC of the battery to AC.
+[08:01] But what do we take from our topic?
+[08:04] I said this.
+[08:05] My devices such as mobile,
+[08:07] laptop, camera,
+[08:09] all of them need DC supply.
+[08:11] And the supply that comes in my house is AC.
+[08:13] So, I have to convert it into DC.
+[08:15] And that is what I am calling it as a regulated DC power supply.
+[08:19] So, for that,
+[08:20] we are using three components,
+[08:22] Rectifier, Filter and Regulator.
+[08:25] Now, Mr. Manthan is saying differently.
+[08:27] You can directly make DC
+[08:29] by putting a commutator in the AC machine.
+[08:31] What is the need of Rectifier?
+[08:32] Dear, what is the AC machine in my house
+[08:34] in which I put a commutator?
+[08:36] Tell me one thing.
+[08:38] If I have to charge my mobile in my house,
+[08:40] then first I will bring a synchronous generator.
+[08:42] Then I will put a commutator on it.
+[08:44] Then I will step down it.
+[08:46] And then I will give it to my mobile.
+[08:48] Will you do this, Manthan?
+[08:50] Will you charge your phone like this?
+[08:52] Tell me.
+[08:56] When all our generation,
+[08:58] transmission, distribution is AC,
+[09:00] then where will you put a commutator?
+[09:05] This is the problem, you know.
+[09:08] Nowadays, I feel like this.
+[09:10] Whether I study on Plus,
+[09:12] whether I study on YouTube,
+[09:14] in my class,
+[09:15] the scientists of ISRO are sitting.
+[09:16] Means, students are not coming,
+[09:18] B Tech people.
+[09:19] The scientists of ISRO are coming and going.
+[09:21] Now, there are so many big scientists.
+[09:23] To be able to explain,
+[09:24] I don't have that much capacity,
+[09:25] I don't have that much level.
+[09:26] Do you understand?
+[09:27] So, that's why I want
+[09:29] the students attending this class,
+[09:31] who are students.
+[09:32] If the scientists do this,
+[09:33] then it will be very difficult for me.
+[09:35] Come on.
+[09:37] Now, we will talk about rectifier.
+[09:39] Okay?
+[09:40] So, what is going to be our first component?
+[09:42] What is going to be rectifier?
+[09:44] And what is the work of rectifier?
+[09:46] My brother, the work of rectifier is very simple.
+[09:49] That the rectifier will be taken in input,
+[09:51] son, AC supply.
+[09:53] Rectifier will be taken in input,
+[09:55] your AC supply.
+[10:00] And what will it give in output?
+[10:03] Pulsating DC.
+[10:09] Now, I have also told you, son,
+[10:11] that it can have two forms.
+[10:13] It can have two forms.
+[10:15] It can have two forms.
+[10:17] It can have two forms.
+[10:19] It can have two forms.
+[10:21] It can have two forms.
+[10:22] It can have two forms.
+[10:24] As you can see,
+[10:25] one form can be
+[10:28] that only you get a positive half cycle.
+[10:33] The negative cycle will be zero.
+[10:35] Like it was a negative clipper.
+[10:37] We call it, son, half wave rectifier.
+[10:39] One can be that you can take a mod of negative cycle.
+[10:43] You can also make it positive.
+[10:46] We call it full wave rectifier.
+[10:49] Like this.
+[10:50] So, in the half wave rectifier,
+[10:52] you have deleted one pulse
+[10:54] and what have you done in the full wave rectifier?
+[10:56] You have also made the negative pulse positive.
+[10:59] This is the main purpose of a rectifier.
+[11:04] Okay, son.
+[11:05] Now, look at this rectifier.
+[11:08] Who do we make it?
+[11:11] We make it from diodes.
+[11:15] For low rating,
+[11:16] means for electronic circuits,
+[11:18] it is made from diodes.
+[11:20] And when we talk about the power system,
+[11:22] son, where there is a voltage in the KV,
+[11:24] there is a device called
+[11:26] silicon controlled rectifier.
+[11:28] SCR, which is the device of high rating,
+[11:31] it is made from that.
+[11:33] So, the fund of the rectifier is the same.
+[11:35] We use diodes for
+[11:37] lower rating of rectifier
+[11:39] and SCR we use for
+[11:41] higher rating of rectifier.
+[11:44] Is it clear?
+[11:45] So, this is the basic purpose of the rectifier.
+[11:48] And what do we put in front of this?
+[11:50] We put filter.
+[11:51] But in the next lecture,
+[11:53] I will tell you that
+[11:54] there is a capacitive filter,
+[11:55] inductive filter.
+[11:56] Okay?
+[11:57] Now, as the capacitive filter comes
+[11:59] in the same concept that I taught you yesterday,
+[12:01] that you have to keep the time constant
+[12:03] large so that the discharging
+[12:05] does not come in the capacitor.
+[12:07] And you get almost constant output
+[12:09] on the capacitor.
+[12:11] As you can see here,
+[12:13] after the filter,
+[12:14] the fluctuation has decreased.
+[12:15] Why did the fluctuation decrease?
+[12:17] This fluctuation is from the charging
+[12:19] and discharging of the capacitor.
+[12:21] And if I keep the time constant
+[12:23] as much as possible, the less fluctuation
+[12:25] will come.
+[12:26] Because it takes more time
+[12:28] to discharge the capacitor.
+[12:30] So, you will read the concept here
+[12:32] when you will read the capacitive filter.
+[12:34] If we talk about inductive filter,
+[12:35] then the inductor tries to keep the current
+[12:37] constant.
+[12:38] The capacitor tries to keep the voltage
+[12:40] constant.
+[12:41] So, after the rectifier,
+[12:43] a filter is applied to improve
+[12:45] the quality of waveform.
+[12:47] And if you don't want a ripple
+[12:49] at all, then it looks like a
+[12:51] voltage regulator.
+[12:52] And as I told you,
+[12:53] in three lectures, one by one,
+[12:55] we will talk about these three things.
+[12:57] So, see, in rectifier,
+[12:59] low voltage rectifier and high voltage rectifier
+[13:01] will be there.
+[13:02] Low voltage will be made from the diode.
+[13:04] You will read three things in this.
+[13:06] Half wave, full wave.
+[13:08] There are two categories in the full wave.
+[13:10] Center tapped full wave
+[13:12] or bridge rectifier.
+[13:14] Usually, when the name is given,
+[13:16] full wave rectifier.
+[13:18] So, let's assume that the center tapped
+[13:20] full wave.
+[13:21] Because the bridge rectifier is usually called
+[13:23] bridge rectifier.
+[13:25] It is not called full wave rectifier.
+[13:28] What is it called?
+[13:29] Bridge rectifier.
+[13:30] Now, the high voltage rectifier
+[13:32] made from SCR is
+[13:34] read in power electronics.
+[13:36] There are many categories in these.
+[13:38] Single phase, three phase.
+[13:40] There are many things.
+[13:42] And children in power electronics are also
+[13:44] worried because of this.
+[13:46] Okay?
+[13:47] So, you don't need to be afraid.
+[13:49] This is part of power electronics.
+[13:51] We will not do this.
+[13:52] Okay?
+[13:53] Is the matter clear?
+[13:55] Now, son, tell me one thing.
+[13:57] If you want to read a child who is a polytechnic,
+[13:59] then why are you spamming my chat?
+[14:01] This is the thing.
+[14:02] That if I climb on someone's head and turn off,
+[14:04] then do this work.
+[14:05] Rather than request,
+[14:06] this is something to threaten.
+[14:08] That while spamming the chat,
+[14:10] go ahead and pay attention.
+[14:12] The second thing is, son,
+[14:14] I don't know about polytechnic or syllabus.
+[14:16] Neither do I have any experience of its teaching.
+[14:18] Okay?
+[14:19] So, what happens?
+[14:20] As long as you don't have
+[14:21] a teaching experience,
+[14:22] if you don't know about your child's mindset,
+[14:23] then what will you teach him?
+[14:25] Neither do I know about syllabus,
+[14:27] nor do I know which level your paper is made of,
+[14:30] nor do I know how your mindset is,
+[14:33] which level you have to take things to,
+[14:35] how advanced or how basic you have to go up.
+[14:39] So, what will you do by studying from me?
+[14:41] And if the same concept that I am studying
+[14:43] in polytechnic,
+[14:44] then read it from here.
+[14:45] And the second thing is,
+[14:47] son, I can't do everything.
+[14:49] I am also a human being.
+[14:51] There is an analogue demand here.
+[14:53] It will start a few days later
+[14:54] when the analogue will be done for 10-15 days
+[14:56] to get the measurement done.
+[14:58] Isn't it?
+[14:59] Then what will happen?
+[15:00] Then the SSCJ children will come.
+[15:02] Sir, let our machine power system be done.
+[15:04] So, there is nothing at the end.
+[15:07] And when you look at Gohain,
+[15:10] Bright Gohain,
+[15:12] now I don't know what his name is,
+[15:13] but this boy is also from polytechnic
+[15:15] and is saying that he is getting help from this channel's videos.
+[15:17] So, son, look at it.
+[15:18] Okay, someone will come in between,
+[15:20] Sir, get the HPCL done.
+[15:22] The concept is all the same.
+[15:24] The thing is,
+[15:25] don't take so much effort to find the video.
+[15:27] We are sure that if we get it in the plate,
+[15:29] then we will see.
+[15:31] We will learn.
+[15:32] Do you understand?
+[15:34] Like, a lot of children are demanding for HPCL.
+[15:36] The lecture of HPCL is already on this channel.
+[15:38] In the name of AgniBatch,
+[15:40] neither did the exam of HPCL
+[15:42] nor did the syllabus change,
+[15:43] nor did the pattern change.
+[15:44] So, do you understand the difference
+[15:46] of HPCL?
+[15:47] But no.
+[15:48] Do you understand?
+[15:49] A lot of children will say,
+[15:51] Sir, do one thing.
+[15:52] Sir, tell me.
+[15:53] How do you do revision?
+[15:54] Let's search once on YouTube.
+[15:56] Creatrix revision.
+[15:57] That's how the video was found.
+[15:58] But don't even search for it.
+[16:00] Do you have your own daily life?
+[16:02] Let's ask him.
+[16:03] Who is working so hard to search on YouTube?
+[16:06] If you search on this channel at this time,
+[16:08] you will get the maximum concept,
+[16:10] maximum subject.
+[16:12] Minor things are left here and there.
+[16:15] I am telling the truth.
+[16:16] But for that,
+[16:17] you will have to take the initiative.
+[16:19] Eventually, you will have to show the motivation.
+[16:21] Because you are preparing.
+[16:25] Okay?
+[16:26] Come on.
+[16:27] Let's start with the Half-Wave Rectifier.
+[16:30] What happens in the Half-Wave Rectifier?
+[16:32] We put a transformer in the supply.
+[16:35] This transformer that I have shown you,
+[16:37] that is 1 is to 1.
+[16:39] 1 is to 1.
+[16:41] Sir, why 1 is to 1?
+[16:42] Because you said the step down.
+[16:44] The role of 1 is to 1 transformer is
+[16:47] to isolate the supply from the load.
+[16:50] We don't want the part of our rectifier,
+[16:54] the diode,
+[16:55] which is directly connected to the supply.
+[16:58] That is why we have done 1 is to 1 to provide isolation.
+[17:01] If this voltage is high voltage,
+[17:03] then you can also step down by putting a step down transformer here.
+[17:07] And if this voltage is small in itself,
+[17:09] then you can put 1 is to 1 transformer.
+[17:11] So, it is not that 1 is to 1 will be applied or the step down will not be applied.
+[17:15] It depends on the supply that you have.
+[17:17] How much voltage supply is available.
+[17:20] So, what is 1 is to 1 transformer doing?
+[17:24] It isolates
+[17:31] rectifier circuit
+[17:35] from source.
+[17:37] It provides isolation from source.
+[17:40] Now look, there is nothing in the half wave rectifier.
+[17:43] There is a simple thing,
+[17:45] there is a diode.
+[17:47] What is it?
+[17:48] It is a simple thing that is,
+[17:50] it is a diode.
+[17:51] Now look at the diode.
+[17:53] What is shown here?
+[17:54] What is shown here is PWL model.
+[18:00] What have I shown in PWL model?
+[18:03] This is the cut-in voltage
+[18:06] on which my diode will be on.
+[18:13] And the slope that is 1 by RF.
+[18:16] 1 by RF means 1 by forward resistance.
+[18:19] Why 1 by RF?
+[18:20] Because current versus voltage.
+[18:22] If voltage versus current was there,
+[18:25] then the slope would be resistance.
+[18:27] Current upon voltage,
+[18:29] that is conductance or 1 by resistance.
+[18:33] RG is saying 1 is to 1 means step down.
+[18:36] Sometimes I feel that I should die after eating poison.
+[18:39] How do you get such knowledge?
+[18:41] 1 is to 1 means the voltage is here,
+[18:43] how is the step down here?
+[18:45] Step down means that
+[18:47] voltage should be reduced.
+[18:49] 1 is to 1 means here is 1 and here is also 1.
+[18:51] So where is the reduction?
+[18:55] You are at a crazy level.
+[18:57] Now see what we do?
+[18:59] We do simple work.
+[19:00] We solve it with open circuit test.
+[19:03] We solve it with open circuit test.
+[19:06] So what do I say?
+[19:10] We have to do it with basics.
+[19:12] Because look at us.
+[19:13] I am not telling you any concept.
+[19:15] I am telling you a new thing.
+[19:17] I am teaching you the basic analysis.
+[19:21] You did one lecture,
+[19:23] open circuit test, short circuit test.
+[19:25] I am doing the same till now.
+[19:27] Okay?
+[19:29] So see what we did in open circuit test.
+[19:32] I am making only the secondary of transformer.
+[19:38] We opened the diode.
+[19:45] Okay?
+[19:46] And you can understand directly that
+[19:48] this is a series negative clipper.
+[19:50] So here the voltage is on the secondary
+[19:52] according to 1 is to 1.
+[19:55] Vm sin omega t.
+[19:58] And here the V-naught is 0.
+[20:01] Okay?
+[20:03] Because here the current is 0.
+[20:06] So now if I ask you,
+[20:08] tell me the voltage of the diode.
+[20:10] You will put KVL minus
+[20:12] plus Vm sin omega t.
+[20:14] Plus a minus minus Vd
+[20:17] minus V-naught equal to 0.
+[20:20] So the diode voltage is Vm sin omega t.
+[20:27] Now what will we say?
+[20:29] We will say diode will be on
+[20:32] when Vd will be positive.
+[20:35] That is during
+[20:40] positive half cycle.
+[20:43] And then I will say that diode will be off
+[20:47] when Vd is negative.
+[20:49] That is negative half cycle.
+[20:51] Now see what we are doing to keep things simple.
+[20:55] We are not taking the cutting voltage of the diode.
+[20:57] Because if we take the cutting voltage of the diode
+[21:00] then we will have to say
+[21:02] that Vm sin omega t has to go above the cutting voltage.
+[21:06] Then the diode will be on.
+[21:08] That means the diode will not be on
+[21:10] in the positive cycle.
+[21:12] We will have to say that the diode will be on
+[21:14] when the voltage in the positive cycle
+[21:16] goes above the voltage of your V gamma
+[21:19] or the cutting voltage.
+[21:22] Okay?
+[21:23] It goes above the cutting voltage.
+[21:25] So we have to ignore the cutting voltage
+[21:27] so that life is a little easier
+[21:29] and things can be made very easily.
+[21:33] Sir, why we use one is to one transformer?
+[21:35] The voltage was low.
+[21:37] I have just written
+[21:39] that it isolates the rectifier circuit
+[21:41] from the source.
+[21:42] It is providing isolation.
+[21:44] Supply and rectifier are not directly connected.
+[21:47] What happens with this?
+[21:48] If there is a problem in the supply
+[21:50] and there is a fault in the supply
+[21:52] then it will not damage our rectifier
+[21:54] because they are not directly connected.
+[21:56] There is a transformer in between them.
+[21:58] Okay?
+[22:05] What else are you saying?
+[22:07] Sir, I could not do the class yesterday.
+[22:09] I will do it now.
+[22:10] Please after 3 hours
+[22:11] the tomorrow's video is private because of my data.
+[22:13] So do it.
+[22:14] This video will stay for 24 hours.
+[22:16] Do it tomorrow.
+[22:17] But don't do it slowly like this.
+[22:20] You are reading it slowly.
+[22:22] That you are not doing it.
+[22:24] You are missing the classes.
+[22:25] It won't be fun anyway.
+[22:27] Come on.
+[22:29] Now see what I say.
+[22:31] When I talk about the positive half cycle
+[22:33] my diode will be on.
+[22:35] What did I do to diode?
+[22:36] I replaced the diode
+[22:38] with one resistance.
+[22:40] Who replaced it?
+[22:41] With one resistance.
+[22:42] So what are we saying?
+[22:44] Listen carefully.
+[22:46] We have ignored
+[22:52] cut-in voltage.
+[22:55] Okay?
+[22:56] We have ignored the cut-in voltage.
+[22:59] Now see here
+[23:01] how much your V0 will be.
+[23:03] Both are in the resistance series.
+[23:05] Now listen carefully.
+[23:07] You are disturbing too much today.
+[23:09] Vm sin omega t.
+[23:14] Okay?
+[23:15] You will write it from the voltage division.
+[23:17] RL by
+[23:19] RL plus Rf.
+[23:23] This is it.
+[23:24] This will be your V0 from the voltage division.
+[23:27] This will be your V0.
+[23:29] Vm sin omega t.
+[23:30] RL by RL plus Rf.
+[23:33] And at this time
+[23:35] there will be a small voltage on the diode.
+[23:37] Why am I saying small?
+[23:39] Because this is very small Rf.
+[23:41] This Rf is very small.
+[23:43] So the voltage across it
+[23:45] will also be small.
+[23:47] So I am saying the voltage of the diode.
+[23:49] That is Vm sin omega t.
+[23:59] Into RS.
+[24:04] By Rf plus RL.
+[24:09] This will be the voltage of the diode.
+[24:12] Okay?
+[24:13] So what will happen to these two?
+[24:16] This will be a very small positive voltage.
+[24:23] Okay?
+[24:24] Small positive voltage.
+[24:25] Because Rf is small.
+[24:27] And if you take an ideal diode
+[24:29] then you can also do Rf0.
+[24:32] Right?
+[24:33] As you know
+[24:34] most of the questions are made with an ideal diode.
+[24:37] So if you were taking an ideal diode
+[24:40] then you could also call Rf as 0.
+[24:43] So what would have happened in that case?
+[24:45] In that case the output would have been
+[24:47] the voltage of the entire supply.
+[24:50] As it is Vm sin omega t.
+[24:53] And the voltage of the diode would have been 0.
+[24:56] What is happening now?
+[24:57] Small voltage is coming across the diode.
+[24:59] And the remaining
+[25:01] most of the voltage is going across the load.
+[25:04] Now this is happening.
+[25:05] Is it clear?
+[25:06] Now the case 2 during the negative half cycle diode is off.
+[25:09] When the diode is off and the reverse bias is off
+[25:13] then what do you do with it?
+[25:15] You circuit it open.
+[25:18] Okay?
+[25:19] You circuit it open.
+[25:21] So that your current is zero.
+[25:24] Now because your current is zero
+[25:27] therefore what will be your V0?
+[25:30] It will be zero.
+[25:32] Now if the V0 is zero
+[25:34] you will put KVL in this loop.
+[25:39] What will you write if you put KVL?
+[25:42] This means Vs is the source voltage.
+[25:44] Right?
+[25:45] Vs minus Vd
+[25:48] minus zero is zero.
+[25:51] So Vd is same as Vs
+[25:53] which is Vm sin omega t.
+[25:57] The supply is Vm sin omega t.
+[26:00] Okay?
+[26:01] You know once the kids were confused inside the gate.
+[26:03] Vm is written outside the sign.
+[26:06] You can call it amplitude.
+[26:08] You can call it peak value.
+[26:11] You can call it maximum value.
+[26:13] And one is RMS.
+[26:15] RMS is Vm by root 2.
+[26:18] Okay?
+[26:19] So what people thought?
+[26:20] There was an amplitude word written in the question.
+[26:23] So people started to understand that amplitude means RMS.
+[26:27] Amplitude means peak value.
+[26:29] That is Vm.
+[26:30] Okay?
+[26:31] What does amplitude mean?
+[26:33] All the kids will remember it well.
+[26:35] It is the peak value that is Vm.
+[26:38] When I was a kid,
+[26:39] I used to use amplitude words.
+[26:41] The older I was,
+[26:43] words came like peak, RMS and 10 things.
+[26:46] Otherwise in childhood,
+[26:47] there was only amplitude in oscillations.
+[26:50] Now we will make a graph.
+[26:53] In graph, I have 3 things of interest.
+[26:56] Which things have interest?
+[26:58] First is in supply.
+[27:00] You will have to make supply.
+[27:02] It is the work of reference.
+[27:04] How can it be made without supply?
+[27:07] It cannot be made.
+[27:08] Second is my interest in diode voltage.
+[27:12] And third is my interest in output voltage.
+[27:19] The most important thing is the output of the device.
+[27:24] Okay?
+[27:25] Okay?
+[27:45] Look at the output.
+[27:47] Its peak value will be less than input.
+[27:51] And the amplitude of diode voltage will be smaller.
+[27:57] Okay?
+[27:59] So look at this.
+[28:00] This is supply voltage.
+[28:03] Versus time.
+[28:06] This is diode voltage.
+[28:09] And this is your output voltage.
+[28:13] Let's raise it a little higher.
+[28:18] Okay?
+[28:22] Here time.
+[28:25] Time.
+[28:26] Now look at how supply voltage will be made.
+[28:28] Supply voltage is a simple sine wave.
+[28:37] This is it.
+[28:38] Okay?
+[28:39] This is your supply voltage.
+[28:42] Now how was diode voltage?
+[28:45] Diode voltage was positive half cycle.
+[28:48] It had a small positive value.
+[28:50] What was it?
+[28:51] It had a positive half cycle.
+[28:52] It had a small positive value.
+[28:54] So the graph of diode was positive half cycle.
+[28:57] It was like Vm sine omega t.
+[29:00] Sine omega t.
+[29:01] It was a graph like supply.
+[29:03] But it was small.
+[29:04] It was like supply.
+[29:05] But it was small.
+[29:07] So I followed the graph of supply.
+[29:11] But it was small.
+[29:13] What happened in negative half cycle?
+[29:15] What happened in negative half cycle?
+[29:17] It was full.
+[29:19] Wait a second.
+[29:20] Let's raise it a little lower.
+[29:22] What happened in negative half cycle?
+[29:24] Diode was across.
+[29:25] The entire supply voltage was running.
+[29:46] So the entire supply voltage is running.
+[29:48] That means the output in negative half cycle is like this.
+[29:52] Then it will be small in positive.
+[29:54] Like this.
+[29:55] Understood?
+[29:56] In negative half cycle, the output is equal to input.
+[30:01] In negative half cycle, the output is equal to input.
+[30:05] But in positive half cycle, you have a small value.
+[30:09] Okay?
+[30:10] In positive half cycle, you have a small value.
+[30:13] Now if we talk about output.
+[30:17] If we talk about output.
+[30:23] So look, the output is big in positive half cycle.
+[30:27] It is coming like supply.
+[30:29] In positive half cycle, your output comes like supply.
+[30:36] And in negative half cycle, you saw because the current was zero.
+[30:40] So your output voltage was also zero.
+[30:52] Look at this.
+[30:54] Isn't it?
+[30:55] So this is the negative clip only.
+[30:57] Negative is your waveform clip.
+[31:00] Okay?
+[31:01] Negative waveform is your clip.
+[31:04] Is this clear?
+[31:06] Is this graph clear or not?
+[31:08] Tell everyone quickly.
+[31:15] And look at this.
+[31:16] In negative half cycle, the voltage of diode is going to minus Vm.
+[31:20] The positive half cycle is going to Vm.
+[31:23] Rf by.
+[31:25] Because the voltage was divided in positive.
+[31:28] The maximum voltage of such output is going to Vm.
+[31:35] Rl.
+[31:37] By Rl plus Rf.
+[31:40] The maximum of supply is Vm.
+[31:43] Minimum is minus Vm.
+[31:46] Okay?
+[31:47] With this type.
+[31:48] So look, the first term we define in this.
+[31:51] That is PIVP, Converse Voltage.
+[31:55] This means that whatever the circuit device is.
+[31:58] Like in analog electronics, diode is in power electronics.
+[32:02] Your SCR is in it.
+[32:04] Whatever your device is.
+[32:07] Across the device, maximum reverse voltage.
+[32:12] Or how much the maximum negative voltage is coming?
+[32:15] So you will see here.
+[32:17] Maximum negative diode is the device.
+[32:19] How much is coming across?
+[32:21] Minus Vm.
+[32:22] But you don't write by writing minus sign.
+[32:25] You write PIV with positive sign.
+[32:29] Because it is coming in its name.
+[32:31] Inverse.
+[32:32] In its name only the inverse came.
+[32:34] So here do not use a negative sign.
+[32:38] Now the thing is that what is the role of this?
+[32:42] Why did you define?
+[32:44] Dear, the biggest reason behind defining this.
+[32:50] That the maximum reverse voltage across the diode.
+[32:54] So buy a diode like this.
+[32:56] Whose breakdown voltage is more than that.
+[32:59] So that the diode does not break down.
+[33:02] To go so much voltage.
+[33:04] Do you understand?
+[33:06] We must use diode.
+[33:09] We must use diode.
+[33:15] Whose voltage rating.
+[33:18] Whose voltage rating.
+[33:25] Is higher.
+[33:28] Then PIV.
+[33:32] Do you understand?
+[33:34] So the more the PIV is.
+[33:36] The more the rating you have to buy a diode.
+[33:39] The more expensive it is.
+[33:41] The diode which can be more voltage.
+[33:43] It is more strong.
+[33:44] The cost will also be more.
+[33:46] Is this clear?
+[33:49] Sir, in the positive half cycle.
+[33:51] The voltage of the diode in V naught.
+[33:53] Will have to be minus.
+[33:54] Dear, the voltage of the diode is minus.
+[33:56] So when we applied the voltage division.
+[33:58] When I applied the voltage division.
+[34:00] So V naught is not equal to V in.
+[34:03] With V in.
+[34:04] The factor of the voltage division came.
+[34:06] Or you see this voltage from Vm sin omega t.
+[34:10] You will get it as it is.
+[34:12] There are two ways.
+[34:13] Either remove V naught from the voltage division.
+[34:15] Or remove it from KVL.
+[34:17] You are talking about KVL.
+[34:18] I have directly removed it from the voltage division.
+[34:21] Okay?
+[34:22] Sir, in horizontal axis.
+[34:24] When do we take t and omega t?
+[34:26] How do we know?
+[34:27] Dear, it is your wish.
+[34:28] Take t.
+[34:29] Take omega t.
+[34:30] Take omega t.
+[34:31] If you take omega t.
+[34:32] Then the values will be written at the angle.
+[34:35] Pi, 2pi, 3pi.
+[34:37] Then you have to write here.
+[34:38] Omega t.
+[34:39] If you write t.
+[34:40] Suppose it is the voltage of 50 hertz.
+[34:42] Then you write here.
+[34:43] 10 millisecond, 20 millisecond, 30 millisecond.
+[34:46] If the frequency is 50 hertz.
+[34:48] So it depends on what axis you are taking.
+[34:51] It is your wish.
+[34:52] Okay?
+[34:54] Let's go.
+[34:55] Now what is after this?
+[34:57] Look at the average value or DC value.
+[34:59] If you see, the output here is a periodic wave.
+[35:04] Okay?
+[35:05] The output here is a periodic wave.
+[35:09] It is a periodic wave but it is not sinusoidal.
+[35:13] If it is a periodic wave which is not sinusoidal.
+[35:17] Then its Fourier series will be there.
+[35:21] Its Fourier series will be there.
+[35:24] Right?
+[35:25] Do you understand what I am saying?
+[35:27] So if its Fourier series will be there, my brother.
+[35:30] If its Fourier series will be there.
+[35:32] Then there will be a DC component in it.
+[35:36] And the rest will be harmonic.
+[35:38] So the DC component is the average of the signal.
+[35:43] The average value of any signal is the DC component.
+[35:47] Okay?
+[35:48] That is the DC component.
+[35:50] And that is the average value.
+[35:53] That is the average value.
+[35:55] The thing is getting clear.
+[35:56] Now how is the average output?
+[35:58] Look, for the average, it is necessary to see the period of waveform first.
+[36:02] If you put omega t on the x axis.
+[36:06] Look at the period here.
+[36:07] The first pulse is coming of the pi width.
+[36:09] Then zero is coming for the next pi.
+[36:11] Then pulse is coming again.
+[36:13] That is, pulse is coming after how much duration?
+[36:15] It is coming after 2 pi.
+[36:17] The pulse is coming after how much duration?
+[36:19] After 2 pi.
+[36:20] So pi is 2 pi.
+[36:21] Okay?
+[36:22] Pi and 2 pi.
+[36:25] Now what will you say here, dear?
+[36:28] That integration from 0 to 2 pi is D omega t.
+[36:47] D omega t.
+[36:48] Okay?
+[36:49] D omega t.
+[36:50] From 0 to 2 pi.
+[36:52] So what happens here, dear?
+[36:53] The average means area upon period.
+[36:56] So you took the area from 0 to 2 pi.
+[36:58] From 0 to 2 pi, the area you are taking, dear.
+[37:02] From 0 to pi, you have sinusoidal waveforms.
+[37:07] Okay?
+[37:08] And 2 pi from pi is zero.
+[37:12] So the integration of zero will also be zero.
+[37:16] So I have not written the term 2 pi from pi.
+[37:19] I have not written the term 2 pi from pi.
+[37:22] Because 2 pi from pi is your integration.
+[37:25] What will be the integration?
+[37:26] Zero will come.
+[37:27] Why zero will come?
+[37:28] Because supply, sorry, output waveform is your zero.
+[37:31] And what does V naught m mean, dear?
+[37:34] V naught m means this term which is your maximum value of output.
+[37:39] Which is the maximum value of output.
+[37:45] Now let me answer this child first.
+[37:49] Tell me one thing, brother.
+[37:51] You are arguing with me here.
+[37:53] I will tell you one thing, gate learner.
+[37:55] Leave the preparation of the gate.
+[37:57] You do a private job.
+[37:58] Will you do it?
+[38:00] If I force you, you will do it.
+[38:02] Will you leave your dream?
+[38:04] Will you leave your intentions?
+[38:06] Tell me.
+[38:07] I am saying leave the gate and do a private job.
+[38:10] Do a job of 10,000.
+[38:11] Stay happy.
+[38:12] Will you do it?
+[38:13] You will not do it, right?
+[38:14] Will you do it?
+[38:15] What is your wish, brother?
+[38:17] If your wish is to remove the gate,
+[38:20] if you want to go to PSU, then you will go to PSU.
+[38:23] Now why do you feel like this?
+[38:25] I am not talking about any particular teacher.
+[38:28] If any teacher, any institute changes.
+[38:31] Any institute changes.
+[38:32] An academy comes from any XYZ institute.
+[38:35] Or an academy comes from any XYZ institute.
+[38:38] So, tell me, can your wish stop the academy from doing it?
+[38:41] Why do you feel like this?
+[38:44] If the academy stops, then anyone will stop.
+[38:46] So, I am saying on behalf of the academy,
+[38:48] leave the gate.
+[38:49] Do a job of 10,000.
+[38:50] Do typing.
+[38:51] With me, type this.
+[38:52] Leave the gate's dream.
+[38:53] Do it.
+[38:54] Because I am saying, right?
+[38:56] Brother, I am telling you to do it.
+[38:58] You should do it.
+[38:59] Because I have told you.
+[39:01] It is a matter of thinking.
+[39:04] So, the person who will do whatever he wants to do in life,
+[39:07] no one has the right to do it.
+[39:10] No one has the right to buy someone.
+[39:12] That brother, now this is a slave.
+[39:14] We have said that he will do it.
+[39:16] We have said that if he wants to get up, he will get up.
+[39:18] If he wants to sit, he will sit.
+[39:19] Brother, the teacher who wants to stay in the system,
+[39:22] he will stay in the system.
+[39:23] The teacher who will not get into the system,
+[39:25] he will go from the system.
+[39:26] No institute.
+[39:28] He is a human, right?
+[39:29] End of the day teacher.
+[39:31] He is human.
+[39:32] You also switch jobs.
+[39:34] Why are you preparing for PSU?
+[39:35] Why are you not working for 10,000?
+[39:37] Because you are the aim in life.
+[39:39] That is what you want from life.
+[39:41] So, whatever a person wants in life,
+[39:44] how can I make him do something against that?
+[39:47] It is a thing to think.
+[39:49] Play with students' education and so on and so forth.
+[39:52] Son, if you were playing with students' education,
+[39:54] then you would not have ranked 6 in the top 10.
+[39:56] In 2022.
+[39:58] Go and ask any electrical E.C. student,
+[40:01] on the Anacademy platform,
+[40:02] how hard is it to work with them?
+[40:04] Every day, their class is stretched.
+[40:06] Every day, their class is extended.
+[40:08] In one day, 50-50 doubts are answered.
+[40:11] Why are they doing it?
+[40:13] Why do they do a crash course?
+[40:15] The money is for a comprehensive course, right?
+[40:17] I did not say that they will do a revision.
+[40:19] Still, they do it.
+[40:20] Why do they do all the things?
+[40:22] If you want to play with the student's rank,
+[40:24] then think about it.
+[40:26] If any student, any institute,
+[40:28] will play with the student's future,
+[40:30] then how can the institute grow?
+[40:32] The institute grows and results.
+[40:34] And the result comes only when the child gets quality education.
+[40:37] So, brother, we are in the same boat.
+[40:40] Tomorrow you will be successful.
+[40:42] We will show you the rank.
+[40:44] We will shine.
+[40:45] Business will grow.
+[40:46] That is how these dynamics are.
+[40:48] Make it a little logical.
+[40:52] But there is no logic in life.
+[40:55] Look, what I have written is V0M.
+[40:58] V0M means the maximum value of V0.
+[41:01] This is the maximum value of V0.
+[41:04] What will be the integration of the sign here?
+[41:07] Tell me quickly.
+[41:08] The integration of the sign is minus cost.
+[41:11] Let's see.
+[41:28] Now look at what its value will be on the pi.
+[41:30] What is the value of its value on the pi?
+[41:33] Minus 1 is minus minus.
+[41:35] Plus 1 is minus 1.
+[41:36] And what will be at zero?
+[41:37] It will be 1.
+[41:38] So this becomes 2 V0 m by 2 pi.
+[41:50] We will break the whole flow as soon as we write the class.
+[41:53] Next time I will block it from the channel only.
+[41:57] V0 m by pi.
+[42:00] What is V0 m here?
+[42:04] Vm Rl by Rf plus Rl.
+[42:12] V0 m into Rl by Rf plus Rl.
+[42:19] And if this was an ideal diode then its Rf would also be 0.
+[42:24] If this was an ideal diode then its Rf would also be 0.
+[42:29] Then V0 m would be Vm.
+[42:32] V0 m would be Vm.
+[42:36] Okay.
+[42:51] Okay.
+[42:55] Sir, you used to ignore all this but now you are more worried.
+[42:59] I am trying a little bit to keep the classes interactive with you.
+[43:03] Otherwise I will close the chat for so long and keep on studying.
+[43:07] And when a child is a genuine, the child understands who is a spammer.
+[43:12] Now the child who is not a spammer, I will directly block him.
+[43:16] And if I do not block him then he will disturb everyone by writing in the chat.
+[43:20] Okay.
+[43:21] So I got stuck on both the sides.
+[43:23] How do I block the child who is a genuine?
+[43:24] I know that the child is not fake.
+[43:26] I know that the child is genuinely worried.
+[43:28] I also know that.
+[43:29] So it is necessary to answer him.
+[43:31] Otherwise he will not stop.
+[43:33] And if he blocks then the wrong message will go that the genuine child is being blocked.
+[43:37] He is not writing anything like that which is different from the class or education.
+[43:44] The husband is saying, sir, look at the waveform and calculate the average.
+[43:47] Tell me this.
+[43:48] Dear, look at what happens when you listen carefully.
+[43:52] When sinusoidal curve is plotted against omega t, okay.
+[44:15] Then area of one lobe is 2 into maximum value.
+[44:30] That is, my children, if you look at it like this, if you consider that your x axis is omega t,
+[44:40] then the average, what do you say, dear, area upon period.
+[44:48] Now you understand the period from the graph as 2 pi.
+[44:51] If the x axis is omega t, that is, the angle is going on the x axis, then what will happen?
+[44:56] Pi 2 pi 3 pi will go like this.
+[44:59] So we know the period is 2 pi.
+[45:01] The area will be twice the maximum value.
+[45:04] The maximum value is V naught m.
+[45:06] The period is 2 pi.
+[45:08] So this is V naught m by pi.
+[45:11] But this will only take place, dear, when you take the x axis in omega t.
+[45:16] If you take the x axis in t, then this will not go twice the maximum value, okay.
+[45:25] Then this is the x axis funda or this shortcut will not work.
+[45:30] The husband is saying, sir, the average of vs, dear, the average of vs is not visible.
+[45:34] Zero is as positive as negative.
+[45:36] Tell me, the average of supply will be zero.
+[45:39] What is the DC component in AC?
+[45:42] Now we have the DC value.
+[45:44] Why is the DC value important, dear?
+[45:46] Because when we made the rectifier, the objective of the rectifier was to convert AC into DC.
+[45:53] So how much DC component is coming in it.
+[45:56] That is very, very important for us because this tells us out of the total voltage,
+[46:03] how much is the DC component.
+[46:06] Did you understand the thing?
+[46:08] Now let's come to the RMS or effective value.
+[46:11] You know, dear, what is the significance of RMS?
+[46:14] When we take out RMS in AC, it tells us the amount of power that is consumed, okay.
+[46:22] That is consumed by a resistance when AC is applied across our resistance.
+[46:30] So the role of RMS, dear, is that the heat produced is in power consumed, okay.
+[46:36] Heat produced or power consumed.
+[46:39] Now how does RMS be taken out?
+[46:41] What is the mathematical formula of RMS?
+[46:44] And this average RMS, I have read in the network course as well.
+[46:48] You guys integrate 1 upon 2 pi from 0 to 2 pi by the square of the voltage here.
+[47:00] And look, you have put an angle in the limit, right?
+[47:03] Angle means that you are taking omega t to the x axis.
+[47:07] If you put time in the limits, like from 0 to 10 millisecond type, then you write dt here.
+[47:13] But when you write the angle, then you immediately understand whose respect is going on in the respect of omega t.
+[47:21] And then you take root.
+[47:23] So look, what happened?
+[47:25] Mean of square, because area of square upon period.
+[47:29] Area of square upon period, what happened?
+[47:31] Mean of square and then root.
+[47:34] So root of mean of square.
+[47:37] In root, mean, in mean, square.
+[47:41] Like this.
+[47:42] Now you know that v0 exists from 0 to pi.
+[47:48] 2 pi from pi is 0.
+[47:51] So you wrote v0m square sin square omega t d omega t.
+[48:07] So v0m came out.
+[48:09] Sin square means 1 minus cos 2 theta by 2.
+[48:33] Now what will be the integration of 1?
+[48:39] Pi will be cos 2 omega t.
+[48:51] This will be.
+[48:55] When you put pi in sin 2 omega t, then sin 2 pi will be 0.
+[49:00] And if you put 0, then it will also be 0.
+[49:02] So this is v0m by 2.
+[49:07] And remember, what is v0m?
+[49:11] This is the factor of voltage division.
+[49:14] Most of the cases that can come in the exam, there rf is most probably not given.
+[49:20] So there will be vme.
+[49:22] I also write that if there is an ideal diode.
+[49:25] In the ideal diode, your rf comes as 0.
+[49:30] With which v0m comes.
+[49:34] v0m comes as your vm.
+[49:39] So this is it.
+[49:41] Now comes about the form factor.
+[49:44] How is the form factor defined?
+[49:47] You can define it for any waveform.
+[49:49] For any periodic waveform.
+[49:52] Here we say for output v0rms by v0 average.
+[50:00] So rms by average.
+[50:02] Now you have taken out rms.
+[50:04] v0m by 2.
+[50:06] You have to remember this formula.
+[50:08] The general formula of the form factor.
+[50:13] This works in a lot of places in life.
+[50:17] Pi by 2, 1.57.
+[50:21] 1.57.
+[50:23] Remember this general formula.
+[50:25] rms by average.
+[50:27] rms by average.
+[50:31] Is equal to form factor.
+[50:33] Okay.
+[50:35] Now voltage ripple factor.
+[50:37] Voltage ripple factor.
+[50:39] This is what it says.
+[50:41] As you said, the main objective of rectifier was to make DC.
+[50:45] But we saw that the waveform we had was periodic.
+[50:49] But it was not perfect DC.
+[50:51] It was periodic.
+[50:53] But it was not perfect DC.
+[50:55] So what does this mean?
+[50:57] What happened?
+[50:59] There were harmonics in it.
+[51:01] There were some quantities in it.
+[51:03] Which were AC.
+[51:05] Do you understand?
+[51:07] Like in the Fourier series.
+[51:09] There is a constant term called DC.
+[51:11] And the rest of the terms are called AC.
+[51:13] So your output is not pure DC.
+[51:17] It is DC plus AC.
+[51:19] So ripple factor.
+[51:21] What does ripple factor tell you?
+[51:23] What does ripple factor tell you?
+[51:25] Content of harmonics in V0 waveform.
+[51:39] How much harmonic content is there in V0 waveform?
+[51:43] It tells us ripple factor.
+[51:45] Who tells us ripple factor?
+[51:55] Form factor square minus 1.
+[52:03] This formula is form factor square minus 1.
+[52:07] So here you will get pi by 2.
+[52:11] Right?
+[52:13] Let's check.
+[52:15] Pi by 2 square minus 1.
+[52:17] According to me, 1.21 should come.
+[52:19] 1.21 should come.
+[52:25] Okay.
+[52:27] Now the queen is asking how to create harmonics.
+[52:30] There is nothing about harmonics.
+[52:32] What is harmonics?
+[52:34] The terms in the Fourier series.
+[52:36] Where all the frequencies are multiple of a fundamental frequency.
+[52:40] That is called as harmonics.
+[52:42] Who talked about harmonics?
+[52:44] The Fourier talked about harmonics.
+[52:46] What did the Fourier say?
+[52:48] Whenever there is a non-synosoidal periodic function.
+[52:50] Whenever there is a non-synosoidal periodic function.
+[52:52] Whenever there is a non-synosoidal periodic waveform.
+[52:56] We will represent it with the combination of the synosoids.
+[53:01] And this combination of the synosoids.
+[53:04] All the frequencies in them.
+[53:06] It will go into a particular frequency multiple.
+[53:10] Like omega naught, 2 omega naught, 3 omega naught.
+[53:13] These are all harmonics.
+[53:15] So where did the harmonics come from?
+[53:17] When we have a non-synosoidal periodic waveform.
+[53:21] By default, there are harmonics in it.
+[53:24] Now Goheen is asking, can we calculate harmonics?
+[53:27] Absolutely.
+[53:28] If you can write the Fourier series of any function.
+[53:31] Then you can remove the harmonics.
+[53:33] Whatever terms will come in the Fourier series.
+[53:35] They will be called as harmonics.
+[53:37] The light is up to here.
+[53:39] Now the question is what is the significance of this?
+[53:42] Form factor and ripple factor.
+[53:45] Look what happens?
+[53:48] If there is a pure DC waveform.
+[53:52] If you have a pure DC waveform.
+[53:56] That is the constant function.
+[54:04] What happens in the constant function?
+[54:06] Suppose V is there.
+[54:08] Then if you remove the RMS of the constant,
+[54:11] then V will also come.
+[54:13] If you remove its average, then V will also come.
+[54:17] This means its form factor.
+[54:19] That is, how much RMS will come by average?
+[54:21] 1 will come.
+[54:28] So for a pure DC waveform.
+[54:31] Form factor comes 1.
+[54:33] But usually your form factor comes greater than 1.
+[54:37] So what are you saying, dear?
+[54:39] That if the closer the form factor
+[54:46] to unity,
+[54:49] better is the
+[54:55] quality of DC waveform.
+[54:58] That means the better DC you are getting.
+[55:03] Because for the perfect one,
+[55:05] you should have 1.
+[55:08] So the closer the 1, the better the waveform.
+[55:12] So the form factor is telling you indirectly.
+[55:14] How far away you are from DC.
+[55:16] Because the bigger the form factor,
+[55:18] the farther away you will be from DC.
+[55:21] What does the ripple factor tell?
+[55:23] It tells about the harmonic content.
+[55:30] As compared to
+[55:33] DC component
+[55:38] in a waveform.
+[55:44] That means,
+[55:46] do you know what happens in this?
+[55:48] How many contributions are being given by combining all the harmonics?
+[55:52] Upon how many DC components do you have?
+[55:56] That is, how many average components do you have?
+[55:58] So this should be smaller than 1.
+[56:01] Isn't it?
+[56:02] This should be smaller than 1.
+[56:04] Because we want the harmonics.
+[56:06] The harmonics are undesirable.
+[56:08] Desirable is the DC output of rectifier.
+[56:12] So the smaller it is,
+[56:14] the better it is.
+[56:17] That the harmonics are less.
+[56:19] Smaller value is desirable.
+[56:22] Understood?
+[56:24] And now you have taken out 1.21.
+[56:27] That is, in the output of half wave rectifier,
+[56:30] the harmonic is desirable.
+[56:32] That is, the DC is dominating.
+[56:35] If it is increasing from factor 1,
+[56:37] that means the harmonic is more,
+[56:39] the DC is less.
+[56:40] This has gone wrong.
+[56:42] Isn't it?
+[56:43] As they say, there is some black in the dal.
+[56:45] So the black is more.
+[56:46] The dal is less in it.
+[56:47] That is what is happening here.
+[56:48] That is why this thing becomes undesirable.
+[56:52] And always remember the formula of ripple factor.
+[56:55] Root form factor square minus 1.
+[56:58] Is it clear?
+[57:00] The physical significance is clearly clear.
+[57:03] The form factor of ripple factor and form factor.
+[57:05] The more the form factor is close to 1,
+[57:08] the better the function will be DC.
+[57:12] And if the form factor is close to 1,
+[57:14] then think about it yourself.
+[57:15] The ripple factor will also disappear.
+[57:17] If the form factor is close to 1,
+[57:19] then this value will be reduced.
+[57:22] Now rectification efficiency.
+[57:24] Dear, look.
+[57:25] What did we say?
+[57:27] What is the desirable component
+[57:29] in the output of a rectifier?
+[57:31] DC, which you call average.
+[57:34] So we say in rectification efficiency.
+[57:37] This DC component.
+[57:39] Listen carefully.
+[57:41] This DC component.
+[57:43] How much power is contributing.
+[57:45] Divided by the total power.
+[57:48] That is, the DC or average value.
+[57:51] How much power is there?
+[57:53] Or how much power is there because of DC.
+[57:57] As compared to the total power.
+[58:00] So rectification efficiency states.
+[58:03] The contribution.
+[58:07] Of.
+[58:12] DC component.
+[58:18] To the.
+[58:20] Total power.
+[58:23] Do you understand?
+[58:25] And you will want that it should be as high as possible.
+[58:29] Correct?
+[58:30] You will want that more than more power
+[58:33] should come in DC.
+[58:35] Because you had to make DC.
+[58:39] So you will want that more power should not go into the harmonics.
+[58:42] More power should stay in your DC.
+[58:45] So how does rectification efficiency be written here?
+[58:51] V naught average.
+[58:54] I naught average.
+[58:56] So I have multiplied the DC components.
+[58:59] Divided by V naught RMS.
+[59:03] I naught RMS.
+[59:07] Average into average by RMS into RMS.
+[59:14] Now Ms. Megha is asking.
+[59:16] Is there more harmony in DC or AC?
+[59:21] This means that I have explained the harmony for as long as possible.
+[59:24] I have not understood anything.
+[59:26] I said.
+[59:27] Listen again.
+[59:28] If there is a periodic signal.
+[59:31] So we can express that in the Fourier series.
+[59:35] When we express in the Fourier series.
+[59:38] The first term is the constant term.
+[59:40] That is DC.
+[59:42] After that all the terms are AC.
+[59:44] And in AC there is a special thing.
+[59:47] In the Fourier series.
+[59:49] All the terms are in the frequency of one frequency.
+[59:54] So the first term is sine omega t.
+[59:56] Second is sine 2 omega t.
+[59:59] Third is sine 3 omega t.
+[60:01] Fourth is sine 4 omega t.
+[60:03] If there was a perfect DC.
+[60:05] Then it would be constant.
+[60:07] In that there would be no term of sine.
+[60:09] So there would be no harmony.
+[60:11] If there was perfect AC.
+[60:13] Vm sine omega t.
+[60:14] In that too 2 omega 3 omega is not DC.
+[60:17] So there would be no harmony.
+[60:19] So the harmony is neither in DC.
+[60:21] Neither in AC.
+[60:22] The harmony is only when there is a periodic function.
+[60:26] In which it is not sinusoidal or constant.
+[60:30] It is periodic.
+[60:32] But it is neither sinusoidal nor constant.
+[60:34] If it is constant.
+[60:35] Then it is perfect DC.
+[60:37] If it is sinusoidal.
+[60:38] Then it is perfect AC.
+[60:40] But if it is periodic.
+[60:41] And none of these two.
+[60:43] Then its Fourier series will be written.
+[60:45] And it will be in the harmonic.
+[60:47] Now do you understand Mr. Megha.
+[60:49] That it has not come yet.
+[60:51] Harmonics can be in any waveform.
+[60:53] What is the condition?
+[60:55] It should be periodic.
+[60:56] And it should neither be constant.
+[60:58] Nor be sinusoidal.
+[61:00] And for this I will recommend this only.
+[61:03] That you should read the Fourier series.
+[61:05] Yes.
+[61:06] Now V0 average came.
+[61:08] Your V0 m by pi.
+[61:11] And from the cross of resistance.
+[61:13] So the current of resistance.
+[61:16] That voltage by resistance.
+[61:19] In the RMS you took out.
+[61:21] V0 m by 2.
+[61:24] And the current.
+[61:26] That voltage by resistance.
+[61:30] So here it is 4 by pi.
+[61:33] Square.
+[61:34] And if you want.
+[61:35] Then take it out in percentage.
+[61:37] Into 100%.
+[61:39] How much is it checking?
+[61:41] According to me 28.5.
+[61:43] Something should come.
+[61:44] Check it.
+[61:47] How much?
+[61:48] 40.52.
+[61:49] 40.52.
+[61:52] 40.52 should not come.
+[61:57] 40 is coming.
+[61:58] Okay.
+[61:59] Yes.
+[62:00] I went to the second parameter.
+[62:04] Come on.
+[62:05] So what does this mean?
+[62:07] What does 40.52 mean?
+[62:09] This means that.
+[62:11] That the output.
+[62:13] That is the resistance.
+[62:14] Out of the total power of resistance.
+[62:16] Only 40% power comes.
+[62:19] Because of average or DC.
+[62:22] Who is giving the remaining 60%?
+[62:24] The remaining 60% is coming.
+[62:26] With harmonics.
+[62:28] And harmonics.
+[62:30] Undesirable.
+[62:31] So that is useful power.
+[62:33] Or desired power.
+[62:34] Only 40%.
+[62:35] The rest of the power is.
+[62:37] Undesirable for me.
+[62:41] Now look.
+[62:42] Transformer utilization factor.
+[62:45] This is what it means.
+[62:47] When we were applying a transformer.
+[62:49] We applied 1 is to 1.
+[62:51] Look at the power rating of that transformer.
+[62:55] Power rating.
+[62:58] Now how much utilization of this transformer.
+[63:03] How much use is being made.
+[63:05] In the terms of use.
+[63:06] How much part of this transformer rating.
+[63:09] Desirable power is made on the output.
+[63:13] So you know on the output.
+[63:15] Desirable power which is DC power.
+[63:17] So the desirable power on the output.
+[63:19] DC power.
+[63:20] This is compared to the rating of the transformer.
+[63:23] How much is it.
+[63:25] That is your transformer utilization factor.
+[63:28] So what is this telling.
+[63:31] What a fraction.
+[63:35] What a fraction.
+[63:39] Of transformer rating.
+[63:44] What fraction.
+[63:47] Of.
+[63:48] Transformer rating.
+[63:52] Is.
+[63:54] DC power.
+[63:58] At the load.
+[64:01] At the load.
+[64:05] How much fraction transformer rating.
+[64:07] DC power on the load.
+[64:09] That is the transformer utilization factor.
+[64:13] The transformer you took as 10 KVA.
+[64:16] KVA is the unit of apparent power.
+[64:18] So you should read the network for this.
+[64:20] Suppose you took as 10 KVA transformer.
+[64:23] But out of that only 2 kilowatt power.
+[64:27] Was found on the output because of DC.
+[64:30] So you will say that you used only 2 out of 10 KVA.
+[64:34] So that is 20% utilization.
+[64:38] So what is the formula of TUF here.
+[64:43] This is.
+[64:45] DC power.
+[64:50] Divided by.
+[64:53] KVA rating.
+[64:57] Of.
+[64:59] Transformer.
+[65:02] Okay.
+[65:03] Now how much DC power is here.
+[65:05] V naught average.
+[65:09] I naught.
+[65:10] I naught.
+[65:11] Average.
+[65:13] KVA rating.
+[65:15] Supply RMS.
+[65:18] Into supply RMS current.
+[65:23] Now we will see one thing.
+[65:25] Supply was.
+[65:27] Supply was.
+[65:28] What was that?
+[65:29] Vm sine omega t.
+[65:31] Supply was Vm sine omega t.
+[65:34] So when my children had Vm sine omega t.
+[65:38] So the RMS voltage of supply.
+[65:49] This is Vm by.
+[65:52] Routes.
+[65:53] Vm by.
+[65:54] Routes.
+[65:55] And this RMS current of supply.
+[65:58] Because in the middle of supply and load.
+[66:00] 1 is the transformer of 1.
+[66:03] So this is equal to I naught RMS.
+[66:07] Because both the currents will be the same.
+[66:10] In the middle of 1 is the transformer of 1.
+[66:13] V naught m by 2 RL.
+[66:16] This is it.
+[66:18] Now see.
+[66:19] V naught average.
+[66:20] V naught m by pi.
+[66:24] Then this V naught m by pi RL.
+[66:29] Supply was sinusoidal.
+[66:31] Its RMS was Vm by root 2.
+[66:33] And the current of supply and load was same.
+[66:36] So here it is.
+[66:37] V naught m by 2 RL.
+[66:41] So RL will be cut.
+[66:44] 2 root 2 by pi square.
+[66:48] And V naught m by Vm which will be.
+[66:51] Will be RL by.
+[66:54] RF plus RL.
+[66:56] Approximately 0.286.
+[66:59] 0.286 will come when you will ignore RF.
+[67:04] That means if you consider V naught m and Vm as equal.
+[67:07] Then 0.286 will come.
+[67:09] This means that.
+[67:11] You used only 28% rating of the transformer.
+[67:16] You used only 28% rating of the transformer.
+[67:20] The remaining rating was unused.
+[67:23] That means you bought the transformer expensive.
+[67:26] But you didn't use it that much.
+[67:29] You didn't use it that much.
+[67:31] No.
+[67:32] It's a mistake.
+[67:33] Everyone tell me what is going on.
+[67:39] Tell me.
+[67:42] Did you understand the significance?
+[67:44] You told me the average.
+[67:45] You told me RMS.
+[67:47] You told me the form factor.
+[67:48] You told me the ripple factor.
+[67:50] You told me the rectification efficiency.
+[67:52] And you told me the transformer utilization factor.
+[67:55] So I have told you 6 things in total.
+[67:58] There is no difference if you forget the point of view of the exam, but you should know the formula.
+[68:09] How will you make a numerical without a formula?
+[68:12] What are the advantages of a half-wave rectifier?
+[68:19] There is only one simple advantage, easy to construct.
+[68:25] What to do?
+[68:26] There should be a transformer, there should be a diode.
+[68:29] Even many times, we will make it without a transformer.
+[68:32] Anyway, we have put 1 is to 1.
+[68:34] So, it will go away without a transformer.
+[68:38] Now, Mr. Megha is asking, sir, why do we take the rating in KVM?
+[68:42] He does not understand.
+[68:43] Megha, which branch are you from?
+[68:45] Disadvantages, look.
+[68:48] Poor form factor and ripple factor.
+[68:55] Poor efficiency.
+[69:01] Poor TuF.
+[69:04] Everything is poor.
+[69:06] There is no good thing.
+[69:07] It is easy, so what happened?
+[69:09] The output is not good.
+[69:10] So, dear, if it is electrical, then when you read the machine, you will understand.
+[69:13] Why do you take the transformer rating in KVM?
+[69:17] Because the power in the output of the transformer is electrical power.
+[69:21] In electrical power, both the real and reactive power comes.
+[69:24] If both the real and reactive power comes, then it is the rating.
+[69:27] It will be in KVA.
+[69:28] Apparent power will be there.
+[69:30] Okay.
+[69:33] Half-wave rectifier is very rarely used.
+[69:35] Where the costing will matter a lot.
+[69:37] That we have to make it cheap.
+[69:39] If the rest of the parameters work, then put a half-wave rectifier.
+[69:42] If you have to save the expenses.
+[69:44] Now, let's come to the full-wave rectifier.
+[69:46] So, you can think of the full-wave rectifier like this.
+[69:49] Dear, there are two half-wave rectifiers here.
+[69:52] That is why there are two diodes.
+[69:53] The upper one is D1 and the lower one is D2.
+[69:56] Now, look here.
+[69:57] The transformer that you have taken is 1 is to 2.
+[70:00] And this secondary winding is divided into two parts.
+[70:04] This is called center tapping.
+[70:06] What is it called?
+[70:07] Center tapping.
+[70:10] Means, you have tapped on the center.
+[70:13] You have taken out a wire from there.
+[70:15] And when you have taken out the wire from the center,
+[70:18] then here it was Vs.
+[70:19] So, here it would be 2Vs.
+[70:21] 2Vs divided into two parts.
+[70:23] Vs and Vs.
+[70:25] Do you understand?
+[70:27] 1 is to 2, then secondary voltage will be doubled by primary.
+[70:31] If secondary is doubled by primary,
+[70:34] then you have two voltages.
+[70:37] So, you will have two voltages.
+[70:39] The upper one is Vs and the lower one is Vs.
+[70:42] There are two diodes, D1 and D2.
+[70:44] And here is the output, V0.
+[70:46] Now, look at the two diodes.
+[70:48] In both the diodes,
+[70:50] how did you show it?
+[70:52] You showed it for D1.
+[70:54] That it will go in the positive half cycle.
+[70:56] You showed it for D2.
+[70:58] It will go in the negative half cycle.
+[71:01] But you know practically,
+[71:03] what are we doing here?
+[71:05] When we are solving here,
+[71:07] we are replacing the cut-in voltage.
+[71:09] We are ignoring the cut-in voltage.
+[71:11] Correct?
+[71:13] We are using the transformer, sorry.
+[71:15] We are using the diode, the PWL model.
+[71:17] But inside that,
+[71:19] what are we taking by ignoring the voltage?
+[71:21] We are taking only resistance.
+[71:23] Okay?
+[71:24] We are taking only resistance.
+[71:26] Is it clear?
+[71:29] Mr. Megha, tell me one thing.
+[71:31] Let us teach you to keep quiet.
+[71:33] Tell me.
+[71:37] There are so many questions, so many things
+[71:39] and there are few things related to the topic.
+[71:47] If you reverse the polarity at the bottom,
+[71:49] then the voltage will not be zero.
+[71:51] Then how did 1 is to 2 happen?
+[71:53] Think about it.
+[71:55] 1 is to 2 doesn't mean
+[71:57] there should be two voltages at the bottom.
+[71:59] Only then it will be 2Vs.
+[72:01] If you reverse the polarity at the bottom,
+[72:03] then they will cut each other.
+[72:05] Then 1 is to 0.
+[72:07] Understood?
+[72:09] Come on.
+[72:11] Let's start one by one.
+[72:13] Let's talk about the positive half cycle.
+[72:15] Look, the positive half cycle means
+[72:17] VS is positive.
+[72:19] This VS
+[72:21] is our Vm sin omega t.
+[72:27] This is positive.
+[72:29] That means
+[72:31] you are talking about 0 to 180 degrees, right?
+[72:37] Okay?
+[72:39] You talked about 0 to 180 degrees.
+[72:41] Now here my children,
+[72:43] because
+[72:45] this diode was like this.
+[72:49] It is connected to the negative terminal on anode.
+[72:53] It is connected to the negative terminal on anode.
+[72:55] So this is reverse bias.
+[72:59] What happened?
+[73:01] Reverse bias.
+[73:03] Slope was 1.
+[73:05] Because it was made of V0 and Vn.
+[73:07] Right?
+[73:09] It wasn't made of I versus V.
+[73:11] If I versus Vn was there,
+[73:13] then there would be a slope here.
+[73:15] 1 by R.
+[73:17] Understood?
+[73:19] As soon as it is not made in the transfer characteristic clippers,
+[73:21] it is like this.
+[73:23] Listen carefully.
+[73:25] It is connected to the negative terminal on anode.
+[73:27] Okay?
+[73:29] So I have to know its voltage
+[73:31] from the reverse bias.
+[73:33] Obviously it will be negative.
+[73:35] Right? Because I am taking the polarity
+[73:37] from the forward bias.
+[73:39] And this is actually reverse bias.
+[73:41] So your negative should come.
+[73:43] Then I have to know the polarity
+[73:45] from the voltage output.
+[73:47] And I have to know the diode 1.
+[73:49] Now see.
+[73:51] Here the bottom path
+[73:53] has become an open circuit.
+[73:55] This one has become a series circuit.
+[73:57] Now when this is a series circuit,
+[73:59] then what is Vd1?
+[74:03] VS
+[74:05] RF by
+[74:07] RF plus
+[74:09] RL.
+[74:17] Vm sin omega t.
+[74:19] Vm sin omega t.
+[74:23] Okay?
+[74:25] This was made like this even before.
+[74:27] What is V0?
+[74:35] It will come like this from the voltage division.
+[74:37] RL by
+[74:39] Now do you know what is important?
+[74:41] What is important is
+[74:43] Vd2 for me.
+[74:45] The important thing for me
+[74:47] is Vd2.
+[74:49] Now what do I do for Vd2?
+[74:51] I
+[74:53] put KVL in this loop.
+[74:55] If you put KVL
+[74:57] in the lower loop,
+[74:59] then minus plus plus
+[75:01] VS minus plus
+[75:03] plus V0.
+[75:05] Then minus plus plus Vd2.
+[75:09] So Vd2 is done.
+[75:13] Minus VS minus
+[75:15] V0.
+[75:17] Then minus Vm sin omega t.
+[75:23] Minus Vm sin omega t.
+[75:25] RL by
+[75:33] RF plus
+[75:35] RL.
+[75:37] Okay? Now if you
+[75:39] ignore RF here.
+[75:41] Then this will be
+[75:43] Vd2
+[75:45] minus 2 Vm sin omega t.
+[75:49] Now you said
+[75:51] Vm sin omega t is positive.
+[75:53] Look at the top.
+[75:55] First Vm sin omega t is positive.
+[75:57] So minus 2 Vm sin omega t
+[75:59] will be negative.
+[76:01] Minus 2 Vm sin omega t
+[76:03] will be negative.
+[76:05] And this is the proof
+[76:07] that this diode will
+[76:09] be your reverse bias.
+[76:11] It will have
+[76:13] voltage negative.
+[76:15] That is, it will have
+[76:17] voltage opposite polarity.
+[76:19] That is, its cathode voltage
+[76:21] is more than anode.
+[76:23] So this is reverse bias.
+[76:25] Okay? This is the
+[76:27] derivation. So in the positive
+[76:29] half cycle,
+[76:31] in the positive half cycle,
+[76:33] D1 will be on and D2 will be off.
+[76:35] In the negative half cycle
+[76:37] the positive and negative
+[76:39] terminals are actually exchanged.
+[76:41] Right? They will be
+[76:43] actual terminals.
+[76:45] Because of which
+[76:47] after this, the negative terminal
+[76:49] came on D1.
+[76:51] So it is off. But if you
+[76:53] look at D2, then the positive terminal
+[76:55] is connected here. So it is on.
+[76:57] Understand? If you look at D2,
+[76:59] the terminal of supply
+[77:01] has been reversed.
+[77:03] The terminal of supply is not
+[77:05] actually in the equation.
+[77:07] Think to understand.
+[77:09] What to understand? When this voltage
+[77:11] will be negative, the voltage
+[77:13] negative means the
+[77:15] reverse of the terminals
+[77:17] and this diode
+[77:19] will be the forward bias of the
+[77:21] terminal. And the
+[77:23] diode above is reverse bias.
+[77:25] Understand?
+[77:27] Now sir, why are you refusing to
+[77:29] turn the terminal? Son, I am
+[77:31] refusing because
+[77:33] I am saying
+[77:35] sign omega t.
+[77:37] I am saying this is negative
+[77:39] because omega t is
+[77:41] lying in
+[77:43] 360 degrees.
+[77:45] So this is negative.
+[77:47] Right?
+[77:49] This is negative.
+[77:51] When it is negative itself,
+[77:53] now you also turn the terminal.
+[77:55] Then it is said that the value is
+[77:57] also negative from 5 to 2 pi.
+[77:59] So you will not put negative twice.
+[78:01] Either turn the terminal
+[78:03] and say that the voltage is positive
+[78:05] or you keep the terminal as it is
+[78:07] and say that the voltage is negative.
+[78:09] Both are equal.
+[78:11] Do you understand?
+[78:15] If you turn the terminal
+[78:17] and say that the voltage is positive,
+[78:19] then do you know the
+[78:21] problem?
+[78:23] Do you know the problem?
+[78:25] The problem is that when you make a graph
+[78:27] of the supply, the supply
+[78:29] will be negative.
+[78:31] There you will see the supply
+[78:33] negative. Now you will be puzzled
+[78:35] that here the voltage is negative.
+[78:37] I considered it to be positive.
+[78:39] That is why there is not so much chakrana.
+[78:41] Take a simple vse.
+[78:43] I have only drawn this to make you understand.
+[78:45] Okay?
+[78:47] So this is the terminal.
+[78:49] That is why I am removing it.
+[78:51] Now what will we do first?
+[78:53] Son,
+[78:55] we will put the KVL
+[78:57] in the lower loop
+[78:59] or say the voltage division.
+[79:03] So the v0
+[79:05] which will come
+[79:07] will be minus now.
+[79:09] Do you know the minus
+[79:11] why it is coming?
+[79:13] Because the minus of the v0
+[79:15] is coming from its plus.
+[79:17] That is why it is coming negative.
+[79:19] Okay?
+[79:21] This is done.
+[79:23] And vm sin omega t is negative.
+[79:25] Negative negative positive.
+[79:27] So v0 is positive.
+[79:29] Vm sin omega t is negative.
+[79:31] And there is a minus sign outside.
+[79:33] So minus minus plus.
+[79:35] Now this is vd2.
+[79:37] vd2
+[79:45] Because you have shown the opposite.
+[79:47] You have shown the opposite.
+[79:49] Look.
+[79:51] It is coming positive from its negative.
+[79:53] That is why.
+[79:55] But this voltage will be positive.
+[79:57] Because vm sin omega t is negative.
+[79:59] Because vm sin omega t is negative.
+[80:01] What is your most interest?
+[80:03] Most interest is here.
+[80:07] Vs
+[80:09] minus vd1
+[80:11] minus v0.
+[80:13] So vd1 is
+[80:15] vd1 is
+[80:17] vs minus v0.
+[80:19] So vm sin omega t
+[80:21] minus v0
+[80:23] will be
+[80:25] vm sin omega t
+[80:27] will be plus.
+[80:29] Because there was a minus in v0.
+[80:31] So minus v0 will be plus.
+[80:33] Now if you
+[80:35] ignore rf again.
+[80:37] If you
+[80:39] ignore rf again.
+[80:45] So vd1 will be
+[80:47] 2 vm sin omega t
+[80:49] Now you know
+[80:51] vm sin omega t is negative.
+[80:53] So this 2 vm sin omega t
+[80:55] will also be negative.
+[80:57] Which means
+[80:59] your diode is reverse bias.
+[81:01] Which means
+[81:03] what is your diode?
+[81:05] Reverse bias.
+[81:07] Now see what we do.
+[81:09] Let's talk about waveform.
+[81:11] Let's talk about waveform.
+[81:15] Oh my God.
+[81:23] First of all
+[81:25] I will make supply voltage.
+[81:27] That is the reference.
+[81:31] After supply voltage
+[81:33] we will make output voltage.
+[81:35] After output voltage
+[81:37] we will make diode voltage.
+[81:39] Diode 1
+[81:41] and then diode 2.
+[81:43] Okay.
+[81:45] Now I will mark
+[81:47] Pi 2 Pi 3 Pi.
+[81:53] Pay attention to the graph.
+[81:55] Because the picture
+[81:57] gets clear from the graph.
+[82:05] Okay. Let's make it up to 3 Pi.
+[82:07] No need much.
+[82:13] Okay.
+[82:19] Let's take it down a little.
+[82:21] Let's take it up a little.
+[82:27] Okay.
+[82:29] The positive half cycle of diode
+[82:31] will have very less voltage.
+[82:33] It will be very much negative.
+[82:35] Then it will be very less positive.
+[82:39] It will be very much negative.
+[82:43] Okay.
+[82:45] Okay.
+[82:47] Now see this.
+[82:49] This is the supply voltage.
+[82:51] Let's make omega t.
+[82:53] Against.
+[82:55] If you are making omega t.
+[82:57] Against.
+[82:59] Then this means you have to
+[83:01] look at the angle on x axis.
+[83:05] Okay.
+[83:13] Okay.
+[83:19] Okay.
+[83:21] Now first you make the graph of supply.
+[83:23] The supply will be pure sinusoidal.
+[83:25] The supply will be pure sinusoidal.
+[83:29] This is the graph.
+[83:31] Okay.
+[83:33] The supply will be pure sinusoidal.
+[83:35] Now what did you notice in V-naught?
+[83:37] What did you notice in V-naught?
+[83:39] The positive half cycle
+[83:41] is like a sign.
+[83:43] The positive half cycle is like a sign.
+[83:45] The sign is omega t.
+[83:47] And the negative half cycle is coming.
+[83:49] Minus sign.
+[83:51] When the sign itself is negative.
+[83:53] When the sign itself is negative.
+[83:55] Then what will be V-naught?
+[83:57] It will be positive.
+[83:59] So V-naught will be positive in both the cycles.
+[84:01] In the positive half cycle.
+[84:03] Sign is omega t.
+[84:05] Minus sign in negative.
+[84:07] Then sign in positive.
+[84:09] Then minus sign.
+[84:11] But do you know what?
+[84:13] The maximum value of this
+[84:15] will be V-naught
+[84:17] M
+[84:19] V-M
+[84:21] RL by
+[84:23] RF plus
+[84:25] RL.
+[84:27] If you ignore RF
+[84:29] then you can call it
+[84:31] V-naught. Sorry V-M.
+[84:33] You can call it V-M.
+[84:35] Now let's talk about diode 1.
+[84:37] Look at diode 1.
+[84:39] A small voltage was going in the positive half cycle.
+[84:41] Like a sign.
+[84:43] A small voltage was going in the positive half cycle.
+[84:45] Like a sign.
+[84:47] Like a sign.
+[84:51] Here it is.
+[84:53] And in the negative half cycle.
+[84:55] In the negative half cycle.
+[84:57] The voltage of diode 1.
+[84:59] Is coming twice of the sign.
+[85:01] It is coming twice of the sign.
+[85:03] The sign is negative.
+[85:05] Look at the red graph.
+[85:07] This is the sign.
+[85:09] The sign is negative.
+[85:11] It is coming twice of the sign.
+[85:13] Then in the positive half cycle.
+[85:15] A small sign.
+[85:17] The sign is negative.
+[85:19] Now look at V-D2.
+[85:21] In the positive half cycle.
+[85:23] Minus 2 V-M sign.
+[85:25] The sign was positive.
+[85:27] Minus 2 sign.
+[85:29] It will be negative.
+[85:31] The red curve is positive.
+[85:33] It will be negative.
+[85:35] It will be twice of the sign.
+[85:37] Then in the negative half cycle.
+[85:39] In the negative half cycle.
+[85:41] The voltage of diode is positive.
+[85:43] Because when V-M sign is negative.
+[85:45] Then it will be minus minus plus.
+[85:47] And because the RF is small.
+[85:49] The voltage will be very small.
+[85:51] Like this.
+[85:53] Okay.
+[85:55] Then here.
+[85:57] Again large.
+[85:59] Okay. With this type.
+[86:01] It will be V-D2.
+[86:03] Now in V-D1 and V-D2.
+[86:05] Notice one thing.
+[86:07] When they are going in negative.
+[86:09] They are going to very high voltage.
+[86:11] Where are they going? Minus 2 V-M.
+[86:13] So that's why their PIV is 2 V-M.
+[86:17] Understood.
+[86:19] That's why their PIV is 2 V-M.
+[86:21] This graph is clear.
+[86:23] Tell everyone quickly.
+[86:25] This graph is clear.
+[86:27] What type I have drawn.
+[86:29] So waveform we have seen.
+[86:41] Now if we talk about PIV.
+[86:43] The definition of PIV.
+[86:45] You all know.
+[86:47] What?
+[86:49] Maximum.
+[86:51] Reverse voltage.
+[86:59] Across a diode.
+[87:09] So PIV.
+[87:13] Is 2 V-M.
+[87:15] PIV is 2 V-M.
+[87:17] RMS output voltage.
+[87:19] RMS average.
+[87:21] Where is the average?
+[87:23] Let's take the average here.
+[87:29] Now if you see.
+[87:31] Let me show you one thing.
+[87:33] First let's talk about the average output voltage.
+[87:43] If you see the graph.
+[87:47] Then observe one thing carefully.
+[87:49] That this is in the omega T.
+[87:51] And here if you see the period of V-NOT.
+[87:53] Then it is PII.
+[87:55] If you see the period.
+[87:57] Then it is PII.
+[87:59] After PII, the second pulse came.
+[88:01] That is after PII.
+[88:03] It started repeating.
+[88:05] So this time the period is
+[88:07] for average output voltage.
+[88:09] Period is PII.
+[88:17] When you take out V-NOT average.
+[88:21] You just need to take PII interval.
+[88:23] 1 upon PII.
+[88:27] 0 to PII.
+[88:29] V-NOT M.
+[88:31] Sine omega T.
+[88:33] D omega T.
+[88:35] D omega T.
+[88:37] Okay.
+[88:39] So what is this?
+[88:41] Sine integration minus cos.
+[88:47] Minus cos.
+[88:49] When you put the limit from 0 to PII.
+[88:51] What will it be?
+[88:53] It will be 2.
+[88:55] So this came to you.
+[88:57] 2 V-NOT M by
+[88:59] PII.
+[89:01] Now you know what V-NOT M is.
+[89:05] VM.
+[89:07] RL by.
+[89:09] RF plus RL.
+[89:13] Okay.
+[89:15] And if you zero RF.
+[89:17] Then what will happen?
+[89:19] V-NOT M.
+[89:21] VM.
+[89:23] And as you were asking
+[89:25] how to take out from the graph.
+[89:27] Now in the graph
+[89:29] the area of one loop is
+[89:31] 2 times the maximum value.
+[89:33] That is 2 V-NOT M.
+[89:35] Period is PII.
+[89:37] So 2 V-NOT M by
+[89:39] PII.
+[89:41] If you take out from the graph
+[89:43] the area of one loop
+[89:45] is 2 times V-NOT M.
+[89:47] And we divide it
+[89:49] from the period that is PII.
+[89:51] So 2 V-NOT M by PII.
+[89:53] Now let's come to RMS.
+[89:55] Okay.
+[89:57] Let's come to RMS.
+[90:09] Again the period is PII.
+[90:11] The period is PII.
+[90:15] From zero to PII the graph is of sine.
+[90:23] Okay.
+[90:29] Now look at the square of V-NOT M.
+[90:31] Take it out.
+[90:33] Make V-NOT M.
+[90:35] Sine square omega t.
+[90:37] Sine square theta is 1 minus
+[90:39] cos 2 theta.
+[90:53] 1 minus cos 2 theta.
+[90:59] Now the integration of 1 is PII.
+[91:05] And cos 2 theta
+[91:07] sin 2 omega t by 2.
+[91:11] Now sin 2 omega t.
+[91:13] When you put 0 instead of omega t
+[91:15] or put pi.
+[91:17] The value of sin will be zero on both.
+[91:19] So this is
+[91:21] V-NOT M by root 2.
+[91:23] That is the normal sine.
+[91:25] Do you know why?
+[91:27] Output voltage is the
+[91:29] mode of sine.
+[91:31] Output voltage is the
+[91:33] mode of sine.
+[91:35] Anyway if you do the square
+[91:37] then the graph of sine
+[91:39] or the graph of sine's mode
+[91:41] will be equal.
+[91:43] Because when you do the square
+[91:45] then anyways the negative cycle
+[91:47] converts into positive.
+[91:49] Anyways your negative cycle
+[91:51] converts into positive.
+[91:53] Then it will be equal.
+[91:55] And here also I am writing
+[91:57] what is V-NOT M?
+[91:59] Vm RL by
+[92:01] Rf plus RL.
+[92:05] Okay?
+[92:07] Okay?
+[92:09] Now the question is
+[92:11] Sir if we
+[92:13] do electrical isolation from the transformer
+[92:15] then one secondary terminal
+[92:17] will be
+[92:19] shocked.
+[92:21] One secondary terminal
+[92:23] will be shocked by touching.
+[92:25] If you touch
+[92:27] one secondary terminal
+[92:29] then you will not feel shocked.
+[92:31] Because voltage is very low.
+[92:33] It will go down.
+[92:35] You will not feel the shock.
+[92:37] Okay?
+[92:39] Come on.
+[92:41] Now let's come to the form factor.
+[92:47] What is this?
+[92:49] V-NOT RMS
+[92:53] by V-NOT
+[92:55] average.
+[92:57] Okay?
+[92:59] What is your RMS?
+[93:03] RMS
+[93:05] and average.
+[93:09] So it is coming by
+[93:11] 2 root 2.
+[93:13] Earlier it was 5 by 2.
+[93:15] So it was very high.
+[93:17] Now it will be less than before.
+[93:19] Now it is coming 1.11.
+[93:21] So it is better.
+[93:23] You said that the closer you get
+[93:25] the better it is.
+[93:27] The closer you get
+[93:29] the better it is.
+[93:31] So it was 1.57.
+[93:33] Now it is 1.11.
+[93:35] So it is close to 1.
+[93:37] Okay?
+[93:39] Now if we take the ripple factor
+[93:41] out here.
+[93:43] Root of
+[93:45] form factor
+[93:47] square
+[93:49] minus 1.
+[93:51] Root
+[93:53] by square by 8.
+[93:55] Minus 1.
+[93:57] Let's check
+[93:59] ripple factor
+[94:01] 0.48
+[94:03] This is it.
+[94:05] Let me write 48 percent.
+[94:07] What does this mean?
+[94:09] 48 percent.
+[94:11] This means
+[94:13] harmonics are
+[94:15] 48 percent of DC.
+[94:17] Harmonics are
+[94:19] 48 percent of
+[94:21] DC.
+[94:23] Do you understand?
+[94:25] It is getting clear.
+[94:27] 48 percent of
+[94:29] DC.
+[94:31] Is it so clear?
+[94:33] Oh my brother
+[94:35] What happens?
+[94:37] If you touch any point
+[94:39] then the potential of that point
+[94:41] and if you touch the ground
+[94:43] then the voltage of that point
+[94:45] and the ground is 0 volt
+[94:47] then there is a resistance
+[94:49] then the current will flow.
+[94:51] If this happens then there is no
+[94:53] fault in the transmission line.
+[94:55] There is only one point ground.
+[94:57] So it is not that if you touch two points
+[94:59] then it will look like a crack.
+[95:01] It can look like a single point.
+[95:03] The only condition is that
+[95:05] your other or your pair
+[95:07] touch the ground.
+[95:09] Because the voltage of that point
+[95:11] the voltage of that point is 10 volts.
+[95:13] The ground is 0.
+[95:15] If I touch 10 volts from one hand
+[95:17] and 1 to 0 then
+[95:19] the corresponding current
+[95:21] will flow across my body.
+[95:23] Now come.
+[95:25] Where do you run in network or network?
+[95:27] Now we are talking about the crack
+[95:29] in the analog.
+[95:31] It is amazing.
+[95:33] Reactivation
+[95:35] Efficiency.
+[95:37] The formula of this is also mentioned.
+[95:39] This is mentioned in total power.
+[95:41] How much DC
+[95:43] is the component.
+[95:45] So V0 average
+[95:47] I0 average by
+[95:49] V0 RMS
+[95:51] I0
+[95:53] RMS
+[95:59] How much is the V0 average?
+[96:01] 2 V0 M by Pi
+[96:07] I0 average
+[96:09] 2 V0 M by
+[96:11] Pi RL
+[96:13] Then V0 RMS
+[96:17] V0 M by root 2
+[96:21] V0 RMS
+[96:25] This is done.
+[96:27] V0 M will be cut.
+[96:29] 4 by Pi square.
+[96:31] So 8 by Pi square is done.
+[96:33] The root 2 root 2 will become 2.
+[96:35] Check how much is going on.
+[96:37] Check how much is going on.
+[96:39] Check 8 by Pi square.
+[96:43] Check it quickly.
+[96:47] How much will it be?
+[96:49] 80%
+[96:51] 80%
+[96:53] 80%
+[96:55] 80%
+[96:57] 80%
+[96:59] What does this mean?
+[97:01] In total power
+[97:03] 81% power
+[97:05] DC has contributed.
+[97:07] It is very good.
+[97:09] Last time 40% was there.
+[97:11] Remember.
+[97:13] 40.5%
+[97:15] 81%
+[97:19] Is it better?
+[97:21] Is it better?
+[97:23] Is it better?
+[97:25] Do you know what is the problem?
+[97:27] The problem is that
+[97:29] here
+[97:31] PIV is very high.
+[97:33] PIV is very high.
+[97:35] When PIV is very high,
+[97:37] I will have to buy a diode
+[97:39] whose break down voltage is
+[97:41] much higher than before.
+[97:43] If I buy a diode with a high break down voltage,
+[97:45] it will be expensive.
+[97:47] There are 2 diodes in one place.
+[97:49] The transformer is also center tapped.
+[97:51] I agree that all the parameters are improving.
+[97:53] But the expense is also increasing.
+[97:55] The increase is increasing.
+[97:57] The rating of every diode is more.
+[97:59] The cost of the transformer is more.
+[98:01] And the diode is also in one place.
+[98:03] 2.
+[98:05] Right?
+[98:07] Now let's talk about TUF.
+[98:09] This is rectification efficiency.
+[98:11] It is not the efficiency of the circuit.
+[98:13] Power loss is happening.
+[98:15] We are saying that the power
+[98:17] reaching the output
+[98:19] is giving some power harmonics
+[98:21] and some power is coming from the average value.
+[98:23] So, how much power
+[98:25] is coming from the total power?
+[98:27] This is rectification efficiency.
+[98:29] We are not talking about losses.
+[98:31] Right?
+[98:33] We are saying that how much power
+[98:35] is desirable from the output power.
+[98:37] Let's talk about TUF.
+[98:39] Right?
+[98:41] If we talk about TUF,
+[98:43] what did we study about TUF?
+[98:45] How much part of the rating
+[98:47] of the transformer
+[98:49] is actually desirable power.
+[98:51] Desirable power means
+[98:53] DC power.
+[98:55] How much part of the rating of the transformer
+[98:57] is contributing to DC power.
+[98:59] That is TUF.
+[99:01] In TUF
+[99:03] there is a small trick.
+[99:05] What is the trick?
+[99:07] We say
+[99:09] in full wave rectifier
+[99:11] primary
+[99:13] conducts
+[99:15] Right? This is an exception.
+[99:17] It does not come out directly here.
+[99:19] Primary conducts
+[99:21] for
+[99:23] one complete cycle.
+[99:29] Right?
+[99:31] But what is happening in the secondary?
+[99:33] Secondary is divided into two halves.
+[99:35] One half
+[99:37] conducts in one half cycle.
+[99:39] D1 in the positive half cycle
+[99:41] and D2 in the negative half cycle.
+[99:43] So I am saying
+[99:45] each half of
+[99:47] secondary
+[99:49] each half of secondary
+[99:51] conducts
+[99:53] conducts
+[99:57] conducts
+[100:01] for
+[100:03] one
+[100:05] half
+[100:07] cycle.
+[100:11] Due to the center tapping
+[100:13] of each half of secondary
+[100:15] the upper one was doing
+[100:17] in the positive cycle
+[100:19] and the lower one was doing
+[100:21] in the negative cycle.
+[100:23] So here the primary and secondary
+[100:25] TUF is taken out separately.
+[100:27] So first we take out
+[100:29] TUF for secondary.
+[100:33] We take this out
+[100:35] as we took out
+[100:37] the rectification efficiency from the same type.
+[100:39] Do you know the rectification efficiency
+[100:41] and TUF have only one difference
+[100:43] that in the rectification efficiency
+[100:45] there comes V0RMS
+[100:47] I0RMS
+[100:49] V0VSRMS
+[100:51] and IESRMS.
+[100:53] So what will be the
+[100:55] V0Average I0Average
+[100:57] Vm by
+[100:59] 2Vm
+[101:01] Vme take
+[101:03] Vme.
+[101:05] I am ignoring the RF
+[101:07] for now.
+[101:11] Now this
+[101:13] VsRMS will be Vm by
+[101:15] root 2
+[101:17] and IESRMS
+[101:19] I0RMS as it is
+[101:23] same as
+[101:25] I0RMS.
+[101:33] And what I am saying here
+[101:35] we have ignored
+[101:37] the RF.
+[101:39] So the secondary comes out
+[101:41] normally.
+[101:43] So what happens here
+[101:45] this will come
+[101:47] 2248 by pi
+[101:49] square.
+[101:51] So this is the rectification
+[101:53] efficiency.
+[101:55] But when we take out
+[101:57] the primary
+[101:59] we don't take out the primary directly.
+[102:01] This is called
+[102:03] half wave rectifier
+[102:05] is conducting.
+[102:09] Think about the primary working
+[102:11] half wave rectifier is going on.
+[102:13] So how much is the TUS of
+[102:15] half wave rectifier
+[102:17] the 0.2857 came.
+[102:23] So what will be the
+[102:25] 0.571
+[102:27] Now what you
+[102:29] do? Take the average of both.
+[102:31] Overall
+[102:33] TUS comes from the average of both.
+[102:35] 0.8105
+[102:37] check how much is coming.
+[102:39] And this is only because of
+[102:41] center tap transformer
+[102:43] that the winding is conducting
+[102:45] in half cycle.
+[102:47] How much is coming? Check both.
+[102:51] 0.69
+[102:53] Ok.
+[102:55] So 0.69
+[102:57] Why is this happening?
+[102:59] Because secondary is not conducting
+[103:01] the whole time.
+[103:03] Secondary conducts in one half cycle
+[103:05] and second half conducts in
+[103:07] second half cycle.
+[103:09] Now what are the advantages of this?
+[103:13] The first thing is form factor
+[103:15] and ripple factor decreases.
+[103:19] Second thing
+[103:21] efficiency increases
+[103:23] TUF increases
+[103:25] increases.
+[103:27] What is the drawback?
+[103:29] PIV increases
+[103:31] ok.
+[103:33] So diode rating increases
+[103:35] and
+[103:37] the second big drawback
+[103:39] is that
+[103:41] there needs to be a special type transformer
+[103:43] that is center tapped
+[103:45] transformer.
+[103:47] Even if you do not put
+[103:49] transformer in the half wave rectifier
+[103:51] the circuit works the same way.
+[103:53] The transformer will not run like this.
+[103:55] Here the transformer needs
+[103:57] one is to two.
+[103:59] Here it needs it.
+[104:01] Are you clear?
+[104:03] Come on, make a question.
+[104:13] Easy question.
+[104:23] Tomorrow I will
+[104:25] rectify the bridge.
+[104:27] I will not be able to
+[104:29] take the 5th class today because
+[104:31] I have to go to the office for the meeting.
+[104:33] We will schedule the assignment discussion
+[104:35] some other day.
+[104:37] But I will discuss the assignment.
+[104:39] Do not worry about it.
+[104:41] Today is tomorrow.
+[104:43] I have told you about the event
+[104:45] on Academy 1.
+[104:47] It is very busy.
+[104:49] So the answer will be A.
+[104:51] Why?
+[104:53] Will this conduct in a positive half cycle?
+[104:59] Think of it as a clamper.
+[105:01] So how far will this charge?
+[105:05] Charges to
+[105:07] peak value of positive half cycle.
+[105:11] You saw it in the clamper yesterday.
+[105:13] Peak value of
+[105:15] positive half cycle.
+[105:17] The voltages
+[105:19] given in AC
+[105:21] are always RMS.
+[105:25] That never peaks.
+[105:27] That is why 12 root 2
+[105:29] is the voltage.
+[105:31] Okay, 12 root 2.
+[105:33] Do you understand?
+[105:35] 12 is the charge
+[105:37] maximum of RMS.
+[105:39] Look at the next one.
+[105:41] AC supply of 230
+[105:43] is applied to a half wave
+[105:45] of the rectifier circuit
+[105:47] through a transformer of turns
+[105:49] ratio 5 is to 1.
+[105:51] So look at the step-down.
+[105:53] There are more turns on the primary.
+[105:55] There are less on the secondary.
+[105:57] So what will be the step-down?
+[105:59] Assume that the diode is ideal.
+[106:01] The load resistance is 300.
+[106:03] Take out DC output voltage and PI.
+[106:05] Come on, do it quickly.
+[106:15] Yes brother,
+[106:17] I understood this option.
+[106:19] Make the next question.
+[106:45] Krithibas is saying 92.
+[106:47] Look.
+[106:49] Look.
+[106:51] First of all, take out the secondary voltage.
+[106:55] 1 upon 5
+[106:57] into 230.
+[106:59] This is 46.
+[107:01] But keep this in mind.
+[107:03] This is RMS.
+[107:05] Now DC output
+[107:07] voltage is
+[107:09] Vm by PI.
+[107:11] Ideal diode.
+[107:13] There is no need to take the voltage division.
+[107:15] Vm was 46 root 2 by PI.
+[107:19] So 23 into 0.9
+[107:21] 20.7 volts.
+[107:23] This will come.
+[107:25] 20.7.
+[107:27] What is the next one?
+[107:29] PIV.
+[107:31] This is Vm in the half wave rectifier
+[107:33] which is 46 root 2.
+[107:35] How much is it coming?
+[107:37] 65.04.
+[107:39] Come on, okay.
+[107:41] 65.04.
+[107:43] This is coming.
+[107:45] Okay.
+[107:47] Maximum value of the power delivered to the load.
+[107:51] The load resistance is 300.
+[107:53] So how much will be the maximum power?
+[107:57] How will you take this out?
+[107:59] Maximum power will be at maximum voltage.
+[108:03] Maximum voltage will be 46 root 2.
+[108:11] Do you understand?
+[108:13] When the voltage is loaded and the cross peak comes
+[108:15] the power will also be maximum.
+[108:17] How much is it coming?
+[108:19] Tell me quickly.
+[108:31] 14.106.
+[108:33] 14.106.
+[108:39] Okay.
+[108:41] Now it says average value of power.
+[108:43] Look.
+[108:45] Always remember.
+[108:47] In resistance
+[108:51] average power
+[108:55] is computed
+[108:57] using
+[109:01] RMS voltage.
+[109:09] Okay.
+[109:11] So what will you say here?
+[109:13] P average
+[109:17] RMS what is it?
+[109:21] 46 root 2
+[109:23] by 2.
+[109:25] Vm by 2
+[109:27] divided by
+[109:29] 300.
+[109:33] So 1 fourth will be
+[109:35] 3.5 watt.
+[109:39] Okay.
+[109:41] Do you understand?
+[109:43] Tell me.
+[109:45] Because your average value
+[109:47] is Vm by 2
+[109:49] of output voltage.
+[109:51] Vm by 2.
+[109:53] So if you are taking out 7.05
+[109:55] that means you are taking out Vm by root 2.
+[109:57] Vm by root 2 will not be there.
+[109:59] Vm by 2 will be there.
+[110:01] So remember this.
+[110:03] The power of resistance is from RMS.
+[110:05] Sir, you must have studied at Unacademy.
+[110:07] I am studying 7.5 to 10 every morning.
+[110:09] Tell me when do you want to study?
+[110:11] I will talk to Unacademy
+[110:13] that Ananya wants to know separately.
+[110:17] Okay, do this.
+[110:19] Average value of V0T
+[110:23] 50%.
+[110:35] Do check on my profile.
+[110:37] Tell me how the link will be.
+[110:39] Do check on my profile.
+[110:41] I am taking power systems every morning.
+[110:43] What is it?
+[110:45] Vm by pi of minus Vm.
+[110:47] The arrangement of diode
+[110:49] conducts this diode in negative
+[110:51] it conducts in half cycle and because it conducts in negative half cycle, your output is zero in positive,
+[110:59] see the waveform of the supply will be like this, okay, but in the output, you will get zero here,
+[111:10] you will get only this part, if you are plotting it against omega t, then you will write like this,
+[111:22] now what I told you, that the area of one loop is 2 times the maximum value, that is, if you take the area of this loop,
+[111:32] it will be 2 times the maximum, but because of negative, it will be minus 2Vm, so what is the average,
+[111:40] area upon period, so V minus Vm by pi, okay, see the next one, the circuit will be current in figure,
+[111:56] not the circuit in figure, shows a full wave rectifier, input voltage is 230 volt RMS,
+[112:04] PIV across D1 and D2, tell me,
+[112:12] oh my God, a new batch for gate 24 IN, an academy English batch, so right now,
+[112:18] an academy is not running any sort of batches for IN, whether in English or Hindi, so running a
+[112:24] IN branch and that too providing content in English is kind of very far-fetched,
+[112:30] I don't think it's in the plans of an academy, what is coming, A, A is coming, let's see, 50 0 50,
+[112:45] do you know what it means, it means that 50 volts here too, 50 volts here too, when it says 50 0 50,
+[112:56] so this means 50 volts, so what is the Vm here, 50 root 2, and you know that in a full wave
+[113:06] rectifier, PIV is 2Vm, so how much is it, 100 root 2, A is here, okay, see this, each diode has a forward
+[113:20] resistance 20 ohm, PIV 200, percentage voltage regulation, okay,
+[113:34] here we should write 1 is to 2, and this is the peak, 100 root 2 is given, that's why it is said that it is a peak,
+[113:50] average value of a half wave rectifier Vm by pi is not there, what does it mean, that's what it is,
+[113:59] but there is an increase, I think you are talking about question number 4, there was a negative cycle,
+[114:04] so minus Vm by pi will come, because its area is negative, see here what is the meaning of voltage
+[114:10] regulation, what does it mean, that this dynamic resistance is because of it, how much voltage
+[114:17] is the regulation, you will say that the average is V0m by pi, that is, when you take resistance,
+[114:29] so RL by 20 plus RL, and one is average for ideal diode, in the case of ideal diode, Vm by pi,
+[114:48] so the voltage regulation that you are taking out, hold the ideal case, hold the minus practical case,
+[114:59] RL is 1000 divided by ideal case, which is desirable Vm by pi,
+[115:10] so basically because of the diode resistance, the average is decreasing,
+[115:15] that is what the voltage regulation is saying, so 1000 LCM people, see this will be cut,
+[115:20] LCM people 1000 Bs minus 1000 is this,
+[115:31] approximately 2%, the answer will be B, approximately 2%,
+[115:40] the average power is Vm by 2, I have written this value, where do you lose it, read it,
+[115:47] this first line in resistance, average power is computed using RMS voltage,
+[115:54] then I am writing, so this is your assignment, you will solve this assignment,
+[116:05] if you gave 1000 load resistance, then it was 1 kilo ohm, that is what I took 1000,
+[116:09] now see, as I told you, on 5 September teachers day, this time there will be a big announcement,
+[116:19] a lot of great initiatives will be launched for you, you will enjoy a lot,
+[116:25] this is the biggest event of the anacademy, it will be live streamed at 6 o'clock,
+[116:31] so do attend it, you will enjoy a lot, and if you want to ask a previous year question,
+[116:40] then present it on this link, very soon your diode will be finished, I will give you a diode till Tuesday,
+[116:46] yes, today the assignment class will not be there at 5 o'clock, so why can you go to this link and give a PYQ,
+[116:52] as soon as our diode is finished, I have attached all electrical ECK, and if you want to come to anacademy,
+[116:58] then as you know, there are two choices, plus and iconic, you get top teachers in both,
+[117:03] as much as it is taught, its proper study material is uploaded on the app, test series is included,
+[117:09] apart from this, what is extra in iconic, son, custom doubt solving, any doubt will come in the new question,
+[117:15] we will make a video solution, there are printed notes, 1 to 1 live mentorship, strategy and study plan,
+[117:22] and open house session, you get all these things in iconic, now here, see what you have to do,
+[117:30] you have to join anacademy, so you have to decide, plus or iconic, and you have to decide the duration,
+[117:37] decide the duration and put the code on the time of payment, you will get the unkit EC, discount,
+[117:44] PYQ and CTQ are both, CTQ I think I have not done the analog, and if you see the results,
+[117:52] then our last year's son, then take out 6 anchors in top 10, next year you can also be one of them,
+[117:59] you just have to join anacademy and put the code, to come under my personal guidance,
+[118:05] and if there is a financial issue, then son, what you do, you take it on EMI, EMI is approved in just 2 hours,
+[118:13] at least there is paperwork in it, son, why at least you have to put the paperwork, you just have to put the
+[118:18] credit card and the PAN card, but put someone in your family, who has a regular salary,
+[118:25] because they are given EMI soon, and this is the latest batch, son, Manish started the network on it,
+[118:31] and I am teaching you the power system in the morning, okay, and this is my telegram channel,
+[118:37] stay connected here for the latest updates, and all the lectures for the link, and this is my team's contact
+[118:44] number, if you have any query, if you are a YouTube student, then press 2, if you are a plus and
+[118:50] iconic child, then press 1, now let's see the morning, son, I can't say like this that I launch only
+[118:56] test series, that is not a part of anacademy 1, anacademy 1 is a different event, so you will
+[119:02] get to know on 5th, now see if you want pdf of this session, then what you do, go to the
+[119:08] page, go to the community, go to discover, you will get my community, you get all the pdf there,
+[119:18] you will get the pdf of this session within half an hour, so thank you everyone, thanks a lot,
+[119:23] children, tomorrow also it will be class at 11.30, tomorrow we will wind up rectifier and filter,
+[119:28] so see you tomorrow, let's crack

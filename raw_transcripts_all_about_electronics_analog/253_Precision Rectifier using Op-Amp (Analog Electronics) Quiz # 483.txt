@@ -1,0 +1,64 @@
+Title: Precision Rectifier using Op-Amp (Analog Electronics) | Quiz # 483
+URL: https://www.youtube.com/watch?v=MTgVOsYxlFg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:10] So in this question, we have been given this open-based circuit and here we have been given
+[00:15] that this diode has a forward voltage drop of 0.6V whenever it is forward biased.
+[00:22] So here we have been asked to find the output voltage VOA for the voltage at this node whenever
+[00:27] this input V as is at its positive peak that is equal to 0.4V.
+[00:33] So if you see this circuit, then it is basically a half-five precision rectifier.
+[00:38] So in the precision rectifier, whenever the input is positive, then the voltage over here
+[00:43] is same as the input signal.
+[00:45] And whenever this input is negative, then the output at this node will be equal to 0.
+[00:51] So in this way, in the output, only positive half cycle will appear.
+[00:55] So if you know this, then whenever this input is equal to 0.4V, then output at this node
+[01:01] will be also equal to 0.4V.
+[01:03] And if you include the voltage drop across the diode, then the voltage at this node for
+[01:08] this VOA will be equal to 1V.
+[01:11] So if you know this circuit, then you can easily find this VOA.
+[01:15] But suppose if you do not know how this circuit works, then also using the basics of the
+[01:20] op-amp as well as using the simple circuit analysis also, you can find this VOA.
+[01:25] So let us also see that how to find that.
+[01:28] So initially, it do not know whether this diode is conducting or not.
+[01:33] So for a moment, let us assume that this diode is in the off condition.
+[01:37] So whenever this diode is in the off condition, then it will act as an open circuit.
+[01:42] So in this condition, if you see, then the voltage at this node or the inverting node will
+[01:47] be equal to 0.
+[01:49] Because as you can see, we are here, now this inverting terminal is connected to the
+[01:52] ground terminal through this N kilomit of this term.
+[01:56] That means this V minus is equal to 0.
+[01:59] So now in this condition, if the voltage at the non-inverting terminal or this input
+[02:04] signal V as is less than 0, then in that case, the output of the op-amp will be equal
+[02:08] to minus V set.
+[02:11] Because in this condition, as you can see, now the op-amp will act as a comparator.
+[02:15] So whenever this V minus is greater than V plus, then the output of the op-amp will be
+[02:20] equal to negative saturation voltage.
+[02:23] That means in this condition, if you see, then the voltage at the end of the diode is
+[02:26] equal to minus V set, while the voltage at the cathode of the diode is equal to 0.
+[02:31] So in this condition, this diode will remain in the open condition.
+[02:35] But now whenever this Vs is positive or in other words, when this V plus is greater than
+[02:40] 0, then in that condition, this output voltage V oA will become plus V set.
+[02:46] Because now, this V plus is greater than V minus.
+[02:50] So in this condition, if you see, then the voltage at the end of this diode is equal
+[02:54] to plus V set, while the voltage at the cathode of the diode is equal to 0.
+[02:59] And now in this condition, this diode will become forward biased.
+[03:03] And in the question we have been given that, in the forward biased condition, the voltage
+[03:07] drop across the diode is equal to 0.6 volt.
+[03:10] So now, since the diode is in the on condition, so there is a closed loop in the circuit.
+[03:16] That means now, the circuit will operate in the closed loop condition.
+[03:19] For in other words, there is a negative feedback in this circuit.
+[03:24] So for the op-amp, as you know, whenever it operates in the negative feedback configuration,
+[03:28] then we can apply the concept of the virtual crown.
+[03:31] That means now in this condition, this V minus will be same as the V plus.
+[03:36] So whenever this V is equal to 0.4 volt, then the voltage at this node will also be equal
+[03:42] to 0.4 volt.
+[03:44] And the same voltage will also appear over here.
+[03:47] That means in that condition, the voltage over here is also equal to 0.4 volt.
+[03:53] That means whenever this V is equal to 0.4 volt, then the voltage at this node is equal
+[03:58] to 0.4 volt.
+[04:00] And now, using the simple circuit analysis, we can find this voltage V o a.
+[04:05] So now, this voltage V o a is equal to 0.6 volt plus 0.4 volt, or that is equal to 1 volt.
+[04:12] So in this way, we can say that whenever this V s is equal to 0.4 volt, then the voltage
+[04:18] at this node, or this V o a is equal to 1 volt.
+[04:22] And therefore, for the given question, the answer is equal to 1 volt.

@@ -1,0 +1,77 @@
+Title: Active Low-Pass Filter using Op-Amp | Quiz # 501
+URL: https://www.youtube.com/watch?v=sD6ILo48J1c
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given the open based circuit and here we have been given
+[00:15] that the given open is the ideal open and here we have been also given the body plot
+[00:21] for the magnitude of the gain transfer function and here this omega is the angular frequency.
+[00:28] So based on this body plot, here we have been asked to find the values of this R and
+[00:32] C. So here let's say this register is equal to R1 while this another register is equal
+[00:40] to R2. So here if you see this circuit then it is nothing but the low pass filter.
+[00:47] So as you can see here this low pass filter is connected to the non-inverting terminal
+[00:51] of this op-m and through this feedback register and the register R1 the output of this low
+[00:56] pass filter will get amplified. So here this V plus or the voltage at this non-inverting
+[01:03] terminal can be given as this 1 divided by J omega C that is the reactance of this capacitor
+[01:09] divided by this R2 plus this 1 divided by J omega C or you can say that that is equal
+[01:17] to 1 divided by this 1 plus J times R2 times omega C. So that is the voltage at this non-inverting
+[01:25] terminal and this voltage will get amplified by the non-inverting gain of the op-m.
+[01:32] That means here this V out is equal to 1 plus this R divided by R1 times V plus or we can
+[01:40] say that that is equal to 1 plus R divided by R1 times this 1 divided by 1 plus J times
+[01:49] R2 times omega C and of course over here we will also have the input voltage. That means
+[01:57] if we see this V out divided by V in then that is equal to 1 plus R divided by R1 times
+[02:05] this 1 divided by 1 plus J times R2 times omega C. So now if we just consider the magnitude
+[02:14] of this V out divided by V in then we will have 1 plus R divided by R1 times this 1 divided
+[02:22] by square root of 1 plus R2 square omega square C square. So this will be the gain transfer
+[02:31] function and specifically that is the magnitude of the gain transfer function. So from this
+[02:37] we can easily find the values of this R and C so let us see that.
+[02:42] So here is V out divided by V in or the magnitude of the gain transfer function is equal to 1 plus
+[02:48] R divided by R1 times 1 divided by square root of omega square R2 square C square and here
+[02:55] this is the body plot of the given transfer function. So here whenever the omega is equal
+[03:01] to 0 and the gain of this transfer function is equal to 12 dB. So we can say that this
+[03:08] 20 log of AV is equal to 12 or we can say that this AV is equal to 10 to the power 12 divided by
+[03:18] 20 but is roughly equal to 4 that means whenever the omega is equal to 0 or at the DC this gain
+[03:26] transfer function is equal to 4. Now in this expression whenever we put the omega is equal to 0
+[03:33] then this term will become 1 and eventually we will have this 1 plus R divided by R1.
+[03:42] So we can say that this 4 is equal to 1 plus R divided by R1 or from this we can say that
+[03:50] this R divided by R1 is equal to 3. Now here since R1 is equal to 1 kilo ohm so we can say that
+[03:58] the value of R is equal to 3 kilo ohm. So in this way it got the value of the R. So similarly
+[04:06] now let us find the value of the C. So in this body plot if you see then whenever this log of
+[04:13] omega is equal to 3 at that time the amplitude of the gain transfer function reduces by the 3 dB.
+[04:20] So initially it is equal to 12 dB but whenever this log of omega is equal to 3 at that time
+[04:25] this amplitude reduces by the 3 dB and as you can see it becomes 90 dB. So this frequency is known
+[04:34] as the cutoff frequency of the filter. So let us say that is equal to omega C. So in this case
+[04:41] this log of omega C is equal to 3 because at that frequency the amplitude is reducing by the 3 dB.
+[04:50] So from this we can say that this omega C is equal to 10 to the power 3 that means the omega C
+[04:57] is equal to 1000 radian per second and since it is the low pass filter so from the cutoff frequency
+[05:04] itself we can easily find the value of the C. So here if you see the cutoff frequency of this
+[05:10] low pass filter then that is equal to 1 divided by 2 pi times this R2 times C or from this we can
+[05:19] say that this 2 pi times Fc is equal to 1 divided by R2 times C and this 2 pi times Fc is nothing
+[05:28] but the omega C. So from this we can say that the cutoff frequency of this low pass filter
+[05:34] or this omega C is equal to 1 divided by R2 times C. So here the C is equal to 1 divided by
+[05:43] R2 times omega C. So here the value of the R2 is equal to 1 kilo ohm that is equal to 10 to the
+[05:50] power 3 ohm and the value of omega C is also equal to 10 to the power 3 radian per second
+[05:57] and from this we can say that the value of the C is equal to 10 to the power minus 6
+[06:02] Faraday or that is equal to 1 micro Faraday. So if you know the value of the cutoff frequency of
+[06:08] the low pass filter and from this you can easily find the value of the C but in case if you do not
+[06:14] know that then also from the given expression and from the given modiplot also you can easily find
+[06:20] the value of the C. So now let us see the alternate approach where even if you do not aware about
+[06:26] the cutoff frequency of the low pass filter then also how to find the value of the C.
+[06:32] So we know that at this frequency the magnitude of the transfer function is reducing by the
+[06:38] 3 dB that means whenever this omega is equal to 10 to the power 3 radian per second at that time
+[06:45] this 20 log of AV is equal to 90 dB. So from this we can easily find the value of the AV
+[06:54] that is equal to 10 to the power 90 by 20 and that is equal to 2.818 and here this 1 plus
+[07:05] r divided by r1 is equal to 4 that means further we can write this expression as
+[07:11] this 2.818 divided by 4 that is equal to 1 divided by square root of 1 plus omega square
+[07:20] r2 square C square. So further if we simplify it then we can say that is 1 divided by square root
+[07:28] of 1 plus omega square r2 square C square is equal to 0.707. So now if we take the square on
+[07:36] both sides then further we can write it as 1 divided by 1 plus omega square r2 square C square
+[07:45] that is roughly equal to 0.5 or we can say that that is equal to 1 by 2 that means 1 plus omega square
+[07:53] r2 square C square is equal to 2. For further this omega square r2 square C square is equal to 1
+[08:02] and from this we can say that this C is equal to 1 divided by omega times r2 and here this omega
+[08:11] is the cutoff frequency and we know that this frequency is equal to 10 to the power 3. So we can
+[08:18] say that this C is equal to 1 divided by 10 to the power 3 radian per second I understand to
+[08:24] the power 3 ohm that is equal to 10 to the power minus 6th Faraday or we can say that the value of
+[08:31] the C is equal to 1 micro Faraday. So in this way it got the value of r and C that means here
+[08:39] this r is equal to 3 kilo ohm while the value of C is equal to 1 micro Faraday and from this we
+[08:47] can say that for the given question this is the correct answer.

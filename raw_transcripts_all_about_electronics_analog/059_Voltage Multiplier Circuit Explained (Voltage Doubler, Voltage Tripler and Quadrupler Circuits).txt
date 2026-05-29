@@ -1,0 +1,182 @@
+Title: Voltage Multiplier Circuit Explained (Voltage Doubler, Voltage Tripler and Quadrupler Circuits)
+URL: https://www.youtube.com/watch?v=IqzA3-bgIIE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video we will learn about the Voltage Multiplier Circuit.
+[00:20] Now as its name suggests, this Voltage Multiplier Circuit multiplies the input signal.
+[00:26] So usually the input to this Multiplier Circuit used to be a AC signal.
+[00:30] And like or rectifier, the output used to be a DC Voltage.
+[00:35] But unlike the rectifier circuit, the magnitude of the DC signal used to be n times the input
+[00:40] signal.
+[00:41] So in case of a rectifier circuit, if we apply the AC signal with a peak amplitude of
+[00:47] VM, in that case, at the most we can get the DC output of VM.
+[00:52] But here in case of the multiplier circuit, the output used to be a n times the peak amplitude.
+[00:59] That means the DC voltage will be n times the peak amplitude.
+[01:03] Now you might ask, what is the need of this multiplier circuit when we can increase the
+[01:08] voltage just by using the step up transformer and the rectifier circuit.
+[01:13] So let's say if you have input voltage V in and if you use a step up transformer as
+[01:18] well as the rectifier circuit, then also you can multiply the input signal.
+[01:23] But in this case, by using this step up transformer, the size and the cost of the circuit will
+[01:28] increase.
+[01:29] And that is why in many applications, the voltage multiplier circuit are used instead of this
+[01:34] step up transformers.
+[01:36] Now this voltage multiplier circuits are used in the many applications.
+[01:41] For example, they are used in the facts and the photocopying machines as well as in the
+[01:46] bug zapper circuits.
+[01:47] And previously they were used in the cathode rate tubes.
+[01:51] So these are some of the applications of the voltage multiplier circuit.
+[01:55] So in this video, we will see the three types of voltage multiplier circuit, the voltage
+[02:00] doubler, voltage tripler and the voltage quadrupler.
+[02:04] So as its name suggests, in case of a voltage doubler circuit, if we apply the AC input signal
+[02:11] with a peak amplitude of Vm, in that case the output will be equal to 2 times the Vm.
+[02:17] Similarly, in case of a voltage tripler circuit, the output will be equal to 3 times Vm.
+[02:23] And in the voltage quadrupler circuit, the output will be equal to 4 times Vm.
+[02:29] So now let us 1 by 1 see how this circuit works.
+[02:33] So this is the circuit of the voltage doubler.
+[02:36] So to this circuit, if we apply the AC input signal Vm with a peak amplitude of Vm, then
+[02:43] at the output, we will get a DC voltage of 2Vm.
+[02:47] So now let us understand the working of the circuit.
+[02:50] So initially, we will assume that all the capacitors are unchanged.
+[02:55] So during the positive half cycle, the polarity of the input voltage will be like this.
+[03:01] So due to that, this diode D1 will become on and this diode D2 will become off because
+[03:07] during the positive half cycle, the anode of this diode D1 will be more positive than
+[03:12] the cathode.
+[03:13] And for the diode D2, if you observe, the anode is already at a ground potential.
+[03:18] And at the cathode, the applet input voltage is equal to the Vm.
+[03:23] So due to that, this diode D2 will remain off.
+[03:27] Now here, we are assuming that all the diodes are ideal diode.
+[03:31] So we can replace them by the equivalent circuit.
+[03:33] So we can replace this diode D1 as a short circuit and we can replace this diode D2 as
+[03:38] a open circuit.
+[03:40] So in this case, through this path, this capacitor C1 will get charged.
+[03:46] And it will get charged up to the peak amplitude of this AC input signal.
+[03:51] That means this capacitor C1 will get charged up to voltage Vm.
+[03:57] So after the first positive half cycle, if we see the circuit, then it will look like this.
+[04:03] Now during the negative half cycle, this diode D1 will become off and this diode D2 will
+[04:09] become on.
+[04:11] Because now, the cathode of this diode D1 is more positive than the anode.
+[04:16] And similarly, for the diode D2, the anode is more positive than the cathode terminal.
+[04:22] So let us replace these two diodes by the equivalent circuit.
+[04:26] So during the negative half cycle, if you see, the equivalent circuit will look like this.
+[04:31] Now one more thing, if you observe over here, this capacitor C1 is already charged up to
+[04:36] the voltage Vm.
+[04:38] So the voltage across this capacitor will also get added with this input voltage.
+[04:43] And you do that through this path now, this capacitor C2 will get charged.
+[04:50] So if we apply the KVL in this loop, then we can write it as Vm minus Vc2 plus Vm is
+[04:59] equal to 0.
+[05:02] And the peak amplitude of the input signal is equal to Vm.
+[05:06] So we can say that Vc2 is equal to 2Vm.
+[05:10] That means during the negative half cycle, this capacitor C2 will get charged up to the peak
+[05:16] amplitude of 2Vm.
+[05:18] And the polarity of the voltage will be from this side over the this side.
+[05:23] So in this way, in this voltage debris circuit, after the two cycles, we will get a voltage
+[05:28] of 2Vm across this capacitor C2.
+[05:32] But in the reality, it will take few more cycles to reach this output to the 2Vm.
+[05:37] So let us understand this point.
+[05:39] Now in this voltage doubler, as I said earlier, during the positive half cycle, this capacitor
+[05:45] C1 will get charged up to the voltage Vm.
+[05:49] So up to this point, the voltage across the capacitor will reach to the Vm.
+[05:55] Now if you observe, after this point, now the input voltage is less than Vm.
+[06:00] So if you apply the KVL in this loop, then we can write it as Vm minus Vm is equal to
+[06:07] Vd1.
+[06:09] Now as this input voltage Vm is less than this voltage Vm, so this diode D1 will become
+[06:16] of and for the diode D2, if you observe, the Node is already at a ground potential.
+[06:23] But now the voltage at this node is equal to Vm minus Vm.
+[06:28] And after this point, as Vm is less than Vm, so the cathode will be more negative than
+[06:33] the Node.
+[06:35] So after this point, the diode D2 will also start conducting.
+[06:39] And due to that, if you see, through this path, now this capacitor C2 will also get charged.
+[06:45] So from this point to this point, the charge across the capacitor C1 will get transferred
+[06:51] to this capacitor C2.
+[06:53] So at this point, if you observe, the charge across the capacitor C1 will become 0.
+[06:59] And this capacitor C2 will get charged up to the voltage Vm.
+[07:05] And after this point, if you observe, the input voltage Vm starts increasing.
+[07:10] So the cathode of this diode D2 will become more positive than this Node.
+[07:15] And due to that, this diode D2 will become of.
+[07:19] So the charge across the capacitor C2 will remain as it is.
+[07:24] And once again, during this time, this capacitor C1 will start conducting through this diode
+[07:30] D1.
+[07:31] And once again, during this time, this capacitor C2 will get charged up to the voltage Vm.
+[07:38] And during this cycle, the charge across the capacitor C1 will once again transfer to
+[07:44] this capacitor C2.
+[07:46] So over the period of time, as you can see, the voltage across the capacitor C2 will increase.
+[07:53] And in reality, it will take few more cycles to reach the output of this capacitor C2 to
+[07:58] the voltage to Vm.
+[08:01] So this is the simulation result of the voltage doubler circuit.
+[08:05] So this blue waveform is the input signal.
+[08:08] And this pink waveform represents the output voltage across the capacitor C2.
+[08:14] And as you can see, it is taking few cycles to reach the voltage to Vm.
+[08:18] Now actually, the voltage of this capacitor C2 should be equal to minus 20 volt.
+[08:24] But due to the voltage drop across the diode, it will be slightly less than the 20 volt.
+[08:30] So far, I hope you understood the working of this voltage doubler circuit.
+[08:34] So similarly, now let us see the working of the voltage tripler and the quadrupler circuit.
+[08:41] So in the voltage doubler circuit, just by adding the pairs of capacitors and the diodes,
+[08:46] it can be converted into either tripler and the quadrupler circuit.
+[08:51] So if you measure the output voltage between this C1 and C3, then it will be equal to 3 times
+[08:57] Vm.
+[08:58] And if you measure the voltage between this C2 and C4, then it will be equal to 4 Vm.
+[09:03] Where Vm is the peak amplitude of the AC input signal.
+[09:08] So now let us understand the working of this circuit.
+[09:12] So initially, we will assume that all the capacitors are unchanged.
+[09:17] So during the positive half cycle, this diode D1 and D3 will conduct.
+[09:22] While the diode D2 and D4 will remain off.
+[09:26] Because during the positive half cycle, any of these diode D1 and D3 will be more positive
+[09:31] than these cathodes.
+[09:33] So now, let us replace these diodes by the equivalent circuit.
+[09:37] So this diode D1 and D3 will act as a short circuit and the diode D2 and D4 will act as
+[09:42] a open circuit.
+[09:44] So due to that, now this capacitor C1 will get charged through this path.
+[09:50] But in this path, if you observe, as both the capacitors are unchanged, so there will
+[09:55] not be any charge across any capacitor.
+[09:58] So during the positive half cycle, this capacitor C1 will get charged up to the peak voltage Vm.
+[10:06] So after the first half cycle, during this negative half cycle, this diode D1 and D3
+[10:11] will be off and this diode D2 and D4 will be on.
+[10:15] So now let us represent these diodes by the equivalent circuit.
+[10:20] And if you replace this diode by the equivalent circuit, then the circuit will look like this.
+[10:26] So now during this negative half cycle, this capacitor C2 will get charged through this
+[10:31] path.
+[10:32] And if you observe over here, now the polarity of the input voltage is like this and the
+[10:38] voltage across this capacitor C1 will also get added with this input voltage.
+[10:43] So if we apply the KVL in this loop, then we can say that Vm minus Vc2 plus Vm is equal
+[10:54] to 0.
+[10:56] That means Vc2 will be equal to Vm plus Vm.
+[11:01] Now the maximum input voltage Vm can go up to Vm.
+[11:05] That means this capacitor C2 will get charged up to the voltage to Vm.
+[11:11] So in this way, after the first negative half cycle, the voltage across this capacitor
+[11:15] C2 will be equal to Vm.
+[11:19] So now let us see what happens during the next positive half cycle.
+[11:23] So once again during the next positive half cycle, this diode D1 and D3 will be on while
+[11:29] this diode D2 and D4 will be off.
+[11:33] And if you replace this diode by the equivalent circuit, then the circuit will look like this.
+[11:39] So during this second positive half cycle, this capacitor C3 will get charged through this
+[11:45] path.
+[11:46] So after this half cycle, the voltage across this capacitor C3 will be equal to Vm.
+[11:53] And in the next half cycle, if you see, once again this diode D2 and D4 will become on.
+[11:59] And this diode D1 and D3 will remain of, say if you see the equivalent circuit, then it
+[12:05] will look like this.
+[12:06] So during this negative half cycle, the capacitor C4 will get charged through this path.
+[12:13] And it will get charged up to the voltage to Vm.
+[12:16] So now if you observe the voltage, but when this to point, then it will be equal to 3Vm.
+[12:22] And similarly, if you observe the voltage between these two capacitors, then it will be
+[12:27] equal to 4Vm.
+[12:30] But in reality, as I explained for the voltage double circuit, these capacitors will require
+[12:36] few more cycles to reach to the maximum value.
+[12:40] So this is the simulation result of the voltage tripler and the quadruple circuit.
+[12:44] And as you can observe, each capacitor will take few more cycles to reach to the maximum
+[12:48] value.
+[12:49] But in a steady state condition, if you observe, we will get a voltage of 3Vm between these
+[12:55] two capacitors and between these two capacitors, we will get voltage of 4Vm.
+[13:02] So in this way, using this tripler and the quadruple circuit, we can generate output voltage,
+[13:07] which is 3 and 4 times more than the input signal.
+[13:11] And in this way, by cascading more stages, we can multiply the input voltage.
+[13:16] But as we keep on increasing the number of stages, then the ripple in the output voltage
+[13:20] will also increase.
+[13:22] And at the same time, the current capability of the circuit will reduce.
+[13:27] Because usually, these voltage multiplier circuits are used for the very light loads.
+[13:33] So I hope in this video, you understood how the voltage media circuit can be designed
+[13:38] and how it can be used for the different applications.
+[13:41] So if you have any question or suggestion, do let me know here in the comment section
+[13:45] below.
+[13:46] If you like this video, hit the like button and subscribe to the channel for more such
+[13:49] videos.

@@ -1,0 +1,117 @@
+Title: BJT: Common Collector Configuration (Input and Output Characteristics) Explained
+URL: https://www.youtube.com/watch?v=qwWj3bqnuDk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the common collector configuration of the BJT.
+[00:22] So in case of this common collector configuration, this collector terminal is common between
+[00:26] the input and the output side.
+[00:29] That means here, the input is applied between the base and the collector terminal and
+[00:34] the output is measured between the emitter and the collector terminal.
+[00:38] Now here, when we say that the collector is common between the input and the output side,
+[00:44] then actually we are referring to the AC signal.
+[00:48] But for the DC biasing perspective, the circuit would look like this.
+[00:53] And here, to use this BJT as an amplifier, it is biased in such a way that this base
+[00:59] emitter junction gets forward biased and the collector base junction gets reversed biased.
+[01:05] And in fact, in terms of the DC biasing perspective, it looks quite similar to the common
+[01:10] emitter configuration.
+[01:12] But here, this resistor is connected on this emitter side.
+[01:17] But when we talk about the AC signals or during the AC analysis, all the DC voltage sources
+[01:23] are considered as zero.
+[01:25] That means during the AC analysis, this collector terminal gets grounded.
+[01:31] Now when we apply the AC signal at this base terminal and when we measure the output at
+[01:36] this emitter terminal, then we can say that the input is applied between this base and
+[01:41] the collector terminal and the output is measured between this emitter and the collector
+[01:46] terminal.
+[01:48] So this is how the AC input signal is applied at the base terminal and the output is measured
+[01:53] at the emitter terminal.
+[01:56] And if required, the load can be connected over here.
+[02:01] But for simplicity, if we neglect this base resistor and the coupling capacitors, then
+[02:06] the equivalent circuit for the AC signal would look like this.
+[02:11] But for the DC perspective, this is how the biasing voltages are applied.
+[02:16] So now if it is the direction of the currents, then the direction of the currents in the circuit
+[02:20] would look like this.
+[02:23] So here, this base current is the current on the input side, while this emitter current
+[02:28] is the current on the output side.
+[02:31] And similarly, if we see the DC voltage on the input side, then it is equal to VcB and
+[02:37] the DC voltage on the output side is equal to Vc.
+[02:42] That means here, this IB and the VcB are the currents and voltage on the input side,
+[02:48] while this IE and the VCE are the parameters of the output side.
+[02:54] And similar to the other configurations, the behavior of the device can be described by
+[02:58] the two characteristics.
+[03:00] That means the input and the output characteristics.
+[03:04] So first of all, let us see the output characteristics.
+[03:08] So this output characteristics defines the relationship between this emitter current
+[03:12] IE and the voltage VCE.
+[03:15] And if you look this different IE versus Vc cause, then it is very similar to the common
+[03:20] emitter configuration.
+[03:22] Because over here, this emitter current IE can be given as alpha times Ic.
+[03:29] And as the value of alpha is very close to unity, so we can say that this emitter current
+[03:34] is approximately equal to collector current.
+[03:38] That means with the change in this voltage VCE, the variation in this emitter current
+[03:42] is similar to the collector current.
+[03:45] And that is why in this configuration, the output characteristics looks similar to the
+[03:50] common emitter configuration.
+[03:53] Now if we talk about the input characteristics, then it shows the relationship between this
+[03:58] base current IB and the voltage VcB.
+[04:02] And as you can see, for the fixed value of voltage VCE, as we increase this voltage VcB,
+[04:08] then this base current IB reduces.
+[04:11] Because this voltage VCE can be given as voltage VcB plus voltage VBE.
+[04:19] That means for the fixed value of voltage VBE, as the voltage VcB increases, the width
+[04:24] of the declaration region increases.
+[04:27] And due to that, the effective base width reduces.
+[04:31] And as the effective base width reduces, the probability of recombination in this base
+[04:36] region reduces.
+[04:38] And due to that, this base current IB reduces.
+[04:42] That means as the voltage VcB increases, this base current IB reduces.
+[04:48] Now for the fixed value of VcB, as we increase the voltage VCE, or in other words, as we
+[04:54] increase this voltage VBE, then the base current IB will increase.
+[04:59] Because as the voltage VB increases, more and more electrons will be pushed by this emitter
+[05:04] terminal.
+[05:06] And due to that, this base current IB will increase.
+[05:10] That means for the fixed value of voltage VCE, as we increase this voltage VCE, then the
+[05:15] base current IB will increase.
+[05:18] Or in other words, for the larger value of VCE, the entire curve will get shifted on the
+[05:24] right hand side.
+[05:26] Now as I said earlier, in this common collector configuration, this emitter current is the
+[05:31] current on the output side, while the base current is the current on the input side.
+[05:37] And the ratio of this emitter current to the base current is known as the current gain
+[05:41] of this common collector configuration.
+[05:44] And it is denoted by the symbol of gamma.
+[05:47] That means gamma is equal to IE divided by IB.
+[05:52] And this gamma can also be represented in terms of the alpha and the beta.
+[05:58] So now let us find out the relationship between this alpha beta and the gamma.
+[06:03] Now we know that this emitter current IE can be given as IC plus IB.
+[06:11] That means this gamma is equal to IC plus IB divided by IB.
+[06:19] And if we neglect the reverse saturation current, then this collector current IC can
+[06:23] approximately given as beta times IB.
+[06:28] That means gamma is equal to IC divided by IB plus 1.
+[06:34] And that is equal to beta plus 1.
+[06:38] That means gamma is equal to beta plus 1.
+[06:43] Now we also know that this beta can be given as alpha divided by 1 minus alpha.
+[06:49] That means beta plus 1 will be equal to alpha divided by 1 minus alpha plus 1.
+[06:57] That is equal to 1 divided by 1 minus alpha.
+[07:01] That means we can say that this gamma is equal to beta plus 1.
+[07:06] That is equal to 1 over 1 minus alpha.
+[07:10] So this is the relationship between this alpha beta and the gamma.
+[07:14] Now from this we can say that gamma is equal to 1 divided by 1 minus alpha.
+[07:22] And if we multiply both sides by the alpha, then we can say that alpha into gamma is equal
+[07:27] to alpha divided by 1 minus alpha.
+[07:31] And we know that alpha divided by 1 minus alpha is equal to beta.
+[07:37] That means we can say that this alpha into gamma is equal to beta.
+[07:43] So these are the relationship between this alpha beta and the gamma.
+[07:48] Now this common character configuration provides the very high input impedance and very low
+[07:53] output impedance.
+[07:55] And that is why it is often used for the impedance matching in the amplifier circuit.
+[08:00] Then if we talk about the current and the voltage gain, then it provides the very high current
+[08:05] gain and very low voltage gain.
+[08:08] So in this configuration, this current gain is equal to beta plus 1 and the voltage
+[08:13] gain is close to unity.
+[08:17] And if we talk about the power gain, then this configuration provides the low power gain.
+[08:22] So these are the basic properties of this common collector configuration.
+[08:27] And we will see in detail about all these properties during the SA analysis of the BJT.
+[08:33] So I hope in this video you understood the basics of this common collector configuration.
+[08:39] So if you have any question or suggestion, do let me know here in the comment section
+[08:43] below.
+[08:44] If you like this video, hit the like button and subscribe to the channel for more such
+[08:48] videos.

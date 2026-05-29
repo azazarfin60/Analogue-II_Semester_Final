@@ -1,0 +1,1175 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Assignment Discussion | GATE 2023 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=jP7lDX3J50o
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] And welcome back to the Creatrix YouTube channel my dear friends.
+[00:16] We are live again in Lakshya batch 2.0 Analog Electronics.
+[00:21] So as you know in O-Pamp we have covered all these things like linear application, non-linear application, active filter.
+[00:29] So today we are getting to discuss all the assignments that I have given from non-linear application till the active filters.
+[00:38] After this we will start the feedback amplifier, then the oscillator and after that your gate complete syllabus for analog electronics.
+[00:48] After that there will be an assignment discussion.
+[00:51] Before that we will not discuss assignments.
+[00:53] So after this you can say that there is one more assignment discussion left.
+[00:57] So I hope all of you have seriously attempted assignments.
+[01:01] Worked on one question and worked hard on it.
+[01:05] And you guys take out the answers.
+[01:07] No matter what the answers are, there is no tension.
+[01:09] I am going to discuss one question.
+[01:11] You guys will match your answers, you will match the method.
+[01:15] If you have any doubt then you will ask that doubt in the chat box.
+[01:21] So let's start today's discussion.
+[01:24] All of you are ready.
+[01:26] We will speak fast.
+[01:27] All of you are ready.
+[01:28] Let's go.
+[01:29] First, obtain an expression for V0 in terms of VS, IS and R which is the reverse saturation current of the transistor.
+[01:39] Now see if we consider this transistor as conducting.
+[01:46] If we consider this transistor as conducting, then our feedback loop is complete.
+[01:53] The reason for this is that the voltage of the inverting terminal will be zero.
+[01:59] Because the feedback is completed, so virtual short.
+[02:03] So here this I current, what will be I?
+[02:08] VS-0 by R.
+[02:13] So that is VS by R.
+[02:18] Now this I current will go here.
+[02:25] If you consider beta as high, then you can say that this I current will also go in ammeter.
+[02:33] Ammeter and collector current are equal.
+[02:36] I considered its beta as large.
+[02:40] Okay, sir.
+[02:41] But how will we get V0, sir?
+[02:43] How will we get V0?
+[02:45] Look, here one thing should be understood.
+[02:49] That here your collector voltage is zero.
+[02:53] Your base voltage is also zero.
+[02:56] When the collector and base voltage of the transistor is the same or the collector is shorted.
+[03:03] So what do we call it?
+[03:04] It acts as a diode.
+[03:07] Okay.
+[03:08] What are we saying?
+[03:09] If the collector and base are shorted, then BJT will work as a diode.
+[03:16] You people are thinking about it.
+[03:19] Now if BJT works like a diode, then its ammeter current satisfies the diode equation.
+[03:30] Now here, how much is its base ammeter voltage?
+[03:37] VBE is zero minus V0.
+[03:41] The base is zero and the ammeter is V0.
+[03:43] So this is minus V0.
+[03:45] So we will say I equal to IS.
+[03:49] If you ignore the factor of one in the diode equation, VBE by VT.
+[03:56] So what is VBE?
+[03:58] VTLN I by IS.
+[04:03] And V0 is minus VBE.
+[04:06] If you put minus in front of the log, then it is VTLN IS by I.
+[04:16] You can write I as VS by R.
+[04:23] This is it.
+[04:25] Okay.
+[04:26] This relation will be V0 and VS.
+[04:29] It is clear.
+[04:31] It is clear.
+[04:32] So basically this is a diode.
+[04:35] See, I have given you BJT but indirectly it is working as a diode.
+[04:41] That is why I am telling you to start an analogue course.
+[04:46] But if you start an analogue course with an opamp, then how will you deal with such a question?
+[04:51] It is not possible.
+[04:53] As long as you do not know that this BJT will work as a diode on the collector base short circuit.
+[04:59] As long as it is not given, then ignore it.
+[05:02] Let's consider it as one.
+[05:04] In the circuit shown, the opamp is ideal and V0 is zero.
+[05:09] Initially the switch is connected to A.
+[05:12] Connected to A.
+[05:14] Charging C1 to V.
+[05:16] It is then connected to B and this process is repeated F times per second.
+[05:22] Now see, when this is connected to A, it is clear that the capacitor will be voltage on 1 which is also written.
+[05:31] So when this is connected to A, connected to A, then VC1 is equal to V.
+[05:47] That is Q1 is C1V.
+[05:50] Now as soon as this is connected to B, as soon as this is connected to B,
+[05:58] its voltage should be zero according to the virtual short.
+[06:02] You think that there is zero voltage here.
+[06:05] Now below this capacitor is zero and above this capacitor is zero.
+[06:10] That is, its voltage should be zero as soon as it goes to B.
+[06:14] Or you can say that its charge should also be zero.
+[06:20] Correct, right?
+[06:22] Connected to B.
+[06:33] Q1 is also zero.
+[06:35] Now the question is, where did this charge go?
+[06:40] If the charge is conserved, then the charge suddenly becomes zero.
+[06:46] If the charge must have gone somewhere, then what will we say?
+[06:49] It has given its charge to C2.
+[06:52] Okay?
+[06:53] It has given its charge to C2.
+[06:56] So we are saying that Q1 is transferred to C2.
+[07:05] That is, how much charge will be given to C2?
+[07:10] C1V.
+[07:13] Or you can say that how much voltage will be given to C2?
+[07:20] Q2 by C2.
+[07:23] C1 by C2V.
+[07:27] Now the question is, how much charge will be given in one second if you repeat this process every second?
+[07:37] Look, in one time, one time, charge on C2.
+[07:46] How much charge will be given on C2?
+[07:52] C1V.
+[07:55] In one second, if you see, how much will be given to C2?
+[08:03] In one second, you are doing F bar, right?
+[08:05] C1VF.
+[08:07] If you are doing F bar, then C1VF.
+[08:10] What is the next one?
+[08:12] Average rate of change of V0.
+[08:15] So the average rate of change of V0 is dV0 by dt.
+[08:21] You just removed V0, right?
+[08:23] C1 by C2V by t.
+[08:27] F will be 1 by t.
+[08:30] So here it is.
+[08:32] This is the average rate of change of V2 per second.
+[08:36] That is, in one second, there is so much change in V2.
+[08:41] Do you understand?
+[08:42] What is happening?
+[08:43] As you understand, sometimes, how can you understand?
+[08:48] For example, we have to fill a tank.
+[08:51] And we have a small bucket.
+[08:53] So we are filling a bucket.
+[08:55] We are flipping its water in the tank.
+[08:57] Then we are filling the bucket.
+[08:58] Then we are flipping it in the tank.
+[09:00] So this bucket is C1.
+[09:02] And the tank you are filling is C2.
+[09:04] So C2 is a big capacitor on which you are storing the charge.
+[09:08] So sometimes, C1 takes the charge from the source and delivers it to C2.
+[09:13] It stores it.
+[09:15] So sometimes, the charge of C2 will increase.
+[09:19] Let's see the next one.
+[09:21] Consider the circuit shown in the figure.
+[09:23] The opamp used is ideal.
+[09:25] Determine the region of operation of BJT.
+[09:28] We have to tell the region.
+[09:30] Now look here.
+[09:31] Vi is the variable from the potential meter.
+[09:34] Variable, right?
+[09:37] And the maximum value of Vi is 5.
+[09:41] It cannot be more than the supply.
+[09:44] Look here.
+[09:45] The maximum value of the supply in this potential meter is 5.
+[09:49] If Vi is the maximum value of 5,
+[09:52] Vi will also be coming here.
+[09:54] So how much will be the maximum value of 5 here?
+[09:58] Now there will be no current in 10 km.
+[10:01] Because the input current of opamp is 0.
+[10:04] So Vi will also come here.
+[10:06] whose maximum value will be 5.
+[10:14] Okay.
+[10:15] Now how much voltage can be generated here?
+[10:19] How much voltage can be generated here?
+[10:22] It can be 12.
+[10:24] It can be 12.
+[10:26] So you can say base to emitter voltage.
+[10:30] Or you can say base to emitter voltage is 7V.
+[10:39] And collector to base is 15-12.
+[10:44] I am saying the minimum value of this.
+[10:47] How is it 15-12?
+[10:48] There is 15 on the collector.
+[10:50] Maximum 12 can come on the base.
+[10:52] 3V which means reverse bias.
+[10:55] This means 7V forward bias.
+[10:58] This means BJT is working in the active region.
+[11:02] Understood?
+[11:04] Look, why did I say the minimum voltage of collector to base?
+[11:08] I said that the maximum input on the base can be 12.
+[11:15] Not more than the supply.
+[11:17] If the maximum can be 12 here, then the minimum voltage of this region or this junction, collector-base can be 3.
+[11:26] That is, it is reverse bias in every condition.
+[11:29] Now the architect is saying the variable.
+[11:31] Brother, this is a potential meter.
+[11:34] According to the potential division, the variable will be Vi.
+[11:38] It will be Vi-variable if you move it up and down.
+[11:43] Did you understand all this in an active region?
+[11:46] Tell me.
+[11:47] The collector-base will always be reverse bias.
+[11:50] Because the collector voltage is 15 and the base can be maximum 12-12.
+[11:56] So it is always reverse biased.
+[11:58] Now Vi and I0 have to relate.
+[12:01] Look, we have derived till here.
+[12:03] Vi is coming here.
+[12:04] Now what will be I0?
+[12:07] Simple, Vi upon RL.
+[12:12] If I am calling this as ground, I did not keep anything.
+[12:15] Let me call it as ground.
+[12:17] So Vi by RL is over.
+[12:21] I understood why the maximum can be 5.
+[12:24] This potential divider or potential meter has 5 volts.
+[12:28] It will not be more than that, Vi.
+[12:30] But it can be less than that when you vary it.
+[12:34] Simple.
+[12:35] Simple.
+[12:36] Next.
+[12:38] Find V0.
+[12:39] This is a linear circuit.
+[12:41] This is not non-linear.
+[12:42] This is 1 volt.
+[12:46] This is 1 volt.
+[12:48] This is 0.5 milliamperes.
+[12:53] This is 0.5.
+[12:55] This is 2 volts.
+[12:57] Correct.
+[12:59] This is 2 volts.
+[13:01] This is 0.5 milliamperes.
+[13:03] The current is leaving 2 resistors.
+[13:07] If it is 1 here then please get the current out.
+[13:11] Look, here it is 2.
+[13:13] And here it is one.
+[13:15] So this is 2 minus 1 by 1.
+[13:19] 1 milliamperes.
+[13:21] Look, this node has reached 1 milliamperes.
+[13:26] Where is 0.5?
+[13:28] 0 is 0 at the end.
+[13:30] So 1 will start.
+[13:32] will be 0.5 milli ampere which means here v01 how much will be this 1 volt minus 0.5 into 2
+[13:45] this is 0 okay this is 0 so here also you take out the current 2 minus 0 by 2 that is 1 milli
+[13:56] ampere so this branch current 1 milli ampere because here it goes 0 1 and 1 from here
+[14:06] 2 milli ampere so I will write v0 2 volt minus 2 milli ampere sorry plus 2 milli ampere into 2
+[14:17] so 6 volt this is coming 6 volt vce greater than 0.2 you can say but ammeter direct voltage
+[14:30] yes if you are watching in this question where did it go yes if you are saying that ammeter
+[14:38] direct voltage v i max is equal to 5 so vce is greater than 0.2 10 volt is coming vce the minimum
+[14:46] value of vce is 10 volt so you can say that it will always be greater than 0.2 which means it is an active region
+[14:54] this is clear okay now we cannot calculate v01 from non-inverting amplifier formula
+[15:09] you will not be able to do it because there is one more branch here of 1 kilo ohm this is simple
+[15:16] a non-inverting amplifier will not be able to be okay to be a non-inverting amplifier this 2 kilo ohm and
+[15:23] this 2 kilo ohm should have the same current but here the current is another branch is connected so you cannot
+[15:29] write directly let's see the next v positive and v negative this one is done according to me
+[15:38] we have already discussed differential amplifier is it not this one is already done let's see the next one
+[15:48] the value of v0 of the series regulator shown below is series regulator see this is 6 volt dc here
+[15:58] here also 6 volt will come here 0 ampere will come because of which 8 and 2 will come in the series
+[16:07] so v0 into 2 by 8 plus 2 equal to 6 so v0 equal to 30 volt 30 volt came so the answer will be c
+[16:21] I think everyone must have made it easily right next assuming base emitter voltage of 0.7 beta equal to 99
+[16:30] of transistor q1 output voltage why does it seem to me that what happened what happened this one
+[16:40] tell me what happened this one is it not I think I asked this one in a linear application right
+[16:57] see the next consider the following circuit and the input voltage to it if the opamp and the diodes are ideal
+[17:05] output voltage waveform is now here see we will have to do this question from the basics I know this is
+[17:13] a half wave rectifier but still we will have to see first you circuit these two diodes open
+[17:20] you say this voltage is vd1 and this is vd2 ok now if vs is positive
+[17:31] i.e. the voltage of the inverting terminal is more then v01 will come minus vsat
+[17:41] from which d1 will be on if d1 is on then you will have a negative that will become
+[17:51] the inverting amplifier of d1 will become minus vi into 10 by 2 so minus 5 vi
+[18:00] if vs is negative then d2 will be on so v01 will come plus vsat right plus vsat will come d2 will be on
+[18:12] so this voltage is a follower from which v01 will be zero and because of this v0 will also be zero
+[18:23] v01 will be zero because of which v0 will also be zero so positive cycle will come minus 5 vi
+[18:31] negative cycle will be zero so the answer will be a ok now this is clear now come on the next
+[18:40] assignment on the filters given circuit is a look at its filter nature is also asked and
+[18:47] the frequency is also asked ok let's go brother it's a very good thing if you are placed
+[18:57] so this is what I was telling you yesterday also consistency matters if you keep going
+[19:03] then one day your struggle period will be over but when you get out of this struggle period
+[19:09] then you will get out so strong that the world will greet you this is done come on
+[19:16] so you have to reach this level until you reach that level it is just like a meditation
+[19:24] that you have to shut out the outside noise just keep going keep going keep going and one day
+[19:30] you will see the results and then everyone will ask you brother suddenly how it happened
+[19:34] the world will not understand that behind it is the input of yours for many years everyone
+[19:39] thought suddenly this child was selected suddenly his job was done suddenly he was successful
+[19:45] and no one will count the nights in which you do not sleep you understand that night no one will
+[19:51] count the nights in which you do not sleep no one will see the depression through which you
+[19:55] go through those screams those cries those all the feelings as much as you had
+[20:01] negativity in you negative feeling no one will see that ok so keep in your process
+[20:07] child because if your process is right your day today effort is right then one day
+[20:12] one day it is necessary that you have to get the result just keep this process right
+[20:17] do not leave the process trust your path trust your educator and just keep going
+[20:25] come on come on very good thing Rohit now see the next one what is said in the next one
+[20:32] I think we have done this too as much as I remember this one has already happened
+[20:37] tell me once the output was zero on high frequency low frequency vs was coming low pass filter
+[20:46] correct this was the high frequency the capacitor was ground was short okay so I will tell you
+[20:59] see high frequency omega tending to infinity then the capacitor will be shorted okay so
+[21:13] the positive terminal voltage will be zero negative terminal also zero and this will be v0
+[21:20] also your zero okay v0 also zero if your low frequency is omega tending to zero then the
+[21:32] capacitor will be open now it is becoming the question of the filter tell me the architect
+[21:38] so here then the positive terminal voltage will be vs which will also be vs negative and v0
+[21:45] also vs that is gain is 1 so low frequency gain 1 is coming high frequency 0 is coming
+[21:53] this means it is a low pass filter now see this one what was your second order
+[22:01] is coming now v0 by vi if you want to remove it here or let's do it with low and high frequencies
+[22:07] now here low frequency capacitor will be open if the capacitor is open then vi disconnected
+[22:22] right input capacitor if it is open then vi will be disconnected so v0 will be zero which means
+[22:31] gain will come out to be zero high frequency capacitor short capacitor short
+[22:43] here the negative and positive terminal voltage will be zero from the virtual short and this capacitor
+[22:49] short v0 will also be zero again gain zero when it is high and low frequency gain zero
+[22:57] then it is a band pass filter high and low frequency if the gain zero comes means
+[23:04] there will be any frequency pass in the middle that is a band pass type of a filter
+[23:10] okay this one was an all pass filter so it is saying that there is an output voltage 1 output
+[23:19] voltage 2 how to do it so this is an all pass filter you know so if you want to do v0
+[23:27] if you want to do v2 then what will you have to do do the frequency double the frequency half
+[23:32] double the R the answer will be none of the above because if you want to do the output 2
+[23:39] okay if you want to do the output 2 then you have to take this ratio 2 R1 R1 the ratio
+[23:46] should come if this 2 comes then your output 2 can come okay this is just an all pass filter
+[23:54] what is the graph question that is not being made
+[24:05] okay so the answer will be D this is independent of the frequency
+[24:15] in the following circuit the 3 dB cutoff frequency I think here a wire is missing
+[24:22] now this is a non-inverting amplifier okay I call it RF this is R and C
+[24:32] so what will be the gain 1 plus RF upon Z Z is R parallel 1 by SC
+[24:48] okay so what is the gain 1 plus RF by R 1 plus SCR
+[25:05] so this is 1 plus RF by R plus SCRF now 1 plus RF by R is the gain of the non-inverting amplifier
+[25:21] so it was taken out as common then it was written 1 plus SCRF over 1 plus RF by R
+[25:32] so here a cutoff frequency 1 upon 2 pi S coefficient S coefficient what happened RF RC
+[25:48] if I take LCM over R plus RF now RF into R is 3 into 6 18 18 into 50 is 900
+[25:59] here if you put the value 900 kilo into nano is micro 900 micro upon RF plus R is 9 kilo
+[26:12] so 100 nano 10 power minus 7 10 power 7 by 2 pi so 10 upon 2 pi how much 1.59 megahertz is coming
+[26:25] tell me this is coming low pass or high pass okay now if you see this 1 plus SCR
+[26:36] then it will be a high pass filter and how can you understand it who asked this question
+[26:44] if you make it a board plot then you will see initially it will be flat then it will start flowing from 0 to 20 dB per decade
+[26:54] so it will act as a high pass filter okay this is clear it will act as a high pass filter
+[27:07] our low pass filter is to have a cutoff frequency 10 kilohertz gain at 20 kilohertz which is reduced by at least 25 dB
+[27:19] from its maximum value what is the maximum minimum number of poles required for a Butterworth filter
+[27:27] it is said that the cutoff frequency of low pass filter is 10 kilohertz 20 kilohertz gain is reduced by 25 dB
+[27:36] from the maximum gain how many minimum number of poles you are required
+[27:42] see what will happen here
+[27:44] you see the gain
+[27:47] what will you write the gain in the case of low pass filter
+[27:51] a max 1 plus f by fh
+[28:01] square
+[28:04] do n by 2 here n is the number of poles
+[28:10] for one pole the under root comes this much so for n poles the power of the factor is n
+[28:15] now this fh how much is this 10 kilohertz
+[28:22] so we say gain at 20 kilohertz how much
+[28:27] a max
+[28:36] 1 plus 2 square 20 by 10 it will be 2 5
+[28:42] to the power n by 2
+[28:48] and if this gain is taken in dB
+[28:52] then 20 log a max
+[29:00] minus 20 log 5 to the power n by 2
+[29:09] now here it says that the maximum gain is 25 dB less
+[29:15] so this means the gain is 20 log a max minus 25 dB
+[29:23] the difference should be 25 dB
+[29:27] so 25 is 20 by 2 sorry 20 into n by 2
+[29:35] log 5
+[29:40] so n is 2.5 sorry 2.5
+[29:44] now it will be 2.5
+[29:47] 2.5 by log 5
+[29:50] how much will it come tell
+[29:59] 3.57
+[30:03] so you should take 4
+[30:06] sir why can't you take 3
+[30:09] don't think like that because it is too close to 4
+[30:11] it has said that the reduction of gain is at least 25 dB
+[30:17] means this value can be more than 25
+[30:21] so the maximum value will be n
+[30:24] it says this value should be greater than 25 dB
+[30:29] so n has to take higher value which is 4
+[30:32] do you understand this is a good question to review
+[30:36] if the other students will see in the exam
+[30:39] there is very very high chance that they will leave this question
+[30:43] yes nature of filter and its gain at the cutoff frequency
+[30:48] now here brother he did not tell
+[30:51] let's assume some r1 r2
+[30:56] let's assume this ok
+[30:59] why do I feel that this is the filter of the salon
+[31:03] is it not just a voltage divider
+[31:06] there was a voltage fallover in the salon
+[31:09] no problem ok
+[31:12] now see these two are in the series
+[31:21] so this is v0
+[31:29] ok now we got this voltage
+[31:33] now if we talk about v here
+[31:36] these two are also in the series
+[31:39] so this v is negative and v is positive
+[31:42] let me call this as v a
+[31:45] so here is v a
+[31:47] so v a is
+[31:51] v into r
+[31:55] by r plus 1 by s c
+[31:58] v
+[32:01] s c r by
+[32:04] 1 plus s c r
+[32:10] so v equal to v a
+[32:13] 1 upon 1 plus 1 upon
+[32:16] s c r
+[32:18] this happened
+[32:20] ok once v came
+[32:22] how I told in the salon key
+[32:25] put a nodal like this
+[32:27] put a nodal like this
+[32:29] now the current going here
+[32:31] is the same v a by r
+[32:33] this current
+[32:35] this current is v a by r
+[32:37] so 1 is v minus v s
+[32:40] upon 1 by s c
+[32:43] 1 is v minus v0 by r
+[32:47] and 1 is v a by r
+[32:52] ok
+[32:58] s c plus 1 by r
+[33:01] v
+[33:04] ok
+[33:06] minus s c v s
+[33:09] minus v0 by r
+[33:13] plus v a by r
+[33:16] now put v in the terms of v a
+[33:19] put v in the terms of v a
+[33:23] s c r plus 1 by s c r
+[33:26] by r
+[33:28] and if you put v in the terms of v a
+[33:30] then what is s c r plus 1 by s c r
+[33:33] ok
+[33:48] I combined both the terms of v a
+[33:55] this happened
+[33:57] ok this is v
+[33:59] s c r plus 1 by s c r
+[34:04] ok
+[34:09] s c r square this is r
+[34:12] so s c r will come here
+[34:19] now v a is
+[34:21] if put in the terms of v0
+[34:23] then v a is v0 into r2 by r1 plus r2
+[34:34] or do one thing
+[34:36] according to me
+[34:38] this will also be rre
+[34:40] as far as I feel
+[34:46] otherwise it will become very complicated
+[34:51] so this will be v0 by 2
+[34:59] v0 by 2
+[35:01] minus v0 by r
+[35:04] ok this is what is going on
+[35:06] tell me is it ok till here
+[35:11] no my son just stay in the bus
+[35:13] now see here
+[35:15] if we combine the terms of v0
+[35:19] what is being made on top
+[35:21] square of s c r
+[35:23] ok
+[35:25] plus 3 s c r
+[35:28] plus 1
+[35:33] plus 1
+[35:37] by 2
+[35:39] s c r square
+[35:41] minus 2
+[35:43] s c r
+[35:46] v0
+[35:49] is s c v s
+[35:52] so v0 by v s what happened
+[35:58] 2 s c r square into s c
+[36:12] down s c r square
+[36:14] not s c r square
+[36:19] so this will become
+[36:22] upon
+[36:27] s c r square
+[36:32] this came
+[36:34] ok
+[36:35] this came
+[36:37] now here we can see
+[36:39] that the coefficient of s is s c r
+[36:42] ok
+[36:43] the coefficient of s is c r
+[36:46] so we can say that
+[36:48] the cutoff frequency of this
+[36:50] will be 1 by rc
+[36:52] cutoff frequency will be
+[36:54] 1 by rc
+[36:57] so if you bring this gain
+[36:59] into j omega
+[37:01] place j omega instead of s
+[37:03] minus 2
+[37:05] omega rc square
+[37:14] j square minus 1
+[37:19] plus j omega c r
+[37:22] so at
+[37:24] omega equal to 1 by rc
+[37:29] this omega rc will be 1
+[37:31] this omega rc will be 1
+[37:33] above minus 2
+[37:35] below minus 1
+[37:37] plus j
+[37:39] plus 1
+[37:41] so this became j2
+[37:43] how much the magnitude of gain came
+[37:45] j sorry 2
+[37:47] ok this came
+[37:49] clear
+[37:51] so solve with this type
+[37:53] this is the filter of the salad
+[37:57] the speed will not be
+[37:59] now but
+[38:01] till the end of this month
+[38:03] it can be your public
+[38:05] ok
+[38:06] so this is k by 3 minus k
+[38:08] for that
+[38:10] r and kr should be something like this
+[38:12] correct
+[38:13] so r and kr will be then
+[38:15] so as I have considered r as r
+[38:17] as r and kr
+[38:19] as r and kr can be
+[38:21] something like this
+[38:23] check it once
+[38:25] it is clear how it will be
+[38:27] it is clear to everyone
+[38:29] tell me
+[38:31] ok
+[38:35] now see here
+[38:37] sketch the magnitude
+[38:39] bode plot
+[38:41] make its bode plot
+[38:43] so first we have to take out its transfer function
+[38:45] so
+[38:47] gain equal to
+[38:49] 1 plus zf by z
+[38:51] what is inside the feedback
+[38:53] bro
+[38:55] in the feedback
+[38:57] r and c are parallel
+[39:01] so what will be
+[39:03] r2 by
+[39:05] 1 plus
+[39:07] scr2
+[39:09] so what will be the gain
+[39:11] 1 plus
+[39:13] r2 by
+[39:15] r
+[39:17] 1
+[39:19] 1 plus
+[39:21] scr2
+[39:25] now bro 1 plus r2 by r1
+[39:27] will have to be separated
+[39:29] so take lcm
+[39:31] r1 plus
+[39:33] r2 plus scr1
+[39:35] r2
+[39:37] by
+[39:39] r1
+[39:41] plus scr1
+[39:43] r2
+[39:45] now take r1 plus r2
+[39:47] common and r1
+[39:53] ok
+[39:55] what will be left here
+[39:57] 1 plus scr1
+[39:59] parallel r2 will be left
+[40:01] because r1 by r1
+[40:03] plus r2 will be left
+[40:05] and what will be left below
+[40:07] this will be left
+[40:09] so here
+[40:11] you got a pole and a zero
+[40:13] bro
+[40:15] you got a pole and a zero
+[40:19] so where is the pole
+[40:23] minus 1 by r2c
+[40:25] where will this be
+[40:27] 1 by r2c
+[40:29] 18 into 10 180
+[40:31] micro
+[40:37] so this will be 1 kilo
+[40:39] omega
+[40:45] 5.55
+[40:49] kilo
+[40:51] and where will we get
+[40:53] zero
+[40:55] minus 1 by
+[40:57] r1 parallel r2c
+[41:01] ok
+[41:03] now r1 parallel r2
+[41:05] i.e. 18 parallel r2
+[41:07] how much will it be
+[41:09] 1.8
+[41:11] 1.8 into 10
+[41:13] 18
+[41:15] this will be minus 55.5
+[41:17] kilo
+[41:21] i.e. first your pole is coming
+[41:23] then your zero is coming
+[41:25] first pole is coming
+[41:27] then your zero is coming
+[41:35] ok bro
+[41:39] now how much is the low frequency gain
+[41:41] where
+[41:43] s is standing to zero
+[41:49] that is 1
+[41:51] plus
+[41:53] r2 by r1
+[41:55] 18 by 3 6 7
+[41:57] so this graph
+[41:59] will start from 20 log 7
+[42:01] ok
+[42:03] it will start from here
+[42:09] because we get db
+[42:11] now what will be the first
+[42:13] the first constant
+[42:15] will go on
+[42:17] then as soon as it gets the pole
+[42:19] as soon as it gets the pole
+[42:21] from here
+[42:23] its slope will be
+[42:25] minus 20 db
+[42:27] per decade
+[42:29] ok
+[42:31] then as soon as it gets
+[42:33] zero
+[42:35] 20 log 7
+[42:37] how much
+[42:41] 16.9
+[42:51] as soon as it gets zero
+[42:53] from here
+[42:55] its slope will be
+[42:57] 0 db per decade
+[43:01] so how do you know
+[43:03] it will go in negative
+[43:09] see
+[43:11] its slope
+[43:13] how much is it
+[43:15] minus 20 db per decade
+[43:19] ok and how much is this
+[43:21] this is 5.55 kilo
+[43:23] and this is
+[43:25] 55.5 kilo
+[43:27] that is 10 times
+[43:29] the second
+[43:31] frequency is 10 times
+[43:33] 10 times means
+[43:35] 1 decade
+[43:37] how much is it
+[43:39] 1 decade
+[43:41] 10 times means
+[43:43] 1 decade
+[43:45] if 1 decade is changing
+[43:47] then how much value should be changing
+[43:49] 20 db
+[43:51] should be changing
+[43:53] so if this 16.9
+[43:55] means 17 db
+[43:57] then 20 db
+[43:59] means approximately
+[44:01] minus 3 db
+[44:03] understood
+[44:05] these two frequencies
+[44:07] there is a ratio of 10
+[44:09] that is 1 decade
+[44:11] and slope is saying
+[44:13] in 1 decade
+[44:15] minus 20 db
+[44:17] means 20 db
+[44:19] so if 20 db is changing
+[44:21] then minus 3 db
+[44:23] will reach
+[44:25] and what will you call it
+[44:27] low pass filter
+[44:29] you can call it
+[44:31] LPF
+[44:33] correct
+[44:35] let's go
+[44:37] find the component of R2C1C2
+[44:39] if the low frequency gain
+[44:41] is 40 db
+[44:43] high frequency gain 0 db
+[44:45] geometric mean of pole and 0
+[44:47] frequency is 1 kHz
+[44:49] again we have to remove the transfer function
+[44:51] now here
+[44:53] ZF is
+[44:55] R2
+[44:57] parallel 1 by
+[44:59] SC2
+[45:01] means R2 by
+[45:03] 1 plus
+[45:05] SC
+[45:07] C2 R2
+[45:09] Z1
+[45:11] R1 parallel
+[45:13] 1 by
+[45:15] SC1
+[45:19] 1 plus
+[45:21] SC1 R1
+[45:23] so the gain is an
+[45:25] inverting amplifier
+[45:27] that is minus
+[45:29] ZF by Z1
+[45:31] so minus
+[45:33] R2 by R1
+[45:37] 1 plus
+[45:39] SC1 R1
+[45:41] by
+[45:43] SC2 R2
+[45:45] now see the low frequency gain
+[45:47] means
+[45:49] where S is tending to 0
+[45:51] so
+[45:53] how much the gain will come
+[45:55] if you talk
+[45:57] magnitude wise
+[45:59] R2 by R1
+[46:01] so 20 log R2 by R1
+[46:03] let me write the mod
+[46:05] 20 log R2 by R1
+[46:07] is 40
+[46:09] which means
+[46:11] R2 is 100 R1
+[46:13] so this is the one relation
+[46:15] we got
+[46:17] what is the other one
+[46:19] R2 is 100 R1
+[46:21] that is 159.1 kOhm
+[46:27] now
+[46:29] gain on high frequency is 0 dB
+[46:31] means high frequency
+[46:33] where you ignore 1
+[46:35] roung
+[46:39] where you ignore 1
+[46:41] equals to
+[46:43] S
+[46:51] SC1 R1
+[46:53] by SC2 R2
+[46:57] that means C1 by C2
+[46:59] So, 20 log mod of gain is called 0 dB which means C1 equal to C2, this is one relation
+[47:15] and it is said that the frequencies of 0 and pole are 1 kHz, 1 by 2 pi, 1 by 2 pi,
+[47:28] R1 C1, 1 by 2 pi, R2 C2 is 10 to the power 3.
+[47:42] So, square it.
+[47:55] So, R1 was 1.59, 1, R2 came 100 times.
+[48:05] C2, then C will come from here.
+[48:10] C1 and C2 are both C.
+[48:14] So, 10 to the power minus 6 divided by 1.591 divided by 159.1 divided by 10 to the power 6 by 4 pi
+[48:31] square is 10 nano farad.
+[48:39] C1 and C2 are equal, so 10 nano farad came.
+[48:43] Find V0 T, this one should be T according to me.
+[48:51] Basically, what is he doing? He is taking out the inputs of different frequencies.
+[48:56] If I was not continuing, would I have been working so hard?
+[49:02] The rest of the teachers would have stopped teaching 6-7 months ago.
+[49:05] I was not working so hard to complete a commitment.
+[49:09] Now, see what we will do here.
+[49:12] The input impedance here is R plus 1 by SC.
+[49:19] Okay, 1 plus SCR by SC will come.
+[49:31] What will be ZF? R parallel 1 by SC, R by 1 plus SCR.
+[49:41] Now, what will be the gain here?
+[49:47] Now, what will be the gain here?
+[50:08] This is the gain.
+[50:11] If you convert this to J omega,
+[50:27] then how much will be the magnitude of the gain?
+[50:31] Look, omega CR, okay?
+[50:37] Up on 1 plus omega CR square.
+[50:44] And what will be the angle?
+[50:47] The minus 90 above, minus 210 inverse, omega CR.
+[50:55] Okay?
+[50:57] This will come, right?
+[50:59] Tell me, is this clear?
+[51:01] Now, at different frequencies, take out the magnitude and the angle.
+[51:09] At different frequencies, take out the magnitude and the angle.
+[51:15] Because you know, even in the control system, you say how the output comes out.
+[51:20] The magnitude of the gain is multiplied.
+[51:24] And the angle of the gain is given as the phase shift.
+[51:31] Omega, mod of gain and angle of gain.
+[51:43] Okay?
+[51:45] Omega is first RC, 2 RC, 0.5 RC.
+[51:49] Sorry, 1 by RC actually, below T, right?
+[51:54] So, 1 by RC, 1 by 2 RC and 1 by 0.5 RC.
+[52:03] So, look, if you put 1 by RC instead of omega,
+[52:08] then this will become 1 and this too will become 1.
+[52:11] So, the gain is 0.5.
+[52:14] Okay?
+[52:15] The change of the angle is 1.
+[52:17] Minus 90, minus 90 is minus 180.
+[52:21] So, look at the output from this reason.
+[52:24] 0.5 cos T by RC.
+[52:30] Did you understand?
+[52:32] Tell me, is this clear?
+[52:36] What are you saying?
+[52:39] 2 omega CR in the denominator.
+[52:43] Where is 2 omega CR coming?
+[52:46] What are you trying to say?
+[52:51] I am saying that 1 plus j omega CR term is coming twice.
+[52:55] So, whatever the gain is, under root A square plus B square,
+[52:58] it will become a square.
+[53:00] So, A square plus B square will be left.
+[53:02] Why should I expand this?
+[53:04] What is my benefit from that?
+[53:06] Do you understand?
+[53:08] There is no benefit from that by expanding this.
+[53:11] Okay?
+[53:12] Next is 2 RC.
+[53:14] You will put 2 RC, 1 by 2 RC.
+[53:17] So, this will be 0.5 or 1.25.
+[53:21] I think it will be 0.4.
+[53:24] 0.4.
+[53:27] Tan inverse 0.5 is 63.43.
+[53:32] So, 27.56.
+[53:35] Let us see.
+[53:36] Minus 90 minus 2 into tan inverse 0.5.
+[53:41] So, 143.13.
+[53:49] Okay?
+[53:55] 26.56 is correct.
+[53:58] So, this will be 0.4 cos T by 2 RC minus 143.13.
+[54:10] Okay?
+[54:11] Now, 1 by 0.5 RC or say 2 by RC?
+[54:15] Say 2 by RC.
+[54:17] If you do 2 by RC, then it will come up.
+[54:19] It will come down to 5.
+[54:20] It will come up to 5, meaning 0.4.
+[54:23] Okay?
+[54:25] And the gain will be 63.13.
+[54:29] So, minus 90 minus 2 into 63.13.
+[54:37] No, 63.43.
+[54:41] 216.80.
+[54:47] Okay?
+[54:50] Now, everything is shining.
+[54:51] How do we do this type of question?
+[54:53] You can get the gain at different frequencies.
+[54:58] Its magnitude and its angle.
+[55:02] Magnitude is multiplied in the input.
+[55:04] Angle is added.
+[55:06] Okay?
+[55:07] Let's go.
+[55:08] Very good.
+[55:09] Recognize the type of filter, find, omega naught and Q.
+[55:14] Now, see here is 0 volt.
+[55:21] Here is voltage V naught.
+[55:26] Now, how do we get this from VX?
+[55:30] Here is 0 ampere.
+[55:34] So, these two are in series.
+[55:36] Take it out like this.
+[55:38] V naught equal to VX into R.
+[55:42] Voltage division is in series.
+[55:46] One second.
+[55:48] Its voltage is minus V naught.
+[55:53] Wait, wait.
+[55:55] It won't be right to direct like this.
+[55:59] Current will come here.
+[56:04] VX upon 1 by SC.
+[56:11] This current will go up because nothing will go here.
+[56:17] What happened is SC VX.
+[56:22] Okay?
+[56:23] And 0 minus V naught by R.
+[56:26] The same current is going.
+[56:32] So, V naught is minus SCR VX.
+[56:38] Okay?
+[56:39] So, VX is minus V naught by SCR.
+[56:44] Now, what will you do?
+[56:46] Will you put a nodal on VX node?
+[56:50] VX minus VIN by R.
+[56:54] Okay?
+[56:55] Then, SC VX current is going here.
+[56:59] This will go up.
+[57:01] VX minus V naught upon 1 by SC.
+[57:07] There are three currents on VX node.
+[57:12] So, if we connect the coefficient of VX, then 2 SC plus 1 by R minus SC V naught is VIN by R.
+[57:28] If we write VX as minus V naught by SCR.
+[57:40] 2 SCR plus 1 by R minus SC V naught.
+[57:57] You can collect the terms of V naught.
+[58:02] Take minus V naught.
+[58:05] 1 plus 2 SCR.
+[58:08] Okay?
+[58:10] There is a square of SCR below.
+[58:13] There is a whole square of SCR above.
+[58:19] There is a square of SCR below in its LCM.
+[58:24] Now, see, it will be cut off from 1 R of VIN.
+[58:30] So, V naught by VIN.
+[58:32] What happened?
+[58:33] A very simple gain came.
+[58:35] Minus SCR upon SCR square plus 2 SCR plus 1.
+[58:49] Now, divide it by SCR.
+[58:51] If you divide it by SCR square, then S by SCR S square plus 2 SCR S by SCR plus 1 by SCR square.
+[59:07] So, at omega tending to zero or at S tending to zero, the gain will come zero because the numerator is zero.
+[59:16] At S tending to infinity, your gain will come back to zero again.
+[59:22] Because S is the square below, which means it is becoming band pass filter.
+[59:28] This is the result of all this.
+[59:29] Tell me, what was the band pass filter?
+[59:32] The gain is coming back to zero on both the lower high frequencies.
+[59:37] Right? So band pass filter.
+[59:39] Now what I told you about the Omega naught,
+[59:42] This last term is root of 1 by RC.
+[59:48] And this term is 2 by CR.
+[59:51] This is Omega naught by quality factor.
+[59:55] So quality factor is Omega naught CR by 2.
+[59:59] Omega naught is 1 by RC itself.
+[60:02] So half.
+[60:05] Okay, this is the quality factor.
+[60:07] I told you, from the denominator in the lecture yesterday.
+[60:11] Let's find the value of R if the unity gain frequency is 100 Hz.
+[60:16] What does this mean?
+[60:17] Your gain should be 1 on 100 Hz.
+[60:21] Okay?
+[60:22] Now how to calculate this?
+[60:26] Look, what can we do about this?
+[60:30] There is zero ampere here.
+[60:33] So these two came in series.
+[60:38] So the voltage here has become V naught by 2.
+[60:44] So this node is also V naught by 2.
+[60:46] Now you put the nodal.
+[60:48] Here zero ampere will go.
+[60:49] We have to add the current of three branches.
+[60:53] V naught by 2 minus V in divided by 1 upon SC.
+[61:01] The question is good for this assignment.
+[61:04] V naught by 2R.
+[61:08] Okay?
+[61:09] Or V naught by 2 minus V naught upon 1 by SC is zero.
+[61:18] Okay?
+[61:20] Now if you collect the terms of V naught here.
+[61:26] SC by 2.
+[61:28] 1 by 2R.
+[61:31] Minus SC by 2.
+[61:40] Is equal to V in.
+[61:42] Sorry, SC V in.
+[61:48] Now SC by 2, SC by 2 is cut.
+[61:52] 2 SCR.
+[61:54] So what is the magnitude of gain?
+[61:59] 2 omega CR.
+[62:01] You have been told that the gain should be 1.
+[62:04] That is, how much R should be?
+[62:08] 1 by 2 into.
+[62:10] The unit gain frequency is from 100 hertz.
+[62:13] 2 pi into 100.
+[62:16] C is 10 nanofarad.
+[62:18] 10 power minus 8.
+[62:20] So 10 power 6 by 4 pi.
+[62:24] 79.57 kilo ohm.
+[62:30] Is this what is coming?
+[62:32] Tell me this.
+[62:34] Is this what is coming?
+[62:36] Very good.
+[62:37] 1 by 3 is coming.
+[62:39] What is 1 by 3?
+[62:44] Yes.
+[62:45] Given a wide band, band pass filter.
+[62:48] If omega L is much much less than omega H.
+[62:51] The upper 3 dB cut-off frequency.
+[62:55] This is a band pass filter.
+[62:57] This is a band pass filter.
+[62:59] So how much is the gain?
+[63:04] Minus R2 by R1.
+[63:08] Okay, this was R2 parallel 1 by SC2.
+[63:11] So R2 by 1 plus SC2 R2.
+[63:22] And this was R1 by.
+[63:25] R1 plus 1 by SC1.
+[63:28] So SC1 R1.
+[63:31] 1 plus SC1 R1.
+[63:39] And SC1 was left below.
+[63:44] One second, R2 by this.
+[63:46] R1 plus 1 by SC1 SC1 R1 plus 1.
+[63:49] And SC will come up.
+[63:54] SC1.
+[64:04] SC1 R1 by SC1.
+[64:08] Okay.
+[64:09] So here, one more term will be made.
+[64:12] SC1.
+[64:13] Sorry.
+[64:14] Below, SC1 R1.
+[64:19] So here, 1 by SC2 R2 is representing the low pass filter.
+[64:25] So omega H will be 1 by R2 C2.
+[64:31] And this remaining term is representing the high pass filter.
+[64:35] 159 is coming in 5.
+[64:39] What 159 is coming?
+[64:44] Okay, this one.
+[64:46] 79.57 is not coming.
+[64:49] How is 159 coming?
+[64:54] Is anyone else getting 159?
+[65:00] Tell me.
+[65:08] Okay, let's move ahead.
+[65:10] Now look at this.
+[65:12] This is also a similar type of question.
+[65:14] This is also a similar type of question.
+[65:16] There will be zero ampere here.
+[65:19] Capacity for a unity gain frequency is given.
+[65:22] So voltage will be equally divided here.
+[65:25] V0 by 2.
+[65:27] So this is also V0 by 2.
+[65:29] Here also zero ampere.
+[65:32] Now if we put a nodal.
+[65:38] V0 by 2 minus V in by R.
+[65:42] V0 by 2 minus V0
+[65:48] upon R
+[65:50] plus V0 by 2
+[65:53] upon 1 by SC.
+[66:01] So check your calculation.
+[66:04] Now collect the coefficient of V0 by 2.
+[66:08] 1 by R.
+[66:11] Minus 1 by R.
+[66:14] Plus SC.
+[66:20] So V0 by V in.
+[66:26] This is 2 by SCR.
+[66:32] So the magnitude of the gain is 2 by omega CR.
+[66:36] Which should be 1.
+[66:39] Now what is the question here?
+[66:41] Tell me C.
+[66:43] So what will be C?
+[66:45] If you write 2 by omega R.
+[66:49] Unity gain is given.
+[66:51] That is why I have taken gain 1.
+[66:56] 2 was not a gain.
+[66:58] What do you want to say?
+[67:00] Unity gain frequency was given.
+[67:03] Unity gain.
+[67:05] You will have to take 1 in 2 SCR.
+[67:08] This is the question from this analog.
+[67:10] 2 by SCR is coming here.
+[67:12] Unity gain frequency means
+[67:14] the frequency where gain 1 is.
+[67:16] Now keep that frequency here.
+[67:18] 1 kHz.
+[67:22] And R is given.
+[67:24] 31.8 kOhm.
+[67:28] So.
+[67:38] This is coming.
+[67:40] 10 nano Farad.
+[67:46] Is it clear, Bablu?
+[67:48] That is also the same question.
+[67:52] Come on.
+[67:54] The circuit shown as a capacitance multiplier.
+[67:56] Find the C equivalent.
+[67:58] That is how much C is visible from the input terminal.
+[68:02] So see how we will do.
+[68:04] V in.
+[68:06] And call it I in.
+[68:10] So here is V in.
+[68:12] So here will also be V in.
+[68:14] So here will also be V in.
+[68:16] So here.
+[68:20] Minus R2 by R1 into V in.
+[68:24] Which is here.
+[68:26] Now the current.
+[68:28] I in.
+[68:30] Where will that current go?
+[68:32] Where will it go?
+[68:34] How can you write V in?
+[68:38] V in.
+[68:40] Minus.
+[68:42] Minus V in R2 by R1.
+[68:46] Upon 1 by SC.
+[68:52] So this is V in.
+[68:54] SC.
+[68:56] 1 plus R2 by R1.
+[68:58] So from here you can see that C is equivalent.
+[69:02] Because a factor has been multiplied in C.
+[69:04] So what happened with this?
+[69:06] You realized a big capacitance with a small capacitance.
+[69:10] R2 and R1 are 9 and 1.
+[69:12] And this is 1 micro farad.
+[69:16] So this factor of 10 has come.
+[69:18] 10 micro farad.
+[69:20] Chamka.
+[69:22] 10 micro farad.
+[69:24] Okay.
+[69:26] Come on.
+[69:28] It is clear.
+[69:30] This one is DPP.
+[69:32] These are the filters of 2 DPP.
+[69:34] You can revise the filters at any time.
+[69:36] If you apply these 2 DPP.
+[69:38] You can revise the whole filter in a great way.
+[69:42] Tarun.
+[69:44] If the machine is not done.
+[69:46] I will say at least 2 chapters of the machine.
+[69:48] Transformer DC.
+[69:54] No need to do it well.
+[69:56] Jyotishman needs to do the basics.
+[69:58] The whole iteration of the Gauss Seedle is not done.
+[70:00] And by the way, the Gauss Seedle is a very small topic.
+[70:02] You can do it.
+[70:06] Come on.
+[70:08] Now you can see that you have completed the majority of the syllabus.
+[70:12] Just feedback amplifier oscillator is left.
+[70:14] All the rest of the syllabus.
+[70:16] You can complete the PYQ.
+[70:18] You can go here and get PYQ by AIR1.
+[70:22] And if you join Unacademy.
+[70:24] You have 2 choices.
+[70:26] Plus and Iconic.
+[70:28] You are getting the top teachers in both the months.
+[70:30] The entire study material is on the app.
+[70:32] It is a test series.
+[70:34] But if the children of Iconic get doubt in the new question.
+[70:36] Custom doubts will be solved.
+[70:38] Printed notes are being sent home.
+[70:40] There are 1 to 1 guidance.
+[70:42] Strategy and study plan.
+[70:44] And interactive open house session.
+[70:46] Where you can interact with the teachers.
+[70:48] And here you have to go to Unacademy.
+[70:50] You have to decide the plan.
+[70:52] You have to decide the duration.
+[70:54] You have to decide the duration.
+[70:56] And you have to apply the code.
+[70:58] Ankit ESE.
+[71:00] And if you are preparing for 24.
+[71:02] You can take a subscription of 15 months.
+[71:04] In which gate 24 will be covered.
+[71:06] Because we have started the batches of 2024.
+[71:08] And new batches are coming.
+[71:10] So if you start soon.
+[71:12] Then you will be one step ahead of the competition.
+[71:14] These children who have always been one step ahead of the competition.
+[71:16] They gave themselves in preparation.
+[71:18] And last year.
+[71:20] They gave themselves in preparation.
+[71:22] They gave themselves in preparation.
+[71:24] And in the last year.
+[71:26] There are 6 anchors in the top 10.
+[71:28] This time the target is to take out 10 out of the top 10.
+[71:30] You can also be one of them.
+[71:32] If you become a part of Unacademy.
+[71:34] If it is a financial issue.
+[71:36] Then you go for EMI.
+[71:38] Where you will not have to give any interest.
+[71:40] Only EMI will be approved in 2 hours.
+[71:42] Only Aadhar card.
+[71:44] You have to use a pan card.
+[71:46] And you can repay the EMI in a flexible amount of time.
+[71:48] And this batch of 24.
+[71:50] In which Dhande sir is taking your analog.
+[71:52] Gurupal sir is taking your maths.
+[71:54] So this batch of 24.
+[71:56] Has started.
+[71:58] And for the children of 23.
+[72:00] The crash course is less rank improvement batch.
+[72:02] It has started from Monday.
+[72:04] In which Pallav sir and Shankar sir have started.
+[72:06] For Electrical.
+[72:08] And for the children of the same.
+[72:10] We have also started ADC.
+[72:12] So you guys revise with us.
+[72:14] This is the crash course.
+[72:16] This is the rank improvement batch.
+[72:18] From 15 to 20.
+[72:20] And what can you do for this.
+[72:22] You can purchase subscription for 3 or 4 months.
+[72:24] You know the code.
+[72:26] Ankit ESE
+[72:28] Very simple.
+[72:30] Okay.
+[72:32] And this is my telegram channel.
+[72:34] Stay connected to this telegram channel.
+[72:36] So that all the notifications come to you.
+[72:38] There is no such thing that will miss you.
+[72:40] And if you want the PDF of this session.
+[72:44] Then you will join the community quickly.
+[72:46] You will join on the academy app homepage.
+[72:48] Go to the community.
+[72:50] Go to discover.
+[72:52] You will get all my PDFs.
+[72:54] And you can download all the study material.
+[72:56] So thank you everyone.
+[72:58] Thanks a lot.
+[73:00] And now we will meet tomorrow.
+[73:02] Tomorrow we will start a new topic.
+[73:04] Feedback amplifier.
+[73:06] I have not yet got feedback amplifier.
+[73:08] I could have done it earlier.
+[73:10] Because now I will show the question in feedback amplifier.
+[73:12] They will be based on BJT.
+[73:14] They will be based on MOSFET.
+[73:16] They will be based on OPAM.
+[73:18] Rohit has only positive feedback of OPAM.
+[73:20] Which we will do in the oscillator.
+[73:22] We will do in the oscillator topic.
+[73:24] That will be the last topic.
+[73:26] So from tomorrow the feedback amplifier will be.
+[73:28] Tomorrow and tomorrow.
+[73:30] Then from Saturday the oscillator will start.
+[73:32] Saturday and Monday we will do the oscillator.
+[73:34] We will discuss Tuesday assignment and end it.
+[73:36] Tarun, the test series is available on the academy.
+[73:38] By the name Unacademy Light.
+[73:40] You can purchase it on the app.
+[73:42] There are many tests for you.
+[73:44] And very soon there will be a mock test.
+[73:46] So you can give the mock test to all the people.
+[73:48] Live.
+[73:50] And the subject test is already done.
+[73:52] So you can attempt the test.
+[73:54] Okay. So we will meet tomorrow.
+[73:56] Don't forget to come at 11.30.
+[73:58] And improve the attendance.
+[74:00] It will not work like this.
+[74:02] Otherwise I will never public the video.
+[74:04] I will leave the video private.
+[74:06] Till the gate. So improve the attendance.
+[74:08] You are taking it very lightly.
+[74:10] These last topic are very important topics.
+[74:12] Don't take them lightly.
+[74:14] Okay. Thank you everyone.

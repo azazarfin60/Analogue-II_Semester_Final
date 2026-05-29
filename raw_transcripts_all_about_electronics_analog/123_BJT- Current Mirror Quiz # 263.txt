@@ -1,0 +1,50 @@
+Title: BJT- Current Mirror | Quiz # 263
+URL: https://www.youtube.com/watch?v=hmx-dkyG1Uk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given this current miner circuit and here we have been
+[00:22] asked to find the number of transistors or the value of the N in such a way that the
+[00:27] error in the output is less than 10%.
+[00:31] So as you are aware, this current miner circuit is used to generate several copies of this
+[00:36] reference current.
+[00:38] Now if we neglect the effect of the beta or if we assume that the beta is very large,
+[00:44] then this I1, I2 and In will be equal to I reference.
+[00:51] But if you also include the effect of beta, then this output current will be less than
+[00:56] the I reference.
+[00:58] Because if you see over here, this reference current gets divided into the 3 branches.
+[01:03] This current is equal to the collector current, while these 2 currents will be the base currents.
+[01:09] So this current will be equal to Ic divided by beta and here this is the base current
+[01:15] for the N transistors.
+[01:17] That means this current is equal to N times Ic divided by beta.
+[01:22] So from this we can say that this current I reference is equal to Ic plus N plus 1 times
+[01:30] Ic divided by beta or from this we can say that this Ic is equal to I reference divided
+[01:39] by 1 plus N plus 1 divided by beta.
+[01:44] So this will be the collector current of each transistor or in other words we can say
+[01:49] that it is equal to the output current that is the In.
+[01:53] So as you can see, as the value of N increases, then the error in this output current will
+[01:58] increase.
+[01:59] So here we need to find the value of N in such a way that the error in the output current
+[02:04] is less than 10%.
+[02:07] That means this current In should be greater than I reference minus 10% of I reference.
+[02:16] That means the error in the output current should be less than 10%.
+[02:20] Or in other words we can say that this In should be greater than 0.9 times I reference.
+[02:28] So from this we can say that I reference divided by 1 plus N plus 1 divided by beta that
+[02:36] is the value of In should be greater than 0.9 times I reference.
+[02:43] And here we have been given that the value of the beta is 100.
+[02:47] So from this we can say that 1 divided by 1 plus N plus 1 divided by 100 should be greater
+[02:54] than 0.9.
+[02:57] Or in other words we can say that this 1 plus N plus 1 divided by 100 should be less than
+[03:04] 1 divided by 0.9 that is equal to 1.111.
+[03:10] That means we can say that this N plus 1 divided by 100 should be less than 0.111.
+[03:18] That means N plus 1 should be less than 11.1.
+[03:24] Or we can say that the value of the N should be less than 10.1.
+[03:29] That means if the value of N is equal to 10, in that case the error in the output current
+[03:35] will be less than the 10%.
+[03:37] And to see that let us put the value of N in earlier expression.
+[03:42] That means In is equal to I reference divided by 1 plus N plus 1 divided by beta.
+[03:51] So in this expression if we put the value of N as 10, then the value of this current
+[03:56] In will come out as 0.9.009 times I reference.
+[04:03] Which indicates that here the error is less than 10%.
+[04:07] So from this we can say that the maximum value of the N is equal to 10.
+[04:13] That means for the given question the value of the N will be equal to 10.

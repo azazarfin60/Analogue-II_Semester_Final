@@ -1,0 +1,236 @@
+Title: Solved Problems on the Zener Diode
+URL: https://www.youtube.com/watch?v=kYtebfx-yHc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous video, we have seen that what is Zener diode and how it can be used
+[00:21] as a voltage regulator.
+[00:23] And we have also seen the few examples based on this Zener regulator circuit.
+[00:28] But in those examples, during the analysis, we have assumed that the Zener diode is ideal,
+[00:34] meaning that in the breakdown region of operation, the Zener resistance is 0.
+[00:40] And we have also assumed that the Zener knee current of this Zener diode is negligible,
+[00:45] meaning that to turn on this Zener diode in the breakdown region, the required current
+[00:50] is almost negligible.
+[00:53] But actually, this Zener diode requires some finite amount of current.
+[00:57] In other words, we can say that this Zener knee current is non-zero.
+[01:02] And during the breakdown region of operation, this Zener diode also has some finite Zener
+[01:07] resistance.
+[01:08] So, considering this non-ideal Zener diode, let us solve some problems based on this
+[01:13] Zener regulator circuit.
+[01:15] So, in the first example, we have been given this Zener regulator circuit.
+[01:20] And in this circuit, the knee current of this Zener diode is 10 milliampere.
+[01:26] And we have been asked to find the minimum value of this load, such that the 5 volt of
+[01:30] voltage is maintained across this load resistor.
+[01:35] And apart from that, we have been also asked to find the minimum power rating of this Zener
+[01:39] diode.
+[01:40] So, for the given regulator circuit, first of all, let us write down all the currents.
+[01:46] So, let us say IS is the current, which is supplied by this voltage source.
+[01:52] And IZ and the IL are the currents, which are flowing through the Zener diode and the
+[01:56] load resistor respectively.
+[01:58] So, from this, we can say that the IS is equal to IZ plus IL.
+[02:05] Now, for the given regulator circuit, as this voltage source and this series resistor
+[02:11] are fixed, so this current IS will remain fixed.
+[02:15] And in this circuit, as we reduce the value of RL, then the load current IL will increase.
+[02:21] But at the same time, the current which is flowing through the Zener diode will reduce.
+[02:27] But to operate this Zener diode as a voltage regulator, the minimum current which should
+[02:31] flow through the Zener diode should be at least equal to 10 milliampere.
+[02:35] So, from this, we can say that for the fixed value of IS, the maximum value of the load
+[02:41] current should be such that the current which is flowing through the Zener diode is at least
+[02:46] equal to Zener knee current.
+[02:49] And from the maximum value of this load current, we will find the minimum value of this load
+[02:54] resistor.
+[02:55] So, first of all, let us find out the value of this source current.
+[03:00] So, this source current IS can be given as VS minus VZ divided by R. And here, it can
+[03:09] be written as 10 minus 5 volt divided by 100 ohm, which is equal to 50 milliampere.
+[03:19] Now, here, we have been given that the value of IZK is equal to 10 milliampere.
+[03:25] So, from this, we can say that the maximum value of the load current is equal to IS minus
+[03:33] IZK.
+[03:35] That means, 50 minus 10 milliampere.
+[03:38] So, the maximum value of the load current is equal to 40 milliampere.
+[03:45] And from this, we can say that the minimum value of the load resistor will be equal to
+[03:50] VZ divided by IL max.
+[03:54] That means, 5 volt divided by 40 milliampere.
+[03:59] So, the minimum value of the load resistor will be equal to 125 ohm.
+[04:07] So, for this circuit, to work properly as a voltage regulator, the value of the load
+[04:12] resistor should be more than 125 ohm.
+[04:15] Now, apart from that, we have been also asked to find the minimum power rating of this
+[04:20] Zener diode.
+[04:21] Now, we know that the power rating of the Zener diode or the power of this Zener diode
+[04:27] can be given as VS times IZ, where VS is the voltage across this Zener diode and IZ
+[04:34] is the current, which is flowing through this Zener diode.
+[04:38] Now, for any regulator circuit, the power rating of the Zener diode should be such that,
+[04:43] it should be able to handle the worst case scenario.
+[04:46] Now, in the given circuit, as we increase the value of RL, then the load current IL will
+[04:52] reduce and at the same time, the Zener current will increase.
+[04:56] Now, in the worst case, let's say this RL is equal to infinite or in the no load condition,
+[05:02] the entire current IZ will flow through this Zener diode.
+[05:06] So, in the worst case or in a no load condition, we can say that this IS is equal to IZ.
+[05:15] And here, we have already found the value of IS, which is equal to 50 milliampere.
+[05:20] So, we can say that in the worst case condition, the power which is getting dissipated across
+[05:26] this Zener diode is equal to 5 volt times 50 milliampere.
+[05:32] That is equal to 250 milli watt.
+[05:35] So, the minimum power rating of the Zener diode should be equal to 250 milli watt.
+[05:41] So, for the given example, the minimum value of the load resistor should be 125 ohm and
+[05:47] the minimum power rating of the Zener diode should be equal to 250 milli watt.
+[05:51] Alright, so now let's move to the next example.
+[05:56] So, in this example, we have been given this Zener diode circuit and in this circuit, the
+[06:01] Zener voltage is equal to 7 volt and the necurrent of this Zener diode is almost negligible.
+[06:09] But here, we have been given that the Zener resistance of this Zener diode is equal to tan
+[06:13] ohm.
+[06:14] So, this circuit is operated in the input voltage range from tan volt to 16 volt.
+[06:21] And here, we have been asked to find the output voltage range.
+[06:25] And here, we have been also given the four options.
+[06:28] So, let us find out which option is correct.
+[06:31] So, if you observe this circuit, in this circuit, the Zener diode is operated in the no load
+[06:37] condition.
+[06:38] And in the no load condition, when the input voltage is more than vz, then the Zener
+[06:44] diode will work in the breakdown region.
+[06:47] Because if you observe over here, the input voltage range is from tan volt to 16 volt,
+[06:52] which is more than this Zener voltage.
+[06:55] So, this Zener diode will always operate in the breakdown region.
+[06:59] And due to that, we can replace this Zener diode by its equivalent circuit.
+[07:05] So in the breakdown region, the Zener voltage is equal to 7 volt and the Zener resistance
+[07:10] of this Zener diode is tan ohm.
+[07:13] So, considering this, now let us find out the output voltage whenever the input voltage
+[07:17] varies from tan volt to the 16 volt.
+[07:20] So here, the expression of the output voltage will be equal to 7 volt plus tan ohm times
+[07:28] this current IS.
+[07:30] Where the IS is a source current, which is supplied by this voltage source.
+[07:35] And here, whenever the input voltage is equal to tan volt, then let us say, this source
+[07:40] current is equal to IS1.
+[07:43] And similarly, whenever the input voltage is 16 volt, then let us say, this source current
+[07:48] is equal to IS2.
+[07:50] So by finding these two values, we will find the output voltage range whenever the input
+[07:55] voltage varies from tan volt to the 16 volt.
+[07:58] So, first of all, let us consider whenever the input voltage is equal to tan volt.
+[08:04] So for this voltage, let us say, the source current is equal to IS1.
+[08:09] And the source current IS1 can be written as tan volt minus 7 volt divided by 200 plus
+[08:18] tan ohm.
+[08:19] That is equal to 3 divided by 210 ampere.
+[08:25] So from this, we can say that the output voltage V out or V of 1 will be equal to 7 volt plus
+[08:32] tan ohm times 3 divided by 210.
+[08:36] And if you calculate the value, then the V of 1 will come out as 7.14 volt.
+[08:45] Similarly, now let us find out the output voltage whenever the input voltage is equal to
+[08:50] 16 volt.
+[08:52] So considering this V in as 16 volt, let us find out the source current.
+[08:58] And let us say, that is equal to IS2.
+[09:00] So this source current IS2 can be written as 16 volt minus 7 volt divided by 200 plus tan
+[09:10] ohm.
+[09:11] That is equal to 9 divided by 210 ampere.
+[09:17] And from this, the output voltage V of 2 can be written as 7 volt plus tan ohm times
+[09:24] 9 divided by 210 ampere.
+[09:28] And if you calculate the value, then this V of 2 will come out as 7.43 volt.
+[09:37] So from this, we can say that for the given input voltage range, the output voltage varies
+[09:42] from 7.14 volt to the 7.43 volt.
+[09:47] That means for the given example, the option C is the correct option.
+[09:51] Alright, so now let us move to the next example.
+[09:56] Now in this example, we have been given this Xinner Regulator circuit.
+[10:00] And in this circuit, the Xinner voltage of the Xinner diode is equal to 5.8 volt.
+[10:05] And apart from that, we have been also given that the Xinner Ne current is equal to 0.5
+[10:10] milliampere.
+[10:12] Now in this circuit, whenever we connect the load across these two terminals, then we
+[10:17] have been asked to find the maximum value of the load current, such that this circuit
+[10:22] will work properly as a voltage regulator.
+[10:25] And it should work properly for the input voltage range starting from 20 volt to the
+[10:30] 30 volt.
+[10:32] So first of all, let us say some load is connected to this Regulator circuit.
+[10:38] And in this circuit, let us say IS is the source current and IS and IL are the Xinner current
+[10:45] and the load current respectively.
+[10:48] So here, from applying the KCL at this node, we can write IS is equal to IS plus IL.
+[10:57] Now in this circuit, once the input voltage is fixed, then as we reduce the value of this
+[11:03] load resistor, then the current which is flowing through the load will increase.
+[11:07] But at the same time, this Xinner current will reduce.
+[11:11] So as we keep on reducing the value of this load resistor, the Xinner current which is
+[11:16] flowing through the Xinner diode will reduce.
+[11:19] But we know that for the Xinner diode to work properly in the breakdown region, the
+[11:23] minimum current it requires is equal to Xinner Ne current.
+[11:27] So from this, we can say that for the fixed value of the supply current, the maximum value
+[11:32] of the load current should be such that at least Xinner Ne current is flowing through
+[11:37] this Xinner diode.
+[11:39] Now here, we already know the value of this Xinner Ne current.
+[11:43] So to find the maximum value of this load current, first of all, we need to find the value
+[11:46] of this source current.
+[11:48] Now here, the input voltage is changing from 20 volt to the 30 volt.
+[11:54] So to find the maximum value of the load current, we will consider two extreme points.
+[11:59] That means, first of all, we will find the value of this source current at 20 volt.
+[12:04] And then we will find the value of the source current at 30 volt.
+[12:07] And from that, we will decide what should be the maximum value of the load current.
+[12:12] But logically, if you see, if you find the value of the load current at minimum input
+[12:16] voltage, then the same load current will work properly at the 30 volt.
+[12:22] Because at the 30 volt, as the source current will be more, so the remaining current will
+[12:26] flow through the Xinner diode.
+[12:29] So first of all, let us find out this value so that this point will get clear to you.
+[12:34] So first of all, let us find out the source current at 20 volt.
+[12:39] So we can say that the IS1 is equal to 20 minus 5.8 divided by 1 kilo ohm.
+[12:48] That is equal to 14.2 milliampere.
+[12:52] And from this, we can say that the maximum value of the load current that is IL1 max is
+[12:58] equal to 14.2 milliampere minus 0.5 milliampere.
+[13:04] That is equal to 13.7 milliampere.
+[13:09] Similarly, now let us find out the value of the supply current at 30 volt.
+[13:14] So this current IS2 can be given as 30 minus 5.8 divided by 1 kilo ohm.
+[13:22] That is equal to 24.2 milliampere.
+[13:27] And from this, we can say that the maximum value of the load current that is IL2 max will
+[13:32] be equal to 24.2 milliampere minus 0.5 milliampere.
+[13:39] That is equal to 23.7 milliampere.
+[13:43] Now here, if we select this value as a maximum load current, then at input voltage of 20
+[13:49] volt, the circuit will not work because at the 20 volt, the supply current itself is
+[13:54] equal to 14.2 milliampere.
+[13:57] But instead of that, if we select the value of the maximum load current as 13.7 milliampere,
+[14:03] then the circuit will work properly even at a 30 volt because at that time, the supply
+[14:08] current is equal to 24.2 milliampere.
+[14:12] So at that time, the remaining current will flow through this zener diode.
+[14:17] And as this current is more than zener knee current, so the circuit will work properly
+[14:21] as a voltage regulator.
+[14:23] So from this, we can say that the maximum value of the load current should be equal to
+[14:27] 13.7 milliampere.
+[14:29] Alright, so now let us move to the next example.
+[14:34] So in this example, we have been given this zener regulator circuit and this circuit is
+[14:40] designed to meet the following specifications.
+[14:43] That means the load current is equal to 10 milliampere and the output voltage across the
+[14:48] load is equal to 10 volt.
+[14:50] And here, the input voltage V in is varying from 30 volt to the 50 volt.
+[14:56] So here, we have been asked to find the value of R such that the circuit will work properly
+[15:02] as a voltage regulator.
+[15:04] And here, we have been also given the specifications for this zener diode.
+[15:08] That means here, the VZ is equal to 10 volt and the knee current for the zener diode
+[15:13] is equal to 1 milliampere.
+[15:15] So first of all, let us write down what has been given to us.
+[15:19] So here, the input voltage is varying from 30 volt to the 50 volt.
+[15:25] Apart from that, here, the output voltage V out is equal to 10 volt and the load current
+[15:30] IL is equal to 10 milliampere.
+[15:33] And the zener knee current for the zener diode is equal to 1 milliampere.
+[15:39] So here, let us say, IS is the source current which is supplied by this voltage source.
+[15:45] And from this, we can say that this current IS is equal to IZ plus IL.
+[15:52] So in this circuit, the load current IL is fixed.
+[15:56] So for the fixed value of load current, as we increase the value of this R, the supply
+[16:01] current or the source current IS will reduce.
+[16:05] And due to that, this zener current IZ will reduce.
+[16:09] But we know that the minimum zener current which is required through the zener diode should
+[16:13] be at least equal to IZK.
+[16:16] So from this, we can say that the minimum value of this source current should be such
+[16:21] that for the fixed value of the load current, the zener knee current is at least flowing
+[16:26] through this zener diode.
+[16:29] And here, we know that the load current IL is equal to 10 milliampere.
+[16:34] And the zener knee current is equal to 1 milliampere.
+[16:37] So we can say that for the given circuit, the minimum value of this source current should
+[16:42] be equal to 11 milliampere.
+[16:45] So here, this source current IS can be given as V in minus VZ divided by R.
+[16:54] So here, the input voltage is varying from 30V to the 50V.
+[17:00] So we will find the minimum value of this IS at 30V.
+[17:04] Because that value of R will also work at a 50V.
+[17:08] Because with that value of R, at 50V, the value of IS will be more than 11 milliampere.
+[17:15] And at that voltage, the circuit will work properly as a zener regulator.
+[17:19] So here, let's find out the minimum value of this source current at a 30V.
+[17:26] That means 30 minus 10V divided by R. So from this, we can say that the value of R should
+[17:35] be equal to 20V divided by 11 milliampere.
+[17:41] And if you calculate this value, then this value will be roughly come around as 18, 18
+[17:46] home.
+[17:48] So this value of R will be the maximum value of this series resistor.
+[17:52] So we can say that the value of R should be less than or equal to 18, 18 home.
+[17:58] So for the given options, the option A is the correct answer.
+[18:03] So these are the few examples based on this zener regulator circuit.
+[18:08] And I hope these examples would help you in solving the different examples based on
+[18:12] this zener regulator circuit.
+[18:15] So if you have any question or suggestion, do like me here in the comment section below.
+[18:19] If you like this video, hit the like button and subscribe to the channel for more such
+[18:23] videos.

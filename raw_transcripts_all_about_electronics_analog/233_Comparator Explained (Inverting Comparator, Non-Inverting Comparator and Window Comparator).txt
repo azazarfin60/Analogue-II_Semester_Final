@@ -1,0 +1,140 @@
+Title: Comparator Explained (Inverting Comparator, Non-Inverting Comparator and Window Comparator)
+URL: https://www.youtube.com/watch?v=k9zQjEaKtfk
+Source: Local Whisper (base)
+
+[00:00] ۔
+[00:12] Hey friends, welcome to the youtube channel all about electronics.
+[00:15] So in this video we will learn about the comparators.
+[00:18] So many times in electrical and electronics circuit it is required to compare the two voltage
+[00:23] levels.
+[00:24] For example, let us say you are measuring the temperature of any room using the temperature
+[00:28] sensor.
+[00:29] And let us assume that the output of this temperature sensor is in terms of the voltage
+[00:34] and you want to compare this voltage with some reference voltage.
+[00:37] So that whenever the room temperature goes beyond certain value then you can take some
+[00:42] action like turning on some buzzers or activating relays.
+[00:45] So it can be done by using this comparator.
+[00:48] So this comparator consists of two inputs inverting and the non-inverting input and
+[00:54] it has a one digital output.
+[00:56] Now here the digital means the output can have a two states either high or low.
+[01:01] And here the state of the output depends upon which input is higher.
+[01:05] So let us say if the voltage at the positive terminal or the non-inverting input is higher
+[01:09] than the inverting input terminal, in that case your output of this comparator will be
+[01:13] high.
+[01:14] Likewise if the voltage at the negative terminal is higher than the positive terminal,
+[01:19] in that case your output will be low.
+[01:22] So as you can see this comparator acts like a one bit of anodecredital converter.
+[01:27] And in fact these comparators are used in anodecredital conversions.
+[01:33] So now if you see the schematic of this comparator, it looks very similar to the schematic of
+[01:37] the op-amp.
+[01:39] Because in case of the op-amp also we have two inputs and one output as well as we also
+[01:43] have two biasing voltages.
+[01:45] And in fact we have seen that this op-amp can be used as a comparator whenever it is
+[01:50] used in an open loop condition.
+[01:52] So in the previous videos of op-amp we have seen that whenever we use this op-amp in an
+[01:56] open loop condition, in that case the output voltage will be equal to the open loop gain
+[02:01] of the op-amp multiplied by the differential input voltage.
+[02:05] Where here the differential input means the difference between this non-inverting and
+[02:09] the inverting inputs.
+[02:11] So whenever your non-inverting input is higher than this inverting input, in that case
+[02:15] this differential input voltage will be positive.
+[02:19] And in open loop condition the gain of the op-amp is very high.
+[02:22] So the output will be equal to the positive saturation voltage of the op-amp.
+[02:26] That means whenever your inverting input is higher than this non-inverting input, in
+[02:31] that case the output of the op-amp will be equal to the positive saturation voltage.
+[02:36] And likewise whenever your inverting input terminal is at higher voltage than this non-inverting
+[02:42] input, in that case your output will be equal to the negative saturation voltage of this
+[02:47] op-amp.
+[02:48] So in this way this op-amp can be used as a comparator in open loop condition.
+[02:53] But if you observe there are many comparator rises are available in the market and they
+[02:57] are specifically used as a comparator and there is a reason behind it.
+[03:02] The first reason is that these op-amps are designed specifically for the linear applications.
+[03:07] So although this op-amp can be used as a comparator in open loop condition but the response
+[03:12] of this op-amp will not be too fast.
+[03:14] While if you see the comparators they have a minimum propagation delay and very fast
+[03:18] rise and fall times.
+[03:20] Because in general the slew rate of the comparator is higher than the slew rate of the op-amp.
+[03:26] And that is why comparators used to have a very fast response.
+[03:30] So moreover that if you observe this comparator rises in most of the I-sys the output stage
+[03:35] of this comparator used to be an open collector.
+[03:38] So we additionally require an external pull-up resistor to use this comparator.
+[03:42] So because of this open collector configuration it is possible to use this comparator with
+[03:47] different logic families.
+[03:49] And we can directly apply the output of this comparator to the different logic gates.
+[03:54] And moreover that because of this open collector configuration it is also possible to connect
+[03:58] different comparators in a wired end condition.
+[04:01] While in case of the op-amp if you observe in open loop configuration the output of the
+[04:05] op-amp can have a two voltages either positive saturation voltage or negative saturation
+[04:10] voltage.
+[04:12] So if you use this op-amp as a comparator then the output of the op-amp cannot be used
+[04:17] directly with different circuitries.
+[04:19] And somehow we need to restrict the output voltage of this op-amp by using the external
+[04:23] circuitries.
+[04:25] So because of these reasons the comparator I-sys are specifically used in applications
+[04:29] where you need to compare the two voltage levels.
+[04:32] So if your application is not critical and you do not require a very fast response in
+[04:37] that case the op-amp can be used as a comparator.
+[04:40] So now so far we have seen that whenever we use this comparator the one input to the comparator
+[04:45] used to be a reference voltage and the one input used to be the signal which we need
+[04:49] to compare with this reference voltage.
+[04:52] Now depending on where this input is applied this comparator can be classified as a inverting
+[04:57] or the non-inverting comparator.
+[04:59] So if we apply this input to the non-inverting terminal in that case this comparator is
+[05:05] known as the non-inverting comparator because here whenever your input goes beyond this
+[05:10] reference value in that case the output of the comparator will be high.
+[05:15] Similarly, when we apply this input to the inverting terminal in that case this comparator
+[05:20] is known as the inverting comparator because in this case when ever your input goes
+[05:25] nd we will be on this reference value in that case the output of the comparator will be equal to low value.
+[05:30] So let us take one example and using this example let us understand this inverting and the non-inverting comparators.
+[05:37] So let us say here we have a two input signals one is the triangular wave which is applied as an input to this comparator and second is the reference voltage.
+[05:45] And here assume that this input is applied at the positive terminal of this comparator.
+[05:51] So when this input signal is less than this reference voltage in that case the output of this comparator will be low and as soon as this input signal goes beyond this reference point then the output of the comparator will be high.
+[06:07] So for this particular duration if you observe the output of the comparator will be high.
+[06:12] And once again when this input level goes below this reference voltage in that case the output of this comparator will also become low.
+[06:21] Similarly at this point whenever this input signal crosses this reference voltage then again the output of the comparator will be high and it will remain high up to this point because after this point again this input signal value is lesser than this reference voltage.
+[06:38] So in this way whenever we apply this input at the non-inverting terminal then the output will be high only when your input signal is higher than this reference voltage.
+[06:49] Now similarly let us assume that we have applied this triangular wave at the inverting input.
+[06:54] So in this case your output will be low during the time your input signal is higher than this reference voltage and for the rest of the time your output signal will remain high.
+[07:06] So this is all about the inverting and the non-inverting configuration of the comparators.
+[07:10] Now so far in our discussion we have compared this input voltage with the reference voltage but in some application it is required that your output should remain either high or low whenever your input voltages within specific band.
+[07:23] So these kind of comparators are known as the window comparator.
+[07:28] So in case of this window comparator your output will be high only when your input voltage is within specific band of voltages.
+[07:36] So the lower voltage is known as the lower threshold voltage and the higher voltage is known as the higher threshold voltage.
+[07:42] So whenever your input voltage is in between this VL and VH then only your output voltage will be high.
+[07:49] So this window comparator can be designed by combining the inverting and the non-inverting comparators.
+[07:55] So as you can see here the first comparator is the inverting comparator and the second comparator over here is the non-inverting comparator.
+[08:03] And both are connected using this external pull-up resistor and because of this configuration they will act as a wired and connection.
+[08:12] So if any of the comparator output is low in that case your overall output will also become low.
+[08:17] Whether your output will be high only when both the comparator outputs are high.
+[08:22] Now here whenever your input signal is less than this lower threshold voltage in that case the second comparator output will be low value and the first comparator output will be high value because here this input is lesser than this upper threshold voltage.
+[08:38] So because the second comparator is at low value so your overall output will be equal to low.
+[08:45] Well let us take the second case where your input is greater than this lower threshold voltage but it is less than this upper threshold voltage.
+[08:55] So in this case if you observe the both the comparator output will be high and your overall output will be equal to high.
+[09:05] Similarly when your input is greater than this upper threshold voltage in that case this second comparator output will be high while your first comparator output will be low and because of that your overall output will be low.
+[09:22] So in this case your overall output will be equal to low.
+[09:26] So as you can see your output will be high whenever your input signal is in between this lower and the upper threshold voltage is.
+[09:34] Now let us say you have applied this triangular wave to this window comparator and this VH and VL are there upper and the lower threshold voltage is respectively.
+[09:45] So here your output voltage will be high during the duration when your input voltage is between this lower and the upper threshold voltage is and for the rest of the time your output will remain low.
+[09:57] So as you can see here whenever your input is in between this upper and the lower threshold voltage is then only your output will be equal to high value and for the rest of the time your output will be low value.
+[10:10] So in this way this circuit can be used as a window comparator.
+[10:14] Now so far in our discussion we have assumed that the inputs which is being applied to this comparator are ideal inputs.
+[10:20] That means they do not contain any kind of noise but practically if you see this quite possible that the noise may get superimposed over these input signals and in that case because of this noise your output voltage may get affected.
+[10:34] So let us understand this by taking one example.
+[10:37] So here we have a two voltage levels. One is the reference voltage and one is the input voltage and here assume that the comparator is configured in a non-inverting configuration.
+[10:47] So here the input voltage is greater than this reference voltage so ideally your output to the comparator should remain high.
+[10:57] But suppose if noise gets superimposed over this input voltage then let us say the input signal look like this.
+[11:06] So if this signal is applied to this comparator in that case your output will be get affected.
+[11:12] So if you observe over here for this particular time duration your input signal goes below this reference voltage.
+[11:19] So for this particular time window your output signal will look like this that means your output will be equal to low voltage.
+[11:27] Similarly for this time window if you see your input signal again goes back to this reference voltage.
+[11:33] So again for this particular time period your output will be equal to low and again over here your input signal goes below this reference voltage.
+[11:43] So again here you will observe the low voltage for this particular time period.
+[11:48] So because of this noise as you can observe your output signal will be get affected.
+[11:52] So we can say that this comparator is not immune to the external noise.
+[11:57] So to resolve this problem the comparators are used with some hysteresis or we can say that the positive feedback is provided to these comparator circuits.
+[12:06] And these kind of circuits are known as the smittriger circuit.
+[12:10] So by providing the positive feedback we can increase the noise immunity of this comparator and we will discuss more about this smittriger circuit in the next video.
+[12:19] So I hope in this video you understood about the comparator circuits.
+[12:23] So if you have any question or suggestion do let me know in the comment section below.
+[12:27] If you like this video hit the like button and subscribe the channel for more such videos.
+[12:36] And if you have any questions or questions please let me know in the comments below.

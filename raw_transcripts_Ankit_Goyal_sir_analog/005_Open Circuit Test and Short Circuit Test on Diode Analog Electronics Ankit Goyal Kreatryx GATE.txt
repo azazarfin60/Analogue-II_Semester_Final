@@ -1,0 +1,1488 @@
+Title: Open Circuit Test and Short Circuit Test on Diode | Analog Electronics | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=n4bcdWM5r3k
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] A very good morning to all of you.
+[00:13] And welcome to Creatrix YouTube channel.
+[00:14] My dear friends, we are live again in Laxibash 2.0 Analog Electronics.
+[00:19] Now I can see that many children are surprised and worried
+[00:23] that why sir has applied the class on Sunday.
+[00:26] My brother, the first thing is that we have to complete the syllabus quickly.
+[00:30] The second thing that you have to do is that every Sunday there will be no class.
+[00:34] What can happen now? It is possible that I will not be able to take tomorrow's and tomorrow's class.
+[00:37] That is why I am applying the Sunday class for you today.
+[00:40] If it is off for two days, then I will apply the next Sunday also.
+[00:43] I mean, my aim is that you get six lectures in a week.
+[00:47] So that we finish this subject from the end of October.
+[00:52] Because then we have to do a crash course from November.
+[00:54] If I pull this subject till November, then it will come in December for the crash course.
+[00:59] So there is no point in that.
+[01:01] We apply it quickly when we know that it takes almost 100 hours.
+[01:05] And according to two hours each day, we can apply it in 50 classes.
+[01:09] And according to six classes a week, the syllabus can be applied in 8 weeks.
+[01:14] Or if we catch maximum, then 9 weeks.
+[01:17] So when we can apply it in 9 weeks, then why do we have to pull it for 12 weeks, 16 weeks?
+[01:21] We have to finish it before that.
+[01:23] Do you understand what I mean?
+[01:24] Now there is a subject of 100 hours.
+[01:26] It can be in 100 places.
+[01:27] It can be in 95-90 or 105.
+[01:30] We have to catch as much as we can.
+[01:32] Okay?
+[01:33] So it is possible that I will not be able to take tomorrow's class.
+[01:38] If I take tomorrow, then it can be off for a day.
+[01:41] Either it will be off for two days.
+[01:43] It will be off for the 30th.
+[01:44] I am not guaranteeing it for the 29th.
+[01:46] Maybe it will be off.
+[01:48] If it is off for the 29th, then I will take its compensating class on the next Sunday.
+[01:54] And the second reason to apply today's class is that
+[01:57] the topic that I am going to talk about today, I did not put it in the lecture plan.
+[02:01] Then I thought that I will do this topic and put some questions on it separately.
+[02:05] So that your basic understanding becomes how to analyze the diode circuits.
+[02:10] Because what is next lecture onwards?
+[02:12] I will start the applications of the diode like the clippers.
+[02:15] Okay?
+[02:17] Subrata, look at how to apply a small AC signal.
+[02:20] When you are applying the source,
+[02:22] then you will apply two voltage sources in the source.
+[02:24] One DC and one AC.
+[02:26] As you will write, supply is equal to 5 volt plus 5 sine omega t millivolt.
+[02:34] So you have applied two source series, one AC and one DC.
+[02:39] Has the volume gone away?
+[02:41] How did this happen?
+[02:42] Hello, hello, hello.
+[02:43] The volume is coming.
+[02:45] There is no problem in the volume.
+[02:49] Okay?
+[02:55] Dear, lectures are available for 24 hours.
+[02:58] So whatever lecture you see, you have to make sure that you complete it in the next 24 hours.
+[03:03] Okay?
+[03:04] Let's start today's session.
+[03:06] Let's start today's session.
+[03:08] So today's topic is our open circuit test and short circuit test.
+[03:12] Now what is the objective of open circuit test and short circuit test?
+[03:16] Look, when there is a single diode circuit,
+[03:19] then you can easily judge it by forward biasing, reverse biasing
+[03:23] and you can solve it by doing open circuit or short circuit.
+[03:27] Okay?
+[03:28] But my children, when you don't have a single diode circuit,
+[03:33] okay?
+[03:34] When you don't have a single diode,
+[03:36] when you have a multi diode circuit,
+[03:39] now which diodes will be on and which diodes will be off from it?
+[03:43] This is used to find out open circuit test and short circuit test.
+[03:48] Now look, many teachers teach that if there is a multi diode circuit,
+[03:52] then you assume, according to the heat and trial,
+[03:56] on and off of any diode.
+[03:59] And you can test your assumption.
+[04:02] But here, there is a systematic approach to this which we call
+[04:06] open circuit test and the short circuit test.
+[04:10] Do you understand?
+[04:11] Open circuit test and the short circuit test.
+[04:14] This is a systematic approach to tackle diode circuits.
+[04:18] This is a systematic approach to solve diode circuits.
+[04:22] Isn't it?
+[04:23] Suppose there are three diodes in the heat and trial.
+[04:25] You said that the first one is on and the other one is off.
+[04:28] I will solve it in this way.
+[04:30] If it is justified, then my assumption is fine.
+[04:33] Otherwise, then I will take some other assumption.
+[04:36] And one way is that you will get a sure shot.
+[04:40] Which diode is on and which is off.
+[04:43] And that is called open circuit test and the short circuit test.
+[04:51] Pushpendra, son, this is the first class of this class.
+[04:53] There is no special reason for it.
+[04:55] If you start from here, then you can also understand diode circuits.
+[04:59] Son, the assignment given to you in the YouTube sessions,
+[05:03] you have to apply that assignment on your own.
+[05:06] Plus, it happens that every assignment is discussed.
+[05:10] But on YouTube, it will not be possible to discuss every assignment.
+[05:14] Because I have also noticed that when we apply DPP sessions on YouTube,
+[05:17] we apply questions sessions, the lowest number is there.
+[05:21] Okay?
+[05:22] Let's go.
+[05:23] Now, we are moving ahead.
+[05:25] We have taken a lot of queries.
+[05:28] Now, diode operating condition.
+[05:30] When we talk about diode operating condition,
+[05:33] then diode operating condition can be two.
+[05:35] One can be your forward bias and one can be your reverse bias.
+[05:41] Okay?
+[05:42] One can be forward bias and one can be your reverse bias.
+[05:52] Okay?
+[05:53] Okay?
+[05:56] And I told you that this is the biasing, son.
+[05:59] This biasing happens with the help of your DC voltage.
+[06:03] Subrata, wait.
+[06:04] I will answer your doubt, son.
+[06:06] No problem.
+[06:07] Bias is done using a DC voltage.
+[06:18] Now, you know in reverse bias, son.
+[06:21] I told you in every model that you have to do an open circuit.
+[06:27] I have told you in reverse bias that in any situation whatsoever,
+[06:32] how you have to show diode in reverse bias?
+[06:38] You have to show it like an open circuit.
+[06:44] Okay?
+[06:45] And if I talk about forward bias,
+[06:48] I had told you different models in forward bias, son.
+[06:52] First, I had told you the ideal diode.
+[06:56] Then, I had told you the CVD model.
+[07:00] Then, I had told you the PWL model.
+[07:04] Okay?
+[07:05] Now, someone was asking how do you know when you have to apply PWL model in PWL?
+[07:11] And I saw that this was written in the lecture yesterday.
+[07:14] Depending upon the circuit or the parameters given in the question of diode,
+[07:19] the model is judged.
+[07:21] If the diode has no voltage,
+[07:24] the diode has no resistance,
+[07:26] or the diode has no material,
+[07:29] then I will not know what its voltage is.
+[07:32] Then, I will consider it as an ideal diode.
+[07:34] If nothing is told about the diode,
+[07:36] whether it is made of silicon or germanium,
+[07:39] whether it is V gamma,
+[07:41] or whether it is Rd, then consider it as ideal.
+[07:44] If I told you the material,
+[07:46] whether it is silicon or germanium,
+[07:48] or if I told you the V gamma,
+[07:50] then the CVD is the voltage.
+[07:53] If I give you the material or the resistance along with the V gamma,
+[07:57] then that means PWL.
+[07:59] So, depending upon the parameters given in the question,
+[08:02] you decide the model.
+[08:04] The most used models, son,
+[08:07] are the two most commonly used models.
+[08:10] These are the most commonly used models.
+[08:13] What does the CVD model do?
+[08:16] It does not give V gamma every time.
+[08:18] Many times, it will give you the material.
+[08:20] Now, if you give the material to my son,
+[08:23] then you should know the V gamma.
+[08:25] For silicon, the V gamma is taken as 0.7 volts.
+[08:30] And for germanium, it is taken as 0.3 volts.
+[08:41] Okay?
+[08:43] Now, a child was asking
+[08:46] how I told you about the biasing analysis.
+[08:49] I will explain it in brief.
+[08:52] Then I will do the testing.
+[08:54] Okay?
+[08:56] Look, what happens?
+[09:01] I will do it like this.
+[09:03] Okay?
+[09:10] I will explain it in a better way.
+[09:12] How do we do the AC analysis?
+[09:16] I had put a question in your tomorrow's assignment.
+[09:25] Okay?
+[09:27] AC analysis of diode.
+[09:29] Now, what happens?
+[09:31] Look,
+[09:38] I will give you a circuit.
+[09:45] As far as I remember,
+[09:48] 9900 ohms.
+[09:53] This is the question of the gate.
+[09:56] This is AC.
+[09:58] And this is DC.
+[10:02] Okay?
+[10:04] There were 4 diodes here.
+[10:12] There was such a question in tomorrow's assignment.
+[10:17] This was the question.
+[10:19] It was 9900.
+[10:21] Let me open this question once.
+[10:24] Where is it?
+[10:26] Because I will explain this question to you in DC AC analysis.
+[10:29] Just give me a minute.
+[10:31] I want to answer this question.
+[10:34] Yes, I got it.
+[10:36] Here, I had given you 12.7 volts.
+[10:39] And this is VI.
+[10:45] Okay?
+[10:47] I had given this.
+[10:49] It was like this.
+[10:51] Now, there were 4 diodes here.
+[10:53] And VT had given 25 millivolts.
+[10:57] See, this was the data given.
+[10:59] VI.
+[11:01] VP cos omega T.
+[11:04] Where VP, that is, peak voltage is 100 millivolts.
+[11:10] Okay?
+[11:12] And
+[11:13] thermal voltage is 25 millivolts.
+[11:15] Now, understand it carefully.
+[11:17] What does DC plus AC analysis mean?
+[11:20] So, see, whenever you go to do the AC analysis of the diode,
+[11:25] V gamma was also given in this.
+[11:28] Yes, the drop of forward bias was given.
+[11:30] 0.7.
+[11:33] Whenever, son,
+[11:35] See, the resistance of the diode is not given.
+[11:37] When the resistance of the diode is not given.
+[11:40] Okay?
+[11:44] Then we will be comfortable for 5 students.
+[11:46] Son, we will come to the next 5.
+[11:48] They will say that if we talk about 48 hours,
+[11:51] then it will be suitable for our 10 children.
+[11:53] I mean, there is no limit to this.
+[11:56] Now, you are being given free content.
+[11:58] At least you can make a little effort.
+[12:01] Now, it is not possible that we need it for free.
+[12:04] We need the best quality content.
+[12:06] And according to our timing, we need all the things according to ourselves.
+[12:10] This is also unfair.
+[12:11] One thing is demanded.
+[12:12] Think about it yourself.
+[12:13] Whenever you are getting everything for free.
+[12:15] And you are getting it in a very good pattern.
+[12:18] You are getting it with good technology.
+[12:20] You are getting it with questions.
+[12:22] If everything is going well, then you too can come to the class.
+[12:26] And if you are not able to come, then look at it within 24 hours.
+[12:29] When God made it for 24 hours a day.
+[12:31] I mean, God made it for 24 hours.
+[12:34] So, the cycle will be repeated for 24 hours.
+[12:37] Think about it.
+[12:38] The next 12 hours of the day will be like today's 12 hours.
+[12:42] So, how will the difference between 36 hours and 24 hours be?
+[12:45] Your day is going on.
+[12:46] In your daily schedule.
+[12:48] Come on, come.
+[12:50] Look, what is done first?
+[12:52] In Analog.
+[12:53] Sometimes read BJT, Mosfet, Diode.
+[12:57] First is DC analysis.
+[13:01] Now this is clear.
+[13:02] By looking at the polarity of the battery.
+[13:04] That these diodes are your forward biased.
+[13:06] Okay.
+[13:07] This is clear to us that these diodes are your forward biased.
+[13:10] Correct.
+[13:11] Now if I have this thing.
+[13:13] I know that these diodes are my forward biased.
+[13:15] Then what I can actually say is that
+[13:19] here we apply CVD model.
+[13:24] Here we apply CVD model.
+[13:26] Because V gamma is given here.
+[13:29] Diode resistance.
+[13:31] Not mentioned.
+[13:35] Okay.
+[13:37] Diode resistance.
+[13:39] Not mentioned.
+[13:41] So, what do you have to do?
+[13:42] First of all, when you do DC analysis.
+[13:45] Then short the AC supply.
+[13:49] Okay.
+[13:50] Just take DC.
+[13:52] Basically, we are applying superposition.
+[13:54] In superposition, at a time, one source is taken.
+[13:58] But do you remember one thing?
+[14:00] For superposition, the circuit should be linear.
+[14:03] That's why I taught the concept of tangent yesterday.
+[14:06] I will show you again.
+[14:08] The concept of tangent here.
+[14:09] Don't worry.
+[14:11] You will understand.
+[14:13] Now see.
+[14:17] This is 9900.
+[14:20] 0.7.
+[14:25] Now see, if you want IDC here.
+[14:30] Then this will be 0.7, 0.7 and 2.8.
+[14:46] Here it is.
+[14:47] Here you have DC current.
+[14:50] Okay.
+[14:51] DC current.
+[14:56] Sir, let's write once where CVD, PW, ideal method will be applied.
+[15:00] Yesterday, I wrote in the lecture that how do you know which method will be applied?
+[15:05] Tell me, how do I write?
+[15:07] I wrote yesterday.
+[15:08] I explained it again today.
+[15:10] I am also questioning it today.
+[15:12] Tell me, which language should I write in Sanskrit?
+[15:15] What should I write?
+[15:17] How should I write?
+[15:18] I have told you.
+[15:19] For example, which parameter is given in the question?
+[15:22] Here V is given.
+[15:24] Resistance is not given.
+[15:25] So, CVD will have to be taken.
+[15:27] If this was not given, then ideal diode would have been taken.
+[15:30] And if resistance was also given, then PWL would have been taken.
+[15:34] Now, this is DC analysis.
+[15:36] Now, the DC current that came on the basis of this.
+[15:40] On this, you will remove the diffusion resistance.
+[15:52] Diffusion resistance, RD.
+[15:56] This is eta VT by ID.
+[16:03] Now, eta VT.
+[16:05] I had said 25 millivolts.
+[16:07] So, until eta is not given, you will say 1.
+[16:12] This is 25 ohm.
+[16:16] Then there is diffusion capacitance.
+[16:20] ID tau naught by 2VT.
+[16:24] Now, here tau naught is not given.
+[16:28] So, ignore the CD because the CD cannot be removed.
+[16:38] Now, you come to AC analysis.
+[16:45] Now, you remove the DC source.
+[16:53] This was the source, VP.
+[16:56] Cos omega T.
+[17:00] Resistance will remain in the circuit.
+[17:04] Now, this 4 diode, the resistance of 4 is 2525.
+[17:10] I write like this, instead of not making 4 resistances.
+[17:14] 4 into 25 is 100 ohm.
+[17:17] Write like this.
+[17:20] Now, if you write like this.
+[17:25] So, IAC.
+[17:29] VP cos omega T.
+[17:34] Divided by 100 plus 9900.
+[17:40] That is 10K.
+[17:42] So, 10.
+[17:47] This is the AC current.
+[17:50] This is the AC current.
+[17:52] Everything is clear to all.
+[17:55] So, AC current is also here.
+[17:57] DC current is also here.
+[17:59] I asked you AC voltage.
+[18:00] In the question, you asked AC voltage.
+[18:04] So, IAC into 100.
+[18:08] So, cos omega T millivolt.
+[18:13] Okay.
+[18:15] Cos omega T millivolt.
+[18:17] This is done.
+[18:19] Now, you understood.
+[18:21] Who was asking about the Q point, the tangent.
+[18:24] You didn't understand the small signal.
+[18:26] Now, this small signal is clear.
+[18:28] Now, let me visualize you a little more.
+[18:32] Actually, if you look.
+[18:34] So, we put DC voltage.
+[18:40] It was 12.7V.
+[18:52] Here, we put DC voltage.
+[18:55] That was 12.7V.
+[18:58] Okay.
+[19:07] Okay.
+[19:12] Now, what will happen?
+[19:14] Now, your AC voltage, its peak is 0.1.
+[19:19] So, let me show it like this.
+[19:21] AC voltage is superimposed on it.
+[19:24] And its peak is 0.1.
+[19:26] So, it is 0.1 above and 0.1 below.
+[19:28] Okay.
+[19:30] Now, the graph of cos from here has become like this.
+[19:33] So, this is your supply.
+[19:35] Now, you can see AC's fluctuation is very less than DC.
+[19:39] Let's call AC as a small signal.
+[19:42] Here, your AC voltage is 100 millivolt.
+[19:47] And your DC voltage is 12.7V.
+[19:52] So, AC voltage is much less than DC voltage.
+[19:57] This is small signal.
+[20:02] And see what happened yesterday.
+[20:04] How I showed you yesterday.
+[20:06] I will show you that too in the graph.
+[20:10] Yes.
+[20:12] Something like this.
+[20:22] Okay.
+[20:27] It was like this.
+[20:29] This is our...
+[20:31] Pay attention to this.
+[20:33] That this was the current of the diode and this was the voltage.
+[20:38] Okay.
+[20:40] The voltage was on the X axis.
+[20:42] Now, what did I do, dear?
+[20:44] I defined a Q point here.
+[20:47] The one you just took out is DC current.
+[20:49] The DC current you took out is 1 milliampere.
+[20:52] I defined that Q point.
+[20:53] I defined it.
+[20:56] This is the Q point of the DC current and this is the voltage.
+[21:02] This is the DC voltage here.
+[21:09] Now, what did I say?
+[21:11] That this voltage is AC superimposed on this.
+[21:14] AC superimposed.
+[21:20] So, by superimposing AC.
+[21:22] As you see, on 12.7, you superimposed 0.1V.
+[21:27] So, what happened with this?
+[21:29] What happened with this?
+[21:31] Your graph is oscillating between 12.8 and 12.6.
+[21:36] In the same way, the AC you superimposed.
+[21:39] Because of this, your voltage will vary slightly more than DC and slightly less.
+[21:47] DC can also go slightly more and slightly less.
+[21:53] Okay.
+[21:55] So, I had shown that fluctuation here.
+[21:57] Now, I understood how I superimposed.
+[22:01] The X axis is the voltage.
+[22:03] So, the voltage is slightly ahead.
+[22:05] The voltage is slightly right.
+[22:07] And the voltage is slightly left.
+[22:09] The voltage is slightly right and the voltage is slightly left.
+[22:13] Is this clear?
+[22:15] Okay.
+[22:17] No one will be able to see the children of Assam today.
+[22:19] The lecture will be open till tomorrow.
+[22:21] So, it's okay.
+[22:23] Now, I understood the feeling that I had told you yesterday.
+[22:27] Tell me with today's question.
+[22:29] Did you get the feeling or not?
+[22:31] What was the meaning of the small signal?
+[22:36] I had done this.
+[22:37] So, the voltage is slightly ahead and slightly back on the X axis.
+[22:40] And then, I had told you to make a tangent at this point.
+[22:43] Because there is very less fluctuation.
+[22:45] So, you should linearize it.
+[22:47] And why did you linearize it so that you can put a superposition?
+[22:51] If you didn't linearize it, then how could this DC plus AC analysis be?
+[22:55] How can you say that you will take one source at a time, then take another source,
+[23:00] then add the result.
+[23:02] You can't say that.
+[23:04] Thank you, Neeraj.
+[23:05] Dear Neeraj, if you like handwriting,
+[23:08] you have to praise it.
+[23:10] Do some content.
+[23:12] You are doing handwriting.
+[23:14] Handwriting is fine.
+[23:16] In my house, my handwriting is better than mine.
+[23:19] It's better on my board.
+[23:21] I will write it clearly on any board in my house.
+[23:24] Where will you see the cue point in today's graph?
+[23:27] Which graph?
+[23:29] Tell me.
+[23:31] In which graph today?
+[23:33] How did you write the peak of the AC signal?
+[23:36] I had kept this for 100 millivolts.
+[23:39] I had kept this for 100 millivolts, that is, 0.1.
+[23:42] DC is 12.7.
+[23:44] 0.1 can be added in this, AC and 0.1 can be subtracted.
+[23:48] So, if 0.1 is added in 12.7, then it will be 12.8.
+[23:52] And if it is subtracted, then it will be 12.7.
+[23:55] Okay?
+[23:58] Tell me.
+[24:00] Is it clear, Mr. Manthan?
+[24:02] Where did you write the graph in today's problem?
+[24:05] You solved it numerically in today's problem, right?
+[24:08] This was DC model.
+[24:10] Here, we did DC analysis.
+[24:12] The current that came from it, we made AC resistance from DC.
+[24:16] With the help of DC current, we removed AC resistance.
+[24:20] Then, we made AC model.
+[24:22] And AC output came from it.
+[24:24] This is the way to perform any AC analysis.
+[24:28] Whether it is BJT, MOSFET, Diodo.
+[24:30] AC analysis is done like this.
+[24:33] First DC, then AC.
+[24:35] Okay?
+[24:37] It is not that DC AC is done together.
+[24:39] It will not be like this at all.
+[24:41] Okay?
+[24:43] Now, let's come to the open circuit test.
+[24:45] Let's talk about work.
+[24:47] Now, how do we know which diodes are on and which diodes are off?
+[24:51] So, what do we say here?
+[24:53] That open circuit, all the diodes.
+[24:56] First of all, open circuit all the diodes.
+[25:01] Your life is done, it is very easy.
+[25:04] Why is life easy?
+[25:06] Because now there is no non-linear element left in the circuit.
+[25:09] What is left in the circuit?
+[25:11] There are voltages and resistances left.
+[25:13] And at some places, there is an open circuit left.
+[25:16] Now, what do we say?
+[25:17] Compute voltage across each diode and each open circuit.
+[25:36] And each open circuit.
+[25:41] Remove the voltage of every diode or every open circuit.
+[25:44] And do you know how to remove the voltage?
+[25:47] From anode to cathode.
+[25:49] V A K.
+[25:51] V A K.
+[25:53] The voltage of anode to cathode.
+[25:56] You can remove this.
+[25:58] Now, the voltage will be different.
+[26:00] Someone's more, someone's less, someone's positive, someone's negative.
+[26:05] Now, what do you say?
+[26:07] Select the diode.
+[26:14] With maximum forward voltage.
+[26:21] Take the most forward voltage diode.
+[26:25] Provided.
+[26:27] Provided.
+[26:29] V A K is greater than V gamma.
+[26:32] What does this line mean?
+[26:35] Suppose there are two diodes.
+[26:38] One voltage is 0.3 and one is 0.1.
+[26:41] But these two are less than 0.7.
+[26:44] So, both the diodes will not be able to turn on.
+[26:47] I am saying that take the most forward voltage diode.
+[26:51] But its voltage should be more than V gamma.
+[26:54] Take the most forward voltage diode.
+[26:57] But the voltage should be more than V gamma.
+[27:00] Turn this diode on.
+[27:05] Turn this diode on.
+[27:07] That means, it means to turn it on.
+[27:12] Either short it.
+[27:15] Or CVD or PWL.
+[27:18] Which model will you replace?
+[27:20] It depends on the question.
+[27:22] What parameters are given?
+[27:24] Now, you turn it on once.
+[27:27] Now, what do you do?
+[27:29] Compute voltage again.
+[27:33] Across all diodes.
+[27:36] Again.
+[27:39] Across all diodes.
+[27:44] Okay?
+[27:46] Take out all the across voltage again.
+[27:49] And keep repeating.
+[27:52] Repeat like this.
+[27:59] Keep repeating until
+[28:02] we get
+[28:04] all voltages
+[28:08] less than V gamma.
+[28:12] I mean, suppose there are five diodes.
+[28:15] In the first case, when you turned off all of them
+[28:18] and took out the voltage, the maximum of the third diode came.
+[28:21] And it was more than V gamma.
+[28:23] So, you turned on the third one.
+[28:25] Now, you took out the first, second, fourth and fifth voltage again.
+[28:30] Now, suppose the maximum of the fifth one came.
+[28:33] Turn on the fifth one as well.
+[28:36] That is, the third one is on and the fifth one is on.
+[28:39] Now, take out the first, second and fourth voltage again.
+[28:42] Suppose the second voltage came.
+[28:45] Now, turn on the second, third and fourth voltage again.
+[28:49] Now, suppose the first and fourth voltage is less than V gamma.
+[28:53] This is the state that the first and fourth are off.
+[28:57] Two, three and five are on.
+[28:59] Do you understand?
+[29:00] Now, turn on the second and fourth voltage again.
+[29:03] Until then, the voltage of the remaining diodes is less than V gamma.
+[29:07] Now, suppose the maximum of the heat and trial is five diodes.
+[29:11] So, the maximum is five diodes.
+[29:13] There may be a result in three.
+[29:15] There may be a maximum of five diodes.
+[29:18] But, if logically, think in a digital manner.
+[29:21] There can be two states of each diode.
+[29:23] On, off, on, off, on, off.
+[29:25] There will be a combination of five diodes of 32.
+[29:28] There will be a combination of five diodes of 32.
+[29:31] Like digital, there is two power n.
+[29:33] Because, there can be zero and one in digital.
+[29:35] There are only two possibilities.
+[29:37] Zero and one.
+[29:39] So, how many possibilities are there?
+[29:41] Two power n.
+[29:43] There are five diodes.
+[29:45] There are two possibilities.
+[29:47] So, there will be two power five.
+[29:49] There will be a combination of 32.
+[29:51] But, if we go from this method.
+[29:53] Then, the answer will be in the maximum of five triodes.
+[29:55] You have to attempt thirty-two.
+[29:57] But, there will be only five attempts from this method.
+[30:01] So, how many attempts are there in this method?
+[30:04] Maximum is equal to the number of diodes.
+[30:07] Now, I will put it in question.
+[30:09] It will be very clear.
+[30:11] Now, you should get a fair idea.
+[30:13] How is the method?
+[30:15] I will apply it step by step.
+[30:17] Because, it is not something that can be applied in theory.
+[30:19] Right?
+[30:21] It is something that can be applied.
+[30:23] Now, comes the short circuit test.
+[30:25] I told you that, open all the diodes in the open circuit test.
+[30:29] But, don't do all the shots in the short circuit test.
+[30:32] This means, turn on all the diodes.
+[30:35] Now, if you turn it on, if it is ideal, you will do shots.
+[30:38] If it is CVD, then battery.
+[30:40] If it is PWL, then battery plus resistance.
+[30:43] So, what is the process here?
+[30:45] First, replace all diodes by there.
+[30:56] On state models.
+[31:06] By there, on state models.
+[31:10] Replace all the diodes with its on state models.
+[31:13] Okay?
+[31:15] What comes in the on state model?
+[31:25] This comes.
+[31:27] Replace it with the on state model.
+[31:30] Now, if you turn it on, I will remove the voltage.
+[31:33] Like I said, it is short.
+[31:35] So, the voltage is zero.
+[31:37] So, when you opened it, you didn't remove the current.
+[31:40] Because, there is zero current in the open circuit.
+[31:42] There is zero voltage in the short circuit.
+[31:44] Now, what will you do here?
+[31:46] Compute all currents.
+[31:56] Through all diodes.
+[31:59] When you turn it on, check the current.
+[32:02] Now, the habit of diode is that it allows the current from anode to cathode.
+[32:08] It doesn't allow the anode from cathode.
+[32:11] So, the diode that you have, it is allowed to take the current from anode to cathode.
+[32:18] Okay?
+[32:20] If the current is going like this, then this is correct.
+[32:25] There is no problem in this.
+[32:27] And if the current is coming upside down.
+[32:34] If the current is coming like this, then this is not allowed.
+[32:38] So, what will you do now?
+[32:40] The current of the diodes going from anode to cathode, it will turn on.
+[32:44] And the one going from cathode to anode, it will turn off.
+[32:49] So, you turn on the anode to cathode.
+[32:53] Let it turn on.
+[32:56] And open the anode from cathode.
+[33:02] The one whose current came to anode to cathode.
+[33:05] Open it.
+[33:08] Don't leave the rest on.
+[33:11] Turn it off and open it.
+[33:13] Okay?
+[33:15] So, this is the state of the diode.
+[33:17] But still check it.
+[33:19] After that, what to do after that?
+[33:22] Redraw the circuit.
+[33:26] And check.
+[33:29] Short circuit test.
+[33:31] See, it is easy to read.
+[33:33] Check voltage.
+[33:36] I am telling you to be on the safe side.
+[33:38] Check voltage across.
+[33:40] Off diodes.
+[33:44] They must be reversed bias.
+[33:46] See, when you...
+[33:48] Let me give you an example.
+[33:50] To explain it to you.
+[33:52] Again, suppose there are five diodes.
+[33:54] There could have been 32 combinations from the heat and trial.
+[33:58] There are five diodes.
+[34:00] So, there could have been 32 combinations from the heat and trial.
+[34:02] Now, suppose you turned on all the 5s.
+[34:05] And the current of the 5s was removed.
+[34:07] Now, suppose the current of 2, 3 and 5 was positive.
+[34:11] The cathode from anode.
+[34:13] The current of 1 and 4 was negative.
+[34:15] So, what did you come to know?
+[34:17] It will turn off 1 and 4.
+[34:19] It will turn on 2, 3 and 5.
+[34:21] You have to turn on 2, 3 and 5.
+[34:23] You have to turn off 2, 3 and 5.
+[34:25] You made the circuit again.
+[34:27] You replaced 2, 3 and 5 with this model.
+[34:29] And you opened 1 and 4.
+[34:31] There is a new circuit.
+[34:33] There are two diodes open.
+[34:35] There are three remaining.
+[34:37] It is on.
+[34:39] Now, check the voltage of the open.
+[34:41] Check if they are really reversed bias.
+[34:43] If they are, then your answer is correct.
+[34:45] This is just a verification step.
+[34:47] It will end here.
+[34:49] The current which is negative is off.
+[34:51] The positive one is on.
+[34:53] It takes 3 steps often.
+[34:55] And how many steps take place here?
+[34:57] Equal to the number of diodes.
+[34:59] That is why people prefer short circuit tests.
+[35:02] But you know, sometimes I can make such a circuit.
+[35:05] In which the KCL will be violated
+[35:07] by applying short circuit tests.
+[35:09] Then you will have to go with the open circuit test.
+[35:12] Or sometimes I can make such a circuit.
+[35:15] Where KCL will be violated in the open circuit test.
+[35:18] Because the current source is applied
+[35:20] and you have done the open circuit.
+[35:21] You will only use the short circuit test there.
+[35:24] Understood?
+[35:26] If your KVL is violated in the short circuit,
+[35:28] then you are compelled to apply the open circuit.
+[35:30] If KCL is violated in the open circuit,
+[35:33] then you are compelled to apply the short circuit test only.
+[35:36] Now, let me confirm in the chat
+[35:38] whether it has been cleared or not.
+[35:40] Then I will start the question.
+[35:42] You will learn to apply questions.
+[35:44] And this is what I want to teach you.
+[35:46] Because the circuit of the diode can be made
+[35:48] with these two methods.
+[35:51] Okay?
+[35:53] Let's go.
+[35:55] Let's see the first question.
+[35:57] I will make this with the open circuit test.
+[35:59] Okay?
+[36:01] I will make this with the open circuit test.
+[36:03] I will make different questions with different methods.
+[36:05] What can you do at home?
+[36:07] What I have done with the open circuit,
+[36:09] you can check it with the short circuit.
+[36:11] And the short circuit that you have made
+[36:13] with the open circuit.
+[36:15] The open circuit test.
+[36:17] What will we do in this?
+[36:19] We will redraw the circuit.
+[36:22] If there is one diode,
+[36:24] then it is easy to open it.
+[36:29] See, the diode has been opened.
+[36:36] Now, see, once the diode has been opened,
+[36:39] the circuit of the network analysis has been saved.
+[36:44] The circuit of the network analysis has been saved.
+[36:46] The circuit of the network analysis has been saved.
+[36:52] 4 volts.
+[36:54] 2 volts.
+[36:57] 2 ohms.
+[37:02] Okay?
+[37:05] Now, see what will happen here.
+[37:07] I will have to check the voltage here.
+[37:10] V.
+[37:12] How did I take the polarity of the voltage?
+[37:13] From anode to cathode.
+[37:15] Positive on anode and negative on cathode.
+[37:17] If this voltage is positive,
+[37:19] it means it will be on.
+[37:21] And negative means the polarity is opposite.
+[37:23] The diode will be off.
+[37:25] Now, see, this is open.
+[37:27] No current will go here.
+[37:29] So, I will take out the current like this.
+[37:31] The entire circuit has come in the series.
+[37:33] I is
+[37:36] 4 plus 2
+[37:38] by 2 plus 2.
+[37:40] 1.5 ampere.
+[37:43] Okay?
+[37:45] If, see, it is grounded here.
+[37:48] If there is no current here, it will be zero.
+[37:50] This voltage will go to V.
+[37:52] So, what will happen to V?
+[37:54] 4 minus I into 2.
+[37:56] This is 1.
+[37:58] Positive.
+[38:00] So, the diode is on.
+[38:02] Now, use CVD in on.
+[38:04] Use IDL or PWL.
+[38:06] See, nothing is told about the diode here.
+[38:09] Neither V gamma is told.
+[38:11] Neither the material is told.
+[38:12] Neither the resistance is told.
+[38:14] So, you will take an IDL diode.
+[38:16] Now, my children, if you take an IDL diode,
+[38:19] we have come to know that the diode is on.
+[38:23] Now, if you take an IDL diode,
+[38:25] you will take an IDL diode.
+[38:40] So, you will short it.
+[38:56] And the voltage of this is V naught.
+[38:59] Now, if you short it,
+[39:01] take it out from the nodal, V naught.
+[39:03] Can you put a nodal?
+[39:05] Now, you can see that the diode is purely
+[39:08] network analysis from the circuit.
+[39:15] See, the LCM is only 2 of all.
+[39:19] Now, if you take an IDL diode,
+[39:21] you will take an IDL diode.
+[39:23] If you take an IDL diode,
+[39:25] then 3 V naught
+[39:34] 2 by 3 volt, okay?
+[39:36] So, what is the answer?
+[39:38] None of these.
+[39:41] 2 by 3 is the answer.
+[39:43] So, none of these.
+[39:47] It is clear.
+[39:49] And if you take a short circuit test,
+[39:51] a short circuit test is made directly
+[39:53] in this circuit.
+[39:55] After making this circuit,
+[39:57] what I would say is that
+[39:59] take out the current of the diode from here.
+[40:01] The current comes V naught by 2,
+[40:04] which is 1 by 3,
+[40:07] which is coming only from the anode.
+[40:10] So, the diode remains on.
+[40:12] So, see, it becomes in one step.
+[40:16] Right? It becomes in one step.
+[40:18] Did you understand the matter?
+[40:20] If you take a short circuit test,
+[40:21] then directly make this circuit.
+[40:23] By taking a short circuit.
+[40:25] And see, if someone asks me to choose,
+[40:28] listen to me carefully.
+[40:30] When will you take the doubt clearing session?
+[40:32] Dear, is this a plus course, Rudresh?
+[40:34] Brother, don't you expect
+[40:36] to stay at a different level?
+[40:38] What do you say?
+[40:40] It is like this, right?
+[40:42] Expectation at a different level.
+[40:44] Sir, you said that the fourth class
+[40:46] would be doubt clearing.
+[40:48] Brother, bring the full plus here.
+[40:49] Don't do this much.
+[40:51] Don't let the person be demotivated
+[40:53] to stop studying.
+[40:55] Brother, things have never been completed here.
+[40:58] See, I didn't give any assignment earlier.
+[41:01] I started giving assignments in control.
+[41:03] Now, I am giving assignments.
+[41:05] I have done the class for two hours.
+[41:07] I am also taking syllabus quickly.
+[41:09] In Analog, now solve assignments.
+[41:11] Come on, I am also thinking about that.
+[41:13] Assignment should be discussed.
+[41:15] Now, it's time to take doubts.
+[41:17] What do you mean?
+[41:19] Sir, when will you get the test series in it?
+[41:22] Sir, how long has the study material
+[41:24] reached our house?
+[41:26] Now, listen carefully.
+[41:28] I was telling you.
+[41:30] If someone asks me to choose
+[41:32] a method from this question,
+[41:34] then I prefer short circuit tests.
+[41:36] Do you know why?
+[41:38] In short circuit tests, I take out the current
+[41:40] of the diode.
+[41:42] If the current of the diode becomes positive,
+[41:44] meaning the diode was on
+[41:46] and if the current of the diode comes,
+[41:47] then I into 2.
+[41:49] If the current of the diode comes,
+[41:51] then the voltage will come
+[41:53] I into 2.
+[41:55] So, what is the benefit of this?
+[41:57] That you checked the state of the diode
+[41:59] from the short circuit test and
+[42:01] the voltage also came by hand.
+[42:03] What is the problem here?
+[42:05] You took out the voltage by doing open circuit.
+[42:07] Now, you came to know that the diode is on.
+[42:09] Now, you made the second circuit.
+[42:11] So, you had to make a circuit twice.
+[42:13] If you had gone to the short circuit test,
+[42:15] then my work would have been done in one circuit.
+[42:18] Now, look at the next one.
+[42:20] Now, you all try it.
+[42:23] What will you do?
+[42:25] Look, now pay attention here.
+[42:27] If my children take open circuit tests here,
+[42:31] then this diode is open, right?
+[42:34] You will also open this diode.
+[42:36] That is, both these paths are open.
+[42:38] So, there is no way left for the current.
+[42:40] Okay?
+[42:42] There is no way left for the current.
+[42:44] That is why the KCL has been violated.
+[42:45] Do you understand?
+[42:47] So, you have to apply short circuit tests here.
+[42:50] Understand?
+[42:52] I was just telling you that sometimes
+[42:54] when the KCL is violated,
+[42:56] then the short circuit test will not work there.
+[42:58] Sorry, the open circuit test will not work there.
+[43:00] You will have to apply the short circuit test only.
+[43:02] This is an example of that.
+[43:04] Rudresh, son, you have doubts in the assignment.
+[43:07] You all go to my telegram group and discuss.
+[43:10] There will be a separate doubt between the children.
+[43:12] Rest, let me see if I can apply the class of assignment discussion.
+[43:16] Then I will apply it.
+[43:21] Okay?
+[43:34] Swati Ji is saying B5 by 3.
+[43:37] I1 is asked.
+[43:43] Swati Ji, have you applied the current division?
+[43:47] Why?
+[43:49] If you are applying the current division,
+[43:51] then how are you applying it?
+[43:53] It is not 2KM and 1KM parallel.
+[43:55] There is also a battery along with it.
+[43:57] Now, look, the network has been cut.
+[43:59] Satya Naaz and you will say analog is tough.
+[44:04] Isn't it?
+[44:06] This is the thing.
+[44:08] Look, if it is a short circuit test,
+[44:09] then you short this diode.
+[44:12] Because there is no parameter given.
+[44:14] CVD or PWL will not work.
+[44:17] Short it.
+[44:19] Ground is here.
+[44:31] Take V for the voltage nodal.
+[44:34] Now, if you apply V,
+[44:37] then you will say 5 milliampere is incoming.
+[44:41] V by 2KM
+[44:44] and V minus
+[44:46] minus 10.
+[44:48] Because there will be minus 10V here.
+[44:50] By 1KM.
+[44:52] So, this is 10.
+[44:55] 2V plus 10.
+[44:57] So, how much is V from here?
+[44:59] 0V.
+[45:01] If V is 0V,
+[45:03] then your current in 2KM is I1.
+[45:08] V by 2.
+[45:10] This will also come out to be 0.
+[45:12] Okay?
+[45:14] This will come out to be 0.
+[45:17] So, what will happen here?
+[45:19] Zero current will go away.
+[45:21] And the entire 5 milliampere current will go away from here.
+[45:24] Do you get it now?
+[45:26] Again, look, the nodal is done.
+[45:28] This is what I am saying.
+[45:30] The question of diode will be the same with network analysis.
+[45:33] Is it 2V plus 20?
+[45:35] Okay, yes.
+[45:37] Oh, wait.
+[45:41] 2V plus 20.
+[45:43] So, V is minus 10V.
+[45:47] So, how much will I1 come out of here?
+[45:51] V by 2 minus 5 milliampere.
+[45:56] This is negative.
+[45:58] The meaning of this negative is that D1 is off.
+[46:00] And if D1 is off, then its current will be 0.
+[46:06] Okay?
+[46:08] D1 will be off.
+[46:10] That is, its current will be 0.
+[46:12] 3V.
+[46:14] Oh, what am I doing?
+[46:22] 20.
+[46:25] 10 equal to 3V plus 20.
+[46:28] So, V is minus 10 by 3.
+[46:33] So, minus 5 by 3.
+[46:36] Okay?
+[46:38] Now, is it right?
+[46:40] Is it right?
+[46:42] So, what do you understand here that current is negative?
+[46:45] Current negative means that D1 will be off.
+[46:49] Right?
+[46:51] So, if D1 is off, then no current will go here.
+[46:54] So, the entire 5 milliampere will go ahead.
+[46:56] So, this is a short circuit test.
+[46:58] Now, do this.
+[47:00] Let me tell you in this also which test you will apply the bandhu.
+[47:04] Which one should I apply in this?
+[47:06] Should I do it with open circuit?
+[47:08] Come on, do it with open circuit.
+[47:12] Do this with open circuit.
+[47:14] If everyone will do it with one method, then it will be easy.
+[47:17] If everyone will do it in different method, then it will be a problem for me.
+[47:20] Make it with open circuit.
+[47:26] Do you want to do it with short circuit?
+[47:28] Come on, then do it with short circuit.
+[47:30] Do it with one method.
+[47:32] Do it with short circuit test.
+[47:39] Now, it seems that this is a much better method than the hit-and-trial.
+[47:43] It is visually clear.
+[47:45] Refresh it.
+[47:47] If the data comes in your phone, then it will not work well.
+[47:50] Because, I can clearly see it on the screen.
+[47:53] 4K, 6K, 10V, 3V.
+[47:55] Sometimes, I know that the figure is blurred.
+[47:58] But now, I can clearly see it on my own screen.
+[48:00] Both the diodes have to tell the state of D1 and D2.
+[48:26] They are saying both on.
+[48:38] Now, they are saying D1 on and D2 off.
+[48:42] Let's see.
+[48:44] Let's see.
+[48:46] Look at what you will do in the short circuit test.
+[48:49] This is now 10 volts, you turn on both the diodes and consider their current as anode
+[49:07] cathode.
+[49:08] Because then you know what happens when you consider current as anode cathode, if positive
+[49:13] comes then it is right, it will be on and negative comes then it is wrong, it will be off.
+[49:19] Either do not take out the current and then look at the direction or if you want to consider
+[49:24] current then consider the cathode as anode, if positive comes then it is right, if negative
+[49:28] comes then it is wrong.
+[49:31] Okay, now see how this node is done, here I took the voltage V, now I will put the
+[49:40] V-10 by 4 plus V by 6, but the node will not be able to be placed here, this V is actually
+[49:51] 3 itself, V is 3 itself, now see here I1, consider I1 as anode cathode, 10-3 by 4, how much
+[50:06] did it come, 7 by 4.
+[50:11] Here I take 3 by 6.5, now consider the current of the second diode as anode cathode I2.
+[50:26] So if you look at I2 from KCL, it will be I-I1, 0.5-7 by 4, minus 5 by 4, this is negative,
+[50:41] so from here D2 is off, this is on and this is off.
+[50:49] Okay, it is very good, maximum children had taken out the answer, D1 on, D2 off.
+[50:55] Do you understand?
+[50:57] Do you understand how to do it from the short circuit test?
+[51:00] Okay, see the next one, what will you put next time?
+[51:05] Now you will have to put the short circuit test only because if both the diodes are off,
+[51:10] then this 5 milli ampere will not have a way, but we are still doing this question.
+[51:16] Is this the one?
+[51:18] Where did it go?
+[51:21] See, it is hiding, right?
+[51:23] This is the question, yes, this is it.
+[51:26] This is repeated, let it go.
+[51:33] Look at this, now see here the current of the diode is asked, right?
+[51:39] If the current of the diode is asked, then you should make it from the short circuit test,
+[51:44] do you know why?
+[51:45] Because if you make it from the short circuit test, the current is positive,
+[51:49] then that is the answer and if the current is negative, i.e. the diode is off,
+[51:53] then give the answer 0.
+[51:54] Do you understand?
+[51:56] If you make it from the open circuit test, believe me, it is known that the diode is off,
+[52:02] then you will have to make it again, that is why it is better.
+[52:05] Where the diode's current has to be used in the question,
+[52:09] it should be made from the short circuit test only.
+[52:15] Dear, the videos that are being made privately on YouTube,
+[52:20] why will they be on the Anacademy Plus,
+[52:22] put your course on Anacademy Plus,
+[52:24] see that.
+[52:27] Have you ever seen a video on YouTube on Anacademy Plus?
+[52:34] No, it was a plus video, it was on YouTube,
+[52:36] YouTube's video was on Plus.
+[52:38] Now, dear, I can't do anything in this,
+[53:06] what do you like about it?
+[53:08] That I upload this video on Plus, it has no functionality,
+[53:12] I can't upload it even if I want to.
+[53:14] Look, when we see such questions,
+[53:17] then what comes to my mind first?
+[53:19] Look at the left part, there are voltage and two resistances here,
+[53:23] don't make it a magnet.
+[53:25] Think for yourself, don't make it a magnet, it will be better.
+[53:30] If I make it a magnet and transform the right circuit as a source,
+[53:34] then this circuit will be very simple, okay?
+[53:39] If I make a magnet for the left one,
+[53:42] then I will take out VTH from the voltage division,
+[53:45] forget the next circuit now,
+[53:47] if you disconnect the next circuit,
+[53:49] they will come into the series,
+[53:51] then you can put the voltage division,
+[53:54] now I feel like this, I am teaching you the network,
+[53:57] I am telling you in such a basic way,
+[54:00] you will short the source for the RTH,
+[54:02] they will come parallel.
+[54:08] Okay, here we will transform the source,
+[54:11] so see how much is coming,
+[54:15] 5V,
+[54:24] 2V,
+[54:26] I shorted this diode,
+[54:29] here I transformed the source,
+[54:33] 1 ohm,
+[54:51] here is I0,
+[54:53] now I0, see how easily it came out,
+[54:55] 5 minus 2,
+[54:58] by 2 plus 1,
+[55:00] 1 ampere,
+[55:02] right?
+[55:03] Understood?
+[55:04] So when I see such a circuit,
+[55:06] at any time in diode circuits,
+[55:08] in any question, in any analog,
+[55:10] where there is battery and multiple resistances,
+[55:13] I will simplify it first,
+[55:15] a battery and a single resistance.
+[55:18] Okay, see the next one,
+[55:20] this one is also done,
+[55:22] what is happening, why are you repeating?
+[55:26] We will have to talk, let's see,
+[55:28] now see this one,
+[55:30] here we have to tell the states of the diode,
+[55:33] here we have to tell the states of the diodes,
+[55:36] now let's do this with open circuit test,
+[55:38] see there are many questions with short circuit test,
+[55:41] now let's do this with open circuit,
+[55:43] okay, otherwise the practice of open circuit will not happen,
+[55:55] okay,
+[56:21] let's do this,
+[56:25] okay,
+[56:55] 10 volts,
+[56:59] here it is,
+[57:01] the top terminal is positive,
+[57:26] what is the answer?
+[57:33] we are saying A,
+[57:35] see let's do the open circuit test,
+[57:37] I will make the circuit first,
+[57:40] 10 volts,
+[57:56] the first diode is off,
+[58:10] 1 ohm,
+[58:17] 1 ohm,
+[58:19] D35 ampere,
+[58:21] see this is also off,
+[58:25] D35 ampere,
+[58:36] so let's do one thing,
+[58:38] see let's put a nodal in it,
+[58:43] V1,
+[58:45] V2,
+[58:47] we will put it on the V1,
+[58:51] this will come,
+[58:55] okay,
+[58:59] so here if we see,
+[59:01] 2V1-V2 is 10,
+[59:07] now put it on the V2,
+[59:09] 5 ampere incoming is,
+[59:11] V2 by 1,
+[59:13] V2-V1 by 1,
+[59:16] so this will be 2V2-V1,
+[59:20] equal to 5,
+[59:23] okay,
+[59:26] now if I multiply this with 2,
+[59:29] 4V2,
+[59:31] I am multiplying the second equation with 2,
+[59:34] now add both of them,
+[59:37] 3V2 is 20,
+[59:41] so V2 is here,
+[59:42] I don't know if this calculation is correct or not,
+[59:44] because sometimes I get the calculation mistake,
+[59:48] 2V2 is 40 by 3-5,
+[59:51] 40 by 3-5,
+[59:53] so 25 by 3,
+[59:55] so this is correct,
+[59:57] these are the values,
+[59:59] now see, if these are the values,
+[60:02] then the polarity of D1 is this,
+[60:05] D2 is this,
+[60:07] and this is the opposite,
+[60:09] so the voltage of D1,
+[60:14] the voltage of D1 is equal to V1,
+[60:19] 25 by 3,
+[60:22] the voltage of D2,
+[60:24] is equal to V1-V2,
+[60:27] here,
+[60:30] 5 by 3,
+[60:33] and the voltage of D3,
+[60:36] is equal to minus V2,
+[60:38] minus 20 by 3,
+[60:41] now here the maximum voltage of D1 is going,
+[60:45] the maximum voltage of D1 is going,
+[60:48] so you first turn on D1,
+[60:50] switch off the rest of the two,
+[60:52] switch on D1,
+[60:54] switch off the rest of the two,
+[61:04] see, I have switched on D1,
+[61:06] at one time,
+[61:08] switch on one by one,
+[61:10] switch on one by one,
+[61:12] first switch on one,
+[61:14] then check the rest,
+[61:16] now if any of them can be switched on,
+[61:18] then multiple will be switched on,
+[61:23] switch on the maximum voltage every time,
+[61:40] now see, switch on the nodal again,
+[61:42] now,
+[61:44] this is zero,
+[61:46] here the voltage is V,
+[61:48] now what you will say,
+[61:50] you will put the nodal on V,
+[61:52] 5 is incoming,
+[61:54] V by 1,
+[61:56] V minus 0 by 1,
+[61:58] so V is here, 2.5,
+[62:03] now here,
+[62:05] V by 2,
+[62:11] V by 2,
+[62:13] and V by 3,
+[62:15] both are coming equal to minus V,
+[62:19] which is equal to minus 2.5,
+[62:21] so reverse bias is done,
+[62:23] so they will be off only,
+[62:27] so they will be off only,
+[62:29] because both the voltage is coming negative,
+[62:31] both the voltage is coming negative,
+[62:35] so A answer,
+[62:37] D1 will be on, D2 and D3 will be off,
+[62:41] now this is clear,
+[62:43] how do you think open circuit test is clear,
+[62:45] say it quickly,
+[62:47] open circuit test is clear,
+[62:49] now try this one,
+[62:51] do this with short circuit test,
+[62:53] this time see,
+[62:55] it is given as V gamma,
+[62:57] if it is given as V gamma,
+[62:59] you will have to replace the diode
+[63:01] with CVD model,
+[63:03] you will have to replace the diode
+[63:05] with CVD model,
+[63:09] okay,
+[63:27] come on make it quickly,
+[63:33] okay,
+[64:03] okay,
+[64:33] okay,
+[64:41] the answer is coming,
+[64:45] see in short circuit test,
+[64:47] here you replace it with battery,
+[64:49] 0.7,
+[64:51] I am showing it in this circuit,
+[64:53] 0.7,
+[64:55] okay, it will be a little easier for me,
+[64:59] so this is voltage ground,
+[65:01] so this is 0.7,
+[65:03] now what can you do here,
+[65:05] 0.7 minus 0.7,
+[65:07] here it is 0V,
+[65:09] 0V is here,
+[65:11] so how much current is here,
+[65:13] 10 minus
+[65:15] I1,
+[65:17] let's say I,
+[65:21] I is
+[65:23] 0.93,
+[65:35] and here say I dash,
+[65:39] I dash will come,
+[65:43] 0 minus minus 10,
+[65:45] by 5,
+[65:47] 5,
+[65:51] 2 milliampere,
+[65:53] okay, here it is,
+[65:55] now if you remove from here,
+[65:57] ID1,
+[66:01] so I minus I dash,
+[66:05] 0.93 minus 2,
+[66:11] so this is negative,
+[66:13] okay,
+[66:15] so I dash will come from here,
+[66:19] now because ID1 is negative,
+[66:21] ID1 is negative,
+[66:23] so we have to take off D1,
+[66:25] okay,
+[66:27] we have to take off D1,
+[66:31] so this is 10V,
+[66:35] 10K,
+[66:39] and this is D1,
+[66:41] off,
+[66:45] okay,
+[66:55] now how much was here,
+[66:57] 5K, 10K,
+[66:59] now what it said,
+[67:01] ID1 and V0,
+[67:03] now see ID1 is 0,
+[67:07] and this diode,
+[67:09] this was replaced with a resistance,
+[67:11] sorry, with battery,
+[67:13] 0.7,
+[67:15] now all the current,
+[67:17] the circuit,
+[67:19] it will go like this,
+[67:21] straight,
+[67:23] so I am removing this I,
+[67:25] 10 minus 0.7,
+[67:29] minus minus 10,
+[67:31] by 15,
+[67:35] 19.3 by 15,
+[67:39] okay,
+[67:41] so what will be V0,
+[67:43] minus 10 plus 5 I,
+[67:47] minus 10 plus 19
+[67:49] by 3,
+[67:51] 30,
+[67:53] so 10.7,
+[68:01] so how much is V0,
+[68:03] 33917,
+[68:05] 3515,
+[68:07] 20,
+[68:09] this is minus 3.56,
+[68:11] so this is C,
+[68:15] clear,
+[68:17] minus 3.56,
+[68:27] clear,
+[68:29] okay,
+[68:31] see this question,
+[68:33] cut-in voltage V gamma 0.7,
+[68:35] V and I have to tell,
+[68:37] V and I,
+[68:41] now see,
+[68:43] how do you solve this question directly,
+[68:45] suppose,
+[68:47] both the diodes are on,
+[68:49] listen carefully, if both the diodes are on,
+[68:51] 0.7, 0.7,
+[68:53] so the voltage here,
+[68:55] 1 minus 0.7, 0.3 will come,
+[68:57] here 3 minus 0.7,
+[68:59] 2.3 will come,
+[69:01] KVL has been violated,
+[69:03] KVL has been violated,
+[69:05] think about it,
+[69:07] if this is also 0.7,
+[69:09] this is also 0.7, both are on,
+[69:11] so 1 minus 0.7,
+[69:13] drop 0.3,
+[69:15] 3 minus 0.7, drop 2.3,
+[69:17] 2 voltage cannot be on 1 point,
+[69:19] this means,
+[69:21] what happened,
+[69:23] that KVL violated,
+[69:25] so I am saying,
+[69:27] if we
+[69:29] directly
+[69:31] use short circuit test,
+[69:33] use short circuit test,
+[69:35] use short circuit test,
+[69:37] KVL gets violated,
+[69:39] KVL gets violated,
+[69:41] that will be wrong,
+[69:43] so what to do,
+[69:45] so we say here,
+[69:47] turn on,
+[69:49] diode,
+[69:51] basically you can put the same test,
+[69:53] no problem, turn on diode with,
+[69:55] turn on diode with,
+[69:57] higher,
+[69:59] anode voltage,
+[70:01] which has higher anode voltage,
+[70:07] okay, understand me,
+[70:09] which has more voltage,
+[70:11] turn it on,
+[70:13] now see, if you turn it off,
+[70:17] you will turn on the one below,
+[70:19] it is 1 volt,
+[70:25] this logic is clear,
+[70:27] you can do it with open circuit test,
+[70:29] don't worry,
+[70:31] I have told you this new trick,
+[70:33] I am trying to teach you,
+[70:35] some places where hard work can be done,
+[70:37] I am trying to teach you short cut,
+[70:39] otherwise, if you don't like it,
+[70:41] then you can do it with the same test,
+[70:43] because here KVL will get violated,
+[70:45] so see, V0 has come,
+[70:47] 2.3,
+[70:49] because of which,
+[70:51] the voltage of D1 has become by default negative,
+[70:53] 1 minus 2.3,
+[70:55] 2.3, negative,
+[70:57] and how much will come,
+[70:59] then,
+[71:05] 5.3 by 2,
+[71:11] okay, 2.65,
+[71:15] A,
+[71:17] understand me,
+[71:19] it is clear,
+[71:25] last question,
+[71:27] ID and VD,
+[71:29] now see, because the current of diode is asked,
+[71:31] so which test will be better,
+[71:33] short circuit test,
+[71:35] which test will be better,
+[71:37] short circuit test,
+[71:41] but you are noticing one thing,
+[71:43] in VD,
+[71:45] there is no zero in the option,
+[71:47] you notice carefully,
+[71:49] in any option,
+[71:51] VD has not been told zero,
+[71:53] that is, there will be no short circuit diode,
+[71:55] never,
+[71:57] think, if you judge from the option,
+[71:59] if diode can be on,
+[72:01] then VD is zero,
+[72:03] there is no voltage zero in any option,
+[72:05] that is, you prefer open circuit test,
+[72:09] see, if you read the question,
+[72:11] if you observe a little,
+[72:13] then the question tells you,
+[72:15] which test is preferable here,
+[72:17] okay,
+[72:19] see this, there is no direct way,
+[72:21] which test to use,
+[72:23] to judge,
+[72:25] in a little question,
+[72:27] take one test,
+[72:29] think a little about that test,
+[72:31] as I thought, if the current is asked,
+[72:33] then short circuit test is applied,
+[72:35] then I thought, if I apply short circuit test,
+[72:37] then VD will be zero,
+[72:39] first I will shortlist the options,
+[72:41] in which VD is zero,
+[72:43] okay,
+[72:45] now if you open this,
+[72:49] then these two are in series,
+[72:53] then how much V1 will come here,
+[72:55] 4 into 10 by 20,
+[72:57] that is, 2 volts,
+[72:59] and how much V2 will come here,
+[73:03] 8 into 10 by 20,
+[73:07] that is, 4 volts,
+[73:09] so VD is
+[73:11] 1 minus V2,
+[73:13] this is negative,
+[73:15] this means, diode is off,
+[73:17] and how much voltage is coming,
+[73:19] minus 2,
+[73:21] and current will come, zero,
+[73:23] so zero and minus 2, see,
+[73:27] is it clear, how does this test look,
+[73:29] is it clear, how does this test look,
+[73:31] come on,
+[73:33] now see, I have given you this assignment,
+[73:35] or make an assignment,
+[73:37] solving all the questions in a good way,
+[73:39] and also give keys,
+[73:41] and see, if you want to apply PYQs,
+[73:43] then when the diode is complete,
+[73:45] then apply, go to this link,
+[73:47] here gate PYQ by AIR1,
+[73:49] here network, analog,
+[73:51] machine, power system, power electronics,
+[73:53] EMT,
+[73:55] everyone is doing PYQ,
+[73:57] and if you want to come to the academy,
+[73:59] then plus and iconic, there are two choices,
+[74:01] both are top educators,
+[74:03] as much as is taught in the class,
+[74:05] you will get everything,
+[74:07] you will get uploaded,
+[74:09] you will get test series,
+[74:11] but if you doubt the children of iconic,
+[74:13] then the solution will be given,
+[74:15] printed notes will be sent to the house,
+[74:17] one to one coach will be assigned,
+[74:19] strategy and study plan will be made,
+[74:21] and open house session
+[74:23] will be interactive,
+[74:25] okay,
+[74:27] and here see,
+[74:29] you have to choose one of the plus and iconic,
+[74:31] and apply the code at the time of payment,
+[74:33] Ankit ESC,
+[74:35] you will get maximum discount,
+[74:37] and after that, you can prepare
+[74:39] in my personal guidance,
+[74:41] and if you see the results,
+[74:43] results, we have produced in amazing way,
+[74:45] take out 6 rankers in top 10,
+[74:47] in electrical,
+[74:49] you can also be next year ranker,
+[74:51] you just have to join the academy,
+[74:53] using code Ankit ESC,
+[74:55] and if it is a financial issue,
+[74:57] then you can go for EMI,
+[74:59] where monthly you can pay your fees,
+[75:01] very minimum,
+[75:03] if you think like Aadhar card,
+[75:05] you can pay the salary of
+[75:07] one of your family,
+[75:09] because bank trusts them,
+[75:11] and gets EMI soon,
+[75:13] and this is the latest batch,
+[75:15] in which Manish sir is teaching network,
+[75:17] at 9 in the night, and I am teaching power system at 7 in the morning,
+[75:19] that is the Umeet batch,
+[75:21] last Umeet for gate 23,
+[75:23] and this is my telegram channel,
+[75:25] where you will get the notification of every lecture,
+[75:27] so that never miss any lecture,
+[75:29] and this is my team's contact number,
+[75:31] if you want any support,
+[75:33] call it,
+[75:35] call the kids who are more iconic,
+[75:37] and 2 YouTube kids,
+[75:39] and if you want a PDF of this session,
+[75:41] then you have to go to the community,
+[75:43] go to the home page of the academy,
+[75:45] go to the community,
+[75:47] and on the discover,
+[75:49] then search for my name on the discover,
+[75:51] you will get my community,
+[75:53] in which you will get
+[75:55] all the study material,
+[75:57] so thank you everyone,
+[75:59] okay,
+[76:01] the only test series
+[76:03] is not available,
+[76:05] the notes are yours,
+[76:07] see, I have to find out the only test series,
+[76:09] I am talking about it,
+[76:11] and the notes will not be mine,
+[76:13] obviously, it will be made by many content developers,
+[76:15] let's go, thank you everyone,
+[76:19] and I have given the link of power system,
+[76:21] my children,
+[76:23] you will get the power system here,
+[76:25] the playlists of the power system
+[76:27] are not deleted, the playlists are broken,
+[76:29] the lecture is still there,
+[76:31] and you will get the full playlist here,
+[76:35] okay, let's go here,
+[76:37] let's go, thank you everyone,

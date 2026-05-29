@@ -1,0 +1,1100 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | JFET Part- 1 | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=-CGzDDHEyys
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome back to the Creatrix
+[00:13] YouTube channel with Lakshabhach 2.0 Analog Electronics.
+[00:17] So dear, you all know that we have completed the diode, we have completed the BJT and now
+[00:24] the time has come, the time has come that we will be starting a new unit that is FET,
+[00:30] Field Effect Transistor.
+[00:32] In this unit, dear, I am going to make you two devices, Junction Field Effect Transistor
+[00:37] i.e. JFET and the second MOSFET, okay.
+[00:41] This JFET part, dear, this ESC and other exams will be very useful for both electrical
+[00:47] as well as EC.
+[00:49] So this topic will not be included in the electrical gate, nor in the EC gate, it will be
+[00:56] only for ESC.
+[00:58] But we will finish this topic within three days, today, tomorrow and tomorrow, after which
+[01:03] we will cover MOSFET, we will also cover MOSFET in a very comprehensive way, okay.
+[01:08] But obviously, the MOSFET that is much, much smaller than your BJT.
+[01:12] So this unit, FET, this is going to be completed very quickly and after that we will
+[01:19] go towards OPAMP, okay.
+[01:21] The chapter that you are most waiting for, whose weight is most OPAMP, we will talk about FET.
+[01:28] So let's start today's discussion, brother.
+[01:30] Quickly like the session, share it, okay.
+[01:34] And inform everyone that Uncle Sir has come live so that everybody joins this session live.
+[01:39] Come on.
+[01:41] So we are starting, dear.
+[01:43] We are going to start today JFET, Junction Field Effect Transistor, okay.
+[01:48] Its full form is Junction Field Effect Transistor.
+[01:52] Now look at the FETs, dear, whether it is JFET or whether it is your MOSFET, these are both
+[01:59] voltage control devices.
+[02:02] That is, how much current is flowing here.
+[02:05] It depends on what voltage you applied.
+[02:10] We call BJT as current control device because you know the collector current of BJT.
+[02:17] That depends on the base current.
+[02:20] So in the beginning, dear, I will show you a little comparison from BJT.
+[02:24] Then I will explain the working of this device.
+[02:27] So I am saying BJT is a current controlled device.
+[02:36] BJT is a current controlled device.
+[02:46] While FET, whether it is JFET or MOSFET, is a voltage controlled device.
+[02:58] While FET is a voltage controlled device, okay.
+[03:11] Now look, in BJT, dear, you have read two transistors, NPN and PNP.
+[03:21] NPN and PNP.
+[03:23] Win, dear.
+[03:24] Do this video.
+[03:25] Take this video in the beginning.
+[03:27] You will get the answer to this video.
+[03:29] You come late in the session.
+[03:31] Then you expect that whatever I have told you, I will give you the same thing.
+[03:35] Right?
+[03:36] So come from time to 11.30 in the session.
+[03:39] Now look, there are two types of BJTs.
+[03:42] One is NPN and one is PNP.
+[03:46] Similarly, your two FETs are there.
+[03:51] Like NPN is analogous to N channel FET.
+[03:57] Okay?
+[04:01] And the other is P channel FET.
+[04:09] N channel FET and P channel FET.
+[04:14] So these are two types of your FETs.
+[04:17] Like NPN is N channel FET.
+[04:19] Like PNP is P channel FET.
+[04:23] Okay?
+[04:24] So these are two types of FETs.
+[04:26] Now look, this BJT is bipolar device.
+[04:30] BJT is bipolar device.
+[04:35] Sir, what does bipolar device mean?
+[04:37] I had told you in the first class of BJT that the conduction here is due to electrons as well as holes.
+[04:47] Conduction due to electron and holes.
+[04:53] Okay?
+[04:55] And if we talk about FET there, it is a unipolar device.
+[05:01] That means there won't be any kind of charges involved here.
+[05:06] There will be either holes or electrons here.
+[05:11] Not both.
+[05:12] One of the two.
+[05:14] Either holes or electrons.
+[05:17] But not both.
+[05:18] There won't be either.
+[05:20] Okay?
+[05:21] So there is another difference between these two that there will be only one type of charge carrier here.
+[05:26] Now look, what is the full form of FET?
+[05:30] What is the full form of FET?
+[05:32] Field effect transistor.
+[05:35] This means that here you will control from the electric field that how many charge carriers are flowing.
+[05:45] How much current is flowing.
+[05:47] Or what medium are you controlling by means of the electric field.
+[05:53] So here you don't have to keep the terminal in actual contact.
+[05:58] Because it is kept in actual contact only when we want the current to flow.
+[06:03] But if I want to send it only to the electric field then the electric field can also be propagated from the air.
+[06:09] Electric field can also be propagated from the insulator.
+[06:13] So if it is only about the electric field then we do not need a conduction path.
+[06:19] And we do not need a contact.
+[06:21] Do you understand?
+[06:23] So why do we call FET as FET?
+[06:28] FET, flow of charge or current, flow of charge or current is controlled, is controlled by means of electric field.
+[06:54] By means of electric field without the need of physical contact.
+[07:18] No need for physical contact.
+[07:22] You will control the flow of charges from the electric field.
+[07:28] So here see there are two things like in BJT you control the collector with the help of the base.
+[07:35] So what is the base?
+[07:36] Controlling quantity.
+[07:38] And what is the collector's current?
+[07:40] Controlled quantity.
+[07:42] What is the base?
+[07:43] Controlling quantity.
+[07:45] And what is the collector?
+[07:47] Controlled quantity.
+[07:49] In the same way, there is a terminal where you control things.
+[07:55] There is a controlled terminal which you want to control.
+[07:59] So here you do not know what you say.
+[08:02] No contact is needed.
+[08:07] Like the current flows between the base and the collector.
+[08:11] But there is no need here.
+[08:14] No contact is needed between controlling and controlled quantity.
+[08:33] There is no need for any contact between controlling and controlled quantity.
+[08:39] Tell me, are things clear here?
+[08:41] Now architects are asking, is this topic theoretical?
+[08:44] Tell me one thing, when BJT started, it started with theory.
+[08:48] Without telling what is JFET directly if I jump on numerical.
+[08:53] So when you write the paper of basic electronics, then no question will be made.
+[08:58] So what I am doing with analog electronics, I am doing it in such a way that you get the knowledge of devices from above.
+[09:04] So that the paper of basic electronics can also come out well.
+[09:08] Yes, do it Abhishek, you can do it.
+[09:14] Now see if we compare BJT and FET quickly.
+[09:18] First of all, FET has high input impedance.
+[09:29] Because as I said, there is no need for any contact here.
+[09:33] If you keep its input terminal open, no current is flowing from there.
+[09:38] So in FET, there will be a lot of high input impedance.
+[09:43] Whereas BJT has very less input impedance.
+[09:50] And high means here 1 mega ohm.
+[09:54] What does high mean? 1 mega ohm.
+[09:57] So it comes in mega ohms, its input impedance.
+[10:00] You think that the base current of BJT is not zero.
+[10:04] The base current is small but it is not zero.
+[10:07] That is, its input impedance will not be infinite.
+[10:10] You also saw the input impedance when you took it out.
+[10:13] Dear R pi, R pi was coming in half a kilo ohm, 3 kilo ohm, 5 kilo ohm.
+[10:18] But here it will come in mega ohm.
+[10:21] So here you say the input terminal or gate terminal.
+[10:24] We will show the open circuit.
+[10:27] When you show R pi in pi model, you will show the open circuit here.
+[10:32] Because the input impedance is very high.
+[10:37] But what is the benefit of BJT?
+[10:39] BJT is more sensitive.
+[10:44] BJT is more sensitive to variation in input quantity.
+[10:55] That means if you vary the input, you will get more variation in BJT
+[11:02] as compared to FET.
+[11:05] So basically the sensitivity of BJT is high.
+[11:08] That is, del V out by del V in.
+[11:12] If you see the output by input, then the sensitivity is more.
+[11:17] I told you one thing before that the voltage gain of BJT is more.
+[11:23] BJT has more voltage gain than FET.
+[11:29] BJT has more voltage gain than FET.
+[11:36] Ok?
+[11:37] More than FET, its voltage gain is seen.
+[11:42] But do you know that the size of FET is smaller?
+[11:46] FET is smaller in size and hence can be used in IC.
+[11:59] Hence can be used in IC.
+[12:04] So in integrated circuit, you can use more FET because it is small.
+[12:11] And FET is more stable in thermally.
+[12:16] Ok?
+[12:17] Thermally is also more stable.
+[12:19] As you remember, you read about thermal stability in BJT.
+[12:23] You also removed the stability factor there.
+[12:27] So FET is more thermally stable.
+[12:29] That is, here the variation of the Q point with temperature is very less.
+[12:36] Do you understand?
+[12:38] The variation of the Q point with temperature is very less.
+[12:44] FET is more thermally stable than BJT.
+[12:48] Is this clear?
+[12:50] Mehul is saying, sir, I thought that while doing the job, the gate will not be able to open.
+[12:54] But after seeing your old lecture, a lot has been covered.
+[12:57] Very good Mehul.
+[12:58] Never think that there is anything that you cannot achieve in your life.
+[13:05] There are different challenges in everyone's life.
+[13:08] For someone, if I am doing a job, I will be able to give less time.
+[13:11] For someone, college exams, semester exams, projects have come.
+[13:15] No one has finance.
+[13:17] So in someone's family, if there is a health issue, it can be with someone's parents,
+[13:22] if there is a problem with someone, if there is a personal health issue,
+[13:26] there can be many issues.
+[13:27] And there is definitely a challenge with everyone.
+[13:30] Because the person who does not have a challenge, whose life is smooth,
+[13:35] that person does not have motivation and that is the biggest lacking factor.
+[13:39] That is the biggest lacking factor.
+[13:41] If someone does not have a challenge, then there is no need to overcome it.
+[13:46] So where will the anger of achieving it come from?
+[13:49] You know, these challenges make you strong in life.
+[13:53] Don't ever think that why do you have a challenge?
+[13:57] Why are you facing problems?
+[13:59] Why are obstacles coming in your way?
+[14:01] Because when you overcome these obstacles, then you will be so strong
+[14:05] that you will be able to take on more challenges in life.
+[14:09] So what you are preparing, you are not just preparing for the gate.
+[14:13] I say this many times.
+[14:14] You are learning the way to live your life.
+[14:16] You are learning how to work hard, how to not give up in life.
+[14:22] How do we chase our goals?
+[14:25] Because once you get used to it, there are more challenges waiting for you in life.
+[14:29] When your job will be done, your families will expand tomorrow.
+[14:33] So you will have more challenges.
+[14:35] So you are preparing all these things for that.
+[14:39] If there is no challenge in life, then there will be no feeling of achievement.
+[14:43] If the gate is not difficult, then there will be no fun in winning.
+[14:47] The value of winning is only when the challenge is as big as it is.
+[14:50] The bigger the challenge, the more happiness you will get
+[14:54] and the more confidence you will get.
+[14:56] That is why, appreciate the challenges.
+[14:59] Don't run away from the challenges.
+[15:01] Don't hug the challenges and think that it is an opportunity.
+[15:04] Now, it is up to you.
+[15:06] You can put a weapon in front of the challenge that nothing will happen to me.
+[15:09] Or you can see an opportunity that I have a chance to do something.
+[15:14] And this attitude will make a difference between you and the rest of the children.
+[15:17] So you have to see that on this side of the line,
+[15:19] the people who appreciate the challenge,
+[15:21] they work hard to overcome it.
+[15:23] Or on the other side, they start crying as soon as the challenge comes
+[15:26] and immediately give up.
+[15:28] On the other side, your future will be the same.
+[15:31] Your fate will be the same.
+[15:33] This is a clear comparison between FET and BJT.
+[15:36] Now, I am jumping on JFET.
+[15:38] Okay.
+[15:39] Now, how does JFET look?
+[15:41] Listen carefully.
+[15:42] There are three terminals in JFET.
+[15:44] There is a gate.
+[15:45] For example, there was a base.
+[15:47] There was a collector.
+[15:48] There was a drain.
+[15:49] There was an emitter.
+[15:50] There was a source.
+[15:51] The source means the source of the charge carrier.
+[15:54] What was the work of the collector?
+[15:56] What was the work of the drain to take out the charges?
+[15:59] What was the work of the source to give the charges?
+[16:02] And what does the gate do?
+[16:04] It controls the current flow between the source and the drain.
+[16:10] See, I took the entire N type material.
+[16:13] In this N type material, we have established two P type regions.
+[16:18] Both of them are connected to the gate terminal.
+[16:22] What do you have, dear?
+[16:24] There are two terminals, not the base.
+[16:26] There are two terminals, drain and source.
+[16:28] And there will be a conduction control between them
+[16:31] with the help of the third terminal.
+[16:33] That is the gate.
+[16:35] And there are two PN junctions here.
+[16:37] There are only two junction of the gate.
+[16:39] With N type material.
+[16:41] You know, there is another transistor that we use in power electronics.
+[16:45] It is called UJT.
+[16:47] Unijunction transistor.
+[16:49] You know, the difference is that it doesn't take two places.
+[16:52] The P region takes only one place.
+[16:54] So, there is only one junction of P and N.
+[16:56] There is only one junction.
+[16:58] That is why it is called Unijunction transistor.
+[17:00] So, in JFET and UJT, there is only one difference.
+[17:03] Either you have to take two P regions or one P region.
+[17:06] That is also a transistor.
+[17:08] But there are a lot of varieties of transistors.
+[17:11] You are studying three in your course.
+[17:13] BJT, JFET, MOSFET.
+[17:16] And UJT is FinFET.
+[17:18] There are more advanced technologies.
+[17:20] So, there are multiple types of transistors.
+[17:23] Okay?
+[17:24] So, first, if I talk about construction.
+[17:26] So, let me tell you.
+[17:29] Region between
+[17:34] source and drain
+[17:37] region between source and
+[17:40] drain
+[17:42] is a
+[17:44] N-type
+[17:47] semiconductor.
+[17:51] This is a N-type semiconductor of yours.
+[17:55] Okay?
+[17:57] Two P regions
+[18:01] two P regions
+[18:03] are embedded
+[18:06] are
+[18:09] embedded
+[18:14] inside N region
+[18:21] or inside N-type semiconductor
+[18:24] and both are connected
+[18:28] both are connected
+[18:31] to gate.
+[18:36] Okay?
+[18:38] Both are connected to
+[18:40] gate.
+[18:41] Okay?
+[18:42] Did you understand that construction is a
+[18:44] N-type semiconductor
+[18:46] and two are your P-type regions.
+[18:49] Now, will my children be
+[18:52] between P and N?
+[18:54] Depletion layer.
+[18:55] Look, what I am shading.
+[18:57] This is the depletion layer
+[18:59] between the P and the
+[19:01] N region.
+[19:04] Correct?
+[19:05] This is your depletion layer
+[19:07] between P region and the
+[19:09] N region.
+[19:10] Correct?
+[19:11] It will be, right?
+[19:12] Even if I do not apply any voltage
+[19:14] then the depletion layer will be formed.
+[19:18] Now, look, I will give you different
+[19:20] cases that when you
+[19:22] apply a different type of voltage
+[19:25] on the gate terminal
+[19:28] then what kind of device
+[19:30] do you behave?
+[19:32] What kind of device do you behave?
+[19:34] No, there will be no problem
+[19:36] in the op-amp.
+[19:37] But I will say,
+[19:38] do the mosfet of Ankur.
+[19:40] Nowadays, IIT is
+[19:41] favorite of mosfet.
+[19:44] Okay?
+[19:45] Come on.
+[19:47] Move ahead.
+[19:48] I have been cleared up till here.
+[19:49] Tell me.
+[19:50] When I did not apply any voltage
+[19:52] in a normal operating condition
+[19:54] then your depletion layer
+[19:56] will be existing
+[19:57] between P and N region.
+[19:59] No bias condition in diode.
+[20:01] No bias in diode.
+[20:03] Now, I will talk about the
+[20:05] different values of VG.
+[20:07] So, look, VGS is less than zero.
+[20:09] Sorry, VGS is zero.
+[20:10] And VDS is positive.
+[20:12] Look, here,
+[20:13] you applied 2V
+[20:15] between drain and source.
+[20:17] 2V.
+[20:18] So, here it is 2.
+[20:19] Here it is zero.
+[20:21] Now, what are you saying?
+[20:23] As you believe,
+[20:24] here the voltage
+[20:26] will be going from 2 to zero.
+[20:28] For example, at this point,
+[20:29] 1.5 came.
+[20:30] Somewhere in the middle,
+[20:31] 1 came.
+[20:32] Then, 0.5 came.
+[20:33] From this type,
+[20:34] consider the voltage to be your divide.
+[20:36] What did you believe, dear?
+[20:38] There are four resistances.
+[20:40] And in each one,
+[20:41] 0.5, 0.5, 0.5 is divided.
+[20:44] Because when, look,
+[20:45] a simple semiconductor is there.
+[20:47] For example, here,
+[20:48] N-type semiconductor is there.
+[20:49] Between drain and source,
+[20:51] for example,
+[20:52] N-type semiconductor is there.
+[20:53] So, dear,
+[20:55] here,
+[20:56] a simple thing is,
+[20:58] your voltage is divided
+[21:00] in small parts.
+[21:02] So, when a N-type semiconductor
+[21:04] is there,
+[21:05] or a simple P-type semiconductor is there,
+[21:07] my children,
+[21:08] it will just behave
+[21:10] as a resistance.
+[21:12] So, until your P-N junction is not there,
+[21:14] until then,
+[21:15] your built-in potential will not be there,
+[21:17] your barrier potential will not be there,
+[21:18] your voltage will not be there.
+[21:20] If you take a simple
+[21:22] semiconductor piece,
+[21:23] P-type or N-type,
+[21:24] it will behave as a resistance.
+[21:26] So, I will also write here,
+[21:28] N-type semiconductor,
+[21:32] N-type semiconductor,
+[21:36] between source and drain,
+[21:45] simply acts like
+[21:53] a resistance
+[21:59] and the voltage
+[22:01] and voltage,
+[22:03] or VDS,
+[22:05] gets
+[22:07] uniformly distributed,
+[22:10] voltage distributed,
+[22:12] uniformly distributed
+[22:16] throughout
+[22:26] length of device.
+[22:29] In the length of the device,
+[22:32] it will be distributed.
+[22:35] Okay?
+[22:37] Did you understand up to this point?
+[22:39] Did you understand up to this point?
+[22:41] Yes, my child,
+[22:42] majority carrier device is FET.
+[22:44] Whether it is J-FET or MOSFET.
+[22:47] Okay?
+[22:49] Is everything clear up to this point?
+[22:51] Let's look ahead.
+[22:53] The thing is, my child,
+[22:55] you have set the voltage on the gate to zero.
+[22:58] You have set the voltage on the gate to zero.
+[23:01] That is, on the P-type region.
+[23:03] And on the N-type,
+[23:05] look here, it is 1.5.
+[23:07] On the N-type, it is 1.5.
+[23:10] On the N-type, it is 1.
+[23:12] On the N-type, it is 0.5.
+[23:14] So, if you look at it one way,
+[23:16] when you come down from the top,
+[23:18] you don't think the reverse biasing of PN junction is decreasing.
+[23:20] Look at the P, it is zero voltage.
+[23:22] But as your N voltage is decreasing,
+[23:27] reverse biasing is decreasing.
+[23:29] That is, reverse biasing is more than the drain.
+[23:33] It is less than the source.
+[23:35] Reverse biasing is more than the gate and drain.
+[23:39] It is less than the gate and source.
+[23:41] It is less than the gate and source.
+[23:43] Do you understand what I am saying?
+[23:45] So, we can say that the reverse bias voltage
+[23:47] across the PN junction reduces
+[23:50] as we go from drain to the source.
+[23:53] If the reverse bias is higher,
+[23:56] then the width of the depletion layer will also be higher.
+[24:01] Because where the reverse bias voltage increases,
+[24:04] the depletion layer also spreads there.
+[24:07] Okay?
+[24:08] I am saying this.
+[24:10] Voltage of P region is zero.
+[24:22] Or voltage of N region reduces
+[24:34] from drain to source.
+[24:44] So, reverse bias reduces
+[24:55] and therefore, depletion width
+[25:05] is more at the top near drain
+[25:15] and reduces as we go to source.
+[25:27] Okay?
+[25:28] Do you understand?
+[25:30] So, the depletion layer will be non-uniform with depletion width.
+[25:35] So, see how the depletion width will look like here.
+[25:43] Like this.
+[25:45] Do you understand?
+[25:48] It will look like this.
+[25:57] Clear?
+[25:58] Your depletion layer will be more at the top.
+[26:02] If you see here, then your depletion layer will be more
+[26:06] and it will start decreasing while coming down.
+[26:11] Isn't it correct?
+[26:12] It was uniform before
+[26:14] because there was no voltage from drain to source.
+[26:17] It was uniform before,
+[26:19] but now it has become non-uniform.
+[26:22] Now, see, between the two depletion layers,
+[26:25] electrons are flowing from low voltage to high voltage.
+[26:31] Electrons always go from lower potential to higher potential.
+[26:35] Because you can see that
+[26:37] between drain to source,
+[26:39] one will become an electric field.
+[26:41] Between drain to source,
+[26:43] one will become an electric field.
+[26:45] So, electrons will go from your electric field to the opposite.
+[26:52] Electrons will go from the opposite of the electric field.
+[26:55] That is, electrons will go from the bottom to the top.
+[26:58] Electrons will go from the bottom to the top.
+[27:01] You can say that current will come from the top to the bottom.
+[27:08] So, what we are saying here is
+[27:15] that the region between two depletion layers,
+[27:29] the region between two depletion layers
+[27:36] from where charges flow is called as channel.
+[27:53] That is why we were saying N-channel, J-fet and P-channel.
+[27:57] Because if this channel is called,
+[27:59] then you will call it N-channel, J-fet.
+[28:01] Because it is becoming N-type channel.
+[28:03] Between drain and source,
+[28:05] N-type channel is becoming N-type.
+[28:09] Notice here,
+[28:11] Electron move from source to drain.
+[28:15] This should have happened
+[28:17] when it was called source.
+[28:19] Because it is the source of charge carriers.
+[28:21] That is why it was called source.
+[28:23] And ID flows from drain to source.
+[28:29] Current is coming upside down.
+[28:31] If electrons are coming from source to drain,
+[28:33] then current is coming from your drain to source.
+[28:37] Did you understand?
+[28:38] What will happen if you keep VGS at zero?
+[28:41] Depletion layer will go from the top to the bottom.
+[28:44] Depletion layer will go from the bottom to the top.
+[28:47] And because of this,
+[28:49] the small area left in the middle
+[28:51] will be called channel.
+[28:52] Electrons will go from source to drain.
+[28:55] And current will go from drain to source.
+[28:58] Now see, if you increase VDS,
+[29:01] if you increase VDS,
+[29:04] then your current will increase.
+[29:07] According to Ohms law.
+[29:09] According to Ohms law.
+[29:14] Okay?
+[29:15] According to Ohms law,
+[29:17] your current will increase.
+[29:19] But son, if you increase VDS,
+[29:22] if you increase VDS,
+[29:25] then you will understand one thing, my children.
+[29:28] What will happen?
+[29:30] Your reverse biasing will increase.
+[29:33] If your reverse biasing will increase,
+[29:36] then your depletion layer will continue to spread.
+[29:40] Listen again.
+[29:41] If you increase VDS,
+[29:43] then your reverse biasing will increase.
+[29:46] The one near the drain.
+[29:48] The one near the drain.
+[29:50] So your VDS will decrease.
+[29:52] Sorry.
+[29:53] If your reverse biasing will increase,
+[29:55] then your depletion layer will increase.
+[29:57] So your channel will be smaller.
+[29:59] What will happen?
+[30:00] Your channel will be smaller.
+[30:02] If your channel will be smaller,
+[30:04] then your resistance will also increase.
+[30:07] Your resistance will also increase.
+[30:10] Do you understand?
+[30:12] So I am saying,
+[30:14] as VDS increases,
+[30:18] reverse bias
+[30:22] near drain
+[30:26] increases.
+[30:29] If reverse bias increases,
+[30:32] then the depletion width increases.
+[30:36] If the depletion width increases,
+[30:38] then your channel will become narrow.
+[30:42] If your channel becomes narrow,
+[30:45] then your resistance will also increase.
+[30:48] Do you know?
+[30:49] One voltage will be like this.
+[30:51] One voltage will be like this.
+[30:54] Both the depletion layers will get touched.
+[30:57] Both the depletion layers will get touched.
+[30:59] And you call this condition as pinch off.
+[31:03] What do you call this condition?
+[31:05] Pinch off.
+[31:06] So we are saying,
+[31:07] at a certain
+[31:10] at a certain
+[31:13] VDS
+[31:15] both the depletion layer
+[31:19] both the depletion layer
+[31:23] touch each other.
+[31:32] Do you understand?
+[31:35] Such value
+[31:41] of VDS
+[31:43] is called as
+[31:45] VDS
+[31:49] pinch off voltage.
+[31:52] That you have finished the channel.
+[31:56] Okay?
+[31:57] What happens in such a situation?
+[31:59] Id remains constant.
+[32:03] Sir, why would id be constant?
+[32:05] Dear, if you consider the current as zero,
+[32:07] listen carefully,
+[32:09] your channel should be zero.
+[32:11] If you consider the current as zero,
+[32:13] tell me that the voltages across the resistance
+[32:15] will not be saved.
+[32:17] The voltages across the resistance
+[32:19] will not be saved.
+[32:21] That means the reverse bias funda is over.
+[32:23] If the current is zero
+[32:25] the voltage of resistance is zero
+[32:27] and the voltage of resistance is zero
+[32:29] then what about reverse bias.
+[32:31] Because here also zero.
+[32:33] Even here.
+[32:34] If zero is zero then there is no
+[32:36] reverse bias condition.
+[32:37] If the reverse bias condition is not saved,
+[32:39] then what are the depletion layers?
+[32:41] what is the depletion layer, what is the depletion layer, do you understand, so the depletion
+[32:47] layer is only when the reverse bias and the reverse bias means that there is some current
+[32:52] flowing in the resistance, so we are saying ID is nonzero because if ID is zero, no voltage
+[33:09] across device resistance, no voltage across device resistance, no reverse bias and no depletion
+[33:31] layer, no depletion layer, do you understand, so then what is the pinch off, when the depletion
+[33:40] layer is over, so tell me if anyone has any doubts, tell me quickly, if there is anything
+[33:46] that you do not understand, I will show you the graph in the meantime,
+[33:50] see what is happening here, see ID and this is VDS, so your current increases like this, then it becomes
+[34:11] constant, so see what is your resistance, that is, its slope is increasing, so as
+[34:20] channel resistance increases, slope decreases, that is why the graph is flat and the voltage
+[34:32] is coming on the voltage, that is, saturation is coming, so what do you call it, pinch off voltage
+[34:48] and you will say this region, ohmic region because here it is behaving like a resistance,
+[34:54] here it is behaving like a resistance, think about it, the linear graph is coming of current and voltage
+[35:00] and where it is going to saturate it, you will call it pinch off, okay, you will call it pinch off,
+[35:08] tell me if there is any doubt here, any child, tell us your doubt, then we will move forward,
+[35:14] I have told you for zero, now I will tell you what will happen when VGS is increased,
+[35:20] right?
+[35:29] Tell me, is it clear?
+[35:33] Ravi, son, take this video in the beginning, take it back, the cursor of this video will get your
+[35:38] answer, okay, let's go ahead, now I say that I have negated VGS, understand that the gate is
+[35:46] connected to the p region, the gate is connected to the p region, you are negating the voltage of the p region,
+[35:54] you have kept it positive at the end, now you are negating the voltage on the p region,
+[36:00] meaning you are increasing the reverse bias, you are increasing the reverse bias of the p-n junction,
+[36:08] son, all the voltages have been public till now, which world are you sleeping in, brother,
+[36:13] 8 days have passed in a week, which makes all the videos your public today is the 8th day,
+[36:18] but you are asking when the video will be public, are you watching, so what are we saying,
+[36:24] son, when we put negative voltage on the gate, that is, if we put negative voltage on the p region,
+[36:29] then your depletion layer is increasing across the reverse biasing, what does this mean,
+[36:36] this means that the depletion layer will grow, that the depletion layer will grow,
+[36:44] right, so what are we saying that already n region has a positive voltage
+[37:07] so, if we apply, if we apply negative voltage
+[37:18] to gate, reverse bias
+[37:31] across p-n junction
+[37:36] and depletion width increases
+[37:52] so channel resistance or channel width reduces
+[37:59] channel resistance increases
+[38:09] if the vehicles are on a small road, if the vehicles are on a small road, then it is very congested,
+[38:19] if it is congested, then the vehicles will not walk easily, it will be difficult for vehicles to walk,
+[38:24] and if there is a highway on a open road, then the vehicles can run easily on it,
+[38:31] that is, your resistance is less, so now if you are negating vgs,
+[38:38] listen to my brother carefully, if you are negating vgs, then you are doing the work of pinch off,
+[38:45] right, pinch off can be done easily now because you have already increased the reverse bias,
+[38:51] you have already increased the depletion layer, that is, the pinch off or saturation
+[38:57] will come at a low voltage as compared to earlier, okay, since depletion layer
+[39:11] has already expanded
+[39:22] so pinch off occurs, pinch off occurs
+[39:33] at lower vds, at lower vds, okay, so pinch off can also come on your low vds,
+[39:46] it can also come on a low vds, and we are saying that if you listen to this carefully,
+[39:53] if you do vgs with minus vp, then saturation comes
+[40:04] at vds is equal to zero, id is equal to zero,
+[40:14] that is, if you put a voltage equal to minus vp on the gate, then your current will saturate
+[40:22] at zero level, that is, it will not rise above zero, so see if you put minus vp on vds,
+[40:30] sorry vds on vp, then your current becomes flat, but if you put minus vp on vgs,
+[40:38] then the current will be flat, but what will be its value, son, its value will be zero,
+[40:44] its value will be zero, is it clear, so see I will explain it to you from the graph,
+[40:52] what we are trying to say, see if I say a simple thing,
+[40:58] that brother, the more you increase vgs in negative, the smaller the channel will be,
+[41:08] the more resistance will come, listen again, the more you increase vgs in negative, the smaller the channel will be,
+[41:17] the more resistance will come, that is, the less current will come on the same voltage,
+[41:23] the less your current will come on the same voltage, okay,
+[41:30] see here,
+[41:34] so see
+[41:35] it,
+[41:47] as soon as this value is of vgs, if you keep vgs a little less negative,
+[41:54] then you will get more current, because if you keep it less negative, then the channel will increase,
+[41:59] you will keep it a little less negative, you will get more current,
+[42:06] if you keep it very much, if you keep it very much negative, sorry,
+[42:13] if you keep it zero, then you will get a lot of current, so see what I am saying here,
+[42:20] as you can see, vgs is equal to zero, now you kept vgs at minus 1 volt,
+[42:28] so you have reduced the channel, because you increased the depletion layer,
+[42:32] so the channel has reduced, the channel has reduced, so the resistance increased,
+[42:36] the resistance increased, so the current has reduced, you made vgs negative, the channel has reduced,
+[42:43] the resistance increased, the resistance increased, so the current has reduced,
+[42:49] you made vgs negative, so the current has reduced, because the resistance increased,
+[42:55] and lastly, I will say that if you keep vgs at minus vp, then the current will remain flat,
+[43:04] when you have kept vgs equal to minus vp, then your current will remain zero,
+[43:12] so this is called cutoff, this is omic, this is saturation, and this is cutoff,
+[43:25] so as it was active, in BJT, it is not active here, it is omic here,
+[43:30] omic means your device is behaving like a resistance,
+[43:37] your device is behaving like a resistance, okay,
+[43:46] in omic region,
+[43:55] due to linear variation,
+[44:06] between id and vds,
+[44:15] device behaves as
+[44:22] resistance,
+[44:28] okay, due to linear relation, you can say that the device will behave like a resistance,
+[44:36] and its resistance will be like this between the drain source,
+[44:41] r0, 1 minus vgs by vp square, here the vp is negative for n channel,
+[44:56] and it will be positive for p channel, so tell me whether it has been cleared here or not,
+[45:02] tell me quickly, I will write down the equations that I have to remember in this,
+[45:07] but is the working clear or not,
+[45:13] tell me quickly,
+[45:16] is the working clear or not, tell me quickly,
+[45:23] tell me quickly,
+[45:26] is everyone clear,
+[45:28] it is very simple working, you are controlling the width of the channel by controlling the gate
+[45:34] source voltage, the smaller the channel, the greater the resistance, the greater the channel, the less
+[45:40] resistance, okay, now let's come to the p-channel device, so see what is the opposite of this p-channel,
+[45:48] now see what happens on the p-channel, here the entire semiconductor is p-type,
+[45:55] the gate part is n-type, so what are you saying here,
+[46:03] okay, entire region
+[46:17] between drain and source
+[46:23] is a p-type semiconductor
+[46:30] with two n regions
+[46:44] connected to gate terminal,
+[46:52] two n regions which are connected to both the gate terminals,
+[46:58] okay, now to reverse bias my brother, now to reverse bias you will give positive voltage on the gate,
+[47:10] okay,
+[47:13] there is no limit of VDS, VGS or VP, see this, negative voltage is coming, pinch off,
+[47:20] this graph doesn't have to look at VP, not at the VDS axis, on VGS, the channel was ending for the negative value of VGS,
+[47:28] that is why we showed VP negative, understood, otherwise it is best here, you put mod,
+[47:35] if you are facing this problem, then what do you do, you put mod like this,
+[47:40] tension is not over, okay, is it clear,
+[47:47] the question of JFET is asked in the PSU exam, can it be asked at all, why can't it be asked,
+[47:55] it is a very small topic, it is just a topic of three lectures, okay, did you understand this much,
+[48:02] here the polarity of VD should be reverse, it should be like this,
+[48:09] that is, this terminal plus and this minus, it will look negative on the drain,
+[48:15] so now what will happen, see here this is the depletion layer,
+[48:22] here this is the depletion layer,
+[48:28] here you put positive voltage on the gate, there is a negative voltage on the drain,
+[48:33] meaning the most reverse bias is yours, it will be close to the drain because you have
+[48:38] put negative voltage on the drain, okay, reverse bias across PN junction
+[48:51] is more
+[48:58] near drain
+[49:03] and less near source, so that's why the depletion layer becomes more close to the drain,
+[49:13] which we just saw, the depletion layer that becomes something like this,
+[49:21] okay, now see here what happens is that here the holes will go from source to drain,
+[49:31] who will go, holes will go,
+[49:37] and your current will not go from source to drain, first the source was going to drain,
+[49:42] the electron was going, so the current was going from drain to source, this time the drain holes are going
+[49:48] because P type semiconductor is there, so your current will also go source to drain,
+[49:55] so we are saying that the holes they are moving from source to drain
+[50:05] and your current will go from source to drain,
+[50:12] but here VGS is greater than equal to zero to increase depletion width,
+[50:24] that's the main difference, there VGS you had to put negative, here you have to put positive,
+[50:31] because you were putting it on P, here you are putting it on N, so on N there is positive voltage for reverse
+[50:35] biasing, there is negative voltage for reverse biasing on P, okay, and the second difference is here
+[50:44] the direction of current, here the current is going from source to drain and the source was going from drain to drain,
+[50:50] tell me is this clear, so see if we draw a graph of it, which we just made a graph of ID VDS,
+[51:06] here what you will use instead of VDS is VSD, remember I told you in BJT in PNP and NPN that
+[51:16] the direction of current and the polarity of voltage is reversed, the same thing is here, if there was VDS
+[51:23] in the N channel, then here VSD will happen, okay, now see here you made it to show the saturation
+[51:32] region, now what am I saying,
+[51:40] here is the graph, now reduce VGS a little, the reverse biasing will decrease, your current will increase,
+[51:49] now reduce VGS, the reverse biasing will decrease, the current will increase,
+[51:54] you reduce VGS immediately, only zero, the reverse biasing will be very less, the current will increase the most,
+[52:03] so here you know what, here this is the graph of VGS equal to zero, but this is of VGS equal to 1 volt,
+[52:13] first you were writing minus 1, your time is plus 1 volt, this is VGS equal to plus 2 volt,
+[52:20] VGS equal to plus 3 volt, okay, so this region is your omega, and this is the next region,
+[52:31] saturation, okay, so you should be clear about the working of the device that how the device is working,
+[52:38] son, there is a little difference in the JFET MOSFET, it is not exactly the same, neither is the structure of the
+[52:44] working, but yes, there are some similarities, the concept of the pinch off is actually in the MOSFET,
+[52:51] it is also gone, tell me, is it clear to everyone here, it is clear, now see how they represent the device,
+[53:00] they represent the device, something like this, now this n-channel JFET is n-channel JFET is in this,
+[53:10] why is the arrow inside the gate, son, because its gate is P type, so the current of the gate will enter
+[53:20] the PK, okay, and its gate n type is P-channel MOSFET, sorry P-channel JFET gate n type, then the gate
+[53:31] current will come out of you, you will understand how to recognize it, if the P-channel JFET is there,
+[53:38] then the current goes from drain to source, and if n-channel JFET is there, then sorry, if P-channel is there,
+[53:47] then drain from source, if n-channel is there, then source from drain, okay, if you want to take VDS here,
+[53:54] then take it like this, minus plus and make it VSD, VSD, below plus above minus, okay, the
+[54:05] polarity reversed, the current reversed, here VGS which you will apply, VGS will be negative in nature,
+[54:14] here VGS will be positive in nature, okay, so this part is important, if you don't know the working part,
+[54:23] then also how to show this part important device in the circuit, because now see I will move
+[54:30] towards the circuit, so it is not like BJT that there will be a lot of theory here, it will be a lot of
+[54:36] understanding, understanding is already completed, tell me if someone has a doubt about the symbol of the device,
+[54:43] then I will make you a numerical portion of it, tell me quickly,
+[54:48] is there any doubt about the symbol of the device,
+[54:58] is everyone clear, in a good way,
+[55:02] now let's come to the transfer characteristics, on which we are coming,
+[55:07] on the transfer characteristics, transfer characteristics means I want to talk about drain current and VGS,
+[55:16] how will its doping concentration be, because it is in our hands, see there are two regions P and N,
+[55:22] so how much resistance do you want, how much slope do you want for the characteristic,
+[55:25] according to that you take, I have shown moderately doped, if you want to do it for high current,
+[55:30] then you do it highly doped and if you want low current, then you do less doping,
+[55:34] by the way, less doping will never do moderate to high doping for both the type of region, okay,
+[55:40] now see what happens, the transfer characteristic means the relationship between
+[55:49] here, the relationship between id and vgs, that is why I said voltage control device,
+[55:57] that is why I said voltage control device, because here the id controls the vgs,
+[56:06] so what do we write here, id is idss 1- vgs by vp square, now sir what is idss,
+[56:26] see you have seen, the characteristic saturates, the characteristic saturates,
+[56:32] so the value of saturation current when vgs is zero, so what does idss mean, idss
+[56:43] is the value of drain saturation current
+[56:51] when vgs is zero, let me tell you,
+[57:03] see we made this graph, this one, this current is idss,
+[57:12] okay, when vgs is zero, in this one, this current is idss, okay, so what are we saying,
+[57:20] the saturation current is also reducing with vgs, so when we keep vgs zero,
+[57:27] we get maximum saturation current which is idss, and here what is vp son, pinch off voltage,
+[57:36] what is it, pinch off voltage,
+[57:42] so here your vp is taken negative, because the limit of vgs is taken negative for n channel,
+[57:50] and it is taken positive for p channel, okay, so if we make this graph,
+[58:05] so how will this graph be seen, id versus vgs, it should be parabolic, it looks like a quadratic relation,
+[58:21] so see id versus vgs, so this graph will come from this type,
+[58:38] this current is idss, and this voltage is vp, this is vp, okay idss, and this is your vp,
+[58:50] if you make this graph for p channel, my children, if you make this graph for p channel,
+[58:59] then your graph would have come towards positive x axis, okay,
+[59:07] your graph would have come towards positive x axis, id versus vgs,
+[59:15] this is how it would have come, do you understand, its pinch off voltage was positive,
+[59:28] is it clear to everyone that what types of transfer characteristics are there,
+[59:32] what types of transfer characteristics are there, if you take vgs out of this equation,
+[59:38] then vgs would be vp1-under root id by idss, so you can write vgs as well,
+[59:54] from this equation, vgs will come, and if you ever want to take out the power of the transistor,
+[60:02] so the current of the voltage across vds is id, so that will be power,
+[60:07] as vce into ic was written, as you write vce into ic, is this clear, so here vds into id will come,
+[60:18] so this part is very important for you, because we will do base numerical on this,
+[60:24] so put it in the short notes, okay, so the introduction of JFET is enough for you,
+[60:33] so you guys see once, as much as we have covered, I am giving you a break for a minute,
+[60:37] that you guys think, then I will do its biasing, today I will cover you by biasing,
+[60:46] and tomorrow its amplifier will also come, this topic will go so fast, there is not much to do,
+[60:55] I am telling you, now you have read the BJT, now you guys will know everything,
+[61:02] output transfer characteristic, what is the output transfer, so it is the transfer, so it is the output,
+[61:07] first we were making this output characteristic, this was the output characteristic,
+[61:14] this one is the transfer characteristic, so what are you talking about, because
+[61:25] henji
+[61:31] is this id in both,
+[61:36] this also has id on y axis, here vsd or vds is there, this also has id and vgs is there,
+[61:45] because once you see the lecture from the start, I think you have not followed the starting,
+[61:50] this video, because you don't know what is y axis x axis graph, so you are confused in the graph,
+[61:57] which graph you are talking about, let's move ahead, so first we will do fixed bias configuration,
+[62:07] what are we going to do fixed bias configuration, so here we will take n channel JFET,
+[62:14] see
+[62:36] now see this is your gate, now what you did here,
+[62:44] you put a voltage on the gate,
+[62:52] okay, here is a coupling capacitor and this input supply, which you will ignore in dc biasing,
+[63:02] but still I have shown that you have put an AC supply, now see here what will happen,
+[63:08] you have directly grounded it from here, okay, your source terminal is grounded,
+[63:15] now what are you putting on the drain terminal,
+[63:19] see you are able to relate it with bjt, it used to look like vcc here vdd, this rd used to look like rc
+[63:30] and then another coupling capacitor and output drain, like the collector used to take output here,
+[63:37] here from drain, it is like bjt circuit, what did you do in fixed bias there,
+[63:44] you put a constant voltage on the base, now that is different, you directly put vcc on the base,
+[63:51] here you put a new voltage on the gate that is vgg vgg, now what will you say,
+[64:00] that coupling capacitors are open circuit for dc, okay, open for dc, now the second thing is that
+[64:18] the current taken from here takes zero, sir why is that, because we believe that the gate and the
+[64:26] body pn junction, the drain and source pn junction with the gate are reverse bias,
+[64:33] so you will take the gate's current zero, so what are we saying, pn junction at gate
+[64:41] is reverse biased and hence we consider
+[64:59] ig equal to zero, till here it is clear that you have to take ig zero, now what will you say,
+[65:17] if ig zero is done, then the voltage of rg is zero, so you will tell me what will be vgs,
+[65:24] if ig zero is there, then the voltage across rg will also be zero, which means vgs will be vgg,
+[65:43] vgs will be your vgg, okay, by the way it will have to be reversed,
+[65:49] because we have to keep the reverse bias, then it should be reversed,
+[66:02] then it will be minus, okay, because vgs is negative, it will be minus, now you can take out the id from this,
+[66:11] you know only in JFET and MOSFET, there is only one difficulty in biasing, that in BJT there was a linear
+[66:18] equation and here it becomes quadratic, in both, here you have to take a quadratic equation,
+[66:26] here vp is your negative, once the id is here, then what you do is, you put such a kva from here,
+[66:35] to take out vds, once the id is here, then you will say vds is vdd minus id rd, okay, minus id rd,
+[66:49] is it clear, tell me, is it clear, tell me quickly, is it clear to everyone that how we solved the fixed bias,
+[66:59] tell me quickly, is it clear, okay, very good, the next is self bias, what is your next self bias,
+[67:12] okay, what we have to do in self bias is that we put a resistance in the source, now you see I
+[67:20] had grounded the source directly, if you pay attention, I had grounded the source directly,
+[67:29] what am I going to do this time, I am going to give one resistance on the source,
+[67:36] and what am I doing with that, that I am removing the supply of the gate, let me tell you how,
+[67:44] look, you have shown it here, now don't give the supply on the gate,
+[67:51] just do what you do, put resistance in a circuit like this, anyway, you will not put any resistance,
+[67:56] there is no difference, because the current of the gate remains zero, then also come,
+[68:03] v i c c i coupling capacitor, now put one resistance on the source, now you must be thinking, sir,
+[68:13] we have not put anything in between the gate source, we have not put any battery, this is magic,
+[68:19] without any battery, it will work, because you have put it in between the drain source,
+[68:31] you have put it in between the drain source, so that the current can flow,
+[68:38] you have put it in between the drain and the source, now you will see, here if the current is
+[68:46] id, then you know what is the speciality of MOSFET and JFET, that the current of the drain and source is zero,
+[68:53] it is the same, because the current of the gate is zero, the current of the gate is zero, then the same current goes on the drain and source,
+[69:01] so sir, how will you get vgs here, son, from this kvl, from this kvl, you will get vgs,
+[69:09] that is, actually the source resistance across the drop will help us to make vgs,
+[69:17] so we are saying no source between gate and source terminal,
+[69:32] we are saying drop across rs,
+[69:40] supply is vgs, the drop across rs becomes vgs,
+[69:51] so you will write minus igrg,
+[70:09] minus idrs, this is done, okay, vgs is minus idrs, now you will write the equation of id,
+[70:19] son, now see, it will become a quadratic in id only, because the value of vgs here is dependent on id,
+[70:31] if it becomes a quadratic in id, then you do not think that there will be two values of id,
+[70:43] correct, when you open the quadratic from here, then you will get two values of id here,
+[70:51] solve this equation,
+[71:00] okay, two values, now what should we do, sir, for two values, now son, take out vgs, how, by putting kvl on the outside side,
+[71:10] in vds, if you put kvl on the outside side, then it will become vdd minus idrd minus idrs,
+[71:25] so this should be your positive, son, you have to choose such a value, you have to choose such a value
+[71:32] that it becomes positive, so put both the values of id and see which value will come positive,
+[71:39] that will be your correct value, that will be your correct value, tell me how clear it is,
+[71:46] it is clear to everyone here, tell me, so this is what I am telling you, this is the same thing,
+[71:51] son, you will also see in MOSFET that you will have to put it, son, the solution of quadratic,
+[71:57] it will not work without it, that is why from BJT, MOSFET only increases one difficulty, it is quadratic,
+[72:04] now comes the voltage divider bias, how will we make it, sir, look, we will make that too,
+[72:10] when we have made it so much, we will also make it,
+[72:15] in the voltage divider, there is a big benefit here, there is no need for the thevenin here,
+[72:20] why sir, why won't thevenin be here, because my children, there is a gate current zero here,
+[72:27] here, your gate current is zero, so by default, your biasing resistances will come in the series,
+[72:46] okay, you have put RS, put a coupling capacitor across it,
+[72:52] by the way, you know the bypass capacitor, by the way, you know the importance of it,
+[72:59] that it is saved by reducing the gain, correct,
+[73:06] look, this voltage divider network is R1, R2, from here it is connected to VDD,
+[73:16] here a coupling capacitor C1, input voltage, here a coupling capacitor C2,
+[73:27] output voltage, is this the whole feeling of BJT,
+[73:31] tell me, it is a feeling of BJT,
+[73:36] just your focus was there on the base current, here my focus is on VGS,
+[73:43] ID, ID, here IG is zero, now I say here that since IG is zero, since IG is zero,
+[74:00] so what can you say, R1 and R2 are in series,
+[74:08] okay, so there is no need for VTH, RTH, what will I do with RTH, I will directly take out VG,
+[74:16] now here, if I tell you that the voltage of the gate,
+[74:21] then you will write VDD, R2 divided by R1 plus R2, and if I ask about the voltage of the source,
+[74:34] then IDRS, the voltage across the resistance is of the source,
+[74:42] okay, now if VGS is asked from you,
+[74:45] okay,
+[74:51] this is done, now you will take out ID from this,
+[74:59] IDSS, 1 minus VGS by VP whole square,
+[75:09] so that you tell VDS, VDD minus IDRD minus IDRS,
+[75:23] again, there will be two values of ID, there will be two values of ID,
+[75:28] which value you want to use, on which your VDS is positive,
+[75:34] yes, IG always has to take zero, because we are talking about the mode where we
+[75:41] try to cut out the channel by reverse bias, where we try to cut out the channel,
+[75:51] tell me, is everyone clear here,
+[75:54] tell me, I will also write in front of it, greater than equal to zero,
+[75:58] tell me quickly, how to do biasing, is it clear,
+[76:04] now see one more thing here,
+[76:18] if I show you one, this is a mathematical way, actually, how is it graphical,
+[76:26] you just saw the transfer characteristic of N-channel JFET, correct,
+[76:33] you saw ID versus VGS, how did the graph come,
+[76:43] something like this,
+[76:51] this is what you wrote, quadratic one,
+[76:55] it is also called a shock-lay equation,
+[77:01] what is the name, we know it as shock-lay equation,
+[77:06] okay, and one beta is also here, VG minus IDRS,
+[77:10] means what can you say,
+[77:28] so the intercept of VGS is VG,
+[77:35] and the intercept of ID is VG by RS,
+[77:39] but VG by RS should be below it,
+[77:53] now see this, when you draw this straight line,
+[77:57] so this intersection you have,
+[78:00] this is the operating point, which is satisfying both of them,
+[78:06] so basically now we were solving both these equations mathematically,
+[78:10] it will be like this, so this is your operating point,
+[78:15] I have shown the same thing on the graph,
+[78:20] which I just said to solve mathematically,
+[78:23] see the question on it, tell me, if everyone is clear here, then see the question on it,
+[78:30] you should quickly become a heart in the chat, if these things are clear,
+[78:34] then I will teach you the entire amplifier in the next class,
+[78:39] and you will find this amplifier much easier than BJT,
+[78:44] let's see the first question,
+[78:48] given IDSS is 10 milliampere, VPA is minus 8 volt,
+[78:52] calculate the node voltages and the branch current in the JFET circuit,
+[78:58] can you make it,
+[79:03] the question of fixed bias is all the voltage of the node,
+[79:07] node means here gate, drain and source,
+[79:10] so the source is seen and grounded,
+[79:12] so basically it is talking about gate and drain,
+[79:58] I answer, it is very easy, see this IG is zero,
+[80:10] so from here the gate voltage is directly minus 2,
+[80:15] source voltage is zero, so VGS is minus 2,
+[80:22] okay, now write IDSS 1 minus VGS by VP whole square,
+[80:38] IDSS means 10 milliampere,
+[80:51] so this is done, 1 by 4 means 3 by 4, 9 by 16,
+[80:56] so 90 by 16, 16 580, 100, 16 696, 40, 16 232, 5.625 milliampere,
+[81:07] if this happens, then VDS will be 16 minus ID into 2k,
+[81:13] 5.625 means 11.25, 11.25 means 4.75 volt,
+[81:23] okay, this is done,
+[81:26] tell me, all the branches' current and voltage are gone,
+[81:29] all the branches' current and voltage are gone,
+[81:32] is it clear, come on, try the next one,
+[81:37] now the IDSS is 8 milliampere,
+[81:40] see this time you removed the battery from here,
+[81:43] what is this, self-bias is here, now it will be quadratic, do it,
+[82:40] okay,
+[83:06] tell me, do it,
+[83:09] see, IG is 0,
+[83:13] 0 minus ID into 1,
+[83:19] now first take the fund of milliampere and kilo ohm,
+[83:38] okay,
+[83:54] now see, open the square of it,
+[84:08] okay,
+[84:15] now this quadratic is 8ID square by 36
+[84:24] plus 8 equal to 0,
+[84:28] now see the solution of this quadratic,
+[84:35] this is quadratic,
+[84:39] 13.912 and 2.587,
+[84:45] now obviously our 13.912 is such a big current that it is bigger than IDSS,
+[84:52] which cannot be,
+[84:54] it cannot be bigger than IDSS,
+[84:56] so you can ignore it directly,
+[85:00] you understand, IDSS is your maximum current,
+[85:06] so this is wrong,
+[85:08] now if you want VDS,
+[85:11] so you will say 20 minus ID into 3.3 minus ID into 1,
+[85:29] 9.6496,
+[85:34] say this is what is coming,
+[85:36] this is what is coming and you can also say VGS minus ID minus 2.587,
+[85:46] okay, so see when two values come, then which ID do we have to choose first,
+[85:57] here we said that the second thing is that the ID should be smaller than IDSS,
+[86:06] the third thing is VGS should be greater than VP and VDS should be your positive,
+[86:16] you decide from this type that which value you want to take,
+[86:19] ID should be less than saturation current,
+[86:22] VGS should be bigger than your VP otherwise it will be pinch off,
+[86:27] so if you take this here minus 13.912,
+[86:34] so VGS should be minus 13.9 which would have been smaller than VP,
+[86:40] VGS would have been minus 13.9 which would have been smaller than VP and as per this graph,
+[86:45] see you cannot go behind VP, you cannot go behind VP,
+[86:50] do you understand, say this thing is clear,
+[86:54] see the next one, see the next one again from the self bias,
+[86:59] you have to tell RS and RD, ID is given 2.5, IDSS is 3, sorry 6, VP is minus 3,
+[87:07] come on, this one will be easy for you,
+[87:12] you have to tell RS and RD, there is no need for a quadratic here,
+[87:18] what will happen without quadratic,
+[87:53] 8.8759,
+[88:17] something else is coming to us,
+[88:24] 8.87,
+[88:36] okay, at least tell me, do it, it's wrong,
+[88:41] come on, see, it's here, see what to do here, that you are given ID,
+[88:49] 2.5 milli ampere, it is IDSS 1 minus VGS by VP,
+[89:07] minus 3,
+[89:08] so from here, VGS will come out,
+[89:15] how much is VGS coming out,
+[89:27] minus 1.0635 volt, now if you see VGS here,
+[89:35] KVL will come, minus ID will be RS,
+[89:51] so if you take out RS from here, minus VGS by ID,
+[90:05] 0.4254 kilo ohm, okay, and what will you have to do for RD,
+[90:14] for RD it is simple, the voltage above is 20, the voltage below is 12 by ID,
+[90:21] so 8, 8 into 432, so 3.2 kilo ohm,
+[90:29] yeah, RD was easy, anyone can tell from the circuit,
+[90:33] RD can tell anyone, correct,
+[90:38] see next, this is connected to BJT and JFET,
+[90:41] given beta equal to 80 for BJT, IDSS 8, VP minus 4, calculate VD,
+[91:02] okay,
+[91:19] first try to take out ID,
+[91:22] the way you know, first write VGS, then put quadratic, try to take out ID,
+[91:28] first you tell me how much is the ID,
+[91:32] if the ID comes out, then all your work will be done,
+[91:38] hello, hello X, very late in the class, after 1.5 hours,
+[91:57] so what will you do, first you take out VGS, minus ID into 2.4,
+[92:57] so see, I added value here,
+[93:06] now how much will it be, 0.36 into 8, 240, 288, so 2.88,
+[93:13] ID square minus 4.8, 9.6,
+[93:18] here it is,
+[93:37] 2.62 or 1.06,
+[93:40] tell me, are these the values that you are getting,
+[93:51] tell me, are these the values that you are getting, now check VGS on both,
+[93:57] 1 minus 6.288,
+[94:15] 2.544,
+[94:20] see this voltage is less than VP,
+[94:22] so this answer is wrong, it cannot be taken, you will have to take a small one,
+[94:29] now this one is here, you have 1.06,
+[94:34] okay 1.06, this current must be coming here too,
+[94:42] can you tell me the current of base from this,
+[94:45] IB will be 1.06 by 1 plus beta,
+[94:55] see how nice the question is, by connecting BJT and JFET,
+[95:02] 13.086 micro ampere,
+[95:05] now you put KVL, so 16 minus 470 IB minus 0.7 equal to VD,
+[95:22] so VD will come from here,
+[95:29] 9.149,
+[95:35] did you understand, tell me, how did we use BJT here,
+[95:40] did it clear, come on, come on, one last question,
+[95:52] determine the value of RSFVD is 12, VGS is minus 2,
+[95:58] this is given 12 and this is given minus 2,
+[96:03] easy, do it,
+[96:20] no quadratic is required in this actually,
+[96:34] now you understood, how to ask questions about JFET biasing,
+[96:49] this too we will do all the multi-stage things like amplifier, frequency, response,
+[96:53] multi-stage, JFET, and this too just think that in the next two days,
+[97:00] all this is so small, speed will run in the same MOSFET,
+[97:04] in MOSFET too, in 4-5 days maximum, in 4-5 classes,
+[97:09] your gate's relevant portion will end very easily,
+[97:12] 2.902, see what I do first, I take out ID,
+[97:17] the simple way to take out ID is 16 minus 12 by 1.8, 40 by 18, 20 by 9,
+[97:30] milli ampere, this is here, now the gate current is zero, that is why take out VG from the voltage
+[97:35] division, 16 into 47 by 138, okay, so now if you want source voltage,
+[97:58] so you will subtract these drops,
+[98:06] 3.45, now take out RS because the current is the same in the source,
+[98:17] the drain current is also in the source, so the same current remains divided by 20 upon 9,
+[98:25] 1.552 kilo ohms, understand, this is what is coming,
+[98:37] you are telling the right ID, VG, VG is my right,
+[98:47] 3.35 is given,
+[98:54] this is 1.552, and when VGS was minus 2, yes, you are right, so here it would have been plus,
+[99:24] 3.352, okay, yes, 3.352, is it clear, so you can do this type,
+[99:53] and look, this is your assignment, you will be able to do this, no problem should come to you,
+[100:01] and look, from here, you have completed your chapters of BJT and diode PYQs,
+[100:15] and if you join the academy, then plus and iconic, you have two offerings,
+[100:19] you are getting the top educator, you are getting the entire study material app,
+[100:23] test series, there is a custom doubt solving feature, only if there is a doubt in the
+[100:28] night question, then you will get the video solution, printed notes, one-to-one mentorship strategy and
+[100:34] study plan, and interactive open house session, all these features are for the children of Iconic,
+[100:41] and you have to do it, when you join the academy, you have to choose the plan,
+[100:45] you have to decide the duration, and you have to apply my code, and look, if you are not an academy
+[100:53] user, then you will get the coupon code, that coupon code is for your discount, that is only for
+[100:59] only 14th of October, so if you want to join, join before 14th, okay, and if you see the results,
+[101:08] we have taken out 6 ranks in top 10, in electrical, you can be one of them next year,
+[101:15] if you join the academy using Ankit ESE, and if you are a financial issue, then you can pay your fees
+[101:24] month on month, here only EMI is approved in 2 hours, minimum paperwork, only basic
+[101:32] card and pan card is required, and you can repay it in the flexible time, in your family,
+[101:39] give the basic card and pan card to a person, whose salary comes, so that they can approve the EMI of the bank,
+[101:46] and this is the class of Brahmashr batch, it is going to start from 14th of October of Brahmashr Plus,
+[101:52] in this, Dhandesar and Gurupal sir are starting classes, what are you getting extra in this,
+[101:57] daily doubt clearing, daily practice with your DPP, there is an exclusive life class for batch,
+[102:04] practice strategy session, material is getting, test series is getting, gate academy paramount,
+[102:11] gate academy workbook, gate academy, PYQ, all these things are included in the batch,
+[102:16] if we talk about Brahmashr batch youtube, then you are getting content in it,
+[102:21] course is being completed by top educators, but you are not getting all these added benefits,
+[102:27] and we have also launched a subscription for 4 months, if the kids want to do it with gate
+[102:31] academy on 23rd, then again you can go for it using the code ANKIT ESE,
+[102:38] this is my telegram channel, join it so that you get regular updates and do not miss any class,
+[102:45] my dear Gaurav, I will talk to you today, and my brother Khalnaik, search once,
+[102:50] how to improve test series marks, I have taken a lot of sessions on this, you can see it,
+[102:56] and if you want a PDF session, then you know where to go, in the academy app homepage,
+[103:01] go to the community, go to discover, there I will get all my PDFs, you will get them,
+[103:07] you will download them, you will get all the notes of analog, thank you everyone,
+[103:12] thanks a lot kids, now we will meet tomorrow at the same time, same place,
+[103:15] tomorrow I will get the amplifier of JFET and if possible, I will also get the frequency response,
+[103:20] okay, so see you tomorrow at 11.30, let's crack it,

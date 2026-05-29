@@ -1,0 +1,225 @@
+Title: What is Precision Rectifier? Precision Rectifier Explained
+URL: https://www.youtube.com/watch?v=5HweBajP-5g
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video we will learn about the Precision Rectifier and we will also see how to
+[00:22] design it.
+[00:23] Now the first question which comes in our mind is what is Precision Rectifier and how
+[00:29] is it different from the normal rectifier circuit.
+[00:32] So first of all, let us understand that now in the previous videos we have learned about
+[00:37] the half-favorictifier circuit and if we assume this diode as an ideal diode in that case
+[00:44] whenever the sine wave is applied to this rectifier circuit then at the output we will get
+[00:49] either positive or negative half cycle.
+[00:51] So here as you can see we will get only positive half cycles and for the ideal half-favorictifier
+[00:58] the transfer characteristic will look like this.
+[01:01] It means whenever the input is negative at that time the output will be 0 and whenever
+[01:07] input is positive at that time the output will follow the input signal.
+[01:12] But in actual rectifier circuit this diode will conduct only when the applied input signal
+[01:17] is more than the 4 voltage drop across the diode and if you see the actual waveform of
+[01:23] the rectifier then it will look like this.
+[01:27] So the peak waveform of the rectifier will be slightly less than the ideal rectifier
+[01:31] output and if you see the transfer characteristic then it will look like this.
+[01:38] So as you can see we are here the diode will start conducting only when this applied input
+[01:43] signal is more than this threshold voltage.
+[01:47] Now this voltage drop across the diode will not be a much problem for the A0 to DC conversion
+[01:53] because in this case the applied input signal across the rectifier used to be much larger
+[01:58] than the threshold voltage drop across the diode.
+[02:02] But whenever this rectifier circuit is used for the small signal conditioning and signal
+[02:07] processing then it will not work.
+[02:10] For example let us say the input that is applied to this rectifier is smaller than this diode
+[02:16] voltage drop.
+[02:17] So in this case this rectifier circuit will not be able to rectify the signal.
+[02:22] For example let us say you want to demodulate the AM signal.
+[02:27] Now usually the received signal strength used to be much smaller than the diode voltage
+[02:32] drop.
+[02:33] So in this case suppose if you want to demodulate this envelope from the carrier signal
+[02:38] then it is not possible in case of the normal rectifier circuit.
+[02:43] So in such case the precision rectifier circuit is very useful.
+[02:48] So this circuit is designed using the opium and diode.
+[02:52] And in this rectifier circuit the diode acts like an ideal diode.
+[02:57] So the rectifier circuit will behave like an ideal rectifier circuit.
+[03:01] And because of this this circuit is also narrow as the super diode.
+[03:07] So if you see the transfer characteristic of this precision rectifier then it will look
+[03:11] like this.
+[03:13] So now let us understand how the circuit works.
+[03:16] So whenever the applied input signal is positive that means V is greater than 0 in this case
+[03:22] the diode will behave like an closed switch.
+[03:25] So if you see this circuit it is nothing but the buffer circuit.
+[03:29] So whatever input is applied to this positive terminal of the opium the same input will appear
+[03:35] across the output terminal.
+[03:38] That means whenever the input is greater than 0 at that time the output will follow the
+[03:43] input signal.
+[03:45] And whenever the input is less than 0 at that time the diode will get reversed biased.
+[03:51] And simply it will act as an open switch.
+[03:54] So in this case the output of this rectifier will be equal to 0 volt.
+[04:00] Now in this circuit this diode behaves like an ideal diode because if you observe this
+[04:04] circuit here this diode is connected in the feedback loop.
+[04:09] Now here let us assume that VF is the voltage drop across this diode.
+[04:14] And whenever this diode is connected in the closed loop configuration then the effective
+[04:18] voltage drop will get divided by the open loop gain of this opium.
+[04:23] So for example let us say the drop across this diode is equal to 0.7 volt and usually
+[04:30] the open loop gain of the opium is to be in the range of 10 to the power 5 to 10 to the
+[04:34] power 6.
+[04:36] So here let us assume that that is equal to 10 to the power 5.
+[04:40] So now if you see the effective forward voltage drop it will be approximately equal to 0.
+[04:45] So we can say that in this closed loop configuration the effective forward voltage drop across the
+[04:50] diode is equal to 0 volt and that is why it behaves like an ideal diode.
+[04:56] So now let us analyze this circuit for the different cases of input signal.
+[05:00] Now first of all let us assume that for the given input signal this diode is conducting
+[05:07] and also assume that the output of this opium is equal to VO dash.
+[05:13] So as this diode is conducting there will be a drop of 0.7 across this diode and here
+[05:18] we are assuming that the silicon diode is used in this rectifier circuit.
+[05:23] So the V out will be equal to this VO dash minus 0.7 volt or in another way we can say
+[05:30] that this VO dash will be equal to V out plus 0.7 volt.
+[05:35] So this will be the output of this opium.
+[05:38] Now if you observe this circuit here as this diode is conducting so this path will get
+[05:44] completed or we can say that the opium is operated in the negative feedback configuration
+[05:50] and we know that in this negative feedback configuration we can apply the concept of
+[05:54] either virtual ground or virtual short.
+[05:57] So let us quickly prove that even if this diode is connected in the feedback path then
+[06:01] also it is possible to apply the concept of virtual ground or virtual short.
+[06:07] Now for opium we know that the output voltage VO can be given as the open loop gain multiplied
+[06:14] by the difference between the two input signals.
+[06:17] So let us say the input that is applied at the positive terminal is equal to V plus and
+[06:22] the input which is applied at the negative input terminal is equal to V minus.
+[06:27] So the output will be equal to the open loop gain times the difference between the two
+[06:31] input signals.
+[06:33] Now this VO dash can be written as VO plus 0.7 volt and that will get divided by the
+[06:40] open loop gain.
+[06:43] Now as we have just seen the open loop gain of the opium is to be a very large.
+[06:47] So this quantity will be approximately equal to 0 and that will be equal to the difference
+[06:54] between the two input signals.
+[06:57] So we can say that whatever input that is applied at the positive terminal the same input
+[07:03] will appear at the negative terminal and if you observe over here this V minus is connected
+[07:09] to the output.
+[07:11] So at the output also we will get the input voltage that means V out will be equal to V
+[07:18] in.
+[07:19] So whenever this diode is conducting at that time the output voltage will follow the input
+[07:25] voltage and this diode will conduct only when the applied input voltage is greater than
+[07:30] 0.
+[07:32] Now similarly let us analyze the circuit for the negative input voltage.
+[07:38] Now for a moment here let us assume that this diode is non-conducting.
+[07:42] So if this diode is non-conducting in that case the open will operate in the open loop
+[07:47] configuration and if you observe at this node then the output at this node will be equal
+[07:54] to 0 because this V out is connected to the ground through this load resistance and as
+[08:00] this output terminal is also connected to the negative input terminal of the opium.
+[08:04] So at this terminal also the output will be equal to 0 volt.
+[08:08] Now if you observe over here the diode is reverse biased and one end of the diode is connected
+[08:14] to the 0 volt.
+[08:15] It means that at this terminal the voltage should be negative and that is only possible
+[08:21] whenever the applied input voltage to the diode is negative.
+[08:27] So now let us see the output waveform of this precision rectifier.
+[08:31] So let us say this sine wave is applied as an input to this rectifier circuit and if
+[08:35] you see the output then it will look like this.
+[08:38] So whenever the input is greater than 0 at that time the output will follow the input
+[08:43] signal and whenever input is less than 0 at that time the output will be equal to 0.
+[08:51] Now in this precision rectifier circuit there is a wall limitation.
+[08:55] So let us see that.
+[08:57] So let us assume that the input that is applied to this rectifier is less than 0 and we have
+[09:03] seen that in that case the output of the opium will be equal to the negative saturation
+[09:07] voltage and in this condition the opium will also operate in the opal loop condition.
+[09:15] Now whenever this input becomes positive at that time the first of all opium needs to
+[09:20] come out of this negative saturation voltage.
+[09:23] So it will take some time for the opium to come out from this negative saturation voltage
+[09:28] to some finite positive voltage.
+[09:31] Now this will not be a problem for the opium whenever it is operated at low frequencies
+[09:35] let us say it is operated at 50 to 100 hertz but whenever it is operated at much higher
+[09:42] frequencies let us say in 50 to 100 kilohertz at that time the output of the opium will
+[09:49] get distorted because the opium will take some time to come out from this negative saturation
+[09:54] voltage to some finite voltage.
+[09:57] And this will limit the maximum operating frequency for the rectifier circuit.
+[10:02] So suppose if you want to increase the operating frequency range then somehow we need to prevent
+[10:07] this opium from going into the negative saturation and that can be avoided by using this modified
+[10:13] circuit.
+[10:15] So using this circuit we can prevent the opium from going into the negative saturation.
+[10:20] So let us understand how this circuit works.
+[10:23] So in this circuit whenever input is greater than 0 at that time the output of the opium
+[10:29] will be equal to 0 because in this case this diode even will conduct and this diode
+[10:34] it will be off and the output will be equal to 0 volt and whenever this input is less
+[10:41] than 0 at that time this diode even will be off and this diode it will conduct and the
+[10:47] output of the rectifier circuit can be given as minus R2 by R1 times input voltage.
+[10:54] So if you see the output of this circuit it is never going into the saturation.
+[10:59] So in this way we can prevent this circuit from going into the negative saturation.
+[11:04] So now let us analyze this circuit and let us understand how this circuit works.
+[11:09] Now in this circuit for a moment let us assume that this diode even is conducting and whenever
+[11:15] this diode even will conduct at that time this path will get completed and because of
+[11:20] the completion of this path we can say that there is a negative feedback from output to
+[11:24] the input side.
+[11:26] It means that the opium is operated in the linear region and we can apply the concept of virtual
+[11:31] ground and we can say that this node over here will be at a ground potential because this
+[11:38] positive input terminal is also at a ground potential.
+[11:41] So as this diode even is conducting so there will be a 0.7 volt of voltage drop across
+[11:46] this diode.
+[11:48] So at this node the voltage will be equal to 0 minus 0.7 that is equal to minus 0.7 volt.
+[11:55] Now if you observe this output terminal it is connected to the ground through this resistor
+[12:00] RL and it is also connected to the ground terminal through this resistor R2.
+[12:05] It means that the output of the circuit will be equal to 0 volt.
+[12:10] So no current is flowing through this two resistors.
+[12:13] It means that the cathode of the diode D2 will be at a 0 voltage and you can say that
+[12:19] this diode D2 is non conducting.
+[12:21] Now as this diode even is conducting so some forward current will also flow through
+[12:25] this diode and it should flow in this direction.
+[12:29] So if you apply the KZ at this node then some finite amount of current should also come
+[12:34] into this node and that is only possible whenever the appell input signal is greater
+[12:39] than 0.
+[12:40] So we can conclude that whenever the input signal is greater than 0 at that time D1 will conduct
+[12:47] and you will remain off and the output of the opa will be equal to 0 volt.
+[12:52] Similarly now let us analyze the circuit for the negative input voltage.
+[12:57] So now here let us assume that the appellate input signal is less than 0 volt.
+[13:03] Now here for a moment let us assume that this diode D1 is conducting and if it is conducting
+[13:09] then there will be a closed loop between this output and input terminal and we can also
+[13:14] apply the concept of virtual ground.
+[13:16] So this node will be at a ground potential and as the appellate input is negative so
+[13:22] the current will flow from 0 to negative input voltage and to satisfy the KCL some finite
+[13:28] amount of current should also come into this node.
+[13:31] It means that the current that is flowing through the diode should flow in this direction.
+[13:37] But if this diode D1 is conducting the forward current should flow in this direction.
+[13:42] It means that this diode D1 is non-conducting.
+[13:46] So simply it will act as an open circuit and some finite amount of current is entering
+[13:51] to this node through this path.
+[13:55] It means that this diode D2 is conducting and the current is flowing in this direction.
+[14:01] So if we assume this conditions then the equivalent circuit will look like this.
+[14:06] So if you observe over here now the circuit gets completed through this diode D2 and
+[14:10] this resistor R2 and as there is a negative feedback we can once again apply the concept
+[14:16] of virtual ground.
+[14:18] So this node over here will be at a ground potential.
+[14:21] So now if we apply the KCL at this node then we can write minus V in divided by R1 that
+[14:28] is equal to V out divided by R2 and from this we can say that the output voltage V out
+[14:34] will be equal to minus R2 by R1 times input voltage.
+[14:40] So this is the output voltage whenever the append input signal is less than 0 volt.
+[14:46] So in this modified rectifier circuit the transfer characteristic will look like this.
+[14:52] It means that whenever the input is greater than 0 the output will remain 0 and whenever
+[14:58] input is less than 0 at that time the output can be given by the expression minus R2 by
+[15:03] R1 times V in.
+[15:05] So the slope of this line will be equal to minus R2 by R1.
+[15:11] Now let us see the output waveform of this rectifier circuit.
+[15:15] So if we apply the sine wave to this rectifier then the output waveform will look like this.
+[15:21] So during the positive half cycle output is 0 and during the negative half cycle output
+[15:27] will be equal to minus R2 by R1 times input voltage.
+[15:32] Similarly you can also show that whenever the directions of this diode D1 and D2 is reversed
+[15:38] at that time the transfer characteristic of this rectifier will look like this.
+[15:44] So here whenever the input is less than 0 at that time the output will be equal to 0 and
+[15:50] whenever input is greater than 0 at that time output will be equal to minus R2 by R1 times
+[15:56] input voltage.
+[15:58] So try to get the transfer characteristic for this circuit.
+[16:03] Now so far we have only discussed about the half-heurectivized circuit but using this circuit
+[16:08] it is also possible to design the precision full-heurectivized circuit.
+[16:12] So let us see using this circuit how we can design the full-heurectivized circuit.
+[16:18] Now for this circuit we understood that the output will be equal to 0 whenever the input
+[16:23] is greater than 0 and output will be equal to minus R2 by R1 times the input voltage whenever
+[16:30] the input is less than 0.
+[16:33] So by setting the value of this R2 and R1 we can set the gain of the output waveform.
+[16:39] Now here to design this full-heurectivized circuit the gain of this half-heurectifier is set
+[16:44] to minus 2.
+[16:46] So at this node the output waveform will look like this.
+[16:51] So whenever the input is equal to minus Vm at that time the output will be equal to 2Vm.
+[17:00] So here this yellow signal is the output waveform of this half-heurectifier and this blue signal
+[17:05] is the input which is applied to this half-heurectifier.
+[17:09] Now whenever we add these two signals then we will look at the waveform of the full-heurectifier.
+[17:15] So as you can see using the precision half-heurectifier and the added circuit it is easy to design
+[17:20] the precision full-heurectivized circuit.
+[17:23] So I hope in this video you understood how to design the precision half-heurectivized
+[17:27] circuit.
+[17:29] So if you have any question or suggestion do let me know in the comment section below.
+[17:33] If you like this video hit the like button and subscribe this channel for more such videos.

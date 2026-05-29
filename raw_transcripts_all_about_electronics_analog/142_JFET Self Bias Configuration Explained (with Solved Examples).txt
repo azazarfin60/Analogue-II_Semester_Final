@@ -1,0 +1,213 @@
+Title: JFET: Self Bias Configuration Explained (with Solved Examples)
+URL: https://www.youtube.com/watch?v=m165psz9SOM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous video, we have learned about the fixed bias configuration of the JFET.
+[00:22] So in this video, we will learn about the self-pious configuration.
+[00:27] Now this self-pious configuration has a certain advantage over the fixed bias configuration.
+[00:33] So if you look this configuration, this configuration requires only single power supply.
+[00:40] But here this resistor RX is connected at the end of this source terminal.
+[00:45] And the voltage drop across this resistor RS will determine the gate to source voltage
+[00:51] for this JFET.
+[00:53] So here there is a known need to apply the external biasing voltage to generate this gate
+[00:58] to source voltage.
+[01:00] And that is why this configuration is known as the self-pious configuration.
+[01:05] On the other hand, if you see this fixed bias configuration, then it requires the two power
+[01:09] supply.
+[01:11] So one needs to arrange one more negative power supply for this fixed bias configuration.
+[01:16] Apart from that, if you look over here, this drain current ID is directly related to this
+[01:22] voltage VGS.
+[01:24] So by any means, if this voltage VGG changes, in that case, the drain current ID and the
+[01:30] voltage VDS will change.
+[01:32] Or in other words, we can say that the operating point of this fixed bias configuration will
+[01:37] change.
+[01:39] And similarly, due to the external parameters, let's say if this drain current ID changes,
+[01:44] in that case also, the operating point of this configuration will change.
+[01:50] So we can say that in this fixed bias configuration, due to the external parameters, the operating
+[01:56] point of the JFET can change in the either direction.
+[02:01] But in case of the self-pious configuration, even if this drain current ID changes due
+[02:05] to the external parameters, let's say due to the temperature, then this configuration
+[02:10] is able to stabilize the operating point.
+[02:14] So let us understand this point.
+[02:17] Now inherently, the JFETs are much more thermally stable compared to the BJTs.
+[02:22] But let's say, due to some external parameter, the drain current ID of this configuration
+[02:28] has been changed.
+[02:30] So if this drain current ID increases, then the voltage, which is developing across this
+[02:35] resistor RS will increase.
+[02:38] Or in other words, we can say that this voltage VGS will increase.
+[02:43] And this increase in this voltage, which is will reduce the drain current ID.
+[02:48] So in this way, this self-bias configuration prevents the change in the drain current
+[02:53] and the voltage due to the external parameters.
+[02:56] And in this way, it stabilizes the operating point.
+[03:00] So these are some of the advantages of this self-bias configuration.
+[03:04] Now the circuit diagram, which is shown over here, is the self-bias configuration of the
+[03:09] JFET, which is used for the linear amplification of the AC signal.
+[03:15] But here, as we are interested in finding the DC operating point, so we will consider
+[03:19] all the AC sources as a zero.
+[03:22] So for the DC analysis, we can consider all the AC sources as zero and we can consider
+[03:28] all these coupling capacitors as open circuit.
+[03:31] So now for the DC analysis, the equivalent circuit will look like this.
+[03:37] Now for the JFET, as the gate current IG is approximately equal to zero.
+[03:42] So we can say that there will not be any flow of current through this resistor RG.
+[03:47] And due to that, there will not be any voltage drop across this resistor RG.
+[03:52] So for the DC analysis, we can consider this resistor RG as a short circuit.
+[03:58] And now the equivalent circuit will look like this.
+[04:02] So now for the given circuit, let us find out the operating current ID and the voltage
+[04:07] VDS.
+[04:09] Now here, for the n-general JFET, the drain current ID will flow from the drain terminal
+[04:15] towards the source terminal.
+[04:17] And the same drain current ID will also flow through this resistor RS.
+[04:22] So here, let's say the voltage drop across this resistor RS is equal to VRS and the voltage
+[04:29] drop across this resistor RG is equal to VRD.
+[04:34] Now if we apply the KVL in this loop, then we can say that the voltage VDS is equal
+[04:41] to minus VRS.
+[04:44] And this voltage minus VRS is equal to minus ID times RS.
+[04:50] So this will be the control voltage VGS, which will control the drain current ID for
+[04:55] the given configuration.
+[04:57] And now here, we are assuming that the given circuit is operating in the saturation region.
+[05:03] So for the active region or the saturation region, the drain current ID can be given as
+[05:09] IDSS times 1 minus VGS divided by VP whole square.
+[05:16] So in this expression, let us put the value of this VGS.
+[05:21] So the drain current ID will become IDSS times 1 plus ID times RS divided by VP whole square.
+[05:34] So if we solve this expression, then this expression will be in the form of quadratic equation.
+[05:40] And it will look like A times ID square plus B times ID plus C is equal to 0.
+[05:49] So if we solve this quadratic equation, then we will get the value of this drain current
+[05:53] ID.
+[05:55] And once we know the value of this drain current ID, then we can easily find the voltage
+[06:00] VDS by applying the KVL in this outer loop.
+[06:06] So if we apply the KVL, then we can write VDD minus VRD minus VDS minus VRS is equal to
+[06:18] 0.
+[06:19] Or we can say that voltage VDS is equal to VDD minus VRD minus VRS.
+[06:29] Now here the voltage VRD is equal to ID times RD and the voltage VRS is equal to ID times
+[06:36] RS.
+[06:37] So we can say that the voltage VDS is equal to VDD minus ID times RD minus ID times RS
+[06:47] that means this voltage VDS is equal to VDD minus ID times RD plus RS.
+[06:59] So this will be the value of voltage VDS.
+[07:03] Now here the voltage VDS can be given as ID times RS and the voltage VD can be given as
+[07:13] VDS plus VS because the voltage VDS is equal to VDD minus VS.
+[07:20] So from this we can say that the voltage VD is equal to VDD minus ID times RD.
+[07:29] So in this way we can find this voltage VDS and the drain current ID for this self-biased
+[07:34] configuration.
+[07:36] So now let us take some examples so that the procedure will get clear to you.
+[07:43] So in this example we have been given this n-channel JFET and it is configured in the self-biased
+[07:49] configuration and for the given configuration we have been asked to find the voltage VDS,
+[07:55] current ID and the voltage VDS.
+[07:59] Now here once again let us assume that for the JFET the gate current IG is approximately
+[08:05] equal to 0.
+[08:07] That means there will not be any voltage drop across this when we come resistor and
+[08:12] due to that we can say that the voltage VDS is equal to minus ID times RS.
+[08:20] Now for the given circuit let us assume that it is operating in the saturation region
+[08:25] and using this let us find out the value of the drain current ID and the voltage VDS and
+[08:31] once we find the values then we will validate our assumption.
+[08:36] So here in the saturation region the drain current ID can be given as ID SS times 1-VGS
+[08:44] divided by BP whole square.
+[08:47] Now for the given circuit ID SS is equal to 8 milliampere and the value of VPS is equal
+[08:54] to minus 6 volt.
+[08:56] So we can write this expression as 1 minus ID divided by 6 whole square and if we simplify
+[09:04] it then we can write it as ID is equal to 8 divided by 36 multiplied by 36 minus 12
+[09:14] times ID plus ID square and if we further simplify it then we can write it as ID square minus
+[09:24] 16.5 times ID plus 36 is equal to 0.
+[09:31] So if we solve this quadratic expression then we will get the 2 values of ID.
+[09:36] The first value of ID will be equal to 13.9 milliampere and the second value of ID will
+[09:44] be equal to 2.587 milliampere.
+[09:49] Now if you look at the first value it is already greater than this current ID SS that means
+[09:54] this value cannot be the value of the drain current.
+[09:58] So the value of drain current ID is equal to 2.57 milliampere.
+[10:03] So using this value now let us find out the value of voltage VDS.
+[10:09] Now we know that the voltage VDS can be given as VDD minus ID times RD plus RS.
+[10:19] Now here the value of voltage VDD is equal to 18 volt and the value of drain current ID
+[10:25] is equal to 2.587 milliampere.
+[10:28] In the value of RD and RS are 3 kilo ohm and 1 kilo respectively.
+[10:34] So if we solve it then the value of VDS will come around as 7.652 volt.
+[10:41] So this will be the value of voltage VDS and the voltage VGS can be given as minus ID
+[10:48] times RS that is equal to minus 2.587 ampere times 1 kilo ohm that is equal to minus 2.57
+[11:00] volt.
+[11:01] So this will be the value of voltage VGS.
+[11:05] So now let us validate our assumption.
+[11:09] So now for the internal JFIT to operate the circuit in the saturation region the value
+[11:15] of this voltage VDS should be greater than or equal to VGS minus VP.
+[11:21] Now here the value of VGS is equal to minus 2.57 volt and the value of VP is equal to minus
+[11:28] 6 volt.
+[11:30] So from this the value of voltage VGS minus VP will be equal to 3.413 volt and if you
+[11:39] observe over here the value of voltage VDS is equal to 7.652 volt.
+[11:44] So it is already greater than the value of voltage VGS minus VP.
+[11:48] That means the circuit is already operating in the saturation region and we can use this
+[11:53] expression for finding the value of current ID and the voltage VDS.
+[11:58] Alright so now let us take one more example for the P-channel JFIT.
+[12:03] So in this example the P-channel JFIT is configured in the self-pile configuration and for the
+[12:09] given configuration we have been asked to find the voltage VGS current ID in the voltage
+[12:15] VDS.
+[12:17] Now for the P-channel JFIT if you look the circuit it looks almost identical to the internal
+[12:22] JFIT circuit but here now the biasing voltages have been reversed.
+[12:28] So here now this voltage VDD is negative and the current ID will flow from the source
+[12:34] terminal towards the drain terminal.
+[12:37] Apart from that here this pinch of voltage VPS also positive.
+[12:42] So for the given configuration now let us find out all these parameters.
+[12:48] So once again here let us assume that the current ID for the given circuit is equal to 0
+[12:53] mp here.
+[12:55] So there will not be any voltage drop across this 1VGOM resistor and due to that now the
+[13:00] voltage VGS can be given as id times RS because now the voltage drop across this 1KM resistor
+[13:08] will be in this direction.
+[13:11] So from this we can find the value of voltage VGS but before that we need to find the value
+[13:17] of the strain current ID.
+[13:20] So to find that here let us assume that the circuit is already operating in the saturation
+[13:25] region.
+[13:26] So for that we can use this expression of id that is equal to ids times 1-VGS divided
+[13:34] by VEP whole square.
+[13:38] So here the drain current ID s is equal to 10 mA and the value of VEP is equal to 6V.
+[13:46] So by putting this values we can write this expression as 10 times 1-ID divided by 6 whole
+[13:53] square.
+[13:56] So if we simplify this expression then we can say that id is equal to 10 divided by 36
+[14:03] times 36-12 times id plus id square and if we further simplify it then the quadratic expression
+[14:13] can be written as id square minus 15.6 times id plus 36 is equal to 0 and if we solve this
+[14:23] expression then we will get the 2 values of id.
+[14:27] The first value of id will be equal to 12.78 mA and the second value of id will be equal
+[14:34] to 2.816 mA.
+[14:38] Now if you observe the first value it is already greater than this current ids that means
+[14:44] the first value cannot be the drain current.
+[14:47] So the value of drain current id for the given circuit is equal to 2.816 mA and once we
+[14:54] know the value of this drain current id then we can easily find this voltage VTS and this
+[14:59] voltage VDS.
+[15:02] So first of all let us find out the voltage VDS.
+[15:06] So to find the voltage VDS let us write the KVL in the outer loop.
+[15:12] So if we apply the KVL then we can write minus VRS plus VDS minus VDS minus of minus 15
+[15:24] is equal to 0.
+[15:26] That means voltage VDS will be equal to minus 15 plus VRS plus VDS.
+[15:35] Now here VRS is equal to id times RS and the VDS is equal to id times RD.
+[15:44] So here the value of id is equal to 2.816 mA.
+[15:49] So we can say that the VDS is equal to minus 15 plus 2.816 times 2 kW plus 1 kW.
+[15:58] That means voltage VDS will be equal to minus 15 plus 2.816 times 3 and the value of VDS
+[16:07] will come out as minus 6.552.
+[16:12] So this will be the value of voltage VDS.
+[16:16] Similarly now the value of voltage VDS will be equal to id times RS.
+[16:23] So it will be equal to 2.816 mA times 1 kW.
+[16:29] That is equal to 2.816 volt.
+[16:32] So in this way we can also find the value of voltage VDS.
+[16:37] Now here let us validate our assumption that the given circuit is off-protect in the saturation
+[16:42] region.
+[16:44] Now we know that to operate the pitch and output in the saturation region the voltage VDS
+[16:50] should be less than or equal to VGS minus VP.
+[16:55] Now here the voltage VDS is equal to 2.816 volt and the VP is equal to 6 volt.
+[17:02] That means this VGS minus VP is equal to minus 3.814 volt.
+[17:09] Now here the value of VDS is already greater than this value.
+[17:14] That means the given circuit is indeed operating in the saturation region.
+[17:19] So in this way for the PGNJFVD also we can find the value of voltage VGS, current id
+[17:25] and the value of voltage VDS.
+[17:28] And here by changing the value of this source resistor RS we can change the operating point
+[17:34] of the given circuit.
+[17:37] So now let us say if I change the value of this source resistor RS from 1 kW to finite
+[17:43] home then the value of voltage VGS, current id and the voltage VDS will change.
+[17:49] So for the given circuit try to find the value of voltage VGS, current id and the value
+[17:55] of voltage VDS.
+[17:57] And do let me know your values in the comment section.
+[18:01] And after finding the values also vered it that the given circuit is operating in the
+[18:06] saturation region.
+[18:08] So this is all about the self-biased configuration of the NJFVD.
+[18:12] So I hope in this video you understood how the JFD can be configured in the self-biased
+[18:17] configuration.
+[18:19] So in the next video we will learn about the voltage divider bias configuration.
+[18:24] So if you have any question or suggestion do let me know here in the comment section
+[18:28] below.
+[18:29] If you like this video hit the like button and subscribe with your channel for more such
+[18:33] videos.

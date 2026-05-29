@@ -1,0 +1,77 @@
+Title: Operational Amplifier (Op-Amp) / Curent Mirror ( Analog Electronics) | Quiz # 418
+URL: https://www.youtube.com/watch?v=NUNULlCR_Nk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and we have been asked to find the
+[00:15] output voltage of the given op-m.
+[00:18] So to find that, first of all let us consider only this MOSFET based circuit and let us
+[00:23] find the current through this MOSFET M3.
+[00:26] So here we have been given that this MOSFET M1 M2 M3 are the matched pairs.
+[00:32] That means their characteristics are also same.
+[00:35] And if you observe over here, then these two MOSFETs M2 and M3 forms the current mirror.
+[00:42] That means whatever current that is flowing through this MOSFET M2, the same current will
+[00:46] also flow through this MOSFET M3.
+[00:49] So let us say the current through this MOSFET M3 is equal to ID3.
+[00:54] And similarly, the current through the MOSFET M2 and M1 are ID1 and ID2.
+[01:03] So here, since M2 and M3 are identical and since they forms the current mirror, so this
+[01:10] ID3 is equal to ID2.
+[01:14] Therefore that first of all we need to find this current ID2.
+[01:20] So if you observe over here and this 1 milliampere current is getting divided between the MOSFET
+[01:25] M1 and M2 and since the MOSFET M1 and M2 are identical, so this current will get equal
+[01:32] divided between the MOSFET M1 and M2.
+[01:35] That means here this current and this current will be equal to 0.5 milliampere and since
+[01:43] the current through the gate terminals are negligible.
+[01:45] So we can say that this drain currents of the both MOSFETs is equal to 0.5 milliampere.
+[01:51] That means here this ID1 is equal to ID2 is equal to 0.5 milliampere and we know that
+[02:01] this ID2 is equal to ID3.
+[02:05] That means this ID3 will also be equal to 0.5 milliampere.
+[02:11] That means this current will be equal to 0.5 milliampere.
+[02:16] So now since we got this current, so with the help of this current, we can easily find
+[02:21] the output voltage of the given opm.
+[02:24] So here we know that this current is equal to 0.5 milliampere and here we have been given
+[02:30] that the given opm is the IDL opm.
+[02:34] That means no current is flowing into the opm terminals.
+[02:37] Therefore to satisfy the KCL at this node, this current should also be equal to 0.5 milliampere.
+[02:46] And here since the non-inverting terminal of the opm is connected to the ground terminal.
+[02:51] So due to the virtual ground, this node will also be at the ground potential.
+[02:57] That means the voltage at this node is also equal to 0.
+[03:02] So now to find this output voltage, we need to first of all know that which one of the
+[03:07] following diode is conducting.
+[03:09] So let's say this diode is D1 while this diode is equal to D2.
+[03:14] So first of all, let us assume that this diode D1 is conducting.
+[03:19] So if this diode D1 is conducting, then the voltage drop across it will be equal to 0.7
+[03:25] volt.
+[03:26] And we know that due to the virtual ground, this node will be at the ground potential.
+[03:33] That means if you see the output voltage, then in that case this output voltage will
+[03:37] be equal to minus 0.7 volt.
+[03:41] And if the output voltage is minus 0.7 volt, then this diode D2 should remain off.
+[03:48] Because here the voltage at the end of this diode D2 is equal to minus 0.7 volt, while
+[03:53] the voltage at this node is equal to 0.
+[03:56] Therefore in that condition, this diode D2 should remain off.
+[04:01] And if this diode D2 remains off, then the entire current should flow through this diode
+[04:06] D1.
+[04:07] And since we are assuming that this diode D1 is conducting, so the current through this
+[04:12] diode D1 should flow in this forward direction.
+[04:16] But moreover, we also know that the current through this MOSFET M3 is equal to 0.5 milli
+[04:21] ampere and it is flowing in this direction.
+[04:25] So if this diode D1 is conducting, then here the KCL at this node will not get satisfied
+[04:31] because the current through the MOSFET is flowing in this direction, while the current
+[04:36] through the diode is following in opposite direction.
+[04:39] So to satisfy the KCL at this node, the current through the diode should be negative.
+[04:44] And because of that, we can say that this diode D1 will remain in the off condition and
+[04:50] therefore only the second diode D2 will only conduct.
+[04:54] That means this D1 will remain in the off condition and the current will flow through
+[04:58] this diode D2.
+[05:00] So here this current is equal to 0.5 milli ampere and the same current should also flow
+[05:07] through this path.
+[05:08] And of course, this node will be at the virtual ground.
+[05:14] So now if we are to the KCL in this loop, then we can say that this output voltage V
+[05:19] out is equal to the drop across this diode that is 0.7 volt plus the voltage drop across
+[05:26] this 1 kilometer resistor.
+[05:29] And that is equal to this 1 kilometer times 0.5 milli ampere because here the same current
+[05:37] of 0.5 milli ampere should also flow through this loop.
+[05:41] That means the output voltage V out is equal to 0.7 volt plus 0.5 volt and that is equal
+[05:49] to 1.2 volt.
+[05:52] That means the output voltage of the given circuit is equal to 1.2 volt.
+[05:57] And therefore we can say that for the given question, this leads the current answer.

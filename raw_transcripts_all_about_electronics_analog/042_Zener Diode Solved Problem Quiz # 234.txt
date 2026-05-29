@@ -1,0 +1,60 @@
+Title: Zener Diode Solved Problem | Quiz # 234
+URL: https://www.youtube.com/watch?v=osoZmECTzCE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been asked to find the minimum value of this resistor
+[00:20] R in such a way that the voltage across it does not go below the 6V.
+[00:26] So in this circuit, the Xenor diode is used as a voltage regulator.
+[00:31] Now many of you have commented the answer as a 75 ohm, but that answer would be true
+[00:37] when the Xenor Nee current in the circuit is 0.
+[00:40] So here if you observe, we have been also given that the Xenor Nee current is equal to 5
+[00:46] milliampere.
+[00:47] So let us see how to find the answer.
+[00:50] So let us say the current which is supplied by the source is equal to IS.
+[00:56] While the current which is going into the Xenor diode is equal to IZ, while the current
+[01:01] which is flowing through this resistor R is equal to IR.
+[01:05] So if we apply the KCL, then we can say that this supply current IS is equal to IZ plus
+[01:13] IR.
+[01:15] Now here this Xenor Nee current or the IZ K is the minimum current which is required
+[01:20] by the Xenor diode so that it can operate in the breakdown region.
+[01:24] That means this is the minimum current which should flow through the Xenor diode so that
+[01:29] it can operate in the breakdown region.
+[01:31] So in this case, this IZ minimum is equal to IZ K.
+[01:38] So whenever this IZ is the minimum at that time, this current IR will be maximum.
+[01:44] That means IR max can be given as IS minus IZ K.
+[01:52] So here IR max is the maximum current which can flow through this resistor R in such
+[01:57] a way that the Xenor diode still operates in the breakdown region.
+[02:01] So if this current IR is more than IR max, in that case the current which is flowing
+[02:06] through the Xenor diode will be less than the IZ K.
+[02:10] And in that case it won't operate in the breakdown region.
+[02:13] That means whenever this IR is greater than IR max, in that case this IZ is less than
+[02:21] IZ K.
+[02:23] And in this condition this Xenor diode won't operate in the breakdown region.
+[02:27] That means it won't able to maintain the 6 volt across the 2 terminals.
+[02:32] And in that case the voltage across this resistor will be less than 6 volt.
+[02:36] That means this is the maximum value of the current which can flow through this resistor.
+[02:42] So for that first of all let us find the value of this supply current.
+[02:46] So here we are assuming that the Xenor diode is still operating in the breakdown region.
+[02:51] That means voltage at this node will be equal to 6 volt.
+[02:55] So we can say that this current IS is equal to 10 volt minus 6 volt divided by 50 ohm.
+[03:04] That is equal to 80 milliampere.
+[03:07] So this is the current which is flowing through this 50 ohm resistor.
+[03:11] And this current IS will get divided into the 2 branches.
+[03:16] So from this we can say that this IR max is equal to 80 milliampere minus IZ K.
+[03:25] That is equal to 5 milliampere.
+[03:29] That means the value of IR max is equal to 75 milliampere.
+[03:34] So this is the maximum current up to which this Xenor diode will operate in the breakdown region.
+[03:40] That means at that time the voltage across this resistor R would be equal to 6 volt.
+[03:45] And at that time the value of R would be minimum.
+[03:49] That means R minimum would be equal to this VZ divided by IR max.
+[03:58] That is equal to 6 volt divided by 75 milliampere.
+[04:04] That means the minimum value R minimum is equal to 80 ohm.
+[04:09] So this is the minimum value of the resistor R up to which this Xenor diode still operates
+[04:14] in the breakdown region.
+[04:16] So if the value of R goes below this R minimum then the Xenor diode won't operate in the
+[04:22] breakdown region.
+[04:23] Because at that time the value of this current IZ would be less than IZ K.
+[04:29] So this is the minimum value of the resistor R for which the voltage across this resistor
+[04:33] R will still remain the 6 volt.
+[04:37] That means for the given question the answer is 80 ohm.

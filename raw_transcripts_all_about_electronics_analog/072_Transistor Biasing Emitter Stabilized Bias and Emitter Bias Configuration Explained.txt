@@ -1,0 +1,176 @@
+Title: Transistor Biasing: Emitter Stabilized Bias and Emitter Bias Configuration Explained
+URL: https://www.youtube.com/watch?v=kyneiV_KhMw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] So in this video, we will learn about the emitter bias configuration.
+[00:21] Now if you follow the previous video on the BJT, then we have already discussed about
+[00:25] the fixed bias configuration.
+[00:28] But we had seen that with temperature as the value of the beta changes, then the operating
+[00:34] point also changes.
+[00:37] So now let us see how we can improve the performance of this fixed bias configuration.
+[00:43] And now let us connect the resistor at this emitter terminal.
+[00:47] Now this emitter resistor will act as a feedback resistor.
+[00:51] So with temperature as the value of the beta changes, then for the fixed value of this
+[00:56] base current, the collector current will also change.
+[01:00] And hence this emitter current IE will also change.
+[01:04] For example, if the value of the beta increases, then this collector current IC will also
+[01:09] increase.
+[01:11] And due to that, the voltage drop across this emitter resistor will also increase.
+[01:17] And due to the increase in this voltage drop, the base voltage VB will also increase.
+[01:23] And due to the increase in this base voltage, the base current IB will reduce.
+[01:29] So in this way, this emitter resistor provides the negative feedback and it tries to maintain
+[01:34] the operating point.
+[01:36] So now let us do the DC analysis of the circuit and let us understand how well this circuit
+[01:42] is able to maintain the operating point.
+[01:46] So if we read the same circuit, then it can be written like this.
+[01:51] So first of all, now let us write down the KVL equation on the input side.
+[01:58] So applying the KVL equation, we can write voltage VBB minus IB times RB minus VBE minus
+[02:12] IE times RE that is equal to 0.
+[02:17] Now here, we know that this emitter current IE can be given as beta plus 1 times IB.
+[02:26] That means the base current IB is equal to voltage VBB minus VBE divided by RB plus beta
+[02:38] plus 1 times RE.
+[02:42] So this will be the value of the base current and we know that the current IC can be given
+[02:49] as beta times IB.
+[02:53] So once we know the value of this current, then we can easily find the value of the voltage
+[02:57] VCE.
+[03:00] So now let us apply the KVL equation on this output side.
+[03:05] So applying the KVL equation, we can write voltage VCC minus IC times RC minus voltage
+[03:14] VCE minus IE times RE and that is equal to 0.
+[03:23] So basically we have written the KVL equation on this output side and from this we can write
+[03:30] voltage VCE is equal to VCC minus IC times RC minus IE times RE and as we are aware, I
+[03:45] C is equal to alpha times IE.
+[03:48] We can approximately write this IC is equal to IE as the value of alpha is close to unity.
+[03:56] That means we can write this expression as voltage VCE is equal to VCC minus IC times RC
+[04:05] plus RE.
+[04:08] So in this way we can get the value of the voltage VCE and this is the expression for the base
+[04:15] current, the current current and the voltage VCE.
+[04:19] Now let us take one example and let us see in this configuration how the operating point
+[04:24] changes with the change in the value of the beta.
+[04:29] So let us say we want to find the operating point for the given circuit.
+[04:33] So first of all let us find out the base current using this expression.
+[04:39] That means the base current IB can be given as 10 volt minus 0.7 volt divided by 400
+[04:48] kilo ohm plus 101 times 1 kilo ohm because here the value of beta is equal to 100 and
+[04:59] if we simplify it then the value of the base current IB will be equal to 18.56 to micro
+[05:07] ampere and from this we can get the value of the current current.
+[05:13] So this current IC is equal to beta times IB that means the value of the current IC
+[05:19] is equal to 100 times IB that is equal to 1.856 milli ampere and once we know the value
+[05:30] of this current then we can easily find the value of the voltage VCE and the voltage VCE
+[05:37] can be found using this expression that means voltage VCE is equal to 12 volt minus 1.856
+[05:47] times 3 kilo ohm that is equal to 6.432 volt.
+[05:55] That means here for the given values of the registers and the basing voltages the value
+[06:00] of VCE is equal to 6.432 volt and the current IC is equal to 1.856 milli ampere.
+[06:09] That means the operating point would be somewhere around here because here the maximum value
+[06:15] of the current IC will be equal to 4 milli ampere while the value of VCC is equal to 12
+[06:21] volt.
+[06:22] So now let us find the operating point when the value of the beta changes to 50.
+[06:29] So here due to the change in the value of beta this basing current IB will also change.
+[06:35] So now this basing current IB can be given as 10 volt minus 0.7 volt divided by 400 kilo
+[06:44] ohm plus 51 times 1 kilo ohm and if we calculate the value then this basing current IB will be
+[06:53] equal to 25.05 micro ampere and the collector current IC can be given as beta times IB.
+[07:04] That means this collector current IC is equal to 50 times IB that is equal to 50 times 25.05
+[07:14] micro ampere.
+[07:17] That means the value of this collector current IC is equal to 1.252 milli ampere and from
+[07:25] this if you calculate the value of VCE then the voltage VCE will be equal to 12 volt minus
+[07:34] 1.252 milli ampere times 3 kilo ohm.
+[07:40] That means the value of voltage VCE is equal to 8.24 volt.
+[07:46] That means with the change in the value of beta the voltage VCE will become 8.24 volt
+[07:52] and the IC will become 1.252 milli ampere.
+[07:56] That means now the operating point would be somewhere around here.
+[08:01] So with this emitter resistor although the variation in the operating point has been reduced
+[08:06] still there is a variation in the operating point.
+[08:10] So if you observe over here with this feedback resistor RE the basing current IB can be
+[08:15] given by this expression and the collector current IC is equal to beta times IB.
+[08:22] So here if the value of RB is much smaller than this term then the beta in the numerator
+[08:29] and the denominator will get cancelled out and in that way the IC will become independent
+[08:34] of the value of beta.
+[08:36] So let us take the extreme case when the value of the RB is equal to 0.
+[08:42] So in this case the voltage VB is equal to VBB.
+[08:49] That means the voltage over here is equal to VBB and the emitter voltage VCE can be given
+[08:55] as VBB minus VBE.
+[09:02] So this emitter current IE can be given as voltage VE divided by RE.
+[09:08] That is equal to voltage VBB minus VBE divided by RE.
+[09:16] And here the collector current IC is approximately equal to emitter current because we know that
+[09:23] the IC is equal to alpha times I that is equal to beta divided by beta plus 1 times IE.
+[09:33] So as far as the value of beta is very large this collector current IC is almost independent
+[09:39] of the value of beta.
+[09:41] So in this configuration the collector current IC is almost independent of the value of beta.
+[09:48] But in reality to use this circuit in the common emitter configuration there has to have
+[09:53] some base resistance so that the AC signal can be coupled between this base and the emitter
+[09:59] terminal.
+[10:01] So in that case to make this current almost independent of the value of beta the value
+[10:06] of RB should be much smaller than the beta plus 1 times RE.
+[10:11] And practically the value of RB should be at least 100 times less than the this term
+[10:18] that means beta plus 1 times RE.
+[10:22] And if this condition is satisfied then the operating point would be almost independent
+[10:27] of the variation in the beta.
+[10:30] So this configuration is also known as the emitter stabilized biasing configuration because
+[10:36] here with the introduction of this emitter resistor the circuit tries to maintain the
+[10:40] operating point.
+[10:42] Now there is another biasing configuration which can be used to stabilize the operating
+[10:47] point.
+[10:48] So this configuration is known as a two supply or the dual supply emitter bias configuration
+[10:53] or simply emitter bias configuration.
+[10:56] So in this configuration if you observe the emitter terminal is biased with the negative
+[11:01] voltage.
+[11:03] And here if the value of RB is very small then this voltage VB can be assumed as zero
+[11:10] volt.
+[11:11] So first of all let us analyze this circuit and let us find out the value of the collector
+[11:16] current as well as the voltage we see.
+[11:20] Now as I said earlier as the value of RB is very small so this base voltage VB can be
+[11:25] assumed as zero that means the voltage VB is equal to zero.
+[11:32] And we know that the voltage VB can be given as voltage VB minus VE that means the voltage
+[11:39] V or the voltage over here is equal to voltage VB minus VB and as the VB is zero so we can
+[11:49] say that voltage VE is equal to minus VB.
+[11:54] So once we know the value of this emitter voltage then we can find the value of the emitter
+[11:59] current.
+[12:01] So this emitter current IE can be given as voltage VE minus minus VE divided by RE and
+[12:11] we know that the voltage VE is equal to minus VB that means we can say that this emitter
+[12:18] current IE is equal to voltage VE minus VBE divided by RE.
+[12:28] And as this current current IC is approximately equal to emitter current so we can say that
+[12:33] this current current IC can be also given by this expression that means if the value
+[12:39] of RB is very small then this current current IC is almost independent of the value of beta
+[12:46] and once we know the value of this current then we can easily find the value of the VCE.
+[12:53] So this voltage VCE can be given as voltage VC minus VE.
+[12:59] Now here this current voltage VCE can be given as voltage VCC minus IC times RC and we know
+[13:08] that the voltage VE can be given as minus VBE.
+[13:13] So from this we can say that the voltage VCE is equal to VCC minus IC times RC minus VE
+[13:24] that is equal to VCC minus RC times RC plus VBE.
+[13:32] So in this way we can get the value of VCE and the IC and here if the value of RB is
+[13:39] very small then this current current IC is almost independent of the value of beta.
+[13:45] But then the question arises how small the value of RB should be so that the operating
+[13:50] point is almost independent of the variation in the beta.
+[13:55] So let us find out that.
+[13:57] So now if we apply the KVL on this input side then we can write 0 volt minus RB times
+[14:05] RB that means the voltage drop across this Bayes resistor minus voltage VBE that means
+[14:13] the voltage over here minus IE times RE minus of minus VE that is equal to 0 that means
+[14:24] voltage VE minus VBE is equal to IB times RB plus IE times RE.
+[14:35] Now we know that this emitter current IE can be given as beta plus 1 times IB or we can
+[14:43] say that the Bayes current IB is equal to this emitter current divided by beta plus 1.
+[14:51] So from this we can say that voltage VE minus VBE is equal to IE times RB divided by beta
+[15:01] plus 1 plus RE.
+[15:06] That means the value of this emitter current IE is equal to voltage VE minus VBE divided
+[15:15] by RB divided by beta plus 1 plus RE.
+[15:23] Now here to make this emitter current almost independent of the value of beta this term
+[15:29] should be much less than this emitter resistor that means RB divided by beta plus 1 should
+[15:36] be much less than the emitter resistor or in other words the value of the Bayes resistor
+[15:42] should be much less than beta plus 1 times RE.
+[15:47] So if this condition is satisfied then the operating point would remain stable against
+[15:52] the variation in the beta and practically the value of RB should be at least 100 times
+[15:58] less than this term that means practically the value of RB should be less than or equal
+[16:05] to 0.01 times beta plus 1 times RE.
+[16:11] So for example if the value of beta is equal to 100 and this emitter resistance is equal
+[16:18] to 1 kilo ohm in that case the value of this Bayes resistance RB should be less than or
+[16:23] equal to 1 kilo ohm and it will get clear to you all once we take the few examples based
+[16:29] on this configuration as well as the previous biasing configuration and these examples
+[16:34] will be covered on our second channel.
+[16:38] Now whatever configurations which you have discussed so far we require the two power supplies
+[16:43] but instead of that using the voltage divider circuit we can derive this voltage VBB
+[16:49] and that is what exactly is done in the voltage divider biasing configuration and in the
+[16:54] next video we will learn about that voltage divider biasing configuration but I hope in
+[16:59] this video you understood what is emitter biasing configuration as well as what is emitter
+[17:04] stabilized biasing configuration.
+[17:07] So if you have any question or suggestion do let me know here in the comment section
+[17:11] below.
+[17:12] If you like this video hit the like button and subscribe to the channel for more such
+[17:15] videos.

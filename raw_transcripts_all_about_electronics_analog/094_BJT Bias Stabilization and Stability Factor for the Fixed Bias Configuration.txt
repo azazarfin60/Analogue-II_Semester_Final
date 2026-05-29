@@ -1,0 +1,155 @@
+Title: BJT: Bias Stabilization and Stability Factor for the Fixed Bias Configuration
+URL: https://www.youtube.com/watch?v=jw_GUiswndw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All of Electronics.
+[00:16] So in this video, we will talk about the BIOS stabilization and the stability factor
+[00:21] of the BJT.
+[00:23] And we will find out the stability factor for the fixed bias configuration.
+[00:28] So the stability of any circuit is the measure of how sensitive the circuit is to the variation
+[00:33] in the external parameters.
+[00:35] And 4 BJT, this stability is very important parameter, particularly whenever it is used
+[00:41] as an amplifier.
+[00:43] So 4 BJT, the collector current IC is sensitive to the following parameters.
+[00:49] And as the temperature changes, the value of this parameters also change.
+[00:54] And the change in any of these parameters can cause the drift in the design operating
+[00:58] point.
+[01:00] For example, as the temperature increases, the value of beta will also increase.
+[01:05] Similarly, with the increase in the temperature, the voltage between the base emitter junction
+[01:10] will reduce.
+[01:13] And this reverse saturation current also increases with the rise in the temperature.
+[01:18] And in fact, this reverse saturation current almost gets double in a value with every 10
+[01:23] degree rise in the temperature.
+[01:26] So due to the change in all these parameters, the collector current IC also changes.
+[01:31] So let us take one simple example and through the example, let us understand how the change
+[01:37] in the value of beta and the reverse saturation current changes this collector current.
+[01:42] So for that, we will assume that the BJT is biased in the fixed bias configuration.
+[01:48] So let us say for the fixed bias configuration, the base current IV is set to 30 micro ampere.
+[01:55] And at 25 degree centigrade, for the given value of beta, the operating point is almost
+[02:00] set at the center of the load line.
+[02:03] And here, this is the reverse saturation current at T is equal to 25 degree centigrade.
+[02:10] Now if the temperature increases to 100 degree centigrade, then both beta and the reverse
+[02:14] saturation current will increase.
+[02:17] So now if you see it, 100 degree centigrade, then the value of this reverse saturation
+[02:21] current is more.
+[02:24] And also due to the increase in the value of beta, the spacing between the cows will also
+[02:29] increase because IC is equal to beta times IP.
+[02:33] So due to that, now the collector cows will look like this.
+[02:38] Now here, as the BJT is biased in the fixed bias configuration, so the value of base current
+[02:43] IV is directly proportional to the base resistance.
+[02:47] And over here, of course, we are assuming that the voltage VBE is not changing with the
+[02:52] temperature.
+[02:54] That means the value of base current IV will still remain 30 micro ampere.
+[02:59] So due to that, with the increase in the value of beta, now the collector current IC has
+[03:03] been increased.
+[03:05] And now, the operating point has moved towards the saturation.
+[03:10] Now, suppose if we use the same circuit for the amplification at this temperature, then
+[03:15] there will be a considerable distortion in the output.
+[03:19] And that is why, to operate the BJT environment where the temperature is changing continuously,
+[03:24] the stability is very important parameter.
+[03:28] So the stability of the BJT circuit is defined by the stability factor.
+[03:33] And as there are three factors that affect the operating point, so there are three stability
+[03:38] factors.
+[03:39] The first stability factor defines how the collector current changes with the change in
+[03:43] the reverse saturation current.
+[03:46] And during the calculation of this factor, it has been assumed that the other two parameters,
+[03:51] that means the voltage VBE and the beta are constant.
+[03:55] Similarly, the second stability factor defines the change in the collector current with
+[04:00] the change in the voltage VBE.
+[04:03] While the third stability factor defines the change in the collector current with the
+[04:07] change in the beta.
+[04:09] And many times, these stability factors are defined by the symbol as, as, as, dash and
+[04:15] the as, double dash.
+[04:17] So if the stability factor of the circuit is high, then the circuit is more sensitive to
+[04:21] the change in the external parameters.
+[04:24] That means for the stable circuit, the low stability factor is desirable.
+[04:29] So now, let us find out the stability factor for the fixed bias configuration.
+[04:34] Now in the earlier video, we have already derived the expressions for the base current,
+[04:39] the current current and the voltage VCE for this fixed bias configuration.
+[04:44] Now during the DC analysis of the circuit, usually when we write this current current, then
+[04:49] we write it as Ic is equal to beta times Ib.
+[04:53] But actually, it is given by this expression.
+[04:57] But for the silicon transistors, as this reverse saturation current is in an anampere
+[05:01] range, so the second term is often neglected.
+[05:06] But here, as we are interested in finding the change in the collector current due to
+[05:10] the change in this reverse saturation current, so let us also write down the second term.
+[05:15] So now, let us put the value of this base current into this expression.
+[05:21] That means the collector current Ic can be given as beta times, voltage VBB minus VBE,
+[05:30] divided by RB plus beta plus one times Icbo.
+[05:39] So this is the expression of the collector current in terms of the beta, the VBE and
+[05:44] the Icbo.
+[05:46] So first of all, now let us find out the stability factor as for the fixed bias configuration.
+[05:53] So the stability factor as can be given as del Ic divided by del Icbo.
+[06:01] And here, we are assuming that voltage VBE and the beta fixed.
+[06:07] Now in this expression, the voltage VBB and RBR already fixed.
+[06:11] And here, we are also assuming that voltage VBE and the beta fixed.
+[06:17] That means whenever we differentiate this expression with respect to Icbo, then the first
+[06:21] term will become 0.
+[06:24] That means del Ic divided by del Icbo is equal to 0 plus beta plus one.
+[06:34] That means for the fixed bias configuration, the stability factor as is equal to beta plus
+[06:40] one.
+[06:41] Similarly, now let us find out the stability factor as dash for the fixed bias configuration.
+[06:48] So this stability factor as dash can be given as del Ic divided by del VBE.
+[06:56] And during the calculation, we are assuming that the beta and the reverse saturation current
+[07:01] Icbo are fixed.
+[07:03] Now here, this collector current Ic can also be written as beta times VBB divided by RB
+[07:13] minus beta times VBE divided by RB plus beta plus one times Icbo.
+[07:24] Now in this expression, the first term and the last term are constant.
+[07:29] So whenever we differentiate Ic with respect to VBE, then the first term and the last
+[07:34] term will become 0.
+[07:36] That means del Ic divided by del VBE is equal to minus beta divided by RB.
+[07:45] That means for the fixed bias configuration, the stability factor as dash is equal to minus
+[07:51] beta divided by RB.
+[07:54] And similarly, now let us also find out the stability factor as double dash.
+[08:00] So the stability factor as double dash can be given as del Ic divided by del beta while
+[08:07] keeping the value of voltage VBE and the Icbo fixed.
+[08:12] Now this collector current Ic can also be written as beta times Ib plus beta times Icbo plus
+[08:22] Icbo.
+[08:25] And whenever we differentiate this term with respect to beta, then del Ic divided by
+[08:30] del beta is equal to Ib plus Icbo.
+[08:36] Now as I said earlier, typically the Icbo is in the range of nano-ampere.
+[08:42] So approximately we can say that this del Ic divided by del beta is equal to Ib or we
+[08:50] can say that it is equal to Ic divided by beta.
+[08:55] So in this way, we got the expressions for the three stability factors as dash and
+[09:00] the double dash.
+[09:02] So now the total change in the current current that is the delta Ic can be given as s times
+[09:10] delta Icbo plus s dash times delta VBE plus s double dash times delta beta.
+[09:21] And now let us see if there is any change in the temperature, then how these factors
+[09:27] can affect the collector current.
+[09:29] So let us say we have the value of beta, the VBE and the Icbo at the two different
+[09:34] temperatures.
+[09:36] And with the given values of RV and the RC, the collector current Ic in the fixed
+[09:40] bias configuration is equal to 1.74 milliampere.
+[09:45] And now if the same circuit is operating at the 100 degree centigrade, then let us find
+[09:49] out the change in the collector current due to the change in all these parameters.
+[09:54] So as I said, this delta Ic can be written as s times delta Icbo plus s dash times delta
+[10:04] VBE plus s double dash times delta beta.
+[10:10] And if you put the values of this s, s dash and s double dash, then we can write this
+[10:14] delta Ic as beta plus 1 times delta Icbo plus minus of beta divided by RV times delta
+[10:26] VBE plus Ic divided by beta times delta beta.
+[10:34] Now here if you see whenever the circuit is operating at the 100 degree centigrade, then
+[10:39] the reverse saturation current will become pentane NMPR.
+[10:43] That means the change in the current is equal to 19.9 NMPR.
+[10:48] And here at the 25 degree centigrade, the value of beta is equal to 50, while the base current
+[10:54] IBE is equal to 250 kilo ohm.
+[10:56] Similarly, the change in the VBE is equal to minus 0.2 world.
+[11:02] So if you put the values of all these parameters, then the change in the collector current Ic
+[11:07] is equal to 51 times 19.9 NMPR plus minus 50 divided by 250 kilo ohm times minus 0.2
+[11:20] world plus 1.74 milliampere times 30 divided by 50.
+[11:29] That means delta Ic is equal to 1.015 microampere plus 40 microampere plus 104 microampere.
+[11:42] So this is the change in the collector current due to the different parameters.
+[11:47] And as you can see over here, the major contributing factor is the change in the value of beta.
+[11:53] That means the maximum change in the collector current Ic will occur due to the change in the
+[11:56] value of beta.
+[11:59] And in fact, that is why during the DC analysis of this circuit, we had given the more emphasis
+[12:04] on the change in the value of beta.
+[12:07] So the design biasing circuit should be such that even if there is a change in the temperature,
+[12:12] there should be a minimum change in the operating point.
+[12:15] So in the next couple of videos, we will find out the stability factors for the voltage
+[12:19] divider biasing configuration and similarly for the current feedback biasing configuration.
+[12:25] But I hope in this video you got the general overview of the biostabilization and how we
+[12:30] can find the stability factors for the fixed biasing configuration.
+[12:35] So if you have any question or suggestion, do let me know here in the comment section
+[12:39] below.
+[12:40] If you like this video, hit the like button and subscribe to the channel for more such
+[12:43] videos.

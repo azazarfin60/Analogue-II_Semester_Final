@@ -1,0 +1,181 @@
+Title: How to Generate a Triangular Wave (Part -1)
+URL: https://www.youtube.com/watch?v=-_Ny8YjPY-U
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will learn how to generate a triangular wave.
+[00:21] Now similar to the square wave and the sine wave, this triangular wave is also very useful
+[00:27] in certain applications and because of its linearity, this triangular wave is useful in
+[00:33] analog to digital conversion as well as in many PWM circuits and this Puzzle Sweet
+[00:40] modulation circuits can be used for designing a switch mode power supply or for controlling
+[00:46] the speed of the motor using the control circuit.
+[00:49] So let's find out how we can generate this triangular wave.
+[00:54] Now if you are aware in the earlier videos, we have discussed that if you have a square
+[00:59] wave, then using the integrator, we can generate this triangular wave.
+[01:04] So if you have a readily available square wave, let's say from the function generator, then
+[01:09] using the integrator circuit, we can generate this triangular wave.
+[01:14] But if this square wave is not readily available, then we can generate this triangular wave
+[01:20] by using these two modules.
+[01:22] So the first module will be the square wave generator and once we have a square wave,
+[01:27] then using the integrator circuit, we can design this triangular wave.
+[01:31] So for generating this triangular wave, there are two methods.
+[01:35] So in the first method, we can use any stable multivibrator for generating these square
+[01:41] waves and the output of this estable multivibrator should be given to the integrator circuit.
+[01:47] And using these two modules or using these two circuits, we can generate this triangular
+[01:52] wave.
+[01:53] Then if you see the second method, then in this method, using the smith trigger and the
+[01:58] integrator circuit, it is possible to generate this triangular wave.
+[02:02] So here, the output of the integrator is given as one of the input to this smith trigger.
+[02:08] So in this particular video, we will see that how we can design this triangular wave using
+[02:13] the estable multivibrator and the integrator.
+[02:16] In the next video, we will see the second method.
+[02:20] So first, let us talk about the first method.
+[02:23] So like we discussed in the earlier videos, using either opium or the triple phi timer,
+[02:29] it is possible to generate this estable multivibrator.
+[02:32] So in case of a estable multivibrator, most states are unstable state and output continuously
+[02:38] is to change between the two states.
+[02:40] So this estable multivibrator will act as a square wave generator.
+[02:46] And here is the circuit using which we can generate this estable multivibrator.
+[02:51] So for the estable multivibrator, which generates a square wave of a 50 percent duty cycle,
+[02:57] the time period T can be given by this expression, where this beta is nothing but the feedback
+[03:04] fraction.
+[03:05] And for the given circuit, this beta will be equal to R2 divided by R1 plus R2.
+[03:14] So if we assume the value of R1 and R2 are equal, in that case, this expression will get
+[03:20] simplified to 2 times Rc times the natural log of 3.
+[03:27] So using this expression, we can design a estable multivibrator of the desired frequency.
+[03:34] So now let's talk about the integrator.
+[03:38] So once we discuss this integrator, then combining these two blocks or combining these
+[03:42] two circuits, we can generate the triangular wave.
+[03:46] So here this integrator circuit is designing the opamp.
+[03:51] And in the earlier videos, we have already seen that how this integrator can be designed
+[03:56] using the opamp.
+[03:57] So for more information, you can check that video.
+[04:01] So here, the input is given at the inverting node of the opamp and this capacitor C is
+[04:07] connected in the feedback path.
+[04:10] So because of this R1 and C, the input signal will get integrated.
+[04:15] And here for the stability, the feedback resistance RF is connected in the feedback path.
+[04:21] So now if we combine this estable multivibrator with this integrator circuit, then it is
+[04:26] possible to generate the triangular wave.
+[04:29] So here, the output of this estable multivibrator is given as an input to this integrator circuit.
+[04:37] And if we observe the waveform at these two nodes, then it will look like this.
+[04:43] So here, the yellow waveform is the output of the estable multivibrator.
+[04:48] And as you can see, the output varies between the positive and the negative saturation voltages.
+[04:54] So once we give this square wave as an input to the integrator, then it is possible to generate
+[04:59] this triangular wave.
+[05:01] Now so far, I had just told you that by using these two circuits, it is possible to generate
+[05:07] the triangular wave.
+[05:09] But we also need to select the component values very carefully.
+[05:13] Because if the values are not carefully selected, then we will not get the desired output.
+[05:18] So now let us also calculate the component values and let us design a triangular wave of
+[05:23] the given frequency.
+[05:25] So let us say we want to design a triangular wave which has a frequency of 1 kilohertz.
+[05:31] Now if you observe this waveform, here the frequency of square wave and the triangular
+[05:36] wave are same.
+[05:38] So first of all, we need to design a estable multivibrator of 1 kilohertz frequency.
+[05:44] So for the estable multivibrator, we know that the time period T can be given by the expression
+[05:50] 2 times rc times the natural log of 1 plus beta divided by 1 minus beta, where beta is
+[06:00] equal to r2 divided by r1 plus r2.
+[06:05] So for simplicity, let us say r1 is equal to r2 is equal to 10 kilo ohm.
+[06:13] So in that case, this expression will get simplified to 2 times rc times the natural
+[06:19] log of 3.
+[06:21] Now here for f is equal to 1 kilohertz, this time period T will be equal to 1 millisecond.
+[06:28] And here let us assume the value of CS.1 microfaraday.
+[06:35] So if you put the value of this C in, this expression and if we simplify this expression
+[06:40] for r, then the value of r will come around as 4.5 kilo ohm.
+[06:47] So using these values, it is possible to generate a stable multivibrator of 1 kilohertz frequency.
+[06:54] So now let us calculate the component values for this integrator circuit.
+[06:59] So for the given design, here the frequency f is equal to 1 kilohertz or you can say that
+[07:05] the time period T is equal to 1 millisecond.
+[07:09] So for a better linearity of the triangular wave, the rc time constant of this integrator
+[07:15] should match with this time period.
+[07:18] So here the rc time constant is equal to r3 times C2.
+[07:23] And it should match with the time period of this square wave which is equal to 1 millisecond.
+[07:29] And for the better linearity, the value of r4 should be at least 10 times more than this
+[07:35] r3.
+[07:37] Because if you have followed the earlier video of the integrator, then the cutoff frequency
+[07:41] fc for the integrator can be given by the expression 1 divided by 2 pi times this feedback
+[07:48] register rf times C. And in this case, it is equal to 1 by 2 pi times this r4 times C.
+[07:56] So the cutoff frequency fc should be less than the operating frequency.
+[08:01] And for the better linearity of the triangular wave, this cutoff frequency fc should be at
+[08:07] least 10 times less than this signal frequency.
+[08:11] So to match this condition, the value of this register r4 should be at least 10 times more
+[08:18] than the r3.
+[08:21] So that is being said.
+[08:22] Now let us select the value of this r4 r3 and capacitor C2.
+[08:28] So like I said, the time constant r3 times C2 should be equal to 1 millisecond.
+[08:35] So let us say C2 is equal to 0.01 microfaraday.
+[08:39] So to get a time period of 1 millisecond, the value of r3 should be equal to 100 kilo ohm.
+[08:47] And if you select the value of r3 as 100 kilo ohm, then to match this condition r4 is
+[08:53] equal to 10 times r3, the value of r4 should be equal to 1 mega ohm.
+[09:00] So if we use these values, then we should get a triangular wave of 1 kilohertz frequency.
+[09:06] Now so far in our design, we have only talked about the frequency of this triangular wave.
+[09:12] And considering the frequency of this triangular wave, we have designed the given circuit.
+[09:17] But during the design, we should also able to predict the amplitude of this triangular
+[09:21] wave.
+[09:23] So now let us find out how you can find the amplitude of this given triangular wave.
+[09:28] So if you are aware, if V is the input to the integrator, then the output of the integrator
+[09:33] can be given by this expression.
+[09:37] So in our case, the input to the integrator is equal to the square wave.
+[09:42] And as you can see, the output of the square wave can either have two values.
+[09:47] That means either positive saturation voltage or the negative saturation voltage.
+[09:52] So over here, suppose if we integrate this negative saturation voltage from this point
+[09:58] to this point, then we should be able to get the peak to peak value of this triangular
+[10:04] wave.
+[10:05] So if we consider this total time as the time period t, then this time is nothing but the
+[10:11] t by 2.
+[10:13] So if we integrate this voltage for the t by 2 time period, then we will able to get the
+[10:18] peak to peak voltage.
+[10:20] So in this case, this peak to peak voltage will be equal to minus 1 by R3 times C2 times
+[10:29] this negative saturation voltage multiplied by t by 2.
+[10:35] So if you simplify this expression, then the peak to peak voltage of the triangular wave
+[10:40] can be given by this expression.
+[10:43] So as you can see, this peak to peak voltage of this triangular wave is directly proportional
+[10:48] to the time period of this square wave.
+[10:50] Or you can say that it is inversely proportional to the frequency of the square wave.
+[10:55] So for the given value of R3 and C2, if we increase the frequency of the square wave,
+[11:00] then the amplitude of this triangular wave will reduce.
+[11:04] So now let us simulate this circuit with the calculated component values and let us validate
+[11:09] our design.
+[11:12] So for the simulation, here I am using the multi-sim live, which is the online version
+[11:17] of the multi-sim software.
+[11:19] So here I have already connected the circuit which we have discussed earlier.
+[11:24] And the component values which I have selected over here are the same as the design values.
+[11:30] And here at the output of these two circuits, I have connected the two voltage probes.
+[11:36] So let us just run the simulation and let us see the output waveform.
+[11:41] So if we run the simulation, then we will get these kind of waveforms.
+[11:45] So for a moment let me just stop the simulation.
+[11:49] So here this green waveform is the output of the A stable-made divider, while the blue
+[11:53] waveform is the output of the integrated circuit.
+[11:57] So first of all, let us see the frequency of these two waveforms.
+[12:01] So if you observe over here at this node, the time scale is equal to 77.4 millisecond.
+[12:08] And at this node, it is equal to 78.43 millisecond.
+[12:12] That means this time period T is approximately equal to one millisecond.
+[12:16] But you can say that the frequency of the oscillation is equal to 1 kilohertz.
+[12:22] That means the frequency of this triangular waveform is also equal to 1 kilohertz.
+[12:27] And if you observe over here, the linearity of this triangular wave is also very good.
+[12:32] So now let us find out the peak to peak amplitude of this triangular wave.
+[12:37] So before doing that, first of all, let us find out the saturation voltage of this square
+[12:41] wave.
+[12:42] And if you observe over here, it is approximately equal to 13.5 volt.
+[12:46] Now if you see the one end of this triangular wave, the voltage is equal to 6.57 volt.
+[12:53] And at the other end, it is equal to minus 0.4 volt.
+[12:57] That means the peak to peak voltage is approximately equal to 7 volt.
+[13:02] And if you calculate the peak to peak voltage from the earlier formula, then roughly it will
+[13:07] come around as 7 volt.
+[13:10] So from the simulation, we can say that the circuit which wave design is correct for
+[13:14] the one kilohertz frequency.
+[13:17] And using these component values, we will get the desired result.
+[13:21] Now one more thing if you observe over here, this triangular wave is DC shifted.
+[13:26] So using the coupling capacitor at the output of the integrator, we can remove this DC offset.
+[13:33] And here for the simulation, the op-amp which is used is LM324.
+[13:38] So you can check the data sheet of this LM324 for more information above this op-amp.
+[13:44] So basically using the design component values, it is possible to generate a triangular wave
+[13:49] of the one kilohertz frequency.
+[13:52] So you can change the component values and you can see the effect of this component
+[13:56] values on the output of this integrator.
+[13:59] So I hope with this video, you understood the first method using which we can generate
+[14:03] this triangular wave.
+[14:05] And in the next video, we will talk about the second method.
+[14:08] So if you have any question or suggestion, do let know here in the comment section below.
+[14:13] If you like this video, hit the like button and subscribe to the channel for more such
+[14:17] videos.

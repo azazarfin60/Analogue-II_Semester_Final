@@ -1,0 +1,970 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Oscillators | Part - 3 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=zDul6yTyzuM
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you.
+[00:12] So we are live, we are back with Lakshya Batch 2.2 for Analog Electronics.
+[00:18] And this is the last session of your oscillators.
+[00:22] Two oscillators were saved in the last session.
+[00:24] Asstable multivibrator and monostable multivibrator.
+[00:28] We will discuss about that today.
+[00:30] We will finish this topic today.
+[00:33] So today your gate syllabus ends.
+[00:36] Okay.
+[00:37] Then I will cover all the pending assignments tomorrow.
+[00:41] So that your full and final course can be settled once.
+[00:44] And then if you want then we will cover the ESC topics like 555 timer.
+[00:49] And apart from this you will cover the power amplifier.
+[00:55] If you want then these topics will be covered.
+[00:58] That is totally up to you.
+[01:00] I will not take 5 pm today.
+[01:02] We will take the class tomorrow.
+[01:04] You will not be able to get the assignment in a day.
+[01:06] I thought I will take 5 pm today.
+[01:09] Then I thought I will give the assignment right now.
+[01:11] How will you do it in the end.
+[01:13] So tomorrow 11.30.
+[01:14] Tomorrow your gate syllabus will be over.
+[01:16] Okay.
+[01:17] Aman Brahmastrabhach's new subject will start on Monday.
+[01:21] No.
+[01:22] The class did not take place yesterday evening.
+[01:24] Yesterday because I had gone to the office.
+[01:26] So at 11.30 pm on both the time.
+[01:28] I was in my car.
+[01:29] I was driving.
+[01:30] So you could not get the class.
+[01:32] And we will start on Monday.
+[01:34] We will start Brahmastrabhach on Monday.
+[01:37] You will get information about the new subject very soon.
+[01:41] You will be told everything very soon.
+[01:44] The whole schedule will be told.
+[01:45] Don't worry about it.
+[01:47] So today I will create the whole schedule of Brahmastrabhach.
+[01:51] So you will enjoy a lot.
+[01:53] So let's start today's discussion.
+[01:55] So before that let me tell you.
+[01:58] We have given you dedicated test series.
+[02:01] Which was very demanding.
+[02:03] Unacademy light.
+[02:04] In which the test series of 1 year 2023 is of 1499.
+[02:10] And the test series of gate 24 is of 2499.
+[02:15] So you can go to Unacademy's app.
+[02:18] You can take the test series by using the English TSE code.
+[02:23] Anuj ji is asking about the crash course on YouTube.
+[02:26] The crash course of one subject is over.
+[02:29] Which one?
+[02:30] Digital.
+[02:31] It is digital.
+[02:32] Yes.
+[02:33] Digital is over.
+[02:34] Sujay sir took it.
+[02:35] Maths's Guru Pal sir is taking it.
+[02:37] Okay.
+[02:38] We will resume Dhandesan network as much as we have done.
+[02:41] The rest of the subjects will come next Monday.
+[02:44] So the crash course is going on.
+[02:45] Will it come?
+[02:46] The crash course is going on on YouTube.
+[02:49] Brahmastrabhach is the crash course.
+[02:51] I had told you.
+[02:54] And look.
+[02:55] This Sunday you will have a combat.
+[02:57] The combat of Maths and aptitude.
+[02:59] So all the children will give it this Sunday.
+[03:02] What do you have to do?
+[03:03] You have to use the English TSE code.
+[03:05] You have to enrol.
+[03:06] The combat of Maths and aptitude is the most important for you.
+[03:09] Because the weightage of these topics is 28 marks in a gate.
+[03:13] Okay.
+[03:14] So you will not miss the combat of these topics.
+[03:18] You have to give these things.
+[03:20] Okay.
+[03:21] So let's start today's session.
+[03:23] So I will start with the AskTable Multivibrator.
+[03:27] Now if you see the circuit of AskTable Multivibrator.
+[03:31] So from V0, you have taken a feedback in the positive terminal.
+[03:35] This is the positive feedback.
+[03:37] And you have made an RC circuit on the negative terminal.
+[03:42] The current in which the inverting terminal will be zero ampere.
+[03:48] So basically these two come in your series.
+[03:52] So you can say that there is a series RC circuit on the inverting terminal.
+[03:56] And there is a resistive feedback on the non-inverting terminal.
+[04:01] Is it clear?
+[04:02] The circuit is clear.
+[04:03] What is an RC circuit?
+[04:05] And there is a positive feedback with the help of a resistor.
+[04:09] Now see how you will do the analysis of this in the exam.
+[04:13] Suppose assume initially capacitor is uncharged.
+[04:31] Okay.
+[04:32] That means Vc is zero.
+[04:38] And assume V0 as Vsat.
+[04:43] Okay.
+[04:44] Assume Vsat.
+[04:46] Now if V0 is Vsat, then V0 is doing the supply for RC circuit.
+[04:53] V0 is acting as a source for RC circuit.
+[04:59] Do you understand?
+[05:15] So what will Vsat do?
+[05:19] Try to charge capacitor.
+[05:29] How much will you try to charge?
+[05:31] If this is a source, then the source tries to charge the voltage only.
+[05:38] It tries to charge the capacitor to where it goes?
+[05:42] To Vsat.
+[05:44] Now see the positive terminal voltage.
+[05:49] If you see, it is V0 R2 by R1 plus R2.
+[05:59] You call it beta V0.
+[06:02] Now see what you will say.
+[06:06] Since we have considered V0 as Vsat.
+[06:12] So V positive is beta Vsat.
+[06:15] Now understand what I am saying.
+[06:18] Positive terminal voltage is fixed plus beta Vsat.
+[06:22] Tell me.
+[06:23] Positive voltage is fixed plus beta Vsat.
+[06:26] And the voltage on negative terminal is Vc.
+[06:31] So as the capacitor will be charged,
+[06:34] negative terminal or inverting terminal voltage will increase.
+[06:39] Inverting terminal voltage will gradually increase.
+[06:43] Now as the inverting terminal voltage goes above non-inverting,
+[06:49] i.e. above beta Vsat,
+[06:52] your V0 becomes minus Vsat.
+[06:55] What happens to your V0?
+[06:58] Minus Vsat.
+[07:00] So what we are saying?
+[07:02] Vc increases towards Vsat.
+[07:12] And as soon as it crosses beta Vsat,
+[07:25] V0 switches from Vsat to minus Vsat.
+[07:45] Okay.
+[07:46] V0 switches.
+[07:48] Now when V0 switches to minus Vsat,
+[07:53] now it will try to charge the capacitor towards minus Vsat.
+[07:59] Because it is doing the source work for you.
+[08:02] It is doing the source work for the RC circuit.
+[08:05] So what will happen now?
+[08:07] Now V0 charges capacitor towards minus Vsat.
+[08:28] So what is the initial value of Vc?
+[08:32] Beta Vsat.
+[08:35] Because it has switched to the output after reaching it.
+[08:38] And what is the steady state value of Vc?
+[08:43] Minus Vsat.
+[08:46] Okay. Minus Vsat.
+[08:48] Now what can you do from here?
+[08:51] You can write the equation of Vc with the transient method.
+[08:55] Okay.
+[08:57] Vc is Vc infinity.
+[09:01] Plus 0 minus infinity.
+[09:05] A to the power minus t by tau.
+[09:11] And what will be the positive terminal voltage?
+[09:14] If V0 is minus Vsat, then minus beta Vsat.
+[09:19] Now what I say is that the voltage of the capacitor goes from minus Vsat to minus Vsat.
+[09:29] So this will be somewhere between minus beta Vsat.
+[09:34] As soon as it goes below minus beta Vsat,
+[09:39] it will switch back to plus Vsat.
+[09:43] Do you understand?
+[09:45] What are we saying?
+[09:47] As capacitor voltage goes below minus beta Vsat.
+[10:06] So V negative becomes less than V positive.
+[10:10] V0 switches to Vsat.
+[10:12] So V0 has come to its own Vsat.
+[10:18] Did you understand this?
+[10:21] So let me see when the value of Vc is beta Vsat.
+[10:37] Let me tell you this time.
+[10:39] T1.
+[10:42] Vsat to Vsat will be 1 minus beta.
+[10:58] So this is tau.
+[11:05] Okay, this is the time.
+[11:08] During this time, the voltage of the capacitor went from beta Vsat to minus beta Vsat.
+[11:16] And after coming here, your output switched to 2 plus Vsat.
+[11:20] Now as soon as the output switches to plus Vsat,
+[11:26] V0 will try again to charge the capacitor
+[11:32] towards Vsat.
+[11:45] Now what will become V positive here?
+[11:49] Beta Vsat.
+[11:51] Okay.
+[11:53] And the initial value of Vc,
+[11:55] when the previous interval ended,
+[11:57] the value of Vc was minus beta Vsat on T1 time.
+[12:01] The initial value of Vc was the final of the previous interval.
+[12:06] That is minus beta Vsat.
+[12:08] And what will be the steady state?
+[12:10] It is trying to charge the capacitor on Vsat.
+[12:16] So what will become Vc here?
+[12:19] Infinity.
+[12:21] Plus 0 minus infinity.
+[12:27] Okay.
+[12:29] e to the power minus T by tau.
+[12:32] Now we will say that since V negative is equal to Vc,
+[12:38] and as soon as beta is greater than Vsat,
+[12:43] the output switches to minus Vsat.
+[12:49] Do you understand this?
+[12:50] The output switches to minus Vsat.
+[12:54] So by doing this, the output will keep switching itself.
+[12:58] If the output keeps switching itself,
+[13:00] then add the value of Vc to beta Vsat.
+[13:06] To find out when the switch is coming back.
+[13:14] And call this time T2.
+[13:21] Okay.
+[13:22] So this will become 1 minus beta.
+[13:28] Okay.
+[13:36] So look, this is also equal to T1.
+[13:38] Same.
+[13:41] That is, the output switches to equal intervals.
+[13:44] So it will become a proper square wave.
+[13:47] It will become a proper square wave.
+[13:51] Dark Knight, I told you,
+[13:53] do whatever you can to make it visible,
+[13:55] which is the crash course of the machine from tomorrow.
+[13:57] Maybe you will become visible today.
+[14:02] Now see what happened.
+[14:05] I will show you Vc and V0.
+[14:08] Look, you understood the limit in Vc,
+[14:10] beta Vsat and minus beta Vsat.
+[14:13] This is the limit of Vc.
+[14:18] This is beta Vsat.
+[14:28] And the limit of V0 is Vsat and minus Vsat.
+[14:41] Okay.
+[14:43] Now see, this capacitor voltage,
+[14:47] initially you considered 0, right?
+[14:50] So the capacitor slowly gets charged.
+[14:53] It goes to beta Vsat.
+[14:57] And during this time,
+[14:59] your output was Vsat.
+[15:03] Your output was Vsat.
+[15:05] Look.
+[15:35] Okay.
+[15:43] Okay.
+[15:45] So the output in this,
+[15:48] look, it was plus Vsat,
+[15:50] this type.
+[15:52] Now what happened immediately,
+[15:54] that your output switched.
+[15:56] As soon as beta Vsat was touched,
+[15:58] the output switched to minus Vsat.
+[16:02] Then your capacitor was discharged from Vsat,
+[16:06] from beta Vsat to minus beta Vsat.
+[16:10] From beta Vsat to minus beta Vsat.
+[16:13] Now what happened here,
+[16:17] that the output went to minus Vsat.
+[16:20] But as soon as it touched minus beta Vsat,
+[16:24] the output immediately switched towards plus Vsat.
+[16:27] Okay.
+[16:38] And during this time,
+[16:40] the capacitor started charging towards beta Vsat.
+[16:44] From this type,
+[16:46] the voltage of the capacitor will continue to oscillate
+[16:49] between beta Vsat and minus beta Vsat.
+[16:52] And on the output,
+[16:54] you will get a square wave.
+[16:56] So this time was your T1.
+[17:00] And this time was your T2.
+[17:05] So this is your total type period T.
+[17:10] So this T,
+[17:13] this is T1 plus T2.
+[17:17] 2RC.
+[17:19] Don't remember its formula,
+[17:21] look at the method, how you did it.
+[17:27] And what happened the frequency?
+[17:31] 1 upon time period.
+[17:40] And here I write the value of beta.
+[17:43] Beta is your feedback factor.
+[17:46] R2 by
+[17:50] R1 plus R2.
+[17:52] So look at this, it is going on its own.
+[17:54] Yes, the time constant is the same.
+[17:56] The same is the RC circuit.
+[17:58] Sometimes you ask a strange question,
+[18:00] a very powerful one.
+[18:02] When you see the same RC circuit,
+[18:04] the time constant will not be the same.
+[18:06] Tell me.
+[18:09] So here you can see that it is stable today
+[18:11] because it is switching its state itself.
+[18:13] We didn't put any input.
+[18:15] It is switching its state itself.
+[18:17] That is, for this, plus Vsat and minus Vsat
+[18:20] are both states.
+[18:22] They are unstable.
+[18:23] It will not stop in any state.
+[18:25] It is going to keep switching
+[18:27] between plus Vsat and minus Vsat.
+[18:31] Sir, how is Barkhuzain criteria satisfied?
+[18:34] Barkhuzain criteria is satisfied there.
+[18:37] Where your oscillator
+[18:39] is made of this type,
+[18:41] A beta type.
+[18:43] That means there is an amplifier
+[18:45] with a positive feedback.
+[18:48] So where you design
+[18:50] the feedback network,
+[18:52] you put Barkhuzain criteria there.
+[18:54] The design of these multivibrators
+[18:56] is that we have
+[18:58] given the amplifier and feedback
+[19:00] together.
+[19:02] So you won't be able to separate
+[19:04] the amplifier's gain.
+[19:06] And then apart from this,
+[19:08] your feedback.
+[19:10] You won't be able to do this separately.
+[19:12] Is it clear?
+[19:14] So in multivibrators,
+[19:16] we don't have to check those things.
+[19:18] So where do we have to do it?
+[19:20] We have to do it.
+[19:22] The sinusoidal oscillators
+[19:24] are called harmonic oscillators.
+[19:26] Relaxation is not in the oscillator.
+[19:34] Himanshu, in both,
+[19:36] RCLN and RCLN are doubled.
+[19:38] Both times are shown.
+[19:40] RCLN 1 plus beta
+[19:42] upon 1 minus beta.
+[19:48] So
+[19:50] the use of this
+[19:52] is
+[19:54] everywhere.
+[19:58] On low clock frequency.
+[20:06] Like a timing signal.
+[20:08] When we have to run the timer
+[20:10] then it can be used there.
+[20:12] In such places,
+[20:14] you can use this.
+[20:16] Is it clear?
+[20:18] Now let's go to the next one.
+[20:20] The next one is the mono-stable multivibrator.
+[20:22] What do you know about this?
+[20:24] My children,
+[20:26] you know that
+[20:28] one state should be stable
+[20:30] and one should be unstable.
+[20:32] In order to take
+[20:34] unstable from stable,
+[20:36] we should need
+[20:38] certain input. But in order to
+[20:40] come stable from unstable, we should not
+[20:42] need any sort of input.
+[20:44] We should not need
+[20:46] any input.
+[20:48] Okay?
+[20:50] Now see
+[20:54] what is its stable state?
+[20:58] Its stable
+[21:00] state is
+[21:02] Vsat.
+[21:04] How do you know, sir?
+[21:06] Look at this.
+[21:08] What will happen on this?
+[21:10] The positive terminal voltage
+[21:12] will be Vsat.
+[21:16] R2 by
+[21:18] R1 plus R2
+[21:20] means beta Vsat.
+[21:24] Listen carefully.
+[21:26] What will happen?
+[21:28] Vsat
+[21:30] tries to charge.
+[21:32] Think like a relaxation oscillator.
+[21:34] Tries to charge
+[21:38] capacitor
+[21:40] towards Vsat.
+[21:42] He is trying to take
+[21:44] capacitor voltage to Vsat.
+[21:46] And when he tries
+[21:48] to take capacitor to Vsat,
+[21:50] then as soon as
+[21:52] as soon as
+[21:54] Vc
+[21:56] becomes greater than Vd,
+[21:58] your diode will be on.
+[22:00] Means as much as 0.7,
+[22:02] diode is on.
+[22:04] And in that case,
+[22:06] negative terminal voltage
+[22:08] will be on Vd.
+[22:10] Which is less than beta Vsat.
+[22:12] The positive terminal
+[22:14] is beta Vsat.
+[22:16] Therefore, output remains
+[22:18] at Vsat.
+[22:22] Think like negative terminal voltage
+[22:24] is fixed due to diode.
+[22:26] As soon as diode is on,
+[22:28] the charging of capacitor will stop.
+[22:30] All current coming from resistance
+[22:32] will start going from diode.
+[22:34] And this capacitor
+[22:36] Anuj Pandey,
+[22:38] if you keep your doubts
+[22:40] for a while, then you will understand
+[22:42] all things. Until the circuit
+[22:44] ends, there is no doubt about it.
+[22:46] Once the functionality of the
+[22:48] circuit is cleared, then we will talk about doubts.
+[22:50] Is this clear?
+[22:52] Tell me.
+[22:54] If your V0
+[22:56] is Vsat, then the positive terminal
+[22:58] voltage is beta Vsat.
+[23:00] And when diode is on,
+[23:02] negative terminal voltage
+[23:04] like 0.5, 0.7
+[23:06] is fixed on this much.
+[23:08] If it is fixed on 0.5, 0.7
+[23:10] and here is beta Vsat,
+[23:12] then your positive terminal voltage
+[23:14] is more.
+[23:16] Because of which, the output will
+[23:18] remain on Vsat
+[23:20] by chilling.
+[23:22] This will not move here and there.
+[23:24] The matter is cleared.
+[23:26] Is the matter cleared or not?
+[23:28] Tell me quickly.
+[23:30] Is everything clear?
+[23:32] Yes, sir. Now where will we put the input?
+[23:34] Look, this switch
+[23:36] is the push button.
+[23:38] What is this?
+[23:40] This is your push button.
+[23:42] There is no button
+[23:44] which is pressed and then it comes up again.
+[23:46] Press it once.
+[23:48] It comes up again.
+[23:50] Tell me.
+[23:52] Look at the button.
+[23:54] There are small buttons like spring type.
+[23:56] Press them.
+[23:58] It comes up again.
+[24:00] When you turn it on,
+[24:02] it will turn off itself.
+[24:04] Is this clear?
+[24:06] Now what will happen if it is closed?
+[24:08] As soon as you turn on this switch,
+[24:10] it will be on momentarily.
+[24:12] But at that time, what will be the
+[24:14] voltage of positive terminal?
+[24:16] Correct.
+[24:18] As soon as you turn it on,
+[24:20] what will be the voltage of positive terminal?
+[24:22] Zero.
+[24:24] And how much voltage is on the negative terminal?
+[24:26] equal to diode,
+[24:28] 0.7.
+[24:30] Now the voltage of negative terminal is more
+[24:32] than positive.
+[24:34] Because it is 0.5 or 0.7.
+[24:36] And the voltage of positive terminal is zero.
+[24:38] As soon as it happens,
+[24:40] the output will immediately switch
+[24:42] to minus Vsat.
+[24:46] So we are saying
+[24:48] when
+[24:50] push button
+[24:54] is pressed
+[24:58] and
+[25:04] V positive becomes
+[25:06] zero.
+[25:08] What is the voltage of negative terminal?
+[25:10] equal to Vd.
+[25:12] Therefore
+[25:14] V0
+[25:18] switches to
+[25:20] minus Vsat.
+[25:22] Okay.
+[25:24] V0 switches to
+[25:26] minus Vsat.
+[25:28] Now if V0
+[25:30] comes to minus Vsat,
+[25:32] what will be the voltage of
+[25:34] positive terminal?
+[25:46] This will be
+[25:48] V0.
+[25:50] And V0
+[25:52] tries to charge the capacitor.
+[25:58] And diode will be off at this time
+[26:00] because the capacitor is charging
+[26:02] towards negative.
+[26:04] The diode will be off at negative voltage.
+[26:06] Do you understand this?
+[26:08] V0
+[26:10] is trying to charge the capacitor
+[26:12] towards minus Vsat.
+[26:14] So if you try
+[26:16] to charge the capacitor towards Vsat,
+[26:18] then your diode will be off.
+[26:28] Now here
+[26:30] the initial value of
+[26:32] Vc
+[26:34] is equal to the diode voltage
+[26:36] which is approximately zero.
+[26:38] I am saying it is very small.
+[26:40] And Vc infinity
+[26:42] is minus Vsat.
+[26:44] So what is the equation of
+[26:46] Vc?
+[26:48] Infinity
+[26:52] plus
+[26:54] initial minus infinity.
+[27:08] Okay.
+[27:10] Now if Vc
+[27:12] reaches
+[27:14] minus beta Vsat,
+[27:18] if Vc reaches
+[27:20] minus beta Vsat,
+[27:22] then V0
+[27:24] will switch
+[27:26] to plus Vsat.
+[27:28] Because if the voltage of
+[27:30] inverting terminal is negative
+[27:32] from non-inverting
+[27:34] or goes below the non-inverting,
+[27:36] then the output will switch.
+[27:38] So if the voltage is minus
+[27:40] minus cancel,
+[27:42] then this is
+[27:44] 1 minus beta.
+[27:46] So what is T1?
+[27:48] tau
+[27:50] ln
+[27:52] 1 upon 1 minus beta.
+[27:54] This is it.
+[27:56] So
+[27:58] after so many times
+[28:00] after so many times
+[28:04] V0
+[28:06] Switches to who? V0 switches back to plus Vsat.
+[28:16] So look, it went to plus Vsat itself.
+[28:21] You didn't need to do anything in this.
+[28:24] So it stayed on minus Vsat for so long.
+[28:28] Okay.
+[28:30] Now as soon as it goes to plus Vsat.
+[28:35] So it will try to charge the capacitor to plus Vsat.
+[28:41] See.
+[28:43] So what will happen now?
+[28:45] V0 tries to charge capacitor towards plus Vsat.
+[29:04] But as soon as capacitor voltage will be bigger than diode voltage,
+[29:13] diode will be on and short capacitor will be back.
+[29:24] So see, if I explain you in terms of waveform,
+[29:32] we will talk about Vc and V0 waveforms.
+[29:50] See, this is the level of diode voltage which is the maximum voltage of the capacitor.
+[29:57] And this is minus beta Vsat.
+[30:00] Then it goes to plus Vsat.
+[30:03] And this goes to minus Vsat.
+[30:08] Okay.
+[30:09] Now see what was happening.
+[30:19] Try to understand carefully, my brother.
+[30:31] See, capacitor voltage was easily fixed on diode voltage which is approximately zero.
+[30:42] Now as soon as you switched on the switch,
+[30:47] your capacitor started discharging.
+[30:51] It started charging in negative towards minus beta Vsat.
+[30:56] The same output was fixed on Vsat.
+[31:00] How much did the switch press?
+[31:02] Minus Vsat.
+[31:04] It stayed on minus Vsat for so long until the capacitor reached to beta Vsat.
+[31:11] As soon as the capacitor reached minus beta Vsat,
+[31:15] it came back to plus Vsat.
+[31:19] Okay.
+[31:22] And when it came back to plus Vsat,
+[31:25] the capacitor will stop at diode voltage.
+[31:29] It will become constant again.
+[31:32] So basically what you have taken out time is called pulse width.
+[31:42] What is this pulse width?
+[31:45] Normally your output stays on Vsat only.
+[31:50] But you can make pulse equal to minus Vsat.
+[31:57] Using a push button.
+[31:59] Understood?
+[32:02] It stays on plus Vsat but you have made a small pulse of minus Vsat
+[32:09] and you can control the duration of this pulse by controlling the time constant.
+[32:15] Tell me, is it clear or not?
+[32:17] Is the mono stable multivibrator clear or not?
+[32:21] Normally it will stay in its state on Vsat.
+[32:24] But you can send it to minus Vsat by pressing the switch.
+[32:28] In which it will stay on minus Vsat and then it will run on Vsat.
+[32:34] So what did we do here?
+[32:36] We pressed the switch here.
+[32:45] So we made this transition by pressing the switch.
+[32:48] But this second transition is automatic.
+[32:51] We didn't do this.
+[32:52] This is because of the charging of the capacitor.
+[32:55] So these are all your multivibrators.
+[32:58] There is no need to remember the circuit.
+[33:00] Just remember the basic things.
+[33:01] What is in the stable multivibrator today?
+[33:03] There is no input in the resistance and capacitor.
+[33:05] There will be a switch in the mono stable.
+[33:08] There will be a trigger input.
+[33:10] And the rest is like a transient analysis.
+[33:13] And the voltage of the capacitor that you are understanding
+[33:15] can be beta Vsat and minus beta Vsat.
+[33:18] Apart from this, the voltage of the capacitor cannot exceed this limit.
+[33:24] Now look at this question.
+[33:26] This is a circuit given.
+[33:28] Tell me the hysteresis width of the Schmitt trigger.
+[33:32] Hysteresis width.
+[33:34] That is UTP minus LTP.
+[33:38] Come on everyone.
+[33:55] 4V Rohit.
+[33:57] Let's see.
+[34:18] When I publish the video, I will inform all the students
+[34:22] by means of our shots.
+[34:24] And right now, I don't have any plan to publish it.
+[34:27] Because the first thing that happened was that
+[34:30] the video will be published for 24 hours.
+[34:32] And I haven't done opamp private yet.
+[34:35] Just understand that after tomorrow's lecture,
+[34:37] your opamp will also become private.
+[34:40] So whoever wants to cover opamp,
+[34:42] do it till tomorrow.
+[34:48] Has anyone else come?
+[34:50] Look.
+[34:52] Look at the positive terminal voltage first.
+[34:56] V0 into 5 by 25.
+[35:00] V0 by 2.
+[35:03] And look at the negative terminal voltage.
+[35:07] There are two here.
+[35:09] So you will do it like a dual supply.
+[35:12] There are two inputs.
+[35:14] There is a 2V.
+[35:20] Okay.
+[35:28] Okay.
+[35:30] Now what you have to do?
+[35:32] Take V0 first.
+[35:34] That is 10.
+[35:38] So how much will be V positive?
+[35:40] 5.
+[35:42] Now keep it at 5.
+[35:44] The negative terminal voltage.
+[35:48] So how much will be V in here?
+[35:50] 7.5 or 6.5.
+[35:55] Now keep V0 minus V sat.
+[36:00] That is minus 10.
+[36:03] So the positive terminal will be minus 5.
+[36:06] Okay.
+[36:13] So how much will be V in here?
+[36:15] Minus 7.5 minus 8.5.
+[36:18] So this extra voltage is 6.5.
+[36:21] That is your...
+[36:23] That is what?
+[36:25] That is your...
+[36:26] Okay. V0 by 5.
+[36:28] Sorry.
+[36:30] I understood 2.
+[36:36] Okay.
+[36:41] So this will be 2.
+[36:43] This will be minus 2.
+[36:45] 2 by 3.
+[36:46] 3 minus 1, 2.
+[36:48] Minus 2 by minus 3, minus 4.
+[36:52] So the big voltage is UTP.
+[36:55] And the small voltage is LTP.
+[36:57] The difference between the two is 6.
+[36:59] Okay. Is everyone wrong?
+[37:01] Arindam, Rohit,
+[37:03] Zainul, Amman, everyone is wrong.
+[37:06] You have directly removed the V0 feedback value.
+[37:10] But who will do this?
+[37:12] Keep V negative equal to that.
+[37:14] V in needs limits.
+[37:16] Not V0 or feedback limits.
+[37:18] V in needs limits.
+[37:20] This is UTP and this is LTP.
+[37:23] So the answer is 6 volt.
+[37:26] And you know if you wanted,
+[37:28] you could have ignored this reference.
+[37:30] Why?
+[37:31] The hysteresis never differs from reference to width.
+[37:34] If you remember, I told you,
+[37:36] the whole curve shifts.
+[37:38] Neither the height of the curve,
+[37:40] nor the width of the reference changes.
+[37:42] The whole curve shifts.
+[37:44] If you had ignored this 2,
+[37:46] you would have taken 2 by 3 V in.
+[37:48] Even then, your width would have been correct.
+[37:50] UTP and LTP were wrong.
+[37:52] But the difference between the two was correct.
+[37:54] Why was the difference correct?
+[37:56] Because the width never changes
+[37:58] because of shifting.
+[38:00] But UTP and LTP were wrong.
+[38:02] Keep this in mind.
+[38:03] If you will ignore this 2 volt,
+[38:05] the width will be correct.
+[38:07] But these two values will be wrong.
+[38:09] Is it clear?
+[38:11] Let's go.
+[38:13] See the next one.
+[38:14] The output voltage V0
+[38:16] of the Schmidt trigger swings between
+[38:18] 15 and minus 15.
+[38:20] Assume that the opamp is ideal.
+[38:22] Output will change from plus 15
+[38:24] to minus 15 when
+[38:26] the instantaneous value
+[38:28] of input sine wave is
+[38:30] the value of the input
+[38:33] should be
+[38:36] in order to change the output from
+[38:38] plus 15 to minus 15.
+[38:58] See.
+[39:24] This one is coming.
+[39:25] See.
+[39:27] Look, take out the positive terminal voltage.
+[39:32] You will say V0 into 3 by 13.
+[39:43] Now, you have been told that V0 is 15.
+[39:45] We are asking when it will go to minus 15.
+[39:49] So, it is 5.
+[39:50] So, we will say when the input voltage, i.e. V negative,
+[39:55] when it goes to greater than 5, then V0 will go to minus 15.
+[40:01] So, the answer will be A.
+[40:03] Sir, what does this positive slope mean?
+[40:06] It means during increasing part,
+[40:10] when the input voltage increases,
+[40:14] if it goes up by 5 volts, then your output will switch.
+[40:18] Okay?
+[40:19] What does positive slope mean? During the increasing part.
+[40:23] i.e. the output was 15.
+[40:25] As soon as the V in increases, when it goes up by 5,
+[40:28] the output will switch immediately.
+[40:31] Okay? Look at the next one.
+[40:35] Consider the Schmidt trigger circuit.
+[40:37] The triangular wave which goes from minus 12 to 12 is applied at the inverting terminal.
+[40:44] Assume that the output of the opamp swings between plus 15 and minus 15.
+[40:49] You have to tell that the voltage on the non-inverting input is this one.
+[40:54] What are the limits of this?
+[41:09] Yes, in step 2, V0 is 15, right?
+[41:12] When will it go from 15 to minus 15?
+[41:14] Sai, he asked, what is V0 now? It is 15.
+[41:17] So, I found out that the threshold was 5.
+[41:20] So, I will say as soon as the V in goes up by 5,
+[41:23] then V0 will be minus 15.
+[41:26] Okay?
+[41:28] He asked you to go from 15 to minus 15.
+[41:30] That is, what are you taking? 15.
+[42:23] What is left?
+[42:26] Look, brother, the positive terminal voltage is V.
+[42:30] There are three sources on this.
+[42:32] The top 15, the bottom 15 and V0.
+[42:35] Do one thing, put a nodal on this money.
+[42:39] To take out V.
+[42:41] V minus 15 is the voltage of the voltage.
+[42:44] The voltage of the voltage is V.
+[42:46] The voltage of the voltage is V.
+[42:48] The voltage of the voltage is V.
+[42:50] To take out V.
+[43:06] Now, 10 is LCME.
+[43:09] 3V minus 15 plus 15 cancels.
+[43:15] V is here, V0 by 3.
+[43:18] Now, if V0 is 15, then V is 5.
+[43:24] If V0 is minus 15, then V is minus 5.
+[43:28] So, this will be between 5 and minus 5.
+[43:31] See, easy.
+[43:34] Isn't it?
+[43:35] It is a very easy question.
+[43:37] Only the positive terminal voltage is asking you.
+[43:41] Either consider the 15, the current of three branches.
+[43:48] Let's see the next one.
+[43:51] In the bi-stable circuit shown, the ideal opamp has saturation level of plus minus 5.
+[43:57] What is the value of R1 that gives the hysteresis width of 500 millivolts?
+[44:03] Do it.
+[44:04] The difference between UTP and LTP is 500 millivolts, that is, 0.5 volts.
+[44:10] So, what will be R1?
+[44:18] R1.
+[44:26] R1.
+[44:47] R1.
+[45:18] R1.
+[45:25] Has anyone got the answer?
+[45:28] See, what to do here?
+[45:29] Calculate the voltage of the positive terminal.
+[45:33] There will be two sources for that, V in and V not.
+[45:39] So, the voltage division for V in will be like this.
+[45:42] Will be like this for V not.
+[45:54] Now, the comparison of this should be 0.
+[45:59] So, see, 20 by...
+[46:04] Take out this common.
+[46:12] Okay?
+[46:14] The comparison should be 0.
+[46:16] Now, see, if V not is 5, then what will be the threshold for V in?
+[46:22] Minus 5 R1 by 20.
+[46:26] And if V not is minus 5, then what will be the threshold for V in?
+[46:32] 5 R1 by 20.
+[46:36] Okay?
+[46:37] Because the comparison of this is 0.
+[46:39] Why are you doing it from 0?
+[46:40] Because the voltage of the inverting terminal is 0.
+[46:43] So, this is LTP.
+[46:46] This is UTP.
+[46:49] So, what is the width?
+[46:54] 10 R1 by 20.
+[46:56] Which must be 0.5.
+[46:59] So, R1 is 1 kilo.
+[47:03] That's it.
+[47:04] 500 millivolts means 0.5.
+[47:07] Why?
+[47:08] Rohit sir has made a mistake.
+[47:11] Dalin also made a mistake.
+[47:14] Rohit, at least solve it.
+[47:16] How will you fly in the air?
+[47:22] Is it clear to everyone?
+[47:23] Tell me.
+[47:26] You just have to compare the voltage of positive and negative terminals to calculate UTP and LTP.
+[47:34] Equate both.
+[47:36] Once V not is Vsat, once minus Vsat,
+[47:39] remove V in value from both.
+[47:42] The big value will be UTP.
+[47:44] The small value will be LTP.
+[47:47] Rohit, I have solved it.
+[47:48] It can't be done.
+[47:49] You answered it as soon as you saw the question.
+[47:53] Let's see this.
+[47:55] In the Schmitt trigger circuit shown, the Zener diodes have saturation voltage 6.3 forward voltage drop 0.7.
+[48:03] If the circuit has a LTP of 0 value of R1 by R2.
+[48:08] R1 by R2, you have to tell me.
+[48:13] Do it.
+[48:16] Let me tell you one thing.
+[48:19] The combination of two diodes here.
+[48:24] Because of this, the V not can be plus minus 7 volts.
+[48:30] Why is that?
+[48:32] Because one diode will be in reverse bias.
+[48:35] It will work like a breakdown or a Zener.
+[48:37] It will have a voltage of 6.3.
+[48:40] And the other diode will be 0.7 forward bias.
+[48:43] Suppose this is a forward bias.
+[48:46] So, this is 0.7.
+[48:48] And this is a reverse.
+[48:50] So, this is 6.3.
+[48:51] So, after doing this, 7 came.
+[48:53] Take a reverse case.
+[48:55] So, this reverse is 6.3.
+[48:57] And this one is 0.7.
+[48:59] So, the V not will be plus minus 7.
+[49:04] It will not be equal to 12 or minus 12.
+[49:07] Sir, why is that?
+[49:08] Because this voltage is called V not 1.
+[49:12] This will be plus minus 12.
+[49:15] The other drop will come across 2 kilo ohms.
+[49:18] Because of which V not will be plus minus 7.
+[49:21] Did you understand this?
+[49:23] It is not necessary that V not is plus minus V sat.
+[49:26] It can be less than that.
+[49:28] It will not be more.
+[49:29] It can be less than that.
+[49:31] By arrangement of a Zener diode and a normal diode.
+[49:35] With the help of Zener diode,
+[49:38] you can reduce the saturation level.
+[49:41] Now, see what he is saying.
+[49:44] LTP should come at 0 volt.
+[49:46] LTP should come at 0 volt.
+[49:49] According to that, you have to tell the ratio of R1 by R2.
+[49:56] Are you saying that R2?
+[49:58] Yes.
+[49:59] R2.
+[50:00] Yeah.
+[50:02] R2.
+[50:03] Yeah.
+[50:04] That's why you can go to R2.
+[50:06] Yeah.
+[50:07] R2 is there.
+[50:09] R3 is there.
+[50:12] R3 is there.
+[50:13] R2 is there.
+[50:15] R3 is there.
+[50:17] R2 is there.
+[50:19] R4 is there.
+[50:20] R5 is there.
+[50:22] R7 is there.
+[50:23] R3 is there.
+[50:24] R7 is there.
+[50:25] Pundra bhai sa 2.67 thodi hota hai, 2.167 hota hai, saath bhai Pundra, dekhain hai, dekhun.
+[51:24] LTP ke liye V0 ko kya leh? LTP ke liye V0 ko kya leh? Choti value.
+[51:34] LTP 0 hai V0 choti value hi minus 7. R1 bhai R2 kitna hua? Saath bhai Pundra, 0.467 bhai.
+[51:59] Clear? So, if I ask you UTP, then you would have put V0 plus 7 in it.
+[52:08] Because then this value would be big, the big value of VIN is UTP, the small value of VIN would be LTP.
+[52:16] Now, this is your assignment, do it. Then what we will do? Tomorrow we will conduct assignment discussion.
+[52:23] In the next few years, I will give you a triple 5 timer, okay?
+[52:27] And see one more thing, you guys see this special glass from here.
+[52:31] Your gate has covered the entire syllabus, now you can make all the PYQs of the gate.
+[52:37] All the electrical ECs that are coming in the gate, everyone can do everything.
+[52:42] And if you want to come to the academy, then you have plus and iconic two options.
+[52:46] You will get top teachers in two months, the entire study material will be on the app, there will be test series.
+[52:52] If you doubt the new question of the kids in the conic, they will make a video solution.
+[52:56] They will send printed notes at home, there will be one-to-one mentorship, there will be a strategy study plan
+[53:02] and there will be interactive open house session where you can interact on audio.
+[53:08] Come on, Anuj, these are very good things.
+[53:10] And see, yesterday I made a video of Compete, okay?
+[53:16] So Compete, everyone can appear in Compete.
+[53:21] And compete in this because your problem-solving ability will improve.
+[53:25] And when you compete with your friends, with your peers, then you feel more.
+[53:31] So it is a very addictive feature, it is a very fun feature.
+[53:34] We will go to the Unacademy app right now.
+[53:36] And go and play a great competition of five questions.
+[53:40] You will enjoy a lot. Learning is going to be great.
+[53:44] Okay?
+[53:45] And see here, what you have to do, dear?
+[53:48] Or if you want to join Unacademy, you have to choose a plan and put a code on the time of payment,
+[53:53] Ankit ESE, to get maximum discount and my personal guidance.
+[53:58] And for the kids of 24, we have taken a 15-month subscription.
+[54:02] From this subscription, what you have is that the gate 24 will also be covered.
+[54:07] So I am preparing for 24, so join the 15-month plan quickly.
+[54:11] And the results are in front of you, okay?
+[54:14] If you see the result, then we have produced 6 ranks in the top 10.
+[54:19] In the next year, that is, this year the gate will be in 23.
+[54:23] The result will be better than this, 24 people.
+[54:25] You will also break their record, so you will start quickly.
+[54:29] So you will be able to perform better.
+[54:31] It is a financial issue, so go for EMI, dear.
+[54:34] You can pay your fees here month on month, without any interest.
+[54:38] EMI is approved in 2 hours, it is at least paperwork.
+[54:41] And you can repay it at a flexible amount of time.
+[54:46] Hysteresis type is not made by TTL.
+[54:48] TTL is in the logic family.
+[54:50] What does hysteresis type mean?
+[54:54] And look, in the batch of 24, your analogue is going on,
+[54:57] of Dhandesar and Maths is going on, of Gurupal sir.
+[55:00] This is going on for both the Electrical EC.
+[55:02] And if there are 23 kids, then rank improvement batch is going on for them,
+[55:07] which is a crash course.
+[55:08] Maths and network is going on in this.
+[55:10] From tomorrow, I am starting machines in it, at 9.30 in the morning.
+[55:14] Those who want to revise machines with me,
+[55:16] join Fata Fataan Academy.
+[55:18] Maths, Network, EDC for EC kids, these 3 things are going on.
+[55:22] And what do you do?
+[55:24] Take a subscription of 3 months or 4 months,
+[55:26] using code ANKIT ESE.
+[55:28] Come with us and practice the best questions.
+[55:31] And revision it in a great way, so that this year,
+[55:35] you guys can have fun in the gate.
+[55:37] Okay?
+[55:38] And keep this connected to my telegram channel,
+[55:40] so that you get the notification.
+[55:43] Rohit, son, there is no Ttl role in it.
+[55:45] My children, you will think a little, it will become.
+[55:48] And I have solved PYQ.
+[55:50] As much knowledge as I have given,
+[55:52] it is sufficient to solve any question.
+[55:54] It is not that if the term is Ttl,
+[55:56] then we will read the whole Ttl,
+[55:58] that will be the question.
+[56:00] Okay?
+[56:01] And you can go to the community,
+[56:03] to get the PDF of this session,
+[56:05] go to the app homepage,
+[56:07] on the Discover in the community,
+[56:09] there you will get all my PDF.
+[56:11] The machine class will be 11.5 to 9.5.
+[56:13] And this class,
+[56:15] I will make it 12.5.
+[56:17] Okay?
+[56:18] So this class will be 12.5 instead of 11.5.
+[56:21] Kunal, son, whenever I do the lecture,
+[56:23] I will inform you.
+[56:25] But at different times for every student,
+[56:27] the public cannot be done.
+[56:29] Okay?
+[56:30] So we will meet tomorrow.
+[56:32] Bring all the assignments,
+[56:34] the feedback, amplifiers and oscillators.
+[56:36] Then I will do the lecture,
+[56:38] and then the power amplifier.
+[56:40] Okay? Thank you.

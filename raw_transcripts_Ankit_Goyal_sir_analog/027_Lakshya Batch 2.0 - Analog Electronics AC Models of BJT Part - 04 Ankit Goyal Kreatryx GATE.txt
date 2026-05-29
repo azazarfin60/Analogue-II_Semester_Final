@@ -1,0 +1,1450 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | AC Models of BJT Part - 04 | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=yYPGjG5pC9A
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:07] Very good morning to all of you.
+[00:09] Welcome to the Lakshya batch 2.2.
+[00:11] Analog, electronics and we have reached you.
+[00:15] On the last session of AC analysis of BJT.
+[00:18] On the last session of AC model of BJT.
+[00:21] In the last three sessions, you saw two models in a fun way.
+[00:27] RE model and H model.
+[00:29] RE model and H model you saw.
+[00:32] Today I am going to show you.
+[00:34] Third model, the most important model.
+[00:37] Hybrid Pi model.
+[00:39] About which we have been discussing for so many days.
+[00:42] We have been waiting for so many days.
+[00:44] That hybrid Pi model will come.
+[00:47] Our problems will be reduced.
+[00:49] Today we will talk about that model.
+[00:51] So are you ready?
+[00:53] Once quickly like and share the session.
+[00:56] Tell more kids that our sir is now live.
+[00:59] And your analogue class has started.
+[01:03] And this is the last session of BJT AC analysis.
+[01:06] So till now I have provided you all the questions in notes.
+[01:10] Tomorrow we will discuss.
+[01:12] Tomorrow there will be an assignment discussion.
+[01:14] In that current mirror, voltage regulator, AC analysis.
+[01:17] They will discuss assignments.
+[01:20] And after today you can apply the PYQs of BJT.
+[01:24] Because you believe that the 90% question of BJT.
+[01:28] That will be completed by DC and AC analysis.
+[01:32] And according to my lecture plan.
+[01:34] Your BJT will be completed next week.
+[01:37] Including frequency response, multi stage amplifier.
+[01:41] Differential amplifier.
+[01:42] I will wind up everything in your next week.
+[01:45] From which next week we will be doing JFET and MOSFET.
+[01:48] So do not worry.
+[01:50] We are going at a very high speed.
+[01:52] In the course of analogue.
+[01:54] As I promised you.
+[01:55] Approx of 100 hours will be your course.
+[01:57] But in a better way your analogue will be ready.
+[02:00] Whether you are from electrical, AC or instrumentation.
+[02:04] Do not think that this course is only for electrical people.
+[02:07] We are doing it very well according to electrical.
+[02:11] If we would have done electrical, electrical.
+[02:13] Then many things might have skipped.
+[02:16] But my purpose is that you are given such a view in analogue.
+[02:20] Where you can question anything without any hesitation.
+[02:24] Okay.
+[02:25] Now as I said.
+[02:27] When I will publish the playlists.
+[02:29] I will tell you when the playlists will be published.
+[02:31] Okay.
+[02:32] So I will inform you one day earlier.
+[02:34] But I cannot do that.
+[02:36] Keep publishing on daily basis on every child's demand.
+[02:39] Let's go.
+[02:40] Now see.
+[02:41] Today you have the last chance.
+[02:43] To avail 20% off discount.
+[02:46] So if you join today also.
+[02:48] Then you are getting 20% off.
+[02:50] And you know.
+[02:52] From tomorrow we are starting.
+[02:54] Brahmastra Plus Batch on Anacademy Plus.
+[02:57] In which you are getting all the top educators of India.
+[03:00] You are still given the chance to do all the subjects.
+[03:04] You can still join.
+[03:06] And we have launched a new subscription.
+[03:09] For 4 months.
+[03:11] So you can join for 4 months.
+[03:13] So that by the end of January.
+[03:16] You can easily crack the gate.
+[03:18] But remember the code.
+[03:20] Ankit ESE.
+[03:21] And if you want to go for a distance learning program.
+[03:24] Where you are getting books and test series.
+[03:26] Then you can join using the same code.
+[03:29] Ankit ESE.
+[03:30] You are getting 20% off on this.
+[03:33] So let's start today's discussion.
+[03:36] Let's start.
+[03:37] So I am talking about Hybrid Pi Model.
+[03:40] So let me draw you once first.
+[03:44] Okay.
+[03:45] Let me draw you first in Hybrid Pi Model.
+[03:48] Then we will talk about it.
+[03:50] Okay.
+[03:52] Dear.
+[03:53] Any educator in your Brahmastra Batch.
+[03:55] You can directly interact with them.
+[03:57] Where they put their notes.
+[03:59] Like I put it on my community.
+[04:01] Obviously everyone's community.
+[04:03] Everyone's telegram is different.
+[04:07] Look.
+[04:11] Do you know what is the most interesting thing.
+[04:14] What I am teaching you about Hybrid Pi Model.
+[04:17] It is like your RE Model.
+[04:19] The one you taught about R Pi.
+[04:21] It is exactly like that.
+[04:23] That is the base, emitter, collector.
+[04:25] Everyone's position is fixed.
+[04:27] Okay.
+[04:30] It is not that you have to take different positions.
+[04:34] As you have seen in the H Model.
+[04:36] Every time the position of the terminal changes.
+[04:38] It does not change here.
+[04:40] It does not change in the RE Model.
+[04:42] And the interesting thing is.
+[04:44] Both these models can be used interchangeably.
+[04:46] I mean as many questions as possible from the RE Model.
+[04:49] As many as possible from this.
+[04:51] Where does the RE Model fail.
+[04:53] In high beta.
+[04:54] Do you remember.
+[04:55] In high beta because the IB is zero.
+[04:57] Then the RE Model fails.
+[04:59] But sir.
+[05:00] There is a lot of resistance in this.
+[05:01] It is absolutely right.
+[05:02] Let me tell you.
+[05:03] Look.
+[05:04] This is the base.
+[05:05] Base dash.
+[05:07] Collector.
+[05:09] Emitter.
+[05:11] This resistance is R.
+[05:13] BB dash.
+[05:14] This is R Pi.
+[05:16] This is R Mu.
+[05:19] This is GM V Pi.
+[05:22] Look.
+[05:23] There are actually capacitances too.
+[05:25] But I will teach Sunday about capacitance.
+[05:27] Okay.
+[05:28] The capacitance in BJT.
+[05:30] We will talk about Sunday about them.
+[05:32] Not now.
+[05:33] There are capacitances too.
+[05:36] Now sir.
+[05:37] What are the parameters here.
+[05:38] What are they representing.
+[05:40] So look.
+[05:42] The first parameter is R.
+[05:44] BB dash.
+[05:47] This is called base.
+[05:49] Spreading.
+[05:51] Resistor.
+[05:52] What do you call it.
+[05:53] Base.
+[05:54] Spreading.
+[05:56] Resistance.
+[05:57] Now you will understand what I am saying.
+[05:59] This is right.
+[06:00] Do not ask questions.
+[06:01] First understand.
+[06:02] What happens.
+[06:03] See.
+[06:05] Look.
+[06:07] As our device.
+[06:09] Whether it is BJT or diode.
+[06:11] Any device.
+[06:12] There are terminals in that device.
+[06:14] Like the base in the device.
+[06:16] Ammeter.
+[06:17] Collector.
+[06:18] You bring out a wire connected to those terminals.
+[06:21] After which you can connect this device to the circuit.
+[06:25] Right.
+[06:26] It is not like that.
+[06:27] You will connect the wire on the N side or on the P side.
+[06:29] You will connect the wire on the N side or on the P side.
+[06:30] First you have to make a terminal on the P or N region.
+[06:33] That terminal when you bring it out through a wire.
+[06:37] Then you can give a connection to it.
+[06:40] So this base spreading resistance.
+[06:43] This is actually the external terminal of the base.
+[06:47] That is the outside of the device.
+[06:49] And the internal terminal of the base.
+[06:51] That is directly connected to the base.
+[06:54] There is a resistance between those two points.
+[06:56] Do you understand.
+[06:57] There are two terminals.
+[06:58] Like the base.
+[06:59] One is in the device which is the semiconductor part.
+[07:02] And the outside of the device which you have taken out through the metal.
+[07:05] So you can use the outside terminal of the device.
+[07:08] You cannot enter inside the device.
+[07:10] Right.
+[07:11] Because the device is kept in a covering.
+[07:13] So this external or internal base terminal is the resistance between it.
+[07:18] Base spreading resistor.
+[07:20] Do you understand.
+[07:22] It is the resistance between internal and external base terminal.
+[07:40] Now sir.
+[07:41] Why is it shown in the base.
+[07:43] This should have happened in the emitter and collector.
+[07:47] Correct.
+[07:48] With this logic you have taken out the terminal of the emitter.
+[07:52] Why is it in the base again.
+[07:54] What is the base.
+[07:57] The area of the base is the smallest.
+[08:01] Okay.
+[08:02] The area of the base is the smallest.
+[08:05] That is why its resistance is the highest.
+[08:12] Base area.
+[08:14] Smallest.
+[08:15] Smallest.
+[08:17] And resistance is highest.
+[08:23] That is why.
+[08:24] That is why the rest of the emitter and collector.
+[08:27] You have ignored the resistance of them.
+[08:29] Internal and external one.
+[08:31] But you have considered the base.
+[08:34] And do you know what happens.
+[08:36] This resistance is considered at a very high frequency.
+[08:40] Because you know that the skin effect increases at a very high frequency.
+[08:44] So the value of resistance increases.
+[08:46] So it has to be considered mainly.
+[08:51] Usually considered at a high frequency.
+[08:55] So the normal one that you are taking out mid-band gain.
+[08:58] Mid-frequency gain.
+[09:00] So we ignore it in that.
+[09:02] If it is given then take it.
+[09:03] If it is not given then ignore it.
+[09:06] Isn't it.
+[09:07] In numericals these things are at a higher time.
+[09:11] These things are ignored at a high time.
+[09:14] It is not taken as RBB dash.
+[09:16] If you want to concentrate on the lecture then take it out.
+[09:20] Now R mu.
+[09:21] What is R mu?
+[09:23] This R mu represents the early effect.
+[09:27] So this is feedback resistance.
+[09:30] You know what the early effect is.
+[09:33] By changing the output voltage.
+[09:36] It should also affect the current of the input.
+[09:39] This is called the early effect.
+[09:41] If we change the VCE then the input current should also be changed.
+[09:46] So it represents the early effect.
+[09:49] Which is not HR in the H model of yours.
+[09:52] So this is the same R mu.
+[09:54] The same effect is also seen.
+[09:57] Okay.
+[09:58] So that is due to the early effect.
+[10:00] So if you are ignoring the early effect then you will consider R mu as open.
+[10:04] So this resistance is actually very high.
+[10:08] This is very high.
+[10:12] Okay.
+[10:14] Now what is RPI?
+[10:16] Do you know what RPI is?
+[10:18] You have already used RPI.
+[10:20] Base emitter junction resistance.
+[10:24] Because base emitter is a diode.
+[10:27] So let's take the resistance of the diode.
+[10:29] And its value is VT upon IB.
+[10:34] VT upon IB.
+[10:36] Do you remember?
+[10:37] Yes.
+[10:38] 1 plus beta is very good.
+[10:40] Its value is 1 plus beta is coming.
+[10:45] Okay.
+[10:46] Now GM.
+[10:48] Look at GM.
+[10:49] I had come out in the basic lectures of BJT.
+[10:52] GM is your trans conductance.
+[10:56] What is GM?
+[10:57] GM is your trans conductance.
+[11:01] And its value is IC by VT.
+[11:06] IC is the DC collector current.
+[11:11] What is it?
+[11:12] IC is the DC collector current.
+[11:17] Okay.
+[11:18] And after this R0.
+[11:21] R0 is the VA by IC.
+[11:24] IC is the DC collector current.
+[11:27] What is VA?
+[11:29] VA is the early voltage.
+[11:32] What is it?
+[11:33] Early voltage.
+[11:35] Right?
+[11:36] Do you understand?
+[11:38] Now look at the trans conductance.
+[11:40] If we look at the dependent current source here.
+[11:45] Then what is the dependent source here?
+[11:50] What is the dependent source here?
+[11:52] It depends on the voltage.
+[11:54] That means here you did not make BJT a current controlled current source.
+[12:01] You made a voltage controlled current source.
+[12:05] So this is what happened.
+[12:07] People used to believe that BJT is a current controlled current source.
+[12:13] That is IC is a function of IB.
+[12:16] But later it came to be known as a voltage controlled current source.
+[12:22] In which V pi is the voltage of R pi and it depends on current source.
+[12:29] So what do you have to pay attention to here?
+[12:32] BJT is modeled as a voltage controlled current source instead of a current controlled current source.
+[12:51] Look at the second thing.
+[12:53] Model remains the same.
+[12:56] Model remains the same for NPN and PNP transistor.
+[13:07] You can keep the same for both.
+[13:10] You can change the direction if you want.
+[13:13] It is your choice.
+[13:14] But if you do not want to do it, then there will be no problem.
+[13:17] It is clear till here.
+[13:19] Now what is the meaning of the internal terminal?
+[13:24] Let me show you one thing.
+[13:27] Look at how BJT will be.
+[13:29] The actual construction of BJT is different.
+[13:33] You all know.
+[13:34] I had studied.
+[13:44] Look at this.
+[13:45] This is PNP.
+[13:51] Now this device will be covered in the casing.
+[13:57] This device is in the casing.
+[14:05] Now you must have deposited your terminal here.
+[14:16] Now when you take out the terminals from here.
+[14:21] Look at this.
+[14:24] It will come like this.
+[14:26] Look at this.
+[14:43] What will come here?
+[14:45] This will come B dash and this B.
+[14:49] Do you understand?
+[14:50] So the resistance between these two.
+[14:52] Is this clear?
+[14:54] No dear.
+[14:55] Current controlled current source is not different.
+[14:58] Voltage controlled current source and current controlled current source are the same thing.
+[15:02] Okay?
+[15:05] Manika, look at this milk tea.
+[15:08] We will not be able to do all these things.
+[15:10] So we have to study simple gate.
+[15:12] That is enough for us.
+[15:14] Is it clear till here?
+[15:16] Now the thing is that sir will apply such a complicated model.
+[15:20] Sir R pi, R mu, R bb dash will apply.
+[15:23] No dear.
+[15:24] We will simplify.
+[15:26] Right?
+[15:27] We will simplify.
+[15:28] How do we simplify?
+[15:30] In simplification.
+[15:33] We ignore.
+[15:38] R bb dash and R mu.
+[15:43] Ignore R bb dash and R mu.
+[15:47] Okay?
+[15:48] Why R bb dash is neglected?
+[15:50] Because the mid frequency region.
+[15:52] The value of it is not very high.
+[15:54] We ignore it.
+[15:56] But I said that if there is a question specifically mentioned.
+[15:59] What is R bb dash?
+[16:00] So you draw it.
+[16:02] If it is given.
+[16:03] If it is not given, then ignore it.
+[16:05] Okay?
+[16:09] Now see what you have left.
+[16:12] Practically, if we talk about it.
+[16:14] We cannot ignore it at high frequencies.
+[16:19] Because the higher the frequency,
+[16:21] the more the resistance becomes dominant.
+[16:23] And this is clear.
+[16:24] Why did he not take it in the emitter collector?
+[16:27] Because he had more area.
+[16:29] So the difference will not be there.
+[16:31] Means if there is more area, then the resistance will be very low.
+[16:34] So you can ignore it.
+[16:36] Look at this son.
+[16:41] This is it.
+[16:43] Collector base emitter.
+[16:46] Now sir, was the last model wrong?
+[16:48] Did someone ask this?
+[16:49] Look at this.
+[16:51] There will be I b here.
+[16:54] What do you write?
+[16:55] V pi is I b R pi.
+[17:00] V pi is I b R pi.
+[17:03] V pi is I b R pi.
+[17:06] So what can you write as G m V pi?
+[17:11] G m R pi into I b.
+[17:17] Now what is R pi here?
+[17:21] V t upon I b.
+[17:24] And what is G m?
+[17:28] I c upon V t.
+[17:31] So what will be G m R pi?
+[17:36] I c upon I b.
+[17:39] Means beta.
+[17:42] Means the current source beta.
+[17:49] Which you have written as G m V pi.
+[17:53] Or G m R pi I b.
+[17:58] G m R pi is beta.
+[18:00] So you think beta is also I b.
+[18:02] It is the same thing.
+[18:05] It is the same thing.
+[18:07] Tell me this.
+[18:08] Is it clear?
+[18:09] Both the models have the same thing.
+[18:11] Both the models have the same thing.
+[18:16] Son, BJT will be used at low and high frequencies.
+[18:20] Now I am talking about mid frequency.
+[18:22] As I said, we will talk about low frequency on Sunday.
+[18:26] Then I will tell you what are the changes there.
+[18:28] Okay.
+[18:29] Don't vary the frequency now.
+[18:31] Don't vary the frequency now.
+[18:33] That is a separate topic.
+[18:35] In the name of frequency response.
+[18:37] It looks very dangerous to see.
+[18:39] But we will make it easy.
+[18:40] Is it clear to all of you?
+[18:42] Tell me.
+[18:43] So both the models have the same thing.
+[18:47] There was a current controlled current source.
+[18:50] Here is a voltage controlled current source.
+[18:53] There was a current controlled current source.
+[18:56] Here is a voltage controlled current source.
+[19:00] Sir, start ESE Electrical on Plus.
+[19:03] An academy calls you to read ECE.
+[19:05] ESE Electrical.
+[19:07] What is different in ESE Electrical?
+[19:09] All of them are making syllabus of gate and ESE.
+[19:12] What is ESE Electrical?
+[19:14] Tell me.
+[19:15] Machine, Power System, Power Electronics, Network, Analog,
+[19:18] Digital, Control, Signal, Maths, AppT,
+[19:21] I have given the material.
+[19:23] What else?
+[19:24] Computer organization will be affected.
+[19:26] ESE Electrical and ESE Electronics
+[19:28] will cover your Analog and Machine.
+[19:30] So what is left?
+[19:32] I have given the material and computer organization.
+[19:34] I have given the material and computer organization.
+[19:36] Okay.
+[19:37] Is it clear to all of you?
+[19:39] So see what all formulae should be known to you.
+[19:42] See.
+[19:43] You should know RPI.
+[19:47] VT upon IB.
+[19:50] You should know GM.
+[19:52] You should know RPI.
+[19:54] GM should be known.
+[19:56] IC upon VT.
+[19:58] You should know R0.
+[20:00] VA upon IC.
+[20:02] That's it.
+[20:04] That's enough to know.
+[20:06] Okay.
+[20:08] Is it clear?
+[20:10] Now learn to use this model.
+[20:12] Learn to use this model.
+[20:14] So the first example I am taking is
+[20:16] Common Ammeter Amplifier
+[20:18] with a bypass capacitor.
+[20:22] Now see what I have told you.
+[20:24] Simple.
+[20:26] First you will make the BJT model.
+[20:32] You have made RPI.
+[20:36] Here its across voltage is VPI.
+[20:48] Okay.
+[20:52] GM VPI.
+[21:02] R0.
+[21:04] Okay.
+[21:06] R0 is usually high.
+[21:08] You have seen it.
+[21:10] Let's ignore this question most of the time.
+[21:12] Yesterday we saw a question
+[21:14] which we considered for the first time.
+[21:16] You see.
+[21:18] Will you short this capacitor in AC?
+[21:20] So the ammeter will be connected directly
+[21:22] to the ground.
+[21:24] Here.
+[21:26] If you short this capacitor here
+[21:28] then the VS and RS
+[21:30] will connect to the base.
+[21:44] If you ground this VCC here.
+[21:46] If you ground this VCC here.
+[21:48] Then this resistance RC
+[21:50] will come between the collector and the ground.
+[22:00] And V0 is connected
+[22:02] to your collector.
+[22:04] I think the model is clear.
+[22:06] First make the BJT model
+[22:08] and then connect
+[22:10] all the elements separately.
+[22:12] Is it clear?
+[22:14] Now what do we have to remove?
+[22:16] First of all, the voltage gain is asking.
+[22:18] Voltage gain means without RS.
+[22:20] Overall voltage gain is not said.
+[22:22] But what I said in numerical
+[22:24] when the overall voltage gain is not said
+[22:26] you will remove the overall.
+[22:28] But now let's talk about your derivation.
+[22:30] I say this.
+[22:32] This R0 and RC
+[22:34] are parallel.
+[22:36] Do you agree that they are parallel?
+[22:40] And this current
+[22:42] current is coming like this.
+[22:44] Means plus and minus is coming upside down.
+[22:46] So I am writing V0
+[22:48] minus GM
+[22:50] V Pi
+[22:52] R0
+[22:54] parallel RC.
+[22:58] The input voltage is V Pi only.
+[23:02] The voltage after RS.
+[23:06] This is V Pi.
+[23:08] So the voltage gain
+[23:10] means
+[23:12] V0 by VN
+[23:14] See how simple it is.
+[23:16] Minus GM
+[23:18] R0
+[23:20] parallel RC
+[23:22] which is approximately
+[23:24] minus GM RC.
+[23:26] The light.
+[23:28] This light.
+[23:30] Is it clear to everyone?
+[23:32] Is it easy?
+[23:34] Is it easy?
+[23:36] Now see the next one.
+[23:38] Quickly tell me the input resistance.
+[23:40] Come on.
+[23:42] There will be no RS in the input resistance.
+[23:46] There will be no RS in the input resistance.
+[23:48] How much will it come?
+[23:50] How much will it come?
+[23:52] R Pi.
+[23:54] The input resistance is
+[23:56] simply from the terminal of VIN.
+[23:58] It is R Pi.
+[24:00] Very good.
+[24:02] Overall voltage gain.
+[24:04] Come on.
+[24:06] Overall voltage gain.
+[24:08] V0 by VS
+[24:10] V0 by VS
+[24:12] Tell me.
+[24:14] Come on everyone.
+[24:16] V0 by VS
+[24:32] Thank you Kulkarni sir.
+[24:34] Amazing.
+[24:36] Thanks a lot.
+[24:38] See God of Mechanical is
+[24:40] praising.
+[24:42] God of Mechanical Engineering.
+[24:44] Literally.
+[24:46] Yes.
+[24:48] What will we do?
+[24:50] Overall voltage gain.
+[24:52] See you know V0
+[24:54] minus GM
+[24:56] V Pi
+[24:58] R0
+[25:00] parallel RC.
+[25:02] Now see this.
+[25:04] Now see this.
+[25:06] If you want to remove V Pi
+[25:08] can there be a voltage division here?
+[25:10] V Pi will come
+[25:12] from your voltage division.
+[25:14] Everyone will speak.
+[25:16] V Pi
+[25:18] is VS
+[25:20] R Pi
+[25:24] over R Pi plus RS.
+[25:26] Okay.
+[25:28] Now you put here
+[25:30] minus GM
+[25:40] Okay.
+[25:42] Should I write like this here?
+[25:44] Tell me.
+[25:46] Directly.
+[25:48] I brought it down in VS.
+[25:50] Everyone is coming here.
+[25:52] Tell me quickly.
+[25:54] Everyone is coming here.
+[25:56] Come on.
+[25:58] We are not here.
+[26:00] Output resistance.
+[26:02] Rudresh is understanding the third model.
+[26:04] Nothing has changed.
+[26:06] Instead of beta IB
+[26:08] GM V Pi.
+[26:10] Instead of beta IB
+[26:12] GM V Pi has done.
+[26:14] What? R0
+[26:16] parallel RC.
+[26:18] Today you are making fun of me.
+[26:20] You have blown the smoke in the amplifier.
+[26:22] This is called perfection.
+[26:24] Done.
+[26:26] The analysis of amplifier is from the third model.
+[26:28] Will you do one more?
+[26:30] Will you do one more analysis?
+[26:32] Will you do one more analysis?
+[26:34] Will you do one more and show it to everyone?
+[26:36] Speak quickly.
+[26:38] If it is fun, then it should be fun.
+[26:40] And do it like this.
+[26:42] There should be clapping.
+[26:44] But clapping is not for me.
+[26:46] Clapping is for you.
+[26:48] Because you are able to do all these things.
+[26:50] There should be clapping in the class.
+[26:52] But for students.
+[26:54] Because today students are blowing the smoke.
+[26:56] Today sir did not study anything.
+[26:58] I will tell you a very small thing.
+[27:00] You all are taking this out.
+[27:02] I have told you that instead of beta IB
+[27:04] GM V Pi should come.
+[27:06] That is all I have said.
+[27:08] Right?
+[27:10] Give output and input impedance.
+[27:12] There is no capacitor here.
+[27:14] The resistance is the same impedance.
+[27:16] Come on.
+[27:18] Next is common emitter amplifier
+[27:20] without bypass resistor.
+[27:22] Tell me.
+[27:24] Without bypass resistor what will be the change?
+[27:26] Without bypass resistor
+[27:28] what will be the change?
+[27:30] That you will not be able to ground the emitter.
+[27:32] You have to show the RE resistance there.
+[27:34] Make a little model.
+[27:36] I am not drawing anything right now.
+[27:38] You all make the circuit straight.
+[27:40] Make the circuit straight.
+[27:42] Ignore R0.
+[27:44] Ignore R0.
+[27:46] Otherwise you will get into trouble.
+[27:48] It will take a long time.
+[27:50] Come on.
+[27:52] Make a model.
+[27:54] See who will make it first.
+[27:56] As soon as it is made
+[27:58] everyone will write done in the chat.
+[28:00] As soon as the model is made
+[28:02] you all will write done in the chat.
+[28:04] Come on everybody.
+[28:06] Come on. Come on. Come on everyone.
+[28:08] Do it quickly.
+[28:14] Done.
+[28:16] See.
+[28:18] See.
+[28:20] You have to do it with this method.
+[28:22] This is the trans conductance method.
+[28:24] Because it does not fail.
+[28:26] This model is most widely used.
+[28:28] When do you use the H model?
+[28:30] When actually H parameters are given
+[28:32] in the question.
+[28:34] And you can use it in other places.
+[28:48] See.
+[28:50] I am making the first circuit.
+[28:52] Exactly.
+[28:54] This time I will not ground the emitter directly.
+[29:10] Now you understand.
+[29:12] The world makes a fool out of the amplifier.
+[29:18] Now tell me what we have done in it.
+[29:20] What have we done in it?
+[29:22] Is it not?
+[29:24] Is this the model of everyone?
+[29:26] Come on.
+[29:28] Start.
+[29:30] First take out the voltage gain.
+[29:32] First take out the voltage gain.
+[29:34] This is the voltage.
+[29:36] Vin.
+[29:38] Now do not call Vin as V pi.
+[29:40] Vin is not V pi now.
+[29:42] Vin is not V pi.
+[29:44] Vin is not V pi.
+[29:46] Vin is not V pi now.
+[29:48] Do you understand?
+[29:50] No. It is wrong Swati.
+[29:52] Voltage gain minus GMRC will not come.
+[29:54] This is what I am saying.
+[29:56] Vin is not V pi. This is not the terminal grounded.
+[29:58] Vin is the voltage of this node.
+[30:00] Where did the R0 come from?
+[30:02] I have ignored the R0.
+[30:04] Take it out with patience.
+[30:06] Please take it out with patience.
+[30:08] Do not do it wrong.
+[30:10] Please do not do it wrong.
+[30:12] Now if you understand.
+[30:14] If you do not understand.
+[30:16] If you do not understand.
+[30:18] Please take it out with patience.
+[30:20] Please take it out with patience.
+[30:22] When R comes.
+[30:24] Things get a little longer.
+[30:40] Come on.
+[30:42] Then we will see the question on this.
+[30:44] As soon as you take out the answer.
+[30:46] You will reach the questions as soon as possible.
+[30:50] And what to do today.
+[30:52] All the questions you have done with the RE model.
+[30:54] Try them again with this model.
+[30:56] Look.
+[30:58] What to do here?
+[31:00] First look at the current here.
+[31:02] How much will be V pi by R pi?
+[31:04] The voltage of R pi is V pi.
+[31:06] So what will be here?
+[31:08] V pi
+[31:10] V pi plus 1 by R pi.
+[31:12] Do you know what is the mistake a lot of times?
+[31:14] When you take resistance in kilo.
+[31:16] You should take it in gm mill.
+[31:18] You should take it in gm mill.
+[31:20] Only then you will be able to match this unit.
+[31:22] If you take gm directly in Siemens.
+[31:24] And take R pi in kilo.
+[31:26] Then it will be wrong.
+[31:28] So take care of the units.
+[31:30] Now if you want V in.
+[31:32] Then V pi.
+[31:34] Plus RE voltage.
+[31:40] The current in RE.
+[31:44] Into resistance.
+[31:48] This is V in.
+[31:50] Do you understand?
+[31:58] Again I am telling you.
+[32:00] Either take gm in mill.
+[32:02] Then it will not be the fault of the units.
+[32:04] Otherwise most of the times the fault of the unit.
+[32:06] Will happen.
+[32:08] Okay?
+[32:10] This is done.
+[32:12] Now you can write V naught here.
+[32:14] Minus gm V pi RC.
+[32:16] Minus gm V pi RC.
+[32:18] Minus gm V pi RC.
+[32:20] Okay?
+[32:22] So when I talk about voltage gain.
+[32:24] V naught by V in.
+[32:38] V naught by V in.
+[32:40] V naught by V in.
+[33:00] See this is done.
+[33:02] See this is done.
+[33:06] Now if RE would have been 0.
+[33:08] Then gm RC would have come.
+[33:10] If RE would have been 0.
+[33:12] Then gm RC would have come.
+[33:14] Okay?
+[33:16] The answer will be same.
+[33:18] This is what I am telling you.
+[33:20] Both models are same.
+[33:22] Both models are exactly same.
+[33:24] One place is current controlled.
+[33:26] One place is voltage controlled.
+[33:28] Current source.
+[33:30] This is very easy.
+[33:32] Think in terms of V in by I in.
+[33:34] I have shown you V in.
+[33:36] Where is it?
+[33:38] Now think with I in.
+[33:40] V in by I in.
+[33:42] V in by I in.
+[33:44] V in by I in.
+[33:46] Do this.
+[34:00] Do this.
+[34:16] Now you are telling from the previous model.
+[34:18] Try going on.
+[34:20] This is cheating.
+[34:22] We will not play like this.
+[34:24] R in is V in by I in.
+[34:26] R in is V in by I in.
+[34:28] V in is V in by I in.
+[34:32] 1 plus gm RE.
+[34:34] 1 plus gm RE.
+[34:36] I in given preceding model.
+[34:38] Plus R in by RE.
+[34:40] R in is my final one.
+[34:42] And I in is your final one.
+[34:44] V PI by R PI.
+[34:48] So what happens?
+[34:50] R PI.
+[34:52] Plus RE.
+[34:54] Plus gm R PI.
+[34:56] gmrpi is coming. And here you can also say that gmrpi is beta, that is why the
+[35:11] Trigon's answer is also correct. And I told you the shortcut of this, when you bring
+[35:20] the resistance to the base, then what will you have to do? Multiply with 1 plus beta.
+[35:26] Do you remember the shortcut? If you bring the emitter to the base, then multiply it with 1 plus beta.
+[35:33] And then it is added in both the series. This is what is happening. RE is multiplied by 1 plus beta in the series of Rpi.
+[35:42] Output resistance. This is the game of the children. This is RC.
+[35:49] Okay. Okay, do you know that if there is R0 here, then things are not so simple. Because R0 is
+[35:57] the parallel of gmvpi. Listen carefully. If there was R0, then the parallel of gmvpi was not
+[36:02] the parallel of RC. So don't write directly, R0 is the parallel RC. Why did you write like this last time?
+[36:10] Last time, this was the terminal grounded below. This was the grounded below, so R0 and RC came in parallel.
+[36:17] You see, this terminal became common and this one became common from here, right? So they came in parallel like this.
+[36:27] But if there is something else here, then look, this terminal will not be common, then it will not be common like this.
+[36:36] So that's why R0 is parallel RC only when emitter resistance is 0. You people say, you don't know that.
+[36:42] Or you can't do that. But do you know that you will quickly ignore the mistakes of small networks.
+[36:48] I also know that. What do you think? That the sir had made it so many times in the air, we will do this only when we come here.
+[36:54] R0 plus R is not parallel RC. Amman, look, did you make a mistake? Amman, look, if you believe me, let me show you the dotted here.
+[37:05] Tell me, how did this R0 resistance come into the RE series? How did it come into the RE series?
+[37:16] The same current should be there for the series. Is the current of RE and R0 the same? This means that you are ignoring the GMV Pi and this R Pi.
+[37:24] In this series, my children will go when there is no GMV Pi or R Pi here. Do you understand? How did this series happen?
+[37:35] This is what I am saying. Look, what are you doing wrong in the network?
+[37:39] In such a situation, you will have to take V0 by I0. If you remove the source, then its current will be zero.
+[37:49] Remember, let's put a V0 here. Let's solve it by doing this. Do you understand?
+[37:59] Look, R0 made a mistake again. This terminal is common. This is not common. Look at this one.
+[38:07] This is not common. How did they become parallel?
+[38:12] Since I am explaining that they are not parallel, why did you write R0 parallel RC?
+[38:17] For parallel, this terminal should have been connected here. Then parallel would have come.
+[38:23] But there is another resistance in the middle. It could not be parallel.
+[38:27] Since what else am I explaining? Let me also write.
+[38:57] Connect the source of V0 at output. Make VS equal to zero.
+[39:15] R out is V0 upon I0.
+[39:22] Then you will have to do it from the basics.
+[39:30] The RTH is the one who takes out the supply and puts a new source and does V0 by I0.
+[39:36] Amin, the Thevenin is the one who takes out the independent sources.
+[39:43] If you put a new source of 1 volt or 1 ampere, then I am saying V0.
+[39:48] Put a voltage source of V0 and V0 by I0. If you have more, then you can put a source of 1 ampere or 1 volt.
+[39:56] Case number 2. Take out the overall voltage gain.
+[40:01] Take out the overall voltage gain. I am showing the circuit again.
+[40:06] Here it is. Overall voltage gain.
+[40:18] Vn0 is not done.
+[40:47] VS0 is done to take out the R out supply.
+[40:55] What can you do here? You can write VS like this.
+[40:59] Vn plus the current V pi by R pi into the resistance RS.
+[41:10] Put value instead of Vn.
+[41:14] 1 plus GMRE plus RE by R pi plus RS by R pi.
+[41:25] This is done.
+[41:28] This is done.
+[41:30] Now VS is done. If you want the overall voltage gain.
+[41:40] What do we do here?
+[41:43] Minus GM V pi RC.
+[41:51] And we have taken out VS by V pi.
+[42:04] This is done.
+[42:07] We have taken out VS by V pi.
+[42:15] And you know in the exam, it is more or less because you keep the value put.
+[42:20] You will keep walking in the symbol.
+[42:26] Here it is.
+[42:31] No, nothing else will come in the R naught.
+[42:34] It will be a simple RC.
+[42:36] In this case, but as I told you Deepankar.
+[42:40] If you have an ammeter follower.
+[42:42] If you have an ammeter follower.
+[42:45] Then you have to take it out.
+[42:47] Deepankar, what did I say?
+[42:50] If you have an ammeter follower.
+[42:52] Then V naught by I naught is taken out.
+[42:55] Do you remember?
+[42:57] Now the thing is that the previous model was not in high beta.
+[43:01] If beta tends to infinity.
+[43:04] Then what will we do?
+[43:06] Then see that R pi is 1 plus beta Re.
+[43:11] This tends to infinity.
+[43:13] This becomes an open circuit.
+[43:15] Then you know the circuit of BJT.
+[43:20] Like this.
+[43:22] And you know the exact same model is used in MOSFET and JFET.
+[43:26] The exact same.
+[43:28] The large beta of BJT.
+[43:30] So why couldn't we use the previous model?
+[43:33] Because the current was zero.
+[43:35] When the current was zero.
+[43:37] Then we couldn't show the current controlled current source.
+[43:40] But can we show the voltage controlled current source?
+[43:43] Because there is no voltage zero in the open circuit.
+[43:46] There is no current zero.
+[43:48] If we had opened the RE model here.
+[43:51] Then the I would have become zero.
+[43:53] So we can't show the beta I.
+[43:55] If we can't show the beta I.
+[43:57] Then what did we do?
+[43:59] We used the voltage controlled current source.
+[44:01] GmRE.
+[44:03] Wait a second.
+[44:05] GmR pi was there.
+[44:07] This was there.
+[44:09] GmRE was there.
+[44:15] Okay.
+[44:19] Is everyone clear?
+[44:21] Now see this question.
+[44:23] In the following transistor circuit.
+[44:27] VBE.7 is given.
+[44:29] Beta and capacitance are very large.
+[44:32] When the capacitance is large.
+[44:35] The reactance of this is very small.
+[44:42] This means that you can short the capacitor in AC.
+[44:48] That is why the capacitor is large.
+[44:51] Now see.
+[44:53] First take out the DC current.
+[44:55] E.
+[44:56] Take out the DC current.
+[44:58] IE.
+[44:59] Come on.
+[45:07] Now why do you start using PY from today?
+[45:10] For BJT.
+[45:11] In which if you talk about cut-off frequency.
+[45:14] Or if there is more than one BJT in an amplifier.
+[45:18] Leave them.
+[45:19] Where there are multiple BJT in an amplifier.
+[45:22] Leave them.
+[45:23] And where you talk about cut-off frequency.
+[45:25] You will leave them.
+[45:27] You can use all the other BJT PYQs.
+[45:30] You are now capable enough.
+[45:36] Do DC analysis first.
+[45:53] DC analysis will open your capacitor.
+[46:17] Okay.
+[46:19] If you open your capacitor.
+[46:21] I will make a circuit.
+[46:23] You will do it with basic.
+[46:25] I will solve this one completely.
+[46:27] So that you get an idea.
+[46:29] How an amplifier has complete analysis.
+[46:32] And now I believe that even in your college.
+[46:35] If there is an analog.
+[46:36] There is a long 10 number question.
+[46:38] You will make it and come.
+[46:40] Even if a child gives ESC mains.
+[46:42] The entire analysis of amplifier comes in that.
+[46:44] Even then he will do it.
+[46:48] There is only one source here.
+[46:50] Yes.
+[46:51] If this capacitor opens.
+[46:52] Then 3K will be removed.
+[46:53] 3K 2.3K.
+[47:03] And 20K 10K 9V.
+[47:06] Now look.
+[47:07] When beta is given large.
+[47:11] When beta is given large.
+[47:13] So you will consider base current 0.
+[47:21] If your base current is 0.
+[47:24] Then these two series.
+[47:26] You can take out the voltage of the base.
+[47:28] These two are the resistances in your series.
+[47:30] 9 into 10.
+[47:32] By 10 plus 20.
+[47:36] 3V.
+[47:38] Okay.
+[47:39] 3V is done.
+[47:41] Now if you want emitter voltage.
+[47:44] You can take out the voltage of the base current.
+[47:46] You can take out the voltage of the base current.
+[47:48] If you want emitter voltage.
+[47:50] Then you can take out the drop of 0.7 out of the base.
+[47:55] So this is 2.3V.
+[47:59] Now if you want emitter current.
+[48:02] Which will be equal to the collector.
+[48:06] So you will say 2.3V.
+[48:09] By 2.3K.
+[48:12] 1 milliampere.
+[48:15] 1 milliampere.
+[48:17] This is coming.
+[48:18] This is coming.
+[48:21] Now RE is 25 millivolt by IE.
+[48:25] That is how much VT is giving.
+[48:29] How much VT is giving.
+[48:31] 25 millivolt.
+[48:35] So RE is 25 ohm.
+[48:39] Now RPI.
+[48:42] 1 plus beta RE.
+[48:45] Because beta is infinity.
+[48:48] So infinity.
+[48:49] GM.
+[48:51] IC upon VT.
+[48:53] IC and I are equal.
+[48:56] 1 milliampere.
+[48:59] By 25 millivolt.
+[49:02] Either write 0.04.
+[49:05] Or write 40 millisiemens.
+[49:08] If you want to run in milli.
+[49:10] If you don't want confusion in unit.
+[49:12] Then you can take GM in milli.
+[49:14] Now the next question.
+[49:16] Next question is mid band voltage gain.
+[49:20] If you consider mid band voltage gain.
+[49:22] Which is still called mid band.
+[49:24] Mid frequency.
+[49:26] Come on.
+[49:27] Make a circuit of AC.
+[49:31] And if you don't give early voltage.
+[49:33] Then don't take R0.
+[49:35] Okay Rudresh.
+[49:36] Till the time you don't give early voltage.
+[49:39] Till then you won't take R0.
+[49:41] Yes Aman.
+[49:42] ABS will be removed.
+[49:44] Till the time you don't say anything.
+[49:46] No matter the voltage gain.
+[49:47] You will give overall.
+[49:49] You will not ignore anything.
+[49:51] Neither RS nor RL.
+[49:58] How much is coming?
+[49:59] Minus 60.
+[50:00] Kovar is saying minus 60.
+[50:03] Tell others.
+[50:05] Minus 60.
+[50:06] Come on.
+[50:07] I will start making the model.
+[50:12] Now look.
+[50:13] In all these steps.
+[50:14] The faster you do.
+[50:15] The less time you will take.
+[50:17] Isn't it?
+[50:19] Actually DC current will have to be removed.
+[50:21] Brother.
+[50:22] The difference is that.
+[50:23] If you go fast in things.
+[50:26] Look.
+[50:27] This resistance will be open.
+[50:41] Base collector emitter.
+[50:53] Now when we ground this 9V.
+[50:57] When we ground this 9V.
+[50:59] Then 20 and 10 come in parallel.
+[51:02] Okay.
+[51:03] 20 and 10 come in parallel.
+[51:05] Then 20 and 10 will come in parallel.
+[51:08] If it comes in parallel.
+[51:12] Then 20 by 3 will come.
+[51:17] The supply is on the base.
+[51:19] VS.
+[51:20] Look.
+[51:21] The supply is directly on the base.
+[51:23] Now when you will ground 9V.
+[51:25] When you will ground 9V.
+[51:27] Then between 3KM collector and the ground.
+[51:29] Between 3KM collector and the ground.
+[51:39] Between 3KM collector and the ground.
+[51:45] Between 3KM collector and the ground.
+[51:48] And because of bypass capacitor.
+[51:50] The ground has emitter.
+[51:54] This is done.
+[51:56] Now here this V pi.
+[52:01] V pi is equal to VS.
+[52:04] V naught will be negative.
+[52:06] Because current will go back.
+[52:08] Minus GM V pi into 1.5 kilo ohm.
+[52:12] So V naught by VS.
+[52:16] Is minus GM into 1.5.
+[52:23] Minus 60.
+[52:26] Okay.
+[52:27] Many people directly remember GM into R out.
+[52:31] Okay.
+[52:33] Did you understand?
+[52:34] Many people remember GM into output resistance.
+[52:37] But believe me.
+[52:39] But believe me.
+[52:40] If an RS had come here.
+[52:42] Then your answer would have changed.
+[52:44] Do you understand?
+[52:45] If you had given a supply resistance.
+[52:47] Then your answer would have changed.
+[52:49] R pi is infinity.
+[52:51] R pi is infinity.
+[52:54] See.
+[52:55] Beta is large.
+[52:56] Even now the model is made.
+[52:58] When beta is large.
+[52:59] Then R pi is infinity.
+[53:00] Did you forget?
+[53:01] So soon.
+[53:04] Clear?
+[53:05] Everyone.
+[53:06] If there was one more extra resistance.
+[53:09] Then your answer would have changed.
+[53:11] But many people remember.
+[53:13] That GM into output resistance is the gain.
+[53:16] So output resistance is 1.5 kilo ohm.
+[53:18] GM is 40.
+[53:19] 40 into 1.5 60.
+[53:23] But look at the same thing.
+[53:24] All these formulas.
+[53:25] They have a particular application.
+[53:27] Where can we find the story?
+[53:28] As you can guess below.
+[53:29] If the emitter resistance had come.
+[53:31] Even then the answer would have changed.
+[53:33] Let's see the next one.
+[53:34] There is constant current biasing here.
+[53:37] And this is common base amplifier.
+[53:39] Why is it common base?
+[53:40] Look.
+[53:41] Because the input is on the emitter.
+[53:44] The output is taken from the collector.
+[53:46] So this is common base.
+[53:48] But here you notice one thing.
+[53:50] Dear.
+[53:51] There is constant current bias here.
+[53:57] Right?
+[53:58] So you have given IE directly.
+[54:01] You have given IE directly.
+[54:04] Do one thing.
+[54:05] Assume VT.
+[54:07] I am giving it to you.
+[54:08] VT.
+[54:09] Assume VT.
+[54:12] 25 millivolts.
+[54:13] I am giving it.
+[54:15] Okay?
+[54:17] Aman.
+[54:18] Dear.
+[54:19] It seems like I will complete the analogue.
+[54:39] Are you scared?
+[54:41] Make it basic.
+[54:42] There is nothing to be scared of.
+[54:46] Look.
+[54:47] You have already given IE, dear.
+[54:50] 0.5 milliamp.
+[54:57] So RE is VT upon IE.
+[55:00] Okay?
+[55:01] Rudresh.
+[55:02] IE is this.
+[55:04] It has been cut from milli to milli.
+[55:06] 50 ohms.
+[55:09] R pi.
+[55:12] 1 plus beta RE.
+[55:14] 101 into 50.
+[55:16] 5.05 kilo.
+[55:20] Many people take beta RE as well.
+[55:22] Approximately.
+[55:23] Vest is 1 plus beta RE.
+[55:25] But people consider beta RE as well.
+[55:29] What is Shanmuka?
+[55:30] Viewership is getting reduced.
+[55:32] Gradually kids are saying.
+[55:33] Sir, make analogue BJT.
+[55:35] Then you guys.
+[55:36] Make a crash course in Ramse Brahmastra batch.
+[55:39] So what is your tension?
+[55:40] Is it right?
+[55:42] Okay?
+[55:44] Now it is about GM.
+[55:49] IEC upon VT.
+[55:52] If you consider IEC as approximately IE.
+[55:55] Because beta is large.
+[55:56] Otherwise you take it out.
+[55:58] There is nothing like that.
+[55:59] Then you will say.
+[56:00] Sir, how did you do it?
+[56:01] Take it.
+[56:02] Okay?
+[56:03] So it will come approximately 20 milli Siemens.
+[56:14] Approximately.
+[56:17] This is coming.
+[56:18] 20 milli Siemens.
+[56:20] Okay?
+[56:21] Is it done?
+[56:22] Now make its model.
+[56:24] Make the model as basic as before.
+[56:26] Look.
+[56:27] I didn't give the early voltage.
+[56:29] There is no need to take the early voltage.
+[56:32] Can I approximate it?
+[56:34] Can I consider it as 5 kilo?
+[56:36] 5.05.
+[56:39] Can I consider it as 5 kilo?
+[56:42] Now don't say how it is.
+[56:43] Approximately.
+[56:44] If beta is high, then 1 plus beta RE is approximately beta RE.
+[56:49] How much is this?
+[56:50] 20.
+[56:51] V pi.
+[56:53] It is all in milli.
+[56:54] Resistance is in kilo.
+[56:57] Okay?
+[56:59] Now look.
+[57:00] The base is directly grounded.
+[57:03] The base is directly grounded.
+[57:06] So I have grounded the base.
+[57:11] Now there is 50 ohm and Vs on the emitter.
+[57:16] There is 50 ohm and Vs on the emitter.
+[57:20] There is 50 ohm and Vs on the emitter.
+[57:26] Okay?
+[57:32] Okay?
+[57:33] There will be 10 kilo ohm on the emitter.
+[57:36] Actually, there is 10 kilo ohm on the emitter.
+[57:38] Till the ground.
+[57:39] Because you will ground 9 volts.
+[57:42] There is 10 kilo ohm on the emitter.
+[57:47] And this 10 kilo ohm is also grounded from the emitter.
+[57:52] This 10 kilo ohm is also grounded from the emitter.
+[57:57] This is the V naught.
+[58:01] Okay?
+[58:02] The V naught is here.
+[58:03] Do you understand?
+[58:04] Till here.
+[58:05] Now look.
+[58:06] There will be no direct formula here.
+[58:07] V naught by Vs is asking.
+[58:09] We will do it from the network only.
+[58:12] V pi by 5.2.
+[58:15] V pi.
+[58:17] 20 V pi.
+[58:20] 20.2 V pi is done.
+[58:23] Okay?
+[58:25] Now if I put KVL from here.
+[58:29] Look like this.
+[58:31] So minus V pi.
+[58:34] Minus 20.2 V pi.
+[58:38] Do 50 kilo ohm.
+[58:40] 0.05.
+[58:42] Minus Vs is equal to 0.
+[58:45] So Vs came from here.
+[58:47] How much did it come?
+[58:48] Minus.
+[58:49] 20.2 is 10.1.
+[58:51] 1.01.
+[58:52] 0.01.
+[58:54] Look at this.
+[58:56] Do you understand this KVL?
+[58:58] Do you understand this KVL?
+[59:02] Now look here.
+[59:03] This is 10 and 10 is 5.
+[59:09] V naught is
+[59:11] minus 20 V pi into 5.
+[59:15] So minus 100 V pi.
+[59:19] So how much is your V naught by Vs?
+[59:23] Minus 100 upon
+[59:26] 2.01.
+[59:28] This will also be minus.
+[59:30] Minus is approximately 50.
+[59:35] Done.
+[59:36] Now tell me this.
+[59:37] Now we won't be able to do this directly from the formula.
+[59:40] We won't be able to do this directly from the formula.
+[59:43] Think about it.
+[59:47] Dear Priyansh,
+[59:48] if you attend my lectures on Dhang
+[59:51] then actually you have to ask me
+[59:53] which one of the three should I prepare?
+[59:55] I had explained this to you.
+[59:57] There are three models.
+[59:59] There is no one to remember
+[60:01] which one should I remember
+[60:03] and which one should I forget?
+[60:05] If you don't feel like this,
+[60:07] then I would recommend you to revise the notes once again.
+[60:11] Or you can watch that video once again
+[60:14] which I am covering in Amplifier.
+[60:17] Because honestly you don't need
+[60:19] to skip any model.
+[60:21] All models are saying the same thing.
+[60:23] Everything is the same.
+[60:25] One resistance, one current source.
+[60:27] One resistance, one current source.
+[60:28] Everyone's value is the same.
+[60:33] Now try this.
+[60:35] Look at this one.
+[60:37] Again it is on the input emitter.
+[60:39] And the output is on the collector.
+[60:41] It is a common basis.
+[60:44] It is a common basis.
+[60:50] See,
+[60:52] the output is taken from the collector.
+[60:54] The input is on the emitter.
+[60:57] Here you also know
+[60:59] how the emitter current is given.
+[61:01] This is IC.
+[61:03] This is IB.
+[61:05] So this current is IE.
+[61:09] Right?
+[61:10] This is a constant current bias.
+[61:12] It is common base.
+[61:15] Make the emitter a question.
+[61:20] The emitter is not because it is tough.
+[61:22] When you make a circuit
+[61:24] when you will make a circuit of AC analysis,
+[61:26] you will feel good.
+[61:28] You will feel that you have done something.
+[61:34] Which means
+[61:36] neither the input nor the output
+[61:38] will be common.
+[61:40] For one input, one output is common.
+[61:43] So if the input or output is common,
+[61:45] think logically.
+[61:49] Everything is common sense.
+[61:51] It is only common sense.
+[61:55] And look, after tomorrow's class,
+[61:57] you will get caught more on Amplifier.
+[61:59] Because we will make the question
+[62:01] from the model you will ask tomorrow.
+[62:04] Okay?
+[62:05] So tomorrow you will see that
+[62:06] all three models are used in one class.
+[62:08] You are reading them separately.
+[62:10] Somewhere, somewhere, somewhere.
+[62:12] Tomorrow you will see all three together.
+[62:14] Then you will clear the whole picture in one way.
+[62:16] That whatever you were reading
+[62:18] till now are all the same.
+[62:34] VT 25, let's assume.
+[62:37] It is 0.33.
+[62:40] Let's assume VT is 25 millivolts.
+[62:46] If you have not given it,
+[62:48] assume 25.9 in the exam.
+[62:50] But I am giving it.
+[62:51] There are many places in the gate
+[62:53] where VT only gives the question.
+[63:05] Because who will fight with the gatekeeper
+[63:07] tomorrow?
+[63:08] Someone will be 26, someone will be 25,
+[63:10] someone will be 25.9.
+[63:13] That is why many times what they do is,
+[63:15] take the value of VT
+[63:17] and chill yourself.
+[63:18] Do not worry.
+[63:19] So,
+[63:37] this is clear.
+[63:38] I have also written that
+[63:39] because if a capacitor opens in DC,
+[63:41] then the base of 100 kilo ohms will go.
+[63:44] If you open your capacitor in DC,
+[63:46] then the current flowing from 100 kilo ohms
+[63:48] is going to the base, that is why it is also written as IE, it has removed the parameter, it has given you IE, and look at this question,
+[63:58] it is very interesting if it comes from this type, because what you will say is that sir, if we have given IE, then our
+[64:06] analysis has been saved,
+[64:22] this is done
+[64:37] 1 by 75 cms is done, if you do it in milli then 1000 by 75 25 into 40
+[64:53] 40 by 3 milli cms is done,
+[64:57] this is done, now make its model,
+[65:00] now you make its model, I have told gmb, rpi,
+[65:04] you will ignore r0 because you have not given va,
+[65:19] ignore r0
+[65:26] make its model
+[65:34] this is done
+[66:05] now the rest of the components,
+[66:08] why did IE ignore, where did IE ignore,
+[66:12] tell me,
+[66:14] I just said that the IC and IE will be almost equal, because beta is high,
+[66:18] it has only approximated, you have to take IC,
+[66:23] there is no problem, you can do exactly Bablu,
+[66:26] but when beta comes to 100, the value is so big that there is no difference between 101 and 100,
+[66:40] see now this DC current source,
+[66:43] you will open it in AC, you will open the current source,
+[66:48] and you will ground the voltage source,
+[66:52] do you understand, the current source of DC means to open it,
+[66:59] so see this capacitor will be short,
+[67:04] due to which your base will be ground,
+[67:07] as soon as this capacitor is short, your base will be ground,
+[67:13] see,
+[67:15] and the distance between the collector and the ground will be 100 km,
+[67:18] look carefully,
+[67:20] between the collector and the ground will be 100 km,
+[67:24] so the collector and the ground,
+[67:26] do not put the base on the collector,
+[67:28] because anyways the base is grounded,
+[67:29] so show here, the collector and the ground,
+[67:33] you must be thinking that I should show this in the middle of the collector and the base,
+[67:36] but here the ground has come, so you should show it in the middle of the ground,
+[67:40] the collector and the ground is 1.5 km,
+[67:43] You have one more resistance from the collector, 1.5 kilo ohms.
+[67:48] Here you go, now look at the ammeter, what is 75 ohm or VIN?
+[67:57] Look at the ammeter, what is 75 ohm or VIN?
+[68:02] Okay, so here the current will come, 40 by 3 V Pi, these two will be added.
+[68:31] So again like before you will put KVL, so minus V Pi minus 40 by 3 V Pi plus V Pi upon 7.5 into 75 kilo, minus VS equal to 0.
+[68:57] So from here VS will come, VS will come, 2.01 is coming again and V naught minus GM V Pi
+[69:26] 100 parallel 1.5, so anyways you can ignore 100 from this logic, it is very high.
+[69:38] Minus 19.704 V Pi, now how much V naught by VS will come?
+[69:48] Take both the ratios, 9.8, now someone has told that 9.8, Kuvarn has taken out 9.68, it is close, so it is exactly 9.8 of Sobhan.
+[70:05] It is clear, it is clear, everyone is right about Niharika, so in such a question you will have to go from the circuit.
+[70:13] And then what happens is, as we will go ahead and study, multi stage amplifier, so what happens in multi stage amplifier is that multiple BJTs are applied.
+[70:21] Now these multiple BJTs are applied to you, if a child gets stuck there, then also make a model, if there are two BJTs, then two circuits are connected separately and network will be applied from there also.
+[70:31] So this is it, come on, come on, last question, see this is also a common base of constant current bias, quickly make this also.
+[70:49] Let's do one thing, let's make this from RE model, let's make this from RE model, we have been using this type of model for a long time.
+[71:02] Let's use an old model, okay, otherwise there will be no variety, now you know, I was talking to a teacher of analogue, we were discussing like this,
+[71:14] he was telling me that we made a question in the test series, so we made a question like this, where there are multiple MOSFETs, we have given feedback in between them.
+[71:25] So the child got the flavor of feedback, the flavor of MOSFET amplifier also got a very good variety, but I don't know what I said to him,
+[71:34] if I were in the student's place, I would attempt, so I would draw it as a simple model, okay, so he said yes sir, it will be directly, then the feedback doesn't matter,
+[71:48] everything will be directly, because the whole circuit is made, so this is what I am saying, the child's command on the circuit,
+[71:53] leave one BJT, put 10 BJT, you will make a circuit of 10 to 10 that there is network analysis ahead,
+[72:01] how many marks does this model get in the gate, son, it will come to describe a little, describe the hybrid Pi model, show the simplified model,
+[72:11] and find the gain if this is the amplifier, it will come in ESC mains, it will come in the gate a little,
+[72:19] if the question of BJT amplifier comes from the gate, two numbers, we won't ask more than one question from this topic,
+[72:26] if it comes in two numbers, then we will do more, now tell me how many are coming,
+[72:35] see again ammeter current is given, you take VT again 25 millivolts,
+[72:46] so take out the R,
+[73:05] 5 kilo ohms, R0 will be ignored, okay, now make a model,
+[73:21] this model will also be simple, open the current source, open the current source,
+[73:28] when you make AC, then you zero DC, so DC voltage is zero, means short or ground,
+[73:34] and DC current is zero, means open circuit, so you open the DC current source,
+[73:40] open it, now the question we left last time, because of high beta,
+[73:58] so you have to go to this class today, hybrid Pi will be done, now what am I saying,
+[74:09] take it like this, beta IB means 100 IB, now see 7.5 kilo ohm will come between the collector and the ground,
+[74:29] here open circuit will be done, ammeter will be set to ammeter,
+[74:43] and the base will be your ground, base is already visible, okay, take it out again,
+[74:52] now see put KVL from here, minus IB into 5, minus VIN equal to zero, so VIN is minus 5 IB,
+[75:08] and here when you take V0 on the collector, minus 100 IB into 7.5, so V0 by VIN is 750 by 5 is 150,
+[75:26] this is 150, come on, the exact kids who have taken out is 148.5, we have taken out approximate,
+[75:35] our 150 is coming, I think 5.05 will be 148.5, 5.05 will be 148.5, but the concept is clear,
+[75:46] how you have to do it, now you understood, if I wanted this question, then I could have done it with hybrid Pi,
+[75:52] I have also done this question with RE model, but where do you have to use H model,
+[75:57] where you have given H parameters and the characteristic of H model is that the circuit is the same,
+[76:04] the marking of terminals is changed and the value of parameters changes, that's it, simple,
+[76:11] the amplifier is this much, okay, so the kid who understood this modeling,
+[76:16] so single stage amplifier means 1 BJT, 4 BJT, you can use this circuit everywhere,
+[76:22] that's it, it was fun, the amplifier was out of phobia, yes, if there is beta, then it is helpless,
+[76:30] it is hybrid Pi, then it will not feel like your RE model, okay, so this is your today's assignment,
+[76:37] you will solve this too, okay, tomorrow we will meet and discuss the assignment tomorrow,
+[76:43] okay, tomorrow we will discuss the assignment, I will teach you the Perso Frequency Response,
+[76:48] so the classes that are going to be from Perso, the electrical students can skip the class for a week,
+[76:54] because they are the advanced topics of BJT, there is no need to prepare the electrical as much as possible,
+[76:59] okay, there is no need to prepare as much as possible, so you can practice your next week in a good way,
+[77:05] so tomorrow we will discuss the assignment, I will teach advanced topics from Perso,
+[77:09] but the topics that I will discuss from Perso are more important for ECE, not for electrical,
+[77:14] and look at this link, you can go to this link, where you will get a lot of practice questions,
+[77:21] then start using the PYQ of analog, gate PYQ by AIR1, and if you join our academy,
+[77:30] then you will get 20% discount till tonight, what do you have to do?
+[77:35] you will get 20% discount on all the subscriptions, and if you take any plus or iconic,
+[77:45] you will get top teachers, the study material of the class, test series,
+[77:51] custom doubt solving, printed notes will be sent to the home,
+[77:57] 1 to 1 mentorship will be given, strategy and study plan will be made,
+[78:02] and the open house session will be interactive, okay, and what you have to do is,
+[78:08] you just have to choose a plan, and you have to apply the ENKIT ESE code to get maximum discount, that is 20%.
+[78:18] Now if you look at the results, we have produced the results in a great way in 2022,
+[78:23] there are 6 ranks in the top 10 from Electrical, and you can join them next year,
+[78:30] if you join the academy immediately using the code ENKIT ESE, and if there is a financial issue,
+[78:35] then take it on EMI, EMI is approved in just 2 hours, you can repay it in a flexible duration,
+[78:43] and look here, we are starting from tomorrow, Brahmastra Plus batch,
+[78:48] in which Dhande sir is taking the strategy session at 11 o'clock, so do attend this session,
+[78:54] and what is the difference between Brahmastra and Brahmastra batch,
+[78:57] see both of them will complete the course, both of them will get the top teacher,
+[79:01] but what is extra in Brahmastra Plus, there is daily doubt solving class, DPP,
+[79:07] there are exclusive live classes, practice and strategy session,
+[79:11] there are notes uploaded on your app, there are test series,
+[79:14] there is Paramount material of the gate academy, there are workbooks of the gate academy,
+[79:19] there are PYQ of the gate academy, all these things you get extra on the academy Plus,
+[79:25] and we have launched a 4 month subscription, so whoever wants to prepare for gate 23,
+[79:32] wants to prepare with Brahmastra Plus, he can purchase a 4 month subscription,
+[79:38] and if you can't do it, don't worry, from today, Brahmastra batch has started on YouTube,
+[79:44] look at Rudresh, he is in the course of the gate, but he doesn't get asked,
+[79:49] means he gets asked for a rare chance, so do good things to do,
+[79:54] the community is not on the website, it is in the mobile app, this is my telegram channel,
+[79:59] you will keep it joined, so that you get all the latest updates,
+[80:04] and this is the contact number of my team, you can call on it,
+[80:07] the YouTube kids press 2, Plus and Iconic kids press 1, my team will call you,
+[80:12] and if you want the PDF of this session, then go to the home page of the academy app,
+[80:17] in the community, in Discover, I am in Discover, and you will get all my PDFs,
+[80:22] so thank you everyone, we will meet in the evening at 5,
+[80:25] keep your questions ready, whoever wants to ask me,
+[80:28] we will discuss it very well, we will discuss it, it will be fun,
+[80:31] in the evening at 5 sharp on this channel, let's crack it.

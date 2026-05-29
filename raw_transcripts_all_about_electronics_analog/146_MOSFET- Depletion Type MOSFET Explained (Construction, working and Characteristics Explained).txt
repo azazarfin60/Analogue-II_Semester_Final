@@ -1,0 +1,162 @@
+Title: MOSFET- Depletion Type MOSFET Explained (Construction, working and Characteristics Explained)
+URL: https://www.youtube.com/watch?v=XqGBNyhImV4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] In the earlier video of the field effect transistor, we have briefly discussed about the different
+[00:21] types of FET.
+[00:23] And in detail, we have already discussed about the JFET.
+[00:27] So in this video, let us see the second type of FET, which is known as IGFET.
+[00:33] And here, this IGFET stands for In-Circuited Gate Field Effect Transistor.
+[00:39] So in this IGFET, the gate terminal is isolated from the channel using this insurating layer.
+[00:46] And the MOSFET is the most common type of IGFET.
+[00:51] So here, this MOSFET stands for Metal Opsides and Re-Conductive Field Effect Transistor.
+[00:58] And this MOSFET can be further classified as either Deplition Type or Enhancement Type
+[01:03] of MOSFET.
+[01:05] So in this video, we will learn about the Deplition Type of MOSFET.
+[01:10] And first of all, let us see its construction.
+[01:14] So if you see this entire Deplition Type of MOSFET, then the channel is made up of N-type
+[01:18] material and the substrate is P-type material.
+[01:23] And through the metallic contacts, the drain and the source terminals are connected to
+[01:27] this N-channel.
+[01:29] And similarly, the gate terminal is also connected through this metallic contact.
+[01:34] But if you observe over here, there is no direct connection between this N-channel and
+[01:39] this gate terminal.
+[01:41] And the gate terminal is isolated from the channel using this SIO2 layer.
+[01:47] So if you see the structure of this MOSFET, then it consists of the metallic contacts
+[01:51] for this drain, gate and the source terminals, then this insulating layer and the conducting
+[01:57] channel which is made up of the semiconductor material.
+[02:01] And that is why this MOSFET is known as the Metal Opsides Semiconductor Field Effect
+[02:06] Transistor.
+[02:07] Now, due to this insulating layer, there will not be any flow of current through this
+[02:12] gate terminal.
+[02:13] Or we can say that the input impedance of this gate terminal is very high.
+[02:17] And in fact, it is even higher than the JFETs.
+[02:21] And that is why these MOSFETs are used in the application where the minimum power consumption
+[02:26] is required.
+[02:27] Alright, so now let's see the working of this depiction type of MOSFET.
+[02:32] So initially, let us assume that the gate and the source terminals are connected together
+[02:38] and together they are connected to the ground terminal.
+[02:42] That means initially, let us assume that this VGS is equal to 0 volt.
+[02:47] And the positive voltage is applied between this drain and the source terminal.
+[02:52] So as soon as we apply the positive voltage, then the electrons in this end channel will
+[02:56] get attracted towards this positive terminal.
+[03:00] So if you observe from the source terminals, the electron starts moving towards the drain
+[03:05] terminal.
+[03:07] And in this way, the current will establish in this end channel.
+[03:12] And if we keep on increasing the voltage between this drain and the source terminal, then
+[03:17] the current which is flowing through the channel will increase.
+[03:21] And this process will continue until all the electrons in this channel will contribute
+[03:25] in the flow of current.
+[03:28] And then after, if we increase this voltage, then the current which is flowing through
+[03:32] the channel will become constant.
+[03:35] So if you see the direction of the conventional current, then it will flow from the drain
+[03:39] terminal towards the source terminal.
+[03:42] And for the VGS is equal to 0, if you see the output or the drain characteristic, then
+[03:48] it will look like this.
+[03:50] That means as we keep on increasing the value of voltage VGS, then the drain current ID
+[03:54] will increase.
+[03:56] And after certain voltage, the drain current ID will become constant.
+[04:01] And the value of the saturation current for VGS is equal to 0 is known as the IDSS.
+[04:08] Now let's see what happens when the voltage VGS is negative.
+[04:12] So the negative voltage at the gate terminal will push the electrons towards the substrate.
+[04:19] And at the same time, the holes in this p-type substrate will also get attracted towards
+[04:23] this electrons.
+[04:26] So in short, to do the negative voltage at the gate terminal, the electrons in the
+[04:30] channel will get recombined with this holes.
+[04:34] And the rate of the recombination will depend on the apt-at-negative voltage.
+[04:38] So as we increase this negative voltage, and the rate of recombination will increase.
+[04:44] And that will reduce the number of free electrons which is available in this and channel.
+[04:48] And effectively, it reduces the flow of current.
+[04:53] So as you can see from the graph, as the value of VGS will become more and more negative,
+[04:58] and the value of drain current will reduce.
+[05:01] And at one voltage, this drain current will become 0.
+[05:05] So this voltage VGS is known as the pinch of voltage.
+[05:09] So if you see the drain or the output characteristic of the MOSFET, then it looks quite similar
+[05:14] to the NGFET.
+[05:16] But this MOSFET also works for the positive values of VGS.
+[05:22] So now let us see what happens when we apply the positive voltage.
+[05:27] So whenever we apply the positive voltage at this gate terminal, then the electrons,
+[05:31] which are minority carriers in this P type substrate, will also get attracted towards this
+[05:36] N channel.
+[05:37] And you do that, the number of free electrons in this N channel will increase.
+[05:43] So effectively, we can say that the flow of current in this N channel will increase.
+[05:49] So for the positive value of voltage VGS, the drain current ID will be even more than
+[05:53] this IDSS.
+[05:56] Now for the JFET, we had already seen the transfer characteristic.
+[06:01] And we had seen that this transfer characteristic defines the relationship between the input
+[06:06] and the output quantity.
+[06:08] So basically, it defines the relationship between the drain current ID and the voltage VGS
+[06:13] for the fixed value of VGS.
+[06:16] So now similarly, let us see the transfer characteristic of this vibration type of MOSFET.
+[06:22] So if you see the transfer characteristic, then it will be similar to the JFET.
+[06:27] But now, we will also get the value of current ID for the positive values of VGS.
+[06:32] So due to that, the curve will get extended towards the right-hand side.
+[06:37] Now as we have seen, whenever this VGS is positive, then the number of free electrons in the
+[06:42] N channel will increase.
+[06:44] And due to that, this region, where the VGS is positive, is known as the enhancement region.
+[06:51] And this region, where the VGS is negative, is known as the depression region.
+[06:56] But still, the relationship between this current ID and the voltage VGS can be expressed
+[07:01] by the same expression which was used for the JFET.
+[07:05] That means, drain current ID is equal to IDSS times 1-VGS divided by VP whole square.
+[07:14] So using this expression, we can find the value of drain current ID for the given value
+[07:19] of VGS.
+[07:21] Alright, so far, whatever discussion that we did was only for the N channel MOSFET.
+[07:28] So similarly, let us briefly talk about the P-channel type of MOSFET.
+[07:33] So in case of a P-channel depression type of MOSFET, the channel is made up of P-type
+[07:38] semiconductor material and the substrate is N type.
+[07:42] And for the P-channel MOSFET, now the polarity of the occurred voltage will also get reversed.
+[07:48] That means, this voltage VGS will be negative and this voltage VGS will be positive.
+[07:55] But first of all, let us see how the current will flow whenever VGS is equal to 0.
+[08:01] So when VGS is equal to 0 and VGS is apted in this fashion, that means when VGS is negative,
+[08:08] then the holes in this P-type channel will get acted towards the negative terminal.
+[08:15] And the flow of holes will be established in this fashion.
+[08:19] And in this case, the conventional current will also flow in the same direction.
+[08:24] Now whenever we apply the positive value of voltage VGS, then the holes will be pushed
+[08:29] towards the N type substrate.
+[08:32] And at the same time, the electrons in this N type substrate will also get acted towards
+[08:37] the P-type channel.
+[08:39] And you do that, this holes and the electrons will get recombined.
+[08:44] And as we keep on increasing this voltage VGS, then the number of holes in this P-type
+[08:48] channel will reduce.
+[08:50] And effectively, the flow of current in this P-type channel will reduce.
+[08:55] So if you see the drain or the output characteristic of this P-channel MOSFET, then it will look
+[09:00] like this.
+[09:02] But here, this voltage VGS is negative and the voltage VGS is positive.
+[09:08] So as you can see, as we keep on increasing this voltage VGS, then the drain current ID
+[09:14] will reduce.
+[09:15] And at the pinch of voltage, this drain current ID will become 0.
+[09:21] And whenever this VGS is negative, then the value of drain current ID will be even higher
+[09:26] than this IDSS.
+[09:28] And similarly, if you see the transfer characteristic, then it will look like this.
+[09:34] So now, let us see the electronic symbols of this N channel and the P-channel MOSFETs.
+[09:40] So if you see the symbols of this vibration type of MOSFET, then they resemble the actual
+[09:45] construction of the MOSFET.
+[09:48] So it consists of a three terminals that is gate, drain and the source terminals.
+[09:53] And further, if you observe this symbol, there is a space between this gate terminal
+[09:57] and this channel.
+[09:59] So this line, which connects the drain and the source terminal represents the channel.
+[10:05] And the space between this gate terminal and the channel represents that the gate terminal
+[10:10] is isolated from the channel.
+[10:13] Now in some MOSFETs, this substrate pin is also available externally.
+[10:19] So in that case, the MOSFETs are represented by these symbols.
+[10:23] But whenever it is internally connected to the source terminal, then these symbols are
+[10:28] used.
+[10:29] Now, if you observe the N channel and the P-channel MOSFETs, then the only difference between
+[10:34] the two symbols is the direction of the arrow.
+[10:37] So if it is going inward, then it indicates the N channel MOSFET.
+[10:41] And if it is going outwards, then it represents the P-channel MOSFET.
+[10:46] And basically, it indicates the direction of the flow of current whenever the pin junction,
+[10:51] which is formed by the channel and the substrate is forward biased.
+[10:56] So in case of the N channel MOSFET, whenever this P-channel junction is forward biased, then
+[11:00] the current will flow in this direction.
+[11:03] And similarly, for the P-channel MOSFET, whenever this P-channel junction is forward biased,
+[11:08] then current will flow in the output direction.
+[11:11] So basically, by the direction of the arrow, we can differentiate these two symbols.
+[11:17] So I hope in this video, you understood the construction, working and the different characteristic
+[11:22] of this Nublation type of MOSFET.
+[11:25] So similarly, in the upcoming video, we will learn about the enhancement type of MOSFET.
+[11:31] So if you have any question or suggestion, do let me know here in the comments section
+[11:35] below.
+[11:36] If you like this video, hit the like button and subscribe to the channel for more such
+[11:40] videos.

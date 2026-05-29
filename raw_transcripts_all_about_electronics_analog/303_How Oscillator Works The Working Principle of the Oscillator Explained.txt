@@ -1,0 +1,140 @@
+Title: How Oscillator Works ? The Working Principle of the Oscillator Explained
+URL: https://www.youtube.com/watch?v=XVS8Puf4tiw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] In this video, we will talk about the electronic oscillator and we will learn about the basic
+[00:21] working principle of the oscillator.
+[00:23] Now, the electronic oscillators are used in white range of applications.
+[00:27] They are used in laptops and smartphone processors for generating the clock signals.
+[00:31] While they are used in the radio and mobile receivers for generating the local carrier
+[00:35] frequency.
+[00:36] And even they are used in the single the netters, which is used in the lab to taste the
+[00:41] circuits.
+[00:42] So, this oscillator accepts a DC voltage and it generates the periodic AC signal of the desired
+[00:48] frequency.
+[00:49] Now, the oscillators can generate the frequencies from few hertz to even gigahertz.
+[00:55] Now, the output of the oscillator can be either a sinusoidal signal or a non sinusoidal
+[01:00] signal like a square wave and the triangular wave.
+[01:03] Now, in simple terms, this oscillator circuit is nothing but the amplifier, which is given
+[01:08] a positive feedback.
+[01:09] So, let us understand the working principle of this oscillator.
+[01:13] So, let us say some input sinusoidal signal is applied to this amplifier.
+[01:18] So, at the output, the input signal will get multiplied by the gain of this amplifier.
+[01:24] And the output signal will be equal to a times the input signal.
+[01:29] Now, let us say this output signal is given as the input to the feedback circuit.
+[01:35] Now, usually the feedback circuit used to be a frequency select to circuit or the resonant
+[01:39] circuit.
+[01:40] And let us say the output of this feedback circuit is equal to VF.
+[01:45] So, VF can be written as beta times output voltage.
+[01:50] That is equal to a beta times input voltage, where here this beta is nothing but the feedback
+[01:57] fraction.
+[01:58] And it defines what fraction of the output voltage is given as a feedback to the input
+[02:04] stage.
+[02:05] Now, if the phase shift that is introduced by this amplifier in the feedback circuit is
+[02:09] 0, in that case, this feedback signal will be in phase with the input signal.
+[02:14] Now, let us say this feedback signal is getting added to the input signal.
+[02:19] And at the same time, the input signal is removed from the circuit.
+[02:22] So, now, this feedback signal VF will add as input for this amplifier.
+[02:27] So, after removing the input voltage, whether we will get the sustained oscillations or not,
+[02:33] that depends upon the product of this A and beta.
+[02:36] And it is known as the loop gain of the oscillator.
+[02:39] So, if this loop gain A beta is less than 1, in that case, over the period of time, the
+[02:44] input signal will die out.
+[02:47] So, now, let us say in one particular circuit, A beta is equal to 0.9.
+[02:53] And in this circuit, the input voltage VN is equal to 2 volt of sine wave.
+[02:57] So, now, whenever this input signal passes through this amplifier in the feedback circuit,
+[03:02] then the input signal VN will become 2 volt multiplied by the 0.9.
+[03:09] That is equal to 1.8 volt.
+[03:11] And once again, whenever this input signal passes through this loop, then the input signal
+[03:16] will get reduced by the factor of 0.9.
+[03:19] So, in this way, every time this input signal passes through this loop, the amplitude of
+[03:24] the input signal will reduce.
+[03:26] And over the period of time, the oscillations in the circuit will die out.
+[03:31] Similarly, whenever A beta is greater than 1, at that time, the oscillations in the circuit
+[03:36] will build up.
+[03:37] So, as you can see, in both cases, we are not getting the sustained oscillations.
+[03:43] And that is only possible whenever A beta is equal to 1.
+[03:46] So, when A beta is equal to 1, at that time, the feedback signal VF will be same as the
+[03:52] input signal.
+[03:53] Provided, the input signal and the feedback signal have a same phase.
+[03:58] So, in that case, we will get the sustained oscillations at the output.
+[04:02] So, in oscillator to get the sustained oscillations, two conditions should get satisfied.
+[04:07] The first is the product of this A beta should be equal to 1.
+[04:11] And the second is the phase shift of this loop gain should be equal to 0.
+[04:16] Meaning that whenever the input signal travels through this amplifier in the feedback circuit,
+[04:21] the overall phase shift that is introduced by the circuit should be equal to 0.
+[04:26] And these two carat areas are known as the barcouples criteria for the oscillation.
+[04:30] Now, so far, we have assumed that whenever this oscillator is switched on at that time,
+[04:37] some finite amount of starting voltage applied to this oscillator.
+[04:41] But actually, if you see, no signal is applied to this oscillator and still we are getting
+[04:46] the oscillations at the output.
+[04:47] So, the question is how is it possible?
+[04:50] How we can get the oscillations at the output without giving any input to this oscillator?
+[04:55] So, the answer is the thermal noise is present in every circuit.
+[04:59] And if you are aware, this thermal noise contains all frequency components starting from
+[05:04] a few hertz to even hundreds of gigahertz.
+[05:07] So, initially, whenever this oscillator is turned on, all the frequency components of this
+[05:12] thermal noise will get amplified by the amplifier.
+[05:16] And the amplified output of this thermal noise will be given as an input to the feedback
+[05:21] circuit.
+[05:22] Now, like I said earlier, this feedback circuit is the frequency selective circuit.
+[05:27] So, out of all the frequency components, only for a one particular frequency, the phase
+[05:32] shift that is introduced by this amplifier in the feedback circuit will be equal to 0.
+[05:37] While all other frequencies will have a different phase.
+[05:40] So, from the all other frequencies, only one particular frequency will get added with
+[05:45] the input noise.
+[05:47] And in this oscillator circuit, initially, the loop gain A beta is slightly set more than
+[05:54] 1.
+[05:55] And because of that, the noise signal of particular frequency will get build up over the period
+[06:00] of time.
+[06:01] And once this signal reaches certain voltage at that time, the loop gain of this circuit
+[06:06] will become 1.
+[06:08] And it is possible because of the non-linear behavior of the either amplifier or the feedback
+[06:13] circuit.
+[06:14] So, in this way, the noise signal of the desired frequency will get build up over the period
+[06:19] of time.
+[06:20] And once this signal reaches finite voltage, then the loop gain of the circuit will become
+[06:25] 1.
+[06:26] And in this way, it is possible to get the sustained oscillations at the output.
+[06:30] So, this is the basic working principle of the oscillator.
+[06:34] Now, earlier, we had seen the two criteria for the sustained oscillations.
+[06:39] And these two criteria can also be proved mathematically.
+[06:41] So, let us say, the output of the feedback circuit is equal to VF.
+[06:46] And this signal VF will get added with the input signal.
+[06:49] Suppose, if input signal is present, at that time, the input to the amplifier will be
+[06:55] equal to V in plus VF.
+[06:59] And at the output, we will get A times V in plus VF.
+[07:04] Now, here VF is nothing but beta times output voltage.
+[07:09] So, if you put the value of this VF, then V out will be equal to A times V in plus A
+[07:16] beta times V out.
+[07:18] And if you simplify it, then we can say that V out by V in is equal to A divided by 1
+[07:26] minus A beta.
+[07:29] Now, here in the oscillator, we are not providing any sort of input signal.
+[07:33] And still, we are getting the oscillations.
+[07:35] It means that A beta in the circuit should be equal to 1, so that this condition will
+[07:41] get fulfilled.
+[07:42] So, from this, we can say that the magnitude of this loop gain should be equal to 1.
+[07:48] And the phase shift that is introduced by this loop gain should be equal to 0.
+[07:52] So, in this way, mathematically, these two criteria can also be proved.
+[07:58] Now, like I said before, in oscillators, the feedback circuit used to be a frequency
+[08:02] selective circuit.
+[08:04] So, this feedback circuit can be made up of either RL, RC or RC components.
+[08:09] And even the quartz crystal can be used for the frequency selection.
+[08:13] So, depending upon the type of feedback circuit, the oscillator can be classified as either
+[08:18] RC, LC or crystal oscillator.
+[08:22] And moreover that, depending upon the arrangement of these components, these oscillators can
+[08:27] be classified further.
+[08:29] Now, the oscillators, which is mentioned over here are the sinusoidal oscillators.
+[08:33] Or even it is known as the harmonic oscillators, because the output of these oscillators used
+[08:38] to be a sine wave.
+[08:39] While some other oscillators also provide the different kind of shapes, like square wave
+[08:44] and the triangular wave.
+[08:46] And these oscillators are known as the relaxation oscillators.
+[08:49] And this type of relaxation oscillators can be built up using either op-em or the timer
+[08:54] I say like 3.5 timer.
+[08:56] And we will see the design of the different types of oscillators in the future videos.
+[09:00] So I hope in this video, you understood the basic working principle of the oscillator.
+[09:04] So, if you have any question or suggestion, do let me know in the comment section below.
+[09:09] If you like this video, hit the like button and subscribe to the channel for more such
+[09:12] videos.

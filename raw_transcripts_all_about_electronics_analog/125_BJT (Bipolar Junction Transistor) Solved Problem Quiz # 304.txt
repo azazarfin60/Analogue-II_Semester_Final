@@ -1,0 +1,51 @@
+Title: BJT (Bipolar Junction Transistor) Solved Problem | Quiz # 304
+URL: https://www.youtube.com/watch?v=zJteOJantAI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this transistor circuit and for the given circuit,
+[00:16] we have been asked to find this current IC1.
+[00:19] So here, this two transistors are matched perfectly and for this transistors, the value
+[00:25] of the voltage Vb is equal to 0.7 volt while the beta is equal to 100.
+[00:30] So let us find the value of the IC1 for the given circuit.
+[00:35] So here, let us say this current is equal to I and if we apply the KCL at this node,
+[00:43] then we can write current I is equal to IC1 plus IB1 plus IB2 because the current which
+[00:53] is going into these two terminals is equal to IB1 and IB2 respectively.
+[00:58] That means this current is equal to IB1 plus IB2.
+[01:05] That means this current I is equal to IC1 plus IB1 plus IB2 or we can say that it is
+[01:12] equal to beta times IB1 plus IB1 plus IB2.
+[01:22] What we can say that this current I is equal to beta plus 1 times IB1 plus IB2.
+[01:31] Let us call this equation as equation number 1.
+[01:35] Now to find the relation between this IB1 and IB2, let us apply the KBL in this loop.
+[01:41] And here, let us say this voltage is equal to Vb2 while this voltage is equal to Vb1.
+[01:50] And here we have been given that voltage Vb is equal to 0.7 volt.
+[01:57] That means Vb1 and the Vb2 is equal to 0.7 volt.
+[02:02] So if we apply the KBL in this loop, then we can write minus Vb2 minus Ie2 times 0.6
+[02:14] kilo ohm plus 2.8 kilo ohm times Ie1 plus Vb1 is equal to 0.
+[02:26] And since Vb1 is equal to Vb2, so these two terms will get cancelled out.
+[02:33] That means 2.8 kilo ohm times Ie1 is equal to Ie2 times 0.6 kilo ohm.
+[02:43] That means beta plus 1 times IB1 times 2.8 kilo ohm that is equal to beta plus 1 times
+[02:54] IB2 times 0.6 kilo ohm.
+[02:58] Or if we simplify it, then we can say that this base current IB2 is equal to 4.667 times
+[03:07] IB1.
+[03:09] Let us call it as the second equation.
+[03:12] Now to find this current Ie1, let us apply one more KBL equation in this loop.
+[03:19] So applying the KBL equation, we can write tan volt minus 20 kilo ohm times I that is
+[03:28] voltage drop across this 20 kilo ohm minus Vb1 minus Ie1 times 2.8 kilo ohm minus minus
+[03:42] tan is equal to 0.
+[03:44] And this Vb1 is equal to 0.7 volt.
+[03:48] So if we further simplify it, then we can say that 20 volt minus 0.7 volt is equal to
+[03:55] 20 kilo ohm times Ie plus 2.8 kilo ohm times Ie1.
+[04:04] That means 19.3 volt is equal to 20 kilo ohm times beta plus 1 times IB1 plus IB2 that
+[04:16] is from the first equation plus 2.8 kilo ohm times beta plus 1 times IB1.
+[04:25] So here this beta is equal to 100 and as we have seen, this IB2 is equal to 4.667 times
+[04:35] IB1.
+[04:37] So putting all these values, we can write this expression as 19.3 that is equal to 20 kilo
+[04:45] ohm times 1 0 1 times IB1 plus 4.667 times IB1 plus 2.8 kilo ohm times 1 0 1 times IB1.
+[05:01] So if we further simplify this expression and find the value of this base current IB1,
+[05:07] then it will come out as 8.054 micro ampere.
+[05:12] And from this, we can say that this collector current Ie1 is equal to beta times IB1 that
+[05:19] is equal to 100 times 8.054 micro ampere that is equal to 0.8054 milli ampere.
+[05:30] That means we can say that this collector current Ie1 is equal to 0.8054 milli ampere.
+[05:37] That means from this we can say that the current Ie1 in the given circuit is equal to 0.8054
+[05:44] milli ampere.

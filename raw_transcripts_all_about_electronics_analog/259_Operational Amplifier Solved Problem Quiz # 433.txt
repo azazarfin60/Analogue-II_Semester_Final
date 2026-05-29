@@ -1,0 +1,98 @@
+Title: Operational Amplifier Solved Problem | Quiz # 433
+URL: https://www.youtube.com/watch?v=owP6Cvi2iqM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this Open-Base Circuit and here we have been asked
+[00:16] to find the average value of the output voltage for the given input waveform.
+[00:20] So as you can see in the question, here the far-old voltage drop of each diode is equal
+[00:25] to 0.7V.
+[00:27] So now to find this average value, first of all, let us find the output waveform for the
+[00:32] given circuit.
+[00:34] And for that, first of all, let us see how the circuit behaves during the positive half
+[00:38] cycle.
+[00:39] So during the positive half cycle, the input voltage is equal to plus 1V.
+[00:44] That means at this end, the input will be equal to plus 1V.
+[00:49] So now to find the output waveform, first of all, we should know that which diode is conducting
+[00:54] and which diode is off.
+[00:56] So to find that, first let us assume that the op-amp is operating in the open-loop condition.
+[01:02] So whenever the input is equal to plus 1V, then the voltage at this inverting terminal
+[01:08] will be equal to plus 1V.
+[01:10] And as you can see, this non-inverting terminal is connected to the ground terminal.
+[01:15] That means here this V plus is equal to 0V.
+[01:20] So here since V minus is greater than V plus, so the output voltage of the op-amp will
+[01:25] be equal to minus V set.
+[01:28] That is equal to the negative saturation voltage.
+[01:31] So the same negative voltage will also appear at the cathode of the D1 diode.
+[01:36] And if you see the anode of this diode D1, then it is connected to the V minus.
+[01:41] That means in this condition, this diode D1 will conduct.
+[01:45] On the other end, if you see this diode D2, then the anode of this diode D2 is connected
+[01:50] to the negative saturation voltage.
+[01:52] Well, if you see the cathode terminal, then it is connected to this V minus.
+[01:57] That means for this diode D2, since the anode is more negative than the cathode terminal.
+[02:02] So this diode D2 will remain of that is in this condition, when the V1 is equal to plus
+[02:08] 1V, then this diode D1 will remain on, while the D2 will remain of.
+[02:13] And if you see the equivalent circuit, then this is how it will look like.
+[02:17] So in this condition, now let us find the output voltage of the given circuit.
+[02:22] So here, through this resistor and the diode, we will have the negative feedback in the
+[02:26] given circuit.
+[02:28] And because of this negative feedback, here we can apply the concept of the virtual ground.
+[02:33] That means in this condition, the voltage at this inwarding terminal will be equal to
+[02:38] 0V.
+[02:39] So let's say this node is equal to x.
+[02:43] So now, we apply the KCL at this node, we can easily find the output voltage of the
+[02:48] given circuit.
+[02:49] So let's say this current is equal to i1 and this current is equal to i2.
+[02:56] So here, if we apply the KCL at this node, then this current i1 should be equal to i2.
+[03:03] So here, this current i1 is equal to V in minus, this 0 divided by 1 kilo ohm.
+[03:10] And that should be equal to the 0 minus, this minus 0.7 volt, that is the voltage drop
+[03:17] across this diode D1 minus V out divided by 2 kilo ohm.
+[03:23] So here, this V is equal to 1 volt.
+[03:27] That means we can say that this 1 times, this 2 kilo ohm divided by 1 kilo ohm plus 0.7
+[03:36] that is equal to minus V out.
+[03:39] Or we can say that this V out is equal to minus 2.7 volt.
+[03:45] That means whenever this input is equal to plus 1 volt, then the output of the opm is
+[03:50] equal to minus 2.7 volt.
+[03:53] So similarly, now let us find the output voltage when the V in is equal to minus 1 volt.
+[03:59] So first, let us analyze this circuit in the open loop configuration.
+[04:03] And through that, let us find out that which diode is conducting.
+[04:08] So in this condition, during the negative half cycle, this V is equal to minus 1 volt.
+[04:14] That means the voltage at this node will be equal to minus 1 volt.
+[04:18] So in this condition, this V minus is equal to minus 1 volt, while the V plus is equal
+[04:24] to 0 volt.
+[04:26] So in this condition, since V plus is greater than V minus, so the output of the circuit
+[04:31] will be equal to plus V set that is equal to positive saturation voltage.
+[04:37] That means if we consider this circuit in the open loop configuration, then the output
+[04:41] will be equal to plus V set.
+[04:44] And with that voltage, this diode D1 will remain off, because with this condition, the
+[04:49] cathode of this diode D1 will be at the positive voltage, while the I node will be at the
+[04:54] negative voltage.
+[04:56] That means this diode D1 will remain off.
+[04:58] On the other hand, if you see this diode D2, then the N node of this diode is at the
+[05:03] positive voltage, while the cathode of this diode is at the negative voltage.
+[05:07] And because of that, this diode D2 will conduct.
+[05:11] That means in this condition, the diode D1 will remain off, while the diode D2 will conduct.
+[05:17] That means whenever this input is equal to minus 1 volt, then only this D2 diode will conduct.
+[05:23] And it will appear in the feedback between the output and the input side.
+[05:26] So here, because of the negative feedback, once again, we can apply the concept of the
+[05:31] virtual ground.
+[05:33] That means the inverting terminal of the op-amp will be at the ground potential.
+[05:37] So in this condition, if we apply the KVL in this loop, then we can easily find the
+[05:42] output voltage.
+[05:44] So in this condition, this output voltage is the far-voltage drop across this diode D2,
+[05:49] and that is equal to 0.71 volt.
+[05:53] That means whenever this VIN is equal to minus 1 volt, then this output voltage is equal
+[05:58] to 0.71 volt.
+[06:00] That means during the positive half cycle, when the VIN is equal to plus 1 volt, then the
+[06:05] output of the op-amp is equal to minus 2.7 volt.
+[06:08] And whenever the input is equal to minus 1 volt, then the output of the op-amp is equal
+[06:13] to plus 0.71 volt.
+[06:15] So this will be the output waveform of the given op-amp circuit.
+[06:19] So now for this given waveform, we have been asked to find the average value.
+[06:24] So here, for the half-period, the output will remain minus 2.7 volt, while for the remaining
+[06:29] half-period, the output is equal to 0.71 volt.
+[06:33] So we can say that its average value is equal to minus 2.7 volt plus 0.7 volt divided
+[06:40] by 2.
+[06:42] And that is equal to minus 1 volt.
+[06:45] That means the average value of the given waveform is equal to minus 1 volt.
+[06:49] And hence, we can say that for the given question, this means the correct answer.

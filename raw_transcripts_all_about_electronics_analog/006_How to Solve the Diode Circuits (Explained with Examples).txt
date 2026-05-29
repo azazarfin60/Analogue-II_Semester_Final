@@ -1,0 +1,184 @@
+Title: How to Solve the Diode Circuits (Explained with Examples)
+URL: https://www.youtube.com/watch?v=jkEVGQ2lneI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Orabode Electronics.
+[00:16] Now in the previous videos of diode, we understood that what is diode and we had also seen
+[00:21] the Vi characteristic of this diode.
+[00:24] Now suppose if this diode is connected in particular circuit, then first of all we need
+[00:29] to find that whether this diode is conducting or non-conducting and if it is conducting,
+[00:36] then what is the voltage and current in that particular circuit?
+[00:40] So in this video, let us learn that how to solve the diode circuits and how to find the
+[00:44] voltage and current in circuits which contain these diodes.
+[00:48] Now there are two ways by which we can solve these diode circuits.
+[00:52] The first is the graphical method in which using the load line we can find the voltage
+[00:56] and current in the circuit.
+[00:58] In the second method is the diode approximation.
+[01:02] So first let us see how we can solve the circuit using the graphical method.
+[01:07] Now like I said, in this graphical method using the load line we can find the voltage
+[01:11] and current across the diode.
+[01:14] But first of all let us understand that what is load line?
+[01:18] So here we have a very simple circuit in which some DC voltage is applied to the circuit
+[01:23] and some current limiting resistor R is connected in series with this diode.
+[01:28] Now here let us assume that the applied voltage is sufficient that it will forward by this
+[01:34] diode and let us assume that the voltage across this diode is equal to VD and the current
+[01:39] that is flowing through the circuit is equal to ID.
+[01:43] So now if we apply the KVL then we can write this voltage V is equal to VD plus ID times
+[01:50] this resistor R. So if you see this equation we have two variables.
+[01:56] The voltage across this diode VD and the current that is flowing through this diode that
+[02:00] is equal to ID.
+[02:02] So from this expression we can find the line on this ID versus VD curve and we can get
+[02:08] the different possible values of VD and ID.
+[02:12] So for example if you put VD is equal to 0 in that case we will get the extreme value
+[02:18] of this ID that is equal to V divided by R. So we will get one point on this Y axis that
+[02:26] is equal to V divided by R and similarly if you put ID is equal to 0 in that case we
+[02:34] will get one point on this horizontal axis and that will be equal to VD is equal to V
+[02:40] volt. So we will get one more point on this X axis and by connecting these two points
+[02:46] we will get the load line for the given circuit. So this intersection point will gives us
+[02:52] the operating voltage and current for the diode. So in this way using this load line we
+[02:58] can find the operating voltage and current for the diode. Although this graphical method
+[03:04] gives us very accurate values of voltage and current it is very time consuming process.
+[03:09] So there is another way by which we can not only quickly solve the circuits but we can
+[03:13] even troubleshoot the circuits and this method is the diode approximation method. Now in
+[03:19] the introductory video of this diode we had seen the VA characteristic of the ideal diode.
+[03:25] So if the diode is forward biased in that case it will simply act as a closed switch. On
+[03:31] the other end in case of reverse bias it will act as an open switch. Then after we had
+[03:36] seen the second approximation in which we had assumed that the diode will start conducting
+[03:42] only when the applied voltage crosses some threshold voltage and if the applied voltage
+[03:47] is less than this threshold voltage in that case it will act as an open switch. Then after
+[03:52] we had also seen the third approximation where we have also included some series resistance
+[03:58] with this diode. Now in most of the circuits the current limiting
+[04:02] resistor which is connected in series with the diode used to be a much larger than the
+[04:07] diode resistance. So in most of the cases we can neglect this diode resistance. So in our
+[04:13] analysis we will use the second approximation where we will assume that whenever the diode
+[04:19] is forward biased then the voltage across the diode will be equal to 0.7 volt and whenever
+[04:24] it is reversed biased then simply it will act as an open switch. So using this approximation
+[04:30] let us also diode circuits and let us start with very basic example. So in this circuit
+[04:37] a 5 volt of voltage is connected to this diode and here we also have a 1 kilo ohm of current
+[04:43] limiting resistor. So let us find out the voltage and current for the given circuit. Now first
+[04:48] of all we need to identify that whether this diode is conducting or non conducting and
+[04:54] that can be found by finding the thinness equivalent voltage across this diode. Now here
+[05:00] if the applied voltage across this anode and cathode of the diode is more than 0.7 volt
+[05:06] in that case we can say that the diode is conducting and here we are assuming that the
+[05:11] diode that is connected is silicon diode. In case of a germanium diode the threshold voltage
+[05:18] used to be around 0.3 volt. So in case of the germanium diode the diode will start conducting
+[05:24] whenever the applied voltage across the diode is more than 0.3 volt. Now here as the diode
+[05:29] is conducting so let us represent it by its equivalent circuit and here let us assume
+[05:36] that the current that is flowing through the circuit is equal to id. So this current id will
+[05:42] be equal to 5 volt minus 0.7 volt divided by 1 kilo ohm that is equal to 4.3 milliampere.
+[05:51] So this is the current which will flow through this particular circuit and the voltage across
+[05:57] the diode will be equal to 0.7 volt. Now in this circuit if we assume that the diode
+[06:03] that is connected is silicon diode and the applied voltage is 0.5 volt in that case it will
+[06:09] not cross the barrier of this silicon diode. So the circuit will act as an open circuit
+[06:16] and hence the current that is flowing through the circuit will be equal to 0. But instead
+[06:21] of silicon diode suppose we have a germanium diode in that case this diode will conduct.
+[06:27] So as you can see in case of the germanium diode this circuit will conduct while in case
+[06:32] of the silicon diode this circuit will act as an open circuit. So while solving the circuits
+[06:37] we also need to see the type of diode which is connected in the circuit. Alright so now
+[06:43] once again let us assume that the diode that is connected in the circuit is silicon diode
+[06:47] but now the direction of the diode has been reversed. So in this case if you see if you
+[06:53] find the Thamines equivalent voltage then now across this anodinth cathode the voltage
+[06:59] will be equal to minus 5 volt because now the anod is on the right hand side and the
+[07:06] cathode is on the left hand side. So equivalent voltage across this diode will be equal to
+[07:12] minus 5 volt and hence this diode is reversed bias. So there will not be any flow of current
+[07:18] through this circuit and simply we can say that this diode current id will be equal to
+[07:23] 0. So as you can see using this diode approximation we can easily analyze and solve the circuit
+[07:30] problems. Now using this approximation the values of the voltage and current that we have
+[07:36] got are not accurate values but they are quite close to the actual values. So for analyzing
+[07:42] or troubleshooting the circuits we can use this diode approximation alright so now let
+[07:48] us see few more examples based on this diode circuits. So in this example the two silicon
+[07:54] diodes are connected in series and we have been asked to find the voltage and current
+[07:58] across each diode as well as we have been asked to find the output voltage across this
+[08:03] 1kohm resistor. Now for a moment let us assume that these two diodes are conducting and
+[08:10] as they are silicon diodes so in case of the forward bias the voltage across each diode
+[08:16] will be equal to 0.7 volt. So to turn on these two diodes the voltage across the two terminals
+[08:23] of this diode pair should be more than 1.4 volt and here as the Apead voltage is 5 volt
+[08:31] so these two diodes will turn on. So let us replace these two diodes by the equivalent
+[08:36] circuit and if you see the equivalent circuit then it will look like this. Now here let
+[08:42] us assume that the current that is flowing through the circuit is equal to i. So the current
+[08:48] i can be given as 5-0.7-0.7 and that is divided by 1 kohm resistor. So the value of this
+[08:58] current i will be equal to 3.6 milliampere. Now the output voltage v out will be the drop
+[09:05] across this 1 kohm resistor. So the output voltage v out will be equal to 3.6 milliampere
+[09:11] multiplied by 1 kohm resistor. So the output voltage v out across this 1 kohm resistor
+[09:17] will be equal to 3.6 volt. So in this way in case of the series connection of the diode
+[09:24] the threshold voltage to turn on the diode will increase. So instead of the two silicon
+[09:29] diodes if we have a 3 silicon diode which are connected in series the threshold voltage
+[09:34] to turn on this diode will increase to 2.1 volt. So similarly try to find the current
+[09:40] and output voltage in the even circuit. Now this circuit is similar to the previous circuit
+[09:45] but here once silicon diode is replaced by this germinium diode. So try to find the answer
+[09:52] and do let me your answer in the comment section. Alright so now let us move to the next
+[09:57] example. So in this example we have been asked to find the value of this voltage is v1
+[10:03] v2 and v out. Now if you see the circuit the anode of this diode is connected to the
+[10:09] 10 volt through this 4 kohm resistor. Well the cathode is connected to minus 5 volt
+[10:14] through this 3 kohm resistor. So intuitively you can say that this diode will turn on.
+[10:21] So here if we apply the KVL then we can write 10 minus v1 minus 0.7 volt that is the drop
+[10:31] across this silicon diode minus v2 that is the drop across this 3 kohm resistor minus
+[10:39] minus 5 volt and that will be equal to 0. So if you simplify it then we will get 14.3
+[10:46] volt that is equal to v1 plus v2. Now here we have assumed that the current that is flowing
+[10:53] through the circuit is equal to i. So this v1 will be equal to 4 kohm times this current
+[11:00] i and this v2 will be equal to 3 kohm times this current i. So if you simplify it then
+[11:10] we can say that this current i will be equal to 14.3 volt divided by 7 kohm that is roughly
+[11:18] equal to 2.04 milliampere. So this is the current which will flow through this circuit. So
+[11:27] from this we can say that this voltage v1 will be equal to 4 kohm multiplied by this current
+[11:33] i that is equal to 8.16 volt and similarly v2 will be equal to 2.04 milliampere multiplied by
+[11:45] 3 kohm that is equal to 6.12 volt. So these are the values of voltage v1 and v2. Now here the
+[11:54] output voltage v out will be equal to v2 minus 5 volt that is equal to 6.12 volt minus 5 volt
+[12:04] and that is equal to 1.12 volt. So this is the actual value of the output voltage.
+[12:11] Alright so now let us move to the next example. Now here these two diodes are connected in the
+[12:17] parallel connection and we have been asked to find the value of the output voltage as well as the
+[12:23] current i that is flowing in the given circuit and we have been also asked to find the value of the
+[12:28] diode currents iD1 and iD2. Now if you see this circuit here the two terminals of these diodes are
+[12:35] connected to the ground potential and the n out of these two diodes are connected to the 10 volt
+[12:42] through this 1 kohm resistor. It means that these two diodes will become far out of biased.
+[12:47] It means that the output voltage which we will get across these two diodes will be equal to
+[12:53] 0.7 volt. It means that this node the voltage is equal to 0.7 volt. So from this we can easily find
+[13:01] the current that is flowing in the circuit. So the current i will be equal to 10 volt minus 0.7
+[13:10] volt divided by 1 kohm resistor and that is equal to 9.3 milliampere. So this is the total current
+[13:19] which will flow in the given circuit. Now here we are assuming that these two diodes are identical.
+[13:26] So this current i will get equally divided between the two diodes. It means that the current
+[13:33] iD1 and iD2 will be equal to 4.65 milliampere. Now in this example as the two diodes which are
+[13:43] connected in parallel are identical. So it is easy to solve this particular problem.
+[13:49] But if the two diodes which are connected in parallel are made up of different materials
+[13:54] then we need to see the threshold voltage of each diode. So based on this we will see the next
+[14:00] example. So in this example the silicon and the germanium diodes are connected in the parallel
+[14:06] connection. Now here for a moment let us assume that the two diodes are conducting simultaneously.
+[14:12] And first to follow let us assume that this silicon diode is conducting. So if this silicon
+[14:17] diode is conducting then there will be a voltage drop of 0.7 across this diode. So at this node
+[14:24] the voltage will be equal to 12 minus 0.7 that is equal to 11.3 volt. Similarly let us assume
+[14:32] that this germanium diode is also conducting. So if this diode is conducting then the voltage
+[14:38] drop across this diode should be equal to 0.3 volt. And the voltage drop across this silicon
+[14:44] diode should be equal to 0.7 volt. Now as these diodes are connected in the parallel connection
+[14:50] the voltage drop in the parallel connection should remain constant. But here the one diode has a
+[14:57] voltage drop of 0.7 volt while the other diode has a voltage drop of 0.3 volt. It means that
+[15:04] only one diode should conduct and one diode should remain of. So let us find out which diode
+[15:10] will conduct and which diode will remain of. Now in this circuit whenever the 12 volt voltage is
+[15:16] applied to this diode in reality this voltage will take some time to reach from 0 to 12 volt.
+[15:23] Now during the course of this transient if you see first of all this germanium diode will
+[15:28] turn on. Once this diode is turned on it will try to maintain the voltage across the two terminals
+[15:34] so because of that this voltage across the silicon diode will also remain 0.3 volt. And hence
+[15:40] this silicon diode will not be able to turn on. So if you see actually the voltage across the two
+[15:46] terminals will remain 0.3 volt. So the output voltage V out in reality will be equal to 12 volt
+[15:53] minus 0.3 volt that is equal to 11.7 volt. So in this way whenever the two different
+[16:00] types of diodes are connected in parallel then we need to see the threshold voltage or the
+[16:04] cutting voltage for each diode. So the diode which has a lower cutting voltage will turn on first.
+[16:11] All right so based on this let us see last example. Now in this example also we have been asked
+[16:17] to find the output voltage. Now here to find the output voltage let us assume that both diodes
+[16:23] are conducting simultaneously. And first let us talk about the first diode. So if the first diode
+[16:29] is conducting then the voltage at this node should be equal to 2 volt minus 0.7 volt that is
+[16:36] equal to 1.3 volt. Now the same voltage will also appear at the cathode of this second diode.
+[16:42] And the anode of the second diode is connected to the four volt. It means that the second diode will
+[16:47] also become far biased. And if this diode is turned on then there will be a 0.7 volt of voltage drop
+[16:53] across this diode. So if we consider this second diode as a conducting diode then the voltage at
+[17:00] this node should be equal to 4 volt minus 0.7 volt that is equal to 3.3 volt. But here if both
+[17:09] diodes are conducting simultaneously then you can see that there is a contradiction at this node.
+[17:15] It means that both diodes cannot conduct simultaneously. Now suppose if we assume that
+[17:20] the second diode is conducting only in that case the voltage at this node will be equal to 3.3
+[17:26] volt. And at this node also the voltage should be equal to 3.3 volt. So if this is the case then the
+[17:34] first diode will remain off. And there will not be any contradiction of the voltage. So it means
+[17:41] that the assumption that we have made is correct. That means the first diode will remain off and the
+[17:46] second diode will remain on and the actual voltage at this node will be equal to 4 volt minus
+[17:54] 0.7 volt that is equal to 3.3 volt. So this is the output voltage for the given circuit.
+[18:01] So I hope in this video you understood how to solve the problems based on the diode. And we will
+[18:06] solve some more examples in the upcoming quiz. So you can check the community type section of the
+[18:11] channel for the more information. So if you have any questions or suggestions do let me know in
+[18:16] the comment section below. If you like this video hit the like button and subscribe to the channel for more such videos.

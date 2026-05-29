@@ -1,0 +1,64 @@
+Title: Operational Amplifier / Diode Solved Problem (Analog Electronics) | Quiz # 494
+URL: https://www.youtube.com/watch?v=OByKqWVuXmA
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:10] So in this question, we have been given this open-based circuit and here we have been given
+[00:15] that the diode current in the circuit can be given by this expression.
+[00:20] That is equal to I s times e to the power alpha times V d t by T where the V d is the
+[00:26] diode voltage and the T is the absolute temperature in the Kelvin.
+[00:31] And here we have been also given the values of the alpha and the saturation current.
+[00:35] So apart from that, here we have been also given that all the components in the circuit
+[00:39] are ideal.
+[00:41] So here for the given circuit, we have been asked to find the change in the output voltage
+[00:45] for Kelvin change in the temperature.
+[00:48] That means if the temperature changes by the one Kelvin, then what will be the change
+[00:51] in the output voltage?
+[00:54] So here we have been given that all the components in the circuit are ideal.
+[00:58] That means here this op-em is also ideal op-em and that is why no current is flowing into
+[01:03] the op-em terminal, right?
+[01:06] That means here this 250 nanomemper current will flow through this diode.
+[01:11] So we can say that this diode current ID is equal to 250 nanomemper.
+[01:18] And here we have been also given the equation for the diode current.
+[01:22] That means here this diode current ID is equal to IS times e to the power alpha times
+[01:28] VDD divided by e.
+[01:30] So here to find the output voltage V out, first of all we need to find the voltage at
+[01:35] this non-inverting node.
+[01:36] And if you see over here, then that is equal to the voltage across this diode.
+[01:41] So we can say that this V plus is equal to VD, but the VD is the voltage across this diode.
+[01:49] And we can find this voltage with the help of this equation.
+[01:52] So if we take the natural log on both sides, then we can write this expression as this
+[01:57] alpha times VD divided by t, that is equal to natural log of this ID divided by IS.
+[02:05] So here we already know the values of the ID as well as the IS.
+[02:09] So further we can write it as this alpha times VD divided by t, that is equal to natural
+[02:15] log of this 250 NIMPR, that is 250 times n to the power minus 9 divided by IS.
+[02:23] And this IS is equal to 10 to the power minus 15.
+[02:27] So if we calculate the value of this natural log, then it will come out as 19.337.
+[02:34] So from this we can say that this alpha times VD divided by t is equal to 19.337.
+[02:40] For further we can say that this voltage VD is equal to 19.337 times t divided by alpha.
+[02:49] So now let us put the value of the alpha.
+[02:53] So here the value of the alpha is equal to 1.16 times 10 to the power 4 Kelvin per
+[02:59] volt.
+[03:00] So we can say that this VD is equal to 19.337 times t divided by alpha.
+[03:08] So if we further simplify it, then this VD is equal to 1.667 times 10 to the power minus
+[03:15] 3 times t.
+[03:17] So in this way we got the expression of the diode voltage in terms of the temperature.
+[03:22] That means with temperature how the diode voltage will change.
+[03:26] So with the help of it, now we can easily find the expression for the output voltage.
+[03:31] So here if this VD is the diode voltage, then the voltage at this non-inverting terminal
+[03:36] is also equal to VD because this node is at the ground potential.
+[03:41] That means here this V plus is equal to VD.
+[03:45] And we know that for the non-inverting configuration the output voltage of the op-em can be given
+[03:49] as 1 plus these RF divided by R1 times V plus.
+[03:56] So here this RF is equal to 5R, while the R1 is equal to R.
+[04:01] So we can say that this output voltage of the op-em is equal to 1 plus 5R divided by
+[04:06] 1 times V plus.
+[04:08] And we know that this V plus is equal to VD.
+[04:12] So we can say that the output voltage of the op-em is equal to 6 times VD.
+[04:17] And we know that this VD is equal to 1.667 times 10 to the power minus 3 times t.
+[04:25] That is equal to 10 times 10 to the power minus 3 times t.
+[04:30] Or we can say that this V out is equal to 10 milli volt times t.
+[04:35] So from this expression we can say that if the temperature changes by the 1 Kelvin, then
+[04:40] the output voltage will change by 10 milli volt.
+[04:42] For another words, the change in the output voltage will be equal to 10 milli volt.
+[04:48] And therefore for the given question the answer is equal to 10 milli volt.

@@ -1,0 +1,80 @@
+Title: Zener Diode Solved Problem (Zener Diode as Voltage Regulator)| Quiz # 318
+URL: https://www.youtube.com/watch?v=yhzZbcStxyM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, this Xenor diode is used as a voltage regulator.
+[00:16] So this circuit provides a 5 volt across this 1 kilo ohm load.
+[00:21] And in this question, just assume that the Xenor diode has a constant reverse breakdown
+[00:26] voltage of 5 volt and the current through the Xenor diode is between IZ minimum and
+[00:30] the IZ maximum.
+[00:33] Where this IZ minimum is the minimum required current for the Xenor diode to operate it
+[00:37] in the breakdown region.
+[00:40] So in this circuit, the nominal input voltage is equal to 6 volt, but it may vary between
+[00:45] plus minus 5 percent.
+[00:48] So here, we have been asked to find the value of this series resistor R and the minimum
+[00:53] required power dissipation of this Xenor diode.
+[00:57] So in the given circuit, as far as the current through the Xenor diode is between IZ minimum
+[01:02] and IZ are maximum, then it will operate in the breakdown region.
+[01:07] That means in that case, the voltage across the Xenor diode will remain 5 volt or in other
+[01:13] words, the output voltage will remain 5 volt.
+[01:17] So here, let's say the current through this 1 kilo ohm load is equal to IL.
+[01:23] So in this case, this IL will be equal to 5 volt divided by 1 kilo ohm that is equal
+[01:29] to 5 milliampere.
+[01:32] And whenever the Xenor diode is operating in the breakdown region, then some current
+[01:37] will also flow through this Xenor diode.
+[01:39] So let's say this current is equal to IZ and let's say the current which is supplied
+[01:45] by the source voltage is equal to IS.
+[01:49] So we can say that this IS is equal to IZ plus IL.
+[01:56] Now whenever the Xenor diode is operating in the breakdown region, then the output voltage
+[02:00] will remain 5 volt.
+[02:02] That means this IL will remain fixed.
+[02:05] So this IS will be minimum when the IZ is equal to minimum or in other words, the supplied
+[02:12] current will be minimum when the current through the Xenor diode is equal to minimum.
+[02:18] So we can say that this IS minimum is equal to IZ minimum plus IL.
+[02:26] Similarly, the supplied current will be maximum when the current through the Xenor diode is
+[02:32] also maximum.
+[02:34] That means IS maximum will be equal to IZ maximum plus IL.
+[02:44] Apart from that, here we have been given that the nominal input voltage is equal to 6 volt
+[02:50] and it will vary by plus minus 5 percent.
+[02:54] That means in minimum will be equal to 6 volt minus 0.3 volt that is equal to 5.7 volt.
+[03:04] Similarly, these in maximum will be equal to 6 volt plus 0.3 volt that is equal to 6.3
+[03:14] So due to the 5 percent variation, the input voltage may vary between 5.7 volt and the
+[03:20] 6.3 volt.
+[03:22] Now here the value of R should be selected such that when the input is minimum at that
+[03:28] time also, the current which is supplied by the source voltage is at least equal to
+[03:34] IS minimum.
+[03:37] So we can say that this IS minimum is equal to this in minimum minus VZ that is the voltage
+[03:47] at this node divided by R.
+[03:51] Now here this IZ minimum is equal to 2 milliampere while this IL is equal to 5 milliampere.
+[03:59] That means IS minimum is equal to 2 milliampere plus 5 milliampere that is equal to 7 milliampere.
+[04:09] So from this we can say that this 7 milliampere is equal to in minimum that is 5.7 volt minus
+[04:20] VZ that is 5 volt divided by R or we can say that this R is equal to 0.7 volt divided
+[04:28] by 7 milliampere that is equal to 100 ohm.
+[04:34] That means whenever this input is minimum at that time to supply a current of at least
+[04:41] IS minimum the required value of R should be equal to 100 ohm.
+[04:46] Now with this value of R let us find the value of the IS maximum.
+[04:51] So this IS maximum and we given as in max minus VZ divided by R because with the given
+[05:02] value of R this IS will be maximum when the input voltage is maximum that means IS maximum
+[05:10] will be equal to 6.3 volt minus VZ that is 5 volt divided by 100 ohm that is equal
+[05:19] to 13 milliampere.
+[05:22] Now here this load current IL is fixed that is equal to 5 milliampere that means out
+[05:29] of the 13 milliampere the 5 milliampere will flow through the load that means the remaining
+[05:35] current has to flow through this Xenod diode and that will be the maximum current which
+[05:40] is flowing through the Xenod diode.
+[05:42] So from this we can say that for the given circuit this IZ maximum is equal to this IS
+[05:50] maximum minus IL that is equal to 13 milliampere minus 5 milliampere that is equal to 8 milliampere.
+[06:02] That means the IZ max is equal to 8 milliampere and this current will flow through the Xenod
+[06:08] diode when the input voltage is maximum and in this case since the Xenod diode is still
+[06:14] operating in the breakdown region so the output across the Xenod diode will be equal to
+[06:19] 5 volt.
+[06:21] So in this case if you see the power dissipation across the Xenod diode then this Xenod
+[06:26] Z will be equal to this IZ max times VZ that is equal to 8 milliampere times 5 volt that
+[06:37] is equal to 40 milli watt.
+[06:41] That means with the value of R is equal to 100 ohm and the input voltage is maximum then
+[06:46] the power dissipation across the Xenod diode is equal to 40 milli watt and to withstand
+[06:52] this power the minimum power dissipation of this Xenod diode should be at least equal
+[06:56] to 40 milli watt.
+[06:59] So from this we can say that the required value of R is equal to 100 ohm and the minimum
+[07:05] required power dissipation rating of this Xenod diode should be equal to 40 milli watt
+[07:10] and therefore for the given equation this is the correct answer.

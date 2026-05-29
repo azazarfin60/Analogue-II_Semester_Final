@@ -1,0 +1,242 @@
+Title: Op-Amp Integrator (with Derivation and Solved Examples)
+URL: https://www.youtube.com/watch?v=OPvs7A554Rw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:22] So in this video we will see how to use OPEM as an Integrator.
+[00:26] Now in the earlier videos of OPEM we have seen that how to use OPEM as a summing amplifier
+[00:31] and differential amplifier and in this configurations so far we have used registers with this OPEM.
+[00:37] So now suppose if we use reactive element like inductor or capacitor along with this OPEM
+[00:44] then we can use this OPEM as an Integrator or differentiator.
+[00:48] So in this video we will see how to use this OPEM as an Integrator by using the registers
+[00:53] and capacitors along with this OPEM.
+[00:56] So first of all just look at this inverting OPEM configuration and in this configuration
+[01:01] the feedback register RF is connected between the output terminal and the inverting input
+[01:05] terminal.
+[01:06] So now suppose if we replace this feedback register by capacitor then the same circuit can
+[01:12] be used as an Integrator.
+[01:14] So let us understand how this circuit will act as an Integrator.
+[01:18] So in this circuit let us assume that the current that is entering into this register R is
+[01:24] let say IN and the current that is going out of this node is let say current IC that
+[01:32] is the current which is flowing through this capacitor C and as this capacitor is connected
+[01:37] in the feedback so let us say this capacitor as CF.
+[01:41] So now here because of the feedback this node will act as a virtual ground so at this node
+[01:47] the potential will be equal to 0.
+[01:50] So let us apply the KCL at this node.
+[01:52] So if we apply the KCL then we can write it as a IN that is equal to the IC which is
+[01:58] the current that is flowing through this capacitor CF.
+[02:02] Now this current IN will be equal to V in minus 0, dR by this register R and that will
+[02:09] be equal to this current IC.
+[02:12] Now if you know about the capacitor current then the capacitor current IC can be given
+[02:16] by the expression C times dVC by dt where VC is the voltage across this capacitor.
+[02:24] Now we have already seen this expression in the earlier video of a transient analysis
+[02:27] right but if you do not know about it then let us quickly go through it.
+[02:31] So the charge across the capacitor can be given by the expression C times the voltage
+[02:35] across the capacitor.
+[02:37] So if you take the derivative of this expression then we will get rate of change of charge
+[02:43] that is equal to the current will be equal to C times dVC by dt and here we are assuming
+[02:49] that the capacitance is not changing with the time.
+[02:52] So in this way we got this expression.
+[02:54] So now let us use this expression and put this value in this expression.
+[02:59] So if you put this value then we will get V in dR by R that is equal to CF times dVC
+[03:07] by dt where VC is the voltage across this capacitor.
+[03:12] So we can write this expression as CF times d by dt into 0 minus V out which will come
+[03:20] out as V in dR by R that is equal to minus CF times d by dt into output voltage.
+[03:30] So if you reenact this expression then we can write it as a dV out by dt that is equal
+[03:36] to minus 1 dR by RCF into input voltage V in.
+[03:42] And if you take the integration at both sides then we will get the output voltage as V
+[03:48] out that is equal to minus 1 dR by RCF times integration of input voltage.
+[03:54] And here we are assuming that we have a no output voltage at this terminal before we have
+[03:59] started the integration.
+[04:01] Suppose we have a initial voltage at this terminal before the integration then we can have
+[04:05] one more term that is equal to V out 0 plus that is the initial output voltage before
+[04:11] we have started the integration.
+[04:14] So this is the expression of the output voltage in terms of the input voltage.
+[04:18] So as you can see here the output voltage is the integration of the input voltage.
+[04:22] And here this term RCF represents the integration time of this integrator.
+[04:28] So using this circuit we can integrate any input signal.
+[04:31] So suppose if you apply a 1 volt of DC signal at the input then at the output you will get
+[04:37] this signal.
+[04:38] So as you can see initially the output voltage will increase in a negative direction and
+[04:43] at certain point the output voltage will get saturated because the output voltage cannot
+[04:49] go beyond the saturation voltage right.
+[04:51] Now here the rate at which this output voltage reaches this saturation point depends upon
+[04:56] the value of this R and the feedback capacitor CF.
+[05:01] So by changing the value of this R and CF we can change the slope of this output signal.
+[05:07] Similarly if we apply the sinusoidal signal at the input that is sine omega t then at
+[05:13] the output you will get a cosine signal that is cos omega t.
+[05:18] And likewise if you apply the square wave at the input then at the output you will get
+[05:23] a triangular wave.
+[05:24] Now here the amplitude of the output signal depends upon the value of R and CF.
+[05:31] And that will be get clear to you when we will take few examples based on this integrator
+[05:36] circuit.
+[05:37] So now so far we have seen this simple integrator circuit and we understood that using this
+[05:41] circuit we can integrate any input signal.
+[05:45] But in real life if you use this integrator then you may not get the desired output which
+[05:50] you should get using the theoretical calculations.
+[05:53] So let us understand the limitations of this simple integrator circuit and let us also
+[05:57] see how we can overcome this limitations.
+[06:01] So to understand that let us write the output voltage in terms of the impedance of this
+[06:06] capacitor and the resistor.
+[06:08] Now we know that the reactance of this capacitor can be given by the expression 1 dR by
+[06:13] omega c right which is equal to 1 dR by 2 pi times fc.
+[06:19] So we can write the output voltage v out as minus xc dR by R times the input voltage
+[06:26] v in.
+[06:27] Or we can say that the gain of this op-amp will be equal to minus xc dR by R that is equal
+[06:34] to 1 dR by 2 pi times Rc into f.
+[06:40] So from this expression you can see that at 0 hertz or at very low frequencies the gain
+[06:46] of the op-amp will be very high and ideally it will be equal to infinite.
+[06:51] Practically the gain of the op-amp will be limited by the open loop gain of the op-amp.
+[06:56] So at 0 hertz the gain of the op-amp will be equal to the open loop gain of the op-amp
+[07:01] because at 0 hertz or at DC level this capacitor will act as an open circuit and because of that
+[07:09] the input voltage will be get amplified by the open loop gain of the op-amp.
+[07:14] So output will always be get saturated and as the frequency increases the reactance of
+[07:20] this capacitor will reduce and because of that the output voltage will also reduce.
+[07:26] So if you see the frequency response of this simple integrator then it will look like
+[07:30] this.
+[07:31] So at 0 hertz or at DC level the gain of this integrator will be equal to the open loop
+[07:36] gain of this op-amp and this open loop gain used to be in the range of 10 to the power
+[07:40] 5 to 10 to the power 6.
+[07:43] So in decibel we can say that it is equal to 100 dB and as the frequency increases the
+[07:49] gain will reduce.
+[07:50] Now suppose if you are using this op-amp at let's say this frequency then you should
+[07:55] not face the problem of very high gain of this integrator but even if you use the op-amp
+[08:00] at this frequency then also it is quite possible that your output will be get either distorted
+[08:05] or saturated.
+[08:06] Now the reason for this saturation or distortion is the input offset voltage of the op-amp
+[08:11] because in real life scenario the op-amp which we are using are not ideal op-amp and every
+[08:16] practical op-amp has some sort of input offset voltage.
+[08:20] So even though this input offset voltage is of 3 millivolts but still it can saturate
+[08:24] the output of this op-amp.
+[08:26] So let's say few millivolts of input offset voltage is present at this terminal.
+[08:31] So this input offset voltage will be get integrated by this capacitor and eventually the output
+[08:37] of this op-amp will go towards the saturation.
+[08:40] So in this way even though you are operating at higher frequency but because of this input
+[08:44] offset voltage it is quite possible that your output will be get saturated.
+[08:49] So we can avoid this problem by introducing a one more resistor in the feedback in parallel
+[08:54] with this capacitor.
+[08:56] So in this way by introducing a one more resistor in parallel with this capacitor we can avoid
+[09:02] the problem of saturation of the output voltage because now if you see at low frequencies
+[09:07] this capacitor will act as an open circuit.
+[09:09] So at DC voltage or at low frequencies the gain which is being seen by this op-amp will
+[09:14] be equal to minus RFDR by R1.
+[09:18] So even though few millivolts of input offset voltage is present at the input terminal it
+[09:22] will only get multiplied by this factor.
+[09:26] So in this way we can avoid the problem of saturation.
+[09:30] So if you see any practical integrator you will find this feedback resistor in parallel
+[09:34] with this capacitor.
+[09:36] So moreover that if you see any practical integrator you will also find a resistor which
+[09:41] is being connected at the non-inverting terminal.
+[09:44] So basically this resistor is connected to avoid the effect of input bias currents.
+[09:49] So we will see more about this input offset voltage and the input bias currents in a separate
+[09:54] video.
+[09:55] So now because of this feedback resistor RF if you see the frequency response of any
+[09:59] practical integrator then it will look like this.
+[10:02] So as you can see here at low frequencies the gain which is being seen by the op-amp
+[10:06] will be equal to constant and that is equal to RFDR by R1.
+[10:11] And as we go beyond certain frequencies then we will see the reduction in the output.
+[10:16] And if you see the response of this integrator it is very similar to the response of a low
+[10:21] pass filter and in fact it will act as a low pass filter.
+[10:25] So let us say here the 3db frequency or the cutoff frequency of this integrator is FL.
+[10:31] So now if you apply any input signal which is having a frequency lesser than this cutoff
+[10:36] frequency FL then the op-amp will act as an inverting op-amp and it will provide the
+[10:41] constant gain of minus RFDR by R1.
+[10:45] So to use this op-amp as an integrator the input signal should have a frequency larger
+[10:50] than this cutoff frequency FL.
+[10:52] And this cutoff frequency FL can be given by the expression 1DR by 2 pi times this feedback
+[10:58] register RF into CF.
+[11:01] So as you go beyond this cutoff frequency FL you will see the reduction in the output
+[11:06] voltage and at 1 particular frequency the gain of this integrator will be equal to 0 dB.
+[11:14] So let us say this frequency is a 0 dB frequency or let us say F0.
+[11:20] So this F0 can be represented as 1DR by 2 pi times R into CF.
+[11:28] So for the proper integration of input signal the input frequency should be larger than
+[11:33] this cutoff frequency FL.
+[11:35] And for the proper integration this signal frequency FL should be at least 10 times this
+[11:40] cutoff frequency FL.
+[11:42] So to integrate any input signal properly the input signal frequency should be in between
+[11:48] this cutoff frequency FL and 0 dB frequency F0.
+[11:52] Well practically you can also go beyond this 0 dB frequency but if you go below this
+[11:56] 0 dB frequency then you will see the attenuation in the output signal.
+[12:00] So for the proper integration of any input signal it should lie between this cutoff frequency
+[12:05] FL and F0.
+[12:07] So now let us take some example based on this integrator so that the concept will be
+[12:11] get clear to you.
+[12:12] So here we have a practical integrator circuit and in this circuit we have been asked to find
+[12:17] the low frequency limit for this integration.
+[12:20] So here the value of this feedback capacitor is 10 nanofiere a day.
+[12:24] The value of this feedback resistor is 100 k while the value of this resistor R is 1
+[12:29] kilo.
+[12:30] So we know that the expression of this cutoff frequency FL is equal to 1 divided by 2 pi
+[12:36] times RF into CF.
+[12:40] So if we put the value of this RF and CF then the value of this cutoff frequency FL will
+[12:46] come out as 159 hertz.
+[12:49] So for the proper integration of input signal your input signal frequency should be larger
+[12:55] than this cutoff frequency FL and for proper integration it should be at least 10 times
+[13:01] this cutoff frequency FL.
+[13:04] So in this way based on your input signal range you can design your integrator.
+[13:08] So now let us see the second example.
+[13:11] So in this example the circuit is the same circuit which we have seen in the last example
+[13:15] but here the input signal now is a sinusoidal signal.
+[13:19] And if you see here the frequency of the input signal is 5 kilohertz.
+[13:23] Now we have already seen that the cutoff frequency of this integrator is 159 hertz and for
+[13:29] proper integration the signal frequency should be at least 10 times this cutoff frequency
+[13:35] which comes out as 1.59 kilohertz.
+[13:40] Now here if you see the input frequency it is 5 kilohertz.
+[13:43] So this signal will be properly get integrated.
+[13:46] So let us find the expression for the output voltage.
+[13:49] So we know that the output voltage V out can be given by the expression minus 1 dR by
+[13:55] RCF multiplied by the integration V in dT.
+[14:02] Now here the value of R is 1 kilo ohm and the value of CF is 10 nanofarade.
+[14:10] So let us put all the values into this expression.
+[14:13] And now if you put all these values and integrate this signal then you will get 10 to the
+[14:18] power 5 dR by 2 pi times this 5000 multiplied by cos into 2 pi times 5000 t.
+[14:29] So if you simplify it then you will get 3.18 times cos of 2 pi into 5000 t.
+[14:38] So this will be the output voltage V out after the integration.
+[14:43] So as you can see here the amplitude of the output voltage repeats upon the value of
+[14:47] R CF and the input signal frequency.
+[14:51] So now let us see one more example based on this integrator circuit.
+[14:54] So in this example the circuit is same but now the input signal has been changed from
+[14:59] the sinusoidal signal to the square wave and we need to find the output voltage at this
+[15:04] end.
+[15:05] Now we know that whenever we apply any square wave to the integrator the output voltage
+[15:09] will be equal to triangular wave.
+[15:11] But let us find the amplitude of this triangular wave and let us also see whether this signal
+[15:15] fulfills the criteria of our integration.
+[15:18] So if you see here the time period of this square wave is equal to 100 microseconds.
+[15:25] So in frequency if you say the frequency is equal to 10 kilohertz.
+[15:30] Now for this circuit we have already seen that the cutoff frequency FL is 159 hertz and
+[15:36] here the signal frequency is way beyond this cutoff frequency.
+[15:41] So it is ensure that the input signal will be properly get integrated.
+[15:45] So now let us find the amplitude of this integrated signal.
+[15:48] So to find the output voltage let us divide this square wave into the different segments.
+[15:54] So we can say that for 0 to 50 microseconds our input signal is 2 volt while from 50 to
+[16:01] 100 microseconds our input signal is minus 2 volt.
+[16:05] So we can integrate individual segments and later on we can add the individual responses.
+[16:12] So for the first segment our output voltage V01 will be equal to minus 1 divided by R times
+[16:19] CF integration V1T dt which will be equal to minus 10 to the power 5 integration 0 to
+[16:28] 50 microseconds 2 into dt.
+[16:31] So that will be equal to minus 10 to the power 5 into 50 microseconds into 2.
+[16:39] So if you simplify it then you will get the output voltages minus 10 volt.
+[16:43] So we can say that for 0 to 50 microseconds the voltage swing is minus 10 volt or we can
+[16:49] say that the output signal is going from 5 volt to the minus 5 volt.
+[16:54] Similarly if we integrate this particular segment then we will get the same 10 volt voltage
+[17:00] swing but in a opposite direction.
+[17:03] So in this way if you see the output the output will vary from 5 volt to the minus 5 volt
+[17:08] and as the input signal frequency is far beyond the cutoff frequency you will see the proper
+[17:13] integration of the input signal.
+[17:15] So before I end up this video here is the last example for your exercise.
+[17:19] So this is the circuit of integrator and to this circuit we have applied this input signal.
+[17:24] So you need to find the integrated output signal.
+[17:27] So let me just give you the hint about the shape of the output waveform.
+[17:31] So as you can see here we are applying the input for a 1 millisecond.
+[17:35] So for this particular 1 millisecond you will see the output will look like this and
+[17:40] from 1 millisecond to 4 millisecond as there is no input so the output will remain
+[17:45] as it is and once again from 4 millisecond to 5 millisecond as we are applying the input
+[17:50] you will see the output will look like this.
+[17:54] So if you see the output waveform the output waveform will look like this but just calculate
+[17:58] the value of this output voltage and do let me know that value in the comment section
+[18:02] below.
+[18:03] So I hope in this video you understood how to design the integrator using the opamp.
+[18:07] So if you have any question or suggestion do let me know in the comment section below.
+[18:11] If you like this video hit the like button and subscribe with a channel for more such
+[18:15] videos.

@@ -1,0 +1,176 @@
+Title: Solved Problems on Clipper and Clamper Circuits
+URL: https://www.youtube.com/watch?v=u9IP_cKn5io
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in the last couple of videos, we understood how the clamper and the clipper circuit works.
+[00:22] So in this video, let us solve some problems based on this clipper and the clamper circuit.
+[00:27] So first of all, we will see a few examples based on the clamper circuit and then after
+[00:32] we will take couple of examples based on the clipper circuit.
+[00:36] So in this first example, we have been given this clamper circuit and we have been asked
+[00:41] to find the output waveform.
+[00:43] Now here we have been given that the diode which is used in the circuit is ideal diode and
+[00:49] the Rc time constant of the circuit is very large.
+[00:52] In fact, this large Rc time constant is the essential condition for the clamper circuit.
+[00:58] Now in the previous videos of the clamper circuit, I have already explained the circuit
+[01:02] analysis in detail. So here, instead of going through the entire circuit analysis,
+[01:08] I will show you the shortcut method using which you can easily solve the problems based on this
+[01:13] clamper circuit. Now if you observe the circuit without this biasing voltage, it is the positive
+[01:19] clamper circuit and if you are aware, this positive clamper shifts the entire waveform towards
+[01:25] the positive side and it shifts the entire waveform by the maximum value which is observed during
+[01:31] the negative half cycle. So here, the maximum value during the negative half cycle is equal to
+[01:37] minus 15 volt. That means the entire waveform will get this shifted by a 15 volt and if you see
+[01:45] the overall output waveform, then it will look like this. That means now the entire waveform has been
+[01:52] DC shifted by a 15 volts towards the positive side. But in the circuit, we also have a biasing
+[01:59] voltage of minus 10 volt. So due to this biasing voltage, this waveform will get further
+[02:05] DC shifted by a minus 10 volt or in other words, it will get shifted downwards by a 10 volt.
+[02:13] And due to that, if you observe the overall output waveform, then it will look like this.
+[02:19] So in this way, using this shortcut method, we can easily find the output waveform.
+[02:25] But in this method, we need to ensure that the diode is conducting at least for some duration
+[02:31] during the time period of the waveform. Because whenever the diode is conducting,
+[02:36] then it will offer a very low resistive part to this capacitor. And due to that,
+[02:41] this capacitor will get charged to some reference voltage. And in fact, that is the essence of
+[02:47] this clamper circuit. For example, in this circuit, this diode is conducting during the negative half
+[02:53] cycle. But in the same example, if I change the amplitude of the input waveform or if I change
+[03:00] the biasing voltage, then it is quite possible that this diode will not conduct at all.
+[03:06] For example, if I change the amplitude of the input waveform, then this diode will not conduct
+[03:11] at all. Because now, the voltage at the end of the diode is always less than the cathode.
+[03:18] Because during the positive half cycle, the voltage at the cathode will be 5 volt.
+[03:22] And during the negative half cycle, the voltage at the cathode of the diode will be equal to
+[03:27] minus 5 volt. And due to that, this diode will act as an open circuit. And due to that,
+[03:35] the output voltage will follow the input voltage. So if this is the input waveform,
+[03:40] in that case, the output waveform will be same as the input waveform. And in fact,
+[03:45] due to that, this circuit will not work as a clamper circuit. But in this given example,
+[03:51] has the diode is conducting for some duration. So we can apply the shortcut method, which can be used
+[03:57] for the clamper circuit. All right. So now, let's move to the next example. So in this example,
+[04:04] the input waveform is a triangular waveform. And it is given to this clamper circuit.
+[04:09] And we have been asked to find the output waveform. Now, once again, here it has been assumed that
+[04:16] the diode is an idled diode. And the RC time constant of the circuit is very large.
+[04:21] So once again, we will use a shortcut method. And we will find the output waveform.
+[04:27] Now, if you look this circuit, then without this basing voltage, it is the negative clamper circuit.
+[04:33] And we know that this negative clamper circuit will shift the entire waveform towards the
+[04:39] negative side. And here, it will shift the entire waveform by the maximum value, which is observed
+[04:46] during the positive half cycle. So here, it will shift the entire waveform downwards by a five
+[04:52] volt. So if you see the output waveform, then it will look like this. But in this given example,
+[05:00] we also have a three volt of basing voltage over here. So due to this basing voltage,
+[05:06] this waveform will get shifted by a three volt in the positive direction.
+[05:11] So if you see the overall output waveform, then it will look like this.
+[05:17] That means now, the waveform will vary from three volt to minus seven volt.
+[05:23] And once again, while using this method, we need to ensure that the diode is conducting,
+[05:28] at least for some duration during the time period. And here, in fact, it is conducting whenever
+[05:35] the input waveform is greater than three volt. So in this way, by using this shortcut method,
+[05:41] we can easily find the output waveform for the clamper circuit. All right. So now, let's move to the
+[05:47] next example. So in this example, we have been given this circuit. And it is given that this
+[05:55] D1 is a PN junction diode. And it has a forward voltage drop of 0.7 volt, while this diode D2
+[06:03] is a zener diode. And the greater voltage of this zener diode is equal to 6.8 volt.
+[06:09] And the square wave is applied to this given circuit. And we have been asked to find the maximum
+[06:15] and the minimum value of the output waveform. And once again, here it has been assumed that
+[06:21] the RC time constant of the circuit is very large. So here, basically, we need to find the maximum
+[06:27] and the minimum value of the output waveform. Now, if you observe the circuit, in this circuit,
+[06:33] these two diodes will conduct whenever the voltage at this end is greater than the summation of
+[06:38] these two voltages. That means whenever the voltage at this end is greater than 7.5 volt.
+[06:45] So during the positive half cycle, as the input voltage being is greater than 7.5 volt.
+[06:51] So these two diodes will conduct. And the voltage drop between these two terminals will be
+[06:56] equal to 7.5 volt. And that voltage will also appear as an output voltage. So during this
+[07:03] positive half cycle, this capacitor will get charged in this direction. And it will get charged
+[07:09] to the voltage of 14 minus 7.5 volt. That means it will get charged to the voltage of 6.5 volt.
+[07:18] So now during the negative half cycle, the input voltage will become minus 14 volt.
+[07:23] And the voltage across the capacitor will be equal to 6.5 volt. So now if you observe,
+[07:29] the voltage which is appear across these two terminals will be equal to minus 20.5 volt.
+[07:36] And due to that, these two diodes will act as an open circuit. And due to that,
+[07:43] this entire voltage will appear as an output voltage. So during the negative half cycle,
+[07:49] the minimum value of the output waveform will be equal to minus 20.5 volt.
+[07:54] And during the positive half cycle, the maximum value is equal to 7.5 volt.
+[08:00] So for the given example, the maximum value of the output waveform is 7.5 volt. And the minimum
+[08:05] value is minus 20.5 volt. So these were the few examples based on the clampers circuit.
+[08:13] Now let us see few examples based on the clipper circuit. So in this example,
+[08:18] the sine wave is applied to this clipper circuit. And here, we have been asked to find the maximum
+[08:23] and the minimum value of the output waveform. Now if you observe the circuit, this diode
+[08:29] it will conduct whenever the voltage at the end node is greater than 4 volt. Or in other words,
+[08:35] we can say that whenever the input voltage V in is greater than 4 volt. Similarly,
+[08:41] this diode even will conduct whenever the voltage at the cathode is less than minus 4 volt.
+[08:47] Or in other words, we can say that whenever the input voltage V in is less than minus 4 volt.
+[08:54] So these are the conditions for conducting this diode V 1 and D 2.
+[08:59] Now during the positive half cycle, whenever the input voltage is greater than 4 volt,
+[09:04] at that time this diode it will conduct and this diode even will get reverse bias.
+[09:09] Or you can say that it will act as an open circuit. So during the positive half cycle,
+[09:14] whenever the input is greater than 4 volt at that time, the output which is appearing across
+[09:20] these two terminals will be equal to 4 volt. And whenever this input is less than 4 volt,
+[09:26] that means during this time both diodes will act as an open circuit. And you do that during that time,
+[09:33] the output will follow the input voltage. So during the positive half cycle,
+[09:39] the maximum value which will appear across the two terminals will be equal to 4 volt.
+[09:45] Now during the negative half cycle, whenever the input is greater than minus 4 volt at that time,
+[09:50] both diodes will act as an open circuit. And once again during that time,
+[09:55] the output will follow the input voltage. So during that particular time,
+[10:00] if you see the output waveform, then it will look like this. Now after that, whenever the input
+[10:06] goes below this minus 4 volt at that time, this diode it will remain reverse bias.
+[10:11] But now this diode even will become far biased. And now the output voltage V out can be given as
+[10:20] minus 4 volt plus the voltage drop across this 10 kilo ohm resistor. So if we assume i is the
+[10:26] current which is flowing through this circuit, then we can say that the output voltage V out is
+[10:31] equal to minus 4 volt plus the voltage drop across this 10 kilo ohm resistor. So first of all,
+[10:38] let us find out this current i. So this current i can be given as V in plus 4 volt divided by the
+[10:47] summation of these 2 10 kilo ohm resistors that is equal to 20 kilo ohm. And here the output
+[10:55] voltage will be minimum whenever the input voltage V in is equal to minus 10 volt.
+[11:01] So let us find out the current i whenever the input voltage V in is equal to minus 10 volt.
+[11:07] So at that time, the current i can be given as minus 10 plus 4 volt divided by 20 kilo ohm
+[11:16] that is equal to minus 3 by 10 kilo ohm. So this will be the current which will flow through this
+[11:23] given circuit. And if you put the value of i in this expression, then you can say that the
+[11:29] output voltage V out will be equal to minus 4 plus minus 3 by 10 kilo ohm resistor multiplied by
+[11:37] 10 kilo ohm resistor that is equal to minus 4 plus minus 3. That means the output voltage V out
+[11:46] will be equal to minus 7 volt. So this is the value of the output voltage whenever the input
+[11:52] voltage V is equal to minus 10 volt. And this will be the minimum value which you will observe
+[11:58] during the negative half cycle. And if you see the overall output waveform, then it will look like
+[12:04] this. And this will be the minimum value which you will observe during the negative half cycle.
+[12:11] So the maximum value of the waveform is equal to 4 volt and the minimum value of the waveform
+[12:16] is equal to minus 7 volt. Alright, so now let's move to the next example. So in this example,
+[12:24] we have been given this clicker circuit and we have been asked to find the input output transfer
+[12:28] characteristic of the given circuit. Now those who do not know what is the transfer characteristic,
+[12:34] then basically it defines the relationship between the input and the output. That means how the
+[12:39] output changes with the input voltage. Now let's say for a one particular circuit, if we have this
+[12:45] type of transfer characteristic, that means if we have a straight line, then it means that the
+[12:51] output changes linearly with the input voltage. And let's say for some circuit, if we have a transfer
+[12:57] characteristic like this, it means that the output changes linearly with the input up to certain
+[13:03] voltage. And then after the output remains constant. And if the transfer characteristic looks like
+[13:10] this, it means that the output is 0 for the negative input voltage and for the positive input
+[13:16] voltage, it varies linearly up to certain voltage. And then after the output remains constant.
+[13:24] So in this way, this transfer characteristic defines the relationship between the input and the
+[13:29] output waveform. So now let us find out the transfer characteristic for the given circuit.
+[13:35] Now here we have been given that the forward voltage drop across the diode is equal to 0.7
+[13:41] volt. So this particular diode will conduct whenever the voltage at this end is equal to
+[13:48] 5 plus 0.7, that is equal to 5.7 volt. Similarly, this inner diode has a preterm voltage of 10
+[13:56] volt. So this inner diode will provide a constant voltage whenever the voltage between these two terminals
+[14:03] is greater than 10 volt. And under the forward bias condition, the voltage drop across the
+[14:09] inner diode will be equal to 0.7 volt. So from this to find the transfer characteristic,
+[14:15] let's divide the input voltage into the four zones. So one by one, let us find out what will be
+[14:22] the output during each zone. So whenever the input is between 0 to 5.7 volt, at that time,
+[14:29] this diode will act as an open circuit because the voltage at this end will be less than 5.7 volt.
+[14:35] And at the same time, this inner diode will also act as an open circuit. So whenever the input is
+[14:42] less than 5.7 volt, at that time, the output will follow the input waveform. And you do that,
+[14:49] the output will be equal to input voltage. Now whenever the input voltage is greater than 5.7
+[14:56] at that time, this diode will conduct and the voltage drop across this diode will be equal to
+[15:01] 0.7 volt. And you do that, the voltage which is appearing between these two terminals will be
+[15:07] equal to 5.7 volt. Now even if we go beyond the 10 volt, then also the voltage which appears
+[15:15] between these two terminals will be equal to 5.7 volt. So due to that, even if the input voltage
+[15:21] goes beyond this 10 volt, then also this inner diode will act as an open circuit.
+[15:27] And you do that whenever the input voltage is greater than 5.7 volt, at that time,
+[15:33] the output voltage will be equal to 5.7 volt. Now let's see what happens during the negative half
+[15:40] cycle. So whenever the input is in this particular zone, at that time, this diode will act as an
+[15:47] open circuit. And as the voltage is less than 0.7 volt, so this inner diode will also act as an
+[15:54] open circuit. So during this zone, the output voltage V out will follow the input waveform.
+[16:01] Or we can say that during this time, V out will be equal to P in. Now whenever V in is more
+[16:08] negative than this minus 0.7 volt at that time, this diode will still remain reversed. But now,
+[16:15] this inner diode will get photobiased. And the voltage drop across this inner diode will be
+[16:21] equal to 0.7 volt. So if you measure from this side, then the output voltage V out will be equal
+[16:27] to minus 0.7 volt. So whenever this input is less than minus 0.7 volt, at that time, the output
+[16:34] voltage V out will be equal to minus 0.7 volt. So this is the output voltage, which you will get
+[16:41] during each zone. So from this, if we draw a transfer characteristic, then it will look like this.
+[16:48] That means whenever the input is varying between minus 0.7 volt to 5.7 volt at that time,
+[16:55] the output is following the input waveform. And whenever the input goes below this 5.7 volt,
+[17:02] at that time, the output will get clicked to the 5.7 volt. And similarly, during the negative
+[17:08] half cycle, whenever the input waveform goes beyond this minus 0.7 volt at that time,
+[17:14] the output will get clicked to the minus 0.7 volt. So if you see the overall transfer characteristic,
+[17:20] then it will look like this. So in this way, you can find the transfer characteristic for the
+[17:26] given circuit. So that's it for this video. And I hope in this video, you understood how we can
+[17:33] solve a different examples based on the clipper and the clamper circuit. So if you have an
+[17:38] equation or suggestion, do let me know here in the comment section below. If you like this video,
+[17:43] hit the like button and subscribe to the channel for more videos.

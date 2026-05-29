@@ -1,0 +1,185 @@
+Title: Cascode Amplifier using MOSFET Explained (Cascode Amplifier with Cascode Current Source)
+URL: https://www.youtube.com/watch?v=uFxXgDCLhGw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will learn about the cascode amplifier.
+[00:15] So as shown in the figure, the cascode configuration is the combination of the two MOSFET stages.
+[00:22] The lower transistor is known as the amplifying transistor and this transistor is configured
+[00:28] in the common source configuration and the upper transistor is known as the cascode transistor.
+[00:35] So here the fixed DC voltage is applied at the gate terminal but for the AC signal perspective,
+[00:42] this gate terminal will act as a ground and hence it is configured in the common gate
+[00:47] configuration.
+[00:49] So in this configuration, the output of this common source stage is fed to the common gate
+[00:55] and the overall output is measured at the drain terminal of this common gate stage.
+[01:01] Now here for a time being, this load is not shown but this load could be a passive-resistant load
+[01:09] or it could be a active load like a current source.
+[01:13] But anyway, this configuration provides a higher output resistance, high intrinsic gain and the
+[01:19] large bandwidth. So first of all, let us understand the reason or the motivation for learning
+[01:26] this configuration. Now in the previous video, we have seen that the intrinsic gain of this common
+[01:33] source amplifier can be given as GM times R0, right, where this R0 is the output resistance of
+[01:40] this MOSFET. So we have seen that, typically in the ICs, the achievable intrinsic gain is in the
+[01:47] range of 20 to 50 and that gain is achievable only if it is biased with the ideal current source.
+[01:55] In case of the actual current source, it has a finite output resistance and because of that,
+[02:01] this voltage gain will further reduce. So if we want to achieve the higher intrinsic gain,
+[02:07] then this output resistance needs to be improved and the cascade configuration exactly does that.
+[02:14] So let us say the R0 is the output resistance of this common source stage.
+[02:19] So in this cascade configuration, this common gate stage multiplies the output resistance by some
+[02:26] factor K and hence it also increases the intrinsic gain. So let us understand this thing through a
+[02:34] small signal analysis. So for the AC analysis, these DC voltage sources will act as a 0 and if we
+[02:42] replace the MOSFET by a small signal model, then the small signal equivalent circuit will look like
+[02:48] this. So to find the output impedance, which is seen from this side or in the small signal
+[02:54] equivalent circuit from this side, let us apply a test voltage considering all the independent
+[03:01] sources in the circuit as 0 and let us find this test current. So the ratio of this test voltage
+[03:08] to the test current will give us the output impedance and these output impedance will be the output
+[03:14] impedance of this cascade stage. Now here, once the input signal is considered as 0, then this voltage
+[03:22] VGS1 will become 0 and because of that, this dependent current source will also become 0 and because
+[03:30] of that, it will act as an open circuit. So if you see the equivalent circuit, then it will look like
+[03:37] this. So here, let us say, this current is equal to Ix, that means the current which is entering the
+[03:45] drain terminal is equal to Ix and the same current should also leave through the source terminal of
+[03:51] this first MOSFET, that means the same current should also enter into this drain terminal,
+[03:58] that means the current through this R01 is equal to Ix. Now let us say, the current through this
+[04:05] R02 is equal to I. So if we apply the KCL at this node, then we can write current Ix is equal to
+[04:14] I plus Id2 or we can say that this current I is equal to Ix minus Gm2 times VGS2.
+[04:27] So now let us apply the KV equation in this loop. So applying the KV equation, we can write
+[04:35] this voltage Vx that is equal to I times R02 that is the voltage drop across this R02 plus
+[04:45] Ix times R01 that is this voltage or we can say that this voltage Vx is equal to
+[04:54] Ix minus Gm2 times VGS2 times R02 plus Ix times R01. Now here this VGS2 is the voltage
+[05:10] between the gate and the source terminal of this second MOSFET and for the second MOSFET,
+[05:16] the source terminal is connected to the drain terminal of the first MOSFET and the source terminal
+[05:21] of this first MOSFET is connected to the ground terminal. So we can say that this voltage VGS2
+[05:28] is actually appearing between the source and the drain terminal of this first MOSFET.
+[05:33] That means this voltage VGS2 is equal to minus VDS1 and this voltage is equal to minus Ix times
+[05:46] R01 that means we can replace this voltage VGS2 by minus Ix times R01 that means we can write
+[05:54] this expression as Vx is equal to Ix plus Gm2 times Ix times R01 times R02 plus Ix times
+[06:11] R01 or we can say that this Vx is equal to Ix times R02 plus Ix times R01 plus Ix times
+[06:25] R01 and R02 times Gm2 or we can say that this Vx divided by Ix or this output impedance is equal
+[06:36] R01 plus R02 plus Gm2 times R02 times R01. Now here this last term will be definitely larger
+[06:48] than the first two terms. Let's say this Gm2 is equal to 0.1 milli cements and this R02 is equal
+[06:59] to 100 kilo that means this Gm2 times R02 will be equal to 10 that means this entire term is
+[07:07] equal to 10 times R01. So approximately we can say that this Vx divided by Ix or this output
+[07:17] impedance is approximately equal to Gm2 times R02 times R01 and if you observe over here then this
+[07:27] Gm2 times R02 is the intrinsic gain of this second MOSFET. So we can say that this common
+[07:35] gate stage amplifies the output resistance of this amplifying stage by Ix or intrinsic gain
+[07:42] and therefore the output impedance which is seen from this side is approximately equal to
+[07:48] Gm2 times R02 times R01. So in this way we found the output impedance of this
+[07:56] cascode stage. Similarly let us find the voltage gain. So in this case by finding the transcanotons
+[08:04] of this overall cascode stage we can easily find the voltage gain. So here first of all we will
+[08:11] find the transcanotons of this overall cascode stage and then after by multiplying it with the
+[08:18] output resistance of this cascode stage we will find the voltage gain. So first of all let us
+[08:24] understand this concept. Now the transcanotons of the overall amplifier stage represents the change
+[08:31] in the output current due to the change in the input signal. For mathematically we can say that
+[08:38] this transcanotons Gm is equal to I0 divided by Vi. Now here to distinguish it from the MOSFET
+[08:46] transcanotons it is represented as the capital Gm. So to find this transcanotons we can connect
+[08:53] the output to the ground and we can find this output current and the ratio of this I0 and the Vi
+[09:00] will give us the transcanotons of this amplifier system. Similarly to find the output resistance
+[09:06] of this amplifier we can consider this input as 0 and we can apply a test voltage at the output
+[09:13] side and the ratio of this test voltage to the test current will give us the output resistance.
+[09:20] And in fact we already found the output resistance of this cascode stage.
+[09:25] So once we find this output resistance and the transcanotons of this overall amplifier system
+[09:31] then the equivalent output stage of this amplifier can be represented like this.
+[09:37] So here this output voltage V out is equal to minus I0 times R0 or we can say that it is equal to
+[09:46] minus Gm times Vi times R0 that means V out divided by Vi or the voltage gain of this amplifier
+[09:56] is equal to minus Gm times R0. So here for the cascode stage we already know this output
+[10:04] resistance. So to find the voltage gain the only thing which we need to find is the transcanotons.
+[10:10] Now here to find this transcanotons let us connect the drain terminal of the second
+[10:16] MOSFET to the ground terminal. So in this way the output of this amplifier stage will get
+[10:23] connected to the ground terminal. So with this if you see the equivalent circuit and it will look
+[10:29] like this and here let us find this current I0. So here this current I0 is entering into the
+[10:38] drain terminal that means the same current should also come out of this source terminal
+[10:44] that means this current should also be equal to I0 right. Now here since the drain terminal of
+[10:51] this upper transistor is connected to the ground terminal. So we can say that this Vds2 or this
+[10:59] voltage is equal to Vds2. Similarly the source terminal of this upper transistor is connected to
+[11:07] the drain terminal of this lower transistor and the source terminal of this lower transistor is
+[11:12] connected to the ground terminal. That means this voltage Vds2 will appear between the source and
+[11:19] the drain terminal of this second MOSFET or we can say that this voltage Vds1 that is this
+[11:26] voltage is equal to minus Vds2. Now here if we apply the KCL at this node then we can write
+[11:36] this current I0 is equal to this ID2 plus Vds2 divided by R02 or we can say that this I0 is equal to
+[11:49] GM2 times Vds2 plus Vds2 divided by R02. Let us say this is the equation number 1.
+[12:01] Similarly if we apply the KCL at this node then we can write current I0 is equal to
+[12:09] GM1 times Vds1 plus Vds1 divided by R01 or we can say that it is equal to GM1 times Vds1
+[12:24] minus Vds2 divided by R01 that means I0 is equal to GM1 times Vds2 divided by R01. Let us call
+[12:40] this equation as equation number 2. So now comparing this equation number 2 and 1 we can write
+[12:47] GM1 times VI that is equal to Vds2 times GM2 plus Vds2 divided by R02 plus Vds2 divided by R01
+[13:05] or we can say that GM1 times V in that is equal to Vds2 times GM2 plus 1 over R02 plus 1 over R01.
+[13:21] Now typically this first term will be much greater than the last two terms. So approximately
+[13:27] we can say that this GM1 times V in is equal to GM2 times Vds2. Let us call this equation as
+[13:38] equation number 3. Now once again let us write down this first equation. So the first equation was
+[13:46] this I0 is equal to GM2 times Vds2 plus Vds2 divided by R02 or we can say that it is equal to
+[13:59] Vds2 times GM2 plus 1 over R02. Now once again this first term will be greater than the
+[14:09] second term. So approximately we can say that this I0 is equal to Vds2 times GM2 and from the
+[14:19] third equation this GM2 times Vds2 is approximately equal to GM1 times V in. So we can say that
+[14:28] this I0 is approximately equal to GM1 times V in and therefore this all transistors GM that is
+[14:38] I0 divided by Vi is approximately equal to GM1 that means the overall transenerations
+[14:46] of this cascode amplifier is approximately equal to GM1. So once we know the transenerations
+[14:53] then we can easily find the voltage gain. So as I said this voltage gain AV will be equal to GM
+[15:03] R0 or in this case this GM is equal to GM1 and this R0 is equal to GM2 times R02 times R01
+[15:15] that means the overall voltage gain of this cascode amplifier is equal to GM1 times GM2 times R02 times
+[15:25] R01. So this is the overall voltage gain of this cascode amplifier. Now here let's say this GM1
+[15:34] is equal to GM2 let's call it as GM and this R01 is equal to R02 let's call it as R0 then this
+[15:43] overall voltage gain of this cascode amplifier will be approximately equal to GM times R0 whole square
+[15:51] and this gain is much greater than the intrinsic gain of the common source amplifier.
+[15:57] So as you can see there is a significant improvement in the intrinsic gain. So now let's see
+[16:04] with the load how this voltage gain will get affected and first of all let us find the voltage gain
+[16:11] of this cascode amplifier with the resistive load. So with the resistive load if you see the
+[16:16] output equivalent circuit then it will look like this that means this resistor Rd will appear
+[16:23] in parallel with the output resistance. So in this case this voltage gain will be equal to GM times
+[16:33] this R0 parallel Rd where this R0 is the output impedance of this cascode stage
+[16:40] and now we know that this R0 is much greater than Rd that means this overall voltage gain is
+[16:48] approximately equal to GM times Rd and in this case this GM is equal to GM1 that means we can say
+[16:58] that the overall voltage gain will be equal to GM1 times Rd and in fact this gain is similar to
+[17:06] the gain of the common source amplifier. So to improve this gain instead of this resistive load
+[17:13] the active load should be used. So if we use the ideal current source as a load then for the AC
+[17:19] analysis this current source will act as an open circuit and in this case the voltage gain will be
+[17:27] equal to GM times R0 or we can say that it is equal to GM1 times R0 where this R0 is the output
+[17:38] impedance of this cascode stage. So with the ideal current source the voltage gain of the amplifier
+[17:44] will be equal to the intrinsic gain but if you see the actual current source then it has some
+[17:50] finite output resistance and in that case during the AC analysis this current source can be replaced
+[17:57] by the output resistance. So let's say this output resistance is equal to R0 2.
+[18:04] So with this if you see the output equivalent circuit then it will look like this and therefore
+[18:11] the voltage gain will be equal to GM times this R0 1 in parallel with R0 2 or we can say that
+[18:20] it is equal to GM1 times R0 1 in parallel with R0 2 where this R0 1 is the output impedance of this
+[18:30] cascode stage and this R0 2 is the output resistance of this current source. So to get the maximum gain
+[18:39] this R0 2 should be comparable to the R0 1. So suppose if this p type MOSFET is used as a current
+[18:48] source then in the AC equivalent circuit it can be replaced by its output resistance and in fact
+[18:54] in the previous video we have already discussed it in detail. So in that case we see the output
+[19:01] equivalent circuit then it will look like this. So in this case this voltage gain will be equal to
+[19:10] GM1 times this R0 1 in parallel with R0 2 where this R0 2 is the output impedance of this p MOS.
+[19:20] So here obviously this R0 1 will be much greater than the R0 2 because this R0 1 is the output
+[19:29] impedance of this cascode stage. So therefore we can say that approximately this voltage gain is
+[19:35] equal to GM1 times R0 2 which is typically similar to the intrinsic gain of this common source
+[19:43] amplifier but this gain can be improved further by using the cascode current source.
+[19:49] So now let us find the voltage gain of this cascode amplifier when the cascode current source
+[19:55] is used as an active load. So this is the typical cascode current source and here this end
+[20:03] will get connected to the cascode amplifier. So first of all let us find the output impedance of
+[20:09] this cascode current source that is the equivalent impedance which is seen from this side.
+[20:15] So to find that for the AC analysis all the DC sources in the circuit will act as a 0 and let's say
+[20:23] these two transistors are N3 and N4 respectively. So for the N4 if you see the source and the
+[20:30] gate terminal both are connected to the ground terminal. So if you see the equivalent impedance
+[20:36] from this drain side then it is equal to the output resistance of this M4. Let's call it as a
+[20:42] R0 4 and here this second transistor will act as a cascode amplifier. So it will multiply the
+[20:50] output resistance of this M4 by its intrinsic gain. That means if you see the equivalent impedance
+[20:56] from this side then it will be equal to this R0 3 times GM3 times R0 4 where this GM3
+[21:06] and the R0 3 are the transcurrents and the output resistance of this M3 and as you can see
+[21:13] it is significantly greater than the single PMOS transistor. So let's call this resistance as
+[21:19] R0p. So now let's connect this cascode current source as a load to this cascode amplifier.
+[21:28] So here these Vb4, Vb3 and the Vb2 are the basing voltages. So here the input is applied at this
+[21:37] amplifier transistor M1 and of course some DC basing voltage Vb1 will also be applied at the M1.
+[21:45] Now for the AC analysis all these DC basing voltages will act as a 0 and we can replace this
+[21:52] cascode current source by its equivalent output resistance. Let's call it as a R0p.
+[21:59] So with that if you see the output equivalent circuit of this cascode amplifier then it will look
+[22:04] like this and in this case this overall voltage gain is approximately equal to GM1 times
+[22:13] this R0n in parallel with R0p where this R0n is the equivalent impedance of this cascode stage
+[22:22] and this R0p is the equivalent impedance of this cascode current source.
+[22:27] Now with this R0n and the R0p are equal then the overall voltage gain will be equal to
+[22:34] GM1 times this R0n divided by 2 or we can say that it is equal to GM1 times GM2 times R02 times
+[22:45] R01 divided by 2. Now with this GM1 and the GM2 are equal and this R02 and the R01 are equal
+[22:54] then this overall voltage gain will be equal to GM times R0 whole square divided by 2
+[23:02] which is significantly higher than the gain of the common source amplifier with the active load.
+[23:07] So using this cascode amplifier along with the cascode current source the voltage gain can
+[23:12] be improved significantly. So I hope in this video you understood how the cascode configuration
+[23:18] improves the output resistance and the voltage gain. Now this configuration also improves the
+[23:24] bandwidth but we will talk more about it during the frequency analysis of the amplifier.
+[23:31] So that's it for this video and if you have any question or suggestion then do let me know
+[23:36] here in the comment section below. If you like this video hit the like button and subscribe
+[23:40] the channel for more such videos.

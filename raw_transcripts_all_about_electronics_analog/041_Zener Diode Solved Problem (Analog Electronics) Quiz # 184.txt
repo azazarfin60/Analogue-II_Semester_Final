@@ -1,0 +1,65 @@
+Title: Zener Diode Solved Problem (Analog Electronics) | Quiz # 184
+URL: https://www.youtube.com/watch?v=84v24vLvsuQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So this question is regarding the Cine diode.
+[00:20] So here we have been given the range of the input voltage as well as the range of the load
+[00:25] resistance and here we have been given that the desired value of the regulated voltage
+[00:30] is equal to 12 volt.
+[00:33] So here we have been asked to find the series resistance which is required between the input
+[00:38] and the Zener diode.
+[00:40] So first of all, let us draw the circuit based on the given values.
+[00:45] So here the input voltage varies between the 20 to 30 volt while the load resistance
+[00:51] varies from 140 to 10 kilo ohm and here the Zener voltage is equal to 12 volt.
+[00:58] So we have been asked to find the value of this series resistor.
+[01:03] Now here if you observe, we have not given the value of this IZK as well as the IZM.
+[01:09] So here we will assume that the Zener Nii current is equal to 0 and the IZM is sufficiently
+[01:16] large enough so that it will work in the given range.
+[01:20] So considering that, let us say this IS is the source current or the series current and
+[01:26] the IL is equal to load current.
+[01:29] Now whenever the current through the Zener diode IZ is 0 at that time, we can say that
+[01:35] this source current or series current IS is equal to IL and in this condition the voltage
+[01:41] across the Zener diode should be at least greater than or equal to the Zener voltage.
+[01:46] So let us say the voltage across the load is equal to VL.
+[01:50] So this voltage VL should be greater than or equal to VZ.
+[01:55] Now here if you assume that the entire series current IS is flowing through the load at
+[02:00] that time, we can say that this load voltage VL is equal to Rn divided by Rl plus RS times
+[02:09] input voltage and this voltage should be greater than or equal to VZ.
+[02:15] But actually whenever this Zener diode operates in the Zener region, then some Zener current
+[02:20] will also flow through this Zener diode.
+[02:22] That means the value of the supply current IS or the series current IS should be greater
+[02:27] than or equal to load current.
+[02:30] Now here for finding the value of RS, we will consider the minimum value of the load
+[02:34] resistance because whenever a load resistance is minimum at that time, the maximum current
+[02:40] will flow through this load resistor.
+[02:42] That means in this case, the maximum current will flow through the load whenever the load
+[02:46] resistance is equal to 140 ohm.
+[02:50] So whenever the Rl is equal to 140 ohm at that time, the load current IS will be equal
+[02:55] to 12 volt divided by 140 ohm.
+[02:59] That is equal to 3 divided by 35 ampere.
+[03:04] On the other end whenever the load is equal to 10 kilo ohm, at that time the load current
+[03:08] is equal to only 1.2 milli ampere.
+[03:12] That means this Zener that greater circuit should be able to supply the current in the
+[03:16] worst case.
+[03:18] So for that we will consider the minimum load.
+[03:21] Now similarly if we talk about the input voltage, then we will also consider the minimum
+[03:26] value of the input voltage because if you observe over here for the fixed value of RS,
+[03:32] this series current IS will be less for the 20 volt while it will be more for the 30
+[03:38] volt because this series current IS can be given as input voltage V in minus VZ divided
+[03:45] by RS.
+[03:47] So as input voltage V in increases, this series current IS will also increase.
+[03:53] So if this series current IS is able to supply the load current for the minimum voltage,
+[03:58] then it will definitely work for the 30 volt.
+[04:01] So considering this, we will calculate the value of RS for the 20 volt.
+[04:07] So now we can say that the voltage VL should be greater than or equal to VZ.
+[04:14] And for this we will consider the minimum value of load as well as the minimum value
+[04:18] of the input voltage.
+[04:20] That means we can say that the value of RL minimum divided by RL minimum plus RS into V
+[04:31] in minimum should be greater than or equal to VZ.
+[04:37] That means 140 divided by 140 plus RS into 20 volt should be greater than or equal to
+[04:46] 12 volt.
+[04:48] So if we rearrange the terms and calculate the value of RS, then we will find that the
+[04:53] value of RS should be less than or equal to 93.3 ohm.
+[05:01] That means the maximum allowed value of the RS is equal to 93.3 ohm.
+[05:06] So from this we can say that the D is the correct answer.

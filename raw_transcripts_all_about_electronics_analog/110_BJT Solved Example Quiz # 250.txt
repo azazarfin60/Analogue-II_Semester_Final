@@ -1,0 +1,72 @@
+Title: BJT Solved Example | Quiz # 250
+URL: https://www.youtube.com/watch?v=rydxTNl_4-k
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:18] So in this question, we have been given this transistor circuit and we have been asked
+[00:23] to find the equivalent impedance which is seen through the emitter of the second transistor.
+[00:29] So here to find this impedance RX, first of all let us find the impedance which is seen
+[00:34] through the emitter of the first transistor.
+[00:38] So to find this equivalent impedance, for a moment let us isolate this portion of the circuit.
+[00:45] So here we need to find the equivalent impedance which is seen at the emitter terminal and
+[00:50] for that if we see the AC equivalent circuit then it will look like this.
+[00:57] So here to find this equivalent impedance, let us apply the test voltage.
+[01:03] So let us say because of this test voltage, the current which is flowing is equal to
+[01:07] IT.
+[01:09] So the ratio of this VT and the IT will give us the equivalent impedance.
+[01:15] So to find this equivalent impedance, let us apply the KCL at this node.
+[01:21] Now on the main channel, if you have followed the recent video on the common base amplifier,
+[01:26] then in that video, we have already found the equivalent impedance for the similar circuit.
+[01:31] So for more information you can check that video.
+[01:34] But here for the sake of the completeness, here let me just go through the procedure.
+[01:39] So to find this ratio, here let us apply the KCL at this node.
+[01:44] So here this current is equal to IT while these two currents are IB and IC respectively.
+[01:53] So applying the KCL, we can write current IT plus IB plus IC is equal to 0.
+[02:02] Or you can say that current IB plus IC is equal to minus IT.
+[02:08] Now here current IB is equal to Vpi divided by Rpi while current IC is equal to GMVpi.
+[02:17] And that is equal to minus IT.
+[02:21] So here we need to find the expression of the Vpi in terms of the VT.
+[02:26] Now if you look this portion of the circuit, then we can say that this voltage Vpi is equal
+[02:32] to minus VT times Rpi divided by Rpi plus RB.
+[02:40] So let us put the value of Vpi in this expression.
+[02:44] But before that, let us simplify this expression.
+[02:48] So here we can write voltage Vpi times 1 divided by Rpi plus GM is equal to minus IT.
+[02:59] Now here as we are referring to the first transistor, so let us denote these expressions
+[03:05] as Vpi1, Rpi1 and the GM1.
+[03:09] Now this Rpi can be given as beta divided by GM right?
+[03:15] That means 1 over Rpi is equal to GM divided by beta.
+[03:20] And definitely it is much less than the GM.
+[03:23] So here we can neglect this term.
+[03:27] So using this approximation, we can write this expression as Vpi1 times GM1 is equal to
+[03:35] minus IT.
+[03:37] And this Vpi1 can be given as minus VT times Rpi1 divided by Rpi1 plus RB times GM1 is equal
+[03:49] to minus IT.
+[03:52] That means IT divided by VT that is the 1 over R equivalent is equal to 1 divided by 1 over
+[04:01] GM1 plus RB divided by beta.
+[04:06] So basically over here, this Rpi1 times GM1 is equal to beta.
+[04:12] And if we divide the entire expression by the beta, then this Rpi1 divided by beta will
+[04:17] come out as 1 divided by GM1.
+[04:20] So from this, we can say that this R equivalent is equal to 1 divided by GM1 plus RB divided
+[04:30] by beta.
+[04:32] That means we can replace this portion of the circuit by this R equivalent.
+[04:37] And if you see the equivalent circuit, then it can be drawn like this.
+[04:42] So using the similar approach, we can write down the expression of the RX.
+[04:48] That means RX is equal to 1 divided by GM2 that is the transconductor of this second
+[04:55] transistor plus R equivalent.
+[04:59] That is the resistance which is seen between the base and the ground terminal divided
+[05:03] by beta.
+[05:05] That means RX is equal to 1 divided by GM2 plus 1 divided by beta times 1 over GM1 plus RB
+[05:17] divided by beta.
+[05:20] So this is the approximate value of the RX.
+[05:24] That means RX is equal to 1 divided by 0.4 Simmons plus 1 divided by 100 times 1 divided
+[05:33] by 4 milli Simmons plus 20 kilo ohm divided by 100.
+[05:42] That means RX is equal to 2.5 ohm plus 1 divided by 100 times 250 plus 200.
+[05:55] That means RX is equal to 7 ohm.
+[06:00] That means this is the equivalent impedance which is seen through the a meter of the second
+[06:04] transistor.
+[06:06] That means the value of this RX is equal to 7 ohm.
+[06:10] Now here while calculating the value of RX, we have assumed that this 1 over RB is much
+[06:17] less than GM and considering this we have neglected this term.
+[06:23] But if you also consider this 1 over RB, then the value of RX will be slightly less than
+[06:28] 7 ohm.
+[06:29] But with the approximation, the value of this equivalent impedance is equal to 7 ohm.

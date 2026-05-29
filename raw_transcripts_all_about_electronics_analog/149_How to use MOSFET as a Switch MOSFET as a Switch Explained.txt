@@ -1,0 +1,212 @@
+Title: How to use MOSFET as a Switch ? MOSFET as a Switch Explained
+URL: https://www.youtube.com/watch?v=UJkHL-6mn8s
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:10] So in this video, we will learn how the MOSFET can be used as a switch.
+[00:16] Now the BJT can also be used as a switch, but the MOSFET has certain advantages over
+[00:21] the BJT.
+[00:22] So as you are aware, this MOSFET is the voltage control device.
+[00:26] That means just by controlling the gate to source voltage, this MOSFET can be turned
+[00:31] on or off and in this way it can be used as a switch.
+[00:36] On the other end, this BJT is the current control device.
+[00:40] That means by controlling the base current, this BJT can be driven either into the saturation
+[00:44] or the cutoff region and in this way it can be used as a switch.
+[00:50] Now at the low drive currents, the required base current for driving the BJT in the saturation
+[00:55] will be lower.
+[00:57] So for the low driving current applications, like for driving the LEDs, this BJT is very
+[01:02] cost effective solution.
+[01:04] But when this drive current is in MPR, then the required base current to drive the BJT
+[01:09] into the saturation will also increase.
+[01:12] And in that case, this control circuit or the driver circuit which provides the required
+[01:18] base current should be able to provide the enough current to drive this BJT into the
+[01:22] hard saturation.
+[01:24] So if you want to control the BJT as a switch using the microcontroller or any logic circuit,
+[01:30] then it is not possible for the very large current.
+[01:33] On the other end, if you see this MOSFET, then it is the voltage control device.
+[01:38] So just by ensuring the constant voltage between this gate and the source terminal, it can
+[01:43] be easily used as a switch.
+[01:45] And if the MOSFET is a logic level MOSFET, then it can be easily controlled even using
+[01:50] the microcontroller.
+[01:52] But in case of the continuous switching and particularly at a high frequency switching,
+[01:57] we also need to consider the other aspects of the gate driving.
+[02:01] But we will talk about it later later.
+[02:04] But the thing is, the MOSFET is easy to drive compared to BJT.
+[02:09] The second thing is, for the continuous switching applications, these MOSFETs are more power
+[02:14] efficient than the BJT.
+[02:17] So when the MOSFET is in on condition, then it acts like a resistor.
+[02:22] And in the on condition, the drain to source resistance will be very low.
+[02:27] So for high power MOSFETs, it is typically in the milliohms.
+[02:31] So even at very high currents, if you see the conduction loss in the MOSFET, then it
+[02:36] is comparable or slightly higher than the BJT.
+[02:40] Now when the BJT in the MOSFET are used as a switch, then there are two types of losses.
+[02:45] One is the conduction loss and the second is switching loss.
+[02:49] So the loss which you have just discussed is the conduction loss.
+[02:53] That means whenever the switch is in the on condition, then the loss across the switch
+[02:57] is the conduction loss.
+[03:00] Now when the MOSFET and the BJT is used in the continuous switching application, then
+[03:04] the switching loss is very crucial factor.
+[03:07] And for the MOSFET, this switching loss is lower compared to the BJT.
+[03:12] So at high frequencies, in the continuous switching applications, this MOSFET is more
+[03:17] preferred over the BJTs.
+[03:20] Moreover, the MOSFETs are more thermally stable compared to BJTs.
+[03:25] The reason is the MOSFET has the positive temperature coefficient.
+[03:29] That means during the on condition or in the on state, as the temperature of the MOSFET
+[03:34] increases, then the on resistance will also increase.
+[03:38] And because of the increase in the on resistance, the drain current ID will reduce.
+[03:43] And because of that, the temperature of the MOSFET will reduce.
+[03:47] On the other end, the BJTs have the negative temperature coefficient.
+[03:52] That means as the temperature increases, then this collector current IC will also increase.
+[03:58] And the increase in the collector current will further increase the temperature.
+[04:02] So if the generated heat is not dissipated properly, then it may lead the BJT into the
+[04:08] thermal runaway.
+[04:09] That means MOSFETs are more thermally stable compared to BJT.
+[04:14] So in short, the MOSFETs are easy to drive than the BJT and can work more efficiently
+[04:19] at the high switching frequencies.
+[04:22] Now as we have seen in the earlier videos, there are two types of MOSFET.
+[04:27] The depression type and the enhancement type.
+[04:29] But typically, the enhancement type MOSFETs are used as a switch.
+[04:35] So for the depression type of MOSFET, these are the transfer characteristic of the P-channel
+[04:39] and the N-channel MOSFET.
+[04:42] And as you can see, they are normally on devices.
+[04:45] That means by default, when the voltage VGS is equal to 0 or when the control input at
+[04:50] the gate is 0 at that time, the current is flowing through the MOSFET.
+[04:55] So when the control input is 0 at that time, these depression type MOSFETs are in the
+[04:59] on condition.
+[05:01] And when the control input is greater than the pinch of voltage at that time only, they
+[05:06] are in the off condition.
+[05:08] So because of this characteristic, they are not preferred as the switch.
+[05:13] On the other end, the E MOSFETs or the enhancement type of MOSFETs start conducting when the
+[05:19] voltage VGS is greater than the threshold voltage.
+[05:22] So if the input is less than the threshold voltage, then it will remain in the off condition.
+[05:28] So these E type MOSFETs are normally off devices.
+[05:32] And this characteristic is more preferable for using them as a switch.
+[05:38] Now this is the drain characteristic of the enhancement type of MOSFET.
+[05:42] And when it is used as a switch, then it is operated either in the linear or the omic
+[05:46] region and the cutoff region.
+[05:49] So in the cutoff region, when the control input VGS is less than the threshold voltage,
+[05:54] then the drain current ID is almost 0.
+[05:58] And in the on condition, when it is used in the linear region, then the MOSFET X like
+[06:03] a resistor.
+[06:05] And the slope of this curve is the RDS on.
+[06:09] So this RDS on is the resistance of the MOSFET in the on condition.
+[06:14] For example, for VGS is equal to 5 volts, if these are the operating voltage and the current,
+[06:20] then the ratio of this voltage and the current will give us the RDS on.
+[06:25] And as you can see, as the voltage VGS increases, then this RDS on will reduce.
+[06:31] So this RDS on is one of the important parameters for the MOSFET.
+[06:36] And the value of this RDS on should be as low as possible.
+[06:40] Because as I said earlier, in the on condition of the MOSFET, the conduction loss of the MOSFET
+[06:46] depends on this on the resistance.
+[06:49] So this is the basic circuit of the end type MOSFET, which can be used as a switch.
+[06:54] So as you can see, here the load is connected between the supply and the drain terminal,
+[06:59] and the control input is applied between the gate and the source terminal.
+[07:04] So this control signal can be applied directly through the microcontroller, or it can be applied
+[07:09] using the separate driver circuit.
+[07:12] Now when this control input is low, then the MOSFET will act as an open circuit.
+[07:17] And in this case, no current will flow through the load.
+[07:21] Now whenever this control input is more than the threshold voltage, then the MOSFET will
+[07:26] act as a closed switch, and the current starts flowing through the load.
+[07:30] So whenever the threshold voltage of the MOSFET is less than 2 to 3 volt at that time,
+[07:36] this type of MOSFETs can also be operated using the microcontrollers.
+[07:41] Now as I said, when the MOSFET is in the on condition, then it should operate in the linear region.
+[07:47] That means for the given load, by properly selecting the supply voltage, we can ensure that
+[07:53] it operates in the linear region.
+[07:55] For example, let's say this RD is the load of distance, and in the worst case, assuming this VDS
+[08:02] is equal to 0, the maximum current through the load will be equal to VDD divided by RD.
+[08:10] And whenever the switch is in the open condition, or whenever the strain current ID is equal to 0
+[08:16] at that time, this voltage VDS is equal to VDD. So for these two extreme cases, we will get the
+[08:23] two points. And by joining these two points, we can get the load line. So the intersection of the
+[08:30] load line with any of these two cows will give us the operating point. So let's say, if we are
+[08:36] operating the MOSFET at VGS is equal to 5 volt, then this intersection point should fall in
+[08:42] a such a way that the MOSFET operates in the linear region. Or at least that is how we should
+[08:47] select the load line. Now if you see the data sheet of any MOSFET, then the sum important
+[08:53] parameters and the important cows are already given in the data sheet. For example, for the MOSFET
+[08:59] 2730G, the threshold voltage is between 0.8 and the 3 volt. That means it can be operated using
+[09:07] the microcontroller. And here, for the typical value of the VGS, we have been also given the value
+[09:14] of the RDS on. Now for this particular MOSFET, the maximum continuous drive current is equal to
+[09:20] 200 milliampere. That means in the worst case condition, the current which is flowing through the
+[09:26] MOSFET should be less than this value. So let's say using this MOSFET, we want to drive the
+[09:33] 30 ohm load. And in the on condition, the current through the load should be around 150 milliampere.
+[09:40] That means whenever the VGS is equal to 5 volt, then the current through the load should be around
+[09:45] 150 milliampere. And with VDD is equal to 5 volt, it is possible to do that. So with VDD is
+[09:53] equal to 5 volt and RDS equal to 30 ohm, this will be the load line. That means whenever the VDD
+[10:00] is equal to 0 at that time, this current current IIT is equal to 5 volt divided by 30 ohm.
+[10:06] That is around 166 milliampere. And whenever this IIT is equal to 0, then this VDS is equal to 5
+[10:15] volt. That means this will be the load line. And the intersection of the load line with the VGS
+[10:21] is equal to 5 volt curve will give us the operating point. So in this case, if you see, the MOSFET
+[10:27] is operating in the linear region. And the drive current is typically around 150 milliampere.
+[10:34] So in this way, using the data sheet of the MOSFET for the given drive current, we can select
+[10:39] the supply voltage as well as the other components. Now so far in our discussion, we have directly
+[10:46] applied the control voltage to the gate terminal. But actually, there should be some series
+[10:52] between the gate and the control input. So let us understand why. Now so far, we understood that
+[10:59] the gate of the MOSFET offers a very high input resistance at the low frequencies.
+[11:04] That means the gate terminal hardly draws any current from the supply. But to turn on this MOSFET,
+[11:11] when we apply the input through this control circuit without this series resistor,
+[11:16] then without this series resistor, the MOSFET can draw a lot of current during the transient.
+[11:21] And if this control circuit is not able to supply that much of surge current,
+[11:25] then it can damage the control circuit. Because if you see the gate to source terminal of the MOSFET,
+[11:31] then in the equivalent circuit, it will act like a capacitor. So when we apply the input voltage
+[11:37] through this control circuit or through this micro-candle of pin, then this capacitor
+[11:42] suddenly tries to charge to the input voltage. And during this transient, it can draw a lot of current.
+[11:48] But if we connect this series resistor, then this series resistor restricts the transient current.
+[11:55] For example, if the MOSFET is controlled using the micro-candle of pin and the maximum current,
+[12:00] which is subtied by the micro-candle is 20 milliampere at 5 volt, then the value of the resistor
+[12:08] should be at least equal to 250 ohm. So this will ensure that the maximum current,
+[12:13] which is being drawn from the micro-candle of pin is less than 20 milliampere.
+[12:18] Apart from this series resistor, the pull down resistor is also required at the gate terminal.
+[12:24] So during the power of this control circuit, this pull down resistor ensures that the MOSFET remains
+[12:30] in the default condition. That means whenever the input is 0, then the MOSFET should remain in the
+[12:36] off condition. Now, so far in our discussion, we have talked about the N-type MOSFET.
+[12:42] Similarly, let us talk about the P-type MOSFET and let us see how it can be used as a switch.
+[12:49] So as you can see, the transfer characteristic of the P-type MOSFET is exactly opposite to the
+[12:54] N-type MOSFET. That means to turn on this P-type MOSFET, the voltage VG S should be negative.
+[13:01] So if we want to use the same control circuit or the same micro-candle inputs for this P-channel
+[13:06] MOSFET, then this is how we can connect the load to the P-channel MOSFET.
+[13:11] So as you can see, here the source is connected to the V-ready and the load is connected between
+[13:17] the drain and the ground terminal. And using the pull up resistor, the gate is connected to the V-ready.
+[13:24] So this pull up resistor ensures that the voltage at the gate remains at the default 5-volt
+[13:30] when the micro-controller or the control circuit is getting powered up.
+[13:34] So when the control input is high, at that time, the voltage VG and the VES both are at the same
+[13:40] potential. That means in this case, this VGS is equal to 0. So because of the VGS is equal to 0,
+[13:48] the MOSFET will remain in the off condition. Now when this micro-controller output goes low,
+[13:54] then this voltage VGS will become negative. And because of that, the MOSFET will get turned on.
+[14:01] And due to that, current starts flowing through this load. So this is how we can also use the P-channel
+[14:07] MOSFET as a switch. Now so far we understood that the MOSFET can be turned on or off using the
+[14:14] micro-controller. But this type of switching is the slow switching. Meaning that once the micro-controller
+[14:20] pin goes to the high or low state, then the MOSFET will take some time to completely get in the
+[14:26] on or off condition. So if you want to use the MOSFET for the continuous switching application,
+[14:32] and that too at the high frequency, then we also need to look for the other parameters in the
+[14:37] data sheet. So this total gate charge is the amount of charge which needs to be injected into the
+[14:44] gate terminal to complete it on the MOSFET. And from the total gate charge, we can estimate
+[14:51] how fast the MOSFET can be switched on or off using the given control circuit.
+[14:56] So as you are aware, this charge queue can be given as i times t. So let's say for a sum MOSFET,
+[15:04] if this gate charge is equal to 20 nano-cullum and the maximum current supplied by the driving
+[15:10] circuit is equal to 20 milliampere, then the time required to turn on this MOSFET is equal to 20
+[15:16] nano-cullum divided by 20 milliampere. That is equal to 1 micro-second. So for this type of MOSFET,
+[15:24] if we try to drive the MOSFET using the micro controller, then this is the typical time it will
+[15:29] take to turn on. And if the value of the total gate charge is more, then it will take more time to
+[15:36] turn on. On the other end, if the gate driving circuit can provide a maximum current up to 1
+[15:42] ampere, then the time to turn on the MOSFET will get reduced to 20 nano-second. And in this case,
+[15:50] it is possible to use the MOSFET for the fast-wishing applications. That means for the fast-wishing
+[15:56] applications, this total gate charge should be as low as possible and the MOSFET should be driven
+[16:02] using the gate driver IC such that it provides a sufficient current for the switching.
+[16:08] The other advantage of this fast-wishing is that the switching loss in the MOSFET will reduce.
+[16:14] So as I mentioned earlier, for the continuous switching application, this switching loss is
+[16:19] very crucial parameter. So when the MOSFET is in the off condition, then the voltage VDS is equal
+[16:26] to VDD and the drain current ID is approximately equal to 0. So the power loss across the MOSFET is
+[16:33] approximately equal to 0. Now when the MOSFET goes into the on state, then this drain current starts
+[16:40] increasing and as soon as it reduces the on condition current, then the voltage VDS starts
+[16:46] reducing. So during this switching phase, both drain current ID and the VDD are on for some time.
+[16:53] And this triangular wave shows the switching loss during the on time. Now when the MOSFET is in
+[16:59] the fully on condition, then the power loss across the MOSFET is the conduction loss.
+[17:05] And once again, when the MOSFET goes into the off state, then the voltage VDS starts
+[17:10] increasing and as soon as it reaches to the VDD, then the drain current ID starts decreasing.
+[17:17] So once again, when the MOSFET is getting turned off, then we are also getting the switching loss.
+[17:23] So the area under the curve of this two triangle is the switching loss. And with the faster switching,
+[17:29] the area under these two curves can be reduced. And because of that, we can also reduce the
+[17:34] switching loss. So this total gate charge is very important parameter for the MOSFET in case of
+[17:40] the continuous switching application. So I hope in this video, you understood how the MOSFET can
+[17:46] be used as a switch. And what are the factors we need to look into the data sheet to use this
+[17:52] MOSFET as a switch for the specific application. So if you have any question or suggestion,
+[17:57] then do let me know here in the comment section below. If you like this video, hit the like
+[18:01] button and subscribe to our channel for more such videos.

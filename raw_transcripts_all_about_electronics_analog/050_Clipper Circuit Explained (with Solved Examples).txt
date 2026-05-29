@@ -1,0 +1,228 @@
+Title: Clipper Circuit Explained (with Solved Examples)
+URL: https://www.youtube.com/watch?v=S76CnEJMl5E
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will learn about the Clipper Circuit.
+[00:20] The Clipper Circuit prevents the output waveform from exceeding the certain level.
+[00:25] And at the same time for the AC signal, it does not distort the remaining part of the waveform.
+[00:31] And very shortly, it will get clear to you.
+[00:35] So these Clipper Circuits are used in the over voltage protection and the wave shaping
+[00:39] circuits.
+[00:41] And these circuits can be designed just by using the diode and the resistors.
+[00:46] So the simplest form of Clipper Circuit is the half-hour active fire, which can be designed
+[00:52] just by using the diode and the resistor.
+[00:55] And as you are aware, whenever the AC signal is applied to the half-hour active fire,
+[01:00] then it passes the positive half cycle and rejects the negative half cycle.
+[01:06] And just by reversing the direction of the diode, it is possible to pass the negative half
+[01:10] cycle and reject the positive half cycle.
+[01:14] So depending on which portion of the waveform is clipped, the Clipper Circuit can be classified
+[01:19] as either a positive Clipper Circuit or a negative Clipper Circuit.
+[01:24] And further, depending on the position of the diode, it can be further classified
+[01:28] as either a series clipper or the parallel clipper circuit.
+[01:33] So in case of the series clipper circuit, the diode is connected in series with this load
+[01:38] resistor.
+[01:39] While in case of the parallel clipper circuit, the output is measured directly across this
+[01:45] diode.
+[01:46] Or in other words, the load is connected in parallel with this diode.
+[01:52] So one by one, we will see all the different types of Clipper Circuit and we will also
+[01:57] solve some examples.
+[02:00] But first of all, let us see the parallel clipper circuit.
+[02:04] So this is the example of the parallel clipper circuit.
+[02:08] So let us analyze the circuit and let us see how the output waveform will look like.
+[02:14] And for the simplicity, throughout the analysis, we will assume that the diode which is used
+[02:19] is the ideal diode.
+[02:22] So now, during the positive half cycle, this diode will get turned on.
+[02:26] But we can say that it will simply act as a short circuit.
+[02:30] So during the positive half cycle, the output of the circuit will be equal to 0.
+[02:36] And during the negative half cycle, this diode will act as a reverse bias.
+[02:41] So simply it will act as an open circuit.
+[02:44] So during this negative half cycle, the output will follow the input voltage.
+[02:50] So if you see the overall output of the circuit, then it will look like this.
+[02:56] That means considering the ideal diode, it eliminates the positive half cycle and it allows
+[03:02] the negative half cycle.
+[03:04] So basically, we can say that it is the positive clipper circuit.
+[03:09] And similarly, just by reversing the direction of the diode, it is possible to design the
+[03:14] negative clipper circuit.
+[03:17] So during the positive half cycle, this diode will act as an open circuit and the output
+[03:22] will follow the input signal.
+[03:24] And during the negative half cycle, this diode will get turned on.
+[03:29] So simply it will act as a short circuit.
+[03:31] And during the negative half cycle, the output of the circuit will be equal to 0.
+[03:36] Now here, if this diode is non ideal, in that case, the actual waveform will look like
+[03:43] this.
+[03:45] That means whenever the input voltage goes below this minus 0.7 volt, then this diode
+[03:50] will get turned on.
+[03:52] And the voltage across this diode will be equal to 0.7 volt.
+[03:56] So if you measure from this side, then it will be equal to minus 0.7 volt.
+[04:01] So in the actual diode, the output waveform will look like this.
+[04:07] Now many times in the circuit, it is required to clip the particular waveform at the certain
+[04:11] voltage level.
+[04:13] And for that, we can also add the biasing voltage in series with this diode.
+[04:18] So this circuit is the example of a clipper circuit with a biasing voltage.
+[04:23] So let us analyze this circuit and let us see the output waveform.
+[04:28] So first of all, let us draw our efforts line, which represents the VVolt.
+[04:34] Now this diode will get turned on whenever the input voltage we in is greater than 5 volt.
+[04:40] So whenever the input voltage is less than 5 volt, that means during this time, this
+[04:47] diode will act as an open circuit.
+[04:50] And during this time, the output will follow the input voltage.
+[04:55] That means during this time, the output will look like this.
+[05:00] Now after that, whenever this input voltage is greater than VVolt, then this diode will
+[05:05] get turned on.
+[05:07] And it will simply act as a short circuit.
+[05:10] So during this time, the output voltage will be equal to VVolt.
+[05:15] And then after, once again whenever the input voltage goes below this reference voltage,
+[05:20] then once again this diode will act as an open circuit.
+[05:23] So during this entire time, the output will follow the input voltage.
+[05:30] And if you see the overall output voltage, then it will look like this.
+[05:35] Now here, if this diode is non-ideal, in that case, the actual waveform will look like
+[05:41] this.
+[05:43] That means this diode will conduct whenever the input voltage is greater than V plus 0.7
+[05:49] volt.
+[05:51] And now, the waveform will get clipped at V plus 0.7 volt.
+[05:57] So this circuit, which we have discussed, is the clipper circuit with a positive biasing
+[06:01] voltage.
+[06:03] And similarly, we can also design a clipper circuit with a negative biasing voltage, such
+[06:08] that it can clip the negative half cycle at the certain voltage level.
+[06:13] So in this circuit, the diode will conduct whenever the input voltage is less than minus
+[06:18] VVolt.
+[06:20] That means up to this point, the diode will act as an open circuit.
+[06:25] And during this time, the output will follow the input voltage.
+[06:31] And once the input voltage goes below this minus VVolt, then this diode starts conducting
+[06:36] and simply it will act as a short circuit.
+[06:39] So during this time, the output will be equal to minus VVolt.
+[06:45] And then after, once again, this diode will act as an open circuit.
+[06:49] So then after, the output will follow the input signal.
+[06:53] So if you see the overall output waveform, then it will look like this.
+[06:58] So in this way, by using the negative biasing voltage, it is also possible to clip the
+[07:02] negative half cycle at the certain voltage.
+[07:06] And similarly, it is also possible to design a clipper circuit, which can clip the positive
+[07:11] and the negative half cycles together at the different voltage levels.
+[07:17] So as you can see in this circuit, the diode D1 is biased with voltage V1 and diode
+[07:22] D2 is biased with voltage V2.
+[07:25] So this diode D1 will clip the positive half cycle and this diode D2 will clip the negative
+[07:32] half cycle.
+[07:34] So first of all, let us mark this voltage V1 and V2 on this input waveform.
+[07:40] So now, this diode D1 will conduct whenever the input voltage V in is greater than V1
+[07:46] voltage.
+[07:47] And similarly, this diode D2 will conduct whenever the input voltage is less than minus V2
+[07:53] voltage.
+[07:54] So initially, whenever the input voltage is less than this V1 voltage, that means during
+[08:00] this time, both diodes will get reversed biased and they will act as an open circuit.
+[08:07] So during this time, the output will follow the input waveform.
+[08:12] Now once this input voltage V in is greater than V1 voltage, that means during this time,
+[08:20] this diode D1 will get forward bias and this diode D2 will remain reverse bias.
+[08:26] So this diode D1 can be replaced as a short circuit and this diode D2 will act as an open
+[08:31] circuit.
+[08:32] So during this time, the output will be equal to V1 voltage.
+[08:37] And after that, whenever the input voltage is between the V1 and minus V2 volt, that
+[08:43] means during this time, both diodes will act as an open circuit.
+[08:48] So during this time, once again, the output will follow the input signal.
+[08:53] So during this time, the output will look like this.
+[08:58] And after that, whenever the input voltage goes below this minus V2 volt, that means during
+[09:04] this time, this diode D1 will still remain reverse bias, but now this diode D2 will get
+[09:11] forward bias.
+[09:12] So we can replace this diode D1 as an open circuit and this diode D2 as a short circuit.
+[09:19] So during this time, the output voltage V1 will be equal to minus V2.
+[09:24] And after that, whenever the input voltage becomes greater than minus V2 volt, that means
+[09:30] during this time, both diodes once again will act as an open circuit.
+[09:34] And during this time, the output will once again follow the input signal.
+[09:39] So during this time, we will get this kind of waveform.
+[09:43] So if you see the overall output waveform, then it will look like this.
+[09:49] So in this way, by applying the two different biasing voltages, it is possible to clip the
+[09:53] positive and the negative half cycles at the different voltage levels.
+[09:58] Now instead of using the two biasing voltages, the same waveform can also be achieved by
+[10:02] using the back-to-back signal diodes.
+[10:05] So here, the signal voltages of this diode D1 and D2 are V1 and V2 respectively.
+[10:12] And using this circuit, it is possible to achieve this same waveform.
+[10:17] So in this way, parallel clipper circuits can be used for the wave shaping and the circuit
+[10:21] protection.
+[10:23] So similarly, now let us see the series clipper circuit.
+[10:28] So as I said earlier, the half-overactive air is the simplest form of series clipper circuit.
+[10:34] And considering the ideal diode, the circuit passes only the positive half cycle and it
+[10:39] rejects the negative half cycle.
+[10:42] And if we consider the actual diode, then this diode will conduct whenever the input voltage
+[10:47] will be in is greater than 0.7 volt.
+[10:50] And in that case, the output waveform will look like this.
+[10:56] And in this case, the peak amplitude of the output waveform will be equal to Vm-0.7 volt.
+[11:05] And likewise, by reversing the direction of the diode, it is possible to eliminate the
+[11:10] positive half cycle and pass the negative half cycle.
+[11:15] Now, similar to the parallel clipper circuit, it is possible to add the biasing voltage
+[11:19] in series with this clipper circuit.
+[11:22] So let us analyze this circuit and let us see the output waveform.
+[11:26] So here, this diode will conduct whenever the input voltage Vm-V volt is greater than
+[11:32] 0.
+[11:33] Or in other words, we can say that whenever the input voltage Vm is greater than V volt.
+[11:40] So for the analysis, let us draw a reference voltage over here.
+[11:46] So whenever the input voltage Vm is less than V volt, that means during this time, this
+[11:52] diode will act as a reverse bias.
+[11:54] And it will simply act as an open circuit.
+[11:57] So during this time, the output voltage Vm-0 will be equal to Vm-0.
+[12:03] That means whenever the input voltage is less than Vm-0, then during that time, the
+[12:08] output will be equal to 0.
+[12:11] Now whenever the input voltage goes about this V volt, then this diode starts conducting.
+[12:18] And at that time, the output voltage across the load resistor will be equal to Vm-V volt.
+[12:25] So during this time, if you see the output waveform, then it will look like this.
+[12:30] In the peak amplitude of the signal, will be equal to Vm-V volt.
+[12:37] And similarly, for the negative half cycle, this diode will still remain the reverse
+[12:41] bias.
+[12:42] So for the negative half cycle also, the output voltage Vm-0 will be equal to 0.
+[12:48] So if you see the old output waveform, then it will look like this.
+[12:52] That means this diode will conduct whenever the input voltage Vm is greater than V volt.
+[12:58] And for the remaining time, it will remain of.
+[13:02] So in this way, by using the bias voltage with the series-clipper circuit, we can change
+[13:07] the on time or the on duration of the output waveform.
+[13:11] Alright, so now let's see if you examples based on this clipper circuit.
+[13:16] So in this first example, we have been given this clipper circuit.
+[13:20] And we have been asked to find the output waveform across this resistor.
+[13:25] And here, the Zener diode which is used is the ideal diode with the breakdown voltage
+[13:29] of 5 volts.
+[13:31] So to find the output voltage, let us analyze this circuit.
+[13:35] So as you can see, whenever the input voltage Vm is less than 5 volts, then during that
+[13:41] time, this Zener diode will act as an open circuit.
+[13:45] So during this time, if you see the output voltage across this resistor, then it will be
+[13:50] equal to 0.
+[13:51] That means during this time, if you see the output voltage across this resistor, then
+[13:56] it will be equal to 0.
+[13:59] So after that, whenever the input voltage crosses the 5 volt, then this Zener diode provides
+[14:04] the 5 volt.
+[14:07] So during this time, the output voltage V out will be equal to V in minus 5 volt.
+[14:14] So during this time, whenever the input voltage is greater than 5 volt, the output waveform
+[14:19] will look like this.
+[14:22] And once again, whenever the input voltage goes below this 5 volt, then once again, this
+[14:28] Zener diode will act as an open circuit.
+[14:30] So during this time, the output waveform will be equal to 0.
+[14:36] Now during the negative half cycle, that means whenever the Vm is less than 0, this diode
+[14:42] simply will act as a normal diode.
+[14:44] Considering it is an ideal diode, we can replace it by a short circuit.
+[14:49] So during the negative half cycle, output voltage will follow the input signal.
+[14:55] So if you see the overall output waveform, then it will look like this.
+[15:00] That means during the positive half cycle, this Zener diode will conduct whenever the input
+[15:04] voltage is greater than 5 volt.
+[15:08] And during the negative half cycle, simply it will act as a short circuit.
+[15:13] So for the given circuit, we will get this kind of waveform.
+[15:16] Alright, so now let's see the second example.
+[15:21] So in this example, we have been given this clipper circuit and the triangular wave is
+[15:26] applied to this clipper circuit.
+[15:28] And we have been asked to find the output waveform.
+[15:32] So let us analyze this circuit and let us find out the output waveform.
+[15:38] Now in this circuit, this diode will conduct whenever the voltage at the cathode or in
+[15:43] other words, whenever the input voltage is less than 5 volt.
+[15:48] So whenever the input voltage is less than 5 volt, that means during this time, the
+[15:53] diode will get 4 out of bias and simply we can replace it by a short circuit.
+[15:59] So during this time, the output voltage we out will be equal to 5 volt.
+[16:04] Now after that, first the input voltage crosses this 5 volt, then this diode will be get reverse
+[16:10] bias and we can replace it by an open circuit.
+[16:14] So during this time, the output will follow the input signal.
+[16:18] That means during this time, the output waveform will look like this.
+[16:24] And after that, once again whenever the input voltage goes below this 5 volt, then this
+[16:29] diode will get 4 out of bias and simply it will act as a short circuit.
+[16:34] So after that, we will get a constant voltage of 5 volt across the output.
+[16:39] So if you see the all output voltage, then it will look like this.
+[16:45] So in this way, we can analyze the given clipper circuit and we can find out the output waveform
+[16:51] and the more examples we will see in the upcoming quiz.
+[16:55] So I hope in this video, you understood what is clipper circuit and how this clipper circuit
+[17:00] can be used for the wave shaping and the circuit protection.
+[17:04] So if you have any question or suggestion, do let me know here in the comment section.
+[17:09] If you like this video, hit the like button and subscribe to the channel for more such
+[17:12] videos.

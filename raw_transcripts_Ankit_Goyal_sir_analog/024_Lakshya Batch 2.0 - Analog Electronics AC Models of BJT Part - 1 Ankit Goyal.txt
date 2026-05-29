@@ -1,0 +1,2798 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | AC Models of BJT Part - 1 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=k7brWrSZ1Es
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:10] Very good morning to all of you.
+[00:12] We are back with the Lakshya batch 2.2 Analog Electronics.
+[00:17] Today we are going to start a new topic in which you will enjoy a lot.
+[00:24] And I believe that this is a topic that scares the maximum people.
+[00:28] That scares the maximum people.
+[00:31] That is the BJT Amplifier.
+[00:35] Right?
+[00:36] Say AC Analysis.
+[00:38] Say Small Signal Model.
+[00:40] Say Amplifier.
+[00:42] These are the things that you are very scared of.
+[00:45] And I was also scared at one time.
+[00:48] If I tell you the truth, I was also scared.
+[00:50] Because I thought that there are so many types of amplifiers.
+[00:53] How will everyone remember the formula?
+[00:55] If there is a change in the circuit, then what will I do?
+[00:58] What resistance will be used?
+[01:00] How will the gain come out of it?
+[01:02] I used to be scared of everything.
+[01:04] But dear, in the next three classes, I will tell you.
+[01:07] In today's and tomorrow's classes, your fear is going to increase.
+[01:12] After that, you will never be scared of amplifiers in your life.
+[01:18] Take care.
+[01:19] You will never be scared of amplifiers in your life.
+[01:22] You will make it fun.
+[01:24] It will be so easy.
+[01:26] Okay?
+[01:27] So, everyone is ready for today's session.
+[01:29] Shall we start?
+[01:31] Shall we start?
+[01:33] Say it quickly.
+[01:34] Before we start, let me tell you one thing.
+[01:37] If you join the academy right now,
+[01:39] then you are given 20% discount on the academy subscription.
+[01:43] No matter how much duration you take.
+[01:46] No matter how much duration you take,
+[01:48] you are getting 20% off.
+[01:50] What do you have to do?
+[01:52] You have to apply the code on the time of payment.
+[01:54] Ankit ESE.
+[01:56] It is a very simple method.
+[01:58] Okay?
+[02:00] Apart from this, dear.
+[02:02] Apart from this, if you take a distance learning program
+[02:05] in which there are test series and books,
+[02:07] you are getting 20% off on this.
+[02:10] You can also go for this subscription.
+[02:13] The children who want to prepare from home,
+[02:15] who do not want to watch videos,
+[02:17] they will be provided with study material and books.
+[02:20] At 20% discount,
+[02:22] your code is Ankit ESE.
+[02:24] Thank you, Rudresh Bhai.
+[02:26] Today, I am ready to go to your office
+[02:28] as soon as I finish this lecture.
+[02:30] I have booked a cab-wab.
+[02:32] As soon as the lecture is over,
+[02:34] we will go to Chumantar.
+[02:36] Okay?
+[02:37] But I don't want to cancel your lecture.
+[02:39] So, I will complete the lecture.
+[02:41] Is UPSC ESE an optional course plan?
+[02:44] No, dear. It is nothing like that.
+[02:46] But I think that if you prepare the gate and ESC,
+[02:49] then you can get the electrical option of UPSC ESE.
+[02:52] Especially, the child who is preparing ESC.
+[02:55] Okay?
+[02:57] Let's start our discussion.
+[02:59] Let's talk to the amplifiers.
+[03:01] Generally, the simple circuit of the amplifier is this.
+[03:05] What are the components in this circuit?
+[03:08] First of all,
+[03:10] input resistance.
+[03:11] What is it?
+[03:12] Input resistance.
+[03:14] The voltage across this is written as VIN.
+[03:17] What is written?
+[03:18] Input voltage VIN.
+[03:21] Then, we get the output voltage.
+[03:23] What is the output voltage, dear?
+[03:25] AV into VIN.
+[03:27] What is AV here?
+[03:28] Voltage gain.
+[03:30] And because this is a practical voltage source,
+[03:33] this is a practical voltage source,
+[03:35] then let's show a resistance in its series.
+[03:37] R out.
+[03:39] What does it show?
+[03:40] R out.
+[03:41] And we call it voltage amplifier.
+[03:43] Sir, why are you saying voltage amplifier?
+[03:45] Because, dear, you are looking at the voltage on the input.
+[03:48] And what are you getting on the output?
+[03:50] You are getting voltage.
+[03:52] So, you know, these voltage amplifiers
+[03:54] actually mean,
+[03:56] if we talk in the terms of network,
+[03:58] voltage controlled voltage source.
+[04:03] That is, a voltage source
+[04:05] which is depending on the voltage, dear.
+[04:09] Because the V out here,
+[04:11] that is dependent on VIN.
+[04:14] So, the voltage, the controlled voltage source
+[04:17] is depending on the VIN here.
+[04:21] Now, here you see,
+[04:23] what we have shown is,
+[04:25] a source voltage VS,
+[04:27] a practical voltage source VS
+[04:29] in a series with a resistance,
+[04:31] Now, I have shown this circuit, dear.
+[04:34] Here, it is a general voltage amplifier.
+[04:36] There is no need to buy it from BJT.
+[04:39] There is no need to buy it from MOSFET.
+[04:41] There is no need to buy it from O-PAMP.
+[04:44] That means, if there is any voltage amplifier,
+[04:47] in general, it can be represented like this circuit.
+[04:50] No voltage amplifier,
+[04:52] whether it has any internal device.
+[04:55] So, what is the work of the voltage amplifier?
+[04:58] The work of the voltage amplifier is,
+[05:01] increase the amplitude
+[05:12] and power
+[05:17] of input AC signal.
+[05:21] Whatever input you are giving AC signal,
+[05:23] its amplitude and power increases
+[05:26] by a voltage amplifier.
+[05:28] Sir, how is the power and amplitude related?
+[05:31] Dear, when you talk about the power of a signal,
+[05:34] power of a sinusoidal signal.
+[05:38] A sinusoidal signal like A sin omega t.
+[05:42] If you take a sinusoidal signal,
+[05:45] which is A sin omega t,
+[05:47] then its power will be A square by 2.
+[05:51] So, if you increase the amplitude of the sinusoidal signal,
+[05:55] then basically, you are increasing the power of it.
+[05:58] So, you are increasing the power of it.
+[06:01] The matter is getting cleared up to here.
+[06:04] The matter is getting cleared up to here.
+[06:06] Tell me quickly.
+[06:08] Tell me quickly.
+[06:09] The matter is getting cleared up to here.
+[06:11] So, this is a voltage controlled voltage source, dear.
+[06:14] And here, there is a voltage in the input,
+[06:17] there is a voltage in the output.
+[06:19] And here, the AV,
+[06:21] which is called as AV, your voltage gain.
+[06:24] So, dear, whenever you study the amplifier,
+[06:27] you talk about three parameters in a special way.
+[06:31] Voltage gain, input resistance,
+[06:34] and the output resistance.
+[06:37] Now, you must be thinking that,
+[06:39] when an amplifier amplifies the signal,
+[06:43] when an amplifier amplifies our signal,
+[06:46] then, sir, this is increasing the power of the signal.
+[06:49] Don't you think that the energy conservation has been violated?
+[06:52] If I am increasing the power of an input signal like this,
+[06:56] then where is this energy coming from?
+[06:58] So, dear, see what happens?
+[07:00] All the amplifiers, whether it is O-PAMP,
+[07:02] whether it is MOSFET or BJTO,
+[07:04] they are supplied with a DC supply,
+[07:06] which you call biasing.
+[07:08] So, what do these devices do?
+[07:10] They pull the power from DC
+[07:12] and they give power to the AC signal coming in,
+[07:16] so that it becomes amplified.
+[07:18] But also keep in mind, dear,
+[07:20] all the AC signals are not given,
+[07:23] some of them are given,
+[07:25] which can also be defined by their efficiency.
+[07:28] But after efficiency,
+[07:30] we don't do it in a normal voltage amplifier.
+[07:32] We don't do it in a small signal amplifier.
+[07:35] We talk about the large signal amplifier,
+[07:37] that is, in the power amplifier.
+[07:40] Is that clear?
+[07:42] So, where your large signal will be,
+[07:44] the big signal will be,
+[07:46] you will talk about the efficiency there,
+[07:48] how much power was taken from the AC supply,
+[07:50] versus how much power was given to the signal.
+[07:53] How will you get power from DC supply?
+[07:55] Suppose, it is BJT.
+[07:57] On the collector of BJT, you supply VCC,
+[08:00] and current comes from that supply, IC.
+[08:03] So, how much power is being drawn from the DC supply?
+[08:06] That is VCC into IC.
+[08:09] What is VCC into IC?
+[08:12] And how much power is given to the AC signal?
+[08:15] Take out the final power minus the initial power,
+[08:18] and what will you get from there?
+[08:20] You will get the efficiency from the ratio.
+[08:22] Do you understand what I mean?
+[08:23] The power coming from DC supply,
+[08:25] that is VCC into IC,
+[08:27] and the power given to the AC signal,
+[08:29] comes from A square by 2.
+[08:31] So, the final amplitude square by 2,
+[08:33] minus the initial amplitude square by 2,
+[08:36] you will get to know how much power was given to the AC signal.
+[08:41] When this power is also increasing,
+[08:43] why don't we call it amplifier?
+[08:45] The amplifier increases the voltage,
+[08:47] and the power increases.
+[08:49] But when we talk about the power amplifier,
+[08:51] our understanding is that
+[08:53] it is a large signal amplifier.
+[08:55] The input signal inside it,
+[08:58] the AC signal,
+[09:01] is comparable to the value of DC.
+[09:03] I told you earlier,
+[09:05] about the small signal amplifier and the large signal amplifier.
+[09:08] I have talked about the small signal model in detail.
+[09:12] In BJT biasing,
+[09:14] the concept of small signal has been explained.
+[09:16] Small signal means AC is much less than DC.
+[09:19] Large signal means AC is comparable to DC.
+[09:23] Right?
+[09:24] Is this clear?
+[09:26] Is it clear?
+[09:27] So, keep this in mind.
+[09:28] Whenever you read the voltage amplifier,
+[09:30] three things are important.
+[09:31] Input resistance, gain,
+[09:32] and the output resistance.
+[09:34] These three things are important.
+[09:36] Thank you, Aryan. Thank you, dear.
+[09:38] If you had fun,
+[09:40] you would have learnt a lot from my videos.
+[09:42] But learn analog now,
+[09:43] because analog is going on at the next level.
+[09:46] Okay?
+[09:47] Now, look at the parameters of the amplifier.
+[09:50] As I told you, dear,
+[09:51] that three parameters matter here.
+[09:54] First one is your input resistance.
+[10:02] Rn.
+[10:06] Vin by iin.
+[10:11] Second one is your output resistance.
+[10:25] Rout.
+[10:28] Vout by iout.
+[10:33] Third one is the voltage gain.
+[10:41] Av.
+[10:44] Vout by Vin.
+[10:48] These are three things.
+[10:49] Okay?
+[10:50] And you know what happens?
+[10:51] Look, there are different amplifiers.
+[10:54] I will teach you in the future.
+[10:55] When we will do feedback amplifiers,
+[10:57] there are four types of amplifiers.
+[11:00] There are four types.
+[11:02] One is voltage amplifier.
+[11:04] One is current amplifier.
+[11:06] One is trans-resistance amplifier.
+[11:08] One is trans-conductance amplifier.
+[11:11] And for everyone,
+[11:12] the unit of gain changes.
+[11:15] The criteria of input and output resistance changes.
+[11:18] Some say that input resistance should be high.
+[11:21] Some say that output resistance should be high.
+[11:23] We will talk about all these things.
+[11:26] But my focus now is only on voltage amplifier.
+[11:30] Whether it is BJT, JFET or MOSFET,
+[11:33] I will only and only talk about the voltage amplifier.
+[11:37] When we will talk about the power amplifier
+[11:40] or when we will talk about the feedback amplifier,
+[11:43] there I will talk about the other types of amplifier.
+[11:46] That is current amplifier, trans-resistance
+[11:49] and the trans-conductance type of amplifier.
+[11:53] Now see, if there was an ideal amplifier,
+[11:58] if there was an ideal voltage amplifier,
+[12:07] then what is its criteria?
+[12:10] My children, its criteria is that
+[12:13] Rn would tend to infinity.
+[12:17] R out would tend to zero.
+[12:21] And Av also is high.
+[12:26] I will not say infinity because
+[12:29] if infinity is done,
+[12:31] then the output voltage will be infinite.
+[12:33] Now why should we talk about this?
+[12:35] Look carefully.
+[12:37] How did you make the model?
+[12:40] Rn infinity means that this terminal
+[12:44] would open here.
+[12:46] As you can see,
+[12:49] this is VSA, this is RS
+[12:53] and here is the voltage of your VIN.
+[12:57] So you have done Rn infinity.
+[13:00] This means that this terminal is open.
+[13:04] And what does it mean to do Rout zero?
+[13:07] That there is an ideal voltage source here.
+[13:10] Correct?
+[13:11] If you are doing Rout zero,
+[13:13] then there is an ideal voltage source here.
+[13:16] Now look at this.
+[13:18] If you do Rout zero,
+[13:20] then there will be no drop in the middle.
+[13:22] V0 has become simple, Av into VIN.
+[13:25] And if you do Rn infinity,
+[13:28] then there is no drop in the middle
+[13:31] and if there is no drop,
+[13:33] then the entire supply voltage is on VIN.
+[13:36] So what did we basically do?
+[13:38] We eliminated Rn infinity and Rout zero
+[13:41] and eliminated the drop.
+[13:43] That is, in the amplifier,
+[13:45] there is no drop in any way.
+[13:48] If there is no drop in any way,
+[13:51] then the input voltage is equal to VS
+[13:54] and the output voltage is Av into VIN.
+[13:58] Av into VIN.
+[14:00] That is clear.
+[14:02] That is clear.
+[14:03] Tell me quickly.
+[14:05] And brother, why are you disturbing the class here?
+[14:09] Is it?
+[14:11] You are making an idea from my name and disturbing my class.
+[14:14] Tell me, is it clear?
+[14:16] How did the criteria of ideal amplifier come out?
+[14:19] You understand logically, right?
+[14:20] It is not that you have to keep it.
+[14:22] You will understand.
+[14:23] We just want that there is no drop in the amplifier
+[14:27] or that the entire supply voltage comes on the input
+[14:32] and goes on the output of the entire amplifier.
+[14:35] There is no drop in the middle.
+[14:37] According to that, the criteria is kept.
+[14:39] Now do you know what it is?
+[14:41] Why did I talk about ideal amplifier?
+[14:43] Look, in any system or any subject,
+[14:48] if you talk about an ideal device, an ideal system,
+[14:52] then you do it because when you go to a practical system,
+[14:56] then the system is so good.
+[14:58] It is so great.
+[15:00] It is based on this.
+[15:02] It is based on this that the parameters of it are so close to the ideal.
+[15:08] Like, look, you don't get infinite resistance.
+[15:11] But if you get high, you get quite high.
+[15:13] If you get kilo, you get mega, then it is good.
+[15:17] You don't get output resistance zero.
+[15:19] But if you get low, 0.1, 0.2, 0.3 is very good.
+[15:23] So you have to understand this.
+[15:25] Now if you make a voltage amplifier,
+[15:28] then that amplifier is good or bad.
+[15:31] How will you know this?
+[15:32] You compare it with the ideal amplifier.
+[15:35] The closer a practical amplifier is to the ideal amplifier,
+[15:40] the better it is.
+[15:42] The closer the ideal is, the better an amplifier will be.
+[15:47] Did you understand the matter?
+[15:49] Tell me quickly.
+[15:50] Did you understand the matter or not?
+[15:53] Let's go.
+[15:56] Now let's come to a practical BJT amplifier.
+[16:00] Okay?
+[16:01] Because we have to talk about BJT after all.
+[16:04] Dear, first understand the circuit in BJT amplifier.
+[16:07] What is there here?
+[16:09] Look, now forget AC supply.
+[16:11] Now forget this capacitor.
+[16:13] First we have put voltage divider bias.
+[16:16] Okay?
+[16:17] What is happening here?
+[16:19] R1 and R2.
+[16:22] R.
+[16:23] Voltage divider bias.
+[16:27] Okay?
+[16:28] Is this a circuit for biasing?
+[16:31] Say self-biasing.
+[16:32] Say voltage divider bias.
+[16:35] Okay?
+[16:37] Now here you connected AC signal with the help of a capacitor.
+[16:42] So look, DC supply is coming from VCC.
+[16:45] In an amplifier, DC and AC are both.
+[16:48] What is DC for biasing?
+[16:50] AC is what we have to amplify.
+[16:53] So AC supply is coming from here through a capacitor.
+[16:57] What do you call this capacitor?
+[17:00] Tell me quickly.
+[17:02] You call it as a coupling capacitor.
+[17:05] What do we call it?
+[17:07] Coupling capacitor.
+[17:11] Right?
+[17:12] Then you took the output like this.
+[17:14] Through another capacitor, that is the coupling capacitor.
+[17:21] And I had told you that why do we use RE resistance?
+[17:26] Do you remember why we use resistance on ammeter?
+[17:29] To stabilize the Q point.
+[17:31] If you remember, it reduces the stability factor.
+[17:35] Which does not vary with the Q point temperature.
+[17:40] But the RE resistance, which has a drawback,
+[17:45] reduces the gain.
+[17:48] It acts as a negative feedback.
+[17:50] It reduces the gain of the amplifier.
+[17:52] And because it reduces the gain,
+[17:55] to save from this effect,
+[17:57] we apply bypass capacitor here.
+[18:01] Now dear, you have done the DC analysis very well.
+[18:05] I have asked a lot of questions on DC analysis.
+[18:08] So what did you see?
+[18:10] In DC analysis, you would open your capacitor.
+[18:14] Because of which this input was disconnected.
+[18:18] Because of which this output was disconnected.
+[18:21] And it would remain in the circuit.
+[18:23] So if I talk about DC analysis.
+[18:26] In DC analysis, my children,
+[18:28] you had so many circuits left.
+[18:31] If you pay attention,
+[18:33] only this circuit would work in your DC analysis.
+[18:37] Correct?
+[18:39] I don't know if everyone is understanding or not.
+[18:43] There was so much circuit in DC analysis.
+[18:46] Now it is about AC.
+[18:48] Because it has been discussed about DC for many days.
+[18:52] Now dear, what will you do here in AC analysis?
+[18:57] You will understand this.
+[18:59] You will understand AC analysis.
+[19:02] You have to pay attention to two or three things in AC analysis.
+[19:08] First of all, we do mid frequency analysis.
+[19:16] Mid frequency means
+[19:19] where the frequency is neither low nor high.
+[19:24] Neither low nor high.
+[19:27] Mid frequency is neither low nor high.
+[19:39] Okay?
+[19:40] Now what we have to do here, dear?
+[19:43] We have to short the capacitor here.
+[19:48] Okay?
+[19:49] What else do we have to do?
+[19:51] We have to ground the VCC DC supply.
+[19:57] Basically, dear,
+[19:59] the mid frequency region
+[20:01] contains the reactance of the capacitor.
+[20:04] 1 by omega C.
+[20:06] It is very small.
+[20:08] That is why we have to short circuit it.
+[20:10] Okay?
+[20:11] What will happen to the high frequency?
+[20:13] When the amplifier is complete,
+[20:15] there comes a dedicated topic
+[20:17] which is called frequency response.
+[20:19] I will talk about low and high frequency there.
+[20:22] But the analysis of the amplifier is still going on.
+[20:25] In this, we will talk about the mid frequency
+[20:27] where the frequency is neither high nor low.
+[20:32] Okay?
+[20:33] Secondly, we have to short circuit the capacitor.
+[20:36] Thirdly, what are we doing here?
+[20:39] Here, dear,
+[20:41] we are using a superposition.
+[20:45] We are using superposition.
+[20:47] What are we doing in superposition?
+[20:49] When we are talking about AC,
+[20:51] we are grounding the DC.
+[20:54] Okay?
+[20:55] We are grounding the DC.
+[20:56] Is there an issue with the mic?
+[20:57] Wait, let us check.
+[21:04] Hello, hello, hello.
+[21:06] It looks right here.
+[21:09] Wait, let us do one thing.
+[21:11] Let us re-adjust the mic.
+[21:20] Now, I feel that
+[21:24] there is an issue with touching the body.
+[21:27] Look at it now.
+[21:28] Is it better now?
+[21:29] Is it better now?
+[21:31] Tell me.
+[21:33] Is it better now?
+[21:35] Should I take the road mic?
+[21:37] The mic is good.
+[21:39] There is no lack of adjustment in the mic.
+[21:42] Okay?
+[21:43] It is a bit too much.
+[21:45] Is it better now or not?
+[21:47] It is still an issue.
+[21:49] It is absolutely right.
+[21:51] Lakshya 1.0 is not showing the power system's
+[21:54] nodes in the ANKIT ESC PS.
+[21:56] So, give a new link to the power system
+[21:58] bid.ly slash ANKIT PS.
+[22:00] Just remove the ESC from the ANKIT PS.
+[22:03] Isn't it?
+[22:05] There is an issue in wireless.
+[22:06] Do you know what is the issue?
+[22:07] You people think that wireless mic is good.
+[22:09] If I forget to charge it by mistake,
+[22:11] then there will be no class that day.
+[22:13] Do you understand?
+[22:14] What is the benefit of a wired mic?
+[22:16] There is no tension to charge it.
+[22:17] Just come and take the class and leave.
+[22:19] First, I will still have wireless mic.
+[22:22] You talk about the road.
+[22:23] I have a Sennheiser.
+[22:24] But the problem is its battery.
+[22:31] Son, whatever the gate student has promised,
+[22:34] will be available.
+[22:35] I will not be able to get out of the academy
+[22:37] with such options.
+[22:38] You give refund, give discount,
+[22:40] do this and that.
+[22:41] Whatever you have got,
+[22:43] the promise will be there.
+[22:44] Now there will be a verification.
+[22:46] Because some proof will be taken from you
+[22:48] that you have actually filled the form of the gate.
+[22:51] And you will be refunded on that basis.
+[22:54] Now he is saying that we cannot expect
+[22:56] an EMFT course.
+[22:58] We cannot do it at all.
+[22:59] After this, I will do a comprehensive course
+[23:01] with less chance.
+[23:02] Because after this,
+[23:03] there will be more focus on the crash course.
+[23:08] Son, there is a lot in the test series.
+[23:10] Shubham is getting the easiest doubt
+[23:12] whether it comes in the gate or not.
+[23:14] You do a simple work
+[23:16] that you can open its PYQ and see.
+[23:18] If there is no question in the PYQ,
+[23:21] then it will not come.
+[23:22] And if it has come in the PYQ,
+[23:24] then it will come.
+[23:25] It is simple.
+[23:26] If the question has been asked in the last 10 years,
+[23:28] then chances are good to come.
+[23:30] Right?
+[23:31] If it has not been asked,
+[23:32] then chances are not good to come.
+[23:34] Now let's come back.
+[23:35] So, I told you that in AC analysis,
+[23:37] we have to short the capacitor.
+[23:39] We are grounding the VCC.
+[23:41] So, what to do after this?
+[23:43] Look at how to modify the circuit.
+[23:46] Look, son.
+[23:48] First of all,
+[23:51] look at what you will do.
+[23:53] You will see the terminal.
+[23:55] Base Collector Ammeter.
+[23:58] Okay?
+[23:59] Base Collector Ammeter.
+[24:01] So, on the base,
+[24:03] it will be connected to VIN.
+[24:05] As soon as the capacitor is shorted,
+[24:07] VIN will be connected to the base.
+[24:10] So, first of all, you make BJT.
+[24:15] Okay?
+[24:17] When you will make the amplifier model,
+[24:20] you have to keep the basic technique
+[24:22] that you have to go after seeing the base collector ammeter.
+[24:26] Now, what is your connection to the base?
+[24:29] VIN.
+[24:30] Okay?
+[24:32] It is connected between the base and the ground.
+[24:34] VIN.
+[24:36] Do you understand?
+[24:37] Tell me.
+[24:38] There is no doubt till here.
+[24:39] VIN has come.
+[24:41] From base to ground.
+[24:42] Now, look at this.
+[24:43] When you will ground the VCC.
+[24:45] Look carefully.
+[24:46] When you will ground the VCC, son,
+[24:49] then up, up ground,
+[24:51] down ground.
+[24:52] What is happening?
+[24:53] Up ground,
+[24:54] ground,
+[24:55] down ground.
+[24:56] Okay?
+[24:57] Now, here R1 and R2 will come in parallel.
+[25:01] Okay?
+[25:02] R1 and R2 will come in parallel.
+[25:04] Why?
+[25:05] Because look,
+[25:06] their terminal is also common.
+[25:08] And the ground at the top and the ground at the bottom is also ground.
+[25:11] So, R1 and R2 have come in parallel.
+[25:14] Do you understand?
+[25:15] They have come in parallel.
+[25:16] Tell me quickly.
+[25:18] It is understood that the ground at the top and the ground at the bottom
+[25:21] will come in parallel.
+[25:22] So, R1 and R2 will come in parallel.
+[25:24] Confirm quickly.
+[25:25] It is clear in the chat that they will come in parallel.
+[25:28] And where will they come in parallel?
+[25:30] Look, they will come between base and ground.
+[25:33] Look, their terminal is connected to base.
+[25:35] Ground at the top and ground at the bottom.
+[25:37] So, between base and ground.
+[25:39] So, here you will see.
+[25:44] It is clear to me while confirming.
+[25:47] R1 parallel R2.
+[25:52] Okay?
+[25:53] Now, look at this capacitor.
+[25:56] Will it be short?
+[25:58] Will this capacitor be short?
+[26:00] So, this emitter terminal will be directly connected to the ground.
+[26:04] As soon as this capacitor is shorted,
+[26:07] this emitter will be connected to the ground immediately.
+[26:11] So, here it is.
+[26:14] This emitter is connected to the ground.
+[26:17] Now, look at this collector.
+[26:19] You have grounded the VCC at the top.
+[26:22] You have grounded the VCC.
+[26:25] So, this Rc will come between the collector and the ground.
+[26:30] If you consider VCC as the ground,
+[26:31] then this collector will come between the ground and the Rc.
+[26:37] Do you understand everyone?
+[26:40] Don't do this.
+[26:41] I am wasting so much energy like this.
+[26:43] You are not able to understand anything.
+[26:46] Here it is.
+[26:47] And look at this V0.
+[26:50] This V0 is connected to the collector.
+[26:53] This V0 is connected to the collector.
+[26:55] Here it is.
+[26:56] Do you understand this circuit?
+[26:58] This is clear.
+[27:00] AC is equivalent.
+[27:01] This is clear.
+[27:03] Tell me quickly.
+[27:05] Now, look.
+[27:06] There is one objective in this.
+[27:09] There is one objective in this.
+[27:11] The objective is that this BJT is a non-linear device.
+[27:15] If I can replace it with a linear circuit,
+[27:18] if I can replace it with resistances,
+[27:20] dependent sources in their terms,
+[27:24] then what can we do?
+[27:26] We can simply apply network analysis here.
+[27:31] Then what can we do?
+[27:32] We can apply network analysis.
+[27:35] Because till the time BJT remains,
+[27:37] BJT is a non-linear device.
+[27:39] I will not be able to apply the rules of my network.
+[27:42] I will not be able to apply simple V equal to IR.
+[27:45] So it is difficult for me.
+[27:46] But if I say that this AC signal is very small,
+[27:50] because of which you consider the characteristic of BJT as linear,
+[27:54] then you can replace it with a linear circuit.
+[27:57] Think about it.
+[27:58] Do you remember?
+[27:59] I told you that when AC signal is very small,
+[28:03] we draw a tangent in that small variation.
+[28:06] We draw a tangent and linearize it there.
+[28:10] Why do we linearize?
+[28:11] Because after that we can apply a superposition.
+[28:14] And after that we will apply the rest of the theorems of the network.
+[28:18] Because if you see,
+[28:19] the majority of theorems in the network go for a linear circuit.
+[28:23] If you are applying DC plus AC superposition,
+[28:27] then the superposition is valid for linear.
+[28:29] And what is the linearization based on?
+[28:31] It is based on a small signal.
+[28:33] Can you connect all these things to me?
+[28:35] That you cannot linearize.
+[28:37] For a large signal, for a linearization,
+[28:39] a small signal is required.
+[28:41] And if you linearize,
+[28:43] then the superposition can be applied.
+[28:45] Only then you can talk about DC plus AC.
+[28:48] Okay?
+[28:50] Now we know the objective of today's rest of the day.
+[28:55] How to replace this BJT?
+[28:58] I understood the circuit outside.
+[29:00] I understood the entire circuit outside.
+[29:03] So how do I replace BJT with a circuit?
+[29:06] I want to see this.
+[29:08] Aryan is saying that there are no notes available on the Ankit PS.
+[29:11] There are just videos.
+[29:12] I will talk to you.
+[29:13] Okay?
+[29:14] You can write the rest of the links for the power system.
+[29:16] For those who are facing problems.
+[29:18] I have made two playlists so far.
+[29:20] 1 bit.ly slash Ankit PS.
+[29:25] Okay?
+[29:26] And the second bit.ly slash Ankit DE.
+[29:29] I will also put the notes on it.
+[29:31] After that, you will not face any problems.
+[29:33] I will ask you why the notes are not there.
+[29:35] Okay?
+[29:36] It is about the digital and power system.
+[29:38] Okay?
+[29:39] Yes.
+[29:40] If there are no notes, I will talk to you.
+[29:42] I will talk to you today.
+[29:43] Okay?
+[29:44] And yes, there are hidden videos in the playlists.
+[29:46] Because any video is only live for 24 hours.
+[29:48] You have to see the arpit in it.
+[29:50] Okay?
+[29:51] I may publish all the videos in the middle of the day.
+[29:54] This can happen.
+[29:55] But the day it will be, it will be told at the same time.
+[29:57] Before that, I will not inform you anything.
+[30:00] I will tell you the shots one day before that.
+[30:02] I am going to publish it.
+[30:04] You can watch it.
+[30:05] Come on now.
+[30:06] Please focus on the analog.
+[30:07] Okay?
+[30:08] It is not about Faltu.
+[30:09] Because I will not be able to complete my target today.
+[30:12] No matter what.
+[30:13] Come on.
+[30:14] In the AC analysis, we understood this model.
+[30:17] This model was clear to everyone.
+[30:19] That we have to circuit shots.
+[30:21] DC voltage source.
+[30:22] We have to circuit the capacitor.
+[30:23] And this becomes our model.
+[30:25] So, I clicked on R1 parallel R2 directly.
+[30:28] Here, we have shown that both the resistances are coming between base and ground.
+[30:34] Okay?
+[30:36] Now, look at some things in it.
+[30:40] What are some things?
+[30:42] First of all, input impedance.
+[30:45] When we see input impedance, it is seen from here.
+[30:50] From here.
+[30:51] So, the impedance comes from here.
+[30:53] That means, if you say the voltage here is V in.
+[30:57] And the current going here is I in.
+[31:00] So, your input impedance will be Z in.
+[31:04] That will be V in over I in.
+[31:07] Now, remember one thing in input impedance.
+[31:14] It is taken after.
+[31:18] Look at it carefully.
+[31:20] Taken after input coupling capacitor.
+[31:26] Input coupling capacitor.
+[31:34] Okay?
+[31:35] This is taken after input coupling capacitor.
+[31:40] And taking after input coupling capacitor means
+[31:44] that do not.
+[31:46] Listen carefully.
+[31:47] You will remain silent.
+[31:49] And you will not understand this subject.
+[31:51] This topic is very important.
+[31:52] Do not include source resistance.
+[31:58] Look, son, if you read the next three lectures today, tomorrow and tomorrow.
+[32:01] You have read it seriously with me, right?
+[32:03] I am saying that the amplifier for you will play the game of children.
+[32:07] The game of children.
+[32:08] Literally, you will make questions like this.
+[32:11] You will say, hey, this?
+[32:13] Someone will say, brother, amplifier is tough.
+[32:15] Amplifier is tough?
+[32:16] What is there in amplifier?
+[32:18] But look at some things.
+[32:20] You have to realize some things.
+[32:22] When we take input resistance of amplifier.
+[32:25] Source resistance does not include in that.
+[32:28] It means to say.
+[32:29] Look, let me show you.
+[32:32] Look, this was input resistance.
+[32:34] Do not add RS in it.
+[32:36] Do not ever say RS plus R in.
+[32:38] RS is the source resistance.
+[32:40] Apart from that, the remaining on the input side is input resistance.
+[32:44] Because it is not part of RS amplifier.
+[32:47] It is part of RS source.
+[32:49] Think like the remote control.
+[32:52] Listen, look carefully.
+[32:55] I have this remote control.
+[32:57] I will press the button in remote control.
+[33:00] Son, that is the input signal.
+[33:02] So what I am pressing is the input that I am giving.
+[33:05] I am putting pressure on my finger.
+[33:07] Is that part of the remote? No.
+[33:09] My finger pressure is not part of the remote.
+[33:12] It is external.
+[33:13] Son, the source you have put in amplifier is external.
+[33:17] This is not a part of amplifier.
+[33:19] This is the input to the amplifier.
+[33:21] So amplifier starts from here and ends here.
+[33:24] Neither is the source part of an amplifier.
+[33:29] Nor is the load part of an amplifier.
+[33:32] Neither is the source part of an amplifier.
+[33:35] Neither is the load part of an amplifier.
+[33:38] The remaining part of the amplifier is the except source and load.
+[33:42] So when you are removing the input resistance,
+[33:45] do not include the source resistance.
+[33:48] Do not include the source resistance.
+[33:51] Did you understand till here?
+[33:54] Now look at the output impedance.
+[33:56] What do we say in the output impedance?
+[34:00] Here Z out is V out by I out.
+[34:12] What we take is taken before
+[34:22] output coupling capacitor.
+[34:26] We take the output coupling capacitor before that.
+[34:29] Because the load comes after the coupling capacitor.
+[34:33] Do you understand?
+[34:34] The load comes after the coupling capacitor.
+[34:36] And secondly, this means do not include the load resistance.
+[34:41] Because the load is not a part of the amplifier.
+[34:44] So do not include the load resistance.
+[34:47] The load may have been put on the output side.
+[34:50] But while removing the output resistance,
+[34:52] you will not talk about the load.
+[34:55] You will not talk about the load.
+[34:57] Let me tell you one more way.
+[34:59] Look at this circuit.
+[35:01] Here my dear,
+[35:03] this amplifier is made in the box.
+[35:07] So when you are looking at the resistance from the input side,
+[35:10] then look after the capacitor.
+[35:12] Because what is the element before the capacitor?
+[35:14] It is the source.
+[35:15] Do you understand?
+[35:16] The element before the capacitor is the source.
+[35:19] So do not include the source resistance.
+[35:22] Look after the source or say after the capacitor.
+[35:26] When you remove the output resistance,
+[35:28] then you will see it before the capacitor.
+[35:30] Because after this capacitor,
+[35:32] what will be the load?
+[35:34] So you have to see the output resistance before this.
+[35:36] The load resistance that will be connected to V0,
+[35:39] do not include it.
+[35:41] Let me tell you this.
+[35:43] Do you remember?
+[35:44] Because now I will derive all these things in the amplifier.
+[35:47] I will derive all these things in the amplifier.
+[35:50] So what do you have to keep in mind?
+[35:52] The source resistance will not count in the input.
+[35:54] And the load resistance will not count in the output.
+[35:58] And you can write this here.
+[36:00] Vout by Iout provided V in is 0.
+[36:06] The input voltage is 0.
+[36:09] Then you remove the output resistance.
+[36:13] Current gain Ii.
+[36:15] Current gain means I out by I in.
+[36:21] I out by I in.
+[36:25] Simple.
+[36:27] And this is what you have read.
+[36:29] Do you remember this in different configurations?
+[36:32] I had read the common base earlier.
+[36:35] Alpha came in it.
+[36:37] Common emitter.
+[36:39] Beta came in it.
+[36:41] Common collector.
+[36:43] Gamma came in it.
+[36:45] So you know the current gain of BJT.
+[36:47] You know the current gain of BJT amplifier.
+[36:50] That is alpha, beta, gamma.
+[36:52] But what will happen?
+[36:54] When extra components will be connected in the circuit,
+[36:56] then you will have to re-evaluate it by doing network analysis.
+[37:00] But simple change is I out by I in.
+[37:04] Similarly, voltage gain.
+[37:07] V out by V in.
+[37:12] V out by V in.
+[37:14] See, there are three types of voltage gain.
+[37:18] Now what happens in this?
+[37:21] This does not include RS and RL.
+[37:26] Does not include RS and RL.
+[37:35] Okay.
+[37:37] Second is A, V, L.
+[37:40] This is V out by V in.
+[37:44] But this includes.
+[37:47] We include RL in this.
+[37:50] But not RS.
+[37:53] Includes RL but not RS.
+[38:00] And third gain is A, V, S.
+[38:05] This is V out by V in.
+[38:10] But do you know?
+[38:11] Both things are included in this.
+[38:14] Includes RS and RL.
+[38:20] Okay.
+[38:22] So we call this overall voltage gain.
+[38:25] What is the name?
+[38:27] Overall voltage gain.
+[38:29] Sir, what is the result in the exam?
+[38:31] The last one is the result in the exam.
+[38:33] If you are asking for a gain,
+[38:35] then you should tell the total.
+[38:37] How many things are included?
+[38:39] Okay.
+[38:40] How many things are included?
+[38:43] V out by V in.
+[38:45] Which includes RS as well as RL.
+[38:48] Which includes RS as well as RL.
+[38:51] Is it clear?
+[38:52] So there are three types of gains.
+[38:54] The general gain is V out by V in.
+[38:56] It does not include RS nor RL.
+[38:58] But when you ask for an exam,
+[39:00] then you have to take out the total gain.
+[39:02] Including all the components.
+[39:05] Now do you know?
+[39:06] There is one more thing in this.
+[39:08] Which we call as the power gain.
+[39:10] What is it called?
+[39:11] Power gain.
+[39:12] It means the power of the signal.
+[39:14] How many times did you do it?
+[39:17] Compared to the input signal.
+[39:20] How much was the output signal?
+[39:23] So this is simply
+[39:25] Voltage gain into current gain.
+[39:28] Okay.
+[39:29] Voltage gain into current gain.
+[39:32] Because the voltage is also amplified.
+[39:35] Current is also amplified.
+[39:37] Okay.
+[39:38] So here it will be voltage gain into current gain.
+[39:41] You will only say voltage gain to the three of you.
+[39:44] You will only say voltage gain to the three of you.
+[39:46] But when he will ask you,
+[39:48] it is not like that.
+[39:49] A V L will ask you separately or A V L will ask you.
+[39:51] He will only ask you the voltage gain.
+[39:53] You have to give the overall gain.
+[39:56] Yes Aman.
+[39:57] You will write the total in this.
+[39:59] Just do A V L.
+[40:00] Okay.
+[40:01] Don't get confused.
+[40:02] I have shown three gains.
+[40:04] Because three exist.
+[40:05] But when you will take out the exam,
+[40:07] you will take out the final one.
+[40:09] Which includes everything.
+[40:11] Right?
+[40:12] There is nothing left in it.
+[40:13] It is not like this.
+[40:14] You have to consider it.
+[40:15] You don't have to do that.
+[40:16] There is nothing like that.
+[40:17] Just remember in the case of input and output resistance.
+[40:20] That in input resistance,
+[40:22] you don't have to include RS.
+[40:24] And in output resistance,
+[40:25] you don't have to include R L.
+[40:28] Okay.
+[40:29] Only in input and output resistance.
+[40:31] Okay.
+[40:32] You won't know from the circuit.
+[40:34] Now I am telling you.
+[40:35] That you have to take out this.
+[40:37] Don't get confused.
+[40:38] This is what you have to take out.
+[40:40] This is what you have to take out.
+[40:41] Okay.
+[40:42] Is the matter clear?
+[40:44] Let's go.
+[40:48] If there is a collector to base resistance,
+[40:50] then load resistance will be included in input.
+[40:52] Look,
+[40:53] the punker can come in load resistance input.
+[40:55] On the input side,
+[40:57] you don't have to include RS.
+[40:58] And on the output side,
+[40:59] you don't have to include R L.
+[41:01] That is,
+[41:02] any factor of RS can go in output resistance.
+[41:05] Not in input.
+[41:06] No.
+[41:07] Any factor of R L can come in input.
+[41:09] Not in RS.
+[41:10] Oh, sorry.
+[41:11] Any factor of R L can come in input.
+[41:13] Not in output.
+[41:15] The matter is clear to the rest of the people.
+[41:17] R L can be seen in input.
+[41:19] It can be.
+[41:20] But it shouldn't come in output.
+[41:22] R L can be seen in output.
+[41:24] But it shouldn't come in input.
+[41:26] Okay.
+[41:28] Is it clear?
+[41:30] Let's go.
+[41:31] Now let's talk about modeling.
+[41:33] First of all,
+[41:34] which model am I talking about?
+[41:36] Ebers-Moul model.
+[41:38] It is a very good model.
+[41:40] He was a very great person who gave this model.
+[41:42] Look.
+[41:44] We will understand it from the basics.
+[41:46] Okay.
+[41:47] Now,
+[41:48] keep patience and calm.
+[41:50] Because now the main things are starting.
+[41:52] We were passing the time.
+[41:54] Okay.
+[41:58] Look, your BJT is like this.
+[42:00] N plus
+[42:02] P
+[42:03] and N minus.
+[42:06] What happens here?
+[42:11] Ammeter
+[42:16] Base
+[42:18] Collector
+[42:28] Okay.
+[42:29] What happens now?
+[42:31] What happens here?
+[42:35] Look here.
+[42:36] One way,
+[42:37] two diodes are formed.
+[42:39] Base and Collector.
+[42:45] Base and Ammeter.
+[42:47] Two diodes are formed.
+[42:49] Tell me.
+[42:51] Tell me quickly.
+[42:52] Is it clear?
+[42:53] Two diodes are formed.
+[42:54] Two junctions are formed.
+[42:55] Ammeter base and Collector base.
+[42:57] So,
+[42:58] he knows that the two scientists who were Ebers-Moul,
+[43:01] he started the model from here.
+[43:03] Which is the basic of BJT.
+[43:06] It contains two diodes.
+[43:08] They don't call them anti-parallel diodes.
+[43:10] Because they are not connected in parallel.
+[43:12] They are in series.
+[43:13] They are opposite.
+[43:14] They are in both series and opposite.
+[43:16] So, you won't use an anti-parallel word.
+[43:18] You can say this.
+[43:19] Two diodes with opposite orientation.
+[43:22] Anti-parallel means
+[43:24] they are in parallel but they are opposite in direction.
+[43:26] So, don't say anti-parallel.
+[43:28] Okay?
+[43:29] Now, if I open this model and draw it here.
+[43:33] They showed this to us.
+[43:36] And you can also make a PNP.
+[43:38] Son, it's not that you can't make a PNP.
+[43:47] What will happen?
+[43:48] The direction of the diode will change.
+[43:51] This is the model.
+[43:56] Okay?
+[44:01] Ammeter base collector.
+[44:09] Okay?
+[44:10] Now, you know that the ammeter base diode
+[44:13] is more of a doping.
+[44:15] And the collector base diode
+[44:17] is less of a doping.
+[44:21] Ammeter base is more of a doping.
+[44:24] Ammeter base diode is less of a doping.
+[44:26] Okay?
+[44:27] Yes, you can say back to back.
+[44:29] It is connected with the back to back connection.
+[44:32] And Rajat, son, if you want to talk about all this.
+[44:34] Then take my class immediately.
+[44:36] Okay?
+[44:37] And if you want to study, then sit.
+[44:39] If you don't want to study, then leave.
+[44:41] Now, see what happens here.
+[44:43] If I show you the currents.
+[44:46] Like if this ammeter current comes.
+[44:49] Then a portion of it goes in the collector.
+[44:52] That is alpha i.e.
+[44:55] But you see, it is going backwards from the diode.
+[44:58] It is going in the opposite direction from the diode.
+[45:01] Do you understand what you are saying?
+[45:03] It is going in the opposite direction from the diode.
+[45:06] So, how do we show the model for this?
+[45:11] Look, this corner.
+[45:13] There is no select system in this.
+[45:15] Let's make a pencil.
+[45:17] How do we show the model in this?
+[45:19] Look.
+[45:21] Let's enhance this model more.
+[45:24] Now, a very good question.
+[45:26] Asked a child that if we connect two diodes like this,
+[45:28] will it become BJT?
+[45:30] No.
+[45:31] Why not?
+[45:32] Let me tell you the reason.
+[45:33] Because here, son,
+[45:36] your dependent current source should also come.
+[45:43] Which is alpha i.e.
+[45:46] And this can only happen
+[45:48] when the current of the ammeter reaches the collector.
+[45:51] If you look at the simple two diodes,
+[45:53] there will be no relation in their currents.
+[45:55] But in BJT, there is a relation of the current of the diode.
+[45:59] Why?
+[46:00] Because the charges from the ammeter
+[46:02] reach the collector passing through the base.
+[46:05] So, some part of the ammeter current reaches the collector.
+[46:08] If you put a simple diode,
+[46:10] then this relation is over.
+[46:12] The working of the device has changed.
+[46:14] So, he said that if this current is your IE,
+[46:18] let me write it like this, IEF.
+[46:20] Isn't it?
+[46:21] F means forward.
+[46:23] So, I have said this.
+[46:25] Alpha F IEF.
+[46:27] Okay?
+[46:29] Now, son, as soon as some section of the ammeter
+[46:33] or some part reaches your collector,
+[46:36] if you reverse the role,
+[46:38] then the collector current should also come to the ammeter.
+[46:42] If you reverse the ammeter collector,
+[46:46] then you don't think that some part of the collector should also come to the ammeter.
+[46:50] So, for this, you have shown a dependent source here.
+[46:54] Alpha R IR.
+[46:56] So, it won't work only with the diode, son.
+[47:00] You will have to show dependent sources here.
+[47:04] Why?
+[47:05] Because some part of the ammeter current reaches the collector.
+[47:09] If you supply the collector like this,
+[47:13] then some part of the collector's current will reach the ammeter.
+[47:18] Some part of the collector's current will reach the ammeter.
+[47:22] Is this clear?
+[47:24] Is this clear?
+[47:26] So, Alpha F which is your forward current gain.
+[47:30] Son, please enjoy this model.
+[47:33] Because if you come here and there to query,
+[47:38] then my education will be disturbed.
+[47:41] And no one will benefit from it.
+[47:43] Your query will be quiet.
+[47:45] Your chul will be finished.
+[47:47] But the topic will also be gone.
+[47:49] This is a very beautiful model.
+[47:51] It is a very unique thing, son.
+[47:53] And the beginning of BJT's amplifier is from here.
+[47:57] The beginning of BJT's amplifier is from here, son.
+[48:02] Okay?
+[48:03] Is this clear?
+[48:05] Tell me, is this clear?
+[48:08] What does this mean, son?
+[48:10] This means that if I look at the ammeter current,
+[48:15] then it will become the sum of two currents.
+[48:18] If I look at the collector's current,
+[48:20] it will also be based on two currents.
+[48:23] Correct?
+[48:24] There will be two components in the current of the ammeter,
+[48:27] and two components in the current of the collector.
+[48:31] So, what can I write IE?
+[48:35] I F minus alpha r I R.
+[48:41] How will I F be written?
+[48:44] This is the current of the base ammeter diode.
+[48:48] So, you will write it like this.
+[48:54] And the I R is the current of the collector base junction.
+[49:03] V B C is the current of the collector base junction.
+[49:11] When you write I C like this,
+[49:14] I C alpha F I F minus I R.
+[49:17] I am putting KCL.
+[49:19] Alpha F I F minus I R.
+[49:26] So, alpha F I ES e to the power V BE by VT minus 1 minus I C.
+[49:40] Or do one thing,
+[49:41] which you can relate.
+[49:44] I CO.
+[49:49] Now, do you know what happens?
+[49:52] Collector base junction is reversed in the active region.
+[49:55] Let me show you one thing.
+[49:56] Collector base junction is reversed in the active region.
+[50:00] So, this E term will be almost zero.
+[50:03] So, alpha F I E plus I CO.
+[50:07] This is the formula you had studied.
+[50:09] What was I C?
+[50:10] Alpha I E plus I C BO.
+[50:13] I C BO is also written as I CO.
+[50:15] This will be understood again.
+[50:17] If you reverse the collector base junction,
+[50:21] then I will ignore the power negative of E.
+[50:25] So, minus minus plus will be alpha into I E minus minus plus plus I CO.
+[50:31] The same relation is coming.
+[50:33] But now, I am not talking about active cut-off saturation.
+[50:36] First, tell me whether things are clear or not.
+[50:39] Tell me.
+[50:40] Is everything clear till here?
+[50:42] Sir, why didn't you leave it on two diodes?
+[50:44] If you are thinking like this,
+[50:46] then the reason was that the current coming from one diode
+[50:49] reaches the other junction.
+[50:51] To show that effect, I showed a dependent source.
+[50:55] If both the diodes were independent,
+[50:57] then there would be no meaning to each other.
+[50:59] So, I don't have to show any dependent source.
+[51:01] I keep doing my work according to myself.
+[51:04] As you are asking, if two diodes connect like this.
+[51:07] But because while passing through the device,
+[51:10] the current of one diode is also coming in the other region.
+[51:13] It will have to be shown in the model.
+[51:15] It cannot be ignored.
+[51:17] If you think about the current gain of BJT
+[51:19] if you run away from the model,
+[51:21] then what does BJT mean?
+[51:23] Think about it.
+[51:24] These are the most important things in BJT.
+[51:26] Alpha, beta, gamma.
+[51:27] We will delete them a little.
+[51:29] So, tell me if there is any query of any child.
+[51:31] If it is clear till here, then I will explain it later.
+[51:36] Is it clear?
+[51:38] Okay.
+[51:39] Now, see what is the most important thing in this model.
+[51:43] What is the most important thing in this model?
+[51:47] What are you saying, sir?
+[51:48] You should look at both of them separately.
+[51:49] In the same model, how can forwards and reverse dependent current source be?
+[51:52] Son, I have made a universal model.
+[51:54] Obviously, all the components will not be connected every time.
+[51:58] There will be different mode of operation.
+[52:00] I will show you right now.
+[52:02] There will be different components of the model.
+[52:04] But what have we done?
+[52:05] We have made a universal model.
+[52:07] That is, we have put everything in it.
+[52:09] Now, take whatever you want in the active.
+[52:12] Take whatever you want in the cutoff.
+[52:14] Take whatever you want in the saturation.
+[52:16] Take whatever you want in the saturation.
+[52:18] I have said this, son.
+[52:20] When you talk about active mode.
+[52:23] In active mode, you keep the collector base junction reversed.
+[52:28] If you keep the collector base junction reversed, listen carefully.
+[52:31] If you keep the collector base reversed, then it will be VBC negative.
+[52:35] VBC negative means the negative power of the exponential.
+[52:38] If it comes, then ignore it.
+[52:40] If it becomes minus minus plus 1, then it will become plus ICO.
+[52:44] If it is ignored by the exponential power.
+[52:47] So, if it becomes plus ICO, then this was the equation of the collector current.
+[52:51] Alpha IE plus ICBO.
+[52:54] Remember, ICO is called I-C-O.
+[52:57] Now, do you understand what I am saying?
+[53:00] Tell me, 100 people are sitting and 3 or 4 people are writing yes and are writing clear.
+[53:04] Tell me quickly.
+[53:05] Is it clear or not?
+[53:08] Tell me quickly.
+[53:09] Then I will show its application.
+[53:11] Then let's do the derivation of the things.
+[53:19] Yes, that's why I have told you the dependent source.
+[53:22] Because the current of the emitter reaches the collector.
+[53:24] If the supply reaches the collector, then the current of the collector reaches the emitter again.
+[53:29] Isn't it?
+[53:30] Let's go.
+[53:32] Now, see what is the advantage of this model?
+[53:34] What is the biggest advantage?
+[53:36] That is, it is applicable.
+[53:41] For all 4 regions of operation.
+[53:48] This model is so generic that it can be run in every region of operation.
+[53:55] Which 4 were there?
+[53:57] Remember, there were 4 regions in 4 quadrants.
+[54:00] Active, saturation, cut-off, inverse active.
+[54:04] Isn't it?
+[54:05] Active, saturation, cut-off, inverse active.
+[54:08] Okay?
+[54:11] Let's forward one diode.
+[54:13] Let's take the other in the breakdown.
+[54:14] If you take it in the breakdown, then the device will not be damaged.
+[54:17] Remember, when BJT's basic was taught, primary breakdown, secondary breakdown.
+[54:21] The primary breakdown means that there should be an avalanche breakdown in the collector base junction.
+[54:25] Because it was lightly doped.
+[54:27] Secondary breakdown, the thermal runaway.
+[54:29] So, there is no Zener diode here.
+[54:31] Which I will run in the breakdown.
+[54:33] This is BJT.
+[54:34] Breakdown is not desirable.
+[54:36] In a normal diode or BJT, the breakdown is never good.
+[54:41] Understand that.
+[54:43] How do you get such wild ideas?
+[54:45] Okay?
+[54:47] Second thing.
+[54:50] Can be used at any bias and temperature.
+[54:59] You know, if you pay attention here.
+[55:02] I have used the exponential equation.
+[55:06] I have not done any linearization.
+[55:08] So, I don't need to say that I am talking about the small signal.
+[55:11] Eber's small model.
+[55:13] What is this?
+[55:14] He is talking about the small signal.
+[55:15] He is taking the exponential.
+[55:17] Exponential is exact.
+[55:19] Exponential is exact.
+[55:21] We have not linearized it.
+[55:23] We have not linearized it.
+[55:25] What have we done?
+[55:26] Direct diode exponential is the exact equation.
+[55:30] So, the drawback of this is that it uses exponential equations.
+[55:44] Okay?
+[55:46] Meaning.
+[55:48] Large signal model.
+[55:50] What is this?
+[55:52] Large signal model.
+[55:55] Because in large signal, you cannot linearize it.
+[55:59] In large signal, you will have to use the exponential.
+[56:03] What is the second thing?
+[56:05] Because diode is being used.
+[56:07] So, this is non-linear.
+[56:09] It uses diode.
+[56:14] And hence, non-linear.
+[56:17] Brother, won't your requests end?
+[56:21] Tell me.
+[56:22] There is no mood to study.
+[56:23] We just have to talk about this and that.
+[56:26] Do this and that.
+[56:27] Provide it.
+[56:28] Give me the number of the lecture.
+[56:29] Don't make notes of it.
+[56:31] Solve the problem.
+[56:32] So, will we study it?
+[56:35] Now, look.
+[56:36] The beauty of this thing is that
+[56:38] it runs in all four regions of operation.
+[56:40] You know, once in EC,
+[56:42] the question of one number was asked in the gate.
+[56:44] Where does the Eber's small model apply?
+[56:47] And the answer was all four regions of operation.
+[56:50] You don't need to limit it.
+[56:52] You don't need to restrict it.
+[56:54] You can apply it anywhere.
+[56:55] That is the beauty.
+[56:57] Okay.
+[56:58] Now, let's talk about active mode.
+[57:01] In active mode, ammeter base junction will be forward biased.
+[57:04] Collector base junction will be reverse biased.
+[57:07] Ammeter base junction will be forward biased.
+[57:10] And collector base will be reverse biased.
+[57:13] The diode of the collector base,
+[57:15] which you showed here,
+[57:17] you opened it with reverse bias.
+[57:22] Okay.
+[57:23] Reverse bias and hence open.
+[57:28] Do you understand?
+[57:31] With which your IR is zero.
+[57:35] If IR is zero, then the current source coming here,
+[57:39] alpha r IR,
+[57:41] if it is zero, then it is also open.
+[57:45] Think about it.
+[57:47] What did you say to the junction,
+[57:49] the reverse of your junction?
+[57:51] Look at the open circuit.
+[57:52] Let me show you here.
+[57:54] Look at this model.
+[57:55] You said collector base,
+[57:57] collector base, you did reverse bias.
+[57:59] Okay.
+[58:00] So, while doing reverse bias,
+[58:02] this diode is open.
+[58:03] If this diode is open, then IR is zero.
+[58:07] If IR is zero, then the dependent source is also gone.
+[58:11] This pink current is gone.
+[58:13] This pink source is also gone.
+[58:14] So, what is left?
+[58:15] Just a diode and a dependent source.
+[58:18] Do you understand?
+[58:19] A diode and a dependent source.
+[58:22] Let me show you another model of this type.
+[58:25] Tell me, which region should I look at?
+[58:27] Should I look at saturation?
+[58:29] Okay.
+[58:30] I will make saturation and cutoff.
+[58:38] If you look at saturation,
+[58:40] then both of your diodes are forward bias.
+[58:47] Okay.
+[58:49] Then you don't have to open any diode.
+[58:54] Both are forward.
+[58:56] So, you don't open anyone.
+[58:59] So, what do you write now?
+[59:02] Then you show the whole model.
+[59:04] Then you show the whole model.
+[59:07] Do you understand?
+[59:10] Now, I am understanding why this model is special.
+[59:12] All the models that you will study in the future,
+[59:15] will be only active.
+[59:17] And this is the model that works in all fours.
+[59:21] There is no other model in the world of BJT
+[59:24] that represents every region.
+[59:27] Now, that is different.
+[59:28] You must have understood it so easily.
+[59:30] You must be thinking,
+[59:31] what is there in the model?
+[59:35] Okay.
+[59:36] I have made the arrow upside down.
+[59:43] Right?
+[59:44] You must be thinking,
+[59:45] what is the model?
+[59:47] It is an easy dependent source.
+[59:49] And your diode.
+[59:53] How big is it?
+[59:54] But till the time these things don't exist,
+[59:57] it is not a joke to think about them.
+[60:00] Someone has imagined that
+[60:02] a dependent source and a diode will work.
+[60:05] It is a big thing.
+[60:07] Right?
+[60:08] Then you will show everything.
+[60:09] Because all the diodes are your forward bias.
+[60:12] So, no one's current will be zero.
+[60:15] No one's current will be zero.
+[60:18] Okay?
+[60:19] Now, think about the cut-off.
+[60:21] Will you tell me what will happen in the cut-off?
+[60:23] Tell me quickly in the chat.
+[60:25] What should be done according to you in the cut-off?
+[60:28] In the cut-off, both the junctions are your reverse.
+[60:33] Right?
+[60:35] Both the junctions are reverse.
+[60:43] Now, when both the junctions are reverse,
+[60:48] both the diodes are open.
+[60:50] Right?
+[60:51] Now, when both the diodes are open,
+[60:53] then your IF is zero and IR is zero.
+[60:57] So, the dependent source based on this,
+[60:59] both are zero.
+[61:01] Isn't it?
+[61:03] Both the dependent sources are also gone.
+[61:06] Everything is open.
+[61:08] Okay?
+[61:09] Everything is open to you.
+[61:10] Is the matter clear?
+[61:15] Now, after this,
+[61:17] after the cut-off,
+[61:18] let's make the inverse active.
+[61:23] I want to show you that
+[61:24] this can be the model of all four modes.
+[61:27] What will happen in the inverse active,
+[61:29] my children?
+[61:31] Ammeter base will be reverse.
+[61:36] And your collector base will be forward.
+[61:41] Okay?
+[61:42] Ammeter base is reverse and collector base is forward.
+[61:46] So, when the diode of the ammeter base is reversed,
+[61:49] then the diode of the ammeter base is open.
+[61:53] If the diode of the collector base is forward,
+[61:55] then that diode will continue to run.
+[61:58] Now, if the collector base is running,
+[62:00] then the dependent source will also run on it.
+[62:06] Okay?
+[62:07] So, look at this.
+[62:10] This is IR.
+[62:13] And this is alpha-R.
+[62:14] IR.
+[62:16] Isn't it good?
+[62:17] Did you understand?
+[62:19] IF is zero,
+[62:20] if the current of the ammeter base is zero,
+[62:22] or if the ammeter base is reversed,
+[62:25] then your current will be zero here.
+[62:28] Current will become zero.
+[62:31] Is it clear?
+[62:33] So, what are we doing?
+[62:35] Now, you understand the overall matter.
+[62:37] We are replacing a BJT with a diode
+[62:40] and a dependent source.
+[62:42] In different, different mode of operation.
+[62:46] Different, different mode of operation.
+[62:48] Is it clear?
+[62:50] Tell me, are things clear up to here?
+[62:53] Tell me quickly.
+[62:55] Isn't it?
+[62:56] Now, while using this model,
+[62:59] more scientists developed the amplifier.
+[63:02] Because, what is here?
+[63:04] This is the fundamental model.
+[63:06] Means, the Ebers and Mohl gave this fundamental model.
+[63:09] Now, what did the other scientists do?
+[63:11] Let's simplify this more.
+[63:13] Because, look at the drawback in this model.
+[63:15] Look, first understand two or three things.
+[63:17] My amplifiers will work in an active region.
+[63:20] That is, my interest is in this circuit.
+[63:23] But the biggest drawback in this circuit is the diode.
+[63:27] That diode is a non-linear device.
+[63:29] But if you listen carefully under the small signal model,
+[63:33] if I linearize the diode under the small signal model,
+[63:38] then my work will be done.
+[63:40] The diode is non-linear.
+[63:42] But if I linearize the diode under the small signal assumption,
+[63:46] then my circuit can be very simple.
+[63:49] So, let's move on to the next model.
+[63:51] RE Transistor Model.
+[63:53] What do we say in this?
+[63:55] In your active region,
+[63:57] replace the diode with a resistance.
+[64:00] You all know what happens in the active region?
+[64:03] Ammeter base junction is forward.
+[64:05] And in diode forward biasing,
+[64:07] a resistance is replaced for AC model.
+[64:10] What do we call it?
+[64:12] Diffusion resistance.
+[64:14] What do we call it?
+[64:15] Diffusion resistance.
+[64:17] What do we call it?
+[64:19] When a diode is forward biased,
+[64:36] then it can be replaced by a resistance called...
+[64:56] What do we call it?
+[64:58] Diffusion resistance.
+[65:00] What do we call it?
+[65:02] Diffusion resistance.
+[65:04] So, your diode is base emitter junction.
+[65:09] It is a diode.
+[65:11] And what is the diode?
+[65:12] It is base emitter junction.
+[65:14] And in active mode,
+[65:16] your emitter base is forward.
+[65:21] And the collector base is your reverse.
+[65:25] So, you showed the forward one from the diode.
+[65:29] Now, in diode forward,
+[65:32] a resistance is replaced.
+[65:34] But do you know what?
+[65:36] When do you assume a small signal?
+[65:40] That is, AC is much less than DC.
+[65:43] It is not that the diode will be replaced
+[65:45] by a resistance on any current.
+[65:47] If your AC signal is very small,
+[65:50] then it is the same model that you have just made.
+[65:53] Sir, I don't see such a model.
+[65:55] Look at this.
+[65:56] This current is IE.
+[65:58] And here, you have a dependent source of alpha IE.
+[66:02] So, look at this current IE.
+[66:05] And this is alpha IE.
+[66:09] And it is entering in the middle.
+[66:11] The current of the base is IB.
+[66:13] It is entering from here.
+[66:14] IEC.
+[66:15] And KCL is coming in both.
+[66:17] IE.
+[66:18] Do you understand this circuit?
+[66:20] And why do we use this lower case letter?
+[66:22] Because we are talking about AC.
+[66:24] In DC, there is an upper case.
+[66:25] In AC, there is a lower case.
+[66:27] Do you understand?
+[66:28] Let me tell you.
+[66:30] What does this lower case letter mean?
+[66:32] This is AC current.
+[66:38] Isn't this model clear?
+[66:40] Now, what are we saying?
+[66:41] We are asking for a small modification of this model.
+[66:44] That the diode here
+[66:46] should be replaced by a resistance.
+[66:49] We have asked for such a small modification.
+[66:51] So, look at what we are doing here.
+[66:55] Let me draw in front of this.
+[66:59] We are saying that the resistance of the diode
+[67:03] will be written as RE.
+[67:05] VT by IE.
+[67:08] Where IE is the
+[67:11] Q point emitter current.
+[67:14] Do you remember?
+[67:15] I had derived that
+[67:17] the resistance of the emitter base junction
+[67:21] is RE.
+[67:23] Do you remember?
+[67:24] The input resistance of the common base configuration
+[67:27] was derived.
+[67:28] Okay?
+[67:29] So, what will happen here?
+[67:46] Look, my brother.
+[67:47] You have made a circuit in such a simple way.
+[67:51] Now, look, this is the base.
+[67:53] This is the collector.
+[67:55] And this is the emitter.
+[67:58] This current is IB.
+[68:00] From here, it is IC.
+[68:02] Now, think how easy it has become.
+[68:04] It has been saved in BJT.
+[68:06] One current source and one resistance.
+[68:08] One current source and one resistance.
+[68:11] Is it clear?
+[68:13] I have replaced only that diode
+[68:15] with a resistance from RE.
+[68:19] Do you remember?
+[68:21] The diffusion resistance of the diode
+[68:23] was this.
+[68:24] VT upon ID.
+[68:26] VT upon ID was there.
+[68:28] So, the current of the diode is emitter current.
+[68:30] So, VT upon IE.
+[68:33] Now, look at this.
+[68:35] We have a good model.
+[68:38] Now, do you know what we do in this?
+[68:40] We simplify this a little more.
+[68:42] Okay?
+[68:43] We simplify this a little more.
+[68:46] What can we do?
+[68:48] What can we do?
+[68:50] Look at this.
+[68:52] Let's do it like this.
+[68:56] Look at this a little more.
+[69:13] Like this.
+[69:16] Now, sir, what have you done?
+[69:18] Look carefully.
+[69:19] I have modified the same circuit a little.
+[69:24] Look, IE,
+[69:27] IB,
+[69:29] IC.
+[69:33] Now, tell me.
+[69:34] Even now, the same relation is being formed.
+[69:36] That IC is equal to alpha IE.
+[69:40] From here, look.
+[69:41] From here, IC came.
+[69:42] From here, IB went.
+[69:44] So, both these were added and IE went here.
+[69:47] IE went here.
+[69:49] Tell me, is this clear?
+[69:51] Or you can show it to the resistance if you want.
+[69:57] You have to show it with more clarity.
+[70:00] The matter is still the same.
+[70:03] Do you know what is the benefit from this?
+[70:05] This is called a T-model.
+[70:07] What is it called?
+[70:09] T-model.
+[70:10] And this is called a Pi-model.
+[70:13] The same relation is the same circuit.
+[70:15] But this is your T-model
+[70:17] because this is being formed in the shape of T.
+[70:20] And this one is your Pi-model.
+[70:22] This is being formed in the shape of Pi.
+[70:24] Can you call it inverted Pi?
+[70:26] It is the opposite Pi.
+[70:28] But practically, think of one thing.
+[70:30] If you source current,
+[70:32] if you take current source,
+[70:34] then when the practical current source is taken,
+[70:38] then there is a resistance in it.
+[70:40] For example, there is a resistance in a series of a practical voltage source.
+[70:44] Similarly, there is a resistance in the parallel of a practical current source.
+[70:49] We should also take a resistance in its parallel.
+[70:52] Everyone, do you agree with this?
+[70:55] Should we take a resistance in its parallel?
+[70:59] Tell me.
+[71:02] Do you agree or not?
+[71:04] Do you agree?
+[71:06] If there is a resistance in a series of a practical voltage source,
+[71:11] then there should be a resistance in a parallel of a practical current source.
+[71:15] So, let's show it like this.
+[71:19] R0.
+[71:21] Do you remember?
+[71:22] The output resistance came out.
+[71:24] In the characteristic of BJT, there is VA upon ICQ.
+[71:28] Where VA is the early voltage.
+[71:33] Do you remember?
+[71:36] And Rudresh, my brother,
+[71:38] you have forgotten that we have already derived this resistance in BJT basics.
+[71:43] We have already derived it in BJT basics.
+[71:46] You are saying how is ID equal to VT?
+[71:48] Where have I done ID and VT?
+[71:51] I have said that VT upon ID is the resistance of diode.
+[71:55] The current of diode here is emitter current.
+[71:58] So, VT upon IE is done.
+[72:01] VT upon IE is done.
+[72:03] Dear, I am coming to the common emitter.
+[72:05] Jayan, wait a little.
+[72:07] Now, what do I have to do?
+[72:09] Pay attention.
+[72:22] When you talk about the common emitter configuration,
+[72:27] you will say that the input current in the common emitter
+[72:36] is IB.
+[72:39] So, the input resistance is VT upon IB.
+[72:50] IB is IE over 1 plus beta.
+[72:57] IB is IB over 1 plus beta.
+[73:03] IB is IB over 1 plus beta.
+[73:06] Remember, I have also written that the input resistance of the common emitter is high.
+[73:10] The input resistance of the common emitter is high.
+[73:13] There is no difference in both the models,
+[73:16] Pi and T model.
+[73:17] When we analyze the amplifier,
+[73:19] I will use the Pi model.
+[73:21] So, you don't have to think too much.
+[73:23] You have to use Pi only.
+[73:25] At the beginning, we came from Ebers mall to T.
+[73:28] We simplified it and made Pi.
+[73:31] Okay?
+[73:32] Ebers mall had given us T in the active region.
+[73:35] So, we made it Pi.
+[73:37] Now, what is written in this?
+[73:39] Which step is not understood?
+[73:41] Which step is not understood in this?
+[73:44] Now, dear, see the output current is IC.
+[73:48] And if you leave the basic topic of BJT,
+[73:52] then these things will not click as much as they click in the basic of BJT.
+[73:57] I took three lectures on the basics of all the BJT.
+[74:00] So, yesterday I also said that come by revising the characteristic part.
+[74:06] Come by revising, I said.
+[74:10] What was written?
+[74:12] Which step is not understood?
+[74:16] At least tell me, how is it written?
+[74:19] How is it written?
+[74:22] Now, what will you do in common emitter?
+[74:25] Your input terminal will be base.
+[74:28] Pay attention.
+[74:29] Input terminal will be base.
+[74:31] Common terminal will be emitter.
+[74:34] Here, a current source will come from the collector.
+[74:41] And a resistance will come in its parallel.
+[74:44] This is understood.
+[74:45] Why are you showing it in parallel?
+[74:47] Because there is a resistance in the parallel of practical current source.
+[74:51] In common emitter, there is a difference in the resistance of the common base.
+[74:59] So, see, what will come here?
+[75:01] 1 plus beta Re.
+[75:03] People approximate it and make it beta Re.
+[75:07] If it is big, then beta Re is written approximately.
+[75:14] Now, see, then it came.
+[75:16] Why are you planting so many IDs in my class?
+[75:24] Do not teach with peace of mind.
+[75:29] Is this clear?
+[75:30] Tell me.
+[75:31] Did you understand all this?
+[75:33] What happened here?
+[75:34] Sir, why is beta Re written as alpha Re?
+[75:37] Because my children,
+[75:39] think carefully this time.
+[75:41] When the input current Re,
+[75:43] then you will show the collector current dependency on IB.
+[75:46] Not on IE.
+[75:47] You will show it on IB, right?
+[75:49] Why will you show it on IE?
+[75:51] Did you understand this model?
+[75:52] So, basically, son, this is the basic form of BJT.
+[75:56] Two resistances and one dependent source.
+[75:59] That's it.
+[76:00] And we are scared of this.
+[76:01] We are scared of this.
+[76:03] We are doing a bigger network than this.
+[76:05] A bigger circuit than this.
+[76:07] And you are scared of this.
+[76:10] Tell me.
+[76:11] Aren't you ashamed?
+[76:13] Tell me.
+[76:14] Aren't you ashamed of this network that you were scared of in Amplifier?
+[76:18] And is this clear?
+[76:19] Where did the network come from?
+[76:20] Just remember this much, son.
+[76:24] I will also make this mark.
+[76:26] Just remember this much.
+[76:28] Okay?
+[76:30] And...
+[76:33] Remember this thing.
+[76:34] Remember this.
+[76:40] Isn't it?
+[76:42] But look, we are in a bad condition to reach here.
+[76:45] While deriving, while deriving, while deriving.
+[76:48] How much derivation we have done,
+[76:49] then this circuit is so simple.
+[76:55] Let's go.
+[76:56] Now come to the common base.
+[76:58] What is the input current in the common base?
+[77:00] It is the emitter one.
+[77:02] So, if you take the input terminal emitter,
+[77:04] then what resistance will you show?
+[77:05] Look, this is RE.
+[77:08] This is the base here.
+[77:10] This is IE.
+[77:11] This is IB.
+[77:13] This is alpha IE.
+[77:16] And this is R0.
+[77:18] What we had made earlier.
+[77:20] What we had made earlier.
+[77:21] Did you understand?
+[77:22] I have already made this circuit.
+[77:24] Look at the common base.
+[77:25] This is what we had made here.
+[77:28] This is what we had made.
+[77:30] The common base.
+[77:33] Why?
+[77:35] Is it clear?
+[77:37] This was the common base.
+[77:39] We have shown the same circuit here.
+[77:44] How did you design the network, son?
+[77:46] I am telling you this for so long.
+[77:47] How did you design the network?
+[77:50] Now, I feel that some children are
+[77:52] wasting their time in the class.
+[77:54] Yes, early voltage.
+[77:56] Not early voltage.
+[77:57] Early voltage will be given in the question.
+[77:59] VA will be given.
+[78:00] If it is not given, then consider it as infinite.
+[78:02] Then open the R0.
+[78:05] Now, look at this.
+[78:06] I will also write this.
+[78:07] If early voltage
+[78:12] is not specified.
+[78:14] Now, you will see the application of this model.
+[78:16] If early voltage
+[78:19] is not specified.
+[78:25] If all the children have understood
+[78:27] as much as I have explained,
+[78:29] then the heart should be in the chat.
+[78:33] Then I will understand.
+[78:35] And then the people who have not understood
+[78:37] or they have not seen it attentively
+[78:39] they should see the lecture again.
+[78:41] Or they are passing the time.
+[78:43] Yes, I will also teach the H model.
+[78:45] We will do it slowly.
+[78:46] Tell me, did this first model
+[78:48] become clear or not?
+[78:50] I will tell you a small story.
+[78:53] Once when I was studying offline,
+[78:55] what happened in offline?
+[78:56] I had a boy.
+[78:57] Until then, I did not study analog.
+[78:59] No, I had never prepared analog.
+[79:01] So, I said that
+[79:03] maybe I had started studying.
+[79:05] Yes, I was preparing analog.
+[79:07] Actually, I did not study.
+[79:09] Then I was preparing analog.
+[79:11] Now, he said that there are three models in BJT.
+[79:15] You will also see that I will teach
+[79:17] the three models.
+[79:18] This is the first model, which is called RE model.
+[79:20] You can call it Pi model.
+[79:22] It is much easier to call it RE model.
+[79:24] So, he said that it is an RE model.
+[79:26] It is a hybrid Pi.
+[79:27] It is an H model.
+[79:28] Now, which one of them should I prepare
+[79:30] for the exam?
+[79:31] So that my questions become clear.
+[79:33] And I told him that
+[79:36] which one of the three should I remember?
+[79:39] So that,
+[79:40] okay,
+[79:41] so that all the questions
+[79:43] become clear.
+[79:45] So, I told him that these three models are the same.
+[79:48] If you study properly,
+[79:50] then the three models of the three are the same.
+[79:52] Exactly the same.
+[79:53] Right?
+[79:54] So, this is what you will see in the color
+[79:56] and purse today.
+[79:57] Now, you remember that the first model
+[79:59] has been introduced.
+[80:00] Okay?
+[80:01] The first model has been introduced.
+[80:02] Now, what will you see in the color
+[80:04] and purse?
+[80:05] The other two models are the same.
+[80:07] This is the same model.
+[80:09] The way to write has changed.
+[80:10] That is,
+[80:11] don't think about which of the three
+[80:13] to prepare.
+[80:14] If one is ready,
+[80:15] then it means that the three are ready.
+[80:16] You will not face any problem in any model.
+[80:19] And in Amplifier, I am telling you a clear
+[80:21] thing.
+[80:22] I was scared.
+[80:23] I am not scared now.
+[80:24] If you are doing it through me,
+[80:26] then you will be able to make all the questions
+[80:27] of this topic.
+[80:28] There will be no question that you will not be able to
+[80:30] get.
+[80:31] Any question.
+[80:32] Just keep a good command on your network.
+[80:34] Nodal, Mesh, KVL, KCL.
+[80:37] I am talking about the network further.
+[80:39] The first two to four days of the network
+[80:41] have classes.
+[80:42] The same concept will be used in this.
+[80:44] Okay?
+[80:45] Did you understand everyone?
+[80:48] Now, the third configuration is
+[80:50] the Common Collector.
+[80:51] In the Common Collector,
+[80:53] the common emitter circuit is made.
+[80:55] Common Collector and common emitter
+[80:57] circuit is the same.
+[80:59] There is no difference between the two.
+[81:01] And the second thing,
+[81:03] PNP and NPN.
+[81:05] Now you will say, sir, you have got NPN.
+[81:07] PNP, don't change anything.
+[81:09] Nothing.
+[81:10] Why, sir?
+[81:11] Why are you saying that?
+[81:12] Don't change anything.
+[81:13] Because, brother, you are using AC anyway.
+[81:15] The current and voltage of AC is reversed
+[81:17] after every half cycle.
+[81:19] What did I teach you in NPN and PNP?
+[81:22] I taught you that in NPN and PNP,
+[81:24] the direction of currents
+[81:26] and the polarity of voltage is opposite.
+[81:28] If we take VBE in NPN,
+[81:31] then we take EB in PNP.
+[81:33] If the emitter current goes out in NPN,
+[81:35] then it enters in PNP.
+[81:37] But when, dear, there is AC here,
+[81:39] then the current will fluctuate anyway.
+[81:42] The voltage will fluctuate anyway.
+[81:44] If you do not change anything in the model,
+[81:47] then the current will fluctuate because it is AC.
+[81:49] Did you understand?
+[81:50] There will be a difference in DC.
+[81:52] The polarity of the voltage will be reversed.
+[81:54] The direction of the current will be reversed.
+[81:56] But in AC, the current is reversed after half cycle.
+[81:59] So, if you reverse it and make it,
+[82:01] then what will be the difference?
+[82:03] Do you understand?
+[82:04] There will be no difference.
+[82:05] Anything.
+[82:06] The model of a common collector is like a common emitter.
+[82:09] The model of NPN and PNP will also be the same.
+[82:12] There will be no difference.
+[82:14] Okay.
+[82:15] Now, if you want, then you can do this.
+[82:17] No, sir. We have to make it differently.
+[82:19] We have to make NPN, PNP different.
+[82:21] So, change the direction of the current.
+[82:23] It is simple.
+[82:24] Reverse the direction of the current of the voltage.
+[82:27] If you are taking VBE, then take EB.
+[82:30] If you are showing the current downwards,
+[82:32] then show it upwards.
+[82:33] Do this.
+[82:34] If it is your wish,
+[82:35] then there is no need for it.
+[82:37] Is this the shine?
+[82:38] Tell me, brother.
+[82:39] I will show you the shine by applying this model.
+[82:42] If you are clear to this point,
+[82:44] then I will show you by solving this model.
+[82:46] Tell me.
+[82:47] Do it and then solve.
+[82:48] Are you ready, everyone?
+[82:50] Are you ready, everyone?
+[82:53] Now, let me explain you the full flow.
+[82:56] Okay, tell me.
+[82:57] I will explain the full flow.
+[82:58] I will skip DC analysis.
+[82:59] Tell me, what do you have to do?
+[83:01] Do you know the DC analysis network?
+[83:04] First of all, what will you do in DC analysis?
+[83:12] First, you will open the capacitor.
+[83:14] Right?
+[83:15] You will open all the capacitors.
+[83:19] Now, let's take out VTH.
+[83:22] I am writing it in short.
+[83:23] I will not write it completely.
+[83:24] Let's take out VTH.
+[83:26] R2 by R1 plus R2.
+[83:31] Then what did you do?
+[83:32] Let's take out RTH.
+[83:34] Do you remember the parallel between these two?
+[83:38] Did you forget?
+[83:39] Because a lot of Gajni is also present in the class.
+[83:42] Let's take this out.
+[83:43] Then what would you do?
+[83:45] You would put KVL in the input loop.
+[83:48] Then what would you do?
+[83:49] KVL in base emitter loop.
+[83:54] What would you take out from here?
+[83:57] IB.
+[83:59] And then what would you take out?
+[84:01] IC.
+[84:03] So, sir, will we check here?
+[84:05] Active region?
+[84:06] No.
+[84:07] There is no need to check active region in Amplifier.
+[84:11] If the question is about Amplifier, then it will be active only.
+[84:15] Right?
+[84:16] It should be active.
+[84:17] Otherwise, how would Amplifier be turned off?
+[84:19] If I am telling you to tell me the gain of this circuit,
+[84:22] If I am telling you to tell me the output resistance of this circuit,
+[84:25] then it will be active only.
+[84:27] Why should we check then?
+[84:29] We have to check in questions in the biasing.
+[84:31] In biasing, it can be saturation.
+[84:34] It can be cutoff.
+[84:35] We will have to check it.
+[84:37] But not in Amplifier.
+[84:39] Amplifier will always be in active region.
+[84:45] Right?
+[84:46] And you know, there is no need to take out VCE here.
+[84:50] It is enough to take out IC.
+[84:53] It is enough to take out IC.
+[84:55] No need to go to VCE.
+[84:57] So, your step is one step less.
+[85:00] Right?
+[85:01] Your step is one step less.
+[85:03] You used to put KVL in the outer loop for VCE.
+[85:05] No need to do all that.
+[85:06] It is enough till here.
+[85:09] Now, see.
+[85:10] It has to be an AC model.
+[85:12] So, first of all, what you will do?
+[85:14] You will take out the parameter.
+[85:16] Like you will write R in
+[85:20] which is 1 plus beta Re.
+[85:23] If you want, you can take it out directly.
+[85:25] Like this.
+[85:26] Thermal voltage by I B.
+[85:29] You have just taken out I B.
+[85:31] You have just taken out I B by putting KVL.
+[85:34] So, VT by I B.
+[85:36] And here, you have to take the value of VT.
+[85:39] If it is not given, 25.9 millivolts.
+[85:43] VCE will give mostly VT.
+[85:45] If it is not given, then take this.
+[85:47] It works exactly with this.
+[85:49] Either take 26 millivolts or take 25 millivolts.
+[85:53] You take 25.9 which is exact.
+[85:56] You will take out one.
+[85:58] R naught.
+[86:00] V A by I C.
+[86:04] You have just taken out I C by putting beta I B.
+[86:07] So, first we will take out the parameter.
+[86:09] After that, it will be a model.
+[86:11] Now, learn how to make a model.
+[86:13] Tell me.
+[86:14] Make a model?
+[86:15] It will be very fun.
+[86:16] First of all, in the first step,
+[86:19] make a BJT model.
+[86:20] Forget the whole circuit.
+[86:22] Just make a BJT model.
+[86:26] Look.
+[86:27] The BJT model was like this.
+[86:29] Pay attention.
+[86:34] Just make a BJT.
+[86:36] Only for BJT.
+[86:41] And mark the terminal.
+[86:43] This base.
+[86:45] This ammeter.
+[86:47] This collector.
+[86:48] Tell me, is there any problem in this?
+[86:50] Is there any problem in this?
+[86:57] No.
+[86:58] You will make it this much.
+[87:00] You are studying this model.
+[87:02] You will make it.
+[87:04] Okay.
+[87:05] And you know that you can run this model everywhere.
+[87:07] Configuration etc. in the mountains.
+[87:09] You have to run this model.
+[87:11] Let the configuration and the oil be applied.
+[87:13] What is the configuration and what is not.
+[87:15] Now, start combining the components.
+[87:17] Now, what do you know that you have to do this VCC.
+[87:20] You have to do this VCC.
+[87:22] You have to do this VCC.
+[87:24] What do you know that you have to do this VCC.
+[87:26] Ground.
+[87:28] Okay.
+[87:29] You have to do this capacitor.
+[87:31] Short.
+[87:33] You have to do this capacitor.
+[87:35] Short.
+[87:36] So, first of all,
+[87:38] you have to do this capacitor.
+[87:40] It will be connected directly to the base.
+[87:42] Where will it be connected?
+[87:43] It will be connected directly to the base.
+[87:45] Okay.
+[87:46] So, look.
+[87:50] This is connected to the VIN.
+[87:53] Now, you have grounded the VCC.
+[87:56] You have grounded the VCC.
+[87:58] If you have grounded the VCC.
+[88:01] Then R1 and R2 will be parallel.
+[88:04] Tell me, is this clear?
+[88:06] If you have grounded the VCC.
+[88:08] Then R1 and R2 will be parallel.
+[88:10] I told you this earlier.
+[88:12] And where will it be connected?
+[88:15] It will be connected between the base and the ground.
+[88:18] Look, one terminal is connected to the base.
+[88:20] It is connected to the base.
+[88:21] Wherever the ground is,
+[88:23] it will be connected to the base and the ground.
+[88:29] Take this.
+[88:34] Okay.
+[88:35] Now, this capacitor will be short.
+[88:41] So, this emitter will be connected to the terminal ground.
+[88:44] The emitter will be connected to the ground.
+[88:47] Take this.
+[88:49] Now, this resistance.
+[88:51] It is connected to the collector.
+[88:53] It is on the ground.
+[88:55] So, where is it connected?
+[88:56] Between the collector and the ground.
+[89:02] Take this.
+[89:04] And this capacitor is short.
+[89:06] So, how is the output connected to the collector?
+[89:09] Did you understand the circuit?
+[89:11] First, I made the green circuit.
+[89:13] Which was BJT.
+[89:15] Later, external components are connected.
+[89:17] Which is red.
+[89:19] Which is red.
+[89:21] Tell me, did you understand or not?
+[89:23] Tell me quickly.
+[89:25] Did you understand?
+[89:29] Tell me quickly.
+[89:30] Did you understand or not?
+[89:34] Did you understand?
+[89:35] Making the circuit.
+[89:36] This is the challenge.
+[89:37] Will you make this in the exam?
+[89:40] Do you think you will make it in the exam?
+[89:42] If you make this in the exam,
+[89:44] then you are the king of Amplifier.
+[89:46] You are the father of Amplifier.
+[89:48] You will make it like this.
+[89:50] It is tough to make the circuit.
+[89:52] It is tough to make the circuit.
+[89:54] I also said it wrong.
+[89:55] It is tough to make the circuit.
+[89:56] It is tough to make the circuit.
+[89:58] First, make the model of BJT.
+[90:00] Mark the base emitter collector.
+[90:02] Now, connect the components that are connected here.
+[90:05] Okay?
+[90:07] Now, take out each parameter.
+[90:09] First is the input impedance.
+[90:11] When did I tell about the input impedance?
+[90:13] I told you about the input impedance.
+[90:15] Let's see from here.
+[90:17] Right?
+[90:18] After the capacitor.
+[90:20] Means from here.
+[90:23] Now, see how much resistance is coming from here.
+[90:26] Equivalent.
+[90:27] Look at it.
+[90:29] It will take 2-3 minutes.
+[90:31] Talk like a donkey.
+[90:32] It will take 2-3 minutes to make this.
+[90:34] Literally.
+[90:38] Now, tell me how much resistance is coming from here.
+[90:41] It is easy.
+[90:43] Tell me.
+[90:44] How much resistance is coming from here?
+[90:46] Tell me.
+[90:47] How much resistance is coming from here?
+[90:49] How much is coming from the circuit?
+[90:51] Wow!
+[90:52] Amman gave the correct answer.
+[90:54] R1 parallel, R2 parallel, Rn parallel.
+[90:56] These three are here.
+[90:58] This is the ground.
+[90:59] Both are connected.
+[91:00] So, both are parallel.
+[91:02] Did you understand?
+[91:04] So, input impedance is actually a resistance.
+[91:08] R1 parallel, R2 parallel, Rn parallel.
+[91:13] Chamka!
+[91:15] Tell me.
+[91:23] Take this.
+[91:25] The three are parallel.
+[91:27] Now, what are you asking?
+[91:29] Look at the output impedance.
+[91:31] Look at its value.
+[91:33] I told you to look from here.
+[91:35] From here, you have to include Rc.
+[91:37] Don't forget Rc.
+[91:39] Sometimes you say,
+[91:40] Rc is done but we won't take it.
+[91:42] It is not like that.
+[91:43] We have to take Rc.
+[91:44] Now, tell me.
+[91:46] How much impedance is coming from here?
+[91:48] Tell me quickly.
+[91:50] How much impedance is coming from here?
+[91:52] Tell me quickly.
+[91:54] It is very easy.
+[91:55] How much impedance is coming from here?
+[91:57] Rn parallel, Rc.
+[91:59] Right?
+[92:00] By the way, I will tell you the exact method of this.
+[92:04] First, zero the VIN.
+[92:06] Pay attention.
+[92:07] First, zero the VIN.
+[92:08] As soon as the VIN is zero, the I will be zero.
+[92:11] Because the supply is zero, no current will go.
+[92:13] Right?
+[92:14] If the I is zero, then the beta I will also go away.
+[92:16] Now, when the beta I is also gone,
+[92:18] then it will be Rn parallel, Rc.
+[92:21] Got it?
+[92:22] So, I am telling you.
+[92:24] What is Zout?
+[92:27] This is Vout by Iout.
+[92:32] As you can see, it is visible.
+[92:35] But if I get stuck in a circuit,
+[92:37] then do it with the basics.
+[92:39] If the VIN is zero,
+[92:41] then the I will become zero.
+[92:44] With which the beta I will also become zero.
+[92:47] So, the resistance that comes,
+[92:50] will simply be Rn parallel, Rc.
+[92:53] And do you know, it is approximately Rc.
+[92:56] Because this is Rn.
+[92:58] It is very high.
+[93:00] Usually, you know, Rn is so high,
+[93:02] that it is lost by doing an open circuit.
+[93:05] Now, there are engineers.
+[93:07] There must be ALC.
+[93:08] There must be ALC with engineers.
+[93:10] Now, if there is ALC, then what do we say?
+[93:12] Rn is very hard work.
+[93:13] Come on, let's remove it.
+[93:15] Right?
+[93:16] Let's do this.
+[93:17] We believed that Rn is high, let's remove it.
+[93:18] So, Rn is actually very high.
+[93:20] So, it comes approximately Rc.
+[93:22] Okay?
+[93:23] No, no, no.
+[93:24] There is no source on Vn,
+[93:26] which is zero to Vn.
+[93:28] Look, at any point, if you remove the Thevenin impedance,
+[93:31] then first you remove the source.
+[93:33] So, who is the source?
+[93:34] It is Vn.
+[93:35] That is why I am asking you to remove Vn here.
+[93:37] But when you are removing the input side impedance,
+[93:40] then you don't need to apply any source on the output.
+[93:42] So, you don't need to zero the output.
+[93:48] Deepankar, you can apply this model.
+[93:50] There is no problem in the common base.
+[93:52] The connection of the external elements will change.
+[93:55] There is no problem like this.
+[93:57] By the way, there is a common emitter in your exam.
+[94:00] Even if it is EC only.
+[94:02] Right?
+[94:03] Now, the voltage gain.
+[94:05] Should I make a circuit again for the voltage gain?
+[94:08] It will be easy for you.
+[94:11] Threading
+[94:25] You know what happens when you people start understanding things?
+[94:28] You feel that where can things be tough?
+[94:31] Where can they be stuck?
+[94:32] You start looking for those things.
+[94:34] There are no problems.
+[94:36] You start finding problems at times.
+[94:40] Now when I am teaching Amplifier, I used to feel scared, but now I don't feel scared, even you won't feel scared even if you agree.
+[94:47] Amplifier will be made in a good way.
+[94:52] Just believe in it.
+[94:57] Okay?
+[95:10] This is done. Okay?
+[95:22] Whose call is it?
+[95:29] Okay? Is it clear?
+[95:31] Now the first thing to understand is that this R0 and RC are parallel.
+[95:39] Do you agree that they are parallel?
+[95:41] So should I do it like this?
+[95:43] Tell me.
+[95:47] Should I write it like this?
+[95:49] You tell me.
+[95:53] Tell me.
+[95:55] Can I write like this?
+[95:57] Can I write like this?
+[95:59] Isn't it?
+[96:01] Now look at this.
+[96:03] This current
+[96:06] It must be coming like this.
+[96:08] So the polarity came like this, the voltage.
+[96:12] The current is going like this.
+[96:14] Isn't it?
+[96:16] That means there is a negative sign on V0.
+[96:18] Tell me.
+[96:19] There is a negative sign on V0.
+[96:21] There is a formula.
+[96:23] I didn't even use the GM.
+[96:26] There will be a negative sign on V0.
+[96:29] Minus beta IB.
+[96:31] RC parallel R0.
+[96:33] Okay?
+[96:35] Now look at this current IB.
+[96:39] Now these two are parallel.
+[96:41] So how much can you write IB?
+[96:43] V in by R in.
+[96:45] You will write this.
+[96:47] There is the same voltage on both the parallel.
+[96:52] So V0 is minus beta.
+[96:55] Put it instead of IB.
+[96:57] V in by R in.
+[97:00] RC parallel.
+[97:04] Now look, is it coming again?
+[97:07] Is it coming again?
+[97:09] Tell everyone.
+[97:20] Now look, if you say that R0 is much greater than RC
+[97:25] and beta is large.
+[97:30] Pay attention.
+[97:32] So parallel combination will be equal to RC.
+[97:35] If beta is large, then beta and 1 plus beta will be cut.
+[97:38] So this will come.
+[97:42] Okay? This will come.
+[97:45] Tell me, is it clear?
+[97:48] Tell me, is it clear?
+[97:50] Minus RC in by R in.
+[97:53] Minus RC in by R in.
+[97:55] Okay, whatever you do.
+[97:57] Whatever I have not studied, I am not asking for the answer.
+[98:00] Otherwise, what will you learn?
+[98:02] Whatever you do.
+[98:03] Whatever I am teaching, first learn it.
+[98:06] Is it right? The voltage gain has come.
+[98:08] Is it easy?
+[98:10] Tell me, is it easy?
+[98:12] Is there any problem?
+[98:15] Are you happy now?
+[98:16] How to make it?
+[98:18] There is no tension.
+[98:21] Now look, I will take one more case in this.
+[98:25] What if I remove the bypass capacitor?
+[98:28] Is it right?
+[98:29] What if I remove the bypass capacitor?
+[98:32] Let me tell you one thing.
+[98:34] As you can see, this is Gautam asking.
+[98:36] Sir, can electrical amplifiers skip?
+[98:40] Now look, the talent is that
+[98:42] electrical people think that
+[98:45] the current direction of output resistance.
+[98:47] Dear, when you remove output resistance,
+[98:49] then by zeroing the input,
+[98:51] you have put a voltage source here.
+[98:54] Like Thavenin.
+[98:55] Like Nityanand.
+[98:56] Like Thavenin.
+[98:57] You have put a voltage source here.
+[98:59] Okay?
+[99:00] If you have put a voltage source,
+[99:01] then if you are giving current from the voltage source,
+[99:03] then by V out by I out,
+[99:05] you will get output resistance.
+[99:07] The rest, the direction I have shown here,
+[99:09] this is according to the current source.
+[99:11] Beta IB, beta IB.
+[99:12] See, it is going in a loop like this.
+[99:15] So, it has the polarity of V naught.
+[99:17] One more thing.
+[99:18] Look here, the gain is negative.
+[99:21] What does this mean?
+[99:23] 180 degree shift.
+[99:27] This means 180 degree shift.
+[99:30] Okay?
+[99:32] Yes, brother, the rank can be good.
+[99:34] Why can't it come from YouTube?
+[99:36] Did you understand this, brother Nityanand?
+[99:39] The gain is negative.
+[99:40] And look, when I remember you in the beginning,
+[99:42] when I taught you the basics of BJT,
+[99:44] what did I tell you in the basics of BJT?
+[99:47] Okay?
+[99:48] I told you in the basics of BJT.
+[99:50] I told you, in the common emitter,
+[99:52] your 180 degree shift comes.
+[99:54] Then you asked, sir, how is this?
+[99:56] So, I said, when I will get the gain,
+[99:58] then I will show you.
+[99:59] So, you see, we proved the gain by removing the gain.
+[100:01] The gain is negative.
+[100:03] And brother, why are you saying this?
+[100:05] Can't it come from YouTube?
+[100:07] You are talking nonsense, brother.
+[100:09] Why can't it come from YouTube?
+[100:11] Yesterday, a guy was writing a comment on my video,
+[100:13] sir, I have 17 ranks from YouTube.
+[100:15] I am a weird man.
+[100:18] Let's go.
+[100:20] Now, I am saying, believe me,
+[100:22] I removed the bypass capacitor.
+[100:25] That is, now the emitter will not be grounded.
+[100:27] Let's make a model again.
+[100:29] Come on.
+[100:30] You all start making this model in your copy along with me.
+[100:34] Where is the place?
+[100:40] Let's take out some space.
+[100:42] But what's the use?
+[100:44] There is a border on the side.
+[100:48] Let's do this.
+[100:54] There will be a lot of space below.
+[100:56] Now, see, first of all,
+[100:59] what am I doing?
+[101:00] I am making a BJT model first.
+[101:04] R in.
+[101:17] Now, I will ignore R0.
+[101:19] But still, I am showing you.
+[101:21] If I don't ignore it, it will take a long time.
+[101:23] So, I will ignore R0.
+[101:25] I am also LC like you.
+[101:28] Now, see, this is the base.
+[101:30] This is the collector.
+[101:31] This is the emitter.
+[101:32] So, the terminal of the emitter,
+[101:34] you will have to show an RE here.
+[101:40] The base will have R1 parallel R2.
+[101:48] And the terminal of the base
+[101:52] will have a V in.
+[101:55] On the collector,
+[102:00] you will have an RC.
+[102:10] Okay.
+[102:11] This is the model.
+[102:13] Tell me, did everyone make this?
+[102:17] Tell me quickly.
+[102:19] Did everyone make this?
+[102:28] Tell me quickly.
+[102:31] This is the model.
+[102:33] Now, let's do one thing.
+[102:35] Let's ignore R0.
+[102:38] The analysis will be simplified a little.
+[102:40] Assume
+[102:42] R0 is high.
+[102:47] Ignore R0.
+[102:50] Okay.
+[102:52] Ignore R0.
+[102:54] Is it okay?
+[103:00] Look, I will do it like this.
+[103:02] So that you don't forget
+[103:05] that I was here, but I ignored it.
+[103:08] Okay.
+[103:09] Now, see, this thing
+[103:11] is not so simple to get
+[103:13] input resistance here.
+[103:16] So, first of all, I will talk about the voltage gain.
+[103:19] Let's start with the voltage gain funda.
+[103:22] I am saying, look, this beta IB came from here.
+[103:26] That is, it must be coming like this.
+[103:28] Beta IB.
+[103:29] If it is coming from below, it will be plus or minus.
+[103:32] So, what will you write V0?
+[103:35] You will write V0
+[103:37] minus beta IB
+[103:39] into RC.
+[103:41] You will write this.
+[103:42] Minus beta IB into RC.
+[103:46] Now, look here.
+[103:48] If you want to get the IB out,
+[103:50] you can't directly say this in IB.
+[103:52] It will come across VIN.
+[103:54] If you want to get the IB out, you will have to see this.
+[103:56] Look, IB came from here.
+[103:57] Beta IB came from here.
+[103:59] So, the current went here.
+[104:00] 1 plus beta IB.
+[104:03] Okay.
+[104:04] Now, you put KVL from here.
+[104:08] Put KVL like this.
+[104:09] What will you do?
+[104:10] VIN
+[104:12] minus IB
+[104:16] RN
+[104:18] minus 1 plus beta IB
+[104:21] into RE.
+[104:24] So, what can you do from here?
+[104:26] You can get the IB out from here.
+[104:29] I understood this.
+[104:30] Both the currents are going in RE.
+[104:42] Now, when you substitute IB in V0
+[104:55] when you take out V0 by VIN
+[105:02] only purely network analysis is going on.
+[105:07] Now, you also know how much is RN.
+[105:09] RN was 1 plus beta RE.
+[105:12] You already know this.
+[105:17] Okay.
+[105:19] Wait a minute, my brother.
+[105:39] Okay.
+[105:49] Okay.
+[105:50] It is clear up to here.
+[105:52] Now, look at this.
+[105:53] If you say that beta is large
+[105:56] if you say that beta is large
+[106:00] then how much is your gain?
+[106:04] You cut beta and 1 plus beta.
+[106:06] Okay.
+[106:08] This is here.
+[106:11] It is already earning the magnitude of the gain.
+[106:14] Tell me.
+[106:16] When the bypass capacitor was there
+[106:19] then RC by small RE was coming.
+[106:23] Then it was RC by small RE.
+[106:26] Now, the denominator has increased.
+[106:28] So, this is what we said that the gain reduces.
+[106:31] This is gain reduces.
+[106:34] Now, Chamka, I told you directly
+[106:36] that it works like negative feedback
+[106:38] and the gain increases.
+[106:40] Now, you understood that the gain is decreasing.
+[106:43] Tell me.
+[106:44] The gain is decreasing.
+[106:47] Tell me quickly.
+[106:51] Is this clear?
+[106:58] Yes.
+[107:00] It will come.
+[107:01] The mail will come.
+[107:03] For proof.
+[107:04] We will take some solid proof.
+[107:06] It will come.
+[107:07] Why are you taking tension?
+[107:10] Because of negative, your gain has decreased.
+[107:14] Sir, there is a top 500 rank in the last combat.
+[107:16] Still, we didn't get any reward.
+[107:18] We didn't get the refund of Rs. 3000 which we were going to get.
+[107:21] Now, what to do with 30%?
+[107:23] It will come.
+[107:24] The refund of the gate will come.
+[107:25] Wait for a while.
+[107:27] If you start taking the admit card
+[107:29] then you should get the admit card.
+[107:32] You will get cash randomly.
+[107:34] Come, let's count the amount of notes.
+[107:36] This is not possible.
+[107:37] Now, come on the input impedance.
+[107:39] On the input impedance.
+[107:41] Now, what will happen in the input impedance?
+[107:43] Look.
+[107:44] In the input impedance, the input voltage
+[107:47] has to be current.
+[107:49] Okay?
+[107:50] I will make the input side circuit again.
+[107:53] Just a little.
+[107:54] Just a little.
+[107:58] This is right.
+[107:59] Today, a lot of children are passing time.
+[108:02] I don't know what they are doing.
+[108:06] Have you started to think that this time also
+[108:08] they will postpone the gate?
+[108:10] Why?
+[108:11] No one has been able to postpone the gate for 2 years.
+[108:14] Have you ever been drunk that you will postpone it?
+[108:20] That is why you are shouting.
+[108:22] See, this is the circuit.
+[108:43] See, I say this.
+[108:52] What will happen if I in?
+[108:57] I1 plus IB.
+[109:00] Okay?
+[109:02] I1 will be
+[109:05] input voltage by
+[109:08] R1 parallel R2.
+[109:10] Now, how much current will go in RE?
+[109:14] 1 plus beta IB.
+[109:17] So, when you put the KVL from here,
+[109:23] what will you write in the KVL?
+[109:44] This is right.
+[109:47] Do you know, I will tell you a line.
+[109:49] A good one.
+[109:52] See, which RE was connected to the terminal?
+[109:56] Which RE was connected to the terminal, son?
+[109:58] On the emitter.
+[110:00] Which was connected to the emitter?
+[110:02] So, when the resistance was coming on the emitter,
+[110:05] when we took it to the base,
+[110:07] when we took it to the base,
+[110:09] how much did it become?
+[110:10] 1 plus beta RE.
+[110:12] And you think the same way
+[110:13] when I taught you the model.
+[110:15] Wait a minute.
+[110:16] Wait a minute.
+[110:22] Look at this.
+[110:23] When this resistance was in the emitter,
+[110:25] how much did it become RE?
+[110:27] When it went to the base,
+[110:28] how much did it become?
+[110:30] 1 plus beta RE.
+[110:31] That is, when any resistance
+[110:33] goes from the emitter,
+[110:35] son, it multiplies with 1 plus beta.
+[110:38] Do you understand?
+[110:39] It multiplies with 1 plus beta.
+[110:42] Do you understand?
+[110:47] So, what are we saying?
+[110:49] While.
+[110:50] Look, remember this rule.
+[110:52] It will work like a shortcut in the future.
+[110:55] While referring our resistance
+[110:59] from emitter to base,
+[111:07] multiply by
+[111:09] 1 plus beta.
+[111:17] You multiply it with 1 plus beta.
+[111:20] So, directly you take it,
+[111:23] multiply it with 1 plus beta
+[111:25] and add it to the Rn.
+[111:28] You add it to the Rn.
+[111:31] The thing is,
+[111:32] as we refer in Transformers,
+[111:34] you can refer it in BJT
+[111:37] by multiplying with 1 plus beta.
+[111:40] Now, look,
+[111:41] I in will be the sum of both.
+[111:45] I in will be the sum of both the currents.
+[111:48] It was fun to see this rule.
+[111:51] Now, if you want to bring the emitter
+[111:53] to the base,
+[111:54] then directly take it,
+[111:55] multiply it with 1 plus beta.
+[111:58] So, look, when you take V in by I in,
+[112:10] then it will become a parallel combination.
+[112:13] R1, parallel R2,
+[112:15] I am writing it down in parallel.
+[112:17] Third thing,
+[112:18] Rn plus.
+[112:22] Do you understand?
+[112:23] The three of them are parallel.
+[112:25] Do you know why they are parallel?
+[112:27] If you do I upon V,
+[112:29] that is 1 by resistance,
+[112:31] then 1 by resistance is 1 by resistance
+[112:33] plus 1 by another resistance.
+[112:35] So, it is parallel.
+[112:37] If you do I by V,
+[112:39] then take V down.
+[112:41] If you take V down,
+[112:42] then 1 by resistance is done.
+[112:44] Think like this.
+[112:46] And the output impedance,
+[112:48] you will tell directly that
+[112:49] by looking at the circuit,
+[112:50] this is simple RC.
+[112:53] Look.
+[113:00] The light,
+[113:01] this is simple RC.
+[113:05] Is RC clear?
+[113:08] Okay,
+[113:09] did you understand all these things?
+[113:11] Come on then,
+[113:12] I will get this one tomorrow,
+[113:13] the emitter follower one.
+[113:15] The rest, look,
+[113:16] these are your questions,
+[113:17] you people put these questions.
+[113:19] I will discuss some of these questions
+[113:21] tomorrow,
+[113:22] the rest when I discuss the assignment,
+[113:23] then I will do it.
+[113:24] So, we will continue after this.
+[113:26] And this is your assignment.
+[113:28] Okay.
+[113:29] What do you have to do as homework today?
+[113:31] You can put these questions
+[113:33] in what I have given.
+[113:35] And apart from this,
+[113:36] what will you do today?
+[113:37] What I have made you derivation,
+[113:39] you will see this derivation
+[113:41] by yourself once.
+[113:42] Okay.
+[113:43] Dear,
+[113:44] I am telling you,
+[113:45] where you will get the assignment,
+[113:47] Rishabh, wait.
+[113:48] Now look,
+[113:49] when you go on this link,
+[113:50] here you will get free classes of my
+[113:52] Unacademy app.
+[113:53] In this,
+[113:54] go to gate PYQ by AIR1.
+[113:56] You can practice the PYQ
+[113:58] of diode BJT there.
+[114:00] And if you join Unacademy right now,
+[114:02] then you will get 20% off.
+[114:05] Okay.
+[114:06] It is available till the end of this month.
+[114:08] And the new batch is starting,
+[114:10] dear.
+[114:11] I will give you complete details about the new batch
+[114:13] in today or tomorrow,
+[114:14] which is going to start a new course
+[114:16] for the plus children,
+[114:19] whose name is Brahmastra Plus.
+[114:21] Okay.
+[114:22] And look,
+[114:23] if you take a distance learning program,
+[114:25] in which you are getting test series
+[114:27] and study material,
+[114:29] then it is also 20% off.
+[114:31] If you come to Unacademy,
+[114:33] then there are two subscriptions for you,
+[114:34] plus and iconic.
+[114:35] Both are top teachers.
+[114:36] In both,
+[114:37] you get uploaded on the study material app.
+[114:40] You get test series.
+[114:42] But what do you get extra in iconic,
+[114:43] dear,
+[114:44] custom doubt solving.
+[114:45] If there is a doubt in any new question,
+[114:47] then we will make a video solution for it.
+[114:49] We will reach the notes at home.
+[114:51] You will get one-to-one guidance.
+[114:53] Okay.
+[114:54] You will get a strategy study plan
+[114:56] and interactive open house session.
+[114:58] Dear,
+[114:59] the non-technical divya of ESC,
+[115:01] you have to see it in a recorded form on the platform.
+[115:03] And look,
+[115:04] what you just have to do is,
+[115:05] while joining Unacademy,
+[115:06] you have to decide the plan,
+[115:08] the duration
+[115:09] and you have to use the code
+[115:11] Ankit E S E.
+[115:13] Okay.
+[115:14] And you will see, dear,
+[115:15] if you look at the results,
+[115:16] the results,
+[115:17] we have produced in the electrical way
+[115:19] of last year,
+[115:20] in the top 10,
+[115:21] we have taken out 6 anchors.
+[115:23] Okay.
+[115:24] And here you can apply the code
+[115:25] Ankit E S E,
+[115:26] so that you can prepare for my guidance.
+[115:28] And next year,
+[115:29] your photo will also be applied here.
+[115:31] And if there is a financial issue,
+[115:33] then you can take it on EMI.
+[115:34] Here,
+[115:35] you have to pay month-on-month fees.
+[115:36] EMI is approved in 2 hours.
+[115:38] Only the pan card,
+[115:39] you have to apply the adhar card.
+[115:41] That too,
+[115:42] of any member in the family,
+[115:43] whose salary comes.
+[115:45] Dear,
+[115:46] we are not doing anything on YouTube
+[115:48] for non-tech.
+[115:49] Our non-tech teachers
+[115:50] are not on YouTube.
+[115:51] And look,
+[115:52] this is the latest batch
+[115:53] of 2024,
+[115:54] in which we have started
+[115:55] the Maths.
+[115:56] And the latest batch of 2023
+[115:58] is coming,
+[115:59] Brahmastra Plus.
+[116:00] I will tell you about that.
+[116:01] So Brahmastra batch will go on YouTube.
+[116:03] Brahmastra Plus will go on your
+[116:04] Anacademy app.
+[116:06] And this is your telegram channel,
+[116:08] where you get all the details.
+[116:10] You won't miss any lecture here.
+[116:13] If there is any query,
+[116:14] you can call on the number of my team.
+[116:16] You can press the two kids on YouTube,
+[116:18] plus the one on Iconic.
+[116:20] And on the community,
+[116:21] you will get its PDF,
+[116:22] in which the assignment is attached.
+[116:24] Dear,
+[116:25] here you have to go on the
+[116:26] Anacademy app homepage.
+[116:28] Click on the community,
+[116:29] I will get it on Discover.
+[116:30] Dear,
+[116:31] if the website of Powers.Chamka is telling,
+[116:33] I will talk about it tomorrow.
+[116:34] Sorry,
+[116:35] I will talk about it tomorrow.
+[116:36] By the way,
+[116:37] which link are you running,
+[116:38] Southwick Powers.Chamka,
+[116:39] are you running this?
+[116:41] bit.ly-slash-ankit-ps.
+[116:50] If you are going on this link,
+[116:51] then you will get Powers.Chamka here.
+[116:53] Okay?
+[116:54] So, thank you everyone.
+[116:55] Thanks a lot.
+[116:57] Okay?
+[116:58] So, now we will meet tomorrow,
+[116:59] at the same time,
+[117:00] at the same place.
+[117:01] And tomorrow, we will continue
+[117:02] the amplifier further.
+[117:03] I hope that today,
+[117:04] you will have less fear of the amplifier.
+[117:07] And we will take it to the next level.
+[117:09] But tomorrow.
+[117:10] Okay?
+[117:11] So, the questions that you have
+[117:12] to practice today,
+[117:13] you should practice all of them.
+[117:16] And you will clear all the things.
+[117:19] Deepankar, dear,
+[117:20] if you want to see the lecture numbering,
+[117:22] then you will get the lecture numbering
+[117:24] in the notes.
+[117:25] I am uploading the notes to the community.
+[117:28] Okay?
+[117:29] Come on.
+[117:30] Thank you everyone.
+[117:31] Thanks a lot.

@@ -1,0 +1,62 @@
+Title: BJT Amplifier Solved Problem | Quiz # 290
+URL: https://www.youtube.com/watch?v=yeh-AFtR5MQ
+Source: Local Whisper (base)
+
+[00:00] So, in this question, we have been given this transistor circuit and for the given circuit,
+[00:12] we have been asked to find the voltage gain that is V out divided by V s. So, to find the
+[00:17] voltage gain, first of all, we need to draw a small signal equivalent of the given circuit
+[00:22] and for that, first of all, we need to know the value of this transconductance and as you
+[00:27] are aware, this transconductance gm can be given as I c divided by V t. And to find that,
+[00:34] first of all, let us do the DC analysis. So, for the DC analysis, all these capacitors
+[00:40] will act as an open circuit and in this condition, the equivalent circuit would look like this.
+[00:47] So, as you can see, it is the voltage divided by s and this voltage divided by s can be
+[00:53] equivalent represented like this, where this V t h is the thavian and secundant voltage
+[00:59] and the RT h is the thavian and secundant resistance, which is seen through the base terminal.
+[01:04] So, this V t h can be given as 15 kilo ohm divided by 15 kilo ohm plus 27 kilo ohm times
+[01:16] 9 volt, that is equal to 3 point 21 volt, while this thavian and secundant resistance is
+[01:23] the parallel combination of this 15 kilo ohm and the 27 kilo ohm, that is equal to 9 point
+[01:32] 6 for volt. That means, if you see the equivalent circuit, then it will look like this. So, for
+[01:40] the given circuit, now let us find the character current and to find that, first of all, let
+[01:45] us find the base current. So, let us apply the KVL in this loop. So, applying the KVL,
+[01:51] we can write 3 point 21 minus 9 point 64 kilo ohm times I b minus V b minus I e times
+[02:03] I e that is minus I e times 1 point 2 kilo ohm is equal to 0. And as you know, this emitter
+[02:12] current is equal to b tab plus 1 times I b that is equal to 1 0 1 times I b. So, from this,
+[02:21] we can say that 3 point 21 minus 0.7 is equal to I b times 9 point 64 plus 1 0 1 times 1 point
+[02:35] 2 kilo ohm. That means, I b is equal to 3 point 21 minus 0.7 divided by 1 0 1 times 1 point
+[02:45] 2 kilo ohm plus 9 point 64 kilo ohm that is equal to 19 point 1 at micro ampere. And the
+[02:55] collector current I c is equal to beta times I b that means, collector current I c is equal to
+[03:02] 100 times 19 point 1 at micro ampere that is equal to 1 point 918 milli ampere. And once we know
+[03:13] the value of this collector current, then we can easily find the trans conductance that means,
+[03:18] trans conductance gm is equal to I c divided by V t. And here we have been given that this V t
+[03:27] is equal to 25 milli volt that means, trans conductance is equal to 1 point 918 milli ampere
+[03:34] divided by 25 milli volt that is equal to 0.0767. Now, once we know the value of the trans
+[03:44] conductance, then we can find the small signal equivalent circuit of the given circuit. And to
+[03:50] find the small signal equivalent circuit, we can replace all the capacitors by the short circuit.
+[03:55] And we can consider all the DC voltage sources as 0. And after that, we can replace this BJT
+[04:02] by the small signal model. So, if you see the small signal equivalent circuit, then it will look
+[04:08] like this. So, here these two resistors R1 and R2 are 27 kilo ohm and the 15 kilo ohm. Now,
+[04:17] since this bypass capacitor gets short circuited, so this emitter resistor will also get short circuited.
+[04:23] And here, this load resistor RL and this resistor RC will come in parallel. Now, here if you
+[04:31] observe that there is also output resistance, because here we have been given the value of the
+[04:37] early voltage. So, this output resistance can be given as this early voltage divided by collector
+[04:45] current that is equal to 100 volt divided by 1 point 918 milli ampere that is equal to 52.13 kilo ohm.
+[04:55] So, once we have this small signal equivalent circuit, then from this we can find the voltage
+[05:01] circuit. So, here this output voltage V out can be given as V out is equal to minus IC times
+[05:11] RO parallel RC parallel RL that is equal to minus GM times V pi times RC parallel RL parallel
+[05:23] RL that means minus 0.0767 times V pi times 2 kilo ohm in parallel with 2.2 kilo ohm in
+[05:35] parallel with 52.13 kilo ohm that is equal to minus 0.0767 times V pi times 1 0 27 ohm. So,
+[05:49] from this we can say that this V out is equal to minus 78.77 times V pi. So, here to find the
+[05:59] V out divided by V s, we need to find the expression of the V pi in terms of the V s. Now, here this V
+[06:07] pi can be given as Z in divided by Z in plus RS times V s, where this Z in is the input impedance
+[06:18] which is seen through this side. That means this Z in is equal to R1 parallel R2 parallel R pi.
+[06:27] Now, we already know the value of this R1 parallel R2 that is the 15 kilo ohm in parallel with 27
+[06:34] kilo ohm that is equal to 9.64 kilo ohm and here this R pi is equal to beta divided by GM that is
+[06:43] equal to 9.64 kilo ohm in parallel with 100 divided by 0.0767 that means Z in is equal to 9.64 kilo ohm
+[06:57] in parallel with 1.303 kilo ohm that is equal to 1.142 kilo ohm that means from this we can say that
+[07:09] this V pi is equal to 1.142 kilo ohm divided by 10 kilo ohm that is the value of this RS plus 1.142
+[07:19] times V s. So, let us put the value of this V pi in the output expression that means V out is equal
+[07:28] minus 78.77 times 1.142 divided by 11.142 times V s or from this we can say that this V out
+[07:40] divided by V s is equal to minus 8.07. So, this will be the value of the voltage gain.
+[07:48] So, from this we can say that for the given circuit the voltage gain V out divided by V s is equal
+[07:55] minus 8.07. Now here depending on your approximation your answer can vary from minus 8 to minus 8.2
+[08:04] but I hope you got the general overview how to get the voltage gain.

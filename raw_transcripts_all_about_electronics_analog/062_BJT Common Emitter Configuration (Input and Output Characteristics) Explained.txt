@@ -1,0 +1,172 @@
+Title: BJT: Common Emitter Configuration (Input and Output Characteristics) Explained
+URL: https://www.youtube.com/watch?v=KynKHr2cXgk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the common emitter configuration of the BJT.
+[00:22] So this common emitter configuration is the frequently used configuration of the BJT.
+[00:27] And in fact, for most of the time when the BJT is used for the amplifier, then it is
+[00:33] used in this configuration.
+[00:36] Now in this configuration, the emitter terminal is common between the input and the output
+[00:41] side.
+[00:43] That means in this configuration, the input is applied between the base and the emitter
+[00:48] terminal and the output is measured between the collector and the emitter terminal.
+[00:55] And here, to use the BJT as an amplifier, the base emitter junction is far biased while
+[01:01] the collector base junction is reversed biased.
+[01:04] And schematically, it can be represented like this.
+[01:09] And here, if you see the direction of the currents, then it will look like this.
+[01:16] So here, this base current IB is the input current while this collector current IC is the
+[01:21] output current.
+[01:23] Similarly, this voltage VB is the voltage on the input side while this voltage VC is the
+[01:30] voltage on the output side.
+[01:33] Now considering these DC biasing voltages are already applied, if we apply the sine wave
+[01:39] between this base and the emitter terminal, then we will get the amplified output between
+[01:44] this collector and the emitter terminal.
+[01:47] Now in this configuration, to understand the behavior of the device, we need to understand
+[01:52] the two types of characteristics.
+[01:55] One is the input characteristics and the second is output characteristics.
+[02:00] So this input characteristics defines the relationship between this base current IB and
+[02:05] the voltage VB.
+[02:07] Similarly, this output characteristics defines the relationship between this collector
+[02:12] current IC and the voltage VCE.
+[02:15] So first of all, let us see the input characteristics.
+[02:20] So in this input characteristics, different IB versus VB cows are shown for the different
+[02:25] values of VCE.
+[02:28] Now if you look this cows, then they are similar to the forward characteristic of this
+[02:32] pain junction diode.
+[02:34] Because if you look over here, here the base emitter junction on the input side is forward
+[02:38] biased.
+[02:40] And one more thing if you observe over here, as the value of VCE increases, this base current
+[02:45] IB reduces.
+[02:47] So let us understand the reason behind it.
+[02:50] Now here, this voltage VCE can be given as voltage VCE plus voltage VB.
+[02:58] That means the voltage between this collector to base terminal and the voltage between base
+[03:03] and emitter terminal.
+[03:06] Now for the fixed value of VB, if we increase this value of VCE, then this voltage VCE
+[03:12] will also increase.
+[03:15] And as the value of VCE increases, the reverse bias which is applied between the collector
+[03:20] and base terminal will also increase.
+[03:23] So let us say for some voltage VCE, the depression region is created at the collector to base
+[03:29] junction.
+[03:31] And now as we increase the value of VCE, then this depression region will get wider.
+[03:37] So due to that, the effective base width will reduce.
+[03:42] And due to that, now the probability of recombination in this base region will reduce.
+[03:47] And due to that, most of the electrons will get collected at the collector terminal.
+[03:52] So due to that, this base current IB will reduce.
+[03:56] So we can say that as the value of VCE increases, this base current IB will reduce.
+[04:04] And due to that, we are getting this type of cause.
+[04:07] Alright.
+[04:08] So similarly, now let us see the output characteristics.
+[04:13] So this output characteristic shows the relationship between this collector current ICE and the
+[04:17] voltage VCE.
+[04:20] So here, the different ICE versus VCE cause are shown for the different values of the base
+[04:25] current.
+[04:27] Now this curve can be divided in three regions.
+[04:30] One is the active region, the second is the saturation region and the third is cut
+[04:36] off region.
+[04:38] So one by one, let us talk about each region.
+[04:42] Now in case of the active region, as the base current IB increases, this collector current
+[04:47] ICE also increases.
+[04:49] But here, unlike the common base configuration, as the value of VCE increases, this collector
+[04:56] current ICE also increases.
+[04:59] That means here, this collector curves are not totally horizontal.
+[05:04] And the reason is that, as the value of VCE increases, then this collector to base voltage
+[05:09] VCE will also increase.
+[05:12] Because as I said earlier, this VCE can be given as voltage VCE plus voltage VCE.
+[05:19] That means as the value of VCE increases, then the width of the depletion region will also
+[05:24] increase.
+[05:26] And due to that, the effective base width will reduce.
+[05:31] And as the effective base width reduces, then the probability of recombination in this
+[05:35] base region will also reduce.
+[05:38] And due to that, more and more electrons are able to cross this base junction.
+[05:43] So due to that, we can say that, as the value of VCE increases, this collector current
+[05:48] ICE also increases.
+[05:51] Now whenever, the BJT is used as an amplifier, then it is used in this active region.
+[05:58] And in this region, this base current IB gets amplified by the factor of beta.
+[06:04] That means if IB is the input current, then the output current ICE can be given as beta
+[06:10] times IB.
+[06:12] So this beta is known as the current gain of this common-emitter configuration.
+[06:17] Now if we talk about the AC gain, then this beta AC can be given as delta ICE divided
+[06:23] by delta IB.
+[06:26] That means the change in the collector current to the change in the base current.
+[06:31] Now usually, the value of this beta AC and beta DC are not same.
+[06:36] But as they are very close to each other, often they are used interchangeably.
+[06:42] Now if we talk about the next region of operation, then it is the saturation region.
+[06:47] Now as the value of VCE reduces and it gets close to the zero, at that time, this collector
+[06:53] to base junction becomes forward biased.
+[06:56] So whenever, this collector to base junction and the base 2 emitter junction are forward
+[07:01] biased in this condition, the BJT operates in this saturation region.
+[07:07] Then if we talk about the third region of operation, then it is the cutoff region.
+[07:13] So the transistor operates in this region whenever the base current IB is zero.
+[07:18] Now in this cutoff region, if you notice over here, unlike the common base configuration,
+[07:23] here the collector current is non-zero.
+[07:26] Or we can say that in this cutoff region, the value of collector current is relatively
+[07:30] large.
+[07:31] So in case of the common base configuration, we had seen that whenever the input emitter
+[07:36] current is zero, at that time, the collector current which exists is due to the reverse
+[07:41] saturation current.
+[07:43] And we had seen that it can be given as ICBO.
+[07:46] Or we can say that it is the leakage current.
+[07:50] But in this case, that means in this common emitter configuration, whenever this current
+[07:55] IB is zero, at that time, the value of this leakage current is more.
+[08:00] So let us understand it.
+[08:02] Now in case of the common base configuration, we had seen that the collector current IC
+[08:07] can be given as alpha times IE plus ICBO, where ICBO is the reverse saturation current.
+[08:16] Now we also know that this emitter current IE can be given as IC plus IB.
+[08:23] That means we can say that this collector current IC is equal to alpha times IC plus IB.
+[08:34] And if we rearrange the equation, then we can write it as 1 minus alpha times IC, that
+[08:40] is equal to alpha times IB plus ICBO.
+[08:46] That means IC is equal to alpha divided by 1 minus alpha times IB plus 1 divided by
+[08:56] 1 minus alpha times ICBO.
+[08:59] Now we know that this alpha divided by 1 minus alpha is equal to beta.
+[09:05] And we have already derived this expression in the introductory video.
+[09:09] So we can say that this collector current IC is equal to beta times IB plus 1 divided
+[09:17] by 1 minus alpha times ICBO.
+[09:21] Now whenever this base current IB is zero, at that time, this collector current IC can
+[09:26] be given as 1 divided by 1 minus alpha times ICBO.
+[09:35] Now typically the value of alpha is very close to unity and typically it varies from 0.95
+[09:41] to 0.99.
+[09:45] That means the value of 1 minus alpha will be very small.
+[09:48] Or in other words we can say that the value of 1 over 1 minus alpha will be very large.
+[09:54] And to be precise, it will be equal to beta plus 1 times ICBO.
+[10:01] Because if you are aware, the beta can be given as alpha divided by 1 minus alpha.
+[10:08] So beta plus 1 can be given as 1 divided by 1 minus alpha.
+[10:14] So this will be the value of the leakage current whenever the base current IB is equal to
+[10:18] 0.
+[10:19] And it is defined as current ICBO.
+[10:23] That means it is the leakage current which is flowing through the collector to a mid-terminal
+[10:28] whenever the base terminal is open.
+[10:32] So this value of ICO can be given as beta plus 1 times ICBO.
+[10:39] That means here we can say that in this common emitter configuration, this leakage current
+[10:44] gets amplified by the factor of beta plus 1.
+[10:48] So let's say for a one transistor, if beta is equal to 99 and the value of ICBO is equal
+[10:55] to 1 micro ampere, in that case this current ICO will be equal to 100 micro ampere.
+[11:03] And that is why in this cutoff region there is a large leakage current.
+[11:09] Now as I said earlier, during the active region of operation, this input current gets amplified
+[11:14] by the factor of beta.
+[11:17] And this beta is known as the current gain of this configuration.
+[11:21] And whenever we connect the load between this collector to a mid-terminal, then we can
+[11:25] also obtain the voltage gain.
+[11:28] So this common emitter configuration provides the moderate current gain as well as the moderate
+[11:33] voltage gain.
+[11:35] But it provides the very high power gain.
+[11:38] And in fact that is why this configuration is frequently used for the signal amplification.
+[11:44] Now if we talk about the input and output impedance in this configuration, then they are
+[11:49] in the moderate range.
+[11:52] Now in this configuration, typically the output impedance is in the range of 50 to 100 kohms.
+[11:58] Now although it is high, but it is lower compared to the common base configuration, because
+[12:04] if you see over here in the output characteristic, this character curves are not perfectly horizontal.
+[12:11] Similarly, if we see the input impedance, then typically it is in the range of kohms.
+[12:18] And that can be found by finding the slope of this input characteristic.
+[12:22] So here, this input impedance or the input resistance can be given as delta VBE divided
+[12:29] by delta IB.
+[12:32] So in short, these are the basic properties of this common emitter configuration.
+[12:37] And we will see in detail about all these properties during the AC analysis of the BJT.
+[12:41] And in fact, at that time, we will also find the exact values of this voltage gain and
+[12:46] the input and the output impedance.
+[12:48] But for a while, just keep in mind these properties of this common emitter configuration.
+[12:53] So I hope in this video, you understood the basics of this common emitter configuration.
+[12:59] So if you have any question or suggestion, do let me know here in the comment section
+[13:03] below.
+[13:04] If you like this video, hit the like button and subscribe to this channel for more such
+[13:08] videos.

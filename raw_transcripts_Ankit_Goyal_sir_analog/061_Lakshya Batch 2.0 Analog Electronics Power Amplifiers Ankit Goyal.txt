@@ -1,0 +1,2733 @@
+Title: Lakshya Batch 2.0 | Analog Electronics | Power Amplifiers | Ankit Goyal
+URL: https://www.youtube.com/watch?v=cRg2b6ELdEk
+Source: Local Whisper (GPU Translation)
+
+[00:00] You
+[00:30] You
+[01:00] You
+[01:31] You
+[01:38] Now tell me, do you think the audio will be completely clear to me?
+[01:43] So, what was I discussing with you guys that we were talking about this for a long time.
+[01:49] Sir, when will there be power amplifiers? Will there be power amplifiers or not?
+[01:53] So, we are going to do power amplifiers.
+[01:56] And this session is going to be your last session of Analog electronics.
+[02:01] After which, your syllabus will be completed full and final for gate engineering services.
+[02:08] If you appear in any other exam, then you can easily crack it.
+[02:12] You will not face any kind of problem, okay?
+[02:16] And I hope that till now, the journey of our Analog, you guys must have enjoyed it a lot.
+[02:23] And now, even for electrical engineers, this would have become a shock for them, Analog.
+[02:31] That yes, Analog can be done through a network.
+[02:34] There is nothing to be afraid of.
+[02:37] Do these changes come?
+[02:39] Tell me quickly.
+[02:41] Do these changes come with your thoughts on this subject?
+[02:47] Supriya, I think you did not see the last session.
+[02:50] I had taken it with Saurabh sir.
+[02:52] Please watch that video once.
+[02:54] You will get an idea of what is going to happen on YouTube.
+[02:57] What are the planning of the things.
+[02:59] I have told everything in the session of last night.
+[03:02] Come on.
+[03:04] Dear, whatever kids want to take an academy test series,
+[03:08] there is good news for them.
+[03:10] What we have done is, we have launched a subscription for a 4 month test series.
+[03:15] You can buy it from Ankith ESE code.
+[03:18] You are getting this 4 month test series for only Rs. 499.
+[03:24] So, you can quickly purchase it.
+[03:27] And you can give all the tests.
+[03:30] In this, you will get 70 tests in electrical as well as in ECE.
+[03:36] In which, part test, subject test, multi-subject test, mock test, all the things are included.
+[03:42] So, there is no better opportunity for you.
+[03:46] If you start giving tests from now on,
+[03:48] you can purchase an academy test series for only Rs. 500.
+[03:52] Let's go.
+[03:53] So, let's come to today's topic.
+[03:55] That is Power Amplifier.
+[03:58] See, sometimes we use multi-stage amplifiers.
+[04:03] When we have to deliver more power to the load.
+[04:06] You understand multi-stage.
+[04:08] Where the output of one amplifier is the input for the other amplifier.
+[04:13] Then the output of that is the input for the third amplifier.
+[04:17] When we apply an amplifier like this after the amplifier,
+[04:21] that is said to be a multi-stage amplifier.
+[04:25] Now, this large power can be of two types.
+[04:28] Either you have to give a large current in a small resistance.
+[04:33] Or you have to give a high voltage in a big resistance.
+[04:37] That is, either a high current to a small resistance.
+[04:41] Or a high voltage to a large resistance.
+[04:47] So, whenever we need large output power,
+[04:51] in such a scenario, we make use of the multi-stage amplifier.
+[04:56] Now, in multi-stage amplifier, the last stage is called the output stage.
+[05:02] That is where our power amplifier is located.
+[05:05] If you remember, when I taught you O-Pamp,
+[05:09] I explained the circuit of O-Pamp.
+[05:11] The first stage was the dual input balanced output differential amplifier.
+[05:16] The second stage was the dual input unbalanced output.
+[05:19] The third stage was the level translator.
+[05:22] And the fourth stage was the output stage.
+[05:25] Your power amplifier.
+[05:28] So, this power amplifier is used as the last stage of the multi-stage amplifier.
+[05:34] Sir, why is that?
+[05:36] Because, see what happens when the signal passes through three or four stages
+[05:40] and reaches the final stage.
+[05:43] So, the signal is not taken as a small signal.
+[05:46] The amplitude of the signal is increased to that point.
+[05:50] And it will be called as a large signal.
+[05:53] And these large signal amplifiers are said to be power amplifiers.
+[06:01] So, what are the parameters important in the output stage, dear?
+[06:06] That its output resistance is at least so that more signal reaches the load.
+[06:12] And it maintains the linearity.
+[06:19] It maintains the linearity in the output signal.
+[06:22] That means
+[06:34] less distortion.
+[06:36] Linearity means that output is proportional to input.
+[06:45] So, at least you are distorting in case of the output signal.
+[06:50] But you will learn this in this lecture.
+[06:54] This linearity funda is a minimum distortion funda.
+[06:58] And it makes our efficiency suffer.
+[07:02] And it makes the conversion efficiency low.
+[07:06] I will explain it to you.
+[07:08] You will realize all these things.
+[07:10] Now, look at an example here.
+[07:13] It is a multi-stage amplifier.
+[07:15] Suppose the input is very small.
+[07:18] It is a 1 microvolt.
+[07:20] The gain of 100 is 100 microvolt.
+[07:23] And the gain of 100 is 10 to the power of 4 microvolt.
+[07:28] You can call it as 1 millivolt.
+[07:31] And the gain of 100 is 10 millivolt.
+[07:39] Not 0.1, but 10 millivolt.
+[07:44] And this is 1 volt.
+[07:46] So, if you look at the input of this last stage,
+[07:50] the AC signal has become 1 volt while being amplified.
+[07:54] And this is 1 volt.
+[08:08] This is the large signal.
+[08:11] This is your large signal.
+[08:14] This is the large signal that you use for amplifiers.
+[08:17] That is your power amplifier.
+[08:20] Rahul, you can also give the test series on the app.
+[08:24] And you can also give the test series on the laptop.
+[08:27] Look, when it comes to power amplifiers,
+[08:30] the most important parameter is the conversion efficiency.
+[08:38] What does efficiency mean here?
+[08:40] It means that the last stage is giving AC power on the output
+[08:45] divided by DC power.
+[08:48] Think of something like this in rectifier.
+[08:51] In rectification efficiency, DC power is given by AC power.
+[08:55] But here, AC power is given by DC power.
+[09:00] So, finally, you get AC power on the output
+[09:04] divided by DC power.
+[09:07] That is the conversion efficiency.
+[09:10] So, when we talk about power amplifier,
+[09:12] because it is using large signals,
+[09:15] because it is dealing with higher power,
+[09:18] when it deals with more power,
+[09:20] then efficiency becomes very important.
+[09:23] When we read BJT, MOSFET, OPAMP,
+[09:26] and all these amplifiers,
+[09:28] these are the small signal amplifiers.
+[09:31] There, efficiency is not important.
+[09:33] There, power is in milli watt and micro watt.
+[09:36] So, even if there is 10% efficiency, it is not bad.
+[09:39] Because power is very very low.
+[09:42] But when it comes to power high,
+[09:44] then efficiency is less there.
+[09:47] If there is a large amount of power waste,
+[09:50] then efficiency matters there.
+[09:54] Look, there are two types of amplifiers.
+[09:56] Small signal and large signal.
+[09:58] What is in small signal?
+[10:00] The amplitude of input signal is quite small.
+[10:03] Micro volt or milli volt.
+[10:06] Large signal means power amplifier.
+[10:09] It comes in volt as I just showed you.
+[10:12] It will always work in linear region.
+[10:15] That is, if you make it from BJT,
+[10:17] then always it will operate in active region.
+[10:20] But large signal amplifier
+[10:22] works in linear as well as non-linear.
+[10:25] That is, along with active,
+[10:27] saturation and cut-off can also be done.
+[10:30] What are the parameters here?
+[10:32] Current gain, voltage gain,
+[10:35] input resistance, output resistance,
+[10:38] power gain and phase shift.
+[10:41] All these things are discussed.
+[10:43] And in large signal,
+[10:45] it is discussed about efficiency,
+[10:47] AC power, DC power,
+[10:50] and harmonics.
+[10:52] Sir, where did the harmonics come from suddenly?
+[10:55] What happens?
+[10:57] The large signal amplifier
+[10:59] does not have a pure sinusoidal output.
+[11:02] Its output waveform
+[11:04] is slightly distorted.
+[11:06] Because of which,
+[11:08] when its Fourier series is written,
+[11:10] then we get to see harmonics.
+[11:12] What is the sense of harmonics?
+[11:14] Whenever there is a periodic signal,
+[11:17] which is not
+[11:19] perfect sinusoid,
+[11:21] then its Fourier series is written
+[11:23] and the higher frequency terms
+[11:25] are called as harmonics.
+[11:28] So, because of those harmonics,
+[11:30] how much distortion is coming?
+[11:32] That is harmonic distortion.
+[11:34] Second thing,
+[11:35] in a small signal amplifier,
+[11:37] you had studied modeling.
+[11:38] Hybrid Pi model, RE model,
+[11:40] H model,
+[11:42] that is, you can do mathematical analysis
+[11:44] and graphical too.
+[11:46] But there is no such model here.
+[11:48] These amplifiers
+[11:50] enter into the non-linear region
+[11:52] and in the non-linear,
+[11:54] you cannot make a circuit model.
+[11:56] If you remember,
+[11:58] when we talked about small signal modeling,
+[12:00] we discussed one thing at that time.
+[12:02] What do we do?
+[12:04] We take a small variation
+[12:06] about the Q point.
+[12:08] We draw a tangent there
+[12:10] and the tangent is linear.
+[12:12] On the basis of that linear,
+[12:14] we replace it
+[12:16] with a circuit.
+[12:18] That is the linear model.
+[12:20] So, that model cannot be
+[12:22] in a large signal amplifier.
+[12:24] It will also be in a non-linear region.
+[12:26] If your circuit is linear,
+[12:28] it will not be able to
+[12:30] show it like a circuit.
+[12:32] Do you understand?
+[12:34] Its AC model
+[12:36] will not be able to be made.
+[12:38] Just a minute.
+[12:54] Okay.
+[13:06] So, it is clear here
+[13:08] that all the small signal and large signal amplifiers
+[13:10] are available.
+[13:12] Now,
+[13:14] Power amplifier provides
+[13:16] sufficient power to an output
+[13:18] load to drive other power devices.
+[13:20] That is, the output
+[13:22] that comes out of the amplifier
+[13:24] can be used to drive
+[13:26] other devices.
+[13:28] Power amplifier
+[13:30] circuits are used to handle
+[13:32] large voltage and high current.
+[13:34] Large voltage
+[13:36] will handle and high current
+[13:38] will handle.
+[13:40] The main features of
+[13:42] these amplifiers are
+[13:44] the efficiency of the circuit.
+[13:46] The maximum amount of power
+[13:48] can be handled
+[13:50] for impedance matching.
+[13:52] You understand impedance matching
+[13:54] where the input and output are equal.
+[13:56] That is said to be
+[13:58] impedance matching.
+[14:00] Power amplifiers are designed
+[14:02] by our BJT.
+[14:04] They are used
+[14:06] as common emitter amplifier.
+[14:08] But remember
+[14:10] which BJT is used?
+[14:12] Power BJT.
+[14:14] For example, if you read
+[14:16] Power Electronics,
+[14:18] power amplifier is used
+[14:20] for BJT.
+[14:22] Because here,
+[14:24] there is more power and
+[14:26] high current.
+[14:28] When there is more current and voltage,
+[14:30] there is more power dissipation
+[14:32] and more heating.
+[14:34] If you want to
+[14:36] radiate that heat in the atmosphere,
+[14:38] then it is important
+[14:40] to mount all these devices on the
+[14:42] heat sink.
+[14:44] That is why, BJT is used
+[14:46] to mount these devices
+[14:48] so that it can
+[14:50] radiate its heat in the atmosphere.
+[14:52] Now let's see
+[14:54] what we do.
+[14:56] We classify amplifiers.
+[14:58] These power amplifiers
+[15:00] are divided in different categories.
+[15:02] Location.
+[15:04] Because we have to handle
+[15:06] more rating.
+[15:08] Location.
+[15:10] Because we can't handle
+[15:12] more rating MOSFET.
+[15:14] How will we do
+[15:16] impedance matching with the help of a transformer?
+[15:18] Saurav, you will understand
+[15:20] just wait a little.
+[15:22] Now see,
+[15:24] the class of amplifier,
+[15:26] class A, class B, class C,
+[15:28] class of amplifier,
+[15:30] what does it say?
+[15:32] Amount of output signal
+[15:34] which varies
+[15:36] within the
+[15:38] amplifier circuit
+[15:40] over operation over
+[15:42] one cycle.
+[15:44] Meaning, the
+[15:46] output signal varies
+[15:48] within a complete cycle.
+[15:50] It depends on its class.
+[15:52] And secondly,
+[15:54] the class is also based on this.
+[15:56] Class A, class B, class A,
+[15:58] class C.
+[16:00] It is also based on
+[16:02] what is the biasing point?
+[16:04] Where are you taking
+[16:06] the Q point of the amplifier?
+[16:08] Where are you taking it?
+[16:10] Where are you taking it?
+[16:12] Are you taking it to saturation?
+[16:14] Are you taking it to cut-off?
+[16:16] Or are you taking it to cut-off?
+[16:18] So, where is your Q
+[16:20] point?
+[16:22] It also depends, it also defines
+[16:24] different classes of
+[16:26] amplifier.
+[16:28] So, your operation,
+[16:30] son, this is
+[16:32] a complete variation
+[16:34] from linear to non-linear.
+[16:36] Means, in different classes,
+[16:38] like class A amplifier,
+[16:40] it gives purely linear operation.
+[16:42] Meaning, there is no distortion
+[16:44] in the output.
+[16:46] And the class C amplifier
+[16:48] has the most distortion
+[16:50] in it.
+[16:52] So, you will see, from purely linear
+[16:54] operation to purely
+[16:56] non-linear operation,
+[16:58] we have the entire variation.
+[17:00] Okay?
+[17:02] So, that is why we say,
+[17:04] class of amplifier is defined
+[17:06] as the length of conduction state.
+[17:08] Means, from 360
+[17:10] degree,
+[17:12] for how long
+[17:14] the amplifier is
+[17:16] conducting in one cycle,
+[17:18] like class A,
+[17:20] it conducts the entire 360 degree.
+[17:22] Class, which is
+[17:24] your B amplifier,
+[17:26] conducts less than 360.
+[17:28] There are two transistors in it,
+[17:30] both of them conduct less than 180.
+[17:32] Now, the class C
+[17:34] conducts less than 180
+[17:36] in one cycle.
+[17:38] So, the same thing is,
+[17:40] how much conduction will come
+[17:42] in every half cycle,
+[17:44] or in a complete cycle.
+[17:46] You define it as
+[17:48] class.
+[17:50] So, we will study four classes,
+[17:52] A, B, A, B and C.
+[17:54] Okay?
+[17:56] I will cover four classes,
+[17:58] A, B, A, B and C.
+[18:00] Okay?
+[18:02] So, this is the first class
+[18:04] of amplifier, which uses
+[18:06] digital circuit and
+[18:08] BJT.
+[18:10] These things are
+[18:12] studied by our electrical students
+[18:14] in Power Electronics.
+[18:16] We call them
+[18:18] switch mode power supply,
+[18:20] SMPS.
+[18:22] The devices there
+[18:24] work like that switch.
+[18:26] Means, they don't come in active
+[18:28] region.
+[18:30] So, we will study the first class
+[18:32] of amplifiers, okay?
+[18:34] Where the length of conduction state
+[18:36] will vary, that is
+[18:38] A, B, A, B and C.
+[18:40] We will cover these four types
+[18:42] of amplifiers.
+[18:44] Now, when we talk about
+[18:46] amplifier, power amplifier,
+[18:48] we need to talk about distortion here.
+[18:50] Because its output
+[18:52] doesn't follow
+[18:54] exactly the input.
+[18:56] So, the first distortion is
+[18:58] linear distortion.
+[19:00] What happens in non-linearity?
+[19:02] Suppose, Y is equal to X
+[19:04] square.
+[19:10] Now, suppose
+[19:12] you put X here
+[19:14] as input sinusoidal.
+[19:18] Okay?
+[19:22] So, what happened?
+[19:24] A square sine square
+[19:26] is
+[19:34] here.
+[19:36] So, frequency is here.
+[19:38] What did you put in input?
+[19:40] The location will be understood
+[19:42] when we cover amplifiers.
+[19:44] There is different conduction
+[19:46] of different amplifiers.
+[19:48] I will deal with each amplifier in detail.
+[19:50] You will see that conduction
+[19:52] varies there.
+[19:54] As class A
+[19:56] has a 360 degree
+[19:58] conduction, it is
+[20:00] just a common emitter amplifier.
+[20:02] In class B,
+[20:04] a small portion
+[20:06] is clipped. In class A,
+[20:08] there is a small clipping.
+[20:10] In class C, there is
+[20:12] a lot of clipping.
+[20:14] That is, there is no 360.
+[20:16] So, what happened
+[20:18] because of non-linearity?
+[20:20] When you put frequency
+[20:22] in output, you get 2 omega.
+[20:24] And you know
+[20:26] that you can get non-linear operation
+[20:28] in power amplifiers.
+[20:30] Because they always
+[20:32] don't work in active region.
+[20:34] They can go into saturation.
+[20:36] They can go into cutoff.
+[20:38] They need not always work in the active region.
+[20:40] Second is
+[20:42] frequency distortion.
+[20:44] What does this mean?
+[20:46] Your amplifier
+[20:48] is offering different frequencies
+[20:50] of the gain.
+[20:52] What is the reason?
+[20:54] Due to the capacitors in the
+[20:56] circuit. You know,
+[20:58] when we
+[21:00] read the frequency response, we saw
+[21:02] that the gain was
+[21:04] lost on low frequency and high frequency.
+[21:06] And there was only one reason behind that.
+[21:08] What was the reason?
+[21:10] The reason was that
+[21:12] the gain was reduced
+[21:14] due to the coupling and bypass capacitors
+[21:16] on low frequency.
+[21:18] Because of your parasitic
+[21:20] and load capacitances, the gain
+[21:22] was reduced.
+[21:24] Don't just come to every video
+[21:26] and read behind this.
+[21:28] Keep all the videos public.
+[21:30] Because every video is public for
+[21:32] many, many days.
+[21:34] If you are not able to follow it,
+[21:36] it only shows that you are
+[21:38] very non-sincere.
+[21:40] I mean, I have published all the videos
+[21:42] for 10-20 days.
+[21:44] And you are not able to cover even then.
+[21:46] You say that it is a free initiative.
+[21:48] When it is celebrated, we will do it.
+[21:50] What is the need for us to be consistent?
+[21:52] It is a very wrong attitude.
+[21:54] Okay.
+[21:56] So, the gain here
+[21:58] is a complex number.
+[22:00] If you remember
+[22:02] in the frequency response,
+[22:04] the gain was like this.
+[22:06] A upon 1 plus j f by f L
+[22:08] was like this.
+[22:10] So, there is a complex number there.
+[22:12] So, its magnitude and phase
+[22:14] depends on the frequency.
+[22:16] And because
+[22:18] the phase also depends on the frequency,
+[22:20] what can you understand from this?
+[22:22] That means, different
+[22:24] frequencies will have different phase
+[22:26] shift offers.
+[22:28] That is called phase distortion.
+[22:30] So, different frequencies are getting
+[22:32] different magnitudes of gain.
+[22:34] That is the frequency distortion.
+[22:36] Different frequencies are getting
+[22:38] different phase shift offers.
+[22:40] That is phase distortion.
+[22:42] Now, there is a harmonic distortion.
+[22:44] So, the signal amplitude
+[22:46] in the power amplifier is quite large.
+[22:48] Because of which
+[22:50] linear and non-linear work in both the
+[22:52] portions.
+[22:54] And because of this, its output
+[22:56] is periodic.
+[23:00] This is periodic
+[23:04] but non-synosoidal.
+[23:08] Periodic is there.
+[23:10] But there is no sinusoidal.
+[23:16] Periodic is there.
+[23:18] But there is no sinusoidal.
+[23:22] So, we can write this in the Fourier series.
+[23:24] Where there is a DC component
+[23:26] plus your AC component.
+[23:28] cost omega t
+[23:30] cost 2 omega t
+[23:32] this type.
+[23:34] Now, if we ask about
+[23:36] second harmonic distortion
+[23:38] that is B2 by B1
+[23:40] i.e. second harmonic amplitude
+[23:42] upon fundamental amplitude
+[23:44] third harmonic distortion
+[23:46] B3 by B1
+[23:48] fourth harmonic distortion
+[23:50] B4 by B1
+[23:52] If I ask you
+[23:54] what is the AC power output
+[23:56] here?
+[23:58] Fundamental AC power output
+[24:00] is B1
+[24:02] square by 2 R0
+[24:04] Sir, why have you taken
+[24:06] this? Because
+[24:08] power in resistor
+[24:14] power in resistor
+[24:16] is I Rms
+[24:18] square into R
+[24:26] So, I m by
+[24:30] root 2 square into R
+[24:32] will be like this.
+[24:34] I m square into R by 2
+[24:42] That is why 2 is coming here.
+[24:44] And the power we have written
+[24:46] is total harmonic power
+[24:48] in which DC power
+[24:50] is not included.
+[24:52] This is the total
+[24:54] harmonic power
+[24:56] Pt
+[24:58] In this, all the power of
+[25:00] harmonics is added.
+[25:02] Okay?
+[25:04] So, overall power is
+[25:06] sum of the power delivered
+[25:08] by each harmonic
+[25:10] Now, if you want
+[25:12] to take out B1 square by 2 R0
+[25:14] in common, then here
+[25:16] 1 plus B2 by B1 square
+[25:18] plus B3 by B1 square
+[25:20] Okay?
+[25:22] What will happen here? This is P1
+[25:24] This is distortion 2
+[25:26] This is distortion 3
+[25:28] So, in this way
+[25:30] the term of distortion is added
+[25:32] and the sum of
+[25:34] all the distortion squares
+[25:36] is called total harmonic distortion
+[25:38] D.
+[25:40] If you sum up
+[25:42] the sum of all the
+[25:44] harmonic distortion squares
+[25:46] that is called as the total harmonic distortion
+[25:48] and here Pt
+[25:50] will be P1 into
+[25:52] 1 plus D2
+[25:56] Now, the electricians
+[25:58] will say, Sir, total harmonic
+[26:00] distortion, this is what we
+[26:02] study in power electronics.
+[26:04] This is the total harmonic distortion
+[26:06] Okay?
+[26:10] Siva, son, if your preparation
+[26:12] is suffering because the videos are private
+[26:14] you can watch the old analog
+[26:16] playlist. Their entire content
+[26:18] is present already
+[26:20] and it is in complete English, I think
+[26:22] that will also help you
+[26:24] So, this is clear
+[26:26] See, if distortion is 10%
+[26:28] then how much total power will come
+[26:30] 1.01 into P1
+[26:32] 1.01 into P1
+[26:34] So, in this
+[26:36] you should remember
+[26:38] this much
+[26:40] You should know
+[26:42] this much portion
+[26:44] that how power
+[26:46] comes out
+[26:48] and the other part of distortion
+[26:50] should be clear
+[26:54] This should also be clear
+[26:56] Okay?
+[26:58] This is clear
+[27:00] Tell me, is everyone clear
+[27:02] The next is
+[27:04] crossover distortion
+[27:06] What is this crossover distortion
+[27:08] See, when I
+[27:10] take you to class B amplifier
+[27:12] then you will see
+[27:14] that two transistors are used
+[27:16] One transistor works
+[27:18] in positive half cycle
+[27:20] Yes, in this
+[27:22] DC power was not talked about
+[27:24] Output AC power
+[27:26] If you remember
+[27:28] I had just told
+[27:30] that when the efficiency of amplifier
+[27:32] comes out
+[27:34] then in numerator output AC power
+[27:36] comes in denominator
+[27:38] output DC power
+[27:40] So, what did we talk about?
+[27:42] We only talked about AC power
+[27:44] not total power
+[27:46] For efficiency, AC power
+[27:48] upon DC power
+[27:50] will have to be done
+[27:52] Now listen
+[27:54] When we go to class B amplifier
+[27:56] then you will see
+[27:58] two transistors are used
+[28:00] One is NPN transistor
+[28:02] One is PNP transistor
+[28:04] One transistor works in positive half cycle
+[28:06] The other transistor works in negative half cycle
+[28:08] But when this
+[28:10] switching happens
+[28:12] towards positive and negative half cycle
+[28:14] there is a dead band
+[28:16] i.e. that voltage region
+[28:18] in which no transistor
+[28:20] is on
+[28:22] So, when you switch from NPN to PNP
+[28:24] there is a certain
+[28:26] range of voltage in which
+[28:28] both transistors are off
+[28:30] That is why
+[28:32] the output is zero
+[28:34] That is called as the crossover
+[28:36] distortion
+[28:38] i.e. between positive and negative half cycle
+[28:40] there will be a small region
+[28:42] where the output and input will not be proportional
+[28:44] where the output
+[28:46] will be zero
+[28:48] you will say that the signal
+[28:50] has become a clip
+[28:52] that is called as the crossover
+[28:54] distortion
+[28:56] If you want to
+[28:58] turn on one transistor
+[29:00] PNP needs 0.7V
+[29:02] and if you want to
+[29:04] turn on the other NPN
+[29:06] then you need minus 0.7V
+[29:08] because there will be
+[29:10] between minus 0.7V
+[29:12] and 0.7V
+[29:14] both the transistors are off
+[29:18] That means the output
+[29:20] will be zero
+[29:22] So, the input
+[29:24] signal region
+[29:26] between 0.7V
+[29:28] and 0.7V
+[29:30] your output
+[29:32] will be zero
+[29:34] let me show you
+[29:36] So, basically
+[29:38] what we are saying
+[29:56] You will see
+[30:00] Look
+[30:02] here your output
+[30:04] your output
+[30:12] Here
+[30:14] your input was like this
+[30:34] So, here
+[30:36] this portion
+[30:42] between 0.7V
+[30:44] and minus 0.7V
+[30:46] If you see the output
+[30:48] in this region
+[30:50] then your output will be clip
+[30:52] almost zero
+[30:54] So, notice this region
+[30:56] this region
+[31:00] right?
+[31:02] In this region
+[31:04] your signal
+[31:06] is distorted
+[31:08] the rest is sinusoidal
+[31:10] because
+[31:12] no transistor
+[31:14] is conducting
+[31:16] I understood crossover distortion
+[31:18] because the transistor needs
+[31:20] at least 0.7V
+[31:22] to operate you
+[31:24] So, when your voltage is less
+[31:26] or
+[31:28] minus 0.7 to 0.7V
+[31:30] then your output is zero
+[31:32] because none of the
+[31:34] transistors is going to conduct
+[31:36] It is a simple thing
+[31:38] It is clear
+[31:42] So, if you want
+[31:44] not to get such distortion
+[31:46] then this threshold of 0.7V
+[31:48] should not be 0
+[31:50] but it is practically
+[31:52] not possible
+[31:54] You cannot make such a transistor
+[31:56] or such a BJT
+[31:58] for which to be forward biased
+[32:00] it should be forward biased
+[32:02] more than 0V
+[32:04] because it will be an ideal device
+[32:06] Think about it
+[32:08] it is an ideal device
+[32:10] if you want to forward bias a PN junction
+[32:12] we at least need
+[32:14] 0.7V
+[32:16] and this is not possible
+[32:18] because of this
+[32:20] and what will be the other reason
+[32:22] because of this
+[32:24] the peak to peak value will also be reduced
+[32:26] Sir, why is this peak to peak value being reduced?
+[32:28] 0.7 is subtracted
+[32:30] positive cycle
+[32:32] negative cycle
+[32:34] the drop of 0.7
+[32:36] then you got
+[32:38] the reduction of 1.4
+[32:40] What is the next problem
+[32:42] in power amplifiers
+[32:44] thermal runaway
+[32:46] or second breakdown
+[32:48] what was there in BJT
+[32:50] as the temperature increases
+[32:52] then
+[32:54] the river saturation current increases
+[32:56] due to which
+[32:58] the current of BJT increases
+[33:00] IC
+[33:02] the power dissipation increases
+[33:04] due to which more heat
+[33:06] was produced
+[33:08] and more temperature was generated
+[33:10] we used to call it
+[33:12] thermal runaway
+[33:14] and what was the main reason behind this
+[33:16] river saturation current ICO
+[33:18] BJT travels through
+[33:20] thermal runaway
+[33:22] not FET
+[33:24] so you know
+[33:26] ICO increases by increasing the temperature
+[33:28] IC increases
+[33:30] and temperature increases
+[33:32] very good
+[33:34] ICO
+[33:38] doubles
+[33:40] for every
+[33:48] 10 degree centigrade
+[33:52] rise in
+[33:54] temperature
+[33:56] okay
+[33:58] but in such a
+[34:00] MOSFET or FET
+[34:02] the temperature increases
+[34:04] due to which
+[34:06] GMR naught
+[34:12] increases
+[34:14] due to which the current increases
+[34:16] okay
+[34:18] now the thing is
+[34:20] how can we avoid
+[34:22] thermal runaway
+[34:24] the condition of avoiding
+[34:26] thermal runaway
+[34:28] is that
+[34:30] the collector to emitter voltage
+[34:32] on the Q point
+[34:34] it should be less than VCC by 2
+[34:36] the collector to emitter voltage
+[34:38] on the Q point
+[34:40] it must be less than VCC by 2
+[34:42] if you take out
+[34:44] VCE
+[34:46] then what will come
+[34:48] VCE
+[34:50] by KVL
+[34:56] VCE
+[34:58] is
+[35:00] VCC minus
+[35:02] ICRC
+[35:04] okay
+[35:06] and what we are saying is that it should be
+[35:08] before the mid of the load line
+[35:10] and here if I ask you
+[35:12] the power dissipation of the transistor
+[35:14] then you will say
+[35:16] VCE into IC
+[35:20] so if I say that
+[35:22] the power dissipation is constant
+[35:24] if the power dissipation
+[35:26] is constant
+[35:28] then VCE
+[35:30] IC is constant
+[35:32] so what does it mean
+[35:34] it means
+[35:36] that the curve
+[35:38] between
+[35:40] VCE
+[35:42] and IC
+[35:44] is a rectangular hyperbola
+[35:48] you will understand
+[35:50] that if you make
+[35:52] the curve of constant power
+[35:54] in VCE and IC
+[35:56] then you will get a rectangular hyperbola
+[35:58] and this graph
+[36:00] this is your
+[36:02] load line
+[36:06] load line
+[36:08] this is a straight line
+[36:10] having negative slope
+[36:14] this is a straight line
+[36:16] whose slope
+[36:18] is negative
+[36:22] so the curve of power
+[36:24] will be rectangular hyperbola
+[36:26] and the load line will be
+[36:28] a linear curve
+[36:30] so watch carefully
+[36:32] this is your load line
+[36:34] consider this curve
+[36:36] touching
+[36:38] so on this graph
+[36:40] it is intersecting
+[36:42] it is intersecting
+[36:44] it is not touching
+[36:46] it is not touching
+[36:48] what does it mean
+[36:50] it means
+[36:52] that the power dissipation
+[36:54] can never be 300mW
+[36:56] what we are saying is
+[36:58] since
+[37:00] load line
+[37:06] does not intersect
+[37:12] 300mW
+[37:18] power curve
+[37:22] so
+[37:24] so
+[37:26] power dissipation
+[37:28] can never be
+[37:34] can never exceed
+[37:36] 200mW
+[37:38] 200mW
+[37:42] can never exceed
+[37:44] that is why
+[37:46] when you take the rate of the transistor
+[37:48] when you take the rate of the transistor
+[37:50] when you take the rate of the transistor
+[37:52] then what will you do
+[37:54] the maximum power
+[37:56] you will take a little margin
+[38:00] maximum power
+[38:02] consider it as 10% margin
+[38:04] so this is
+[38:06] 220mW
+[38:08] so you will buy the transistor
+[38:10] from the market
+[38:12] you will get the rate of 220mW
+[38:14] you can get more
+[38:16] but not less than this
+[38:18] now see here
+[38:20] as the temperature increases
+[38:22] you know the IC increases
+[38:24] which reduces the VCE
+[38:26] and you can say that the transistor
+[38:28] goes towards saturation
+[38:30] the transistor goes towards saturation
+[38:32] now see
+[38:34] if from here
+[38:36] you start moving
+[38:42] towards higher IC
+[38:44] so you can notice one thing
+[38:46] you are going
+[38:48] from the 200mW curve
+[38:50] to the 100mW curve
+[38:52] that is
+[38:54] your power dissipation
+[38:56] is reducing
+[38:58] when the temperature increases
+[39:00] the power dissipation does not increase
+[39:02] but the power dissipation
+[39:04] is reducing
+[39:06] so we move towards the region
+[39:08] of lower power dissipation
+[39:10] you are going towards
+[39:12] less power dissipation
+[39:14] that is
+[39:16] if the transistor is designed
+[39:18] for maximum power
+[39:20] when the temperature increases
+[39:22] you will move towards
+[39:24] less power dissipation
+[39:26] so that your transistor will be safe
+[39:28] so if it is safe
+[39:30] then when the temperature increases
+[39:32] its power is decreasing
+[39:34] so it will remain safe
+[39:36] now do you understand
+[39:38] why did you choose the maximum power curve
+[39:40] tell me
+[39:42] why did you decide the rating
+[39:44] from the 200mW curve
+[39:46] because when the Q point
+[39:48] shifted from there
+[39:50] and it went towards saturation
+[39:52] then the curve
+[39:54] where we reached
+[39:56] the power of that curve was less
+[39:58] and less means
+[40:00] my transistor is safe
+[40:02] now the power we said
+[40:04] VCE into IC
+[40:06] you can write like this from KVL
+[40:08] now if you differentiate
+[40:10] the power
+[40:12] with respect to VCE
+[40:14] then VCE is coming
+[40:16] VCC by 2
+[40:18] that is
+[40:22] maximum power
+[40:24] so
+[40:28] dissipation
+[40:34] occurs
+[40:36] at
+[40:38] mid of
+[40:40] load line
+[40:46] now let me explain a very good concept
+[40:48] maximum power
+[40:50] dissipation you understood
+[40:52] it is coming in this line
+[40:54] to differentiate
+[40:56] and I have done this derivation before
+[40:58] it is not like this
+[41:00] it is not done in BJT
+[41:02] and how much maximum power dissipation
+[41:04] will be
+[41:06] VCE into IC
+[41:08] or if you put
+[41:10] VCE here
+[41:12] if you put VCC by 2
+[41:14] then VCC by 2
+[41:16] and VCC square by 4
+[41:18] so half minus one fourth
+[41:20] square
+[41:22] how did this come
+[41:24] I have put VCE into VCC by 2
+[41:26] now you understand
+[41:28] if your Q
+[41:30] point
+[41:34] if your Q point
+[41:36] stays here
+[41:38] less than VCC by 2
+[41:40] let me make it blue
+[41:42] may be you see
+[41:44] this is Q2
+[41:46] this is Q1
+[41:48] now if your temperature increases
+[41:50] listen carefully
+[41:52] the temperature will increase from Q1
+[41:54] if the temperature increases from Q1
+[41:56] then you
+[41:58] will go towards saturation
+[42:00] if you go towards saturation
+[42:04] you will understand
+[42:06] if your temperature increases
+[42:08] IC will increase
+[42:10] that means you will go from 100mW
+[42:12] to 200mW
+[42:14] so what is happening here
+[42:16] power dissipation is increasing here
+[42:20] and if you are on Q2
+[42:22] the temperature will increase
+[42:24] you will go to the left
+[42:26] if you are going from 200mW to 100mW
+[42:28] then power dissipation is decreasing
+[42:30] so which side should you be
+[42:32] on Q2 or Q1
+[42:34] you should be on Q2
+[42:40] so this is safer Q point
+[42:42] where
+[42:46] VCE
+[42:48] is less than
+[42:50] VCC by 2
+[42:52] now tell me
+[42:54] why I wrote
+[42:56] VCE must be less than
+[42:58] VCC by 2
+[43:00] tell me quickly
+[43:02] is this clear
+[43:04] tell me why I wrote
+[43:06] less than VCC by 2
+[43:08] so if you want to avoid
+[43:10] then your VCE
+[43:12] should be less than
+[43:14] VCC by 2
+[43:16] ok
+[43:18] and what should you know
+[43:20] that the rate of heat generation
+[43:22] it should always be
+[43:24] less than the rate of heat dissipation
+[43:26] that means the faster
+[43:28] your heat
+[43:30] is generated in the transistor
+[43:32] the faster
+[43:34] the atmosphere
+[43:36] should be released
+[43:38] the temperature of your transistor
+[43:40] will be maintained
+[43:42] ok
+[43:46] DpT by T
+[43:48] DT
+[43:50] should be always less than
+[43:52] DpD by DT
+[43:56] so what is this
+[43:58] this is the rate of heat generation
+[44:04] that means in the transistor
+[44:06] the heat is generated so fast
+[44:08] and this is
+[44:10] rate of heat dissipation
+[44:18] dissipation means
+[44:20] in the atmosphere
+[44:22] ok
+[44:24] how fast the atmosphere is going
+[44:26] now
+[44:28] we will cover
+[44:30] 1 by 1 classes of amplifiers
+[44:32] so see what I told you
+[44:34] what is the problem
+[44:36] non-linear distortion
+[44:38] because BJT works in non-linear region
+[44:40] frequency distortion
+[44:42] gain depends on the frequency
+[44:44] phase distortion
+[44:46] phase depends on the frequency
+[44:48] harmonic distortion
+[44:50] in which I told the distortion
+[44:52] of each and every harmonic
+[44:54] total harmonic distortion
+[44:56] output AC power
+[44:58] 5th crossover distortion
+[45:00] in crossover distortion
+[45:02] there is a dead band
+[45:04] where the output is not
+[45:06] proportional to the input
+[45:08] because of which the waveform gets distorted
+[45:10] 6th problem I told you
+[45:12] is the thermal runaway
+[45:14] for which the Q point
+[45:16] will not come
+[45:18] from the mid of the load line
+[45:20] so see the first is
+[45:22] class A amplifier
+[45:24] this is the most common type of amplifier
+[45:26] because it is nothing
+[45:28] this is BJT's common emitter amplifier
+[45:30] BJT's common emitter amplifier
+[45:32] is
+[45:34] class A amplifier
+[45:36] this always works
+[45:38] in active region
+[45:40] means its operation
+[45:42] is always linear
+[45:44] means its output
+[45:46] will always be proportional to input
+[45:48] output will never
+[45:50] be operating in the
+[45:52] non-linear region
+[45:54] because of which the distortion
+[45:56] will be minimum
+[45:58] always proportional to
+[46:00] output input
+[46:02] so what does this mean
+[46:04] that the shape of your output
+[46:06] will be the same
+[46:08] which was the input
+[46:10] so the distortion will be
+[46:12] minimum here
+[46:14] this point is clear
+[46:16] class A amplifier is nothing but
+[46:18] simple
+[46:20] BJT's
+[46:22] common emitter amplifier
+[46:24] nothing
+[46:26] but if I give the question of
+[46:28] class A amplifier
+[46:30] then I can also say
+[46:32] class A amplifier
+[46:34] I am not writing directly
+[46:36] I am writing class A amplifier
+[46:38] now you have to understand
+[46:40] class A amplifier is nothing but
+[46:42] BJT's common emitter amplifier
+[46:44] so you read that
+[46:46] input comes from a coupling capacitor
+[46:48] this was voltage divider biasing
+[46:50] this is RC
+[46:52] load resistance
+[46:54] this was emitter
+[46:56] what was its purpose
+[46:58] why did you use bypass resistor
+[47:00] tell me
+[47:02] why does this emitter resistance
+[47:04] come
+[47:06] tell me quickly
+[47:08] why did you use this resistance
+[47:10] to stabilize
+[47:12] Q point
+[47:16] correct
+[47:18] to keep Q point
+[47:20] stable
+[47:22] why did you use bypass capacitor
+[47:24] why did you use bypass capacitor
+[47:26] to avoid
+[47:28] reduction of gain
+[47:32] we know that it reduces the gain
+[47:38] now see this is the load line
+[47:40] this is the load line
+[47:42] this is your Q point
+[47:44] where did you keep the Q point
+[47:46] between the load line
+[47:48] which means
+[47:50] away from cutoff
+[47:52] and away from saturation
+[47:54] away from cutoff
+[47:56] and away from saturation
+[47:58] now you are putting
+[48:00] such an input
+[48:02] which doesn't let you go
+[48:04] to saturation and cutoff
+[48:06] so output is getting
+[48:08] sinusoidal
+[48:10] but keep this in mind
+[48:12] because common emitter amplifier
+[48:14] is shifting to 180 degree
+[48:16] means when input
+[48:18] is negative
+[48:20] then your output
+[48:22] is getting positive
+[48:24] tell me is this clear
+[48:26] about class A amplifier
+[48:28] is this clear
+[48:30] that it will not let you go
+[48:32] to saturation
+[48:34] it will not let you go to cutoff
+[48:36] it will always be on
+[48:38] it will always work in the active
+[48:40] region
+[48:44] is this clear
+[48:48] so see because
+[48:50] it is working in a linear portion
+[48:52] because
+[48:54] it is working in a linear portion
+[48:56] then the device
+[48:58] here
+[49:00] it conducts it for 360 degree
+[49:02] but
+[49:04] because the transistor is on
+[49:06] it is never closed
+[49:08] then its power dissipation
+[49:10] will continue and
+[49:12] its efficiency
+[49:14] is very low
+[49:16] 30%
+[49:18] now understand what I said
+[49:20] let's do graphical analysis
+[49:22] do you understand the meaning of graphical analysis
+[49:24] that such a load line
+[49:26] as per input the output point
+[49:28] and the output waveform
+[49:30] this is called graphical analysis
+[49:32] till now what you used to do
+[49:34] you used to make small signal model
+[49:36] okay
+[49:38] if you used to make small signal model
+[49:40] then you would easily
+[49:42] put an input signal there
+[49:44] my brother
+[49:46] you have provided a new link of power system
+[49:48] do you sleep
+[49:50] bid.ly-ankitps
+[49:52] don't use
+[49:54] ankitps
+[49:56] use ankitps
+[49:58] you have provided a new link
+[50:00] tell me
+[50:02] is this clear from the class
+[50:04] say it quickly
+[50:06] and if it is clear then you should
+[50:08] become interested in chat
+[50:10] this topic you people were demanding
+[50:12] so now show such a response
+[50:14] that yes sir we are having fun
+[50:20] now let's come
+[50:22] direct coupled class
+[50:24] A amplifier
+[50:26] this is also class A
+[50:28] I will derive some parameters in it
+[50:30] so see where is the Q point
+[50:32] where is it
+[50:34] at the middle of the load line
+[50:36] where is it
+[50:38] at middle
+[50:40] of the load line
+[50:42] so see
+[50:44] we have said that current is half
+[50:46] like this portion
+[50:48] this is Vcc
+[50:50] this is maximum current
+[50:52] Vcc by RC
+[50:54] so this current is maximum
+[50:56] by 2
+[50:58] this means Vcc by 2 RC
+[51:00] and this is voltage
+[51:02] this is Vcc by 2
+[51:04] so we are at Q point
+[51:06] in between
+[51:08] Q point is taking
+[51:10] the middle of the load line
+[51:12] but do you know what will happen
+[51:14] with direct coupling
+[51:16] with direct coupling
+[51:18] both AC and DC will be seen
+[51:20] so if I see here V naught on dash
+[51:22] then here I will get AC
+[51:24] plus DC both
+[51:26] and if I see on V naught
+[51:28] after capacitor
+[51:30] then capacitor will block DC
+[51:32] what will I get outside
+[51:34] AC
+[51:36] if I see here DC biasing
+[51:38] means
+[51:40] here we have put this signal
+[51:42] which is the combination of AC and DC
+[51:44] this is our input
+[51:50] input has DC signal
+[51:52] for biasing and AC signal
+[51:54] which we have to amplify
+[51:56] so what happened in output
+[51:58] see in output
+[52:00] V naught dash
+[52:02] this is DC
+[52:04] AC level is
+[52:06] Vcc by 2
+[52:08] and AC above this
+[52:10] this came from 180 degree
+[52:12] shift
+[52:14] see carefully
+[52:16] this came from 180 degree shift
+[52:18] is it clear
+[52:20] what I am saying AC component
+[52:22] of V naught
+[52:24] dash
+[52:30] is negative
+[52:32] of
+[52:34] AC component
+[52:40] of input
+[52:44] due to
+[52:46] 180 degree
+[52:48] phase shift
+[52:50] your 180 degree shift
+[52:52] is being made
+[52:54] so the output of AC component
+[52:56] is getting negative
+[52:58] and if you remove DC from this
+[53:00] due to capacitor
+[53:02] then you will get only AC
+[53:04] I have shown maximum swing
+[53:06] this is approximately
+[53:08] 0 in saturation
+[53:10] and in cutoff
+[53:12] this is your Vcc
+[53:14] so if you subtract Vcc by 2
+[53:16] then
+[53:18] Vcc by 2 in negative
+[53:20] Vcc by 2 in positive
+[53:22] this is the
+[53:24] maximum
+[53:26] swing
+[53:28] of output signal
+[53:30] this is less
+[53:32] not more
+[53:34] this is shining
+[53:36] I have made the waveform
+[53:38] with maximum swing
+[53:40] i.e. where you are going to saturation
+[53:42] and going to cutoff
+[53:44] I am saying input signal is enough
+[53:46] which is coming back by touching saturation
+[53:48] input signal is only
+[53:50] coming back by touching cutoff
+[53:52] if in saturation
+[53:54] there was some delay
+[53:56] or if there was some delay in cutoff
+[53:58] then output would have been distorted
+[54:00] but what is the
+[54:02] speciality of class A amplifiers
+[54:04] that in them your
+[54:06] minimum distortion is there
+[54:08] the waveform of output
+[54:10] comes with proper sinusoidal
+[54:12] because neither we
+[54:14] operate in cutoff
+[54:16] now if we talk about power
+[54:18] then input DC power
+[54:20] what will happen
+[54:22] supply into the DC current
+[54:24] supply
+[54:26] what is Vcc
+[54:34] source voltage
+[54:38] this is DC current
+[54:40] drawn from supply
+[54:46] so basically
+[54:48] this much input power
+[54:50] you pulled from the biasing
+[54:52] I have told you one thing
+[54:54] what amplifiers always do
+[54:56] I have told you one thing
+[54:58] what amplifiers always do
+[55:00] draws power from DC biasing
+[55:02] and then
+[55:04] supplies AC signal
+[55:06] with which
+[55:08] AC signal becomes
+[55:10] amplified
+[55:12] if we talk about output
+[55:14] then how will AC power
+[55:16] come out in output
+[55:18] VCE's RMS
+[55:20] or say IC
+[55:22] RMS square into RC
+[55:24] or say VCE
+[55:26] RMS square upon
+[55:28] RC
+[55:30] if you look at AC model
+[55:32] amplifier
+[55:34] then this load resistance
+[55:36] Vcc will be ground
+[55:38] so basically
+[55:40] load resistance
+[55:42] voltage VCE will come
+[55:44] because emitter is grounded
+[55:46] Vcc will also ground
+[55:48] so this resistance
+[55:50] will come between collector and emitter
+[55:52] as soon as Vcc is grounded
+[55:54] emitter is also grounded
+[55:56] so basically this resistance
+[55:58] will appear between
+[56:00] collector and emitter
+[56:02] so across this voltage
+[56:04] that will be VCE
+[56:06] so this is output AC power
+[56:08] now if you want to get efficiency
+[56:10] then what should you get
+[56:12] AC power at output upon DC power
+[56:14] because I want more
+[56:16] AC power
+[56:18] or say DC power
+[56:20] less
+[56:22] now for maximum efficiency
+[56:24] what is the Q point
+[56:26] made of the load line
+[56:32] made of load line
+[56:38] and peak to peak current
+[56:40] Vcc by RC
+[56:42] see
+[56:44] peak to peak value Vcc by 2
+[56:46] minus Vcc by 2
+[56:48] how much peak to peak value
+[56:50] if you take peak to peak value
+[56:52] then Vcc
+[56:54] this is the logic
+[56:56] peak to peak current Vcc by RC
+[56:58] and this is the peak to peak value
+[57:00] of voltage Vcc
+[57:02] now see input power
+[57:04] is Vcc by
+[57:06] 2 RC Vcc square by 2 RC
+[57:08] how did you do
+[57:10] Vcc into
+[57:12] ICQ
+[57:14] Vcc into ICQ
+[57:16] output AC power
+[57:18] peak to peak by 2 root 2
+[57:20] see
+[57:24] what is Vrms
+[57:28] Vm by root 2
+[57:30] so you can say
+[57:32] 2 Vm by
+[57:34] 2 root 2
+[57:36] what is 2 Vm
+[57:38] V peak to peak
+[57:42] Vm and minus Vm
+[57:44] gap is
+[57:46] peak to peak voltage 2 Vm
+[57:48] same way
+[57:50] Vpp upon 2 root 2
+[57:52] Ipp upon 2 root 2
+[57:54] Vpp square upon
+[57:56] 8 RC
+[57:58] how did this happen sir
+[58:00] from here
+[58:02] here
+[58:04] Vpp square by 2 root 2
+[58:06] 2 root 2 square
+[58:08] 8
+[58:10] 8 RC
+[58:12] Vpp was Vcc
+[58:20] Vcc square by
+[58:22] 8 RC
+[58:24] now if you see here
+[58:26] Vcc square by 8 RC upon
+[58:28] Vcc square by 2 RC
+[58:30] so this is 25%
+[58:32] what does this mean
+[58:36] 25%
+[58:40] of power
+[58:44] drawn from
+[58:50] DC supply
+[58:54] is provided
+[58:56] to
+[58:58] AC signal
+[59:02] AC signal is getting only 25%
+[59:04] power
+[59:06] means 75%
+[59:08] then power is your
+[59:10] way story
+[59:12] so this is the efficiency
+[59:14] how much power you
+[59:16] can give to AC signal
+[59:18] from the DC power
+[59:20] that you have drawn from the supply
+[59:22] as much as you
+[59:24] took DC power from supply
+[59:26] how much fraction you can give to AC
+[59:28] now see
+[59:30] what is the problem here
+[59:32] maximum distortion
+[59:34] sorry minimum distortion
+[59:36] what is the percentage
+[59:38] and thermal stability is good
+[59:40] if you
+[59:42] keep VCE
+[59:44] in the left
+[59:46] then there is no problem
+[59:48] there will be no thermal runaway
+[59:50] and what is the drawback
+[59:52] very small efficiency
+[59:56] 25%
+[59:58] means very large
+[60:00] power dissipation
+[60:02] which means very high heat
+[60:04] very high heat
+[60:06] very high heat
+[60:08] and this
+[60:10] the transistor will always be on
+[60:12] means if you don't
+[60:14] put AC signal
+[60:16] then it will keep running
+[60:18] and dissipate power
+[60:20] do you understand
+[60:22] if you don't put AC signal
+[60:24] then this amplifier will be on
+[60:26] this transistor will be on
+[60:28] and this power will be consumed
+[60:30] and the power will be wasted
+[60:32] ok
+[60:34] so what will be the power dissipation
+[60:36] more than maximum output power
+[60:38] ok
+[60:40] more than maximum output power
+[60:42] you have to take
+[60:44] rating transistor
+[60:46] tell me if this class
+[60:48] A amplifier is clear or not
+[60:50] speak quickly
+[60:52] once
+[61:02] ok
+[61:18] it is clear
+[61:20] let's go ahead
+[61:22] next is
+[61:24] transformer coupled class
+[61:26] A amplifier
+[61:28] now if you notice
+[61:30] what you did
+[61:32] you didn't put load directly on the collector
+[61:34] you
+[61:36] put transformer in between
+[61:38] ok so this is class A amplifier
+[61:40] but here
+[61:42] you didn't connect the load directly
+[61:44] in the collector
+[61:46] you put transformer there
+[61:48] ok
+[61:58] ok this is clear
+[62:00] so what did you put
+[62:02] transformer
+[62:04] do you know why you are putting transformer
+[62:06] as you were asking me
+[62:08] how impedance matching
+[62:10] impedance matching
+[62:12] means you can vary
+[62:14] the turns ratio of transformer
+[62:16] you can make impedance matching
+[62:18] with which you can
+[62:20] transfer maximum power to load
+[62:22] ok so what am I saying
+[62:26] by varying
+[62:36] turns ratio
+[62:40] of transformer
+[62:46] we can have
+[62:52] impedance matching
+[63:00] to transfer
+[63:04] maximum power
+[63:06] to load
+[63:10] and maximum power transfer
+[63:12] you know right
+[63:14] 50%
+[63:18] remember
+[63:20] how much efficiency comes in MPT theorem
+[63:22] 50%
+[63:24] now here
+[63:26] what happens is that
+[63:28] your DC current
+[63:30] can't go in transformer
+[63:32] transformer only
+[63:34] amplifier only
+[63:36] transforms AC
+[63:38] can't go in DC
+[63:40] i.e. DC current
+[63:42] all the power
+[63:44] will go from RB
+[63:46] the part of the biasing
+[63:48] will go from RB
+[63:50] what will go from the collector
+[63:52] then only AC current
+[63:54] DC current from transformer
+[63:56] will not pass
+[63:58] so we are saying
+[64:00] the quiescent current passes
+[64:02] through this RB resistance
+[64:04] and this current
+[64:06] consumes a considerable power
+[64:08] so the power wastage
+[64:10] increases
+[64:12] because this AC component
+[64:14] doesn't contribute to power
+[64:16] ok
+[64:18] it does not
+[64:20] contribute to AC component
+[64:22] why doesn't it contribute
+[64:24] because it doesn't go here
+[64:26] so the DC current passing
+[64:28] through RB
+[64:30] doesn't give any benefit to AC
+[64:32] because it is not passing
+[64:34] through the collector
+[64:36] it is not passing through the
+[64:38] collector
+[64:40] now voltage transformation
+[64:42] N1 by N2 current is N2 by N1
+[64:44] if you refer
+[64:46] RL on the primary
+[64:48] i.e. on the collector
+[64:50] it will be transformed using
+[64:52] N1 by N2 square
+[64:54] so first tell me
+[64:56] are these relations clear
+[64:58] i.e. electrical people know
+[65:00] that even the AC kids are clear
+[65:02] impedance transformation
+[65:04] voltage transformation
+[65:06] tell me is this clear or not
+[65:10] clear right
+[65:12] now let's talk about
+[65:14] power consideration
+[65:16] i.e.
+[65:18] AC power
+[65:26] at
+[65:30] transformer
+[65:32] AC power at
+[65:34] primary
+[65:36] AC power at transformer
+[65:38] primary
+[65:40] see how you will write
+[65:52] now i told you
+[65:54] what is the logic of 8
+[65:56] 2 root 2 is 2 root 2
+[65:58] ok
+[66:00] now what you can write
+[66:06] VCE max
+[66:08] minus
+[66:10] VCE
+[66:12] min
+[66:14] the peak to peak value
+[66:20] IC max
+[66:22] minus
+[66:24] IC min
+[66:30] IC max
+[66:38] divided by 8
+[66:40] this is your output AC power
+[66:42] why i am interested in
+[66:44] output AC power
+[66:46] because i want to know
+[66:48] conversion efficiency
+[66:50] what is conversion efficiency
+[66:52] output AC power
+[66:54] divided by output DC
+[66:56] power
+[66:58] and AC power at
+[67:00] transformer at primary
+[67:02] we can say
+[67:04] this is same as the
+[67:06] this is
+[67:08] same as the
+[67:12] power delivered
+[67:14] to load
+[67:22] at secondary
+[67:24] why sir
+[67:26] at transformer no DC power
+[67:28] will send
+[67:30] so the load at secondary
+[67:32] only AC power
+[67:34] receives
+[67:36] so AC power at primary
+[67:38] only AC power will receive
+[67:40] load at secondary
+[67:44] secondary load
+[67:50] only receives
+[67:52] AC power
+[67:56] only receives
+[67:58] AC power
+[68:04] due to transformer
+[68:06] so that is why you have
+[68:08] the primary power
+[68:10] this will be your output AC power
+[68:12] because
+[68:14] it cannot consume any other
+[68:16] power
+[68:18] now input DC power
+[68:22] means
+[68:24] how much DC power you are
+[68:26] pulling from source
+[68:30] VCC
+[68:32] ICQ
+[68:34] this will be
+[68:36] VCC
+[68:37] ICQ
+[68:38] now here
+[68:44] if you have bias
+[68:46] this
+[68:48] then VCC by
+[68:50] 2RC
+[68:52] or you can say
+[68:54] maximum current by 2
+[68:56] maximum current by 2
+[68:58] now if I ask for
+[69:00] efficiency
+[69:02] ok
+[69:16] see this current part
+[69:32] this will be
+[69:34] that is voltage peak to peak
+[69:36] value divided by
+[69:38] RC
+[69:40] ok voltage peak to peak
+[69:42] value divided by RC
+[69:44] and
+[69:46] or you do like this
+[69:48] do not do like this
+[69:54] let it be like this
+[69:56] and what is below
+[69:58] VCC
+[70:00] VCC by 2RC
+[70:02] what does this mean
+[70:04] VCC by 2RC
+[70:10] write VCC by 2
+[70:14] VCC by 2
+[70:20] VCC by 2 is max
+[70:22] plus
+[70:24] min by
+[70:26] 2
+[70:28] do like this
+[70:44] so this is below 8
+[70:46] this will be 4
+[70:48] so this will be half factor
+[70:50] and here
+[70:52] you know what will be left
+[71:00] VCE
+[71:02] max
+[71:04] minus VCE
+[71:06] min
+[71:10] divided by
+[71:14] VCE
+[71:18] max
+[71:20] this type
+[71:22] will be left
+[71:26] ok
+[71:28] now usually
+[71:30] what happens
+[71:32] that
+[71:34] VCE max
+[71:36] VCC
+[71:38] which is cutoff
+[71:40] and VCE
+[71:42] min
+[71:44] is approximately 0
+[71:46] point 2 comes in saturation
+[71:48] so efficiency
+[71:50] becomes half
+[71:52] or 50%
+[71:54] and I just told you
+[71:56] that if you apply maximum power
+[71:58] transfer theorem
+[72:00] you could say efficiency
+[72:02] 50%
+[72:04] but practically
+[72:06] efficiency comes
+[72:08] 30-35%
+[72:12] this is ideal situation
+[72:14] which comes 50%
+[72:16] so you improved
+[72:18] efficiency
+[72:20] from transformer coupling
+[72:22] what is the main thing
+[72:24] from transformer coupling
+[72:26] we have increased the
+[72:28] efficiency of the amplifier
+[72:30] ok
+[72:34] now let's go ahead
+[72:36] class B amplifier
+[72:38] what was the advantage in class A
+[72:40] that sir there was no distortion
+[72:42] what was the drawback
+[72:44] the biggest thing
+[72:46] that sir there was very less efficiency
+[72:48] why sir the transistor always runs
+[72:50] so power dissipation
+[72:52] becomes very high
+[72:54] and because in active region
+[72:56] power dissipation is very high
+[72:58] so class B amplifier
+[73:00] is the solution
+[73:02] how
+[73:04] what it does
+[73:06] it minimizes
+[73:08] this part
+[73:10] which was
+[73:12] class A amplifier
+[73:14] what we do in this
+[73:16] we apply 2 BJT
+[73:18] 1 NPN
+[73:20] and 1 PNP
+[73:22] what happens is
+[73:24] from every 2
+[73:26] only 1 BJT will conduct
+[73:28] so the current
+[73:30] will never get a way
+[73:32] to flow from VCC to ground
+[73:34] from VCC
+[73:36] to ground
+[73:38] will never get a way
+[73:40] because
+[73:42] power dissipation
+[73:44] will be minimum
+[73:46] if you see class A amplifier
+[73:54] when this BJT
+[73:56] is on
+[73:58] current can go to ground
+[74:00] DC current
+[74:02] DC current will go like this
+[74:04] DC will go like this
+[74:06] so this current
+[74:08] goes directly from supply to ground
+[74:10] it gets a lot of power dissipation
+[74:12] but when I put 2 transistors
+[74:14] in this series
+[74:16] which will be on only one time
+[74:18] so what happened with this
+[74:20] this caused
+[74:22] your power dissipation
+[74:24] to be very low
+[74:26] so in this one transistor conducts
+[74:28] during positive half cycle
+[74:30] and the other conducts
+[74:32] are negative half cycle
+[74:34] so its efficiency
+[74:36] is quite high
+[74:38] as compared to your
+[74:40] class A amplifier
+[74:42] so look at this type
+[74:44] you put this top BJT
+[74:46] NPN
+[74:48] and the bottom one
+[74:50] PNP
+[74:54] now when this top BJT
+[74:56] will be on
+[74:58] during the positive half cycle
+[75:02] this will be on during
+[75:04] positive half cycle
+[75:06] because you are putting positive voltage
+[75:08] on the base of NPN
+[75:10] and this one will be on
+[75:12] during negative half cycle
+[75:14] because the base of PNP is
+[75:16] N type
+[75:18] so N type needs negative voltage
+[75:20] so this NPN output
+[75:22] actually
+[75:24] the output
+[75:26] will give
+[75:28] by inverting positive half cycle
+[75:30] and this one
+[75:32] will give by inverting negative half cycle
+[75:34] like this
+[75:36] so your positive half cycle
+[75:38] will have negative output
+[75:40] due to the NPN transistor
+[75:42] and the negative half cycle
+[75:44] will have positive output
+[75:46] due to PNP transistor
+[75:48] so here if you see
+[75:50] so the Q point
+[75:52] that you take
+[75:54] that Q point you take on cutoff
+[75:56] on cutoff
+[75:58] means what happened
+[76:00] here no DC biasing was given
+[76:02] so the Q point is on cutoff
+[76:04] do you understand
+[76:06] so here when the input signal
+[76:08] goes positive
+[76:10] the positive bias transistor conduct
+[76:12] means which transistor
+[76:14] NPN will conduct
+[76:16] and the negative one
+[76:18] will not conduct
+[76:20] similarly when the input signal is negative
+[76:22] then
+[76:24] the negative one
+[76:26] will conduct
+[76:28] and the positive one
+[76:30] will be off
+[76:32] so every transistor conducts for half cycle
+[76:34] and the efficiency
+[76:36] that comes here
+[76:38] approximately 50%
+[76:40] okay
+[76:42] but what is the problem
+[76:44] the problem is crossover distortion
+[76:46] when your one transistor
+[76:48] will be off and the other one will be on
+[76:50] then there will be a small
+[76:52] band in between
+[76:54] none of them conducts
+[76:56] and during that time
+[76:58] your output will be zero
+[77:00] it will not exactly follow
+[77:02] the input
+[77:04] it will not exactly follow the input
+[77:06] and due to this
+[77:08] there will be distortion in signal
+[77:10] there will be harmonics
+[77:12] okay so tell me
+[77:14] do you understand this point
+[77:16] the Q point is on cutoff
+[77:18] do you understand this on Q point
+[77:20] because no DC biasing
+[77:22] you have
+[77:24] no DC biasing
+[77:26] on your base
+[77:28] so Q point
+[77:30] is on cutoff of transistor
+[77:32] so when your negative cycle
+[77:34] will come
+[77:36] then it will conduct
+[77:38] it will conduct on negative cycle
+[77:40] so here
+[77:42] it will give you output
+[77:44] in negative cycle
+[77:46] when you talk about positive cycle
+[77:48] then you will go ahead of cutoff
+[77:50] when transistor will be off
+[77:52] then when transistor will be off
+[77:54] then output will be zero
+[77:58] do you understand
+[78:00] this time Q point
+[78:02] you did not take mid of the load line
+[78:04] which will work in half cycle
+[78:06] this time Q point
+[78:08] you took in cutoff region
+[78:10] you did not put DC supply
+[78:12] on base
+[78:14] you directly sent AC signal
+[78:16] if you send AC signal
+[78:18] then for one half cycle
+[78:20] base emitter junction will be forward
+[78:22] and in one half cycle
+[78:24] only transistor can conduct
+[78:26] first what was
+[78:28] because of DC biasing
+[78:30] despite AC coming
+[78:32] transistor was on
+[78:34] now DC is not
+[78:36] then for AC one half cycle
+[78:38] BJT will be on
+[78:40] and for one half cycle
+[78:42] will be off
+[78:44] now see during the half cycle
+[78:46] what is your average output
+[78:48] of current
+[78:50] current average value
+[78:52] think of half wave rectifier
+[78:54] vm by pi rl
+[78:56] this is half wave rectifier
+[78:58] here vm is your peak voltage
+[79:00] so vm by pi rl is here
+[79:02] now if I talk about
+[79:04] power consideration
+[79:06] you say how much power supply
+[79:08] will come
+[79:10] Vcc into idc
+[79:12] idc is both of transistor
+[79:14] Ip upon pi
+[79:16] and Ip upon pi
+[79:18] okay
+[79:20] sum of both transistor
+[79:26] this is
+[79:30] including
+[79:34] both transistors
+[79:40] so how much is this
+[79:42] 2 times Vcc
+[79:44] what is written instead of Ip
+[79:46] Vp upon pi rl
+[79:48] from here
+[79:50] Vm is called as peak value
+[79:52] maximum value
+[79:54] how much power will be delivered to load
+[79:56] VRMS IRMS
+[79:58] Vp by root 2 Ip by root 2
+[80:00] meaning Vp Ip by 2
+[80:02] Vp square by 2 rl
+[80:04] okay
+[80:06] now if we talk about AC power
+[80:08] then either write
+[80:10] 2 rl or write
+[80:12] Vp square by 8 rl
+[80:14] because
+[80:16] Vp is
+[80:18] peak to peak value
+[80:20] that is 2 times the peak value
+[80:22] both are equal
+[80:24] write any formula
+[80:26] both are equal
+[80:28] now if you take efficiency
+[80:30] then both are racial
+[80:32] then you will get pi by 4
+[80:34] Vp upon Vcc
+[80:36] now
+[80:38] peak to peak will be 2 Vcc
+[80:40] Vcc can be positive
+[80:42] and Vcc can be negative
+[80:44] and peak value
+[80:46] Vcc
+[80:48] so what is the answer
+[80:50] 78.5%
+[80:52] so how high is the efficiency
+[80:54] sir how will Vcc go in negative
+[80:56] do not ground it
+[81:00] keep it on minus Vcc
+[81:04] understood
+[81:06] keep the terminal on minus Vcc
+[81:08] then it can go to minus Vcc
+[81:10] and the upper Vcc
+[81:12] can go to Vcc
+[81:14] so here peak to peak value will be 2 Vcc
+[81:16] is it clear
+[81:18] so its efficiency is very high
+[81:20] remember
+[81:22] class A amplifier had 25%
+[81:24] okay
+[81:26] so power dissipation
+[81:28] how much of every transistor
+[81:30] half of the total power
+[81:32] dissipation
+[81:34] so here efficiency is higher
+[81:36] and here there will be no power drawn
+[81:38] until AC signal is not there
+[81:40] because DC biasing is not applied
+[81:42] do you understand that DC biasing is not there
+[81:44] what were the 8 complaints
+[81:46] from class A
+[81:48] that if AC signal is not applied
+[81:50] then also because of DC signal
+[81:52] it keeps pulling power from supply
+[81:54] and
+[81:56] the wastage of power keeps going
+[81:58] but now what we are saying
+[82:00] we removed DC biasing
+[82:02] so when AC signal is not there
+[82:04] then no transistor will be on
+[82:06] no power supply
+[82:08] will not be drawn
+[82:10] but what will happen
+[82:12] harmonic distortion will come
+[82:14] why
+[82:16] due to crossover distortion
+[82:20] BJT atleast needs 0.7
+[82:22] right?
+[82:24] so sir it was needed earlier
+[82:26] but to give it earlier DC biasing was there
+[82:28] to turn on
+[82:30] who was giving 0.7V
+[82:32] DC was giving
+[82:34] now all the work of AC
+[82:36] has to be done
+[82:38] that is AC has to be set
+[82:40] AC has to be turned on
+[82:42] AC has to be given 0.7
+[82:44] that is why
+[82:46] there will be a crossover
+[82:48] distortion
+[82:50] next is
+[82:52] Push pull amplifier
+[82:54] see what we have done here
+[82:56] here we have
+[83:00] put a center tapped
+[83:02] transformer
+[83:04] with which both BJTs
+[83:06] are running
+[83:08] this is your VCC supply
+[83:10] then with the help of a transformer
+[83:12] we have coupled the load
+[83:14] that is supply the BJT
+[83:16] with the help of
+[83:18] a transformer
+[83:20] center tapped transformer
+[83:22] and then also coupled the load
+[83:24] with the help of a center tapped
+[83:26] transformer
+[83:28] see the class B amplifier
+[83:30] is like the operation class A
+[83:32] but where is the biasing
+[83:34] cut off
+[83:36] where is the class A
+[83:38] mid of the load line
+[83:40] now through this circuit
+[83:42] we are reducing the distortion
+[83:44] we are reducing the distortion
+[83:46] the transformer
+[83:48] we are reducing the distortion
+[83:50] by this
+[83:52] ok
+[83:54] now here
+[83:56] in the circuit
+[83:58] there is a center tapped transformer
+[84:00] on both the input and output
+[84:02] with which the signal of opposite polarity
+[84:04] will be generated
+[84:06] that is positive signal for NPN
+[84:08] and negative signal for PNP
+[84:10] and the output
+[84:12] also on the output
+[84:14] what have you done
+[84:16] you have put a transformer
+[84:18] with which the
+[84:20] pull type connection is done
+[84:22] see the meaning of push pull
+[84:24] is that one
+[84:26] the transistor pushes the output
+[84:28] downwards and one pulls upwards
+[84:30] that is one pulls
+[84:32] towards VCC
+[84:34] and one pushes towards minus VCC
+[84:36] so see
+[84:38] during the first half of operation
+[84:40] Q1 is driven into conduction
+[84:42] in positive half cycle
+[84:44] in positive half cycle
+[84:46] Q1
+[84:48] in positive half cycle
+[84:50] Q1 will conduct
+[84:52] which is your NPN transistor
+[84:54] and this will remain in the second cutoff
+[84:56] what will happen in negative half cycle
+[84:58] will be upside down
+[85:00] Q2 will conduct and Q1 will remain in cutoff
+[85:02] so in positive half cycle
+[85:04] because of Q1
+[85:06] IC1 will flow
+[85:08] and in negative half cycle
+[85:10] IC2 will flow
+[85:12] ok
+[85:14] now when IC1 is leaving
+[85:16] then
+[85:18] here the current
+[85:20] will enter from the dots
+[85:22] and when IC2
+[85:24] is entering from the dots
+[85:26] then current will
+[85:28] leave from the dots
+[85:30] the basic rule of the transformer
+[85:32] is that if the current
+[85:34] enters from the dots
+[85:36] then it will leave from the secondary
+[85:38] and if it leaves from the primary
+[85:40] then it will enter from the secondary
+[85:42] so you can see
+[85:44] if the current is opposite to Q2
+[85:46] then what will you get on V0
+[85:48] AC waveform
+[85:50] ok
+[85:52] because current will flow in both directions
+[85:54] in one half cycle
+[85:56] anti-clockwise and clockwise
+[85:58] now see
+[86:00] what is here
+[86:02] when Q1 and Q2 are not identical
+[86:04] then even harmonics are present
+[86:06] in its output
+[86:08] even harmonics are present
+[86:10] and what is here
+[86:12] voltage swing is 2 vcc
+[86:14] now I told you
+[86:16] if one side is vcc
+[86:18] and one side is minus vcc
+[86:20] it will have higher efficiency
+[86:22] ok but
+[86:24] here even harmonics are not present
+[86:26] only what kind of harmonics are there
+[86:28] odd harmonics
+[86:30] but it will be expensive
+[86:32] because here
+[86:34] there are two transformers
+[86:36] so basically you know what I did
+[86:38] class B amplifier
+[86:40] by making multiple amplifiers
+[86:42] how did you eliminate harmonics
+[86:44] you eliminated even harmonics
+[86:46] only odd harmonics are left
+[86:48] harmonics are less
+[86:50] and distortion is less
+[86:52] ok
+[86:54] now how did this happen
+[86:56] see what will happen
+[86:58] your current is
+[87:00] IC1
+[87:02] in this both odd and even
+[87:04] harmonics will come
+[87:06] but only which terms will come
+[87:08] in this only terms will come
+[87:10] your
+[87:12] cosine
+[87:14] and average will also be
+[87:18] average will also be
+[87:20] sir why average
+[87:22] one half cycle
+[87:24] one transistor is conducting
+[87:26] so its average current is not zero
+[87:28] it is only giving positive current
+[87:30] ok
+[87:32] this is how it will work
+[87:34] now the second transistor
+[87:36] its waveform
+[87:38] is 180 degree shifted
+[87:40] first transistor
+[87:42] its waveform
+[87:44] is 180 degree shifted
+[88:00] ok
+[88:02] why 180
+[88:04] why is it shifted because
+[88:06] it is in one positive half cycle
+[88:08] second negative half cycle
+[88:10] now I have shown you
+[88:12] that both the current
+[88:14] were going in opposite direction
+[88:16] in load
+[88:18] correct
+[88:20] so your total load
+[88:22] current
+[88:24] write it like this
+[88:26] K IC1-IC2
+[88:28] why K is written due to
+[88:30] transformation ratio
+[88:32] of transformer
+[88:34] turn ratio
+[88:36] now when IC1-IC2
+[88:38] is done
+[88:40] B0 to B0
+[88:42] this is cos
+[88:44] and this is minus cos
+[88:46] that is 2 cos
+[88:50] if 2 pi does not matter
+[88:52] then cos 2 omega t
+[88:54] cos 2 omega t is cut
+[88:56] but 3 pi means then minus sign
+[88:58] so minus minus
+[89:00] will become plus
+[89:02] so only odd harmonics are coming
+[89:04] can you see
+[89:06] only
+[89:08] odd harmonics
+[89:10] and DC is cancelled
+[89:16] I think this logic is clear
+[89:18] that only here your odd harmonics
+[89:20] will come
+[89:22] tell me quickly
+[89:24] this logic is clear to everyone
+[89:26] so here
+[89:28] less distortion
+[89:36] see
+[89:38] so distortion is reduced
+[89:40] now see
+[89:42] complimentary symmetry
+[89:44] push pull amplifier is same
+[89:46] just directly you have
+[89:48] loaded here
+[89:50] this PNP transistor
+[89:52] is done
+[89:56] and this is NPN
+[90:00] okay
+[90:02] this will conduct in positive half cycle
+[90:04] this will conduct in negative half cycle
+[90:06] okay
+[90:08] so this will be
+[90:10] in positive half cycle
+[90:12] in negative half cycle
+[90:14] so here in NPN and PNP
+[90:16] you can take full cycle output
+[90:18] by using half cycle operation
+[90:20] of each transistor
+[90:22] you have put input signal
+[90:24] directly on base
+[90:26] so PNP will conduct
+[90:28] in which cycle?
+[90:30] this will conduct in negative cycle
+[90:34] and this will conduct
+[90:36] in positive cycle
+[90:40] okay
+[90:42] so NPN transistor will conduct
+[90:44] during the positive half cycle
+[90:46] and PNP transistor will conduct
+[90:48] in negative half cycle
+[90:50] so here but
+[90:52] cross over distortion is reduced
+[90:54] because of two separate supplies
+[90:56] two separate supplies
+[90:58] you have given one VEE
+[91:00] one minus VEE
+[91:02] so both the supplies are different
+[91:04] i.e. both the switches are different
+[91:06] so cross over distortion is reduced
+[91:08] but when signal will be absent
+[91:10] so both the transistors
+[91:12] will be cut off
+[91:14] i.e. what you will call it
+[91:16] B
+[91:18] so here you can also change
+[91:20] class B to class AB
+[91:22] the current going in load is bi-directional
+[91:24] because of which even
+[91:26] harmonics will be cancelled out
+[91:28] so this is double ended amplifier
+[91:30] in which
+[91:32] your matched transistors are used
+[91:34] i.e. both the transistors
+[91:36] will be identical
+[91:38] double ended amplifier means
+[91:40] one supply is VEE
+[91:42] and one supply is your minus VEE
+[91:44] so it is a double ended amplifier
+[91:46] and it is very popularly used
+[91:48] like power amplifier
+[91:50] if you remember
+[91:52] this amplifier was also used
+[91:54] in opamp
+[91:56] complimentary push pull amplifier
+[91:58] at the output stage
+[92:08] now see next is
+[92:10] class AB amplifier
+[92:12] which is the
+[92:14] class A and class B
+[92:16] you can call it as
+[92:18] modified version
+[92:20] both are combined
+[92:22] and its use is
+[92:24] audio power amplifier
+[92:26] its use is
+[92:28] audio power amplifier
+[92:30] see here
+[92:32] listen carefully
+[92:34] in class A
+[92:36] the bi-sync you did
+[92:38] was the middle of the load line
+[92:40] in which you did the bi-sync
+[92:42] you did it in cutoff
+[92:44] in this we say
+[92:46] do it slightly earlier
+[92:48] i.e. dont do this
+[92:50] that one transistor
+[92:52] will operate only in one half cycle
+[92:54] in fact one transistor
+[92:56] will operate slightly more than one half cycle
+[92:58] i.e. like npn
+[93:00] dont do 0 to 180
+[93:02] suppose
+[93:04] it goes slightly ahead of 180
+[93:06] what will happen with this
+[93:08] there will be an overlap region
+[93:10] with which
+[93:12] you can
+[93:14] eliminate crossover distortion
+[93:16] i.e. there will be no such region
+[93:18] where none of them
+[93:20] will conduct any transistor
+[93:22] what did you do you increased
+[93:24] the conduction of npn
+[93:26] if pnp is not
+[93:28] able to start
+[93:30] then it will conduct more npn
+[93:32] do you understand what i am saying
+[93:34] what did you say
+[93:36] you said that when you go to 180
+[93:38] the npn will not stop
+[93:40] now we will not conduct
+[93:42] it will conduct a little ahead
+[93:44] with which the crossover distortion
+[93:46] this region where
+[93:48] no device was conducting
+[93:50] we will finish it
+[93:52] so we increased the conduction
+[93:54] how we pulled the Q point
+[93:56] back a little
+[93:58] from the cutoff region
+[94:00] so here both devices
+[94:02] are allowed to conduct for same
+[94:04] time
+[94:06] i.e. there will be some overlap
+[94:08] in both devices
+[94:10] so here a small bias voltage
+[94:12] is applied
+[94:14] which is 5-10% of the
+[94:16] Q point current
+[94:18] i.e. the biasing current
+[94:20] is applied 5-10% of the maximum
+[94:22] so that it stays
+[94:24] slightly above the cutoff
+[94:26] so as you see
+[94:28] you have applied a diode to give this small bias
+[94:30] this diode will give 0.7V
+[94:32] so this small biasing will apply
+[94:34] 0.7V
+[94:36] now if you see here
+[94:38] this is your Q point
+[94:42] Q point this is just
+[94:44] before cutoff
+[94:46] where is it
+[94:48] it is just before cutoff
+[94:52] so in this negative cycle
+[94:54] is complete
+[94:56] this negative cycle has become
+[94:58] completely positive here
+[95:00] because of which
+[95:02] the output
+[95:04] got some part
+[95:06] of this type
+[95:08] so what is this
+[95:10] positive cycle gets
+[95:12] clipped
+[95:14] tell everyone
+[95:16] positive cycle
+[95:18] is not complete
+[95:20] it has become clipped
+[95:22] so you didn't do
+[95:24] to conduct completely in both the cycles
+[95:26] you didn't do
+[95:28] to conduct completely in both the cycles
+[95:30] negative cycle
+[95:32] is getting full conduction
+[95:34] it is talking about NPN
+[95:36] okay
+[95:42] and what is this back
+[95:44] this is unused area
+[95:46] you didn't use this area
+[95:48] this has become clear
+[95:50] tell me
+[95:52] what did you do for small bias
+[95:54] you applied diode
+[95:56] so when both
+[95:58] diode and signal gets absent
+[96:00] then amplifier
+[96:02] will work like class B
+[96:04] that means if you
+[96:05] disappear diodes
+[96:06] then it will act as a
+[96:08] class B amplifier
+[96:10] in which crossover distortion will be present
+[96:12] and if you want
+[96:14] then you can use
+[96:16] potential divider
+[96:18] potential divider
+[96:20] you can
+[96:22] implement small bias
+[96:24] if you want
+[96:26] then who could give bias
+[96:28] you could give with potential divider
+[96:30] correct
+[96:32] so what we have here
+[96:34] small bias
+[96:38] is applied
+[96:44] using
+[96:48] voltage divider
+[96:54] instead of
+[97:02] diode
+[97:04] instead of diode
+[97:06] you applied this small bias
+[97:08] using voltage divider
+[97:10] so this is class AB mode
+[97:12] in which you eliminate
+[97:14] crossover distortion
+[97:16] tell me
+[97:18] did you understand or not
+[97:20] tell me quickly
+[97:22] so the advantage is
+[97:24] that
+[97:26] if you do it with resistance
+[97:28] or diode
+[97:30] then crossover distortion gets less
+[97:32] and its efficiency is between
+[97:34] 50-60%
+[97:36] remember in class B
+[97:38] 78.5%
+[97:40] was not that high
+[97:42] and class A is not even 25%
+[97:44] less
+[97:46] so here Q point is located in
+[97:48] active region
+[97:50] close to cutoff point
+[97:52] in active region
+[97:54] but it is close to cutoff
+[97:56] distortion class
+[97:58] will be more than class A
+[98:00] obviously in class A
+[98:02] the device conducts for 360 degree
+[98:04] it generates pure sine wave
+[98:06] but distortion class
+[98:08] will be less than class B
+[98:10] this is an advantage
+[98:12] it eliminates crossover distortion
+[98:14] last comes
+[98:16] class C amplifier
+[98:18] is more than class A
+[98:20] but its linearity
+[98:22] means
+[98:24] it gives more distortion
+[98:26] so class A, class B, class AB
+[98:28] in this
+[98:30] you can still call it linear amplifier
+[98:32] because here
+[98:34] the amplitude of output
+[98:36] the phase of output
+[98:38] it variates linearly
+[98:40] but class C amplifier
+[98:42] is so heavily biased
+[98:44] in cutoff region
+[98:46] here the device conducts
+[98:48] is less than half cycle
+[98:50] or say
+[98:52] current is 0
+[98:54] for more than half cycle
+[98:56] means the biasing
+[98:58] goes ahead of cutoff point
+[99:00] if the biasing goes ahead of cutoff point
+[99:02] then
+[99:04] the conduct of less than half cycle
+[99:06] will come
+[99:08] so what is written here
+[99:10] the conduction angle is less than 180 degree
+[99:12] it is
+[99:14] very close to 90 degree
+[99:16] but its efficiency is
+[99:18] very high
+[99:20] efficiency is very high
+[99:22] because the less transistor
+[99:24] conducts for less duration
+[99:26] the less losses will come
+[99:28] the more efficiency will be
+[99:30] so what we have done here
+[99:32] this is our Q point
+[99:38] this one
+[99:40] okay
+[99:44] this Q point you have kept
+[99:46] this is beyond cutoff
+[99:50] you have taken it ahead of cutoff
+[99:54] because
+[99:56] the negative cycle
+[99:58] is not fully covered
+[100:00] there is a small portion
+[100:02] of the negative cycle
+[100:04] which is becoming positive here
+[100:06] do you understand
+[100:08] this was the full negative cycle
+[100:10] but this small portion
+[100:12] was able to conduct
+[100:14] it is clear
+[100:16] what you did in class C amplifier
+[100:18] so
+[100:20] because of heavy distortion
+[100:22] it is a sine wave oscillator
+[100:24] and many times in high frequency
+[100:26] amplifiers
+[100:28] high frequency amplifier
+[100:30] where pulses
+[100:32] produced
+[100:34] pulses of current produced at output
+[100:36] can be converted
+[100:38] to complete sine wave
+[100:40] if you are able to
+[100:42] convert it to sine wave
+[100:44] with the help of
+[100:46] lc oscillator
+[100:48] you can use it
+[100:50] that is why you can see
+[100:52] we call it tuned amplifier
+[100:54] where lc oscillator
+[100:56] comes in amplifier
+[100:58] we call it tuned amplifier
+[101:00] so this class C amplifier
+[101:02] can be used in tuned amplifier
+[101:04] where you are
+[101:06] creating complete sine wave
+[101:08] with the help of
+[101:10] lc oscillator
+[101:12] now if you will see the Q point
+[101:14] my brother
+[101:16] where was class A
+[101:18] mid of the load line
+[101:20] where was class B cut off
+[101:22] where was class A B
+[101:24] and where was class C
+[101:26] beyond cut off
+[101:28] beyond cut off
+[101:30] is this clear
+[101:32] now you can see the duty cycle
+[101:34] duty cycle
+[101:36] T on by T
+[101:38] okay
+[101:40] during on time
+[101:42] power dissipation is vcc into ic
+[101:44] now energy
+[101:46] power into on time
+[101:48] if you want
+[101:50] average power
+[101:52] power dissipation into duty cycle
+[101:54] because here duty cycle is smaller than 1
+[101:56] so power dissipation
+[101:58] becomes less
+[102:00] and that is why efficiency increases
+[102:02] that is what I told you
+[102:04] for less delay
+[102:06] your transistor
+[102:08] will conduct
+[102:10] less your loss
+[102:12] more your
+[102:14] efficiency will come
+[102:16] so here efficiency is too much
+[102:18] but distortion is also too much
+[102:20] okay so this is used
+[102:22] in tuned amplifier
+[102:26] where is used tuned amplifier
+[102:28] why? because there
+[102:30] you will create sine wave
+[102:32] so maybe from here you will get
+[102:34] non-synosoidal
+[102:36] but you will make it with lc oscillator
+[102:38] okay
+[102:40] just a minute
+[102:42] now one child is asking
+[102:44] sir should we prepare gate from 3rd semester
+[102:46] son you can do it
+[102:48] from 3rd semester
+[102:50] no problem
+[102:52] in fact it is better that you start
+[102:54] as soon as possible
+[102:56] just don't hurry
+[102:58] that start from 1st semester
+[103:00] 3rd semester is a good starting point
+[103:02] I agree
+[103:04] why I agree? because
+[103:06] from 3rd semester technical syllabus
+[103:08] starts coming
+[103:10] so tell me is everyone clear or not
+[103:12] as much as I talked
+[103:14] well understood power amplifier
+[103:16] this is mainly a theory topic
+[103:18] this is not a numerical topic
+[103:22] first question
+[103:24] which of the following is not a method of
+[103:26] amplifier coupling
+[103:28] which is not a method
+[103:30] of multi stage amplifier
+[103:32] which is useful for coupling
+[103:34] tell me
+[103:36] very good
+[103:38] Saurav
+[103:40] Saurav is very active these days
+[103:42] he is working hard
+[103:44] next question
+[103:46] which of the following is not a
+[103:48] class of power amplifier
+[103:50] which of the following is not a
+[103:52] class of power amplifier
+[103:54] which of the following is not a
+[103:56] class of power amplifier
+[104:00] which of the following is not a
+[104:02] class of power amplifier
+[104:04] tell me
+[104:06] M
+[104:08] very good
+[104:10] class D is a amplifier
+[104:12] we are not covering it
+[104:14] because it comes in switching
+[104:16] I told you
+[104:18] there are one, one is linear
+[104:20] so it will come in switching
+[104:22] next
+[104:24] the minimum number of transistors used in a class B power amplifier to obtain the output
+[104:29] for a full cycle of signal.
+[104:31] In class B, at least how many transistors will have to be used to obtain full cycle.
+[104:37] Very good.
+[104:38] See, two transistors.
+[104:40] Right?
+[104:41] We conduct both for one and a half cycle.
+[104:44] In class B amplifier, it is found that DC power is 25 watt, find the AC power.
+[104:52] If DC power is 25 watt, then how many AC power will be there?
+[104:56] I will tell you what it is.
+[105:22] The answer should be A, because AC power will always be less than DC.
+[105:33] Now look at the other options, these are more than, these are more than the 25 watt, but
+[105:40] DC power is less than AC power because efficiency is always less than 50, sorry always less
+[105:49] than 100%.
+[105:50] Now look at the next one, in class B amplifier the output current flows for, tell me, when
+[106:00] does the output current flow for how long in class B, tell me fast, tell me what is the
+[106:13] output current, how long it flows for, yes half cycle, remember that half cycle average
+[106:24] IP upon pi, in class B power amplifier output is dash of the full input cycle, yes half,
+[106:46] very good B, okay last question in class A operation of amplifier, the current flows
+[106:54] through the active device for analogue sample question, sample means, PY why do you put sample
+[107:03] question, what will be A, whole of the input cycle, now you are making a mistake, you are
+[107:10] giving a mistake, this is class A amplifier, there is conduction in the whole cycle, in class
+[107:15] B in half cycle, in AB more than half, less than full and in C less than half, okay,
+[107:27] so here the whole analogue of you is finished, now you guys pay attention that the gate
+[107:34] is less than 3 months, if you want to do a guided preparation, then you can quickly
+[107:40] take an iconic subscription in the academy, there you will also be provided mentorship,
+[107:46] study material will be sent to you, you are getting different test series and here you
+[107:52] have to pay the bus for 3100 per month, so if you pay this for 3 months, you can become
+[107:57] an iconic subscriber, and if you go to this link, then here you can put all the PYQs,
+[108:04] there is no such topic that we have not covered, you just have to go to gate PYQ by AIR1,
+[108:10] you can put all the PYQs of analogue, if you come to the academy, then you can choose between
+[108:15] plus and iconic, you are getting top educators in both the months, you are getting the proper
+[108:21] study material app, you are getting test series, you will get the video solution of new questions,
+[108:28] you will be given book delivery at home, in the icon, you will get a 1 to 1 mentorship strategy
+[108:34] and study plan, and you can interact in open house session via audio, okay,
+[108:40] very good cosmic void, no problem, let's go, bye bye, and see the academy has come to compete,
+[108:51] you can compete in the academy, you can compete one on one with your peer, with your friends,
+[108:57] whose test taking will be a very, very good fun activity for you, and under this fun activity,
+[109:06] you will compete daily, you will enjoy giving you a test, and you will enjoy giving you a test,
+[109:12] you will enjoy, then your problem solving ability will increase, okay, in that window class,
+[109:22] and see what you have to do, you have to go to the academy app, you have to choose the plan plus or
+[109:28] iconic, you have to decide the duration, and while paying, you have to put the code,
+[109:34] ankit ese, so by putting ankit ese code, you will get the maximum discount, and the kids of 24
+[109:41] can take the subscription of 15 months, in 15 months, you will get the cover of gate 2024,
+[109:48] okay, so you can go for 15 months of subscription, and if you see the results,
+[109:53] then we have produced 6 ranks in the last year in top 10, this year our target is 10 of 10 ranks,
+[110:00] and you can be one of them if you connect with us, if you join an academy using code ankit ese,
+[110:06] financial issue is you can take it on emi, where you can pay monthly, okay, and there
+[110:14] will be your approval in 2 hours, you just have to give you a pan card, only give a member in your family,
+[110:21] whose salary comes because bank gives them emi, and the gurukul batch is started for our
+[110:27] children of 24, in which analog is taking, Dhande sir, maths is taking your gurupal sir, okay, and
+[110:35] here this is what is going on in your 24, for the children of 23, maths network and my machine
+[110:42] course is going on, in the crash course, so if you join an academy, then you can cover the crash course
+[110:49] of machines with me, and for the children of this, maths network and edc is going on, and the children of 23
+[110:56] can take a subscription of 3 months or 4 months, and you can take a test series of 4 months,
+[111:03] we have also taken out a new subscription for 500 rupees only, okay, this is my telegram channel,
+[111:09] stay connected here, and if you want pdf of this session, then it will come to the community,
+[111:15] go to the app homepage, on the discovery in the community, I and all my pdf will meet you there,
+[111:21] so thank you everyone, and last time I am signing off from analog electronics, now I have
+[111:27] made the entire analog for you, I have controlled this year, machine power system, power electronics,
+[111:33] digital, I have already given you all these things, I have also given the network, okay, and this time
+[111:41] what are we going to do, dear, this time we will do the crash course, in that I will
+[111:47] give you machine power system power electronics and measurement, I will do all these things,
+[111:54] Madhu ji's message came, sir, how much pain do you have for the thickness of the thickness of the thickness,
+[111:58] dear, the pain of your destruction is much less than that, the loss of your parents' money,
+[112:04] the loss of your career is much less than that, right, the frustration you have,
+[112:09] when you are unsuccessful, you get much more happiness when there is a good bank balance,
+[112:14] so the pain is very less, 3 month strategy, come on, I will take 3 months for this week,
+[112:20] the rest Brahmendra, I and Dhandesar have taken a session yesterday, which is mainly focused on revision,
+[112:25] so once you go and see that, you will have a lot of fun in that, okay, so I am starting the
+[112:31] crash course of your machine from Monday, and from Monday we will start the crash course of the machine,
+[112:36] it will take class at 12 o'clock, it will run your class from 12.30 to 1.45 o'clock,
+[112:41] it will run from 12 to 1.30 to 1.45, so you guys attend the crash course of the machines from Monday,
+[112:47] okay, let's go,

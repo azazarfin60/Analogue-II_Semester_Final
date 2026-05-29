@@ -1,0 +1,178 @@
+Title: Band Pass Filter and Band Stop Filter Explained
+URL: https://www.youtube.com/watch?v=dmPIydL0lyM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in this video, we will learn about the band pass and the pen store filter.
+[00:27] So in the last couple of videos, we had seen that how to design the active as well as
+[00:31] the passive low pass and the high pass filter using the resistor and the capacitor.
+[00:36] And we had seen that this low pass filter passes the low frequency components from the
+[00:41] input signal while the high pass filter passes the high frequency components from the input
+[00:46] signal.
+[00:47] But sometimes in some applications, we are only interested in the particular band of frequencies.
+[00:53] So for such applications, we can use this band pass filter.
+[00:57] So as you can see, this band pass filter passes only certain band of frequencies and it
+[01:03] rejects all the frequencies which is outside of this band.
+[01:07] So now there are many ways in which we can design this band pass filter.
+[01:11] And one of the ways is to design this band pass filter using the series RLC circuit.
+[01:16] And particularly, when you take the output across this resistor, then the response of this
+[01:21] circuit will be very similar to the response of this band pass filter.
+[01:25] And we have already seen this in the earlier videos of a series resonance in the RLC circuit.
+[01:31] So for more information, you can check that video.
+[01:34] But in this video, we will learn how to design this band pass filter just by using this
+[01:39] high pass and the low pass filter.
+[01:41] So just by cascading this high pass filter and the low pass filter, we can design this
+[01:46] band pass filter.
+[01:48] So now let us understand how this combination will act as a band pass filter.
+[01:52] So let us say we have one low pass filter which is having a cutoff frequency, let's say
+[01:57] FC1.
+[01:58] And let us say we have one high pass filter which is having a cutoff frequency of FC2.
+[02:05] Now whenever we cascade this high pass in the low pass filter, then we will get a overlapping
+[02:10] region between the unusual responses of this high pass in the low pass filter.
+[02:15] And this overlapping region will act as a band pass filter.
+[02:19] So in this way, just by cascading this high pass and the low pass filter, we can design
+[02:24] this band pass filter.
+[02:26] So now if you see the frequency response of this band pass filter, you will immediately
+[02:31] notice that this filter will have a two cutoff frequencies.
+[02:35] The one is known as the lower cutoff frequency and the other frequency is known as the higher
+[02:40] cutoff frequency.
+[02:42] Beyond this cutoff frequency, the role of will be at the rate of 20 dB per decade and
+[02:47] that is particularly true when you design this band pass filter just by cascading the first
+[02:52] order high pass and the low pass filter.
+[02:55] Now the frequency difference between this cutoff frequency is known as the bandwidth of
+[03:00] this band pass filter.
+[03:02] So now let us see some of the parameters which defines this band pass filter.
+[03:07] So as I said earlier, the difference between the two cutoff frequencies is known as the
+[03:11] bandwidth of this filter and the geometric mean of this two cutoff frequencies is known
+[03:16] as the center frequency of this band pass filter.
+[03:20] So for this frequency response, the center frequency will be somewhere around here.
+[03:25] So that will be the center frequency of this band pass filter.
+[03:29] And if you see the phase response of this band pass filter, then the phase response will
+[03:34] look like this.
+[03:36] So as you can see at zero frequency, the output will lead the input by a 90 degree.
+[03:42] And as we move toward the center frequency, the phase difference will gradually reduce.
+[03:48] So now when we start moving away from this center frequency, then the output will start
+[03:54] liking the input signal.
+[03:56] And at f is equal to infinity, the output will lag the input by a 90 degree.
+[04:03] Alright, so now as we have seen the phase and the frequency response of this band pass filter,
+[04:07] so let us take one example based on this band pass filter.
+[04:11] So in this example, we have given this filter and we have been asked to find the bandwidth
+[04:16] of this given filter.
+[04:18] So as you can see in this example, the high pass filter and the low pass filter are
+[04:22] cascaded.
+[04:23] And using this cascade connection, the band pass filter has been designed.
+[04:28] So to find the bandwidth of this filter, first of all, let us find the cutoff frequency
+[04:32] of this individual high pass and the low pass filter.
+[04:35] So let us first of all find the cutoff frequency of this high pass filter.
+[04:40] And let us assume that the cutoff frequency of this high pass filter is FC1 and the cutoff
+[04:45] frequency of this low pass filter is FC2.
+[04:48] Now we know that the cutoff frequency of this high pass filter can be given by the equation
+[04:53] 1 dR by 2 pi into RC.
+[04:57] So now if you put the value of this resistor and capacitor, then we will find the cutoff
+[05:02] frequency FC4, this high pass filter will be around 10.61 kilohertz.
+[05:09] So in this way, we have found this cutoff frequency of this high pass filter as 10.61 kilohertz.
+[05:17] So similarly, now let us find the cutoff frequency of this low pass filter.
+[05:21] So again, the cutoff frequency of this low pass filter can be given by the equation 1
+[05:26] dR by 2 pi into RC.
+[05:29] And if you put the value of this resistor and capacitor, then the cutoff frequency of
+[05:34] this low pass filter will be 106.1 kilohertz.
+[05:40] So in this way, we have found the cutoff frequency of this low pass filter as 106.1 kilohertz.
+[05:49] So now the bandwidth of this band pass filter can be defined as the difference between
+[05:54] these two cutoff frequencies.
+[05:57] So the bandwidth of this band pass filter will be FC2 minus FC1 that is equal to 106.1 minus
+[06:06] 10.61 kilohertz and that is nothing but 95.5 kilohertz.
+[06:13] So roughly we can say that this band pass filter having a bandwidth of 100 kilohertz.
+[06:19] So in this example, now if you see here, we have designed this band pass filter just by
+[06:24] cascading this passive, high pass and the low pass filter.
+[06:28] And as this filter is designed using these passive components, so the actual values of
+[06:33] this cutoff frequencies will be slightly different from the design values.
+[06:38] In the reason is that the input impedance of this high pass filter will affect the cutoff
+[06:42] frequency of this low pass filter and vice versa.
+[06:46] The impedance of this low pass filter will also affect the cutoff frequency of this high
+[06:50] pass filter.
+[06:52] So in this way, because of this cascade connection of the passive filters, the design frequencies
+[06:58] and the actual cutoff frequencies will be slightly different.
+[07:01] And to avoid that, we can isolate the two stages by using the buffer.
+[07:05] So in the last video, we have already seen that by using this open as a buffer, we can
+[07:10] isolate the different stages of this filter.
+[07:13] So instead of using this passive low pass and the high pass filter, we can use this active
+[07:17] low pass and the high pass filter.
+[07:19] And just by cascading these two active low pass and the high pass filter, we can design
+[07:24] this band pass filter.
+[07:26] And by using this open as a buffer, we can isolate the two different stages as well.
+[07:31] And suppose if we want the gain from this active filter, then we can configure this open
+[07:36] either in a inverting or a non-inverting configuration.
+[07:39] So in this way, not only we can isolate the two different stages, but we can also achieve
+[07:44] the gain out of this filter.
+[07:46] So now like we have seen this band pass filter, let us see one more filter whose response
+[07:51] is exactly opposite to that of this band pass filter.
+[07:55] So this filter is known as the band stop filter or a band reject filter.
+[08:00] So this band stop or a band reject filter rejects certain band of frequencies and it passes
+[08:05] all of the frequencies which is out of this particular band.
+[08:09] And if you see the frequency response of this band stop filter, it will look like this.
+[08:14] So like as you can see here, this band stop filter rejects a particular band of frequencies
+[08:20] and it passes all of the frequencies which is beyond this particular band.
+[08:25] So now in the earlier video of resonance in the parallel analysis circuit, we have already
+[08:29] seen that by connecting this resistor, capacitor and inductor in a parallel, we can design this
+[08:34] band stop filter.
+[08:36] And particularly when we take the output across this resistor, then the response of this
+[08:40] parallel analysis circuit will be very similar to the response of this band stop filter.
+[08:45] So for more information, you can check that video on a resonance in the parallel analysis
+[08:49] circuit.
+[08:50] But in this video, we will see that how we can design this band stop filter by using this
+[08:55] low pass and the high pass filter.
+[08:57] So before we see that, first of all, let us carefully see once again the response of
+[09:01] this band stop filter.
+[09:03] So now if you see the response, particularly this portion, this is nothing but the response
+[09:10] of the low pass filter.
+[09:12] And if you see this portion of the response, that is nothing but the response of a high
+[09:18] pass filter.
+[09:19] So in this way, just by adding the responses of this low pass filter in the high pass
+[09:24] filter, we can design this band stop filter.
+[09:28] So now what we can do, we can provide the same input to this both low pass as well as
+[09:32] the high pass filter.
+[09:34] And just by adding their individual responses, we can get this response of a band stop filter
+[09:40] and we can easily achieve this response by using this open circuit.
+[09:45] So as you can see here, this portion is nothing but the high pass filter.
+[09:50] And the lower portion is nothing but the low pass filter.
+[09:53] So as you can see here, we have given the same input to this low pass as well as the
+[09:58] high pass filter.
+[10:00] And just by adding their individual responses by summer circuit, we can design this band
+[10:05] stop filter.
+[10:07] So now to get more idea about this band stop filter, let us take one example.
+[10:11] So in this example, we have been given the design of this active band stop filter.
+[10:17] And in this example, we have been asked to find the stop band of this band stop filter.
+[10:22] So the stop band is nothing but the frequency band which is being rejected by this band stop
+[10:27] filter.
+[10:28] And to find that, first of all, let us find the cutoff frequency of this individual filters.
+[10:33] Let us say the cutoff frequency of this high pass filter is let us say FC1 and the cutoff
+[10:38] frequency of this low pass filter is let us say FC2.
+[10:41] And as we know, the cutoff frequency for this high pass filter can be given by the expression
+[10:46] 1 divided by 2 pi into RC.
+[10:50] And if you put all the values of this resistor and capacitor, then the value of this cutoff
+[10:54] frequency will be 1.59 kilohertz.
+[10:59] Similarly, now let us find the cutoff frequency of this low pass filter.
+[11:04] So the cutoff frequency of this low pass filter can be given by the expression 1 divided by
+[11:09] 2 pi into RC.
+[11:11] And if you put all the values of this resistor and capacitor, then we will get this cutoff
+[11:15] frequency as 994 hertz.
+[11:19] So in this way, we have found the cutoff frequency of this high pass filter as 1.59 kilohertz.
+[11:25] And the cutoff frequency of this low pass filter is 994 hertz.
+[11:30] So the stop band can be given by FC2 minus FC1 that is 1590 hertz minus 994 hertz.
+[11:43] That is nothing but 590 6 hertz.
+[11:47] So we can say that this band stop filter rejects the band of frequencies starting from roughly
+[11:54] around 1 kilohertz and up to 1.6 kilohertz.
+[11:58] So this filter rejects around 600 hertz of frequencies between these two cutoff frequencies.
+[12:05] And it passes all the frequencies which is beyond this cutoff frequencies.
+[12:09] So now so far, this band pass and the band stop filters which we have discussed are the
+[12:14] second order filters.
+[12:16] Because if you see the transfer function of these two filters, they will have a 2 number
+[12:19] of poles in the denominator.
+[12:21] And in another way, if you see these two filters had a 2 number of reactive components
+[12:26] in their circuitry.
+[12:28] So in that sense also, we can say that these two filters were the second order filters.
+[12:32] So now if you want the sharp cutoff, then we can go for the higher order filters.
+[12:38] So I hope in this video you understood about this band pass as well as the band stop filter.
+[12:42] So if you have any question or suggestion, please let me know in the comment section below.
+[12:47] If you like this video, hit the like button and subscribe to the channel for more such
+[12:51] videos.

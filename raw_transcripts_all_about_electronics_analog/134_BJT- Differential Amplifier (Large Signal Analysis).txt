@@ -1,0 +1,171 @@
+Title: BJT- Differential Amplifier (Large Signal Analysis)
+URL: https://www.youtube.com/watch?v=nR1qdbq1Zgk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in the previous video, through qualitative analysis, we understood that how the differential
+[00:16] amplifier rejects the common mode signal and amplifies the differential input signal.
+[00:21] And through a qualitative analysis, we have also seen that when the differential input
+[00:26] is very small, typically in the range of milli-volt, then only this differential amplifier
+[00:32] works in the linear region and amplifies this differential input signal.
+[00:37] So in this video, through a large signal analysis, let us understand it in detail.
+[00:43] Now when we say a large signal, then the signal is typically much larger than the thermal
+[00:48] voltage.
+[00:50] And as you are aware, this thermal voltage BT is typically around 25 milli-volt.
+[00:55] So in this large signal analysis, we will assume that this differential input signal
+[01:00] is much larger than the thermal voltage.
+[01:04] So let us say here V in 1 and the V in 2 are the two inputs of this differential amplifier,
+[01:11] that means differential input V id is equal to V in 1 minus V in 2, right.
+[01:19] And let us say the voltage at this node is equal to V p.
+[01:24] That means if we apply the KVL around this transistor Q1, then we can say that this
+[01:30] voltage Vb1 is equal to voltage V in 1 minus Vp, right.
+[01:38] And similarly around this Q2, we can say that voltage Vb2 is equal to voltage V in 2 minus
+[01:47] Vp.
+[01:48] And if you recall, then this collector current IC is the function of Vb.
+[01:54] That means collector current IC is equal to IS times e to the power voltage Vb divided
+[02:01] by Vt.
+[02:02] Where this IS is the reverse saturation current and the Vt is the thermal voltage.
+[02:08] So for the transistor Q1, we can say that this collector current IC1 is equal to IS1 times
+[02:16] e to the power voltage Vb1 divided by Vt.
+[02:21] And similarly for this transistor Q2, we can say that collector current IC2 is equal
+[02:27] to IS2 times e to the power voltage Vb2 divided by Vt.
+[02:35] Now here, assuming both transistors are manned, let us assume that this IS1 is equal to IS2.
+[02:44] And if we just rearrange these expressions, then we can say that voltage Vb1 is equal
+[02:50] to Vt times natural log of IC1 divided by IS.
+[02:58] Similarly, voltage Vb2 is equal to Vt times natural log of IC2 divided by IS.
+[03:08] Now as we have just seen, this V in 1 minus Vb1 is equal to Vp.
+[03:16] And similarly, this V in 2 minus Vb2 is also equal to Vp.
+[03:24] So in this expression, let us put the value of this Vb1 and the Vb2.
+[03:30] That means we can say that V in 1 minus Vt times natural log of IC1 divided by IS is equal
+[03:40] to V in 2 minus Vt times natural log of IC2 divided by IS.
+[03:49] So if we just rearrange this expression, then we can say that V in 1 minus V in 2 is equal
+[03:56] to Vt times natural log of IC1 divided by IS minus Vt times natural log of IC2 divided
+[04:06] by IS.
+[04:08] Now this V in 1 minus V in 2 is nothing but the differential input voltage.
+[04:14] That means from this, we can say that this differential input voltage Vid is equal to Vt
+[04:21] times natural log of IC1 divided by IS divided by IC2 divided by IS.
+[04:33] That means differential input voltage Vid is equal to Vt times natural log of IC1 divided
+[04:40] by IC2.
+[04:43] So from this, now let us find the expression of this collector current IC1 or the IC2
+[04:48] in terms of this differential input voltage.
+[04:51] So from this, we can say that collector current IC1 is equal to IC2 times e to the power
+[05:01] voltage Vid divided by Vt.
+[05:05] So in this way, we got the expression of the collector current IC1 in terms of the
+[05:10] differential input voltage.
+[05:12] Similarly, let us find the expression of the collector current IC2 in terms of the
+[05:16] differential input voltage.
+[05:18] Now here for the simplicity, let us assume that the alpha is equal to 0 or in other words,
+[05:25] the value of the beta for both transistors are very high.
+[05:29] Now normally, this collector current IC is equal to alpha times a meter current.
+[05:35] But here, assuming alpha is equal to 0, we can say that this collector current IC1 is
+[05:40] equal to IE1 and the collector current IC2 is equal to IE2.
+[05:47] And if you apply the KCN at this node, then we can say that this collector current IE1
+[05:53] plus IE2 is equal to IE.
+[05:57] So here, this current is the IE1 while this current is equal to IE2.
+[06:04] And here, we can say that IC1 plus IC2 is equal to IE.
+[06:12] So in this expression, let us put the value of this IC1.
+[06:17] So by putting this value, we can get the expression of the IC2.
+[06:22] That means IC2 times e to the power voltage VID divided by VT plus IC2 is equal to IE.
+[06:34] And if you further rearrange this expression, then we can say that this collector current
+[06:40] IC2 is equal to IE divided by 1 plus e to the power voltage VID divided by VT.
+[06:52] And once again, by using this expression, we can find the expression of the IC1.
+[06:59] That means if we put the value of IC2 in this particular expression, then we can get the
+[07:05] value of the IC1.
+[07:07] So putting the value of this IC2, we can write this collector current IC1 plus IE divided
+[07:16] by 1 plus e to the power voltage VID divided by VT that is equal to IE.
+[07:26] Or if you further rearrange it, then we can say that this collector current IC1 is equal
+[07:31] to IE times e to the power voltage VID divided by VT divided by 1 plus e to the power voltage
+[07:44] VID divided by VT.
+[07:48] And if you further divide the numerator and the denominator by e to the power voltage
+[07:52] VID divided by VT, then we can say that this collector current IC1 is equal to IE times
+[08:00] 1 divided by 1 plus e to the power voltage minus VID divided by VT.
+[08:09] So in this way, we got the expression of the collector current IC1 and the IC2 in terms
+[08:14] of the IE and the differential input voltage.
+[08:18] And here, let me just also write the expression of the IC2 that is IC2 is equal to IE times
+[08:27] 1 divided by 1 plus e to the power voltage VID divided by VT.
+[08:36] Now let us see the effect of this voltage VID on these two currents.
+[08:40] Now when this voltage VID is much greater than VT, in that case, this term that is e to
+[08:46] the power voltage minus VID divided by VT will be very small.
+[08:51] And in that case, this IC1 is approximately equal to IE.
+[08:56] That means whenever this VID is much greater than VT, then this IC1 is approximately equal
+[09:04] to IE and similarly, in case of the IC2, this e to the power voltage VID divided by VT
+[09:11] will be very large.
+[09:13] That means this IC2 will be approximately equal to 0.
+[09:17] So we can say that when this voltage VID is much greater than VT, then this IC2 is approximately
+[09:25] equal to 0.
+[09:27] Let us say this VID is equal to 10 times VT and typically, this VT is equal to 20 family
+[09:34] world.
+[09:35] That means roughly this differential input voltage is equal to 250 milli volt.
+[09:40] In other words, we can say that this input voltage V in 1 is 250 milli volt greater than
+[09:46] this V in 2.
+[09:48] That means whenever this VID is equal to 10 VT, then this e to the power minus VID divided
+[09:55] by VT will be equal to e to the power minus 10.
+[10:01] And roughly it is equal to 4.5 times 10 to the power minus 5.
+[10:07] That means we can say that in that case, this IC1 is approximately equal to IE.
+[10:14] Similarly, for this IC2, this e to the power voltage VID divided by VT will be equal to
+[10:20] e to the power 10.
+[10:24] That is roughly equal to 22,000.
+[10:27] So in that case, this IC2 will be approximately equal to 0.
+[10:34] That means whenever this VID is 10 times VT, then almost entire current IE flows through
+[10:41] the transistor Q1.
+[10:43] And in that case, the current through the transistor Q2 is approximately equal to 0.
+[10:49] And the reverse is also true.
+[10:51] That means whenever this VID is equal to minus 10 times VT or in other words, when this
+[10:57] V in 2 is 250 milli volt greater than the V in 1, in that case, this IC1 will be approximately
+[11:04] equal to 0.
+[11:06] And the IC2 is approximately equal to IE.
+[11:10] So if we see the curve of this current versus the differential input voltage, then it will
+[11:15] look like this.
+[11:17] That means whenever this differential input voltage is equal to 0, in that case, this IC1 is
+[11:24] equal to IC2 is equal to IE divided by 2.
+[11:29] That means whenever this V in 1 is equal to V in 2, in that case, this IC1 and the IC2
+[11:35] is equal to IE divided by 2.
+[11:39] And whenever this differential input voltage is much greater than 10 times VT, then this
+[11:45] IC1 is approximately equal to IE.
+[11:48] And at that time, this IC2 is approximately equal to 0.
+[11:53] Similarly, when this differential input voltage is much less than minus 10 times VT, then
+[11:59] this IC2 is approximately equal to IE and at that time, this IC1 is approximately equal
+[12:05] to 0.
+[12:07] So assuming this differential input voltage is much greater than 10 times VT, this
+[12:14] current IC1 is equal to IE.
+[12:17] And in that case, this IC2 is equal to 0.
+[12:21] So in this condition, if we see the output voltage V01, then this V01 will be equal
+[12:27] to voltage VCC minus IE times RC.
+[12:33] And for the V02, since IC2 is approximately equal to 0, this V02 is equal to VCC.
+[12:41] That means V01 minus V02 or the differential output voltage is equal to minus IE times RC.
+[12:51] On the other end, when this VID is much less than minus 10 times VT, then the entire current
+[12:58] IE will flow through the transistor Q2.
+[13:01] That means in that case, this IC2 is equal to IE and the IC1 is equal to 0.
+[13:08] So in this condition, V01 will be approximately equal to VCC, while the V02 is equal to VCC
+[13:18] minus IE times RC.
+[13:21] So in this condition, if we see the differential output voltage, that is V01 minus V02 will
+[13:28] be equal to VCC minus IE times RC.
+[13:37] That is equal to IE times RC.
+[13:42] That means as you can see, depending on the differential input voltage, this differential
+[13:47] output voltage will change between these two values.
+[13:51] So this curve shows the change in the differential output with respect to the change in the differential
+[13:56] input.
+[13:57] That means whenever this differential input is equal to 0, in that case, this V01 and
+[14:08] the V02 is equal to VCC minus RC times IE divided by 2.
+[14:14] But for the non-zero differential input voltage, the outputs will vary in this fashion.
+[14:20] So as you can see, only for a very small differential input range, this current current
+[14:25] and the differential output voltage is linearly proportional to this differential input.
+[14:30] So for this differential amplifier to work in the linear region, this differential
+[14:34] input voltage should be very small.
+[14:37] Typically, this differential input should be less than VT by 2.
+[14:42] That means whenever the differential input is less than 10 milli volt at that time only,
+[14:48] this differential amplifier will work in the linear region and it will amplify the differential
+[14:53] input.
+[14:54] But this linear range can be extended by adding the emitter resistor of the same value
+[14:59] to the both transistors.
+[15:01] But the disadvantage of this emitter resistor is that the differential gain of this differential
+[15:06] amplifier will reduce.
+[15:08] So in the next video, using the small signal analysis, we will find the differential and
+[15:13] the common mode gain of this amplifier and we will also see the effect of this emitter
+[15:18] resistor on the gain of the amplifier.
+[15:21] But I hope in this video, through a large signal analysis, you understood what should
+[15:25] be the range of the differential input so that this differential amplifier works in the
+[15:30] linear region and amplifies the differential input.
+[15:34] So if you have any question or suggestion, do let me know here in the comment section
+[15:38] below.
+[15:39] If you like this video, hit the like button and subscribe to the channel for most videos.

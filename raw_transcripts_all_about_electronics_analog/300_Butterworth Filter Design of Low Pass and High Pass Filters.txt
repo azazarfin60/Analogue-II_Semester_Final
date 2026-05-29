@@ -1,0 +1,222 @@
+Title: Butterworth Filter : Design of Low Pass and High Pass Filters
+URL: https://www.youtube.com/watch?v=lc6QT8VjqVc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in the last video, we had seen that different types of filter approximations which are
+[00:26] quite commonly used in the filter design.
+[00:29] So in this video, we will see the Butterworth filter approximation in a detail.
+[00:33] And we will also see how to design the higher order low pass as well as the high pass
+[00:37] filter using this Butterworth filter approximation.
+[00:40] So now in the last video, we had seen that this Butterworth filter has a very flat pass
+[00:45] bend and the roll off of this filter is at the rate of 20 and dB per decade.
+[00:51] So suppose if you are designing the fourth order filter, then the roll off of that filter
+[00:56] will be at the rate of 80 dB per decade.
+[00:59] Or if you are designing the eighth order filter, then that filter will be having a roll off
+[01:04] at the rate of 160 dB per decade.
+[01:07] So first of all, let us see how to design the second order Butterworth low pass filter.
+[01:12] And based on that, we will see how to design the higher order Butterworth filters.
+[01:16] So now if you see the transfer function of any second order low pass filter, then it
+[01:20] can be given by this expression, where here this k represents the gain of that particular
+[01:25] filter and this omega n represents the cutoff frequency of that particular filter.
+[01:30] And if you write this expression in terms of the quality factor Q, then it can be written
+[01:34] in this way.
+[01:35] So first of all, let us understand how to get this transfer function for the second
+[01:39] order low pass filter.
+[01:41] And then after we will see the criteria for the Butterworth filter design.
+[01:44] So in the earlier videos of RC low pass filter, we had seen that just by cascading the
+[01:49] two first order low pass filters, we can get the second order low pass filter.
+[01:53] So first of all, now let us derive the transfer function for this second order filter.
+[01:58] So for the first order filter, we know that the output by input can be given as xc
+[02:04] dR by xc plus r.
+[02:07] Now here xc is nothing but 1 dR by j into omega c.
+[02:12] And suppose if we represent this j omega in s plane that is j omega is equal to s, then
+[02:17] we can write this xc s 1 dR by sc.
+[02:21] So we can write this expression as 1 dR by sc dR by 1 over sc plus r.
+[02:28] For simplification, write it as 1 dR by 1 plus rcs.
+[02:34] So now if we have two such filters, we are cascaded, then we can write that v out by v
+[02:40] in s 1 dR by 1 plus r1 c1 into s into 1 dR by 1 plus r2 c2 into s.
+[02:51] And if we rearrange this expression, then we can write it as 1 dR by r1 c1 into r2 c2
+[02:59] dR by s square plus r1 c1 plus r2 c2 dR by r1 r2 into c1 c2 into s plus 1 dR by r1 r2
+[03:14] into c1 into c2.
+[03:16] So now if you compare this expression with the generalize expression of second order filter,
+[03:21] then indeed you can see that the transfer function of the second order filter is in this
+[03:26] form.
+[03:27] So here this omega naught is equal to 1 dR by under root r1 r2 into c1 into c2.
+[03:36] So in this way you can see the transfer function of any second order low pass filter will
+[03:40] be of this form.
+[03:42] So now whenever we are cascading the two first order low pass filter to design the second
+[03:46] order filter, then the cutoff frequency of the second order filter will not be same as
+[03:50] the first order filter.
+[03:52] Let us say in this design r1 is equal to r2 is equal to r and c1 is equal to c2 is
+[03:58] equal to c.
+[03:59] Then the cutoff frequency fc will be equal to 1 dR by 2 pi into rc.
+[04:06] So now for this filter, the cutoff frequency of the second order filter should be same
+[04:11] as the first order filter.
+[04:12] But rather if you see the cutoff frequency of the second order filter, it will be somewhat
+[04:17] get shifted.
+[04:18] So the cutoff frequency of this second order filter, let us say omega 2c will be equal
+[04:23] to omega into under root 2 to the power 1 by 2 minus 1.
+[04:29] So suppose if you are cascading the nth search first order low pass filters, then the cutoff
+[04:33] frequency of that nth order filter will be equal to omega c into under root 2 to the
+[04:38] power 1 by n minus 1.
+[04:40] So as you can see, the cutoff frequency of that nth order filter will get shifted by
+[04:46] this amount.
+[04:47] So suppose if you are desiring the second order filter of 1 kilohertz, then the cutoff
+[04:53] frequency will not be 1 kilohertz, but it will somewhat different.
+[04:56] While in case of the butterwath filter design, if you see the cutoff frequency will be remain
+[05:01] the same, whether it is a first order filter or it is a higher order, any filter.
+[05:05] So in this way, as you can see, just by cascading this first order low pass filters, we cannot
+[05:10] design this butterwath filter.
+[05:12] Apart from that, in the design, when all the values are equal, that is r1 is equal to
+[05:17] r2 is equal to r and c1 is equal to c2 is equal to c.
+[05:20] Then this transfer function will become k into omega c square, dR by s square plus 2 dR
+[05:28] by rc into s plus omega c square.
+[05:33] So here this 1 over rc is nothing but a omega c.
+[05:36] So for this design, if you see the value of q at the most will be equal to 0.5.
+[05:43] So now this value of q basically represents the amount of picking around that corner frequency
+[05:49] or cutoff frequency fc.
+[05:51] So as the value of q increases, you will see the more amount of picking around that cutoff
+[05:55] frequency.
+[05:56] And as the value of q reduces, you will see the higher amount of attenuation at the cutoff
+[06:01] frequency.
+[06:02] At that time, the filter design is known as the butterwath filter design, because whenever
+[06:08] q is equal to 0.707, then at cutoff frequency, you will see the amplitude will be equal
+[06:13] to 1 by 2 times the maximum value.
+[06:16] So simply just by cascading the 2 first order rc-lopus filter, we cannot design the second
+[06:21] order butterwath filter.
+[06:22] Because to design this butterwath filter, we require the higher value of q and that is
+[06:27] only possible when we have some sort of positive feedback from the output side.
+[06:32] And that is only possible when we have some sort of active component in our circuit.
+[06:37] So one such filter topology, which is quite commonly used for the butterwath filter design
+[06:41] is the silenky filter topology.
+[06:44] So as you can see this topology, in this topology, we have a positive feedback from the output
+[06:49] side.
+[06:50] Or let me read through this circuit.
+[06:51] So as you can see here, here we have a positive feedback from the output to this capacitor
+[06:57] C1.
+[06:58] So this is known as the unity gain silenky-lopus filter design.
+[07:03] And suppose if we want again, then we can connect the feedback resistor between the inverting
+[07:08] and the output side.
+[07:10] And if you see the transfer function of this silenky filter topology, then it can be
+[07:15] given by this expression.
+[07:17] So just by applying the nodal analysis at this node, we can easily achieve this transfer
+[07:23] function.
+[07:24] So try to get this transfer function by yourself.
+[07:27] And if you have any difficulty, then do let me know in the comment section, I will provide
+[07:31] the note for this derivation.
+[07:34] So now suppose if we compare this transfer function, we search generalized form of the
+[07:38] second order filter, that is k into omega c square dR by s square plus omega c into s
+[07:45] dR by q plus omega c square.
+[07:49] Then we will have omega c that is equal to 1 dR by under root r1 r2 into c1 into c2.
+[07:57] And the value of q will be equal to under root r1 r2 into c1 into c2 dR by r1 c1 plus
+[08:07] r2 c2 plus r1 c1 into 1 minus k.
+[08:12] So in this way, as you can see, by choosing the value of this gain and r1 r2 and c1 c2,
+[08:18] we can decide the quality factor of that particular filter.
+[08:22] Or if you want to simplify the design, then let us take the case of when r1 is equal to
+[08:28] r2 is equal to r and c1 is equal to c2 is equal to c.
+[08:33] So in such case, the transfer function can be given by the expression k into omega c
+[08:38] square dR by s square plus s into omega c into 3 minus k plus omega c square, where omega
+[08:49] c is nothing but 1 over rc.
+[08:52] So now as you can see here, for this design, the quality factor q can be given by 1 dR
+[08:59] by 3 minus k.
+[09:01] So when r1 is equal to r2 is equal to r and c1 is equal to c2 is equal to c, then the
+[09:06] quality factor q only depends upon the value of the gain.
+[09:10] So just by adjusting the gain of this filter, we can get the different values of the q.
+[09:16] But the main limitation of this design is that you cannot have a gain more than 3, because
+[09:21] as the gain approaches the value of 3, then the quality factor q will approach the value
+[09:26] of infinity.
+[09:27] And then the system will become unstable.
+[09:31] So for this design, the value of k will be always less than 3.
+[09:35] Now we had seen that for the butterworth filter design, the value of q should be equal to
+[09:41] 0.707.
+[09:43] So we can say that 0.707 should be equal to 1 dR by 3 minus k.
+[09:49] Or we can say that 1.414 that is equal to 3 minus k.
+[09:55] Or if you simplify it, then we will get k as 1.586.
+[10:02] Now we know that the gain of this filter k will be equal to 1 plus r4 by r3.
+[10:08] And the value of k should be equal to 1.586.
+[10:14] So for the butterworth filter design, the ratio of r4 by r3 should be equal to 0.586.
+[10:21] So let us say if you have a r3 that is equal to 10 kilo ohm, then the value of r4 should
+[10:27] be equal to 5.86 kilo ohm for the butterworth filter design.
+[10:31] So in this way, by just changing the value of gain, we can design the butterworth filter
+[10:36] design using this silengy filter topology.
+[10:39] And in this way, just by cascading the multiple such second-order filters, we can design the
+[10:44] higher-order filters.
+[10:46] So to design these higher-order filters, we generally used to use these polynomials.
+[10:50] So let us understand how we are right to these polynomials.
+[10:54] So in this transfer function, let us say we are designing the Lopas filter for the frequency
+[10:59] omega is equal to 1 radian per second.
+[11:02] So this term 1 over r1, c1 into r2, c2 will be become 1.
+[11:07] So we can write this expression as k dR by s2 plus and we know that the quality factor
+[11:15] q for the butterworth filter design is 0.707.
+[11:18] So we can write this expression as k dR by s2 plus 1.414s plus 1.
+[11:27] So that is the polynomial for the second-order butterworth filter design for the frequency
+[11:32] of 1 radian per second.
+[11:34] So in this way, if we want to design the higher-order filters, then just by using these
+[11:39] filter polynomials, we can design the higher-order filters.
+[11:43] So let us try to design the third-order butterworth Lopas filter, which is having a transfer
+[11:48] function of s plus 1 into s2 plus s plus 1.
+[11:53] So for that, we need to cascade the second-order filter with the first-order filter or in terms
+[11:58] of the filter design, if we say we need to cascade the second-order silent key butterworth
+[12:03] Lopas filter with the first-order rc Lopas filter.
+[12:08] And in this design, we will use this polynomial that is s plus 1 into s2 plus s plus 1.
+[12:16] Let us say in this design, we want to design the cut-off frequency of this filter as 1 kHz.
+[12:23] So instead of having this s is equal to 1, now in the design, we will have a cut-off frequency
+[12:28] of 1 kHz.
+[12:30] So we know that fc is equal to 1 dR by 2 pi into rc.
+[12:35] So let us assume the value of c that is equal to 0.1 micrifier a day.
+[12:40] So the value of r will be equal to 1 dR by 2 pi into fc.
+[12:46] So if you put these values, then we will get rs 10 to the power 4 dR by 2 pi and that
+[12:52] is equal to 1.59 kHz.
+[12:56] So in this way, just by choosing the value of r1, r2 and r5 as 1.59 kHz and value of c1,
+[13:07] c2 and c5 as 0.1 micrifier a day, we have ensured that this filter will have a cut-off
+[13:14] frequency of 1 kHz.
+[13:16] So apart from that, we also need to ensure that the quality factor q of this filter will
+[13:20] be equal to 1.
+[13:22] Now to achieve this value of q is equal to 1 in this filter design, the value of 1 over
+[13:27] 3 minus k should be equal to 1 or to say the value of k will be equal to 2.
+[13:35] Or in another way, we can say that r4 dR by r3 plus 1 should be equal to 2 or we can
+[13:41] say that r4 is equal to r3.
+[13:44] So let us assume that the value of r4 and r3 is 10 kHz.
+[13:51] So just by using these values, we can ensure that we will have a third order low pass
+[13:56] butterworth filter which is having a cut-off frequency of 1 kHz.
+[14:00] So in this way, just by using these polynomials, we can design the any order butterworth low
+[14:04] pass filter with our given particular frequency.
+[14:07] If you understood so far how to design this butterworth low pass filters, then you will
+[14:12] easily understand that how to design the butterworth high pass filters.
+[14:16] So in this butterworth high pass filter design, we just need to interchange the position
+[14:20] of this capacitor and the resistor.
+[14:22] So as you can see here, we have interchanged the position of this capacitor and the resistor.
+[14:27] So this same saloon ketopology will act as a second order high pass filter.
+[14:33] And if you use the transfer function of this high pass filter, then it will be given
+[14:37] by this expression.
+[14:39] And in this expression, whenever you put the value of r1 is equal to r2 is equal to r and
+[14:45] c1 is equal to c2 is equal to c.
+[14:47] Then the denominator of this transfer function will be identical to that of the low pass filter.
+[14:53] So now the transfer function, v out by v in, will be equal to k into a square dR by s square
+[15:00] plus s into omega c into 3 minus k plus omega c square.
+[15:08] So this is how the transfer function of the high pass filter can be given.
+[15:12] So now in this design, the value of q should be equal to 0.707 for the butterworth filter
+[15:18] design.
+[15:19] And for that design, again you will find that that ratio of r4 by r3 should be equal to
+[15:25] 0.586.
+[15:28] So the procedure which we have followed for the low pass filter design, the same procedure
+[15:32] can be followed for this high pass filter design.
+[15:35] So just by interchanging the value of this capacitor and the resistor, we can design this butterworth
+[15:40] high pass filters.
+[15:42] And in this design, we can use the same polynomials which we had used for the low pass filter design.
+[15:48] So suppose if you want to design the third order filter, then just by cascading the second
+[15:52] order filter with the first order filter, we can design the third order filter.
+[15:56] Likewise by cascading the second order filters, we can design the fourth order butterworth
+[16:01] high pass filter.
+[16:03] And for this design, we can use the same polynomials which we had used for the low pass filter design.
+[16:08] So as an exercise, try to design the fourth order butterworth high pass filter which is
+[16:13] having a cutoff frequency fc of 10 kilohertz.
+[16:17] And do let me know your design values in the comment section below.
+[16:21] So I hope in this video you understood how to design this butterworth low pass as well
+[16:24] as the high pass filter using this silenky filter topology.
+[16:27] Similarly, in the upcoming videos, we will see how to design the basal as well as the
+[16:32] chabit shu filters using this silenky filter topology.
+[16:36] So if you have any question or suggestion, do let me know in the comment section below.
+[16:40] If you like this video, hit the like button and subscribe to the channel for more such
+[16:44] videos.

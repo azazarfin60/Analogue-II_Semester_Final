@@ -1,0 +1,1609 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Differential Amplifier | Ankit Goyal
+URL: https://www.youtube.com/watch?v=FYldZj82Fb4
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and I welcome you all to the last session of BJT Bipolar Junction Transistor which is going to be differential amplifier.
+[00:21] Today is your last session, today your BJT is going to be wind up, then tomorrow we will discuss all the assignments and from Monday we are going to start FET that is the field effect transistor.
+[00:35] So quickly kids, once we will like the session, we will share it, we will fire it completely because today you are going to have a lot of fun.
+[00:44] As you saw the multi stage amplifier which you saw in the last session, what did you see?
+[00:50] You saw that you had read the AC model of BJT.
+[00:55] You have derived all the parameters using them, whether it was input resistance, whether it was output resistance, whether it was gain and whether it was your current gain.
+[01:12] Right? Today we will do the same thing, even in differential amplifiers, it takes more than one transistor but we will solve it fundamentally.
+[01:21] We will solve it fundamentally with our basic concepts.
+[01:26] So first of all, before we move ahead, you tell me one thing quickly that you are clearly multi stage amplifier.
+[01:35] Multi stage amplifier is clearly clear. In the first session, I told you some generic things like interacting, non-interacting stages,
+[01:43] you talked about lower cut-off frequency gain, you talked about loading effect.
+[01:50] Then I told you about the cascode amplifier, Darlington pair, I also conducted trans conductance gain in the cascode.
+[01:58] Okay, input resistance, output resistance. The biggest benefit of the cascode was that it has a wide band amplifier.
+[02:05] So the high frequency signal, as you can imagine, if it is a video frequency signal, then you can amplify it from the cascode.
+[02:13] And the biggest benefit of Darlington pair was that its input resistance was very high, which was 1 plus beta square into RE,
+[02:22] which was very high, its input resistance.
+[02:25] Okay, and what was the benefit of the cascade? It was high gain, so it was high gain in the cascade, there was bandwidth in the cascode,
+[02:32] and in Darlington pair, input resistance was high.
+[02:36] Today we are going to see a new type of amplifier, differential amplifier.
+[02:41] The name of this amplifier is called differential amplifier.
+[02:46] It amplifies the difference of the two inputs.
+[02:50] There are two inputs in it, and it amplifies their difference, that is, their subtraction.
+[03:00] So let's start today's discussion. Are you ready, everyone? Tell me quickly.
+[03:04] Are you ready, everyone?
+[03:06] The fun is still coming, BJT is getting cleared well.
+[03:09] I believe that the topic of analogue is such that all the people are scared, all the people are scared.
+[03:16] The current gain is also very high, the current gain is also very high of Darlington.
+[03:22] Okay, but Darlington's darling has become your type.
+[03:27] What does this mean? When auto corrects something, it means that word is used a lot.
+[03:33] Now do you understand the sign? What is Susan doing these days?
+[03:37] So let's move towards the differential amplifier.
+[03:41] So differential amplifier is a circuit that amplifies the difference of two input voltage.
+[03:50] Okay, we will see what its use is in the future.
+[03:53] But the fun here is that if V1 and V2 are two input voltages,
+[04:01] you have two input voltages, V1 and V2,
+[04:08] then what will Darlington pair do?
+[04:11] The V0 that will be A, V1 minus V2.
+[04:18] What will it give? A, V1 minus V2.
+[04:22] Okay, so you have the difference of both the voltages multiplied by a gain.
+[04:29] Here A is, you can also call it A.
+[04:34] Difference mode gain.
+[04:40] That is, the gain offered to the difference,
+[04:43] or you can call it A, differential gain.
+[04:47] What can you call it? Differential gain.
+[04:57] Okay, differential gain. You can call it that.
+[05:00] This is clear. What is the differential amplifier?
+[05:03] Now look, the circuit of differential amplifier is of this type.
+[05:07] There are two BJTs in it.
+[05:09] One input is applied on the base of both the BJTs.
+[05:13] One output is made on the collector of both the BJTs.
+[05:17] So one input is applied on the base of both the BJTs.
+[05:20] One output is applied on the collector of both the BJTs.
+[05:22] And here both the emitter is coupled.
+[05:26] Both the emitter is coupled.
+[05:28] So you call it emitter-coupled differential amplifier.
+[05:33] Why emitter-coupled?
+[05:35] Because both the emitter is short-circuited.
+[05:39] So when you have connected the emitter terminals together,
+[05:48] then it is said to be emitter-coupled.
+[05:54] Now look, there are two inputs and two outputs in it.
+[05:58] With this logic, there can be four combinations of inputs and outputs.
+[06:03] As per this, four configurations of differential amplifier are defined.
+[06:09] So look, there are two terminal inputs of both the BJTs on each base.
+[06:13] And there are two terminal outputs of both the BJTs on each collector.
+[06:17] You can generate four combinations of these two combinations.
+[06:22] And these four combinations are the four configurations of a differential amplifier.
+[06:30] Okay, that's good.
+[06:32] Now sir, in NPN Transistor, we know VCC.
+[06:35] Why did you put minus VEE under it?
+[06:39] Can we make it without it or not?
+[06:42] Look dear, the logic here is so much that if you look at the base,
+[06:48] you didn't supply any DC on the base.
+[06:51] Correct.
+[06:52] You didn't supply any DC on the base.
+[06:57] That is, the base's DC voltage is zero.
+[07:00] The base's DC voltage is zero.
+[07:02] But if this amplifier is there, then BJT has to go to the active region.
+[07:07] If BJT has to go to the active region, then the base emitter junction has to be forwarded.
+[07:12] To forward it, then the emitter has been supplied with a negative supply.
+[07:17] If you are giving the base zero, the voltage of the base should be more than the emitter,
+[07:22] then give the emitter a negative.
+[07:25] Because there is no DC supply of any type on the base.
+[07:30] Do you understand what I am saying?
+[07:32] So we are saying, no DC supply or no DC biasing at base terminal.
+[07:41] So, ammeter is connected to minus VEE in order to make a DC supply.
+[08:10] Base emitter junction forward biased.
+[08:21] Okay.
+[08:22] Base emitter junction forward biased.
+[08:29] Do you understand?
+[08:31] So, the base emitter junction has to be forward biased so that BJT operates in which region?
+[08:38] In the active region.
+[08:41] Otherwise, it won't be an amplifier, right?
+[08:44] Tell me, is everyone clear up to here?
+[08:49] Shivam, dear, I have passed this feedback to the team.
+[08:52] It will take some time.
+[08:53] Maybe this will happen.
+[08:54] I will not confirm that it will happen.
+[08:57] But it will take some time.
+[08:59] Even if it happens, it will take time.
+[09:01] Okay.
+[09:02] Because in those videos, whatever things are objectionable,
+[09:06] the reason why Anacademy has privated them,
+[09:09] they will have to trim and remove them,
+[09:12] then that thing can be public.
+[09:14] So, see, if any video is privated on any channel of Anacademy,
+[09:20] that is because it violates certain guidelines,
+[09:23] that there are some guidelines, there is some behavioral issue,
+[09:25] there is some controversial thing in it,
+[09:28] the reason why it is privated,
+[09:30] either it is trimmed so that the team gets time,
+[09:33] or else it should be privated.
+[09:37] Zainul, dear, now you will do this.
+[09:39] Really.
+[09:40] Now you will do this, dear.
+[09:42] Zainul is saying that in the last lecture of BJT,
+[09:45] that in the active region,
+[09:46] amateur-based junction reverse bias happens.
+[09:49] Now tell me.
+[09:51] And we are studying differential amplifier.
+[09:53] We are studying Pi model, T model.
+[09:57] Now the thing is, look,
+[09:59] when there is a differential amplifier,
+[10:01] then there are two outputs in it,
+[10:03] each and every output is connected to the collector.
+[10:06] Okay.
+[10:07] Both the terminals,
+[10:08] both the collectors are connected to each and every output.
+[10:12] So, there are two possibilities for the output here.
+[10:17] The first is
+[10:23] balanced
+[10:26] output
+[10:31] What does balanced output mean, dear?
+[10:34] That you are taking the difference
+[10:37] between the two collectors.
+[10:42] You can also call this balanced output
+[10:44] a dual-ended output.
+[10:47] What can you say?
+[10:49] Dual-ended output.
+[10:52] Okay.
+[10:53] Or you can call it differential output.
+[10:57] Basically, what are you doing?
+[11:00] You are considering the voltage
+[11:04] between the two collector terminals.
+[11:06] Look, if I show it diagrammatically,
+[11:09] like this.
+[11:14] Like this.
+[11:16] Like
+[11:17] V01
+[11:19] V02
+[11:21] we are saying that the V0 is taking
+[11:23] both the differences between the two.
+[11:25] So,
+[11:26] if I show it in this diagram,
+[11:28] we can say that the V0 is taking
+[11:30] both the differences between the two.
+[11:32] So,
+[11:33] we are saying that the V0 is taking
+[11:36] both the differences between the two.
+[11:38] Now do you know what is the benefit in V01 minus V02 that both the transistor's biasing is the same here.
+[11:49] Both the transistors are identical, both the resistances are identical, both the biasing is identical.
+[11:55] So the DC voltage on both the collectors will also be equal.
+[12:03] So while taking the difference, DC voltage will get cancelled out.
+[12:08] That means no DC will be available in the output.
+[12:12] So what am I saying here?
+[12:14] I am saying that both the transistors are identical.
+[12:27] They have the same biasing, same RC, so same DC output at the collector.
+[12:52] So both the collectors have the same DC output.
+[12:56] This is why you can say that therefore DC voltage at output is equal to zero.
+[13:09] Finally the DC voltage will be zero.
+[13:14] Oh God, why do you come here to spam?
+[13:20] You don't even know which syllabus is in which exam is asked.
+[13:26] No one knows anything.
+[13:28] Just send it, someone has come here to sing a song.
+[13:32] So here your DC output will be zero.
+[13:37] Therefore V0 contains only AC.
+[13:50] Only AC will be available in V0.
+[13:53] Is this clear?
+[13:55] Is this clear?
+[13:57] So when you take a balanced output, then only AC is available in the output.
+[14:03] No DC is available here.
+[14:06] Why didn't you take DC on the base?
+[14:10] Where else?
+[14:13] Where else?
+[14:15] I didn't use VCE.
+[14:18] What you did was dual supply bias.
+[14:21] Don't you remember?
+[14:23] Don't you remember dual supply bias?
+[14:27] Tell me.
+[14:29] Dual supply bias had a VCC and a minus VEE in it.
+[14:33] Renu, I am blocking you.
+[14:35] Go to the channel where you have to go and study.
+[14:38] Don't waste time here, please.
+[14:45] Okay.
+[14:47] Okay?
+[14:49] So here only your AC will be available in V0, not DC.
+[14:54] Do you know what could be the second possibility?
+[14:57] What could be the second possibility?
+[15:01] The second possibility is unbalanced output.
+[15:05] That means you only take output from one collector terminal.
+[15:09] You don't take output from both.
+[15:11] Unbalanced output.
+[15:13] Okay?
+[15:15] Single ended output.
+[15:20] You take it from this type.
+[15:23] Okay?
+[15:31] Now what's here?
+[15:36] Both your ammeters are coupled.
+[15:50] But your output terminal is from one side.
+[15:56] Only this.
+[15:58] Do you understand?
+[16:00] Now if it is from one side,
+[16:03] then what happens here?
+[16:05] Both AC and DC are present in V0.
+[16:10] Correct?
+[16:12] Both AC and DC are present in V0.
+[16:16] So we are saying we connect output
+[16:20] we connect output
+[16:23] at only
+[16:25] one collector terminal
+[16:29] at only one
+[16:32] collector terminal.
+[16:40] Okay?
+[16:42] Therefore
+[16:44] output contains
+[16:49] AC
+[16:51] as well as DC.
+[16:54] Okay?
+[16:55] In output AC and DC
+[16:57] both are going to come.
+[16:59] This is clear.
+[17:01] So in single ended output
+[17:03] you will get AC and DC
+[17:06] and in balanced output
+[17:08] you will get only AC.
+[17:11] This is clear.
+[17:13] This is clear.
+[17:15] Now there can be two types of inputs.
+[17:17] As I told you,
+[17:18] there are two inputs and two outputs.
+[17:19] So there will be four combinations.
+[17:21] So you have seen two types of outputs.
+[17:24] Similarly, there can be two types of inputs here.
+[17:28] Whether you put input on one terminal
+[17:31] or put it on another terminal.
+[17:34] Either put it on both or put it on one.
+[17:37] Now Aman is saying,
+[17:38] what is the benefit of 2 BJT?
+[17:40] This is only an operating mode.
+[17:42] I want a differential amplifier.
+[17:44] So how much can I run?
+[17:47] I have four terminals available.
+[17:49] If I want, I can take output from both.
+[17:52] If I want, I can take output from one.
+[17:54] This is my choice.
+[17:56] When I made a differential amplifier,
+[17:58] I made it from four terminals.
+[17:59] Two inputs and two outputs.
+[18:02] Where is the second V0?
+[18:04] It was here.
+[18:05] But I didn't use it.
+[18:06] I took it directly from this terminal
+[18:08] in the respect of the ground.
+[18:10] Meaning,
+[18:12] V0 is
+[18:14] voltage
+[18:16] of
+[18:18] one collector terminal
+[18:20] with respect to ground.
+[18:22] Okay.
+[18:24] This will be it.
+[18:26] Yes.
+[18:28] In the second, differential output.
+[18:30] No, it is not about differential output.
+[18:32] Aman, now I will derive.
+[18:34] You will get differential output only.
+[18:36] For differential output,
+[18:37] there are two inputs.
+[18:38] There are two outputs.
+[18:40] You should understand that
+[18:42] there are two outputs.
+[18:44] You should understand that
+[18:46] there are two outputs.
+[18:48] There are two outputs.
+[18:50] You should understand that
+[18:52] I want V1 minus V2.
+[18:54] V1 and V2 are inputs.
+[18:56] I am not talking about inputs here
+[18:58] that I am putting two inputs or one input.
+[19:00] I am saying that I took output
+[19:02] from just one terminal.
+[19:04] Meaning,
+[19:06] common emitter amplifier
+[19:08] with coupling capacitor.
+[19:10] Now, this is without coupling capacitor.
+[19:12] So, both are common emitter
+[19:14] amplifiers.
+[19:15] I have not shown bypass capacitor.
+[19:17] I have not shown coupling capacitor.
+[19:19] When does coupling capacitor have to be shown?
+[19:21] When AC and DC are on the base,
+[19:23] both are required.
+[19:25] So, to separate both,
+[19:27] coupling capacitor is applied.
+[19:29] But I have not applied DC on the base.
+[19:31] Instead, I have given
+[19:33] negative voltage on emitter.
+[19:35] So, I have biased the base emitter junction
+[19:37] forward.
+[19:39] Do you understand, Krutibas?
+[19:41] When do I need coupling capacitor
+[19:43] when I have to separate AC and DC?
+[19:45] But there is no DC on the base.
+[19:47] There is no DC on the base.
+[19:49] What does AC look like on the base?
+[19:51] Because where have you given DC on?
+[19:53] On emitter.
+[19:55] So, I will tell you further
+[19:57] the purpose of differential amplifier
+[19:59] is to replace
+[20:01] common emitter amplifier
+[20:03] in an integrated
+[20:05] circuit IC.
+[20:07] In IC, common emitter amplifier
+[20:09] is used to replace the common emitter amplifier.
+[20:11] That is why
+[20:13] we do not apply capacitor here.
+[20:15] Because the IC
+[20:17] if you go to
+[20:19] fabricate the capacitor,
+[20:21] it will consume a lot of area.
+[20:23] And we want electronic devices.
+[20:25] The less fabricated in the area,
+[20:27] the better.
+[20:29] The smaller the size,
+[20:31] the better.
+[20:33] So, if we want to keep small size,
+[20:35] I do not want to fabricate the capacitor.
+[20:37] And who can
+[20:39] save you from the fabrication of the capacitor?
+[20:41] Differential amplifier.
+[20:43] If you use common emitter amplifier normally,
+[20:45] then you need a coupling capacitor
+[20:47] in it.
+[20:49] You also need a bypass capacitor in it.
+[20:53] Zanul, see what will happen if you take
+[20:55] the output from both the terminals,
+[20:57] then you are taking the difference of both the outputs.
+[20:59] So, if there is a 5-5V DC in both,
+[21:01] then it is cut off from both.
+[21:03] If both the VCE is 5-5,
+[21:05] then 5-5 DC is cancelled.
+[21:09] That is why we did not apply DC on the base
+[21:11] so that we do not have to apply the coupling capacitor.
+[21:13] Is it clear that there is a picture here?
+[21:15] If there is any other doubt,
+[21:17] then I will move forward.
+[21:19] The picture is completely clear here.
+[21:23] Okay?
+[21:25] Let's talk about types of input.
+[21:29] Let's talk about types of input.
+[21:33] So, the first type of input is
+[21:35] dual input
+[21:37] or
+[21:41] balanced input.
+[21:47] Okay?
+[21:49] Or dual-ended input.
+[21:51] Okay?
+[21:53] Dual input or
+[21:55] balanced input.
+[21:57] Do not write balanced input because
+[21:59] you will get confused.
+[22:01] You can write this as differential input.
+[22:03] Because if you write
+[22:05] dual input, then you can write V1-V2.
+[22:07] Differential input.
+[22:09] Okay?
+[22:11] What happens in this?
+[22:15] Two AC sources
+[22:17] are connected
+[22:21] are connected
+[22:27] at
+[22:29] base terminals
+[22:31] of two transistors
+[22:35] .
+[22:45] So, on two base terminals,
+[22:47] you have connected two AC sources.
+[22:49] So, what will you say here?
+[22:51] Here, you will say
+[22:53] that you have dual input.
+[22:55] The V0 in dual input
+[22:57] is actually
+[22:59] proportional to
+[23:01] V1-V2.
+[23:03] Do you know
+[23:05] what is the benefit of this?
+[23:07] Look, if there is a noise signal
+[23:09] or undesired signal
+[23:11] that is being induced externally,
+[23:13] then the noise signal is considered
+[23:15] to be common in both inputs.
+[23:17] Why?
+[23:19] Because why would noise treat
+[23:21] one input separately?
+[23:23] Suppose there is
+[23:25] interference from the circuit
+[23:27] or there is an
+[23:29] EMF induced from the circuit.
+[23:31] There is not any terminal priority.
+[23:33] For that, both terminals are equal.
+[23:35] So, we say that
+[23:37] if any external noise comes
+[23:39] then it will be equal in both inputs.
+[23:41] If it is equal in both inputs,
+[23:43] what does this mean?
+[23:45] What does this mean, my children?
+[23:47] This means that
+[23:49] noise will get cancelled out in the
+[23:51] output.
+[23:53] Very good, Sai.
+[23:55] Noise gets cancelled out in the output.
+[23:57] So, we are saying noise
+[23:59] equally affects
+[24:01] noise
+[24:03] equally affects
+[24:05] both inputs
+[24:09] both inputs
+[24:11] and hence
+[24:13] the noise
+[24:15] and hence
+[24:17] the noise
+[24:19] gets cancelled out
+[24:21] at the output.
+[24:25] Gets cancelled out
+[24:27] at the output.
+[24:37] Okay, bro.
+[24:39] Is the light on?
+[24:41] Is the light on in a good way?
+[24:43] Isn't it?
+[24:45] This is absolutely correct, Krithibas.
+[24:47] This is very good. Noise gets cancelled out.
+[24:49] And the question of Divya is
+[24:51] V0 can be negative.
+[24:53] Divya, think about it.
+[24:55] What are those two BJTs?
+[24:57] They are both BJTs
+[24:59] your common emitter amplifier.
+[25:01] Who is the common emitter?
+[25:03] And in the common emitter,
+[25:05] you know the shift of 180 degree.
+[25:07] In the common emitter, you know
+[25:09] your gain is negative.
+[25:11] So, this is not the question.
+[25:13] V0 can be negative.
+[25:17] Now, look at the single input.
+[25:19] If you put
+[25:21] only one input,
+[25:23] what will we do with the second input?
+[25:25] Instead of the second input, it is
+[25:27] grounded.
+[25:29] What is done?
+[25:31] Make one base terminal
+[25:33] grounded.
+[25:35] Make one base terminal
+[25:37] grounded
+[25:39] and
+[25:41] and
+[25:43] and
+[25:45] connect source
+[25:49] connect source
+[25:51] at
+[25:53] other base terminal
+[25:55] at other
+[25:57] base terminal.
+[26:03] Okay.
+[26:05] You have grounded one place
+[26:07] and put a source in one place.
+[26:09] Right?
+[26:11] You have put a source in one place.
+[26:13] This is clear.
+[26:15] But what will happen with this?
+[26:17] Noise will not get cancelled out.
+[26:19] Okay. Now, the noise
+[26:21] will not get cancelled out.
+[26:23] So, what will you say here?
+[26:25] Noise will be present
+[26:27] at the output.
+[26:31] Noise
+[26:33] will be present at
+[26:35] output. Now, think about one thing.
+[26:37] There can be four combinations.
+[26:39] How can there be four combinations?
+[26:41] You take
+[26:43] dual input.
+[26:45] But if you take the output from both,
+[26:47] dual input, balanced output.
+[26:49] You take the input from both.
+[26:51] But take the output from one.
+[26:53] Dual input, unbalanced output.
+[26:55] You take the input from one.
+[26:57] Take the output from both.
+[26:59] Single input, balanced output.
+[27:01] You take the input from one.
+[27:03] Take the output from one.
+[27:05] Single input, unbalanced output.
+[27:07] Do you understand?
+[27:09] There are two possibilities of input.
+[27:11] There are two possibilities of output.
+[27:13] There are four combinations combined.
+[27:15] four combinations are combined. Do you understand? So, my dear, the first case I will analyze,
+[27:23] I will do the dual input balance output, I will take both the inputs, I will take both the outputs,
+[27:29] and later, later, we will keep zero in it. If I take one input, I will zero the other one,
+[27:36] if I take one output, I will ignore the other one. Do you understand? So, what did I say?
+[27:42] Look, dual input, dual input, balance output, take one input, but take both the outputs.
+[27:49] Dual input, unbalanced output, take both the inputs and take one output.
+[27:55] Then single input, take both the balanced output, single input, take one output,
+[28:02] then single input, unbalanced output. There can be four combinations like this, right?
+[28:06] Do you understand? Tell me, darling, where did you go?
+[28:14] You were writing darling, darling, now you are not telling. Do you understand?
+[28:18] Come on, very good. So, this is clearly clear. Come on, now let's do the analysis.
+[28:24] So, first of all, we will do DC analysis. In DC analysis, I have grounded both the AC sources.
+[28:36] Ground AC supply at both base terminals. At both base terminals.
+[28:50] Okay?
+[28:57] Okay? You grounded AC supply on both the bases.
+[29:02] Now, brother, both the supply identical, both the resistance identical, both the transistor identical, right?
+[29:09] Both the transistor identical, supply identical, resistance identical.
+[29:14] So, according to symmetry, if the current is IE in RE, then half current will go in both, IE by 2 and IE by 2.
+[29:23] Okay? Both the transistor are identical, supplies are identical, resistances are identical,
+[29:53] so this means current, currents are equal in both the transistor.
+[30:03] Okay? Now, what should we do, dear? Now, you can put your KVL.
+[30:11] What do you do to get IE? You see from here, do this and put KVL.
+[30:18] Because IE is here, then AC parameter is here, right? What will be the name of it?
+[30:23] Now, according to biasing, you can't say anything, right? If you want to give the name of Deepak, then you will have to see AC input and output.
+[30:31] What is the input and output of biasing? What is the work of biasing? Just establish the Q point, right?
+[30:37] So, look, 0 minus VBE minus IE RE is equal to minus VEE.
+[30:48] So, IE is from here, right? VEE minus VBE over RE.
+[30:57] Now, if you want RE, right? Then you know VT upon IE.
+[31:06] Or you have RE and if you want R naught, then VA upon IC.
+[31:14] This will come. Okay? Tell me, is everyone clear here?
+[31:20] Tell me, is everyone clear here? Tell me quickly. If it is clear, then I will move forward.
+[31:34] And by the way, practically, the single input doesn't use. Because if you want to use single input, then what is the point of making a differential amplifier?
+[31:45] At least, you are calling a differential amplifier that it will amplify the difference.
+[31:49] So, you will have to give two inputs for the difference. Otherwise, what is the difference?
+[31:54] So, practically, dual input can be taken as unbalanced output and dual input can be taken as balanced output.
+[31:59] But we will cover all four configurations. Don't you worry about it.
+[32:04] We will cover all four configurations so that you can understand everything well.
+[32:09] Is everything clear here? Tell me, is everyone clear here?
+[32:14] Now, let's move on to AC analysis. In this, I use a T-Model in AC analysis.
+[32:20] To do it, you can use the RPI model. To do it, you can use the beta IB model.
+[32:27] But remember yesterday, I used a T-Model in the CAS code. I will use that.
+[32:31] Okay? What was in the T-Model? Your base was common.
+[32:36] So, you put a VS1 on the base. Look at it.
+[32:41] Here, you put an alpha IE.
+[32:50] Alpha IE1. No, this is not alpha IE1. Actually, there will be resistance on the emitter.
+[33:01] R-E. Okay? There was a resistance on your emitter on the first transistor.
+[33:07] R-E. Now, you put it on the base.
+[33:13] Wait a minute. I want to connect emitter to emitter.
+[33:19] First, you put a voltage source on the base. See, this is the base.
+[33:27] VS1. Okay? This is the base.
+[33:32] To do it, you can also use the beta IB model. But I will use the T-Model.
+[33:38] I will use the T-Model. Now, look.
+[33:42] Here, I am showing the emitter. If you show the resistance with the emitter, then you have to show the R-E.
+[33:50] Okay? How much resistance is there between the emitter and the ground?
+[33:56] The resistance between the emitter and the ground is R-E. Okay? R-E.
+[34:05] Here, you show a current between the base and the collector.
+[34:11] If you are showing this IE like this, then it will be alpha IE1.
+[34:19] Here comes the collector. The resistance between the collector and the ground is R-C.
+[34:25] Do you understand this? The R-C will come between the collector and the ground.
+[34:29] I think the model has been cleared up to this point.
+[34:32] Usually, you would show emitter in the left and the collector in the right.
+[34:36] This time, I showed the collector in the left and the emitter in the right.
+[34:40] Do you know why the emitter is shown in the right? Because I have to connect both the emitter.
+[34:45] I have to connect both the emitter. And this is VCC between the ground.
+[34:49] That is why the R-C has come between the collector and the ground.
+[34:52] That is why the VCC has come between the ground.
+[34:55] Now, look at the second transistor.
+[34:59] It will also have R-E.
+[35:03] Here comes the base.
+[35:06] This current is IE2.
+[35:09] Here, the base will have a voltage of VS2.
+[35:17] Okay?
+[35:21] And then you must have put a current source here.
+[35:27] It is fun, isn't it? Look, everything is happening in a circuit.
+[35:30] It is a basic circuit.
+[35:33] There is no need to put any thought in it.
+[35:37] There is no need to put anything in it.
+[35:39] Here is the R-C.
+[35:41] And I have to take the output on both the collectors.
+[35:46] I have to take the output on both the collectors.
+[35:49] This is V01 and this is V02.
+[35:55] Okay? This is happening, isn't it?
+[35:57] Now, I will tell you here that when you put a KVL,
+[36:02] then you put it in two loops.
+[36:04] One is like this.
+[36:05] Loop 1 and one KVL is like this.
+[36:10] Loop 2.
+[36:12] Just keep in mind that the current in this resistance
+[36:16] that is what?
+[36:18] IE1 plus IE2.
+[36:22] Did you understand?
+[36:23] If you understood, then the heart should be in the chat.
+[36:26] Sir, we simplified the differential amplifier so much.
+[36:30] Sir, we simplified the differential amplifier so much.
+[36:35] It should be fun to see that the game ahead is all about KVL and KCL.
+[36:42] See here, the circuit has become quite simple.
+[36:49] Now, quickly put KVL in loop 1.
+[36:52] Quickly put KVL in loop 1.
+[36:56] Quickly.
+[36:57] Now, you will see how things are simplified.
+[37:01] Quickly put KVL in loop 1.
+[37:09] In this, I will summarize the formulas in the last in the differential amplifier.
+[37:14] Because every time you can't connect the model of these two transistors,
+[37:17] then I will write the formula for this.
+[37:19] But now, let's see what we do.
+[37:21] First, I write
+[37:26] minus IE1 plus IE2RE
+[37:30] minus IE1RE
+[37:33] okay?
+[37:35] minus VS1 equal to 0.
+[37:38] Let's say VS1 is called V1 to simplify a little.
+[37:44] Tell me, write a little simple.
+[37:54] Let's write a little like this.
+[37:56] Okay?
+[37:57] What will VS1 VS1 write?
+[38:05] Okay?
+[38:07] Now, let's write the equation of loop 2 directly.
+[38:12] And look, both the RE will be equal.
+[38:15] Small RE and capital RE are all common.
+[38:18] Because both the bias current is equal.
+[38:20] If both the bias current is equal, then the resistance is also equal.
+[38:24] If both the transistors are identical, then the alpha is also equal.
+[38:27] If both the transistors are identical, then the alpha is also equal.
+[38:31] Now, see, I am writing the equation of the second transistor.
+[38:36] Only one or two will be exchanged.
+[38:38] You understand this.
+[38:40] One or two will be exchanged.
+[38:43] The rest of the things will remain the same.
+[38:46] Because both the circuits are exactly the same.
+[38:49] The rest of the things will remain the same.
+[38:51] Only one or two will be exchanged.
+[38:55] Now, there are two equations.
+[38:56] My children have two variables.
+[38:58] So, we have to solve this.
+[39:00] Two equations, two variables.
+[39:02] Shall we solve?
+[39:04] Now, see, I am writing here.
+[39:23] Come on, quickly remove its solution.
+[39:29] I know that you have done so much.
+[39:35] Now, what do I do?
+[39:44] First, I remove E1.
+[39:46] So, I have to cut E2.
+[39:56] So, I have multiplied the cross.
+[39:58] This coefficient is in this and this one is in this.
+[40:02] Okay?
+[40:03] I did RE plus RE first.
+[40:05] And I did capital R in the second.
+[40:07] So, see.
+[40:11] The term IE2 will be cut.
+[40:17] This will remain in IE1.
+[40:19] And I know that I will remove it from the symmetry for you.
+[40:22] I will remove it from the symmetry.
+[40:24] Simply, I2.
+[40:26] If I remove IE1,
+[40:28] then I will remove IE2 directly from the symmetry.
+[40:33] So, what happened to IE1 from here?
+[40:36] See this.
+[40:58] RE, RE.
+[41:00] Let me tell you, did you understand?
+[41:04] You can write it like this, you know.
+[41:10] Right?
+[41:12] See, the result is great.
+[41:19] Is there any difficulty in this?
+[41:24] Now, let's write IE2 directly.
+[41:26] What will you have to do for IE2?
+[41:28] When the whole circuit is the same,
+[41:30] then what will I have to do for IE2?
+[41:34] I will have to exchange 1 and 2, right?
+[41:38] I will have to exchange 1 and 2.
+[41:50] Isn't it right?
+[41:52] So, let me write it from here.
+[42:22] See, it's great.
+[42:24] It's great, right?
+[42:26] Tell me, is this all clear?
+[42:29] Is this all clear in a great way?
+[42:32] Now, what do I say, dear?
+[42:34] Now, what do I say here?
+[42:36] If you want V01,
+[42:39] if you want V01,
+[42:42] then that is alpha IE1 RC.
+[42:46] If you want V01,
+[42:49] then that is alpha IE1 RC.
+[42:53] If you want V02, then that is the logic.
+[42:56] Alpha IE2 RC.
+[43:00] See, okay?
+[43:04] You can read it.
+[43:05] If you get a network,
+[43:07] in the third sem, I don't think
+[43:09] you have got a network yet.
+[43:11] But anyone who gets a network,
+[43:13] can cover the analog.
+[43:15] You should get a network.
+[43:16] Is this all clear?
+[43:17] Now, let's take out the results.
+[43:19] In AC analysis,
+[43:21] first of all,
+[43:26] let's delete this slide.
+[43:28] I have kept two slides for this.
+[43:34] Differential gain with balance output.
+[43:38] V0 is
+[43:40] the balance output, right?
+[43:42] V01 minus V02
+[43:44] alpha
+[43:47] IE1 minus IE2 RC.
+[43:52] Clear?
+[43:54] This will be alpha IE1 minus IE2
+[43:57] into RC.
+[43:59] Now, let's subtract both of them.
+[44:02] If we subtract them,
+[44:04] then what will it be?
+[44:05] See, the LCM is the same.
+[44:08] Let me write one thing here.
+[44:10] IE1 minus IE2 value.
+[44:14] Take out minus common first.
+[44:17] Then it will come in plus.
+[44:28] Then it will come in plus.
+[44:31] So, take out minus common.
+[44:33] Take out less than this.
+[44:35] V1 minus V2.
+[44:38] Do one thing.
+[44:39] Minus V1 minus V2 will be plus.
+[44:42] I am confused in the signs.
+[44:45] Minus here is plus.
+[44:47] V2 minus V1.
+[44:49] And this is V2 minus V1.
+[44:51] So, minus will be common here.
+[44:55] V1 minus V2
+[44:57] RC.
+[45:00] There will be no minus here.
+[45:03] 2.
+[45:11] V1 RE minus.
+[45:14] Here, there will be minus here.
+[45:17] Because I have taken minus common.
+[45:20] Then subtraction will be done.
+[45:22] Basically, if I subtract it, it is correct.
+[45:25] V1 minus V2 RE.
+[45:27] See, this is what is coming, from subtraction, check this, sometimes I also make a calculation mistake.
+[45:38] Tell me, this is what is coming, check if you are making IE1 minus IE2, come on.
+[45:48] Now, if we put it here, then minus came here.
+[46:05] First of all, I also felt this differential amplifier was very dangerous.
+[46:10] But if you think logically, then what is the problem?
+[46:15] Keep the results in the same books, they must have come from somewhere.
+[46:20] Now, see what you do here, take V1 minus V2 common.
+[46:28] So, what is left above? 2RE plus RE.
+[46:33] And you also take RE common from here.
+[46:36] So, what is left below? 2RE plus RE.
+[46:40] So, it has been cut, right? 2RE plus RE, are you seeing?
+[46:43] So, what has become minus alpha RC by RE, okay?
+[46:51] This has become V1 minus V2.
+[46:55] Now, if you want, you can write alpha as beta by 1 plus beta.
+[47:00] You can write, right?
+[47:02] Now, someone will tell me what is 1 plus beta RE?
+[47:12] Tell me, what is 1 plus beta RE?
+[47:17] It is R pi.
+[47:26] This is done.
+[47:27] And if you want, you can write this in H parameters.
+[47:31] Here, I say differential gain is V0 by V1 minus V2.
+[47:38] Now, see, this is a differential amplifier.
+[47:44] Why is it amplifying the difference?
+[47:52] Look at this, you can also write in the H model.
+[47:56] You can also write in the H model, beta is HFE and your R pi is HIE.
+[48:05] That is HIE.
+[48:07] Did you enjoy it?
+[48:09] Did you enjoy it? Tell me quickly.
+[48:12] So, see, what is the problem?
+[48:14] Common emitter amplifiers that are with bypass capacitor,
+[48:18] they cannot be fabricated in IC.
+[48:20] As I told you earlier, the capacitor takes a very large area.
+[48:25] But this differential gain is the gain of a common emitter amplifier.
+[48:31] It is as it is the gain of a common emitter amplifier with a bypass capacitor.
+[48:37] If you apply bypass capacitor in a common emitter amplifier,
+[48:41] then you will get this much gain.
+[48:43] You will get this much difference with an amplifier.
+[48:46] If you use a capacitor without any use,
+[48:51] then this is the same gain that a common emitter amplifier gives.
+[48:55] So, our effort is saved.
+[48:57] Our area is saved.
+[48:59] The size of our device is reduced.
+[49:01] Dear, I will summarize the formula.
+[49:03] Divya, don't worry.
+[49:05] I will write the summary now.
+[49:07] We will summarize all the formulas.
+[49:09] By making a table.
+[49:11] But did you feel that the concept was clear or not?
+[49:13] Tell me quickly.
+[49:15] Check out quickly.
+[49:17] And is the point of the capacitor not clear?
+[49:19] Because you all check it.
+[49:21] Let me have some water.
+[49:23] You all check it quickly.
+[49:39] Is it clear?
+[49:41] So, I was telling you that
+[49:43] here you get a gain
+[49:44] equal to the common emitter amplifier.
+[49:47] You get a gain here.
+[49:49] So we make differential amplifiers
+[49:51] so that when we make an integrated circuit.
+[49:55] So when we make an integrated circuit
+[49:59] then instead of a common emitter amplifier
+[50:02] use differential amplifier.
+[50:04] Ok?
+[50:06] So that instead of a common emitter amplifier
+[50:08] use a differential amplifier.
+[50:10] Simir, dear, we do not have
+[50:11] Pdf is not available, you have to make notes. You have to make notes. If it was an unbalanced
+[50:18] output, dear, if it was an unbalanced output, then what do you say? Suppose you take v01.
+[50:25] Alpha Ie1 RC. Then you don't say v01-v02, right? Then you only talk about v01. Okay,
+[50:40] if we were talking about v01, then put the value here. What was v1-v2 into what was it?
+[50:51] Re plus v1 Re divided by what was it? Re square. This was it, right? So, look here,
+[51:06] apart from the differential term, one more term is left, v1. Correct? Here, only the differential
+[51:12] term is not coming. Here, another term is coming, Re. Now, look at the different things. If you
+[51:18] want to approximate, if you want to approximate my children, then how much is Re, dear? This is
+[51:27] from 10 ohms to 50 ohms. And this capital Re is in kilo ohms. So, you can say that
+[51:36] if you approximate v01, then ignore the term Re, then you can write like this. And ignore the term
+[51:46] . What is the term below? This term, Re square, you ignore it. So, you say this. So,
+[51:58] Re divided by Re. So, minus alpha RC divided by 2 Re v1-v2. So, how much is the differential
+[52:14] gain you have? v01 by v1-v2. Okay? Is minus alpha RC divided by 2 Re. If you write alpha
+[52:31] again beta by 1 plus beta, brother. If you write it in H parameter, you will understand that
+[52:42] the gain in the unbalanced output is half. So, gain is half of balanced output.
+[52:58] Gain is half of the balanced output. Clear? Half is half, right? First HFE divided by HIE into RC
+[53:12] is coming. Now, 2 RC is coming. Okay? This is extra term DC. No, it is both AC and v1-v2. v1-v2
+[53:20] are both AC. But v1-v2 was becoming yours there. Look, Amman, understand one thing. When
+[53:28] we do DC plus AC analysis, then DC and AC are different. So, I will not get the DC term in
+[53:34] AC analysis. If I want the DC term, then I will have to remove it separately. In AC analysis,
+[53:41] DC cannot be seen. In such a DC analysis, AC cannot be seen. Okay? Now, come to input
+[53:49] resistance, dear. When we remove input resistance, then we current the source voltage by source.
+[53:56] But at that time, dear, at that time. No, dear. Zainul, here v1-v2 are both AC, dear. How are you
+[54:06] forgetting? Look, it was just shown in the circuit that they are both AC. Sir, here RPI is
+[54:13] same as RE. No, dear. Just write it now. What are you doing? 1 plus beta RE is RPI, right?
+[54:23] How many times have I told you? RPI is VT upon IB. RE is VT upon IE. So, which current is taking
+[54:32] under thermal voltage? RE and RPI are decided by that. How do you get confused in RPI and RE?
+[54:38] RPI means VT upon IB. RE means VT upon IE. So, look, this entire AC analysis is going on.
+[54:46] I am not talking about DC here. Please pay attention to this. DC will not be able to remove you from here.
+[54:51] This is what you did in your analysis. You will get DC from here. If you remove it, as you can see,
+[54:58] if you want V01 DC, then you will remove it from here. It is VCC. If you consider it to be large beta,
+[55:11] then IE by 2 RC. Okay? What have I considered here? Large beta. Then? I am saying that
+[55:20] AC and IE are equal. So, DC will come like this. You will not get DC from here. This is AC from this
+[55:25] circuit. So, what did you understand? That you have a low gain in the unbalanced output as compared to balance.
+[55:34] Now, look, what am I saying? What do I want here? If I want resistance here? If I want
+[55:43] resistance, then I will say that this VS1 and the base current of this transistor, if you take its ratio,
+[55:51] then you will get resistance. But at that time, you will have to zero the other input. Do you understand?
+[55:58] So, V1 upon the first base current will be the first input resistance. Similarly, V2 upon the second base
+[56:06] current will be the second input resistance. Is it clear? So, if you are talking about input resistance,
+[56:13] then R I1. Tell me, is this thing clear to everyone? Now, look, what will happen to this IB1?
+[56:31] IE1 over 1 plus beta. IE1, how much is it? IE1 is minus.
+[56:42] Do you remember this? Take it out right now.
+[56:55] Okay. This is it. Now, I say that since you have zeroed V2, if you put V2 here, then V1 will get RE plus capital
+[57:14] RE. 1 plus beta RE plus RE upon RE R2 RE plus RE. Okay?
+[57:44] Now, you have to understand my point. Here, minus IB1 or here, you have to take minus. Why do you have to take minus, sir?
+[57:53] Because, dear, the direction of the ammeter current and the base current is opposite. If the ammeter current comes out of the transistor,
+[58:00] then the base current goes inside. Is it not? Why is this minus sign coming? Due to opposite direction.
+[58:11] Okay. Now, my children, if you do V1 upon IB1 here. If you do V1 upon IB1 here, then what will happen?
+[58:24] Now, 1 plus beta into RE plus RE. Okay? Sorry, 1 plus beta into RE2 RE plus RE upon here also RE upon RE plus RE.
+[58:54] Okay? Now, you can say that this capital RE is much greater than small RE. So, RI1 will be 1 plus beta into 2 RE into small RE by capital RE.
+[59:16] So, 2 into 1 plus beta RE and 1 plus beta RE is R pi. So, 2 R pi. Similarly, dear, if you take out input resistance for the second one,
+[59:28] if you take out V2 upon IB2 and if you zero out V1 here, then this also comes out to be 2 R pi.
+[59:37] Isn't it simple? Okay? It is quite simple. Tell me quickly. Is it clear? Tell me quickly. Is this thing clear?
+[59:52] Ankit, dear, do one thing. There will be a community link in the description of this video. If there is an academy app in your phone,
+[59:59] click on it directly. I believe it should open in an academy app. So, try it once. Okay? And output resistance, brother?
+[60:08] Output resistance? Tell me quickly. What will happen? Should I show the circuit in the output resistance?
+[60:14] Should I show that you will tell directly? Come on, look at the circuit. You are experts in output resistance.
+[60:21] What will be the output resistance? Tell me quickly. Look at the circuit and tell me the output resistance.
+[60:34] Both sides, 1 and 2. 1 and 2 are coming. So, I will write R01 equal to R02 equal to RC.
+[60:51] Now, tell me. Is everyone clear or not? Tell me quickly. Is everyone clear or not? Tell me quickly, brother.
+[61:01] Come on, everyone. Tell me quickly. Is everyone clear?
+[61:08] Now, summarize it. Summarize it. Look, let's make a table.
+[61:30] Don't think like this. The lecture is over. I am summarizing it as much as I have to, then I will explain some other things.
+[61:50] Basically, the major formula is up to here.
+[62:20] By the way, but it doesn't come directly. Okay, brother. No problem.
+[62:51] Now, I have made this table according to the case. Look, input, output, gain, Rn, R out.
+[63:12] So, first of all, look, dual input. Now, there are two possibilities with it.
+[63:21] Balanced output. And whose gain I am talking about is the differential gain.
+[63:29] Whose gain I am talking about is the differential gain. The second possibility is unbalanced output.
+[63:37] Okay, like this. Single input. Balanced output. Or unbalanced output.
+[63:56] These are the four possibilities. Now, look, the gain in the balanced output will always be minus beta RC upon R pi.
+[64:09] Okay, here it will be minus beta RC by 2R pi. This is dependent on output.
+[64:17] Minus beta RC by R pi. And minus beta RC by 2R pi. Okay, Rn is always 2R pi.
+[64:33] If there are two inputs, then there will be two input resistance. If there is one input, then there will be one input resistance.
+[64:41] R out is RC. If you take one output, then there will be two output resistance.
+[64:49] So, there will be two output resistance. Okay? Is this clear?
+[64:57] Is this clear? So, you put the short notes here. You have to put these in the short notes.
+[65:04] It is easy to remember the formula. There is nothing like this in its formula that you can remember.
+[65:10] Sorry, you can't remember. There is nothing like this that you can't remember. It is a very easy concept.
+[65:21] Tell me. How will I answer the question of UPSC Electrical Optional? I have never given it myself.
+[65:29] Yes, it is half in unbalance. It is half in unbalance output. And this input resistance is of every terminal.
+[65:38] So, if you take one input, then there will be one input resistance. If you take two inputs, then you will have two resistance.
+[65:45] Swati, son, can start electrical from Monday. If you take one output like this, then there will be one output resistance.
+[65:54] If you take two outputs, then there will be two resistance. Is this clear? Let's go.
+[66:02] Now, let's come to the common mode output. Common mode output.
+[66:07] Look, what job are you talking about, Vishal? Now, look at the common mode output when we talk.
+[66:14] So, what does common mode mean? Many times, my children, it happens as we talked about noise.
+[66:21] Noise comes in both the input terminals. Noise is induced in both the input terminals.
+[66:29] Now, if noise comes in both the input terminals, then noise can reach the output.
+[66:36] But you will say, how will our input be subtracted from the output?
+[66:41] Sir, our input should be subtracted and noise should be cancelled.
+[66:46] Son, if we talk practically, then both the transistors are not perfectly identical.
+[66:53] So, due to the mismatch of both the transistors, the common mode input on the output reaches to some extent.
+[67:03] And because of this, there is a noise. There is a noise.
+[67:08] Okay? Yes, we will start JFET from Monday. JFET is in ESE.
+[67:12] But if you read JFET, you will get three or four classes in JFET.
+[67:16] It will also help in MOSFET. Because JFET and MOSFET are of the same family.
+[67:21] So, what do we say? The common mode output means, output of a differential amplifier.
+[67:32] Listen carefully, output of a differential amplifier when we apply same input at both the terminals.
+[68:01] When you apply the same input at both the terminals, then the output that comes to you is called common mode output.
+[68:11] So, VS1 is equal to VS2. Tell this to VS. Okay?
+[68:19] If there is an ideal differential amplifier, in ideal differential amplifier, common mode output is equal to zero.
+[68:47] But due to mismatch of two transistors, there is certain common mode output.
+[69:15] Okay? Tell me if you understood everything here.
+[69:25] If you understood everything here, common mode means when you apply the same input at both the terminals.
+[69:40] Now, what do we do? We say that the output of a differential amplifier is made of two values, AD, VD and ACM, VCM.
+[69:56] What happens here? AD is the differential gain, VD is the differential input, ACM is the differential input,
+[70:24] ACM is the common mode gain.
+[70:31] We are saying from both the super positions that one is coming for common mode input and one is coming for differential input.
+[70:42] Now, what is the common mode input and differential input?
+[70:47] You have the common mode differential input, V1 minus V2 and the common mode input is V1 plus V2 by 2.
+[71:10] You can see the average of both of them.
+[71:15] What do we do here? We say that you have two inputs, V1 and V2.
+[71:27] Ideally, your V0 should be A1, V1 plus A2, V2, super position.
+[71:41] This should also be done according to the super position.
+[71:46] Now, what did you write the output?
+[71:50] This is a very important concept of the common mode.
+[71:56] You wrote this.
+[72:01] So, AD V1 minus V2 plus ACM V1 plus V2 by 2.
+[72:14] So, what happened here? If you take the coefficient of V1, AD plus ACM by 2 and if you take the coefficient of V2, ACM by 2 minus AD.
+[72:35] But you said A1 V1 plus A2 V2.
+[72:39] So, when you are comparing both the equations, what will you say?
+[72:46] A1 will be ACM by 2 plus AD and A2 will be ACM by 2 minus AD.
+[73:00] If you subtract these two equations, you can say AD.
+[73:05] What will your AD be? A1 minus A2 by 2.
+[73:12] And if you add both, you can say ACM by A1 plus A2.
+[73:19] A1 plus A2.
+[73:22] Do you understand? What will be ACM? A1 plus A2.
+[73:28] So, what do we do when we have to take out the common mode gain?
+[73:33] We derive the output in this form.
+[73:37] We derive the output in this form.
+[73:40] Then what do we do?
+[73:42] Then we take out the AD and ACM like this.
+[73:46] Do you understand? So, we go from here to here.
+[73:49] If I find a different gain for both the inputs, then I can take out the differential and common mode gain like this.
+[73:57] And son, this will be used only when you will read the differential amplifier in O-Pamp.
+[74:02] O-Pamp also has an application called differential amplifier.
+[74:06] The same concept is carried over there.
+[74:09] What happens? The same concept is carried over there.
+[74:13] So, what is ACM basically?
+[74:16] ACM is your common mode output and common mode input ratio.
+[74:22] What will you call this? Common mode gain.
+[74:26] So, what does common mode gain mean?
+[74:28] It is the ratio of common mode output to common mode input.
+[74:46] So, what is ACM?
+[75:16] This will happen.
+[75:21] If there is an ideal differential amplifier, son, what should be the ideal differential amplifier?
+[75:29] Then your ACM should be zero.
+[75:33] What should be zero? Your ACM should be zero.
+[75:37] Is it clear?
+[75:39] Then your ACM should be zero if there is an ideal common mode input.
+[75:44] Sorry, there is an ideal differential amplifier.
+[75:47] Now, sir, how should we take it out?
+[75:49] Why common mode signal is V1 plus V2 divided by 2?
+[75:54] If you want a common portion of the two signals, that is, the common part of both,
+[76:00] then it will come from both the averages.
+[76:02] Think about it.
+[76:03] Because how can you think in both?
+[76:07] For example, if you take out the odd part of an even part of a signal, think in the same way.
+[76:12] Even part used to be flat, meaning it used to be common.
+[76:15] The common thing in the left and right used to be even part.
+[76:19] Think in the same way that when you are averaging both, that will give us the common portion of the two signals.
+[76:26] Which is present in both.
+[76:28] Which is present in both, that will be the average.
+[76:31] Now, see how common mode gain is taken out here.
+[76:37] What do we do?
+[76:40] This was your VCC.
+[76:52] This was your differential amplifier.
+[77:03] Now, what did you do?
+[77:04] This is RC.
+[77:06] This is RC.
+[77:07] You put the same input on both.
+[77:10] VS VS.
+[77:11] What happened with this, son?
+[77:13] The differential input is zero.
+[77:15] The difference between both.
+[77:17] And what is the average of both?
+[77:20] VS came.
+[77:22] And what did you do?
+[77:25] You broke this RE in two parts.
+[77:29] 2RE 2RE.
+[77:31] Do you understand?
+[77:33] What am I saying here?
+[77:35] That I made V in one is equal to V in two is equal to VS.
+[77:43] So, my differential input which is V in one minus V in two.
+[77:49] This will come out to be zero.
+[77:51] Or common mode gain which is V in one plus V in two by two will come out to be VS.
+[78:02] Now, what do I do?
+[78:04] I say that divide this amplifier by the property of symmetry in two parts.
+[78:10] Divide it by property of symmetry in two parts.
+[78:16] So, what are you doing?
+[78:18] When you do AC analysis, you will ground it above VCC.
+[78:28] So, you divided this amplifier in two parts.
+[78:40] Okay?
+[78:49] So, one common emitter amplifier is done.
+[78:59] Common emitter amplifier is done.
+[79:02] With unbypassed emitter resistance.
+[79:06] This is done.
+[79:09] Now, think of both.
+[79:11] V01 and V02 will be identical.
+[79:15] Both the amplifiers are identical.
+[79:24] Sir, when the equation is not given, then this is the formula.
+[79:28] Divya, what did I say?
+[79:31] Usually, what we do in questions?
+[79:34] By taking out such a formula, we solve an amplifier in the form of A1, V1, A2, V2.
+[79:41] And then common mode gain comes from here.
+[79:43] But this equation will also come after solving the amplifier.
+[79:47] How did this equation come out?
+[79:49] A1, V1 plus A2, V2.
+[79:51] How much is the value of A1 in this?
+[79:53] How much is the value of A2 in this?
+[79:55] How will we know this?
+[79:57] We will know this by solving that amplifier.
+[79:59] Suppose, give a whole circuit of an opamp.
+[80:02] There are two supplies in it, V1 and V2.
+[80:04] You take out the gain for both.
+[80:06] Take out only V1 once.
+[80:08] Take out only V2 once.
+[80:10] But you take out the gain for both.
+[80:12] When you take out the gain for both, then you can tell the common mode gain.
+[80:16] That is a different thing.
+[80:17] What am I saying now?
+[80:18] Now I am saying, if I want to take out a common mode gain for a BJT differential amplifier,
+[80:23] then how much will it be?
+[80:25] So, I say that if I want a common mode gain,
+[80:29] either do V01 by VCM,
+[80:34] which is V01 by VS,
+[80:38] or you do V02 by VCM.
+[80:42] It will be the same thing.
+[80:44] Which is V02 by VS.
+[80:48] And do you know the gain of a common emitter amplifier?
+[80:51] You have already taken out the gain.
+[80:53] Your gain used to come.
+[80:56] It used to come.
+[80:58] Minus RC by RE.
+[81:03] I am writing this directly.
+[81:05] From where?
+[81:06] From the common emitter amplifier.
+[81:09] I had made two cases in the common emitter amplifier.
+[81:12] One is bypassed resistance and the other is unbiased.
+[81:16] It used to come here.
+[81:19] It used to come here too.
+[81:21] So, we approximate it.
+[81:23] Minus RC by 2 RE.
+[81:27] Okay?
+[81:29] Tell me what is your doubt?
+[81:31] A1 and A2 individual gain at transistors
+[81:34] or with a pure differential amplifier
+[81:36] with one source at a time,
+[81:38] the entire amplifier with one source at a time.
+[81:41] Okay?
+[81:42] A1, A2, the entire amplifier's gain
+[81:44] with one source at a time.
+[81:47] Okay?
+[81:48] So, you have to keep in mind the formula of a common mode gain.
+[81:53] This is also important for numericals.
+[81:56] This is important.
+[82:01] Now, look at the common mode gain.
+[82:04] Let's define a term based on this.
+[82:07] Common mode rejection ratio.
+[82:09] What does this mean?
+[82:11] A differential amplifier is expected
+[82:15] to amplify the difference of two voltages.
+[82:19] That is, if there is a common part in both the voltages,
+[82:23] then it should not go on the output.
+[82:27] Your bus should only amplify
+[82:30] the difference of both the voltages.
+[82:35] So, the common mode rejection ratio
+[82:38] tells us that the capability of a differential amplifier
+[82:42] is to reject the common mode input
+[82:45] or to reject the noise.
+[82:47] You want both the voltages to reach
+[82:50] the difference output.
+[82:52] That is, both the common parts
+[82:54] should not reach the output.
+[82:56] How easily a differential amplifier
+[82:59] rejects the noise or the common mode input,
+[83:03] that is the common mode rejection ratio.
+[83:07] How do we take this out?
+[83:09] It is mod of AD by AC,
+[83:11] where AD is the differential gain.
+[83:15] AD is the differential gain.
+[83:20] AC is the common mode gain.
+[83:24] Do you understand?
+[83:26] So, the higher the high, the better.
+[83:28] The higher the high, the smaller the common mode gain.
+[83:32] Okay?
+[83:35] High CMRR means Better Differential Amplifier.
+[83:43] Do you understand?
+[83:45] High CMRR means
+[83:48] A Better Differential Amplifier.
+[83:54] Do you understand?
+[83:55] It is also taken out in DB.
+[83:57] It is also taken out in DB.
+[84:01] And as I told you, the base question on this
+[84:04] can be made in the exam along with O-Pamp.
+[84:07] Along with BJT.
+[84:09] Along with O-Pamp.
+[84:10] And if you want, along with MOSFET.
+[84:15] 20 log mod AD by AC.
+[84:21] Okay?
+[84:22] Now, if there was an ideal differential amplifier,
+[84:25] if there was an ideal differential amplifier,
+[84:28] then its common mode gain would be zero.
+[84:31] Its common mode gain would be zero.
+[84:36] So, if the common mode gain was zero,
+[84:39] then CMRR would be infinity.
+[84:43] What are you writing?
+[84:44] Divya.
+[84:45] Divya is writing 2v1-v2 upon v1 plus v2.
+[84:48] Divya is wrong.
+[84:49] You are taking the ratio of two voltages.
+[84:51] That is also the input voltage.
+[84:53] I have told you to take the ratio of gain.
+[84:55] You are writing VD by VCM.
+[84:58] I am saying AD by ACM.
+[85:00] Do you understand?
+[85:01] What was your output?
+[85:04] That was output.
+[85:05] AD VD plus ACM VCM.
+[85:07] You are writing VD by VCM.
+[85:09] I am saying CMRR is the ratio of gains.
+[85:12] That is the ratio of voltage.
+[85:14] Okay?
+[85:16] In communication, we multiply power by 10.
+[85:19] Not the gain.
+[85:20] We multiply the gain by 10.
+[85:22] That is the power.
+[85:24] If you take the ratio of powers,
+[85:26] then it is multiplied by 10.
+[85:28] This is the formula of CMRR.
+[85:31] Now, if you want more CMRR,
+[85:35] then you take more emitter resistance.
+[85:37] You take more emitter resistance.
+[85:39] If you take more emitter resistance,
+[85:42] then ACM will be less.
+[85:44] ACM is coming by 2.
+[85:47] So, this will be less.
+[85:50] If the common mode gain is less,
+[85:52] then CMRR will be more.
+[85:54] But to make more resistance,
+[85:57] you will need more chip area.
+[86:00] If you use more chip area,
+[86:03] then you will have to give more supply voltage.
+[86:06] Because the bigger the chip,
+[86:08] the more it has to supply power.
+[86:11] The more it has to give voltage.
+[86:15] That is why we call emitter resistance
+[86:17] as a current mirror.
+[86:19] That is, you replace it with current source.
+[86:22] Because the AC equivalent of current source
+[86:25] is equivalent.
+[86:27] When you do AC analysis,
+[86:29] then this becomes open.
+[86:32] If you do AC analysis,
+[86:34] then it acts as open circuit.
+[86:37] So, if you replace it with current mirror
+[86:40] or current source,
+[86:42] then you will see open circuit
+[86:44] instead of RE in AC analysis.
+[86:46] Because of which ACM will be zero.
+[86:49] Do you understand?
+[86:52] You have to do biasing.
+[86:54] Listen to me carefully.
+[86:56] If you want to do biasing,
+[86:58] then do constant current biasing.
+[87:00] To do constant current biasing,
+[87:02] you use current source.
+[87:04] You will get that current source
+[87:06] when you do AC analysis.
+[87:09] That current source will be open circuit.
+[87:12] If current source is open circuit,
+[87:14] then RE will be infinity.
+[87:16] ACM will be zero.
+[87:18] ACM will be zero.
+[87:21] And if you use current mirror,
+[87:24] current mirror is made by BJT itself,
+[87:26] then your chip area will be less.
+[87:28] If your chip area will be less,
+[87:30] then you will have to do biasing with less voltage.
+[87:33] That is, the value of VCC will be less required.
+[87:35] That is why a lot of times,
+[87:37] we use current mirror instead of RE.
+[87:40] And we use current mirror instead of RC.
+[87:43] The collector resistance which is RC,
+[87:45] we use current mirror instead of it.
+[87:48] Chandrasekhar,
+[87:49] whenever you are asking a question,
+[87:51] it doesn't mean that I will stop the lecture in between.
+[87:53] First to answer your query.
+[87:55] Because again, this is not an AMA session.
+[87:57] This is a lecture.
+[87:59] And yes, you can make the short notes
+[88:01] by watching the marathon sessions.
+[88:04] Okay.
+[88:05] It's clear.
+[88:06] Tell me till here.
+[88:07] This is clear.
+[88:08] CMRR should be high.
+[88:10] For any differential amplifier,
+[88:12] then that differential amplifier is good.
+[88:15] Then that differential amplifier is acceptable.
+[88:17] Okay.
+[88:18] Now, let's see his question.
+[88:20] Just see.
+[88:21] In a differential amplifier,
+[88:23] if the source resistance is infinity of the current source,
+[88:26] the common mode gain is,
+[88:28] tell me.
+[88:29] The common mode gain is,
+[88:32] this is an amplifier.
+[88:33] It is saying that the current source on the meter
+[88:36] is its resistance.
+[88:37] If it is infinite,
+[88:39] then tell me,
+[88:40] how much is the common mode gain?
+[88:54] There is another problem in RE.
+[88:56] Yes.
+[88:57] It will change with temperature.
+[88:59] Yes.
+[89:00] It will be zero.
+[89:01] It will be CMRR infinity.
+[89:03] My children are asking about the common mode gain.
+[89:05] Then it will be zero.
+[89:07] If the current source is here,
+[89:09] then RE is infinity.
+[89:11] So, what is the common mode gain?
+[89:15] Zero.
+[89:17] RC by 2 was RE.
+[89:19] Very good.
+[89:21] Look at the next one.
+[89:22] In the differential amplifier circuit,
+[89:25] the magnitude of common mode gain,
+[89:27] AC and AD are respectively.
+[89:29] If RE increases,
+[89:31] look at this type of MSQ,
+[89:34] if this emitter resistance is increasing,
+[89:37] RE,
+[89:38] if RE increases,
+[89:40] then what will happen?
+[89:41] Tell me.
+[89:48] If capital RE increases,
+[89:50] then what will happen?
+[89:54] Tell me the option number.
+[89:56] What will happen?
+[89:59] Divya is saying C.
+[90:01] Others are saying D.
+[90:02] The answer is D.
+[90:04] Look.
+[90:06] Divya is the same thing again.
+[90:08] If RE increases,
+[90:10] then common mode gain,
+[90:13] RC by 2 RE,
+[90:15] will decrease.
+[90:20] So, CMRR,
+[90:22] which is mod AD by ACM,
+[90:26] will increase.
+[90:30] Will increase, right?
+[90:32] Did you understand Divya?
+[90:36] Because the differential gain,
+[90:38] it does not depend on capital RE.
+[90:40] Your differential gain can come in two ways.
+[90:45] Beta,
+[90:47] RC by
+[90:49] Rpi.
+[90:51] This is for balanced output.
+[90:53] There is no capital RE in this.
+[90:56] So,
+[90:57] with capital RE increasing or decreasing,
+[90:59] there is no difference on the differential gain.
+[91:04] Look next.
+[91:05] In the circuit shown,
+[91:07] I1 is 80 mA, I2 is 4 mA,
+[91:10] T1, T2 are identical.
+[91:12] VT is 26 mV,
+[91:14] at 27 degree centigrade.
+[91:17] Now, put a full stop here.
+[91:19] At 50 degree centigrade,
+[91:21] find V1 minus V2.
+[91:24] At 50 degree centigrade,
+[91:26] find V1 minus V2.
+[91:28] This is a good question.
+[91:42] Now, look,
+[91:43] only 5-6 lectures are on ECEC,
+[91:45] BJT.
+[91:46] And one guy was writing in the comment,
+[91:48] that the analog education is good for electrical work.
+[91:51] ECEC is not good for people with ECEC.
+[91:53] Electrical people say,
+[91:55] you teach more than electrical,
+[91:57] just tell us as much as electrical comes in.
+[91:59] So, I am confused in ECEC,
+[92:01] that what I am taking analog,
+[92:03] I am taking electrical specific,
+[92:05] or electrical plus ECEC or ECEC specific.
+[92:07] ECEC people say,
+[92:09] some children are not all,
+[92:11] obviously not you.
+[92:12] Some children say,
+[92:14] you are teaching more than electrical,
+[92:16] you are teaching more than electrical,
+[92:18] you are teaching according to ECEC.
+[92:19] Isn't it amazing?
+[92:21] It will take time in O-Pamp.
+[92:23] At least,
+[92:25] it will take more than 10 lectures
+[92:27] to reach on O-Pamp.
+[92:30] E plus ECE by 2.
+[92:32] Wow.
+[92:33] Look, when the base and collector
+[92:35] are shorted,
+[92:37] then BJT acts as a diode.
+[92:39] Do you remember?
+[92:41] I told you.
+[92:42] BJT acts as a
+[92:44] diode.
+[92:49] Isn't it?
+[92:50] So, what was here, son?
+[92:53] Look, if this is V2,
+[92:55] then the base is connected to the collector,
+[92:57] then this voltage will also be V2.
+[92:59] If the base is connected to the collector,
+[93:01] then this voltage will be V1.
+[93:03] Think about it.
+[93:04] When the base and collector are connected,
+[93:06] then the base of the collector
+[93:08] will be the same.
+[93:09] The base of the collector
+[93:11] will be the same.
+[93:12] Now, how will you write I1 here?
+[93:15] I1 is
+[93:17] IES.
+[93:19] Collector and emitter current.
+[93:21] Is this emitter current?
+[93:23] Look, I1 is emitter current.
+[93:32] IES
+[93:35] A to the power V1
+[93:37] by VT.
+[93:38] Remove minus 1.
+[93:40] Remove minus 1,
+[93:42] because if you consider V1
+[93:44] much, much greater than VT,
+[93:45] in forward bias,
+[93:47] minus becomes a problem.
+[93:50] So, when there is forward bias,
+[93:52] then we ignore minus.
+[93:55] Now, what should we do?
+[93:56] Should we take the ratio of both?
+[94:04] Should I write it like this
+[94:06] instead of E?
+[94:09] You are understanding that the representation
+[94:11] is the same.
+[94:16] Is it not a great question?
+[94:23] There is no much longer calculation.
+[94:25] Now, we have to look at VT at 50 degrees.
+[94:27] It is 26 millivolts at 27 degrees.
+[94:34] 27 degrees means 300 Kelvin.
+[94:36] 50 degrees means
+[94:38] 323 Kelvin.
+[94:40] Do you understand?
+[94:43] Let's convert it to Kelvin.
+[94:45] Don't take the temperature at a degree.
+[94:47] The proportion of VT at a temperature is
+[94:49] proportional to that of Kelvin.
+[94:51] So, how much will it come?
+[94:59] 83.86.
+[95:06] Okay.
+[95:08] Is this question clear?
+[95:10] So, it seems that
+[95:12] it is the question of differential amplifier.
+[95:14] But, no concept of differential amplifier
+[95:16] has been used in this.
+[95:19] Next, look.
+[95:36] How is this, dear?
+[95:38] Is this a balanced output or an unbalanced output?
+[95:43] Dear, the first thing that is
+[95:45] required in opamp is
+[95:47] the differential amplifier.
+[95:49] Do you understand?
+[95:50] That is why opamp is a differential amplifier.
+[95:53] Very good.
+[95:54] It is unbalanced.
+[95:55] Take out the AD.
+[95:57] Do you understand?
+[96:05] Do you understand, Mr. Zainul?
+[96:07] The first thing that is required in opamp
+[96:09] is the differential amplifier.
+[96:11] It is made from BJT.
+[96:13] And its output is a balanced output.
+[96:15] When I show you the circuit
+[96:17] inside the opamp, you will know.
+[96:21] So, what is opamp?
+[96:23] It is a modified version of differential amplifier.
+[96:25] Its gain is quite high.
+[96:27] It is a normal differential amplifier.
+[96:30] Take out the ADR.
+[96:32] It is very easy.
+[96:37] We will not say the subset.
+[96:39] It is a component of opamp.
+[96:41] The subset is different.
+[96:43] Opamp is not a set.
+[96:44] Opamp is a device.
+[96:46] Minus 20.
+[96:48] So, what do you write, dear?
+[96:50] Minus beta RC by R pi.
+[96:54] Which is approximately
+[96:56] minus RC by small r e.
+[97:00] So, how much is RC?
+[97:02] 1 kilo ohm.
+[97:05] Sorry, 2 comes here.
+[97:07] It is unbalanced.
+[97:11] Very good.
+[97:13] So, minus 20.
+[97:15] Okay, minus 20.
+[97:17] Tell me the next one.
+[97:18] AC.
+[97:19] How much is AC?
+[97:20] What is it?
+[97:21] So, we are saying 0.2.
+[97:23] Very good.
+[97:24] The common mode rejection ratio
+[97:27] is mod of AD by AC.
+[97:33] So, from here AC comes
+[97:35] directly 0.2.
+[97:42] Okay.
+[97:44] Now, he is saying
+[97:45] we have put 1 voltage 1010.
+[97:48] We have put 1 voltage 990.
+[97:51] You tell me
+[97:53] what will be your output?
+[97:56] The output is asking
+[97:58] 1 voltage is 1010
+[98:00] and 1 voltage is 990.
+[98:03] Tell me.
+[98:06] 1 voltage is 990.
+[98:08] 1 is 1010.
+[98:19] 600 millivolts.
+[98:24] See, what to do here?
+[98:26] Take out the VD.
+[98:34] 20 millivolts.
+[98:48] 20 millivolts.
+[99:03] AD is
+[99:05] if you are taking the mod, 20.
+[99:13] ACM.
+[99:19] Very good.
+[99:22] 600 millivolts.
+[99:24] Okay.
+[99:26] 600 will come.
+[99:28] How to take out 0.4?
+[99:30] 0.6 will come.
+[99:32] Okay.
+[99:33] 20 is coming.
+[99:34] VD.
+[99:35] The differential input is 20.
+[99:37] Look at the next one.
+[99:39] In an ideal differential amplifier
+[99:41] a large value of RE.
+[99:43] If we increase RE,
+[99:45] what happens?
+[99:47] Tell me.
+[99:48] If you increase RE,
+[99:50] what will happen?
+[99:51] This is a very easy question.
+[99:53] This is a very easy question for you.
+[99:55] What will happen by increasing RE?
+[100:06] Say it quickly.
+[100:07] D.
+[100:08] Common mode gain will be less.
+[100:10] Common mode gain will be less for you.
+[100:13] Okay.
+[100:14] D.
+[100:15] Differential gain doesn't depend on RE.
+[100:18] It depends on small RE.
+[100:20] Okay.
+[100:22] Clear?
+[100:23] Okay.
+[100:24] This is your assignment.
+[100:26] You will solve this.
+[100:28] Okay.
+[100:29] You will solve this assignment.
+[100:31] Look at the rest.
+[100:32] This is your link
+[100:34] where you will get PYQ.
+[100:36] BJT is now over.
+[100:38] You can apply all the PYQ
+[100:40] of BJT here.
+[100:42] All the electrical EC is present here.
+[100:45] Okay.
+[100:46] If we discuss all the remaining assignments
+[100:48] then the chapter of BJT will be closed forever.
+[100:51] If you come to the academy here,
+[100:54] you have two options.
+[100:57] You are getting the top educator in both.
+[101:00] The study materials are uploaded on the app.
+[101:02] You are getting the test series.
+[101:04] If you doubt the children of Iconic
+[101:07] then the video solution is given.
+[101:09] Printed notes are given.
+[101:11] You get 1-1 mentorship.
+[101:13] The strategy is made.
+[101:14] The study plan is made.
+[101:16] And open house sessions are also given.
+[101:19] Okay.
+[101:21] The EDC is going to start on plus.
+[101:23] The location won't be enough for the students.
+[101:25] Maybe they can take it on YouTube.
+[101:26] But we will get the crash course done on YouTube.
+[101:28] Okay.
+[101:29] Now look here.
+[101:30] If you choose the academy plus Iconic
+[101:34] then you have to decide the plan.
+[101:36] You have to decide the duration.
+[101:37] And at the time of payment
+[101:39] you have to apply the TSE code.
+[101:41] Okay.
+[101:43] Now look here.
+[101:44] If you see the results.
+[101:46] Last year we have produced 6 ranks in top 10.
+[101:49] We have also taken out the rankers in top 10.
+[101:52] And you can also be the next ranker.
+[101:55] You just have to join the academy
+[101:57] and apply the TSE code for my guidance.
+[102:00] Okay.
+[102:02] Sir, all the questions of the gate are solved.
+[102:05] Now switch to the next topic.
+[102:06] Yes, switch to the next.
+[102:08] If the questions are being solved,
+[102:09] I mean your topic is ready.
+[102:11] If there is a financial issue
+[102:13] then you can go for EMI.
+[102:15] In this EMI,
+[102:16] no one is interested in you.
+[102:18] So you can give your fees month on month
+[102:20] in equal installment.
+[102:22] EMI is approved in just 2 hours.
+[102:24] At least on paper.
+[102:26] You just have to apply the Aadhar card and the pan card.
+[102:28] Give it to a member in your family.
+[102:31] Whose salary comes because bank gives them EMI quickly.
+[102:34] And this batch has started.
+[102:36] Brahmastra Plus.
+[102:38] I have taken a strategy session in this.
+[102:40] My EMT and power electronic has started.
+[102:42] Here you clear your doubts on a daily night.
+[102:45] You are given DPP daily.
+[102:47] There are exclusive life classes.
+[102:49] There are practice and strategy sessions.
+[102:51] There are notes uploaded on the app.
+[102:53] There are test series of top educators.
+[102:56] Paramount study material of Gate Academy.
+[102:58] Gate Academy, Workbook, Gate Academy, PYQs.
+[103:01] All these things are included in this batch.
+[103:05] If you are watching Brahmastra batch on YouTube,
+[103:08] then what are you getting on YouTube?
+[103:10] Classes are getting by top educator.
+[103:12] The syllabus is being completed.
+[103:14] But on coming to the academy,
+[103:16] you are getting more number of hours in courses.
+[103:18] Apart from this, you are getting proper workbook.
+[103:20] You are getting previous year question.
+[103:22] You are getting test series.
+[103:24] You are getting doubt clearing.
+[103:26] You are getting motivation.
+[103:28] You are getting strategy session.
+[103:30] All the study material is uploaded on your app.
+[103:32] You are getting extra feature in Brahmastra Plus.
+[103:34] We have also launched a subscription for 4 months.
+[103:37] Which kids want to join for February.
+[103:40] If you want to join for Gate exam,
+[103:43] then you can quickly take subscription for 4 months.
+[103:46] This is my telegram channel.
+[103:48] Where you will get regular updates.
+[103:50] If you stay connected here,
+[103:52] then you will get all the information.
+[103:54] You will get PDF of this session on community.
+[103:57] Where to go?
+[103:58] Go to the academy app, android app.
+[104:01] Go to the home page.
+[104:03] You will get community in the home page.
+[104:05] In the bottom.
+[104:06] In the bottom, you will get community.
+[104:08] Click on it and discover.
+[104:10] I will meet you on discover.
+[104:12] You will get all the PDF there.
+[104:14] So thank you everyone. Thanks a lot.
+[104:16] We will meet again tomorrow.
+[104:17] Same time same place.
+[104:18] And we will discuss all the DPPs tomorrow.
+[104:20] Then we will switch to FET on Monday.
+[104:22] I will try and cover FET within 10-12 sessions.
+[104:25] After which we will start O-pamps.
+[104:28] See you tomorrow.
+[104:30] Same time same place. Let's crack it.

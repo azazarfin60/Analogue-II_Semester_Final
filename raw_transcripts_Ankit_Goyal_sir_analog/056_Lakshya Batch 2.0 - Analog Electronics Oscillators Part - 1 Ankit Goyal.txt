@@ -1,0 +1,2234 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Oscillators | Part - 1 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=YC5y8HHmq7Y
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you, children and welcome to Creatrix
+[00:12] YouTube channel, my dear friends. We are back again with the Lakshabhatch 2.0 Analog Electronics.
+[00:19] And today we are going to start a last unit of Analog that is Oscillators.
+[00:26] So many children were saying that the part of the positive feedback has not been covered.
+[00:31] So we will discuss the positive feedback part here in the Oscillators.
+[00:37] So we will discuss the Oscillators in 2 sessions.
+[00:43] One will be today, the other will be tomorrow.
+[00:46] Tomorrow I will take the class at 11.30 am and tomorrow your gate syllabus will be wind up.
+[00:53] So tomorrow your gate syllabus will be wind up.
+[00:56] Maybe I will not be able to take the class on Monday because I will be going to office on Monday.
+[01:00] So taking the class from there becomes a little tough.
+[01:03] So I will discuss the assignments from you all to Tuesday.
+[01:07] Okay, let's start today's session of Oscillators.
+[01:12] Are you all ready?
+[01:14] I will drink some water.
+[01:16] My throat is getting bad.
+[01:19] Are you all ready?
+[01:33] Let's start today's discussion.
+[01:36] So what is Oscillator?
+[01:40] Oscillators are used in Function Generator.
+[01:44] Function Generator is used to give input to the function generator.
+[01:59] So what is Function Generator?
+[02:01] Function Generator is a source which is capable of producing waveforms in different ways.
+[02:10] How waveforms are?
+[02:12] Like a sine wave, like a triangular wave, like a square wave, a sawtooth wave.
+[02:19] You can generate different types of waveforms, your Function Generator.
+[02:24] And you can vary the frequency of these waveforms.
+[02:29] You can go from one hertz to kilohertz with less frequency.
+[02:34] That is the range of frequency which you can achieve.
+[02:37] So what can you control from Function Generator?
+[02:41] What waveforms do you want to make?
+[02:43] Square, Triangle, Sino-Soidal, Sawtooth?
+[02:46] What will be its height?
+[02:48] What will be its amplitude?
+[02:50] And what will be its frequency?
+[02:52] So you can control all these things by means of a Function Generator.
+[02:59] Okay, so the Sino-Soidal outputs we call as Linear Oscillator.
+[03:04] And when a square, triangle, sawtooth generates, it is called Non-Linear Oscillator.
+[03:12] So Oscillator is a building block of Function Generator.
+[03:16] That is without Oscillator, Function Generator cannot work.
+[03:20] Do you understand?
+[03:22] So Function Generator is a white-colored box in our labs.
+[03:27] We can connect it through a cable through a CR.
+[03:31] And we can also give its output through our breadboard.
+[03:35] To excite the network using different kinds of waveforms.
+[03:40] So quickly tell me in the chat, how many children are there?
+[03:43] Who have used Function Generator in their college lab.
+[03:47] Have you seen the Function Generator box?
+[03:49] How many children are there?
+[03:52] Tell me quickly.
+[03:55] Tell me quickly.
+[04:02] See, Amman has used Sai, Bablu, Ashok, Vijay.
+[04:07] Very good.
+[04:10] Now see, when we talk about Oscillator,
+[04:13] then positive feedback is used in Oscillator.
+[04:17] Okay.
+[04:18] This is a source and this is a feedback signal.
+[04:21] Okay.
+[04:22] What is this?
+[04:24] This is your source.
+[04:26] And this is your feedback signal.
+[04:35] So source and feedback signal are connected in both the positive feedback configuration.
+[04:42] So till now, the feedback amplifier that you were reading till the last chapter,
+[04:46] you had seen that they use negative feedback.
+[04:49] I had also told the purpose of why they use negative feedback.
+[04:53] They stabilize the gain.
+[04:55] They increase the bandwidth.
+[04:57] They reduce the noise.
+[04:59] They reduce distortion.
+[05:01] These were all the reasons why we were using negative feedback.
+[05:05] But dear, when we talk about Oscillators,
+[05:08] then we use a positive feedback.
+[05:12] We use a positive feedback.
+[05:14] Okay.
+[05:15] And what do we call positive feedback?
+[05:18] This is our loop gain from here to here.
+[05:22] This is A into beta.
+[05:24] I had told you that loop gain is there.
+[05:26] So you take the loop gain greater than 1 and go for the case of Oscillator.
+[05:33] Look, what is the fund of Oscillator, dear?
+[05:36] What is the fund of Oscillator?
+[05:38] We say that the signal that is coming in the feedback,
+[05:42] if this same signal starts working on input and gives output,
+[05:47] then it gets feedback, then it gets feedback,
+[05:51] then it gives the output.
+[05:53] Do you understand?
+[05:54] So do we keep on using oscillations or do we keep on working on the system?
+[05:59] That is, the output goes from the feedback to the input and produces it.
+[06:05] That is, the output is responsible for producing itself.
+[06:10] Do you understand?
+[06:12] So the output is responsible for producing itself.
+[06:15] That is how an oscillator works.
+[06:19] That is how an oscillator works.
+[06:21] Now look at the output sinusoidal, dear.
+[06:24] So we say harmonic oscillator.
+[06:27] And if the sinusoidal doesn't come, then relaxation oscillator.
+[06:31] So when you will study in tomorrow's class,
+[06:34] you will study Schmidt trigger,
+[06:35] square wave generator, triangle wave generator,
+[06:38] then you will call them relaxation oscillator.
+[06:41] And in today's lecture, the oscillator that I am going to teach you is all harmonic oscillator.
+[06:47] That is, the one that will give you sinusoidal wave.
+[06:50] So today we will talk about harmonic oscillators and tomorrow we will talk about relaxation oscillator.
+[06:56] Mr. Vijay is asking practically where we are using oscillator.
+[07:01] Vijay, dear, have you just given an example of the function generator?
+[07:04] Has it not been practically used by the oscillator?
+[07:07] You just said that yes, sir, I have used it in the lab.
+[07:11] And look at where the oscillators are used.
+[07:15] They are used in communication.
+[07:18] They are used in the demodulator.
+[07:21] They are used for the clock in the microprocessor.
+[07:25] Now look, when you study amplitude modulation,
+[07:28] you have two signals.
+[07:30] One is you have the information signal, correct.
+[07:33] And the other is you have the carrier signal.
+[07:36] What is the carrier signal?
+[07:38] It is a high frequency signal which gets multiplied by the information signal to generate the signal to be transmitted.
+[07:47] It is multiplied in the information signal and gives birth to a new signal.
+[07:52] And we transmit that signal from the transmitter to the receiver.
+[07:58] Now where is the high frequency carrier wave coming from?
+[08:03] It comes from the oscillator.
+[08:05] In the microprocessor and digital, all the sequential circuits,
+[08:09] where you give the clock signal, which is a square wave,
+[08:12] where does that clock signal come from?
+[08:14] From the oscillator.
+[08:16] So wherever you need a waveform,
+[08:20] whether it may be sine, square, triangle, sawtooth,
+[08:23] it will generate waveforms from the oscillator everywhere.
+[08:27] So basically all the periodic waveforms,
+[08:30] that you can generate using the oscillator.
+[08:33] Now don't mind the electrical one, sir.
+[08:35] For the power system, the sinusoidal waveform,
+[08:38] will it also come from the oscillator?
+[08:40] No. We are talking about low power signals.
+[08:43] We are talking about communication.
+[08:45] We are talking about electronic equipment.
+[08:48] We are not talking about electrical machines.
+[08:51] We are not talking about the power system.
+[08:53] Generators are generated there with the help of help.
+[08:56] But if you want to generate any periodic function in the low power signal,
+[09:00] that is generated using oscillators.
+[09:03] So is this clear, Vijay?
+[09:05] Tell me.
+[09:06] Is it clear where the oscillators are used?
+[09:09] Is this clear to everyone?
+[09:12] Okay.
+[09:13] Now see how the operation of the oscillator will be.
+[09:17] Look.
+[09:21] Look.
+[09:22] What will happen first?
+[09:24] We will get an input signal.
+[09:28] Okay.
+[09:29] Sir, you just said that the feedback in the oscillator
+[09:32] is not required for the input.
+[09:34] I will explain it now.
+[09:37] I will explain the meaning of this too.
+[09:39] The statement I said,
+[09:41] it actually has a meaning.
+[09:43] Don't think that I have generated such a waveform.
+[09:47] Look.
+[09:48] I am creating an oscillator in very simple terms.
+[09:54] Okay.
+[10:03] Okay.
+[10:04] This is our forward path.
+[10:07] Okay.
+[10:12] Now look.
+[10:13] I have created the network of our feedback.
+[10:17] You know the gain of the feedback network.
+[10:19] We take beta.
+[10:20] You have seen the feedback in the amplifier.
+[10:23] Now I understand why I am teaching the oscillator after the feedback amplifier.
+[10:27] Because basically the network is the same.
+[10:30] Instead of negative, you are using positive feedback.
+[10:33] But the connection is the same.
+[10:54] Okay.
+[10:55] Let's connect it.
+[10:57] Okay.
+[10:58] Let's connect it with a pen.
+[11:00] Okay.
+[11:01] Now this is A.
+[11:03] This is beta.
+[11:05] This is V0.
+[11:07] This is VI.
+[11:09] Or say VS.
+[11:11] This is VF.
+[11:12] And this is VI.
+[11:14] Okay.
+[11:15] Input to the amplifier.
+[11:17] I am calling it as VI.
+[11:20] Now look.
+[11:21] What is the role of input?
+[11:24] You said that the signal that is going on the output.
+[11:27] Feed it back and use it as an input.
+[11:34] And our system keeps going.
+[11:36] Our system keeps going.
+[11:39] But son, where did this output come from in the first place?
+[11:43] Think like a chicken egg.
+[11:45] You are saying that the chicken will come out of the egg.
+[11:47] Then the egg will come out of the egg.
+[11:49] Then the chicken will come out of it.
+[11:51] Then the egg will come out of it.
+[11:53] You are thinking like this.
+[11:55] But first of all the chicken or egg must have come out.
+[11:57] So the source came to create the output in the first place.
+[12:01] Once the source created the output.
+[12:04] After that our feedback signal will work as input for the oscillator.
+[12:11] We will not need an external input.
+[12:15] Brother Pritam, if you listen to me carefully.
+[12:18] The component of the function generator is the oscillator.
+[12:21] Now what is the difference between the oscillator and the microprocessor?
+[12:26] The oscillator is being used in the microprocessor to give the clock.
+[12:29] The oscillator is being used in communication to make a career signal.
+[12:34] Similarly, the oscillator is being used internally in the function generator.
+[12:38] The function generator is the oscillator.
+[12:41] The function generator gives different frequency oscillations.
+[12:44] It gives different amplitude oscillations.
+[12:46] The function generator gives different waveforms.
+[12:49] This can do all the work by itself.
+[12:52] You can change the amplitude if you amplify the output of the oscillator.
+[12:56] You can change the frequency by changing the value of the component in the oscillator.
+[13:02] You can differentiate it by integrating it and changing its waveform.
+[13:06] So the oscillator is the same inside but for different waveforms.
+[13:10] You must have put an extra circuitry.
+[13:12] So now the function generator is able to give different waveforms.
+[13:16] Did you understand what I said?
+[13:18] Yes, now what are we saying?
+[13:21] When VS is 0, no oscillations can occur.
+[13:34] No oscillations can occur as there is no energy, no energy injected in the system.
+[13:52] There is no energy in the system.
+[13:54] What happens in an oscillator?
+[13:56] The energy you send, the same energy oscillates.
+[14:01] Like the LC oscillator.
+[14:03] If you give the inductor energy, the inductor will give its energy capacitor.
+[14:08] The capacitor will give its energy to the inductor.
+[14:11] Then the inductor will give its energy to the capacitor.
+[14:14] It will keep going like this.
+[14:16] But when you don't give any energy to the circuit, it won't work.
+[14:20] It won't work.
+[14:22] But when your VS is non-zero.
+[14:26] Then you write V0 for now as AVS.
+[14:35] Assume feedback is equal to 0 till output is produced.
+[14:43] Till the output is not coming, then where will the feedback come from?
+[14:48] It is something to think about.
+[14:50] Do you understand what I am saying?
+[14:52] First the output will come, then the feedback will come.
+[14:55] The feedback comes from the energy output itself.
+[14:58] So what did we say earlier?
+[15:00] The input came from it, the output came from it.
+[15:02] The feedback will come from it.
+[15:04] Now you will tell me how much the feedback will come?
+[15:07] The feedback will come from beta V0.
+[15:11] How much the feedback will come?
+[15:14] Feedback voltage VF is beta V0.
+[15:22] Now instead of V0, you will write AVS.
+[15:28] A beta VS.
+[15:32] Now what am I saying?
+[15:34] If this A beta, if this A beta becomes 1, then the feedback voltage is equal to VS.
+[15:43] If this A beta becomes 1, then the feedback voltage is equal to VS.
+[15:49] If the feedback is equal to the supply, then it will itself act as a source for the next cycle and this oscillation will continue.
+[16:00] And this oscillation will continue.
+[16:04] Do you understand what I am saying?
+[16:07] So we are saying that if A beta is 1, VF itself equals to VS and can act as a source for sustained oscillation.
+[16:28] Sustained oscillation means the oscillation which does not end.
+[16:34] So if you want the oscillation to continue in your system and it does not end, then your A beta should be 1.
+[16:44] What should happen?
+[16:45] A beta should be 1 and this condition is loop gain.
+[16:53] A beta is equal to 1.
+[16:56] This is called as the Barkh Hussain criteria.
+[17:04] This is important for oscillators.
+[17:08] That there should be positive feedback and your loop gain should be unity.
+[17:14] This is the light.
+[17:16] This is clear.
+[17:18] As you had read the condition for virtual ground that there should be negative feedback and open loop gain should be infinity.
+[17:26] Similarly, for oscillators, the condition is that loop gain should be unity so that the feedback signal is equal to the supply.
+[17:37] And if it is equal to the supply, then it can act as a source for the next cycle and this process can continue.
+[17:46] This process can continue.
+[17:48] Is the light good?
+[17:50] Tell me.
+[17:52] Now if we discuss the Barkh Hussain criteria in a little more detail, what are we saying?
+[17:58] That since A beta is equal to 1, instead of 1, you can write 0 as 1.
+[18:08] Therefore, phase shift offered to a signal as it loops through
+[18:37] the oscillator should be a multiple of 2 pi.
+[18:58] The total phase shift is coming to 0 degree, which means it can be 0, 2 pi, 4 pi.
+[19:06] You understand that the signal first went to A.
+[19:10] The signal first went to A, right?
+[19:14] Then it became an output from here, then it came feedback from beta.
+[19:18] We can say that the signal went around the whole.
+[19:21] First the output from the input, then the input from the output.
+[19:24] So, we are saying that the whole circle signal that has traveled, the whole loop that it has traveled,
+[19:31] within this whole traversal, the phase shift that it is getting, that should be an integral multiple of 2 pi,
+[19:40] that is 0 degree, 2 pi, 4 pi, 6 pi, some of these types.
+[19:45] Second, we can say that the magnitude of loop gain, magnitude of loop gain mod A beta equal to 1.
+[20:09] Magnitude should be 1 and what should be the angle?
+[20:14] The angle should be 2 pi's multiple.
+[20:17] Now, ideally, we say that whenever there is an oscillator, it does not need any input signal.
+[20:25] To oscillate, it is self-sufficient.
+[20:30] Its output itself becomes an input as a feedback through which the oscillations keep going.
+[20:36] But practically, you know that you have to give an input signal.
+[20:40] Otherwise, initially, where will the energy go in the oscillator?
+[20:44] To start your oscillations.
+[20:47] So, what are you saying?
+[20:49] That practically, an input signal is needed to start oscillations.
+[21:13] Otherwise, where will the oscillations come from?
+[21:16] Clear?
+[21:21] To start oscillations, you will need an input.
+[21:27] And then, if A beta equal to 1, oscillations are self-sustained.
+[21:39] After this, if A beta equal to 1, then the oscillations will keep going.
+[21:45] After this, you do not need to think about it.
+[21:49] You do not need to give energy to it.
+[21:52] So, first you will give an input and then you will make A beta equal to 1.
+[21:57] And if A beta equal to 1, then the oscillations will keep going.
+[22:00] If A beta equal to 1, then what will happen?
+[22:06] If A beta equal to 1, then what will happen?
+[22:11] Say it quickly.
+[22:13] Think about it.
+[22:15] If A beta equal to 1, then what will happen?
+[22:22] Tell me.
+[22:23] What does it mean to be equal to A beta equal to 1?
+[22:26] The more the signal was entered, the more the feedback is coming.
+[22:31] Look, the loop gain is A beta.
+[22:33] That is, from here to here is A beta.
+[22:38] So, if A beta is greater than 1, then the value in the feedback is more than your supply.
+[22:46] So, if the signal keeps increasing, then the amplitude of oscillation will keep growing.
+[22:52] Think about it.
+[22:53] If A beta is greater than 1, then the input signal that comes back every time will come back more than before.
+[23:02] If it comes back more than before, then the amplitude of your oscillations will keep growing.
+[23:09] This will happen.
+[23:11] So, look, it started with less amplitude, then more, then more.
+[23:18] Did you understand?
+[23:19] It will happen like this.
+[23:20] The amplitude of oscillations will keep falling.
+[23:23] Okay?
+[23:28] Sorry, it will keep increasing.
+[23:32] Now, we will understand one more thing, son.
+[23:47] As you said, the total of the loop gain, the total of the loop gain, your phase should come.
+[23:54] You said that the multiple of 2 pi should come.
+[23:57] Now, here A is amplifier and what is beta?
+[24:01] What is beta?
+[24:02] What is your feedback network?
+[24:04] What is A?
+[24:05] What is amplifier?
+[24:06] What is beta?
+[24:07] What is the feedback network?
+[24:08] Now, many times, son, it happens that the amplifier gives the phase shift of how much?
+[24:15] Of 180 degrees.
+[24:16] Amplifier gives the phase shift of 180 degrees.
+[24:21] In that case, to do a total phase shift of 360 degrees, how much phase shift of your beta should come?
+[24:29] 180 degrees.
+[24:30] If an amplifier such as common emitter amplifier provides 180 degree shift, then
+[24:59] feedback network must also provide 180 degree shift to make
+[25:19] a multiple of 2 pi.
+[25:29] Okay?
+[25:30] To make angle A beta multiple of 2 pi.
+[25:37] That is, if you put an inverting amplifier in A, then you will also make a beta network
+[25:48] which will give you a phase shift of 180 degrees.
+[25:51] And if you put a non-inverting amplifier in A, then what should be your beta phase shift?
+[25:58] Zero degree.
+[25:59] If you want a total phase shift of A and beta to be 0 degree, 360 degree, 720 degree,
+[26:07] something like this should happen.
+[26:09] Okay?
+[26:10] Something like this should happen.
+[26:12] Satyam, my brother, I speak about this every day.
+[26:15] I speak about it three times in one lecture.
+[26:17] Now, it is not that whenever anyone comes to ask, then we will talk about it.
+[26:21] That when will the lecture be public?
+[26:23] When will it be public?
+[26:24] When will it be public?
+[26:25] How many times have I told you to attend live?
+[26:27] Attend regularly.
+[26:28] But you have to listen.
+[26:30] Then you have to ask when will it be public?
+[26:32] There was no condition of this course that the lecture will go on for 24 hours.
+[26:36] Still, you have not followed.
+[26:42] Wow!
+[26:43] Wow!
+[26:44] Do it on Sunday.
+[26:46] You think you should do it on Sunday, then do it on Sunday.
+[26:50] Let's go.
+[26:55] Yes.
+[26:56] Now, in any amplifier in Barkh Hussain Criteria, okay?
+[27:00] Barkh Hussain Criteria is applied in any amplifier.
+[27:05] Okay?
+[27:06] How is it applied?
+[27:08] Listen carefully.
+[27:10] Now, first of all, see, in applying Barkh Hussain Criteria, what do we want?
+[27:15] We want an oscillator to oscillate at what frequency?
+[27:20] That is, we want an oscillator's oscillation frequency.
+[27:25] Okay?
+[27:26] So, we are saying for an oscillator to oscillate at one frequency,
+[27:47] Barkh Hussain Criteria must be applied.
+[28:02] Now, see how it is done.
+[28:08] Understand the steps, dear.
+[28:12] First of all, using feedback network, using feedback network,
+[28:26] beta equal to Vf by V0, you have to calculate this.
+[28:31] Okay?
+[28:32] Beta equal to Vf by V0, you have to calculate this.
+[28:36] Now, this beta is made of two things.
+[28:40] It will have a real part and one of my children will have an imaginary part.
+[28:47] Now, the gain of amplifier, dear, A, the gain of amplifier A is real.
+[28:57] As you have seen in OPAM, BJT, everywhere, the gain is real.
+[29:01] If my brother has a real gain and A is your beta, then the beta should also be real.
+[29:08] Correct?
+[29:09] For A beta equal to 1, beta must be real.
+[29:16] Correct?
+[29:17] Otherwise, how will A beta be 1?
+[29:20] So, what do you understand from this?
+[29:23] If there is a real and imaginary part in beta and as per your opinion, beta should be real,
+[29:29] then what will be the imaginary part of beta?
+[29:33] The imaginary part of beta will be zero.
+[29:38] So, you compute the oscillation frequency by zeroing the imaginary part of beta.
+[29:47] What do you compute?
+[29:49] Oscillation frequency.
+[29:55] Now, what do you do with the next part?
+[29:58] Mod A beta.
+[30:00] The real part of beta is left.
+[30:03] By doing this, compute A and set the values of amplifier resistors accordingly.
+[30:19] Suppose there is a non-inverting amplifier.
+[30:22] So, what is its gain, dear?
+[30:24] 1 plus RF by R1.
+[30:26] So, if you get A once, then accordingly, you can decide the values of RF and R1 there.
+[30:34] You can decide the values of RF and R1.
+[30:38] Okay?
+[30:40] Is this clear?
+[30:42] So, if you want to get the oscillation frequency, then do the imaginary part of beta.
+[30:48] Omega will come.
+[30:50] Take out the real part of beta on omega.
+[30:53] Then, take out A by A into beta real 1.
+[30:56] And as per A, the parameters of your amplifier,
+[31:00] whether it is the BJT amplifier,
+[31:03] whether it is the MOSFET amplifier,
+[31:05] whether it is the OPAMP amplifier,
+[31:07] accordingly, you will set up its parameters so that your gain is satisfied.
+[31:13] Shall I tell everyone the shine?
+[31:15] Is this clear?
+[31:17] Now, when we read the oscillator, dear,
+[31:20] in today's class, I will make all of you,
+[31:22] except for the crystal oscillator, I will make this for you tomorrow.
+[31:25] Okay?
+[31:26] So, there are two types of oscillators.
+[31:28] Audio frequency,
+[31:30] that is, the less frequency oscillator,
+[31:32] like the VIN bridge and RC phase shift oscillator.
+[31:35] And the second is the high frequency one,
+[31:38] which is called the radio frequency oscillator.
+[31:42] What will we do here?
+[31:44] Heartlet oscillator,
+[31:46] Colpett oscillator and Clap oscillator.
+[31:48] Heartlet, Colpett and Clap oscillator.
+[31:51] We will cover it.
+[31:53] And all these oscillators, dear,
+[31:55] come to the work of making sinusoidal waveforms.
+[31:58] Squier waves are made with Schmitt trigger,
+[32:01] with multivibrator,
+[32:03] which we call relaxation oscillator.
+[32:06] I will cover that in tomorrow's lecture.
+[32:08] Today, we will talk about
+[32:11] sinusoidal oscillations.
+[32:18] Okay?
+[32:20] Let's go.
+[32:24] Let's start our discussion.
+[32:28] Now, one question is also that,
+[32:30] sir, the LC oscillator,
+[32:31] Heartlet, Colpett,
+[32:33] Clap oscillator,
+[32:35] why is it on high frequency?
+[32:37] Why not on low frequency?
+[32:39] Look, what is the frequency of oscillation, dear?
+[32:43] 1 upon 2 pi root LC.
+[32:50] So, C is very small.
+[32:54] So, for low frequency oscillation,
+[33:02] if you want low frequency,
+[33:05] then L must be
+[33:08] very large.
+[33:11] Suppose C is in your picofarad
+[33:14] and you want frequency in hertz.
+[33:18] So, the value of L is mega henry.
+[33:21] Okay, Giga henry will go in such values,
+[33:24] because of which its size
+[33:27] will be impractical.
+[33:29] Its size will not be so high,
+[33:32] we will not be able to make the size of the inductor.
+[33:35] Do you understand?
+[33:36] That is why it gives high frequency.
+[33:38] It does not give low frequency.
+[33:44] If after that input is given,
+[33:46] then also oscillation is produced.
+[33:48] Ravi, my brother, if you also give input
+[33:50] and there was feedback,
+[33:52] don't you think it has doubled?
+[33:54] The total input amplifier's add has doubled.
+[33:57] If it has doubled, then the output will double,
+[33:59] then the feedback will double,
+[34:01] then the input has doubled,
+[34:03] then the output has doubled,
+[34:05] then the feedback has doubled,
+[34:07] then the input has added four times.
+[34:09] Think about it.
+[34:12] Will it not increase?
+[34:15] Put your mind to it.
+[34:18] You have played a lot of games with your mind.
+[34:23] Okay, brother.
+[34:25] If this VF and VS are equal,
+[34:27] then this is 2 VS,
+[34:29] then this V0 has doubled,
+[34:31] then there is a Vs added in it three times,
+[34:33] V0 three times,
+[34:35] then there is a Vs added
+[34:37] then 4 times.
+[34:39] Do you understand?
+[34:41] Then the oscillation will grow, right?
+[34:43] Because your input is 2,
+[34:45] one is the feedback and the other one is the source.
+[34:49] So it's clear.
+[34:51] This LC oscillator can be used at high frequency
+[34:53] at low frequency.
+[34:57] RC oscillators are used
+[34:59] Because the resistance can be taken highly.
+[35:03] Do you understand?
+[35:05] If the capacitor is also in microfarad,
+[35:09] then L will be at least in kilo henry.
+[35:13] If L is in kilo henry,
+[35:15] then it will become a very big inductor.
+[35:17] Have you ever seen in any subject that the inductance is given in kilo henry?
+[35:21] It is not like that.
+[35:23] Inductance is only in henry.
+[35:25] But resistance can be in kilo ohm.
+[35:27] If the capacitance is also in microfarad,
+[35:30] then with the resistance of kilo ohm,
+[35:32] I can make sure that the frequency becomes small.
+[35:36] The frequency becomes small.
+[35:39] Okay?
+[35:40] Now what is the difference between an amplifier and an oscillator?
+[35:45] What is the difference between an amplifier and an oscillator?
+[35:49] If I talk about the basic difference,
+[35:51] then what happens?
+[35:53] An amplifier is basically an energy converter.
+[36:00] Sir, how?
+[36:01] How is an energy converter?
+[36:04] Look, what does an amplifier do?
+[36:07] An amplifier draws energy from DC bias.
+[36:19] DC's biasing draws energy from there.
+[36:23] And supplies to AC input to amplify AC signal.
+[36:35] Do you understand this?
+[36:36] Amplifier works like this.
+[36:38] DC takes this energy and gives AC,
+[36:42] through which AC signal is amplified.
+[36:47] And there, the oscillator maintains constant energy throughout.
+[37:07] This does not take energy from somewhere.
+[37:09] You have to give it once.
+[37:11] Then the same energy will keep oscillating.
+[37:14] The other difference is the negative feedback and positive feedback.
+[37:19] There is negative feedback in the amplifier and positive feedback in the oscillator.
+[37:23] But you have to pay attention to this too.
+[37:26] What is the difference between the two conceptually?
+[37:28] Both are working separately.
+[37:30] Both are working separately.
+[37:33] What are we doing there?
+[37:35] By giving AC input, DC draws energy from there.
+[37:40] Which increases its energy and its amplitude.
+[37:44] Here, the source takes energy once.
+[37:47] And we keep running it continuously.
+[37:50] We write the other points.
+[37:52] The negative and positive feedback.
+[37:54] Amplifiers use negative feedback while oscillators use positive feedback.
+[38:25] Okay?
+[38:27] Let's go towards the first oscillator.
+[38:30] The first oscillator is a famous oscillator.
+[38:32] Which is read in the measurement by electrical students.
+[38:36] Which is called the Vane Bridge.
+[38:43] Shall we go?
+[38:45] Why?
+[38:47] Shall we go towards the Vane Bridge oscillator?
+[38:49] Yes.
+[38:51] What is in the Vane Bridge oscillator?
+[38:54] This is your inverting amplifier.
+[38:57] What is this?
+[39:01] This is your inverting amplifier.
+[39:07] And this is your positive feedback from here.
+[39:13] What is this?
+[39:15] Positive feedback.
+[39:17] Now many of you will think.
+[39:20] Sir, here we can see negative feedback.
+[39:23] How did you decide that this is positive feedback or negative?
+[39:26] Look, what happens when your negative feedback has capacitors.
+[39:31] We cannot always say that the virtual ground will be V positive equal to V negative.
+[39:38] The reason for that is simple.
+[39:40] The voltage of the capacitor cannot suddenly change as much as the positive terminal.
+[39:47] That is why the virtual ground cannot be applied.
+[39:50] Whenever our capacitors are seen on the negative terminal.
+[39:54] We say that we cannot apply the virtual ground.
+[39:58] Because the voltage of the negative terminal may not match with the voltage of the positive terminal.
+[40:05] Okay?
+[40:07] Now the thing is what is the speciality of the Vane Bridge oscillator?
+[40:11] You have to remember one thing.
+[40:14] There is an RC network series in one parallel.
+[40:18] There are two impedances.
+[40:20] One is in the R and C series.
+[40:23] The other is in the R and C parallel.
+[40:27] Do you understand?
+[40:31] What are we saying?
+[40:33] How to recognize?
+[40:41] One RC series network and one RC parallel network.
+[41:01] Okay?
+[41:03] Now the output voltage of the terminal is V0.
+[41:07] And you know one thing very well.
+[41:10] That the input current of the O-Pamp will be zero.
+[41:14] So you can tell me the voltage of positive and negative terminals in this circuit.
+[41:19] You can tell me V plus and V minus.
+[41:23] So we will say what will be V plus?
+[41:27] V0 into R3
+[41:31] by R3 plus R4
+[41:35] will be this.
+[41:37] What will be V minus?
+[41:39] The voltage of the negative terminal.
+[41:41] V0
+[41:43] Z1
+[41:45] by Z1 plus Z2
+[41:47] will be this.
+[41:49] One of the inverting terminals and one of the non-inverting terminals.
+[41:53] And the difference between the two will be called
+[41:57] the feedback voltage.
+[42:00] V positive minus
+[42:02] V negative.
+[42:04] This is going inside the O-Pamp basically.
+[42:07] This is going inside the O-Pamp.
+[42:12] So see
+[42:14] R3 by
+[42:17] R3 plus R4
+[42:19] minus Z1 by
+[42:22] Z1 plus Z2 V0.
+[42:27] Okay?
+[42:28] This happened.
+[42:29] So I got beta from here.
+[42:31] Think one thing.
+[42:33] Did you get beta or not?
+[42:35] Beta is Vf by V0.
+[42:42] So this happened.
+[42:45] R3 by
+[42:51] R3 plus R4.
+[42:56] Understood?
+[42:58] Now how did I teach you to take out the frequency?
+[43:01] What did I call?
+[43:03] How did I decide the inverting amplifier?
+[43:07] How did I decide the inverting amplifier?
+[43:10] By the way, there is no need for inverting amplifier here.
+[43:13] There is no role for this here.
+[43:15] When it comes, I will tell you the purpose of inverting amplifier.
+[43:19] Now understand here.
+[43:21] I said that the feedback voltage inside the O-Pamp
+[43:25] because both the feedbacks are your positive and negative.
+[43:28] So you said the feedback voltage inside the O-Pamp.
+[43:32] Okay?
+[43:33] Now how did I tell you how to take out the frequency?
+[43:36] That make the imaginary part beta zero.
+[43:39] Okay?
+[43:47] Now see.
+[43:49] Z1 is R1 and C1 is parallel.
+[43:54] R1 parallel by
+[43:58] SC1
+[44:06] and Z2 is R2 plus 1 by SC2.
+[44:23] So what are you saying now?
+[44:26] Beta basically what happened?
+[44:30] R3 by R3 plus R4
+[44:39] minus
+[44:41] Z1 by Z1 plus Z2
+[44:49] R1 by
+[44:51] 1 plus SC1 R1
+[44:56] by Z1 plus Z2
+[45:10] Now if you take LCM of the lower term
+[45:15] SC2 R1
+[45:22] SC2 R1
+[45:28] SC2 R1
+[45:31] plus
+[45:33] 1 plus SC1 R1
+[45:37] 1 plus SC2 R2
+[45:40] Okay?
+[45:42] Now in beta
+[45:44] in beta if you private the videos for today and tomorrow
+[45:50] we will do it.
+[45:51] This is the first time such demand has come.
+[45:54] Okay?
+[45:55] This is also a good idea.
+[46:04] Now see in beta if you put J omega in S
+[46:12] S
+[46:22] minus J omega
+[46:29] Now think about it.
+[46:32] The first term here is purely real.
+[46:36] There is no imaginary part in the first term.
+[46:40] Correct?
+[46:42] So when we want to take the imaginary part of beta
+[46:44] then we should take it from the second term.
+[46:53] Do you know how to take the imaginary part of beta?
+[46:56] Either do this and simplify the beta part.
+[47:00] Later we will talk about the imaginary part of beta.
+[47:10] Divide it from J omega.
+[47:16] Only then things will be correct.
+[47:18] If you divide it from J omega, C2 R1
+[47:24] 1 by J omega
+[47:27] J omega square
+[47:29] then J omega will be left.
+[47:31] R1 R2 C1 C2
+[47:35] Okay?
+[47:36] And then
+[47:39] what will you say?
+[47:40] J omega
+[47:41] J omega to J omega will be cut.
+[47:44] R1 C1
+[47:47] See this happened.
+[47:49] Now you are saying that beta must be real.
+[47:52] Beta should be real.
+[47:54] That means the imaginary terms in beta should be zero.
+[47:57] Do you agree?
+[47:59] Do you agree that if beta is real
+[48:03] then the imaginary terms in this
+[48:07] 1 by J omega
+[48:09] plus J omega
+[48:12] R1 R2 C1 C2
+[48:14] should be zero.
+[48:17] Okay?
+[48:19] Now if you divide it from J
+[48:23] 1 equal to omega square
+[48:26] See from here omega will come.
+[48:37] This came.
+[48:41] This came the frequency of oscillation.
+[48:44] Once you got omega my brother
+[48:46] then what is left in beta?
+[48:51] There is left in beta
+[48:54] R3 is above.
+[48:55] R3 by
+[48:58] R3 plus R4
+[49:03] minus C2 R1
+[49:07] by C2 R1
+[49:10] plus
+[49:15] R1 C1 plus R2 C2
+[49:23] This happened.
+[49:25] Now what do I say?
+[49:26] Gain of opamp
+[49:29] Gain of opamp
+[49:31] A tends to infinity
+[49:37] therefore
+[49:39] beta must tend to zero
+[49:42] so that mod of A beta remains one.
+[49:45] If beta tends to zero
+[49:48] then you can write its reciprocal.
+[50:01] C1 R1 plus C2 R2
+[50:04] by
+[50:06] C2 R1
+[50:09] So this happened
+[50:10] 1 plus R4 by R3
+[50:15] 1 plus C1 by C2
+[50:18] plus R2 by R1
+[50:20] 1 by 1 is cut.
+[50:22] So we have another condition
+[50:24] that came out here.
+[50:26] We call it condition for oscillation.
+[50:30] What do you call it?
+[50:31] Condition for oscillation.
+[50:38] So this condition comes out.
+[50:40] You should also keep this condition in mind.
+[50:42] Once in the question of number one
+[50:44] this condition was asked.
+[50:47] This is the condition for oscillation.
+[50:52] If this condition is satisfied
+[50:54] then your
+[50:56] in-bridge oscillator will oscillate
+[50:59] and how much frequency it will oscillate
+[51:04] 1 by R1 R2
+[51:06] C1 C2 under root
+[51:09] or if you want to write the frequency
+[51:12] 1 upon
+[51:15] 2 pi
+[51:18] root over
+[51:20] R1 R2
+[51:22] C1 C2
+[51:24] This happened.
+[51:26] Okay?
+[51:28] Theta my brother
+[51:29] which voltage did you take for opamp?
+[51:31] Have you taken VF?
+[51:33] Have you taken VF?
+[51:37] So then
+[51:38] what is VF looking like?
+[51:40] It looks like opamp.
+[51:41] Look, we are saying this.
+[51:43] This is the input of opamp.
+[51:45] It is VF.
+[51:46] It is output.
+[51:47] It is V0.
+[51:48] How much do you take the open loop gain of opamp?
+[51:50] You take infinity.
+[51:51] Because V0 is equal to A VF.
+[51:54] This is what you will write.
+[51:56] So we are saying if A is infinity
+[51:58] then beta must come out to be 0.
+[52:02] Okay?
+[52:03] So you have to take care of these conditions.
+[52:05] This condition and frequency.
+[52:08] And many times you know that it is also made as a bridge network.
+[52:24] This is also made as a bridge network.
+[52:31] V0 is here.
+[52:32] Now what was on positive terminal?
+[52:34] Your R3 and R4.
+[52:37] Your R3 and R4 were on positive terminal from V0.
+[52:41] How to show this?
+[52:44] And from here on a negative terminal
+[52:47] there was a ground.
+[52:49] And what was between the negative terminal and the ground?
+[52:53] See, between the negative terminal and the ground there is R1C1.
+[53:01] See a little.
+[53:07] And what was between the negative terminal and V0?
+[53:11] R2 and C2 are parallel.
+[53:13] In parallel.
+[53:21] Between V0 and positive terminal I think there was R4.
+[53:25] And then there was R3 to the ground.
+[53:30] This was it.
+[53:31] Yes, positive terminal R4 from V0.
+[53:35] And this is R3.
+[53:37] Now positive terminal.
+[53:40] See, like this.
+[53:44] This is what we made.
+[53:46] Okay.
+[53:47] Now see here what is the condition.
+[53:51] There is some condition like this.
+[53:56] If you see here, the upper resistance R4
+[54:00] upon R3
+[54:03] the upper resistance R2 upon the lower resistance R1.
+[54:08] In the case of a capacitor, it is the opposite.
+[54:10] Because there is an impedance of the capacitor.
+[54:12] It is 1 by SC.
+[54:14] It is the impedance of the capacitor.
+[54:16] 1 by SC.
+[54:18] Did you understand this?
+[54:20] So, the ratio in the capacitor is the opposite.
+[54:23] Okay.
+[54:24] The ratio in your capacitor is the opposite.
+[54:27] That is, the lower capacitor upon the upper capacitor.
+[54:31] And you know the omega.
+[54:35] Now it has been clearly cleared.
+[54:36] RC Fish.
+[54:37] Sorry.
+[54:38] This is the Vain Bridge Oscillator.
+[54:40] Vain Bridge Oscillator is clearly clear to everyone.
+[54:43] 1 by root 2 under root R1 R2 C1 C2.
+[54:49] It was from the parallel ground.
+[54:52] Okay.
+[54:53] It was from the parallel ground.
+[54:54] It was here in the series.
+[54:56] Okay.
+[54:57] Let's change this.
+[55:10] Okay.
+[55:24] Okay.
+[55:28] Here.
+[55:29] Clear?
+[55:31] Let's go.
+[55:33] Oh God.
+[55:34] These people won't be able to change without spamming.
+[55:37] I don't know what they want.
+[55:41] Okay.
+[55:42] Now let's see some more things about it.
+[55:44] What are its advantages?
+[55:46] You can use it as an audio frequency oscillator.
+[55:50] Audio frequency means low frequency.
+[55:53] And when you make a signal generator, i.e. a function generator,
+[55:57] the main oscillator is yours.
+[56:00] The main oscillator is the Vain Bridge Oscillator.
+[56:03] So, this is the master oscillator.
+[56:06] But you know, it also has a drawback.
+[56:09] What is a drawback?
+[56:12] See, you know the frequency response of O-Pamp.
+[56:18] You have read the frequency response of O-Pamp.
+[56:21] This is like a high pass filter.
+[56:24] Sorry, like a low pass filter.
+[56:26] It is similar to low pass filter.
+[56:31] So, what is its gain?
+[56:37] 1 plus J f by fh.
+[56:41] This is it, right?
+[56:43] So, its angle is minus 10 inverse f by fh.
+[56:48] That is, it gives a phase lag.
+[56:51] The meaning of negative phase shift is that it gives a phase lag.
+[56:55] So, if you want to do A beta 1,
+[57:00] the lag you are giving,
+[57:03] you will have to generate a lead
+[57:06] by means of a compensating network.
+[57:09] So, you will have to apply an extra network
+[57:12] which will compensate its lag.
+[57:15] That is called as the compensation network.
+[57:19] Tell me, is this clear?
+[57:21] Is this clear?
+[57:23] Tell me quickly.
+[57:29] Now, let's come to the next one.
+[57:31] RC phase shift oscillator.
+[57:33] RC phase shift oscillator.
+[57:35] Now, look at this.
+[57:37] This is an inverting amplifier.
+[57:41] Now, everyone can see it.
+[57:43] This is an inverting amplifier.
+[57:45] How, sir?
+[57:47] Because you are giving input in which terminal of the amplifier.
+[57:50] In inverting terminal.
+[57:52] You are giving it here in VF.
+[57:54] So, an inverting amplifier is done.
+[57:57] And this is your R and C network.
+[58:01] That is your feedback network.
+[58:04] Which is called RC phase shift network.
+[58:08] This is your feedback network.
+[58:11] So, whose help did you make the feedback network?
+[58:14] RC network.
+[58:16] So, this voltage is V naught.
+[58:19] And the output of the feedback network is VF.
+[58:23] The output of the feedback network is VF.
+[58:27] Tell me, is this clear?
+[58:29] Is this clear?
+[58:31] Where do we use this, dear?
+[58:33] If you want a good shape,
+[58:36] a good waveform sine wave,
+[58:39] then you can use RC phase shift oscillator.
+[58:42] This is a local oscillator.
+[58:44] Local oscillator means,
+[58:46] which is only for that circuit.
+[58:48] What will be the global oscillator or universal oscillator?
+[58:51] Which is one oscillator for all the components.
+[58:54] So, this works like a local oscillator.
+[58:57] In synchronous receiver.
+[58:59] In communication, you read synchronous receiver.
+[59:01] The sine wave generated there,
+[59:04] will be RC phase shift oscillator.
+[59:06] For musical instruments.
+[59:08] And it comes in the purpose of our labs.
+[59:11] RC phase shift oscillator.
+[59:13] Okay.
+[59:14] So, here is an inverting amplifier.
+[59:16] It is an RC phase shift network.
+[59:19] Now, how much phase shift will this inverting amplifier give?
+[59:23] It will give 180 degree shift.
+[59:26] So, if you want to do A beta 1,
+[59:29] then this feedback network will also have to give 180 degree shift.
+[59:35] So, we say there are three sections,
+[59:37] R and CK.
+[59:38] Look, CR, CR, CR.
+[59:40] So, we say we want total 180.
+[59:42] If we give all three 60-60,
+[59:44] then also our work will be done, right?
+[59:46] If we give all three 60-60,
+[59:48] then also our work will be done.
+[59:50] But do you know what?
+[59:52] If you take section of one C and R,
+[59:54] and multiply these three gains,
+[59:57] then you will not get total,
+[59:59] because here there is a loading effect.
+[60:01] What do I want to say?
+[60:02] Look, this is my feedback network.
+[60:04] What is this?
+[60:06] This is my feedback network.
+[60:08] But now, if you think that
+[60:10] I take one RC section,
+[60:12] then I will remove its transfer function.
+[60:14] And if you multiply these three,
+[60:17] then it is wrong.
+[60:18] Because,
+[60:20] there is a loading effect here.
+[60:22] There is no isolation between the two sections.
+[60:25] That is, current is going from one section to the other section.
+[60:29] So, what am I saying here?
+[60:35] What are we saying?
+[60:36] We cannot
+[60:38] directly multiply.
+[60:40] These amplifiers are quite,
+[60:42] sorry, oscillators are quite important.
+[60:45] We cannot directly multiply
+[60:49] transfer function
+[60:56] of
+[60:57] each of the
+[61:03] RC
+[61:05] section
+[61:09] as there is a loading effect.
+[61:21] As there is
+[61:25] a loading effect.
+[61:26] Okay?
+[61:27] Because of the loading effect,
+[61:28] these three cannot be directly multiplied.
+[61:32] Dear, I do not read the communication, my brother.
+[61:35] The rest of the communication crash course
+[61:37] will definitely be of you.
+[61:38] Why are you taking tension?
+[61:39] Now, listen carefully.
+[61:43] Here, the current is zero.
+[61:45] So, you know that you can take out V2 from VF.
+[61:49] From the voltage division.
+[61:51] Look,
+[61:53] VF is equal to V2
+[61:56] into R upon
+[61:59] R plus 1 by SC.
+[62:11] This is done.
+[62:13] This is done.
+[62:15] Now, V2 has come out of here in one way.
+[62:19] Because V2 is my variable.
+[62:24] This is done.
+[62:25] Look.
+[62:27] V2 has come out.
+[62:28] Now, what do I need?
+[62:30] I need V0 and VF's relation.
+[62:32] Basically, I want to take out VF by V0
+[62:34] so that the beta comes out.
+[62:36] So, I have considered V1 on one node in the middle.
+[62:39] Now, how should we take out V1?
+[62:41] We have the voltage of V2 in the terms of VF.
+[62:45] You can take out V1 also, my dear.
+[62:49] Look,
+[62:50] you can say from here,
+[62:52] if you want to take out I,
+[62:54] then I is the sum of two currents.
+[62:58] I dash and I double dash.
+[63:02] So, I double dash is going here as well.
+[63:04] That is, VF by R.
+[63:08] So, what do we say here?
+[63:11] That I,
+[63:13] look, I dash
+[63:16] plus I double dash.
+[63:19] I dash, how much is V2 by R?
+[63:22] And I double dash
+[63:25] is going in the other resistance, VF by R.
+[63:28] What will you add instead of V2?
+[63:30] VF
+[63:32] 1 plus SCR by SCR.
+[63:39] And there is one R below.
+[63:42] So, take VF by R as common here.
+[63:52] Take LCM.
+[63:59] Okay?
+[64:00] Now, once this I is here,
+[64:02] then you can take out V1.
+[64:04] V1 equal to
+[64:06] V2 plus
+[64:08] I upon SC.
+[64:11] So, what is V2?
+[64:13] VF
+[64:16] 1 plus SCR by SCR.
+[64:19] What will be I by SC?
+[64:23] VF by...
+[64:24] Look, there is R here.
+[64:25] And one SC came.
+[64:27] So, down there is SCR square.
+[64:32] 1 plus 2 SCR.
+[64:36] Okay?
+[64:37] Is this clear?
+[64:38] Now, you take LCM.
+[64:42] No, dear.
+[64:43] As much as you want, the question doesn't come to the gate
+[64:45] from the oscillator.
+[64:46] Now, I don't know how much you want
+[64:48] the question from the oscillator.
+[64:50] Start reading anything.
+[64:51] It will take some effort.
+[64:53] We will immediately think.
+[64:54] There won't be any question from this.
+[64:56] Isn't it?
+[65:02] Now, come here quickly.
+[65:06] The sequence of the playlists of Analog has been disturbed.
+[65:08] No, dear.
+[65:09] The video has become private in that.
+[65:10] The sequence has not been disturbed.
+[65:12] Come.
+[65:13] Now, take LCM, dear.
+[65:14] SCR square.
+[65:23] Okay?
+[65:24] So, the whole SCR will be multiplied in this.
+[65:31] This term will be SCR and 2 SCR.
+[65:33] 3 SCR.
+[65:37] Plus 1.
+[65:39] This came.
+[65:40] Okay?
+[65:41] Now, what will happen after this?
+[65:43] I got V1.
+[65:45] Now, I want V0.
+[65:47] Now, the current is going here.
+[65:49] It will be going here.
+[65:51] V1 by R.
+[65:54] So, this current is I1.
+[65:57] See, how much effort it is.
+[65:59] Now, it is I1.
+[66:00] We have to take out I1.
+[66:05] V1 by R.
+[66:07] Plus I.
+[66:09] Then, what will be V0?
+[66:12] V1 plus I1 by SC.
+[66:17] V1 plus V1 by SCR.
+[66:22] Plus I by SC.
+[66:24] I by SC, I era.
+[66:29] If you do I by SC.
+[66:35] V by SCR square.
+[66:37] Okay?
+[66:41] Or 1 plus 2 SCR.
+[66:46] Now, V1.
+[66:50] Have VF by SCR.
+[67:08] Then, V1 by SCR.
+[67:22] Now, you must be feeling how much effort it is.
+[67:24] You are feeling scared seeing it.
+[67:26] Think what I am doing.
+[67:30] VF by...
+[67:38] Now, it is clear that SCR's cube will come in LCM.
+[67:43] Right?
+[67:44] SCR's cube will come in LCM, right?
+[67:47] Look at it in three terms.
+[67:49] SCR's cube will come in LCM.
+[68:02] Correct.
+[68:04] Now, look.
+[68:05] Here, it will become SCR's cube.
+[68:07] SCR square into SCR.
+[68:09] Because it is SCR's square in its denominator.
+[68:11] And you have taken LCM's cube.
+[68:14] So, the first term is SCR's cube.
+[68:18] On top.
+[68:20] Okay?
+[68:21] Now, it will become 3 SCR's square.
+[68:24] Plus SCR's square, i.e. 4.
+[68:27] And it will become 2 SCR's square, i.e. 6.
+[68:32] So, it is SCR's square.
+[68:37] Okay?
+[68:38] Now, it will become SCR.
+[68:41] Here, it will become 3 SCR, i.e. 4.
+[68:44] And it will become SCR, i.e. 5.
+[68:49] 5 SCR.
+[68:52] Okay?
+[68:53] And the remaining one is 1.
+[68:55] So, this will be 1.
+[68:58] Okay?
+[68:59] Now, beta is...
+[69:02] All the efforts have been made.
+[69:04] Beta has come.
+[69:06] SCR's cube.
+[69:10] Now, it is not hard work.
+[69:12] It is tough to take out beta.
+[69:15] And look, if there is a standard circuit in the exam.
+[69:18] When there are only three sections,
+[69:20] then you can do it by remembering the formula.
+[69:23] It is not a big deal.
+[69:24] But, if there is a non-standard circuit,
+[69:27] then I have also shown you how to derive.
+[69:31] Do you understand?
+[69:32] I would directly write to you this expression.
+[69:34] That beta will come.
+[69:35] But now you have understood how beta comes.
+[69:44] I have put it.
+[69:46] What are you saying, Rohit?
+[69:50] Just a minute.
+[69:53] Just a minute.
+[70:15] Look,
+[70:19] our playlist is gone.
+[70:22] It is gone.
+[70:32] Active filter part 1, part 2.
+[70:36] Negative feedback application part 1, part 2.
+[70:40] So, it is there.
+[70:43] Tell me.
+[70:45] What else are you looking for?
+[70:47] Basics of opamp, characteristic of opamp,
+[70:50] negative feedback application part 1, part 2.
+[70:53] Assignment discussion, non-linear application, active filter.
+[70:56] Assignment discussion, feedback, amplifier, oscillators.
+[71:00] There are so many things.
+[71:06] It will happen when it will be public.
+[71:09] You are worried.
+[71:12] It is in the playlist.
+[71:13] I have just shown it in the playlist.
+[71:15] Rohit.
+[71:17] Yes, now come.
+[71:18] Now what do we have to do?
+[71:20] We have to convert beta to j omega.
+[71:28] The cube of j is minus j.
+[71:49] The square of j is minus 1.
+[71:56] Now you have to do the imaginary part of beta.
+[72:00] Okay?
+[72:01] You have to do the imaginary part of beta.
+[72:05] So, j is above.
+[72:06] Listen to one thing carefully.
+[72:08] If j is above,
+[72:10] if the part of j is made below,
+[72:12] then it will be real.
+[72:14] If j is above and j is below, it will be cancelled.
+[72:17] Think about it.
+[72:19] If j is above and j is below, it will be cancelled.
+[72:22] So, I say zero the real part of below.
+[72:25] Then the imaginary part is above and the imaginary part is below.
+[72:27] Which will become real.
+[72:29] So, it means zero the imaginary part of beta.
+[72:32] Zero the real part of below.
+[72:35] Do you understand the logic?
+[72:37] Then imaginary upon imaginary will be real.
+[72:41] So, what is omega from here?
+[72:47] 1 by rc root 6.
+[72:51] This is the frequency of oscillation.
+[72:57] Say it.
+[73:04] This is the frequency of oscillation.
+[73:06] Now, if you have got the frequency of oscillation,
+[73:11] then tell me what will be the remaining beta now?
+[73:14] Beta will be minus j omega cr cube.
+[73:21] And what will be left below?
+[73:23] Minus j omega cr cube plus 5j omega cr.
+[73:34] Omega cr has been cut.
+[73:37] And j has been cut.
+[73:39] So, omega cr square by omega cr square minus 5.
+[73:49] What is the square of omega cr?
+[73:52] 1 by 6 minus 1 by 29.
+[74:03] Now, how much is the gain?
+[74:05] This is an inverting amplifier, right?
+[74:07] How much is the gain of the inverting amplifier?
+[74:10] Tell me.
+[74:12] Minus r2 by r1.
+[74:15] This will be minus r2 by r1.
+[74:18] So, beta is minus 1 by 29.
+[74:21] A is minus r2 by r1.
+[74:25] So, when you do A beta by 1,
+[74:29] this means r2 by 29 r1 is 1.
+[74:34] So, how much is r2?
+[74:36] 29 r1.
+[74:38] And you can see that beta is getting negative.
+[74:41] That means beta is also shifting to 180 degrees.
+[74:45] Beta is also shifting to 180 degrees.
+[74:49] Because the inverting amplifier shifted to 180 degrees.
+[74:53] So, both are shifting to 180 degrees.
+[74:55] Is it clear?
+[74:57] Now, do you understand how Barkhussan criteria looks like?
+[75:01] Tell me quickly.
+[75:03] How does Barkhussan criteria look like?
+[75:05] Is it clear?
+[75:07] Now, instead of the opamp inverting amplifier,
+[75:11] if you wanted, you could have taken the common emitter amplifier of BJT.
+[75:16] Look, this is the common emitter amplifier of BJT.
+[75:19] The biasing of this is done by R1, R2, RC and RE.
+[75:25] And here, we have put a capacitor on the emitter, CE,
+[75:30] which is a kind of a bypass capacitor.
+[75:33] So, what are we saying?
+[75:35] Opamp inverting amplifier
+[75:39] Opamp inverting amplifier
+[75:47] can be replaced
+[75:50] can be replaced
+[75:54] by
+[75:56] BJT
+[75:58] common emitter amplifier.
+[76:03] Right? You can take the common emitter amplifier of BJT.
+[76:07] Now, look, we are not doing the entire derivation in this.
+[76:11] We are not doing the entire derivation.
+[76:14] I am writing the frequency.
+[76:18] Look, the chance of decreasing is still there.
+[76:22] If you are lucky, then you should know.
+[76:27] Here, the factor of 4K is coming extra.
+[76:30] For example, 1 by 2 pi RC root 6 was coming there.
+[76:33] Only root 6 was coming there.
+[76:35] Here, root 4K plus 6 is coming.
+[76:37] Where the value of K is RC by R.
+[76:41] How many are there?
+[76:43] RC by R.
+[76:45] Did you understand this?
+[76:46] What is RC? Collector resistance.
+[76:48] What is R?
+[76:49] The resistance of this RC network.
+[76:52] This is the resistance of RC.
+[76:54] Okay?
+[76:56] Now, there is a condition in it.
+[76:59] There is a condition.
+[77:07] HFE.
+[77:09] Okay? What does HFE mean?
+[77:11] Tell me quickly.
+[77:12] What is HFE?
+[77:13] Is it beta?
+[77:15] So, HFE is greater than 4K plus 23 plus 29 by K.
+[77:24] HFE means beta.
+[77:26] Beta should be greater than this.
+[77:28] Okay?
+[77:29] Beta should be greater than this.
+[77:30] Only then, it will do your work.
+[77:33] Is it clear?
+[77:34] Come.
+[77:35] Now, in the same way, what can we do?
+[77:38] We can do this too.
+[77:40] Inverting opamp amplifier.
+[77:46] Inverting opamp amplifier.
+[77:53] Replaced by common source amplifier.
+[78:00] Because common source is also inverting.
+[78:06] And there is a benefit in MOSFET.
+[78:08] Like the input current of opamp is zero.
+[78:10] The input current of such MOSFET is also zero.
+[78:14] Okay?
+[78:15] The input current of such MOSFET is also zero.
+[78:19] Okay?
+[78:20] So, this is the benefit of this BJT.
+[78:22] Sorry.
+[78:23] It resembles the opamp more.
+[78:25] And due to this, its frequency also comes.
+[78:28] It comes only to the opamp.
+[78:33] Okay?
+[78:34] Same as opamp.
+[78:43] Because input current is zero.
+[78:53] Right?
+[78:54] Like opamp, its input current will also be zero.
+[78:57] See, this input is bringing it back here.
+[79:00] So, there will be no current here.
+[79:02] But look at the BJT.
+[79:04] This is where it is taking it.
+[79:06] Here, there is a feedback current.
+[79:08] If.
+[79:09] Tell me.
+[79:10] Here, there is a feedback current in your BJT.
+[79:13] Okay?
+[79:15] This is showing that the R I is dotted.
+[79:17] This is equivalent resistance.
+[79:19] This is actually not connected.
+[79:21] But there you can remove the equivalent resistance.
+[79:24] Which is R I.
+[79:26] That is why it is dotted.
+[79:28] Is it shining?
+[79:29] Tell me quickly.
+[79:31] Is this clear?
+[79:33] Now here, the beta that comes.
+[79:37] It comes minus one by twenty-nine.
+[79:40] So, to do A beta one.
+[79:44] A must be minus twenty-nine.
+[79:48] Okay?
+[79:49] So, mu must be greater than twenty-nine.
+[79:52] You know mu is GMR naught.
+[79:55] It is maximum gain.
+[79:57] Any of your maximum gain is of MOSFET or FET amplifier.
+[80:02] Did you forget?
+[80:03] I told you the value of mu.
+[80:05] GMR naught.
+[80:07] So, GMR naught must be greater than twenty-nine.
+[80:10] This is maximum gain.
+[80:12] So, the gain of MOSFET will be less than mu.
+[80:16] Because the source resistance will come.
+[80:18] The load resistance will come.
+[80:20] So, the gain will be less.
+[80:21] This is maximum gain.
+[80:23] Twenty-nine.
+[80:24] Now, look at this question quickly.
+[80:26] Before this, I will go to the LC oscillator.
+[80:29] I will show you some questions.
+[80:30] Quickly recognize the oscillator and tell the frequency.
+[80:36] No one will write in the chat.
+[80:38] First, take out the frequency and write the answer.
+[80:40] Don't tell me which oscillator it is.
+[80:42] Okay?
+[80:43] First, take out the frequency.
+[80:45] Some people start giving knowledge.
+[80:47] You should not give knowledge, you should have a rank.
+[80:50] Okay?
+[80:54] Son, I have made many videos on this.
+[80:56] Shanvi.
+[80:57] How to maintain motivation.
+[80:59] If you watch any recent motivational video,
+[81:02] then it is necessary.
+[81:25] Thirty-three point eight six.
+[81:32] Tell the rest.
+[81:34] Look.
+[81:36] Look, this is your VIN bridge oscillator.
+[81:44] What is the frequency here?
+[81:47] R C.
+[81:54] R C.
+[81:56] Both the values are the same.
+[81:59] Both the resistances are equal.
+[82:01] And both the capacitance are equal.
+[82:04] The resistance is 1 kilo ohm.
+[82:06] The capacitance is 4.7 microfarad.
+[82:11] So, this is 1000 bits.
+[82:18] Thirty-three point eight six.
+[82:25] Okay?
+[82:27] And check the condition as well.
+[82:29] For example, 2 by 1 is 2.
+[82:32] 1 by 1.
+[82:36] Plus 4.7 by 4.7.
+[82:38] So, the ratio is matching.
+[82:40] The upper one is 2 upon 1.
+[82:43] Equal to 1 upon 1.
+[82:45] Plus 4.7 upon 4.7.
+[82:48] Only then will the oscillation be possible.
+[82:51] Look at the next one.
+[82:53] The phase shift oscillator shown.
+[82:55] Operate at 80 kilohertz.
+[82:57] Value of resistance.
+[82:59] RF is.
+[83:01] Tell me the value of RF.
+[83:04] 80 kilohertz frequency is given.
+[83:07] The value of RF is asking.
+[83:46] I answer.
+[83:51] See, this is the RC phase shift oscillator.
+[83:54] So, the frequency will be 80 kilohertz.
+[83:59] 1 upon 2 pi.
+[84:03] RC.
+[84:05] Route 6 will be.
+[84:07] Okay?
+[84:09] So, take out R from here.
+[84:11] C is 100 picofarad.
+[84:13] C is 100 picofarad.
+[84:15] You can write 10 power minus 10 to 100 picofarad.
+[84:33] 8.121 kilo.
+[84:36] Now, this RF is.
+[84:38] According to the gain.
+[84:40] It will be 29 R.
+[84:42] If you think of the gain of amplifier.
+[84:46] So, this is coming.
+[84:48] 235.55 kilo.
+[84:54] Is this coming?
+[84:56] Tell me.
+[84:58] Very good.
+[85:00] Look at the next one.
+[85:02] The value of C required.
+[85:04] The value of C required.
+[85:06] For sinusoidal oscillation.
+[85:08] Off frequency.
+[85:10] 1 kilohertz.
+[85:12] So, look at the oscillator.
+[85:14] They become very easy questions.
+[85:16] There is no such topic that you can't do.
+[85:18] It is the inverting of non-inverting.
+[85:20] Okay, this.
+[85:22] Yes, this is a little wrong.
+[85:24] It will be like this.
+[85:26] We will have to make inverting in this only.
+[85:28] Because the network of RC phase shift.
+[85:30] It shifts 180 degrees.
+[85:32] So, it is helpless.
+[85:34] It will be inverting only.
+[85:54] What was left?
+[85:56] We need the frequency of 1 kilohertz.
+[85:58] Aman.
+[86:02] Aman.
+[86:22] Look, what is this oscillator?
+[86:24] We have to recognize it by looking at the circuit.
+[86:26] It is a VIN bridge oscillator.
+[86:32] Okay.
+[86:36] Okay.
+[86:38] So, this 1 kilohertz.
+[86:40] Look here.
+[86:42] If R and C are equal.
+[86:44] Then R1, R2, C1, C2 will also be written.
+[86:46] Then RC will be formed.
+[86:48] Okay.
+[86:50] So, the power of 10 is minus 6 upon 2 pi.
+[86:54] So, 1 by 2 pi.
+[86:58] Yes, this is coming.
+[87:00] This is coming.
+[87:02] 0.159 micro farad.
+[87:04] This is coming.
+[87:06] 0.159 micro farad.
+[87:08] Okay.
+[87:10] Let's go.
+[87:12] Look at the next one.
+[87:14] The VIN bridge oscillator is shown in the figure.
+[87:16] The bridge is balanced when.
+[87:18] The condition was asked.
+[87:20] The same question was asked in the gate.
+[87:22] Condition and frequency.
+[87:24] Come on everyone.
+[87:26] Tell quickly.
+[87:28] This is C1, R1.
+[87:30] This is R2, C2.
+[87:32] This is R3 and the lower one is R4.
+[87:36] C.
+[87:38] What is it? R3 by R4.
+[87:40] If you do R3 by R4.
+[87:42] From here R1 by R2.
+[87:44] Plus C2 by C1.
+[87:46] R1 by R2 plus C2 by C1.
+[87:48] That means C will come.
+[87:50] C will come.
+[87:52] Very good.
+[87:54] Come on.
+[87:56] The oscillator is shown in the figure.
+[87:58] The frequency is asking.
+[88:00] Come on.
+[88:02] Take out the frequency.
+[88:04] Quickly.
+[88:06] It is fun.
+[88:08] In the questions of oscillators.
+[88:10] It must be very easy.
+[88:12] We did all the hard work in derivation.
+[88:14] See how smooth you are because of that.
+[88:26] Tell me the option.
+[88:28] Aman.
+[88:30] You are giving a different answer.
+[88:32] Move away from the world.
+[88:42] There is something else going on in our chat.
+[88:44] You are typing something in our chat.
+[88:46] Two tabs are open.
+[88:48] C is coming.
+[88:50] See.
+[88:52] See the frequency.
+[88:54] The frequency will be.
+[89:04] R1 R2 C1 C2.
+[89:10] R1 R2.
+[89:12] How much will it be?
+[89:14] 2 into 100.
+[89:18] C1 2 nano.
+[89:20] Or 0.5 micro.
+[89:22] 10 to the power minus 15.
+[89:24] 10 to the power 6.
+[89:26] 10 to the power minus 9.
+[89:28] Pay attention to the units.
+[89:32] 200 400 200.
+[89:34] 355.88.
+[90:00] The answer will be C.
+[90:02] Very good.
+[90:04] See the next part.
+[90:06] At frequency of oscillation.
+[90:08] The feedback factor beta is.
+[90:12] How much will be the beta on frequency of oscillation.
+[90:16] The beta of this circuit is asking.
+[90:18] 0.
+[90:30] 0 is 1 by A.
+[90:34] If we remove from the open loop gain.
+[90:36] Then 0 is 0.
+[90:38] Don't you remember that beta was 0.
+[90:40] Rc in this.
+[90:42] In the wind bridge oscillator.
+[90:44] Beta is 0.
+[90:46] Gain is infinity.
+[90:48] Now come to the LC oscillator.
+[90:50] Now see how the LC oscillator is made.
+[90:54] We take an inverting amplifier on top.
+[90:58] What do we take?
+[91:00] An inverting amplifier.
+[91:04] Okay.
+[91:06] So it will shift to 180 degree.
+[91:10] Now you have to take the beta.
+[91:12] It should shift to 180 degree.
+[91:14] Do you agree?
+[91:16] That our feedback network.
+[91:18] That should also give a shift of 180 degree.
+[91:22] So the lower network here.
+[91:24] We make this.
+[91:26] What are we making?
+[91:28] We are making this feedback network.
+[91:32] And the feedback network here.
+[91:34] It is made of a tank circuit.
+[91:36] That is L and C in it.
+[91:40] So we call it a split tank.
+[91:42] Why are we calling it a split tank?
+[91:44] Because we have done grounding in the middle.
+[91:48] What have we done in the middle?
+[91:50] Grounding.
+[91:52] So this is Vf and this is V0.
+[91:54] This is the output voltage of the amplifier.
+[91:56] This will act as an input to the feedback network.
+[91:58] And what will this output give?
+[92:00] Vf.
+[92:02] So here we use three impedance.
+[92:04] Z1, Z2 and Z3.
+[92:06] What do we use?
+[92:08] We use three impedance.
+[92:10] Z1, Z2 and Z3.
+[92:12] This is a standard structure of a LC oscillator.
+[92:16] The feedback network here.
+[92:18] It will be made with the help of L and C.
+[92:20] Sir, there is no C in the inverting part.
+[92:22] There will be A in it.
+[92:24] What are you trying to say?
+[92:28] So what are you asking?
+[92:30] I don't understand your question at all.
+[92:34] So see LC oscillator uses tank circuit.
+[92:36] For giving the required positive feedback.
+[92:38] For sustaining the oscillation.
+[92:42] So this gives positive feedback.
+[92:46] And with the help of which?
+[92:48] With the help of tank circuit.
+[92:50] And here the high frequency wave is formed.
+[92:52] Now I told you that LC oscillator works on high frequency.
+[92:58] That is why it is called radio frequency oscillator.
+[93:02] You can make a wave more than 500 MHz.
+[93:06] Now what do we have to study in this?
+[93:08] There is no big thing in inverting amplifier.
+[93:10] We have to study face splitter.
+[93:12] The network below.
+[93:14] Which you called as split tank.
+[93:16] This is called phase splitter.
+[93:18] So we have to study the phase splitter.
+[93:22] Now see how.
+[93:24] Now if you take the network below.
+[93:30] Suppose.
+[93:32] You have applied two resistances.
+[93:34] I am doing this to understand the network.
+[93:44] Okay.
+[93:45] Suppose this is R.
+[93:47] And this.
+[93:48] Or this is R2.
+[93:50] Wait a second.
+[93:51] This was Z1.
+[93:54] Suppose this is R1.
+[93:58] And this is R2.
+[94:00] This is voltage V0.
+[94:02] And this is Vf.
+[94:06] Now close.
+[94:08] Pay attention to one thing.
+[94:10] Here is zero.
+[94:12] So how much current will come here?
+[94:22] So this will come V0 by R2.
+[94:29] And how much i dash will come from here?
+[94:32] Vf-0 by R1.
+[94:35] Do you know the sum of these two currents should be zero.
+[94:38] Why?
+[94:39] Because no current will go in the ground.
+[94:42] Sir, why is the current not going in the ground?
+[94:44] The current goes in the ground also.
+[94:46] When it becomes a closed path with the ground.
+[94:49] If it does not become a closed path with the ground.
+[94:51] It is not that if you connect it in the ground.
+[94:54] Then all the current will start going in the ground.
+[94:56] It will go in the ground only.
+[94:58] When there will be some grounding on the source.
+[95:00] Suppose there is a terminal grounded on the source.
+[95:02] There is a fault somewhere in the middle.
+[95:04] There is grounding there too.
+[95:06] Then you get a closed path from the ground.
+[95:08] Until you get a closed path with the ground.
+[95:11] Till then your current will be zero.
+[95:13] Otherwise think like this.
+[95:15] Zero is going in this ground.
+[95:17] So this one is also a ground.
+[95:19] Then zero will come here too.
+[95:21] You can consider this ground as connected.
+[95:23] Ground to ground.
+[95:24] So basically if zero is in this ground terminal.
+[95:27] Then zero should also be in this ground.
+[95:30] So now if you do the zero sum of these two.
+[95:36] Then you can get Vf by V0.
+[95:39] How much will it come?
+[95:41] So Vf by V0 will be
+[95:44] minus R1 by R2.
+[95:47] Okay.
+[95:48] So this is your beta.
+[95:50] This is your beta.
+[95:52] Minus R1 by R2.
+[95:54] So if we say like this in general.
+[95:58] Is this logic clear?
+[96:00] Tell me.
+[96:01] If we say like this in general.
+[96:04] That this face splitter
+[96:07] is made of two impedances.
+[96:19] This is Z1.
+[96:21] This is Z2.
+[96:23] Is this logic clear?
+[96:25] Why didn't I go to the current?
+[96:29] So what will happen?
+[96:31] Beta.
+[96:32] That is Vf by V0
+[96:35] is minus Z1
+[96:37] by Z2.
+[96:41] Now this split.
+[96:43] Your face splitter network is not necessary.
+[96:46] You just make it with resistance.
+[96:48] Take two inductor like this.
+[96:50] Or take two capacitors.
+[96:52] You can make it even then.
+[96:54] If you take two inductor
+[96:57] as two impedance
+[96:59] even then it will work.
+[97:10] Even then it will work.
+[97:12] Here beta will come.
+[97:14] Minus L1 by L2.
+[97:16] And you are seeing that beta is negative.
+[97:18] Which should also come.
+[97:20] Because if inverting amplifier
+[97:22] is giving shift
+[97:24] then you have to give feedback to the network too.
+[97:26] So that the total shift
+[97:28] should be 360 degree.
+[97:32] Total shift should be
+[97:34] 360 degree.
+[97:38] It will be upside down here.
+[97:42] Because capacitor is
+[97:44] 1 by omega c in capacitor.
+[97:46] Okay.
+[97:47] 1 by omega c in capacitor.
+[97:53] This is V0 Vf.
+[97:56] I have written the opposite here.
+[98:02] Okay.
+[98:05] So this two inductor network
+[98:08] is used in heartless oscillator.
+[98:12] Where it is done?
+[98:14] Heartless oscillator.
+[98:16] Heartless oscillator.
+[98:20] And it is used in
+[98:22] Colpitt oscillator.
+[98:24] So in this way
+[98:26] two oscillators are made.
+[98:28] You use two inductor from L and C
+[98:30] and two capacitor in one.
+[98:32] So beta came from here.
+[98:34] If beta came
+[98:36] then I can decide A.
+[98:38] Correct.
+[98:39] I can decide A by
+[98:40] closing beta.
+[98:42] But there is one thing
+[98:44] that how the frequency will come.
+[98:46] So you must be thinking
+[98:48] what you have used for Z3.
+[98:54] Look how your entire network was like this.
+[99:04] So here we ignore
+[99:06] the loading effect.
+[99:08] Meaning any
+[99:10] current from your
+[99:12] network is not going into the
+[99:14] O-Pamp.
+[99:16] Okay.
+[99:18] What do you think when your
+[99:20] LC oscillator is running?
+[99:22] In LC oscillator resonance
+[99:24] then neither any current will be
+[99:26] taken nor any current will be given.
+[99:30] LC oscillator
+[99:32] at resonance
+[99:34] does not
+[99:36] take any
+[99:38] current.
+[99:40] Isn't it correct?
+[99:46] So
+[99:48] whatever current
+[99:50] my brother has
+[99:52] will keep running like this.
+[99:54] Correct.
+[99:56] So if you use
+[99:58] KVL
+[100:00] KVL is talking on resonance here.
+[100:02] Z1
+[100:04] plus Z2 plus Z3
+[100:06] is zero.
+[100:08] So here when we have
+[100:10] done the sum of three impedance
+[100:12] zero.
+[100:14] So what do we get from here?
+[100:16] Oscillation frequency.
+[100:18] The thing is that
+[100:20] on resonance
+[100:22] one LC oscillator
+[100:24] neither any current will be taken
+[100:26] nor any current will be given.
+[100:28] Its energy will keep oscillating in it.
+[100:30] On resonance.
+[100:32] If there is any other frequency
+[100:34] then it will not be like this.
+[100:36] Only when will it be on resonance?
+[100:38] Now see what we did in the
+[100:40] heartless oscillator?
+[100:42] What did we put in the name of Z1, Z2?
+[100:44] Inductor.
+[100:46] And what did we put in the name of Z3?
+[100:48] Capacitor.
+[100:50] Do you understand?
+[100:52] Z1, Z2 I told you,
+[100:54] when two inductors are used
+[100:56] that is a heartless oscillator
+[100:58] SL1
+[101:00] Z2 what happened?
+[101:02] SL2
+[101:04] and Z3 what happened?
+[101:06] 1 by SC.
+[101:08] Correct.
+[101:10] So here if we want
+[101:12] oscillation frequency
+[101:16] it is a very loose oscillator.
+[101:20] So see J omega L1
+[101:22] J omega L2
+[101:24] plus 1 by
+[101:26] J omega C
+[101:28] equal to 0
+[101:30] i.e. omega
+[101:32] L1 plus L2
+[101:34] is 1 by omega C
+[101:38] So what is omega?
+[101:40] 1 by
+[101:42] root over
+[101:44] L1 plus L2C
+[101:46] Both the inductors are connected in series
+[101:48] so L1 plus L2
+[101:50] Why in series?
+[101:52] Because you said both are current same.
+[101:54] This came
+[101:56] and if you write the frequency from here
+[102:00] that is why we have
+[102:02] read the general case first.
+[102:06] What is it by reading the general case?
+[102:08] All this has become easy.
+[102:10] Suppose these two inductors are mutually
+[102:12] coupled.
+[102:14] Suppose
+[102:16] if
+[102:18] additive coupling
+[102:20] is present between
+[102:22] two inductors
+[102:26] it can be
+[102:28] mutual inductance
+[102:30] is also present between them.
+[102:40] So what will happen?
+[102:44] L equivalent
+[102:46] L1
+[102:48] plus L2
+[102:50] plus 2M
+[102:52] and what will be the frequency here?
+[102:54] 1 by
+[102:58] 2 pi root L
+[103:00] equivalent into C
+[103:02] will be 1 by 2 pi root
+[103:04] L equivalent into C
+[103:06] Tell me, is this clear?
+[103:08] And what will be the beta here?
+[103:14] minus L2
+[103:16] and
+[103:20] what is gain A?
+[103:22] minus RF by R1
+[103:26] So when you do A beta
+[103:28] 1
+[103:30] then RF
+[103:32] L1
+[103:34] by R1
+[103:36] L2
+[103:38] equal to 1
+[103:40] Do you understand?
+[103:42] You can write A beta as 1
+[103:44] Satisfy the Barkussen criteria.
+[103:46] Right?
+[103:48] So you can also say RF by R1
+[103:50] equal to L2 by L1
+[103:52] Now you can replace
+[103:54] inverting amplifier
+[103:56] with
+[103:58] BJT common emitter amplifier
+[104:00] with
+[104:02] inverting opamp
+[104:06] replaced by
+[104:10] BJT
+[104:14] common emitter amplifier
+[104:20] Okay?
+[104:22] But do you know
+[104:24] in Hartley oscillator
+[104:26] there is a problem that
+[104:28] there is a lot of harmonic content here
+[104:30] its simple reason is due to
+[104:32] inductors
+[104:34] high power devices
+[104:36] inductors create
+[104:38] interference inductors create
+[104:40] harmonics
+[104:42] and the oscillator
+[104:44] does not work on
+[104:46] very wide frequency range
+[104:48] because the harmonic content
+[104:50] is very very high
+[104:52] So it will not be able to give
+[104:54] a pure sine wave
+[104:56] if you want it will not be
+[104:58] pure sine wave
+[105:00] That is why we come to the second
+[105:02] Colpitt oscillator
+[105:04] In Colpitt oscillator
+[105:06] there is Z3 inductor
+[105:08] Z1 Z2 your capacitors
+[105:10] Z1 Z2
+[105:12] Z2 Z1
+[105:14] Z2 Z3
+[105:16] Z3
+[105:18] SL3
+[105:20] So my brother
+[105:22] when you go to take out
+[105:24] frequency of oscillation
+[105:28] So what is the
+[105:30] way you have
+[105:36] Z1 Z2
+[105:38] Z3 is 0
+[105:40] 1 by j omega
+[105:42] C1
+[105:44] plus 1 by j omega
+[105:46] C2
+[105:48] Now these
+[105:50] lower j is basically
+[105:52] minus j will go up
+[105:54] Now j omega
+[105:56] do it instead of L3
+[106:00] because we need to do L3
+[106:02] So what will be here
+[106:04] omega L
+[106:06] is 1 by omega
+[106:10] C1 plus C2
+[106:12] I took LCM
+[106:14] C1 C2
+[106:18] So omega equal to 1 by
+[106:26] Because when the
+[106:28] capacity is combined in series
+[106:30] then it is like this
+[106:32] series combination
+[106:34] So this is the
+[106:36] correct thing
+[106:38] So 1 by under root LC equivalent
+[106:40] or frequency is
+[106:42] 1 by 2 pi
+[106:46] This frequency
+[106:48] came to you
+[106:50] till here it is clear
+[106:52] tell me
+[106:54] till here it is clear to all
+[106:56] Now how much beta will come here
+[106:58] minus
+[107:00] C2 by C1
+[107:02] and A
+[107:04] minus Rf by R1
+[107:08] So when you
+[107:10] will do A beta
+[107:12] So Rf by R1
+[107:14] will come out to be equal
+[107:16] to C1 by C2
+[107:18] The reverse ratio will go from the inductor
+[107:20] because the capacity is 1 by
+[107:22] omega C
+[107:24] This is clear
+[107:26] So what is the benefit of the Colpitt oscillator
+[107:28] You can make it here
+[107:30] with BJT
+[107:32] If you don't understand this connection
+[107:34] do you know what it is
+[107:36] Like here there were 2 different grounds
+[107:38] Flip this network and
+[107:40] connect both the grounds
+[107:42] So this is it
+[107:44] So here the advantage is
+[107:46] in high frequency
+[107:48] The reactance of the capacitor
+[107:50] is very small on high frequency
+[107:52] So it allows
+[107:54] high frequencies
+[107:56] And if we talk about the inductor
+[107:58] the reactance of the inductor
+[108:00] is very high
+[108:02] If you use the inductor
+[108:04] then it will
+[108:06] break the feedback on high frequency
+[108:08] With high frequency
+[108:10] the reactance of the inductor
+[108:12] can break the feedback
+[108:14] But on low frequency
+[108:16] the reactance of the capacitor
+[108:18] is less
+[108:20] So it will provide a low reactance path
+[108:22] So the Colpitt oscillator is more
+[108:24] on high frequency
+[108:26] and it is more beneficial
+[108:28] So when will we use
+[108:30] it
+[108:32] when we require
+[108:34] a wide range of frequency
+[108:36] Now the third is
+[108:38] the clap oscillator
+[108:40] We have added
+[108:42] one more capacitor
+[108:44] C3
+[108:46] This is a modified
+[108:48] Colpitt oscillator
+[108:50] Modified
+[108:52] Colpitt oscillator
+[108:54] Modified
+[108:56] Colpitt oscillator
+[108:58] Okay
+[109:00] Here C3
+[109:02] dominates
+[109:04] C1, C2
+[109:06] The value of C3 is the smallest
+[109:08] and the smallest value
+[109:10] in the series is
+[109:12] for capacitor
+[109:14] Like the smallest value
+[109:16] in the parallel of resistance
+[109:18] in the series of the capacitor
+[109:20] dominates the smallest value
+[109:22] So here
+[109:24] the frequency is 1 by 2 pi
+[109:26] root
+[109:28] L C3
+[109:30] Okay, so this stability
+[109:32] improves you
+[109:34] This stability improves you
+[109:36] The value of C3 is the smallest
+[109:38] Now
+[109:40] look at this question
+[109:42] Look at this question
+[109:44] Value of R in the oscillator circuit
+[109:46] so that it oscillates at angular
+[109:48] frequency omega
+[109:50] The value of omega and the required
+[109:52] value of R will be
+[109:54] Do it quickly
+[110:02] Subhadip, you can follow
+[110:04] the lectures of this channel
+[110:06] Come on
+[110:08] Frequency of
+[110:10] oscillation is asking
+[110:12] and R's value
+[110:14] is asking
+[110:44] What is happening?
+[110:46] A
+[110:48] See
+[110:50] Frequency of oscillation is asking
+[110:52] in radian per second
+[110:54] When the LC oscillator is
+[110:56] looking
+[110:58] then it will be
+[111:00] simple
+[111:04] 10 milli Henry means 10 power
+[111:06] minus 2
+[111:08] 0.01 micro farad means
+[111:10] 10 power minus 8
+[111:14] Now
+[111:16] look at this
+[111:18] This is the voltage VF
+[111:20] which is going in the non-inverting terminal
+[111:22] So it is acting as
+[111:24] a non-inverting amplifier
+[111:28] Now when the resonance
+[111:30] comes then this network will
+[111:32] become open LC oscillator
+[111:34] Parallel LC circuit works
+[111:36] like an open on resonance
+[111:38] So these two will remain R and 1
+[111:40] So you can write
+[111:42] the back voltage V0
+[111:44] into 1 by
+[111:46] 1 plus R
+[111:48] You can write this
+[111:50] So beta is 1 by 1 plus
+[111:52] R
+[111:54] And amplifier is non-inverting
+[111:56] So it will gain 1 plus
+[111:58] 100 by 5
+[112:00] How do I know? Because my VF
+[112:02] is in the non-inverting terminal
+[112:04] Now when you
+[112:06] will do A beta
+[112:08] So 1 by
+[112:10] 1 plus R
+[112:12] is 1 by 21
+[112:14] So R is
+[112:16] 20 kilo ohm
+[112:18] Understood?
+[112:20] So answer will be A
+[112:22] This logic is clear
+[112:24] Feedback is in the non-inverting terminal
+[112:26] So it will act as a non-inverting amplifier
+[112:28] Because the input
+[112:30] for amplifier is VF
+[112:32] Look at the next one
+[112:36] What is this? For the
+[112:38] oscillator, the oscillations to start
+[112:40] the condition to be satisfied
+[112:42] is
+[112:46] To start oscillations
+[112:48] What will satisfy the condition?
+[112:52] Think like this
+[112:54] This is your V0
+[112:56] This is your
+[112:58] VF going here
+[113:00] So what will be the gain of
+[113:02] amplifier?
+[113:04] You can say the gain of amplifier
+[113:06] will be DMR
+[113:14] And what will be the beta?
+[113:16] Beta will be
+[113:18] V0 by J omega L1
+[113:20] So L1 by L2
+[113:22] So to start
+[113:24] You keep A beta
+[113:26] bigger than 1
+[113:28] So that the oscillations
+[113:30] grow in the starting
+[113:32] And later you
+[113:34] keep A beta
+[113:36] so that it becomes
+[113:38] sustained at that level
+[113:40] Do you understand the logic?
+[113:42] Keep it bigger in the starting
+[113:44] and later do it at 1
+[113:46] When you get the required level
+[113:48] So GMR is greater than L2 by L1
+[113:50] Wait a second
+[113:52] VF upon J omega L2
+[113:54] L2 by L1
+[114:04] So GMR is greater than
+[114:06] L1 by L2
+[114:08] NID
+[114:12] Okay
+[114:14] Is this clear?
+[114:16] See the next one
+[114:18] Input resistance
+[114:20] of 1 ohm output resistance
+[114:22] of 2.5 kilo ohm
+[114:24] Find the value of Rx for
+[114:26] sustained oscillation
+[114:28] It will be the same
+[114:30] as the previous one
+[114:32] It will be the same as the previous one
+[114:34] Okay
+[114:36] Okay
+[114:38] What is coming?
+[114:40] Is it not coming?
+[114:42] See
+[114:44] the non-inverting amplifier
+[114:46] is done
+[114:52] So what is the gain of this?
+[114:54] 1 plus
+[114:56] 1 plus
+[114:58] 9 by 1
+[115:00] So what should be the beta?
+[115:02] 1 by 10
+[115:04] When the LC oscillator
+[115:06] opens then the value
+[115:08] of beta
+[115:10] will be 1 by
+[115:12] 1 plus Rx
+[115:14] which will be 1 by 10
+[115:16] So Rx will be 9 kilo ohm
+[115:18] Right?
+[115:20] The seventh question is the same
+[115:22] Okay one last question
+[115:24] I am asking about frequency of oscillation
+[115:26] Tell me
+[115:28] Frequency of oscillation
+[115:30] Come on everyone
+[115:32] Last question
+[115:34] What is omega naught?
+[115:36] Come on everyone
+[115:38] What is omega naught?
+[115:40] 1 by root LC
+[115:42] Okay
+[115:44] See the rest of the questions
+[115:46] As homework for you
+[115:48] Make them
+[115:50] Tomorrow I will make you Schmidt trigger multivibrator
+[115:52] I am not giving off Sunday
+[115:54] so that syllabus gets read
+[115:56] 31st October commitment
+[115:58] I am winding up your syllabus
+[116:00] on 6th November
+[116:02] You can make PYQ on this link
+[116:04] After tomorrow
+[116:06] all PYQ will be made
+[116:08] because the positive feedback part of opamp
+[116:10] will be finished tomorrow
+[116:12] Okay and if you come to the academy
+[116:14] then there are plus and iconic
+[116:16] for you both
+[116:18] There are top teachers
+[116:20] There are test series
+[116:22] There are custom doubts in iconic
+[116:24] No doubt will come in question
+[116:26] You will get video solution
+[116:28] Printed notes will be delivered at home
+[116:30] 1 to 1 mentorship
+[116:32] You will get strategy and study plan
+[116:34] And you can interact in open house session
+[116:36] via audio
+[116:38] Okay and you see
+[116:40] You choose any plan on academy
+[116:42] Decide the duration
+[116:44] And you apply code for maximum discount
+[116:46] Ankit ISC
+[116:48] You can prepare for this
+[116:50] Other than this
+[116:52] Those who are 24
+[116:54] They can go for 15 month subscription
+[116:56] With this
+[116:58] Exam will be covered
+[117:00] And we have also started 24 batches
+[117:02] If you will see the results
+[117:04] So the results
+[117:06] Last year we had 6 rankers
+[117:08] in top 10
+[117:10] If you also want
+[117:12] You can publish photos
+[117:14] You also get opportunities like this
+[117:16] Invest in your career
+[117:18] Join an academy quickly
+[117:20] And study under my personal guidance
+[117:22] And if it is a financial issue
+[117:24] You can take it on EMI
+[117:26] Where you can pay your fees month on month
+[117:28] No one will be interested
+[117:30] Okay
+[117:32] And there is only 2 hours
+[117:34] Approval
+[117:36] Atleast give basic card, pan card
+[117:38] And also give it as a member
+[117:40] in family
+[117:42] 24 batches
+[117:44] Analyst
+[117:46] Mathematics
+[117:48] Electrical EC
+[117:50] The same subject is going on
+[117:52] We have launched
+[117:54] Rank improvement batch
+[117:56] Where electrical
+[117:58] Maths and network is going on
+[118:00] I am starting the revision of machine on 9th
+[118:02] For EC
+[118:04] There are already 3 subjects
+[118:06] Maths, Network and EDC
+[118:08] And those who are 23
+[118:10] They can take subscription of 3 months or 4 months
+[118:12] You know the code
+[118:14] EC
+[118:16] You get maximum discount
+[118:18] And you come under my personal guidance
+[118:20] This is my telegram channel
+[118:22] So that you get all the updates
+[118:24] And you will get the PDF of this session
+[118:26] On community
+[118:28] So go to the home page of Anacademy
+[118:30] Discover on community
+[118:32] You will get all my PDF
+[118:34] Which you can download
+[118:36] Okay
+[118:38] I will talk very soon about Brahmash
+[118:40] As soon as I am free from Analog
+[118:42] I will discuss about that
+[118:44] I will plan your classes
+[118:46] But don't take one thing daily
+[118:48] If I am not taking class on YouTube
+[118:50] Then what is the matter
+[118:52] Now if you want to ditch Analog
+[118:54] And do Brahmastra
+[118:56] You can do that too
+[118:58] But if you are applying Analog for people
+[119:00] Then let me complete Analog
+[119:02] Then I will move to Brahmastra
+[119:04] See you tomorrow at 11.30
+[119:06] Don't miss it
+[119:08] Tomorrow we will cover Trigger and Multivibrator
+[119:10] Okay Thank you everyone

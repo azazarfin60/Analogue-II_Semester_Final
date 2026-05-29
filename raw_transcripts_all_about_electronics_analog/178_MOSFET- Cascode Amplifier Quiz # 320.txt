@@ -1,0 +1,61 @@
+Title: MOSFET- Cascode Amplifier | Quiz # 320
+URL: https://www.youtube.com/watch?v=bQgLfKiq_OQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this cascode amplifier and for the given amplifier,
+[00:16] we have been asked to find the voltage gain.
+[00:19] Now if you have followed the recent video on the main channel, then we have already discussed
+[00:23] the same circuit.
+[00:25] So this circuit is a cascode amplifier with a cascode current source as a load.
+[00:30] So here, this Emo circuit is a cascode current source while this endmost circuit is the cascode
+[00:37] amplifier.
+[00:38] So for this given circuit, the current flowing through the circuit is equal to 0.2 milli
+[00:43] ampere.
+[00:44] That means, ID is equal to 0.2 milli ampere.
+[00:50] And since the odd transistors are connected in the series connection, so the same current
+[00:55] voltage will also flow through all transistors.
+[00:58] That means for all transistors, this current current ID will be equal to 0.2 milli ampere.
+[01:04] Apart from that, here we have been given that the overdrive voltage that is VOV is equal
+[01:10] to 0.2 volt.
+[01:13] Now for this endmost transistor, this overdrive voltage is equal to VGS-VT. While for this
+[01:19] PMOS transistor, it is equal to DST-VTP.
+[01:25] Where this VTP is the threshold voltage of this PMOS transistors.
+[01:29] But in general, we can say that this VOV or this overdrive voltage is equal to VGS-VT.
+[01:39] So for all the transistors, this overdrive voltage is equal to 0.2 volt.
+[01:45] And as you know, this transistors GM can be given as 2 times ID divided by DGS-VT.
+[01:55] Or we can say that it is equal to 2 times ID divided by this overdrive voltage.
+[02:03] So in this case, for all these transistors, the transistors will be equal.
+[02:09] And it will be equal to 2 times 0.2 milli ampere divided by 0.2 volt.
+[02:17] That is equal to 2 milli ampere per volt.
+[02:21] That means this GM1, GM2, GM3 and the GM4 will be equal to 2 milli ampere per volt.
+[02:28] Similarly, let's say this RO1, RO2, RO3 and RO4 are the output resistance of these transistors.
+[02:38] So this output resistance can be given as 1 divided by lambda times ID.
+[02:46] Or it can be given as this early voltage divided by drain current.
+[02:51] So here, the early voltage for all transistors is equal to 2 volt, while the ID is equal
+[02:58] to 0.2 milli ampere.
+[03:00] That means for all transistors, this output resistance is equal to 10 kilo ohm.
+[03:07] So in this way, we found the value of the trans-correctance as well as the output resistance
+[03:12] of all transistors.
+[03:14] So now let us find the voltage gain.
+[03:17] So for this cascode amplifier along with this cascode current source, this voltage gain
+[03:23] can be given as GM1 times this RO1 parallel ROP, where this RON is the output resistance
+[03:34] of this cascode amplifier, while this ROP is the output resistance of this cascode current
+[03:41] source.
+[03:42] So this RON can be given as RO1 times RO2 times GM2.
+[03:51] That means the output resistance of this transistor M1 will get multiplied by the intrinsic gain
+[03:57] of this transistor M2.
+[03:59] Similarly, this ROP can be given as this RO4 times RO3 times GM3.
+[04:10] So first of all, let us find the value of this RON and the ROP.
+[04:16] So here, this RON will be equal to RO1 times RO2 times GM2.
+[04:24] That is equal to 10 kilo ohm times 2 milliampere per volt.
+[04:34] That is equal to 100 kilo ohm.
+[04:37] Similarly, this ROP will be equal to RO4 times GM3 times RO3.
+[04:47] That is equal to 10 kilo ohm times 2 milliampere per volt times 10 kilo ohm.
+[04:55] So once again, this ROP will also be equal to 200 kilo ohm.
+[05:01] That means voltage gain AV is equal to GM1 times this RON parallel ROP.
+[05:12] That is equal to 2 milliampere per volt times this 200 kilo ohm in parallel with 200 kilo ohm.
+[05:23] That is equal to 2 milliampere per volt times 100 kilo ohm.
+[05:29] That means the voltage gain of this cascode amplifier is equal to 200.
+[05:35] So from this, we can say that for the given cascode amplifier, this voltage gain is equal
+[05:41] to 200.

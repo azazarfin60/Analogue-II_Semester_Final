@@ -1,0 +1,178 @@
+Title: Voltage Regulator: Op Amp as Voltage Regulator
+URL: https://www.youtube.com/watch?v=rPb0p7N1O00
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the voltage regulator and we will see that how the
+[00:22] voltage regulator can be designed using the OPAMC.
+[00:26] But first of all, let us understand why this voltage regulator is required.
+[00:31] Now if we see the typical block diagram of any linear power supply, then it consists
+[00:36] of the transformer, the rectifier, the filter and the regulator.
+[00:41] So first of all, the input voltage is scaled down using the step down transformer and then
+[00:47] using this rectifier circuit, it is converted into the pulsating DC.
+[00:52] And the variation in this pulsating DC is filtered out using the filter circuit.
+[00:57] And if you see the output waveform of this filter circuit, then still it contains some
+[01:02] finite amount of ripple.
+[01:04] So the filtered output is then given to the regulator.
+[01:08] And the job of this regulator is to remove these variations and provide the constant output.
+[01:14] Now for any power supply, the two important parameters are the line regulation and the load
+[01:20] regulation.
+[01:21] And these two parameters define how well the supply can provide the constant output voltage,
+[01:26] even if there is a change in the line voltage or the load.
+[01:29] So the line regulation defines if there is any change in the line voltage, then how it
+[01:35] will affect the output voltage.
+[01:38] So this line regulation is defined as the change in the output voltage divided by the change
+[01:43] in the input voltage.
+[01:45] So for the ideal power supply, this line regulation should be equal to 0.
+[01:50] That means even if there is any change in the line voltage, then it should not affect
+[01:54] the output voltage.
+[01:56] But actually the output voltage does change with the variation in the line voltage.
+[02:02] So for the good power supply, this line regulation should be as minimum as possible.
+[02:07] Similarly, the second parameter is the load regulation, which defines if there is any change
+[02:13] in the load, then how it will affect the output voltage.
+[02:17] And it is defined as the no load voltage minus full load voltage divided by full load
+[02:22] voltage.
+[02:24] So here, this no load voltage is the voltage of the power supply when there is a no load
+[02:29] connected.
+[02:30] Or we can say that whenever the load current I L is equal to 0.
+[02:35] And the full load voltage is the voltage of the power supply with the load when the load
+[02:39] current I L is maximum.
+[02:42] So for the ideal power supply, this load regulation should be 0.
+[02:47] That means even if there is any change in the load, then it should not affect the output
+[02:51] voltage.
+[02:52] But actually, if there is any change in the load, then it will affect the output voltage.
+[02:58] So for the good power supply, this load regulation should be as minimum as possible.
+[03:03] So if the power supply is unregulated, or for the power supply without any regulator,
+[03:09] the line and the load regulations are very poor.
+[03:12] So to improve the line and the load regulation and to get this table output voltage, this
+[03:17] voltage regulator is necessary.
+[03:20] So this voltage regulator can this stop the following components.
+[03:24] And based on the arrangement of these components, this voltage regulator can be defined in two
+[03:29] categories, the series voltage regulator and the shunt voltage regulator.
+[03:34] So in case of the series voltage regulator, the controlling element is in series with the
+[03:38] load.
+[03:39] While in case of the shunt regulator, it is in parallel with the load.
+[03:43] So if we talk about the series voltage regulator, then the output voltage is sampled using this
+[03:48] sampling circuit and it is compared with the reference voltage.
+[03:53] And based on the error voltage, the control circuit takes the corrective action.
+[03:58] So if the output voltage increases or decreases, then the control circuit tries to maintain
+[04:02] the output voltage to the fixed voltage.
+[04:05] Similarly, in case of the shunt regulator, the output voltage is sampled using this sampling
+[04:11] circuit and it is compared with the reference voltage.
+[04:15] And if there is any increase in the output voltage, then the control circuit shunts up with
+[04:19] the additional current such that the voltage drop across this series resistor RS will increase.
+[04:26] And thereby it maintains the fixed output voltage.
+[04:30] It will get more clear to you when we will discuss the actual circuit.
+[04:34] So there are many ways in which we can design this voltage regulator.
+[04:38] But in this video, we will see that how we can design this voltage regulator using the
+[04:42] opamp.
+[04:44] And first, let us see the design of the shunt voltage regulator.
+[04:48] So here, this VIN is the unregulated input voltage and the output voltage is sampled using
+[04:54] this voltage divided circuit.
+[04:56] And as you can see, the sampled voltage is given to the invading terminal of the opamp.
+[05:02] Now here, this ZINER diode provides the fixed reference voltage and it is given to the
+[05:07] non invading terminal of the opamp.
+[05:10] Apart from that, here IL is the load current and IC is the collector current.
+[05:15] Or we can say that that is the shunt current.
+[05:18] So if we neglect the current through this voltage divided circuit, then we can say that the
+[05:23] current through this series resistor R s is equal to I L plus IC.
+[05:28] So now let us see the working optics regulator circuit.
+[05:31] So let us say the output voltage has suddenly increased from its nominal value.
+[05:37] And due to that, the sampled voltage by this voltage divided circuit will also increase.
+[05:43] So let us say the voltage at this invading terminal is equal to V minus and the voltage
+[05:47] at the non invading terminal is equal to V plus.
+[05:51] So if there is an increase in the output voltage, then this voltage V minus will also increase.
+[05:57] Now if you notice over here, the opamp is operated in the closed loop configuration.
+[06:02] And in fact, it is operating in the negative feedback configuration.
+[06:06] So due to that, it will follow the concept of virtual short.
+[06:10] That means it will try to maintain the same voltage at the invading and the non invading
+[06:15] terminal.
+[06:16] That means even if there is an increase or decrease in the sampled or the feedback voltage,
+[06:21] then also it will try to maintain the invading terminal at the reference voltage.
+[06:26] So in this case, if the output voltage increases, then the opamp will provide the more base
+[06:31] current to this transistor.
+[06:33] And due to the increase in this base current, the collector current of this transistor
+[06:37] will also increase.
+[06:39] So due to that, now the voltage drop across this series resistor R s will also increase.
+[06:45] And due to the larger voltage drop, now it will compensate for the change in the output
+[06:49] voltage.
+[06:51] So due to the negative feedback, the circuit will try to maintain the output voltage at the
+[06:55] fixed level.
+[06:57] And similar type of correction will be applied whenever the load voltage tries to reduce.
+[07:02] So in this way, this shunt regulated tries to maintain the output voltage to the fixed
+[07:06] level.
+[07:07] Now here, due to the negative feedback, we can say that this voltage V minus and V plus
+[07:13] are equal.
+[07:15] Or we can say that this voltage V minus is equal to V plus is equal to reference voltage.
+[07:22] But if you notice over here, this voltage V minus can also be written as R 2 divided
+[07:27] by R 1 plus R 2 times V out.
+[07:32] And from this, we can say that the output voltage V out is equal to V z times 1 plus R 1 divided
+[07:40] by R 2.
+[07:43] So in this circuit, by selecting the value of this V z R 1 and R 2, we can decide the regulated
+[07:49] output voltage.
+[07:51] Now one of the main advantage of this shunt regulator is its inbuilt short circuit protection.
+[07:57] So in the worst case, even if we short the load terminals, then also no component in
+[08:02] this shunt regulator will get damaged.
+[08:05] And the maximum current, which is flowing through the circuit, will get restricted by this
+[08:09] series resistor.
+[08:11] But the efficiency of this shunt voltage regulator is very poor.
+[08:15] And that is due to the large power loss across this series resistor and the shunt transistor.
+[08:21] So typically, the efficiency of this shunt voltage regulator is in the range of 20 to 30%.
+[08:28] On the other hand, this series voltage regulator provides the good efficiency.
+[08:33] But unlike the shunt voltage regulator, they need the separate short circuit protection.
+[08:38] So now, let's see how we can design this series voltage regulator using the opamp.
+[08:44] So here, the control circuit comprises of the opamp and the transistor.
+[08:49] And the output voltage is sampled using this voltage divided circuit.
+[08:53] So this sampled voltage is applied at the invading terminal.
+[08:57] And through this inner diode, the reference voltage is applied at the non-inviting terminal.
+[09:02] So let's say the voltage at the non-inviting terminal is equal to V plus.
+[09:07] And the voltage at the invading terminal is equal to V minus.
+[09:10] So here, if the output voltage tries to increase, then the feedback voltage will also increase.
+[09:16] But if you notice over here, the opamp is operating in the closed loop configuration.
+[09:22] And in fact, it is operating in the negative feedback.
+[09:26] And due to that, the opamp will try to maintain the same voltage at the invading and the
+[09:31] non-inviting terminals.
+[09:33] So here, if the load voltage tries to increase, then the output of the opamp will reduce.
+[09:39] So here, let's say the output of the opamp is equal to V O dash and the total output voltage
+[09:45] or the load voltage is equal to V naught.
+[09:48] So we can say that this voltage V naught is equal to V O dash minus VBE, where VBE is
+[09:55] the voltage drop across the base emitter junction of the transistor.
+[10:00] On the other end, if the output voltage tries to reduce, then the output of the opamp
+[10:04] will increase.
+[10:06] And in a way, it will try to maintain the fixed output voltage.
+[10:11] Now as I said earlier, due to this closed loop configuration, the voltage at the invading
+[10:16] and the non-inviting terminals are equal.
+[10:19] So we can say that this voltage V plus is equal to V minus.
+[10:23] And as you can see over here, the voltage V plus is equal to V Z.
+[10:29] And at the same time, if you notice over here, this voltage V minus can also be represented
+[10:33] as R 2 divided by R 1 plus R 2 times V naught.
+[10:40] So from this, we can say that this voltage V naught is equal to V Z times 1 plus R 1
+[10:47] divided by R 2.
+[10:50] So by selecting the value of V Z R 1 and R 2, we can decide the regulated output voltage.
+[10:55] All right.
+[10:57] So now let me show you the simulation for this series voltage regulator.
+[11:01] So as you can see in this circuit, the input voltage is equal to 20 volts.
+[11:06] And here, the value of R 2, R 3 and the reference voltage is set in such a way that we should
+[11:11] get the 9 volt at the output.
+[11:14] So now let me just run this simulation and let me show you the output voltage.
+[11:23] So as you can see over here, at the output, we are getting 8.985 voltage, which is
+[11:28] where any year to the 9 volt.
+[11:31] Now let me also show you what happens if I change the input voltage.
+[11:36] So now let me set the input voltage to the 10 volt.
+[11:43] So as you can see, as I change the input voltage to the 10 volt, then the output has been reduced
+[11:48] from 8.98 to the 8.93 volt.
+[11:52] So we can say that if there is any change in the input by 10 volt, then the change in
+[11:57] the output voltage will be equal to 50 milli volt.
+[12:00] Or we can say that for this regulator, the regulation is equal to 0.5 percent.
+[12:07] And if we want to achieve the better regulation, then of course we can go for the linearizes,
+[12:12] like the 7-8 series for the positive voltage and the 7-9 series for the negative voltage.
+[12:18] So for example, the 7-8-0-5 will provide the fixed output voltage of 5 volt, while the
+[12:23] 7-9-09 will provide the fixed output voltage of minus 9 volt.
+[12:28] And if someone wants the variable-regulated output, then one can even use the LM317.
+[12:33] So we will talk more about this linearizes in the separate video.
+[12:38] But in this video, I hope you understood the basics of the regulation and how we can
+[12:43] design the voltage regulator using the opamp.
+[12:46] So if you have any question or suggestion, do let me know here in the comment section
+[12:50] below.
+[12:51] If you like this video, hit the like button and subscribe the channel for most of the
+[12:54] videos.

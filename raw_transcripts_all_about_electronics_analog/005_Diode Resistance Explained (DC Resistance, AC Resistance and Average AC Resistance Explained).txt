@@ -1,0 +1,161 @@
+Title: Diode Resistance Explained (DC Resistance, AC Resistance and Average AC Resistance Explained)
+URL: https://www.youtube.com/watch?v=hag5ss1ZxH0
+Source: YouTube Subtitles
+
+[00:12] Hey friends, welcome to the YouTube channel ALL ABOUT ELECTRONICS.
+[00:15] So, in this video, we will learn about the diode resistance.
+[00:19] Now, in the previous video of this diode, we had seen the V-I characteristic of the
+[00:24] diode. So, if we consider this diode as an ideal
+[00:28] diode, in that case, in the forward bias condition it should offer zero resistance.
+[00:34] While in case of the reverse biased condition, it should offer infinite resistance.
+[00:39] But the actual diode offers some finite resistance in the forward biased condition and if offers
+[00:45] very large resistance in the reversed bias condition.
+[00:48] And the V-I characteristic of the actual diode will look like this.
+[00:52] Now, in this characteristic curve, both positive and the negative axis has a different scale.
+[00:59] But if both axis has the same scale, then the curve will look like this.
+[01:04] So, as you can see over here, this diode allows the flow of current only in one direction.
+[01:10] While it almost blocks the current in the reverse direction.
+[01:13] Now, if you observe this curve, here the relationship between the voltage and current is non-linear.
+[01:19] While in case of a resistor, it has a linear relationship.
+[01:24] It means that this resistor offers the constant resistance for the different operating voltages
+[01:30] and currents. While, in case of the diode, depending on
+[01:34] the operating condition the resistance that is offered by the diode will change.
+[01:38] So, now depending on the applied input signal, the diode resistance can be categorized into
+[01:44] two categories. One is the DC or static resistance and the
+[01:48] second is the AC or dynamic resistance. So, first, let's talk about the DC resistance.
+[01:54] So, this DC or the static resistance of the diode is the resistance that is offered by
+[01:59] the diode in the case when the applied voltage is DC voltage.
+[02:03] And the value of this DC resistance can be found by knowing the value of the operating
+[02:08] voltage and current. So, for example, let's say one diode is operated
+[02:13] at let's say 10mA and 0.8V. So, in this condition, the DC or the static
+[02:19] resistance of the diode can be given as 0.8V divided by 10 mA. That is equal to 80 ohms.
+[02:27] So, just by knowing the operating voltage and current we can easily find the value of
+[02:32] this DC resistance. So, for the given circuit, once the operating
+[02:37] voltage and currents are fixed, then the value of this DC resistance will remain constant.
+[02:42] And that's why it is known as the static resistance. But whenever the operating voltage and currents
+[02:47] are changed, then the value of this DC or the static resistance will change.
+[02:51] So, now let's say, for the given diode, the operating current, and the voltages are 20
+[02:56] mA and 0.9 V respectively. So, in this condition, now the DC or static
+[03:02] resistance will be equal to 0.9V divided by 20 mA.
+[03:08] That is equal to 45 ohms. So, as you can see, as the operating condition
+[03:13] changes, the value of this DC resistance will also change.
+[03:18] And as we move towards the right-hand side of the curve, then the resistance that is
+[03:22] offered by the diode will also reduce. So, now whenever this diode is forward biased
+[03:27] in this case, the DC resistance that is offered by the diode is known as the DC forward resistance.
+[03:34] Similarly when the diode is operated in the reversed bias condition, then the DC resistance
+[03:38] that is offered by the diode is known as the reverse DC resistance.
+[03:42] So, for example, let's say the diode is operated in the reverse bias condition, and in this
+[03:48] condition, the applied voltage across the diode is 5V or to be precise -5V and the current
+[03:56] that is flowing through this diode is 2 micro-ampere. So, in this condition, the resistance that
+[04:03] is offered by the diode will be equal to 5V divided by 2 micro-ampere.
+[04:10] That is equal to 2.5 Mega Ohm. So, as you can see, in the reversed bias condition,
+[04:15] the resistance that is offered by the diode is very large.
+[04:19] So, in this way, whenever the DC voltage is applied to the diode, the just by knowing
+[04:24] the operating voltage and current we can easily find the DC or the static resistance.
+[04:29] And on this diode curve, the operating condition of the diode can be simply represented by
+[04:34] this Q-point. So, this Q-point represents the operating
+[04:38] voltage and the current for the given diode. Now, so far we have learned that how to find
+[04:45] the DC resistance in a case when the applied voltage is DC voltage.
+[04:48] So, now similarly let's find out, how to find the resistance of the diode when the applied
+[04:54] voltage is AC voltage. So, in this condition, the resistance of the
+[04:58] diode is known as either AC resistance or the dynamic resistance.
+[05:01] Now, here, we are assuming that before applying AC signal to this diode, some finite DC voltage
+[05:08] has been already applied. So, now this point on the diode curve represents
+[05:13] the Q-point corresponds to the applied DC voltage and on top of this DC voltage some
+[05:19] finite AC signal has been applied. So, here on this X -axis you can see the variation
+[05:26] in the applied input AC signal. And correspondingly the current that is flowing
+[05:31] through the diode will also change. So, if you trace each and every point for
+[05:36] this time-varying voltage signal, then from this graph we can find the corresponding time-varying
+[05:42] current signal. So, now in the case of this AC signal, the
+[05:46] applied voltage will change in the certain band.
+[05:49] And similarly, corresponding current will also change in the certain band.
+[05:53] So, here the resistance value will change continuously.
+[05:57] So, let's find out how to find the value of the AC resistance when the AC signal is applied
+[06:03] to the diode. So, in this condition, the resistance can
+[06:07] be found by drawing the line that is tangent to this Q-point.
+[06:11] So, the slope of this line will give the AC resistance for the diode.
+[06:16] Now, here this variation is the variation in the voltage, while this variation is the
+[06:22] variation in the current. So, let me just zoom this portion.
+[06:27] And if I zoom it then it will look like this. So, here just by drawing the tangent to this
+[06:33] Q-point, we can find the value of the AC resistance. Because the slope of this line will give the
+[06:38] resistance for the diode. That is equal to the change in the voltage
+[06:43] divided by the change in the current. So, now so far the method that we have discussed
+[06:49] is the graphical way by which we can find the AC resistance.
+[06:52] But there is one more way by which we can also find the AC resistance.
+[06:56] So, let's look into it. So, now here this expression is the expression
+[07:01] for the diode. And this expression defines the relationship
+[07:06] between the diode current and the voltage that appears across the diode.
+[07:10] So, now if we simply take the differentiation of this expression
+[07:14] then we can also find the value of this AC resistance.
+[07:18] So, let's see this method and let's also derive the expression for this AC resistance.
+[07:22] So, now in this expression, the Is represents the reverse saturation current for the diode.
+[07:28] So, basically, it is the current that is flowing through the diode in the reverse bias condition.
+[07:35] Then this Vt represents the thermal voltage for the diode.
+[07:38] While Vd is the forward voltage for the given diode.
+[07:42] And this η is the ideality factor. So, for the diode, this ideality factor used
+[07:48] to be in the range of one and two. But here we are assuming that the diode has
+[07:53] an ideality factor of one. Now, this thermal voltage is defined by this
+[07:59] expression. That is equal to kT divided by q.
+[08:03] Where k is the Boltzmann constant and T is the temperature of the diode.
+[08:08] While q is the charge of the electron. So, at the room temperature of 27 degrees,
+[08:13] or T is equal to 300 K, the value of this thermal voltage will be roughly around 26
+[08:20] mV. So, here we will assume that the diode is
+[08:23] operated at the room temperature and we will assume the value of this thermal voltage as
+[08:28] 26 mV. Now, in this expression, if you observe this
+[08:32] term is much larger than 1. So, approximately we can write this expression
+[08:37] as Id is equal to Is times e to the power of (Vd/Vt). Because here, we are assuming
+[08:46] that the ideality factor of the diode is 1. So, now let's just differentiate this expression
+[08:52] with respect to diode voltage. So, if we differentiate it then we can write
+[08:57] (dId /dVd), that is equal to (Is/Vt) x e^(Vd/Vt) Or simply we can write this expression as
+[09:12] (Id +Is)/Vt. Because we know that Id is equal to Is*e^(Vd/Vt)-
+[09:23] Is. So, this particular expression can be represented
+[09:30] like this. Now, here this current Id is much larger than
+[09:35] this reverse saturation current. So, simply we can neglect the second term.
+[09:40] So, we can write this expression as (dId/dVd) that is approximately equal to Id/Vt.
+[09:52] So, if we take the inverse of it then we will get the resistance.
+[09:57] So, we can say that the AC resistance will be equal to this thermal voltage Vt divided
+[10:03] by the diode current Id. Now, here this diode current Id is the DC
+[10:09] current that is flowing through the diode. So, for the given diode, if we know the Q-point
+[10:14] then simply we can find the value of this AC resistance.
+[10:17] So, this is another way we can also find the AC resistance.
+[10:21] Now, so far in our discussion, we have assumed that the applied AC signal is very small.
+[10:28] But suppose if the applied AC signal has very large voltage swing then, in that case, the
+[10:34] resistance that is offered by the diode is known as the average AC resistance.
+[10:38] So, let's say the AC signal that is applied to the diode is a large signal.
+[10:43] And because of that, we are getting this voltage swing.
+[10:46] So, if this AC signal is applied to the diode then the variation in this voltage is equal
+[10:53] to delta Vd and the variation in the current is equal to delta Id.
+[10:57] So, in this case, diode resistance can be found by connecting the two extreme points
+[11:03] of the operation. And by connecting it we can find the slope
+[11:07] of the line. And the inverse of this slope will represent
+[11:11] the value of the average AC resistance. So, we can say that the average AC resistance
+[11:17] will be equal to change in voltage divided by change in current.
+[11:23] So, let's say, a very large AC signal has been applied to this diode.
+[11:28] And because of that, the variation in the voltage is from 0.8V to the 1V.
+[11:34] While the variation in the current is from let's say 10 mA to the 30 mA.
+[11:40] So, from this, we can say that the change in the current is equal to 20 mA, while the
+[11:47] change in the voltage is equal to 0.2V. So, the average AC resistance will be equal
+[11:55] to 0.2V divided by 20mA. And that will be equal to 10 ohms.
+[12:03] So, in this way, when very large AC swing is applied to the diode then we can find the
+[12:08] value of this average AC resistance. Now, whenever me model this diode, the total
+[12:15] resistance of the diode will be the summation of this AC or DC resistance plus Bulk resistance.
+[12:21] Now, as we have discussed in the previous video, the bulk resistance is the resistance
+[12:26] that is offered by the semiconductor material which is used for the construction of this
+[12:30] diode. Now, the value of this bulk resistance used
+[12:34] to be a very small and for most practical cases, the value of this bulk resistance can
+[12:39] be negligible. So, let me just summarise what we have seen
+[12:43] so far. So, we have seen that resistance of the diode
+[12:47] can be categorized based on the applied input signal.
+[12:51] So, if the input that is applied to this diode is DC signal, in that case, the resistance
+[12:57] that is offered by the diode is DC resistance. And it can be easily found from the operating
+[13:03] voltage and current. Then we have seen that whenever the AC signal
+[13:07] is applied to the diode, in that case, the diode resistance can be found by drawing the
+[13:12] line that is tangent to the Q-point. And it can also be found in this expression.
+[13:17] That is equal to thermal voltage divided by diode current.
+[13:22] Then after we have seen that if the applied AC signal has very large voltage swing, then
+[13:27] the resistance of the diode can be found by drawing the line between the two extreme points
+[13:32] of operation. And that resistance value is known as the
+[13:35] average AC resistance. So, I hope in this video you understood about
+[13:40] the diode resistance. So, if you have any question or suggestion, do let me know in
+[13:45] the comment section below. If you like this video, hit the like button
+[13:48] and subscribe to the channel for more such videos.

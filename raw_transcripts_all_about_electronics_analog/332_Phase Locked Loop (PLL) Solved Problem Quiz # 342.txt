@@ -1,0 +1,58 @@
+Title: Phase Locked Loop (PLL) Solved Problem | Quiz # 342
+URL: https://www.youtube.com/watch?v=emG23nj09T4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this frequency synthesizer circuit which consists
+[00:15] of this phase lock loop and the divide by end counter.
+[00:19] So here, this divide by end counter has 4 outputs.
+[00:23] That is divide by 2, divide by 4, divide by 8 and divide by 16.
+[00:27] Moreover, here the input signal frequency is 5 kHz and we have been given that the
+[00:34] free running frequency of this PLL is at 20 kHz.
+[00:38] That means whenever the input signal is not present at that time, the output of this PLL
+[00:44] will be equal to 20 kHz.
+[00:46] So here, through the switch, the output of the divide by end counter is given to the PLL.
+[00:52] And here we have also given the order in which this switch is getting connected to this
+[00:57] output.
+[00:58] So, based on the connection of this switch to this divide by end counter, here we have
+[01:02] been asked to find the output of this synthesizer.
+[01:06] So when we use this PLL along with this divide by end counter, then it can be used as a frequency
+[01:11] synthesizer.
+[01:13] So as shown in the diagram, one of the input to this phase detector of the PLL will be
+[01:18] equal to the reference signal and the one input is the feedback signal which is coming
+[01:22] from the divide by end counter.
+[01:25] Let's say it is equal to FF.
+[01:28] So this phase log loop circuit changes the VCO frequency such that this feedback signal
+[01:33] FF is very close to FF.
+[01:35] So in this condition, if you see this output signal frequency of the VCO, then this Fout
+[01:41] is equal to this FI times and because as you can see, here this output signal is getting
+[01:48] divided by the factor of N.
+[01:50] Therefore, when this feedback signal is same as the reference signal at that time, this
+[01:56] output signal frequency is N times the input signal frequency.
+[02:01] So in this case, this divide by end counter has 4 outputs and using the switch at any given
+[02:07] point, only one output is connected to the phase detector.
+[02:11] So these outputs are divided by 16 divided by 8 divided by 4 and divided by 2.
+[02:18] And here we have also given the sequence in which these outputs are connected to the
+[02:23] phase detector.
+[02:24] So first, whenever this divided by 16 is connected to this phase detector, then the output
+[02:29] signal frequency F0 is equal to 16 times FI and in this case, this input signal frequency
+[02:36] is equal to 5 kilohertz.
+[02:39] That means when this switch is connected to the divided by 16 output at that time, this
+[02:44] output signal frequency of this frequency in this size is equal to 80 kilohertz.
+[02:50] Similarly, at the second time, when the divided by 8 output is connected to the phase detector,
+[02:56] then the output signal frequency F0 to is equal to 8 times FI.
+[03:02] That is equal to 8 times 5 kilohertz.
+[03:05] That is equal to 40 kilohertz.
+[03:09] Then at the third time, when the switch is connected to the divided by 4 output, then
+[03:13] this output signal frequency F0 3 is equal to 4 times FI.
+[03:19] That is equal to 4 times 5.
+[03:22] That is equal to 20 kilohertz.
+[03:25] And at the fourth time, when the switch is connected to the divided by 2 output, then
+[03:30] this output signal frequency F0 4 is equal to 2 times FI.
+[03:34] That is equal to 2 times 5 kilohertz.
+[03:38] That is equal to 10 kilohertz.
+[03:41] That means if you see the order in which we get the output across this frequency synthesizer,
+[03:46] then it is equal to 80 kilohertz followed by 40 kilohertz, followed by 20 kilohertz,
+[03:52] followed by 10 kilohertz.
+[03:54] So in this order, we will get the output at the frequency synthesizer.
+[03:59] And therefore, for the given question, this is the correct answer.

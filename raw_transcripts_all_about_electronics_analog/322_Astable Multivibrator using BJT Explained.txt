@@ -1,0 +1,204 @@
+Title: Astable Multivibrator using BJT Explained
+URL: https://www.youtube.com/watch?v=dQbrI_iQWig
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All Abode Electronics.
+[00:16] So in this video, we will learn how the Aestable Multi-Vipator can be designed using the BJT.
+[00:23] But before that, first of all, let us quickly see what is Aestable Multi-Vipator.
+[00:28] So in Aestable Multi-Vipator, there is a no-stable state.
+[00:32] That means the output of the circuit continuously changes between the two states.
+[00:37] And here, the duration for which the output remains in a one particular state can be controlled
+[00:43] by the passive elements like the register and the capacitor.
+[00:47] So now, let us see how the Aestable Multi-Vipator can be designed using the BJT.
+[00:54] So this is the circuit of the Aestable Multi-Vipator.
+[00:57] And as you can see, it consists of two transistors.
+[01:01] So this is the first transistor and the corresponding base and the collector registers, while this
+[01:06] is the second transistor.
+[01:09] And as you can see, both transistors are cross-capled.
+[01:13] That means the collector of one transistor is connected to the base of the other transistor
+[01:17] using this capacitor.
+[01:20] So now, let us understand the working of this circuit.
+[01:24] And before we understand the working, here I am assuming that you are aware of how the
+[01:29] transistor acts as a switch.
+[01:32] That means when the input to the BJT is less than the 0.7 volt, then it will operate in
+[01:37] the cutoff region and it will act as an open circuit.
+[01:41] And at that time, this voltage VCE is approximately equal to VCC.
+[01:45] Similarly, when the input at the base is high, then it will operate in the saturation region.
+[01:52] And at that time, it will act as a short circuit.
+[01:56] And in this saturation region of operation, the voltage VCE is approximately equal to 0
+[02:01] volt.
+[02:02] Now, the reason I am telling this is because while understanding the working of this Aestable
+[02:07] Multi-Vipator, we will replace these transistors either by a short circuit or the open circuit
+[02:13] based on the region in which they are operating.
+[02:16] So initially, when the supply is not given to this circuit, then both transistors will be
+[02:21] in the off condition.
+[02:24] And as soon as we apply this supply voltage, then both transistors will try to conduct.
+[02:30] Now one more thing to notice over here is that the value of this collector resistor is smaller
+[02:36] than the base resistor.
+[02:38] So as soon as we apply the supply voltage, then the capacitor starts charging through this
+[02:43] parts.
+[02:44] But due to the mismatch in both circuits, one transistor will conduct more than the other
+[02:49] one.
+[02:50] And due to that, only one transistor will go into the saturation first.
+[02:56] Now here, any of the two transistors can go into the saturation first.
+[03:01] But let's say here Q1 goes into the saturation first.
+[03:05] And due to that, the collector A meter terminal of this transistor will act as a short circuit.
+[03:11] Now up to this point, when the transistor Q2 was conducting, then let's say some charge
+[03:17] got accumulated across this capacitor.
+[03:21] And due to that, let's say the voltage across this capacitor C1 is equal to Vc1.
+[03:28] But as soon as this transistor Q1 goes into the saturation, or due to this short circuit,
+[03:33] the left hand side of this capacitor will get grounded.
+[03:37] Or we can say that due to that, the voltage minus Vc1 will appear across this transistor
+[03:42] Q2.
+[03:44] So due to this negative voltage, this transistor Q2 will go into the cutoff region.
+[03:50] So this is the starting point of the circuit.
+[03:53] That means as soon as we power up the circuit, then one transistor will become on, while the
+[03:57] other will remain off.
+[03:59] And here, we are assuming that the transistor Q1 will become on, and the transistor Q2 will
+[04:05] remain off.
+[04:07] That means transistor Q1 will act as a short circuit, while the transistor Q2 will act as
+[04:11] an open circuit.
+[04:14] And due to that, the voltage at the collector of this first transistor will be equal to 0
+[04:19] volt, while the voltage at the collector of the second transistor will be approximately
+[04:23] equal to Vcc.
+[04:25] So these are the two points, where we will get the output of this A stable multivariator.
+[04:31] And as you can see, both outputs will be opposite to each other.
+[04:35] So let's say this point is Q, then this point is Q bar.
+[04:40] So this is the first state of the A stable multivariator.
+[04:44] That means the transistor Q1 is on, and the Q2 is off.
+[04:48] Now let's see how the change in the state occurs, or how this output goes from the low voltage
+[04:54] to the high voltage.
+[04:57] Now in this state, this capacitor C1 reverse charges or charges in the other direction.
+[05:03] And it will charge through this resistor RB2.
+[05:07] On the other end, this capacitor C1 will charge through this resistor RB2.
+[05:14] Now if you notice over here, this transistor Q1 is in the on condition.
+[05:19] So the base emitter junction of this transistor will be forward biased.
+[05:23] And typically, the voltage across it will be equal to 0.7 volt.
+[05:28] That means the left hand side of this capacitor C2 will be at the 0.7 volt.
+[05:33] So we can say that this capacitor C2 will get charged up to the voltage VCC-VBE.
+[05:40] Or to be precise, the voltage VCC-VBE of this transistor Q1.
+[05:46] But here we are assuming that for the both transistors, the value of VBE is same.
+[05:52] On the other end, this capacitor C1 starts charging towards the voltage VCC.
+[05:58] Now one more thing if you notice, here this collector resistor is smaller in value compared
+[06:03] to the base resistor.
+[06:05] So this capacitor C2 will charge faster than the C1.
+[06:10] And as soon as the voltage across this capacitor C1 becomes 0.7 volt, then the same voltage
+[06:17] will also appear at the base of this transistor Q2.
+[06:21] Because here, this transistor Q1 will act as a short circuit.
+[06:26] So due to that, this transistor Q2 starts conducting and eventually it will go into
+[06:31] the saturation.
+[06:33] And hence, this transistor Q2 will act as a short circuit.
+[06:38] Meanwhile, this capacitor C2 is already charged up to the voltage VCC-VBE.
+[06:44] And as soon as this transistor Q2 gets short-circated, then the right hand side of this capacitor
+[06:50] C2 will get grounded.
+[06:53] That means now, the voltage which appears at the base of this transistor Q1 is equal
+[06:58] to minus of VCC-VBE.
+[07:02] So due to this negative voltage, this transistor Q1 will get turned off.
+[07:07] That means now, the transistor Q1 is off and the Q2 is on.
+[07:12] So this is the second state of the multivibrator.
+[07:16] That means now, over here, the collector voltage will be equal to VCC.
+[07:21] While at the other end, it will be approximately equal to 0 volt.
+[07:26] That means now, at this end, the output has gone from the low value to the high value,
+[07:32] while at the Q bar output, the output has gone from the high value to the low value.
+[07:38] So now, let us see once again, how the transition will occur at the output.
+[07:43] That means how the output will go from the high value to the low value.
+[07:48] So in this condition, when the Q1 is off and the Q2 is on, then this capacitor C2
+[07:54] charges in the reverse direction through this resistor RB1.
+[07:58] While on the other end, this capacitor C1 will charge through this resistor RC1.
+[08:05] So this capacitor C2 will charge towards the voltage VCC, while this capacitor C1 will
+[08:11] charge up to the voltage VCC-VBE.
+[08:16] So here, as soon as this capacitor C2 charges up to the 0.7 volt, then the transistor
+[08:21] Q1 will start conducting, because this voltage will directly appear at the base of this transistor
+[08:28] Q1.
+[08:29] So eventually, it will go into the saturation, or we can say that this transistor Q1 will
+[08:34] become on, and you do that, it will act as a short circuit.
+[08:39] So up to this point, this capacitor C1 has charged up to the voltage VCC-VBE.
+[08:46] And now, due to this short circuit, the left-hand side of this capacitor will get grounded.
+[08:53] So we can say that the voltage minus of VCC-VBE will appear at the base of this transistor
+[08:59] Q2.
+[09:01] So due to this negative voltage, this Q2 will turn off.
+[09:05] So in this way, the state of the multivirbetter has changed once again.
+[09:10] That means now, the Q1 is on, and the Q2 is off.
+[09:14] And if you see the output over here, and once again, there will be a transition from high
+[09:19] to the low.
+[09:22] And similarly, if you see the output at the other side, that means at the Q bar, then
+[09:26] it will be exactly opposite.
+[09:29] So in this way, the output of the multivirbetter changes continuously between the high and
+[09:34] the low state.
+[09:36] And if you see the output at the other side, that means at the Q bar, then it will be exactly
+[09:41] opposite.
+[09:42] So here, the charging of the capacitors decides the on and off time of the multivirbetter.
+[09:48] Or to be precise, the RC time constant RB2 times C1, and the RB1 times C2, decides the
+[09:56] on and off time, as well as the frequency of this multivirbetter.
+[10:00] So now, let us derive the expression of the on and off time, and the frequency of this
+[10:05] is stable multivirbetter.
+[10:08] So here, for the derivation, let us assume that initially the output Q is low.
+[10:13] And after time T1, it goes to the high state.
+[10:17] So whenever the Q is low, then we can say that this transistor Q1 is in the on condition.
+[10:24] So due to that, this capacitor C1 will charge through this resistor RB2.
+[10:29] And once it gets charged up to the 0.7 volt, then there will be a transition in the output.
+[10:36] Also one more thing to note down over here is that, before the capacitor starts charging
+[10:40] in the reverse direction, the voltage across the capacitor C1 was VCC minus VBE.
+[10:49] So now, to find this time T1, let us write down the general expression of the voltage across
+[10:54] the capacitor.
+[10:57] So the voltage across the capacitor, VC of T can be given as VC of infinite plus VC
+[11:05] of 0 minus VC of infinite times e to the power of minus T divided by RC.
+[11:13] Now we have already derived this expression in the earlier videos of the transit analysis.
+[11:18] So for more information, you can check that video.
+[11:22] But here, to get the value of this time T1, let us note down the values of the initial
+[11:26] voltage as well as the final voltage across the capacitor.
+[11:31] So here, the initial voltage VC of 0 across the capacitor is equal to VCC minus VBE.
+[11:37] But the polarity of this voltage is reverse.
+[11:40] So we can say that the initial voltage across the capacitor is equal to minus VCC plus VBE.
+[11:48] Similarly, this capacitor C1 charges towards the voltage VCC.
+[11:53] That means if the capacitor charges fully, then the voltage across this capacitor C1
+[11:58] should be equal to VCC.
+[12:00] That means we can say that VC of infinite is equal to VCC.
+[12:05] But here, we are interested in finding this time T1 when the voltage across the capacitor
+[12:10] reaches the 0.7 volt.
+[12:12] Or in other words, it will be equal to VBE.
+[12:16] So let's say at time T is equal to T1, this voltage VC of T1 is equal to VBE.
+[12:25] So to find this time T1, let us put all these values into this expression.
+[12:30] That means we can say that voltage VBE is equal to voltage VCC plus minus VCC plus VBE minus
+[12:42] VCC times e to the power of minus T divided by RC.
+[12:47] Now here, the value of R is equal to RB2, while the capacitor C is equal to C1.
+[12:55] So if we further rearrange this expression, then we can say that e to the power of minus
+[13:01] T divided by RB2 times C1 is equal to voltage VBE minus VCC divided by voltage VBE.
+[13:12] Now here, for this circuit to work, the voltage VCC should be much larger than the VBE.
+[13:23] And usually that is the case in the circuit.
+[13:26] So usually in the circuits, the voltage VCC is much larger than the VBE.
+[13:32] So assuming this condition, we can say that e to the power minus T1 divided by RB2 times
+[13:39] C1 is equal to minus VCC divided by minus 2 VCC.
+[13:46] Or if we take the natural log, then we can say that this time T1 is equal to minus RB2
+[13:53] times C1 times natural log of 1 by 2.
+[13:59] Or we can say that this time T1 is equal to RB2 times C1 times natural log of 2.
+[14:08] So this will be the expression of this time T1.
+[14:12] Similarly, this time T2 can be given as RB1 times C2 times natural log of 2.
+[14:23] So the total time period T is equal to T1 plus T2, which is equal to RB2 times C1 plus
+[14:34] RB1 times C2 times natural log of 2.
+[14:40] Or we can say that this time T is equal to 0.693 times RB2 times C1 plus RB1 times C2.
+[14:48] Because the value of natural log of 2 is approximately equal to 0.693.
+[14:53] And whenever this RB1 and RB2 are equal, and similarly when C1 and C2 are equal, in
+[14:59] that case, this time period T is equal to 1.386 times RC.
+[15:05] Or approximately we can say that it is equal to 1.4 times RC.
+[15:12] Now the frequency F is equal to 1 by T. So if we calculate the frequency F, then roughly
+[15:18] it will be equal to 0.72 divided by RC.
+[15:22] So in this way, we can get the desired frequency of oscillation for this, a stable melting
+[15:27] vibrator.
+[15:28] And if the values of resistors and the capacitors are not same, then the on and off time of
+[15:34] this A stable melting vibrator will be unequal.
+[15:37] Now for this A stable melting vibrator, if we see the actual output waveform, then it
+[15:42] will look like this.
+[15:44] So this rounded curve is due to the charging of the capacitors.
+[15:49] For example, when Q1 is off and Q2 is on, then this capacitor C1 charges through this
+[15:56] resistor RC1.
+[15:59] And once it fully charges, then that voltage will appear at the character terminal.
+[16:05] So due to this charging effect of the capacitor, the waveform will look like this.
+[16:11] So by properly selecting the value of this character resistor, it is possible to improve the
+[16:15] shape of the output waveform.
+[16:18] And further it can be improved by introducing the diodes in the given circuit.
+[16:23] So if you require, then I will provide the separate note for that improved circuit.
+[16:28] But I hope in this video, you understood how the A stable melting vibrator can be designed
+[16:32] using the BJT.
+[16:35] So if you have any question or suggestion, do let me know here in the comment section below.
+[16:40] If you like this video, hit the like button and subscribe button for more such videos.

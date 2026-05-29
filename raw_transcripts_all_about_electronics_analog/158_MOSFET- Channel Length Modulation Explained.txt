@@ -1,0 +1,121 @@
+Title: MOSFET- Channel Length Modulation Explained
+URL: https://www.youtube.com/watch?v=qFbdsLm5mvI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:10] So in this video, we will learn about the channel length modulation in the MOSFET.
+[00:16] Now so far for the enhancement type of MOSFET, we have assumed that when the MOSFET is
+[00:21] operating in the saturation region, then the drain current ID remains constant.
+[00:26] That means for the given value of the voltage VGS, if VDS is increased, then also this
+[00:32] drain current remains constant.
+[00:34] And with the assumption in the saturation region, the MOSFET can be visualized as voltage
+[00:40] control current source.
+[00:42] And the drain current can be given by this expression.
+[00:46] But actually if you see, for the given value of the voltage VGS, as we increase the value
+[00:51] of voltage VDS, then the drain current also slightly increases.
+[00:56] And this phenomenon is known as the channel length modulation.
+[01:00] So let us understand exactly what happens in this phenomenon.
+[01:04] So in the earlier video of the enhancement type of MOSFET, we have seen that as we
+[01:09] increase the drain to source voltage, then this gate terminal will become less positive
+[01:13] with respect to the drain terminal.
+[01:16] That means this gate terminal will attract lesser electrons towards the drain side compared
+[01:21] to the source side.
+[01:23] For in other words, the electron charge density will be lesser towards the drain side.
+[01:29] And that is why, as we move from the source side towards the drain side, then the length
+[01:33] of the channel will reduce.
+[01:36] And at one point, when the voltage VDS is equal to VGS-VT, or when the gate voltage is
+[01:42] just one threshold voltage greater than the drain voltage, then the width of the channel
+[01:47] will almost becomes negligible at this end.
+[01:51] Because at this end, the gate to substrate potential is not enough to attract the free
+[01:56] electrons.
+[01:57] And we call this condition as the pinch of condition.
+[02:01] And if we further increase this drain voltage, then at this end, the voltage between the gate
+[02:06] and the substrate will be even lesser than the one threshold voltage.
+[02:11] And now, the no channel will be formed at this end.
+[02:15] And instead, now this pinch of point will move towards the left hand side.
+[02:20] So now, somewhere around this point, the potential difference between the gate and the substrate
+[02:26] is equal to 1 VT.
+[02:28] And beyond this point, on the right hand side, the potential difference is even lesser than
+[02:32] one threshold voltage.
+[02:34] That means on the right hand side of this point, the no channel will get formed.
+[02:38] That means beyond this pinch of point, as we increase the voltage VDS, then the length
+[02:43] of this channel will reduce.
+[02:45] That means beyond the pinch of point, this channel length is the function of the voltage
+[02:50] VDS.
+[02:51] So, let's say the actual length of the channel is equal to L. And as we increase the voltage
+[02:57] VDS, then let's say, now the effective length is equal to L minus delta L.
+[03:03] So if we see the equation on the drain current in the saturation region, then now this L
+[03:08] will get replaced by L minus delta L. And because of that, now the drain current ID will
+[03:14] increase.
+[03:15] That means as we increase the drain to source voltage VDS, then this drain current ID will
+[03:19] also increase.
+[03:21] Intuitively, if you see, then this channel x like a resistor.
+[03:26] And this channel resistance depends on the length and the width of this channel.
+[03:31] That means as the length of the channel reduces, then the resistance of the channel will also
+[03:35] reduce.
+[03:36] And because of that, the drain current ID will increase.
+[03:40] So this channel length indicates that in the saturation region, this drain current ID
+[03:46] is also function of VDS.
+[03:48] So now let us find the expression of this drain current, which also includes the term VDS.
+[03:54] So without considering the channel length modulation, this is the expression of the drain
+[03:58] current in the saturation region.
+[04:01] Now with the channel length modulation, let's say the effective channel length that is
+[04:06] L effective is equal to L minus delta L.
+[04:10] So now this expression can be written as 1 by 2 times mu n times Cu x times W divided
+[04:17] by L minus delta L times VDS minus VT whole square.
+[04:24] Or here, this L minus delta L can be written as L times 1 minus delta L divided by L.
+[04:33] That means this drain current ID is equal to half times mu n times Cu x times W by L
+[04:40] times VDS minus VT whole square times 1 divided by 1 minus delta L divided by L.
+[04:50] Now this 1 divided by 1 minus delta L divided by L can be written as 1 minus delta L divided
+[04:58] by L inverse.
+[05:00] And here we are assuming that the change in the channel length is much lesser than the
+[05:05] actual length.
+[05:06] That means this delta L is much lesser than L. So in this condition, we can write this
+[05:12] 1 minus delta L divided by L inverse as 1 plus delta L divided by L. Because if you recall,
+[05:21] when the expansion of this 1 minus x inverse is equal to 1 plus x plus x square plus so
+[05:29] on.
+[05:30] And when this x is very small compared to 1, then the higher order terms can be neglected.
+[05:35] That means 1 minus x inverse is approximately equal to 1 plus x.
+[05:41] So similarly over here, this 1 minus delta L divided by L inverse is approximately equal
+[05:48] to 1 plus delta L divided by L. So from this, we can write the expression of this drain
+[05:55] current as this ID is equal to half times mu n times Cu x times W by L times VDS minus
+[06:06] VT whole square times 1 plus delta L divided by L.
+[06:12] Now here, this delta L is directly proportional to the voltage VDS. That means as the voltage
+[06:18] VDS increases, then this delta L will also increase. That means we can say that this delta
+[06:25] L is equal to lambda dash times VDS, but this lambda dash is some constant.
+[06:31] So from this, we can say that this delta L divided by L is equal to lambda dash divided
+[06:38] by L times VDS. And let's call it as lambda times VDS. That means we can write this expression
+[06:45] as half times mu n times Cu x times W by L times VDS minus VT whole square times 1 plus
+[06:56] lambda times VDS. So this is the expression of the drain current with including the effect
+[07:03] of channel length modulation. And here, this lambda is the channel length modulation
+[07:08] coefficient. So considering this channel length modulation effect, in the saturation region,
+[07:14] if we model this MOSFET as a voltage control current source, then this current source
+[07:19] also includes the term 1 plus lambda times VDS. And it also indicates that this current
+[07:27] source has the finite output resistance. Because without considering this channel length
+[07:31] modulation effect, if we increase the drain to source voltage, then this drain current
+[07:36] ID almost remains constant. That means the change in the drain current ID with the change
+[07:42] in the voltage VDS is equal to 0. Or you can say that this output resistance is equal
+[07:48] to infinite. But now, since the drain current ID is also changing with the change in the
+[07:54] VDS, that means there is a finite output resistance. So now, let us find the expression
+[08:00] of this output resistance. So let us call this drain current as ID dash, which is the
+[08:06] drain current including the channel length modulation. And this current is the drain current
+[08:12] ID without considering the effect of channel length modulation. That means we can say that
+[08:18] this ID dash is equal to ID times 1 plus lambda times VDS, where this ID is the drain current
+[08:27] in the saturation without considering the effect of channel length modulation. Now,
+[08:32] here, this 1 over output resistance can be given as drain ID dash divided by drain VDS.
+[08:41] So now, to find this output resistance, let us differentiate this entire expression
+[08:45] with respect to VDS. So if we differentiate this term with respect to VDS, then we will
+[08:52] get lambda times ID, because this first term will become 0. That means we can say that
+[09:00] the output resistance is equal to 1 divided by lambda times ID, where the ID is the drain
+[09:06] current in the saturation region without considering the effect of channel length modulation.
+[09:12] And here, the unit of this lambda is voltage inverse. So whenever this lambda is 0, in
+[09:20] that case, this output resistance is equal to infinite. But considering the effect of
+[09:25] this channel length modulation, or when this lambda is finite, then there will be a finite
+[09:30] output resistance. That means whenever we also consider the effect of the channel length
+[09:35] modulation, or whenever this lambda is non-zero, then there will be also a finite output resistance
+[09:40] in the device modeling. So if you compare this effect with the BJT, then it is similar
+[09:46] to the early effect. So that is all about the channel length modulation.
+[09:51] So I hope in this video, you understood what is channel length modulation in the MOSFET,
+[09:56] and what is the effect of it on the device characteristic. So if you have any question
+[10:01] or suggestion, then do let me know here in the comments section below. If you like this
+[10:05] video, hit the like button and subscribe with a lot more such videos.

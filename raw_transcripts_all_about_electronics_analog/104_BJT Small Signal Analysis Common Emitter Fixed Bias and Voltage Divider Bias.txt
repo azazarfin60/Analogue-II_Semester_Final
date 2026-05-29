@@ -1,0 +1,240 @@
+Title: BJT Small Signal Analysis: Common Emitter Fixed Bias and Voltage Divider Bias
+URL: https://www.youtube.com/watch?v=wbDUDRlmUuM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this video, we will understand how to do the small signal analysis of the BJT.
+[00:23] So this small signal analysis is particularly useful when the BJT is used as an amplifier.
+[00:30] So using this small signal analysis, we can find or estimate the different amplifier
+[00:34] parameters like the voltage gain input and the output impedance.
+[00:40] Now during the small signal analysis, we are assuming that the input to the amplifier
+[00:45] is very small, typically in the range of micro volt to milli volt.
+[00:50] And indeed, when the BJT is used as an amplifier or the pre-amplifier, then the input is coming
+[00:56] from either microphone or from the antenna.
+[01:00] Now we know that to use the BJT as an amplifier, we need to bias it.
+[01:05] So when we apply the input signal to the BJT, then it should not affect the biasing condition
+[01:10] of the BJT.
+[01:12] Similarly, this biasing voltage should not affect the input signal.
+[01:17] So to isolate the input signal and the biasing voltage, this coupling capacitor is used.
+[01:23] Or in other words, the input signal is applied to the BJT via this coupling capacitor.
+[01:29] So as you are aware, the capacitor blocks the DC signal because for the DC signal, it will
+[01:34] act as an open circuit.
+[01:37] So if you are aware, the reactants of the capacitor can be given as 1 divided by 2 pi times
+[01:44] fc.
+[01:45] And for the DC voltage, the frequency f is equal to 0.
+[01:50] That means the reactants of the capacitor will be infinite.
+[01:55] And hence, it will act as an open circuit.
+[01:58] At the same time, this capacitor allows the AC signal to pass through it.
+[02:03] And if the value of the capacitor is selected properly, then at the operating frequency,
+[02:08] the reactants offered by the capacitor will be minimum.
+[02:12] And for simplicity, we can assume that for the AC signal, this capacitor acts as a short
+[02:18] circuit.
+[02:20] Similarly, at the output side, to block the DC voltage from the output signal, the coupling
+[02:25] capacitors are used.
+[02:27] So that is the basic function of the coupling capacitor.
+[02:31] That is to isolate the AC and the DC signals.
+[02:34] And perhaps, you might have seen this coupling capacitors in the transistor circuit.
+[02:39] For example, in this circuit, this capacitor C1 and C2 are the coupling capacitors.
+[02:45] Alright, so now let us see the steps, which we need to follow for the small signal analysis
+[02:50] of the BJT.
+[02:52] And for the simplicity, let us take the example of the common ammeter fixed by configuration.
+[02:59] That means in this configuration, the BJT is used as an amplifier in the common ammeter
+[03:04] configuration.
+[03:06] So here, the common ammeter means the ammeter terminal is common between the input and the
+[03:12] output side.
+[03:14] That means here, the input signal is applied between the base and the ammeter, while the output
+[03:19] is taken between the collector and the ammeter terminal.
+[03:23] And for the biasing, the BJT is biased in the fixed bias configuration.
+[03:28] So that is what I mean by the common ammeter fixed bias configuration.
+[03:32] Alright, so now let us see the steps for the small signal analysis.
+[03:36] So first of all, consider all the DC sources in the circuit as 0.
+[03:43] So as I said earlier, the input signal, which is applied to this BJT amplifier, is very
+[03:49] small.
+[03:50] So under the small signal approximation, we can apply the principle of the superposition.
+[03:56] And we can consider the AC and the DC sources separately for the analysis.
+[04:01] That means during the AC analysis or for the small signal analysis, we can consider all
+[04:06] the DC sources as 0.
+[04:09] So we can consider all the DC voltage sources as a short circuit, while we can consider
+[04:14] all the current sources as the open circuit.
+[04:17] Then the second step is to replace all the coupling and the bypass capacitor with the
+[04:22] short circuit.
+[04:24] And then the third step is to replace the BJT with the small signal model.
+[04:29] So one by one, let us follow all these steps and let us do the small signal analysis of
+[04:34] the given circuit.
+[04:36] So the first step is to consider all the DC sources in the circuit as 0.
+[04:42] That means this voltage source we see will act as a short circuit.
+[04:47] And it will directly get connected to the ground terminal.
+[04:51] Then the next step is to replace the coupling capacitors by the short circuit.
+[04:56] That means we can replace this capacitor C1 and C2 by the short circuit.
+[05:01] And then the third step is to replace the BJT by the small signal model.
+[05:06] So this is the small signal model of the BJT.
+[05:10] And if we consider the early effect, then we also need to include the output resistance
+[05:14] in this small signal model.
+[05:17] But for a moment, let us assume that the output resistance is infinite.
+[05:22] And considering this, now let us replace the BJT by the small signal model.
+[05:28] Now if you see over here, then the input signal is applied between the base and the emitter
+[05:33] terminal.
+[05:34] That means we can represent the input voltage between these two terminals, right?
+[05:40] Now if you see over here, then the one terminal of this resistor RB is connected to the base
+[05:45] terminal.
+[05:46] While the second terminal is connected to the ground, which is the AC ground.
+[05:51] And if you see over here, this emitter terminal is grounded.
+[05:55] So effectively we can say that this resistor RB is connected between the base and the emitter
+[06:01] terminal, right?
+[06:03] Similarly we can say that this collector resistor RC is connected between the collector and
+[06:08] the emitter terminal.
+[06:10] That means we can represent this resistor RB and RC between the base emitter and the collector
+[06:16] emitter terminals.
+[06:18] So this is the AC equivalent representation of the common emitter fixed by our configuration.
+[06:23] And using this, we can find the different amplifier parameters like the voltage gain, the
+[06:29] input and the output impedance.
+[06:32] And first of all, let us find the voltage gain.
+[06:36] So let us say the current which is flowing through this resistor RC is equal to I0.
+[06:42] So if we apply the KCL at this store, then we can say that this current IC is equal
+[06:48] to I0.
+[06:50] And this current I0 can be given as minus V0 divided by RC.
+[06:57] That means we can say that the output voltage V0 is equal to minus IC times RC.
+[07:04] And we know that this current IC can be given as GM times Vpi.
+[07:11] That means V out is equal to minus GM times Vpi times RC.
+[07:19] Now if you see over here, then this input voltage V in is equal to Vpi, right?
+[07:26] That means we can replace this voltage Vpi by the input voltage.
+[07:31] And we can say that the ratio of the V out by V in is equal to minus GM times RC.
+[07:39] That is equal to the voltage gain.
+[07:42] That means the voltage gain is equal to minus GM times RC.
+[07:47] Where this GM is the transconductance and it can be given as the IC divided by VT.
+[07:54] Where IC is the DC collector current and the VT is the thermal voltage.
+[08:00] Now if you observe over here, then there is a negative sign in this voltage gain.
+[08:05] That means there is a 180 degree phase shift between the input and the output voltage.
+[08:10] So similarly, now let us find the expression of the input impedance.
+[08:15] So if V in is the input voltage and I in is the input current, then the ratio of this
+[08:22] input voltage to the input current is equal to the input impedance, right?
+[08:28] So here if we apply the KCL at this node, then we can write it as this I in is equal
+[08:34] to V in divided by RB plus V in divided by RPI.
+[08:43] That means input current I in is equal to V in times 1 divided by RB plus 1 divided
+[08:52] by RPI.
+[08:55] That means the ratio of the input voltage to the input current that is the input impedance
+[09:01] is equal to 1 divided by RB plus 1 divided by RPI.
+[09:09] Or we can say that it is the parallel combination of the RB and the RPI.
+[09:14] So this is the expression of the input impedance.
+[09:18] And similarly, now let us find the expression of the output impedance.
+[09:23] So the output impedance is the Thavinance Equipment impedance which is seen through the output
+[09:28] terminal.
+[09:30] And for that, let us consider all the independent sources in the circuit as 0.
+[09:36] That means for that, we can replace this input voltage way in by the short circuit.
+[09:42] Now as soon as we replace this input voltage by the short circuit, then these two resistors
+[09:46] will also get short circuited.
+[09:49] And at the same time, this collector current Ic will also become 0 because this voltage
+[09:55] V Pi will also become 0.
+[09:58] That means we can say that this dependent current source will act as an open circuit.
+[10:04] That means now the Thavinance Equipment resistance which is seen through the output terminal
+[10:09] is equal to RC.
+[10:11] Or we can say that the output impedance is equal to RC.
+[10:17] So from this small signal equivalent circuit, we got the expression of the voltage gain,
+[10:21] the input impedance and the output impedance.
+[10:25] That means the voltage gain is equal to minus GM times RC, while the input impedance is
+[10:31] the parallel combination of the RB and the R Pi.
+[10:35] And similarly, the output impedance is equal to RC.
+[10:40] Now so far in our discussion, we have assumed that the output resistance in this small signal
+[10:45] model is infinite.
+[10:48] But if we also consider this output resistance, then these expressions will get modified.
+[10:54] So now with this output resistance, if you see, this resistor RC and R naught are in parallel.
+[11:00] So now the voltage gain can be given as minus GM times RC parallel R naught.
+[11:09] And similarly, the output impedance Z naught will be equal to R naught parallel RC.
+[11:17] But in this case, the input impedance Z will remain the same.
+[11:21] That is the parallel combination of R Pi and the RB.
+[11:25] So because of this output resistance R naught, there will be a slight modification in the
+[11:30] overall expressions.
+[11:32] But if the value of R naught is very high, then we can neglect the effect of this R naught.
+[11:38] Alright, so this was the small signal analysis of the common emitter fixed by our configuration.
+[11:44] And similarly, now let us do the small signal analysis for the common emitter voltage
+[11:49] divider biasing configuration.
+[11:52] So here, these capacitors C1 and C2 are the coupling capacitors, while this capacitor C3 is
+[11:58] the bypass capacitor.
+[12:01] So for the DC voltages, this bypass capacitor will act as an open circuit, while for the AC
+[12:07] input signal, it offers the minimum resistance.
+[12:11] And for the analysis, we can assume that for the AC signal, it will act as an short circuit.
+[12:17] Alright, so now let us do the ACNC.
+[12:19] The analysis of the given circuit.
+[12:22] And for that, we will follow the same three steps.
+[12:26] That means first of all, consider all the DC voltage sources in the circuit as zero.
+[12:32] Then after, replace all the coupling and the bypass capacitors by the short circuit.
+[12:38] And as a third step, replace the BJT by the small signal model.
+[12:43] So here, as this capacitor C3X as a short circuit, so this emitter resistor RE will also
+[12:49] get short circuit aid.
+[12:51] That means we can say that this emitter terminal will get grounded.
+[12:56] Right?
+[12:57] Now if you see over here, then effectively, this input voltage is applied between the base
+[13:02] and the emitter terminal.
+[13:05] That means in the AC equivalent circuit, there will be an input signal between the base
+[13:09] and the emitter terminal.
+[13:11] Apart from that, if you see over here, then the one terminal of this resistor R2 is connected
+[13:17] to the base terminal.
+[13:18] While the second terminal is connected to the ground.
+[13:21] Similarly, the one terminal of this resistor R1 is connected to the base terminal, while
+[13:27] the second terminal is connected to the AC ground.
+[13:31] Or effectively, we can say that these two resistors are connected between the base and the
+[13:35] emitter terminal.
+[13:37] Because here, this emitter terminal will get grounded.
+[13:41] Right?
+[13:42] Similarly, we can say that this resistor RC is connected between the collector and the
+[13:46] emitter terminal.
+[13:48] So, considering all these things, if you see the AC equivalent circuit, then it will look
+[13:53] like this.
+[13:55] That means here, the resistor R1 and R2 are connected between the base and the emitter
+[14:00] terminal, while the resistor RC is connected between the collector and the emitter terminal.
+[14:06] So now, let us find the voltage gain, the input and the output impedance from this equivalent
+[14:12] circuit.
+[14:13] And first of all, let us find out the voltage gain.
+[14:17] So, from the output side, we can say that the voltage V out is equal to minus IC times
+[14:25] R0 parallel RC.
+[14:28] And here, IC is equal to GM times V pi.
+[14:32] That means we can say that V out is equal to minus GM times V pi times R0 parallel RC.
+[14:43] And here, the voltage V pi is equal to input voltage.
+[14:49] That means we can say that the ratio of the output voltage to the input voltage is equal
+[14:54] to minus GM times R0 parallel RC.
+[14:59] So, this is the expression of the voltage gain.
+[15:03] That means the voltage gain is equal to minus GM times R0 parallel RC.
+[15:11] And once again, if you see, there is a negative sign in the voltage gain, which indicates
+[15:16] there is a 180 degree phase shift between the input and the output signal.
+[15:20] So, similarly, now let us find the expression of the input impedance.
+[15:25] So, as I said, the input impedance can be given as the input voltage to the input current.
+[15:34] Where input current is the current which is supplied by the input voltage.
+[15:39] So, to find the input impedance, let us apply the KCL at this node.
+[15:44] That means we can say that this input current is equal to V in divided by R1 plus V in divided
+[15:53] by R2 plus V in divided by R5.
+[15:58] Or we can say that the ratio of the input voltage to the input current, that is the input
+[16:05] impedance, is the parallel combination of the R1, R2 and the R5.
+[16:11] That is equal to R1 in parallel with R2 in parallel with R5.
+[16:16] So, this is the expression of the input impedance.
+[16:21] And here, if the parallel combination of R1 and R2 is much greater than the R5, in that
+[16:27] case, the input impedance Z in will be approximately equal to R5.
+[16:32] All right.
+[16:34] So, similarly, now let us find the expression of the output impedance.
+[16:39] So as I said earlier, the output impedance is the Thavenant's equivalent impedance which
+[16:44] is seen through the output terminal.
+[16:46] And to find that, let us consider all the independent sources in the circuit as zero.
+[16:53] That means to find the output impedance, we need to consider this input voltage V in as
+[16:57] the zero.
+[16:59] That means we can replace this input voltage V in by the short circuit.
+[17:04] So as soon as we consider this input voltage V in as zero, all these three resistors will
+[17:09] get short circuited.
+[17:11] And at the same time, this current source will also become zero.
+[17:15] Or we can say that it will act as an open circuit.
+[17:19] So in that condition, the Thavenant's equivalent resistance which is seen through the output
+[17:24] terminal is the parallel combination of R0 and the RC.
+[17:29] Or we can say that the output impedance is equal to the parallel combination of R0 and
+[17:34] the RC.
+[17:37] So in this way, we got the expression of the voltage gain, the input impedance and the
+[17:41] output impedance for the common emitter voltage divider biasing configuration.
+[17:47] And we will solve some examples based on the small signal analysis on our second channel.
+[17:52] Now so far in our analysis, we have assumed that there is a bypass capacitor in the
+[17:57] amplifier circuit.
+[17:59] But if we remove this bypass capacitor, then the circuit analysis will get changed completely.
+[18:06] So in the next video, we will see that how to analyze such circuits when there is a
+[18:10] no bypass capacitor.
+[18:12] But I hope in this video, you understood how to do the small signal analysis of the common
+[18:17] emitter fixed bias and the voltage divider biasing configuration.
+[18:21] So if you have any question or suggestion, do let me know here in the comment section
+[18:25] below.
+[18:26] If you like this video, hit the like button and subscribe to the channel for more such
+[18:30] videos.

@@ -1,0 +1,226 @@
+Title: BJT:  Differential Amplifier Explained
+URL: https://www.youtube.com/watch?v=yXJADXuWtlI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will understand how to design a differential amplifier using the
+[00:15] BJT.
+[00:17] The differential amplifier amplifies the difference between the two input signals.
+[00:22] And it is widely used in the integrated circuits.
+[00:25] If you see the internal structure of the op-amp, then the first stage of the op-amp is
+[00:29] the differential amplifier.
+[00:32] So let us understand, what are the advantages of this differential amplifier and how it
+[00:36] can be designed using the BJT.
+[00:39] But before that, first of all let us understand, what is differential input and what is the
+[00:44] difference between the single and the differentient input.
+[00:47] And to understand that, let us take the example of the BJT amplifier.
+[00:52] So all the BJT amplifiers, which we have discussed so far are the single-ended, where the
+[00:57] input is applied between the input and the ground terminal, while the output is measured
+[01:01] between the output and the ground terminal.
+[01:04] So in such single-ended amplifier, when some noise or the interference gets coupled to
+[01:09] the input, then it will also get amplified and will appear at the output side.
+[01:15] But in case of the differential input, such common-more noise on the input side can be
+[01:20] eliminated at the output.
+[01:22] So let us say, these are the two input terminals of the differential amplifier and this input
+[01:28] V in 1 is the input to this first terminal with respect to ground.
+[01:33] Similarly, this V in 2 is the input to the second terminal with respect to ground.
+[01:39] And here, this V in is the noise, which is common to both input terminals.
+[01:45] So with the noise, if you see the input at the first terminal, that is, V in 1 dash,
+[01:51] then it is equal to V in 1 plus V in.
+[01:55] Similarly, these V in 2 dash will be equal to V in 2 plus V in.
+[02:02] And the differential input between the two terminals, that is, V in 1 dash minus V in
+[02:10] 2 dash.
+[02:12] That is equal to V in 1 minus V in 2.
+[02:16] That means at the output, the noise won't appear.
+[02:20] So that is the advantage of this differential amplifier, which amplifies the differential
+[02:24] input or the difference between the two input terminals and eliminates the common-mode
+[02:29] noise or the common-mode signal, which is common to the both input terminals.
+[02:34] Moreover, by taking the output in the differential configuration, it is possible to eliminate the
+[02:39] supply hum or the any noise, which is common to the amplifier circuit.
+[02:45] And when the differential amplifier stages are cascaded together, then it also eliminates
+[02:51] the need of the coupling capacitors, which is required in case of the single-ended amplifiers.
+[02:56] So these are the some of the advantages of the differential amplifier.
+[03:00] And this is the typical circuit of the differential amplifier.
+[03:04] So as you can see, the differential amplifier consists of the pair of BJTs.
+[03:10] And for the differential amplifier to work properly, the transistor pair should be matched
+[03:15] perfectly.
+[03:16] That means all the transistor properties, like the current gain beta, voltage BB should
+[03:21] match perfectly.
+[03:22] Moreover, these collector resistors should also be the same.
+[03:27] And if there is an enemies match, then this differential amplifier won't be able to
+[03:32] eliminate the common-mode noise perfectly.
+[03:34] Anyway, so as you can see, the emitter of both transistors is tied together to the constant
+[03:40] current source.
+[03:42] So in the integrated circuits, it is possible to match these two transistors as well as
+[03:47] the collector resistor.
+[03:49] And in that case, this constant current source is designed using the current mirror.
+[03:54] But when the circuit is designed using the discrete components, then there will be some
+[03:59] mismatch between the transistor pair.
+[04:01] And in that case, this emitter can be biased in this fashion.
+[04:06] But here, during our discussion, we will assume that both transistors are matched perfectly.
+[04:12] So in this differential amplifier, the input is applied between the base of the two transistors.
+[04:17] But for the DC analysis, both the inputs will act as a ground.
+[04:22] So let's say here, the current through this emitter resistor is equal to i.
+[04:28] And since the both transistors are matched perfectly, so this current i.e.
+[04:33] will get equaled divided between the two transistors.
+[04:36] That means the current through the emitter of both transistors will be equal to i.e.
+[04:41] divided by 2.
+[04:44] And applying the KVL in this particular loop, we can find the emitter current.
+[04:49] So if we apply the KVL, then we can write minus VBE minus iE times RE plus VE is equal
+[05:01] to 0.
+[05:02] Or from this, we can say that current iE is equal to voltage BE minus VBE divided by RE.
+[05:13] And the emitter current i1 and i2 will be equal to iE divided by 2.
+[05:21] And the current current iC will be approximately equal to emitter current.
+[05:26] But if we see the exit value, then this iC1 and the iC2 will be equal to alpha times iE
+[05:34] divided by 2.
+[05:36] That means the current voltage at the both transistors, that is VCE will be equal to voltage
+[05:42] VCC minus IC times RC.
+[05:46] That is equal to voltage VCC minus alpha times iE divided by 2 times RC.
+[05:55] So this character voltage will appear at these two terminals.
+[05:59] And in case of the constant current source also, the same expression is true.
+[06:04] So now let us understand qualitatively how the differential amplifier responds to the
+[06:08] common mode as well as the differential inputs.
+[06:11] And in the next video, we will go through the large and the small signal analysis.
+[06:16] So first of all, let us see the response of this differential amplifier to the common
+[06:20] mode signal.
+[06:22] Now this common mode signal could be some DC voltage or it could be some form of noise
+[06:27] which is common to the both input terminals.
+[06:30] Now here, since both transistors are matched, that means this current iE will get equality
+[06:36] divided between the two emitters.
+[06:39] That means this current iE will be equal to iE divided by 2.
+[06:45] And the voltage at this node will be equal to voltage VCM minus VBE.
+[06:51] And since the transistors are perfectly matched, the voltage drop across the collector will
+[06:56] also be the same.
+[06:58] That is equal to VCC minus alpha times iE divided by 2 times RC.
+[07:05] So if we see the differential voltage, that is VO2 minus VO1 or the VC2 minus VC1, then
+[07:12] it will be equal to 0.
+[07:15] That means for the common mode signal or the signal which is common to both input terminals,
+[07:20] the differential output will be 0.
+[07:23] And even if there is a change in the voltage VCM, then because of this constant current,
+[07:28] the current through each emitter will remain the same.
+[07:31] That is iE divided by 2.
+[07:34] And hence, this differential voltage will remain 0.
+[07:38] Now when this differential pair is biased with the emitter resistor, then in that case also,
+[07:44] the differential output will remain 0.
+[07:47] So in that case, let us say, the voltage at this node is equal to VBE.
+[07:53] And this voltage VBE will be equal to voltage VCM minus VBE, right?
+[08:00] And the current iE will be equal to voltage VE minus VPD divided by RC.
+[08:09] Now depending on the common mode voltage, this current might change little bit.
+[08:14] But since both transistors are identical, so the current will get equally divided between
+[08:19] the two emitteres.
+[08:21] That means the current through this emitter, that is iE1 and the iE2 will be equal to iE
+[08:28] divided by 2.
+[08:30] And because of the identical transistors, the drop across the collector will also be the
+[08:34] same.
+[08:36] That means in that case also, the differential output voltage will be equal to 0.
+[08:41] So this is how the differential amplifier rejects the common mode input signal.
+[08:47] Now here, to ensure the operation of the BJT in the active region, the value of the VCM
+[08:52] should be in such a way that the collector based junction remains in the reverse bias condition.
+[08:57] That means the value of the VCM cannot be arbitrarily very high.
+[09:01] Alright, so now let us see how the differential amplifier behaves for the differential input
+[09:06] signal.
+[09:08] So let's say a one-volt of common mode signal is already presented at the both inputs.
+[09:14] And on top of it, a plus one-volt is applied at the V in 1.
+[09:19] That means the V in 1 is equal to 2-volt, while the V in 2 is equal to 1-volt.
+[09:25] That means we can say that a one-volt of differential input is present between the two input terminals.
+[09:32] And because of this large differential input voltage, this transistor Q1 will draw the
+[09:36] entire current iE.
+[09:39] And in this case, this transistor Q2 will remain of.
+[09:43] So let us see how.
+[09:45] Now since the base voltage of the Q1 is at 2-volt, that means this node Vp should be at 1.3
+[09:52] volt, right?
+[09:53] But the base of the second transistor is at the one-volt.
+[09:57] And according to that, this voltage Vp should be equal to 0.3 volt.
+[10:01] And that is not possible, right?
+[10:03] Because if that is the case, then the voltage VBE1 will be equal to 1.71 volt, right?
+[10:10] And with such large value of the VBE, the collector current and eventually the emitter current
+[10:15] will be very high.
+[10:17] Because if you are aware, this collector current Ic can be given as Is times e to the power
+[10:24] voltage VBE divided by Vt.
+[10:28] So for such very large value of the VBE, the collector current will be very high.
+[10:33] And in this case, it will get restricted by this bias current.
+[10:37] That means the entire current iE will flow through the transistor Q1.
+[10:42] And in that case, this voltage Vp will be equal to 1.3 volt.
+[10:47] And because of that, this transistor Q2 will remain in the off condition.
+[10:53] That means for the large value of this differential input voltage, the entire bias current is drawn
+[10:58] by the particular transistor.
+[11:00] And the reverse is also true.
+[11:02] That means whenever the transistor Q2 is at 2 volt and the transistor Q1 is at 1 volt,
+[11:08] at that time the entire current iE will drawn by this Q2.
+[11:13] And in that case, the collector voltage Vc2 will be equal to voltage Vcc minus alpha
+[11:20] times iE times RC.
+[11:24] And since the transistor Q1 is in off condition, that means voltage Vc1 will be equal to Vcc.
+[11:31] So as you can see, even with a 1 volt of differential input voltage, it is possible
+[11:36] to steer the entire bias current from one side of the pair to the other side.
+[11:41] And because of this current steering property of this differential amplifier, it is widely
+[11:45] used in the logic circuits.
+[11:47] But to use this differential pair as an amplifier, this differential input voltage should be very
+[11:52] small.
+[11:53] Typically, it should be less than 2Vt.
+[11:57] That means whenever this differential input voltage is in milli volt, then it is possible
+[12:01] to use it as a differential amplifier.
+[12:04] So let us understand qualitatively how the circuit works for this small differential
+[12:08] input.
+[12:09] So let us say on top of this common mode voltage, a small differential input delta V is
+[12:14] applied at the V in 1.
+[12:16] Similarly, the voltage at the V in 2 is equal to Vcm minus delta V.
+[12:22] That means the differential input voltage V in 1 minus V in 2, that is VID is equal to
+[12:28] 2 delta V.
+[12:30] Now let us say because of the small input voltage, this emitter current has been increased
+[12:35] slightly.
+[12:36] And now it is equal to IE divided by 2 plus delta I.
+[12:42] Similarly, on this side because of the reduction in the input voltage, now let us say this
+[12:47] emitter current is equal to IE divided by 2 minus delta I.
+[12:53] And if you see the summation of these 2 current, then still it is equal to IE.
+[12:58] So now let us find the relationship between the change in the collector current and the
+[13:02] change in the input voltage.
+[13:04] And qualitatively let us find the voltage gain.
+[13:08] Now we know that this current delta Ic can be given as gm times delta Vb.
+[13:15] So now because of the increase in this input voltage, let us say the voltage at this node
+[13:20] P has increased by delta Vp.
+[13:23] That means we can say that this collector current delta Ic1 is equal to gm times delta Vb
+[13:32] that is delta V minus delta Vp.
+[13:35] So this indicates the change in the voltage Vb.
+[13:40] Similarly, the reduction in this collector current Ic2 will be equal to gm times minus delta
+[13:46] V minus delta Vp.
+[13:49] That is equal to minus gm times delta V plus delta Vp.
+[13:56] Now here if we apply the KCL at this node P, then the outgoing current should be equal
+[14:01] to IE.
+[14:02] That means the increase in the current Ic1 and the reduction in the current Ic2 should
+[14:07] be same.
+[14:08] Or in other words, we can say that this delta Ic1 should be equal to minus delta Ic2.
+[14:15] And from this we can say that gm times delta V minus delta Vp should be equal to gm times
+[14:25] delta V plus delta Vp.
+[14:28] Or from this we can say that this delta Vp is equal to 0, which indicates that for a small
+[14:36] differential input voltage, the voltage at this node P will remain same.
+[14:41] Or we can say that the voltage at this node P will not change.
+[14:45] Or we can say that for the small signal, this node will act as a virtual ground.
+[14:50] And we will talk more about it during the small signal analysis.
+[14:54] But since the delta Vp is 0, so we can say that this delta Ic1 is equal to gm times delta
+[15:02] V and this delta Ic2 is equal to minus gm times delta V.
+[15:08] Or from this we can say that this voltage V of 1 or the delta Vc1 is equal to minus
+[15:15] gm times delta V times RC.
+[15:19] Because as we have seen previously, this character voltage Vc1 is equal to Vcc minus Ic times RC.
+[15:28] Now with the change in the input voltage, if the change in the character current is delta
+[15:32] Vc, then we can say that the change in the voltage Vc is equal to minus gm times delta
+[15:38] V times RC.
+[15:39] Similarly, this voltage delta Vc2 will be equal to gm times delta V times RC.
+[15:48] That means if we see the differential output voltage, that is V of 2 minus V of 1, then
+[15:54] it will be equal to 2 times gm times delta V times RC.
+[16:00] And here this differential input voltage, that is V in 1 minus V in 2 is equal to 2 delta
+[16:08] V.
+[16:09] That means the differential voltage gain, that is delta V of 2 divided by delta V in, will
+[16:15] be equal to 2 times gm times delta V times RC divided by 2 delta V.
+[16:23] That is equal to gm times RC.
+[16:27] And if we consider the voltage V of 1 minus V of 2, then it is equal to minus gm times
+[16:33] RC.
+[16:34] And if you notice, this gain is same as the common emitter amplifier gain.
+[16:39] But here, if both transistors are matched perfectly, then this common mode signal or the
+[16:44] common mode noise will get eliminated perfectly.
+[16:48] So that is the advantage of this differential amplifier.
+[16:51] So I hope in this video, you got the general overview of this differential amplifier.
+[16:56] In the next video, we will go through the large and the small signal analysis, and we
+[17:01] will learn more about this differential amplifier.
+[17:04] So if you have any question or suggestion, do let me know here in the comments section
+[17:08] below.
+[17:09] If you like this video, hit the like button and subscribe with your most such videos.

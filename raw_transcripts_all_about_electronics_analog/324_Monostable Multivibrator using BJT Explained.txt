@@ -1,0 +1,111 @@
+Title: Monostable Multivibrator using BJT Explained
+URL: https://www.youtube.com/watch?v=nTm-fB1OrqE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All Abode Electronics.
+[00:16] So in this video, we will learn how the monostable multivariator can be designed using the BJT.
+[00:23] So the monostable multivariator is the circuit, where the output of the circuit remains in
+[00:27] the stable state, but whenever the external trigger signal is applied, then momentarily,
+[00:33] the output goes into the unstable state. And once again, it comes back into the stable state.
+[00:40] So the duration for which it remains in this unstable state depends on the values of the resistor
+[00:45] as well as the capacitor. So now, let us see how this monostable multivariator can be designed using
+[00:52] the BJT. And this is the circuit of the monostable multivariator. So as you can see,
+[00:59] it consists of two transistors. So this is the first transistor, while this is the second transistor.
+[01:08] So here, this resistor R2 is the base resistor, while this resistor R2 is the character resistor.
+[01:16] And as you can see, both transistors are cross-coupled. That means here, the character of the first
+[01:22] transistor is connected to the base of the second transistor, where this capacitor C.
+[01:28] While the collector of the second transistor is connected to the base of the first transistor,
+[01:32] where this resistor R1. And through this portion of the circuit, the trigger signal is applied to the
+[01:40] circuit. So this portion of the circuit will come into the picture whenever we apply the trigger
+[01:45] signal. And later on, we will talk about it in a detail. Now here, during the operation of the
+[01:53] circuit, the transistor operates in the cutoff and the saturation region. So here, when the
+[01:59] transistor operates in the cutoff region, then we will assume that it will act as an open circuit.
+[02:06] So at that time, the voltage VCE is approximately equal to VCC. Similarly, when it operates in the
+[02:13] saturation region, then we will assume that it acts as a close switch. So at that time,
+[02:19] this voltage VCE is approximately equal to zero volt. So now, let us see how this monostable
+[02:26] multivariator circuit works. So when the circuit is powered up, then the transistor Q1 will be off,
+[02:33] while the transistor Q2 will be on. So let us understand how this circuit works whenever it is
+[02:40] powered up. So after the circuit is powered up, then both transistors try to conduct.
+[02:47] But if you see over here, the character of this transistor Q2 is connected to the base of this
+[02:52] transistor Q1, where this resistor R1. So as this transistor Q2 conducts more and more and goes
+[03:00] into the saturation, then it will act as a close switch. And due to that, the voltage at the
+[03:06] base of this transistor Q1 will be approximately equal to zero volt. So due to that, this transistor
+[03:13] Q1 will operate in the cutoff region and it will act as an open circuit. That means initially after
+[03:20] the power up, the transistor Q1 will be off while the transistor Q2 will be on. And here at
+[03:28] this node, or at the collector of this transistor Q2, we will get the output.
+[03:34] So initially, after the power up, the voltage at the collector of this transistor Q2 will be
+[03:39] approximately equal to zero volt, while the voltage at the collector of this transistor Q1
+[03:44] will be approximately equal to VCC. And this is the stable state of the monostable.
+[03:51] That means in this state, the output of the monostable will be low.
+[03:56] Now, as soon as we apply the trigger signal, then momentarily, the output goes into the unstable state.
+[04:03] And then after, it comes back into the stable state. So now, let us see, when we apply this
+[04:10] trigger signal, then how the circuit works. Now, as I said, in the stable state, the transistor
+[04:17] Q2 is on and the Q1 is off. So in this condition, this capacitor C charges through
+[04:24] this path. And here, as this transistor Q2 is on, so the voltage between this base and the
+[04:33] emitter terminal will be equal to 0.7 volt. That means in the stable state, this capacitor C
+[04:39] will charge up to the voltage VCC-VBE. Now in this stable condition, if where in narrow
+[04:49] triggering pulse is readily available, then through the resistor, it can be directly applied to the
+[04:54] base of the transistor Q1. But if it is not available, then the pulse of any finite duration
+[05:02] can be applied to this circuit. So basically, this circuit is the differentiator circuit.
+[05:08] And whenever we apply the pulse to this differentiator circuit, then it detects the rising and the
+[05:13] falling edge of the pulse. And by passing it through the diode, we can get only positive edge.
+[05:20] So when we apply the pulse of finite duration to this differentiator circuit, then we will get the
+[05:26] very narrow triggering pulse at the base of this transistor Q1. And as soon as the trigger pulse
+[05:33] gets applied to the base of this transistor Q1, then it will go into the saturation. And you do
+[05:39] that, it will act as a short circuit. So now if you see, the left hand side of this capacitor
+[05:45] will get grounded. And you do that, the voltage minus of VCC-VBE will directly get applied to the
+[05:53] base of this transistor Q2. So due to this large negative voltage, the transistor Q2 will go
+[06:00] into the cutoff region and it will act as an open circuit. That means now, the voltage at the
+[06:07] character of this transistor Q2 will be high. And the same voltage is also applied to the base of
+[06:12] this transistor Q1. So Q1 will remain in the saturation region and it will act as a close switch.
+[06:21] And now in this condition, this capacitor see reverse charges or starts charging in the reverse
+[06:27] direction. So basically, it will start charging towards the voltage VCC. And during the charging,
+[06:34] as soon as the voltage across the capacitor reaches the 0.7 volt or the voltage VBE,
+[06:39] then this transistor Q2 starts conducting and eventually, it will go into the saturation.
+[06:46] And due to that, the voltage at the character of this transistor Q2 will become low.
+[06:52] Or you can say that the output of the circuit will become low. And as the same voltage is also
+[06:59] applied to the base of this transistor Q1. So this transistor Q1 will also become off.
+[07:05] And due to that, it will act as an open circuit. That means once again, the circuit will come back
+[07:11] into the stable state. And the time for which it remains in this unstable state depends on the
+[07:18] value of this capacitor and the resistor R2. So let's say the time for which it remains in this
+[07:25] unstable state is equal to T1. So now, let us find the expression of this time T1 in terms of the
+[07:32] RC time constant. And to find that, let us write down the general expression of the capacitor
+[07:38] charging. So the voltage across the capacitor VC of T can be given as VC of infinite plus VC of 0
+[07:50] minus VC of infinite times e to the power of minus Td by RC. Now, as I said earlier,
+[07:59] the output goes into the unstable state whenever the Q1 becomes on and the Q2 goes off.
+[08:06] But before that, the voltage across the capacitor is equal to VCC minus VBE. But after that,
+[08:14] the capacitor starts charging in the reverse direction. So we can say that the initial voltage
+[08:19] across the capacitor or the VC of 0 is equal to minus of VCC minus VBE. And in the unstable
+[08:29] state, when this Q1 becomes on, then the capacitor starts charging towards the voltage VCC.
+[08:35] That means VC of infinite is equal to VCC. That means if the capacitor charges fully,
+[08:42] then it will get charged up to the voltage VCC. But here, we are interested in finding the time T1
+[08:50] when the capacitor voltage reaches the 0.7 volt. Because at that voltage, there will be a transition
+[08:56] in the output. And once again, at that time, the output will come back into the stable state.
+[09:03] So let's say at time T is equal to T1, the voltage across the capacitor that is the VC of T1
+[09:11] is equal to VBE. So at time T is equal to T1, if we write this expression, then it will be
+[09:19] equal to voltage VBE is equal to VC of infinite plus VC of 0 minus VC of infinite times e to the
+[09:30] power of minus T1 divided by RC. Now here, the VC of infinite is equal to VCC, while the VC of 0
+[09:40] is equal to VBE minus VCC. And here, this RC time constant is equal to R2 times C.
+[09:50] That means we can say that the voltage VBE is equal to voltage VCC plus
+[09:58] voltage VBE minus VCC minus VCC times e to the power minus T1 divided by R2 times C.
+[10:09] Or we can say that e to the power of minus T1 divided by R2 times C is equal to voltage VBE minus
+[10:19] VCC divided by voltage VBE minus 2 VCC. Now here, for this circuit to work, the voltage VCC
+[10:29] should be much larger than the voltage VBE. And usually that is the case in the circuit.
+[10:35] So we can neglect this term voltage VBE and we can write this expression as e to the power of
+[10:40] minus T1 divided by R2 times C is equal to minus VCC divided by minus 2 VCC. That is equal to
+[10:50] 1 by 2. Or if we take the natural log on both sides, then we can write it as
+[10:56] this time T1 is equal to minus R2 times C times natural log of 1 by 2. That is equal to
+[11:06] R2 times C times natural log of 2. Or we can say that it is equal to 0.693 times
+[11:14] R2 times C. That means time T1 is equal to 0.693 times R2 times C. That means once we apply
+[11:27] this trigger pulse, then this is the time T1 for which the circuit will go into the unstable state.
+[11:34] And here, the voltage in the unstable state will depend on the value of this Rc to end the R1.
+[11:42] So, if we want the value of output voltage close to VCC, then the value of R1 should be at
+[11:48] least 10 times higher than the Rc to because when the circuit operates in the unstable state,
+[11:56] then this transistor Q1 is on. And for a moment, if we neglect this voltage VBE,
+[12:02] then the character voltage Vc can be found by applying the voltage divider rule.
+[12:08] Or for more precise value, we can apply the KVL in this loop. And by applying the KVL,
+[12:15] we can find the voltage at this node. So, in short, to get the output voltage very close to
+[12:22] VCC, the value of R1 should be at least 10 times higher than the Rc to. So, anyway,
+[12:29] I hope in this video you understood how the monostable multivariator can be designed using the VJT.
+[12:36] So, if you have any question or suggestion, do let me know here in the comments section below.
+[12:41] If you like this video, hit the like button and subscribe to the channel for more such videos.

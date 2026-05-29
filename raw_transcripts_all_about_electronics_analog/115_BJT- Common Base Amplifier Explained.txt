@@ -1,0 +1,187 @@
+Title: BJT- Common Base Amplifier Explained
+URL: https://www.youtube.com/watch?v=MckBbhfxdkk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:16] So in this video, we will learn about the common base amplifier.
+[00:21] So if you have followed the last couple of videos on the BJT, then we have discussed
+[00:25] about the common emitter and the common collector amplifier.
+[00:29] So similarly, now let us talk about the common base amplifier and let us find out the different
+[00:35] amplifier characteristics like the voltage gain, the input and the output impedance.
+[00:41] So without directly jumping on the actual circuit of the common base amplifier, let me
+[00:45] start with the very elementary circuit and then step by step we will see the actual circuit.
+[00:51] So this is the very basic circuit of the common base amplifier.
+[00:56] So here this AC input signal is applied at the emitter terminal while the output is measured
+[01:02] at the collector terminal.
+[01:04] And for a moment let us assume that some DC biasing voltage is already applied at the
+[01:09] base terminal.
+[01:11] So for the AC signals, this DC voltage source is will act as a zero.
+[01:17] That means now this base terminal will act as a AC ground.
+[01:22] That means now if you see the input signal is applied between the emitter and the ground
+[01:27] terminal or effectively between the emitter and the base terminal.
+[01:31] Similarly, the output is measured between the collector and the ground terminal or effectively
+[01:37] between the collector and the base terminal.
+[01:40] That means in this configuration the base terminal is common between the input and the output
+[01:45] side.
+[01:47] And that is why this amplifier configuration is known as the common base amplifier.
+[01:52] Now normally when we connect the input signal then we apply it through the coupling capacitor
+[01:58] right because through the coupling capacitor we can isolate the AC and the DC signals.
+[02:04] So if we connect the input signal as shown in the figure then let us see what happens.
+[02:10] So when we apply the input signal in this fashion then we know that for the DC signals
+[02:15] this coupling capacitor will act as an open circuit right.
+[02:19] So because of that there won't be any path for the biasing current because here the
+[02:24] emitter terminal will act as an open circuit.
+[02:27] So because of that there won't be any bias current and there won't be any output signal.
+[02:33] That means there has to be some path for the biasing current.
+[02:37] So let us provide the path for the biasing current and let us connect the input signal
+[02:41] in this fashion and let us see whether this circuit will work or not.
+[02:46] Now in this circuit although there is a path for the DC biasing current but for the AC
+[02:51] signal this coupling capacitor will act as a short circuit and because of that here the
+[02:56] input signal will also get grounded and due to that we will not get any output signal.
+[03:02] So it shows that if we want to couple the input signal then there has to have some series
+[03:07] resistor at the emitter terminal.
+[03:10] So this is the proper way to couple the input signal at the emitter terminal.
+[03:15] Now so far we have assumed that there is some biasing voltage which is already applied
+[03:20] at the base terminal but now let us see how to bias this base terminal.
+[03:25] So for the biasing we can apply some fixed biasing voltage via the base resistor or even
+[03:31] we can use the voltage divider bias and first of all let us discuss this circuit where
+[03:38] the base terminal is biased to the fixed voltage via the base resistor.
+[03:43] So here our aim is to find the different amplifier characteristics like the voltage gain, the
+[03:48] input and the output impedance and we know that for that we need to do the small signal
+[03:54] analysis of the given circuit.
+[03:57] So for the small signal analysis or for the AC analysis we will consider all the DC sources
+[04:02] in the circuit as zero and we will replace the coupling capacitors by the short circuit
+[04:08] and then after we will replace the BJT by the small signal model.
+[04:13] So if you see over here this emitter resistor is connected between the emitter and the
+[04:18] ground terminal.
+[04:20] So in the equivalent circuit it can be shown like this.
+[04:24] Now here this input signal is also applied between the emitter and the ground terminal.
+[04:30] And if you see this base resistor Rb then it is connected between the base and the ground
+[04:34] terminal while this resistor RC is connected between the collector and the ground terminal.
+[04:41] So this is the AC equivalent circuit of the common base amplifier and using this circuit
+[04:47] let us find out the voltage gain, the input impedance and the output impedance and first
+[04:53] of all let us find out the voltage gain.
+[04:56] So here this current is the correct current right.
+[05:00] So we can say that this output voltage V out is equal to minus IC times RC or we can
+[05:08] say that it is equal to minus GM times V pi times RC.
+[05:16] So here to find the voltage gain or the V out divided by V in we need to find the expression
+[05:21] of the V pi in terms of the input voltage.
+[05:25] Now if you see over here this resistor Rp and the RB are connected in the series connection
+[05:32] and that series connection is connected in parallel with the input signal.
+[05:37] So from this we can say that this voltage V pi is equal to minus V in times Rp divided
+[05:45] by Rp plus Rb because here the polarity of the voltage V pi is opposite to the input
+[05:54] voltage right.
+[05:56] So now let us put this value of V pi in the earlier expression that means voltage V out
+[06:03] is equal to minus GM times V pi times RC or we can say that it is equal to minus GM
+[06:12] times RC times minus V in times Rp divided by Rp plus Rb that means V out is equal to GM
+[06:28] times Rp times RC times V in divided by Rp plus Rb.
+[06:39] Now here this GM times Rp is nothing but the beta right because Rp is equal to beta
+[06:46] divided by GM.
+[06:48] So from this we can say that voltage V out divided by V in or the voltage gain is equal
+[06:54] to beta times RC divided by Rp plus RB and if we divide the entire expression by the beta
+[07:05] then we can say that this voltage gain is equal to RC divided by Rp divided by beta plus
+[07:14] RB divided by beta and this Rp divided by beta is equal to 1 over GM that means this voltage
+[07:22] gain is equal to RC divided by 1 over GM plus RB divided by beta.
+[07:32] But if this base resistor RB is zero in that case this voltage gain is equal to RC divided
+[07:39] by 1 over GM.
+[07:42] So it indicates that if there is any resistor between the base and the ground terminal then
+[07:48] it will get divided by the factor of beta and it will get added with a 1 over GM in
+[07:52] the denominator.
+[07:55] So this is the expression of the voltage gain and if you see over here then there is a
+[08:00] no negative sign which indicates that the input and the output signals are in the same
+[08:05] phase and here if this base resistor RB is zero in that case this voltage gain is same
+[08:12] as the common emitter amplifier that is equal to GM times RC.
+[08:18] But because of this base resistor the voltage gain reduces.
+[08:22] So at the later part of the video we will see that how we can nullify the effect of this
+[08:26] base resistor and how we can improve the voltage gain.
+[08:31] Alright so similarly now let us find out the output impedance.
+[08:36] So the output impedance is the Thavinance Equine impedance which is seen from the output
+[08:41] side and for that we will consider all the independent sources in the circuit as zero
+[08:47] that means we will consider this input voltage source V in as the zero that means we can
+[08:53] replace this input voltage source by the short circuit.
+[08:57] So once this input voltage source gets short circuited then this emitter resistor will
+[09:01] also get short circuited.
+[09:04] Also if you see over here this series connection of the RP and the RB are also connected in parallel
+[09:10] to the input voltage source.
+[09:13] That means once the input signal gets short circuited then this two resistors will also get
+[09:18] short circuited.
+[09:20] And with that the voltage V Pi will also become zero that means this dependent current
+[09:26] source will also act as an open circuit.
+[09:29] That means now if you see the Thavinance Equine resistance from the output side then it
+[09:34] is equal to RC or you can say that the output impedance is equal to RC.
+[09:42] So similarly now let us find out the input impedance.
+[09:47] So if V in is the input signal and the I in is the input current then the ratio of this
+[09:53] input signal to the input current will give us the input impedance.
+[09:58] And to find that let us apply the KC equation at this node.
+[10:03] So here this current is the base current while this current is the collector current.
+[10:10] And here let us assume that the current which is flowing through this resistor R E is
+[10:14] equal to I E dash.
+[10:17] So if we apply the KCL then we can write current I in plus I B plus I C is equal to I E
+[10:25] dash.
+[10:27] Now here this current I B is equal to V Pi divided by R Pi right.
+[10:32] That means we can write this expression as current I in plus V Pi divided by R Pi plus
+[10:41] GM times V Pi is equal to V in divided by R E. So this I C is equal to GM times V Pi while
+[10:50] this current I E dash is equal to V in divided by R E right.
+[10:55] That means from this we can say that current I in is equal to V in divided by R E minus
+[11:03] GM times V Pi minus V Pi divided by R Pi.
+[11:09] That means current I in is equal to V in divided by R E minus V Pi times 1 divided by R
+[11:19] Pi plus GM.
+[11:21] Now we know that this R Pi is equal to beta divided by GM.
+[11:28] That means 1 over R Pi is equal to GM divided by beta and definitely it will be much less
+[11:35] than the GM.
+[11:37] That means here we can neglect this term.
+[11:41] So neglecting this term we can write this current as I in is equal to V in divided by R E
+[11:49] minus V Pi times GM.
+[11:53] So here we need to find the expression of the V Pi in terms of the input signal.
+[12:00] And earlier as we have seen this voltage V Pi can be given as minus V in times R Pi
+[12:07] divided by R Pi plus R B. So let us put the value of V Pi in this expression.
+[12:16] That means current I in is equal to V in divided by R E plus V in times GM times R Pi divided
+[12:29] by R Pi plus R B. Now we know that this GM times R Pi is equal to beta.
+[12:38] That means current I in is equal to V in divided by R E plus V in times beta divided by R
+[12:48] Pi plus R B. That means current I in divided by V in that is the 1 over input impedance
+[12:57] is equal to 1 divided by R E plus 1 divided by R Pi divided by beta plus R B divided by
+[13:07] beta. So here basically we have divided the entire expression by the beta.
+[13:13] So from this we can say that 1 over input impedance is equal to 1 divided by R E plus 1
+[13:21] divided by 1 over GM plus R B divided by beta because this R Pi divided by beta is equal
+[13:30] to 1 over GM. So from this we can say that this input impedance is the parallel combination
+[13:37] of R E and the 1 over GM plus R B divided by beta. And if this base resistor R B is 0 in
+[13:47] that case this input impedance is the parallel combination of R E and the 1 over GM. So in
+[13:57] this way we got the expressions of the voltage gain the input impedance and the output impedance
+[14:03] of this common base amplifier. Now instead of this fixed bias if the base is biased using
+[14:10] the voltage divider then the equivalent circuit can be drawn like this. So here this
+[14:17] Thavinance Equivalent Voltage V T H can be given as R 2 divided by R 1 plus R 2 times V
+[14:24] C C while this Thavinance Equivalent Resistance is the parallel combination of R 1 and the
+[14:30] R 2. So now if you see this circuit then it looks similar to the fixed bias circuit and
+[14:38] for this circuit the expressions of the voltage gain the input and the output impedance will
+[14:43] also remain almost same. But here the resistor R B will get replaced by the R T H that means
+[14:51] now the voltage gain is equal to R C divided by 1 over GM plus R T H divided by beta. Similarly
+[15:03] the input impedance is the parallel combination of R E and the 1 over GM plus R T H divided
+[15:12] by beta while the output impedance is equal to R C. So as you can see because of this base
+[15:21] resistor between the base and the ground terminal the voltage gain reduces and we can
+[15:27] improve the voltage gain by connecting the bypass capacitor between the base and the ground
+[15:32] terminal. So for the AC signal this capacitor will act as a short circuit and because of that
+[15:39] the base terminal will get grounded. That means using this bypass capacitor we can improve
+[15:45] the voltage gain. Now here the value of the capacitor should be selected in such a way that
+[15:50] at the operating frequency it will act as a short circuit. Now so far we have seen that
+[15:57] if there is any resistor between the base and the ground terminal that it will appear as R
+[16:02] divided by beta in the voltage gain as well as the input impedance expression. That means in
+[16:08] these expressions it will get connected in series with the 1 over GM. So if we want to nullify
+[16:15] the effect of this term then this R divided by beta should be much less than 1 over GM.
+[16:22] In this case the reactance divided by beta should be much less than 1 over GM. So practically
+[16:31] this XC divided by beta should be at least 1 by 20 times 1 over GM. So if this condition
+[16:40] gets satisfied then we can assume that at the operating frequency this capacitor acts as a short
+[16:46] circuit. So while selecting the value of the capacitor this criteria should be kept in the mind.
+[16:54] So if we use this bypass capacitor then the input impedance of this common base amplifier can
+[16:59] be given as 1 over GM in parallel with R e. Now usually the value of R e is much greater than 1 over GM.
+[17:11] So because of that we can say that the input impedance is approximately equal to 1 over GM.
+[17:17] That means for this common base amplifier the input impedance is very low. So the question arises
+[17:24] what is the use of such amplifier when the input impedance is very low? Because normally we say that
+[17:30] the input impedance of the amplifier should be high right? Well at the high frequencies this
+[17:37] amplifier can be used for the impedance matching with the transmission lines. Because for this transmission
+[17:43] the characteristic impedance is in the range of tens of ohms. So that is one such application
+[17:49] where this low input impedance amplifier can be actually used. So that's it for this video and I
+[17:56] hope in this video you understood about the common base amplifier. So we will take some examples
+[18:02] based on this common base amplifier on our second channel. So do subscribe to that channel also
+[18:07] to get the regular update about the various quiz. So if you have any question or suggestion
+[18:13] do let me know here in the comment section below. If you like this video hit the like button
+[18:17] and subscribe to the channel for more such videos.

@@ -1,0 +1,2284 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Feedback Amplifiers | Part-1 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=a8p0d3-b3Lg
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome back to the Creatrix
+[00:11] YouTube channel, Lakshya Batch 2.0 for Analog Electronics.
+[00:17] And as we promised that today we are going to start the discussion on a new topic, that
+[00:26] is going to be the feedback amplifier.
+[00:29] So today we are going to start a new chapter, which we are going to finish tomorrow.
+[00:34] Feedback amplifier, you will get two sessions on this, one today and one tomorrow.
+[00:38] After this, our last topic will be left, that is going to be oscillators, okay?
+[00:44] So these are the last two topics in your Gate syllabus.
+[00:48] So let's start today's discussion.
+[00:50] Are you ready everyone?
+[00:52] Before starting the session quickly, mark your attendance once, by hitting the like button.
+[00:58] It feels good when you mark your attendance.
+[01:01] And share it everywhere, if you have announced it by putting the video link, that the session
+[01:06] is now live, so that all the children can attend this session live.
+[01:11] Let's start today's discussion then, let's go.
+[01:14] So the thing is, what is the feedback amplifier?
+[01:18] Look, till now we have been reading the amplifiers, okay?
+[01:21] Our feedback has been discussed a little bit.
+[01:24] Remember, when I read BJT's common emitter amplifier, I told you that the RE resistance
+[01:31] works as a negative feedback, which increases the stability of the Q point, but at the
+[01:37] same time, your gain also decreases.
+[01:40] But in general, whatever we have seen most of the amplifiers, they were without feedback.
+[01:45] They were without feedback.
+[01:48] So what does feedback amplifier mean?
+[01:50] For example, when you read control systems, there is a forward path in the control system
+[01:55] and one is your feedback path, right?
+[01:58] For example, the gain of the forward path is G, the gain of the feedback path is H.
+[02:02] So there you take out the closed loop transfer function.
+[02:06] In the same way, the feedback amplifier is there.
+[02:09] Here, there is an amplifier in the forward path and one is our feedback network, which
+[02:16] is connected from the output to the input.
+[02:19] So this feedback network carries this signal from the output to the input.
+[02:26] Now to pick up the signal from the output, what does our sampler think of picking up the signal?
+[02:33] The work of sampler is that either to sample the voltage from the output, i.e. to pick up
+[02:39] the value of the output, or to pick up the current of the output.
+[02:45] Either it will pick up the voltage of the output, or it will pick up the current of the output.
+[02:51] Who will do sampler?
+[02:53] And who will give this?
+[02:55] The sampler will pick up the signal and give feedback to the network.
+[02:58] Now as you put a summing element in the control system, where you subtract a
+[03:04] reference input and the feedback one, the same element is the comparator and mixer.
+[03:12] What is the work of comparator and mixer?
+[03:15] The work of this is to mix the signal from the supply and the signal from the feedback.
+[03:22] If these two are subtracted, it will be called as a negative feedback.
+[03:26] If these two are added, it will be called as a positive feedback.
+[03:30] So what does this feedback element do?
+[03:33] It takes the output voltage or current from the sampler and then gives the feedback network
+[03:40] either voltage or current, which we need, depending upon the feedback.
+[03:48] It can give us voltage, it can give us current.
+[03:51] It can also take voltage in the input and it can take current as well.
+[03:56] Did you understand?
+[03:58] So what happens in feedback amplifier?
+[04:01] Sampler picks up the voltage or current from the output, gives the feedback network,
+[04:06] it also gives current or voltage in the output, which gives the mixer,
+[04:11] the mixer mixes the signal from the supply and the signal from the feedback,
+[04:16] then it provides the signal to the amplifier.
+[04:20] So understand this, when you read the control system, you don't pay much attention to the summing element,
+[04:26] you don't pay much attention to the pickup point, but here we have given the name to them too.
+[04:31] Comparator and mixer, and from where the signal is being picked up,
+[04:35] we have given the name to the circuit, sampler.
+[04:38] What is the name of sampler?
+[04:40] And what will be the nature of our feedback?
+[04:42] Means what will be the name of the feedback?
+[04:45] It depends on the comparator and sampler.
+[04:49] That is, what did you get from the output, V0 or I0?
+[04:53] And what did you finally give, VF or IF?
+[04:57] According to this, nature of the feedback is decided.
+[05:01] I will talk about this, don't worry.
+[05:04] But understand what I am saying, nature of feedback depends on two things,
+[05:08] which quantity you pick up from the output, V0 or I0,
+[05:12] and which quantity gives the comparator, VF or IF.
+[05:17] And then what I said, source and feedback signal,
+[05:21] if it is added, it will be called positive feedback,
+[05:24] if the signal of source and feedback is subtracted,
+[05:27] it will be called as a negative feedback.
+[05:30] It is shining.
+[05:32] Now the thing is, why negative feedback is used?
+[05:35] As I told you in opamp, to stabilize the voltage gain.
+[05:40] Do you remember?
+[05:44] Similar to opamp, that its open loop gain was very high,
+[05:49] so we had to stabilize it.
+[05:52] We had to get a nominal value.
+[05:55] So we used negative feedback there.
+[05:59] Remember, you were putting feedback in its inverting terminal.
+[06:03] What happened to it? Its linear region increased,
+[06:06] saturation was avoided.
+[06:08] To increase the bandwidth, you know,
+[06:12] as the gain is reduced,
+[06:15] the bandwidth increases.
+[06:21] To increase the input impedance,
+[06:24] we have to increase the input impedance
+[06:28] for voltage amplifier.
+[06:31] Remember, I had told you four types of amplifiers in opamp,
+[06:35] voltage amplifier, current amplifier,
+[06:38] trans-resistance amplifier, trans-conductance amplifier.
+[06:43] So in this, in voltage amplifier,
+[06:46] high input impedance is required.
+[06:49] That too comes from feedback.
+[06:51] How does it happen? I will derive it today.
+[06:53] To reduce the output impedance, again,
+[06:56] for the case of voltage amplifier,
+[06:59] you need at least output impedance.
+[07:02] At least.
+[07:04] So who do you do that with?
+[07:06] You can do that with a feedback network.
+[07:09] To reduce noise.
+[07:11] You read this in the control system too.
+[07:13] There is a topic in the control system.
+[07:16] Negative feedback characteristic.
+[07:18] Remember, there is a topic in the control system.
+[07:21] Negative feedback characteristic.
+[07:23] Where we read that the effect of disturbance
+[07:27] is reduced due to negative feedback.
+[07:31] We study this thing.
+[07:35] Okay? Just a minute.
+[07:41] Okay?
+[07:55] Okay.
+[07:57] So to reduce noise,
+[07:59] who do we use? Negative feedback.
+[08:03] Yes, there was less noise from the unity feedback.
+[08:06] It is not necessary.
+[08:07] Jagannath, I think you are mistaken.
+[08:10] You will take any type of feedback.
+[08:12] There is negative feedback.
+[08:14] Whether it is unity or non-unity,
+[08:16] the effect of disturbance is reduced.
+[08:18] The effect of noise is reduced.
+[08:20] In the control system, you say the effect of noise
+[08:22] is reduced by a factor of 1 plus gh.
+[08:25] So whatever the disturbance is,
+[08:27] the value that reaches the output
+[08:29] reaches d by 1 plus gh.
+[08:33] So it is not that you have to keep 1 only.
+[08:36] If the h is not equal to 1,
+[08:38] then the effect of disturbance will be reduced.
+[08:41] Okay?
+[08:43] As I have told you,
+[08:44] the nature of feedback depends on two things.
+[08:47] The sampler, the sampling circuit,
+[08:50] what is it taking from the output?
+[08:52] Is it taking V0 or I0?
+[08:54] And secondly,
+[08:55] what is the feedback network providing
+[08:57] to the mixer network?
+[08:59] VF or IF?
+[09:01] So let's talk about the sampling circuit first.
+[09:03] What is the purpose of this?
+[09:05] Its purpose is to sample the output
+[09:07] and connect it to the feedback network.
+[09:10] Now there are two types of sampling.
+[09:13] The first is shunt sampling
+[09:15] or you can say voltage sampling.
+[09:18] What do we call here?
+[09:23] Signal
+[09:25] input to
+[09:28] feedback network
+[09:33] is V0.
+[09:36] The signal you gave to the feedback network
+[09:39] is V0.
+[09:41] So in the parallel of the output,
+[09:44] you put the sampler.
+[09:46] In the parallel of the output,
+[09:48] or in the shunt,
+[09:50] you picked up the voltage from there.
+[09:53] Do you understand?
+[09:54] Who are you picking up?
+[09:56] You are picking up the voltage.
+[09:58] So you are putting it on the shunt.
+[10:00] That is V0.
+[10:02] See, this feedback network
+[10:04] can give two things.
+[10:05] Either it will give current
+[10:09] or it will give current
+[10:11] or it will give voltage.
+[10:13] So this ratio
+[10:15] of the feedback network
+[10:17] output and input
+[10:19] is called as beta.
+[10:21] Okay?
+[10:22] So beta can have two things here.
+[10:24] Either IF by V0
+[10:27] which will be its unit
+[10:29] Siemens or Mu.
+[10:31] Or it can be beta.
+[10:33] VF by V0
+[10:35] in which case it will be unitless.
+[10:40] Either its unit will be Mu
+[10:42] or it will be your unitless.
+[10:45] Okay?
+[10:47] Depending upon the feedback network
+[10:49] what are you taking?
+[10:50] IF or you are taking
+[10:52] V0.
+[10:53] But what does shunt sampling mean?
+[10:56] You are picking up the voltage
+[10:58] from the output.
+[10:59] So can you call it shunt sampling?
+[11:01] Or what can you call it?
+[11:03] Voltage sampling.
+[11:05] Next is current sampling
+[11:08] or series sampling.
+[11:10] What does this mean?
+[11:14] Sampler
+[11:19] picks
+[11:22] I0
+[11:24] and feeds to the
+[11:30] current
+[11:33] feedback network.
+[11:42] Okay?
+[11:43] You pick up I0
+[11:45] from the output
+[11:46] and put it in the feedback network.
+[11:48] So see
+[11:49] here the current from the load
+[11:51] to the current from the load
+[11:53] is I0
+[11:54] and the same current
+[11:56] is going into your feedback network.
+[11:58] So if you want to put the same current
+[12:00] in the feedback
+[12:02] then the feedback will have to be
+[12:04] connected to the output
+[12:06] so what did you call it?
+[12:07] Series sampling.
+[12:09] Now again my children
+[12:11] when it comes to the feedback factor
+[12:14] when you talk about the feedback factor
+[12:16] here
+[12:18] then you will say that
+[12:19] there can be two possible
+[12:21] possible outputs of the feedback network.
+[12:23] One is current and one is voltage.
+[12:25] Correct?
+[12:27] Either current or voltage
+[12:31] then you will say if I0 is IF
+[12:37] then this unit less will come.
+[12:42] If you take the current
+[12:44] from the feedback network
+[12:46] but if you take the voltage
+[12:51] then its unit will come
+[12:53] sorry, it will come
+[12:56] if you take the voltage
+[12:58] from the circuit.
+[13:00] Is this clear?
+[13:01] So it is important
+[13:03] to take out the feedback factor.
+[13:05] It is also important for us
+[13:07] to determine the beta
+[13:09] in case of a feedback amplifier.
+[13:11] For that we need to know
+[13:13] that what is the
+[13:15] feedback network
+[13:17] in the output
+[13:19] and which parameter
+[13:21] is taking it on input.
+[13:23] Input means
+[13:25] which parameter is sampling
+[13:27] you.
+[13:29] So what happened here?
+[13:31] Sampler is connected
+[13:33] in series with output.
+[13:35] Sampler is not
+[13:37] any resistance or anything.
+[13:39] Sampler means
+[13:41] only connection.
+[13:43] Don't think of sampler
+[13:45] as a network.
+[13:49] We have shown that in the block diagram
+[13:51] there is no sampler.
+[13:53] But sampler is not a network.
+[13:55] It is only a connection.
+[13:57] In the same way the comparator
+[13:59] mixer is not your
+[14:01] device.
+[14:03] There is only one connection here.
+[14:05] What will be the
+[14:07] circuit of the beta?
+[14:09] The part of the beta
+[14:11] the part of the feedback
+[14:13] there will be a resistive network
+[14:15] there will be resistances.
+[14:17] But sampler and comparator
+[14:19] is not an actual
+[14:21] network.
+[14:23] Next is mixing.
+[14:25] There can be two types of mixing
+[14:27] series mixing
+[14:29] and voltage mixing.
+[14:33] Series mixing and
+[14:35] voltage mixing.
+[14:39] What does this mean?
+[14:41] This means
+[14:43] the
+[14:47] output of
+[14:49] feedback
+[14:51] network
+[14:57] is connected
+[14:59] is connected
+[15:01] is connected
+[15:03] in series with
+[15:05] source.
+[15:07] You have joined in the series of source.
+[15:09] You have joined in the series of source.
+[15:11] What is happening
+[15:13] in the series of source?
+[15:15] This amplifier
+[15:17] the input voltage
+[15:19] inside the amplifier
+[15:21] V i
+[15:23] this voltage V i
+[15:25] will be combined with these two voltages.
+[15:27] It will be if you put
+[15:29] KVL
+[15:31] KVL will be
+[15:33] minus V f
+[15:35] plus V s
+[15:37] V i is equal to zero.
+[15:39] I put KVL in this loop.
+[15:41] What is V i from here?
+[15:43] V s
+[15:45] minus V f.
+[15:47] Here you see
+[15:49] the source and feedback
+[15:51] voltages are mixed.
+[15:53] That is your voltage
+[15:55] mixing.
+[15:57] In the input voltage of amplifier
+[15:59] source and feedback
+[16:01] both the voltages are
+[16:03] called as the voltage mixing.
+[16:05] That is called as the
+[16:07] voltage mixing.
+[16:09] Is this clear?
+[16:11] Is this clear to me?
+[16:13] What is the meaning of
+[16:15] voltage mixing?
+[16:17] So
+[16:19] if the input voltage of amplifier
+[16:21] source and feedback
+[16:23] are seen there.
+[16:25] It will be voltage mixing.
+[16:31] There is no problem in this.
+[16:33] So you can see here
+[16:35] that the comparator
+[16:37] or mixer
+[16:39] has not done anything.
+[16:41] It has just connected the voltage
+[16:43] in this circuit.
+[16:45] There is no resistance or network
+[16:47] only it has
+[16:49] injected the feedback voltage
+[16:51] in this loop.
+[16:53] And because KVL is
+[16:55] mixed in series
+[16:57] then you can call it series mixing.
+[16:59] Because KVL is
+[17:01] applied in a series
+[17:03] network.
+[17:05] Next is shunt mixing.
+[17:07] What is in shunt mixing?
+[17:11] Shunt mixing.
+[17:13] Or you can call it current mixing.
+[17:19] What is here?
+[17:23] The output of the feedback
+[17:25] network.
+[17:27] The output of
+[17:33] feedback network
+[17:41] is connected
+[17:47] parallel to the source.
+[17:57] So what will happen with this?
+[17:59] If you connect it parallel
+[18:01] then you will say
+[18:03] current input
+[18:07] of amplifier.
+[18:11] Now don't think
+[18:13] how to question it.
+[18:15] First you learn
+[18:17] I will tell you how to question
+[18:19] and how to solve it.
+[18:21] But from now on don't think
+[18:23] how to question it.
+[18:25] We are establishing it fundamentally.
+[18:27] Current input to the amplifier
+[18:29] is mix
+[18:31] of
+[18:33] source and feedback
+[18:35] current.
+[18:49] This will happen.
+[18:51] Now if you look at
+[18:53] the input
+[18:57] current
+[18:59] to the amplifier is
+[19:01] source minus feedback.
+[19:03] So what we have said
+[19:05] current mixing.
+[19:07] Do you understand?
+[19:11] So it is very easy to
+[19:13] find out mixing.
+[19:15] If the feedback value
+[19:17] in the voltage of amplifier
+[19:19] or the voltage
+[19:21] is coming from VL
+[19:23] then voltage mixing.
+[19:25] If the current of amplifier
+[19:27] is coming from KCL
+[19:29] then it is your current mixing.
+[19:31] Do you understand?
+[19:33] So finding mixing is not very difficult.
+[19:35] And on this topic
+[19:37] most of the questions are made
+[19:39] that you have to
+[19:41] identify sampling and mixing.
+[19:43] So when I am identifying mixing
+[19:45] I do not care
+[19:47] whether you took V or I
+[19:49] was looking at this connection
+[19:51] that how is mixing here.
+[19:53] Because the input voltage
+[19:55] of amplifier
+[19:57] is equal to
+[19:59] simple vs.
+[20:01] There is no feedback term in this.
+[20:05] So there is no mixing in voltage.
+[20:07] Mixing is in this
+[20:09] current.
+[20:11] And here
+[20:13] the input current
+[20:15] of amplifier
+[20:17] is equal to source.
+[20:19] So here there is no mixing
+[20:21] in current.
+[20:23] Okay?
+[20:25] Is this clear?
+[20:27] Yes.
+[20:29] Why feedback current direction is not
+[20:31] opposite? Rohit tell me one thing.
+[20:33] Son without seeing this network
+[20:35] you can tell the direction of current.
+[20:37] Without seeing this amplifier
+[20:39] how inverting is non inverting.
+[20:41] Without seeing this feedback
+[20:43] where is it connected
+[20:45] will current direction even matter?
+[20:47] It is a matter of thinking.
+[20:49] Without even seeing the
+[20:51] circuit can we tell the current direction?
+[20:53] No.
+[20:55] Why did we show current here?
+[20:57] Because I had to show negative feedback.
+[20:59] I had to show this.
+[21:01] The current of feedback from source
+[21:03] is getting subtracted.
+[21:05] If I want to show negative feedback
+[21:07] then I will have to show subtraction.
+[21:09] Come on.
+[21:11] It has been clear till here that
+[21:13] you can take I0 or V0
+[21:15] from output.
+[21:17] And there are two types of mixing.
+[21:19] You can mix
+[21:21] VF or IF on input side.
+[21:23] Tell me this is clear.
+[21:25] There are two possibilities of mixing
+[21:27] and two possibilities of sampling.
+[21:29] Are you clear?
+[21:31] Come on.
+[21:33] Now I will talk about
+[21:35] what you talk about in control system.
+[21:37] That is close loop gain
+[21:39] of an amplifier.
+[21:41] Close loop gain
+[21:43] of an amplifier.
+[21:45] I am saying here that there are two possibilities.
+[21:47] One is minus
+[21:49] and one is plus.
+[21:51] If V0 is coming on input side
+[21:53] then VF is
+[21:55] beta V0.
+[21:57] And this is
+[21:59] the input of amplifier, VI.
+[22:03] So VI is
+[22:05] VS minus
+[22:07] or plus
+[22:09] beta V0.
+[22:11] And what is V0?
+[22:13] V0 is AVI
+[22:17] which is A VS
+[22:21] minus plus A beta V0.
+[22:23] Now if you take this V0 term
+[22:25] to the left
+[22:27] then it will be minus
+[22:29] instead of minus.
+[22:35] A VS
+[22:37] So close the loop
+[22:39] again
+[22:41] close the loop
+[22:43] again
+[22:47] V0 by
+[22:49] VS
+[22:51] is A
+[22:53] upon
+[22:55] 1 plus minus
+[22:57] A beta.
+[22:59] Okay?
+[23:01] So if there is negative feedback
+[23:03] then G upon
+[23:05] plus or 1 plus minus
+[23:07] G H is written here.
+[23:09] Instead of G, the gain of amplifier
+[23:11] is A and instead of H
+[23:13] the feedback factor is beta.
+[23:15] So if you are taking
+[23:17] negative feedback
+[23:19] negative feedback
+[23:21] then
+[23:23] the close loop gain
+[23:25] will be A by
+[23:27] 1 plus A beta.
+[23:31] And if you are taking
+[23:33] negative feedback
+[23:39] then the close loop gain
+[23:45] will be A.
+[23:47] But as I told you
+[23:49] we will only use
+[23:51] negative feedback.
+[23:53] Where will we use positive feedback?
+[23:55] Where will we use positive feedback?
+[23:57] In oscillators.
+[23:59] Okay?
+[24:01] We will discuss the next topic
+[24:03] after the feedback amplifier.
+[24:05] We will discuss it again
+[24:07] about positive feedback.
+[24:09] And here we define
+[24:11] another term.
+[24:13] Close loop gain
+[24:15] is called loop gain.
+[24:17] Loop gain is A beta.
+[24:19] If you talk about loop gain
+[24:21] in the control system
+[24:23] that will be G H.
+[24:25] That will be G H.
+[24:27] Tell me, did you understand this much?
+[24:29] Tell me quickly,
+[24:31] did you understand this much?
+[24:43] Okay?
+[24:45] So if we see
+[24:49] negative feedback
+[24:51] then
+[24:55] the close loop gain
+[24:57] or feedback gain
+[25:03] is less than A.
+[25:05] So you know
+[25:07] you write feedback like this.
+[25:11] Feedback
+[25:13] if you want to show in db
+[25:15] how much impact it has on feedback
+[25:17] then you write like this
+[25:19] 20 log
+[25:21] AF by A
+[25:23] like this.
+[25:25] So what will happen?
+[25:27] 20 log AF by A
+[25:29] will be
+[25:31] 1 upon 1 plus A beta
+[25:37] This is done.
+[25:39] Positive feedback.
+[25:47] Positive feedback.
+[25:55] This will be greater than A.
+[25:57] Okay?
+[25:59] So when you take it out in db
+[26:01] when you take it out in db
+[26:05] what will you write?
+[26:07] 20 log
+[26:11] mod of AF by A
+[26:25] Okay?
+[26:27] And this negative feedback
+[26:29] is known as
+[26:31] degenerative feedback
+[26:33] degenerative means
+[26:35] degenerative means
+[26:37] the feedback here
+[26:39] cancels the source signal
+[26:41] and it is called
+[26:43] regenerative feedback
+[26:45] because the feedback
+[26:47] is regenerating the source signal
+[26:49] and supporting it
+[26:51] which means it is increasing.
+[26:53] So positive feedback is also called
+[26:55] as the regenerative feedback
+[26:57] whereas negative feedback
+[26:59] is called as the degenerative feedback.
+[27:01] The significance of the name is clear.
+[27:03] So if the feedback is given in db
+[27:05] then think
+[27:07] what is the meaning of db?
+[27:09] Okay?
+[27:11] What is the meaning of db?
+[27:13] Tell me. Is it clear here?
+[27:15] Tell me quickly.
+[27:17] Now in the control system
+[27:19] you read one more topic
+[27:21] that topic is called
+[27:23] sensitivity
+[27:25] 1 by 1 plus A beta
+[27:27] is not the feedback gain
+[27:29] What does it mean?
+[27:31] Loop gain is A beta
+[27:33] and A by 1 plus A beta is called as
+[27:35] the total feedback gain
+[27:37] So 1 by 1 plus A beta
+[27:39] has a feedback factor in one way.
+[27:41] The effect of feedback
+[27:43] which is reduced by the factor
+[27:45] is 1 by 1 plus A beta
+[27:47] that the gain is multiplied
+[27:49] by the closed loop.
+[27:51] Will you say the feedback gain?
+[27:53] Come on.
+[27:55] Did we talk about positive negative feedback?
+[27:59] We have talked about it here.
+[28:07] So let's remove this.
+[28:09] Okay?
+[28:11] Now see as we read
+[28:13] in the control system
+[28:15] the gain sensitivity
+[28:17] we also read in the analog
+[28:19] the gain sensitivity
+[28:21] What is the meaning of the gain sensitivity?
+[28:23] How much the change
+[28:25] is going on in your closed loop gain
+[28:27] with respect to the change in the
+[28:29] open loop gain?
+[28:31] That is to say
+[28:33] due to the temperature
+[28:35] due to any external factor
+[28:37] if the open loop gain is changing
+[28:39] then how much
+[28:41] the change will be in the
+[28:43] closed loop gain?
+[28:45] Aayush tell me one thing
+[28:47] all the classes have been attended
+[28:49] this is the lecture of Chauhan
+[28:51] Did you see the last 53 lectures?
+[28:53] Tell me
+[28:55] if you have seen the last 53 lectures
+[28:57] then you will be able to connect the things
+[28:59] and directly in the 54th lecture
+[29:01] which is one of the last 5 lectures
+[29:03] of this subject
+[29:05] if you come directly into it
+[29:07] after completing the content of 80-85 hours
+[29:09] then how will you connect
+[29:11] all the things?
+[29:13] There is a strange expectation
+[29:15] that after 80-85 hours
+[29:17] in the syllabus of 100 hours
+[29:19] you will understand
+[29:21] the climax of the movie
+[29:23] now listen to me
+[29:25] what happens many times
+[29:27] the open loop gain
+[29:29] changes the amplifier
+[29:31] due to some external factors
+[29:33] like the temperature
+[29:35] it might be due to the supply voltage
+[29:37] it might be due to any factor
+[29:39] now if the closed loop gain
+[29:41] starts changing because of this
+[29:43] then that is not good
+[29:45] what we want is external factors
+[29:47] affect the open loop gain
+[29:49] however much
+[29:51] it should not change the
+[29:53] closed loop gain of the amplifier
+[29:55] closed loop gain should not change
+[29:57] that is why we say
+[29:59] sensitivity should be as low
+[30:01] as possible
+[30:03] so that even if the open loop
+[30:05] gain changes
+[30:07] then the closed loop gain
+[30:09] will remain the same
+[30:11] tell me clearly
+[30:13] in the same control system
+[30:15] sensitivity
+[30:17] is as small as it is
+[30:19] so that even if the forward path
+[30:21] changes the gain
+[30:23] the closed loop gain
+[30:25] or the closed loop transfer function
+[30:27] does not change
+[30:29] there also you read the sensitivity
+[30:31] of the transfer function T
+[30:33] with respect to G
+[30:35] tell me whether it is read or not
+[30:37] read it quickly
+[30:39] read the sensitivity there
+[30:41] in the control system
+[30:43] now I will show you
+[30:45] the negative feedback
+[30:47] A upon
+[30:51] 1 plus A beta
+[30:53] so we say
+[30:55] del AF
+[30:57] by del A
+[30:59] partial derivative
+[31:01] because AF is dependent on beta
+[31:03] so if I differentiate in respect to A
+[31:05] then it will be partial derivative
+[31:07] so how much will come
+[31:09] first the derivative of the numerator
+[31:11] N2 denominator
+[31:13] minus the numerator
+[31:15] into the denominator
+[31:17] derivative
+[31:19] divided by
+[31:21] the square of the denominator
+[31:23] quotient rule
+[31:25] A beta to A beta
+[31:27] so what is this
+[31:29] 1 by 1 plus
+[31:31] the square of A beta
+[31:33] this came
+[31:35] now my brother if you talk about
+[31:37] sensitivity
+[31:39] sensitivity
+[31:41] we define it like this
+[31:43] we say
+[31:45] fractional change
+[31:47] fractional change
+[31:51] in AF
+[31:55] okay
+[31:59] divided by
+[32:03] fractional change in A
+[32:13] so
+[32:15] D
+[32:17] AF
+[32:19] by AF
+[32:21] divided by
+[32:23] D A by
+[32:25] A
+[32:27] means this happened A by AF
+[32:31] N2 D AF
+[32:33] by DA
+[32:37] what happened A by AF
+[32:39] A by AF is 1 plus A beta
+[32:43] and this happened 1 by 1
+[32:45] plus A beta's
+[32:47] square
+[32:49] so what is this
+[32:51] 1 by 1 plus A beta
+[32:53] now understand
+[32:55] what I am saying
+[32:57] if there is no
+[32:59] feedback
+[33:01] then no
+[33:03] feedback means beta must
+[33:05] be zero
+[33:07] no value is coming from output
+[33:09] to input
+[33:11] what will happen
+[33:13] 1 by 1 plus A beta
+[33:15] if you see
+[33:17] it will become 1
+[33:19] that is
+[33:21] amount of change
+[33:23] or amount of variation
+[33:27] in open loop gain
+[33:29] is same as
+[33:31] amount of variation in
+[33:33] closed loop gain
+[33:35] amount of change
+[33:37] in open loop gain
+[33:39] amount of change in
+[33:41] closed loop gain
+[33:43] logically
+[33:45] if there is no feedback
+[33:47] then closed loop open loop is same
+[33:49] if there is no feedback
+[33:51] then closed loop open loop is same
+[33:53] then any change in
+[33:55] open loop is same
+[33:57] and if
+[33:59] you are using
+[34:01] negative feedback
+[34:03] then A beta
+[34:05] beta is
+[34:07] non-zero
+[34:09] so sensitivity
+[34:11] 1 by 1 plus A beta
+[34:13] do you know
+[34:15] what this means
+[34:17] this means
+[34:19] that
+[34:21] percentage change
+[34:23] in A F
+[34:25] means closed loop gain
+[34:27] is equal to
+[34:29] percentage change in A
+[34:33] value
+[34:35] divided by
+[34:37] 1 plus A beta
+[34:39] so what this means
+[34:41] that variation
+[34:43] in A F
+[34:45] reduces
+[34:47] this is good
+[34:49] if external factor
+[34:51] change in open loop gain
+[34:53] then change in closed loop gain
+[34:55] will be less
+[34:57] which is really good
+[34:59] this is good thing
+[35:01] because closed loop gain
+[35:03] will be less
+[35:05] as I explain in control system
+[35:07] as you can control TV channels
+[35:09] from TV
+[35:11] so I want
+[35:13] how the response will be
+[35:15] when you press the button
+[35:17] that should be
+[35:19] independent of the battery
+[35:21] battery is new
+[35:23] battery is old
+[35:25] how many years have passed
+[35:27] so these are
+[35:29] these external factors
+[35:31] do not matter
+[35:33] on its performance
+[35:35] it has to
+[35:37] consistently perform
+[35:39] same thing here
+[35:41] we are saying that
+[35:43] no matter how many external factors
+[35:45] change in closed loop gain
+[35:47] should be equal
+[35:49] so what we have to use
+[35:51] negative feedback
+[35:53] here we say
+[35:55] D sensitivity
+[35:57] what we call
+[35:59] D
+[36:01] sensitivity
+[36:05] we call this D
+[36:07] 1 by S
+[36:09] that is 1 plus
+[36:11] A beta
+[36:13] sensitivity is coming
+[36:15] 1 by 1 plus A beta
+[36:17] what is this? 1 plus A beta
+[36:19] so what we call here
+[36:21] S
+[36:23] should be
+[36:25] as low as possible
+[36:35] or
+[36:37] D
+[36:39] should be
+[36:41] as high as possible
+[36:43] now see what you are saying
+[36:45] 1 by 1 plus A beta
+[36:47] we call sensitivity
+[36:49] not feedback gain
+[36:51] ok
+[36:53] that is your sensitivity
+[36:55] tell me
+[36:57] did you feel the sensitivity
+[36:59] did you feel the sensitivity
+[37:01] what is the quantity
+[37:03] why is it defined
+[37:05] tell me quickly
+[37:21] clear
+[37:27] clear
+[37:29] now see negative feedback
+[37:31] there are many more effects
+[37:33] on amplifier
+[37:35] first is frequency distortion
+[37:37] frequency distortion
+[37:39] means
+[37:41] gain of the amplifier
+[37:43] will depend on your frequency
+[37:45] as you saw
+[37:47] the frequency response of BJT
+[37:49] as you saw
+[37:51] the frequency response of MOSFET
+[37:53] as you saw the frequency response of opamp
+[37:55] so there you saw
+[37:57] that the gain changes with the frequency
+[37:59] that is called as
+[38:01] the frequency distortion
+[38:05] gain
+[38:07] as a
+[38:09] function of frequency
+[38:11] now my brother
+[38:13] you also know
+[38:15] what was happening
+[38:17] in low frequency response
+[38:19] why was the gain less
+[38:21] that was due to
+[38:23] some capacitors
+[38:25] what was the capacitor
+[38:27] coupling capacitor and bypass capacitor
+[38:29] and why was the gain less
+[38:31] on high frequency
+[38:33] due to internal capacitances
+[38:35] and the load capacitances
+[38:39] your high frequency was less
+[38:41] so basically
+[38:43] to reduce the gain
+[38:45] whether it was low or high frequency
+[38:47] was responsible
+[38:49] for your capacitors
+[38:51] i.e. reactive
+[38:53] element
+[38:55] which is the frequency dependent
+[38:57] so
+[38:59] when we are putting negative feedback
+[39:01] and there we are putting
+[39:03] feedback network
+[39:05] whose gain is beta
+[39:07] the network in feedback
+[39:09] whose gain is beta
+[39:11] if this purely resistive network
+[39:13] if there was no capacitance inside
+[39:15] then this gain
+[39:17] will minimize the effect of frequency
+[39:19] so
+[39:21] the effect of frequency on the gain
+[39:23] will be less
+[39:25] do you understand
+[39:27] what we are saying
+[39:29] that in any
+[39:33] amplifier
+[39:37] gain
+[39:39] varies with
+[39:41] frequency
+[39:47] due to
+[39:51] coupling
+[39:55] bypass
+[39:57] and internal
+[39:59] capacitors
+[40:11] etc.
+[40:15] if beta
+[40:19] is realized
+[40:21] using
+[40:23] resistive
+[40:25] network
+[40:33] we can minimize
+[40:37] variation
+[40:39] of gain
+[40:45] with frequency
+[40:53] do you understand
+[40:55] so you can minimize the variation of gain
+[40:57] with frequency
+[40:59] but what is the condition
+[41:01] the condition is that beta
+[41:03] will have to be made with resistive network
+[41:05] if there is no capacitance inside
+[41:07] if there is no capacitance inside
+[41:09] then it will be very difficult
+[41:11] if there is no capacitance inside
+[41:13] then it will be difficult
+[41:15] because
+[41:17] then your beta is also
+[41:19] frequency dependent
+[41:21] so your overall gain
+[41:23] will also be dependent on frequency
+[41:25] okay
+[41:27] come on
+[41:29] next is
+[41:31] non-linear distortion
+[41:33] what is non-linear distortion
+[41:35] the circuit
+[41:37] the amplifier
+[41:39] there are certain
+[41:41] internal capacitance
+[41:43] will remain in A
+[41:45] we are not changing the amplifier
+[41:47] we are just saying
+[41:49] that the open loop gain of amplifier
+[41:51] will vary with frequency
+[41:53] but the
+[41:55] A upon 1 plus A beta
+[41:57] will have less variation
+[41:59] due to frequency
+[42:01] you just proved
+[42:03] that the less
+[42:05] the change in A
+[42:07] in AF
+[42:09] when you took out sensitivity
+[42:11] you just proved that
+[42:13] the change in A may be due to frequency
+[42:15] but the change in AF
+[42:17] that will be less
+[42:19] by a factor of
+[42:21] 1 plus A beta
+[42:23] so we said that
+[42:25] due to frequency in close loop
+[42:27] the variation will be less
+[42:29] as compared to the open loop gain
+[42:31] there will be a 10% change
+[42:33] due to frequency
+[42:35] and in your close loop
+[42:37] there will be only 1% change
+[42:39] which is good
+[42:41] because ideally I want that
+[42:43] the amplifier
+[42:45] will give equal frequencies
+[42:47] the amplifier
+[42:49] should not do the filter work
+[42:51] that is, the amplifier should not discriminate
+[42:53] that I will let any frequency
+[42:55] go ahead
+[42:57] and I will stop anyone
+[42:59] to increase the frequency
+[43:01] regardless of the frequency
+[43:03] its work is to increase
+[43:05] the amplitude
+[43:07] but if it does that
+[43:09] the amplitude of any frequency
+[43:11] gives a gain of 10
+[43:13] gives a gain of 8
+[43:15] gives a gain of 5
+[43:17] then it is not a good amplifier
+[43:19] as soon as you think
+[43:21] what happens
+[43:23] what happens in loudspeakers
+[43:25] what happens in amplifiers
+[43:27] our voice
+[43:29] goes into an amplifier
+[43:31] it increases its amplitude
+[43:33] then sends it in loudspeaker
+[43:35] and makes a high voice from there
+[43:37] in speakers, like in
+[43:39] offline classes
+[43:41] there is such a voice
+[43:43] now pay attention to this
+[43:45] if it is
+[43:47] that my voice
+[43:49] has a different frequency
+[43:51] if your voice has a different frequency
+[43:53] then if my brother
+[43:55] has a different frequency
+[43:57] and my voice is getting
+[43:59] more amplification
+[44:01] your voice is getting less amplification
+[44:03] tomorrow if there is a girl
+[44:05] her frequency will be different
+[44:07] so if her voice gets
+[44:09] a different amplification
+[44:11] then that is not good
+[44:13] what was the work of amplifier
+[44:15] that whatever we are saying in mic
+[44:17] amplify it and put it on speaker
+[44:19] this was the work of it
+[44:21] so if it is giving a different gain
+[44:23] then it is not good
+[44:25] now understand Aman
+[44:27] tell the rest of the people
+[44:29] the first condition of this course
+[44:31] was that any video will be public
+[44:33] for 24 hours
+[44:35] so you had to follow this course live
+[44:37] now you people do not come
+[44:39] to force you to do live
+[44:41] and private videos
+[44:43] what to do tell
+[44:45] the same saying happens that
+[44:47] the ghost of ghosts do not listen to words
+[44:49] let's go
+[44:51] what am I saying
+[44:53] that many times in network
+[44:55] in amplifier
+[44:57] your non-linear element is coming
+[44:59] the distortion
+[45:01] the gain variation
+[45:03] we are reducing it
+[45:05] by a factor of
+[45:07] 1 plus
+[45:09] A beta
+[45:11] we are reducing it
+[45:13] by a factor of
+[45:15] 1 plus A beta
+[45:17] now let's talk about noise
+[45:19] what is noise
+[45:21] noise is a signal
+[45:23] which is an unwanted effect
+[45:25] which
+[45:27] degrades the quality of our main signal
+[45:29] degrades the quality of our main signal
+[45:31] reduces the quality of our main signal
+[45:33] we call such a signal
+[45:35] as if I am taking a lecture
+[45:37] in a classroom
+[45:39] I am studying in a classroom
+[45:41] or if I am taking an online class
+[45:43] then I want to deliver some content
+[45:45] I want to convey some knowledge to you
+[45:47] now believe me
+[45:49] if my construction is going on
+[45:51] in the flat of Ajub-Aju
+[45:53] there is drilling there
+[45:55] the sound that is going in my ears
+[45:57] that is distracting me
+[45:59] it is stopping me from doing my work
+[46:01] the content I want to deliver
+[46:03] it is not letting me deliver content
+[46:05] that is producing an
+[46:07] unwanted effect
+[46:09] that is distracting me from the work
+[46:11] that I am doing
+[46:13] that is called as a noise
+[46:15] that is called as a noise
+[46:17] that is called as a noise
+[46:19] so what happens
+[46:21] due to
+[46:23] due to
+[46:25] negative feedback
+[46:31] due to
+[46:33] negative feedback
+[46:37] noise signal
+[46:39] signal
+[46:43] at output
+[46:51] is reduced
+[46:55] by a factor of
+[47:01] 1 plus a
+[47:03] beta
+[47:05] it is reduced by a factor
+[47:07] of 1 plus
+[47:09] a beta
+[47:11] okay
+[47:13] so the signal of noise is also reduced
+[47:15] by 1 plus a beta
+[47:17] how sir
+[47:19] see
+[47:21] what happens at
+[47:23] output voltage
+[47:25] a v i
+[47:27] plus the signal of noise
+[47:29] plus
+[47:31] any other disturbance
+[47:33] take a
+[47:35] disturbance or take both
+[47:37] things
+[47:39] or call it distortion
+[47:43] call it distortion
+[47:47] now what you will say here
+[47:49] v i
+[47:51] this source signal
+[47:53] minus feedback signal
+[47:55] correct
+[47:57] now
+[48:03] now this feedback signal
+[48:05] is
+[48:07] beta v naught
+[48:09] okay
+[48:11] beta v naught
+[48:13] now if you bring it here
+[48:15] then v naught
+[48:17] if you collect v naught
+[48:19] on one side
+[48:21] it is a v s
+[48:23] plus v n
+[48:25] plus v d
+[48:27] so v naught
+[48:29] see
+[48:31] this a v s
+[48:33] is also below it
+[48:35] 1 plus a beta
+[48:37] and this noise or distortion
+[48:39] is also reduced
+[48:41] by a factor of 1 plus a beta
+[48:43] understand
+[48:45] it goes to output
+[48:47] but it is also reduced
+[48:49] by a factor of 1 plus a beta
+[48:51] okay
+[48:53] so if you think
+[48:55] if it was an open loop
+[48:57] then v naught would be a v s
+[48:59] v naught would be a v s
+[49:01] but now the output
+[49:03] a v s is getting
+[49:05] a little less
+[49:07] okay it is getting
+[49:09] a little less
+[49:11] it is coming out to be a v s
+[49:13] upon 1 plus a beta
+[49:15] so what it did
+[49:17] the output was reduced
+[49:19] then the noise and distortion
+[49:21] was reduced by a factor of 1 plus a beta
+[49:23] tell me
+[49:25] is it clear
+[49:27] is it clear to everyone
+[49:29] so it is clear
+[49:31] 1 plus a beta has a big impact
+[49:43] okay
+[49:45] now the thing about bandwidth
+[49:47] we know
+[49:49] we know that the gain is decreasing
+[49:51] because of this
+[49:53] our bandwidth should increase
+[49:55] if my gain is reduced
+[49:57] then my bandwidth
+[49:59] should increase
+[50:01] Deepankar
+[50:03] we never believe in noise
+[50:05] we believe that the noise system
+[50:07] is going additionally
+[50:09] or reaching the output
+[50:11] it might be generated internally inside the system
+[50:13] it might be coming
+[50:15] from outside the system
+[50:17] but it is not coming at the input
+[50:19] okay
+[50:21] so see
+[50:23] what we are saying here
+[50:27] if our gain is reduced
+[50:29] this closed loop system
+[50:31] this open loop system
+[50:33] so when the gain is decreasing
+[50:35] then the bandwidth should increase
+[50:37] okay
+[50:39] but I also have to know
+[50:41] okay I also have to know
+[50:43] how much the bandwidth will change
+[50:45] how much the bandwidth
+[50:47] will change
+[50:49] okay
+[50:51] do you understand this
+[50:53] who are the small fl and small fh
+[50:55] belong to
+[50:57] the open loop system
+[51:01] and who are the capital fl and capital fh
+[51:03] belong to
+[51:05] the closed loop system
+[51:09] okay
+[51:11] now let's talk about
+[51:13] low frequency gain
+[51:27] so we say
+[51:31] A low frequency
+[51:33] is A by
+[51:37] 1 plus J
+[51:39] 1 minus
+[51:41] 1 minus
+[51:43] actually
+[51:45] low frequency response
+[51:47] is like a high pass filter
+[51:49] is like a high pass filter
+[51:51] so this comes
+[51:53] 1 minus J fl by f
+[51:55] I had already told you
+[51:57] low frequency response
+[51:59] resembles a high pass filter
+[52:01] so 1 minus J fl by f
+[52:03] now
+[52:05] feedback gain
+[52:07] if you want to take out
+[52:09] feedback gain
+[52:11] then you will say
+[52:13] A L F
+[52:15] by
+[52:17] 1 plus A L F
+[52:19] beta
+[52:21] you will say this
+[52:23] you will take out the closed loop gain
+[52:25] now if you put the value of A L F
+[52:27] A by
+[52:29] 1 minus J
+[52:33] fl by f
+[52:35] 1
+[52:37] plus
+[52:39] A beta
+[52:43] 1 minus J
+[52:45] fl by f
+[52:47] now if you take
+[52:49] my child's LCM
+[53:05] this will happen
+[53:09] now from below
+[53:11] take out 1 plus A beta
+[53:13] common
+[53:15] from below you take out
+[53:17] 1 plus A beta common
+[53:19] so what happened here
+[53:21] here
+[53:33] so you can say this
+[53:35] A F
+[53:37] upon
+[53:43] so this also
+[53:45] resembles our low frequency response
+[53:47] in which
+[53:49] fl should be
+[53:51] small fl by
+[53:53] 1 plus A beta
+[53:57] so small fl should be less
+[53:59] look
+[54:01] small fl minus capital
+[54:03] fl is coming down
+[54:05] okay tell me this
+[54:07] this is clear
+[54:09] small fl minus
+[54:11] capital fl
+[54:13] part
+[54:15] capital fl part
+[54:17] now if we talk about
+[54:19] high frequency response
+[54:23] high frequency
+[54:27] response
+[54:35] okay
+[54:37] the response of high frequency
+[54:39] my child
+[54:41] how is it
+[54:43] it is like a low pass filter
+[54:45] A upon
+[54:49] 1 plus J
+[54:51] f by fh
+[54:53] now when you convert this
+[54:55] in a closed loop
+[54:57] you will say
+[54:59] we need a closed loop version
+[55:01] so what I will say
+[55:03] A H F
+[55:05] upon 1 plus A H F
+[55:07] into beta
+[55:09] this is what I will say
+[55:11] now you will write
+[55:13] A by
+[55:15] 1 plus J
+[55:17] F by fh
+[55:21] 1 plus A beta
+[55:25] by 1 plus J
+[55:27] F by fh
+[55:31] now if you take LCM
+[55:33] then what will be left
+[55:35] A by
+[55:37] 1 plus J
+[55:39] F by fh
+[55:41] plus A beta
+[55:43] okay
+[55:45] again what you will say
+[55:47] 1 plus A beta
+[55:49] take common
+[55:53] you will say
+[55:55] 1 plus A beta
+[55:57] take common
+[55:59] so that the feedback gain
+[56:01] A F
+[56:03] and what will be left
+[56:09] A beta
+[56:19] so this is the feedback gain
+[56:21] by
+[56:23] 1 plus J
+[56:25] F by
+[56:27] capital F H
+[56:29] sorry
+[56:35] now here the capital
+[56:37] F H is the upper cutoff
+[56:39] frequency
+[56:41] of the closed loop
+[56:43] so this is done
+[56:45] and bandwidth
+[56:47] will be
+[56:49] F H minus
+[56:51] F L which is
+[56:53] approximately F H
+[56:57] so you can say
+[56:59] gain if 1 plus
+[57:01] A beta reduced
+[57:03] then bandwidth 1 plus A beta
+[57:05] okay
+[57:07] therefore
+[57:09] gain reduces
+[57:15] by a factor
+[57:21] of
+[57:23] 1 plus A beta
+[57:29] bandwidth
+[57:31] increases
+[57:35] by
+[57:37] a factor of
+[57:39] 1 plus
+[57:41] A beta
+[57:43] so till now what you have to understand
+[57:45] is only this much
+[57:57] okay bro Aman
+[57:59] these things you should
+[58:01] keep in mind
+[58:03] what is the impact on the frequencies
+[58:05] what is the impact on the gain
+[58:07] noise
+[58:09] and distortion
+[58:11] these are also reduced
+[58:13] by a factor of 1 plus
+[58:15] A beta
+[58:17] and this also works
+[58:19] in the control system
+[58:21] there just do G H
+[58:23] instead of A beta
+[58:25] okay
+[58:27] so this topic is
+[58:29] related to the control system
+[58:31] related to the control system
+[58:33] so
+[58:35] if you prepare it well in one place
+[58:37] then it works in both the places
+[58:39] you should know the conversion
+[58:41] that A means G
+[58:43] and beta means H
+[58:45] means
+[58:47] the factor with which the gain is reduced
+[58:49] will decrease from the same factor
+[58:51] and F H will increase
+[58:53] okay bro
+[58:55] there is no problem here
+[58:57] no problem
+[58:59] now when we talk about
+[59:01] feedback topology
+[59:03] I have told you that there are two types of sampling
+[59:05] on the output
+[59:07] either series or shunt
+[59:09] if you take V naught from the output
+[59:11] that is shunt and if you take I naught from the output
+[59:13] then series
+[59:15] and there can be two types of mixing on the input
+[59:17] either in the terms of VF
+[59:19] i.e. series
+[59:21] or in the terms of IEF
+[59:23] now there are two possibilities on the output
+[59:25] there are two possibilities on the input
+[59:27] their combination creates
+[59:29] four types of feedback topology
+[59:31] whose name I have given here
+[59:33] understand naming
+[59:35] like
+[59:37] I write like this
+[59:39] series
+[59:41] shunt
+[59:45] this means
+[59:47] this is telling
+[59:49] mixing
+[59:51] and this is telling sampling
+[59:57] okay
+[59:59] so the meaning of shunt sampling
+[60:01] what did you take from the output
+[60:03] what did you take from the output
+[60:05] voltage
+[60:07] what did you take from the output
+[60:09] voltage
+[60:11] so the second name
+[60:13] is upside down
+[60:15] this is sampling
+[60:19] and this is mixing
+[60:23] understand
+[60:25] you can call it as voltage series
+[60:27] if you give this name
+[60:29] then this is mixing
+[60:31] and this is sampling
+[60:33] okay
+[60:35] did you understand this
+[60:37] if you are writing voltage series
+[60:39] this means the sampling is done
+[60:41] of voltage and how is the mixing
+[60:43] of series
+[60:45] now see shunt series
+[60:47] i.e. the mixing is done
+[60:49] in shunt current is being mixed
+[60:51] and in series
+[60:53] what did you take from i.0
+[60:55] what did you mix
+[60:57] what did you take from i.f
+[60:59] i.0
+[61:01] means current
+[61:03] and mixing is done
+[61:05] i.f
+[61:07] okay
+[61:09] series series
+[61:11] you have mixed in series
+[61:13] i.e. here the mixing is done
+[61:15] of vf
+[61:17] and you have sampled from series
+[61:19] what will you take from series
+[61:21] i.0
+[61:23] so you can call it as current series
+[61:25] i.0 you took
+[61:27] and mixed vf in series
+[61:29] see shunt
+[61:31] shunt is mixing
+[61:33] shunt mixing
+[61:35] means you are mixing i.f
+[61:37] okay
+[61:39] and there is sampling in shunt
+[61:41] sampling means what value
+[61:43] will you take from shunt
+[61:45] v.0
+[61:47] so voltage shunt
+[61:49] voltage shunt
+[61:51] v.0
+[61:53] the naming is clear
+[61:55] what is the naming
+[61:57] if you write series shunt
+[61:59] shunt series like this
+[62:01] then you are telling mixing
+[62:03] then sampling
+[62:05] if you write in the terms of voltage
+[62:07] then you are telling sampling and then mixing
+[62:09] is the name clear
+[62:11] will you recognize the name
+[62:13] will you recognize the name
+[62:15] come on
+[62:17] now i am making one out of this
+[62:19] i will make the other three
+[62:21] voltage series negative feedback
+[62:23] voltage series
+[62:25] means
+[62:29] sampled
+[62:31] v.0
+[62:33] and here series
+[62:35] means mixed
+[62:37] vf
+[62:39] i.e. here the feedback
+[62:41] factor
+[62:47] beta
+[62:49] vf
+[62:51] beta
+[62:53] vf by v.0
+[62:55] which is
+[62:57] unitless
+[62:59] and
+[63:01] this amplifier
+[63:03] this is the input
+[63:05] this is the output
+[63:07] this is the input
+[63:09] this is the output
+[63:11] this is the voltage amplifier
+[63:13] so you understand
+[63:15] there are four types of amplifiers
+[63:17] and there are four types of feedback
+[63:19] because
+[63:21] for every amplifier
+[63:23] one type of feedback is defined
+[63:25] do you understand
+[63:27] one type of feedback for every amplifier
+[63:29] like in voltage amplifier
+[63:31] what is the feedback
+[63:33] voltage series negative feedback
+[63:35] or what else can you call it
+[63:37] series
+[63:39] shunt feedback
+[63:41] series mixing
+[63:43] and shunt sampling
+[63:45] do you understand
+[63:47] that what is the significance
+[63:49] of four types of feedback
+[63:51] because there are four types of amplifiers
+[63:53] that is why
+[63:55] there are four types of feedback
+[63:57] now listen to me carefully
+[63:59] listen
+[64:03] if
+[64:05] a voltage amplifier
+[64:07] A-V is seen
+[64:09] i have made four types of
+[64:11] circuit
+[64:27] this is your voltage amplifier
+[64:29] circuit type
+[64:41] okay
+[64:43] okay
+[64:49] what is here
+[64:51] A-V-I
+[64:53] A-V-I
+[65:01] R-0
+[65:03] this is R-I
+[65:05] write R-0 in caps
+[65:07] and
+[65:09] this is voltage
+[65:11] V-I
+[65:13] this is the
+[65:15] circuit of voltage amplifier
+[65:25] this is V-0
+[65:27] and this is I-0
+[65:29] and this is I-I
+[65:31] now you see
+[65:33] in this voltage amplifier
+[65:35] what is on the input side
+[65:37] one is V-S
+[65:39] one is V-F
+[65:41] V-F which you can write
+[65:43] beta V-0
+[65:45] and one is R-S
+[65:47] so one is V-S
+[65:49] one is R-S and one is beta V-0
+[65:51] this is what is on the input side
+[65:53] so how do we draw here
+[65:55] see
+[66:01] look
+[66:03] this is V-S
+[66:09] this is R-S
+[66:15] show a dependent source here
+[66:21] and keep its polarity
+[66:23] so that it will be subtracted from V-S
+[66:27] this is your R-I
+[66:33] V-I
+[66:39] A-V-I
+[66:49] this is R-L
+[67:03] this is I-0
+[67:05] ok
+[67:07] now you understand
+[67:09] the feedback is included
+[67:11] in terms of a dependent source
+[67:13] why dependent source?
+[67:15] because the feedback coming on the input
+[67:17] that actually depends on the output
+[67:19] so it will be shown
+[67:21] as a dependent source
+[67:23] so tell me if it is clear or not
+[67:25] tell me
+[67:29] this is simple
+[67:31] what is this?
+[67:37] now what I have to do
+[67:41] I have to solve this circuit
+[67:43] Anshuman
+[67:45] I have no idea how much this year
+[67:47] will be 120
+[67:49] because I don't know
+[67:51] how other people have done
+[67:53] always in any exam
+[67:55] the rank is relative
+[67:57] you bring 120 and the rest are 130
+[67:59] and the rest are around 120
+[68:01] so 120 is a very high number
+[68:03] there is no general trend
+[68:05] to bring so many marks
+[68:11] now see
+[68:13] KVL
+[68:19] in input loop
+[68:23] what you will call V-S
+[68:25] equal to I-I
+[68:27] R-S
+[68:29] plus I-I
+[68:31] R-I
+[68:33] plus
+[68:35] beta V-0
+[68:37] ok
+[68:39] see here I have 2-3 A
+[68:41] what is my aim?
+[68:43] my aim is to
+[68:45] remove the gain of this amplifier
+[68:47] one of its input resistance
+[68:49] and one of its output resistance
+[68:51] is it clear?
+[68:53] one gain
+[68:55] one output resistance
+[68:57] so I have put KVL in input loop
+[68:59] now tell me
+[69:01] how will you write V-0
+[69:03] here
+[69:05] if you write V-0 from here
+[69:07] from output loop
+[69:09] then we will write
+[69:11] A-V-V-I
+[69:13] into R-L
+[69:15] by R-0
+[69:17] plus R-L
+[69:19] is it not?
+[69:21] so this A-V
+[69:23] is R-L
+[69:25] by R-0 plus R-L
+[69:27] remember this gain
+[69:29] I had told you a term
+[69:31] it is called A-V-L
+[69:33] A-V-L is it not?
+[69:35] I am saying A-V-L
+[69:37] so what is V-S
+[69:39] I-I
+[69:41] R-S
+[69:43] plus I-I
+[69:45] R-I
+[69:47] ok
+[69:49] plus beta
+[69:51] beta
+[69:53] A-V-L-V-I
+[69:59] you can write V-I as I-I R-I
+[70:03] you can write V-I as I-I
+[70:05] into R-I
+[70:17] now you see
+[70:19] if you take I-I as common
+[70:21] then what will you get?
+[70:23] see R-S
+[70:25] plus R-I
+[70:27] 1 plus A-V-L
+[70:29] beta
+[70:31] so what I understood from this
+[70:33] R-S is the resistance
+[70:35] of source
+[70:37] and what can I say from here
+[70:39] that overall input resistance
+[70:41] with feedback
+[70:43] input resistance with
+[70:45] feedback
+[70:49] feedback
+[70:51] feedback
+[70:53] feedback
+[70:55] what will it be?
+[70:57] R-I
+[70:59] F
+[71:01] which is R-I
+[71:03] 1 plus A-V-L
+[71:05] beta
+[71:07] ok
+[71:09] 1 plus A-V-L
+[71:11] beta
+[71:13] so you can say
+[71:15] input resistance increases
+[71:17] Remember, I have just written why negative feedback is used to increase the input resistance.
+[71:24] So you increased the input resistance of a voltage amplifier.
+[71:29] It has increased.
+[71:31] Now we have to talk about the output resistance.
+[71:34] See how to do that.
+[71:36] KVL
+[71:40] N output loop.
+[71:44] Without this, I will write a guide for you tomorrow.
+[71:47] How input-output resistance is discussed.
+[71:50] So don't worry, you will know.
+[71:54] We have written A here.
+[71:58] A V then.
+[72:00] I am using A V.
+[72:03] A V here too.
+[72:05] Okay.
+[72:07] V naught is A V V I
+[72:10] minus I naught R naught.
+[72:13] This is it.
+[72:15] Now how much is V I?
+[72:17] You can write V I like this.
+[72:19] V S minus beta V naught.
+[72:22] This is the total voltage source.
+[72:25] And divide it in both the resistances.
+[72:28] You think about this.
+[72:30] In the input loop with two voltage sources.
+[72:33] Look.
+[72:35] Oh.
+[72:37] There are two sources here.
+[72:39] V S and beta V naught.
+[72:41] Both the opposite polarities are subtracting.
+[72:44] And this voltage is divided in R S and R I.
+[72:47] Now what will you say here?
+[72:50] That this is V I.
+[72:54] So V naught is A V
+[72:57] R I
+[72:59] by R S plus R I
+[73:02] into
+[73:05] V S minus beta V naught
+[73:08] minus I naught R naught.
+[73:12] Okay.
+[73:14] Now what will you say to this factor?
+[73:16] A V S.
+[73:28] Okay.
+[73:30] What does A V S mean here?
+[73:32] A V
+[73:34] R I
+[73:36] by R S plus
+[73:38] R I.
+[73:40] Okay.
+[73:44] So here if we collect
+[73:46] the terms of V naught on one side.
+[73:48] A V S
+[73:50] beta
+[73:52] A V S
+[73:54] V S
+[73:56] Okay.
+[73:58] Minus I naught R naught.
+[74:00] Now what is V naught from here?
+[74:02] A V S
+[74:04] over
+[74:06] 1 plus
+[74:08] A V S
+[74:10] beta
+[74:12] V S
+[74:14] minus I naught
+[74:16] R naught
+[74:18] by
+[74:20] 1 plus A V S
+[74:22] beta.
+[74:24] So do you know what happened with this?
+[74:26] R naught F
+[74:28] which is
+[74:30] output resistance with feedback
+[74:40] will come out to be
+[74:42] R naught
+[74:44] 1 plus
+[74:46] A V S
+[74:48] beta.
+[74:50] Sir, how to take out the gain here?
+[74:52] If we want to take out the gain,
+[74:54] how to
+[74:56] take out the gain?
+[74:58] What to do to take out the gain?
+[75:00] You write I naught
+[75:02] V naught by R L.
+[75:04] What to write? I naught by
+[75:06] R L. Then take V naught
+[75:08] to the left and take all the terms of V naught.
+[75:10] Look, let me tell you what to do.
+[75:14] I naught is
+[75:16] V naught by R L.
+[75:18] So you write V naught
+[75:20] like this.
+[75:22] 1 plus
+[75:24] R naught by
+[75:26] R L.
+[75:28] 1 plus
+[75:30] A V S into beta.
+[75:36] Will it come like this?
+[75:44] So the gain will come from here.
+[75:54] 1 plus
+[75:56] A V S into beta.
+[75:58] Take LCM.
+[76:14] This is the gain.
+[76:16] This is your gain.
+[76:18] Is it clear?
+[76:20] Tell me.
+[76:22] But don't pay attention to the gain.
+[76:24] You can take out the gain
+[76:26] by taking A by 1 plus A beta.
+[76:28] But what you have to pay attention to
+[76:30] is the input resistance increased
+[76:32] by a factor of 1 plus
+[76:34] A beta and the output resistance
+[76:36] decreased by a factor of 1 plus
+[76:38] A beta.
+[76:40] Pay attention to these things.
+[76:42] Let's see some questions.
+[76:44] Look quickly.
+[76:46] In a negative feedback amplifier
+[76:48] using voltage series feedback
+[76:50] voltage sampling series mixing.
+[76:52] What will the difference
+[76:54] between R I and R naught?
+[76:56] Let me tell you the difference.
+[76:58] Voltage series.
+[77:00] Listen carefully.
+[77:06] This means
+[77:08] shunt sampling.
+[77:10] Correct.
+[77:16] Listen carefully.
+[77:18] Listen carefully.
+[77:20] And this means series mixing.
+[77:22] Where is the sampling
+[77:24] on the output?
+[77:26] What does this mean?
+[77:28] Shunt at output.
+[77:30] Your shunt connection is on the output.
+[77:32] And the mixing is
+[77:34] on the input.
+[77:36] So series at input.
+[77:38] If there is a shunt connection on the output
+[77:40] if there is a parallel connection
+[77:42] then you can say that R naught will decrease.
+[77:44] And the resistance in the series
+[77:46] increases or decreases.
+[77:48] Do you understand?
+[77:50] How to remove the shunt?
+[77:52] Tell me.
+[77:56] Piyush is less important.
+[77:58] He knows your seniors
+[78:00] and the gatekeepers too.
+[78:02] And he also knows very well that
+[78:04] the less important topics are left by the child.
+[78:06] Then when the child is more important
+[78:08] in your paper
+[78:10] then you advise your juniors that
+[78:12] you should study.
+[78:14] Then you cut the exam.
+[78:16] So as much as it is written
+[78:18] in the syllabus of the gate
+[78:20] you have to study it.
+[78:22] Because if you leave it
+[78:24] then there will be no responsibility.
+[78:26] Then you can't go to your senior's head
+[78:28] and beat him up.
+[78:30] You said leave it.
+[78:32] What will I do? I didn't get it.
+[78:34] What will you take?
+[78:36] Is it not?
+[78:38] So in today's time the paper is not very tough.
+[78:40] But we do pick up such topics
+[78:42] so that they know that the child will come
+[78:44] after skipping.
+[78:46] So they are seeing who is serious and
+[78:48] who is as good as the child.
+[78:50] Look at the next one.
+[78:56] Current controlled current source
+[78:58] has an input impedance of 10 ohm
+[79:00] output impedance 100 kilo ohm.
+[79:02] When this CCCS
+[79:04] is used in a negative feedback
+[79:06] close loop
+[79:08] with a loop gain of 9.
+[79:10] Loop gain is a beta.
+[79:12] How much is the output impedance
+[79:14] coming?
+[79:16] Current controlled current source
+[79:18] try to recognize
+[79:20] what is happening?
+[79:21] There is current on the input.
+[79:23] There is current on the output.
+[79:25] What is happening?
+[79:26] There is current on the input.
+[79:28] And there is current on the output.
+[79:30] So what should I do?
+[79:32] Now put your mind to it.
+[79:34] This is very easy.
+[79:40] Now put your mind to it.
+[79:50] And the feedback amplifier
+[79:52] is a Halwa topic.
+[79:54] The knowledge that should be there
+[79:56] has already happened to you.
+[79:58] Tomorrow you have to learn
+[80:00] how to recognize feedback
+[80:02] by looking at the circuit.
+[80:04] So assume that you have learned
+[80:06] the feedback amplifier 60-70%.
+[80:08] Current controlled current source.
+[80:14] Current amplifier is done
+[80:16] in one way.
+[80:18] Current controlled current source.
+[80:22] Now there is current on the input.
+[80:26] There is current on the input.
+[80:28] Here it has come.
+[80:30] What will be happening here?
+[80:32] Shunt mixing.
+[80:34] Current is also in the output.
+[80:36] I0
+[80:38] So series sampling.
+[80:40] What will be happening?
+[80:44] Series sampling.
+[80:46] Okay.
+[80:48] Now there should be R0 in the series.
+[80:50] So we will say
+[80:52] R0F
+[80:54] is R0
+[80:56] 1 plus A beta.
+[80:58] Now how much was given?
+[81:00] 100.
+[81:02] Now how much was given?
+[81:04] 100 kilo ohm is given.
+[81:06] 1 plus 9
+[81:08] So 1000 kilo ohm
+[81:10] will be D.
+[81:12] Understood?
+[81:14] Clear?
+[81:16] Very good.
+[81:18] Your answer is correct.
+[81:20] And I think Juhi gave the first answer.
+[81:22] 1000 kilo ohm right.
+[81:24] So Juhi is also correct.
+[81:26] See the next one.
+[81:28] An amplifier with negative resistive feedback
+[81:30] has two left half poles in the
+[81:32] open loop transfer function?
+[81:34] This one is the question
+[81:36] of the control system.
+[81:38] That the two poles of the amplifier
+[81:40] are in the left half plane.
+[81:42] So you have to comment on its stability.
+[81:44] Resistive negative feedback.
+[81:46] What does it mean?
+[81:48] Here it means
+[81:50] that
+[81:52] beta
+[81:54] and H
+[81:56] does not
+[81:58] vary with frequency.
+[82:00] It means
+[82:02] that beta
+[82:04] and H
+[82:06] does not
+[82:08] vary with frequency.
+[82:10] It means
+[82:12] that
+[82:20] okay?
+[82:22] There are two left half poles.
+[82:24] That means what is the order of this system?
+[82:26] The order is 2.
+[82:28] What is it?
+[82:30] Will be stable for all frequencies.
+[82:34] See the order of this system
+[82:36] is 2. Actually this question
+[82:38] is yours.
+[82:42] From the polar plot.
+[82:44] It is called the polar plot.
+[82:46] It is called the Nyquist plot.
+[82:48] Type 0 is of order 2.
+[82:50] So this is its
+[82:52] polar plot.
+[82:56] It is called the Nyquist plot.
+[82:58] So the point of minus 1
+[83:00] does not have
+[83:02] N circle.
+[83:12] Minus 1 comma 0 point.
+[83:14] So this means
+[83:16] that N is 0.
+[83:18] Open loop poles
+[83:20] are in the left half.
+[83:22] So what are the poles
+[83:24] coming in the right half?
+[83:26] 0.
+[83:28] So Z is
+[83:30] P minus N.
+[83:32] That is also 0.
+[83:34] So no close loop poles
+[83:36] in RHP.
+[83:38] Okay?
+[83:40] Okay?
+[83:44] So that is why it will be stable at all frequencies.
+[83:46] So this is the question of the control system
+[83:48] rather than the question of analog.
+[83:50] Let's see the next one.
+[83:52] Negative feedback in an amplifier.
+[83:54] What does it do?
+[83:56] Tell me, what does it do?
+[84:06] This type of question can be asked
+[84:08] in the exam.
+[84:10] You understand that
+[84:12] such a question can be asked in MSQ.
+[84:14] By the way, here
+[84:16] there is only one MCQ.
+[84:18] Here the frequency and phase distortion
+[84:20] reduces.
+[84:24] It increases the bandwidth.
+[84:26] And it reduces the noise.
+[84:30] So the other three options are wrong.
+[84:34] See the next one.
+[84:36] Feedback, results in.
+[84:38] You will tell this very easily.
+[84:40] Series, series, feedback, results in.
+[84:42] What did you do?
+[84:44] A, C.
+[84:46] Immediately delete the message.
+[84:48] Read the options carefully.
+[84:50] What will be the series, series, feedback?
+[84:52] Tell me.
+[84:54] There are series in both the places.
+[84:56] So both will increase.
+[84:58] You know in the series, there is an increase.
+[85:00] There is an increase in resistance in the series.
+[85:02] What is the mind of an architect?
+[85:04] There is a series on both the sides.
+[85:06] The impedance increases in the series.
+[85:10] See the next one.
+[85:12] In an amplifier with gain minus 1000 beta
+[85:14] minus 0.1
+[85:16] has a gain change of 20%
+[85:18] due to temperature.
+[85:20] Calculate the change in the gain of the
+[85:22] feedback amplifier.
+[85:24] That is, if there is a 20%
+[85:26] change in the open loop gain,
+[85:28] then how much change will be in the close loop
+[85:30] gain?
+[85:32] 20%.
+[86:02] Tell me the option of 0.198.
+[86:04] What is A?
+[86:06] A?
+[86:08] Very good.
+[86:10] See, what happens here?
+[86:12] It seems to be a form of sensitivity.
+[86:14] When there is a change in the open loop
+[86:16] gain,
+[86:18] then we say
+[86:20] percentage change in A f
+[86:22] is equal to
+[86:24] percentage change in A
+[86:26] is equal to
+[86:28] percentage change in A
+[86:30] over
+[86:32] 1 plus
+[86:34] A beta
+[86:38] This is called 20%.
+[86:42] 1 plus
+[86:44] minus 1000
+[86:46] into minus 0.1
+[86:48] approximately
+[86:50] it will be 20 by 100.
+[86:52] It will be 101.
+[86:54] But approximately
+[86:56] 0.2%.
+[86:58] We were saying that
+[87:00] the advantage is that
+[87:02] there may be more change in the open loop
+[87:04] gain, but there is
+[87:06] very less change in the close loop.
+[87:08] These are the bots.
+[87:10] I ask the team one day
+[87:12] how it happens.
+[87:14] They have keywords.
+[87:16] If they know that
+[87:18] children come to our session
+[87:20] and there is a regular live audience,
+[87:22] they will put some keywords
+[87:24] in the search.
+[87:26] It will automatically search
+[87:28] if there is a session going on on YouTube
+[87:30] and it will start typing in the chat.
+[87:36] Look at this.
+[87:38] How can you fight with automation?
+[87:40] If you are human, you can fight too.
+[87:42] Look at this.
+[87:56] Now tell me the lower and upper cutoff frequency.
+[87:58] I told you the relation today.
+[88:08] Now you are seeing how easy questions are made on this.
+[88:10] Is there anything in this question?
+[88:26] What is coming?
+[88:52] What is coming?
+[88:54] Look.
+[88:56] What will be the capital FL?
+[89:00] It happens like this.
+[89:04] Small FL is 2 kHz.
+[89:10] 1 plus 1000
+[89:12] 10 to 0.01
+[89:16] Almost 10 came down.
+[89:18] 2000 by 11.
+[89:24] 11, 11, 90, 11, 8, 8, 8, 20, 11, 11, 90.
+[89:34] This happened.
+[89:36] If you take 10, it would have been 200.
+[89:38] Then there would have been a lot of difference.
+[89:48] So 20 kHz into 11.
+[89:50] 220 kHz.
+[89:52] Look at the bandwidth.
+[89:54] How big it is.
+[89:56] How high the frequency can go.
+[89:58] So this is what we want.
+[90:00] We can amplify the wide range of frequency.
+[90:04] We can amplify a good wide range of frequency.
+[90:08] Is it clear?
+[90:12] Let's see the next one.
+[90:14] Amplifier circuit has an overall gain of minus 100.
+[90:18] And input resistance, load resistance.
+[90:20] Now he is asking.
+[90:22] Overall voltage gain
+[90:24] of the amplifier.
+[90:28] Input resistance, load resistance.
+[90:30] Overall voltage gain.
+[90:32] Today there is a current gain.
+[90:34] Voltage gain is coming out of you.
+[90:36] Take it out.
+[90:44] Take it out quickly.
+[90:52] Voltage gain is coming out of the current gain.
+[90:54] It is also coming out in dB.
+[91:14] What is it?
+[91:26] See how the voltage gain is taken out.
+[91:30] Current gain
+[91:32] into RL
+[91:34] by RI.
+[91:36] Because I did it like this.
+[91:38] V naught will be I naught RL.
+[91:42] And VI will be IIRI.
+[91:44] With this logic.
+[91:46] So 100
+[91:48] into 1 kilo ohm
+[91:52] by 10 kilo ohm.
+[91:54] 10 came.
+[91:56] 20 log 10
+[92:00] is 20 dB.
+[92:02] It is a very simple question.
+[92:04] C
+[92:06] C will come. 20 dB is very good.
+[92:10] So all these questions are clear.
+[92:12] Now this is your assignment.
+[92:14] You will make it.
+[92:16] Tomorrow we will end this topic.
+[92:18] Amman, taking out in dB.
+[92:20] It does not come minus. Let's take a mod.
+[92:22] Never keep negative in the lock.
+[92:24] Let's always take a mod.
+[92:26] Now here see this link.
+[92:28] You can attempt many PYQs on this.
+[92:32] Almost your syllabus is going to end.
+[92:34] Amman, the power amplifier is not in the gate.
+[92:38] We will do it or not.
+[92:40] You will take the opinion of people.
+[92:42] If you want, the last topic will be the power amplifier.
+[92:44] Okay.
+[92:46] So here you can do gate PYQ by AIR1.
+[92:48] Other than this.
+[92:50] If you join the Anacademy.
+[92:52] There are two options.
+[92:54] Plus and Iconic.
+[92:56] You get top educators.
+[92:58] Study material is available on your entire app.
+[93:00] Test series is included.
+[93:02] Custom doubt solving.
+[93:04] If a new question comes to a child with an iconic doubt.
+[93:06] Then its doubt is answered.
+[93:08] It is printed notes sent at home.
+[93:10] It is given live mentorship.
+[93:12] It is made as a strategy and study plan.
+[93:14] It is made as a strategy and study plan.
+[93:16] It is made as a strategy and study plan.
+[93:18] It is made as a strategy and study plan.
+[93:20] It is made as an interactive audio in the open house session.
+[93:22] It can be talked on audio.
+[93:24] Okay.
+[93:26] Darling, when it happens.
+[93:28] You will tell the public.
+[93:30] What you have to do is to choose a plan on the Anacademy app.
+[93:32] You have to choose a plan on the Anacademy app.
+[93:34] And there you have to apply the Ankit ESC code for maximum discount.
+[93:36] And there you have to apply the Ankit ESC code for maximum discount.
+[93:38] Okay.
+[93:40] And look here.
+[93:42] The children who are preparing for 24.
+[93:44] There is a 15 month subscription available for them.
+[93:46] So they can apply the Ankit ESC code.
+[93:48] They can get maximum discount.
+[93:50] And they can come in my personal guidance.
+[93:52] Okay.
+[93:54] And if you see.
+[93:56] If you see.
+[93:58] Last year we took out 6 ranks in the top 10.
+[94:00] If you also want such a result.
+[94:02] In 23 or 24.
+[94:04] Then you have to join the Anacademy using the code.
+[94:06] Ankit ESC.
+[94:08] Okay.
+[94:10] Now apart from this.
+[94:12] What will happen apart from this.
+[94:14] If you have a financial issue.
+[94:16] You can go for EMI.
+[94:18] There is no interest here.
+[94:20] And this EMI will be approved in 2 hours.
+[94:22] At least it is a paperwork.
+[94:24] And you can decide how much time you have to repay.
+[94:26] But in your family.
+[94:28] Give an example of such a person.
+[94:30] Give an example of such a person.
+[94:32] Because bank gives them EMI.
+[94:34] Okay.
+[94:36] And see.
+[94:38] For 24.
+[94:40] There is a Gurukul batch.
+[94:42] In which Dhande sir is taking analog.
+[94:44] And Gurupal sir is taking your mathematics.
+[94:46] Apart from this.
+[94:48] The same is going on for the children of ESC.
+[94:50] And on the plus.
+[94:52] Our Crash Course.
+[94:54] Rank improvement batch has started.
+[94:56] Where the Maths and Networks started in Electrical.
+[94:58] Rank improvement batch.
+[95:00] Okay.
+[95:02] And apart from this.
+[95:03] For the children of ESC.
+[95:04] ADC, Network and Maths.
+[95:06] These 3 subjects are going on in Crash Course.
+[95:08] This Crash Course.
+[95:09] Your 10th of January.
+[95:10] Will be over.
+[95:12] So the one who wants to revision with us.
+[95:14] He can take subscription of 3 months or 4 months.
+[95:16] Code you know.
+[95:18] If you come to the academy.
+[95:20] Then together we will save.
+[95:22] Okay.
+[95:24] And this is my telegram channel.
+[95:26] So join it.
+[95:28] So that you get the latest.
+[95:30] Updates and notifications.
+[95:32] And what you can do.
+[95:34] For the PDF session.
+[95:36] You can go to the community.
+[95:38] Discover in the community.
+[95:40] I will get there.
+[95:42] And I will get all the PDFs.
+[95:44] So thank you everyone.
+[95:46] Tomorrow we will wind up this topic.
+[95:48] Tomorrow we will start Oscillators.
+[95:50] Okay.
+[95:52] So tomorrow we will meet.

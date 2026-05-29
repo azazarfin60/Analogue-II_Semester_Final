@@ -1,0 +1,80 @@
+Title: MOSFET Biasing Solved Problem | Quiz # 302
+URL: https://www.youtube.com/watch?v=B0vFMZtJD08
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel AllUpOdelectronics.
+[00:10] So in this question, we have been given this MOSFET circuit and for the given circuit, we
+[00:15] have been asked to find the values of the resistor such that this condition gets satisfied.
+[00:21] That means for the chosen values of the resistors, the gate voltage VG should be equal to 5
+[00:26] volt while the drain voltage VD should be equal to 11 volt and the drain current ID which
+[00:32] is flowing through the circuit should be equal to 4 milliampere.
+[00:36] So first of all, the given circuit is the voltage revider biasing circuit and here for the DC
+[00:42] analysis, all this coupling capacitors will act as an open circuit.
+[00:48] Now this MOSFET is the depletion type of MOSFET and for the given MOSFET, we have been
+[00:53] given the values of the IDSS and the VP.
+[00:56] So here, IDSS is equal to 9 milliampere while the pinch of voltage VP is equal to minus
+[01:03] 3 volt and here we have been given that the required drain current ID is equal to 4 milliampere.
+[01:12] Now assuming the MOSFET is operating in the saturation region, we can assume that the
+[01:17] drain current ID can be given by the Schochle's equation that means drain current ID is equal
+[01:23] to IDSS times 1 minus VGS divided by VP whole square.
+[01:31] So here, the drain current ID is equal to 4 milliampere while the IDSS is equal to 9 milliampere.
+[01:39] So we can say that 4 milliampere is equal to 9 times 1 minus VGS divided by minus 3 whole
+[01:47] square.
+[01:48] That means 4 by 9 is equal to 1 plus VGS divided by 3 whole square.
+[01:57] That means 4 by 9 is equal to 1 plus VGS divided by 3 or if you further simplified, then
+[02:07] this VGS will come out as minus 1 volt.
+[02:12] That means here VGS is equal to minus 1 volt and here we have been already given the value
+[02:18] of the gate voltage.
+[02:21] So once we know the value of the VGS, then from the gate voltage, we can find the voltage
+[02:26] VS and using the drain current, we can find the value of the source resistor and likewise,
+[02:33] we can also find the value of the drain resistor.
+[02:37] So this VGS is equal to VG minus VS and here gate voltage VG is equal to 5 volt, right?
+[02:48] That means we can say that voltage VS is equal to 5 volt minus VGS.
+[02:54] That is equal to 5 volt minus minus 1 volt.
+[02:59] That is equal to 6 volt.
+[03:01] That means here, this voltage VS is equal to 6 volt and the current which is flowing
+[03:06] through this source resistor is equal to 4 milliampere that is same as the drain current.
+[03:13] That means here we can say that voltage VS is equal to ID times RS.
+[03:20] That is equal to 4 milliampere times RS and here VS is equal to 6 volt.
+[03:28] That means 6 volt is equal to 4 milliampere times RS.
+[03:34] That means RS is equal to 6 volt divided by 4 milliampere that is equal to 1.5 kilo ohm.
+[03:43] Similarly, let us find the value of the drain resistor.
+[03:47] So here we have been given that this drain voltage VD is equal to 11 volt.
+[03:54] That means from this we can say that here this drain current ID is equal to 15 volt minus
+[04:02] VD divided by RD.
+[04:05] That means RD is equal to 15 volt minus VD divided by ID.
+[04:12] That is equal to 15 volt minus 11 volt divided by 4 milliampere.
+[04:19] That is equal to 1 kilo ohm.
+[04:23] That means here the value of the drain resistor RD is equal to 1 kilo ohm.
+[04:28] While the RS is equal to 1.5 kilo ohm, that means the ratio of this RD and the RS is
+[04:35] equal to 1 kilo ohm divided by 1.5 kilo ohm.
+[04:40] That is equal to 0.667.
+[04:44] So in this way we found the value of the RD and the RS.
+[04:48] Similarly now let us find the value of the R1 and the R2.
+[04:53] So here since the MOSFET is the depletion type of MOSFET.
+[04:57] So here we can assume that this gate current IG is approximately equal to 0.
+[05:02] That means no current is flowing into the gate terminal.
+[05:06] That means through this supply the current is flowing through this resistor R1 and the
+[05:10] R2.
+[05:11] And here we have been given that the current which is flowing through this voltage divider
+[05:16] is equal to 0.05 milliampere.
+[05:20] That means this current is equal to 0.05 milliampere.
+[05:24] Let us say this current is equal to I.
+[05:29] So this current I can be given as 15 volt divided by R1 plus R2.
+[05:36] That means R1 plus R2 is equal to 15 volt divided by 0.05 milliampere.
+[05:46] That is equal to 300 kilo ohm.
+[05:49] That means the summation of this R1 and R2 is equal to 300 kilo ohm.
+[05:55] And here we have been also given the required value of the gate voltage VG.
+[06:00] That is equal to 5 volt.
+[06:03] That means the ratio of this voltage R1 and R2 should be such that we get the VG is equal
+[06:09] to 5 volt.
+[06:11] Or we can say that this 5 volt is equal to R2 divided by R1 plus R2 times 15 volt.
+[06:19] So if we rearrange this expression then we can say that here this R1 is equal to 2R2.
+[06:27] And we also know the summation of this resistor R1 and the R2.
+[06:31] That means R1 plus R2 is equal to 300 kilo ohm.
+[06:36] So from this to expression we can say that this 3R2 is equal to 300 kilo ohm.
+[06:44] That means R2 is equal to 100 kilo ohm while the R1 is equal to 200 kilo ohm.
+[06:52] So in this way we found the value of the R1 and the R2.
+[06:57] That means here this R1 is equal to 100 kilo ohm or 0.1 mega ohm.
+[07:05] While the ratio of this Rd and the RS is equal to 0.667.
+[07:17] So from this we can say that for the given question this B is the correct answer.

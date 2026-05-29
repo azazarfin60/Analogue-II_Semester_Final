@@ -1,0 +1,78 @@
+Title: BJT- Collector Feedback Configuration | Quiz # 256
+URL: https://www.youtube.com/watch?v=cuiY3-ddONE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been given this amplifier circuit and we have been asked
+[00:21] to find the voltage gain.
+[00:23] So if you look this circuit, then it is the common emitter amplifier which is configured
+[00:28] in the character feedback configuration.
+[00:31] So to find the voltage gain of this circuit, first of all we need to know the trans conductance
+[00:35] at the operating point.
+[00:37] And for that, first of all let us find the value of the character current.
+[00:42] So let us do the DC analysis and let us find the value of the character current.
+[00:46] So for the DC analysis, this AC input signal can be assumed as zero and this coupling capacitors
+[00:52] will act as a open circuit.
+[00:55] So if you see the equivalent circuit, then it will look like this.
+[01:00] So for the character feedback bias, the base current and the character current can be given
+[01:04] by the following expressions.
+[01:07] So first of all, let us find the value of the base current.
+[01:11] So here this base current IB will be equal to 13.7 volt minus 0.7 volt divided by
+[01:21] this 100 kilo ohm plus 1,01 times 12 kilo ohm.
+[01:29] Because here this RB is equal to 100 kilo ohm while the value of the beta is equal to 100.
+[01:36] So if we calculate the value of this base current, then it will be equal to roughly 10 micro
+[01:41] ampere.
+[01:43] And the character current IC is equal to beta times IB.
+[01:47] That means this character current IC will be equal to 100 times 10 micro ampere.
+[01:53] That is equal to 1 milli ampere.
+[01:57] So this will be the value of the character current.
+[01:59] And we know that the transconductors GM can be given as IC divided by VT.
+[02:06] That is equal to 1 milli ampere divided by 26 milli volt.
+[02:12] That is equal to 1 by 26 aments.
+[02:15] So this will be the value of the transconductors.
+[02:19] And using this value, we can do the AC analysis of this amplifier and we can find the voltage
+[02:24] gain.
+[02:26] So for the AC analysis, we will assume all the DC sources in this circuit are 0 and this
+[02:31] coupling capacitors will act as a short circuit.
+[02:35] So if we draw the small signal model, then the small signal model can be drawn like this.
+[02:42] So here, this RS is equal to 10 kilo ohm while the RB and RCR 100 kilo ohm and the 12
+[02:48] kilo ohm respectively.
+[02:50] Now here, using the Miller's theorem, we can convert this resistor RB into the two
+[02:55] resistors.
+[02:57] So after the conversion, this resistor R1 can be given as RB divided by 1 minus ABB,
+[03:05] while the R2 can be given as ABB divided by ABB minus 1 times RB, where ABB is the ratio
+[03:16] of the V out and the VB, that is V out and the VB, that is the voltage across the base
+[03:23] terminal.
+[03:25] Now this R2 will be approximately equal to RB.
+[03:30] So here, we need to find the value of the R1 and for that, first of all, we need to find
+[03:36] the value of the ABB.
+[03:38] So first of all, let us find the value of the ABB.
+[03:42] So here, this ABB is equal to V out divided by VB and it can be given as minus GM times
+[03:52] RC parallel R2, that is equal to minus GM times RC parallel RB, that is equal to minus
+[04:03] 1 by 26 times 12 kilo ohm in parallel with 100 kilo ohm.
+[04:12] So if we calculate the value of this ABB, then it will come out as minus 412.
+[04:19] So that will be the value of the V out divided by VB.
+[04:23] Now to find the voltage gain, V out divided by V in, we also need to take into account
+[04:27] this series resistor.
+[04:29] That means V out divided by V in is equal to V out divided by VB times VB divided by
+[04:36] VI, that is equal to Z in divided by Z in plus RS times ABB, where Z in is the input impedance
+[04:49] which is seen through the base terminal.
+[04:53] So we know that for the correct feedback configuration, these input impedance will be equal to R1 parallel
+[05:00] Rp where R1 is equal to RB divided by 1 minus ABB, that is equal to 100 kilo ohm divided
+[05:11] by 1 minus minus 412.
+[05:15] That means value of the R1 will come around as 240 to ohm.
+[05:22] Similarly, let us find the value of the Rp.
+[05:26] So this Rp will be equal to beta divided by GM, that is equal to 100 times 26 ohm, that
+[05:35] is equal to 2.6 kilo ohm.
+[05:39] So in this way, we got the value of the R1 as well as the Rp.
+[05:45] That means input impedance will be equal to R1 parallel Rp, that is equal to 240 to ohm
+[05:53] in parallel with 2.6 kilo ohm.
+[05:57] That means input impedance is equal to 220 ohm.
+[06:03] So once we know the value of this input impedance, then we can find the ratio of the V out and
+[06:08] the V in, that is the overall voltage gain.
+[06:12] That means V out divided by V in will be equal to 220 ohm divided by 220 ohm plus 10 kilo ohm.
+[06:22] That will get multiplied by the AVB, that is equal to minus 412.
+[06:29] That means overall voltage gain will come around as minus 8.9.
+[06:36] So if we just take the magnitude, then this overall voltage gain will be approximately equal
+[06:41] to 9 which is close to the 10.
+[06:45] So from this, we can say that for the given question, this is the correct answer.

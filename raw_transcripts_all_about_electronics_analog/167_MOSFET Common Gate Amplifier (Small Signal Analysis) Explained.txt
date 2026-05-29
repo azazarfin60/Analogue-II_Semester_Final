@@ -1,0 +1,246 @@
+Title: MOSFET Common Gate Amplifier (Small Signal Analysis) Explained
+URL: https://www.youtube.com/watch?v=2zr5ykXpyXY
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will learn about the common gate amplifier configuration of the MOSFET.
+[00:16] So in case of the common gate amplifier, typically the gate terminal is at AC ground.
+[00:21] So here, the input is applied between the source and the ground terminal, while the output
+[00:26] is measured between the drain and the ground terminal.
+[00:30] And since the gate terminal is at AC ground, so we can say that the input is applied between
+[00:36] the source and the gate terminal, while the output is measured between the drain and
+[00:40] the gate terminal.
+[00:41] And in this way, the gate terminal is common between the input and the output side.
+[00:46] And therefore, this configuration is known as the common gate amplifier configuration.
+[00:52] Now unlike the other MOSFET amplifier configurations, here in this configuration, the input impedance
+[00:58] of the amplifier is low.
+[01:00] Now normally, we say that the input impedance of the amplifier should be as high as possible,
+[01:06] right?
+[01:07] Because in that case, the maximum applied input signal will appear across the input of
+[01:12] the amplifier.
+[01:14] But in some high frequency applications, this type of common gate amplifier is very useful.
+[01:20] So in such application, the output of the antenna or the transmission line is given to the
+[01:25] amplifier for the amplification.
+[01:28] So in such application, the input impedance of the amplifier should match with the characteristic
+[01:33] impedance of the antenna.
+[01:35] And the impedance of this antenna or the transmission line is typical in the ohms.
+[01:40] And in such case, this common gate amplifier is suitable for the impedance matching.
+[01:46] So through a small signal analysis, we will find the expression of the input and the
+[01:50] output impedance as well as the voltage gain for this common gate amplifier.
+[01:55] So first of all, we will start with very basic common gate amplifier circuit.
+[02:00] And gradually, we will see the actual circuit of the common gate amplifier.
+[02:04] So this is a very basic circuit for the common gate amplifier along with the biasing.
+[02:10] So as you can see, here the gate is biased with the fixed voltage.
+[02:14] And here, the AC input signal is applied at the source terminal, while the output is
+[02:19] measured at the drain terminal.
+[02:21] So for the DC analysis, this AC input signal will act as a zero.
+[02:26] And this is the biasing circuit for the common gate amplifier.
+[02:30] Now this biasing voltage and this drain resistor should be such that the MOSFET operates in
+[02:35] the saturation region.
+[02:37] Alright, so if we talk about the small signal analysis, then for the AC analysis, this
+[02:43] biasing voltage will act as a zero.
+[02:46] And also, this capacitor will act as a short circuit.
+[02:49] Moreover, this drain voltage VDD will also act as a zero.
+[02:55] And then after, we need to replace this MOSFET by the small signal model.
+[02:59] So here, throughout the video, for a simplicity, we are assuming that the MOSFET is operating
+[03:04] at relatively low frequencies, where this small signal model of the MOSFET is valid.
+[03:10] So for this small signal analysis, if you see, the input is appearing between the source
+[03:14] and the ground terminal.
+[03:16] And here, this gate terminal is grounded.
+[03:20] Also if you see over here, then this drain resistor RD is appearing between the drain
+[03:25] and the ground terminal.
+[03:27] And if you see the small signal equivalent circuit, then it will look like this.
+[03:32] So for this very basic common gate amplifier, let us find the input impedance or input impedance
+[03:37] and the voltage gain.
+[03:39] And first, let us start with the input impedance.
+[03:43] So as we have seen earlier, if VIN is the input signal and IIN is the input current, then
+[03:49] the ratio of this input signal to the input current will be was the input impedance.
+[03:56] So if we apply the KCL at this node, then we can write this input current plus drain
+[04:03] current ID is equal to 0.
+[04:06] Or we can say that this input current is equal to minus ID, where this drain current ID is
+[04:12] equal to minus GM times VGS.
+[04:17] Now if you observe over here, then this input signal is appearing between the source and
+[04:22] the ground terminal.
+[04:23] And since the gate terminal is at AC ground, so we can say that the input is appearing
+[04:28] between the source and the gate terminal.
+[04:31] Or we can say that this voltage VGS is equal to minus VI.
+[04:37] So from this, we can say that this input current IIN, which was minus GM times VGS, can
+[04:43] also be given as GM times VIN.
+[04:48] That means the ratio of this input voltage to the input current or the input impedance
+[04:54] is equal to 1 divided by GM.
+[04:58] And this 1 over GM is typically in the ohms.
+[05:01] So as you can see, for this common gate amplifier, the input impedance is lower compared
+[05:06] to other configurations.
+[05:09] Because in other configurations, the input impedance is in mega ohms.
+[05:13] All right.
+[05:14] So similarly, in our last find the output impedance.
+[05:18] So the output impedance is the thaveness equivalent impedance, which is seen from the output
+[05:22] side by considering all the independent sources in the circuit as 0.
+[05:27] That means while finding this output impedance, we will consider this input signal as 0.
+[05:33] So now if you see, then this gate and the source terminal both are at the same potential.
+[05:38] That means this voltage VGS will be 0.
+[05:43] And since the voltage VGS is 0, then this string current ID will also become 0.
+[05:48] Or we can say that this dependent current source will act as an open circuit.
+[05:53] That means now the thaveness equivalent impedance, which is seen from the output side or this
+[05:58] output impedance is equal to RD.
+[06:02] So that is the output impedance of this very basic common gate amplifier.
+[06:06] And similarly, now let us find the voltage gain.
+[06:10] So here to find the voltage gain, let us apply the KCL at this node.
+[06:16] So let's say the current through this resistor RD is equal to I0.
+[06:21] And this current is equal to ID.
+[06:24] That means after applying the KCL, we can write this output current plus ID is equal to 0.
+[06:31] And here this output current is equal to V0 divided by RD.
+[06:36] That means V0 divided by RD is equal to minus ID.
+[06:41] And this drain current is equal to GM times VGS.
+[06:46] Now as we have just seen, this VGS is equal to minus VI, right?
+[06:53] That means we can say that V0 divided by RD is equal to minus GM times minus VI.
+[07:01] Or we can say that this V0 divided by VI is equal to GM times RD.
+[07:08] So that is the voltage gain of this common gate amplifier.
+[07:12] So if you observe this expression and we can say that the voltage gain of this common
+[07:16] gate amplifier is similar to the common source amplifier.
+[07:20] But here there is a known negative sign.
+[07:23] Meaning that in this common gate amplifier, the input and the output signal will be in
+[07:28] the same phase.
+[07:29] All right.
+[07:30] So so far through this very basic common gate amplifier, we found that its input impedance
+[07:36] is very low while the output impedance and the voltage gain is same as the common source
+[07:41] amplifier.
+[07:42] But here in the voltage gain, there is a no negative sign.
+[07:46] That means the input and output are in the same phase.
+[07:50] So so far, we have assumed that a separate biasing voltage was applied at the gate terminal.
+[07:56] But that can also be applied through the voltage divider bias.
+[08:00] And here this capacitor is connected between the gate and the ground terminal.
+[08:06] So for the DC analysis, this capacitor will act as an open circuit.
+[08:10] But for the small signal analysis or for the AC analysis, this capacitor will act as
+[08:15] a short circuit.
+[08:17] And this voltage VDD will also become zero.
+[08:21] That means now both ends of this R1 and R2 are connected to the AC ground.
+[08:26] And therefore, this gate is connected to the AC ground.
+[08:30] Now typically, the input signal to the amplifier may be coming from output of some other amplifier
+[08:36] stage.
+[08:37] So to isolate the biasing circuits of the amplifiers and just for coupling the AC input signal
+[08:42] to the next stage, the input is typically applied through the coupling capacitor.
+[08:48] But if we add the input in this fashion, then at the DC, the coupling capacitor will act
+[08:53] as a open circuit.
+[08:55] That means now there is a no path for the drain current to flow through the source terminal.
+[09:01] Similarly, when the input is coming from some antenna, then at the DC, the antenna will
+[09:07] act as a open circuit.
+[09:09] And once again, there is a no path for drain current to flow through the source terminal.
+[09:14] That means to complete the biasing path, usually a source resistor is connected between the
+[09:19] source and the ground terminal.
+[09:22] So that at the DC, the drain current can flow through this source resistor.
+[09:27] So at the DC, if you observe this circuit, then it is the voltage divider biasing circuit,
+[09:32] which you have discussed earlier.
+[09:35] But here, now the input is applied at the source terminal.
+[09:38] All right, so for this actual circuit, now let us find the three important parameters
+[09:44] that is input impedance, output impedance and the voltage gain.
+[09:48] And let us also see what is the impact of this source resistor on these three parameters.
+[09:53] So for the AC analysis, all the capacitors will act as a short circuit at the operating
+[09:58] frequency.
+[10:00] And this DC voltage source will also act as a zero.
+[10:04] And then after, if you replace the MOSFET by the small signal model, then the equivalent
+[10:08] circuit will look like this.
+[10:12] And first of all, now let us find the input impedance.
+[10:16] So as you have seen, without this source resistor, the equivalent impedance, which is seen
+[10:21] from the input side, is equal to 1 over gm, right?
+[10:25] That means from the input side, if you see the equivalent circuit, then it will look like
+[10:30] this.
+[10:32] That means now, the input impedance, which is seen from the input side, is the parallel
+[10:37] combination of this RS and the 1 over gm.
+[10:40] That means the input impedance is equal to 1 over gm in parallel with RS.
+[10:47] But still, if you are not convinced, then let us apply the KCL at this node.
+[10:52] And applying the KCL, we can get the same result.
+[10:56] So as we have seen, this input impedance is the ratio of the input signal to the input
+[11:01] current.
+[11:03] So here, this will be the input current.
+[11:07] And the current through the source resistor is equal to V in divided by RS.
+[11:12] So applying the KCL at this node, we can write this input current plus drain current is
+[11:19] equal to V in divided by RS.
+[11:22] That is this current.
+[11:25] And this drain current ID is equal to gm times VGS.
+[11:31] And as we have seen, this VGS is equal to minus V in.
+[11:36] That means i in plus gm times VGS is equal to in divided by RS.
+[11:42] Or if you further simplify it, then we can say that this input current is equal to V in
+[11:50] divided by RS plus gm times V in.
+[11:56] Because here, this VGS is equal to minus V in.
+[12:00] So if you further simplify it, then we can say that this input current is equal to V in
+[12:06] times gm plus 1 divided by RS.
+[12:11] That means input current to the input voltage.
+[12:15] Or 1 divided by Z in is equal to gm plus 1 divided by RS.
+[12:22] Or we can say that it is equal to 1 divided by RS plus 1 divided by 1 over gm.
+[12:31] That means this input impedance is the parallel combination of 1 over gm and RS.
+[12:39] So that is the input impedance of the amplifier.
+[12:43] Now if the value of RS is much greater than 1 over gm, or let's say at least 10 times
+[12:48] more than 1 over gm, then this input impedance is approximately equal to 1 over gm.
+[12:55] But if this RS and 1 over gm are comparable, then the input impedance will be less than 1
+[13:00] over gm.
+[13:01] Alright, so similarly, now let us find the output impedance.
+[13:06] And let us find out, is there any impact of the source resistor on the output impedance?
+[13:11] So as we have seen, the output impedance is the thavarence equivalent impedance, which
+[13:15] is seen from the output side by considering all the independent sources in the circuit
+[13:19] as 0.
+[13:20] So to find the output impedance, we will consider this input signal as 0.
+[13:26] And since the input signal will act as a 0, then this source resistor will also act
+[13:31] as a short circuit.
+[13:33] And now the gate and the source both are at the same potential, that means Vgs is equal
+[13:39] to 0.
+[13:41] And since the Vgs is 0, then this current ID will also become 0.
+[13:46] That means this dependent current source will act as an open circuit.
+[13:50] And in this case, the output impedance or the thavarence equivalent impedance, which is
+[13:54] seen from the output side is equal to RD.
+[13:58] That means the source resistor will not have any impact on the output impedance.
+[14:03] Alright, so similarly, now let us find the voltage gain.
+[14:08] So if you see over here, and the voltage gain will remain the same.
+[14:13] Because here, if we apply the KCL at this node, then we can write I0 plus ID that is equal
+[14:19] to 0.
+[14:21] That means V0 divided by RD plus GM times Vgs that is equal to 0.
+[14:30] And since the Vgs is equal to minus Vi, so we can say that V0 divided by RD that is
+[14:37] equal to GM times V in or V0 divided by V in or the voltage gain is equal to GM times
+[14:47] RD.
+[14:48] That means the voltage gain will remain the same.
+[14:52] But that is only true if the internal impedance of this voltage source is 0.
+[14:57] Practically, all the source has some finite internal impedance.
+[15:02] Let's say this internal impedance is equal to Ri.
+[15:06] And if that is the case, then this internal resistance will have the impact on the voltage
+[15:11] gain.
+[15:12] So in that case, the voltage at this node will not be equal to V in.
+[15:17] And in fact, because of the voltage drop across this resistor, the voltage at this node
+[15:22] will be less than V in.
+[15:24] So let's say the voltage at this node is equal to Vx.
+[15:28] So now the overall voltage gain that is V out divided by V in and we give one as V out
+[15:34] divided by Vx times Vx divided by V in.
+[15:39] So the ratio of this V out divided by Vx will be equal to GM times RD because the voltage
+[15:45] gain is the ratio of the output voltage to the input which is appearing between the source
+[15:49] and the gate terminal.
+[15:51] So the only thing which we need to find over here is the ratio of the Vx and the V in.
+[15:57] And that can be easily found if we replace the entire circuit which is seen on the right
+[16:02] inside of this node.
+[16:04] And in fact, it is the input impedance of this amplifier.
+[16:08] So if we replace this entire circuit by the input impedance of the amplifier and the equivalent
+[16:13] circuit will look like this.
+[16:16] That means now the voltage at this node or the Vx can be given as ZI divided by ZI plus
+[16:23] Ri times input signal.
+[16:27] That is equal to 1 over GM in parallel with RS divided by 1 over GM in parallel with
+[16:35] RS plus Ri times input signal.
+[16:41] That means now the overall voltage gain that is V out divided by V in will be equal to V
+[16:47] out divided by Vx times Vx divided by V in.
+[16:52] That is equal to GM times RD times 1 over GM in parallel with RS divided by 1 over GM
+[17:03] in parallel with RS plus Ri.
+[17:08] So that is the overall voltage gain if you also consider the effect of the internal resistance
+[17:12] of this input signal.
+[17:14] So if this Ri is much lower than the input impedance and the voltage gain is approximately
+[17:20] equal to GM times RD.
+[17:23] But if this Ri is comparable to the input impedance and the voltage gain will reduce.
+[17:29] So that is the voltage gain of this common-cate amplifier including the series resistor of
+[17:33] this input source.
+[17:35] And here if the load resistor RL is also connected then instead of RD we will have RD parallel
+[17:42] RL.
+[17:44] So in this way using the small signal analysis we found the expression of the voltage
+[17:48] gain, the input impedance and the output impedance of this common-cate amplifier.
+[17:53] So on the second channel we will see few examples on this common-cate amplifier and we will
+[17:58] understand a few design aspects of this amplifier.
+[18:02] But I hope in this video you understood how to do the small signal analysis of this common-cate
+[18:06] amplifier and using that how you can find the different amplifier parameters.
+[18:12] So if you have any question or suggestion and do let me know here in the comment section
+[18:16] below.
+[18:17] Like this video, hit the like button and subscribe to my channel for more such videos.

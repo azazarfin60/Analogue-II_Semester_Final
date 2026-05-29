@@ -1,0 +1,1663 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Multi-stage Amplifiers | Part-1 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=D6T44XH92NU
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good afternoon everyone, a very good afternoon to all of you.
+[00:11] So we are live, we are back in Lakshya batch 2.2 Analog Electronics.
+[00:17] So today we are going to start a new topic in BJTs that is multi-stage amplifier.
+[00:25] And today I am going to tell you some general concepts of multi-stage amplifiers.
+[00:32] They are not exactly limited to BJTs.
+[00:36] They are not limited to BJTs.
+[00:38] This is a general concept of amplifier where we connect multiple amplifiers together to achieve some desired objectives.
+[00:49] There are some things that we want to achieve when we connect multiple amplifiers together.
+[00:56] That is said to be multi-stage amplifier.
+[00:59] Now this amplifier can be OPAMP, this amplifier can be BJT, this amplifier can be your MOSFET.
+[01:07] So today we will talk about multi-stage amplifier in general.
+[01:13] You will enjoy a lot and you will get to learn a lot of things.
+[01:18] Since I will start a new topic, I will add shots for that.
+[01:23] There is no need to worry.
+[01:25] Hopefully from Monday we will start JFET.
+[01:28] But JFET is also an ESC topic.
+[01:30] There will be 3-4 classes to cover JFET.
+[01:33] After that we will start MOSFET.
+[01:36] Next week MOSFET will start.
+[01:38] In MOSFET all the children have to attend.
+[01:42] Those who are electrical or ECE.
+[01:45] Because if we look at today's date, then IT is asking more questions than MOSFET as compared to BJT and diode.
+[01:53] JFET is not even in the gate of ECE.
+[01:57] JFET is in engineering services both for electrical and ECE.
+[02:01] But JFET is a very small topic that gets ready quickly.
+[02:05] There is no complexity in the working of its device and there is nothing special in its circuits.
+[02:11] So it is very easy.
+[02:13] Let's start today's discussion.
+[02:15] We will quickly like all the children.
+[02:18] Because I know that the attendance of your children is getting like.
+[02:21] I know how many children have watched the video.
+[02:23] Along with that you will share it.
+[02:25] We will tell everyone that Angisa has come live.
+[02:27] When the syllabus is the same, there is no need to ask questions.
+[02:34] You are asking questions.
+[02:36] Is there enough course for 23?
+[02:39] If the syllabus is the same, then obviously there is enough.
+[02:42] Okay?
+[02:45] Sumit, this is not a doubt clearing class.
+[02:48] If you are a plus user, tomorrow is Thursday.
+[02:51] Tomorrow there will be a doubt clearing session.
+[02:53] It will be at 9 in the morning and it will be at 7.30 in the evening.
+[02:56] You can come and ask.
+[02:58] And before we start, happy Vijay Dashmi to all of you.
+[03:01] Happy Dashera to all of you.
+[03:04] So let's quickly wind up this class.
+[03:07] Then you also enjoy the Mela.
+[03:09] Enjoy the festival.
+[03:12] So first of all, what was the need for a multi-stage amplifier?
+[03:17] What was left in the love of a single amplifier?
+[03:21] What was left in the love of a single amplifier?
+[03:24] You had to go to a multi-stage amplifier.
+[03:27] The less the gain, the more the gain we wanted.
+[03:30] The less the gain.
+[03:32] Let me tell you an interesting thing.
+[03:34] How much does the BJT amplifier gain?
+[03:37] 50, 100, 200 comes.
+[03:40] When you read the MOSFET amplifier, its gain is 10, 15, 20.
+[03:44] And I am telling you, this topic is not just limited to BJT.
+[03:48] Okay? It is not just limited to BJT.
+[03:51] This opamp MOSFET is talking about joining all the amplifiers together.
+[03:57] So it will not be seen only by the eyes of BJT.
+[04:01] Then see, what happened many times?
+[04:03] The requirement for input and output resistance did not meet.
+[04:07] Okay?
+[04:08] The requirement for input and output resistance did not meet.
+[04:12] Now you will understand one thing.
+[04:14] What is the requirement for input and output resistance?
+[04:17] There are four types of amplifiers.
+[04:19] Voltage amplifier, current amplifier,
+[04:22] Trans-conductance amplifier, trans-resistance amplifier.
+[04:26] And there is a particular requirement in every type of amplifier.
+[04:32] There is a particular requirement for the input and the output resistance.
+[04:39] For example, there is a requirement in the voltage amplifier that
+[04:43] the input resistance is high and the output resistance is low.
+[04:48] In such a current amplifier, it is just the opposite.
+[04:50] That the input is low and the output is high.
+[04:54] So basically, I want to tell you that you have a requirement
+[04:58] that how much input and output resistance do you need?
+[05:01] If it is not meeting an amplifier, then maybe you need to use multiple amplifiers.
+[05:08] Poor efficiency.
+[05:10] What was the meaning of efficiency, dear?
+[05:13] When you see an amplifier, it draws power from DC bias
+[05:18] and catches an AC signal.
+[05:21] If the AC signal supplies power, then how do we talk about efficiency?
+[05:27] How much power was given to our AC signal?
+[05:31] How much power was taken from DC supply?
+[05:36] How much power was drawn from the biasing?
+[05:39] And how much part of it was given to your AC signal?
+[05:43] That is the efficiency.
+[05:46] That is the efficiency.
+[05:49] Now Zainul is saying that there is a lot of noise in BJT.
+[05:53] There are a lot of advantages of MOSFET as compared to BJT.
+[05:58] But yes, if you look at it from the perspective of gain,
+[06:01] then the gain of BJT is more than MOSFET.
+[06:05] But when I will teach you MOSFET, then I will tell you
+[06:08] what are the advantages of MOSFET.
+[06:10] If there were no advantages, then technology never goes to MOSFET from BJT.
+[06:15] And now the thing is that if you look at it in today's industry,
+[06:18] then you have crossed MOSFET as well.
+[06:20] You have gone ahead from MOSFET.
+[06:22] That is how the industry works.
+[06:24] This technology always goes ahead.
+[06:27] Now look at Cascading.
+[06:30] Cascading is also read in the network, in two port network.
+[06:34] What does Cascading mean, dear?
+[06:36] When the output of one network for the next network
+[06:41] works as input, then we call it Cascading.
+[06:46] Okay? Cascading.
+[06:48] Do you understand?
+[06:50] So Cascading of amplifier is done.
+[06:53] Suppose an amplifier amplifies the signal.
+[06:57] Now you put this signal on the input of the next amplifier
+[07:02] so that it amplifies it more.
+[07:05] That is called as Cascading.
+[07:08] But you remember, dear, yesterday I had taught you something.
+[07:11] In high frequency response,
+[07:14] if the gain into bandwidth constant comes,
+[07:17] if you remember 1 into Ft
+[07:20] equal to beta into F beta
+[07:22] equal to alpha into F alpha.
+[07:26] So if you amplify Cascading again and again
+[07:30] and increase the overall gain,
+[07:33] but the gain into bandwidth constant remains,
+[07:36] then bandwidth will decrease.
+[07:39] So bandwidth will decrease.
+[07:42] Now, dear, what is the problem of reducing bandwidth?
+[07:45] Bandwidth means, dear, the region of mid-band.
+[07:48] If the region of mid-band decreases,
+[07:51] then what will happen?
+[07:53] Then what will happen is that,
+[07:55] the frequencies which were getting a proper gain,
+[08:00] the frequencies which were getting a high gain,
+[08:04] that range will become narrow.
+[08:07] That is, now this amplifier
+[08:09] will be able to work for less range of frequencies
+[08:14] or will be able to amplify the range of frequencies in a way.
+[08:19] Do you understand? What is the problem of reducing bandwidth?
+[08:22] Bandwidth is the range of frequencies
+[08:25] that can be properly amplified by an amplifier.
+[08:30] So when the bandwidth narrows down,
+[08:32] an amplifier does not work properly
+[08:35] over a wide range of frequencies.
+[08:39] A wide range of frequencies cannot work properly.
+[08:43] The gain will be less on the most frequencies,
+[08:46] but I want the gain to be more than that
+[08:50] and more than that for the range of frequencies.
+[08:53] That is why we were saying in the high frequency response
+[08:56] that we want the value of FT more,
+[08:59] we want more range of frequencies
+[09:03] to be amplified.
+[09:05] Do you understand?
+[09:07] Now tell me,
+[09:08] the lower high frequency response is clear to everyone, right?
+[09:11] In the low frequency response,
+[09:13] I had told you how we take out the cutoff frequency.
+[09:15] In the high frequency response,
+[09:17] there are three things,
+[09:18] unity gain, beta cutoff, alpha cutoff.
+[09:21] I have told you everything.
+[09:23] In that, I have told you many conceptual things
+[09:26] in the high frequency response,
+[09:28] for example, there is benefit in germanium,
+[09:30] there is benefit in gallium arsenide.
+[09:33] How can you reduce the career lifetime?
+[09:38] By reducing the base bandwidth.
+[09:41] So we have discussed all these things in a very good way,
+[09:43] conceptual and numerical.
+[09:46] And you know what is the biggest thing?
+[09:49] In analog, I am making you do all things with the network,
+[09:52] no doubt,
+[09:53] but you should also understand the physical significance of things.
+[09:57] Dinesh, my brother,
+[09:59] if you are preparing for engineering services,
+[10:01] all the lectures are important for you.
+[10:03] If you are preparing for gate,
+[10:05] I had made shots and told that
+[10:07] I am bringing this topic for ESC.
+[10:09] The portion ahead of AC analysis is of ESC.
+[10:12] Now you have to join from MOSFET
+[10:14] to the gate children.
+[10:16] I have told you this thing.
+[10:17] Now I don't know which world you are living in,
+[10:19] that you don't understand.
+[10:20] In this class,
+[10:21] Rudresh has only understood that
+[10:23] you have to join from MOSFET.
+[10:25] Now I am telling you this again.
+[10:27] Okay?
+[10:29] How to eliminate noise from frequency?
+[10:33] See, Debashish doesn't eliminate noise from frequency.
+[10:36] What does frequency mean?
+[10:38] One upon time period of a signal,
+[10:41] then noise will be eliminated from frequency.
+[10:43] Noise filters are eliminated.
+[10:46] Now see if you have an amplifier
+[10:48] that amplifies the high frequency.
+[10:51] So it is often seen in nature
+[10:54] that the noise comes at high frequency.
+[10:57] So if BJT amplifies the high frequency,
+[11:01] then the noise that comes at high frequency
+[11:03] will also be amplified.
+[11:05] Which is undesirable.
+[11:07] On one hand, we are saying that bandwidth should be high.
+[11:10] Because we want more range of frequency
+[11:13] to get amplification.
+[11:14] On the other hand, we are saying
+[11:16] that there is noise at high frequency.
+[11:19] If an amplifier amplifies the high frequency,
+[11:22] then it will also amplify the noise.
+[11:25] Do you understand?
+[11:26] It is a human being.
+[11:27] A human being is not happy.
+[11:28] When a human being is not happy with God,
+[11:30] then how will he be happy with the amplifier?
+[11:32] Isn't it?
+[11:33] So Saurav, your question is
+[11:35] noise is proportional to bandwidth.
+[11:37] So that is the logic.
+[11:39] The more bandwidth you have,
+[11:41] the higher frequency you are covering
+[11:44] and the higher frequency you are covering,
+[11:47] the higher frequency noise will also
+[11:50] be amplified and reached the output.
+[11:54] Do you understand?
+[11:56] Do you understand or not?
+[11:58] Shall we move on?
+[11:59] Is it clear to all of you
+[12:01] conceptually?
+[12:03] Now look at the multi-stage amplifier.
+[12:06] We have multiple stages.
+[12:08] After one stage, after the other stage,
+[12:10] after the third stage.
+[12:12] So if we talk about
+[12:14] overall input resistance here,
+[12:17] then the overall input resistance
+[12:19] is the first stage input resistance.
+[12:22] The first stage
+[12:24] is the input resistance
+[12:26] of the total system input resistance.
+[12:29] The last stage
+[12:31] is the output resistance
+[12:33] of the entire system
+[12:35] output resistance.
+[12:37] So how will you get input resistance?
+[12:39] With the input resistance of the first stage,
+[12:42] how will you get output resistance?
+[12:44] With the output resistance of the last stage,
+[12:47] And how will you get the gain?
+[12:49] You will get the gain after multiplying the gains.
+[12:53] You have to keep these three things in mind.
+[12:56] Input resistance is the resistance of the first stage.
+[13:01] Output resistance is the output resistance of the final stage.
+[13:06] Gain is the product of the voltage gain of the all the stages.
+[13:14] As the gain is multiplied in the control system,
+[13:19] when you put multiple blocks in the control system,
+[13:22] the transfer function is multiplied.
+[13:25] In the same multi-stage amplifier, the gain is multiplied.
+[13:30] Ravi, I have told you that this week the BJT will end by Saturday.
+[13:35] So, you will have three more sessions in BJT.
+[13:38] Okay?
+[13:40] Now, look at the cascading of non-interacting stages.
+[13:44] Non-interacting stages means that the two stages of the amplifier
+[13:50] are not flowing any current in between them.
+[13:54] If any current is not flowing in between them,
+[13:57] then there will be no voltage drop.
+[13:59] And you can say that there will be no loading effect.
+[14:04] Even in the control system, this is what you read about the loading effect.
+[14:08] When a current is not flowing in between the two stages,
+[14:13] that means there is no loading effect.
+[14:18] So, dear, what happens here?
+[14:20] Why is there no loading effect?
+[14:22] Because we are assuming that ideally,
+[14:26] the input resistance of any stage is infinite and the output resistance is zero.
+[14:33] I have told you that there is a requirement of a voltage amplifier.
+[14:38] There is a requirement of a voltage amplifier that your input resistance is high,
+[14:44] the output resistance is low.
+[14:46] So, ideally, the input resistance will be infinity and the output resistance will be zero.
+[14:54] And because the input resistance is infinity of any stage,
+[14:58] the input resistance of infinity means that there will be no current in the input.
+[15:05] If its input is working like an open circuit,
+[15:09] the input resistance is infinite.
+[15:12] That means there is no current input to any stage.
+[15:17] Understood?
+[15:19] What does the input resistance of infinite mean?
+[15:22] No current input to any stage.
+[15:30] And this is desirable.
+[15:33] What is the loading effect?
+[15:35] It reduces the gain.
+[15:36] I will discuss this on the loading effect too.
+[15:39] Don't worry about it.
+[15:41] The loading effect will be understood well.
+[15:43] So, if the input resistance is infinity of any stage,
+[15:46] then its input current will be zero.
+[15:48] Think like this.
+[15:50] Do you remember the large beta amplifier that I made in BJT?
+[15:54] The large beta amplifier.
+[15:56] Did it have an RPI open?
+[15:58] Do you remember?
+[15:59] Did I have an RPI open in the large beta?
+[16:02] Yes.
+[16:03] If it had an RPI open,
+[16:05] what was its base current?
+[16:07] Was it zero?
+[16:09] Do you remember that the base current was zero?
+[16:11] That is why the beta model did not apply that the IB was zero.
+[16:15] So, the beta IB will not be able to be used.
+[16:17] That is why I said that we have to use a hybrid Pi.
+[16:20] So, the same thing is still being said.
+[16:22] If the input resistance is infinity,
+[16:25] then your input current will be zero.
+[16:27] If the input current is zero,
+[16:29] then it means there is no loading effect.
+[16:32] If the output current is zero,
+[16:35] then there will be no load resistance.
+[16:37] But if there is no load resistance,
+[16:40] then the output current will come.
+[16:42] You can say that the isolated means
+[16:45] the stages are isolated from each other.
+[16:48] Okay?
+[16:52] Come on, Aakash.
+[16:53] Analog, dear.
+[16:54] Aakash is very basic.
+[16:55] If you look at the analog,
+[16:56] you will see that each thing is fundamental.
+[16:58] You will be clear.
+[16:59] Now, look at it.
+[17:00] When overall gain is talked here,
+[17:06] then the gain will come.
+[17:08] AV1, AV2, AV3.
+[17:14] AV1, AV2 and AV3.
+[17:17] If, dear, you have n identical stages,
+[17:22] if they are identical stages,
+[17:25] which means everyone's gain is equal,
+[17:28] and you cascade such n stages,
+[17:32] then your gain is formed, dear.
+[17:34] In that case, AV to the power n.
+[17:38] Tell me if there is any doubt in this.
+[17:40] This is the concept of the control system.
+[17:43] This is the concept of the simple control system.
+[17:46] There is no problem in this.
+[17:50] Now, look at the interacting stages.
+[17:52] Means, here,
+[17:54] there will be an input resistance of each stage.
+[17:57] There will be an output resistance of each stage.
+[18:01] So, look.
+[18:02] The input resistance of the first stage is RI1.
+[18:06] The second is RI2.
+[18:10] The output resistance of the first stage is RI1.
+[18:15] Now, dear, you understand one thing here.
+[18:18] Dear, whatever output comes here,
+[18:21] whatever output comes,
+[18:24] the voltage division will be done.
+[18:27] If you look here,
+[18:29] suppose that the input voltage is here,
+[18:32] then how much output will you have here?
+[18:35] AV1, VI.
+[18:37] Now, AV1, VI will not go to the next amplifier.
+[18:42] Here, the voltage division will be done
+[18:45] between R01 and RI2.
+[18:49] So, dear, how much signal will you get here?
+[18:53] AV1, VI into RI2 by R01 plus RI2.
+[19:06] Okay?
+[19:07] Now, how much will you get here, dear?
+[19:10] When this signal passes through AV2 here,
+[19:13] then AV1, AV2, VI, RI2 over R01 plus RI2.
+[19:24] Do you understand?
+[19:26] Will this type of voltage division work?
+[19:28] Will this type of voltage division work?
+[19:31] Then, in the next stage,
+[19:33] then voltage division, then gain and again voltage division.
+[19:38] Again voltage division.
+[19:41] Now, what will you say here, dear?
+[19:43] What will be the total gain?
+[19:46] Look,
+[19:47] AV1, AV2, AV3 into the factors of voltage division.
+[19:59] RI2, R01 plus RI2.
+[20:02] So, look, the gain is reduced, right?
+[20:04] If you look here,
+[20:06] by getting finite of input resistance,
+[20:08] your gain is reduced.
+[20:14] Now, one child is asking,
+[20:16] practically possible and non-interacting stages.
+[20:19] Dear, it is possible,
+[20:21] but when you make such an actual circuit,
+[20:23] then the interaction comes due to the resistances that you connect.
+[20:27] We will also connect some resistances for biasing, right?
+[20:31] So, even if you have R-pi infinity,
+[20:34] R-pi infinity happens in the MOSFET,
+[20:37] but still one resistance will be used for biasing.
+[20:40] So, because of that, input resistance is finite.
+[20:43] Now, like in OPAMP,
+[20:45] we say that input current is always zero,
+[20:48] but the resistance in OPAMP
+[20:50] will not be zero, right?
+[20:52] That is why the loading effect will be formed.
+[20:55] You know, when can there be non-interacting stages?
+[20:58] When you cascade open-loop OPAMPs,
+[21:01] because you will cascade open-loop OPAMP,
+[21:04] there will be no resistance in it.
+[21:06] Every OPAMP's input current is zero,
+[21:08] so it can be formed.
+[21:10] But it is not used practically.
+[21:12] Practically, the circuit we use,
+[21:14] they will have a loading effect.
+[21:18] Right?
+[21:20] Do you understand?
+[21:22] You are understanding that there will be a loading effect,
+[21:25] because input resistance is finite.
+[21:28] So, current will go from one stage to another stage.
+[21:31] Current will go from one stage to another stage.
+[21:34] So, here you have to take out the gain.
+[21:38] And when you take out the gain,
+[21:40] then you have to consider the factor of
+[21:43] voltage division.
+[21:45] You have to consider the factor of
+[21:48] voltage division.
+[21:51] Now, let's talk about the loading effect.
+[21:54] What does loading effect mean?
+[21:56] When one stage of amplifier
+[22:04] or of multi-stage amplifier,
+[22:09] when one stage of multi-stage amplifier,
+[22:14] draws current
+[22:28] from preceding stage,
+[22:35] which will draw current from the stage,
+[22:39] then
+[22:44] next stage
+[22:48] acts as
+[22:54] load on
+[22:56] previous stage.
+[22:58] When the current is drawing,
+[23:00] the voltage is going.
+[23:02] If the current and voltage are going,
+[23:04] it means the power is going.
+[23:06] If the current is going,
+[23:08] load on previous stage
+[23:10] and hence called as
+[23:12] loading effect.
+[23:14] So, you have to send the voltage,
+[23:16] because you are making the voltage amplifier.
+[23:18] But ideally,
+[23:20] I want the current not to go.
+[23:22] Because if the current goes with the voltage,
+[23:24] then the second stage will go
+[23:26] from one stage to another.
+[23:28] And the power means
+[23:30] that the second stage,
+[23:32] is taking power from the first stage.
+[23:34] It is acting as a load.
+[23:36] Now, what is the loss of the loading effect?
+[23:38] Where are we getting this loading effect?
+[23:42] In the interacting stages.
+[23:44] Where are we getting it?
+[23:46] In the interacting stages.
+[23:48] What is the loss of the loading effect?
+[23:50] The loss is that
+[23:52] here,
+[23:54] voltage gain
+[23:58] voltage gain
+[24:00] reduces
+[24:04] due to
+[24:06] due to
+[24:08] factor of
+[24:10] voltage division
+[24:12] due to factor
+[24:14] of
+[24:16] voltage division.
+[24:18] So, the gain
+[24:20] will reduce.
+[24:22] Did you understand?
+[24:24] Because of the voltage division,
+[24:26] your gain will reduce.
+[24:28] So, this is the loss.
+[24:30] Look at this analog series.
+[24:32] Aakash,
+[24:34] what you are talking about
+[24:36] starting the analog series.
+[24:38] It is true in English.
+[24:40] This is going on in Hindi.
+[24:42] And already 50 hours of content is gone in it.
+[24:44] So, you have a lot of content to watch.
+[24:46] Right?
+[24:48] So, watch this series.
+[24:50] Happy Dasheera Rajesh to you too.
+[24:52] So, this is clear.
+[24:54] The meaning of the loading effect.
+[24:56] Why do you call it the loading effect?
+[24:58] A lot of kids know what the loading effect is.
+[25:00] But, why do you call it the loading effect?
+[25:02] These kids don't know.
+[25:04] So, is this clear or not?
+[25:12] Clear?
+[25:16] Go to the playlist section on YouTube.
+[25:18] You will get the playlist.
+[25:20] Now, when we do cascading,
+[25:22] we have to see
+[25:24] what is the lower cutoff frequency.
+[25:26] Look, I have just told you.
+[25:28] The gain increases in cascading.
+[25:30] But, the bandwidth is less.
+[25:32] So, I have to see this factor.
+[25:34] I have to see this effect.
+[25:36] How the bandwidth is decreasing.
+[25:38] So, I have to talk about two frequencies for this.
+[25:40] A lower cutoff frequency
+[25:42] and an upper cutoff frequency.
+[25:44] So, first I will talk about the lower.
+[25:46] So, I say that
+[25:48] the low frequency gain
+[25:50] is
+[25:52] the low frequency
+[25:54] gain
+[25:56] low frequency
+[25:58] gain
+[26:02] of an amplifier
+[26:08] if you see
+[26:10] then how much is the low frequency gain?
+[26:12] How much is the mid-band gain?
+[26:20] You say that the mid-band gain
+[26:22] is the high-pass filter
+[26:24] transfer function.
+[26:34] See, this is how it works.
+[26:36] This is how it works.
+[26:38] Okay? This is how it works.
+[26:40] Now, what will you say here, dear?
+[26:42] If such
+[26:44] n identical stages
+[26:46] if such n identical stages
+[26:48] you have cascaded the kids
+[26:50] then what will happen?
+[26:52] The power of the gain will be
+[26:54] n. What will happen?
+[26:56] The power of the gain will be
+[26:58] n. So, what do we say here?
+[27:00] when
+[27:02] n
+[27:04] such stages
+[27:06] are cascaded
+[27:10] n.
+[27:16] So, what will happen to the gain?
+[27:20] I say A v
+[27:22] low frequency
+[27:26] to the power n.
+[27:28] Correct? This is what will happen.
+[27:30] I am talking about non-interacting stages, dear.
+[27:32] Now, who am I talking about?
+[27:34] Non-interacting
+[27:36] stages.
+[27:40] So, there is no
+[27:42] voltage division factor.
+[27:44] Okay?
+[27:46] Non-interacting stages.
+[27:48] Now, here you see
+[27:50] if such power n
+[27:52] is raised then what will happen?
+[28:10] Its power was half
+[28:12] because of n by 2.
+[28:14] Root means power
+[28:16] half.
+[28:18] Now, low frequency response
+[28:20] which is coming of multi-stage amplifier
+[28:22] should come like a high pass filter, right?
+[28:26] Should come like a high pass filter.
+[28:28] So, I will say
+[28:30] the function of A v
+[28:32] should look like this.
+[28:34] It should look like this.
+[28:36] Look.
+[28:38] Mid-band gain.
+[28:40] Look carefully.
+[28:42] Divided by
+[28:44] should look like this.
+[28:52] Sir, what does capital F L mean?
+[28:54] What does capital F L mean?
+[28:56] capital F L means
+[28:58] lower cut-off frequency
+[29:00] of the multi-stage amplifier.
+[29:02] Look, the small
+[29:04] FL is the lower cut-off frequency
+[29:06] of single stage.
+[29:08] After cascading
+[29:10] such n stages
+[29:12] the lower cut-off frequency
+[29:14] that is capital FL.
+[29:16] So, small FL is the
+[29:18] lower cut-off frequency
+[29:22] lower cut-off frequency
+[29:26] of single stage
+[29:28] amplifier
+[29:34] or capital
+[29:36] FL is the
+[29:38] lower cut-off frequency
+[29:40] of multi-stage amplifier.
+[29:58] Okay?
+[30:00] This must be it.
+[30:02] Now, look at one thing here.
+[30:04] Dear, there will be no N in the root.
+[30:06] Divya, right?
+[30:08] I have written the general function
+[30:10] which should be on low frequency.
+[30:12] Inspired from here.
+[30:14] You see, it is written from here that it is inspired directly.
+[30:16] If a
+[30:18] transfer function of low frequency
+[30:20] or gain looks like this
+[30:22] then it should look like this of n stages.
+[30:24] What will be the difference?
+[30:26] There will be a difference.
+[30:28] Here, the gain is AV.
+[30:30] Here, the power n of AV.
+[30:32] Here, the lower cut-off frequency is small FL.
+[30:34] Here, capital FL.
+[30:36] There will be a difference.
+[30:38] Now, these two should be equal.
+[30:40] If these two should be equal,
+[30:42] dear, then you can say
+[30:48] that 1 plus
+[30:52] FL by F
+[30:54] should be equal to
+[30:56] 1 plus
+[31:00] FL by F
+[31:02] square
+[31:04] power n by 2.
+[31:06] You can say that, right?
+[31:08] It has been clarified so far.
+[31:10] Now, dear, if you
+[31:12] square the power here.
+[31:16] What do you do here if you
+[31:18] square it?
+[31:20] So, this will be your relation.
+[31:34] It will be like this.
+[31:36] Is it clear till here?
+[31:38] Tell me if anyone has any doubt here.
+[31:40] Now, what do I have to do here?
+[31:42] I don't have to
+[31:44] take out capital FL in terms of
+[31:46] small FL.
+[31:48] Now, if you go from here,
+[31:50] there will be a little problem.
+[31:52] Do you know what I say?
+[31:54] I say that
+[31:56] at
+[31:58] F equal to
+[32:00] capital FL
+[32:02] what should your gain be?
+[32:06] If this is the cut-off frequency
+[32:08] of the multi-stage amplifier,
+[32:10] then the gain should be
+[32:12] this.
+[32:14] Am I right?
+[32:16] Am I right? Tell me.
+[32:18] If the cut-off frequency
+[32:20] of the multi-stage amplifier is
+[32:22] capital FL, then this should be the gain.
+[32:24] Can you say this?
+[32:28] If you go from here,
+[32:30] there will be a problem in solving it.
+[32:32] You will start thinking about
+[32:34] binomial.
+[32:36] But I am telling you a good example.
+[32:38] Let's do conceptually.
+[32:40] I am saying that the lower cut-off frequency
+[32:42] should now come.
+[32:44] What should the gain be?
+[32:46] From mid-band gain,
+[32:48] 1 by root 2 times
+[32:52] FL by F.
+[32:54] Instead of F, you have put
+[32:56] capital FL.
+[32:58] Power N by 2.
+[33:00] Did you understand
+[33:02] what I did? I said
+[33:04] that if this transfer function is coming,
+[33:06] then the cut-off frequency
+[33:08] should have a gain of
+[33:10] mid-band gain by root 2.
+[33:12] This is the gain of the multi-stage
+[33:14] capital FL.
+[33:16] If I put capital FL instead of F,
+[33:18] then what should the gain be?
+[33:20] Mid-band gain by root 2.
+[33:22] If you cut
+[33:24] and cancel both the sides
+[33:26] and square it,
+[33:28] then you can say
+[33:30] 2 equal to
+[33:32] 1 plus FL
+[33:34] by capital FL
+[33:36] square
+[33:38] power N.
+[33:40] You can say that.
+[33:42] What to do here?
+[33:44] End power of 2 by 1.
+[33:48] And take this 1
+[33:50] to the left.
+[33:52] Can you say that?
+[34:00] Sorry, square.
+[34:06] From here,
+[34:08] capital FL
+[34:10] take root.
+[34:20] Will it come? Tell me.
+[34:22] Did you understand?
+[34:24] And this value will come
+[34:26] lower than 1.
+[34:28] So, this is greater than capital FL.
+[34:30] How will I know that it will come lower than 1?
+[34:32] You keep N as 2.
+[34:34] It is too much.
+[34:36] Keep N as 2.
+[34:38] So, root 2 is 1.414
+[34:40] minus 1.
+[34:42] That is 0.414.
+[34:44] So, you are dividing FL from 1
+[34:46] with a smaller value.
+[34:48] It will come out to be greater than FL.
+[34:50] So,
+[34:52] on cascading,
+[34:58] lower cutoff frequency increases.
+[35:02] Remember this formula,
+[35:04] in multi stage amplifier.
+[35:08] You have to remember this formula.
+[35:12] Because it will be derived like this.
+[35:14] But it will take time.
+[35:16] It will take time.
+[35:22] It is good.
+[35:24] Work hard.
+[35:26] If you keep N equal to 1,
+[35:28] then FL is the same stage.
+[35:30] So, capital FL and small FL
+[35:32] are equal.
+[35:34] Why, Divya?
+[35:36] If you keep N as 1,
+[35:38] then capital and small will be equal.
+[35:40] That is right.
+[35:42] Tell me, do you have any doubt
+[35:44] in this lower cutoff frequency?
+[35:46] Tell me quickly.
+[35:48] Do you have any doubt in this?
+[35:54] Come on.
+[35:56] Now, let's come to the upper cutoff frequency.
+[35:58] So, what do we know?
+[36:00] High frequency response.
+[36:06] You know, high frequency response
+[36:08] comes like a low pass filter.
+[36:10] High frequency response
+[36:12] of
+[36:14] an amplifier.
+[36:20] How much will it come?
+[36:26] You know, AV
+[36:28] HF
+[36:30] is AV
+[36:32] mid
+[36:38] 1
+[36:40] plus F by
+[36:44] FH's
+[36:46] square.
+[36:48] Now, what will you say?
+[36:50] When N such stages
+[36:52] are cascaded,
+[36:54] when N such stages
+[36:56] are cascaded,
+[37:08] then how much will your gain be?
+[37:12] You will say, sir, that this gain
+[37:14] will raise its power to N.
+[37:16] Correct.
+[37:18] You will say that you will raise its power to N.
+[37:22] If you raise its power to N,
+[37:24] then how much will it come?
+[37:26] Look.
+[37:28] AV
+[37:30] mid
+[37:36] to the power N
+[37:42] 1 plus F by FH's
+[37:44] square
+[37:46] power N by 2.
+[37:48] This will come.
+[37:50] Power N by 2.
+[37:54] Now,
+[37:58] look here,
+[38:00] if
+[38:02] in general,
+[38:04] if you write
+[38:06] high frequency response,
+[38:08] then what should you write?
+[38:10] Mid band gain.
+[38:12] Mid band gain is
+[38:14] AV mid to the power
+[38:16] N.
+[38:18] What should you write?
+[38:20] This is
+[38:22] 1 plus
+[38:24] F by
+[38:26] FH's
+[38:28] whole square.
+[38:30] This should be written.
+[38:32] What is capital FH here?
+[38:34] It is a cutoff frequency of multi-stage amplifier.
+[38:36] And what is small FH?
+[38:38] It is a cutoff frequency of
+[38:40] single stage amplifier.
+[38:42] FH is the
+[38:44] upper cutoff frequency
+[38:46] or
+[38:48] upper cutoff frequency
+[38:50] of
+[38:52] multi-stage amplifier
+[39:00] or small
+[39:02] FH
+[39:04] is the
+[39:05] lower cutoff frequency,
+[39:10] sorry,
+[39:12] upper cutoff frequency
+[39:14] upper cutoff frequency of single stage amplifier. Now you know when you are talking about cutoff
+[39:25] frequency, then the gain on cutoff frequency is 1 by root 2. I am using the same method
+[39:34] in the previous case. At f equal to f h, your gain should be A v mid to the power n divided
+[39:49] by root 2. So, if you keep capital F h instead of f, if you keep capital F h instead of f,
+[40:04] then what should you get? You should get gain, mid band gain by root 2. So, you see A v mid
+[40:24] to the power n divided by root 2. Now you square both sides. So, 2 will be 1 plus capital
+[40:39] F h and this is clear, right? Low frequency, high frequency response that I am writing, I
+[40:47] have derived it by comparing it with low pass filter and high pass filter. So, Satya,
+[41:00] in general, how many faculties do you get in one place, Korki? Tell me, in general, you
+[41:07] prepare from anywhere, how many educators do you get in Korki? Look at this, okay? So,
+[41:25] what will be capital F h from here? Small f h, 2's power. So, we are in multiplication
+[41:40] here, dear. The factor that was coming in the division there, so we are in multiplication here.
+[41:46] You are talking nonsense, Satya, tell me, where do you see the same subject multiple teachers
+[41:51] studying? Tell me, I will arrange that in different ways, but I want to understand the demand.
+[41:59] In general, where do you see the same subject multiple teachers studying in the same place
+[42:03] except for the academy? In the academy, I had seen such a system for the first time that
+[42:11] one subject is studying multiple teachers, the rest I have not seen in India such a system.
+[42:17] Okay, my point has been cleared up to this point. Now, look here, the capital F h is less
+[42:26] than small f h because this factor is smaller than 1. And do you know, one more thing, I will tell you,
+[42:34] the bandwidth is capital F h minus capital F l which is similar to capital F h. Because
+[42:51] what happens is that the f l is, okay? If f l is much smaller than f h, the f l is much
+[43:00] smaller than f h, then the bandwidth is approximately this much. So, you can also say this. Therefore,
+[43:08] bandwidth of multi-stage amplifier
+[43:23] reduces by a factor of
+[43:39] 1. So, in cascading, if your gain increases, then your bandwidth is reduced.
+[43:49] Aman, my brother, if you teach different faculty subjects of a coaching at different centers,
+[43:56] then the child goes to different centers, that today the machine will study at this center,
+[44:03] there are some minor demands, now look, I will show you this graphically,
+[44:12] content should be good, you are getting the content top, questions are getting the top level,
+[44:18] I don't know what should be in life,
+[44:21] I am dealing alone, so what is the problem with my burden, I am happy, I am not saying that I am
+[44:33] being burdened, brother, look at this, I am making this single stage amplifier, okay,
+[44:48] this is made of single stage amplifier, the gain is less, okay, the gain is less, and what are you getting here,
+[45:02] bandwidth is getting a lot, look,
+[45:07] okay, tell me the truth, do you want a teacher on YouTube,
+[45:13] teacher, look at this, this is done, this is small f l and small f h, small f l and small f h,
+[45:37] okay, now look here, then look at the recorded on the plus, if you have such a teacher,
+[45:47] what happened,
+[45:51] look at this,
+[46:07] look at this, and look at this, look, your gain has increased when you do multi stage,
+[46:19] correct, the gain has increased, but look at this, along with this, your capital f l is getting bigger than small f l,
+[46:28] and capital f h is getting smaller than small f h,
+[46:33] do you understand, the bandwidth has gone down, see, it is getting clear, the gain is increasing, the gain is increasing, and the bandwidth is decreasing,
+[46:48] the gain is increasing and the bandwidth is decreasing, now look, Neeraj Kumar is different, he needs multiple options on YouTube,
+[46:56] that one subject is taught by multiple teachers, free of cost, wow, wow, you people are not getting it,
+[47:08] what kind of questions are you asking, faculty training program, they have their own style of teaching, what will I train them,
+[47:16] Satya, look, not everything can be met by you, and first of all, it is not at all clear to me that when you take a product or join a class,
+[47:33] when you join a class, then there you have a time when you teach a subject multiple times,
+[47:40] definitely, such an academy has done, such a system has brought an academy, but will it always be or will you always have multiple options,
+[47:49] it is not necessary, the formula of bandwidth, what did I say, this f l is very less than f h, so bandwidth is also approximately
+[48:00] f h, bandwidth is also approximately f h, if the number is right in the test series, then why is the confidence going down,
+[48:12] means what else do you want in life, Mr. Modi is saying, repeat the graph, look, this is my blue graph,
+[48:19] it is a single stage amplifier, its gain is less, but its bandwidth is good, this is the green one,
+[48:27] when our gain has increased from the red one, when our gain has increased from the red one,
+[48:32] look at the graph of the graph, the bandwidth has narrowed down, here the bandwidth has decreased,
+[48:45] do you understand, so the gain increases in the multi stage, but the bandwidth decreases,
+[48:52] is this clear, come on, if there are interacting stages, if there are interacting stages,
+[48:59] then how much cutoff frequency is there, then look at its formula, this is f l is 1.1 root over f l 1 square
+[49:18] over f l 2 square over f l n square, and for f h it is just its reciprocal,
+[49:34] is this clear, so this is your,
+[50:04] is this clear, now Satya Ji is saying that why can't we have one more faculty for course,
+[50:13] subject simple because the budget increases, if you keep a subject multiple teacher, then the expense is also more,
+[50:20] obviously, if the syllabus is being covered, then what is the sense of multiple teachers,
+[50:25] what is its sense, okay, the system of anacademy, but if you traditionally look at the coaching system,
+[50:32] if you look at the coaching system, then what does the coaching system say, in the coaching system,
+[50:36] it is a dedicated faculty of every subject, now look at the different things, the system of anacademy is completely different from the world,
+[50:43] and I am not saying that there will be multiple faculties in the future, but it is not that it is compulsory,
+[50:50] so I had told you that when you have to spam, then please go away, okay, I will block you or you go away yourself,
+[51:04] why are you spamming, you have a problem, keep your problem to yourself, what are you telling us,
+[51:10] yes, I had told you that maximum and minimum is only when the difference between the two frequencies is the difference of the earth and the sky,
+[51:20] when the frequencies are quite close, then the maximum and minimum do not seem to be the difference,
+[51:26] okay, do you remember, I had told you that the maximum and minimum seems to be the difference when there are at least four differences in the two frequencies,
+[51:36] okay,
+[51:40] yes, then it was the intersection, let's move ahead, now let's come to the next,
+[51:46] when multiple amplifiers are connected together, then it is called coupling, now how many types of coupling can be there,
+[51:55] so the first coupling is RC coupling, if you see in RC coupling, there is a resistance and a capacitor,
+[52:04] the main thing here is capacitor, do you remember when I was teaching you the amplifier, AC model,
+[52:10] so there was one capacitor on the input and one capacitor on the output, what did we call them,
+[52:16] so what are we saying here,
+[52:46] what did we call it RC coupling, that from one stage to the second stage,
+[52:57] okay, from one stage to the second stage, your signal will go through a capacitor, it will not be connected directly to the second stage from one stage to the second stage,
+[53:09] okay, now what happens in this, actually if you talk about DC signal, see the output you get on the collector,
+[53:19] it will be DC plus AC, due to biasing, you will get DC and due to AC input, you will get AC,
+[53:28] so the DC signal coming here on this collector,
+[53:33] that DC signal will not be able to pass through the capacitor, because for DC, the capacitor will act as an open circuit,
+[53:42] that is, from one stage to the second stage, what will happen, AC will pass through, not DC,
+[53:49] is this desirable, absolutely desirable, because what will happen with this, see I can separate the biasing of different stages,
+[53:57] I am not saying that the biasing of one stage, the Q point, will affect the other stage, I never want that,
+[54:06] because then what will happen, I am not controlling the biasing of the second stage, I am not controlling its Q point,
+[54:12] I am not controlling its trans conductance, I am not controlling its RPI, that is, the parameter of the second amplifier is not in my control,
+[54:21] if you want to control the gain of any amplifier, then you will have to control its biasing,
+[54:29] because the parameters RPI, GM, R0, all these depend on the biasing, so if your biasing has gone out of your control,
+[54:39] then the gain of this amplifier will not be in your control,
+[54:43] this is what you are realizing, till now you have studied the biasing and AC analysis separately,
+[54:49] but the gain of the AC system, the gain of the amplifier depends on which, it depends on the biasing,
+[54:57] so what are we saying here, that the DC signal from one stage does not pass to other stage,
+[55:27] so bias of each stage can be independently controlled,
+[55:57] so what is the fun, that I can control the gain of each stage with my own will,
+[56:13] so that the overall gain is in my hands, overall gain is also my wish,
+[56:19] the first stage has to be 10, the second one has to be 20, the next one has to be 100, it is my wish,
+[56:24] now here it is that the capacitor with DC biasing works as an open circuit,
+[56:32] due to which the Q point does not interact with each other, so the Q point is stable,
+[56:39] and what is its drawback, the reactance is 1 by omega C,
+[56:45] so what happens at low frequency, your XC comes high,
+[56:56] so a large drop will come here and the output will be low, the gain will be less,
+[57:07] so this is what I taught you in the frequency response,
+[57:10] at low frequency you get less gain due to coupling capacitor and bypass capacitor,
+[57:19] so when you have put the coupling capacitor in the middle, then you will get less gain,
+[57:26] so this is the problem here, at low frequency you get less gain,
+[57:31] at high frequency you will get less gain, at high frequency due to internal capacitance,
+[57:37] no one has to take it from the coupling, this is due to internal capacitance and load capacitance,
+[57:46] but the low frequency gain is getting less due to coupling capacitor,
+[57:53] let me tell you, is the RC coupling clear,
+[57:58] let me quickly tell you all the kids, then we will move ahead and let me also have water,
+[58:06] clear, next is direct coupled amplifier,
+[58:20] direct coupled means no capacitor has been placed directly,
+[58:27] do you know where it is used, it is used in opamp,
+[58:31] it is called opamp, it is a direct coupled amplifier,
+[58:37] where do you use it practically in opamp,
+[58:42] now when you have directly coupled, then you will understand that DC will also go from one stage to another stage,
+[58:51] correct, DC will also go from one stage to another stage,
+[58:56] then the level of DC will also increase stage by stage,
+[59:02] the level of DC will also increase,
+[59:05] that is why here you see you are getting gain on low frequency,
+[59:10] that is this amplifier is capable of amplifying even a DC signal,
+[59:16] because DC is able to pass from one stage to the other,
+[59:22] okay, did you understand this?
+[59:25] Such an amplifier, such an amplifier can also amplify DC signal as DC can pass,
+[59:47] can pass from one stage to next,
+[60:03] okay, DC can go from one stage to another stage,
+[60:08] so DC can also amplify,
+[60:11] now tell me what will be the loss, tell me quickly,
+[60:14] what will be the loss, tell me quickly, what will be the loss,
+[60:26] tell me quickly,
+[60:32] no, the bandwidth is always reduced in the multi stage,
+[60:36] what to take from its capacitor coupling,
+[60:39] the bandwidth is always decreasing,
+[60:41] the loss is that now you cannot keep the Q point of every stage independent,
+[60:48] from the Q point of each stage, from the DC of each stage,
+[60:52] the biasing of the second stage will also be affected,
+[60:56] the biasing of the second stage will also be affected,
+[60:59] now you think one way,
+[61:01] if you consider that it has some collector current,
+[61:04] will the next one be more,
+[61:06] will the next one be more,
+[61:07] so if the collector current increases,
+[61:10] then you do not think that the chance is that it goes from active to saturation,
+[61:15] if the stage by stage your IC is getting amplified,
+[61:20] because DC is also getting amplified,
+[61:22] because DC is also getting amplified,
+[61:25] then it can also be that where the Q point will reach,
+[61:29] the Q point will reach in the saturation region,
+[61:32] that is why the level of DC is increasing,
+[61:35] but it is necessary to reduce it and bring it back,
+[61:39] now where did this noise come from Krithivas,
+[61:42] the reason for the noise was that the noise is on high frequency,
+[61:46] so the amplifiers amplify the high frequency also,
+[61:50] there noise is amplified,
+[61:52] what do you think of noise,
+[61:54] noise is undesirable signal,
+[61:56] what is noise undesirable signal,
+[61:59] like you are sitting in a classroom,
+[62:01] trying to teach a teacher,
+[62:02] the kids are shouting,
+[62:04] so the noise is undesirable,
+[62:06] because the main signal, the teaching signal,
+[62:09] is distorting it, it is ruining it,
+[62:11] so that is noise,
+[62:13] what is the noise of DC amplifiers,
+[62:16] what are we saying,
+[62:18] there are two things in each amplifier,
+[62:21] DC and the other AC,
+[62:23] when you have directly coupled here,
+[62:26] then DC will also go from one stage to another stage,
+[62:29] so whatever the DC collector current is,
+[62:32] the third one is more than the collector current,
+[62:35] the third one is more than that,
+[62:37] if the collector current increases,
+[62:39] then it will go into the saturation from the active,
+[62:42] if it goes into the saturation,
+[62:44] then my brother will not get the amplification again,
+[62:48] because what is the amplification,
+[62:51] in the active region,
+[62:53] okay in the active region,
+[62:55] after BJT there will be no opamp,
+[62:57] there are BJTs in the opamp,
+[62:59] there are transistors in the opamp,
+[63:02] so such a coupling of transistors is done in the opamp,
+[63:06] okay brother Tintin,
+[63:08] if you open the opamp and see,
+[63:10] then the transistors will be directly coupled,
+[63:13] the opamp is not a different device manufacturer,
+[63:16] it is just a collection of transistors,
+[63:20] now listen to me,
+[63:22] in the opamp, this problem will come,
+[63:24] that DC level, level, level increases,
+[63:26] that is why when I teach opamp,
+[63:28] there is one device in it,
+[63:30] called level shifter,
+[63:32] it does it, because of direct coupling,
+[63:34] the DC that is increasing,
+[63:36] it brings it back down,
+[63:38] it brings it back down,
+[63:40] otherwise the problem will be ahead,
+[63:42] that your device will go into saturation mode from active.
+[63:47] Did you understand?
+[63:49] Did you understand or not,
+[63:51] quickly confirm all the kids,
+[63:53] all my things are clear here,
+[63:55] its drawback, advantage, both things are clear,
+[63:57] so see what is the advantage,
+[63:59] it can amplify both AC and DC
+[64:00] due to absence of coupling capacitor,
+[64:03] so its low frequency response,
+[64:05] your first response is better,
+[64:07] the first low frequency response was less,
+[64:10] the gain was less,
+[64:12] now the gain is more on low frequency,
+[64:14] so low frequency response is getting better,
+[64:17] so that is why we use it in industrial instrumentation amplifier,
+[64:22] instrumentation amplifier is made from opamp,
+[64:25] so it is used in opamp,
+[64:27] such coupling is used,
+[64:29] and its gain is also more,
+[64:31] Zanul is saying,
+[64:33] what is the level shifter,
+[64:35] what is the level shifter,
+[64:37] I will teach you this in opamp,
+[64:39] because it is used in opamp,
+[64:41] we are not talking about opamp now,
+[64:43] but now you understand,
+[64:45] why did you need it in opamp of level shifter,
+[64:47] because when your DC also passed from one transistor to another,
+[64:52] then DC level increased,
+[64:54] due to which the chances of saturation increased,
+[64:57] if you wanted to save from saturation,
+[65:00] then you have to zero DC,
+[65:02] means you have to shift the signal back down,
+[65:05] that is the level shifter,
+[65:07] you think as if the signal has become like this,
+[65:10] 5 ampere,
+[65:12] think like this, not 5 ampere,
+[65:14] 5 milli ampere plus 1 micro ampere sine omega t,
+[65:18] 5 milli ampere DC plus 1 micro ampere sine omega t,
+[65:22] this is AC,
+[65:24] in the next stage,
+[65:25] when you shift the level shifter,
+[65:28] then this 5 milli ampere will come back to zero,
+[65:31] then what will you have left, AC,
+[65:33] DC will not be left,
+[65:35] then what will you have left, AC,
+[65:37] that is 1 micro ampere sine omega t,
+[65:40] do you understand,
+[65:42] so I have to remove DC,
+[65:44] DC increases,
+[65:46] what is the drawback,
+[65:48] Q point is unstable,
+[65:50] Q point will increase stage by stage by stage,
+[65:53] okay,
+[65:55] because of shift,
+[65:57] output will be destroyedly distorted,
+[66:00] it will not be destroyed,
+[66:02] it will be distorted,
+[66:04] do you know why it gets distorted,
+[66:06] suppose when a device goes in saturation,
+[66:08] then what happens in your saturation,
+[66:11] collector current becomes flat,
+[66:13] so if you put AC,
+[66:15] it will not be able to oscillate,
+[66:17] if it is saturated,
+[66:19] it will cut it,
+[66:21] it will not let it go above the saturation level,
+[66:23] it will clip it,
+[66:25] it was a perfect sinusoidal waveform,
+[66:27] it will not remain sinusoidal,
+[66:29] do you understand,
+[66:31] what happens in saturation,
+[66:33] that current almost becomes constant,
+[66:35] so when you want it to vary sinusoidally,
+[66:37] so it will not be able to go above the level of saturation,
+[66:40] it will cut it,
+[66:42] so it will become a flat topped graph,
+[66:44] it will become a trapezoidal type graph,
+[66:46] so there is a big problem,
+[66:48] suppose I have to give a speech,
+[66:50] yesterday I went to politics,
+[66:52] so I want to give a speech,
+[66:53] I am telling you,
+[66:55] it reached people in a very high voice,
+[66:57] now in a very high voice,
+[66:59] sometimes you see it in the mic,
+[67:01] it gives a beep sound,
+[67:03] so what does it do,
+[67:05] you said it right,
+[67:07] but what did the amplifier do,
+[67:09] it distorted that signal,
+[67:11] it changed the tone of that signal,
+[67:13] what happened with it,
+[67:15] my voice did not reach the public,
+[67:17] I am telling you something else,
+[67:19] I am telling the public something else,
+[67:21] which is not good,
+[67:23] the amplifier will clip the signal,
+[67:26] it will destroy the waveform of the signal,
+[67:28] so my children,
+[67:30] the information that you want to convey,
+[67:33] the signal that you want to send,
+[67:35] will not reach the signal,
+[67:37] the signal will change,
+[67:40] why does distortion come to everyone,
+[67:42] information changes,
+[67:44] now the last is transformer coupled amplifier,
+[67:47] now the electrical one,
+[67:49] if anyone is watching,
+[67:50] the transformer is coming,
+[67:52] transformer coupled amplifier,
+[67:54] is used only on the output stage,
+[67:56] what does the output stage mean,
+[67:58] when you are making a multi stage amplifier,
+[68:00] the last stage,
+[68:02] the last stage,
+[68:04] will be used by the transformer,
+[68:06] because the transformer,
+[68:08] even small,
+[68:10] is bigger than BJT,
+[68:12] think about it,
+[68:14] the transformer is so small,
+[68:16] even then it is much bigger than BJT,
+[68:18] BJT is in nanometer and micrometer,
+[68:20] because it is bulky,
+[68:23] so where do we use it,
+[68:25] on the last stage,
+[68:27] now look here,
+[68:29] when the transformer comes,
+[68:31] inductance comes,
+[68:33] what comes,
+[68:35] when the transformer comes,
+[68:37] the inductance introduced,
+[68:39] the capacitance was already there,
+[68:41] what was the capacitance,
+[68:43] internal and parasitic capacitance,
+[68:45] what is CP,
+[68:47] CP is the internal
+[68:48] and parasitic capacitance,
+[68:51] so the capacitance was already there,
+[68:54] and what did you introduce,
+[68:56] transformer,
+[68:58] from which the inductance came,
+[69:00] so when the son will sit together,
+[69:03] 2 or 3,
+[69:05] inductance and capacitance,
+[69:07] then what will happen,
+[69:09] then there will be resonance,
+[69:11] and what will be the resonance frequency,
+[69:13] where you can see the gain,
+[69:15] where you can see the spike,
+[69:17] 1 by 2 by root LCP,
+[69:21] okay,
+[69:23] here you will have resonance,
+[69:25] and you know the resonance,
+[69:27] the peak you get is the current,
+[69:30] the peak you get is the output,
+[69:32] so here you can see the spike,
+[69:34] understood,
+[69:36] you will see a spike on the resonance frequency,
+[69:38] now what is the benefit of this,
+[69:40] here you can use maximum power transfer
+[69:42] or impedance matching,
+[69:43] where the source and output resistance
+[69:45] becomes equal,
+[69:47] which you think is MPT,
+[69:50] Sir, is MPT desirable,
+[69:52] listen to me,
+[69:54] when you have covered the network with me,
+[69:57] in maximum power transfer theorem,
+[70:00] efficiency is only 50%
+[70:03] how much,
+[70:05] 50%,
+[70:07] that is why we prefer MPT,
+[70:09] we prefer MPT,
+[70:10] that is why we do not prefer MPT,
+[70:14] but,
+[70:16] where the efficiency of amplifiers is 25%,
+[70:19] 25%,
+[70:21] 30%,
+[70:23] there is 50%,
+[70:25] there is a God level efficiency,
+[70:27] understood,
+[70:29] God level efficiency is 50%,
+[70:31] it is not a big deal,
+[70:33] there is a 50% efficiency,
+[70:35] so here the maximum power transfer,
+[70:37] which is in electronics,
+[70:38] is desirable in electronics,
+[70:40] we do not put it in electrical,
+[70:42] when it comes to machines,
+[70:44] when it comes to transformers,
+[70:46] when it comes to high powers,
+[70:48] when it comes to kilowatts,
+[70:50] when it comes to 50% efficiency,
+[70:52] that means,
+[70:54] a lot of wastage,
+[70:56] and the amount of power waste,
+[70:58] think about the expenses,
+[71:00] because,
+[71:02] the amount of energy you use at home,
+[71:04] the amount of power waste,
+[71:06] you can convert it to cost,
+[71:08] if you waste it,
+[71:10] then how much is the expense,
+[71:12] the money is wasted,
+[71:14] the resource is wasted,
+[71:16] everything is wasted,
+[71:18] so there is no 50% desirable,
+[71:20] 90%, 95%,
+[71:22] 85%,
+[71:24] there is a talk of efficiencies,
+[71:26] and in analog,
+[71:28] there are efficiencies,
+[71:30] 20%, 25%, 30%,
+[71:32] so here 50% is very, very good,
+[71:34] and this efficiency,
+[71:36] I told you earlier,
+[71:38] it can come into the work of
+[71:40] impedance matching,
+[71:42] look here,
+[71:44] let me show you the meaning of R0 and RL,
+[71:50] it is fun,
+[71:52] all these are conceptual things,
+[71:54] to do it,
+[71:56] we can only do numerical and numerical,
+[71:58] but if you want to crack
+[72:00] a VLSI type interview,
+[72:02] then you should have conceptual understanding
+[72:04] of analog,
+[72:06] that if you are using something,
+[72:08] RL,
+[72:14] look here,
+[72:16] if I am referring to RL on your secondary side,
+[72:19] then it is becoming R0,
+[72:21] so look,
+[72:23] I have also written that this efficiency
+[72:25] comes almost 50%,
+[72:27] the drawback is that the size has increased,
+[72:29] it is a simple thing,
+[72:31] you talk about integrated circuits,
+[72:33] you talk about
+[72:35] manufacturing all devices on one chip,
+[72:36] and the arrival of transformer
+[72:38] is going to consume a lot of space,
+[72:40] so it is a large size,
+[72:42] because of the transformer,
+[72:44] the cost will increase,
+[72:46] and there is a poor frequency response,
+[72:48] why is it poor,
+[72:50] because the gain is less on the lower high frequency,
+[72:52] we call it poor,
+[72:54] when the gain starts to increase,
+[72:56] with the increase or decrease,
+[72:58] so that is a poor kind of a response,
+[73:00] it is not good,
+[73:02] now look,
+[73:04] today I am covering only one amplifier,
+[73:06] common emitter,
+[73:08] so look here, there are two stages,
+[73:10] I will show you by marking two stages,
+[73:14] here my children,
+[73:16] you have two stages,
+[73:18] this is the first stage,
+[73:22] and this one is your
+[73:25] second,
+[73:29] this one is your second stage,
+[73:32] okay,
+[73:34] look in between,
+[73:36] this is the capacitor we have applied,
+[73:38] this is the stage you recognize,
+[73:40] common emitter amplifier,
+[73:42] you recognize this stage very well,
+[73:44] and the second is common emitter amplifier,
+[73:46] the second is your common emitter amplifier,
+[73:49] now what will happen in this,
+[73:51] one output is becoming another input,
+[73:53] so their gain will be multiplied by you,
+[73:57] so look here,
+[74:00] what can you say,
+[74:03] that if you
+[74:04] see an amplifier,
+[74:06] then what will happen in it,
+[74:08] there will be a voltage gain in it,
+[74:11] there will be an input resistance,
+[74:13] and there will be an output resistance,
+[74:20] like this first,
+[74:29] look,
+[74:31] I am representing the amplifier from the box,
+[74:33] I am saying,
+[74:35] its gain is AV1,
+[74:37] input resistance R I1,
+[74:40] output resistance R01,
+[74:43] its gain is AV2,
+[74:45] input resistance R I2,
+[74:48] output resistance R02,
+[74:51] okay,
+[74:53] there will be a gain,
+[74:55] there will be an input resistance,
+[74:57] there will be an output resistance,
+[74:59] now what will be R I1,
+[75:00] see when you make an AC model,
+[75:03] R1, R2 will come in parallel,
+[75:05] do you agree,
+[75:07] R1, R2 will come in parallel,
+[75:09] so when you write R I1,
+[75:12] you will write R1,
+[75:15] parallel R2,
+[75:17] parallel R pi1,
+[75:19] its R pi will also be,
+[75:21] R1, parallel R2, parallel R pi1,
+[75:25] and how much R01 will be,
+[75:27] this is RC1,
+[75:28] this is RC1,
+[75:30] R01 will be equal to RC1,
+[75:36] and if you want AV1,
+[75:39] then you can write this,
+[75:45] minus GM,
+[75:47] RC1,
+[75:49] into,
+[75:51] R I1,
+[75:54] by RS plus,
+[75:55] plus,
+[75:57] R I1,
+[75:59] like this,
+[76:01] okay,
+[76:03] this will be your gain,
+[76:05] okay,
+[76:07] see I am making it from the circuit of the gain,
+[76:09] this is R0, RC,
+[76:11] this is your Rn from the voltage division,
+[76:13] see,
+[76:15] if you look at this model,
+[76:17] Rb, parallel R pi,
+[76:20] Rb actually,
+[76:22] Rb is,
+[76:24] parallel combination,
+[76:29] of,
+[76:31] voltage divider resistances,
+[76:35] the resistances that come
+[76:37] in your voltage divider network,
+[76:39] are,
+[76:41] Rb, parallel R pi,
+[76:43] Rb is,
+[76:44] the resistances that come in your
+[76:46] voltage divider network,
+[76:48] are,
+[76:50] their parallel combination,
+[76:52] okay,
+[76:55] example,
+[76:57] R1 parallel R2,
+[77:02] this is your voltage V pi,
+[77:07] okay,
+[77:09] how much your V0 will be,
+[77:11] minus GM V pi,
+[77:14] Rc,
+[77:16] now you know,
+[77:18] R0 is quite high,
+[77:22] so,
+[77:24] how much V0 will be,
+[77:26] minus GM V pi,
+[77:28] Rc,
+[77:30] so, I have removed the V pi from the
+[77:32] voltage division,
+[77:34] I have removed the V pi from the
+[77:36] voltage division,
+[77:38] like this,
+[77:40] Vs,
+[77:42] Rn,
+[77:45] do you understand everyone,
+[77:47] how I write all these formulas
+[77:49] directly,
+[77:51] tell me, if anyone has any doubt,
+[77:53] if anyone has any doubt,
+[77:55] child, how will you write
+[77:57] Ri2 here,
+[77:59] how will you write,
+[78:03] its also,
+[78:05] biasing resistances,
+[78:08] R02,
+[78:11] this will also be Rc2,
+[78:13] and AB2,
+[78:16] you call this as GM1,
+[78:19] minus GM2,
+[78:21] Rc2,
+[78:23] now see, the voltage division
+[78:25] here,
+[78:27] Ri2,
+[78:29] over,
+[78:31] R01,
+[78:33] plus Ri2,
+[78:35] the first output resistance,
+[78:38] along with that,
+[78:40] your second,
+[78:42] input resistance,
+[78:44] will have to be taken,
+[78:46] and RL is also given here,
+[78:48] RL is also given,
+[78:50] so if you want,
+[78:52] you can take a factor along with RL,
+[78:54] otherwise, in the end,
+[78:56] you can take it along with RL,
+[78:58] in the end, you can take it along with RL,
+[79:00] my point has been cleared up here,
+[79:02] my point has been cleared up here,
+[79:05] is it clear,
+[79:07] tell everyone,
+[79:09] tell everyone,
+[79:13] so what will you do now,
+[79:15] even if you know,
+[79:17] if you look at the circuit for a second,
+[79:19] the second input resistance will be given,
+[79:21] this factor,
+[79:23] actually,
+[79:25] you should take it here,
+[79:27] because one more resistance will be given,
+[79:30] like this,
+[79:39] this will come,
+[79:41] okay,
+[79:43] Rc2 and RL will be parallel,
+[79:45] so what can you take out here,
+[79:47] dear,
+[79:49] you can take out the total here,
+[79:51] gain,
+[79:53] voltage gain,
+[79:56] is Av1
+[79:58] into Av2,
+[80:00] if you know,
+[80:02] if you are confused,
+[80:04] if you are confused,
+[80:05] into Av2,
+[80:07] if you know, if you are confused,
+[80:09] then what to do,
+[80:11] draw a model like this,
+[80:13] one after the other,
+[80:15] draw a model, what you have to do in the cascade,
+[80:17] where this model is ending,
+[80:19] your next model will start from there,
+[80:22] so you have to connect the second model to it,
+[80:24] so you can make the whole by doing the circuit analysis,
+[80:27] do you understand,
+[80:29] you can make the whole by doing the circuit analysis,
+[80:31] you can make the whole by doing the circuit analysis,
+[80:34] you got it clear,
+[80:37] so that is it,
+[80:39] common emitter, common emitter,
+[80:41] okay, I have some drawbacks here,
+[80:43] and I will write the advantages,
+[80:49] now the next amplifier,
+[80:51] we call it as Cascode,
+[80:53] there, one common emitter is there,
+[80:55] the other common base is there,
+[80:57] but I will do it in the next lecture,
+[80:59] Cascode is left,
+[81:01] This is the advantage of large gain because you know that the gain of common emitter is more.
+[81:09] If both the stages are common emitter then the gain multiplied will be much more.
+[81:15] Second is moderate input resistance. This is the next cascode.
+[81:20] After that there is Darlington pair.
+[81:22] So we will cover these both in the next class.
+[81:27] In today's lecture, the important portion that you have covered.
+[81:30] There is no special question in Cascade.
+[81:33] Because both the common emitter is only gain multiplied.
+[81:36] But dear, the cascode and Darlington pair.
+[81:40] There is a question on this.
+[81:42] Now its simple design.
+[81:45] Its design is also quite simple.
+[81:49] Ok.
+[81:53] So tomorrow we will do the second lecture of multi-stage amplifier.
+[81:57] And we will pursue differential amplifier.
+[82:00] With which our BJT will be completed.
+[82:02] So there are two lectures left for BJT theory wise.
+[82:05] Then we will have an assignment discussion.
+[82:07] After that we will go to JFET.
+[82:09] According to me, the course is going on at a very good speed.
+[82:13] This is the fastest running course according to me.
+[82:16] Look, the more the gain increases, the lower the bandwidth will be.
+[82:20] Ok.
+[82:22] Because the bandwidth is less, we go to the cascode.
+[82:25] Because the bandwidth of the cascode is more.
+[82:33] Dear, here is poor efficiency.
+[82:36] Because as you keep cascading, your efficiency will fall.
+[82:41] Because your efficiency is already less.
+[82:47] Poor.
+[82:49] Low and high frequency response.
+[82:54] Both the low and high frequencies have less gain.
+[82:58] So we call this response as poor.
+[83:01] Ok.
+[83:02] Clear?
+[83:04] So we will continue tomorrow.
+[83:06] We will continue tomorrow.
+[83:08] There will be a cascode connection.
+[83:10] It will be fun.
+[83:11] And you will draw the AC model in it.
+[83:14] You will draw the AC model of two stages.
+[83:16] It is simple in cascading.
+[83:18] Take out the gain of both.
+[83:20] Take the factor of voltage division.
+[83:26] In the oscillator, the stability does not increase.
+[83:28] From positive feedback, the factor of stability is taken out.
+[83:31] That how stable it will be.
+[83:33] That is, you can compare the stability of two oscillators.
+[83:36] You will not say that the stability increased from positive feedback.
+[83:39] Without positive feedback, it will not work.
+[83:41] The oscillator will not work without positive feedback.
+[83:43] It is helpless.
+[83:44] It does not mean that it becomes more stable.
+[83:47] The oscillators are still marginally stable.
+[83:51] So look, this is the link.
+[83:53] You can solve the maximum questions of BJT.
+[83:56] Except cascodes, Darlington pair and differential amplifier.
+[84:00] You can apply everything from here.
+[84:02] Go to gate PYQ by AIR1.
+[84:05] And if you want to join the academy, then there are plus and iconic.
+[84:08] Both are available for you.
+[84:10] You will get the top teachers.
+[84:12] As much as you study, you will get the study material app.
+[84:15] You will get the test series.
+[84:17] But in Iconic, there is a custom doubt solving.
+[84:20] If there is a new doubt, then you will get the video solution.
+[84:23] Printed notes will be sent home.
+[84:25] One to one mentorship will be done.
+[84:27] The strategy and study plan will be made.
+[84:29] The open house session will also be interactive.
+[84:33] What do you have to do?
+[84:35] You have to join the academy.
+[84:37] You have to choose the plus or iconic
+[84:39] and decide the duration.
+[84:41] And at the last payment time, you have to apply the code.
+[84:44] Ankit ESE.
+[84:46] If you will see the results, then we have produced the results.
+[84:50] We have taken out 6 ranks in the top 10.
+[84:53] You can be one of them next year.
+[84:55] Just join the academy using the code Ankit ESE.
+[84:59] And if there is a financial issue, then you can go for EMI
+[85:02] where you can fill your fees monthly.
+[85:04] No interest will be required.
+[85:06] EMI will be approved in just 2 hours.
+[85:08] Atleast you will get a paperwork,
+[85:10] Aadhar card, and a PAN card as a document.
+[85:12] But you have to give a document of a member in your family
+[85:15] who gets regular salary so that the bank can give them EMI.
+[85:19] And you can repay it in a flexible duration of time.
+[85:22] If you will see the Brahmastra Plus batch that we have launched.
+[85:26] What is the benefit of joining it?
+[85:28] It is your daily doubt clearing class.
+[85:30] You get DPP.
+[85:32] There are exclusive live classes.
+[85:34] There are practice strategy sessions.
+[85:36] You are getting test series on the app.
+[85:38] The Paramount material of the Gate Academy.
+[85:41] Gate Academy Workbook Gate Academy Previous Year Question.
+[85:44] All of this is included in your Brahmastra Plus batch.
+[85:48] And your course will be completed in the Brahmastra batch on YouTube.
+[85:53] You will get a top educator.
+[85:55] But study material, doubt clearing, strategy, motivation.
+[85:59] Paramount Workbook Previous Year Question.
+[86:02] You will get this only in Brahmastra Plus batch.
+[86:05] And if you want to join the Academy.
+[86:08] You can take a subscription of 4 months.
+[86:10] Which will go to the Gate Exam.
+[86:12] And you can apply the code for payment here too.
+[86:15] Okay.
+[86:17] This is my telegram channel.
+[86:19] Join it.
+[86:21] So that you don't miss any class.
+[86:23] It will be 11.30 tomorrow.
+[86:25] And this is the contact number of my team.
+[86:27] No problem.
+[86:29] No need to call on this number.
+[86:31] Press the plus and iconic ones.
+[86:33] Press the YouTube ones.
+[86:35] Okay.
+[86:36] And how to access the community.
+[86:38] Where you will get its PDF.
+[86:40] Go to the Academy app's homepage.
+[86:42] Go to the community.
+[86:43] Go to the Discover.
+[86:44] I will get it there.
+[86:45] And you will get all these PDFs.
+[86:47] Tomorrow it will be 11.30.
+[86:49] Today just because of Dashera and Pooja.
+[86:51] We are a little late for class.
+[86:53] Because I didn't want this.
+[86:54] Your class had to shift me or leave me.
+[86:57] So I wanted to take it.
+[86:58] So I knew I would be free for lunch.
+[87:00] So after lunch I can take your class easily.
+[87:02] Plus class is also 11.30.
+[87:04] So I had half an hour left for your class.
+[87:06] So I thought I will take some time for Pooja.
+[87:08] Let's give time to the family.
+[87:10] And then we will engage our kids in a good way.
+[87:12] We will not do anything that will make you feel.
+[87:14] You should feel in each lecture.
+[87:16] Then it will be fun.
+[87:18] If you are just doing this.
+[87:20] Then it is done.
+[87:22] If you are not going to go out.
+[87:24] It is tough to go out.
+[87:26] If your family wants to go out.
+[87:28] What to do.
+[87:29] It is 7.30 am.
+[87:30] It is 7.30 am.
+[87:32] There are so many classes at EMT class.
+[87:34] Because it is Diwali time.
+[87:36] Things start coming very close to the gate exam.
+[87:39] So here you have to keep your content.
+[87:41] Your teaching.
+[87:42] These things have to be kept very seriously.
+[87:44] Because if there is a slight 19-20 in this.
+[87:47] Then the question of your career comes.
+[87:49] So there are a lot of things.
+[87:51] It is not that you sacrifice as a student.
+[87:53] We also have to sacrifice as a teacher.
+[87:56] So that you become successful.
+[87:58] And somewhere in your success.
+[88:00] Somewhere in our success.
+[88:02] What is the aim of us.
+[88:03] Why do we teach you every year.
+[88:04] So that you bring good rank.
+[88:06] Now see this year I have made you complete the control system.
+[88:09] I am completing the analogue.
+[88:11] After this I am bringing your crash course.
+[88:13] Of course subjects.
+[88:14] So I am doing a lot of things.
+[88:16] Just because you become successful.
+[88:18] Bring a good rank.
+[88:20] And then we will interview in the month of March.
+[88:23] So I am waiting for March.
+[88:25] It is only for one day for March.
+[88:27] The day the result is out.
+[88:29] So tomorrow again the class will be on regular time.
+[88:31] It will be at 11.30.
+[88:33] And Happy Dashaira to all of you.
+[88:35] You all enjoy.
+[88:37] And may this day bring lots and lots of happiness in your life.
+[88:40] And lots of satisfaction.
+[88:43] So then we will meet tomorrow at 11.30.
+[88:45] We will complete the multi stage.
+[88:47] On Cascode and Darlington.
+[88:49] And then I will pursue differential amplifier.
+[88:51] Thank you.

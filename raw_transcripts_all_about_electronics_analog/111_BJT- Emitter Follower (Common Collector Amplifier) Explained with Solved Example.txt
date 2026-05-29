@@ -1,0 +1,287 @@
+Title: BJT- Emitter Follower (Common Collector Amplifier) Explained with Solved Example
+URL: https://www.youtube.com/watch?v=qSxgU9jtFhw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the Common Collector Emplifier, which is also known
+[00:21] as the emitter fallover.
+[00:23] So this is the basic circuit of the Common Collector Emplifier.
+[00:27] And if you look this circuit, then it is very similar to the Common Emitter fixed by
+[00:31] a circuit.
+[00:33] But in case of this Common Collector Emplifier, the resistor is corrected at the emitter terminal
+[00:39] and also the output is measured at the emitter terminal.
+[00:43] Now for the AC signal perspective, all the DC sources in the circuit will act as a zero,
+[00:48] while all the coupling capacitors will act as a short circuit.
+[00:52] That means for the AC signals, the character terminal will act as a ground.
+[00:57] Or we can say that it is the AC ground.
+[01:00] So here, the input signal is applied between the base and the ground or effectively between
+[01:06] the base and the character terminal.
+[01:08] Similarly, the output is measured between the emitter and the ground or effectively between
+[01:13] the emitter and the character terminal.
+[01:16] That means here, the character terminal is common between the input and the output side.
+[01:22] And hence, this configuration is known as the Common Collector Emplifier.
+[01:27] Now as I said, this Common Collector Emplifier is also known as the emitter fallover.
+[01:34] Because here, the output at this emitter terminal follows the input signal.
+[01:40] Now for the DC signal perspective, the emitter terminal will be 0.7 volt less than the base
+[01:45] voltage.
+[01:47] But the AC output signal will be approximately equal to the input signal.
+[01:52] And in fact, it will be slightly less than the input signal.
+[01:56] So let us understand this thing intuitively.
+[02:00] So let's say the input signal is applied at the base terminal.
+[02:04] And because of that, we are getting some output at this emitter terminal.
+[02:08] So at the base terminal, there will be some biasing voltage VB.
+[02:13] And on top of this, the input signal will be applied.
+[02:17] And if you see the output at the emitter terminal, then there will be some emitter voltage
+[02:21] VE.
+[02:22] And on top of this, we will get the output voltage.
+[02:25] And definitely, this voltage VE will be 0.7 volt less than the base voltage.
+[02:32] Now if this AC output signal is more than the input signal, in that case, at any given
+[02:37] point of time, the difference between the base and the emitter terminal will be less than
+[02:42] the 0.7 volt.
+[02:44] That means we can say that if the output voltage is more than the input voltage, then the voltage
+[02:50] VBE will reduce.
+[02:52] And from this expression, we can say that because of that, the current IC will reduce.
+[02:59] And we know that the current IC is approximately equal to emitter current.
+[03:04] So because of that, the emitter current will reduce.
+[03:07] And effectively, because of that, the output voltage will reduce.
+[03:11] So we can say that because of that, the output voltage cannot be more than the input voltage.
+[03:17] That means in this emitter follower configuration, the voltage gain is always less than 1.
+[03:22] All right.
+[03:24] Then the question arises, what is the use of this emitter follower or this common character
+[03:29] amplifier when its gain is less than 1?
+[03:32] Well, the emitter follower can be used as a buffer because it provides the high input impedance
+[03:38] as well as the low output impedance.
+[03:41] So let us find out the expressions of this voltage gain, the input impedance and the output
+[03:46] impedance of this emitter follower.
+[03:49] And for that, let us do the small signal analysis of this given circuit.
+[03:53] So for the small signal analysis, we will follow the same procedure.
+[03:58] That means we will consider all the DC sources in the circuit as 0, while we will consider
+[04:02] all the coupling capacitors as a short circuit.
+[04:06] And then after, we will replace the BJT by the small signal model.
+[04:11] Now if you see over here, this emitter resistor is connected between the emitter and the
+[04:15] ground terminal.
+[04:17] So in the AC equivalent circuit, it can be shown like this.
+[04:22] And here, the output is also taken at the emitter terminal.
+[04:27] Apart from that, here this base resistor and the input signal is connected between the
+[04:32] base and the ground terminal, while this corrected terminal is connected to the ground
+[04:37] terminal.
+[04:39] So this is the AC equivalent circuit of the emitter follower.
+[04:43] So now, first of all, let us find out the voltage gain.
+[04:48] So here, this current is the base current, while this current is the correct current.
+[04:54] And the current which is flowing through the emitter resistor is equal to the emitter current.
+[04:59] So from this, we can say that this output voltage V out is equal to IE times Re.
+[05:06] That is equal to IB plus IC times Re.
+[05:12] Now here, we know that the voltage V pi can be given as IB times R pi.
+[05:19] That means base current IB is equal to V pi divided by R pi.
+[05:26] And the correct current IC is equal to Gm times V pi.
+[05:30] That means the output voltage V out can be given as voltage V pi divided by R pi plus
+[05:38] Gm times V pi times Re.
+[05:43] That means voltage V out is equal to V pi times 1 divided by R pi plus Gm times Re.
+[05:54] Now we know that the R pi is equal to beta divided by Gm.
+[06:00] That means 1 divided by R pi is equal to Gm divided by beta.
+[06:06] And this term is much less than Gm.
+[06:10] For example, if the value of beta is 100, in that case, this 1 over R pi is 100 times
+[06:17] less than the Gm.
+[06:19] That means in this expression, we can neglect this term.
+[06:24] That means we can say that this output voltage V out is equal to V pi times Gm times Re.
+[06:33] So now we need to find the expression of the V pi in terms of the input voltage.
+[06:38] Now here if you observe, the voltage at this end is equal to V in.
+[06:44] So let us apply the KVL equation in this loop.
+[06:48] So if we apply the KVL equation in this loop, then we can write it as voltage V in is
+[06:53] equal to voltage V pi plus V out.
+[06:58] That means voltage V pi is equal to V in minus V out.
+[07:04] That means voltage V out is equal to V in minus V out times Gm times Re.
+[07:14] That means 1 plus Gm times Re times V out is equal to Gm times Re times input voltage.
+[07:26] That means voltage V out divided by V in or the voltage gain is equal to Gm times Re divided
+[07:35] by 1 plus Gm times Re.
+[07:40] And if we divide the entire expression by the term Gm, then we can write the voltage
+[07:44] gain as V out divided by V in is equal to Re divided by 1 over Gm plus Re.
+[07:55] So this is the expression of the voltage gain.
+[07:59] Now usually this 1 divided by Gm is much less than Re.
+[08:05] That means from this we can say that this voltage gain is approximately equal to unity.
+[08:12] Apart from that if you observe over here, there is a no negative sign in this expression.
+[08:17] That means here the input and the output signals are in the phase.
+[08:22] Now if you see this expression, then this expression is similar to the voltage divided expression.
+[08:29] So from this expression, if we draw the equivalent circuit, then it can be drawn like this.
+[08:36] That means here the resistor 1 over Gm and the Re are in the series connection and the
+[08:41] output voltage is the voltage across this emitter resistor.
+[08:45] So here this portion of the circuit is actually the Thavinance equivalent circuit which is seen
+[08:51] through the emitter terminal.
+[08:53] And in fact, using this equivalent circuit, it is easy to find the output impedance.
+[08:59] So let us see how we can find the output impedance.
+[09:03] So we know that the output impedance is the Thavinance equivalent impedance which is seen
+[09:08] through the output side.
+[09:10] And for that we will consider all the independent sources in the circuit as 0.
+[09:16] That means this input voltage will act as a short circuit.
+[09:21] So now this output impedance is the parallel combination of 1 divided by Gm and the Re.
+[09:29] So this is the easiest way to find the output impedance.
+[09:33] And of course, conventionally if we find the output impedance from this AC equivalent
+[09:37] circuit, then also we will get the same result.
+[09:41] So for the sake of completeness, let me also show you how to find the output impedance
+[09:45] from this equivalent circuit.
+[09:48] So for finding the output impedance, we will consider all the independent sources in the
+[09:52] circuit as 0.
+[09:54] That means we will consider this input voltage V in as the short circuit.
+[09:59] And because of that, this base resistor Rb will also get short circuited.
+[10:05] So now if we see the equivalent circuit, then it will look like this.
+[10:10] So for finding the output impedance, let us apply the test voltage Vt and let us find
+[10:15] the test current IT.
+[10:18] And the ratio of this voltage Vt and the IT will give us the output impedance.
+[10:25] And to find that, let us apply the KCL equation at this node.
+[10:29] So if we apply the KCL equation, then we can write this current IT plus IC is equal to
+[10:37] voltage Vt divided by RE, that is this current plus voltage Vt divided by Rp, that is this
+[10:46] current.
+[10:47] That means we can say that current IT plus GM times Vp is equal to voltage Vt divided
+[10:57] by RE plus voltage Vt divided by Rp.
+[11:02] Now here, if we draw this resistor over here, then you can see that here this voltage Vp
+[11:09] is equal to minus Vt.
+[11:12] That means from this expression, we can write it as current IT minus GM times Vt is equal
+[11:19] to Vt divided by RE plus Vt divided by Rp.
+[11:26] So if we bring this term on the right hand side, then we can write this expression as
+[11:31] current IT is equal to Vt times 1 divided by RE plus 1 divided by Rp plus GM.
+[11:43] Or we can say that IT divided by Vt is equal to 1 divided by RE plus 1 divided by Rp plus
+[11:53] GM.
+[11:54] Now, as we have discussed earlier, this term 1 divided by Rp is much less than GM.
+[12:01] That means we can neglect this term.
+[12:04] That means IT divided by Vt, that is 1 over output impedance is equal to 1 divided by RE plus
+[12:13] 1 divided by 1 divided by GM.
+[12:17] That means here, this output impedance is the parallel combination of RE and the 1 over
+[12:24] GM.
+[12:27] So in this way, we can also find the output impedance from this conventional method.
+[12:32] So now let us find out the input impedance.
+[12:36] So the input impedance is the equivalent impedance which is seen through the input side.
+[12:42] And unlike the output impedance, we cannot find the input impedance from this equivalent
+[12:47] circuit.
+[12:48] Because here, this equivalent circuit is the Thavenance equivalent circuit which is seen
+[12:53] through the emitter terminal.
+[12:54] Alright.
+[12:56] So now let us see how to find this input impedance.
+[13:00] So to find the input impedance, first of all, let us find the impedance which is seen through
+[13:04] this base resistor.
+[13:07] Let us call this resistor as the ZB.
+[13:10] So here, let us say the voltage at this node is equal to Vb.
+[13:15] And as you can see, it is equal to the input voltage.
+[13:18] And here, the current which is flowing through this base terminal is equal to Ib.
+[13:24] So the ratio of this voltage Vb and the Ib will give us the ZB.
+[13:29] And to find this ZB, let us apply the cable equation in this loop.
+[13:35] That means here, this voltage Vb is equal to voltage Vpi plus V.
+[13:42] That means voltage Vb is equal to Ib times Rpi plus beta plus 1 times Ib times RE.
+[13:53] Because we know that this emitter current is equal to beta plus 1 times Ib.
+[14:00] Right.
+[14:01] So from this, we can say that this voltage Vb divided by RB or the ZB is equal to Rpi
+[14:08] plus beta plus 1 times RE.
+[14:13] That means now, the circuit which is on the right hand side of this resistor, RB, can
+[14:18] be represented by this impedance ZB.
+[14:22] So if we see the equivalent circuit, then it will look like this.
+[14:26] That means now, the equivalent impedance which is seen through the input side, that is,
+[14:32] this impedance is the parallel combination of RB and the ZB.
+[14:37] That means this input impedance is equal to RB parallel ZB.
+[14:43] So in this way, we can find the expression of the input impedance.
+[14:47] So these are the expressions of the input impedance, the output impedance and the voltage
+[14:52] gain for this emitter follower.
+[14:54] Now so far in our discussion, we have assumed that the output resistance of this transistor
+[14:59] was infinite.
+[15:01] But if there is a finite output resistance, then these expressions will get modified.
+[15:07] That means instead of the emitter resistor, there will be a parallel combination of RE
+[15:11] and the R0.
+[15:13] Now although the voltage gain of this emitter follower is close to unity, but it provides
+[15:18] the high input impedance as well as the low output impedance.
+[15:22] That means this circuit can be used as a buffer circuit.
+[15:26] And to understand it better, let us take one example.
+[15:30] So here we have been given one common emitter amplifier and we have been given that its
+[15:36] voltage gain is 20 when there is a no load connected to it.
+[15:41] So in the first case, we have been asked to find the voltage gain of the circuit when
+[15:45] we connect a atom speaker at the output.
+[15:49] While in the second case, this emitter follower, which is biased at the 5 milliampere, is
+[15:54] connected between the amplifier and the speaker.
+[15:57] And in that case, we have been asked to find the voltage gain.
+[16:01] So first of all, let us find the voltage gain when the atom resistor is connected to the
+[16:06] amplifier.
+[16:07] That means here, this load resistor RL is equal to A-tom.
+[16:12] Now we know that for the common emitter amplifier, the voltage gain can be given as minus
+[16:18] GM times RC parallel RL.
+[16:22] So here, RC is equal to 1 kilo ohm while the RL is equal to A-tom.
+[16:27] That means the RC parallel RL will be approximately equal to A-tom.
+[16:32] Now here, we have been given that the voltage gain of this amplifier is 20 when there is
+[16:37] a no load connected to it.
+[16:39] That means without the load, the voltage gain can be given as GM times RC.
+[16:47] That means GM is equal to 20 divided by 1000.
+[16:53] So let us put this value of GM in this expression and let us find the voltage gain when there
+[16:59] is a A-tom load connected to this amplifier circuit.
+[17:02] That means the voltage gain A-v is equal to minus 20 divided by 1000 times 1 kilo ohm
+[17:10] in parallel with A-tom.
+[17:13] That is equal to minus 0.159.
+[17:18] So as you can see, there is a drastic reduction in the voltage gain and instead of amplifying
+[17:24] the signal, it is actually attenuting it.
+[17:27] So now in the second case, let us see what happens when we connect the emitter follower
+[17:32] between the amplifier and the speaker.
+[17:35] And in that case, let us find out the voltage gain.
+[17:38] So in the second case, the overall circuit would look like this.
+[17:43] So as you can see, here this emitter follower is connected between the amplifier and the
+[17:47] speaker.
+[17:49] And here, this emitter follower is biased at the 5 milliampere using this ideal current
+[17:54] source.
+[17:56] So here, let us say the voltage at this node is equal to Vx.
+[18:02] So here, to find the overall voltage gain, first of all, we will find the ratio of Vx
+[18:07] and the Vn.
+[18:10] And then after, we will find the ratio of the Vio and the Vx.
+[18:15] And by multiplying these two dumps, we can find the overall voltage gain.
+[18:20] So here, to find the ratio of Vx and the Vn, first of all, we need to find the input impedance
+[18:25] of this stage.
+[18:27] So let us call this input impedance as the Z into.
+[18:32] Now for the emitter follower, we know that the input impedance is of the form Rpi plus
+[18:39] Vt plus 1 times Rn, right?
+[18:43] But here, instead of the emitter resistor, there is a current source.
+[18:47] And for the AC signal, this current source will act as an open circuit.
+[18:52] Apart from that, here, this coupling capacitor will also act as a short circuit.
+[18:57] That means here, between the emitter and the ground terminal, there is a load of A
+[19:01] term.
+[19:02] That means, in this case, the expression of the input impedance can be given as Rpi 2 plus
+[19:10] Vt plus 1 times RSP, where RSP is the impedance of the speaker.
+[19:17] Now here, we have been already given the value of beta as well as the RSP.
+[19:22] So here, the beta is 100, while the impedance of the speaker is equal to A term.
+[19:28] So the only thing which we need to find is the Rpi 2.
+[19:32] Now we know that the Rpi can be given as beta divided by GM.
+[19:38] So in this case, this Rpi 2 will be equal to beta divided by GM2.
+[19:44] That is equal to beta times Vt divided by IC.
+[19:49] Now here, this emitter follower is biased at the 5 milliampere.
+[19:54] And for the simplicity, let us assume that this thermal voltage Vt is equal to 25 milliwold.
+[20:01] That means Rpi 2 is equal to beta times 25 milliwold divided by 5 milliampere.
+[20:10] And the value of beta is equal to 100.
+[20:13] That means this Rpi 2 is equal to finite home.
+[20:18] So from this, this input impedance Z into is equal to Rpi 2 plus beta plus 1 times RSP.
+[20:29] That is equal to finite home plus 101 times A term.
+[20:35] That is equal to 13 zero A term.
+[20:39] So this input impedance Z into will come in parallel with the 1 kilo ohm resistor.
+[20:45] That means voltage Vx divided by V in can be given as minus GM times RSP z into.
+[20:56] That is equal to minus 20 divided by 1000 times 1 kilo ohm in parallel with 1.3 kilo ohm.
+[21:05] And if you calculate the value, then it is equal to minus 11.3.
+[21:11] So as you can see, because of this emitter follower, there is a significant improvement in
+[21:16] the gain of the common emitter stage.
+[21:19] But here, to find the overall voltage gain, we also need to find the gain which is provided
+[21:23] by the emitter follower.
+[21:26] So we know that the gain of the emitter follower is of the form R e divided by 1 divided
+[21:34] by GM plus R e.
+[21:37] So in this case, it would be equal to RSP divided by 1 divided by GM2 plus RSP.
+[21:47] Because as I said, here these current source will act as an open circuit.
+[21:51] That means between the emitter and the ground, the resistance which is connected is the load
+[21:56] only.
+[21:57] That means for the given emitter follower, this is the expression of the voltage gain.
+[22:02] When other words, it is equal to voltage V out divided by VX.
+[22:09] That means V out divided by VX is equal to A tom divided by 1 divided by GM2 plus A tom.
+[22:17] And as you have seen, this 1 over GM2 is equal to phi ohm.
+[22:23] That means voltage V out divided by VX is equal to 8 divided by 5 plus A tom.
+[22:30] That is equal to 0.615.
+[22:34] So the overall voltage gain V out divided by V in is equal to voltage VX divided by V in
+[22:42] times voltage V out divided by VX.
+[22:46] That is equal to minus 11.3 times 0.615.
+[22:53] That is roughly equal to minus 7.
+[22:56] And still it is far better than the first case, where the gain was minus 0.159.
+[23:03] That means whenever the load impedance is very low, then it is always better to use the
+[23:08] emitter follower as a buffer between the amplifier and the load.
+[23:12] So I hope in this video you understood what is the emitter follower and because of its
+[23:17] high input impedance and the low output impedance, how it can be used as a buffer.
+[23:23] So if you have any question or suggestion, do let me know here in the comment section
+[23:27] below.
+[23:28] If you like this video, hit the like button and subscribe to the channel for more such
+[23:31] videos.

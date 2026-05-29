@@ -1,0 +1,1257 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Assignment Discussion | Ankit Goyal
+URL: https://www.youtube.com/watch?v=jHaaEUqoWCw
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone. A very good morning to all of you and welcome to Creatrix YouTube channel.
+[00:14] My dear friends, we are live again in Lakshya Batch 2.0 Analog Electronics.
+[00:20] In this session, I am going to discuss assignments with you.
+[00:24] I have given you assignments of O-PAMP till now.
+[00:27] And then tomorrow we will do non-linear applications of O-PAMP.
+[00:31] In which we will see Precision Diode, Half-Wave Rectifier, Full-Wave Rectifier, Comparator.
+[00:37] We will cover all these things in tomorrow's class.
+[00:41] So, everyone is ready.
+[00:42] Everyone has made assignments.
+[00:44] Everyone has not made it.
+[00:45] Confirm it quickly.
+[00:46] Everyone has solved the assignments.
+[00:50] Tell me quickly.
+[00:52] After non-linear application, your O-PAMP videos will also become private.
+[00:57] So, you have to take care of O-PAMP till Sunday.
+[01:00] Because Sunday your portion of O-PAMP will be finished.
+[01:05] From Monday, we will start the filter.
+[01:08] And in next week, your majority of gate syllabus will be finished.
+[01:12] By 10th of November, we will complete the entire syllabus of the gate.
+[01:16] Till when will we complete 10th of November?
+[01:18] So, my October end commitment was with you.
+[01:21] But we are not exceeding that deadline.
+[01:24] Despite all the emergencies and travel,
+[01:28] we will complete the entire syllabus of gate till 10th of November.
+[01:32] After which, there will be two topics of ESE.
+[01:35] So, you tell me.
+[01:36] If you are interested in studying, I will also do that.
+[01:39] Otherwise, we can end this playlist if we want in gate syllabus.
+[01:43] Okay?
+[01:44] Let's start.
+[01:46] But before that, let me tell you that this Sunday there is a combat.
+[01:50] And the best thing is that this time there is a combat of Maths and aptitude.
+[01:54] The weightage of 28 marks in the gate.
+[01:58] So, whatever it is, you don't have to miss this combat.
+[02:02] There are 30 questions in 60 minutes.
+[02:05] Which is more than enough time for Mathematics and aptitude.
+[02:08] Okay?
+[02:09] So, you have to give the test of 30 questions in 60 minutes.
+[02:13] Here, you have to judge how your 28 marks are prepared.
+[02:18] So, don't give this test just for scholarship.
+[02:21] Give this test to judge yourself.
+[02:24] Give yourself to judge yourself.
+[02:26] Give yourself to take your test.
+[02:28] Because what strategy will you have in November?
+[02:31] How much time will you give in November to Maths and aptitude?
+[02:35] It will depend on this.
+[02:37] How many marks do you have in this combat this time?
+[02:41] Okay?
+[02:43] Let's go.
+[02:44] What's the matter, Anuj?
+[02:45] It's been two months and not even one class is left.
+[02:47] This is called consistency.
+[02:49] Let's see.
+[02:50] In the circuit shown, O-Pamp has a slew rate of 0.5 volts per microsecond.
+[02:56] Amplitude of input signal is 0.02.
+[02:59] Maximum input frequency.
+[03:02] Now, you can directly tell the gain of this amplifier.
+[03:06] Okay?
+[03:07] You can directly tell the gain.
+[03:09] This is an inverting amplifier.
+[03:12] So, the gain is minus 240 by 10.
+[03:18] That is minus 24.
+[03:22] Now, if the maximum value of input is 0.02,
+[03:27] then you will write the input as 0.02 sine omega t.
+[03:33] So, how much is your output voltage?
+[03:37] Minus 0.48 sine of omega t.
+[03:43] So, dv out by dt minus 0.48 omega cos omega t.
+[03:57] Okay?
+[04:00] And the maximum value of dv out by dt is 0.48 omega.
+[04:12] Now, you know what?
+[04:13] Maximum rate of change of output should always be less than slew rate.
+[04:20] So, 0.48 omega 2 pi f should be less than 0.5 volts per microsecond.
+[04:29] So, write the microsecond as 10 power minus 6.
+[04:34] So, what will be f from here?
+[04:37] 0.5 by 0.48 by 2 pi.
+[04:43] So, 165.78 kHz.
+[04:52] Okay?
+[04:53] 165.78 kHz.
+[04:57] Now, it is clear.
+[04:59] Next, consider the differential amplifier shown R2 by R1 is 10.
+[05:07] R4 by R3 is 11.
+[05:09] CMRR.
+[05:10] Now, what was the method of this?
+[05:13] You should not take out the output because of both.
+[05:17] So, V1 is written as Vi1.
+[05:22] Vi1 is the gain minus R2 by R1.
+[05:30] Do you know what to do for Vi2?
+[05:33] First, you have to take out the voltage of positive terminal.
+[05:37] Vi2 into R4 by R3 plus R4.
+[05:44] Okay?
+[05:46] So, plus Vi2 R4 by R3 plus R4.
+[05:55] And what will be the gain of this?
+[05:58] 1 plus R2 by R1.
+[06:04] Okay?
+[06:05] So, minus 10 Vi1 plus Vi2.
+[06:12] 1 by R4 by R3.
+[06:17] So, R3 is common.
+[06:20] R4 by R3 is given.
+[06:23] So, R3 is common.
+[06:26] So, 1 plus R4 by R3.
+[06:31] Okay?
+[06:32] And this is 1 plus 10 by 11.
+[06:35] So, this is 1 plus 11 by 12 and this is 11.
+[06:39] So, minus 10 Vi1 plus 121 by 12 Vi2.
+[06:48] So, A1 and A2 have come.
+[06:51] A1 and A2 have come.
+[06:53] Now, what will you do?
+[06:56] A1 is your minus 10 and A2 is 121 by 12.
+[07:06] So, the differential gain that will come to you.
+[07:17] AD, that will be mod of A1 minus A2 by 2.
+[07:26] Okay?
+[07:28] So, 122.41 by 24.
+[07:36] And AC, that will be mod A1 plus A2.
+[07:43] Okay?
+[07:44] So, common mode gain will be 1 by 12.
+[07:49] So, how much will CMRR be?
+[07:53] CMRR is differential gain.
+[07:56] Divided by common mode gain.
+[08:00] Okay?
+[08:01] 241 by 24 divided by 1 by 12 is 241 by 2.
+[08:08] And if you take out DB?
+[08:11] So, 20 log 241 by 2.
+[08:18] How much will it come?
+[08:26] 41.62 DB, which is a good figure, right?
+[08:32] If the ratio of differential and common mode gain is 120,
+[08:38] then it is a good thing.
+[08:40] So, the answer will be D.
+[08:42] How do we light up the ratio of CMRR?
+[08:45] Tell me.
+[08:46] How do we light up the ratio of CMRR?
+[08:50] SIVA, the videos that have been made private will be made public
+[08:55] and whenever they are made public, I will inform the students via short.
+[09:00] Okay?
+[09:01] Right now, why I have made private?
+[09:03] Because I want you guys to attend live.
+[09:06] Because low-live attendance will force me to end the course abruptly.
+[09:11] That will reduce the quality of course.
+[09:13] That will make me leave the lectures midway.
+[09:17] And that will not be good for anyone.
+[09:19] So, now see, what I had thought before that you guys have now
+[09:23] the habit of coming live.
+[09:25] So, if I don't do the video private, then the kids will come live
+[09:28] because they are now used to it.
+[09:30] But then it is the same, that now you guys are helpless with your habit.
+[09:33] As soon as you see that the video is public, then you will see
+[09:37] which is the hurry.
+[09:39] So, then your attitude is the same, the same leniency has come.
+[09:42] The same procrastination has come.
+[09:44] Now, the thing to think about is that the semester exam is any exam.
+[09:47] You can see the lecture of one and a half hour.
+[09:50] You guys know why you can't prepare in the semester exam?
+[09:53] Because if you wait till the last night for the semester exam,
+[09:57] then you will get tired.
+[09:58] So, when the semester exam comes, then you leave the whole world
+[10:01] and enter the semester exam.
+[10:05] And then it is difficult in the last.
+[10:07] If you take the first semester exam with you,
+[10:10] then you will not have any problem in the last.
+[10:18] The sky will be private, that is why you are not getting it.
+[10:21] Yes, you can also take the JEE class.
+[10:24] Next.
+[10:25] An audio amplifier is designed to have a small signal bandwidth of 20 kHz.
+[10:30] Open loop low frequency gain is 10 to the power 5.
+[10:33] Unity gain bandwidth is 1 MHz.
+[10:36] Maximum closed loop gain.
+[10:39] So, what do you say?
+[10:43] That the gain into the bandwidth is constant.
+[10:51] Now, I have asked you how much the closed loop gain should be.
+[10:56] If you want a bandwidth of 20 kHz.
+[11:00] You have to design a bandwidth of 20 kHz.
+[11:05] So, how much you have to take the gain?
+[11:07] Now, what will you take the gain?
+[11:09] Unity gain bandwidth is 10 to the power 6.
+[11:16] 50.
+[11:19] So, sir, nothing has been used for this.
+[11:21] Son, it was used when it asked you how much the open loop bandwidth should be.
+[11:27] Then you say that this 10 to the power 6,
+[11:30] this is equal to the open loop gain into the open loop bandwidth.
+[11:34] How much would you say?
+[11:36] Open loop gain into the open loop bandwidth.
+[11:39] But now, no data will be used for open loop gain.
+[11:43] Here, understand that the unity gain frequency is here.
+[11:47] What will you have to take for the unity gain frequency?
+[11:51] 1.
+[11:52] Okay?
+[11:53] Amit, son, if you want to solve previous year's questions,
+[11:56] then I have made the PYQ's here.
+[11:59] Bit.ly
+[12:01] Slash
+[12:02] Ankit
+[12:03] E
+[12:04] S
+[12:05] E.
+[12:06] If you go here, you will get a card in this.
+[12:08] Gate PYQ by AIR1.
+[12:11] I have given the video solution of all the PYQ's there,
+[12:14] chapter by chapter.
+[12:21] Okay?
+[12:23] With this type.
+[12:25] Let's go.
+[12:29] Next, see, a 741 type of opamp has a gain bandwidth product of 1 MHz.
+[12:36] Non-inverting amplifier having a gain of 20 dB will have a 3 dB bandwidth off.
+[12:43] Okay?
+[12:44] Now, here you see,
+[12:46] 3 dB bandwidth means only bandwidth and nothing happens.
+[12:50] So, don't get confused in that.
+[12:52] The gain that you have given 20 dB,
+[12:58] this is what?
+[13:00] 20
+[13:02] log of gain.
+[13:07] Now, how much gain will come from here?
+[13:10] Gain will come out to be 10.
+[13:13] Now, gain into bandwidth is your constant.
+[13:19] So, when your gain is 10,
+[13:25] the unity gain will be 1 on the frequency and the frequency will be 1 MHz.
+[13:36] 100 kHz.
+[13:38] Okay?
+[13:39] So, the answer will be 100 kHz.
+[13:41] A lot of times, kids get confused when they write 3 dB bandwidth.
+[13:45] So, basically, keep in mind that the definition of bandwidth is 3 dB.
+[13:49] The definition of bandwidth is 3 dB, right?
+[13:52] Where your gain is 1 by root 2 times,
+[13:55] your power is half,
+[13:57] or the gain in dB is reduced to 3 dB,
+[14:00] that is called bandwidth.
+[14:02] So, don't get confused by reading 3 dB.
+[14:04] Okay?
+[14:05] An amplifier having a slew rate and gain,
+[14:08] it has to amplify sinusoidal signal from DC up to 20 kHz.
+[14:14] Input level should not exceed.
+[14:17] Now, you understand that
+[14:19] here, it has given the maximum frequency before,
+[14:22] that the maximum frequency as it was in slew rate,
+[14:26] it has given that it can be 20 kHz.
+[14:29] Now, the gain is given to 40 dB.
+[14:33] How does the gain of dB be written?
+[14:37] 20 log of gain.
+[14:41] So, your 100 will gain from here.
+[14:48] Now, if your input voltage is Vm sin of omega t,
+[14:56] then what will be the output voltage?
+[14:59] 100 Vm sin omega t.
+[15:06] 100 Vm sin of omega t.
+[15:10] Now, what will you say?
+[15:12] dV out by dt,
+[15:14] and its maximum value.
+[15:16] Now, I am writing in one step.
+[15:19] So, maximum value will be
+[15:21] 100 omega Vm.
+[15:25] This should be less than equal to the slew rate.
+[15:28] 20 kHz,
+[15:40] 50, 25.
+[15:50] See, it has become 40,
+[15:52] or 1000 to 25.25 by pi.
+[15:59] It has come.
+[16:00] How much is it getting?
+[16:02] 0.25 by pi,
+[16:03] 79.61 millivolts.
+[16:06] So, your maximum amplitude has come.
+[16:10] You will have to take the amplitude less than this.
+[16:15] Why is the gain in bandwidth constant?
+[16:18] Dear, if you define it in a first order system,
+[16:22] you distract it in between.
+[16:28] It can be a signal square wave.
+[16:30] It is written here, sinusoidal.
+[16:34] So, we were talking about
+[16:36] why the gain in bandwidth is constant.
+[16:38] Dear, if you derive bandwidth
+[16:41] and derive maximum gain,
+[16:43] you will check their product.
+[16:45] It will always be constant.
+[16:47] You will have to derive it
+[16:49] for a first order system.
+[16:52] Right?
+[16:53] I also derived this thing in BJT.
+[16:56] When you got the high frequency response of BJT,
+[16:59] I proved that beta into F beta
+[17:02] is alpha into F alpha is equal to Ft.
+[17:05] Remember, F beta was derived
+[17:08] as beta cutoff frequency.
+[17:10] If beta was multiplying,
+[17:12] it would have become unity gain frequency.
+[17:14] So, I derived it in BJT.
+[17:17] Now, the question of slew rate is again.
+[17:20] For an amplifier having a slew rate
+[17:22] of 60 volts per microsecond,
+[17:24] what is the highest frequency at which
+[17:26] 20 volts peak to peak?
+[17:28] When peak to peak is given,
+[17:31] what do you do?
+[17:33] You say that the amplitude of the signal
+[17:36] i.e. the Vm is 10 volts.
+[17:41] The Vm is your, that is 10 volts.
+[17:46] So, what is your input voltage?
+[17:49] 10
+[17:51] sine
+[17:53] omega t
+[17:55] So, when the output is produced,
+[17:59] it is actually given
+[18:01] on the output, 10 volts.
+[18:03] So, V out.
+[18:05] If you give input,
+[18:07] then it will have to be given
+[18:09] as in the last few questions.
+[18:11] 10 omega
+[18:13] cos omega t
+[18:15] Now, what do you say,
+[18:17] its maximum value is
+[18:19] that should be less than equal to
+[18:21] the slew rate
+[18:26] f should be less than equal to
+[18:28] 6
+[18:30] by 2 pi
+[18:32] megahertz.
+[18:34] 6 by 2 pi will be a little smaller than 1.
+[18:37] If it is a little smaller than 1,
+[18:39] then it can come according to me.
+[18:43] 6 by 2 pi
+[18:49] 6 by 2 pi
+[18:51] But according to me,
+[18:53] it should come around 1 megahertz.
+[18:55] 95.5 kilohertz
+[18:57] will be very small.
+[18:59] Tell me, is it coming around 1 megahertz?
+[19:05] It will come around 6 by 2 pi
+[19:07] 1 megahertz.
+[19:09] See, if it was 955 kilohertz,
+[19:11] then it would be correct.
+[19:13] Yes, 3 by 5.955
+[19:15] is very good.
+[19:17] It will remove decimals from here.
+[19:19] Then this answer will be correct.
+[19:21] It will come around 955 kilohertz.
+[19:23] It will come around 955 kilohertz.
+[19:25] Isn't it?
+[19:31] Let's go.
+[19:33] Akash, I will do it in public, but
+[19:35] I will do it in public after some time.
+[19:37] I told you earlier that we will do the private videos.
+[19:39] Following the circuit, the output voltage V0.
+[19:41] Look at this, an inverting summer is done.
+[19:43] Inverting summer, you know
+[19:45] that the gain of every voltage
+[19:47] can come out directly.
+[19:49] 0.5
+[19:51] into 80 by 20
+[19:53] okay
+[19:55] minus 1
+[19:57] into 80 by 40
+[20:01] okay, plus 2
+[20:05] into 80 by 60
+[20:09] okay
+[20:11] So this is 2
+[20:13] minus 2
+[20:15] 160 by 60, 16 by 6
+[20:17] plus 8 by 3
+[20:21] 2.67
+[20:23] And look, in the question of negative feedback
+[20:25] if you make a supply
+[20:27] anywhere
+[20:29] then you should check this.
+[20:31] This one will also be minus.
+[20:33] This will actually be plus.
+[20:35] I ate minus here.
+[20:37] This will be minus.
+[20:39] This one will also be minus.
+[20:43] Whenever you
+[20:45] make a supply voltage,
+[20:47] then you should check
+[20:49] whether
+[20:51] your output
+[20:53] is more than supply.
+[20:55] If the output is more than supply
+[20:57] then whatever
+[20:59] the supply voltage will exceed
+[21:01] you will write the same value
+[21:03] on the output.
+[21:05] Here the supply was
+[21:07] plus minus 2 volt.
+[21:09] So our minus 2 volt is going down.
+[21:11] So I write the answer minus 2 volt
+[21:13] because it can never exceed
+[21:15] the supply.
+[21:17] Okay, now look
+[21:19] in the following circuit, the value of V0
+[21:21] is
+[21:23] this input is grounded.
+[21:25] What you have to do first
+[21:27] is to take out the voltage
+[21:29] of the first positive terminal.
+[21:31] Now look here
+[21:33] if V is zero
+[21:35] then I want this V plus.
+[21:37] If the current is zero here
+[21:39] then these two are in the series.
+[21:45] So if you want you can take out
+[21:47] the dual supply
+[21:49] voltage divider
+[21:51] of the BJT.
+[21:53] First take 18 and ground the 15.
+[21:55] Then you will have to
+[21:57] take 40 across voltage
+[21:59] 40 plus 20.
+[22:01] Then when you take 15
+[22:03] then you will ground 18
+[22:05] and because of 15
+[22:07] the voltage will be 20 across.
+[22:09] Do you remember in the dual supply
+[22:11] bias
+[22:13] when the voltage divider network was like this
+[22:15] 60, 720
+[22:17] and 300
+[22:19] 1020
+[22:21] by 60
+[22:23] this will come to 17.
+[22:27] Now what you will write to V0
+[22:29] this is a non-inverting amplifier
+[22:31] 1 plus 100
+[22:33] by 100
+[22:35] 1 plus RF by R1
+[22:37] into 17
+[22:39] then it came 34
+[22:41] volts.
+[22:43] If the supply is not given
+[22:45] then 34 is also good.
+[22:47] If the supply was given
+[22:49] then we would have checked
+[22:51] that is not more than 34 supply
+[22:53] and where the supply is shown
+[22:55] in this triangle above and below
+[22:57] next
+[22:59] in the following circuit
+[23:01] Vi1 is 1 plus 2 sin omega t
+[23:03] milli volt, Vi2 is minus 10
+[23:05] milli volt, what is V0?
+[23:07] Vi2 will be placed here
+[23:09] okay
+[23:11] Vi1
+[23:13] see this amplifier
+[23:15] is an inverting amplifier
+[23:17] correct
+[23:19] if
+[23:21] this is an inverting amplifier
+[23:23] then we can
+[23:25] take it out from here
+[23:27] V01
+[23:29] okay
+[23:31] now V01 will be
+[23:33] Vi1
+[23:35] into
+[23:37] minus 20 by 2
+[23:45] okay
+[23:51] minus 10 minus 20 sin omega t
+[23:53] milli volt
+[23:55] now this is
+[23:57] an inverting amplifier
+[23:59] so V0 will be
+[24:01] Vi2
+[24:03] into minus 20 by 1
+[24:05] plus
+[24:07] V01
+[24:09] into
+[24:11] minus 20 by 1
+[24:13] okay
+[24:15] so minus 20
+[24:17] Vi2 plus
+[24:19] V01
+[24:21] now see in V01
+[24:23] if you add Vi2
+[24:25] then minus 10 minus 10 is minus 20
+[24:29] so minus 20 minus 20 sin omega t
+[24:31] milli volt
+[24:33] 20 into 20 is 400
+[24:35] 400 will be
+[24:37] 0.4
+[24:41] 0.4 plus 0.4 sin
+[24:43] omega t
+[24:45] volt
+[24:47] okay
+[24:49] this should be in volt
+[24:51] it will be B
+[24:53] it will be B
+[24:55] but in volt
+[24:57] right?
+[24:59] all these options should be in your volt
+[25:01] because in milli volt
+[25:03] your 400 multiplied
+[25:05] okay
+[25:07] consider following ideal
+[25:09] opamp circuit load current iL
+[25:11] iL is to be told in 100 ohm
+[25:13] now see
+[25:15] here zero ampere current
+[25:17] will go
+[25:19] okay
+[25:21] now let's talk about
+[25:23] what should be done next
+[25:25] so these are 100 ohm and 1K
+[25:27] okay
+[25:29] if these are parallel
+[25:31] then what can we do
+[25:35] 1K parallel
+[25:37] 100 ohm
+[25:39] then this will be
+[25:41] 10
+[25:43] 1K by 11
+[25:45] that's it
+[25:47] now you put voltage division
+[25:49] take out this positive terminal voltage
+[25:51] when it is connected to 100 and 1 parallel
+[25:53] right?
+[25:55] if it is connected to 100 and 1 parallel
+[25:57] then you can take out V positive
+[26:03] V0
+[26:05] into
+[26:07] 1K by 11
+[26:11] by 1K
+[26:13] 1K by 11
+[26:15] so V0 by 12
+[26:17] okay
+[26:19] so now if
+[26:21] V positive is V0 by 12
+[26:23] then this voltage will be
+[26:25] V0 by 12
+[26:27] okay
+[26:29] now put a nodal on this node
+[26:31] V0 by 12
+[26:33] minus
+[26:35] minus 5
+[26:37] by 10 kilo ohm
+[26:39] plus V0 by 12
+[26:41] minus
+[26:43] V0 by 10
+[26:47] these two branches are connected
+[26:49] like this and like that
+[26:51] because in this the third branch is zero ampere
+[26:53] now
+[26:55] if we take 10's LCM
+[26:57] so V0 by 6 minus
+[26:59] V0
+[27:03] so V0 came
+[27:05] 6V
+[27:07] from which V plus came
+[27:09] 0.5V
+[27:11] from which IL
+[27:13] will come
+[27:15] V positive by 100
+[27:19] 5 milli ampere
+[27:21] okay so the answer will be A
+[27:23] this is coming
+[27:25] 5 milli ampere
+[27:27] exactly
+[27:29] yes 100 ohm
+[27:31] you can do 0.1 kilo ohm
+[27:33] Deepu
+[27:35] you can do it
+[27:37] 5.56 is not coming
+[27:39] Deepu is hitting exactly 5 kilo ohm
+[27:41] sorry 5 milli ampere
+[27:43] in the following
+[27:45] circuit the opamp
+[27:47] our ideal output
+[27:49] VS equal to 0.2
+[27:51] is
+[27:53] this means it is written in a better English
+[27:55] that when VS is 0.2
+[27:57] then what will be the output
+[27:59] now see if this is 0.2
+[28:01] then the voltage of negative terminal
+[28:03] is also 0.2
+[28:05] now here
+[28:07] there is zero ampere current
+[28:09] because of which these two
+[28:11] resistances are in series
+[28:13] so if I talk to you
+[28:15] about V01
+[28:17] then you will say 0.2
+[28:19] voltage division will be
+[28:21] applied from series
+[28:23] V01 into 20
+[28:27] means V01 is
+[28:29] 1.4V
+[28:31] okay 1.4V
+[28:33] okay 1.4V
+[28:35] now what is this
+[28:37] this is an inverting amplifier
+[28:39] for which the input
+[28:41] is working V01
+[28:43] this is an inverting amplifier
+[28:49] so V01
+[28:57] minus 6 V01
+[28:59] so minus
+[29:01] 8.4V
+[29:05] okay minus 8.4V
+[29:07] what is the matter
+[29:09] a lot of children have got the right answer
+[29:11] what happened brother Anuj, got the wrong answer
+[29:13] and immediately deleted the message
+[29:15] see the next one
+[29:17] assuming the opamp to be ideal
+[29:19] the gain V out by
+[29:21] V in
+[29:23] now see
+[29:25] from the virtual shot
+[29:27] the voltage will come
+[29:29] so the current here
+[29:31] will be V in by
+[29:33] 1
+[29:35] okay so this current
+[29:37] will go here
+[29:41] V in by
+[29:43] 1 and here the voltage is
+[29:45] zero now
+[29:47] consider the voltage of this point
+[29:49] what will you say
+[29:51] or you can also
+[29:53] remove the voltage of this point
+[29:55] if you consider this to be V
+[29:57] then V is
+[29:59] 0 minus
+[30:01] V in by 1
+[30:03] into 10
+[30:05] so minus 10
+[30:07] V in
+[30:09] okay now if you put a nodal on this V
+[30:11] then
+[30:13] V minus 0 by 10
+[30:15] V minus 0 by 1
+[30:17] V minus
+[30:19] V out by
+[30:21] 10 I am putting a nodal on V
+[30:25] so
+[30:27] 1.1 1.2 V
+[30:29] is 0.1
+[30:31] V out
+[30:33] so
+[30:35] V out is 12 V
+[30:39] i.e. minus 120
+[30:41] V in
+[30:43] so the gain came minus
+[30:45] 120 this is RID
+[30:47] okay this is RID
+[30:49] you can start delta
+[30:51] but such a need
+[30:53] will also work without it
+[30:55] what is in star 2 delta
+[30:57] will take a lot of effort here
+[30:59] because if the three resistances
+[31:01] were equal then we directly
+[31:03] would have done star 2 delta
+[31:05] but if we do it in unequal resistances
+[31:07] then it takes a lot of effort
+[31:09] to go into star 2 delta
+[31:11] for the opamp circuit shown in the figure
+[31:13] determine the output voltage V0
+[31:15] assuming that the opamps are
+[31:17] ideal
+[31:19] now see
+[31:21] here you can see a feedback from the output
+[31:23] so I say
+[31:25] zero ampere is going on
+[31:27] so these are both in series
+[31:29] so do you know
+[31:31] the voltage here
+[31:33] you can find out
+[31:35] so what will be
+[31:37] the positive
+[31:39] the voltage division of V0
+[31:41] will be
+[31:43] as long as the story is going on
+[31:45] V0 and Vn then there is no problem
+[31:47] when there are more variables
+[31:49] when there are more variables
+[31:51] then things start getting complicated
+[31:53] so V0 by 4 is here
+[31:55] now
+[31:57] see here it is minus 1
+[31:59] so here it is minus 1
+[32:01] from the virtual shot
+[32:03] here it is V0 by 4
+[32:05] so here it is V0 by 4
+[32:07] okay
+[32:09] now how much current will be here
+[32:11] i
+[32:13] i which will be
+[32:15] 1 minus
+[32:17] 1
+[32:19] minus
+[32:21] V0 by 4
+[32:23] upon 1
+[32:25] so it is in milli ampere
+[32:27] keep this in mind that it is divided from 1
+[32:29] meaning milli ampere
+[32:31] now if I tell you here V0 by 1
+[32:33] tell me
+[32:35] so you will say this current
+[32:37] will be going here too
+[32:39] so
+[32:41] V0 by 1 is
+[32:43] V0 by 4
+[32:45] minus 2i
+[32:47] okay
+[32:49] 2i, 2km into i
+[32:51] V0 by 4
+[32:53] put the value instead of i
+[32:55] minus 2 plus V0 by 2
+[32:57] so 3 V0 by 4
+[32:59] minus 2
+[33:01] here it is
+[33:03] now on this 1 node
+[33:05] put the nodal on the node of minus 1
+[33:07] so minus 1
+[33:09] minus V0 by 4
+[33:11] minus 1
+[33:13] minus
+[33:15] V0 by
+[33:17] 8
+[33:19] okay
+[33:21] now if we take 8 LCM
+[33:23] minus 2 minus 1 minus 3
+[33:25] minus 2 V0 by 1
+[33:27] is V0
+[33:29] if you put 2 V0 by 1
+[33:31] minus 3
+[33:33] 2 V0 by 1
+[33:35] means 3 by 2 V0
+[33:37] 2 V0 by 1
+[33:39] means
+[33:41] minus 2 V0 by 1
+[33:45] okay
+[33:47] and minus minus plus 4
+[33:51] so see this 1.5
+[33:53] 2.5
+[33:55] so V0 is coming from here
+[33:57] 0.4V
+[33:59] okay
+[34:01] but it is going wrong
+[34:03] 2 by 3 V0
+[34:05] okay
+[34:07] yes
+[34:09] this is 1 by 4
+[34:11] this is okay
+[34:13] this is 1 by 4 here
+[34:15] 1 minus V0 by 4
+[34:17] then V0 by 4 minus 2 i
+[34:19] minus 2
+[34:21] minus 2 plus V0 by 2
+[34:23] so 3 V0 by 4 minus 2
+[34:25] then minus 1
+[34:27] minus V0 by 4
+[34:29] minus 1 minus V0 by 8
+[34:31] so it went to 2
+[34:33] then minus 2
+[34:35] minus 1 minus 3
+[34:37] minus 2 V0 by 1
+[34:39] and this minus V0
+[34:41] went there
+[34:43] so minus 3 minus 2 V0 by 1
+[34:45] minus 3 by 2 V0
+[34:47] plus 4
+[34:49] so this is 1
+[34:51] and this is 1.5
+[34:53] 2.5 is done
+[34:55] where is it going wrong
+[34:57] tell me
+[34:59] where is the mistake
+[35:01] where is it going
+[35:05] according to me
+[35:07] it is coming 0.4
+[35:09] if there is a mistake
+[35:15] is something wrong
+[35:19] tell me
+[35:23] should be D
+[35:25] something else is coming
+[35:27] 0.4 is coming
+[35:29] so the answer will be
+[35:31] D none of these
+[35:33] in such questions
+[35:35] just be careful
+[35:37] nothing else
+[35:39] now for the open circuit
+[35:41] the voltage gain
+[35:43] V0 by VI
+[35:45] see if you want here
+[35:47] you can visualize
+[35:49] start to delta
+[35:51] or as I did
+[35:53] do it
+[35:55] as I told you
+[35:57] this time
+[35:59] let's do it with your method
+[36:01] start to delta
+[36:03] okay
+[36:07] see how it comes
+[36:11] minus plus
+[36:15] R
+[36:17] here it will be 3R
+[36:19] 3R will be
+[36:21] now what is the meaning of
+[36:23] 3R coming in delta
+[36:27] this was the grounded terminal
+[36:53] see 3R
+[36:55] 3R
+[36:57] 3R
+[36:59] and this is R
+[37:05] now see
+[37:07] this 3R is
+[37:09] connected between inverting terminal and ground
+[37:11] so redraw this circuit
+[37:17] this 3R
+[37:19] is connected between
+[37:21] inverting terminal and ground
+[37:25] then
+[37:29] this 3R
+[37:31] is going straight
+[37:33] and these 3R and R
+[37:35] are coming in series
+[37:37] sorry parallel
+[37:39] now see these three resistances
+[37:41] are different
+[37:43] now start to delta
+[37:45] which is useless
+[37:51] now start to delta
+[37:53] this will be wasted
+[37:55] this is 0
+[37:59] so see this 3R resistance
+[38:01] is wasted because
+[38:03] here also 0 came
+[38:05] so here current came
+[38:07] you have V in by R
+[38:09] now this current
+[38:11] will go ahead
+[38:13] V in by R
+[38:17] if I say to take out the voltage of this node
+[38:19] V is 0
+[38:21] minus
+[38:23] V in by R current
+[38:25] into resistance
+[38:27] so minus 3V in
+[38:29] now when you put the node on V
+[38:31] so V minus
+[38:33] 0 by 3R
+[38:35] V minus
+[38:37] 0 by 3 by 4R
+[38:41] plus V minus
+[38:43] V out by R
+[38:47] so keep R as its denominator
+[38:49] 1 by 3, 4 by 3
+[38:51] means 5 by 3
+[38:53] and 1 by 8 by 3
+[38:59] now this 3V in
+[39:01] so V out is
+[39:05] minus 8V in
+[39:07] so here gain came
+[39:09] minus 8
+[39:11] this is coming
+[39:13] tell me this is coming
+[39:16] so once start delta
+[39:18] and then take out the node voltage
+[39:20] this is coming of all
+[39:22] understood?
+[39:24] if directly take out the node voltage
+[39:26] then you have to take out 2 node voltage
+[39:28] V1, V2
+[39:29] then also you can take out the node
+[39:31] or once start delta
+[39:33] and work with 1 node voltage
+[39:35] will be done
+[39:37] next see A, VD
+[39:39] means differential gain V0 upon
+[39:41] V1 minus V2
+[39:43] now see this instrumentation amplifier
+[39:45] as it is done
+[39:47] here V2 came
+[39:49] here V1 came
+[39:51] so here current
+[39:53] how much came? I
+[39:55] remember
+[39:57] in instrumentation amplifier we have done
+[39:59] many times
+[40:01] V1 minus V2 by 2
+[40:03] now this I current
+[40:05] will be coming from here
+[40:07] and will be going like this
+[40:09] now if you put KVL
+[40:11] V0 minus 6I
+[40:13] minus 2I
+[40:15] minus 4I
+[40:17] equal to 0
+[40:19] so V0 is 12I
+[40:23] that is 6 times
+[40:25] V1 minus V2
+[40:27] so here came 6
+[40:29] ok?
+[40:31] 6 came
+[40:35] now see this
+[40:37] if
+[40:39] consider following
+[40:41] opamp circuit output voltage
+[40:43] V0
+[40:45] this one is done
+[40:47] see
+[40:49] we just took out this
+[40:51] IEL
+[40:53] so here
+[40:55] how much V0 came?
+[40:57] 6 came
+[41:03] C
+[41:05] answer will be C
+[41:07] means we have taken out V0
+[41:09] brother
+[41:11] next
+[41:13] in the following circuit
+[41:15] each opamp has input offset voltage
+[41:17] 10 millivolt
+[41:19] opamp is ideal otherwise
+[41:21] output V0 1 and V0 2
+[41:23] when V in is 0
+[41:25] now what I told
+[41:27] input offset voltage
+[41:29] where do we put it?
+[41:31] positive terminal voltage
+[41:33] sir if current direction
+[41:35] is taken in V2 minus V1
+[41:37] brahmendra will have to reverse
+[41:39] because in answer V1 minus V2
+[41:49] if you take
+[41:51] V2 minus V1 by 2
+[41:53] then also in final answer
+[41:55] write V1 minus V2
+[41:57] so where do you put it?
+[41:59] positive terminal
+[42:01] so I redraw this circuit
+[42:03] I redraw
+[42:05] input is given
+[42:07] to remove
+[42:19] so what will you put here?
+[42:21] input offset voltage
+[42:23] then
+[42:31] 10 ohm 50 ohm
+[42:39] this is the connection
+[42:41] they have drawn the right end
+[42:43] 50 ohm
+[42:45] and here you have to
+[42:47] put input offset
+[42:49] both are given as opamp
+[42:51] There is an input offset, so there will be one source in both.
+[43:00] I think this resistance is 10, 100 and it is grounded from here.
+[43:06] Okay, now V01, see this is a non-inverting amplifier and how much is this? 10 millivolts.
+[43:14] Now for V01, this is a non-inverting amplifier, right?
+[43:22] So V01 is 10 millivolts into 1 plus 100 by 10, i.e. 11, so 110 millivolts.
+[43:35] Okay, now for V02, see there are two things.
+[43:39] First, V01 is becoming a part of an inverting amplifier, i.e. minus 5 by, sorry, 50 by 10.
+[43:49] And the 10 millivolts that you have applied is making a non-inverting amplifier, 50 by 10.
+[43:56] So 60 minus 5, V01 is minus 550 plus 60, so minus 490.
+[44:09] Many children know what they will do wrong, they will not take it in the second op-amp.
+[44:14] So your output is 110 and minus 490, see.
+[44:21] Even if you don't say it, then you don't do V in zero.
+[44:25] Because if it asks for the output offset, then you have to keep V in zero.
+[44:30] If it only asks for the output voltage, then including V in answer, okay?
+[44:35] If it asks for the output offset, then the input voltage is zero.
+[44:40] Because the output on zero input is called as the output offset voltage.
+[44:47] Now see this, assuming that the base emitter voltage of BJT is 0.7, beta is 99, output voltage.
+[44:55] It is interesting, see.
+[44:58] See, from the virtual ground, 1 volt will come here.
+[45:03] This is 0.7, i.e. the voltage here is 1.7.
+[45:09] With this, I can also take out the base current.
+[45:15] So what is the base current?
+[45:17] 5 minus 1.7 by 33.
+[45:23] So 0.1 milliampere, okay?
+[45:29] If 0.1 milliampere is IB, then you can take out the i.e. emitter current.
+[45:34] 1 plus beta IB is 100, i.e. 10 milliampere.
+[45:42] So see, 10 milliampere will come here.
+[45:46] And this 10 milliampere will go all the way here because nothing goes in the op-amp.
+[45:51] So V0 will be 1 minus 10 milliampere into 100.
+[45:59] Zero.
+[46:01] So the answer will be C.
+[46:03] Did everyone get this? Tell me.
+[46:05] Did everyone take this out?
+[46:07] Because it is a good question by connecting BJT and op-amp.
+[46:11] Did this come?
+[46:21] Find IST in terms of VS.
+[46:25] Now see what our Kalpith Kalp was asking.
+[46:28] He is talking about input or impedance only.
+[46:31] So what do I do, dear?
+[46:33] I will do the capacitance 1 by SC here.
+[46:37] So C is 1, i.e. 1 by S.
+[46:40] 1 by S.
+[46:43] Okay.
+[46:44] Yes.
+[46:46] Now this voltage.
+[46:49] Suppose this is V.
+[46:51] So here also there will be voltage V.
+[46:56] This junction is also V.
+[47:00] Or wait.
+[47:02] This is VS.
+[47:05] So this will be VS.
+[47:07] This will be VS.
+[47:09] So this will also be VS.
+[47:10] Now IS will not have any current here.
+[47:14] Zero.
+[47:16] So the entire IS will go here.
+[47:19] Okay.
+[47:21] The entire IS will go here.
+[47:23] So if V is considered as voltage on this node.
+[47:27] But we do not know the output current of this.
+[47:31] So we cannot put the nodal.
+[47:33] So what can you do here?
+[47:35] VS minus IS by SKVL.
+[47:40] This is done.
+[47:42] And here it is VS.
+[47:44] What can we do if it is VS?
+[47:47] Can we remove the current?
+[47:51] Remove the I.
+[47:54] How much will the I come?
+[47:57] VS minus.
+[48:01] Do you understand?
+[48:08] Upon 2.
+[48:11] So this is done.
+[48:12] IS by 2S.
+[48:15] Okay.
+[48:16] IS by 2S.
+[48:18] Now this IS by 2S.
+[48:20] This I is coming.
+[48:21] This I will be coming from here.
+[48:24] So how much voltage will be here?
+[48:26] Suppose this is called V2.
+[48:31] V2 is VS.
+[48:34] Plus I into 1.
+[48:37] That is VS.
+[48:38] VS.
+[48:39] Plus.
+[48:40] IS by 2S.
+[48:43] Now if we put the nodal on this node.
+[48:47] Here it is 0 on the node of VS.
+[48:51] So VS minus 0 upon 1 by S.
+[48:55] Plus VS minus V2 upon 2.
+[49:00] So this is VS.
+[49:03] How much will VS minus V2 be?
+[49:05] Minus IS by 2S.
+[49:09] Upon 2.
+[49:13] So this is done.
+[49:14] VS upon IS.
+[49:15] How much will it come?
+[49:17] 1 by 4S square.
+[49:21] This is coming.
+[49:23] Tell me, is this coming?
+[49:25] 1 by 4S square.
+[49:31] Sir, if there is a resistance at non-inverting terminal in previous one.
+[49:36] Here.
+[49:38] If there was a resistance, there would be no difference.
+[49:41] Because if there was a resistance, the current would have been zero.
+[49:49] Dear, you have to make it on paper.
+[49:51] Look, if there is a long question.
+[49:53] So what do you do?
+[49:56] You have to draw this one.
+[49:58] But the small questions that are there.
+[50:00] Keep it in your mind.
+[50:02] Whatever voltage is there.
+[50:04] And adjust according to it.
+[50:06] Okay?
+[50:07] Suppose you have given a name in your mind.
+[50:09] This is V2 and this is V1.
+[50:11] Do this and write their equation.
+[50:14] At inverting terminal.
+[50:17] If there was a resistance here.
+[50:20] If there was a resistance here.
+[50:22] Even in that, there was a current of 10 milliampere.
+[50:25] I put the whole KVL from here.
+[50:27] 1 minus 10 into R1.
+[50:29] Minus 10 into 100 is V0.
+[50:33] Okay?
+[50:34] If there was a resistance here, it would have been 1 volt.
+[50:38] Yes.
+[50:39] Then we could not directly take out the I B.
+[50:41] Then what do we have to do?
+[50:42] We have to consider this current as I.
+[50:44] If it was made here.
+[50:45] Consider this current as I.
+[50:47] This is 1 plus IR.
+[50:48] This is 1.7 plus IR.
+[50:50] Then I would take out I B.
+[50:52] In the terms of I and I B, it would write I upon 100.
+[50:55] Do you understand?
+[50:56] Consider its emitter current I.
+[50:58] Consider the emitter current I.
+[51:00] And then put the whole KVL from here and take out I B.
+[51:03] Till here.
+[51:04] This is how KVL appears in this loop.
+[51:12] Okay?
+[51:15] Yes.
+[51:16] If the input to a differentiating circuit is a sawtooth wave.
+[51:19] The output will be what?
+[51:21] The derivative of sawtooth.
+[51:23] It will be a rectangular wave.
+[51:27] Okay?
+[51:28] This is clear.
+[51:29] This is clear.
+[51:30] For which square wave comes?
+[51:31] For the perfect triangle.
+[51:32] But for sawtooth, it will be a square wave.
+[51:35] Sorry, rectangular wave.
+[51:37] Input R to be amplified by the same factor.
+[51:41] R should be.
+[51:42] Both have to be amplified by the same factor.
+[51:45] So what is V naught?
+[51:47] V negative minus 22 by 10.
+[51:54] Now what will you do for V positive?
+[51:56] First, voltage division.
+[51:59] R by R plus 15.
+[52:03] And then gain.
+[52:06] 1 plus 22 by 10.
+[52:09] And this should be 2.2.
+[52:11] Because its gain is 2.2.
+[52:14] So 3.2R by R plus 15.
+[52:20] Is 2.2.
+[52:22] So 3.2R is 2.2R.
+[52:28] Plus 33.
+[52:31] So R equal to 33 kilo ohm.
+[52:36] Okay?
+[52:37] A.
+[52:41] Yes.
+[52:42] If we apply square wave input to an ideal integrator,
+[52:46] then the output is triangular wave.
+[52:49] What is output?
+[52:50] Triangular wave.
+[52:51] Okay?
+[52:53] Okay.
+[52:54] So all your assignments are done.
+[52:56] You can go and apply PYQs here.
+[52:59] I have already asked you all the questions of O-PAM's linear application.
+[53:03] So you can apply PYQs here in a great way.
+[53:07] And where to go?
+[53:08] In Gate PYQ by AIR1.
+[53:11] I will apply non-linear application tomorrow
+[53:13] where your diodes will be connected with your O-PAM.
+[53:16] Okay?
+[53:17] And if you join the academy, then you can take anything plus or iconic.
+[53:21] You are getting top teachers in both.
+[53:23] You are getting study material on the app.
+[53:25] You are getting test series on the app.
+[53:26] But what is extra in iconic?
+[53:28] If there is a doubt in the new question, then its video solution.
+[53:31] Printed notes for the house.
+[53:33] 1-1 mentorship, strategy and study plan.
+[53:36] And in the open house session, you can interact via audio.
+[53:40] You are getting all these things in iconic.
+[53:44] Railway's JEE and...
+[53:46] Dear, tell me personally, Gaurav.
+[53:48] What do you want?
+[53:49] What is the issue?
+[53:51] Then let's talk about it.
+[53:53] Okay?
+[53:54] And what do you have to do?
+[53:55] You have to go to the Unacademy app.
+[53:57] And you have to decide the plan there.
+[53:59] You have to decide the duration.
+[54:01] And you have to apply the code at the time of payment.
+[54:03] Ankit ESE.
+[54:05] Okay?
+[54:08] Sir, I have got 7 subjects.
+[54:10] In each subject,
+[54:11] I am de-confident.
+[54:13] How to strengthen them?
+[54:14] Revision their topic from the short notes.
+[54:16] Revise them.
+[54:17] And watch the video of the subject again.
+[54:23] Sir, it is like a square wave from a moment.
+[54:26] Square wave means a very symmetric dip.
+[54:29] As high as it is, as low as it is.
+[54:31] Yes, dear.
+[54:32] I will take it on YouTube.
+[54:34] After the analogue is over.
+[54:36] And look, the kids who are preparing for 24,
+[54:38] they can take a subscription of 16 months.
+[54:41] It is a subscription of 15 months.
+[54:43] Within that, you will be given one month extra.
+[54:47] So, if you purchase here,
+[54:50] then simply you can use the code Ankit ESE.
+[54:54] Other than this, dear, if you see the results,
+[54:57] in the last year in the top 10,
+[54:59] we have taken out 6 anchors.
+[55:01] You can also be one of them next year.
+[55:03] You just have to join the Unacademy quickly.
+[55:05] Using the code Ankit ESE.
+[55:08] Okay?
+[55:09] So, Anuj, increase its speed.
+[55:11] Watch the entire subject video.
+[55:13] Watch some concept video.
+[55:15] This subject can be a little weak.
+[55:18] And look, if there is a financial issue,
+[55:20] then go for EMI.
+[55:21] There will be no interest in it.
+[55:23] And here in EMI, you can fill your fees month on month.
+[55:26] There is only 2 hours of approval.
+[55:28] In the paperwork, there is an Aadhar card and a PAN card in your family.
+[55:31] Give it to a member whose salary comes.
+[55:34] Because he gives the bank EMI.
+[55:37] Other than this, look, there is a Gurukul batch for 24.
+[55:40] In which Dhande sir is taking analogue.
+[55:42] And Gurupal sir is taking your maths.
+[55:44] Other than this,
+[55:46] the rank improvement batch of Creatrix is starting.
+[55:49] From 31st October to Monday.
+[55:52] There are maths in this.
+[55:53] Pallav sir is coming at 3 o'clock.
+[55:55] Other than this, the network is coming.
+[55:56] Bhima sir is coming at 7.15 o'clock.
+[55:58] For the EC children,
+[56:00] we are putting an extra subject together.
+[56:02] EDC is at 8.30 o'clock.
+[56:04] So, if you want to revision with us in the best manner,
+[56:07] then be a part of the rank improvement batch of Team Creatrix.
+[56:11] And here you can take a subscription of 4 months.
+[56:15] In the subscription of 4 months,
+[56:17] your gate will be covered in a great way.
+[56:19] Otherwise, you can also take a subscription of 3 months.
+[56:22] Okay.
+[56:23] And this is my telegram channel.
+[56:25] Stay connected with it so that you get all the information.
+[56:31] You can do it according to me.
+[56:33] You can do it once.
+[56:35] And look, if you want the PDF of this session,
+[56:40] then go to the academy app.
+[56:42] Go to the home page in the community on Discover.
+[56:46] I will get all the PDFs on Discover.
+[56:48] Within the next 15 minutes,
+[56:50] this PDF will be available to you.
+[56:52] Download it from there.
+[56:54] So, thank you everyone.
+[56:55] Thanks a lot, kids.
+[56:56] We will meet tomorrow with non-linear applications.
+[56:59] You guys wind up the linear one.
+[57:01] And till Sunday,
+[57:02] see, cover as much as possible.
+[57:04] Because then we will start the filters from Monday.
+[57:08] And along with that, all these videos will be private.
+[57:11] Yuvraj, look at me right now.
+[57:13] I don't have that much bandwidth.
+[57:14] Because I am already teaching 7 to 8 hours a day.
+[57:17] Now there is no time or bandwidth to make a marathon on it.
+[57:24] What comes out of 4 numbers?
+[57:29] Power system.
+[57:30] Power system is more.
+[57:32] It comes out of 8 to 10 numbers.
+[57:34] Who is saying 4 numbers of power system?
+[57:35] Analog comes out.
+[57:36] Analog comes out.
+[57:37] Power system of 4 to 5 numbers comes out more in electrical.
+[57:40] Okay?
+[57:41] Let's go.
+[57:42] Then we will meet tomorrow.
+[57:43] Same time, same place.
+[57:44] Let's crack it.

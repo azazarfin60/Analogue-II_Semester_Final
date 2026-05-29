@@ -1,0 +1,213 @@
+Title: Log and Antilog Amplifiers Explained | Applications of Log and Antilog Amplifiers
+URL: https://www.youtube.com/watch?v=Nrfb-s0wl6g
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:16] So in this video we will understand how to design the log and anti log amplifier using
+[00:21] the op-amp.
+[00:23] Now using the logarithmic characteristics of the circuit components it is possible to
+[00:27] convert the multiplication into the addition and the division into the subtraction.
+[00:32] And similarly it is possible to convert the powers and the roots into the multiplication
+[00:36] and the division respectively.
+[00:39] For example, let us say you have a signal A and if you pass the signal through the logarithmic
+[00:45] amplifier followed by the scaling circuit which scales the input by let's say some
+[00:50] factor B, then the output of this circuit will be equal to B times the log of the signal
+[00:56] A and if you pass this signal through the anti log amplifier then we can raise the original
+[01:02] signal to the power of this scaling factor.
+[01:06] Similarly let us assume that we are passing the output of the logarithmic amplifier through
+[01:11] some division circuit which divides the output of this logarithmic amplifier by a factor
+[01:16] of 1 by 2.
+[01:18] And then if you pass this signal through the anti log amplifier then we can find the square
+[01:22] root of the original signal.
+[01:24] Now this division circuit can be as simple as the voltage-divider circuit and just by changing
+[01:30] the division factor we can find the cube root or the n-th root of the original signal.
+[01:37] So this type of circuit is very useful in finding the RMS value of the signal.
+[01:43] So in this way this log and anti log amplifiers are very useful in performing the mathematical
+[01:49] operations or we can say that it is an essential part of the analog computer.
+[01:54] So apart from performing this mathematical operations this log and anti log amplifiers
+[01:59] are very useful for the signal compression.
+[02:03] So using this amplifier we can even reduce or enhance the dynamic range of the signal.
+[02:09] Now this log and anti log amplifiers can be designed by using the diode and the transistors.
+[02:15] So first we will design this log and anti log amplifiers using the diode and later on
+[02:20] we will modify the circuit for the further improvements.
+[02:25] So here is the simple circuit of this log amplifier which is designed using the diode and the
+[02:29] opam.
+[02:30] So here this diode is connected in the feedback path between the output and the inverting
+[02:35] input terminal.
+[02:37] Now here let us assume that IR is the current which is flowing through this resistor R and
+[02:42] ID is the forward current of this diode and VD is the forward voltage across this diode.
+[02:49] Now if we apply the concept of virtual ground then we can say that this node over here will
+[02:54] be also at a ground potential.
+[02:57] So now if we apply the KVL in this loop then we can say that the output voltage V out
+[03:03] will be equal to minus VD and if we apply the KCL at this node then we can say that this
+[03:09] current IR will be equal to the current which is flowing through this diode and this
+[03:14] current IR will be equal to the input voltage divided by this resistor R.
+[03:20] Now here the relationship between the forward current of this diode and the voltage across
+[03:24] this diode can be given by this expression.
+[03:28] So here this IS is the reverse saturation current and VT is the thermal voltage of this
+[03:33] diode.
+[03:35] While the VD is the forward voltage across the diode and the eta is the ideality factor.
+[03:40] Now generally the ideality factor is to be in the range of 1 and 2 and it depends upon
+[03:45] the forward current of this diode.
+[03:49] So for the ideal diode this ideality factor should be equal to 1 but in reality it varies
+[03:56] between 1 and 2.
+[03:58] Now here this reverse saturation current and the thermal voltage are the temperature dependent
+[04:03] parameters.
+[04:04] So with temperature these two parameters will change.
+[04:07] In fact this reverse saturation current will almost get doubled after every 10 degree
+[04:12] rise in temperature.
+[04:14] While the thermal voltage will change with the temperature by this expression.
+[04:19] So here this K is the Boltzmann constant and T is the temperature of the diode while
+[04:24] Q is the charge of electron.
+[04:27] So if you put all these values and if you evaluate the value of this thermal voltage
+[04:32] at T is equal to 300 degree Kelvin or at room temperature then the approximate value
+[04:37] of this thermal voltage will be equal to around 25.8 milli volt.
+[04:43] So at room temperature if you put the value of this thermal voltage in this expression
+[04:49] then the diode current ID can be given by this expression.
+[04:53] Now here this exponential term will be much larger than 1.
+[04:57] So approximately we can say that ID is equal to IS times e to the power of 38.6 times
+[05:03] this diode voltage Vd divided by this ideality factor.
+[05:08] And in general at any temperature we can write this expression ID is equal to IS times e
+[05:15] to the power of Vd divided by eta Vt.
+[05:20] Now from this we can say that ID divided by this IS is equal to e to the power of Vd
+[05:29] divided by eta Vt.
+[05:32] Now suppose if we take the natural log on both sides then we can say that ln of id
+[05:39] divided by IS is equal to Vd divided by eta Vt.
+[05:48] That means Vd will be equal to eta Vt times ln id divided by IS.
+[05:59] Now earlier we have found that this output voltage V out will be equal to minus Vd and this
+[06:06] current IR will be equal to the current that is flowing through this diode and that will
+[06:11] be equal to this input voltage V in divided by this resistor R.
+[06:17] So if we put all these values then we can say that the output voltage V out will be equal
+[06:22] to minus eta Vt times ln input voltage V in divided by this current IS times the value
+[06:31] of this resistor R. So this is the expression of the output voltage in case of a log amplifier
+[06:38] and as you can see over here the output voltage is proportional to the natural log of the input
+[06:43] voltage.
+[06:44] Now we will talk more about this log amplifier at the later part of the video but now first
+[06:49] of all let us see similarly how we can design the anti log amplifier.
+[06:53] So now here just by interchanging the position of this diode and the resistor we can convert
+[06:58] the log amplifier into the anti log amplifier.
+[07:01] So now here let us assume that the current that is flowing through this diode is equal
+[07:05] to id and the current that is flowing through this resistor is equal to IR and Vd is the
+[07:11] voltage across this diode.
+[07:13] Now because of the virtual ground concept this node will be also at a ground potential.
+[07:19] So now if we apply the KVL in this particular loop then we can say that this input voltage
+[07:25] V in will be equal to the voltage across the diode and if we apply the KCL at this
+[07:30] node then we can say that this diode current id will be equal to the current that is flowing
+[07:38] through this resistor R that is equal to minus V out divided by this resistor R or simply
+[07:46] we can say that the output voltage V out will be equal to minus R times the current that
+[07:52] is flowing through this diode.
+[07:54] Now we know that the diode current id can be approximately given as IS times e to the
+[08:00] power of Vd divided by e to the power of Vd and earlier as we have seen the output voltage
+[08:08] V out will be equal to minus R times this diode current.
+[08:13] So we can say that the output voltage V out will be equal to minus R times id or we can
+[08:20] say that that is equal to minus R times IS into e to the power of Vd divided by e to the power of Vd.
+[08:31] Now as we have seen this input voltage V in will be equal to the voltage across the diode.
+[08:37] So we can say that this output voltage V out will be equal to minus R times IS into e to the power
+[08:47] V in divided by eta Vt. So this is the expression of the output voltage in case of the anti-log amplifier.
+[08:56] So here are the two expressions for the log and the anti-log amplifiers and as you can see
+[09:01] over here the output voltage V out is also depend on the other factors like the adiability factor eta,
+[09:08] the thermal voltage Vt, the reverse saturation current IS. Now like I said before this reverse
+[09:15] saturation current and the thermal voltage are the temperature dependent parameters. So with
+[09:20] temperature they will change. Now we will talk more about these two factors at the later part of
+[09:25] the video but before that first of all let us talk about this adiability factor. Now like I said
+[09:31] before this adiability factor used to be in the range of 1 and 2 and because of this adiability
+[09:37] factor the dynamic range of the circuit used to get reduced. So that is the disadvantage of this
+[09:42] diode based log and anti-log amplifier and that problem can be solved by using the transistor
+[09:48] based log and anti-log amplifier. So here is the circuit of a log amplifier which is designed
+[09:54] using the transistor and the op-amp. Now here in fact this transistor is used as a diode and this
+[10:02] circuit is also known as the trans diode configuration. So if you observe this circuit here this base is
+[10:09] at a ground potential and because of the virtual ground this collector of this transistor will also
+[10:15] add a ground potential. So basically this collector base junction is at a ground potential. So only
+[10:23] this base emitter junction will be active in this transistor. So effectively this transistor will
+[10:30] act as a diode. So now let us write down the different currents which is flowing through this
+[10:36] circuit. So here this IR is the current which is flowing through this resistor R and IC and the
+[10:43] IR the collector and the emitter currents of this transistor. Now approximately we can say that
+[10:49] this collector current will be equal to emitter current and if we apply the KCL at this node
+[10:56] then we can say that this resistor current IR will be equal to this collector current IC and
+[11:03] that will be equal to this input voltage V in divided by the resistor R.
+[11:10] Now here let us assume that the voltage across this base emitter junction is equal to VBE
+[11:17] and if we apply the KCL around this node then we can say that this output voltage V out will
+[11:23] be equal to minus VBE. So using this now let us find out the output voltage for this log amplifier.
+[11:30] Now here in the given circuit as this base emitter junction is acting like a diode. So we can
+[11:36] write the relationship between this VBE and the IE in a similar fashion that we have written
+[11:41] for the diode and here as this collector current is approximately equal to this emitter current.
+[11:47] So we can write the relationship as IC is equal to IS times e to the power of VBE
+[11:54] divided by this thermal voltage VT minus 1. Approximately we can write this expression as IS times
+[12:02] e to the power of VBE divided by VT because this exponential term is much larger than 1.
+[12:10] Now from this expression we can easily find the relationship between the output voltage and the
+[12:14] input voltage. So if we reenge this expression then we can write this expression as VBE that is
+[12:22] equal to VT times ln IC divided by IS. Now earlier we have written that this output voltage V out
+[12:32] will be equal to minus VBE and this collector current IC will be equal to the current that is
+[12:40] flowing through this resistor R that is equal to V in divided by this resistor R.
+[12:47] So from this we can say that the output voltage V out will be equal to minus VT times this natural
+[12:56] log of this input voltage V in divided by R times the saturation current IS. So this is the
+[13:06] expression of the output voltage for the log amplifier which is designed using the transistor.
+[13:11] And as you can see we are here for the transistor the adiatic factor is equal to 1.
+[13:17] So there is no dependency on the adiatic factor. So using this transistor based log amplifier
+[13:23] we can increase the dynamic range of the circuit. So now similarly let us find out how we can design
+[13:29] the anti log amplifier using this transistor. So here we have just interchange the position of
+[13:36] the resistor and the transistor. Now using the concept of virtual ground we can say that
+[13:41] this collector is also at a ground potential. But here to make this base emitter junction positive
+[13:48] this input voltage V in should be less than 0 or we can say that the input voltage should be
+[13:54] negative because here we are using the n-pin transistor. So if you want to apply the positive
+[14:00] input voltage then instead of this n-pin transistor we should use PNP transistor.
+[14:06] So now in this PNP transistor if we apply the positive voltage at this node then this emitter
+[14:12] base junction will become forward biased and we can use this circuit as a anti log amplifier.
+[14:19] So now let us write down the different currents for the given circuit. So here once again let us
+[14:24] assume that I and I see are the emitter and the collector current for the given transistor.
+[14:30] And here we are assuming that I R is the current which is flowing through this resistor R.
+[14:35] Now considering the virtual shot this node will be at a ground potential. So now let us apply
+[14:41] the KVL around this loop. So we can say that this input voltage V in will be equal to the
+[14:48] voltage across this emitter and the base junction. Now considering we are using the PNP transistor
+[14:55] instead of writing VBE we are writing a VEB. And now if we apply the KCL at this node
+[15:01] then we can say that this current IC will be equal to the current IR that is equal to minus V
+[15:07] out divided by this resistor R. Or simply we can say that the output voltage V out will be equal
+[15:13] to minus R times this collector current IC. Now earlier as we have seen this collector current
+[15:21] can be given by the expression IS times e to the power VEB divided by VT. And as we have just seen
+[15:31] the output voltage V out will be equal to minus R times this collector current IC.
+[15:37] So we can say that output voltage V out will be equal to minus R times this IS into e to the power of
+[15:46] VEB divided by VT. Now just we have also seen that this input voltage V in is equal to VEB.
+[15:57] So from this we can say that the output voltage V out will be equal to minus R times IS into e to the
+[16:04] power V in divided by VT. So this is the expression of output voltage in case of an anti-log amplifier
+[16:14] which is designed using the transistor. So here are the expressions for this log and anti-log
+[16:20] amplifiers which are designed using the transistor. So using this transistor the dependency
+[16:26] on the idle active factor has been removed. But still if you observe these expressions the output
+[16:32] voltage still depends upon the thermal voltage VT and the reverse saturation current IS.
+[16:37] So with temperature the output voltage V out will change. So now let us find out how we can
+[16:43] modify the circuit so that the dependency on the temperature can be removed. So here is the circuit
+[16:49] of a temperature compensated log amplifier. So now let us find out how the circuit works and using
+[16:55] the circuit how we can compensate the effect of temperature on the output voltage. So now in this
+[17:00] circuit instead of a single log amplifier the two log amplifiers has been used. So in the first
+[17:06] log amplifier the input voltage is given while in the second log amplifier some reference voltage
+[17:12] has been given and in these two log amplifiers the matched pair of transistors are used. It means that
+[17:19] both transistors have a same thermal voltage and the same reverse saturation currents. So now let
+[17:24] us say that the output of this first log amplifier is equal to Va. So we can say that the output voltage
+[17:32] Va will be equal to minus VT times ln V in divided by r times the reverse saturation current IS.
+[17:44] And similarly now let us say the output voltage of this second log amplifier is equal to VB.
+[17:52] So this VB will be equal to minus VT times this natural log of this reference voltage VR
+[18:02] divided by r times this reverse saturation current IS. Now this input voltage is Va and VB
+[18:10] are given to the differential amplifier. Now by selecting the value of this R1, R2, R3,
+[18:16] and R4 we can ensure that the output voltage of this differential amplifier is equal to VB minus
+[18:23] Va or we can say that the output voltage V out will be equal to VT times ln V in divided by r times
+[18:33] IS minus VT times ln VR divided by r times IS. And if you simplify it then we can say that VB
+[18:43] minus Va will be equal to VT times ln V in divided by r times IS multiplied by r times IS divided
+[18:55] by this reference voltage VR or we can say that the VB minus Va will be equal to VT times ln
+[19:04] is input voltage V in divided by this reference voltage VR. So if you observe this expression
+[19:11] of this VB minus Va it is independent of the reverse saturation current. So by using this reference
+[19:16] voltage VR and this differential amplifier circuit block we can remove the effect of this reverse
+[19:22] saturation current. But still this output voltage depends upon this thermal voltage. So using
+[19:29] this third block we can eliminate the effect of this thermal voltage. So now let us write down
+[19:34] expression for the output voltage. So the output voltage V out can be given as 1 plus r6
+[19:42] divided by r5 times this voltage VB minus Va and that is equal to VT times its natural log of V in
+[19:51] divided by this reference voltage VR. Now here this third block is nothing but the non-inverting
+[19:58] opam. But in this third block this resistor r5 is the temperature dependent resistor. So with
+[20:04] temperature the value of this resistance r5 will change. So now if we select the temperature
+[20:09] coefficient of resistance for this r5 in such a way that it can nullify the effect of this VT.
+[20:14] And in a way we can nullify the effect of temperature from this log amplifier circuit.
+[20:20] So this is one of the way by which we can design this temperature compensated log amplifier.
+[20:26] So in this way we can also design the temperature compensated antilog amplifier.
+[20:30] And if you are interested in knowing that circuit then do let me know here in this poll.
+[20:35] You can also comment me in the comment section below. So this is all about the log and
+[20:39] antilog amplifiers which are designed using the opam. So if you have any question or
+[20:44] suggestion do let me know in the comment section below. If you like this video hit the like button
+[20:49] and subscribe to the channel for more such videos.

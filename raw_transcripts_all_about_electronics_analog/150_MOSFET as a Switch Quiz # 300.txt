@@ -1,0 +1,60 @@
+Title: MOSFET as a Switch | Quiz # 300
+URL: https://www.youtube.com/watch?v=yiP8kBfFxi8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this night lamp circuit and for the given circuit,
+[00:16] we have been asked to find the power which is cutting dissipated across the lamp.
+[00:21] So first of all, let us understand the working of the given circuit.
+[00:25] So in the daylight, when the light falls on this light sensor, then this light sensor
+[00:30] conducts very heavily and it offers very low resistance.
+[00:35] That means in the daylight, the voltage between the gate and the source of this MOSFET will
+[00:40] be approximately equal to 0.
+[00:42] So in this condition, the MOSFET will act as an open circuit and no current will flow
+[00:47] through the lamp.
+[00:49] Now at the night, when the light is very low, then the light sensor will act as an open
+[00:55] circuit.
+[00:57] And in this condition, the voltage between the gate and the source will get decided
+[01:01] by this voltage divider.
+[01:03] So in this condition, some voltage will appear between the gate and the source of this
+[01:08] MOSFET and because of that, it will act as a closed circuit.
+[01:12] And in this condition, the current will start flowing through the lamp.
+[01:17] And in this way, this lamp will provide the light in the night.
+[01:21] So here, we have been asked to find the power which is getting dissipated across this lamp.
+[01:27] Now ideally, when this MOSFET conducts, then it should act like a closed switch.
+[01:32] But actually in the on condition, it will provide some series resistance and this series
+[01:38] resistance is known as the RDS ON.
+[01:42] So to find this series resistance, we have been given the MOSFET curves.
+[01:47] So from this, we can find the series resistance.
+[01:51] Now if you are aware, when the MOSFET is used as a switch, then it is used in this linear
+[01:56] region and the slope of this curve can give us the series resistance.
+[02:02] So here, we have been given the value of the test voltage and the test current for the
+[02:06] particular value of the VGS.
+[02:09] That means whenever the VGS is equal to 5 volt, then some test current ID is equal to 2
+[02:15] mpr, while the test voltage VDS is equal to 3 volt.
+[02:20] And the ratio of this voltage in the current can give us the series resistance.
+[02:25] That means whenever this VGS is equal to 5 volt at that time, this RDS ON is equal to VDS
+[02:35] divided by ID.
+[02:37] That is equal to 3 volt divided by 2 mpr.
+[02:41] That is equal to 1.5 ohm.
+[02:44] Now if you see over here, when the light sensor acts as an open circuit, then the voltage
+[02:49] between the gate and the source terminal is equal to 5 volt.
+[02:53] Because the voltage at this terminal is equal to R divided by R plus 3 R times 20 volt.
+[03:01] That means voltage VGS is equal to 5 volt.
+[03:06] And when this VGS is equal to 5 volt, then the MOSFET will act as a close switch and it
+[03:11] will offer a series resistance of 1.5 ohm.
+[03:15] So in the on condition, if you see the equivalent circuit, then it will look like this.
+[03:21] So in this condition, the current through the lamp that is I is equal to 20 volt divided
+[03:27] by 20 ohm plus RDS ON.
+[03:32] And this RDS ON is equal to 1.5 ohm.
+[03:35] That means the current through the lamp is equal to 20 volt divided by 20 ohm plus 1.5
+[03:42] ohm.
+[03:43] That is equal to 0.93 mpr.
+[03:48] And the power which is getting dissipated across the lamp is equal to I square times the impedance
+[03:54] of this lamp that is equal to 20 ohm.
+[03:58] That means the power which is getting dissipated across the lamp is equal to 0.93 mpr square
+[04:04] times 20 ohm.
+[04:06] That is equal to 17.3 volt.
+[04:10] That means at the night when the MOSFET conducts, then the power which is getting dissipated
+[04:14] across the lamp is equal to 17.3 watt.
+[04:19] In hence for the given question, the answer is 17.3 watt.

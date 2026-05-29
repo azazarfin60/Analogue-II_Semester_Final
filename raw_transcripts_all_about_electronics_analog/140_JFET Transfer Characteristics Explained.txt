@@ -1,0 +1,108 @@
+Title: JFET Transfer Characteristics Explained
+URL: https://www.youtube.com/watch?v=h9WlHNVHZ84
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] In the previous video, we have seen the working of the end channel as well as the P channel
+[00:21] JFET.
+[00:23] And then we have discussed the output characteristic or the drain curves for the JFET.
+[00:28] So basically, this output characteristic defines the relationship between the two output
+[00:33] quantities.
+[00:35] And in case of the JFET, it is the relationship between the drain current ID and the voltage
+[00:41] VDS.
+[00:43] And this output characteristic is obtained for the fixed value of VGS.
+[00:48] So in the previous video, we have found the output characteristics of this JFET for the
+[00:53] different values of VGS.
+[00:56] And as you can see from the graph, as the value of VGS changes, then the drain current
+[01:01] ID will change.
+[01:04] So now, let us find out the relationship between the input voltage VGS and the output drain
+[01:09] current ID.
+[01:11] So if you plot this relationship, then it is known as the transfer characteristic.
+[01:16] So basically, this transfer characteristic is the plot, which defines the relationship
+[01:22] between the input and the output quantity of the device.
+[01:25] And it could be either voltage or current.
+[01:29] So for the JFET, if we keep this voltage VDS constant and for the different values of
+[01:34] VGS, if we plot this current ID, then we will get the transfer characteristic of this JFET.
+[01:41] Now for the BJT, if you know, the relationship between the output collector current and the
+[01:46] input base current is linear.
+[01:48] And it can be given by the expression, Ic is equal to beta times Ib.
+[01:53] But for the JFET, the relationship between this input voltage VGS and the drain current
+[01:59] ID is non-linear.
+[02:01] And it can be given by this expression, that is, drain current ID is equal to IDSS times,
+[02:09] 1-VGS divided by VP whole square.
+[02:13] And if we want to find this relation graphically, then it can be found from the output characteristic
+[02:19] or the drain curves of the JFET.
+[02:22] So to find this transfer characteristics, first of all, let us represent this drain current
+[02:26] ID and the voltage VGS on the different axis.
+[02:30] Now on the right side of this curve, we have a drain curve for the different values of
+[02:35] VGS.
+[02:37] So from the right side, first of all, let us extend the saturation drain current for
+[02:42] the voltage VGS is equal to 0.
+[02:45] And at the same time, let us draw our vertical line for the value of VGS is equal to 0.
+[02:52] And the intersection of these two lines will give the value of drain current ID for VGS
+[02:57] is equal to 0.
+[03:00] And we can do the same thing for the different values of VGS.
+[03:05] So for VGS is equal to minus 1, if we extend this line to the left and if we draw our
+[03:10] vertical line for VGS is equal to minus 1, then we will get an intersection point which
+[03:16] represents the value of drain current for VGS is equal to minus 1, and if we do the same
+[03:22] thing for the different drain curves, then we will get a values of drain currents for the
+[03:28] different values of VGS.
+[03:31] And if we connect this intersection points, then we will get a transfer curve which represents
+[03:36] the relationship between the current ID and the VGS.
+[03:40] And as it is evident from the graph, the relationship between this current ID and the VGS is non-linear.
+[03:48] And like we had seen, the mathematically, the relationship can be expressed by this expression.
+[03:54] That is, drain current ID is equal to ID SS times 1 minus VGS divided by PP whole square,
+[04:02] where ID SS is the maximum value of the drain current and the VPS is the pinch of voltage
+[04:07] of this GFET.
+[04:10] So in this expression, if we put VGS is equal to 0, then we will get this drain current
+[04:17] ID is equal to ID SS.
+[04:21] So whenever this VGS is equal to 0, at that time, the value of drain current is maximum.
+[04:27] And the value of that drain current will be equal to ID SS.
+[04:32] Similarly, in this expression, whenever we put this VGS is equal to VP, at that time,
+[04:40] this drain current ID will be equal to 0.
+[04:44] So whenever this VGS is equal to VP, at that time, the drain current is 0.
+[04:51] So by putting these two values, we will get a two extreme points of this curve.
+[04:56] So now let's take the value of VGS in between these two extreme points.
+[05:01] So let's say for some GFET, the value of ID SS is equal to 12 milliampere.
+[05:08] And for that GFET, the value of pinch of voltage VP is equal to minus 4 volt.
+[05:15] And let's say we want to find the value of drain current whenever this VGS is equal to
+[05:21] minus 2 volt.
+[05:23] So if we put all these values, then the drain current ID will be equal to 12 milliampere
+[05:28] times 1 minus minus 2 divided by minus 4 whole square.
+[05:34] And if you simplify it, then the value of ID will be equal to 3 milliampere.
+[05:42] So whenever the VGS is equal to minus 2 volt, at that time, the value of drain current
+[05:48] ID is equal to 3 milliampere.
+[05:53] And in this way, by putting the value of this VGS between the 0 and the pinch of voltage
+[05:58] VP, we can find the value of drain current for the given GFET.
+[06:03] And similarly, for the given GFET, if we know the value of this drain current ID, then
+[06:09] we can find the value of VGS.
+[06:12] So if we just rewrite this expression in terms of the VGS, then it can be represented like
+[06:18] this.
+[06:19] So here, let's say we want to find the value of VGS for the drain current ID is equal
+[06:25] to 6 milliampere.
+[06:28] So from the given expression, we can say that VGS is equal to minus 4 times 1 minus under
+[06:37] root 6 divided by 12.
+[06:41] That is equal to minus 4 times 1 minus under root 1 by 2.
+[06:48] And if you simplify it, then the value of VGS will be equal to minus 1.17 volt.
+[06:56] So in this way, if we know the value of the drain current ID, then we can find the corresponding
+[07:02] value of this VGS using this expression.
+[07:05] Now so far, we have only discussed about the transfer characteristic of the n-channel GFET.
+[07:12] So now similarly, let us see the transfer characteristic for the P-channel GFET.
+[07:17] So in case of the P-channel GFET, as the value of VGS and VP both are positive, so the transfer
+[07:23] curve will be the mirror image of the n-channel GFET curve.
+[07:28] So if we see the transfer curve for the P-channel GFET, then it will look like this.
+[07:33] And in this curve, if we know the value of VGS, then by drawing the vertical line, we
+[07:39] can find the intersection point on the curve.
+[07:42] And thereby, we can find the corresponding value of the drain current.
+[07:46] Now here, as the voltage VGS and VP both are positive, so we can apply the same mathematical
+[07:52] expression that we have used for the n-channel GFET.
+[07:57] And using this, we can find the value of the drain current ID.
+[08:01] So this is all about the transfer characteristic of the n-channel as well as the P-channel GFET.
+[08:08] So I hope in this video, you understood what is transfer characteristic and how we can
+[08:13] draw a transfer characteristic for the n-channel as well as the P-channel GFET.
+[08:18] And we will use this transfer characteristic as well as these equations.
+[08:23] Whenever we discuss the different biocent techniques for the GFET.
+[08:27] So if you have any question or suggestion, do let me know here in the comment section
+[08:31] below.
+[08:32] If you like this video, hit the like button and subscribe to the channel for more such
+[08:36] videos.

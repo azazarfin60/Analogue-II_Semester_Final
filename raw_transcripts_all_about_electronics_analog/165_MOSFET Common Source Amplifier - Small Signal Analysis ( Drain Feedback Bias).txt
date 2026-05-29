@@ -1,0 +1,148 @@
+Title: MOSFET Common Source Amplifier - Small Signal Analysis ( Drain Feedback Bias)
+URL: https://www.youtube.com/watch?v=yoHfp8pAVek
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in the previous video, we have seen that how the MOSFET can be used as a common source
+[00:16] amplifier.
+[00:17] And in that configuration, the MOSFET was biased in the voltage re-watter biasing configuration.
+[00:23] Similarly, another important biasing technique is the drain feedback bias.
+[00:29] So in this video, we will do the small signal analysis of the common source amplifier
+[00:34] whenever it is biased using the drain feedback bias.
+[00:38] And we will also find the expression of the voltage gain, the input and the output impedance.
+[00:43] And at the later part of the video, I will also show you some simulation results.
+[00:49] So for the small signal analysis, we will follow the same procedure.
+[00:54] That means first consider all the DC sources in the circuit as zero.
+[00:58] And then replace all the coupling and the bypass capacitors by the short circuit.
+[01:03] And then after replace the MOSFET by the small signal model.
+[01:07] So here if you observe, the input is appearing between the gate and the source terminal.
+[01:13] And here the source terminal is grounded.
+[01:16] While if you see this feedback register, then it is appearing between the drain and the
+[01:21] ground terminal.
+[01:23] And this drain register R D is appearing between the drain and the ground terminal.
+[01:28] Or effectively we can say that it is appearing between the drain and the source terminal.
+[01:33] So if you see the equivalent circuit, then it will look like this.
+[01:38] So now let us find the input impedance, output impedance and the voltage gain of this configuration.
+[01:44] And first of all, let us find the input impedance.
+[01:49] So if I is the input current and the V I is the input signal, and the ratio of this
+[01:54] V I and the I I will give us the input impedance.
+[01:59] So here the current through this feedback register is equal to I I.
+[02:05] And if we apply the KCL at this node, then you can write this current I I is equal to
+[02:12] I D plus V I out divided by R D. That means I I is equal to G M times V G S plus V I out
+[02:25] divided by R D. And here this V G S is equal to input signal, right?
+[02:34] That means current I I is equal to G M times V I plus V out divided by R D.
+[02:43] And if you further simplify, then we can say that this V out is equal to I I minus G M
+[02:52] times V I times R D. Let us say this is the expression number 1.
+[03:00] Now here the voltage at this node is equal to V out.
+[03:04] That means current I I can be given as V in minus V out divided by R F. Or we can say
+[03:12] that this V out is equal to V in minus this I I times R F. Let us call this expression
+[03:22] as the expression number 2.
+[03:24] So if we compare these two expressions, then we can write V I minus I I times R F that
+[03:33] is equal to I I times R D minus G M times V I times R D. Or we can say that this V I
+[03:45] times 1 plus G M times R D that is equal to I I times R D plus R F. That means V I
+[03:59] divided by I I or the input impedance is equal to R D plus R F divided by 1 plus G M times
+[04:10] R D. Now typically this feedback register R F is much greater than R D. So approximately
+[04:19] we can say that this input impedance is equal to R F divided by 1 plus G M times R D.
+[04:29] So in this way we got the expression of the input impedance. So similarly now let us
+[04:36] find the output impedance. So the output impedance is the thavidence equivalent impedance which
+[04:42] is seen from the output side. And to find that we will consider all the independent sources
+[04:48] in the circuit as 0. That means while finding the output impedance, this input voltage
+[04:53] source will act as a short circuit. And because of that this V G S will also become 0.
+[05:01] Now once the V G S is equal to 0 then this dependent current source will also become 0.
+[05:08] And it will act as a open circuit. So now if you see then the equivalent resistance which is
+[05:14] seen from the output side is the parallel combination of this R F and the R D.
+[05:19] That means output impedance or Z out is equal to R D parallel R F.
+[05:26] So this is the expression of the output impedance. And similarly now let us find the voltage gain.
+[05:34] So as we have just seen the current through the feedback register is equal to I I.
+[05:40] And if we apply the KCL at this node then we can write this current I I is equal to
+[05:47] G M times V G S plus V out divided by R D. Or current I I is equal to G M times V I plus V out
+[06:00] divided by R D. And this current I I can also be given as V I minus V out divided by R F.
+[06:09] So if we equate these two expressions then we can write V I minus V out divided by R F that is
+[06:18] equal to G M times V I plus V out divided by R D. That means V I times one divided by R F minus
+[06:33] G M is equal to V out times one over R F plus one divided by R D.
+[06:43] That means the voltage gain that is V out divided by V in is equal to one divided by R F minus
+[06:52] G M divided by one divided by R F plus one divided by R D. Now typically since this R F is
+[07:02] in mega home so this one over R F is much less than G M. So approximately we can say that
+[07:11] this voltage gain is equal to minus G M divided by one divided by R F plus one divided by R D.
+[07:22] Now this one divided by one over R F plus one over R D is equal to R F parallel R D.
+[07:33] That means we can say that this voltage gain is approximately equal to minus G M times R D parallel
+[07:43] R F and since this R F is much greater than R D. So again we can say that this voltage gain is
+[07:52] approximately equal to minus G M times R D. So this is the expression of the voltage gain.
+[08:01] So in this way we found the expression of the input impedance, the output impedance and the
+[08:06] voltage gain. Now so far in our discussion we have assumed that the output resistance of the
+[08:12] mosfet is infinite. But if we also consider the effect of the output resistance then now instead
+[08:19] of this resistor R D now we need to consider the parallel combination of this R D and the R naught.
+[08:26] That means in the all above expressions instead of resistor R D that will be a R D parallel R naught.
+[08:33] So these are the expression of the input impedance, the output impedance and the voltage gain of
+[08:38] this amplifier with considering the effect of the output resistance. All right. So now let us take
+[08:45] one example based on this configuration so that it will get clear to you. So here for the given
+[08:52] amplifier configuration we have been asked to find the input impedance, the output impedance and the
+[08:57] voltage gain. Now all these parameters can be found using the small signal analysis.
+[09:03] But for that we need to know the transconnections of this mosfet at the operating point
+[09:08] and that can be found using the DC analysis. So when the mosfet is operating in the saturation region
+[09:15] then this brain current I D can be given as A times VGS minus VT whole square where this K depends
+[09:25] on the device parameters and if you see the x-z expression and it is equal to half times
+[09:31] new and times Cu x times W divided by L times VGS minus VT whole square.
+[09:40] Now here since the device parameters are not given so we cannot use this second expression
+[09:46] but instead of that here we have been given the value of the VGS on and the I D on.
+[09:51] So using that we can find the value of this K. So here this K is equal to
+[09:59] I D on divided by VGS on minus VT whole square. So here this I D on is equal to 6 milliampere
+[10:12] while this VGS on is equal to 8 volt. So in the denominator there will be a 8 minus 3 whole square
+[10:21] that means the value of K is equal to 0.24 times 10 to the power minus 3 MPR per volt square.
+[10:30] So once we know the value of the K then using that we can find the VGS. So for this
+[10:37] strain feedback bias the voltage VGS is equal to VGS and it will be equal to 12 minus I D times R D
+[10:48] and in the saturation this drain current I D is equal to 8 times VGS minus VT whole square.
+[10:57] So let us put the value of VGS in second expression that means drain current I D is equal to
+[11:04] 0.24 times 10 to the power minus 3 times. Well minus I D times R D minus 3 whole square.
+[11:15] So if you further simplified then we can write 4166.6 times I D that is equal to
+[11:25] 9 minus I D times R D whole square where this R D is equal to 2 kilo ohm. So if you further
+[11:34] simplify this expression then we can write 4166.6 times I D that is equal to 81 minus
+[11:44] 36000 I D plus 4 times 10 to the power 6 times I D square or we can say that 4 times 10 to the
+[11:57] power 6 times I D square minus 401 double 6.6 times I D plus 81 that is equal to 0.
+[12:09] So if we solve this quadratic equation then we will get the two roots of the drain current.
+[12:14] One is this 7.24 milliampere while the second one is 2.794 milliampere.
+[12:26] Now with the first value of the drain current the VGS will be negative that means that can
+[12:32] be the value of the drain current and therefore this drain current is equal to 2.794 milliampere.
+[12:40] So with that value of the drain current the voltage VGS is equal to 12 minus I D times R D
+[12:49] that is equal to 12 minus 2.794 milliampere times 2 kilo ohm that is equal to 6.41 to volt
+[13:00] and if you are aware then this transcurrent plus GM is equal to
+[13:04] 2 times T times VGS minus BT that means at the operating point the transcurrent is equal to 2 times
+[13:17] 0.24 times 10 to the power minus 3 times 6.41 to minus 3 that is equal to 1.637 milliampere.
+[13:30] So in this way we found the value of the transcurrent turns and once we know the value of the transcurrent
+[13:36] turns then using the small signal analysis we can easily find the required parameters.
+[13:42] So for the small signal analysis all the DC sources in the circuit will act as a 0 and all the
+[13:48] coupling and the bypass capacitors can be replaced by the short circuit and then after if
+[13:54] replace the MOSFET by the small signal model and the equivalent circuit will look like this.
+[14:00] So as we have seen here the input impedance is equal to RF divided by 1 plus GM times R D
+[14:11] that means here the input impedance is equal to N mega ohm divided by 1 plus 1.637 times 2
+[14:23] which is roughly equal to 2.339 mega ohm. So this is the approximate value of the input impedance.
+[14:32] Similarly the output impedance is the parallel combination of this RF and the R D that means it is
+[14:40] equal to 2 kilo ohm in parallel with N mega ohm which is roughly equal to 2 kilo ohm
+[14:51] that means the output impedance of this amplifier configuration is equal to 2 kilo ohm
+[14:57] and similarly the voltage gain that is V out d or by V in is approximately equal to
+[15:04] minus GM times R D that is equal to minus 1.637 times 2 that is equal to minus 3.274
+[15:18] so this is the approximate gain of this amplifier. So now for the same circuit
+[15:24] let me also show you some simulation results so that it will get more clear to you.
+[15:29] So the same circuit which we have discussed in the example is built over here and to get the
+[15:36] similar results the only thing which we need to set over here is the MOSFET parameters.
+[15:42] So here this threshold voltage is set to 3 volt and to get the value of K is equal to 0.24 milli
+[15:49] ampere per volt square that W by L ratio is kept 1. But here this process transcorrectance or the
+[15:58] mu n times COX is kept 0.48 milli ampere per volt square so that we get the value of K as 0.24
+[16:06] milli ampere per volt square and as you can see here the channel and modulation parameter
+[16:12] lambda is kept 0 that means the output resistance of the MOSFET is equal to infinite.
+[16:19] So after setting this MOSFET parameters a 1 milli volt of input signal is applied at the input
+[16:24] side and to just measure the output a very large value of resistance is corrected as a load.
+[16:31] So in the small signal model this RL will come in parallel with the RD and when this RL is very
+[16:38] large then it will not have any impact on the voltage gain. All right so now let me just run
+[16:44] this simulation and let me show you some output results. So here this blue waveform which is
+[16:52] varying between the plus minus 1 milli volt is the input signal and this green signal is the
+[16:57] output signal and if you observe over here then there is a 180 degree phase shift between the
+[17:03] input and the output signal. Also if you series output signal then it is varying between 3.22
+[17:11] minus 3.2 milli volt that means approximately the gain of this amplifier is equal to minus 3.26
+[17:19] and it is very close to our calculated value. So in this way we can design this common source amplifier
+[17:26] which is configured in the drain feedback bias configuration. So I hope with this video you understood
+[17:32] how to do a small signal analysis of this common source amplifier whenever it is biased in the
+[17:37] drain feedback bias configuration and hopefully this solved example and this simulation will also
+[17:44] help you in understanding this configuration. So if you have any question or suggestion
+[17:50] then do let me know here in the comment section below. If you like this video hit the like button
+[17:55] and subscribe to our channel for more such videos.

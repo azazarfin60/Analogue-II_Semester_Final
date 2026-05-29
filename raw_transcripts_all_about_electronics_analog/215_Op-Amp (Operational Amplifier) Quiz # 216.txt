@@ -1,0 +1,41 @@
+Title: Op-Amp (Operational Amplifier) | Quiz # 216
+URL: https://www.youtube.com/watch?v=pqsWI0LlfZU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given this circuit and we have been asked to find the
+[00:21] amplitude of the output voltage.
+[00:24] Now here we have been given that the op-amp is an ideal op-amp.
+[00:28] And to this op-amp, this sine wave is applied as an input signal.
+[00:34] So let us find out the amplitude of the output voltage.
+[00:38] So here let us say this 1 kilo of resistor is equal to z1 while this parallel combination
+[00:45] of capacitor and the resistor is equal to z2.
+[00:49] And as you can see over here, the op-amp is configured in the inverting configuration.
+[00:54] That means output voltage V out can be given as minus z2 divided by z1 times V in.
+[01:02] Now here, this z1 is equal to 1 kilo ohm while the z2 is the parallel combination of this
+[01:09] 0.1 microfarad and the 1 kilo ohm.
+[01:12] So here let us say this resistor is equal to r and this 0.1 microfaradic capacitor is
+[01:19] equal to c.
+[01:22] That means z2 can be given as r parallel 1 by j omega c.
+[01:29] That means z2 is equal to r times 1 by j omega c divided by r plus 1 by j omega c.
+[01:39] That means z2 is equal to r divided by 1 plus j times r omega c.
+[01:48] Or if we just take the magnitude, then z2 can be given as r divided by square root of
+[01:56] 1 plus r square omega square c square.
+[02:01] Now here the input signal has a frequency of 2000.
+[02:07] That means here omega is equal to 2 pi times 2000.
+[02:13] And the value of r is equal to 1 kilo ohm while the value of c is equal to 0.1 microfarad
+[02:20] a.
+[02:22] So if you put all these values, then z2 can be given as 1 kilo ohm divided by square root
+[02:30] of 1 plus 10 to the power 3 square times 2 pi into 2 into 10 to the power 3 whole square
+[02:41] times 10 to the power minus 7 whole square.
+[02:46] So if you simplify it, then z2 can be given as 1 kilo ohm divided by square root of 1
+[02:55] plus 10 to the power 6 times 16 pi square times 10 to the power 6 times 10 to the power
+[03:05] minus 14.
+[03:08] That means z2 is equal to 1 kilo ohm divided by square root of 1 plus 1.579.
+[03:20] That means z2 is equal to 0.622 kilo ohm.
+[03:27] That means v out is equal to minus z2 divided by z1 times v in.
+[03:33] For if we just take the amplitude, then v out can be given as minus z2 divided by z1
+[03:40] times v in.
+[03:43] That is equal to 0.62 divided by 1 kilo ohm times 2 volt.
+[03:49] That is equal to 1.245 volt.
+[03:54] So the amplitude of the output voltage will be equal to 1.254 volt.

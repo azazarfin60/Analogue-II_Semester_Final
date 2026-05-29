@@ -1,0 +1,95 @@
+Title: BJT: Stability Factors S, S' and S'' for Collector Feedback Bias
+URL: https://www.youtube.com/watch?v=0JjclX0fc7Q
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:16] So in this video, we will find the expressions of the stability factors for the correct
+[00:20] feedback bias.
+[00:23] Now in the previous video, we found the stability factors for the voltage divider biasing configuration.
+[00:29] Therefore, the correct feedback bias, the expressions are very similar.
+[00:34] The only difference is here, the RTH resistor will be replaced by the RB, while the emitter
+[00:40] resistor RE will be replaced by the RC.
+[00:45] So first of all, let us find the stability factor as, so the stability factor as can be given
+[00:52] as, del IC divided by del ICBO by keeping the value of voltage VB and the beta fix.
+[01:03] Now if you have followed the previous video on the stability factor, then we had seen
+[01:07] that by differentiating this character current with respect to IC, we can get the generalized
+[01:12] expression of the stability factor.
+[01:15] And in this expression, if we know the value of this del IB divided by del IC, then we
+[01:21] can get the stability factor as, so for that, let us apply the KVL equation on the input
+[01:27] side.
+[01:30] So applying the KVL equation, we can write voltage VCC minus IC plus IB times RC minus IB times
+[01:42] RB minus VBE is equal to zero.
+[01:49] Or we can say that VCC minus VBE minus IC times RC is equal to IB times RB plus RC.
+[02:04] Or we can say that IB is equal to voltage VCC minus VBE minus IC times RC divided by RB
+[02:18] plus RC.
+[02:21] So now to get the value of this del IB divided by del IC, let us differentiate this expression
+[02:27] with respect to IC.
+[02:30] And here as this voltage VCC and the VBE are constant, so whenever we differentiate this
+[02:36] term with respect to IC, then it will become zero.
+[02:40] That means del IB divided by del IC is equal to minus RC divided by RB plus RC.
+[02:52] So now let us put this value into this expression.
+[02:58] That means the stability factor as is equal to beta plus 1 divided by 1 minus beta times
+[03:09] minus RC divided by RB plus RC.
+[03:15] That is equal to beta plus 1 divided by RB plus beta plus 1 times RC times RB plus RC.
+[03:31] Or we can say that beta plus 1 times RB divided by RC plus 1 divided by beta plus 1 plus
+[03:46] RB divided by RC.
+[03:49] So in this way, we got the expression of the stability factor as and similarly, now
+[03:55] let us find the stability factor as dash.
+[03:59] So this stability factor as dash can be given as del IC divided by del VBE by keeping
+[04:07] the value of ICBO and the beta constant.
+[04:12] And for that, let us put the value of the base current IB into this expression.
+[04:18] Now for the correct feedback bias, by applying the KVL on the input side, we got this expression.
+[04:25] And from this, we can say that voltage VCC minus RC times IB plus beta times IB minus IB
+[04:37] times RB minus VBE is equal to 0.
+[04:44] So here we can say that this IC is equal to approximately equal to beta times IB.
+[04:51] So basically, we have put the value of IC into this expression.
+[04:56] So from this, we can say that voltage VCC minus RC times beta plus 1 times IB minus RB
+[05:09] times IB minus VBE is equal to 0.
+[05:15] That means, voltage VCC minus VBE is equal to IB times RB plus beta plus 1 times RC.
+[05:29] That means base current IB is equal to voltage VCC minus VBE divided by RB plus beta plus
+[05:42] 1 times RC.
+[05:45] So now, let us put this value of IB into this expression.
+[05:50] That means, the collector current IC is equal to beta times voltage VCC minus VBE divided
+[05:59] by RB plus beta plus 1 times RC plus beta plus 1 times ICBO.
+[06:13] And now, to get the value of the stability factor S dash, let us differentiate this expression
+[06:18] with respect to VBE.
+[06:21] And here, as the beta and the ICB are constant, so this term will become 0.
+[06:28] That means, del IC divided by del VBE that is S dash is equal to minus beta divided
+[06:37] by RB plus beta plus 1 times RC.
+[06:44] So in this way, we got the expression of the stability factor S dash.
+[06:50] And similarly, now let us find the stability factor S double dash.
+[06:55] So we know that the stability factor S double dash can be given as del IC divided by del
+[07:02] beta by keeping the value of voltage VBE and the ICBO fixed.
+[07:09] And to get the value of this S double dash, let us put the value of this base current
+[07:14] into this expression.
+[07:17] And if you put the value, then we will get this expression.
+[07:21] So now, to get the value of this S double dash, let us differentiate this expression with
+[07:27] respect to beta.
+[07:29] Now here, whenever we are differentiating this term with respect to beta, then we are
+[07:34] assuming that the ICBO and the VBE are constant.
+[07:38] That means, this term will become 0.
+[07:42] That means, del IC divided by del beta is equal to ICBO plus RB plus beta plus 1 times
+[07:57] RC times VCC minus VBE minus beta times RC times VCC minus VBE divided by RB plus beta
+[08:16] plus 1 times RC whole square.
+[08:21] Now here, as this term ICBO is very small, so we can neglect this term.
+[08:27] And whenever we subtract this term from the first term, then we will get this del IC divided
+[08:34] by del beta is equal to RB plus RC times voltage VCC minus VBE divided by RB plus beta plus
+[08:52] 1 times RC whole square.
+[08:55] Now if you notice over here, this voltage VCC minus VBE divided by RB plus beta plus
+[09:02] 1 times RC is equal to IB.
+[09:05] Or we can approximately say that it is equal to IC divided by beta.
+[09:11] That means, del IC divided by del beta is equal to IC divided by beta times RB plus RC
+[09:21] divided by RB plus beta plus 1 times RC.
+[09:28] Or we can say that this del IC divided by del beta is equal to IC divided by beta times
+[09:36] 1 plus RB divided by RC divided by 1 plus beta plus RB divided by RC.
+[09:49] So this will be the stability factor as double dash for the collector feedback bias.
+[09:54] So in this way, we got the expressions of the stability factor as S dash and the S double
+[10:00] dash.
+[10:01] And as you can see, these expressions are very similar to the voltage divided by a sin
+[10:06] configuration.
+[10:07] So I hope in this video you understood how we can find the stability factors for the
+[10:12] collector feedback bias.
+[10:14] So if you have any question or suggestion, do let me know here in the comment section
+[10:18] below.
+[10:19] If you like this video, hit the like button and sub-thread will channel for more such
+[10:23] videos.

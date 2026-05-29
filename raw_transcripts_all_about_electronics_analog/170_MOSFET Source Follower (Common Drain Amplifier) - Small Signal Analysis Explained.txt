@@ -1,0 +1,216 @@
+Title: MOSFET Source Follower (Common Drain Amplifier) - Small Signal Analysis Explained
+URL: https://www.youtube.com/watch?v=jzkhIbq1C9o
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in the previous videos, we have seen the common source and the common gate amplifier
+[00:15] configuration of the MOSFET.
+[00:17] So in this video, let us discuss the common drain amplifier configuration of the MOSFET
+[00:23] and this configuration is also known as the source follower.
+[00:27] So in this source follower, the drain terminal is at AC ground.
+[00:32] The input signal is applied between the gate and the ground, while the output is measured
+[00:36] between the source and the ground terminal.
+[00:39] And since the drain terminal is at AC ground, so we can say, that the input is applied between
+[00:44] the gate and the drain terminal while the output is measured between the source and the
+[00:48] drain terminal.
+[00:49] That means the drain terminal is common between the put and the output side and hence, it
+[00:55] It is known as the common trend amplifier configuration.
+[00:59] So in this configuration, the voltage gain is less than 1 or at the most, it is very close
+[01:05] to 1.
+[01:07] Now in this configuration, the output impedance of the amplifier is very low compared to
+[01:12] other configurations.
+[01:14] And typically, this configuration is used for driving the low impedance load.
+[01:20] So first of all, using the small signal analysis, let us find the input and output impedance.
+[01:26] As well as the voltage gain of this source follower.
+[01:28] And at the later part of the video, I will show you how this source follower is very
+[01:34] useful for driving the low impedance load.
+[01:37] So this is the typical source amplifier circuit along with the biasing.
+[01:42] And here, this fixed gate voltage is applied through this gate resistor.
+[01:47] But it can also be applied through the voltage-divater biasing.
+[01:51] Now for the DC analysis, these capacitors will act as a open circuit.
+[01:56] And if you notice over here, and the drain terminal is directly connected to the voltage
+[02:01] source.
+[02:02] And this source resistor provides a required path for the biasing current.
+[02:07] Now if we talk about the small signal analysis, then for the AC analysis, these capacitors
+[02:12] will act as a short circuit.
+[02:14] While this DC voltage source VDD will act as a zero.
+[02:19] And then after, we need to replace the MOSFET by the small signal model.
+[02:23] So here if you observe, then this input signal is appearing between the gate and the ground
+[02:28] terminal.
+[02:30] And since the drain terminal is at AC ground, so these two resistors R1 and R2 will appear
+[02:35] between the gate and the ground terminal.
+[02:38] And here, this source resistor is appearing between the source and the ground terminal.
+[02:44] So if you see the small signal equivalent circuit, then it will look like this.
+[02:49] So for this circuit, now let us find the input impedance, the output impedance and the voltage
+[02:54] gain.
+[02:55] And first of all, let us start with the input impedance.
+[02:59] So as I said in the earlier videos, the input impedance is the ratio of this input voltage
+[03:04] to the input current.
+[03:07] And in this case, since the gate acts as an open circuit at the low frequencies, so this
+[03:12] current I in will flow through this resistor R1 and R2.
+[03:17] That means this V in is equal to I in times R1 parallel R2.
+[03:25] Or we can say that this V in divided by I in or the input impedance is equal to the parallel
+[03:32] combination of this R1 and the R2.
+[03:35] Now without this basing resistors, the input impedance of this MOSFET is ideally in finite.
+[03:42] But because of this resistor R1 and R2, the input resistance will be finite.
+[03:47] Now to get the large input impedance, the value of this R1 and R2 should be as high as
+[03:52] possible.
+[03:53] And typically, the value of this R1 and R2 is in mega ohms.
+[03:58] Alright, so that is the input impedance of this source follower.
+[04:02] And similarly, now let us find the voltage gain.
+[04:06] Now here, the voltage at this node is equal to V in, right?
+[04:11] So if we apply the KVL in this loop, then we can write voltage V in minus VGS minus
+[04:20] V0 that is equal to 0.
+[04:23] Or we can say that VGS is equal to V in minus V0.
+[04:29] Similarly, now let us apply the KCL at this node.
+[04:34] So here, this current is equal to V0 divided by RS.
+[04:38] So I have applied the KCL, we can write this V0 divided by RS that is equal to GM times
+[04:45] VGS.
+[04:47] And this VGS is equal to V in minus V0.
+[04:51] That means V0 divided by RS that is equal to GM times V in minus V0.
+[04:59] Or we can say that this V0 divided by RS plus GM times V0 is equal to GM times V in.
+[05:10] That means V0 divided by V in is equal to GM RS divided by 1 plus GM times RS.
+[05:21] Now here, if you observe, and this denominator is always greater than numerator.
+[05:27] That means the voltage gain that is V out divided by V in will be always less than 1.
+[05:32] And if this GM RS is much greater than 1, then the voltage gain is approximately equal
+[05:39] to 1.
+[05:40] Moreover, if you observe over here, then the voltage gain is positive.
+[05:45] That means in this source fallover, the output and the input signal will be in the same
+[05:49] phase.
+[05:51] Now here, the same expression can also be written as, this voltage gain is equal to RS divided
+[05:58] by 1 over GM plus RS.
+[06:03] So this expression tells us that the voltage gain is the total resistance, which is seen
+[06:09] between the source and the ground terminal, divided by dead resistance plus 1 over GM.
+[06:16] Now so far in our discussion, we have neglected the effect of the channel and modulation.
+[06:21] That means we have assumed that the output resistance is equal to infinite.
+[06:26] But if the output resistance is finite, then it will appear between the drain and the source
+[06:31] terminal.
+[06:32] And here, since the drain is at AC ground, so effectively, it will appear between the
+[06:37] source and the ground terminal.
+[06:40] That means now in the voltage gain expression, instead of RS, there will be RS parallel
+[06:46] R0.
+[06:47] That means with the finite output resistance, the voltage gain will be equal to RS parallel
+[06:53] R0 divided by 1 over GM plus RS parallel R0.
+[07:02] So that is the expression of the voltage gain, including the effect of the output resistance.
+[07:08] Now for a moment, let us consider that the output resistance of this MOSFET is infinite.
+[07:14] And in that case, this voltage gain will be equal to RS divided by 1 over GM plus RS.
+[07:23] Now from this expression, if we draw the equivalent circuit, then it can be drawn like this.
+[07:29] So using this equivalent circuit, it is very easy to find the output resistance because
+[07:34] the output resistance is the equivalent impedance, which is sin from the output side by considering
+[07:39] all the independent sources in the circuit as 0.
+[07:43] That means whenever this input signal is 0, then the output resistance is the parallel
+[07:48] combination of this RS and the 1 over GM.
+[07:51] That means the output impedance of the source follower is equal to RS parallel 1 over GM.
+[07:59] So this is the easiest way to find the output resistance, but it can also be found in a more
+[08:05] conventional way.
+[08:07] So now to find the output impedance in a conventional way, let us apply a test voltage and let us find
+[08:13] a test current by considering all the independent sources in the circuit as 0.
+[08:18] So the ratio of this test voltage to the test current will give us the output impedance.
+[08:23] And for that, first of all, let us consider this input voltage source as 0.
+[08:28] Now was the input signal will become 0, then these two resistors which are in parallel
+[08:33] with the input source will also get short circuited.
+[08:37] That means now the gate terminal is at AC ground.
+[08:41] Now in the earlier amplifier configurations of the MOSFET, if you have observed, then
+[08:45] we did not apply the test voltage because in that case, I am making the independent sources
+[08:50] in the circuit as 0, the only thing which was left was the resistance.
+[08:56] So intuitively, that was the output impedance.
+[08:59] And therefore, there was a known need to apply the test voltage.
+[09:03] But in this case, after removing the independent sources, this dependent current source is
+[09:08] still present.
+[09:10] So to find the output impedance, it is required to apply the test voltage.
+[09:14] Anyway, so now this voltage VGS is the voltage between the gate and the source terminal.
+[09:21] And since the gate terminal is at AC ground, so we can say that this voltage VGS is equal
+[09:26] to minus VX, right?
+[09:29] So now if we apply the KCL at this node, then we can write this current IX plus GM times
+[09:39] VGS that is equal to V out divided by RS or that is equal to VX divided by RS.
+[09:49] And here, this VGS is equal to minus VX.
+[09:53] That means IX is equal to VX divided by RS plus VX times GM.
+[10:01] That means IX divided by VX or the output resistance is equal to 1 divided by RS plus GM.
+[10:10] That is equal to 1 divided by RS plus 1 divided by 1 over GM.
+[10:18] That means the output impedance is the parallel combination of this RS and the 1 over GM.
+[10:25] So that is the output impedance of this source fall over.
+[10:29] Now here, if the output resistance of the MOSFET is finite, then it will appear between
+[10:34] the drain and the source terminal.
+[10:36] And here, since the drain terminal is at AC ground, so it will appear between the source
+[10:41] and the ground terminal.
+[10:43] That means in this case, instead of RS, we will have a RS parallel R0.
+[10:49] That means with the finite output resistance of the MOSFET, the output impedance of this
+[10:53] source fall over is equal to RS parallel 1 over GM parallel R0.
+[11:01] Now typically, this 1 over GM is in ohms.
+[11:05] That means the overall output impedance will be less than 1 over GM.
+[11:09] And therefore, the output impedance of this source fall over is also in ohms.
+[11:15] And this low output impedance of this source fall over is particularly useful in driving
+[11:19] the low impedance load.
+[11:22] So let's say we have one common source amplifier and it is used to drive the 50 ohm load.
+[11:28] That means here RL is equal to 50 ohm.
+[11:33] Now here, let's say at the operating point, this 1 over GM is equal to 50 ohm.
+[11:39] That means at the operating point, this GM is equal to pentimally semenz.
+[11:45] And let's say this RD is equal to 1 kilo ohm.
+[11:49] So without considering the load resistor, the voltage gain of this common source amplifier
+[11:54] is equal to GM times RD.
+[11:57] That is equal to 20 milli semenz times 1 kilo ohm.
+[12:03] That is equal to 20.
+[12:06] But with the load resistor, this voltage gain will be equal to GM times this RD parallel
+[12:13] RL.
+[12:14] And in that case, if you find the voltage gain, then it will come out as 0.95.
+[12:22] Because here, this RL is equal to 50 ohm.
+[12:25] So as you can see, with the load resistor, the voltage gain of this common source amplifier
+[12:30] will reduce significantly.
+[12:33] But if we add the source follower stage or the common drain amplifier in between, then
+[12:37] the things can be improved little bit.
+[12:40] So let's say a source follower stage is added between the load resistor and this common
+[12:45] source amplifier.
+[12:47] So this is the case of the multi stage amplifier.
+[12:50] So here, the load resistor is connected at the output of this source follower.
+[12:55] So let's say here, this gate resistor is equal to 2 mega ohm.
+[13:00] And at the operating point, this GM of this source follower is equal to 20 milli semenz.
+[13:07] Or 1 over GM is equal to 50 ohm.
+[13:11] And this RS is equal to 200 ohm.
+[13:15] So let's say the voltage at this node is equal to VX.
+[13:19] That means the overall voltage gain, that is V out divided by V in, is equal to this VX
+[13:25] divided by V in, and this V out divided by VX.
+[13:31] So to find the overall voltage gain, first of all, let us find the ratio of this VX and
+[13:35] the V in.
+[13:37] Now for this common source amplifier stage, this source follower will like as a load.
+[13:43] And the load resistance, which is seen by this common source amplifier, is the input impedance
+[13:48] of this source follower.
+[13:50] And in this case, it is equal to RG.
+[13:53] That means for the common source amplifier, this load resistance, RL is equal to Z in,
+[14:00] that is equal to 2 mega ohm.
+[14:02] That means in this case, the voltage gain of this common source amplifier, or VX divided
+[14:09] by V in, is equal to GM times RDPedL, RL.
+[14:15] And here, this RL is equal to the input impedance.
+[14:19] Or to be precise, the input impedance of this source follower.
+[14:23] And here, since this input impedance is in mega ohm, so this RDPedL Z in, will be approximately
+[14:30] equal to RD.
+[14:31] That means the voltage gain of this common source amplifier, or VX divided by V in, is approximately
+[14:39] equal to 20.
+[14:41] So similarly, now let us find the V out divided by VX.
+[14:46] Now for the source follower, as we have seen, the voltage gain can be given as, RS divided
+[14:52] by 1 over GM plus RS.
+[14:57] But here, this load resistor will also appear in parallel with this source resistor.
+[15:03] That means now, the voltage gain is equal to RS parallel RL divided by 1 over GM plus
+[15:11] RS parallel RL.
+[15:15] Now here, this RL is 50 ohm and the RS is equal to 200 ohm.
+[15:20] That means RS parallel RL will be equal to 40 ohm.
+[15:26] That means V out divided by VX will be equal to 40 ohm divided by 1 over GM, that is 50
+[15:34] ohm plus 40 ohm.
+[15:37] That is equal to 4 by 9.
+[15:40] So that is the voltage gain of this source follower stage.
+[15:44] And if you see the overall voltage gain, that is V out divided by V in, and it will be
+[15:49] equal to VX divided by V in times V out divided by VX.
+[15:56] And here, we are just considering the magnitude.
+[15:59] That means the overall voltage gain will be equal to 20 times 4 divided by 9, which is
+[16:05] roughly equal to 8.88.
+[16:09] And as you can see, it is a significant improvement over the previous case.
+[16:14] So here, just by adding the source follower stage, the overall voltage gain of this amplifier
+[16:18] configuration can be improved.
+[16:21] So in the multi stage amplifier configuration, to drive a low impedance load, typically this
+[16:27] source follower stage is used as an output stage.
+[16:31] So that is the application of this source follower.
+[16:34] So I hope in this video, you understood the small signal analysis of this source follower
+[16:39] and you also understood the application of this source follower through this example.
+[16:43] So if you have any question or suggestion, and do let me know here in the comment section
+[16:47] below.
+[16:48] If you like this video, hit the like button and subscribe to the channel for more such
+[16:51] videos.

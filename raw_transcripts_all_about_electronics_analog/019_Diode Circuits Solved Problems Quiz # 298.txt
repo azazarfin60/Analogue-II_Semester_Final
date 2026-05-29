@@ -1,0 +1,79 @@
+Title: Diode Circuits Solved Problems | Quiz # 298
+URL: https://www.youtube.com/watch?v=CImoX1YqzaM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this diode circuit and here we have been given
+[00:15] that the diode divin and d2 are the ideal diode.
+[00:19] So here we have been asked to find the average voltage across this two terminal a and b.
+[00:25] Now here the input to this circuit is the sinusoidal signal.
+[00:29] So first of all, let us see how this diode behave during the positive half cycle.
+[00:35] So during the positive half cycle, this terminal will be positive while this terminal will
+[00:39] be negative.
+[00:41] So for the positive half cycle, this diode divin will conduct and this diode d2 will remain
+[00:46] off because during the positive half cycle, the voltage at the cathode of this diode d2
+[00:52] will be more than the anode because during the positive half cycle, when this diode
+[00:57] d1 will conduct, then there will be a some voltage drop at this node and this voltage drop
+[01:03] will be less than the input voltage.
+[01:05] That means the voltage at the cathode of this diode d2 will be more than the anode and
+[01:10] because of that, this diode d2 will remain in the off condition.
+[01:15] So during the positive half cycle, if you see, this input voltage is directly appearing between
+[01:20] this terminal a and this reference terminal.
+[01:24] That means the voltage between this terminal a and the reference node is equal to input
+[01:29] voltage and using the voltage divider rule, we can find the voltage VAB.
+[01:35] That means voltage VAB will be equal to 10 kilo ohm divided by 10 kilo ohm plus 20 kilo
+[01:44] ohm times input voltage.
+[01:46] That is equal to V in divided by 3.
+[01:50] So this will be the voltage across this terminal a and b during the positive half cycle.
+[01:55] That is equal to 2 pi times sin of omega t.
+[02:01] Similarly, now let us find the voltage across the terminal a and b during the negative
+[02:06] half cycle.
+[02:08] So for the negative half cycle, this terminal will be negative while this terminal will be
+[02:13] positive.
+[02:14] So during the negative half cycle, this diode d1 will remain off and this diode d2 will
+[02:19] conduct.
+[02:20] Because during the negative half cycle, the voltage at the end of this diode d1 will
+[02:25] be less than the cathode.
+[02:27] That means this diode d1 will remain in the off condition while this diode d2 will act
+[02:32] as a short circuit.
+[02:34] So in this condition, if you see, this input voltage is directly appearing between this
+[02:40] terminal b and the reference terminal.
+[02:44] So if you see the equivalent circuit, then it will look like this.
+[02:48] So in this condition, this terminal is negative and this terminal is the positive.
+[02:54] And in this condition, the voltage between this node b and the reference node is equal
+[02:59] to input voltage.
+[03:01] While in this second loop, the current will flow in this direction and using the voltage
+[03:06] divider rule, we can find this voltage VAB.
+[03:10] So in this case, this voltage VAB will be equal to 10 kilo ohm divided by 10 kilo ohm
+[03:18] plus 10 kilo ohm times input voltage.
+[03:22] Because the voltage across this root terminal is equal to the input voltage.
+[03:27] That means in this case, during the negative half cycle, this voltage VAB is equal to V
+[03:32] in divided by 2.
+[03:34] That is equal to 3 pi times sin of omega t.
+[03:40] So in this way, we got the expression of the voltage VAB during the positive as well
+[03:45] as the negative half cycle.
+[03:47] And if we see the output waveform across this terminal a and b, then it will look like
+[03:53] this.
+[03:55] So during the positive half cycle, this output VAB is equal to 2 pi times sin of omega t
+[04:03] while during the negative half cycle, it is equal to 3 pi times sin of omega t.
+[04:10] So if you see the only positive half cycles, then the output during the positive half cycle
+[04:15] will be like this.
+[04:17] So it is similar to the half-wave rectifier output.
+[04:20] And for the half-wave rectifier, the average voltage can be given as VM divided by pi,
+[04:27] where VM is the peak voltage of this input signal.
+[04:31] So in this case, since the expression of this input waveform is equal to 2 pi sin of omega
+[04:36] t, that means in this case, this VM is equal to 2 pi.
+[04:41] That means V average will be equal to 2 pi divided by pi that is equal to 2.
+[04:47] So this will be the average value due to the positive half cycle.
+[04:51] Let's call it as VAB1 average.
+[04:55] Similarly, now let us find the average value because of the negative half cycle.
+[05:00] So during the negative half cycle, the output across the terminal a and b is equal to 3 pi
+[05:06] times sin of omega t.
+[05:09] That means in this case, this V average will be equal to VM divided by pi that is equal
+[05:15] to 3 pi divided by pi that is equal to 3.
+[05:19] So this will be the average value because of the negative half cycle.
+[05:23] Let's call it as VAB2 average.
+[05:28] That means the overall average value across the terminal a and b will be the summation of
+[05:32] this VAB1 and the VAB2.
+[05:34] That means VAB average will be equal to 2 plus 3 that is equal to 5 volt.
+[05:43] That means the average value of the voltage across this terminal a and b is equal to 5

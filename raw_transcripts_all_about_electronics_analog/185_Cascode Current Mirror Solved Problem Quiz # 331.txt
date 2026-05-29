@@ -1,0 +1,66 @@
+Title: Cascode Current Mirror Solved Problem | Quiz # 331
+URL: https://www.youtube.com/watch?v=-AVQUOACAc8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this cascode current mirror circuit and for the
+[00:15] given circuit, we have been also given some device parameters.
+[00:19] So here, we have been asked to find the minimum required voltage at the output so that
+[00:23] the circuit will operate properly.
+[00:26] Now here, all the MOSFETs are identical, that means the device parameter of all the
+[00:31] MOSFETs are same.
+[00:34] That means here, this threshold voltage VT is equal to 0.5 volt, while the W by L ratio
+[00:41] for all MOSFET is equal to 10.
+[00:44] Moreover, we have been also given that this Mu and times CuX for all MOSFET is equal to
+[00:50] 387 micro ampere per volt square and the early voltage for all MOSFET is equal to 1.8 volt.
+[01:00] And here, this reference current is equal to 100 micro ampere.
+[01:06] So using all these parameters, we can find the minimum required voltage at the output.
+[01:12] Now if you observe this cascode current mirror, then this M1 and M4 are the diode connected
+[01:17] transistors.
+[01:18] So whenever this 100 micro ampere current is flowing through them and the voltage VGS
+[01:24] will generated across these two terminals.
+[01:27] And since the device parameter for this M1 and M4 are equal, so this voltage VGS for both
+[01:32] transistors will be equal.
+[01:35] That means if we see the voltage at this node and it will be equal to 2VGS.
+[01:40] Let's say the voltage at this node is equal to BB.
+[01:44] That means this voltage VB will be equal to 2VGS and this terminal is the drain terminal
+[01:51] of this M3.
+[01:53] So for the proper operation of this cascode current mirror, this M3 should operate in
+[01:57] the saturation.
+[01:59] That means this voltage VD3 should be greater than or equal to this VG3 minus VT.
+[02:07] Or in this case, this output voltage should be greater than or equal to this VB minus
+[02:13] VT.
+[02:15] That means the minimum required voltage of this output is equal to this VB minus VT.
+[02:22] And as we have seen, this voltage VB is equal to 2VGS.
+[02:27] That means the minimum value of the output voltage should be equal to 2VGS minus VT.
+[02:33] So here, first of all, let us find the value of this voltage VGS.
+[02:38] So whenever this reference current is flowing through this transistor M1 and M4, then this
+[02:44] drain current ID can be given by this expression.
+[02:48] So here we already know this device parameters and here this lambda is equal to 1 divided
+[02:54] by VA.
+[02:55] That is equal to 1 divided by 1.8 volt.
+[03:00] That is equal to 0.35.
+[03:04] So here, this ID1 is equal to 100 micro-MPR.
+[03:11] So from this, we can say that this 100 micro-MPR is equal to half times this mu and times
+[03:18] ux.
+[03:19] That is 387 micro-MPR per volt square times w by l.
+[03:26] That is 10 times this VGS minus VT whole square times this 1 plus 0.35 VDS1.
+[03:39] And here for this diode-connected transistor, this VDS1 will be equal to VGS.
+[03:46] So we can say that this term will be equal to 1 plus 0.55 times VGS.
+[03:54] So if you further rearrange this term, then we can say that this 200 divided by 10 times
+[04:02] this 387 that is equal to this VGS minus 0.5 square times 1 plus 0.55 times VGS that
+[04:17] is equal to 0.05168 that is equal to VGS square minus VGS plus 0.25 times 1 plus 0.35 times
+[04:34] VGS.
+[04:35] So if you further rearrange this term, then we can write this expression as 0.35 times
+[04:45] VGS cube plus 0.445 times VGS square minus 0.6625 times VGS plus 0.1983 that is equal to 0.
+[05:02] So if you solve this equation, then we will get the three roots.
+[05:06] So the one root is these VGS is equal to 0.695 volt.
+[05:12] So if we see the second value of the VGS, then it will be negative.
+[05:17] And the third value of the VGS is less than VT.
+[05:21] That means the possible value of the VGS is equal to 0.695 volt.
+[05:26] So from this, we can say that the minimum required value of this output voltage is equal
+[05:31] to 2 times this VGS minus VT, where this VGS is equal to 0.695 volt and the VT is equal
+[05:40] to 0.5 volt.
+[05:42] So if we calculate the minimum required value, then it will come around as 0.89 volt.
+[05:50] That means for the given cascode current mirror circuit, the minimum required value of the
+[05:54] output voltage for the proper operation of this circuit is equal to 0.89 volt.

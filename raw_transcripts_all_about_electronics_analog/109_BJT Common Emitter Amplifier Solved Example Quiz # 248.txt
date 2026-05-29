@@ -1,0 +1,85 @@
+Title: BJT Common Emitter Amplifier Solved Example | Quiz # 248
+URL: https://www.youtube.com/watch?v=Gabibh31oSg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, we have been given common emitter amplifier circuit and here the input
+[00:23] to this amplifier is given through the microphone.
+[00:26] So this microphone has output resistance of 1 kilo ohm and we have been given that
+[00:33] it generates the peak signal level of the 2 milli volt.
+[00:37] So here we need to select the value of this character resistor RC in such a way that this
+[00:42] amplifier amplifies the input signal to the level of 40 milli volt.
+[00:47] So here to find the value of the RC, we need to do the small signal analysis and for that
+[00:54] we need to consider all the DC sources as 0 and we need to replace this BJT by the
+[00:59] small signal model.
+[01:01] So if you draw the small signal equivalent circuit then it will look like this.
+[01:06] Now on the main channel, we have already seen that how to draw the small signal equivalent
+[01:11] circuit of this common emitter amplifier when the emitter resistor is not bypassed, right?
+[01:17] So for more information you can check that video.
+[01:20] So here to find this value of the RC, first of all we need to write down the expression
+[01:25] of the voltage gain that is the V out divided by V in.
+[01:29] So here this voltage is the V out while this is the input signal which is given through
+[01:35] the microphone and this RS represents the output resistance of this microphone.
+[01:41] So here let's say this voltage over here is equal to VX.
+[01:47] So first of all we will find the expression of the V out divided by VX and then after
+[01:52] we will multiply that by the expression of VX divided by V in and in this way we will
+[01:59] find the overall voltage gain V out divided by V in.
+[02:03] Now here we have been given that the peak level of the input signal is equal to 2 milli volt
+[02:09] and we need to select the value of the RC in such a way that the output signal gets amplified
+[02:14] to the 40 milli volt.
+[02:16] That means V out divided by V in is equal to 20.
+[02:21] Now earlier we have already seen the expression of the V out divided by V in for the search
+[02:26] circuits that is V out divided by V in is equal to GM times RC divided by 1 plus GM times
+[02:36] R e or we can say that it is equal to RC divided by 1 over GM plus R e.
+[02:46] But this expression is valid when there is no series resistor between the base and the
+[02:50] input terminal.
+[02:52] But in this case as there is a series resistance between the base and the input or as there
+[02:57] is output resistance of this microphone.
+[03:00] So this expression is valid for the V out divided by VX.
+[03:05] Similarly now let us see how to write the expression of the VX divided by V in.
+[03:12] So to write this expression first of all we need to find the input impedance which is seen
+[03:16] on the right hand side and we have already seen that these input impedance can be given
+[03:22] as R pi plus beta plus 1 times R e.
+[03:29] For approximately we can say that it is equal to R pi plus beta times R e that means VX
+[03:37] divided by V in is equal to Z in divided by Z in plus RS.
+[03:47] So from this we can say that the voltage V out divided by V in is equal to voltage V
+[03:55] out divided by VX times VX divided by V in that is equal to RC divided by 1 over GM plus
+[04:07] R e times Z in divided by Z in plus RS.
+[04:15] Or we can say that it is equal to RC divided by 1 divided by GM plus R e times R pi plus
+[04:25] beta times R e divided by R pi plus beta times R e plus RS.
+[04:35] Now here we already know the voltage gain that is equal to 20.
+[04:40] So here to find the value of the RC we need to know the value of this 1 over GM this
+[04:46] R e as well as the R pi.
+[04:49] So we know that this GM can be given as I c divided by V t.
+[04:55] Now here we have been given that this circuit is biased in a such a way that the current
+[05:01] I c is equal to 1 milli ampere and we have been given the value of the thermal voltage
+[05:07] that is equal to 26 milli volt that means GM is equal to 1 milli ampere divided by 26
+[05:15] milli volt.
+[05:17] Or we can say that 1 over GM is equal to 26 ohm and we have been given that the emitter
+[05:25] register is equal to 4 divided by GM that is equal to 4 times 26 ohm and we know that
+[05:34] the R pi can be given as beta divided by GM that is equal to 100 times 26 ohm.
+[05:43] So if we put all these values in this expression and if we solve it for the RC then we can
+[05:50] easily find the value of the RC.
+[05:53] But here let me just simplify this expression and let me show you if you have given such
+[05:58] type of circuit then directly from looking the circuit how you can find the voltage gain.
+[06:04] So we know that this R pi is equal to beta divided by GM right that means from this we
+[06:12] can say that this 1 over GM is equal to R pi divided by beta.
+[06:18] So let us put the value of 1 divided by GM over here that means V out divided by V in
+[06:26] is equal to RC divided by R pi divided by beta plus R e times R pi plus beta times R e
+[06:37] divided by R pi plus beta times R e plus R s that is equal to beta times R c divided
+[06:44] by R pi plus beta times R e times R pi plus beta times R e divided by R pi plus beta
+[06:59] times R e plus R s. So these two terms will get cancelled out and if you further simplified
+[07:06] then we can write this voltage gain as RC divided by R pi divided by beta and then we
+[07:14] will have R e plus R s divided by beta that is equal to RC divided by 1 over GM plus
+[07:25] R e plus R s divided by beta. So without this series resistor between the base and the input
+[07:32] terminal the voltage gain can be given as RC divided by 1 over GM plus R e. But if there
+[07:40] is any resistor at the base terminal then in the expression it will get divided by the
+[07:45] beta. So from this type of circuit you can directly write the expression of the voltage
+[07:51] gain. So now let us put the value of this 1 over GM R e as well as the R s and let us
+[07:58] find the value of the RC. So here we have been given that the voltage gain is equal to
+[08:05] 20 that means 20 is equal to RC divided by 1 over GM that is the 26 ohm plus R e plus
+[08:16] R s divided by beta. Now here R e is equal to 4 times 26 ohm that means RC is equal
+[08:25] to 20 times 26 ohm plus 4 times 26 ohm that is 4 times 6 ohm plus R e plus R e plus
+[08:35] divided by GM plus 1 kilo ohm divided by 100 and if you calculate the value then this
+[08:43] RC will come out as 2.8 kilo ohm that means to get the gain of 20 the value of RC should
+[08:52] be equal to 2.8 kilo ohm.

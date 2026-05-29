@@ -1,0 +1,213 @@
+Title: Colpitts Oscillator Explained
+URL: https://www.youtube.com/watch?v=1fgw-ONlAcc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:16] In this video we will learn about call pits oscillator.
+[00:19] Now this call pits oscillator is one kind of LC oscillator and it is used for the generation
+[00:25] of a high frequency signal, typically in the range of radio frequencies.
+[00:30] So in this oscillator, the LC circuit is used in the feedback path of the oscillator.
+[00:35] And as we know, this LC circuit oscillates at the resonant frequency.
+[00:41] So in a way, this LC tank circuit provides a frequency selectivity for this oscillator.
+[00:47] Now in the previous video of the resonance, we have already talked about this LC circuit,
+[00:53] but here let us briefly understand the working of this LC circuit.
+[00:57] And let us see how this LC circuit provides the frequency selectivity.
+[01:03] So here we have a LC tank circuit and here let us assume that the capacitor is initially
+[01:08] charged to some finite voltage.
+[01:12] Or we can say that initially some finite voltage is applied to this LC tank circuit.
+[01:17] So whenever some finite voltage is applied, then the capacitor starts charging towards this
+[01:22] supply voltage.
+[01:24] And as soon as this capacitor fully gets charged, then let us say we have disconnected
+[01:28] this voltage supply.
+[01:30] So as soon as we disconnect this voltage supply, then this capacitor starts discharging
+[01:36] through this inductor.
+[01:38] Or we can say that the electrostatic energy of the capacitor will get stored across the
+[01:44] inductor.
+[01:46] And the inductor will store this energy in the form of magnetic field.
+[01:50] So what the period of time the voltage across the capacitor will reduce.
+[01:55] And at one point of time, the voltage across the capacitor will become zero.
+[02:01] So at that point, there should not be any flow of the current through the inductor.
+[02:05] But as we know, the inductor opposite the instantaneous change in the current.
+[02:10] So according to the lens law, it produces a back EMF so that the same amount of current
+[02:16] can continuously flow through the inductor.
+[02:19] So because of this back EMF, the same amount of current will flow through the inductor.
+[02:24] And because of that, now the capacitor starts charging in the reverse direction.
+[02:30] So gradually, the energy which is stored across the inductor will get converted into the
+[02:35] electrostatic energy of the capacitor.
+[02:39] And once this capacitor gets fully charged, then this capacitor once again discharges through
+[02:44] the inductor in the reverse direction.
+[02:47] So in this way, in this LC tank circuit, the energy gets transferred between the inductor
+[02:53] and the capacitor.
+[02:54] And because of that, we are getting oscillations in the output.
+[02:59] And the frequency of the oscillation can be given by the expression 1 divided by 2 pi
+[03:05] times under root LC.
+[03:08] Now so far in this discussion, we have assumed that in this tank circuit, this inductor
+[03:13] and the capacitor are ideal.
+[03:16] But in reality, this inductor has some finite omicontext as well as this capacitor has some
+[03:22] finite leakage current.
+[03:24] And because of that, over the period of time, this oscillations will die out.
+[03:29] So to get the sustained oscillations, we need to provide the external energy to this LC
+[03:34] tank circuit.
+[03:35] And in case of the LC oscillators, this energy is provided through the amplifier circuit.
+[03:41] Now in general, if we talk about the LC oscillator, then this LC circuit used to have a three
+[03:47] elements.
+[03:48] And depending upon the type of the elements, this LC oscillator can be classified in the
+[03:53] different categories.
+[03:55] So in the feedback circuit, if Z1 and Z2 are capacitors and Z3 is inductor, then this configuration
+[04:02] is known as the cockpit oscillator.
+[04:05] On the other hand, if this Z1 and Z2 are inductor and Z3 is capacitor, then this type of configuration
+[04:11] is known as the heartly oscillator.
+[04:14] So in this video, we will focus on the cockpit oscillator.
+[04:18] So this is a basic block diagram of the cockpit oscillator.
+[04:22] So in this cockpit oscillator, either a transistor or the op-amp can be used as an amplifier.
+[04:29] While on the feedback path, we used to have this LC tank circuit.
+[04:32] So it consists of two capacitors and one inductor.
+[04:36] Now in general, if we talk about the any LC oscillator circuit, then the feedback circuit
+[04:42] used to provide a 180 degree of phase shift and the remaining 180 degree of phase shift
+[04:46] is provided by the amplifier circuit.
+[04:49] So that the overall phase shift of the circuit will become 0 degree.
+[04:54] And the gain of the amplifier and the feedback circuit is set in a such a way that the loop
+[04:59] gain of the circuit will become unity.
+[05:02] And by satisfying these two criteria, we can get the sustained oscillations.
+[05:07] So like I said, in these oscillators, we can use either transistor or op-amp as an amplifier.
+[05:14] So first of all, let us see how this cockpit oscillator can be designed using the transistor.
+[05:20] So here, this transistor is configured as an amplifier while this LC tank circuit is
+[05:25] connected in the feedback path.
+[05:28] So whenever the circuit is just turned on at that time, this LC tank circuit starts
+[05:34] resonating at the resonating frequency.
+[05:37] But the amplitude of this frequency will be very low.
+[05:40] So here, through this capacitor C2, the fraction of this generated signal is given as a feedback
+[05:46] to this amplifier circuit.
+[05:48] And this amplifier circuit amplifies the feedback signal.
+[05:52] And the amplifier signal is once again fed to this feedback circuit.
+[05:57] So here, by adjusting the loop gain of this amplifier and the feedback circuit, we can
+[06:01] get the sustained oscillations at the resonating frequency.
+[06:05] And here, the frequency of the oscillation F can be given by the expression 1 divided
+[06:11] by 2 pi times under root LC, where C is equal to C1 C2 divided by C1 plus C2.
+[06:19] Now this same cockpit oscillator circuit can also be designed using the op-amp.
+[06:25] So here, this transistor is replaced by this op-amp.
+[06:29] And here, the op-amp is configured in the inverting configuration.
+[06:34] But if you see the feedback circuit, the feedback circuit remains the same.
+[06:38] So here, the output is measured across this capacitor C2, while the feedback circuit is
+[06:44] provided by this capacitor C1.
+[06:48] So here, the ratio of this C2 by C1 is also known as the feedback fraction.
+[06:54] That is the amount of signal which is being fed back to the amplifier circuit.
+[06:59] And we will talk more about it whenever we derive the expression for the frequency.
+[07:05] So now let us derive the expression of the frequency for the cockpit oscillator.
+[07:10] So for the derivation, we will assume that the gain that is provided by the amplifier
+[07:15] is equal to AV.
+[07:17] And the amplifier has a finite output impedance of R0.
+[07:22] Apart from that, we will also assume that the input impedance of the amplifier is very
+[07:27] high, meaning that no current is flowing into the input terminals.
+[07:33] And for the simplification, we will consider this capacitor C1, C2 and inductor L as Z1,
+[07:40] Z2 and Z3.
+[07:43] So under this assumption, as no current is flowing into the input terminals, this impedance
+[07:48] Z1 and Z3 will be in a series.
+[07:52] And the equivalent circuit in the feedback can be represented like this.
+[07:57] So at one end, we have an output voltage V out and the other end is connected to the ground.
+[08:04] And through this impedance Z1, the feedback signal is given to this amplifier circuit.
+[08:10] So here, this feedback voltage VF will be equal to Z1, VF by Z1 plus Z3 times V0.
+[08:19] Or we can say that the feedback fraction beta, that is VF by V0 is equal to Z1, V by Z1
+[08:27] plus Z3.
+[08:30] Now if you see this circuit from the output side, then the entire feedback network will
+[08:35] appear as a load to this output terminal.
+[08:38] And let's say, the equivalent impedance of this feedback network is equal to Zp.
+[08:44] So we can say that Zp will be equal to Z2 in parallel with Z1 plus Z3.
+[08:52] So this impedance will appear as a load across this output terminal.
+[08:57] And the equivalent circuit will look like this.
+[09:00] So here, the input signal is amplified by the voltage gain of AV.
+[09:06] And the amplifier also provides a 100 degree of phase shift.
+[09:11] So if we consider the output impedance of the amplifier, then the output which is appearing
+[09:16] across this load, Zp will be equal to Zp divided by Zp plus R0 times minus AV times Vn.
+[09:27] Or we can say that V0 by Vn will be equal to minus AV times Zp divided by Zp plus R0.
+[09:38] Now here, let's say the ratio of this output voltage by input voltage is equal to A, which
+[09:46] is the overall gain of the amplifier.
+[09:49] Now if this output impedance R0 is 0, in that case, this AV and AV both are equal.
+[09:56] But because of some finite output impedance, this overall voltage gain will be slightly
+[10:01] less than the AV.
+[10:04] So this voltage gain A can be written as minus AV times Zp divided by Zp plus R0.
+[10:14] So here, let's put the value of Zp in this expression.
+[10:18] And we know that Zp is equal to Z2 parallel Z1 plus Z3.
+[10:27] So if you put the value of the Zp and if you simplify the expression, then the overall
+[10:32] voltage gain A will be equal to minus AV times Z2 into Z1 plus Z3 divided by Z2 into
+[10:42] Z1 plus Z3 plus R0 times Z1 plus Z2 plus Z3.
+[10:47] Now earlier like we have discussed, the feedback fraction for this oscillator will be equal
+[10:52] to Z1 divided by Z1 plus Z3.
+[10:57] So if we multiply this feedback fraction beta by this overall voltage gain, then we will
+[11:02] get the loop gain.
+[11:04] So the loop gain A beta will become minus AV times Z2 into Z1 plus Z3 times Z1 divided
+[11:15] by Z1 plus Z3.
+[11:18] So here this term is nothing but the feedback fraction.
+[11:22] And in the denominator, we will have Z2 times Z1 plus Z3 plus R0 times Z1 plus Z2 plus
+[11:31] Z3.
+[11:32] So if we simplify that expression, then the loop gain A beta can be represented like this.
+[11:40] So for the cockpit oscillator, now let's put the value of this Z1, Z2 and Z3.
+[11:47] So here for the cockpit oscillator, this Z1 is equal to 1 by Geomega C1 while Z2 is
+[11:54] equal to 1 by Geomega C2.
+[11:57] And Z3 is the reactance of this inductor, which is equal to Geomega L.
+[12:03] So if we put the value of this Z1, Z2 and Z3, then the loop gain A beta can be represented
+[12:09] like this.
+[12:11] And if we simplify this expression, then the A beta can be represented like this.
+[12:17] So here to get a 0 degree of phase shift, the imaginary term in the denominator should
+[12:22] be equal to 0.
+[12:24] Or we can say that Z1 plus Z2 should be equal to omega square L times Z1 times Z2.
+[12:33] Or we can say that omega square should be equal to Z1 plus Z2 divided by L times Z1 times
+[12:41] Z2.
+[12:43] That means omega will be equal to 1 by under root L times C equivalent, where C equivalent
+[12:50] is equal to C1 C2 divided by C1 plus C2.
+[12:57] So in this way, we got the expression of the frequency for the cockpit oscillator.
+[13:04] Now let us put this value of omega in this expression.
+[13:09] So under this condition, A beta will be equal to this A beta divided by minus 1 plus omega
+[13:17] square L times C1.
+[13:21] And if we put the value of this omega, that is omega is equal to 1 by under root L times
+[13:27] C equivalent, then this loop gain A beta will be equal to A beta times C2 divided by C1.
+[13:37] Now for the sustained oscillations, the loop gain A beta should be equal to 1.
+[13:43] And under that condition, this voltage gain A v will become C1 divided by C2.
+[13:53] Now like I said earlier, this over voltage gain A is slightly less than this A v. But if
+[13:59] we assume that the output impedance R0 is much less than the total impedance Zp, in that
+[14:05] case, this gain A is approximately equal to A v. And under this condition, the feedback
+[14:13] fraction beta will be equal to C2 divided by C1.
+[14:20] So this is the expression of the feedback fraction.
+[14:24] So using this expression of omega, we can find the frequency of oscillation for the
+[14:28] cockpit oscillator.
+[14:30] And using this feedback fraction beta, we can set the gain of the amplifier, such that
+[14:35] we can get the sustained oscillations.
+[14:39] So to understand that, let us take one example.
+[14:42] So here we have given this cockpit oscillator circuit.
+[14:46] And in this circuit, we have been asked to find the frequency as well as the gain which
+[14:51] is required for the sustained oscillation.
+[14:54] So here as we have given the value of C1, C2 and L, so it is easy to find the frequency.
+[15:00] And as we know, the frequency F can be given by the expression 1 divided by 2 pi times
+[15:07] under root L times C equivalent, where C equivalent is equal to C1, C2 divided by C1 plus C2.
+[15:16] So if you put the value of this C1 and C2, in the C equivalent, we will be equal to 1.669
+[15:24] of a rad A.
+[15:26] And if you put the value of this C equivalent and this inductor L in this expression, then
+[15:30] the value of frequency F will be of free common around less 27.5 kilohertz.
+[15:38] So this is the oscillation frequency for the cockpit oscillator.
+[15:42] Now let us find the value of the gain for the sustained oscillations.
+[15:46] So if you observe over here, the feedback fraction beta is equal to C2 divided by C1.
+[15:54] And in this case, it is equal to 1 by 5.
+[15:58] So the gain of the amplifier should be more than 5.
+[16:03] Now here, the op-amp is configured in the inverting configuration.
+[16:08] And as we know, in the inverting configuration, the gain of the op-amp can be given as minus
+[16:13] RF divided by R1.
+[16:17] Now here, if you only consider the magnitude of the gain, then the gain of this amplifier
+[16:22] should be more than 5.
+[16:24] So here, let us assume that R1 is equal to 1 kilo ohm.
+[16:29] And to get a gain of more than 5, the value of this RF should be more than 5 kilo ohm.
+[16:36] So in this way, by using this expression, we can design a cockpit oscillator of the
+[16:43] desired frequency.
+[16:44] And by using this feedback fraction beta, we can set the gain of the amplifier to get
+[16:49] the sustained oscillations.
+[16:51] So like I said earlier, this cockpit oscillator is used for the generation of very high frequencies,
+[16:57] typically in the range of RF frequencies.
+[17:00] And that is why it is very useful in mobile and communication systems.
+[17:05] Apart from that, this cockpit oscillator is also used for the generation of the surface
+[17:10] acoustic waves.
+[17:12] So these are the few applications of this cockpit oscillator.
+[17:15] So I hope in this video, you understood how we can design the cockpit oscillator and how
+[17:21] it can be used for the generation of the high frequencies.
+[17:24] So if you have any question or suggestion, do let me know here in the comment section
+[17:28] below.
+[17:29] If you like this video, hit the like button and subscribe to the channel for more such
+[17:33] videos.

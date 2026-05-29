@@ -1,0 +1,160 @@
+Title: RC Phase Shift Oscillator (using Op-Amp) Explained
+URL: https://www.youtube.com/watch?v=Gvb4GIV5ig8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous video of the oscillator, we understood the working principle of the oscillator.
+[00:21] And based on the type of feedback, we had seen the different types of oscillators.
+[00:25] Now one such oscillator is the RC fresh shift oscillator.
+[00:29] So in this oscillator, the RC circuit is used in the feedback path.
+[00:34] Now this RC fresh shift oscillator generates the stable sign waves and usually they are
+[00:39] used in the low frequency generations, typically in the range of audio frequencies.
+[00:45] So in this RC fresh shift oscillator, the amplifier provides a 1 k degree of fresh shift.
+[00:51] And usually either transistor or the inverting open is used for the amplification.
+[00:56] Now in the previous video, we had seen that to get the sustained oscillations, the loop
+[01:01] gain of the oscillator should be equal to 1.
+[01:04] And the fresh shift that is introduced by the amplifier in the feedback circuit should
+[01:08] be equal to 0 or 360 degree.
+[01:11] So to get the sustained oscillations, in this RC fresh shift oscillator, this feedback
+[01:15] path should also provide a 1 k degree of fresh shift.
+[01:19] So that the overall fresh shift that is introduced by this amplifier in the feedback circuit
+[01:24] is equal to 0.
+[01:26] And by tuning the gain of this amplifier and the feedback circuit, it is possible to
+[01:30] achieve the loop gain that is equal to 1.
+[01:33] So now let us understand in this RC fresh shift oscillator, how this feedback circuit
+[01:38] provides the 1 and a degree of fresh shift.
+[01:41] And before we see that, first of all let us quickly see the simple RC circuit.
+[01:45] So this circuit over here is nothing but the high pass filter and it is also known as
+[01:50] the phase lead circuit.
+[01:53] Because in this circuit, the output voltage used to lead to the input voltage.
+[01:57] So first of all, let us find out the transfer function of this RC circuit.
+[02:02] So here this output by input can be given as R divided by R minus JXC, where X is nothing
+[02:12] but 1 by omega C.
+[02:15] So we can write this expression as R divided by R minus J divided by omega C. And by
+[02:24] dividing the numerator and the denominator by the factor of R, we can write this expression
+[02:28] as 1 divided by 1 minus J divided by omega CR.
+[02:36] So if we find the phase shift, then the phase shift 5 can be given as 0 minus 10 inverse
+[02:43] of minus 1 by omega CR.
+[02:47] That is equal to 10 inverse of 1 by omega CR.
+[02:54] And as we know, 1 by omega C is nothing but XC.
+[02:57] So we can say that the phase shift 5 is equal to 10 inverse of XC by R. So as you can see
+[03:06] we are here, in this circuit, the phase shift depends upon the value of R and the value
+[03:11] of capacitance C. So for very small values of XC, the phase shift of the circuit will
+[03:16] be equal to 0. And whenever R is equal to 0, at that time this term XC by R will become
+[03:23] infinite. So at that time, the phase shift that is provided by the circuit will be equal
+[03:27] to 90 degree. So in this way, this RC circuit provides the phase shift between 0 to 90 degree.
+[03:36] And theoretically to get a 180 degree phase shift, we need to cascade the two such circuits.
+[03:42] So each circuit, theoretical should provide a 90 degree of phase shift. But like I said,
+[03:47] to get a 90 degree of phase shift, the value of R used to be a very small or theoretically
+[03:52] it should be 0. But whenever R is 0, at that time the gain that is provided by the circuit
+[03:58] will be equal to 0. So practically it is not possible to achieve a 180 degree of phase
+[04:04] shift just by using the two RC stages. So in practical case, instead of two RC stages,
+[04:10] we require more stages. So using the three stages, it is possible to achieve the 180 degree
+[04:16] of phase shift. So here each stage will provide a 60 degree of phase shift and the overall
+[04:22] phase shift that is introduced by this, three stages will be equal to 180 degree. But because
+[04:28] of the loading effect of the other stages, the actual phase shift that is provided by
+[04:32] this stage will be slightly different. But if you see the overall phase shift, then
+[04:37] the overall phase shift will be equal to 180 degree. So in this way, by using the multiple
+[04:42] stages, it is possible to achieve the 180 degree of phase shift. And in practical RC
+[04:48] phase shift oscillator, usually more than three stages are used to get a stable phase
+[04:53] shift. For example, if you use four stages, then each stage will provide approximately
+[04:59] 45 degree of phase shift. So combining all the four stages, we can get a 180 degree
+[05:04] of phase shift. So in this RC phase shift oscillator, like I said, the amplifier is used
+[05:10] in the inverting configuration. So it provides a 180 degree of phase shift. And through
+[05:16] this feedback circuit or through this RC stages, remaining 180 degree of phase shift is
+[05:21] introduced. So the overall phase shift that is introduced by the amplifier and the feedback
+[05:25] circuit will be equal to zero. And by setting the gain of this amplifier and the feedback
+[05:31] circuit, it is possible to achieve the loop gain of unity. So here is the RC phase shift
+[05:37] oscillator circuit, which is designed using the OPAMP. And the same circuit can be written
+[05:42] on like this. So as you can see over here, this OPAM is configured in the inverting mode.
+[05:48] So it used to provide the 180 degree of phase shift. Well, in the feedback circuit, this
+[05:53] RC stage is used to provide a 180 degree of phase shift. So in this way, the overall phase
+[05:57] shift that is introduced will be equal to 360 degree or zero degree. Now in this RC phase
+[06:03] shift oscillator, the attenuation that is introduced by this feedback stage is equal
+[06:08] to 1 by 29. So to get a unity loop gain, the gain that is provided by this OPAMP should
+[06:15] be equal to 29. Now this circuit will provide a unity gain only at one particular frequency
+[06:22] and at only one particular frequency only, the overall phase shift of the circuit will
+[06:27] be equal to zero. And if three stages are used, then this frequency F can be given by
+[06:34] the expression 1 by 2 by RC times under root 6. So at this particular frequency only, the
+[06:41] loop gain of the circuit will be equal to 1 as well as the overall phase shift of the
+[06:46] circuit will be equal to zero degree. And if more than three stages are used, then in
+[06:51] general, for n number of stages, this frequency F can be given by the expression 1 by 2
+[06:57] by RC times under root 2n. So if 4 number of RC stages are used, in that case, this expression
+[07:06] of F will be equal to 1 by 2 by RC times under root 8. And for three stages, it will be
+[07:13] equal to 1 by 2 by RC times under root 6. Now some of you might be wondering that how
+[07:19] we have got this expression of the frequency as well as why the attenuation of this RC
+[07:25] stage is equal to 1 by 29. So let us derive these two expressions very quickly. So here,
+[07:31] the same RC stages are drawn separately. Now here, let us assume that VIN is the input
+[07:38] to this RC stage and V out is the output of this RC circuit. Now in this RC circuit, just
+[07:46] by using the mesh analysis method, we can find the relationship between output and input.
+[07:51] Or we can also use the nodal analysis method to get the relationship between output and input.
+[07:56] So by using any of these two methods, we can find the relationship between output and input.
+[08:02] And if you find it, then you will get that this V out by VIN for this RC network will be
+[08:07] equal to minus 1 by 29. So let us quickly derive this relationship between output and input.
+[08:14] So here, let us assume that the voltage at this node is V1 and the voltage at this node
+[08:20] is equal to V2 and I1, I2 and I3 are the currents which are flowing through these three capacitors.
+[08:29] So here, what we will do, we will find the value of this V2, V1, I2 and I1 and we will
+[08:36] find these four expressions in terms of the output voltage. And using these four expressions,
+[08:41] we will find the relationship between output and input. So first of all, let us concentrate
+[08:46] at this node V2. So at this node V2, we can write, this voltage V2 is equal to this voltage
+[08:53] VO plus the drop across this reactants XC. That is equal to I3 times minus JXC. Now if you
+[09:02] look over here, this current I3 is flowing through this resistor R. That means this output
+[09:08] voltage V out is nothing but I3 times R. Or we can say that this current I3 is equal
+[09:16] to VO divided by R. And if you put the value of XC as 1 by omega C, then we can write
+[09:24] this expression of V2 as VO divided by Jomega CR plus VO. That means V2 is equal to VO times
+[09:34] 1 plus 1 by Jomega CR. So in this way, we got the expression of V2 in terms of the V out.
+[09:44] Now similarly, let us find out the expression of I2 in terms of V out. So if we apply the KC
+[09:50] let this node, then we can write, I2 is equal to V2 by R plus this current I3. Now we already
+[09:58] found the value of this V2 and we know that I3 is equal to VO by R. So we can write the expression
+[10:05] of I2 as VO by R into 1 plus 1 by Jomega CR plus VO by R. And if we simplify it, then we can write
+[10:19] VO by R multiplied by 2 plus 1 by Jomega CR. So in this way, we got the two expression of V2 and I2
+[10:30] in terms of the output voltage. Similarly, at this node V1, let us find out the expression of V1
+[10:36] and I1 in terms of the output voltage V out. So at this node V1, we can write this voltage V1
+[10:44] as V2 plus I2 divided by Jomega C. That is the drop across these reactants XC. Now we already
+[10:53] know the value of this V2 and I2. So if you put the value of this V2 and I2, then you can write
+[10:58] the expression of V1 as VO times 1 plus 1 by Jomega CR plus VO by R times 2 plus 1 by Jomega CR
+[11:13] multiplied by 1 by Jomega C. And if we solve this expression, then the value of this V1 will be
+[11:22] equal to VO times 1 plus 3 by Jomega CR minus 1 by Jomega CR CR R square. Similarly, by applying
+[11:36] the KCL at this node V1, let us find out the expression of I1 in terms of this output voltage
+[11:41] V out. So applying KCL at this node, we can write current I1 will be equal to V1 by R plus this
+[11:52] current I2. Now we already know the value of V1 and I2. So let us put the value of V1 and I2
+[11:59] in this expression. And we can write this current I1 as VO by R times 1 plus 3 by Jomega CR
+[12:09] minus 1 by omega square C square into R square plus the value of I2 will be equal to VO by R times
+[12:19] 2 plus 1 by Jomega CR. So if we simplify this expression, then the value of I1 will be equal to
+[12:28] VO by R times 3 plus 4 by Jomega CR minus 1 by omega square C square into R square.
+[12:40] So now so far we got 4 expressions of V2, I2, V1 and I1 in terms of the output voltage.
+[12:48] Now the only expression that is remained is the relationship between input voltage and the
+[12:53] output voltage. So now let us write down the expression of V1 in terms of this I1 and V1.
+[13:00] So now we can write this input voltage V in as voltage V1 plus the drop across this capacitance
+[13:07] XC that is equal to I1 divided by J times omega C. And let us put the value of V1 and I1 in
+[13:16] this expression. So the input voltage V in will be equal to VO plus 1 plus 3 by Jomega CR minus
+[13:27] 1 by omega square C square into R square. So here we have just put the value of V1. Now let
+[13:34] us put the value of I1 in this expression. And as we know I1 is VO by R times 1 by Jomega C
+[13:44] that is this 1 by Jomega C into 3 plus 4 by Jomega CR minus 1 by omega square C square into R square.
+[13:55] So if we simplify this expression then we can write this input voltage V in as VO plus
+[14:02] 1 plus 6 by Jomega CR minus 5 by omega square C square into R square minus 1 by Jomega CR minus
+[14:14] omega cube C cube into R cube. So this is the relationship between input and output voltage.
+[14:22] Now the output voltage will only have a real part that means the imaginary part of this
+[14:27] expression should be equal to 0. So by equating the imaginary part to the 0 we can write 6 by
+[14:35] omega CR minus 1 by omega cube C cube into R cube that is equal to 0. Or we can simplify this
+[14:43] expression as omega square C square into R square will be equal to 1 by 6 that means omega will
+[14:52] be equal to 1 by under root 6 times RC. And if we write this expression in terms of the frequency
+[15:01] then we can say that F will be equal to 1 by 2 by RC times under root 6. So now let us find out
+[15:09] the gain of the circuit at this particular frequency. Now once the imaginary part is 0 then the
+[15:15] expression can be written as V in is equal to VO times 1 minus 5 by omega square C square into
+[15:23] R square. Now in this expression let us put omega is equal to 1 by under root 6 times RC.
+[15:32] So if you put the value of this omega then this input voltage V in will be equal to VO times
+[15:38] 1 minus 5 by 1 by 6 times R square C square multiplied by R square into C square.
+[15:48] So if you simplify it then the input voltage V in will be equal to VO times 1 minus 30.
+[15:55] Or we can say that VO by V in is equal to minus 1 by 29. So in this way we can say that this RC
+[16:04] network used to provide a 10 vision of 1 by 29. And here the negative sign indicates that
+[16:10] this RC network used to provide a 180 degree of phase shift. So in this way here by tuning the
+[16:16] value of R and C in the feedback network it is possible to get oscillation at particular frequency.
+[16:22] Now generally in this RC phase shift oscillators the value of R is remained fixed and the only
+[16:27] value of capacitor is changed to get the desired frequency of oscillation. So here in this RC
+[16:32] phase shift oscillator all the capacitors are ganged together. So just by changing the one
+[16:37] capacitor it is possible to tune all the capacitors. And in this way it is possible to tune the circuit
+[16:44] at one particular frequency. So this is all about the RC phase shift oscillator. So I hope in this
+[16:50] video you understood how we can design this oscillator using the OPAM. So if you have any question
+[16:56] or suggestion do let me know in the comment section below. If you like this video hit the like
+[17:00] button and subscribe to the channel for more such videos.

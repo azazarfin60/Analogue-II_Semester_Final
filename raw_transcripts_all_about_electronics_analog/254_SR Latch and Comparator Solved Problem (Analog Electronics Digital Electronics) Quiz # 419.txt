@@ -1,0 +1,97 @@
+Title: SR Latch and Comparator Solved Problem (Analog Electronics / Digital Electronics) | Quiz # 419
+URL: https://www.youtube.com/watch?v=rq_qJpT25go
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and as you can see, it consists of
+[00:16] many components.
+[00:18] So as you can see, it consists of SF-RIP-FLOG, TRANTHISTER, LDR, LED as well as the comparator.
+[00:26] So to solve this question, you should be aware about the working of all the components.
+[00:32] So here as you can see, this LDR or the light dependent register receives the light from
+[00:37] the LED.
+[00:39] So as you can see we are here, under the dark condition, the resistance of the LDR is
+[00:44] equal to 5 K ohm, while under the illumination, its resistance is equal to finite ohm.
+[00:51] So here, this LED is in the off condition for the time T less than 0 and at time T is
+[00:57] equal to 0 second, this switch S1 is closed for 1 millisecond.
+[01:03] And after the 1 millisecond, once again, this switch S1 has been opened.
+[01:09] So here, we have been asked to find the condition of the LED whenever this switch S1 is closed
+[01:14] and once again whenever this switch S1 is opened.
+[01:19] So first of all, let us see at time T is equal to 0 minus how the circuit will behave.
+[01:26] So here, we have been given that for this time T less than 0, this LED is in the off condition.
+[01:35] And since the LED is in the off condition, so the value of the resistance of the LDR
+[01:40] will be equal to 5 K ohm.
+[01:43] So first of all, let us find the voltage at the inverting terminal of the comparator.
+[01:49] So here, using the voltage divider role, we can easily find the voltage at the inverting
+[01:53] terminal.
+[01:54] That means here, this V minus is equal to 1 K ohm divided by 1 K ohm plus 5 K ohm times
+[02:04] 5 volt or that is equal to 5 by 6 volt.
+[02:09] And here, this V plus is equal to 2 volt.
+[02:13] So as you can see, since the V plus is greater than V minus, so the output of the comparator
+[02:19] or the V out will be equal to 5 volt.
+[02:23] That means this voltage will be equal to 5 volt or we can say that for this SF reflock,
+[02:29] the input will be equal to logic high.
+[02:33] That means at T is equal to 0 minus both S and R inputs are logic high.
+[02:39] And here as you can see, this SF reflock is the active low.
+[02:43] That means whenever its both inputs are 1, then it will retain its present state.
+[02:50] So we can say that at T is equal to 0 minus both S and R is equal to 1.
+[02:58] And therefore for the given flip flop, the next state will be same as the present state.
+[03:04] That means presently, whatever is the output of the SF reflock, it will maintain the same
+[03:09] output.
+[03:10] And here we have been given that initially, this LED is in the off condition.
+[03:15] And therefore, this transistor should also be in the off condition.
+[03:20] And as you know, for the transistor to be in the off condition, its input voltage should
+[03:24] be equal to 0 volt.
+[03:26] So we can say that initially, this Q output is equal to 0.
+[03:32] So if we just summarize it, then at T is equal to 0 minus both S and R input is equal to
+[03:37] 1.
+[03:38] And this Q output of the SF reflock is equal to 0.
+[03:42] And in this condition, this LED is in the off condition.
+[03:48] So now at T is equal to 0 plus, this switch S1 has been closed.
+[03:55] So in this condition, now let us see the working of the circuit.
+[04:00] That means now at T is equal to 0 plus, this switch is in the closed condition.
+[04:06] So now through this path, the current will start going through the LED.
+[04:11] And therefore, this LED will get turned on.
+[04:15] And since the LED is in the on condition, so now, the value of the resistance of the
+[04:19] LED air will also change.
+[04:22] So in the on condition, now the resistance of this LED air will become finite home.
+[04:28] So in this condition, now let us find the voltage at the inverting terminal of the comparator.
+[04:35] So now, this V minus will be equal to this 1 kilo divided by 1 kilo ohm plus finite
+[04:44] ohm times 5 volt.
+[04:47] Or that is equal to 5 divided by 1.5.
+[04:51] It is equal to 3.33 volt.
+[04:55] And at the same time, this V plus is equal to 2 volt.
+[05:00] So in this condition, now if you see, then this V minus is greater than V plus.
+[05:06] And therefore, now the output of the comparator will become low.
+[05:12] That means these output voltage, now will become low.
+[05:16] And the same will also appear at the S input.
+[05:20] So now, this S input will also become low.
+[05:24] So in this condition, if you see, then this S is equal to 0.
+[05:29] And this R is equal to 1.
+[05:31] And since the SR flip flop is the active low, so in this condition, now the Q output of
+[05:36] the SR flip flop will become 1.
+[05:40] That means now, this Q output will become high.
+[05:45] That means as soon as the switch S1 gets closed, then the LED will get turned on.
+[05:49] And at the same time, the Q output of the SR flip flop will become high.
+[05:54] And once the Q output will become high, then the input to the base of the transistor will
+[05:59] also become high.
+[06:01] And because of that, now this transistor will start conducting.
+[06:06] Now at T is equal to 1 millisecond.
+[06:08] Once again, this switch will get opened.
+[06:12] That means at T is equal to 1 millisecond.
+[06:14] If you see the circuit, then once again, this switch will get opened.
+[06:19] But in this condition, now the input to the transistor is equal to high.
+[06:25] And since it is high, so this transistor will conduct.
+[06:29] And due to that, now the current will flow through the LED through this path.
+[06:34] And because of that, this LED will remain in the on condition.
+[06:39] And since the LED is in the on condition, so this LED will also receive the light.
+[06:44] And because of that, its resistance will remain finite.
+[06:49] And due to that, the voltage at this node will remain 3.3 volt.
+[06:54] And due to that, the output of the comparator will remain in the low condition.
+[06:59] So due to all this, the output of the SR flip flop will also remain in the high condition.
+[07:06] So in short, after the 1 millisecond, once the switch as one is open, this LED will remain
+[07:11] in the on condition.
+[07:14] That means whenever this switch as one is closed.
+[07:19] And this LED will get turned on.
+[07:23] And after the 1 millisecond, when the switch as one is open, then also this LED will remain
+[07:29] in the on condition.
+[07:32] So from this, we can say that for the given question, this is the correct answer.

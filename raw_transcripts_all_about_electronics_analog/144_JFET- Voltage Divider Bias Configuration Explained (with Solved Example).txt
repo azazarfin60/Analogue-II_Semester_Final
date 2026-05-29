@@ -1,0 +1,192 @@
+Title: JFET- Voltage Divider Bias  Configuration Explained (with Solved Example)
+URL: https://www.youtube.com/watch?v=vuEbwmEVSsM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So sometime back, we have seen the fixed wires and the self-biased configuration of the
+[00:15] JFET.
+[00:17] So in this video, we will learn about the voltage divider biasing configuration of the JFET.
+[00:22] But before we go through it, let me just quickly revise why we need to bias the JFET.
+[00:29] And why we are studying all these different types of biasing configuration.
+[00:33] And also we will understand why some configurations are more preferred over the other biasing
+[00:39] configuration.
+[00:40] So similar to the BJT, the JFET can also be used as an amplifier.
+[00:46] And to use it as an amplifier, it needs to be biased in the active region.
+[00:50] Or in case of the JFET, it is also known as the saturation region.
+[00:55] So in the earlier videos, we have seen that to bias the JFET in the active region, this
+[01:01] VDS should be greater than or equal to VGS-VP, where this VP is the pinch of voltage.
+[01:09] And the absolute value of this VGS should be less than VP.
+[01:13] So this second condition ensures that the JFET does not go into the cutoff region.
+[01:19] And by fulfilling this condition, the JFET can be biased in the active region.
+[01:25] And in the active region also, it should be biased in such a way that we get the maximum
+[01:29] voltage swing without any kind of distortion.
+[01:33] And the biasing point should be as stable as possible.
+[01:37] That means even if there is a variation in the device parameters, then also there should
+[01:41] be a minimum effect on the biasing point.
+[01:45] So for the JFET, there are three basic biasing configurations.
+[01:49] The fixed bias, the self bias and the voltage divider bias.
+[01:54] In case of the fixed bias configuration, the gate is biased with the fixed voltage.
+[02:00] Let's say this blue cow is the ID versus VDS characteristic or the transfer characteristic
+[02:06] of the JFET.
+[02:08] And when the FET is biased with this fixed bias configuration, then this yellow line represents
+[02:14] the load line.
+[02:16] So here this is IDSS and this point is the VP.
+[02:22] Now typically for any JFET, this IDSS and the VP varies in the certain range.
+[02:29] Let's say this blue cow shows the maximum value of the IDSS and the VP.
+[02:35] And let's say this green cow shows the minimum value of this IDSS and the VP.
+[02:41] So as you can see from this graph, because of the change in the IDSS and the VP, this
+[02:47] is the maximum change in the drain current.
+[02:50] So in case of the fixed bias configuration, because of the change in the device parameters,
+[02:55] there is a significant change in the operating condition.
+[02:59] And using the self bias configuration, this change can be reduced.
+[03:03] Because as we have seen in the earlier video, in case of the self bias configuration,
+[03:08] the voltage VGS is equal to minus ID times RS.
+[03:13] And in the active region, this is the relationship between the drain current ID and the voltage
+[03:18] VGS.
+[03:20] So as the drain current ID tries to increase, then this voltage VGS will also increase.
+[03:26] And from the second expression as you can see, when the voltage VGS will increase, then
+[03:30] this drain current ID will reduce.
+[03:33] So because of this source resistor RS, there is an inherent feedback in this self bias
+[03:38] configuration.
+[03:40] And because of that, it tries to stabilize the operating point.
+[03:44] Now in case of this self bias configuration, since VGS is equal to minus ID times RS,
+[03:50] so the load line will pass through the origin.
+[03:54] And in this case, because of the change in the device parameters, if we see the maximum
+[03:59] change in the drain current, then it will be less than the fixed bias configuration.
+[04:04] But further, this variation can be reduced by using the voltage divider biasing configuration.
+[04:10] Whereas in general terms, if we bias the JFET with a gate voltage along with this source
+[04:16] resistor, then the stability can be further improved.
+[04:20] But instead of using the two supply voltages, the JFET can be biased using the single supply
+[04:26] if you bias it using the voltage divider biasing configuration.
+[04:30] So first of all, using the graphical method, we will see that how we can find the operating
+[04:35] point of the given circuit.
+[04:38] And at the later part of the video, we will see that using the shock risk equation, by
+[04:42] solving the quadratic equation, we can also find the operating point.
+[04:47] So for the DC analysis, all this coupling and the bypass capacitors will act as an open
+[04:52] circuit.
+[04:54] And this will be the equivalent circuit.
+[04:57] Now for the JFET, this gate current IG is approximately equal to 0.
+[05:03] That means approximately no current is flowing into this gate terminal.
+[05:07] That means on the input side, the current is flowing through this resistor R1 and the
+[05:12] R2.
+[05:13] And hence we can say that this voltage VG is equal to R2 divided by R1 plus R2 times V
+[05:24] dD.
+[05:26] That means using the voltage divider role, we can find this gate voltage.
+[05:31] Now if we apply the KVL in this loop, then we can say that voltage VG minus VGS minus
+[05:40] ID times RS that is equal to 0.
+[05:44] Because here, the current VG is flowing through the source terminal is equal to ID.
+[05:50] Because in case of the JFET, this ID is equal to IS.
+[05:56] So from this expression, we can say that voltage VGS is equal to VG minus ID times RS.
+[06:05] Now as per the Shockless equation in the active region or in the saturation region for the
+[06:11] JFET, this drain current ID can be given as IDSS times 1 minus VGS divided by BP square.
+[06:24] So as per this expression, let's say this is the transfer characteristic of the JFET.
+[06:30] And using this expression, we can find the load line of the given circuit.
+[06:35] So let's say when this drain current ID is equal to 0 at that time, this voltage VGS
+[06:41] is equal to VG.
+[06:44] That means one point will be somewhere around here.
+[06:48] Similarly, when this voltage VGS is equal to 0 at that time, this drain current ID is
+[06:55] equal to VG divided by RS.
+[06:58] So on this line, the VGS will be equal to 0.
+[07:02] And somewhere around here, we will get the value of IDS VG divided by RS.
+[07:08] So by joining these two points, we will get the load line.
+[07:13] And if you further extend this load line, then at some point, it will intersect with the
+[07:18] transfer curve.
+[07:19] And the intersection point of this load line and the transfer curve will give us the
+[07:23] operating point.
+[07:25] That means this current is IDQ and this voltage is equal to VGSQ.
+[07:33] Now let's consider the variation in this transfer curve.
+[07:36] Let's say this blue curve shows the maximum value of the IDSS and the VP.
+[07:42] And this green curve shows the minimum value of the IDSS and the VP.
+[07:48] So if this is the maximum variation in the IDSS and VP, then the variation in the drain
+[07:54] current would be this much.
+[07:57] And let's compare this variation with the self-biased configuration.
+[08:00] So let's say for the self-biased configuration, this red line is the DC load line.
+[08:06] And with that load line, the maximum possible variation in this drain current is equal to
+[08:11] this much.
+[08:13] So as you can see, in case of the voltage divider biasing configuration, the operating
+[08:18] point will be most stable and it is more resistant to the change in the device parameters
+[08:23] compared to the self-biased configuration.
+[08:26] Now most of the time, the transfer curve of the JFET is not known to us.
+[08:32] So in that case, using the Shockleys equation and solving the quadratic equation, it is
+[08:38] possible to find the operating point.
+[08:40] So let us see that.
+[08:42] Now as we have seen, the voltage VGS can be given as VG-ID times RS, where this VG is
+[08:50] equal to R2 divided by R1 plus R2 times VDD.
+[08:55] Now by putting the value of this VGS in this Shockleys equation and solving this quadratic
+[09:01] equation, we can find the value of the drain current.
+[09:05] And by putting the value of this drain current, we can find the value of the VGS.
+[09:11] And for the given circuit, the drain to source voltage VDS will be equal to voltage VDD
+[09:17] minus ID times RS plus RD.
+[09:23] So in this way, by finding the drain current ID in the VDS, we can find the operating point.
+[09:29] Alright, so let us take one example so that it will get clear to you.
+[09:35] So in this example, the JFET is biased in the voltage divider-basing configuration.
+[09:41] And for the given circuit, we have been asked to find the voltage VGS, current ID and
+[09:46] the voltage VDS.
+[09:48] So first of all, let us find this gate voltage.
+[09:52] So this gate voltage VG will be equal to R2 divided by R1 plus R2 times VDD.
+[10:02] So in this case, it will be equal to 110 divided by 110 plus 910 times 20 volt.
+[10:12] That is equal to 2.157 volt.
+[10:16] Now if we apply the KVL in this loop, then we can say that voltage VGS is equal to VG
+[10:24] minus ID times RS, right?
+[10:29] That means VGS is equal to 2.157 minus ID times RS.
+[10:37] And here RS is equal to 1.1 kilo.
+[10:41] That means we can say that VGS is equal to 2.157 minus ID times 1.1 00.
+[10:50] Now as per the shock risk equation, this drain current ID is equal to IDSS times 1 minus
+[10:58] VGS divided by VP whole square.
+[11:02] So here, this IDSS is equal to 10 milliampere, while the pinch of voltage VP is equal to
+[11:08] minus 3.5 volt.
+[11:11] That means this drain current ID is equal to 10 milliampere times 1 minus VGS divided
+[11:19] by minus 3.5 whole square.
+[11:24] Or we can say that this drain current ID is equal to 10 milliampere times 1 plus VGS
+[11:34] divided by 3.5 volt whole square.
+[11:39] Now in this expression, let us put the value of VGS.
+[11:43] And as we have seen, this VGS is equal to 2.157 minus ID times 1.1 00.
+[11:53] That means drain current ID is equal to 10 milliampere times 1 plus 2.157 minus 1.100
+[12:05] ID divided by 3.5 whole square.
+[12:11] Or if we further simplify it, then this drain current ID is equal to 10 milliampere divided
+[12:19] by 3.5 whole square times 3.5 plus 2.157 minus 1.100 ID whole square.
+[12:33] That is equal to 10 milliampere divided by 3.5 whole square times 5.657 minus 1.1100
+[12:44] ID whole square.
+[12:47] So if we further simplify this expression, then this drain current ID will be equal to 2.61
+[12:53] times 10 to the power minus 2 minus 10.16 times ID plus 987.7 times ID square.
+[13:05] Or from this we can say that 987.7 times ID square minus 11.16 times ID plus 2.61 times
+[13:17] 10 to the power minus 2 is equal to 0.
+[13:22] So in this way, we got the quadratic equation in terms of the current ID.
+[13:27] And solving this expression, we will get the two roots of the drain current.
+[13:32] And these two roots will be 3.3 milliampere and 8 milliampere.
+[13:39] But the value of drain current as 8 milliampere is not possible.
+[13:44] Because with this value of drain current, if you find the value of VGS, that is VG minus
+[13:50] ID times RS, then in this case it will be less than VP.
+[13:55] And if that is the case, then the drain current ID should be equal to 0.
+[14:00] That means for the given configuration, the value of the drain current ID is equal to
+[14:05] 3.3 milliampere.
+[14:08] And with this value, the voltage VGS is equal to 2.1571 volt minus 1100 times 3.3 milliampere.
+[14:20] Which is equal to minus 1.47 volt.
+[14:24] That means ID is equal to 3.3 milliampere, while the VGS is equal to minus 1.47 volt.
+[14:34] And similarly, now let us find the value of the VGS.
+[14:38] So this VGS will be equal to VDD minus ID times RD plus RS.
+[14:47] So here, the VDD is equal to 20 volt, while this ID is equal to 3.3 milliampere.
+[14:55] This RD is equal to 2.2 kilo ohm, while the RS is equal to 1.1 kilo ohm.
+[15:01] That means VGS will be equal to 9.1 volt.
+[15:07] So in this way, we got the value of the drain current ID, the voltage VGS and the VGS.
+[15:14] Now suppose if we reduce the value of the source register RS, then what will happen?
+[15:20] Well as we reduce the value of RS, then the drain current will increase.
+[15:25] Because as you can see from this expression, when the voltage VGS is equal to 0, that
+[15:30] means on this horizontal line, this drain current ID will be equal to VG divided by RS.
+[15:38] So as the value of this source register reduces, then the slope of this line will increase.
+[15:44] And because of that, the intersection of this load line with the transfer curve will
+[15:49] occur at the higher point.
+[15:51] That means as we reduce the value of this RS, then the drain current ID will increase.
+[15:57] So please find the drain current for the given circuit, when we reduce the value of this
+[16:01] RS to the half.
+[16:03] So if you follow the same procedure, then you will be able to find that.
+[16:07] And for the same circuit, also try to find the minimum value of this source register
+[16:12] or RS minimum, such that the circuit still operates in the active region.
+[16:18] And do let me know your answer in the comments.
+[16:21] And if possible, then I will also cover the similar type of question on the second channel.
+[16:27] But I hope in this video, you understood the voltage divider biasing configuration of
+[16:31] the JFET.
+[16:33] So if you have any questions or suggestions, do let me know here in the comments section
+[16:37] below.
+[16:38] If you like this video, hit the like button and subscribe to the channel for more such
+[16:41] videos.

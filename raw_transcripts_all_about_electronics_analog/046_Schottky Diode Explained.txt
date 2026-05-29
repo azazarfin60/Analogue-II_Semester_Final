@@ -1,0 +1,152 @@
+Title: Schottky Diode Explained
+URL: https://www.youtube.com/watch?v=nV3bBrQnws0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] In this video, we will learn about the ShotKey diode.
+[00:20] So this ShotKey diode is quite similar to the normal diode, but it is different in many
+[00:25] aspects.
+[00:26] So first, if you talk about the circuit symbol, then this is the circuit symbol of the
+[00:31] ShotKey diode.
+[00:32] Apart from that, this ShotKey diode has a low forward voltage drop.
+[00:38] Now typically, if you see any silicon rectified diode, then the voltage drop of that diode
+[00:43] used to be in the range of 0.62.7V.
+[00:46] But for the ShotKey diode, this voltage drop used to be in the range of 0.32.5V.
+[00:53] And it is also evident from the Vi characteristic of this ShotKey diode.
+[00:57] So here, the Vi characteristic of the ShotKey diode and the PN junction diode has been shown.
+[01:03] And as you can see, the threshold voltage or the forward voltage drop of the ShotKey
+[01:08] diode is less than this PN junction diode.
+[01:12] And this low voltage drop has advantage in many applications, particularly in the high
+[01:17] power applications.
+[01:19] So let's say we have one rectified diode and one ShotKey diode.
+[01:24] And the forward voltage drop of these two diodes are 0.6V and 0.3V respectively.
+[01:29] And let's say the current which is flowing through these two diodes are 50A.
+[01:34] So in case of the rectified diode, the total power which is getting dissipated across
+[01:39] a diode will be equal to 50A times 0.6V, that is equal to 30V.
+[01:45] On the other end, if you see the ShotKey diode, then the total power which is getting dissipated
+[01:50] is equal to 50A times 0.3V, that is equal to 15V.
+[01:56] So for the same current rating, the ShotKey diode dissipates less power and hence it generates
+[02:01] the less heat.
+[02:03] So these ShotKey diodes are quite useful in the high power applications, particularly
+[02:08] where the good efficiency is required.
+[02:10] And the next difference is that the reverse recovery time of the ShotKey diode is very
+[02:15] low.
+[02:16] Now if you are not familiar with this reverse recovery time, then don't worry, we will
+[02:20] discuss it at the end of the video.
+[02:23] But in short, it defines how faster diode is able to respond to the switching.
+[02:28] So basically it is related to the switching speed of the diode.
+[02:33] And because of the high switching speeds, the ShotKey diodes are used in the fast switching
+[02:37] applications because in such applications, the normal diode won't work.
+[02:43] So let's understand this point.
+[02:45] So at low frequency, let's set 50 Hz, we are using this rectify circuit and in this rectify
+[02:52] circuit, we are using the normal diode.
+[02:55] So if we see the output waveform, then the output waveform will look like this.
+[03:00] That means this diode will allow only the positive half cycle and it will reject the other
+[03:05] half.
+[03:06] But now, suppose if we increase the frequency and let's say if we operate the circuit at
+[03:12] 50 kHz, then we should get this kind of waveform.
+[03:16] But actually if you see, this diode won't be able to suppress the negative half cycle.
+[03:20] And rather, during the negative half cycle, we will get this kind of waveform.
+[03:25] Because the reverse recovery time of the rectify diode is large.
+[03:29] And due to that, it will also conduct for some time in the negative half cycle.
+[03:34] So that is why this rectify diode will not work at the high frequencies.
+[03:39] But in case of a short key diode, due to its fast reverse recovery time, it is also
+[03:44] able to rectify the high frequency signal.
+[03:47] And that is why the short key diodes are used in the fast switching applications.
+[03:52] For example, they are used in the SMPS, where the switching frequencies used to be in the
+[03:57] range of 10 to hundreds of kHz.
+[04:01] And they are also used in the communication applications, for example in the RF mixing
+[04:05] or in the detector circuits.
+[04:08] So due to the fast switching speed and the low forward voltage drop, the short key diodes
+[04:12] are used in the many applications.
+[04:15] But this diode also has some limitations.
+[04:18] The first limitation is that the reverse leakage current of the short key diode is higher
+[04:22] compared to the normal diodes.
+[04:25] And it is also evident from the VIE characteristic of this short key diode.
+[04:30] As you can see, for the short key diode in the reverse direction, the leakage current
+[04:35] is higher than the normal diode.
+[04:38] Apart from that, the breakdown voltage of the short key diode is also less compared
+[04:42] to the PN junction diodes.
+[04:44] Or in other words, we can say that the peak inverse voltage of the short key diode is
+[04:48] also less compared to the normal diodes.
+[04:52] And apart from that, the operating temperature range of the short key diode is also less.
+[04:58] So these are the few limitations of the short key diode.
+[05:01] But in your application, if you are not concerned over these limitations, then this diode is
+[05:06] very useful in the switching as well as in the high power applications.
+[05:11] Now that is being said, let us briefly see the construction of this diode.
+[05:15] Now in terms of the construction, it is quite different from the PN junction diode.
+[05:20] And here, unlike the PN junction, now the metal and the semiconductor junction is formed.
+[05:26] So in the short key diode, the semiconductor used to be a n-type semiconductor.
+[05:32] And for the metal, the different host metals, like chrome, platinum and tungsten are used.
+[05:39] So here in both materials, the electron is the majority carrier.
+[05:44] And when these two metals are joined, then the electrons from the n-type material will
+[05:48] flow into the metal.
+[05:51] And that will establish a heavy flow of electron into the metal.
+[05:56] Now since the injected electrons have a very high energy compared to the metal electrons,
+[06:01] so these carriers are known as the hot carrier.
+[06:05] And that is why the short key diode is also known as the hot carrier diode.
+[06:10] Now once the electrons in this n-type material enters this metal, then still they will
+[06:16] remain the majority carriers.
+[06:19] So the short key diode is unique in the sense that the flow of current is only due to the
+[06:23] majority carriers.
+[06:25] And in other words, it is a manipulative device.
+[06:29] So now, due to the flow of electrons into the metal, the region near the junction on
+[06:34] the n-side will get depended of the electrons.
+[06:38] And due to that, the depletion region is formed near the junction.
+[06:42] And the addition of charge carriers into this metal will form a negative wall near the
+[06:47] boundary.
+[06:48] And due to that, the surface barrier is created between the two materials.
+[06:53] And due to this barrier, the further flow of electron will be restricted.
+[06:58] Now whenever we apply the forward bias, then the strength of the negative barrier will
+[07:02] reduce.
+[07:03] Because now, the electrons will get acted towards the positive terminal.
+[07:08] And once again, now the electrons in the n-side will be able to enter into the metal.
+[07:13] So in this way, the flow of electron is established in the given circuit.
+[07:18] And as I said earlier, the barrier potential for the short key diode is less than the
+[07:23] P-enjunction diode.
+[07:24] So by applying the small voltage also, we can get the desired current.
+[07:28] So now let's understand why the short key diode has a fast reverse recovery time.
+[07:33] And to understand that, first of all we need to understand what is reverse recovery time.
+[07:39] So let's say we have one P-enjunction diode and initially it is forward bias.
+[07:44] So now due to the forward bias, the electrons will enter into the P-side region and the
+[07:50] holes on the P-side region will enter into the n-side region.
+[07:54] But here to understand this phenomena, let us only consider it on the one type of charge
+[07:59] carriers.
+[08:00] So let's say due to the forward bias, the electrons will enter into the P-side region.
+[08:06] And once they enter into the P-side region, then they will become the minority charge carriers.
+[08:11] But due to the applied biasing voltage, they will continue to move deep into this P-side
+[08:16] region.
+[08:17] Now let's say suddenly at time T1, the accurate voltage has been reversed.
+[08:22] So in this case, now this P-enjunction diode should become reversed bias.
+[08:27] And we should not get any flow of current through this P-enjunction diode.
+[08:30] So ideally, this current IF should become 0 after this time T1.
+[08:36] But actually if you see, you will still get some finite current after this time T1.
+[08:42] So let's understand the reason behind it.
+[08:45] So now whenever we reverse the polarity of the voltage, then this terminal of the supply
+[08:50] will become negative and this terminal will become positive.
+[08:55] So the electrons, we just enter the P-type region during the forward bias, will now act
+[09:00] as a minority charge carriers and due to the reverse bias, now they will start moving
+[09:05] towards the positive terminal.
+[09:07] So due to the movement of these large minority carriers, we will get a flow of current in
+[09:13] the reverse direction and this current will flow for the finite amount of time.
+[09:18] So this time is known as the storage time and it defines the time which is required
+[09:23] by the minority carriers to return to the majority carrier state.
+[09:28] That means it is the time which is required by these electrons to once again move back
+[09:32] into the inside region.
+[09:35] And once the storage time is passed, then the current will start reducing.
+[09:39] That means once this electron enters into this anti-precision, then the current will
+[09:44] start reducing and eventually it will become zero.
+[09:48] So this time is known as the transition time and the summation of the storage and the
+[09:53] transition time is known as the reverse recovery time.
+[09:57] So due to this reverse recovery time, the current through the diode will not become zero
+[10:01] instantaneously.
+[10:02] But in case of a short key diode, there is a no minority charge carriers.
+[10:07] So we can say that the storage time for the short key diode is negligible and due to
+[10:12] that the reverse recovery time for the short key diode is very low.
+[10:16] And that is why they can be operated at the high frequencies.
+[10:20] So this is the reason why the short key diodes are preferred in the fast-feeding applications.
+[10:25] So I hope in this video you understood what is short key diode and how it can be used
+[10:30] in the different applications.
+[10:33] So if you have any question or suggestion, do let me know here in the comment section
+[10:36] below.
+[10:37] If you like this video, hit the like button and subscribe button for more such videos.

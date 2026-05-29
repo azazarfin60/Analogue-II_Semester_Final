@@ -1,0 +1,232 @@
+Title: Solved Examples on Schmitt Trigger and Comparator
+URL: https://www.youtube.com/watch?v=ZzMznw9VD-0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in the last couple of videos, we have learned about the comparator and the smith trigger
+[00:20] circuits.
+[00:21] So now in this video, let us solve some problems based on this comparator and the smith trigger.
+[00:27] So here is the first example and it is based on the comparator.
+[00:31] So in this example, this triangular wave is applied to this comparator and we have been
+[00:36] asked to find the reference voltage for this comparator such that the output waveform
+[00:40] has a 25% of duty cycle.
+[00:44] Now if you observe over here, this input signal is applied at the non-inverting input terminal
+[00:49] of this comparator.
+[00:51] So whenever the input signal is greater than this reference voltage, at that time the
+[00:56] output of this comparator will be high and whenever it is less than the reference voltage
+[01:01] at that time, the output of the comparator will be low.
+[01:04] So first of all, let us assume that the reference voltage which is applied to this comparator
+[01:09] is equal to 0 volt.
+[01:11] So in that case, if you see whenever the input signal is greater than 0 volt at that time,
+[01:17] the output of the comparator will be high and whenever it is less than 0 volt at that
+[01:23] time, the output of the comparator will be low.
+[01:26] So the output voltage of the comparator will look like this.
+[01:30] So if you observe over here for the 50% of time, the output of the comparator is high
+[01:35] and for the 50% of time, the output of the comparator is low.
+[01:39] So now if you know the definition of the duty cycle which is on time of the pulse divided
+[01:46] by the total time, then for this case, the duty cycle of this output waveform will be
+[01:51] equal to 50%.
+[01:54] Because here for the 50% of time, the output is high and for the 50% of time, the output
+[02:00] is low.
+[02:01] Now suppose if your reference voltage is less than 0 volt, in that case, the output of
+[02:07] this comparator will remain high for more than 50% of time and the output waveform will
+[02:13] look like this.
+[02:15] So now whenever the reference voltage is less than 0 volt at that time, the duty cycle of
+[02:20] the output waveform will be greater than 50%.
+[02:25] So now to achieve the 25% of duty cycle, the reference voltage for this comparator should
+[02:30] be greater than 0 volt.
+[02:32] So let us say we have set some positive reference voltage for this comparator and whenever
+[02:37] we apply this reference voltage to this comparator, then the output waveform will look like
+[02:43] this.
+[02:44] So whenever the input signal is greater than this reference voltage, at that time, the
+[02:49] output of the comparator will be high and whenever it is less than 0 volt at that time,
+[02:54] the output of this comparator will be low.
+[02:57] So whenever the reference voltage is greater than 0 volt at that time, the duty cycle of
+[03:02] this comparator will be less than 50%.
+[03:06] Now if you see the time period of this triangular wave, the time period of this triangular wave
+[03:10] is equal to 50 millisecond.
+[03:13] So to achieve the 25% of duty cycle, the on time of this output waveform should be equal
+[03:20] to 5 millisecond, that is the one fourth of the total time period.
+[03:26] So we can say that the on time of this output waveform should be equal to 5 millisecond.
+[03:33] Now one more thing if you observe over here, this triangular wave is a symmetric wave.
+[03:39] So the output waveform will also be symmetric around this 5 millisecond time.
+[03:44] So we can say that because of this symmetry, the time t1 and t2 are equal and as the total
+[03:51] on time should be equal to 5 millisecond, so the value of this t1 and t2 should be equal
+[03:56] to 2.5 millisecond.
+[04:00] So now we know that this is the time t is equal to 5 millisecond.
+[04:04] So this point should be equal to 2.5 millisecond and this time should be equal to 7.5 millisecond.
+[04:12] So now only thing that we need to find is the input voltage at time t is equal to 2.5 millisecond.
+[04:19] So if we know that value, then we can find the reference voltage for which the output
+[04:23] waveform will have a duty cycle of 25%.
+[04:27] And it can be found by finding the slope of this triangular wave.
+[04:32] So if you observe over here in 5 millisecond, the output reaches from 0 to 5 volt.
+[04:38] So we can say that the slope of this triangular wave for this 0 to 5 millisecond is equal to 5
+[04:47] volt divided by 5 millisecond.
+[04:50] What we can say that that is equal to 1 volt per millisecond.
+[04:54] So in 2.5 millisecond, the output will reach at 2.5 volt.
+[05:00] So we can say that the reference voltage should be equal to 2.5 volt.
+[05:06] So whenever the reference voltage is equal to 2.5 volt at that time,
+[05:10] the output waveform will remain on for 5 millisecond and for the rest of the time,
+[05:15] it will remain off.
+[05:17] And in this way, we can achieve the duty cycle of 25%.
+[05:21] Now instead of this 2.5 volt,
+[05:23] suppose if we set the reference voltage as minus 2.5 volt,
+[05:28] in that case, the output waveform will look like this.
+[05:32] So in this case, the output will remain low only for the 25% of time.
+[05:37] Or we can say that for this case, the duty cycle of the output waveform will be equal to 75%.
+[05:45] So in this way, by changing the reference value,
+[05:48] we can change the duty cycle of the output waveform.
+[05:51] So now, try to find the reference voltage,
+[05:53] such that the output waveform has a duty cycle of 10%.
+[05:58] And do let me know your answer in the comment section below.
+[06:02] Okay, so now let's move to the next example.
+[06:05] So in this example, we have been given this circuit.
+[06:09] And for the given circuit, we have been asked to find the value of this resistance R1,
+[06:14] such that the hysteresis width of this circuit is equal to 1 volt.
+[06:19] And here, assume that the saturation voltages for the given circuit is equal to
+[06:23] plus minus 10 volt. Now, if you observe this circuit, it is the example of a non-verting
+[06:29] smittriger. Because here, the input is applied at the non-verting terminal.
+[06:34] And there is a positive feedback from output to the input side.
+[06:38] Now here, we have been given that the hysteresis width for the given smittriger is equal to
+[06:43] 1 volt. And we have already seen in the last video of smittriger that the hysteresis width
+[06:48] is nothing but the difference between the upper and the lower threshold voltages.
+[06:53] So first of all, for this circuit, we will find the upper and the lower threshold voltages.
+[06:57] And using the given hysteresis width, we will find the value of this resistor R1.
+[07:03] So in the last video of smittriger, we have seen that the upper threshold voltage for the
+[07:08] non-inverting smittriger can be given by the expression minus R1 divided by R2 times
+[07:15] voltage VL. Now, for this case, voltage VL is equal to minus 10 volt. So we can say that
+[07:23] the upper threshold voltage for the given non-inverting smittriger will be equal to 10 times
+[07:29] R1 divided by R2. And similarly, the lower threshold voltage for the given smittriger will be
+[07:37] equal to minus R1 divided by R2 times the voltage VH. And here, the value of positive saturation
+[07:46] voltage is equal to 10 volt. So we can say that the lower threshold voltage will be equal to
+[07:53] minus 10 times R1 divided by R2. Now, as I said, the hysteresis width is nothing but the difference
+[08:01] between upper and the lower threshold voltage. So we can say that hysteresis width is equal to
+[08:08] difference between these upper and the lower threshold voltage. Now, here, the value of this
+[08:14] upper threshold voltage is equal to 10 times R1 divided by R2. And the value of this
+[08:20] lower threshold voltage is equal to minus 10 times R1 divided by R2. So we can say that
+[08:28] that is equal to 20 times R1 divided by R2. And here, we have been given that the value of
+[08:36] this hysteresis width is equal to 1 volt. And we also know that here for the given circuit,
+[08:43] the value of R2 is equal to 20 kilo ohm. So if you put the value of R2 as 20 kilo ohm,
+[08:49] then we will get the value of R1 as 1 kilo ohm. So whenever we put the value of R1 as 1 kilo ohm,
+[08:57] then the value of this upper threshold voltage will be equal to 0.5 volt. And the value of
+[09:03] this lower threshold voltage will be equal to minus 0.5 volt. And if you see the hysteresis curve
+[09:10] for the given circuit, then it will look like this. So here, the difference between this upper
+[09:15] and the lower threshold voltage or the hysteresis width is equal to 1 volt. So now, let us move to
+[09:22] the next example. So now, in this example, we have been given this circuit which is designed
+[09:28] using the opamp. And for the given opamp, the saturation voltages are plus minus 15 volt.
+[09:35] And we have been asked to find the upper and the lower threshold voltage is for the given circuit.
+[09:41] So now, if you observe this circuit, it is the example of an inverting smith trigger. Because here,
+[09:46] the input is applied at the inverting terminal and there is a positive feedback from output to
+[09:51] the input side. So now, here, to find the upper and the lower threshold voltage, first of all,
+[09:57] let us find the voltage at this non-inverting terminal. And let us say this voltage is equal to
+[10:03] V plus. So basically, this voltage will decide the upper and the lower threshold voltage for the
+[10:08] given smith trigger. Now, for the inverting smith trigger, the hysteresis curve will look like this.
+[10:16] So whenever the output voltage of this smith trigger is high, at that time, the value of this V
+[10:22] plus defines the upper threshold voltage for the smith trigger. So whenever the input signal
+[10:28] goes beyond this upper threshold voltage, at that time, you will see the transition in the output
+[10:32] from plus 15 to minus 15 volt. And similarly, when output is equal to minus 15 volt, at that time,
+[10:41] the value of this V plus will define the lower threshold voltage. So whenever input signal
+[10:46] goes below this lower threshold voltage, at that time, you will see the transition in the
+[10:51] output voltage. And at that time, output will go from minus 15 to plus 15 volt. So basically,
+[10:58] the two values of this voltage V plus will define the upper and the lower threshold voltage.
+[11:04] So first of all, assume that the output voltage V out is equal to plus 15 volt.
+[11:10] And for this condition, we will find the value of this V plus. And from this, we will find the
+[11:16] upper threshold voltage. So if the voltage at this node is V plus, then the same voltage will
+[11:22] also appear at this node. So to find the value of this V plus, let us apply the KCL at this node.
+[11:29] So applying KCL, we can write V plus minus 3 volt divided by 5 kilone plus V plus minus 15 volt
+[11:42] divided by 10 kilone that is equal to 0. So if you simplify it, then we can write
+[11:52] 2 V plus minus 6 volt plus V plus minus 15 volt that is equal to 0. It means that
+[12:01] 3 V plus that is equal to 21 volt. Or we can say that V plus that is equal to 7 volt.
+[12:10] So now here, whenever this input voltage is greater than this voltage V plus, at that time,
+[12:16] the output voltage will see the transition from plus 15 volt to the minus 15 volt.
+[12:21] And this voltage V plus is equal to the upper threshold voltage of the Smith trigger.
+[12:28] So we can say that the upper threshold voltage for the Smith trigger is equal to 7 volt.
+[12:35] So similarly, to find the value of this lower threshold voltage, let us assume that the
+[12:40] output of this Smith trigger is equal to minus 15 volt. And let us once again find the value of
+[12:46] this V plus by applying the KCL. So if we apply the KCL at this node, then we can write
+[12:54] V plus minus 3 volt divided by 5 kilone plus V plus minus minus 15 volt divided by
+[13:05] 10 kilone that is equal to 0. And if we simplify it, then we can write 2 V plus minus 6 volt plus
+[13:15] V plus plus 15 volt and that is equal to 0. So if we further simplify it, then we can write
+[13:23] 3 V plus that is equal to minus 9 volt. Or we can say that V plus that is equal to minus 3
+[13:32] volt. So now here, whenever this input voltage V in is less than this voltage V plus at that time,
+[13:39] the output voltage will see the transition from minus 15 volt to the plus 15 volt.
+[13:44] And this voltage V plus can be defined as the lower threshold voltage for the Smith trigger.
+[13:51] So we can say that the lower threshold voltage for the Smith trigger is equal to minus 3 volt.
+[13:58] So in this way, the upper threshold voltage for the Smith trigger is equal to 7 volt.
+[14:03] And the lower threshold voltage is equal to minus 3 volt. And if you see the hysteresis curve
+[14:09] for the given speed trigger, then it will look like this. So whenever input signal goes beyond this
+[14:16] 7 volt at that time, you will see the transition in the output voltage from plus 15 volt to the
+[14:22] minus 15 volt. And likewise, whenever the input signal is less than this minus 3 volt at that time,
+[14:29] once again you will see the transition from minus 15 volt to the plus 15 volt. So now let us
+[14:34] move to the next example. So now in this example, we have been asked to design the Smith trigger circuit,
+[14:41] such that it has the following hysteresis curve. So basically, we need to find the value of this R1
+[14:48] reference voltage such that we have the following hysteresis curve. So if you see the hysteresis
+[14:53] curve over here, the positive and the negative saturation voltages are plus minus 10 volt respectively.
+[15:00] And here, the upper threshold voltage is equal to 2 volt and the lower threshold voltage is
+[15:06] equal to minus 3 volt. So for this circuit, we can say that the value of VH is equal to 10 volt
+[15:13] and the value of this low voltage VL is equal to minus 10 volt. And here,
+[15:19] upper threshold voltage is equal to 2 volt and the lower threshold voltage is equal to minus 3
+[15:26] volt. So first of all, we will find the value of V plus and from this, we will find the value of
+[15:32] this R1 R2 and the reference voltage. So now to find the value of this V plus, let us apply the KCL
+[15:39] this node. So applying KCL, we can write V plus minus V in divided by R1 plus
+[15:50] V plus minus V out divided by R2 that is equal to 0. And if you simplify it, then you will get
+[15:59] the value of this V plus as R1 divided by R1 plus R2 times this output voltage V out plus
+[16:09] R2 divided by R1 plus R2 times the voltage V in. Now here, if you observe, there are two
+[16:18] possibilities for this voltage V plus. So whenever this output voltage is high, at that time,
+[16:24] we will have a different value of V plus and whenever the output voltage is low, at that time,
+[16:28] we will have a different value of V plus. So let us say whenever the output voltage is low,
+[16:34] at that time, the value of V plus is equal to V1. So for that case, if we write the expression
+[16:42] for the V1, then V1 will be equal to R1 divided by R1 plus R2 times this voltage VL plus
+[16:53] R2 divided by R1 plus R2 times this voltage V in. Because here, initially we have assumed that
+[17:02] V out is equal to VL. So now whenever this voltage V1 is greater than the reference voltage,
+[17:08] at that time, you will see the transition in the output voltage. That means output voltage will
+[17:13] go from low voltage to the high voltage. And to achieve this condition, the required input
+[17:18] voltage is known as the upper threshold voltage of this smith trigger. So to achieve this condition,
+[17:25] the voltage V1 should be greater than the reference voltage. Or we can say that for this condition,
+[17:33] R1 divided by R1 plus R2 times this voltage VL plus R2 divided by R1 plus R2 times this input
+[17:44] voltage V in should be greater than this reference voltage. Now here, basically we are interested in
+[17:50] the input voltage. So let us multiply both sides by the factor of R1 plus R2 divided by R2.
+[17:58] So if we do so, then we will get V in plus R1 divided by R2 times this voltage VL should be
+[18:07] greater than this reference voltage multiplied by 1 plus R1 divided by R2. And if we shift this
+[18:16] term on the right hand side, then we can say that this input voltage V in should be greater than
+[18:22] 1 plus R1 divided by R2 times this reference voltage minus R1 divided by R2 times this voltage
+[18:32] VL. Now here, we have initially assumed that this output voltage V out is equal to VL and that
+[18:38] is equal to minus 10 volt. So we can say that the input voltage V in should be greater than
+[18:46] 1 plus R1 divided by R2 times this reference voltage plus 10 times R1 divided by R2.
+[18:56] So now whenever this input voltage is just greater than this value at that time,
+[19:01] you will see the transition in the output voltage. So this voltage defines the
+[19:06] upper threshold voltage of this smith trigger. Similarly, now let us assume that initially the
+[19:12] output voltage V out is equal to high that is equal to 10 volt. And for that condition,
+[19:18] let us find the expression for this input voltage. So let us assume that for this condition,
+[19:24] the voltage at this node is equal to V2. So if we can write the expression of V2 as R2
+[19:31] divided by R1 plus R2 times this input voltage plus R1 divided by R1 plus R2 times this voltage VH.
+[19:42] Because initially here, you assume that output voltage V out is equal to VH.
+[19:47] So now whenever this voltage V2 is less than this reference voltage, at that time,
+[19:54] you will see the transition in the output voltage. That means output will go from high to low voltage.
+[20:00] So for this condition, we can say that this R2,
+[20:04] near to by R1 plus R2 times this input voltage V in plus R1 divided by R1 plus R2 times this voltage VH
+[20:15] should be less than this reference voltage. And if you simplify this expression in terms of the
+[20:22] input voltage, then we can say that the input voltage V in should be less than
+[20:27] 1 plus R1 divided by R2 times this reference voltage minus R1 divided by R2 times this voltage VH.
+[20:41] Now here, the value of VH is equal to 10 volts. So now whenever this input voltage,
+[20:47] just less than this expression at that time, you will see the transition in the output voltage.
+[20:53] And this voltage is defined as the lower threshold voltage of the smith trigger.
+[20:59] So in this way, we got these two expressions for the upper and the lower threshold voltage is.
+[21:05] Now here, we know that the upper threshold voltage is equal to 2 volt and the lower threshold
+[21:11] voltage is equal to minus 3 volt. So now let us subtract the equation number 2 from this first
+[21:18] equation. So if you subtract these two equations, then we can say that 5 volt that is equal to
+[21:25] 20 times R1 divided by R2. But we can say that the ratio of this R1 and R2 should be equal to
+[21:33] 1 by 4. So if we assume the value of R1 as 1 kilo ohm, and in that case, the value of this R2
+[21:40] should be equal to 4 kilo ohm. So now let us put these values in this first expression.
+[21:47] So if you put these values, then we can write 1 plus 1 by 4 multiplied by this reference voltage
+[21:54] plus 10 times 1 by 4 that is equal to 2 volt because the upper threshold voltage is equal to 2
+[22:02] volt. So if you simplify it, then we can write 5 by 4 times this reference voltage plus 2.5 is
+[22:11] equal to 2. What we can say that the reference voltage should be equal to minus 0.4 volt.
+[22:19] So now for the given circuit, whenever the ratio of this R1 and R2 is equal to 1 by 4,
+[22:26] and the value of this reference voltage is equal to minus 0.4 volt at that time, we can get this
+[22:33] hysteresis curve. That means the value of this upper threshold voltage will be 2 volt and the
+[22:38] lower threshold voltage will be equal to minus 3 volt. So in this way, we can design the smith trigger
+[22:44] for the given hysteresis curve. So that is it for this video and I hope in this video, you understood
+[22:50] how to solve the problems based on the comparator and the smith trigger. So if you have any question
+[22:56] or suggestion, do let me know in the comment section below. If you like this video, hit the like button
+[23:01] and subscribe to the channel for more such videos.

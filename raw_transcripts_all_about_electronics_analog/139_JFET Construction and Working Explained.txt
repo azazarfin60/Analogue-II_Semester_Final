@@ -1,0 +1,234 @@
+Title: JFET: Construction and Working Explained
+URL: https://www.youtube.com/watch?v=2I_8YNVgbEw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] In the previous video, we have seen that what is field effect transistor.
+[00:21] And then we have briefly discussed about the different types of affitties.
+[00:25] So in this video, we will learn about the JFET in detail.
+[00:30] And we will see the construction as well as the working of this JFET.
+[00:35] Now in the previous video, we have seen that in case of a field effect transistor, the
+[00:40] path through which the charge carrier flows is known as the channel.
+[00:45] And if this channel is made up of n-type material, then the field effect transistor is known
+[00:50] as the n-general affity.
+[00:52] And likewise, if the channel is made up of p-type semi-annitter material, then the field
+[00:57] effect transistor is known as the p-channel affity.
+[01:02] So in case of n-general JFET, the channel is made up of n-type material.
+[01:07] And the two small p-types of regions are fabricated near this channel.
+[01:12] And if you see the structure, this n-type material is the major part of the entire structure.
+[01:18] So through the omic contact, the top of the n-general is connected to the drain terminal.
+[01:24] And the bottom of the n-general is connected to the source terminal.
+[01:28] And the two p-type regions are connected together to the gate terminal.
+[01:33] So in this n-general JFET, due to this p-type regions, two pin junctions are formed.
+[01:39] And due to that, the deep region region is also formed near this junction.
+[01:44] Now whenever we apply the voltage between the drain and the source terminal, then the
+[01:48] current start flowing through the device between this drain and the source terminal.
+[01:54] And by applying the voltage between this gate and the source terminal, this current
+[01:58] can be controlled.
+[02:01] So the working of this JFET can be explained using the tap water analogy.
+[02:06] So as we know, in case of a tap water, the water flows from the source towards the
+[02:11] drain.
+[02:12] And the flow of water can be controlled using this knob.
+[02:16] So similarly, in case of this JFET, the voltage between this gate and the source terminal
+[02:21] controls the current which is flowing between the drain and the source terminal.
+[02:26] So now let's exactly see how this JFET works by taking the example of this n-general JFET.
+[02:32] And let's also see what should be the exact polarity of the voltages between this drain
+[02:37] and the source as well as between the gate and the source terminal.
+[02:41] So first of all, let us assume that these gate and the source terminals are connected
+[02:46] together.
+[02:48] So as you can see over here, the source terminal is connected to the ground and the gate
+[02:53] and the source terminals are connected together.
+[02:56] Now here, in case of this n-general JFET, the voltage between this drain and the source
+[03:01] terminal should be positive.
+[03:04] So here, let's say this voltage VDD is applied between this drain and the source terminal.
+[03:09] So this voltage VDD should be positive.
+[03:12] That means the drain terminal should be more positive than this source terminal.
+[03:18] So now once we apply this voltage, then the electrons start flowing from the source terminal
+[03:23] to the drain terminal.
+[03:25] And if we see the conventional current, then the current starts flowing from the drain
+[03:30] terminal towards the source terminal.
+[03:33] So here, let's say ID is the current which is flowing into the drain terminal and the
+[03:38] IS is the current which is flowing out of the source terminal.
+[03:42] And as you can see, this current ID is equal to IS.
+[03:47] So instead of defining these two currents as a separate current, we will only define
+[03:51] this drain current ID.
+[03:54] So now considering this VGS is equal to 0 and this VDS is positive, let's see how this
+[04:00] n-general JFET works.
+[04:03] So whenever this VDS is positive, then these two PN junctions will become reverse biased.
+[04:09] And due to this reverse bias connection, the width of the depletion region will increase.
+[04:14] Now, if you notice over here, the depletion region is wider at the top of this P-type
+[04:19] region.
+[04:21] And it is narrower at the bottom of this P-type region.
+[04:25] So first of all, let us understand the reason behind it.
+[04:29] Now during the operation, this n-general acts like a resistor.
+[04:34] And let's assume the uniform resistance throughout this n-general.
+[04:39] So this n-general can be modeled as series of distributed resistors between the drain
+[04:44] and the source terminal.
+[04:47] And whenever this drain current ID flows, then there will be a voltage drop across each
+[04:51] resistor.
+[04:52] So let's say the voltage at the top end is equal to 2V.
+[04:57] And as we move towards the source terminal, then there will be a voltage drop across each
+[05:01] resistor.
+[05:03] And due to that, the upper region of the P-type material will be more reverse bias compared
+[05:08] to the lower region.
+[05:11] And as we had seen in the earlier videos, as we increase the applied reverse bias voltage,
+[05:16] the width of the depletion region will increase.
+[05:20] So due to that, the depletion region is wider at the top portion and it is narrower at
+[05:25] the bottom portion.
+[05:28] So in short, due to the applied voltage videos, these two P-n junctions will become reverse
+[05:32] bias.
+[05:33] And due to that, only a small amount of reverse saturation current will flow through this
+[05:38] P-n junction.
+[05:40] And for the practical cases, we can consider that the current IG through this gate terminal
+[05:45] is equal to 0.
+[05:47] So due to this reverse bias P-n junctions, the input impedance of this NGF it is very high.
+[05:54] So now, as we increase this voltage VDS from 0 to few volts, then the current which
+[05:59] is flowing through the channel will increase.
+[06:01] And if we plot this current IID versus VDS, then initially it will almost look like a straight
+[06:07] line.
+[06:08] So this curve of IID versus VDS is known as the output characteristic of this JFT or sometimes
+[06:15] it is also known as the drain curves for the JFT.
+[06:20] So as you can see for the low voltages, this curve is almost straight line, meaning
+[06:25] that for the low voltages, the resistance of the channel remains constant.
+[06:31] But if we keep on increasing this voltage VDS, then the width of the depression region
+[06:36] will become wider.
+[06:38] And due to that, the channel will become narrower and the narrower.
+[06:43] So due to this reduced channel width, now the channel resistance will increase.
+[06:47] And that is also evident from the graph.
+[06:50] So if you see this region of the graph, the slope of the line changes and it becomes
+[06:55] more and more horizontal.
+[06:57] So basically it indicates that as we increase the voltage VDS, then the channel resistance
+[07:02] will increase.
+[07:04] And now, if we further increase the voltage VDS, then at one particular voltage, the two
+[07:09] depression regions will touch each other.
+[07:12] So this condition is known as the pinch of condition.
+[07:16] And the voltage at which this occurs is known as the pinch of voltage.
+[07:21] So let's denote this pinch of voltage as Vp.
+[07:25] So whenever this VDS is greater than or equal to Vp, then this pinch of condition will
+[07:31] occur.
+[07:32] So as the name pinch of suggests, once this condition occurs, then the current ID should
+[07:38] drop to the 0.
+[07:40] Because now there is no path for the charge carriers to flow from this side towards the
+[07:45] this side.
+[07:47] But in reality, if you see that is not the case.
+[07:50] And in fact, once the pinch of condition is reached, the current ID reaches the saturation
+[07:55] level.
+[07:56] So let us understand why it is so.
+[07:59] So first of all, let us assume that once the pinch of condition is reached, then this
+[08:04] current ID is equal to 0.
+[08:07] So if that is the case, then the absence of the drain current would remove the possibility
+[08:12] of the different potential levels across this N channel.
+[08:16] And due to that, the reverse bias across the pin junction would be removed.
+[08:21] And that would result in the loss of depletion region, which caused the pinch of at the first
+[08:26] place.
+[08:27] So basically, this current ID will not become 0.
+[08:31] And in fact, at the pinch of condition, this current ID is the maximum current.
+[08:36] So this saturation current is denoted as IDSS.
+[08:41] And IDSS is the maximum current of the JFET, whenever the VGS is equal to 0 and VDS is
+[08:48] more than pinch of voltage.
+[08:50] So whenever this VDS is more than this pinch of voltage, then the current which is flowing
+[08:55] through the device is almost constant.
+[08:58] And in this region of operation, the JFET works as a constant current source.
+[09:03] So basically, under this region of operation, we will get a constant current through this
+[09:09] device.
+[09:10] Now, so far in our discussion, we have assumed that the voltage VGS is equal to 0.
+[09:17] But as discussed earlier, this gate to source voltage can control this drain current.
+[09:22] So now let's see how the voltage level of VGS can control the drain current.
+[09:27] Or in a way, how it can affect the drain cause or the output characteristic of this JFET.
+[09:34] So now what we will do, we will make this VGS more and more negative with respect to 0
+[09:39] world.
+[09:40] And we will find the drain currents for the different values of VGS.
+[09:44] So first, let us assume that the VGS is equal to minus 1 volt.
+[09:50] So due to this negative voltage now, the depletion region will get created across this pain junction.
+[09:56] And as we keep on increasing this voltage VDS between the drain and the source terminal,
+[10:01] then the width of the depletion region will increase.
+[10:05] But now the pinch of condition or the saturation of the drain current will be reached at the
+[10:10] lower voltage of VDS.
+[10:12] Because due to this negative voltage of VGS, the pain junction is already reversed by
+[10:17] us.
+[10:18] So in case of a VGS is equal to minus 1 volt, if we see the drain curve, then it will
+[10:23] look like this.
+[10:25] So as you can see, at VGS is equal to minus 1 volt, the saturation value of the drain
+[10:30] current has been reduced.
+[10:33] And in fact, it will continuously reduce.
+[10:35] Once we reduce the value of VGS below this 0 volt.
+[10:39] So as you can see, if we reduce the value of VGS from minus 1 to minus 2 volt, then further,
+[10:45] this saturation value of the drain current will reduce.
+[10:49] And whenever this VGS is equal to minus Vp, then the saturation current will essentially
+[10:54] become 0.
+[10:56] So this region of operation is known as the cutoff region of operation.
+[11:00] Or we can say that whenever this VGS is equal to minus Vp, at that time, the device is
+[11:06] turned off.
+[11:08] So in this way, this JFT can be operated in the three different regions.
+[11:13] The omic region, the saturation region and the cutoff region.
+[11:17] So in this omic region, the JFT will work as a resistor.
+[11:22] And for the fixed value of VGS, it provides almost constant resistance.
+[11:27] But as we reduce the value of this VGS, then the resistance of the channel will increase.
+[11:32] So basically in this region, the JFT can be operated as a variable resistor.
+[11:37] And by changing the voltage between the gate and the source terminal, we can control
+[11:41] the resistance of this JFT.
+[11:44] Then the second region of operation is the saturation region.
+[11:47] So in this region, whenever this drain to source voltage or VDS is more than this pinch
+[11:53] of voltage Vp, at that time, the drain current will almost remain constant.
+[11:59] And the third region of operation is the cutoff region.
+[12:01] So whenever this VGS is greater than or equal to Vp, at that time, this drain current ID
+[12:08] will be approximately equal to 0.
+[12:10] And we can say that the device is turned off.
+[12:14] So apart from these three regions, there is one more region.
+[12:17] And it is known as the breakdown region.
+[12:19] And like a diode, this region of operation should be avoided.
+[12:24] So in this saturation region of operation, if we increase this voltage VDS beyond certain
+[12:28] limit, then there is a vertical rise in this drain current.
+[12:32] Or if we can say that, the breakdown has been occurred.
+[12:36] And now the current is limited solely by the external circuit.
+[12:41] So generally in the data sheet, the maximum value of the VDS has been defined.
+[12:46] So during the operation, the value of this VDS should be less than this rated value.
+[12:51] So this is all about the output characteristics or the drain curves of the JFT.
+[12:57] Now so far in our discussion, we have only discussed about the n channel JFT.
+[13:02] But the P channel JFT also works in the similar way.
+[13:07] So in case of this P channel JFT, the channel is made up of P type semiconductor.
+[13:12] And the two small n type of regions are fabricated near this channel.
+[13:17] And in case of a P channel JFT, now the polarity of the biasing voltage is also reversed.
+[13:24] So now in case of this P channel JFT, the drain to source voltage should be negative.
+[13:29] And the gate to source voltage should be positive.
+[13:33] But from that, in case of this P channel JFT, now the charge carriers will be holes.
+[13:40] And when we apply the voltage between the drain and the source terminal, then they will
+[13:44] start moving from the source towards the drain terminal.
+[13:48] So now if we see the ID versus VDS curve or the output characteristic of the P channel JFT,
+[13:54] then it will look quite similar to the n channel JFT.
+[13:58] But in this case, this voltage VDS is negative.
+[14:02] That means if you see the voltage is on this horizontal axis, they will be negative.
+[14:07] So now in case of this P channel JFT, as we increase the voltage VDS, then the saturation
+[14:13] value of the drain current will reduce.
+[14:16] And whenever this VDS is equal to VP or the pinch of voltage, then the drain current
+[14:21] ID will be approximately equal to 0 ampere.
+[14:25] And similar to the n channel JFT, there is also a breakdown region in case of this P
+[14:29] channel JFT.
+[14:31] That means if we go beyond the certain value of this voltage VDS, then the drain current
+[14:35] will increase drastically.
+[14:39] So this is all about the output characteristic of this P channel JFT.
+[14:42] Alright, so now let's see the electronic symbol of this n channel as well as the P channel
+[14:48] JFT.
+[14:50] So these are the symbols of the n channel and the P channel JFT.
+[14:54] And if you see these symbols, it has a three terminals, a gate, drain and the source
+[15:00] terminal.
+[15:02] And in fact, if you see these two symbols, they almost looks identical.
+[15:06] But the only difference between the two symbols is the direction of the arrow.
+[15:10] So in case of n channel JFT, the arrow is going inverse while in case of a P channel JFT,
+[15:16] the arrow is going outwards.
+[15:18] And basically, this arrow indicates the direction of the flow of current whenever the PN junction
+[15:24] is followed by a st.
+[15:26] So in case of a P channel JFT, whenever the PN junction is followed by a st, then the
+[15:31] current will flow in the outward direction.
+[15:34] While in case of a n channel JFT, whenever the PN junction is followed by a st, then
+[15:39] the current will flow in the inward direction.
+[15:43] And apart from this symbol, sometime this symbol is also used for the n channel as well
+[15:48] as the P channel JFT.
+[15:50] So I hope in this video, you understood the construction as well as the working of this
+[15:55] JFT.
+[15:56] So in the next video, we will find the relationship between the voltage VGS and the train current
+[16:01] ID.
+[16:02] And we will find the transfer characteristic of this JFT.
+[16:06] So if you have any questions or suggestions, do let me know here in the comment section
+[16:10] below.
+[16:11] If you like this video, hit the like button and subscribe both and for more such videos.

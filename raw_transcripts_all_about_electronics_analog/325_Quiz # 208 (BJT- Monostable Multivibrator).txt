@@ -1,0 +1,56 @@
+Title: Quiz # 208 (BJT- Monostable Multivibrator)
+URL: https://www.youtube.com/watch?v=e9bYSzV2_eA
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All-Abode Electronics.
+[00:17] So in this question, we have been given this circuit and we have been asked that if we
+[00:22] apply a square wave pulse of 1 kHz with a 50% duty cycle to this circuit, then what will
+[00:29] be the output? So here, basically we have been asked to find the frequency, the amplitude
+[00:34] and the duty cycle of the output waveform. So the given circuit is the monostable multivibrator
+[00:42] and if you see this portion of the circuit, then it is basically a differentiator circuit.
+[00:47] So whenever we apply this square wave pulse of 1 kHz to this differentiator circuit, then
+[00:54] it will detect the positive and the negative edge of this square wave pulse. And whenever
+[01:00] this signal is passed through this diode, then it will only pass the positive edge.
+[01:06] So basically, when we pass this 1 kHz square wave pulse through this differentiator circuit,
+[01:13] then we will get a very narrow triggering pulse at the output and this narrow triggering
+[01:18] pulse will be applied to this monostable circuit. So when this triggering signal is applied
+[01:25] to this monostable multivibrator, then momentarily the output of the monostable will go into
+[01:31] the unstable state and once again it comes back into the stable state and once again when
+[01:38] the triggering signal comes, then momentarily once again the output goes into the unstable
+[01:43] state. So the duration for which the output of this monostable goes into this unstable state
+[01:49] depends on the values of this resistor and the capacitor and to be precise, that value
+[01:56] depends on this base resistor as well as the capacitor. So let's say this time duration
+[02:03] is equal to T1. So this time duration T1 can be given as 0.693 times r times c or in this
+[02:13] case it will be equal to 0.693 times 100 kHz times 20 nm of r. Now we have already derived
+[02:24] this expression on our main channel. So for more information, you can check that video
+[02:30] on the monostable. So now if we calculate the value of this time duration, then this
+[02:36] time duration T1 will come out as 1.386 millisecond. Now here the frequency of this triggering
+[02:45] pulse is 1 kHz or we can say that the duration between the two triggering pulse is equal
+[02:51] to 1 millisecond. But here the time for which this monostable remains in the unstable
+[02:58] state is equal to 1.386 millisecond. That means whenever the trigger signal comes, then
+[03:05] for 1.386 millisecond, the output goes into the unstable state. Now if you see over
+[03:11] here, at this moment also, once again the triggering signal comes. But here at that time,
+[03:17] the output of this monostable is already in the unstable state. So this trigger signal
+[03:23] will not affect the output. So after this 1.386 millisecond, the output goes back into the
+[03:29] stable state. And then after when this third triggering signal comes, then once again the
+[03:36] output goes into the unstable state. And once again for 1.386 millisecond, it will remain
+[03:42] in the unstable state. So now if you see this output signal repeats itself after the 2
+[03:49] milliseconds. That means the time duration is equal to 2 millisecond. Or we can say that
+[03:57] the frequency f is equal to 500 hertz. And if we calculate the duty cycle, then the duty
+[04:06] cycle will be equal to the on time divided by the total time period. That means in this
+[04:14] case, it will be equal to 1.386 millisecond divided by 2 millisecond. Which is roughly equal
+[04:24] to 69.3%. Or approximately we can say that it is equal to 70%. That means the frequency
+[04:33] of the output pulse will be equal to 500 hertz, while the duty cycle of the pulse will be
+[04:38] equal to 70%. So now let us see what will be the output amplitude. Now in this unstable
+[04:46] state, this transistor Q2 will be off, while the transistor Q1 will be on. So during that
+[04:53] time, the current will flow in this direction. And here, basically we want to find the output
+[05:00] voltage at this node. So first of all, let us find the current in this loop. That means
+[05:06] the current I is equal to 12 volt minus 0.7 volt divided by 10 kilo ohm plus 10 kilo ohm
+[05:17] that is equal to 20 kilo ohm. Which is equal to 11.3 volt divided by 20 kilo ohm, which
+[05:26] is equal to 0.56 5 milliampere. That means the collector voltage Vc will be the voltage
+[05:35] drop across this 10 kilo ohm resistor plus voltage VBE. That means the output voltage Vc
+[05:42] or the V out is equal to 10 kilo ohm times 0.56 5 milliampere plus 0.7 volt. Which is equal
+[05:55] to 6.35 volt. And for the approximate value, we can say that the output voltage V out
+[06:02] is equal to 6 volt. That means for the given monostable circuit, the amplitude of the
+[06:08] output waveform will be equal to 6 volt, while the frequency is finite hertz and the duty
+[06:14] cycle is 70 percent. That means for the given equation, C is the current answer.

@@ -1,0 +1,130 @@
+Title: Op-Amp: Current to Voltage Converter (Transimpedance Amplifier) and it's applications
+URL: https://www.youtube.com/watch?v=OMnZehJNGCY
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in the previous video, we have seen that how to design the voltage to current converter
+[00:20] using the OPAM.
+[00:22] So now in this video, let us understand how to design the current to voltage converter
+[00:26] using the OPAM.
+[00:29] Now this type of current to voltage converter circuits are useful in many applications.
+[00:34] For example, let us say you have a sensor or the circuit component which gives the output
+[00:39] in terms of the current.
+[00:41] For example, let us say you have a photo diode which gives the output in terms of the current.
+[00:46] And let us say you want to log the data of this photo diode for the entire day.
+[00:51] And let us assume that for that, we are using the data acquisition system.
+[00:56] Now most of the time, this type of system used to accept the data in terms of the voltage.
+[01:01] So you need to convert this current into the voltage.
+[01:05] And for this, this I2V or the current to voltage converters are useful.
+[01:10] Now this current to voltage converter is also an example of a current control voltage
+[01:15] source.
+[01:16] Because if you observe over here, the input to the circuit is in terms of the current.
+[01:21] While the output of the circuit is in terms of the voltage.
+[01:25] So just by controlling the input current, we can control the output voltage.
+[01:29] So now let us understand how we can design this current to voltage converter.
+[01:34] Now before we see the open based current to voltage converter, first of all, let us see
+[01:39] how we can design this converter using the passive circuit components.
+[01:43] And what are the limitations of this passive converter?
+[01:46] So just by connecting the resistor across this current source, we can convert this current
+[01:50] into the voltage.
+[01:52] And the voltage that is developed across this resistor can be given by this simple expression.
+[01:57] So now suppose if we connect the load across this resistor R, then ideally the same voltage
+[02:02] should also appear across the load.
+[02:05] But whenever we connect the load to this resistor R, then some current will also flow through
+[02:10] this resistor RL.
+[02:12] And because of that, the voltage which appears across this resistor RL can be given by this
+[02:18] expression, that is the input current multiplied by the parallel combination of this R and
+[02:25] RL.
+[02:26] So as you can see over here, in case of this current to voltage converter, the voltage
+[02:31] which appears across the load will also depend upon this load resistance.
+[02:35] Now ideally in this current to voltage converter, the converted voltage should be independent
+[02:40] of this load resistance.
+[02:42] So unless the value of this load is much greater than this resistor R, the actual voltage
+[02:47] which appears across this load will be less than the voltage which is getting converted
+[02:52] by this converter.
+[02:54] So this problem can be avoided by using this active converter.
+[02:58] So here this input current is connected at the inverted terminal of this op-amp.
+[03:03] And the feedback resistor R is connected between the output terminal and the inverting input
+[03:07] terminal.
+[03:08] And here the non-imitting terminal is at a ground potential.
+[03:13] So because of the virtual ground concept, this node will be also at a zero voltage.
+[03:19] Now here we are assuming that the op-amp is an ideal op-amp.
+[03:23] So no current is flowing into the op-amp terminals.
+[03:27] So if we apply the KCL at this node A, then we can say that this input current I should
+[03:33] be equal to the current which is flowing through this resistor R. And that will be equal
+[03:38] to zero minus V out divided by this resistor R. So we can say that the output voltage V out
+[03:47] will be equal to minus this input current times the value of this resistor R.
+[03:54] So as you can see over here, this output voltage V out is proportional to the input current.
+[04:00] So in this way we can convert this input current into the output voltage.
+[04:05] Now in this circuit, even if you connect the load at the output terminal, then also the
+[04:10] output voltage will remain as it is.
+[04:12] So basically it is independent of the load resistance.
+[04:16] Now this type of current to voltage converter is also known as the trans impedance amplifier.
+[04:21] Because here the current is applied as an input and the output of this amplifier is in
+[04:26] terms of the voltage.
+[04:28] So here the ratio of this output voltage divided by this input current has a unit of impedance.
+[04:34] And that is why this type of amplifier is known as the trans impedance amplifier.
+[04:39] So now let us see some of the applications of this current to voltage converter.
+[04:43] So this type of converter is particularly useful in the photo diode circuits.
+[04:48] So as you can see over here, the photo diode is connected at the input terminal of this
+[04:53] op amp.
+[04:54] And the non-inviting terminal is at a ground potential.
+[04:58] So by applying the concept of virtual ground, we can say that this inviting terminal is also
+[05:02] at a ground potential.
+[05:04] Now depending upon the light which is falling on this photo diode, the photo current will
+[05:08] flow through this photo diode.
+[05:10] And if we apply the KCL at this node, then we can say that this photo current IPH will
+[05:16] be equal to the current IR which is flowing through this resistor R. And that will be equal
+[05:21] to V out required by this resistor R. So from this we can say that the output voltage
+[05:28] V out will be equal to this photo current IPH times this resistor R.
+[05:33] So in this way, we can convert this photo current into the output voltage.
+[05:38] So similarly this current to voltage converter can also be used along with this photo resistor.
+[05:43] So in case of this photo resistor, the value of the resistance will change according to
+[05:47] the light that is falling on it.
+[05:49] So apart from these applications, this current to voltage converter is also used in digital
+[05:54] to analog converters.
+[05:56] So here we have a 4 bit of digital to analog converter.
+[06:00] And to this converter, the 4 bits of digital data has been applied.
+[06:05] So according to the applied digital bits, we will get the analog output voltage at the
+[06:09] output terminal.
+[06:11] Now in this converter circuit, the logical one is treated as a 5 volt and the logical
+[06:16] 0 is treated as a 0 volt.
+[06:18] And here this B3 is the most significant bit of the applied input and the D0 is the least
+[06:24] significant bit of the applied input.
+[06:26] So let us say these 4 bits are applied to this DSE.
+[06:31] So here this D0 is the logical one.
+[06:34] So here it is connected to the 5 volt and accordingly, some current R will flow through this resistor
+[06:41] R.
+[06:42] And that current I will be equal to 5 volt divided by this 10 kilo ohm resistor that is equal
+[06:49] to 0.5 milliampere current.
+[06:52] So because of this D0 bit, 0.5 milliampere of current will flow through this resistor
+[06:57] R.
+[06:58] Now similarly, if we consider this D1 bit, it is a logical 0.
+[07:02] So it is connected to the ground.
+[07:05] So no current will flow through this 5 kilo ohm resistor or we can say that the current
+[07:09] I2 will be equal to 0 milliampere.
+[07:13] Similarly, if we consider this D2 bit, then it is also connected to the ground potential.
+[07:19] So current I3 will be also equal to 0 milliampere.
+[07:24] And now if we consider this most significant bit that is D3, it represents the logical
+[07:29] one.
+[07:30] So it is connected to the 5 volt and because of that the current I4 will be equal to 5
+[07:36] volt divided by the 1.25 kilo ohm.
+[07:40] So that will be equal to 4 milliampere.
+[07:43] So now the summation of these individual 4 currents will flow through this resistor
+[07:48] RF because here we are assuming that the open is an ideal open.
+[07:52] So no current is flowing into the open terminals.
+[07:55] So whenever we apply the 1001 as an input, then the total current IT will be equal to
+[08:02] 0.5 milliampere plus 4 milliampere that is equal to 4.5 milliampere.
+[08:10] Now this current will flow through this resistor RF and because of that we will get the
+[08:16] output voltage V out as minus IT times this feedback resistor RF.
+[08:22] So output voltage V out will be equal to minus 4.5 milliampere times this 1 kilo resistor
+[08:30] and that is equal to minus 4.5 volt.
+[08:34] So this will be the output voltage whenever we apply this 1001 as the input sequence.
+[08:40] So in this way by using this current to voltage converter circuit, we can convert the
+[08:45] digital data into the analog output voltage and depending upon the applied input sequence,
+[08:50] the output of this little to analog converter will change.
+[08:54] So these are the some of the applications of current to voltage converter.
+[08:58] So I hope in this video you understood how we can design this current to voltage converter
+[09:02] using the open and what are the different applications of this current to voltage converter.
+[09:08] So if you have any question or suggestion, do let me know in the comments section below.
+[09:12] If you like this video, hit the like button and subscribe to the channel for more such videos.

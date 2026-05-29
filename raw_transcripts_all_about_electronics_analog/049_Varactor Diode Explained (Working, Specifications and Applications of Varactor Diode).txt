@@ -1,0 +1,144 @@
+Title: Varactor Diode Explained (Working, Specifications and Applications of Varactor Diode)
+URL: https://www.youtube.com/watch?v=OnVNOGL1nOc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:16] So in this video, we will learn about the Character Diodes.
+[00:20] The Character Diodes are a one type of PN junction Diodes whose internal capacitance can be
+[00:26] changed by applying the Reverse bias voltage.
+[00:29] So these Diodes are also known as the Vericap Diodes and this term Vericap refers to the
+[00:35] Variable Capacitance.
+[00:37] Similarly, the term Vericap refers to the Variable reactance.
+[00:42] So in this diode, as we change the Applied Reverse bias voltage, its capacitance or in
+[00:47] other words its reactance will change.
+[00:51] And this property of the Vericap dieboard is useful in the many applications.
+[00:55] Particularly, when we want to change the capacitance in the circuit using the actual
+[01:00] Applied Voltage, then these Vericap Diodes are very useful.
+[01:04] So because of these properties, they are used in the RF communication system.
+[01:09] And this is the symbol of the Vericap diode.
+[01:13] So this symbol indicates that it is a PN junction diode, but unlike the normal rectified diode,
+[01:19] it is intended to be used as a capacitor.
+[01:22] So to understand the working of this Vericap diode, first of all let us see how we can change
+[01:27] the capacitance of the Parallel Plate Capacitor.
+[01:31] So for a Parallel Plate Capacitor, the capacitance can be given as epsilon A divided by D, where
+[01:38] A is the area of the plate, while epsilon is the permittivity of the dielectric material.
+[01:44] And here, this D is the distance between the two plates or the thickness of this dielectric
+[01:49] material.
+[01:51] So for a fixed value of epsilon and A, if we change the distance between the two plates,
+[01:56] or in other words, if we change the thickness of this dielectric medium, then the capacitance
+[02:01] of the capacitor will change.
+[02:03] So with the same concept, the capacitance of the Vericap diode is varied.
+[02:09] Now as I said, this Vericap diode is also one kind of PN junction diode.
+[02:14] Now if you have followed the previous videos on the diode, then you must be aware that in
+[02:19] the PN junction diode, this depletion region gets formed at the junction, where this P type
+[02:25] and the N type material meet with each other.
+[02:28] So this P type material contains the excessive amounts of holes, while this N type material
+[02:34] contains the electrons.
+[02:36] On the other end, if you see this depletion region, then it is a depleted of the charge
+[02:41] carriers.
+[02:42] So in a way, this PN junction diode behaves like a capacitor.
+[02:47] That means here, this P type and the N type region acts like a conducting plates, while
+[02:53] this depletion region acts like a dielectric medium.
+[02:57] And we know that in this PN junction diode, as we change the applied reverse bias voltage,
+[03:03] then the width of the depletion region changes.
+[03:06] That means as we increase the applied reverse bias voltage, then the width of the depletion
+[03:10] region will also increase.
+[03:12] And as the depletion region width increases, then from this equation, we can say that the
+[03:17] value of the capacitance will reduce.
+[03:21] That means we can say that this capacitance is inversely proportional to the applied
+[03:26] reverse bias voltage.
+[03:28] And if we see the exact relation, then it can be given by the following expression, where
+[03:33] V is the applied reverse bias voltage, and VF is the fault voltage or the built-in voltage
+[03:39] of this diode.
+[03:41] And here, this C0 represents the capacitance of the diode, whenever it is unbiased.
+[03:47] Now in this equation, this value of the N depends on the doping profile of the varicred
+[03:52] diode.
+[03:53] So based on the doping profile, there are two types of varicred diodes.
+[03:57] The first one is the abrupt varicred diode.
+[04:01] And this is the doping profile of the abrupt varicred diode.
+[04:05] So as you can see, in this P type and the N type region, the doping concentration
+[04:10] is uniform.
+[04:11] But at the junction, there is an abrupt change in the doping profile.
+[04:16] So for this type of junction, the value of N is equal to 1 by 2.
+[04:21] So usually, this normal PN junction diodes have this abrupt junction.
+[04:26] On the other end, this is the profile of the hyper abrupt varicred diode.
+[04:31] So as you can see, on both sides, the doping concentration reduces with the distance.
+[04:37] And for this type of doping profile, the value of N is equal to 2.
+[04:42] So from this expression, we can say that for this hyper abrupt junction, as the value
+[04:48] of this reverse bias voltage increases, then there will be a more change in the capacitance.
+[04:54] So in general, for the normal PN junction diode, if we see the curve of the capacitance
+[04:59] versus the applied reverse bias voltage, then it will look like this.
+[05:04] That means in general, any diode can be used as a variable capacitor.
+[05:09] But the varicred diodes are optimized and the manufactured in such a way that they
+[05:13] provide a more change in the capacitance with the reverse bias voltage.
+[05:18] So now, let us see the equivalent circuit of this varicred diode.
+[05:23] So if we apply the reverse bias voltage, then in that condition, the equivalent circuit
+[05:27] of the varicred diode will look like this.
+[05:30] So here, this RR is the reverse resistance of the diode and this RSS is the Omic resistance.
+[05:37] Now typically, the value of this reverse resistance is in mega ohms, because whenever we reverse
+[05:42] bias this diode, then only a leakage current or the reverse saturation current will flow
+[05:47] through the diode.
+[05:49] And that current can be represented by this reverse resistance.
+[05:53] So for the varicred diode, to minimize this leakage current or the reverse saturation
+[05:58] current, this reverse resistance should be as high as possible.
+[06:02] So this is the equivalent circuit of the varicred diode at the low frequencies.
+[06:07] But whenever it is operated at the high frequencies, then we also need to consider the parasitic
+[06:12] capacitance and the inductance.
+[06:14] So this is the equivalent circuit of the varicred diode at the high frequencies.
+[06:19] All right.
+[06:20] So now let us see some of the important specifications of the varicred diode, which we need to consider
+[06:25] while selecting the diode for the specific applications.
+[06:28] And the first and the four most important specifications are the capacitance range and
+[06:33] the capacitor ratio.
+[06:36] So if you see the data sheet of any varicred diode, then they used to specify the value
+[06:40] of the capacitance at the different voltages.
+[06:43] Another example as shown in the data sheet has the reverse voltage changes from 1.2 volt
+[06:49] to the 8 volt, then the value of the capacitance changes from around 450 picofaraday to 25 picofaraday.
+[06:56] So basically this parameter gives an idea.
+[06:59] In what range we can change the value of the capacitance for the given diode.
+[07:04] Then the second important specification is the capacitance ratio.
+[07:09] And this is commonly expressed as CX divided by CY.
+[07:14] Where X and Y are the two ends of the voltage range over which we are measuring the capacitance.
+[07:21] For example over here the value of X is equal to 1.2 while the value of Y is equal to 8
+[07:27] volt.
+[07:28] And it defines as we change the voltage, then how much change will occur in the capacitance
+[07:33] value.
+[07:35] That means if this ratio is more, then it defines that as we change the voltage, then there
+[07:40] will be a more change in the capacitance value.
+[07:43] So for the hyper abrupt varicred diode, it is possible to achieve the ratios which is
+[07:47] more than 10.
+[07:49] While for the abrupt diodes, usually it is used to be in the range of 2 to 3.
+[07:54] So for a better to inability of the circuit, the large capacitance ratios are desirable.
+[08:00] Then another specification is the leakage current or the reverse current.
+[08:04] So as I mentioned earlier, for the varicred diode, the reverse current or the leakage current
+[08:09] should be as minimum as possible.
+[08:12] Similarly the another important specification is the breakdown voltage.
+[08:17] Because these varicred diodes are operated in the reverse bias condition.
+[08:21] So while operating these diodes, we need to make sure that the applied reverse bias voltage
+[08:26] does not exceed this breakdown voltage.
+[08:29] Because if it exceeds, then it can damage the diode.
+[08:33] And another very important parameter is the Q factor.
+[08:37] So whenever these varicred diodes are used in the tuning circuits or in the RF filters,
+[08:42] then for the sharp response, the diodes which has a very high Q factor should be selected.
+[08:48] That means for the good selectivity, the value of this Q factor should be as high as possible.
+[08:53] So these are the some performance parameters of the varicred diode.
+[08:57] So in the end, now let us see some of the applications of the varicred diode.
+[09:02] So as I mentioned earlier, the varicred diodes can be used in the tuning circuits.
+[09:08] For example, as shown in the figure, here the varicred diode is employed in the tuning
+[09:13] circuit.
+[09:14] So for the given tuning circuit, the resonant frequency FR is equal to 1 divided by 2 pi times
+[09:21] under root LC dash, where C dash is the summation of this CT and the CC.
+[09:28] So here, this CT is the capacitance of this varicred diode, while the CC is the coupling
+[09:34] capacitor.
+[09:36] So as you can see, as we change the applied reverse bias voltage, then we can change the
+[09:41] value of this capacitor.
+[09:43] So in this way, we can tune the circuit to the particular frequency.
+[09:48] So these varicred diodes are used in the FM receivers as well as in the communication
+[09:53] equipments where the circuit needs to be tuned electronically.
+[09:58] Apart from that, they are used in the RF filters as well as in the voltage control oscillators.
+[10:04] So these are the some of the applications of the varicred diode.
+[10:08] So in summary, I hope you understood what is varicred diode, how it works, and what are
+[10:13] the important specifications and the applications of the varicred diode.
+[10:18] So if you have any question or suggestion, do let me know here in the comment section below.
+[10:23] If you like this video, hit the like button and subscribe to the channel for more such
+[10:26] videos.

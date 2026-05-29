@@ -1,0 +1,59 @@
+Title: Quiz # 193 (Astable Multivibrator using Op-amp)
+URL: https://www.youtube.com/watch?v=ihmKPfWFJT8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:17] So in this question, we have been given that for the ideal op-amp, the value of the saturation
+[00:22] voltage is plus minus 10 volt.
+[00:25] And we have been asked to find the value of the output voltage in the steady state condition.
+[00:31] Now if you observe the circuit, then in the circuit, the A stable multivariator is
+[00:35] designed using the op-amp.
+[00:39] And here through these two resistors, the positive feedback is pro-array to the op-amp.
+[00:46] So here let's say the feedback voltage is equal to VF.
+[00:51] And this voltage VF can be given as R2 divided by R1 plus R2 times V out.
+[01:01] Because here we are assuming that no current is going into the op-amp terminals.
+[01:07] So this voltage VF can be given as 2 kilo ohm divided by 2 kilo ohm plus 2 kilo ohm times
+[01:15] V out.
+[01:17] That is equal to 0.5 times V out.
+[01:23] So here this term is known as the feedback fraction.
+[01:27] That means for the given circuit, the value of beta or the feedback fraction is equal to
+[01:33] 0.5.
+[01:36] And here we have been given that the saturation voltage for the op-amp is equal to plus
+[01:42] minus 10 volt.
+[01:45] That means we can say that this feedback voltage VF is equal to plus minus 0.5 times V set.
+[01:53] So initially let's say the output voltage is equal to 10 volt.
+[01:59] And due to that, this feedback voltage VF will be equal to 5 volt.
+[02:05] And here we are also assuming that initially the capacitor is unjust.
+[02:09] So at that time this capacitor starts charging towards the 10 volt through this path.
+[02:15] And once it reaches the 5 volt, then after that the output of the op-amp will switch from
+[02:20] the plus 10 volt to the minus 10 volt.
+[02:23] Because at that time the voltage at this node that is the V minus will become greater than
+[02:29] the V plus.
+[02:31] And due to that, now the output of the op-amp will switch from the plus 10 volt to the
+[02:36] minus 10 volt.
+[02:38] So due to that, now the feedback voltage VF will become minus 5 volt.
+[02:43] And now this capacitor starts charging towards the minus 10 volt.
+[02:48] And once again whenever it goes below this minus 5 volt, then the output of the op-amp
+[02:54] once again which is from minus 10 volt to the plus 10 volt.
+[02:58] So in this way, if you see the output of the op-amp, then it will switch between the
+[03:03] positive and the negative saturation voltage.
+[03:06] That means in this case, it will switch between this plus 10 and the minus 10 volt.
+[03:13] And here the capacitor is charging and is charging between the 5 volt and the minus 5
+[03:19] volt.
+[03:22] That means if you see the output waveform, then it will be equal to square wave.
+[03:27] And here the time period T can be given as 2 RC times natural log of 1 plus beta divided
+[03:36] by 1 minus beta.
+[03:39] And we have already derived this expression on our main channel on the separate video.
+[03:44] So I will provide the link of that video in the description.
+[03:48] But here, now let us find the value of this time period.
+[03:52] So this time period T can be given as 2 RC times natural log of 1 plus beta divided
+[03:59] by 1 minus beta.
+[04:01] Now here as you calculated, the value of beta is equal to 0.5.
+[04:07] While the value of R is equal to 1 kilo ohm and the value of C is equal to 0.25 micro
+[04:12] Faraday.
+[04:14] That means the time period T is equal to 2 times 1 kilo ohm times 0.25 micro Faraday times
+[04:24] natural log of 1 plus 0.5 divided by 1 minus 0.5.
+[04:31] And if you calculate the value, then this time period T will come out as 0.55 millisecond.
+[04:39] That means if you see the output waveform, then it will be equal to square wave and the
+[04:44] time period of that wave form is equal to 0.55 millisecond.
+[04:49] That means we can say that for the given question is the correct answer.

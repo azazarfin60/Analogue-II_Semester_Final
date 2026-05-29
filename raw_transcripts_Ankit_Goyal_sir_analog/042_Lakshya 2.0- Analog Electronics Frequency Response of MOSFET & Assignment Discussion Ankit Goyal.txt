@@ -1,0 +1,2465 @@
+Title: Lakshya 2.0- Analog Electronics | Frequency Response of MOSFET & Assignment Discussion | Ankit Goyal
+URL: https://www.youtube.com/watch?v=UT752L38k0E
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you kids and we are live, we are live in
+[00:08] Creatrix YouTube channel with Lakshya Badge 2.0 Analog Electronics.
+[00:13] So, we couldn't get class yesterday but today we are going to continue the Mosfet.
+[00:19] So, everyone will join this session quickly.
+[00:23] Everyone will share this session and will tell everyone that we have come live.
+[00:29] Come on everyone, tell me quickly how much we have covered in Mosfet.
+[00:35] Is everyone clear? Is Mosfet Amplifier, Mosfet Bicing clear?
+[00:41] And today I am going to give you the frequency response of Mosfet and I will discuss some
+[00:47] Assignment of the back as it is a small topic so we will have time to discuss the assignment.
+[00:53] Let's start today's session.
+[00:57] So, today we will talk about frequency response of Mosfet.
+[01:01] As you talked about frequency response in BJT, you talked about low frequency response,
+[01:07] you talked about high frequency response.
+[01:11] We will also talk about low and high frequency response in Mosfet.
+[01:16] You saw one thing in BJT that when we were talking about low frequency response,
+[01:21] we were talking about the coupling and the bypass capacitor.
+[01:25] And in high frequency response, we were talking about the internal capacitances.
+[01:31] We will do the same thing here.
+[01:33] In low frequency response, we will talk about coupling and bypass capacitor.
+[01:39] And in high frequency response, we will talk about the internal capacitances.
+[01:45] Now everyone understands coupling and bypass capacitor.
+[01:49] There is a coupling capacitor on the input that connects the input with the terminal.
+[01:54] There is a coupling capacitor on the output that connects the output with the terminal.
+[01:59] There is a bypass capacitor across the source resistance.
+[02:03] But here it is necessary to understand that what are the capacitances that are internal to the Mosfet.
+[02:11] So we have to talk about the internal capacitances of the Mosfet.
+[02:16] Now the first thing I will tell you here is that when we talk about low frequency response,
+[02:24] when we talk about low frequency response,
+[02:47] C, C1, C, C2 and Cs.
+[02:57] Source Capacitance
+[02:59] When we talk about High Frequency Response
+[03:11] Now we will talk about
+[03:15] Internal Capacitance
+[03:18] Let's talk about internal capacitance
+[03:22] Parasitic Capacitance
+[03:32] Load Capacitance
+[03:34] Load Capacitance
+[03:43] Here we have 3 Terminals
+[03:46] Gate, Source, Drain
+[03:49] The Capacitances between them
+[03:52] They will be called as
+[03:55] Internal Capacitance
+[03:58] Internal Capacitance
+[04:01] Source Terminal
+[04:04] This is your Drain Terminal
+[04:07] And this is your Gate Terminal
+[04:12] So the first Capacitance
+[04:15] We say that there should be a Capacitance between Gate and Source
+[04:19] That is C, G, S
+[04:21] What is this?
+[04:22] C, G, S
+[04:24] There should be a Capacitance between Drain and Source
+[04:29] That is C, D, S
+[04:31] C, D, S
+[04:33] There should be a Capacitance between Gate and Drain
+[04:36] That is C, G, D
+[04:39] C, G, D
+[04:41] So this is C, G, S or C, G, D
+[04:45] C, G, S and C, G, D
+[04:49] Represent
+[04:51] Interaction of Gate
+[04:55] Interaction
+[04:57] of Gate Terminal
+[05:04] With
+[05:07] Drain and Source
+[05:11] How is the Gate Terminal
+[05:13] Interaction with Drain and Source
+[05:16] These are the Capacitances
+[05:18] C, G, S and C, G, D
+[05:21] Yes, they came like JFET
+[05:23] They came like JFET
+[05:25] And what is the reason for this?
+[05:27] It is due to
+[05:30] Inversion
+[05:33] Near Source and Drain
+[05:36] Inversion comes to Gate
+[05:38] Due to the electric field of Gate
+[05:41] Because of Inversion
+[05:44] Here C, G, S and C, G, D
+[05:46] It becomes
+[05:48] C, G, S and C, G, D
+[05:50] And one becomes
+[05:52] Between C, D, S, Drain and Source
+[05:54] It becomes C, D, S
+[05:56] Now do you know
+[05:57] There is a Paracitic Capacitance
+[05:59] Why it becomes?
+[06:00] Look at this region
+[06:02] If you see here
+[06:04] The Oxide of Gate
+[06:06] Overlaps with Source and Drain
+[06:10] The Oxide of Gate
+[06:12] Overlaps with Source and Drain
+[06:14] Overlaps with Source and Drain
+[06:16] Because of this
+[06:18] There are Paracitic Capacitances
+[06:20] Between Gate and Source
+[06:22] And Gate and Drain
+[06:24] So what are we saying?
+[06:26] Due to overlap
+[06:29] Due to overlap
+[06:33] Of Gate Oxide
+[06:37] Of Gate Oxide
+[06:40] With Source and Drain
+[06:50] There are
+[06:54] Paracitic Capacitances
+[06:57] Because
+[07:01] Two Metal Terminals
+[07:03] Insulator
+[07:05] Capacitance is to be made
+[07:09] Do you understand me?
+[07:11] Capacitance will be yours
+[07:13] If you have
+[07:15] Two Metal Terminals
+[07:17] Like Gate and Source
+[07:18] Like Gate and Drain
+[07:20] Oxide is an Insulator
+[07:22] So there will always be
+[07:24] Capacitance Formation
+[07:26] But do you know
+[07:28] The Paracitic Capacitance
+[07:30] Include them
+[07:32] In CGS and CGD
+[07:34] Okay?
+[07:36] Where do you include them?
+[07:39] Include with
+[07:42] CGS and CGD
+[07:46] Okay?
+[07:48] Till here
+[07:50] Okay?
+[07:52] Now we have understood
+[07:54] What are the internal Capacitances
+[07:56] Tell me
+[07:57] Is this model clear to everyone?
+[07:59] Is this model clear to everyone?
+[08:01] Say it quickly
+[08:03] Is this model clear to everyone?
+[08:05] The model I have made
+[08:07] Say it
+[08:09] Say it quickly
+[08:12] Is this model clear or not?
+[08:16] Is it clear?
+[08:18] What we have done is
+[08:20] We have shown three Capacitances
+[08:22] Extra
+[08:24] CGS, CGD and CDS
+[08:26] Okay?
+[08:28] And what happens?
+[08:30] Look at the low frequency
+[08:32] These Capacitors
+[08:34] At low frequency
+[08:36] These internal Capacitances
+[08:38] Are very small
+[08:40] In Pico Farad
+[08:42] XC internal
+[08:44] Is very high because the Capacitance
+[08:46] Is very small
+[08:48] Open circuit
+[08:52] All
+[08:54] Internal
+[08:56] Capacitances
+[09:00] Okay?
+[09:02] Open circuit all internal
+[09:04] Capacitances
+[09:06] Is it clear?
+[09:08] Now look
+[09:10] First of all we will talk about
+[09:12] High frequency response
+[09:14] But before that
+[09:16] I want to derive
+[09:18] Unity Gain Bandwidth
+[09:20] What do I want to derive?
+[09:24] Unity
+[09:26] Gain
+[09:30] Bandwidth
+[09:32] Okay?
+[09:34] You know that in BJT
+[09:36] There was a lot of work in high frequency response
+[09:38] Unity Gain Bandwidth
+[09:40] Now look
+[09:42] When you take high frequency
+[09:44] Your coupling Capacitors
+[09:46] And bypass Capacitors
+[09:48] You make them short
+[09:50] Circuits
+[09:52] So what happens?
+[09:54] For
+[09:56] High frequency
+[10:04] Short circuit
+[10:10] Coupling
+[10:12] And bypass
+[10:14] Capacitors
+[10:16] You
+[10:18] Circuits them
+[10:20] I will do one thing
+[10:22] I will make you a Mosfet
+[10:24] Then we will make a Model
+[10:26] Okay?
+[10:34] Look, there was an RS
+[10:36] In its parallel
+[10:38] The bypass capacitor came
+[10:42] Or
+[10:44] Here we show the voltage
+[10:46] Divider bias
+[11:12] Okay?
+[11:26] Okay?
+[11:28] So what I am telling you
+[11:30] Your C1, C2
+[11:32] Cs
+[11:34] You make them short circuit
+[11:36] Okay?
+[11:38] You make them short circuit
+[11:40] How
+[11:42] Capacitance is formed between
+[11:44] Source and drain
+[11:46] Because they are far apart
+[11:48] They are made
+[11:50] Because of Depletion layer
+[11:52] What happens?
+[11:54] When your Source and Drain
+[11:56] Interact with Substrate
+[11:58] Depletion layer is formed
+[12:00] So that's why we show a Capacitance
+[12:02] Between Source and Drain
+[12:04] You think like
+[12:06] They are short circuited
+[12:08] So Depletion layer is formed
+[12:10] Because of PN Junction
+[12:12] So that's why you get a Capacitance
+[12:14] Cds
+[12:16] And Source and Drain are not far
+[12:18] We think they are in diagrams
+[12:20] Distance between Source and Drain
+[12:22] It happens in nanometer
+[12:24] Okay?
+[12:26] This Mosfet
+[12:28] This is Depletion
+[12:30] But we assume enhancement
+[12:32] Where did we make Depletion
+[12:34] Where did we make Depletion Mosfet
+[12:36] Where is enhancement
+[12:38] Tell me
+[12:40] We didn't make Depletion
+[12:42] We won't study Depletion
+[12:44] We will study Enhancement Mosfet
+[12:46] Inside the whole Analog
+[12:48] Now see when you make this model
+[12:50] So
+[12:52] You will connect to the gate
+[12:54] VI
+[12:56] Okay?
+[12:58] Now
+[13:00] From Gate to Ground
+[13:02] This R1 Parallel R2
+[13:04] Will come
+[13:06] I will write this as RG
+[13:08] Now don't show
+[13:10] Open Circuits between Gate and Source
+[13:12] Showing CGS
+[13:14] Okay?
+[13:16] You will show a Capacitance
+[13:18] Of High Frequency Response
+[13:22] CGS
+[13:24] It's Voltage is VGS
+[13:26] You will show current source
+[13:28] Between Drain and Source
+[13:32] This is Drain
+[13:34] This is Drain
+[13:36] This is Drain
+[13:38] Small RD resistance will come here
+[13:40] Small RD resistance will come here
+[13:42] CGS will come in parallel
+[13:44] Capacitance
+[13:46] And then
+[13:48] RD will come here
+[13:50] Okay?
+[13:52] Okay?
+[14:02] Okay?
+[14:08] Tell me
+[14:10] Do all of you agree
+[14:12] With this model
+[14:14] This is
+[14:16] Input Voltage
+[14:18] Okay?
+[14:20] This is your Input Voltage
+[14:22] Okay?
+[14:24] See the symbol
+[14:26] It's not like Depletion Mosfet
+[14:28] Okay?
+[14:30] Don't worry
+[14:32] But you can take it as Enhancement
+[14:34] It's clear now
+[14:36] Now what I will do
+[14:38] I will talk about Short-Circuit Current Gain
+[14:40] Who I will talk about
+[14:42] Short-Circuit Current Gain
+[14:44] Okay?
+[14:46] If I want Short-Circuit Current Gain
+[15:00] Okay?
+[15:02] Short-Circuit Current Gain
+[15:04] You want it
+[15:06] Now what to do
+[15:08] Short-Circuit Current Gain
+[15:10] What will we do?
+[15:12] Short the Output
+[15:14] Okay?
+[15:16] Yes, coupling and bypass
+[15:18] Passenger are in Micro Farad
+[15:20] Internal
+[15:22] Passenger are in Pico Farad
+[15:24] Now when you short-circuit
+[15:26] Output
+[15:28] Here is your
+[15:44] See this source is Grounded
+[15:48] Here is your current source
+[15:52] Here all the resistances
+[15:54] And the Capacitance
+[15:56] That was Short-Circuit
+[16:00] When you short-circuit
+[16:02] Drain
+[16:04] All the resistance and Capacitance
+[16:06] Are Short-Circuit
+[16:20] Current coming from here
+[16:22] Is IN
+[16:24] IN
+[16:26] And current coming from here
+[16:28] That will be I-0
+[16:30] How much will it go?
+[16:32] I-0
+[16:34] It is clear
+[16:36] It is clear till here
+[16:38] I-0
+[16:40] And how much voltage is on this
+[16:42] It is VGS
+[16:46] It is VGS
+[16:48] Okay?
+[16:50] Now what to do?
+[16:52] See this Cgd
+[16:54] This Cgd is coming
+[16:56] In the parallel of CGS
+[16:58] This Cgd
+[17:00] Is becoming in your parallel of CGS
+[17:02] Is becoming
+[17:04] Tell me, do you understand this much?
+[17:06] Cgd is coming
+[17:08] In the parallel of CGS
+[17:10] Now here you tell me
+[17:12] Take I-0 by IN in this circuit
+[17:14] Take I-0 by IN
+[17:16] Take it out
+[17:22] See how much current is going on here
+[17:24] See how much current is going on here
+[17:26] VGS voltage is coming
+[17:30] J-omega
+[17:32] Cgd
+[17:34] VGS
+[17:36] This will go
+[17:38] J-omega, Cgd, VGS
+[17:40] So I-0 is
+[17:44] J-omega, Cgd
+[17:48] VGS
+[17:50] Minus GM
+[17:54] VGS
+[17:56] Okay?
+[17:58] So I-0 is
+[18:10] This is coming
+[18:12] And how much is IN
+[18:16] Look at IN
+[18:18] RG and this too
+[18:20] So how much is IN
+[18:22] Here
+[18:26] Take out I-1 first
+[18:30] I-1
+[18:32] I-1 is
+[18:34] J-omega
+[18:38] CGS
+[18:40] VGS
+[18:42] Okay?
+[18:44] Now IN
+[18:46] This is your I-1
+[18:48] Take out I-1
+[18:54] Okay?
+[18:56] Plus
+[19:06] Now you know
+[19:08] RG term is often ignored
+[19:10] RG is very high
+[19:12] You know
+[19:14] Because of this
+[19:16] Approximately
+[19:18] We ignore this term
+[19:20] Because
+[19:22] This goes into micro
+[19:24] This term goes into your micro
+[19:26] You understand
+[19:28] My
+[19:30] This term goes into your micro
+[19:32] So let's ignore it
+[19:34] So now I-0 by IN
+[19:36] That is
+[19:38] Short circuit current gain
+[19:40] How much is it
+[19:42] J-omega
+[19:44] CGD
+[19:48] Minus GM
+[19:50] Divided by
+[19:58] This is coming
+[20:00] Did you understand this much?
+[20:02] Now
+[20:04] Approximately
+[20:06] Approximately
+[20:08] Approximately
+[20:10] Short circuit
+[20:12] Current gain
+[20:16] Which will come
+[20:22] Minus GM
+[20:28] This will come
+[20:30] Okay?
+[20:32] Approximately
+[20:34] Now if I tell you
+[20:36] Unity gain frequency
+[20:38] There is a frequency where
+[20:40] The value of this gain
+[20:42] becomes 1
+[20:44] Right?
+[20:46] So the gain can be complex
+[20:48] We will see its magnitude
+[20:50] What we are saying
+[20:52] At unity gain frequency
+[20:54] Think of this
+[20:56] High frequency response
+[20:58] Low frequency response
+[21:00] Your filters came
+[21:02] Didn't J come in that?
+[21:04] Tell me
+[21:06] High frequency response
+[21:08] Comes like a high pass filter
+[21:10] J comes in that too
+[21:12] High frequency response
+[21:14] Comes like a low pass filter
+[21:16] J comes in that too
+[21:18] At unity gain frequency
+[21:20] I will say
+[21:22] Mod of gain
+[21:24] Becomes
+[21:26] Unity
+[21:28] So that is
+[21:30] GM
+[21:32] By
+[21:34] Unity
+[21:36] Is 1
+[21:38] Let's see
+[21:40] Unity gain frequency formula
+[21:42] Remember this formula
+[21:44] Was very common in BJT
+[21:46] In BJT
+[21:48] I wrote alpha cutoff frequency
+[21:50] Beta cutoff frequency
+[21:52] And unity gain frequency
+[21:56] And remember one thing
+[21:58] The formula that came there
+[22:00] It came GM by 2 pi
+[22:02] C mu plus C pi
+[22:04] GM by 2 pi
+[22:06] C mu plus C pi
+[22:08] Here C pi
+[22:10] Is your son CGS
+[22:12] And C mu is
+[22:14] That is CGD
+[22:16] C pi
+[22:18] Is CGS
+[22:20] And C mu is CGD
+[22:22] In BJT
+[22:26] The formula of our unity gain frequency
+[22:28] Was this
+[22:32] C pi
+[22:38] Now this
+[22:40] C pi
+[22:42] And CGS
+[22:48] This
+[22:50] These two things are equal
+[22:52] Okay
+[22:54] In BJT
+[22:56] C pi C mu was CGS and CGD
+[22:58] So if you will
+[23:00] Keep this formula
+[23:02] You will never forget
+[23:04] Unity gain frequency
+[23:06] If you correlate it with BJT
+[23:08] Now the thing comes
+[23:10] Of high frequency response
+[23:12] Now what are we going to talk about
+[23:14] Of high frequency response
+[23:16] As I told
+[23:18] On high frequency response
+[23:20] We have to consider
+[23:22] Internal capacitance
+[23:24] And parasitic capacitance
+[23:26] Okay
+[23:28] This unity gain bandwidth
+[23:30] Everyone understood
+[23:40] And you remember
+[23:42] What was the objective of frequency response
+[23:44] What was the objective of frequency response
+[23:46] Why did we have to read
+[23:48] To determine the cutoff frequency
+[23:50] Correct
+[23:52] We had to take out the cutoff frequency
+[23:54] Which cutoff frequency
+[23:56] Lower or
+[23:58] Upper
+[24:00] We forgot
+[24:02] We had to derive two cutoff frequencies
+[24:04] One lower cutoff frequency
+[24:06] And one upper cutoff frequency
+[24:16] This happens
+[24:20] What used to happen here
+[24:22] We used to take out the mid band gain
+[24:26] This was the maximum gain
+[24:40] This is A max by
+[24:44] Route 2
+[24:56] This is FL
+[25:00] Lower cutoff frequency
+[25:02] FH
+[25:04] And this is your bandwidth
+[25:08] This lower cutoff frequency region
+[25:12] This is your low frequency region
+[25:14] This is high frequency
+[25:18] And what do you know
+[25:20] Mid band
+[25:22] What do you know
+[25:24] In which you know
+[25:26] Your gain occurs on low frequency
+[25:30] Due to coupling and bypass
+[25:32] Capacitor
+[25:34] And your gain occurs on high frequency
+[25:36] Due to internal capacitance
+[25:38] Okay
+[25:40] You know on LF
+[25:42] CC1
+[25:44] CC2
+[25:46] And Cs are considered
+[25:48] And on high frequency
+[25:50] CGS
+[25:52] And Cg
+[25:54] Are considered
+[25:56] Okay
+[25:58] See
+[26:00] For high frequency response
+[26:02] I made a model
+[26:04] CGS
+[26:06] Cgd
+[26:08] Cds
+[26:10] This is R0
+[26:12] Output resistance 1 by lambda id
+[26:14] You know
+[26:16] R0 is 1 by
+[26:18] Lambda id
+[26:20] Okay
+[26:22] After this
+[26:24] Your GM
+[26:26] 2 root KID
+[26:30] Okay
+[26:32] This RL is the resistance
+[26:34] After coupling capacitor
+[26:36] Like input resistance
+[26:38] Supply
+[26:40] This is the input coupling capacitor
+[26:42] It is the first resistance
+[26:44] Which is connected with the source
+[26:46] And RL is the output
+[26:48] After coupling capacitor
+[26:50] That is the load resistance
+[26:52] It is connected
+[26:54] After
+[26:56] CC2
+[27:00] And this is connected before
+[27:02] CC1
+[27:04] Understood
+[27:06] Now
+[27:08] If you look carefully
+[27:10] Cgd
+[27:12] Is connected between input and output
+[27:14] Right
+[27:16] Cgd is actually connected
+[27:18] Between the
+[27:20] Input and the output
+[27:22] What we have to do
+[27:24] We have to
+[27:26] Resolve this Cgd
+[27:28] Using the millers effect
+[27:30] Using the millers theorem
+[27:32] Or the millers effect
+[27:34] This Cgd must be resolved
+[27:36] Into input and the
+[27:38] Output capacitance
+[27:40] Okay
+[27:46] So we are saying by
+[27:48] Millers theorem
+[27:54] We must
+[27:56] Resolve
+[28:04] Cgd
+[28:06] Towards input and output
+[28:12] Okay
+[28:14] Resolve
+[28:16] What we need is
+[28:18] Gain
+[28:20] Very good
+[28:22] First we have to
+[28:24] Gain without any
+[28:26] Capacitors
+[28:28] First we have to
+[28:30] Gain without any
+[28:32] Capacitors
+[28:34] Okay
+[28:42] Now for that
+[28:44] First you will find vgs
+[28:46] You will
+[28:48] Take out vgs
+[28:50] Vin
+[28:52] Into rg
+[28:54] Voltage division
+[28:56] Open all the capacitors
+[28:58] Rsi plus
+[29:00] Rg
+[29:02] And you will take out v0
+[29:04] Minus
+[29:06] Gmvgs
+[29:08] Rl dash
+[29:12] Where rl dash is
+[29:14] This is the parallel combo of
+[29:16] These three resistances
+[29:18] Correct
+[29:20] Tell me
+[29:22] Clear
+[29:24] Rl dash is the parallel combination
+[29:26] I took
+[29:28] So v0 by vn
+[29:30] Capacitance
+[29:32] Minus
+[29:34] Gmrl dash
+[29:36] Into rg
+[29:38] By rsi plus
+[29:40] Rg
+[29:42] This will be
+[29:44] Gain without any
+[29:46] Capacitors
+[29:48] Very good Aaman, correct answer
+[29:50] Gain without any
+[29:52] Capacitors
+[29:56] Gain
+[29:58] Without Capacitors
+[30:02] I will write this as av
+[30:16] Clear all
+[30:18] Now from this logic
+[30:20] You break cgd
+[30:22] On the input
+[30:24] It is cgd
+[30:28] 1 minus av
+[30:32] And break it on the output
+[30:34] cgd
+[30:36] 1 minus 1 by av
+[30:42] Now how much input
+[30:44] Capacitance will be
+[30:46] cgs
+[30:48] Plus cgd's
+[30:50] Input Capacitance
+[30:52] And the output Capacitance
+[30:54] Will be cds
+[30:56] Plus cgd's
+[30:58] Output Part
+[31:00] Tell me is this clear
+[31:02] Tell me is this clear
+[31:04] Tell me quickly
+[31:10] Is this clear
+[31:14] After this
+[31:16] What we will do
+[31:18] After this
+[31:20] Make a model
+[31:22] Now we need cutoff frequency
+[31:24] Now the journey ahead
+[31:26] Is easy
+[31:28] Because for cutoff frequency
+[31:30] We need thevenin resistance
+[31:32] Across the capacitor
+[31:34] Correct
+[31:36] We just need
+[31:38] Thevenin resistance
+[31:40] Across the capacitors
+[31:50] Now
+[31:56] Now I am showing
+[31:58] A resistance
+[32:20] Now
+[32:26] Is this clear
+[32:28] Now tell me
+[32:30] How much C i cross rth is visible
+[32:32] How much C i cross rth is visible
+[32:40] You will
+[32:42] Zero the input voltage
+[32:46] So rsi and rg will be parallel
+[32:50] And
+[32:56] How much resistance is visible on the output side
+[32:58] RL dash
+[33:04] So this is done
+[33:06] RL dash into C0
+[33:08] Now what is FH
+[33:10] You know
+[33:14] Minimum of both
+[33:16] Minimum
+[33:18] Minimum of both
+[33:20] Minimum
+[33:22] Is this clear
+[33:24] Minimum of both
+[33:26] Cutoff frequency
+[33:28] Tell me quickly
+[33:30] Tell me quickly
+[33:32] Is this clear
+[33:36] Remember the formula
+[33:38] Remember the formula
+[33:40] The unity gain frequency
+[33:42] The rest I have shown
+[33:44] Cutoff frequency
+[33:46] This is
+[33:48] You can draw a model
+[33:50] You have to apply millers effect
+[33:52] Resolve the capacitance in the input output
+[33:54] 1 by 2 pi r is over
+[33:56] Right
+[33:58] Now let's go to the low frequency response
+[34:00] Now in low frequency
+[34:02] Response
+[34:06] Internal capacitance
+[34:08] Capacitances
+[34:14] Internal capacitances
+[34:20] Are open
+[34:24] Okay
+[34:26] We consider
+[34:30] Coupling
+[34:34] And bypass capacitors
+[34:38] We consider
+[34:50] Coupling and bypass capacitors
+[34:52] Now again
+[34:54] What will be our approach in this
+[34:56] What will be our approach in this
+[34:58] What will be our approach in this
+[35:00] Sir first you make a model
+[35:02] And across every capacitance
+[35:04] You remove the resistance
+[35:06] Right
+[35:08] First you make a model
+[35:10] Then across every capacitance
+[35:12] You remove the resistance
+[35:14] So let's make a model first
+[35:18] Now see
+[35:20] Between gate and source
+[35:22] You will show the open circuit
+[35:26] And here at a time
+[35:28] You consider one capacitance
+[35:36] R0
+[35:42] This is R0
+[35:48] This is Rd
+[35:54] This is coupling capacitor
+[35:56] This is RL
+[36:02] This is source resistor
+[36:06] This is bypass capacitor
+[36:12] This is signal resistor
+[36:22] See
+[36:24] RSI
+[36:26] Say source resistance
+[36:28] Say signal resistance
+[36:30] CC1
+[36:32] RG
+[36:38] VGS
+[36:42] RS
+[36:44] CS
+[36:46] Rd
+[36:48] Rd
+[36:50] CC2
+[36:52] RL
+[36:54] Now one by one
+[36:56] We need different capacitors
+[36:58] Across resistance
+[37:00] What do we need
+[37:02] Different capacitors
+[37:04] Across resistance
+[37:06] Let me write this point
+[37:10] We need to determine
+[37:20] RTH
+[37:22] Across each capacitor
+[37:24] RL
+[37:30] When you take one capacitor
+[37:32] RL
+[37:34] Other two are shorted
+[37:38] Let me tell you
+[37:40] CC1
+[37:42] How much resistance
+[37:44] will come in CC1
+[37:46] Tell me
+[37:48] The coupling capacitor
+[37:54] How much will come
+[38:00] RSI plus RG
+[38:02] Other people tell me
+[38:04] How much will come
+[38:06] across CC1
+[38:08] You will do the input ground
+[38:10] You will do the input ground
+[38:12] As soon as you do the ground
+[38:14] These RSI and RG
+[38:16] Will come in the series
+[38:18] Across CC1
+[38:24] RL
+[38:42] Look at this
+[38:44] This has become FL1
+[38:46] Now tell me the across of CC2
+[38:48] Tell me the across of CC2
+[38:50] Tell me quickly
+[38:54] Tell me the across of CC2
+[39:00] You consider CC2 as shorted
+[39:02] CC2
+[39:04] Across
+[39:12] What is this
+[39:18] Tell me quickly
+[39:20] Yes
+[39:22] Small RD
+[39:24] Parallel capital RD
+[39:26] Plus RL
+[39:28] You know this small RD
+[39:30] Is very high
+[39:32] Approximately RD plus
+[39:34] RL becomes
+[39:36] The second lower
+[39:38] Cutoff frequency
+[39:50] This has become
+[39:52] 1 by 2 pi RD plus RL
+[39:54] Into
+[39:56] CC2
+[39:58] Now look at the third
+[40:00] About CS
+[40:02] Across CS
+[40:04] No direct resistance
+[40:06] Comes
+[40:08] I told you earlier
+[40:10] You first
+[40:12] Grounded the input
+[40:14] Now look at this
+[40:16] RSI and RG resistance
+[40:18] Because on both ends
+[40:20] Zero voltage has gone
+[40:34] If you want
+[40:36] Ignore the small RD
+[40:38] Your analysis
+[40:40] Is a little easy
+[40:44] And as soon as you will
+[40:46] Short
+[40:48] This will be RD
+[40:50] Parallel
+[41:12] What will happen here
+[41:14] Look if you put
+[41:16] KVA
+[41:18] VGS plus V is zero
+[41:26] And then this resistance
+[41:28] How much current is going in RS
+[41:30] I plus GM VGS
+[41:36] How much current is going
+[41:38] Now write VGS minus V
+[41:40] And bring it to the left
+[41:44] Write VGS minus V
+[41:46] And bring it to the left
+[41:50] So here
+[41:52] V by I
+[42:06] So this is R Thevenin
+[42:14] This is here
+[42:16] So what is FL3
+[42:26] Now FL is maximum
+[42:38] Look the game is all the same
+[42:40] Across Capacitance
+[42:42] Across Capacitance
+[42:44] You need resistance
+[42:46] And with the help of resistance
+[42:48] If you remove 1 by 2 pi RC
+[42:50] Then you get cutoff frequency
+[42:52] With 1 by 2 pi RC
+[42:54] Just remember one more thing
+[42:56] In high frequency response
+[42:58] We should know
+[43:00] Unity gain bandwidth
+[43:02] Now look here
+[43:04] Like BJT, Alpha Cutoff
+[43:06] Beta Cutoff is nothing like that
+[43:08] But Unity Gain Bandwidth
+[43:10] You need to remember one formula
+[43:12] In the rest of the lecture
+[43:14] There is no formula
+[43:16] Which you need to remember
+[43:18] Look at this question
+[43:20] Calculate the 3 dB cutoff frequency
+[43:22] Due to each capacitor
+[43:24] Now see
+[43:26] It has not given us anything
+[43:28] It has not given us GM or RD
+[43:30] So you will have to remove GM and RD
+[43:32] Early voltage infinity is kept
+[43:34] That is different
+[43:36] It should be in BJT
+[43:38] That means RD is infinite
+[43:40] But how will you remove GM?
+[43:42] How will you remove GM?
+[43:44] You will remove GM here
+[43:46] First by doing DC analysis
+[43:48] Do it
+[43:50] You have given ID in DC analysis
+[43:54] Is this constant current biasing?
+[43:58] Why?
+[44:00] Is this constant current biasing?
+[44:02] Why?
+[44:06] So you have given ID
+[44:08] 2 milli ampere
+[44:20] But the K I used to take
+[44:22] I used to take
+[44:24] MuNCOX W by 2L
+[44:26] This person
+[44:28] The question given is W by L
+[44:30] What is given?
+[44:32] W by L
+[44:34] So this will be 1 milli ampere
+[44:38] Per volt square
+[44:40] Upon 2
+[44:42] This will be done
+[44:44] If you have given W by L
+[44:46] Then you have taken half
+[44:50] Half
+[44:52] Into 2
+[44:56] 2 milli
+[44:58] Okay? This is GM
+[45:00] Now make this model
+[45:02] Make the model quickly
+[45:04] You will do it quickly
+[45:06] Come on
+[45:08] You have to remove all across RTH
+[45:10] K and dash
+[45:12] K and dash
+[45:24] Namaskaram
+[45:26] See
+[45:28] That is why W by L
+[45:30] If it had to be taken in 2K and dash
+[45:32] Then why W by L is written separately?
+[45:44] There can be two types of questions
+[45:46] One is
+[45:48] That you have to remove cutoff frequency
+[45:50] One is
+[45:52] Your unity gain bandwidth
+[45:54] There are only two forms or concepts
+[45:56] On which this topic can be a question
+[45:58] And see
+[46:00] In the next lecture your MOSFET will be completed
+[46:02] Then for this
+[46:04] Especially I am going to take a topic
+[46:06] CMOS inverter
+[46:08] We will finish it in one or maximum two sessions
+[46:10] From the analog point of view
+[46:12] So CMOS inverter will be done
+[46:14] Then our O-Pamp
+[46:16] That's it
+[46:18] Then in one way you will come to the most important topic of analog
+[46:20] On O-Pamp
+[46:22] Analog means you have to go for O-Pamp
+[46:38] But now I think you will never be afraid of the transistor
+[46:40] Atleast
+[46:44] The fear of the transistor must have run away
+[46:52] So
+[46:56] The model is
+[46:58] 100 Kilo ohm
+[47:00] 10 Mega ohm
+[47:02] 1 Micro Farad
+[47:04] Let me start making
+[47:22] Then VGS
+[47:30] Then you will open the DC current
+[47:32] Source
+[47:34] There is no resistance there
+[47:36] So only a capacitor came
+[47:38] This DC current source is opened
+[47:40] And it grounded the minus 40V
+[47:44] Then
+[47:48] Between the drain and source
+[47:50] We put a
+[47:52] Current source
+[48:02] Then between the drain and the ground
+[48:04] Cardi
+[48:06] Then here
+[48:08] One more capacitor
+[48:10] And one more load
+[48:12] Resistor
+[48:14] Okay, it is easy
+[48:16] It is enough
+[48:20] 100 Kilo ohm
+[48:28] 1 Micro Farad
+[48:30] 1 Micro Farad
+[48:32] All the capacitors are 1 Micro Farad
+[48:38] This is 10 Kilo ohm
+[48:42] And this one is also 10 Kilo ohm
+[48:44] 1 Micro Farad
+[48:48] Now he said
+[48:50] You have to tell the frequency across all
+[48:52] Means you have to take out 3 frequencies
+[49:00] FL1
+[49:02] Here the resistance will come
+[49:04] 1 Mega ohm plus 100 Kilo ohm
+[49:06] 1.1 Mega ohm
+[49:10] And 1 Micro Farad
+[49:12] This is 10 Kilo ohm minus 6
+[49:14] Tell me how much is coming
+[49:16] Tell me how much is coming
+[49:18] 0.144
+[49:20] This is coming
+[49:24] 0.144
+[49:26] It is coming
+[49:32] It will be smaller than 1
+[49:34] Now let's take it out
+[49:36] 1 by 2 pi
+[49:42] Here it will be 10 plus 10
+[49:44] Across this
+[49:46] Kilo ohm
+[49:52] Power of 10 is 400
+[49:54] 100 by
+[49:56] 4 pi
+[49:58] Tell me how much is coming
+[50:00] 25 by pi
+[50:02] 7.95
+[50:06] Perfect
+[50:12] Now see from here
+[50:18] RS parallel 1 by GM
+[50:20] So 1 by GM will be left
+[50:22] RS is not
+[50:26] GM is 2 mili Siemens
+[50:30] So 0.5 Kilo ohm
+[50:36] So
+[50:42] 1000 by pi
+[50:44] Now tell me
+[50:46] How much is coming
+[50:48] 1000 by pi
+[50:50] You understood this
+[50:52] Now take out RS parallel 1 by GM
+[50:54] RS is not here
+[50:56] Will it be left
+[50:58] Tell me quickly
+[51:00] 318.3
+[51:02] Hertz will come
+[51:04] 318.3
+[51:06] Hertz
+[51:08] If I ask you overall
+[51:10] Lower cutoff frequency
+[51:12] Then you would say 318.3
+[51:14] Maximum of all three
+[51:16] If I ask you overall
+[51:18] Then you would say maximum of all three
+[51:20] 318.3
+[51:24] Clear
+[51:26] Now see the next
+[51:28] Mid band gain
+[51:30] Upper cutoff frequency
+[51:32] It has given Cgd
+[51:34] Cgd
+[51:36] So first take out mid band gain
+[51:38] That is gain without capacitors
+[51:40] Gain without capacitors
+[51:42] Gain without capacitors
+[51:52] First
+[51:54] See here also
+[51:56] There is constant current bias
+[52:02] Cgd
+[52:10] So you have kept the id
+[52:14] Now you have given the early voltage
+[52:18] Okay, let's see the use of the early voltage
+[52:20] Let's see the use of the early voltage
+[52:30] Now I told you how to take
+[52:32] K is
+[52:34] Mu and Cox W by 2L
+[52:36] So because of 2L
+[52:38] Half
+[52:44] This is 1 milli
+[52:46] Siemens
+[52:48] Now see here when you give the early voltage
+[52:50] Take it like BJT
+[52:52] Like BJT
+[52:54] How VA by
+[52:56] Id
+[53:00] 150 kilo ohm
+[53:02] 150 kilo ohm
+[53:04] Okay
+[53:06] Now make it
+[53:08] By the way, you can ignore the 150 kilo ohm
+[53:12] Because it will come in 15-15 parallel
+[53:14] It will be 7.5
+[53:16] Compared to 7.5
+[53:18] 150 can be ignored
+[53:20] But if you want to take
+[53:22] Similarly, you can ignore the 150 kilo ohm
+[53:24] Compared to 7.5
+[53:26] This is 20 times
+[53:28] Of the RD parallel
+[53:30] RL
+[53:34] Okay
+[53:46] Okay
+[54:16] Okay
+[54:24] Minus 6.99
+[54:26] See
+[54:28] I will make its model
+[54:32] 100 kilo ohm
+[54:34] 4.7 mega ohm
+[54:38] This is supply
+[54:46] Yeah 4.7 mega ohm
+[54:52] Terminal grounded
+[55:16] 100 kilo ohm
+[55:24] That is 0.1 mega ohm
+[55:28] 4.7 mega ohm
+[55:32] vi
+[55:46] This will be 150 kilo ohms.
+[55:53] Now you can write VGS.
+[55:57] VIN.
+[56:06] And write V0.
+[56:17] Okay, if you include it.
+[56:21] Now V0 by VIN.
+[56:25] GM is your 1.
+[56:27] 150 parallel 7.5 is 150 by 21.
+[56:33] Into 4.7 by 4.8.
+[56:37] And look, GM is in millisiemens.
+[56:41] Resistance is in kilo ohms.
+[56:42] So this will be cancelled by millisiemens.
+[56:46] So there is no need to worry about unit.
+[56:53] Yes, let's do minus 6.99, minus 7.
+[56:57] Okay, minus 7.
+[57:00] Now here my children, the capacitance.
+[57:03] It will look like this.
+[57:07] CGD.
+[57:09] Okay, this will be CGD.
+[57:12] Now you will break it in two parts.
+[57:15] CGD is 0.4 picofarad.
+[57:19] CGDI, 0.4.
+[57:25] 1 minus AV, minus 7 is 8.
+[57:34] CGDO.
+[57:39] 1 minus 1 by AV.
+[57:42] So 1 plus 1 by 7 is 8 by 7.
+[57:46] So 3.2 by 7.
+[57:49] Okay, this is done.
+[57:52] Now these two capacitors are made on one input and one output.
+[57:57] If you look here, it will look like this.
+[58:00] CGDI.
+[58:04] Like this.
+[58:06] And here it will look like this.
+[58:10] Like this.
+[58:13] So how much resistance will be taken across the input?
+[58:17] 4.7.
+[58:20] Parallel 0.1.
+[58:23] Shorten the supply.
+[58:32] 0.0979.
+[58:39] Mega.
+[58:41] So the cutoff frequency will come on the input side.
+[58:52] Now look, this is in Mega and this is in Pico.
+[58:55] That is, 10 power 6 will be left.
+[58:59] That is, it will come in megahertz.
+[59:02] It is coming in megahertz.
+[59:04] Or 5.08 kilohertz, you can say.
+[59:10] Okay, one second.
+[59:13] 0.5 megahertz.
+[59:20] So 0.508 megahertz.
+[59:30] Now the resistance on the output side will be 150, parallel 15.
+[59:37] Parallel 15 will come.
+[59:39] 150 by 21 kilohertz.
+[59:46] FHO.
+[59:51] This is 150 by 21 kilohertz.
+[59:57] And that is Pico.
+[60:02] So the power of 10 will be 9.
+[60:09] This will be 48.74 megahertz.
+[60:22] You tell me, is this coming?
+[60:27] This is coming, 48.74 megahertz.
+[60:33] Now which one of them will take?
+[60:36] If FH is asked, which one will take?
+[60:39] The lesser one.
+[60:41] The minimum one in FH is 0.508 megahertz.
+[60:47] Let's take the lesser one, 0.508 megahertz.
+[60:51] It's clear now, how to do high frequency response.
+[60:54] So look, I have shown you the question on low frequency response.
+[60:58] I have shown it on high frequency too.
+[61:00] Many of these questions do not come.
+[61:02] The highest chance of a question coming from this topic is of unity gain bandwidth.
+[61:07] Don't forget that formula.
+[61:09] Relate it with BJT.
+[61:11] Now let me make some assignments.
+[61:14] The question of the first lecture that I left.
+[61:16] For n-channel enhancement MOS shown in the figure.
+[61:20] The threshold voltage is 2 volt.
+[61:22] Drain current is 4 milliampere.
+[61:25] RD is 1 kilo ohm.
+[61:27] Now he is saying, if you make RD 4 kilo ohm, then how much will the drain current be?
+[61:31] First thing is, when the gate and drain are connected,
+[61:36] it will lie in saturation.
+[61:39] It will lie in saturation.
+[61:42] So the drain current here is
+[61:47] K
+[61:49] VGS
+[61:51] minus VT
+[61:53] square.
+[61:55] Now he is saying,
+[61:57] we have made RD 4 kilo ohm.
+[62:00] You tell me, how much will the drain current be?
+[62:03] Right?
+[62:05] So we have to find out how much VGS will be?
+[62:08] If you write VGS in simple words,
+[62:12] put KVL from here.
+[62:14] Or do it like this.
+[62:16] VG
+[62:18] equal to VD
+[62:21] 10 minus ID
+[62:24] RD.
+[62:26] Now the source is grounded, so the source is zero.
+[62:30] So what is VGS?
+[62:32] 10 minus ID
+[62:35] RD.
+[62:37] Okay.
+[62:39] Now what are we saying?
+[63:03] How much is VT?
+[63:04] VT is your 2.
+[63:08] When RD was earlier, it was RD.
+[63:12] I don't know if RD is new.
+[63:14] It is RD 4.
+[63:17] It is new RD 4.
+[63:24] How much was RD earlier?
+[63:26] It was 1 kilo ohm, so the current was 4 milliamperes.
+[63:29] First RD
+[63:31] was 1 kilo ohm, current was 4 milliamperes.
+[63:34] It was 4 milliamperes.
+[63:42] It was 4 milliamperes.
+[63:44] Now what do you do?
+[63:46] Open the square.
+[63:48] This square of 4 will be 16.
+[63:50] 4ID
+[63:53] is 64
+[63:55] plus 16ID square
+[63:58] minus
+[64:00] 64ID
+[64:02] 8, 4, 32 into 2.
+[64:04] Now divide it from 4.
+[64:08] 16 plus 4ID square
+[64:11] minus 16ID.
+[64:16] So 4ID square
+[64:18] minus 17ID
+[64:21] plus 16
+[64:22] equal to zero.
+[64:24] Now this is the quadratic which we need.
+[64:28] Okay, this is the quadratic.
+[64:32] So 4
+[64:34] minus 17
+[64:36] or 16.
+[64:38] 2.843
+[64:46] and what is the second one?
+[64:48] 1.407
+[64:53] Now this 2.803 and 843
+[64:57] will be your VGS negative.
+[65:00] Your VGS
+[65:02] 10 minus 4ID
+[65:05] will be negative.
+[65:07] So this is wrong.
+[65:09] So what should be your ID?
+[65:12] 1.407
+[65:15] milliamperes.
+[65:17] Okay,
+[65:18] it is clear.
+[65:20] It is clear.
+[65:22] So the answer will be C.
+[65:24] I think you must have taken it out
+[65:26] those who have also seriously followed MOSFET
+[65:29] so the answer will be 1.4 milliamperes.
+[65:33] Okay,
+[65:34] and keep this in mind.
+[65:35] Especially EC kids,
+[65:36] nowadays MOSFET is ati-prey for IIT.
+[65:39] Most of the questions are coming from MOSFET.
+[65:42] Let's see the next one.
+[65:43] In the circuit shown, MOSFET is operating in saturation zone.
+[65:47] We have given the formula of ID VGS of characteristic.
+[65:50] We have given this K out of half.
+[65:52] Where VGS is in volt.
+[65:54] If it is VS5,
+[65:56] how much is RS?
+[65:57] VS is 5.
+[65:59] Now see here,
+[66:00] because the gate current is zero.
+[66:05] So this is in 8 and 7 in your series.
+[66:08] So I say,
+[66:09] how much is the voltage of the gate?
+[66:12] 15 into 7
+[66:15] by 7 plus 8
+[66:18] will be 7 volts.
+[66:20] Which means,
+[66:21] how much is VGS?
+[66:24] VG minus VS.
+[66:25] VS is 5.
+[66:27] It is 2 volts.
+[66:29] Now put the equation of ID in it.
+[66:32] Half
+[66:34] square of 2 minus 1 is
+[66:37] 0.5 milliamperes.
+[66:41] Now see here,
+[66:42] 0.5 milliamperes are coming.
+[66:45] Here,
+[66:46] your 0.5 milliamperes are coming.
+[66:50] This is VS5.
+[66:52] So how much is RS?
+[66:53] How much is RS?
+[67:01] 10 kilo ohms.
+[67:03] Let's take out this 10 kilo ohms.
+[67:06] Very good, Juhi.
+[67:07] The answer will be 10.
+[67:11] Now see here,
+[67:12] it is related to the current mirror.
+[67:14] All the transistors are
+[67:15] N-channel enhancement MOSFET.
+[67:17] They are identical and are biased
+[67:18] to operate in saturation.
+[67:20] You know,
+[67:21] all the transistors of the current mirror
+[67:22] run in saturation.
+[67:24] We have to tell the output voltage.
+[67:26] If this 1 milliamperes
+[67:27] is current,
+[67:28] from the principle of the current mirror,
+[67:30] this will also be 1.
+[67:32] This is 0.
+[67:34] So this is also 1 milliamperes.
+[67:39] Again, this is 0.
+[67:41] So this is 1 milliamperes.
+[67:45] Okay.
+[67:47] Now if 1 milliamperes are coming here,
+[67:49] 1 milliamperes are coming.
+[67:52] We need V out, right?
+[67:56] The thing is,
+[67:57] the gate and drain are connected
+[67:59] in saturation.
+[68:01] VGS and VDS will be equal.
+[68:05] Now the answer will be
+[68:06] how much will be here?
+[68:08] Here 6 minus 4.
+[68:10] See, this is done.
+[68:12] It has crossed 4 volts.
+[68:20] See, here it has crossed 2 volts.
+[68:25] It has crossed 2 volts.
+[68:27] Now if the current is equal to the current
+[68:29] in the transistor,
+[68:30] then this should also be 2.
+[68:32] This should also be 2.
+[68:34] So if this 6 is 2 out of 6,
+[68:37] this will come out to be 4 volts.
+[68:40] This will come out to be 4 volts.
+[68:43] Did you understand?
+[68:44] I have found out the VGS.
+[68:45] If VGS has crossed 2 volts,
+[68:47] then all the VGS of the transistor
+[68:49] will be 2.
+[68:51] Because all of them
+[68:52] are equal to the current.
+[68:53] All the transistors are identical.
+[68:55] The current is also equal.
+[68:56] I mean, their voltage
+[68:58] will also be equal.
+[68:59] It will be 2 volts.
+[69:00] So that is why V out
+[69:01] will come out to be 4.
+[69:04] Value of R in which
+[69:05] the PMOS transistor
+[69:06] will be biased in linear region.
+[69:09] Do you want linear region?
+[69:11] The condition of linear region
+[69:12] is in PMOS.
+[69:14] VSD
+[69:15] is less than
+[69:17] VSG
+[69:19] minus mod VTP.
+[69:23] Okay?
+[69:24] Now, the VTP is given
+[69:25] minus 1.
+[69:27] So VSD
+[69:29] Look here.
+[69:33] VSD
+[69:36] is 4 minus
+[69:39] 1 into R
+[69:41] 4 minus R
+[69:43] and VSG
+[69:46] is 4.
+[69:49] So what we will say
+[69:50] 4 minus R
+[69:53] is less than
+[69:55] 4 minus mod of minus 1.
+[70:05] R is greater than 1 kilo ohm.
+[70:07] There is only one option.
+[70:09] There is only one option.
+[70:11] There is only one option.
+[70:13] If you see
+[70:14] there is only one option
+[70:15] greater than 1 kilo ohm
+[70:16] that is 1200 ohm.
+[70:19] Did you understand?
+[70:20] Option D.
+[70:21] Tell me, Zainul.
+[70:22] Is it clear?
+[70:24] We applied the basic condition.
+[70:25] We didn't do any solution in it.
+[70:27] We didn't do any equation
+[70:28] of MOSFET.
+[70:35] Okay.
+[70:36] Let's see the next one.
+[70:37] Assume that
+[70:38] the N channel MOSFET
+[70:39] is
+[70:40] ideal
+[70:42] and threshold voltage is 1 volt.
+[70:45] Now if you see here
+[70:47] the gate to source voltage
+[70:49] is given as 2 volt.
+[70:52] Threshold is 1 volt.
+[70:56] Sorry, gate to source
+[70:57] not source to gate.
+[71:02] So you will say
+[71:03] VGS is greater than VTH.
+[71:07] So MOSFET is on.
+[71:09] Now MOSFET is ideal, son.
+[71:12] MOSFET is ideal.
+[71:14] What does this mean?
+[71:16] That the channel resistance
+[71:18] of the source from its drain
+[71:20] is zero.
+[71:22] What is it?
+[71:23] The channel resistance is zero.
+[71:26] That is, the drain to source
+[71:29] will behave like a short circuit.
+[71:32] If my children
+[71:33] get zero volts here
+[71:36] then what will come
+[71:37] from the voltage division?
+[71:40] It will come out to be zero.
+[71:43] The ideal MOSFET is
+[71:44] like a switch.
+[71:47] The ideal MOSFET
+[71:48] is like a switch.
+[71:50] Which if it is on
+[71:53] then it will behave as
+[71:54] a short circuit
+[71:55] between the drain
+[71:56] and the source terminal.
+[71:58] Okay.
+[71:59] There is an ideal switch
+[72:01] which if it is on
+[72:02] then between the drain
+[72:03] and the source
+[72:04] it will behave
+[72:05] like a short circuit.
+[72:06] It is clear.
+[72:13] Tell me, is it clear?
+[72:15] Let's see the next one.
+[72:17] In the circuit
+[72:18] both NMOS transistors
+[72:19] are identical
+[72:20] with threshold voltage
+[72:21] being 5V
+[72:22] Ignore channel length
+[72:23] modulation, output voltage
+[72:24] V0.
+[72:26] Look.
+[72:28] This transistor
+[72:29] will be in saturation.
+[72:30] It is drain and gate connected.
+[72:34] It will be in saturation.
+[72:36] Its VGS is 10V.
+[72:39] So what will come
+[72:40] from its ID?
+[72:42] Assume this also
+[72:43] in saturation.
+[72:46] What will come from the ID?
+[72:47] K
+[72:49] 10-5
+[72:50] square.
+[72:52] That is 25K.
+[72:56] Now this current
+[72:57] will also come
+[72:58] from the same ID.
+[73:00] The same ID
+[73:01] will also come from this.
+[73:03] So both ID-1
+[73:05] and ID-2
+[73:06] will be equal.
+[73:09] So what will be
+[73:10] its VGS?
+[73:11] Therefore
+[73:13] VGS-1
+[73:15] and VGS-2
+[73:17] will be both
+[73:18] 10V.
+[73:21] That means
+[73:22] what will you get here?
+[73:23] 10.
+[73:27] Now see here
+[73:28] it is coming
+[73:29] 30V.
+[73:30] The drop of 10
+[73:31] is coming.
+[73:32] So V0
+[73:33] is 20.
+[73:35] V0 is 20.
+[73:37] Did you understand?
+[73:38] When both the current
+[73:39] are equal
+[73:40] then VGS is equal
+[73:41] from which
+[73:42] V0 is 20.
+[73:44] Sir,
+[73:45] will the lower
+[73:46] one be in saturation?
+[73:48] Look here.
+[73:49] We have assumed
+[73:50] saturation in this.
+[73:53] Will it have to be verified?
+[73:56] Will it have to be verified
+[73:57] after the result
+[73:58] comes in the last?
+[73:59] If you see
+[74:01] if you see
+[74:02] the drain to source
+[74:03] of the lower transistor
+[74:05] 20-0 is 20
+[74:08] which is greater
+[74:09] than VGS-VT
+[74:12] Hence our assumption
+[74:13] is correct.
+[74:16] Our assumption
+[74:17] is correct.
+[74:21] Is it correct?
+[74:23] Did it shine?
+[74:25] Our assumption
+[74:26] is correct.
+[74:27] That is,
+[74:28] saturation will be
+[74:29] only.
+[74:31] Okay?
+[74:32] Let's see the next one.
+[74:33] In the figure
+[74:34] both MOSFETs are identical
+[74:36] and their
+[74:37] current voltage
+[74:38] characteristic is given.
+[74:40] It will not be a mega ampere
+[74:41] it will be a milli ampere
+[74:42] type.
+[74:45] This will be a milli ampere.
+[74:48] Now see
+[74:49] this one is understanding
+[74:50] that this one is
+[74:51] Li-A.
+[74:52] This one is understanding
+[74:53] that this one is
+[74:54] given for linear region
+[74:57] and this one is
+[75:01] for saturation.
+[75:04] Now see
+[75:05] this transistor
+[75:06] is clearly visible
+[75:07] in saturation
+[75:08] because the drain
+[75:09] and gate are connected.
+[75:10] See
+[75:11] this concept
+[75:12] is used in
+[75:13] so many questions.
+[75:14] When the drain
+[75:15] and gate are connected
+[75:16] then saturation will be there.
+[75:18] We are asked
+[75:19] IDS
+[75:20] this one
+[75:22] DC
+[75:23] DS
+[75:24] current.
+[75:25] Now for this current
+[75:26] what I want
+[75:28] according to me
+[75:29] in this
+[75:31] one thing is missing somewhere
+[75:33] somewhere
+[75:34] the source voltage
+[75:35] of the second transistor
+[75:38] right?
+[75:39] The source voltage
+[75:40] of the second transistor
+[75:41] is missing right?
+[75:48] What do you say?
+[75:51] The source voltage
+[75:52] of the second transistor
+[75:53] is missing right?
+[75:57] Let's do one thing
+[75:58] let's assume
+[75:59] minus 5.
+[76:01] Okay?
+[76:02] Let's assume minus 5.
+[76:04] So how much
+[76:05] its gate to source
+[76:06] will come?
+[76:07] 5 will come.
+[76:15] Can you
+[76:16] take out
+[76:17] its current here?
+[76:20] Assume
+[76:31] assume
+[76:32] second transistor
+[76:33] in saturation
+[76:35] second
+[76:36] 16 milli ampere
+[76:37] will come
+[76:41] and
+[76:42] then
+[76:48] I am thinking
+[76:49] if you take out
+[76:50] this IDC
+[76:51] then it is 2 milli ampere right?
+[76:57] Take this
+[76:58] minus 2 volt
+[77:03] then VGS
+[77:04] will come
+[77:05] your 2.
+[77:06] Okay?
+[77:08] So if the second transistor
+[77:09] in saturation
+[77:10] means
+[77:11] if I take out
+[77:12] its current
+[77:13] then
+[77:14] take out the
+[77:15] saturation equation
+[77:16] VGS
+[77:17] minus
+[77:18] 1
+[77:19] whole square
+[77:22] it should be given
+[77:23] there
+[77:24] the data is missing
+[77:26] so it came
+[77:27] 1 milli ampere
+[77:29] which means
+[77:30] IDC
+[77:33] is what?
+[77:34] 2 minus 1
+[77:41] which means
+[77:42] therefore
+[77:44] VGS
+[77:45] equal to 2 volt
+[77:47] Now you will understand
+[77:49] gate and drain are connected
+[77:52] for this transistor
+[77:53] gate and drain are connected right?
+[78:01] So VGS
+[78:02] equal to
+[78:03] VDS
+[78:04] equal to 2 volt
+[78:07] Okay?
+[78:08] VDS
+[78:09] and VGS
+[78:10] equal to 2 volt
+[78:13] Now see this
+[78:14] but we have to verify
+[78:15] Zainul here right?
+[78:17] that
+[78:18] our assumption
+[78:19] is correct
+[78:20] we have considered it
+[78:21] in saturation
+[78:22] we have considered it
+[78:23] in saturation right?
+[78:26] So we have to verify
+[78:32] Now see
+[78:33] I am telling you this
+[78:34] this VDS
+[78:35] you got this VDS
+[78:36] 2
+[78:37] now the source is grounded
+[78:40] right?
+[78:41] the source is grounded
+[78:43] since
+[78:44] source is grounded
+[78:53] so VDS
+[78:54] 2
+[78:55] Now see the other transistor
+[78:57] the voltage of drain
+[78:58] is 2
+[78:59] because both are
+[79:00] drain connected
+[79:02] and the voltage of source
+[79:03] is minus 2
+[79:04] the voltage of drain
+[79:05] is 2
+[79:06] and the voltage of source
+[79:07] is minus 2
+[79:08] so for the other transistor
+[79:10] the voltage of drain
+[79:11] to source
+[79:12] how much?
+[79:14] 2
+[79:15] minus
+[79:16] 2
+[79:17] 4 volt
+[79:19] which is
+[79:20] greater than
+[79:22] VGS
+[79:23] minus
+[79:24] VT
+[79:25] okay?
+[79:26] So saturation
+[79:28] we have considered it right
+[79:30] when you assume
+[79:31] a transistor
+[79:32] in saturation
+[79:33] in the questions of biasing
+[79:34] then
+[79:35] you verify the assumption
+[79:36] also
+[79:38] clear?
+[79:39] the answer will be
+[79:40] 1 milli ampere
+[79:41] but you
+[79:42] have to justify
+[79:43] the second transistor
+[79:44] that it is in saturation
+[79:49] tell me
+[79:50] if there is any doubt
+[79:51] in this question
+[79:52] this is a good question
+[79:54] this is a good question
+[79:55] for practice
+[79:57] is everyone clear?
+[79:59] come on
+[80:01] now see this
+[80:02] this is a good question
+[80:04] the network will look good here
+[80:06] now
+[80:07] N channel MOSFET
+[80:08] is used
+[80:09] shown in the figure
+[80:10] initially
+[80:11] T is off
+[80:12] this is a thyristor
+[80:13] now
+[80:14] the step voltage
+[80:15] of 4 volt is applied
+[80:16] at the input
+[80:17] that is
+[80:18] 4 volt VGS
+[80:20] the input
+[80:21] is in between the gate and source
+[80:23] so
+[80:24] 4 volt VGS is applied
+[80:26] so that
+[80:27] MOSFET
+[80:28] turns on instantly
+[80:29] MOSFET
+[80:30] is on
+[80:31] okay
+[80:32] MOSFET is on
+[80:35] now
+[80:36] this is a question
+[80:37] after how long
+[80:38] output will come
+[80:39] at 5 volts
+[80:41] K is given
+[80:42] 5 milli ampere
+[80:43] per volt square
+[80:45] do you understand the question?
+[80:47] now understand my question
+[80:49] your MOSFET
+[80:50] was off
+[80:52] from the beginning
+[80:53] this question
+[80:54] is a very good question
+[80:57] initially
+[80:59] MOSFET is
+[81:00] off
+[81:06] so
+[81:07] can you consider this
+[81:08] as an open circuit?
+[81:11] can you consider this
+[81:12] as an open circuit?
+[81:13] MOSFET is off
+[81:15] now
+[81:16] talk about T
+[81:17] equal to 0 minus
+[81:19] T equal to 0 minus
+[81:21] what will you say
+[81:22] to the circuit
+[81:23] in a steady state
+[81:24] that
+[81:25] MOSFET is off
+[81:26] and the circuit
+[81:27] is in
+[81:28] a steady state
+[81:31] okay
+[81:32] so how will your circuit
+[81:33] be
+[81:34] look
+[81:36] this MOSFET
+[81:37] is off
+[81:38] this capacitor
+[81:39] is open
+[81:49] you tell me
+[81:50] if this is a
+[81:51] 10 volt source
+[81:53] then
+[81:54] how much will be
+[81:55] V C 0 minus
+[81:58] tell me
+[81:59] how much will be
+[82:00] V C 0 minus
+[82:04] tell me quickly
+[82:06] how much will be
+[82:07] V C 0 minus
+[82:08] in this circuit
+[82:09] will be 10
+[82:11] very good
+[82:16] and V C
+[82:17] is V DS
+[82:19] V C is
+[82:20] V DS
+[82:25] V DS
+[82:31] now you see
+[82:32] that
+[82:33] when you
+[82:34] put T equal to
+[82:35] 4 volts
+[82:36] on input
+[82:39] you
+[82:40] put
+[82:41] T equal to
+[82:42] 0 plus
+[82:44] V DS
+[82:46] equal to
+[82:47] V in
+[82:48] equal to
+[82:49] 4 volts
+[82:51] so you can say
+[82:52] V DS
+[82:53] is
+[82:54] 10 volts
+[82:55] which will be
+[82:56] greater than
+[82:57] V DS minus
+[82:58] V T
+[82:59] so it is a saturation
+[83:04] tell me
+[83:06] can you say
+[83:07] it is a saturation
+[83:09] because
+[83:10] the voltage of the capacitor
+[83:11] will not change at all
+[83:13] the voltage of the capacitor
+[83:14] will not change at all
+[83:16] he has asked
+[83:17] tell me
+[83:18] when
+[83:19] the capacitor
+[83:20] voltage
+[83:21] is
+[83:22] 5
+[83:24] suppose T
+[83:25] equal to
+[83:26] T1
+[83:27] V DS
+[83:29] equal to
+[83:30] V C
+[83:31] equal to
+[83:32] 5
+[83:33] then also
+[83:34] V DS
+[83:35] which is 5 volts
+[83:37] this is V DS
+[83:38] greater than
+[83:39] V T
+[83:41] that is
+[83:42] also saturation
+[83:45] that is
+[83:46] I have to
+[83:47] take the saturation
+[83:48] of the MOSFET
+[83:49] what I have to take
+[83:51] of the
+[83:52] saturation region
+[83:54] if you take the saturation region
+[83:57] then how do you take the drain current
+[83:59] K
+[84:01] V DS
+[84:03] minus
+[84:04] V T
+[84:05] whole square
+[84:06] you take
+[84:07] K V DS
+[84:08] minus
+[84:09] V T
+[84:10] whole square
+[84:11] K is given
+[84:12] 5 milli ampere per volt square
+[84:15] V DS
+[84:16] is given
+[84:17] 4
+[84:18] V T is given
+[84:19] 2
+[84:21] V T is given
+[84:22] 2
+[84:26] threshold 2 is given
+[84:29] I think
+[84:30] this should have been mentioned
+[84:32] that this is
+[84:33] mu N C O X
+[84:34] W by L
+[84:36] this is given
+[84:37] W by L
+[84:38] given
+[84:39] so we
+[84:40] have to do
+[84:41] 5 volts 2
+[84:43] so this will come
+[84:44] 10 milli ampere
+[84:46] okay
+[84:47] that is
+[84:48] as soon as the MOSFET
+[84:49] is on
+[84:51] we know
+[84:52] its current
+[84:53] it is 10 milli ampere
+[84:59] now you will understand
+[85:01] this MOSFET
+[85:02] is given
+[85:03] 10 milli ampere current
+[85:10] okay
+[85:15] okay
+[85:22] now see
+[85:23] how much current
+[85:24] 10 minus
+[85:25] V C by
+[85:27] 1 K
+[85:28] this will come
+[85:29] 10 minus
+[85:30] V C by
+[85:31] 1 K
+[85:32] if you see
+[85:33] here
+[85:34] do not apply the
+[85:35] R C circuit
+[85:36] because
+[85:37] R and C are not in series
+[85:38] from the
+[85:39] middle
+[85:40] the MOSFET
+[85:41] is cutting the current
+[85:42] you understand
+[85:43] from the middle
+[85:44] the MOSFET
+[85:45] is cutting the current
+[85:46] so what will you say
+[85:47] IC
+[85:49] 10 minus
+[85:50] V C by
+[85:52] 1 K
+[85:54] minus
+[85:55] 10 milli ampere
+[85:58] so this is left
+[86:00] minus
+[86:01] V C by
+[86:02] 1 K
+[86:03] IC is
+[86:04] C
+[86:05] DVC by
+[86:06] DT
+[86:15] so DVC by
+[86:16] DT
+[86:21] this will happen
+[86:23] now R is
+[86:24] 1 K
+[86:25] how much is C
+[86:26] 100 picofarad
+[86:29] 100 means
+[86:30] 10 power minus
+[86:31] 10
+[86:32] and 1 K
+[86:33] 10 power minus
+[86:34] 7
+[86:45] now
+[86:46] integration will happen
+[86:51] V C has to go
+[86:52] 10 to 5
+[86:57] and
+[86:58] time is
+[86:59] 0 to T1
+[87:03] so
+[87:04] LN
+[87:05] directly click
+[87:06] 5 by 10
+[87:08] natural log of
+[87:09] 5 by 10
+[87:11] is equal to
+[87:15] T1
+[87:17] minus T1 by
+[87:20] 10 power minus
+[87:21] 7
+[87:23] so T1 is
+[87:28] LN2 is
+[87:29] 0.693
+[87:35] okay
+[87:36] here it is
+[87:39] if you take
+[87:40] direction outward
+[87:41] there is no problem
+[87:42] but then
+[87:43] write minus C
+[87:44] DVC by
+[87:45] DT
+[87:46] do you understand
+[87:47] if the current of the capacitor
+[87:48] is shown
+[87:49] coming out of the positive plate
+[87:51] then
+[87:52] never write it C
+[87:53] DVC by
+[87:54] DT then write it
+[87:55] minus C
+[87:56] DVC by
+[87:57] DT
+[87:58] so if the current comes out
+[87:59] then it will be plus
+[88:00] here it will be minus
+[88:01] it will be equal
+[88:03] do you understand
+[88:04] if the current of the capacitor
+[88:06] is taking the charging direction
+[88:07] then I is equal to
+[88:08] C
+[88:09] DVC by
+[88:10] DT
+[88:11] so that's why
+[88:12] I never take
+[88:13] discharging separately
+[88:14] because
+[88:15] children forget
+[88:16] that they have to do
+[88:17] negative
+[88:18] the same thing happens
+[88:19] in the inductor
+[88:20] if the inductor
+[88:21] is in the charging direction
+[88:22] then V is equal to
+[88:23] LDI by DT
+[88:24] and if it is discharging
+[88:25] then minus LDI by DT
+[88:27] and the child
+[88:28] who has seen
+[88:29] my network course
+[88:30] in which
+[88:31] I have told
+[88:32] this mistake in the
+[88:33] initial lectures
+[88:34] that
+[88:35] we remember C
+[88:36] DVC by DT
+[88:37] but we say
+[88:38] charging or discharging
+[88:39] current is
+[88:40] C DV by DT
+[88:41] it doesn't happen
+[88:42] in charging
+[88:43] C DV by DT
+[88:44] in discharging
+[88:45] minus C DV by DT
+[88:48] next
+[88:49] we have given
+[88:50] MOS circuit specification
+[88:51] VT, ID, VDS and RD
+[88:54] so child
+[88:55] this is in saturation
+[88:58] in saturation
+[88:59] we have given
+[89:00] IDS
+[89:01] according to
+[89:02] IDS
+[89:03] what we will write
+[89:05] mu N C
+[89:06] U X
+[89:07] W by
+[89:08] 2 L
+[89:09] so here
+[89:10] 2
+[89:11] we have given
+[89:12] W by L
+[89:13] so here
+[89:14] 2
+[89:16] it was fun
+[89:17] the network used in the question
+[89:20] VGS
+[89:21] minus
+[89:22] VT
+[89:23] square
+[89:25] so you can get
+[89:26] VGS from here
+[89:27] 1
+[89:28] then 10 will come
+[89:30] 4.162
+[89:34] Sir, how do you know
+[89:35] how did you do 4.16
+[89:37] look
+[89:38] under root 10
+[89:39] 3.162
+[89:41] I took it out
+[89:42] now
+[89:43] the source is grounded
+[89:45] so this is the voltage of gate and drain
+[89:51] the source is grounded
+[89:53] so VS is 0
+[89:58] so the voltage of the gate and drain
+[90:00] is 4.162
+[90:06] okay
+[90:08] and this is VDS too
+[90:09] because the source is grounded
+[90:12] now what will be RD
+[90:15] 10
+[90:17] minus VD
+[90:19] upon ID
+[90:21] 10 minus 4.162
+[90:25] ID is how much
+[90:26] 0.5 milli ampere
+[90:28] so 5.84 by 0.5
+[90:31] 11.5
+[90:33] 0.8 to 11.6
+[90:35] 8
+[90:39] this is coming
+[90:41] okay
+[90:42] very good
+[90:43] is this clear
+[90:44] this was an easy question
+[90:46] this was made by all
+[90:48] tell me
+[90:49] this was made by all
+[90:51] see the next one
+[90:52] for the n-channel MOSFET
+[90:54] transfer characteristic and connection is shown
+[90:56] threshold voltage and region of operation
+[90:58] we have to tell
+[90:59] threshold is visible here
+[91:01] it is 1 volt
+[91:04] threshold is visible here
+[91:05] it is 1 volt
+[91:07] you see VGS
+[91:08] the source voltage of the gate
+[91:11] this is 4
+[91:13] you see VDS
+[91:16] this is also 4
+[91:18] which is greater than VGS minus VT
+[91:22] otherwise you know
+[91:23] what you can say
+[91:24] that the gate and drain are 5 volts
+[91:28] so sir we can say this too
+[91:29] they are connected
+[91:31] we will directly say the saturation
+[91:33] when the gate and drain are 5 volts
+[91:36] so we can short them sir
+[91:38] so we will directly see the saturation
+[91:42] see the next one
+[91:43] RDSS has given
+[91:45] this is the question of JFET
+[91:47] this is the question of JFET
+[91:49] so you can do this separately
+[91:55] okay
+[91:56] because now the electricians are also with us
+[91:58] so I am not taking the question of JFET
+[92:00] you will get confused
+[92:01] but according to me you will do it
+[92:03] will you do it
+[92:04] will there be any problem
+[92:06] tell me
+[92:08] will you do it
+[92:10] first you will have to do DC analysis
+[92:12] you will have to take out the ID
+[92:16] first you will take out the ID
+[92:18] VGS will come here
+[92:20] your
+[92:21] minus 2 volts
+[92:24] now you will take out the ID
+[92:26] how will you take out the ID
+[92:28] tell me
+[92:29] what was the equation of the ID
+[92:31] remember
+[92:32] IDSS
+[92:36] 1 minus VGS by VP
+[92:42] now how much is the VP
+[92:43] it is minus 8
+[92:44] minus 2 by minus 8
+[92:45] 1 by 4
+[92:46] 3 by 4
+[92:47] 9 by 16
+[92:53] here it is
+[92:55] okay
+[92:56] 90 by 16
+[92:57] milli ampere
+[92:59] now what is asked here
+[93:00] ID and VDS
+[93:02] now how much is the VDS
+[93:04] if we get the ID
+[93:08] VDS will be
+[93:13] 2 minus
+[93:16] 20 ID
+[93:20] 20
+[93:21] so 90 by 16 into 20
+[93:24] I think it will not be a very small value
+[93:29] 20
+[93:33] minus 110.5
+[93:37] I think this resistance is wrong
+[93:39] 20 kilo
+[93:42] because it has a very low value
+[93:46] right
+[93:47] still nothing is there
+[93:48] let's write for now
+[93:49] minus 110.5 volts
+[93:52] anyway it should be positive
+[93:54] now it is okay
+[93:56] now what will you do after this
+[93:57] after this you will take out the GM
+[94:00] how does GM come
+[94:03] GM naught
+[94:08] ID by IDSS
+[94:13] and what is GM naught
+[94:16] 2 IDSS by mod VP
+[94:22] okay
+[94:23] then make a model of it
+[94:26] clear
+[94:27] will you make this question
+[94:28] there is no problem
+[94:30] it is basic
+[94:32] see next
+[94:33] CMOS inverter
+[94:34] now skip it
+[94:36] we will do this later
+[94:37] okay
+[94:38] the question of CMOS inverter
+[94:40] I will teach you in CMOS inverter
+[94:42] I have not done it yet
+[94:45] see next
+[94:46] this is current mirror
+[94:47] current mirror
+[94:48] I have told you
+[94:49] M2 is in saturation and output
+[94:51] is unloaded
+[94:52] find the current in the transistor
+[94:55] IX
+[94:56] ask IX
+[94:58] now if this is I bias
+[94:59] then there will be I bias here too
+[95:01] there will be I bias here too
+[95:04] what else
+[95:06] now if I bias here
+[95:10] I bias and going here
+[95:11] V naught by RL
+[95:13] then IX will be
+[95:16] I bias plus V naught by RL
+[95:26] IX
+[95:31] where is written
+[95:36] this should be
+[95:37] okay
+[95:38] so none of these will come
+[95:39] according to these options
+[95:43] okay
+[95:44] here it is simple
+[95:45] I bias plus V naught by RL
+[95:48] see next
+[95:52] son this one is yours
+[95:56] now skip it
+[95:57] it will be a cascode connection
+[96:02] okay
+[96:03] I will take this question tomorrow
+[96:06] okay
+[96:07] tomorrow I will make a cascode connection
+[96:09] then I will do this one
+[96:11] okay
+[96:12] now what is the next
+[96:13] CMOS circuit again
+[96:16] later
+[96:17] because we have not done CMOS yet
+[96:19] we will do CMOS
+[96:21] this one too has become CMOS
+[96:25] okay
+[96:31] okay
+[96:32] so all these things
+[96:33] we will move forward
+[96:34] CMOS one
+[96:35] clear
+[96:36] so these questions
+[96:37] I will make you in the CMOS lecture
+[96:39] don't worry about these questions
+[96:41] now see
+[96:42] go to this link
+[96:43] you guys
+[96:44] put PYQ
+[96:45] BJT, diode, MOSFET
+[96:47] you can put everyone's PYQ
+[96:49] go to this link
+[96:50] you will wind up all things
+[96:52] on gate PYQ by AIR1
+[96:55] and if you join Anacademy
+[96:57] then you can choose
+[96:58] plus and iconic
+[96:59] from two subscriptions
+[97:01] you will get the top educator
+[97:03] the entire study material
+[97:04] is on the app
+[97:05] test series is included
+[97:07] if you take an iconic
+[97:08] doubt in any new question
+[97:10] we will make a video solution for you
+[97:12] printed material will come at home
+[97:14] 1 to 1 mentorship
+[97:16] strategy and study plan will be made
+[97:18] and open house session
+[97:20] will be interactive
+[97:22] and what you have to do
+[97:24] just go to Anacademy app
+[97:26] decide
+[97:27] plus or iconic
+[97:28] you have to decide the duration
+[97:30] and then you have to put an Ankit ESE code
+[97:32] to get maximum discount
+[97:34] and now see
+[97:35] we have launched a 15 month subscription
+[97:37] which you are getting one month extra
+[97:39] so on this
+[97:41] you can prepare for gate 24
+[97:44] very easily
+[97:46] so here you have to put a code
+[97:48] Ankit ESE
+[97:49] okay
+[97:50] this is your 15 month subscription
+[97:54] now if you see the results
+[97:56] we have produced 6 anchors in top 10
+[97:59] this time we have a target
+[98:01] to remove top 10
+[98:02] you can also be one of them
+[98:04] if you join Anacademy
+[98:06] and you study
+[98:07] under my personal guidance
+[98:09] what is the matter
+[98:10] which is the favorite subject
+[98:11] analog
+[98:12] very good
+[98:13] if it is a financial issue
+[98:15] then you can take it on EMI
+[98:16] here you have to pay
+[98:18] interest
+[98:19] only 2 hours EMI is approved
+[98:21] at least paper work is only
+[98:23] basic card
+[98:24] pan card
+[98:25] and you can pay
+[98:26] you can prepay
+[98:27] in flexible tenure
+[98:28] but in your family
+[98:29] in the name of any member
+[98:30] you can take EMI
+[98:32] whose salary comes
+[98:33] because bank
+[98:34] avails them EMI
+[98:36] and see
+[98:37] Brahmashra Plus batch
+[98:38] you have started
+[98:39] okay
+[98:40] in this you are getting
+[98:41] daily DPP
+[98:42] doubt clearing class
+[98:43] exclusive live classes
+[98:45] strategy session
+[98:46] notes you are getting
+[98:48] test series on the app
+[98:49] gate academy
+[98:50] pyq
+[98:51] gate academy
+[98:52] workbook
+[98:53] and gate academy
+[98:54] paramount material also
+[98:55] and gurukul batch
+[98:56] your start is for 24
+[98:58] son
+[98:59] in which analog
+[99:00] started
+[99:01] dhande sir
+[99:02] and gurupal sir
+[99:03] has started
+[99:04] so you can read
+[99:05] from top educators
+[99:06] best subject
+[99:07] on Anacademy Plus
+[99:08] okay
+[99:09] and we have launched
+[99:10] 4 month subscription
+[99:11] for the children of 23
+[99:13] so you can take
+[99:14] subscription of 4 month
+[99:16] very soon
+[99:17] we are going to bring
+[99:18] the best course
+[99:19] on Plus
+[99:20] so the children
+[99:21] want top rank
+[99:22] top rank
+[99:23] expecting
+[99:24] so they should attend
+[99:25] this course
+[99:26] on Plus
+[99:27] and here
+[99:28] you can come
+[99:29] by taking a
+[99:30] 4 month subscription
+[99:31] this is my telegram channel
+[99:32] stay connected to it
+[99:33] so that
+[99:34] no class miss
+[99:35] no
+[99:36] initiatives skip
+[99:37] here
+[99:38] I provide
+[99:39] all the updates
+[99:40] and if you want
+[99:41] PDF of this session
+[99:42] then go to
+[99:43] Anacademy app
+[99:44] homepage
+[99:45] go to community
+[99:46] go to discover
+[99:47] go there
+[99:48] you will get
+[99:49] all my PDFs
+[99:51] download them
+[99:52] and use them
+[99:53] okay
+[99:54] so thank you everyone
+[99:55] thanks a lot
+[99:56] children
+[99:57] now we will meet
+[99:58] tomorrow
+[99:59] same time same place
+[100:00] and tomorrow
+[100:01] in MOSFET
+[100:02] I will make
+[100:03] Cascode connection
+[100:04] I will make
+[100:05] active load
+[100:06] and we will
+[100:07] complete the
+[100:08] Amplifier assignment
+[100:09] so your MOSFET
+[100:10] will be wind up
+[100:11] tomorrow
+[100:12] okay
+[100:13] so let's meet
+[100:14] tomorrow
+[100:15] same time same place

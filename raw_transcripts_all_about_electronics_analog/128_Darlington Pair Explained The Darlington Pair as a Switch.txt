@@ -1,0 +1,118 @@
+Title: Darlington Pair Explained | The Darlington Pair as a Switch
+URL: https://www.youtube.com/watch?v=uQxMnBqNvyI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the Darlington pair.
+[00:21] So this Darlington pair is very popular transistor configuration which provides the very high
+[00:26] value of beta.
+[00:28] And that is why sometimes it is also known as the super beta transistor.
+[00:33] So in this configuration, the emitter of one transistor is connected to the base of
+[00:39] the second transistor and the connector of the boat transistors are connected together.
+[00:45] So if beta 1 and beta 2 are the current gains of this transistor Qn and Q2, then the overall
+[00:52] current gain of this Darlington pair, let's say it is equal to beta D, then it can be
+[00:58] given as beta 1 times beta 2.
+[01:02] So because of its high current gain, this Darlington pair can be used in the applications
+[01:07] where the high current is required.
+[01:10] For example, it can be used in the audio amplifiers or in the display drivers and it can be used
+[01:16] as a switch for the motor or the solenoid control.
+[01:21] Apart from that, because of its high value of the beta, it can also be used as a high
+[01:26] performance emitter follower or the voltage follower.
+[01:29] And in fact, when this Darlington pair is used as an amplifier, then it can be considered
+[01:35] as the cascaded connection of the two common collector amplifiers.
+[01:39] So this is the first common collector amplifier and this is the second one.
+[01:45] Because as you are aware, in the common collector configuration, the input is added at the base
+[01:50] terminal, while the output is taken across the emitter terminal.
+[01:55] So here, the emitter of the first terminal is connected to the base of the second transistor.
+[02:01] That means here, the output of the first amplifier is connected to the input of the second amplifier.
+[02:08] And here, the output is taken across the emitter of the second transistor.
+[02:13] So basically, it is the cascaded connection of the two common collector amplifiers.
+[02:19] So this is how this Darlington pair can be used as a amplifier, where the input is
+[02:24] added at the base terminal, while the output is measured at the emitter terminal.
+[02:29] But we will discuss more about it in the next video.
+[02:33] But here, first of all, let us derive the expression of the beta for this Darlington pair.
+[02:39] So let's say these beta 1 and the beta 2 are the current gain of this transistor Q1
+[02:45] and the Q2.
+[02:47] And let's also denote the current for each transistor.
+[02:51] So here, this will be the base current that is IB1, while this will be the character
+[02:57] current that is IC1.
+[02:59] And this current will be equal to IE1.
+[03:02] Similarly, this current is IB2, while this current is IC2 and the current through the emitter
+[03:12] is equal to IE2.
+[03:15] And here, all these currents are the DC currents.
+[03:19] So as you can see over here, clearly, this IB2 is equal to IE1, right?
+[03:27] And we know that these emitter current can be given as beta plus 1 times IB.
+[03:34] So here, this current IE1 will be equal to beta 1 plus 1 times IB1.
+[03:42] And that is equal to IB2, right?
+[03:45] So now, this character current of the second transistor can be given as beta 2 times IB2.
+[03:53] That is equal to beta 2 times beta 1 plus 1 times IB1.
+[04:01] On the other hand, this character current IC1 can be given as beta 1 times IB1.
+[04:09] Now, commercially, this Darlington pair is available in the single package, where these
+[04:15] two transistors are connected internally.
+[04:18] So if we consider these two transistors as a single unit, then it will have a three
+[04:23] terminals, that is base, character and the emitter.
+[04:27] And let's say for this Darlington pair, this base current is equal to IBD, while the
+[04:33] character current and the emitter current are ICD and the IED respectively.
+[04:40] So here, this IBD is equal to IB1, while this character current ICD is equal to IC1
+[04:50] plus IC2.
+[04:52] That is the summation of these two currents, right?
+[04:56] So this IC1 is equal to beta 1 times IB1, while this IC2 is equal to beta 2 times beta
+[05:05] 1 plus 1 times IB1.
+[05:09] That means ICD is equal to IB1 times beta 1 plus beta 2 plus beta 1 times beta 2.
+[05:22] IB1 is nothing but IBD.
+[05:26] That means ICD divided by IBD, that is the current gain of this Darlington pair is equal
+[05:33] to beta 1 plus beta 2 plus beta 1 times beta 2.
+[05:41] So this is the current gain or the value of beta for the Darlington pair.
+[05:46] Now usually, the product of the beta 1 and beta 2 is very high compared to the beta 1
+[05:51] and the beta 2. So, approximately we can say that this beta d is approximately equal to
+[05:57] beta 1 times beta 2. For example, if beta 1 is 100 and the beta 2 is 200 and the beta
+[06:08] 1 times beta 2 will be equal to 20,000 right. And if you see the total value of the beta
+[06:15] d, then it will be equal to 20,300. So, approximately we can say that the value of the
+[06:21] beta d is equal to 20,000 and that is why usually the current gain of this Darlington pair
+[06:29] is expressed as beta 1 times beta 2. Alright, so now let us understand how this high current
+[06:36] gain is very useful in some applications. Now, one of the most common application of the
+[06:41] Darlington pair is to use it as a switch. So, let us understand the usefulness of this Darlington
+[06:47] pair by understanding how it can be used as a switch. Let us say using the microcontroller,
+[06:54] we just want to turn on and off the particular lamp and for that we are using the BJT as a switch.
+[07:01] So, let us say here the required current through the load is 5 ampere while the beta of the transistor
+[07:08] is equal to 100 and the maximum current which can be delivered by the microcontroller is equal
+[07:15] to 20 milliampere. Now, here as we are using the BJT as a switch, so to draw a 5 ampere current
+[07:23] through the load, the value of this high c set will be equal to 5 ampere right. And to drive
+[07:30] this transistor into the saturation, the value of the base current should be at least equal to
+[07:36] i c set divided by beta that is equal to 5 ampere divided by 100 that is equal to 50 milliampere.
+[07:47] And to ensure the saturation condition or for the deep saturation, let us say the base current
+[07:52] is 5 times this value that means the required value of the base current will be equal to 250 milliampere.
+[08:00] But clearly you can see here this microcontroller can only be able to provide the 20 milliampere.
+[08:07] And hence it won't be able to drive this particular load. But instead of the transistor,
+[08:13] if we use the Darlington pair, then using the same microcontroller, we can drive this particular load.
+[08:19] So, let us say the beta of this Darlington pair is equal to 10000. So, in this case, the i c set is
+[08:28] still 5 ampere. But now, the required value of the base current will be equal to i c set divided
+[08:36] by beta d that is equal to 0.5 milliampere. And for the deep saturation, if we take the value of
+[08:45] i b s 5 times this value, then the required value of the base current will be equal to 2.5 milliampere.
+[08:52] So, just by the base current of 2.5 milliampere, we are now able to drive the load of 5 ampere.
+[09:00] And clearly, now this microcontroller can easily provide the required current.
+[09:06] So, using this Darlington pair, this high current driving load can be easily controlled
+[09:11] even with very small base current. And using the microcontroller also, we can drive such heavy load.
+[09:18] So, that is the very common application of the Darlington pair. But this Darlington pair also has
+[09:24] some disadvantages. First is, the voltage drop across the base and the emitter is larger compared
+[09:31] to the normal transistor. Because in this case, as the two transistors are connected together,
+[09:37] so the overall voltage drop will be that voltage drop across the two transistors.
+[09:43] That means here, this VBE or the VBE of this Darlington pair is equal to VBE1 plus VBE2,
+[09:53] where VBE1 and the VBE2 are the voltage drop across the two transistors.
+[10:00] Then the second is, this saturation voltage we see is larger compared to the normal transistors.
+[10:06] So, for the normal transistors, it is in the range of 0.2 to 0.3 volt.
+[10:11] But for the Darlington pair, it could be even 1 volt or even more.
+[10:16] So, because of this large value of the VCE set, the power dissipation across this Darlington
+[10:22] pair will be very high. For example, if this Darlington pair is used as a switch,
+[10:28] and if it draws the 5 ampere current with the value of VCE set is equal to 1 volt,
+[10:34] then the power dissipation across this Darlington pair will be equal to 5 volt.
+[10:40] And that is why, because of this high power dissipation, this Darlington pair is often used with the
+[10:46] heat sink. Then the limited bandwidth and the low switching speed is the another disadvantage of
+[10:52] this Darlington pair. So, this Darlington pair cannot be used for very fast switching,
+[10:59] but it can be used as a switch to control some device.
+[11:03] So, these are the limitations of this Darlington pair.
+[11:07] So, I hope in this video, you understood what is Darlington pair and how it can be used as a switch
+[11:12] in the high current applications. So, in the next video, we will see that how this Darlington
+[11:18] pair can be used as an amplifier. So, if you have any question or suggestion, do let me know
+[11:24] in the comments section below. If you like this video, hit the like button and subscribe to
+[11:29] channel for more such videos.

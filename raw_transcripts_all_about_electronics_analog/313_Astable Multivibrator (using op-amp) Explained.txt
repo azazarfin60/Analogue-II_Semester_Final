@@ -1,0 +1,176 @@
+Title: Astable Multivibrator (using op-amp) Explained
+URL: https://www.youtube.com/watch?v=T7T3At9N9dk
+Source: Local Whisper (base)
+
+[00:00] In the previous video, we called the general overview about the multi-wire battery circuit.
+[00:17] And we had seen that in case of the A stable multi-wire battery circuit, both states are
+[00:22] A stable states.
+[00:24] And continuously, the output used to get changed between the two states.
+[00:29] And we had also seen that this circuit can be used to design the relaxation oscillator.
+[00:35] And if you are not aware, what is relaxation oscillator?
+[00:39] Then it is a type of oscillator where the output is non-synosodal.
+[00:43] So let us see how this A stable multi-wire battery can be designed using the OPAMP.
+[00:48] Now to realize this A stable multi-wire battery, the OPAM is used with the positive feedback.
+[00:54] And when OPAM is used with the positive feedback like this, then this circuit is known as
+[00:59] the smith trigger.
+[01:01] Now we have already discussed about the smith trigger in detail in the earlier video.
+[01:05] So you can check that video to learn more about the smith trigger circuit.
+[01:09] But for the sake of completeness, let us briefly understand about this smith trigger
+[01:13] circuit.
+[01:14] So here, the fraction of output voltage is given as a feedback to this non-inverting terminal.
+[01:21] But because of this positive feedback, the output should continuously grow.
+[01:26] And as you know, the output cannot grow continuously.
+[01:30] And it will get restricted by the supply voltages.
+[01:33] So let us say, initially, the output of this smith trigger is equal to positive saturation
+[01:39] voltage.
+[01:41] And the fraction of this output voltage is given as a feedback to this non-inverting terminal.
+[01:47] That is equal to R2 divided by R1 plus R2 times this voltage V set.
+[01:56] Or let us say that is equal to beta V set, where beta is nothing but the feedback fraction.
+[02:03] So now if this input voltage V in is less than this voltage beta V set, then the output
+[02:09] will remain to this positive saturation voltage.
+[02:12] Because the output of the op-amp can be given as the open loop gain times the difference
+[02:17] between the two input terminals.
+[02:20] That is V plus minus V minus.
+[02:23] And as the voltage at the non-inverting terminal is more than the voltage at the invoiting terminal,
+[02:28] the output will be positive saturation voltage.
+[02:31] But now when this input voltage is greater than this voltage beta V set, at that time, the
+[02:37] output will go from the positive saturation voltage to the negative saturation voltage.
+[02:42] So when this V in is greater than the voltage V plus, that is the voltage, which is appearing
+[02:48] at this node, then the output will go from positive saturation voltage to the negative saturation
+[02:55] voltage.
+[02:56] And at that time, the voltage which appears at this terminal V plus will be equal to minus
+[03:04] V set times R2 divided by R1 plus R2.
+[03:11] Now let's say that is equal to minus beta V set.
+[03:16] So the output will remain the same until the input voltage goes below this voltage.
+[03:22] And once that happens, once again, the output will switch from the negative saturation
+[03:27] voltage to the positive saturation voltage.
+[03:30] So if you see the transfer characteristic of the smith trigger, then it will look like
+[03:34] this.
+[03:36] So here, this VUT is nothing but the upper threshold voltage.
+[03:40] And in this case, it is equal to beta V set.
+[03:45] And this VLT is nothing but lower threshold voltage.
+[03:49] So in this case, it is equal to minus beta times V set.
+[03:54] So in this case, whenever the input voltage goes above this upper threshold voltage, then
+[04:00] the output will switch from the positive saturation voltage to the negative saturation
+[04:04] voltage.
+[04:05] And whenever the input goes below this lower threshold voltage, at that time, the output
+[04:11] will switch from the negative saturation voltage to the positive saturation voltage.
+[04:16] So this is the basic working principle of the smith trigger circuit.
+[04:20] Now so far in this smith trigger circuit, we have assumed that the input signal is applied
+[04:24] externally.
+[04:25] But suppose if we provide the feedback from output to the input side via resistor and
+[04:30] the capacitor, then the same circuit can be used as a stable multivibrator.
+[04:36] So let us see the working principle of this, a stable multivibrator.
+[04:40] So here, we are assuming that the initial voltage across this circuit is equal to positive
+[04:46] saturation voltage.
+[04:48] So from this path, the capacitor will start charging toward the positive saturation
+[04:54] voltage.
+[04:55] And here, we are assuming that the op-em is an ideal op-em.
+[04:59] So no current is flowing into the op-em terminal.
+[05:03] So as soon as this capacitor starts charging, the voltage will get build up across this
+[05:08] capacitor.
+[05:09] And if you see the voltage at this node, the voltage at this node will also get buildup.
+[05:15] Now whenever this voltage will reach the upper threshold voltage, or in this case, let's
+[05:21] say that is equal to beta V set, then the voltage at the inverting node will be slightly
+[05:27] more than the voltage at the non-inverting node.
+[05:30] So the output of the op-em will switch from the positive saturation voltage to the negative
+[05:36] saturation voltage.
+[05:40] And now the capacitor will start charging towards the negative saturation voltage.
+[05:46] And as soon as the voltage just go below this minus beta V set voltage, at that time, the
+[05:52] voltage at the non-inverting terminal will be slightly more than the voltage at the
+[05:57] inverting terminal.
+[05:58] So once again, the output will switch from the negative saturation voltage to the positive
+[06:03] saturation voltage.
+[06:05] And in this way, by charging and discharging of this capacitor, we will get the square
+[06:09] wave at the output.
+[06:13] So here, the time period T of this A stable multivariator depends upon the value of this
+[06:18] R and C. And as well as, it also depends upon the value of this upper and the lower threshold
+[06:24] voltage.
+[06:25] So eventually, we can say that it depends on the value of this R1 and R2.
+[06:31] So the time period of this square wave for the given multivariator circuit can be given
+[06:36] by the expression 2 times RC, natural log of 1 plus beta divided by 1 minus beta.
+[06:46] So here, as this positive and the negative saturation voltage are equal, so the duty cycle
+[06:51] of this square wave will be equal to 50%.
+[06:55] But if upper and the lower threshold voltage are different, in that case, duty cycle can
+[07:00] be more or less than the 50%.
+[07:05] But here for the simplicity, just let us assume that the duty cycle of the square wave is
+[07:10] equal to 50%.
+[07:12] So for the given configuration, let us design a stable multivariator, which has a frequency
+[07:18] f of 1 kilohertz.
+[07:22] So if f is equal to 1 kilohertz, then the time period T will be equal to 1 millisecond.
+[07:30] So let us put this value T in the expression 2 RC times, natural log of 1 plus beta divided
+[07:40] by 1 minus beta.
+[07:42] And here for simplification, let us assume that R1 is equal to R2 is equal to R. So if
+[07:49] R1 and R2 are equal, in that case, the beta will be equal to 1 by 2.
+[07:55] So this 1 plus beta will become 3 by 2 and the 1 minus beta will become 1 by 2.
+[08:01] And the equation will get simplified to the 2 RC times, natural log of 3.
+[08:08] So now here, let us assume the value of C as 0.1 microfaraday.
+[08:14] And let us find the value of this R. So R will be equal to T divided by 2 times this value
+[08:21] of capacitor multiplied by natural log of 3.
+[08:26] So if you put all the values and solve this expression, then the value of R would roughly
+[08:31] come as 4.5 kilohertz.
+[08:35] So what we can do over here, we can use a potentiometer of 5 kilo ohm and we can tune that pot
+[08:41] to the value of 4.5 kilo ohm.
+[08:44] So to get a frequency of 1 kilohertz, we can select the value of C as 0.1 microfaraday and
+[08:53] value of RS 4.5 kilo ohm.
+[08:57] And we can select value of R1 and R2 as 10 kilo ohm.
+[09:03] So in this way, we can design a stable multivariator which has a frequency of 1 kilohertz.
+[09:11] Now some of you might be wondering how we have got this expression for the stable multivariator.
+[09:17] So let us quickly derive this expression.
+[09:21] So for this derivation, we are only considering the steady state condition of the circuit.
+[09:26] And here we are initially assuming that the voltage initially across the capacitor is equal
+[09:31] to minus beta V set.
+[09:35] And it is charging towards the positive saturation voltage.
+[09:39] Now in the earlier videos of the transient analysis, we had seen that the voltage across
+[09:43] the capacitor can be given by this expression that is V final plus V initial minus V final
+[09:50] times e to the power of minus T by RC.
+[09:54] So in this case, V final is the voltage towards which the capacitor is charging.
+[10:00] So in this case, V final will be equal to positive saturation voltage.
+[10:07] And initial voltage across the capacitor is equal to minus beta V set.
+[10:15] And here we want to find this time T1 which is required by the capacitor to charge from
+[10:21] the minus beta V set voltage to the plus beta V set voltage.
+[10:27] So we can say that this Vc of T1 will be equal to V set plus minus beta V set minus V
+[10:39] set into e to the power of minus T1 by RC.
+[10:44] Now at time T1, the voltage across the capacitor will be equal to plus beta V set.
+[10:52] So now let us just simplify this expression.
+[10:55] And if we simplify it, then we can write it as beta minus 1 is equal to minus 1 plus beta
+[11:03] times e to the power of minus T1 by RC.
+[11:09] Or we can say that 1 minus beta divided by 1 plus beta that is equal to e to the power
+[11:18] of minus T1 by RC.
+[11:22] So let us take the natural log on both sides.
+[11:25] And taking the natural log, we can say that T1 is equal to minus RC times natural log of
+[11:34] 1 minus beta divided by 1 plus beta that is equal to RC times natural log of 1 plus beta
+[11:46] divided by 1 minus beta.
+[11:50] So this is the time T1 which is required by the capacitor to charge from the minus beta
+[11:55] V set voltage to the plus beta V set voltage.
+[11:59] Now here as the duty cycle of this square is 50 percent.
+[12:03] So intuitively we can say that the time required by the capacitor to go from this plus beta
+[12:09] V set voltage to this minus beta V set voltage should remain the same.
+[12:14] That is T1 should be equal to T2.
+[12:17] But still let us derive the expression for this time T2.
+[12:23] So in this case the initial voltage across the capacitor is equal to beta V set and the
+[12:29] capacitor is charging towards the negative saturation voltage.
+[12:33] So we want to find the time T2 which is required by the capacitor to go from this plus beta
+[12:39] V set voltage to the minus beta V set voltage.
+[12:44] So we can say that Vc of T2 will be equal to minus V set plus beta V set minus of minus
+[12:57] V set times e to the power of minus T2 divided by RC.
+[13:05] So if you put the value of this Vc of T2 as minus beta V set then the expression can
+[13:10] be written as minus beta times V set that is equal to minus V set plus V set times 1
+[13:22] plus beta into e to the power of minus T2 divided by RC.
+[13:29] So if you simplify this expression then we can write it as 1 minus beta that is equal
+[13:35] to 1 plus beta times e to the power of minus T2 by RC.
+[13:41] Or we can say that 1 minus beta divided by 1 plus beta is equal to e to the power of
+[13:49] minus T2 divided by RC.
+[13:52] And if you simplify this expression then T2 will come out as RC times the natural log
+[13:58] of 1 plus beta divided by 1 minus beta.
+[14:05] So this expression is same as the expression of T1.
+[14:10] So the total time T is the summation of T1 and T2.
+[14:16] So time period T will be equal to T1 plus T2 or we can say that that is equal to 2 times
+[14:22] RC times natural log of 1 plus beta divided by 1 minus beta.
+[14:34] So in this way we got the expression of the time period for the case of A stable multivariator
+[14:39] which is designed using the OPEM.
+[14:41] And using this expression we can design a stable multivariator for the desired frequency.
+[14:48] So I hope in this video you understood how we can design the A stable multivariator
+[14:53] using the OPEM.
+[14:55] So if you have any question or suggestion do let me know in the comment section below.
+[15:00] If you like this video hit the like button and subscribe the channel for more such videos.

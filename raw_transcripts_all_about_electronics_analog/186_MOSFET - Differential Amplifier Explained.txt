@@ -1,0 +1,279 @@
+Title: MOSFET - Differential Amplifier Explained
+URL: https://www.youtube.com/watch?v=IYR-FxjAym0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will learn about the differential amplifier and we will see that how it
+[00:16] can be designed using the MOSFET.
+[00:19] So as its name suggests, the differential amplifier amplifies the difference between
+[00:23] the two input signal or in other words, it amplifies the differential input signal.
+[00:29] Now, since we are going to talk about the differential signal throughout the video, so it
+[00:34] is good to understand what is the differential signal and how it is different from the single
+[00:39] and the other signal.
+[00:40] So this single and the other signal is measured between the one particular node in the circuit
+[00:45] and the ground, while the differential input signal is measured between the two nodes in
+[00:51] the circuit.
+[00:52] Now this differential signaling is immune to the external noise or the interference and
+[00:58] that is why it is commonly used in the communication as well as in the integrated circuits.
+[01:03] So let us understand this point through an example.
+[01:07] So let's say in one circuit, there are two adjacent lines which are carrying the two
+[01:12] different signal.
+[01:13] The one signal is a large croc signal, while the second signal is a small information signal.
+[01:20] Now due to the capacitive coupling between the two lines, the transition in a one line
+[01:24] will get coupled to the second line.
+[01:27] Now instead of these, suppose if we use the differential signaling and divide the information
+[01:33] signal into the two equal and the opposite phases and if you place the clock signal between
+[01:39] these two lines, then due to the capacitive coupling, the transition will get coupled
+[01:43] to the line L1 and L3 by the equal amount.
+[01:47] But when we measure the differential signal between the line L1 and L3, then it will not
+[01:52] contain any transition.
+[01:55] So in this way, using this differential signaling, we can eliminate any interference or the
+[02:00] noise signal which is present on the both lines.
+[02:04] And in this way, we can protect the signal from the external noise or the interference.
+[02:09] So the same concept is also used in the amplifier circuits.
+[02:14] So let's say we have an amplifier which amplifies the input signal.
+[02:19] Now if there is a noise in the power supply of the amplifier, then it will also get coupled
+[02:24] to the amplifier output signal.
+[02:26] Now if we want to eliminate these power supply noise, then what we can do, we can use the
+[02:31] two identical amplifiers.
+[02:34] That means including the gain, all the characteristics of these two amplifiers are same.
+[02:40] And now we can apply the differential input signal to these two amplifiers.
+[02:45] That means here, these in one and the in two has a equal amplitude.
+[02:50] But they are variety degree phase apart from each other.
+[02:53] Or in other words, these in one is equal to minus way in two.
+[02:58] Now if there is a power supply noise or any other external interference, then it will
+[03:03] also get coupled to the both amplifiers by the same amount.
+[03:07] That means due to this power supply noise or any other external noise, the output of these
+[03:12] two amplifiers will get affected by the same amount.
+[03:16] But when we measure the difference between the two output signals, then this noise which
+[03:21] is common to the both outputs will get eliminated.
+[03:24] And this differential output will be free from the noise.
+[03:29] So the similar concept is also used in the differential amplifier.
+[03:33] So in this way, using this differential signaling and the differential circuits, it is possible
+[03:39] to eliminate the noise or the interference which is common to the both input lines.
+[03:44] So this signal which is common to the both input lines is called the common mode signal.
+[03:51] So this common mode signal could be any external noise or the interference like a power supply
+[03:56] noise or it could be a simple DC offset.
+[04:00] So this differential amplifiers only amplifies the differential input signal and it tries
+[04:06] to eliminate this common mode signal which is common to the both input sides.
+[04:11] So that is the biggest advantage of this differential amplifier.
+[04:15] So this differential amplifiers are widely used in many integrated circuits.
+[04:20] So now let us see how you can design this differential amplifier using the MOSFETs.
+[04:26] Now we are already aware about the common source amplifier.
+[04:30] So if we have two identical common source amplifiers, then as per our earlier discussion, we
+[04:36] can build the differential amplifier.
+[04:39] So both these amplifiers should be identical in all sense.
+[04:43] That means the two MOSFETs have the same device characteristics and they are biased identically.
+[04:49] Moreover, the drain register of the two MOSFETs are also identical.
+[04:54] So in such case, both amplifiers will provide the same gain.
+[04:59] Now if we have the differential input to this amplifier pair and if we measure the differential
+[05:04] output and the circuit will sort of behave like a differential amplifier.
+[05:09] So here, this V in 1 is equal to minus V into.
+[05:14] That means both signals are identical but they are 180 degree phase apart from each other.
+[05:20] Now the only thing which we need to make sure over here is that these two MOSFETs should
+[05:25] operate in the saturation region because here we are using them for the amplification.
+[05:32] Now for a time being, let's say the necessary biasing voltage is already applied to these
+[05:37] both MOSFETs.
+[05:39] So as I said earlier, some common mode input signal will be presented at the both inputs.
+[05:46] But as far as these two MOSFETs are identical, then it will not affect the differential output.
+[05:52] But there is a one problem with this particular circuit.
+[05:55] So here, if the common mode input level changes, then it will also change the drain currents
+[06:00] of both MOSFETs.
+[06:02] And hence, the transcurrents of both MOSFETs will also get changed.
+[06:08] So effectively, the change in the common mode input level can affect the gain of the differential
+[06:13] circuit.
+[06:14] Moreover, if the common mode input level is very low, then it may turn off these transistors.
+[06:21] So we need to make sure that the bias currents or the drain current of these two transistors
+[06:26] have a minimum dependency on these common mode input levels.
+[06:30] So with the simple modification, we can make the drain currents of this transistor independent
+[06:35] of the common mode input levels.
+[06:38] And for that, we can bias these MOSFETs using the current source.
+[06:43] So this current source ISS makes the drain currents independent of the common mode input
+[06:48] levels.
+[06:49] And very shortly, it will get clear to you.
+[06:52] So this is the typical circuit of the differential amplifier.
+[06:56] So in the actual circuits, a simple current mirror can be used to generate this current
+[07:01] source.
+[07:02] Alright.
+[07:03] So now, so far in our discussion, we have assumed that the input to these differential
+[07:08] amplifiers are truly differential inputs.
+[07:11] That means, two inputs are equal in amplitude and they are already degree phase apart from
+[07:16] each other.
+[07:17] Or in other words, this V in 1 is equal to minus V in 2.
+[07:22] But sometimes, this V in 1 and the V in 2 can be a totally different signals.
+[07:28] So in such case, they can be expressed as the combination of the differential and the
+[07:33] common mode input signal.
+[07:34] So let us see how.
+[07:36] So this input signal V in 1 can be expressed as the combination of these two terms.
+[07:42] Similarly, this V in 2 can be expressed as this V in 2 minus V in 1 divided by 2 plus
+[07:49] V in 1 plus V in 2 divided by 2.
+[07:52] So if you see these two terms, then the second term is common in both expressions, which
+[07:58] is the common mode component.
+[08:00] While the first term represents the differential component.
+[08:04] So let us say, this is the V id 1 and this is the V id 2.
+[08:11] And if you see, then this V id 1 is equal to minus V id 2.
+[08:16] So in this way, if the two signals are different from each other, then they can be expressed
+[08:22] as the combination of the differential as well as the common mode input signal.
+[08:26] And then, using the principle of superposition, we can see how the circuit behaves for this
+[08:32] common mode as well as the differential input signal.
+[08:35] So that is being said.
+[08:37] Now let us see how this differential amplifier behaves for the common mode input signal.
+[08:42] So so far, we have discussed that this differential circuit does not respond to this common mode
+[08:48] input signal.
+[08:49] And for this common mode input signal, the differential output of the circuit remains
+[08:53] 0.
+[08:54] While it is true, as far as the two MOSFETs are identical, and the current source is also
+[09:00] ideal.
+[09:01] And for a time being, let us consider this ideal case, where the two MOSFETs are identical,
+[09:07] and the current source is also ideal.
+[09:10] That means the output impedance of this current source is equal to infinite.
+[09:15] So considering this, let us see the behavior of the circuit for this common mode input signal.
+[09:20] So here, for the common mode input signal, if you see the voltage at the gate terminals,
+[09:25] and this VG1 is equal to VG2 is equal to Vcm, where the Vcm is the common mode input signal,
+[09:32] which is presented at the both inputs.
+[09:35] And here, since the source of the both transistors are connected together, so for the both MOSFETs,
+[09:41] the VGS will be same.
+[09:43] And therefore, the same drain current will flow through the both transistors.
+[09:49] That means here, this ID1 is equal to ID2.
+[09:53] So here, this current will be equal to ID1, while this current will be equal to ID2.
+[10:00] And here, this ID1 plus ID2 is equal to ISS.
+[10:05] Now since the ID1 is equal to ID2, so we can say that the value of this ID1 and the ID2
+[10:11] is equal to ISS divided by 2.
+[10:14] That means this current ISS will get equally divided between the two MOSFETs.
+[10:20] So in this case, if you see the VO1 or the voltage at the drain terminal of this first MOSFET,
+[10:27] then it is equal to VDD minus ID1 times RD.
+[10:33] And here, since ID1 is equal to ISS divided by 2, so we can say that this VO1 is equal to
+[10:41] VDD minus ISS divided by 2 times RD.
+[10:46] Similarly, this VO2 will also be equal to VDD minus ISS divided by 2 times RD.
+[10:56] So if you see the differential output voltage, that is VO1 minus VO2, then it will be equal
+[11:01] to 0.
+[11:03] So that is how for the common mode input signal, the output of this differential amplifier
+[11:09] will be equal to 0.
+[11:11] And even if there is a change in the common mode input signal, then also the output of the
+[11:16] circuit will remain 0.
+[11:18] So whenever there is a change in the common mode input level, then this ID1 and ID2 will
+[11:23] remain same.
+[11:25] And since the ID1 and ID2 remain same, so this voltage VGAs for both transistors will
+[11:31] also remain same.
+[11:33] So the only thing which will change with the VCM is the voltage at the source node.
+[11:39] Let's say the voltage at this node is equal to VS.
+[11:44] So as the voltage VCM increases, and the source voltage VS will also increase.
+[11:49] Likewise, as the voltage VCM reduces, and the voltage at this source node or the voltage
+[11:55] VS will reduce.
+[11:57] That means with the change in the voltage VCM, the only thing which will get affected
+[12:01] is this source voltage.
+[12:04] Alright, so now let us find this voltage VGAs when the common mode input signal is
+[12:09] at the time to the differential amplifier.
+[12:12] So as I said earlier, for the common mode input signal, this ID1 is equal to ID2 is equal
+[12:18] to ISS divided by 2.
+[12:20] And in the saturation, the drain current ID can be given by this expression.
+[12:26] So here we are neglecting the effect of the channel and modulation.
+[12:31] Now in this expression, if we put the value of the drain current as ISS divided by 2,
+[12:36] and if we solve this expression for the VGAs, then the value of VGAs will come around
+[12:41] as square root of ISS divided by mu n times Suix times w divided by L plus VTH.
+[12:55] So this is the expression of the VGAs under the presence of the common mode input signal.
+[13:00] Now we know that this VGAs minus VTH is equal to overdrive voltage.
+[13:06] Or we can say that this V overdrive or the overdrive voltage is equal to square root of ISS
+[13:15] divided by these mu n times Suix times w divided by L.
+[13:22] So this overdrive voltage is also known as the equilibrium overdrive voltage.
+[13:27] That means whenever only common mode input signal is present and the differential input
+[13:31] signal is 0, then this is the overdrive voltage for the both MOSFETs.
+[13:36] Alright, so now so far we have seen that even if there is a change in the common mode
+[13:41] input level, then also it will not affect the differential output.
+[13:46] That means for the common mode input signal, this differential output will remain 0.
+[13:52] But now let us see the range of the common mode input signal over which this differential
+[13:56] pair will work properly.
+[13:59] So if the common mode voltage level goes beyond the certain limit, then the MOSFET may enter
+[14:04] into the triode region.
+[14:06] Likewise if the common mode input level falls below the certain level, then it might happen
+[14:12] that the current source won't work properly.
+[14:16] So let us find out the range of this common mode voltage, for which the circuit will work
+[14:21] properly.
+[14:22] So we know that for the MOSFET to operate in the saturation, the drain voltage VD should
+[14:27] be greater than or equal to this VG-VTH, where the VTH is the threshold voltage of the
+[14:35] MOSFET.
+[14:36] So in this case, when the common mode input signal is present, then this drain voltage
+[14:41] VD1 is equal to VD2 is equal to this VDD-ISS divided by 2 times RD.
+[14:50] So this will be the voltage at this drain terminals.
+[14:54] And in this case, this gate voltage VG is equal to VCM.
+[15:00] So from this we can say that these VDD-ISS divided by 2 times RD should be greater than
+[15:08] or equal to these VCM-VTH.
+[15:13] Or we can say that these VCM should be less than or equal to these VDD-ISS divided by
+[15:21] 2 times RD plus VTH.
+[15:25] That means the value of the common mode voltage should be less than this term.
+[15:30] That means the maximum allowable value of the common mode input signal is equal to VDD-ISS
+[15:36] divided by 2 times RD plus VTH.
+[15:40] So if the value of VCM is more than that, then the MOSFET may enter into the triot region.
+[15:46] And to avoid that, the value of VCM should be less than this term.
+[15:51] Similarly, now let us find out the minimum value.
+[15:55] Now for this differential amplifier to work properly, these current source should also
+[16:00] work properly.
+[16:01] Let's say the minimum voltage which is required across the current source for its proper
+[16:06] operation is equal to VX.
+[16:10] So in this case, the minimum voltage VCM which is required is equal to this VX plus VGS.
+[16:19] That means this VCM minimum is equal to this VGS plus VX.
+[16:27] Now many times the current source is biased with the negative supply.
+[16:32] So in that case, the minimum required value of the VCM or this VCM minimum is equal
+[16:39] to minus VSS plus VX plus VGS, where the VGS is the voltage between the gate and the
+[16:48] source of this MOSFET.
+[16:51] So this minimum value of the VCM will ensure that the voltage at this node is at least equal
+[16:56] to VX.
+[16:58] So in general, when the common mode input level is between this maximum and the minimum
+[17:03] level and the differential amplifier will operate properly.
+[17:07] So that is all about the operation of the differential amplifier under this common mode
+[17:11] input signal.
+[17:13] So similarly, now let us understand intuitively how the circuit behaves for the differential
+[17:18] input signal.
+[17:20] So so far we have assumed that the differential input is equal to 0 or in other words, these
+[17:27] V1 is equal to V2.
+[17:31] Now whenever this V1 is slightly greater than V2, then more drain current will flow through
+[17:38] this M1 or in other words, when this V1 is greater than V2, then this drain current ID1
+[17:47] is more than ID2.
+[17:49] Now since the drain current ID1 is more, so there will be a more drop across the transistor
+[17:54] RD and hence this voltage V1 will reduce.
+[18:00] Now since this ID1 plus ID2 is equal to ISL, so as the drain current ID1 will increase,
+[18:08] so this ID2 current will reduce and since the ID2 reduces, then there will be a less drop
+[18:14] across this resistor RD.
+[18:17] So due to that, this voltage V2 will increase.
+[18:21] So in general, when this V1 is greater than V2 or this differential input voltage V1
+[18:27] minus V2 is positive, then this V1 minus V02 will be negative.
+[18:34] And further when we increase this voltage V1, then this V01 minus V02 or this differential
+[18:40] output voltage will become more negative.
+[18:44] And further, if we try to increase this V1 or in other words, if we try to increase
+[18:49] this differential input signal V1 minus V02, then at one point, this MOSFET M1 will
+[18:55] draw the entire current ISS and in that case, this current ID2 will be equal to 0.
+[19:03] So in that case, this ID1 is equal to ISS, while the ID2 is equal to 0.
+[19:12] So since the drain current ID2 is 0, so we can say that this MOSFET M2 is in the off
+[19:17] condition.
+[19:18] So in this condition, this V01 will be equal to this V2 minus this ID1 times RD or we can
+[19:27] say that it is equal to V2 minus this ISS times RD and this V02 will be equal to V2.
+[19:37] So if you see the differential output voltage that is V01 minus V02, then it is equal to
+[19:43] minus ISS times RD and further, if we try to increase this differential input voltage
+[19:50] that is V1 minus V02, then there won't be any change in the differential output voltage.
+[19:56] So if you plot the differential input versus differential output voltage, then for the
+[20:00] positive values of the differential input, the curve will look like this.
+[20:05] Similarly, when the differential input is negative or when this V02 is greater than V1,
+[20:13] then the ID2 will be more than ID1 and in that case, this V02 will be less than V01.
+[20:21] Or in other words, this differential output voltage V01 minus V02 will be positive
+[20:27] and similar to the other case, at one particular differential input voltage,
+[20:31] this M1 will become of and the entire current will be drawn by this MOSFET M2.
+[20:38] So in that case, this differential output voltage is equal to ISS times RD.
+[20:45] So for the negative values of the differential input voltage, this is how the curve will look like.
+[20:51] And here is the curve for the differential input versus the drain current.
+[20:56] So when V01 is equal to V02, then this ID1 is equal to ID2 is equal to ISS divided by 2.
+[21:03] Now as the V01 minus V02 becomes positive, then the ID1 will increase and the ID2 will reduce
+[21:11] and at one particular voltage, the entire current will be drawn by the MOSFET M1.
+[21:16] And in that case, this ID1 will become ISS.
+[21:21] Similarly, on the other side, when the V02 increases and the ID2 will increase and the ID1 will
+[21:27] reduce and at one particular differential input voltage, the entire current will be drawn by the
+[21:33] second MOSFET and in that case, this ID2 will become ISS.
+[21:40] So in the next video, through a large signal analysis, we will find out that at what particular
+[21:45] voltage level this condition will occur, where the entire current is drawn by the particular MOSFET.
+[21:52] Moreover, if you want to use this MOSFET as an amplifier, then it should be operated in the
+[21:57] linear region of this particular curve. So we will find out the range of the differential input
+[22:02] voltage, where it will operate in this linear region. And in that drain, using the small
+[22:08] signal analysis, we will also find the gain of this differential amplifier. So in the next
+[22:13] couple of videos, through a large and the small signal analysis, we will understand all these points.
+[22:19] But I hope in this video, you understood the basics of this differential pair.
+[22:23] So if you have any question or suggestion, then do let me know here in the comments section below.
+[22:29] If you like this video, hit the like button and subscribe to the channel for MOSFET videos.

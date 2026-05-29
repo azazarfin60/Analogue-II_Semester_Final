@@ -1,0 +1,198 @@
+Title: BJT- Small Signal Analysis:  Collector Feedback Configuration (with Solved Example)
+URL: https://www.youtube.com/watch?v=-k2gAo1Ajv4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All-Abode Electronics.
+[00:16] So in the earlier videos on the BJT, we have discussed the common emitter, common collector
+[00:21] and the common base amplifiers.
+[00:24] And we had seen that using the small signal analysis, how we can find the different amplifier
+[00:29] parameters like the voltage gain, the input and the output impedance.
+[00:34] So after this discussion, we are in a position to discuss the multi stage amplifiers.
+[00:40] But before we go through that, let us discuss this collector feedback configuration.
+[00:45] So in the earlier video, we have already seen the DC analysis of this collector feedback
+[00:49] configuration.
+[00:51] But in this video, let us see how to do the AC analysis or the small signal analysis
+[00:56] of this collector feedback configuration.
+[01:00] Now for the AC analysis perspective, this circuit is still common emitter amplifier.
+[01:06] Because here if you observe, the input is applied between the base and the emitter terminal,
+[01:11] while the output is measured between the collector and the emitter terminal.
+[01:15] That means here, this emitter terminal is common between the input and the output side.
+[01:21] So let us do the small signal analysis of this configuration and let us find the different
+[01:25] amplifier parameters like the voltage gain, the input and the output impedance.
+[01:32] So for the small signal analysis, we will follow the same steps.
+[01:36] That means we will consider all the DC voltage sources in the circuit as zero, while we will
+[01:41] replace the coupling capacitors by the short circuit.
+[01:44] And then after, we will replace the BJT by the small signal model.
+[01:50] So if you see over here, the input signal is applied between the base and the emitter, while
+[01:55] this collector register RC is connected between the collector and the emitter terminal.
+[02:01] That means in the AC equivalent circuit, it can be shown like this.
+[02:06] Apart from that, here this base register RB is connected between the collector and the
+[02:11] base terminal.
+[02:13] That means in the equivalent circuit, it can be shown like this.
+[02:18] So this is the AC equivalent circuit of this collector feedback configuration.
+[02:23] So if you see over here, this base register RB is connected between the base and the
+[02:28] collector terminal.
+[02:30] Or in other words, we can say that it is connected between the input and the output side.
+[02:36] So conventionally, if we do the small signal analysis, then it will be very complicated.
+[02:42] But it can be simplified using the Miller's theorem.
+[02:46] So according to the Miller's theorem, if any impedance is connected between the two
+[02:50] nodes, then it can be converted into the two grounded impedances.
+[02:55] And at the same time, ensuring that the voltage and the current in the circuit remains unchanged.
+[03:01] So let's say here, the voltage at this node 1 is equal to V1, while the voltage at this
+[03:06] node 2 is equal to V2.
+[03:10] And let's say this voltage V2 is equal to k times V1.
+[03:16] So according to this Miller's theorem, this Z1 can be given as ZF divided by 1 minus
+[03:23] k.
+[03:24] Similarly, this impedance Z2 can be given as k divided by k minus 1 times ZF.
+[03:34] And it can be easily proved also.
+[03:36] So let's say the current which is going away from this node 1 is equal to I1.
+[03:43] So this current I1 can be given as voltage V1 minus V2 divided by ZF.
+[03:50] That means I1 is equal to V1 minus V2 divided by ZF.
+[03:57] And after the transformation, the current which is going away from this node 1 should remain
+[04:01] the same.
+[04:03] That means this current should be equal to I1.
+[04:07] So in this case, it will be equal to voltage V1 divided by Z1.
+[04:13] So from this, we can say that voltage V1 minus k times V1 divided by ZF is equal to V1
+[04:22] divided by Z1.
+[04:24] Or we can say that this impedance Z1 is equal to ZF divided by 1 minus k.
+[04:33] Similarly, for this node 2, this current I1 is the incoming current.
+[04:38] That means current I1 is equal to V1 minus V2 divided by ZF.
+[04:44] And the same current should also go into this node 2.
+[04:48] That means here, this current should be equal to I1.
+[04:52] So from this, we can say that it should be equal to 0 minus V2 divided by Z2.
+[05:00] That means V1 minus k times V1 divided by ZF is equal to minus k times V1 divided by
+[05:10] Z2.
+[05:11] Or we can say that this Z2 is equal to k divided by k minus 1 times ZF.
+[05:20] So in this way, using this Miller's theorem, we can convert the any impedance between
+[05:25] the two nodes into the two grounded impedances.
+[05:29] So similarly, using this Miller's theorem, we can also represent this resistor RB into
+[05:35] the two grounded impedances R1 and the R2.
+[05:39] So here, this resistor R1 will be equal to RB divided by 1 minus AV, while this resistor
+[05:47] R2 will be equal to AV divided by AV minus 1 times RB.
+[05:55] So here, this AV is equal to voltage gain.
+[05:59] That is, V1 divided by V1.
+[06:03] Because if you see over here, the voltage over here is equal to V1, while the voltage
+[06:08] at this end is equal to input voltage.
+[06:12] Now typically, as the voltage gain is much greater than 1, so this resistor R2 can be
+[06:18] approximatic given as RB.
+[06:22] So in this way, using this Miller's theorem, now it is easy to find the amplifier parameters
+[06:28] like the voltage gain, the input impedance and the output impedance.
+[06:33] And first of all, now let us find out the voltage gain.
+[06:37] So here, this voltage is equal to output voltage.
+[06:42] So here, this output voltage can be given as minus IC times RC parallel R2.
+[06:50] Or we can say that approximately equal to minus IC times RC parallel RB.
+[06:57] Now here, this IC is equal to minus GM times Vp.
+[07:03] And if you see over here, this Vp is equal to input voltage.
+[07:08] That means output voltage V out is equal to minus GM times V in times RC parallel RB.
+[07:17] Or we can say that this voltage gain V out divided by V in, that is AV is equal to minus
+[07:24] GM times RC parallel RB.
+[07:29] Now typically, this base resistor RB is much greater than RC.
+[07:35] So in this condition, when the base resistor RB is much greater than RC in that condition,
+[07:42] this voltage gain is approximately equal to minus GM times RC.
+[07:48] So similar to the other common emitter configurations, this configuration also provides the high voltage
+[07:54] gain.
+[07:55] So similarly, now let us find out the output impedance.
+[08:00] So the output impedance is the Thavine's equivalent impedance, which is seen from the output
+[08:05] side.
+[08:06] And while calculating this impedance, we will consider all the independent sources in the circuit
+[08:11] as 0.
+[08:13] That means this input voltage V in will be also considered as the short circuit.
+[08:18] And once it will get short circuited, then these two resistors R1 and Rpi will also get
+[08:23] short circuited.
+[08:25] And the voltage Vp will also become 0.
+[08:28] So once the voltage Vp will become 0, then this current source will also become open
+[08:33] circuited.
+[08:35] And in that condition, if you see the output impedance, then it is the parallel combination
+[08:40] of RC and the R2.
+[08:43] Or effectively, we can say that it is equal to the parallel combination of RC and the
+[08:48] RB.
+[08:50] So this will be the output impedance of this character feedback configuration.
+[08:54] So similarly, now let us find out the input impedance.
+[08:59] So the input impedance is the equivalent impedance, which is seen from the input side.
+[09:05] And in this case, if you see, it is the parallel combination of this R1 and the Rpi, where
+[09:13] R1 is equal to RB divided by 1 minus AB.
+[09:19] So here, the value of R1 will depend on the value of RB as well as the voltage gain.
+[09:26] But in any case, this input impedance will be always less than the Rpi.
+[09:32] That means in this configuration, the input impedance is in the moderate range.
+[09:36] All right.
+[09:38] So to get some idea about this configuration, let us take one example.
+[09:44] So in this example, we have been asked to find the voltage gain of this amplifier circuit.
+[09:49] And here, we have been given that the voltage Vb is equal to 0.7 volt, while the value of
+[09:55] beta is equal to 16.
+[09:58] So here, to find the voltage gain, first of all, we need to know the value of the transconductors
+[10:03] at the operating point.
+[10:05] And for that, we need to find the value of this character current.
+[10:10] So to find this character current, first of all, let us do the DC analysis.
+[10:15] So here, the character current IC can be found using these expressions.
+[10:21] So here, the base current IB can be given as voltage Vcc-Vb divided by RB plus beta
+[10:29] plus 1 times RC, while the character current IC is equal to beta times IB.
+[10:36] So first of all, let us find the base current.
+[10:39] So here, this base current IB is equal to 12 volt minus 0.7 volt divided by 53 kilo
+[10:49] ohm plus beta plus 1 that is equal to 61 times 1 kilo ohm.
+[10:56] That means the value of this base current IB is equal to 99.12 micro ampere.
+[11:04] And the character current IC is equal to beta times IB.
+[11:08] That means here, this character current IC is equal to 60 times 99.12 micro ampere.
+[11:16] That is equal to 5.94 milli ampere.
+[11:22] So this will be the value of the character current.
+[11:25] And the transconductors GM can be given as IC divided by Vt.
+[11:30] That is equal to 5.94 milli ampere divided by 26 milli volt.
+[11:36] That is equal to 0.228 cements.
+[11:40] All right.
+[11:42] So once we got the value of these transconductors, then let us do the small cement analysis
+[11:47] and let us find the voltage gain.
+[11:49] And for that, if we see the small signal equivalent circuit, then it will look like this.
+[11:55] So here, this RS is the series resistance that is 5.3 kilo ohm while the RC is equal to
+[12:02] 1 kilo ohm.
+[12:03] And here, this R2 is approximately equal to RB.
+[12:08] Similarly, the R1 is equal to RB divided by 1 minus ABB.
+[12:16] And here, this ABB is the ratio of the output voltage to the voltage at the base terminal.
+[12:22] That means ABB is equal to V out divided by VB.
+[12:28] So here, because of this series resistor RS, the input voltage and this voltage VBR not
+[12:34] equal.
+[12:35] That means to find the overall voltage gain V out divided by V in.
+[12:39] We also need to find the ratio of VB and the V in.
+[12:42] So the overall voltage can be out divided by V in will be equal to this V out divided
+[12:47] by VB times voltage VB divided by V in.
+[12:52] So first of all, let us find the value of voltage V out divided by VB.
+[12:58] So as we have discussed earlier, this voltage ABB or the V out divided by VB can be given
+[13:04] as minus GM times RC parallel R2.
+[13:09] Or we can say that it is equal to minus GM times RC parallel RB.
+[13:17] That is equal to minus 0.228 times 1 kilo ohm in parallel with 53 kilo ohm.
+[13:27] And if we calculate the value, then this ABB will come out as minus 2 to 4.
+[13:34] So now to find the overall voltage gain, let us find the ratio of the VB at the input
+[13:39] voltage.
+[13:41] And to find that, we can represent the entire circuit which is on the right hand side of
+[13:46] this base terminal by the equivalent impedance.
+[13:49] And it is equal to the input impedance which is seen from the base terminal.
+[13:55] So as we have just seen, this input impedance Z in can be given as R1 parallel Rp.
+[14:03] So here R1 is equal to RB divided by 1 minus ABB while this Rp is equal to beta divided
+[14:12] by GM.
+[14:15] So in this case, this R1 is equal to 53 kilo ohm divided by 1 minus minus 2 to 4.
+[14:25] That is equal to 235.5 ohm.
+[14:29] While the value of Rp will be equal to 60 divided by 0.228, that is equal to 263.1 ohm.
+[14:40] So this input impedance is equal to 235.5 ohm in parallel with 263.1 ohm.
+[14:50] That is equal to 124.3 ohm.
+[14:54] So this will be the value of the input impedance.
+[14:57] So now we can represent the entire circuit which is on the right hand side of this base terminal
+[15:02] by this input impedance.
+[15:06] And now this voltage VB can be given as VB is equal to Z in divided by Z in plus Rs times
+[15:16] V in.
+[15:17] Or we can say that voltage VB divided by V in is equal to Z in divided by Z in plus Rs.
+[15:28] That is equal to 124.3 ohm divided by 124.3 plus 53100.
+[15:39] That means the overall voltage gain V out divided by V in is equal to voltage V out divided
+[15:45] by VB times VB divided by V in that is equal to minus 2 to 4 times 124.3 ohm divided
+[15:55] by 124.3 ohm plus 53100 ohm.
+[16:01] And if you simplify it then the overall voltage gain will be equal to minus 5.13.
+[16:08] So this will be the overall voltage gain of the given circuit.
+[16:13] So if you see over here the voltage AVV is large that is equal to minus 2 to 4.
+[16:19] But because of this large series resistor the overall voltage gain reduces.
+[16:25] But if the input impedance of the amplifier is high then it would not have affected the
+[16:30] overall voltage gain.
+[16:32] So in such case to achieve the Z voltage gain or for the impedance matching the multiple
+[16:38] amplifier stages can be cascaded.
+[16:41] So in the upcoming videos we will learn more about the multi stage amplifiers.
+[16:46] But I hope in this video you understood about this correct feedback configuration.
+[16:51] So if you have any question or suggestion do let me know here in the comment section
+[16:56] below.
+[16:57] If you like this video hit the like button and subscribe to the channel for more such
+[17:00] videos.

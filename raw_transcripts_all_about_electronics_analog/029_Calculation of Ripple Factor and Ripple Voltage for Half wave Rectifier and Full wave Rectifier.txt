@@ -1,0 +1,100 @@
+Title: Calculation of Ripple Factor and Ripple Voltage for Half wave Rectifier and Full wave Rectifier
+URL: https://www.youtube.com/watch?v=ruEYtTYePRk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous video, we have seen that how to calculate the RMS and average value for
+[00:21] half a and the full-over active wire.
+[00:24] So in this video, let us see how we can calculate the ripple factor for half a and the full-over
+[00:30] active wire.
+[00:32] And then we will also see how to find the ripple factor whenever these rectifiers are
+[00:37] kits are used with the RC filter.
+[00:40] So first let us see how to calculate the ripple factor for this half-over active wire.
+[00:46] Now we know that for the half-over active wire, when we apply a sine wave as an input,
+[00:52] then we will get this kind of waveform at the output.
+[00:56] So if you observe the output waveform after the rectification, then it is not purely DC
+[01:00] output.
+[01:01] So basically it is a pulsating DC and it has some finite AC variation in the output.
+[01:08] And this periodic AC variation on top of the DC voltage is known as the ripple.
+[01:14] And how well the rectifier circuit is able to suppress this ripple is usually defined
+[01:20] by the term known as ripple factor.
+[01:23] So for any rectifier, this ripple factor should be as small as possible.
+[01:29] And it is defined as the ratio of RMS value of the ripple in the waveform to the DC or
+[01:34] average value of the waveform.
+[01:36] Now we already know the DC value or the average value for this half-over active wire.
+[01:42] So to find this ripple factor, first of all we need to find the RMS value of this ripple.
+[01:48] Now for any waveform, the RMS value of the waveform can be expressed by this expression.
+[01:55] So from this we can say that the RMS value of the ripple is equal to square root of VRMS
+[02:01] square minus VDC square.
+[02:04] Now we already know the DC value for this half-over active wire.
+[02:08] That means VDC is equal to VM by Pi.
+[02:12] And the RMS value for the half-over active wire is equal to VM by 2.
+[02:20] So if you put these values, then the RMS value of the ripple will be equal to square root
+[02:27] of VM square by 4 minus VM square by Pi square.
+[02:35] So from this we can say that the RMS value of the ripple will be equal to VM times square
+[02:42] root of 1 by 4 minus 1 by Pi square.
+[02:48] And if we calculate it, then this value will roughly come around as 0.386 VM.
+[02:57] So now let us use this value of RMS ripple and let us find out the ripple factor.
+[03:03] So now we can say that this ripple factor is equal to 0.386 VM divided by VM by Pi.
+[03:14] And if we calculate it, then the ripple factor for the half-over active wire will come as
+[03:20] 1.21.
+[03:23] So in this way we can find the ripple factor for this half-over active wire.
+[03:28] Similarly, now let us find out the ripple factor for the full-over active wire.
+[03:34] So for the full-over active wire also, the formula of ripple factor will remain same.
+[03:40] So first of all, we need to find the RMS value of the ripple.
+[03:44] So like I said earlier, the RMS value of any waveform can be expressed by this expression.
+[03:51] And from this we can say that the RMS value of the ripple will be equal to square root
+[03:57] of VRMS square minus VDC square.
+[04:01] Now for the full-over active wire, this VDC is equal to 2VM by Pi.
+[04:07] And the RMS value for the full-over active wire is equal to VM by root 2.
+[04:15] So let us put this two value in this expression.
+[04:18] And from this we can say that the RMS value of the ripple will be equal to square root
+[04:25] of VM square times 1 by 2 minus 4 by Pi square.
+[04:33] And if we calculate this value, then the RMS value of the ripple will roughly come around
+[04:38] as 0.3 times VM.
+[04:41] So let us use this value and let us find out the ripple factor for the full-over active
+[04:46] wire.
+[04:48] So now the RMS value of the ripple will be equal to 0.3 times VM.
+[04:55] And for the full-over active wire, the average value is equal to 2VM by Pi.
+[05:02] So if we simplify this expression, then the ripple factor for the full-over active wire
+[05:07] will come around as 0.483.
+[05:12] So in this way, we can also find the ripple factor for the full-over active wire.
+[05:17] Now for any active wire circuit, this ripple factor should be as minimum as possible.
+[05:24] And further we can improve this ripple factor by using the RC filter circuit.
+[05:29] So first of all, let us find out the ripple factor for the half-over active wire whenever
+[05:34] it is used with the RC filter.
+[05:37] So with RC filter, if you see the output waveform of this rectifier, then it can be represented
+[05:43] by this yellow waveform.
+[05:46] So up to this voltage VM, the capacitor charges through this diode.
+[05:51] And then after it used to get discharged through this resistor R. So due to the charging
+[05:57] and the discharging of this capacitor, we will get this kind of waveform.
+[06:02] So if you observe this waveform, still it is not purely DC output voltage.
+[06:07] And still it has some finite ripple.
+[06:10] So before finding this ripple factor, first of all, let us find out the peak-to-peak voltage
+[06:15] of this ripple voltage.
+[06:17] So to find the peak-to-peak voltage of this ripple, we need to find the maximum and the
+[06:21] minimum value of this ripple voltage.
+[06:25] So once we know these two values, then we can easily find the peak-to-peak ripple for
+[06:29] this output waveform.
+[06:31] So in this waveform, once the capacitor charges up to this voltage VM, then it will get
+[06:36] discharged through this resistor R. And during the discharging, the voltage across the
+[06:42] capacitor can be represented as VM times e to the power of minus T by RC.
+[06:50] Now here, let us say the time which is required by the capacitor to reach from the maximum
+[06:56] to the minimum voltage is equal to T1.
+[07:00] And let us say this T1 is roughly around capital T, which is the time period of this output
+[07:06] waveform.
+[07:08] And if we put this value in this expression, then we will get the minimum voltage across
+[07:13] the capacitor.
+[07:15] So the minimum voltage of this ripple will be equal to VM times e to the power of minus
+[07:22] T divided by RC.
+[07:26] Now here, we are assuming that the RC time constant of the capacitor is much larger than
+[07:32] this time period.
+[07:35] And under this assumption, we can write this minimum voltage as VM times 1 minus T divided
+[07:43] by RC.
+[07:45] Now if you are not aware, we can write this expression using the Taylor series expansion
+[07:51] because this e to the power x can be written as 1 plus x plus x square plus 2 factorial
+[07:58] plus so on.
+[08:00] And if we assume that this x is much less than 1, in that case, the higher order terms
+[08:06] can be neglected.
+[08:08] And we can write this expansion as 1 plus x.
+[08:13] And if this x is 9, then we can write this as 1 plus x square plus 2 factorial plus

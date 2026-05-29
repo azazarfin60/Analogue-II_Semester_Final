@@ -1,0 +1,241 @@
+Title: Types of Crystal Oscillators Explained | TCXO, OCXO, VCXO Explained
+URL: https://www.youtube.com/watch?v=zkPHaP_AcKM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:10] So previously we have seen that, what is crystal oscillator?
+[00:15] How it works?
+[00:16] And we have also seen the impermeable parameters of the crystal oscillator, which needs to
+[00:20] be considered while selecting the crystal for the specific application.
+[00:25] So in this video, we will see the different types of crystal oscillators, which are used
+[00:30] commercially for the different applications.
+[00:33] And during the video, we will also see the basic working principle of the, this type of
+[00:37] crystal oscillator.
+[00:39] So we have seen that, this crystal oscillator uses a piezoelectric effect of the quartz crystal
+[00:45] to generate the precise electrical signal of the particular frequency.
+[00:50] So depending on the required unability, the temperature stability and the aging rate,
+[00:55] the different types of crystal oscillators are used in the various applications.
+[01:00] So these are the four different types of crystal oscillators, which are used commercially
+[01:04] for the different applications.
+[01:07] So first, let us understand why such different crystal oscillator exist.
+[01:12] So the thing is, this crystal oscillators are inherently very stable compared to the
+[01:17] any other oscillators.
+[01:19] And they used to produce accurate frequency.
+[01:22] But there are certain factors, which can change the output frequency of the crystal oscillators.
+[01:27] And the one of them is the aging of the crystal.
+[01:30] So typically with the aging, the crystal oscillator frequency can change by plus minus 1 ppm to
+[01:36] 5 ppm over 1 year.
+[01:39] Where this ppm stands for parts per million.
+[01:42] So for example, for a 12 MHz crystal oscillator, if the aging rate is plus minus 5 ppm over
+[01:48] 1 year, then after the 5 years, its frequency will change by 300 MHz.
+[01:54] And accordingly, these are the maximum and the minimum possible oscillation frequencies.
+[02:00] So for some applications, this change in the frequency may not make much difference.
+[02:06] But if you see the certain applications, then they demand the high level of stability,
+[02:11] like the precise instrumentation, the space and the military applications.
+[02:16] So typically, to find in the frequency due to aging, some crystal oscillators used to
+[02:21] have a provision to tune the frequency.
+[02:24] So that the error introduced in the frequency due to aging can be compensated.
+[02:29] So typically, in this crystal oscillator, there is an additional trimmer capacitor to
+[02:34] find in the frequency.
+[02:36] That means the change in the frequency due to the aging of the crystal oscillator can
+[02:40] be compensated with the help of these trimmer capacitors.
+[02:44] But apart from that, the crystal oscillator frequency can also change due to the temperature.
+[02:50] And in the normal crystal oscillators, if you see that drift in the crystal oscillator
+[02:54] frequency due to the temperature, then it is substantial compared to the aging.
+[02:59] So in some applications, where a high level of stability is required, such drift in the
+[03:04] frequency due to temperature is not acceptable.
+[03:08] So in such applications, where such high level of frequency stability is required over
+[03:12] the operating temperature range, these different types of crystal oscillators can be used.
+[03:18] So if you see the one such crystal oscillator, then it is the temperature compensated crystal
+[03:23] oscillator.
+[03:24] And commonly it is known as the TCXO.
+[03:27] So typically, over the operating temperature range of 0 to 50 degrees Celsius, if you see
+[03:32] the temperature stability of such crystal oscillators, then it is in the range of plus
+[03:36] minus 0.2ppm to 2ppm.
+[03:39] So for example, if the crystal frequency is 1 megahertz, then over the operating temperature
+[03:45] range, the change in the frequency can be as low as 0.2 hertz, or at the max, it can be
+[03:51] up to 2 hertz.
+[03:53] So as you can see from this numbers, this temperature compensated crystal oscillators
+[03:58] provides much more stability compared to the normal crystal oscillators.
+[04:03] And if you see the typical aging rate of this crystal oscillators, then it is in the
+[04:07] range of plus minus 0.5ppm to 2ppm per year.
+[04:12] So now let us see the typical working principle of this crystal oscillator.
+[04:17] So this temperature compensated crystal oscillator, can rest of the temperature sensor.
+[04:22] And typically, a thermistor is used as a temperature sensor.
+[04:27] Now as you know, this thermistor can have either negative temperature coefficient or the
+[04:31] ton of temperature coefficient.
+[04:34] So in case of the negative temperature coefficient thermometer has the temperature increases,
+[04:38] and the resistance of the thermistor reduces.
+[04:41] On the other end, in case of a positive temperature coefficient trimester has a temperature increases,
+[04:47] and the resistance of the trimester also increases.
+[04:51] So first the thermometer output is converted into the voltage and it is very easy to do that.
+[04:58] So what do you can do?
+[04:59] You can design a voltage divider circuit with the help of the thermistor.
+[05:03] So in this voltage divider circuit, one of the resistor can be a fixed value resistor,
+[05:08] while the other resistor can be a thermistor.
+[05:11] And this voltage divider can be biased with the fixed reference voltage.
+[05:16] So now, has the temperature of the thermistor changes and the resistance of the thermistor
+[05:20] also changes.
+[05:22] And accordingly, the voltage which will appear across the thermistor will also change.
+[05:27] And in this way, we can get the output voltage that is proportional to temperature.
+[05:33] So with the help of the different amplifier circuit, this output voltage of the thermistor
+[05:38] is compared with some fixed reference voltage.
+[05:41] And this circuit is designed in such a way that, at the calibrated temperature, the output
+[05:45] of this difference amplifier provides the fixed output.
+[05:49] So as the temperature changes, then the output of the difference amplifier will also change
+[05:54] linearly.
+[05:55] So this control voltage of the difference amplifier is then given to the varicated diode
+[06:00] of the crystal oscillator.
+[06:02] So as you know, in the varicated diode, the capacitance of the diode changes according
+[06:06] to voltage.
+[06:07] So here, this varicated diode acts as a two-dimensional load capacitor for this crystal.
+[06:13] So here, depending on the change in the temperature, the control voltage which is applied to the
+[06:18] varicated diode is changed in such a way that the crystal oscillator frequency remains
+[06:23] almost constant.
+[06:25] So typically, if you see the change in the crystal oscillator frequency with the temperature,
+[06:30] then it is not linear.
+[06:32] And as you can see, this change in the frequency of the crystal oscillator with the temperature
+[06:36] has a polynomial relationship.
+[06:39] That means here, we cannot directly apply the different amplifier output to the varicated
+[06:43] diode.
+[06:45] So here, to correct the change in the frequency due to temperature, here we need a voltage
+[06:49] polynomial for this varicated diode, which has exactly opposite characteristic to this
+[06:54] given polynomial.
+[06:56] So here, after this reference amplifier, we also have the additional block for this
+[07:01] polynomial generation.
+[07:03] And it generates the required control voltage for this varicated diode.
+[07:07] So in this way, the temperature compensated crystal oscillator maintains the stable frequency
+[07:12] at the output.
+[07:14] So this type of crystal oscillators are widely used in many telecommunication applications
+[07:19] as well as they are also used in the IoT applications.
+[07:23] And apart from that, they are also used in many consumer products where very stable clock
+[07:28] source is required.
+[07:30] Now if you see the some applications, then they demand even higher temperature stability
+[07:34] compared to this PCXO's.
+[07:37] So in such applications, these O1 control crystal oscillators are used.
+[07:43] So as its name suggests, in this type of crystal oscillator, the temperature of the crystal
+[07:47] is controlled with the help of the mini internal O1.
+[07:51] So this O1 control crystal oscillator provides a varicute temperature stability.
+[07:56] So we have seen that in the temperature control crystal oscillator, the temperature stability
+[08:01] was in the PPM, that is parts per million.
+[08:04] But here in this O1 control crystal oscillators, the temperature stability is in the parts per
+[08:10] billion.
+[08:11] So this crystal oscillator provides the temperature stability in the range of 1 PPP to 100 PPP.
+[08:18] And if you see the aging rate, then that is also very low.
+[08:22] So as I said, in this O1 control crystal oscillator, we have a mini O1 inside the crystal
+[08:28] oscillator module.
+[08:30] So typically, a power transistor and the resistor is used as a heating element inside this
+[08:35] mini O1.
+[08:36] And here, the thermistor is used as a temperature sensor to monitor the temperature of this mini
+[08:42] O1.
+[08:43] So using the additional control circuit, this O1 is maintained at the constant temperature.
+[08:49] So here, this control circuit is mounted on this main PCB.
+[08:53] And as you can see, on the other side of this O1, there is a crystal oscillator.
+[08:59] And this entire module is enclosed within the insulated material.
+[09:03] So that the internal temperature of the crystal will not get affected by the ambient temperature.
+[09:09] So now, the question is, what should be the operating temperature of this O1?
+[09:14] So typically, the O1 is operated at the turning point of the crystal, where the slope of the
+[09:19] temperature versus frequency curve is 0.
+[09:22] And the reason for operating the O1 at this point is that, even if there is a change in
+[09:26] the temperature, the change in the frequency of the crystal will be minimum.
+[09:31] Moreover, the operating point of the O1 should be well about the operating range of this
+[09:36] crystal oscillator.
+[09:37] Because as I said, in the O1, the power to undisturbed, or the resistors are used as a
+[09:43] heating element.
+[09:44] So if the operating temperature of the O1 is less than the ambient temperature, then it
+[09:49] is not possible to maintain the O1 at the fixed temperature.
+[09:53] For example, if the operating temperature of the O1 is 25 degree Celsius, and the ambient
+[09:58] temperature is 35 degree Celsius, then it is not possible to maintain the O1 at the
+[10:03] 25 degree Celsius.
+[10:05] And that is why this O1 is operated well about the operating temperature range of this
+[10:09] crystal oscillator, like at 60 or the 70 degree Celsius.
+[10:14] So this O1 control crystal oscillators are used in the applications, where various table
+[10:19] clock frequencies required.
+[10:22] And that is why they are used in the precise instrumentation, as well as in the broadcasting.
+[10:27] Apart from that, they are also used in the high performance computing, as well as in
+[10:32] the military applications.
+[10:35] But the disadvantage of this crystal oscillator is that they consume a lot of power.
+[10:40] And that is why they are not suitable for the battery operated systems.
+[10:45] Moreover, they also have very high warm up time.
+[10:48] Meaning that once the crystal oscillator is turned on, then this O1 will take a few minutes
+[10:53] to reach to the set temperature.
+[10:55] And after that only, we will get the desired frequency.
+[10:59] Apart from that, if you see the cost of this OCOX, then they are much costlier compared
+[11:04] to the other oscillators.
+[11:06] And that is why they are used only in the specific applications.
+[11:11] Now in some applications, where even higher temperature stability is required.
+[11:15] So in such applications, these double O1 control crystal oscillators are used.
+[11:21] So this double O1 control crystal oscillator is made by putting the OCOX in the another
+[11:26] O1.
+[11:28] So here, this outer O1 acts as a buffer layer for the OCOX.
+[11:33] And it prevents any change in the internal over temperature due to the ambient temperature
+[11:37] change.
+[11:38] So, this type of crystal oscillators are ultra stable and provides the highest temperature
+[11:43] stability among the different crystal oscillators.
+[11:47] And also, their aging rate is also very low.
+[11:51] So this stability and the aging rate also depends on the crystal curve.
+[11:56] So typically, the two types of crystals which are used in the oscillators, that is 80
+[12:02] cut and the HC cut.
+[12:04] So if you see the HC cut crystals, then they provide better stability compared to the
+[12:08] HC cut crystals.
+[12:10] So in this way, using the double O1 structure as well as the HC cut crystals, it is possible
+[12:16] to improve the stability of the crystal oscillator.
+[12:19] But this arrangement consumes even more power than the OCOX.
+[12:24] And also, they are very much costly.
+[12:27] So although this type of crystal oscillator provides a very good temperature stability,
+[12:32] but because of their higher power consumption, they are not suitable for the battery-operated
+[12:37] devices.
+[12:38] So to use such crystal oscillators in the battery-operated devices, another version of the OCOX is used.
+[12:45] And this version is known as the evacuated miniatureized crystal oscillator.
+[12:50] For in short, it is known as the EMXO.
+[12:54] So in this type of crystal oscillator, the crystal and the 11 electrical circuits are
+[12:59] integrated in the single chip.
+[13:01] And that electrical assembly is housed on top of the miniatureized O1.
+[13:06] And then this entire assembly is vacuum sealed.
+[13:10] So here, the vacuum inside the assembly provides the required insulation.
+[13:15] And here, because of the miniatureization of the entire assembly, the overall volume
+[13:20] that needs to be heated in the O1 also reduces.
+[13:23] And because of that, the power consumption of the overall assembly will also reduce.
+[13:28] So this version of the crystal oscillator provides the temperature stability between the
+[13:33] TCOX and the OCOX.
+[13:35] Moreover, it consumes less power and it is suitable for the battery-operated devices.
+[13:42] And mainly, they are used in the telecommunication applications.
+[13:45] So, so far, mainly we have seen three types of crystal oscillators.
+[13:50] That is normal crystal oscillator.
+[13:52] The temperature compensator crystal oscillator and the O1 control crystal oscillator.
+[13:57] So now, let us see the last type of crystal oscillator.
+[14:01] That is voltage control crystal oscillator.
+[14:04] So this VCXO is similar to the voltage control oscillator, but it provides the better stability
+[14:10] compared to the VCO.
+[14:11] So, if you see the voltage control oscillators or the VCO, then they have a wider tuning
+[14:17] range compared to the VCXOs.
+[14:19] But when it comes to the temperature stability, then this VCXO provides the better stability.
+[14:26] So this voltage control crystal oscillator can be used for a varated diode as a variable
+[14:31] capacitor.
+[14:32] So, by changing the biasing voltage of this varated diode, it is possible to change the
+[14:36] capacitance.
+[14:38] And in this way, it is possible to tune the frequency of the oscillator from its nominal
+[14:42] frequency.
+[14:43] So, for this VCXOs, the frequency range over which it is possible to change the oscillation
+[14:49] frequency using the control voltage is known as the pulling range.
+[14:53] And typically, it is mentioned in the PPM.
+[14:56] So, for the normal crystal oscillator, if you see the pulling range, then it is from
+[15:01] plus minus 5 PPM to 10 PPM.
+[15:04] But for this voltage control crystal oscillator, this pulling range varies from plus minus
+[15:09] 10 PPM to 2000 PPM.
+[15:12] So, typically, this voltage control crystal oscillators with a higher pulling range have
+[15:17] a lower stability.
+[15:18] So, while saluting the voltage control oscillator for the specific application, to get a good
+[15:23] stability, one should not go beyond the required pulling range.
+[15:28] So, this voltage control crystal oscillators are used in many phase-look loop systems, and
+[15:34] they are also used in many telecommunication applications.
+[15:37] Apart from that, they are also used in many tests and the measurement instruments, where
+[15:42] it is required to change the clock frequency.
+[15:45] And apart from that, they are also used in many industrial control systems.
+[15:50] So, these are some of the applications of the VCXO.
+[15:53] So, I hope through this video, you understood what are the different types of crystal oscillators?
+[15:59] What is their work in principle?
+[16:01] And how they are used in the different commercial applications?
+[16:04] So, if you have any question or suggestion, then do let me know here in the comment section
+[16:09] below.
+[16:10] If you like this video, hit the like button and subscribe us on our post-mortgage videos.

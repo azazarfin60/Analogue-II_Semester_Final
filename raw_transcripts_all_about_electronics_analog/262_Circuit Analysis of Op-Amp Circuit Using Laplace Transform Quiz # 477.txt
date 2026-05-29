@@ -1,0 +1,91 @@
+Title: Circuit Analysis of Op-Amp Circuit Using Laplace Transform | Quiz # 477
+URL: https://www.youtube.com/watch?v=CfC4X-Z-ooE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given the open based circuit and in this circuit, this
+[00:16] exponentially decaying signal is applied as an input.
+[00:20] So here, we have been asked to find the output voltage of the circuit 40 greater than 0.
+[00:26] So here, since the input is the exponentially decaying signal, so it is better to do
+[00:31] the circuit analysis of the given circuit using the Laplace transform.
+[00:35] So first of all, let us find the equivalent S domain circuit for the given circuit.
+[00:40] Now here if you see, and the op-m is used with the negative feedback, that means here, the
+[00:45] op-m is used in the linear region.
+[00:48] And since it is used in the linear region, so there will be a linear relationship between
+[00:52] the output and the input.
+[00:54] And that is why whenever we do the Laplace transform of the given circuit, then in the equivalent
+[00:59] S domain, the op-m will remain as it is.
+[01:02] Now apart from the op-m, in the equivalent S domain, the resistors will remain as it
+[01:07] is.
+[01:08] And similarly, you see the capacitor, then in the equivalent S domain, that corresponds
+[01:13] to 1 divided by CS.
+[01:16] Because here, we are assuming that the initial conditions of the circuit are 0.
+[01:20] And here, the value of CS is equal to 50 microfarad A.
+[01:24] So we can say that that is equal to 1 divided by 50 times 10 to the power minus 6 times,
+[01:31] as, or we can say that that is equivalent to 20,000 divided by S. So that is the equivalent
+[01:39] representation for the capacitor.
+[01:42] And similarly, if you see the input voltage V in T, then that is equal to 3 times U to the
+[01:48] power minus 5 T times U of T. So in the equivalent S domain, that corresponds to 3 divided by S
+[01:55] plus 5.
+[01:57] So in this way, we got the equivalent S domain representation for the each circuit element.
+[02:02] And now, if we see the equivalent S domain circuit, then this is how it will look like.
+[02:08] So for the given circuit, let us do the circuit analysis in the S domain.
+[02:12] And let us find the output voltage V of S in the S domain.
+[02:16] And then, using the inverse Laplace transform, we can easily find the equivalent time domain
+[02:21] expression.
+[02:22] So here, let us say, the voltage at this node is equal to Vx.
+[02:27] And as you can see, here the opem is used with the negative feedback.
+[02:31] That means here, we can apply the concept of the virtual ground.
+[02:35] That means here, this V plus is same as the V minus.
+[02:40] That means here, the voltage at the inverting and the non-inverting terminal of the opem
+[02:44] will remain same.
+[02:46] So here, as you can see, this V plus is equal to 0.
+[02:50] So we can say that here, the V minus will also remain 0.
+[02:54] Or equivalently, we can say that this Vx is also equal to 0.
+[02:59] So now, let us apply the KCL at this node.
+[03:03] So if we apply the KCL at this node, then the summation of all the incoming current should
+[03:07] be equal to 0.
+[03:09] So we can say that that is equal to 3 divided by s plus 5 divided by 20 kilo ohm.
+[03:16] That is this current plus V out divided by this 20,000 s.
+[03:24] That is this current plus V out divided by 10,000.
+[03:29] That is this current should be equal to 0.
+[03:33] For further, we can write it as 3 divided by this 20,000 times s plus 5 plus s times
+[03:42] V out divided by 20,000 plus V out divided by 10,000 and that is equal to 0.
+[03:51] So now, if we multiply both sides by that 20,000, then further we can write it as this
+[03:57] 3 divided by s plus 5 plus s times V out plus 2 times V out that is equal to 0.
+[04:06] Or further, we can write it as this s times V out plus 2 times V out that is equal to
+[04:13] minus 3 divided by s plus 5.
+[04:16] So we can say that this V out is equal to minus 3 divided by this s plus 5 times s plus
+[04:23] 2.
+[04:24] So in this way, we got the expression of the output voltage in the s domain.
+[04:30] So now, to find the inverse Laplace transform, let us use the partial fraction expansion
+[04:35] method.
+[04:36] So using the partial fraction expansion, let's say it is equal to a divided by s plus
+[04:41] 2 plus b divided by s plus 5.
+[04:45] So now, we just need to find this coefficient say in the b.
+[04:49] So for finding the coefficient a, what we will do?
+[04:52] We will multiply the left hand side by the s plus 2 and we will evaluate the value of
+[04:56] the expression at s is equal to minus 2.
+[04:59] So now, this s plus 2 in the numerator and the denominator will get cancelled out.
+[05:04] And if you put the value of s is equal to minus 2, then the value of a will come out as
+[05:09] minus 1.
+[05:10] Similarly, for finding the coefficient b, what we will do?
+[05:14] We will multiply the left hand side by the s plus 5 and we will evaluate the value of
+[05:19] the expression at s is equal to minus 5.
+[05:22] So once again, this s plus 5 in the numerator and the denominator will get cancelled out.
+[05:27] And in this expression, if you put the value of s is equal to minus 5, then the value of
+[05:32] b will come out as 1.
+[05:35] So in this way, the value of a is equal to minus 1, while the value of b is equal to plus
+[05:40] 1.
+[05:42] So in the above expression, if you put the value of a and b, then the expression of this
+[05:46] v out of s is equal to minus 1 divided by s plus 2 plus 1 divided by s plus 5.
+[05:52] And as you can see, now we can easily find the inverse Laplace transform of the given
+[05:56] expression.
+[05:57] So if we take the inverse Laplace transform, then the first term is equal to e to the
+[06:02] power minus 2 t times u of t.
+[06:05] Likewise, the second term corresponds to e to the power minus 5 t times u of t.
+[06:10] So we can say that the expression of the output voltage in the time domain is equal
+[06:15] to e to the power minus 5 t minus e to the power minus 2 t times u of t.
+[06:21] So you can say that for the given circuit, the output voltage v out can be given by this
+[06:26] expression.
+[06:27] And therefore, for the given question, this is the correct answer.

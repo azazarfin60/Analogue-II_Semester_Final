@@ -1,0 +1,2524 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Characteristics of Op-Amp | Ankit Goyal
+URL: https://www.youtube.com/watch?v=acc99d_0OCc
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone. A very good morning to all of you. And a very happy Diwali to all of you.
+[00:15] So we are live in Laxabash 2.2 once again for Analog Electronics.
+[00:21] I know that you all want to enjoy a lot. I also know that today is India-Pakistan match.
+[00:30] But don't worry, you will be free before the match. At the same time, it is very important that we complete our syllabus on time.
+[00:38] When I started this Analog series, I had one goal that it is to finish it on time.
+[00:45] If you see the playlist of YouTube, then when live classes go on, they often extend and take months.
+[00:53] So if you see in this playlist, usually 1.5 to 2 hours your lectures are going on so that this subject can be finished on time.
+[01:01] And the second thing is that I had thought that I will complete this subject in around 100 hours.
+[01:09] But as much as there is interaction with you, which are the features of this course that I am giving you assignments, I am discussing assignments.
+[01:16] So it will take more than 100 hours. We have already done 75 hours in this course.
+[01:21] And now we have started OPAMP. So what I am expecting is that you should have this playlist around 120 hours.
+[01:28] But for this forever and ever, you will have the best playlist of Analog on YouTube.
+[01:34] If you ever refer to any topic, then you will be able to revision in the best way.
+[01:40] Plus you are getting all the PDFs, so you will have all the notes available, right?
+[01:46] So with this purpose, I am continuing this Analog with the same vision that this Analog should be a one-stop solution.
+[01:55] The child should be preparing for electrical, EC, gate, and ESE.
+[02:01] He should understand everything. Yes, dear, I had to join the electrical people since yesterday.
+[02:07] That is not the case today. Okay? So let's continue today.
+[02:12] Today I am going to tell you some of the parameters of OPAMP in this lecture.
+[02:17] On which your numerical can be framed and which is very important for the understanding of OPAMP.
+[02:24] And I hope that you are enjoying this Analog with me.
+[02:28] Because my way of studying Analog is that we have to bring it purely to the network.
+[02:33] Because if we bring it purely to the network, then we don't have to worry about other things.
+[02:38] The second thing is that we should understand the physical significance of every circuit and every derivation.
+[02:46] We should understand why this circuit was made and why it was moved to another technology.
+[02:51] What were the advantages? What were the drawbacks?
+[02:53] Because Analog is nothing but network analysis plus some physical applications.
+[03:00] Right? You don't understand what is the practical use of any circuit in the network.
+[03:05] But you should understand in Analog that any circuit is being made.
+[03:09] So there is a purpose behind it.
+[03:12] Thank you Sussobhan dear.
+[03:14] And it is a very good thing that even though all this is happening, if you are preparing, then it is very good.
+[03:20] Even though you are sick.
+[03:21] I search for such emotions and such motivation in my students.
+[03:25] So I am here to tell you one more thing kids.
+[03:28] For me, it never happens that my favorite student or my best student is very intelligent.
+[03:34] Who is very high performing, who is not taking too much numbers.
+[03:38] For me, my favorite student or my best student's definition is somebody who is very very committed,
+[03:45] very dedicated, very very hard working.
+[03:48] If any child is like that, who can live and die in preparation.
+[03:52] Then no student can be better than that in my eyes.
+[03:56] Because see what happens?
+[03:57] Someone has a lot of brains but that person is not hardworking.
+[04:01] So if not today, then tomorrow will definitely fail.
+[04:04] And the child who has less brains or talent but is very hardworking.
+[04:08] If not today, then tomorrow will definitely be successful.
+[04:11] But this hardworking child will be successful on every level of his life.
+[04:16] It will not happen that today he got success and tomorrow he failed again.
+[04:20] Once his success journey starts, then this will remain successful.
+[04:25] Wherever he will try, he will have a basic talent of hard work.
+[04:31] He has learnt to live his life.
+[04:33] He has got the passion of life.
+[04:34] He has got motivation in him.
+[04:36] This child will never lose.
+[04:37] And the person who is winning, as he is winning, but he has not learnt to do hard work.
+[04:43] He will come at one point and fall in a very bad way.
+[04:47] He will fail in a very bad way.
+[04:48] That is why I feel very good when you guys do something extraordinary.
+[04:54] When you guys keep your personal problems aside and focus on your career.
+[04:59] Even after overcoming your hardships, you do classes.
+[05:03] You complete syllabus.
+[05:05] This is what you have to learn in preparation.
+[05:07] You will learn the concept.
+[05:09] You will solve the numerical.
+[05:11] But if you have this attitude of hardworking, then you will carry this lifelong.
+[05:17] This thing will never leave you and you will never stay behind.
+[05:21] Because you have learnt the way to live your life.
+[05:24] If I talk to you guys in today's date, then I am 10 years senior than Gate.
+[05:31] But despite being 10 years senior, I am working so hard in today's date.
+[05:35] Because from the beginning, this attitude has become the same.
+[05:38] From IIT JEE, from Gate, from college, this attitude has become the same.
+[05:43] Whatever you do, you put your whole heart into it.
+[05:45] You do it with all your heart.
+[05:47] And that is why you stay ahead.
+[05:49] And this attitude has to be brought into you.
+[05:53] Let's start today's discussion.
+[05:56] Let's go.
+[05:58] Before today's discussion, let me tell you.
+[06:00] Biggest Diwali giveaway for you from Unacademy.
+[06:04] So the first 300 subscribers are giving Unacademy 25% off.
+[06:10] But you will not get this from Uncle Sir's regular code.
+[06:14] You will get it from this code.
+[06:16] D L L Q N I R P.
+[06:19] If you use this code, you will get 25% off.
+[06:24] Okay?
+[06:25] Architect, you can do today's class.
+[06:27] If you know what OPAMP is, then more than enough.
+[06:32] So today, I am going to start with open loop configuration.
+[06:36] So first of all, I will talk about differential amplifier.
+[06:39] Differential amplifier.
+[06:42] Look, what we say is that high input resistance.
+[06:50] As I told you yesterday, the input resistance of OPAMP is high.
+[06:54] So because of high input resistance, we say that
+[07:01] the current in the non-inverting and inverting terminals of OPAMP
+[07:06] will be approximately zero.
+[07:09] I told you yesterday also, right?
+[07:11] If you take high input resistance, you can say
+[07:16] input current is approximately zero.
+[07:20] Which means that these R1 and R2 resistances
+[07:25] will have a voltage drop of zero across them.
+[07:29] There will be no voltage drop across them.
+[07:32] And because of this, you can say
+[07:35] the voltage of the non-inverting terminal will be V in 1 or V1
+[07:40] and the voltage of the inverting terminal will be V2.
+[07:44] Can you say that?
+[07:46] Now OPAMP works as a differential amplifier.
+[07:50] It amplifies the difference of the two voltages.
+[07:54] You can say that here, VD.
+[07:58] VD means the people who have done differential amplifiers with me
+[08:02] will know its name and we are telling the people who don't know it.
+[08:06] VD is called as the differential input
+[08:11] whose value is non-inverting voltage minus the inverting voltage.
+[08:18] So what does OPAMP do?
+[08:20] It amplifies the difference.
+[08:27] So what is V0?
+[08:31] A, VD, A, V1 minus V2.
+[08:39] A, V1 minus V2.
+[08:42] Now it is clear.
+[08:44] Now it is clear.
+[08:48] Rn is saying, Sir, don't do any private class.
+[08:51] We are college students. We have to go to college.
+[08:53] We can't attend live.
+[08:55] The video is public for 24 hours.
+[08:57] It doesn't mean that you have to do it live.
+[08:59] You can watch it recorded in 24 hours.
+[09:01] Because the students who are going to college,
+[09:03] I agree that if they are going to college for 8-12 hours,
+[09:06] then they can also be recorded in a 1.5-2 hour class.
+[09:11] If you make excuses like this,
+[09:13] then it is difficult to rank anyway.
+[09:15] So what will you do by watching the video?
+[09:17] So A into V1 minus V2.
+[09:21] Now it is clear.
+[09:23] Now what is the problem here?
+[09:25] You must know that open loop gain is very high.
+[09:30] Open loop gain is very high.
+[09:34] So if there is a slight difference between V1 and V2,
+[09:38] then it will saturate.
+[09:41] I told you that the output of an opamp
+[09:44] can't exceed the saturation voltage.
+[09:49] It can never exceed the supply voltage.
+[09:52] Do you remember?
+[09:54] Do you remember?
+[09:55] I told you this thing yesterday.
+[09:57] I will draw a graph and show you.
+[09:59] And brother Theta,
+[10:01] you immediately supported RN.
+[10:04] I cut his point and you immediately lost your comment.
+[10:08] My brother will have to make consistency to rank.
+[10:12] If you keep giving excuses like this
+[10:14] that they go to college and they do this and that.
+[10:16] If the exam didn't come out,
+[10:18] then who will give an excuse for this?
+[10:21] We used to go to college.
+[10:23] We also had a load of college.
+[10:25] How far will you run?
+[10:26] They all give excuses.
+[10:27] So if we see the graph of V0 versus VD,
+[10:31] then this becomes our supply voltage.
+[10:37] Okay.
+[10:45] What is happening?
+[10:46] Is this a line?
+[10:47] Okay.
+[10:49] Now what do we say?
+[10:51] Yesterday I showed you the characteristic.
+[10:54] What type it is.
+[11:00] That there is a very high slope from here.
+[11:06] Okay.
+[11:11] And then it saturates like this.
+[11:14] So in the open loop configuration,
+[11:16] the biggest problem is that
+[11:19] the saturation comes on the voltages
+[11:22] with a very small difference.
+[11:25] If there is a slight difference in voltage,
+[11:28] then the voltage will saturate here.
+[11:31] The output will saturate.
+[11:33] Okay.
+[11:35] This is V and this is minus V.
+[11:40] It is clear.
+[11:41] So what will we say here?
+[11:45] What do we know?
+[11:46] OPAMP output
+[11:49] OPAMP output
+[11:52] can never exceed.
+[11:57] Can never exceed.
+[12:00] And I showed you this yesterday by proving it.
+[12:04] Supply voltages.
+[12:07] So even for
+[12:14] a small
+[12:21] differential input,
+[12:28] the output saturates.
+[12:37] Okay.
+[12:38] This is a problem.
+[12:40] And we will run this problem by putting feedback.
+[12:43] Yesterday I told you that when we put feedback
+[12:46] in OPAMP,
+[12:47] the gain that comes
+[12:49] that actually depends
+[12:51] that actually depends on the external resistances.
+[12:55] That actually depends on the
+[12:57] external resistances.
+[12:59] With which we can control the gain
+[13:02] and we can avoid the saturation.
+[13:05] Yesterday I showed you one more thing.
+[13:08] If we reduce the slope here,
+[13:12] then the linear region
+[13:14] can be increased.
+[13:19] We attended yesterday's class.
+[13:21] What does saturation mean?
+[13:23] Did you watch the video yesterday?
+[13:28] Tell me.
+[13:30] Group of engineers.
+[13:33] Tell me.
+[13:36] Did you watch the lecture yesterday or not?
+[13:39] So what are we saying here?
+[13:42] By use of
+[13:46] negative feedback,
+[13:51] we can reduce gain
+[13:57] we can reduce
+[13:59] gain
+[14:01] and increase
+[14:03] the linear region.
+[14:18] You can see half of it.
+[14:20] I told you about saturation.
+[14:22] The output here is linearly increasing with input.
+[14:25] What is happening in front of it?
+[14:27] Increase the input.
+[14:28] The output is getting fixed.
+[14:30] If the output is constant when increasing the input,
+[14:33] we will call it saturation.
+[14:35] You must recognize saturation in the graph.
+[14:37] Like you see in BH curve.
+[14:39] What happens there?
+[14:40] From where the graph starts to be flat,
+[14:42] we call it saturation.
+[14:44] After that, you can increase the input.
+[14:47] The output will remain fixed.
+[14:50] Okay?
+[14:53] Now stop.
+[14:54] Don't run on positive feedback.
+[14:56] Next is inverting amplifier.
+[14:58] What does inverting amplifier mean?
+[15:01] You are putting input on the inverting terminal.
+[15:05] And you have grounded the non-inverting terminal.
+[15:10] So what have you done?
+[15:12] You have given input on the inverting terminal.
+[15:16] And you have grounded the non-inverting terminal.
+[15:22] Now you understand here.
+[15:24] The current will remain zero.
+[15:27] The current will remain zero due to high input resistance.
+[15:31] What can you say here?
+[15:33] The positive terminal voltage is zero.
+[15:37] And the negative terminal voltage is Vin.
+[15:42] So if you take out the output voltage here,
+[15:47] then your output voltage will be very simple.
+[15:51] V0
+[15:53] is A
+[15:55] V positive minus V negative.
+[15:59] That is the difference.
+[16:01] If the positive terminal is grounded, then it is zero.
+[16:04] There is Vin on the negative.
+[16:06] So here you see minus A Vin.
+[16:09] So what does this mean?
+[16:11] That the gain is negative?
+[16:13] Like the common source amplifier used to come in common source amplifier.
+[16:17] If the gain is negative, what does this mean?
+[16:21] This means 180 degree shift
+[16:24] between input and output.
+[16:28] This means 180 degree shift
+[16:32] between
+[16:35] input and output.
+[16:40] Okay?
+[16:41] Okay?
+[16:45] So the gain is negative.
+[16:47] That means 180 degree shift.
+[16:50] So that is why the inverting is said.
+[16:52] If the input is positive, then the output is negative.
+[16:56] And if the input is negative, then the output is positive.
+[16:59] So the inverting amplifier means
+[17:02] that the gain should be negative.
+[17:05] Or say your sign
+[17:08] the sign between output and input
+[17:11] should be reversed.
+[17:13] The shift should be 180 degree.
+[17:20] Okay?
+[17:21] That is clear.
+[17:24] So let me write this.
+[17:26] What does inverting amplifier mean?
+[17:31] Polarity
+[17:33] of output
+[17:36] is inverted.
+[17:39] Is inverted
+[17:42] with respect to input.
+[17:45] The polarity of output is inverted
+[17:48] compared to input.
+[17:50] This is how the non-inverting amplifier is.
+[17:53] Now look here.
+[17:55] Where did you put the input, son?
+[17:57] You put the input on the non-inverting terminal.
+[18:00] Current is zero again.
+[18:02] If the current is zero,
+[18:05] then the voltage of positive terminal
+[18:08] that will be input voltage.
+[18:11] Negative terminal is grounded.
+[18:15] Now the VD which you call differential input
+[18:19] what is this?
+[18:21] The difference of the non-inverting or inverting terminal voltage
+[18:26] that is V in minus zero.
+[18:29] So that is V in.
+[18:32] Now what is V naught?
+[18:34] A VD
+[18:35] will come here.
+[18:37] A V in.
+[18:39] So gain is positive this time.
+[18:41] Gain is positive this time.
+[18:44] That is zero degree shift
+[18:47] between input and output.
+[18:50] Like common base amplifier,
+[18:52] common collector amplifier
+[18:54] or common gate amplifier,
+[18:56] common source, common drain amplifier.
+[18:59] So in all this,
+[19:01] your zero degree shift comes
+[19:03] as it is coming here.
+[19:05] So here the output is not inverted.
+[19:09] So non-inverting.
+[19:11] So where the opposite sign will come from the output input
+[19:15] that is an inverting amplifier.
+[19:17] So you can also say that
+[19:19] common emitter amplifier of a BJT
+[19:21] is an inverting amplifier.
+[19:23] Common source amplifier
+[19:25] of JFET and MOSFET
+[19:27] is an inverting amplifier.
+[19:29] Let's talk about the non-inverting amplifier.
+[19:32] So common base, common collector amplifier
+[19:35] or common drain
+[19:37] or common gate amplifier
+[19:39] are both non-inverting amplifier.
+[19:43] Okay.
+[19:44] So you can also relate this from the back.
+[19:47] Why do we put resistance?
+[19:49] Dear, this is the resistance of the source.
+[19:51] We didn't put resistance.
+[19:53] But you can't make an ideal voltage source.
+[19:56] Okay.
+[19:58] So this is the resistance of the source.
+[20:01] Here I had to ground the inverting terminal.
+[20:04] I will directly ground it.
+[20:06] Now the thing is, sir,
+[20:08] why should we use feedback in opamp?
+[20:10] Okay.
+[20:11] So the first reason is, dear,
+[20:13] that we have to use feedback
+[20:15] so that we can increase the linear region.
+[20:19] Increase the linear region.
+[20:22] Then I want the gain of opamp
+[20:25] to be in my control.
+[20:27] Look, you all know
+[20:29] that if a normal opamp is raised,
+[20:31] then its open loop gain is
+[20:33] 10 power 5, 10 power 6
+[20:35] in this range.
+[20:37] But if I want
+[20:39] the gain of opamp to be in my control,
+[20:42] then I want to control that gain
+[20:45] using external components
+[20:47] like with the help of resistances,
+[20:50] then we need a feedback.
+[20:54] The second reason is,
+[20:56] I want to make the gain of opamp
+[20:58] independent of the external operating condition
+[21:02] like the supply, temperature,
+[21:04] all these things.
+[21:05] So I want the gain
+[21:07] to be independent of all these factors
+[21:10] and also for feedback.
+[21:12] Okay, let me tell you one thing.
+[21:14] What happens?
+[21:15] If a normal open loop opamp is taken,
+[21:18] then its gain also depends on this.
+[21:21] What is bi-sync?
+[21:23] Bi-sync means the supply voltage
+[21:25] V and minus V
+[21:26] is useful for bi-sync.
+[21:28] So the gain depends on this.
+[21:30] What is bi-sync?
+[21:31] If I put the feedback,
+[21:33] then my gain depends on this
+[21:35] that what is the value of my resistances?
+[21:38] What is the value of the
+[21:40] resistance used in the feedback?
+[21:42] It depends on this.
+[21:44] If my child depends on this,
+[21:46] what is the value of the resistance?
+[21:48] Then it is independent of the voltage.
+[21:50] Okay?
+[21:51] It is independent of the voltage.
+[21:54] And if you control the gain of opamp,
+[21:58] then the gain into bandwidth is constant.
+[22:01] You all know that.
+[22:02] This means you can even control
+[22:05] the bandwidth of the opamp.
+[22:08] Do you understand?
+[22:09] You can even control the bandwidth.
+[22:12] So if we summarize the reasons,
+[22:14] then what is it?
+[22:15] Increase the linear region.
+[22:16] Control the gain
+[22:18] by means of external resistance.
+[22:21] Make the gain independent
+[22:23] with the variation of voltage and temperature.
+[22:25] And increase the bandwidth.
+[22:28] Because the less the gain,
+[22:31] the more bandwidth you have.
+[22:34] Do you understand?
+[22:36] If the gain is 10 to the power 5,
+[22:38] then the bandwidth is very small.
+[22:39] So if the bandwidth is increased,
+[22:41] what does bandwidth mean?
+[22:42] You all tell me.
+[22:43] What is the significance of bandwidth?
+[22:45] Say an amplifier.
+[22:47] Let's see which one will be right in the chat.
+[22:49] I have told you many times before.
+[22:51] But do you feel the bandwidth?
+[22:53] I want to know this.
+[22:55] What is bandwidth?
+[22:56] And why is it relevant for an amplifier?
+[23:00] What is the significance of bandwidth?
+[23:04] Tell me.
+[23:07] What is the significance of bandwidth?
+[23:18] Range of frequencies
+[23:22] where your gain is high
+[23:25] is very correct.
+[23:27] We can say that
+[23:29] range of frequencies
+[23:31] where an amplifier
+[23:33] provides a certain level of gain
+[23:36] that is your bandwidth.
+[23:38] What is the work of an amplifier?
+[23:40] Amplify.
+[23:41] So which range of frequencies
+[23:43] can be amplified in a way?
+[23:46] Which can give the right gain?
+[23:48] Can give a good gain?
+[23:50] That is the bandwidth.
+[23:52] That is the bandwidth.
+[23:54] So if the bandwidth of the opamp is small,
+[23:57] what does it mean?
+[23:59] You will be able to amplify
+[24:01] very few frequencies.
+[24:03] There will be very few such frequencies
+[24:05] which it will be able to amplify.
+[24:07] But I want to amplify
+[24:09] more range of frequencies.
+[24:12] So I will have to increase the bandwidth for that.
+[24:14] And to increase the bandwidth,
+[24:16] you will have to reduce the gain
+[24:18] which can be done by means of
+[24:20] a negative feedback.
+[24:22] The light.
+[24:24] Tell everyone that the light is good.
+[24:26] Say it quickly.
+[24:30] Now look at the negative feedback configuration.
+[24:33] The meaning of negative feedback is
+[24:36] that the feedback voltage
+[24:39] is subtracted from the input voltage.
+[24:44] Okay?
+[24:46] Sir, the third point is
+[24:48] the noise reduction
+[24:50] due to the feedback of the control system.
+[24:52] No, this is not actually noise.
+[24:54] It is noise.
+[24:55] If you want to relate this,
+[24:57] relate it with sensitivity.
+[24:59] When you look at the third point in the control system,
+[25:01] then you take out sensitivity
+[25:03] with respect to forward path gain
+[25:05] which is 1 by 1 plus GA.
+[25:07] That is the same thing.
+[25:09] The variation of the system parameters
+[25:12] does not vary from that to that.
+[25:15] That is, you changed the supply in the system.
+[25:17] You changed the temperature of the system.
+[25:20] That is why my amplifier
+[25:22] did not have the effect on the gain.
+[25:24] That is your third point.
+[25:25] And how can you visualize this?
+[25:28] That if the gain of my amplifier
+[25:31] depends on the resistances
+[25:33] which I will put in the feedback.
+[25:35] Save these real scenarios.
+[25:37] What will happen?
+[25:38] That the gain in your biasing
+[25:40] will be independent of the gain
+[25:42] in the opamp.
+[25:44] And if the temperature of the resistance
+[25:46] is less than the coefficient,
+[25:48] then the temperature will be independent
+[25:50] of the variation.
+[25:51] Sir, what is the effect of the temperature variation?
+[25:53] Remember, in BJT,
+[25:55] the temperature changes from the variation to the Q point.
+[25:57] Transconductance from the Q point
+[26:00] will change all this.
+[26:02] That is, the gain of the amplifier
+[26:04] will also change.
+[26:06] You know this.
+[26:07] The gain is dependent on the Q point.
+[26:10] Because from where the Q point comes,
+[26:12] the parameters of the amplifier come from there.
+[26:15] If the Q point changes because of your temperature,
+[26:19] then your GM, i.e. transconductance,
+[26:22] RPI, i.e. input resistance,
+[26:25] R0, output resistance, all this will change.
+[26:28] Then your gain of the amplifier will also change.
+[26:33] Dear, this will not happen.
+[26:34] Previous all videos will not be public now.
+[26:36] It has been public since many days.
+[26:38] Previous all videos.
+[26:39] I think it has been public since 15-20 days.
+[26:42] Even now, if you cannot cover it,
+[26:44] then it is only one thing that you are lazy about it.
+[26:47] Nothing else.
+[26:49] Let's go.
+[26:50] Now look, the meaning of negative feedback is,
+[26:53] the voltage coming on the feedback.
+[26:55] The voltage coming on the feedback,
+[26:57] i.e. the voltage coming from the output
+[26:59] towards the input of the lot,
+[27:02] if that voltage is subtracted from the input,
+[27:05] then it is called as a negative feedback.
+[27:10] If the feedback voltage is subtracted
+[27:17] from the supply voltage,
+[27:22] then it is called as the negative feedback.
+[27:25] Now, as you can see,
+[27:27] this is an inverting amplifier.
+[27:30] Why is this an inverting amplifier?
+[27:32] Because here you have put the input at the inverting terminal.
+[27:48] Okay.
+[27:49] You have put the input at the inverting terminal.
+[27:53] Now what will happen here?
+[27:55] If I say, if V i is greater than zero,
+[28:02] then V naught is less than zero.
+[28:07] Correct.
+[28:08] If V i is positive,
+[28:10] then V naught will be your negative.
+[28:13] Okay.
+[28:14] If V naught is negative,
+[28:16] then the voltage coming on the feedback,
+[28:19] look here, this is the feedback resistance.
+[28:22] What is this?
+[28:23] This is the feedback resistance.
+[28:25] Sir, how did you recognize it?
+[28:27] Because this is the resistance
+[28:29] that is connecting the output from the input.
+[28:33] Meaning, it is connecting the output
+[28:35] back to the input.
+[28:38] So, that is your feedback resistance.
+[28:41] That is your feedback resistance.
+[28:44] So, my brother,
+[28:46] if this is your feedback resistance,
+[28:49] then what is the feedback voltage from here?
+[28:56] Feedback voltage is
+[29:01] voltage through RF.
+[29:05] The voltage going through RF
+[29:08] will be the feedback.
+[29:12] So, that is also negative.
+[29:15] Therefore, input and feedback
+[29:20] are in opposite phase.
+[29:24] Okay.
+[29:25] So, the meaning of negative feedback is that,
+[29:29] the part of the feedback
+[29:31] should be subtracted from the input.
+[29:35] How can you subtract?
+[29:37] Either you take the feedback of negative polarity
+[29:40] and add it to the input.
+[29:42] If you add the negative,
+[29:44] then it is equal to subtraction.
+[29:46] Or you directly subtract it.
+[29:48] You will understand the feedback very well
+[29:52] when we will do feedback amplifiers.
+[29:54] Then you will be able to visualize the feedback
+[29:57] in a better way.
+[29:58] I will also teach you to take out the feedback factor
+[30:01] which is called beta.
+[30:02] Which is called H in the control system.
+[30:05] As you say here,
+[30:07] in the control system, G by 1 plus GH
+[30:09] is called A by 1 plus A beta.
+[30:12] A is the gain of the forward path.
+[30:14] Beta is the feedback factor.
+[30:16] So, instead of G, A comes.
+[30:18] Instead of H, beta comes.
+[30:20] We will discuss all these things.
+[30:22] But for now, you will understand
+[30:24] the meaning of negative feedback.
+[30:26] Do you understand the meaning of negative feedback?
+[30:29] Look, we just have to say that
+[30:32] if I subtract any value from the input.
+[30:35] Listen to me carefully.
+[30:37] If I subtract any value from the input,
+[30:40] then the overall input will be reduced.
+[30:43] If the overall input is reduced,
+[30:46] then the output will be reduced.
+[30:48] And if the output is reduced,
+[30:50] then the gain will also be reduced.
+[30:52] So basically, if you want to reduce the gain,
+[30:54] then reduce the input.
+[30:56] How will you reduce the input?
+[30:58] By subtracting something from the input.
+[31:01] That is your negative feedback.
+[31:04] That is your negative feedback.
+[31:06] Now it comes, positive feedback.
+[31:09] What do we do in positive feedback?
+[31:12] The voltage feedback here
+[31:15] that is added to the input.
+[31:19] Okay?
+[31:20] Feedback voltage is added to the input.
+[31:27] So, sir, the input will increase more than this.
+[31:30] That is correct.
+[31:31] This means the output will increase more.
+[31:33] That is correct.
+[31:34] This means the output will be saturated.
+[31:36] That is absolutely correct.
+[31:38] So, what happens?
+[31:40] The positive feedback applications
+[31:42] are actually your output.
+[31:46] It stays saturated mostly.
+[31:49] These do not work in linear regions.
+[31:51] For whom does a linear region need?
+[31:54] For Amplifier.
+[31:56] Which feedback will you use in Amplifier?
+[31:59] Negative feedback.
+[32:01] So that we can increase the linear region.
+[32:03] Where V0 and Vi are proportional.
+[32:06] Where V0 and Vi are your proportional.
+[32:10] Now look here.
+[32:12] This is a non-inverting amplifier.
+[32:15] Because you have given input in the non-inverting terminal.
+[32:20] If this is a non-inverting amplifier,
+[32:23] then the sign of V0 and Vi will be the same.
+[32:28] Okay?
+[32:29] V0 and Vi have
+[32:34] same sign.
+[32:38] Okay?
+[32:39] Same sign.
+[32:40] Now if V0 and Vi have same sign,
+[32:43] then the feedback voltage
+[32:45] feedback voltage through RF
+[32:52] has same sign as V0.
+[32:55] So, this means that
+[33:04] if your input is positive,
+[33:07] then your output is also positive.
+[33:09] And your feedback is also positive.
+[33:12] So therefore,
+[33:14] VF gets added to Vi.
+[33:18] Everyone is shocked.
+[33:20] So, this is used in the oscillators.
+[33:25] I will teach you.
+[33:26] Schmitt Trigger.
+[33:28] Multivibrator.
+[33:29] Your output is either on Vsat or minus Vsat.
+[33:34] Because the linear region is exactly the same.
+[33:38] You think that the linear region was less earlier.
+[33:41] And then what did you do?
+[33:43] You put positive feedback and increased the gain.
+[33:47] That means the linear region is smaller.
+[33:51] The smaller the linear region is,
+[33:54] the higher the chance
+[33:56] that the output will be at saturation voltage.
+[34:00] Understood?
+[34:01] So, understand the beauty of both the feedbacks.
+[34:04] What is the purpose of one feedback?
+[34:07] To reduce the gain,
+[34:09] to widen the linear region,
+[34:11] and where will you use it?
+[34:13] You will use it in such a place
+[34:15] where V0 is proportional to Vi.
+[34:18] That is, in an amplifier.
+[34:20] What do you want there?
+[34:22] The shape of the output should be like the input.
+[34:25] The amplitude should increase.
+[34:28] That is, it should get multiplied by a factor.
+[34:32] It should get multiplied by a factor.
+[34:34] And that factor is actually the gain.
+[34:38] It should get multiplied by the gain.
+[34:41] Is it shining?
+[34:42] And the second is positive feedback.
+[34:45] It is increasing the gain.
+[34:47] It is steeping the graph more.
+[34:49] The more the linear region becomes narrower,
+[34:52] the more the linear region becomes narrower,
+[34:55] the more chance the output will be.
+[34:57] Vsat or minus Vsat.
+[35:00] And we will use it in the oscillator.
+[35:02] Where your V0 will oscillate.
+[35:06] Vsat minus Vsat.
+[35:08] That is how you can actually produce a square wave.
+[35:12] Think about it.
+[35:13] Can you make a square wave on V0?
+[35:16] If Vsat minus Vsat, Vsat minus Vsat again and again,
+[35:19] then I will teach you the square wave generator.
+[35:22] But when we talk about positive feedback,
+[35:25] when we reach on the oscillator topic.
+[35:28] Sir, when will you get the oscillator?
+[35:30] So, as soon as the opamp will be over,
+[35:32] then we will filter the application of the opamp.
+[35:35] Then the feedback amplifier, then the oscillator.
+[35:37] Actually, if we look at the oscillator,
+[35:40] it will be the last topic of your gate.
+[35:43] After the oscillator, you don't have to do anything for the gate.
+[35:46] So, what will I do after the oscillator?
+[35:48] In this syllabus, I will do power amplifiers.
+[35:51] Class A, Class B, Class A, B, etc.
+[35:54] And there will be a triple 5 timer.
+[35:56] But you don't have to do anything for the gate in front of the oscillator.
+[35:59] So, all the classes from now on,
+[36:02] they will be common for electrical EC.
+[36:04] Till the oscillator.
+[36:06] Till the oscillator, don't miss any class at all.
+[36:08] I will try to wind up your oscillator as soon as possible.
+[36:12] Okay?
+[36:14] The opamp is the most important topic of the analog.
+[36:17] But it is not the most lengthy topic.
+[36:19] So, don't think that it is more important.
+[36:21] It will take more hours.
+[36:23] It is very simple.
+[36:25] But I am doing all the things with a basic.
+[36:27] Now, let's come to the concept of virtual ground.
+[36:32] This is your most important.
+[36:36] What is this?
+[36:38] Most important.
+[36:42] The most important thing in this whole topic is virtual ground or virtual short.
+[36:48] Sir, when will printed notes easily available in Amazon or Flipkart?
+[36:52] Dear, there is no discussion yet.
+[36:54] That you have to print printed notes on Amazon Flipkart.
+[36:56] You are asking the timeline.
+[36:58] You are asking as if it has been decided on Amazon or Flipkart.
+[37:02] Now, sir, tell me when it is coming.
+[37:04] Tell me this.
+[37:06] You are asking a strange thing.
+[37:08] And confidence is at a different level.
+[37:10] Come on, come.
+[37:12] Now, we say that when we use negative feedback,
+[37:17] then we expand the linear region.
+[37:20] Correct?
+[37:21] We expand the linear region.
+[37:23] So, we can say that V0 is proportional to VD.
+[37:28] V0 is proportional to VD.
+[37:31] Right?
+[37:32] So, if V0 is proportional to VD,
+[37:35] and the opamp, look,
+[37:37] VD is here.
+[37:42] So, what do we say?
+[37:44] Look, the first thing is
+[37:48] by
+[37:51] use of feedback
+[37:54] or use of negative feedback
+[38:02] V increase
+[38:11] linear region
+[38:14] right?
+[38:16] Off opamp
+[38:21] The first thing is
+[38:24] another thing
+[38:27] that we assume
+[38:32] open loop gain of opamp
+[38:44] tends to infinity or it is very high.
+[38:48] We assume that the open loop gain of opamp
+[38:53] is very high.
+[38:55] What do we assume?
+[38:56] The open loop gain of opamp is very high.
+[39:00] Tell me, is it clear till here?
+[39:02] Is it clear till here or not?
+[39:04] Speak fast.
+[39:06] Speak fast, brother.
+[39:08] Okay?
+[39:09] If I want to show this with a block diagram,
+[39:13] I will explain in such terms,
+[39:15] which you know.
+[39:17] The control system will be taught by many children.
+[39:20] That is why I will explain in the terms of the control system.
+[39:24] Look, I told you, as the
+[39:26] control is G H,
+[39:28] here A and
+[39:30] beta are there.
+[39:33] Okay?
+[39:42] Okay?
+[40:00] Look at this.
+[40:02] You make it like this.
+[40:05] Okay?
+[40:10] I will talk about negative feedback.
+[40:12] So, I am talking about open loop gain,
+[40:14] meaning A,
+[40:16] that A is almost
+[40:18] tending to infinity.
+[40:25] Look like this.
+[40:30] Look, this is your input voltage.
+[40:34] Negative feedback means
+[40:36] this is your feedback voltage.
+[40:39] Okay?
+[40:40] Here is your difference voltage
+[40:43] and this is your V naught.
+[40:45] This is the system.
+[40:47] Okay?
+[40:48] Here is your V naught.
+[40:50] Is it clear?
+[40:53] This is something that is coming to mind.
+[40:55] It will be ideal only then the gain will be infinity.
+[40:57] Look, open loop gain is
+[40:59] very high in general.
+[41:01] It is 10's power 5 and 10's power 6.
+[41:04] But yes, it is absolutely correct.
+[41:06] If its gain is to be infinity,
+[41:09] then it will have to be ideal.
+[41:12] Now look,
+[41:14] from the control theory, you know that
+[41:16] V naught is
+[41:17] V in
+[41:19] into A by
+[41:21] 1 plus A beta.
+[41:24] Correct?
+[41:25] This is what you know.
+[41:26] V in into A by 1 plus A beta.
+[41:29] Now this feedback voltage is
+[41:32] beta V naught.
+[41:35] This is beta V naught.
+[41:45] That is A beta
+[41:49] by 1 plus A beta
+[41:52] V in
+[41:55] Tell me, is this clear?
+[41:57] A beta
+[41:58] by 1 plus A beta V in
+[42:02] Now if you say this,
+[42:04] write it like this.
+[42:05] V in over
+[42:08] 1 plus 1 by
+[42:10] A beta.
+[42:13] Now I say, look,
+[42:15] how much V f will be?
+[42:17] If you take
+[42:18] 8 ending to infinity,
+[42:21] beta has a finite value.
+[42:23] Take care.
+[42:24] Beta has a finite value.
+[42:27] So if you take 8 ending to infinity,
+[42:29] then A beta will be infinity.
+[42:31] This will come out to be V in.
+[42:34] What is the feedback voltage?
+[42:37] V in is equal to
+[42:39] If the feedback voltage is
+[42:41] equal to V in,
+[42:43] then what is the error in control?
+[42:45] What is the error in control?
+[42:47] Then what is the error?
+[42:49] Or how much is the differential input?
+[42:53] Here this V d
+[42:55] has a differential input
+[42:57] architect control system.
+[43:01] Differential input
+[43:05] and error
+[43:09] How much is this?
+[43:11] V in minus V f
+[43:15] That is zero.
+[43:17] That is zero.
+[43:19] Okay.
+[43:20] So now what can we say?
+[43:22] What does this mean?
+[43:23] If the differential input is zero,
+[43:25] look here in this diagram,
+[43:27] if this V d is zero,
+[43:29] then the voltage of positive terminal
+[43:31] will be equal to the
+[43:33] negative terminal.
+[43:35] So when architect
+[43:37] read the control, he did not read that
+[43:39] the gain in negative feedback comes
+[43:41] G by 1 plus G H.
+[43:43] This is the beginning of the control system.
+[43:45] G by 1 plus G H is the same.
+[43:49] Did you understand?
+[43:51] The differential input is zero.
+[43:53] This means
+[43:55] inverting voltage
+[43:59] is equal to
+[44:03] non-inverting voltage.
+[44:05] Okay.
+[44:09] Inverting or non-inverting voltage
+[44:11] will be equal to
+[44:13] your voltage.
+[44:15] Everyone has a good point.
+[44:17] Tell me.
+[44:19] What do we call this?
+[44:21] We call this virtual short.
+[44:23] We call this
+[44:25] virtual short.
+[44:27] Sir, you have written the virtual ground.
+[44:29] I am telling you about it.
+[44:31] Because it means
+[44:33] two terminals
+[44:35] are equal to each other.
+[44:37] So what is the
+[44:39] virtual ground?
+[44:41] This means if one of
+[44:43] two terminals is grounded,
+[44:45] then the other voltage
+[44:47] will be zero.
+[44:49] Right?
+[44:51] If any terminal is
+[44:53] grounded
+[44:55] that is why we call it virtual ground.
+[44:57] If any terminal is
+[44:59] grounded
+[45:01] voltage of other
+[45:03] terminal is also zero.
+[45:07] Okay. Voltage of
+[45:09] other terminal
+[45:11] is also zero.
+[45:13] Is this clear?
+[45:15] This is the foundation
+[45:17] of the network.
+[45:19] In negative feedback applications
+[45:21] if anyone
+[45:23] knows this concept,
+[45:25] then he can do everything.
+[45:27] Do you know when I wrote the exam
+[45:29] of gate in 2013
+[45:31] when my 8th rank came,
+[45:33] then what I had?
+[45:35] I used to get virtual ground only in opam.
+[45:37] Look, I was
+[45:39] an expert in
+[45:41] multivibrators.
+[45:43] I used to get questions from them.
+[45:45] That any circuit of opam
+[45:47] will give virtual ground, I will
+[45:49] remove the answer.
+[45:51] And you will see that when you
+[45:53] apply PYQ, after the opam is over,
+[45:55] it will not take more than a day in opam
+[45:57] and it will be over in the next week.
+[45:59] So after the opam is over, when you
+[46:01] apply PYQ, then you will cut it
+[46:03] like a carrot,
+[46:05] quickly, quickly, by doing this,
+[46:07] you will keep asking questions.
+[46:09] And you yourself will feel that, oh God,
+[46:11] I am not scared of opam.
+[46:13] You yourself will say that this was
+[46:15] opam. We were scared of this.
+[46:17] It means that it is amazing.
+[46:19] This is the time to be scared of it.
+[46:21] You will feel like this.
+[46:23] Guaranteed.
+[46:25] Opam, son, is the easiest
+[46:27] part of your syllabus, especially
+[46:29] the negative feedback part of it.
+[46:31] Some children may be afraid that
+[46:33] they must have been told to keep it.
+[46:35] They might not have been able to remember all that.
+[46:41] Yes, opam is quite easy
+[46:43] from BJT and MOSFET.
+[46:45] Best of all, you must be feeling
+[46:47] BJT MOSFET is also very tough.
+[46:49] This time, we have done it on a
+[46:51] basic level.
+[46:53] So until now, you should understand
+[46:55] what are the things, son.
+[46:57] The first thing is that the opam
+[46:59] has a very high open loop gain.
+[47:01] Its input resistance is very high.
+[47:03] Its output resistance
+[47:05] is almost
+[47:07] zero tending.
+[47:09] Apart from this, what did I tell you?
+[47:11] Why do we put feedback in opam?
+[47:13] So that its linear region
+[47:15] can be extended. We put negative feedback for that.
+[47:17] We can extend the linear region
+[47:19] so that it can work for
+[47:21] more range of input.
+[47:23] We can reduce its gain.
+[47:25] We can increase its bandwidth.
+[47:27] Along with that,
+[47:29] external effects
+[47:31] like supply, voltage, temperature
+[47:33] can be affected
+[47:35] on opam.
+[47:37] When we put negative feedback
+[47:39] and say
+[47:41] that open loop gain is very high,
+[47:43] then we have
+[47:45] a concept which is called
+[47:47] virtual shot
+[47:49] or you can call it virtual
+[47:51] ground.
+[47:53] So the voltage of inverting and non-inverting
+[47:55] terminals is equal.
+[47:57] But for this, there are two necessary
+[47:59] conditions. The first one is the
+[48:01] negative feedback and the second one
+[48:03] is that the open loop
+[48:05] gain should be very high.
+[48:07] It should be very high.
+[48:09] Now I am going on the
+[48:11] specifications of opam.
+[48:13] Holding this concept
+[48:15] with us in the next lecture
+[48:17] which we are going to read,
+[48:19] this concept will be very useful.
+[48:21] Okay?
+[48:23] The first term I am telling you
+[48:25] in opam specification,
+[48:27] input offset voltage.
+[48:29] Sir, what is this?
+[48:31] This means that
+[48:33] in an open loop opamp,
+[48:35] how much
+[48:37] differential input you have to
+[48:39] apply, how much
+[48:41] the difference in the voltage of
+[48:43] both the terminals has to be kept
+[48:45] so that the output comes to zero.
+[48:47] Now you will be able to read in Asmanyas.
+[48:49] Why sir?
+[48:51] Because my children, according to you
+[48:53] the output should come to zero
+[48:55] when V1 and V2 are equal.
+[48:57] Because V1-V2 zero,
+[48:59] the output should be zero.
+[49:01] If V1-V2 zero,
+[49:03] then the output should be zero.
+[49:05] But do you know what?
+[49:07] It is in an ideal opamp.
+[49:09] In an ideal opamp.
+[49:11] That is why, look,
+[49:13] what happens?
+[49:15] I showed you yesterday's opamp circuit.
+[49:17] I had shown that V1 and V2
+[49:19] apply on the base of
+[49:21] two different BJTs.
+[49:23] They apply on the base of two different BJTs.
+[49:25] And you take the output
+[49:27] from the collector of both the BJTs.
+[49:29] So if V1 and V2 are equal,
+[49:31] then should their output be equal?
+[49:33] Yes sir, it should come.
+[49:35] But my child, this will happen
+[49:37] when both the BJTs will be identical.
+[49:39] You are saying that if you applied
+[49:41] equal input on two BJTs,
+[49:43] then their output should also be equal.
+[49:45] That is, their net output
+[49:47] should have come to zero.
+[49:49] But for this, both the BJTs
+[49:51] should have been identical.
+[49:53] But when two transistors
+[49:55] are not identical, then
+[49:57] even if you apply
+[49:59] the same input on the base of two BJTs,
+[50:01] but you will get different output.
+[50:03] That is, the output will be
+[50:05] non-zero.
+[50:07] No one has to take this from the level shifter, Zainul.
+[50:09] The level shifter can
+[50:11] cancel DC, my child.
+[50:13] If AC voltage is also here,
+[50:15] then the output
+[50:17] will not be zero on the same voltage.
+[50:19] Okay? So look, what am I
+[50:21] telling you?
+[50:23] Do you understand?
+[50:25] Your opamp
+[50:27] has an input stage like this.
+[50:33] Look here, as if you applied V1.
+[50:45] Not like this, but a differential
+[50:47] amplifier is formed.
+[50:51] Now what do you
+[50:53] want to tell him?
+[50:55] That if you are applying
+[50:57] V1 and V2
+[50:59] in one place,
+[51:01] or V1 and V2,
+[51:03] even if they are equal,
+[51:05] these BJTs
+[51:07] will not have equal output.
+[51:09] Because this is
+[51:11] the net output.
+[51:13] Okay? So I am saying
+[51:15] that this V0
+[51:17] is V01 minus V02.
+[51:19] So
+[51:21] even if
+[51:23] even if
+[51:25] V1 is equal to V2,
+[51:27] V01
+[51:29] is not equal to
+[51:31] V02 as
+[51:33] 2 BJT
+[51:37] can never be identical.
+[51:39] Practically, both of them
+[51:41] can never be identical.
+[51:43] Now do you understand
+[51:45] the logic behind this?
+[51:47] That you
+[51:49] will not get zero output
+[51:51] even if you apply dual supply.
+[51:53] Because both the BJTs
+[51:55] cannot be the same.
+[51:57] Yes, we apply dual supply
+[51:59] so that the voltage
+[52:01] can increase.
+[52:03] Look here, now your opamp
+[52:05] voltage swing is between
+[52:07] Vsat and minus Vsat.
+[52:09] If you apply Vcc and zero,
+[52:11] then the swing is between
+[52:13] Vsat and zero.
+[52:15] Whatever your supply voltage
+[52:17] makes the output limits.
+[52:19] Is this clear to me?
+[52:21] Tell me.
+[52:23] Is this clear?
+[52:25] Tell me quickly.
+[52:27] So this input
+[52:29] offset voltage
+[52:31] is
+[52:33] V1 minus V2
+[52:35] at which
+[52:37] V0
+[52:39] is zero.
+[52:41] At which V0 is zero.
+[52:43] So it can
+[52:45] be positive
+[52:47] or negative.
+[52:49] It can also be positive
+[52:51] or negative.
+[52:53] And its range
+[52:55] son
+[52:57] its range
+[52:59] is from
+[53:01] 15 micro volts
+[53:03] to 6 millivolts.
+[53:05] But we want
+[53:07] the smaller the better.
+[53:09] The smaller the
+[53:11] the better.
+[53:13] The better.
+[53:15] Now look,
+[53:17] the children who didn't have differential
+[53:19] amplifier, don't pay attention to my next
+[53:21] thing. I give you one more
+[53:23] explanation.
+[53:25] When you study differential
+[53:27] amplifier, then your output
+[53:29] carries another term
+[53:31] apart from ADVD
+[53:33] which is written as ACVC.
+[53:35] ADVD
+[53:37] plus ACVC.
+[53:39] So even if
+[53:41] the output comes
+[53:43] due to common mode gain
+[53:45] i.e. if both the inputs
+[53:47] are equal
+[53:49] then the output won't be zero.
+[53:51] Due to common mode
+[53:53] gain AC
+[53:55] into VC.
+[53:57] That's why we are saying that
+[53:59] despite equalizing both the voltages
+[54:01] the output is not zero.
+[54:03] Despite equalizing
+[54:05] both the voltages
+[54:07] the output is not zero.
+[54:09] There is a common mode gain AC
+[54:11] multiplied by the
+[54:13] common mode voltage VC.
+[54:15] Chamka
+[54:17] tell me, all the people who have
+[54:19] attended your differential amplifier
+[54:21] are clear now? It's
+[54:23] going to be difficult to get the input
+[54:25] offset voltage.
+[54:27] How will it happen that
+[54:29] if both the inputs are equal
+[54:31] then the output will be zero.
+[54:33] This can happen only when
+[54:35] there is an ideal opamp.
+[54:37] Because the common mode
+[54:39] gain will be zero.
+[54:41] If there is an ideal opamp
+[54:43] then the common mode gain
+[54:45] will be zero.
+[54:51] Therefore
+[54:53] V0 is zero
+[54:55] when
+[54:57] VD is zero
+[54:59] which means the input
+[55:01] offset voltage
+[55:03] is zero.
+[55:05] The input offset voltage will be
+[55:07] zero.
+[55:09] Chamka, tell me.
+[55:11] It can happen in an ideal opamp
+[55:13] but it will come practically.
+[55:15] Now this is the
+[55:17] dual type of output offset voltage.
+[55:19] You just said that
+[55:21] if both the inputs are equal
+[55:23] then the output is
+[55:25] non-zero. So how much is it?
+[55:27] That is the output
+[55:29] offset voltage.
+[55:31] If you equalize
+[55:33] or zero both the inputs
+[55:35] then whatever output
+[55:37] you are going to get
+[55:39] is called as the output
+[55:41] offset voltage.
+[55:43] Why will this happen? It will come
+[55:45] due to
+[55:47] mismatch between the transistors.
+[55:49] It will come due to the
+[55:51] common mode gain.
+[55:53] It will come due to the
+[55:55] common mode gain.
+[55:57] Do you understand everyone?
+[55:59] See what I am saying?
+[56:03] When
+[56:05] two inputs
+[56:09] are
+[56:11] made
+[56:13] equal
+[56:17] then
+[56:21] ideally
+[56:25] V0 should be zero
+[56:27] because
+[56:29] we expect V0 to be
+[56:31] A d V d
+[56:35] A d
+[56:37] V positive
+[56:39] minus V negative.
+[56:41] But
+[56:43] I am also writing down
+[56:45] the differential amplifier
+[56:47] but practically
+[56:51] I taught this in
+[56:53] differential amplifier.
+[56:55] Now just pay attention.
+[56:57] Practically
+[56:59] AC and VC also come.
+[57:01] Where
+[57:03] AC is called as
+[57:05] common mode gain.
+[57:11] Okay
+[57:13] and VC is
+[57:15] common mode input.
+[57:17] Common mode means
+[57:19] which is common to both the terminals.
+[57:21] Okay
+[57:23] I am telling you
+[57:25] for those who don't have differential amplifier.
+[57:27] VC is positive
+[57:29] voltage plus negative
+[57:31] voltage by 2.
+[57:33] So if you will equal them
+[57:35] then the output
+[57:37] will not be zero
+[57:39] because of the second term.
+[57:41] The output
+[57:43] will be called as
+[57:45] the output offset
+[57:47] voltage. Okay
+[57:49] so what we are saying
+[57:51] value of
+[57:53] V0
+[57:57] when both inputs
+[58:01] when
+[58:03] both inputs
+[58:07] are made equal
+[58:13] is called
+[58:15] output
+[58:19] offset
+[58:21] voltage.
+[58:23] What is it called
+[58:25] output offset
+[58:27] voltage.
+[58:29] So in an ideal opamp
+[58:31] in ideal opamp
+[58:33] output offset
+[58:35] voltage will be zero.
+[58:41] Okay
+[58:43] so in an ideal opamp
+[58:45] practical opamp
+[58:47] will come.
+[58:49] Now tell everyone
+[58:51] input offset and output offset
+[58:53] what does input offset mean
+[58:55] if V0
+[58:57] if V0
+[58:59] then for that
+[59:01] what will be the difference of both the terminals
+[59:03] that is if it has to be zero
+[59:05] then what will be VD
+[59:07] and if VD becomes zero
+[59:09] then what will be the output
+[59:11] offset.
+[59:17] Pushpa son what I have just told
+[59:19] if you have not studied
+[59:21] differential amplifier
+[59:23] then you will not enter in this thing
+[59:25] how does it come.
+[59:27] I have made all this in the lecture of differential amplifier.
+[59:29] After BJT
+[59:31] the last lecture of BJT
+[59:33] that was differential amplifier.
+[59:35] Practically AC is much
+[59:37] much less than AD.
+[59:39] Practically
+[59:41] AC is much much less than
+[59:43] AD.
+[59:47] Now brother
+[59:49] electrical people
+[59:51] you have to read at least
+[59:53] only relevant things.
+[59:55] Then understanding is also everything.
+[59:57] It cannot be like this son.
+[59:59] If we cut some topics then somewhere
+[60:01] you will have to compromise that it is okay
+[60:03] it will be like this.
+[60:05] But now you will want me to understand
+[60:07] exactly as much as an AC child
+[60:09] is understanding.
+[60:11] You will have to read as much as
+[60:13] an AC child is reading.
+[60:15] Now how do we get this VoO
+[60:17] out.
+[60:19] So son if you have made it in differential amplifier
+[60:21] then how are you forgetting Pushpa.
+[60:25] This is important for numericals.
+[60:27] Many times
+[60:29] seeing the input offset voltage
+[60:31] asks you the output offset.
+[60:33] Now what do we do in this
+[60:35] what do we do.
+[60:37] Step 1
+[60:43] Remove
+[60:47] sources
+[60:53] If there is any source in the circuit
+[60:55] that is why I am writing in the bracket
+[60:57] if any.
+[60:59] If there is any source in the circuit
+[61:01] then first remove it.
+[61:03] Step 2
+[61:07] Ground
+[61:11] Inverting
+[61:13] Terminal or Inverting input
+[61:19] Step 3
+[61:25] Connect a source
+[61:27] or connect a voltage source
+[61:33] V I O
+[61:37] at
+[61:39] non-inverting terminal
+[61:45] okay
+[61:47] and step 4
+[61:49] Determine V0
+[61:51] Let's write it like this
+[61:53] The V0 that will come
+[61:55] will be VoO
+[61:57] output offset.
+[61:59] That means when you are in
+[62:01] Inverting input offset
+[62:03] voltage in terminal
+[62:05] then the output that
+[62:07] is called as the output
+[62:09] offset voltage.
+[62:11] It is clear.
+[62:13] Pushpa is your VC
+[62:15] V1 plus V2 by 2
+[62:17] this is definition.
+[62:19] How is the definition of any two signals
+[62:21] I tell you to remove the common part
+[62:23] like E1 part.
+[62:25] What is E1 part which is symmetric
+[62:27] which is common on both sides
+[62:29] so what will be the way to remove the common part
+[62:31] the average of both
+[62:33] average is something that is
+[62:35] common among everyone
+[62:37] okay so let's take the average
+[62:41] Now input offset
+[62:43] current
+[62:45] if you put the same voltage
+[62:47] on both the terminals
+[62:49] or you put 0 voltage
+[62:51] on both the terminals
+[62:53] then will your
+[62:55] same current go in both the terminals
+[62:57] will go in both the terminals
+[62:59] because both the BJT
+[63:01] will not be identical.
+[63:03] When you do DC analysis
+[63:05] now you will think sir
+[63:07] how the current is going on these 0
+[63:09] see if you
+[63:11] put V1 0 here
+[63:13] then you can
+[63:15] put KVL because of this minus VEE
+[63:17] even if you put 0
+[63:19] you can put KVL
+[63:21] you can tell its base current
+[63:23] but will both the base current
+[63:25] why? because both the
+[63:27] VBE is not necessary
+[63:29] both the beta is not necessary
+[63:31] what does this mean
+[63:33] both the base current
+[63:35] is also not necessary
+[63:37] so on both the sides
+[63:39] you have made the circuit same
+[63:41] but still
+[63:43] it is not necessary to have the same current
+[63:45] so the difference
+[63:47] that will be
+[63:49] called as the input
+[63:51] offset current
+[63:53] so what we say
+[63:55] it is that
+[63:57] difference
+[63:59] difference
+[64:01] of
+[64:03] input currents
+[64:07] input currents
+[64:11] at
+[64:13] two terminals
+[64:23] of
+[64:25] O-PAMP
+[64:27] at two terminals of
+[64:29] O-PAMP
+[64:31] difference of input currents
+[64:33] on two terminals of O-PAMP
+[64:35] that is called as the
+[64:37] input offset current
+[64:39] so see how the input offset current
+[64:41] will be written I I O
+[64:43] take the mod
+[64:45] because we don't know what will happen
+[64:47] so take the mod
+[64:49] easy
+[64:51] the input current is zero
+[64:53] think carefully
+[64:55] what is the input current of O-PAMP
+[64:57] that is the base current of BJT
+[64:59] so when you say
+[65:01] the input current of O-PAMP is zero
+[65:03] so you are actually saying
+[65:05] to consider beta as high
+[65:07] so what are you saying
+[65:09] to consider beta as high
+[65:11] and if you see the resistance of
+[65:13] differential amplifier
+[65:15] I had written 2 beta RE in the lecture
+[65:17] 2 beta RE
+[65:19] so if you consider it to be high
+[65:21] then the input resistance is high
+[65:23] so you assume the input current as zero
+[65:25] okay I repeat
+[65:27] if it is too fast for you
+[65:29] what I am saying
+[65:31] these input currents
+[65:33] are actually
+[65:35] base current of BJT
+[65:37] so when you say the input current
+[65:39] of O-PAMP is zero
+[65:41] then you actually say ignore the base current
+[65:43] of BJT
+[65:45] whose basic assumption is
+[65:47] that beta is high
+[65:49] the first thing I said
+[65:51] the second thing I said to understand
+[65:53] is that if the resistance
+[65:55] between the terminals is high
+[65:57] then the current is zero
+[65:59] the resistance between the two
+[66:01] the value of this is 2 beta RE
+[66:03] so if beta is high then the resistance is high
+[66:05] and current is zero
+[66:07] so the base current of beta is zero
+[66:09] otherwise
+[66:11] if the input resistance is high
+[66:13] then your input current is zero
+[66:15] so if you say
+[66:17] the input current is zero
+[66:19] okay
+[66:21] so I also write
+[66:23] here
+[66:25] it is due to
+[66:27] mismatch
+[66:31] of two transistors
+[66:39] okay
+[66:41] so I also write here
+[66:43] we assume
+[66:49] input current
+[66:51] of O-PAMP
+[66:57] is zero
+[67:01] that is
+[67:03] base current
+[67:07] of two transistors
+[67:09] is zero
+[67:13] that is
+[67:17] beta is high
+[67:19] this can happen only when beta is high
+[67:21] okay
+[67:23] is this clear
+[67:25] so when beta is high
+[67:27] you will assume both the current as zero
+[67:29] sir what will be the value of this
+[67:31] child practically
+[67:33] what is this
+[67:35] from 6 nano ampere
+[67:37] to
+[67:39] 200 nano ampere
+[67:41] okay
+[67:43] it works in nano ampere
+[67:45] it is not very big
+[67:47] because the current must be very small
+[67:49] otherwise how would have assumed zero
+[67:51] if the current was in milli ampere
+[67:53] then also it could not be zero
+[67:55] so this current is in nano ampere
+[67:57] so it is so small
+[67:59] so you can ignore it
+[68:01] now input bias current
+[68:03] now bias current is
+[68:05] IB
+[68:07] but IB is different
+[68:09] and IB2 is in one
+[68:11] the point of Pushpa is absolutely correct
+[68:13] if the differential amplifier
+[68:15] was made
+[68:17] from MOSFET
+[68:19] then actually both the input current
+[68:21] would have come as zero
+[68:23] that would not be an assumption
+[68:25] because MOSFET and JFET
+[68:27] current comes as zero
+[68:29] Pushpa but you know what would have been the problem
+[68:31] if I go to make O-PAMP from MOSFET
+[68:33] yes, Suso-1
+[68:35] wrote absolutely correct
+[68:37] then the voltage gain will be less
+[68:39] then voltage gain will be 10 power 5
+[68:41] what is the matter
+[68:43] now you are smart
+[68:45] now you are able to connect things
+[68:47] that if you make O-PAMP from MOSFET
+[68:49] then the gain will be less
+[68:51] even if the input current is zero
+[68:53] what is the matter
+[68:55] okay let's make your heart happy
+[68:57] input bias current
+[68:59] so let me tell you simple
+[69:01] what is input bias current
+[69:03] you have two bias current
+[69:05] it is average
+[69:07] of two
+[69:09] input
+[69:11] currents
+[69:15] that is
+[69:17] that is
+[69:19] two
+[69:21] base currents
+[69:23] okay and one time
+[69:25] Pushpa and Suso-1
+[69:27] should have a clapping emoji
+[69:29] in chat
+[69:31] gain will be less
+[69:33] Pushpa on one side you are saying
+[69:35] you have attended all my lectures
+[69:37] on one side you are asking
+[69:39] MOSFET's gain was 7,8,9,10
+[69:41] that is enough
+[69:43] and BJT amplifier's gain was
+[69:45] 50,100,200 in this range
+[69:47] and I have also pointed out
+[69:49] that MOSFET amplifier
+[69:51] has very less gain from BJT
+[69:53] and if you have seen all my lectures
+[69:55] then the first lecture of FET
+[69:57] FET versus BJT in which I studied
+[69:59] it was also written
+[70:01] that FET's gain is very less
+[70:03] than BJT's gain
+[70:05] but the benefit of FET is
+[70:07] it eats very less area on the chip
+[70:09] as compared to BJT
+[70:13] okay
+[70:19] so see this is
+[70:21] bias current
+[70:23] the average of both is simple
+[70:27] now what is differential input resistance
+[70:29] tell me
+[70:31] what is differential input resistance
+[70:33] when you
+[70:35] put a voltage
+[70:37] between two terminals of input
+[70:39] and take V by I ratio
+[70:41] that is called
+[70:43] as the differential
+[70:45] input resistance
+[70:47] when you connect a voltage source
+[70:49] between two terminals
+[70:51] and take out voltage by current
+[70:53] then differential input resistance
+[70:55] when
+[70:59] a source
+[71:03] is connected
+[71:05] how much will someone tell
+[71:07] when a source is connected
+[71:09] between
+[71:11] two input terminals
+[71:15] and we compute
+[71:21] V upon I
+[71:29] it is called as
+[71:39] differential
+[71:45] input
+[71:47] resistance
+[71:53] how much does it come
+[71:55] tell me
+[71:57] common mode voltage
+[71:59] the average of voltage
+[72:01] is same as current
+[72:03] 2 beta is coming
+[72:05] very good
+[72:07] very good
+[72:09] differential input resistance is 2 beta
+[72:11] is coming
+[72:13] so this is basically
+[72:15] resistance of first stage
+[72:17] yesterday we got the stages
+[72:19] of opamp
+[72:21] so the first stage
+[72:23] was dual input
+[72:25] resistance of output amplifier
+[72:37] correct
+[72:39] so its resistance
+[72:41] 2 beta is coming
+[72:43] very good
+[72:45] common
+[72:47] where are you connecting pushpa
+[72:49] voltage and current
+[72:51] will be same, is there any logic
+[72:53] think about it
+[72:55] today we are talking about
+[72:57] opamp chapter
+[72:59] if average will come
+[73:01] then you will say common mode
+[73:03] I don't think
+[73:05] you have attended all my lectures
+[73:07] you are going to talk
+[73:09] okay
+[73:11] now common mode rejection ratio
+[73:13] what I have told you
+[73:15] that any output voltage
+[73:17] of opamp
+[73:19] any output voltage
+[73:21] of opamp
+[73:23] that contains 2 parts
+[73:25] one is the differential part
+[73:27] and other is the common mode part
+[73:29] one is ADVD
+[73:31] one is ACVC
+[73:33] this VC is the common mode input
+[73:35] it often represents
+[73:37] noise
+[73:39] i.e. take undesired signal
+[73:41] beside opamp
+[73:43] keep many ICs
+[73:45] keep many components
+[73:47] if they are creating
+[73:49] which they are sending out
+[73:51] any signal they are outputting
+[73:53] so that signal
+[73:55] will go in both the terminals of opamp
+[73:57] and it is called
+[73:59] common mode input
+[74:01] what is called
+[74:03] common mode input
+[74:05] so common mode input usually represents
+[74:07] the noise
+[74:09] what it represents
+[74:11] it represents noise
+[74:13] so we want noise
+[74:15] to be at least amplified
+[74:17] and the difference
+[74:19] should be more
+[74:21] amplified
+[74:23] i.e. common mode input should be
+[74:25] rejected
+[74:27] whereas the differential input should be
+[74:29] amplified
+[74:31] so we are saying
+[74:35] that differential input
+[74:41] differential input
+[74:43] should be
+[74:49] highly amplified
+[74:57] whereas
+[75:05] common mode input
+[75:13] that
+[75:17] represents
+[75:21] noise
+[75:25] should be
+[75:27] rejected
+[75:29] that is why it is called
+[75:31] common mode rejection ratio
+[75:33] okay
+[75:35] common mode rejection ratio
+[75:37] so ideally
+[75:43] AC should be 0
+[75:45] but what will be desirable
+[75:47] ideally it should be
+[75:49] AC 0
+[75:51] desirable is
+[75:53] that AD is much larger
+[75:55] than AC
+[75:57] so the differential gain
+[75:59] should be more than
+[76:01] common mode gain
+[76:03] that is what we want
+[76:05] so that
+[76:07] the difference of voltages
+[76:09] should be amplified
+[76:11] and both the input
+[76:13] noise is going on the terminal
+[76:15] that is not amplified
+[76:17] that is not amplified
+[76:19] should be
+[76:21] understood
+[76:23] so here we define
+[76:25] CMRR common mode rejection ratio
+[76:27] easiest way is
+[76:29] differential gain
+[76:33] i.e. AD
+[76:37] divided by
+[76:39] common mode gain
+[76:51] AD by AC
+[76:55] so here we say
+[76:57] that if AD is much greater
+[76:59] than AC
+[77:01] CMRR should be as high
+[77:03] as possible
+[77:05] CMRR should be
+[77:07] as high as possible
+[77:09] as high as possible
+[77:13] okay
+[77:15] so we also take out CMRR
+[77:17] in decibel
+[77:19] in decibel
+[77:25] we also take out CMRR
+[77:27] in decibel which is
+[77:29] 20 log
+[77:31] AD by
+[77:33] AC
+[77:35] we take mod
+[77:37] if there is any gain negative
+[77:39] that is why 20 log mod
+[77:41] AD by AC
+[77:43] and the log is taken on
+[77:45] base of 10
+[77:47] this is not a natural log
+[77:49] this is on the base of 10
+[77:51] so ideally if AC is 0
+[77:53] then CMRR
+[77:55] will be infinity
+[77:57] okay
+[78:03] now sir how we take out
+[78:05] CMRR in question
+[78:07] okay we understood
+[78:09] the parameter of amplifier
+[78:11] in question
+[78:13] what we do in question
+[78:15] we write V0
+[78:17] A1 V1
+[78:19] plus A2 V2
+[78:21] where
+[78:23] V1
+[78:25] and V2
+[78:27] are
+[78:29] input voltage at two terminals
+[78:31] means you
+[78:33] take out output
+[78:35] because of both voltage and input
+[78:37] and you have
+[78:39] put superposition
+[78:41] what have you basically done here
+[78:43] you have put superposition
+[78:45] do you understand
+[78:47] you took out output because of V1
+[78:49] you took out output because of V2
+[78:51] you took out output
+[78:53] and then you have written superposition
+[78:55] A1 V1 plus A2 V2
+[78:59] now to write V0
+[79:01] there is one type of AB
+[79:03] AD VD
+[79:05] plus AC VC
+[79:11] AD
+[79:21] this will be
+[79:45] okay now both equations
+[79:47] are compared
+[79:49] the gain of V1
+[79:51] that is
+[79:55] A1
+[79:57] and the gain of V2
+[79:59] that is A2
+[80:01] now if you want
+[80:05] AD
+[80:07] subtract both equations
+[80:09] and divide by two
+[80:13] and if you want AC
+[80:15] then add both of them
+[80:17] AD and AC
+[80:19] then your CMRR
+[80:21] so basically what you have to do first
+[80:23] first son
+[80:25] you have to take out output for both inputs
+[80:27] and from there
+[80:29] the gain of both of them
+[80:31] you will take out AD and AC
+[80:33] what will you do with that
+[80:35] you will take out AD and AC
+[80:37] the matter has been cleared
+[80:39] quickly tell
+[80:41] it has been cleared
+[80:43] now the next term is
+[80:45] PRR
+[80:47] supply voltage rejection ratio
+[80:49] what does this mean
+[80:51] many times the supply you are giving in OPAM
+[80:53] VSAT or minus VSAT
+[80:55] many times in that voltage
+[80:57] in that power supply
+[80:59] there is a fluctuation
+[81:01] what happens in that
+[81:03] there is a fluctuation
+[81:05] if there is a fluctuation
+[81:07] then what do you say son
+[81:09] then what do you say
+[81:11] then you say
+[81:13] because of that fluctuation
+[81:15] in your output
+[81:17] in your performance of OPAM
+[81:19] there should not be any change
+[81:21] then in this way
+[81:23] in such a better way
+[81:25] the fluctuation of supply voltage
+[81:27] is ignored
+[81:29] rejected
+[81:31] that is called as the SVRR
+[81:33] so we say
+[81:37] it is the
+[81:39] it represents
+[81:43] it represents
+[81:45] it represents
+[81:47] just a minute
+[81:53] ability
+[81:55] of OPAM
+[82:01] to ignore
+[82:05] or reject
+[82:07] reject
+[82:13] changes in
+[82:17] supply voltage
+[82:23] okay
+[82:25] so what is its mathematical formula
+[82:27] son
+[82:29] it is represented
+[82:31] it is removed
+[82:33] ratio of
+[82:37] change in
+[82:41] input offset voltage
+[82:53] per unit
+[82:55] change in
+[82:59] supply voltage
+[83:01] okay
+[83:05] per unit
+[83:07] change in supply voltage
+[83:09] so we know
+[83:11] how to write it
+[83:13] SVRR is
+[83:15] DVIO
+[83:17] by
+[83:19] DV
+[83:21] SVRR is
+[83:23] DVIO by DV
+[83:25] okay
+[83:27] so its value
+[83:29] is better
+[83:31] Lakshman
+[83:33] rewind the video
+[83:35] lower the value of
+[83:37] SVRR
+[83:39] better is the
+[83:41] performance
+[83:43] if you understand its analog
+[83:45] then
+[83:47] if my TV
+[83:49] remote battery
+[83:51] is down
+[83:53] but its performance
+[83:55] does not matter
+[83:57] then it is the same thing
+[83:59] SVRR
+[84:01] otherwise practically you think
+[84:05] if your supply voltage
+[84:07] changes then your biasing will change
+[84:09] if the biasing changes
+[84:11] then the gain of amplifier will change
+[84:13] will change
+[84:15] but I am saying a better OPAMP is
+[84:17] okay
+[84:19] a better OPAMP is
+[84:21] despite changing supply voltage
+[84:23] no difference
+[84:25] no difference
+[84:27] okay
+[84:29] what is the output resistance beta
+[84:31] output resistance
+[84:33] is the
+[84:35] resistance of
+[84:37] final stage
+[84:39] final stage
+[84:41] which was the OPAMP
+[84:43] push pull complimentary amplifier
+[84:47] okay
+[84:49] which stage was it
+[84:51] push pull complimentary
+[84:53] amplifier
+[85:05] so ideally
+[85:07] this is
+[85:09] r0 is 0
+[85:11] ideally r0 is 0
+[85:13] but practically
+[85:15] its value is very small
+[85:17] means 10 ohm, 20 ohm
+[85:19] will not go in kilo ohm
+[85:21] very small value
+[85:23] will remain
+[85:25] so output resistance
+[85:27] where do you show it
+[85:29] yesterday I showed the mathematical model of OPAMP
+[85:31] I showed a dependent voltage source
+[85:33] AVD
+[85:35] in its series you show
+[85:37] output resistance
+[85:39] output voltage swing
+[85:41] output voltage swing
+[85:43] can be between which value
+[85:45] tell me
+[85:47] this can be
+[85:49] minus Vsat
+[85:51] means
+[85:53] it is the
+[85:57] range of
+[85:59] output voltage
+[86:03] in which
+[86:07] in which
+[86:11] we can get
+[86:15] undistorted output
+[86:17] undistorted means
+[86:19] the waveform of input
+[86:21] the waveform of output
+[86:25] so that is
+[86:27] OPAMP operates in
+[86:29] linear region
+[86:31] okay OPAMP
+[86:33] operates in
+[86:35] linear
+[86:37] region
+[86:43] okay
+[86:47] so what is the range of this
+[86:49] son
+[86:51] plus Vsat
+[86:55] to minus Vsat
+[86:59] okay
+[87:01] in this range
+[87:03] output voltage
+[87:05] will vary without any distortion
+[87:07] if you try to go
+[87:09] above it
+[87:11] if you try to go above it
+[87:13] son
+[87:15] what will happen?
+[87:17] your output will be clipped
+[87:19] Push pull
+[87:21] is it a cascode connection
+[87:23] or you read it in power amplifier
+[87:25] Vinayak
+[87:27] when you design power amplifier
+[87:29] push pull amplifier
+[87:31] that is why I wrote output resistance
+[87:33] is the resistance of final stage
+[87:35] as you
+[87:37] took out the output resistance
+[87:39] in BJT and MOSFET amplifiers
+[87:41] you have to do the same thing
+[87:43] the final stage
+[87:45] if you take out the output resistance
+[87:47] then the whole OPAMP will also
+[87:49] make output resistance
+[87:51] okay now if we talk about bandwidth
+[87:53] I told you the frequency
+[87:55] response of bandwidth
+[87:57] what happens
+[87:59] what happens son
+[88:01] this is open loop gain
+[88:03] okay
+[88:05] what I told you yesterday
+[88:09] that the gain
+[88:11] is like a low pass filter
+[88:19] here I told you
+[88:25] the square of f by fl
+[88:27] this is your cutoff frequency
+[88:29] which we wrote fl
+[88:31] I told you yesterday
+[88:33] you also got the unity gain frequency
+[88:35] which is
+[88:39] AOL
+[88:41] into
+[88:43] fl
+[88:45] okay
+[88:47] and what I told you
+[88:49] who do you call bandwidth
+[88:51] fl
+[88:53] which is very very low
+[88:55] ideally
+[88:59] bandwidth should
+[89:01] tend to infinity
+[89:03] I told you yesterday
+[89:05] we also asked a question
+[89:07] ideally the bandwidth
+[89:09] should be your infinite
+[89:11] correct
+[89:13] ideally your bandwidth should be
+[89:15] infinite
+[89:17] Lakshman said
+[89:19] please explain the tripler circuit once
+[89:21] Lakshman brother have you come in doubt session
+[89:23] tell me
+[89:25] what are you thinking in the session
+[89:27] that in your lectures
+[89:29] in which there is any doubt
+[89:31] I will not do it
+[89:33] which service you have availed
+[89:35] tell me
+[89:37] is it clear till here
+[89:39] I have derived all this yesterday
+[89:41] so I am not discussing again
+[89:43] this thing is very important
+[89:45] this is very very important
+[89:49] now what happens
+[89:51] there are transistors in opamp
+[89:53] there are different stages in opamp
+[89:55] there are different stages in opamp
+[89:57] and where there are transistors
+[89:59] there are different types of stages
+[90:01] there will be your
+[90:03] capacitance
+[90:05] what will happen there
+[90:07] when your output voltage
+[90:09] will be high
+[90:11] then the capacitor
+[90:13] will be charged
+[90:15] when your output voltage
+[90:17] will be low
+[90:19] then the capacitor
+[90:21] will be discharged
+[90:23] then the capacitor
+[90:25] will be discharged
+[90:27] this means
+[90:29] if you want
+[90:31] a stable output
+[90:33] if you want a stable output
+[90:35] then your output rate of
+[90:37] change will be limited
+[90:39] because the capacitor
+[90:41] will take time to be discharged
+[90:43] meaning
+[90:45] the capacitor opposes
+[90:47] the change of voltage
+[90:49] what this means
+[90:51] that the rate of change of output voltage
+[90:53] will always be limited
+[90:55] due to presence of the
+[90:57] capacitors
+[90:59] ok
+[91:01] so what am I saying here
+[91:05] due to
+[91:07] transistor
+[91:09] inside opamp
+[91:15] there are
+[91:21] internal
+[91:25] parasitic
+[91:31] capacitances
+[91:35] which take
+[91:41] time
+[91:43] to charge or discharge
+[91:45] ok here time
+[91:47] takes in charging and discharging
+[91:55] therefore
+[91:57] for
+[91:59] undistorted output
+[92:01] if you want
+[92:03] proper output
+[92:07] rate of
+[92:09] change of
+[92:17] V0
+[92:19] is limited
+[92:21] how much rate can
+[92:23] you wait
+[92:25] ok
+[92:27] so what happens
+[92:29] the manufacturer of opamp
+[92:31] specifies
+[92:33] what specifies
+[92:35] maximum allowed
+[92:37] rate of
+[92:39] change of V0
+[92:41] maximum allowed
+[92:43] rate of change of
+[92:45] V0
+[92:47] is called slew rate
+[92:49] how much
+[92:51] you can change
+[92:55] ok
+[92:57] how much you can change
+[92:59] we call this slew rate
+[93:01] now here
+[93:03] you see
+[93:05] what happens
+[93:07] if input voltage
+[93:09] is
+[93:11] Vim
+[93:13] sin omega t
+[93:15] and your
+[93:17] gain is
+[93:19] A
+[93:21] so V0 how much
+[93:23] A, V, I, M
+[93:27] sin omega t
+[93:29] so
+[93:31] d V0 by dt how much
+[93:35] omega A
+[93:37] V, I, M
+[93:41] cos omega t
+[93:43] so its maximum value
+[93:45] will come
+[93:49] which will be
+[93:51] omega A, V, I, M
+[93:53] this must always be
+[93:55] less than slew rate
+[93:57] of opamp
+[93:59] means the rate of
+[94:01] change of output
+[94:03] the maximum limit of manufacturer
+[94:05] the manufacturer has given
+[94:07] the manufacturer has given
+[94:09] the specification
+[94:11] should be less than that
+[94:13] and its unit
+[94:15] comes in
+[94:17] the same way
+[94:19] ok, micro second on volt
+[94:21] understood
+[94:23] the manufacturer of opamp
+[94:25] has told that
+[94:27] you don't have to go over it
+[94:29] so you won't cross it
+[94:31] your dV0 by dt
+[94:33] value
+[94:35] should be less than the manufacturer
+[94:37] now see if we compare
+[94:39] ideal and practical opamp
+[94:41] input resistance infinite
+[94:43] will be very high here
+[94:45] output resistance zero
+[94:47] will be very low here
+[94:49] CMRR infinity will be 80 dB here
+[94:51] ok
+[94:53] the manufacturer has said
+[94:55] you shouldn't go over 10
+[94:57] if you change the rate more than 10
+[94:59] our capacitor won't be able to freeze
+[95:01] it won't be able to follow the output
+[95:03] so you have to keep it less than 10
+[95:05] open loop gain infinite
+[95:07] up to 10
+[95:09] power 5 is actually not 1000
+[95:11] up to 10 power 5
+[95:13] slew rate infinity
+[95:15] means you can change it from any rate
+[95:17] but here 100 volt per micro second
+[95:19] bandwidth infinity
+[95:21] here is very less
+[95:23] 10 radian per second
+[95:25] so these are the parameters of ideal and practical opamp
+[95:27] let's see some questions
+[95:29] come on
+[95:31] ok
+[95:33] and you don't know
+[95:35] what things you have to keep
+[95:37] you mainly have to keep the input and output
+[95:39] offset funda
+[95:41] ok
+[95:43] you mainly have to remember slew rate funda
+[95:45] you have to remember
+[95:47] CMRR funda
+[95:49] ok
+[95:53] come on make it
+[96:11] ok
+[96:23] this is
+[96:25] according to me
+[96:33] this is 1 millivolts
+[96:35] this is 1
+[96:37] do it
+[96:39] let's consider it as 1
+[96:47] ok
+[97:05] how much is the slope
+[97:07] how did it come out
+[97:09] delta y by delta x
+[97:11] delta y
+[97:13] you are going from minus 5 to 0
+[97:15] i.e. 5
+[97:17] and in delta x 0 to 1 millivolts
+[97:19] 5000
+[97:21] this will be your gain
+[97:23] gain is
+[97:25] equal to slope
+[97:27] ok 5000
+[97:29] now tell me the next
+[97:31] offset voltage
+[97:33] offset voltage input
+[97:35] where the output is 0
+[97:37] 1 millivolts
+[97:39] 1 millivolts
+[97:41] 1 millivolts
+[97:43] you can see the input
+[97:45] where the output is 0
+[97:47] that is 1 millivolts
+[97:51] ok come on
+[97:53] the RIB course is starting
+[97:55] that is only and only for revision
+[97:57] ok
+[97:59] if you start from scratch
+[98:01] and learn the subject
+[98:03] from zero level
+[98:05] then you will not be able to do it
+[98:07] brahmasar batch is for kids
+[98:09] who have to quickly course
+[98:11] but have to do it from zero level
+[98:17] come on
+[98:19] come on everyone
+[98:21] make it
+[98:23] input offset voltage is given
+[98:25] 2 millivolts
+[98:27] output voltage is asked by you
+[98:29] output offset is not asking
+[98:31] output
+[98:41] the output
+[98:43] if an offset is asked
+[98:45] then the sources have to be removed
+[98:47] ok
+[98:49] if we removed the sources
+[98:51] but its asking output voltage
+[98:53] so how will we open it
+[98:55] try to get it
+[98:57] you need total
+[98:59] we need total output voltage, including the offset.
+[99:05] So what should we do?
+[99:07] Put a source on the positive terminal.
+[99:10] How much is 2 millivolts?
+[99:14] Okay?
+[99:20] And here it is.
+[99:29] 60 millivolts.
+[99:46] Okay?
+[99:47] Now you can put a virtual shot because it is a negative feedback.
+[99:52] So here the voltage should be 2 millivolts.
+[99:55] It should be equal to the positive negative, right?
+[99:58] So it should be 2 millivolts.
+[100:00] Now if it is 2 millivolts, then see what we have to do?
+[100:02] The basic network.
+[100:03] How much current will be here?
+[100:06] 60 minus 2 by 1.5.
+[100:12] Now the current that came here will go up like this.
+[100:15] Why?
+[100:16] Because the current inside the opamp is zero.
+[100:19] So the entire current will go up.
+[100:22] Now if the entire current is going up, you can put a KVL from here.
+[100:26] You say V0 is 2 minus I into 6K.
+[100:33] Okay?
+[100:34] I is 58 by 1.5K into 6K.
+[100:42] So this will be 232.
+[100:48] Look at this.
+[100:49] Minus 230 millivolts.
+[100:52] Clear?
+[100:53] Tell me.
+[100:55] How do you want to do the question?
+[100:57] So you have to put KVL, KCL in the opamp from this type.
+[101:03] Your first step is the virtual shot.
+[101:06] That's it.
+[101:07] Okay?
+[101:08] If I had asked for the output offset, I would have grounded the source of 60.
+[101:13] Now see this.
+[101:14] The input offset voltage and the offset current is saying total output offset voltage.
+[101:19] Look, I will do this one.
+[101:21] What will we do first?
+[101:25] We will do the ground input.
+[101:29] Okay?
+[101:30] Now what will we do?
+[101:33] Now we will first take the current of the input offset voltage.
+[101:40] Look.
+[101:43] You can also do this part with me.
+[101:45] Make the input offset circuit.
+[101:55] There is a 5K resistor here.
+[101:57] There is no difference.
+[102:00] Because the current is zero in the terminal.
+[102:03] So if you have given the resistance, it will not matter.
+[102:14] This is 5K.
+[102:17] 500K.
+[102:21] 5K.
+[102:24] And this is 4 millivolts.
+[102:30] Okay?
+[102:34] What do you have to clear?
+[102:35] So tell me.
+[102:36] The input offset is taken out of the voltage by connecting a source which is same as the input offset at the non-inverting terminal.
+[102:46] That's all you have to do.
+[102:49] Now see, no current will go here.
+[102:52] So here the voltage will be 4 millivolts.
+[102:57] Which means 4 millivolts from the virtual shot.
+[103:02] Okay?
+[103:03] Now 4 millivolts means that you will get a current here.
+[103:10] 4 by 5.
+[103:13] And this will also come from the current here.
+[103:19] Now put the KVL again like this.
+[103:23] V0 minus 4 by 5K into 500K equal to 4.
+[103:33] Okay?
+[103:33] So V0 came.
+[103:39] Here.
+[103:40] Okay?
+[103:42] I will get the input offset current, right Swati?
+[103:45] Did you understand this?
+[103:46] How does the output offset voltage come out of the input offset voltage?
+[103:51] This part is clear.
+[103:53] How do you calculate the output offset voltage using the input offset voltage?
+[104:00] Now what will you do next?
+[104:02] Use of the input offset current.
+[104:08] Now if you want to show the current then you will have to show the closed loop, right?
+[104:13] How will this happen, sir?
+[104:16] Look, you don't believe the terminal of the middle.
+[104:19] You will understand one thing, you believe the input resistance is high between the positive and negative, right?
+[104:28] So you have to show that the current is flowing, your input offset current and you have to show it in a closed loop.
+[104:36] So the one who has feedback on a terminal, let's show it on that terminal.
+[104:41] How do you see?
+[104:43] 5K, 500K, let's show the input offset current like this, okay?
+[104:55] Now look, there is no current here.
+[104:59] So here zero voltage will come.
+[105:02] So here zero will also come.
+[105:04] The current flowing here is the input offset current.
+[105:08] This is how it is shown, the terminal in which the feedback is.
+[105:13] IIO into 500K is zero.
+[105:21] IIO into 500K.
+[105:26] How much did IIO say?
+[105:28] 150 nano ampere.
+[105:29] 150 nano ampere into 500K.
+[105:39] So 75 millivolts is done, right?
+[105:44] Now your output offset voltage, you all learn in this session how to do all these questions.
+[105:53] Then I will give the assignment, go home and make it, everything will be made.
+[105:58] 404 plus 75, both are superposition, okay?
+[106:08] So what do you have to do on the input offset voltage?
+[106:11] You have to apply it on the positive terminal, input offset voltage and on the input offset current,
+[106:17] you have to show a closed loop between input and the feedback terminal.
+[106:23] Because the current needs a closed loop, brother.
+[106:26] Okay, let's see the next one.
+[106:28] This is the slew rate.
+[106:29] So it is saying that you can take the highest input frequency on which there is no slewing.
+[106:35] That is, your output rate of change, that should be less than the slew rate.
+[106:42] Rate of change of output should remain less than the slew rate.
+[106:47] Do it.
+[106:48] First take out the output by applying virtual ground.
+[106:52] Come on everyone.
+[106:54] Now I have taught you how to apply virtual shot.
+[107:54] Yes, there is no problem, if you apply it alone, it is a good thing.
+[108:06] Look, according to the virtual shot, the positive terminal voltage will be as negative as it is.
+[108:18] Okay?
+[108:20] So from 1 kilo ohm, this current has become 1 by 1.
+[108:28] No current will go here.
+[108:30] So this I current, this I current will come from here.
+[108:34] Now you take out V0.
+[108:36] V0 minus 3 ki is 0.5 sine omega t.
+[108:44] If you multiply 3k in I, I is 0.5 sine omega t by 1k.
+[109:06] So V0 will come, you have 2 sine omega t.
+[109:10] dV0 by dt.
+[109:22] So what will be the maximum of dV0 by dt?
+[109:28] 2 omega.
+[109:30] Okay?
+[109:32] And this should be less than 1 volt per nanosecond.
+[109:38] So from here, you will get a frequency less than 1 by 4 pi into 10 ki power 9.
+[109:50] So from here, the answer will come in megahertz.
+[109:58] 79.57 megahertz.
+[110:02] Understand?
+[110:04] This is the maximum frequency.
+[110:06] Very good.
+[110:08] Very good.
+[110:10] Saurav also gave it right.
+[110:12] Sushobhan, Deepankar, Swati, everyone is right.
+[110:16] This is your assignment.
+[110:18] You will solve this assignment.
+[110:20] Okay?
+[110:22] When we discuss assignment, I will discuss after negative feedback.
+[110:26] Then we will do all these things.
+[110:28] As I told you, from Unacademy, there is the biggest Diwali giveaway for you.
+[110:34] In which the first 300 subscribers are getting a 25% discount on Diwali.
+[110:40] But those kids who are preparing for the 24-25, then if you eat more than 1 year subscription,
+[110:46] my regular code will not be applied on this.
+[110:48] This is a code that you can apply and you can make your Diwali even better by coming under my guidance by joining Unacademy.
+[110:58] And look, you get all my special classes on this link.
+[111:02] So here, you can also do PYQs.
+[111:06] So here, do PYQs of BJT, Mosfet, Diode.
+[111:09] You will be able to do PAMP very soon.
+[111:11] And if you join Unacademy, there are two plans.
+[111:15] Plus and Iconic.
+[111:16] You are getting top teachers in two months.
+[111:19] You are getting full study material on the app.
+[111:21] You are getting test series.
+[111:23] But if you have a doubt in the new question, then there is a custom doubt solving.
+[111:29] You are sending printed notes at home.
+[111:31] You are getting 1 to 1 mentorship.
+[111:33] You are making a strategy and study plan.
+[111:36] And in the open house session, you can interact via audio.
+[111:40] Okay.
+[111:41] All the topics are going on here.
+[111:44] Till now, think that I have already given the content around 77 hours, 76 hours.
+[111:50] Okay.
+[111:52] Control.
+[111:54] Okay, we will also make the control.
+[111:56] Wait for a while.
+[111:57] In a few days.
+[111:58] And look, when you join Unacademy, then what you have to do?
+[112:02] You have to decide the plan.
+[112:03] You have to decide the duration.
+[112:04] And you can apply the code at the time of payment.
+[112:07] And if you are joining till tomorrow, then I have given you a new code.
+[112:11] You are getting 25% off from this.
+[112:14] Okay.
+[112:15] Apart from this, look.
+[112:17] We have launched a 15 month subscription for you.
+[112:21] In this, you are giving extra one month so that the kids who are preparing for 24,
+[112:25] can take a subscription of 16 months.
+[112:29] Okay.
+[112:30] And if you look at the results, then the results are also very amazing.
+[112:35] There are 6 anchors in the top 10 in Electrical.
+[112:38] You too can be a part of this list next year.
+[112:42] You just have to come to Unacademy and study under my guidance.
+[112:46] And if there is a financial issue, then you can go for EMI,
+[112:49] where there is no interest.
+[112:50] EMI will be approved in just 2 hours.
+[112:53] There is only an Aadhar card and a PAN card in the paperwork.
+[112:55] And you can repay it in a flexible amount of time.
+[112:58] And apart from this, look.
+[113:00] There is an analog of Dhande Sir for 24.
+[113:02] There is a Math of Guru Pal Sir.
+[113:04] So, you can be a part of this batch for Electrical and EC.
+[113:07] And we have also launched a 4 month subscription for the people of 2023.
+[113:12] So, the kids who want to be a part of our Rank Improvement batch,
+[113:15] they can come to Unacademy for 4 month subscription.
+[113:19] And this is my telegram channel.
+[113:21] Stay connected so that no class misses.
+[113:23] And you will get the PDF of this session in the next 15 minutes on the community.
+[113:28] So, go to Unacademy App's home page.
+[113:30] Go to the community and go to Discover.
+[113:32] I will get it.
+[113:33] You will get all the PDFs there.
+[113:36] And a very happy Diwali to all of you kids.
+[113:39] You all enjoy.
+[113:40] Enjoy today's remaining day.
+[113:42] Enjoy tomorrow's day.
+[113:44] Enjoy.
+[113:45] Today, watch the match.
+[113:46] Tomorrow, celebrate Diwali.
+[113:47] And rejuvenate yourself completely.
+[113:50] Now, we will connect Tuesday.
+[113:52] We will advance the O-Pamp on Tuesday.
+[113:55] But till then, your energy should not go to the next level.
+[113:59] Till then, your passion and motivation should be at the next level.
+[114:04] Because now, there is the last mile of gate preparation.
+[114:07] There are 3 months left.
+[114:08] You have to prepare yourself with the whole passion.
+[114:11] You have to give yourself a joke.
+[114:13] Diwali is a very, very special occasion.
+[114:16] Where you can take that positive vibe.
+[114:19] You can be motivated by your family members.
+[114:21] You can spend a good time.
+[114:23] So, do not lose this opportunity.
+[114:25] Enjoy this opportunity completely.
+[114:28] And then come back with a new passion.
+[114:30] With a new passion.
+[114:32] We will come again.
+[114:33] We will light the fire.
+[114:34] But do not light the fire on Diwali.
+[114:36] Make Diwali a little safe.
+[114:37] It is not like you do not burn crackers.
+[114:39] Do whatever you want.
+[114:40] Just be safe.
+[114:42] Just be focused and enjoy to the fullest.
+[114:45] Okay?
+[114:46] So, let's meet again on Tuesday.
+[114:48] Till then, thanks a lot everyone.
+[114:50] And again, a very happy Diwali to all of you.
+[114:53] Thank you.

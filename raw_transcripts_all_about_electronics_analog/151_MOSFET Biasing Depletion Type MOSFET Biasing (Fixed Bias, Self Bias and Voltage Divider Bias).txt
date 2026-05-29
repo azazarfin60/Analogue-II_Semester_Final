@@ -1,0 +1,165 @@
+Title: MOSFET Biasing: Depletion Type MOSFET Biasing (Fixed Bias, Self Bias and Voltage Divider Bias)
+URL: https://www.youtube.com/watch?v=vBvLu3euc2Q
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in the previous video, we have seen that how the MOSFET can be used as a switch.
+[00:16] So in the next couple of videos, we will understand that how the MOSFET can be used as an amplifier.
+[00:22] Now when we want to use the MOSFET as an amplifier, then it needs to be biased properly.
+[00:28] So first of all, let us understand how to bias the MOSFET properly so that it can be used
+[00:34] as an amplifier.
+[00:35] And first of all, we will start with the Diplish and Type of MOSFET.
+[00:40] So to use this MOSFET as an amplifier, it needs to be biased in the active region.
+[00:45] Or for the MOSFET, it is also called the saturation region.
+[00:50] Now the transfer characteristic of this Diplish and Type of MOSFET is similar to the JFET.
+[00:56] The only difference is that the transfer curve is extended beyond this IDSS.
+[01:02] That means for the n-general MOSFET, it works for the positive values of the VGS.
+[01:07] While for the P-general MOSFET, it also works for the negative values of VGS.
+[01:13] And whenever it is operated beyond the IDSS, then it is called the enhancement region.
+[01:18] And likewise, whenever it is operated below this IDSS, then that region of operation is
+[01:24] called the Diplish and region of operation.
+[01:27] And if we see the drain curves or the ID versus VDS curves, then they are similar to the
+[01:32] JFET.
+[01:33] But now, we also get the curves for the positive values of the VGS.
+[01:39] So to operate the MOSFET in the active region, the VDS should be greater than or equal to
+[01:45] VGS-VP.
+[01:47] And in this region, the drain current can be given by the Shockless equation.
+[01:52] Now similar to the JFET, there are three basic biasing techniques for this, depression
+[01:57] type of MOSFET.
+[01:59] That is fixed bias, self bias and the voltage divider bias.
+[02:04] And since the transfer characteristics are similar to the JFET, the analysis of this
+[02:09] biasing techniques is also very similar.
+[02:12] So in detail, we have already seen all these biasing techniques for the JFET.
+[02:18] So here, for the depression type of MOSFET, we will quickly go through all these biasing
+[02:23] techniques.
+[02:24] And first of all, let us start with the fixed bias.
+[02:28] So in the fixed bias configuration, a fixed voltage is applied at the gate terminal.
+[02:34] And since the gate current IG is approximately equal to 0, so if we apply the KVL in this
+[02:40] loop, then we can say that voltage VGS is equal to minus VGG, right?
+[02:47] And for the active region of operation, the drain current ID can be given by the Shockless
+[02:52] equation.
+[02:53] So for any MOSFET, the typical values of this ID SS and the VPR are already known.
+[02:59] So by putting the value of VGS in this expression, we can find the value of the drain current.
+[03:05] And using the drain current, we can find the value of the VDS.
+[03:09] So if we apply the KVL in this output side, then we can say that voltage VDD minus ID
+[03:16] times RD, that is the voltage drop across this drain register minus VDS is equal to 0.
+[03:25] Or we can say that voltage VDS is equal to VDD minus ID times RD.
+[03:34] So in this way, using the mathematical approach, we can find the drain current and the voltage
+[03:39] VDS.
+[03:40] So similarly, now let us see the graphical approach.
+[03:44] So here, this blue curve shows the transfer characteristic of the MOSFET.
+[03:49] And for the fixed bias configuration, this straight line is the load line.
+[03:54] Because here, irrespective of the change in the drain current, the voltage VGS will remain
+[03:59] fixed.
+[04:01] So the intersection of the load line and the transfer curve will give us the operating
+[04:05] point.
+[04:06] That means this will be the drain current ID cube and this will be the VGS cube.
+[04:13] And for the fixed bias configuration, it is also possible to bias the MOSFET in the
+[04:18] enhancement region.
+[04:20] That means using the positive value of the gate supply voltage, it is possible to bias
+[04:24] the MOSFET in the enhancement region.
+[04:27] Now as we have discussed earlier, the operating point in the fixed bias configuration is very
+[04:32] susceptible to the change in the MOSFET parameters.
+[04:36] For example, for any MOSFET, the value of IDSS and the VP can vary in the certain range.
+[04:43] That means if we take the two similar type of MOSFETs, then the two MOSFETs can have
+[04:47] a different values of IDSS and the VP.
+[04:51] So in the particular MOSFET circuit, if we replace the MOSFET with another similar type
+[04:56] of MOSFET, then the variation in the operating point should be minimum.
+[05:01] Let's say for one MOSFET, these are the maximum values of the IDSS and the VP.
+[05:08] And this green curve shows the minimum values of these IDSS and the VP.
+[05:15] So in this case, this is the maximum variation in the drain current.
+[05:20] That means if we replace the MOSFET in the circuit with another similar type of MOSFET,
+[05:25] then in the worst case, this is the maximum variation in the drain current.
+[05:30] So this variation in the operating point can be reduced by using the self bias configuration.
+[05:36] So as you can see, unlike the fixed wires, here there is no additional supply at the
+[05:41] gate terminal.
+[05:42] And in addition to that, here the resistor is connected at the source terminal.
+[05:47] So for the DC analysis, all these coupling capacitors will act as an open circuit.
+[05:53] Alright, so first of all, using the mathematical analysis, let us find the operating point for
+[05:58] this self bias configuration.
+[06:01] And here, once again, this gate current IG will be approximately equal to zero.
+[06:07] That means there will not be any voltage drop across this resistor RG.
+[06:11] And in this case, the current through this source resistor is equal to ID.
+[06:17] Because here, this ID is equal to IS.
+[06:21] So if we apply the KVL in this loop, then we can say that voltage VGS is equal to minus
+[06:28] ID times RS.
+[06:30] And in the active region, the drain current ID can be given by the shockless expression.
+[06:36] So by putting the value of this VGS in this expression and solving it for the drain current
+[06:41] ID, we can find the operating drain current for the given circuit.
+[06:46] And then after by applying the KVL on the output side, we can find the value of the VDS.
+[06:52] That means VDS is equal to VDD minus ID times RD plus RS.
+[07:02] So in this way, using this mathematical approach, we can find the operating drain current
+[07:07] and the value of the VDS for the self bias configuration.
+[07:11] So similarly, now let us see the graphical approach.
+[07:15] So here, this blue cow shows the transfer cow for the particular MOSFET.
+[07:21] And here, since VGS is equal to minus ID times RS, so this load line will pass through
+[07:28] the origin.
+[07:30] And the intersection of this load line with the transfer cow will give us the operating
+[07:35] point.
+[07:36] So let us say, these are the maximum values of the ID SS and the VP.
+[07:42] And this green cow shows the minimum values of the ID SS and the VP.
+[07:47] So in that case, this will be the maximum variation in the drain current.
+[07:52] So as you can see, compared to the fixed bias configuration, here the variation in the
+[07:56] operating point is lower.
+[07:58] But further, this variation can be reduced by using the voltage divider biasing.
+[08:04] So by adding the fixed gate voltage, the slope of this load line can be reduced further.
+[08:09] And because of that, the variation in the operating point can be reduced further.
+[08:13] So when we want to use the single supply, then we can use this voltage divider bias.
+[08:19] That means using the single supply, using this voltage divider bias, we can apply a specific
+[08:25] voltage at the gate terminal.
+[08:27] So first of all, using the mathematical approach, let us find the operating point for the given
+[08:32] configuration.
+[08:34] And for the DC analysis, all these coupling capacitors will act as an open circuit.
+[08:40] So here, since this gate current IG is equal to 0, so no current is flowing into the gate
+[08:45] terminal.
+[08:46] That means from the supply, the current is flowing through this resistor R1 and the R2.
+[08:52] And using the voltage divider rule, we can find the voltage at this gate terminal.
+[08:57] That means voltage VG is equal to R2 divided by R1 plus R2 times VDD.
+[09:03] And once again, the current through the source resistor RS is equal to ID.
+[09:09] That means if we apply the KVL in this loop, then we can find the expression of the VGS.
+[09:16] That means VGS is equal to VG minus ID times RS.
+[09:21] Now since we have already seen this voltage divider biasing configuration for the JF 18
+[09:25] detail, so here I am quickly going through the analysis.
+[09:30] But for more information, you can check those videos.
+[09:33] Anyway, so in the active region, the drain current ID can be given by the chocolate equation.
+[09:40] And by putting the value of VGS in this expression and solving that quadratic equation for the
+[09:45] drain current ID, we can find the value of the drain current.
+[09:50] And this voltage VDS can be given as voltage VDD minus ID times RD plus RS.
+[10:00] So in this way, we can find the operating drain current and the voltage VDS for this voltage
+[10:05] divider biasing configuration.
+[10:08] Now graphically, if we see, then this yellow line shows the load line.
+[10:13] That means in this expression, whenever the drain current ID is equal to 0, then the
+[10:18] voltage VGS is equal to VG.
+[10:21] And similarly, when voltage VGS is equal to 0, then this drain current ID is equal to VG
+[10:27] divided by RS.
+[10:29] That is this point.
+[10:31] So by joining these two points, we will get the load line.
+[10:35] And by extending this line, we can find the intersection point with this transfer curve.
+[10:40] And this intersection point will give us the operating point.
+[10:45] Now as I mentioned, in case of this voltage divider biasing configuration, the variation
+[10:50] in the operating point is lesser compared to the self-biased configuration.
+[10:55] So if these are the minimum values of the IDSS and the VP, then this is the maximum
+[11:00] variation in the operating point.
+[11:03] So compared to all the three biasing configurations, this voltage divider biasing configuration is
+[11:09] more robust in terms of the operating point stability.
+[11:13] Now so far in our discussion, we have only talked about the n-channel MOSFET.
+[11:18] But similarly, it is also possible to bias the P-channel MOSFET.
+[11:23] So if you see the transfer characteristic of this P-channel MOSFET, then it is exactly
+[11:27] mirror image of the n-channel MOSFET.
+[11:30] And in this case, the value of VGS is positive.
+[11:34] And in the enhancement region, it will also work for the negative values of VGS.
+[11:40] So in terms of the biasing, the only change is in the polarity of the supply voltage.
+[11:46] So here, the supply voltage is negative and the direction of the drain current is opposite
+[11:51] compared to the n-channel MOSFET.
+[11:54] Otherwise, the analysis will remain the same.
+[11:57] So on the second channel, I will try to cover some examples on each configuration and
+[12:02] we will also see some examples for this P-channel MOSFET.
+[12:06] And you can also check this playlist on the GFET in the MOSFET for any update.
+[12:11] But I hope in this video, you got an overview of the different biasing configuration of
+[12:14] the vibration type of MOSFET.
+[12:17] So in the next video, similarly, we will see the different biasing configuration for
+[12:21] the enhancement type of MOSFET.
+[12:23] So if you have any question or suggestion, do let me know here in the comment section
+[12:27] below.
+[12:28] If you like this video, hit the like button and subscribe to the channel for more such
+[12:32] videos.

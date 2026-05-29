@@ -1,0 +1,192 @@
+Title: MOSFET - Enhancement Type MOSFET Explained (Construction, Working and Characteristics Explained)
+URL: https://www.youtube.com/watch?v=l9LBIy9Ioxo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:16] In this video, we will learn about the construction, working and the characteristic of the enhancement
+[00:22] type of MOSFET.
+[00:24] Now if we talk about the construction, there in some aspects it is similar to the depletion
+[00:29] type of MOSFET.
+[00:31] So if we see the construction of the engine and enhancement type of MOSFET, then the substrate
+[00:35] is made up of P type material and through the metallic contacts, the drain and the source
+[00:41] terminals are connected to this anti-material.
+[00:45] And similar to the depletion type of MOSFET, this oxide layer isolates the gate terminal
+[00:49] and the P type substrate.
+[00:52] But here, unlike the depletion type of MOSFET, there is no channel between this drain
+[00:57] and the source terminal.
+[00:59] So whenever we apply the control voltage between this gate and the source terminal, then
+[01:04] the channel is formed between this drain and the source terminal.
+[01:08] So here, in this type of MOSFET, basically the application of the control voltage enhances
+[01:14] the number of charge carrier in this region.
+[01:17] And due to that, the channel is getting created.
+[01:20] And that is why this type of MOSFET is known as the enhancement type of MOSFET.
+[01:26] Alright, so now let's see the working of this and channel enhancement type of MOSFET.
+[01:31] And let us understand how the channel is formed whenever we apply the control voltage.
+[01:38] So initially, here if VGS is kept 0 and if the voltage is applied between the drain and
+[01:44] the source terminal, then due to the absence of the channel, there will not be any flow
+[01:48] of current through this MOSFET.
+[01:51] So whenever VGS is 0, then this MOSFET will remain in the off condition.
+[01:57] Now let's see what happens when we apply the positive value of VGS.
+[02:02] So here, the substrate and the source terminals are connected together and they are connected
+[02:07] to the ground terminal.
+[02:10] And the positive voltage is applied between the gate and the source terminal.
+[02:15] And for a moment, let us assume that this voltage VGS is equal to 0.
+[02:21] Now holes are the majority carriers in this P type substrate.
+[02:24] And whenever we apply the positive voltage at this gate terminal, then the holes which
+[02:29] are near this outside layer will be pushed away from this gate terminal.
+[02:33] And at the same time, the electrons which are the minority carriers in this P type substrate
+[02:38] will also get acted towards this gate terminal.
+[02:43] But at the lower voltage of VGS, these electrons will get recombined with this majority charge
+[02:48] carriers.
+[02:50] Now as we keep on increasing this voltage VGS, then the holes will be pushed more and
+[02:54] more deeper into the substrate.
+[02:57] And the electrons will be able to overcome the recombination with this holes.
+[03:02] And they will be rushed towards the gate terminal.
+[03:06] But due to this insulating layer, they will not be able to cross this outside layer.
+[03:11] And they will start accumulating near this oxide layer.
+[03:15] So eventually, the inversion layer of free electrons will get created near this oxide layer.
+[03:22] And now this inversion layer will act as a channel between this drain and the source terminal.
+[03:29] And now, suppose if we apply the voltage between this drain and the source terminal, then
+[03:34] the current can flow through this channel.
+[03:37] So the value of the gate to source voltage at which this inversion layer is getting created
+[03:42] is known as the threshold voltage.
+[03:45] And below this threshold voltage, there will not be any flow of current through this MOSFET.
+[03:52] And whenever this VGS is greater than this threshold voltage, then the width of the channel
+[03:57] will increase.
+[04:00] So in this way, due to the application of the voltage VGS, the channel is formed between
+[04:05] the drain and the source terminal.
+[04:08] But along with this channel, there will also be a depletion layer around this channel.
+[04:14] Because if you observe, there are two PN junctions which are pre-washed bias.
+[04:20] So the first PN junction is formed between this drain and the substrate.
+[04:24] And the second PN junction is formed between this substrate and the source terminal.
+[04:30] And if you observe, right now both the PN junctions are rewashed biased.
+[04:36] So now we will consider that this voltage VGS is already greater than the threshold voltage.
+[04:42] And now let us see what happens when we apply the voltage VGS.
+[04:47] So when we apply this voltage VGS, then through the channel, electrons get attracted towards
+[04:52] this positive terminal.
+[04:55] And in this way, the current will establish in this circuit.
+[05:00] And the conventional current will flow from the drain terminal towards the source terminal.
+[05:06] But now if you observe, the width of the channel has been reduced towards the drain side.
+[05:12] Because now due to the positive voltage at the drain terminal, this PN junction will
+[05:16] get more reverse biased.
+[05:18] And due to that, the width of the depletion region will increase.
+[05:23] So because of that, the effective channel width towards the drain terminal will reduce.
+[05:28] And the same phenomena can be also explained in another way.
+[05:33] So once we apply the drain to source voltage, then the voltage difference between this gate
+[05:38] and the drain terminal will reduce.
+[05:41] So the voltage difference between these two terminals will be equal to VGS minus VDS.
+[05:48] And as this source or the substrate terminal is grounded.
+[05:51] So we can say that this difference will be equal to VG minus VD.
+[05:57] So as the value of this voltage VD will increase, then the difference between these two
+[06:01] voltage will reduce.
+[06:03] On the other end, this source terminal is connected to the ground terminal.
+[06:09] So the voltage difference between the gate and the source terminal will remain as it
+[06:13] is.
+[06:14] So due to that, the gate terminal which is towards the drain side will be less positive
+[06:19] than the other side.
+[06:22] And hence, this region will attract fewer electrons compared to the other side.
+[06:28] And due to this reason, the channel width gets narrower as we go from the source terminal
+[06:33] towards the drain terminal.
+[06:35] And as we keep on increasing this voltage VDS, then at one particular voltage, inch of
+[06:40] condition will occur.
+[06:43] So at that particular voltage, the drain current which is flowing through the circuit will
+[06:46] get saturated.
+[06:49] So the voltage VDS at which this pinch of condition occurs is known as the saturation
+[06:54] voltage.
+[06:57] And this saturation voltage can be expressed as VGS minus VT, where VT is the threshold
+[07:03] voltage.
+[07:05] That means the pinch of condition will occur whenever the difference between the gate
+[07:09] and the drain terminal is just equal to the threshold voltage.
+[07:14] Because at the threshold voltage, the channel is just getting created between the drain
+[07:18] and the source terminal.
+[07:20] So for the fixed value of VGS, if we further increase the value of VDS, then the difference
+[07:25] between the gate and the drain terminal will be even lesser than this threshold voltage.
+[07:31] And due to that, the channel will not get formed towards the drain terminal.
+[07:37] So it appears that the current through the channel should become zero.
+[07:41] But actually, if you see, still the current will flow through this channel and this current
+[07:46] ID will get saturated.
+[07:49] Because the electrons which are passing through this channel can still be able to cross
+[07:53] this vibration layer due to the electric force.
+[07:57] So once the pinch of condition occurs, then the current ID gets saturated.
+[08:02] And even if we increase the value of voltage VDS, then still the current through this
+[08:05] circuit will remain almost constant.
+[08:08] So if we see the drain curves or the ID versus VDS curves for the different values of VGS,
+[08:15] then it will look like this.
+[08:17] So as you can see, as the value of VGS will increase, the current ID will also increase.
+[08:23] And this parabolic curve shows the low cost of the voltage VDS where the drain current
+[08:28] ID will get saturated.
+[08:30] So in this graph, this region is known as either linear or the omic region.
+[08:37] So in this region, the MOSFET can be operated as a voltage controlled resistor.
+[08:43] So for the fixed value of VDS, as we change the value of voltage VGS, then the width of
+[08:49] the channel will change.
+[08:51] Or we can say that effectively, the channel resistance will change.
+[08:55] So whenever VDS is less than VGS minus VT, and VGS is greater than VT, in that case,
+[09:05] the MOSFET is operating in this linear region.
+[09:08] And in this region, it can be operated as a voltage controlled resistor.
+[09:13] And if you talk about the next region, then it is the cutoff region.
+[09:17] So whenever this voltage VGS is less than VT, in that case, the current through the MOSFET
+[09:24] is zero.
+[09:25] Or we can say that the MOSFET will remain in the off condition.
+[09:30] And then after, if you talk about this region of operation, then it is the saturation region.
+[09:36] So whenever the MOSFET is operated on the right-hand side of this low cost, then we can
+[09:41] say that it is operating in the saturation region.
+[09:45] So mathematically, we can say that whenever this voltage VDS is greater than or equal to
+[09:50] VGS minus VT, at that time, it is operating in this saturation region.
+[09:56] So this is all about the drain characteristic and the different regions of operation of
+[10:00] this enhancement type of MOSFET.
+[10:03] So similarly, now let us see the transfer characteristic.
+[10:07] So the transfer characteristic shows the relationship between the input voltage VGS and the output
+[10:12] drain current ID.
+[10:14] So basically, it shows how the drain current ID changes as we change the value of voltage
+[10:19] VGS.
+[10:20] And while plotting this characteristic, the voltage VDS has been kept constant.
+[10:26] So as you can see, up to the threshold voltage, the drain current ID is zero.
+[10:31] And after that, as we increase the value of voltage VGS, then the drain current ID will
+[10:36] increase.
+[10:37] And the relationship between the current ID and the voltage VGS can be given as, ID is
+[10:43] equal to K times VGS minus VT whole square, where the K is the device constant and it
+[10:51] depends on the physical parameters of the device.
+[10:55] So using this expression, we can find the value of the drain current for the fixed value
+[10:59] of VGS.
+[11:01] All right.
+[11:03] So far, we have discussed the n-channel MOSFET.
+[11:05] So similarly, let us briefly talk about the P-channel MOSFET.
+[11:10] So in case of the P-channel enhancement type of MOSFET, the substrate is a n-type and
+[11:16] through the metallic contacts, the drain and the source terminals are connected to this
+[11:20] P-type material.
+[11:22] But now, in case of this P-channel MOSFET, the polarity of the voltages will be reversed.
+[11:28] So now, the channel will be formed whenever the App-Cat voltage VGS is negative.
+[11:34] And mathematically, we can say that the channel will be formed whenever this voltage VGS is
+[11:40] greater than VT.
+[11:43] And the current starts flowing through the channel whenever we apply the voltage VDS
+[11:47] between the drain and the source terminal.
+[11:50] So for the P-channel MOSFET, the pinch of condition will occur whenever this voltage
+[11:54] VDS is equal to VGS minus VT.
+[11:59] But here, all the voltages will be negative.
+[12:04] And for the P-channel MOSFET, now if you see the drain or the output characteristic, then
+[12:08] it will look like this.
+[12:10] But here, now this current VDS and the voltage VGS will be negative.
+[12:16] And the drain current ID will also flow from the source terminal towards the drain terminal.
+[12:22] So as you can see from the graph, as VGS becomes more and more negative, then the drain
+[12:27] current ID will increase.
+[12:30] And whenever this value VGS is greater than VT, then the MOSFET will operate in the cut
+[12:35] off region.
+[12:37] And similarly, if you see the transfer characteristic, then it will be the mirror image of the
+[12:42] n channel MOSFET.
+[12:45] So this is the brief overview about the P-channel type of MOSFET.
+[12:49] So at the end, now let us see the symbols of this n channel and the P-channel MOSFETs.
+[12:55] So the symbols are quite similar to the division type of MOSFET.
+[12:58] But here, the line which connects the drain and the source terminals is a dashed line.
+[13:04] And basically, it indicates the absence of the channel under the no-bass condition.
+[13:09] And if the substrate is internally connected to the source terminal, then these symbols
+[13:14] are used to represent this MOSFETs.
+[13:17] Apart from that, the only difference between the n and the P-channel is the direction
+[13:21] of the arrow.
+[13:23] So if the arrow is going inwards, then it represents the n channel MOSFET.
+[13:28] And if it is going outwards, then it represents the P-channel MOSFET.
+[13:32] So this is all about the symbols which are used for the n-enzyme type of MOSFET.
+[13:37] So I hope in this video, you understood the construction, working and the different characteristics
+[13:42] of this n-enzyme type of MOSFET.
+[13:44] So if you have any questions or suggestions, do let me know here in the comment section
+[13:49] below.
+[13:50] If you like this video, hit the like button and subscribe with your most such videos.

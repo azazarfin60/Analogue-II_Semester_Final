@@ -1,0 +1,62 @@
+Title: Operational Amplifier (Op-Amp) Solved Problem (Analog Electronics) | Quiz # 403
+URL: https://www.youtube.com/watch?v=5UfdSsSbTO8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this circuit based on the ideal op-amp.
+[00:15] Moreover here we have been also given the expression for the IV characteristic of the diode.
+[00:21] So in this expression, these VT is the thermal voltage and here that is equal to 25 milli
+[00:27] volt. Moreover here this I0 is equal to 1 micro ampere and here this voltage V is the
+[00:35] voltage across the diode in the photo bias condition.
+[00:39] So in this circuit, we have been asked to find the output voltage V out when the input
+[00:44] voltage is equal to minus 1 volt.
+[00:47] So first of all here we have been given that the given op-amp is the ideal op-amp.
+[00:53] That means here the no current is flowing into the op-amp terminals and because of the
+[00:57] negative feedback here we can apply the concept of the virtual ground.
+[01:02] So here if you notice then the non-inverting terminal of the op-amp is at the ground potential.
+[01:08] That means here the voltage at this inverting terminal will also be equal to 0 volt.
+[01:14] So now let's say the current which is flowing through this 100gm resistor is equal to I1
+[01:21] and this current I1 will flow from the 0 volt to minus 1 volt because the current flows
+[01:26] from the higher voltage to the lower voltage.
+[01:29] Similarly let's say the current through this diode is equal to I2 and if we apply the
+[01:36] KCL at this node then this current I2 should be equal to I1 because here the no current
+[01:44] is flowing into the op-amp terminal.
+[01:46] So now first of all let's find this current I1.
+[01:50] So here this current I1 is equal to 0 minus minus 1 volt divided by 100 kilo ohm that
+[01:59] is equal to n micro-amp here.
+[02:02] That means this current I1 is equal to n micro-amp here and the same current will also flow
+[02:08] through this diode.
+[02:10] That means here this I1 is equal to I2 is equal to n micro-amp here.
+[02:16] So once we know this current I2 then we can easily find the voltage drop across this
+[02:20] 4g of resistor.
+[02:22] So let's say this voltage drop is equal to V1 and the voltage drop across this diode
+[02:28] is equal to VD.
+[02:31] So now if we apply the KCL in this loop then we can say that this output voltage V out
+[02:37] is equal to V1 plus VD that is equal to this n micro-amp here times 4 kilo ohm plus
+[02:46] VD.
+[02:47] That means V out is equal to this 40 milli volt plus VD.
+[02:53] So now to find this output voltage we just had to find this voltage VD and to find this
+[02:58] voltage VD given already given the expression of the IV characteristic of the diode.
+[03:04] So as per the expression of the IV characteristic of the diode the current through the diode
+[03:08] I is equal to I0 times this e to the power VD by VT minus 1.
+[03:17] So here the current through the diode is equal to n micro-amp here moreover here we also
+[03:23] know the value of this I0 and the VT.
+[03:26] So here the value of I0 is equal to 1 micro-amp here.
+[03:31] That means this 10 micro-amp here is equal to 1 micro-amp here times e to the power V
+[03:37] divided by VT minus 1.
+[03:41] That means e to the power VD divided by VT minus 1 that is equal to n.
+[03:47] Or we can say that this e to the power VD divided by VT is equal to 11.
+[03:55] So now if we take the natural log on both sides then we will get this V divided by VT
+[04:01] that is equal to natural log of 11 and that is roughly equal to 2.4.
+[04:07] So from this we can say that this voltage V or the voltage across the diode is equal
+[04:13] to 2.4 times VT where the VT is equal to 25 milli volt.
+[04:19] That means the voltage V or the voltage across the diode is roughly equal to 60 milli volt.
+[04:26] So in this way we also got the value of the voltage across the diode.
+[04:31] So now this output voltage V out is equal to the voltage drop across this 4 kilo ohm resistor
+[04:36] plus the voltage drop across the diode.
+[04:39] So here this voltage V1 is equal to 40 milli volt.
+[04:44] While we have seen that the voltage drop across the diode is equal to 60 milli volt.
+[04:50] That means the output voltage of this op amp is equal to 100 milli volt or we can say
+[04:55] that that is equal to 0.1 volt.
+[04:59] So from this we can say that for the given equation this output voltage V out is equal
+[05:04] to 0.1 volt and therefore for the given equation this B is the correct answer.

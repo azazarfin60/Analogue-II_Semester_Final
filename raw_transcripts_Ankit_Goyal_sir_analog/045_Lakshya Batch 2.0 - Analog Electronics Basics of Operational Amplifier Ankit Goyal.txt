@@ -1,0 +1,2368 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Basics of Operational Amplifier | Ankit Goyal
+URL: https://www.youtube.com/watch?v=WrW3br8zC1U
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:03] Very good morning to all of you.
+[00:05] We are back on Created YouTube channel with Lakshya Batch 2.0 Analog Electronics.
+[00:11] We are starting a new chapter from this session.
+[00:16] I will tell you that the most awaited chapter is
+[00:20] Operational Amplifier, which we call in short, OPAMP.
+[00:24] We are starting OPAMP in this session.
+[00:28] You can get ready for a great session.
+[00:33] In this session, I am going to cover only the basic of OPAMP.
+[00:38] We will see the basic things.
+[00:41] What happens in OPAMP?
+[00:43] What is the internal circuit of OPAMP?
+[00:46] We are going to see all these things.
+[00:48] But before that, I will start quickly.
+[00:51] Mark your attendance once by pressing like.
+[00:54] And share this session with more and more children.
+[00:57] Tell everyone that Ankit Sir is now live.
+[01:00] So that everybody can join in this session live.
+[01:05] Share it quickly.
+[01:07] Let's go.
+[01:08] And there is good news for all of you.
+[01:11] Our Diwali giveaway.
+[01:13] What is our Diwali giveaway?
+[01:15] You are getting 25% off on an Academy subscription.
+[01:20] This is only for the first 300 subscribers.
+[01:25] And for this, you can note this code.
+[01:29] D-L-L-Q-N-I-R-P.
+[01:33] This is the code for which you are getting 25% discount on the first 300 subscribers on an Academy subscription.
+[01:43] But this is valid only till the 24th.
+[01:47] Okay?
+[01:48] Let's start our session on this.
+[01:52] So let's start today's session.
+[01:54] Dear, don't jump directly on OPAMP.
+[01:57] I will first discuss a brief discussion.
+[02:00] What types of amplifiers are there on different types of amplifiers?
+[02:05] Which amplifiers do you want to study?
+[02:08] Then we will go to OPAMP.
+[02:11] So basically, we read four types of amplifiers.
+[02:15] One is Voltage Amplifier.
+[02:18] Here, you get voltage in input and voltage in output.
+[02:23] One is Current Amplifier.
+[02:25] Where you get current in input and current in output.
+[02:30] Third is Trans Resistance Amplifier.
+[02:34] Where current is in input and voltage is in output.
+[02:38] And fourth is Trans Conductance Amplifier.
+[02:42] Where voltage is in input and current is in output.
+[02:47] So depending upon the input and output quantities,
+[02:51] you define four types of amplifiers.
+[02:55] Voltage, Current, Trans Resistance and Trans Conductance.
+[02:59] Okay?
+[03:00] So first we will discuss on this.
+[03:02] We will talk about their input and output resistance.
+[03:05] And then we will move on to OPAMP.
+[03:07] Okay?
+[03:08] And secondly, I will tell you one more thing.
+[03:11] Whatever are the videos of your back
+[03:15] and this part of OPAMP
+[03:19] will be your private from tomorrow.
+[03:22] Okay?
+[03:23] From now on, we will keep a 24 hours policy.
+[03:25] Because I feel that we have taken it very leniently.
+[03:28] That if we are not making videos private,
+[03:31] then attendance has become very low.
+[03:33] So from tomorrow, this will be the rule of 24 hours.
+[03:36] So I am taking this session today.
+[03:38] After this session, it will become private.
+[03:41] Okay?
+[03:42] That is why you have to attend.
+[03:43] So within 24 hours, you will have to attend.
+[03:46] I was a little lenient in between.
+[03:47] Let's go, some kids are walking back.
+[03:49] Let's let them do it.
+[03:50] But this way,
+[03:51] a lot of kids have a consistency break.
+[03:54] Now the rule of 24 hours will remain.
+[03:56] Let's start.
+[03:58] So look, this is the circuit of the voltage amplifier.
+[04:02] We know this from another name.
+[04:04] Voltage Controlled Voltage Source.
+[04:06] That is, where we are putting voltage on input
+[04:09] and creating voltage on output.
+[04:12] Or through input voltage,
+[04:14] we are producing another voltage source.
+[04:19] Now here you see.
+[04:24] If I talk about Vin.
+[04:26] Look, what is this here?
+[04:28] Let me show you one thing.
+[04:30] What happens here, son?
+[04:32] This is the circuit of your amplifier.
+[04:35] This is the circuit.
+[04:37] This part is amplifier.
+[04:40] The rest is your source outside
+[04:43] and your load outside.
+[04:46] There is a source outside
+[04:48] and your load outside.
+[04:51] Okay?
+[04:52] Now look here.
+[04:54] If you take out input voltage,
+[04:57] then what will be the input voltage?
+[04:59] It will be VS.
+[05:01] Okay?
+[05:02] Into Rn
+[05:06] divided by RS
+[05:09] plus Rn.
+[05:12] Similarly, if you take out output voltage,
+[05:16] then what will happen?
+[05:18] AV
+[05:21] Vin
+[05:24] into Rl
+[05:28] by R0 plus Rl.
+[05:31] This will come.
+[05:33] Okay?
+[05:34] This will come.
+[05:35] Now the thing is,
+[05:37] I want maximum voltage on output.
+[05:40] What I want is,
+[05:41] in a voltage amplifier,
+[05:43] maximum voltage should reach the output.
+[05:47] If you want it to reach the maximum output,
+[05:51] then you will say that
+[05:53] R0 must
+[05:55] tend to zero.
+[05:57] Because if R0 is zero,
+[05:59] then it will be AV into Vin.
+[06:01] But,
+[06:03] the source voltage is not going on Vin.
+[06:06] The source voltage is also
+[06:08] divided by Vin.
+[06:10] If you want maximum voltage on output,
+[06:12] then you will have to take another condition.
+[06:15] That the entire source voltage
+[06:18] should reach Vin.
+[06:22] And the entire source voltage should reach Vin.
+[06:25] For this,
+[06:27] you will have to say
+[06:29] Rn must
+[06:31] tend to infinity.
+[06:33] Because if Rn tends to infinity here,
+[06:37] then Vin will become equal to VS.
+[06:39] Otherwise, think like a MOSFET.
+[06:42] If this input resistance is open,
+[06:45] if no current flows,
+[06:47] then no drop will come across the RS,
+[06:50] then the entire supply voltage will reach Vin.
+[06:55] The entire supply voltage
+[06:57] will reach Vin.
+[06:59] Okay?
+[07:01] Is this clear?
+[07:03] Tell me.
+[07:05] Is this clear or not?
+[07:07] What do you want in the voltage amplifier?
+[07:09] That input resistance
+[07:11] must tend to infinity
+[07:13] and the output resistance
+[07:15] must tend to zero.
+[07:17] Okay?
+[07:19] Sir, can't we take
+[07:21] RS tends to zero?
+[07:23] The source and load
+[07:25] are not in my control.
+[07:27] When I am designing the amplifier,
+[07:29] the parameters of the amplifier
+[07:31] are in my control.
+[07:33] I am putting the resistances
+[07:35] in the amplifier.
+[07:37] But the source
+[07:39] or the internal resistance
+[07:41] of the source
+[07:43] or the load resistance
+[07:45] that we cannot decide
+[07:47] when we are designing an amplifier.
+[07:49] Think like an electronics engineer.
+[07:51] You are designing an integrated circuit of the amplifier.
+[07:53] After that,
+[07:55] applying a source and load
+[07:57] is the work of the consumer.
+[07:59] This is not our work.
+[08:01] Do you understand?
+[08:03] What else do you call the voltage amplifier?
+[08:05] It is called
+[08:07] the dependent source in the networks.
+[08:09] Voltage controlled voltage source.
+[08:15] Do you understand?
+[08:17] The dependent source
+[08:19] then you do not
+[08:21] read the physical significance there.
+[08:23] Obviously, you
+[08:25] read the mathematical things there.
+[08:27] But this is its physical application.
+[08:29] That voltage amplifier
+[08:31] is actually a voltage controlled
+[08:33] voltage source.
+[08:35] The next is the current amplifier.
+[08:37] In the current amplifier
+[08:39] this much part is
+[08:41] your amplifier.
+[08:43] Okay?
+[08:45] The part in front and back
+[08:47] is the load.
+[08:53] This is the best example of
+[08:55] the RE model of BJT.
+[08:57] What do you apply in the RE model of BJT?
+[08:59] You apply beta IB.
+[09:01] That is, its input current
+[09:03] is IB and its output current
+[09:05] is beta IB.
+[09:07] That is, the output current
+[09:09] depends on the input current.
+[09:11] That is the current controlled
+[09:13] current source.
+[09:15] That is the current controlled
+[09:17] current source.
+[09:19] Look here, in the name of the load,
+[09:21] I applied a resistance.
+[09:23] RL.
+[09:25] In the name of the load, I applied a resistance.
+[09:27] RL.
+[09:29] But if you look at the input side,
+[09:31] there is a current source.
+[09:33] And look carefully.
+[09:35] There is a resistance in the
+[09:37] parallel of the current source.
+[09:39] That is RS.
+[09:41] Because if we talk about a practical current source,
+[09:43] it contains a resistance
+[09:45] in parallel to the current source.
+[09:47] For example, in the series of
+[09:49] voltage source, there is resistance.
+[09:51] Similarly, there is resistance in the parallel
+[09:53] of the current source.
+[09:55] The direction is upside down.
+[09:57] I am giving you an example, Jagannath.
+[09:59] Your beta IB model,
+[10:01] that also represents BJT as
+[10:03] a current controlled current source.
+[10:05] Now, look here.
+[10:07] If you want to take out
+[10:09] I in, you apply
+[10:11] a resistance.
+[10:13] I in is
+[10:15] I s
+[10:17] into RS
+[10:19] by
+[10:21] RS
+[10:23] plus R i
+[10:25] or R in
+[10:27] and load current
+[10:29] is
+[10:31] A i
+[10:33] I in
+[10:35] into
+[10:37] R out
+[10:39] by R out
+[10:41] plus R L.
+[10:43] Again, look at my major objective.
+[10:45] What will happen?
+[10:47] When the load gets the maximum current,
+[10:49] when this current amplifier is
+[10:51] given in the current output,
+[10:53] the load should receive
+[10:55] the maximum current.
+[10:57] And if the load has to
+[10:59] receive the maximum current,
+[11:01] then here R naught
+[11:03] must tend to
+[11:05] infinity.
+[11:07] If this R naught resistance
+[11:09] opens,
+[11:11] then all the current source
+[11:13] will come into R L.
+[11:15] All the current source
+[11:17] will come into R L.
+[11:19] But I in
+[11:21] is not equal to supply current.
+[11:23] It is also coming from the current division.
+[11:25] That is, the input current
+[11:27] is not the same as the source current.
+[11:29] It is also getting
+[11:31] divided
+[11:33] among RS and R in.
+[11:35] So, if you want
+[11:37] all the current of the source
+[11:39] goes into R i.
+[11:41] What do you want?
+[11:43] If all the current of the source
+[11:45] goes into R i or R in,
+[11:47] then you will have to do
+[11:49] R i or R in
+[11:51] tending to zero.
+[11:53] If you think that if you have
+[11:55] shorted this resistance,
+[11:57] then all the current of the source
+[11:59] will pass through the short circuit.
+[12:01] That is, I in
+[12:03] is not equal to IS.
+[12:05] So, R in tending to
+[12:07] zero and R naught tending
+[12:09] to infinity.
+[12:11] Clear?
+[12:13] The requirement of this is
+[12:15] exactly opposite
+[12:17] of the voltage amplifier.
+[12:19] That is why
+[12:21] different amplifiers need
+[12:23] different type of input and output resistance.
+[12:25] No two
+[12:27] should have the same thing.
+[12:29] No two should have the same thing.
+[12:31] Depending upon which type of amplifier
+[12:33] you are making, according to
+[12:35] input-output resistance, it will be decided.
+[12:45] Manthan, what doubt
+[12:47] did I answer just a little while ago?
+[12:49] Tell me.
+[12:51] Just a little while ago,
+[12:53] there was a doubt of a child.
+[12:55] I will tell you whose doubt it was.
+[12:57] Why can't the source
+[12:59] come?
+[13:01] Okay.
+[13:03] Are you late?
+[13:05] Why, Manthan?
+[13:07] Are you late in the class?
+[13:09] Come on.
+[13:11] Move ahead.
+[13:15] Transconductance amplifier.
+[13:17] If we talk about transconductance amplifier,
+[13:19] then
+[13:21] there is a voltage source on the input
+[13:23] but on the output
+[13:25] there is a current source.
+[13:27] Here
+[13:31] write it like this.
+[13:33] gm into v in
+[13:35] What happens here?
+[13:37] If you come to the class from time,
+[13:39] the late-waiting won't work.
+[13:43] Now see this.
+[13:47] Here again,
+[13:49] what do you want?
+[13:51] First of all, see this.
+[13:53] The circuit in the middle box,
+[13:55] is the amplifier.
+[13:57] Transconductance means
+[13:59] it is a voltage-controlled
+[14:01] current source.
+[14:03] That is, the current is available
+[14:05] on the output.
+[14:07] But who is controlling
+[14:09] that current?
+[14:11] The voltage is controlling that current.
+[14:13] So, voltage-controlled
+[14:15] current source.
+[14:17] Voltage-controlled
+[14:19] current source.
+[14:21] Okay.
+[14:23] Now, here
+[14:25] you showed a voltage source on the input.
+[14:27] You showed a voltage source
+[14:29] on the input.
+[14:31] And you showed a current source
+[14:33] on the output.
+[14:35] Your objective is
+[14:37] that the maximum current
+[14:39] should go in the load.
+[14:41] So, iL
+[14:43] is equal to
+[14:45] gm
+[14:47] v in
+[14:49] into r0
+[14:51] by r0
+[14:53] plus rl.
+[14:55] Now, how much is this v in?
+[14:57] On the input side,
+[14:59] you put the voltage division.
+[15:01] Vs
+[15:03] into rn
+[15:05] by rs
+[15:07] plus rn.
+[15:09] Now again, you want
+[15:11] the load to get the maximum current.
+[15:13] If you want
+[15:15] to give the maximum current to the load,
+[15:17] then infinity to r0.
+[15:19] So that all the
+[15:21] current goes in the load.
+[15:23] You make r0 infinity
+[15:25] so that all the
+[15:27] current goes in the load.
+[15:29] Okay.
+[15:31] And if you want
+[15:33] the supply voltage
+[15:35] to come on the input,
+[15:37] then you infinite the input resistance.
+[15:39] Because
+[15:41] when this resistance opens,
+[15:43] if i is your zero,
+[15:45] then there will be no drop
+[15:47] in the input.
+[15:49] That is, the entire
+[15:51] Vs will be v in
+[15:53] if we do r in tending to infinity.
+[15:55] That is,
+[15:57] we need infinite resistance here.
+[15:59] We need
+[16:01] infinite resistance here.
+[16:03] Do you understand the
+[16:05] thing?
+[16:07] Is it clear?
+[16:09] So, this is
+[16:11] your example.
+[16:13] Whether you look at MOSFET
+[16:15] or you look at JFET
+[16:17] even in BJT, the hybrid
+[16:19] Pi model that represents
+[16:21] BJT as a
+[16:23] voltage-controlled current source.
+[16:25] Okay. Voltage-controlled
+[16:27] current source.
+[16:29] Fourth is the trans-resistance amplifier.
+[16:31] So,
+[16:33] see what happens
+[16:35] in the trans-resistance amplifier.
+[16:37] That here
+[16:39] you have
+[16:41] a current source in input
+[16:43] and in output
+[16:45] you get voltage.
+[16:47] What do you get?
+[16:49] Voltage.
+[16:51] That is why we say current-controlled
+[16:53] voltage source.
+[16:55] Okay.
+[16:59] Current-controlled
+[17:01] voltage source.
+[17:03] So, if you see
+[17:05] its gain. The gain will be
+[17:07] voltage by current.
+[17:09] Its unit will be in ohms.
+[17:11] That is why it is trans-resistance.
+[17:13] In the previous one, there was
+[17:15] current in output.
+[17:17] There was voltage in input.
+[17:19] So, what is the gain?
+[17:21] Current by voltage.
+[17:23] Its unit is
+[17:25] MOS or C-months.
+[17:27] That is why it is trans-conductance.
+[17:29] Current upon voltage.
+[17:31] Here voltage upon
+[17:33] current.
+[17:35] Okay.
+[17:37] Okay.
+[17:39] Current upon current.
+[17:41] Okay.
+[17:43] Now, here you will see
+[17:45] what will be your V-naught.
+[17:49] This is the gain
+[17:51] which you are representing
+[17:53] from R.
+[17:55] Into RL
+[17:57] by
+[17:59] R-naught plus RL.
+[18:01] Then, the current
+[18:03] on the input side,
+[18:05] will be removed from the current division.
+[18:07] RL
+[18:09] into RS
+[18:11] over RS
+[18:13] plus RN.
+[18:15] Now, see again
+[18:17] my objective is
+[18:19] when the voltage is on the load.
+[18:21] The load should
+[18:23] get maximum voltage.
+[18:25] The load must get
+[18:27] the maximum possible
+[18:29] voltage.
+[18:31] If the load needs the maximum possible voltage,
+[18:33] then R-naught
+[18:35] plus 10 to 0.
+[18:37] That is, if there is no drop
+[18:39] in the middle, then all the voltage
+[18:41] should be on the load.
+[18:43] And if you want
+[18:45] the input current to be equal to the supply,
+[18:47] if the input current
+[18:49] is equal to the supply,
+[18:51] then R-N should be
+[18:53] 10 to 0.
+[18:55] Because if the input resistance
+[18:57] is short-circuited,
+[18:59] if the input resistance is short-circuited,
+[19:01] then the supply
+[19:03] current of the supply
+[19:05] will go from the input resistance.
+[19:07] Is the matter clear?
+[19:09] So, you need both the resistances
+[19:11] low here.
+[19:13] You need both the resistances low here.
+[19:15] Is this clear?
+[19:17] There are four types of amplifiers.
+[19:19] Now, Zainul is asking
+[19:21] what will be the current
+[19:23] on the voltage amplifier?
+[19:25] Son, you can remove this.
+[19:27] If you want to remove the current amplifier,
+[19:29] then current into resistance
+[19:31] and if you want to remove the current
+[19:33] of the voltage amplifier, then voltage upon resistance
+[19:35] Okay?
+[19:37] The major objective of the voltage amplifier
+[19:39] is to maximize the voltage
+[19:41] on the output.
+[19:43] And the objective of the current
+[19:45] is to maximize the current.
+[19:47] Okay?
+[19:49] Now, see here I have summarized
+[19:51] what is your requirement.
+[19:53] In a voltage amplifier,
+[19:55] high input resistance
+[19:57] low output
+[19:59] Low input in the current amplifier
+[20:01] High output
+[20:03] Both should be high in the trans conductance
+[20:05] and both should be
+[20:07] low in the trans resistance.
+[20:09] So, these are four types of amplifiers.
+[20:11] The use of these
+[20:13] can be seen anywhere.
+[20:15] One, son, you will come
+[20:17] in dependent sources.
+[20:19] Okay? In dependent sources.
+[20:21] And the other application
+[20:23] when I will teach the feedback amplifier,
+[20:25] then I will tell you
+[20:27] that there are different types of
+[20:29] feedback topologies.
+[20:31] There are also different types of amplifiers.
+[20:33] That means, in the voltage amplifier
+[20:35] there is one type of feedback.
+[20:37] There is a different type of
+[20:39] feedback for the current amplifier.
+[20:41] So, there is one type of feedback
+[20:43] associated with every amplifier.
+[20:45] That is, four amplifiers.
+[20:47] So, there are four categories of feedback.
+[20:49] That is the thing, but we will do
+[20:51] in the feedback amplifier.
+[20:53] When I will make you complete the filter
+[20:55] I will make you complete the feedback amplifier.
+[20:57] And in this course, in the filters
+[20:59] we will go according to
+[21:01] the latest gate syllabus.
+[21:03] We will also do Butterworth filter.
+[21:05] And we will also do
+[21:07] Salon filter.
+[21:09] Okay? It will be according to the latest.
+[21:11] So, and now
+[21:13] we are saying that the condition of
+[21:15] Rn and Rout will be dual or
+[21:17] opposite. There is no such rule, son.
+[21:19] Both are high and both are low.
+[21:21] So, you cannot tell the condition
+[21:23] of Rn and Rout.
+[21:25] Basically, there are four combinations
+[21:27] according to the high level.
+[21:29] And accordingly, there are four types of amplifiers.
+[21:31] Okay?
+[21:33] If you know the meaning of
+[21:35] amplifier, like from the trans
+[21:37] conductance, you know that
+[21:39] there will be current source on output
+[21:41] and voltage source on input.
+[21:43] So, you can also derive the condition.
+[21:45] It is not true that you should always remember.
+[21:47] Make a circuit, you will get
+[21:49] clear the condition.
+[21:51] What is O-PAMP?
+[21:53] First of all, son, O-PAMP is
+[21:55] operational amplifier.
+[21:57] Why do they call it operational amplifier?
+[21:59] Because it is an
+[22:01] amplifier, my children, with which
+[22:03] you can perform
+[22:05] many mathematical operations.
+[22:07] In this amplifier,
+[22:09] the input is
+[22:11] that is, that is
+[22:13] differential input.
+[22:15] That is, the difference
+[22:17] of two values is taken.
+[22:19] Like, in BJT, I had studied
+[22:21] differential amplifier and
+[22:23] single-ended output,
+[22:25] that is, the output is taken from one terminal.
+[22:27] So, the children who have
+[22:29] done differential amplifier with me,
+[22:31] they must be understanding
+[22:33] differential input and single-ended
+[22:35] output. What was
+[22:37] differential amplifier? There were two BJTs
+[22:39] whose base terminal
+[22:41] we were giving the input, correct?
+[22:43] So, here, the difference of input
+[22:45] means the input that will be
+[22:47] put between both the base terminal
+[22:49] will be put.
+[22:51] But the output that will be
+[22:53] taken from one collector
+[22:55] will not be taken from both the collectors.
+[22:57] Therefore, single-ended
+[22:59] output. If we take it from both the
+[23:01] collectors, what do we call it?
+[23:03] Double-ended output.
+[23:05] If we take it from one collector,
+[23:07] then that is the single-ended
+[23:09] output. Now,
+[23:11] why do we call it operational amplifier?
+[23:17] It can be used.
+[23:19] It can be used.
+[23:21] This is the most interesting
+[23:23] thing about it.
+[23:25] For example, till now, you only used to
+[23:27] talk about gain. Here, there are
+[23:29] a lot of talks about gain.
+[23:31] So, it can be used to perform
+[23:33] mathematical
+[23:35] operations
+[23:41] mathematical operations
+[23:43] such as
+[23:51] what can it be?
+[23:55] Adder
+[23:57] Subtractor
+[24:01] Multiplier
+[24:03] Amplifier
+[24:13] Log
+[24:15] Antilog
+[24:17] There can be
+[24:19] many things.
+[24:25] There can be even division.
+[24:27] So, you can do all these mathematical
+[24:29] operations with this amplifier.
+[24:31] That is why we call it
+[24:33] integration
+[24:35] differentiation
+[24:39] Let me write it like this.
+[24:43] So, all these
+[24:45] mathematical operations can be
+[24:47] used by amplifiers.
+[24:49] That is why operational
+[24:51] amplifier.
+[24:53] What is the best thing about it?
+[24:55] Look, its gain is
+[24:57] very high.
+[24:59] But the interesting thing is
+[25:01] when in it
+[25:03] we apply negative feedback
+[25:05] then we can
+[25:07] control the gain of the amplifier
+[25:09] using
+[25:11] external resistances.
+[25:13] So, when you apply negative feedback
+[25:15] then with the help of
+[25:17] resistances, you have made
+[25:19] negative feedback. You can
+[25:21] modify their values
+[25:23] and modify its gain.
+[25:25] Otherwise, this amplifier
+[25:27] is directly on fire.
+[25:29] Its by default gain is very high.
+[25:31] 10's power 5, 10's power
+[25:33] 6. In this range
+[25:35] its gain is seen.
+[25:37] Okay?
+[25:39] So, what we are saying is
+[25:41] using negative feedback
+[25:47] using negative feedback
+[25:51] gain can be controlled
+[25:57] by controlling
+[26:03] external resistances
+[26:09] whatever resistances
+[26:11] you have used
+[26:13] in feedback.
+[26:15] Okay?
+[26:17] Now, by default
+[26:19] if we talk about
+[26:21] opamp, the gain of opamp
+[26:23] is very high.
+[26:25] That is why
+[26:27] V0 versus V in
+[26:29] when voltage
+[26:31] transfer characteristic is made
+[26:33] then the linear region
+[26:35] which is slope
+[26:37] which is slope
+[26:39] is very high
+[26:41] due to which
+[26:43] output is immediately saturated.
+[26:45] It is immediately saturated.
+[26:47] Sir, what is the meaning of
+[26:49] saturated?
+[26:51] Whenever you make
+[26:53] bison voltage
+[26:55] like in BJT
+[26:57] VCC and 0
+[26:59] or dual supply
+[27:01] VCC and minus VEE
+[27:03] VDD in acid
+[27:05] MOSFET
+[27:07] maximum output of
+[27:09] any amplifier
+[27:11] which is its supply voltage
+[27:13] cannot be more output
+[27:15] in BJT terms
+[27:17] collector's voltage
+[27:19] cannot be higher than
+[27:21] the supply voltage.
+[27:23] So, any amplifier's output
+[27:25] can never be
+[27:27] more than
+[27:29] the supply voltage.
+[27:31] So, this amplifier
+[27:33] has a very high slope
+[27:35] and where does it saturate
+[27:37] at the value of
+[27:39] the supply voltage
+[27:41] which you called as VSAT.
+[27:45] Did you understand?
+[27:47] Output of any amplifier
+[27:49] whether you think
+[27:51] with the example of BJT
+[27:53] is logical.
+[27:55] If you take
+[27:57] the cut-off region
+[27:59] in BJT
+[28:01] then you get VCC.
+[28:05] Supply
+[28:07] Voltage
+[28:09] Supply is
+[28:11] DC voltage
+[28:13] not input AC
+[28:15] DC voltage
+[28:17] cannot be done.
+[28:19] So, why is VSAT and minus VSAT
+[28:21] because I have said
+[28:23] if you are putting
+[28:25] a supply of plus 10 volts
+[28:27] then you are putting
+[28:29] a supply of minus 10 volts
+[28:31] i.e. dual supply
+[28:33] of biasing.
+[28:35] Do you understand?
+[28:37] If you take VCC and 0
+[28:39] then the saturation level is
+[28:41] VCC and here the saturation level is
+[28:43] 0.
+[28:45] If you put a dual supply
+[28:47] of plus 10 and minus 10
+[28:49] then the saturation level
+[28:51] will be at 10 and minus 10
+[28:53] if you put 10 and 0
+[28:55] then it will be at 10 and one
+[28:57] will be at 0.
+[28:59] Is it clear?
+[29:01] Tell me if it is clear or not?
+[29:03] Tell me quickly.
+[29:05] Now think one thing
+[29:07] if this is 10 volts
+[29:09] listen carefully
+[29:11] if it is saturating at 10 volts
+[29:13] and its slope is
+[29:15] 10 to the power 5 then
+[29:17] tell me if the X point
+[29:19] will be very small or not?
+[29:21] X point will be
+[29:23] 10 upon 10 to the power 5
+[29:25] i.e.
+[29:27] 0.1 millivolts
+[29:29] if the value of Y axis
+[29:31] is 10 and slope
+[29:33] is 10 to the power 5
+[29:35] then what will be the value on X axis
+[29:37] 10 to the power minus 4
+[29:39] i.e. 0.1 millivolts
+[29:41] what is the drawback
+[29:43] with an opamp
+[29:45] that it can amplify
+[29:47] very small range of inputs
+[29:49] if you increase
+[29:51] the value of input
+[29:53] then it will
+[29:55] saturate.
+[29:57] Do you understand?
+[29:59] First I will
+[30:01] take an example of BJT
+[30:03] and explain it
+[30:05] if you are making a BJT amplifier
+[30:11] ok
+[30:13] ok
+[30:37] see what I am telling you
+[30:39] that
+[30:41] if you take
+[30:43] this transistor in cutoff
+[30:45] then
+[30:47] you will say i.c.
+[30:49] and i.e.
+[30:51] equal to 0 ok
+[30:53] those who do not understand
+[30:55] look carefully now
+[30:57] so I say
+[30:59] in that situation
+[31:03] or then think
+[31:05] in that situation
+[31:09] if I look at the collector
+[31:11] voltage
+[31:13] then how much will it come
+[31:15] if the collector
+[31:17] voltage is seen
+[31:21] that is Vcc
+[31:23] ok
+[31:25] if this was not in cutoff
+[31:27] then i.c. would have
+[31:29] flowed
+[31:31] your voltage
+[31:33] from Vcc
+[31:35] your voltage would have
+[31:37] flowed
+[31:39] ok
+[31:41] if transistor
+[31:43] if transistor
+[31:45] was
+[31:47] operational
+[31:49] or was on
+[31:51] i.c.
+[31:53] would not be 0
+[31:55] then Vc
+[31:57] will be less than Vcc
+[31:59] therefore
+[32:01] output voltage
+[32:03] of amplifier
+[32:05] Vcc
+[32:07] will be less than Vcc
+[32:09] Vcc
+[32:11] Vcc
+[32:13] Vcc
+[32:15] Vcc
+[32:17] Vcc
+[32:19] Vcc
+[32:21] Vcc
+[32:23] Vcc
+[32:25] Vcc
+[32:27] Vcc
+[32:29] Vcc
+[32:31] Vcc
+[32:33] So, you won't talk about phase reversal.
+[32:35] What will you write here?
+[32:36] Gain into V1 minus V2.
+[32:40] So, it is a reversal for V2, but it is not a reversal for V1.
+[32:44] Visualize the differential amplifier.
+[32:46] I was just telling you one thing,
+[32:48] Output voltage cannot exceed supply voltage.
+[32:53] Now, what is the problem with the O-Pamp?
+[32:57] Due to high
+[33:01] Gain
+[33:04] The range of input voltages
+[33:11] The range of
+[33:16] input voltages
+[33:20] for which
+[33:25] for which
+[33:27] linear characteristics
+[33:29] linear characteristics
+[33:34] are observed
+[33:40] is very narrow.
+[33:48] Okay?
+[33:49] It is very narrow.
+[33:50] When you go outside,
+[33:52] your output is absolutely saturated.
+[33:56] This is our drawback.
+[33:58] And that is why we put negative feedback in the O-Pamp.
+[34:02] Now, when we go to the lectures ahead,
+[34:05] meaning the third lecture,
+[34:07] I will explain the negative feedback of the O-Pamp.
+[34:09] So, you will learn this only there.
+[34:11] What do you do by putting negative feedback?
+[34:14] You control the gain.
+[34:16] Even I have written that
+[34:18] using negative feedback, we can control the gain
+[34:21] in the desired range
+[34:24] by changing the value of external resistance.
+[34:27] So, the gain of this is so high that
+[34:30] if you saturate it, what is the benefit?
+[34:32] If you saturate it, do you know why?
+[34:34] Firstly, the waveform will be distorted.
+[34:36] Secondly, for such a low input,
+[34:39] this is giving a linear operation.
+[34:41] If I put 2 millivolts and 3 millivolts of input,
+[34:44] then it will enter the saturation.
+[34:46] If I put sinusoidal wave,
+[34:48] then it will clip it.
+[34:50] I want amplification,
+[34:52] but not so much that my waveform gets clipped.
+[34:56] Do you understand?
+[34:58] The gain in amplifier is important,
+[35:00] but at the same time, it is also very important
+[35:02] that distortion does not come.
+[35:04] Is it clear?
+[35:06] Distortion does not come, this is also very important.
+[35:09] Okay?
+[35:23] Look, there is one thing here,
+[35:25] Jayesh, as it is 10 volts,
+[35:28] this gain is 10 power 5,
+[35:30] so you said that this point is 10 power minus 4.
+[35:33] If this gain was 10 and this was 10,
+[35:37] then where would this point have reached?
+[35:40] At 1.
+[35:42] It would have reached at 1, right?
+[35:44] Basically, what I have to say is that
+[35:46] if you control the gain,
+[35:48] then you can increase the linear region.
+[35:50] Look, if you decrease the slope,
+[35:52] then your linear region has increased.
+[35:55] Tell me, think like this.
+[35:57] If you decrease the slope,
+[35:59] then your linear region has increased, right?
+[36:02] It is simple, because the saturation voltage
+[36:05] is going to be there.
+[36:07] The less the gain,
+[36:09] the more your linear region is.
+[36:16] Why do you all need to reduce the gain?
+[36:20] And who will reduce the gain from negative feedback?
+[36:23] If you think about the terms of the control system,
+[36:26] G upon 1 plus GH,
+[36:28] if the gain of an open loop system is G,
+[36:31] if the gain of a negative feedback system is G by 1 plus GH,
+[36:34] that is, the gain reduces due to negative feedback.
+[36:39] Okay?
+[36:40] Is everyone enjoying it?
+[36:42] Is everything clear?
+[36:43] Look, everyone says that
+[36:45] the saturation voltage is the supply voltage.
+[36:47] I have also proved that
+[36:49] the saturation voltage
+[36:51] or the maximum output voltage
+[36:54] is the same as the supply voltage.
+[36:57] We cannot go beyond that.
+[36:59] Now look, where does this application come from?
+[37:02] There is an application in filtering.
+[37:04] I will teach you the filter.
+[37:06] Signal conditioning,
+[37:08] that is, take the signal to the desired level.
+[37:11] As soon as the signal has to be clipped,
+[37:14] then we will see rectifiers here.
+[37:17] Maybe the amplitude of the signal has to be increased.
+[37:20] Obviously, this is an amplifier.
+[37:22] So when we convert an input signal
+[37:24] in a desired form,
+[37:26] which I want,
+[37:28] that is called as signal conditioning.
+[37:30] And arithmetic operation
+[37:32] or you can also say mathematical operation.
+[37:36] What I have just told you by writing so many,
+[37:39] all those mathematical operations
+[37:41] can be done with the help of an opamp.
+[37:44] But think about the amplifier of BJT
+[37:48] or the amplifier of your MOSFET
+[37:52] can be operated a little less than that.
+[37:55] There you get gain.
+[37:57] You take out three things.
+[37:59] Voltage gain, input resistance, output resistance, that's it.
+[38:02] But here a lot is possible.
+[38:05] Now look, what is the model of an opamp?
+[38:07] An opamp is represented by a triangle.
+[38:10] There are two terminals in it.
+[38:12] Input 1 and input 2.
+[38:15] That is why I said differential input.
+[38:17] But the only terminal of output is
+[38:20] the plus V and minus V.
+[38:22] These are the biasing voltage
+[38:24] or say power supply
+[38:26] with which you are on the opamp.
+[38:30] There is an input resistance
+[38:34] between the two terminals.
+[38:36] The cross of which is Vin.
+[38:38] So this is a voltage controlled voltage source.
+[38:40] So look, Vin came here.
+[38:42] Av into Vin.
+[38:44] And here in the series,
+[38:46] your output resistance.
+[38:48] What is the output resistance?
+[38:50] So this opamp is
+[38:52] in it
+[38:54] 2 input
+[38:57] terminals.
+[39:00] Okay.
+[39:02] The positive terminal in it is V in 1.
+[39:07] It is called non-inverting input.
+[39:11] What do you call it?
+[39:12] Non-inverting input.
+[39:16] And the negative terminal is V in 2.
+[39:20] What is it called?
+[39:22] Inverting input.
+[39:24] What is it called?
+[39:26] Inverting input.
+[39:30] So this is your voltage amplifier.
+[39:34] Or say voltage controlled voltage source.
+[39:39] So the same model is shown inside.
+[39:44] Voltage controlled
+[39:48] voltage source.
+[39:55] Okay.
+[39:59] For this, what should your input resistance be?
+[40:03] It should be high.
+[40:05] And what should your output resistance be?
+[40:08] It should be low.
+[40:10] As you are reading now.
+[40:12] In voltage amplifier,
+[40:14] input resistance must be high.
+[40:16] Output resistance must be low.
+[40:18] See, I will not say infinity.
+[40:20] Practically, it is not possible.
+[40:22] So what I told you about zero and infinity,
+[40:24] those were the ideal cases.
+[40:26] If you make an ideal amplifier,
+[40:28] then one input resistance will be infinity.
+[40:31] The output one will be zero.
+[40:33] Or if you were making it from MOSFET,
+[40:36] then it was also possible for once that
+[40:38] you would have infinite input resistance.
+[40:40] Because there is an insulator on the gate terminal.
+[40:44] Now what you will see here,
+[40:46] this V and minus V
+[40:49] V and minus V
+[40:53] are dual supply bias.
+[40:57] Dual supply bias.
+[41:02] And this V naught.
+[41:05] V naught always
+[41:07] lies between these two.
+[41:10] Always.
+[41:12] Brother, you can put feedback.
+[41:14] Even if you don't put feedback,
+[41:16] but keep this in mind,
+[41:18] you can never exceed supply.
+[41:22] Okay?
+[41:23] Whether it is negative feedback or positive feedback,
+[41:25] take any application.
+[41:27] You can never go beyond these two values.
+[41:30] Even when you will read positive feedback,
+[41:33] you will read Schmidt Trigger,
+[41:35] Multivibrators.
+[41:36] You will notice one thing there too.
+[41:39] Brother, your output is not beyond this.
+[41:42] These are called as the saturation voltages.
+[41:46] You can control this
+[41:48] because when is the saturation going on?
+[41:50] How many inputs are going on?
+[41:52] But on saturation,
+[41:54] you cannot go beyond this voltage.
+[41:57] Okay?
+[41:58] You will never be able to go beyond this voltage.
+[42:00] Yes, it is necessary that
+[42:02] saturation can be found on a less voltage.
+[42:05] It is all done with the help of Zener diode.
+[42:07] You will see that in the questions.
+[42:09] Especially when you see the question of Schmidt Trigger,
+[42:11] it can be 15 volts.
+[42:13] And I will saturate this on 10 only.
+[42:16] Using a Zener diode.
+[42:18] Because you know that Zener diode
+[42:20] constant the voltage.
+[42:22] So as soon as you go above 10,
+[42:24] if the Zener is on, it will stop at 10.
+[42:26] It will not go beyond 10.
+[42:28] But these are the things ahead.
+[42:30] We don't have any meaning from this.
+[42:32] Now look, the interesting thing is
+[42:34] this output terminal,
+[42:36] it can
+[42:38] source as well as
+[42:40] sync current.
+[42:42] Source as well as
+[42:44] sync current.
+[42:46] This means that
+[42:48] it can supply the current.
+[42:50] And it can absorb the current.
+[42:52] Don't think that
+[42:54] the output terminal is like this.
+[42:56] The current will go out of it.
+[42:58] The current can also enter it.
+[43:00] Just what is it?
+[43:02] It depends on
+[43:04] the external circuit.
+[43:06] That the current will go out of it.
+[43:08] Or the current will
+[43:10] take it inside.
+[43:12] Do you understand what I am saying?
+[43:14] Tell me.
+[43:16] Do you understand what I am saying?
+[43:18] Now look here.
+[43:20] If you say that the input voltage is
+[43:22] so much,
+[43:24] then the differential input
+[43:26] is V in 1
+[43:28] minus
+[43:30] V in 2.
+[43:32] This is the differential input.
+[43:34] V in 1 minus
+[43:36] V in 2.
+[43:38] The output voltage is
+[43:40] gain
+[43:42] multiplied by
+[43:44] V in 1
+[43:46] minus V in 2.
+[43:48] Like this.
+[43:50] That is why the differential amplifier
+[43:52] is called.
+[43:54] Because it amplifies the difference of 2 voltages.
+[43:56] And that is why it is called
+[43:58] double ended input.
+[44:00] Because there are 2 inputs.
+[44:02] Single ended output.
+[44:04] Because the output is taken from one terminal.
+[44:06] But sir, the output voltage
+[44:08] should also be between 2.
+[44:10] So the output voltage is
+[44:12] the voltage of this terminal
+[44:14] with respect to ground.
+[44:16] So you are taking the output
+[44:18] with respect to ground.
+[44:20] What are you doing?
+[44:22] You are taking the output with respect to ground.
+[44:24] Now look here.
+[44:26] If the block diagram is made.
+[44:28] If the block diagram is made.
+[44:44] Look.
+[44:46] There are 4 stages in this.
+[44:54] The first stage
+[44:56] there are 2 inputs.
+[44:58] And there are 2 outputs.
+[45:14] In the first stage, there are 2 inputs.
+[45:16] And 2 outputs come out of it.
+[45:26] In the next stage,
+[45:28] there is only one input.
+[45:30] So from here your single input
+[45:32] starts going.
+[45:42] Okay. So in this way
+[45:44] the opamp is made of 4 stages.
+[45:46] Now what are its 4 stages?
+[45:48] Look.
+[45:52] This is.
+[45:54] V in 1
+[45:56] V in 2
+[45:58] which I have just shown you from 2 inputs.
+[46:00] This stage is called
+[46:02] input stage.
+[46:04] There are many transistors
+[46:06] in the opamp.
+[46:08] It is not as simple as BJT or MOSFET.
+[46:10] It is not as simple as amplifier.
+[46:12] Then the second stage in the middle
+[46:14] is called
+[46:16] intermediate stage.
+[46:18] Think for yourself.
+[46:20] If the power 5 of 10
+[46:22] is reaching
+[46:24] it will not reach one BJT amplifier.
+[46:26] One BJT amplifier
+[46:28] gives a gain of 100-200.
+[46:30] Okay.
+[46:32] Then the next is
+[46:34] Level Translator.
+[46:36] What is it?
+[46:38] Level
+[46:40] Translator
+[46:42] And then the last one is
+[46:44] output stage.
+[46:46] What is it?
+[46:48] Output
+[46:50] Now
+[46:52] what is the significance of these stages?
+[46:54] What are these stages?
+[46:56] How do we understand this?
+[46:58] Dear, the first input stage
+[47:00] in which there are 2 inputs and 2 outputs
+[47:02] tell us
+[47:04] what will be the differential amplifier
+[47:06] that people have studied.
+[47:08] There are 2 inputs and 2 outputs.
+[47:10] What is the differential amplifier?
+[47:12] We will go to it now.
+[47:14] The input current
+[47:16] the point which is called zero
+[47:18] should stop for some time.
+[47:20] Tell me.
+[47:22] This should be it.
+[47:26] Dual input
+[47:30] Balanced output
+[47:32] differential amplifier
+[47:34] and the children
+[47:36] who have not studied differential amplifier
+[47:38] Sir, what is this?
+[47:40] Think for yourself. There are 2 BJT
+[47:42] which you have put
+[47:44] input on both the base
+[47:46] and you have taken
+[47:48] output from both the collectors.
+[47:50] There are 2 BJT
+[47:52] in this input stage.
+[47:54] There is input on both the base
+[47:56] and output from both the collectors
+[47:58] has come.
+[48:00] It is called as dual input
+[48:02] balance output.
+[48:04] And this stage
+[48:06] decides the input
+[48:08] resistance of opamp.
+[48:10] This stage
+[48:12] tells
+[48:14] the input resistance
+[48:16] of the first stage.
+[48:18] This stage
+[48:20] tells the input resistance of opamp.
+[48:22] I have also made you
+[48:24] derive the input resistance.
+[48:26] What is it?
+[48:28] Remember 2 beta RE
+[48:30] Remember
+[48:32] 2 beta RE was taken out?
+[48:34] The input resistance of differential amplifier
+[48:36] is
+[48:38] the input resistance of opamp.
+[48:40] Because the beginning
+[48:42] is a dual input
+[48:44] differential output
+[48:46] from amplifier
+[48:48] or dual input balanced output.
+[48:50] This intermediate stage
+[48:52] is also a differential
+[48:54] amplifier.
+[48:56] But this is dual input
+[48:58] unbalanced output
+[49:00] unbalanced output
+[49:04] unbalanced output
+[49:06] differential amplifier.
+[49:08] Now the children
+[49:10] have to understand
+[49:12] that there are 2 BJT
+[49:14] in this too.
+[49:16] There was input on both the base
+[49:18] but the output
+[49:20] was taken from one collector
+[49:22] not from both.
+[49:24] That is why the output was terminal 1.
+[49:26] What is the level translator?
+[49:28] We will come to this now.
+[49:30] What is the output stage?
+[49:32] It is a
+[49:34] Push pull
+[49:36] Push pull
+[49:38] Push pull
+[49:40] Push pull
+[49:42] This is a power amplifier.
+[49:44] Why power amplifier?
+[49:46] I told you
+[49:48] when I studied small signal model
+[49:50] in diode BJT.
+[49:52] There are 2 types of amplifiers.
+[49:54] One is small signal amplifier
+[49:56] where AC is much much
+[49:58] less than DC.
+[50:00] And one is large signal amplifier
+[50:02] where AC is comparable
+[50:04] to DC.
+[50:06] And those are called as power amplifier.
+[50:08] So power amplifier
+[50:10] is a large signal amplifier.
+[50:12] And this power amplifier
+[50:14] is making
+[50:16] your output stage.
+[50:18] Because when the amplifier
+[50:20] is coming AC signal
+[50:22] the amplitude of AC signal has increased a lot.
+[50:24] Now you cannot
+[50:26] put a small signal amplifier on the last stage.
+[50:28] See the input
+[50:30] AC came was small.
+[50:32] But after 2 times
+[50:34] amplification
+[50:36] the value of AC will increase.
+[50:38] If you have amplified twice
+[50:40] then the value of AC will increase.
+[50:42] If you amplify twice
+[50:44] and increase the value of AC
+[50:46] then there will be no small signal amplifier here.
+[50:48] What to put here?
+[50:50] Large signal amplifier.
+[50:52] Is it clear?
+[50:56] Now the thing is
+[50:58] what is the level translator?
+[51:00] Everyone understood what is the level translator.
+[51:02] See what happens?
+[51:04] O-Pamp is a direct coupled amplifier.
+[51:06] That is between 2 stages
+[51:08] you do not give
+[51:10] capacitor.
+[51:12] If you do not give capacitor
+[51:14] then it does not block DC.
+[51:16] It lets DC
+[51:18] pass ahead.
+[51:20] If DC passes
+[51:22] then the signal you will get
+[51:24] on output that
+[51:26] will be DC plus AC
+[51:28] whose DC level will also increase.
+[51:30] Now with DC level
+[51:32] there is a risk
+[51:34] that your
+[51:36] BJT will go in saturation
+[51:38] so that your waveform
+[51:40] will get distorted
+[51:42] or waveform will get clipped.
+[51:44] So the work of level translator
+[51:46] is that your DC plus AC signal
+[51:48] will get removed
+[51:50] from that and
+[51:52] pass AC ahead.
+[51:54] Did you understand?
+[51:56] When I taught you
+[51:58] multi-stage amplifier in BJT
+[52:00] even then I told
+[52:02] one drawback of direct coupling
+[52:04] that when direct coupling
+[52:06] does not give the capacitor of coupling
+[52:08] then your DC also passes ahead
+[52:10] and when DC passes ahead
+[52:12] then the level of DC also increases.
+[52:14] Whose work is
+[52:16] to bring back that level?
+[52:18] Level translator.
+[52:20] Let's write this point.
+[52:22] What are we saying?
+[52:24] That
+[52:26] OPAMP is a
+[52:30] direct coupled amplifier
+[52:36] OPAMP is a direct coupled
+[52:38] amplifier
+[52:44] So DC
+[52:46] also passes
+[52:50] DC also passes
+[52:52] from
+[52:56] one stage to the next.
+[53:06] Okay?
+[53:08] Transistor
+[53:12] may saturate
+[53:18] leading to
+[53:20] clipping
+[53:26] of
+[53:30] waveform
+[53:36] so to remove
+[53:38] so to remove
+[53:44] DC from waveform
+[53:50] level translator is
+[53:52] used
+[53:58] Did you understand the purpose of level translator?
+[54:00] Its work is not to amplify
+[54:02] brother
+[54:04] Its work is not to amplify
+[54:06] Its work is to remove
+[54:08] DC from the signal.
+[54:10] Now there should be a question
+[54:12] that should come to your mind immediately
+[54:14] that sir this means
+[54:16] that if I
+[54:18] give DC on the input of OPAMP
+[54:20] then level translator will remove
+[54:22] that means because of
+[54:24] level translator
+[54:26] OPAMP can only amplify AC
+[54:28] not DC
+[54:30] Okay? It can only amplify AC
+[54:32] not DC
+[54:34] What is the effect? No, son.
+[54:36] Level translator
+[54:38] removes a particular DC
+[54:40] which is the cause of biasing
+[54:42] Whose cause?
+[54:44] Biasing
+[54:46] does not make any difference.
+[54:48] If you put a capacitor
+[54:50] then even if you give DC input
+[54:52] it would remove it
+[54:54] but level translator
+[54:56] is not so stupid that
+[54:58] remove the input DC
+[55:00] Its work is to remove
+[55:02] only that DC which is coming
+[55:04] because of biasing.
+[55:06] So this is a better
+[55:08] better option than a capacitor
+[55:10] because
+[55:12] you get the biasing output
+[55:14] on the collector.
+[55:16] The collector voltage
+[55:18] will also be due to biasing.
+[55:22] So if you have
+[55:24] such a signal
+[55:30] then what will it do?
+[55:32] It will bring it down.
+[55:34] It will bring it down.
+[55:44] Now I will write this point
+[55:46] Don't worry.
+[55:58] Okay?
+[56:00] So what does level translator do?
+[56:02] It brings the signal to zero.
+[56:08] Understood?
+[56:10] So this is your output versus
+[56:12] T.
+[56:14] With whom?
+[56:16] Level translator
+[56:22] Okay?
+[56:24] Till here it is clear
+[56:26] what is the purpose of level translator?
+[56:28] Now see
+[56:30] what I was telling you
+[56:32] Level translator
+[56:36] does not
+[56:38] remove
+[56:40] does not
+[56:42] remove
+[56:44] DC
+[56:50] from input
+[56:54] but
+[56:56] only removes
+[57:04] DC
+[57:06] from
+[57:08] biasing
+[57:10] Okay?
+[57:14] Now you must be thinking
+[57:16] that you could have put a capacitor
+[57:18] in the coupling.
+[57:20] There were two losses of putting a capacitor.
+[57:22] One is when a capacitor
+[57:24] is fabricated on an IC
+[57:26] it will require
+[57:28] a large chip area.
+[57:30] Firstly,
+[57:32] it will require a large chip area.
+[57:34] Secondly, the capacitor
+[57:36] will never differ
+[57:38] whether it came from DC biasing
+[57:40] or input.
+[57:42] The capacitor will block the DC
+[57:44] i.e. if you took a capacitor
+[57:46] in opamp
+[57:48] then opamp can never amplify DC voltage.
+[57:50] It will only
+[57:52] work on the AC voltage.
+[57:54] Okay?
+[57:56] So if I ask you a small question
+[57:58] here
+[58:00] why
+[58:02] RC coupling
+[58:04] is not used?
+[58:10] What is this opamp?
+[58:12] It comes like an integrated circuit
+[58:14] like a chip.
+[58:16] According to me, you must have seen it in the college lab.
+[58:18] Maximum kids
+[58:20] come in the name of 2741.
+[58:22] Firstly,
+[58:24] capacitor
+[58:26] requires
+[58:28] a large chip area.
+[58:34] Okay?
+[58:38] Secondly,
+[58:44] cannot amplify
+[58:46] DC input
+[58:48] or DC input
+[58:52] because the
+[58:54] coupling capacitor
+[58:56] has a low frequency response
+[58:58] which is very poor.
+[59:00] Do you remember
+[59:02] the high frequency gain
+[59:04] was less on both?
+[59:06] Because of your coupling
+[59:08] and bypass capacitor
+[59:10] due to high frequency
+[59:12] due to parasitic
+[59:14] and load capacitance.
+[59:16] This is what you said in MOSFET
+[59:18] this is what you said in JFET
+[59:20] this is what you said in BJT
+[59:22] this is what you said in BJT
+[59:24] Now you understand
+[59:26] if you are reading opamp later
+[59:28] how many things are you able to connect?
+[59:30] Now see what happens in many places
+[59:32] opamp comes after diode directly.
+[59:34] Now even after diode
+[59:36] you will read it. It is not that you cannot solve the circuit.
+[59:38] You will make the circuit.
+[59:40] You will be able to solve the whole network
+[59:42] after two classes. You will see the whole network.
+[59:44] But will all these things be clear?
+[59:46] These things will not be clear.
+[59:48] You will not understand
+[59:50] what are these things?
+[59:54] These things
+[59:56] will not be in EDC
+[59:58] because in EDC
+[60:00] what is the coupling?
+[60:02] In EDC what is the capacitor?
+[60:04] In between the coupling capacitor
+[60:06] and bypass capacitor
+[60:08] and analog master will say
+[60:10] that all this is not in analog
+[60:12] then where will all these things be?
+[60:14] Will we understand all these concepts?
+[60:16] If we say in analog
+[60:18] that we only have to network
+[60:20] and EDC will say that I am telling you
+[60:22] about the inside of BJT
+[60:24] that it is not in my scope
+[60:26] then what is the scope?
+[60:28] Eventually all these things go away.
+[60:30] So don't think that I am giving you the theory in analog
+[60:32] that I am teaching you EDC
+[60:34] not EDC
+[60:36] EDC is much much different than this
+[60:38] I am just
+[60:40] explaining the physical significance
+[60:42] of these circuits
+[60:44] Look, there is a network
+[60:46] In the network subject
+[60:48] you are not interested in the physical significance
+[60:50] of any circuit
+[60:52] but in analog these are the circuits
+[60:54] that are practically being used
+[60:56] these are not just random circuits
+[60:58] nothing is made
+[61:00] circuit is made
+[61:02] between resistance
+[61:04] capacitance, biasing
+[61:06] level translator
+[61:08] all these things are important
+[61:10] all these things are important
+[61:12] they are not being made like this
+[61:14] So tell me, did you understand
+[61:16] why you didn't use the capacitor?
+[61:18] Tell me
+[61:20] why you didn't use the capacitor?
+[61:26] Tell me
+[61:30] The next point
+[61:32] Look, level shifter
+[61:38] Level translator is also called
+[61:40] level shifter
+[61:42] level shifter
+[61:44] has
+[61:46] high
+[61:48] Z in
+[61:52] due to which
+[61:58] there is no
+[62:00] loading effect
+[62:08] effect on
+[62:12] effect on
+[62:14] intermediate stage
+[62:16] Okay, do you know
+[62:18] I will tell you one more thing
+[62:20] why DC came? There is one more reason
+[62:22] One is because of DC capacitor
+[62:24] which didn't stop
+[62:28] Look at this block
+[62:30] diagram
+[62:32] here there is a balanced output
+[62:34] What do you do in a balanced output
+[62:36] in a balanced output
+[62:38] you take the difference of 2 collectors
+[62:40] voltage
+[62:42] there is no DC here
+[62:44] there is no DC
+[62:46] in a balanced output
+[62:48] because when you take the difference
+[62:50] of 2 collectors voltage
+[62:52] DC cuts
+[62:54] if there were 3-3 volts on both
+[62:56] then 3-3 is zero
+[62:58] but here DC reaches
+[63:00] here DC reaches
+[63:02] due to unbalanced output
+[63:04] you have taken the output from one collector
+[63:06] so this intermediate stage
+[63:08] comes with DC
+[63:10] DC never comes from the first stage
+[63:12] DC comes from the second stage
+[63:14] do you understand this
+[63:16] DC was introduced because of the second stage
+[63:18] otherwise DC would not have
+[63:20] come if the second stage
+[63:22] was also balanced
+[63:24] why didn't you make the second stage balanced
+[63:26] because I wanted a single
+[63:28] ended output
+[63:30] I wanted only one terminal
+[63:32] I was designing a ramp
+[63:34] so I had to take one stage unbalanced
+[63:36] otherwise
+[63:38] 2 terminals would always be running
+[63:40] so finally I would have
+[63:42] 2 terminals of output
+[63:44] that I didn't want
+[63:46] I wanted a single terminal
+[63:48] with respect to the ground
+[63:50] is it clear now
+[63:52] tell me
+[63:54] let me write
+[63:58] biasing DC
+[64:02] is introduced
+[64:08] introduced
+[64:10] by
+[64:12] intermediate stage
+[64:22] due to unbalanced output
+[64:26] feel is coming
+[64:28] of all the concepts
+[64:30] and the differential amplifiers
+[64:32] that have come with me
+[64:34] they might be able to connect
+[64:36] all these things
+[64:38] I also told you that
+[64:40] in the balanced output
+[64:42] common mode signal is also cancelled
+[64:44] DC also gets cancelled
+[64:46] but in unbalanced output
+[64:48] DC will not be cancelled
+[64:52] level translator
+[64:54] will pass DC of input
+[64:56] so now level translator
+[64:58] remove the biasing DC
+[65:00] that is
+[65:02] cancel the biasing DC
+[65:04] if in intermediate stage
+[65:06] 5V DC is coming
+[65:08] then it will shift 5V
+[65:10] due to input supply
+[65:12] the DC coming
+[65:14] Vin1, Vin2
+[65:16] it won't affect
+[65:18] but if capacitor is there
+[65:20] then capacitor doesn't affect
+[65:22] that DC Vin1, Vin2
+[65:24] is coming
+[65:26] it stops all
+[65:28] simple thing is why are you getting confused
+[65:30] in this
+[65:32] you see some of this type
+[65:34] your level translator
+[65:36] as if you make a simple
+[65:38] BJT
+[65:40] this is Vin
+[65:42] this is Vin-VBE
+[65:44] and here what you can do
+[65:46] by varying the resistance
+[65:48] you can vary the output
+[65:50] you can vary the output level
+[65:52] you can vary the output level
+[65:54] you can vary the output level
+[65:56] you can vary the output level
+[65:58] you can do like this
+[66:00] you can do like this
+[66:02] okay
+[66:04] according to voltage division
+[66:08] but removing
+[66:10] biasing DC can
+[66:12] after biasing and Q point can alter
+[66:14] so for next person
+[66:16] supply will be on its own
+[66:18] you have supplied level translator
+[66:20] separately
+[66:22] you will supply push pull amplifier
+[66:24] separately
+[66:26] so you don't want
+[66:28] supply to base
+[66:30] you don't want
+[66:32] DC coming on base
+[66:34] from last stage
+[66:36] what you want
+[66:38] that biasing
+[66:40] I will design according to
+[66:42] like voltage divider bias
+[66:44] like self bias
+[66:46] you don't want to be dependent on the last stage
+[66:48] do you understand Lokesh
+[66:50] biasing will be separated
+[66:52] from every stage
+[66:54] with the same supply voltage VCC
+[66:56] what is the meaning of separating
+[66:58] that you will do biasing
+[67:00] with the help of different resistances
+[67:02] if you are
+[67:04] giving voltage divider bias
+[67:06] to every stage
+[67:08] for voltage divider bias
+[67:10] the resistances you are using
+[67:12] are individual resistances
+[67:14] you don't want the last stage
+[67:16] to affect the biasing
+[67:18] the output is constant
+[67:20] there is no problem
+[67:22] I say that
+[67:24] the output should be dependent on input
+[67:26] not on biasing
+[67:28] so the component of biasing
+[67:30] which is here on input
+[67:32] the component of biasing
+[67:34] which is here on input
+[67:36] it will have to be removed
+[67:40] the output should never depend on biasing
+[67:42] that is why
+[67:44] the level translator
+[67:46] what is coming in input
+[67:48] there are two things coming in input
+[67:50] one is biasing DC
+[67:56] and one is
+[67:58] amplified input
+[68:00] input which is amplified
+[68:02] from this
+[68:04] removing biasing DC
+[68:06] this is the work of
+[68:08] level shifter or level translator
+[68:10] of the circuit
+[68:16] you had told me in BJT
+[68:18] when you wanted to stabilize the Q point
+[68:20] in BJT Q point stabilization
+[68:22] was a different thing
+[68:24] here the Q point stabilization
+[68:26] is not talking about
+[68:28] the problem is
+[68:30] that if DC is involved
+[68:32] in the output of one stage
+[68:34] then it will reach the final output
+[68:36] it will move the Q point
+[68:38] along with that it will reach the final output
+[68:40] whereas the signal
+[68:42] should be
+[68:44] due to input
+[68:46] it should be amplified
+[68:48] that should not be
+[68:50] a part of biasing
+[68:52] biasing has 5V
+[68:54] 10V
+[68:56] it should not
+[68:58] matter
+[69:00] don't get so confused
+[69:02] I
+[69:04] used to consider you as a sorted student
+[69:06] who understands everything
+[69:08] you have gone so far
+[69:10] in so many things
+[69:12] do you understand
+[69:14] as you think
+[69:16] let's give a small example
+[69:18] suppose you run a TV at home
+[69:20] whose channel
+[69:22] should be based on
+[69:24] the channel of the TV should be set
+[69:26] according to the remote
+[69:28] should the battery of the remote be less
+[69:30] or should it be affected on the TV channel
+[69:32] i.e. what is the output of the TV
+[69:34] should it be based on the input signal
+[69:36] that which button of the remote
+[69:38] should not be pressed on the power supply
+[69:40] if the output of the biasing
+[69:42] or the voltage of the biasing
+[69:44] entered the input
+[69:46] and reached the output
+[69:48] then the output will change
+[69:50] which should not happen
+[69:52] the output should only change
+[69:54] when the input changes
+[69:56] not when the biasing changes
+[69:58] and this circuit
+[70:00] we studied in Q point stability
+[70:02] diode bias
+[70:04] diode compensation
+[70:06] you can do biasing from the diode
+[70:08] of BJT
+[70:10] and this level translator will be yours
+[70:12] so there is nothing much in the level translator
+[70:14] we are establishing
+[70:16] the kind of a voltage divider network
+[70:18] with the help of BJT
+[70:20] so you should know the significance of the level translator
+[70:22] you don't have to enter
+[70:24] the circuit analysis of this
+[70:26] right? you don't have to enter the circuit analysis
+[70:28] now tell me
+[70:30] are those stages clear?
+[70:32] what are the four stages?
+[70:34] so this is its growth
+[70:36] this is the first differential amplifier
+[70:38] okay?
+[70:40] dual input and balanced output
+[70:42] wait there is one wire missing
+[70:46] see from here
+[70:48] one output comes out
+[70:50] from its collector
+[70:56] and this is the
+[70:58] translator's
+[71:02] going to the base
+[71:04] and getting angry
+[71:18] okay?
+[71:20] so here
+[71:22] both the transistors input on the base
+[71:24] both the collectors
+[71:26] output from the collector
+[71:28] okay? both the collectors
+[71:30] output from the intermediate stage
+[71:32] went to the base of each transistor
+[71:34] but here
+[71:36] output from one to the other
+[71:38] output from one to the other
+[71:40] which is given in the level translator
+[71:42] level translator removed the DC
+[71:44] and then
+[71:46] who was given the output
+[71:48] push pull type of amplifier
+[71:52] so see
+[71:54] who was given the output
+[71:56] from VCC
+[71:58] who was given the output
+[72:00] from VCC
+[72:02] so this is what I am saying
+[72:04] don't depend on one stage
+[72:06] because we have
+[72:08] applied separate resistances
+[72:10] I am not saying that the last stage
+[72:12] will help in DC
+[72:14] no, no one should take it from the last stage
+[72:16] you just have to
+[72:18] send the signal of work
+[72:20] what is the signal of work
+[72:22] that is coming from the input
+[72:24] you have to send it ahead
+[72:26] you don't have to send the biasing ahead
+[72:28] biasing is independent of every stage
+[72:30] input is here
+[72:32] what are you doing Zainul
+[72:34] here is the input
+[72:38] and here is the output
+[72:40] this is your second supply
+[72:42] and this is your first supply
+[72:44] have you seen the 5 terminals
+[72:46] okay?
+[72:48] have you seen the 5 terminals
+[72:50] 2 supply ones
+[72:52] which decides the saturation voltage
+[72:54] one output one
+[72:56] and 2 terminals for the input
+[72:58] now tell me
+[73:00] is it clear that the internal circuit of O-PAMP
+[73:02] how does O-PAMP work
+[73:04] now think
+[73:06] when so many transistors are involved
+[73:08] obviously it is an integrated
+[73:10] circuit
+[73:12] we won't make it like this in the air
+[73:14] okay? we won't make it like this
+[73:16] by combining different components
+[73:18] okay?
+[73:20] so if you have understood
+[73:22] all your doubts are clear
+[73:24] if you take the internal circuit of O-PAMP
+[73:26] then once you should make a heart in the chat
+[73:28] then it won't work like this
+[73:30] okay?
+[73:32] we need to make a heart in the chat
+[73:34] so many of us are taking drinks break
+[73:36] drink water
+[73:38] now Swarov
+[73:40] has made the whole thing
+[73:42] worried
+[73:48] let's go
+[73:50] let's go ahead
+[73:52] now the next one
+[73:54] mathematical model of
+[73:56] O-PAMP
+[73:58] so I have shown you the model of O-PAMP
+[74:00] there are 2 terminals here
+[74:02] V1 and V2
+[74:04] the difference between them is
+[74:06] input voltage
+[74:08] and here input voltage or let's say
+[74:10] VD
+[74:12] VD means differential input
+[74:14] what does it mean
+[74:16] differential
+[74:18] input
+[74:20] input
+[74:26] so what is A?
+[74:28] open loop gain of O-PAMP
+[74:30] which is very high
+[74:32] I told you
+[74:34] 10 power 5
+[74:36] 10 power 6 is in this range
+[74:38] RI is
+[74:40] input resistance
+[74:42] and R0
+[74:44] output resistance
+[74:56] okay
+[74:58] and I told you
+[75:00] the output terminal
+[75:02] can supply the current
+[75:04] and
+[75:06] can absorb the current
+[75:10] what is IP
+[75:12] IP is
+[75:14] the input current
+[75:16] of non-inverting terminal
+[75:20] input current
+[75:22] of non-inverting terminal
+[75:26] okay let me tell you
+[75:28] tomorrow also your class will be
+[75:30] okay on Diwali
+[75:32] 24th
+[75:34] tomorrow also your class
+[75:36] IN is
+[75:38] input current
+[75:40] of non-inverting terminal
+[75:50] this is your 2 current
+[75:52] I0 is the output current
+[75:56] now see the difference is that
+[75:58] IP and IN are very
+[76:00] less as compared to I0
+[76:02] because input resistance
+[76:04] is very high
+[76:06] so IP and IN are
+[76:08] much much less than I0
+[76:10] okay
+[76:12] they are not zero
+[76:14] to be zero
+[76:16] you will have to be infinite
+[76:18] with the help of input resistance
+[76:20] you will have to be infinite
+[76:22] but when input
+[76:24] input resistance is high
+[76:26] then you can say
+[76:28] okay you can say
+[76:30] that IP and IN
+[76:32] are very small
+[76:34] as compared to I0
+[76:36] now if there is an ideal opamp
+[76:38] if there is an ideal opamp
+[76:40] then how do we
+[76:42] show this
+[76:48] see
+[76:50] if there is an ideal opamp
+[76:52] then I would say
+[76:54] that take input resistance
+[76:56] to infinity
+[76:58] okay
+[77:00] then I would say
+[77:02] take input resistance to infinity
+[77:06] okay
+[77:16] and what do you see
+[77:18] here
+[77:28] like this
+[77:36] okay
+[77:38] this VD means
+[77:40] differential input
+[77:42] and this AV into
+[77:44] VD
+[77:46] so let us show
+[77:48] in ideal opamp
+[77:50] that input
+[77:52] resistance
+[77:54] are
+[77:56] IN
+[77:58] tends to infinity
+[78:02] okay
+[78:04] input resistance
+[78:12] are not
+[78:14] tends to zero
+[78:16] and see the second thing
+[78:18] what you can say here
+[78:20] because input resistance
+[78:22] is infinity
+[78:24] so IP and IN are zero
+[78:26] but
+[78:28] do not consider I0
+[78:30] to be zero
+[78:32] and do not consider
+[78:34] output current to be zero
+[78:36] but in what case
+[78:38] whether it is ideal or practical
+[78:40] never ever assume
+[78:42] never ever assume
+[78:44] that I0 is zero
+[78:46] just assume that IP and IN is zero
+[78:48] okay
+[78:50] so here output voltage fix
+[78:52] AV into VD
+[78:54] and this is
+[78:56] independent of load
+[78:58] independent of load means
+[79:00] independent of
+[79:02] I0
+[79:12] okay I0 to be independent
+[79:14] I0 to be independent
+[79:16] because see
+[79:18] if R0 was
+[79:20] if R0 was
+[79:22] my children
+[79:24] what would have happened if R0's
+[79:26] voltage drop would have come
+[79:28] would have depend on I0
+[79:30] V0 you write
+[79:32] AVVD minus I0
+[79:34] R0
+[79:36] so A into VD
+[79:38] minus I0
+[79:40] R0
+[79:42] so you have to consider this drop
+[79:44] but you will not consider drop
+[79:46] because R0 is zero
+[79:48] understood
+[79:50] so independent of load
+[79:52] now comes the frequency response
+[79:54] now see
+[79:56] let me tell you
+[79:58] OPAMPIC Direct Coupled Amplifier
+[80:04] OPAMPISA
+[80:08] Direct Coupled Amplifier
+[80:16] so
+[80:18] it can amplify
+[80:20] DC
+[80:24] DC as well
+[80:26] capacitor stops DC
+[80:28] so DC
+[80:30] can amplify
+[80:32] correct
+[80:34] so see its frequency response
+[80:36] the children who have studied multi-stage
+[80:38] have already seen this graph
+[80:46] here gain
+[80:48] versus frequency
+[80:50] we talk about
+[80:52] so how does the graph of
+[80:54] gain versus frequency
+[80:56] become
+[80:58] something like this
+[81:00] something like this
+[81:02] meaning you do not get
+[81:04] gain zero on DC
+[81:06] you do not get
+[81:08] gain zero in DC
+[81:10] gain is a finite value
+[81:12] as DC
+[81:14] at DC also
+[81:16] so here you will get maximum
+[81:18] gain
+[81:20] where you will get
+[81:22] gain 1 by root 2 times
+[81:28] where you will get
+[81:30] gain 1 by root 2 times
+[81:32] that is your bandwidth
+[81:42] we talk about this
+[81:46] F
+[81:50] L
+[81:52] and if you get
+[81:54] gain 1 by root 2
+[81:56] what does it say
+[81:58] unity gain bandwidth
+[82:00] or unity gain frequency
+[82:02] okay
+[82:04] where you get gain 1
+[82:06] that is F
+[82:08] T
+[82:10] unity gain frequency
+[82:12] or unity gain bandwidth
+[82:14] now sir
+[82:16] on low frequency
+[82:18] we understand that because of
+[82:20] no coupling capacitor
+[82:22] here you get high gain
+[82:26] so due to absence of
+[82:28] coupling capacitor
+[82:34] coupling capacitor also
+[82:36] responds low frequency
+[82:38] due to absence of coupling capacitor
+[82:40] we get
+[82:44] high gain at low frequency
+[82:56] but my children this
+[82:58] high frequency
+[83:00] high frequency
+[83:04] gain reduces
+[83:06] due to
+[83:08] compensating capacitor
+[83:10] okay
+[83:12] in opamp
+[83:14] compensating capacitor is applied
+[83:16] due to that
+[83:18] high frequency gain is reduced
+[83:20] so if you
+[83:22] see IC741
+[83:24] which is of opamp
+[83:28] there is inbuilt
+[83:30] compensating capacitor
+[83:36] and one IC
+[83:38] IC708
+[83:40] it looks
+[83:42] external
+[83:44] you will have to apply
+[83:46] from outside
+[83:48] there is no inbuilt
+[83:50] now see
+[83:52] its response
+[83:54] looks like a low pass filter
+[83:56] here its response
+[83:58] looks like a low pass filter
+[84:00] so what will I write
+[84:02] gain A max
+[84:08] 1
+[84:10] plus
+[84:12] F by F L
+[84:16] whole square
+[84:18] okay this looks like
+[84:20] low pass filter
+[84:22] looks like
+[84:26] this course will run till January
+[84:28] okay
+[84:30] now 3 months more
+[84:32] low pass filter
+[84:34] now what we will do
+[84:36] what we will do
+[84:38] here what happened F L
+[84:40] cutoff frequency or 3 dB frequency
+[84:42] you can see
+[84:44] this is response like a low pass filter
+[84:46] here F L is cutoff frequency
+[84:48] or 3 dB frequency
+[84:50] if you want a unity gain frequency
+[84:52] then what will you do
+[84:56] you will ignore
+[84:58] 1 below
+[85:00] because F T is very big
+[85:02] you can see from F L
+[85:04] this is larger than F L
+[85:06] so F T is here
+[85:08] A max into F L
+[85:12] okay A max into F L
+[85:14] is it clear
+[85:16] this A max is nothing but
+[85:18] open loop gain
+[85:20] this is nothing but open loop gain
+[85:22] now in someone's mind
+[85:24] what is compensating capacitor
+[85:26] this is applied to improve
+[85:28] stability
+[85:30] okay the stability of opamp
+[85:32] to improve stability of opamp
+[85:34] because of this high frequency
+[85:36] gain decreases
+[85:38] so this is frequency response
+[85:40] of opamp
+[85:42] now see how much you will reduce
+[85:44] by using external resistance
+[85:46] by using negative feedback
+[85:48] your bandwidth will increase
+[85:50] because you know
+[85:52] gain into bandwidth is
+[85:54] constant clear
+[85:56] gain into bandwidth is constant
+[85:58] so as much you will reduce
+[86:00] by the use of negative feedback
+[86:02] your bandwidth will increase
+[86:04] okay
+[86:06] so this is basic
+[86:08] now in tomorrow's lecture
+[86:10] I will tell you some parameters of opamp
+[86:12] like bias current, offset current
+[86:14] offset voltage
+[86:16] CMRR, SVRR, slew rate
+[86:18] we will discuss all these things
+[86:20] but now let's see some questions
+[86:22] let's see how much you understood
+[86:24] tell me
+[86:26] an ideal opamp has
+[86:28] voltage gain and dash bandwidth
+[86:30] what should be
+[86:32] ideal opamp
+[86:34] tell me
+[86:46] B
+[86:48] Chandan brother
+[86:50] write it once
+[86:52] look
+[86:56] see in ideal opamp
+[86:58] it should be D
+[87:00] in ideal opamp you won't say
+[87:02] gain into bandwidth is constant
+[87:04] because it is ideal
+[87:06] it won't follow this practical rule
+[87:08] the gain of ideal opamp
+[87:10] will also be infinite
+[87:12] and infinite bandwidth
+[87:14] no matter how much
+[87:16] you put the signal
+[87:18] it can amplify every frequency
+[87:20] it can do
+[87:22] if my brother has zero bandwidth
+[87:24] then what is ideal
+[87:26] it won't be able to amplify any signal
+[87:28] zero bandwidth means
+[87:30] what is bandwidth
+[87:32] that range of frequencies
+[87:34] which can amplify
+[87:36] so zero bandwidth means
+[87:38] this amplifier can't amplify anyone
+[87:40] so that is a waste
+[87:42] say it is ideal
+[87:44] what is ideal? it is best
+[87:46] ideal amplifier
+[87:48] so there
+[87:50] frequency limitation should not be there
+[87:52] that is there is no capacitor
+[87:54] which can reduce our gain
+[87:56] or
+[87:58] spoil our frequency response
+[88:00] we should get
+[88:02] constant all pass filter
+[88:04] gain
+[88:06] infinite voltage gain
+[88:08] if opamp is high
+[88:10] then how much would be ideal
+[88:12] would be infinite
+[88:14] if voltage gain is high
+[88:16] then the infinite of ideal
+[88:18] next
+[88:20] output impedance of an ideal opamp is
+[88:22] how much would be the output impedance
+[88:24] of an ideal opamp
+[88:26] tell me quickly
+[88:28] now I have written you ideal opamp
+[88:32] what will it be?
+[88:34] yes it will be zero
+[88:36] output impedance will be
+[88:38] zero
+[88:40] initially
+[88:42] operational amplifier
+[88:44] R with the help of
+[88:46] initially
+[88:48] who had made the opamp
+[88:50] with the help of
+[88:52] tell me
+[88:54] till the time there is no need of integrated circuits
+[88:56] till the time there is no need of integrated circuits
+[88:58] till then
+[89:00] who have you made with the help of
+[89:02] tell me
+[89:14] tell me
+[89:30] you people must be thinking
+[89:32] they have given D
+[89:34] Jougard is correct
+[89:36] okay
+[89:38] so vacuum tube or discrete devices
+[89:40] discrete devices means
+[89:42] I have shown you the circuit, you buy different BJTs, as you did the wiring, as you did the resistance and made an opamp.
+[89:50] Last, opamp is the best example of analog IC or digital IC.
+[89:55] Which IC is opamp? Which integrated circuit is analog or digital?
+[90:00] This will tell the child. Analog.
+[90:04] If we are reading analog, then it will be analog only, why digital?
+[90:08] Okay, so let's keep it here for today.
+[90:12] Tomorrow we will meet, okay?
+[90:15] Tomorrow we will meet and what will we do tomorrow?
+[90:18] Tomorrow we will read the parameters of opamp and it will be numerical.
+[90:22] And as I told you, you are getting 25% off the first 300 subscribers as a Diwali giveaway.
+[90:31] If you take more than one year subscription, this is the code that you will have to apply
+[90:37] to get this 25% discount.
+[90:40] But this is valid until Diwali, okay?
+[90:44] And you can go here and do special classes.
+[90:47] In these special classes, you can do BJT, diode, MOSFET, PYQ of all these.
+[90:54] And very soon there will be an opamp.
+[90:56] I will try to cover the major portion of the opamp till next week.
+[91:00] So you will be able to do the PYQ of the opamp.
+[91:03] And look here, if you come to the academy, there are two plus and two iconic facilities for you.
+[91:08] You are getting top educators in both.
+[91:11] You are getting study material on the app.
+[91:13] You are getting test series.
+[91:15] If you have any doubt in the new questions, then the iconic students will get the video solution.
+[91:19] For the house, printed notes, one-to-one guidance, strategy study plan
+[91:24] and in the open house session, you can talk to the teacher.
+[91:28] You will get this in case of iconic subscription.
+[91:33] No, Diwali will not be the day of the class.
+[91:35] It will be Tuesday tomorrow.
+[91:37] And look here, you have to go to the academy app and decide the subscription.
+[91:43] You have to decide the duration.
+[91:45] And then you have to apply the code, Ankit ESE.
+[91:49] And this Sunday there is a combat as well.
+[91:51] Tomorrow is the combat.
+[91:52] It is 11 o'clock.
+[91:53] So you can give combat to win exciting scholarship.
+[91:56] Like rank 1 will get scholarship up to 90%.
+[92:00] So you can test your skills here.
+[92:02] You can test your preparation here.
+[92:04] And you get a chance to compete on all India level.
+[92:08] And look, we are giving a subscription for the children of 24 months.
+[92:12] It is a subscription of 15 months.
+[92:15] And if you buy here.
+[92:18] So Ankit ESE code can be applied and you can buy it before Diwali.
+[92:22] So the code I told you, you can apply it.
+[92:24] Because you will get 25% off.
+[92:28] Okay.
+[92:29] It is clear.
+[92:31] So this is 15 months.
+[92:33] You are getting extra 1 month in October.
+[92:36] And look here, we have taken out 6 anchors in top 10 in Electrical.
+[92:40] You can also be one of them.
+[92:43] If you use the code Ankit ESE.
+[92:46] Okay.
+[92:47] And look, if you are getting financial issue in the academy subscription.
+[92:51] You can take it on EMI.
+[92:52] Where no interest will be required.
+[92:54] EMI will be approved in 2 hours.
+[92:56] Minimum paperwork is Aadhar card, PAN card.
+[92:59] Give it to any member in your family.
+[93:02] Whose salary comes because EMI gives them the bank.
+[93:05] And here for the children of 23 months.
+[93:07] Brahmash plus batch has come.
+[93:09] And from 31st.
+[93:10] Your Creatrix team's rank improvement batch is coming.
+[93:13] About which we told yesterday.
+[93:15] So the children of 23 months can also come in the subscription of 4 months.
+[93:18] Can revise the whole syllabus with us.
+[93:21] Can practice.
+[93:22] Can give a test.
+[93:24] So that you can add at least 15 to 20 numbers in your marks.
+[93:28] And you can crack a good rank.
+[93:31] And for the 24 people, the Gurukul batch has started.
+[93:34] In which analog is taking Dhande sir.
+[93:36] Gurupal sir is taking your Maths for both Electrical and EC.
+[93:39] And as I told you, we have launched the subscription of 4 months.
+[93:42] So the children who want to give the gate ESE in 23.
+[93:46] They can come in the subscription of 4 months with us.
+[93:49] You know the code Ankit ESE.
+[93:51] So I have told you the new code.
+[93:53] It is valid only till 24th.
+[93:55] And it is valid for more than 1 year for the subscription.
+[93:58] If you take the 4 month one, then Ankit ESE will have to apply.
+[94:01] And this is my telegram channel.
+[94:03] Where you get all the information of all the videos.
+[94:06] So that you don't miss any class.
+[94:08] And where you will get the PDF of this session.
+[94:10] On the Anacademy app.
+[94:12] Go to the app.
+[94:13] The community will come down on the homepage.
+[94:15] Go to Discover.
+[94:16] In Discover I will meet you.
+[94:18] Where all my PDFs will meet you.
+[94:20] So thank you everyone.
+[94:22] Thanks a lot children.
+[94:23] Now we will meet tomorrow at 11.30.
+[94:25] We will continue the O-Pamp.
+[94:27] And next week I will try to wind up your majority of gate syllabus.
+[94:32] Okay, so we will meet tomorrow at 11.30.
+[94:34] Let's crack it.

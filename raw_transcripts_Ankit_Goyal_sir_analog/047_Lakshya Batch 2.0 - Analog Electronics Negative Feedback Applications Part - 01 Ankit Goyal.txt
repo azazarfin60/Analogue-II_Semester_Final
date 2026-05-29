@@ -1,0 +1,2176 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Negative Feedback Applications Part - 01 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=2fUguYeX-SE
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] We are live.
+[00:14] We are back in the Laksha batch 2.0 for Analog Electronics.
+[00:19] What are we going to do in this session?
+[00:22] We are going to start OPAAP application.
+[00:26] I am going to show you negative feedback applications.
+[00:29] There are two types of applications in negative feedback application.
+[00:34] Linear application and non-linear application.
+[00:38] We will start with linear applications.
+[00:43] Such applications where input and output voltage are linearly related.
+[00:51] There will be a linear relation between V0 and VIN.
+[00:55] We will discuss the same in tomorrow's session.
+[01:02] We will discuss all your assignments during the day.
+[01:06] On Saturday, I will do non-linear application.
+[01:10] The negative feedback part will be completed.
+[01:15] Next week, we will start filters.
+[01:18] After filters, we will go to positive feedback application.
+[01:22] The gate syllabus will be completed.
+[01:25] After filters, we will jump to oscillators.
+[01:28] First, there will be one or two class.
+[01:30] Feedback amplifier and then oscillator.
+[01:32] The gate syllabus will be completed.
+[01:35] Ideally, around 10th of November,
+[01:39] the entire syllabus of the gate should be lined up for Analog.
+[01:43] I will discuss the topic of ESC.
+[01:47] Let's start today's discussion.
+[01:51] I explained virtual ground in the last lecture.
+[01:55] We applied virtual ground in the questions.
+[01:59] Remember, there were questions about output voltage.
+[02:02] There were questions about output offset voltage.
+[02:05] We applied virtual ground concept there.
+[02:11] Today, we will start the discussion with the same concept.
+[02:15] The first amplifier is inverting amplifier.
+[02:20] What do we think of inverting amplifier?
+[02:23] There should be a negative sign between input and output voltage.
+[02:31] The sign of input and output will be opposite.
+[02:34] The sign of input and output will be the phase shift of 180 degree.
+[02:39] If we take open loop gain infinity,
+[02:42] we say that virtual shot can be applied.
+[02:47] What can you say?
+[02:49] Virtual shot can be applied.
+[02:58] You can apply virtual shot.
+[03:02] Virtual shot means that the voltage of negative terminal and the voltage of positive terminal should be zero.
+[03:12] Why? Because the voltage of positive terminal is zero.
+[03:16] If there is a virtual shot, the voltage of negative terminal will also be zero.
+[03:21] If you have zero voltage here, what will you do?
+[03:26] You will take out current here.
+[03:30] This current is I.
+[03:33] You will write I as Vi minus zero by R1.
+[03:42] That is Vi upon R1.
+[03:47] Now you know that the input current of O-Pamp is zero ampere.
+[03:52] That is why the entire I will go up.
+[03:57] If you apply KVL to V0, it will be zero minus I Rf is minus Vi.
+[04:09] Zero will be zero.
+[04:11] Minus Vi Rf by R1.
+[04:14] From here, you have gain of inverting amplifier.
+[04:21] Generally, children remember the formula of gain.
+[04:25] Inverting or non-inverting amplifier.
+[04:28] You can also remember this basic formula.
+[04:32] Gain is V0 by Vi is minus Rf by R1.
+[04:40] The maximum for children is the formula and the circuit.
+[04:44] Remember how the inverting amplifier looks and how much the gain is.
+[04:50] There will be many circuits where the gain will be directly used.
+[04:55] There will be an internal inverting amplifier in it.
+[04:58] We will take out the gain from minus Rf by R1.
+[05:02] Now you remember when I started O-Pamp.
+[05:05] What did I tell you?
+[05:06] Because negative feedback is used in O-Pamp.
+[05:10] So that its gain can be varied through resistance.
+[05:16] With the help of resistance, we can control it.
+[05:20] Where the open loop gain was infinity, your closed loop gain is coming there.
+[05:26] Closed loop gain is dependent on resistance.
+[05:29] This is why it becomes independent of the supply voltages.
+[05:34] It becomes independent of the temperature, pressure, everything.
+[05:39] So your closed loop gain depends on the resistances.
+[05:44] Did you get it?
+[05:46] Even the gain of the amplifier in BJT, JFET,
+[05:50] was dependent on the trans conductance.
+[05:53] The gain was dependent on the beta.
+[05:57] But not here.
+[05:58] The gain here is dependent only on the resistance.
+[06:03] The transistors are not dependent on it.
+[06:07] But what if the open loop gain was finite?
+[06:11] If the open loop gain was finite, you could not have applied a virtual shot here.
+[06:18] Virtual shot cannot be applied.
+[06:27] There are two things for a virtual shot.
+[06:30] Negative feedback is required.
+[06:32] And what is the other thing?
+[06:34] Open loop gain is infinity.
+[06:36] So there is no virtual shot here.
+[06:39] How will we do it here?
+[06:41] I will make a circuit for you.
+[06:57] Will it be like this?
+[07:06] Okay.
+[07:09] Okay.
+[07:16] Now look at this.
+[07:18] This is your RF, R1, V0,
+[07:48] VI.
+[07:49] Okay.
+[07:50] Now the positive terminal voltage is zero here.
+[07:54] The negative terminal voltage is V.
+[07:58] Okay.
+[08:00] Now what will you write V0?
+[08:04] Open loop gain
+[08:06] into differential voltage.
+[08:09] The differential voltage is
+[08:11] V positive minus V negative.
+[08:14] That is minus AV.
+[08:16] That is minus AV.
+[08:18] Okay.
+[08:19] Now this is minus AV.
+[08:21] Now look at my brother.
+[08:23] Open loop gain is finite.
+[08:25] It does not mean that the input current of the opamp is also non-zero.
+[08:29] It is not like that.
+[08:30] The input current of the opamp will remain zero.
+[08:33] What was the assumption behind that?
+[08:35] That was high input resistance.
+[08:39] That means the current here is still zero.
+[08:43] This was zero because of resistance.
+[08:45] The open loop gain was not there.
+[08:48] Now if you put a nodal on the V node,
+[08:52] you will write V minus VI upon R1 plus V minus V0 upon RF is zero.
+[09:08] Okay.
+[09:09] Now V0 is AV.
+[09:12] So instead of V write minus V0 by A.
+[09:19] Okay.
+[09:23] Write minus V0 by A.
+[09:25] Because I have to eliminate V.
+[09:28] Do you understand?
+[09:29] I do not want that V comes in my final relation.
+[09:33] I want the relation of V in and V not.
+[09:36] So minus VI by R1.
+[09:38] Take all the terms of V0 to the right-hand side.
+[09:43] 1 by AR1 plus 1 by ARF plus 1 by RF.
+[09:54] So look, the gain has come from here.
+[09:58] The gain has come in the same terms.
+[10:04] Minus 1 by R1.
+[10:07] Take R1 down.
+[10:09] Take R1 here basically.
+[10:13] 1 by 1 upon A plus R1 by ARF plus R1 by RF.
+[10:27] Now you can also see here,
+[10:29] if you infinite the open loop gain.
+[10:33] Limiting A tending to infinity gain.
+[10:38] So if you remove the gain, you will keep A to infinity.
+[10:41] Both terms will go to zero.
+[10:44] It will be minus RF by R1.
+[10:47] Which had also come before.
+[10:49] So your open loop gain-infinity relation is also satisfied from here.
+[10:55] Do you understand this?
+[10:56] Look at the approach.
+[10:58] You don't have to remember this formula here.
+[11:00] How will you do it if finite comes?
+[11:02] You have to understand both the approaches.
+[11:04] If finite comes, then how do you go?
+[11:07] There are two relations.
+[11:09] One is made of nodal and one is of V0 equal to A into differential voltage.
+[11:14] You have to solve these two relations.
+[11:17] And if infinite comes, then we can solve it with the help of KVL, KCL
+[11:22] using the concept of virtual shot.
+[11:26] Now look, there is an application of inverting amplifier.
+[11:29] Trans-resistance amplifier.
+[11:32] What does trans-resistance amplifier mean?
+[11:35] An amplifier that can convert current to voltage.
+[11:40] Current to voltage.
+[11:42] Now Zainul is saying, sir, is it true that
+[11:45] KCL is never used on the output of O-Pamp?
+[11:47] Son, you have been told this by making it very simple.
+[11:51] Actually, the output of O-Pamp is never zero.
+[11:55] This current can be positive or negative.
+[11:59] And this current is unknown.
+[12:01] So if you apply KCL on the output node,
+[12:04] you don't know the value of this current.
+[12:06] So you can't know the result of KCL.
+[12:10] You can't know the result of KCL.
+[12:14] Zainul, that's why it doesn't apply KCL on the output.
+[12:17] I know the current of input will be zero.
+[12:20] But the output is not zero, so I will apply KCL on the output node.
+[12:23] There will be a lot of variables.
+[12:26] Son, don't remember the finite open loop gain.
+[12:29] You have to understand its approach.
+[12:31] And you should know the gain of infinite open loop gain inverting amplifier.
+[12:36] Because it will be directly used in many questions.
+[12:39] I will show you now.
+[12:40] Now look at how the trans-resistance amplifier is an amplifier.
+[12:44] This is the amplifier that converts input current to output voltage.
+[13:11] Input current to output voltage.
+[13:18] The one that converts the current to voltage is called trans-resistance amplifier.
+[13:26] If you ask about the output node current,
+[13:29] then you will have to apply it.
+[13:31] The rest of the variables will be known.
+[13:33] Only this variable will be unknown.
+[13:35] This means that if you apply KCL in one place
+[13:38] and there are more than one variable in it,
+[13:40] then it will not be able to solve it.
+[13:42] It is not that they don't apply it.
+[13:44] If someone asks you what is the output current of the opamp,
+[13:47] then you will have to apply KCL in the same way.
+[13:49] But if there is more than one variable in that equation,
+[13:52] then you cannot determine it.
+[13:54] It is a simple mathematics.
+[13:56] Son, you didn't come live from the last few classes.
+[13:59] Now you will say that you will attend from that activity.
+[14:02] That is personally true for you.
+[14:04] But it can be very harmful for me
+[14:06] because you will keep doing it.
+[14:08] Isn't it?
+[14:10] Let's go.
+[14:11] What is the working of this circuit?
+[14:13] There is a photo diode here.
+[14:15] And this photo diode is in reverse bias condition.
+[14:19] Why?
+[14:20] Why do you always run the photo diode in reverse bias?
+[14:23] First, understand the meaning of photo diode.
+[14:25] A diode where if there is a light incident,
+[14:29] then it creates current.
+[14:31] Do you know how much current there is in a reverse bias diode?
+[14:35] Reverse saturation current.
+[14:37] So when you generate a charge carrier in that light incident,
+[14:42] then the current increases.
+[14:44] Now the current of reverse bias diode is already very low.
+[14:48] So if its current increases,
+[14:50] then it will shine on us.
+[14:51] It will shine on us.
+[14:53] But if there is a diode forward biased,
+[14:58] then if you put a light on it,
+[15:00] if you increase the charge carrier,
+[15:01] if the current increases,
+[15:02] then its current is already so high
+[15:05] that you will not see that change.
+[15:08] But the current of reverse bias diode is in nano ampere.
+[15:11] It has increased from 1 nano ampere to 2 nano ampere.
+[15:14] It has increased to 1 nano ampere.
+[15:16] So it is a 100% increment.
+[15:18] So the current has doubled.
+[15:20] But where the current of 1 milli ampere is in forward bias,
+[15:24] then there is a change of 1 nano ampere.
+[15:26] So it will not be visible to you.
+[15:28] That is why all the circuits made from photo diodes
+[15:32] keep it in reverse bias condition.
+[15:35] So what are we saying?
+[15:37] See how is the working here.
+[15:39] When you do a light incident,
+[15:43] light incident
+[15:49] on
+[15:52] reverse biased
+[15:57] photo diode
+[16:01] is like a photoelectric effect from light.
+[16:05] That is the ionization of the charge or the electron.
+[16:09] So charge carriers are produced.
+[16:13] Charge carriers
+[16:18] are produced.
+[16:26] Now if your charge carrier is produced,
+[16:30] then what will happen to it?
+[16:32] It will increase the reverse saturation current.
+[16:35] So what can you say?
+[16:37] Reverse saturation current increases.
+[16:42] So here the reverse saturation current is IE.
+[16:48] Now we have to convert this current to voltage.
+[16:52] See here there is negative feedback.
+[16:55] And until the open loop gain is mentioned,
+[16:58] we will consider it to be infinity.
+[17:00] So we will say use
+[17:02] virtual short.
+[17:06] Use virtual short.
+[17:10] So here your 0 volt voltage will go.
+[17:15] Now if this current is IE,
+[17:18] then this current will also be IE.
+[17:20] Because the current of the input terminal of the O-Pamp is 0.
+[17:24] The current of the input terminal of the O-Pamp is 0.
+[17:27] Now if you go from 0 volt to V0,
+[17:31] then you will write V0 plus IA into RF.
+[17:37] So the gain here is the trans resistance amplifier.
+[17:43] So the voltage upon current will be
+[17:46] i.e. RF.
+[17:49] So here we have made the input current from a photo diode.
+[17:53] Instead of this, your current source could also be on the input current.
+[17:57] Basically what kind of a circuit will come into use?
+[18:00] What will be the practical application?
+[18:02] This is converting the light to voltage.
+[18:06] As our measuring instruments are there,
+[18:08] from which we take measurements.
+[18:10] So suppose if I want to make an electrical meter
+[18:13] which cannot measure the intensity of the light,
+[18:16] then when the intensity of the light increases,
+[18:19] then IE will increase,
+[18:21] from which V0 will increase,
+[18:23] i.e. V0 will become proportional to the intensity of incident light.
+[18:30] So in one way, the intensity,
+[18:33] which was a non-electrical quantity,
+[18:36] you converted it into an electrical quantity.
+[18:39] And as Swarov has written, it will act like a transducer.
+[18:44] It will act like a transducer.
+[18:48] Did you understand that?
+[18:50] So intensity of light increases,
+[19:02] i.e. increases, V0 increases.
+[19:08] So V0 is proportional to intensity.
+[19:13] Okay?
+[19:17] So similar to a transducer.
+[19:20] This is the work of a transducer.
+[19:22] Converting a non-electrical quantity into an electrical quantity.
+[19:31] But the photo diode itself converts light into voltage.
+[19:34] No, the photo diode converts light into current.
+[19:37] Not in voltage.
+[19:39] We keep the photo diode reversed.
+[19:41] We keep the photo diode reversed.
+[19:42] Then when we do the light incident,
+[19:44] it converts it into current.
+[19:46] And this current will be in nano-amperes,
+[19:48] which is very, very small.
+[19:50] So if you want, if you put RF in mega-ohm,
+[19:53] then you will get voltage in millivolt,
+[19:56] which is still significant as compared to nano.
+[19:59] So nano becomes a very small unit.
+[20:02] So you can understand this kind of,
+[20:04] I converted current into voltage.
+[20:06] Or you can understand this,
+[20:08] I amplified the current,
+[20:10] by which my voltage is becoming
+[20:12] that has higher magnitude as compared to your current.
+[20:17] Is it clear now?
+[20:19] Is everyone clear here?
+[20:22] Did you understand the practical application of the circuit?
+[20:26] Come on, it's very good.
+[20:28] Next, look at another application of this.
+[20:31] That is the inverting amplifier.
+[20:34] Now an application of inverting amplifier is current amplifier.
+[20:38] Now you see,
+[20:40] current amplifier means
+[20:42] input is also current and output is also current.
+[20:45] So the gain I want here,
+[20:49] the gain I want is the output current of opamp by source current.
+[20:54] The one who is asking right now,
+[20:56] how will we take out I0?
+[20:58] We will talk about that.
+[20:59] Now look, the current is going from here,
+[21:02] i s. How much is it going?
+[21:04] i s.
+[21:06] So how much is the current of the feedback here?
+[21:09] i s.
+[21:11] Now look again from here,
+[21:13] there is a negative feedback.
+[21:15] Sir, how do you catch negative feedback?
+[21:17] If the feedback goes from output to negative terminal,
+[21:21] then that is a negative feedback.
+[21:24] If the feedback goes from output to negative terminal,
+[21:27] that is a negative feedback.
+[21:29] And if the open loop gain is not given,
+[21:32] then what will you consider as infinity?
+[21:34] If this happens,
+[21:36] then what will you say?
+[21:37] You will say that
+[21:39] virtual short can be applied.
+[21:43] Virtual short can be applied.
+[21:50] Okay?
+[21:52] Do you understand till here?
+[21:54] Now you can apply virtual short.
+[21:56] The meaning of virtual short is that
+[21:59] here also,
+[22:01] if the non-inverting terminal of your positive terminal is 0,
+[22:05] then you will get 0 here also.
+[22:07] Now I s will go ahead
+[22:09] because the input current of opamp is 0 ampere.
+[22:13] Now what can you call V0 here?
+[22:17] V0 is
+[22:19] 0
+[22:21] minus I s
+[22:23] RF.
+[22:25] So minus I s
+[22:27] RF.
+[22:29] What is the current going in the load from this?
+[22:33] V0 by
+[22:35] R L
+[22:37] i.e. minus I s
+[22:39] RF by
+[22:41] R L.
+[22:43] Now if you want I 0,
+[22:45] then apply KCL.
+[22:47] I s is coming from above.
+[22:49] I 0 plus I s is I L.
+[22:51] So I 0 is
+[22:53] minus I s
+[22:55] minus I L.
+[22:59] Now see,
+[23:01] KCL is applied on the output node.
+[23:05] So this came.
+[23:07] So how much is the gain here?
+[23:11] I 0 by I s
+[23:15] is minus.
+[23:17] Sir, what does minus mean here?
+[23:19] It means that the output current of opamp
+[23:23] will go in the opposite direction.
+[23:25] That is, opamp will not deliver the current,
+[23:27] but will absorb the current.
+[23:31] Do you understand?
+[23:33] Opamp will not deliver your current,
+[23:35] but will absorb the current.
+[23:39] I told you that the output current of opamp
+[23:41] can be of two types.
+[23:43] Either it will be delivered,
+[23:45] i.e. source,
+[23:47] or it will sync,
+[23:49] i.e. it will absorb.
+[23:51] Both can be possible.
+[23:53] And what does current amplifier do?
+[23:55] Current amplifier works.
+[23:57] Basically,
+[23:59] providing current gain.
+[24:01] i.e. when the current coming out of one circuit,
+[24:03] it will amplify it,
+[24:05] increase it,
+[24:07] and then it will deliver that
+[24:09] to the other circuit.
+[24:11] So it boosts the current.
+[24:13] By boosting it,
+[24:15] it supplies the current on the next circuit.
+[24:19] So that is what happens
+[24:21] with the current amplifier.
+[24:23] Is this clear?
+[24:25] Now let's come to inverting summing amplifier.
+[24:29] If you want,
+[24:31] you can use KCL.
+[24:33] If you want, you can also use
+[24:35] virtual shot.
+[24:37] Otherwise, you can do it directly.
+[24:41] How do you know that
+[24:43] current is going out of amplifier?
+[24:45] I mean, it is going out of amplifier.
+[24:47] Or i.0, I have assumed that
+[24:49] it is negative.
+[24:51] This means it is going inside.
+[24:53] Negative means
+[24:55] it is going inside.
+[24:57] We can assume one current.
+[24:59] Sir,
+[25:01] on the place of RF,
+[25:03] down,
+[25:05] yes.
+[25:09] Take it.
+[25:11] Okay.
+[25:13] Yes.
+[25:15] Now either you can use
+[25:17] the inverting amplifier
+[25:19] directly.
+[25:21] Or you have the other way
+[25:23] that you want.
+[25:25] So here you can do it
+[25:27] with basic virtual ground.
+[25:29] So again I will say
+[25:31] the same thing.
+[25:33] Negative feedback.
+[25:39] And
+[25:41] open loop gain
+[25:43] tends to infinity.
+[25:45] Okay, wait.
+[25:47] Let me duplicate it.
+[25:53] So what I say here
+[25:55] is that virtual
+[25:57] shot
+[25:59] can be applied.
+[26:05] Okay.
+[26:07] Now what will happen
+[26:09] with this virtual shot
+[26:11] is that
+[26:13] the voltage V
+[26:15] will become zero.
+[26:17] The voltage V
+[26:19] will become zero.
+[26:21] Now if the V is zero,
+[26:23] you can get current from here.
+[26:25] I1,
+[26:27] I2,
+[26:29] and I3.
+[26:31] These three current
+[26:33] will pass from above.
+[26:35] So here the current will go.
+[26:37] I1 plus I2
+[26:39] plus I3.
+[26:41] Okay.
+[26:43] So if we
+[26:45] remove I1,
+[26:47] then I1 will be
+[26:51] V1 by R1.
+[26:53] I2
+[26:55] will be
+[26:57] V2 by R2.
+[26:59] And I3
+[27:01] will be
+[27:03] V3 by R3.
+[27:05] Now if I tell you
+[27:07] that I want V0,
+[27:09] then you will write V0
+[27:11] minus,
+[27:13] because the voltage of the
+[27:15] inverting terminal is zero, right?
+[27:17] Zero minus
+[27:19] drop across RF.
+[27:21] So what is this?
+[27:23] Minus V1
+[27:25] RF by R1.
+[27:27] Minus V2
+[27:29] RF by R2.
+[27:31] Minus V3
+[27:33] RF by
+[27:35] R3.
+[27:37] Okay.
+[27:39] So this is done.
+[27:41] We could have
+[27:43] done this directly.
+[27:45] We could have
+[27:47] done this directly.
+[27:49] If we use super position
+[27:51] in this circuit.
+[28:01] By use of super position,
+[28:03] you say
+[28:05] that if we see
+[28:07] the gain output 1,
+[28:09] then this should come.
+[28:11] Okay.
+[28:13] If we see the output 2,
+[28:15] then this should come.
+[28:17] V2 into
+[28:19] minus RF by R2.
+[28:21] Okay.
+[28:23] So this should come.
+[28:25] V2 into
+[28:27] minus RF by R2.
+[28:29] V2 into minus RF by R2.
+[28:31] And if we see
+[28:33] the output 3,
+[28:35] then V3
+[28:37] minus RF by
+[28:39] R3.
+[28:43] So therefore,
+[28:45] here V0 will come.
+[28:55] Minus RF
+[28:57] V1 by
+[28:59] R1.
+[29:01] Minus V2 by
+[29:03] R2.
+[29:05] Minus V3 by
+[29:07] R3.
+[29:09] Okay.
+[29:11] So you could have done this directly.
+[29:17] Yes.
+[29:19] Sir, in current amplifier,
+[29:21] I0 KCL is wrong.
+[29:23] Tell me, how is it wrong?
+[29:25] From here, IS came.
+[29:27] If I0 came, then IS plus I0
+[29:29] is equal to IL.
+[29:31] Tell me, Rohit, how is it wrong?
+[29:33] I0 is negative.
+[29:35] That is why it is going inside.
+[29:45] Okay.
+[29:47] You are saying this one.
+[29:49] Take it.
+[29:51] Come on.
+[29:55] Yes. So this is clear.
+[29:57] Summing amplifier.
+[29:59] Tell me quickly.
+[30:01] Summing amplifier is clear.
+[30:03] Now do you know,
+[30:05] if R1, R2, R3
+[30:07] keep all three R,
+[30:09] then what will happen?
+[30:13] I am saying
+[30:15] that if
+[30:17] R1
+[30:19] R1
+[30:27] then what will be V0?
+[30:33] This is done.
+[30:37] Now here,
+[30:39] if
+[30:41] R equal to
+[30:43] RF
+[30:49] then inverting is done.
+[30:51] Voltage sum is done
+[30:53] and inverting is done.
+[30:55] Do you understand?
+[30:57] This is the speciality of opamp.
+[30:59] Opamp
+[31:01] helps you in mathematical operation.
+[31:05] So, as soon as you take out the sum here,
+[31:07] my children,
+[31:09] if
+[31:11] if R is done,
+[31:13] 3 RF
+[31:15] then
+[31:17] V0 will be
+[31:19] minus
+[31:21] V1 plus V2 plus V3
+[31:23] by
+[31:25] 3.
+[31:27] This is the formula of average.
+[31:31] So this is inverting.
+[31:37] Averaging.
+[31:41] Amplifier.
+[31:45] Okay.
+[31:47] This is clear.
+[31:48] Inverting, averaging,
+[31:50] amplifier.
+[31:52] So what are you getting to see here, children?
+[31:54] That here you can sum,
+[31:56] here you can average out,
+[31:58] here you can simply
+[32:00] multiply multiple voltages
+[32:02] together.
+[32:05] So that's why we call it operational amplifier.
+[32:08] Because it can perform
+[32:10] a variety of operations.
+[32:12] Clear?
+[32:14] Clear?
+[32:24] And children, in your chat,
+[32:26] there is a link
+[32:28] in your chat.
+[32:30] You can register for that event.
+[32:33] What is going to happen in that event?
+[32:35] You can interact live with me in that event.
+[32:38] Whatever your preparation
+[32:40] or subject,
+[32:42] there are many types of queries.
+[32:44] You can directly discuss with me.
+[32:46] And at the end of that session,
+[32:48] for the attendees,
+[32:50] there is also a surprise for them.
+[32:52] So for this event, click on the link
+[32:54] and register all of them.
+[32:56] I want to see all of them.
+[32:58] And our event
+[33:00] will be tomorrow, Thursday.
+[33:02] Okay? This will be our tomorrow.
+[33:06] You told it already in digital classes also.
+[33:08] What did you say in digital classes?
+[33:10] Okay? Look at the link.
+[33:12] There is also a pin in the chat.
+[33:14] And it has just been added.
+[33:16] The notes of PS and PE
+[33:18] will also be available after the Diwali season.
+[33:20] Yes, brother. They will be available.
+[33:22] Why did they make that link? For one day?
+[33:26] Timing.
+[33:28] The son of the timing event is
+[33:30] at 9.30 in the evening.
+[33:32] 9.30.
+[33:34] So we are doing an event.
+[33:36] What I am telling you.
+[33:38] You can register on this link.
+[33:40] The pin in the chat.
+[33:42] You will be connected to me on the call.
+[33:44] You will directly talk to me.
+[33:46] And while talking to me,
+[33:48] you can discuss your
+[33:50] related queries. Okay?
+[33:52] Apart from this, you can discuss
+[33:54] your strategy related query,
+[33:56] subject related query.
+[33:58] And at the end of the event,
+[34:00] we have planned a very good surprise
+[34:02] for the attendees.
+[34:04] After the class, let's go to the register.
+[34:06] Now let's come to
+[34:08] Non-Inverting Amplifier.
+[34:10] Look, inverting at 9 pm to 10 pm.
+[34:12] Okay. So it's 9 to 10.
+[34:14] It's at 9 pm. That was the
+[34:16] confusion of the timing.
+[34:18] Okay? Now see.
+[34:20] So far, we have talked about
+[34:22] Inverting Amplifier.
+[34:24] Now we will talk about
+[34:26] Non-Inverting Amplifier.
+[34:28] Who will we talk about?
+[34:30] Non-Inverting Amplifier.
+[34:32] Now I will give you two cases here.
+[34:34] Okay? One open loop gain infinity.
+[34:36] And one open loop gain is
+[34:38] finite. Why are we calling it
+[34:40] Non-Inverting Amplifier?
+[34:42] Because here
+[34:46] the input is given
+[34:48] at
+[34:50] Non-
+[34:52] Inverting Terminal.
+[34:54] Non-Inverting Terminal.
+[35:02] We have given input
+[35:04] at Non-Inverting Terminal.
+[35:06] Now see here,
+[35:08] the first case is
+[35:14] that open loop gain
+[35:16] tending to infinity
+[35:18] and
+[35:20] negative feedback.
+[35:22] You can see the negative feedback now.
+[35:24] From the output,
+[35:26] we have combined one resistance
+[35:28] at Inverting Terminal.
+[35:30] Okay? That means negative
+[35:32] at Terminal. Now if these
+[35:34] both things are
+[35:36] true, then that means
+[35:38] you can apply the virtual
+[35:40] short.
+[35:42] You can apply the virtual short.
+[35:48] If not, how will you
+[35:50] get rid of the resistance
+[35:52] at Terminal?
+[35:54] If you get rid of the resistance,
+[35:56] then how will the current flow?
+[35:58] Ashoq, tell me.
+[36:00] The current in RF is the current
+[36:02] and you have to give negative feedback.
+[36:04] If this RF is at Terminal,
+[36:06] then R1 should also be at negative.
+[36:08] That is when the current will be closed.
+[36:10] So virtual short
+[36:12] can be
+[36:14] applied.
+[36:16] Let's see how to simplify
+[36:18] that.
+[36:20] Where is R1?
+[36:22] Now see.
+[36:24] If you apply the virtual short,
+[36:26] then the voltage of
+[36:28] Inverting Terminal will be
+[36:30] equal to non-inverting. That is
+[36:32] Vin.
+[36:34] The voltage of Inverting Terminal
+[36:36] will be equal to
+[36:38] non-inverting. Vin.
+[36:40] If it is equal to Vin,
+[36:42] then here
+[36:48] the current I
+[36:50] will be
+[36:52] I will be
+[36:54] negative terminal voltage
+[36:56] minus 0 by R1.
+[36:58] That is Vin by
+[37:00] R1.
+[37:02] Okay.
+[37:04] Now this I, this I
+[37:06] will be coming from above.
+[37:10] So what can you say from here
+[37:12] that what will be
+[37:14] V out
+[37:16] 0 plus I
+[37:18] RF
+[37:20] Okay. Sorry.
+[37:22] It is not 0. Here Vin is
+[37:24] negative terminal
+[37:26] voltage Vin.
+[37:28] Vin plus I
+[37:30] RF
+[37:32] that is Vin
+[37:34] plus Vin
+[37:36] RF by R1.
+[37:38] So here
+[37:40] the gain
+[37:42] will come
+[37:44] V out upon
+[37:46] Vin
+[37:50] is 1 plus
+[37:52] RF by R1.
+[37:54] And this gain
+[37:56] this gain is your positive.
+[37:58] That is
+[38:00] there is no
+[38:02] negative sign between input and output.
+[38:04] There is no 180 degree shift.
+[38:06] There is no inversion.
+[38:08] There is no inversion.
+[38:10] So remember this formula.
+[38:12] As I said
+[38:14] minus RF by R1
+[38:16] this formula is 1 plus
+[38:18] RF by R1.
+[38:22] This is
+[38:24] something that you should remember.
+[38:26] So you should be clear.
+[38:28] Inverting amplifier with
+[38:30] infinite open loop gain
+[38:32] minus RF by R1.
+[38:34] And non-inverting amplifier with
+[38:36] infinite open loop gain
+[38:38] is 1 plus RF by R1.
+[38:40] How far?
+[38:42] This is clear.
+[38:44] The phase shift of 0 degree.
+[38:46] Now the thing is
+[38:48] if the open loop gain
+[38:50] is finite.
+[38:54] So see
+[38:58] case 2
+[39:02] finite
+[39:04] open loop
+[39:06] gain
+[39:10] gain
+[39:26] Okay.
+[39:28] Now here
+[39:34] what did you notice?
+[39:36] There was voltage on
+[39:38] the circuit.
+[39:44] And see
+[39:46] remember the gain.
+[39:48] Remember the circuit as well.
+[39:50] So that when you recognize the circuit
+[39:52] then
+[39:54] the circuit you are going to read
+[39:56] the circuit exam
+[39:58] the comparison will happen only
+[40:00] when you remember the circuit.
+[40:04] R1
+[40:06] RF
+[40:08] Okay. R1 and RF
+[40:10] Now here
+[40:12] what will happen here
+[40:14] that the voltage of
+[40:16] negative terminal is V
+[40:18] I will not consider this as VIN.
+[40:20] What will I say?
+[40:22] That the open loop
+[40:24] gain is
+[40:26] equal to A.
+[40:28] So the V0
+[40:30] that will be A
+[40:32] V positive
+[40:34] minus V negative
+[40:36] So A
+[40:38] V in
+[40:40] minus V.
+[40:42] This is your V0.
+[40:44] That is A into V in minus
+[40:46] V. Okay.
+[40:48] Now what to do after this?
+[40:50] This is the relation.
+[40:52] If you want then take out V from here.
+[40:56] V is
+[40:58] V in
+[41:00] minus V0 by
+[41:02] A.
+[41:04] This is done.
+[41:06] Now you put a noodle on the V node
+[41:08] or say KCL
+[41:10] KCL
+[41:12] at
+[41:14] inverting terminal
+[41:22] What will happen?
+[41:24] You will write here
+[41:26] like this
+[41:30] We will take current like this.
+[41:32] 2
+[41:34] So V by
+[41:36] R1
+[41:38] plus V minus V0 by
+[41:40] RF
+[41:42] These two currents will go.
+[41:44] The current of the input terminal of O-Pamp
+[41:46] remains zero.
+[41:48] So we do not have to take this.
+[41:50] Now V in
+[41:52] minus V0 by
+[41:54] A.
+[41:56] I am putting value instead of V.
+[41:58] It has two coefficients.
+[42:00] 1 by R1 and 1 by
+[42:02] RF.
+[42:04] Is equal to V0 by
+[42:06] RF.
+[42:08] So see
+[42:12] R1 plus RF.
+[42:14] You collect the coefficient of V in
+[42:16] upon R1 RF
+[42:20] is equal to V0
+[42:24] R1 plus RF
+[42:28] by A R1 RF
+[42:32] plus 1 by RF.
+[42:36] So now if you take out the gain
+[42:42] V0 by V in
+[42:44] Now A R1 RF
+[42:46] A R1 will come here.
+[42:48] And A R1 RF will be cut.
+[42:50] So A will remain below.
+[42:54] And this will be
+[42:58] R1 plus RF
+[43:02] And this will come below.
+[43:06] Into A
+[43:08] by
+[43:12] R1 plus RF
+[43:14] plus A R1.
+[43:16] Ok
+[43:18] So here if you write
+[43:20] the gain
+[43:22] it will be
+[43:24] R1 plus RF
+[43:26] take A down
+[43:28] divided by
+[43:32] R1
+[43:34] plus
+[43:40] Now see if you
+[43:42] keep A as infinity
+[43:44] if you
+[43:46] do the open loop gain infinity
+[43:48] then
+[43:50] the gain you have
+[43:52] if you keep A as infinity
+[43:54] then A is below.
+[43:56] So R1 plus RF by R1
+[43:58] will be
+[44:00] 1 plus RF by
+[44:02] R1.
+[44:04] So this is what we have to do.
+[44:06] Again see we have done two things.
+[44:08] One is we have put KCL
+[44:10] and one is we have written
+[44:12] V0.
+[44:14] So gain multiplied by
+[44:16] difference of the
+[44:18] voltages. These are two things.
+[44:20] We have used these two things.
+[44:22] And we have taken out
+[44:24] gain of the
+[44:26] closed loop and closed loop
+[44:28] gain of the non-inverting amplifier.
+[44:32] Yes my dear Zanul.
+[44:34] These are the two steps that
+[44:36] KCL and V0
+[44:38] equal to difference of voltages
+[44:40] multiplied by the open loop gain.
+[44:42] Okay.
+[44:44] Now let's come
+[44:46] to the voltage follower.
+[44:48] See there is one application of the non-inverting amplifier.
+[44:50] What is the voltage
+[44:52] follower?
+[44:54] You have read it before.
+[44:56] Like common
+[44:58] collector amplifier
+[45:00] which you called
+[45:02] ammeter follower.
+[45:04] Similarly in MOSFET you have read
+[45:06] common drain amplifier
+[45:08] which you called source follower.
+[45:10] These are the amplifiers
+[45:12] whose gain
+[45:14] is
+[45:16] almost one.
+[45:18] How much is the
+[45:20] gain?
+[45:22] Almost one.
+[45:24] That means
+[45:26] output follows
+[45:28] the input voltage.
+[45:30] You can also say
+[45:32] voltage buffer.
+[45:34] Correct.
+[45:36] You can also say voltage buffer.
+[45:38] Now here
+[45:40] if you see
+[45:42] here
+[45:44] you can say
+[45:46] negative feedback
+[45:50] negative feedback
+[45:52] and
+[45:54] open loop gain
+[45:56] is standing to infinity.
+[45:58] So virtual
+[46:02] short
+[46:04] can be applied
+[46:08] you can apply virtual short here.
+[46:12] If you apply virtual short
+[46:14] then the voltage
+[46:16] of the inverting terminal
+[46:18] will be equal to non-inverting.
+[46:20] That means VIN.
+[46:22] And the inverting terminal
+[46:24] is directly connected to V0.
+[46:26] So this is also VIN.
+[46:28] So output voltage
+[46:30] is equal to the input
+[46:32] voltage.
+[46:34] Output voltage is same as
+[46:36] input voltage.
+[46:38] Now do you know
+[46:40] you can do one more thing here.
+[46:42] If you take open loop gain
+[46:44] finite then you can also try.
+[46:50] You can say
+[46:52] if AOL
+[46:54] is equal to A
+[46:56] okay.
+[46:58] So here is V0T
+[47:00] voltage.
+[47:02] So you say
+[47:04] output voltage V0
+[47:06] is A
+[47:08] into V positive
+[47:10] minus V negative
+[47:12] A
+[47:14] VIN minus
+[47:16] V0.
+[47:18] The voltage of negative terminal is V0T.
+[47:20] So here is V0
+[47:22] 1 plus A
+[47:24] is A VIN
+[47:28] okay.
+[47:30] So here is V0 by VIN
+[47:32] A by 1 plus
+[47:34] A
+[47:36] or then
+[47:38] 1 upon
+[47:40] A by 1 plus 1 by
+[47:42] A.
+[47:44] Okay. That is
+[47:46] gain close to unity.
+[47:48] Do you know
+[47:50] if you remember
+[47:52] common source, sorry
+[47:54] common drain amplifier
+[47:56] or common collector amplifier
+[47:58] gain was same.
+[48:00] 1 upon 1 plus
+[48:02] GmRE
+[48:04] GmRE upon 1 plus
+[48:06] GmRE.
+[48:08] Now do you know what is the benefit here?
+[48:10] The benefit here is that
+[48:12] the input impedance of opamp is so high
+[48:14] that when we use
+[48:16] voltage follower
+[48:18] then it will not do
+[48:20] and it will not have any
+[48:22] loading effect.
+[48:24] Okay. The meaning is that
+[48:26] when you see current here
+[48:28] then we say
+[48:30] due to
+[48:32] due to
+[48:34] high input resistance
+[48:38] of opamp
+[48:42] voltage follower
+[48:46] voltage follower
+[48:54] does not
+[48:56] have
+[48:58] loading effect
+[49:02] on previous stage.
+[49:08] On the last stage
+[49:10] there is no loading
+[49:12] effect.
+[49:14] Okay.
+[49:16] On the last stage
+[49:18] there is no loading
+[49:20] effect.
+[49:22] Tell me, is this one clear?
+[49:26] Isolation transformer
+[49:28] Yes. 1 is to 1 transformer
+[49:30] can be called as
+[49:32] 1 is to 1 transformer.
+[49:34] Okay.
+[49:36] See, one more thing
+[49:38] you could have done.
+[49:40] If you wanted
+[49:42] then you could have
+[49:44] put some resistance here.
+[49:46] Because here
+[49:48] current is zero.
+[49:50] So if here current is zero
+[49:52] then you would have put resistance
+[49:54] across.
+[49:56] There is no drop.
+[49:58] Because this zero amp current
+[50:00] is coming like this.
+[50:04] Okay.
+[50:06] So we can
+[50:08] place
+[50:10] our resistance
+[50:12] in feedback path.
+[50:20] Okay.
+[50:24] So we can place resistance.
+[50:26] And
+[50:28] what can you say technically?
+[50:30] Can you say voltage buffer?
+[50:32] Okay.
+[50:34] The digital circuit of buffer is also used.
+[50:36] The same input which is coming
+[50:38] is coming to that bit.
+[50:40] To transmit.
+[50:42] Because many times the signal
+[50:44] loses its power slowly.
+[50:46] So it restores that power again.
+[50:48] It restores the level of
+[50:50] signal again.
+[50:52] Like there are repeaters.
+[50:54] There are repeaters in digital that the signal is coming
+[50:56] will repeat the same signal.
+[50:58] So you need buffer there.
+[51:00] So this is also a
+[51:02] voltage buffer.
+[51:04] Why would the output resistance
+[51:06] be infinite?
+[51:08] Tell me.
+[51:10] There could be current on the output.
+[51:12] If nothing is put here
+[51:14] if nothing is put here
+[51:16] then the output current of the opamp
+[51:18] will also be zero.
+[51:20] So the output current will also be zero.
+[51:22] Okay.
+[51:24] But if some resistance is put here
+[51:26] then the output current will come.
+[51:28] Dear, loading
+[51:30] it does not have a loading effect
+[51:32] on the previous stage, Zainul.
+[51:34] The loading effect is not working
+[51:36] on the one behind it.
+[51:38] Do you understand?
+[51:40] We don't make a load
+[51:42] on our next stage.
+[51:44] We make a load on our last stage.
+[51:46] What does load mean?
+[51:48] We make a load on our next stage.
+[51:50] So who should we make a load on?
+[51:52] From the last stage.
+[51:54] If we are delivering the power to the next stage
+[51:56] then how can a load be for the next stage?
+[51:58] How can this load be for the next stage?
+[52:00] Think logically.
+[52:02] How are you talking about the poor?
+[52:04] You are a regular student.
+[52:06] You are an understanding child.
+[52:08] You are asking the wrong questions.
+[52:10] If you want to nullify the loading effect
+[52:12] then the input impedance
+[52:14] should be infinite
+[52:16] so that you don't draw any current
+[52:18] from the last stage
+[52:20] so that you don't draw any power
+[52:22] from the last stage.
+[52:24] Okay?
+[52:26] Now the summing amplifier
+[52:28] has come here too.
+[52:30] There are two ways here too.
+[52:32] Either you do it
+[52:34] with the basic or with the virtual shot
+[52:36] but in the virtual shot
+[52:38] you know what the problem will be.
+[52:40] Here you have to assume a new voltage
+[52:42] V.
+[52:44] Here it will be V and here it will be V.
+[52:46] Okay?
+[52:48] You have to do it this way.
+[52:50] You can do it this way too.
+[52:52] First let's do it with the virtual shot.
+[52:54] Let's do it in both ways.
+[52:56] So look.
+[52:58] Method 1.
+[53:02] Let's do one thing.
+[53:10] Yes.
+[53:12] Method 1.
+[53:16] Here you have negative feedback.
+[53:22] Okay?
+[53:24] Negative feedback.
+[53:26] And you take the open loop gain
+[53:28] to infinity.
+[53:34] So you will say here
+[53:36] virtual shot can be
+[53:38] applied.
+[53:42] Okay?
+[53:52] Now to apply the virtual shot
+[53:54] see here you have assumed
+[53:56] V voltage.
+[53:58] Here zero ampere current will go.
+[54:00] Now to take out this V
+[54:02] if you
+[54:04] want to take out V
+[54:06] then you
+[54:08] put a noodle on V.
+[54:10] KCL
+[54:12] at
+[54:14] non-inverting terminal.
+[54:18] You put KCL
+[54:20] on non-inverting terminal.
+[54:24] Okay?
+[54:26] So what will you write?
+[54:28] V minus V1 by R1
+[54:32] plus V minus V2 by R2
+[54:36] plus V minus V3 by
+[54:38] R3.
+[54:40] This will
+[54:42] come out to be zero.
+[54:44] So what will be
+[54:46] V from here?
+[54:48] V1 by R1
+[54:50] plus V2 by R2
+[54:54] plus V3 by R3
+[54:58] upon
+[55:00] 1 by R1
+[55:02] plus 1 by R2
+[55:04] plus 1 by
+[55:06] R3.
+[55:08] Okay?
+[55:10] This is done.
+[55:12] If we get V here
+[55:14] then this will be the V voltage.
+[55:16] So here
+[55:18] you can take out I current.
+[55:22] I will be equal to V by
+[55:24] R.
+[55:26] And this will be the I current.
+[55:28] So V not equal to
+[55:30] V
+[55:32] plus I
+[55:34] RF
+[55:36] i.e.
+[55:38] V1 plus RF by R.
+[55:42] So if this happens
+[55:44] then you have V0 here.
+[55:50] V by R1
+[55:54] sorry, V1 by R1
+[55:56] V2 by R2
+[56:04] V2 by R3
+[56:20] V1 by R1
+[56:22] plus 1 by R2 plus
+[56:24] 1 by R3
+[56:28] 1 plus
+[56:30] RF by
+[56:32] R1
+[56:34] sorry, 1 by RF by R
+[56:40] Okay? This is done.
+[56:42] This is done. How did we solve this?
+[56:44] This is done.
+[56:46] First I took out V and in the terms of V
+[56:48] I took out V0.
+[56:50] Now method 2 is
+[56:52] super position
+[56:56] that I know the gain
+[56:58] of non-inverting amplifier
+[57:00] I don't know, sir.
+[57:02] So I want to use the gain directly
+[57:04] when I know a formula.
+[57:06] Very good.
+[57:08] Okay?
+[57:10] Now how do we do it with super position
+[57:12] that only first consider V1.
+[57:14] Okay?
+[57:18] We are saying consider
+[57:20] V1
+[57:24] that is make
+[57:26] V2 equal to
+[57:28] V3 equal to 0
+[57:30] V2 and V3
+[57:32] you make both 0.
+[57:34] Now see what kind of circuit
+[57:36] will be made.
+[57:50] V2 and V3 you made
+[57:52] both 0
+[57:54] because of this
+[57:56] your R2 and R3 will go in parallel.
+[58:02] Isn't it?
+[58:04] This is getting understood.
+[58:06] Both have one terminal ground
+[58:08] V2 and V3.
+[58:10] So both are connected from the ground
+[58:12] so basically both are parallel.
+[58:18] Now if I want to
+[58:20] solve this like a non-inverting amplifier
+[58:22] then first I need
+[58:24] a positive terminal voltage.
+[58:26] Okay?
+[58:28] If I want a positive terminal voltage
+[58:30] then what do I have to do here?
+[58:32] Okay?
+[58:34] What do I have to do here?
+[58:36] I have to put a voltage division.
+[58:38] I have to put a voltage division here
+[58:40] to find out the value of
+[58:42] V positive.
+[58:46] So V positive is
+[58:48] V1
+[58:50] R2
+[58:52] parallel R3
+[58:54] by
+[58:56] R1
+[58:58] plus R2 parallel R3.
+[59:04] Okay?
+[59:08] If you write this
+[59:10] how can I write it in a simple way?
+[59:12] Let it be like this.
+[59:14] And then if you write
+[59:16] V01
+[59:18] is V1
+[59:20] R2 parallel R3
+[59:22] you know the gain of
+[59:24] non-inverting amplifier.
+[59:26] R1 plus
+[59:28] R2 parallel
+[59:30] R3
+[59:32] into 1
+[59:34] plus
+[59:36] RF by R.
+[59:40] Okay? This is done.
+[59:42] Similarly
+[59:44] if you want
+[59:46] then you could have written
+[59:48] R1 and R3 parallel
+[59:50] in V1 and R2 parallel.
+[59:52] Right? Now you don't have to
+[59:54] make a circuit again and again
+[59:56] if you have made it once.
+[59:58] Because what are you doing now?
+[60:00] You are saying that when all the inputs are symmetric
+[60:02] then by looking at one result
+[60:04] I can tell the rest of the results.
+[60:08] Okay?
+[60:18] Here
+[60:24] one and two will come.
+[60:42] Okay?
+[60:44] One plus RF by
+[60:46] R.
+[60:48] We have written this.
+[60:50] Okay? We have written this.
+[60:52] Now what we will say is that
+[60:54] according to superposition
+[60:56] V0 is done.
+[60:58] V01 plus V02 plus
+[61:00] V03.
+[61:02] Now see here
+[61:04] special cases.
+[61:06] Okay?
+[61:08] Yes, first you will take out the voltage
+[61:10] and then you will put it.
+[61:12] Non-inverting amplifier gain.
+[61:14] Okay?
+[61:16] What happened Anuj?
+[61:22] Come on.
+[61:24] Is it clear till here?
+[61:28] Now see
+[61:30] if I say
+[61:32] that R1
+[61:34] equal to R2
+[61:36] equal to
+[61:38] R3
+[61:40] take this.
+[61:42] What is the name of this?
+[61:44] We have used one R.
+[61:46] Let's call it RA.
+[61:48] So this means
+[61:52] R2 is equal to R3.
+[61:54] R1 is equal to
+[61:56] R3.
+[61:58] Or you take R1 is equal to
+[62:00] R2.
+[62:02] When all are equal
+[62:04] then it will become RA by 2.
+[62:06] Correct?
+[62:08] RA by 2 will be
+[62:10] written here.
+[62:12] RA by 2
+[62:14] equal to RA plus RA by 2.
+[62:16] So RA by 2 equal to
+[62:18] RA plus RA by 2.
+[62:20] So if this is written here
+[62:22] then
+[62:24] all will be
+[62:26] the same configuration.
+[62:32] So 1 by 3.
+[62:34] This is the whole factor of 1 by 3.
+[62:36] This means
+[62:38] what is V0?
+[62:40] 1 plus RF by R
+[62:46] V1 plus V2 plus
+[62:48] V3.
+[62:50] All factors are 1 by 3.
+[62:54] Now see here
+[62:56] if
+[62:58] the value of RF is 2R
+[63:00] then this will be 3.
+[63:02] So V0 is the sum.
+[63:04] V0 is the sum of
+[63:06] the three-voltage voltage,
+[63:08] and if
+[63:10] you make RF 0
+[63:12] then V0 will be
+[63:14] the average of the 3 voltage.
+[63:16] V1 plus V2
+[63:18] plus V3 by
+[63:20] 3.
+[63:22] Okay?
+[63:24] So here you can make
+[63:26] some, And you can also
+[63:28] make average from
+[63:30] this amplifier. What is its first condition?
+[63:32] that all the three voltage
+[63:34] They must come out to be equal.
+[63:37] The matter is clear.
+[63:39] The matter is clear till here.
+[63:41] Now I am going to practice the question on today's last application.
+[63:46] Differential amplifier.
+[63:48] What is the meaning of differential amplifier?
+[63:51] The amplifier that amplifies the difference of the two voltages.
+[63:57] I had shown you the differential amplifier in the open loop.
+[64:01] Now we are talking about the closed loop.
+[64:03] So what are we talking about here?
+[64:09] This is used to amplify the difference of two input voltages.
+[64:30] We have to amplify the difference of two input voltages.
+[64:37] Now what should be done here?
+[64:40] RF means zero. That means no subtract from output.
+[64:43] What does no subtract from output mean?
+[64:46] RF is zero. That means the circuit is like a voltage follower.
+[64:54] Now if we want to see here, there is one inverting input V2
+[64:59] and one non-inverting input V1.
+[65:02] So I will use the superposition here.
+[65:12] If I want to use the superposition, what will I do?
+[65:20] First take out V1 because of V1.
+[65:25] This will be V1 for the voltage division R3 by R2 plus R3.
+[65:36] So what will be V01 because of this?
+[65:40] V positive 1 plus RF by R1.
+[65:46] This will be its gain.
+[65:48] So what will be V01?
+[65:51] V1 R3 by 1 plus RF by R1.
+[66:06] Now because of V02, this is a simple non-inverting amplifier minus V2 RF by R1.
+[66:17] So according to the superposition, V01 plus V02 will be V0.
+[66:23] That means the term V1 has come.
+[66:26] And the V2 one is subtracting from it.
+[66:32] And the V2 one is subtracting from it.
+[66:45] Okay.
+[66:46] It has been cleared up to this point.
+[66:48] But sir, there is no sense for this.
+[66:51] There is no sense for this.
+[66:53] If I put R1 equal to R2 and RF equal to R3.
+[67:02] Okay.
+[67:04] If R2 equal to R1 and R3 equal to RF.
+[67:15] If you keep it like this, then what will happen?
+[67:19] V0.
+[67:20] Look, instead of R3, you put RF and instead of R2 put R1.
+[67:29] Now take the LCM of 1 plus RF by R1.
+[67:36] 1 plus RF by R1.
+[67:38] Take this.
+[67:45] Now look at this.
+[67:47] This has been cancelled.
+[67:50] So what happened here?
+[67:53] RF by R1.
+[67:55] This is common in both terms.
+[67:58] V1 minus V2.
+[68:01] This has been amplified by difference.
+[68:03] Tell me.
+[68:04] This has been amplified by difference.
+[68:07] Tell me.
+[68:08] Is it clear?
+[68:09] So you have amplified the difference of both the voltages.
+[68:14] And the gain of which.
+[68:17] How much is the gain?
+[68:19] Here you can say that the differential gain that came out to be RF by R1.
+[68:34] This has become a differential gain for you.
+[68:39] Come on, Anurag.
+[68:40] It is a very good thing that you are happy.
+[68:44] Okay.
+[68:45] Now look, if you want to make a subtractor, then you should also make R1 and RF equal.
+[68:54] If you want to make a subtractor, then you should also make R1 and RF equal.
+[69:01] So what will be V0?
+[69:02] V1 minus V2.
+[69:04] So you can add two signals, so you can subtract V.
+[69:11] Now we understand that the name of the operational amplifier can process many processes on these signals.
+[69:18] When I will teach a non-linear application, then I will also teach a multiplication and division.
+[69:23] Addition, subtraction, average, difference.
+[69:27] You can do a lot of things.
+[69:29] Right?
+[69:30] It has been cleared up to this point.
+[69:32] Now look, in this, we have to take out more parameters.
+[69:36] When there is a differential amplifier, then we have to see CMRR.
+[69:40] Okay.
+[69:41] What do we have to see?
+[69:42] CMRR.
+[69:43] Common mode rejection ratio.
+[69:46] Okay.
+[69:47] So, I have to see the CMRR of this.
+[70:06] Now there are two things for CMRR.
+[70:14] A common mode gain and a differential gain.
+[70:18] What did I tell you for that?
+[70:22] How much was your V0 1?
+[70:25] It was V1 R3 by R2 plus R3 into 1 plus RF by R1.
+[70:40] Okay?
+[70:41] So from here, this is A1.
+[70:44] I also told you the way to take out CMRR, that you take out different gains for both voltages.
+[71:00] How much was V0 2?
+[71:03] Minus RF by R1 into V2.
+[71:08] So this gain is A2 is minus RF by R1.
+[71:13] So our V0 is written like this.
+[71:16] A1 V1 plus A2 V2.
+[71:18] So what did we get from V1 and V2?
+[71:21] A1 and A2.
+[71:23] Now here, we have to take out the differential gain.
+[71:27] Will anyone tell the differential gain?
+[71:29] How much does A1 and A2 come in terms?
+[71:31] Tell me.
+[71:32] How much does the differential gain come in terms of A1 and A2?
+[71:37] Yes.
+[71:38] A1 minus A2 by 2.
+[71:42] A1 minus A2 by 2.
+[71:44] Very good, Anuj.
+[71:46] And how much does the common mode gain come in terms of?
+[71:50] A1 plus A2.
+[71:53] A1 plus A2.
+[71:55] Okay?
+[71:56] A1 plus A2 comes in terms of A1 plus A2.
+[71:58] Now here, if you ask us about CMRR.
+[72:02] What should we ask?
+[72:03] CMRR.
+[72:04] So what will you say?
+[72:06] AD by ACM.
+[72:11] And if anyone asks, tell us in CMRRDB.
+[72:16] So it will be 20 log 10 AD by ACM mode.
+[72:30] Okay?
+[72:31] So this will come.
+[72:33] Clear?
+[72:34] How does CMRR come out in the actual question?
+[72:37] A1, A2 comes out.
+[72:39] You come out with AD and AC.
+[72:42] And your CMRR comes out with AD, AC.
+[72:46] Now comes the matter of input resistance.
+[72:49] Whose matter comes out?
+[72:50] Input resistance.
+[72:52] There are three ways to get it out.
+[72:54] Either get it out of the inverting terminal.
+[72:57] Get it out of the non-inverting terminal.
+[72:59] Or get it out of the differential input resistance.
+[73:03] Which is between the two terminals.
+[73:06] Okay?
+[73:07] So first, I am telling you with the inverting terminal.
+[73:17] If you get it out of the inverting terminal.
+[73:19] Then you will have to ground the non-inverting.
+[73:23] What will you have to do?
+[73:25] Ground the non-inverting.
+[73:27] Okay?
+[73:43] You will ground the non-inverting input.
+[73:49] Okay?
+[74:16] Look now.
+[74:17] These R2 and R3 are both parallel.
+[74:22] And one end of both is connected to the ground.
+[74:27] So my children, if you think about it.
+[74:30] You don't think the positive terminal voltage will be zero.
+[74:33] Think.
+[74:34] The positive terminal voltage is zero.
+[74:38] Because you have grounded the non-inverting input.
+[74:42] So here V positive is zero.
+[74:45] And then we say that by virtual short.
+[74:52] Because of virtual short.
+[74:55] The voltage of negative terminal will also be zero.
+[74:59] Okay?
+[75:00] Zero is found here.
+[75:02] Because of which you can say that V2 is I2 into R1.
+[75:09] So V2 by I2.
+[75:10] Which will show you the resistance from the inverting terminal.
+[75:13] That will be R1.
+[75:15] How much will you see?
+[75:17] R1.
+[75:18] Is this clear?
+[75:19] Is it simple?
+[75:27] Now you say look at the non-inverting terminal.
+[75:31] Okay?
+[75:32] Now what do you say?
+[75:34] Through non-inverting terminal.
+[75:52] Now if you look at the non-inverting terminal.
+[75:56] Okay?
+[75:57] How is V positive zero, Rudresh?
+[75:59] My child, it is zero here.
+[76:01] If you apply the voltage division from zero here.
+[76:04] Then the positive terminal voltage will be zero only.
+[76:07] Think about it.
+[76:10] You have zeroed the input here.
+[76:13] These are both in series.
+[76:15] So what will be the voltage of the middle point here?
+[76:17] Zero here also zero here also zero.
+[76:19] So zero in the middle also zero.
+[76:21] Now you have to see from the non-inverting terminal.
+[76:25] Okay?
+[76:27] So let's make a circuit once.
+[76:30] Try to derive this much in your copy.
+[76:33] If the current and voltage ratios are on the non-inverting terminal.
+[76:37] Then how much will it come?
+[76:39] Check it.
+[76:41] I am making a circuit.
+[76:59] Okay?
+[77:13] This is RF.
+[77:15] R1.
+[77:17] R2.
+[77:19] R3.
+[77:21] Now look at this.
+[77:22] No current will go here.
+[77:24] So this I1 current will run like this only.
+[77:28] Okay?
+[77:29] So what will you write?
+[77:31] V1 is I1 into R2 plus R3.
+[77:37] So the resistance coming from the non-inverting terminal.
+[77:43] So this will come.
+[77:44] R2 plus R3.
+[77:48] Okay?
+[77:50] As soon as R1 comes from there.
+[77:52] So from here R2 plus R3.
+[77:55] You cannot zero V minus.
+[77:57] The input is V2.
+[77:59] The input is not V minus.
+[78:01] So you cannot control V minus.
+[78:04] You can control the input only.
+[78:06] If you are taking out one input.
+[78:08] Then you will zero the other input.
+[78:10] Okay?
+[78:12] You cannot control the positive or negative terminal voltage.
+[78:16] You will control the voltages.
+[78:18] Now there is one differential input resistance.
+[78:22] What is one?
+[78:24] Differential input resistance.
+[78:36] So Aman my brother can have different input resistance on different terminals.
+[78:40] What is the problem?
+[78:43] Differential means if I put a voltage source between both the terminals.
+[78:49] Then how much resistance will be visible to me?
+[78:53] Look at this.
+[79:05] Look at what is happening here.
+[79:19] R1, Rf, R2 and R3.
+[79:44] Now if you put a virtual source here.
+[79:48] This means that both the terminals are shorted.
+[79:56] This is the virtual short.
+[79:58] Both the voltages are the same.
+[80:06] If I am delivering this current.
+[80:08] Then I am absorbing it.
+[80:10] And I am coming like this.
+[80:12] Okay? From below.
+[80:14] If I am delivering this current.
+[80:16] Then I will absorb it.
+[80:18] Now if you put a KVL here.
+[80:21] In this loop.
+[80:24] So V minus I R1.
+[80:28] Then the voltage of shorting is zero.
+[80:30] Minus I R2 is zero.
+[80:35] So V by I R1 plus R2.
+[80:44] So how much is R1 plus R2?
+[80:47] We will call this differential input resistance.
+[80:50] This is the same circuit.
+[80:54] This is the same circuit.
+[80:56] I have put a source between both the terminals.
+[80:59] Now you are asking where did this circuit come from?
+[81:01] What does differential mean?
+[81:03] If I put a source between both the terminals.
+[81:05] Then how much resistance will be offered to it?
+[81:09] There will be different parameters for each O-Pamp.
+[81:12] There will be different parameters in each circuit.
+[81:15] But you should be clear of the method.
+[81:17] V by I.
+[81:19] So the input terminal of the circuit.
+[81:21] If you current the voltage on it.
+[81:23] You will get the input resistance.
+[81:26] Okay?
+[81:27] Now let's see some questions.
+[81:28] This question is the input resistance of a non-inverting amplifier.
+[81:33] Tell me quickly.
+[81:34] How much input resistance is this circuit?
+[81:36] It is a very easy question.
+[81:49] Infinity is very good.
+[81:51] Since input current at non-inverting terminal.
+[82:06] I equal to 0.
+[82:16] So input resistance.
+[82:19] Which is V in upon I.
+[82:23] Will tend to infinity.
+[82:26] Okay?
+[82:27] It will tend to infinity.
+[82:29] Look at the next one.
+[82:30] Tell me the voltage gain.
+[82:33] Find the voltage gain.
+[82:57] Minus 10.
+[82:59] Everyone is getting minus 10.
+[83:01] So look here.
+[83:03] Here there is negative feedback.
+[83:07] And you can consider the open loop gain as tending to infinity.
+[83:12] Okay?
+[83:13] So you will say virtual short can be applied.
+[83:26] If you apply virtual short, my brother.
+[83:30] So if there is zero volt on this terminal.
+[83:33] Then zero volt will also come on this terminal.
+[83:36] Okay?
+[83:37] If zero volt comes, then zero here and zero below.
+[83:40] Then its current will be zero.
+[83:42] So the current coming from here will be I1.
+[83:48] V in by 40.
+[83:52] And this will go ahead of I1 current.
+[83:55] Because there is no current here.
+[83:57] There is no current here.
+[83:59] So V0 is zero minus.
+[84:11] So V0 by V in is minus 10.
+[84:16] So how much is the gain you have?
+[84:18] Minus 10.
+[84:20] Clear?
+[84:21] Yes.
+[84:22] So the resistance of 60 K is redundant.
+[84:24] Even if it is not there, there will be no difference.
+[84:27] See the next one.
+[84:31] See the next one.
+[84:32] What did he say?
+[84:33] He has given you the resistances.
+[84:35] He has given you the equation of V0.
+[84:37] He is asking you R2, R4 and Rf.
+[84:40] Come on.
+[84:42] He is asking R2, R4 and Rf.
+[84:46] Ahem.
+[85:16] Tell me the option.
+[85:29] Tell me the option.
+[85:32] Manthan is saying C, Swarov is saying C.
+[85:37] Chaitanya is saying C.
+[85:39] Yes, C is the correct answer.
+[85:41] How to get it out?
+[85:43] Let's get it out from the super position.
+[85:45] See the gain of V1.
+[85:52] How much is the gain?
+[85:54] Minus 10.
+[85:56] If you see from this circuit, there is an inverting amplifier with V1.
+[86:02] Minus Rf by R1.
+[86:05] R1 is 20.
+[86:08] So how much is Rf?
+[86:12] 200 kilo ohm.
+[86:15] You know the answer from here.
+[86:17] Only this much option would have been chosen.
+[86:20] So Rf is 200.
+[86:22] Now to get the gain of V2.
+[86:28] See the equation of V2.
+[86:31] How much is the gain of V2?
+[86:33] The gain of V2 is minus 4.
+[86:36] And from this circuit, minus Rf by R2.
+[86:53] R2 is Rf by 4.
+[86:58] 200 by 4 is 50 kilo ohm.
+[87:04] Now the non-inverting terminal input is a little tricky.
+[87:11] If we want R4, then I will get the gain of V4.
+[87:15] To get the gain of V4, you will have to zero V3 first.
+[87:20] You will have to zero V1 and V2.
+[87:23] I am saying the gain of V4.
+[87:27] How much is it?
+[87:32] This is 2.
+[87:35] So you will have to zero V1, V2, V3.
+[87:41] So how will your circuit be?
+[87:44] You will have to put a little mind here.
+[87:48] If V1 and V2 are zero, then their resistance will be parallel.
+[88:02] Okay.
+[88:11] And if V3 is zero, then this 80 will be parallel to 50.
+[88:16] Because here the non-inverting terminal, here the ground, here also the ground.
+[88:21] So this 80 will be parallel to 50.
+[88:34] And from here your V3, sorry V4, whose resistance you want.
+[88:44] See, it was 20.
+[88:46] This is 50.
+[88:48] This is 200.
+[88:50] This is 80.
+[88:52] This is 50.
+[88:54] Now you will get the positive terminal voltage.
+[88:57] V4.
+[88:58] How much will be 80 parallel to 50?
+[89:00] 40 by 13 or 400 by 13.
+[89:03] It will be 400 by 13.
+[89:05] Okay.
+[89:06] 400 by 13 divided by R4 plus 400 by 13.
+[89:16] And because of this, V0, or look at this, 20 parallel to 50.
+[89:21] So this will be 100 by 70.
+[89:24] 20 into 50, 1000 by 70, so 100 by 7.
+[89:30] So because of this, the V04 will come, that will be V positive.
+[89:36] 100 by 7, that is 15.
+[89:46] This happened.
+[89:47] Now V04 is 2V4.
+[89:50] So how much is the gain?
+[89:54] Which is given as 2.
+[89:56] 1.
+[89:57] This factor is 400 by 13 divided by R4 plus 400 by 13.
+[90:08] N2, this gain is 15.
+[90:11] So 2 by 15, take LCM, 400 by 400 plus 13 R4.
+[90:23] So 800 plus 26 R4.
+[90:28] This is 6000.
+[90:30] 2200 will come.
+[90:32] 2200 will go to 200.
+[90:38] Okay.
+[90:39] So R4 is 200.
+[90:41] So 50, 200, 200.
+[90:43] Is it clear?
+[90:46] You can apply the V1, V2 direct formula for inverting.
+[90:50] But in non-inverting, first the voltage of positive terminal.
+[90:54] And then your gain.
+[90:56] First the voltage of positive terminal is required.
+[91:00] Okay.
+[91:03] Did you understand my brother Udresh?
+[91:05] These are the parts of V1, V2 inverting amplifier.
+[91:08] If you understand this, if you zero V3, V4, V3, V4, then
+[91:14] here as well, here as well.
+[91:16] It was wasted.
+[91:17] As you can see, like this.
+[91:19] Where did this happen?
+[91:22] Yes.
+[91:23] These two were wasted when you zeroed the terminal at the bottom.
+[91:28] And if you zero V2 here, for V1, if you zero V2,
+[91:36] the resistance of the pair goes back like 60 kOhm.
+[91:39] It was wasted too.
+[91:40] So the gain directly comes.
+[91:42] Did you understand?
+[91:43] The lower resistance will be wasted.
+[91:45] As soon as you zero them, all these resistances will be 0, 0, 0.
+[91:50] If you zero V2, then this will also go between 0 and 0.
+[91:54] So the gain will directly come.
+[91:56] Minus RF by 20.
+[91:58] Okay.
+[92:00] Come on, next.
+[92:02] Find V0.
+[92:04] Find V0.
+[92:06] Okay.
+[92:13] Come on.
+[92:15] Let's do this.
+[92:30] Let's call this Vn or 2V.
+[92:37] I have given you 2V for input voltage.
+[92:41] I have given you 2V for input voltage.
+[93:06] 1.2.
+[93:08] Let's see.
+[93:10] See, this is 0.1 milliampere.
+[93:12] It will go to zero here.
+[93:14] So the whole thing will go up.
+[93:18] And you can say it from a virtual shot.
+[93:20] The voltage of the inverting terminal will also be 2.
+[93:27] V0 is 2 minus 0.1 into 8.
+[93:34] Okay.
+[93:35] It's easy.
+[93:36] The questions of opamp are quite easy.
+[93:39] This is the easiest topic in the exam.
+[93:42] And this is the most asked question.
+[93:44] Okay.
+[93:47] Yes.
+[93:53] Find I0.
+[94:02] I0 is asking you in this circuit.
+[94:04] Make it.
+[94:10] Give input voltage 1.5.
+[94:12] I0 is asking you.
+[94:14] Output current.
+[94:18] I have told you that the output current of opamp can be both positive and negative.
+[94:39] Okay.
+[95:01] Dear, I can't do these things.
+[95:04] I can't do this much.
+[95:06] I will make the discount on any subscription.
+[95:08] Okay.
+[95:10] If there is an offer, you can take it.
+[95:12] But you won't be able to get as much discount as the offer.
+[95:17] Now see, this voltage will be zero from a virtual shot.
+[95:24] This is 1.5 volt.
+[95:29] This current is
+[95:34] 1.5 volt.
+[95:45] So, this current will also go here.
+[95:50] So, V0 is equal to 0 minus I into 10k.
+[95:57] So, this is minus 2.5 volt.
+[96:01] Okay.
+[96:02] This is minus 2.5 volt.
+[96:09] So, how much is the current of the load?
+[96:19] Minus 0.5 milli ampere.
+[96:23] Now, if we put KCL, then I is coming from above.
+[96:26] I0 is coming from here.
+[96:28] I0 is going ahead.
+[96:31] So, I0 will be IL minus I.
+[96:36] So, minus 0.5.
+[96:39] And how much was I? 0.25.
+[96:43] So, that is minus 0.75.
+[96:46] This means, this current is not supplying.
+[96:49] Instead, it is absorbing the current.
+[96:52] Clear?
+[96:53] So, minus 0.75 is coming.
+[96:55] Whose was it?
+[96:57] Minus 0.75, quickly tell in the chat.
+[96:59] Who had derived that it will be minus 0.75?
+[97:09] Okay.
+[97:27] Okay.
+[97:36] Come on, try this.
+[97:41] Find V0 and the input resistance.
+[97:45] Find V0 and the input resistance.
+[97:49] I have just taught the input resistance.
+[97:51] How to remove the differential amplifier?
+[97:55] If you practice more numerically, there is a problem.
+[98:01] There is no other solution.
+[98:03] The more you give time, the more you work on it,
+[98:06] the same thing will become so strong.
+[98:08] I had a problem in the entire analogue.
+[98:10] Forget numerically and theory.
+[98:13] If there is a lot of mistake, then you will have to be more careful.
+[98:17] You focus on the starting at a low speed.
+[98:21] If you try to do it quickly, then there will be mistakes in the starting.
+[98:25] When you learn a subject for the first time,
+[98:27] then your focus is never on speed.
+[98:29] Your focus should always be on accuracy, knowledge, concept and these things.
+[98:35] How much is the input resistance?
+[98:37] 5 kilo.
+[98:38] What was the method I told you?
+[98:40] According to the virtual short,
+[98:42] you should shorten these two terminals here.
+[98:46] Now, if you say that if it is coming from here,
+[98:48] then this will also come.
+[98:50] This will also come.
+[98:52] This will also come.
+[98:54] Because here also 0 and here also 0.
+[98:58] Now, we had said to apply KVL.
+[99:01] Supply voltage minus I into 3K.
+[99:06] Short circuit voltage 0 minus I into 2K.
+[99:12] So, here V in by I will be 5K.
+[99:17] Don't keep the formula in mind that I is R1 plus R2.
+[99:21] Keep the method in mind.
+[99:23] 5K.
+[99:24] Now, will you tell V0?
+[99:27] From here, how much will be the I?
+[99:31] Input voltage by 5K.
+[99:36] 12 by 5.
+[99:41] 2.4 milli ampere.
+[99:43] If I tell you that the voltage of positive terminal is going here.
+[99:48] 0 minus I.
+[99:50] Look at this branch.
+[99:52] 0 minus I into 1K.
+[99:55] So, minus 2.4 volt.
+[99:57] And this voltage will also be negative.
+[100:01] So, what will be V0?
+[100:03] The voltage of negative terminal is minus I into 4K.
+[100:14] Minus 12 volt.
+[100:19] Is this coming? Minus 12?
+[100:21] Tell me.
+[100:22] Is it coming minus 12?
+[100:25] Clear.
+[100:26] So, first we took out the current.
+[100:28] We traced the path of current and told V0.
+[100:32] What is the output voltage of the circuit shown?
+[100:36] Do it.
+[100:38] Do you want to know the output voltage of this circuit?
+[100:43] 2.2.
+[100:50] This is 2.2.
+[100:57] The test series of UA light which is available for those who have taken 2 years.
+[101:02] Those who have taken 1 year, they will get a new test series if they take 1 year next year.
+[101:13] How much is it? 1.1.
+[101:37] Look, divide the stages here.
+[101:43] This is an inverting amplifier.
+[101:46] This is an inverting amplifier.
+[101:49] And the first one is a non-inverting amplifier.
+[101:56] So, the gain of this is non-inverting.
+[102:04] 1 plus RF by R1 is 11.
+[102:07] The gain of this is minus RF by R1.
+[102:13] That is minus 10.
+[102:18] And the gain of this is minus 22 by 2.2 minus 10.
+[102:27] So, how much total gain will be when you have kept the cascade?
+[102:31] So, all these gains will be multiplied.
+[102:34] 11 into minus 10 into minus 10, 1100.
+[102:40] So, what will be V0?
+[102:43] 1100 into 1 millivolt, 1.1 volt.
+[102:51] Okay?
+[102:52] 2.
+[102:54] 1.1 volt.
+[102:56] Is it clear?
+[102:58] Now, look at this question.
+[103:02] Do you have to answer V0 in this question?
+[103:05] Take out V0.
+[103:15] Take out V0 quickly.
+[103:17] No, no, the test series is open again.
+[103:48] 4 by 3, 10.66, 1.32.
+[103:53] 4 by 3 and 1.32 are around.
+[103:59] Dear, when we public the video, we will do it.
+[104:01] But I have no such intention right now.
+[104:05] Look, this is a non-inverting amplifier.
+[104:08] We take out the voltage of the positive terminal here.
+[104:13] From the voltage division, 6 into 6 by 54.
+[104:19] Okay?
+[104:20] So, 3, 2 and this is 36 by 54.
+[104:24] So, 36 by 54 is 2 by 3.
+[104:30] Now, V0 which will come, that is V positive.
+[104:34] 1 plus RF by R1.
+[104:38] That is 4 by 3.
+[104:41] That is 1.33 volt.
+[104:47] Okay? 1.33 volt.
+[104:51] Now, look at the next one.
+[104:53] Assuming that the opamp shown in the circuit is ideal, what is the value of V0?
+[104:59] We have to tell V0.
+[105:03] This is wrong in grounding according to me.
+[105:11] No, it can be right.
+[105:13] Okay, fine.
+[105:14] Look.
+[105:24] Same as analog, these are MFT classes, do, sir.
+[105:27] Dear, look, it is not possible before gate 23.
+[105:31] And what can you do for the HPCL exam?
+[105:34] You can only revise.
+[105:35] You can't do anything else.
+[105:38] Okay?
+[105:39] You can only revise.
+[105:40] Because 1 November is left for a week.
+[105:42] So, you don't have to give practice or test all these things.
+[105:47] Now, look, here the negative terminal voltage is zero.
+[105:52] The positive one is done.
+[105:54] So, what should V0 be?
+[105:57] A into 1 minus zero.
+[106:01] So, for ideal opamp, A is tending to infinity.
+[106:11] So, from this logic, V0 will tend to infinity.
+[106:15] But V0 cannot exceed supply.
+[106:20] Did you notice that the supply voltage is given in this question?
+[106:24] So, dear, whenever the supply voltage is given, then check it.
+[106:28] V0 cannot exceed supply.
+[106:30] So, here V0 will saturate.
+[106:33] The answer will be 12.
+[106:35] Okay, the answer will be 12.
+[106:38] Now, you have seen my method and told me.
+[106:40] Earlier, you have done it.
+[106:41] Many children have done 1 plus RF by R1.
+[106:44] You won't find virtual ground here.
+[106:46] Why won't you find virtual ground?
+[106:48] Because I have fixed both the voltages before.
+[106:52] I have fixed one one and fixed one zero.
+[106:55] So, how will the virtual ground look?
+[106:57] We can see it clearly in the question.
+[106:58] The positive and negative terminal voltages are different.
+[107:02] Okay, one last question.
+[107:05] V0 is VoA for switch in position A.
+[107:11] V0 is B for switch in position B.
+[107:14] So, V0 is B by V0 is A.
+[107:18] Okay, let's go.
+[107:21] Make the switch.
+[107:22] If you put the switch in A, then V0 is A.
+[107:25] If you put it in B, then V0 is B.
+[107:27] Both the ratios.
+[107:51] Yes, the test series is included in the plus.
+[108:12] In the plus, the test series has more tests than the test series.
+[108:18] Deepankar, you have produced a differential between both the voltages.
+[108:24] If you have fixed both the voltages, it can't be equal.
+[108:30] The integrator differentiator of the O-Pamp will be in the class tomorrow.
+[108:33] There is your linear application left.
+[108:36] Integrator, differentiator, instrumentation, amplifier, current to voltage converter.
+[108:41] We will see all these things tomorrow.
+[108:43] Now, let's put the switch in A first.
+[108:48] What happened by putting the switch in A?
+[108:51] You gave input on the non-inverting terminal.
+[108:55] If you give input on the non-inverting terminal, you will have to take out V positive.
+[109:00] 1 into 1 by 1 plus 1, that is 0.5.
+[109:07] Now, when you take out V0, then you will take out the gain due to 0.5.
+[109:13] This resistance will be open, so take out 1 kilo ohm.
+[109:18] 1 plus RF by R1.
+[109:20] But there is an inverting input of 5 volts.
+[109:30] Now, when you put the switch in B,
+[109:34] When you put the switch in B,
+[109:37] What will happen then?
+[109:39] When you put the switch in B, both the inputs came on the inverting terminal.
+[109:43] The non-inverting one was open.
+[109:46] Both the inputs came on the inverting.
+[109:50] So, the 5th one is minus 1 by 1.
+[109:54] And the 1th one is also minus 1 by 1.
+[109:58] Both the resistances are same.
+[110:00] So, minus 6.
+[110:02] So, V0A by V0B
+[110:06] minus 4 by 6, that is 2 by 3.
+[110:10] This is coming.
+[110:11] This is coming. 2 by 3.
+[110:13] Tell me.
+[110:15] 2 by 3 is coming.
+[110:17] Happy Goverdhan to you, to Ayush.
+[110:19] Tell me.
+[110:21] This is coming.
+[110:22] The negative will not come.
+[110:23] The positive will come.
+[110:24] Both the voltages are negative.
+[110:26] That is why the answer will be positive.
+[110:28] Okay.
+[110:29] Now, see this is your assignment.
+[110:31] You will solve this.
+[110:33] You have to make the entire assignment.
+[110:35] Tomorrow, we will wind up this part of the linear application.
+[110:39] And then I will discuss all the assignments on Friday.
+[110:43] And look here, you can see the special glasses in my recorded form.
+[110:48] Here, put the PYQs of diode, BJT, MOSFET.
+[110:51] In PYQ, I have given you network, apart from this, EMT,
+[110:55] apart from this, machine, power system, power electronics, everything is given.
+[111:03] In question 6.
+[111:06] The doubt is coming in question 6.
+[111:11] Yes.
+[111:16] Hmm.
+[111:17] What are you saying?
+[111:18] Sir, how did V0 happen on the inverting and non-inverting terminals?
+[111:22] No, it did not happen.
+[111:23] Their difference has become zero.
+[111:25] Aman, KVL has been applied in this loop.
+[111:27] In this loop.
+[111:29] Who is saying that their voltage is zero?
+[111:31] We are saying that when they are going from here to here,
+[111:33] then the difference is zero.
+[111:37] Okay.
+[111:38] The voltage is not zero.
+[111:39] The potential difference is zero.
+[111:41] KVL does not seem to be on the potential difference.
+[111:50] Okay.
+[111:51] And look here, if you come to the academy, there are two options,
+[111:55] plus and iconic.
+[111:56] There are top educators in both.
+[111:58] The whole study is on the material app.
+[112:00] The test series is included.
+[112:02] But if there is a doubt in the new question in the iconic,
+[112:05] then there is a custom doubt solving available.
+[112:07] There are printed notes.
+[112:08] There is a strategy and study plan in one-to-one mentorship.
+[112:11] And there is an interactive open house.
+[112:13] And then let me tell you, in the chat.
+[112:16] Okay.
+[112:17] There is a link pinned in the chat.
+[112:19] Open it, register it.
+[112:21] There will be a live session tomorrow.
+[112:23] Where you will be able to directly discuss with me.
+[112:26] And at the end of that, there is a surprise for you too.
+[112:29] So, whoever wants to talk to me,
+[112:31] want to discuss the strategy,
+[112:33] then quickly open the link and register it.
+[112:36] And look here, if you want to join the academy,
+[112:39] then the best way for you is to go to the academy app,
+[112:42] decide the duration, decide the plan.
+[112:45] And then use the code ANKIT ESC to get the maximum discount.
+[112:50] Okay.
+[112:52] And look, we have launched a 15-month subscription
+[112:56] for Gate 24 aspirants.
+[112:58] And these kids are getting it till the end of October.
+[113:00] They are getting it for one month extra,
+[113:02] meaning 16 months.
+[113:03] So, you can start the Gate 24 journey with us.
+[113:07] You just have to make sure that you apply the ANKIT ESC code.
+[113:10] So that you get the maximum discount.
+[113:14] And you get my guidance too.
+[113:17] Dear, IC will always be less than beta IB.
+[113:20] In Rohit saturation, whether it is NPN or PNP.
+[113:24] And look, if you look at the results,
+[113:26] in the top 10, we produced 6 rankers last year.
+[113:30] This time's dream is to produce 10 out of 10 rankers.
+[113:34] And you can also be one of them,
+[113:36] if you join us on the academy.
+[113:39] And starting a new batch on this Monday,
+[113:42] we are starting a rank improvement batch
+[113:44] by Team Creatrix, in which you are doing full revision.
+[113:47] So, if you want to do revision with us,
+[113:49] if you want to practice good questions,
+[113:50] then come to the plus quickly.
+[113:52] And if it is a financial issue,
+[113:54] then you can take it on EMI.
+[113:56] Where you don't have to give any interest,
+[113:58] only EMI will be approved in 2 hours.
+[114:01] It is at least paperwork.
+[114:03] Here, you will have to give only a basic card,
+[114:05] a pan card, that too in the family.
+[114:07] A member whose salary comes,
+[114:10] and you can repay the loan in a flexible amount of time.
+[114:13] And this batch has started for 24,
+[114:15] in which Analog and Maths are going on,
+[114:18] for both Electrical and DC.
+[114:20] And our new batch for 23 is starting on Monday.
+[114:23] And for this, we have launched a 4 month subscription,
+[114:27] in which it will easily cover your gate.
+[114:30] And we are starting this batch from 31st October.
+[114:34] And we will wind up this batch by 7th or 10th of January.
+[114:41] Tell me Rohit, you are writing right.
+[114:43] NPN or PNPO, this condition is the same.
+[114:46] And this is my telegram channel.
+[114:48] We will be connected to it,
+[114:50] so that you get the message here,
+[114:52] get the notification,
+[114:54] if you don't miss any class.
+[114:55] And if you want the notes of this session,
+[114:57] then you will go to the community,
+[114:59] in the academy app's homepage,
+[115:01] go to the community,
+[115:03] you will get the notes there,
+[115:05] and you will get all my notes.
+[115:07] So thank you everyone, thanks a lot.
+[115:09] Now we will meet tomorrow,
+[115:11] same time, same place.
+[115:13] And what we are going to discuss tomorrow.
+[115:15] Tomorrow, we will discuss its linear application,
+[115:19] with negative feedback.
+[115:21] Okay, let's go.
+[115:22] So see you tomorrow, until then,
+[115:24] revise yourself.
+[115:25] Practice well,
+[115:26] wind up all these DPP's.
+[115:28] Let's crack it.

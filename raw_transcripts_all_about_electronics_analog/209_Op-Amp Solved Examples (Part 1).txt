@@ -1,0 +1,168 @@
+Title: Op-Amp Solved Examples (Part 1)
+URL: https://www.youtube.com/watch?v=VdP3tTcaZIc
+Source: Local Whisper (base)
+
+[00:00] Hey friends welcome to the YouTube channel all about electronics.
+[00:15] So in this video we will solve some problems based on opamp.
+[00:18] So these are the topics which we have seen so far in this opamp series.
+[00:22] So here we are going to solve some 8 to 9 problems based on these topics.
+[00:26] And here I am going to divide this video in a 2 part.
+[00:29] So that the video will not get too long.
+[00:31] So here is the first example and in this example we have been given this particular circuit.
+[00:37] And we have been asked to find the overall output gain of this circuit.
+[00:40] So now here the value of R1, R2 and R3 is 1 ohm.
+[00:44] While the value of L and C is 1 micro-andrian 1 micro-ferraday respectively.
+[00:49] In the input to this circuit is cos of 10 to the power 60.
+[00:54] So now if you observe this circuit it is the combination of non-inverting and the invading
+[00:59] opamp.
+[01:00] So and we know that for the non-inverting opamp the gain can be given by the expression
+[01:04] 1 plus Z2D by Z1.
+[01:08] Where Z1 and Z2 can be either resistor, capacitor or inductive reactants.
+[01:14] So in this particular case if you see for this particular portion the Z2 is equal to R1
+[01:20] and Z1 is equal to the reactants of this inductor that is equal to XL.
+[01:26] Similarly for the invading opamp configuration we know that the gain can be given by the
+[01:31] expression minus Z2D by Z1.
+[01:35] So for this particular portion Z2 is equal to this R3 and Z1 is equal to R2 plus XC.
+[01:43] Where X is the reactants of this capacitor.
+[01:47] So we can say that the overall gain will be equal to the product of this individual gain.
+[01:53] So here we know that the A1 is equal to 1 plus Z2D by Z1.
+[01:59] Or we can write it as a 1 plus R1D by XL.
+[02:04] Now here we know that R1, R2 and R3 is equal to 1 ohm.
+[02:10] While the value of this inductor is 1 micro- Henry and the operating frequency is equal
+[02:16] to 10 to the power 6 radian per second.
+[02:20] And here XL will be equal to J into omega L.
+[02:25] So if you put the value of this omega and L into this equation then the value of this
+[02:29] XL will come out as J1 ohm.
+[02:33] So if you put these values then the value of A1 will be equal to 1 plus 1D by J.
+[02:39] Or we can say that A1 is equal to 1 minus J.
+[02:44] So in this way the value of this A1 will be equal to 1 minus J.
+[02:49] That is the gain of this non-inverting opam.
+[02:52] Similarly for this inverting opam the gain A2 will be equal to minus Z2D by Z1.
+[02:59] That is equal to minus R3D by R2 plus XC.
+[03:05] Now here we know that the value of this capacitor is 1 micro-ferrad time.
+[03:10] So XC can be given by the expression 1D by J into omega C.
+[03:15] And if you put the value of this omega and C the value of XC will come out as 1D by J.
+[03:21] So let us put all these values in this expression and let us solve this expression.
+[03:26] So if you put all these values then we will get minus 1D by 1 plus 1D by J.
+[03:33] Or we can say that that is equal to minus 1D by 1 minus J.
+[03:39] So in this way the expression for this A2 will be equal to minus 1D by 1 minus J.
+[03:46] So the overall gain will be the product of A1 and A2.
+[03:50] That is equal to 1 minus J multiplied by minus 1 minus J.
+[03:58] And that is equal to minus 1.
+[04:00] So the overall gain of the circuit will be equal to minus 1.
+[04:04] So now let us see our second example.
+[04:07] So in this example we have been asked to find the output voltage in terms of this V1 and V2
+[04:13] voltages.
+[04:14] So if you see this circuit in this circuit the input is applied at both inverting and
+[04:18] the non-inverting terminals.
+[04:20] So to find the output voltage what we will do we will consider only one voltage source
+[04:24] at a time and we will find the output voltage.
+[04:27] And later on we will add the initial responses to get the final output.
+[04:31] So now let us consider this voltage source V1 is acting alone and this voltage source
+[04:35] V2 is equal to 0.
+[04:38] So if you observe the circuit then the circuit will look like this.
+[04:41] That means this node is at a ground potential and this configuration is nothing but inverting
+[04:46] open configuration.
+[04:47] So let us find out the output voltage we have for this inverting open configuration.
+[04:52] Now here if you observe this terminal is at a ground potential.
+[04:56] So because of the virtual ground concept this node will also at a ground potential or
+[05:01] we can say that the voltage at this node is equal to 0 volt.
+[05:04] Similarly the other end of the 2R resistor is also at a ground potential.
+[05:08] So we can say that no current is flowing through this resistor 2R.
+[05:13] So this resistor 2R will not play any role in this circuit.
+[05:17] So let us say the output voltage for this circuit is V1.
+[05:20] So this output voltage V1 can be given by the expression minus RF dR by R1 times this
+[05:26] voltage Vn.
+[05:27] Now here this feedback resistor Rf is 3R and this resistor R1 is nothing but this
+[05:34] resistor R.
+[05:35] So the output voltage V1 will be equal to minus 3R divided by R multiplied by this input
+[05:41] voltage V1.
+[05:42] Or we can say that the output voltage V1 will be equal to minus 3 times this voltage V1.
+[05:48] Similarly let us consider this voltage source V2 is acting alone and this voltage source
+[05:53] V1 is equal to 0.
+[05:55] So in this case this voltage source V1 will be at a ground potential.
+[06:00] And now if you observe over here this resistor R and 2R will be in a parallel and this circuit
+[06:06] configuration is the non-inverting open configuration.
+[06:10] So let us say for this non-inverting open configuration the output voltage is V02 and it
+[06:15] can be given by the expression 1 plus RF dR by R1 times the input voltage Vn.
+[06:23] Now here this feedback resistor Rf is 3R and the value of R1 is the parallel resistance
+[06:29] between this R and 2R that is R in parallel with this 2R which is equal to 2 by 3R.
+[06:38] So our output voltage V02 will be equal to 1 plus 3R divided by 2 by 3R multiplied by
+[06:46] the input voltage V2.
+[06:49] So the output voltage V02 will come out as 11 by 2 times this voltage V2.
+[06:55] So now let us consider this voltage V1 and V2 acting simultaneously.
+[07:01] So in that case the overall output voltage V out will be equal to summation of this individual
+[07:06] responses that is equal to minus 3 times V1 plus 11 by 2 times this voltage V2.
+[07:14] So that is the expression of the output voltage in terms of this input voltage V1 and V2.
+[07:20] Similarly now let us see the third example.
+[07:23] So in this example we have been asked to find the 3DV frequency of the circuit and here
+[07:28] assume that the open is a ideal open.
+[07:31] So first of all let us read our the same circuit.
+[07:34] So here this combination of this resistor R and C will act as a low pass filter and let
+[07:39] us assume that the voltage at this node is equal to V plus.
+[07:43] Now at this node also the voltage will be equal to V plus because here we have been given
+[07:48] that this open is an ideal open.
+[07:50] So no current is flowing into the terminals of the open and because of that there will
+[07:55] not be any drop across this 10 kilo ohm resistor.
+[07:58] So the voltage at this node will be also equal to V plus.
+[08:01] So here this open is configured in a non-inverting open configuration.
+[08:05] So the output voltage V out will be equal to 1 plus RFD by R1 times the voltage that
+[08:12] is appearing at this positive terminal that is equal to V plus.
+[08:17] So here the response of this low pass filter will be get amplified by the gain of this
+[08:21] non-inverting open.
+[08:23] So for this circuit the 3DV frequency or the cutoff frequency will be the cutoff frequency
+[08:28] of the low pass filter and we have already seen in the video of low pass filter that the
+[08:33] cutoff frequency FC can be given by the expression 1D by 2 by times this resistor R and C.
+[08:40] So if you put the value of this R and C that is equal to 10 kilo ohm and 0.1 micro
+[08:46] Faraday then this 3DV frequency or the cutoff frequency will come out as 159.1 hertz.
+[08:55] So in this way the cutoff frequency of the circuit will be equal to 159.1 hertz.
+[09:01] So now let us see the fourth example.
+[09:03] So in this example the gain that is V out by V in is equal to minus 12 and we have been
+[09:09] asked to find the value of this resistor R. So now here we find this value of R what
+[09:14] we will do we will apply the KCL at these two particular nodes.
+[09:19] So let us say this node as a node A and this node as a node B. So by applying the KCL
+[09:25] at these two nodes we will find the value of this resistor R. So first of all let us apply
+[09:31] the KCL at this particular node A. So let us assume that at this node the voltage is
+[09:37] equal to V A. So applying KCL we can write V A minus V in here by 10 kilo ohm plus V A
+[09:48] minus V B here by 10 kilo ohm that is equal to 0. So now here this non-inverting terminal
+[09:56] is at a ground potential. So because of the virtual ground this voltage V A will be also
+[10:02] equal to 0. So we can write 0 minus V in here by 10 kilo ohm plus 0 minus V B here by
+[10:12] 10 kilo ohm that is equal to 0. So if you simplify it then we will get V B that is equal to
+[10:18] minus V in. So that is the first expression. Similarly now let us apply the KCL at this
+[10:26] particular node B. So applying KCL we can write this V B minus 0 here by R plus V B minus V A
+[10:40] here by 10 kilo ohm plus V B minus V out here by 10 kilo ohm that is equal to 0. Now this
+[10:51] node A is at ground potential. So we can rewrite this expression as V B here by R plus V B
+[11:00] here by 10 kilo ohm plus V B minus V out here by 10 kilo ohm that is equal to 0. So if
+[11:11] you simplify this expression a bit then we can write V B here by R plus 2 V B here by 10
+[11:19] kilo ohm that is equal to V out here by 10 kilo ohm. Now we have seen that this value of V B is
+[11:27] equal to minus V in. So let us put this value in this expression. So if you put this value then
+[11:33] we can write minus V in here by R minus 2 V in here by 10 kilo ohm that is equal to V out
+[11:43] here by 10 kilo ohm and if you simplify this expression a bit then we can write minus V out
+[11:50] here by V in that is equal to 10 kilo ohm dR by R plus 2. Now here we have been already given
+[11:59] that the ratio of this V out by V in or the gain of this circuit is minus 12. So minus V out
+[12:06] by V will be equal to 12. So we can say 12 is equal to 2 plus 10 kilo ohm dR by R or we can say
+[12:16] 10 kilo ohm dR by R that is equal to 10 and hence the value of R will be equal to 1 kilo ohm.
+[12:24] So in this way for the given circuit the value of R will be equal to 1 kilo ohm. So in this
+[12:31] in any open example if you find that it is not possible to apply the inverting and the non-inverting
+[12:37] open equations directly in that case you can use these kc equations and based on that you can
+[12:43] solve any problem. So now let us see the fifth example. So here we have been asked to find the
+[12:49] voltage gain of this open and here assume that the open is the ideal open. So now here if you
+[12:55] observe the input is applied at the inverting terminal but for this circuit we cannot directly
+[13:00] apply the expression of the inverting open gain. So let us see how we can solve this problem.
+[13:06] So if you observe over here this non-inverting terminal is at a ground potential. So because of
+[13:12] the virtual ground we can say that this node is also at a ground potential or the voltage at this
+[13:18] node is equal to 0 volt. Similarly if you observe the other end of this resistor R3 it is also at
+[13:24] a ground potential. So we can say that the other end of this resistor R3 is also connected at this node.
+[13:30] So let me just read out the same circuit so that it will be get clear to you. So if we read
+[13:35] out the circuit then the circuit will look like this. So here the output is feedback to the input
+[13:40] where the parallel combination of this resistor R2 and R3 and let us say this parallel
+[13:45] combination is RP that means RP is equal to R2 in parallel with this resistor R3 and if we again
+[13:53] read out the same circuit then it will look like this. So here the output voltage is feedback
+[13:59] where this parallel combination of R2 and R3 and for this configuration we know that the gain
+[14:05] can be given by the expression minus RF dR by R1. Now here this feedback resistance is nothing but
+[14:12] the parallel combination of this R2 and R3. So you can say that the gain of this circuit is equal to
+[14:18] minus R2 parallel R3 dR by this resistance R1. So that is it for this video. In the next part of
+[14:26] this video we will solve some more problems based on the opamp. So I hope in this video you understood
+[14:31] the different problems which we have covered. So if you have any question or suggestion do let me know
+[14:36] in the comment section below. If you like this video hit the like button and subscribe to
+[14:40] the channel for more such videos.

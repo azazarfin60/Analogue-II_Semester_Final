@@ -1,0 +1,190 @@
+Title: Active Clipper Circuit (Clipper Circuit using op-amp) Explained
+URL: https://www.youtube.com/watch?v=ZaX5tL_xktQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in the earlier video of the Clipper Circuit, we have seen that what is Clipper Circuit?
+[00:22] And we have discussed the different types of Clipper Circuits.
+[00:25] Now when the Clipper Circuit is designed using the diode and the resistor, then it won't
+[00:30] behave like a perfect Clipper Circuit.
+[00:32] For example, ideally, this passive Clipper Circuit should completely remove this negative
+[00:38] half cycle.
+[00:40] But due to the voltage drop across this diode, we will get this type of waveform.
+[00:45] That means using this passive Clipper Circuit, it is not possible to perfectly clip the
+[00:50] waveform at the particular reference level.
+[00:53] And to achieve that, the active Clipper Circuit can be used.
+[00:58] So in this video, we will discuss the different types of active Clipper Circuits which are
+[01:03] designed using the OPAM.
+[01:06] And as it is precisely able to clip the waveform at the particular reference level, this circuit
+[01:11] is also known as the Precision Clipper Circuit.
+[01:14] So if we see this circuit, then it consists of the diode, the resistor and the reference
+[01:20] voltage.
+[01:21] Now here, this reference voltage can also be derived from the supply voltage.
+[01:27] But for that, the supply voltage should remain very stable.
+[01:31] But in general, we can draw the same circuit like this.
+[01:36] Now if you observe this circuit, here the diode is connected in the feedback path.
+[01:41] So if you see this portion of the circuit, then it will behave like a super diode.
+[01:46] So whenever the diode is in the on condition, then the OPAM will operate in the closed loop
+[01:51] configuration.
+[01:53] And due to the very high gain of the OPAM, the voltage drop across this diode is negligible.
+[01:59] So basically, this diode will act as an ideal diode.
+[02:03] And we have already seen this concept in the earlier video of the Precision rectifier.
+[02:08] So for more information, you can check that video.
+[02:11] So in short, in the closed loop configuration, the OPAM will behave like a buffer circuit.
+[02:17] And due to that, the output will follow the input signal.
+[02:21] And whenever this diode is in the off condition, then the OPAM will operate in the OPAM loop
+[02:26] configuration.
+[02:27] So now let's understand the working of this circuit by applying the sine wave as an input
+[02:32] signal.
+[02:34] So here, let's say a sine wave with a peak value of Vm is applied as an input signal.
+[02:40] And here Vref is the reference voltage.
+[02:44] And first of all, let us see what happens whenever the input voltage is less than the reference
+[02:49] voltage.
+[02:52] Now if you see over here, the voltage at the inverting terminal of the OPAM is equal
+[02:56] to the reference voltage.
+[02:59] Because as we know, the no current will flow into the OPAM terminal.
+[03:03] And due to that, there won't be any voltage drop across this resistor R1.
+[03:07] So due to that, this reference voltage will directly appear across this inverted terminal.
+[03:13] And here, the input voltage is applied at the non-inverting terminal.
+[03:18] So whenever the input voltage is less than the reference voltage, so we can say that
+[03:23] at that time, this voltage V plus is less than the V minus.
+[03:29] And due to that, momentarily, the output voltage of the OPAM will go towards the negative
+[03:35] saturation.
+[03:37] And here, the voltage at the n out of the diode is equal to the reference voltage.
+[03:42] So due to that, whenever the input voltage is less than the reference voltage, at that
+[03:47] time, the diode starts conducting.
+[03:50] And due to that, the OPAM will operate in the closed loop configuration.
+[03:55] So we can replace this diode by the short circuit.
+[03:58] And in this case, if you see, now the output voltage will follow the input signal.
+[04:04] That means whenever the input is less than the reference voltage, at that time, the
+[04:08] output voltage will follow the input voltage.
+[04:12] Now just after this point, the input voltage will be greater than the reference voltage.
+[04:17] So at that time, we can say that the voltage V plus is greater than the V minus.
+[04:24] So in this condition, whenever the input is greater than the reference voltage, the
+[04:28] output of the OPAM will go towards the positive saturation voltage.
+[04:32] And if you see over here, the voltage at the n out of the diode is equal to V reference.
+[04:38] And as we said, it is greater than the V reference voltage.
+[04:42] So this diode will act as an open circuit.
+[04:46] So due to that, now the OPAM will operate in the open loop configuration.
+[04:50] And the output of the circuit is equal to the reference voltage.
+[04:54] So whenever the input voltage is greater than the reference voltage, at that time, the
+[04:59] output of the slipper circuit is equal to the reference voltage.
+[05:03] Now once again after this point, the input voltage will be less than the reference voltage.
+[05:09] So once again, now we can say that this voltage V plus is less than the V minus.
+[05:15] So once again, now the OPAM will go towards the negative saturation voltage.
+[05:20] And due to that, now once again, this diode will start conducting.
+[05:24] So in the closed loop configuration, we can replace this diode by the short circuit.
+[05:29] And once again during this period, the output voltage will follow the input signal.
+[05:35] So in general, for this active clipper circuit, if we apply the sine wave with the peak value
+[05:40] of VM, then at the output, we will get this type of wave form.
+[05:46] So in general, for this clipper circuit, we can say that if V reference is the reference
+[05:50] voltage, then the any wave form, which is greater than the reference voltage, will get
+[05:55] clipped.
+[05:56] Now in the same circuit, let's find out the output wave form when we reverse the polarity
+[06:01] of this reference voltage.
+[06:04] So here, this minus V reference is the reference voltage, and this is the input signal.
+[06:11] And if you look over here, starting from 0 up to this point, the input voltage is greater
+[06:16] than the minus V reference.
+[06:19] So we can say that at that time, this voltage V plus is greater than the V minus.
+[06:25] So due to that, during this time, the output of the op-amp will go towards the positive
+[06:30] saturation voltage.
+[06:33] And as the anode of the diode is at minus V reference voltage, so during this period,
+[06:39] the diode will act as an open circuit.
+[06:42] So during this period, the output voltage of this circuit is equal to minus V reference
+[06:47] voltage.
+[06:48] Now after this point, the input voltage will be less than the minus V reference voltage.
+[06:55] So during this time, we can say that now the voltage at the V plus is less than V minus.
+[07:02] And during this period, now the op-amp will go to momentarily towards the negative saturation
+[07:07] voltage.
+[07:08] That means during this period, momentarily the voltage over here is equal to minus V
+[07:14] set.
+[07:15] And as the minus V set is less than minus V reference, so we can say that during this
+[07:20] period, the diode starts conducting.
+[07:24] And due to the closed loop configuration, we can replace this diode by the short circuit.
+[07:29] So during this period of the signal, the output voltage V out will follow the input waveform.
+[07:36] And if you see the waveform, then it will look like this.
+[07:40] Now once again, after this time, the input voltage V in will be greater than the minus
+[07:46] V reference.
+[07:48] So once again, now this voltage V plus will be greater than V minus.
+[07:53] And due to that, once again, the op-amp will go towards the positive saturation.
+[07:58] So during this period, once again the diode will act as an open circuit.
+[08:02] And now the output voltage V out is equal to minus V reference.
+[08:07] So in general, if you see the output waveform of this active clip of circuit, then it will
+[08:12] look like this.
+[08:14] That means this circuit will clip the any waveform, which is greater than the minus V reference.
+[08:20] So in general, we can say that whenever the diode is connected in this fashion, then
+[08:25] the circuit will clip anything, which is about the reference voltage.
+[08:30] Now let's see what happens when we reverse the direction of this diode.
+[08:35] So in this circuit, the input voltage is the sinusoidal signal and the reference voltage
+[08:40] is equal to minus V reference.
+[08:43] So starting from 0, up to this point, the input voltage V in is greater than the minus
+[08:48] V reference.
+[08:50] Or we can say that during this period, the voltage V plus is greater than V minus.
+[08:57] So due to that, momentarily, the op-amp will go towards the positive saturation voltage.
+[09:02] And due to that, now this diode starts conducting.
+[09:06] So during this period of the signal, now the output of the op-amp will follow the input
+[09:11] signal.
+[09:13] And if you see the output waveform during this period, then it will look like this.
+[09:18] Now after this point, now the input voltage is less than the reference voltage.
+[09:24] Or we can say that during this period, now the voltage V plus is less than V minus.
+[09:31] So during this period, now the op-amp will go towards the negative saturation voltage.
+[09:36] And due to that, now this diode will act as an open circuit.
+[09:40] Because at that time, the voltage at the anode, which is minus V set, is less than minus
+[09:46] V reference.
+[09:48] And due to that, the op-amp will act as an open circuit.
+[09:52] So whenever the input voltage is less than the minus V reference, then the output voltage
+[09:58] V out will be equal to minus V reference.
+[10:02] Now once again after this point, the input voltage V in will once again become greater than
+[10:07] minus V reference.
+[10:09] So at that time, once again, the voltage V plus will become greater than V minus.
+[10:16] So due to that, now the op-amp will once again go towards the positive saturation.
+[10:21] And due to that, we can replace this diode by the close switch.
+[10:25] So during this period, when the input voltage is greater than the minus V reference, at
+[10:30] that time the output voltage will follow the input waveform.
+[10:35] So in general, if you see the output waveform of this clipper circuit, then it will look
+[10:39] like this.
+[10:41] That means this circuit clips the any waveform, which is below the minus V reference.
+[10:48] Now in this same circuit, let's see the output waveform when we reverse the polarity
+[10:52] of the reference voltage.
+[10:55] Now in this case, whenever the input signal starts at that time, the input voltage will
+[11:00] be less than the reference voltage.
+[11:03] So at that time, voltage V plus will be less than V minus.
+[11:08] And during this condition, the output of the op-amp will go towards the negative saturation
+[11:14] because the voltage at the inverting terminal is greater than the non-inverting terminal.
+[11:20] So due to that, now the op-amp will act as the open circuit.
+[11:24] And during that time, the output of this circuit will be equal to V reference.
+[11:30] Now after this point, the input voltage V in will be greater than V reference.
+[11:35] And due to that, we can say that now this voltage V plus is greater than V minus.
+[11:41] So during this time, whenever the input is greater than V reference, the output of the
+[11:46] op-amp will go towards the positive saturation.
+[11:50] And due to that, now this diode starts conducting and we can replace this diode as a close switch.
+[11:57] So when the input voltage is greater than the reference voltage at that time, the output
+[12:01] will follow the input waveform.
+[12:05] And once again after this time, when the input is less than minus V reference, this voltage
+[12:10] V plus will become less than V minus.
+[12:14] And due to that, now the op-amp will go towards the negative saturation.
+[12:18] And due to that, the diode will act as an open circuit.
+[12:22] So once again, now the output voltage V out will be equal to V reference.
+[12:28] So in general, the output waveform of this circuit will look like this.
+[12:33] That means this circuit clips the any waveform, which is less than the reference voltage.
+[12:38] So in general, we can say that in this active-clipper circuit, whenever the diode is connected
+[12:43] in this fashion, then it clips the waveform, which is less than the reference voltage.
+[12:50] So in this way, by changing the direction of the diode and the polarity of the reference
+[12:54] voltage, we can use this active-clipper circuit as per our requirement.
+[13:00] And more importantly, using this active-clipper circuit, we can eliminate the voltage drop across
+[13:05] this diode.
+[13:07] So here is the simulation result of one of the circuits, which we have discussed during
+[13:11] the analysis.
+[13:13] So in this circuit, the input signal is a 5-volt sinusoidal signal and the reference voltage
+[13:19] is equal to 3-volt.
+[13:22] So as you can see in the waveform, this blue waveform is the output waveform and the green
+[13:26] waveform is the input waveform.
+[13:29] So basically, this circuit clips to any waveform, which is less than 3-volt.
+[13:35] So in this way, using this active-clipper circuit, we can precisely clip the portion of the
+[13:39] waveform, which is above or below the reference voltage.
+[13:44] So I hope in this video, you understood how we can design the active-clipper circuit using
+[13:49] the opamp.
+[13:50] So if you have any question or suggestion, do let me know here in the comments section
+[13:54] below.
+[13:55] If you like this video, hit the like button and subscribe to the channel for more such
+[13:59] videos.

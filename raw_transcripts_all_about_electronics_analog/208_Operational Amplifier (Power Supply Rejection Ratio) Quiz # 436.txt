@@ -1,0 +1,70 @@
+Title: Operational Amplifier (Power Supply Rejection Ratio) | Quiz # 436
+URL: https://www.youtube.com/watch?v=2hm2jCQQlbQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question, we have been given this open-based circuit and here we have been given
+[00:16] that because of the poor regulation, here the supply voltage has the ripple of plus minus
+[00:21] 200 milli volt.
+[00:23] And here the frequency of the ripple is equal to 100 hertz.
+[00:27] That means this ripple will appear on top of this supply voltage.
+[00:32] So how much ripple that will be suppressed by the op-amp depends on the PSRR of the op-amp.
+[00:38] So for that here we have been also given the PSRR derating of the operational amplifier.
+[00:44] So of course this op-amp will not be able to suppress the entire ripple voltage and some
+[00:49] fraction of the ripple voltage will appear at the output side.
+[00:53] So the amount of ripple voltage that will be appear at the output side will depend on
+[00:58] the gain of the op-amp as well as the PSRR of the op-amp at the particular frequency.
+[01:03] So from the given data let us find the amplitude of the peak to peak ripple voltage at the output
+[01:08] side.
+[01:10] So here to find the value of the PSRR at the 100 hertz we have been also given the PSRR
+[01:15] derating curve.
+[01:17] So at the 100 hertz if you see then the value of the PSRR is equal to 60 dB.
+[01:23] So first of all let us convert this decibel value of the PSRR into the voltage form.
+[01:29] So we know that the PSRR value in the decibel can be given as minus 20 log of this delta
+[01:39] VIO that is the change in the input offset voltage divided by the delta VS.
+[01:46] So here the value of the PSRR at the 100 hertz is equal to 60 dB.
+[01:52] So we can say that the 60 is equal to minus 20 log of this delta VIO divided by delta VS.
+[02:03] Or we can say that this delta VIO divided by delta VS is equal to 10 to the power minus
+[02:10] 3.
+[02:11] Or we can say that that is equal to this 1000 micro volt per volt.
+[02:17] That means here the value of the PSRR is equal to 1 milli volt per volt.
+[02:23] So now if we know the change in the supply voltage then from that we can find the value
+[02:28] of the change in the input offset voltage.
+[02:31] So here we have been given that the change in the supply voltage or the value of the ripple
+[02:35] is equal to plus minus 200 milli volt.
+[02:38] That means if we see the value of the pictropic ripple voltage or this delta VS then that
+[02:44] is equal to 400 milli volt.
+[02:48] So from this we can easily find the value of the delta VIO.
+[02:52] That means here this delta VIO is equal to delta VS times the value of the PSRR.
+[03:00] And here that is equal to 1 milli volt per volt.
+[03:03] That means this delta VIO is equal to delta VS times PSRR.
+[03:09] So here this delta VS is equal to 400 milli volt while the value of the PSRR is equal
+[03:15] to 1 milli volt per volt.
+[03:17] So from this we can say that here the change in the input offset voltage is equal to 0.4
+[03:22] volt times 1 milli volt per volt and that is equal to 0.4 milli volt.
+[03:29] That means here the overall change in the input offset voltage because of the change in the
+[03:33] supply voltage is equal to 0.4 milli volt.
+[03:37] And at the output is change in the supply voltage will get amplified by the noise gain
+[03:42] of the op-amp.
+[03:44] So here the op-amp is configured in the inverting configuration.
+[03:48] But if you see the noise gain of the op-amp then that is equal to 1 plus RF divided by
+[03:53] R1.
+[03:54] That means here the change in the output voltage because of the change in the input
+[03:58] offset voltage is equal to 1 plus this RF divided by R1.
+[04:03] But we can say that this delta VO is equal to 1 plus this 30 kilo ohm divided by N kilo ohm
+[04:12] times delta VIO.
+[04:14] And here this delta VIO is equal to 0.4 milli volt.
+[04:19] That means here the change in the output voltage is equal to this 1 plus 3 times 0.4 milli volt.
+[04:28] And we can say that the overall change in the output voltage is equal to 1.6 milli
+[04:33] volt.
+[04:35] That means here because of the ripple voltage there will be a change in the input offset
+[04:39] voltage.
+[04:40] And because of the change in the input offset voltage we will observe some change in the
+[04:44] output voltage.
+[04:45] That means at the output we will observe the pictopic ripple of the 1.6 milli volt.
+[04:51] And that will appear on top of the DC voltage.
+[04:54] So here this DC voltage will get amplified by the op-amp.
+[04:58] But on top of that we will observe the pictopic ripple of the 1.6 milli volt.
+[05:03] So this amplitude is equal to 1.6 milli volt.
+[05:08] So from this we can say that here the pictopic ripple voltage at the output is equal to 1.6
+[05:13] milli volt.

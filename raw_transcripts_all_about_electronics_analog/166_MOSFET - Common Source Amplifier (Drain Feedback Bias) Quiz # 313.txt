@@ -1,0 +1,103 @@
+Title: MOSFET - Common Source Amplifier (Drain Feedback Bias) | Quiz # 313
+URL: https://www.youtube.com/watch?v=iBacWYTbnxc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:04] So in this question, we have been given this discrete commonsource amplifier and for this
+[00:10] amplifier, we have been asked to find the largest allowable amplitude of the input signal.
+[00:16] So for the given MOSFET amplifier, we have been already given some MOSFET parameters and
+[00:21] at the operating signal frequency, this capacitor acts as a short circuit.
+[00:27] So to find the maximum allowable input signal, first of all we need to find the voltage gain
+[00:33] and using the small signal analysis, we can find the voltage gain.
+[00:37] But to find this voltage gain and to draw a small signal model, first of all we need the
+[00:42] value of the transcurrent tense and that can be found using the DC analysis.
+[00:48] So for the DC analysis, all these capacitors will act as a open circuit.
+[00:53] So if you observe over here, then the MOSFET is biased in the drain feedback configuration
+[00:59] and for this configuration, this voltage VDS is equal to VGS is equal to VDD-ID times
+[01:09] RD.
+[01:10] For in this case, it is equal to 15-ID times RD, where here this RD is equal to 10 kOhm.
+[01:21] So when the MOSFET is operating in the saturation region, then this drain current ID can be given
+[01:26] as half times, mu n times, cu x times, w by L times, VGS-VT whole square.
+[01:38] So here we have been already given the values of this device parameter as well as the threshold
+[01:43] voltage.
+[01:44] So in the saturation, this drain current ID is equal to 0.25 milliampere per volt square
+[01:52] divided by 2 times this VGS-1.5 whole square.
+[01:59] And in this expression, let us put the value of VGS and if you put the value of VGS, then
+[02:06] we can write this drain current ID is equal to 0.25 divided by 2 milliampere per volt square
+[02:15] times 15-ID times RD minus 1.5 whole square.
+[02:23] And if you further rearrange this expression, then we can write 8000 ID that is equal to 13.5
+[02:33] minus ID times RD whole square.
+[02:38] And here the value of RD is equal to 10 kOhm.
+[02:42] That means if you further rearrange this expression, then we can write 8000 ID that is equal
+[02:48] to 182.25 minus 27 times N to the power 4 times ID plus N to the power 8 times ID square.
+[03:02] Or we can say that N to the power 8 times ID square minus 27.8 times N to the power 4
+[03:12] times ID plus 1 AD 2.25 that is equal to 0.
+[03:19] So if we solve this expression, then we will get the two values of the drain current.
+[03:23] The one value is 1.72 milliampere, while the second value is 1.0, 58 milliampere.
+[03:35] Now with the first value of the drain current, if we calculate the value of VGS, then it will
+[03:39] come out as negative.
+[03:42] That means in that case, the MOSFET will not operate in the saturation region.
+[03:46] That means the value of the drain current ID should be equal to 1.0, 58 milliampere.
+[03:53] And with that value, let us find the value of the VGS.
+[03:57] So this voltage VGS can be given as 15 minus ID times RD.
+[04:05] That is equal to 15 minus 1.0, 58 milliampere times N kilo.
+[04:14] That is equal to 4.42 volt.
+[04:18] That means the value of the VGS is equal to 4.42 volt.
+[04:22] And once we know the value of the VGS, then we can find the value of the drain current
+[04:26] times because this transcontent ends can be given as nu n times Cu x times W by L times
+[04:37] VGS minus VT.
+[04:40] That is equal to 0.25 milliampere per volt square times 4.42 minus 1.5.
+[04:51] That is equal to 0.73 milliampere.
+[04:55] So this is the value of the transcontent at the operating point.
+[04:59] And once we know the value of the transcontent ends, and using the small signal analysis,
+[05:04] we can easily find the voltage kin.
+[05:07] So for this small signal analysis, let us replace all this coupling capacitors by the short
+[05:12] circuit.
+[05:13] And this DC voltage source will act as a 0.
+[05:16] And then after, we can replace this MOSFET by the small signal model.
+[05:21] So if you see the equivalent circuit, then it will look like this.
+[05:26] So here, this RF is equal to 10 mega ohm while this RD is equal to 10 kilo ohm.
+[05:32] And here, this low resistor RL is also equal to 10 kilo ohm.
+[05:37] Now here, since we have been given the value of the early voltage, that means there has
+[05:41] to have some finite output resistance.
+[05:45] Because if you are aware, and this output resistance can be given as 1 divided by lambda
+[05:50] times ID.
+[05:51] Or we can say that it is equal to V A divided by ID.
+[05:57] So here, this V A is equal to 50 volt, while this rent current ID is equal to 1.058 milliampere.
+[06:07] That means the output resistance is equal to 47.25 kilo ohm.
+[06:14] So in this case, since this feedback resistor RF is in mega ohms, so this voltage
+[06:20] gain AV is approximately equal to minus GM times this RD parallel, RL parallel, R0.
+[06:30] That is equal to minus 0.73 milliampere times N kilo ohm in parallel with N kilo ohm in
+[06:40] parallel with 47.25 kilo ohm.
+[06:44] That is equal to minus 0.73 milliampere times 4.521.
+[06:52] That means the voltage gain is approximately equal to minus 3.3.
+[06:57] So this is the voltage gain of this amplifier.
+[07:01] Now once we know this voltage gain, then we can easily find the maximum allowable value
+[07:05] of the input signal.
+[07:07] So as you are aware, when the MOSFET is used as an amplifier, then it is used in the saturation
+[07:13] region and to operate the MOSFET in the saturation region, this VDS should be greater than or
+[07:19] equal to VGS minus VT.
+[07:23] So here, this VDS contains 2 component.
+[07:27] One is the DC component and second is the AC component.
+[07:32] So in this case, this AC component is the output voltage.
+[07:36] Similarly, this VGS also contains the 2 terms.
+[07:40] One is the DC biasing voltage VGS and second one is the input signal.
+[07:45] That means the condition will be VDS plus V0 should be greater than or equal to VGS plus
+[07:51] VI minus VT.
+[07:54] Now here, this output voltage V out is equal to minus AV times VL, where this negative sign
+[08:01] indicates that is a phase reversal at the output.
+[08:05] Now the worst case will occur when the VIN is positive and the V out is negative, because
+[08:11] from this expression when the VIN is positive, the V out will be negative.
+[08:16] So in the worst case, we can write this condition as VDS plus minus AV times VI max is greater
+[08:28] than or equal to VGS plus VI max minus VT.
+[08:36] And here, since the DC voltage VDS and the VGS are equal, so they will get cancel out.
+[08:42] That means from this, we can say that this VI max times 1 plus AV should be less than
+[08:52] or equal to VT.
+[08:55] That means VI max should be less than or equal to VT divided by AV plus 1.
+[09:04] That means VI max should be less than or equal to 1.5 divided by 3.3 plus 1, which is roughly
+[09:13] equal to 0.35.
+[09:16] That means the maximum allowable value of this input signal is equal to 0.35.
+[09:23] That means the peak value of the input signal should be less than or equal to 0.35 volt.
+[09:29] And then only the MOSFET will operate in the saturation region.
+[09:32] And in that case, we can use this MOSFET as an amplifier.
+[09:37] That means from this, we can say that for the given question, the answer is 0.35 volt.

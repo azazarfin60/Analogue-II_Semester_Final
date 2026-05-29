@@ -1,0 +1,188 @@
+Title: How to identify the Saturation in BJT? What is Hard Saturation? Transistor as a Switch Explained
+URL: https://www.youtube.com/watch?v=ILCnR83Gs_U
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All of Electronics.
+[00:16] So in this video, we will understand how to identify the saturation in the BJT and we
+[00:22] will also see what is hard saturation and how our transistor can be used as a switch.
+[00:29] Now in the previous videos of the BJT, we had seen that by biasing the BJT in the active
+[00:34] region, it is possible to use it as an amplifier.
+[00:38] But the BJT can also be used as a switch.
+[00:41] And whenever it is used as a switch, then it is operated in the cutoff and the saturation
+[00:46] region.
+[00:47] So, we will understand the working of the BJT as a switch using the fixed bias or the
+[00:52] base bias configuration.
+[00:55] Now as I said, when the BJT is used as a switch, then the operating point changes between
+[01:00] the cutoff and the saturation region.
+[01:03] So to identify the operation of the BJT in the cutoff region is relatively simple.
+[01:08] Because when this voltage BBB is 0 or it is less than the voltage BBB, then this base
+[01:14] current IB is equal to 0.
+[01:17] And we know that the current current IC can be given as beta times IB.
+[01:25] So if we neglect the reverse saturation current, then the collector current IC is approximately
+[01:30] equal to 0.
+[01:32] And due to that, there would not be any voltage drop across the transistor RC.
+[01:38] That means the voltage at this collector terminal is equal to VCC.
+[01:43] And if you see the operating point, then the operating point would be somewhere around
+[01:47] here.
+[01:48] So we can say that whenever the base current IB is equal to 0, then the collector current
+[01:53] IC is also approximately equal to 0 and the voltage VCE is equal to VCC.
+[02:01] That means the BJT is operating in the cutoff region.
+[02:05] So just by looking at the circuit, we can make out that the BJT is operating in the cutoff
+[02:10] region.
+[02:11] However, when the voltage BBB is non-zero, then what we cannot make out immediately is
+[02:17] whether the BJT is operating in the active or the saturation region.
+[02:21] So let us see how to identify the saturation in the BJT.
+[02:26] Now whenever the BJT operates in the saturation, then the voltage VCE is very low.
+[02:33] And typically it is in the range of 0.1 to 0.2 volts.
+[02:39] But here for the simplicity, we will assume that in saturation, the voltage VCE is equal
+[02:44] to 0 volts.
+[02:46] And at that time, this collector current IC will be maximum.
+[02:51] That means IC saturation is equal to voltage VCC divided by RC.
+[02:59] And this will be the maximum current that can flow through the collector terminal.
+[03:04] Now here, this base current IB can be given as voltage BBB minus BBB divided by RB.
+[03:15] And for a moment, if we assume that the transistor is operating in the active region, then
+[03:21] the collector current IC can be given as beta times IB.
+[03:27] So if this collector current IC is greater than this IC set, then we can say that the transistor
+[03:33] is operating in the saturation region.
+[03:36] Because this IC set is the maximum possible current which can flow through the transistor.
+[03:42] That means the collector current cannot go beyond that.
+[03:45] And that is what we call it as a saturation in the transistor.
+[03:49] That means even if we try to increase this base current, then the collector current
+[03:53] will remain same.
+[03:55] So now let us note down the steps for finding the saturation in the BJT.
+[04:00] So first, assume that the voltage VCE is equal to 0.
+[04:05] And then find the value of the IC set.
+[04:09] Similarly, also find the value of the base current.
+[04:13] And assuming the transistor is operating in the active region, the collector current IC
+[04:18] can be given as beta times IB.
+[04:22] And if the value of this collector current is greater than this IC set, then we can say
+[04:27] that the transistor is operating in the saturation.
+[04:31] So let us take one example so that it will get clear to you.
+[04:35] So for the given circuit, let us find out whether it is operating in the active region
+[04:40] or the saturation region.
+[04:42] So first of all, we will assume that in the saturation, the voltage VCE is equal to 0.
+[04:49] And for the given values of the VCC and the RC, the saturation current IC set is equal
+[04:55] to 20 volt divided by 10 kilo ohm.
+[05:00] That is equal to 2 milliampere.
+[05:03] Similarly, now let us also find out the base current.
+[05:07] So this base current IB is equal to 10 volt minus 0.7 volt that is the drop between this
+[05:15] base and the emitter terminal divided by 100 kilo ohm.
+[05:21] That is equal to 9.3 divided by 100 kilo ohm.
+[05:26] That means for the given circuit, the value of the base current IB is equal to 93 microampere.
+[05:33] Now for a moment, let us assume that the transistor is operating in the active region.
+[05:39] That means the current current IC can be given as beta times IB.
+[05:45] Or here, this current IC is equal to 50 times 93 microampere.
+[05:53] That is equal to 4.6 milliampere.
+[05:58] And if you see, the value of this current IC is greater than IC set.
+[06:03] Because here, the value of IC set is equal to 2 milliampere.
+[06:08] That means we can say that the transistor is operating in the saturation region.
+[06:13] So in this way, we can find out whether the transistor is operating in the saturation
+[06:17] region or the active region.
+[06:20] Now here if you notice, this saturation current IC set is equal to 2 milliampere.
+[06:27] While the value of the base current IB is equal to 93 microampere.
+[06:32] So we can say that here, the current gain beta in the saturation is equal to IC divided
+[06:38] by IB.
+[06:40] That is equal to 2 milliampere divided by 93 microampere.
+[06:45] And if we calculated, then the value of beta in the saturation is equal to 21.5.
+[06:52] And in fact, it is less than the value of the beta in the active region.
+[06:56] That means we can say that when the BJT operates in the saturation region, then the value
+[07:01] of the current gain will reduce.
+[07:04] That means the value of the beta in the saturation will be less than the value of the beta in the
+[07:08] active region.
+[07:10] Now let's say this circuit is designed to use in the saturation.
+[07:15] But if the value of the beta changes, then it is possible that the circuit may come out
+[07:20] of the saturation.
+[07:22] For example, if the transistor is replaced or if the circuit is operating at the lower
+[07:26] temperature, then the value of the beta will reduce.
+[07:30] And due to that, the circuit may come out of the saturation.
+[07:35] So when we want to operate the transistor in saturation in all conditions, then the value
+[07:40] of this base resistance RB should be selected in such a way that the value of the current
+[07:44] gain beta is very low.
+[07:47] And typically, it should be around 10.
+[07:50] So this is called the hard saturation.
+[07:53] So to operate the BJT in the hard saturation, the value of the beta should be very low.
+[07:59] And it will ensure that even if there is a change in the external parameters, still the
+[08:03] transistor operates in the saturation.
+[08:06] So now to operate this transistor in this hard saturation, let us calculate the value
+[08:11] of this base resistor.
+[08:14] Now here, for the given values of the VCC and the RC, the saturation current Ic set is
+[08:20] equal to 20 volt divided by 10 kilo ohm.
+[08:25] That is equal to 2 milliampere.
+[08:29] And to get the value of beta as 10, the value of this Ic set divided by beta, that means
+[08:36] the value of the base current IB should be equal to 2 milliampere divided by 10.
+[08:42] That is equal to 200 microampere.
+[08:47] That means this value of the base current will ensure that the transistor operates in the
+[08:51] hard saturation.
+[08:53] So now let us write down the expression of the base current.
+[08:57] So here the base current IB can be given as 10 volt minus 0.7 volt divided by RB.
+[09:06] Or we can say that RB is equal to 9.3 volt divided by IB.
+[09:14] And assuming the value of IB as 200 microampere, the value of the RB should be equal to 9.3
+[09:21] divided by 200 microampere.
+[09:25] That means the value of RB should be equal to 46.5 kilo ohm.
+[09:32] So for the given circuit, if the value of RB is set around this value, then we can ensure
+[09:37] that the transistor is operating in the hard saturation.
+[09:41] So in this way, by operating this transistor in the cutoff and the saturation region,
+[09:46] it can be used as a switch.
+[09:49] And for that, a square wave pulse which is varying between 0 and the 10 volt is applied
+[09:53] to this transistor.
+[09:56] So now let us find out how the transistor will act as a switch whenever it is operating
+[10:01] in the cutoff and the saturation region.
+[10:04] So whenever the input is 0 volt, then the transistor will operate in the cutoff region.
+[10:10] Because at that time, the value of the base current IB is equal to 0.
+[10:16] And hence, this current current IC is also approximately equal to 0 milliampere.
+[10:23] And as this IC is equal to 0, so there won't be any voltage drop across this 10 kiloohm
+[10:27] transistor.
+[10:29] And we can say that the voltage at this node is equal to 20 volt.
+[10:34] So during the cutoff region of operation, if we see the value of resistor between this
+[10:37] collector and the emitter terminal, then it is equal to voltage VCE divided by IC.
+[10:46] Or in this case, it will be equal to 20 volt divided by 0 milliampere.
+[10:52] That is equal to infinite.
+[10:54] So ideally, when the transistor is operating in the cutoff region, then the value of this
+[10:59] resistor will be equal to infinite.
+[11:01] Or we can say that it will act as an open circuit.
+[11:06] But actually, due to the reverse saturation current, the value of this resistor R will
+[11:10] be very high.
+[11:12] So let's say the value of this reverse saturation current is equal to 5 microampere.
+[11:18] And due to that, the value of this resistor R will be equal to 20 volt divided by 5 micro
+[11:24] ampere.
+[11:25] That is equal to 4 mega ohm.
+[11:28] That means during the cutoff region of operation, the resistance offered by the transistor will
+[11:33] be very high.
+[11:34] Or we can say that the transistor will act as an open circuit.
+[11:39] Similarly, in the same circuit, when the input voltage is 10 volt, then the transistor
+[11:44] will operate in the saturation region.
+[11:47] Because at that time, if you see the base current I b, then it is equal to 10 volt minus
+[11:53] 0.7 volt divided by 50 kilo ohm.
+[11:57] That is equal to 186 microampere.
+[12:01] And assuming the transistor is operating in the active region, the value of the current
+[12:05] I c is equal to beta times I b.
+[12:09] That is equal to 50 times 186 microampere.
+[12:15] That means the value of this current I c is equal to 9.3 milliampere.
+[12:22] And here, the value of the I c set is equal to 20 volt divided by 10 kilo ohm.
+[12:29] That is equal to 2 milliampere.
+[12:33] So as this current current I c is greater than this I c set, so you can say that the transistor
+[12:39] operates in the saturation.
+[12:42] And during the saturation region of operation, we can assume that the voltage V c is approximately
+[12:47] equal to 0 volt.
+[12:50] So during the saturation region of operation, the value of the resistance between this
+[12:54] character and the emitter terminal is equal to voltage V c divided by I c.
+[13:01] That is equal to 0 divided by 2 milliampere.
+[13:05] That means during the saturation region of operation, the transistor will act as a short
+[13:09] circuit.
+[13:11] But actually in the saturation, the value of the voltage V c is typically in the range
+[13:16] of 0.1 to 0.2 volt.
+[13:19] So let's say the V c set is equal to 0.2 volt.
+[13:25] And with that value, if you calculate the value of resistance R, then it is equal to 0.2
+[13:31] divided by 2 milliampere.
+[13:33] That is equal to 1 nadoom.
+[13:36] That means during the saturation region of operation, the resistance offered by the
+[13:40] transistor is very small.
+[13:43] And for all practical purposes, we can assume it to be a 0.
+[13:48] So in this way, by operating the transistor in the cutoff and the saturation region,
+[13:52] it can be used as a switch.
+[13:55] So I hope in this video, you understood how to identify the saturation in the BJT and
+[14:00] how the BJT can be used as a switch.
+[14:03] So if you have any questions or suggestions, then do let me know here in the comment section
+[14:07] below.
+[14:08] And like this video, hit the like button and subscribe to the channel for more such
+[14:12] videos.

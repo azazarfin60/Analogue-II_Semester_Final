@@ -1,0 +1,47 @@
+Title: Quiz # 170 (Analog Electronics - Op-amp)
+URL: https://www.youtube.com/watch?v=M6_NnkyvX6Y
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:04] So in this question, we have been asked to find the input impedance of the given circuit.
+[00:09] And here we have been given that the op-em is an ideal op-em.
+[00:15] Now for any given circuit, if VIN is the input voltage, then the input voltage divided
+[00:20] by the input current gives the input impedance of the given circuit.
+[00:24] So if we want to find the input impedance of the given circuit, then first of all, we need
+[00:29] to find this input current.
+[00:31] And the input impedance of the given circuit can be given as input voltage divided by the
+[00:37] input current.
+[00:39] So let's say here VIN is the input voltage and the current which is supplied by this input
+[00:45] voltage is equal to IIN.
+[00:49] Now if you look over here, this input current will get divided into the two branches.
+[00:54] So let's say the current in this branch is equal to IIN and the current in this branch
+[01:01] is equal to I2.
+[01:04] And here as the op-em is an ideal op-em, so no current will flow into the op-em terminal.
+[01:09] That means the same current I2 will also flow through this 3-aradistor.
+[01:15] So now let's apply the KCL at this node and let's find the value of this I1 and I2.
+[01:22] So this current I1 can be given as VIN minus VOUT divided by 2R.
+[01:30] Because here the voltage is equal to VIN and at this node the voltage is equal to VOUT.
+[01:36] Similarly, this current I2 can be given as VIN minus VOUT divided by R plus 3R.
+[01:48] That is equal to VIN minus VOUT divided by 4R.
+[01:54] That means the total current IIN will be equal to I1 plus I2.
+[02:01] That is equal to VIN minus VOUT divided by 2R plus VIN minus VOUT divided by 4R.
+[02:12] So here to simplify this expression, we need to find the relation between the output
+[02:16] and the input voltage.
+[02:19] Now if you look over here, the op-em is configured in the negative feedback configuration.
+[02:25] And you do that, we can apply the concept of virtual ground.
+[02:28] So if you look over here, the non-inverting terminal of the op-em is grounded.
+[02:33] So we can also say that this inverting terminal will be also at the ground potential.
+[02:38] That means the voltage at this node will be equal to 0V.
+[02:43] And we know that the current which is flowing through this 2 resistor is equal to I2.
+[02:49] So we can say that I2 is equal to VIN minus 0 divided by R. That is equal to 0V minus
+[02:59] VOUT divided by 3R.
+[03:03] That means VOUT is equal to minus 3 times VIN.
+[03:09] So let's put this value into this expression.
+[03:13] So from this we can say that the input current is equal to VIN minus 3 times VIN divided
+[03:21] by 2R plus VIN minus 3 times VIN divided by 4R.
+[03:31] That means the input current is equal to 4VIN divided by 2R plus 4VIN divided by 4R.
+[03:41] That means the input current is equal to 3 times VIN divided by R.
+[03:48] And from this we can say that the input impedance which is equal to VIN divided by IIN is equal
+[03:56] to R divided by 3.
+[04:00] So this will be the value of the input impedance.
+[04:03] So we can say that for the given equation is the correct answer.

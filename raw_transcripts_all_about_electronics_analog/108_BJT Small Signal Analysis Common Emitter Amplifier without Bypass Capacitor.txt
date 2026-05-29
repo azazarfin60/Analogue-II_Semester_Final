@@ -1,0 +1,195 @@
+Title: BJT Small Signal Analysis: Common Emitter Amplifier without Bypass Capacitor
+URL: https://www.youtube.com/watch?v=kCNwU-OGK-U
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will continue our discussion on the small signal analysis of the BJT.
+[00:23] So in the previous video, we have seen the general steps for the small signal analysis of the BJT circuit.
+[00:29] And then we did the small signal analysis of the common emitter fixed wires and the voltage
+[00:35] divider bias circuits.
+[00:37] Now so far during the small signal analysis, either there was no emitter resistor in the BJT circuit
+[00:43] or it acted as a short circuit during the AC analysis.
+[00:48] For example in the fixed bias circuit, there wasn't any emitter resistor, while in the voltage
+[00:53] divider biasing circuit, there was a bypass capacitor in parallel with the emitter resistor.
+[00:59] So because of this bypass capacitor during the AC analysis, this emitter resistor acted
+[01:04] as a short circuit.
+[01:06] But if there is no bypass capacitor in the circuit, then the AC analysis as well as the expression
+[01:12] of the voltage gain and the input impedance will change quite a bit.
+[01:16] So when this bypass capacitor is not used, then let us see the effect of this emitter
+[01:21] resistor on the small signal analysis.
+[01:24] And first of all, let us do the small signal analysis of the fixed bias circuit which is
+[01:28] used with the emitter resistor.
+[01:32] Now for the small signal analysis, we will follow the same steps.
+[01:35] That means we will consider all the DC sources in the circuit as zero, while we will replace
+[01:40] the coupling capacitor by the short circuit.
+[01:44] And then after, we will replace the BJT by the small signal model.
+[01:49] Now here if you see, then this emitter resistor is connected between the emitter and the
+[01:53] ground terminal.
+[01:56] So in the AC equivalent circuit, it can be represented like this.
+[02:02] Also if you see over here, then this base resistor is connected between the base and the ground
+[02:06] terminal.
+[02:07] While this collector resistor is connected between the collector and the ground terminal.
+[02:13] And this input signal is applied between the base and the ground terminal.
+[02:18] So this is the AC equivalent circuit.
+[02:20] And using this circuit, let us find out the voltage gain, the input impedance and the output
+[02:25] impedance of the given circuit.
+[02:28] And first of all, let us find out the voltage gain.
+[02:32] So let us say, the current which is flowing through this resistor RC is equal to I0.
+[02:38] So if we apply the KCL at this node, then we can say that this collector current IC is
+[02:44] equal to I0.
+[02:46] So here, this collector current IC is equal to GM times V pi.
+[02:52] While this output current can be given as minus V0 divided by RC, where V0 is the output
+[02:58] voltage.
+[03:00] So from this, we can say that this output voltage is equal to minus GM times V pi times RC.
+[03:09] So here, we need to find the expression of the voltage V pi in terms of the input voltage.
+[03:15] So here, if you see, the voltage between these two nodes is equal to V in.
+[03:22] So if we apply the KCL equation in this loop, then we can say that this input voltage
+[03:27] V in is equal to V pi plus V e, where V is the voltage across this resistor, R e.
+[03:36] Now here, the current which is entering this base terminal is equal to I b.
+[03:41] While the current which is flowing through this resistor, R e is equal to I.
+[03:45] And of course, this current is equal to IC.
+[03:50] So from this, we can say that this input voltage V in is equal to V pi plus I e times R e.
+[03:59] That is equal to V pi plus I b plus IC times R e.
+[04:07] Now here, this base current is flowing through the resistor R pi.
+[04:11] So we can say that this voltage V pi is equal to I b times R pi.
+[04:18] Or we can say that this current I b is equal to V pi divided by R pi.
+[04:25] And this current current IC is equal to GM times V pi.
+[04:30] So from this, we can say that this input voltage V in is equal to V pi plus V pi divided
+[04:39] by R pi plus GM times V pi times R e.
+[04:47] That means V in is equal to V pi times 1 plus 1 divided by R pi plus GM times R e.
+[05:01] Now here, the R pi can be given as beta divided by GM.
+[05:08] That means 1 divided by R pi is equal to GM divided by beta.
+[05:14] And definitely it will be less than GM because the value of beta is usually very high.
+[05:20] So from this, we can say that this 1 divided by R pi is much less than GM.
+[05:27] That means we can neglect this term.
+[05:30] So from this, we can say that this input voltage V in is equal to V pi times 1 plus GM times
+[05:40] R e. Or we can say that this voltage V pi is equal to V in divided by 1 plus GM times
+[05:50] R e. So now let us put the value of V pi into this expression.
+[05:57] That means V out is equal to minus GM times V pi times R c. Or we can say that it is
+[06:05] equal to minus GM times R c times V in divided by 1 plus GM times R e. That means the
+[06:17] voltage gain V out divided by V in is equal to minus GM times R c divided by 1 plus GM times
+[06:27] R e. So in this way, we got the expression of the voltage gain for the given circuit.
+[06:35] Now here, this negative sign indicates that there is a phase difference of 180 degree
+[06:40] between the input and the output signal. But more importantly, if you see, due to this
+[06:45] emitter resistor, now the gain is reduced by the factor of 1 plus GM times R e. Because
+[06:52] if you consider the fixed bias case, then for that the voltage gain was minus GM times
+[06:57] R c. That means now the gain is reduced by the factor of 1 plus GM times R e.
+[07:05] So similarly, now let us find the expression of the input impedance. Now the input impedance
+[07:11] is the equivalent impedance of the circuit which is seen through the input side. And to
+[07:17] find that, first of all, let us find the equivalent impedance of the circuit which is seen
+[07:21] just before the resistor R b. Let us say this impedance is equal to Z b. Now here, the
+[07:30] voltage at this node is equal to V b. And as you can see, this V b is equal to input
+[07:36] voltage, right? While the current which is flowing through this terminal is equal to
+[07:41] I b. And as we have seen, this current is equal to I c while the current which is flowing
+[07:49] through the resistor R e is equal to I e. So if we apply the KVL in this particular
+[07:56] node, then we can say that the base voltage V b is equal to V pi plus V e. That is equal
+[08:05] to I b times R pi plus I e times R e. Now we know that this emitter current I e can be
+[08:14] given as I b plus I c. That is equal to beta plus 1 times I b. So from this, we can say
+[08:24] that this base voltage is equal to I b times R pi plus I b times beta plus 1 times R e.
+[08:36] That means V b divided by I b is equal to R pi plus beta plus 1 times R e. And the
+[08:46] ratio of this V b divided by I b is equal to Z b. That means Z b is equal to R pi plus
+[08:56] beta plus 1 times R e. So in this way, we got the expression of the Z b. Now usually the value
+[09:06] of beta is very high. So approximately we can say that this beta plus 1 is equal to beta.
+[09:13] That means Z b is equal to R pi plus beta times R e. Now we know that this R pi can be given as
+[09:25] beta divided by G m. That means beta is equal to R pi times G m. So from this, we can say that
+[09:37] this Z b is equal to R pi plus G m times R pi times R e. That means Z b is equal to R pi times
+[09:50] 1 plus G m times R e. So this is the equivalent impedance which is seen through just before
+[09:59] this resistor R b. So now if we see the equivalent circuit, then it will look like this
+[10:07] that means now the equivalent impedance which is seen through the input side is the parallel
+[10:12] combination of this R b and the Z b. That means Z in is equal to R b parallel Z b
+[10:23] where Z b is equal to R pi times 1 plus G m times R e. Now if this base resistor R b is much
+[10:34] greater than Z b, in that case we can say that the input impedance is approximately equal to Z b.
+[10:42] So this is the expression of the input impedance and as we can see because of this
+[10:47] emitter resistor, now the input impedance will increase. So similarly now let us find out the
+[10:53] output impedance. So the output impedance is the thavinance equivalent impedance which is seen
+[10:59] through the output side and for that we will consider all the independent sources in the circuit as
+[11:05] 0. That means while finding this output impedance, we will consider the input voltage sources as 0.
+[11:13] That means this voltage V in will act as a short circuit and due to that this resistor R b will
+[11:20] also get short circuited and once the input voltage is 0, then this voltage V pi will also become
+[11:28] 0. So let us see how it is. So if we apply a cable equation in this loop, then we can say that
+[11:35] voltage V pi plus voltage V is equal to 0 where V is the voltage across the resistor R e.
+[11:44] That is equal to V pi plus I e times R e that is equal to 0 or we can say that it is equal to
+[11:54] V pi plus I b plus I c times R e that is equal to 0. Now we know that this I b is equal to
+[12:05] V pi divided by R pi while this I c is equal to g m times V pi. So from this we can say that
+[12:14] it is equal to V pi plus V pi divided by R pi plus g m times V pi times R e is equal to 0.
+[12:28] And from this we can say that this voltage V pi is equal to 0. So once this voltage V pi is 0,
+[12:36] then this current source will also become 0 or we can say that it will act as an open circuit.
+[12:43] So now if we see the Thavinance Equipment Resistance which is seen through the output side,
+[12:47] then it is equal to R c or you can say that the output impedance is equal to R c.
+[12:57] So in this way we got the expressions of the input and the output impedance as well as the voltage
+[13:02] gain for this fixed bias configuration which is used with the emitter resistor.
+[13:07] And similarly we can find the expressions of this voltage divided by a circuit when the emitter
+[13:13] resistor is not bypassed with the bypass capacitor. So now to find the H c equivalent circuit,
+[13:20] we will follow the same procedure. That means we will consider all the DC sources in the circuit as 0
+[13:26] while we will replace the coupling capacitors by the short circuit. And after that we will
+[13:32] replace the BJT by the small single model. So if we rearrange this circuit, then it will look like
+[13:39] this. That means here this emitter resistor is connected between the emitter and the ground terminal
+[13:45] while the resistor R1 and R2 are connected between the base and the ground terminal.
+[13:51] Similarly the input voltage also is connected between the base and the ground terminal.
+[13:56] While on the output side this resistor R c is connected between the connector and the ground
+[14:01] terminal. So here the expression of the output impedance and the voltage gain will remain same as
+[14:08] the previous case. That means here the output impedance is equal to R c while the voltage gain
+[14:15] is equal to minus gm times R c divided by 1 plus gm times R e. But now the expression of the input
+[14:24] impedance will slightly get modified. So now the input impedance is the parallel combination of
+[14:31] R1, R2 and the Zb. Where Zb can be given as R pi times 1 plus gm times R e.
+[14:40] Alright so from these expressions we can say that without the bypass capacitor the voltage
+[14:46] gain will reduce while the input impedance will increase. And for the better understanding let us
+[14:52] take one example. So in this example we have been asked to find the voltage gain the input and
+[14:59] the output impedance for the two cases. In the first case when there is a bypass capacitor of
+[15:05] 10 microfaraday and in the second case when there is a no bypass capacitor. So in both cases
+[15:12] we will be required to find the value of the transconductance. And for that first of all let us
+[15:17] find the value of the DC collector current. So to find the value of the DC collector current
+[15:23] or for the DC analysis let us consider all the AC sources in the circuit as 0 and let us consider
+[15:29] all the coupling and the bypass capacitors as a open circuit. So if you see the equivalent circuit
+[15:36] then it will look like this. So now to find the DC collector current let us apply the cable
+[15:43] equation on the input side. So applying the cable equation we can write 20 volt minus i b times
+[15:53] 470 kilo ohm minus VBE minus VE that is equal to 0. Now here let us assume that the value of
+[16:04] voltage VBE is equal to 0.7 that means 20 minus 0.7 is equal to i b times 470 kilo ohm
+[16:15] plus i e times r e. Now we know that this emitter current can be given as beta plus 1 times i b
+[16:28] that means 20 minus 0.7 is equal to i b times 470 kilo ohm plus beta plus 1 times i b times
+[16:42] 0.56 kilo ohm that means i b is equal to 20 minus 0.7 divided by 470 kilo ohm plus beta plus
+[16:56] 1 times 0.56 kilo ohm. Now here the value of beta is equal to 120 and if you put the value of
+[17:07] beta in this expression then the value of the base current i b will come out as 35.89 micro
+[17:16] ampere or we can say that it is equal to 35.9 micro ampere. So from this we can say that the
+[17:25] collector current i c is equal to beta times i b that is equal to 120 times 35.9 micro ampere
+[17:35] that means the collector current i c is equal to 4.3 milli ampere. So the transconductors
+[17:44] gm can be given as gm is equal to i c divided by VT that is equal to 4.3 milli ampere divided
+[17:54] by 26 milli volt that is equal to 0.165 c mence. So in this way we got the value of the transconductance
+[18:05] alright. So now let us do the DC analysis of the circuit when there is a MyPas capacitor.
+[18:11] So in that case if we see the equivalent circuit then it will look like this.
+[18:16] So previously we have already seen that how to get this equivalent circuit right.
+[18:21] So in this AC equivalent circuit the input impedance can be given as 470 kilo ohm in parallel with
+[18:29] R pi. Now here this R pi is equal to beta d divided by gm that is equal to 120 divided by
+[18:40] 0.165 and if you calculate it then this R pi will come out as 720 7 ohm that means the
+[18:48] input impedance is equal to parallel combination of 470 and the 720 7 ohm that is equal to 720 5 ohm
+[19:01] that means the input impedance of this circuit is equal to 720 5 ohm while the output impedance Z0
+[19:07] is equal to R c that means in this case it is equal to 2.2 kilo ohm and if we see the voltage gain
+[19:16] then the voltage gain can be given as minus gm times R c that is equal to minus 0.165 times 2.2 kilo ohm
+[19:29] that is equal to minus 363. So as you can see with this MyPas capacitor the voltage gain is high
+[19:38] while the input impedance is low. So similarly now let us find out these three parameters when there
+[19:44] is a No MyPas capacitor. So without this MyPas capacitor if you see the AC equivalent circuit
+[19:51] then it will look like this and for this circuit first of all let us find the input impedance.
+[19:59] So as we have seen the input impedance can be given as R b parallel Z b. So here this R b is equal
+[20:07] to 470 kilo ohm while the Z b can be given as R pi times 1 plus gm times R e.
+[20:18] Now we already know the value of the R pi that is equal to 720 7 ohm right.
+[20:25] So from this we can say that the Z b is equal to 720 7 times 1 plus 0.165 times 560 ohm
+[20:36] and if you calculate the value then this Z b will come out as 67.9 kilo ohm.
+[20:43] That means the input impedance Z in is equal to 470 kilo ohm in parallel with 67.9 kilo ohm
+[20:53] that is equal to 59.3 kilo ohm. So as you can see without this MyPas capacitor there is a
+[21:03] significant increase in the input impedance. Now in this case the output impedance will remain
+[21:09] the same that means the output impedance is equal to RC that is equal to 2.2 kilo ohm.
+[21:18] But now let us find out what will be the voltage gain. So the voltage gain can be given as
+[21:24] minus GM RC divided by 1 plus gm times R e that is equal to minus 0.165 times 2.2 kilo ohm
+[21:40] divided by 1 plus 0.165 times 0.56 kilo ohm and if you calculate the value then this voltage
+[21:51] will come out as minus 3.88. So as you can see there is a significant reduction in the voltage gain.
+[22:01] So when this MyPas capacitor is not used then there will be a significant reduction in the
+[22:06] voltage gain. Now from the AC point of view this circuit with the MyPas capacitor
+[22:13] and this second circuit without the emitter resistor will provide the same gain.
+[22:18] But with the DC analysis perspective this emitter resistor provides the metrobasing stability
+[22:24] and in fact we have already seen this during the DC biasing of the transistor.
+[22:29] So by using this MyPas capacitor along with this emitter resistor not only we can improve the
+[22:34] DC biasing stability but we can also improve the voltage gain of the amplifier.
+[22:40] So I hope in this video you understood the effect of the MyPas capacitor on the amplifier circuit
+[22:45] that means with and without MyPas capacitor how the performance of the amplifier circuit will
+[22:50] change. So if you have any question or suggestion do let me know here in the comment section below.
+[22:56] If you like this video hit the like button and subscribe to the channel for more such videos.

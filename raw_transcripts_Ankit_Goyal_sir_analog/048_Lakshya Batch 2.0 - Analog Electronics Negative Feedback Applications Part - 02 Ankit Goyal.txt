@@ -1,0 +1,556 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Negative Feedback Applications Part - 02 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=KRwDIwmbkv4
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you, so we are live in Lakshabhach 2.2
+[00:13] analog electronics, so today we got a little late, we were just in a meeting, now I am
+[00:18] free from the meeting and I am starting this class, okay, so a little delay in the meeting
+[00:24] because of this, your class also got a little lag, but don't worry, there is no problem, we are
+[00:30] going to start the part 2 of negative feedback applications, yesterday we saw part 1, in which
+[00:37] I told you inverting amplifier, trans resistance amplifier, okay, apart from this, I made inverting summer
+[00:44] non-inverting amplifier, non-inverting summer, averaging amplifier, differential amplifier,
+[00:53] so we saw all these things yesterday, today I am going to show you some more linear applications,
+[01:00] so today your linear application part will be completed, after which we will discuss the assignment
+[01:05] tomorrow and I will show you non-linear applications in a day, i.e. such circuits where you will see
+[01:14] diode with opamp, you will see BJT with opamp, there are some such circuits which
+[01:22] will come ahead of your previous chapter concepts and will revisit them, okay, so we will see such
+[01:29] concepts, so quickly, once you will like it, you will mark your attendance, and after that we are going to
+[01:36] start this session, don't try to mark attendance, all the people who watch the video, it is necessary to like
+[01:42] everyone, and look, there is an initiative for you, what am I going to do today, today I am with you,
+[01:50] I think it has hanged, just give me a minute, I was thinking why the time is not updating,
+[01:59] just a minute, children.
+[04:50] Yes, the sound is coming, so this laptop was hanging a little, our computer,
+[05:08] okay, now okay, yes,
+[05:13] so what are we going to do today, we are going to see some other linear applications, so you will
+[05:21] enjoy watching today's application, and remember all the basic fundamentals that we made yesterday,
+[05:29] look at the input resistance calculation, there is nothing, and the question is not that there are
+[05:35] too many present or too many numbers, only V by I is required, where your voltage source is
+[05:42] required, you just take it out, how much current is going through KVL, okay, you put KVL with voltage,
+[05:50] so whatever the ratio of V by I will be, like BJT, MOSFET, JFET, what do you do everywhere,
+[05:57] input resistance was taking out everywhere, so whatever the current ratio will be, that will be the input
+[06:02] resistance, what you have to do is that where the source is applied, the current coming out of the source
+[06:08] is KVL, so what we will do is that today, look at all the questions, I will tell you the input
+[06:15] resistance in every question, okay, this is the concept of input resistance, so you can do it in every
+[06:21] question, in every question, wherever the source is applied, the current coming out of the source, so voltage
+[06:27] by current is the input resistance, it is a very easy thing, okay, today I was telling you that I
+[06:34] have planned an event for the next day, I will be coming live at 9 o'clock in the night, son, you will get the link of it in the
+[06:41] description of this video, okay, I told you about this yesterday also, so in this you can ask me your
+[06:47] queries, you can discuss with me whatever issues are going on in your preparation, look when you do
+[06:54] AMA on YouTube, you have to write it in chat, yes, you will be able to talk to me, so just like a video
+[06:59] , you will be able to connect with me, we will interact there via audio via video and you will get a good
+[07:06] motivation, a good platform, a good one, you will get this last three months, so this is going to be a
+[07:14] very crucial session for you, register for it, because its link will only be given to registered users,
+[07:20] I have shared it multiple times on telegram, so you can go and register on its link on telegram,
+[07:27] let's start today's session, son, but before that, let me tell you one more thing, this Sunday
+[07:33] there will be a combat, there will be 30 questions in 60 minutes, and this time we are making it especially for
+[07:38] maths and aptitude, so understand this, son, if you are going to give a gate exam in 23, then it is going to help you in 28
+[07:46] marks, so do not miss this combat at all, it is going to be very crucial to get 28 numbers,
+[07:54] for engineering, mathematics and general aptitude, okay, so let's start today's discussion,
+[08:02] we will start with instrumentation amplifier, instrumentation amplifier is an enhanced version of
+[08:09] whose differential amplifier, this is an enhanced version of differential amplifier, what we have
+[08:16] done is that before the differential amplifier, we have put an input buffer, what we have put is an input buffer,
+[08:24] if you put an input buffer, see there are two things, one is that it can be matched with the last stage,
+[08:31] match means here is the impedance matching, the second benefit is that the input buffer is there,
+[08:38] because the current here will be zero, so here no current will be drawn from the source,
+[08:46] correct, so if I ask you, what will be the input impedance here, that will be infinity because
+[08:54] voltage by current will be infinite, so what is the benefit here by use of input buffer
+[09:01] by use of input buffer
+[09:12] I in, I in is zero, therefore no loading effect on previous stage, there will be no loading effect
+[09:28] will not be, okay, this is clear, just a minute, we will remove this spammer,
+[09:47] what are these people, let's go to the last stage, no one will be your loading effect,
+[09:55] you can say here that input resistance tends to infinity,
+[10:03] now you will analyze this amplifier, you will analyze this amplifier,
+[10:12] tell me, here first remove vx and vy, first what do you do vx and vy, do it
+[10:26] so what will be the vy, v2 into 1 plus r3 by r, a non-inverting amplifier and vx that is v1
+[10:44] 1 plus r3 by r, okay, this will be v2 1 plus r3 by r and v1 1 plus r3 by r, now this vy
+[10:59] for this, this next stage will work as an inverting amplifier, correct, for vy this next
+[11:08] amplifier will work as an inverting amplifier and vx will work as a non-inverting amplifier,
+[11:16] but first you have to apply voltage division in vx, so I say that if you want to remove v positive here,
+[11:26] so that is vx into r2 by r1 plus r2 and if you have to remove v0,
+[11:40] okay, v plus 1 plus r2 by r1
+[11:54] and here vy
+[11:56] r2 by r1, so vx r2 by r1 plus r2 and then here lcm
+[12:18] see this is made
+[12:28] so see here r2 by r1 gain came so r2 by r1 vx minus vy
+[12:37] okay and vx minus vy if you write v1 and v2 terms, then the gain in them is 1 plus r3 by r
+[12:51] v1 minus v2 okay v1 minus v2 this is clear, tell me sir input resistance is infinite
+[13:03] for both opamp or across top and bottom terminal, beta input resistance is not for opamp, input
+[13:10] resistance is defined on the input terminal, so you will say there are two input terminals of the whole
+[13:15] circuit and if you see the input resistance from both, that will be infinity, okay, input resistance
+[13:23] will always be measured at the input terminal, so there are two inputs, so there will be two input
+[13:28] resistance, one from v1 and one from v2, so your resistance will be infinite on both the terminals,
+[13:35] is this clear, say derivation, is this clear or not, tell me quickly, come on everyone, is this clear
+[13:46] come on now see the advantages of instrumentation amplifiers, here the offset voltage is less,
+[13:58] I told you the offset voltage after the input, your linear relation is valid or the input needed
+[14:05] to make the output zero that is the offset voltage, its high CMRR is common mode rejection ratio,
+[14:12] high gain, you have seen the gain, R2 by R1 into 1 plus R3 by R, it is a very high gain,
+[14:24] high input resistance is tending to infinity, okay, so these are all advantages, do you know the drawback
+[14:32] that if there is a noise signal, you know the noise signal on both the inputs, you know
+[14:40] the noise signal is common on both the inputs, correct, if any noise input comes here,
+[14:47] any common mode input comes, then what will happen, so my child, that will also be amplified by 1 plus
+[14:54] R3 by R, that will also be amplified by 1 plus R3 by R, so here we have written that the common mode
+[15:03] input is also amplified, so in the final output, whatever common mode signal comes, it will come more
+[15:11] because it gets amplified by a factor of 1 plus R3 by R, this is understood, even though its CMRR is high,
+[15:20] even though it rejects the common mode more than much, but if the common mode is of 1 millivolt,
+[15:26] and this gain is of 10, then it will become 10 millivolt in the output, pay attention to this,
+[15:32] it will become 10 millivolt in the output, we never want to increase the common mode signal,
+[15:39] or your common mode signal is amplified, for this, we modify the circuit a little, okay, how do we modify it,
+[15:48] let's see now, architect G is saying that we will see input resistance on non-inverting, architect G is nothing like that,
+[15:55] input resistance is seen there, where the input is seen, I have told one thing or two or three times in the beginning of this session,
+[16:02] what is the only thing to do for input resistance, the source that is applied, its voltage upon the current of the source, the current of the source,
+[16:11] Deepankar, the meaning of the input buffer here is that even though we have applied an amplifier,
+[16:16] but the work of that amplifier is to isolate the input and circuit, here the input is not directly connected to the circuit,
+[16:25] the input is not directly connected to the circuit, in fact, how is the input connected through this amplifier,
+[16:33] through this amplifier, okay,
+[16:36] aadhesh ji is saying, sir, revise it, it is late, so child, whose fault is this, tell me,
+[16:42] it is your fault, and all the children are waiting for this because the aadhesh is late, so we will read it again, because the aadhesh is late, tell me,
+[16:50] child, this is a video lecture, you watch the video, whatever is missing, and the aadhesh, the second thing I have never said,
+[16:58] of any circuit, you have to remember the output of any circuit, what did I tell you, learn the way,
+[17:04] and Deepankar, my brother, what is this padu written, what is there for, read it quickly,
+[17:11] the thing you have taken out so much, think so much, what was written after there for,
+[17:20] then sometimes you keep asking the doubts of force,
+[17:30] now see what the modifications do, this time I removed the middle ground,
+[17:37] see in this circuit, this was a ground between R and R, so you were running these two amplifiers independently,
+[17:45] if I remove this ground, these two amplifiers did not remain independent, then these two amplifiers became dependent,
+[17:52] then these two amplifiers became dependent, now see what we do, see, here from virtual ground,
+[18:01] the V2 goes from virtual shot, here the V1 goes from virtual shot, correct,
+[18:09] now here I say, if I want to take out I current, see how I is going,
+[18:17] I is going here, going here, going here, then going here, because here the current is zero,
+[18:26] and here also the current is zero, okay, so I will flow like this, if I ask for the value of V1, V2 in terms,
+[18:36] then you will say I is V1-V2 by 2R, okay, I is V1-V2 by 2R, if V1-V2 by 2R is there,
+[18:50] then when I put KVA in VX and VY, when I put KVA in VX and VY, then I will write VX-I R3-I into 2R,
+[19:07] minus I into R3 is VY, so what will be VX-VY,
+[19:19] this will be 2I R3 plus R,
+[19:28] so V1-V2 by R2 will be cut,
+[19:37] that is V1-V2, so you see, this time you cannot amplify V1-V2 individually,
+[19:46] your V1-V2 will go in subtraction, and here the common mode signal will be cancelled,
+[19:56] here the common mode signal will be cancelled,
+[20:00] do you understand, VX and VY cannot be removed separately, how much is your VX and how much is VY,
+[20:07] so we have just made a small modification that both the amplifiers will not independently operate,
+[20:16] here we can remove VX-VY only, okay, VX-VY can be removed only,
+[20:23] this is clear, Aayush, if you go and check, in the Unacademy test series there is no maths test,
+[20:31] who is talking about Unacademy, did you buy the light or did you buy the plus, tell Aayush,
+[20:36] because the plus kids, yesterday I had put that in the test series, where will we get the test,
+[20:40] which days are coming, and the same thing is with the light, if you do not see the maths apt test in the light,
+[20:45] they will come very soon, I am uploading the maths and apt test, okay, come on,
+[20:52] this is clear, how did we cancel the common mode signal, tell me,
+[20:57] it is clear, confirm it quickly, is the instrumentation amplifier clear or not,
+[21:04] then I will also tell you its application, why did the differential amplifier go to the instrumentation,
+[21:11] and why did the instrumentation word get applied, it is clear, come on,
+[21:16] so its application is, it can convert a physical signal into a proportionate amplified output voltage,
+[21:25] what does this mean, that a physical signal, a physical signal like temperature, pressure,
+[21:32] movement, any physical signal can convert it into a voltage, which voltage will be proportional to this
+[21:39] physical signal, okay, it will be proportional to the physical signal, Sai is saying sir, how will we
+[21:47] get V0, son, V0 will come from here, this one is coming, Sai, V0 is R2 by R1, Vx minus Vy,
+[21:58] so you will put the value of Vx minus Vy here, okay, so what will be your V0, R2 by R1,
+[22:10] Vx minus Vy, the output is the same, but what happened here is that the common mode signal has
+[22:19] gotten cancelled out, that's it, there is so much change, okay, come on,
+[22:32] yes, so what were we telling that any physical signal, temperature, pressure, movement,
+[22:37] it will convert this amplifier into an output voltage and that output voltage will actually be
+[22:45] proportional, will actually be proportional to the input voltage or to the input signal,
+[22:53] that's why the instrumentation said, just like a transducer, it is working like a transducer,
+[22:59] it is converting your non-electrical signal into an electrical signal, as you saw yesterday,
+[23:06] it is a trans-resistance amplifier, so you people said that sir, it is converting the light to the voltage,
+[23:12] so it is working like a transducer, in the same way, son, instrumentation amplifier,
+[23:17] it helps in your instrumentation or transducer, now see how, okay, here we made a bridge,
+[23:24] this is a bridge, here are four resistances, R A, R B, R C and R D, now notice one thing here,
+[23:32] children, what is this, A1 and A2, these are voltage followers, correct, A1 and A2 are voltage
+[23:42] followers and no current will go here, that is, these voltage followers, they are not, they are not
+[23:54] loading the bridge, they are not working like a load on the bridge, they are not drawing any current from the bridge,
+[24:03] if this happens, then who will be in the series of these two, who will be in the series of these two,
+[24:11] okay, they will come in series, they will come in series, okay, now what does this R A, R B, R C, R D
+[24:20] represents, see this R D is a variable resistance, which will change due to a physical parameter,
+[24:27] maybe this can happen, as if you changed the temperature, then the R D changed due to the temperature,
+[24:33] which is called RTD, that is resistance temperature detector, so what is this, where the resistance
+[24:41] changes due to the temperature, so I am saying here, suppose the temperature changes,
+[24:46] due to which this resistance temperature was sensitive, you know that it changes with the resistance
+[24:50] temperature, so how much has the delta R changed in this resistance, now if I tell you that I want
+[24:58] V A and V B, then what will you do, you will put the voltage division, right, you will put V A in R A and R D to
+[25:04] V B, first you assume R A equal to R B equal to R C equal to R, so initially what will happen
+[25:22] is, when temperature does not change, when temperature has not changed,
+[25:39] so all resistances are equal,
+[25:52] all resistances are equal, if all the resistances are equal, then the bridge will be balanced,
+[26:02] the bridge will be balanced, then the output voltage will be zero,
+[26:08] now what have you done, now change the temperature, suppose now change the temperature,
+[26:16] now temperature changes by delta T,
+[26:27] so we will say R D changes by delta R,
+[26:35] okay, now what I want to know, I want to know V A and V B,
+[26:41] so what I want to know, V A and V B, so I say that V A will be V DC into R A upon R A plus R D,
+[26:55] okay, so V DC into R 2 R plus minus delta R, V B is V DC into R B by R B plus R C,
+[27:26] this happened, now see this voltage follower circuit, it will forward as it is forward to V A and V B,
+[27:35] correct, it will forward as it is forward to V A and V B,
+[27:44] now it is visible that this remaining stage is a differential amplifier,
+[27:49] now what you are doing, you also know the output of this, V naught is R 2 by R 1 V B minus V A,
+[28:01] what is R 2 by R 1 V B minus V A, this is your differential amplifier,
+[28:11] now it was written, tell me there is no problem in this, now it was written,
+[28:19] tell me, now it was written, and here from the four resistances in the bridge,
+[28:26] we took only R D resistance which is changing the temperature and which is sensitive to the temperature,
+[28:33] meaning you can understand R D as a transducer, what is this transducer doing according to the temperature,
+[28:39] it is changing its resistance, the rest of the resistance is your constant, okay, now here you
+[28:47] will say that V naught is R 2 by R 1 V A minus V B, sorry V B minus V A,
+[29:09] okay, what happened,
+[29:34] V DC into 2R plus minus delta R minus 2R,
+[29:49] now see 2R is much bigger than delta R, delta R is a small change,
+[29:54] so ignore 2R in the denominator, and see in the numerator it is cut,
+[30:07] so V naught is R 2 by R 1
+[30:11] V DC into delta R, okay, plus minus and down will be 4R,
+[30:30] okay, so you can write it like this, R 2 by R 1 into V DC by 4
+[30:38] into fractional change in resistance, so you can see here your V naught is directly proportional
+[30:50] to the fractional change in resistance, so your fractional change in resistance has gotten
+[30:58] converted into voltage, fractional change of resistor gets converted to voltage,
+[31:06] and here see what happens, the change in resistance is very small,
+[31:11] so you want, but you get a good output voltage, for this you have made a gain of differential
+[31:18] amplifier R 2 by R 1, if you do not want the gain, then R 2 and R 1 are equal, so the second stage
+[31:25] is basically a differential amplifier, you can set the gain of the differential amplifier as much as
+[31:31] you want, because you want you get a significant voltage on the output rather than a very small voltage,
+[31:39] okay, fractional change of resistance
+[31:47] due to temperature change
+[31:55] gets converted to voltage,
+[32:01] and you know you can see one more thing, I will show you one more thing here,
+[32:14] how does the temperature dependence of resistance happen, if your one positive temperature
+[32:23] coefficient is material, this happens, so delta R which is R dash minus R, that is R alpha delta T,
+[32:37] so delta R by R is actually alpha delta T, therefore V naught is proportional to delta T,
+[32:50] because V naught delta R by R is proportional, then the output voltage will be proportional to the change in
+[32:54] temperature, this was the objective, now I understood the purpose and working of the instrumentation
+[33:03] amplifier, tell me, the purpose and working of the instrumentation amplifier is clear,
+[33:12] so here the output voltage is proportional to the change in temperature, and that is that is the
+[33:18] most important thing, this is the most important thing that you have converted the temperature to voltage,
+[33:25] so this can be useful in measurement, this can be useful in meter design, so that is the major objective,
+[33:34] now next is the integrator, integrator means a circuitous amplifier whose output voltage
+[33:43] proportional to the integration of the input voltage, what are you saying, an amplifier where
+[33:54] output voltage is proportional to integration
+[34:08] of input voltage
+[34:24] okay, it should be proportional to the integration of V in, so here see what they say,
+[34:31] here this switch is closed at T equal to zero, what is done, the switch is closed at T equal to zero,
+[34:42] so suddenly a i current will be established, here you can say with virtual ground that it is zero
+[34:48] volts, you can say this with virtual ground, because the positive terminal voltage is zero,
+[34:59] so your negative terminal voltage is also zero, now here an i current is established which
+[35:08] is V in by R, now this i current will go up because what will the input current come in the opamp,
+[35:21] zero will come, the input current will come in the opamp, so this whole current will go up,
+[35:28] now if this whole current goes up, then V naught is zero minus V c
+[35:38] this happened, okay, now here
+[35:49] okay,
+[36:01] so minus one by Rc integral V in dt, okay, why did you start with zero,
+[36:12] initially I believed that capacitor is uncharged, if capacitor voltage was zero,
+[36:21] then this was zero, V naught was also zero, so here V naught minus zero will be,
+[36:28] actually when we take out the capacitor voltage, then we should go like this,
+[36:43] so we should ideally go like this, zero to T,
+[36:55] zero to Vc, okay, so Vc here is one by C,
+[37:00] and V naught is minus Vc, think of this type, that is this integration will go from zero to T,
+[37:18] I always say that if you want the voltage of the capacitor from the current, then don't directly
+[37:24] put integration, why, because you will never understand the limit in this, but if you go from this method,
+[37:31] then you can clearly see the limits, with which the chance of making a mistake is less,
+[37:36] so many children write like this, one by C integral i dt, but in integral i dt, what is the limit of time,
+[37:43] we don't know this, which is not good, so if you want to go like this, then you can clearly see the limits,
+[37:52] so initially the capacitor was in charge, so the voltage is zero, at T equal to zero,
+[37:57] now you see here, V naught is proportional to integral V in dt, this is the work of the integrator,
+[38:07] that the proportional of the integral, one of you should provide output voltage,
+[38:12] that should be the working of your integrator, now see how you can use this integrator,
+[38:20] suppose you want to generate a triangular wave, so what should you give in the input,
+[38:24] give a square wave and what should you generate from it, a triangular wave, so actually this is also possible,
+[38:33] integrator can be
+[38:38] used to produce, used to produce
+[38:49] a triangular waveform
+[38:52] from
+[39:06] square wave
+[39:12] and do you know what this is, square wave input,
+[39:17] square wave input can be obtained from
+[39:29] obtained from
+[39:32] a stable multivibrator, where can you get this, I will teach you in the future in oscillators,
+[39:42] so don't worry about anything, it can be obtained from a stable multivibrator,
+[39:50] so actually when I will teach you triangular wave generator,
+[39:54] okay when I will teach you triangular wave generator, then I will show you like this,
+[39:59] first we will make a stable multivibrator or make a Schmitt trigger, which can give a square wave,
+[40:04] then we will put an integrator ahead, so that we can make the square triangular,
+[40:11] so
+[40:23] okay now see one more thing, how much is your V naught here,
+[40:26] here it is,
+[40:36] that is, you could say dV naught by dt,
+[40:44] that is, a rate of change of output depends on time constant rc,
+[40:56] correct, depends on tau equal to rc, so by controlling tau,
+[41:13] by controlling tau, we can control
+[41:18] when V naught saturates, when V naught will saturate, you can control it,
+[41:33] sir, why will you saturate, if you go by integrating the input voltage,
+[41:38] suppose the input voltage is constant, if you integrate it,
+[41:44] then it will exceed the saturation limit at one time, as soon as the supply voltage or saturation
+[41:51] exceeds the limit, your output will be saturated, what will you do, your output will be saturated,
+[42:00] this is what I understand, if we integrate it, it will sometimes saturate,
+[42:06] now see what is the drawback in this, if any non-zero DC component is
+[42:14] in the input, if there is a DC component, which I just told you, if V in is constant,
+[42:20] then V naught will sometimes saturate, if the input is perfect AC, without any DC component,
+[42:26] then your opamp will not saturate, otherwise, if there is DC in the input, then the output will be
+[42:32] saturated, what do we do to avoid this, to avoid this, we put resistance in a feedback,
+[42:43] okay, what do we do,
+[43:04] see here, there was a resistance on the input side,
+[43:07] now what do we do, there was a capacitor in the feedback,
+[43:28] along with it, we also put a resistance in its parallel,
+[43:38] so basically, for DC input, you have created an inverting amplifier in one way,
+[43:47] you have created an inverting amplifier for DC input, so this is a
+[43:53] practical integrator, practically it is used,
+[44:06] okay, now we understand what we are doing, to avoid saturation,
+[44:14] that we are connecting a feedback resistor parallel to capacitor,
+[44:19] next is differentiator, if you look carefully at what we did in differentiator,
+[44:27] we exchanged the positions of capacitor and resistance with respect to your integrator,
+[44:36] okay, so what can we write here, that position
+[44:44] of R and C, R exchanged, R exchanged with respect to integrator,
+[45:06] now see here you will get 0 volt, why is this 0 volt coming, this is due to your
+[45:13] virtual short, why is it coming, virtual short, the reason why if you come out or first take out
+[45:22] the vc, first if you take out the vc capacitor voltage,
+[45:40] so this v in will come, okay, now the i that we have shown entering in the positive plate,
+[45:46] so when your current enters in the positive, then you write cdvc by dt,
+[45:53] that is cdvn by dt, now this i current will go up completely because the input current of opamp is 0,
+[46:05] so if you put kvl, you will write v0 minus ir minus rc
+[46:18] dvn by dt, so here see v0 is proportional to dvn by dt,
+[46:27] so this has become differentiator, correct, this has become differentiator,
+[46:34] the order is saying sir, we can also put an inductor instead of a capacitor, what is the order,
+[46:39] the size of the inductor is quite big, that is why the inductor is generally not preferred in
+[46:45] electronic circuits, if it can work with a capacitor, then the capacitor can be fabricated in an
+[46:51] integrated circuit, but an inductor cannot be fabricated in an integrated circuit,
+[46:59] that is why the capacitor is always preferred, I told you earlier that you can make a capacitor
+[47:04] from MOSFET, which you read in EDC, which is called MOS capacitor, but the inductor cannot be
+[47:10] made like this, that is why the capacitor will always be given preference, there are two
+[47:15] losses, one is bulky, the other will increase the size, it cannot be fabricated on an integrated circuit,
+[47:23] so if you want to make IC, which is differentiator or integrator, there will be no inductor there,
+[47:28] if you want to make a chip, there cannot be an inductor in a chip, okay, is it clear to everyone here,
+[47:36] let's go, now what is its drawback, its drawback is that it becomes unstable on high frequency,
+[47:52] why sir, because the reactance of the capacitor is very low on high frequency, if the reactance of the
+[47:59] inductor is very low, then this i current will be very high, that is, if this input voltage is very high
+[48:07] frequency voltage, then this current will be very high, otherwise think like this, current is cdv in by dt,
+[48:14] input voltage means high frequency, the input voltage is rapidly changing, if the input voltage is rapidly
+[48:23] changing, then this dv in by dt will be very high, if dv in by dt is very high, means the current is very
+[48:30] high, then this v0 will become very very high, otherwise think like this, if you consider vn as vm sin omega t,
+[48:39] then what will be dv in by dt, see if you consider vn as vm sin of omega t, then what will be dv in by dt,
+[48:53] omega vm cos omega t, okay, what does this mean that v0 is proportional to omega vm,
+[49:07] then v0 will be very high on high frequency, right, v0 will be very high on high frequency, so what do we do,
+[49:16] see we add a resistance on the input side and add a capacitor in a feedback,
+[49:24] we add a capacitor, we have written by adding a capacitor, noise rejection is improved,
+[49:29] see understand two things, one is at high frequency what will be cn xcn is very low
+[49:46] because rn is applied, rn limits current,
+[49:57] this is understood as the first thing, you said that if the reactants of the capacitor become very low,
+[50:03] then the current will be very high, then rn is applied to keep the current limited,
+[50:09] second thing is that at high frequency or at frequency tending to infinity xcf tends to zero,
+[50:21] if this short circuit is done, here you have zero volt, if this short circuit is done,
+[50:28] then it will come to zero on the output, so what will come to zero on the output, that is
+[50:37] high frequency, what is the high frequency, noise does not reach output, understand,
+[50:44] both the components are understood, why are they applied, rn and cf, rn is applied to limit the current
+[50:53] and cf is applied to make sure that the noise of the high frequency is coming on the input,
+[50:58] that never reaches the output, that never reaches the output, is this clear or not,
+[51:07] Harbaksh Singh, you saw the network machine, you liked it, I am very very grateful,
+[51:12] but if you see other subjects as well, you will enjoy it as much as it can be more,
+[51:18] depends, power system, see power electronics, this analog is running, it is digital, it is control,
+[51:26] this is clear, so we said that this reactance was very low at high frequency,
+[51:31] so the current was coming very high, so we applied resistance to stop the current or to reduce it,
+[51:38] and if the noise of the high frequency comes, then this capacitor will work on the high frequency
+[51:42] and it will work on the short circuit, which will come on the output at zero, so if the noise is coming on the input,
+[51:50] noise is always seen at high frequency, so the noise of the high frequency will not reach the output,
+[51:56] so this becomes a practical differentiator,
+[52:02] understand, the way to solve the problems of differentiator integrator, tell me,
+[52:08] did you understand or not,
+[52:12] differentiator and integrator problems and the way to solve them is clear or not,
+[52:19] differentiator integrator circuit is very simple, but you have to understand practicality,
+[52:24] you have to understand the problem, what is coming,
+[52:32] Neeraj, if you are a student of Hindi medium, it will not be much of a problem,
+[52:36] but in engineering, you will have to learn all the terms in English, there will be a little struggle,
+[52:41] but success also comes after struggle in life, okay, now let's come to the next circuit,
+[52:49] sample and hold circuit, now what is this sample and hold circuit, it comes in the work of sampling,
+[52:56] what is in it, it works as a switch, look, it works as a switch,
+[53:03] it is an input follower, now look at Kalpith, here zero ampere current will go,
+[53:10] so here the input resistance will be infinity, so this input follower avoids
+[53:20] loading effect on previous stage, so why did I put this directly, why did I not give input to avoid
+[53:27] loading effect on previous stage, you read sampling in the signal system, this circuit comes in the work of
+[53:35] 2C, now look what happens here, if you hide the control signal, this is an NMOS transistor,
+[53:44] if you put high voltage on the gate, then this switch will turn on, this switch will turn on,
+[53:50] so look here, because of the follower, VIN is coming, so it will pass VIN directly in VC, where it will pass
+[53:58] in VC, switch on means linear region, switch on means the linear region of MOSFET, linear region
+[54:07] means the voltage from drain to source is very low, that is, what comes on VC, VIN, what comes on VC,
+[54:17] VIN, so we are saying when
+[54:23] control is equal to 1,
+[54:28] so NMOS will turn on, it is working like a switch, it will work in linear region,
+[54:35] so VDS is very very low, that is, here the source terminal voltage will be VC, that will become
+[54:48] same as VIN, let's call this operation as sample, what do we call sample,
+[54:56] now look here, no current can go to the capacitor, when you zero the control terminal,
+[55:05] then this NMOS turns on, sorry, it turns off, when the control terminal is your zero,
+[55:17] so NMOS turns off,
+[55:19] so there is no way for the current of the capacitor, so VC is constant, that is called as the
+[55:29] hold operation, so whatever value you put on VC from the input, the same value will hold,
+[55:37] it will stop, so it is called hold operation, so here there are two operations, sample and hold,
+[55:43] sample means to take the input value to the capacitor, hold means to store the same value,
+[55:51] do not let that value change, now you will say sir, why did you put an output follower,
+[55:57] if the capacitor was connected directly to the next circuit, then the charge of the capacitor would have leaked,
+[56:04] so what is this output follower doing, it prevents leakage of capacitor,
+[56:09] otherwise if the charge of the capacitor will leak slowly, the charge will start decreasing,
+[56:14] then its voltage will start falling, so that is why we have started that prevents the leakage of
+[56:20] capacitor, who will control sir, human being, no, the control will not be human being, here
+[56:25] you can give pulses from a digital circuit depending upon sampling, as you see in the signal system,
+[56:33] so what do you say, after every t time you have to take the sample, so you put a digital
+[56:40] circuit here, which will increase the control input after every t time, so that the sampled signal
+[56:46] comes across your capacitor, whatever your sample comes across the capacitor, so after every t time,
+[56:53] this control signal will be high, so what will the input follower do, avoid loading effect,
+[57:00] what will the output follower do, prevent discharging of capacitor, so these are both our own purposes,
+[57:07] okay, now see the output follower prevents discharging of capacitor during hold operation,
+[57:14] here the input current of opamp should be negligible, the leakage current of the MOSFET should be negligible,
+[57:20] i.e. when the MOSFET is off, there should be no current and there should be no leakage in the capacitor,
+[57:26] do you understand that there is no leakage in the capacitor, there is a dielectric between the two plates of the capacitor,
+[57:32] so i don't want any charge to pass through the dielectric, otherwise what will happen,
+[57:37] if this is a positive plate or a negative plate, if the electron starts flowing in between the plates,
+[57:44] then this charge will start reducing by itself, if the electron cancels the positive charge,
+[57:49] then the charge and voltage of the capacitor will start decreasing, but if there is leakage,
+[57:56] then you will write the rate of change of the voltage of your capacitor, i by c, i is opamp input current,
+[58:08] right, the input current of opamp is not equal, but exactly it is not 0, plus
+[58:16] MOSFET leakage current, there are two ways to charge the capacitor,
+[58:21] whether it is to pass through the MOSFET or opamp, we want the MOSFET to be the same in which there is no leakage
+[58:28] and we want the opamp to be the same in which there is no leakage or its input current is zero,
+[58:34] so if your input current and leakage current is not equal, then the voltage of the capacitor is almost
+[58:42] constant, this thing is clear to everyone, tell me quickly, everyone is clear,
+[58:51] now see I am going on to the next application, voltage to current converter,
+[58:55] in one way, what happened, this is a trans conductance amplifier, trans conductance amplifier,
+[59:08] okay, now see here, this is the input voltage, what can you say from the virtual ground or the virtual
+[59:17] short, that the negative terminal voltage will come out, that will come out to be same as v in,
+[59:29] if v in comes out, then you can take out i, v negative minus zero by r, that is v in by r,
+[59:43] okay, now if you look at i l from here, then i l will also be equal to i, which will be v in by r,
+[59:52] this will be, because here your current will go zero, now what will be v naught,
+[60:00] v naught will be v negative plus i l into r l, okay, or your i l has come, load current,
+[60:11] so here if you see, the load current is proportional to v in,
+[60:15] so what did you do, you converted the input voltage to load current, that is a trans conductance
+[60:25] amplifier, that is a trans conductance amplifier, understood, you can call it voltage to current
+[60:31] converter, its opposite is current to voltage converter, current to voltage converter that is
+[60:40] trans resistance amplifier, that is
+[60:49] trans resistance amplifier, okay,
+[60:55] dear, you are asking, you can clear SSC Je from the syllabus of the gate, so let me tell you,
+[61:00] there are a lot of kids on this channel who have cleared SSC Je, by looking at the lectures of our channel,
+[61:06] but obviously the additional portion in SSC Je, which is non-technical or even
+[61:11] extra in technical, you will have to do it separately, right, you will not be able to do it well without those
+[61:16] things, the lectures of this channel plus the extra portion you will cover, you can do well,
+[61:23] now see, from virtual ground, the voltage of negative terminal will be zero,
+[61:37] okay, this is i in, now here is zero, i in is coming from above, now how will you write v naught,
+[61:46] see zero, yesterday I had done this, the current source here, that was a photo diode,
+[61:54] remember, yesterday I had done this, I had done the same thing yesterday, I had just put a photo diode
+[62:02] here, I had put a photo diode, so it was working as a transducer, so now see, you have seen the voltage
+[62:08] amplifier, you have seen the current amplifier, you have seen the trans conductance, you have seen the
+[62:12] trans resistance, so I have covered all these linear applications as much as possible,
+[62:19] okay, now let's see some questions, come on, ask this question, find v s by i s, here it is,
+[62:26] your source resistance formula or input resistance concept, take out v s by i s
+[62:56] here the impedance will come, treat the capacitor like this,
+[63:07] okay, here the resistance will come and the impedance will come, do it,
+[63:12] okay,
+[63:24] yesterday I had done the current amplifier
+[64:12] okay,
+[64:24] I have the answer, let's see, see if this is v s, then this voltage will also be v s,
+[64:30] correct, and if this is i s, then i s will also be going here, because zero will go here,
+[64:38] so this current will come, this v s upon 1 by s c,
+[64:47] so this will be s c v s, so the current coming from here will also be s c v s,
+[64:56] now what will be v naught, v s plus current into resistance,
+[65:07] that is v s 1 plus s c r, okay, this v naught has come and the v naught is v s minus
+[65:20] i s r 2 is v s plus s c r v s, okay,
+[65:31] this is cut, so v s by i s is what, minus r 2 by s c r,
+[65:44] this is all, this is the source, the source is absolutely right, and you do not disappear minus,
+[65:51] why do you disappear minus, this means that it has become negative, because instead of s, you will put j omega,
+[65:59] it is below, it will go up and become plus j because of minus, so it has become inductive,
+[66:05] if you see, put j omega to s, understand that, so what happened v s by i s,
+[66:14] j r 2 by omega c r, so this has not become inductive, so why are you eating minus,
+[66:22] do not disappear minus,
+[66:27] where is non-linear in Brahmin, the differentiator and differentiation and integration are linear
+[66:31] process, what is the condition of linearity, the condition of linearity is superposition and
+[66:37] homogeneity, integral and differential both properties satisfy, integration of a plus b is
+[66:44] integration of a plus integration of b,
+[66:49] in the instrumentation amplifier shown, if the switch is changed from a to b, the value of
+[66:55] amplifier gain, before and after changing the switch, so you have to tell the gain on both a and b,
+[67:02] I think this will also be connected from here, it will not open, do it a little,
+[67:26] this is a very dangerous circuit,
+[67:32] this is a very dangerous circuit,
+[67:49] positive feedback dominating, who said that it dominates positive feedback negative,
+[68:02] s s c l n d, what is this, l m d,
+[68:27] did anyone get the answer,
+[68:32] who said positive feedback will dominate, I am saying that the resistance in the positive
+[68:50] didn't apply, but who said that it will dominate negative feedback,
+[69:02] Indian Meteorological Department,
+[69:19] take a look at the tax zone, before gate 23, all the videos should be published, then you can see,
+[69:23] I will publish all the public videos in the analog video, this is my promise, but why
+[69:28] keep the private for gate 23, so that the kids come live, now the answer, let me get it done,
+[69:36] look here, if this voltage is v y, this is v x, so this stage is a differential amplifier,
+[69:46] so v naught will be 500 by 50, the value of resistance is same, v x minus v y,
+[69:55] so that is 10 times v x minus v y,
+[70:04] okay, now look here, there are two cases, when a is at 22.2 kilo ohms and when b is at 10.53,
+[70:13] here the voltage is v 1, here the voltage is v 2, you take such a current, do you remember how
+[70:21] the current comes here, it goes around like this, so if case one, look switch at a,
+[70:32] switch at a, if you are taking i current, so i will be here v 2 minus v 1
+[70:41] by 22.2,
+[70:50] and what about v y, sorry v x minus v y, if you put k v l, that will be i,
+[71:12] that means v naught a is 10 v x minus v y, okay, that means 10
+[71:26] 22.2 by 22.2 v 2 minus v 1, now tell me how much it is coming,
+[71:41] 100.09, okay, how much is the resistance in the next case, it is 10.53 10.53
+[72:01] v 2 minus v 1 upon 10.53,
+[72:15] then look v x minus v y, if you put k v l, this is the same instrumentation amplifier in which
+[72:21] I told you the modified circuit, you had lost the middle, you had lost the middle ground,
+[72:32] 10 times v x minus v y, if you put the value of i in v x minus v y, then 210.35
+[72:43] v 1
+[72:59] so this is 200 v 2 minus v 1, so in the first case, you have 100, in the second case,
+[73:09] 200 is coming, so the answer should be c, 100 and 200, clear, so here we put the whole k v l and
+[73:18] take out v x minus v y, see the next one,
+[73:26] put information theory, information theory is very easy, right, and do wave propagation,
+[73:33] you can also do optical fiber, it is very easy,
+[73:39] dear, we do not put input voltage in the multivibrator, do you understand,
+[73:45] the input voltage is never given in the multivibrator, so this circuit is different from that,
+[73:58] I will find out what happened to the Brahmastra batch, but there was so little
+[74:02] and what do you expect, that you will not come or attend,
+[74:09] come on, tell me what is asking here, he does not tell what he asked,
+[74:20] here the data is insufficient in the question,
+[74:32] look at the next one, v 1 is given to you, v 2 is given, and what is said is that the
+[74:44] PAMP is ideal, now he is asking you, tell me v naught, we need to take out v naught,
+[74:49] this is also an Amplifier, this is also your instrumentation amplifier, make it,
+[75:32] hey, why are you taking so much time, look again, do the same, the stage differential amplifier is ahead,
+[75:56] here the voltage is v 2 from the virtual shot, here v 1, okay, take this i current,
+[76:10] so i is v 2 minus v 1 by 4 and v x minus v y, if you write that is
+[76:23] i into 100 plus 4 plus 100
+[76:35] and v naught is 10 by 10
+[76:40] and v 2 minus v 1, if you multiply v 2 minus v 1 by 51,
+[76:55] okay, 0.1 minus 0.1 sin 200 by T, now if you multiply it by 51, then it will be 5.1 C,
+[77:12] all C, this is clear, how to tackle the instrumentation amplifier,
+[77:17] let's see the next one, find the value of i naught, come on, take out i naught quickly,
+[77:27] this is asking the current going to the terminal of the PAMP,
+[77:47] okay,
+[78:17] minus 5, see, here 0 volt will come from the virtual shot, here 12 by 4 3 milliampere will come,
+[78:38] 3 and 2 add okay, here it will be 5 milliampere from KCL, here it will also go 5 milliampere,
+[78:49] so if i tell you v naught, then you will say v naught is 0 minus 5 milliampere into 3k,
+[79:00] so minus 15 volt, now 15 minus 15 means minus 2.5, okay, now see KCL, 5 milliampere incoming
+[79:16] is i naught and minus 2.5 outgoing, so i naught is 7.5 milliampere, okay, here it is very good,
+[79:36] if opamp is ideal, v i is a triangular wave, then v naught will be, if the input voltage is a
+[79:44] triangular wave, then how will the output voltage be, tell me, if the input voltage is a triangular
+[79:51] wave, then how will the output voltage be, what will happen, the square wave is very good,
+[80:05] this is a differentiator,
+[80:16] okay, so this is your assignment, you will solve it, tomorrow we will discuss all the assignments,
+[80:23] the opamp parameter will also discuss all these things, and see this is the link of my special
+[80:30] classes, you can visit it, here diode, BJT, MOSFETS and even now opamp, you can practice PYQ,
+[80:40] gate PYQ by AIR1, and apart from this, if you join the academy, then plus and iconic,
+[80:47] there are two subscriptions, you will get the best teachers, full study material test series on the app,
+[80:54] if the kids who are iconic get doubt in the new question, then they will get the video solution,
+[80:58] you will get printed notes for the house, you will get 1-1 mentorship, you will get a strategy study plan,
+[81:04] and open house session will be interactive, where you can talk to the teacher, what you have to do,
+[81:10] go to the academy app, you have to decide the plan, you have to decide the duration,
+[81:15] and you have to use the code TSE to get the maximum discount, and see we have launched the subscription
+[81:22] which we are giving one month extra, before 31st of October, so if you are preparing for 24th,
+[81:29] then you can join quickly, using the TSE so that you get maximum discount, and along with it,
+[81:37] what will be the benefit that your gate 24 will be covered in this subscription, if you see the results,
+[81:43] the kids have a tremendous performance, in the top 10, last year there were 6 kids, this year our
+[81:50] goal is to get 10 out of 10 students in the top 10, and you can be one of them next year,
+[81:56] if you join the academy, Shivam, whenever I will do public, I will tell you, there is no date decided now,
+[82:02] if you join the academy, if it is a financial issue, then you can go for EMI,
+[82:07] you do not have to pay any interest in it, without any interest, EMI will be approved in just 2 hours,
+[82:14] at least you have to pay the paperwork, here you have to give the basic card, the pan card,
+[82:19] and give it to any member in your family, whose salary comes, because they are given EMI of the bank,
+[82:24] for 24, we have started this Guru Cool batch, in which the analog and maths are going on,
+[82:30] for both electrical and DC, and for the 23rd, our new batch is coming from 31st of October,
+[82:36] Creatrix team's rank improvement batch, in which maths are starting, Pallav sir,
+[82:41] start the network, Bhima Shankar sir, so you can start from the revision of maths and network,
+[82:47] then my subjects will come in it, machine, analog, power system, so this is our whole team's batch,
+[82:54] join this batch, and take maximum benefit from this batch, for both electrical and EC,
+[83:00] for electrical and EC, it is starting for both, in EC, one subject is coming, that is EDC,
+[83:06] at 8.30 pm, and what can you do for this, you can take a 4 month subscription,
+[83:12] in which you can easily get your gate cover, or you can also take 3 months,
+[83:17] you just have to remember the code, that is Ankit ESE, so you can go for 3 months or 4 months,
+[83:24] this is my telegram channel, it will be made on it, so that no information is missed,
+[83:29] and if you want a PDF of this session, you will get it in the next 15 minutes,
+[83:33] go to the home page of the app, go to the community, on the discover,
+[83:36] there I will get it, and all the PDFs will be available, so thank you everyone,
+[83:41] now we will meet tomorrow, at the same time, at the same place,
+[83:44] get the assignment, I will discuss all the assignments tomorrow, okay, thank you, let's crack it.

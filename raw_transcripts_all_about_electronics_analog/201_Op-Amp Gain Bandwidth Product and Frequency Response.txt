@@ -1,0 +1,144 @@
+Title: Op-Amp: Gain Bandwidth Product and Frequency Response
+URL: https://www.youtube.com/watch?v=wfkzz1rg-xk
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:15] So in this video we will see the frequency response of the op-amp and we will also understand
+[00:19] what is the gain bandwidth product of the op-amp and what is the significance of this
+[00:23] gain bandwidth product.
+[00:24] So these two parameters are very important aspect of any op-amp and it is quite often
+[00:28] used by the designers for selecting the specific op-amp for any particular application.
+[00:33] So let us first of all see the frequency response of the op-amp.
+[00:36] Now so far we have assumed that the gain of the op-amp is very high and it is having
+[00:41] a very high bandwidth and we have assumed that the gain of the op-amp is constant up to
+[00:46] the certain band of frequencies.
+[00:48] But if you see the actual response then the actual response of the op-amp will look like
+[00:53] this.
+[00:54] That means the gain of the op-amp will be constant up to certain frequencies and if we go
+[00:58] beyond this frequency then the gain of the op-amp will reduce at the constant rate of minus
+[01:04] 20 dB per decade.
+[01:07] So this frequency is known as the cutoff frequency of the op-amp.
+[01:11] So the cutoff frequency is the frequency where the gain of the op-amp will reduce by a 3 dB.
+[01:17] Now in this frequency response here the y axis represents the voltage gain of the op-amp
+[01:22] and the x axis represents the frequency in a logarithmic scale.
+[01:27] So in this frequency response if you see the cutoff frequency of the op-amp is very low
+[01:31] and it used to be in the range of time to 100 Hz.
+[01:35] So up to this frequency only op-amp will have a very high gain.
+[01:40] So we can say that in open loop configuration the bandwidth of the op-amp is very low and
+[01:44] that is because all the op-amp which we are using today are internally compensated.
+[01:49] That means all the op-amp which we are using are having a internal compensation capacitor.
+[01:54] So this internal compensation capacitor ensures that the op-amp has a stable response at high
+[01:59] frequencies.
+[02:00] So now because of this internal compensation capacitor the op-amp will have a single
+[02:05] break frequency till the point the gain of the op-amp reaches the unity.
+[02:09] So the frequency where the gain of the op-amp is unity is known as the unity gain frequency.
+[02:14] So because of this kind of response we can predict the gain of the op-amp at any given
+[02:19] frequency or in another way suppose if you know the gain of the op-amp then we can predict
+[02:23] the frequency of operation and that is particularly useful when we are using the op-amp in a closed
+[02:29] loop configuration.
+[02:30] So now suppose if op-amp is not internally compensated in that case you can have a
+[02:34] multiple break frequencies till the point the gain of the op-amp reaches the unity gain
+[02:39] frequency and this multiple break frequencies can occur because of the stray capacitances
+[02:44] and the load capacitances.
+[02:45] So because of this break frequencies op-amp will become unstable at very high frequencies.
+[02:50] So that is the reason all the op-amp are internally compensated and because of that the
+[02:55] open loop bandwidth of the op-amp is very low.
+[02:58] So because of this internal compensation it is easy to predict the gain of the op-amp if
+[03:02] we know the frequency of operation or in another way if we know the gain of the op-amp then
+[03:08] it is easy to identify the frequency of operation and that is particularly true when we are operating
+[03:14] the op-amp in this particular region because in this region the product of gain and the
+[03:19] frequency is constant and that is known as the gain and then product of the op-amp.
+[03:24] So let us say if you are operating the op-amp at unity gain frequency then the frequency
+[03:29] of operation will be equal to 1 megahertz and at that frequency the gain of the op-amp
+[03:33] is 1.
+[03:34] So the product of this frequency and gain will be equal to 1 megahertz.
+[03:39] We will let say if you are operating the op-amp at this cutoff frequency fc in that case
+[03:44] the gain of the op-amp is 10 to the power 5.
+[03:46] So again the gain and the frequency product will be equal to 1 megahertz.
+[03:51] So as you can see in this particular region product of gain and op-amp is constant and that
+[03:57] is known as the gain bandwidth product of the op-amp and it will always be equal to unity
+[04:02] gain frequency of the op-amp.
+[04:04] So using this gain and then product it is easy to identify the cutoff frequency of the op-amp
+[04:09] whenever it is being used in the closed loop configuration.
+[04:12] So let us say we are using this op-amp in a closed loop configuration and we have set
+[04:16] the gain of op-amp as a 40 dB which corresponds to 100.
+[04:19] So if you see the frequency response in frequency response we will get a constant gain of 40 dB
+[04:24] till the point this scale line intersects the open loop gain response of the op-amp and
+[04:29] beyond this intersection point the response of the op-amp will be similar to the open loop
+[04:34] response of the op-amp and this intersection point is known as the cutoff frequency of
+[04:38] the op-amp.
+[04:40] So below this cutoff frequency the gain of the op-amp will be constant.
+[04:44] So in this way whenever we are using the op-amp in a closed loop configuration then we
+[04:47] can get a higher bandwidth and we can find the bandwidth or the cutoff frequency in a closed
+[04:52] loop configuration by using this gain bandwidth product.
+[04:56] So for this particular response we know that the unity gain frequency or the gain bandwidth
+[05:01] product of the op-amp is 10 to the power 6 hertz and we also know that the product of
+[05:07] this closed loop gain and the cutoff frequency will be constant and it will be equal to the
+[05:12] gain bandwidth product of the op-amp.
+[05:15] So from this we can find the cutoff frequency of the op-amp which will be equal to this
+[05:19] unity gain frequency divided by the closed loop gain of the op-amp.
+[05:23] So in this particular case it will come out as a 10 kilo hertz.
+[05:28] So in this way whenever we are using the op-amp in a closed loop configuration then in that
+[05:32] configuration for the given gain we can find the cutoff frequency of the op-amp.
+[05:36] So up to that cutoff frequency the gain of the op-amp will remain the constant.
+[05:40] Now this reduction is particularly true whenever we are using the op-amp in a non-inverting
+[05:45] configuration.
+[05:46] So for the non-inverting configuration if you see the unity gain frequency or the gain
+[05:50] bandwidth product can be given by the expression closed loop gain multiplied by the cutoff frequency
+[05:56] of the op-amp.
+[05:58] And for the invading op-amp configuration this gain bandwidth product can be given by the
+[06:02] expression this closed loop gain plus 1 multiplied by the cutoff frequency of the op-amp.
+[06:10] So for the derivation of these equations I will provide the separate note in the description
+[06:13] very soon.
+[06:14] So you can check that out.
+[06:16] Now here if you see whenever the gain of op-amp is very high in that case the cutoff frequency
+[06:22] fc will be equal to unity gain frequency.
+[06:26] But whenever this closed loop gain is very low in that case the cutoff frequency for
+[06:32] the invading and the non-inverting configuration will be different.
+[06:35] So let us take the worst case whenever the closed loop gain of the op-amp is 1.
+[06:40] So let us say we are using the op-amp in a invading configuration and we have set the gain
+[06:44] of op-amp to the unity.
+[06:46] So in that case if you see the cutoff frequency of the op-amp will be equal to unity gain frequency
+[06:51] di-ded by 2.
+[06:53] While in case of the non-inverting configuration if you set the gain to the unity in that case
+[06:58] the cutoff frequency will be equal to the unity gain frequency.
+[07:01] So whenever the gain of the op-amp is very low in that case it is advisable to use the
+[07:06] non-inverting configuration over the invading configuration.
+[07:10] So now let us take one example based on this gain when they product.
+[07:13] So here we are using this op-amp in a non-inverting configuration and for this configuration
+[07:18] we need the closed loop gain of 100.
+[07:20] And here we have been given this unity gain frequency that is equal to 1 megahertz and
+[07:25] we want to find the cutoff frequency fc for this configuration.
+[07:29] So we already know that for the non-inverting configuration the cutoff frequency fc will
+[07:35] be equal to the unity gain frequency divided by the closed loop gain of the op-amp.
+[07:41] So here the cutoff frequency fc will come out as a 10 kilohertz.
+[07:46] So we can say that for this configuration the gain of the op-amp will be constant up
+[07:50] to this 10 kilohertz frequency or we can say that the bandwidth of the op-amp will be equal
+[07:55] to 10 kilohertz.
+[07:57] But now suppose in your application if you want a higher bandwidth then what we can do
+[08:02] either we can select op-amp which is having a very high gain bandwidth product or we can
+[08:07] use the multiple stages of op-amp and we can distribute the gain of op-amp between these
+[08:12] two op-amp.
+[08:13] So let us say here we are distributing the gain of 100 between these two op-amp and here
+[08:18] both the op-amp are identical.
+[08:20] That means the gain bandwidth product of both the op-amp will be equal.
+[08:24] So if we take the first stage in the first stage the cutoff frequency of the op-amp will
+[08:29] be equal to the gain bandwidth product divided by the closed loop gain of the op-amp and
+[08:36] here we are assuming that the gain bandwidth product of the op-amp is 1 megahertz.
+[08:41] So if we calculate then the cutoff frequency will come out as a 100 kilohertz.
+[08:45] In same is true for the second stage.
+[08:49] So here both the stages will have a cutoff frequency of 100 kilohertz.
+[08:54] The overall cutoff frequency of the op-amp will be equal to the cutoff frequency multiplied
+[09:00] by the 2 to the power 1 by n minus 1 where n represents the number of stages which is
+[09:07] being included in this system.
+[09:09] So here n is equal to 2 and the cutoff frequency fc of the op-amp is 100 kilohertz.
+[09:16] So if we put all these values then closed loop cutoff frequency of the op-amp will come
+[09:21] out approximately as a 64 kilohertz.
+[09:26] So in this way by using the multiple stages of identical op-amp we can increase the bandwidth
+[09:32] of the op-amp while keeping the same gain.
+[09:35] So this is all about the gain-and-net product of the op-amp.
+[09:38] So I hope in this video you understood about the frequency response and the gain-and-net
+[09:42] product of the op-amp.
+[09:44] So if you have any question or suggestion, do let me know in the comment section below.
+[09:48] If you like this video hit the like button and subscribe to the channel for more such
+[09:51] videos.

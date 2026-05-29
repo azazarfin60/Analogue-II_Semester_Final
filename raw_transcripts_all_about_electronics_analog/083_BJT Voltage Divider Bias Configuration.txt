@@ -1,0 +1,144 @@
+Title: BJT: Voltage Divider Bias Configuration
+URL: https://www.youtube.com/watch?v=MNp-WxkF5h4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All the World of Tronics.
+[00:17] So in this video, we will learn about the voltage-divitored biasing configuration of the BJT.
+[00:23] Now if you have followed the previous videos on the BJT, then we have already discussed
+[00:27] about the fixed bias and the emitter bias configuration of the BJT.
+[00:32] And we had also seen that in the fixed bias configuration by connecting this emitter
+[00:37] register, it is possible to stabilize the operating point against the variation in the beta.
+[00:43] And in fact, by properly selecting the values of this base and the emitter register,
+[00:48] it is possible to make the operating point almost independent of the variation in the beta.
+[00:54] But in this configuration, we require the two power supplies.
+[00:58] But instead of using the two power supplies, it is possible to derive this voltage source
+[01:03] from this VCC using the voltage-divitored circuit.
+[01:07] And that is exactly what is done in this voltage-divitored biasing configuration.
+[01:12] Now here, as we are interested in the DC analysis, so for the DC analysis,
+[01:17] all these capacitors will act as an open circuit.
+[01:21] And if you see the equivalent circuit, then it can be represented as follows.
+[01:26] Now here, what we will do? First of all, we will do the approximate analysis.
+[01:30] And using that, we will find the operating parameters.
+[01:35] That means we will find the expressions for this collector current IC in the voltage VCE.
+[01:42] So during this approximate analysis, we will assume that this base current iB is almost negligible.
+[01:49] That means we will assume that this base current iB is approximately equal to 0.
+[01:56] And in that case, almost entire current will flow through these two resistors,
+[02:00] particularly through this branch. And in that case, by applying the voltage-divitored rule,
+[02:06] we can find the voltage at this particular node.
+[02:10] So assuming iB is equal to 0, if we see the equivalent circuit, then it will look like this.
+[02:16] I mean, of course, here there will be a Thavinance equivalent resistance
+[02:19] because of this voltage-divitored circuit. But here, as we are assuming this iB is equal to 0,
+[02:25] so it won't make any difference. And we will see in detail about it,
+[02:30] once we finish this, approximate analysis. So here, this voltage VB can be given by this expression.
+[02:38] And here, voltage VE can be given as voltage VB minus VB.
+[02:48] And here, this emitter current i can be given as voltage VE divided by RE.
+[03:00] And here, the value of IC is approximately equal to emitter current.
+[03:05] That means, this IC is equal to approximately equal to emitter current.
+[03:10] So once we know the value of this correct current, then we can easily find the voltage VCE.
+[03:16] So let's apply the KVL on this output side. So applying the KVL, we can write
+[03:22] voltage VCC minus IC times RC. That means, the voltage drop across this resistor
+[03:30] minus VCE minus VE that is equal to 0. Or we can say that, voltage VCE is equal to
+[03:43] VCC minus IC times RC minus IE times RE. And here, as we are assuming, this IC is approximately
+[03:54] equal to emitter current. So we can say that, voltage VCE is equal to VCC minus IC times RC plus RE.
+[04:07] So in this way, using this approximate analysis, we can find the operating parameters.
+[04:13] And if you notice over here, these expressions are independent of beta.
+[04:18] That means, if we can use this approximate analysis method for this voltage divided by
+[04:23] a single configuration, then the operating point is independent of the variation in the beta.
+[04:29] Now let us understand, under which condition we can use this approximate analysis.
+[04:34] And for that, let us do the exit DC analysis of the given circuit.
+[04:40] Now, if you see this circuit, then the same circuit can also be represented like this,
+[04:46] and if you focus on this portion of the circuit, then we can apply the voltage divided rule,
+[04:51] only if the same current is flowing through both resistors.
+[04:55] Or in other words, when these two resistors are connected in series.
+[05:00] But if you notice over here, at this node, this entire circuit is also connected.
+[05:06] So in that case, what we need to do, we need to find the thavinance equivalent of this particular
+[05:12] circuit at this node. So the same circuit can also be redrawn like this.
+[05:19] And now, let us find the thavinance equivalent of this circuit by looking from this side.
+[05:25] So now, to find the thavinance equivalent resistance, let us short this voltage source.
+[05:30] And in that case, the thavinance equivalent resistance is the parallel combination of this R1 and R2.
+[05:36] So, similarly, the thavinance equivalent voltage can be given as R2 divided by R1 plus R2 times VCC.
+[05:46] So, once we find the thavinance equivalent voltage in the resistance,
+[05:49] then the equivalent circuit will look like this. So, in this circuit, now, let us find the
+[05:55] expressions for the base current, the character current, and the voltage VCE.
+[06:01] And first of all, to find this base current, let us apply the KVL on this input side.
+[06:07] So, applying the KVL, we can write voltage VTH minus IB times RTH minus VBE minus VE that is equal to 0.
+[06:23] That means, VTH minus VBE that is equal to IB times RTH plus IE times RE.
+[06:36] Now, we know that this emitter current I can be given as beta plus 1 times IB.
+[06:44] That means, from this, we can say that this VTH minus VBE that is equal to
+[06:52] IB times RTH plus beta plus 1 times IB times RE. Or in other words, we can say that
+[07:04] this base current IB is equal to voltage VTH minus VBE divided by RTH plus beta plus 1 times RE.
+[07:19] So, this will be the expression of the base current. And we know that the character current IC
+[07:27] can be given as beta times IB. And here, we are assuming that this emitter current is same as
+[07:35] the character current. So, once we know the value of this character current, then we can easily
+[07:40] find the voltage VCE. And the voltage VCE can be given by the same expression. That means,
+[07:47] voltage VCE is equal to VCC minus IC times RC plus RE. So, these are the expressions of the
+[07:58] operating parameters using the XZ analysis. Now, here, this emitter current IE can be given as
+[08:07] voltage VTH minus VBE divided by RTH divided by beta plus 1 plus RE.
+[08:18] So, if we solve this expression for the emitter current, then we will get this expression.
+[08:24] Now, in this case, if this first term is very small, then the expression of the emitter current
+[08:31] is the same as the expression which we have derived using the approximate analysis.
+[08:36] And in fact, under this condition, the emitter current is almost independent of the value of beta.
+[08:43] That means, whenever this RTH divided by beta plus 1 is very small compared to this emitter
+[08:51] register. Or in other words, whenever this RTH is much smaller than the beta plus 1 times RE,
+[08:59] in that case, we can use the approximate analysis. And in fact, in that condition,
+[09:05] the operating point would be almost independent to the variation in beta.
+[09:10] Now, practically, the value of this Thavenand's equal resistance should be at least 100 times less
+[09:16] than this term. That means, the value of RTH should be less than or equal to 0.01 times
+[09:24] beta plus 1 times RE. But sometimes, it is not visible to follow the criteria.
+[09:31] As with that criteria, the value of R1 and R2 would become very small.
+[09:36] So, for relatively stable operating point, the value of this Thavenand's equal resistance should
+[09:41] be at least 10 times smaller than this term. And if this condition is satisfied, then still we
+[09:48] can use the approximate analysis. So, let us take one example and let us see in this voltage
+[09:55] divider biasing configuration, how the operating point changes if there is a variation in the beta.
+[10:01] And during the analysis, we will use the exact analysis method. So, here, first of all,
+[10:07] let us find the Thavenand's equal and voltage in the resistance. So, the Thavenand's equal and
+[10:12] VTH can be given as R2 divided by R1 plus R2 times VCC. That means, over here, it is equal to
+[10:21] 2 kilo ohm divided by 2 kilo plus 10 kilo ohm times 12 volt. That is equal to 2 volt.
+[10:31] And if you see the Thavenand's equal resistance, then it is equal to R1 parallel R2. That is equal to
+[10:41] 2 kilo ohm in parallel with 10 kilo ohm. That is equal to 1.66 kilo ohm. So, now if you see the
+[10:51] Thavenand's equivalent circuit, then it will look like this. Now, here, beta is equal to 50.
+[10:58] That means, over here, beta plus 1 times RE is equal to 51 kilo ohm. And here, the value of RTH
+[11:08] is equal to 1.66 kilo ohm. That means, here, this value of RTH is almost 30 times less than this term.
+[11:18] That means, even if there is a variation in the beta, the operating point should relatively remain
+[11:23] stable. But, let us find out the exact numbers. So, first of all, using this expression,
+[11:30] let us find the base current. So, the base current IB can be given as
+[11:36] 2 volt minus 0.7 volt divided by 1.66 kilo ohm plus 51 times 1 kilo ohm.
+[11:48] That means, the value of the base current IB is equal to 1.3 volt divided by 52.6 kilo ohm.
+[11:56] That is equal to 24.6 microampere. And the collector current IC can be given as beta times IB.
+[12:06] That means, this collector current IC is equal to 50 times 24.6 set microampere.
+[12:14] That means, the collector current IC is equal to 1.234 milliampere.
+[12:20] And, once we know the value of this collector current, then this voltage VCE can be given by
+[12:27] this expression. That means, voltage VCE is equal to 12 volt minus 1.234 milliampere times
+[12:38] 3.6 kilo ohm plus 1 kilo ohm. That means, voltage VCE is equal to 12 volt minus 1.234 times
+[12:49] 4.6 kilo ohm. That means, the voltage VCE is equal to 6.32 volt. So, if you see the
+[12:58] operating point, then it would be somewhere around here, because here the value of IC is equal to
+[13:05] 1.234 milliampere. While the value of VCE is equal to 6.32 volt. And for this particular case,
+[13:17] the maximum value of the collector current would be equal to 12 volt divided by 4.6 kilo ohm.
+[13:23] That is roughly equal to 2.6 milliampere. And the maximum value of the VCE is equal to 12 volt.
+[13:31] That means, roughly the operating point would be somewhere around here. Now, let us see
+[13:37] how the operating point changes when the value of beta becomes 100. So, here the thavinian
+[13:43] sequence resistance as well as the thavinian sequence voltage will still remain same.
+[13:48] That means, voltage VTS is equal to 2 volt and the value of RTH is equal to 1.66 kilo ohm.
+[13:58] But in this case, as the value of beta has changed, so this base current IB will also change.
+[14:04] So, in this case, now the base current IB can be given as 2 volt minus 0.7 volt divided by
+[14:15] 1.66 kilo ohm plus 101 times 1 kilo ohm. So, if you calculate the value, then this base current IB
+[14:26] is equal to 12.66 microampere. And the collector current IC is equal to beta times IB.
+[14:35] That means, this collector current IC is equal to 100 times 12.66 microampere.
+[14:42] That is equal to 1.266 milliampere. And from this, we can find the value of the voltage VCE.
+[14:52] That means, voltage VCE is equal to 12 volt minus 1.26 milliampere times 3.6 plus 1 kilo ohm.
+[15:03] That means, voltage VCE is equal to 6.174 volt. So, now with the value of beta is equal to 100,
+[15:13] the value of VCE is equal to 6.174 volt, while the value of this collector current IC is equal
+[15:19] to 1.26 milliampere. So, now if we see the operating point, then it would be somewhere around here
+[15:27] because now, the collector current IC is equal to 1.266 milliampere, while the voltage VCE
+[15:33] is equal to 6.174 volt. So, as you can see, there is only marginal change in the operating point,
+[15:40] when the beta has increased by the 100 percent. That means, whenever this
+[15:46] 7 sequence resistance is less than or equal to 10 times beta plus 1 times this emitter resistance,
+[15:54] then there is only marginal change in the operating point. And here, while considering this condition,
+[16:01] we should consider the minimum value of the beta for the given transistor. And if this
+[16:06] condition is satisfied, then we can even use the approximate analysis for finding the operating point.
+[16:13] So, for the same example, use the approximate analysis and do let me know the value of voltage VCE
+[16:20] and the IC. And very soon, we will also see few more examples on this voltage
+[16:26] divider basing configuration on our second channel. But I hope in this video, you understood
+[16:32] what is voltage divider basing configuration of the BJT. So, if you have any question or suggestion,
+[16:38] do let me know here in the comment section below. If you like this video,
+[16:42] hit the like button and subscribe to the channel for more such videos.

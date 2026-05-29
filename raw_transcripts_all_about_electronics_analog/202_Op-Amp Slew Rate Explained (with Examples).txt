@@ -1,0 +1,190 @@
+Title: Op-Amp Slew Rate Explained (with Examples)
+URL: https://www.youtube.com/watch?v=2DFIr6t1hbc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:15] So in this video, we will learn about the op-amp slew rate.
+[00:19] So the slew rate of the op-amp can be defined as the maximum rate at which the output of
+[00:23] the op-amp can change.
+[00:25] For another way, we can say that how fast the op-amp is able to respond.
+[00:29] So let us understand about this slew rate by taking one example.
+[00:33] So let us say we have an op-amp which is configured as a Unity follower.
+[00:38] That means the output of the op-amp will follow the input signal.
+[00:42] And let us assume that at the input side, we have applied the square wave.
+[00:46] So the square wave is varying from 0 to 5 volt.
+[00:51] So at the output side also, we should get a square wave pulse which is varying from 0 to
+[00:57] 5 volt.
+[00:58] Now here, ideally the output should go from 0 to 5 volt in a no time.
+[01:04] But actually if you see, the output will take some time to reach from 0 to 5 volt.
+[01:09] And if you see the wave form, the actual wave form will look like this.
+[01:15] So the time which is being taken by the op-amp to reach to this 5 volt depends upon the slew
+[01:20] rate of the op-amp.
+[01:22] So the unit of this slew rate is volt per microsecond.
+[01:26] So let us say for one particular op-amp, if slew rate is 1 volt per microsecond, it means
+[01:32] that the output will change by 1 volt in a 1 microsecond.
+[01:37] And for that op-amp, to reach from 0 to 5 volt, it will take around 5 microsecond of time.
+[01:43] Now here, the different op-amp has a different value of slew rate.
+[01:47] And the value of slew rate varies from 0.1 volt per microsecond up to 1000 volt per microsecond.
+[01:54] So here is the list of few op-amps and corresponding slew rate.
+[01:59] So as you can see, for the general purpose, 741 series op-amp, the value of slew rate
+[02:03] is 0.5 volt per microsecond.
+[02:06] While for the op-amp from the linear technology, the slew rate can be as fast as 1000 volt per microsecond.
+[02:13] So depending upon your application, you need to select the op-amp with a specific slew rate.
+[02:18] So that your output will not get distorted.
+[02:21] And very shortly, we will see how the slew rate can affect your output signal and how we
+[02:25] can avoid that.
+[02:27] But before we understand that, let us quickly see why every op-amp has a finite amount
+[02:31] of slew rate and why every op-amp is not able to respond very quickly.
+[02:36] So the reason for this slew rate is the internal compensation capacitor of the op-amp.
+[02:40] And we have already talked about it in the last video.
+[02:44] So we had seen that this compensation capacitor is used to enhance the stability of the op-amp
+[02:48] at high frequencies.
+[02:50] So this capacitor is the intermediate stage of the op-amp and the voltage that is developed
+[02:55] across this capacitor is amplified at the final stage.
+[02:59] So the slew rate of the op-amp depends upon how fast this capacitor charges or discharges.
+[03:04] So we already know that the capacitor current Ic can be given by the expression C times
+[03:10] dvc by dt.
+[03:13] So we can say that the rate of change of voltage will be equal to the charging current Ic divided
+[03:19] by the capacitance of this capacitor.
+[03:22] So let us say for given op-amp, if the charging current is 200 micro-ampere and the value
+[03:28] of this compensation capacitor is 30 pico Faraday, in that case the slew rate will be equal
+[03:35] to 6.66 mega volt deited by second.
+[03:42] Or we can say that it is equal to 6.66 volt per micro-second.
+[03:47] So in this way, the slew rate of the op-amp depends upon this charging and discharging of
+[03:52] this internal compensation capacitor.
+[03:55] Now for the most of the op-amps, the value of this slew rate is identical for the positive
+[03:59] as well as the negative voltage swing.
+[04:01] That means whether your output is going from negative to the positive or positive to
+[04:06] the negative, the value of slew rate is identical in both directions.
+[04:10] So now that is being said, now let us see how this slew rate can affect your output signal.
+[04:15] So first of all, let us see the effect of slew rate on the square wave pulse.
+[04:20] So here assume that the output of an op-amp is a square wave pulse which is varying from
+[04:24] 0 to 5 volt and the time period of the square wave pulse is a 40 micro-second and the on time
+[04:30] of the square wave is a 20 micro-second.
+[04:33] So in ideal case, the output of this op-amp should go from 0 to 5 volt in a no time.
+[04:38] But because of this slew rate, let us see how the output will be get affected.
+[04:43] So here assume that the slew rate of the op-amp is 0.5 volt per micro-second.
+[04:49] And for our understanding, let us only take this first pulse.
+[04:53] So here we are considering only single pulse and in ideal condition, the response of the
+[04:58] op-amp should look like this.
+[05:00] But here we know that in actual condition, the slew rate of the op-amp is 0.5 volt per
+[05:05] micro-second.
+[05:06] So this op-amp can change the output voltage only by a 0.5 volt in a 1 micro-second.
+[05:12] So it will take around 10 micro-second to reach to the 5 volt.
+[05:17] So actually if you see, it will take 10 micro-second to reach to the 5 volt.
+[05:21] And then after it will remain flat up to the 20 micro-second.
+[05:25] And then after again, it will take 10 micro-second to reach to the 0 volt.
+[05:30] So in this way, because of this slew rate, your output waveform will be get distorted.
+[05:34] Now here, the distortion of the output signal depends upon the input signal frequency as well
+[05:39] as the amplitude of the output voltage.
+[05:41] So now let us understand how the frequency and the amplitude will affect your output signal.
+[05:46] So now instead of this 40 micro-second time period, let us say our new input signal
+[05:51] has a 20 micro-second of time period.
+[05:53] So we can say that the on time of that signal is 10 micro-second.
+[05:58] And let us find the response of the op-amp for this particular condition.
+[06:02] So now if you see, it will take 10 micro-second to reach up to the 5 volt.
+[06:07] Because here, the slew rate of the op-amp is 0.5 volt per micro-second.
+[06:12] And then after, it will again take a 10 micro-second to reach from 5 volt to the 0 volt.
+[06:18] So in this way, your output waveform will look like a triangular wave.
+[06:22] Similarly, let us see how the amplitude of the signal will also affect your output.
+[06:29] So now here, instead of 0 to 5 volt, now the new signal is going from 0 to 10 volt.
+[06:34] And the on time of this square wave pulse is 10 micro-second.
+[06:37] Now here, the slew rate of the op-amp is 0.5 volt per micro-second.
+[06:42] So in a 10 micro-second, it can reach up to the 5 volt.
+[06:46] So if you see here, in a 10 micro-second, the output will reach to the 5 volt.
+[06:51] And then after, again, it will go from 5 volt to the 0 volt in a 10 micro-second.
+[06:57] So as you can see here, because of this slew slew rate, the output of the op-amp is not
+[07:01] even able to reach this 10 volt.
+[07:03] So based on your input frequency and the amplitude, you should decide the op-amp with a specific
+[07:09] slew rate so that your output will have a minimum amount of distortion.
+[07:13] So in this case, suppose if we choose the op-amp, which is having a slew rate of, let's
+[07:18] say, 20 volt per micro-second, in that case, if you see the response, then the response
+[07:23] will look like this.
+[07:25] Because now, the op-amp is able to reach this 10 volt in only 0.5 micro-second.
+[07:30] So in this way, if we use this op-amp, then the distortion in the output will be minimum.
+[07:35] So based on your application, you should decide the op-amp with a specific slew rate.
+[07:41] So now, this slew rate not only affects the square wave pulses, but it can also affect
+[07:45] the sine waves.
+[07:47] So now, let us see the effect of this slew rate on the sinusoidal signals.
+[07:51] So in case of this sine waves also, your output signal will be get distorted if the signal
+[07:56] is changing faster than the slew rate of the op-amp.
+[07:59] So let us say we have one sine wave, which can be expressed by the expression V of t
+[08:04] that is equal to Vm sine omega t.
+[08:09] So now, the rate of change of signal that is equal to dV by dt will be equal to Vm multiplied
+[08:16] by the omega into cos of omega t.
+[08:20] So here, the rate of change of signal will be maximum when the value of this cos omega
+[08:25] t is 1.
+[08:26] So the maximum rate of change of signal will be equal to the Vm multiplied by the 2 pi times
+[08:32] this frequency f.
+[08:34] So the value of slew rate for the op-amp should be at least equal to this maximum rate
+[08:38] at which the sine wave is changing.
+[08:41] So we can say that the slew rate should be greater than or equal to this Vm multiplied
+[08:47] by the 2 pi times this frequency f.
+[08:51] So whenever the slew rate is greater than this value, in that case it is ensure that
+[08:55] you will not see any distortion in the output.
+[08:58] So let us take the worst case that is slew rate that is equal to this maximum rate of
+[09:04] change of sine wave.
+[09:06] So from this we can find the maximum frequency for which you will not find any kind of distortion
+[09:12] and that can be given by the expression slew rate divided by the 2 pi times this peak
+[09:19] voltage of this sine wave.
+[09:21] So up to this frequency you will not see any kind of distortion in the output and this
+[09:26] frequency sometimes also known as the power bandwidth of the op-amp.
+[09:31] Now here we do not get confused with the unity gain bandwidth of the op-amp because this
+[09:36] unity gain bandwidth is defined for the small signals which is in the range of milli-worlds
+[09:41] while this power bandwidth is defined for the large signals which is in the range of
+[09:46] worlds.
+[09:47] So for the small signals whenever your input signal frequency is greater than this unity gain
+[09:52] frequency in that case you will see the attenuation in the output.
+[09:56] While in case of this large signals whenever your input signal frequency is greater than
+[10:00] this maximum frequency in that case you will see the distortion in the output.
+[10:05] So whenever this condition is not satisfied in that case you will see the distortion
+[10:09] in the output.
+[10:10] So this is the case when your slew rate is less than the maximum rate at which your signal
+[10:15] is changing.
+[10:16] So now based on this concept let us take some examples based on this slew rate.
+[10:21] So in the first example we need to select the op-amp such that it is able to reproduce
+[10:26] the 20 kilohertz of the signal signal which is having a peak voltage of 10 volt.
+[10:31] So we need to find the minimum acceptable slew rate for this op-amp.
+[10:35] So here the frequency of this sine wave which is given is 20 kilohertz.
+[10:40] Now we know that for the sine wave the minimum slew rate that is required can be given by
+[10:45] the expression Vm multiplied by the 2 pi times this frequency f.
+[10:51] So here if you put all these values then we will get the value of this slew rate as 1.257
+[10:58] mega volt per second or we can say that that is equal to 1.257 volt per microsecond.
+[11:06] So to avoid the distortion the slew rate of the op-amp should be greater than this value.
+[11:11] So for this application we cannot use the general purpose 7 for op-amp because it is having
+[11:17] a slew rate of 0.5 volt per microsecond but instead of it suppose if we use this op-amp
+[11:23] which is having a slew rate of 15 volt per microsecond then we will not face any kind of distortion.
+[11:29] So now let us see the second example.
+[11:32] So in this example we have been given this unity follower circuit and to this circuit
+[11:36] we are applying the square wave as input.
+[11:39] Now here the input signal is varying from 0 to 10 volt and it is having a duty cycle
+[11:44] of 50 percent and also assume that this input signal is tunable.
+[11:49] That means it can be tuned from 1 kilohertz up to the 1 megahertz.
+[11:53] Now apart from that we have been given that the slew rate of the op-amp is 2 volt per microsecond.
+[11:59] So for this configuration we need to find the frequency of the square wave pulse where
+[12:03] the output will be triangular wave with a peak voltage of 4 volt.
+[12:07] So here we need to find the frequency of the square wave pulse so that your output will
+[12:12] be triangular wave which is having a maximum amplitude of 4 volt and here the slew rate
+[12:18] of the op-amp is 2 volt per microsecond that means the op-amp will reach this 4 volt
+[12:25] in a 2 microsecond.
+[12:27] So we can say that this time will be equal to 2 microsecond and the same time will be
+[12:34] required to reach from 4 volt to the 0 volt that means the entire time period will be
+[12:39] equal to 4 microsecond.
+[12:42] So from this we can say that the time period of the square wave pulse should be equal
+[12:46] to 4 microsecond or in frequency it will be equal to 250 kilohertz.
+[12:53] So in this way whenever we apply the square wave pulse of 250 kilohertz then at the output
+[12:59] you will get a triangular wave which is having a peak amplitude of 4 volt.
+[13:04] Now suppose in the same example if you want the triangular wave with a 10 volt of output
+[13:08] voltage in that case this time will be equal to 5 microsecond because from this slew
+[13:14] rate this op-amp will require the 5 microsecond to reach up to the 10 volt and the entire time
+[13:20] period T1 will be equal to 10 microsecond.
+[13:25] So in frequency it will be equal to 100 kilohertz.
+[13:29] So as you can see as the input frequency will increase then your output will be get more
+[13:35] and more distorted.
+[13:36] So for the particular application you need to select the op-amp in such a way that your
+[13:41] output will have a minimum amount of distortion.
+[13:44] So this is all about the slew rate of the op-amp.
+[13:47] So I hope in this video you understood about the slew rate of the op-amp and how we can
+[13:51] avoid the distortion in the output because of this slew rate.
+[13:54] So if you have any question or suggestion do let me know in the comment section below.
+[13:58] If you like this video hit the like button and subscribe the channel for more such videos.

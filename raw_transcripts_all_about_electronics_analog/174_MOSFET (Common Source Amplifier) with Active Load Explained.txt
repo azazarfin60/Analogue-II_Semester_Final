@@ -1,0 +1,167 @@
+Title: MOSFET (Common Source Amplifier) with Active Load Explained
+URL: https://www.youtube.com/watch?v=IOCK41RNpGs
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will learn how the MOSFET can be used as an amplifier with the active
+[00:15] load.
+[00:16] So first of all, we will understand what is active load and why it is commonly used
+[00:21] in the amplifier circuit.
+[00:24] And during our discussion, we will mostly focus on the common source amplifier.
+[00:29] So this active load is commonly used in the integrated circuits where the size and the
+[00:34] power consumption both are major constraints.
+[00:38] Making a resistor in the ICs requires a lot of space.
+[00:43] So instead of that, an active component like a MOSFET or the MOSFET circuit is used
+[00:48] instead of the resistor.
+[00:51] So this active component or the active circuit which is used instead of this resistor is
+[00:56] known as the active load.
+[00:59] And this active load also has certain advantages.
+[01:03] For example, if we take this simple common source amplifier circuit, then its gain is equal
+[01:09] to minus gm times rd.
+[01:11] And here for a moment, we have neglected the effect of the channel and modulation.
+[01:16] That means we have assumed that darkwood resistance of this MOSFET is equal to infinite.
+[01:22] Now here, if you want to increase this gain, then there are two ways.
+[01:27] Either we need to increase the value of this rd or we need to increase the transcomitance.
+[01:33] So the value of rd cannot be increased indefinitely because as the value of rd increases, then the
+[01:40] voltage drop across this resistor will also increase.
+[01:44] And because of that, the available voltage at this drain terminal will reduce.
+[01:50] And if we keep on increasing the value of rd, then at one point, the MOSFET may come out
+[01:55] of the saturation.
+[01:57] So there is a limitation on the value of the rd.
+[02:00] And when we are talking about the ICs, then anyway, using a large value of resistor is
+[02:06] not a viable option.
+[02:08] But even in the discrete MOSFET circuits also, the resistor rd cannot be increased indefinitely.
+[02:15] Now the second option is to increase the value of this transcomitance.
+[02:20] Now if you are aware, then this transcomitance GM can be given as 2 times id divided by
+[02:26] pgs-vt, that is the overtri voltage.
+[02:32] So to increase the transcomitance, we can increase this drain current.
+[02:37] But as we increase the drain current, then the power dissipation in the circuit will also
+[02:41] increase.
+[02:43] And particularly in the ICs, we have a limited power budgeting.
+[02:47] Moreover, as we increase the value of this id, then the voltage drop across this resistor
+[02:54] rd will also increase.
+[02:56] And because of that, the available voltage at the drain terminal will reduce.
+[03:01] On the other hand, what we can do?
+[03:04] We can keep the value of id as it is.
+[03:06] And we can increase the value of the w by l, because this transcomitance GM can also be
+[03:12] given as square root of 2 times id, mu n times cux times wd by l.
+[03:21] So by keeping the same value of id, we can increase the value of w by l.
+[03:26] But as we increase the value of w by l, then the area which is required to make this MOSFET
+[03:32] will also increase.
+[03:34] And in that case, this MOSFET will require a more space in the IC.
+[03:40] That means we cannot increase the value of rd as well as this GM indefinitely.
+[03:45] Of course, by increasing the power supply voltage, we can increase the gain by some extent.
+[03:51] But that is not the case in the ICs, where a power supply voltage is shrinking day by
+[03:57] day.
+[03:58] But this problem can be overcome if we replace the resistor by the current source.
+[04:04] In four moment, let us assume that this current source is the ideal current source.
+[04:10] So here, this current source will act as a active load.
+[04:14] Now if this current source is the ideal current source, then there are two advantages.
+[04:20] One is the biasing current of the circuit will be independent of the temperature as well
+[04:25] as the device parameters of the MOSFET.
+[04:28] And the second is, during the small signal analysis, this ideal current source can be replaced
+[04:33] by the open circuit.
+[04:36] And if the output resistance of this MOSFET is infinite, then ideally, the gain of this
+[04:41] amplifier will be infinite.
+[04:43] But as we all know, the MOSFET has the finite output resistance.
+[04:47] And because of that, the gain will be also finite.
+[04:51] That means if you see the small signal equivalent circuit, then it can be represented like this,
+[04:56] where this r naught is the output resistance of this MOSFET.
+[05:01] And in this case, if we see the gain, then this gain can be given as minus gm times r
+[05:08] naught.
+[05:09] So clearly, there is a significant improvement in the gain.
+[05:13] And in fact, this gain is known as the intrinsic gain.
+[05:18] So this intrinsic gain is the maximum optimal gain for this common source amplifier.
+[05:24] But we can obtain this gain if the current source is the ideal current source.
+[05:29] But if we see the actual current source, then the current source has the finite output
+[05:33] resistance.
+[05:34] And hence, in the small signal equivalent circuit, it can be replaced by its output resistance.
+[05:41] So with the finite output resistance of this current source, if we see the small signal
+[05:45] equivalent circuit, then it will look like this.
+[05:49] So here, this r naught 2 is the output resistance of this current source, while this r naught
+[05:55] 1 is the output resistance of this MOSFET.
+[05:58] So in this case, if we see the voltage gain, then this voltage gain is equal to minus
+[06:04] gm times r naught 1 in parallel with r naught 2.
+[06:09] So clearly, due to the finite output resistance of this current source, the voltage gain
+[06:15] will be less than the intrinsic voltage gain.
+[06:18] But still, this voltage gain will be greater than the voltage gain, which is obtained with
+[06:23] the brain resistor.
+[06:24] All right.
+[06:26] So now the question is, how to make this current source using the MOSFET?
+[06:30] Well, if you are aware that in the saturation region, the MOSFET can be used as a current
+[06:36] source, because in the saturation region, this drain current id is a function of Vgs.
+[06:45] And this drain current id can be given as k times Vgs minus Vt whole square, where this
+[06:53] k is the device parameters.
+[06:56] And if you see the xz equation, then it will be equal to half times mu n times COx times
+[07:02] W by L times Vgs minus Vt whole square.
+[07:09] So for the fixed value of the voltage Vgs, this drain current id will remain constant.
+[07:15] And in that case, the MOSFET can be used as a constant current source.
+[07:20] So when we want to connect a current source between the supply and some node in the circuit,
+[07:25] then we can use the P type MOSFET.
+[07:28] So here as you can see, the source terminal is connected to the VDD, where the fixed
+[07:34] gate voltage can be appeared at the gate terminal.
+[07:37] And in this way, this voltage Vgs can be kept fixed.
+[07:42] And at the drain terminal, the remaining circuit can be connected.
+[07:47] So as far as this mass voltage is kept fixed, and the Vgs will remain fixed.
+[07:53] And in this way, this circuit can be used as a current source.
+[07:57] Of course, here to ensure the operation of the MOSFET in the saturation region, the
+[08:02] voltage at the drain terminal should be such that this Vsd is greater than or equal to
+[08:08] Vsd minus Vt.
+[08:12] Similarly, then we want to connect the current source between some node in the circuit to the ground.
+[08:18] And we can use the NMOS as a current source.
+[08:21] So in this case, as you can see, the source terminal of the MOSFET is connected to the ground.
+[08:27] And a fixed gate voltage is appeared at the gate terminal.
+[08:31] So with the fixed gate to source voltage, the MOSFET can be used as a constant current source.
+[08:37] And of course, here to operate the MOSFET in the saturation region, the condition that
+[08:42] is Vds should be greater than or equal to Vgs minus Vt should get fulfilled.
+[08:48] But anyway, in our case, we need to replace this current source by the gate type MOSFET.
+[08:55] So now, using the small signal analysis, let us find the voltage gain of this given circuit.
+[09:01] So for the small signal analysis, all the DC sources in the circuit will act as a 0.
+[09:08] And for this PMOS, if we see the small signal model, then here the gate and the source
+[09:13] terminal both are connected to the ground terminal.
+[09:16] That means this voltage Vgs will be equal to 0.
+[09:20] And since this voltage Vgs is equal to 0, then this dependent current source will also
+[09:26] act as an open circuit.
+[09:28] That means from the drain side, if we see the equivalent resistance, then it is equal
+[09:32] to R0.
+[09:34] That means in the equivalent circuit, we can replace this PMOS by its output resistance.
+[09:40] And if we see the small signal equivalent circuit, then it will look like this.
+[09:45] And in this case, the voltage gain can be given as minus GM times R01 in parallel with
+[09:54] R02.
+[09:55] Where this R02 is the output resistance of this PMOS, while the R01 is the output resistance
+[10:02] of this MOSFET.
+[10:05] So in this way, the PMOS can be used as a current source or active load in the common
+[10:09] source amplifier.
+[10:11] So here, because of the finite output resistance of this PMOS, this voltage gain is always
+[10:17] less than the intrinsic gain.
+[10:20] And suppose if this R01 is equal to R02, and in that case, this voltage gain will be
+[10:27] half of the intrinsic gain.
+[10:30] So typically, in the current integrated circuits, the achievable intrinsic gain is in the range
+[10:36] of 20 to 50.
+[10:38] But with the finite output resistance of this current source, the voltage gain will further
+[10:42] reduce.
+[10:44] So to achieve the higher gain, the output resistance of this current source should be increased.
+[10:51] And that can be increased if we use the cascode current source.
+[10:55] So by using the cascode current source, along with the cascode amplifier, it is possible
+[11:00] to improve the voltage gain.
+[11:02] So in the upcoming videos, we will learn about this cascode amplifier as well as the cascode
+[11:07] current source.
+[11:09] Moreover, whenever we use a single PMOS or the NMOS device as a current source, then
+[11:14] we still have a issue of the matching stability.
+[11:17] Because in this case, the device parameters like this mobility and the threshold voltage
+[11:23] are a function of the temperature.
+[11:25] That means with the temperature, this parameters will change.
+[11:28] And because of that, this drain current or the basing current will also change.
+[11:33] Moreover, if this basing voltage is not stable, then the voltage VGS will change.
+[11:40] And because of that, this drain current or the basing current will get affected.
+[11:46] So to make a more robust basing, typically a current mirror circuit is used as a current
+[11:51] source.
+[11:52] And particularly in the ICs, this current mirror circuit is used as an active load.
+[11:59] So in the subsequent videos, we will learn about this current mirror circuit as well as
+[12:03] the cascode amplifiers.
+[12:06] But I hope in this video, you understood the concept of the active load and its basic
+[12:10] need in the amplifier circuit.
+[12:13] So if you have any question or suggestion, then do let me know here in the comment section
+[12:17] below.
+[12:18] If you like this video, hit the like button and subscribe to the channel for more such
+[12:22] videos.

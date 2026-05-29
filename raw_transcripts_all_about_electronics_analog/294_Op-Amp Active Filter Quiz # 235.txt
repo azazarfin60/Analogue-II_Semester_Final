@@ -1,0 +1,52 @@
+Title: Op-Amp/ Active Filter | Quiz # 235
+URL: https://www.youtube.com/watch?v=tAFmOYJG35Q
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been asked to find the frequency of the input signal at which
+[00:21] the magnitude of the output waveform is 95% of the input waveform.
+[00:27] Now if you closely observe this circuit, then this portion of the circuit is the low pass
+[00:31] filter, while the output of the low pass filter is given to the op-amp circuit.
+[00:36] And here the op-amp is configured in the non-inverting configuration.
+[00:41] So let's say the output of this low pass filter is equal to Vx.
+[00:45] So this Vx will be the input of this op-amp circuit.
+[00:49] So this output voltage V out can be given as 1 plus RF divided by R1 times Vx, where
+[00:57] here both RF and R1 are 1 kilo ohm.
+[01:01] That means V out is equal to 1 plus 1 divided by 1 times Vx.
+[01:08] That means V out is equal to 2 Vx.
+[01:12] So this is the relationship between the V out and the Vx.
+[01:15] So similarly, now let us find out the relationship between the V in and the Vx.
+[01:21] So here this Vx is the output of this low pass filter.
+[01:25] So here this voltage Vx can be given as 1 divided by Jomega C divided by 1 divided by
+[01:35] Jomega C plus R times V in.
+[01:39] So basically by applying the voltage divided rule, we can find the value of this Vx.
+[01:45] That means we can say that the Vx divided by V in is equal to 1 divided by 1 plus J times
+[01:52] Omega RC.
+[01:55] So this is the relationship between the Vx and the V in.
+[01:59] Now here the ratio of V out by V in can be given as V out divided by Vx times Vx divided
+[02:06] by V in, where Vx is the output of this low pass filter.
+[02:11] So here we know that the V out divided by Vx is equal to 2, while the Vx by V in can be
+[02:17] given as 1 divided by 1 plus Jomega RC.
+[02:23] That means magnitude of V out by V in is equal to 2 divided by square root of 1 plus Omega
+[02:32] square R square C square.
+[02:36] And if we take the square on both sides, then we can say that V out by V in whole square
+[02:42] is equal to 4 divided by 1 plus Omega square R square C square.
+[02:48] Now here we need to find the value of the frequency F in such a way that the magnitude
+[02:53] of the output waveform is 95% of the input waveform.
+[02:58] That means V out by V in is equal to 0.95.
+[03:01] So here we can say that 0.95 square is equal to 4 divided by 1 plus Omega square R square
+[03:10] C square.
+[03:11] Or in other words we can say that 1 plus Omega square R square C square is equal to 4.432.
+[03:22] That means Omega square R square C square is equal to 3.432.
+[03:28] Now here the value of R is equal to 10 kilo ohm, while the value of C is equal to 10 N
+[03:35] of Faraday.
+[03:36] That means the R3 time constant is equal to 10 to the power minus 4 second.
+[03:41] So from this we can say that Omega square is equal to 3.432 divided by R square C square.
+[03:51] That means Omega square is equal to 3.432 times 10 to the power 8.
+[03:59] That means Omega is equal to 1.852 times 10 to the power 4.
+[04:06] Now we know that the Omega is equal to 2 pi F and from this we can find the value of
+[04:12] the F.
+[04:14] So from this we can say that the value of frequency is equal to 2.948 kilohertz.
+[04:22] So at this particular frequency the magnitude of the output waveform will be the 95% of
+[04:27] the input waveform.
+[04:29] That means for the given question the answer is 2.94 kilohertz.

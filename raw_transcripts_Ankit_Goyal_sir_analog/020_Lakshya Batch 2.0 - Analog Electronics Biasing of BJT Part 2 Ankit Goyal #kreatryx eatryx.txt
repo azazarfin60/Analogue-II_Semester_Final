@@ -1,0 +1,2199 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Biasing of BJT Part 2 | Ankit Goyal | #kreatryx eatryx
+URL: https://www.youtube.com/watch?v=6asrfEPXtOY
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you.
+[00:12] We are back on Creatrix YouTube channel with Lakshya Batch 2.2 Analog Electronics.
+[00:19] As you know, our Analog Electronics is continuing in a great way.
+[00:26] Today, we have reached on lecture number 20.
+[00:30] What are we going to do in this? We are going to wind up BJT BISING.
+[00:35] Yesterday, I gave you a very good idea of BJT BISING.
+[00:39] What is BISING? Why is it? How do you talk about small signal analysis?
+[00:46] What is the meaning of small signal? What is the meaning of Q point?
+[00:50] Where should the Q point be located? How is the operating region of BJT identified?
+[00:57] And I also taught you a BISING technique. That was fixed bias.
+[01:02] Apart from this, what did we see in the last lecture about stability?
+[01:06] As the temperature increases, my Q point starts going towards the saturation region of the active region.
+[01:15] So, it starts going towards the saturation region of the active region, which is not at all desirable.
+[01:20] Because if you have to work like an amplifier, it should stay in the active region.
+[01:24] There, we said that there are three stability factors. Remember, S, S dash and S double dash.
+[01:31] In which, the most dominant is S, which is the stability with respect to ICBO.
+[01:38] Then what did we do? We derived that stability factor.
+[01:44] 1 plus beta upon 1 minus beta del IB by del IC.
+[01:50] And I taught you how it will be derived in the questions.
+[01:55] That you will put KVL in the input loop. You will differentiate it and take out del IB by del IC.
+[02:02] And then you will figure out the stability factor.
+[02:05] Then you saw it in fixed bias. This stability factor is very high.
+[02:11] It comes out to be 1 plus beta.
+[02:14] So, what did you do? You put a resistance in the emitter, which made it disappear.
+[02:21] But the problem is that the resistance of the emitter works as a negative feedback.
+[02:27] Because of which, the gain of the amplifier also decreases.
+[02:31] Then what did you say? If you want to save the gain of the amplifier from decreasing,
+[02:37] then you put an emitter bypass capacitor, which will look parallel to RE.
+[02:43] It will be short in AC analysis. It will short RE.
+[02:48] With which, your RE won't affect AC gain.
+[02:54] So, RE will work only in DC.
+[02:58] In AC, it will behave as short circuit.
+[03:01] Do you remember the discussion of yesterday?
+[03:04] I had told you that there were capacitors in the circuit.
+[03:08] The capacitor of the input output is called coupling capacitor.
+[03:11] The parallel capacitor of RE is the emitter bypass capacitor.
+[03:17] So, there are actually three capacitors in the circuit.
+[03:20] Two couplings, input output and one bypass.
+[03:23] The discussion of yesterday was very conceptual.
+[03:27] And today's discussion will be very numerical.
+[03:31] It will be very numerical.
+[03:33] You will enjoy it because you will see the concepts that you have learnt tomorrow.
+[03:38] And architect brother, have you revised it well or not?
+[03:42] You were attacking a lot yesterday.
+[03:44] Did you revise the notes again or not?
+[03:47] Are there good things or not?
+[03:50] To do it, I can quickly do derivations and numericals.
+[03:55] But if there is no conceptual understanding,
+[03:58] then especially when the EC kids go to give interviews,
+[04:01] there will be a lot of problems.
+[04:03] Because if you ask, why do they use the emitter bypass capacitor?
+[04:07] You must know that they do it in AC and DC.
+[04:10] But the reason should be known to bring it.
+[04:13] Things should go in the form of a story.
+[04:15] When a subject goes in the form of a story,
+[04:17] then we retain it more.
+[04:19] We should know where is the drawback,
+[04:24] where is the shortcoming, how are we overcoming it?
+[04:28] Sir, in circuit, AC small signal was not shown.
+[04:32] Son, did you see?
+[04:34] Did you see the VI?
+[04:36] That VI was the signal of AC.
+[04:38] But we have not reached on AC analysis yet.
+[04:41] That is why we did not use it.
+[04:43] Otherwise, it was the AC signal, small signal, which was VI.
+[04:47] Remember, we gave it from VCC, DC supply.
+[04:50] And VI was your AC supply.
+[04:52] Let's continue today, son.
+[04:55] I will take you on the next biasing technique.
+[04:58] Just a minute.
+[04:59] Give me a minute.
+[05:01] Otherwise, changing the cell of the remote always remains.
+[05:04] Just a minute.
+[05:22] Just a minute.
+[05:23] Just a minute.
+[05:24] Just a minute.
+[05:25] Just a minute.
+[05:26] Just a minute.
+[05:27] Just a minute.
+[05:28] Just a minute.
+[05:29] Just a minute.
+[05:30] Just a minute.
+[05:31] Just a minute.
+[05:33] Yeah.
+[05:34] So, kids, as we saw fixed biasing techniques yesterday,
+[05:38] today we will start with self-bias techniques.
+[05:41] Okay?
+[05:42] So, what is self-bias?
+[05:44] We call self-bias as voltage divider bias.
+[05:48] Okay?
+[05:49] Voltage divider bias.
+[05:51] Now, what is the meaning of voltage divider bias, son?
+[05:55] I can't hear the voice.
+[05:56] I can hear the voice now.
+[05:57] I can see the voice coming.
+[05:59] Look, what is the meaning of voltage divider bias?
+[06:02] Here, on the left, you have made a voltage divider network.
+[06:06] You have made a voltage division network with two resistances.
+[06:10] With R1 and R2.
+[06:12] With its help, you have supplied the base with DC supply.
+[06:16] Do you remember what you did yesterday?
+[06:18] You connected R1 directly from VCC.
+[06:22] There was no R2 yesterday.
+[06:24] Yesterday, the fixed bias went directly into VCC R1.
+[06:29] Today, R1 has made a voltage divider network of R1 and R2.
+[06:33] Then, it is connected to the base.
+[06:35] Now, you must be thinking, where is AC in this?
+[06:38] Let me show you AC, son.
+[06:42] What is AC here?
+[06:44] Like this.
+[06:46] Do you know why we apply capacitor on the output?
+[06:49] We apply capacitor on the output so that only AC reaches the output.
+[06:53] If DC doesn't reach the output.
+[06:55] If this is an amplifier, then the final output AC is required.
+[06:59] Then this capacitor blocks DC.
+[07:02] Okay?
+[07:03] And look, here too, with the help of a capacitor,
+[07:06] you will give AC input like this.
+[07:10] You will give AC input like this.
+[07:12] Do you understand?
+[07:14] But we don't show this in DC biasing.
+[07:16] Because the capacitor opens in DC.
+[07:19] Okay?
+[07:20] Here, I told you, C1 and C2 are the coupling capacitor.
+[07:25] And if you want, you can show a bypass capacitor here.
+[07:30] Okay?
+[07:32] Okay?
+[07:33] Is it clear now?
+[07:34] So, this is clear.
+[07:35] What is the work of the coupling capacitor?
+[07:37] This will disconnect AC supply for DC.
+[07:41] This will disconnect the output for DC.
+[07:43] So that no DC doesn't reach the output.
+[07:46] No DC doesn't reach the output.
+[07:48] Only AC should reach the output.
+[07:50] Dear, I will launch an EMFT course for you very soon.
+[07:53] It will be in October on Plus.
+[07:55] Don't worry, I will tell you about that.
+[07:58] And now, let's not discuss the Plus Plus.
+[08:00] Dear, I am only doing Plus for 3.5-4 hours.
+[08:03] Now, let's do Analog quickly.
+[08:05] For Analog Design Interview, dear,
+[08:07] you will have to prepare all the syllabus of Analog.
+[08:10] No topic can be left.
+[08:12] Because these are the private companies
+[08:14] who ask questions about Analog Digital.
+[08:16] They don't ask questions from above.
+[08:18] And kids, look, your attendance is also very low.
+[08:21] If you stay like this,
+[08:22] then my motivation to start MOSFET will go away.
+[08:26] Okay?
+[08:27] Now, look.
+[08:28] What are we saying here?
+[08:30] I have already told you, C1 and C2 are the coupling capacitor.
+[08:40] And C1 is the emitter bypass capacitor.
+[08:50] Okay?
+[08:55] This is happening, right?
+[09:01] Now, what do we have to do here?
+[09:04] We have to do DC analysis.
+[09:06] Now, what will you do in DC analysis?
+[09:09] We will open the capacitors.
+[09:20] Okay?
+[09:21] Will you open the capacitor in DC analysis?
+[09:25] Sir, if you private the video on time,
+[09:28] then your attendance will increase.
+[09:30] I also feel that I have become a little lenient in private, right?
+[09:33] That again and again, kids will say one thing,
+[09:35] little more, little more.
+[09:37] Now, kids are also starting to take lightly.
+[09:39] Now, let me tell you one thing, dear.
+[09:41] Today, four videos of you will be private behind BJT.
+[09:45] So, those who have not seen it,
+[09:47] that is not my problem.
+[09:48] Because then you are taking it lightly.
+[09:50] You are doing a lot of delays in watching the lectures,
+[09:53] which is not good.
+[09:54] Okay?
+[09:55] So, you should watch it on time.
+[09:58] So,
+[10:00] immediately private it.
+[10:02] If it increases, then we will do it immediately.
+[10:05] Because at this time, the kids of college are not able to come.
+[10:07] Come on, let's go.
+[10:09] Now, what are we saying?
+[10:11] That we will open the capacitor for DC analysis.
+[10:14] Now, look at the voltage divider network.
+[10:17] You will apply the voltage division rule.
+[10:20] So, what do we have to do here?
+[10:22] The voltage division is in the linear network.
+[10:24] BJT is a non-linear device.
+[10:27] So, what do we do?
+[10:28] We remove the R1, R2 network separately.
+[10:31] We remove the R1, R2 network separately.
+[10:34] And we remove the rest of the BJT circuit.
+[10:37] So, when you will remove this R1, R2,
+[10:39] then the circuit will be like this.
+[10:41] Right?
+[10:42] Here, BJT was the base terminal.
+[10:44] This is R2 and this is R1.
+[10:46] Now, this is your linear.
+[10:48] There is no non-linear device in it.
+[10:51] There is no BJT in it.
+[10:53] So, when this is linear, my children,
+[10:55] then how can you remove the with-havenin?
+[11:00] With-havenin, I want the base terminal
+[11:03] and the ground.
+[11:05] Where do you want it?
+[11:06] Between the base and the ground.
+[11:08] If you want it between the base and the ground,
+[11:10] then basically, you want the R2 across.
+[11:13] What will be the R2 across?
+[11:15] VCC, R2 by R1 plus R2.
+[11:22] This will be VCC R2 by R1 plus R2.
+[11:27] Now, if you will talk about Rth-havenin,
+[11:30] then remember, to remove RTH in the network,
+[11:34] you used to ground the supply.
+[11:37] Okay?
+[11:38] For RTH,
+[11:42] if you remove the supply,
+[11:44] then the ground is VCC.
+[11:47] Now, my children, as soon as you will ground this VCC,
+[11:51] here also ground, here also ground.
+[11:54] So, the upper and lower terminals are the same.
+[11:57] This is already the same.
+[11:59] This terminal is connected to each other.
+[12:01] Listen again.
+[12:02] Ground above and ground below.
+[12:04] The middle terminal is the same.
+[12:06] If this happens, my children, then this R1 and R2 are parallel.
+[12:09] Why are they parallel?
+[12:11] Because both the terminals are common.
+[12:13] This terminal is directly shorted.
+[12:15] And this is ground above and below.
+[12:18] So, RTH will come.
+[12:21] R1 parallel R2.
+[12:23] Now, tell me, is there any doubt here?
+[12:26] Does any child have any doubt here?
+[12:28] Are they parallel?
+[12:30] Okay?
+[12:31] Are they parallel?
+[12:32] Tell me.
+[12:35] Hey, Aman, where did you reach on Harmonics?
+[12:37] Your capacitor stops DC.
+[12:39] Not Harmonics.
+[12:41] If DC comes, then what is the problem with DC?
+[12:44] You will understand that in op-amp.
+[12:46] Okay?
+[12:47] Now, don't go on this.
+[12:48] That Harmonics will come.
+[12:49] This capacitor will let Harmonics pass easily.
+[12:52] The higher order Harmonics is,
+[12:54] according to 1 by omega C,
+[12:56] its reactance will be less.
+[12:58] Its impedance will be less.
+[13:00] So, Harmonics will pass easily.
+[13:02] We use the capacitor only for this.
+[13:05] So that it blocks DC.
+[13:08] Mr. Siddiqui, you have put the voltage divider.
+[13:11] R2 and across.
+[13:12] They are in series.
+[13:14] There is a voltage division in series.
+[13:17] But, why R2 and R2 will come in RTH?
+[13:21] R2 and R2 are not coming across.
+[13:23] You are looking at the base and the ground.
+[13:25] Okay, Mr. Architect?
+[13:27] You are looking from here, RTH.
+[13:31] When you will ground it,
+[13:34] then both of these will be parallel.
+[13:37] So, what will RTH look like?
+[13:40] R1 parallel R2.
+[13:42] Like this.
+[13:43] You have to remove the cross.
+[13:45] You have to look at the terminal of BJT.
+[13:47] You have to look at the terminal of B.
+[13:49] Now, when you have removed this,
+[13:51] then what is the supply on the base?
+[13:53] VTH has come.
+[13:55] RTH has been resisted.
+[13:57] Now, connect the rest of the circuit of BJT as it is.
+[14:01] That is, the base has come here.
+[14:05] This has become emitter.
+[14:07] This has become collector.
+[14:09] Now, see here, what did you put in the collector?
+[14:11] RC and VCC?
+[14:13] What did you put in the emitter?
+[14:15] RE and ground.
+[14:17] The capacitor was open, so RE and ground.
+[14:19] RE and ground.
+[14:21] Is this clear?
+[14:23] Now, if you want to solve this circuit.
+[14:25] Okay?
+[14:27] If you want to solve this circuit.
+[14:31] Look at the power supply.
+[14:33] Don't worry like this, my brother.
+[14:35] Now, even if the network is missing,
+[14:37] you are not able to understand the voltage divider.
+[14:39] R2 by R1 plus R2.
+[14:41] So, please network first.
+[14:43] Literally, I am saying,
+[14:45] the content of the 2-3 lectures of the network
+[14:47] is not using the network in any big content.
+[14:49] So, please network and come.
+[14:53] Okay?
+[14:55] Now, see, if you want to solve this circuit.
+[14:57] First, you will put KVL in the input loop.
+[14:59] Okay?
+[15:01] No, my dear.
+[15:03] I don't think that you are understanding.
+[15:05] It is easy to say that I understand everything.
+[15:07] But you don't understand anything, my dear.
+[15:11] Apply KVL.
+[15:15] Add input loop.
+[15:21] Okay?
+[15:23] Now, if you put KVL in the input loop, my brother.
+[15:25] So, you will write first VTH.
+[15:27] Supply.
+[15:29] Okay?
+[15:31] Then, what will you do?
+[15:33] You will take the drop link across the RTH.
+[15:35] That is IBRTH.
+[15:41] Minus.
+[15:43] Then, you will take the drop of base emitter.
+[15:45] Minus VBE.
+[15:49] Then.
+[15:51] Then, you will take the drop of minus emitter resistance.
+[15:53] IER.
+[15:55] RE.
+[15:57] This is done.
+[15:59] Now, what do you do, my dear?
+[16:01] Do you remember? I told you.
+[16:03] Active region.
+[16:07] I am telling you, how will you solve this circuit?
+[16:11] Now, what do you do in that?
+[16:13] You call IE as 1 plus beta IB.
+[16:19] And determine IB.
+[16:23] So, you will take out IB from the equation above.
+[16:29] Okay? This is the first step.
+[16:33] Now, what do you do in the second step, my dear?
+[16:35] You write IC as beta IB.
+[16:39] And you write IE as 1 plus beta IB.
+[16:49] Okay?
+[16:51] Now, what do you do in the third step?
+[16:53] You put KVL again in the output loop.
+[16:57] Where do you put KVL this time?
+[16:59] In the output loop.
+[17:01] Okay?
+[17:03] Now, in the output loop, you will go like this.
+[17:07] So, you will start with VCC first.
+[17:09] From above with VCC.
+[17:11] Then, you will take out the drop of RC.
+[17:13] So, what will you write?
+[17:15] VCC minus ICRC.
+[17:19] Now, you will take out the drop of emitter from the collector.
+[17:23] Then, IE.
+[17:25] RE.
+[17:27] Now, you have reached zero on the ground.
+[17:29] So, from here, you will know VCE.
+[17:33] You will know VCE.
+[17:35] Okay?
+[17:37] Now, when you will know VCE.
+[17:39] If it is greater than 0.2.
+[17:43] That means, our thought was right.
+[17:45] It is an active region.
+[17:47] If it is smaller than 0.2.
+[17:53] So, what will you say?
+[17:55] You will consider VCE as 0.2.
+[17:59] And then, you will take out the compute IC.
+[18:07] Using last equation.
+[18:09] Right?
+[18:11] You will take out IC again from the last equation.
+[18:19] Is it clear?
+[18:21] How will it be done?
+[18:23] Okay?
+[18:25] If it is less than 0.2.
+[18:27] Then, it is considered as 0.2.
+[18:29] And then, it is taken out again.
+[18:31] Now, our one more aim was to take out the stability factor.
+[18:35] What was it?
+[18:37] To take out the stability factor.
+[18:43] For that, what do you want?
+[18:45] Dell IB by Dell IC.
+[18:47] Correct?
+[18:49] You want Dell IB by Dell IC, right?
+[18:51] What will we do for that?
+[18:53] For that, we will use the input KVL.
+[18:57] Okay?
+[18:59] Use the input KVL.
+[19:01] So, VTH
+[19:05] Minus IB RTH
+[19:07] Okay?
+[19:09] Minus VBE
+[19:11] Now, do you know what you do?
+[19:13] You write IE IC plus IB.
+[19:19] Now, you differentiate.
+[19:23] IE IC plus IB
+[19:39] Okay?
+[19:41] So, this is what is being made.
+[19:43] As it was made in self bias.
+[19:45] Do you remember the exact same value?
+[19:49] What happened there?
+[19:51] There was RB instead of RTH.
+[19:55] And it should be there.
+[19:57] Because if you remember the circuit there.
+[19:59] There was supply here, VCC.
+[20:01] And here was RB.
+[20:03] So, there was RB instead of RTH.
+[20:07] So, there is RB here.
+[20:09] Where RB was coming first.
+[20:11] Now, when you take out the stability factor.
+[20:15] You take out the stability factor.
+[20:17] Okay?
+[20:19] So, that is 1 plus beta
+[20:23] divided by 1 minus beta
+[20:27] del IB by del IC
+[20:33] 1 plus beta
+[20:37] over 1 plus beta
+[20:39] RE
+[20:43] by RTH plus
+[20:45] RE
+[20:47] Okay? This is done.
+[20:49] Now, this value is 1 plus beta.
+[20:51] Okay?
+[20:53] This value is smaller than 1 plus beta.
+[20:55] Okay?
+[20:57] So, we will accept this well.
+[20:59] This is good.
+[21:01] The smaller the 1 plus beta.
+[21:03] The less the stability factor.
+[21:05] The same system.
+[21:07] The same circuit.
+[21:09] It will be more stable.
+[21:11] Tell me, is this clear to everyone?
+[21:13] Tell me.
+[21:15] Is this clear to everyone?
+[21:17] What is the benefit here?
+[21:19] We have used RTH instead of RB.
+[21:23] So, your stability factor is here.
+[21:27] Okay?
+[21:29] Come on.
+[21:31] Now, let's move on to the next.
+[21:33] The third bicing is
+[21:35] Collector to Base Bias
+[21:37] Circuit.
+[21:43] Okay?
+[21:45] Now, let's see
+[21:47] what kind of circuit is in Collector to Base.
+[22:01] Okay?
+[22:03] As soon as you put RE here.
+[22:05] Okay?
+[22:11] Now, let's see
+[22:13] what you do here.
+[22:15] You connect the base directly
+[22:17] to the collector
+[22:19] using resistance.
+[22:21] Now, I am not showing you
+[22:23] the AC part in this.
+[22:25] Okay?
+[22:27] Understand that the AC part
+[22:29] is connected to the base
+[22:31] and the collector
+[22:33] capacitor.
+[22:35] This circuit is Collector to Base.
+[22:37] Why are you calling it Collector to Base Bias?
+[22:39] Because whatever voltage
+[22:41] goes on the collector
+[22:43] is applied on the base
+[22:45] to bias this circuit.
+[22:47] Okay?
+[22:49] Now, see if you want to
+[22:51] put KVL in the input loop
+[22:53] then how will it be put?
+[22:55] First, you will come here
+[22:57] then go like this
+[22:59] then like this
+[23:01] then you will go like this
+[23:03] and then like this.
+[23:05] You will go like this.
+[23:07] You will come from VCC
+[23:09] from RC to RB
+[23:11] from RB to Base
+[23:13] from Ammeter to Ground
+[23:15] You will go like this.
+[23:17] Okay?
+[23:19] Now, if you pay attention to one thing here,
+[23:21] dear,
+[23:23] then the current that enters
+[23:25] the collector is IC
+[23:27] the current that enters the base is IB
+[23:29] then
+[23:31] here the current will be
+[23:33] IC plus IB
+[23:35] which is equal to
+[23:37] IE
+[23:39] IC plus IB which is equal to
+[23:41] IE.
+[23:43] Okay?
+[23:45] Now, they are saying
+[23:47] Mr. Mulla
+[23:49] does not apply KVL
+[23:51] in Collector to Base
+[23:53] Ghanchulal, I did not go directly
+[23:55] from Collector to Base
+[23:57] from RB to Base
+[23:59] If I would have gone from this way
+[24:01] then I do not know this voltage
+[24:03] If I would have gone through BJT
+[24:05] through resistance
+[24:07] If I would have gone through BJT
+[24:09] then this voltage would have been unknown
+[24:11] that is why they do not apply.
+[24:13] Now, see
+[24:15] KVL
+[24:17] when you apply
+[24:19] VCC
+[24:21] Now, how much current is going from RC
+[24:23] IC plus IB
+[24:25] RC
+[24:27] Then, how much drop will be
+[24:29] in RB, minus IB
+[24:31] RB
+[24:33] Okay?
+[24:35] Minus the drop of base emitter
+[24:37] Minus
+[24:39] IE
+[24:41] RE
+[24:43] Now, the IE that you will write
+[24:55] IE
+[25:09] This is it
+[25:11] IE, I did IC plus IB
+[25:13] Okay?
+[25:15] Now, what we will do?
+[25:17] Now, we will differentiate it
+[25:19] 0
+[25:21] Minus
+[25:23] IC RC
+[25:25] means IC derivative is 0
+[25:27] Del IB by Del IC
+[25:31] RC
+[25:33] Del IB by Del IC
+[25:35] RB
+[25:39] VBE derivative is 0
+[25:43] IC RE
+[25:47] Del IB by Del IC
+[25:49] into RE
+[25:51] Now, see here
+[25:53] if you calculate
+[25:55] Del IB by Del IC
+[25:57] then
+[25:59] Del IB
+[26:01] by Del IC
+[26:05] this will come
+[26:09] RC plus RE
+[26:15] by RC
+[26:17] plus RE
+[26:19] plus RB
+[26:21] And the stability factor
+[26:23] which is
+[26:25] 1 plus beta
+[26:41] this happened
+[26:49] See here
+[26:51] This came
+[26:53] Okay?
+[26:55] This is done
+[26:57] This is clear
+[26:59] So, we have
+[27:01] Stability factor
+[27:03] or sensitivity
+[27:05] You can say anything
+[27:07] Stability factor
+[27:09] or sensitivity
+[27:11] That is what this is
+[27:13] Stability factor
+[27:15] Stability factor
+[27:17] That is what this is
+[27:19] Now, do you know what is a shortcut here?
+[27:21] Here, you can write a shortcut
+[27:23] Stability factor
+[27:25] 1 plus beta
+[27:29] divided by
+[27:31] 1 plus beta
+[27:35] Here, sum
+[27:37] of
+[27:39] resistances
+[27:41] carrying
+[27:43] IC
+[27:45] IC
+[27:47] From which resistance is IC
+[27:49] passed
+[27:51] divided by
+[27:53] sum of resistances
+[27:55] carrying IB
+[27:57] From which resistance
+[27:59] is your IB passed
+[28:01] Okay?
+[28:03] As you see
+[28:05] If you see this circuit
+[28:07] Current IE is going here
+[28:09] Which is
+[28:11] IC plus IB
+[28:13] Now, see which resistance
+[28:15] IC is passing
+[28:17] IC is going from RC and RE
+[28:19] From which IB is going?
+[28:21] IB is going from RC
+[28:23] RB
+[28:25] From three
+[28:27] And IC is going
+[28:29] only from RC and RE
+[28:31] Now, see here, from RC and RE
+[28:33] IC is going and IB is going
+[28:35] from three resistance
+[28:37] If you do it with this logic
+[28:39] You can remove the stability factor
+[28:41] Okay?
+[28:43] You can always remove the stability factor
+[28:45] But do you know
+[28:47] The collector to base bias
+[28:49] What you did
+[28:51] The resistance RB is
+[28:53] from collector to base
+[28:55] What is the collector?
+[28:57] Output terminal
+[28:59] What is the base?
+[29:01] Your input terminal
+[29:03] When you connect a resistance
+[29:05] Output to input
+[29:07] And it will reduce the gain
+[29:09] of the amplifier
+[29:11] So, what is the drawback of this?
+[29:13] Due to negative feedback
+[29:15] from collector to base
+[29:17] Through RB
+[29:19] Through RB
+[29:21] Your VBE is reduced
+[29:23] Sir, how VBE is reduced?
+[29:25] See with this KVL
+[29:27] If you see with KVL
+[29:29] The resistance of RB
+[29:31] This is reducing VBE
+[29:33] If you remove VBE from here
+[29:35] Minus this term, minus IB
+[29:37] RB
+[29:39] So, VBE is reducing
+[29:41] Due to this RB resistance
+[29:43] If VBE is decreasing
+[29:45] It is acting as a negative feedback
+[29:47] Anything
+[29:49] Which is between the output and input
+[29:51] It is called feedback
+[29:53] And if it
+[29:55] Gets rid of the input
+[29:57] It is called negative feedback
+[29:59] So, if it is getting rid of VBE
+[30:01] It means
+[30:03] It is a negative feedback
+[30:05] So, VBE gets rid of
+[30:07] If VBE gets rid of
+[30:09] Your current will get rid of the transistor
+[30:11] Output voltage will get rid
+[30:13] Of which the gain will be reduced
+[30:15] If the input voltage of the transistor
+[30:17] Is reduced
+[30:19] Then the gain of the transistor will be reduced
+[30:21] How to avoid this?
+[30:23] What to do for this?
+[30:25] Divide RB into two parts
+[30:27] This is total
+[30:29] This is total RB
+[30:31] You have divided RB into two parts
+[30:33] RB1 and RB2
+[30:35] Now for DC analysis
+[30:37] Will this capacitor be open?
+[30:39] Okay
+[30:41] For DC analysis
+[30:43] Will this capacitor be open?
+[30:45] And in AC analysis
+[30:47] When this capacitor will be short
+[30:49] When this capacitor will be short
+[30:51] There will be no way to the base
+[30:53] From the collector to the ground
+[30:55] You understand
+[30:57] From the collector to the ground
+[30:59] And this resistance will come
+[31:01] From the base to the ground
+[31:03] You understand, I will draw it
+[31:05] What will happen in AC analysis
+[31:11] Your CB will be short
+[31:15] You understand
+[31:27] See, the resistance of the ammeter is coming down
+[31:29] See, the resistance of the ammeter is coming down
+[31:33] Will you ground this VCC
+[31:35] Will you ground this VCC
+[31:37] Will you ground this VCC
+[31:39] So this resistance will come
+[31:41] Between the collector and the VCC
+[31:43] This will come between the collector and the ground
+[31:45] If you ground the VCC
+[31:47] Then this resistance
+[31:49] Will come between the collector and the ground
+[31:51] Now see this
+[31:53] This is RB2
+[31:55] This is the collector
+[31:57] If this is short then it will come between the ground
+[31:59] Ground from the collector
+[32:01] So RB2 will also come
+[32:03] Ground from the collector
+[32:05] And this RB1
+[32:07] Going from the base
+[32:09] Ground from the base
+[32:11] See, the CB should be short
+[32:13] Ground from the base
+[32:15] So RB1 will come from the base
+[32:17] Now you see that
+[32:19] There is no way left
+[32:21] Between the collector and the base
+[32:23] Right?
+[32:25] Between the collector and the base
+[32:27] No feeding
+[32:29] No feeding
+[32:31] No feeding
+[32:33] No Feedback
+[32:35] So you put a capacitor in between
+[32:37] And broke the feedback path
+[32:39] Do you understand
+[32:41] The feedback path is broken
+[32:43] If the capacitor was removed
+[32:45] Then this RB1 and RB2
+[32:47] Will come between the collector and the base
+[32:49] Then this series will come
+[32:51] Between the collector and the base
+[32:53] So you have finished the feedback from here
+[32:55] Obviously
+[32:57] See, there is the REE feedback
+[32:59] I am not saying that I have removed the REE
+[33:01] I have removed the REE
+[33:03] The REE feedback is
+[33:05] You can remove it
+[33:07] Using Ammeter Bypass
+[33:09] Capacitor
+[33:11] Right?
+[33:13] Can be removed by
+[33:15] Bypass Capacitor
+[33:17] But this
+[33:19] The feedback from the collector
+[33:21] For this you divided
+[33:23] One resistance into two parts
+[33:25] And you gave one
+[33:27] Capacitor in between
+[33:29] If you look at the order of stability
+[33:31] If you look at the order of stability
+[33:33] Then the stability of self-bias
+[33:35] Is the most
+[33:37] The stability of the collector-base-bias
+[33:39] Is less than that
+[33:41] And whose stability is the least
+[33:43] Of fixed-bias
+[33:45] So the order of stability
+[33:47] Comes in decreasing order
+[33:49] Most of it is of the voltage divider
+[33:51] Now
+[33:53] Mr. Lochand is saying
+[33:55] In the previous year gate paper
+[33:57] What is the need to read it?
+[33:59] It is not deep
+[34:01] There are two ways of reading
+[34:03] Either read little things
+[34:05] And pay attention to writing
+[34:07] Or read basic things
+[34:09] The subject will be a little lazy
+[34:11] But the work will be less to remember
+[34:13] Now you see, I am telling you a lot of things
+[34:15] But I am making you remember
+[34:17] I mean, don't take the whole thing in the exam
+[34:19] Now if we think
+[34:21] How much it comes in the exam
+[34:23] If we read as much as it comes
+[34:25] Then how will you connect it?
+[34:27] Do you understand?
+[34:29] As I say in the book
+[34:31] 10th and 15th
+[34:33] And the question is from the 105th page
+[34:35] So will you directly
+[34:37] Read the 10th page and take the exam?
+[34:39] No, you should know
+[34:41] Its meaning
+[34:43] Then you will understand the meaning
+[34:45] When you will read the 9 pages at the back
+[34:47] So where does the question of doesn't matter
+[34:49] In a chapter
+[34:51] Unless you study that chapter carefully
+[34:53] You will not be able to understand those things
+[34:55] Right?
+[34:57] We can't just directly prepare for the question
+[34:59] That one question
+[35:01] We can read it
+[35:03] And the same question comes
+[35:05] And we can solve it
+[35:07] We have to learn the method
+[35:09] And the method develops from the concept
+[35:11] Zainul just said
+[35:13] Why did you put the capacitor in the middle?
+[35:15] So that the RB feedback path
+[35:17] Can be finished
+[35:19] If RB was in the feedback
+[35:21] If it was in the circuit
+[35:23] Then it would have been the feedback from the RB collector
+[35:25] If it was the feedback
+[35:27] Then the gain would have been your loss
+[35:29] We don't want this
+[35:31] The gain of the amplifier is less
+[35:33] If the gain of the amplifier is less
+[35:35] Then the loss of the amplifier
+[35:37] If the gain is not less
+[35:39] Then we will have to break the feedback
+[35:41] To break the feedback
+[35:43] We put a capacitor in the middle
+[35:45] Which will be open in DC
+[35:47] If it is open in DC
+[35:49] Then the circuit will run normally
+[35:51] And when it will be short in AC
+[35:53] Then it will ground the feedback path
+[35:55] From the middle
+[35:57] Then the feedback path will not be complete
+[35:59] So the feedback will not come
+[36:03] Dear, Lochan
+[36:05] What else should I discuss on this
+[36:07] You are saying that there is no need to study in the same way
+[36:09] Some chapters, some topics
+[36:11] Which can be left by the electrical
+[36:13] But the way to study the analog
+[36:15] Will be the same, right?
+[36:17] In analog
+[36:19] If we are studying BJT
+[36:21] Then how to study BJT?
+[36:23] That the electrical people should do this
+[36:25] Before the loss
+[36:27] And we should go from the first to the last
+[36:29] This will not happen
+[36:31] The strategy of the subject
+[36:33] The method of studying the subject
+[36:35] The approach will be common
+[36:37] Dear, what is the confusion
+[36:39] See, it goes like this
+[36:41] The current goes the same
+[36:43] And if the emitter current
+[36:45] Is coming from the transistor
+[36:47] Then the base and collector will enter
+[36:49] It is simple
+[36:51] If the emitter will leave
+[36:53] Then the base and collector will take the entering
+[36:55] And if the emitter will enter
+[36:57] Then the base and collector will take the leaving
+[36:59] Because IE will always be equal
+[37:01] To IB plus IC
+[37:03] So you will judge the emitter from the arrow
+[37:05] Once you get the emitter
+[37:07] Opposite to it
+[37:09] The base and collector are simple
+[37:11] Current
+[37:13] Now see
+[37:15] This is the stability factor
+[37:17] Which came because of ICBO
+[37:19] Which came because of whom?
+[37:21] Which came because of ICBO
+[37:23] Which came because of ICBO
+[37:25] But there was another problem
+[37:27] There was another problem
+[37:29] Whose was the drift?
+[37:31] Whose problem was the drift?
+[37:33] What did I tell you about the drift?
+[37:35] That with the temperature
+[37:37] Your VBE also changes, right?
+[37:39] VBE also changes
+[37:41] Now if VBE will change
+[37:43] Capacity, sorry
+[37:45] Due to temperature
+[37:47] And how much was the change?
+[37:49] Minus 2.5 millivolts
+[37:51] Per degree centigrade
+[37:53] So IB also changes
+[37:55] IB changes IC
+[37:57] Okay?
+[37:59] IB changes IC
+[38:01] So your Q point
+[38:03] Changes
+[38:05] When you change the temperature
+[38:07] When you change the temperature
+[38:09] What was the meaning of the drift?
+[38:11] Let's say
+[38:13] dVBE
+[38:15] By dt
+[38:19] Is minus 2.5
+[38:21] Millivolts
+[38:23] Per degree centigrade
+[38:25] So as temperature changes
+[38:35] VBE
+[38:37] Changes
+[38:39] If the voltage of base emitter
+[38:41] Will change then IB changes
+[38:49] From this IC will change
+[38:55] And Q point varies
+[38:57] We call this as drift
+[38:59] Okay?
+[39:01] I told you this before
+[39:03] What we call this as drift
+[39:05] Now the problem here
+[39:07] Is that
+[39:09] The Q point is changing
+[39:11] Due to change in VBE
+[39:13] What is the solution from this?
+[39:15] What is its value?
+[39:17] The value is
+[39:19] Take two transistors here
+[39:21] One PNP
+[39:23] And one NPN
+[39:25] One PNP
+[39:27] And one NPN
+[39:29] Now what to do in this?
+[39:31] Look at the KVL path carefully
+[39:33] This is VBE voltage
+[39:35] Which is the base of PNP
+[39:37] Which is the base of PNP
+[39:39] I will go from here
+[39:41] Okay?
+[39:43] I will reach the emitter from the base
+[39:45] Connected to the emitter
+[39:47] Second base
+[39:49] I will go to the emitter again from the second base
+[39:51] And then I will go to the ground
+[39:53] See
+[39:55] What I did? I started from the base
+[39:57] First I went to the emitter
+[39:59] Connected to the second base from its emitter
+[40:01] Then I went to the emitter again
+[40:03] Then I went to the ground from the emitter
+[40:05] Now connect the KVL here
+[40:07] VBE
+[40:09] Minus
+[40:11] Plus
+[40:13] VBE
+[40:15] How did I mark this minus plus?
+[40:17] This is PNP transistor
+[40:19] If it is PNP
+[40:21] Then you will take negative on P
+[40:23] Positive on P
+[40:25] Negative on N
+[40:27] Base junction is forward bias
+[40:29] Positive on P
+[40:31] Negative on N
+[40:33] And this one is NPN
+[40:35] Positive on P
+[40:37] Negative on N
+[40:39] So you reached here from VEB
+[40:41] Now minus
+[40:43] VBE
+[40:45] Minus
+[40:47] IERE
+[40:49] Equal to zero
+[40:51] Now you see
+[40:53] This is cancelled
+[40:55] This is cancelled
+[40:57] So what happened to this?
+[40:59] The KVL of the input loop
+[41:01] We eliminated VBE from there
+[41:03] And hence
+[41:05] The problem of drift is
+[41:07] Eliminated
+[41:09] Means you don't connect the NPN
+[41:11] Transistor directly to the supply
+[41:13] Give it supply
+[41:15] But with the help of a
+[41:17] PNP transistor
+[41:19] The term VBE will be cancelled
+[41:21] Out of which there will be
+[41:23] No problem of drift
+[41:25] So bias
+[41:27] Becomes
+[41:29] Independent
+[41:33] Independent
+[41:37] Of
+[41:39] VBE
+[41:45] So what do we understand from this?
+[41:49] To remove drift
+[41:55] Instead of
+[42:01] Instead of
+[42:03] Directly
+[42:09] Supplying
+[42:15] NPN transistor
+[42:25] We can connect
+[42:31] Supply through
+[42:41] PNP transistor
+[42:45] And cancel
+[42:49] VBE
+[42:51] How can you cut the VBE
+[42:53] from the KVL?
+[42:57] If both are made of silicon
+[42:59] Then there will be 0.7 and 0.7
+[43:01] If both have VBE
+[43:03] Listen carefully
+[43:05] If both have VBE
+[43:07] Then there will be
+[43:09] 2.5 millivolts per degree
+[43:11] If both have
+[43:13] The same variation
+[43:15] Then the variation will be cancelled
+[43:17] Listen carefully again
+[43:19] 1 voltage is 0.6
+[43:21] 0.7
+[43:23] But both have 2.5 millivolts per degree
+[43:25] For 10 degree
+[43:27] Both have 25 millivolts
+[43:29] That's why the difference is the same
+[43:31] If both have the same variation
+[43:33] Then the difference is constant
+[43:35] So that difference
+[43:37] Becomes independent of temperature
+[43:39] And we need
+[43:41] Temperature independence
+[43:43] We have to cancel VBE
+[43:45] What we want is it should not change
+[43:47] With the temperature
+[43:49] This is the main thing
+[43:51] Jayesh is asking
+[43:53] Can NPN and PNP position change?
+[43:55] It depends on the final output
+[43:57] What you want
+[43:59] If you have a NPN transistor
+[44:01] Your main device
+[44:03] Which you want to run as an amplifier
+[44:05] Then you are supplying it
+[44:07] With the help of PNP
+[44:09] If your PNP transistor
+[44:11] Would have worked as an amplifier
+[44:13] Then you would have supplied it
+[44:15] With the help of NPN
+[44:17] Which is the main device?
+[44:19] The main device will be the second
+[44:21] And the helping device
+[44:23] Will be the first
+[44:25] Trigon is saying
+[44:27] How VEB minus VBE
+[44:29] Cancel each other
+[44:31] The value of both is 0.7
+[44:33] That's why both have been cancelled
+[44:35] In PNP, the base drop is 0.7
+[44:37] From the emitter
+[44:39] In NPN, the base drop is 0.7
+[44:41] From the emitter
+[44:43] The difference in the output
+[44:45] Because the output of one is
+[44:47] Making an input for the other
+[44:49] Then the output of that will be more
+[44:51] Suppose the first transistor
+[44:53] Amplified the signal a little
+[44:55] It gave a factor of 10
+[44:57] Now it worked as an input for the other transistor
+[44:59] So even if it gave a gain of 10
+[45:01] Then how much would the overall gain be?
+[45:03] 100?
+[45:05] Think about it once
+[45:07] Did you understand my logic?
+[45:09] If the first transistor amplifies the signal
+[45:11] By a factor of 10
+[45:13] If the second one is also doing it with a factor of 10
+[45:15] Then look at the output of the first transistor
+[45:17] The input of the other one
+[45:19] If the input of the other one is made
+[45:21] Then the output of that will be more
+[45:23] And the configuration
+[45:25] The configuration of both the transistors
+[45:27] Is a common collector
+[45:31] Sir, how do you know?
+[45:33] Look at the common collector
+[45:35] There was input on the base
+[45:37] Output on the emitter
+[45:39] So the collector's grounded
+[45:41] was a common collector
+[45:43] Then it also had input on the base
+[45:45] And output on the emitter
+[45:47] So what happened?
+[45:49] And when two transistors are used
+[45:51] In the common collector
+[45:53] It is called Darlington pair
+[45:55] What do you call it?
+[45:57] Darlington pair
+[45:59] I will teach it further
+[46:01] It is called multi-stage amplifier
+[46:03] Multi-stage means
+[46:05] In which you are amplifying multiple times
+[46:07] And increasing the overall gain
+[46:09] If we exchange both
+[46:11] Then what will be the difference?
+[46:13] Then there won't be any special difference
+[46:15] R has not been used on the PNP
+[46:17] It is not a problem to use the emitter resistance here
+[46:19] It is not a problem to use the emitter resistance here
+[46:21] Don't go deep into the circuit
+[46:23] Think of it as a basic thing
+[46:25] Which is canceling both the VBE
+[46:27] Okay, you have to put a little bit of this
+[46:29] The whole DC, AC
+[46:31] You don't have to do anything
+[46:33] Now you just have to understand
+[46:35] If the VBE is cut
+[46:37] Then one problem gets less
+[46:39] That is the drift
+[46:41] It is good that you are thinking deep
+[46:43] But learn to limit yourself
+[46:45] Because if we go
+[46:47] Into everything
+[46:49] Then the course can be long
+[46:51] There won't be any limit
+[46:53] Okay, now look at the second method
+[46:55] To achieve this
+[46:59] It is good that you are
+[47:01] Making your curiosity
+[47:03] You are thinking of analyzing
+[47:05] You are keeping confidence
+[47:07] Looking at the circuit
+[47:09] What will happen in your mind
+[47:11] How will it be
+[47:13] If this is a thought process
+[47:15] It is a very good thing
+[47:17] Okay, thought process is good
+[47:19] No doubt
+[47:21] See what is the voltage
+[47:23] What is the circuit
+[47:25] Which has the same output and input
+[47:27] Now you will say
+[47:29] What is the need for this
+[47:31] The logic is good
+[47:33] The signal
+[47:35] Needs to be boosted
+[47:37] The signal goes down slowly
+[47:39] So when it needs to be boosted
+[47:41] Then we make use of
+[47:43] Voltage follower
+[47:45] Boost doesn't mean amplify
+[47:47] As such, don't think directly
+[47:49] Amplify the signal
+[47:51] To restore on the original level
+[47:53] Or sometimes
+[47:55] We have to give delay between input and output
+[47:57] To give that delay
+[47:59] We use voltage follower
+[48:01] It is like a buffer
+[48:03] The input that comes
+[48:05] Will pass it
+[48:07] Now see here
+[48:09] What happens here
+[48:11] This is opamp
+[48:13] We will read this ahead
+[48:15] I will talk about MOSFET
+[48:17] Opamp
+[48:19] There is a concept of virtual short
+[48:21] Whose is it
+[48:23] Virtual short
+[48:25] Virtual short says
+[48:27] Whenever there is negative feedback
+[48:29] So
+[48:31] Both the input terminals
+[48:33] Will have the same voltage
+[48:35] Okay
+[48:37] I will read this ahead
+[48:39] Why did it come
+[48:41] Both the terminals
+[48:43] Will have the same voltage
+[48:45] So if there is VIN
+[48:47] There will be VIN here
+[48:49] So VIN came here
+[48:51] So current came here
+[48:53] VIN by RE
+[48:55] So there is no VBE
+[48:57] There is no VBE
+[48:59] Understand
+[49:01] There is no VBE
+[49:03] By taking out current
+[49:05] There is no VBE
+[49:07] This is what we wanted
+[49:09] That when the current is taken out
+[49:11] Then VBE should not be affected
+[49:13] On that current
+[49:15] There should be no VBE
+[49:17] On that current
+[49:19] So in this way
+[49:21] You can avoid the problem of drift
+[49:23] Sir, don't do today's video
+[49:25] I am sure it will be private today
+[49:27] Because your attendance
+[49:29] Which was above 100
+[49:31] Has reached 60-70
+[49:33] So you will have to tighten the kids
+[49:35] You will have to be serious
+[49:37] Earlier I was thinking to public all the videos
+[49:39] Now I will not do it
+[49:41] Because this is something that you need to be very very serious about
+[49:43] It is not that
+[49:45] If I say voltage
+[49:47] If I public the video
+[49:49] Then you guys leave it
+[49:51] This is its undue advantage
+[49:53] As soon as you guys develop soft corner in my mind
+[49:55] Come on kids
+[49:57] So you show that we are not kids
+[49:59] We are devil people
+[50:01] You do like this
+[50:05] That PAMP is indirectly connected
+[50:07] With base emitter
+[50:09] It is not necessary directly
+[50:11] There can be diode in between
+[50:13] There can be resistance or a capacitor
+[50:15] There is a diode here
+[50:17] PN junction
+[50:19] There is a PN junction between the output and the input
+[50:21] Okay
+[50:23] Come on
+[50:25] Let's go ahead
+[50:27] Now let's come to the next biasing
+[50:29] Dual supply
+[50:31] Look dual supply means
+[50:33] There is supply on the collector
+[50:35] Positive voltage Vcc
+[50:37] And there is supply on the emitter
+[50:39] Minus VEE
+[50:41] Okay
+[50:43] There is supply on the collector
+[50:45] And there is supply on the emitter
+[50:47] Minus VEE
+[50:49] There are two supplies
+[50:51] Vcc
+[50:53] Minus VEE
+[50:55] Don't give public suggestions
+[50:57] Now I am going to public the video
+[50:59] Okay, we will talk more about public
+[51:01] About public
+[51:03] Vcc and Minus VEE
+[51:05] You have two supplies
+[51:07] That is why we are calling it dual supply
+[51:09] Now what is done in dual supply
+[51:11] Look, I have grounded the base here
+[51:13] Sir, why did you ground the base
+[51:15] Why didn't you supply here
+[51:17] Otherwise triple supply would have been done
+[51:19] So dual supply is done
+[51:21] Now look here is zero
+[51:23] Here is negative voltage
+[51:25] Here is zero and here is minus 10
+[51:27] This is the transistor
+[51:29] NPN
+[51:31] Now in NPN
+[51:33] If you gave
+[51:35] Zero to P
+[51:37] Zero to P
+[51:39] Minus 10 to N
+[51:41] So the voltage of P is more than N
+[51:43] Think about it
+[51:45] If you put zero here
+[51:47] Instead of that you gave zero here
+[51:49] And gave negative here
+[51:51] So the voltage of P is more than N
+[51:53] So what happened
+[51:55] Forward
+[51:57] Son, there was only one supply
+[51:59] In every circuit only Vcc
+[52:01] It was connected to two terminals
+[52:03] But one supply was Amman
+[52:05] Vcc
+[52:07] You were also running the base
+[52:09] And also the collector
+[52:11] Now look
+[52:13] We will put KVL
+[52:17] We will put KVL
+[52:19] You will write
+[52:21] Zero
+[52:23] Minus IB
+[52:25] RB
+[52:27] Minus VBE
+[52:29] Okay
+[52:31] Minus IE
+[52:33] RE
+[52:35] Is equal to
+[52:37] Minus
+[52:39] VEE
+[52:41] You will write this
+[52:43] You wrote this
+[52:45] Now here also son
+[52:47] If you want
+[52:49] To remove the stability factor
+[52:54] Do one thing
+[52:56] Cut it from all the places
+[53:01] Cut it minus
+[53:09] Write IE
+[53:11] IB plus IC
+[53:19] Okay
+[53:21] Now what do you do son
+[53:23] Differentiate here on both sides
+[53:31] Del IB by Del IC RB
+[53:35] Then this is zero
+[53:37] Del IB by Del IC RE
+[53:41] Okay
+[53:45] And then plus RE
+[53:47] Equal to zero
+[53:49] So here
+[53:51] Del IB by Del IC
+[53:53] You see
+[53:55] The fixed bias is the formula
+[53:59] This is also coming in the fixed bias
+[54:05] So here the stability factor
+[54:07] One plus beta by
+[54:17] One plus beta by
+[54:29] This is coming
+[54:31] Same is coming in the fixed bias
+[54:33] Tell me
+[54:35] Same is coming in the fixed bias
+[54:37] So we call this dual supply
+[54:39] Here positive supply on the collector
+[54:41] And negative on the emitter
+[54:43] If the same is there
+[54:45] If the same was there
+[54:47] If it was
+[54:49] That PNP transistor
+[54:51] Suppose if this PNP transistor
+[54:53] Had been there
+[54:55] Then you would have put positive on the collector
+[54:57] And positive on the emitter
+[54:59] Then you would have put positive on the collector
+[55:01] And positive on the emitter
+[55:03] If it was a PNP transistor
+[55:05] was a PNP transistor. If it was a PNP transistor, then the collector is negative and the emitter is positive.
+[55:13] Look, what you have to keep in mind is that there is no need to worry about NPN and PNP.
+[55:18] Sir, we know one way. There is only one difference between NPN and PNP.
+[55:23] That the polarity of the voltage has to be reversed. If VBE is here, then VE will also be there.
+[55:30] If VCC is positive, then VCC will be negative. If VEE is negative, then it will be positive.
+[55:36] Second, reverse the direction of the current.
+[55:39] Here the emitter current comes out, it will go in there.
+[55:42] Here the base current goes in, it will come out there. Here the collector current goes in, it will come out there.
+[55:49] So reverse the current and voltage. Your PNP and PNP can be both.
+[55:55] Now look at the advantage of dual supply. Output voltage swing increases.
+[56:03] Sir, what does this mean? Output voltage swing increases.
+[56:08] This means that the gap between the maximum and minimum limit of output voltage has increased.
+[56:16] Suppose this was 10 and here it was 0, then the maximum value of output voltage could have been 10V.
+[56:23] Or the AC value of output voltage could have been 10.
+[56:29] If you put 10 here, minus 10 here, now it is the gap of 20, then the AC value of output voltage can be 20.
+[56:40] So the range has increased. You can take it to the maximum limit. You can obtain more output voltage.
+[56:46] I will not say that the gain has increased. The gain will never directly depend on these voltages.
+[56:52] It will indirectly do it, but it will not directly depend on these voltages.
+[56:56] But what has actually increased? The range has increased.
+[56:59] Because what would have happened, look. If you consider that it would have been 10 and 0, listen carefully.
+[57:05] It would have been 10 and 0. Now if the output voltage was amplified and tried to go ahead of 10,
+[57:11] then it would have clipped to 10. Because it could not go above 10.
+[57:16] You understand? Then comes distortion, then comes harmonics. Because the shape of the waveform has changed.
+[57:22] But if it is 10 and minus 10, then the voltage amplifier can take the peak to peak value of 20V between minus 10 and 10.
+[57:33] So there are few chances that the waveform will be clipped or there are few chances that the waveform will be distorted.
+[57:39] What does swing mean? Swing means difference between or swing means peak to peak value.
+[57:49] Limit of VPP.
+[57:53] Why is this limit important to everyone? Because whenever the output tries to go above the limit,
+[58:02] then the amplifier will cut it, work as a clipper and clip it.
+[58:07] And it is very difficult to clip. Suppose my voice signal has changed the shape of the amplifier.
+[58:14] Then I will say something and you will hear something else.
+[58:17] So shape is very important. The shape of a signal contains information of the signal in it.
+[58:25] If that shape changes, then that information will change.
+[58:29] Then you will send something and receive something else.
+[58:33] So you should not clip or distort. Shape should never ever change.
+[58:40] Now come. Now I have made this voltage divider with dual supply.
+[58:46] If I tell you to draw its voltage divider network, then you will remove the transistor.
+[58:55] You will draw like this.
+[59:01] Okay.
+[59:02] I am putting this technique here.
+[59:14] What do I want? I want a base voltage with respect to ground.
+[59:22] What do I want? I want a base voltage with respect to ground.
+[59:28] Now here the ground is not visible. Here the ground is not visible.
+[59:32] So what do we do? We use superposition.
+[59:36] When dual supply means superposition, then take one voltage at a time.
+[59:42] Now if you take one voltage at a time, then what are we doing?
+[59:48] Use superposition.
+[59:56] So we are saying only VCC.
+[59:59] So when you are taking only VCC, then you will ground VEE.
+[60:13] Then you will ground it. You will have to zero the other source.
+[60:19] Now you need a voltage between the base and the ground, right?
+[60:24] I have called this VB1.
+[60:29] Okay.
+[60:31] Now the voltage between the base and the ground means R2's voltage.
+[60:35] Because this is also base ground, base ground.
+[60:38] R2 is required.
+[60:39] So what will you say here?
+[60:41] Okay. VCC R2 by this is done.
+[60:53] Now you will take the second case.
+[60:58] Only minus VEE.
+[61:02] Now you will ground VCC.
+[61:11] Now you need a voltage between the base and the ground.
+[61:31] Now base and ground, base and ground, that is R1's cross.
+[61:37] Okay.
+[61:38] Now you need a cross between R1's cross.
+[61:41] So what you will say here is VB2 is minus VEE R1 by R1 plus R2.
+[61:52] So your base voltage will be VB1 plus VB2
+[61:59] VCC R2 minus VEE R1.
+[62:18] And R Thevenin will still be the same.
+[62:22] You will short both of them.
+[62:24] You will ground them.
+[62:27] So R1, R2 will come in parallel.
+[62:29] Because for R Thevenin, you will ground both the supplies.
+[62:33] So now you know how your circuit will turn out.
+[62:37] Now your circuit will turn out like this.
+[62:59] Look at this, this is RTH and this is VBE.
+[63:05] Okay.
+[63:06] Now you can easily put your KVL here.
+[63:09] This voltage will be VBE.
+[63:13] This current will be IBE, IE and IEC.
+[63:23] And IEC, like this, is it clear?
+[63:32] Clear?
+[63:33] What type of deal do you have to deal with this?
+[63:35] How will you take out VB?
+[63:37] With the help of superposition?
+[63:40] How will you take out with the help of superposition?
+[63:42] Now notice one thing here.
+[63:44] If you want to write stability factor.
+[63:47] I just told you a shortcut.
+[63:49] 1 plus beta, 1 plus beta, sum of resistances carrying IEC.
+[63:58] IEC is going from which?
+[64:00] From RC and RE.
+[64:02] Sum of resistances carrying IEC divided by, sorry, IE, RE will come here.
+[64:12] Because only RE will come in input loop KVL.
+[64:16] Sum of resistances carrying IBE.
+[64:24] Okay, sorry, RTH.
+[64:29] Look at the input loop.
+[64:31] What kind of resistances are there in which RIC is going.
+[64:35] From here to here, IEC is going into this.
+[64:38] RE.
+[64:39] Don't say that sir, it is also going in the upper one.
+[64:41] The upper one is not a part of this KVL.
+[64:44] It is not a part of this KVL.
+[64:46] So RE and IB are also going in this.
+[64:48] If it is also going in this, then RE plus RTH is below.
+[64:51] Did it shine?
+[64:52] The loop in which you are carrying KVL, then IEC passes through which resistance?
+[64:57] Divided by IE, sorry, IB passes through which resistance?
+[65:03] The last biasing is constant current biasing.
+[65:07] What do we do in constant current biasing?
+[65:10] We give a current source in ammeter.
+[65:13] In ammeter, we give a current source.
+[65:16] Look at IE.
+[65:19] Now it is being asked here how to deal with constant current biasing.
+[65:24] So look at IE.
+[65:27] This is our constant.
+[65:31] Now this IEC is also approximately equal to IE.
+[65:37] If the value of beta is high.
+[65:39] When beta is high, then IB is ignored.
+[65:43] Now when you take out VCE here, then you will put KVL.
+[65:50] But you will not be able to take it out.
+[65:52] Do you know why?
+[65:53] Because you do not know the voltage of the current source.
+[65:58] You do not know the voltage of the current source.
+[66:03] So sir, how do we take it out then?
+[66:05] Look, how will you take it out?
+[66:07] I will tell you.
+[66:09] You keep grounding here because the dual supply is there.
+[66:13] So if this is zero and this is the drop of VBE, then minus VBE will come here.
+[66:20] Understood?
+[66:21] If you have grounded the base and here is the drop of VBE.
+[66:27] How much will the drop of VBE come?
+[66:29] Minus VBE?
+[66:30] Minus VBE has come?
+[66:32] Now I will tell you that tell me the collector voltage.
+[66:35] Ammeter voltage is minus VBE.
+[66:42] You can take out the collector voltage from KVL.
+[66:46] VCC minus ICRC.
+[66:50] Which voltage will you get if there is a drop of VCC above?
+[66:53] Collector.
+[66:55] So when you take out VCE, then you will get VCE minus VEE.
+[67:02] Okay, you will get VCE.
+[67:04] Do you know what is the benefit of this?
+[67:07] The benefit of this connection is that it has a highly stable Q point.
+[67:14] Highly stable Q point.
+[67:19] Okay, why is Q point stable?
+[67:21] Because my children, you have put the current source.
+[67:25] Now the collector's current cannot be changed.
+[67:28] Now your collector's current cannot be changed when you have put the current source.
+[67:35] Okay, clear?
+[67:41] Let's go ahead and tell.
+[67:43] So all these biasing techniques have been covered by you.
+[67:46] Now I will show you how to make questions and how to tackle them.
+[67:50] Look, the first question, find the Q point IC comma VCE.
+[67:56] IC comma VCE.
+[68:05] Take this.
+[68:10] Make it.
+[68:12] Son, what is the need to summarize, Pawan?
+[68:16] You don't have to remember any biasing.
+[68:20] You won't be able to remove its sensitivity, right?
+[68:26] You won't be able to remove its sensitivity, right?
+[68:32] Because the del IC has become zero in one way.
+[68:36] So its sensitivity has become zero, right?
+[68:39] Del IC, because IC cannot change.
+[68:42] If the del IC becomes zero, then the del IB by del IC has become infinite.
+[68:48] Now the del IB by del IC has become infinite.
+[68:50] If the denominator is infinity, then the sensitivity will be zero, right?
+[68:56] Dinesh, son, for every child, sometimes one video, sometimes two videos,
+[69:00] you can't public it at all, okay?
+[69:04] Whenever you are there, you can watch it and continue on.
+[69:08] It's not like you won't be able to do syllabus on the basis of lecture 8, 9, 10.
+[69:12] It's not like that at all.
+[69:14] You continue with BJT.
+[69:16] There is no problem.
+[69:18] And due to the public, the public has stopped coming.
+[69:22] Now you are saying, public this.
+[69:24] Do it one by one.
+[69:26] Every one of them has two children.
+[69:28] One of them has a minor lecture.
+[69:34] Come on, everyone will do it quickly.
+[69:38] What is this biasing?
+[69:40] It's a voltage divider biasing.
+[69:42] What will you do if it's a voltage divider biasing?
+[69:44] Vth and Rth.
+[69:46] Vth and Rth.
+[69:54] Let's see.
+[69:58] I am also a calculator.
+[70:24] Let's see.
+[70:36] First, let's take out Vth.
+[70:40] Do you know that this is a voltage division?
+[70:44] 18 into 10 by 33 plus 10.
+[70:50] How much is it?
+[70:52] Tell me.
+[70:54] 180 by 43.
+[70:56] It looks like a voltage divider network.
+[71:02] How much is it coming?
+[71:04] Vth.
+[71:06] Tell me quickly.
+[71:08] 4.18.
+[71:10] 4.18 volt.
+[71:14] Rth.
+[71:16] What will you do?
+[71:18] Will you ground it?
+[71:20] 33 and 10 are parallel.
+[71:22] How much is it coming?
+[71:24] 330 by 43.
+[71:26] 7.67.
+[71:34] Let's see what will be done here.
+[71:38] Let's draw a new circuit here.
+[71:50] 7.67.
+[71:52] 4.18.
+[71:54] Let's see what will you do here.
+[71:56] I also came here.
+[71:58] Let's see what will be done here.
+[72:00] Let's see what will be done here.
+[72:02] 7.67.
+[72:04] 4.18.
+[72:06] 4.18.
+[72:08] 4.18.
+[72:10] 4.18.
+[72:12] 4.18.
+[72:14] 4.18.
+[72:16] 4.18.
+[72:18] Here comes the retrieval from LED.
+[72:20] I also came here.
+[72:22] Here comes the retrieval from it.
+[72:24] We will get this drop of 0.7.
+[72:26] So put KVL in input loop.
+[72:40] First 4.18 minus 7.67 IB minus 0.7 minus 1 into IE is equal to 0.
+[73:00] Now IE is equal to 1 plus beta IB.
+[73:05] 4.18 minus 0.7 is 3.48, 7.67 IB.
+[73:14] If you write IE as 1 plus beta IB then it is 51 IB.
+[73:19] So what will be IB?
+[73:22] 58.67 is equal to IB.
+[73:26] Tell me how much it will be?
+[73:28] Tell me quickly.
+[73:31] How much is IB from here?
+[73:38] 0.0594.
+[73:40] 0.0594.
+[73:49] Once IC is here, you will take out IB, beta IB.
+[73:53] You will take out IC, beta IB.
+[73:57] Tell me how much it will be?
+[73:59] Beta is given as 50.
+[74:01] 0.0594.
+[74:03] No.
+[74:05] 0.0594 will multiply by 100.
+[74:09] 2.96.
+[74:12] Okay.
+[74:19] Beta is given as 50.
+[74:21] Now you see you need VCE.
+[74:27] So now you will have to apply KVL.
+[74:32] Okay.
+[74:33] Now if you apply KVL like this.
+[74:37] So you will write 18 minus VCE minus 1 IE.
+[74:54] So how much VCE will be?
+[75:00] IC is 2.96.
+[75:04] And IE will be 1 plus beta means 51 into 0.0594.
+[75:11] Okay.
+[75:12] Pay attention to the units.
+[75:14] I am getting all the current in milli ampere.
+[75:17] Okay.
+[75:18] I am getting all the current in milli ampere.
+[75:20] And I am getting all the resistance in kilo ohm.
+[75:23] So what is it becoming by getting milli ampere and kilo ohm?
+[75:26] It is becoming volt.
+[75:27] Tell me how much it is?
+[75:29] 8.436.
+[75:32] Now tell me how did everyone get it wrong?
+[75:35] You people were telling a different answer.
+[75:39] 468.
+[75:43] Yes.
+[75:44] And it is bigger than 0.2.
+[75:47] This means our assumption is right.
+[75:50] It is active.
+[75:52] We were right.
+[75:55] Why?
+[75:56] Where did it go wrong?
+[75:57] Tell me.
+[76:03] Calculation.
+[76:05] It is clear how to tackle the question.
+[76:07] You have to do it with the whole network.
+[76:09] You should not remember any circuit work.
+[76:11] You will make a circuit in the exam.
+[76:13] You will put KVL KCL.
+[76:15] You will give the question.
+[76:17] Come on, try the next one.
+[76:21] Try the next one.
+[76:22] Look, whenever you write such a question,
+[76:24] high value of beta.
+[76:27] What is the significance of this?
+[76:30] Sir, I will also take zero.
+[76:33] Base current zero.
+[76:35] If you do base current zero,
+[76:37] then the current of collector and emitter is equal.
+[76:41] IC is equal to IE.
+[76:43] Do it now.
+[76:49] Find the value of current IE.
+[76:59] This one is missing.
+[77:03] This is 6.5.
+[77:05] I.
+[77:07] I current IE.
+[77:09] This is IE.
+[77:11] Come on.
+[77:15] This is IE.
+[77:17] This is IE.
+[77:19] This is IE.
+[77:21] This is IE.
+[77:23] This is IE.
+[77:25] This is IE.
+[77:58] This is a very difficult question.
+[78:01] Shouray,
+[78:03] it is not like you have rolled in the other ball.
+[78:06] It is a very easy question.
+[78:08] It is easy for the last one.
+[78:20] Whoever has learned to put a network in analog,
+[78:23] then no matter how big the analog circuit is,
+[78:25] it doesn't matter.
+[78:27] There will always be an answer.
+[78:45] I gave you a hint.
+[78:49] Now you are asking for a hint.
+[78:56] Look,
+[78:58] I will make it.
+[79:00] First thing to understand is,
+[79:02] when the high value of beta is,
+[79:04] the base current is zero.
+[79:12] Collector, current and emitter are equal.
+[79:17] Do you understand?
+[79:19] Look at this transistor.
+[79:21] Collector and emitter are equal.
+[79:23] Then the collector and emitter are equal.
+[79:26] Tell me, are these things clear?
+[79:28] Are these things clear?
+[79:32] Tell me quickly.
+[79:34] Is this clear or not?
+[79:36] That the collector and emitter are equal.
+[79:39] Is this clear?
+[79:41] There will be high current in the entire branch.
+[79:44] Now look at this.
+[79:47] If the current is I1,
+[79:51] if it is zero here,
+[79:53] then there will be I1 here too.
+[79:55] If it is zero again, then there will be I1 below.
+[79:58] Tell me, are these things clear?
+[80:00] Are these things clear?
+[80:02] If the current is I1, I1, I1 in all three resistances,
+[80:05] then can you say that these are in all three series?
+[80:08] Tell me.
+[80:10] Can you say that these are in all three series?
+[80:13] Can you say that?
+[80:15] If my children are in series,
+[80:18] then the voltage division can be seen in the series.
+[80:22] So if I tell you to tell me this V1,
+[80:26] what will you say?
+[80:28] V1 will come from the voltage division.
+[80:30] Total is 10.
+[80:33] 10 into 1.65
+[80:36] upon
+[80:38] the sum of all three resistances.
+[80:42] Tell me, are these things clear?
+[80:48] Are these things clear?
+[80:52] Tell me, are these things clear?
+[80:56] Tell me, are these things clear?
+[81:00] Tell me, are these things clear?
+[81:04] Tell me quickly.
+[81:06] Are these things clear?
+[81:09] Now if these things are clear,
+[81:12] then you have given VBE 0.65.
+[81:19] 0.65?
+[81:22] So if I tell you to tell me V2,
+[81:25] you will say by looking at KVL that
+[81:28] V1 is the voltage of the base.
+[81:30] Subtract 0.65 in that.
+[81:34] That is 1V.
+[81:36] Now if we get 1V V2,
+[81:38] then I is V2 by
+[81:40] 1 kilo
+[81:44] 1 milli ampere.
+[81:46] That's it.
+[81:48] Isn't it? 1 milli ampere.
+[81:50] Look, the calculation was very short.
+[81:53] It was purely a conceptual question that
+[81:55] if I was 0,
+[81:57] then what kind of deduction did you take?
+[81:59] I1, I1, I1 will be here.
+[82:01] I, I, I will be here.
+[82:04] If you put KVL in the outer loop,
+[82:06] then I1 will come. If you put it from the outside,
+[82:08] then I1 will come.
+[82:12] If you don't open it,
+[82:14] then approximate is 0.
+[82:16] If you open it, then it will be wrong.
+[82:18] Isn't it? It will be disconnected.
+[82:20] Then you will say that if it is disconnected,
+[82:22] then how is BJT going?
+[82:24] The supply is not there.
+[82:26] Then you will start saying that. Not like that.
+[82:28] Approximate is 0.
+[82:30] So Shil brother, because only in online
+[82:32] platform, I mean
+[82:34] there is no cross country. My content is good.
+[82:36] All the people online are good.
+[82:38] You are saying that?
+[82:41] Come on.
+[82:43] Look at the next one.
+[82:45] Can you see the value?
+[82:47] VBE is given as 0.7.
+[82:49] Large value of beta is given.
+[82:51] Do it.
+[82:52] It is a very easy question.
+[82:54] Think again. Large value of beta.
+[83:01] Come on everybody.
+[83:04] And my brother, the lecture of semi-conductor
+[83:06] is public.
+[83:07] There is no private of semi-conductor.
+[83:11] You are really trapped in KVL.
+[83:16] The voltage is V1 on this node.
+[83:18] Okay.
+[83:19] The drop of 0.65 is coming here.
+[83:22] So how much will it get here?
+[83:24] It will get at this point.
+[83:26] V1 from where it went.
+[83:28] Then minus 0.65.
+[83:30] Because the drop is equal to V2.
+[83:32] That is why I am saying that
+[83:34] before analog, the network is important.
+[83:36] Because the addition of this simple voltage
+[83:38] and subtraction of KVL and KCL
+[83:40] should come.
+[83:56] Yes, it is daily from Monday to Saturday.
+[84:02] What is it? 0.01?
+[84:04] It is 10 milliamperes.
+[84:06] Let's see.
+[84:08] Look.
+[84:10] Large value of beta
+[84:12] means I will also be zero.
+[84:14] And IC and IE
+[84:16] will be equal.
+[84:18] Correct.
+[84:20] Now, if my children
+[84:22] go to zero mpr here
+[84:24] then
+[84:26] they will come in the series
+[84:28] of 10 kilo ohms and 5 kilo ohms.
+[84:30] Tell me.
+[84:32] Will these two come in the series?
+[84:34] Because no current is going
+[84:36] from the middle.
+[84:38] If these come in the series
+[84:40] then you can tell V1
+[84:42] from the voltage division.
+[84:44] What will be V1?
+[84:46] 15.
+[84:48] Put the voltage division in the series.
+[84:50] 5.
+[84:52] By 10 plus 5.
+[84:54] So this will be 5 volts.
+[84:56] 5 volts.
+[84:58] So this will be 5 volts.
+[85:00] Okay.
+[85:02] If it is 5 volts
+[85:04] then I will tell you
+[85:06] if V2
+[85:08] then you will say, sir, look here.
+[85:10] It is a drop of 0.7.
+[85:12] If the base emitter
+[85:14] is a drop of 0.7
+[85:16] then V2 will be
+[85:18] V1 minus 0.7.
+[85:20] 5 minus 0.7.
+[85:24] 4.3
+[85:26] volts.
+[85:28] If this happens then how much IEC will come?
+[85:30] 4.3
+[85:32] by
+[85:34] 430 ohms.
+[85:36] 10 milli ampere.
+[85:38] Very good.
+[85:40] Isn't it?
+[85:42] Like the last one.
+[85:44] So this high beta is very common in exams.
+[85:46] And the question
+[85:48] becomes very easy with this.
+[85:50] Look at the next one.
+[85:52] You have to tell the Q point.
+[85:54] What does this mean?
+[85:56] This dual supply is IC
+[85:58] and VCE.
+[86:00] Their value
+[86:02] on DC.
+[86:04] What is the beta?
+[86:06] Do it quickly.
+[86:24] What is the time constant
+[86:26] in the parallel and series
+[86:28] ADLC circuit?
+[86:30] It depends on the
+[86:32] under damped system.
+[86:34] Okay.
+[86:36] Under damped system.
+[86:38] So in that
+[86:40] your 1 by
+[86:42] 1 is the
+[86:44] 1 by 1.
+[86:46] What is the time constant?
+[86:48] It depends on the
+[86:50] under damped system.
+[86:52] Inside this your 1 by
+[86:54] 1 by alpha is
+[86:56] 1 by
+[86:58] 1 by
+[87:00] 1 by
+[87:02] 1 by
+[87:04] 1 by
+[87:06] 1 by
+[87:08] 1 by
+[87:10] 1 by
+[87:12] 1 by
+[87:14] 1 by
+[87:16] 1 by alpha.
+[87:18] And if there is an over damped system
+[87:20] then
+[87:22] I will check the rest.
+[87:30] Let's make this one.
+[87:34] Now beta is not high.
+[87:36] The value of beta is
+[87:38] 100.
+[87:42] So now the direct one will not go down.
+[87:44] We will have to solve it properly.
+[87:46] No, beta, this will not happen.
+[87:48] Soarov, my brother.
+[87:50] I know that many children will
+[87:52] get to know about it.
+[87:54] It may be that I will public it in the coming months
+[87:56] but not now.
+[87:58] It cannot be like this.
+[88:00] By on demand, if you get to know about it
+[88:02] then today the video should be public.
+[88:04] Then I will private it after you see it.
+[88:06] Then if there is a child
+[88:08] then I will public it.
+[88:10] So this cannot happen.
+[88:12] And the reason behind private is
+[88:14] because when the lecture is public
+[88:16] then the children do not take it seriously.
+[88:18] The children do not come and think that they will see it later.
+[88:20] The syllabus also leaves
+[88:22] and the teacher's motivation also falls.
+[88:28] And I took 3 years to learn this.
+[88:38] I got the answer.
+[88:40] Look, I had made it
+[88:42] that
+[88:44] at this point
+[88:46] Vth and Rth
+[88:48] come out.
+[88:50] Right? How is Vth?
+[88:52] How is Vth?
+[88:54] Not attention, attendance.
+[88:56] How is Vth?
+[88:58] I had told you
+[89:00] first take 5V of the dual supply.
+[89:02] Take 2 of it
+[89:04] across the division.
+[89:06] 2 by 12 plus 2.
+[89:08] 12 plus 2.
+[89:10] Then it is below minus 5.
+[89:12] Take 12 of it across.
+[89:16] 12 by 12 plus 2.
+[89:20] 10 or 60, then 50
+[89:24] by 14
+[89:28] minus 25 by 7V.
+[89:32] Take minus 25 by 7V.
+[89:34] And Rth
+[89:38] 12
+[89:40] parallel to
+[89:42] 12 by
+[89:44] 7.
+[89:46] Right?
+[89:48] Now how will we draw
+[89:50] the circuit?
+[90:04] Take
+[90:16] minus 25 by 7.
+[90:18] Where 12 by 7.
+[90:24] Take 5KV
+[90:26] 5V.
+[90:34] Right?
+[90:36] Then 0.5KM
+[90:42] minus 5.
+[90:44] Right?
+[90:46] Now how much has Vbe given?
+[90:48] Vbe has given
+[90:50] not given, take 0.7
+[90:52] and beta has given 100.
+[90:54] If this is not given, then 0.7.
+[91:00] Right?
+[91:04] The current is like this.
+[91:06] Now take KVL in input loop like this.
+[91:10] What will we do?
+[91:12] Minus 25 by 7.
+[91:14] Minus
+[91:16] Ibe.
+[91:18] Into 12 by 7.
+[91:20] Minus 0.7.
+[91:22] Right?
+[91:24] Minus Ie
+[91:26] into 0.5.
+[91:30] Is equal to minus 5.
+[91:32] Now if beta was 100,
+[91:34] then Ie
+[91:36] will be
+[91:40] Ie
+[91:42] that will become
+[91:44] 1 plus beta Ibe.
+[91:46] 1 plus beta Ibe means
+[91:48] 101.
+[91:50] So if Ie
+[91:52] is written as 1 plus beta Ibe,
+[91:54] then this is made.
+[91:56] Now tell me how much Ibe is coming from here.
+[92:02] Tell me how much Ibe is coming.
+[92:08] Did anyone take out Ibe?
+[92:12] Did anyone take out Ibe?
+[92:14] How much Ibe is coming?
+[92:16] Tell me quickly.
+[92:32] How much Ibe is coming?
+[92:34] 6.7
+[92:36] 7.087
+[92:38] How much Ibe is coming in milli ampere?
+[92:40] Ibe?
+[92:42] I think it is very small.
+[92:44] How much Ibe is coming in micro?
+[92:46] How much Ibe is coming in micro?
+[92:48] Ibe is not coming in milli.
+[92:52] 0.139 micro ampere.
+[92:54] Let's trust Amman.
+[92:56] Because this resistance is in kilo.
+[92:58] Now Ice is
+[93:00] beta Ibe.
+[93:02] Beta is 100.
+[93:04] So this will be
+[93:06] 1.39
+[93:08] milli ampere.
+[93:10] What will happen?
+[93:12] 1.39 milli ampere.
+[93:14] Is this done?
+[93:16] Now what do we need?
+[93:18] VCE.
+[93:20] VCE.
+[93:22] VCE.
+[93:24] VCE.
+[93:26] VCE.
+[93:28] VCE.
+[93:30] VCE.
+[93:32] VCE.
+[93:34] VCE.
+[93:36] VCE.
+[93:38] VCE.
+[93:40] VCE.
+[93:42] VCE.
+[93:44] VCE.
+[93:46] VCE.
+[93:48] VCE.
+[93:50] VCE.
+[93:52] See how much VCE is coming.
+[94:04] do this.
+[94:06] 0.0139
+[94:08] 10 by 7
+[94:16] 0.4.9
+[94:18] 0.4
+[94:20] 0.4
+[94:22] 0.4
+[94:24] 0.4
+[94:26] 0.4
+[94:28] 0.4
+[94:30] 0.4
+[94:32] 0.5
+[94:34] 0.5
+[94:36] 0.5
+[94:38] 0.5
+[94:40] 0.5
+[94:42] 0.7
+[94:50] 0.5
+[94:52] 0.5
+[94:54] 0.5
+[94:56] 0.3
+[94:58] 9
+[95:00] 0.0139 milli ampere
+[95:08] Okay, so now this is correct, right? 1.39
+[95:11] So how much is this coming?
+[95:14] Minus 3.9695
+[95:23] Now this is less than 0.2
+[95:27] Okay, sure this is what is coming, right?
+[95:31] By the way, it was 0.0139, right?
+[95:43] 5 into 1.39
+[95:46] 6.95 to 3.05 minus
+[95:51] 50.5 into
+[95:55] 0.0139
+[95:58] 3.75 is coming, right?
+[96:01] It is not getting negative
+[96:08] It is getting bigger than 0.2, right?
+[96:11] 2.65, 2.34
+[96:15] This is coming
+[96:19] 2.34 and 1.39
+[96:23] B is coming, right?
+[96:26] Okay, if it was smaller than 0.2
+[96:29] then we would have solved the question again by assuming it as 0.2
+[96:32] We would have taken IC
+[96:35] Then what we would have done is we would have taken 0.2
+[96:38] We would have put KVL again
+[96:41] and then we would have taken IC
+[96:44] Okay, so that's it
+[96:47] And this is your assignment for today
+[96:50] which you will do
+[96:52] Okay, let's see our next class
+[96:54] because I have to travel too
+[96:57] We are planning a very good event for you
+[97:00] It will be an event on Monday, okay?
+[97:02] It will be on Monday, directly from the gate academy
+[97:05] It will be live streamed on Monday
+[97:08] So it will be an event
+[97:11] I will resume after that
+[97:13] If I can take the class on Monday
+[97:15] then definitely I will take it
+[97:17] Otherwise, your class will be resumed on Wednesday
+[97:19] It can be on Monday
+[97:21] I will take it from the gate academy office if I have time
+[97:23] You can do the power system without the machine
+[97:25] You can do the power system first part
+[97:27] For the second part
+[97:29] there should be a basic basic for the fault stability
+[97:31] Why will you apply the class on Sunday?
+[97:33] If you say it yourself on Sunday
+[97:35] then switch it off one day, okay?
+[97:38] And you can see the PYQ of the diode here
+[97:41] If there is no connection
+[97:43] then you will get the solution here
+[97:45] Go to this folder
+[97:47] GATE PYQ by AIR 1
+[97:49] Yes, we are going now
+[97:51] Dear, we had announced a great announcement for you
+[97:54] It is going to be a combat for you on 25th September at 11 o'clock
+[97:58] In this, there will be basic subjects in Electrical EC
+[98:01] like Network, Signal, Digital
+[98:04] Maths, Apti
+[98:06] If you are going to do Maths and Apti
+[98:08] then prepare it well
+[98:10] The registration fees will be refunded by 3000 children
+[98:12] There are the best prices for you
+[98:15] And you will get scholarship up to 100% in this
+[98:19] And if you join an academy
+[98:22] then you can go for plus or Iconic
+[98:24] You will get the top educator in both
+[98:27] You will get the digital copy of the study material
+[98:30] You will get the test series
+[98:32] Apart from this, the children who take Iconic
+[98:34] If there is any doubt in their new questions
+[98:37] then they will be given a video solution
+[98:39] Printed notes will be sent home
+[98:42] There will be 1 to 1 mentorship
+[98:44] There will be a strategy and study plan
+[98:46] And in the open house session
+[98:48] you can speak on audio
+[98:50] Now what you have to do here
+[98:52] Dear, when you join an academy
+[98:54] you have to choose the plan
+[98:56] You have to decide the duration
+[98:58] And you have to apply the code on the time of payment
+[99:00] Ankit ESE
+[99:02] If you see
+[99:04] There is a gate in the physical notes
+[99:06] So in the name of the results
+[99:08] we have taken 6 ranks in the top 10
+[99:10] in 2022
+[99:12] Next year in Electrical ESE
+[99:14] We want the top rank of the top 10
+[99:16] We want the full 10 out of 10
+[99:18] So what you do
+[99:20] Join an academy quickly
+[99:22] Using code Ankit ESE
+[99:24] Dear, Amit Ji is saying that
+[99:26] We will study together
+[99:28] We will not study together
+[99:30] Preparation and competitive exam crack
+[99:32] They are alone
+[99:34] Okay
+[99:35] And if you have a financial issue
+[99:37] then you can go for EMI
+[99:39] There is no interest on it
+[99:41] Here EMI is approved in just 2 hours
+[99:44] At least there is a paperwork
+[99:46] In which there is only a basic
+[99:48] PAN card
+[99:50] And give it to a member in the family
+[99:52] Whose salary comes
+[99:54] Because bank gives them EMI
+[99:56] Okay
+[99:57] And this is the latest batch
+[99:59] In which Uma Maheshwar sir has started
+[100:01] The most highly qualified educator for Maths
+[100:03] So the batch of 2024
+[100:05] He has started it from the start
+[100:07] So you can join this batch
+[100:09] For Electrical as well as ECE
+[100:11] And this is my telegram channel
+[100:13] Keep on making this telegram channel
+[100:15] So that you do not miss any class
+[100:17] And this is my team's contact number
+[100:20] In case you need any help
+[100:21] You can call on this number
+[100:23] The YouTube kids press 2 plus
+[100:25] And the iconic ones press 1
+[100:27] And you will get a PDF of this session on the community
+[100:30] Go to the app's homepage
+[100:32] Discover on the community
+[100:34] I will meet you there
+[100:35] And you will get all the PDFs in that community
+[100:38] Dear, now you will see
+[100:39] I will make you do more in the practice of biasing
+[100:42] Okay, other than this
+[100:44] After this we will see
+[100:45] The application of DC biasing
+[100:47] In the form of current mirror
+[100:49] In the form of voltage regulator
+[100:51] Then we will go to Amplifier
+[100:53] Before Amplifier
+[100:55] There is one topic left
+[100:56] Current mirror and voltage regulator
+[100:58] And we will practice more on biasing
+[101:01] So that your part of biasing can be very strong
+[101:04] Because in BJT
+[101:05] Especially in electrical
+[101:07] The question of biasing is
+[101:09] The question of Amplifier is a little rare
+[101:11] But if you are honest in the network
+[101:14] And have done the network well
+[101:15] Then your amplifier will also be very easy
+[101:18] Very very easy
+[101:19] Okay
+[101:21] Is it clear?
+[101:23] Brahmendra, look
+[101:25] You chat a little in groups
+[101:27] But don't think that there will be studies in the group
+[101:29] Means keep things clear
+[101:30] I don't say don't make a group
+[101:32] But not with wrong expectations
+[101:34] There is no study in the group
+[101:35] You will feel from inside
+[101:37] You are studying, you are interacting
+[101:38] But it will destroy your studies
+[101:40] So you can use social media
+[101:42] You can be present on groups
+[101:44] You can use chat
+[101:46] But do it in a limited manner
+[101:49] With which your preparation is not hamper
+[101:51] That's it
+[101:52] There is no other problem
+[101:54] Okay
+[101:55] So let's see
+[101:56] We will meet on Monday
+[101:57] It will be an event on Monday
+[101:58] It will be live streamed
+[101:59] Everyone will have to come
+[102:01] It is a must
+[102:02] You have to come with enthusiasm
+[102:04] There are a lot of announcements and surprises for you
+[102:06] Okay
+[102:07] So now we will meet
+[102:09] In the next lecture
+[102:10] Let's crack it

@@ -1,0 +1,141 @@
+Title: Peak Detector Circuit Explained
+URL: https://www.youtube.com/watch?v=w4531AVjBYY
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will learn how to design the peak detector circuit.
+[00:21] Now many times in electrical and electronic circuits, it is required to measure the peak
+[00:25] value of the input signal and the peak detector circuit can be used for this purpose.
+[00:32] So let us understand how you can design this peak detector circuit.
+[00:37] The simple peak detector circuit can be designed just by using the diode and capacitor.
+[00:42] And the circuit over here will detect the positive peak value of the input signal.
+[00:47] And the negative peak of the signal can be detected by just reversing the direction of
+[00:52] this diode.
+[00:54] So let us understand how this circuit can detect the peak value.
+[00:58] Now let us say some input signal is applied to this circuit.
+[01:02] And for a moment, let us assume that this diode over here is an ideal diode.
+[01:08] And there is no charge across this capacitor.
+[01:11] Now as soon as some positive input is applied to this circuit, the diode will start conducting.
+[01:17] And the capacitor will get charged through this path.
+[01:21] And it will get charged up to the peak value of the input signal.
+[01:26] Now after reaching the peak value, the input signal will start reducing.
+[01:31] And at that time, this diode will get reverse bias because the voltage at the N-Ord is less
+[01:37] than the voltage at the cathode terminal.
+[01:41] So during that time, the capacitor will hold the peak value of the input signal.
+[01:46] Now this diode will again start conducting whenever the input signal crosses the previous
+[01:51] peak voltage.
+[01:52] So up to this point, the capacitor will hold the voltage.
+[01:56] And then after once this diode becomes forward biased, this capacitor will get charged up
+[02:02] to the new peak value.
+[02:04] Now after reaching the peak value, even if the input signal reduces, then also this capacitor
+[02:09] will hold the peak value.
+[02:11] So this is how this circuit detects the peak voltage.
+[02:15] Now so far, we have assumed that the diode is an ideal diode.
+[02:20] But actually, there will be some voltage drop across this diode.
+[02:24] And because of that, the output will be slightly less than the expected value.
+[02:29] Now this circuit is good enough for getting the rough approximation of the peak value.
+[02:34] But suppose if you want to accurately measure the peak value, then instead of this normal
+[02:38] diode, the precision diode or the super diode should be used.
+[02:43] And we have already talked about this circuit in the previous video of the precision rectifier.
+[02:49] So this circuit behaves like an ideal diode.
+[02:52] And just by connecting the capacitor at the output terminal, it will become the peak detector
+[02:56] circuit.
+[02:58] And it works exactly the same way as the previous circuit, except the fact that there is
+[03:03] no voltage drop across this diode.
+[03:06] Now to measure the peak voltage across this capacitor, some finite amount of load has
+[03:11] to be connected at the output terminal.
+[03:13] Now this load can be either an external load resistor or the input impedance of the circuit,
+[03:19] which is just connected after this peak detector circuit.
+[03:23] Or it can be an input impedance of some data acquisition system.
+[03:27] So because of this load, the capacitor will get discharged through this resistor whenever
+[03:32] this diode is nonconducting.
+[03:34] So instead of holding the voltage, this capacitor is discharging through this load resistor.
+[03:40] So to avoid that problem, the Rc time constant of the circuit should be varied.
+[03:46] So if the input signal is periodic signal, in that case, this Rc time constant should
+[03:51] be at least 10 times more than the time period of the signal.
+[03:56] Similarly, whenever the capacitor is charging, it should follow the input signal immediately.
+[04:01] So the Rc time constant during the charging of this capacitor should be much less than
+[04:06] the time period of the signal.
+[04:07] Or we can say that during that time, the Rc time constant should be less than the
+[04:12] one-tenth of the time period of the signal.
+[04:15] And here Rd is the fourth resistance of this diode.
+[04:19] So by following these conditions, the discharging of the capacitor can be reduced.
+[04:24] But many times, it is not possible to control the load resistance.
+[04:29] Particularly whenever the output of the circuit is given to some other circuit, because at that
+[04:33] time, input impedance of the other circuit is not known.
+[04:37] So in such instances, it is good to use the buffer circuit before the load resistance.
+[04:42] So here, this buffer circuit provides very high input impedance and it prevents this capacitor
+[04:47] from discharging through this load resistance.
+[04:51] And suppose if you want to reset this circuit, then switch can also be connected across
+[04:54] this capacitor to manually discharge it.
+[04:57] So even transistor can be used as a switch to control the discharging of this capacitor.
+[05:03] And as shown in the figure, the switching action of the transistor can be controlled using
+[05:07] the controller.
+[05:09] So by using the buffer, we can avoid the discharging of this capacitor.
+[05:14] But still there is a problem with this circuit.
+[05:16] Now if you observe this circuit, whenever this diode is non-conducting, at that time, the
+[05:21] open will operate in the open look condition.
+[05:24] And that will lead the open into the negative saturation.
+[05:28] So for example, let us say the capacitor over here is holding the peak value of the input
+[05:33] signal.
+[05:35] Now if the input signal goes below this peak value, then the diode will become reverse
+[05:39] piers.
+[05:40] And the open will operate in the open look condition, as there is no feedback from output to the input
+[05:45] side.
+[05:46] Now the negative input terminal of this opam will be at a peak voltage.
+[05:51] And the positive input terminal is at input voltage, which is slightly less than this peak
+[05:55] voltage.
+[05:57] Since the opam will go into the negative saturation.
+[06:00] Now even if this input signal goes above this peak voltage, then also the opam will take
+[06:05] some time to come out of this saturation.
+[06:09] And that basically depends on the slew rate of the opam.
+[06:12] So that will limit the operating frequency range of this peak detector.
+[06:16] And because of that, this circuit will not be able to detect or follow the fast changing
+[06:21] signal.
+[06:22] And this problem can be avoided by using this modified peak detector.
+[06:26] So let us understand how this circuit works.
+[06:29] Now initially this capacitor is fully discharged.
+[06:33] So there is no voltage across this capacitor.
+[06:36] And as it is connected to the buffer circuit, so the same voltage will also appear at this
+[06:41] terminal.
+[06:42] And similarly, the same voltage will also appear at this terminal.
+[06:47] Because initially all the nodes are at zero potential.
+[06:50] Now whenever some finite input voltage is applied to this opam, at that time, the output
+[06:56] of the opam will become positive.
+[06:58] So this diode D1 will become reverse biased.
+[07:02] And this diode D2 will become forward biased.
+[07:05] And the capacitor will get charged up to the peak voltage through this path.
+[07:10] Now here, as this diode D1 is non-conducting, and here we are assuming that the no current
+[07:15] is flowing into the opam terminal.
+[07:17] So the no current will flow through this resistor R as well.
+[07:21] So whatever voltage which appears at this node, the same voltage will also appear at this
+[07:26] node.
+[07:28] And here through this resistor R, there is a negative feedback in the given circuit.
+[07:33] Now let us see the second case whenever the input voltage goes below the peak voltage.
+[07:38] So at that time, this diode D2 will become reverse biased.
+[07:43] And the outer loop of this circuit will get broken.
+[07:46] Now the negative input terminal of this opam will be at a peak voltage.
+[07:51] While the positive input terminal over here is slightly less than the peak voltage.
+[07:56] So momentarily, the output of the opam will become negative.
+[08:00] So because of that, this diode D1 will become forward biased.
+[08:05] And it provides the feedback to this opam circuit.
+[08:08] And that prevents this opam from going into the negative saturation.
+[08:13] So whatever voltage which is applied at the input terminal, the same voltage will appear
+[08:18] at the output terminal.
+[08:20] And in this way, the opam is not going into the negative saturation.
+[08:24] And at the same time, as this diode D2 is nonconducting, so it prevents the capacitor from
+[08:30] the discharging.
+[08:32] So in this way, this circuit will be able to respond to the fast signals.
+[08:37] Now of course, the response time of the circuit also depends upon the response time of the diode,
+[08:42] as well as the response time of the opam.
+[08:45] And moreover that, it also depends upon the charging time of the capacitor.
+[08:49] But if these components are fast enough, in that case, this particular circuit will be
+[08:54] able to respond to the fast signals.
+[08:56] While the circuit, which we have seen previously, will not be able to respond to the fast signals.
+[09:03] And for a very high speed peak detection, the short-key diode that preferred over the
+[09:07] signal diodes, because these short-key diodes have a very quick response time.
+[09:12] So this is all about the peak detection circuit.
+[09:15] So I hope in this video, you understood how to design the peak detector circuit.
+[09:20] So if you have any question or suggestion, do let me know in the comment section below.
+[09:25] If you like this video, hit the like button and subscribe to the channel for more such
+[09:28] videos.

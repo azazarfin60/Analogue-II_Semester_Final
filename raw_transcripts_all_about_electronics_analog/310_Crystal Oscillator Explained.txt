@@ -1,0 +1,213 @@
+Title: Crystal Oscillator Explained
+URL: https://www.youtube.com/watch?v=YzcKQWwkzWs
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel OilAbode Electronics.
+[00:16] In this video, we will learn about Crystal Oscillator.
+[00:20] Now in the previous videos, we had seen the different types of RC as well as the LC
+[00:25] Oscillators, which can be used for generating the frequencies from audio to RF range.
+[00:32] But in this type of oscillator, the frequency can drift due to the change in the temperature
+[00:37] or the change in the power supply voltage.
+[00:40] And the frequency of the oscillation will change even if there is a slight variation in
+[00:44] the component values.
+[00:47] So in applications where the high level of stability is required, the crystal oscillators
+[00:52] are the obvious choice.
+[00:55] So not only this crystal provides a very high level of stability, but it also provides
+[01:00] the good selectivity.
+[01:02] Because the crystals which is used in this oscillator have a very high quality factor.
+[01:07] Typically something like 10,000 to 20,000.
+[01:11] And the some crystals have even higher quality factor.
+[01:15] So because of this desired properties, these crystal oscillators are used in radio and
+[01:21] telecommunications.
+[01:23] As well as they are part of many digital circuits.
+[01:26] And they are used in smartphone and desktop computers for generating the stable clock frequency.
+[01:32] Similarly, it is essential part of the microcontrollers for generating the clock signal.
+[01:39] So this crystal can generate the stable frequencies from hundreds of kilohertz to even hundreds
+[01:45] of megahertz.
+[01:46] So in this video, let us find out how this crystal oscillator works.
+[01:52] And let us also see the different parameters related to this crystal oscillator.
+[01:57] So the crystal oscillator works on the principle of inverse piezoelectric effect and it is made
+[02:03] up of piezoelectric material.
+[02:05] So first of all, let us understand this piezoelectric effect.
+[02:09] So whenever some external voltage is applied to certain materials, then they produce the
+[02:14] mechanical deformation.
+[02:16] So suppose if we apply the AC signal of particular frequency, then this material starts vibrating
+[02:22] at the same frequency.
+[02:25] And this effect is known as the inverse piezoelectric effect.
+[02:29] On the other end, whenever we apply the external force to this piezoelectric material, then
+[02:34] they generate the voltage across the two terminals.
+[02:38] So somehow, if we mechanically force them to vibrate at the certain frequency, then they
+[02:43] can generate the AC signal of the same frequency.
+[02:47] And this effect is known as the piezoelectric effect.
+[02:51] And the materials which shows this effect are known as the piezoelectric materials.
+[02:57] So raw shell salt, quarts and the terminal n are the few examples of nature-dia-current
+[03:03] crystals which possesses this piezoelectricity.
+[03:07] And among these materials, the raw shell salt has the maximum piezoelectric activity, meaning
+[03:13] that for the given applied voltage, it generates the maximum vibration.
+[03:18] But mechanically, it is weakest and it can break very easily.
+[03:22] While on the other end, the terminal n has the least piezoelectric activity, but it is
+[03:28] strongest among the given list.
+[03:31] While the quarts is the compromise between the piezoelectricity of the raw shell salt and
+[03:35] strength of the terminal n.
+[03:38] And as it is very inexpensive and easily available, it is the most preferred material in the crystal
+[03:45] design.
+[03:46] Now you might have seen this quarts crystal which is often used in the electronic circuits.
+[03:52] And here is the electronic symbol of this quarts crystal.
+[03:56] So in the center, there is a quarts crystal and these two plates are the metalized electrodes
+[04:02] which provides the electrical contact.
+[04:05] So if you see the electrical equivalent circuit of this crystal, then it is nothing but the
+[04:10] RLC circuit.
+[04:12] So here, this CS is nothing but the motional capacitance.
+[04:16] So this capacitance depends upon the elasticity of this quarts material.
+[04:22] Apart from that, it also depends upon the area of the plates as well as the thickness
+[04:26] of this quarts material.
+[04:28] So the crystals which is used in the oscillator are fabricated in the form of wafer.
+[04:34] And if you look inside this crystal, then it looks like this.
+[04:39] Then the next component in the equivalent circuit is the series inductance which is known
+[04:44] as the motional inductance.
+[04:47] So basically it defines the mechanical mass of the quarts when it is vibrating.
+[04:52] So the value of this motional inductance ranges from few handries to the milli-handry
+[04:58] and it also depends upon the thickness of this quarts material.
+[05:03] And the next parameter in this equivalent circuit is the series resistance which is also
+[05:08] known as the equivalent series resistance.
+[05:11] And it defines the real resistive laws which happens in the crystal.
+[05:16] So the typical value of this series resistance varies from few ohms to the hundreds of kilohm
+[05:23] and it is the function of the crystal frequency.
+[05:26] Then the next component in the equivalent circuit is the shunt capacitance.
+[05:31] And this capacitance exists because of the electrode plates which is used for the electrical
+[05:36] contact.
+[05:37] So this is the electrical equivalent circuit of the quarts crystal.
+[05:41] So as you can see, this quarts crystal acts as a LC tank circuit.
+[05:47] And because of that, it provides the frequency selectivity whenever it is used with the amplifier
+[05:52] in the feedback circuit.
+[05:54] And using this, we can generate the oscillations at the specific frequency.
+[05:59] Now the resonating crystal which is used in the feedback of the oscillator has two resonating
+[06:04] frequency.
+[06:05] The one is series resonant frequency in the second is parallel resonant frequency.
+[06:12] So while selecting the quarts crystal for the specific application, we need to decide at
+[06:17] which resonant frequency we are going to operate this quarts crystal.
+[06:22] So as you can see from the graph at the series resonant frequency, the impedance offered
+[06:26] by the crystal will be minimum.
+[06:29] While at the parallel resonant frequency, the impedance will be maximum.
+[06:34] And if you observe over here between this series and the parallel resonant frequency, the
+[06:39] impedance of this crystal will be inductive.
+[06:42] While if you go above or below this series and the parallel resonant frequency, it will
+[06:48] be capacitive.
+[06:50] So the series resonant frequency can be given by this expression that is fs is equal to
+[06:56] 1 by 2 pi under root ls into cs.
+[07:00] While the parallel resonant frequency fp can be given by the expression, 1 divided by
+[07:06] 2 pi times under root ls into c equivalent.
+[07:09] Where the c equivalent is the parallel combination of this cp and cs.
+[07:15] Now one more thing if you observe in the graph, the parallel resonant frequency is always
+[07:20] above this series resonant frequency.
+[07:24] And this resonant frequency depends on how this crystal is cut during the fabrication.
+[07:30] And it also depends upon the thickness of this crystal.
+[07:33] So smaller the thickness of the crystal, the larger will be the resonating frequency.
+[07:39] But if you go above the certain frequency, then it is not possible to reduce the thickness
+[07:44] of this crystal.
+[07:45] So in such case, the crystal is operated at the overton frequencies instead of the fundamental
+[07:51] frequency.
+[07:52] So in simple terms, this overton is the approximately the odd harmonics of this fundamental frequency.
+[08:00] So by operating this crystal at the overton, it is possible to generate the frequencies
+[08:05] in the range of hundreds of megahertz.
+[08:09] So now let's see using this crystal, how we can design the crystal oscillator.
+[08:15] Now whenever this crystal is used in the feedback of this amplifier, then it provides the 180
+[08:20] degree of phase shift.
+[08:22] And the remaining 180 degree of phase shift is introduced by the amplifier circuit.
+[08:27] So that the over phase shift is equal to 360 degree.
+[08:31] And the loop gain of this crystal oscillator is set in such a way that we can get the
+[08:36] sustained oscillations.
+[08:39] Now like I said, the crystal can be operated either at series or parallel resonant frequency
+[08:45] so in this first circuit, the crystal is operated at the series resonant frequency.
+[08:51] So in this circuit, the transistor is used as an amplifier.
+[08:55] And through this crystal, the feedback is provided in the circuit from the collector to
+[09:00] the base terminal.
+[09:02] So at series resonant, the impedance that is offered by the crystal will be minimum.
+[09:08] Or we can say that the feedback which is provided from the output to the input side will
+[09:12] be maximum.
+[09:15] And by setting the gain at this resonant frequency, we can use this circuit for generating the
+[09:21] sustained oscillations.
+[09:23] So now let us see few circuits in which this crystal can be operated at the parallel resonance.
+[09:31] So whenever the crystal is used in the parallel resonance mode, then it is operated between
+[09:36] the cities and the parallel resonance frequency.
+[09:40] And it will act as a inductor in the given circuit.
+[09:44] So this circuit which is shown over here is the cockpit oscillator.
+[09:48] And we have already discussed this circuit in the earlier video.
+[09:52] But here, instead of using the sabred inductor, the crystal is used as an inductor.
+[09:59] So by using this crystal at the parallel resonance, this feedback combination of C1, C2 and the
+[10:05] crystal will act as a tank circuit.
+[10:08] And it provides the frequency selectivity which is required for the given circuit.
+[10:14] So this is one of the circuit in which the crystal is operated at the parallel resonance.
+[10:21] Then the next circuit which we are going to see is the pure oscillator.
+[10:25] So here, this circuit is designed using the CMOS inverter.
+[10:30] And in this circuit, the crystal is used in the parallel resonance mode.
+[10:35] So because of that, it acts as an inductor.
+[10:38] And the combination of this C1, C2 and the crystal will act as a LC tank circuit.
+[10:43] And it provides the necessary frequency selectivity for the given circuit.
+[10:48] Now in this circuit, if you observe, the feedback resistor RF is connected between the input
+[10:53] and output of this CMOS inverter.
+[10:57] And due to that, this CMOS inverter operates in the linear range of this voltage transfer
+[11:02] curve.
+[11:03] So due to this resistor, this CMOS inverter acts as an amplifier.
+[11:10] Now the value of this feedback resistor RF depends upon the operating frequency, but
+[11:16] usually it used to be more than 1 mega ohm.
+[11:20] Now in this circuit, this series resistance RAs reduces the overton oscillations and it
+[11:26] also improves the startup response of this oscillator.
+[11:30] So using this circuit with this crystal oscillator, we can generate oscillations at the desired
+[11:36] frequency.
+[11:37] Now whenever this pure oscillator is designed using this CMOS inverter, then the output
+[11:43] of this oscillator will be square wave.
+[11:46] And that is why this pure oscillator is most often used in the digital circuits.
+[11:52] And the same oscillator is also used in the microcontroller and the processors.
+[11:58] But in this oscillator, the series resistance RAs and the feedback resistor RF are internal
+[12:03] to the microcontroller.
+[12:05] So just by connecting the crystal and the external capacitors, we can generate stable clock of
+[12:11] the desired frequency.
+[12:14] Now whenever the crystal is used in the parallel resonant mode, then manufacturers used to provide
+[12:20] the low capacitance for the specific frequency.
+[12:24] And this low capacitance is the equivalent capacitance which is seen across the crystal
+[12:29] terminals.
+[12:30] So while designing the crystal oscillator for the specific frequency, this parameter
+[12:35] is very important parameter.
+[12:38] So the equivalent capacitance which is seen by the crystal should almost match with this
+[12:43] low capacitance so that the crystal can operate at the specific frequency.
+[12:49] So if the equivalent capacitance which is seen by the crystal is just above or below
+[12:54] this low capacitance, in that case the crystal will not operate at the desired frequency.
+[13:01] So for the given pure oscillator, if we assume that the input and output capacitance are
+[13:06] 0, in that case the equivalent capacitance which is seen across this crystal will be equal
+[13:12] to the parallel combination of this C1 and C2.
+[13:16] Which is C1, C2 divided by C1 plus C2.
+[13:23] And if we assume we have input and output capacitance across the CMOS inverter, in that
+[13:29] case the equivalent capacitance will be equal to C1 plus C1 times C2 divided by C1 plus C2
+[13:42] plus C1 plus C2.
+[13:45] And if there is a stray capacitance in the circuit, then it will also get added with
+[13:50] this combination.
+[13:53] So this will be the equivalent capacitance which is seen by this crystal.
+[13:58] And to operate this crystal at the desired frequency, this equivalent capacitance should
+[14:03] be matched with this low capacitance.
+[14:06] So this is all about the different circuits using which we can design the crystal oscillator.
+[14:12] Now before ending this video, let us see few parameters which needs to be considered
+[14:17] by selecting the crystal for the specific oscillator.
+[14:20] So the first thing is the crystal frequency.
+[14:23] And it defines the frequency at which the crystal is going to get operated.
+[14:29] Then the next parameter which needs to be considered is the drift in the frequency.
+[14:34] And it defines over the period of time how the crystal frequency is going to change.
+[14:40] And we need to see for the given application how much drift in the frequency we can tolerate.
+[14:47] Then the next thing which we need to consider is the mode of operation.
+[14:51] That means whether the crystal is going to operate at the fundamental frequency mode
+[14:55] or at the overtones.
+[14:58] So depending upon the mode of the operation, the complexity of the circuit will get decided.
+[15:04] Then we need to see the temperature stability of this crystal oscillator.
+[15:08] That means over the temperature range, how the crystal frequency is going to change.
+[15:13] Then the next parameter which we need to consider is the drive level or the power dissipation
+[15:18] across the crystal.
+[15:20] So we need to select a crystal in such a way that the drive level or the power dissipation
+[15:25] is less than the rated value.
+[15:28] So these are the few parameters which we need to consider while selecting the crystal
+[15:32] for the specific application.
+[15:34] So I hope in this video you understood the working of the crystal as well as using this crystal
+[15:40] how we can design the crystal oscillator.
+[15:43] So if you have any question or suggestion, do let me know here in the comment section
+[15:47] below.
+[15:48] If you like this video, hit the like button and subscribe to the channel for more such
+[15:51] videos.

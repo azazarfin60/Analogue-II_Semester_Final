@@ -1,0 +1,60 @@
+Title: BJT- Emitter Follower Solved Example | Quiz # 253
+URL: https://www.youtube.com/watch?v=DG8To9xaQu8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this question, we have been given this amplifier circuit and we have been asked
+[00:21] to find the voltage gain of this amplifier.
+[00:25] So if you look this circuit, then it is the emitter follower.
+[00:29] And to find the voltage gain of this emitter follower, first of all let us draw the small
+[00:33] signal equivalent circuit of this emitter follower.
+[00:36] So the small signal equivalent circuit will look like this.
+[00:41] Now for the emitter follower, if this serial resistor RS is not present, then in that case,
+[00:48] this voltage VB will be equal to input voltage.
+[00:51] And in that case, the voltage gain VL divided by V in can be given by the following expression.
+[00:58] But here as this serial resistor RS is also present, so we also need to take into account
+[01:04] this serial resistor.
+[01:06] So here let us say the voltage at this node is equal to VX.
+[01:12] So in this case, the voltage VL divided by VX can be still given by the earlier expression
+[01:18] that is R e divided by 1 divided by gm plus R e.
+[01:26] And to find the voltage gain V out divided by V in, we also need to find the VX divided
+[01:30] by V in.
+[01:33] So the overall voltage gain V out divided by V in will be equal to V out divided by VX times
+[01:40] VX divided by V in.
+[01:43] So here to find the VX divided by V in, we will replace this portion of the circuit by
+[01:48] the equivalent impedance.
+[01:51] That is the input impedance of this emitter follower which is seen from the base terminal.
+[01:57] And with that, the equivalent circuit can be shown like this.
+[02:01] So here, this voltage VX will be equal to Z in divided by Z in plus RS times V.
+[02:11] Or we can say that this voltage VX divided by V in is equal to Z in divided by Z in plus
+[02:17] RS.
+[02:19] So in this way, we need to find the voltage V out divided by VX as well as the VX divided
+[02:24] by V in.
+[02:26] And first of all, let us find the V out divided by VX.
+[02:30] That is equal to R e divided by 1 over gm plus R e.
+[02:36] Now here, this emitter resistor is equal to 2 kilo ohm.
+[02:40] While we have been given that, these transconductance is equal to 20 milli semen.
+[02:47] So 1 over gm will be equal to 50 ohm.
+[02:50] That means V out divided by VX will be equal to 2 kilo ohm divided by 2 kilo ohm plus
+[02:58] 50 ohm.
+[03:01] That is equal to 0.9756.
+[03:06] So similarly, now let us find the VX divided by V in.
+[03:11] So for that, we need to find the equivalent impedance that is seen through the base terminal.
+[03:17] And we know that this input impedance Z in can be given as R pi plus beta plus 1 times
+[03:24] R e.
+[03:26] So here, this R pi is equal to beta divided by gm while this term is equal to beta plus
+[03:33] 1 times R e.
+[03:36] Now here, we have been given that the value of beta is equal to 50.
+[03:41] That means this input impedance will be equal to 50 times 1 over gm that is 50 ohm plus 51
+[03:50] times 2 kilo ohm.
+[03:53] That is equal to 104.5 kilo ohm.
+[03:58] So this will be the value of the input impedance.
+[04:01] So we can say that this voltage VX divided by V in will be equal to Z in divided by Z
+[04:09] in plus R s.
+[04:11] That is equal to 104.5 kilo ohm divided by 1 plus 104.5 kilo ohm.
+[04:21] That means the overall voltage gain V out divided by V in will be equal to V out divided
+[04:26] by VX times VX divided by V in.
+[04:31] That is equal to 0.9756 times this 104.5 divided by 105.5 kilo ohm.
+[04:42] That means voltage gain AV that is V out divided by V in is equal to 0.9663.
+[04:51] So this will be the voltage gain of this emitter follower circuit.
+[04:56] So from this we can say that for the given question is the correct answer.

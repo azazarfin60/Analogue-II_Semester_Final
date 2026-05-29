@@ -1,0 +1,95 @@
+Title: 555 Timer as Bistable Multivibrator Explained
+URL: https://www.youtube.com/watch?v=mqMAVTO4GfM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will learn how to design a bi-stable multivibrator using the Triple
+[00:21] Phi Timer IC.
+[00:23] Now in the previous videos, we had seen that this bi-stable multivibrator has a two stable
+[00:29] states and at any given point of time, the output used to be in one of the two stable
+[00:35] states.
+[00:36] And whenever some action or triggering action happens, then output used to switch from one
+[00:40] stable state to another stable state.
+[00:43] So depending upon the triggering action, the output used to switch from one stable
+[00:47] state to another stable state.
+[00:50] So in this video, let us understand how we can design this bi-stable multivibrator using
+[00:55] the Triple Phi Timer IC.
+[00:58] So here is the circuit using which we can configure this Triple Phi Timer as a bi-stable
+[01:02] multivibrator.
+[01:04] Now if you observe this circuit, this circuit does not involve any kind of charging capacitors.
+[01:10] So just by controlling the voltage at this trigger and the reset pin, we can control the
+[01:14] output of this Triple Phi Timer.
+[01:17] So in this circuit, the threshold pin is connected to the ground terminal.
+[01:21] While via resistor R1 and R2, the trigger and the reset pin is connected to the supply
+[01:26] voltages.
+[01:28] So now whenever the set and reset pin is pressed, then momentarily this trigger and the threshold
+[01:33] pin will get connected to the ground terminal.
+[01:37] So by controlling the inputs at this trigger and the reset pin, we can control the output
+[01:41] of this Triple Phi Timer IC.
+[01:43] So now let us understand the working of this circuit by looking at the internal block diagram.
+[01:49] Now like we had seen in the previous videos, the voltage at this to node of the voltage
+[01:54] divider will be 2 by 3 which is C and 1 by 3 which is C respectively.
+[01:58] And these two voltages will act as a reference voltage for these two comparators.
+[02:04] Now if you see this circuit, the threshold pin is connected to the ground terminal.
+[02:10] That means the voltage at this pin number 6 will be always less than the reference voltage.
+[02:15] So the output of the first comparator will always emit to the logic low value.
+[02:21] And by default this trigger pin is connected to the supply voltage.
+[02:25] So the voltage at the pin number 2 will be more than the reference voltage.
+[02:30] And hence the output of the second comparator will be also equal to logic low value.
+[02:35] So initially this SNR mod are 0.
+[02:39] That means the flip-flop will retain its previous state.
+[02:43] And whenever the circuit is just turned on at that time, the Q will be equal to 0.
+[02:49] So we can say that the output of the triple-fut timer will be also equal to logic low.
+[02:55] Now let us see what happens when we phrase this set pin.
+[02:59] So whenever this set pin is pressed, then momentarily this pin number 2 will get connected
+[03:05] to the ground terminal.
+[03:07] And hence the voltage at the trigger pin will go below the reference voltage.
+[03:13] That means the output of the second comparator will become logic high.
+[03:17] And like we had seen, the output of the first comparator will be equal to logic 0.
+[03:23] So whenever this trigger pin is pressed at that time, the S will be equal to 1 and R
+[03:28] will be equal to logic 0.
+[03:30] That means this flip-flop will get set to the logic 1 value.
+[03:34] And hence the output of the triple-fut timer will also get set to the logic high value.
+[03:40] Now once the switch is released, then once again the voltage at the pin number 2 will
+[03:45] be equal to the supply voltage.
+[03:47] So in that condition, once again the output of the second comparator will become logic
+[03:52] 0 value.
+[03:53] That means now R and S both are equal to 0.
+[03:57] And the flip-flop will retain its previous state.
+[04:00] So in this case, the Q will be equal to 1.
+[04:04] And hence the output of the triple-fut timer will also remain to the logic high value.
+[04:09] Now let us see what happens when we phrase this reset switch.
+[04:13] So whenever the reset switch is pressed, then momentarily this reset pin is connected
+[04:18] to the ground terminal.
+[04:20] Or we can say that the reset pin will be at logic 0 value.
+[04:24] So in this case, this flip-flop will get reset to the logic 0 value.
+[04:29] And hence the output of the triple-fut timer will be also equal to logic 0 value.
+[04:34] Now in this condition, as we are not changing the input at this trigger and the threshold
+[04:39] pins.
+[04:40] So even after releasing this reset pin, the output of the triple-fut timer will remain
+[04:44] to the logic 0 value.
+[04:47] And if you see the same sequence on a timing diagram, then it will look like this.
+[04:52] So initially the output of the triple-fut timer is logic 0 value.
+[04:57] And whenever this trigger pin goes low, then the output will switch from logic low value
+[05:02] to the logic high value.
+[05:05] And once again, the output will become low whenever this reset pin goes low.
+[05:10] So in this way, at any given point of time, this bistable multivariator stores either
+[05:15] logic 0 or logic high value.
+[05:17] Or we can say that it acts like a flip-flop circuit.
+[05:22] But the difference with this bistable multivariator circuit is that it can operate over the range
+[05:27] of 4.5 volt up to the 15 volt.
+[05:30] So unlike the conventional flip-flop circuits, this bistable multivariator will also work
+[05:35] at the higher voltages.
+[05:37] But from that, as this triple-fut timer can source or sync up to 200 milliampere of current,
+[05:43] so it can be also used to drive the certain devices.
+[05:47] Like over here, as you can see, it can also be used to drive the LEDs.
+[05:52] So over here, whenever the set pin is pressed, then the LED will get turned on and whenever
+[05:57] the reset pin is pressed, then the LED will get turned off.
+[06:01] Now the same circuit can also be implemented using the other ways.
+[06:05] But the point is, if you have a triple-fut timer, then it can be configured as a bistable
+[06:10] multivariator and it can be also used for this kind of applications.
+[06:15] So I hope in this video, you understood how we can design a bistable multivariator using
+[06:20] the triple-fut timer IC.
+[06:22] So if you have any question or suggestion, do let me know here in the comment section
+[06:26] below.
+[06:27] Like this video, hit the like button and subscribe to the channel for more such videos.

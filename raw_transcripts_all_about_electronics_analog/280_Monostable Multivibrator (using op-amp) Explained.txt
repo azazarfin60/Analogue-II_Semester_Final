@@ -1,0 +1,103 @@
+Title: Monostable Multivibrator (using op-amp) Explained
+URL: https://www.youtube.com/watch?v=pUibCkUB364
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will learn how to design a monostable multivibrator using the OPAM.
+[00:22] So in case of a monostable multivibrator, one state is a stable state and whenever a trigger
+[00:28] signal is applied, then momentarily the output used to go into the unstable state and after
+[00:34] some time t it used to come back into the stable state.
+[00:40] So if the stable state is a low state, then whenever the trigger signal is applied, then
+[00:45] momentarily the output used to go into the high state and likewise if the stable state
+[00:51] is a high state, then whenever the trigger signal is applied, then momentarily the output
+[00:56] to go into the unstable state. So let us see how we can design this monostable multivibrator
+[01:02] using the opamp. Now if you have watched the last video of ASTable Multivibrator then you
+[01:09] might be aware about the design of ASTable Multivibrator. So by slightly modifying this circuit
+[01:15] it can be converted into the monostable multivibrator. So like you can see over here the diode
+[01:22] is connected in parallel with this capacitor and the trigger signal is applied at this node.
+[01:29] So let us understand the working principle of this circuit. So over here initially let us assume
+[01:36] that the output of the circuit is equal to the positive saturation voltage and it is a stable
+[01:43] state of the circuit. So whenever the output is positive saturation voltage at that time
+[01:49] the voltage at this node will be equal to R2 divided by R1 plus R2 times this voltage VZ.
+[02:00] Or we can say that the voltage at this node is equal to beta times VZ where beta is equal to
+[02:08] R2 divided by R1 plus R2. Now whenever the output is positive saturation voltage at that time
+[02:15] this diode will become forward biased and the voltage across this capacitor will be equal to
+[02:21] the forward voltage drop across this diode. So at the inverting node the output will be equal to
+[02:27] the forward voltage drop across this diode. And as this voltage beta we said is more than the
+[02:34] voltage at this inverting node so the output of the opamp will remain to the positive saturation
+[02:40] voltage. Now let us say after certain time the trigger signal is applied at this node.
+[02:47] So whenever this negative trigger signal is applied then momentarily the output at this
+[02:52] non-inverting node will be less than the voltage at this inverting node. So the output of the opamp
+[02:59] will switch from this positive saturation voltage to the negative saturation voltage.
+[03:04] And momentarily this circuit will go into the unstable state.
+[03:11] So now if you see the voltage at this non-inverting node it will be equal to minus beta VZ
+[03:18] or you can say that that is equal to minus VZ times R2 divided by R1 plus R2.
+[03:26] And as the voltage at this node is equal to the negative saturation voltage so this diode will
+[03:31] become reverse biased. And now the capacitor will start charging towards the negative saturation
+[03:37] voltage. Now whenever the voltage at this inverting node just goes below this voltage minus beta VZ
+[03:45] then once again the output of the opamp will become positive saturation voltage because at that time
+[03:52] the voltage at this non-inverting node will be slightly more than the voltage at this inverting
+[03:57] so once again the output will switch from this negative saturation voltage to the positive saturation
+[04:03] voltage. And for this time t only the output will remain in this unstable state. And as soon as
+[04:11] the output reaches to this positive saturation voltage so once again this diode will become
+[04:17] forward biased. And once again the voltage across the capacitor will be equal to the
+[04:22] forward voltage drop across the diode. So this is the basic working principle of the
+[04:27] monostable multivibrator. And here the time period t will depend upon the value of R
+[04:33] c as well as R1 and R2. And for the given circuit the time period t can be given by the expression
+[04:40] Rc times the natural log of 1 plus R2 divided by R1. So now let's design a monostable multivibrator
+[04:50] which has a time period t is equal to 10 millisecond. So for simplicity let us assume that R1 is
+[04:59] equal to R2 that is equal to 10 kilo ohm. Now whenever R1 and R2 are equal at that time this
+[05:08] expression will get simplified to t is equal to Rc times natural log of 1 plus 1. Or we can say
+[05:17] that t is equal to Rc times natural log of 2 that is t is equal to 0.693 times Rc.
+[05:30] Now here let us assume that c is equal to 1 micro faraday. And over here t is equal to 10 millisecond.
+[05:41] So if you put the value of this t and c in this expression then the value of R will roughly
+[05:47] come around as 14.4 kilo ohm. So what we can do we can use a potentiometer of 20 kilo ohm and we
+[05:57] can tune that potentiometer to the value of 14.4 kilo ohm. And if 20 kilo ohm of potentiometer is
+[06:04] not available then one can use a 10 kilo ohm resistor in series with a 10 kilo ohm of potentiometer.
+[06:12] And one can tune this potentiometer to the value of 4.4 kilo ohm. So in this way one can design
+[06:19] a monostable multivibrator with a desired time period t. Now let us see how we have got the
+[06:26] expression of this t for this monostable multivibrator. So let us quickly derive this expression for
+[06:32] this monostable multivibrator. Now for the derivation over here we are assuming that the diode which
+[06:40] used in the circuit is an ideal diode. So the drop across the diode is almost 0.
+[06:46] So whenever this negative trigger signal is applied to this monostable then capacitor will start
+[06:51] charging from 0 volt towards the negative saturation voltage. So for this circuit the initial voltage
+[06:59] will be equal to 0 volt and the capacitor is charging towards the negative saturation voltage.
+[07:06] So let us put all these values in the expression of this capacitor voltage. So the voltage across
+[07:12] the capacitor can be given by this expression. So over here the final voltage across the capacitor
+[07:19] will be equal to the negative saturation voltage and initial voltage across the capacitor is equal to
+[07:27] 0 volt. And we want to find this time t1 which is required by the capacitor to reach from 0 to
+[07:35] minus beta V set voltage. So we can write this expression as Vc of time t1 that is equal to
+[07:43] minus V set plus 0 minus of minus V set into e to the power of minus t1 divided by RC.
+[07:56] Now at time t1 the voltage across the capacitor will be equal to minus beta V set.
+[08:02] So we can write this expression as minus V set plus V set times e to the power of minus t1 by
+[08:14] RC. So if you simplify this expression then we can write it as
+[08:20] 1 minus beta that is equal to e to the power of minus t1 by RC. Now here beta is equal to
+[08:31] R2 divided by R1 plus R2. So we can write this expression as 1 minus R2 divided by R1 plus R2
+[08:42] that is equal to e to the power of minus t1 by RC. Or we can say that that is equal to
+[08:51] R1 divided by R1 plus R2 that is equal to e to the power minus t1 divided by RC.
+[09:00] So now if we take natural log on both sides that we can write this expression as
+[09:05] t1 is equal to minus RC times the natural log of R1 divided by R1 plus R2. Or we can say that
+[09:15] t1 is equal to RC times the natural log of 1 plus R2 divided by R1. So this is the time t
+[09:27] for which the output of the monostable will go into the unstable state.
+[09:32] And this monostable multivariate circuit can be used as a timer.
+[09:37] Now if you have observed this circuit then in this circuit we require a trigger signal to change
+[09:43] the state of this monostable multivariator. So the duration of this trigger signal should be
+[09:49] much less than the time period for which we want this monostable to go into the unstable state.
+[09:55] So one way we can get this trigger signal is using the differentiator circuit.
+[10:01] So a simple RC differentiator circuit can be used to get this negative spikes.
+[10:07] So here whenever pulse signal is applied like this then at the output of this differentiator
+[10:12] circuit we will get two spikes like this. So here the signal is going from 0 to v-volt like
+[10:20] so the one spike we will get at the rising gauge and the one spike we will get at the falling
+[10:26] gauge. Similarly if we apply a signal which is going from 0 to minus v-volt to this differentiator
+[10:33] circuit then we will get a two spikes like this. One spike whenever it is going from 0 to minus v-volt
+[10:40] and the one spike whenever it is coming back from minus v-volt to the 0-volt. So out of the two
+[10:48] spikes we can eliminate the positive spike by using the diode circuit. So whenever we use this
+[10:54] diode like this then the positive spike can be eliminated and this negative spike can be used
+[11:01] to trigger this monostable circuit. So if you see the overall circuit of this monostable multivariator
+[11:07] then it will look like this. So here we have simply introduced this RC differentiator circuit at
+[11:14] this node. So now relatively a large negative trigger signal pulse is applied at this node
+[11:21] and at this node we will get the negative spikes which can be used as a trigger signal.
+[11:27] So this is all about the monostable multivariator which is designed using the OPAM.
+[11:32] So I hope in this video you understood how we can design the monostable multivariator using the OPAM.
+[11:39] So if you have any questions or suggestions do let me know here in the comment section below.
+[11:44] If you like this video hit the like button and subscribe with the channel for more such videos.

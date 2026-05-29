@@ -1,0 +1,244 @@
+Title: MOSFET - Differential Amplifier (Large Signal Analysis)
+URL: https://www.youtube.com/watch?v=gc7Yct-8HdM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video, we will see the large signal analysis of this MOS differential amplifier.
+[00:16] So just for the continuity, let us quickly recap what we have seen in the previous video.
+[00:22] So in the previous video, we have seen the basics of this differential amplifier.
+[00:27] And during the discussion, we also learned about the differential and the common mode signal.
+[00:32] So we understood that the actual input to this differential amplifier consists of both
+[00:37] components.
+[00:39] But this ideal differential amplifier only amplifies the differential input signal and
+[00:44] it does not respond to this common mode inputs.
+[00:47] Then to check the behavior of this differential amplifier to this common mode input signal,
+[00:51] we have assumed that this differential input is 0 and only common mode signal is applied
+[00:56] to the differential inputs.
+[00:59] And considering that, we have seen that when the two MOSFETs are identical and the current
+[01:04] source is also ideal, then this differential pair does not respond to this common mode
+[01:09] input signal.
+[01:10] And therefore, for this common mode input signal, the differential output remains 0.
+[01:16] Now then after qualitatively we understood that how this differential amplifier responds
+[01:22] to the differential input signal.
+[01:24] And we have seen that as this differential input V in 1 minus V into increases, then the
+[01:29] train current I d 1 increases and the train current I d 2 reduces.
+[01:35] And hence, this differential output V of 1 minus V of 2 will become negative.
+[01:41] And at one differential input, this entire current ISS will flow through one MOSFET.
+[01:47] So in that case, the current through the second MOSFET will become 0 and it will get turn
+[01:52] off.
+[01:53] And the same thing happens on the other side for the negative values of the V in 1 minus
+[01:58] V into that means as the V in 1 minus V into becomes negative, then the output voltage
+[02:03] will increase and at one point, the current will flow only through a second MOSFET.
+[02:08] And in that case, these differential output will become ISS times R d.
+[02:14] And here is the change in the train current with the differential input.
+[02:18] So up to this point, we have already discussed in the previous video.
+[02:22] Now let us find out at what differential input this entire tail current flows through
+[02:28] a one particular MOSFET.
+[02:30] That means at what differential input, this I d 1 becomes ISS and this I d 2 becomes 0.
+[02:37] So let us say at that particular differential input voltage, this I d 1 is equal to ISS and
+[02:45] this I d 2 is around 0.
+[02:49] And let us say, this gate to source voltage of these two MOSFETs are V gs 1 and the V gs
+[02:56] 2 respectively.
+[02:59] Now let us say the voltage at this node is equal to V s.
+[03:04] So if we apply the KVL around this node, then we can say that this V in 1 minus V gs
+[03:12] 1 is equal to V s.
+[03:15] Similarly, if we apply the KVL on the second side, then this V in 2 minus V gs 2 is equal
+[03:24] to V s.
+[03:25] So from this, we can say that this V in 1 minus V gs 1 is equal to V in 2 minus V gs 2.
+[03:36] Or in other words, this V in 1 minus V in 2 is equal to V gs 1 minus V gs 2.
+[03:45] So to find the differential input voltage at which this I d 1 becomes ISS and this I d
+[03:51] 2 becomes 0, we need to find the difference between this V gs 1 and the V gs 2.
+[03:56] So now we know that for the MOSFET to be in the on condition, this gate to source voltage
+[04:02] should be greater than or equal to V th.
+[04:05] That means at the age of the conduction, where the MOSFET is about to turn off, this
+[04:10] V gs is equal to V th.
+[04:13] So we can say that for the second MOSFET M 2, this V gs 2 will be equal to V th.
+[04:22] That means whenever this I d 2 is about to become 0, this V gs 2 will be equal to V th.
+[04:29] So now the only thing which we need to find is the voltage V gs 1.
+[04:34] So we know that in the saturation, the drain current I d can be given by this expression.
+[04:41] And here we have neglected the effect of the channel and modulation.
+[04:45] So for the MOSFET M 1, the strain current I d will become I d 1 and this voltage V gs
+[04:51] will become V gs 1.
+[04:54] So if you solve this expression for the V gs, then we will get this V gs 1 is equal to
+[05:00] square root of 2 I d 1 divided by mu n times C i x times w by l plus V th.
+[05:07] And whenever this I d 1 is equal to I s s, then we can replace this I d 1 by the I s s.
+[05:14] So at that time, these V gs 1 will be equal to square root of 2 times I s s divided by
+[05:21] mu n times C i x times w by l plus V th.
+[05:26] So this is the expression of the V gs 1 whenever this I d 1 is equal to I s s.
+[05:32] So now let us put the value of this V gs 1 and the V gs 2 in this particular expression.
+[05:38] So now this V in 1 minus V in 2 or the V gs 1 minus V gs 2 is equal to square root of
+[05:46] 2 times I s s divided by mu n times C x times w divided by l which is in fact square
+[05:54] root of 2 times V over drive.
+[05:58] Because as we have seen under the equilibrium when the differential input is 0 and only
+[06:03] common mode input signal is present, then this over drive voltage V gs minus V th or this
+[06:08] V over drive can be given by this expression.
+[06:12] That means whenever this differential input voltage is equal to root 2 times V over drive,
+[06:18] then this I d 1 is equal to I s s and this I d 2 is around 0.
+[06:23] Similarly, when this differential input voltage is minus root 2 times V over drive, then the
+[06:28] I d 2 is equal to I s s and the I d 1 is around 0 and here is the input output characteristic
+[06:35] of this differential amplifier.
+[06:37] So at this two differential input voltages, the differential output voltage will be minus
+[06:42] I s s times R d and the plus I s s times R d respectively.
+[06:47] That means now at the extreme points we know that how the circuit will be out of the
+[06:52] differential inputs and between these extreme points, qualitatively we know that how the
+[06:57] circuit behaves to this differential input.
+[07:01] But between these extreme points, we do not know the relationship between this differential
+[07:05] input and the differential output and we do not know the exact shape of this particular
+[07:09] curve.
+[07:11] So using the large signal analysis, let us find the mathematical relationship between
+[07:15] these differential inputs and the differential output and let us see how the differential
+[07:19] output changes with the differential input.
+[07:23] Now finding this relationship, but even this differential input and the differential output
+[07:26] involves the lot of mathematical steps.
+[07:29] So if you want to skip this portion and directly want to go to the result, then you can go
+[07:34] to this timestamp.
+[07:35] All right.
+[07:37] So here, this differential output is V over 1 minus V over 2, where this V over 1 is equal
+[07:45] to V d d minus these I d 1 times R d.
+[07:50] Similarly, these V over 2 is equal to V d d minus these I d 2 times R d.
+[07:58] That means V over 1 minus V over 2 is equal to minus R d times these I d 1 minus I d 2.
+[08:08] That means to find the V over 1 minus V over 2.
+[08:11] First of all, we need to find this I d 1 minus I d 2 and somehow we need to find the
+[08:16] relationship between this differential trend current I d 1 minus I d 2 and the V in 1
+[08:21] minus V into.
+[08:22] So that we can directly get the relationship between this V over 1 minus V over 2 and the
+[08:27] V in 1 minus V into or in other words, we directly get the relationship between this
+[08:33] differential output and the differential input.
+[08:36] So from our earlier discussion so far, we know that these V in 1 minus V into is equal
+[08:42] to V gs 1 minus V gs 2 and we also know that how to write this V gs in terms of the
+[08:49] trend current.
+[08:50] That means these V gs 1 is equal to square root of 2 I d 1 divided by mu n times C o x
+[08:57] times w by l plus V t h and similarly, we can also write this V gs 2.
+[09:04] That means this V in 1 minus V into or this V gs 1 minus V gs 2 can be written like this.
+[09:12] And here if we take this square root of 2 divided by mu n times C o x times w by l as a
+[09:19] common, then in the bracket we are left with square root of I d 1 minus square root of
+[09:25] I d 2.
+[09:26] So in this way, we got some relationship between this trend current and the differential
+[09:31] input.
+[09:32] But what we actually need is the relationship between this V in 1 minus V into and the
+[09:37] trend current I d 1 minus I d 2.
+[09:40] So to get that, let us square on both sides.
+[09:44] So after taking the square on both sides, we can write this expression as these V in
+[09:50] 1 minus V into whole square that is equal to 2 divided by these mu n times C o x times
+[09:59] w by l plus these I d 1 plus I d 2 minus 2 times square root of I d 1 times I d 2.
+[10:13] Because as you know, these A plus B whole square can be given as these A square plus 2 A
+[10:20] B plus B square.
+[10:22] So similarly, if you take the square of this bracket, then we will get these I d 1 plus
+[10:27] I d 2 minus 2 times square root of I d 1 times I d 2.
+[10:33] And as we know, these I d 1 plus I d 2 is equal to I s s.
+[10:39] That means we can write this expression as these V in 1 minus V into whole square that
+[10:45] is equal to 2 divided by mu n times C o x times w by l times I s s minus 2 times square
+[10:53] root of I d 1 times I d 2.
+[10:55] So now if you take this term on the left hand side, then we can write this expression as
+[11:02] 1 divided by 2 times these mu n times C o x times w divided by l times these V in 1 minus
+[11:11] V into whole square minus I s s that is equal to minus 2 times square root of I d 1 times
+[11:22] I d 2.
+[11:23] And if you multiply all the terms by minus 1, then these two terms will become positive
+[11:29] and this term will become negative.
+[11:31] So once again, if you take the square on both sides, then you can write this expression
+[11:36] as these I s s minus 1 by 2 times mu n times C o x times these V in 1 minus V into whole
+[11:48] square and whole square of this term is equal to 4 times these I d 1 times I d 2.
+[11:57] So basically we have taken the square on both sides.
+[12:01] So now these 4 I d 1 times I d 2 can also be written like this because if you see and
+[12:09] this I d 1 plus I d 2 whole square is equal to these I d 1 square plus 2 I d 1 times I
+[12:17] d 2 plus I d 2 square.
+[12:20] Similarly, these I d 1 minus I d 2 square is equal to these I d 1 square minus 2 I d 1
+[12:29] I d 2 plus I d 2 square.
+[12:34] So if you solve this expression further, then we will left with these 4 I d 1 times I
+[12:42] d 2. That means we can write these 4 I d 1 times I d 2 by this expression and as we
+[12:48] know, this I d 1 plus I d 2 is equal to I s s.
+[12:52] That means we can write these 4 I d 1 times I d 2 as these I s s square minus these I d
+[13:01] 1 minus I d 2 whole square.
+[13:05] So let us replace these 4 I d 1 times I d 2 by this expression.
+[13:09] That means now we can write this expression as I s s square minus I d 1 minus I d 2
+[13:18] whole square that is equal to these I s s square minus 2 times half times I s s times
+[13:25] nu n times C x times w divided by L times these V in 1 minus V in 2 whole square plus
+[13:42] the square of this term that is equal to 1 by 4 times these nu n times C x times w
+[13:49] divided by L whole square times these V in 1 minus V in 2 raise to 4.
+[13:59] So here these 2 terms will get cancel out and if you multiply all the terms by minus
+[14:06] 1, then these 2 terms will become positive and this term will become negative.
+[14:13] That means now if we see this expression then it can be written like this.
+[14:19] So now in this expression on the right hand side if we take this 1 by 4 times these nu
+[14:25] n times C x times w by L whole square times V in 1 minus V in 2 whole square as a common
+[14:35] then in the bracket we are left with these 4 times I s s divided by nu n times C x times
+[14:44] W divided by L minus these V in 1 minus V in 2 whole square. So now if we take this
+[14:54] square root on the both sides then we will get this I d 1 minus I d 2 that is equal
+[15:00] to these half times nu n times C x times w by L times V in 1 minus V in 2 times square
+[15:08] root of 4 times I s s divided by nu n times C x times W by L minus V in 1 minus V in 2
+[15:16] whole square. So basically we got the relationship between this I d 1 minus I d 2 and the V in
+[15:23] 1 minus V in 2 and as we know this differential output voltage V of 1 minus V of 2 can be written
+[15:31] as minus R d times these I d 1 minus I d 2 that means if we multiply this entire term
+[15:40] by minus R d then we will get the relationship between this V of 1 minus V of 2 and the V in
+[15:46] 1 minus V into more over we know that these I d 1 plus I d 2 is equal to I s s and if
+[15:53] we assume that this entire term is equal to K then this I d 1 minus I d 2 is equal to K.
+[16:00] So if we solve these two expressions then this I d 1 is equal to these I s s divided
+[16:14] by 2 plus K by 2 and the I d 2 is equal to I s s divided by 2 minus K by 2 minus N minus
+[16:23] where this K is the entire term. So in this way we can also see how the individual drain current
+[16:30] changes with the differential inputs alright. So once again if we come back to this expression
+[16:37] then as V in 1 minus V into increases then this drain current I d 1 minus I d 2 will increase
+[16:43] because in this expression this first term will rise more rapidly compared to the square root
+[16:50] term that means initially we will get this type of response which we have seen earlier and if
+[16:57] you see the differential output versus the differential input then the curve will look like this.
+[17:03] So here since the I d 1 minus I d 2 is multiplied with the minus R d so we are getting this type
+[17:09] of curve. Now as per this equation beyond certain value of this differential input
+[17:15] this square term will dominate and the differential output will start reducing and at one point
+[17:22] this differential output will become 0 that means whenever this V in 1 minus V into whole square
+[17:28] is equal to this term then this entire term will become 0 and at that time this differential
+[17:34] output will become 0 but this result is contradictory to our previous result right.
+[17:41] So how is it possible when the thing is while deriving this expression we have assumed that both
+[17:47] MOSFETs are in the on condition and they are operating in the saturation region and as we have
+[17:53] seen earlier as the differential input goes beyond these two points then one of the MOSFET will get
+[17:59] turned off. Therefore this equation is varied up to this point where the both MOSFETs are conducting
+[18:07] or in other words when the differential input is within this range where this V over drive
+[18:13] can be given by this expression. So this range is the usable range and in this range the
+[18:20] relationship between the input and output can be given by this expression and of course to get
+[18:26] the relationship between this output and the input we need to multiply this expression by the
+[18:31] minus rd. So now let us see how this input output characteristic changes with this order
+[18:38] I voltage. So as per this graph as the order I voltage increases and the curve will spread
+[18:45] horizontally and hence this differential input range over which this circuit works will also
+[18:51] increase more over as the curve spreads horizontally so the linear region of operation will also
+[18:58] extend. So let us understand this point with the change in the couple of parameters and first of all
+[19:04] let us see how this characteristic changes when the ISS gets doubled. Now we know that these
+[19:12] root 2 times V over drive is the maximum differential input up to which the circuit works properly.
+[19:18] So let us denote these root 2 times V over drive as a VID max. Now when this ISS gets doubled
+[19:25] then the new over drive voltage will be root 2 times the previous one or in other words
+[19:31] the differential input range will get extended by the root 2 times and since the ISS is doubled
+[19:38] so the curve will also expand vertically that means by increasing the ISS the linear range of
+[19:44] the operation can be extended but the downside is that since we are increasing the ISS so the
+[19:51] power conduction of the circuit will also increase. So now let us see the second case where this W
+[19:57] by L is doubled. So as per this expression when the W by L is doubled and the new over drive voltage
+[20:04] will reduce by the factor of root 2 that means now the curve will shrink horizontally and since
+[20:11] the ISS is same so vertically the curve will remain same so basically with the increase in the W
+[20:19] by L ratio or with the reduction in this over drive voltage the curve will shrink horizontally
+[20:25] and hence the linear region of operation will also shrink but on the positive side since the
+[20:32] slope of the curve has increased so the gain of the circuit will also increase because if you see
+[20:38] the slope of this input output characteristic basically represents the gain that means for the
+[20:43] given differential input how much differential output we can get that means as the W by
+[20:49] L ratio increases and the linear region reduces but the gain of the circuit will increase.
+[20:55] On the other hand if we reduce the W by L ratio by the factor of 2 and the new over drive voltage
+[21:00] will be root 2 times the previous one and hence the curve will expand horizontally
+[21:06] and since the ISS is same so vertically the curve will remain same that means now the differential
+[21:13] range will increase but at the same time now since the slope of the curve has reduced so the gain
+[21:20] of the circuit will also reduce so in short by increasing this over drive voltage the differential
+[21:26] range and the linearity of the circuit can be increased but at the same time the gain of the circuit
+[21:32] will reduce that means there is a trade off between the linearity and the gain so by controlling
+[21:40] this over drive voltage we can control all these parameters alright so now in this differential
+[21:46] range because of this square term the relationship between this input and output is still non-linear
+[21:52] so if you want to use this differential pair as an amplifier then the differential input should be
+[21:57] very small so that there is a linear relationship between this differential output and the differential
+[22:03] input so let us find out that drains over which we will get the linear relationship
+[22:09] now in this expression when this we in 1 minus we in 2 whole square is much less than this term
+[22:18] that is 4 ISS divided by mu n times 2x times w divided by l then this second term can be neglected
+[22:28] so whenever this condition gets satisfied then we can neglect this term and we can get the
+[22:33] linear relationship between the input and the output so from this we can say that whenever
+[22:39] these we in 1 minus we in 2 is much less than 2 times square root of ISS divided by mu n times
+[22:49] Cu x times w divided by l then we will get the linear relationship now we know that this term
+[22:57] is nothing but the over drive voltage right so we can say that whenever these differential input
+[23:04] v in 1 minus v in 2 is much less than these 2 times the equilibrium over drive voltage v over drive
+[23:12] then the relationship between this input and output will become linear and under this condition
+[23:18] we can say that the differential signal is very small signal and we can use the small signal
+[23:23] analysis so in the next video for a small differential input signal we will find out the gain of the
+[23:29] differential amplifier using the small signal analysis but I hope in this video you understood
+[23:34] the large signal analysis of this differential amplifier so if you have any question or suggestion
+[23:40] then do let me know here in the comment section below if you like this video hit the like button
+[23:44] and subscribe to the channel for more such videos

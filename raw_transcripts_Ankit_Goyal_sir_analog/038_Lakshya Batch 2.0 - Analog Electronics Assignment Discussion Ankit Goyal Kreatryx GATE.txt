@@ -1,0 +1,1295 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Assignment Discussion | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=9Aza3dZqDQ8
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to Creatrix YouTube channel my dear friends.
+[00:15] We are back again with Lakshya batch 2.0 for Analog Electronics.
+[00:21] In the last session of your JFET in which we are going to discuss all your DPPs and assignments.
+[00:28] I hope you have solved all your questions and you will tell me how you solved them.
+[00:35] We will have a very good quality discussion here and from tomorrow we will start a new unit that is MOSFET.
+[00:44] MOSFET is a chapter that is being frequently asked in the gate.
+[00:50] You will get a lot of fun and you will get to learn from basics.
+[00:54] And the most fun will come to those children who have attended both BJT and JFET.
+[01:00] They will have a lot of fun.
+[01:02] Sir, when will be the next class?
+[01:05] Will it be tomorrow?
+[01:07] If you want to join the academy then you will get a 20% off offer.
+[01:14] If you join the academy then you can join on 20% discount.
+[01:18] Simply you have to apply the code Ankit ESE.
+[01:22] This will give you maximum discount and you can directly study under my personal guidance.
+[01:29] If you go for a distance learning program in which you get books and test series then you will get a 20% off offer.
+[01:38] If you apply the code Ankit ESE then you will get a 20% discount.
+[01:46] Let's start then.
+[01:49] Let's start.
+[01:52] Let's come to the first question.
+[01:55] For the voltage divider by a circuit given, calculate all node voltages and branch current.
+[02:02] What is the benefit of JFET?
+[02:05] The current of the gate is zero.
+[02:08] The current going in the gate is zero.
+[02:11] Due to which both the resistances come into the series.
+[02:15] And directly we get the voltage of the gate from the voltage divider.
+[02:21] 16 into 270 kilo.
+[02:27] So I write 0.27.
+[02:30] 0.27 and below 2.1 plus 0.27.
+[02:39] Okay.
+[02:40] So let's check with Calci.
+[02:42] What is coming?
+[02:44] Let's check immediately.
+[02:49] 1.823.
+[02:54] Okay.
+[02:55] This will come.
+[02:56] 1.823.
+[02:57] Very good.
+[02:58] Here the current will be ID.
+[03:04] For this reason, if I want to know VGS, then what will you call VGS?
+[03:14] 1.823 is the voltage of the gate.
+[03:18] The source will be ID into resistance.
+[03:22] This will come.
+[03:24] This is VGS.
+[03:26] Now what will you do?
+[03:27] Now you will use the drain current equation.
+[03:31] IDSS 1 minus VGS by VP square.
+[03:38] As I said, in the JFET, there is only one issue.
+[03:42] That here we have to solve the quadratic.
+[03:49] VP is minus 4, then it will be minus.
+[03:52] Plus 1.823.
+[03:57] Plus 1.823 minus 1.5ID by 4.
+[04:09] From here, we will have to make a quadratic.
+[04:12] It will be 8 by 16.
+[04:14] Your 2 will come here.
+[04:17] 2ID 5.2ID will come.
+[04:21] 2.25.
+[04:23] Look, this quadratic will be 2.25ID square.
+[04:45] And this will be minus.
+[04:48] If this will be minus, then it will be minus 2.
+[04:51] Minus 19.469ID.
+[05:01] 33.907.
+[05:04] Tell me, is this the equation?
+[05:07] Just keep this in mind.
+[05:09] Current by default is running in milli ampere.
+[05:11] Is this the quadratic?
+[05:15] Tell me quickly.
+[05:17] First term 2.25.
+[05:19] 19.469.
+[05:23] 33.907.
+[05:26] 6.236 is coming.
+[05:29] 6.236 is coming.
+[05:36] And 1 is coming.
+[05:38] 2.416.
+[05:43] If you keep 6.236 in this, then the value of VGS will be smaller than VP.
+[05:51] If you put this value here, then VGS will be less than VP.
+[05:56] So, this cannot be put.
+[05:59] So, we will have to take this value.
+[06:02] If you want to take out the node voltage from this,
+[06:06] then if I ask you about the drain voltage,
+[06:09] then you will say drain voltage is 16 minus 2.4ID.
+[06:16] You have already taken out the gate.
+[06:18] If you ask about the node voltage, then take out the drain.
+[06:25] 10.2.
+[06:29] And if you ask about the source voltage,
+[06:32] ID into 1.5.
+[06:40] 3.624.
+[06:43] Okay.
+[06:44] All the current and gate voltage of the node have come.
+[06:49] The current of the branch means gate current, drain current.
+[06:53] And the node voltage means gate voltage, drain voltage, source voltage.
+[06:58] This is the answer.
+[07:00] Tell me.
+[07:01] This is the answer.
+[07:03] VGS is not called node voltage.
+[07:06] VGS is not node voltage.
+[07:09] It is gate to source voltage.
+[07:11] Node voltage is VG.
+[07:13] This is VD.
+[07:14] And this is VS.
+[07:15] This is node voltage.
+[07:17] Okay.
+[07:18] Let's see the next one.
+[07:19] For the series connected identical JFET,
+[07:22] calculate all node voltage and branch current.
+[07:25] Okay.
+[07:26] Now, let's see.
+[07:28] IG is to be zero.
+[07:33] So, the resistor at the bottom,
+[07:37] if we look at its current from KCL,
+[07:39] then its current will be zero.
+[07:42] Its current will be zero.
+[07:44] Which means the node voltage will remain zero.
+[07:50] It will remain zero on this node.
+[07:52] Because there will be no drop in resistance.
+[07:55] The current of resistance is zero.
+[07:57] So, if there is zero voltage at the bottom,
+[07:59] then what will be available at the top?
+[08:01] Zero voltage will be available.
+[08:03] Now, one current will flow in the entire circuit.
+[08:06] Let's write I instead of ID.
+[08:08] I, I.
+[08:10] It becomes easy to write a little.
+[08:12] Nothing else.
+[08:13] This is I.
+[08:15] Now, my brother, what will be VGS1?
+[08:18] VGS1.
+[08:22] This will be zero minus I into 2.
+[08:29] So, minus 2 I.
+[08:32] Now, you will write I is IDSS.
+[08:36] Let's focus on the transistor at the bottom.
+[08:39] 1 minus VGS by VP whole square.
+[08:47] So, that is 8 milliampere.
+[08:51] 1 minus minus 2 I by minus 4 whole square.
+[09:00] Okay.
+[09:01] 1 minus 2 I by 4.
+[09:03] So, 2 I will be here.
+[09:06] And this will be 4.
+[09:09] Means, this is minus minus plus.
+[09:11] So, 4 minus 2 I.
+[09:13] So, 16 plus 4 I square.
+[09:21] 4 minus 2 I.
+[09:23] So, 16 I.
+[09:28] Okay.
+[09:30] Now, divide by 4 here.
+[09:34] I square.
+[09:40] This is coming.
+[09:41] Tell me the quadratic.
+[09:43] Is this the quadratic?
+[09:45] Akash, there will be a negative sign in VGS.
+[09:48] It will be minus 2 I.
+[09:50] Are you writing minus or plus?
+[09:52] I can see plus from here.
+[09:54] Maybe, I am making a mistake in reading.
+[10:00] 3.28 is coming.
+[10:02] Look at one.
+[10:10] And 1.22 is coming.
+[10:15] Okay.
+[10:17] This is coming.
+[10:18] Okay.
+[10:19] Minus is written.
+[10:20] Now, if you see VGS in 3.28.
+[10:24] So, here VGS will be less than VP.
+[10:28] VGS will be less than VP.
+[10:30] So, this is wrong.
+[10:32] This is correct.
+[10:33] 1.22.
+[10:34] This is correct.
+[10:35] 1.22.
+[10:37] So, if 1.22 is correct.
+[10:39] Then I got I.
+[10:40] Branch current came.
+[10:42] Now, it is talking about drain voltage.
+[10:45] So, first I will take this out.
+[10:47] If VS1.
+[10:49] VS1 I into 2.
+[10:54] This is done.
+[10:55] How much is yours?
+[10:56] 2.44.
+[11:00] Okay.
+[11:02] The drain voltage of the second transistor can come out from above.
+[11:06] 15 minus 5 I.
+[11:10] 6.1 will be cut.
+[11:12] So, 98.9.
+[11:15] This is done.
+[11:16] But, how will you take out the voltage of the middle?
+[11:20] Yes.
+[11:21] Do you know how to take out the voltage of the middle?
+[11:23] You can say that the current of both the transistors is the same.
+[11:27] So, both the VGS should also be the same.
+[11:31] Both the VGS should also be the same.
+[11:35] Now, VG1 and VG2 are 0.
+[11:41] So, VS1 and VS2 should also be the same.
+[11:49] Understood?
+[11:50] When both the transistors are identical, current identical.
+[11:53] So, VGS will also be the same.
+[11:55] And the voltage of the gate is also equal to 0.
+[11:58] So, the voltage of the source will be equal to both.
+[12:01] So, here you are getting it.
+[12:03] Here you are getting it.
+[12:05] 8.9 volts.
+[12:07] Okay.
+[12:09] Here you are getting it.
+[12:11] 2.44 volts.
+[12:13] And here you are getting it.
+[12:15] 2.44 volts.
+[12:17] Okay.
+[12:19] Like this.
+[12:20] Here you are getting it.
+[12:21] It is clear.
+[12:23] It is clear that the voltage of all the nodes is gone.
+[12:25] Let's go.
+[12:27] For identical FET, IG is 0.
+[12:29] IDSS 10, VP minus 4.
+[12:32] All node voltages and branch current.
+[12:35] See, this is the connection of the Darlington pair.
+[12:38] This is the connection of the Darlington pair.
+[12:40] Yes.
+[12:41] The first one is the same as the drain and source.
+[12:43] That means, Akash's VDS is 0.
+[12:46] Dear, now the Gurupal sir is coming to Bangalore.
+[12:50] The whole team of Dhandesar is in Bangalore.
+[12:52] That is why there may be no classes.
+[12:54] Now, see.
+[12:55] IG is 0.
+[12:57] Zero will also come here.
+[13:00] Okay.
+[13:01] And here your voltage is zero.
+[13:05] Because there is zero ampere current here.
+[13:10] Now, we know that we can use KVL from VGS 1 and VGS 2.
+[13:17] The point is that how will you separate them?
+[13:21] If the current is I1, if it is I2,
+[13:25] then here,
+[13:33] we will get the sum of VGS 1 and VGS 2.
+[13:36] But we will not get VGS 1 and 2 separately.
+[13:41] Because there will be I2 current here.
+[13:47] See, if you put KVL in the input loop,
+[13:51] then you will get VGS 1.
+[13:56] Minus I2 into 2.
+[14:00] This will be.
+[14:02] If I am putting KVL from here,
+[14:05] if I am putting KVL from here,
+[14:09] then this is getting.
+[14:13] What are you saying? I1 will be zero.
+[14:16] Yes.
+[14:18] This is a very good method.
+[14:20] Very good.
+[14:21] I1 will be zero.
+[14:23] Because its gate current should be zero.
+[14:26] So, I1 is zero.
+[14:28] So, this is I2 only.
+[14:30] If I1 is zero,
+[14:33] then VGS 1 is equal to Vp.
+[14:39] Because I1 is zero.
+[14:42] So, how much is this?
+[14:44] Then minus 4 volt.
+[14:46] So, how much is VGS 2?
+[14:49] 4 minus 2 I2.
+[14:52] Now, you can get I2 from here.
+[14:55] Very good.
+[15:00] It was fun.
+[15:02] The question is quite good to make this assignment.
+[15:09] See, cut 2.
+[15:11] Take 2 here.
+[15:13] Square 4, 2.5.
+[15:17] 2 I2 minus 2.
+[15:20] And from here.
+[15:22] Let's do this plus.
+[15:24] 2 minus I2.
+[15:26] 2 plus 2 minus I2.
+[15:27] That is 4 minus I2.
+[15:29] 16.
+[15:36] Okay.
+[15:38] So, what is the quadratic equation from here?
+[15:40] 2.5 I2 square
+[15:42] minus 21 I2.
+[15:46] 16, 22, 32, 40.
+[15:53] This is the quadratic equation.
+[15:56] This is the quadratic equation.
+[16:00] Tell me quickly.
+[16:02] This is the quadratic equation.
+[16:11] This is I2.
+[16:15] 5.48.
+[16:17] Which I believe is obviously wrong.
+[16:20] 1, 2.92.
+[16:25] Most of us are seeing that the value is wrong.
+[16:28] Now, VGS 2 is 4 minus 2 I2.
+[16:30] This will be wrong.
+[16:32] Because here VGS will be less than VP.
+[16:34] This will be correct.
+[16:36] So, we got I2.
+[16:38] We got I2.
+[16:40] So, what will we get?
+[16:42] Look here.
+[16:44] If this is 0.
+[16:45] And this voltage is your VGS 1 minus 4.
+[16:51] So, we will get 4 here.
+[16:53] Okay.
+[16:55] If you want VS2.
+[16:57] The source voltage of the other.
+[16:59] So, it will be 2 I2.
+[17:01] 5.84.
+[17:07] And if you want the voltage of the drain.
+[17:09] Then I2 will also be coming here.
+[17:15] 15 minus I2.
+[17:22] So, 12.
+[17:27] We got it.
+[17:29] Is this what we are making?
+[17:31] Yes, we are considering a smaller value.
+[17:33] Because in a larger value.
+[17:35] VGS minus VP is going down.
+[17:37] How did VGS come?
+[17:39] Which one should I tell you now?
+[17:41] The one above.
+[17:43] This is equal to VP which I have written.
+[17:45] If the current is 0 of the transistor.
+[17:47] So, the transistor is in the pinch off.
+[17:49] Then VGS will be VP.
+[17:51] Otherwise, look at this equation.
+[17:53] 1 minus VGS by VP will be current 0.
+[17:55] When VGS and VP will be equal.
+[17:59] The current of any transistor will be 0.
+[18:01] When VGS and VP will be equal.
+[18:05] Okay.
+[18:07] Tell me.
+[18:09] Okay, see the next one.
+[18:11] Given IDSS is 10 milli ampere.
+[18:13] VP is minus 4 volt.
+[18:15] Calculate all the DC currents and voltage.
+[18:19] See.
+[18:21] Now, let's open the capacitor in DC.
+[18:25] So, we will ignore these capacitors.
+[18:29] They will be open circuited.
+[18:31] Okay.
+[18:35] So, there will be two answers to it.
+[18:37] If both the IDS are valid.
+[18:39] Then there will be two answers.
+[18:41] Now, see.
+[18:43] The current will be 0 ampere in the gate.
+[18:47] That's all we know.
+[18:49] Okay.
+[18:51] Now, there is 500 ohm here.
+[18:53] Here is 10 kilo ohm.
+[18:55] Here is 10 kilo ohm.
+[18:57] And here is 15 volt.
+[18:59] So, these two are in series.
+[19:03] If the current is 0 in the gate.
+[19:05] Then these two are in series.
+[19:09] So, from here, you can take out the voltage of the gate.
+[19:13] 15
+[19:15] into 10 by
+[19:17] 10 plus 10.
+[19:21] 7.5 volts.
+[19:23] Okay.
+[19:25] 7.5 volts.
+[19:27] If we get this much.
+[19:29] These two are in series.
+[19:31] If we talk about the source.
+[19:33] Here is your drain current.
+[19:35] Here also drain current.
+[19:37] So, here the drain current will go like this.
+[19:39] The capacitor in front is open.
+[19:43] So, if you talk about the source voltage.
+[19:45] Then it will be
+[19:47] Id into 2.
+[19:49] So, what is VGS?
+[19:53] 7.5
+[19:55] minus 2
+[19:57] Id.
+[19:59] Okay.
+[20:01] And then, Id is
+[20:06] Idss
+[20:19] 10.
+[20:28] Vp is minus 4.
+[20:30] Okay.
+[20:34] This is the result.
+[20:36] Okay.
+[20:38] Now, if we take out minus minus plus.
+[20:40] So, 16.
+[20:42] So, this is 1.6 Id.
+[20:44] 10 is removed from here.
+[20:46] 4 and 7.
+[20:48] 11.
+[20:50] Square of 11.
+[20:52] And 2 Id square from here.
+[20:54] So, square of 4 Id.
+[20:56] Square of 11.
+[20:58] Square of 11.
+[21:00] Square of 11.
+[21:02] Square of 11.
+[21:04] Square of 11.
+[21:06] Square of 11.
+[21:08] Square of 11.
+[21:10] Square of 11.
+[21:12] Square of 11.
+[21:14] Square of 11.
+[21:16] Square of 11.
+[21:18] Square of 11.
+[21:20] Square of 11.
+[21:22] Square of 11.
+[21:24] 46, 47.6, this is the quadratic, confirm it once, I don't understand the equation of VGS,
+[21:47] I mean are we getting KVL from KVL, tell me what you don't understand, we are getting KVL from Kishan,
+[21:58] first I will get VG and VS and then subtract both, 7.48 is coming,
+[22:07] and one is coming, 4.42, okay, Kishan my brother see, what I did here was 15 volts, I had to subtract VGS,
+[22:31] this was 15 volts, so I found the voltage of the gate from here, so I got VG and here
+[22:38] I got the source voltage from resistance into current, so gate voltage minus source voltage VGS, VG minus
+[22:46] VS, now see VGS is 7.5 minus 2ID, so here VGS will be less than VP, so this one is correct,
+[22:57] what was the question, all DC current and voltage, if you want the voltage of the drain, see current
+[23:06] is going, if you want the voltage of the drain, 15 minus 0.5ID, 500 ohm, so 0.5ID,
+[23:20] 12.79 is coming, the voltage of the source, we could see 2ID, 8.84 and we have removed the gate,
+[23:40] 10.5 volts, did you understand Kishan, tell me, is it clear, next, find the value of RD required to
+[23:54] bias the amplifier such that, see this is made like a differential amplifier, such that VDS 1 equal
+[24:01] to VDS 2 7, VP is 4 minus 4, IDSS is 10, see this is 7, here see the zero ampere current will come on the gate,
+[24:15] from which the voltage of the gate is zero, zero ampere current will come, from which the voltage of the gate is zero,
+[24:23] here we have given 7 volts, both of them are VDS same, here this IS, here the voltage of the source
+[24:35] will be how much, VS is KVL, if you see minus 5 plus 3 IS, so if you see VGS of both the
+[24:48] transistors, 0 minus VS is equal to 5 minus 3 IS, this is it, okay, and the ID of both the transistors
+[25:04] is becoming IS, the ID of both the transistors is becoming IS, very good, IS is 2ID, see I have
+[25:17] shown this in Darlington pair, I have shown you the differential amplifier in this, see all the
+[25:25] concepts of BJT are getting carried over, now you will write the equation of ID, IDSS 1 minus VGS
+[25:35] by VP whole square, ID, we don't know how much is it, IDSS is 10, 1 minus
+[25:52] by minus 4, okay, so brother how much will come, minus minus plus,
+[26:03] so 4, 6, 36 ID square, 4 or 5, 9, so 81, 9, 6, 54, 108,
+[26:18] so see the quadratic is formed, 36 ID square minus XO 9.6 ID
+[26:36] plus 81 equal to 0,
+[26:48] so 1.781 is coming,
+[26:58] 1.263, see if you calculate VGS on 1.781, it is 5 minus 6 ID,
+[27:09] so minus 5.686 is coming, that is, here VGS is less than VP, that is, it will be pinch off,
+[27:17] so you have to use this value, okay, RD is asking, now how to remove RD sir, first remove VGS for RD,
+[27:28] 5 minus 5 plus 3 into 2ID, let's see,
+[27:35] 2.578,
+[27:43] this will give you the voltage of the drain, the drain to source is 7,
+[27:48] 7 plus source voltage, the voltage of the drain to source is more than 7,
+[27:53] 9.578, now if you want RD, then 15 minus VD by ID will be, okay,
+[28:08] 15 minus 9.578 divided by 1.263, 4.3 kilo, this is 4.3,
+[28:24] this is clear, 4.3 kilo, is this coming, confirm it once,
+[28:31] very good, very good, how many children did this come, tell yourself,
+[28:36] first all the questions of DPP, how many people are right, it is not a lie to tell from honesty,
+[28:40] how many people have made the first DPP absolutely right, all the answers have come,
+[28:46] tell me quickly, good afternoon Praveen,
+[28:53] tell me, let's move on to the next one, it was made, it was made of Saurav,
+[28:59] the last one was not made, now it is made, there is no problem, yes, common drain amplifier,
+[29:06] mu 60 is given, rds 30 is given, so you know how to take out the gm, mu by rds
+[29:15] i.e. 2 millisiemens, now v0 by v in is asking,
+[29:23] come on, there is no problem, now it is clear, it is looking easy, tell me this,
+[29:29] it is as easy as jfet, it is as easy as mosfet, it will be as easy as mosfet,
+[29:38] so you don't need to be afraid of mosfet's biasing, you don't need to be afraid of the
+[29:43] amplifier of mosfet,
+[29:49] if you have done jfet, then mosfet is done, just understand this,
+[29:59] see the drain will be ground because it is vdd, it will take 10 mega ohm resistor on the gate
+[30:10] and it will also take 1 input voltage on the gate,
+[30:19] okay,
+[30:22] you teach power electronics, yes, son, it is on this channel, power electronics,
+[30:26] what mu represents, i told mu that gm into rds is there, gm into rds is there,
+[30:34] what happened, we ate rd,
+[30:40] you are right, it is half done, this is 30, so actually these 30 and 5 will come in parallel,
+[30:50] these 30 and 5 will come in parallel,
+[30:53] namaste nithin, son, if you haven't seen the message of namaste, you are upset,
+[31:08] in fact, i think it is more easy than the biasing, the amplifier is being read, what do you say,
+[31:23] look, it has become like this,
+[31:38] see here, v0 is gm vgs, their parallel combination will be 30 by 7,
+[31:58] then input voltage will be vgs plus v0,
+[32:14] gm is your 2,
+[32:27] and look, this should also happen, common drain amplifier or source follower,
+[32:37] the gain should be smaller than 1, 0.8955, why do you calculate in the middle step,
+[32:45] brother, let it go in the fraction, let it go in the fraction, I didn't take out how much vn is making,
+[32:51] what do I do, do you understand, you will have to use a calculator, why do I take out v0,
+[33:00] I leave it like this, here lcm will come out easily, once it will be calcium,
+[33:05] so save it from this, don't put a calculator on every step, unless it is becoming a very long
+[33:11] expression, take the mosfet from the basics, so son, how are the rest of the chapters going,
+[33:19] any chapter where you should come first, now look, almost in our analog,
+[33:26] 65 hours are going to happen, what have we covered so far, diode, BJT, j-fet,
+[33:31] mosfet has also not been covered, now how is the analog from the basics,
+[33:37] now look, what is this, I think this line should not come here,
+[33:43] this will be connected like this, both the gate source are connected,
+[33:49] this is easy, we have done this parallel connected transistors,
+[34:01] correct, this is done many times that your trans conductance doubles and the resistance
+[34:08] is halved because it is parallel, next look, find the voltage gain v0 by v in and current gain
+[34:16] iL, if you understand it less, then son, then you must have not done it from the start,
+[34:21] because if any child will do it from the start, then I assume that this chapter will be very easy for him,
+[34:27] right, so as soon as there is a man in this class, there is a man, there is a man, there is a man, there is a man,
+[34:33] there is a man, there is a man, why are they able to make it, because they have started attending
+[34:38] wikki, now you will come to a class randomly, you will think that it is difficult to understand,
+[34:44] yes, now draw its circuit, it has given gm, it has given rds, what else do you want in life,
+[34:50] now do not put your mind too much, now let's draw it straight away, first let's draw the model of j-fet,
+[35:04] I think the children who are taking the course of this analogue from the start in a way,
+[35:10] now they must be making it very easy for the PYQ of analogue, that means they must be cutting the question
+[35:17] like a carrot radish, that child is my thought, now see here the drain is directly connected to the VDD,
+[35:29] so the drain will be grounded, now what is on the source, this capacitor will be short,
+[35:40] okay, this capacitor will be your short, so this 800 ohm is your short, 800 ohm is your short,
+[35:49] so here your source and ground is in between 1.2 kilo ohm source and ground is in between 1.2 kilo ohm
+[35:59] and there is a resistance between the gate and the source, 1 mega ohm,
+[36:04] there is a resistance between the gate and the source, 1 mega ohm, like this,
+[36:12] you are understanding that this resistance is going from the gate and the source is 1.2
+[36:18] VIN
+[36:33] and then the drain is 1 kilo ohm from the source and ground,
+[36:38] one more resistance is coming from the source, 1 kilo ohm, okay,
+[36:53] like this, is it clear,
+[36:58] no problem, Krishna, you can start from the MOSFET, you will understand everything,
+[37:03] BJT attended, Krishna, by the way, if you want, you can do JFET today as well,
+[37:07] the rest of the day is left till tomorrow morning, JFET 3 is the lecture,
+[37:14] now see this RD30, as we said in the last question, it will be parallel to these two,
+[37:21] RD30 will be parallel to these two,
+[37:27] so actually how will your circuit be,
+[37:33] RD30 parallel 1.2 parallel 1,
+[38:03] see this is VGS,
+[38:16] now V0 is, first take out the resistance, how much is coming, because it is being read for a long time,
+[38:22] 30 parallel 1.2 parallel 1, by the way, you can do it,
+[38:30] you can remove 30 here,
+[38:36] 0.536 is coming, or let's write exactly 0.5357 kilo,
+[38:52] VN is VGS plus V0,
+[39:12] so here when the voltage gain will be discussed,
+[39:22] so this is coming,
+[39:41] now GEM, how much is given to you, 0.0025, so do 2.5 milli Siemens,
+[39:48] 2.5 milli,
+[39:55] 0.5725 is coming,
+[40:02] now IL is in the load resistance, so V0 by 1, and IN is your VGS by
+[40:15] 1 mega ohm,
+[40:21] this is IN,
+[40:31] now IL by IN,
+[40:34] 1 mega by 1 kilo 1000 is done,
+[40:44] V0 by VGS is done, GEM into 0.5357,
+[40:54] GEM at 2.5 milli,
+[40:56] 1.339.25, so current gain is very high,
+[41:11] the current coming from the input is taken,
+[41:15] the current coming from the input will go like this,
+[41:17] and where will it go,
+[41:19] there is no way ahead,
+[41:22] see the current coming from the input,
+[41:25] it cannot go ahead in the gate,
+[41:27] that is the 1 mega ohm one,
+[41:33] we will talk about the paid course at the end of the class,
+[41:36] what are you asking in V0,
+[41:40] the current coming from the input will not be considered in V0,
+[41:45] stop,
+[41:48] you are right,
+[41:49] here VGS by 1 mega ohm should also be there,
+[41:53] but it will become very small,
+[41:57] actually what you are saying is that the current should be here,
+[42:01] GEM VGS,
+[42:03] that is 2.5 milli VGS,
+[42:07] plus VGS by 1 mega ohm,
+[42:13] but this is 1 micro,
+[42:15] that is 0.001 milli,
+[42:19] 0.001 milli,
+[42:21] this will become 1 micro,
+[42:23] because the mega is coming down,
+[42:25] so we have ignored this,
+[42:27] you are right,
+[42:29] but this can be ignored,
+[42:33] so in JFET and MOSFET,
+[42:35] do you know why the current gain is so high,
+[42:39] 1339.82 is coming,
+[42:41] so what will the difference be,
+[42:43] see the difference,
+[42:45] do you understand,
+[42:47] if the difference is 2 decimals,
+[42:49] if the difference is 2 decimals,
+[42:51] then it does not matter,
+[42:53] so my point is that
+[42:55] the current gain of JFET and MOSFET
+[42:57] is very big,
+[42:59] because the input current is not equal,
+[43:01] so if the output current is high,
+[43:03] then the gain will be very high,
+[43:05] the input current is not equal,
+[43:07] due to SI O2 layer,
+[43:09] when the SI O2 layer comes in MOSFET,
+[43:11] and here PN junction is reverse biased,
+[43:13] so the gate current is 0,
+[43:15] almost 0,
+[43:17] that is why the current gain is very big,
+[43:19] come,
+[43:21] this question was looking good,
+[43:23] for the JFET, BJT, Darlington,
+[43:25] Pair, Find, AV, Beta,
+[43:27] Rpi,
+[43:29] Mu and RDS,
+[43:31] so take out GM,
+[43:33] 2 millisiemens,
+[43:37] do you want to do it with GM,
+[43:39] you can take out GM in BJT,
+[43:41] Beta upon Rpi,
+[43:45] so 99 millisiemens,
+[43:51] okay, 99 millisiemens,
+[43:53] now we have to make a model here,
+[43:55] what should we do first,
+[43:57] I will make it on the next page,
+[43:59] first make a model of JFET,
+[44:03] was this question made,
+[44:05] tell me,
+[44:11] now think what is the use of
+[44:13] JFET,
+[44:15] when you see in the exam,
+[44:17] what will remain open,
+[44:19] is it not,
+[44:21] the child who is stuck,
+[44:23] will say, which formula will be used here,
+[44:25] and what do we know,
+[44:27] we know the circuit,
+[44:29] we will take 2 minutes,
+[44:31] but this will remain such a question,
+[44:33] if such an exam comes,
+[44:35] which will rank,
+[44:37] now see this gate,
+[44:39] a resistance is going from the gate,
+[44:41] which is connecting with BJT,
+[44:43] so now let it go,
+[44:45] let's make 10 mega ohms,
+[44:47] we will not take it all the way down,
+[44:49] the drain will get ground,
+[44:51] see this drain terminal
+[44:53] got ground,
+[44:55] and this 10 mega ohms,
+[44:57] here VIN is installed,
+[45:03] take it down like this,
+[45:05] now what to do,
+[45:07] make a model of BJT,
+[45:09] okay,
+[45:13] now make a model of BJT,
+[45:15] the base of BJT is connected to its source,
+[45:17] the base of BJT is connected to its source,
+[45:29] here R pi,
+[45:31] V pi,
+[45:35] this is the emitter of BJT,
+[45:39] emitter has 2 resistance,
+[45:41] 11 kilo ohms,
+[45:47] and from here,
+[45:49] this resistance is going,
+[45:55] it is connecting here,
+[45:57] okay,
+[46:03] I give it 99 V pi,
+[46:05] I give it 99 V pi,
+[46:07] and it is not given R naught,
+[46:09] and its collector will also
+[46:11] connect from the ground,
+[46:15] this 10 mega ohm resistor,
+[46:17] obviously it can be ignored,
+[46:19] it can be ignored,
+[46:21] correct,
+[46:23] it can be ignored,
+[46:35] okay,
+[46:39] what to remove,
+[46:41] you have to remove the voltage gain,
+[46:43] here,
+[46:45] VGS plus V pi,
+[46:47] here 99 V pi,
+[46:51] see here,
+[46:53] current will come,
+[46:57] V pi upon R pi,
+[46:59] R pi,
+[47:03] or here,
+[47:05] let's do one thing,
+[47:07] instead of the GM model, let's make the beta IB one,
+[47:09] it seems a little easy,
+[47:11] in BJT,
+[47:15] because adding current
+[47:17] becomes very easy,
+[47:23] 100 IB, okay,
+[47:25] so,
+[47:29] what to do here,
+[47:33] 100 IB,
+[47:37] if I call this voltage V1,
+[47:41] then V1 will come,
+[47:43] 100 IB
+[47:47] into 1 kilo ohm,
+[47:49] and V in will be,
+[47:51] the current of this resistance
+[47:53] will be zero,
+[48:07] because in 10 mega ohm,
+[48:09] the current will go equally,
+[48:13] so, the input voltage
+[48:15] has come, you have 100 IB,
+[48:17] now, you have to see the output,
+[48:19] where is the output shown,
+[48:21] the output is shown
+[48:23] across this resistance,
+[48:27] so, it has come directly,
+[48:29] the output has come,
+[48:31] 100 IB
+[48:35] into 2k,
+[48:41] how much has come, 2 has come,
+[48:47] tell me, this is the output,
+[48:51] I don't need VGS,
+[48:53] because of this 10 mega ohm,
+[48:55] because of this 10 mega ohm,
+[48:57] if I consider the current as zero,
+[48:59] then here and here the voltage will come
+[49:01] the same, what is the answer,
+[49:03] how to tell this,
+[49:05] what was the answer, 2 was given,
+[49:07] something else was given,
+[49:11] tell me, what is it,
+[49:17] VGS and VPI will go,
+[49:27] what is the answer,
+[49:29] because the answer is correct,
+[49:31] VGS can also go,
+[49:41] but I think
+[49:43] in 10 mega ohm,
+[49:45] if there is no current,
+[49:47] then VIN will be the voltage of this 1 kilo ohm,
+[49:49] no,
+[49:51] son, you can write GMVGS
+[49:53] when you ignore RD,
+[49:55] the RD is given,
+[49:57] 30 kilo ohm, if you ignore it,
+[50:01] if you ignore 30 kilo ohm,
+[50:03] let's see one more method,
+[50:05] or stop,
+[50:15] suppose
+[50:21] you
+[50:23] have ignored this resistance,
+[50:29] let's check it once,
+[50:31] if you ignore it,
+[50:35] so you will say, IEB
+[50:37] is equal to 2 VGS,
+[50:39] GMVGS,
+[50:41] okay,
+[50:43] V naught is 100 IB into 2, i.e. 400 VGS.
+[50:58] V naught voltage is VGS plus IB r pi plus V naught, i.e. 2 VGS r pi is 1 kilo ohm.
+[51:28] V naught by V in is 400 by 403, i.e. 2 was coming, 0.976, 9925.
+[51:54] The gate resistance is often ignored because it is in mega ohm.
+[51:59] But if you do not ignore 30 kilo ohm in this method, there is no such simple analysis.
+[52:06] What is given in the answer? What is given in the answer?
+[52:11] Ravi, if you have seen all my classes, you must have seen, I often ignore this r naught.
+[52:19] But why am I talking about ignoring 10 mega ohm in JFET?
+[52:24] Because the resistor of 10 mega ohm is so big that we can ignore it.
+[52:29] It will be equal to its current.
+[52:31] It will be equal to its current.
+[52:34] But my idea here is, if we do not ignore r d, how would we do it?
+[52:47] The thing is, who should be ignored here?
+[53:02] They have combined 10 mega ohm powerfully.
+[53:05] They have combined feedback from output to input.
+[53:09] If you consider everything, then the question will be very long.
+[53:18] If you assume that you should not ignore anything, then what will happen?
+[53:24] Did any of you say that 0.976 is the same?
+[53:27] If you do not ignore anything, then try it once.
+[53:33] Look, if you do not ignore it, then what will happen?
+[53:45] Will this voltage become V1?
+[53:47] I do not know how much current will come for V1.
+[53:52] If I put a nodal on V1, then one nodal can be put on V1.
+[53:59] And one variable on V1 will become V1.
+[54:04] Look, let's try.
+[54:06] Look, VGS is our variable.
+[54:10] One IB is our variable.
+[54:12] If I take one more V1, then there will be three variables.
+[54:15] Can I do VGS and IB?
+[54:18] Can I do VGS and IB?
+[54:23] How much is the voltage of V1?
+[54:33] If you do not ignore anything, think here.
+[54:36] If I do not ignore anything, then can I do two variables here?
+[54:43] I think three variables will be too much.
+[54:46] If I take V1, VGS or IB, then it is very difficult.
+[54:51] So, these will become very variable.
+[54:54] Otherwise, how will you remove V1?
+[54:59] Let's write V1 like this.
+[55:10] V0-100 IB.
+[55:13] And this is V0 plus IB.
+[55:20] R pi is 1 kilo ohm, right?
+[55:25] Okay?
+[55:26] This is done.
+[55:28] Now, if I put a nodal on the V1 node,
+[55:38] if I put it on V1, then V0-100 IB
+[55:48] minus V in by 10 mega ohm.
+[55:54] Okay?
+[55:56] This is done.
+[55:58] Plus V1 by 1 kilo ohm plus is equal to 100 IB.
+[56:08] Now, what I feel is that compared to 1 kilo ohm,
+[56:13] if you ignore 10 mega ohm,
+[56:17] we understand this term.
+[56:19] We understand this term that it is going to be very small.
+[56:23] So, approximately, can I write V1?
+[56:27] 100 IB.
+[56:29] If I ignore the first term, can you write V1-100 IB?
+[56:36] Okay?
+[56:38] V1 is V0-100 IB, right?
+[56:41] Why did I put V1 here?
+[56:53] So, I will write V0-200 IB.
+[56:57] Okay?
+[56:58] Now, come to this.
+[56:59] If you put a nodal on this node,
+[57:01] there is no current here.
+[57:03] One current outgoing is IB.
+[57:06] One current outgoing is V0 plus IB upon RD
+[57:14] and one incoming current is GMVGS.
+[57:20] Now, V0-200 IB, if...
+[57:35] Okay?
+[57:39] So, how much IB has come from here?
+[57:44] 231 by 30.
+[57:50] This is IB.
+[57:52] Now, input voltage
+[57:55] or write VGS in the terms of IB here.
+[58:00] 231 by 30 upon GM.
+[58:13] GM is running in your mill.
+[58:16] Now, if you write VIN,
+[58:21] VGS plus V0 plus IB.
+[58:28] 231 by 30 IB upon GM
+[58:34] plus 200 IB plus IB.
+[58:40] So, how much VIN will be?
+[58:42] 201 IB
+[58:47] GM2 and a...
+[58:55] 204.85.
+[59:02] V0 is 200 IB
+[59:05] V0 is...
+[59:14] 0.9763.
+[59:16] Now, this is correct.
+[59:18] Now, see, I didn't ignore anything.
+[59:21] Now, I didn't ignore anything.
+[59:24] Did you understand?
+[59:25] How did we do it?
+[59:27] Tell me.
+[59:28] Did you understand how we did it?
+[59:31] Now, I didn't ignore anything.
+[59:34] So, skip the other two methods.
+[59:37] Because we were taking an approximation in this.
+[59:39] Okay?
+[59:42] Clear?
+[59:43] So, 0.976 has come.
+[59:45] Do you know what we made a mistake earlier?
+[59:47] We have written GMVGS to IB.
+[59:50] But you are seeing that IB is coming less than GMVGS.
+[59:53] GMVGS is coming less than GMVGS.
+[59:55] It is coming much less.
+[59:56] It is not that IB came directly to GMVGS.
+[59:59] So, that was a very big approximation.
+[60:02] Okay?
+[60:03] Let's go.
+[60:04] For a given JFET, typical value of amplification factor is given as 40.
+[60:09] This amplification factor is mu.
+[60:14] And GM is given as 100 micro Siemens.
+[60:18] So, dynamic resistance is asking.
+[60:21] That is, RD
+[60:23] mu by GM
+[60:28] 400 kilo ohm.
+[60:32] Mu is called amplification factor.
+[60:35] Because if you don't apply any drain resistance.
+[60:39] Just look at it.
+[60:41] You can say V0 minus GMVGS RD.
+[60:44] So, gain is minus GMRD.
+[60:46] Gain is yours.
+[60:48] If you take only this much amplifier.
+[60:51] So, GMRD is the gain.
+[60:53] That is why mu is called amplification factor.
+[60:57] Now, this was the last one.
+[60:59] JFET is characterized by parameter ID and VP.
+[61:04] V0 is asking if VI is zero.
+[61:07] If my VI is zero.
+[61:10] That is, gate voltage is zero.
+[61:13] Okay?
+[61:15] Now, here is ID.
+[61:18] And this is my ID.
+[61:21] Okay?
+[61:24] So, I say
+[61:26] What is the voltage of source?
+[61:28] See, Kishan.
+[61:30] Minus 12 plus 2ID.
+[61:34] Gate voltage is zero.
+[61:37] So, what is VGS?
+[61:40] 12 minus 2ID.
+[61:43] Now, apply the same again.
+[61:46] ID is
+[61:48] zero.
+[61:51] By the way, from the last question,
+[61:53] should I tell whether my mind is open or not?
+[61:56] It seems that we can do
+[61:58] amplifiers and things.
+[62:09] Now, we have combined BJT and JFET
+[62:11] both.
+[62:14] I am telling you, you will reach
+[62:16] anywhere.
+[62:18] Even then, your analog will not stop.
+[62:20] Your analog is like this.
+[62:22] It will not stop anywhere.
+[62:24] Now, if we take LCM in 4,
+[62:26] then 4, 16, 4 will come here.
+[62:28] 4ID squared.
+[62:30] Let's divide it by 2.
+[62:32] Let's divide it by 6 minus ID.
+[62:34] And if we divide it by 2, then 8 minus ID.
+[62:36] Okay?
+[62:38] 8 minus ID.
+[62:40] And if we divide it by 1.
+[62:42] So, ID
+[62:44] squared minus 16ID.
+[62:56] Okay?
+[62:57] Will this work?
+[63:09] 11.372.
+[63:14] Okay?
+[63:23] Okay?
+[63:25] And here, if you look at VGS,
+[63:27] 12 minus 2ID.
+[63:29] This one will
+[63:31] give you less than VGS.
+[63:34] That is why we should consider this.
+[63:37] Now, what did we ask?
+[63:39] We asked V0.
+[63:40] V0 is the source voltage.
+[63:45] The source voltage is
+[63:47] minus 12
+[63:49] plus 2ID.
+[64:02] Minus 0.7446.
+[64:04] Minus 0.7446.
+[64:06] Minus 0.7446.
+[64:08] Tell me, is this what is coming?
+[64:10] Minus 0.7446.
+[64:12] Minus 0.7446.
+[64:14] Is this what is coming?
+[64:16] Tell me.
+[64:17] Now, if V0 is 0,
+[64:19] then tell me VI.
+[64:21] V0 is 0
+[64:23] means
+[64:25] the voltage of the source is 0.
+[64:29] Okay?
+[64:30] After the voltage of the source is 0,
+[64:35] Okay?
+[64:36] Vishal, this is a very good thing.
+[64:38] If the voltage of the source is 0,
+[64:40] then minus 12 plus 2ID
+[64:42] is 0.
+[64:44] From here, you can
+[64:46] directly remove VGS.
+[64:48] You can remove ID.
+[64:49] Then VGS from ID.
+[64:51] The ID is 6 milliampere.
+[65:01] ID SSF 4.
+[65:06] 1 minus VGS
+[65:08] by VP
+[65:10] square.
+[65:12] So, 1 minus VGS
+[65:14] by VP
+[65:18] is under root 3 by
+[65:20] 2.
+[65:22] But, the ID SS is
+[65:24] getting a bigger current.
+[65:26] This is very surprising.
+[65:30] That we got a bigger current
+[65:32] than ID SS.
+[65:38] Then, VGS will get
+[65:40] bigger and more positive.
+[66:04] 0.9
+[66:08] So, this means
+[66:10] gate voltage minus source voltage
+[66:12] is 0.9.
+[66:14] So, gate voltage, that is
+[66:16] input voltage
+[66:18] is 0.9.
+[66:20] Okay?
+[66:21] That means, instead of putting VGS negative,
+[66:23] you have put positive.
+[66:25] Instead of putting VGS negative,
+[66:27] you have put positive.
+[66:29] So, your input voltage
+[66:31] is 0.9.
+[66:33] Next, in the circuit given below,
+[66:35] the fixed biasing of N-channel JFET
+[66:37] PINCH OFF VOLTAGE
+[66:39] and the maximum drain to source current is
+[66:43] PINCH OFF VOLTAGE
+[66:45] PINCH OFF VOLTAGE
+[66:47] PINCH OFF VOLTAGE, the data is missing here.
+[66:55] The question is not so tough.
+[66:57] Because, here, VGS
+[66:59] here,
+[67:02] this is zero current.
+[67:04] So, gate voltage is minus
+[67:06] 4.
+[67:08] Source voltage is 0.
+[67:10] So, VGS is
+[67:12] minus 4.
+[67:14] So, the drain current
+[67:16] you have to take out,
+[67:18] someone has seen how much the VP comes
+[67:20] according to the answer.
+[67:28] Someone has seen how much the VP
+[67:30] comes according to the answer given
+[67:32] according to the answer.
+[67:37] Tell me, what is the answer given?
+[67:40] Tell me, how much current is given?
+[67:43] DC current.
+[67:45] According to that, we will judge.
+[67:48] It will not be 25, it will be 2.5
+[67:50] with IDSS.
+[67:54] 0.5.
+[67:56] So, VGS should be half of the VP.
+[67:59] Your 4 is VGS.
+[68:01] So, the VP will be minus 2V.
+[68:04] No, minus 8V.
+[68:09] This should be minus 8.
+[68:11] Okay?
+[68:13] So, ID will be
+[68:15] 10.
+[68:27] So, this is 2.5 milliamperes.
+[68:30] And VGS is minus 4.
+[68:33] So, D.
+[68:35] Okay?
+[68:37] D is minus 4 and 2.5 milliamperes.
+[68:39] But here, the Pinchop voltage should be given.
+[68:41] But here, the Pinchop voltage should be given.
+[68:43] Let's see the next one.
+[68:45] It is desired to operate
+[68:47] the JFET shown at
+[68:49] VGS is equal to minus 1.
+[68:51] VDS is 4.
+[68:53] IDSS is 1 milliamperes.
+[68:55] Do not consider it as IDSS.
+[68:58] This is the actual current
+[69:00] that is flowing.
+[69:02] This is the current of 1 milliamperes.
+[69:06] This is called
+[69:08] VDS is 4V.
+[69:11] Open this capacitor.
+[69:15] Okay?
+[69:17] Now,
+[69:19] the gate to source voltage is minus 1.
+[69:27] So,
+[69:29] here, the current will be zero ampere.
+[69:31] So, here, you have
+[69:33] 0V.
+[69:35] So, here, you have
+[69:37] minus 1V.
+[69:39] The gain of 4 is
+[69:41] 3V.
+[69:43] The gain of 4 is
+[69:45] 3V.
+[69:47] So, the RD will be
+[69:49] 10 minus 3
+[69:51] by 1 milliamperes.
+[69:53] 7 kilo ohms.
+[69:55] But this is not the answer.
+[69:59] VDS is 4.
+[70:01] VGS is
+[70:03] minus 1.
+[70:05] Oh my God! This will be plus 1.
+[70:07] When the drop of minus 1
+[70:09] is minus 1, this will be plus 1.
+[70:11] When it is plus 1, this will be
+[70:13] 5V.
+[70:19] Here, 5 will come.
+[70:21] So,
+[70:23] 5 kilo ohms.
+[70:25] Okay?
+[70:27] The answer will be B.
+[70:29] Simple question.
+[70:31] This came up.
+[70:33] Why do I feel that
+[70:35] the assignment has not been applied?
+[70:37] Why do I feel that?
+[70:39] The voltage gain is
+[70:41] V0 by VS.
+[70:43] J-FET amplifier.
+[70:45] So, this time, it did not give
+[70:47] the data of the bi-sync.
+[70:49] If we ask for the voltage gain,
+[70:51] then we will have to solve the bi-sync.
+[70:53] So, we will have to
+[70:55] go from basic to
+[70:57] first we
+[70:59] do DC analysis.
+[71:01] In this, you will open
+[71:03] all the capacitors.
+[71:05] Okay?
+[71:07] Open all the capacitors.
+[71:19] So, this is 3 kilo ohms.
+[71:23] This is 10 volts.
+[71:29] This is 2.5 kilo ohms.
+[71:31] This is ground.
+[71:33] This is 1 mega ohms.
+[71:37] Forget this 1 mega ohms.
+[71:41] And you have opened the capacitor.
+[71:45] Now, here you will say
+[71:47] the current is coming.
+[71:51] Which means the gate voltage
+[71:53] is 0.
+[71:55] Okay?
+[71:57] Here is ID.
+[71:59] ID.
+[72:01] Okay?
+[72:03] Now, if I ask you
+[72:05] the gate to source voltage.
+[72:07] You will say, sir, the gate voltage
+[72:09] is 0.
+[72:11] The source voltage
+[72:13] is 2.5 ID.
+[72:15] So, sir, VGS
+[72:17] is
+[72:19] minus 2.5
+[72:21] ID.
+[72:25] Now, ID
+[72:27] will be IDSS
+[72:29] VGS
+[72:43] VPA minus 5
+[72:55] Okay?
+[72:57] So, ID by 2 is
+[72:59] ID by 2 is 2 minus ID
+[73:01] 2.5
+[73:03] or ID by 2 is 4.
+[73:11] ID by 2 is 2 minus ID
+[73:13] 4.
+[73:19] So, from here
+[73:21] if you take out ID
+[73:23] after solving this quadratic
+[73:25] if you take out ID
+[73:27] take out ID.
+[73:29] Tell me.
+[73:39] 3.1165
+[73:41] 1.2834
+[73:51] Obviously, we have to
+[73:53] take this one.
+[73:55] Right?
+[73:57] VGS will be less than VP
+[73:59] Okay?
+[74:01] It was clear here.
+[74:03] 1.2834
+[74:05] Now, we need GM.
+[74:09] What was this?
+[74:11] GM naught
+[74:13] root over
+[74:15] how was it?
+[74:17] 1 minus VGS by VP.
+[74:19] ID by IDSS, right?
+[74:23] 2 into IDSS
+[74:25] IDSS was your 10
+[74:27] by VP
+[74:35] 1.2834
+[74:37] by 10
+[74:43] 20 by 5 is 4
+[74:53] 1.433
+[74:55] Millie Siemens
+[74:57] Tell me, is this GM?
+[75:01] Tell me, is this GM?
+[75:03] Now, here
+[75:05] if we make the model
+[75:07] of this transistor
+[75:13] then we will open
+[75:15] between gate and source
+[75:17] then we will show
+[75:19] GM VGS here
+[75:21] 1 resistance from gate
+[75:23] between ground
+[75:25] which was your mega ohm
+[75:29] Source will be
+[75:31] grounded due to bypass
+[75:33] capacitor
+[75:35] Source is grounded
+[75:37] 1 resistance from drain
+[75:39] 3 kilo ohm
+[75:41] VGS
+[75:49] VGS
+[75:51] VGS
+[75:53] VGS
+[75:55] VGS
+[75:57] VGS
+[75:59] VGS
+[76:01] So, VGS
+[76:03] is equal to source
+[76:21] How much is being made?
+[76:23] 4.2, 4.3
+[76:25] I think
+[76:27] Which is the closest option?
+[76:29] This is D
+[76:31] Closest?
+[76:33] What is the answer?
+[76:37] Tell me, what is the answer?
+[76:43] Okay?
+[76:45] So, that's it.
+[76:47] So, kids, now see
+[76:49] your JFET is over
+[76:51] BJT diode is over
+[76:53] We will start MOSFET from tomorrow at 11.30
+[76:55] You guys take care of your BJT and diode PYQ
+[76:57] from here
+[76:59] Gate PYQ by AIR1
+[77:01] is given
+[77:03] we will start MOSFET from tomorrow
+[77:05] from basic
+[77:07] but I will tell you
+[77:09] the kids who attended BJT and JFET
+[77:11] will enjoy MOSFET
+[77:13] because they will feel
+[77:15] trivial
+[77:17] and if you don't do JFET
+[77:19] then also you can connect
+[77:21] BJT
+[77:23] and even if you don't do it
+[77:25] then you can do it from MOSFET
+[77:27] but maximum benefit
+[77:29] will be from BJT plus JFET
+[77:31] then BJT
+[77:33] and those who didn't do it at all
+[77:35] will have to prepare everything from scratch
+[77:37] and if you join Anacademy
+[77:39] you have plus and iconic
+[77:41] there are two options
+[77:43] you get top teachers
+[77:45] you get digital notes
+[77:47] you get test series on the app
+[77:49] if you doubt the new questions
+[77:51] there is a doubt solving feature
+[77:53] printed notes are delivered at home
+[77:55] 1 to 1 live mentorship
+[77:57] strategy and study plan
+[77:59] and interactive open house session
+[78:01] which are provided to you
+[78:03] now you see here
+[78:05] you are getting 20% off
+[78:07] this offer will expire tomorrow
+[78:09] so if you want to join
+[78:11] immediately join
+[78:13] using code ANKIT ESE
+[78:17] and if you go for distance learning program
+[78:19] then also you will get 20% off
+[78:21] using the same code ANKIT ESE
+[78:23] and what you have to do
+[78:25] just go to Anacademy app
+[78:27] and decide
+[78:29] which plan you want to take
+[78:31] plus or iconic
+[78:33] you have to decide duration
+[78:35] and put code on payment time
+[78:37] if you see the results
+[78:39] we have removed 6 anchors in top 10
+[78:41] you can also be one of them
+[78:43] next year
+[78:45] just you have to come to Anacademy
+[78:47] under my guidance
+[78:49] using the code ANKIT ESE
+[78:51] and if you have financial issue
+[78:53] then you can take it on EMI
+[78:55] where you can fill your fees month on month
+[78:57] there will be no interest on this
+[78:59] EMI will be approved in 2 hours
+[79:01] only Aadhar card and pan card
+[79:03] and there is flexible tenure
+[79:05] in which you can repay
+[79:07] and if you are preparing for 2023
+[79:09] then the Brahmaasar Plus batch
+[79:11] has started
+[79:13] in which Dhandesar has taken
+[79:15] the session
+[79:17] now we will be starting the classes
+[79:19] there will be doubt solving
+[79:21] daily DPP
+[79:23] there will be exclusive live classes
+[79:25] for batch practice and strategy
+[79:27] you are getting notes
+[79:29] test series, paramount
+[79:31] workbook, pyqs
+[79:33] all these things
+[79:35] and for your 2024
+[79:37] new batch is starting
+[79:39] from tomorrow
+[79:41] Dhandesar is taking analog
+[79:43] Gurupal sir is taking maths
+[79:45] at 9 o'clock
+[79:47] so you can be a part of this Gurukul batch
+[79:49] for electrical as well as ECE
+[79:51] and if you join Brahmaasar Plus
+[79:53] then you are getting
+[79:55] a lot of added advantage
+[79:57] as compared to your Brahmaasar batch
+[79:59] and if you can take
+[80:01] 4 month subscription
+[80:03] of 23k as per end
+[80:05] which will go to your fee
+[80:07] the code is the same in that
+[80:09] the discount is also getting 20%
+[80:11] you are getting it
+[80:13] and all the kids who used to win
+[80:15] the last day of the scholarship
+[80:17] the code must have come on your mail
+[80:19] you join it
+[80:21] so tomorrow is the last day
+[80:23] after which that code will expire
+[80:25] this is my telegram channel
+[80:27] you will get all the links here
+[80:29] all the important information will be shared here
+[80:31] and the PDF of this session
+[80:33] you will get it immediately
+[80:35] on the community
+[80:37] for this on the home page of the
+[80:39] Brahmaasar Plus
+[80:41] you will get the community
+[80:43] you will get to discover it
+[80:45] and you will get all the PDF
+[80:47] so thank you everyone
+[80:49] a new topic will start from tomorrow
+[80:51] all of you have to come
+[80:53] ECE for electrical
+[80:55] see you tomorrow at 11.30
+[80:57] let's crack it

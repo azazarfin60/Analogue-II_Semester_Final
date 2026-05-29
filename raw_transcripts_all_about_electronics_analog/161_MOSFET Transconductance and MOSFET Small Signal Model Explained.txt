@@ -1,0 +1,143 @@
+Title: MOSFET Transconductance and MOSFET Small Signal Model Explained
+URL: https://www.youtube.com/watch?v=utBRWK4GmmE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will understand the concept of transconductance in the MOSFET.
+[00:16] And then after, we will see the small signal model of the MOSFET.
+[00:20] So this small signal model of the MOSFET is particularly useful when the MOSFET is used
+[00:25] as an amplifier.
+[00:27] And using this small signal model, it is easy to analyze the MOSFET circuits.
+[00:32] But first of all, let us understand the concept of transconductance.
+[00:37] So far in our discussion, we have understood that, to use the MOSFET as an amplifier,
+[00:43] it should be operated in the saturation region.
+[00:46] Because in this region, the MOSFET acts like a voltage control current source.
+[00:51] And the drain current is a function of voltage VGS.
+[00:55] But if you see the relationship between the drain current and the voltage VGS, then it
+[00:58] is non-linear.
+[01:01] So keeping this characteristic in mind, let us say, some AC input signal, which needs
+[01:06] to be amplified, is applied on top of the basing voltage.
+[01:10] Now whenever there is a small change around the voltage VGS, then there will be also change
+[01:16] around the drain current, ID.
+[01:19] But the amount of change in this drain current ID depends on the basing point.
+[01:24] For example, if this basing point shifts on the right hand side, then for the same change
+[01:29] in the voltage VGS, now we will see a more change in the drain current.
+[01:34] That means for the given change in the voltage VGS, the amount of change in the drain current
+[01:39] is the bas dependent.
+[01:41] And it is defined as the transconductance of the MOSFET.
+[01:46] So mathematically, these transconductance is equal to a change in the drain current divided
+[01:52] by the change in the voltage VGS.
+[01:56] That means for the given change in the voltage VGS, how much change will occur in the drain
+[02:00] current?
+[02:02] And graphically, it is the slope of the curve at the operating point.
+[02:07] Now as we are aware, these drain current ID can be given as half times mu n times cux
+[02:15] times w by l times VGS minus VT whole square.
+[02:22] And here we are assuming that the lambda is equal to 0.
+[02:26] So to get the expression of the transconductance, let us differentiate this expression with
+[02:31] respect to VGS.
+[02:33] That means GM is equal to DID divided by DVGS.
+[02:39] That is equal to half times 2 times mu n times cux times w by l times VGS minus VT.
+[02:51] That is equal to mu n times cux times w by l times VGS minus VT.
+[03:02] So these transconductance relates the output current with the input voltage.
+[03:08] And the unit of this transconductance is the Siemens.
+[03:11] So from this expression, as you can see, for the given MOSFET parameters or for the given
+[03:17] MOSFET, the transconductance is proportional to VGS minus VT.
+[03:22] Or if VGS minus VT is kept fixed, then this GM is proportional to w by l.
+[03:29] Now there is another expression of the transconductance.
+[03:33] So as we have seen, this drain current ID can be given by this expression.
+[03:38] And from this expression, we can say that voltage VGS minus VT is equal to square root of 2
+[03:46] times ID divided by mu n times cux times w divided by l.
+[03:54] So let us put the value of VGS minus VT in this expression.
+[03:58] And if you put the value, then this transconductance GM can be given as square root of 2 times
+[04:06] ID times mu n times cux times w divided by l.
+[04:14] So this expression of the transconductance says that for the given MOSFET parameters,
+[04:20] this transconductance is proportional to square root of ID.
+[04:25] Or for the fixed value of the drain current ID, this GM is proportional to square root
+[04:30] of w divided by l.
+[04:33] But from these two expressions, there is a one more expression for the transconductance.
+[04:39] So if we divide these two expressions, then GM divided by ID will be equal to 2 divided
+[04:48] by VGS minus VT.
+[04:52] Or we can say that this transconductance GM is equal to 2 times ID divided by VGS minus
+[05:00] VT.
+[05:02] So from this expression, we can say that when the drain current ID is kept fixed,
+[05:07] then the transconductance is inversely proportional to this VGS minus VT.
+[05:12] Or for the given value of the voltage VGS minus VT or the over-dry voltage,
+[05:17] this GM is directly proportional to the drain current.
+[05:22] So in the MOSFET, there are three parameters.
+[05:25] One is the drain current.
+[05:27] Second is this w by l ratio and the third one is VGS minus VT.
+[05:32] So depending on which parameter is kept constant, the relation of these three parameters
+[05:37] with the transconductance will change.
+[05:40] Alright, so now once we understood the concept of transconductance,
+[05:45] let us see the small signal model of the MOSFET.
+[05:48] And for that, let us take this simple MOSFET circuit.
+[05:52] So this circuit is biased with some DC voltage such that it is operating in the
+[05:56] saturation region.
+[05:58] And on top of this DC biasing voltage, some AC input signal V in is applied.
+[06:04] Now as we have seen so far in the saturation, the drain current ID
+[06:09] and given by this expression.
+[06:12] And in this case, if you see, this voltage VGS is equal to VDC plus VI.
+[06:21] So if you put the value of VGS in this expression,
+[06:25] then the drain current ID can be given as half times mu n times
+[06:31] cux times w divided by l times VI plus VDC minus VT whole square.
+[06:41] So as you can see, the relationship between the AC input signal V in
+[06:45] and the drain current ID is still non-linear.
+[06:49] But if this input signal V in is very small or under the small signal approximation,
+[06:55] a change in the drain current is linearly proportional to the input signal V in.
+[07:00] And in that case, the MOSFET can be replaced by the small signal model.
+[07:05] So let us understand that concept mathematically.
+[07:08] So in this expression, if this VI is much smaller than this VDC minus VT,
+[07:15] then the second order term in this expansion can be neglected.
+[07:20] So if we just expand this bracket, then we can write this drain current ID as
+[07:25] half times mu n times cux times w divided by l times VI square plus VDC minus VT whole square
+[07:37] plus two times VI times VDC minus VT.
+[07:44] So in this case, when this input signal is much smaller than this VDC minus VT,
+[07:50] then this V in square can be neglected.
+[07:53] So if we further re-engin this expression, then we can write it as half times mu n times cux times
+[08:01] w divided by l times VDC minus VT whole square plus mu n times cux times
+[08:11] W divided by l times VDC minus VT times V in.
+[08:17] So this first term represents the DC current or the biasing drain current.
+[08:22] Let us call it as ID 0.
+[08:25] And if you observe this second term carefully, then this expression is the expression of the
+[08:31] transcurrent tense, right?
+[08:33] So from this, we can say that the overall drain current is equal to ID 0 plus GM times input signal.
+[08:43] So this ID 0 is the DC drain current and this GM times V in is the change in the drain current
+[08:50] due to the input signal.
+[08:52] That means under the small signal approximation, the total response of this MOSFET
+[08:57] is the summation of the DC response and the AC response.
+[09:01] And using the principle of the superposition, the DC and the AC analysis can be done separately.
+[09:07] So while considering the DC analysis, the AC signal can be assumed as 0 and similarly,
+[09:14] during the AC analysis, this DC voltage can be assumed as 0.
+[09:19] So as you can see, under this small signal approximation, the change in the drain current
+[09:25] is linearly proportional to the input signal V in.
+[09:28] And in that case, the MOSFET can be replaced by the small signal equivalent model.
+[09:33] So here, this VGS is the input signal, which is aptly between the gate and the source terminal.
+[09:39] And the change in the drain current is linearly proportional to this VGS.
+[09:44] Now in this model, if you also consider the effect of the channel and modulation,
+[09:49] then there will also be an output resistance.
+[09:52] But for simplicity, for a moment, let us assume that the lambda is equal to 0.
+[09:58] So under the small signal approximation, the MOSFET can be replaced by this small signal model.
+[10:04] So once again, let us consider this circuit.
+[10:07] And for the given circuit, let us do the AC analysis.
+[10:12] So here, if this input signal V in is very small, then the MOSFET can be replaced by the
+[10:17] small signal model. So for the AC analysis, all the DC sources in the circuit can be assumed as
+[10:24] 0. That means, this VDC will act as a 0. And similarly, this VDD will also get connected to the
+[10:32] ground. And now, the MOSFET can be replaced by the small signal model.
+[10:38] So in this small signal model, this input signal V in is appearing between the gate and the
+[10:43] source terminal. While if you see this drain resistor RD, then it is appearing between the
+[10:48] drain terminal and the ground terminal. And here, since the source terminal is also grounded,
+[10:54] so we can say that this resistor RD will appear between the drain and the source terminal.
+[11:00] And if the output is measured between this drain and the source terminal,
+[11:04] then the V out can be given as minus GM times VGS times RD. Or in this case, it will be equal to
+[11:13] minus GM times V in times RD because this current is flowing in the clockwise direction.
+[11:20] So from this, we can say that the voltage gain or the AC voltage gain V out divided by V in
+[11:26] is equal to minus GM times RD. So in this way, using the small signal approximation
+[11:34] and using the small signal model, the AC analysis becomes very simple. And whenever,
+[11:40] the MOSFET is used as an amplifier, then it becomes very easy to find the approximate gain of the
+[11:45] amplifier. So in the upcoming videos, we will see that how the MOSFET can be used as an amplifier
+[11:51] in the different configurations. And using the AC analysis, we will also derive the expression
+[11:57] of the gain for each configuration. But I hope in this video, you understood the concept of the
+[12:02] transconnections for the MOSFET. And you also learned how the MOSFET can be replaced by the small
+[12:08] signal model for the AC analysis. So if you have any question or suggestion, then do let me know
+[12:14] here in the comments section below. If you liked this video, hit the like button and subscribe
+[12:18] the channel for more such videos.

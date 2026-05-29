@@ -1,0 +1,167 @@
+Title: RC High Pass Filter Explained
+URL: https://www.youtube.com/watch?v=9Dx0b0ukNAM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in the last video we had seen everything about the passive RC Lopas filter.
+[00:27] So in this video we will learn about the RC Hypus filter.
+[00:31] So as its name suggests, this Hypus filter passes the high frequency component from the
+[00:35] input signal and attenutes or rejects the low frequency components.
+[00:40] And if you see the frequency response of an ideal Hypus filter, it will look like this.
+[00:46] So this Hypus filter passes all the high frequency components which is greater than this cut
+[00:51] of frequency FC.
+[00:53] And it rejects all the frequencies which is less than this cut of frequency FC.
+[00:58] So now in the last video we had seen that by connecting resistor and capacitor in this
+[01:02] fashion we can design the Lopas filter.
+[01:05] So now just by interchanging the position of this capacitor and resistor, we can convert
+[01:10] this Lopas filter into the Hypus filter.
+[01:13] So in this Hypus filter, we are applying input signal at this end and we are taking the
+[01:19] output across this resistor.
+[01:22] So now let us understand how the circuit X as a Hypus filter.
+[01:27] So just by applying the voltage divider, we can write V out as R dR by R plus Xc into
+[01:34] V in, where X is nothing but the reactants of this capacitor.
+[01:40] And we know that this reactants Xc can be given by equation and dR by Omega C.
+[01:46] So now let us consider the two extreme cases.
+[01:49] Let us say at Omega is equal to 0, the reactants of this capacitor will be infinity.
+[01:56] And because of that V out will be equal to 0.
+[02:00] And at Omega is equal to infinity, the value of this reactants will be 0.
+[02:05] And hence this V out will be equal to V in.
+[02:10] So as you can see at low frequency, the output will be approximately equal to 0.
+[02:16] And as the frequency increases, the output will also increase.
+[02:21] And at high frequencies, the output will be approximately equal to the input value.
+[02:27] So now earlier we had seen the frequency response of an ideal Hypus filter.
+[02:32] But if you see the frequency response of actual Hypus filter, it will look like this.
+[02:38] So at low frequencies, the output will be approximately equal to 0.
+[02:43] And as the frequency increases, the output will also increase.
+[02:48] And at cutoff frequency, the output will be 0.707 or 1 by root 2 times the input value.
+[02:57] And as we go beyond this cutoff frequency, the output will approximately equal to the input
+[03:02] value.
+[03:03] So below this cutoff frequency FC, the output will increase at the rate of 20 dB per decade.
+[03:10] So now this cutoff frequency FC can be given by equation FC that is equal to 1 dB by 2
+[03:17] by into RC, which is the same equation that we got for the low pass filter.
+[03:23] So now let's derive this equation for the Hypus filter.
+[03:27] So again we can write this V out as R dB by R plus XC into V in.
+[03:37] Or we can say that V out by V in that is equal to R dB by R plus XC.
+[03:48] So now we can write V out by V in that is equal to R dB by under root R square plus XC square.
+[04:01] And at cutoff frequency, the output will be 1 over root 2 times the input signal.
+[04:06] So by putting this value and squaring up at both the sides, we can write 1 by 2 that
+[04:12] is equal to R square dR by R square plus X square.
+[04:18] And if you further simplify it, then we will get R square that is equal to X square.
+[04:25] And we know that XC is nothing but 1 dB by omega C.
+[04:30] So you can write this X square as 1 dB by omega square into C square.
+[04:35] And if you further simplify it, then we will get omega square that is equal to R square
+[04:40] into C square.
+[04:42] And hence omega is equal to 1 dB by RC.
+[04:47] And if you write this equation in terms of the frequency, then the cutoff frequency equation
+[04:52] will be 1 dB by 2 dB by RC.
+[04:56] So in this way, we have derived the expression for the cutoff frequency for the high pass filter.
+[05:02] So now this high pass filter not only attenuates this low frequency components, but it will
+[05:07] also change their phase.
+[05:11] In the phase of the output signal for the high pass filter can be given by the equation
+[05:15] 10 inverse 1 dB by omega into C R.
+[05:19] So now if you are wondering how we have arrived to this equation, so let's derive this
+[05:24] equation.
+[05:26] So let's once again write V out R d by R plus XC into V in.
+[05:34] Or we can say that V out by V in that is equal to R d by R plus XC.
+[05:44] So now let's put the value of XC into this equation.
+[05:47] So we will get R d by R plus 1 d by J into omega C.
+[05:55] And if you further simplify it, then we can write it as 1 dB by 1 minus J dB by omega
+[06:01] into C R.
+[06:04] So now this V out by V in is known as the transfer function of this high pass filter.
+[06:09] And the phase of this transfer function can be given as minus 10 inverse of minus 1 dB
+[06:17] by omega into C R.
+[06:20] That is equal to 10 inverse of 1 dB by omega into C R.
+[06:27] Now if you see at omega is equal to 0, the 1 over omega C R will be infinity.
+[06:34] And hence the value of phase will be 90 degree.
+[06:38] So at omega is equal to 0, the output signal will leads the input by a 90 degree.
+[06:44] So now at omega is equal to omega C, this term will be equal to 1.
+[06:49] As omega will be equal to 1 over RC.
+[06:52] And hence the value of phase will be 45 degree.
+[06:56] And at omega is equal to infinity, this 1 over omega C R will be equal to 0.
+[07:01] And hence phase will be equal to 0 degree.
+[07:05] So we can say that at omega is equal to infinity, the output signal will be in phase
+[07:10] input signal.
+[07:11] So now if you see the phase versus frequency curve for the high pass filter, it will look
+[07:15] like this.
+[07:16] So at 0 frequency, the phase of the output signal will be 90 degree.
+[07:21] That means the output signal will lead the input by a 90 degree.
+[07:25] And at cutoff frequency, if you see the phase of the output signal will be 45 degree.
+[07:31] That means output will lead the input by a 45 degree.
+[07:35] And as we move towards the higher frequencies, the output signal phase will be approximately
+[07:40] equal to the input signal phase.
+[07:42] And at infinity, the phase of the output signal will be 0.
+[07:48] So now as we know about the phase and frequency response of this high pass filter, now let
+[07:53] us take one example based on this high pass filter.
+[07:56] So now in this example, we have been asked to design the high pass filter, which is having
+[08:01] a cutoff frequency of 10 kilohertz.
+[08:03] So now we need to select the value of this capacitor and resistor in such a way that we
+[08:08] will get a cutoff frequency of 10 kilohertz.
+[08:11] So what we will do, we will arbitrarily choose the value of resistance R as a 10 kilo ohm.
+[08:18] And we will decide the value of capacitor.
+[08:21] So now you may ask that why I had chosen the value of resistance R as a 10 kilo ohm.
+[08:26] The reason is that if I connect this high pass filter to the any other circuit, then the
+[08:31] next stage should not be get loaded by the value of this resistance R. So now if I choose
+[08:36] the value of resistance R in ohms, then it is quite possible that my next stage might
+[08:41] be get loaded.
+[08:43] And if I choose the value of resistance R in mega ohms, then the value of capacitor
+[08:47] will be very small.
+[08:49] And it will be so small that the parasitic capacitance will also come into the picture.
+[08:54] And because of that, the design of this high pass filter will be get complicated.
+[08:59] So the value of R should be in the range of 1 to 10 kilo ohm.
+[09:03] So that is why I had chosen the value of R as a 10 kilo ohm.
+[09:06] All right.
+[09:07] So now the cut off frequency Fc can be given as 1 dR by 2 pi into RC.
+[09:14] So we can say that the capacitance C will be 1 dR by 2 pi into R into F. And if we put
+[09:22] the value of this resistance and frequency and if we find the value of capacitance, then
+[09:27] we will get the value of C as 1.59 nanofaraday.
+[09:33] Now 1.5 nanofaraday is the readily available capacitor in the market.
+[09:37] And it is also very nearby to this value of 1.599 ofaraday.
+[09:42] So we will take the value of capacitance C as a 1.5 nanofaraday.
+[09:47] And earlier we had assumed the value of this resistance R as a 10 kilo ohm.
+[09:51] So now if we put these two values of R and C into this cut off frequency equation, then
+[09:56] we will find the cut off frequency Fc as 10.61 kilohertz.
+[10:02] And just slightly greater than our required cut off frequency.
+[10:06] So now what we can do, we will keep the value of this capacitance C as it is.
+[10:11] And instead of this 10 kilo ohm resistance, we will use the 20 kilo ohm pot.
+[10:15] So just by adjusting this pot, we will get a exact value of a 10 kilo ohm.
+[10:21] So we never designed the value of capacitance should be 1.5 nanofaraday.
+[10:26] And instead of using the fixed value of resistor, we will use a 20 kilo ohm potentiometer.
+[10:31] And by adjusting the value of this potentiometer, we can get a exact value of this cut off frequency
+[10:37] of 10 kilohertz.
+[10:39] So in this way, we can design the high pass filter of any given cut off frequency.
+[10:45] So now if you see the frequency response of this high pass filter, it will look like this.
+[10:51] And our cut off frequency for this filter is 10 kilohertz.
+[10:56] So now let us assume that to this high pass filter, we have applied a 10 volt of sinus
+[11:01] fudel signal with a variable frequency.
+[11:04] So at very high frequencies, the output will be approximately input.
+[11:08] And at the output, we will get a 10 volt.
+[11:11] At cut off frequency of 10 kilohertz, the output will be 0.707 times the input value.
+[11:18] So at the output, we will get 7.07 volt.
+[11:23] And if we go one decade away from this 10 kilohertz frequency, then let us say at 1 kilohertz,
+[11:29] the output will be 1 tenth of this value, that is 0.707 volt.
+[11:37] So now suppose in your design, if you want that at 1 kilohertz, your output should be even
+[11:42] much smaller than this 700 milli volt, then you should go for the higher order filters.
+[11:48] Because for the first order filter, if you see, the roll of is 20 dB per decade.
+[11:53] And as we go for the higher order filters, the roll of field sharply increase.
+[11:58] And if you see the output at 1 kilohertz, it will drastically reduce for the higher
+[12:03] order filters.
+[12:05] So just by cascading this first order high pass filters, we can design the higher order
+[12:09] high pass filters.
+[12:11] So let us take the case of a second order high pass filter.
+[12:14] So just by cascading these two high pass filters, we can design the second order high pass
+[12:19] filter.
+[12:20] And the cut off frequency of the second order high pass filter can be given by the equation
+[12:25] 1 the R by 2 pi into under root R 1 C 1 into R 2 into C 2.
+[12:32] And if R 1 is equal to R 2 and C 1 is equal to C 2, the cut off frequency will be 1 the
+[12:38] R by 2 pi into R 1 into C 1.
+[12:41] Now designing this higher order filter is not as simple as it looks like, because the
+[12:46] next stage might get loaded by the previous stage.
+[12:49] And to eliminate this loading effect, we should isolate the two stages.
+[12:54] And we can do so by using the electrical buffer.
+[12:57] Or we can go for the active high pass filter.
+[13:00] And we will learn more about this active high pass filter in the upcoming videos.
+[13:04] So I hope in this video you understood about the passive R C high pass filter.
+[13:09] So if you have any question or suggestion, please let me know in the comment section
+[13:13] below.
+[13:14] If you like this video, hit the like button and subscribe to the channel for more such
+[13:18] videos.

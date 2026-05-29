@@ -1,0 +1,1252 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Multi-stage Amplifiers | Part-2 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=mGgygCh-mmc
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome back to the Creatrix
+[00:12] YouTube channel my dear friends, we are back again with Lakshya batch 2.0 Analog Electronics.
+[00:19] So we started multi stage amplifier in the last lecture, I told you some general
+[00:26] fun days of multi stage amplifier that why we use multi stage amplifier, then I told you how
+[00:33] when you cascade non-interacting stages, their gain is directly multiplied, their lower cutoff
+[00:41] frequency is divided from under root 2 to the power 1 by n minus 1, the upper cutoff frequency is
+[00:48] multiplied from under root 2 to the power 1 by n minus 1, the bandwidth decreases because the gain
+[00:55] increases, then the bandwidth decreases, then we studied cascade connection common emitter common emitter,
+[01:04] I told you about interacting stages, there the effect of voltage division comes, in interacting stages
+[01:11] I told you about lower and upper cutoff frequency, so what I told you yesterday, whatever you are
+[01:18] studying, the general of multi stage amplifier, these are applicable for BJT, JFET, MOSFET,
+[01:26] OPAMP, all types of amplifier are applicable, that is what we did in the last part, the common emitter
+[01:33] common emitter that was for the BJT amplifier, today I am going to teach you two more multi stage
+[01:40] amplifiers of BJT amplifier, one is the cascode connection and the second one is the Darlington
+[01:47] pair, so you are going to have a lot of fun, let's start the session quickly, but before that I
+[01:52] start, once all the children will like the session, they will share it more and more, everyone will
+[01:58] tell that they have come live, so that everybody can join this session live, sir, there is an electrical
+[02:05] syllabus, look, there is no question in the electrical syllabus, I told you before, join from MOSFET,
+[02:12] okay, the children of the electrical gate should join from MOSFET and for ESC, as much as this analog
+[02:18] video will be made, all of it is included, don't think at all for engineering services,
+[02:24] what is what is not, everything comes in engineering services, okay,
+[02:31] Karan, he is no longer with an academy, so this will not be possible,
+[02:36] let's start today's discussion, yes Aman, today it will be more fun than yesterday, today you will
+[02:42] see the network, so today's session we are starting with the cascode amplifier, okay,
+[02:52] sir, I have seen the video of your clamp and rectifier twice, but sir, I am not confident right now,
+[02:57] I am scared in the topic, Anush, look at the video, it is not confident to see the video twice or three times,
+[03:04] you will practice as much as you want, your confidence will increase as much as you want,
+[03:09] why do you put the PYQ of electrical, why do you put PYQ of EC, why do you put PYQ of instrumentation,
+[03:14] you solve DPP twice, your confidence will increase, and why are you getting scared in the rectifier,
+[03:19] my children are a formula-based topic, why are you getting scared in the rectifier,
+[03:23] and in the clamp, there are straight steps for problem solving, look, when will the diode be on,
+[03:29] as soon as the diode is on, charge the capacitor to maximum voltage,
+[03:33] turn off the diode, turn on the KVL and take out the V0, there are three steps, when will the diode be on,
+[03:38] look at this, charge the capacitor to maximum in that cycle, then turn on the KVL and the V0 is
+[03:45] finished, that's all, Amit, my child, in one way, the first video of this course,
+[03:53] I have defined the syllabus in it, you go and see the first video of this course,
+[04:00] okay, now let's start, there is a common emitter, common base cascode amplifier,
+[04:08] cascode amplifier, cascode means wide band amplifier, okay, there is a wide band amplifier in cascode,
+[04:18] wide band means that its bandwidth is more, what is its, its large bandwidth is
+[04:30] okay, large bandwidth, so this is its most special point, look, when I told you
+[04:38] about the common emitter, common emitter cascade amplifier, so I told you in its drawback that
+[04:44] you increased the gain, child, but your bandwidth has been reduced side by side, now if this bandwidth
+[04:51] has been reduced, then your drawback has become, so you put the cascode amplifier there, where
+[04:58] you need more bandwidth, obviously it will be less, but its bandwidth will be more than that,
+[05:07] okay, now see what I have shown here, here you have put input, see this input is put on the
+[05:14] first base, you took the output from its collector, you put its collector here on the emitter and
+[05:25] then took the output from its collector, so this stage is a common base because its emitter
+[05:32] is being put on the collector, and this common emitter is being put on its base and the collector
+[05:40] is being put on the output, do you understand, base on the collector output that is common emitter,
+[05:47] emitter on the input collector output that is common base now practically see how we construct this system
+[05:54] , see this lower stage is a common emitter, you see in the common emitter you have given an emitter
+[06:01] resistance and a bypass capacitor, here you have connected the supply to the base with the help of a
+[06:07] coupling capacitor, it is connected to the base with the help of a coupling capacitor, and from here
+[06:16] your output is connected to its emitter, which is the output of the collector for this, it is
+[06:23] the input on the other emitter, you ground its base through a capacitor, see the base
+[06:32] through the capacitor and here you took the output from the collector, here you took the output from the
+[06:40] collector, here you took the output from the collector, so this will be your final output, so this
+[06:47] common base configuration is done, this common emitter is done, there is no resistance between the input
+[06:52] output of both, it has a collector resistance, it has an emitter resistance, this R1, R2, R3, these
+[07:01] three will come in the work of biasing, this is a voltage divider network, this is a voltage divider
+[07:10] network, tell me is the circuit clear, first where the input is, it will be a common emitter,
+[07:15] from where you are taking the output, it will be a common base, the output of the common emitter will be
+[07:20] taken from the collector, which will be connected to the next emitter, then the final output will come from its
+[07:25] collector, now see this whole network analysis will be done, son, in a great way, the way
+[07:33] you have read the amplifier, that is, a very good way DC analysis, then AC analysis, so first I
+[07:42] come to DC, now let's take some assumptions in DC analysis, I take large beta, large beta,
+[07:54] second thing, I say capacitor open, capacitor open, so see open it,
+[08:04] this CE will be removed, you open this too, VS will be removed, you open this too, the grounding
+[08:12] will also go away, okay, and what can you say from large beta, that your base current will be zero,
+[08:21] you can say, large beta means your base current will be zero, so see here you have shown zero
+[08:29] ampere, here you have shown zero ampere, if my children do not have any current in the base,
+[08:38] then this R1, R2, R3 series came, say quickly, R1, R2, R3 series came, all of them,
+[08:44] so R1, R2, R3, Rn series, these three of you came into the series in a great way,
+[09:00] I am giving the Q1 name to this transistor, I am giving the Q2 name to this, so I am saying,
+[09:07] first tell me the voltage of the base, first tell me the voltage of the base of the transistor,
+[09:14] if these three series came, then you can put the voltage division, then what will you say VCC
+[09:21] R3 by R1 plus R2 plus R3, will you say this, R1 plus R2 plus R3,
+[09:34] if my children get the voltage of the base, then can you say the voltage of its emitter,
+[09:41] can you say the voltage of its emitter, sir, it will be emitter voltage, sir, VB1
+[09:52] minus VBE, by the way, tell me one thing, in DC analysis, you do not feel scared of circuits like this,
+[10:01] first I feel that a lot of children from you would come in 2-3 BJTs, so they would be scared in DC,
+[10:07] now you do not feel scared in DC by looking at such a circuit, it seems that you can make it by yourself,
+[10:14] it seems that you can make it by yourself, so tell me if you understand this, then what is the next step,
+[10:20] what should be the next logical step, you tell me, you are an experienced person in this, what will be my next step,
+[10:28] guess, what to do, logically tell me, if you say the word guess, it will be wrong, tell me what will be the next step,
+[10:38] very good, we will get IEE, very good, we will get IEE, what will be my IEE, VE1 by REE,
+[10:50] what will be IEE, I call it IEE1, you will say I C1 equal to IEE1, you will say I C1 equal to IEE1,
+[11:05] you can say this because the base current is zero and this is the emitter current of the other one,
+[11:13] this is the second emitter current, think about it, so the current of both the transistors is equal,
+[11:22] if my children are equal to the current of both the transistors, then you can also say that both the
+[11:27] AC model parameters will be equal, both the AC model parameters will be equal, you can say,
+[11:37] since I is same for both the transistor,
+[11:53] AC model parameters are also same, whether you pick up any model,
+[12:02] because the parameters come from the current, like REE, RPI, GM, all these things will be the same,
+[12:12] tell me if anyone has any doubts, because after this I will go on the AC analysis,
+[12:19] as soon as you do not get scared in big circuits in DC, you will not get scared in AC,
+[12:25] you will get scared in multi-stage amplifier AC, but first tell me whether it is clear or not,
+[12:32] everyone understood it well, this DC analysis is ready, you know the connection of the
+[12:38] Cascode, its AC can also be asked on its DC and no one will be able to say anything else,
+[12:44] because if I make such a circuit in DC analysis, then it is Cascode, it is my brother,
+[12:50] and in this type of question, I have also made you in DC biasing, tell me in DC biasing,
+[13:01] tell me, you have seen this type of question,
+[13:07] yes, now Ravi ji is saying, sir, how will you make AC model of two stages, you have to learn that,
+[13:13] yes, now see in AC model, you will circuit all the capacitors in short circuit,
+[13:20] and you will ground the VCC, now let's understand son, I will make a full circuit once,
+[13:29] after making short and ground, I will make a full circuit once, so that you understand this circuit,
+[13:34] see the upper VCC ground, see a little,
+[13:40] here, I have put a capacitor,
+[14:11] let's see,
+[14:20] this capacitor is also short,
+[14:23] see, this is R1, R2, R3, Rc and RE, this is it, this is clear to everyone,
+[14:49] now see one thing son, this R1 resistance is the terminal ground at the bottom,
+[14:55] the terminal at the top is also grounded, correct, why is the lower one grounded from here,
+[15:01] I have shorted this capacitor, so the lower one is also grounded, the upper one is also grounded,
+[15:06] so we can say that my R1 resistance is short,
+[15:12] can you say that it is short, okay, R1 resistance is short, think, the ground at the bottom and the ground at the top
+[15:20] has a potential difference of 0, now see R2 and R3, ground at the top of R2, ground at the bottom of R3,
+[15:29] ground at the top of R2, ground at the bottom of R3 and this terminal is also common, so as you
+[15:35] used to bias this voltage divider, don't you think that R2 and R3 will come in parallel,
+[15:41] tell me, R2 and R3 will come in parallel, so this RB is actually R2 parallel R3,
+[15:51] and this emitter one is grounded, the emitter one is grounded, here it is,
+[15:56] emitter is grounded, because of which it happened through bypass capacitor,
+[16:01] now son, its collector is going in the second emitter, see its collector is going in the second emitter,
+[16:14] so this is C1, this is E2, now the base of the second transistor is grounded, see this base is grounded,
+[16:23] this is because of the second coupling capacitor, this is because of this capacitor, this base is grounded,
+[16:30] between its collector and ground is RC, see between the collector and ground is RC,
+[16:36] do you understand the circuit, tell me quickly, is this circuit clear, if you take this circuit
+[16:42] also in the question, then also you can come here, nothing to worry, there is nothing to be afraid of,
+[16:49] you will reach here very easily, okay, everyone is getting excited, is it fun or not,
+[16:54] tell me quickly, we are making such a big circuit, we are making such a big circuit,
+[16:58] we are making such a big circuit, is it fun or not, is it fun, is it fun, is it fun,
+[17:03] now you all do one thing, along with me, do one thing on your copy, make a model of it,
+[17:10] which model will you use son, use the beta model, come on, once make a beta IB model of it,
+[17:16] first make a common emitter of C1, make a beta IB model of it,
+[17:22] first make a transistor, later I will make another one, first make a circuit of the transistor,
+[17:29] come on everybody, quickly make an RE model of it, how will you start the first transistor,
+[17:38] how will you start, first of all you will see the supply on the base, first of all
+[17:55] you will show the RB, then my children, you will show the RPI between the base and emitter,
+[18:05] now the emitter is also grounded, write RPI1 IB1 okay, RPI1 IB1
+[18:22] now what will you show here son,
+[18:24] if you consider beta as common, then beta IB1, now if you want you can show R0 in parallel,
+[18:38] then I will say ignore R0 okay, but beta is large no sir, how do we use it,
+[18:45] no problem son, now we have done beta large only because we have to ignore IB,
+[18:50] if beta is not given to you, if beta is large then you can use GMVPY okay, if you want you can use GMVPY here,
+[18:57] there will be no difference, okay son, now put GMVPY, now my children, I have ignored R0,
+[19:07] I have ignored R0, now what do I do, see the common base is common base, if I show its emitter
+[19:17] terminal resistance, if I show its emitter terminal resistance, then I will not show RPI,
+[19:24] what will I show RE, how much will I show RE, between which emitter and the base,
+[19:37] and here the current will be IE2, then you show a current source between the collector and the base,
+[19:47] remember there was a T-Model, remember the T-Model of the transistor, instead of beta IB there is alpha IE,
+[19:55] and when you show the resistance on emitter, then you show RE instead of RPI, this collector has come,
+[20:03] see this, tell me, is this model clear or not, so see how easy it was to make,
+[20:14] you were thinking sir, how will the model be made sir, the model is made, this is a transistor,
+[20:23] okay, this is your second transistor, you have made one pi model, you have made one T-Model,
+[20:32] right, why did you understand, did you find it difficult, tell me, was it difficult in this,
+[20:44] in fact it is easier to see than DC analysis, the circuit is very simple, which transistor will be
+[20:54] this RE is for the second transistor, RE2, see current IE2, Ravi is saying sir repeat,
+[21:02] Ravi see, did you understand till here, till beta IB, tell me, did you understand till beta IB,
+[21:07] now see this is the base of the first transistor, the collector is emitter, now from the second transistor,
+[21:18] the collector is connected to the second emitter, so if you show the resistance on emitter,
+[21:24] then which resistance will you show, which resistance will you show, RE, if you show it on the base then
+[21:30] RPI, so here you showed RE, the base was your grounded, you ground it and you showed the current on the
+[21:38] collector, alpha IE, because here you can see IE, if you show IB here, then you write beta IB,
+[21:45] but I have used its team model with RE, alpha IE, the collector was between the ground, RC,
+[21:58] here the grounding is there, it is very good, it is clear, everyone has this circuit, now my children,
+[22:07] if this is VS, now you can remove everything, you can remove it one by one parameter,
+[22:12] let's remove the voltage gain, so where did I change anything, your RE models are of two types,
+[22:24] Madhu, one T model, one Pi model, let's go, I'll make you another model, you people will get
+[22:31] confused, even if you do it with Pi, I have only used the other T because it will be very quick
+[22:38] calculation, see I'll make you, okay, this was your collector 1, this was the base 1 and this was the emitter
+[22:58] 1, so the emitter was grounded, here now you will apply a resistance between the base from the emitter,
+[23:05] the base is your grounded, okay, you will write it as R Pi 2 and its current will be shown as IB 2 base emitter,
+[23:22] okay, then you will show a current between the collector and the emitter,
+[23:27] like this, this current source looks like emitter from the collector, then this collector came, this ground came,
+[23:41] you show it like this, if you don't want to use T model, then you do it like this, now tell me,
+[23:51] because this current source will apply between the collector and the emitter, if you apply T model, then the collector
+[23:58] and the base will apply the current source, tell me, Madhu is now clear, Madhu, Ravi, Lucifer, Susubhan, everyone is clear,
+[24:09] why didn't you take RE in the second model, because I have shown resistance on the base, this is what Manthan
+[24:14] had shown that VT upon IB, if you show it on the base, VT upon IB is VT upon IE upon 1 plus beta, VT upon IE is RE,
+[24:31] which we call R Pi, so if you show emitter, then VT upon IE will be, VT upon IE will have to be shown as RE,
+[24:43] if you show it on the base, then VT upon IB will also be, which is RE into 1 plus beta, is it clear Manthan, tell me, is it clear now,
+[24:55] what is the difference, son, the difference between RE and R Pi, if the resistance is connected to emitter, then it is RE,
+[25:02] if you refer it to the base, what was the way to take the base from any resistance emitter, the multiplication of 1 plus beta,
+[25:10] so when RE is here, if you want to give it to the base, then you will do 1 plus beta RE, it is called R Pi,
+[25:17] what is it called, R Pi, now make it, now you have asked a lot of questions, also take out the answer, you need voltage gain,
+[25:26] now everything is shining, the model is multi stage amplifier, the model is not tough, I am saying this again,
+[25:32] you just have to connect the wires between two transistors, you have to connect two models together,
+[25:38] what is the difficulty in this, if you make it difficult for yourself, then it is very difficult,
+[25:46] every son cannot do anything on it, because there is a lawsuit going on between Kamesh sir and Unacademy,
+[25:53] that Unacademy can only keep the course of any teacher for 2 years, it is not allowed for 2 years,
+[25:59] once the educator leaves Unacademy, do you understand, so the course has the same right,
+[26:05] it is not that any teacher can use his course till his birth, there is no such contract,
+[26:11] now I tell you openly, I can do a lot of things to search, but why should I search,
+[26:22] come on, tell me, take it out, what are you doing, take out IB-1 first, what will be IB-1,
+[26:30] you are irritating, VS upon R pi-1, now see that its beta IB-1 is equal to IE2,
+[26:41] now if V-0 is going to alpha IE2, then V-0 will be minus alpha IE2 into RC,
+[27:09] so minus alpha beta VS RC upon R pi-1, see how easy it is, now understand what is the benefit in T-model,
+[27:25] minus alpha beta RS by R pi, okay, alpha is alpha, how much, beta upon 1 plus beta is it,
+[27:39] so you write it like this, so approximately, sorry RS not RC,
+[28:00] if you write beta 1 plus beta, see this is equal to the gain of a single stage,
+[28:18] so basically the gain of common emitter amplifier is this, RC by RE, so what does this mean,
+[28:24] the common base stage was approximately 1, so this is same as, so its gain is less than the cascade,
+[28:43] common emitter amplifier with bypass capacitor, okay, so the gain in common emitter multiplied by square,
+[29:02] here the gain of a common emitter is coming, which you said at the beginning,
+[29:07] if you are joining the common emitter-common base or you are taking the cascode connection,
+[29:15] its bandwidth is more, so its gain will be less, its gain will be less,
+[29:23] understand, now input resistance, come on everyone, input resistance is very easy,
+[29:30] tell me, input resistance, this is understood, what is the benefit of T-model,
+[29:38] this is equal to IE2 and beta IB1, if I had gone from this model, it would have been difficult to remove IB2,
+[29:45] okay, IB2 has to be removed, by doing this, if IE2 and beta IB1 were equal, then it would have been a little harder,
+[29:53] what is it, RB parallel R pi1, very good, clear cut is shining, RB parallel R pi1, or say RB parallel R pi,
+[30:10] because both of them will be equal, where RB is R2 parallel R3, okay,
+[30:21] come on, current gain, for current gain, you will have to call this current I0, now remove it,
+[30:30] current gain, this is I0, tell me, and this is your IES, I0 upon IES, current gain,
+[30:44] Priyansh bita, after lecture 27, don't watch the electrical ones and watch the electrical ones,
+[30:50] now watch from MOSFET, now after this, I will start JFET from Monday, there will be 3-4 lectures in JFET,
+[30:57] then you can join from MOSFET, anyway, if you watch JFET, then it is not bad, JFET is related to MOSFET,
+[31:03] there are 2 members of the same family, if you watch one, if not the other, it will be bad,
+[31:08] so don't do this, if you can see, then it is better to see, come on, make it quickly,
+[31:14] remove the current gain, come on everyone, remove the current gain,
+[31:20] if you want to do MOSFET DC biasing, then it will start next week, MOSFET DC biasing,
+[31:29] MOSFET JFET will go very fast, BJT we have done it in a very comprehensive way,
+[31:35] so you will connect all the things that you are reading here, the cascodes that I am teaching,
+[31:41] it will come again in MOSFET cascoding, then you will read cascodes there again,
+[31:47] it will be more fun, remove it, what are you saying, minus beta RB by RB plus RB,
+[32:01] see, I say in current gain that I0 is minus alpha Ie2, Ie2 is beta IB1,
+[32:13] and IB1 you can remove from the current division, Ies RB over RB plus Rpi,
+[32:23] so if you remove IB1 from the current division, then put IB1, then I0 by Ies,
+[32:42] okay, it will be like this, it came, see one thing, its voltage gain is negative,
+[32:50] what is the meaning of negative, 180 degree shift, why did this 180 degree shift come,
+[32:57] because the common emitter amplifier will give the shift of 180, the common base one will give the shift of 0 degree,
+[33:04] so overall shift came of 180, like common emitter, if common emitter was applied,
+[33:10] then the product of negative-negative would have been positive, so there would have been 0 degree phase shift,
+[33:15] because the first one would have given 180, the second one would have given 180, so total would have been 360,
+[33:20] total would have been 360, but what will happen now, your 180 degree shift will come,
+[33:26] so if you have done it with the second model, then also you have done it wrong,
+[33:30] because here also what you do, you write IB2, Ie2 by 1 plus beta, okay, and then you write it,
+[33:42] Ie2 by beta IB1 by 1 plus beta, okay, then you say that I0 is minus beta IB2,
+[33:57] understand, you have to do this, clear what you have done wrong, you have directly put beta IB2,
+[34:04] and you have considered it to be equal to IB1, IB2, this thing is wrong,
+[34:09] IB1 and IB2 are different current, right my brother, IB1 and IB2 are not equal,
+[34:28] okay, it is clear, if you have to use the second model, then what you have to do,
+[34:39] come on, this is the output resistance, come on everybody, output resistance,
+[34:44] see if you zero the supply to VS, then how much resistance will be seen from the output,
+[34:51] if you zero the supply, then how much resistance will be seen from the output,
+[34:58] you check this, come on everyone,
+[35:10] how much will be seen, how did you do RC, if you zero VS, IB10, IB10, then beta IB10,
+[35:19] which means Ie2 is zero, which means alpha Ie2 is zero, then what is left, only RC,
+[35:27] what is left, only RC, okay, then R0 is actually equal to RC, now in this,
+[35:36] you know a very special thing is asked, that is your trans conductance, what is asked,
+[35:42] trans conductance, so whenever you see the talk of trans conductance of the overall circuit,
+[35:48] then what will you always say, del I out by del VI, okay, output current by input voltage,
+[36:00] this is overall trans conductance, okay, this multi stage amplifier,
+[36:06] a lot of questions are asked on this trans conductance, so what is your overall trans conductance,
+[36:16] now sir how to take it out, in the cascode connection, how to take it out, see,
+[36:24] this is the first common emitter stage on VI, okay,
+[36:37] and output is taken from the collector of the second stage,
+[36:53] output is taken from here, from the collector of the second stage, this is a common base,
+[37:01] this is a common emitter, do you understand, tell me, do you understand the circuit,
+[37:06] where is the input voltage on the common emitter, where is the output current taken from the common base,
+[37:12] if my children say that beta is large, then you do not think that this will also be I out,
+[37:20] if beta is large, then IC and I will be equal, so this trans conductance,
+[37:34] this trans conductance, you can write it like this, del I1 sorry IC1 and VI can write it like this,
+[37:45] tell me, this VI is between the base emitter, this I out is the collector current of the first transistor,
+[37:53] the ratio of IC and VBE is GM, so GM1, i.e. the trans conductance of the first transistor,
+[38:03] the same overall trans conductance will also be there, the same overall trans conductance will also be there,
+[38:10] but sir, if beta is not large, then sir, if beta is not large, then
+[38:17] then I say IC1 is IE2, which is I out by alpha, I out by alpha,
+[38:45] i.e. I out is alpha IC1, do you understand, its emitter current of the second transistor,
+[38:56] see the emitter current of the second transistor, how will it come out of the collector, collector upon alpha,
+[39:02] because collector current emitter into alpha, so emitter is collector upon alpha,
+[39:08] so this is written, i.e. IC1 into alpha is equal to I out, so del I out by del VI,
+[39:17] now what will you write, del alpha IC1 and VI is VBE1, so basically what happened, alpha GM1,
+[39:34] do you understand, alpha GM1, is this clear, speak quickly, alpha GM1 is clear,
+[39:43] such a question is very, very, very important, i.e. as much as you put, it is less,
+[39:52] if I say, who has the most chance of getting questions among the cascades, of trans conductance,
+[39:58] who has the most chance of getting questions among the trans conductance, okay, Ajay brother is very good,
+[40:06] Ajay's selection took place in this exam, he said, he left the signal and read it all from me,
+[40:10] next year you will get 100% luck of the signal, that is for sure, okay, now 100% luck, bad luck,
+[40:17] you all judge, right, tell me, is this clear, speak quickly, it was fun, in the cascode connection,
+[40:25] it happened through the whole network, now what are its advantages, the gain is large,
+[40:32] why is the large gain due to common emitter stage, it is not like that, one or two gains will happen,
+[40:39] it will be 100-200, moderate input resistance, this one came, RB parallel, R pi, it is not at all low
+[40:48] and it is not at all high, the large bandwidth is due to common base, high output resistance RC,
+[40:59] because when the voltage amplifier is taken, the output resistance is low, it is high here, okay,
+[41:07] your high is coming here, it means this is a good transistor, see where you need a high frequency
+[41:16] amplifier, so there you want this, the bandwidth should be very large, because you have to amplify
+[41:22] the high frequencies, so what will you say, you will say that this amplifier is good,
+[41:29] do we prefer high input resistance, yes, if we are talking about a voltage amplifier, its output,
+[41:36] sorry, the input resistance should be high and the output resistance should be low,
+[41:41] it is a voltage controlled voltage source, if the input resistance is high, then the supply voltage
+[41:48] will become the entire V pi, how much will it become, V pi will become and it will become
+[41:54] the entire amplifier, if your input resistance is low, then the voltage coming from the supply
+[42:01] will not go to the entire V pi, it will get reduced, it will get reduced, that is the problem,
+[42:07] because the voltage amplifier ahead is V pi, if the supply voltage is not V pi, if the
+[42:14] V pi is already gone, then the output will also get reduced, can we calculate bandwidth,
+[42:21] dear, can't we calculate the bandwidth directly from the amplifier model, Anuj, then what
+[42:26] will you have to do, dear, you have to apply a capacitor fund, where you deal with low frequency
+[42:32] response and deal with high frequency response, so dear, this is what we are saying, if the input
+[42:40] frequency is high, then this is a good amplifier, because its bandwidth is more, which means
+[42:46] it can amplify more range of frequencies, which is good, so if the input frequency is high,
+[42:52] then this is a good amplifier, which will not amplify your cascade connection to the high frequency,
+[42:59] that will be a problem, it will be a problem, okay, now let's move on, dear, common collector
+[43:06] common collector and Darlington pair, so Darlington pair, dear, in which two transistors are
+[43:13] connected, which are both common collector amplifier, now what is in it, very high input
+[43:21] resistance, this is the most important property of this, as if I ask for the connection of
+[43:28] the cascade connection, what is the USP, do you understand USP, unique selling property,
+[43:34] what is its uniqueness, which makes it very special, tell me, what is the quality of the
+[43:41] cascade connection, which differentiates it from the rest, which is unique for it, what
+[43:48] is the property, yes, high bandwidth, very good, this is its high input resistance,
+[43:58] Aman, not high gain, who will have the highest high gain in the cascade, common emitter, common emitter,
+[44:05] it will be its USP, high gain, then the high bandwidth of the cascode and Darlington pair's high input
+[44:14] resistance, did you understand, so who is its property or who is its special point, we
+[44:21] will have to see that, it is not black water, it is black water and transparent water,
+[44:27] your head is not so rich that you can drink black water, it is not Virat Kohli, come,
+[44:32] unity voltage gain, because the common collector, which you know, it is also called as emitter
+[44:38] follower and emitter follower's voltage gain was around 1, remember, emitter follower's
+[44:45] voltage gain was around 1, now if you put two such stages, it will be around 1,
+[44:51] suppose it is 0.96, 0.96, so it will be almost 0.92, but it will be around 1, then it will be low
+[45:01] output resistance, its output resistance is very low, high current gain, current gain is
+[45:07] very high, because look, both the stages will be 1 plus beta, common collector's current
+[45:12] gain is emitter current by base current, emitter current by base current is 1 plus beta,
+[45:18] 2 times 1 plus beta multiplied, how much is it, 1 plus beta's square, 1 plus beta's
+[45:25] square, which is very very high, so it can be used as a current amplifier, do you understand
+[45:32] what I mean, it can be used as a current amplifier, because its current gain is very high,
+[45:38] so you use it as a voltage buffer, how do you use it, you use it as a voltage buffer,
+[45:45] where voltage gain is almost 1, do you understand the properties of Darlington pair,
+[45:52] the properties are clear, so I am going on the circuit, speak quickly, speak quickly,
+[45:59] is it clear to everyone, come on, so look Darlington pair looks something like this,
+[46:04] here look, earlier the input was connected to base, collector was connected to VCC, so
+[46:10] after putting input on base, it took output from emitter, its output of emitter became
+[46:17] the input of other's base, its output of emitter became the input for other's base,
+[46:23] then you took final output from emitter, then you took final output from emitter,
+[46:31] Sir, everyone's loading effect will be reduced, no dear, Anuj we are saying this, this whole
+[46:36] combination has input resistance, we are not saying this, every stage has input resistance,
+[46:41] do you understand, so the transistors inside will have their loading effect, that is
+[46:46] a different thing, but overall if Darlington pair, Darlington pair comes like an integrated
+[46:52] circuit in the market, it has a whole chip, so if you connect Darlington pair somewhere,
+[46:58] that is the right thing, it will not give loading on other's system, okay, I will also write
+[47:05] it, it is available as an IC, so due to high RN, it does not, it does not show loading
+[47:30] effect on rest of the system, it does not show loading effect on rest of system, okay brother
+[47:43] Anuj, okay, so it will not give loading effect on other's system, Sir, hybrid Pi model with
+[47:56] high beta, if we take output resistance, then 1 by GM parallel RC will be there, no dear,
+[48:04] it will not happen, if you take hybrid Pi in the previous one, then you will show GM V Pi here,
+[48:11] if you zero VS, then the first transistor's V Pi is zero, then GM V Pi is zero, then this
+[48:20] IE is zero, alpha IE is zero, then your RC will come, okay, then your RC will come, is
+[48:29] it clear what I am saying, tell me quickly, then your RC should come, yes, so till here
+[48:44] everything is clear, now look brother, this is a common collector, if we talk about H model in the common
+[48:51] collector, then your HIC is equal to HIE, HFC is equal to HFE, because beta and one plus
+[49:12] beta is almost same, almost same, and HOC is approximately HOE, common collector and common
+[49:22] emitter parameters are almost equal, now look at this emitter resistance, if I talk about
+[49:32] the second stage, if I talk about the second stage, then I can say that the emitter resistance
+[49:45] is the same load resistance, so for the second stage or let's write it directly, I am saying
+[49:53] that if HOE into RL is less than equal to 0.1, we can ignore HOE for second stage,
+[50:13] you know this, you can ignore HOE for second stage, okay, but my children, think about this
+[50:22] thing, this resistance is on emitter, you understand one thing, this resistance is on your emitter,
+[50:29] when you refer it to the base, when you refer to the base, then who will be multiplied,
+[50:36] say quickly, who will be multiplied, when you refer to RE, then who will be multiplied,
+[50:46] one plus beta 2, very good, one plus beta 2, so you can say that for the first stage,
+[50:56] the load resistance, listen to me carefully, how do you decide which voltage, control,
+[51:05] voltage source, current, control, current source, now I will teach you this further, when
+[51:11] I will finish the opamp, I will start the feedback amplifier, so in the beginning, I will
+[51:16] explain to you in four types of amplifier, okay, types of amplifier, the thing is clear here,
+[51:23] what I did not understand, in this, I said common collector's parameter, common emitter
+[51:28] is almost the same, because here the common collector is also on the input base, common emitter
+[51:34] is also on the input base, in common collector, current gain is 1 plus beta, in this, beta
+[51:39] which is almost equal, here also your output is on emitter and here it is on collector,
+[51:44] VA upon IC or VA upon IE, almost equal, so this is equal, now I said for the second stage,
+[51:52] the load I am seeing is R, and the rule of H parameter is that H0 into load resistance,
+[52:00] if it is less than point 1, then you can ignore H0, you can ignore H0, this is the rule,
+[52:10] okay, now listen to me, what did I say, when you refer this R, emitter to the base,
+[52:19] then it will be 1 plus beta R, so this 1 plus beta R will be the load for the first stage,
+[52:26] correct, it will be the load for the first stage, now if you do H0 into RL in the first stage,
+[52:34] now it will not be less than point 1, because now 1 plus beta is an extra factor of 1 plus beta,
+[52:42] listen again, you said H0 into RE, it is smaller than point 1, but when you refer it to the base,
+[52:49] then the load that will be made for the first stage will be 1 plus beta RE, now H0 into 1 plus beta RE
+[52:57] will not be smaller, that is for the first stage, you cannot ignore RL or you cannot ignore H0,
+[53:07] so we say that if RE is referred to base, it becomes 1 plus beta is written like this,
+[53:32] take a look, and acts as a load on first transistor, okay, now what do we say,
+[53:56] we say H0E greater than 1, greater than point 1, so H0E cannot be ignored for first stage,
+[54:26] okay, did you understand, tell me that you cannot ignore it for the first stage, now what do you want,
+[54:38] you want voltage gain, what do you want for voltage gain, you want model, so I will make a model, okay,
+[54:47] I will make a model, look, this is the first base where you will apply the supply, here you write HIE1,
+[55:03] here comes IB1, it is a common collector model, so the input will be on base and the output will be on ammeter,
+[55:15] HFE, IB1, okay, you will not ignore its H0E, look, I am the model of a common collector,
+[55:32] what did I say, its parameters will become common ammeter, okay, now the ammeter of the first transistor is
+[55:45] connected to each other's base, this is connected to each other's base, now what is the benefit of H model,
+[56:05] what is the benefit, that both circuits will become exactly the same, now you are ignoring H0E in this,
+[56:13] now look, both the collectors are connected to VCC,
+[56:33] so both the collectors will become ground together due to VCC, tell me, did you understand the circuit,
+[56:45] I have ignored H0E in this, I have ignored H0E in this, okay, you can make this also with hybrid pi,
+[57:03] but it will be easier in this model because both the models will become the same structure,
+[57:10] one more thing, IB1, IB2 will be equal to IE1, so the input resistance of this is VT upon IB1,
+[57:30] that is R pi, okay, the second VT upon IB2 is VT upon IE1, this is RE,
+[57:45] did you understand, the second HI will be RE, so what I am saying is that this is your R pi and this is very small resistance which is RE,
+[58:05] is it clear, tell me till here, is this clear, sir, still in the second one, if 1 by HOE is not in mega ohm,
+[58:17] then you cannot ignore it, you will have to see that, HOE multiplied by RE, if it is smaller than 0.1,
+[58:25] then ignore it, which often happens, which often happens to you, okay, and the rest is fine,
+[58:39] the rest of its emitter was directly connected to the other base, okay, is it clear till here,
+[58:48] now you were asking, sir, should we make a hybrid pi, make a hybrid pi and show it, tell me,
+[58:54] should we see its hybrid pi, see if your wish is to do it with a hybrid pi, then we can do it with a hybrid pi,
+[59:12] first what you will do is in the middle of the base and emitter, in the middle of the base and emitter of the first one,
+[59:22] in the middle you will put R pi, okay, so what you do is ignore the output resistance here, otherwise
+[59:43] there will be a lot of complications, the first collector is connected to VCC, so you have ground it,
+[59:51] understood, I have ignored R naught, now what am I saying here, emitter 1 will be connected to the other base,
+[60:02] emitter 1 will be connected to the other base, and there is a resistance on its emitter,
+[60:17] which we are connecting here from V naught,
+[60:32] gm2 V pi2, this happened,
+[60:39] understood, the collector is grounded, now tell me, is this clear, tell me, is it clear,
+[60:52] if you want you can make a beta model, what will you have to show here, IB, then here also IB,
+[60:59] and then here you will have to show you beta IB, is it clear, clear,
+[61:11] son, how many lectures should I repeat this, brother, the electrical one, I am giving the answer to the same question every day,
+[61:18] okay, so this is VS, now you will solve it and take it out from this circuit,
+[61:26] there is no problem, you take it out from this circuit, see,
+[61:36] if you see, you have to take it out from both the circuits, what will I tell you in this technique,
+[61:42] this R e will be much smaller than 1 by H o e, so you can say that IB2 is approximately
+[61:55] H F e IB1, okay, and IB1, see, I am taking out the voltage gain from this circuit first,
+[62:04] VS upon H I e 1, this happened, and V naught will be minus H F e IB2 into R e,
+[62:23] you will put the value of IB2, H F e IB1, IB1 is VS upon H I e 1 R e, so V naught by VS minus H F e square,
+[62:49] just take the magnitude, because you are using the common emitter parameters,
+[62:54] because in the common collector, in the common collector, you should get the phase shift of 0 degree,
+[62:58] so you just take the magnitude, H F e upon H I e will be R e minus,
+[63:06] you take it out from this circuit, this will come, okay, this came,
+[63:20] this thing is clear, tell me, this is clear voltage gain,
+[63:28] is it, but this voltage gain is coming, why is the jump not coming,
+[63:38] the thing is, this resistance is very small, so most of the current should go into this,
+[63:52] but in this way, if you are going, H F e IB1, the current is being amplified,
+[64:01] but the voltage gain should have come almost to your unit, now this unit is not visible,
+[64:12] beta IB, and the first transistor IB is between the base and the ground,
+[64:28] the IB of the first transistor is VS upon H I e, its input resistance is not high,
+[64:39] if you are doing it from this model, then there is a problem in this model,
+[64:47] the thing is, why is the answer coming from this model, if I do not apply emitter,
+[64:54] if I apply the collector, then H I c, and how will the resistance be referred from here,
+[65:06] by the way, according to me, not from this model, because it should have come close to 1,
+[65:11] this is giving us the wrong answer,
+[65:16] I have to put the value of IB2, so how much was IB2, H F e IB1, so I have written H F e IB1,
+[65:34] what sir, if you do not know, then how will the answer come, it is very good to spam,
+[65:39] so what is wrong in this model, I want to know, if I take H I c here,
+[65:48] here H F c here, here 1 by H O c, then I have to apply it between the base and the collector, H I c,
+[65:55] try the voltage gain from this model once, try the voltage gain from this model once,
+[66:04] because either I apply the formula directly to the H model,
+[66:14] come on, no one, you try from this model once, do it with pure network analysis,
+[66:19] do it with pure network, as soon as you take out the current,
+[66:26] V pi 1 over R pi 1, okay, you will take it out here, how much,
+[66:46] R pi 2 is equal to R e1, I have just come out, the second R pi is actually equal to the R e of the first transistor,
+[66:55] now this is the current you have, now this current and the second gm V pi 2 will go into the R e,
+[67:03] so what do I write to V naught, what do I write to V naught here,
+[67:11] 2 current sum gm 2 plus 1 by R pi 2 into V pi 2,
+[67:25] how do you write to V pi 2, how do you write to V pi 2,
+[67:38] gm 1 plus, gm 1 plus 1 by R pi 1 V pi 1, this was the current into R pi 2 or R e1,
+[68:02] this is done, this is V naught, so what is your V naught, if we write it well,
+[68:10] gm 2 plus 1 by R e1, write it like this,
+[68:18] gm 1 plus 1 by R pi 1 into R e V pi 1 R e1 or V s which is V pi 1 plus V pi 2 plus V naught,
+[68:40] so take V pi 1 common, V pi 2 is your gm sorry, take V pi 1 common,
+[68:50] 1 plus, how much is V pi 2 here, gm 1 plus 1 by R pi 1 into R e1,
+[69:04] V naught how much is it, gm 2 plus 1 by R e1, gm 1 plus 1 by R pi 1 into R e1,
+[69:23] now see when you take ratio V naught by V s, when you take ratio V naught by V s,
+[69:29] then this ratio will be less than 1 or approximately you can say close to 1,
+[69:35] because the voltage below is bigger than V naught,
+[69:43] okay, is this clear, tell me is this clear, this value will be close to 1 because this value is bigger than V naught,
+[69:55] this V s is bigger than V naught, okay, so you use this model and take out the rest of the parameter,
+[70:03] current gain input resistance trans conductance,
+[70:06] you all use this once and solve it in your copy,
+[70:10] current gain trans conductance and input resistance I want,
+[70:14] jalo fat half fat,
+[70:44] jalo fat half fat,
+[71:14] jalo fat half fat,
+[71:45] if you want to correct it in the previous one,
+[71:50] according to me what we have done wrong here,
+[71:53] what I am able to understand is that we should have kept the terminal, the common emitter one,
+[72:03] see if we had to do it with this model too,
+[72:08] so we should have kept this,
+[72:18] this was E1, this was C1, which would have been the ground,
+[72:28] here the base of the second transistor connected to emitter one,
+[72:37] B2, here comes HIE2, which is actually equal to RE,
+[72:49] then emitter comes here,
+[72:56] V naught,
+[72:59] you ignore this R naught HOE,
+[73:08] you ignore this,
+[73:14] and the collector directly ground it,
+[73:17] so using this type of model which is very similar to the previous one,
+[73:21] this is how you can use it if you want to,
+[73:25] so you can clearly see the reference here,
+[73:29] you can see the reference here,
+[73:33] okay,
+[73:37] now take this out, in this we were talking about current gain,
+[73:41] first we talked about current gain,
+[73:45] now see current gain which is going to RE,
+[73:53] it is going to be V pi 2 upon RE,
+[74:00] because R pi 2 is RE,
+[74:03] plus GM V pi 2,
+[74:07] and current coming from supply,
+[74:10] that is V pi 1 by R pi,
+[74:15] so I emitter by I supply is what,
+[74:21] R pi upon RE plus GM 2 into R pi 1,
+[74:33] R pi upon RE what happens, 1 plus beta,
+[74:39] GM 2 what will happen,
+[74:41] 1 upon,
+[74:43] write it like this,
+[74:45] GM 2 will happen,
+[74:47] IC 2 by VT,
+[74:51] or how can we write more,
+[74:54] it will get complicated like this,
+[74:57] GM 2 if you want to write,
+[75:00] 1 by RE 2 into R pi 1,
+[75:05] see I will simplify it a little,
+[75:10] RE 2 is RE pi 2,
+[75:17] RE pi 2 upon 1 plus beta,
+[75:23] into RE pi 1,
+[75:26] okay,
+[75:27] or R pi by RE,
+[75:33] RE pi 2 is RE,
+[75:37] RE pi 2 is RE,
+[75:40] this is,
+[75:53] this will happen,
+[75:55] RE pi 2 is RE,
+[75:57] so 1 plus beta,
+[75:59] plus 1 plus beta square,
+[76:06] that is why I said current gain is high,
+[76:10] current gain is very high,
+[76:12] see how,
+[76:13] if you go to the basic connection,
+[76:16] here,
+[76:17] from IB, 1 plus beta is IE,
+[76:20] once again 1 plus beta is IE,
+[76:23] so 2 times 1 plus beta is multiplied by current,
+[76:27] once 1 plus beta in this base emitter,
+[76:29] once 1 plus beta in this base emitter,
+[76:32] so how much gain in your current is 1 plus beta square,
+[76:37] 1 plus beta square,
+[76:39] okay,
+[76:40] Anshuman,
+[76:41] do it with the digital that you will find in Brahmastra Plus,
+[76:44] okay,
+[76:46] is this clear,
+[76:47] very good, very good Anuj,
+[76:50] and,
+[76:51] yes,
+[76:52] now this is done,
+[76:53] what was needed next,
+[76:54] input resistance,
+[76:55] remove it a little,
+[76:56] input resistance,
+[76:58] see input resistance is very easy,
+[77:01] here how much input current is visible,
+[77:04] how much input current is visible,
+[77:06] say,
+[77:07] input current is visible,
+[77:09] V pi 1 by R pi 1,
+[77:13] input current is visible,
+[77:14] V pi 1 by
+[77:18] R pi 1,
+[77:20] so input resistance is,
+[77:23] Vs by I in,
+[77:29] so you removed Vs,
+[77:31] see here,
+[77:32] here,
+[77:33] V pi 1,
+[77:35] a very long formula came,
+[77:44] gm 2,
+[77:48] plus 1 by R e,
+[77:50] R pi 1,
+[77:51] R e,
+[77:55] gm 1 plus 1 plus R pi 1,
+[78:05] R e,
+[78:08] gm 2 plus 1 plus R e 1,
+[78:18] then gm 1 1 plus R pi,
+[78:22] R pi 1 which is R pi,
+[78:26] R e,
+[78:30] okay,
+[78:31] divided by,
+[78:35] what will happen,
+[78:36] V pi 1 upon R pi 1,
+[78:40] see how much it becomes,
+[78:42] R pi 1
+[78:45] plus gm 1,
+[78:48] R pi 1,
+[78:50] plus 1,
+[78:52] R e,
+[78:54] plus,
+[78:58] gm 2 R e,
+[79:01] plus 1,
+[79:03] gm 1 R pi 1,
+[79:08] plus R e,
+[79:11] gm into R pi is 1 plus beta,
+[79:15] so it becomes 2 plus beta,
+[79:22] okay,
+[79:23] gm 2 R e,
+[79:24] this is also 1 plus beta,
+[79:27] so 2 plus beta,
+[79:29] and this is how much it becomes,
+[79:33] yes,
+[79:34] gm into R pi 1,
+[79:37] this becomes 1 plus beta plus R e,
+[79:40] but how is this R e,
+[79:44] R e will remain outside,
+[79:50] okay,
+[79:51] 2 plus beta R e,
+[79:56] so this becomes approximately,
+[79:58] if it becomes R pi,
+[80:00] if it becomes R pi,
+[80:03] so this becomes approximately,
+[80:06] how much it becomes,
+[80:08] and where is the R e missing in this,
+[80:23] V naught which we wrote,
+[80:25] gm 1 plus,
+[80:31] we forgot capital R e in this,
+[80:39] capital R e also comes,
+[80:51] capital R e was also made here,
+[81:01] see this,
+[81:07] so this is R pi 1,
+[81:08] this is R pi 1,
+[81:09] and this is R pi 1,
+[81:12] R e,
+[81:19] approximately,
+[81:31] wait a second,
+[81:32] gm into R pi is beta,
+[81:33] 1 plus beta is different,
+[81:46] so this will come,
+[81:48] okay,
+[81:49] gm into R pi is beta,
+[81:55] yes,
+[81:56] R e should have come from the beginning,
+[81:58] is it clear,
+[82:00] otherwise we don't know what people do in this,
+[82:02] people do this,
+[82:04] that this R e should be referred to here,
+[82:06] this R e should be referred to here,
+[82:08] 1 plus beta R e will be done,
+[82:10] listen carefully,
+[82:11] they say this should be referred to here,
+[82:13] 1 plus beta R e will be done,
+[82:15] this resistance is very small,
+[82:17] ignore this,
+[82:18] 1 plus beta R e will be done,
+[82:19] take it one more time,
+[82:20] 1 plus beta square R e will be done,
+[82:22] plus R pi 1,
+[82:24] plus R pi 1,
+[82:26] by the way,
+[82:27] why didn't 1 plus beta square come,
+[82:31] here,
+[82:36] I am seeing,
+[82:39] that capital R e is forming in one place,
+[82:43] capital R e will only come in the term v0,
+[82:46] but 1 plus beta square should be multiplied,
+[82:56] and R e should have been added,
+[82:57] if I had written from here,
+[83:01] then this R e should have been added,
+[83:02] 1 plus beta R e,
+[83:03] then this is 1 plus beta square,
+[83:05] and this is 1 plus beta,
+[83:07] I can see that this is 1 plus beta R e,
+[83:10] what I wanted,
+[83:11] and 1 plus beta square into capital R e,
+[83:18] how did we write v0,
+[83:21] this was written,
+[83:22] we wrote v pi 2,
+[83:25] gm1, v pi 1,
+[83:27] R e1,
+[83:29] okay,
+[83:31] now when we put this here,
+[83:33] then R e v pi 1 came,
+[83:36] this came,
+[83:37] R e1,
+[83:38] and this came,
+[83:40] okay,
+[83:41] now when we multiply this with R pi,
+[83:43] gm R pi 1 plus beta,
+[83:45] this became R pi,
+[83:46] this became R pi,
+[83:47] this became R pi,
+[83:49] and from here,
+[83:51] 1 plus beta capital R e came,
+[83:55] and from here,
+[83:56] R e,
+[83:57] gm2 R e,
+[83:58] 1 plus beta,
+[84:01] okay,
+[84:02] here this has gone wrong,
+[84:05] okay,
+[84:06] this R e has disappeared,
+[84:13] look at this,
+[84:14] I had already taken this R e inside,
+[84:18] is it right,
+[84:19] can you see the curve,
+[84:21] can you see the short cut,
+[84:24] can you see the short cut,
+[84:28] tell me,
+[84:29] is the short cut clear,
+[84:30] how to refer,
+[84:32] this R e goes here,
+[84:33] 1 plus beta becomes R e,
+[84:35] both these add in this,
+[84:37] then take it here,
+[84:38] again multiply 1 plus beta,
+[84:41] so you will get the input resistance,
+[84:43] refer it,
+[84:45] and if you take the voltage gain from this model,
+[84:47] then also it will be the same circuit,
+[84:49] then also you will have to make the same circuit,
+[84:52] okay,
+[84:53] is it clear,
+[84:55] trans conductance,
+[84:56] see as soon as the trans conductance is asked in it,
+[84:59] your trans conductance is also asked in it,
+[85:03] so see how was its model,
+[85:20] this will be i out,
+[85:32] because this one is i out,
+[85:40] so I also called it i out,
+[85:43] this happened,
+[85:45] v b e 1,
+[85:47] this happened,
+[85:48] v b e 2,
+[85:49] see the trans conductance,
+[85:54] v in,
+[85:57] so we say overall trans conductance will be,
+[86:00] del i out,
+[86:03] by del,
+[86:04] v in,
+[86:07] okay,
+[86:08] and here,
+[86:10] v in is,
+[86:13] v b e 1,
+[86:14] that is v b e 1,
+[86:17] plus v b e 2,
+[86:20] so if you want it,
+[86:22] then how can you write it,
+[86:26] v b e 1 plus v b e 2,
+[86:29] but if i out is the sum of both,
+[86:32] by the way if i out is the sum of both,
+[86:35] you are taking from here,
+[86:40] if you are taking i out,
+[86:45] so v b e 1 plus v b e 2,
+[86:48] that is 2 v b e,
+[86:50] and if you are taking i out,
+[86:52] the sum of both,
+[86:54] i c 1 plus i c 2,
+[86:58] so here,
+[86:59] overall trans conductance will be,
+[87:03] del i c 1 plus del i c 2,
+[87:07] by 2,
+[87:09] del v b e,
+[87:11] which means,
+[87:12] g m 1 plus g m 2 by 2,
+[87:15] but don't worry,
+[87:16] where do you want to take i out,
+[87:19] because where do you want to take i out,
+[87:20] it will give you in question,
+[87:22] okay,
+[87:23] where do you want to take i out,
+[87:25] it will be given in question,
+[87:27] you will solve according to that,
+[87:29] suppose if this was i out dash,
+[87:34] if I give this,
+[87:38] suppose I give this,
+[87:42] so i out dash,
+[87:46] that is i c 2,
+[87:48] the second collector current,
+[87:54] so this would be g m 2 by 2,
+[87:59] do you understand,
+[88:00] there can be two from this type,
+[88:02] depending upon where it is giving you current,
+[88:05] accordingly you have to define trans conductance,
+[88:09] and if you want to make it with hybrid Pi,
+[88:11] then I have made you a model,
+[88:13] your KVL KCL is ahead,
+[88:15] tell me, is the model clear,
+[88:17] the model is clear,
+[88:19] so the one who comes inside the gate,
+[88:21] the one who comes inside the gate,
+[88:22] will be asked about trans conductance,
+[88:24] that is often asked,
+[88:26] okay,
+[88:27] that is often asked about
+[88:29] taking out trans conductance,
+[88:31] and if you talk about engineering services,
+[88:33] suppose the analysis of the entire amplifier is done,
+[88:35] then you can draw a model like this,
+[88:37] and you can solve it,
+[88:39] Pushpa is asking,
+[88:41] which book should I refer,
+[88:43] see I never recommend the book,
+[88:45] because time will be consumed a lot,
+[88:47] and analog is a circuit based topic,
+[88:49] in this you will clear all the books,
+[88:51] you will refer all the books,
+[88:53] you will not gain the problem solving ability,
+[88:57] because as it is a network,
+[88:59] your analog is the same type,
+[89:01] you have to learn how to solve the problem,
+[89:03] but still if you are insistent,
+[89:05] then there is a book,
+[89:07] do I have it here,
+[89:11] there is a book of Donald Neiman,
+[89:13] of electronic circuits,
+[89:15] there is a book of EDC,
+[89:17] there is a thick book of electronic device and circuit,
+[89:19] of Neiman,
+[89:21] you can refer it,
+[89:23] but also keep in mind that
+[89:25] you will not be able to learn the problem solving ability,
+[89:27] no matter how much theory you read,
+[89:29] you should get circuit analysis,
+[89:31] the light is gone,
+[89:33] so when Anu is clear, how will you do it,
+[89:35] if you apply this model,
+[89:37] if you apply this model,
+[89:39] a similar type of result will come,
+[89:41] you can write beta IBB instead of this,
+[89:43] if you want to simplify a little more,
+[89:45] you can do beta IBB,
+[89:47] you can do hybrid pi,
+[89:49] as per your wish,
+[89:51] okay,
+[89:53] so look,
+[89:55] Darlington pair has a very high beta,
+[89:57] as I said 1 plus beta square,
+[89:59] it is available in IC form,
+[90:01] and it is called
+[90:03] super beta BJT,
+[90:05] super beta BJT,
+[90:07] yes,
+[90:09] you will have to apply the Thevenin in R out
+[90:11] to zero the supply,
+[90:13] okay,
+[90:15] let's see this question,
+[90:17] Determine the overall trans
+[90:19] conductance of the amplifier,
+[90:21] suppose
+[90:23] I have given you here,
+[90:25] I out,
+[90:27] tell me the overall trans
+[90:29] conductance,
+[90:59] till here,
+[91:01] the first one seems to be quite simple,
+[91:03] by the way, the cascord is also simple,
+[91:05] a little long calculation,
+[91:07] it is done in Darlington pair,
+[91:09] look, in Darlington pair,
+[91:11] the maximum people do it directly
+[91:13] from the formula,
+[91:15] but I have shown you how to do it
+[91:17] from the network,
+[91:19] by the way, I have seen the maximum people,
+[91:21] that they will write it directly,
+[91:23] the maximum teacher 1 plus beta square
+[91:25] will come, it will happen,
+[91:27] I have drawn and shown you,
+[91:29] this is the difference,
+[91:31] now what do you know,
+[91:33] VS is,
+[91:37] I have just made it,
+[91:57] okay,
+[92:05] okay,
+[92:09] this has been learned,
+[92:11] how to get the overall trans
+[92:13] conductance,
+[92:23] okay,
+[92:25] this resistor will have to be ignored,
+[92:27] otherwise our result will never come,
+[92:29] so you can do it like this,
+[92:31] or you can give it a
+[92:33] capacitor across this resistance,
+[92:35] okay,
+[92:37] or you can give it a
+[92:39] capacitor across this resistance,
+[92:41] or you can give it a straight straight line,
+[92:43] what is the next one,
+[92:45] in the cascord amplifier
+[92:47] circuit,
+[92:49] determine the value of R1, R2, RL,
+[92:51] RL here,
+[92:53] such that quiescent current through the
+[92:55] transistor is 1 milli ampere,
+[92:57] VC1
+[92:59] is 3 volt,
+[93:01] VC2 is 6 volt,
+[93:03] VBE 0.7,
+[93:05] beta high,
+[93:07] do it,
+[93:09] R1, R2, here,
+[93:11] this is 18 kilo ohms,
+[93:13] the lower resistance,
+[93:17] and this is 200 ohms,
+[93:19] okay,
+[93:21] do it,
+[93:29] dear, if you have a question about
+[93:31] biasing, then do it like biasing,
+[93:33] model is for AC analysis,
+[93:35] think about it in a common sense,
+[93:37] why did you study the model,
+[93:39] did you study the model for biasing,
+[93:41] no, you studied the model for
+[93:43] amplifier gain, input,
+[93:45] output, all these things,
+[93:47] so if you have a question about biasing,
+[93:49] then you will do it like biasing,
+[94:03] now you have only one amplifier left,
+[94:05] the differential amplifier in BJT,
+[94:07] we will finish it tomorrow, then your
+[94:09] BJT will be fully ready,
+[94:11] but if you see all in all,
+[94:13] what we studied in BJT,
+[94:15] we saw the construction working of
+[94:17] amplifier, graph,
+[94:19] after that we studied the
+[94:21] concept of stability factor in BJT,
+[94:23] we studied biasing,
+[94:25] and we studied three types of amplifier,
+[94:27] that's it,
+[94:29] all these things are happening,
+[94:31] whether it is a cascode,
+[94:33] whether it is a Darlington pair,
+[94:35] whether it is a cascade connection,
+[94:37] multi-stage amplifier,
+[94:39] or the gain, input,
+[94:41] output, resistance of amplifier,
+[94:43] it is becoming a very low concept,
+[94:45] so you should take it more than this,
+[94:47] because in short notes,
+[94:49] you will put all the things that
+[94:51] you make,
+[94:53] tell me,
+[94:55] did you get the answer?
+[94:57] See,
+[94:59] as he said that
+[95:01] biasing current should be 1 mA,
+[95:05] so base current
+[95:07] is said to be ignored,
+[95:09] so
+[95:13] if you see
+[95:15] the emitter voltage of
+[95:17] transistor 1,
+[95:19] then 1 mA
+[95:21] into 0.2 kOhm,
+[95:25] so this is 0.2V,
+[95:27] now from base to emitter,
+[95:29] the drop is 0.7,
+[95:33] so this is 0.9V,
+[95:35] 0.9V
+[95:39] if the current of 0.9 to 18 kOhm
+[95:41] is removed,
+[95:43] i,
+[95:47] 0.9 by 18,
+[95:53] 0.05,
+[95:57] okay, this is the current
+[95:59] coming from above,
+[96:01] and this is the current coming from here also,
+[96:03] if it is 3 here,
+[96:05] then here it will be 3.7,
+[96:07] so you can remove R1,
+[96:11] 9 minus 3.7
+[96:13] by 0.05,
+[96:15] so 6.3,
+[96:17] 630 by 5,
+[96:19] 126 kOhm,
+[96:23] okay,
+[96:25] 3.7 and here it was
+[96:27] 0.9, so R2 is
+[96:29] 3.7
+[96:31] minus 0.9,
+[96:33] i.e. 2.8
+[96:35] by 0.05,
+[96:37] 280 by 5,
+[96:39] 55, 25,
+[96:41] 56 kOhm,
+[96:43] okay,
+[96:45] tell me this,
+[96:47] and RL is asking,
+[96:49] RL is simple,
+[96:51] 9 minus 6 by 1 mA,
+[96:53] 3 kOhm,
+[96:57] it is clear,
+[96:59] you don't have to use it,
+[97:01] whether it is a cascode or something, it is 106,
+[97:03] yes,
+[97:05] this is correct,
+[97:07] 6.3,
+[97:09] okay, it will be 5.3,
+[97:11] i took it wrong,
+[97:21] it is shiny,
+[97:23] okay,
+[97:25] okay,
+[97:27] see the next one,
+[97:45] you have to take out the Z parameter,
+[97:55] okay,
+[98:21] draw its model,
+[98:23] okay,
+[98:53] okay,
+[99:11] now it is dark,
+[99:13] make its model,
+[99:17] see,
+[99:19] between base and emitter,
+[99:21] this is what I am writing,
+[99:23] 1 kOhm,
+[99:25] okay,
+[99:27] here the current going in the base,
+[99:29] that is I1,
+[99:35] then here, this emitter came,
+[99:41] here 100 I1,
+[99:45] then this collector is done,
+[99:47] ground, okay,
+[99:49] you have ignored R0,
+[99:53] then here,
+[99:57] take the resistance here also 1 Ohm,
+[100:01] okay,
+[100:07] 100,
+[100:09] what will you take here,
+[100:11] take I current,
+[100:13] 100 I,
+[100:19] collector will be ground again,
+[100:23] 1 kOhm on emitter,
+[100:29] and here V2 and I2,
+[100:37] okay,
+[100:39] this will be it,
+[100:41] now see this model is coming,
+[100:43] here I is,
+[100:45] 101 I1,
+[100:47] here it came,
+[100:49] 101 I,
+[100:51] 101 I,
+[100:53] now I will say what will be V2,
+[100:57] V2 is,
+[100:59] I2,
+[101:01] plus,
+[101:03] 101 I,
+[101:05] into 1 kOhm,
+[101:09] so 1 I2,
+[101:13] plus 101 I,
+[101:15] 101 I,
+[101:17] what will you write,
+[101:19] the whole game is going on in kilo ohms,
+[101:21] 101 square,
+[101:23] I1,
+[101:25] this is done,
+[101:27] we got the equation of V2,
+[101:29] here the voltage is V1,
+[101:31] if the KVL is applied on V1,
+[101:33] take it to kilo ohm,
+[101:35] 0.001 I1,
+[101:37] I am taking it to kilo ohm,
+[101:39] okay,
+[101:41] plus 101 I1,
+[101:43] into,
+[101:45] 0.001,
+[101:47] again 1 ohm,
+[101:49] plus V2,
+[101:51] okay,
+[101:53] so 0.001 I1,
+[101:55] you ignore it,
+[101:57] 101 by 1000,
+[101:59] so 0.101,
+[102:01] I1,
+[102:03] plus I2,
+[102:05] plus 101 square,
+[102:07] I1,
+[102:09] now in front of 101 square,
+[102:11] what will happen,
+[102:13] think about it,
+[102:15] before 101 square,
+[102:17] 0.101 is ignored,
+[102:19] so your parameter is,
+[102:21] 101 square,
+[102:23] I1,
+[102:25] and 101 square,
+[102:27] and I1,
+[102:29] this is done,
+[102:31] okay,
+[102:33] is it clear,
+[102:35] is it clear,
+[102:37] next question,
+[102:39] in the circuit shown,
+[102:41] Q1, Q2 are biased,
+[102:43] at a collector current of,
+[102:45] 2.6 milliampere,
+[102:47] assuming current gain are sufficiently high,
+[102:49] to assume collector current equal to,
+[102:51] emitter current,
+[102:53] what is it saying,
+[102:55] beta is,
+[102:57] high,
+[102:59] beta is your high,
+[103:01] VT 26 millivolt,
+[103:03] voltage gain,
+[103:05] of mid band,
+[103:07] do it,
+[103:19] not a good question,
+[103:21] we will have to make a model of it,
+[103:33] first tell me quickly,
+[103:35] how much RE is coming,
+[103:37] RE,
+[103:39] which is your emitter resistance,
+[103:41] RE, how much is coming,
+[103:47] tell me,
+[103:51] how much RE is coming,
+[103:59] 10 ohm is coming,
+[104:01] GM which is,
+[104:03] IC upon VT is,
+[104:07] 0.1 Siemens,
+[104:09] this is coming,
+[104:11] tell me,
+[104:13] will you draw the model of it,
+[104:15] that I will start drawing,
+[104:17] start with the upper transistor,
+[104:19] in which the supply is applied,
+[104:21] start with the upper transistor,
+[104:23] and you will show the RE,
+[104:25] because beta is high,
+[104:27] beta is high,
+[104:29] so RE is
+[104:33] tending to infinity,
+[104:37] let's start drawing,
+[104:39] start with the upper transistor,
+[104:41] start with Q1,
+[104:45] will you be able to make it,
+[104:47] that I will have to make it,
+[104:59] will you be able to make it,
+[105:13] shall I make it,
+[105:15] first of all,
+[105:17] I am holding the upper transistor,
+[105:19] on its base,
+[105:21] Vs,
+[105:23] do not open the region between the base emitter,
+[105:29] write it as Vpi1,
+[105:41] make it,
+[105:43] from its collector,
+[105:45] the resistor of 1 kilo ohm,
+[105:47] will go to the ground,
+[105:49] let it go,
+[105:57] now,
+[105:59] both the emitter are connected with the emitter,
+[106:05] the emitter is connected,
+[106:07] the other emitter is also connected,
+[106:09] what will be in the between the base and the emitter,
+[106:11] open circuit,
+[106:13] but the base terminal is grounded,
+[106:15] the base and the emitter
+[106:17] There will be an open circuit between the base and the emitter.
+[106:21] And this is PNP transistor but if you want the model then make it like NPN, there is no problem.
+[106:28] It is PNP but you can make the model like NPN only.
+[106:32] Okay?
+[106:33] Now look at its collector, the collector is directly grounded.
+[106:39] The collector is directly connected to minus 5 volts so it is grounded.
+[106:48] And where will this resistance go?
+[106:52] Rb2 is here and this is minus 5 also grounded.
+[106:56] If this is here and this is minus 5 also grounded then this will be Rb2, short.
+[107:02] Do you understand?
+[107:04] Tell me, is this model clear or not?
+[107:07] You can make the same model of NPN and PNP.
+[107:11] No one is going to stop you in this.
+[107:13] No one is going to stop you in this.
+[107:18] Make the model of NPN and PNP the same because it is AC.
+[107:22] Now look, brother, we are trying to go two currents in one branch.
+[107:27] We will be able to go a little.
+[107:29] So what does this mean? Both will be equal and opposite.
+[107:39] So what will you write?
+[107:42] GM is the same for both.
+[107:53] Okay?
+[107:55] This is written.
+[107:57] Now here, you put KVL and take out VS.
+[108:12] Vpi2 itself is minus Vpi1.
+[108:15] Tell me, is this clear?
+[108:18] Now V0 is here.
+[108:24] And GM is not in your Milly Siemens, pay attention.
+[108:28] Keep it in Siemens.
+[108:30] So write 1000.
+[108:33] So write 1000.
+[108:48] One child gave the right answer, minus 50.
+[108:53] Very good.
+[108:55] Do you understand? Now PNP is also clear.
+[108:58] Zainul, no difference.
+[109:00] If you know the current in PNP, if you turn it upside down, it also turns Vpi.
+[109:04] No difference?
+[109:06] If you turn the current upside down, the polarity of the voltage also reverses.
+[109:10] Go home and try it.
+[109:12] You turn the polarity of the Vpi, the current source, that PNP is a transistor.
+[109:18] The answer will still be the same.
+[109:20] So this is what I said.
+[109:22] In the AC model, PNP does not have a difference from NPN.
+[109:24] You just make the same model.
+[109:27] Because when it comes to AC, after every half cycle, the current and voltage are also reversing.
+[109:33] So what difference does it make with direction or polarity?
+[109:36] Okay.
+[109:38] Very good.
+[109:40] This is your assignment.
+[109:42] You will solve it on a multi-stage amplifier.
+[109:45] Okay.
+[109:47] And look here, there are all my special classes for you.
+[109:51] If you go to this link,
+[109:52] then you can make PYQs, except for the differential amplifier.
+[109:57] You will make all the PYQs from you.
+[110:00] So dear, take the BJT, tomorrow we will also finish the differential amplifier.
+[110:04] Dear, there is no tiny URL, this time operational Jaswant Lal.
+[110:08] Only this link is operational right now.
+[110:11] No tiny URL.
+[110:13] I think you are watching old video, that time there was a tiny URL, which was shut down.
+[110:17] Okay.
+[110:18] Now if you join the Anacademy, then you can take anything from both plus or iconic, dear.
+[110:24] You will get top educators in both.
+[110:27] The study material of the class will be available on the app.
+[110:30] There is a test series.
+[110:32] You are getting custom doubt solving on buying an iconic, that is the solution of new doubts.
+[110:36] Printed notes are being sent at home.
+[110:39] You are getting one-to-one mentorship.
+[110:41] You are getting strategy and study plan.
+[110:43] You can interact on audio in the open house session.
+[110:45] And what you have to do while joining the Anacademy, dear, you have to choose the plan.
+[110:50] You have to decide the duration.
+[110:52] And you have to apply the code in the payment, which will give you immediate maximum discount.
+[110:58] And along with that, if you will see the results, dear.
+[111:01] So last year we have produced 6 anchors in the top 10.
+[111:04] You can also be one of them next year.
+[111:07] You just have to join the Anacademy quickly using the code, and if there is a financial issue, then you can take it on EMI.
+[111:15] Where you can pay your fees month on month.
+[111:18] In just 2 hours, EMI will be approved.
+[111:21] Give minimum paperwork, basic card, pan card, any member in the family who gets salary.
+[111:27] And this latest batch is our start, dear, Brahmastra Plus.
+[111:31] I am taking EMT and power electronics in this.
+[111:33] My power electronics is going on in the morning at 7 am.
+[111:36] EMT is at 7.30 in the evening.
+[111:38] Your daily doubt classes are taking place here.
+[111:40] Daily DPP is being done.
+[111:42] Practice and strategy sessions are taking place.
+[111:43] Notes are available for you on the web.
+[111:46] Test series is available.
+[111:48] Paramount is the study material of the Gate Academy.
+[111:51] Gate Academy, Workbooks, PYQ are all available for you.
+[111:55] If you are following Brahmastra batch on YouTube, then the course will be completed by the top educator.
+[112:01] But the PYQs, Paramount, strategy, doubt clearing, Daily DPP, Workbook, all these things are going to be available only in Brahmastra Plus.
+[112:10] In Brahmastra batch, but yes, you will be completely taught.
+[112:15] And if you are thinking about 2023 right now, then you can go for a 4 month subscription.
+[112:21] Which is our new subscription.
+[112:23] In this, you can quickly join with Angkat ESE code.
+[112:27] And this is my telegram channel.
+[112:29] Stay connected to it so that no class will miss you.
+[112:32] And if there is still any query, then you can call my team.
+[112:35] On this number, the YouTube kids press 2 plus and the iconic ones press 1.
+[112:41] My team will call back to you and your query will be answered.
+[112:46] The PDF of this session will be given to you on the community on the Academy app.
+[112:50] So we will go to the home page of the Academy app.
+[112:53] Go to the community to discover.
+[112:55] You will get all my PDFs uploaded there.
+[112:58] So thanks a lot everyone.
+[113:00] Thank you very much.
+[113:01] So tomorrow we will meet at the same time, same place.
+[113:04] And tomorrow we will discuss differential amplifier.
+[113:06] Let's crack it.

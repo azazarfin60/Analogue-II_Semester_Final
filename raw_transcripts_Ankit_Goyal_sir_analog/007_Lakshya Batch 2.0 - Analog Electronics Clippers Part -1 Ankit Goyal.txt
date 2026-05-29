@@ -1,0 +1,2122 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Clippers Part -1 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=yf4OGnr7t90
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] We are back.
+[00:14] We are live in Laxibatch 2.0 Analog Electronics.
+[00:18] Till now you have covered the basic of the diode very well.
+[00:22] You have seen the function of the diode.
+[00:25] How is the construction?
+[00:27] How is the working?
+[00:29] How is the forward?
+[00:30] How is the reverse?
+[00:31] How is the breakdown?
+[00:33] And you also saw the open circuit test and short circuit test.
+[00:37] With the help of which you saw how we judge the working condition of the diode
+[00:41] when it is in a circuit.
+[00:44] And how we solve the circuit.
+[00:47] And I have already given you all the assignments.
+[00:52] So today we are starting the application of the diode.
+[00:56] Now you will see the practical use of the diode.
+[00:59] What are the circuits where the diode is used?
+[01:02] And how do those circuits work?
+[01:05] This will be in today's lecture.
+[01:07] In today's lecture, the first application is going to be done.
+[01:11] That is the Clippers.
+[01:12] So I hope you are all ready.
+[01:14] You all are ready for the open circuit test and short circuit test.
+[01:18] Because I am going to help you with this topic.
+[01:22] In my lectures, you will see that you can build things from one fundamental to the other.
+[01:30] Okay?
+[01:31] And before I start, let me tell you one more thing.
+[01:34] Today is the last day of this 20% off.
+[01:37] So you are getting 20% off on the Anacademy subscription.
+[01:40] Today is 31st of August.
+[01:42] The last day is plus low or iconic.
+[01:44] Both are 20% off.
+[01:46] You know the code, Ankit ESE.
+[01:50] Okay Ankit ESE.
+[01:52] Let's start then.
+[01:54] Let's start today's discussion.
+[01:56] The first thing is what a clipper is.
+[01:59] A clipper means that you have to cut the waveform.
+[02:04] Above or below a particular level.
+[02:09] The level at which you have to cut the waveform,
+[02:14] that is called as the reference value.
+[02:17] What do you call it?
+[02:19] Reference value.
+[02:21] Suppose I made a circuit that cuts all the waveforms above 5 volts.
+[02:28] That is, it kills the waveforms above 5 volts.
+[02:32] So that sort of a circuit will be called as a clipper.
+[02:36] Now as you can see, it is a half wave rectifier.
+[02:39] So a half wave rectifier itself is also a clipper.
+[02:42] Why is it a clipper?
+[02:43] Because a half wave rectifier cuts the negative part of the waveform.
+[02:54] That is what happens in a half wave rectifier.
+[02:58] Did you understand?
+[03:00] Did you understand?
+[03:02] And what do clippers do?
+[03:04] They limit the voltage.
+[03:06] How do they limit?
+[03:08] As I said, delete all the waveforms above 5 volts.
+[03:12] So the final result you will get,
+[03:15] you will get values below 5 volts.
+[03:18] So what did you do?
+[03:20] You made a limit.
+[03:22] You stopped the waveform.
+[03:24] That it cannot go above the 5 volts.
+[03:30] So you made a limit on the waveforms and set an upper limit.
+[03:34] But don't think that clippers always set only the upper limit.
+[03:38] Clippers can also set the lower limit.
+[03:41] I can also make a clipper where I say that the final output graph cannot go below 10 volts.
+[03:50] If I say that the final output graph cannot go below the minus 10 volts,
+[03:56] then you fixed the lower limit there.
+[03:59] So you can fix the limit in both ways.
+[04:01] The upper limit and the lower limit.
+[04:04] Now to make a clipper,
+[04:06] which elements of the circuit do we need?
+[04:09] A battery, a diode, a resistance.
+[04:12] This battery comes in the work of setting the reference voltage.
+[04:17] What does it come in the work?
+[04:19] Reference voltage.
+[04:21] As I said, I explained the level of 5 volts.
+[04:24] I explained the level of 1 minus 10.
+[04:26] So on whose basis does this 5 and minus 10 decide?
+[04:29] On the basis of the battery.
+[04:31] The circuit of the diode will be diode.
+[04:33] What does the resistance look like?
+[04:35] For taking the output.
+[04:38] The output will come from your resistance.
+[04:41] Okay?
+[04:43] So that's why you have three elements compulsory.
+[04:45] The fourth thing is the input.
+[04:47] The input waveform that you want to clip,
+[04:50] the input waveform that you want to cut,
+[04:53] you will have to apply that input waveform.
+[04:56] Second thing,
+[04:58] if you consider that the reference voltage is zero,
+[05:01] like the rectifier cuts all the values below zero,
+[05:04] then you don't need to apply a battery.
+[05:07] If you don't apply a battery,
+[05:09] then your reference value becomes zero by default.
+[05:12] But if you apply a battery,
+[05:14] then you can set the reference value.
+[05:17] Now you will see it in the future slides,
+[05:19] in the future concepts.
+[05:21] Did you understand?
+[05:23] So two things are compulsory.
+[05:25] Diode and resistance.
+[05:27] If you want a reference non-zero,
+[05:29] then you will have to apply a battery.
+[05:31] And apart from this, there will be another input.
+[05:33] The waveform that we want to clip,
+[05:35] the waveform that we want to modify.
+[05:37] Did you understand what I said?
+[05:39] Rupankar, all the PDF of the lectures are uploaded.
+[05:43] Go to the community and see.
+[05:45] I think you don't check.
+[05:47] I mean before writing here,
+[05:49] before writing in the chat,
+[05:51] go to the community and check.
+[05:53] Because I remember that I have uploaded till the assignment.
+[05:55] I have six lectures,
+[05:57] six PDFs have been added.
+[05:59] And a child is saying that
+[06:01] he is not getting part 1 of PN Junction.
+[06:03] Go to Part 1 of PN Junction,
+[06:05] check in the playlist of Analog.
+[06:07] Six lectures are uploaded there.
+[06:09] I have checked yesterday.
+[06:11] What is the need to search when I have made a playlist.
+[06:13] But keep in mind that
+[06:15] all the lectures will be private tonight.
+[06:17] Tonight or tomorrow morning.
+[06:19] So if anyone has missed any lecture,
+[06:21] then take care of it today.
+[06:23] Because a lot of children are with us.
+[06:25] They are late.
+[06:27] That is why I said that
+[06:29] I will publish all the lectures for two days.
+[06:31] So that you can continue your life with us.
+[06:33] So that you can continue your life with us.
+[06:39] Okay.
+[06:41] Let's go ahead.
+[06:43] Now see how to classify clippers.
+[06:47] How do we classify clippers?
+[06:49] Single level clipper, two level clipper.
+[06:51] There are two in single level clipper.
+[06:53] Series and shunt.
+[06:55] In series and shunt,
+[06:57] there are both positive and negative.
+[06:59] Both are positive and negative.
+[07:01] Now they are saying that they didn't get it.
+[07:03] I will show you in just a minute.
+[07:17] Look at this.
+[07:19] We went on YouTube.
+[07:23] Okay.
+[07:25] We added creatrix here.
+[07:29] Okay.
+[07:31] We went on creatrix.
+[07:33] We went on playlist.
+[07:35] This is the playlist of analogue.
+[07:37] Viewful playlist.
+[07:39] This is it.
+[07:41] Basics of semiconductor.
+[07:43] Basics of pn junction part one.
+[07:45] Basics of pn junction part two.
+[07:47] Open circuit, short circuit test assignment discussion.
+[07:49] Now tell me.
+[07:51] Where is it missing?
+[07:53] You say like this without checking.
+[07:55] You have read all the lectures.
+[07:57] You have read all the lectures.
+[07:59] This is the problem.
+[08:01] You will not check.
+[08:03] You will come before complaining.
+[08:05] You didn't get this thing.
+[08:07] You didn't get this thing.
+[08:09] Everything is there.
+[08:11] Okay.
+[08:13] These are the classifications of your clippers.
+[08:15] Single level clipper and two level clipper.
+[08:17] In single level clipper
+[08:19] there are two in series and shunt.
+[08:21] There are two in series and shunt.
+[08:23] There are two in series and shunt.
+[08:25] positive, negative, positive, negative.
+[08:27] Okay then.
+[08:29] We will start with single level clipper.
+[08:31] Then we will go to two level clipper later.
+[08:33] The meaning of two level clipper is that there are
+[08:35] two reference values.
+[08:37] As I said that the voltage can not be reached
+[08:39] above 5 volt.
+[08:41] And minus 10 can also not reach below.
+[08:43] Then I have set two levels.
+[08:45] 5 and minus 10.
+[08:47] So if you set 5 and minus 10
+[08:49] then that is a two level clipper.
+[08:51] That is a two level clipper.
+[08:53] Now they are saying that they didn't get the PDF of the assignment.
+[08:57] Wait a minute, wait a minute.
+[09:09] Yes, the PDF of the assignment hasn't been sent.
+[09:12] Maybe the error has been uploaded.
+[09:14] Here, I am putting it right now.
+[09:16] There weren't any new questions in the assignment anyway.
+[09:20] Okay?
+[09:22] All of them were old.
+[09:27] Now my brother, if you disturb me, I will turn off the chat again and again in the setting.
+[09:31] Okay? Then you won't be able to chat.
+[09:33] And Giten, son, is on this channel with the HPCL's full revision.
+[09:37] For that, there is no need to do anything separately for the HPCL.
+[09:41] Second thing, there are very few children who are preparing for the HPCL.
+[09:44] There are not even many students interested in the HPCL.
+[09:49] Okay? Let's go.
+[09:51] Yes, first of all we are coming to the series negative clipper.
+[09:55] The series negative clipper means that the diode is placed in the series.
+[09:59] Do you see? The diode is placed in the series.
+[10:02] And the second thing is that the diode is clipping your negative cycle.
+[10:08] It will cut the negative part of the waveform.
+[10:11] That is the series negative clipper.
+[10:14] What does the series negative clipper mean?
+[10:16] What does it mean? The diode is connected in series with the supply.
+[10:19] And the negative clipper means that the clip is the negative part of the waveform.
+[10:31] The clip is the negative part of the waveform.
+[10:38] Now let's assume that the ideal diode is here.
+[10:41] We will assume the ideal diode as the analysis.
+[10:45] Now look at the diode.
+[10:47] Now the supply positive is connected to the anode of the diode.
+[10:52] And the diode cathode is connected to the negative.
+[10:56] The diode cathode is connected to the negative.
+[10:59] Now what will I say children?
+[11:01] If this VI is positive, then this polarity is correct.
+[11:07] Do you understand?
+[11:08] Like in this polarity, I write minus 5 volts.
+[11:11] That is, the polarity is wrong.
+[11:13] You said that if the VI is positive, then this polarity is correct.
+[11:18] If the VI is positive, then this polarity is correct.
+[11:21] Because of which the diode will be forward biased.
+[11:25] Look at what you have written.
+[11:27] Diode is forward biased when VI is greater than zero.
+[11:30] Now if the diode is forward biased, then what will you consider as a shorted diode?
+[11:37] If the diode is shorted, then the V0 will come out to be equal to VI.
+[11:47] The V0 will come out to be equal to VI.
+[11:51] Is that clear?
+[11:52] Now if the VI is negative after this,
+[11:56] VI negative means to flip its polarity.
+[12:00] It means to flip its polarity to be negative and positive.
+[12:05] If the VI is negative, then reverse its polarity.
+[12:09] Then negative will come here and positive will come here.
+[12:12] If this happens, then the diode will be reverse biased.
+[12:16] So diode is reverse biased when VI is equal to zero.
+[12:19] In such a situation, you will make the diode open circuit.
+[12:25] What will you do?
+[12:26] Open circuit.
+[12:27] My children, while doing open circuit, this current will come to zero.
+[12:34] The reason for which the voltage of resistance has also come to zero.
+[12:39] So when VI was positive in the positive cycle,
+[12:43] then the output was coming to be equal to the input.
+[12:46] And when VI was negative, then the output came to zero.
+[12:50] Do you understand?
+[12:52] Yes.
+[12:53] So this is exactly what half wave rectifier happened.
+[12:56] Manthan is absolutely correct.
+[12:58] So this is what I have written.
+[12:59] Half wave rectifier is also a clipper.
+[13:02] Now look, there is one thing that is very important in clippers.
+[13:09] That is the transfer characteristic.
+[13:11] What is the transfer characteristic?
+[13:14] This graph is made between V0 and VI.
+[13:18] Now look, VI is taken on X axis.
+[13:23] So VI is positive, which means right half.
+[13:27] VI is negative, which means left half.
+[13:30] So the positive of VI is of the right half.
+[13:35] And the negative of VI is left half.
+[13:43] Now you said that when VI is positive, then V0 is equal to VI.
+[13:49] That is, Y is equal to X.
+[13:51] What is Y equal to X?
+[13:53] There is a straight line whose slope is 1.
+[13:57] Y is equal to X is a straight line.
+[13:59] A straight line of slope is equal to 1.
+[14:03] V0 is equal to VI.
+[14:10] And look at this.
+[14:12] When diode reverse bias is VI, when it is negative, then diode is open.
+[14:18] So V0 will be zero.
+[14:20] V0 will be zero.
+[14:22] So this is what happened.
+[14:26] So this characteristic was clear.
+[14:28] When your VI is negative, then V0 is zero.
+[14:33] When VI is positive, then V0 is equal to VI.
+[14:37] If you want, then you can also make VI a sinusoidal waveform.
+[14:43] Okay?
+[14:45] You can also make a graph of VI first.
+[14:54] Say like this.
+[15:18] You say that VI is a sinusoidal waveform.
+[15:23] I am making this graph against time.
+[15:27] I have given you a waveform of VI against time.
+[15:32] Now what do I say?
+[15:34] If you want to see the waveform of V0, then when VI is positive, then your V0 will be equal to VI.
+[15:45] And when VI is negative, then V0 will be zero.
+[15:51] Then your V0 will be zero.
+[15:53] So look, the same as VI in a positive cycle.
+[15:57] When VI is negative, then zero is zero.
+[16:01] Then the same as VI in a positive cycle.
+[16:04] So this is your first clipper.
+[16:06] That is the series negative clipper.
+[16:09] Okay? Series negative clipper.
+[16:12] So here it is in the diode series and its negative waveform is clipped.
+[16:19] Did you understand the matter?
+[16:22] Did you understand the matter?
+[16:25] Yes.
+[16:27] It is clear, isn't it?
+[16:29] Now look, we have cleared this first example well.
+[16:32] Now let's talk about the rest of the examples.
+[16:34] Let's take the next example.
+[16:36] Positive bias series negative clipper.
+[16:40] Put negative here.
+[16:42] Now look what I have changed.
+[16:44] Now I have put a battery.
+[16:46] I have put a reference voltage.
+[16:48] I had said, why is the battery set to set up the reference?
+[16:52] That you have to click on the voltage above or below.
+[16:56] So this is your reference.
+[17:00] Now look, I will make you basic.
+[17:03] Suppose I say, use open circuit test here.
+[17:07] So what have you done to the diode?
+[17:09] Open it.
+[17:11] This is the voltage of the diode, VD.
+[17:15] Okay? It is VD.
+[17:16] Now look here, dear.
+[17:18] If you look carefully, then the current cannot go here.
+[17:22] Because there is an open circuit.
+[17:24] So the current is going to come to zero.
+[17:27] If your current is going to come to zero,
+[17:29] then the voltage across the resistance will also come out to be zero.
+[17:35] That will also come out to be zero.
+[17:39] So what will be V0 here?
+[17:44] V0 will come out to be VR.
+[17:47] V0 will come out to be VR.
+[17:50] So what will be the voltage of the diode?
+[17:52] If you put a KVL,
+[17:55] if you put a KVL of this type here,
+[18:00] then you will say VI minus VD minus zero minus VR is zero.
+[18:09] So VD came out to be input minus reference.
+[18:14] Correct?
+[18:15] Now what do you know, dear?
+[18:17] That the diode will be reverse bias if its voltage is negative.
+[18:22] Okay?
+[18:23] Your diode will be reverse bias only if its voltage is negative.
+[18:34] That is VI less than VR.
+[18:39] If the input voltage is smaller than VR, then the subtraction will be negative.
+[18:44] Okay?
+[18:45] And the diode will become forward bias.
+[18:50] If VD is positive, then VI must be greater than VR.
+[18:58] Okay?
+[19:00] Now look, on this basis, let's do two cases here.
+[19:04] Case one, you are saying VI less than VR.
+[19:13] Now you have shown that the diode here is your reverse bias.
+[19:18] And when your diode is reverse bias, then it is behaving like open circuit.
+[19:23] And in this, you have written that V naught comes as VR.
+[19:27] Because the voltage of resistance becomes zero, then V naught is equal to VR.
+[19:33] V naught is equal to VR.
+[19:35] Case two, VI greater than VR.
+[19:43] Now you have said that the diode will be forward bias in this.
+[19:48] So we will do the diode short circuit.
+[19:52] Now look, when you do the diode short circuit, then what kind of circuit does it make?
+[20:01] This is VI.
+[20:12] Now look, when the diode short, then all the voltage of the supply will come across the output.
+[20:19] If there is a parallel connection, then V naught will become equal to VI.
+[20:24] Clear?
+[20:25] V naught will become equal to VI.
+[20:27] Now if I go to make a transfer characteristic from this logic.
+[20:32] If I go to make a transfer characteristic from this logic.
+[20:41] Pay attention.
+[20:44] Okay?
+[20:47] V naught VI.
+[20:50] Okay?
+[20:51] Now the threshold of VI is written as VR.
+[20:55] How much threshold is written on VI is VR.
+[20:58] If VI is below VR, then how much is the output coming?
+[21:02] VR.
+[21:03] How much is the output coming?
+[21:04] VR.
+[21:05] So look, let me do one thing.
+[21:07] I make a level of VR like this.
+[21:10] Even in the output.
+[21:11] And I make a level like this even in the input.
+[21:16] Okay?
+[21:18] Now look, what we are saying is that this is VR.
+[21:23] And this is also VR.
+[21:26] Now we are saying that when VI is smaller than VR.
+[21:31] When VI is less than VR.
+[21:34] That is, it is left from VR.
+[21:36] So V naught is coming equal to VR.
+[21:39] So V naught is constant.
+[21:41] It is equal to VR.
+[21:43] Here it is.
+[21:46] This V naught is my constant.
+[21:49] Okay?
+[21:50] It is equal to VR.
+[21:52] Now I am saying that when VI is bigger than VR.
+[21:56] When you go here, that is, VI is greater than VR.
+[22:02] So a straight line is coming.
+[22:04] V naught is equal to VI.
+[22:06] So a straight line is coming.
+[22:08] And slope 1.
+[22:10] When the output and input are equal.
+[22:13] Y and X are equal.
+[22:15] Then a straight line will be formed.
+[22:17] The slope of which will be 1.
+[22:19] So look, I make a straight line here.
+[22:22] The slope of which is 1.
+[22:24] Do you understand?
+[22:26] Tell everyone quickly.
+[22:28] Is this clear?
+[22:30] Transfer characteristic.
+[22:32] Sir, how do you know that it will start from this point?
+[22:35] Dear, it is starting from this point.
+[22:37] Because according to slope 1 on VR.
+[22:40] What is the output?
+[22:42] When Y is equal to X.
+[22:44] V naught is equal to VI.
+[22:46] So when the value of VI is VR.
+[22:48] Then V naught will also be VR.
+[22:50] So it will be from this point.
+[22:51] VR, VR.
+[22:53] VR, VR.
+[22:55] Is this clear?
+[22:57] Now if you consider input as a sinusoidal.
+[23:03] If you take a sinusoid input.
+[23:08] I am making you a waveform.
+[23:10] So that you understand how clipping is happening.
+[23:14] Here you will feel the actual clipper.
+[23:18] Okay.
+[23:20] Now look, I will make half cycle of the sign.
+[23:35] I am taking the width of it.
+[23:38] This is another half cycle.
+[23:42] And this much will come in another half cycle.
+[23:50] This is the amplitude of it.
+[24:04] The horizontal yellow lines I am making.
+[24:07] Orange lines.
+[24:08] This is the amplitude.
+[24:10] Okay.
+[24:11] Now look, the supply is purely sinusoidal wave.
+[24:15] You can take a triangle or a square to take it.
+[24:18] Don't think that you have to take a sinusoidal.
+[24:20] You have made this.
+[24:22] This is my supply.
+[24:24] The supply can be shaped in any way.
+[24:26] Not necessarily sinusoidal.
+[24:28] Now it is more than sinusoidal.
+[24:30] We consider ourselves as sinusoidal.
+[24:32] Now you have made a reference voltage.
+[24:36] You have made a reference voltage.
+[24:39] Keep the reference voltage less than the peak.
+[24:42] Otherwise the input will never be able to cross it.
+[24:45] Have you made a reference?
+[24:47] Now according to the reference,
+[24:52] you have plotted the intersection below.
+[24:58] Okay.
+[25:04] These intersections have come.
+[25:07] Look, wherever the pink curve is intersecting,
+[25:10] everyone is understanding.
+[25:12] This intersection has brought it down.
+[25:15] Now what am I saying?
+[25:17] Let me make a sinusoidal graph before the light color.
+[25:23] This is my graph.
+[25:30] This type.
+[25:32] Now what are we getting in the output?
+[25:34] We are saying that when the input will be more than the Vr,
+[25:38] when the input will be more than the Vr,
+[25:40] then the output will be like the input.
+[25:43] Okay.
+[25:45] This is your Vr.
+[25:51] When the input will be more than the Vr,
+[25:53] then the output will be like the input.
+[25:55] So look.
+[25:58] Whenever you go above the Vr,
+[26:01] the output will be like the input.
+[26:04] What else am I saying?
+[26:06] When you go below the Vr,
+[26:08] the output will be like the input.
+[26:11] When you go below the Vr,
+[26:13] when you go below the Vr,
+[26:15] then the output Vr will come.
+[26:18] When you go below the Vr,
+[26:20] that is, below the pink line,
+[26:22] then the output will come out to be Vr.
+[26:26] Am I saying this?
+[26:28] Okay.
+[26:29] So look, the output will come out to be Vr.
+[26:32] So you can say one way,
+[26:34] that the waveform below the Vr,
+[26:37] you have deleted it.
+[26:40] Do you understand?
+[26:42] You have deleted the waveform below the Vr.
+[26:45] Now your graph will be above the Vr or Vr.
+[26:50] Vr or Vr will be above the Vr.
+[26:57] Do you understand?
+[26:59] Now the significance of the clipper is that
+[27:02] the entire graph below the Vr,
+[27:04] look, the entire yellow graph
+[27:06] has been clipped.
+[27:08] It has been deleted.
+[27:10] So now the output will come to you,
+[27:12] that will always stay above Vr.
+[27:14] Okay. That will always stay above Vr.
+[27:17] When we say negative clipper,
+[27:19] then the significance of negative clipper is
+[27:21] to clip a graph below a value.
+[27:24] For example, if we clip a graph below the Vr,
+[27:27] then when you clip the waveform
+[27:29] below a certain value,
+[27:31] that is your negative clipper.
+[27:34] Okay.
+[27:35] It is called positive bias because
+[27:37] the reference value is positive.
+[27:40] Okay. The reference value is positive.
+[27:43] Now see what I did here.
+[27:46] I changed the polarity of the reference voltage.
+[27:51] I changed the polarity of the reference voltage.
+[27:55] So now I will say it as negative bias.
+[27:58] Why negative bias?
+[28:00] Because I have reversed the polarity of the reference.
+[28:04] Okay.
+[28:07] Polarity of reference voltage is reversed.
+[28:23] Okay.
+[28:27] Now see, the previous one you did the open circuit test.
+[28:30] Now what do we do?
+[28:32] We do the short circuit test.
+[28:34] We do the short circuit test.
+[28:52] What should we do this time?
+[28:54] Should we short the diode?
+[28:59] Turn on the diode.
+[29:02] And if it is an ideal diode, then we do the short circuit in the on state.
+[29:06] We will do the analysis of the clipper now.
+[29:09] We will do it by considering it as an ideal diode.
+[29:19] Okay.
+[29:22] Now we know what we have here.
+[29:25] It is V0.
+[29:26] And see this is clearly coming from the parallel combination
+[29:29] V0 is coming from the parallel combination.
+[29:31] V0 is coming from the parallel combination.
+[29:35] Now here, when you are doing the short circuit test,
+[29:39] then you will need current, okay?
+[29:43] We know that let's see the on and off of the current in the short circuit test.
+[29:47] If I talk about I here according to KVL,
+[29:51] then VI minus
+[29:55] minus VR by R.
+[29:57] So that is VI plus VR by R.
+[30:04] What happened?
+[30:06] VI plus VR by R.
+[30:08] Now we will say this, okay?
+[30:11] We will say that this current should be positive to turn on the diode, okay?
+[30:18] This current should be positive to turn on the diode.
+[30:22] So current must be positive for on.
+[30:29] For that, VI plus VR should be positive.
+[30:33] For which VI must be greater than minus VR.
+[30:38] And the diode will be off if the current is negative.
+[30:44] That is, VI less than minus VR.
+[30:48] So this time you are seeing that the threshold in VI is becoming minus VR.
+[30:53] Okay?
+[30:55] The threshold in VI is becoming minus VR.
+[30:57] That is why it is negative bias.
+[30:59] That is why what did I say?
+[31:01] Negative bias.
+[31:03] Now see, let's take two cases like before.
+[31:07] Case one.
+[31:10] VI greater than minus VR.
+[31:15] In this case, you said that our diode will turn on.
+[31:19] So the diode will be shorted.
+[31:23] Because of which V0 will come out to be VI.
+[31:27] That is, a straight line will come.
+[31:29] If I talk about the transfer characteristic of a Slope 1.
+[31:32] Second, you said that VI less than minus VR.
+[31:37] So your diode will be off.
+[31:40] That is why you will open it.
+[31:44] Now my brother, if you open the diode.
+[31:47] Then what kind of circuit will you see?
+[31:53] Is this VI?
+[32:02] Now while opening the diode, the current went zero.
+[32:07] The current went zero.
+[32:14] Here I is zero.
+[32:17] The reason for the voltage of resistance is zero.
+[32:22] Now if you look carefully here, then V0 is coming.
+[32:25] Minus VR.
+[32:26] Sir, how did you say minus VR?
+[32:28] Look, this is the negative terminal of VR.
+[32:31] Which has a positive connection to V0.
+[32:33] And from the positive of VR, there is a negative connection to V0.
+[32:38] Okay?
+[32:39] From the positive of VR, there is a negative connection to V0.
+[32:42] Is this clear?
+[32:44] Is this clear?
+[32:46] Positive from negative.
+[32:48] Negative from positive.
+[32:49] It is connected with this type.
+[32:50] Now Shivam Ji is asking, Sir, is this not from the open?
+[32:53] If I had made it from the open, then you would have asked.
+[32:57] Sir, is it possible to do all the Clippers from the open circuit test?
+[33:01] Is it possible to do it from the short circuit?
+[33:02] So this is what happened.
+[33:03] That the mind is not at peace anywhere.
+[33:05] Sir, I have made both of them test by test.
+[33:11] So that you have an idea that both of them can look the same.
+[33:15] As you wish.
+[33:16] Now look, when we will make its transfer characteristic.
+[33:20] Okay?
+[33:24] Now pay attention to this.
+[33:27] In both V0 and VI, you can see minus VR.
+[33:31] Isn't it?
+[33:33] So that's why the line is not this time.
+[33:35] Instead of VR, we make minus VR.
+[33:41] Look, this is the line of minus VR in VI.
+[33:52] And this is the line of minus VR in V0.
+[33:59] This is minus VR from here and this is minus VR from here.
+[34:05] Okay?
+[34:06] Both have become minus VR.
+[34:08] Now what do we say, dear?
+[34:10] When it comes to minus VR.
+[34:12] Look, when VI is bigger than minus VR, when you are here.
+[34:21] So you should get a straight line whose slope is 1.
+[34:26] V0 equal to VI.
+[34:28] There will be a straight line whose slope is 1.
+[34:32] Okay?
+[34:34] So look.
+[34:36] There is a straight line whose slope is 1.
+[34:45] And when you are behind it, dear.
+[34:48] VI is less than minus VR.
+[34:52] Then V0 should come.
+[34:54] How much is equal to minus VR?
+[34:56] So now V0 will be constant equal to minus VR.
+[35:00] This is done.
+[35:02] Okay?
+[35:03] This is your transfer characteristic.
+[35:05] Now if we want to show it graphically.
+[35:09] If we want to show it graphically, then I will do one thing.
+[35:13] Look, let's copy this slide.
+[35:17] Will we modify this?
+[35:21] Where is the slide?
+[35:23] Where is the slide?
+[35:30] Come on.
+[35:32] Okay?
+[35:34] Now instead of VR, what reference value do we have to take?
+[35:38] We have to take minus VR.
+[35:40] Okay?
+[35:50] Okay?
+[35:55] This time the reference value we will take, dear.
+[35:58] We will take minus VR.
+[36:07] This is done.
+[36:09] Okay?
+[36:11] This is the reference value.
+[36:14] Minus VR.
+[36:24] Okay?
+[36:26] Now this minus VR intersection you have taken from here.
+[36:32] This is one intersection.
+[36:35] This is the second intersection.
+[36:40] Okay?
+[36:42] Come on.
+[36:43] You have pulled these two intersections down.
+[36:45] Now what are you saying, dear?
+[36:47] Whenever your graph will be above minus VR.
+[36:52] When the input will be above minus VR.
+[36:55] Then the output will be V0 equal to VI.
+[36:59] V0 equal to VI.
+[37:01] Okay?
+[37:02] So minus VR is here.
+[37:04] Whenever you go above this, the input and output will be the same.
+[37:09] So whenever you go above this, the output will be same as input.
+[37:14] Look at this.
+[37:16] I am tracing the same graph.
+[37:18] But only above this.
+[37:20] And whenever you try to go below minus VR.
+[37:25] Whenever you try to go below minus VR.
+[37:29] The output will be constant on minus VR.
+[37:33] The output will be constant on minus VR.
+[37:38] This is here.
+[37:41] Do you understand?
+[37:42] So what happened this time, dear?
+[37:44] The cut of the bottom of minus VR.
+[37:46] So this is also a negative clipper.
+[37:48] But what is its threshold?
+[37:50] Minus VR.
+[37:51] What is its threshold this time?
+[37:53] Minus VR.
+[37:55] Now tell me, is everyone clear?
+[37:58] Is everyone clear?
+[38:01] Then I will go to the next clipper.
+[38:02] If anyone has any doubt, then write it in the chat.
+[38:10] Then I will read the next clipper.
+[38:12] Because you have already cleared the concept.
+[38:14] Now you have already known that with open circuit or short circuit test,
+[38:18] any clipper analysis can be done.
+[38:21] Jyoti ji is saying, sir.
+[38:22] You said in the diode part, in the diode current, AC DC supplies a lot.
+[38:26] Why do they give?
+[38:27] I did not understand.
+[38:28] Explain that.
+[38:29] Dear, why does this not make sense?
+[38:31] What happens here?
+[38:32] There is a small signal analysis.
+[38:34] What happens in the small signal analysis in the diode?
+[38:37] Like I had taken an example of the remote.
+[38:39] The battery in the remote is your biasing.
+[38:42] It is on the remote.
+[38:44] And the button you are pressing is the signal on which your remote works on the basis.
+[38:49] In such analog, whether it is BJT, diode, O-Pamp,
+[38:53] the DC supply in it works.
+[38:56] It has to be brought into the working.
+[38:58] It has to be turned on.
+[38:59] And then the AC works like an input signal.
+[39:03] Like you will make an amplifier from BJT.
+[39:05] So the DC bias will turn on the amplifier.
+[39:08] And the signal that will be amplified will be AC.
+[39:12] The signal that will be amplified will be AC.
+[39:16] So AC signal is modified.
+[39:18] AC signal goes to the output.
+[39:20] And the AC signal helps in getting the desired form.
+[39:25] That is DC.
+[39:27] The device will not start without DC.
+[39:29] If you remove the cell from the remote,
+[39:31] then no matter what button you press, it does not make any difference.
+[39:34] No matter what button you press, it does not make any difference.
+[39:37] Jayesh is saying that he will have to do such a long process.
+[39:40] Or there is a shortcut.
+[39:42] In the exam, it is not that you have to do all the analysis.
+[39:45] You have to make a transfer characteristic.
+[39:47] Then you take its output and show it.
+[39:49] Then draw the graph of sinusoidal.
+[39:51] Why is it long?
+[39:52] Because it is long.
+[39:53] Because we are doing a lot of things.
+[39:56] We are doing a lot of things in it.
+[39:58] I will ask you a question in the exam.
+[40:01] I will do it at the end of the session.
+[40:03] And you will see that quickly things will be made.
+[40:05] Okay?
+[40:06] Let's go.
+[40:08] Let's come to the next.
+[40:09] Positive Clipper.
+[40:10] What does positive clipper mean?
+[40:12] In one way.
+[40:13] Clips.
+[40:14] Clips.
+[40:16] Above a certain value.
+[40:18] Till now, you were cutting the lower one.
+[40:20] You will say in the positive clipper.
+[40:22] Clips above a certain value.
+[40:27] Now see, I will bring the open circuit test again.
+[40:30] Right?
+[40:32] I will make this one with the open circuit test.
+[40:39] Your wish is open circuit or short circuit.
+[40:42] Now when you will make the open circuit test.
+[40:50] So here comes VI.
+[40:57] Okay?
+[41:03] We have opened this diode.
+[41:13] Now see one thing.
+[41:15] As soon as you open it, the current is zero.
+[41:19] Because of which V0 will come out to be zero.
+[41:22] Now what will happen here?
+[41:25] Take the polarity of the diode like this.
+[41:28] Okay?
+[41:29] Take the polarity of the diode like this.
+[41:32] How?
+[41:33] Positive on anode and negative on cathode.
+[41:35] Now if you put KVL like this.
+[41:39] Like this.
+[41:40] So you will say zero.
+[41:42] Minus VD.
+[41:44] Minus VI.
+[41:46] Equal to zero.
+[41:47] So your diode voltage is gone.
+[41:49] Minus VI.
+[41:51] Right?
+[41:52] Minus VI.
+[41:53] Now what will you say here?
+[41:56] That the diode will be on.
+[41:59] If the VD is positive.
+[42:02] That is, if the VD is positive.
+[42:04] That means the VI is negative.
+[42:07] And my diode will be off.
+[42:10] If the VD is negative.
+[42:13] That means the VI is positive.
+[42:17] The VI is positive.
+[42:20] Okay?
+[42:22] This is clear.
+[42:23] So VI is off in positive.
+[42:26] And VI is on in negative.
+[42:30] Now let's do two cases like before.
+[42:38] VI is negative.
+[42:41] So you are saying the diode will be on here.
+[42:45] On means the diode will become short.
+[42:50] If the diode is short, how will the circuit be?
+[42:53] Look at this.
+[42:54] Look at this.
+[43:06] It will be like this.
+[43:07] We have shorted the diode.
+[43:10] Now look at this.
+[43:12] How much is the V naught?
+[43:15] Because they are parallel connected.
+[43:17] V naught and VI.
+[43:18] So V naught is equal to VI.
+[43:20] Okay?
+[43:21] V naught will be equal to VI.
+[43:23] Case two.
+[43:27] Now you said that if the VI is positive.
+[43:31] So the diode will turn off.
+[43:35] And if the diode is off.
+[43:37] Then it will become an open circuit.
+[43:41] And the current in the open circuit was zero.
+[43:43] So the V naught will also be zero.
+[43:46] The output will also be zero.
+[43:48] Okay?
+[43:49] Now what will happen here?
+[43:54] Let me see.
+[43:55] There are a lot of vales in our class.
+[43:57] Who have all the questions apart from the concept in their mind.
+[44:04] Okay?
+[44:05] Then the lecture will be private.
+[44:07] Then sit down.
+[44:08] Right now everything is going on apart from the lecture in your mind.
+[44:12] Now look, we are saying that when VI is less than zero.
+[44:16] When VI is less than zero.
+[44:19] So what is the output?
+[44:20] It is equal to VI.
+[44:21] That means here.
+[44:25] And when VI is greater than zero.
+[44:27] Then the output is zero.
+[44:32] So look, when VI is less than zero.
+[44:34] Then V naught is equal to VI.
+[44:36] There is a straight line of one slope.
+[44:38] And when VI is positive.
+[44:40] Then the output is zero.
+[44:42] So this is done.
+[44:48] Okay?
+[44:49] The output is zero.
+[44:52] The output is zero.
+[44:56] In the first case.
+[44:57] Because VI is negative.
+[44:58] The polarity will not be reversed.
+[45:00] You can do it.
+[45:01] You can do it minus plus.
+[45:03] Then you will say that V naught is minus VI.
+[45:05] But you have already considered VI as negative.
+[45:09] You think it will get very confusing.
+[45:11] When the polarity will be reversed.
+[45:13] Minus plus.
+[45:14] Then the value of VI will have to be positive.
+[45:17] Think about it.
+[45:18] If I put minus plus here.
+[45:20] Then I will say positive to the value.
+[45:22] Because I have assumed negative in the polarity.
+[45:25] So here if minus plus comes.
+[45:27] Then V naught comes.
+[45:28] Minus VI.
+[45:29] In which VI has to be considered positive.
+[45:31] So the confusion has increased a lot.
+[45:33] Okay?
+[45:34] The confusion has increased a lot.
+[45:36] Is it clear?
+[45:37] So this graph is clear.
+[45:39] Now on the basis of this.
+[45:40] If we look at waveform.
+[45:46] Okay?
+[45:47] If we look at waveform.
+[46:13] Now look at this to divide the sign.
+[46:15] In the interval of pi.
+[46:22] Pi then 2 pi.
+[46:25] Then 3 pi.
+[46:26] Let's make it up to 3 cycles.
+[46:31] Okay?
+[46:32] Now after this its amplitude.
+[46:36] The amplitude of the sign is also low.
+[46:46] And this is the amplitude of the output.
+[46:58] Okay?
+[47:00] Now make a sign in the input.
+[47:03] In a good way.
+[47:04] Okay?
+[47:13] You made a sign in the input.
+[47:16] Okay?
+[47:17] And make a reference in the output.
+[47:21] Sign.
+[47:23] Which you can trace.
+[47:27] Do you understand?
+[47:29] I made it with light color.
+[47:34] Okay?
+[47:44] Now see because this graph will work.
+[47:46] Multiple times.
+[47:47] So let's save this.
+[47:48] Come on.
+[47:49] Now look at this.
+[47:50] What is your graph?
+[47:52] What is the transfer characteristic here?
+[47:54] This says when the VI is positive.
+[47:57] Then take the output as 0.
+[48:00] When the VI is positive.
+[48:01] Then take the output as 0.
+[48:04] This is what you are saying.
+[48:06] Then take the output as 0 in the positive.
+[48:21] Okay?
+[48:22] And when you said when VI is negative.
+[48:27] Listen carefully.
+[48:28] When VI is negative.
+[48:29] Then take V naught and VI equally.
+[48:32] When VI is negative.
+[48:34] Then take V naught and VI equally.
+[48:40] Then you traced it as it is.
+[48:44] Okay?
+[48:45] You traced it.
+[48:47] Now look at this.
+[48:48] What happened in this?
+[48:49] The positive cycles seen in this.
+[48:51] They are clipped.
+[48:52] That is why it was called a positive clipper.
+[48:55] It clipped the graph from 0 to the top.
+[48:58] It cut it completely.
+[49:00] That is why it is a positive clipper.
+[49:03] Did you understand?
+[49:04] We did it with the open circuit test.
+[49:07] Okay?
+[49:08] We did it with the open circuit test.
+[49:11] Is it clear?
+[49:13] Sir, please share the notes on time.
+[49:15] If you don't share the notes on time.
+[49:17] It was a lecture.
+[49:18] OC test and SC test.
+[49:20] It was a delay.
+[49:21] It was shared.
+[49:24] Come on.
+[49:25] It was clear till here.
+[49:27] Now let's come to positive bias.
+[49:30] Series positive clipper.
+[49:32] For positive bias.
+[49:34] This line will have to be long.
+[49:36] Okay?
+[49:37] Come on.
+[49:40] Okay?
+[49:41] This is our circuit.
+[49:43] What did we do this time?
+[49:44] Dear Rudresh.
+[49:45] Will you do the notes of the assignment discussion?
+[49:48] There are questions as it is the same that I have given you.
+[49:51] Now listen carefully.
+[49:52] What did you do here?
+[49:54] You put a battery here.
+[49:56] For VR.
+[49:57] What did you do here?
+[49:58] You put a battery for VR.
+[50:00] So you put a biasing.
+[50:02] And this battery is connected to positive polarity.
+[50:04] That is why positive bias.
+[50:06] What is this?
+[50:07] Positive bias.
+[50:10] Okay?
+[50:12] Now who should do this?
+[50:13] Should we do it with the short circuit test?
+[50:15] Come on.
+[50:16] The previous one was done with the open circuit.
+[50:17] That is why I am doing it with the short circuit test.
+[50:20] Is there any problem?
+[50:23] You can do it with anyone.
+[50:25] But what I am trying to show you.
+[50:27] If you have an open circuit test and a short circuit test.
+[50:31] Then you can make any question.
+[50:33] You can even do the clipper.
+[50:35] Now see what you have to do in the short circuit test.
+[50:38] You have to short the diode.
+[50:44] Okay?
+[50:45] It is fun.
+[50:46] Are all of you feeling analog or not?
+[50:48] Tell me.
+[50:52] Is this diode short?
+[50:56] Is this purely network analysis?
+[51:09] Now see here,
+[51:10] V naught is shining clearly.
+[51:11] Because of the parallel, it is VI.
+[51:16] How to take the current of diode?
+[51:18] From anode to cathode.
+[51:19] That is, right to left.
+[51:23] Now how will you write this current?
+[51:31] Now what will you say?
+[51:33] Is it not?
+[51:34] Now what will you say that the diode will be on if the current is positive?
+[51:39] We will say that the diode will be on if the current is positive.
+[51:47] That is,
+[51:49] VI less than VR.
+[51:52] Okay?
+[51:53] When VI is smaller than VR, then the current will be positive.
+[51:57] And the diode will be off
+[52:01] when the current is negative.
+[52:05] That is, VI is greater than VR.
+[52:10] VI is greater than VR.
+[52:12] So the diode is on.
+[52:13] We got VI less than VR.
+[52:15] And the diode is off when VI is greater than VR.
+[52:19] Now we say case one.
+[52:22] VI less than VR.
+[52:32] So the diode is on.
+[52:35] The diode is short.
+[52:37] And in this situation,
+[52:39] you are seeing that V naught is equal to VI.
+[52:43] Case two.
+[52:46] VI greater than VR.
+[52:50] So you know that your diode is off.
+[52:55] If it is off, it will be open.
+[52:59] Now I will open a diode and draw the circuit.
+[53:03] Look.
+[53:06] What will happen when the diode is open?
+[53:08] The input of the battery is disconnected from the circuit.
+[53:13] From one type.
+[53:19] Now the diode is off.
+[53:32] Now, when the diode is off,
+[53:34] then the current is zero.
+[53:37] If the current is zero,
+[53:38] then the voltage in the resistance is zero.
+[53:41] V naught is equal to VR.
+[53:43] What is V naught is equal to VR.
+[53:46] Vr.
+[53:49] Who is coming these days?
+[53:52] Come on.
+[53:53] Okay, so V0 is equal to Vr.
+[53:57] Now what do we do?
+[54:00] Now we draw the transfer characteristic, let's make the arrow a little thinner.
+[54:12] Now look at this, the threshold of VI is becoming VR.
+[54:16] The threshold of VI is becoming VR.
+[54:20] And the level of output is also becoming VR once.
+[54:24] So I drew the line of VR in both the input and output.
+[54:40] Now he is saying that when VI is bigger than VR, that is in the right,
+[54:46] when VI is greater than VR, then your output should be equal to VR.
+[54:52] Then your output should be equal to VR.
+[55:00] Look at this.
+[55:02] It is equal to VR.
+[55:07] And when, dear, VI is smaller than VR,
+[55:10] when VI is smaller than VR,
+[55:13] then what will happen?
+[55:14] Then V0 should be equal to VI.
+[55:17] Then V0 should be equal to VI.
+[55:22] So here a slope is equal to 1.
+[55:27] What does this mean, dear?
+[55:28] When VI goes above VR, whenever the input comes out of VR,
+[55:33] it will cut it.
+[55:35] It will try to keep it on VR.
+[55:38] What will it try?
+[55:39] To keep it at VR.
+[55:41] That is why it is a positive clipper.
+[55:43] Because it is cutting the value above VR.
+[55:46] I told you that the meaning of positive clipper is
+[55:49] to clip the waveform above a certain level.
+[55:52] That is your positive clipper.
+[55:56] Now you see what will be the impact on its waveform.
+[56:12] Now what do we have to take here, dear?
+[56:15] We have to take a VR.
+[56:18] Okay?
+[56:19] I have accepted this as VR.
+[56:22] Look at this.
+[56:25] This is VR.
+[56:29] Now we are saying that if it goes above VR,
+[56:33] then you should get the same graph.
+[56:35] When you go above VR,
+[56:37] you will get VR only.
+[56:39] You should get VR only when you go above VR.
+[56:42] Look, when the VI goes above VR,
+[56:45] V0 will become equal to VR.
+[56:48] Okay?
+[56:49] And when it stays below VR,
+[56:51] then it will be equal to VI.
+[56:54] So look, when it is below VR,
+[56:57] then this same graph is being traced.
+[57:02] And when it crosses VR,
+[57:05] then it will stop on VR.
+[57:07] Then it will stop on VR.
+[57:26] Okay?
+[57:27] It is made of this type.
+[57:28] So it has cut the entire waveform above VR.
+[57:32] Now what is it, sir?
+[57:33] Here, VD polarity is reversed.
+[57:35] So in VI less than VR,
+[57:37] V0 should be VR.
+[57:41] VI less than VR.
+[57:42] Look, the polarity of diode is reversed.
+[57:47] If the VI is small,
+[57:48] that is, the voltage of anode is small,
+[57:50] then the diode will be on.
+[57:52] If the diode is on,
+[57:53] then V0 and VI will not be equal.
+[57:55] How is there confusion in this?
+[57:57] Think about it.
+[57:58] If this voltage is small,
+[58:00] sorry, the cathode voltage is small,
+[58:03] the anode voltage is big,
+[58:04] then this means VI and V0 will be equal.
+[58:07] Why will VR come, V0?
+[58:09] Sir, V0 is equal to VI plus VR.
+[58:11] Why did not you get it from KVL?
+[58:14] How will you get VI plus VR from which KVL?
+[58:19] Jyoti, dear, the diode is open here.
+[58:21] I don't know the voltage of the open circuit.
+[58:24] So how will you put such KVL from here?
+[58:26] Here, I am saying that the current is zero.
+[58:29] So the voltage of resistance is also zero.
+[58:33] Now, if you put KVL from V0,
+[58:35] then the drop of resistance is zero.
+[58:37] And VR, put KVL like this.
+[58:40] You want V0, right?
+[58:43] So tell me, how will you get VI plus VR?
+[58:48] Okay, go ahead.
+[58:51] This is clear.
+[58:52] It cut the entire waveform on the VR.
+[58:55] Now here, negative bias on the series positive clip.
+[58:59] Now you see this.
+[59:00] You reversed the polarity of the VR.
+[59:05] You have put the reverse reference voltage.
+[59:08] Right?
+[59:10] Now let's do it with open circuit test.
+[59:13] I did it with the previous shot.
+[59:26] Let's do it with open circuit test.
+[59:29] Now what will happen in this, that you will show the diode with open circuit.
+[59:52] This is done.
+[59:59] And look, to read the analog, the idea of network should be there.
+[60:03] Now if you are not clear about how KVL will look in a loop,
+[60:09] then the analog will become very tough.
+[60:12] When you are talking about the shot.
+[60:15] In the shot, tell me which path you are putting KVL on, Jyoti,
+[60:19] that you will get VI plus VR.
+[60:20] I have put KVL from this path, tell me.
+[60:24] How are you removing VI plus VR? Tell me.
+[60:29] I have put KVL from this path.
+[60:35] I don't know which KVL you are putting.
+[60:40] If I do one hour, then obviously it will take four months instead of two months.
+[60:44] Now in four months, you will lose your motivation in the analog.
+[60:48] That sir, it is going on and on.
+[60:51] Now look, here the voltage of the diode is gone.
+[60:55] Jyoti, once you read the KVL, my child, it looks like KVL in a loop.
+[61:00] You will put KVL somewhere like this.
+[61:04] What are you doing, dear?
+[61:05] If you are saying, if you assume VI at the point of R, then you agreed to ground here.
+[61:10] Then you said, here the voltage is gone, VI.
+[61:14] And according to the ground, there is also V0 here.
+[61:17] So V0 and VI are equal.
+[61:19] What will be VI plus VR?
+[61:22] What will be VI plus VR?
+[61:25] VI will come at the point of R, if you assume the ground here.
+[61:28] VI came.
+[61:29] And if you look from here, the V0 is coming at the point of R.
+[61:32] There are two voltages at one point.
+[61:34] Both should be equal.
+[61:35] So V0 is equal to VI.
+[61:37] If you ask how much resistance is there in the voltage of R, then you say, sir, there is ground here.
+[61:42] If there is VR here, then the voltage of resistance is VI minus VR.
+[61:46] But the output is complete, right?
+[61:48] The output is complete.
+[61:50] So VI comes at the point of R.
+[61:57] Now see, we did the open circuit test.
+[62:00] Now the current here is zero.
+[62:03] First thing.
+[62:04] If the current is zero, then the voltage of resistance is zero.
+[62:07] So how much will V0 come?
+[62:09] Minus VR.
+[62:12] V0 will come minus VR.
+[62:15] Okay?
+[62:16] Now I need the voltage of diode here.
+[62:19] Look, if you think that there is ground here, then there is minus VR here.
+[62:25] Because the voltage of resistance is zero, then there will be minus VR here.
+[62:29] And there will be VI here.
+[62:31] Even if you put KVL in the loop, otherwise you can do it like this.
+[62:34] So if you look at the voltage of the diode, there is minus VR on its anode and there is VI on the cathode.
+[62:40] So minus VR minus VI.
+[62:43] Now I say that the diode will be off.
+[62:47] If the VD is negative, then minus VR minus VI.
+[62:52] If it is negative, then VI is greater than minus VR.
+[62:58] Okay?
+[62:59] This is done.
+[63:00] I say that the diode will be on.
+[63:03] If the VD is positive, then minus VR minus VI.
+[63:08] If it is positive, then VI is less than minus VR.
+[63:15] Okay?
+[63:16] VI is less than minus VR.
+[63:19] Is this clear?
+[63:22] Is this clear?
+[63:24] And look, Jyoti, I will recommend you one thing.
+[63:27] Do a good network fundamental.
+[63:29] Because the network fundamental which you are making a mistake in KVL.
+[63:33] This means that the first few lectures of the network are completely blown up.
+[63:38] Because if that thing is not clear, then all these things will go up.
+[63:43] And look, case one, if you look, VI is greater than minus VR.
+[63:57] Here the diode was off.
+[64:00] You had opened it.
+[64:03] And your V naught was coming minus VR.
+[64:08] Case two, VI is less than minus VR.
+[64:16] The diode is on.
+[64:18] If it is on, then you will short the diode.
+[64:22] If you short the diode.
+[64:45] By shorting the diode, the entire VI comes across the terminal output.
+[64:51] Right?
+[64:52] You can see that the entire VI comes across the V naught.
+[64:56] So this type can be your output.
+[64:59] Just a minute.
+[65:03] Is this clear?
+[65:04] Now if we draw the transfer characteristic of it.
+[65:21] Now the level of reference is coming minus VR.
+[65:34] You can see it in the input and also in the output.
+[65:38] That is why your VR will come.
+[65:52] Yes.
+[66:10] Yes, now a child has come.
+[66:12] What did you say?
+[66:13] It must be Jyoti.
+[66:15] We were doing VI minus E in power electronics.
+[66:19] Today I was telling one thing in my class.
+[66:22] See, if there is no knowledge, it will work.
+[66:25] Even if the knowledge is complete, it will work.
+[66:27] The incomplete knowledge is very dangerous.
+[66:30] Now Jyoti knows that in power electronics,
+[66:33] in RE load, we do VI minus E.
+[66:36] But we don't know what value we do to get it.
+[66:39] We just do it.
+[66:40] Jyoti, once again look at the lecture of RE load of power electronics.
+[66:45] In RE load, you will have two outputs.
+[66:49] If there is VI, then there will be E somewhere.
+[66:51] This VI minus E is the voltage of thyristor.
+[66:55] This is the voltage of diode.
+[66:57] This is not the output voltage.
+[66:58] So check.
+[66:59] VI minus E is never in the output.
+[67:02] Either it was VI, sinusoidal graph or E.
+[67:06] So incomplete knowledge is very difficult.
+[67:09] Now see, when VI minus is greater than VR.
+[67:14] When VI is greater than minus VR, that is, it will be in the right.
+[67:20] Then V0 will come out to be minus VR.
+[67:25] Then your V0 comes to be minus VR.
+[67:28] Here it is.
+[67:32] And if.
+[67:36] If VI is less than minus VR.
+[67:40] If VI is less than minus VR.
+[67:43] Then V0 will come out to be equal to VI.
+[67:47] Okay?
+[67:48] So here the slope will be 1.
+[67:52] Okay?
+[67:54] Now we will make its waveform.
+[68:02] Okay?
+[68:07] What have we done?
+[68:11] This waveform.
+[68:23] Okay?
+[68:25] This is negative bias.
+[68:28] Now what are we saying?
+[68:30] We have to take reference minus VR.
+[68:32] What do we have to take?
+[68:33] Reference minus VR.
+[68:35] So see, we have taken minus VR.
+[68:51] Now you said, dear,
+[68:55] that when the input goes above minus VR, when VI is greater than minus VR,
+[69:01] then the value of V0 will be fixed on minus VR.
+[69:05] When VI will be above minus VR,
+[69:08] then the value of V0 will be fixed on minus VR.
+[69:13] Fix it.
+[69:18] So here the value of minus VR has been fixed.
+[69:22] Okay?
+[69:31] Here it is.
+[69:35] Okay?
+[69:36] It has been fixed on minus VR.
+[69:38] And when it is below,
+[69:40] when it is below, then VI only comes.
+[69:45] So now see what happened this time?
+[69:47] All the values above minus VR have been clipped.
+[69:51] All the values above minus VR have been clipped.
+[69:54] This is your negative bias series positive clipper.
+[69:59] Chamka, all of you.
+[70:01] What type of Chamka do you want to do?
+[70:03] Now let me show you some questions.
+[70:05] Look at this question.
+[70:07] Look at the question.
+[70:09] In the question, a circuit and a waveform for the input voltage is given.
+[70:13] The diode has a cut-in voltage zero, that is an ideal diode.
+[70:17] You have to tell the waveform of V0.
+[70:19] I will show you the polarity.
+[70:21] The polarity of 5 volts is above plus and below minus.
+[70:24] This resistance is 2.2 kilo ohms.
+[70:27] Here the voltage is VI.
+[70:30] How much is VI?
+[70:31] And here the waveform level is 20 or minus 5.
+[70:35] 20 or minus 5.
+[70:49] Brahmendra is saying D.
+[70:51] Vartika is saying D.
+[70:53] Tell others.
+[70:57] A R plus E.
+[71:03] Nitish, please don't give knowledge.
+[71:05] If it was A R plus E, you would have told the opposite wrong.
+[71:09] Right?
+[71:11] I am solving doubts by being Ushiar.
+[71:13] And the opposite doubt, you would have told the wrong thing.
+[71:16] That the child has done something wrong.
+[71:18] Yes, so the answer will be D.
+[71:20] Very good.
+[71:21] Now if you want to approach in the exam,
+[71:24] You don't remember this clip, you don't remember anything, what you have to do now is to open the diode.
+[71:31] You have opened the diode.
+[71:34] Now the current has become zero as soon as you open the diode.
+[71:39] So the voltage of this resistance has become zero.
+[71:42] So the V0 has come to 5.
+[71:45] Now let me tell you how much the voltage of the diode is.
+[71:50] V i minus 5.
+[71:56] So we say that the diode will be off if the voltage of the diode is negative, i.e. V i is less than 5.
+[72:06] Now the voltage of the diode is less than 5 in this region.
+[72:10] In this region, it is below zero, so it is below 5.
+[72:14] It is also below 5.
+[72:16] If it is below 5, then V0 should come to 5.
+[72:21] It is coming.
+[72:23] It is not coming anywhere else.
+[72:25] Now we will say that the diode will be on if the Vd is positive, i.e. V i is greater than 5.
+[72:34] V i is greater than 5.
+[72:38] If V i is greater than 5, then this region is 20.
+[72:43] Here it is bigger than 5.
+[72:45] If the diode is on, then the diode will be short.
+[72:48] And as soon as the diode is short, V0 will come out to be V i.
+[72:52] That is, if the V i was 20, then it will be 20.
+[72:56] So look here, it will be 20.
+[72:59] This type.
+[73:01] Solving it with a basic method will not take more than a minute.
+[73:07] And you will get a very correct answer.
+[73:09] So the answer will be D.
+[73:11] Now Nitish is saying that if the polarity of E in the rectifier is correct, then I have written I R minus E.
+[73:16] This is what happened.
+[73:18] As per the answer, we are making a question as to where an answer can fit.
+[73:22] Now tell me, this is a wrong thing.
+[73:23] This is a wrong thing.
+[73:26] Come on, look at this one.
+[73:29] He is asking about the transfer characteristic.
+[73:35] Here, you will see the input.
+[73:38] Everyone is going from minus 5 to 5 in the graph.
+[73:40] So he is basically saying that the input will go from minus 5 to 5.
+[73:44] So how will the output characteristic be?
+[73:49] What is coming? C is coming.
+[73:50] What is coming?
+[73:52] Yes, the answer will be C.
+[73:54] Look here, what should I do with the diode?
+[73:57] Open it.
+[74:00] So the current will be zero.
+[74:03] So the voltage of the resistance will be zero.
+[74:06] So V naught comes to 2.
+[74:08] Now in such a situation, what will be the voltage of the diode?
+[74:13] If you put KVL,
+[74:15] VI minus VDE minus zero.
+[74:21] So the voltage of the diode is VI minus 2.
+[74:25] We have to consider it open.
+[74:27] We have to consider it off.
+[74:29] When the voltage of the diode will be negative,
+[74:32] that is, VI less than 2.
+[74:34] In such a situation, how much is the V naught coming?
+[74:37] 2 is coming.
+[74:39] And the diode will be on.
+[74:41] When the voltage of the diode is positive,
+[74:43] that is, VI greater than 2,
+[74:46] then your V naught will come, VI.
+[74:48] Because when the diode is on,
+[74:51] then this will be short.
+[74:53] So there will be a straight line ahead of 2,
+[74:56] whose slope will be 1.
+[74:58] And 2 will be the output behind 2.
+[75:00] So look, 2 is the output behind 2.
+[75:03] The output is fixed here before 2.
+[75:05] And in front of 2, it is a straight line of slope 1.
+[75:09] How do I know that there is a slope 1?
+[75:11] 5 to 5 is getting.
+[75:13] So the slope is 1.
+[75:15] 5 to 5 is getting.
+[75:16] Let's see the next one.
+[75:18] If the cut-in voltage of the diode is 0.7,
+[75:22] plot the transfer characteristic.
+[75:24] Now we have given the cut-in voltage, son, 0.7.
+[75:28] I will give you a little hint too,
+[75:30] so that your effort is saved.
+[75:32] Son, what to do?
+[75:34] First remove the fan of this much part.
+[75:37] I told you, where the battery and resistance are seen,
+[75:41] convert it into fan.
+[75:43] The effort will be saved a lot.
+[75:47] Son, why should I get one test done?
+[75:51] Abhishek, because you should tell me this.
+[75:53] Tomorrow the second child will say,
+[75:55] Sir, I don't know how to have fun with that,
+[75:57] just do it with that.
+[75:59] Someone will say, Sir, I don't know how to have fun with that,
+[76:01] just do it with that.
+[76:03] That is why I am doing it with both of them.
+[76:05] Brother, they are teaching a little for one child.
+[76:07] It depends on which child will give preference to which test.
+[76:10] You can follow whatever you like.
+[76:16] 1.
+[76:18] 2.
+[76:20] 3.
+[76:24] 4.
+[76:26] Is it worth this?
+[76:28] Is it worth when you remove,
+[76:30] then
+[76:42] 1 parallel to, i.e. 2 by 3 kilo, right? Because while removing the RTH, we also short the voltage source.
+[76:54] Reference voltage is V I, right? V I will vary it to make a transfer characteristic.
+[77:02] If i give the value of V I, then what will be left?
+[77:14] Can't see.
+[77:16] Hey bro, can you see the world? Can you see it?
+[77:21] Love one, V naught.
+[77:46] Let's redraw its circuit based on what we removed.
+[78:16] Let's do one thing. Let's make the whole circuit first.
+[78:47] 5
+[78:53] Now see, you can apply open circuit or short circuit test on it.
+[78:58] Okay? You can apply open circuit or short circuit test.
+[79:02] Suppose you want to apply short circuit test on it.
+[79:08] In short circuit test, you will replace the diode with CVD model.
+[79:14] If you replace it with CVD model, then you will replace it with a battery.
+[79:38] Okay?
+[79:40] You gave 0.7, right? Cut-in voltage.
+[79:43] How much did you give?
+[79:49] If you look at its cut-in voltage, it is 0.7.
+[79:53] Okay?
+[79:55] Now what do I do? I take a current like this.
+[79:59] It came.
+[80:01] It is rotating like this.
+[80:03] How did I take the current? From the anode of the diode to the cathode.
+[80:07] The current should be in the same direction as the anode of the diode.
+[80:11] Now what will be the i?
+[80:15] V i minus 0.7 minus 5 by 1 plus 2 by 3.
+[80:25] V i minus 5.7 upon 5 by 3.
+[80:32] Now I will say that my diode will be on if V i is bigger than 5.7.
+[80:42] The current will be positive.
+[80:44] In such a situation, what will be my V naught?
+[80:47] Look at V naught.
+[80:49] V i minus i into 1.
+[80:54] KVL is applied like this.
+[80:57] This current is i.
+[80:59] It is applied like this.
+[81:01] So V i minus 5 by 3.
+[81:12] So 5 by 3, 2 by 3, 2 by 3 upon 5 by 3.
+[81:16] So 0.4 V i plus 5.7 into 3 by 5.
+[81:23] So 1.14, 3.42.
+[81:27] It came.
+[81:29] Okay? This is the equation of V naught.
+[81:32] This is the equation of V naught.
+[81:34] Now you will say when will the diode be off when V i is less than 5.7.
+[81:42] In such a case, the diode will be open.
+[81:45] Now you open it.
+[81:59] My diode is open.
+[82:04] This is 1.
+[82:06] Now look, no current can flow in this circuit.
+[82:09] No current can flow here because my diode is open.
+[82:14] If my current is 0 here, then the voltage of the resistance is also 0.
+[82:23] Then the voltage of V naught will be the same as V i voltage.
+[82:28] What will be V naught equal to V i?
+[82:31] V i less than 5.7 on V naught will be same as V i.
+[82:37] Tell me, is it clear till here?
+[82:40] And look at 5.7.
+[82:43] How much does this value come?
+[82:45] The first equation.
+[82:47] If V i is put 5.7 in it.
+[82:50] So look, 0.4 into 5.7 plus 3.42.
+[82:54] This will not give 5.7.
+[82:56] This will also give 5.7 on 5.7.
+[82:59] And this will also give 5.7 on 5.7.
+[83:03] That means it will be a continuous graph.
+[83:06] Threshold of both is 5.7.
+[83:10] The value of both is 5.7.
+[83:12] That means it is a continuous graph.
+[83:14] This is the left hand limit.
+[83:16] V i less than 5.7.
+[83:18] This is the right hand limit.
+[83:19] V i greater than 5.7.
+[83:22] It will come from practice.
+[83:27] Confidence.
+[83:28] I am doing the first numerical topic of my analog.
+[83:31] Before this, I have done an open circuit, short circuit test.
+[83:34] Now if you think in three questions that there is no confidence,
+[83:38] then what is done?
+[83:40] And the first two questions of the three of which we are doing a good question.
+[83:44] I agree.
+[83:45] But when you see the question, you will be able to make it.
+[83:50] Now if you ask a question for confidence, then it will be a lot of fun.
+[83:55] What is the benefit of that?
+[83:58] Now see my threshold is 5.7.
+[84:08] I took this.
+[84:10] Now below 5.7.
+[84:14] Look, below 5.7, this limit.
+[84:19] Below 5.7, your V naught is equal to V i.
+[84:24] Okay?
+[84:25] Below 5.7, V naught is equal to V i.
+[84:29] That means a straight line will come whose slope will be 1.
+[84:36] It will come like this.
+[84:37] Okay?
+[84:39] Now a straight line is coming above 5.7 whose slope is 0.4.
+[84:51] Whose slope is 0.4.
+[84:53] Dear, I have not studied the oscillator here yet.
+[84:56] I will study it only then that I can talk.
+[85:05] Okay?
+[85:06] This is done.
+[85:07] If the slope is reduced, then the come tilt came.
+[85:13] In series positive clipper, open circuit test, diode voltage polarity was equal to when diode conduct polarity.
+[85:20] When diode conduction, open circuit is it possible?
+[85:23] No, brother.
+[85:24] Let's assume a reference of diode that positive on anode, negative on cathode.
+[85:28] Now if this value comes positive, that means diode forward bias will be on.
+[85:33] If this value comes negative, then the polarity is reverse.
+[85:36] That means diode will be off.
+[85:38] But let's assume a reference.
+[85:40] When voltage is out in the network, then you assume first.
+[85:44] Then the answer is positive, then your assumption was right.
+[85:47] If the answer is negative, then your assumption was wrong.
+[85:50] But let's assume one assumption.
+[85:53] Let's see the next one.
+[85:55] We have to tell V naught.
+[85:57] We have given two input values.
+[85:59] One is 10 volts and one is 5 volts.
+[86:02] This means if V1 is taken as 10, then what will happen?
+[86:07] And if V1 is taken as 5, then what will happen?
+[86:13] Do this.
+[86:32] Suppose an ideal diode is not given until the voltage or resistance of the diode is cut.
+[86:47] The ideal diode will be the same.
+[87:02] Let's see.
+[87:05] Hmm.
+[87:31] What is C coming?
+[87:35] One is saying B is coming.
+[87:45] Then you are saying C is coming.
+[87:48] Let's see once.
+[87:50] See how I will start this diode.
+[87:53] Suppose this diode is open.
+[87:55] Think like an open circuit test.
+[87:58] Now if this diode is open, then the current will be zero here.
+[88:04] Okay?
+[88:06] So this whole series will come here.
+[88:09] Who will come?
+[88:10] In the series.
+[88:13] Which means you can take V naught out of the voltage division.
+[88:17] 10 into 2 by total resistance 6.
+[88:21] 20 by 6.
+[88:24] I want to know that here the voltage V is coming or V1, whatever it is.
+[88:31] And I want to know the voltage here.
+[88:34] V.
+[88:35] If I say V.
+[88:37] Then what will happen?
+[88:39] This is 2 and 2 across the total voltage.
+[88:42] That is 4.
+[88:44] So 20 divided by 3 volts.
+[88:47] Okay?
+[88:48] Now I say that 20 by 3 is coming.
+[88:51] So the voltage of the diode.
+[88:55] The voltage of the diode.
+[88:58] That is V i minus V.
+[89:00] Is it V i on one side or V i on the other side?
+[89:02] V i minus 20 by 3.
+[89:06] Now I say that my diode will be on.
+[89:10] If Vd is positive.
+[89:13] That is if V i is bigger than 20 by 3.
+[89:19] If my child is on the diode, then you will circuit the diode.
+[89:28] If you circuit the diode short, then such a circuit will be formed.
+[89:34] This is V not.
+[89:38] Okay?
+[89:39] So 20 by 2 is coming.
+[89:42] So 20 by 3 is coming.
+[89:44] Okay?
+[89:45] So 20 by 3.
+[89:47] Is it 20?
+[89:48] Yes, it is 20 by 3.
+[89:50] Then what will happen?
+[89:52] 20 by 3 is coming.
+[89:54] 20 by 3 is coming.
+[89:55] Okay?
+[89:56] So 20 by 3 is coming.
+[89:58] Okay?
+[89:59] So 20 by 3 is coming.
+[90:01] Okay?
+[90:02] Now see here the VI has come, so now if you see these two are always in the series, then you can apply the voltage division because the total voltage VI is at this point,
+[90:19] so 0.5 VI, this is done and when will the diode be off?
+[90:27] The diode will be off when the diode voltage is negative, i.e. VI is less than 20 by 3.
+[90:35] In this case, the diode is open and you have already removed the V0 in the open circuit case, 20 by 6.
+[90:44] Now look at the case 1, case 1 is 10, greater than 20 by 3, so the diode will be on, so V0 will be 0.5 VI, i.e. 5.
+[91:01] This is less than 20 by 3, the diode will be off.
+[91:06] When the diode is off, you removed the V0 20 by 6, so the answer should be A.
+[91:16] Not B, not C, many children were giving B, some were giving C, the answer will be A.
+[91:21] I can see A, Swati, Sai, Arjun, the answer will be A.
+[91:28] Okay, this is clear, how to do it?
+[91:31] Look, I am doing it with the basics, I am not applying a very high-five method.
+[91:36] Now do this.
+[91:38] This is saying that V gamma is 0.7, the input is varying from minus 10 to 10.
+[91:43] You have to make V0 versus VI, i.e. make the transfer curve.
+[91:48] Okay, thank you, if you liked the content I gave.
+[92:00] Now make it.
+[92:07] The input is varying from minus 10 to 10.
+[92:18] Okay.
+[92:49] Missing previous slide, please.
+[92:52] Take the previous slide.
+[93:00] Now this is written here, it is minus 10 to 10, so no question is hidden.
+[93:05] It is minus 10 to 10.
+[93:09] Now if you are doing the whole note-down, then obviously the lecture will be fast.
+[93:15] But when I am giving this PDF, there is no need to do the whole note-down.
+[93:19] If you are not giving it, then yes, there was a need to do the note-down.
+[93:45] The PDF goes to the community, right?
+[93:55] I will tell you at the end of this lecture, where will you get its link?
+[93:59] I will tell you at the end of this lecture.
+[94:01] First, pay attention to the question.
+[94:03] If you start becoming a question, then everything is right.
+[94:08] Should I start it?
+[94:14] Let me open it under the open circuit test.
+[94:19] I have opened it.
+[94:21] Now look at the voltage on its anode, it is VI.
+[94:25] It needs cathode.
+[94:27] Now do you know that when there are two voltage sources,
+[94:31] you have to take out the voltage of a node,
+[94:34] then you know how to use the superposition.
+[94:37] First, you should consider this as the ground.
+[94:42] I am saying this as V.
+[94:44] Then how will you write V?
+[94:46] It is above 10.
+[94:48] Put the voltage division, 20 by 20 plus 10.
+[94:54] Sir, why did you take 20 across?
+[94:56] Because I am taking this voltage in the respect of the ground.
+[94:59] The ground is below.
+[95:00] So what resistance is between V and the ground?
+[95:03] It is 20.
+[95:04] So I took out 20 across.
+[95:06] Now what do you do next time?
+[95:07] You should ground it next time.
+[95:10] Now you see which resistance is between V and the ground?
+[95:13] It is 10.
+[95:14] So take out 10 across because of minus 10.
+[95:18] So minus 10 volt, I have to take out 10 across from this.
+[95:24] 200 minus 100 is 100.
+[95:26] 100 by 30 is 10 by 3.
+[95:29] Okay, this came.
+[95:31] So I got V.
+[95:32] Did you understand?
+[95:33] I got V.
+[95:34] V itself is V naught.
+[95:36] V itself is your V naught.
+[95:40] So I am saying that if I check the diode voltage,
+[95:45] then VI minus V naught,
+[95:48] VI minus 10 by 3.
+[95:52] Now the diode will be off, kids.
+[95:55] If the diode voltage is negative,
+[95:59] sorry, not negative, I got it from 0.7.
+[96:02] Because I gave 0.7, the cut-in voltage of the diode.
+[96:05] So VI less than 10 by 3 plus 0.7.
+[96:11] That is VI less than 4.03.
+[96:17] Okay?
+[96:19] And when the diode is on,
+[96:22] when the VD is greater than 0.7,
+[96:26] that is VI greater than 4.03.
+[96:32] What will be the output in such a situation?
+[96:36] VI minus 0.7.
+[96:39] How do you know, sir?
+[96:41] Look, then you will replace the diode with a battery like this.
+[96:45] 0.7.
+[96:47] Here VI is the drop of 0.7.
+[96:49] So V naught will be VI minus 0.7.
+[96:52] Understood?
+[96:53] So when VI is smaller than 4.03,
+[96:57] then V naught is 10 by 3.
+[97:00] So you can say that this is the option.
+[97:03] So look, the threshold on VI is 4.03.
+[97:07] Here it is.
+[97:09] This is the option.
+[97:11] Look, the threshold on VI is 4.03.
+[97:14] And there is no such option.
+[97:16] Look carefully.
+[97:18] The limit on VI is 4.03.
+[97:21] Look, it is not visible in any option.
+[97:23] Here also 3.33, 3.33, 3.33.
+[97:27] The condition is coming, dear.
+[97:29] The diode is off from 4.03.
+[97:32] And when the diode is off, then V naught comes 10 by 3.
+[97:35] So below 4.03,
+[97:40] your diode is off.
+[97:43] And V naught is coming 3.33.
+[97:46] And when you go ahead of 4.03,
+[97:49] the diode is off.
+[97:51] So V naught is coming.
+[97:53] VI minus 0.7.
+[97:56] That is, the slope is coming 1.
+[97:58] The slope of this line is coming 1.
+[98:01] Okay?
+[98:02] So the answer will be C.
+[98:04] Now look at this.
+[98:05] The output of the clipper circuit is asking.
+[98:08] The output of this clipper circuit is asking.
+[98:15] Draw the output of this.
+[98:19] Draw the output of this.
+[98:49] Draw the output of this.
+[99:20] Dear, the lecture will be live for 24 hours.
+[99:25] Then it will be private.
+[99:27] All the lectures at the back are public till tomorrow.
+[99:30] There is no lecture private till tomorrow.
+[99:32] So if you have missed something at the back,
+[99:34] you can watch it.
+[99:35] Everything is available in the analog playlist right now.
+[99:38] Okay?
+[99:39] The lectures till tomorrow will be private till today.
+[99:45] So you have to watch it today.
+[99:50] Did you get the answer?
+[99:52] Look.
+[99:53] You observe here.
+[99:56] That the voltage is input voltage minus 2.
+[100:00] Right?
+[100:01] The input voltage minus 2 means
+[100:04] shift it down 2.
+[100:06] So it will go up to 3.
+[100:08] And here it will go up to minus 7.
+[100:13] So we will shift it down 2.
+[100:20] Like this.
+[100:22] This is done.
+[100:24] Now in front of this,
+[100:26] it looks like a half wave rectifier.
+[100:29] Half wave rectifier means
+[100:31] it will pass only the positive cycle.
+[100:34] So only this region will pass.
+[100:36] The rest of the waveform will be cut.
+[100:39] Okay?
+[100:40] Why didn't I do it with a normal method?
+[100:42] Because I have observed here
+[100:45] that this is a half wave rectifier.
+[100:48] And the input of the half wave rectifier is
+[100:50] Vn minus 2.
+[100:52] Vn minus 2.
+[100:54] Sir, please keep public.
+[100:56] Sometime we also need to watch again.
+[100:58] Dear, if the lecture was public,
+[100:59] so many people would not be sitting here.
+[101:02] There would be 20-25 children here.
+[101:04] Now every lecture is seen by the child immediately.
+[101:07] The reason is that a scary video will go on.
+[101:09] So in this way, the child's consistency is also being made.
+[101:12] Okay?
+[101:13] Otherwise, it remains in the background only.
+[101:15] Let's go.
+[101:16] Now look, this was an assignment.
+[101:18] I will also do the open circuit test and short circuit test.
+[101:21] And then we will end this lecture.
+[101:24] What did you say?
+[101:25] There are ideal diodes.
+[101:26] Zero forward resistance and drop.
+[101:28] We have to tell the current of D2.
+[101:30] Current of D2.
+[101:32] You do one thing here.
+[101:34] First apply the short circuit test.
+[101:37] Apply.
+[101:38] Because we are talking about current.
+[101:41] So I am turning on both the diodes.
+[101:46] So this is also on.
+[101:49] And this is also on.
+[101:52] Now here, if you agree with the ground,
+[101:54] then voltage is 10 here.
+[101:57] Here also 10.
+[101:59] So how many are here?
+[102:01] 10.
+[102:02] Because this diode is on, right?
+[102:03] So it will behave like a short circuit.
+[102:06] Now look, there is 10 above and 10 below this resistance.
+[102:09] Current is zero.
+[102:11] Okay?
+[102:12] And here the KVL has been violated.
+[102:14] Because here is 8.
+[102:16] The diode is also short.
+[102:18] The diode is also short.
+[102:20] So KVL has been violated.
+[102:22] So KVL has been violated.
+[102:26] Now what to do?
+[102:27] Now you have to apply OC test.
+[102:34] What will you do in OC test?
+[102:36] You will open all the diodes.
+[102:42] Okay?
+[102:45] This diode has been opened.
+[103:06] Yeah.
+[103:08] Look, 8.
+[103:10] 10.
+[103:11] You will write the voltage of this diode like this.
+[103:13] VD1.
+[103:15] You will write this as VD2.
+[103:19] This 200 ohm.
+[103:21] Now look, there is no way to flow the current.
+[103:24] So the current will be zero.
+[103:26] Now if you take out VD1,
+[103:28] look, there is a ground here.
+[103:30] So there will be 10 here.
+[103:32] If there is no current, then there will be 10 here too.
+[103:34] There is also 10 here.
+[103:36] So VD1 which is
+[103:38] here,
+[103:40] 10-10 is zero.
+[103:44] And VD2 which is here,
+[103:46] 8 is here.
+[103:47] VD2 which is here,
+[103:49] 10-8 is here.
+[103:50] 2.
+[103:52] Now what do you know, son?
+[103:53] The voltage which increases,
+[103:55] you turn it on.
+[103:57] You let the other person stay off.
+[104:02] The voltage is bigger than D2, right?
+[104:04] It is 2 volts.
+[104:06] So let D1 stay off.
+[104:16] You turn on D2.
+[104:19] It has actually asked about the current of D2.
+[104:26] So now look,
+[104:27] current will start flowing here.
+[104:32] This current is going from D2.
+[104:34] So 10-8 by 200.
+[104:38] 2 by 200.
+[104:39] How much will it be?
+[104:41] 1 by 100.
+[104:42] So 0.01 ampere.
+[104:45] Now we will have to check whether D1 is off or not.
+[104:49] It cannot be on because both are on at the same time.
+[104:53] So there are 10 here.
+[104:55] And here the voltage will go back.
+[104:57] 10-200 i.
+[104:59] That is 8.
+[105:01] Okay?
+[105:02] So when VD1 comes, it will be negative.
+[105:05] When VD1 comes, it will be 8-10.
+[105:09] Negative.
+[105:10] That is reverse bias.
+[105:12] So the answer is 0.01.
+[105:14] That is the situation where D2 is on and D1 is off.
+[105:19] We have to check.
+[105:21] We will not finish the question by turning on D2.
+[105:24] Look at the next.
+[105:25] Determine V0 and Id2 respectively for the two diode circuit with parameter r1.
+[105:31] parameter r1.
+[105:32] 5 kilo ohm.
+[105:33] r2.
+[105:34] 10 kilo ohm.
+[105:35] V gamma.
+[105:36] 0.7.
+[105:37] V positive 5 volt.
+[105:38] V negative minus 5.
+[105:40] And V1 is 4.
+[105:42] So I write the values here.
+[105:44] This is your 4 volt.
+[105:47] This is your 5 volt.
+[105:50] This is your minus 5 volt.
+[105:52] Okay?
+[105:54] And this is your 10 kilo ohm.
+[105:58] This is your 5 kilo ohm.
+[106:01] I have asked you.
+[106:02] We have to tell V0.
+[106:03] Where is V0?
+[106:04] Here.
+[106:05] And we have to tell Id2.
+[106:07] Okay?
+[106:09] Now the thing is which diode is on and which is off.
+[106:12] You can do this.
+[106:13] You can do this.
+[106:14] You can do this.
+[106:15] You can do this.
+[106:16] You can do this.
+[106:17] You can do this.
+[106:18] You can do this.
+[106:19] So if you turn on both of them.
+[106:22] 4.
+[106:24] Then this is the drop of 0.7.
+[106:26] 4.
+[106:30] Okay?
+[106:32] I am doing the short circuit test.
+[106:36] Whenever I know that the voltage is given.
+[106:38] The cut in of the diode.
+[106:40] So I find the short circuit test more convenient.
+[106:45] V0.
+[106:49] 5.
+[106:52] And 5k.
+[106:56] Now look.
+[106:57] Out of these 4.
+[106:58] 0.7 was subtracted.
+[107:00] 3.3 came.
+[107:02] Then 0.7 was added.
+[107:04] 4 came.
+[107:05] How much current came here?
+[107:06] 5 minus 4.
+[107:08] Come if I write.
+[107:11] 5 minus 4 by 5.
+[107:15] So 0.2 came.
+[107:18] This whole point 2 will go here.
+[107:22] So there is no problem in this diode in D2.
+[107:25] Because current is going from anode to cathode.
+[107:28] I am going from anode to cathode.
+[107:30] I do not have any problem.
+[107:32] How much current will come here?
+[107:33] Look.
+[107:34] It will come here.
+[107:36] I1.
+[107:38] 3.3.
+[107:41] Minus.
+[107:42] Minus 5 by 10.
+[107:44] So 0.83.
+[107:48] 0.83 is coming here.
+[107:50] 0.2 is coming here.
+[107:51] So 0.63 will be coming here.
+[107:53] KCL.
+[107:55] Right?
+[107:56] From here 0.2 came.
+[107:58] From here 0.63 was added.
+[108:00] 0.83.
+[108:01] So this is also correct.
+[108:02] Current is going from anode to cathode in this diode.
+[108:05] So there is no problem in this also.
+[108:06] And there is no problem in this also.
+[108:08] There is no problem.
+[108:09] That means this assumption was correct.
+[108:11] Where both the diodes were on.
+[108:12] So the answer came B.
+[108:14] Got it?
+[108:15] I put a short circuit test.
+[108:17] And both the diodes actually came on.
+[108:20] So the answer will be B.
+[108:22] Next look.
+[108:23] State of both the diodes.
+[108:25] I don't know the state of both the diodes.
+[108:27] Let's do one thing.
+[108:28] There is a cut-in voltage.
+[108:30] 0.6.
+[108:32] So take this as 0.6.
+[108:34] Take this also as 0.6.
+[108:37] And consider the middle voltage as V.
+[108:40] Let's put a nodal.
+[108:42] Okay?
+[108:43] I am taking both on.
+[108:45] 5 minus 0.6.
+[108:47] 4.4.
+[108:49] 5.4 minus 0.6.
+[108:51] 4.8.
+[108:53] Now what will I say here?
+[108:57] V minus 4.8 by 12.
+[109:01] Plus V by 18.
+[109:05] All the current is outgoing in the nodal.
+[109:09] 6.
+[109:11] Now what will LCM come?
+[109:12] Take 36.
+[109:14] 3V minus 14.4.
+[109:18] 2V.
+[109:20] Plus 6V.
+[109:22] Minus.
+[109:23] How much is this?
+[109:24] 26.4.
+[109:27] 11V.
+[109:28] Is equal to 40.8.
+[109:31] So how much is V?
+[109:33] 11333.
+[109:34] 78.
+[109:35] 11777.
+[109:37] 1.
+[109:38] 9.
+[109:40] Yeah, 3.709.
+[109:43] Now I say how much is the current of this diode?
+[109:47] I1.
+[109:49] 4.8 minus V.
+[109:52] By 12.
+[109:54] Positive will come.
+[109:56] How much is the current of this diode?
+[109:58] I2.
+[110:00] The current of the 6-ohm will be 4.4 minus V.
+[110:05] By 6.
+[110:06] This will also be positive.
+[110:08] Because V is small.
+[110:10] So here D1 is on because the current is positive.
+[110:14] And D2 is also on because the current is positive.
+[110:17] So both the current is positive.
+[110:19] That means both the diodes are on.
+[110:21] Both are on.
+[110:23] This was the last question.
+[110:25] I2 was asked.
+[110:27] The on state drop of diode was 0.7.
+[110:30] Do one thing.
+[110:31] Assume it as on.
+[110:37] Okay.
+[110:38] So here the drop of 0.7 will come.
+[110:45] Here 2.
+[110:47] So here 1.3V.
+[110:50] So how much is I2 from here?
+[110:54] 1.3 by 6.
+[110:57] So 0.2.
+[110:59] Then 1 is left.
+[111:04] This came.
+[111:06] And how much current will come here?
+[111:08] 2 minus 1.3 by 2.35.
+[111:13] Okay, 0.35.
+[111:15] Now this I2 is coming.
+[111:17] It will be made of two currents.
+[111:20] One is diode current.
+[111:22] And one is 0.35.
+[111:24] So I say diode current plus 0.35.
+[111:28] Is I2.
+[111:30] So the current of diode will be negative.
+[111:33] Because 0.2 by 1 by 6 will decrease 0.35.
+[111:36] So it will be negative.
+[111:37] This means diode will be off.
+[111:40] Off means you have to open it.
+[111:42] You have to open it.
+[111:43] You assumed it wrong.
+[111:45] What will be left if you open the diode?
+[111:49] Here it will be left 2V.
+[111:52] This will be left 2KM.
+[111:54] And this is 6KM.
+[111:55] That's it.
+[111:56] A simple series circuit.
+[111:59] So how much current will come here?
+[112:02] 2 by 8.
+[112:04] So 0.25 milli amperes.
+[112:07] Do you understand?
+[112:08] The diode will be open here.
+[112:11] This is 0.25 milli ampere.
+[112:14] Is it clear?
+[112:16] So the answer of 0.216 will be wrong.
+[112:19] Because 0.216 means
+[112:22] that the diode current will be negative.
+[112:24] So the diode will be open.
+[112:26] Is it clear?
+[112:27] Isn't it?
+[112:29] Now look at this.
+[112:30] This is your assignment today.
+[112:31] I will upload the notes.
+[112:32] Make this assignment.
+[112:34] I have given you the entire answer keys.
+[112:36] You will enjoy making it.
+[112:38] There are theory questions and numericals.
+[112:41] Keep this entire answer key.
+[112:43] If you want to apply PYQ
+[112:45] of the diode or overall analog
+[112:48] then go to this link.
+[112:50] I have made the entire PYQ here.
+[112:52] Free of cost.
+[112:53] Electrical and ECK for analog.
+[112:56] You will get it in this folder.
+[112:58] Gate PYQ by AIR1.
+[113:00] I have already taken a session on HPCL.
+[113:03] Search for Creatrix HPCL.
+[113:05] Right?
+[113:07] Yes, we will cover all the butterworths of Salon.
+[113:10] Now look at this.
+[113:11] If you join Unacademy
+[113:12] you have two possibilities.
+[113:13] Plus and Iconic.
+[113:14] Both are available.
+[113:15] Top Educator.
+[113:17] And whatever we study.
+[113:18] Its proper study material is uploaded on the app.
+[113:21] You can read it anytime.
+[113:23] The test series is included in both.
+[113:25] But what is the extra benefit in Iconic?
+[113:27] That if a child has to ask a new question
+[113:29] or a new doubt.
+[113:31] Then they make a new video solution.
+[113:33] They send printed notes to their homes.
+[113:36] They get 1-1 mentorship.
+[113:38] They make a strategy and study plan.
+[113:40] And you can talk in the open house.
+[113:42] Which the plus can't do.
+[113:45] And here you see.
+[113:46] Whatever subscription you choose.
+[113:48] You have to choose subscription.
+[113:50] You have to choose duration.
+[113:52] And you have to apply the code on the time of payment.
+[113:55] Ankit ESE.
+[113:56] With which you will get immediate discount.
+[113:58] And if you take today then you will get 20%.
+[114:01] And you can see the results.
+[114:02] The results are amazing.
+[114:04] We have produced.
+[114:05] We have removed 6 ranks in the top 10.
+[114:08] So if you see this type of result.
+[114:10] If you also want.
+[114:11] If you want that next year you also have a photo.
+[114:13] Then you can join the academy using code.
+[114:15] Ankit ESE.
+[114:17] And if you have a financial issue.
+[114:19] Then you also get the option of EMI.
+[114:22] You can take it on EMI.
+[114:23] Where you can pay your fees monthly.
+[114:26] Here you get very basic paperwork.
+[114:28] In which you have to give a payment card.
+[114:31] Give it to a member in your family.
+[114:33] Which is on the salary.
+[114:35] Because bank gives them EMI quickly.
+[114:37] And as I told you just now.
+[114:39] 20% off is going on.
+[114:41] It will expire tonight.
+[114:43] If you want to purchase 20% off.
+[114:45] Then immediately do it.
+[114:47] Using code.
+[114:48] Ankit ESE.
+[114:50] Okay.
+[114:51] Apart from this.
+[114:52] My children if you take distance learning program.
+[114:54] Where you will be sent books.
+[114:56] 20% off is going on.
+[114:58] And if anyone wants to book a plus.
+[115:00] Then he can pay extra amount.
+[115:03] 20% off is going on.
+[115:05] But this is only till tonight.
+[115:07] And these latest batches.
+[115:09] Where network has started.
+[115:11] Power system has also started.
+[115:12] I am taking power system at 7 am.
+[115:15] And at 9 am Manish sir is taking your network.
+[115:18] And this is my telegram channel.
+[115:20] Where you get details of all the lectures.
+[115:23] Apart from this.
+[115:24] This is my team's contact number.
+[115:26] Call here any query.
+[115:28] If you press 1 or plus.
+[115:30] If you are a YouTube student.
+[115:32] Then press 2.
+[115:33] And see where you will get PDF.
+[115:35] You will get this on the academy app.
+[115:37] So you install the academy app.
+[115:39] Go to the home page of the app.
+[115:41] Download the app.
+[115:43] Go to the community.
+[115:45] Go to the community discover.
+[115:47] You will search my name on discover.
+[115:50] You will get my community.
+[115:52] You will get all the PDFs on that.
+[115:54] The community link is given in the description of this video.
+[115:57] Otherwise if you have an app.
+[115:59] You can go directly to the community.
+[116:01] So thank you everyone.
+[116:03] Tomorrow we will meet.
+[116:04] Tomorrow we will wind up the Clippers.
+[116:06] So tomorrow your application will be completed.
+[116:08] Let's crack it.

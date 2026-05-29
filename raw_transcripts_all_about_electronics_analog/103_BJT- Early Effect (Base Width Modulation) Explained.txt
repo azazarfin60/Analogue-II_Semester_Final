@@ -1,0 +1,130 @@
+Title: BJT- Early Effect (Base Width Modulation) Explained
+URL: https://www.youtube.com/watch?v=BOk501WULQs
+Source: Local Whisper (base)
+
+[00:00] Here friends, welcome to the YouTube channel all about electronics.
+[00:16] So in this video, we will learn about the early effect in the BJT.
+[00:22] Now in the last couple of videos, we have seen the large signal and the small signal model
+[00:26] of the BJT.
+[00:28] And during the discussion of these models, we have assumed that when the BJT is operating
+[00:33] in the forward active region, then for the fixed value of the base emitter voltage, even
+[00:38] if we increase the voltage between the collector and the emitter terminal, then also the collector
+[00:43] current remains constant.
+[00:44] But actually, if you see, then there is some slope.
+[00:49] That means as we increase the voltage, we see, then the collector current also slightly
+[00:53] increases.
+[00:54] So let us understand the reason behind it.
+[00:57] So let's say there is an NPN transistor and it is biased in the forward active region.
+[01:03] That means the base emitter junction is forward biased while the collector base junction
+[01:07] is reverse biased.
+[01:10] Now as the base emitter junction is forward biased, so the depletion region between the base
+[01:14] and the emitter will be varying error.
+[01:17] On the other end, as the collector base junction is reverse biased, so the depletion region
+[01:22] between the two will be wider.
+[01:24] Now for the fixed value of voltage VBE, as we increase the voltage between the collector
+[01:29] and the base region, or effectively, when we increase the collector to emitter voltage,
+[01:35] then this collector to base region will get more reverse biased.
+[01:38] And because of that, the width of the depletion region will increase.
+[01:42] So due to that, if you see, the effective base width will reduce.
+[01:47] That means for the fixed value of voltage VBE, this base width is the function of the
+[01:52] voltage VCE.
+[01:54] That means by varying this voltage VCE, we can change the base width.
+[01:59] And this effect is known as the base width modulation.
+[02:03] So due to the reduction in the effective base width, now the chances of the recombination
+[02:07] in the base region will reduce.
+[02:10] So now due to this narrower base width, more electrons will be able to cross this base
+[02:15] region without the recombination.
+[02:19] And due to that, we can say that the collector current IC will increase.
+[02:24] That means for the given value of the base emitter voltage, as we increase the collector
+[02:29] to emitter voltage, then the collector current IC will increase.
+[02:33] And this effect is known as the early effect.
+[02:37] Now without considering the early effect, if we see the collector current IC, then the
+[02:42] collector current IC can be given as IS times e to the power voltage VBE divided by VT,
+[02:49] where IS is the reverse saturation current and VT is the thermal voltage.
+[02:54] But as we have just discussed, this collector current IC also depends on the voltage VCE.
+[03:01] That means as we increase the voltage VCE, then this collector current IC will also increase.
+[03:07] Now actually, this reverse saturation current IS is inversely proportional to the base
+[03:12] width.
+[03:15] That means as the base width reduces, then this reverse saturation current IS will increase.
+[03:21] And due to that, the collector current IC will also increase.
+[03:25] That means this base width is the function of the voltage VCE.
+[03:30] But here, to establish the linear relationship between the collector current and the voltage
+[03:34] VCE, we can assume that this reverse saturation current IS remains the constant.
+[03:41] And assuming that, the linear relationship between the IC and the VCE can be given by the
+[03:46] following expression, where VE is the early voltage.
+[03:51] So if we extrapolate this cause on the x-axis, then for a one particular voltage of the VCE,
+[03:57] the collector current IC will become 0.
+[04:00] So the value of the voltage VCE at which this occurs is known as the early voltage.
+[04:07] So typically, for the transistors, this early voltage is in the range of time to 100 of
+[04:12] voltage.
+[04:14] So this is the expression of the collector current, including the early effect.
+[04:19] Now as I said earlier, when the effective base width reduces, then the chances of the
+[04:24] recombination in the base region will reduce.
+[04:27] Or we can say that the value of alpha will increase.
+[04:31] Now this beta can be given as alpha divided by 1 minus alpha.
+[04:37] So as the value of alpha increases, then the value of beta will also increase.
+[04:43] So let's say, due to this early effect, the new value of the beta is equal to beta dash.
+[04:49] And this beta dash can be given as beta times 1 plus VCE divided by VA.
+[04:58] Now with this early effect, the relationship between the base current and the collector
+[05:03] current is still true.
+[05:05] That means the collector current IC can be given as beta dash times IB.
+[05:10] So from this expression, we can say that the base current IB is equal to IS divided
+[05:16] by beta times e to the power voltage VB divided by VT.
+[05:24] And the emitter current is the summation of this base current and the collector current.
+[05:31] So this is the large signal model of the BJT, including the early effect and the corresponding
+[05:36] expression of the base, collector and the emitter currents.
+[05:40] Now in this expression, let's say this term is equal to IC dash.
+[05:46] That is the current current without including the early effect.
+[05:50] That means we can write this expression as IC is equal to IC dash times 1 plus VCE divided
+[05:59] by VA.
+[06:01] That is equal to IC dash plus VCE divided by VA divided by IC dash.
+[06:11] Or we can say that this collector current IC is equal to IC dash plus VCE divided by R0.
+[06:21] Where R0 is the output resistance and R0 can be given as VA divided by IC dash.
+[06:29] So this is another way to represent the large signal model, including the early effect.
+[06:34] So here, this current is the total collector current IC, while this current is the IC dash
+[06:41] and this current is equal to VCE divided by R0.
+[06:46] Alright, so similarly, now let us see because of this base width modulation or the early
+[06:52] effect, how the small signal model will get modified.
+[06:57] Now so far in the small signal model, we have assumed that even if there is an incremental
+[07:02] change in the voltage VCE, then the small signal current remains the same.
+[07:07] That means the small signal current IC can be still given as GM times Vpie.
+[07:12] But now let us see, due to this early effect, how it will get modified.
+[07:18] So to understand that, let us say some fixed DC voltage VB and the voltage VCE is already
+[07:24] applied between the base emitter and the collector emitter terminals.
+[07:28] And on top of this collector emitter voltage, a small perturbation delta VCE is also applied.
+[07:35] So because of this perturbation, now let us say the total collector current is equal to
+[07:40] IC plus delta IC.
+[07:44] And this total current can be given as IS times e to the power voltage VB divided by VT
+[07:53] times 1 plus voltage VCE plus delta VCE divided by VA.
+[08:04] So if we separate the two term, then the one term will be the collector current and the
+[08:10] second term will be the delta IC.
+[08:12] So this delta IC can be given as IS times e to the power voltage VB divided by VT times
+[08:23] delta VCE divided by VA.
+[08:27] And let us call this term as the IC dash.
+[08:31] That means delta IC is equal to IC dash times delta VCE divided by VA.
+[08:41] So as you can see, for the given change in the voltage VCE, the change in the collector
+[08:46] current is linear.
+[08:48] Now of course over here, this IC dash involves the nonlinear term, but for the fixed value
+[08:54] of the voltage VB, this term will be the constant.
+[08:58] So as far as the change is concerned in the collector current, then it is the linear.
+[09:03] That means the ratio of this delta VCE to the delta IC can be given by the resistance.
+[09:10] And let us call this resistance as the output resistance, because here both delta IC and
+[09:16] the delta VCE are the output current and the output voltages.
+[09:21] That means from this we can say that R0 is equal to voltage VA divided by IC dash.
+[09:28] Now if the value of this early voltage is much higher than the voltage VCE, then we can
+[09:33] say that this IC dash is approximately equal to IC.
+[09:39] And in that condition, this output resistance can be given as VA divided by IC.
+[09:46] So this is the small signal model of the BJT including the early effect.
+[09:51] And this output resistance plays a crucial role in deciding the gain of the BJT amplifier.
+[09:57] So as I said earlier, the small signal model is very useful during the AC analysis of
+[10:02] the BJT.
+[10:04] So in the upcoming videos, we will see that how we can do the AC analysis of the BJT circuit
+[10:09] using this small signal model.
+[10:12] And using this small signal model, how we can find the different amplifier parameters,
+[10:17] like the voltage gain, input impedance and the output impedance.
+[10:21] So I hope in this video you understood what is early effect in the BJT and because of
+[10:26] this effect, how the large signal and the small signal model of the BJT will get modified.
+[10:32] So if you have any question or suggestion, do let me know here in the comment section
+[10:36] below.
+[10:37] If you like this video, hit the like button and subscribe to the channel for more such
+[10:41] videos.

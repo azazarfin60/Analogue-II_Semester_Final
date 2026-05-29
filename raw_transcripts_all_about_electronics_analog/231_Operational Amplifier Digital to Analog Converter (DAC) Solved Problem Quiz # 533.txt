@@ -1,0 +1,58 @@
+Title: Operational Amplifier / Digital to Analog Converter (DAC) Solved Problem |  Quiz # 533
+URL: https://www.youtube.com/watch?v=Ax3K2vEB_8k
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question, we have been given this 3 bit DAC and it has been given that it
+[00:16] is implemented using the ideal opa and the switches.
+[00:20] So for the given 3 bit DAC, we have been asked to find the input impedance and the value
+[00:25] of this current I when the digital input to this DAC is equal to 110.
+[00:31] So let us find that.
+[00:33] So if you observe over here, then the given DAC is the minor weighted DAC because here
+[00:39] as we move from the MSB to the LSD, then the value of this resistor is increasing by
+[00:45] the factor of 2.
+[00:47] So here these d2 d1 d0 are the inputs of the DAC.
+[00:52] So whenever the input to the DAC are logic 1, then the switch will remain in the closed
+[00:56] condition and whenever this input is 0, then the switch will remain in the open condition.
+[01:03] So here we have been asked to find the value of this input impedance and the value of this
+[01:07] current I when the digital input is equal to 110.
+[01:13] That means in this condition, this d2 and d1 is equal to 1, while that d0 is equal to
+[01:18] 0.
+[01:19] That means here, this d2 and d1 switch is well remain in the closed condition, while
+[01:24] that d0 switch will remain in the open condition.
+[01:28] So with that, if we see the equivalent circuit, then this is how it will look like.
+[01:34] So for the given circuit, now let us find the value of this R in as well as the I.
+[01:39] So if you observe this circuit, then it is nothing but the inverting summing amplifier.
+[01:44] And here, this total current I that is flowing through this feedback resistor is the summation
+[01:49] of the currents that is flowing through this individual resistors.
+[01:53] Let's say this current is equal to I1 and I2.
+[01:58] So applying the KCL, at this node, we can say that this total current I is equal to I1
+[02:05] plus I2.
+[02:07] So here, to find this total current, first let us find the value of the current I1 and
+[02:11] the I2.
+[02:13] So if you see this inverting summing amplifier circuit, then there is a negative feedback
+[02:17] in the given circuit.
+[02:19] And due to that, here we can apply the concept of the virtual ground.
+[02:23] That means here, this V plus will be same as the V minus.
+[02:28] And therefore, this terminal will be also at the ground potential.
+[02:33] And here, the voltage at this node is equal to 6V.
+[02:38] So from this, we can say that this current I1 is equal to 6V divided by 6Ko, that is
+[02:45] equal to 1 milliampere.
+[02:48] And this current I2 is equal to 6V divided by 3Ko, that is equal to 2 milliampere.
+[02:57] So we can say that the total current I is equal to 1 milliampere plus 2 milliampere,
+[03:04] that is equal to 3 milliampere.
+[03:08] So in this way, we got the value of this current I.
+[03:11] So similarly, let us find the value of this R in.
+[03:16] So here, this input impedance R in, which is seen through this reference voltage source
+[03:21] is equal to V in divided by I in.
+[03:26] That is the voltage of this voltage source divided by the total current that is flowing
+[03:30] through this voltage source.
+[03:33] And if you observe over here, then this current I in will be same as the I.
+[03:39] So here, we already know the value of this V in, that is equal to 6V.
+[03:45] And here, this current I is equal to 3 milliampere.
+[03:50] So we can say that the input impedance, which is seen through this reference voltage source,
+[03:55] is equal to 2 kilo ohm.
+[03:59] That means whenever the digital input to this DAC is equal to 110 at that time, the input
+[04:05] impedance which is seen through this voltage source is equal to 2 kilo ohm while the total
+[04:09] current that is flowing through this feedback resistor is equal to 3 milliampere.
+[04:15] And from this, we can say that for the given question, this A is the correct answer.

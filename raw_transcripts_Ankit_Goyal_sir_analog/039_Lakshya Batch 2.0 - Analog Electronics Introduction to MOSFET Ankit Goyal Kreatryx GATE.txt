@@ -1,0 +1,2760 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Introduction to MOSFET | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=ffBWEHJEFOQ
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone a very good morning to all of you and welcome to
+[00:14] creatrix youtube channel my dear friends we are live again in luxe batch 2.2 analog
+[00:21] electronics and this time with a new unit with a new beginning that is MOSFET
+[00:28] so the electrical students were not doing classes for a long time because we were
+[00:33] celebrating engineering services we were reading some advanced topics of BJT such as
+[00:38] multi stage amplifier frequency response differential amplifier then we were covering
+[00:44] JFET but now it is time for all of you to come back all of you connect with me again
+[00:51] and we will start a new beginning from MOSFET whatever things you have learned in
+[00:56] BGT whatever concepts you have learned all those concepts will help you in this unit too
+[01:02] you will connect very well to BJT and MOSFET together we will take all the things together
+[01:08] you will understand each thing and as I said earlier this is the course of analog electronics
+[01:14] not only will teach you analog but also the basic electronics in the exams
+[01:21] that you will be able to cover because here we are looking at the basic working of every device
+[01:27] and after that we are looking at the base circuit ok without knowing what is the device
+[01:33] how it works if you jump on the circuit somewhere it is disconnected according to me
+[01:39] and especially for electrical people because electrical people do not get the opportunity to see these devices
+[01:45] they must know that which device works whether it is BJT, diode, MOSFET, JFET
+[01:51] and then we should know how to solve the circuit based on these devices
+[01:55] so in today's lecture I will make you aware of MOSFET in just one session
+[02:01] I will make you complete MOSFET in which we will talk about MOSFET circuits from tomorrow
+[02:08] so we will talk about MOSFET circuits from tomorrow
+[02:12] today what are the equations of MOSFET, what is the construction of MOSFET, what is the working
+[02:18] I am going to tell you all these things
+[02:20] is there any issue with the sound?
+[02:22] Nitish is saying is there any issue with the sound?
+[02:25] say it quickly everybody
+[02:28] is there any issue with the sound?
+[02:32] come on Bablu is saying no sir
+[02:36] let me tell you before I go ahead
+[02:39] this unacademy is going on for 20% offer
+[02:42] it will expire tonight
+[02:45] so if anyone wants to join on 20% off we have started new batches of 2014
+[02:52] Guru Cool batch in which we will start from Maths and Analogs
+[02:56] Dandesar and Guru Pal sir
+[02:58] so you can immediately join using code ANKIT ESE
+[03:03] okay using code ANKIT ESE
+[03:06] the vacancy of NTPC has come from gate 22
+[03:09] if you have a good rank in gate 22
+[03:11] then fill it
+[03:13] and even in distance learning program
+[03:16] you are getting 20% offer in distance learning program
+[03:19] you just have to join with the code ANKIT ESE
+[03:23] so don't wait because this offer will expire today
+[03:27] and your new batches have started from today
+[03:30] for gate 2024
+[03:32] so all my kids are following 24
+[03:34] they can join immediately
+[03:36] okay let's start today's discussion
+[03:38] everyone is ready
+[03:40] so let's talk about MOSFET
+[03:42] so the full form of MOSFET is
+[03:45] Metal Oxide Semiconductor
+[03:49] Field Effect Transistor
+[03:51] what is the name of metal oxide semiconductor
+[03:55] Field Effect Transistor
+[03:58] so what is the meaning of Metal Oxide Semiconductor
+[04:02] it means from its structure
+[04:04] that means the structure of MOSFET
+[04:07] first comes Metal
+[04:09] under Metal there is a layer of SiO2 that is Oxide
+[04:13] under that there is P type N type semiconductor
+[04:16] so Metal then Oxide then Semiconductor
+[04:19] Field Effect Transistor means
+[04:22] here the device's turn on
+[04:25] turn off
+[04:26] the device's conduction
+[04:28] amplification
+[04:29] with the help of the electric field
+[04:32] with the help of the electric field
+[04:34] we are controlling
+[04:36] that is the Field Effect Transistor
+[04:39] that is the Field Effect Transistor
+[04:42] so how we will control with the help of the electric field
+[04:45] I will tell you about it
+[04:47] I will show you and visualize it
+[04:49] don't worry about it
+[04:51] but for now understand the meaning of Field Effect Transistor
+[04:53] means we are controlling the device
+[04:56] by means of electric field
+[04:58] as you can see in BJT
+[05:00] if BJT had to turn on or off
+[05:03] if BJT had to turn on or off
+[05:06] then he would do it through base current
+[05:09] who would do it?
+[05:10] through base current
+[05:12] that means the base terminal
+[05:16] actually current would flow in it
+[05:19] but what happens in MOSFET
+[05:22] here we control with the help of the gate
+[05:25] and no current goes in the gate
+[05:28] the electric field goes into the device from the gate
+[05:32] why the current doesn't go in the gate?
+[05:34] because under the gate there is an Oxide layer
+[05:38] which acts as an insulator
+[05:40] because of which the gate
+[05:42] will not go into any current device
+[05:45] now the kids who were with me in JFET
+[05:47] they also saw in JFET
+[05:48] there is no current in the gate
+[05:51] but if you are joining in MOSFET
+[05:53] then now understand
+[05:54] the gate current will always be zero
+[05:57] and one thing is special
+[05:59] that in conductors
+[06:00] no electric field can exist
+[06:03] but my kids
+[06:05] the insulators
+[06:07] which are semi-conductors
+[06:09] the electric field can exist in them
+[06:12] so even if the layer of SI O2
+[06:14] stops the current of the gate
+[06:17] it says that no charges will enter the gate
+[06:20] but it won't stop the electric field
+[06:23] it will let the electric field go
+[06:25] from the gate to the semi-conductor
+[06:27] so MOSFET is like BJT
+[06:30] it is also a three terminal device
+[06:32] actually there are four terminals
+[06:34] the fourth terminal is not used in analog
+[06:37] that's why we talk about the three terminals
+[06:40] gate, source and drain
+[06:42] who do we talk about?
+[06:44] gate, source and drain
+[06:46] the main terminal is the drain and source
+[06:49] like there used to be collector emitter in BJT
+[06:52] so there are drain and source here
+[06:54] which you control by means of a gate
+[06:58] by means of a gate
+[07:00] so here it says
+[07:02] by controlling the gate voltage
+[07:04] the width of the channel is controlled
+[07:07] and gate is isolated from the device
+[07:10] by means of an insulator SI O2
+[07:14] the gate is isolated from your device
+[07:17] it is not directly connected
+[07:19] so this SI O2 layer
+[07:21] it does not allow any current from the gate
+[07:24] but yes it allows
+[07:26] electric field
+[07:28] understood?
+[07:30] it stops
+[07:33] gate current
+[07:36] but allows
+[07:39] electric field
+[07:42] so in MOSFET there are actually four terminals
+[07:48] in which we use three
+[07:50] and let me tell you
+[07:52] their analogy is
+[07:54] the drain
+[07:56] the charge carrier comes out of the drain
+[07:59] like collector
+[08:01] source which is
+[08:03] the charge carrier supplies
+[08:05] just like emitter
+[08:07] emitter was supplying the charge carrier
+[08:10] and the gate which is
+[08:12] that is similar to the base
+[08:14] because the base was controlling there
+[08:17] here the gate will control you
+[08:20] so from this type
+[08:22] BJT and MOSFET are analogous
+[08:25] okay?
+[08:27] now let's talk about general construction
+[08:29] how MOSFET construction is
+[08:31] see
+[08:33] construction is very simple
+[08:36] this is a rectangular material
+[08:39] we called it P substrate
+[08:42] what is P?
+[08:44] substrate
+[08:46] that is P type material
+[08:48] you have taken a P type semiconductor
+[08:50] completely
+[08:54] now what do we do in it?
+[08:56] by doping
+[08:58] we create two N plus regions
+[09:01] okay?
+[09:03] how do we do it?
+[09:05] by doping
+[09:07] by adding two N type impurities
+[09:09] here
+[09:11] now what do we do in the middle?
+[09:13] between these two
+[09:15] by doing this
+[09:17] there is a layer of SiO2
+[09:19] by doing this
+[09:21] you can add the layer of SiO2
+[09:23] in your whole
+[09:25] like this
+[09:31] like this
+[09:33] add the layer of SiO2
+[09:35] like this
+[09:37] okay?
+[09:53] now what do we do in it?
+[09:55] we deposit metal on it
+[09:57] like
+[09:59] as you can see
+[10:01] I deposited the metal of the gate
+[10:03] okay?
+[10:05] here
+[10:07] I deposited metal for the source
+[10:09] which is the source
+[10:11] which is the contact of the source
+[10:13] and here I deposited it for drain
+[10:15] okay?
+[10:17] so from here
+[10:19] I deposited aluminum
+[10:21] and made contact
+[10:23] and here also
+[10:25] you have deposited metal
+[10:27] on the substrate
+[10:29] and constructed a terminal
+[10:31] that is the substrate terminal
+[10:33] the substrate is also called
+[10:35] body
+[10:37] okay?
+[10:39] write it as body
+[10:41] B
+[10:43] B terminal
+[10:45] okay?
+[10:47] this is the source
+[10:49] this is your drain
+[10:51] and this is the metal
+[10:53] your gate
+[10:55] what is this?
+[10:57] gate
+[10:59] and this is the layer
+[11:01] the pink one
+[11:03] this is your oxide layer
+[11:05] SiO2
+[11:07] which works as an insulator
+[11:09] actually
+[11:11] when devices fabricate
+[11:13] in integrated circuit
+[11:15] there are many MOSFETs
+[11:17] so MOSFETs are surrounded
+[11:19] from all sides
+[11:21] so that one MOSFET
+[11:23] does not connect
+[11:25] or one MOSFET current
+[11:27] does not go to the other
+[11:29] okay? is it clear here?
+[11:31] now the flow of the source and drain
+[11:33] is actually the flow
+[11:35] for which we need a way
+[11:37] we call that way channel
+[11:39] what we call channel
+[11:41] so let me show you
+[11:43] here
+[11:45] from this type
+[11:47] here is a channel
+[11:49] what is this?
+[11:51] this is called as channel
+[11:53] making and destroying this channel
+[11:55] is all in the hands of the gate
+[11:57] so what is the work of the gate?
+[11:59] the work of the gate is
+[12:01] to take the passengers from one side
+[12:03] to the other side
+[12:05] as you understand the train
+[12:07] goes from one station to another
+[12:09] so one station
+[12:11] where the train will go
+[12:13] where the source is to reach
+[12:15] is the train
+[12:17] and in the middle
+[12:19] is the train
+[12:21] so the channel
+[12:23] connects the source and drain
+[12:25] and what is the responsibility
+[12:27] of making this channel?
+[12:29] that is the responsibility of the gate
+[12:31] dear Priyanshu
+[12:33] if you will stop till the end
+[12:35] then you will understand
+[12:37] the depletion enhancement
+[12:39] and if you want to do spamming
+[12:41] then please go to the other channel
+[12:43] children have come here to study
+[12:45] otherwise I will block
+[12:47] go ahead
+[12:49] till here everything is clear
+[12:51] now see what happens here
+[12:53] the width of the SiO2 layer
+[12:57] width of
+[13:01] SiO2 layer
+[13:07] this is
+[13:09] from 1000 angstrom
+[13:13] 2000 angstrom
+[13:15] ok
+[13:17] the width of SiO2 layer
+[13:19] that is from 1000 angstrom
+[13:21] to 2000 angstrom
+[13:23] angstrom means 10 power minus 10
+[13:25] so the thickness of SiO2 layer
+[13:27] we use in the device
+[13:29] and
+[13:31] see due to SiO2 layer
+[13:33] due to SiO2 layer
+[13:35] due to SiO2 layer
+[13:37] no current can go from the gate
+[13:39] insulator
+[13:41] IG is almost zero
+[13:43] due to which
+[13:45] input impedance
+[13:47] tends to infinity
+[13:49] input impedance
+[13:51] its tending to infinity
+[13:53] because if the current is zero
+[13:55] then
+[13:57] if you take V by I
+[13:59] it will tend to infinity
+[14:01] it will tend to infinity
+[14:03] ok
+[14:05] no doubt will be taken
+[14:07] it is just second slide
+[14:09] I know you will know a lot
+[14:11] you might have many questions in your mind
+[14:13] but what I would request
+[14:15] that you watch the lecture till the end
+[14:17] many questions
+[14:19] will be answered
+[14:21] ok
+[14:23] it uses
+[14:25] planar technology
+[14:27] for fabrication
+[14:29] means
+[14:31] we call this device a two-dimensional device
+[14:33] it is made in 2D
+[14:35] but it can be
+[14:37] represented in 2D
+[14:39] now what is planar technology
+[14:41] we are not going on this
+[14:43] this is part of EDC
+[14:45] IC fabrication
+[14:47] that is also removed from the gate
+[14:49] IC fabrication
+[14:51] IC fabrication is also removed from the gate
+[14:53] but here
+[14:55] we call this device a planar
+[14:57] and it is a
+[14:59] symmetric device
+[15:01] it is a
+[15:03] symmetrical device
+[15:09] means
+[15:11] drain and source can be interchanged
+[15:13] remember I said in BJT
+[15:15] collector and emitter
+[15:17] should never interchanged
+[15:19] now
+[15:21] if drain and source can be interchanged
+[15:23] then why they are named like this
+[15:25] drain and source
+[15:27] they are only given for a recommendation
+[15:29] so that
+[15:31] everyone can make a uniform circuit
+[15:33] everyone can connect
+[15:35] with a particular terminal
+[15:37] that is why we named them
+[15:39] drain and source
+[15:41] otherwise
+[15:43] you can exchange them
+[15:45] ok
+[15:47] now look
+[15:49] area of MOSFET
+[15:51] the area of MOSFET
+[15:53] that is
+[15:55] 5% of BJT
+[15:57] how much is it
+[15:59] 5% of
+[16:01] BJT
+[16:03] now think
+[16:05] how much area is it
+[16:07] how much area is it
+[16:09] so if its area is so less
+[16:11] that is only 5% of
+[16:13] BJT
+[16:15] so it is very highly suited
+[16:17] for integrated circuit
+[16:19] because in integrated circuit
+[16:21] we have
+[16:23] in one chip
+[16:25] many
+[16:27] many transistors
+[16:29] are fabricated
+[16:31] so the smaller the transistor
+[16:33] the more number of transistors
+[16:35] can be fabricated on one chip
+[16:37] the more
+[16:39] devices can be constructed
+[16:41] that is why
+[16:43] in MOSFET integrated circuit
+[16:45] there is a lot of work
+[16:47] as you know in integrated circuit
+[16:49] SSI small scale integrated circuit
+[16:51] MSI medium scale integrated
+[16:53] LSI large scale integrated
+[16:55] VLSI very large scale integrated
+[16:57] after which comes
+[16:59] ULSI ultra large scale integrated
+[17:01] so this technology
+[17:03] is increasing
+[17:05] per unit area
+[17:07] how many transistors we can fabricate
+[17:09] so we know
+[17:11] generally what we see
+[17:13] BJT comes in
+[17:15] SSI and MSI type technology
+[17:17] that is many BJT
+[17:19] cannot fabricate on one chip
+[17:21] that is your MOSFET
+[17:23] comes in VLSI
+[17:25] that is very large scale integrated
+[17:27] so a lot of MOSFET
+[17:29] integrate
+[17:31] and one more thing
+[17:33] MOSFET
+[17:35] can also be used
+[17:37] can also be used
+[17:39] can also be used
+[17:41] can also be used
+[17:43] as a capacitor
+[17:45] as a capacitor
+[17:51] called
+[17:53] MOS capacitor
+[17:55] MOS capacitor
+[17:57] MOS capacitor
+[17:59] you read this in EDC
+[18:01] recently I was watching
+[18:03] Shishir sir on gate academy channel
+[18:05] he was explaining this thing
+[18:07] MOS capacitor
+[18:09] so if you are an EC child
+[18:11] you can see there
+[18:13] MOSFET is very good
+[18:15] most of the classes of MOSFET
+[18:21] now it is very good
+[18:23] congratulations
+[18:25] so tell me
+[18:27] do you understand these things about MOSFET
+[18:29] why MOSFET is so popular
+[18:31] MOSFET speed
+[18:33] is more than BJT
+[18:35] size is very less
+[18:37] power consumption
+[18:39] is very less compared to BJT
+[18:41] so it is more
+[18:43] ideally suited
+[18:45] as compared to BJT
+[18:47] as compared to BJT
+[18:49] why body is always
+[18:51] grounded
+[18:53] we do short circuit from 4
+[18:55] we do not always ground the body
+[18:57] the role of the body
+[18:59] the terminal of the body
+[19:01] with the help of voltage
+[19:03] we change threshold voltage
+[19:05] but now I will not go that far
+[19:07] and all those things are in EDC
+[19:09] when we change the voltage of the body terminal
+[19:11] in EDC it is called body bias
+[19:13] what can be called body bias
+[19:15] okay
+[19:17] this is clear
+[19:19] sir can also be said
+[19:21] in transistor in PWL model
+[19:23] there is more power dissipation with respect to MOSFET
+[19:25] look
+[19:27] so what model are you replacing BJT
+[19:29] that is not going
+[19:31] to define the power dissipation
+[19:33] I am talking practically
+[19:35] practically the power dissipation of BJT
+[19:37] is less than MOSFET
+[19:39] now you are making CVD model on your copy
+[19:41] you are making PWL or resistance
+[19:43] that is your wish
+[19:45] we are talking about practical data
+[19:47] we are talking about practical data
+[19:49] okay
+[19:51] don't go to PN junction
+[19:53] pay attention to all the things
+[19:55] look you are very excited
+[19:57] you will run around a lot
+[19:59] but let's go in one direction
+[20:01] the direction I am trying to take
+[20:03] it is guaranteed that by the end of this lecture
+[20:05] all things will be cleared
+[20:07] related to MOSFET
+[20:09] but now a lot of my children are reading
+[20:11] power electronics
+[20:13] they are connecting it with power electronics
+[20:15] those who have covered MOSFET before
+[20:17] those who are from ECE
+[20:19] they will relate to EDC, don't do that
+[20:21] first understand then make connections
+[20:23] okay, if you make connections without understanding
+[20:25] then the connection will remain weak
+[20:27] open circuit will remain
+[20:29] no current of knowledge will be able to flow
+[20:31] okay
+[20:33] now I am talking about depletion type MOSFET
+[20:35] first of all I am talking about depletion type MOSFET
+[20:37] what is the speciality of depletion type MOSFET
+[20:39] dear
+[20:41] that here a N channel is made
+[20:43] from earlier
+[20:45] that is sir by means of doping
+[20:47] by
+[20:49] means of doping
+[20:51] so what are we saying
+[20:53] already
+[20:57] a
+[20:59] N channel
+[21:03] is present
+[21:05] already a
+[21:07] N channel is present
+[21:09] between
+[21:11] source and drain
+[21:13] and
+[21:19] this channel is created
+[21:23] this channel is created
+[21:27] by means of
+[21:31] doping
+[21:33] by means of
+[21:35] doping
+[21:37] okay
+[21:39] doping say a channel
+[21:41] is created
+[21:43] means
+[21:45] by means of doping
+[21:47] we have made a channel
+[21:49] we have made a channel
+[21:51] we will flow our charges
+[21:53] we will flow our current
+[21:55] so when the channel is present
+[21:57] first of all
+[21:59] where will the electron flow
+[22:01] source and drain
+[22:03] where will the electron flow
+[22:05] source and drain
+[22:07] current will flow
+[22:09] opposite that is
+[22:11] drain to source
+[22:13] where will the current flow
+[22:15] opposite of the electron
+[22:17] that is drain to source
+[22:19] what we have to do for this
+[22:21] if the electrons have to flow
+[22:23] drain from source
+[22:25] then we have to put a battery
+[22:27] between drain and source
+[22:29] this type
+[22:31] we will call this battery VDD
+[22:33] what we will call VDD
+[22:35] do one thing
+[22:37] we will also make a resistance
+[22:39] if we put a battery directly
+[22:41] then the current can be high
+[22:47] okay
+[22:49] there will be no confusion
+[22:51] and there is a battery
+[22:53] between the source and the gate
+[22:59] call it VGS
+[23:01] or VGG
+[23:03] source works like a common terminal
+[23:05] source works like a common terminal
+[23:07] source works like a common terminal
+[23:09] source works like a common terminal
+[23:11] now I will explain
+[23:13] what will happen to the battery
+[23:15] now the first case
+[23:17] if I
+[23:19] put the voltage of drain to
+[23:21] source
+[23:23] and the voltage of
+[23:25] gate to source
+[23:27] then see
+[23:29] the channel is already created
+[23:31] the channel is already created
+[23:33] so
+[23:35] there is no difference
+[23:37] to put zero on the gate source
+[23:39] the channel was there
+[23:41] and it will be there
+[23:43] okay
+[23:45] the channel is already present
+[23:51] the channel is
+[23:53] already present
+[23:57] between
+[24:01] between drain and source
+[24:09] okay the channel is already present
+[24:11] between drain and source
+[24:13] okay sir
+[24:15] then what will happen
+[24:17] see the battery you were putting
+[24:19] the VDD that you showed
+[24:21] what was the battery doing
+[24:23] actually an electric field was being created
+[24:25] this battery
+[24:27] was creating an electric field
+[24:29] of drain and source
+[24:33] like this
+[24:35] that is why it was going to the
+[24:37] electron right
+[24:39] okay
+[24:41] that is why it was going to the
+[24:43] electron right
+[24:45] when the electric field is in the left
+[24:47] then the negative charge will be
+[24:49] forced opposite to the field
+[24:51] that is to the right
+[24:53] that is to the right
+[24:55] now do you understand
+[24:57] if you have made the electric field
+[24:59] source with drain
+[25:01] then the electron will go
+[25:03] drain with source
+[25:05] but now you said
+[25:07] that you have kept the VDS zero
+[25:09] means that there will be no
+[25:11] electric field
+[25:13] there will be no electric field
+[25:15] there will be no
+[25:17] electric field
+[25:21] from
+[25:23] drain
+[25:25] no
+[25:27] electric field from
+[25:29] drain to source
+[25:31] okay
+[25:33] now when the electric field is not there
+[25:35] then the electron is ALC
+[25:37] till the time no one will hit it
+[25:39] then it will not work
+[25:41] so in the same way your current
+[25:43] will become zero
+[25:45] till the time you will not
+[25:47] put the voltage between drain and source
+[25:49] you will not push the electron
+[25:51] you will have to run
+[25:53] till then the electron will not work
+[25:55] and till then the current will not
+[25:57] flow
+[25:59] now you understood
+[26:01] now you understood
+[26:03] if the battery was on
+[26:05] if the voltage was on
+[26:07] means if the VDS
+[26:09] would have been positive
+[26:11] and if the VDS would have been zero
+[26:13] then what would have been
+[26:15] if the VDS
+[26:17] would have been greater than zero
+[26:19] here the electric field would have been
+[26:21] from drain to source
+[26:23] right
+[26:25] the electric field would have been
+[26:29] electric field
+[26:31] drain to source
+[26:33] okay
+[26:35] I am writing in short
+[26:37] because of which the flow of the electron
+[26:39] would have been
+[26:41] drain from source
+[26:43] because of which the current would have flow
+[26:45] your drain to source
+[26:47] okay
+[26:49] so in this way you can say
+[26:51] if you are not putting the VDS
+[26:53] then the source will flow
+[26:55] easily from the drain
+[26:57] now Shaurya is saying
+[26:59] the flow will not flow because of diffusion
+[27:01] look at Shaurya, the doping on both sides
+[27:03] is kept equally
+[27:05] it is not that the doping of the drain
+[27:07] is more than the doping of the source
+[27:09] that is the diffusion current
+[27:11] will not be there
+[27:13] only the drift current
+[27:15] and very good question
+[27:17] so see we will write here
+[27:19] since
+[27:21] source and drain
+[27:23] since source and
+[27:25] drain
+[27:27] have equal doping
+[27:31] have equal doping
+[27:35] we do not
+[27:39] we do not
+[27:41] consider
+[27:45] diffusion current
+[27:51] but
+[27:53] only
+[27:55] drift
+[27:57] current
+[27:59] and see the entire region N
+[28:01] between source and drain
+[28:03] the entire channel is N type
+[28:05] that is why
+[28:07] actually
+[28:09] when the current flows here
+[28:11] it behaves like a resistance
+[28:13] because you take a conductor
+[28:15] take a semiconductor
+[28:17] take an insulator
+[28:19] if you put a voltage
+[28:21] there then the current will flow
+[28:23] in the insulator
+[28:25] the current will be very small
+[28:27] very small
+[28:29] so you can say
+[28:31] that
+[28:33] the entire path
+[28:35] path between
+[28:37] drain and source
+[28:39] drain and source
+[28:41] path
+[28:43] path between
+[28:45] drain and source
+[28:47] acts as a
+[28:49] resistance
+[28:53] okay
+[28:57] simple
+[28:59] if there is no p-n junction in a semiconductor
+[29:01] then how will it work
+[29:03] simple it will work like a resistance
+[29:05] equal doping
+[29:07] both the regions are equal
+[29:09] source and drain
+[29:11] so Vishal how is equal doping
+[29:13] what does it mean
+[29:15] this is its construction
+[29:17] that source and drain are identical
+[29:19] that is why I said
+[29:21] that you can interchange drain and source
+[29:23] there is no difference
+[29:25] both the size is exactly the same
+[29:27] both the doping is exactly the same
+[29:29] both are made exactly the same
+[29:31] okay
+[29:33] now let's come to case 3
+[29:35] what do we do in case 3
+[29:37] so from both the sides
+[29:39] it can come into the channel
+[29:41] source and drain and source
+[29:43] will not be able to flow
+[29:45] and till the time the drain and source
+[29:47] will not flow
+[29:49] the current will be zero on both the terminals
+[29:51] you are getting it
+[29:53] what will you do if you get into the channel
+[29:57] now see what we are saying here
+[30:01] that we have
+[30:03] on the gate
+[30:05] we have put
+[30:07] negative voltage
+[30:09] on the gate
+[30:23] see this
+[30:31] and on the drain
+[30:33] you have put positive voltage
+[30:41] now I am not showing the resistance
+[30:43] I am showing a simple thing
+[30:47] VGS
+[30:49] VDS
+[30:51] if you consider it as zero voltage
+[30:53] then consider
+[30:55] as an example
+[30:57] voltage is minus VGS
+[30:59] and here you have
+[31:01] plus VDS
+[31:03] okay
+[31:05] plus VDS
+[31:07] if you consider the source as grounded
+[31:09] then there is negative voltage on the gate
+[31:11] and on the drain
+[31:13] there is positive voltage
+[31:15] now we are saying
+[31:17] VDS
+[31:19] how did I understand this much
+[31:21] how did I put the voltage
+[31:23] and the voltage from KVL of the terminals
+[31:25] now the negative terminal on VGS
+[31:27] is written
+[31:29] on the VGS
+[31:31] the negative terminal
+[31:33] the negative terminal
+[31:35] or the negative voltage
+[31:37] electric field
+[31:39] that is towards the charge
+[31:41] how is the electric field
+[31:43] that is towards the charge
+[31:47] it will be like this
+[31:49] now see here
+[31:51] the field effect will start to be seen
+[31:53] the name is MOSFET
+[31:55] now here the field effect will start to be seen
+[31:57] this black arrow
+[31:59] represents the electric field
+[32:03] so this electric field
+[32:05] will start to be placed on the channel
+[32:07] on the electrons
+[32:09] on the channel
+[32:11] on the electrons
+[32:13] it will start to force in the opposite direction
+[32:15] that is it will start
+[32:17] to force the electrons from here
+[32:19] but sir why are you
+[32:21] running from the drain
+[32:23] why don't you understand
+[32:25] because the difference
+[32:27] between the drain and the gate
+[32:29] from here to here
+[32:31] if you see the difference
+[32:33] let me say this
+[32:35] VGD
+[32:37] is
+[32:39] minus VGS
+[32:43] minus VDS
+[32:47] that is minus VGS
+[32:49] plus VDS
+[32:51] and the source voltage
+[32:53] that is the source voltage
+[32:55] that is simply minus VGS
+[32:57] since
+[32:59] negative voltage
+[33:03] is more
+[33:07] near drain
+[33:11] see the drain has more negative voltage
+[33:15] electric field
+[33:19] is also higher
+[33:23] is also higher
+[33:29] near drain
+[33:35] so electron from channel
+[33:41] move downwards
+[33:47] near drain
+[33:49] and as the electrons
+[33:51] move from there
+[33:53] channel width decreases
+[33:57] the width of the channel
+[33:59] will start to decrease
+[34:03] the width of the channel
+[34:05] will start to decrease
+[34:07] ok
+[34:09] it is clear
+[34:11] it is clear till here
+[34:13] as the electrons start to move
+[34:15] see here
+[34:17] this channel
+[34:19] its width starts to decrease
+[34:21] from the drain
+[34:23] this channel starts to disappear
+[34:25] this channel starts to disappear
+[34:27] from the drain
+[34:29] so the width of the channel decreases
+[34:31] now think about the width of the channel
+[34:33] if there is a road
+[34:35] cars are on the road
+[34:37] if the road is small
+[34:39] then congestion will increase there
+[34:41] that is vehicles will be less there
+[34:43] vehicles are less
+[34:45] consider it as current will be less here
+[34:47] so if the width of the channel
+[34:49] is decreasing
+[34:51] then basically your current will be less
+[34:53] or you can say
+[34:55] resistance will increase
+[34:57] resistance will increase
+[34:59] so the resistance
+[35:01] will increase
+[35:03] if resistance increases
+[35:05] then you can say
+[35:07] conductance will decrease
+[35:09] you can say here
+[35:11] that if the width of the channel
+[35:13] decreases
+[35:15] resistance will increase
+[35:17] resistance will increase
+[35:19] or conductance will decrease
+[35:21] conductance will decrease
+[35:23] ok
+[35:25] drain to source conductance
+[35:27] will go down
+[35:29] it is clear
+[35:31] it is clear till here
+[35:33] everyone is clear
+[35:35] it is clear what is happening
+[35:37] when you are putting VGS negative
+[35:39] when you are putting VGS negative
+[35:41] what is happening
+[35:43] and something like this
+[35:45] what you have read in JFET
+[35:47] in JFET
+[35:49] when you have put VGS negative
+[35:51] when you have put negative voltage on the gate
+[35:53] the depletion layer increased
+[35:55] and the width of the channel
+[35:57] between the terminal drain and source
+[35:59] was reduced
+[36:01] so the current was flowing less there
+[36:03] when you have put
+[36:05] negative voltage there
+[36:07] then the depletion of PN junction
+[36:09] was increased
+[36:11] when the depletion was reduced
+[36:13] then the current was flowing less
+[36:19] current direction
+[36:21] current direction is the same as before
+[36:23] the current direction has not changed
+[36:25] the current is the same
+[36:27] the electrons going down
+[36:29] are being removed from the channel
+[36:31] think that the trains
+[36:33] are being reduced
+[36:35] the train travel is still the same
+[36:37] these are not the electrons
+[36:39] that make the current flow
+[36:41] current flow electrons
+[36:43] are going in the same way in the drain
+[36:45] this is the electron
+[36:47] which has created the channel
+[36:49] channel had called N type
+[36:51] channel was N type
+[36:53] then how was N type
+[36:55] because there was an electron
+[36:57] I have shown that there is an electron
+[36:59] that was in the N type channel
+[37:01] that was in the N type channel
+[37:03] that electron is being removed from the channel
+[37:05] that electron is being removed
+[37:07] And the current flow of the electron is still going through the drain of your source which means the current is going through the drain of your source.
+[37:28] Okay?
+[37:29] There is no change in this.
+[37:31] This is the end type region of the electron inside it.
+[37:36] Okay?
+[37:37] By applying negative gate voltage.
+[37:41] No dear, I don't want to get the current flow in the body from the channel.
+[37:44] I just want to push these electrons down.
+[37:47] I want to get rid of them from the channel.
+[37:49] Okay?
+[37:50] I want to get rid of them from the channel.
+[37:52] If there is no charge from the gate, then how will the current flow?
+[37:55] Think about it.
+[37:57] How will the current flow become?
+[38:02] Priyanshu is saying, Sir, please tell me again what will happen if we apply minus VGS.
+[38:07] Look, I said that there is a negative voltage here.
+[38:11] What does negative voltage mean?
+[38:13] That there is a negative charge here.
+[38:15] The electric field of negative charge is always towards the charge.
+[38:21] So, this black arrow is telling you that the electric field is towards the charge.
+[38:25] That is, it is towards the negative charge.
+[38:27] So, it is upwards.
+[38:28] This is why the electron kept in the end region.
+[38:31] In the end region, these are free electrons.
+[38:34] Due to pentavalent impurity.
+[38:36] So, those electrons were removed from here.
+[38:39] The country was removed.
+[38:41] Now, if there is no electron here and no end region,
+[38:45] then there will be a problem in flowing the current.
+[38:48] Because the way the current was flowing, it was the way that you removed it.
+[38:53] By removing the electron from there.
+[38:55] And what did I say?
+[38:56] The electric field is more towards the drain.
+[38:59] Because the drain and the gate.
+[39:01] Suppose there is minus 5 on the gate and plus 10 on the drain.
+[39:04] So, there is a difference of 15 volts between the gate and the drain.
+[39:07] There is a difference of 5 volts between the gate and the source.
+[39:10] The source is zero.
+[39:11] There is a difference of minus 5 on the gate and plus 10 on the drain.
+[39:14] When there is a difference of voltage here,
+[39:16] then there will be more electric field here.
+[39:18] So, where will the channel be removed first?
+[39:21] It will be removed near the drain.
+[39:24] The channel will start removing from the drain.
+[39:28] Okay?
+[39:31] Did you understand what I said?
+[39:32] Now, tell me if anyone has any doubt.
+[39:36] Is it clear?
+[39:37] Now, Vishal Ji is asking how the channel is made.
+[39:42] Vishal brother, see what was written here.
+[39:45] Already the end channel is present between source and drain.
+[39:48] The channel is created by means of doping.
+[39:51] The channel is made by doping there.
+[39:53] I have already told you how the channel is made.
+[39:55] I have already made the channel.
+[39:57] I have not made it in depletion MOSFET.
+[39:59] The manufacturer has made it.
+[40:05] Okay, brother.
+[40:08] Now, see what happens with this reason.
+[40:10] If we talk about its characteristic.
+[40:14] So, it is also characteristic of JFET type.
+[40:22] I am telling you on a very basic level.
+[40:24] Don't think that if you read this, you will get EDC.
+[40:27] There are a lot of things ahead in EDC.
+[40:30] Especially in MOSFET and semiconductor in physics.
+[40:36] So, see what will happen in the beginning?
+[40:39] Till the time the channel is made,
+[40:43] the current will increase.
+[40:45] At one time, the current will saturate you.
+[40:49] Okay?
+[40:53] So, your characteristic comes like JFET.
+[40:55] It was also in BJT.
+[40:58] The children who don't see JFET, it's okay.
+[41:02] You also saw it in BJT.
+[41:05] Okay?
+[41:09] And here,
+[41:12] this is your
+[41:14] stop.
+[41:20] This is your intersection from this type.
+[41:24] These are different graph plotted for VGS.
+[41:27] See, like VGS is equal to
+[41:31] minus 2 volt.
+[41:32] The channel is small.
+[41:33] The current is reduced.
+[41:35] VGS is equal to minus 1 volt.
+[41:37] The current is a little more.
+[41:39] And when VGS was zero, the entire channel was present.
+[41:42] So, the current was the most.
+[41:44] So, when you are making VGS more negative,
+[41:48] when you are making VGS more negative,
+[41:51] the channel is getting smaller.
+[41:53] You are getting less current.
+[41:55] This region where the current and voltage are directly proportional.
+[41:59] What do we call this?
+[42:01] Ohmic region
+[42:03] or linear region.
+[42:08] And where this current is constant,
+[42:10] we call it saturation.
+[42:12] See, the opposite definition is from BJT.
+[42:15] In BJT, the constant region was called active.
+[42:18] The back one is called saturation.
+[42:20] But in MOSFET, the back one is called linear.
+[42:22] The front one is called saturation.
+[42:24] So, the definition is different in both linear and saturation.
+[42:28] It is different in both.
+[42:30] Is it clear?
+[42:33] And see, another graph of depletion MOSFET is similar to JFET.
+[42:38] Actually, the depletion MOSFET is similar to JFET.
+[42:43] Depletion MOSFET is similar to JFET.
+[42:46] That is why you will get many graphs similar.
+[42:57] See,
+[42:59] here you studied JFET.
+[43:02] This was the pinch off voltage.
+[43:04] Sir, what is this pinch off?
+[43:07] Pinch off means,
+[43:09] where the channel ends.
+[43:12] That is, the channel is completely removed.
+[43:15] If you increase the negative voltage of VGS,
+[43:19] then your channel will disappear at one time.
+[43:24] That is called pinch off.
+[43:28] So, if you go into depletion mode,
+[43:32] then you go this way.
+[43:35] That is, where you put VGS negative.
+[43:37] As I have put it now.
+[43:39] If you start putting VGS positive,
+[43:41] then the VGS negative was ending the channel.
+[43:44] The positive channel will increase.
+[43:47] So, it is called enhancement mode.
+[43:50] What will it do?
+[43:52] Instead of finishing the channel, it will increase the channel.
+[43:55] How will positive voltage attract electrons?
+[43:59] So, more electrons will be collected in the channel.
+[44:03] If more electrons will be collected in the channel,
+[44:06] then the channel will be bigger.
+[44:08] And the current can flow more easily.
+[44:12] Current can flow more easily.
+[44:15] Now see, the pinch off thing is done.
+[44:17] Sir, there will be no cut-off in this.
+[44:19] There will be no cut-off at all.
+[44:22] Here, be happy.
+[44:24] This is called the pink line, cut-off.
+[44:30] Okay?
+[44:31] So, this is your cut-off.
+[44:33] It is clear now.
+[44:35] Sir, what is the difference between power electronics and analog MOSFET?
+[44:38] Architect, do you have power electronics?
+[44:40] Tell me this.
+[44:42] Do you have power electronics?
+[44:44] Is it easy or electrical?
+[44:46] Which branch? Tell me.
+[44:48] Now see, how do we represent this?
+[44:51] To represent this, look at the gap between the gate and the drain source.
+[44:56] This gap is called insulation.
+[44:59] Insulation.
+[45:00] And this gap means that the gate is not directly connected to the drain and source.
+[45:05] The gate is not directly connected to the drain and source.
+[45:09] And what is the other thing?
+[45:11] This solid line.
+[45:13] This solid line is between the drain and source.
+[45:18] This is the solid line.
+[45:24] That channel already present between source and drain.
+[45:31] That is, the way to go to current between source and drain is already present.
+[45:38] Architect, when you read power electronics, you will understand.
+[45:42] Now I cannot bring power electronics in analog.
+[45:46] But I can definitely bring analog in power electronics.
+[45:52] Okay?
+[45:53] Is this clear?
+[45:54] Now after this, see what is it?
+[45:57] Hey, brother, wait, wait.
+[45:59] All people, explain to him what is the difference.
+[46:02] Are you seeing?
+[46:03] Right now, they are reading fresh power electronics.
+[46:05] Susobhan, Krithibas.
+[46:07] Susobhan is writing drift layer extra.
+[46:09] This is a vertical region rather than horizontal.
+[46:13] So, dear, if you read power electronics architect and read from me,
+[46:17] then I will read power MOSFET in detail and explain the difference.
+[46:22] Now see, there is an arrow inside the body.
+[46:26] The meaning of going inside the arrow in the body is
+[46:29] body is P type.
+[46:31] If P type body is a substrate, then this is an N channel MOSFET.
+[46:37] It is an N channel depletion type MOSFET.
+[46:45] Okay?
+[46:47] Because your P is a substrate.
+[46:51] Now look at the other one.
+[46:53] The arrow is coming out of the body.
+[46:56] When the arrow comes out of the body, this means N type.
+[47:00] Because current comes out of N, it enters from P, right?
+[47:03] Think in the terms of PN junction.
+[47:05] The current comes out of P and comes out of N.
+[47:09] Okay?
+[47:10] So, this is the body N type.
+[47:12] If the body is N type, then channel P will be made.
+[47:14] P channel depletion type MOSFET.
+[47:20] Depletion type MOSFET.
+[47:24] Do you understand?
+[47:30] Tell me, do you understand?
+[47:33] How to judge?
+[47:35] Whether the device is P channel or N channel.
+[47:38] Sir, what happens in P channel?
+[47:40] Dear, the construction here, you have written P substrate down here.
+[47:44] So, instead of P, N becomes N, instead of P.
+[47:47] What happens here?
+[47:50] Here P plus is here, here P is here, here P plus is also here.
+[47:54] It happens like this.
+[47:55] P plus source, P channel, P plus drain and here N substrate.
+[48:00] And then the voltage also looks wrong.
+[48:02] Like you are putting negative on VGS, then you are putting positive on VGS.
+[48:07] Now you are putting positive on VDS, then you are putting negative on VDS.
+[48:12] Understand?
+[48:13] Then the potential of source is more than drain.
+[48:16] Now the potential of drain is more than source.
+[48:19] Okay?
+[48:20] It's clear.
+[48:21] Tell everyone here, is depletion MOSFET clear?
+[48:24] Is depletion MOSFET clear or not?
+[48:27] Tell them quickly.
+[48:29] Tell them quickly.
+[48:36] Clear?
+[48:38] Yes, all the conditions get reversed.
+[48:42] Come on.
+[48:45] Yes.
+[48:46] Now look at the triode region.
+[48:48] Triode region means linear or ohmic region.
+[48:52] Who are you talking about?
+[48:54] Linear or ohmic region.
+[49:00] Here, your current comes in MOSFET.
+[49:07] Depletion type MOSFET.
+[49:09] First, what is the condition of it?
+[49:12] Look at the condition.
+[49:14] VDS less than equal to VGS plus mod VT.
+[49:23] VT is threshold voltage.
+[49:25] What is VT here?
+[49:27] Threshold voltage.
+[49:29] Okay?
+[49:30] Just a minute, kids.
+[49:32] What is VT here?
+[49:34] Threshold voltage.
+[49:36] Which is threshold voltage?
+[49:38] Just go to enhancement mode and understand.
+[49:43] Alright.
+[49:44] This is the threshold voltage.
+[49:49] Okay?
+[49:50] What is VT here? It is threshold voltage. What is threshold voltage? It will be understood in enhancement mode.
+[50:02] When the enhancement type MOSFET is read, it will be understood better.
+[50:08] So, the drain current that is going through the drain is the value of 2k VGS plus VT into VDS minus VDS square by 2.
+[50:37] So, N type MOSFET will be P channel. No, it will be N channel MOSFET. N type MOSFET is one thing.
+[50:44] The thing is N channel MOSFET's substrate will be P type. Okay? N channel MOSFET's substrate will be P type.
+[50:58] Understood? So, N type MOSFET means N channel. It does not mean that it is substrate N. N channel.
+[51:07] Is it clear? VT threshold voltage is there. So, I will tell you in enhancement type MOSFET.
+[51:13] Ashok, clean your ears. How will it work? It is a good habit to clean your ears.
+[51:22] Yes, you have to remember the equation of ID. It will also come in enhancement MOSFET.
+[51:29] And doubt out plus, what is the name? If you want to derive this equation, then read EDC.
+[51:36] It comes in EDC. This equation is fine. I will not derive it.
+[51:39] N channel means body P type. Yes, and P channel means body N type.
+[51:46] Okay? What is K here? K is KNW by 2L. What is KN?
+[51:56] What is KN? KN is mu N COX. Mu N is mobility of electron. Okay?
+[52:12] And COX is Oxide Capacitance. Which is epsilon OX by T OX. Oxide permittivity upon thickness of oxide.
+[52:27] Unit Farad per meter square. Okay? Farad per meter square.
+[52:33] What is W here? W is the width of the channel. L is the channel length.
+[52:41] W is the channel width. L is the channel length. Okay?
+[52:50] In our course, we do not have to derive this equation. We eventually have to put MOSFET in the circuit.
+[52:57] Okay? Now I am telling you what is the operating region of MOSFET.
+[53:01] And then what is the current in it? What is the condition of that operating region?
+[53:06] Aman bhai, you must remember it now. Okay? Now saturation region.
+[53:14] What is the condition of saturation region? Please listen carefully.
+[53:18] Now your questions are getting more silly.
+[53:22] VDS is greater than VGS plus mod VT.
+[53:29] And in such a situation, what is your current?
+[53:33] K VGS plus mod VT square.
+[53:42] And you know, this is the region of our interest.
+[53:45] Because as you see, in BJT, this region you said active, right?
+[53:49] This region you said active. And here your amplifier was operated.
+[53:54] That is, it came into the Q point active region.
+[53:56] Such a MOSFET will also work like an amplifier, in the saturation region.
+[54:02] The region is the same. BJT's bus has changed its name.
+[54:06] So here MOSFET works as an amplifier in the saturation region.
+[54:12] And MOSFET works as a switch in cut-off and the triode region.
+[54:18] In cut-off and the triode region.
+[54:21] This is the triode which is omic and linear.
+[54:23] So if you want to work MOSFET like a switch, then do it in triode or cut-off.
+[54:28] And if you want to work like an amplifier, then do it in saturation.
+[54:33] If you want to work like an amplifier, then do it in saturation.
+[54:37] Is this clear? Tell me.
+[54:39] These two equations are clear.
+[54:41] With the comparison of VDS and VGS.
+[54:43] With the comparison of VDS and VGS, your decision is operating region.
+[54:50] What is your decision? Operating region.
+[54:54] Is the matter clear?
+[54:57] Is everyone clear?
+[54:58] Let's go.
+[54:59] Look at this. I can connect it with JFET too.
+[55:01] But I am not connecting it with JFET.
+[55:04] What did we say in JFET?
+[55:06] This characteristic on the basis of this.
+[55:10] The current on VGS-0 is called IDSS.
+[55:15] Remember?
+[55:16] The current on VGS-0 is called IDSS.
+[55:19] So this current can be called IDSS.
+[55:22] You can keep VGS-0 and take it out.
+[55:27] What will you say for the cut-off region?
+[55:30] You will say for the cut-off region.
+[55:32] VGS is less than VT.
+[55:37] That is, we apply more negative voltage
+[55:52] than threshold voltage.
+[55:56] Its threshold voltage is negative.
+[56:03] We apply more negative voltage than threshold voltage
+[56:07] to remove the channel.
+[56:10] And as soon as the channel is removed,
+[56:14] the ID will be zero.
+[56:18] Let me quickly explain you all things.
+[56:21] What is happening?
+[56:22] The channel is already present here.
+[56:25] How is the channel already present?
+[56:27] Because between drain and source,
+[56:29] we have created an anti-pregnancy region
+[56:34] that connects the drain and source region.
+[56:37] We did not need a gate in this.
+[56:40] We did not need a gate to make a channel.
+[56:44] So we said to the gate,
+[56:45] come on, side-hut.
+[56:46] The channel became without you.
+[56:48] Now the gate got angry.
+[56:49] So what did he say?
+[56:50] If I cannot make a channel,
+[56:52] then what happened?
+[56:53] If I can, then I can.
+[56:55] If I can, then I can.
+[56:57] So what did he do?
+[56:58] If you apply negative voltage on the gate source,
+[57:01] the channel will become less and less.
+[57:04] And one such voltage
+[57:06] where the channel disappears completely,
+[57:09] that is your threshold voltage.
+[57:13] That is your threshold voltage.
+[57:16] Do you understand?
+[57:17] So what will you tell him?
+[57:19] You will tell him threshold voltage.
+[57:21] The VT here is less than zero.
+[57:27] It is value of VGS
+[57:32] required
+[57:38] to end
+[57:41] or to remove channel.
+[57:48] It is similar to pinch-off voltage.
+[57:51] So those who read JFET,
+[57:53] there they read pinch-off voltage.
+[57:56] So it is very similar to your pinch-off voltage.
+[58:00] Even there he said,
+[58:02] if VGS is more negative than pinch-off voltage,
+[58:05] then you can remove the channel here.
+[58:08] The same thing is doing your threshold voltage here.
+[58:12] The same thing is doing your threshold voltage.
+[58:14] Look, if I want,
+[58:16] then if I compare it and show you,
+[58:18] what will happen?
+[58:19] Do you understand?
+[58:21] At VGS is equal to zero.
+[58:26] Those who did not do JFET,
+[58:28] do not pay attention to this.
+[58:30] ID is K mod VT square.
+[58:35] And you call this current IDSS.
+[58:38] So from here K becomes
+[58:41] IDSS by mod VT square.
+[58:48] So what can you translate ID to in the equation?
+[58:52] K, right?
+[58:54] So IDSS
+[59:02] by mod VT square.
+[59:19] So if you take mod VT square inside,
+[59:33] since VT is negative
+[59:37] and for n-channel MOSFET,
+[59:42] n-channel depletion MOS
+[59:49] So what will you say?
+[59:50] Mod of VT.
+[59:51] How do you remove the mod of negative numbers?
+[59:53] By taking their negative.
+[59:55] That is, mod of minus 2 is plus 2.
+[59:58] So you can write it as minus of minus 2.
+[60:03] Now look, the equation has come to be recognized.
+[60:06] The same is coming, JFET.
+[60:08] What happened instead of VP?
+[60:10] VT.
+[60:14] That is why the depletion type MOSFET works as JFET.
+[60:19] And JFET has the same equation.
+[60:22] Instead of pinch off, it is thresholded.
+[60:25] Instead of pinch off, it is thresholded.
+[60:27] Do you understand?
+[60:28] The children who did not do JFET,
+[60:30] do not pay attention to this part.
+[60:32] It was important for them till here.
+[60:34] The blue part was important for them.
+[60:37] Do not pay attention to the green one.
+[60:39] Because JFET did not do it.
+[60:40] It has become meaningless.
+[60:42] Even if you do not know, it is fine.
+[60:44] I just wanted to tell you the purpose of this.
+[60:47] Depletion MOS.
+[60:50] Depletion MOS is analogous to JFET.
+[60:57] There too, the gate voltage used to be negative.
+[61:02] The channel used to be small.
+[61:04] Here too, the gate voltage used to be negative.
+[61:06] The channel used to be small.
+[61:08] Okay?
+[61:09] So, you will not have to remember anything else in Depletion MOS.
+[61:13] When I will make you an enhancement MOSFET,
+[61:16] I will tell you what changes you will make for Depletion MOSFET.
+[61:20] Okay?
+[61:21] The sign of threshold voltage changes.
+[61:23] If you take enhancement MOSFET of N channel,
+[61:27] its threshold voltage is positive.
+[61:29] If you take the N channel of Depletion MOSFET,
+[61:32] then threshold voltage is negative.
+[61:34] Okay?
+[61:35] That is the change.
+[61:36] If you remember enhancement,
+[61:38] then you can turn the sign of threshold voltage and make Depletion.
+[61:46] Okay?
+[61:47] Is it clear?
+[61:49] Go ahead.
+[61:52] Now, come to enhancement type MOSFET.
+[61:55] On enhancement type MOSFET,
+[61:57] we say that there is no channel present from the beginning.
+[62:00] The contract of making a channel is given to the gate contractor.
+[62:06] He was told to make a bridge between source and drain.
+[62:09] There was no bridge from the beginning.
+[62:11] Okay?
+[62:12] Think about it.
+[62:13] Depletion MOSFET is a contractor who wants to make a bridge.
+[62:18] But we said that the bridge was made earlier.
+[62:21] The bridge was made earlier.
+[62:23] So, he said that he made a bridge without me.
+[62:26] How?
+[62:27] So, he dropped the bridge.
+[62:29] He dropped the bridge.
+[62:30] How?
+[62:31] By using negative voltage.
+[62:32] Now, in enhancement type, this is a good contractor.
+[62:35] He was told that there is no way between source and drain.
+[62:39] We need a high speed corridor.
+[62:41] We need a high speed bridge.
+[62:42] So, he is making a flyover between the bridge.
+[62:45] Whatever you want to call it.
+[62:46] Whatever you want to call it.
+[62:47] He will create a way between drain and source.
+[62:50] That is, if no voltage is applied on the gate,
+[62:54] then no matter how much voltage you apply to drain to source,
+[62:58] the current will not flow.
+[63:00] The current will not flow.
+[63:03] Okay?
+[63:04] Did you understand?
+[63:06] If VGS is 0,
+[63:12] no channel is present between...
+[63:26] Look at this MOSFET.
+[63:27] It is more important for us.
+[63:29] We will get a question on this.
+[63:31] No channel is present between drain and source.
+[63:35] So, no matter how high,
+[63:43] no matter how high VDS is,
+[63:51] the current cannot flow.
+[63:54] The current cannot flow between source and drain.
+[64:04] Brother, you will not be able to go to the charge carrier.
+[64:07] And your current will not be able to go.
+[64:10] There will be no flow between drain and source.
+[64:15] Did you understand?
+[64:16] There is no way.
+[64:17] There is no way.
+[64:18] You apply it.
+[64:19] You apply it.
+[64:20] There will be no voltage between drain and source.
+[64:23] Because there will be no bridge between drain and source.
+[64:26] If there is no bridge between drain and source,
+[64:28] no matter how high the current is,
+[64:31] the current will not flow.
+[64:33] The gate is not a contractor.
+[64:36] The gate is not a road.
+[64:37] The gate is a transport minister.
+[64:40] The channel is a road that needs to be built.
+[64:43] There is no bridge or road.
+[64:45] There is no bridge or road.
+[64:47] You can say anything.
+[64:48] Let me tell you one more interesting fact.
+[64:51] If we want to make the whole device with silicon,
+[64:55] we do not have to get metal.
+[64:57] We can make this metal layer with polysilicon.
+[65:02] What is polysilicon?
+[65:04] This is a polymer of silicon.
+[65:07] If you make it grow,
+[65:09] it works as a conducting material.
+[65:12] If it works as a conducting material,
+[65:14] then you will not need metal.
+[65:16] You will not have to get aluminum.
+[65:18] Did you understand?
+[65:19] Let's start its study.
+[65:22] First of all, I will talk about accumulation mode.
+[65:26] In which I will talk about accumulation mode.
+[65:29] What happens in accumulation mode?
+[65:32] I will make you understand.
+[65:35] Let me tell you.
+[65:59] There is a silicon layer in the middle.
+[66:06] On top of this, we have deposited a metal layer or polysilicon.
+[66:11] Whatever you like.
+[66:13] Whatever material you like.
+[66:18] Put it here too.
+[66:20] There is no problem.
+[66:27] Now look at this.
+[66:29] If you have this n plus region here,
+[66:33] this is n plus region and this is p region.
+[66:42] Now what does accumulation mode mean?
+[66:45] You people have put negative voltage on the gate.
+[66:53] You have put negative voltage on the gate.
+[66:57] Between the gate source.
+[67:00] If you put negative voltage here.
+[67:07] What will happen if you put negative voltage on the gate?
+[67:10] There will be a negative charge here.
+[67:12] How will this electric field be made?
+[67:16] This electric field will be made on its own.
+[67:26] It has made an electric field on its own.
+[67:29] If it has made an electric field on its own.
+[67:33] Then these holes in the P substrate.
+[67:37] These holes will attract your negative terminal.
+[67:43] This is how the holes will go.
+[67:46] There will be force in the direction of the electric field.
+[67:50] What happens in accumulation mode?
+[67:53] If you put negative on VGS.
+[67:56] There is a negative charge here on the gate terminal.
+[68:00] Because of which an electric field is made towards the gate terminal.
+[68:04] Where is it made?
+[68:05] Towards the gate terminal.
+[68:07] Which attracts the holes.
+[68:09] So more holes are collected in the gate region.
+[68:13] More holes are collected in the gate region.
+[68:17] What are we saying here?
+[68:19] Look at VGS is negative.
+[68:22] Negative charge present at gate terminal.
+[68:44] Electric field induced.
+[68:51] Towards the gate terminal.
+[69:01] So what happened with this?
+[69:03] Holes accumulate under the gate region.
+[69:14] That is why the accumulation mode is called.
+[69:16] Do you understand?
+[69:17] Holes will accumulate like this.
+[69:23] Is it clear?
+[69:25] Yes.
+[69:27] If there are some holes in the P type region.
+[69:30] They will also be removed.
+[69:32] Amman is right.
+[69:34] He will pull the holes towards himself.
+[69:37] And he will pull the electrons towards him.
+[69:39] He will pull the holes towards himself.
+[69:41] He will pull the electrons towards him.
+[69:43] Is it clear?
+[69:45] Let's move on.
+[69:47] The next mode is Depletion mode.
+[69:50] What happens in Depletion mode now?
+[69:55] What do we do in Depletion mode?
+[69:57] We put VGS positive.
+[70:01] What do we do?
+[70:02] Positive voltage is applied on VGS.
+[70:07] Is this the polysilicon?
+[70:20] Sorry, this is the SIO2 layer.
+[70:22] We put metal here.
+[70:26] We put metal here.
+[70:36] Now here.
+[70:46] You put positive voltage on the gate.
+[70:52] You put positive voltage on the gate.
+[70:54] There is a positive charge here.
+[70:57] You have a positive charge here.
+[71:01] This is N plus.
+[71:03] This is N plus.
+[71:05] This is P substrate.
+[71:07] Now what will happen?
+[71:08] This positive charge will form an electric field.
+[71:12] And what will it form?
+[71:13] Downward.
+[71:15] Look, there is such an electric field.
+[71:19] Is it clear?
+[71:25] This electric field will remove your holes.
+[71:31] It will remove these holes from the channel region.
+[71:35] Correct.
+[71:37] And there it will attract the electrons towards itself.
+[71:42] It will pull the electrons towards the channel.
+[71:47] If these P-type substrate holes are removed,
+[71:51] then the region below the channel will be depleted.
+[71:56] It will be depleted.
+[71:58] So it will be depleted.
+[72:00] That means the charge carrier will be reduced.
+[72:05] So we are saying VGS is positive.
+[72:10] But VGS is less than VT.
+[72:16] It is less than threshold.
+[72:18] I will explain what threshold is now.
+[72:20] So positive charge at gate terminal.
+[72:26] You have a positive charge on the gate terminal.
+[72:33] Because of positive charge, the electric field
+[72:37] became away from gate.
+[72:46] It became away from gate.
+[72:48] If it became away from gate,
+[72:51] then the holes pushed downwards.
+[73:00] Okay.
+[73:04] So the region near gate gets depleted of holes.
+[73:16] Your holes will start decreasing there.
+[73:19] Did you understand?
+[73:20] Why did you say depletion?
+[73:22] Gets depleted of holes.
+[73:31] Now if you keep increasing the positive voltage,
+[73:38] then these holes will continue to run away from you.
+[73:42] Electrons will continue to accumulate under your channel.
+[73:47] Do you understand?
+[73:48] Electrons will continue to accumulate.
+[73:50] And the drain current will remain zero.
+[73:53] Because no channel has been formed yet.
+[73:59] So what are we saying?
+[74:00] Increase the voltage VGS.
+[74:03] The holes will run away from your channel.
+[74:07] And electrons will start accumulating under the channel.
+[74:10] So there will be a time,
+[74:13] that the quantity of electrons under the channel,
+[74:16] not just under the channel,
+[74:18] but under the entire material.
+[74:20] The quantity of electrons under the channel
+[74:23] will be more than the hole.
+[74:25] And it is called inversion mode.
+[74:28] What does it say?
+[74:29] Inversion mode.
+[74:30] Because if the concentration of electrons
+[74:33] is more than the hole,
+[74:35] then it will behave as an n-type semiconductor.
+[74:40] Okay.
+[74:41] It will behave as an n-type semiconductor.
+[74:44] Did you understand?
+[74:46] Because if the number of electrons
+[74:48] is more than the hole,
+[74:50] then it will become n-type.
+[74:52] Now Amit ji is asking,
+[74:53] can the condition of n substrate
+[74:55] come in the diagram?
+[74:56] Absolutely.
+[74:57] If you were reading the p-channel MOSFET here,
+[75:00] its accumulation, depletion, inversion,
+[75:03] then the n-type substrate would be here,
+[75:06] p-plus would be here, p-plus would be here.
+[75:08] Then you would not have put a positive voltage on the gate
+[75:11] and would have been negative.
+[75:12] Let's flip everything, Amit.
+[75:14] If we talk about p-channel MOSFET,
+[75:16] then why are you studying n-channel
+[75:18] and not p-channel?
+[75:19] Because most of the time,
+[75:20] our n-channel is used.
+[75:22] p-channel is not used.
+[75:24] Okay.
+[75:25] To do it, p-channel exists.
+[75:27] Manufacture is also done.
+[75:29] But what is most commonly used?
+[75:31] n MOS.
+[75:32] Now see what will happen in inversion mode?
+[75:35] If I draw again.
+[75:38] Why did you understand the name of inversion?
+[75:40] Why did you understand the name of inversion?
+[75:42] You have made p-type material into n-type.
+[75:44] You have converted it into n-type
+[75:47] by adding more electrons to it.
+[75:50] This is our specialty.
+[75:52] We will also make p into n.
+[75:57] These are electrical-electronic engineers.
+[76:00] Can you see?
+[76:02] Can you call this magic?
+[76:11] Now what did we do here?
+[76:20] Did you put voltage on the gate?
+[76:29] And put it on the drain.
+[76:31] Okay.
+[76:32] Put it on the gate and drain.
+[76:35] Now what are we saying here?
+[76:37] First of all, let's shade the metal a little.
+[76:44] Now we are saying here
+[76:47] that under the channel
+[76:50] under the channel
+[76:53] under your gate
+[76:56] your electrons have increased
+[76:59] from the hole.
+[77:02] Okay.
+[77:03] And if this happens, it will behave
+[77:05] as a n-type semiconductor.
+[77:08] So we are saying
+[77:10] when
+[77:13] VGS is greater than VT
+[77:18] electron concentration
+[77:21] under gate region
+[77:26] under gate region
+[77:29] Yesterday someone was saying
+[77:31] tell me to cover it with a basic.
+[77:33] Is it working or not?
+[77:35] Is greater than hole concentration.
+[77:38] Therefore,
+[77:40] region behaves as n-type.
+[77:48] So we had to do this.
+[77:50] We had to make an n-channel.
+[77:52] So n-channel is formed.
+[78:01] Okay.
+[78:02] Now if your VDS is greater than 0
+[78:07] VDS is greater than 0
+[78:10] then your electrons will go
+[78:13] drain from source
+[78:16] and your current
+[78:20] current will come from the drain source.
+[78:28] Amit, tell me.
+[78:29] When will n-type substrate come?
+[78:32] If p-channel is MOSFET
+[78:35] then it came.
+[78:38] Okay.
+[78:41] If VDS is greater than 0
+[78:43] then what happened with this?
+[78:45] Electrons started going drain from source
+[78:48] the left source region
+[78:50] I am not writing again and again
+[78:52] understand
+[78:54] and the current started going from the drain source.
+[78:59] Okay.
+[79:06] Source or drain.
+[79:10] Don't worry.
+[79:11] All analogs are not important.
+[79:12] What will you do for electrical people?
+[79:14] Leave all.
+[79:15] In every topic,
+[79:16] can we leave this or that too?
+[79:18] Will you read something
+[79:19] or will you read nothing?
+[79:23] See, I have shown you here
+[79:24] while making the channel.
+[79:26] Here,
+[79:27] what will you say to the voltage?
+[79:29] You will say
+[79:33] that the minimum value
+[79:37] of
+[79:39] VGS
+[79:42] at which
+[79:46] inversion
+[79:51] takes place
+[79:53] and I have made so many videos
+[79:55] on which topic you have to read
+[79:57] and which not to read.
+[79:59] It's called threshold voltage.
+[80:12] Okay.
+[80:13] It's called threshold voltage.
+[80:16] Now see,
+[80:17] I have shown you the dimension here
+[80:19] which I have just written W by L.
+[80:22] So see,
+[80:23] this region is the oxide
+[80:25] which I am shading with blue.
+[80:35] Okay.
+[80:39] This one
+[80:42] is called
+[80:43] oxide thickness.
+[80:45] What is it called?
+[80:47] Oxide thickness.
+[80:49] So your COX
+[80:51] is the oxide capacitance.
+[80:53] Oxide Thickness,
+[80:54] permittivity by
+[80:56] thickness.
+[80:57] Okay.
+[80:58] This is L,
+[80:59] channel length.
+[81:01] What is this basically?
+[81:03] This is the distance
+[81:04] between source and drain.
+[81:07] And the third dimension
+[81:10] W
+[81:11] is called channel width.
+[81:14] What is it called?
+[81:15] Channel width.
+[81:18] And if you take W by L,
+[81:22] then you call it
+[81:23] aspect ratio.
+[81:24] What do you call it?
+[81:28] Aspect ratio.
+[81:30] Okay.
+[81:31] Yes,
+[81:32] your WT will be
+[81:33] positive in this.
+[81:35] Bablu Ji is saying,
+[81:36] why didn't you make a channel in accumulation?
+[81:38] What did Bablu Ji want from me here?
+[81:40] He wanted an electron.
+[81:42] If you were making a hole here
+[81:43] between two end regions,
+[81:45] if you make a hole here,
+[81:47] then how will he make a channel?
+[81:49] How will he make a channel?
+[81:58] Tell me,
+[81:59] do you understand?
+[82:00] Bablu Ji,
+[82:01] we have to form an N channel,
+[82:03] we have to make an electron channel
+[82:05] between the two.
+[82:06] So if you
+[82:07] collect holes in the middle,
+[82:09] when you collect holes in the middle,
+[82:11] then how will the N channel
+[82:12] become?
+[82:13] So tell me,
+[82:14] if there is any doubt about anyone,
+[82:16] look at the feeling,
+[82:17] recently,
+[82:18] the mosfet has been asked in the gate.
+[82:20] After 2015,
+[82:21] I think it came in 2022.
+[82:23] No,
+[82:24] after 2005,
+[82:25] maybe in 2021,
+[82:27] the mosfet has started coming in 2021.
+[82:30] Tell me,
+[82:31] if there is any doubt about anyone else,
+[82:33] then quickly,
+[82:34] we will move forward.
+[82:36] Is it clear to everyone?
+[82:37] So quickly,
+[82:38] the heart should be formed in the chat.
+[82:40] Now I am explaining to you
+[82:41] for almost 1.5 hours,
+[82:42] how the mosfet works.
+[82:45] If you understand,
+[82:46] then the heart should be formed.
+[82:49] See,
+[82:50] the heart,
+[82:51] the heart,
+[82:52] the heart.
+[82:53] We need to speak.
+[82:54] All the useless people.
+[83:00] What are you saying?
+[83:01] Brother,
+[83:02] Priyanshu will form
+[83:03] a depletion layer
+[83:04] under such a technical statement and channel.
+[83:06] No,
+[83:07] we have told this to N.
+[83:08] This is not N,
+[83:09] the material is P type.
+[83:11] There are a lot of electrons here.
+[83:15] Do you understand,
+[83:16] Priyanshu?
+[83:17] All the electrons are nothing else.
+[83:19] We just said that
+[83:20] the concentration of the electron
+[83:22] is more than the hole.
+[83:23] That is why it is behaving like an N.
+[83:26] It is not a type of N doping.
+[83:28] There is no donor atom here.
+[83:31] What is the majority
+[83:32] of a P type material?
+[83:35] Suppose,
+[83:36] a P type material,
+[83:38] which is substrate,
+[83:39] is P type.
+[83:41] Is it more than the hole electron?
+[83:43] Suppose,
+[83:44] there were 1000 holes in it,
+[83:45] there were 10 electrons.
+[83:47] There were 1000 holes,
+[83:48] there were 10 electrons.
+[83:49] Okay?
+[83:50] So,
+[83:51] we pushed 1000 holes down,
+[83:53] and 10 to 10 electrons
+[83:55] are connected here.
+[83:56] Now,
+[83:57] when I have connected
+[83:58] 10 to 10 electrons here,
+[83:59] there is no hole here,
+[84:00] it will look like
+[84:01] an N type material.
+[84:03] But,
+[84:04] to make an N type material,
+[84:05] we need a donor atom.
+[84:07] It is not a donor.
+[84:08] The 10 electrons
+[84:09] on the bottom,
+[84:10] on the sides,
+[84:11] on the four sides,
+[84:12] will be placed on the top.
+[84:13] Ali,
+[84:14] please,
+[84:15] do not misguide.
+[84:17] No one needs to study
+[84:18] EDC,
+[84:19] as much as I am telling you,
+[84:20] it will be done in analog.
+[84:21] Okay?
+[84:22] So,
+[84:23] epsilon is a permittivity,
+[84:24] right?
+[84:25] My children,
+[84:26] what are you doing,
+[84:27] bro?
+[84:28] Don't you know
+[84:29] the formula for Capacitance?
+[84:30] It is epsilon A by D.
+[84:31] So,
+[84:32] the area is removed.
+[84:33] That is why,
+[84:34] I am writing
+[84:35] Farad per meter square.
+[84:38] Now,
+[84:39] is everyone clear?
+[84:40] Now,
+[84:41] see how
+[84:42] we represent the
+[84:43] MOSFET.
+[84:44] Look carefully.
+[84:45] What is the
+[84:46] broken line?
+[84:47] Like,
+[84:48] there was a solid line
+[84:49] in depletion,
+[84:50] right?
+[84:51] This is the difference.
+[84:52] Here,
+[84:53] it is a broken line.
+[84:54] This is the broken line.
+[84:55] Channel does not exist.
+[84:56] Channel
+[84:57] does not exist.
+[84:58] Between
+[84:59] between
+[85:00] between
+[85:01] between
+[85:02] between
+[85:03] between
+[85:04] between
+[85:05] between
+[85:06] between
+[85:07] between
+[85:08] between
+[85:09] between
+[85:10] between
+[85:12] between
+[85:38] between
+[85:39] between
+[85:40] How is the N-channel?
+[85:47] Ok, here the arrow is outside, i.e. the body is N type.
+[85:56] If the body is N type, then channel P will be created, then P-channel MOSFET.
+[86:04] Did you understand the symbol?
+[86:08] Why is the symbol made of MOSFET?
+[86:15] No, son, where did the gate come from in the broken line?
+[86:18] The broken line means there is no way between the drain and source,
+[86:21] that is the way to make the gate.
+[86:23] The solid line means there is a channel in between the drain and source, ok?
+[86:28] Aman, son, they don't call it P type, they don't call it, they don't call it.
+[86:33] It is called N-channel MOSFET.
+[86:36] Where do you get the P type?
+[86:38] The body is P type MOSFET, you won't say anything like P type MOSFET.
+[86:42] Why are you giving it a name?
+[86:44] Its body is P type, its body is N type.
+[86:47] Its name is N-channel MOSFET, you can say anything.
+[86:51] Please don't call it P type MOSFET.
+[86:54] You will get very confused, you will misunderstand.
+[87:00] Now see, there is a way to show that you can show the arrow on the source.
+[87:04] This means that the drain current enters the drain and comes out of the source.
+[87:14] Now you will understand the thing here, son.
+[87:17] This source is similar to emitter.
+[87:27] As I told you, the emitter terminal of BJT is your source.
+[87:37] Which BJT was this?
+[87:40] Do you remember?
+[87:42] N-P-N, this is how the current is coming out of the source.
+[87:46] So this is N-channel MOSFET.
+[87:52] Many times you know that they don't show the body terminal, they show the three terminals.
+[87:56] This means that the source is entering the arrow from the source.
+[88:00] The current of the source and drain is going towards the drain from the source.
+[88:05] Where is the current going towards the drain from the source?
+[88:09] If you see BJT, here it was P-N-P.
+[88:18] So P-N-P means P-channel MOSFET.
+[88:23] Now do you remember the name?
+[88:26] If I compare P-channel and N-channel with N-P-N and P-N-P?
+[88:32] Do you understand? Tell me.
+[88:36] Son, there is only one name of one device, Zainul.
+[88:39] Where is the multiple name? Tell me.
+[88:41] N-channel MOSFET or N-MOS?
+[88:43] There is no P in it.
+[88:45] Its body is P, it has no meaning with its name.
+[88:48] There are two types of MOSFETs.
+[88:50] There are four combinations.
+[88:52] There are two types of MOSFETs, Depletion and Enhancement.
+[88:55] In Depletion, N-channel, P-channel and in Enhancement, N-channel, P-channel.
+[89:00] If you listen to Aman, you will get confused.
+[89:03] I don't know where N-channel is from P type.
+[89:07] So you can call N-channel as N-MOS or N-channel MOSFET.
+[89:11] You can call P-MOSFET as P-MOSFET or P-channel MOSFET.
+[89:16] According to the body, the name is not given.
+[89:19] I just told you the way to recognize the symbol.
+[89:22] There is an arrow in the body.
+[89:24] If the body is P type, then N-channel MOSFET will be there.
+[89:27] If the arrow is coming out of the body, then P-channel MOSFET will be there.
+[89:32] Son, the arrow was of the body.
+[89:36] Here the arrow is shown on the source.
+[89:39] Look, the arrow is not shown on the body.
+[89:41] If it is shown on the body, then it is shown inside.
+[89:46] If it is shown on the body, then it is shown outside.
+[89:49] Look at the terminal.
+[89:50] Sir, the arrow was inside and it was outside.
+[89:59] Do you understand, Zainul?
+[90:00] That is why, son, don't take every comment seriously.
+[90:03] Keep an eye on the information I am giving you.
+[90:05] If someone gives the right information in the chat,
+[90:08] If someone gives the right information in the chat,
+[90:12] I will recognize myself and say that yes, he said it right.
+[90:15] But in the chat, many children give a lot of knowledge.
+[90:19] Please don't absorb it.
+[90:21] If you want to study from the chat,
+[90:23] then what is the need to take my class?
+[90:25] I will make a session and drop it.
+[90:27] Keep talking to each other.
+[90:28] Okay?
+[90:30] Now, come to the operating region, which is about work.
+[90:33] First of all, cut-off region.
+[90:35] Cut-off region means
+[90:37] where channel does not exist.
+[90:42] Channel does not exist
+[90:47] between source and drain.
+[90:53] And when does the channel not exist?
+[90:57] This happens when the gate to source voltage is less than threshold.
+[91:03] At that time, your ID is zero.
+[91:08] If the gate to source voltage is less than threshold,
+[91:13] then your current is always zero.
+[91:16] This is clear.
+[91:18] Now, linear and triode region.
+[91:20] The channel is formed here.
+[91:23] That is, VGS is greater than VT.
+[91:25] This is what I am writing now.
+[91:28] You have to remember these things.
+[91:31] VDS is less than VGS minus VT.
+[91:36] Okay?
+[91:37] So, what happens here?
+[91:41] The drain current will be 2K.
+[91:57] This is how it will come.
+[91:59] What is K here?
+[92:01] I had already told you about K.
+[92:04] KNW by 2L.
+[92:08] And what is KN?
+[92:10] It is also called as transconductance parameter.
+[92:13] Mu and COX.
+[92:15] Now, COX, remember?
+[92:17] Epsilon OX by TOX.
+[92:20] That is, oxide permittivity
+[92:23] divided by oxide thickness.
+[92:29] Okay?
+[92:31] This is it.
+[92:33] Now, saturation region.
+[92:35] What happens in saturation region, son?
+[92:38] You increase the voltage of the drain.
+[92:41] And at one time, it comes like this.
+[92:44] What will you do, brother Priyanshu?
+[92:47] Tell me.
+[92:49] If you don't want to hear any definition again,
+[92:51] if you don't want to know anything again,
+[92:53] do it in the video behind.
+[92:54] It is easy.
+[92:55] What did I tell you about threshold voltage?
+[92:57] You know the three modes.
+[92:59] Accumulation, depletion, inversion.
+[93:01] So, the more the inversion comes on VGS,
+[93:04] that is, the concentration of the electron
+[93:08] below the gate or the gate inside the channel
+[93:10] becomes more than the hole,
+[93:12] the threshold voltage is called as threshold voltage.
+[93:14] So, the threshold voltage is the voltage
+[93:16] on which the channel becomes.
+[93:18] That is all I told you.
+[93:20] Where are you lost?
+[93:23] Now, see what is happening in saturation, son?
+[93:26] That the gate to the source voltage is increased from VT.
+[93:30] But do you know what?
+[93:32] That the VDS has increased from VGS minus VT.
+[93:38] Okay?
+[93:39] Because the voltage of the drain is increased,
+[93:42] the depletion layer will begin to be formed here.
+[93:45] And this channel will end.
+[93:48] Here, the depletion layer will begin to be formed.
+[93:52] Since you have increased the voltage of the drain a lot,
+[93:56] we are saying that the depletion layer
+[93:59] forms the voltage of the end type material.
+[94:05] Near drain terminal
+[94:15] and channel width reduces.
+[94:21] Now, when the channel width reduces,
+[94:35] the current will be almost constant.
+[94:39] It will not depend on VDS.
+[94:41] Because the channel from the drain is over.
+[94:44] When the channel from the drain is over,
+[94:47] it will not depend on the voltage of the drain.
+[94:50] The current will become constant.
+[94:52] Here,
+[94:54] ID does not depend on drain voltage
+[95:06] as channel vanishes near drain.
+[95:17] Okay?
+[95:19] So, these are the three regions of the end channel MOSFET.
+[95:23] But there is one concept that we call,
+[95:26] what happened? What did you not understand?
+[95:30] Tell me, what did you not understand in this?
+[95:32] I said that the voltage of the drain,
+[95:34] that is the end type material,
+[95:36] increased so much that it increased more than the gate.
+[95:38] The voltage of the drain increased more than the gate.
+[95:41] So, the charges collected here,
+[95:45] because of the depletion layer,
+[95:47] it began to disappear.
+[95:48] In which depletion layer?
+[95:49] In N and P.
+[95:51] In N and P, the depletion layer began to disappear.
+[95:53] So, the electron began to disappear.
+[95:55] So, your channel remained small here.
+[95:59] The channel width has become zero here.
+[96:04] So, how will the charges cross again?
+[96:11] How will the charges cross?
+[96:14] The charges will cross because of the depletion layer electric field.
+[96:19] What will happen?
+[96:20] Positive ions will be collected in N type material.
+[96:24] And negative ions will be collected in P type material.
+[96:28] Like this.
+[96:29] So, here the depletion layer has become an electric field.
+[96:33] Positive to negative.
+[96:36] And this will help the electrons to go ahead.
+[96:40] Okay?
+[96:41] So, even though the channel has ended with the drain,
+[96:45] but the depletion width is helping you in the crossover of the charges.
+[96:49] In the crossover of the charges.
+[96:52] Okay?
+[96:53] Did you understand so much?
+[96:54] Tell me.
+[96:56] Tell me quickly.
+[96:59] Tell me quickly.
+[97:05] Did you understand?
+[97:07] What can you say here?
+[97:08] What can you say here?
+[97:09] You can also say that in the saturation region,
+[97:11] the conductance of the drain to source means the slope has become zero.
+[97:15] So, the resistance tends to infinity.
+[97:19] Right?
+[97:20] When the slope has become zero,
+[97:21] then what does the current versus voltage slope mean?
+[97:24] The slope of the current versus voltage means
+[97:26] that it is the conductance.
+[97:29] So, conductance is zero,
+[97:30] which means the resistance will become infinite.
+[97:33] Is it clear?
+[97:35] Now, let's come to the channel length modulation.
+[97:38] Look, this is important.
+[97:40] What do we say here?
+[97:41] If the voltage of the drain increases more than the saturation,
+[97:46] then what will you say?
+[97:47] The depletion layer will increase more.
+[97:50] If the depletion layer increases more,
+[97:53] then the length of the channel will decrease.
+[97:57] That is called as the channel length modulation.
+[98:00] Do you understand?
+[98:01] For example, if you increase the voltage of the drain,
+[98:05] then look here.
+[98:08] Here, the depletion layer will start increasing.
+[98:15] Okay?
+[98:18] Or wait.
+[98:32] Suppose,
+[98:44] this is the depletion layer.
+[98:46] Okay?
+[98:47] Now, the more you increase the voltage of the end region,
+[98:51] the more the depletion layer will increase.
+[98:53] So, your channel will decrease here.
+[98:58] So, when the length of the channel decreases,
+[99:01] then we call it channel length modulation.
+[99:04] Okay?
+[99:05] Channel length modulation.
+[99:07] Do you understand?
+[99:09] As,
+[99:11] drain voltage
+[99:14] is increased
+[99:18] beyond saturation
+[99:27] is increased beyond saturation,
+[99:34] depletion layer
+[99:39] expands
+[99:47] and
+[99:51] channel length
+[99:57] starts to reduce.
+[100:05] Okay?
+[100:06] What do we call this?
+[100:08] Channel length modulation.
+[100:11] Now, dear, what will happen?
+[100:14] Look, the charges in the channel
+[100:17] flow because of your
+[100:19] comfortable electric field.
+[100:22] So, what do we call this?
+[100:24] Charges flow in the channel
+[100:26] and reach to the depletion layer.
+[100:30] When charges from the channel
+[100:34] reach the depletion layer,
+[100:36] then what happens there?
+[100:38] The electric field there
+[100:41] the electric field there
+[100:43] pulls these charges
+[100:45] and takes them to the drain.
+[100:49] Electric field
+[100:51] and depletion layer
+[100:55] and depletion layer
+[100:59] sweeps
+[101:02] charges to drain.
+[101:08] Okay?
+[101:09] So, this electric field
+[101:11] will quickly pull and take it.
+[101:13] It will quickly pull and take it.
+[101:15] Will it become such an electric field?
+[101:18] So, it will pull the electron like this.
+[101:20] Now, what does this mean, dear?
+[101:22] If the channel is small
+[101:24] then the electron
+[101:26] is faster.
+[101:27] Listen carefully.
+[101:28] If the channel is small
+[101:30] then the length of the channel is less.
+[101:32] I am not talking about the width.
+[101:34] I have not reduced the width of the road.
+[101:36] The width of the road is the same.
+[101:38] But the length of the road is reduced.
+[101:40] If you reduce the length of the road
+[101:42] then the width of the road is the same.
+[101:44] Will you reach the destination soon or not?
+[101:46] Tell me quickly.
+[101:47] Will you reach the destination soon or not?
+[101:51] Tell me.
+[101:52] If the length of the road is less
+[101:54] then the width of the road is the same.
+[101:56] Will you reach your destination faster?
+[101:58] Yes.
+[101:59] So, what happens here?
+[102:01] ID increases.
+[102:04] Therefore, as
+[102:07] VDS increases
+[102:10] channel length
+[102:12] decreases
+[102:16] and ID increases.
+[102:20] This has one more logic, dear.
+[102:22] If you understand this has one more logic.
+[102:24] ID
+[102:26] is proportional to
+[102:28] W by L.
+[102:30] This is coming in K, right?
+[102:32] It is coming in K.
+[102:34] So, as length reduces
+[102:38] ID increases.
+[102:41] Now, do you know what we do for this?
+[102:43] What we do for this?
+[102:46] In saturation region
+[102:50] in
+[102:53] saturation region
+[102:55] we write the current like this.
+[103:03] Now, see how much will change in length.
+[103:05] I don't know this.
+[103:07] So, let the length be as it is.
+[103:09] The factor of increment in current
+[103:13] I bring it like this.
+[103:16] Lambda is
+[103:18] unit is its volt inverse.
+[103:21] This is the channel length modulation parameter.
+[103:25] What is this?
+[103:27] Channel length
+[103:28] modulation parameter.
+[103:33] That is, what you said
+[103:35] in saturation region
+[103:37] the current will be fixed.
+[103:39] You said that
+[103:41] in saturation region
+[103:42] the current will be constant.
+[103:44] The constant will not be like this.
+[103:47] Zanual,
+[103:49] if the electrons are coming from P region
+[103:51] they are a minority carrier
+[103:53] then they will not stop the reverse bias junction.
+[103:58] Substrate was P type.
+[104:00] So, if the electrons are coming from the channel
+[104:02] easily from P type
+[104:04] then the reverse bias will not stop them.
+[104:06] It will let them go.
+[104:08] This is what happened.
+[104:10] Always think that reverse bias
+[104:12] stops the reverse bias.
+[104:14] Majority does not stop the minority.
+[104:18] Now, see what will happen.
+[104:20] The graph of IDVDS
+[104:22] will start seeing a slope in it.
+[104:24] Okay?
+[104:26] Do you understand?
+[104:28] In this, you will start seeing a slope.
+[104:36] Like this.
+[104:38] Like this.
+[104:40] Like this.
+[104:42] So, what you will say here
+[104:44] that slope is
+[104:46] non-zero.
+[104:48] That is,
+[104:50] GDS
+[104:52] is non-zero.
+[104:54] And RD
+[104:56] that is, resistance will be finite.
+[105:00] Okay?
+[105:01] In characteristics, you will get a slope.
+[105:04] It is clear.
+[105:06] Remember the factor of 1 plus lambda
+[105:08] VDS.
+[105:10] In many questions, lambda can be given
+[105:12] which will help you to
+[105:14] remove output resistance
+[105:16] or drain resistance.
+[105:18] Remember, in BJT,
+[105:20] this work was done with early effect.
+[105:22] Remember, the width of the base
+[105:24] was modulated.
+[105:26] The length of the channel
+[105:28] is modulated.
+[105:30] Modulation was also done there.
+[105:32] But the width of the base was reduced.
+[105:34] And in both the forms,
+[105:36] your current is increasing.
+[105:38] Okay?
+[105:40] Your current is increasing in both the forms.
+[105:42] Is it clear?
+[105:44] Remember, we will talk about all this
+[105:46] in some AMA, okay?
+[105:48] Not now.
+[105:50] So, see this is the
+[105:52] ID versus VGS graph.
+[105:54] ID versus VGS.
+[105:56] What do you see here?
+[105:58] This is your threshold voltage.
+[106:00] So, you can see below
+[106:02] threshold voltage.
+[106:04] You are in the cut-off region.
+[106:08] You are in the cut-off region.
+[106:14] And what will you say to this graph?
+[106:20] Transfer.
+[106:24] Characteristics.
+[106:28] Okay, tell me what will be
+[106:30] the output?
+[106:32] What will be the output from its slope?
+[106:34] If I take the derivative of
+[106:36] transfer characteristics,
+[106:38] what should I get if I take its slope
+[106:40] at some point?
+[106:42] Tell me quickly.
+[106:44] Today's session is going to be over.
+[106:46] Tell me quickly. It's going to be fun.
+[106:48] Because your concepts are getting
+[106:50] clearer. Very good.
+[106:52] Transconductance.
+[106:54] So, all the parameters of
+[106:56] MOSFET's AC model
+[106:58] are coming after BJT.
+[107:02] Transconductance was there.
+[107:04] IC versus VBE
+[107:06] was there.
+[107:08] ID versus VGS.
+[107:10] Terminals are all the same.
+[107:12] Terminals are all the same.
+[107:14] There was a collector, there is a drain.
+[107:16] There was a base emitter.
+[107:18] There is a gate source.
+[107:20] Transconductance came.
+[107:22] There are only two things in hybrid Pi.
+[107:24] GM and R0.
+[107:26] You might say, no sir.
+[107:28] R Pi is also required.
+[107:30] There is no gate current here.
+[107:32] So, there will be no R Pi.
+[107:34] Here, it will be infinite.
+[107:36] Here, it will be open circuit.
+[107:38] R Pi was written.
+[107:40] VT, thermal voltage upon I B.
+[107:42] There will be a base current
+[107:44] here. Gate current.
+[107:46] And the gate current is zero.
+[107:48] So, what will be the resistance of R Pi?
+[107:50] Infinite. Now, remember that
+[107:52] there were three parameters in hybrid Pi.
+[107:54] R Pi, GM, R0.
+[107:56] Here is R0.
+[107:58] R Pi is infinite.
+[108:00] And in the next graph, I have shown you
+[108:02] GM.
+[108:04] What did you show? GM.
+[108:06] Did you shine everyone?
+[108:08] Now, quickly show P channel
+[108:10] MOSFET also.
+[108:12] Otherwise, you will keep crying.
+[108:14] In P channel MOSFET,
+[108:16] see, we take N type.
+[108:18] Okay. So, what do we say in this?
+[108:20] 2P plus
+[108:22] resistance
+[108:24] R diffused
+[108:28] R diffused
+[108:30] Now, the connection is sitting.
+[108:32] From BJT.
+[108:34] N
+[108:36] and type substrate.
+[108:38] Do you know, I also clicked today
+[108:40] that the R0 in BJT
+[108:42] comes from base width modulation.
+[108:44] And here, channel length
+[108:46] is coming from modulation.
+[108:48] I have never seen this analogy myself.
+[108:50] I never thought that
+[108:52] modulation was also there.
+[108:54] Otherwise, R0 would not come there.
+[108:56] Modulation is also here.
+[108:58] So, modulation is coming here.
+[109:00] The length of the channel and the width of the base.
+[109:02] By the way,
+[109:04] the width of the base was long.
+[109:06] And the length of the channel is here.
+[109:08] If you think in 2D,
+[109:10] how did I say the width of the base
+[109:12] that was the length of the base.
+[109:14] Was it less?
+[109:16] The same dimension of the channel is less here.
+[109:18] The same dimension of the channel is less here as well.
+[109:20] The same dimension of the channel is less here as well.
+[109:22] Now, the working principle is also the same.
+[109:24] The working principle is also the same.
+[109:26] But,
+[109:30] we apply
+[109:34] negative gate voltage
+[109:42] to
+[109:44] collect
+[109:46] holes
+[109:50] under gate terminal.
+[109:52] The working principle is also the same.
+[109:54] We are applying
+[109:56] negative gate voltage
+[109:58] to collect holes.
+[110:00] And P-channel
+[110:02] is formed.
+[110:04] And what will be created
+[110:06] P-channel.
+[110:12] Now, do you know what to do in this?
+[110:14] The direction of current is reversed.
+[110:16] Charges,
+[110:18] as the holes go like this,
+[110:20] drain from source
+[110:22] current also
+[110:24] will drain from source.
+[110:26] And the voltage in this
+[110:28] will be
+[110:30] positive on the source and negative on the drain.
+[110:32] That is,
+[110:34] instead of VDS, what will you write?
+[110:36] VSD
+[110:38] VSD.
+[110:40] And there will be negative voltage on the gate.
+[110:44] Okay, you will say this.
+[110:46] VSD.
+[110:48] So far, we were saying GS, right?
+[110:50] VSD.
+[110:52] So, see what changes are coming here.
+[110:54] Tell everyone, this is clear.
+[110:56] There is no need to tell the whole thing.
+[110:58] Accumulation, depletion, inversion.
+[111:00] There are similar things.
+[111:02] The polarity of the voltage has changed.
+[111:04] VSD.
+[111:12] The idea is going upside down.
+[111:14] And one more important thing,
+[111:16] dear,
+[111:18] if you are putting negative voltage on the gate,
+[111:20] then its threshold voltage will be negative.
+[111:22] Right?
+[111:24] Threshold voltage of PMOS is
+[111:26] negative.
+[111:28] Because you have to put negative voltage on the gate.
+[111:30] You have to put negative voltage on the gate.
+[111:32] You have to put negative voltage on the gate.
+[111:34] And do you know what?
+[111:36] If you have put enhancement MOS,
+[111:38] then depletion MOS is also the same.
+[111:40] The sign of threshold voltage
+[111:42] will be opposite.
+[111:44] The sign of threshold voltage
+[111:46] will be opposite in depletion.
+[111:48] That is, the VT of N channel depletion
+[111:50] is negative.
+[111:52] And the VT of P channel depletion
+[111:54] is positive.
+[111:56] I will write it now.
+[111:58] First, I will explain its mode.
+[112:00] There will be a cutoff region here
+[112:02] when VSG.
+[112:04] Now,
+[112:06] because VT is negative,
+[112:08] then put mod VTP.
+[112:10] Right?
+[112:12] And what you will say here is
+[112:14] VSG is less than mod VTP.
+[112:16] And after this,
+[112:18] ID is 0.
+[112:20] ID is 0.
+[112:22] Right?
+[112:24] ID is 0.
+[112:26] Then linear and triode region.
+[112:28] What will happen here?
+[112:30] That VSG
+[112:32] came up from mod VTP.
+[112:34] But look,
+[112:36] VSD
+[112:38] is now small
+[112:40] VSG
+[112:42] minus mod VTP.
+[112:44] And here
+[112:46] the current of the drain
+[112:48] will be
+[112:50] 2K
+[112:52] Look,
+[112:54] instead of VSG
+[112:56] minus mod VTP
+[112:58] VSD
+[113:00] minus
+[113:02] VSD
+[113:04] square by 2.
+[113:06] Right?
+[113:08] And what will be K here?
+[113:10] KP
+[113:12] W by 2L
+[113:14] And what will be KP?
+[113:16] MUP into
+[113:18] CUX.
+[113:20] Now,
+[113:22] you will talk about the whole mobility.
+[113:24] It will not be about the electron mobility.
+[113:26] Saturation region.
+[113:30] VSG is greater than mod
+[113:32] VTP.
+[113:34] Right?
+[113:36] And VSD
+[113:38] is greater than
+[113:40] VSG
+[113:42] minus mod VTP.
+[113:44] So,
+[113:46] what is the current of the drain here?
+[113:48] K
+[113:50] I will write here
+[113:52] the channel length modulation.
+[113:54] In the saturation region.
+[114:02] Take this.
+[114:04] The channel length modulation
+[114:06] term is also here.
+[114:08] Okay?
+[114:10] If you have not given the lambda,
+[114:12] then ignore it.
+[114:14] If you have given the lambda, then consider it.
+[114:16] If you have given the lambda, then consider it.
+[114:20] Okay?
+[114:22] It is a very good thing.
+[114:24] Doubt out plus.
+[114:26] Tell me, is it clear till here?
+[114:28] Now, what will we say?
+[114:30] Just one last line.
+[114:32] I am writing here.
+[114:34] CU's
+[114:38] same equations
+[114:44] for depletion
+[114:46] MOS
+[114:50] but
+[114:54] with
+[114:56] opposite polarity
+[114:58] with
+[115:00] opposite polarity
+[115:04] of threshold
+[115:06] voltage.
+[115:08] Okay?
+[115:10] Do you understand?
+[115:12] The same equation works.
+[115:14] And I believe that if someone knows the equation of NMOS,
+[115:16] then they also know about PMOS.
+[115:18] Because what is NMOS in PMOS?
+[115:20] The direction of current has been reversed.
+[115:22] The polarity of voltage has been reversed.
+[115:24] That is all. And the sign of threshold voltage has been reversed.
+[115:26] But we do not care about the sign.
+[115:28] Because we have put a mod here.
+[115:30] Do you understand?
+[115:32] So, if you know NMOS,
+[115:34] then you also know PMOS.
+[115:36] You do not have to do anything else.
+[115:38] Let's see the question.
+[115:40] Enhancement type N channel MOSFET
+[115:42] is represented by the symbol.
+[115:44] What kind of symbol is
+[115:46] the N channel
+[115:48] enhancement type MOSFET?
+[115:54] Tell me.
+[115:56] A, B, C or D?
+[115:58] A, B, C or D?
+[116:00] A, B, C or D?
+[116:02] A, B, C or D?
+[116:04] A, B, C or D?
+[116:06] A, B, C or D?
+[116:08] A, B, C or D?
+[116:10] A, B, C or D?
+[116:12] B type of body
+[116:14] B type
+[116:16] So this is the body
+[116:18] Which is P.
+[116:20] Right?
+[116:22] Take more knowledge of the body
+[116:24] And if there is a solid line.
+[116:26] he'll talk about depletion?
+[116:28] both these are depletions.
+[116:38] And what is this?
+[116:40] So this is P-Channel Mausua and Amman has given the right answer, Amman has given the right
+[116:56] answer.
+[116:57] Let's remove it.
+[116:58] Deepankar didn't show the body many times.
+[116:59] Who will draw 4-4 terminals when we don't use the body?
+[117:12] Yes, if you can say that the mobility of the electron is more, then your P-MOS will have more resistance.
+[117:17] Look at this, what is this?
+[117:20] The graph of ID and VGS has been shown.
+[117:23] Asked you, what is this graph of?
+[117:26] ID and VGS.
+[117:41] What will it be?
+[117:42] C, very good.
+[117:45] Look, today you saw the graph of N-Channel Depletion, right?
+[117:50] Look, I'll do you a thing, wait, I'll show you all the graphs.
+[118:20] Look, this is the graph of P-Channel Depletion.
+[118:45] Look, this is the graph of your N-Channel Depletion.
+[119:11] That is, VGS is positive but its VT is negative.
+[119:21] Okay, N-Channel enhancement, VGS is positive and VT is also positive.
+[119:37] And P-Channel enhancement, VGS is negative and VT is also negative.
+[119:48] VGS is negative because VSG is written.
+[119:52] If VSG is written, then VGS is negative, okay?
+[119:58] Is this clear?
+[120:02] You should do the HPCL syllabus for the HPCL exam.
+[120:06] I mean, this is the logic.
+[120:16] This one, just skip it.
+[120:19] I'll teach you the bicing of MOSFET.
+[120:24] I haven't taught you the concept yet, just skip it.
+[120:28] Okay?
+[120:30] Look at the next one.
+[120:33] You'll do that question after tomorrow's class.
+[120:36] When I discuss the assignment, I'll discuss it.
+[120:40] You'll do it after tomorrow's class.
+[120:45] Now, here it says, tell me the condition of saturation.
+[120:49] What will happen?
+[120:50] In NMOS, the condition of saturation will be DS.
+[120:54] VGS is greater than VT and VDS is also positive.
+[120:59] This is your assignment.
+[121:02] Forget the numerical part.
+[121:04] There is no need to do more numerical.
+[121:06] The numerical portion will start from tomorrow.
+[121:09] Okay?
+[121:10] I'll give you the bicing of MOSFET tomorrow.
+[121:12] We'll finish the DC analysis of that tomorrow.
+[121:15] Then we'll go to Amplifier.
+[121:17] We'll go very fast from BJT in MOSFET.
+[121:19] And look, from here, you can cover PYQs, Niptalot, Diode and BJT.
+[121:25] In gate, PYQ by AIR1.
+[121:28] Okay?
+[121:29] And apart from this, if you join the academy,
+[121:31] plus or iconic, any of you will get a top educator.
+[121:35] The entire study material test series on the app.
+[121:38] What is the doubt-solving for the children of Iconic?
+[121:41] If there is a doubt in a new question,
+[121:43] then they will be given a video solution.
+[121:46] They will be sent to printed notes at home.
+[121:48] You will get 1-1 mentorship,
+[121:50] you will get a strategy and study plan.
+[121:52] And in the open house session, they can interact on audio.
+[121:55] Okay?
+[121:56] Feel free to do one thing,
+[121:58] message me on telegram or on Instagram.
+[122:00] I will reply there.
+[122:02] And look, if you join the academy right now,
+[122:06] then you will get 20% off on all subscriptions.
+[122:10] So you have to quickly apply the ANKIT-AC code
+[122:14] so that you get maximum discount
+[122:16] and you come under my personal guidance.
+[122:19] And if you go for distance learning too,
+[122:22] where you are getting books, test series,
+[122:25] still you can get 20% off using the code ANKIT-AC.
+[122:30] And all you have to do is to choose a plan,
+[122:33] and you have to decide the duration.
+[122:36] And then you have to apply the code ANKIT-AC,
+[122:39] immediately you will get 20% off.
+[122:42] And you can join it right away.
+[122:45] We have just released a new subscription,
+[122:47] 15 months plus 1 month, okay?
+[122:49] 15 months plus 1 month.
+[122:51] So anyone who takes it,
+[122:52] can prepare for 2024.
+[122:54] Anshuman, the children who already renew
+[122:57] and extend it,
+[122:58] we give them extra discount.
+[123:00] So it is always given to them above 10%.
+[123:04] If we neglect channel-width modulation,
+[123:06] then RD is infinity.
+[123:08] But current still flows because
+[123:10] depletion, region, electric field.
+[123:13] RD is infinity.
+[123:19] RD doesn't mean
+[123:21] the resistance between the source and the drain.
+[123:24] RD means that the current going
+[123:27] between the source and the drain
+[123:28] because of VGS,
+[123:29] that current source's parallel resistance.
+[123:32] So if you ignore the current source's
+[123:34] parallel resistance,
+[123:36] then also it will be
+[123:38] then also it will be behaving as a current source.
+[123:41] And secondly, we have done slope zero.
+[123:44] That is, incremental resistance zero.
+[123:47] Sorry, infinite.
+[123:48] Resistance is not infinite.
+[123:50] If you do I upon V,
+[123:52] if you remove DC resistance,
+[123:54] it will be finite.
+[123:55] If you do delta I by delta V,
+[123:57] it will be zero.
+[123:58] That is, the resistance in AC analysis
+[124:01] seems to be your infinity.
+[124:04] Okay?
+[124:07] Open house session,
+[124:09] there is an open house session
+[124:11] on the Academy app,
+[124:13] but you can talk to the children
+[124:15] who are iconic on the audio.
+[124:17] Now Bhavna,
+[124:18] has given an iconic subscription
+[124:20] at the Gate Academy.
+[124:21] So obviously you can talk on audio.
+[124:23] Okay?
+[124:24] Otherwise, I sometimes do audio sessions on telegram.
+[124:26] You can also join there.
+[124:28] I discuss doubts on audio on telegram.
+[124:30] And look, if you join the academy,
+[124:32] then you can see the results.
+[124:34] Last year, we took out 6 ranks in the top 10.
+[124:37] This time, you can also be one of these children.
+[124:40] Just join the academy quickly
+[124:42] using code ANKIT ESE.
+[124:45] And if there is a financial issue,
+[124:47] take it on EMI.
+[124:48] Where you can pay your fees month on month.
+[124:51] EMI is approved in just 2 hours.
+[124:53] Basic paperwork seems to be
+[124:55] Aadhar card, PAN card.
+[124:56] And you can repay it
+[124:58] in a flexible amount of time.
+[125:00] And give documents of any member
+[125:02] in your family
+[125:03] who get salary.
+[125:04] Because bank immediately gives them EMI.
+[125:07] And look, this Brahmashra Plus batch
+[125:09] has started for Gate 2023.
+[125:11] There is a doubt-solving class
+[125:13] in this daily night.
+[125:14] DPP is happening daily.
+[125:15] There are some classes in it
+[125:17] which are exclusive for this batch.
+[125:19] There is a strategy session.
+[125:20] It is uploaded on the notes app.
+[125:22] It is a test series.
+[125:23] It is a paramount material of the Gate Academy.
+[125:25] It is subject to workbooks.
+[125:26] And the KYQs of Gate are also included.
+[125:29] And this is the beginning
+[125:31] for the children of 2024.
+[125:32] It is a Gurukul batch.
+[125:33] In which Mr. Dhande is taking analog
+[125:36] and Mr. Gurupal is taking engineering maths.
+[125:39] So you can be a part of this batch.
+[125:41] You know the code ANKIT ESE.
+[125:44] And look, we have launched
+[125:46] a subscription of 4 months
+[125:48] for Gate 23 aspirants.
+[125:50] And a subscription of 16 months
+[125:52] for the children of Gate 2024.
+[125:54] So you can join quickly
+[125:56] using ANKIT ESE.
+[125:57] And the sooner you join,
+[125:59] the sooner you will start your preparation.
+[126:01] You will be ahead in the race.
+[126:03] And look, the last date
+[126:05] which the children won the combat
+[126:07] to use their code.
+[126:09] The code must have come to your mail
+[126:11] and you can use it till tonight.
+[126:13] The code will expire from tomorrow.
+[126:15] So don't delay using your code
+[126:17] and the best deal
+[126:19] you will get is the best discount.
+[126:21] And if you join today
+[126:23] before the night.
+[126:24] Okay?
+[126:25] Today's PDF is not visible
+[126:27] in the plus class.
+[126:28] Message me once on telegram.
+[126:30] If this has happened to all the children.
+[126:32] It is at 11 o'clock.
+[126:33] There was no class at 11 o'clock today.
+[126:37] Combat code is for fresh users.
+[126:39] It is not for extension.
+[126:41] And this is the telegram channel.
+[126:43] Children, you will join on this.
+[126:45] So that you get the latest updates.
+[126:47] And here you can comment on my post.
+[126:49] If you want to talk to me about this case.
+[126:51] If you can't see Dhandesar Wali.
+[126:53] Dear, inform this Dhandesar.
+[126:55] Let me tell you how to help.
+[126:57] And look at the PDF of this session.
+[126:59] I will give you on the community.
+[127:01] Go to the app's homepage.
+[127:03] Discover in the community.
+[127:05] You and I will get all my PDF.
+[127:07] Download it.
+[127:08] Immediately after the session.
+[127:10] This PDF will be available.
+[127:12] So thank you everyone.
+[127:13] Thanks a lot children.
+[127:14] Tomorrow we will cover the bicing of MOSFET.
+[127:17] You will understand one concept.
+[127:19] See you tomorrow.
+[127:21] Let's crack it.

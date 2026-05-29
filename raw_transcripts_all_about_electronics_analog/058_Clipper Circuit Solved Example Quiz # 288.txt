@@ -1,0 +1,59 @@
+Title: Clipper Circuit Solved Example | Quiz # 288
+URL: https://www.youtube.com/watch?v=mq2hIakW7YQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the youtube channel and all about electronics.
+[00:10] So in this question, we have been given this cliper circuit and we have been asked to find
+[00:15] the input output transfer characteristic of the given circuit.
+[00:19] Now here we have been given that the forward voltage drop of these two diodes are 0.71
+[00:24] volt.
+[00:25] So to find the transfer characteristic, first of all let us see how this circuit will behave
+[00:30] during the positive half cycle.
+[00:33] Now during the positive half cycle, this diode D will conduct when the voltage at the
+[00:37] anode of this diode is 0.7 volt greater than the voltage at the cathode.
+[00:42] So here the voltage at the cathode of this diode is equal to 5 volt.
+[00:47] That means whenever the voltage at the anode is 5.7 volt at that time, this diode D will
+[00:53] conduct.
+[00:54] And for the Xenod diode to operate in the breakdown region, the voltage across the Xenod
+[00:58] diode should be greater than 10 volt.
+[01:02] So whenever the input voltage is between 0 to 5.7 volt at that time, this mode diodes
+[01:09] will act as an open circuit.
+[01:11] And at that time, the output voltage V out is equal to input voltage.
+[01:17] Now once the input voltage crosses the 5.7 volt at that time, this diode D will start
+[01:23] conducting and the voltage across the diode will be equal to 0.7 volt.
+[01:28] That means whenever this input voltage is greater than 5.7 volt at that time, the output
+[01:34] voltage V out is equal to 5.7 volt.
+[01:38] And the same voltage will also appear across this Xenod diode.
+[01:42] That means even if the input voltage increases beyond this 5.7 volt, then also the output
+[01:48] voltage across this Xenod diode will remain the 5.7 volt.
+[01:52] That means we can say that this Xenod diode will not go into the breakdown region.
+[01:57] And in this condition, the output voltage will get clipped to the 5.7 volt.
+[02:02] That means we can say that when the input voltage is between 0 to 5.7 volt at that time, the
+[02:09] V out is equal to V in.
+[02:11] And when V in is greater than 5.7 volt at that time, V out is equal to 5.7 volt.
+[02:18] So this is the case during the positive half cycle.
+[02:21] Now let us see how the circuit behaves during the negative half cycle.
+[02:25] So during the negative half cycle, this diode D will remain in the reverse bias condition.
+[02:31] Because during the negative half cycle, the voltage at the N or will be always less than
+[02:35] the cathode.
+[02:36] So this diode D will remain in the open circuit condition.
+[02:40] Now this Xenod diode will get far biased when the voltage across it is greater than 0.7
+[02:46] volt.
+[02:47] That means whenever the input voltage is between minus 0.7 to 0 volt at that time, V out
+[02:55] is equal to V in.
+[02:57] Because at that time, this Xenod diode will also act as an open circuit.
+[03:01] But once the input voltage goes below this minus 0.7 volt, at that time, this Xenod diode
+[03:06] will get far biased.
+[03:08] And in this condition, the voltage across Xenod diode will be equal to 0.7 volt.
+[03:14] That means once the input voltage is less than minus 0.7 volt, in this condition, this
+[03:19] Xenod diode will far biased.
+[03:21] And in this condition, V out will be equal to minus 0.7 volt.
+[03:26] So if you see the overall input output transfer characteristic, then it will look like this.
+[03:32] That means whenever the input is between minus 0.7 to 5.7 volt, in this condition, V out
+[03:40] will be equal to V in.
+[03:42] Whenever the input voltage goes below this 5.7 volt, at that time, V out will get
+[03:48] clicked to the 5.7 volt.
+[03:51] And similarly, when the input voltage goes below this minus 0.7 volt, at that time, V out
+[03:57] is equal to minus 0.7 volt.
+[04:00] So this is the transfer characteristic of the given circuit.
+[04:04] And from this, we can say that for the given question, C is the correct answer.

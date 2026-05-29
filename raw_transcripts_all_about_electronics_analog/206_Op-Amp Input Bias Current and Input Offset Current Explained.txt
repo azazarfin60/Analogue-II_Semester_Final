@@ -1,0 +1,221 @@
+Title: Op-Amp: Input Bias Current and Input Offset Current Explained
+URL: https://www.youtube.com/watch?v=c3X7_ohCTSw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in the last video, we have discussed about the DC offset errors in the op-amp and we
+[00:21] have seen that usually the op-amp manufacturers used to provide the three parameters related
+[00:27] to this DC offset errors and out of the three parameters, we have already discussed about
+[00:32] the input offset voltage.
+[00:34] So now in this video, let us understand about the input offset current and the input
+[00:39] bias current and let us see how this currents can affect the output of the op-amp and how
+[00:45] we can reduce the effect of this bias currents.
+[00:48] So now so far in our discussion, we have assumed that the op-amp is an ideal op-amp.
+[00:53] That means the no current is flowing into the op-amp terminals.
+[00:56] But actually if you see, whenever the biasing voltages are applied to the op-amp at that
+[01:00] time, the small amount of current used to flow through this input terminals and these
+[01:06] currents are known as the input bias currents.
+[01:09] So let us say the current that is flowing through this non-inverting terminal is a
+[01:13] IB plus and the current that is flowing through this inverting terminal is a IB minus.
+[01:19] So if you see the internal structure of this op-amp, then these currents are basically
+[01:23] the currents which are flowing through this transistor of the differential amplifier.
+[01:28] So if this op-amp is constructed using the bipolar transistors, then these biasing currents
+[01:33] are basically the base current of this transistor.
+[01:36] And if op-amp is designed using the MOSFETs or JFET, in that case, these biasing currents
+[01:42] are the gate current of these transistors.
+[01:45] Now the direction of these biasing currents depends upon the type of transistors which
+[01:49] are used in development of this op-amp.
+[01:53] For example, if this differential amplifier is designed using the NPN transistors, in
+[01:58] that case, these biasing currents are entering into the op-amp.
+[02:02] While in case of PNP transistors, these biasing currents are going in the outward direction.
+[02:07] Now usually in the data sheets, this input bias current is defined as the average value
+[02:12] of these two currents.
+[02:14] So we can say that the input bias current is the average value of this current IB plus
+[02:19] and the IB minus.
+[02:21] So that is the definition of the input bias current.
+[02:24] Now ideally, these two biasing currents should be identical.
+[02:28] But because of some mismatch between the two transistors, there will be some difference
+[02:32] between the two biasing currents.
+[02:34] And the difference between the two input bias currents is usually defined as the input
+[02:38] offset current in the data sheets.
+[02:41] So this input offset current is the difference between the two biasing currents.
+[02:45] Now these input offset current can be either positive or negative.
+[02:49] But in data sheets, this input offset current is defined by a absolute value.
+[02:54] Now for the general purpose op-amps, the value of this input bias current is two in the
+[02:59] range of nano-ampiers.
+[03:01] But it can be as high as micro-ampiers for very high speed op-amps or it can be as low
+[03:06] as femtom-ampiers for very precise amplifiers.
+[03:10] For example, if you take the case of LT6273, which is a very high speed op-amp for that
+[03:16] case, the value of this input bias current used to be in the range of micro-ampiers.
+[03:21] While if you take the case of general purpose op-amp like LM741, in which the input bias
+[03:26] current used to be in the range of nano-ampiers.
+[03:29] While if you see the high precision op-amps like AD549, in that case, the input bias current
+[03:35] used to be in the range of femtom-ampiers.
+[03:38] So as you can see over here, the typical value of this input bias current is very small.
+[03:43] And because of that, for most of the applications, the effect of this input bias current will
+[03:47] be negligible.
+[03:49] But for the applications, where you require very precise output, in that case, this bias
+[03:54] current will become a critical parameter.
+[03:56] So now let us see the effect of this input bias current on the feedback circuits.
+[04:01] So here we have an inverting op-amp circuit.
+[04:03] And for this configuration, let us see how the input bias currents will produce a small
+[04:07] amount of error in the output voltage.
+[04:10] So now to find the effect of this input bias current, let us assume that all the inputs
+[04:15] which are applied to this op-amp circuits are 0.
+[04:19] So we can consider this voltage V in as a 0 volt.
+[04:22] And the equivalent circuit will look like this.
+[04:25] Now here, we are assuming that the input bias current IB- is flowing in the inverting terminal.
+[04:31] And the input bias current IB- plus is flowing into the non-inverting terminal.
+[04:36] Now if you observe over here, this non-inverting terminal is at a ground potential.
+[04:41] So there will not be an effect of IB- plus on the output voltage.
+[04:45] And simply we can remove this IB- plus source from the given circuit.
+[04:50] And the equivalent circuit will now look like this.
+[04:53] Now here, we are also assuming that the input offset voltage for the given op-amp is equal
+[04:57] to 0 volt.
+[04:59] That means these two terminals are at a same potential.
+[05:03] Now if you observe over here, this non-inverting terminal is at a ground potential.
+[05:08] So because of that, this node over here will be also at a ground potential.
+[05:13] And because of that, there will not be any flow of current through this resistor R1.
+[05:18] And we can say that this current IB- is flowing through this resistor RF.
+[05:24] And because of that, the output voltage V out will be equal to minus this current IB-
+[05:30] multiplied by this resistance RF.
+[05:34] So this is the error in the output voltage because of the input bias current.
+[05:38] And this output voltage is commonly known as the output offset voltage because of this
+[05:43] input bias current.
+[05:44] And it is commonly denoted by a symbol VO.
+[05:48] So as you can see over here, this output offset voltage is proportional to the input bias
+[05:53] current and the feedback resistance.
+[05:55] So as the value of this feedback resistance RF increases, the error in the output voltage
+[05:59] will also increase.
+[06:01] And this error can be minimized by connecting the offset compensation resistor at the non-inverting
+[06:08] terminal.
+[06:09] So as shown in the figure, by connecting this offset compensation resistor, we can minimize
+[06:14] the error in the output voltage.
+[06:17] So now here, to find the total output offset voltage, we will apply the superposition theorem.
+[06:22] So we will consider one current source at a time.
+[06:25] And we will find the error in the output voltage because of that input bias current.
+[06:30] And later on, we will add the individual output voltages to get the total output offset
+[06:34] voltage.
+[06:35] So first of all, let us assume that this input bias current IB- plus is acting alone and
+[06:40] this current IB- is equal to 0.
+[06:44] And in that case, let us find the output offset voltage.
+[06:48] So now if you observe over here, the voltage at this node will be equal to this current
+[06:54] IB- plus times this resistance RC.
+[06:59] Now the output voltage V out will be the DC gain of this circuit multiplied by the voltage
+[07:04] at this terminal.
+[07:05] And let us say the output voltage over here is equal to output offset voltage 1.
+[07:11] So that is equal to this V- plus multiplied by this 1 plus RF divided by R1.
+[07:20] Or we can say that that is equal to IB- plus multiplied by this resistance RC times this
+[07:27] 1 plus RF divided by R1.
+[07:32] So this is the voltage that you will see at the output terminal because of this input
+[07:36] bias current IB- plus.
+[07:39] Similarly, now let us assume that this IB- current is acting alone and this current IB-
+[07:43] plus is equal to 0.
+[07:45] And in that case, let us say the output offset voltage is equal to V0O2 and we have already
+[07:51] seen the value of this output offset voltage whenever this input bias current IB- is acting
+[07:57] alone.
+[07:58] So we can say that the V0O2 will be equal to minus IB- times this feedback resistance
+[08:05] RF.
+[08:06] So this is the output offset voltage whenever this input bias current IB- is acting alone.
+[08:12] So now let us combine the individual output voltages to get the final output voltage.
+[08:17] So the total output voltage V out will be equal to this V0O1 plus V0O2.
+[08:25] That is equal to IB- plus times this resistance RC multiplied by this 1 plus RF divided by
+[08:33] R1 plus minus IB- times this feedback resistance RF.
+[08:41] So this is the total output offset voltage because of this input bias currents.
+[08:46] So now let us find the value of this resistance RC such that we can minimize the total output
+[08:50] offset voltage.
+[08:52] So we can write this expression as IB- plus times this resistance RC multiplied by this
+[08:58] resistance RF into R1 plus RF divided by R1 times this resistance RF.
+[09:09] So basically here we have multiplied and the divided by this resistance RF and the
+[09:14] second term will remain as it is.
+[09:18] So if you observe over here this term is nothing but the inverse of the parallel combination
+[09:23] of R1 and RF.
+[09:25] So we can write this expression as IB- plus times this resistance RC in RF divided by
+[09:33] the parallel combination of R1 and RF in the second term will remain as it is.
+[09:40] Now if here the value of RC is the parallel combination of R1 and RF in that case these
+[09:49] two term will get cancelled out and the total expression will be simplified to the IB-
+[09:56] because minus IB- times this resistance RF.
+[10:02] So in this case when RC is equal to R1 parallel RF the expression will be simplified to this
+[10:09] difference between the two biasing currents multiplied by the feedback resistance RF.
+[10:15] And if these two biasing currents are equal in that case the total output offset voltage
+[10:21] will become zero volt.
+[10:23] But if there is a mismatch between these two biasing currents in that case we can write
+[10:27] these total output offset voltages the input offset current multiplied by the resistance RF
+[10:34] because we have seen that the output offset voltage is nothing but the difference between
+[10:39] the two input bias currents.
+[10:42] So this is the expression of the output of the voltage whenever the offset composition
+[10:47] resistor is connected at one terminal.
+[10:49] Now so far in our discussion we have assumed that the input offset voltage for the given
+[10:54] op-em is zero volt.
+[10:56] But if you also consider the effect of this input offset voltage then we can find the
+[11:00] total output offset voltage that will be presented at the output terminal.
+[11:04] So now if you assume that all the inputs which is applied to the circuits are zero in that
+[11:09] case the effect of input bias currents and the input offset voltage can be represented
+[11:14] by this circuit.
+[11:17] So for the given circuit the total output offset voltage will be equal to 1 plus RF divided
+[11:25] by this resistance RF times the input offset voltage plus the input offset current times
+[11:31] the feedback resistance RF.
+[11:33] So basically here the first term represents the output offset voltage because of this input
+[11:38] offset voltage.
+[11:40] And the second term represents the output offset voltage because of this biasing currents.
+[11:47] So this is the total output offset voltage whenever the input offset current and the input
+[11:51] offset voltage are presented at the input terminals.
+[11:55] Now like we have discussed in the last video it is hard to predict the priority of this
+[11:58] input offset voltage and the input offset current.
+[12:02] And because of that these two terms can be either positive or negative.
+[12:06] But here we assume that these two terms are positive and the maximum output offset voltage
+[12:11] which will be present at the output terminal will be the summation of this individual output
+[12:15] offset voltage.
+[12:17] So now let us take one example and through the example let us see how this input offset
+[12:21] voltage and the input bias currents can affect the output voltage.
+[12:26] So here we have been given this non-everting op-amp and for this op-amp we have been given
+[12:30] some parameters.
+[12:31] So basically here we have been asked to find the total output offset voltage because of the
+[12:35] input offset voltage and the input bias currents.
+[12:39] So first of all let us find out the output voltage V out because of this input voltage.
+[12:45] Now as this circuit is connected in a non-everting configuration so the output voltage V out will
+[12:51] be equal to 1 plus RF divided by this resistance R1 times the input voltage V in.
+[12:58] Now here the gain of this circuit is equal to 10.
+[13:02] So the total output voltage V out will be equal to 10 times the input voltage V is equal
+[13:06] to 10 milli volt.
+[13:09] So the total output voltage V out will be equal to 100 milli volt.
+[13:14] So this should be the output of the op-amp if we consider all the input offset voltage
+[13:18] and the input bias currents are 0.
+[13:21] But because of this offset voltage and the offset currents there will be error in the output
+[13:26] voltage.
+[13:27] So now let us find out the output offset voltage because of the input offset currents and
+[13:32] the input offset voltage.
+[13:34] So we have already seen the expression for the output offset voltage that is equal to 1
+[13:39] plus RF divided by R1 times the input offset voltage plus input offset current times the
+[13:47] feedback resistance RF.
+[13:50] Now we have derived this expression for the inverting op-amp configuration but the same
+[13:54] expression is valid for the non-everting configuration as well because whenever we consider
+[14:00] all the inputs are 0 at that time the inverting and the non-everting configuration will be
+[14:05] identical.
+[14:06] So now let us put the value of this all the parameters and let us find the total output
+[14:10] offset voltage.
+[14:12] So if we put all the values then we can write this expression as 10 times the 0.5 milli
+[14:18] volt plus 15 N o ampere times this resistance RF and that is equal to 9 kilo ohm.
+[14:26] So we can say that the total output offset voltage will be equal to 5 milli volt plus 450
+[14:33] micro volt or we can say that total output offset voltage will be equal to 5.45 milli
+[14:40] volt.
+[14:42] So this is the total output offset voltage because of the input bias current and the input
+[14:47] offset voltage.
+[14:48] So now the total voltage will be equal to this output voltage plus or minus this output
+[14:53] offset voltage that is equal to 100 milli volt plus or minus 5.45 milli volt.
+[15:02] So the total output voltage can be either 105 milli volt or it can be roughly around 95
+[15:08] milli volt.
+[15:10] So because of this input bias currents and the input offset voltage there will be a 5%
+[15:14] error in the output voltage and moreover that the major contributing factor in this error
+[15:19] is the input offset voltage.
+[15:21] And in the last video we have seen that the error which is introduced by this input offset
+[15:25] voltage can be minimized by using the disinherling circuits.
+[15:29] While the error which is introduced by this input bias currents can be minimized by using
+[15:33] the convention resistor.
+[15:35] So that's it for this video.
+[15:36] I hope in this video you understood what is input offset current and what is input bias
+[15:41] current and how this bias currents affect the output of the op-amp and how we can reduce
+[15:45] the effect of this input bias currents.
+[15:48] So if you have any question or suggestion do let me know in the comment section below.
+[15:52] If you like this video hit the like button and subscribe to the channel for more such
+[15:55] videos.

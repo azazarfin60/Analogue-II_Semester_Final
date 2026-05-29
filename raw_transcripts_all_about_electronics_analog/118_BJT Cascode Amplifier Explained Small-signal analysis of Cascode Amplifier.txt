@@ -1,0 +1,416 @@
+Title: BJT Cascode Amplifier Explained | Small-signal analysis of Cascode Amplifier
+URL: https://www.youtube.com/watch?v=Hs1augUS2bQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will learn about the cascode amplifier.
+[00:15] So we will see that what is cascode amplifier?
+[00:19] What are the advantages of this amplifier?
+[00:21] And then we will derive the equations for the voltage gain and the output impedance of
+[00:25] this amplifier.
+[00:28] So this cascode amplifier is a high gain amplifier and we will not get such a high voltage
+[00:33] gain using the common emitter amplifier or using any other configuration that we have
+[00:39] discussed earlier.
+[00:41] So as you know among the common base, common emitter and the common collector amplifiers,
+[00:47] common emitter amplifier provides the highest voltage gain.
+[00:51] So if you recall, then the small signal circuit of this common emitter amplifier and the
+[00:56] voltage gain can be given as minus GM times this RC parallel R0, where the R0 is the output
+[01:04] impedance of this BJT.
+[01:06] So let us put some numbers and let us see the typical value of the voltage gain that
+[01:11] can be achieved using the common emitter amplifier.
+[01:14] So let's say this VCC is equal to 5 volt and the amplifier circuit is biased with the
+[01:21] collector current of 1 milliampere.
+[01:26] That means here this IC is equal to 1 milliampere.
+[01:31] So if you recall, then this transconnectness GM can be given as this IC divided by VT.
+[01:40] So typically at the room temperature, the value of the VT for the thermal voltage is equal
+[01:45] to 26 millivolt.
+[01:48] But here for the simplicity, let's say this VT is equal to 25 millivolt.
+[01:55] That means here this GM will be equal to this 1 milliampere divided by 25 millivolt.
+[02:03] And that is equal to 0.04.
+[02:06] Moreover, here let's say the early voltage VA is equal to 50 volt.
+[02:13] So from this we can get the value of the R0 because this R0 can be given as this VA
+[02:21] divided by IC.
+[02:23] And here that will be equal to 50 volt divided by 1 milliampere.
+[02:29] That is equal to 50 kilo ohm.
+[02:33] And here if you see the value of the RC, then it will not be more than the 2 kilo ohm.
+[02:39] Because if the value of the RC is more than 2 kilo ohm, then there will be a large voltage
+[02:44] drop across this RC.
+[02:46] And because of that, the samplifier circuit will not operate in the active region.
+[02:52] That means here this value of the RC will not be more than the 2 kilo ohm.
+[02:58] So let's say that is equal to 2 kilo ohm.
+[03:02] So now by putting all these values, if this is the voltage gain, then that is equal to
+[03:09] minus 0.04 times these 2 kilo ohm in total with 50 kilo ohm.
+[03:18] So this value is approximately equal to 2 kilo ohm.
+[03:22] So we can say that this VO divided by Vi is approximately equal to minus TM times RC.
+[03:30] And that is equal to minus 0.04 times 2 kilo ohm.
+[03:36] That is roughly equal to minus 80.
+[03:39] So we can say that the magnitude of the voltage gain for this common emitter amplifier is
+[03:45] equal to 80.
+[03:46] So as you can see here, if you want to increase the voltage gain, then either we need to increase
+[03:52] the value of the RC or we need to increase the value of this transconductance.
+[03:58] So as we have seen, if you try to increase the value of the RC, then there will be a more
+[04:03] voltage drop across this RC.
+[04:06] And because of that, the amplifier will move out of the active region.
+[04:10] That means here we cannot increase the value of the RC beyond the certain range.
+[04:15] So if we cannot increase the value of the RC, then the second thing that we can do is
+[04:20] to increase the value of the GM.
+[04:23] So as you know, this GM can be given as this IC divided by VT.
+[04:29] So if we want to increase this transconductance, then we need to increase the value of the
+[04:34] collector current.
+[04:36] So once again, if we increase this collector current, then the voltage drop across this
+[04:40] resistor will also increase.
+[04:44] And hence, it is quite possible that the amplifier will move out of the active region.
+[04:50] That means here we cannot increase the value of the GM and RC beyond the certain limit.
+[04:56] So we can say that here the voltage gain, that we are getting with the common emitter
+[05:01] amplifier with the resistive load configuration is the limited.
+[05:05] So here, instead of the passive resistive load, if we use the active load, such as the
+[05:11] current source, then it is possible to get the higher voltage gain.
+[05:16] So for that, let us replace this resistive load with the ideal current source.
+[05:21] So for the ideal current source, his output impedance will be equal to infinite.
+[05:27] So if you see the small signal equivalents are keyed, then it will look like this.
+[05:32] And here, this voltage gain is equal to minus GM times R0.
+[05:37] So that is the maximum achievable voltage gain with the common emitter amplifier.
+[05:42] So this gain is known as the intrinsic gain.
+[05:46] So once again, let us put some numbers.
+[05:49] And let us find out the typical value of this intrinsic gain.
+[05:53] So once again, let us assume that this bias current is equal to 1 milliampere.
+[05:59] That means here, this collector current is equal to 1 milliampere.
+[06:04] And with that, if we see the value of the transcurrent tons, then once again, that will
+[06:09] be equal to 0.04.
+[06:11] And here, let us assume that this R0 is once again 50 kilo ohm.
+[06:17] So with that, if we see the value of the intrinsic gain, then that is equal to 0.04 times 50 kilo ohm.
+[06:25] And that is equal to 2000.
+[06:28] That means with the given parameters, this is the maximum gain that can be achieved using
+[06:33] the common emitter amplifier.
+[06:36] But if you see the actual gain, then that will be less than that.
+[06:40] Because as you know, the actual current source will have some finite output impedance.
+[06:45] And because of that, the voltage gain will further reduce.
+[06:49] So here, let us say this current source is implemented using the PNP transistor.
+[06:56] And let us say its output impedance is equal to R0P.
+[07:01] So in this case, if we see the overall voltage gain, then that is equal to GM times this
+[07:08] R0N parallel R0P, where the R0N is the output impedance of this NPN transistor.
+[07:15] While the R0P is the output impedance of this PNP transistor.
+[07:20] So for a moment, if we assume that this R0N is equal to R0P, then in that case, this voltage
+[07:27] gain will become GM times this R0 divided by 2.
+[07:33] So considering the previous values of the GM and the R0, this voltage gain will
+[07:38] be equal to 0.04 times this 50 kilo ohm divided by 2.
+[07:44] That means this voltage gain is equal to 1000.
+[07:47] So as you can see, with the actual current source, this voltage gain will further reduce
+[07:53] from the intrinsic voltage gain.
+[07:56] That means if we want to improve the voltage gain of this amplifier, then somehow we need
+[08:01] to increase the output impedance of this amplifier.
+[08:05] And this cascode amplifier exactly does that.
+[08:09] So if you see the cascode amplifier, that is the cascade connection of the common emitter
+[08:13] amplifier and the common base amplifier.
+[08:17] So here, this common emitter amplifier is the amplifying transistor.
+[08:22] And here, if you see the common base amplifier, then that is the cascode transistor.
+[08:28] So as you can see, we are here, the output of this common emitter amplifier is given as
+[08:33] input to the common base amplifier.
+[08:36] And the overall output of the cascode amplifier is taken at the emitter of the second transistor.
+[08:43] So here for a time being, this load is not shown in the figure, but this load can be
+[08:48] a resistive load or it can be active load like the current source.
+[08:53] But for a time being, let's say there is some load that is connected to this cascode
+[08:58] amplifier.
+[09:00] So the advantage of this cascode amplifier is that it provides the high voltage gain
+[09:04] and the high output resistance.
+[09:07] So let's say if R naught is the output impedance of this common emitter stage, then the output
+[09:13] impedance of this cascode stage will be the K times R naught.
+[09:18] And in this way, the output impedance of this cascode amplifier is higher.
+[09:23] So here, because of the higher output impedance, if we see the voltage gain of this cascode
+[09:27] amplifier, then that will be also higher.
+[09:31] So let us understand the same thing using the small signal analyses.
+[09:35] And let us either the expression for the output impedance and the voltage gain for this
+[09:40] cascode amplifier.
+[09:42] So here, from the DC biasing perspective, the second transistor Q2 is biased with some
+[09:48] fixed voltage.
+[09:50] But from the AC analysis perspective, this base terminal will get connected to the ground
+[09:56] potential.
+[09:57] And similarly, this DC voltage source will also get short circuit aid.
+[10:03] So now, let us replace this each transistor Qn and Q2 by their small signal model.
+[10:09] So overall, if we see the small signal equivalent circuit of the cascode amplifier, then it will
+[10:14] look like this.
+[10:16] So as you can see, here the input is apted between the base and the emitter of the first transistor.
+[10:23] And the collector of the first transistor is connected to the emitter of the second transistor.
+[10:28] Then here, the base of the second transistor is connected to the ground terminal.
+[10:34] And as you can see, here this output voltage is taken across the collector of the second
+[10:39] transistor and the ground terminal.
+[10:42] So here, this R01 is the output impedance of this Q1 transistor, while the R02 is the output
+[10:49] impedance of this second transistor.
+[10:52] So with this, now let us find the output impedance of this overall cascode configuration.
+[10:58] So now, to find the output impedance of this amplifier, what we will do?
+[11:03] We will have the test voltage Vx at the output and we will make all the independent sources
+[11:08] in the circuit as zero.
+[11:10] And in this condition, we will find this current Ix.
+[11:15] So the ratio of this Vx and the Ix will give us the output impedance.
+[11:20] So here, as soon as we make this V in S0, then this Vp1 will also become zero.
+[11:28] And hence, this independent current source, GM1 Vp1 will also become zero.
+[11:34] That means now, we will only have this output resistor R01, but when the collector and
+[11:39] the emitter terminals of the first transistor, and now if we see the equivalent circuit,
+[11:46] then it will look like this.
+[11:49] So for the given circuit, let us find the value of the output impedance.
+[11:54] So here, let us say, this current is equal to Ix.
+[11:59] So here, this current Ix is entering at this node.
+[12:03] And the same current will also flow out at this node.
+[12:08] That means here, the current that is going away from this node is also equal to Ix.
+[12:14] So over if you see, then here, this R01 and the Rp2 are also connected in the parallel
+[12:21] connection.
+[12:23] Because here, the one end of both the undisturbeds are connected at this node, while the other
+[12:28] end is connected to the ground terminal.
+[12:32] And here, the voltage across both the resistors is equal to Vp2.
+[12:37] So now, let us have the KCL in the given circuit.
+[12:41] So if we apply the KCL, then we can write this voltage Vx is equal to Ix minus this
+[12:50] GM2 times Vp2 times R02, that is this voltage plus this Ix times this R01 in a parallel
+[13:02] with Rp2.
+[13:06] So here, if you see, then the R01 and the Rp2 are connected in the parallel connection.
+[13:12] And the current that is flowing into the equivalent resistance is equal to Ix.
+[13:17] So if you see the voltage drop across that, then that is equal to this Ix times the parallel
+[13:23] combination of this Rp1 and the R01.
+[13:27] So that is the voltage.
+[13:30] So here, if you see this voltage, then that is nothing but the minus Vp2.
+[13:36] Because here, the positive terminal of the Vp2 is connected to the ground potential for
+[13:41] the negative terminal is coming at this node.
+[13:45] So we can say that this Vp2 is equal to minus Ix times these R01 parallel Rp2.
+[13:55] So now in the above expression, let us put the value of this Vp2.
+[14:01] So now we can write it as Vx is equal to these Ix times R02 minus GM2 times Vp2 times R02.
+[14:14] And further, we will also have these Ix times these R01 in parallel with Rp2.
+[14:23] So now, we put the value of the Vp2 and further, we can write it as these Ix times R02 minus
+[14:32] GM2 times R02 times minus Ix times R01 in parallel with Rp2 plus these Ix times these
+[14:47] are not one in parallel with Rp2.
+[14:52] So further, if we simplify it, then we can write it as these Vx is equal to Ix times these
+[15:00] are not two plus these are not one in parallel with Rp2 times one plus these GM2 times R02.
+[15:13] So from this, we can say that these Vx divided by Ix for the output impedance of this cascode
+[15:19] stage is equal to R02 plus one plus GM2 times R02 times R01 parallel with Rp2.
+[15:35] So here typically, these GM2 times R02 will be much greater than the one.
+[15:41] So approximately, we can say that this term is equal to GM2 times R02 and further, we
+[15:48] can write this expression as R02 plus GM2 times R02 times R01 in parallel with Rp2.
+[16:00] So once again, let us take this R02 common.
+[16:05] That means further, we can write it as these R0 is equal to R02 times one plus GM2 times
+[16:14] these are not one in parallel with Rp2.
+[16:19] So once again, if you see, then these GM2 times this parallel combination of this R01 parallel
+[16:25] Rp2 will be much greater than the one.
+[16:29] So once again, here we can neglect this one.
+[16:33] And further, we can write this expression as this R0 is equal to R02 times GM2 times
+[16:41] these R01 in parallel with Rp2.
+[16:46] So that is the expression of the output impedance.
+[16:50] So here as you know, these Rp2 is equal to beta2 divided by GM2.
+[16:59] So typically, this R01 is much greater than Rp2.
+[17:05] And with that assumption, we can approximately say that this R0 is equal to these GM2 times
+[17:12] R02 times Rp2.
+[17:16] And here, if you put the value of this Rp2, then we can say that this R0 is equal to these
+[17:24] beta2 times R02.
+[17:27] But the R02 is the output impedance of the Q2 transistor.
+[17:33] So here, if we assume that these R01 is equal to R02 and the beta1 is equal to beta2, then
+[17:42] we can say that here, this output impedance of this card's code stage is equal to beta
+[17:47] times R0.
+[17:50] That means suppose, if the beta is equal to 100.
+[17:53] And the R0 is equal to 50 kilo ohm.
+[17:56] Then in that case, the value of the output impedance is equal to 5 mega ohm.
+[18:03] So in this way, using the cascode amplifier, we can improve the output impedance.
+[18:09] So now, to find the order voltage gain, we also need to find the transconnectance of the
+[18:14] overall amplifier.
+[18:16] So what is the transconnectance?
+[18:18] We have already seen in detail in the earlier videos.
+[18:22] So basically, it shows that the small signal voltage changes by the small amount.
+[18:28] Then how much change we will get in the output current.
+[18:31] So the question is how to find that.
+[18:34] So if the V is the input to the amplifier and V0 is the output, then to find the transconnectance,
+[18:41] what we will do?
+[18:42] We will find the output current of this circuit.
+[18:46] Let's say that is equal to I0.
+[18:49] So the ratio of this output current to the input voltage will give us the transconnectance
+[18:54] of the amplifier.
+[18:56] That means the output current of the amplifier can be given as GM times Vi.
+[19:03] And if we see the output voltage, then this output voltage is equal to minus GM times
+[19:09] Vi times R0.
+[19:12] So from this, we can see that these, we not divided by Vi or the voltage gain of this
+[19:18] amplifier is equal to GM times R0.
+[19:23] So we already know the expression of the output impedance.
+[19:26] So the only thing that we need to find is the transconnectance.
+[19:31] And once we get that, then we can find the overall voltage gain of this cascode amplifier.
+[19:37] So let us find that.
+[19:39] So first of all, this is the small signal equivalent circuit of the cascode amplifier.
+[19:44] So here, to find the transconnectance, as you have seen, we will connect the output
+[19:49] to the ground terminal.
+[19:51] And now, we will find the output current in the circuit.
+[19:56] So the ratio of this output current to the input voltage will give us the transconnectance
+[20:00] of this cascode amplifier.
+[20:03] So let us find that.
+[20:05] So here, once we connect the output to the ground terminal, then here is Rp2, R02 and
+[20:12] the R01, all three are connected in the parallel connection.
+[20:17] Because if you notice over here, then the one end of these three resistors is connected
+[20:22] at this point, while the other end is connected to the ground potential.
+[20:27] And moreover, the voltage drop across all the three resistors is equal to Vi2.
+[20:33] So here, if we have to the KCL at this node, then we can see that this I0 is equal to
+[20:40] these GM2 times Vi2 plus Vi2 divided by R02.
+[20:48] Because here, the voltage across this resistor is equal to Vi2.
+[20:54] That means this current will be equal to Vi2 divided by R02.
+[20:59] And let's say, this is the equation number 1.
+[21:03] So similarly, now let us apply the KCL at this node.
+[21:08] So if we apply the KCL, then we can write these GM1 times Vi1, that is this current, that
+[21:16] is equal to GM2 times Vi2, that is this current plus Vi2 divided by R02, that is this current
+[21:28] plus Vi2 divided by R2, that is this current plus Vi2 divided by R01, that is this current.
+[21:42] Because here, the voltage drop across this R01 is also equal to Vi2.
+[21:50] So all these currents are the incoming current, while the GM1 times Vi1 is the outgoing current.
+[21:57] So for the ref is simplified, then we can write it as these GM1 times Vi1, that is equal
+[22:05] to Vi2 times these GM2 plus 1 divided by R02 plus 1 divided by R01 plus 1 divided by
+[22:18] Rpi2.
+[22:20] So here, we know that this Rpi2 is equal to Vi2 divided by GM2.
+[22:29] So naturally, this 1 divided by Rpi2 is equal to GM2 divided by Vi2.
+[22:35] And definitely, it will be less than the GM2.
+[22:39] So we can say that this GM2 is much greater than 1 divided by Rpi2.
+[22:47] And similarly, this GM2 will also be much greater than this 1 divided by R01 and 1 divided
+[22:55] by R02.
+[22:57] That means here, we can neglect these three terms.
+[23:02] And by neglecting these three terms, we can write it as these GM1 times Vi1, that is equal
+[23:11] to these GM2 times Vi2.
+[23:16] So let's say this is the equation number 2.
+[23:20] So now using the equation number 1 and 2, let us find the ratio of the I0 divided by
+[23:25] Vn.
+[23:27] So we know that this I0 is equal to GM2 times Vi2 plus Vi2 divided by R02.
+[23:38] So here, let's take this Vi2 common.
+[23:42] So if we take it out, then further we can write it as these GM2 plus 1 divided by R02.
+[23:50] So once again, over here, this GM2 is much greater than 1 divided by R02.
+[23:57] And hence, we can say that this I0 is equal to GM2 times Vi2.
+[24:04] And earlier, we have seen that this GM1 Vi1 is approximately equal to GM2 times Vi2.
+[24:13] So from this, we can say that this I0 is equal to these GM1 times Vi1.
+[24:21] And here, as you know, this Vi1 is nothing but the Vi.
+[24:26] So we can say that this I0 is equal to GM1 times Vi.
+[24:32] And from this, we can say that this I0 divided by Vi is equal to GM1.
+[24:40] That means the overall transcontent of this cascode amplifier is approximately equal to
+[24:46] GM1.
+[24:47] So now, the voltage gain of this cascode amplifier is equal to GM times R0, where the GM is
+[24:55] the transcontent of the cascode amplifier.
+[24:58] And the R0 is the output impedance of this cascode stage.
+[25:02] So as you have seen, this GM is equal to GM1.
+[25:06] And earlier, we have seen that this R0 is equal to GM2 times R02 times R1 in parallel
+[25:17] with Rpi2.
+[25:20] So here, for a moment, if we assume that this GM1 is equal to GM2, and the R01 is equal
+[25:28] to R02, then this voltage gain can be given as these GM times R0 times R1.
+[25:36] So, GM times these are not parallel Rpi.
+[25:42] So typically, the value of this parallel combination will always be less than the Rpi.
+[25:49] But for a moment, let's assume that this R0 is much greater than Rpi.
+[25:54] In that case, these are not parallel Rpi will be approximately equal to Rpi.
+[26:01] So the maximum value of the voltage gain will be equal to GM times R0 times GM times Rpi.
+[26:13] And as you know, this GM times Rpi is nothing but the beta.
+[26:19] Because we know that this Rpi is equal to beta divided by GM.
+[26:24] So from this, we can say that the maximum value of the voltage gain is equal to beta times
+[26:30] these GM times R0.
+[26:33] And this GM times R0 is the intrinsic gain of the common-emitter stage.
+[26:38] So we can say that the maximum value of the voltage gain for this cascode amplifier is
+[26:44] equal to beta times A0.
+[26:46] Where the A0 is the intrinsic gain of the common-emitter stage.
+[26:51] So as you can see, due to this cascode configuration, the gain and the output impedance of the amplifier
+[26:57] increases by the factor of beta.
+[27:01] So if we use the same value of the R0 beta and the transgressive GM, which we have used
+[27:06] earlier, then the magnitude of the voltage gain of this cascode amplifier will be equal
+[27:11] to 100 times these 0.04 times 50 kilo ohm.
+[27:18] That is the value of the GM and the R0.
+[27:21] And that is equal to 100 times 2000.
+[27:25] So that is equal to 2 times 10 to the power 5.
+[27:29] So as you can see, using the cascode amplifier, the output impedance on the voltage gain of
+[27:35] the amplifier will increase substantially.
+[27:38] But if you see the actual value of the gain and the output impedance, then that will depend
+[27:43] on the load.
+[27:45] So if we use the cascode amplifier with the resistive load, then we won't see any improvement
+[27:50] in the voltage gain or the output impedance.
+[27:53] Because if we use the resistive load, then on the output side, this R0 of the cascode
+[27:58] amplifier will come in parallel with the RC.
+[28:03] And now this voltage gain is equal to GM times.
+[28:08] These are not in parallel with RC.
+[28:12] So typically, the value of the RC is much less than R0.
+[28:18] So due to that, we can say that this voltage gain is equal to GM times RC.
+[28:25] And that is equal to GM one times RC.
+[28:29] So as you can see, it is same as the voltage gain of the common emitter amplifier.
+[28:34] That means if we use the resistive load with the cascode amplifier, then we will not
+[28:39] get any improvement in the voltage gain.
+[28:42] So to utilize the cascode effect, we need to use the active load such as the current
+[28:47] source.
+[28:48] So for a moment, if you assume that the current current source is the ideal current source,
+[28:53] then its output impedance will be equal to infinite.
+[28:57] And in that case, if you see the small signal equivalent circuit on the output side, then
+[29:01] it will look like this.
+[29:04] So in this case, this voltage gain will be equal to minus GM times R0.
+[29:10] Where the output impedance of this cascode amplifier, that means if we use the ideal current
+[29:16] source, then in that case, we can get the maximum voltage gain using the cascode amplifier.
+[29:23] But as you know, no current source is ideal and it has some finite output impedance.
+[29:29] So due to that, the actual voltage gain will always be lesser.
+[29:34] So for example, if we use the PNP transistor as the current source, then in that case,
+[29:40] let's say its output impedance is equal to R03.
+[29:44] So in that case, if we see the voltage gain, then this voltage gain will be equal to minus
+[29:50] GM times this R0 parallel, R03.
+[29:55] Or if we just consider the magnitude, then that is equal to GM times R0 parallel, R03.
+[30:04] So typically this R0 is much greater than R03.
+[30:09] That means the output impedance of the cascode stage is much greater than the output impedance
+[30:13] of this PNP transistor.
+[30:16] And due to that, we can say that this voltage gain is approximately equal to GM times R03.
+[30:24] That means if we use the PNP transistor as the current source, then in that case, the
+[30:29] oral voltage gain is approximately equal to GM1 times R03.
+[30:35] In this gain, it is almost same as the intrinsic gain of the common emitter amplifier.
+[30:41] So as you can see, still it is less than the maximum gain that can be achieved using
+[30:46] the cascode amplifier.
+[30:48] That means if you want to achieve the voltage gain, that is close to the maximum achievable
+[30:53] gain using the cascode amplifier, then we also need to use the cascode current stage.
+[30:59] So here, this cascode current source is implemented using the PNP and thisters.
+[31:06] So here, let's say the output impedance of this Q3 transistor is equal to R03, while the
+[31:11] output impedance of this Q4 transistor is equal to R04.
+[31:16] So here, if we see the output impedance from here, then that will be equal to R04.
+[31:23] If we see the output impedance from this end, then that will be equal to GM3 times R03 times
+[31:31] R04 in parallel with R53.
+[31:35] And let's say that is equal to ROP, that is the output impedance of the PNP cascode current
+[31:42] source.
+[31:43] So now what we can do?
+[31:45] We can connect this cascode current source to the cascode amplifier.
+[31:49] And if we do that, then this is how it will look like.
+[31:53] So here, this to run thisters represent the cascode current source, while this to run
+[31:59] thisters shows the cascode amplifier stage.
+[32:03] So now for the AC analysis, all the DC sources in the circuit will act as a zero.
+[32:10] And now this cascode current source can be replaced by the, you can output a distance.
+[32:16] So from this, we can say that the old voltage gain of this amplifier is equal to GM times
+[32:23] these R0N in parallel with ROP, where the R0N is the equivalent output impedance, which
+[32:32] is seen through the end pin cascode amplifier, while the ROP is the output impedance of the
+[32:37] PNP cascode current source.
+[32:40] So we know that this R0N is equal to GM2 times R0 2 times this R0 1 parallel ROP 2.
+[32:51] And this ROP is equal to GM3 times R0 3 times R0 4 in parallel with Rp 3.
+[33:02] So the maximum value of the R0 on is approximately equal to beta 2 times R0 2.
+[33:09] Because if this R0 1 is much greater than Rp 2, then this term is approximately equal
+[33:15] to Rp 2.
+[33:17] And then this GM2 times Rp 2 is equal to beta 2.
+[33:21] So the maximum value of the R0N is equal to beta 2 times R0 2.
+[33:26] And likewise, the maximum value of the ROP is equal to beta 3 times R0 3.
+[33:33] So here typically this R0N is more than the ROP.
+[33:38] But for a moment let's assume that both are equal.
+[33:42] That means this R0N is same as the ROP.
+[33:46] So when they are connected in the parallel connection, then the overall output resistance
+[33:50] will become half.
+[33:53] That means now if we see the overall voltage gain, then that is equal to GM times this
+[33:59] R0 divided by 2.
+[34:02] And we know that the task current turns of this cascode stage is equal to GM1.
+[34:08] So we can say that the overall voltage gain will be equal to GM1 times these beta times
+[34:14] R0 divided by 2.
+[34:17] And for a moment let's assume that the GM of all the transistors is also equal to same.
+[34:23] So we can say that the overall voltage gain is equal to GM times R0 times beta divided
+[34:30] by 2.
+[34:32] And we know that this GM times R0 is the intrinsic gain of the common able amplifier.
+[34:38] So we can say that this overall voltage gain is equal to beta times E0 divided by 2.
+[34:45] So that is the half of the maximum achievable gain using the cascode amplifier.
+[34:50] So for example, if the beta is equal to 100, this GM is equal to 0.04 and this R0 is equal
+[34:59] to 50 kilo ohm.
+[35:01] Then this voltage gain will become 100 times 0.04 times 50 kilo ohm divided by 2.
+[35:11] And that is equal to 10 to the power 5.
+[35:14] So still it is higher than the intrinsic gain of the common able amplifier.
+[35:20] So in this way, using the BJD cascode amplifier along with the cascode current source, it
+[35:26] is possible to achieve the higher voltage gain.
+[35:29] But the only drawback with this configuration is that as there is a drop across each transistor.
+[35:35] So the effective voltage that is available to the common limitress stage will get reduced
+[35:40] and hence the voltage swing will also limit it.
+[35:45] So if you want to increase this voltage swing again, then we need to apply the higher supply
+[35:49] voltage.
+[35:50] And effectively that will increase the power consumption.
+[35:54] So that is the only drawback with this cascode amplifier.
+[35:58] But in the applications where we want the higher voltage gain, this configuration is suitable.
+[36:05] So I hope in this video you understood how using the cascode amplifier along with the cascode
+[36:10] current source, it is possible to achieve the higher voltage gain and the high output
+[36:14] impedance.
+[36:16] So if you have any question or suggestion, then do let me know here in the comment section
+[36:21] below.
+[36:22] If you like this video, hit the like button and subscribe the channel for more such videos.

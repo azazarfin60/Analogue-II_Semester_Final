@@ -1,0 +1,1412 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | MOSFET Biasing | Ankit Goyal | Kreatryx GATE
+URL: https://www.youtube.com/watch?v=R30LKXQP2ZU
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you, friends, and welcome to Creatrix
+[00:09] YouTube channel.
+[00:10] My dear friends, we are back again with Lakshya Batch 2.0 Analog Electronics.
+[00:15] So, yesterday we did the work of MOSFET and we learned the working of MOSFET in a very
+[00:21] good way.
+[00:22] We learned the basic basic things, Depletion MOSFET, Enhancement MOSFET, Acumen MOSFET
+[00:29] Accumulation, Depletion, Inversion Mode, Threshold Voltage, We learned about MOSFET Operating
+[00:36] Regions.
+[00:37] So, our basic is completely clear, so quickly you will tell me, are you all ready or not?
+[00:49] Tell me quickly.
+[00:50] As much as we did yesterday, all the things are clear, NMOS, PMOS, Depletion, Enhancement
+[00:56] all the things are clear, we will tell you quickly, all the things are clear, let's go,
+[01:02] very good.
+[01:03] So, today we will finish the DC analysis of MOSFET, in DC analysis, I am going to give you
+[01:09] a biasing, I am going to give you a current mirror, current steering, circuit, we are going
+[01:16] to do all the things, so today your whole DC analysis will end, we will see the question
+[01:22] also today, then you can go home and take care of MOSFET biasing, and the next lecture
+[01:28] will cover MOSFET amplifier, so this chapter of MOSFET, it will go very fast as I said
+[01:34] earlier, compared to BJT, it will be much, much faster, and now look, the festive season
+[01:40] is also coming, but I will keep the compensation class in the festive season for you, so if
+[01:46] I turn off any of your class, then instead of that we will cover Sunday, so for this
+[01:51] thing, it is very important for me that we cover this course on time, and I am targeting
+[01:58] November 1st week, look, it will not be till the end of October, okay, so I am targeting November
+[02:02] 1st week, Anuj, I had derived yesterday and told that in MOSFET, threshold voltage is
+[02:09] working, okay, but in depletion MOS, enhancement MOS cannot be compared to JFET, there the channel
+[02:18] has to be created, where the channel is already present in depletion MOSFET, it is done on
+[02:25] threshold voltage, so their threshold voltage is working exactly as the pinch of voltage
+[02:33] , it is absolutely true, MOSFET amplifier is also in the gate electrical, it has also
+[02:39] come into question in 2005, and recently they started asking MOSFET again, they had
+[02:44] completely stopped in the middle, so we can expect a question in the gate exam, and the second
+[02:49] thing is that MOSFET amplifier is much, much, much easier than your BJT amplifier, so
+[02:56] if you have done BJT amplifier, it will be difficult for you to learn one or two things and
+[03:01] you will make MOSFET amplifier much easier than that, all the children who have attended JFET
+[03:07] now, they can definitely tell that yes sir, the amplifier of JFET was 10 times easier than BJT,
+[03:15] why, all the people who attended JFET, tell me, was the amplifier of JFET easier than BJT or not,
+[03:21] and anyway the amplifier of MOSFET is also quite easy than BJT, so let's start today's discussion,
+[03:29] children, you are doing something wrong, you are not liking it, you are not marking your attendance,
+[03:34] secondly, you have reduced the attendance a lot, in this way, then I will not start the opamp,
+[03:39] okay, if this is your response, now I have not done the video, so I will not do the private one,
+[03:44] let's go, the children who are following, they should cover up, but if you force them for this,
+[03:50] that the videos are public, sir, do it privately, then I will do it privately today, okay,
+[03:55] secondly, if you reduce the attendance, then they will wind up on MOSFET, then they will start the crash course of a subject,
+[04:01] look, I will study on YouTube, this is necessary, but do I need to cover one subject end to end,
+[04:07] there is no restriction on me, nor is there any recommendation, okay,
+[04:13] children, if there is a problem in the live class, then there are some views in the recorded,
+[04:19] first in the recorded, the views within one day would reach 2500-3000, now you tell me,
+[04:25] it is not reaching 2000, what are you doing, this means that it has become lazy, it has become slow,
+[04:31] this is the reason, what is on YouTube, that the biggest drawback is that the children get lazy,
+[04:37] let's go, now look, read ahead, son, I will tell you one thing, we will return for you,
+[04:43] 7 day free trial, how will you use it, look, you keep asking for measurement and EMT from me,
+[04:49] which I have not given on YouTube, you go here and register, access the 7 day free trial,
+[04:55] here you can take my EMT and measurement, till 18th October, this is applicable, that is,
+[05:03] till Tuesday, before Tuesday, the day in which you activate the free trial, from that day to 7 days,
+[05:09] it will be activated, okay, the day you activate it, it will ask for activation code,
+[05:13] put a code there, brother, Ankith ESE, Ankith ESE, you will put this code, okay, brother,
+[05:21] so you can do EMT, do measurement, according to me, in 7 days, now look, you are doing my analog,
+[05:26] along with that, you take EMT and measurement, so at least your preparation for 8-9 number will be different,
+[05:33] the analog is going with me on YouTube, 8-9 number is going with me, 8-9 number is going with me,
+[05:39] I am going with you, I am going with you, I am going with you, I am going with you, I am going with you,
+[05:45] now the preparation for 8-9 number will be different, analog is going with me on YouTube,
+[05:50] you can take measurement of 8-9 number from here, any subject, you can see any recorded and live class,
+[06:00] so obviously, you will not be able to see much live in 7 days, you can do 7 live classes in 7 days,
+[06:06] and electrical kids can rectify in live, now I have started rectifying power electronics,
+[06:13] it is going on a very strange level, because this time in the interface of Unacademy,
+[06:17] a lot of features have been added, from which we have taken power electronics at the next level,
+[06:25] so the electrical kids who can rectify with me, they will benefit a lot from it,
+[06:31] son, that one hour special class, this free trial is for plus, this is for plus,
+[06:37] so here the paid product of Unacademy is getting free for 7 days,
+[06:43] in that you have to study theory, you have to attend lectures, you have to give testries,
+[06:48] everything is open for you, you go and enjoy, okay, so let's start today's discussion,
+[06:55] all of you are ready, let's go, so let's come to biasing, the first biasing as it was in BJT,
+[07:01] fixed bias, what happens in fixed bias is that we put a voltage on the gate,
+[07:08] we put a voltage on the gate VG and your resistance is also connected to the gate,
+[07:15] now obviously your oxide layer is on the gate, son, because of which your gate current is zero,
+[07:24] okay, here you always have to keep in mind due to SiO2 layer, due to SiO2 layer,
+[07:36] IG is zero, okay, IG is your zero because of SiO2 layer, now if IG is zero,
+[07:45] then what I have to know first is VGS, how will I know VGS, you understand this here,
+[07:52] if the drain current ID is in RD, then your drain current ID will be in RS,
+[07:58] think from KCL, no current went from here, entering current in the device is same as the
+[08:05] leaving current, so the current that is on the drain is on your source, now here son,
+[08:12] if we put KCL like this, then we will say VG minus zero minus VGS minus ID into RS is zero,
+[08:29] so what will be VGS, VG minus ID RS, this will be VG minus ID RS, no brother,
+[08:42] we will do everything for enhancement, nothing for depletion, okay, now as much as there is discussion,
+[08:48] there will be only enhancement, the depletion one will help you in EDC,
+[08:52] in analog, there is no need for depletion, I will ask you a question, if I ever ask a question
+[08:58] about depletion, then what should I do, I just have to change the sign of threshold voltage,
+[09:03] otherwise you can also apply the JFET equation, did you understand this here, now look,
+[09:09] yesterday I told you one more thing, when the characteristics of MOSFET were told,
+[09:13] that in MOSFET and BJT, the definition of active and saturation changes,
+[09:18] the active region in BJT used to happen, it is called saturation in MOSFET, now remember
+[09:26] when you solve the question of BJT's biasing, then you used to say, assume that BJT is working
+[09:33] in the active region, then you would verify that assumption, in the same way, my children
+[09:42] here, you will assume MOSFET in saturation region, who will you assume in saturation,
+[09:51] you will say assume MOSFET is working in saturation region, okay,
+[10:12] you have assumed that MOSFET is working in saturation region, now what you will say here,
+[10:23] that ID is K, you know K, mu and Cux W by 2L, VGS minus VT square, NMOS is running, VGS minus
+[10:39] VT square, now here instead of VGS, you will write the equation of ID, which is the value
+[10:46] of VGS, VG minus IDRS minus VT whole square, so here you can solve the quadratic of ID,
+[11:00] you can figure out ID, you can figure out ID, solve quadratic in ID, okay, to determine ID,
+[11:17] now see, when you take out ID, then you will have to verify your assumption valid, okay,
+[11:26] now the first thing you will verify, the first thing you will see is that you will have
+[11:34] two values, quadratic, so two values of ID from quadratic equation, okay, now what is
+[12:01] VGS, see how assumption valid, verify, compute VGS for both values, if VGS is smaller than VT,
+[12:26] then invalid, because you have to turn on the transistor, so VGS cannot be smaller than VT, okay,
+[12:36] VGS cannot be smaller than VT, do you understand, now if here, see here, if VGS is bigger than VT,
+[12:52] then it is valid, but now you see that you have considered saturation, son, now you see that
+[13:00] you have considered saturation, do you understand, so you will check VDS for saturation, you will check VDS
+[13:12] for saturation, now you will have to apply KVL for VDS, like the collector emitter in BJT,
+[13:20] source from the drain, so now what will you do next, you will do the next, compute VDS,
+[13:29] do you understand everyone, compute VDS, so apply KVL, VDD-IDRD-VDS-IDRS equal to 0, so here
+[13:48] what happened to VDS, VDD-IDRD-RS, now see if this VDS, if this VDS is greater than VGS-VT,
+[14:07] then your saturation will come, i.e. your assumption is correct, and if this is smaller,
+[14:23] and what value will you use for ID here, which is valid from here, do not take this valid one,
+[14:30] use only one value of ID in VDS, which is your valid one, how will you check valid and invalid from VGS,
+[14:41] first you will check valid and invalid from VGS, the value which is valid, put it in VDS and you will judge
+[14:49] whether it is active linear or saturation, if linear comes, then you will have to solve again,
+[14:57] solve for ID again, but you know this does not happen, because you know in linear, solving ID is very difficult,
+[15:06] why do you know, here you will have to write such an equation of ID, now in this VDS will also be in your ID terms,
+[15:20] VDS will also be in your ID terms, then it will go long, right, it will go long, so you will have to take out ID again,
+[15:33] because you took out the saturation, if your linear region comes, then the value is invalid,
+[15:41] what will you put in VDS, you will put it from here in the form of ID, from here you will put VDS in it,
+[15:51] as a function of ID, so it will become quadratic in ID, you will solve the quadratic in ID and take it out,
+[16:04] now you know in this, many times they say that here VDS is small, so you can ignore VDS square by 2,
+[16:14] because your linear region condition is that VDS is small, the condition of the linear region is that VDS is small,
+[16:22] so many times in this equation they ignore VDS square by 2,
+[16:28] is it clear, tell me, so it will go for a long time if it comes in linear, but do you know why we don't get it in linear,
+[16:37] because our main purpose of analog electronics is to make an amplifier and amplifier is made in the saturation region,
+[16:46] so that's why you will see in analog, most of the devices will work in saturation,
+[16:51] we will do it, whether it is JFET or MOSFET, so we will have to go with the saturation region and in such a BJT,
+[16:59] active region is there, and when we talk there, let's talk about power electronics or digital electronics,
+[17:08] in two subjects, all the semiconductor devices, their objective is to work like a switch,
+[17:15] if here MOSFET works like a switch, then you will cut off and make it linear,
+[17:21] and if you want to work like an amplifier, then you will make it in saturation,
+[17:25] so you need switches in digital, when there is switching logic,
+[17:30] switching circuit, and even in power electronics, you need as a switch,
+[17:35] but in analog, you need to implement an amplifier for which the MOSFET must work in the saturation region,
+[17:42] do you understand what is the process, the process is a little long, but this process is necessary,
+[17:49] and look here, the difficulty compared to BJT is that in MOSFET, there is a quadratic in the ID,
+[17:57] with which we have to take out two solutions, in which we have to take out two solutions,
+[18:03] in BJT, there was only one value, two values did not come, there was a linear equation,
+[18:08] here it is quadratic, next look, drain to gate feedback, remember collector to base biasing,
+[18:16] remember in BJT there was similar to collector to base biasing,
+[18:25] now what did you do here, there was a resistance between drain and gate,
+[18:30] now the current in this resistance will go to zero because the current of the gate is zero,
+[18:38] now if the current of the gate is zero, then the drop across the resistance is also zero,
+[18:44] listen carefully, VRG is zero, if the drop of this resistance is zero,
+[18:54] then my children, the voltage of drain and gate is equal, say, the voltage of drain and gate is equal,
+[19:02] if the RG cross voltage is zero, therefore drain voltage is same as the gate voltage,
+[19:11] drain is same as the gate, now my brother, if the drain is same as the gate,
+[19:17] then can you write this too by subtracting VS on both sides, tell me you can write,
+[19:27] then you can also say this, then you can also say this, then you can also say this,
+[19:41] suppose VT is one, then if your VDS and VGS are both 5, then VGS minus VT is 4, then 5 is greater than 4,
+[19:56] understand, if VDS and VGS are 5 volt and VT is 1, then 5 is greater than 5 minus 1,
+[20:03] so what does this mean, this means saturation region, so yesterday I was telling you this,
+[20:12] the numerical that I showed you, I will tell you later, region of operation,
+[20:18] so what you always have to keep in mind, this is a very important point when drain and gate terminal
+[20:29] of our MOSFET, when drain and gate terminal of our MOSFET are shorted, it operates,
+[20:53] do you remember when you shot collector and base in BJT, then it became a diode,
+[21:00] remember there I told you to shot collector and base, then it works as a diode between emitter and base,
+[21:08] if you short the drain and gate here, then it works in a saturation region,
+[21:15] so here there is no need to judge region of operation, we got directly saturation region,
+[21:30] sir, what does it mean to apply resistance, if R is 0, everything will come the same,
+[21:36] yes, you can also short directly, and this resistance is in mega ohm,
+[21:43] okay, now we got it here, now we got it, VG and VD are equal, now see here,
+[21:52] VG and VD are equal, and you can write this with KVL, VDD minus ID RD,
+[22:02] ID variable is not that I know ID, now the source voltage is zero, you have grounded it,
+[22:11] so what will you say, VGS is VG minus VS, that is VDD minus ID RD, okay, now what will you say,
+[22:29] now you will apply the equation for saturation, KVGS minus VT whole square,
+[22:42] VGS instead of VDD, okay, now what is it again, it has become quadratic, tell me what happened again,
+[23:00] so what will we say, solve quadratic to determine ID, okay, and then what will you do,
+[23:25] then you will remove VGS, VDD minus ID RD, if it is greater than VT then it is valid,
+[23:39] and if it is less than VT then it is invalid, okay, this is invalid, okay,
+[23:53] okay, it is clear, it is clear, tell me, so whenever you see the drain and gate directly connected
+[24:01] or connected to any resistance, immediately you say that the MOSFET is in saturation,
+[24:06] this is very important, don't use KY2, I have given the definition of K, this is K is
+[24:14] MUNCUXWY2L, I have already taken 2, so why will you do KY2, the K used in the default books is this,
+[24:25] okay, now voltage divider biasing, again what will you pay attention to this, the gate current is zero,
+[24:35] the gate current is zero, so R1, R2 are in series, R1, R2 are in your series,
+[24:44] if R1, R2 are in series then you can directly remove the gate voltage, R1 and R2 are in series
+[24:56] so that you can remove the gate voltage i.e. VDD, you will remove it from the voltage division,
+[25:06] into R2 by R1 plus R2, okay, now if I tell you, dear, remove the source voltage,
+[25:18] the same voltage on the RS, the same voltage of the source on the RS, that is IDRS,
+[25:28] if you get VG and VS then you will write VGS, VG minus VS, i.e. VG minus IDRS, now here you
+[25:41] cannot directly assume the region of operation, you can judge, then assume, again you assume,
+[25:51] assume MOSFET operates in saturation region,
+[26:02] so now what will you write, now you will write ID,
+[26:16] SK, VGS minus VT square, ID SK,
+[26:47] okay, again you will solve the ID quadratic, again you will solve the quadratic and determine ID,
+[27:07] after that you will remove VGS, VG minus IDRS, if this is greater than VT then valid
+[27:22] and less than VT then invalid, okay, then what will you do, then you will remove VDS, then you will remove VDS,
+[27:42] put KVL, now you are understanding the verification method,
+[27:51] apply KVL to determine VDS,
+[28:08] now once VDS comes, if this comes greater than VGS minus VT then this will be saturation,
+[28:34] if this comes less than VGS minus VT then this will be linear, what will you have to do in linear,
+[28:44] what will you have to do, solve for ID again, okay, solve for ID again,
+[28:58] is it clear to everyone, sir we will verify with the value of VGS,
+[29:08] this is the result of your hard work,
+[29:12] son see what is engineering subject is not tough,
+[29:16] what happens is that when you are at the initial level in college,
+[29:20] neither your interest in these subjects is tried,
+[29:24] neither teachers are very passionate about these subjects,
+[29:27] as you know in today's date you are liking my analog,
+[29:31] but I still tell you the truth, I am working on a daily basis to improve this content more,
+[29:36] and this analog playlist or whatever my playlist you will see on YouTube,
+[29:42] you will notice that in all subjects only content is talked,
+[29:48] in all subjects there is no drama, no fun,
+[29:54] no entertainment, no kids are watching,
+[29:58] all the views are coming from the content,
+[30:02] and the content is trying to improve,
+[30:05] the main thing is that the teachers in college are not passionate about the subject,
+[30:10] and when they themselves are not passionate about the subject,
+[30:13] then they will not improve the content,
+[30:15] otherwise the subject of engineering is not tough,
+[30:18] these are the basic things,
+[30:20] you see now in the MOSFET,
+[30:22] you have gone down so deep that you have learned the world,
+[30:25] you are looking at the MOSFET from above,
+[30:28] you are looking at its basic things,
+[30:30] so how can engineering be tough,
+[30:33] basic is not tough, basic is easy,
+[30:36] so it is not that I am making it easy,
+[30:38] I am showing you the same thing,
+[30:40] the purpose of which it was made,
+[30:42] now you see a lot of teachers will also try to get into analog,
+[30:46] but the purpose of asking analog,
+[30:48] the purpose of framing the question of analog,
+[30:51] is not because of how much you have remembered,
+[30:54] you remember the gain of the amplifier,
+[30:57] it sees your thinking ability,
+[30:59] it sees your thought process,
+[31:01] so if you have thought process of how you will get the gain of the amplifier,
+[31:05] input resistance, output resistance,
+[31:07] I am saying leave the MOSFET,
+[31:09] if a new transistor develops tomorrow,
+[31:11] then you will make a model,
+[31:13] you will make a model,
+[31:15] the architect brother just said,
+[31:17] so how will we solve the back,
+[31:19] here he told that you will put the equation of linear,
+[31:22] then it will be quadratic, then the id will come out,
+[31:25] look here also the purpose of biasing is to establish the Q point,
+[31:30] because the parameter coming from the Q point,
+[31:32] will be used in all the amplifiers,
+[31:34] i.e. the gain established by your amplifier from the Q point,
+[31:38] okay,
+[31:41] come on, clear away,
+[31:45] now the third fourth comes,
+[31:47] constant current bias,
+[31:49] so what are you doing here,
+[31:51] we connect a current source,
+[31:54] remember you did the same in BJT,
+[31:58] there was a current source on the emitter,
+[32:01] we connect a current source,
+[32:04] at source terminal,
+[32:16] so your id is fixed from here,
+[32:18] okay,
+[32:20] your id is fixed from here,
+[32:27] now you can take out VGS on the basis of this id,
+[32:35] take the saturation,
+[32:38] the constant current bias in this,
+[32:40] always take saturation,
+[32:42] because the id is biased at such a value,
+[32:45] on which your saturation comes,
+[32:48] on which your saturation comes,
+[32:50] okay, is it clear,
+[32:53] now here you see,
+[32:55] from here you compute VGS,
+[33:00] here what you compute,
+[33:02] you compute VGS,
+[33:04] VGS came once,
+[33:06] now look, the current of the gate is zero,
+[33:10] which means that the voltage of the gate will also come zero,
+[33:18] so VGS is zero,
+[33:23] so VS will come,
+[33:28] this came VS,
+[33:30] if you want the voltage of the drain,
+[33:33] then you can easily take out the voltage of the drain,
+[33:37] from KVL,
+[33:42] and then you can take out VDS,
+[33:46] VD-VS,
+[33:49] understand,
+[33:51] VDS will come,
+[33:53] is this clear,
+[33:55] is this clear,
+[33:58] tell me quickly,
+[34:00] is this clear,
+[34:03] speak quickly,
+[34:06] understand the way to take out VDS,
+[34:09] so in all this,
+[34:11] the biggest benefit in MOSFET is that it is IG-0,
+[34:14] because of IG-0,
+[34:16] you can easily take KVL, KCL,
+[34:19] and why was it a little difficult in BJT,
+[34:21] because the base current was zero,
+[34:23] it was not always there,
+[34:24] if there was beta high,
+[34:26] then we would consider IB as zero,
+[34:28] here it will always be your IG-0,
+[34:32] okay,
+[34:33] yes, it will be VDS,
+[34:39] okay,
+[34:40] let me show you some questions on this,
+[34:42] then we will continue,
+[34:44] current mirror, current steering,
+[34:45] all these things,
+[34:49] look at this,
+[34:50] look at this circuit and tell that
+[34:52] in which region your MOSFET
+[34:55] is operating,
+[34:57] last line, please explain,
+[34:59] this is written in the last line,
+[35:00] drain to source voltage is
+[35:02] drain minus source,
+[35:03] if you write VAB in Deepankar,
+[35:05] sometimes it is VAB minus VB,
+[35:07] so what will be VDS,
+[35:09] VD minus VS,
+[35:25] what is it?
+[35:37] Linear,
+[35:39] cutoff,
+[35:40] let's see,
+[35:42] look at this transistor,
+[35:45] this is your PMOS,
+[35:48] sir, how do you know,
+[35:50] the current is going inside the source,
+[35:52] like PNP,
+[35:53] in ammeter,
+[35:54] when the arrow goes inside,
+[35:56] that is the PNP transistor,
+[35:58] this is PMOS,
+[35:59] R&B,
+[36:00] don't spam,
+[36:01] go and check the playlist,
+[36:02] okay,
+[36:05] now look here,
+[36:06] in PMOS,
+[36:07] source voltage is given,
+[36:09] 1V,
+[36:11] and gate voltage is given,
+[36:13] 0,
+[36:15] so here,
+[36:16] what is VSG,
+[36:18] 1V came,
+[36:20] which is greater than
+[36:21] mod VTP,
+[36:24] so it is on,
+[36:25] now it is on,
+[36:26] so there are two options,
+[36:27] saturation or linear,
+[36:30] now we got VSG,
+[36:33] now let's talk about VSG,
+[36:35] in PMOS,
+[36:36] there is VSG instead of DS,
+[36:38] 1 minus 0.3,
+[36:42] is 0.7,
+[36:44] so VSG
+[36:46] minus mod VT,
+[36:49] how much will it be,
+[36:50] 1 minus 0.4,
+[36:52] threshold 0.4 is given,
+[36:54] 0.6,
+[36:56] so here you see,
+[36:57] VSG
+[36:59] is coming to be greater than VSG,
+[37:02] minus mod VTP,
+[37:05] means saturation,
+[37:08] understood,
+[37:09] even the transistor is recognized,
+[37:10] whether it is NMOS or PMOS,
+[37:11] many children,
+[37:12] I am telling you,
+[37:13] took out VGS negative,
+[37:14] said it is less than threshold,
+[37:16] finished,
+[37:17] they did not see the drain source,
+[37:19] did not see the drain source,
+[37:21] when it is written above,
+[37:22] it is going into source and source,
+[37:24] so it is like PNP transistor,
+[37:28] Swati Ji,
+[37:29] I told you yesterday,
+[37:30] PNP and NPN,
+[37:32] I told you comparison from PMOS,
+[37:35] this is PNP,
+[37:37] so it will be PMOS,
+[37:38] it goes into ammeter too,
+[37:43] I told you yesterday,
+[37:44] to recognize the device,
+[37:46] come on,
+[37:47] look at the next one,
+[38:07] son,
+[38:08] it is given as mod VTH,
+[38:09] that is why,
+[38:10] it is given as mod here,
+[38:15] okay,
+[38:18] what is that,
+[38:19] there are two parts in one question,
+[38:20] one PMOS and one NMOS,
+[38:22] that is why,
+[38:23] it is given as mod VTH,
+[38:27] what is the saturation,
+[38:28] look,
+[38:30] now,
+[38:31] if you recognize it,
+[38:32] it is an NMOS transistor,
+[38:35] correct,
+[38:36] it is an NMOS transistor,
+[38:40] its figure is resembling it,
+[38:45] so,
+[38:47] here,
+[38:48] the gate to source,
+[38:49] look,
+[38:50] voltage is given on the gate,
+[38:52] 1.5V,
+[38:54] you are given on the source,
+[38:56] 0.5V,
+[38:59] and you are given on the drain,
+[39:01] 2V,
+[39:04] okay,
+[39:05] so,
+[39:06] VGS will be,
+[39:14] okay,
+[39:23] this happened,
+[39:25] now,
+[39:26] here,
+[39:27] look,
+[39:28] VDS,
+[39:29] VGS-VT will increase,
+[39:32] VGS will increase,
+[39:33] so,
+[39:34] VGS-VT will increase,
+[39:36] so,
+[39:37] that is saturation,
+[39:40] do you understand,
+[39:41] saturation,
+[39:42] now,
+[39:43] cut-off,
+[39:44] saturation,
+[39:45] and linear region,
+[39:47] is it clear to everyone,
+[39:49] now,
+[39:50] look,
+[39:51] as of saturation is given,
+[39:52] and W by L is asking,
+[39:54] make it fast,
+[39:59] as of saturation,
+[40:14] yes,
+[40:15] there are more questions on NMOS,
+[40:17] compared to PMOS,
+[40:18] still,
+[40:19] learn to recognize,
+[40:20] if you have to trick the gatekeepers,
+[40:22] they know that,
+[40:23] you have prepared for NMOS,
+[40:25] so,
+[40:26] what will they do,
+[40:27] they will say,
+[40:28] come on,
+[40:29] let's ask PMOS,
+[40:30] and the maximum is flat,
+[40:32] and then,
+[40:33] you know,
+[40:34] leaving the exam,
+[40:35] it feels very bad,
+[40:36] because we all knew,
+[40:37] only a small mistake,
+[40:38] cuts off our marks,
+[40:40] that is why,
+[40:41] whatever comes well,
+[40:42] it is important to be careful,
+[40:44] if you don't be careful,
+[40:45] then,
+[40:46] eventually,
+[40:47] you will regret,
+[40:48] you will lose your marks,
+[40:50] that is a very bad feeling,
+[40:52] nothing comes right,
+[40:53] we know,
+[40:54] we don't know,
+[40:55] how we would do it,
+[40:56] but,
+[40:57] what excuse would you give,
+[40:58] if you would have come here,
+[40:59] if you would have come,
+[41:00] what excuse would you give,
+[41:19] and made a question,
+[41:22] tell me,
+[41:23] as of saturation,
+[41:25] this means,
+[41:26] means I can plug in the ID and you must have recognized this transistor, it is NMOS when
+[41:44] it is coming out of the source, here I can clearly see the VGS is 1V, 1V, okay, so this is
+[42:04] 200 into W by L upon 2, this happened. The second thing we know is the edge of saturation
+[42:24] is that the VDS is equal to VGS minus VT, the edge means where the saturation starts,
+[42:34] so 1 minus 0.4 is 0.6 and the VDS is 1.8 minus 1 into ID, this will be the ID current here,
+[42:48] if VDS is 0.6 then ID is 1.2 milliampere, so if you put this in the first equation,
+[43:06] so 1.2 milliampere, 200 microampere by 2, so 110 into minus 4 is 12, so W by L is 33.33
+[43:34] is it coming, tell me, this is coming, very good, where did the K come from, the ratio of the width
+[43:43] and length will be 33,000, think it will be 33,000, clear, I understood that the edge of saturation
+[43:55] means the VDS is equal, the VDS in saturation is greater than equal to, so the edge of saturation
+[44:02] means the VDS is equal to VGS minus VT, see the next one, see the next one, VGS ID VDS,
+[44:11] I have given the question of voltage divider biasing, come on, come on, see,
+[44:22] son, if you type it wrong, then the question mark is not applied, the star is applied,
+[44:34] who told you that they will apply the question mark, give some more time, come on,
+[44:39] come on, make it, you can do linear or saturation, that means it will come out, if you equate both the linear saturation,
+[44:52] then this will be derived from there, VDS equal to VGS minus VT, those two equations, what is VDD,
+[45:00] I have written, I have given 6 volts, 6, is this PMOS, no, this is NMOS, I will make an arrow,
+[45:19] okay NMOS, now you will recognize PMOS NMOS Swati, compare it with BJT, say,
+[45:49] Mudaasir is not always necessary, they often show in digital that in PMOS they show an inversion,
+[46:03] inversion means its input is opposite to NMOS, so they do it in digital, they do not show such circles in analog,
+[46:11] so that is also a representation of PMOS, a diagram like NMOS but with a circle and inversion at the gate terminal,
+[46:19] VGS 0.13, come on, let's see, by the way, how did VGS come first, first of all, your ID should have come,
+[46:29] ID 1 milli ampere, what is the error, should not be the error, send me a screenshot on social media or telegram,
+[46:40] I will talk to the team if there is any error, okay, let's see, first of all, let's take out the voltage of the gate,
+[46:51] keep trying so much, I am putting the voltage division, the current of the gate is zero, there is no need to tell,
+[46:58] it can directly be the voltage division, why is it not in BJT, we have to remove the thavenin in BJT because the current of the base is not zero,
+[47:07] you can also use this method in BJT, if the high beta is given there, if the high beta is given there,
+[47:17] 2.16 volt, okay, now there will be an ID here, there will be an ID here too, so your source voltage will be ID into 2,
+[47:38] so what will be VGS, 2.16 minus 2 ID, now you will put the equation of ID that keep the current in milli ampere,
+[47:56] okay, VGS, I am writing a little directly, VGS minus VT whole square, okay, so take 0.5 here, 2.16 means minus 0.4 to 1.76,
+[48:17] 4 ID square minus 1.76 of 3.52, 3.52 to 7.04, so when you solve this quadratic,
+[48:36] when you solve this quadratic, 4 ID square becomes 9.04 ID when you take 2 ID there, 1.838
+[48:51] and 0.421 milli ampere, okay, now see if you keep 1.8 here in VGS, then VGS will be negative,
+[49:15] that means VT will be smaller, if you keep the ID 1.838, then VGS will be negative, so invalid
+[49:36] because the transistor will be shut down, so the ID was wrong, whatever physics you took out, 0.4211,
+[49:47] yeah ID, then VGS, 2.16 minus 2 ID, 0.84, 1.3178, okay, and then if you want VGS,
+[50:17] then you put KVL, 6 minus 4 ID minus 2 ID, 3.4734 and this is coming from VGS minus VT,
+[50:42] so that means the saturation was right, the saturation will remain, okay, the saturation will remain,
+[50:50] the matter has been cleared, the matter has been cleared, come on, see the next one, this one is PMOS,
+[50:59] see the arrow is going in, it is PMOS, that is why threshold voltage is negative, KP is given,
+[51:04] do this too, now I have given the question of PMOS, make it.
+[51:34] Yes, the arrow side will be sourced, like when there is an emitter in BJT, where there is an arrow,
+[51:58] in such a MOSFET, where there is an arrow, it is always sourced, son, the gate calculator
+[52:10] is a quadratic, it will not be solved fast, you will have to do it by hand, Gaurav, come on,
+[52:25] make it, and see this time it is dual supply, this time it is dual supply, you are seeing,
+[52:44] remember in dual supply, at one time we used to ground each other with one voltage,
+[52:49] remember how we used to take out, first we used to take 10, ground minus 10, so 10 into 22 by 30,
+[53:03] then we used to take minus 10, ground the top 10, 140 by 30, 14 by 3, what is the matter,
+[53:16] 4.667 volts, come on, Akash, son, I told you, I am trying to arrange the power electronics
+[53:28] notes, if arranged, then I will provide you, okay, VG is wrong, you are telling me physics,
+[54:16] come, now see here, your source is not down, pay attention, your source voltage is 10 minus 0.5
+[54:34] ID, so now what will you write, VGS, this time it will be VSG, 10 minus 0.5 ID minus 4.667,
+[54:50] so this will be 5.333, so here what will be ID, Kp is given, 1, 5.333 minus 0.5 ID minus magnitude
+[55:16] of this, so here ID 3.333, 10 by 3, so 100 by 9 plus ID square by 4, 10 by 3 and 0.5 5 by 3
+[55:33] into 2, so 10 by 3 ID, the 3.333 that is being made, I have written it as 10 by 3, now
+[55:45] see the quadratic solution we will do, 0.25, 10 by 3, sorry, or 100 by 9, 14.2 or 3.12,
+[56:06] 1 is coming, 14.2, you tell me, these are the two values and 1 is coming, 3.129, obviously
+[56:18] 14.2 will be wrong, right, 14.2 will be wrong, because here VSG will be negative,
+[56:29] transistor will not work, so your valid value is 3.129 and the people who have JFET, they
+[56:37] think everything is repeating, why,
+[56:41] how much was your VSG, this was 5.333 minus 0.5 ID,
+[56:53] 3.7685 and if you want to get VSD,
+[57:21] this is coming, if you want to get VSD, then 10 minus 0.5 ID minus 2 ID minus minus 10,
+[57:47] so 20 minus 2.5 ID will come, 12.1775 which is obviously greater than VSG minus mod VTP,
+[58:08] that is, our assumption of saturation is correct, is it clear, tell me, is it clear, now NMOS
+[58:17] and PMOS are both clear, if Nihari is not mentioned, then W by 2L itself, that is, by default
+[58:24] the values given in the text in the books are of W by 2L itself, see,
+[58:32] VT is given, KN is given, lambda is 0, we have to tell VDS, do it a little, do it quickly,
+[58:43] and this is not V2, this is a volt square, its unit is current per unit voltage square,
+[59:31] so if it is not given, then MUN COX W by 2L, whatever the value of K is given,
+[59:37] take it by default in the denominator,
+[59:43] now the same question has been answered by Nihari,
+[59:48] and see, in the next week, your MOSFET will be over and OPAMP will be our start,
+[59:53] in MOSFET, I mean, yes, it will be over in the next week, the assignment discussion is also there,
+[59:58] conceptually, if we talk, there are two more lectures left for the electrical people in MOSFET
+[60:04] and four lectures for the AC people, because the AC people will also do CMOS inverter,
+[60:08] and apart from this, assignment discussion is enough, the MOSFET of the electrical people
+[60:14] will end in 4-5 sessions, it will not take much, the MOSFET for you is very less,
+[60:21] this one will be plus 5, not minus 5, ask a good question, it will be plus 5,
+[60:34] come on, quickly tell, then I will also make the current mirror for you today,
+[60:38] and the current mirror of MOSFET will be very easy for you as compared to BJT,
+[60:43] BJT had done a lot of things like Wilson current source, Wilder current source,
+[60:47] everything was done, 10, it cannot be 10, that means the voltage of the current source is 0,
+[60:54] 5 minus minus 5, it will not be like that, see, the current given earlier is 50 micro ampere,
+[61:03] you put a saturation equation on it, this is 0.5 milli ampere, VGS,
+[61:13] VGS minus VT square, so 50 into 10 to the power minus 6, 5 into 10 to the power minus 4, 0.1,
+[61:32] so VGS came from here, now don't say why I didn't take minus 0.1, if I had put a minus with under root,
+[61:47] then VGS would have been smaller than VT, it cannot be, you have to take it bigger than VT,
+[61:54] 1.5162, see the gate voltage is 0, so how much is the source voltage here, minus 1.5162,
+[62:12] so if you want a drain to source, then 5 on the drain, then the drain to source will be 5 minus,
+[62:24] I just told you this in the constant current biasing conceptually, this is the same thing,
+[62:30] numerical is here, 6.5162, very good, very good, the answer of Sai is correct, the architect is also near,
+[62:40] I won't say exact, but it is clear, I think you have kept VGS as VT, the architect is your 6.2,
+[62:49] this logic is wrong, you have considered VGS as VT, 1.2, okay, see the next question,
+[62:59] now see this is the drain to gate biasing, I have shown you the question on all biasing techniques,
+[63:06] this is the drain to gate bias,
+[63:19] now you are thinking, do the kids think, do they leave the mosfet, do they leave the mosfet,
+[63:23] you have only spent 2-3 hours, the biasing of the mosfet has been completed,
+[63:28] so if the question of the DC of the mosfet comes, then you will fail very easily,
+[63:33] only in 2-3 hours, now think if in 2-3 hours we can pass either A or 2 numbers,
+[63:38] then it is worth the effort, what is the problem, because nowadays, anyway, the gate people like the mosfet more,
+[63:48] what is it, 1.516, tell the rest, same, see here the gate current is zero,
+[64:11] so this drain current is 50 microampere,
+[64:21] so we have given the same values actually, 50 microampere, 0.5 milliampere per volt square,
+[64:33] VGS minus VT square, so the VGS from here will be 1.2 plus under root 0.1,
+[64:47] so 1.5162, okay, now the voltage of the source is zero,
+[64:58] so VGS is actually equal to VG, since VS is zero, VGS is equal to VG,
+[65:08] and the gate and drain are connected, the gate and drain are shorted,
+[65:15] so the voltage of the drain is also same, and then the drain to source is VD minus VS,
+[65:24] that is also same as VGS, so actually in this biasing technique, VGS and VDS are equal,
+[65:32] okay, VGS and VDS are equal, see Krithivas, I am an academy director,
+[65:39] I am AVP, I am VP or CEO, there is no difference in your lecture, right,
+[65:48] sir the playlist of analog will be available for how long, it will be on mood for how long,
+[65:53] now I cannot tell you this, the day my mind went bad,
+[65:57] the day you went to the playlist with your attendance,
+[66:04] okay, it is a very good thing, okay, see this,
+[66:10] parameters are given, KN of a transistor is given, power dissipation,
+[66:15] as you wrote in BJT, VCE into IC, VCE into IC is written here, VDS into ID,
+[66:28] okay, here the power dissipation is, VDS into ID is analogous to BJT,
+[66:46] yes, see the PDF download, I have no idea if you will be able to download the PDF,
+[66:52] I think you will not be allowed to download the PDF,
+[66:55] otherwise what will the child do in a 7 day free trial, first he will download the material,
+[67:02] the free trial is given because you know about the PLUS platform,
+[67:06] you use it and see, so give the PDF in a nice way,
+[67:11] you can download it, then do it,
+[67:16] then it is a good thing for you people,
+[67:23] yes, you can see Unlimited,
+[67:25] you can binge watch it like a web series,
+[67:28] but first make this question for me, the rest of the things later,
+[67:41] now it is very tough to complete communication in 7 days,
+[68:03] it is tough, I think first do digital communication and random variable,
+[68:08] because it is a tough part, analog communication can be done,
+[68:12] analog communication does not have much difficulty,
+[68:14] then start from digital, EMT will be done in 7 days very easily,
+[68:19] it is a subject of around 40 hours,
+[68:21] if it is covered for 6 hours daily, then it will be done,
+[68:24] communication is done for 1.5 hours,
+[68:31] what is written, just read it,
+[68:33] let's see, here the gate and drain are shorted,
+[68:40] so this is for sure, this is in saturation,
+[68:54] now if I ask you about the source voltage,
+[68:57] then you will say 10ID and the voltage of the gate and drain is fixed,
+[69:04] how much is it, 10V,
+[69:08] so VGS is 10-10ID,
+[69:14] it is in saturation, let's apply the equation of ID,
+[69:18] 0.2 micro ampere per volt square, I am taking it in milli,
+[69:22] so 2 into 10 power minus 4,
+[69:26] I have converted these micro into milli,
+[69:30] VGS minus VT whole square,
+[69:38] by the way according to me, it should be 0.2 milli ampere,
+[69:41] and micro will be very small,
+[69:44] because according to 10 kilo, if I am taking it in kilo,
+[69:48] then I don't think it will be very small milli,
+[69:52] right, it should be in milli ampere,
+[69:57] it will be very small in micro,
+[69:59] here it will be 10,000,
+[70:02] it should be milli,
+[70:06] so here it will be 0.2, if you are taking milli,
+[70:10] so take it here, this is 5ID,
+[70:13] 8 square 64 plus 100ID square,
+[70:18] 10, 8, 80, 160ID,
+[70:24] so if you take ID from here,
+[70:34] 200,
+[70:37] 165,
+[70:39] 64,
+[70:41] 1.0265,
+[70:44] so if it is bigger than 1,
+[70:47] then 10 minus 10ID will be negative,
+[70:51] and 0.6234,
+[70:54] so obviously which one I have to take,
+[70:57] I have to take a small value,
+[70:59] VGS is getting negative on a big value,
+[71:06] now here son, how much VGS will come,
+[71:09] your 10 minus 10ID is 6.234,
+[71:14] so 10 minus 6.23,
+[71:16] so it will be 3.77,
+[71:19] 3.766 actually,
+[71:23] this will happen,
+[71:24] now VGS and VDS will be equal,
+[71:27] because gate and drain are shorted,
+[71:30] so VGS and VDS will be equal,
+[71:34] 3.766,
+[71:37] so the power that will come in the transistor,
+[71:41] you multiply the current with this,
+[71:46] 2.347 milliwatts,
+[71:52] okay 2.347 milliwatts,
+[71:56] what are you doing Anuj,
+[71:57] why are you multiplying 10,
+[72:01] why are you multiplying 10 in voltage,
+[72:04] 10 milliampere current is not there,
+[72:12] okay I will check the score,
+[72:18] okay,
+[72:21] 0.122 is given,
+[72:23] let's see,
+[72:24] okay,
+[72:32] now let's come to the MOSFET current source,
+[72:35] look like the current mirror circuit was made in BJT,
+[72:38] a similar type of circuit is also in your MOSFET,
+[72:42] now in MOSFET, the gate current is 0 by default,
+[72:47] in MOSFET, the gate current is 0 by default,
+[72:50] so the current coming from here will be 0,
+[72:53] i.e. the first transistor,
+[72:56] the drain current will be the reference current,
+[72:59] correct,
+[73:00] the drain current of the first transistor will be
+[73:03] reference current,
+[73:08] now let's check,
+[73:10] what is the value of 0.122 watt,
+[73:17] 0.122 is difficult to come,
+[73:21] what is the value,
+[73:26] tell me,
+[73:27] and that too in watt,
+[73:30] let's check once with micro ampere,
+[73:41] if I take micro ampere here,
+[73:44] then 5 is 5000 here,
+[73:46] so,
+[73:57] 51.587 is given,
+[73:59] which is negative,
+[74:01] 0.0124,
+[74:04] so 10-10 into 0.0124,
+[74:09] 9.876 is given,
+[74:12] into 0.0124,
+[74:14] so 0.122 milliwatt comes,
+[74:16] not watt,
+[74:17] milliwatt comes,
+[74:19] not watt,
+[74:23] okay, milliwatt is given,
+[74:25] then micro it only,
+[74:29] so this is 0.2 into 10 power minus 3 milli,
+[74:37] this will be 5000,
+[74:40] ID is,
+[74:46] your R is 0.0124,
+[74:49] and what was the other one,
+[75:00] 51.58,
+[75:05] 0.0124,
+[75:19] 9.766,
+[75:28] sorry, 9.866,
+[75:35] 9.876,
+[75:48] this is 0.122 milliwatt,
+[75:53] okay,
+[75:54] so if you take it in micro,
+[75:56] then 0.122 milliwatt will come,
+[75:58] come back,
+[75:59] our discussion was going on,
+[76:02] where did we go,
+[76:07] yes,
+[76:08] so what were we saying,
+[76:09] this current source or current mirror,
+[76:12] I have made,
+[76:13] it is very very similar to the,
+[76:15] BJT current mirror,
+[76:17] so what are we saying in this,
+[76:19] that gate current,
+[76:21] is 0,
+[76:23] for both transistors,
+[76:27] okay,
+[76:28] gate current is your 0,
+[76:30] for both transistors,
+[76:33] now look at the second thing,
+[76:34] the first transistor,
+[76:36] gate and drain are connected,
+[76:39] drain,
+[76:41] and gate,
+[76:44] are shorted,
+[76:46] for Q1,
+[76:48] okay,
+[76:56] so Q1,
+[76:57] in which you went,
+[77:00] in saturation,
+[77:03] okay,
+[77:04] you went in saturation,
+[77:07] this is clear,
+[77:08] Q1,
+[77:09] you went in saturation,
+[77:10] now its drain current,
+[77:12] if you see,
+[77:13] there is a reference,
+[77:15] so what will you say,
+[77:17] okay,
+[77:18] mu N,
+[77:19] C O X,
+[77:21] W by L,
+[77:23] of transistor 1,
+[77:25] by 2,
+[77:28] VGS,
+[77:29] minus VT,
+[77:31] whole square,
+[77:33] now the special thing here,
+[77:35] is that,
+[77:36] both the VGS are the same,
+[77:38] why sir,
+[77:40] because both the gate are connected,
+[77:42] both the source are connected,
+[77:44] so gate to source,
+[77:46] voltage is equal,
+[77:49] right,
+[77:50] gate,
+[77:52] and source,
+[77:56] of both transistor,
+[78:00] is connected together,
+[78:04] is connected together,
+[78:08] which means,
+[78:10] that VGS1 is equal to
+[78:12] VGS2,
+[78:17] so now my children,
+[78:18] I have told this to VGS,
+[78:21] now if you take out the current of the second transistor,
+[78:24] if you take out the drain current of the second transistor,
+[78:27] that is I0,
+[78:29] the gate current of the second transistor is I0,
+[78:33] so I0 is equal to
+[78:36] mu N,
+[78:37] C O X,
+[78:42] W by L of second,
+[78:45] VGS minus VT,
+[78:47] square,
+[78:48] what am I assuming,
+[78:50] that both the transistors are identical in every way,
+[78:53] but their aspect ratio is different,
+[78:56] that is their width and length can be different,
+[79:00] so what are we assuming here,
+[79:04] that both the transistors
+[79:10] are identical,
+[79:15] but
+[79:19] aspect ratios
+[79:24] may be unequal,
+[79:33] okay,
+[79:35] so now you see here,
+[79:37] if you take the ratio of I0 and I reference,
+[79:41] then everything will be cut,
+[79:43] only its aspect ratio will be saved,
+[79:47] if you understand the aspect ratio,
+[79:49] I had written W by L ratio,
+[79:51] and I had shown you in the diagram,
+[79:53] what is W and L,
+[79:55] this is what happened,
+[79:57] did you understand this,
+[79:59] that is you can scale the current as much as you want,
+[80:03] in the current mirror of MOSFET,
+[80:05] just by changing the size of the transistors,
+[80:09] so what are we saying,
+[80:11] by varying
+[80:16] size
+[80:19] or geometry
+[80:26] of transistor,
+[80:29] we can scale
+[80:35] current
+[80:38] as we like,
+[80:40] we can scale the current as much as we want,
+[80:44] did you understand,
+[80:46] so if you keep both the transistors identical in geometry,
+[80:50] then both the currents will be equal,
+[80:52] like BJT, there is no difference of 1 plus 2 by beta here,
+[80:56] remember in BJT,
+[80:58] I reference upon 1 plus 2 by beta,
+[81:01] it does not come here,
+[81:03] because pay attention in BJT,
+[81:06] the base current of BJT is zero,
+[81:08] if beta becomes infinity,
+[81:11] and the gate current of MOSFET is always zero,
+[81:14] so you can also say that MOSFET can be compared with BJT,
+[81:18] which has infinite beta,
+[81:22] MOSFET can be compared with BJT,
+[81:24] which has infinite beta,
+[81:26] and if BJT kept beta infinity in BJT,
+[81:29] then I0 will be equal to I reference,
+[81:32] there also 1 plus 2 by beta does not save,
+[81:35] so that is why 1 plus 2 by beta did not come in MOSFET,
+[81:38] did you understand the logic,
+[81:41] I will also write for you,
+[81:43] BJT had come,
+[81:47] I0
+[81:51] equal to I reference divided by,
+[81:56] and if beta tends to infinity,
+[82:00] then I0 equal to I reference,
+[82:04] what happens in beta tending to infinity,
+[82:07] the base current of transistor becomes zero,
+[82:10] I am saying that in MOSFET,
+[82:12] the base current or gate current is zero,
+[82:14] so MOSFET is similar to BJT,
+[82:16] which has infinite beta,
+[82:20] okay, now MOSFET current steering circuit,
+[82:23] current steering circuit,
+[82:25] now see here,
+[82:27] Q1, Q2 is making a current mirror,
+[82:29] Q1, Q3 is making a current mirror,
+[82:32] Q4, Q5 is making a current mirror,
+[82:36] now see here,
+[82:38] if you write I2,
+[82:40] I2 by I reference,
+[82:43] and see, do you remember in BJT,
+[82:45] when N transistors were taken,
+[82:47] then your N by beta used to be,
+[82:50] here because of the gate current being zero,
+[82:53] no matter how much you put the transistor,
+[82:56] no effect will come,
+[82:58] no effect will come,
+[83:01] yes, if current was to be scaled in BJT,
+[83:04] then we would scale the area,
+[83:06] very good,
+[83:08] there would be trans-linear property,
+[83:10] where by scaling the area,
+[83:12] we can scale the current,
+[83:14] in the same way here,
+[83:15] by changing the ratio of width to length,
+[83:17] we can change the current,
+[83:19] okay,
+[83:20] now keep this point always,
+[83:22] that since,
+[83:26] gate current is zero,
+[83:29] so no matter,
+[83:32] how many transistors,
+[83:35] no matter how many,
+[83:38] transistors are connected,
+[83:45] relation remains same,
+[83:48] what happened there,
+[83:50] when N transistor came,
+[83:52] so base current was N time,
+[83:55] so N by beta came,
+[83:57] here the gate current is zero,
+[83:59] you put one transistor,
+[84:00] two or ten,
+[84:01] no difference,
+[84:03] what is the application of current mirror,
+[84:05] I had told in BJT,
+[84:07] current mirror comes in the work of constant current biasing,
+[84:10] and it can act as a current source,
+[84:13] okay, it can act as a current source,
+[84:15] like I had told in differential amplifier,
+[84:17] when we solved differential amplifier,
+[84:20] I had said that,
+[84:21] its CMRR can increase,
+[84:23] common mode rejection ratio,
+[84:25] or it can reduce its common mode gain,
+[84:27] if in that,
+[84:28] instead of emitter resistance,
+[84:30] we put current mirror,
+[84:32] do you remember everyone,
+[84:35] now see,
+[84:36] what will be I3 here,
+[84:38] I3 is also made with I reference,
+[84:40] current mirror,
+[84:44] so here it will be W by L of 3,
+[84:50] W by L of 1,
+[84:53] now for 4 and 5,
+[84:55] I reference I4,
+[84:57] means I3 is working,
+[85:00] so I4 is I3,
+[85:02] and if you want I5,
+[85:07] then you can say this,
+[85:12] if you understand,
+[85:13] then you can scale your current accordingly,
+[85:17] have you understood,
+[85:18] there is no problem in this,
+[85:20] the current mirror of MOSFET is very easy,
+[85:23] the current mirror of MOSFET is very easy,
+[85:26] and then I will say this,
+[85:28] the question of doubt plus,
+[85:30] what is the application of current mirror,
+[85:32] if you see,
+[85:34] any of you,
+[85:35] are attending all the lectures,
+[85:37] BJT, JFET, MOSFET,
+[85:39] they will not see a holistic picture of analog,
+[85:42] they will get to see many things extra,
+[85:44] but the selected topics,
+[85:46] which will come only in exams,
+[85:48] they will also make the question,
+[85:50] but then obviously conceptually,
+[85:52] you people cannot be as strong,
+[85:54] that you know everything inside and outside the analog,
+[85:57] then what should be the focus of you,
+[85:59] that we have to learn the relevant things in exams,
+[86:02] and we have to be like this,
+[86:04] that we will make any question in the exam,
+[86:06] then think that we should know everything,
+[86:10] okay,
+[86:12] it is clear till here,
+[86:17] now see,
+[86:19] the topic is of channel conductance,
+[86:21] whose topic is channel conductance,
+[86:23] that is conductance of the region,
+[86:25] between the drain and the source,
+[86:27] what does this mean,
+[86:29] conductance
+[86:31] of region
+[86:33] between
+[86:35] the drain and the source,
+[86:37] between
+[86:42] the drain and the source,
+[86:53] now here you see,
+[86:55] what do we say,
+[86:57] carefully understand,
+[86:59] I will tell you 2-3 things,
+[87:01] first talk about linear or triode region,
+[87:03] okay,
+[87:05] which is not more useful in the amplifier,
+[87:07] obviously what is useful in the amplifier,
+[87:09] is saturation,
+[87:11] here you say that
+[87:13] id is
+[87:15] mu n
+[87:17] c o x
+[87:19] w by l
+[87:23] v gs
+[87:24] minus v t
+[87:26] into v ds
+[87:29] minus v ds
+[87:31] square by 2,
+[87:35] here what you say,
+[87:37] v ds is small,
+[87:43] so ignore,
+[87:47] v ds square by 2,
+[87:51] now this channel conductance,
+[87:53] between drain and source,
+[87:55] you can take it out like this,
+[87:57] del id by del v ds,
+[88:01] that is mu n
+[88:03] c o x w by l,
+[88:05] let me tell you,
+[88:07] many times in linear region,
+[88:09] we ignore this square term,
+[88:11] v gs minus v t,
+[88:13] so you can say,
+[88:15] resistance is 1 by conductance,
+[88:17] now see, this is basically
+[88:19] the basic principle of MOSFET,
+[88:21] the basis of this device,
+[88:23] is that
+[88:25] with the help of v gs,
+[88:27] you can control the resistance of the channel,
+[88:29] so that you can
+[88:31] control the current of the channel,
+[88:33] the bigger the v gs,
+[88:35] the less resistance,
+[88:37] the easier the charges will flow,
+[88:39] between drain and source,
+[88:41] between drain and source,
+[88:43] understood?
+[88:45] understood?
+[88:47] this is the work of MOSFET,
+[88:49] that if you vary the gate voltage,
+[88:51] then you can
+[88:53] modify the channel,
+[88:55] you can control the
+[88:57] thickness of the channel,
+[88:59] so that you can
+[89:01] change the current of the drain to source,
+[89:03] understood?
+[89:05] so here, if you see, g versus
+[89:07] v gs, then it will be
+[89:09] a linear relationship,
+[89:11] what is this? it is a linear relationship,
+[89:13] and this relationship then
+[89:15] goes on, when v gs is greater
+[89:17] than v t,
+[89:19] understood?
+[89:21] that is why, what is v t?
+[89:23] gm varies linearly with v gs,
+[89:25] but look, if you
+[89:27] want to use MOSFET as an amplifier,
+[89:29] then
+[89:35] you have to go
+[89:37] to the saturation region,
+[89:39] okay?
+[89:41] then what region
+[89:43] will you talk about,
+[89:45] about saturation?
+[89:51] what did you see there,
+[89:53] ID?
+[89:57] k n
+[90:01] v gs minus v t whole
+[90:03] square
+[90:05] 1 plus lambda
+[90:07] v ds
+[90:09] now what you say here,
+[90:11] the conductance of drain to
+[90:13] source,
+[90:27] this will come, okay?
+[90:29] so what will be the resistance?
+[90:41] and you know, it is called
+[90:43] approximately ID by
+[90:45] sorry, 1 by lambda
+[90:47] ID
+[90:49] sir, why did you say that?
+[90:51] I mean, I said that
+[90:53] the value of ID
+[90:55] will not change much
+[90:57] from 1 plus lambda v ds
+[90:59] will not change much
+[91:01] that is why, the value of
+[91:03] ID is approximately
+[91:05] equal to this, you can ignore
+[91:07] 1 plus lambda v ds, okay?
+[91:09] so what I want to tell you here,
+[91:11] while computing
+[91:13] while computing
+[91:15] ID
+[91:19] we can ignore
+[91:21] we can ignore
+[91:23] we can ignore
+[91:25] 1 plus
+[91:27] lambda v ds
+[91:29] but
+[91:31] but
+[91:33] this term is
+[91:35] important
+[91:37] this term is
+[91:39] important
+[91:43] to compute output
+[91:45] resistance
+[91:47] okay? to compute
+[91:49] output
+[91:51] resistance
+[91:53] r0 and
+[91:55] rd
+[91:57] so you will use 1 plus
+[91:59] lambda v ds only
+[92:01] when you have to
+[92:03] remove output or drain resistance
+[92:05] then your resistance comes
+[92:07] from here
+[92:09] so you have to remember this formula
+[92:11] because it will be used in
+[92:13] amplifier model
+[92:15] this resistance will be used
+[92:17] in amplifier model
+[92:19] this is a very important value
+[92:21] dear, when you remove
+[92:23] ID, you don't need to take
+[92:25] the equation of lambda
+[92:27] if lambda is given in any question
+[92:29] then it will come to the work of
+[92:31] removing rd from here
+[92:33] you don't need to take lambda
+[92:35] in the equation of ID
+[92:37] I told you this
+[92:39] while computing ID
+[92:41] we can ignore 1 plus lambda v ds
+[92:43] but this term is important
+[92:45] i.e. to remove r0 or rd
+[92:47] you need lambda
+[92:49] if you don't take lambda in this equation
+[92:51] then it will work
+[92:53] if you ignore it then it will work
+[92:55] okay?
+[92:57] the more you put vgs, the more charge
+[92:59] it will accumulate, the better channel
+[93:01] the better conduction
+[93:03] very good
+[93:05] now trans conductance
+[93:07] as I was saying, we will differentiate
+[93:09] in respect of vgs
+[93:11] but dear, don't call it channel conductance
+[93:13] if you differentiate output current
+[93:15] with respect to input resistance
+[93:17] that is trans conductance
+[93:19] where will we remove it
+[93:21] because we need it in amplifier
+[93:23] so we will determine
+[93:25] it
+[93:27] in
+[93:29] saturation region
+[93:31] okay?
+[93:33] where your ID is
+[93:35] where your ID is
+[93:37] where your ID is
+[93:39] where your ID is
+[93:41] vgs minus
+[93:43] vt
+[93:45] square
+[93:47] okay?
+[93:49] so here
+[93:57] will you write like this?
+[94:07] here it is
+[94:09] now you can write it like this
+[94:19] but what is the meaning of K here
+[94:21] what do I take
+[94:29] by the way, one second
+[94:31] here 2 will also come
+[94:35] okay?
+[94:37] 2 will also come
+[94:39] clear? this is trans conductance
+[94:41] what is this?
+[94:43] trans conductance
+[94:45] so this formula is also important
+[94:49] because
+[94:51] you know in amplifier
+[94:53] there are only 2 parameters
+[94:55] gm and rd
+[94:57] in amplifier
+[94:59] there are only 2 parameters
+[95:01] gm and rd
+[95:03] now it is made
+[95:05] because it is very easy
+[95:07] here your gate current is 0
+[95:09] here
+[95:11] your gate current is 0
+[95:13] and here
+[95:15] your drain to source current is
+[95:17] gm vgs
+[95:19] and it comes in parallel
+[95:21] rd
+[95:23] it comes in parallel
+[95:25] okay? this is clear
+[95:27] so here rd
+[95:29] you know how much was coming
+[95:31] 1 by lambda
+[95:33] and gm
+[95:35] and gm how much is coming
+[95:39] 2 root K
+[95:41] id
+[95:43] 2 root K
+[95:44] id
+[95:45] is it clear?
+[95:47] yes, formula like JFET is also running here
+[95:51] now look at this one more
+[95:53] t-model also can be used
+[95:55] t-model is used in some places
+[95:57] in most places
+[95:59] 99% of your place is used
+[96:01] now what is in t-model?
+[96:03] see this is drain
+[96:05] this is your source
+[96:07] so from gate
+[96:09] voltage is between source
+[96:11] how much current is going in source
+[96:19] which will be gm vgs
+[96:25] so here KCL is satisfied
+[96:27] KCL is satisfied
+[96:29] gm vgs
+[96:31] and this is gm vgs
+[96:33] so your gate current is 0
+[96:35] and there is a resistance
+[96:37] between drain and source
+[96:39] between drain and source
+[96:41] this resistance is rd
+[96:43] look at the current going on drain and source
+[96:45] gm vgs
+[96:47] current going on drain and source
+[96:49] gm vgs
+[96:51] and what is in drain and source
+[96:53] rd is on
+[96:55] this is what is happening
+[96:57] What is the resistance between both GMVGS and GMVGS?
+[97:01] RD.
+[97:02] Is this clear?
+[97:04] Tell me.
+[97:06] Will we ignore RD?
+[97:08] You can ignore RD.
+[97:10] RD can be ignored if it is very high.
+[97:18] As we did it in JFET as well, ignore RD.
+[97:25] As we did it in JFET as RD was 1 kilo, RD was 30 kilo, RD was 1 kilo.
+[97:35] Now you can ignore RD in comparison to 1.
+[97:39] If RD is too high, then ignore RD.
+[97:46] Is it clear?
+[97:47] So, it is easier than BJT.
+[97:51] Think about it, your small signal model is also very easy than BJT.
+[97:56] So, we will use it in the next lecture.
+[97:59] We will use it in the next lecture to remove the gain of the MOSFET amplifier.
+[98:04] In the next lecture, we will wind up the amplifier in common source with bypassed RS,
+[98:10] unbypassed RS, common drain, common gate.
+[98:13] I will make you do all kinds of amplifiers.
+[98:16] You will get an idea of how to use this model.
+[98:19] So, from today's lecture, you have to understand biasing and this parameter should be clear.
+[98:24] If you know this much, then more than enough.
+[98:27] Okay?
+[98:28] Let's wind up today's class.
+[98:31] And see, whoever wants to learn some subjects,
+[98:34] whether they are EC students or electrical students,
+[98:37] what can they do?
+[98:38] They can activate free trial.
+[98:40] The link of free trial will be in the description of this video.
+[98:44] It is giving you a 7-day free trial in which you can access the entire content up to 7 days.
+[98:51] You can read anything you want to read.
+[98:54] Okay?
+[98:55] The T model and the small signal model are the same.
+[98:57] It is in the shape of a Pi and a T shape.
+[99:00] Both are the same.
+[99:02] The gate current is zero.
+[99:03] The source goes to the GmbGs from the drain.
+[99:05] There is an RD resistance between the drain and the source.
+[99:08] Okay?
+[99:09] Both are small signal models.
+[99:11] One is a small signal Pi model.
+[99:13] One is a small signal T model.
+[99:15] Okay?
+[99:16] And this offer is for you till the 18th of October.
+[99:20] So, activate it before the 18th of October.
+[99:23] And put the code on the time of activation.
+[99:25] Ankit ESE.
+[99:27] Okay?
+[99:31] Now, the mouse is looking difficult.
+[99:33] What are you going to do tomorrow?
+[99:34] Tomorrow is Sunday.
+[99:35] Tomorrow will be off.
+[99:37] Now, see here.
+[99:39] No.
+[99:40] This is the link of my special classes.
+[99:41] From here, you can get diode and BJT.
+[99:44] And after the next lecture, you will be able to do the question of MOSFET.
+[99:48] Yes, my dear.
+[99:49] The gate and ESE will be covered by both the syllabus from EMFT.
+[99:52] And if you join the academy, then you can take anything plus and iconic.
+[99:57] There are top educators in both.
+[99:59] The study material is uploaded on the app.
+[100:01] The test series is included.
+[100:02] If you take the iconic, then if there is a doubt in a new question,
+[100:06] then you will get the video solution of the doubt.
+[100:08] Printed notes will be sent home.
+[100:10] One-to-one mentorship will be provided to you.
+[100:13] Your strategy and study plan will be made.
+[100:16] And in the open house session, you can interact via audio.
+[100:19] Okay?
+[100:21] Come on.
+[100:22] It's fun, isn't it?
+[100:23] It's good to be with Aditya sir.
+[100:24] Enjoy.
+[100:25] And look, you can decide the plan here.
+[100:28] You have to take the plus, take the iconic.
+[100:31] And you decide the duration.
+[100:33] You can put the code on the time of payment.
+[100:35] Ankit ESE.
+[100:36] So, take a 7-day free trial.
+[100:38] You can learn.
+[100:39] You can watch the platform.
+[100:41] It's fun.
+[100:42] So, join the academy plus or iconic.
+[100:45] And look, we have launched this new offering.
+[100:47] You were asking for it.
+[100:48] Look, we are giving you the test series and question bank.
+[100:51] It costs 2222 rupees.
+[100:54] You are getting it at 1111 rupees.
+[100:56] Okay?
+[100:57] For the kids of 2024, the cost of test series and question bank is 4 times 3.
+[101:03] And it is getting it at half rate.
+[101:05] Okay?
+[101:06] You are getting it at half rate.
+[101:08] Self-study videos.
+[101:10] If you want a self-study course in English.
+[101:12] It costs 11000 rupees.
+[101:13] You are getting it at 5000 rupees.
+[101:15] For the kids of 2024, it costs 15000 rupees.
+[101:18] You are getting it at 7000 rupees.
+[101:20] And the kids of English speaking, for them, for 2023.
+[101:23] 11000 rupees.
+[101:24] It is being offered at 5000 rupees.
+[101:26] For 2024.
+[101:27] 15000 rupees.
+[101:28] It is being offered at 7000 rupees.
+[101:30] Okay?
+[101:31] And this offering, in the test series and question bank, it costs 1100 rupees.
+[101:35] It is a question for you.
+[101:36] There are more than 50 tests for you.
+[101:38] And for the kids of 2024, there are more than 100 tests for them.
+[101:42] And for the kids of 2025, there are more than 150 tests for you.
+[101:47] There are more than 15000 videos, dear.
+[101:50] And there will be more than 6000 videos for 2024.
+[101:53] Okay?
+[101:54] Let's go.
+[101:55] And if you see, dear, we have produced the result in an amazing way.
+[102:00] Already, we have produced the last 6 ranks in the top 10.
+[102:03] We will take out 10 out of 10 this time.
+[102:05] You can join the Unacademy to read my guidance.
+[102:08] Use code, Ankit ESE.
+[102:10] And if you are going through financial issues,
+[102:14] then you can get a subscription on EMI,
+[102:17] where you can pay monthly.
+[102:19] There is no interest on it.
+[102:21] This EMI is approved in 2 hours.
+[102:24] There is a payment card in the paperwork.
+[102:26] And you can repay it in a flexible amount of time.
+[102:29] Brahmashra Plus has started, dear.
+[102:31] Where Umesh Sir has taken the strategy session.
+[102:34] Classes have also started in it.
+[102:36] Your daily doubts are getting answered.
+[102:38] Daily, you are getting DPP.
+[102:39] There are exclusive live classes.
+[102:41] There is a strategy session.
+[102:42] There are tests series on the Notes app.
+[102:44] Gate Academy Paramount.
+[102:46] Gate Academy Workbook.
+[102:47] Gate Academy PYQ.
+[102:49] You are getting all these things in Unacademy subscription
+[102:53] on Brahmashra Plus badge.
+[102:55] And we have started Gurukul Batch for 24 people.
+[102:58] In which Dhande Sir has started Analog.
+[103:00] And Math has started Gurupal Sir.
+[103:02] So you can take your preparation with this batch.
+[103:06] And for 2024, ECE's Gurukul Batch is also going on.
+[103:10] The same subject is also going on.
+[103:12] Analog and Maths.
+[103:13] And for the children who want to prepare for 23,
+[103:16] we have launched a 4 month subscription.
+[103:18] And for the children of 24,
+[103:20] we have launched a 16 month subscription.
+[103:23] So you can join it using code ANKITESE.
+[103:26] So if you have financial issues,
+[103:29] then you can take our recorded courses.
+[103:31] They are already very cheap.
+[103:33] Rs. 5000 and Rs. 7000.
+[103:35] And if you want to be financially stable,
+[103:38] then you can come to Unacademy.
+[103:41] The children of 24,
+[103:42] have a subscription of 16 months.
+[103:43] The children of 23,
+[103:44] have a subscription of 4 months.
+[103:45] This is my telegram channel.
+[103:47] Join it so that you get all the updates.
+[103:50] And I will immediately give you the PDF of this session.
+[103:53] Go to the homepage of the app,
+[103:55] in the community, in Discover.
+[103:56] I will meet there and all my PDFs too.
+[103:59] So thank you everyone.
+[104:00] Now we will meet on Monday.
+[104:01] Monday, Mosfet.
+[104:02] We will discuss Amplifier.
+[104:04] So we will meet on Monday at 11.30 in the morning.
+[104:07] Let's crack it.

@@ -1,0 +1,167 @@
+Title: Op-Amp: What is PSRR (Power Supply Rejection Ratio) ? PSRR Explained
+URL: https://www.youtube.com/watch?v=9oy5okMqobQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel OilAboutElectronics.
+[00:11] So in this video, we will learn about the PSRR or the Power Supply Rejection ratio of the
+[00:16] OPEM.
+[00:17] So it is one of the specifications that you will find in the data sheets of the OPEM.
+[00:23] So typically in the data sheets, it is mentioned as the Power Supply Rejection ratio, but
+[00:27] in some data sheets, it is also mentioned as the Supply Voltage Rejection ratio.
+[00:33] So in this video, let us understand what does it mean and what is the importance of this
+[00:38] specification.
+[00:40] So in general terms, this PSRR specifies that if there is any change in the supply voltage,
+[00:46] then how it will affect the how it could of the OPEM.
+[00:49] Now ideally for OPEM, if there is any change in the supply voltage, then it should not
+[00:53] affect the how it could of the OPEM.
+[00:56] But actually, with the change in the supply voltage, the output voltage of the OPEM will
+[01:01] also change by a small margin.
+[01:03] And this is specifically important when the input signal level is very small.
+[01:08] Typically, when the input is few millivolts for hundreds of micro-volt and this specification
+[01:13] is very much important.
+[01:15] So this PSRR is specified in terms of the input offset voltage.
+[01:20] That means with the change in the supply voltage, how the input offset voltage of the OPEM
+[01:24] will change.
+[01:26] And typically, the unit of this PSRR is micro-volt per volt.
+[01:31] So for example, for some OPEM, if the PSRR is equal to 10 micro-volt per volt, it means
+[01:37] that when the supply voltage will change by a 1 volt, then the input offset voltage of
+[01:41] that OPEM will change by a 10 micro-volt.
+[01:44] And effectively, that change in the input offset voltage will affect the how it could of the
+[01:48] OPEM.
+[01:49] So for dual supply OPEMs, typically it is assumed that the change in the supply voltage
+[01:54] is symmetrical.
+[01:56] But if the change in the supply voltage is not symmetrical, then it will lead to the common
+[02:01] mode error.
+[02:02] But here we will assume that the change in the supply voltage is equal to symmetrical.
+[02:07] That means here, we are assuming that both positive and negative supply voltages are changing
+[02:12] by the same amount in the opposite direction.
+[02:15] For example, if the supply voltage of the OPEM is equal to plus minus 15 volt, and if it
+[02:21] is changes to 14.5 volt, and minus 14.5 volt, then it means that the change in the supply
+[02:27] voltage of the OPEM is equal to 1 volt.
+[02:30] And with that change in the supply voltage, there will also be a change in the input offset
+[02:34] voltage of the OPEM.
+[02:36] So in the decibel, this PSRR is defined as minus 20 log of this delta VIO, divided by
+[02:43] the delta VS.
+[02:44] Where this delta VIO is the change in the input offset voltage, while the delta VS is the
+[02:50] change in the supply voltage.
+[02:53] So I will come back to this equation later on.
+[02:55] But first let us understand that why this PSRR is defined in terms of the input offset
+[03:00] voltage.
+[03:01] So earlier, we have already discussed about the input offset voltage.
+[03:06] And as we have discussed internally, the first is of the OPEM, and this of the differential
+[03:10] amplifier.
+[03:12] Now if both run this test in the differential pair are identical, and if both run this
+[03:16] testers are also equal, then in that case, when we apply the same voltage to the both
+[03:21] input terminals, then the difference between the two input terminals should be equal to
+[03:25] 0.
+[03:26] But actually, if you see, and there will be some mismatch between the two transistors
+[03:30] as well as the other stars.
+[03:33] And because of that, even if both the input terminals are connected to the same input,
+[03:37] then also we will get some difference between the two input terminals.
+[03:41] So the difference between these two input terminals is known as the input offset voltage.
+[03:46] So naturally, this input offset voltage is the mass dependent.
+[03:50] That means as the supply voltage of the OPEM changes, and the biasing of the two transistors
+[03:55] will also change.
+[03:57] And because of that, the input offset voltage of the OPEM will also change.
+[04:01] So within the OPEM, the different amplifier stages will amplify this input offset voltage.
+[04:07] And when the OPEM is used in the Opal Loop configuration, then this input offset voltage
+[04:11] will get multiplied by the OPEM loop gain of the OPEM.
+[04:15] This is the OPEM loop gain of the OPEM is very high.
+[04:18] So depending on the polarity of this input offset voltage, we will get some positive or
+[04:22] the negative voltage at the output of the OPEM.
+[04:25] And if the input offset voltage is very high, then in that case, the output of the OPEM
+[04:30] will also get saturated.
+[04:32] But if we use the OPEM in the closed loop configuration, then this input offset voltage
+[04:36] will get multiplied by the noise gain of the OPEM.
+[04:40] That means whether the OPEM is used in the inverting or the non-inverting configuration,
+[04:44] its output voltage will be equal to 1 plus this RF divided by R1 times input offset voltage.
+[04:51] That means depending on the gain of the OPEM, we will get some output because of this
+[04:55] input offset voltage.
+[04:57] So as I said earlier, as the supply voltage changes, then the basing voltage of the both
+[05:02] transistors will also change.
+[05:05] And because of that, the input offset voltage of the OPEM will also change.
+[05:09] And that change in the input offset voltage will change the output of the OPEM.
+[05:14] So in this way, effectively, the change in the supply voltage will change the output
+[05:18] of the OPEM.
+[05:20] So for ideal OPEM, this change in the input offset voltage should be equal to 0.
+[05:25] More ideally, this PSRR should be equal to 0.
+[05:29] But for the actual OPEMs, the output does change with the change in the supply voltage.
+[05:35] So preferably, this change should be as low as possible.
+[05:39] That means one should select the OPEM, which has the lower value of the PSRR.
+[05:44] And when the PSRR is specified in the decibel, and the higher value of the PSRR is more
+[05:49] preferable.
+[05:51] For example, if the OPEM has the PSRR of 100 dB, it means that this 100 is equal to minus
+[05:59] 20 log of this delta VIO divided by delta VS.
+[06:08] Or we can say that this log of this delta VIO divided by delta VS is equal to minus 5.
+[06:18] So we can say that this delta VIO divided by delta VS is equal to 10 to the power minus
+[06:25] 5.
+[06:26] Or that is equal to 10 microvolt per volt.
+[06:31] On the other hand, if the PSRR value is equal to 80 dB, in that case, this 80 is equal
+[06:37] to minus 20 log of this delta VIO divided by delta VS.
+[06:45] For in that case, this delta VIO divided by delta VS is equal to 10 to the power minus
+[06:52] 4.
+[06:53] That is equal to this 100 microvolt per volt.
+[06:57] That means in the decibel, as the value of the PSRR reduces, it means that with the change
+[07:03] in the supply voltage, there will be a more change in the input offset voltage.
+[07:07] So in the decibel, the OPEM with the higher value of the PSRR is preferable.
+[07:12] Moreover, this PSRR value will also reduce with the frequency.
+[07:18] That means while selecting the OPEM, we should also consider the PSRR narrating.
+[07:24] That means if we have a ripple, let's say of 100 Hz on top of the supply voltage,
+[07:29] then that ripple will not be rejected by the OPEM as effectively as the DC voltage.
+[07:34] And because of that, some fraction of that ripple will also appear at the output of the OPEM.
+[07:40] For example, if we use poorly regulated DC voltage source with the OPEM, then it will
+[07:46] have the substantial ripple on top of the DC voltage.
+[07:49] For if we are using the SMPS based supply voltage for basing the OPEM, then it will
+[07:54] have the switching noise of kilowatts frequency.
+[07:57] And because of the PSRR narrating, it will also appear at the output.
+[08:02] Because as you can see from the graph, the OPEM will not be able to reject that high
+[08:06] frequency noise effectively.
+[08:09] So this ripple or the switching noise will be more prominent at the output of the OPEM
+[08:14] when the input signal, which we are amplifying is of very low value, like a 1 milli volt
+[08:19] or the 100 micro volt.
+[08:21] So let us take one example and let us put some numbers so that it will get clear to you.
+[08:27] So let's say a 1 OPEM is biased at the plus minus 12 volt.
+[08:31] But because of the poor regulation, there is a plus minus 100 milli volt of ripple on top
+[08:36] of it.
+[08:37] So we can say that the total change in the supply voltage is equal to 0.2 volt.
+[08:43] That is equal to 200 milli volt.
+[08:45] And for that OPEM, let's say this is the PSRR curve.
+[08:50] So here we are assuming that the frequency of the ripple is equal to 100 hertz.
+[08:55] And as you can see from the graph, at 100 hertz, the value of the PSRR is equal to 80 dB.
+[09:01] So first of all, let us convert it into the micro volt per volt.
+[09:06] So as per this equation, this 80 dB corresponds to 100 micro volt per volt.
+[09:11] That means at the 100 hertz, the value of the PSRR is equal to 100 micro volt per volt.
+[09:17] And here, the change in the supply voltage is equal to 200 milli volt.
+[09:22] So because of that, if you see the change in the input of the voltage, then that will
+[09:26] be equal to this 0.2 times 100 micro volt or that is equal to 20 micro volt.
+[09:32] So depending on the OPEM configuration, this change in the input of the voltage will
+[09:36] get multiplied by the OPEM gain.
+[09:39] So here, let's assume that the OPEM is used in the closed loop configuration and the closed
+[09:44] loop gain of the OPEM is equal to 10.
+[09:47] That means here, the total change in the output that we will observe is equal to 20 micro
+[09:52] volt times 10.
+[09:54] That is equal to 200 micro volt.
+[09:57] That means if there is a ripple of plus minus 100 milli volt on top of the supply voltage,
+[10:02] then because of that, we will observe the change of 200 micro volt at the output of the
+[10:06] OPEM.
+[10:07] And whenever we connect the input to the OPEM, and in that case, this change will appear
+[10:12] on top of the output signal.
+[10:15] For example, if the input to the OPEM is equal to 0.5 volt, 5 hertz sinusoidal signal,
+[10:20] then in that case, at the output, we will get the 10 milli volt pictopic signal.
+[10:26] And on top of this output signal, there will be a ripple of 200 micro volt.
+[10:31] And as you have discussed, since the PSR are degraded with the frequency, so as the frequency
+[10:35] of the ripple or the frequency of the switching noise increases, then the ripple at the output
+[10:40] will be more prominent.
+[10:42] So particularly, when we are dealing with the very low signal levels, then it is always
+[10:47] advisable to use the regulated power supply with the low ripple value.
+[10:51] And we should select the OPEM, which has the very high decibel value of the PSRR.
+[10:57] And during the selection, we should also consider the derating of the PSRR with the frequency.
+[11:02] Moreover, to avoid any high frequency noise in the output, the proper value of the
+[11:07] decoupling capacitor should always be used with the OPEM.
+[11:11] So this decoupling capacitor provides the low impedance part to the high frequency noise.
+[11:17] And in a way, it reduces the effect of the high frequency noise at the output of the OPEM.
+[11:22] So that is all regarding the PSRR of the OPEM.
+[11:26] So if you have any questions or suggestions, then do let me know here in the comment section
+[11:30] below.
+[11:31] If you like this video, hit the like button and subscribe to the channel for more such
+[11:34] videos.

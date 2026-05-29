@@ -1,0 +1,133 @@
+Title: Operational Amplifier: Inverting Op Amp and The Concept of Virtual Ground in Op Amp
+URL: https://www.youtube.com/watch?v=AuZ00cQ0UrE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:22] So in this video, we are going to talk about the inverting input configuration of the operation
+[00:26] amplifier and we will see the concept of virtual ground in the op-amp.
+[00:31] Now in the last video, we had seen the basics of this operational amplifier and we had
+[00:35] seen that this op-amp is a very high gain differential amplifier and the gain of the op-amp
+[00:41] used to be in the range of 10 to the power 5 to the 10 to the power 6.
+[00:46] And we had seen that even if we apply a very small amount of differential input voltage
+[00:51] between the input terminals of this op-amp, then also the output will be get saturated
+[00:56] towards the bias points and then we had seen the voltage transfer curve of this op-amp.
+[01:01] And then we had seen that even if we apply a small input voltage to this op-amp, then
+[01:06] also the output will be get saturated either towards the positive or the negative saturation
+[01:10] voltages.
+[01:11] Now let's say the saturation voltage for the op-amp is 10 volt and the open loop gain
+[01:16] of this op-amp is let's say 10 to the power 6.
+[01:20] So this op-amp will be get saturated at a 10 micro volt of differential input voltages.
+[01:26] So now whenever we want to use this op-amp as amplifier, we need to use this in a linear
+[01:30] region that means in this region so that the input and output has a linear relationship.
+[01:36] But whenever we are using this op-amp in open loop configuration, then this linear range
+[01:40] is very small.
+[01:42] So if we want to use this op-amp as amplifier, then we need to somehow control the gain of
+[01:47] this amplifier.
+[01:49] And we can do so by applying the feedback from output to the input side.
+[01:53] So there are two ways by which we can apply this feedback.
+[01:57] One is providing the feedback from output to this positive input terminal or let's say
+[02:02] non-inverting input terminal and the second is providing the feedback from output to this
+[02:08] inverting input terminal.
+[02:09] Now whenever we are providing the feedback from this output to this non-inverting input,
+[02:15] then that kind of feedback is known as the positive feedback.
+[02:18] Because here, the fraction of the output voltage is getting added to this non-inverting input.
+[02:24] Now whenever in any system, we are using the positive feedback, then this positive feedback
+[02:27] leads that system into the unstable.
+[02:30] So we cannot use this positive feedback alone.
+[02:33] So now here to control the gain of this op-amp, we need to go for this negative feedback.
+[02:39] That means we need to feed the fraction of output voltage to this inverting input terminal.
+[02:44] Now here, there are three ways by which we can apply the input to this op-amp.
+[02:48] The first is applying the input to this non-inverting input terminal and grounding
+[02:52] this negative input terminal.
+[02:54] The second is providing the input to this inverting input terminal and grounding this
+[02:58] positive terminal.
+[03:00] And third is providing the input to both non-inverting, as well as the inverting input
+[03:04] terminals.
+[03:05] So first, we will see the case when we are applying
+[03:08] the input to this inverting input terminal.
+[03:10] So let us say, we have applied the input to this inverting input terminal through one
+[03:15] register R1 and we are providing the negative feedback from output to this inverting input
+[03:19] terminal where is feedback register RF.
+[03:22] So now whenever opamp is used in this configuration then this configuration is known as the inverting
+[03:28] opamp configuration.
+[03:29] So now in this configuration let us find out the relation between this output and the input
+[03:34] voltages and let us see how we can control the gain of the opamp by using this feedback
+[03:39] register RF and this register R1.
+[03:42] So let us find the relationship between this output and input in terms of this feedback
+[03:46] register RF and R1.
+[03:48] So now before we derive this expression let us understand the concept of virtual ground
+[03:52] in the opamp and this concept of virtual ground is applicable when we are providing the
+[03:57] negative feedback to this opamp.
+[03:59] Now let us say for the given opamp the open loop gain of this opamp is 10 to the power 6
+[04:06] and we know that the output voltage V out of opamp can be given as 8 times the differential
+[04:12] input voltage that is the input voltage between this inverting and the non-inverting input
+[04:18] terminals.
+[04:19] Now here let us assume that through this negative feedback we are controlling the output
+[04:23] voltage of this opamp in such a way that the output voltage is always less than the saturation
+[04:28] voltage or we can say that we are operating this opamp in a linear region.
+[04:32] So let us assume that the output voltage is 10 volt.
+[04:37] So we can say that 10 volt that is equal to 10 to the power 6 times this differential
+[04:42] input voltage or we can say that the differential input voltage is equal to 10 micro volt.
+[04:49] Now here this differential input voltage is nothing but the difference between this inverting
+[04:54] and the non-inverting input terminals.
+[04:56] So we can write this differential input voltage as V plus minus V minus that is equal to 10
+[05:05] micro volt.
+[05:06] Now here this 10 micro volt is a very small signal and we can almost neglect it.
+[05:11] So we can write this V plus minus V minus as approximately equal to 0 volt or we can
+[05:19] say that V plus that is equal to V minus.
+[05:23] It means that the inverting and the non-inverting input terminals are at the same potential or
+[05:29] we can say that there is a virtual shot between this inverting and the non-inverting input
+[05:35] terminals.
+[05:36] Now here the term virtual means that these two terminals are not actually short circuited
+[05:41] but they are virtually short circuited.
+[05:43] So whatever voltage that appears at one terminal the exact safe voltage will be appear at the
+[05:49] another terminal.
+[05:50] So now in this configuration this non-inverting input terminal is grounded.
+[05:55] So we can say that V plus that is equal to 0.
+[05:59] So according to this conclusion V minus should be equal to 0.
+[06:05] It means that this terminal is not actually grounded but it will act as a virtual ground.
+[06:11] So this negative feedback will ensure that the difference between this inverting and
+[06:15] the non-inverting input terminal is very small or we can say that it is almost negligible.
+[06:20] And because of that we can consider this both input terminal at the same potential.
+[06:26] So this concept is known as the virtual ground concept.
+[06:31] So now let us use this concept of virtual ground and let us derive the expression between
+[06:35] this V out and V in.
+[06:38] Now here let us say the current I1 is the current that is flowing through this resistor R1.
+[06:44] And let us say this node is the node X.
+[06:47] And let us say the current that is flowing through this resistor Rf is If.
+[06:53] Now in the last video we had seen that the op-amp has a very high input impedance or if
+[06:58] we consider the ideal op-amp then the input impedance of the op-amp is infinite.
+[07:02] It means that no current is entering into this op-amp or we can say that current I that
+[07:07] is equal to 0.
+[07:09] It means that I1 is equal to If.
+[07:13] So now we can write this I1 as V in minus VX dR by R1 where VX is the voltage at this
+[07:23] particular node.
+[07:24] Likewise we can write this current IF as VX minus V out dR by Rf.
+[07:33] Now if we apply the concept of virtual ground then this node X should have a 0 potential
+[07:39] because this non-inverting input terminal is grounded.
+[07:43] So the value of VX should be equal to 0.
+[07:48] So we can write this expression as V in dR by R1 that is equal to minus V out dR by
+[07:58] Rf.
+[07:59] And if we rearrange it then we can write it as a V out by V in that is equal to minus Rf
+[08:07] dR by R1.
+[08:10] And this expression is known as the closed loop gain for this inverting op-amp configuration.
+[08:16] So as you can see here just by changing the value of this RF and R1 we can control the
+[08:22] gain of this op-amp and we can use this op-amp as a amplifier.
+[08:27] Now here the negative sign indicates that the output voltage is 180 degree out of phase
+[08:32] with respect to input voltage.
+[08:35] So let's say if we have applied the sinusoidal signal at the input then at the output we
+[08:39] will get the amplifier sinusoidal signal which is having a 180 degree phase with respect
+[08:44] to input signal.
+[08:46] And that is why this configuration of the op-amp is known as the inverting configuration
+[08:51] because the output will be get inverted with respect to input voltage.
+[08:56] So let's say in this case if RF is equal to 2 kilo ohm and R1 is equal to 1 kilo ohm
+[09:02] then the gain of the op-amp will be equal to 2.
+[09:05] And suppose if we apply the one volt of signal then at the output we will get a 2 volt
+[09:09] of signal which is 180 degree out of phase with respect to one volt signal.
+[09:15] So in this way by controlling the value of RF and R1 we can control the gain of this op-amp
+[09:21] and we can use this op-amp as a amplifier.
+[09:25] So I hope in this video you understood the inverting op-amp configuration and the concept
+[09:28] of virtual ground.
+[09:29] So if you have any question or suggestion do let me know in the comment section below.
+[09:34] If you like this video hit the like button and subscribe to the channel for more such
+[09:37] videos.

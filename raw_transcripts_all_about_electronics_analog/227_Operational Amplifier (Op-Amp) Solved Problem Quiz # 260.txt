@@ -1,0 +1,58 @@
+Title: Operational Amplifier (Op-Amp) Solved Problem | Quiz # 260
+URL: https://www.youtube.com/watch?v=FrUN8pKRth0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this case we have been given this op-em circuit and we have been asked to find the
+[00:22] output voltage.
+[00:24] So here the breakdown voltage of this Zener diode is 3.2 volt but it is ideal otherwise
+[00:30] So first of all let us find out in which region this Zener diode is operating because
+[00:35] if it is operating in the forward region then simply it will act as a short circuit.
+[00:40] On the other hand if it is operating in the breakdown region then the voltage across
+[00:45] it will be equal to 3.2 volt.
+[00:48] So based on the region in which this Zener diode is operating that will decide the output
+[00:52] voltage of the op-em and to find that first of all let us remove this diode from the circuit.
+[00:59] So if we just remove the Zener diode from the circuit then this circuit is operating
+[01:04] in the inverting configuration that means in this configuration the output voltage is
+[01:09] equal to minus RF divided by R1 times Vn that means it is equal to minus 10 times 1 volt.
+[01:20] That means if this Zener diode is open-circated then the output voltage of the op-em is equal
+[01:25] to minus 10 volt and the same voltage will also appear across the two terminals because
+[01:32] here as the op-em is operated with the negative feedback so this node over here will act
+[01:38] as a virtual ground.
+[01:41] So here in the open circuit condition as the voltage across the Zener diode is more
+[01:46] than the breakdown voltage so it should operate in the breakdown region but if this voltage
+[01:51] is less than the breakdown voltage of the Zener diode then the Zener diode won't operate
+[01:56] in the breakdown region.
+[01:57] For example if this resistor is 3 kilo ohm then in that case the output voltage V out
+[02:05] will be equal to minus 3 volt and in that case this Zener diode won't operate in the
+[02:11] breakdown region and at the end of this video I will also show you the simulation but
+[02:17] in this case in the open circuit condition as the voltage across the Zener diode is more
+[02:22] than the breakdown voltage so it will operate in the breakdown region.
+[02:26] So assuming that let us find out the output voltage and to find the output voltage we will
+[02:32] apply the KCL at this node.
+[02:35] So let's say this current is I1 while these two incoming currents are I2 and I3 so if
+[02:43] you apply the KCL then we can write current I1 plus I2 plus I3 is equal to 0.
+[02:52] So here I1 is equal to 1 minus 0 divided by 1 kilo ohm because as I said this node over
+[03:00] here will act as a virtual ground.
+[03:03] So I1 is equal to 1 divided by 1 kilo ohm.
+[03:06] Similarly this current I2 is equal to V out minus 0 divided by 10 kilo ohm while this
+[03:14] current I3 is equal to V out plus 3.2 volt minus 0 divided by 10 kilo ohm because here
+[03:24] as this Zener diode is operating in the breakdown region so the voltage across it will be equal
+[03:29] to 3.2 volt so this will be the current I3.
+[03:34] So from this we can say that N plus V out plus V out plus 3.2 is equal to 0 that means
+[03:46] 13.2 is equal to minus 2 V0 or we can say that the output voltage is equal to minus 6.6
+[03:56] volt.
+[03:58] So this will be the output voltage of the given circuit and hence for the given question
+[04:04] B is the current answer.
+[04:07] Now as I said earlier let me show you the simulation for the same circuit.
+[04:12] So here the same circuit is drawn in the simulation software.
+[04:17] So to show you the output let me just run the simulation.
+[04:27] So if I run the simulation then you can see the output voltage is close to minus 6.6 volt.
+[04:34] Now here let me just change the value of this resistor R2 and let me show you what happens
+[04:39] if I make this resistor R2 equal to 3 kilo ohm.
+[04:48] So if I make this resistor to 3 kilo ohm and if I run the simulation then now you can
+[04:53] see the output voltage is close to minus 3 volt because in this case now the inner diode
+[05:04] won't operate in the breakdown region that means in that case it will act as an open
+[05:08] circuit and in that case the output voltage is equal to minus 3 divided by 1 kilo ohm
+[05:15] times input voltage that is equal to minus 3 volt.
+[05:19] So I hope this simulation will help you in understanding the given question.

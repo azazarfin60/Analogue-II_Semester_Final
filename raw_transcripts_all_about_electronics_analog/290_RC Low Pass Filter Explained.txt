@@ -1,0 +1,178 @@
+Title: RC Low Pass Filter Explained
+URL: https://www.youtube.com/watch?v=_2L0l-E1Wx0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:22] So in the next couple of videos, we will learn about the passive electronics filters.
+[00:27] So the electronic filter is the circuit which passes some frequency components in the circuit
+[00:32] and rejects or attenutes all other frequency components.
+[00:35] So now based on the frequency band which is being passed by this filter, the filters can
+[00:40] be classified in a 4 different types.
+[00:43] The first is the low pass filter.
+[00:45] So this low pass filter passes the low frequency signal starting from 0 hertz up to the cut
+[00:50] of frequency FC.
+[00:52] And beyond this cut of frequency, it rejects all other frequency components.
+[00:57] So if you see the frequency spectrum of the ideal low pass filter, it will look like
+[01:01] this.
+[01:02] So now the second type of filter is the high pass filter.
+[01:05] So this high pass filter passes all the high frequency components starting from this
+[01:10] cut of frequency.
+[01:12] And it rejects all the frequencies which is lesser than this cut of frequency.
+[01:16] And if you see the frequency response of our ideal high pass filter, it will look like
+[01:20] this.
+[01:21] So the third type of filter is the band pass filter.
+[01:24] So this band pass filter passes the frequencies which is under certain band.
+[01:29] And it rejects all the frequencies which is outside this band.
+[01:33] Then the fourth type of filter is the band reject filter.
+[01:36] So this band reject filter rejects all the frequency components which is under certain
+[01:42] band.
+[01:43] And it passes all the frequencies out of this particular band.
+[01:47] So in this video, we will focus on the low pass filter.
+[01:51] So now this low pass filter further can be classified in a two different types.
+[01:57] That is active filter and the passive filter.
+[02:00] And this classification is based on the components which is used for the design.
+[02:05] So now if the filter is designed using the active components like op-amp and transistor,
+[02:10] then such filters are known as the active low pass filters.
+[02:14] While if the filter is designed using the passive components like resistor, capacitor
+[02:18] and the inductor, then such filters are known as the passive low pass filter.
+[02:23] So the advantage of the active filter is that it also provides the gain to the input signal.
+[02:29] While in case of passive low pass filters or in general the passive filters, the output
+[02:35] is always less than the input.
+[02:37] So the following are the example of passive low pass filters.
+[02:42] So in this particular video, we will concentrate on the RC low pass filter.
+[02:47] So now the first order RC low pass filter can be designed by connecting resistor and capacitor
+[02:53] in this fashion.
+[02:54] So now in this circuit, the input is provided at this end and output is taken across this
+[03:01] capacitor.
+[03:04] So now let us understand how this circuit acts as a low pass filter.
+[03:08] So now if you see the output can be given as Xc dR by Xc plus R into Vin, where X is nothing
+[03:19] but the reactants of this capacitor and we know that Xc can be written as 1 over omega
+[03:26] c.
+[03:27] So now at lower frequencies if you see the reactants of this capacitor will be much larger.
+[03:34] So the output will be approximately equal to the input.
+[03:38] While if you go at higher frequencies, the value of this capacitor reactants will reduce
+[03:44] and as output will also reduce and at very high frequencies the output will tend to 0.
+[03:54] So in this way this circuit will act as a low pass filter.
+[03:58] So it passes the low frequency components in the input signal and rejects or attenutes
+[04:04] higher frequency components.
+[04:06] So now earlier we had seen the frequency response of an ideal low pass filter.
+[04:11] But if you see the actual response, the actual response will look like this.
+[04:16] So at lower frequencies this filter provides a 0 attenuation or a minimum attenuation
+[04:22] and as the frequency increases the attenuation will also increase.
+[04:27] And the frequency at which the output is 0.707 times the input that frequency is known
+[04:35] as the cutoff frequency or a minus 3 dB frequency.
+[04:41] So at this frequency the output will be 1 over root 2 times the maximum value of the output
+[04:48] value.
+[04:49] And after this cutoff frequency the output will reduce at the rate of minus 20 dB per
+[04:55] decade.
+[04:56] That means if you increase the frequency by a 10 fold then the output will reduce by the
+[05:02] factor of 10.
+[05:04] So this cutoff frequency FC can be given by this equation that is 1 over 2 pi into RC.
+[05:12] So now let us derive the expression for this cutoff frequency for the first order low pass
+[05:16] filter.
+[05:18] So earlier we had seen that V out can be given as Xc divided by Xc plus R into V in.
+[05:29] And if we only consider the magnitude then we can write it as a V out that equal to mod
+[05:35] of Xc divided by mod of Xc plus R into V in.
+[05:42] That means V out by V in that is equal to mod of Xc divided by under root R square plus
+[05:56] Xc square.
+[05:57] Now at cutoff frequency the output will be 1 over root 2 times the input.
+[06:03] That means the gain or a attenuation of the system will be 1 over root 2.
+[06:10] That is equal to 1 over omega c divided by under root R square plus 1 over omega c whole
+[06:19] square.
+[06:20] And if we take the square at both the sides then we will get 1 by that is equal to 1 over
+[06:27] omega c whole square divided by R square plus 1 over omega c whole square.
+[06:36] And if we further simplify it then we will get omega that is equal to 1 over Rc or we
+[06:45] can say cutoff frequency Fc is nothing but 1 over 2 pi into Rc.
+[06:53] So now in case of a low pass filter as we increase the input frequency not only the output
+[06:59] of the signal will reduce but phase will also get changed.
+[07:04] And this phase 5 can be given as minus 10 inverse omega into CR.
+[07:12] So now at omega is equal to 0 if you see the value of phase value of phase will be nothing
+[07:17] but minus 10 inverse of 0 that is 0 degree.
+[07:22] So at omega is equal to 0 output will be in phase with the input.
+[07:27] Now at cutoff frequency if you see the phase 5 can be given as minus 10 inverse of 1 as
+[07:35] at cutoff frequency the value of omega is equal to 1 over Rc.
+[07:41] So at cutoff frequency the value of phase will be minus 45 degree.
+[07:46] And now if you go at omega is equal to infinity and 5 is nothing but minus 10 inverse of
+[07:54] infinity that is nothing but minus 90 degree.
+[07:59] So now if you plot the phase versus frequency curve it will look like this.
+[08:04] So at 0 frequency the phase will be 0 degree and at cutoff frequency the phase will be
+[08:12] minus 45 degree that means output signal likes the input signal by a 45 degree.
+[08:20] And as we move away from the cutoff frequency the phase will move towards a minus 90 degree.
+[08:27] So now as we know about the phase and frequency response of this low pass filter now let us
+[08:32] take one example based on this low pass filter.
+[08:35] So in this example we have been given one low pass filter and in this example we have
+[08:40] been asked to find the minus 3db frequency for the given filter.
+[08:45] And apart from that we have been asked to find the output voltage for the given applied
+[08:49] input signal.
+[08:51] So to this filter at input side the 10 words sinusoidal signal of a 2 kilohertz is applied.
+[08:58] And we have been asked to find the output voltage for the given input signal.
+[09:03] So now first of all let us find the cutoff frequency for the given low pass filter.
+[09:08] So as we know the cutoff frequency can be given as 1 divided by 2 pi into Rc.
+[09:14] And if you put the value of R and C then we will get value of cutoff frequency as 1.59
+[09:21] kilohertz.
+[09:24] So now we have been asked to find the value of output voltage at 2 kilohertz frequency.
+[09:33] So earlier we had seen that the output voltage can be given as xc divided by under root r square
+[09:43] plus xc square into v in.
+[09:47] So first of all we need to find the value of the sequence at a 2 kilohertz frequency.
+[09:52] And we know that the capacitor reactants can be given as 1 divided by 2 pi into Rc.
+[10:00] And now if you put the value of this frequency and capacitor in this equation then we will
+[10:05] get the value of xc as 796.
+[10:10] And if you put the value of xc into this equation then we will get v out as 796 divided by under
+[10:21] root 796 whole square plus 1000 square into v in.
+[10:32] Now here v in is nothing but a 10 volt sinusoidal input signal.
+[10:37] So if you further simplify it then we will get v out as 6.22 volt.
+[10:44] That means at the input side if you apply a 10 volt of sinusoidal signal of a 2 kilohertz
+[10:49] frequency then at the output you will get a 6.22 volt of sinusoidal signal.
+[10:55] So now if you plot the frequency response for the given low pass filter then it will
+[10:59] look like this.
+[11:01] In the cutoff frequency which we have found is nothing but 1.59 kilohertz.
+[11:07] And the 2 kilohertz frequency will be around somewhere here.
+[11:11] So at this frequency we have found the output value as 6.22 volt.
+[11:18] So now suppose in your design if you want that this 2 kilohertz signal should be attended
+[11:23] as much as possible then we should go for the higher order filters.
+[11:28] And as we go for higher order filters the slope of the decay will increase gradually.
+[11:34] So now suppose let us say if you go for the second order filter then at the second order
+[11:39] filter you see the amplitude at 2 kilohertz will be lesser than the first order filter.
+[11:45] And similarly if you go for the higher order filters the amplitude at 2 kilohertz frequency
+[11:51] will reduce drastically.
+[11:53] So in this way using the higher order filters we can achieve the much sharper roll off.
+[11:58] So let us say if you are using the second order filter then the roll off will be minus
+[12:03] 40 dB per decade.
+[12:08] Or in general we can say that if you are designing the nth order filter then the decay will be
+[12:14] minus 20 into n dB per decade.
+[12:19] That means suppose if you are designing the fourth order filter then the roll off will
+[12:23] be minus 80 dB per decade.
+[12:27] And these higher order filters can be designed by cascading the first order low pass filters.
+[12:33] So now let us see the second order low pass filter.
+[12:36] So here the two first order low pass filters are cascaded.
+[12:40] And let us assume that the cutoff frequency of the first filter is FC1 and the cutoff frequency
+[12:46] of the second filter is FC2.
+[12:49] So the cutoff frequency of the overall second order filter can be given is 1 dB by 2 pi
+[12:56] into under root R1 into C1 into R2 into C2.
+[13:03] So now suppose R1 is equal to R2 and C1 is equal to C2 then the cutoff frequency can be
+[13:09] given is 1 dB by 2 pi into R1 into C1.
+[13:14] So now as we go for the higher order filters the attenuation at the cutoff frequency will
+[13:19] also increase.
+[13:21] So for the first order filter as we had seen the output is 1 over root 2 times the input
+[13:28] at a cutoff frequency.
+[13:31] Now if you go for the second order filter then output is 1 over root 2 into 1 over root
+[13:41] 2 times of the input.
+[13:43] That means output is 0.5 times the input.
+[13:48] So we can say that if we cascaded a n number of filters with the same cutoff frequency
+[13:54] then the output will reduce by the factor of 1 over root 2 to the power n into V in.
+[14:03] So in this way you will get a sharp and sharp roll off.
+[14:07] But designing this higher order filter is not as simple as it looks like.
+[14:11] Suppose you are designing the second order low pass filter by cascading the 2 first
+[14:16] order low pass filter.
+[14:17] So you should make sure that second stage of this low pass filter should not get loaded
+[14:22] by the first stage.
+[14:24] And to minimize this loading effect you should choose the value of this resistance R2 and
+[14:28] C2 in such a way that the impact of the first stage will be minimized.
+[14:34] And to minimize the loading effect the value of R2 should be at least 10 times of the R1.
+[14:41] The best way to minimize the effect of loading is to use the active filters.
+[14:46] Because these active filters not only provides the gain but they also acts as a buffer between
+[14:52] the two stages.
+[14:54] So we will see more about these active filters once we complete the all the passive filters.
+[15:00] So I hope in this video you understood about the passive RC low pass filters.
+[15:05] So if you have any question or suggestion please let me know in the comment section below.
+[15:09] If you like this video hit the like button and subscribe to the channel for more such videos.

@@ -1,0 +1,43 @@
+Title: Low-Pass Filter Frequency Response (Sallen-Key Filter Topology) | Quiz # 380
+URL: https://www.youtube.com/watch?v=KawlPpyvy9M
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Olabode Electronics.
+[00:11] So in this question for the given circuit, we have been asked to find the frequency response
+[00:16] and here we have been given these four options.
+[00:20] So if you closely observe this circuit, then this is the Silent Gefilter Topology and particularly
+[00:27] this is the second order Lopas Filter.
+[00:30] So let me just read or the same circuit so that it will get clear to you.
+[00:35] So as you can see, this Arsene Network forms the Lopas Filter and here through this capacitor
+[00:42] there is a feedback from output to the input side and the output of this filter is applied
+[00:48] at the non-inverting terminal of this op-amp.
+[00:51] So for this configuration, the 3DB frequency n-begiven as 1 divided by 2 pi times square
+[00:59] root of R1 R2 times C1 times C2 and in fact in one of the earlier videos of the Butter
+[01:05] Watt Lopas Filter, I have already derived this expression for this Silent Gefilter Topology.
+[01:11] So for more information, please check that video so that it will get clear to you.
+[01:17] So anyway, this 3DB frequency n-begiven by this expression where these are the R1 and
+[01:24] R2 and these two capacitors are C1 and C2 and here this R1 is equal to R2 and C1 is equal
+[01:33] to C2.
+[01:34] So if you put the values of this resistor and the capacitor and find this 3DB frequency,
+[01:40] then it will come out as 21.9 kilohertz.
+[01:46] Now in this Silent Gefilter Topology, when this R1 is equal to R2 and C1 is equal to
+[01:52] C2, then the Q factor can be given as 1 divided by 3-K where this K is the pass band gain
+[02:00] of this filter topology and we will also get the same gain at the DC.
+[02:06] So to calculate the value of K, we can see that how the circuit behaves at the DC.
+[02:12] So at the DC, if you see, then these two capacitors will act as a open circuit and in that condition
+[02:19] this open will work in the non-inverting configuration and for the non-inverting configuration,
+[02:24] we know that the gain can be given as 1 plus RF divided by R. So here, this RF is equal
+[02:32] to n kilo ohm and the R is equal to 17 kilo ohm.
+[02:36] That means here, this gain is equal to 1 plus n kilo ohm divided by 17 kilo ohm, that
+[02:44] is equal to 1.58.
+[02:48] That means this will be the pass band gain of this filter and in the DB, it will be equal
+[02:53] to 20 log of 1.58 that is equal to 4.
+[02:59] That means in the pass band, the gain of this filter is equal to 4 dB.
+[03:05] Now if you put the value of this K in this expression and the value of Q will come out
+[03:11] as 0.707 and since the value of Q is equal to 0.707 or 1 by root 2, that means this filter
+[03:20] is the whatever LOPAS filter and of course at this cutoff frequency, the gain will reduce
+[03:27] by 3 dB.
+[03:29] That means at this point, the gain will be equal to 1 dB and since the filter is the second
+[03:35] order LOPAS filter, so the roll off will be equal to 40 dB per decade.
+[03:40] So this will be the frequency response of this given circuit.
+[03:44] So from this, we can say that for the given question, this sees the correct answer.

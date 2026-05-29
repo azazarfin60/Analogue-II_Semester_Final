@@ -1,0 +1,240 @@
+Title: Current Shunt Feedback Amplifier Explained | Feedback Amplifier
+URL: https://www.youtube.com/watch?v=OnbuLh2h-nw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oilable Electronics.
+[00:11] So in the last couple of videos, we have seen the voltage series, voltage shunt and the
+[00:16] current series feedback topology of the feedback amplifier.
+[00:20] So similarly, in this video, we will learn about the current shunt feedback amplifier.
+[00:26] So in this current shunt feedback amplifier, we have a basic current amplifier and the
+[00:30] feedback network.
+[00:32] So in the basic current amplifier, since the output is the current signal, so to sample
+[00:37] this output current on the output side, this feedback network is connected in series
+[00:42] with the basic amplifier.
+[00:45] And similarly on the input side, since the current signal is the input signal, so it
+[00:49] is mixed with the input signal with the help of the shunt connection.
+[00:54] So in this feedback amplifier, since the output current is sampled, and it is mixed with
+[00:59] the input signal using the shunt connection.
+[01:02] So this feedback topology is known as the current shunt feedback topology.
+[01:07] And based on the connection, sometimes it is also referred as the shunt series feedback
+[01:11] amplifier.
+[01:12] Because here on the input side, we have the shunt connection, while on the output side,
+[01:17] we have the series connection.
+[01:20] Moreover, sometimes this feedback topology is also referred as the current current feedback
+[01:25] amplifier.
+[01:26] Because here, the sampled signal is the output current, while the feedback signal, which
+[01:32] is mixed with the input signal is also current signal.
+[01:36] So this type of feedback topology is mainly used in the current feedback amplifiers.
+[01:41] Because here, the input signal is the current signal, while the output is also current signal.
+[01:47] And here, this air refers to the current gain of the feedback amplifier.
+[01:51] So in this feedback topology, on the output side, since we have the series connection,
+[01:57] so the output impedance of this feedback amplifier increases.
+[02:01] And similarly on the input side, since we have the shunt connection, so the input impedance
+[02:05] of this feedback amplifier will reduce by the factor of 1 plus e beta, where the is
+[02:11] the current gain of the basic amplifier, while the beta is the feedback factor.
+[02:16] So now, let us understand in this feedback topology, how the input impedance reduces and how
+[02:21] the output impedance increases.
+[02:23] And let us also understand how we got these expressions.
+[02:29] So this is the general structure of the current shunt feedback amplifier.
+[02:33] So here, this A circuit is the basic current amplifier, while this beta circuit is the
+[02:38] feedback network.
+[02:39] So in this A circuit, this RIs the input impedance of this basic amplifier.
+[02:44] And this IIs the input current to the amplifier.
+[02:48] So similarly, on the output side, if we see, then this input current signal will get
+[02:53] amplified by the current gain of this basic amplifier.
+[02:57] And here, this R naught is the output impedance of this amplifier.
+[03:01] So here, for the simplicity, it has been assumed that the source resistance of this current
+[03:06] source is the infinite.
+[03:08] Moreover, here it has been also assumed that the load resistor RL is also not connected
+[03:14] between these two terminals.
+[03:16] So here, this output current I naught is sampled by this feedback network.
+[03:21] And here, the fraction of this output current or this beta times I naught is the feedback
+[03:26] current.
+[03:27] So here, we are also assuming that this feedback network is also not loading the basic
+[03:33] amplifier.
+[03:34] That means on the input side, if we just remove the connection between the basic amplifier
+[03:39] and the feedback network, then because of this feedback network, there is a no variation
+[03:43] in the output current of the basic amplifier.
+[03:46] That means here, this feedback network is not loading the basic amplifier.
+[03:52] So now with this assumption, let us find the effect to input impedance of this amplifier
+[03:56] with the feedback.
+[03:58] So here, the effect to input impedance of this feedback amplifier is the impedance which
+[04:03] is seen through this current source.
+[04:05] And that is equal to the voltage across the current source divided by this IIs.
+[04:11] So as you can see, we are here, the voltage across the current source is equal to VI.
+[04:16] So we can say that the effect to input impedance for this RIF is equal to this VI divided by
+[04:24] IIs.
+[04:25] So now, let us find the relationship between this VI and the IIs.
+[04:30] So here, if we have to the KCL, add this node, then we can write this current IIs minus
+[04:38] IF is equal to Ii.
+[04:41] And here, this IF is equal to beta times I0.
+[04:46] So we can say that this IIs minus, this beta times I0, that is equal to Ii.
+[04:53] And as you can see, we are here, this I0 is equal to A times Ii, because this current
+[04:59] will flow through this short circuit.
+[05:02] So we can say that this IIs minus, this A times beta times Ii, that is equal to Ii.
+[05:11] Or we can say that this IIs is equal to this Ii times this 1 plus A beta.
+[05:19] So now, if you observe over here, then this current Ii is equal to VI divided by RI.
+[05:26] Because here, this VI is the voltage across this input impedance.
+[05:31] So further, we can write it as this IIs is equal to VI divided by RI times 1 plus A beta.
+[05:41] Or from this, we can say that this VI divided by IIs, that is equal to RI divided by this
+[05:49] 1 plus A beta.
+[05:52] So from this, we can say that the effect input impedance of this feedback amplifier is
+[05:57] equal to RI divided by this 1 plus A beta.
+[06:02] So here, because of the shunt connection on the input side, this effect input impedance
+[06:07] is reducing by the factor of 1 plus A beta.
+[06:11] So similarly, now let us find the effective output impedance of this amplifier with the
+[06:15] feedback.
+[06:17] So here, to find the output impedance, we will consider all the independent sources in the
+[06:22] circuit as zero.
+[06:24] So here, we will consider this current source IIs as zero.
+[06:27] For another words, it will act as a open circuit.
+[06:32] And then, we will apply the test current on the output side.
+[06:36] So here, since the output signal is the current signal, so we will apply the test current
+[06:41] on the output side.
+[06:43] So let us say, this test current is equal to IX.
+[06:48] So here, the effective output impedance of this feedback amplifier is the impedance which
+[06:53] is seen through this current source.
+[06:55] For another words, that is equal to the voltage across this current source divided by IX.
+[07:02] So let us say, the voltage across this current source is equal to VX.
+[07:07] So we can say that the effective output impedance of this feedback amplifier for this ROF is
+[07:13] equal to this VX divided by IX.
+[07:17] And now, let us find the relationship between this VX and the IX.
+[07:22] So as you can see over here, this IX is equal to I0.
+[07:26] And therefore, we can say that this feedback current IF is equal to beta times IX.
+[07:33] Moreover, here, if we apply the KCL at this node, then further we can write it as this
+[07:40] IIs equal to minus IF.
+[07:43] So we can say that this input current Ii is equal to minus beta times IX.
+[07:50] So now, let us apply the KCL at this node.
+[07:54] So if we apply the KCL, then we can write this current IX is equal to A times Ii plus VX
+[08:02] divided by R0.
+[08:04] And as you can see over here, this current Ii is equal to minus beta times IX.
+[08:10] So further, we can write it as this IX is equal to minus A times beta times IX plus VX
+[08:19] divided by R0.
+[08:21] Or we can say that this VX divided by R0 is equal to this IX times this 1 plus A beta.
+[08:30] Or if we further rearrange it, then we can write it as this VX divided by IX that is
+[08:36] equal to R0 times this 1 plus A beta.
+[08:41] So in this way, because of the series connection on the output side, this effective output impedance,
+[08:47] is increasing by the factor of 1 plus A beta.
+[08:51] So we can say that in this feedback amplifier, because of the series connection on the output
+[08:56] side, the output impedance is increasing, while because of the shunt connection on the input
+[09:00] side, this input impedance is reducing.
+[09:04] And this is the equivalent circuit of the current feedback amplifier, where this RIF and
+[09:09] the ROF are the input and output impedance of the amplifier with the feedback.
+[09:14] And similarly, this AF is the current gain of the amplifier with the feedback.
+[09:19] So here, the reduction in the input impedance, while the increase in the output impedance,
+[09:24] is a desired thing for the current amplifier.
+[09:28] Because in the current amplifier, actually when we connect the current source, then it
+[09:32] also has the source of distance.
+[09:35] So if this input impedance is lower than the source impedance, then the more current will
+[09:40] flow through the amplifier.
+[09:43] For another verse, this IS dash is approximately equal to IS.
+[09:49] So in this current shunt feedback amplifier, because of the feedback, since the input impedance
+[09:53] is increasing, so that is a desired thing for the current amplifier.
+[09:58] Similarly, in the actual circuits, we will also have the load of this turn.
+[10:03] So if you see the actual current, that is flowing into the load, then that is equal to
+[10:08] this ROF divided by ROF plus RL times AF times IS dash.
+[10:19] So basically, using the current divider rule, we can easily find this current.
+[10:25] So here, we want that the maximum current should flow through the load resistor.
+[10:30] And for that to happen, this ROF should be much greater than RL.
+[10:36] So here, in this feedback amplifier, because of the feedback, since the output impedance
+[10:41] is increasing, so that is a desired thing for the current amplifier.
+[10:46] So in short, in this current shunt feedback amplifier, the input impedance is reducing,
+[10:51] and the output impedance is increasing with the feedback.
+[10:55] So now, let us see in the actual circuits, how this feedback is implemented.
+[11:00] So in this current shunt feedback amplifier, the feedback network is sampling the output
+[11:05] current, and the fraction of the output current is subtracted from the input current
+[11:09] via this shunt connection.
+[11:12] So here, this circuit is the example of the current shunt feedback.
+[11:17] So let us see how.
+[11:18] So as you can see, we are here, this drain current of this MOSFET M2 is the output current.
+[11:24] And as you can see, it is flowing through the laser diode.
+[11:28] So here, this laser diode will act as a load resistor.
+[11:33] Moreover, here these two resistors will form the feedback network.
+[11:38] So now let us understand how these two resistors samples the output current and provide the
+[11:43] feedback current to the input side.
+[11:46] So here, whenever this RF is much greater than RM, then most of the output current will
+[11:53] flow through this RM.
+[11:55] And because of that, there will be a voltage drop across this RM.
+[12:00] So let us say, the voltage drop across this resistor RM is equal to VM.
+[12:05] Or in other words, the voltage at this node is equal to VM.
+[12:10] And let us say, the voltage at this node is equal to VX.
+[12:15] So here, this feedback current IAF will be equal to this VX- this VM divided by RF.
+[12:24] So here, since the VM is proportional to the output current, so this feedback current
+[12:28] IAF is also proportional to the output current.
+[12:33] And in this way, this given circuit is the example of the current-chant feedback topology.
+[12:39] So now let us check whether there is a negative feedback in the circuit or not.
+[12:44] So here, as this current source IAF increases, then the current which is entering this terminal
+[12:50] will also increase.
+[12:52] And because of that, this drain current ID will reduce.
+[12:56] So here, since the VX is almost constant, so initially, this feedback current IAF will
+[13:02] remain same.
+[13:04] And because of that, as the IAF increases, and the current that is flowing in this direction
+[13:09] will also increase.
+[13:11] So as this current increases, then the drain current that is flowing through the M1
+[13:16] will reduce.
+[13:17] What we can say that this ID1 will reduce.
+[13:22] So as the ID1 reduces, then the drop across this RD1 will also reduce.
+[13:28] And because of that, the output of this MOSFET M1 will increase.
+[13:32] Or we can say that this VO1 will increase.
+[13:37] So as the VO1 increases, then the voltage which is appearing at the gate terminal of the
+[13:41] MOSFET M2 will also increase.
+[13:44] So we can say that as the VO1 increases, then this VG2 will also increase.
+[13:51] And as the VG2 increases, then this VSG will reduce.
+[13:58] That means as the gate voltage increases, then the difference between the source and the
+[14:01] gate terminal of the MOSFET M2 will reduce.
+[14:05] So we can say that this VSG will reduce.
+[14:09] And as the voltage drop between the source and the gate terminal reduces, then this drain
+[14:13] current ID2, or this output current I0 will reduce.
+[14:19] And as this ID2 reduces, then the drop across this RM for this VM will reduce.
+[14:26] So we know that this feedback current IF is equal to VX- this VM divided by RF.
+[14:34] So as the VM reduces, then this feedback current IF will increase.
+[14:39] And as the VF increases, then the current that is flowing in the upward direction will
+[14:43] also reduce.
+[14:46] And hence, the change in the output current will also reduce.
+[14:50] So here if you observe, and this current IES and IF are changing in the same direction.
+[14:56] So we can say that the given feedback is the negative feedback.
+[15:00] And therefore, the given circuit is the example of the current-chun feedback amplifier.
+[15:06] So similarly, this is the another example of the current-chun feedback.
+[15:11] So here, instead of the most transistors, this circuit can be stopped by the bipolar-junction
+[15:16] transistors.
+[15:18] So here, the current through this transistor Q2 or the current through the load resistor
+[15:22] RL is the output current.
+[15:25] And once again, these two resistors are forming the feedback network.
+[15:30] So once again, here we are assuming that this feedback resistor RM is much larger than
+[15:36] RM.
+[15:37] That means here, this current through the resistor RM is almost same as the output current.
+[15:43] And because of that, there will be a voltage drop across this resistor RM.
+[15:49] So let's say this voltage is equal to VM.
+[15:53] And now, using the source transformation, this voltage source can be converted into the
+[15:59] current source.
+[16:00] So let's say, the voltage at this node is equal to VX.
+[16:05] That means once again, here the feedback current IF is equal to VX-, this VM divided by
+[16:12] RF.
+[16:13] So in this way, this feedback circuit is sampling the output current.
+[16:18] And through the shunt connection, it is mixing the feedback current with the input current.
+[16:23] And in this way, this circuit is the example of the current-chun feedback.
+[16:29] So once again, let us check whether there is a negative feedback in the circuit or not.
+[16:34] So let's assume that due to some reason, this current IS is increasing.
+[16:40] So as the current IS increases, then the current that is flowing in this direction will also
+[16:45] increase.
+[16:46] So we can say that as the IS increases, then this base current IB1 will also increase.
+[16:53] And as the IB1 increases, then this collector current IC1 will also increase.
+[17:00] So here, this current is the base current for the Q2.
+[17:04] So as you can see, as this current IC1 will increase.
+[17:08] So due to that, this base current IB2 will reduce.
+[17:12] And due to that, this current IC2 will also reduce.
+[17:17] So we can say that as the base current IB2 reduces, so this output current I0 will also
+[17:23] reduce.
+[17:24] And as the output current reduces, then the drop across this resistor RM will also reduce.
+[17:30] So we can say that as the I0 reduces, then this VM will also reduce.
+[17:36] And we know that this feedback current IF is equal to VX- is VM divided by RM.
+[17:44] So we can say that with the reduction in the VM, this feedback current IF will increase.
+[17:50] So here, since the IS and IF are changing in the same direction, so we can say that in
+[17:56] the given circuit, we have the negative feedback.
+[17:59] So these are the few examples of the current chin feedback topology.
+[18:03] So I hope in this video, you understood in this current chin feedback topology, how the
+[18:08] input impedance reduces and how the output impedance increases.
+[18:13] And in the actual circuits, how this feedback is implemented.
+[18:17] So if you have any question or suggestion, then do let me know here in the comment section
+[18:21] below.
+[18:22] If you like this video, hit the like button and subscribe the channel for more such videos.

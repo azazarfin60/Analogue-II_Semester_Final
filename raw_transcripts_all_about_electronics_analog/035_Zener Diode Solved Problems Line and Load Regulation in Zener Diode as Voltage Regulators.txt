@@ -1,0 +1,365 @@
+Title: Zener Diode Solved Problems | Line and Load Regulation in Zener Diode as Voltage Regulators
+URL: https://www.youtube.com/watch?v=1WMSB1Nl9VA
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:10] So in this video, we will see that how to solve the problems based on the line regulation
+[00:16] and the load regulation.
+[00:18] So in the previous video, we understood that what is line regulation?
+[00:24] So we have seen that is line regulation is the ability of the power supply or the voltage
+[00:29] regulator to maintain the constant output voltage despite the change in the input voltage.
+[00:36] So this line regulation can be defined as this delta V out divided by delta V in that
+[00:42] is the change in the output voltage due to the change in the supply voltage or the line
+[00:46] voltage and the unit of this line regulation is milli volt per volt.
+[00:52] And in the percentage, it is defined as this delta V out divided by delta V in times
+[00:58] 100.
+[00:59] Similarly, we also understood about the load regulation.
+[01:04] And we have seen that this load regulation shows the ability of the power supply or the
+[01:09] voltage regulator to maintain the constant output voltage despite the change in the load
+[01:14] current.
+[01:16] So this load regulation is defined as this no load voltage minus full load voltage divided
+[01:22] by full load voltage.
+[01:24] And for the percentage, it is multiplied by the 100.
+[01:29] So now let us take some examples based on the line regulation and the load regulation.
+[01:35] And here during our examples, we will take the Zinnard diode as the voltage regulator.
+[01:41] So in the earlier videos also, we have solved the many examples based on the Zinnard diode.
+[01:47] And during those examples, we have replaced the Zinnard diode by its Zinnard voltage.
+[01:52] So so far, we have assumed that the Zinnard current of the Zinnard diode is zero.
+[01:58] But actually, if you see, then the Zinnard diode will also have some Zinnard resistance.
+[02:03] Because if you see the characteristic of the Zinnard diode, then this is how it will
+[02:07] look like.
+[02:09] So in the reverse bias, up to the Zinnard voltage, there is no current flowing through the Zinnard
+[02:14] diode.
+[02:15] And was the reverse voltage crosses the Zinnard voltage.
+[02:19] And as soon as it goes about the Zinnard necurrent or this IZK, then the Zinnard diode starts conducting.
+[02:26] And then after for the ideal Zinnard diode, the voltage across the Zinnard diode should
+[02:31] remain constant.
+[02:33] But actually, if you see, then with the increase in the Zinnard current, the Zinnard voltage
+[02:37] also slightly increases.
+[02:40] So this increase in the voltage defines the series resistance along with the Zinnard voltage.
+[02:46] So this resistance is known as the Zinnard resistance.
+[02:50] And it is defined as the RZ.
+[02:53] That means beyond this IZK, when the current starts flowing through the Zinnard diode, then
+[02:58] with the increase in the Zinnard current, the voltage of the Zinnard diode will also slightly
+[03:03] increase.
+[03:04] And the voltage at this IZK is defined as the VZNOT.
+[03:09] So many times in the question, the Zinnard necurrent is given as the zero.
+[03:14] So in that case, this VZNOT is defined as the zero current Zinnard voltage.
+[03:20] But in general, this VZNOT is the voltage of the Zinnard diode at the IZK.
+[03:26] So with this Zinnard resistance, if you see that any circuit of the Zinnard diode as a
+[03:30] voltage regulator, then equivalently, this Zinnard diode can be replaced by this VZNOT
+[03:36] in series with this RZ.
+[03:39] So due to the series resistance of the Zinnard diode, when the source voltage changes, then
+[03:44] due to that, the Zinnard current will also change.
+[03:47] And hence, the voltage across the Zinnard diode will also change.
+[03:51] Similarly, with the fixed value of the source voltage, if the load current changes, then
+[03:57] due to that, the current through Zinnard diode will also change.
+[04:01] And hence, due to that, the voltage across the Zinnard diode will also change.
+[04:06] So we can say that due to the series resistance of the Zinnard diode, when the source voltage
+[04:10] changes has...
+[04:11] Or when the load current changes, and due to that, the output of the Zinnard diode will
+[04:16] also change.
+[04:17] And due to that, the output across Zinnard diode will not remain constant.
+[04:23] do to that then we used the Xenar diode as the voltage regulator and we will get the
+[04:28] finite value of the load regulation and the line regulation.
+[04:32] So considering the series resistance of the Xenar diode, let us see the few examples
+[04:37] based on the line regulation and the load regulation.
+[04:41] So here in the first example the 6.8 volts Xenar diode is used in the circuit so here for
+[04:48] So the Xenadire we have been given that its voltage VZ is equal to 6.8V, when the current
+[04:54] that is flowing to the Xenadire is equal to 5 milliampere.
+[04:58] And here we have been also given the series resistance of the Xenadire.
+[05:03] So here we have been given that the nominal supply voltage for the given circuit is equal
+[05:08] to 10V.
+[05:10] But due to the fluctuations it can vary between the plus minus 1V.
+[05:15] So here for the given circuit they have been asked to find the line voltage in milli
+[05:19] volt per volt.
+[05:21] And similarly we have been also asked to find the load regulation in the milli volt
+[05:25] per milliampere and the load current is equal to 1 milliampere.
+[05:30] So let us find that.
+[05:32] So here first of all we have been given that the Xenadire voltage VZ is equal to 6.8V,
+[05:38] when the current to the Xenadire is equal to 5 milliampere.
+[05:43] And here the value of the RZ is equal to 20 ohm.
+[05:47] So it means that this voltage across the Xenadire is equal to 6.8V, when the current to the
+[05:53] Xenadire is equal to 5 milliampere.
+[05:57] So here we can say that this voltage VZ is equal to VZ0, that is this voltage plus
+[06:07] IZ times RZ.
+[06:09] So here this VZ is equal to 6.8V, when the IZ is equal to 5 milliampere.
+[06:16] So we can say that this VZ0 plus 5 milliampere times 20 ohm is equal to 6.8V.
+[06:28] And here this 5 milliampere times 20 is equal to 0.1V.
+[06:33] So from this we can say that this VZ0 is equal to 6.8V minus 0.1V.
+[06:41] That means the value of the VZ0 is equal to 6.7V.
+[06:46] So with the VZ0 if you see the equivalent circuit and this is how it will look like.
+[06:52] So for the given circuit, let us find the value of the line regulation and the load regulation.
+[06:58] And first of all let us find the load regulation.
+[07:02] So here to find the load regulation, first let us find the load voltage.
+[07:08] That means at that time the current through the load is equal to 0 milliampere.
+[07:13] And here we will find this load regulation at the nominal voltage.
+[07:17] So in this condition let us say this load voltage is equal to V01.
+[07:24] And this V01 can be given as this VZ0 plus IZ times RZ.
+[07:31] So here we already know the value of the VZ0 as well as the RZ.
+[07:36] So the only thing that we need to find is the IZ.
+[07:39] So here this IZ can be given as this 10V minus 6.7V divided by this 20V plus 0.5V.
+[07:53] That is equal to finite VZ.
+[07:56] So that is equal to 3.3V divided by 520 ohm.
+[08:02] And that is equal to 6.346 milliampere.
+[08:07] So now let us put the value of the IZ in the above expression.
+[08:12] So we can say that this V01 is equal to 6.7V plus 20 ohm times 6.346 milliampere.
+[08:23] And that is equal to 6.826V.
+[08:27] So in this way we found the value of the V01.
+[08:32] So similarly let us find the output voltage.
+[08:35] When the current to the load resistor is equal to 1 milliampere.
+[08:40] So whenever this load current is flowing through the load resistor at that time,
+[08:45] this inner current IZ can be given as this IES minus IL.
+[08:51] Where this current is the IES, while this current is the load current
+[08:56] and the remaining current will be the Xenar current.
+[09:00] So here the value of the load current is equal to 1 milliampere.
+[09:04] So here to find the Xenar current first we need to find the value of the IES.
+[09:10] So that can be given as this 10V minus VZ that is this entire voltage divided by finite ohm.
+[09:21] And that minus 1 milliampere.
+[09:24] So here the value of the VZ is equal to 6.7V plus 20 times IZ.
+[09:33] That is the drop across this 20 ohm resistor.
+[09:37] So this entire term corresponds to Xenar voltage.
+[09:41] And that will get divided by the 500.
+[09:46] That means we will have this IZ is equal to this term minus 1 milliampere.
+[09:53] So if we further simplified, then we can write it as this finite times IZ that is equal to 10 minus 6.7 minus 20 times IZ minus 0.5 volt.
+[10:10] Because when this finite ohm gets multiplied by the 1 milliampere, then we will get the 0.5 volt.
+[10:17] So if we further simplified, then we will have this 520 times IZ that is equal to 2.8 volt.
+[10:26] Or we can say that this IZ is equal to 2.8 volt divided by 520 ohm.
+[10:34] And that is equal to 5.384 milliampere.
+[10:39] So from this we can say that this output voltage VO2 is equal to 6.7V plus IZ that is 5.384 times 20.
+[10:51] And that is equal to 6.807V.
+[10:56] So in this way, we got the value of the VO1 and the VO2.
+[11:01] So we know that this load regulation can be given as this delta V out divided by delta I naught.
+[11:11] So here the change in the output voltage is equal to 6.8 to 6 volt minus 6.807V.
+[11:19] And here the change in the output current is equal to 1 milliampere.
+[11:25] So we can say that this load regulation is approximately equal to 19 millivolt per milliampere.
+[11:33] So from this we can say that for the given circuit, the load regulation is equal to 19 millivolt per milliampere.
+[11:41] So similarly, let us find the line regulation.
+[11:46] So here the line regulation can be given as the change in the output voltage to the change in the input voltage.
+[11:53] So here the supply voltage or the input voltage is changing by the plus minus 1 volt.
+[12:00] So due to that, let us find the change in the output voltage.
+[12:04] So here we will find this line regulation at the no load.
+[12:08] So in the no load condition in general, here the output voltage V out can be given as these VZ naught that is this voltage plus IZ times RZ.
+[12:22] And here this IZ is equal to these VS minus VZ naught divided by these RZ plus R that this R is equal to 0.5 kilo ohm.
+[12:38] So in general, we can say that this output voltage is equal to VZ naught plus IZ times RZ.
+[12:46] So here now if the supply voltage VS changes by the delta VS and due to that, let us say the output voltage is changing by the delta V naught.
+[12:57] So here this V out plus delta V out can be given as VZ naught plus VS plus delta VS that is a change in the supply voltage minus VZ naught that is this voltage divided by R plus RZ.
+[13:16] RZ times RZ.
+[13:19] So let us say this is the equation number 1 and this is the equation number 2.
+[13:24] So here due to the change in the supply voltage, if we just want to find the delta change in the output voltage or this delta V naught, then we can find that by subtracting these two equations.
+[13:37] So if we subtract the equation number 1 from the 2, then we will get the delta V naught.
+[13:43] So in that case, this will get cancel out and similarly this VS will also get cancel out.
+[13:50] And effectively, we will have this delta VS times these RZ divided by R plus RZ.
+[14:00] Or we can say that this delta V out is equal to delta VS times these 20 ohm divided by 520 ohm.
+[14:10] So here we have been given that this delta VS for the supply voltage is changing by plus minus 1 volt.
+[14:18] That means due to that here the change in the output voltage is equal to plus minus 1 times this 20 divided by 520.
+[14:27] And that is equal to plus minus 38.46 milli volt.
+[14:33] That means whenever the supply voltage changes by plus minus 1 volt, then the output voltage will change by plus minus 38.46 milli volt.
+[14:43] Or we can say that the line regulation is equal to plus minus 38.46 milli volt per volt.
+[14:52] So in this way for the given circuit, we also got the value of the line regulation.
+[14:58] So now let us move to the next example.
+[15:02] So in this equation, we have been given the Zinner diode based voltage regulator.
+[15:07] When it is used to power the car radio at the 9 volt.
+[15:11] So here this voltage regulator is powered using the automobile battery.
+[15:17] And we have been given that the voltage of this battery may vary from 13.6 volt to 11 volt.
+[15:24] And here the current to the radio is varying from 0 milliampere to the 100 milliampere.
+[15:30] That means whenever the radio is in the off condition, then it is drawing the 0 milliampere.
+[15:36] And whenever it is operated at the full volume, then it is drawing the 100 milliampere.
+[15:42] That means here the full load is equal to 100 milliampere, then no load condition is equal to 0 milliampere.
+[15:49] So here for the given circuit, we have been asked to find the line regulation as well as the load regulation in the percentage.
+[15:56] And the source voltage is equal to 13.6 volt.
+[16:00] And here we have been also given the value of the Zinner resistance that is equal to 2 ohm.
+[16:06] So let us find that.
+[16:08] So here in the circuit, we have been given the value of the VZ0.
+[16:13] So with considering the Zinner resistance, this is how the equivalent circuit will look like.
+[16:19] So here, first of all, let us find the value of the load regulation.
+[16:23] So as you know, the load regulation is given as the no load voltage minus full load voltage divided by full load voltage.
+[16:32] So to find that, first of all, let us find the no load voltage.
+[16:37] That means whenever the current that is drawn by the radio is equal to 0 milliampere.
+[16:42] Or effectively, when it is not connected in the circuit.
+[16:46] So here, we will consider the value of the battery as the 13.6 volt.
+[16:51] So at this battery voltage, this output voltage across the Zinner diode can be given as this 9 volt plus iZ times to ohm.
+[17:03] So here, first of all, let us find the value of the iZ.
+[17:07] So here, this iZ is equal to 13.6 volt minus 9 volt divided by this 18 ohm plus ohm.
+[17:18] That is this current.
+[17:20] And if we calculate the value, then it will come out as 0.23 ampere.
+[17:26] So from this, we can say that here the no load voltage is equal to 9 volt plus 2 times 0.23 ampere.
+[17:35] That is equal to 9.46 volt.
+[17:39] So in this way, we got the no load voltage for the even circuit.
+[17:43] That is equal to 9.46 volt.
+[17:46] So similarly, let us find the value of the full load voltage.
+[17:51] So here, when the radio is connected and it is drawing the full load current
+[17:55] that is the 100 milliampere current at that time, the value of the Zinner current will also change.
+[18:02] So let us say at that time, the value of the Zinner current is equal to iZ 2.
+[18:08] So this current iZ 2 will be equal to IS minus IL.
+[18:13] Where the IS is this current, while the IL is equal to 100 milliampere.
+[18:19] So we can say that this iZ 2 is equal to IS minus 0.1 ampere.
+[18:26] And here, this current iZ is equal to 13.6 volt minus VZ divided by 80 norm.
+[18:35] So here, this VZ is equal to 9 volt plus 2 times iZ.
+[18:42] So effectively, we can say that this current iZ is equal to 13.6 minus 9 plus 2 times iZ
+[18:50] or the iZ 2 divided by 80 norm.
+[18:54] And of course, we will also have this 0.1 ampere.
+[18:58] So we can say that these 18 times iZ 2 that is equal to 13.6 minus 9 minus 2 times iZ 2 minus 1.
+[19:12] 1.8 volt.
+[19:14] Or we can say that this 20 times iZ 2 is equal to 2.8 volt.
+[19:21] That means here, the value of the iZ 2 is equal to 0.1 for ampere.
+[19:27] That means here, this full load voltage is equal to 9 volt plus 2 times iZ 2.
+[19:36] And that is equal to 9 volt plus 2 times 0.14 ampere.
+[19:43] That means the full load voltage is equal to 9.28 volt.
+[19:48] So in this way, the value of the full load voltage is equal to 9.28 volt.
+[19:52] While the no load voltage is equal to 9.46 volt.
+[19:57] So from this, we can say that the load regulation is equal to no load voltage
+[20:04] minus full load voltage divided by full load voltage.
+[20:09] So that is equal to 9.46 minus 9.28 divided by 9.28.
+[20:19] And if you see the percentage wise, then that is equal to 1.93%.
+[20:25] So in this way, for the given circuit, the value of the load regulation is equal to 1.93%.
+[20:31] When the supply voltage is equal to 13.6 volt.
+[20:34] So similarly, let us find the line regulation.
+[20:39] So we know that the percentage of line regulation can be given as this delta V out divided by delta V in times 100.
+[20:48] So here, the input voltage is changing between the 13.6 volt to the 11 volt.
+[20:54] So for that, let us see the change in the output voltage.
+[20:58] And here, to find that change, here we will consider the no load condition.
+[21:03] So whenever the supply voltage is equal to 11 volt, at that time, let us say the output voltage is equal to VO1.
+[21:12] So here, this VO1 is equal to 9 volt plus 2 times IZ1.
+[21:19] And here, this IZ1 can be given as this 11 volt minus 9 volt divided by 2O plus 3.
+[21:28] So here, this is the output voltage of the VO1.
+[21:32] So here, this VO1 is equal to 9 volt plus 2 times 2 divided by 20 ohm.
+[21:43] And that is equal to 9.2 volt.
+[21:47] So in this way, we got the value of the VO1.
+[21:51] So similarly, let us find the value of the VO2 when the supply voltage is equal to 13.6 volt.
+[21:57] We have already found the value of this VO2.
+[22:00] So we have seen that this VO2 is equal to 9 volt plus 2 times IZ2.
+[22:08] And that is equal to 9 volt plus 2 times these 13.6 minus 9 divided by 2 plus 8 ohm.
+[22:19] And we have seen that that is equal to 9.46 volt.
+[22:24] So in this way, when the supply voltage is changing from the 11 volt to the 13.6 volt at that time,
+[22:31] the change in the output voltage is from 9.2 volt to the 9.46 volt.
+[22:38] So we can say that here the line regulation is equal to 9.46 volt minus 9.2 volt divided by 13.6 volt minus 11 volt.
+[22:52] So that is equal to 0.26 divided by 2.6 times 100.
+[22:58] And that is equal to 10%.
+[23:01] So we can say that for the given circuit, the line regulation is equal to 10%.
+[23:07] So as you can see, due to the zener resistance, when the supply voltage changes,
+[23:12] then there is a significant change in the output voltage.
+[23:16] So to minimize that, the value of the zener resistance should be as small as possible.
+[23:22] Alright, so now let us move to the next example.
+[23:26] So in this question, we have been given that the reference voltage for the constant voltage source is established using the voltage VS.
+[23:35] This resistor R1, as well as the zener diode D1.
+[23:40] So here, I have been also given the value of the zener resistance.
+[23:44] And we have been also given that the zero current value of the zener diode is equal to 5.6 volt.
+[23:51] So basically, here this VZ0 is equal to 5.6 volt.
+[23:56] So this constant reference voltage is given to this op-amp circuit.
+[24:00] And for this entire circuit, we have been asked to find the value of the line regulation.
+[24:05] And here, we have been given that the given op-amp is the ideal op-amp.
+[24:10] So considering this, let us find the value of the line regulation.
+[24:15] So here, if you consider the zener resistance, when the value of the VZ0 and equivalently,
+[24:21] this is how the circuit will look like.
+[24:24] So for this circuit, let us find the line regulation.
+[24:28] So here, if you observe, then here, we have not given the value of the source voltage.
+[24:34] But here, we will assume that the source voltage is changing by the plus minus delta VS.
+[24:41] So with the change in the source voltage, let us find the line regulation.
+[24:46] So we know that in general, the line regulation or the source regulation can be given as
+[24:52] the change in the output voltage due to the change in the input voltage.
+[24:57] So here, first of all, let us find the output voltage.
+[25:01] And the supply voltage is equal to VS.
+[25:04] And let us say that output voltage is equal to V01.
+[25:09] So here, let us say the voltage across the zener diode is equal to VZ.
+[25:16] And the same voltage will appear over here.
+[25:19] So we can say that here, this V plus is equal to VZ.
+[25:24] Now, if you observe, these op-amps are great.
+[25:26] Then here, the op-amp is configured in the non-inverting configuration.
+[25:31] And we know that for the non-inverting configuration of the op-amp,
+[25:35] its output voltage can be given as 1 plus these RF divided by R1 times input voltage.
+[25:43] So here, for this op-amp, this feedback resistance is equal to 10 kilo ohm.
+[25:49] And similarly, this R1 is also equal to 10 kilo ohm.
+[25:53] And here, the input voltage is equal to VZ.
+[25:57] So we can say that here, this V01 is equal to 2VZ.
+[26:03] So here, this voltage VZ is equal to this VZ0 plus Hyz times Hyz.
+[26:12] So that is equal to 5.6 volt plus 10 ohm times Hyz.
+[26:19] And here, this Hyz is equal to Vs minus this 5.6 volt divided by 4.4 kilo ohm.
+[26:28] That is 4400 plus N ohm.
+[26:32] Or we can say that that is equal to 5.6 plus 10 divided by 440 times Vs minus 5.6.
+[26:45] Or that is equal to 5.6 plus Vs minus 5.6 divided by 441.
+[26:55] So if you see the output voltage V out, then that is equal to 2 times VZ.
+[27:00] That means simply this equation will be called multiplied by the 2.
+[27:05] That means we will have this 11.2 plus 2 divided by 441 times Vs minus 5.6.
+[27:15] So that is the output voltage. And the supply voltage is equal to Vs.
+[27:20] Now whenever the supply voltage gets changed by the delta Vs, then in this equation,
+[27:26] the only thing that will change is this Vs.
+[27:30] That means whenever the supply voltage becomes Vs plus delta Vs at that time,
+[27:35] let's say the output becomes V01 plus delta V01.
+[27:40] And that is equal to 11.2 plus 2 divided by 441 times Vs plus delta Vs minus 5.6.
+[27:55] So this is the value of the output voltage when the supply voltage changes by the delta Vs.
+[28:01] So if you want to find the actual change in the output voltage or this delta V01,
+[28:07] then we need to subtract these two equations.
+[28:10] And if we subtract these two equations, then the only term that will remain is this delta Vs.
+[28:17] So we can say that this delta V01 is equal to 2 divided by 441 times delta Vs.
+[28:26] That means due to the change in the supply voltage, the change in the output voltage can be given by this expression.
+[28:33] Or we can say that this delta V01 divided by delta Vs is equal to 2 divided by 441.
+[28:43] In for the percentage, we will multiply by the 100.
+[28:47] So if we calculate the value, then it will come out as 0.453%.
+[28:53] So we can say that for the given circuit, the value of the line regulation is equal to 0.453%.
+[29:02] So similarly, now let us see the last example.
+[29:07] So in this example also, we have been given the voltage regulator.
+[29:11] But here, the Xenadire is the ideal diode.
+[29:14] But in this circuit, the opem is not ideal.
+[29:18] And here we have been given that the opal voltage gain of the opem is equal to 1000.
+[29:24] So in the question we have been given that the no-no-no-no-current for the given circuit is equal to 1 milliampere,
+[29:30] while the full load current is equal to 100 milliampere.
+[29:34] So here, for the given circuit, we have been asked to find the load regulation.
+[29:39] So let us find that.
+[29:41] So here, since the Xenadire is ideal, so the voltage at this node is same as the 6.3-volt.
+[29:49] That means here, this V plus is equal to 6.3-volt.
+[29:55] And here, let us say, the voltage at this node is equal to V1.
+[30:01] And similarly, let us say, the voltage over here is equal to DO dash.
+[30:07] So considering all these things, then let us find the load regulation.
+[30:12] So we know that the load regulation can be given by this expression.
+[30:17] That means here, we need to find the no load voltage as well as the full load voltage.
+[30:22] And then, using this expression, we can find the percentage load regulation for the given circuit.
+[30:29] So first of all, let us find the expression of the output voltage in terms of the load current.
+[30:35] And for that, first of all, let us add the KCL at this node.
+[30:40] So applying the KCL at this V1 node, we can write this V1 divided by 10 kilo ohm.
+[30:51] That is, this current plus even minus V0 divided by 10 kilo ohm.
+[30:58] That is, this current is equal to 0.
+[31:02] That means the summation of all the outgoing currents is equal to 0.
+[31:06] So here, this 10 kilo ohm will get cancel out.
+[31:10] And we will have this 2V1 minus V0 is equal to 0.
+[31:15] Or we can say that this V1 is equal to 2V1.
+[31:20] So here, we will use this expression later on.
+[31:24] So similarly, now let us add the KCL at this output node.
+[31:29] So applying the KCL at output node, we can write this V0 divided by RL,
+[31:40] that is, this current plus V0 minus V1 divided by 10 kilo ohm.
+[31:47] That is, this current plus V0 minus V0 dash divided by 0.5 kilo ohm.
+[31:56] That is, this current is equal to 0.
+[32:01] So here, this V0 divided by RL is nothing but the high knot.
+[32:06] That is, the output current.
+[32:09] And here, this V0 dash is nothing but the open loop gain of the op-amp times V plus minus V minus.
+[32:18] So that is equal to 1000 times this V plus that is 6.3 volt minus V1.
+[32:27] So further, in this expression, let us put the value of the V1 as well as the V0 dash.
+[32:34] So here, this V1 is nothing but the V0 by 2.
+[32:38] So we can write it as this I0 plus this V0 minus V0 divided by 2 divided by 10 kilo ohm plus V0 divided by 0.5 kilo ohm minus V0 dash divided by 0.5 kilo ohm.
+[32:58] And that is equal to 0.
+[33:01] So further, we can write it as this V0 divided by 20 kilo ohm.
+[33:07] That is, this term plus V0 divided by 0.5 kilo ohm minus 1000 times 6.3 minus V1 divided by 0.5 kilo ohm is equal to minus I0.
+[33:27] So further, if we simplify it, then we can write it as this V0 divided by 20 kilo ohm plus V0 divided by 0.5 kilo ohm minus 6.3 0 0 divided by 0.5 kilo ohm plus 1000 times V1.
+[33:49] That is, 1000 times V0 divided by 2 times 0.5 kilo ohm that is equal to minus I0.
+[33:59] So further, if we simplify it, then we can write it as this 0.05 times V0 plus 2V0 plus 1000 times V0 minus 12,600 is equal to minus I0.
+[34:17] And of course, here these entire terms will get multiplied by the 10 to the power minus 3 because in the denominator, we have a 20 kilo ohm.
+[34:28] So that is equal to 1 0 0 2.05 times V0 times 10 to the power minus 3 that is equal to 1 2 6 0 0 milli ampere minus I0.
+[34:43] So in this way, we got the relation check between the output voltage at the output current.
+[34:50] So whenever the output current is equal to 1 milli ampere, at that time, let's say this V0 is equal to V01. So that is equal to 126 00 milli ampere minus 1 milli ampere divided by this 1 0 0 2.05.
+[35:11] And of course, here we will get multiplied by the 10 to the power minus 3 and that is the value of the V01.
+[35:18] So if you calculate, then that will come out as 12.573 volt.
+[35:25] And similarly, when the output current or the load current is equal to 100 milli ampere, at that time, let's say the output is equal to V02.
+[35:35] So that will be equal to 126 00 milli ampere minus 100 milli ampere divided by this 1 0 0 2.05.
+[35:47] And of course, you will also have this 10 to the power minus 3. So that will be equal to 12.47 volt.
+[35:56] So in this way, we got the change in the output voltage when the load current is changing from the 1 milli ampere to the 100 milli ampere.
+[36:05] And we know that this load regulation can be given by this expression.
+[36:10] So here, this voltage is the no load voltage, while this voltage is the full load voltage.
+[36:17] So we can say that the load regulation is equal to 12.573 volt minus 12.47 volt divided by 12.47 volt.
+[36:29] And of course, it will also get multiplied by the 100.
+[36:33] So in the percentage, if you see the load regulation, then that is equal to 0.790 percentage.
+[36:41] So in this way, for the given circuit, we found the value of the load regulation.
+[36:47] That is equal to 0.790 percentage.
+[36:50] So in this way, we can solve the examples on the line regulation and the load regulation based on the Zinard diode based voltage regulators.
+[36:59] So if you have any question or suggestion, then do let me know here in the comment section below.
+[37:05] If you like this video, hit the like button and subscribe the channel for more such videos.
+[37:11] Thank you.

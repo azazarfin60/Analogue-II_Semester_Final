@@ -1,0 +1,49 @@
+Title: Darlington Pair | Quiz # 259
+URL: https://www.youtube.com/watch?v=6tQ5cLBuj7E
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:17] So in this question, this Darlington pair is used as a lamp controller.
+[00:22] So here, the required current to turn on the lamp is 2A while the maximum output current
+[00:29] of the micro controller is equal to 10 milliampere.
+[00:32] So we have been asked to find the range of this resistor RB in such a way that this circuit
+[00:37] will work as a lamp controller.
+[00:41] So here, as the required current to turn on this lamp is 2A, that means here, this
+[00:47] Ic saturation is equal to 2A.
+[00:52] And here, the maximum output current of this micro controller pin is equal to 10 milliampere.
+[00:58] And as this current will flow through the base of this Darlington transistor, so we
+[01:03] can say that this IB max is equal to 10 milliampere.
+[01:10] So first of all, let us find the minimum value of the base current, which is required
+[01:15] to drive this transistor into the saturation.
+[01:18] So the minimum value of the base current, which will drive this transistor into the saturation
+[01:23] is equal to Ic saturation divided by the beta of this Darlington pair, that means 2A
+[01:32] divided by 15000 or we can say that it is equal to 2 by 15 milliampere.
+[01:41] So this will be the minimum value of the base current, which will be required to drive
+[01:45] this transistor into the saturation.
+[01:48] And from that, we can find the maximum value of this base resistance.
+[01:53] So here, this base current IB is equal to 3.3 volt minus VBE of this Darlington pair
+[02:02] divided by RB.
+[02:05] That is equal to 3.3 minus 1.3 volt divided by RB.
+[02:12] Now for the minimum value of this base current, the value of the RB will be maximum.
+[02:20] That means IB minimum is equal to 2 volt divided by RB max.
+[02:30] And as we have seen, this minimum value of the base current is equal to 2 divided by 15
+[02:36] milliampere.
+[02:38] So from this, we can say that the maximum value of this base resistor will be equal to 15000
+[02:46] ohm.
+[02:48] So the value of this base resistor should be less than the 15 kilohm.
+[02:53] Apart from that, here we have been given that the maximum output current of this microcontroller
+[02:58] is equal to 10 milliampere.
+[03:01] That means IB max is equal to 10 milliampere.
+[03:08] So the value of the base current should be less than 10 milliampere.
+[03:12] And for that, let us find the minimum value of the base resistance.
+[03:17] So this IB max will be equal to 3.3 volt minus 1.3 volt divided by RB minimum.
+[03:29] That means minimum value of the base resistance will be equal to 2 volt divided by 10 milliampere.
+[03:38] That is equal to 2 net ohm.
+[03:40] That means value of the base resistance should be greater than or equal to 2 net ohm.
+[03:46] So when the value of this base resistor is greater than 2 net ohm, then the current
+[03:50] which is drawn through the microcontroller will be less than the 10 milliampere.
+[03:55] So for this given circuit to work as a lamp controller, the value of this base resistor
+[04:01] should be between 2 net ohm and the 15000 ohm.
+[04:05] That means the value of the RB should be greater than or equal to 2 net ohm and it should
+[04:11] be less than or equal to 15000 ohm.
+[04:15] That means for the given question, this is the correct answer.

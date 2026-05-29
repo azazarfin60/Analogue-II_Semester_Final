@@ -1,0 +1,116 @@
+Title: MOSFET Common Gate Amplifier Solved sample | Quiz # 315
+URL: https://www.youtube.com/watch?v=pKfGQLIkl70
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this amplifier circuit and for the given circuit,
+[00:15] we have been asked to find the voltage gain.
+[00:18] So here, we have been already given the device parameters for this MOSFET M1 and M2.
+[00:24] Now using the small signal analysis, it is possible to find the voltage gain.
+[00:29] And for the small signal analysis, first of all, we need to know the value of the transcorrectance.
+[00:34] So first of all, using the DC analysis, let us find the value of the transcorrectance.
+[00:40] So for the DC analysis, these capacitors will act as a open circuit.
+[00:45] And if you see the equivalent circuit, then it will look like this.
+[00:50] Now here, if you observe, then the drain current through both MOSFET M1 and M2 is equal.
+[00:56] That means here, this ID1 is equal to ID2.
+[01:03] And we know that the drain current ID can be given as half times mu and times COx times
+[01:11] W by L times VGS minus VT whole square.
+[01:17] So for this first transistor M1, this ID1 will be equal to half times mu and times COx times
+[01:24] W by L times VGS1 minus VT whole square.
+[01:29] And for the ID2, it will be equal to half times mu and times COx times W by L times VGS2 minus VT whole square.
+[01:41] Now here, since both MOSFETs are identical, so that device parameters are also equal.
+[01:48] That means from this, we can say that this VGS1 minus VT whole square that is equal to VGS2 minus VT whole square.
+[01:59] That means VGS1 minus VT that is equal to VGS2 minus VT.
+[02:08] Or we can say that this VGS1 is equal to VGS2.
+[02:15] Now here, this voltage VS1 is equal to VD2.
+[02:20] And for the second MOSFET, this VD2 is equal to VG2.
+[02:25] That means VS1 is equal to VD2 is equal to VG2.
+[02:32] And for the second transistor, since the source terminal is connected to the ground,
+[02:37] so we can say that this VS2 is equal to 0.
+[02:41] That means VGS1 is equal to VGS2 that is equal to 2VD2 that is equal to VD2 minus 0.
+[02:54] Or we can say that this 2VD2 is equal to 2 times VD2.
+[03:00] That means VD2 is equal to VG2 is equal to 1VD2.
+[03:05] And therefore, for the second MOSFET, this VGS2 that is VG2 minus VS2 is equal to 1VD2.
+[03:17] And since the VS1 is equal to VD2, so we can say that for the first MOSFET,
+[03:23] this VGS1 that is VG1 minus VS1 is equal to 2VD1 minus 1VD2 that is equal to 1VD2.
+[03:35] That means here for poor transistors, VGS1 is equal to VGS2 is equal to 1VD2.
+[03:43] So, now once we know the value of these VGS, then we can easily find the drain current.
+[03:49] So, this drain current ID1 will be equal to half times mu N times CuX times W by L times VGS1 minus VT whole square.
+[04:02] Now here, we know that these mu N times CuX times W by L is equal to 10 milliampere per volt square.
+[04:11] That means ID1 is equal to 10 divided by 2 times this 1 volt minus 0.5 volt whole square.
+[04:20] That means ID1 is equal to 1.25 milliampere.
+[04:26] And as I said, here ID1 is equal to ID2. That means ID1 is equal to ID2 is equal to 1.25 milliampere.
+[04:37] Now once we know this drain current, then we can easily find the transcurrent ends.
+[04:42] So, here this transcurrent ends GM can be given as 2 times ID divided by VGS minus VT.
+[04:52] So, for this first MOSFET M1, this GM1 will be equal to 2 times ID1 divided by VGS1 minus VT.
+[05:01] That is equal to 2 times 1.25 divided by 1 volt minus 0.5 volt.
+[05:09] That is equal to 5 milliampere.
+[05:12] Similarly, for this second transistor, this GM2 will be equal to 2 times ID2 divided by
+[05:21] VGS2 minus VT, which is once again 2 times 1.25 divided by 1 minus 0.5.
+[05:30] That is once again 5 milliampere.
+[05:33] That means here, GM1 is equal to GM2 is equal to 5 milliampere.
+[05:40] Now once we know the value of this transcurrent ends, then we can easily find the voltage gain.
+[05:46] So, now to find the voltage gain, we need to replace this circuit by the small signal model.
+[05:52] So, for the small signal error is this capacitors will act as a short circuit and moreover,
+[05:58] this DC voltage source is elect as a 0.
+[06:02] And then after, we need to replace this MOSFET by the small signal model.
+[06:06] Now if you observe over here, then for the MOSFET M2, the drain and the gate terminals
+[06:12] are connected together.
+[06:14] That means it is the case of the diode connected transistor.
+[06:17] And in the equivalent circuit, it can be replaced by the equivalent resistance.
+[06:22] That is the equivalent resistance, which is seen from this side.
+[06:26] Now if you closely observe this circuit, then it is the case of the common gate amplifier.
+[06:31] Because in the equivalent circuit, this gate terminal will act as a AC ground.
+[06:35] While this 5 volt voltage source will become also grounded.
+[06:40] So, if you recall the circuit of the common gate amplifier, which we have discussed on the
+[06:43] main channel, then this circuit is also similar to that.
+[06:47] Because here, the gate terminal will become AC ground, while the input signal is applied
+[06:52] at the source terminal.
+[06:54] And here, instead of resistor R S, we have a diode connected transistor.
+[07:00] So, first of all, let us find the equivalent resistance, which is provided by this transistor
+[07:05] M2.
+[07:06] So, for this M2, if you see the small signal equivalent circuit, then it will look like this.
+[07:12] So, here, the drain and the gate terminals are connected together.
+[07:17] And to find the equivalent resistance, which is seen from the drain side, let us apply
+[07:21] the test voltage.
+[07:23] And let us find this test current.
+[07:26] So, the ratio of this VX and the IX will give us the equivalent impedance.
+[07:32] So, here, if we apply the KCL at this node, then we can write this current IX is equal
+[07:39] to I D. And this I D is equal to GM times VGS.
+[07:45] Now, here, this test voltage is actually appearing between the gate and the ground terminal.
+[07:51] That means, this voltage VX is equal to VGS.
+[07:56] That means, this current IX is equal to GM times VX.
+[08:00] Or, we can say that this VX divided by IX or the equivalent impedance, which is seen
+[08:06] from the drain side is equal to 1 over GM.
+[08:10] That means, now, we can replace this diode connected transistor by 1 over GM.
+[08:16] So, in the common gate amplifier, we know that the input impedance is the parallel combination
+[08:23] of this resistor RS and the 1 over GM, where this GM is the transcomantance of this MOSFET
+[08:30] M1.
+[08:31] And here, this source resistor RS is equal to 1 over GM.
+[08:36] That means, in this case, the equivalent impedance, which is seen from the input side, is equal
+[08:42] to 1 over GM in parallel with 1 over GM.
+[08:47] To be precise, it is equal to 1 over GM2 in parallel with 1 over GM1.
+[08:54] But in this case, this GM1 and the GM2 are equal.
+[08:58] That means, this input impedance is equal to 200 ohm in parallel with 200 ohm.
+[09:05] That is equal to 100 ohm.
+[09:07] So here, to find the V out diode by V in, first of all, let us find the voltage at this
+[09:12] node.
+[09:13] That means, the order voltage gain V out diode by V i will be equal to V out diode by V
+[09:19] x times V x divided by V i.
+[09:23] And here, for the AC analysis, this DC voltage source will also act as a ground.
+[09:29] All right.
+[09:30] So, first of all, let us find the V x divided by V in.
+[09:35] So here, this V x divided by V i can be given as Z in divided by Z in plus RS.
+[09:44] Where here, this RS is equal to N ohm, while the input impedance, which is seen from the
+[09:49] input side, is equal to 100 ohm.
+[09:52] That means, V x divided by V i is equal to 100 ohm divided by 100 plus N ohm.
+[09:59] That means, V x divided by V i is equal to N divided by 11.
+[10:05] Similarly, for this common gate amplifier, this V out diode by V x will be equal to GM times
+[10:12] Rd or to be precise, it is equal to GM one times Rd.
+[10:18] That means, it is equal to 5 milli cimes times 1 kilo ohm.
+[10:23] That is equal to 5.
+[10:26] That means, if you see the order voltage gain, that is V out diode by V i, and it will
+[10:31] be equal to 10 divided by 11 times 5, which is roughly equal to 4.55.
+[10:39] That means, we can say that the voltage gain of this common gate amplifier is equal to
+[10:43] 4.55.
+[10:46] And hence, for the given question, the B is the correct answer.

@@ -1,0 +1,70 @@
+Title: Quiz # 197 (BJT - Voltage Divider Bias)
+URL: https://www.youtube.com/watch?v=8X9Uwu5sEN0
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All of the Electronics.
+[00:16] So in this question, we have been asked to find the value of this R1 and R3 such that
+[00:21] the collector current IC is equal to 1 milliampere and the collector to emitter voltage Vc is
+[00:26] equal to 2.5 volt.
+[00:29] And here we have been given that the value of the beta is equal to 100 and the value
+[00:34] of voltage Vb is equal to 0.6 volt.
+[00:38] Now here as we are interested in the DC analysis, so we can assume all this capacitor as an open
+[00:43] circuit.
+[00:45] Now here we have been given that the current IC is equal to 1 milliampere.
+[00:52] While the value of voltage Vce is equal to 2.5 volt.
+[00:59] So here the current which is flowing through this resistor R3 is equal to IC.
+[01:05] While the current which is flowing through this 3-nadoom resistor is equal to I.
+[01:11] And here as the value of beta is quite large, so we can assume that this collector current
+[01:18] is approximately equal to emitter current.
+[01:22] Now for this voltage divider circuit, we know that the voltage Vc can be given as Vcc-IC
+[01:31] times RC-IE times RE.
+[01:36] Now here RC is equal to R3, while the emitter resistance RE is equal to 3-nadoom.
+[01:43] That means voltage Vc is equal to 5 volt-1 milliampere times R3-IE times 3-nadoom.
+[01:58] And here we are assuming that this collector current is approximately equal to emitter current.
+[02:04] That means voltage Vc is equal to 5 volt-1 milliampere times R3-1 milliampere times 300
+[02:16] ohm.
+[02:19] And here the value of Vc is equal to 2.5 volt.
+[02:23] That means if we simplify this expression then we can write 2.5 volt is equal to R3 times
+[02:31] 1 milliampere plus 0.3 volt.
+[02:37] That means R3 is equal to 2.2 volt divided by 1 milliampere.
+[02:45] That means the value of R3 is equal to 2.2 kilo ohm.
+[02:52] So in this way we got the value of this R3.
+[02:56] Similarly, now let us find out the value of this R1.
+[03:01] Now here to find the value of this R1 let us find out the Thavenance equivalent circuit
+[03:06] of this voltage divided by the circuit.
+[03:09] So if we see the equivalent circuit then it will look like this.
+[03:13] That means there will be a Thavenance equivalent voltage in series with the Thavenance equivalent
+[03:17] resistance.
+[03:19] And here the value of R2 is equal to tan ohm.
+[03:25] So in this case the voltage VTH can be given as R2 divided by R1 plus R2 times VCC.
+[03:36] And here as the value of R2 is tan ohm.
+[03:39] So we can say that this Thavenance equivalent voltage VTH is equal to 10 times 5 volt divided
+[03:46] by 10 plus R1.
+[03:50] And the Thavenance equivalent resistance RTH is the parallel combination of R1 and R2.
+[03:55] That means R1 in parallel with R2.
+[03:59] So to find the value of this R1, now let us apply the KVL in this input side.
+[04:05] Now here we know that the collector current IC is equal to 1 milliampere.
+[04:12] That means the voltage VE is equal to IE times RE.
+[04:19] That means 1 milliampere times 300 ohm.
+[04:24] That is equal to 0.3 volt.
+[04:27] That means the voltage at this node is equal to 0.3 volt.
+[04:33] And here we have given that the voltage VBE is equal to 0.6 volt.
+[04:40] That means voltage VB minus VE is equal to 0.6 volt.
+[04:46] Or we can say that voltage VBE is equal to 0.6 volt plus VE.
+[04:53] That is equal to 0.9 volt.
+[04:57] That means the voltage at this node is equal to 0.9 volt.
+[05:02] So now let us apply the KVL on the input side and let us find out the value of this R1.
+[05:09] So applying the KVL we can write voltage VTH minus IB times R1 parallel R2 is equal to VB.
+[05:23] That means 50 divided by R1 plus 10 minus IB times 10 times R1 divided by 10 plus R1 is
+[05:35] equal to 0.9 volt.
+[05:40] Now this IB is equal to IC divided by beta.
+[05:43] That means we can say that 50 divided by R1 plus 10 minus 1 milliampere divided by 100 times
+[05:53] 10 R1 divided by 10 plus R1 is equal to 0.9 volt.
+[06:01] That means 50 minus 10 to the power minus 5 times 10 R1 is equal to 0.9 times 10 plus R1.
+[06:15] That means 50 minus 10 to the power minus 4 times R1 is equal to 9 plus 0.9 times R1.
+[06:29] Now here this term is very small so we can neglect this term and we can write 50 is equal
+[06:37] to 9 plus 0.9 times R1.
+[06:43] That means R1 is equal to 41 divided by 0.9 or we can say that R1 is equal to 45.5 ohm.
+[06:55] So we can say that for the given question to get the value of ICS 1 milliampere and the
+[07:01] value of VCE as 2.5 volt the value of R3 should be equal to 2.2 kilo ohm while the value
+[07:08] of R1 should be equal to 45.5 ohm.

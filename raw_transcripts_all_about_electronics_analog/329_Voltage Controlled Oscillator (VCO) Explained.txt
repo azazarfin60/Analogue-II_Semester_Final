@@ -1,0 +1,132 @@
+Title: Voltage Controlled Oscillator (VCO) Explained
+URL: https://www.youtube.com/watch?v=EeYL6lJsNT8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the Voltage Control Oscillator.
+[00:21] So as its name suggests, it is the oscillator whose frequency can be controlled by the external
+[00:26] voltage.
+[00:28] Now in the conventional oscillator, the frequency of the oscillation can be selected by the passive
+[00:33] components like the Rajasthu capacitor and the inductor. And by changing the values of this
+[00:38] passive components, it is possible to change the oscillation frequency. So in the conventional
+[00:43] oscillator, if we want to change the frequency, then we need either a variable resistor or the
+[00:49] variable capacitor. And manually, we need to tune this components to change the frequency.
+[00:55] So this Voltage Control Oscillator also needs this passive components for the frequency generation,
+[01:01] but with the given set of passive components, just by changing the control voltage or the tuning
+[01:07] voltage, it is possible to change the oscillation frequency. So we can say that the Voltage
+[01:13] Control Oscillators are much easier to tune compared to the conventional oscillators.
+[01:18] And in fact, if we want to tune the VCO using the microcontroller, then also it is possible.
+[01:25] For example, if the digital to analog converter is interfaced with the microcontroller,
+[01:30] then using the microcontroller, the output of the DAC can be changed. And by applying that
+[01:36] voltage to the VCO, it is possible to change the frequency. So this Voltage Control Oscillators
+[01:42] can change or tune the frequency in a particular range, but commercially available VCOs can work
+[01:49] from few hertz to even tens of gigahertz. And because of that, they are widely used in the
+[01:54] communication applications. So they are used in the modulation and the demodulation circuits,
+[02:00] as well as in the frequency synthesizers and the function generators. And these VCOs are
+[02:06] integral part of the phase lock loop. So there are two types of VCOs. One is the harmonic oscillator,
+[02:13] and the second is relaxation oscillator. So this harmonic oscillator generates the sinus
+[02:18] total signals, while the relaxation oscillators generates either a square triangular or the
+[02:23] so-tooth waves. And commercially, both types of oscillators are available in the IC packages.
+[02:31] Now theoretically, any harmonic oscillator can be converted into the VCO.
+[02:36] For example, instead of tuning the resistor or the capacitor manually,
+[02:41] if any of them is replaced by the Voltage Control element, then they can be used as a Voltage
+[02:46] Control oscillator. For example, in the tank circuit of the culprit oscillator,
+[02:52] if the capacitors are replaced by the varicter diodes, then it can be used as a VCO.
+[02:57] So if you have followed the previous video on the varicter diode, then you must be aware that
+[03:02] the varicter diode acts as a variable capacitor. That means as we change the
+[03:07] Apted Reverse Bias Voltage across this diode, then the capacitance of this diode will change.
+[03:13] And by changing this Reverse Bias Voltage, we can change the oscillator frequency.
+[03:18] Now for any type of RC or the LC oscillator, the frequency is proportional to 1 divided by square
+[03:24] root of C. And for the varicter diode, as we increase the voltage, then the capacitance of the
+[03:30] diode will reduce. That means as we increase the control voltage, then the frequency of
+[03:35] oscillation will increase. So as shown in the figure, this F0 is the nominal frequency,
+[03:42] when the control voltage is equal to V0. So when we change the voltage from V minimum to V maximum,
+[03:49] then the frequency of oscillation will change from F minimum to F maximum.
+[03:54] And here, if the control voltage is also varying with the time, then mathematically,
+[03:59] the frequency of oscillation can be given by the following expression.
+[04:04] So here, F0 is the nominal frequency of oscillation, while this voltage Vc is the control voltage.
+[04:12] And this K is known as the tuning gain or the tuning sensitivity of the VCO.
+[04:18] So it defines by what amount of frequency of the oscillation will change,
+[04:22] when we change the control voltage by the 1 volt. And it is defined by the unit of hertz
+[04:28] divided by volt. So this is about the voltage controlled harmonic oscillators.
+[04:34] So now let us talk about the relaxation oscillators. So in a relaxation oscillator,
+[04:39] by changing the charging current of the capacitor, it is possible to tune the frequency.
+[04:45] So in this type of oscillators, the charging current is proportional to the tuning voltage.
+[04:50] That means by controlling this tuning voltage, we can change the rate at which this capacitor
+[04:55] charges. Now, during the smith trigger, the voltage across the capacitor is compared with
+[05:01] some reference voltage. And when this voltage across the capacitor reaches this reference voltage,
+[05:07] then the output of the smith trigger will change. And with the change in this smith trigger output,
+[05:13] the polarity of this reference voltage, as well as the direction in which this capacitor
+[05:17] charges will also change. So in this circuit, if we see the output of the smith trigger,
+[05:23] then it will be a square wave. While if we see the voltage across this capacitor,
+[05:28] then it will be the triangular wave. So here, the frequency of this wave form can be controlled
+[05:34] by the tuning voltage. So many voltage control oscillator ICs work on this principle.
+[05:40] And even very popular IC 566 also works in the similar fashion.
+[05:45] Not only that, with the little tweak, even a typified timer IC can also be used as a voltage
+[05:51] control oscillator. So in the earlier videos of the typified timer, we had seen that
+[05:56] how it can be used as a stable multivariator. And in that circuit, we had seen that
+[06:02] usually this control pin is grounded by the capacitor. But instead of that,
+[06:08] if we apply the external voltage to this pin, then we can change the threshold voltage of the
+[06:12] timer circuit. So if we see the internal diagram of the typified timer,
+[06:17] and usually at this point, the reference voltage is equal to 2 by 3 VCC.
+[06:23] But whenever we apply the voltage at this control pin, then this voltage can be overwritten
+[06:28] by this control voltage. So in a way, we can change the threshold voltage of the timer,
+[06:34] and using this, we can change the output frequency of the timer.
+[06:38] So this is the working principle of the different voltage control relaxation oscillators.
+[06:43] So now, let us see some of the important specifications of the VCO.
+[06:48] So these are the specifications, which we need to consider while selecting the VCO for the
+[06:53] specific application. The first specification is the tuning range. And it defines the range
+[07:00] over which the frequency of the VCO can be tuned. So in a data sheet, the manufacturers provides
+[07:07] the range of the control voltage and the corresponding tuning range. For example, for a one VCO,
+[07:14] when the control voltage is varied from 0.5 volt to the 20 volt, then the frequency can be changed
+[07:19] from 40 MHz to 80 MHz. So we can say that for that particular VCO, the tuning range is from
+[07:27] 40 MHz to 80 MHz. That the next specification is the tuning sensitivity or the tuning gain.
+[07:36] And as I said earlier, it defines by what amount the frequency of the VCO can be changed
+[07:41] when we change the control voltage by the one volt. And it is defined in terms of the Hertz per
+[07:47] volt. So for a one VCO, if the tuning gain K is equal to 2 MHz per volt, then we can say that
+[07:56] when the voltage will change by the one volt, then the frequency of the oscillator will change by
+[08:01] the 2 MHz. Now this tuning sensitivity may not be constant over the entire tuning range.
+[08:08] And as shown in the figure, it may vary with the control voltage. So in data sheet,
+[08:14] manufacturers specifies the typical range of the tuning gain instead of the specific value.
+[08:19] For example, over here, the tuning gain varies from 2 MHz per volt to the 4 MHz per volt.
+[08:26] Then the next specifications are the supply pushing and the load pulling.
+[08:31] And these two specifications are important for the high frequency VCOs.
+[08:36] So the supply pushing defines the change in the output frequency with the change in the supply
+[08:42] voltage. Now ideally, for any voltage control oscillator, even if there is a change in the
+[08:48] supply voltage, then there should not be any change in the output frequency. But actually,
+[08:53] the output frequency does change with the change in the supply voltage.
+[08:58] So the change in the frequency due to this supply voltage is done as the supply pushing.
+[09:03] And it is defined in the unit of Hertz per volt. So the effect of this supply pushing can be minimized
+[09:10] by using the regulated power supplies. And further, it can be minimized if we use the oscillator
+[09:16] circuits which has a high Q factor. Similarly, now let us see what is load pulling.
+[09:22] So ideally, for any VCO, even if there is any change in the load, then that should not affect
+[09:28] the output frequency. But actually, the output frequency does change with the change in the load.
+[09:35] And that change in the frequency with the load is known as the load pulling.
+[09:39] So in data sheet, usually it is defined as the maximum deviation in the frequency from the
+[09:44] nominal frequency. Then the next very important specification is the spectral purity.
+[09:51] Now whenever this term is referred in the time domain, then it is referred as the G-Tur.
+[09:56] And whenever it is referred in the frequency domain, then usually it is referred as the phase noise.
+[10:01] So first of all, let us talk about the spectral purity in terms of the G-Tur.
+[10:06] Now ideally, at a particular voltage, the VCO should generate only a single frequency.
+[10:12] So if we see the signal in the time domain, then there should not be any change in the amplitude
+[10:18] as well as the periodicity. But in reality, if you see, there is some uncertainty in the waveform
+[10:24] in terms of the periodicity. And this uncertainty is referred as the G-Tur.
+[10:30] Similarly, now let us see the same term in the frequency domain. So as I said,
+[10:35] ideally, the oscillator should generate only a single frequency, right?
+[10:39] But due to the different types of noises, if you see the actual response of the oscillator,
+[10:44] then it would look like this. So basically, this phase noise represents the random fluctuation
+[10:50] in the phase of the output waveform. And because of this random fluctuation, the spectrum looks like
+[10:56] this. So this noise level or the noise flow should be much lower than the actual signal.
+[11:02] And it is particularly important when the VCOs are used for the modulation and the demodulation
+[11:07] in the communication systems. So while demodulating the two signals, the phase noise of one signal
+[11:13] should not affect the nearby signal. For example, as shown in the figure, this weak carrier signal
+[11:20] got suppressed by the phase noise of the strong carrier signal. So that is why this phase noise
+[11:27] is very important specification. Now this phase noise is measured with respect to the carrier power.
+[11:34] And it is measured at the certain offset from the carrier frequency. So if f0 is the carrier
+[11:40] frequency, then the phase noise at f0 plus delta f is the noise power in a one hertz bandwidth
+[11:48] at the f0 plus delta f. So in the data sheet, this phase noise is represented at the different
+[11:55] offset from the carrier frequency. And this phase noise is measured in the unit of dbc by hertz.
+[12:03] So this is all about the different specifications of the VCO. So I hope in this video, you understood
+[12:09] what is voltage control oscillator and what are the different aspects of the VCO.
+[12:15] So if you have any question or suggestion, do let me know here in the comment section below.
+[12:20] If you like this video, hit the like button and subscribe with an helpful message videos.

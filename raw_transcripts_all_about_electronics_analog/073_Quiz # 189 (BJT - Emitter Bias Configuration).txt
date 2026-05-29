@@ -1,0 +1,108 @@
+Title: Quiz # 189 (BJT - Emitter Bias Configuration)
+URL: https://www.youtube.com/watch?v=_1xipOjEaPI
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Allable Electronics.
+[00:17] So in this question, we have been given this circuit and here we have been given that
+[00:22] all the registers have a tolerance of plus minus 5%.
+[00:27] And here we have been asked to find the maximum and the minimum possible values of the collector
+[00:31] to emitter voltage.
+[00:34] Now if you observe the circuit, it is the emitter bias configuration or two supply emitter
+[00:38] bias configuration of the BJT.
+[00:42] And for this configuration, we had seen that if the value of the base register is very
+[00:46] small, in that case, this base voltage VB is approximately equal to 0 volt.
+[00:53] And for that, we had seen that if the value of base resistance RB is much less than the
+[00:59] beta plus 1 times this emitter resistance, in that case, we can say that this base voltage
+[01:05] VB is approximately equal to 0 volt.
+[01:09] Now here, the value of the base resistance is equal to 10 kilo ohm while the value of
+[01:14] beta is equal to 200.
+[01:17] So we can say that the approximate value of this beta plus 1 times R E is equal to 200
+[01:23] times 10 kilo ohm that is equal to 2 mega ohm.
+[01:28] So here as the value of this term is much larger than the base resistance.
+[01:33] So we can assume that the base voltage VB is approximately equal to 0 volt.
+[01:40] That means over here, the base voltage VB is equal to 0.
+[01:45] And due to that, now the voltage over here will be equal to minus VB because the voltage
+[01:52] VB can be given as voltage VB minus VE.
+[01:57] And as the voltage VB is 0, so we can say that this emitter voltage VE is equal to minus
+[02:04] VB.
+[02:05] And the typical value of this voltage VB is equal to 0.7.
+[02:09] That means we can say that this emitter voltage is equal to minus 0.7 volt.
+[02:16] Also here we are assuming that this collector current is approximately same as this emitter
+[02:21] current because here the value of beta is very large.
+[02:26] That means here the value of beta is 200.
+[02:29] So if we calculate the value of alpha that is beta divided by beta plus 1 then it is
+[02:34] approximately equal to 0.995.
+[02:38] And as it is close to unity, so we can say that this collector current Ic which is alpha
+[02:44] times I is approximately equal to emitter current.
+[02:49] And here this emitter current I can be given as voltage VE minus minus 12 divided by 10
+[02:58] kilo ohm.
+[02:59] Now here the value of VE is equal to minus 0.7 volt.
+[03:04] So we can say that this emitter current is equal to 12 volt minus 0.7 volt divided
+[03:10] by 10 kilo ohm.
+[03:13] Now here we have been given that all the resistors have a tolerance of plus minus 5 percent.
+[03:20] So instead of writing 10 kilo ohm, let us write this emitter current as 11.3 volt divided
+[03:25] by emitter resistance.
+[03:28] Let us say this is the first equation.
+[03:32] And once we know the value of this emitter current or the collector current, then we can
+[03:36] easily find the voltage VCE.
+[03:39] So this voltage VCE can be given as the collector voltage minus emitter voltage.
+[03:48] Now here this collector voltage VCE can be given as 12 volt minus Ic times RC.
+[03:56] That means the voltage drop across this resistor.
+[03:59] So this will be the value of the collector voltage and the emitter voltage VE is equal
+[04:05] to minus 0.7 volt.
+[04:08] So we can say that the voltage VCE is equal to 12 volt minus Ic times RC minus minus of
+[04:18] 0.7 volt.
+[04:19] That is equal to 12.7 volt minus Ic times RC.
+[04:26] And let us say this is the second equation.
+[04:30] Now here we have been asked to find the maximum and the minimum value of this collector
+[04:34] to emitter voltage.
+[04:36] So here this voltage will be maximum when these two terms are minimum.
+[04:42] And similarly this term will be minimum when this Ic and RC are maximum.
+[04:48] That means we can say that the maximum value of this collector to emitter voltage is equal
+[04:54] to 12.7 volt minus Ic minimum times RC minimum.
+[05:03] And similarly the minimum value of this VCE is equal to 12.7 volt minus Ic max times RC
+[05:16] max.
+[05:19] So first of all let us find the maximum value of this collector to emitter voltage.
+[05:24] And for that we need to find the minimum value of this collector current as well as this
+[05:28] collector resistance.
+[05:31] So here the nominal value of this collector resistance is equal to 4.7 kilo ohm.
+[05:38] So the minimum value of this collector resistance is equal to 4.7 kilo ohm minus 5 percent.
+[05:46] That is equal to 0.95 times 4.7 kilo ohm.
+[05:52] That is equal to 4.465 kilo ohm.
+[05:58] Similarly this collector current or emitter current can be given as 11.3 volt divided by emitter
+[06:06] resistance.
+[06:08] Now here the nominal value of this emitter resistance is equal to 10 kilo ohm.
+[06:14] So for the minimum value of this collector current the value of the RE should be maximum.
+[06:19] That means the maximum value of this emitter resistance is equal to 10 kilo ohm plus 5
+[06:26] percent.
+[06:27] That is equal to 10.5 kilo ohm.
+[06:31] So we can say that the minimum value of this collector current is equal to 11.3 volt divided
+[06:38] by 10.5 kilo ohm.
+[06:40] That is equal to 1.0762 milliampere.
+[06:45] So in this way we got the minimum value of the collector current as well as the collector
+[06:50] resistance.
+[06:52] And from this we can say that the maximum value of this collector to emitter voltage is equal
+[06:57] to 12.7 volt minus 4.465 kilo ohm times 1.0762 milliampere.
+[07:07] That is equal to 7.89 volt.
+[07:11] Similarly now let us find the minimum value of this collector to emitter voltage.
+[07:16] And for that we need to find the maximum value of this collector resistance as well as
+[07:21] the maximum value of the collector current.
+[07:24] So the maximum value of this collector resistance can be given as 4.7 kilo ohm plus 5 percent.
+[07:32] That is equal to 4.935 kilo ohm.
+[07:38] And similarly we also need to find the maximum value of the collector current.
+[07:44] That is equal to 11.3 volt divided by minimum value of this emitter resistance.
+[07:52] That means this minimum value of this emitter resistance is equal to 10 kilo ohm minus 5
+[07:59] percent.
+[08:00] That is equal to 0.95 times 10 kilo ohm.
+[08:05] That is equal to 9.5 kilo ohm.
+[08:09] That means the maximum value of this collector current is equal to 11.3 volt divided by 9.5
+[08:17] kilo ohm.
+[08:18] That is equal to 1.189 milliampere.
+[08:23] So in this way we got the maximum value of the collector current as well as the collector
+[08:27] resistance.
+[08:29] And from this we can say that the minimum value of this collector to emitter voltage is
+[08:34] equal to well 0.7 volt minus 4.935 kilo ohm times 1.189 milliampere.
+[08:44] And if we calculate the value of this voltage then it is equal to 6.83 volt.
+[08:51] So in this way the minimum value of this collector to emitter voltage is equal to 6.83 volt
+[08:59] while the maximum value of this collector to emitter voltage is equal to 7.89 volt.
+[09:07] So this is the correct answer for the given question.

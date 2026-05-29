@@ -1,0 +1,95 @@
+Title: BJT/ JFET Solved Problem (Analog Electronics) | Quiz # 299
+URL: https://www.youtube.com/watch?v=x40KDo1nImw
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given the circuit and for the given circuit, we have
+[00:15] been asked to find the voltage VD and the voltage VC.
+[00:19] Now before we jump into the solution, let me just briefly tell you about this particular
+[00:24] circuit.
+[00:25] So in this circuit, using this BJT, this JFET is biased to the constant current source.
+[00:33] So just by setting the A-meter current of this transistor, we can set the drain current
+[00:38] of this JFET.
+[00:40] Because if you see over here, this A-meter current is equal to drain current.
+[00:45] So let us find the value of this VD as well as the VC.
+[00:49] Now for that, first of all, let us find the A-meter current.
+[00:53] And to find that, first of all, let us find the Thavinen-Sequalant circuit, which is
+[00:57] seen through the base terminal.
+[01:00] Now as you are aware, for the JFET, this gate current IG is approximately equal to 0.
+[01:08] That means no current is flowing into the JFET.
+[01:12] So while finding the Thavinen-Sequalant circuit, we can neglect this one-way-government
+[01:16] resistor.
+[01:17] So in this case, the Thavinen-Sequalant voltage, which is seen at this node, is equal to 24
+[01:26] kilo ohm divided by 24 kilo ohm plus 82 kilo ohm times 16 volt.
+[01:35] That is equal to 3.62 volt.
+[01:40] So this will be the Thavinen-Sequalant voltage, which is seen at this node.
+[01:44] Similarly, the Thavinen-Sequalant resistance is the parallel combination of these two
+[01:49] resistors.
+[01:51] That means RTH is equal to 24 kilo ohm in parallel with 82 kilo ohm.
+[01:59] That is equal to 18.56 kilo ohm.
+[02:05] That means if you see the equivalent circuit, then the equivalent circuit will look like
+[02:09] this.
+[02:11] That means this voltage is the Thavinen-Sequalant voltage and this resistance is the Thavinen-Sequalant
+[02:17] resistance, which is seen through the best terminal.
+[02:21] So now by applying the KVL in this loop, we can find the emitter current.
+[02:27] So by applying the KVL, we can write 3.62 volt minus 18.56 times IB, that is this current
+[02:39] minus VBE minus IE times 1.6 kilo ohm that is equal to 0.
+[02:49] Now we know that this emitter current is equal to Btap plus 1 times IB.
+[02:57] That means base current IB is equal to IE divided by Btap plus 1.
+[03:05] That means emitter current IE is equal to 3.62 minus 0.7 volt that is VBE divided by 1.6
+[03:15] kilo ohm plus 18.56 divided by Btap plus 1.
+[03:21] And here this beta is equal to 180.
+[03:24] That means 18.56 divided by 18.1.
+[03:29] That means emitter current IE is equal to 1.715 milliampere.
+[03:37] And this collector current IC is approximately equal to emitter current.
+[03:41] And here as I said, this collector current IC is equal to IID.
+[03:47] That means the same current is also flowing through the drain terminal.
+[03:52] That means here the strain current IE is equal to 1.715 milliampere.
+[03:59] And from this we can find the voltage VD.
+[04:03] So here this voltage VD is equal to 16 volt minus IE times 2.7 kilo ohm that is equal
+[04:12] to 16 volt minus 1.715 milliampere times 2.7 kilo ohm that is equal to 11.37 volt.
+[04:24] That means voltage VD is equal to 11.37 volt.
+[04:28] Similarly, now let us find the voltage VC.
+[04:32] Now here if you observe this voltage VB is equal to VG.
+[04:38] And using the voltage VG we will find the voltage VC.
+[04:42] Because here this voltage VC is equal to VS.
+[04:47] Because the collector of this transistor is connected to the source of the JFET.
+[04:52] That means first of all let us find this voltage VB.
+[04:56] So here this voltage VB is equal to 3.62 volt minus 18.56 kilo ohm times IB.
+[05:06] That means this voltage VB is equal to 3.62 minus the voltage drop across this resistor.
+[05:13] That is equal to 3.62 volt minus 18.56 times this emitter current divided by VW1.
+[05:24] And this emitter current IE is equal to 1.715 milliampere.
+[05:30] That means this voltage VB is equal to 3.62 volt minus 18.56 times 1.715 divided by 181.
+[05:43] That is equal to 3.44 volt.
+[05:47] That means this voltage VB or in other words the voltage VG is equal to 3.44 volt.
+[05:54] Now once we know the voltage of this VG then we can find the voltage VGS.
+[05:59] So here we know the value of the drain current and we have been given the value of the VP
+[06:04] as well as the IDSS.
+[06:07] That means we know that the drain current ID can be given as IDSS times 1 minus VGS divided
+[06:15] by VP whole square.
+[06:18] Now here this drain current ID or the emitter current is equal to 1.715 milliampere.
+[06:26] And this IDSS is equal to 12 milliampere.
+[06:29] That means we can say that this 1.715 is equal to 12 times 1 minus VGS divided by minus
+[06:38] 6 whole square.
+[06:40] Or we can say that 1 plus VGS divided by 6 is equal to square root of 1.715 divided
+[06:49] by 12.
+[06:51] Or if you further simplify it then this VGS will come out as minus 3.73 volt.
+[06:59] Now we know that this voltage VGS is equal to VG minus VS and this VS is equal to VC.
+[07:09] That means VGS is equal to VG minus VC.
+[07:15] And that means VC is equal to VG minus VGS.
+[07:20] Now here the value of the VG is equal to 3.44 volt and we just found the value of the
+[07:27] VGS that is equal to minus 3.73 volt.
+[07:32] That means from this we can say that this character voltage VC is equal to 3.44 volt minus
+[07:40] of 3.73 volt.
+[07:43] That is equal to 7.17 volt.
+[07:47] That means the value of the character voltage VC is equal to 7.17 volt.
+[07:52] That means for the given question this VD is equal to 11.37 volt while the value of
+[07:59] the VC is equal to 7.17 volt.
+[08:04] Now here one can also go through the approximate analysis because as you have just seen the
+[08:09] value of the RTH is approximately equal to 18.56 kilo ohm.
+[08:15] And here this emitter resistor R E is equal to 1.6 kilo ohm.
+[08:20] And since this RTH is much less than beta times R E so one can go through the approximate
+[08:27] analysis.
+[08:28] And if one goes through the approximate analysis then here the value of the VD and VC
+[08:33] will slightly vary.
+[08:35] But using the exact analysis these are the values of the voltage VD and the VC.

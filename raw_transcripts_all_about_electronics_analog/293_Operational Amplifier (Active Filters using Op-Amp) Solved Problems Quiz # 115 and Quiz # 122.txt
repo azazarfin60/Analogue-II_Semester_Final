@@ -1,0 +1,91 @@
+Title: Operational Amplifier (Active Filters using Op-Amp) Solved Problems | Quiz # 115 and Quiz # 122
+URL: https://www.youtube.com/watch?v=KncoLfX-KuE
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we need to find the given circuit is a wish type of filter.
+[00:16] Now to find the frequency response of this given circuit, what we can do?
+[00:20] We can find the transfer function of this given circuit.
+[00:23] That is the ratio of the V out and the V in.
+[00:26] But grossly if we just want to know the wish type of filter it is, what we can do?
+[00:30] We can find the frequency response of this given circuit at omega is equal to 0 and omega
+[00:35] is equal to infinite.
+[00:38] And from this we can get an idea which type of filter it is.
+[00:41] So let us see the response of this circuit at omega is equal to 0.
+[00:46] So at omega is equal to 0, these capacitive reactants that is xe will be equal to infinite.
+[00:53] Right?
+[00:54] So at omega is equal to 0, this capacitor will act as an open circuit.
+[00:59] So in this condition, if you see this open circuit, then it is the differential amplifier.
+[01:05] And in fact, if you have followed the previous videos on this differential amplifier, then
+[01:09] we have already seen the expression for that.
+[01:12] So the output voltage can be given as R4 divided by R4 plus R3 times 1 plus R2 divided
+[01:22] by R1 times V in minus R2 divided by R1 times V in.
+[01:31] So this first term is because of the voltage which is applied at the non-inverting terminal.
+[01:36] And the second term is because of the voltage which is applied at the inverting terminal.
+[01:41] So for this given differential amplifier, the overall output voltage can be given by this
+[01:45] expression.
+[01:47] Now here, we have been given that this R1 is equal to R2 is equal to R8.
+[01:52] Similarly, this R3 is equal to R4 is equal to Rb.
+[01:56] So from this, we can say that this V out is equal to Rb divided by Rb plus Rb times 1
+[02:06] plus R8 divided by R8 times V in minus R8 divided by R8 times V in.
+[02:17] And if you further simplify it, then this V out is equal to 1 by 2 times 2 times V in minus
+[02:25] V in that is equal to 0.
+[02:29] That means that omega is equal to 0.
+[02:31] The output of this filter circuit is equal to 0.
+[02:35] Similarly, now let us find the output of this circuit at omega is equal to infinite.
+[02:40] So at omega is equal to infinite, these capacitive reactants will be equal to 0.
+[02:48] So in this condition, this capacitor will act as a short circuit.
+[02:52] And because of that, this resistor R2 will also become short circuited.
+[02:57] So we can assume that this R2 is equal to 0.
+[03:02] So in this expression, if we just put the value of R2 as 0, then we can find the value
+[03:07] of the output voltage.
+[03:09] Or if we see it in other way, then the voltage at the V plus and the V minus will be equal
+[03:15] to same.
+[03:16] Because here, the open is operating with the negative feedback.
+[03:21] So here, this voltage V plus will be equal to R4 divided by R3 plus R4 times input voltage.
+[03:30] That is equal to RB divided by 2 RB times V in.
+[03:35] That is equal to V in divided by 2.
+[03:39] And the same voltage will also appear at the inverting terminal.
+[03:43] And since the output and this inverting terminal are short circuited, so we can say that the
+[03:48] output voltage is also equal to V in by 2.
+[03:52] That means for the given circuit, at omega is equal to infinite, the output is equal to
+[03:57] V in divided by 2.
+[04:00] So for the given circuit, at omega is equal to 0, V out is equal to 0, and at omega is
+[04:06] equal to infinite, V out is equal to V in divided by 2.
+[04:11] So from this, we can say that the given circuit acts like a high pass filter.
+[04:16] That means this circuit attenutes the low frequencies and it passes the high frequencies.
+[04:22] So we can say that the given circuit is a high pass filter.
+[04:26] And hence for the given question, V is the correct answer.
+[04:31] Now in this second question, we have been given the characteristics of the filter F1 and
+[04:36] the F2.
+[04:37] And for these two filters, the cutoff frequencies are F1 and F2.
+[04:42] So these two filter circuits are connected in this configuration.
+[04:47] So here, we have been asked to find the characteristic or the frequency response of the resultant
+[04:52] circuit.
+[04:54] Now if you look this circuit, then it is actually adding the frequency response of this filter
+[04:58] F1 and F2.
+[05:00] So here, we have been given that the input to these two filters is V in.
+[05:05] So let's say the output of this filter F1 is equal to VX.
+[05:10] And the output of this filter F2 is equal to VY.
+[05:14] So here, this V out will be equal to VX divided by 2 plus VY divided by 2.
+[05:20] So let us see that.
+[05:22] So when we consider this, VX is operating alone, then this terminal will act as a ground.
+[05:28] And in that case, the voltage at this node will be equal to VX time r divided by r plus
+[05:36] r that is equal to VX divided by 2.
+[05:39] And the same voltage will also appear over here.
+[05:43] And eventually, it is also appearing at the output terminal.
+[05:47] That means if we consider this VX alone, then the output of this circuit is equal to
+[05:52] VX divided by 2.
+[05:54] Similarly, when this VY is acting alone at that time, the output of this circuit will be
+[06:00] equal to VY divided by 2.
+[06:02] So if we consider this VX and VY simultaneously, then the output will be equal to VX divided
+[06:08] by 2 plus VY divided by 2.
+[06:11] So basically, this circuit is the address circuit.
+[06:14] That means at the output, we will get the summation of the two frequency response.
+[06:19] And here, since we have been given that this f1 is less than f2.
+[06:24] So if we see the overall frequency response, then it will look like this.
+[06:29] So basically, this overall resultant circuit will act as a bandstof filter.
+[06:33] That means it passes the frequencies, which is less than f1 and greater than f2, and it
+[06:39] rejects some frequencies, which is between f1 and f2.
+[06:43] That means the given resultant circuit is the bandstof filter.
+[06:46] And hence for the given question, this sees the correct answer.

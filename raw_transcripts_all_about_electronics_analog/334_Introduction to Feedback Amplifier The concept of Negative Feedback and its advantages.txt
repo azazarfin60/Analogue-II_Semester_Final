@@ -1,0 +1,282 @@
+Title: Introduction to Feedback Amplifier | The concept of Negative Feedback and its advantages
+URL: https://www.youtube.com/watch?v=__8f6AXenYo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this video and in the upcoming videos, we will learn about the feedback amplifier.
+[00:16] And in this specific video, we will see that what is feedback, the types of feedback
+[00:21] and the importance of the negative feedback in the amplifier circuits.
+[00:26] So earlier during our discussion, we have already seen the open BJT and the MOSFET circuits
+[00:31] with the feedback.
+[00:32] But here, we will understand the concept of the feedback in more detail.
+[00:37] And we will also see the effect of the feedback on the amplifier circuit.
+[00:41] And in the upcoming videos, we will also learn about the different feedback topologies.
+[00:46] But here, first let us understand what is feedback.
+[00:50] So in the feedback, the fracture of the output signal is sampled.
+[00:54] And then it is given back to the input side.
+[00:57] So basically, this fracture of the output signal is either added or subtracted from the
+[01:03] source signal.
+[01:04] And then it is given as an input to the circuit.
+[01:08] So depending on whether this feedback signal is added or subtracted from the source signal,
+[01:13] we can have the two types of feedback.
+[01:16] So if the sampled signal is subtracted from the source signal, then we will have the negative
+[01:21] feedback.
+[01:23] So this type of feedback is mainly used in the amplifier circuits as well as in the
+[01:27] many control circuits to improve the stability.
+[01:31] On the other hand, if this feedback signal is added with the source signal, then this
+[01:36] is called the positive feedback.
+[01:39] Because in this case, if you see, then the new input to the circuit is more than the
+[01:43] source signal.
+[01:45] So gradually, if you see, then the output signal of the circuit will increase.
+[01:50] And that is why this type of feedback is called the positive feedback.
+[01:54] So this positive feedback is mainly used in the oscillator and the multibagotter circuits.
+[02:00] And apart from that, sometimes it is also used in some active filters.
+[02:04] So here during our discussion, we will focus on the negative feedback.
+[02:09] And mainly, we will see that how it is used in the amplifier circuits.
+[02:14] So first, let us understand why the negative feedback is used with the amplifier circuits.
+[02:21] Or basically, the effect of the negative feedback on the amplifier circuit.
+[02:25] So this negative feedback decensitize the gain of the amplifier.
+[02:30] That means due to the temperature or some other reasons, even if the component value changes
+[02:35] of the amplifier, then also the change in the closed loop gain of the amplifier will
+[02:40] be minimal.
+[02:42] Then if you see the second effect, then this negative feedback reduces the non-linear
+[02:46] distortion.
+[02:48] So sometimes in the amplifier, the gain is higher when the signal level is low.
+[02:54] And at the higher signal levels, if you see, then the gain provided by the amplifier
+[02:57] will be less.
+[02:59] So because of that, the non-linear distortion may arise in the amplifier circuit.
+[03:04] So this negative feedback reduces this non-linear distortion.
+[03:08] And it makes the gain of the amplifier almost constant.
+[03:12] That means this negative feedback makes the gain of the amplifier independent of the signal
+[03:17] level.
+[03:18] Apart from that, this negative feedback also reduces the effect of the noise or the interference
+[03:23] on the amplifier circuit.
+[03:26] So that is the another advantage of the negative feedback.
+[03:29] Moreover, depending on the feedback topology, it also modifies the input and the output impedance
+[03:35] of the amplifier.
+[03:37] And lastly, it also increases the bandwidth of the amplifier.
+[03:41] So all these are the desirable effects of the negative feedback on the amplifier circuit.
+[03:47] So of course, using the negative feedback, we can get all these benefits, but at the
+[03:52] cost of the reduction of the overall gain of the amplifier.
+[03:55] That means with the negative feedback, the overall gain of the amplifier will reduce.
+[04:00] So now let us see the general structure of the feedback amplifier.
+[04:05] And it is understand because of the negative feedback by what factor the gain of the amplifier
+[04:10] reduces.
+[04:11] So this is the signal flow diagram of the basic feedback amplifier.
+[04:16] So here the sampled signal can be a current or the voltage.
+[04:21] And similarly, the signal which is sent back to the input side can also be a current or
+[04:26] the voltage.
+[04:27] So that is why instead of showing the currents and the voltages, here all the inputs and
+[04:32] outputs as well as the feedback signals, I represent it by the X.
+[04:38] So here this A represents the open look gain of the amplifier and this X naught represents
+[04:43] the output of the amplifier.
+[04:45] So as you can see, this output signal goes to the load as well as the feedback network.
+[04:51] So through the feedback network, a fraction of the output signal is sampled.
+[04:56] So here this XF represents the feedback signal.
+[05:00] So mathematically we can say that this XF is equal to this beta times X naught where
+[05:07] this beta is equal to feedback factor.
+[05:10] So here this feedback factor shows us what fraction of the output signal is fed back to
+[05:15] the input side.
+[05:17] So here if this beta is equal to 0.1, it means that the 10% of the output signal is fed
+[05:24] back to the input side.
+[05:26] So here this feedback signal XF is subtracted from the source signal and the difference between
+[05:32] them is equal to XI that is the input to the basic amplifier.
+[05:38] So here we can say that this X naught is equal to A times XI and here this input XI is equal
+[05:47] to XS minus XF that is the difference between the source signal and the feedback signal.
+[05:54] So here basically we want to find out what is the overall gain of the amplifier with
+[05:58] the feedback.
+[06:00] So basically here we want to find out this X naught divided by XS.
+[06:06] So if there is no feedback in the circuit, then as you can see this XI is equal to XS
+[06:12] that means the input to the basic amplifier is same as the source signal.
+[06:17] And in this case this X naught divided by XS is equal to A that is the open loop gain
+[06:23] of the amplifier.
+[06:25] But here with the feedback let us find out the value of this X naught divided by XS.
+[06:31] So here as you can see this X naught is equal to A times XI.
+[06:36] So we can say that this XI is equal to X naught divided by A and likewise this XF is equal
+[06:44] to beta times X naught.
+[06:47] So we can say that this X naught divided by A is equal to XS minus this beta times X
+[06:53] naught.
+[06:54] Or we can say that this X naught divided by A plus beta times X naught is equal to XS.
+[07:01] And if we take the X naught common and if we rearrange the expression and further we
+[07:06] can say that this X naught divided by XS is equal to A divided by 1 plus A beta.
+[07:13] And here is the open loop gain of the amplifier and this beta is the feedback factor.
+[07:19] So here this X naught divided by XS is the gain of the amplifier with the feedback.
+[07:25] Or simply it is represented as the AF.
+[07:28] So without the feedback the gain of the amplifier is equal to A.
+[07:33] But with the feedback as you can see it will reduce by this factor that is 1 plus A beta.
+[07:40] So here this A beta is known as the loop gain and for the negative feedback this A beta
+[07:46] should be positive.
+[07:48] That means if this A beta is positive then this feedback signal XF and this source signal
+[07:54] will have the same sign.
+[07:56] So whenever they are subtracted and this different signal will be smaller than the XS.
+[08:02] And that is why because of this negative feedback this closed loop gain AF is smaller than
+[08:07] the open loop gain.
+[08:09] And as you can see it will be lesser than the open loop gain by the factor of 1 plus
+[08:14] A beta.
+[08:15] So here is 1 plus A beta is known as the amount of feedback in the feedback circuit.
+[08:21] So whenever this loop gain A beta is much greater than 1 then this closed loop gain AF
+[08:28] can be approximately written as A divided by A beta.
+[08:32] Or simply we can say that it is equal to 1 divided by beta.
+[08:36] That means whenever this loop gain A beta is much greater than 1 then this closed loop
+[08:41] gain is almost independent of the open loop gain.
+[08:45] And in that case it can be entirely determined by the feedback network.
+[08:50] So typically this feedback network can this stop the passive elements and that is why it
+[08:57] is possible to select the precise value of this components.
+[09:01] But in a way we can say that it is easy to set the gain of the feedback amplifier.
+[09:06] So for example as you know when the open is used in the closed loop configuration then
+[09:12] just by using the external resistors it is possible to set the gain of the open.
+[09:17] Well that is actually possible because if you see the open loop gain of the open then
+[09:22] that is very high.
+[09:24] And that is why when the open is used in the negative feedback and just by using the few
+[09:28] resistors.
+[09:30] It is possible to set the gain of the open.
+[09:33] Alright so let us see the another interesting thing related to the feedback.
+[09:38] So with the feedback we have seen that the closed loop gain AF is equal to A divided by
+[09:43] 1 plus A beta.
+[09:45] Or from this we can say that this X naught is equal to A divided by 1 plus A beta times
+[09:52] Xs.
+[09:53] Now here we know that this feedback signal XF is equal to beta times X naught and here
+[10:00] the value of X naught can be given by this expression.
+[10:05] So further we can say that this feedback signal XF is equal to A beta divided by 1 plus
+[10:10] A beta times Xs.
+[10:13] So here this A beta is much greater than 1 and we can say that this feedback signal
+[10:19] XF is almost same as the source signal.
+[10:23] That means if the loop gain A beta is much greater than 1 and this feedback signal XF is
+[10:29] almost identical to the source signal and because of that the difference between them is almost
+[10:35] 0.
+[10:36] That means if the loop gain is very large then the inputs appearing at the comparator or
+[10:42] at the mixer circuit are almost identical.
+[10:45] And the same thing we have also observed in the op-amp circuit.
+[10:50] That means whenever the op-amp is used in the closed loop configuration then we can apply
+[10:54] the concept of the virtual ground or the virtual shot and we can assume that the inputs which
+[11:00] are appearing at the both the input terminals of the op-amp are almost identical.
+[11:05] So this holds true whenever the loop gain of the op-amp circuit is very high and in most
+[11:11] of the cases that is also fairly true.
+[11:14] So now let us take the example of an op-amp circuit and let us understand the concept of
+[11:19] the virtual ground or the virtual shot from the perspective of the feedback amplifier.
+[11:25] And let us also understand how the gain of the op-amp can be set just by using the few
+[11:30] external components.
+[11:32] So here we are taking the example of the non-inverting amplifier where this VAs signal is
+[11:38] acted at the non-inverting terminal of the op-amp.
+[11:42] So here let us say the voltage at the inverting and the non-inverting terminals of the op-amp
+[11:48] are V- and the V-plus.
+[11:50] So here the same circuit can also be drawn like this.
+[11:55] So as you can see here this non-inverting terminal is shown at the top side.
+[12:01] So here this R2 is the feedback resistor and the R1 is the resistor but when the inverting
+[12:06] terminal at the ground.
+[12:09] So here we are assuming that the op-amp is the ideal op-amp and here no current is flowing
+[12:14] into the op-amp terminals.
+[12:17] So in reality the op-amp will provide the very high input impedance and only a very small
+[12:22] current will flow into the op-amp terminals.
+[12:25] But here during our analysis we can assume that the input terminals of the op-amp does not
+[12:30] draw any current.
+[12:33] So in that case if you see then from the output node the current will flow through this
+[12:37] resistor R1 and the R2.
+[12:40] And just using the voltage divider rule we can find the voltage across this R1 because
+[12:45] here if you see the voltage across the R1 then that is the feedback voltage it is going
+[12:50] back to the inverting terminal.
+[12:52] And as you can see it will get subtracted from this source signal.
+[12:58] So here we can say that this feedback voltage VF is equal to R1 divided by R1 plus R2
+[13:04] times V0.
+[13:06] In the same voltage we will also appear at this inverting terminal.
+[13:10] So we can say that this Vminus is same as the VF and here since the VS is connected to
+[13:17] the non-inverting terminal so we can say that this V plus is equal to VS.
+[13:23] So here if the loop gain of the op-amp is very high or in other words if this A beta is
+[13:29] much greater than 1 then we can assume that this V plus is approximately equal to Vminus.
+[13:37] That means the feedback signal VF is almost same as the source signal.
+[13:41] So let us put some numbers and let us understand why it is true.
+[13:47] So we know that the closed loop gain of the op-amp for this V out divided by VS can be
+[13:52] given as A divided by 1 plus A beta.
+[13:56] And we can say that this V out is equal to A divided by 1 plus A beta times VS where
+[14:03] this A is the open loop gain of the op-amp and then we teach the feedback factor.
+[14:08] So here let us say the open loop gain of the op-amp is equal to 10 to the power 6.
+[14:14] And as I said earlier this feedback factor represents what fraction of the output voltage
+[14:20] is feedback to the input side.
+[14:22] So in this case as you can see that is the voltage across the resistor R1.
+[14:27] Or we can say that the feedback factor beta is equal to R1 divided by R1 plus R2.
+[14:34] So let us say here this R2 is equal to 9 kilo ohm and R1 is equal to 1 kilo ohm.
+[14:40] So we can say that this value of beta is equal to 1 kilo ohm divided by 1 kilo ohm plus
+[14:45] 9 kilo ohm that is equal to 0.1.
+[14:49] That means here this open loop gain is equal to 10 to the power 6 and the feedback factor
+[14:54] is equal to 0.1.
+[14:56] So here if you see the value of the A beta then that is equal to 10 to the power 5.
+[15:02] And as you can see it is much larger than 1.
+[15:06] So once again now if you see the expression of the closed loop gain then that is equal
+[15:10] to A divided by 1 plus A beta.
+[15:13] And here since the A beta is much greater than 1.
+[15:17] So we can say that this closed loop gain is approximately equal to 1 divided by beta
+[15:23] and that is equal to 10 because here this beta is equal to 0.1.
+[15:28] But if you see the precise value then it is equal to 10 to the power 6 divided by 1 plus
+[15:35] 10 to the power 5.
+[15:37] And if you calculate the value then that is also approximately equal to 10 and that is
+[15:42] equal to 1 divided by beta.
+[15:45] So here this beta is equal to R1 divided by this R1 plus R2.
+[15:53] So if you see the value of the 1 divided by beta then that is equal to R1 plus R2 divided
+[15:59] by R1.
+[16:01] Or from this we can say that the gain of the op-em is equal to 1 plus R2 divided by R1.
+[16:08] And that is the gain of the non-inverting configuration of the op-em.
+[16:12] And this equation holds true whenever the value of A beta is much greater than 1.
+[16:18] So in such case just using the external registers it is possible to set the gain of the op-em.
+[16:25] So similarly when this A beta is much greater than 1 then the concept of the virtual ground
+[16:31] or the virtual shot is also applicable.
+[16:34] For example here this VF is equal to beta times V0.
+[16:39] Or that is equal to A beta divided by 1 plus A beta times VS.
+[16:45] So here in this case if you see then this A beta is equal to 10 to the power 5.
+[16:50] So we can say that this feedback voltage VF is equal to 10 to the power 5 divided by
+[16:56] 1 plus 10 to the power 5 times VS.
+[16:59] And here since the A beta is much larger than 1 so this VF is approximately equal to VS
+[17:06] or another verse the voltage at the invading terminal will be same as the non-inverting terminal.
+[17:12] But this holds true whenever this loop gain A beta is much larger than 1.
+[17:19] So let us see what happens when this A beta is not that large enough.
+[17:24] So let's say now the open loop gain of the op-em is equal to 10 to the power 3.
+[17:29] And here the feedback factor is still same.
+[17:33] That means the value of the R2 is equal to 9 kilo ohm while the value of R1 is equal
+[17:37] to 1 kilo ohm.
+[17:39] So in this case if you see then this loop gain A beta will be equal to 100.
+[17:45] So now if you see the closed loop gain of the op-em then that is equal to A divided by
+[17:49] 1 plus A beta and that is equal to 10 to the power 3 divided by 1 plus 100 and that is
+[17:57] equal to 9.9.
+[17:59] So as you can see for the given op-em circuit with the given registers values the actual
+[18:04] gain that we are getting is equal to 9.9.
+[18:08] But in this case also still this A beta is much greater than 1 so this closed loop gain
+[18:13] of the op-em is very close to 10.
+[18:17] But suppose if the loop gain is even lesser then the actual closed loop gain of the op-em
+[18:23] will be little off from the approximation.
+[18:26] For example if the open loop gain of the op-em is equal to 100 and the feedback factor
+[18:31] is equal to 0.1 then in that case his A beta is equal to 10.
+[18:37] So in that case if you see the closed loop gain then that is equal to A divided by 1
+[18:42] plus A beta and then that is equal to 100 divided by 1 plus 10.
+[18:48] And if you calculate the value then that is equal to 9.09.
+[18:52] So as you can see now instead of getting the gain of 10 the actual gain that we are
+[18:57] getting is equal to 9.
+[18:59] And as you can see it is little off from the expiration.
+[19:03] So in general with the non-inverten configuration of the op-em its closed loop gain can be given
+[19:09] as 1 plus his A 2 divided by R 1.
+[19:13] And with this values it should be equal to 10.
+[19:17] But here since the open loop gain of the op-em is very less so the actual closed loop gain
+[19:22] that we are getting is equal to 9.
+[19:25] That means whenever his loop gain A beta his much greater than 1 then only his closed
+[19:31] loop gain entirely depends on the feedback network.
+[19:35] Moreover in the op-em circuits whenever this A beta is much greater than 1 then only
+[19:40] the concept of the virtual ground for the virtual short is applicable.
+[19:45] For example if this A is equal to 100 and the beta is equal to 0.1 then once again
+[19:51] his A beta is equal to 10.
+[19:54] And in that case if you see the feedback voltage then that is equal to 0.9 times VS.
+[20:00] For example if the source voltage VS is equal to 2 volt then the VS will be equal to 1.8
+[20:06] volt.
+[20:07] That means in that case the voltage at the inverting terminal will be 1.8 volt while
+[20:13] the voltage at the non-inverting terminal will be equal to 2 volt.
+[20:17] And as you can see in this case is V plus is not same as the V minus.
+[20:23] That means here the concept of the virtual short does not hold true.
+[20:28] So this concept is valid and this loop gain A beta is much greater than 1.
+[20:34] So that is the basic overview of the negative feedback and the effect of that on the feedback
+[20:38] amplifier.
+[20:40] So in the next video through a mathematical analysis we will understand this effect in
+[20:45] more detail.
+[20:46] Like we will see that how this feedback desensitizes the gain and how it reduces the non-inverting
+[20:52] distortion.
+[20:53] So that's it for this video and I hope in this video you understood the basic concept
+[20:58] of the negative feedback.
+[21:00] So if you have any question or suggestion then do let me know here in the comment section
+[21:04] below.
+[21:05] To like this video hit the like button and subscribe the channel for more such videos.

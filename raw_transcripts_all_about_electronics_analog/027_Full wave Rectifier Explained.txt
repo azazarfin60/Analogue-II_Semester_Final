@@ -1,0 +1,238 @@
+Title: Full wave Rectifier Explained
+URL: https://www.youtube.com/watch?v=74QrYyYsftY
+Source: YouTube Subtitles
+
+[00:12] Hey friends, welcome to the YouTube channel ALL ABOUT ELECTRONICS.
+[00:16] In this video, we will learn about full wave rectifier.
+[00:20] In the earlier video, we have already learned about the half-wave rectifier circuit.
+[00:25] And in general, we have seen that these rectifier circuits are very useful for AC to DC conversion.
+[00:31] So, if we apply this AC signal to this rectifier circuit, then it only passes the positive
+[00:37] half cycle and it completely blocks the other half.
+[00:42] And we had also seen the average value or the DC value of this half-wave rectifier.
+[00:47] which is given by the expression, Vm/ π where Vm is the peak value of this input signal.
+[00:54] Now, in this half-wave rectifier, as it is passing only the one half of the input signal,
+[01:00] the average value of the signal will be low.
+[01:02] So, here somehow if we can use this other half of the input signal, then we can increase
+[01:08] the average value of the output signal.
+[01:12] And that is possible using the full-wave rectifier circuit.
+[01:15] So, if we apply the sine wave as an input to this full-wave rectifier, then we will
+[01:19] get this kind of waveform.
+[01:21] So, as you can see it completely passes the positive half cycle and inverts the negative
+[01:27] half cycle.
+[01:28] So, using this full-wave rectifier circuit we can get the output waveform for both half
+[01:33] cycles.
+[01:34] Now, one more thing if you observe over here, the frequency of the output waveform has been
+[01:39] doubled.
+[01:40] Because now, the waveform is repeating itself after the T/2 time period.
+[01:46] So, let's say, the new time period of this waveform is equal to T'.
+[01:50] So, we can say that this T' is equal to T/2.
+[01:55] Or in terms of the frequency, we can say that the new frequency f' will be equal to 2f.
+[02:03] That means the output waveform frequency will be 2 times the input waveform frequency.
+[02:08] Now, this full-wave rectifier circuit can be designed using the two methods.
+[02:13] The first is using the center tapped transformer and the second method is using the diode bridge
+[02:19] circuit.
+[02:20] So, first let's see, how we can design the full-wave rectifier circuit using the center
+[02:25] tapped transformer.
+[02:26] So, as you can see over here, the center tapped transformer is used at the input side.
+[02:32] Because if you observe over here, the center of this secondary winding is grounded.
+[02:38] And here the transformer ratio which is used in the circuit is 1:2.
+[02:43] That means, if we apply the input voltage Vin, then at the output of this secondary
+[02:48] winding, we will get the 2 times Vin.
+[02:52] And if we measure the output voltage between the center and the one end of the winding,
+[02:56] it will be equal to Vin.
+[02:58] So, this 2Vin voltage will get divided between the two parts.
+[03:04] And here let's assume that these diodes are D1 and D2.
+[03:09] So, let's understand the working of this rectifier circuit.
+[03:13] So, whenever we apply a sine wave as an input to this circuit, then during the positive
+[03:19] half cycle this diode D1 will conduct and this diode D2 will remain reversed biased.
+[03:25] And in that scenario, the current will flow like this.
+[03:29] So, if we assume this diode D1 as an ideal diode, then this Vin voltage will appear across
+[03:36] this load resistance.
+[03:37] Or we can say that this Vout is equal to Vin.
+[03:42] So, the same input voltage will also appear across this load resistance.
+[03:47] Similarly, during the negative half cycle, this diode D1 will remain off, while this
+[03:54] diode D2 will conduct.
+[03:56] And the current will flow through the circuit in this fashion.
+[04:00] So, once again, if we assume this diode D2 as an ideal diode, then this input voltage
+[04:06] Vin will appear across this load resistance.
+[04:10] Now, here during the positive as well as the negative half cycle, the current which is
+[04:15] flowing through the load resistor is in the same direction.
+[04:19] So, for the negative half cycle also we will get the positive waveform.
+[04:23] So, now if we combine this positive as well as the negative half cycle, then the output
+[04:29] waveform of this rectifier circuit will look like this.
+[04:31] So, in this way, if we apply a sine wave as an input to this rectifier circuit, then we
+[04:39] will get this kind of waveform at the output.
+[04:42] And here as we are getting the output waveform for both half cycles, the average value of
+[04:48] this full wave rectifier will be more than the half wave rectifier.
+[04:52] And to be precise if I say, the average value will be equal to 2Vm /π.
+[04:58] Which is exactly doubled compared to the half-wave rectifier circuit.
+[05:03] But here we have assumed that this diode D1 and D2 are ideal.
+[05:08] So, if this diode D1 and D2 are not ideal, in that case, there will also be a voltage
+[05:13] drop across these two diodes.
+[05:16] And in that case, the average value can be given by this expression.
+[05:22] That is 2(Vm - 0.7)/π where here we have assumed that the voltage
+[05:27] drop across each diode is equal to 0.7V.
+[05:30] So, in general, we can say that the average value will be equal to 2 (Vm - Vt)/π
+[05:36] where Vt is the threshold voltage for each diode.
+[05:42] So, in this condition, if you see the output waveform, then the output waveform will look
+[05:48] like this.
+[05:51] Because now, the diode will conduct only when the input voltage crosses this threshold voltage.
+[05:59] And due to the drop across this diode, the peak value will also get reduced.
+[06:03] So, instead of Vm, now the peak value will be equal to Vm - Vt.
+[06:07] So, this will be the expression of average value considering the voltage drop across
+[06:14] the diode.
+[06:15] Now, whenever we are designing the rectifier circuit, then one parameter which always needs
+[06:21] to be considered is the Peak Inverse Voltage.
+[06:25] And it is the maximum voltage which appears across the diode in the reverse biased condition.
+[06:30] So, let's find out the peak inverse voltage for this particular circuit.
+[06:36] And to find the peak inverse voltage, let's assume that during the positive half cycle,
+[06:41] this diode D1 is conducting and this diode D2 remains off.
+[06:46] And let's say, in the reverse biased condition, the voltage across this diode D2 is equal
+[06:51] to Vd2.
+[06:52] So, if we apply the KVL in this particular loop, then we can write it as, Vin +Vo = Vd2
+[07:02] Now, if we assume this diode D1 as an ideal diode, in that case, this Vout will be equal
+[07:09] to Vin.
+[07:10] So, we can say that this Vd2 is equal to 2*Vin.
+[07:18] And if we assume the peak voltage of this input signal, then it is equal to Vm.
+[07:22] So, we can say that the peak inverse voltage for the diode will be equal to 2*Vm.
+[07:29] So, for the full wave rectifier circuit which is designed using the center tapped transformer,
+[07:35] the peak inverse voltage is equal to 2*Vm.
+[07:38] So, the PIV rating of the diode should be more than this value.
+[07:43] So, let's say if we are applying an input signal which has a peak voltage of 10V then,
+[07:50] the peak inverse voltage of the diode should be more than 20V.
+[07:54] So, while designing the circuit for the specific voltage we should always check the maximum
+[08:00] reverse voltage which can be withstand by the diode.
+[08:04] Alright so now let's see the second method using which we can design this full-wave rectifier
+[08:09] circuit.
+[08:10] So, as you can see over here this full wave bridge rectifier circuit consist of four diodes.
+[08:16] So, if you compare this circuit with the previous circuit then does not involve any kind of
+[08:21] transformers.
+[08:23] And due to that the size of the circuit will get reduce.
+[08:28] Alright so now let's see the working of this full-wave bridge rectifier.
+[08:32] So, if we apply the sine wave as an input to this circuit, then during the positive
+[08:37] half cycle this diode D2 and D4 will conduct.
+[08:41] While this D1 and the D3 diode will remain OFF.
+[08:44] So, during the positive half cycle, the current will flow through this path.
+[08:52] And if we assume this diode D2 and D4 are ideal, in that case, this input voltage will
+[08:58] appear across this load resistor.
+[09:00] So, the same input voltage will also appear at the output terminal.
+[09:05] Similarly, during the negative half cycle, these diodes D2 and D4 will remain OFF.
+[09:14] And on the other end these diodes D1 and D3 will conduct.
+[09:17] So, during the negative half cycle, the current in the circuit will flow in this way.
+[09:25] And if we observe over here, during the negative half cycle also the current which is flowing
+[09:31] through the load is in the same direction.
+[09:33] So, during the negative half cycle, we will get this kind of waveform.
+[09:38] So, if we combine the positive as well as the negative half cycle, then we will get
+[09:44] this kind of waveform.
+[09:45] Now, if we consider this four diodes as an ideal diode, in that case, the average value
+[09:52] of the full wave rectifier will be equal to 2Vm/π
+[09:57] But if we also consider the voltage drop across this diode, in that case, the average value
+[10:03] can be given by this expression.
+[10:05] That is 2(Vm- 1.4)/π.
+[10:07] Or in general, we can say that the average value will be equal to 2*(Vm -2Vt)/π
+[10:18] Where Vt is the forward voltage drop across these two diodes.
+[10:25] And here in the waveform, this T' is the time period of the output waveform.
+[10:30] Where T' is equal to T/2.
+[10:33] Alright, so now let's find out the peak inverse voltage for this full wave bridge rectifier
+[10:39] circuit.
+[10:40] And to find the peak inverse voltage, let's assume that during the positive half cycle,
+[10:45] this diode D2 and D4 are conducting.
+[10:48] While this diode D1 and D3 are in the off condition.
+[10:51] So, in that case, as we had seen, the current will flow in this fashion.
+[10:59] And in that condition, let's say the reverse voltage which appears across this diode D1
+[11:05] and D3 are Vd1 and Vd3 respectively.
+[11:09] So, if we apply the KVL in this particular loop then we can say that this Vd1 is equal
+[11:16] to Vo.
+[11:19] And here we are assuming that all four diodes are the ideal diode.
+[11:23] So, in that condition, the same input voltage will also appear across this load.
+[11:29] That means we can say that this Vd1 will be equal to the input voltage.
+[11:35] And the peak value of the input voltage will be equal to Vm.
+[11:39] That means the peak inverse voltage which will appear across this diode D1 will be equal
+[11:44] to Vm.
+[11:45] And the same is true for this diode D3.
+[11:48] So, if we apply the KVL in this loop, then we can find that this Vd3 will be equal to
+[11:54] Vin.
+[11:56] And the peak value of the reverse voltage will be equal to Vm.
+[12:00] So, for the full wave bridge rectifier circuit, this peak inverse voltage is equal to Vm.
+[12:06] So, so far we have seen that how we can design this full wave rectifier circuit using either
+[12:13] center tapped transformer or using the bridge rectifier circuit.
+[12:17] But if you observe this output waveform, it is not completely DC voltage.
+[12:21] Because still there is some periodic variation in this output waveform.
+[12:24] So, this periodic AC variation in the DC output voltage is known as the ripple.
+[12:31] And this ripple can be reduced by using the filter circuit at the output of the rectifier.
+[12:37] So, as shown in the figure, by using the filter circuit, we can minimize the effect of ripple.
+[12:43] So, with this filter, if you see the output waveform, then the output waveform will look
+[12:48] like this.
+[12:49] So, this blue waveform is the waveform just before the filter and this yellow waveform
+[12:56] is the output of this filter.
+[12:58] So, with this filter circuit, how well this ripple is removed, it depends on the value
+[13:04] of this load resistance RL as well as this capacitor.
+[13:06] So, before we see that, first of all, let's understand how this filter circuit works.
+[13:12] So, during the positive half cycle, this capacitor will charge up to the peak voltage.
+[13:19] And once this capacitor gets fully charged, then this diode D1 will become reverse bias.
+[13:24] So, after the peak voltage, this capacitor gets discharged through this resistor RL.
+[13:31] And due to this discharge, we will get this kind of waveform.
+[13:35] So, once again the capacitor starts charging whenever the voltage across the capacitor
+[13:40] just goes below this input voltage.
+[13:43] So, after that time once again this capacitor starts charging through this path.
+[13:50] And once again, when the voltage across the capacitor will become Vm, then this diode
+[13:56] D2 will become OFF.
+[13:59] And once again, now this capacitor starts discharging through this resistor RL.
+[14:04] So, due to the charging and the discharging of this capacitor, we will get this kind of
+[14:08] waveform.
+[14:09] So, in the circuit, how well the ripple is removed, it depends on the RC time constant
+[14:14] of this filter.
+[14:16] So, for the better rejection of this ripple, the RC time constant should be much larger
+[14:21] than this time period.
+[14:23] So, suppose if this RC time constant is less than this time period T', in that case, this
+[14:30] capacitor will get discharged rapidly.
+[14:33] So, due to that, we will get more ripple in the output waveform.
+[14:37] So, avoid that this RC time constant should be much larger than this T'.
+[14:42] But still, if you observe, there is some ripple in the output waveform.
+[14:48] And this ripple voltage is known as the peak to peak ripple.
+[14:51] So, if vm is the peak voltage, and this voltage is the peak to peak ripple, then this peak
+[14:57] to peak ripple can be given by this expression.
+[15:00] That is Vm/ (2*f*RL*C) Where here f is the frequency of the input
+[15:08] signal.
+[15:09] So, if we consider the frequency of this output waveform, then this 2f should be replaced
+[15:15] by this frequency f'.
+[15:17] Now, for this waveform, suppose if we want to find the DC voltage, then this Vdc can
+[15:24] be given by the expression, Vm - Vr (p-p)/2
+[15:32] That means if this voltage is the peak to peak ripple, then the DC voltage will be the
+[15:37] subtraction of this Vm minus half of this ripple voltage.
+[15:41] And that will be the approximate DC voltage of this output waveform.
+[15:45] So, this will be the expression of DC voltage after the filtration.
+[15:51] And here if we assume that this ripple voltage is much less than the peak amplitude of the
+[15:56] sine wave, in that case, the approximate value of this DC voltage will be equal to Vm.
+[16:02] Now, this ripple voltage can also be expressed in terms of the load current.
+[16:09] That is Idc/ (2*f*C) So anyway, we will derive all these expressions
+[16:15] in the separated video.
+[16:17] So, using this rectifier and the filter circuit, we can reduce ripple in the output waveform.
+[16:24] And how well this ripple is removed from the circuit can be defined by the parameter which
+[16:28] is knowns as the ripple factor.
+[16:30] So, this ripple factor is a ratio of the RMS value of this ripple divided by the DC voltage.
+[16:37] And for the full-wave rectifier, without any filtration, this ripple factor is equal to
+[16:42] 0.43.
+[16:43] Now, if you recall the ripple factor for the half-wave rectifier, it was equal to 1.21.
+[16:50] So, for the full wave rectifier circuit, the ripple factor has been improved drastically.
+[16:56] And it can be further improved by using the filter circuit.
+[16:59] So, for the full wave rectifier with the filter circuit, the ripple factor can be given by
+[17:04] this expression.
+[17:06] So, we will derive all these expressions in the separate video.
+[17:10] Now, one more parameter which is defined for the full wave rectifier is the efficiency.
+[17:16] That is how well the AC input power is converted into the DC power.
+[17:21] And for the full wave rectifier, this efficiency is equal to 81.2 %.
+[17:28] And if you recall for the half-wave rectifier, the efficiency was 40.6 percent.
+[17:33] So, using the full wave rectifier, we can almost double the efficiency.
+[17:37] So, in summary, here is the different parameters which we have discussed so far for the full
+[17:43] wave rectifier.
+[17:45] And these parameters are also defined separately for the center tapped as well as the bridge
+[17:50] rectifier circuit.
+[17:51] Now, out of all the parameters, some of the parameters we have discussed very briefly.
+[17:56] But in the separate video, we will also derive all these expressions.
+[18:00] So, I hope in this video, you understood how we can design a full wave rectifier circuit
+[18:05] using the center tapped transformer as well using the bridge circuit.
+[18:09] So, if you have any question or suggestion, do let me know here in the comment section
+[18:13] below.
+[18:14] If you like this video, hit the like button and subscribe to the channel for more such
+[18:18] videos.

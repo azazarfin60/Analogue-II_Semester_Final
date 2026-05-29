@@ -1,0 +1,73 @@
+Title: Operational Amplifier (Op-Amp) Solved Problems  | Quiz # 109, 119 and 121
+URL: https://www.youtube.com/watch?v=IPdypDkPFpA
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this op-m circuit and here we have been given that
+[00:17] the input offset voltage and the input offset currents for the given circuit are 4 milli
+[00:22] volt and the 150 nano amp here respectively.
+[00:26] So here we have been asked to find the total output offset voltage of the given circuit.
+[00:32] So for the given circuit, here the input offset voltage is equal to 4 milli volt while the
+[00:39] input offset current is equal to 150 nano amp here.
+[00:45] So the total output offset voltage will have a two components.
+[00:49] One is because of this input offset voltage that is V O O 1 and second is due to this
+[00:55] input offset current.
+[00:57] Let's call it as V O O 2.
+[01:00] So as we have seen on the main channel because of this input offset voltage, the output
+[01:05] offset voltage that is V O O 1 can be given as 1 plus RF divided by R 1 times input offset
+[01:13] voltage.
+[01:16] So here this feedback resistor is equal to 5 net kilo ohm while this resistor R 1 is
+[01:21] equal to 5 kilo ohm.
+[01:23] That means the output offset voltage because of this input offset voltage is equal to 1 plus
+[01:30] 5 net kilo ohm divided by 5 kilo ohm times 4 milli volt.
+[01:37] That is equal to 404 milli volt.
+[01:41] Similarly, now let us find the output offset voltage because of this input offset current.
+[01:47] So this output offset voltage because of this input offset current will be equal to this
+[01:52] input offset current times feedback resistor.
+[01:56] That is equal to 150 nano amp here times 5 net kilo ohm.
+[02:04] That is equal to 75 milli volt.
+[02:07] So the total output offset voltage that is V O O will be equal to 404 milli volt plus
+[02:17] 75 milli volt that is equal to 479 milli volt.
+[02:24] So from this we can say that for the given equation this is the correct answer.
+[02:31] So in this second equation we have been given that the gain of the amplifier is equal
+[02:36] to 10 and the gain bandwidth product of the amplifier is equal to 1 megahertz.
+[02:42] Apart from that we have been also given that the slew rate of this amplifier is equal
+[02:47] to 0.1 volt per micro second and we have been given that the input to this amplifier
+[02:53] is a square wave.
+[02:55] So the amplitude of this square wave is plus minus 1 volt while the frequency of this
+[03:00] square wave is equal to 10 kilohertz.
+[03:04] So as I said the input to this amplifier is a symmetrical square wave which is varying
+[03:10] between plus minus 1 volt and its frequency is 10 kilohertz.
+[03:15] And as the square wave is symmetrical so its duty cycle will be equal to 50%.
+[03:20] Now if this amplifier is ideal in that case the input will get amplified by the factor
+[03:25] of 10.
+[03:27] That means at the output we should get a square wave with the amplitude is varying between
+[03:32] plus minus 10 volt.
+[03:34] But here we have been given that the slew rate of the op-amp is equal to 0.1 volt per micro
+[03:40] second.
+[03:41] That means in a 1 micro second the output of this amplifier will increase by the 0.1
+[03:47] volt.
+[03:48] So to reach the 10 volt it will require 100 micro second right or in other words we can
+[03:55] say that in a 50 micro second it will reach to the voltage 5 volt.
+[04:01] So in a steady state condition if you see the output then it will vary between minus 2.5
+[04:07] volt to plus 2.5 volt.
+[04:10] And in a steady state condition if you see the output of this amplifier then it will
+[04:14] look like a triangular wave.
+[04:17] And this triangular wave will vary between minus 2.5 volt to plus 2.5 volt.
+[04:23] So because of this slew rate the output of this amplifier will look like a triangular
+[04:28] wave and it will vary between this 2.5 volt and minus 2.5 volt.
+[04:35] So from this we can say that for the given question the answer is D.
+[04:41] Now in this question we have been asked to find the need of this feedback resistor RF.
+[04:47] So to understand the effect of this feedback resistor first of all let us remove this feedback
+[04:51] resistor from the circuit.
+[04:53] Now at the DC or when this omega is equal to 0 at that time the reactance of this capacitor
+[05:01] that is 1 over omega c will be equal to infinite.
+[05:05] That means at the DC this capacitor will act as an open circuit.
+[05:09] And because of that if you see this open circuit then it will operate in the open loop configuration.
+[05:15] That means in the open loop configuration the output of this open will get saturated.
+[05:21] Now if we have this feedback resistor RF in the circuit then at the DC frequency the
+[05:27] output of this amplifier will be equal to minus RF divided by R1 times input voltage.
+[05:34] That means this feedback resistor avoids the saturation of this amplifier at the DC
+[05:39] frequency.
+[05:40] So we can say that this feedback resistor prevents the saturation of this amplifier.
+[05:46] And hence we can say that for the given question this leads the correct answer.

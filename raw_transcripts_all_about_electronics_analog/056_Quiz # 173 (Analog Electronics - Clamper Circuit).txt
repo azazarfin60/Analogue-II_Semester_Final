@@ -1,0 +1,48 @@
+Title: Quiz # 173 (Analog Electronics - Clamper Circuit)
+URL: https://www.youtube.com/watch?v=sXr9yVllO9c
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All about Electronics.
+[00:16] So in this question, we have been given this circuit and in this circuit, this square
+[00:21] wave is applied as an input.
+[00:24] Now in this circuit, we have been given that the voltage drop across this plane junction
+[00:29] diode is 0.7V and the inner breakdown voltage of the inner diode is equal to 6.8V.
+[00:36] And here we have been asked to find the maximum and the minimum value of the output wave
+[00:40] form.
+[00:41] Now, if you closely look this circuit, then it is the clamper circuit.
+[00:46] And for the clamper circuit, we know that the RC time constant of the circuit should
+[00:51] be much larger than the time period of the signal.
+[00:54] And in fact, here we have been given that the RC time constant of the circuit is much
+[00:59] larger than the time period of the signal.
+[01:02] So, to find the maximum and the minimum value of the output wave form, let us analyze this
+[01:07] circuit.
+[01:09] And first of all, let us see what happens during the positive half cycle.
+[01:14] So during the positive half cycle, these two diodes will conduct and the capacitor starts
+[01:18] charging in this direction because these two diodes will offer the minimum resistance.
+[01:24] So during the positive half cycle, the voltage drop across this diode D1 will be equal to
+[01:28] 0.7V and the voltage drop across this diode D2 will be equal to 6.8V.
+[01:35] So during the positive half cycle, the voltage drop across the capacitor will be equal to
+[01:39] 14V minus V out.
+[01:43] And during the positive half cycle, V out will be equal to 0.7 plus 6.8V that is equal to
+[01:49] 7.5V.
+[01:51] So the capacitor voltage Vc will be equal to 14 minus 7.5V.
+[01:57] That means during the positive half cycle, the capacitor will charge to the voltage 6.5V.
+[02:03] And during the positive half cycle, the output voltage V out will be equal to 7.5V.
+[02:10] Now let us see what happens during the negative half cycle.
+[02:14] So during the negative half cycle, the voltage across the capacitor will be equal to 6.5V.
+[02:20] And here, let us say the voltage at this terminal is equal to V dash.
+[02:26] And if we apply the KVL in this loop, then we can say that this voltage V dash is equal to
+[02:32] minus 14 minus 6.5V.
+[02:36] That means this voltage V dash will be equal to minus 20.5V.
+[02:40] And the same voltage will also appear across these two diodes.
+[02:45] So during the negative half cycle, these two diodes will remain off.
+[02:49] And the same voltage V dash will also appear at the output terminal.
+[02:54] That means we can say that during the negative half cycle, the output voltage V out is equal
+[02:58] to minus 20.5V.
+[03:03] And once again during the positive half cycle, the output voltage V out will be equal to
+[03:08] 7.5V.
+[03:10] Because at that time, the voltage across the capacitor is equal to 6.5V.
+[03:16] So in this way, in this clamper circuit, the maximum output voltage V max is equal to
+[03:22] 7.5V.
+[03:24] And the minimum voltage V minimum is equal to minus 20.5V.
+[03:31] That means for the dual question, is the correct answer.

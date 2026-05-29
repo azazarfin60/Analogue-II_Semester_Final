@@ -1,0 +1,282 @@
+Title: Op-Amp Solved Examples (Part 2)
+URL: https://www.youtube.com/watch?v=ZiDgsruJXOY
+Source: Local Whisper (base)
+
+[00:00] Hey friends welcome to the YouTube channel All Abode Electronics.
+[00:15] So in the first part of this video we have solved some examples based on opam.
+[00:20] So now in this video let us see some more examples based on opam.
+[00:24] So here is the first example of this part and it is based on the gain the net product
+[00:28] of the opamp.
+[00:30] So here the gain-managed product of the opam is 1 megahertz and we have been asked to
+[00:34] find the bandwidth of the non-verting opamp which is having a gain of 20 dB.
+[00:40] So here we have been given that the gain-managed product of the opam is 1 megahertz or we can
+[00:46] say that the unity gain frequency of the opam is 1 megahertz.
+[00:52] Now here the gain of this non-inverting opam is equal to 20 dB.
+[00:56] So first of all let us convert this gain-indescible into the normal gain.
+[01:01] Now we know that the gain-indescible can be given by the expression 20 log of normal gain
+[01:08] that is equal to 20 dB.
+[01:11] So we can say that log of a that is equal to 1 or the gain of this opam will be equal
+[01:18] to 10.
+[01:20] Now here the bandwidth of this non-inverting opam or the closed loop cutoff frequency of
+[01:25] this non-inverting opam can be given by the expression this unity gain frequency or
+[01:30] the gain-managed product of the opam divided by the gain of this non-inverting opam.
+[01:37] So here the unity gain frequency is 1 megahertz and the gain of the opam is equal to 10.
+[01:43] So our bandwidth of this non-inverting opam or the closed loop cutoff frequency will
+[01:47] be equal to 100 kilohertz.
+[01:51] So as you can see this example is very simple example provided if you know about the gain-indescible
+[01:56] product of the opam.
+[01:58] Now in the same example suppose if you have been asked to find the bandwidth of the
+[02:02] inverted opam in that case the closed loop cutoff frequency can be given by the expression
+[02:08] this unity gain frequency divided by the gain plus 1.
+[02:12] So in that case your closed loop cutoff frequency or the bandwidth will be slightly different
+[02:16] from this non-inverting opam.
+[02:18] So now let us move to the next example.
+[02:20] So this example is based on the slew rate of the opam.
+[02:24] So here we have been given that the slew rate of the opam is 1 volt per microsecond and
+[02:28] the gain of the opam is 40 dB.
+[02:31] So now for this amplifier if we want to faithfully amplify the sinusoidal signal which is varying
+[02:36] from 0 to 20 kilohertz without any kind of distortion then we need to find the maximum
+[02:42] acceptable input signal.
+[02:44] So here the slew rate of the opam is 1 volt per microsecond as well as the gain of this
+[02:50] opam is 40 dB.
+[02:53] So if we convert it into the normal gain then it will be equal to 100.
+[02:57] Now here the frequency is varying from 0 to 20 kilohertz.
+[03:02] Now for this amplifier we need to find the maximum acceptable input level such that this
+[03:07] amplifier is able to amplify the sinusoidal signal which is varying from 0 to 20 kilohertz.
+[03:13] So for this sine wave we know that the slew rate should be greater than or equal to 2
+[03:19] by f times the peak value of the sinusoidal signal or in the worst case the slew rate of
+[03:26] the opam should be equal to 2 by f times this peak voltage.
+[03:32] Now here we know that the slew rate of the opam is 1 volt per microsecond as well as we
+[03:38] know that the range in which this amplifier is used is between the 0 to 20 kilohertz.
+[03:43] So here frequency is also fixed which is varying from 0 to 20 kilohertz.
+[03:48] And in this condition we need to find the maximum acceptable input level.
+[03:52] So first of all we will find the maximum acceptable output level and from that we will find
+[03:57] the maximum acceptable input level.
+[03:59] So let us once again write slew rate that is equal to 2 by f times the peak value of the
+[04:06] sinusoidal signal or we can write it this peak voltage that is equal to slew rate divided
+[04:13] by 2 by times this frequency.
+[04:16] Now here we know that the slew rate of the opam is 1 volt per microsecond divided by 2
+[04:23] by times frequency of this input signal.
+[04:27] Now here to find the peak voltage we will consider the maximum frequency and that is equal
+[04:31] to 20 kilohertz.
+[04:34] So now here we can write this 1 volt per microsecond as 1 mega volt per second divided by this 4 pi
+[04:44] into 10 to the power 4 that is equal to 10 to the power 6 divided by 4 pi into 10 to
+[04:52] the power 4.
+[04:54] So if we simplify it then the peak voltage pp will be equal to 7.95 volt.
+[05:02] So this is the maximum amplitude of the sinusoidal signal for which we will not see any kind
+[05:06] of slew rate induced distortion.
+[05:08] Now for this output voltage let us find the maximum acceptable input signal.
+[05:12] So now we know that the output voltage v out will be equal to the gain of the opam multiplied
+[05:18] by the input signal or we can say that the input signal v in will be equal to the output
+[05:24] signal divided by the gain of the opam.
+[05:27] Now here the maximum value of output voltage is 7.95 volt and the gain of the opam is 100.
+[05:34] So the value of this input voltage will come out as 79.5 milli volt.
+[05:41] So for the faithful amplification of sinusoidal signal the input signal amplitude should
+[05:45] be less than the 79.5 milli volt so that there will not be any kind of slew rate induced
+[05:50] distortion.
+[05:52] So now let us move to the next example.
+[05:54] So in this example we have been asked to find the value of the slow current IL.
+[06:00] Now if you observe this circuit this circuit contains a negative as well as the positive
+[06:04] feedback and directly we cannot apply any equation for the opam.
+[06:08] So now here to find this value of slow current what we will do we will apply the KCL
+[06:12] at these two particular nodes and let us say this node as a node A and this node as a
+[06:18] node B and let us assume that the voltage at this node A is VA and this voltage at this
+[06:23] node B is VB.
+[06:26] So from this if you observe this load current IL that is equal to this voltage VB divided
+[06:32] by this load resistance RL.
+[06:35] So now suppose if you know the value of this node voltage VB then we can find the value
+[06:40] of this load current IL.
+[06:42] So first of all we will find the value of this VB in terms of this input voltage V1.
+[06:47] So now if you observe over here there is a negative feedback in this circuit and because
+[06:51] of that there will be a virtual shot between this inverting and the non-inverting terminal.
+[06:56] So we can say that V minus that is equal to V plus or we can say that this voltage VA
+[07:02] that is equal to this voltage VB.
+[07:05] So we can also write this load current IL as this node voltage VA divided by this load
+[07:11] resistance RL.
+[07:13] So first of all let us find the value of this node voltage VA and to find that let us
+[07:18] apply the KCL at this node A.
+[07:21] So applying KCL at this node A we can write this voltage VA minus V1 divided by this resistance
+[07:29] R1 plus VA minus V out divided by this resistance R1 that is equal to 0 or we can write 2 VA minus
+[07:41] V1 that is equal to V out and let us say this is the equation number 1.
+[07:47] Similarly now let us apply the KCL at this node B.
+[07:52] To applying KCL we can write this voltage VB divided by RL plus VB divided by this resistance
+[08:01] R2 plus VB minus V out divided by this resistance R2 and that is equal to 0.
+[08:10] So if we simplify it then we can write 2 VB divided by R2 plus VB divided by RL that is
+[08:18] equal to V out divided by this resistance R2 and here as we have seen this voltage VB
+[08:26] that is equal to this voltage VA.
+[08:28] So we can replace this voltage VB by a VA.
+[08:32] So we can write 2 VA divided by this resistance R2 plus VA divided by RL that is equal to V out
+[08:42] divided by this resistance R2 and let us say this is the equation number 2.
+[08:48] Now in this equation 2 let us put the value of this V out that is equal to 2 VA minus
+[08:54] V1.
+[08:55] So if you put the value of V out then we can write 2 VA divided by R2 plus VA divided by
+[09:04] RL that is equal to 2 VA divided by R2 minus V1 divided by R2.
+[09:12] So if we simplify it then we will get VA divided by this resistance RL that is equal to
+[09:19] minus V1 divided by this resistance R2 or we can write VA that is equal to minus RL
+[09:28] V added by R2 into V1.
+[09:31] Now here we know that this load current IL that is equal to this voltage VA or VV divided
+[09:37] by this load resistance RL.
+[09:40] So now here let us put the value of this VA into this equation.
+[09:44] So we will get this load current IL as minus V1 divided by R2.
+[09:50] So this is the expression of this load current IL in terms of the input voltage V1.
+[09:56] So in this way applying this KC equations we can find the value of this load current IL.
+[10:02] So now let us see the next example.
+[10:04] So now in this example we have been given this bridge circuit which is connected to op-amp
+[10:08] inner feedback configuration and we have been asked to find the voltage of this bridge
+[10:13] circuit.
+[10:14] So if you observe this circuit it looks bit complicated circuit but let us see how we
+[10:19] can solve this problem.
+[10:20] So now if you observe over here this bridge circuit is connected to the op-amp inner negative
+[10:25] feedback configuration and whenever there is a negative feedback we know that there exist
+[10:30] a virtual shot between the inverting and the non-inverting terminals.
+[10:35] So here the one-world is applied at this non-inverting terminal.
+[10:38] So we can say that the same voltage will appear at this inverting terminal because here
+[10:44] the op-amp is a ideal op-amp.
+[10:46] So we can say that at this node also the voltage is equal to one-world.
+[10:50] Now here let us assume that the current that is flowing through this 50 ohm resistor
+[10:55] is current I.
+[10:56] So we can write this current I as one-world divided by this 50 ohm resistor and that is
+[11:03] equal to 20 milliampere.
+[11:06] So we can say that the current that is flowing through this 50 ohm resistor is 20 milliampere.
+[11:11] So now if you observe over here this op-amp is a ideal op-amp so no current is flowing
+[11:15] into this terminals of the op-amp or we can say that in this direction the current is equal
+[11:21] to 0.
+[11:23] So if we apply the casey let this node that we can say that whatever current that is flowing
+[11:29] away from this node the same current should also enter into this node.
+[11:33] So if 20 milliampere of current is flowing out of this node the same current should also
+[11:38] enter into this node.
+[11:40] So we can say that the current that is flowing in this direction that is equal to 20 milliampere.
+[11:46] And the same current is also going away from this node that is equal to 20 milliampere.
+[11:52] Now let us say the current that is entering into this node is equal to I1 and I2.
+[12:00] So the same current will also flow through these two resistors that is the current that
+[12:05] is flowing through this resistor is I1 and the current that is flowing through this resistor
+[12:10] is equal to I2.
+[12:13] Now if you look at this node then you can say that the current that is entering into this
+[12:19] node is the summation of this current I1 and I2.
+[12:23] So now if you see this bridge circuit in this bridge circuit the resistance in both am
+[12:27] is equal.
+[12:28] So this current I should equally get divided between these two am's.
+[12:32] So we can say that this current I1 that is equal to I2 that is equal to I divided by
+[12:38] 2.
+[12:39] That means the current that is flowing through this resistor is equal to 10 milliampere.
+[12:45] So this 10 milliampere current is flowing through these four resistors.
+[12:49] So now from this we can find the value of this output voltage V out.
+[12:54] So now let us say this point has point X and this point has point Y and this point
+[12:59] has point Z.
+[13:01] So you can say that this voltage VO that is equal to this voltage VX minus VY and that
+[13:08] is equal to voltage VXZ minus VYZ.
+[13:13] So now this voltage VXZ is equal to this current I2 multiplied by this resistance 250 into
+[13:21] 1 plus delta.
+[13:23] And similarly this current VYZ will be equal to this current I1 multiplied by this resistance
+[13:30] 250 into 1 minus delta.
+[13:34] Now here this current I1 and I2 are equal.
+[13:37] So we can write this current I1 into 250 into 1 plus delta minus 250 into 1 minus delta.
+[13:49] And if we simplify it then we can write this output voltage V out that is equal to I1
+[13:54] into 250 into 2 delta.
+[13:58] So now let us put the value of this delta and I1.
+[14:01] Now here the I1 is 10 milliampere and the value of delta is 0.05.
+[14:07] So 2 delta will be equal to 0.1 and if we simplify it then we will get the value of V out
+[14:14] as 250 milli volt.
+[14:17] So from this we can say that the output voltage between these two points of the bridge will
+[14:22] be equal to 250 milli volt.
+[14:24] So now let us move to the next example.
+[14:27] So in this example we have been asked to find the output voltage and here assume that
+[14:32] the opium is a ideal opium.
+[14:34] Now here if you observe it looks like there is a negative feedback from output to the input
+[14:39] side and this inverting terminal is at a ground potential while the voltage at this non-inordinate
+[14:46] terminal is equal to 1 volt and we have been asked to find the output voltage.
+[14:52] Now we know that whenever there is a negative feedback in the opium circuit and if the opium
+[14:57] is ideal in that case there exists a virtual shot between the inverting and the non-invoting
+[15:02] terminal.
+[15:03] Suppose if you apply the one volt at this non-invoting terminal in that case the same
+[15:07] voltage should also appear at this inverting terminal.
+[15:11] So ideally if there is a negative feedback exist between these output and input then
+[15:15] at this node also the voltage should be equal to 1 volt.
+[15:20] But if you observe over here this inverting terminal is at a ground potential and if the
+[15:25] virtual shot exists between the two terminals then it should not be possible right.
+[15:30] So it means that there is no negative feedback from output to the input side.
+[15:35] Rather this 2 kilo ohm resistor is connected to the ground terminal or we can read other
+[15:40] 2 kilo ohm resistor over here.
+[15:43] Similarly if you observe this 1 kilo ohm resistor the both end of this 1 kilo ohm resistor
+[15:48] are at a ground potential.
+[15:50] So because of that there will not be any flow of current through this 1 kilo ohm resistor
+[15:54] and this 1 kilo ohm resistor will not affect the output of this circuit.
+[15:59] So if you simplify it and read the same circuit then it will look like this.
+[16:04] So here this inverting terminal is at a ground potential and the non-invoting terminal is
+[16:09] at a 1 volt.
+[16:10] And here this 2 kilo ohm resistor from the output is connected to the ground.
+[16:15] So if you see this circuit actually it is in an open loop configuration or rather it
+[16:19] is a comparator circuit.
+[16:21] So for this circuit the output of the op-amp can be given by the expression is open loop
+[16:25] gain multiplied by the differential input that appears between this non-invoting and the
+[16:31] inverting terminal and that is equal to 1 volt minus 0 volt.
+[16:36] Now here the op-amp is ideal op-amp and for the ideal op-amp this open loop gain is infinite.
+[16:42] So ideally the output of this op-amp should be equal to infinite.
+[16:46] But practically we know that the output of the op-amp cannot go up to the infinity and
+[16:50] the output voltage will be restricted by the biasing voltages that is applied to the
+[16:55] op-amp.
+[16:56] Now here the output of the op-amp will be restricted up to the saturation voltage of the op-amp.
+[17:02] And for the biasing voltage of 12 volt the saturation voltage will be between this 11 to 12 volt.
+[17:08] So the output of the op-amp will be in between this 11 to 12 volt.
+[17:12] So in this way if you see this circuit it appears that there is a negative feedback from
+[17:16] output to the input side.
+[17:18] But if you closely observe this circuit then you will find that it is a comparator circuit.
+[17:23] And the output voltage will be between the 11 to 12 volt.
+[17:27] So now let us move to the next example.
+[17:29] So in this example the input that is applied to the op-amp is V1 sine omega t and the
+[17:34] output of the op-amp is V2 sine omega t plus 5.
+[17:37] Where 5 is the phase of this sinusoidal signal.
+[17:40] And in this example we have been asked to find the minimum and maximum value of this phase
+[17:45] 5.
+[17:46] So first of all let us redraw the same circuit.
+[17:49] So now here we have applied this input at this inverting and the non-invending terminals
+[17:53] separately.
+[17:55] So now if you see this circuit it is an example of a differential amplifier.
+[17:59] So for the differential amplifier we know that the output voltage can be given by the
+[18:03] expression minus RF divided by R1 times the input voltage VI plus 1 plus RF divided by
+[18:13] R1 multiplied by the voltage that appears at this node and let us say that is equal to
+[18:19] V plus.
+[18:21] So this should be the expression for the differential amplifier.
+[18:24] Now here the value of RF is equal to R1.
+[18:28] So we can write this output voltage V out as minus VI plus 1 plus 1 into this voltage
+[18:38] V plus.
+[18:39] That means output voltage V out will be equal to 2 V plus minus input voltage VI.
+[18:47] So now let us find the value of this voltage V plus.
+[18:50] So we can write this voltage V plus as this capacitor to reactants XC divided by this
+[18:56] resistance R plus XC multiplied by the input voltage VI.
+[19:02] So basically we have applied the voltage divider at this node.
+[19:06] So now let us put this value of V plus into this expression.
+[19:09] So we can write V out that is equal to 2 XC divided by R plus XC minus 1 multiplied
+[19:20] by the input voltage VI.
+[19:23] So if we simplify it then we can write V out that is equal to VI into XC minus R divided
+[19:31] by XC plus R.
+[19:35] Now here the value of this capacitor to reactants XC will be equal to 1 divided by J into
+[19:41] omega C.
+[19:42] So now let us put the value of this capacitor to reactants into this expression.
+[19:47] So if you put the value of this capacitor to reactants into this expression then we can
+[19:50] write this voltage V out that is equal to VI multiplied by 1 divided by J omega C minus
+[19:59] R divided by 1 divided by J omega C plus R.
+[20:06] And further if we simplify it then we can write V out that is equal to VI multiplied by
+[20:14] 1 minus J omega C R divided by 1 plus J omega C R.
+[20:22] So from this now let us find the phase of the output signal.
+[20:26] So now if you see this expression it is in the form of A plus J B divided by C plus
+[20:35] J D.
+[20:36] And we know that for this expression we can find the phase 5 that is equal to 10 inverse
+[20:42] of B divided by I A minus 10 inverse of D divided by C.
+[20:52] So in this way if you see the phase 5 will be equal to 10 inverse of minus omega C R
+[21:00] minus 10 inverse of omega into C R and that is equal to minus 2 10 inverse of omega C
+[21:09] R.
+[21:10] So this will be the phase 5 of the output signal.
+[21:14] So now whenever the value of omega is equal to 0 in that case is 10 inverse 0 will be
+[21:20] equal to 0 and in that case the value of 5 will be equal to 0.
+[21:26] Similarly whenever the omega is equal to infinity in that case the 10 inverse of infinity will
+[21:32] be equal to 5 by 2.
+[21:34] In hence this phase 5 will be equal to minus 5.
+[21:39] So this will be the maximum value of the phase while this will be the minimum value of
+[21:44] phase.
+[21:45] So in this way for the given circuit the phase will vary between 0 to minus 5.
+[21:49] So that is it for this video and I hope you understood the different examples which we
+[21:54] have covered in this video.
+[21:56] So if you have any question or suggestion do let me know in the comment section below.
+[22:00] If you like this video hit the like button and subscribe to the channel for more such
+[22:04] videos.

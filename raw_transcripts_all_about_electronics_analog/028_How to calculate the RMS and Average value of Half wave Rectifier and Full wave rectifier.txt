@@ -1,0 +1,107 @@
+Title: How to calculate the RMS and Average value of Half wave Rectifier and Full wave rectifier
+URL: https://www.youtube.com/watch?v=A2SMI31EgMA
+Source: YouTube Subtitles
+
+[00:12] Hey friends, welcome to the YouTube channel ALL ABOUT ELECTRONICS.
+[00:16] In the previous videos, we had already seen about the half wave and the full wave rectifier
+[00:21] circuits. And we had also seen the different parameters
+[00:24] related to rectifier circuits. Now, out of all these parameters we had already
+[00:29] seen that how to calculate the peak inverse voltage for this half wave as well as the
+[00:34] full wave rectifier circuit. And from the waveform, it is obvious that
+[00:39] the output frequency of the half-wave rectifier is same as the input waveform frequency.
+[00:44] While for the full-wave rectifier, the output waveform frequency is twice as of the input
+[00:50] waveform frequency. And apart from that regarding the other parameters
+[00:54] we have discussed very briefly. So, in the next couple of videos, we will
+[00:59] derive all these expressions. And in this video, we will see that how to
+[01:04] calculate the average as well as the RMS value for this half wave as well as the full wave
+[01:09] rectifier circuit. So, first of all, let's find out the average
+[01:13] value for this half wave rectifier circuit. Now, for any waveform, the average value can
+[01:19] be given as 1/T, integration 0 to T, V(t)dt. Where v(t) is the signal, which is varying
+[01:28] in the time domain. Now, for the half-wave rectifier, if you see,
+[01:32] the signal is varying in the form of a sine wave for 0 to T/2 time period.
+[01:38] And for this time period, the output of this half wave rectifier is zero.
+[01:43] So, we can say that this average value for the half-wave rectifier will be equal to 1/T,
+[01:50] integration 0 to T/2, Vm sin (wt) dt plus zero.
+[01:59] Because for this time period, the output is zero.
+[02:03] So, from this, we can write that Vavg will be equal to 1/T, integration 0 to T/2, Vm
+[02:14] sin (wt) dt. So, if we integrate this expression, then
+[02:20] we can write the average value will be equal to Vm/T, -cos(wt)/w, with the limits of 0
+[02:31] to T/2. Now, here this w is equal to 2π/T.
+[02:37] Where T is the time period of this half wave rectifier.
+[02:40] So, let's just take out this w. So, we can write this expression as, Vm/ T
+[02:48] times (2π/T). And we can write this -cos (wt) as -cos (2π*t/T),
+[02:59] with the limits of 0 to T/2. So, now if we put the limits then we can write
+[03:04] this expression as Vm/2π times, -cos (2π/T *T/2) - (-cos (0))
+[03:22] And further, if we simplify, then we will get Vm/2π times { -cos (π)+ cos (0)}
+[03:31] Now, we know that the cos (π) will be equal to -1 and the cos (0) will be equal to 1.
+[03:37] So, this expression will become 2. And if we simplify it then the average value
+[03:43] of the half-wave rectifier will come out as Vm/π.
+[03:47] So, this will be the average value for the half wave rectifier.
+[03:51] Similarly, now let's find out the average value for this full wave rectifier circuit.
+[03:56] Now, in this full-wave rectifier, if you see, the signal is repeating itself after every
+[04:01] T/2 time period. Where this t is the time period of the input
+[04:06] signal. So, instead of integrating this signal over
+[04:09] the entire time period T, we can integrate it only for the T/2 time period.
+[04:14] So, the expression of the average value for the full-wave rectifier can be written as,
+[04:19] Vavg will be equal to 1 divided by T/2, integration from 0 to T/2,
+[04:27] Vm sin (wt) dt. So, we can say that the average value of the
+[04:34] signal will be equal to 2/T, integration from 0 to T/2, Vm sin (wt) dt.
+[04:43] So, if we integrate this signal, then we can say that the average value will be equal to
+[04:49] 2Vm/T * [ -cos (wt)/w], with limits from 0 to T/2.
+[05:01] That means Vavg will be equal to 2Vm/wT * [ -cos (wt)], with limits from 0 to T/2.
+[05:14] So, here if we put w is equal to 2π/T and if we put these limits then we can write this
+[05:21] expression as 2Vm/ (2π/T) *T [ -cos (2π/T *T/2) +cos (0)]
+[05:38] And if we simplify it then we can write it as, Vm/π * [ -cos (π) +cos (0)]
+[05:50] Now, we know that the cos (π) is equal to -1 and cos (0) will be equal to 1.
+[05:56] So, this expression will become 2. And the average value for the full wave rectifier
+[06:02] will be equal to 2Vm/π. So, in this way, we can find the average value
+[06:08] for the full wave rectifier. So, now similarly let's find out the RMS value
+[06:14] for the half wave rectifier. Now, in general, for any signal, the RMS value
+[06:20] can be given by the expression, under-root 1/T, integration 0 to T, V^2 (t) dt.
+[06:30] Or we can say that Vrms^2 will be equal to 1/T, integration 0 to T, V^2(t) dt.
+[06:40] Now, for the half-wave rectifier, this v(t)is equal to Vm sin (wt) for 0 to T/2 time period.
+[06:50] And it is equal to 0 from T/2 to T time period. So, from this, we can write this Vrms^2 as,
+[07:02] 1/T, integration 0 to T/2, Vm^2 * {sin(wt)}^2 dt.
+[07:11] So, we can say that this Vrms^2 will be equal to Vm^2/T, integration 0 to T/2, {sin (wt)
+[07:24] }^2 dt. Now, we know that sin^2(x) can be written
+[07:30] as (1- cos(2x))/2. So, from this we can write this expression
+[07:37] as, Vm^2T, integration from 0 to T/2, [ 1- cos(2wt)] dt
+[07:49] So, now let's integrate this expression for 0 to T/2 time limit.
+[07:56] And if we integrate it then we can write this expression as,
+[08:00] Vm^2/2T, multiplied by [ t - sin (2wt)/2w], with limits from 0 to T/2.
+[08:14] So, now if we put the limits, then we can write this expression as Vm^2/2T, multiplied
+[08:21] by [ T/2 - sin (4π/T*T/2)/2w] and if we put the limits 0 then we will get -0 + sin (0)/2w.
+[08:46] So, if we simplify this expression then in the numerator we will get sin(2π).
+[08:50] And we know that the sin (2π) will be equal to 0.
+[08:53] Similarly, this sin (0) will be also equal to 0.
+[08:58] So, these two terms will become zero. And further, if we simplify it then we will
+[09:04] get Vrms^2 = Vm^2/2T *(T/2) That means Vrms^2 is equal to Vm^2/4.
+[09:18] That means the RMS value for the half-wave rectifier is equal to Vm/2.
+[09:25] So, in this way, we can find the RMS value for the half wave rectifier.
+[09:31] Similarly, now let's find out the RMS value for the full-wave rectifier.
+[09:36] So, in general, the RMS value for any waveform can be written as under root, 1/T, integration
+[09:44] 0 to T, V^2(t)dt. Now, here for the full-wave rectifier, this
+[09:53] V(t) is equal to Vm*sin(wt) for 0 to T/2 time period.
+[10:01] And then after the signal is repeating itself. So, instead of integrating it over the entire
+[10:07] time period T, we will integrate it only for the T/2 time period.
+[10:11] So, we can write this expression as Vrms^2 is equal to
+[10:16] 1/(T/2), integration 0 to T/2, V^2(t) dt. And let's put the value of this V^2(t) from
+[10:26] this expression. That means Vrms^2 will be equal to 2/T, integration
+[10:33] 0 to T/2, Vm^2 * sin^2(wt) dt. That means, Vrms^2 = 2Vm^2/T, integration
+[10:49] 0 to T/2, [ 1 -cos(2wt)] /2 So, here we have put the value of this sin^2(wt)
+[11:02] as [ 1-cos(2wt)]/2.
+[11:04] So, if we integrate this expression, then we can write it as Vm^2/T times [ t - sin
+[11:19] (2wt)/2w], with limits from 0 to T/2. And if we put the limits, then we can write
+[11:27] this expression as Vm^2/T, times, [ T/2 - sin(4π/T * T/2)/2w]. And if we put the limit 0 then
+[11:43] we can write it as, -0 + sin (0)/2w So, once again these two expressions will
+[11:54] become zero and if we further simplify it then the Vrms^2 will be equal to Vm^2/T *(T/2)
+[12:05] That means Vrms^2 = Vm^2/2 Or we can say that the RMS value for the full-wave
+[12:14] rectifier is equal to Vm/√2. So, in this way, we can also find the RMS
+[12:21] value for the full-wave rectifier. So, I hope in this video, you understood how
+[12:26] to find the RMS as well as the average value for the half wave as well as the full wave
+[12:30] rectifier. Now, in the next couple of videos, we will
+[12:33] also see, how to find the ripple factor as well as the ripple voltage for the half wave
+[12:38] and the full-wave rectifier circuit. So, if you have any question or suggestion,
+[12:42] do let me know here in the comment section below.
+[12:45] If you like this video, hit the like button and subscribe to the channel for more such
+[12:48] videos.

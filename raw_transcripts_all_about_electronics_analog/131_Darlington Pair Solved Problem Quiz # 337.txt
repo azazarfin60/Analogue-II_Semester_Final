@@ -1,0 +1,58 @@
+Title: Darlington Pair Solved Problem | Quiz # 337
+URL: https://www.youtube.com/watch?v=HH0mJbLLJo4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:10] So in this question, we have been given this Darlington bear circuit and here we have
+[00:15] been given that for both transistors, the current gain beta is equal to 29.
+[00:21] Moreover, the base emitter voltage of both transistors is equal to 0.71 volt.
+[00:26] So here, we have been asked to find the value of R1 such that the collector emitter voltage
+[00:31] of the second transistor is equal to 5 volt.
+[00:35] So first of all, here let us write down what has been given to us.
+[00:40] So here, this beta 1 is equal to beta 2 is equal to 29.
+[00:46] Moreover, the base emitter voltage VBE1 and VBE2 is equal to 0.71 volt.
+[00:54] And here, the required value of this VCEQ is equal to 5 volt.
+[01:00] That means here, we need to select the value of R1 such that the collector emitter voltage
+[01:05] of the second transistor is equal to 5 volt.
+[01:09] Now if you look this circuit, then here this voltage VCE2 is equal to 12 volt.
+[01:16] And as you are aware, this VCEQ2 can be written as VCE2 minus VE2.
+[01:24] Therefore, this VE2 is equal to VCE2 minus VCEQ2 that is equal to 12 volt minus 5 volt
+[01:36] that is equal to 7 volt.
+[01:38] That means to get the value of VCEQ2 is equal to 5 volt, the required voltage at the emitter
+[01:44] of the second transistor is equal to 7 volt.
+[01:48] And from this, we can find the required current through the transistor Q2.
+[01:53] So we know that this emitter current IE2 or this current is equal to VE2 divided by RE.
+[02:03] So in this case, this VE2 is equal to 7 volt.
+[02:07] Therefore, this current IE2 is equal to 7 volt divided by 1.5 kilo ohm that is equal
+[02:15] to 4.6 milliampere.
+[02:20] So in this way, we found the value of the required emitter current through the transistor Q2.
+[02:26] Now here, to find the value of R1, we should know the base current IB1 as well as the
+[02:31] voltage at this node that is equal to VB1.
+[02:36] So here, we have been given that the base emitter voltage of this two transistor is equal
+[02:41] to 0.7 volt.
+[02:43] That means this two drops is equal to 0.7 volt.
+[02:48] So if we just apply the KVL around this loop, then we can easily find the voltage VB1.
+[02:54] Therefore, this voltage VB1 is equal to VBE1 plus VBE2 plus VBE2 that is equal to 0.7 volt
+[03:08] plus 0.7 volt plus 7 volt that is equal to 8.4 volt.
+[03:14] That means the voltage at this node or this VB1 is equal to 8.4 volt.
+[03:21] Similarly, now let us find the base current IB1.
+[03:25] So for the Dalenton pair, if you are aware, then this emitter current IE2 can be given
+[03:30] as beta1 plus 1 times beta2 plus 1 times IB1 where this IE2 is the current through the
+[03:40] emitter of the second transistor, while this IB1 is the base current of this first transistor.
+[03:47] And here since beta1 is equal to beta2, so you can write this expression as beta plus
+[03:53] 1 whole square times IB1.
+[03:57] So if you are not aware about this expression, then you can check this video on the Dalenton
+[04:01] pair.
+[04:03] So from this, we can say that this current IB1 is equal to IE2 divided by beta plus 1 whole
+[04:11] square that is equal to 4.6 milliampere divided by 30 whole square which is equal to 5.18
+[04:24] microampere.
+[04:25] So in this way, we also got the value of the base current IB1 and using this, we can
+[04:31] easily find the value of the R1.
+[04:34] So here, this current IB1 and also be given as this 12 volt minus IB1 divided by R1,
+[04:45] where this IB1 is the voltage at this node.
+[04:49] Therefore, this resistor R1 is equal to 12 volt minus 8.4 volt divided by IB1.
+[04:58] That means the value of R1 is equal to 3.6 volt divided by 5.18 microampere which is
+[05:07] equal to 694.3 kilo ohm.
+[05:12] That means whenever the value of R1 is equal to 694.3 kilo ohm at that time, this voltage
+[05:19] VC Q2 is equal to 5 volt.
+[05:23] And therefore, for the given question, the required value of the R1 is equal to 694.3

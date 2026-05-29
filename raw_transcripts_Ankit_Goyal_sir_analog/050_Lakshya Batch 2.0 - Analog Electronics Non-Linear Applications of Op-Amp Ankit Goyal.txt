@@ -1,0 +1,1899 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Non-Linear Applications of Op-Amp | Ankit Goyal
+URL: https://www.youtube.com/watch?v=X2qRaM9ET1c
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:11] Very good morning to all of you.
+[00:13] So we are live.
+[00:14] We are back with Lakshya batch 2.0 Analog Electronics.
+[00:18] Okay.
+[00:19] So all of you are clear with the audio video.
+[00:22] Confirm it once.
+[00:23] All of you are clear with the audio video.
+[00:27] And Aman Bhai, why are you asking if there won't be a class today?
+[00:32] There is your class every day.
+[00:34] There is no off.
+[00:36] Even if you do off the class, it looks like a compensation on Sundays.
+[00:41] Let's go.
+[00:42] So we have covered the construction of the O-Pamp.
+[00:48] We have covered the internal components of the O-Pamp.
+[00:52] Level translator.
+[00:54] Differential amplifier.
+[00:56] After that, your push pull amplifier.
+[00:59] We have seen the parameters of the O-Pamp.
+[01:01] Offset, voltage, bias, voltage, bias, current, offset, current, slew rate, CMRR.
+[01:07] We have seen all the things.
+[01:08] Then we have seen the linear application of the O-Pamp.
+[01:11] Inverting, amplifier, non-inverting, inverting, summer non-inverting, differentiator, integrator, differential amplifier, instrumentation amplifier, current to voltage, voltage to current converter.
+[01:24] We have seen all these things.
+[01:26] Now we are going to see some applications of the O-Pamp.
+[01:29] Those we call non-linear applications.
+[01:32] That is, your V-naught and V-in there, they will not be directly proportional to each other.
+[01:39] They won't go directly in proportionality.
+[01:42] So there comes our talk of non-linear relationships and non-linear applications.
+[01:48] Let's start.
+[01:50] But before starting, let me tell you that this Sunday, that is tomorrow 11 o'clock, your combat.
+[01:56] In which 30 questions are in 60 minutes.
+[01:59] You must give it.
+[02:01] Mathematics and aptitude are being asked in it.
+[02:04] And you give this test because here you can check your preparation for maths and aptitude.
+[02:12] Both of these topics have a very solid weightage in the gate.
+[02:17] It is the weight of 28 marks.
+[02:19] And the way you will perform here, you will understand that how your maths aptitude is prepared.
+[02:28] And accordingly, you can make your strategy of November, December and January.
+[02:34] So you must give this test.
+[02:36] Then I will discuss the strategy of the last three months.
+[02:40] Maybe on Monday and Tuesday.
+[02:42] But first, you will see the test and see how your maths aptitude is.
+[02:46] Because now that time has come.
+[02:48] You cannot ignore these subjects.
+[02:50] Okay.
+[02:51] A lot of children keep putting it till the end.
+[02:53] They will do aptitude in the end.
+[02:54] They will do maths in the end.
+[02:55] Now that last has come.
+[02:57] The last will not come from this.
+[02:59] The last will come only when the exam is straight.
+[03:02] So if your good numbers come in this test, then you know that you have to work hard.
+[03:07] Don't be demotivated.
+[03:09] Don't be too excited.
+[03:11] Just give the test.
+[03:12] Judge yourself.
+[03:13] And then move on.
+[03:14] So let's start today's discussion.
+[03:17] Let's go.
+[03:18] So the first application that I am going to pick up is called as a comparator.
+[03:24] What is it called?
+[03:25] Comparator.
+[03:26] Comparator is such a device.
+[03:28] It is a circuit that we read in analog and we read in digital.
+[03:34] What happens in digital?
+[03:36] There is a digital input in which there are multiple bits.
+[03:40] It is compared with another digital input.
+[03:45] And these two digital inputs have multiple bits.
+[03:48] Here we use NOR gates and gate.
+[03:52] We use all these things.
+[03:55] But what happens in analog comparator?
+[03:58] Two analog inputs are compared.
+[04:01] And looking at the output, we get to know which input is bigger and which input is smaller.
+[04:09] So we compare two analog inputs.
+[04:12] And by seeing the output, we can judge which input is higher and which one is lower.
+[04:19] Now what do we do here?
+[04:21] We keep O-Pamp in open loop configuration.
+[04:26] What is keeping O-Pamp in open loop configuration?
+[04:30] The difference voltage here will be equal to V1-V2.
+[04:38] The difference of these two voltages will be V1-V2.
+[04:43] Now you know that in open loop configuration, the gain of O-Pamp is very high.
+[04:50] So what do we say?
+[04:53] Open loop gain of O-Pamp is very high.
+[05:12] So even for small difference,
+[05:21] if there is a small difference between the two inputs,
+[05:25] then even for small difference between V1 and V2,
+[05:37] the output saturates.
+[05:41] The output will saturate you.
+[05:47] I told you that its linear region is very small.
+[05:54] Its linear region is very small.
+[05:57] So if there is a small difference between the two inputs,
+[06:00] then your output will saturate immediately.
+[06:03] Now Raj Ji is asking about the vacancy of JEE in December.
+[06:07] Raj, I will get the ticket immediately after this class.
+[06:13] The information of vacancies is not taken out by the authorities.
+[06:17] How will we know?
+[06:19] What are we giving you?
+[06:21] Are we giving you content?
+[06:22] Are we delivering you teaching?
+[06:24] Are we preparing you?
+[06:25] But if the vacancy comes, then the authority will tell and everyone will tell.
+[06:29] Is it not?
+[06:31] I don't have any secret information.
+[06:33] I am sitting inside and keeping someone.
+[06:35] And if I have to sit somewhere, then I will sit in the gate
+[06:39] or I will sit inside Raj Ji's JEE.
+[06:42] It's a matter of thinking.
+[06:44] Now look, there can be two cases here.
+[06:47] One can be V1 greater than V2 and one can be V2 greater than V1.
+[06:53] So we are saying that
+[06:59] Case 1
+[07:03] V1 is greater than V2.
+[07:06] If V1 is greater than V2,
+[07:09] then the differential voltage will be positive.
+[07:13] If the VD is positive, then the output voltage will be plus Vsat.
+[07:19] How much will it be?
+[07:21] Plus Vsat.
+[07:23] So here you can assume that if there is a small difference,
+[07:30] then your output will be saturated.
+[07:33] Your output will be saturated.
+[07:36] Case 2
+[07:40] V2 greater than V1
+[07:44] If V2 is greater than V1,
+[07:47] then the differential input will be negative.
+[07:52] And the output will come out to be minus Vsat.
+[07:59] How much will it come?
+[08:00] Minus of Vsat.
+[08:02] So here you can have two things.
+[08:05] Plus Vsat and minus Vsat.
+[08:08] Okay?
+[08:10] Akash is asking, sir, why are you saturating?
+[08:13] Akash, tell me one thing, did you attend the initial lecture of O-Pamp?
+[08:16] Tell me.
+[08:18] Did you attend the initial lecture of O-Pamp?
+[08:21] And Giten, brother, I have announced it on YouTube.
+[08:24] Go to the crash course and check the video.
+[08:26] Go to the video section.
+[08:28] The last mile of gate preparation by Team Creatrix will be written.
+[08:32] And once you go to Plus,
+[08:34] then the rank improvement batch of Creatrix will be coming.
+[08:37] Go and check.
+[08:44] Okay?
+[08:45] And brother, there are no doubts.
+[08:46] If you are consistent from the beginning,
+[08:49] then you will know why the output is saturating.
+[08:52] Okay?
+[08:54] The children who attended the class from the beginning,
+[08:56] I can't believe that they don't know
+[08:58] why the output is saturating.
+[09:01] Now, let me tell you from the waveform, brother.
+[09:04] Let me assume that input 1 is a variable
+[09:09] and I have put a constant input on input 2.
+[09:12] That is the reference input.
+[09:15] Okay?
+[09:17] So, see,
+[09:19] I have given a constant of input 2 like this.
+[09:24] V into
+[09:27] a constant voltage V reference.
+[09:31] You can also put a variable on both to put it.
+[09:34] Okay?
+[09:35] You can also put a variable on both to put it.
+[09:37] But for now, I have put a constant.
+[09:40] Okay?
+[09:43] Brother, please don't make this session AMA.
+[09:46] Okay?
+[09:47] Otherwise, I won't be able to give this course of analog.
+[09:51] Then keep doing AMA, AMA.
+[09:58] No one is interested in studying.
+[10:02] Everyone just needs the answer of their query.
+[10:06] What is happening in the lecture?
+[10:08] What is not happening?
+[10:10] It doesn't mean anything.
+[10:20] Now, see, assume that I have put a triangular wave on input 1.
+[10:27] Like this.
+[10:29] I have put a triangular wave on input 1.
+[10:45] Okay?
+[10:47] Now, if we have put a triangular wave on input 1,
+[10:52] then if this input 1 is more than your input 2,
+[10:57] then the output will be plus Vsat.
+[11:00] And if it is less, then it will be minus Vsat.
+[11:03] Okay?
+[11:04] If it is more, then it is plus Vsat.
+[11:06] If it is less, then it is minus Vsat.
+[11:09] So, see, what do I do?
+[11:10] I bring these intersecting points down.
+[11:15] Okay?
+[11:16] I bring these intersecting points down.
+[11:22] Okay?
+[11:35] Okay?
+[11:53] V out.
+[11:58] Now, see, when V in 1 is more, then the output will be plus Vsat.
+[12:04] When V in 1 is more, then the output will be plus Vsat.
+[12:09] And when V in 1 is less, then it will be minus Vsat.
+[12:13] See, I have made this level Vsat.
+[12:16] And make this level minus Vsat as well.
+[12:22] Okay?
+[12:26] Now, when V in 1 is more, then plus Vsat.
+[12:38] Okay?
+[12:40] And when it is less, then the output will be minus Vsat.
+[12:47] Then it will be more, then plus Vsat.
+[12:54] Then it will be less.
+[12:56] When it is less, then it will be minus Vsat.
+[13:03] When it goes up again, then plus Vsat.
+[13:08] So, from this logic, we get to know who is bigger.
+[13:13] That if Vsat is coming, that is, V1 will be bigger.
+[13:16] And if minus Vsat is coming, then V2 will be bigger.
+[13:33] Okay?
+[13:34] Okay?
+[13:38] Everyone is getting it, right?
+[13:40] From which type is your output coming?
+[13:43] Plus Vsat and minus Vsat.
+[13:46] It has become a square wave.
+[13:47] Yes.
+[13:51] And see, this is very useful.
+[13:53] This circuit analog comparator is very useful.
+[13:57] But it has a very simple application.
+[13:59] When I also taught you the open loop application,
+[14:02] then I gave it a name, remember differential amplifier.
+[14:05] What was the name of differential amplifier?
+[14:08] Now, what I am telling you here, because open loop gain is very high.
+[14:13] So, your output saturates with this reason.
+[14:17] So, whenever there is a slight difference in both the inputs,
+[14:21] there will be a slight difference.
+[14:23] The output is going to saturate.
+[14:26] And you will either get plus Vsat or you are going to get minus Vsat.
+[14:32] Okay?
+[14:33] Tell me.
+[14:34] Is it clear?
+[14:35] Is it clear or not?
+[14:44] No, we will not call it a square wave generator.
+[14:48] This square wave will be only then.
+[14:50] When this fix is your output, sorry, the second input is triangle.
+[14:55] Suppose the second input was also constant.
+[14:57] So, whatever is bigger,
+[14:59] either it was constantly Vsat or minus Vsat.
+[15:03] You had to put a triangle wave here to make this square wave.
+[15:07] So, what is the circuit doing?
+[15:09] It is comparing both the circuits.
+[15:11] It is saying that whatever is bigger, I will give Vsat or minus Vsat.
+[15:15] Right?
+[15:16] The circuit is just doing this.
+[15:18] But, but my brother,
+[15:20] by changing the input, you can get a different type of output.
+[15:25] Now, Babluji is saying, differential amplifier.
+[15:28] Look at this.
+[15:29] There was a slope negative here.
+[15:31] But, was the output negative immediately?
+[15:33] It was not, right?
+[15:34] So, what is the differentiator?
+[15:36] It means, what is my here?
+[15:39] So, look at this, brother.
+[15:43] From where has your slope been negative?
+[15:46] Has it become V0 negative?
+[15:48] Think about it.
+[15:49] The slope has become negative here.
+[15:51] But, V0 is getting positive.
+[15:53] So, how did this differentiator happen?
+[15:55] Don't talk like this in the air.
+[15:57] Don't talk like this, brother.
+[15:58] Comparator is just a comparator.
+[16:00] And, don't connect the things of Faltu with this.
+[16:02] That it has become your square wave generator.
+[16:05] It has become your differentiator.
+[16:07] Anything is there.
+[16:08] It is just a comparator.
+[16:09] It compares at any instant that
+[16:12] the voltage of positive terminal is more or
+[16:15] the voltage of negative terminal is more.
+[16:17] And, it gives accordingly the output.
+[16:20] Either plus Vsat or minus Vsat.
+[16:22] Let me tell you, brother.
+[16:23] It can't be a simple circuit opamp.
+[16:27] If the voltage of non-inverting terminal is more,
+[16:30] then the voltage of Vsat and the voltage of inverting terminal is more.
+[16:32] So, minus Vsat is over.
+[16:33] Neither something in front of it nor something behind it.
+[16:36] Now, it is used in analog to digital converter, brother.
+[16:41] When you read ADC in digital electronics,
+[16:45] then there is a comparator used there.
+[16:47] Do you know why?
+[16:48] You give a reference input in ADC
+[16:51] to which you have to convert it to digital.
+[16:53] Then, when your digital output comes,
+[16:56] you convert it to analog again.
+[17:00] And, you compare the first input you have given.
+[17:04] What do you do?
+[17:05] Look, you convert the analog to digital with the help of the counter.
+[17:09] Then, you bring the digital back to analog.
+[17:12] And, you compare it with your input.
+[17:15] To check if this is the right digital output.
+[17:19] Because, if it is the right digital output,
+[17:21] then when you convert it back to analog,
+[17:24] then it should be equal to the original analog input.
+[17:27] So, you need a comparator to compare there.
+[17:31] Do you understand?
+[17:32] What did you do?
+[17:33] You went from analog to digital.
+[17:35] Then, to check if the digital output is right or not,
+[17:38] you convert it back to analog.
+[17:40] And, you compare it with your original input.
+[17:43] Then, it comes into comparison with comparator.
+[17:46] The next application is the Precision Diode of this comparator.
+[17:51] Precision diode is made with the help of an opamp.
+[17:56] Its cut-in voltage is almost zero.
+[17:59] Its new voltage is almost zero.
+[18:03] Do you understand?
+[18:05] Do you understand?
+[18:07] Sir, please tell me more about precision diode.
+[18:10] If you want to explore ADC, then check the digital course.
+[18:14] You will see my ADC lecture and you will understand.
+[18:17] You will relate where the comparator is working.
+[18:19] I will talk more about this application on Precision Diode.
+[18:23] But, before that, I will start Precision Diode.
+[18:26] Once, you all will confirm.
+[18:28] Everyone is clear to the comparator.
+[18:35] Confirm it quickly.
+[18:39] Everyone is clear to the comparator.
+[18:42] It is fun.
+[18:45] Now, you will get such applications where the diode will be used with opamp.
+[18:51] Now, I will talk about such applications where the diode will be used with opamp.
+[18:56] And, you will need an open circuit test here.
+[19:00] Do you remember how I told you about diode open circuit test?
+[19:04] You should open the diode and take out its cross voltage.
+[19:10] If the voltage is more than its non-voltage, then the diode will be on.
+[19:17] And, if the voltage is less than the non-voltage, then the diode will be off.
+[19:21] Right?
+[19:22] So, what is the process?
+[19:24] First, we will open the diode.
+[19:26] We will calculate its voltage.
+[19:28] If it is more than the non-voltage, then it is on.
+[19:31] And, if it is less than the non-voltage, then it is off.
+[19:34] Let's go to the next circuit.
+[19:37] This is precision diode.
+[19:40] What is in precision diode?
+[19:42] You will feel this circuit as if it is a voltage follower.
+[19:45] And, actually, it is a voltage follower only.
+[19:48] What is here?
+[19:50] You have put VIN in the non-inverting terminal.
+[19:53] And, you have connected the inverting terminal with the output.
+[19:56] What did you do in the feedback?
+[19:58] You put a diode.
+[20:00] So, what is this?
+[20:01] It is a voltage follower only.
+[20:03] In its feedback, your diode is on.
+[20:07] Right?
+[20:09] You are watching.
+[20:12] This boy is asking me that, sir,
+[20:14] Is instrumentation amplifier in the course of electrical or not?
+[20:18] Means, if it is called instrumentation, then where will the instrumentation branch be?
+[20:22] You should not come to the instrumentation from this logic.
+[20:24] What is the measurement for your syllabus?
+[20:27] Why?
+[20:28] I had already told about the syllabus.
+[20:30] Now, do not ask the oscillators what is there in the syllabus.
+[20:34] Now, everything is there.
+[20:36] Okay?
+[20:37] But, you are thinking that if this boy removes this circuit from the syllabus,
+[20:40] Then it will be very easy to get only one application of O-Pamp.
+[20:44] Brother, if the entire O-Pamp goes to the chapter, then you would have understood.
+[20:47] Even if you remove one circuit of O-Pamp, then how much effort will be left?
+[20:50] Tell me.
+[20:51] I did not say to remove any circuit.
+[20:53] All the circuit of O-Pamp will have to come after becoming a circuit.
+[20:57] You just have to solve it by using the virtual ground.
+[21:01] Crazy.
+[21:02] I am also teaching you to solve all these things.
+[21:05] Listen carefully.
+[21:07] There are no things that can be solved in O-Pamp.
+[21:10] What did I tell you to remember in O-Pamp?
+[21:13] I have explained to you the CMRR which you have to remember.
+[21:17] Let's remember the concept of a slew rate.
+[21:20] You have to remember the gain of an inverting amplifier.
+[21:24] And you have to remember the gain of a non-inverting amplifier.
+[21:28] You should remember this much.
+[21:30] But there are not many things that you should remember.
+[21:33] And the gain of inverting and non-inverting amplifiers is such a thing.
+[21:37] If you question it even 10-20 times, then it will be remembered the same way.
+[21:40] Right?
+[21:41] It is not like that.
+[21:42] For that, I used to keep my hand on a copy like I used to remember when I was a child.
+[21:45] I would close my eyes and think what was coming.
+[21:47] What was coming?
+[21:48] I don't have to do it anyway.
+[21:49] Which question did I ask on SVRR?
+[21:55] When did I tell you to remember SVRR Defined?
+[22:00] Dinesh, you are preparing for the first time for the gate.
+[22:04] But we are making it multiple times.
+[22:06] On top of that, I have made at least 3 or 4 videos about syllabus in the course of this analogue.
+[22:12] At least till now.
+[22:14] And if you leave each circuit, then what will happen?
+[22:17] Learn the way to solve the circuit.
+[22:20] You don't have to remember the circuit.
+[22:22] You won't ask what is the output of instrumentation amplifier in the gate.
+[22:25] You will make a circuit in the gate and ask what is the output.
+[22:28] And there you have to apply the circuit solving technique.
+[22:31] It doesn't matter there.
+[22:32] You don't know the name of it.
+[22:34] That is instrumentation amplifier.
+[22:36] This is differential amplifier.
+[22:38] This is inverting.
+[22:39] This is non-inverting.
+[22:40] There is no difference from that.
+[22:42] Do you know the basic or not?
+[22:44] Do you know if you can apply a virtual shot or not?
+[22:46] These things matter.
+[22:48] So learn those things.
+[22:50] Now see.
+[22:52] What do I say here?
+[22:58] Apply.
+[23:00] If you listen to my advice, then the tough subject will be easy for you.
+[23:06] Because your work is on fundamentals.
+[23:10] I don't even know analogue.
+[23:12] Leave it for the first time.
+[23:13] When I gave the third time, I didn't know analogue properly.
+[23:17] But now it comes.
+[23:19] Because I have learned a lot of basic things.
+[23:21] I don't remember any such advanced concept.
+[23:24] Now see when you apply the open circuit test.
+[23:29] I will make a circuit for you.
+[23:38] Okay.
+[23:48] See.
+[23:50] This voltage is V in.
+[24:02] Now see the tie broke.
+[24:07] That means no current will go in the load.
+[24:13] So this will be V not.
+[24:15] Okay.
+[24:16] Now think of one thing.
+[24:18] When the way broke, the current is zero.
+[24:21] Okay.
+[24:22] If the current is zero, then V not will come out to be zero.
+[24:26] Okay.
+[24:27] V not will come out to be zero.
+[24:29] Tell me something.
+[24:33] Zero will come.
+[24:35] Because there is no way for current.
+[24:38] Now what is my interest in knowing?
+[24:41] Diode voltage.
+[24:44] Now think of this.
+[24:45] As soon as this is an open loop.
+[24:48] Here V not is coming.
+[24:50] Zero volt.
+[24:51] As soon as this is an open loop.
+[24:53] It will work as a comparator.
+[24:55] Think of it.
+[24:56] As soon as this is an open loop.
+[24:58] As soon as the feedback breaks.
+[25:00] It will work as a comparator.
+[25:14] Okay.
+[25:16] Now if this will work as a comparator.
+[25:18] Then see there can be two cases.
+[25:21] You all understand it well.
+[25:23] If you will focus on the things here and there.
+[25:25] Then this lecture will never be forgotten.
+[25:27] Case one.
+[25:29] Input voltage if greater than zero.
+[25:33] That is the voltage of non-inverting terminal.
+[25:37] If it is your positive.
+[25:40] Or say the voltage of non-inverting terminal is more than inverting.
+[25:44] Then what will happen?
+[25:46] Then your V not 1 is the output of the PAMP.
+[25:49] This will come out to be V sat.
+[25:52] How much will come?
+[25:53] V sat.
+[25:54] Okay.
+[25:55] Saturation voltage.
+[25:57] Now what does this mean?
+[25:59] If we evaluate the voltage of the diode.
+[26:02] Then it will be V not 1 minus zero.
+[26:06] V not 1 minus zero.
+[26:09] That is V sat.
+[26:10] Okay.
+[26:11] V sat has come.
+[26:12] So from here you can say this is positive.
+[26:15] That means the diode will become on.
+[26:19] So the diode will turn on.
+[26:21] The light.
+[26:23] Till here the light will turn on.
+[26:27] Come on.
+[26:28] Now let's talk about case two.
+[26:34] If input voltage.
+[26:37] Has become negative.
+[26:39] So V not 1 will become equal to minus V sat.
+[26:46] V not 1 will become equal to minus V sat.
+[26:50] If it is minus V sat.
+[26:52] Then the voltage of the diode will be.
+[26:56] Minus V sat.
+[26:58] Minus zero is minus V sat.
+[27:02] So here the diode will be off.
+[27:09] The diode will be off.
+[27:11] Okay.
+[27:12] This is clear.
+[27:13] The diode will be off.
+[27:16] If my child's diode is on.
+[27:19] Then you.
+[27:25] V in.
+[27:28] Greater than zero.
+[27:31] If my diode is on.
+[27:36] Okay.
+[27:37] So what can I do.
+[27:45] You can replace the diode with a battery.
+[28:01] You can replace the diode with a battery.
+[28:04] How many batteries are there.
+[28:06] V gamma.
+[28:16] Now look here.
+[28:17] According to the virtual shot.
+[28:20] According to the virtual shot.
+[28:22] Here also the voltage is V gamma.
+[28:24] V gamma.
+[28:25] V gamma.
+[28:26] V gamma.
+[28:27] V gamma.
+[28:28] According to the virtual shot.
+[28:29] Here also the voltage is V in.
+[28:34] The negative terminal voltage will also be V in.
+[28:38] By.
+[28:43] Virtual shot.
+[28:45] Which means the output voltage.
+[28:49] Will also be same as the input.
+[28:53] So when the diode is on.
+[28:55] So output will come out to be same as the input.
+[28:59] Tell me.
+[29:00] Output will come out to be same as the input.
+[29:05] Brahmendra is saying.
+[29:06] But sir V should be same as V in.
+[29:08] Because of virtual shot.
+[29:09] So for that there should be negative feedback.
+[29:12] Brahmendra when you did not open it.
+[29:15] You broke the feedback here.
+[29:18] When there is no feedback.
+[29:20] So how will you put the virtual shot.
+[29:22] Tell me.
+[29:25] For that the diode should be on.
+[29:27] So that the path is complete.
+[29:29] Okay.
+[29:30] So here the path is complete.
+[29:32] So we have put the virtual shot.
+[29:34] So what information did you get.
+[29:36] Look.
+[29:42] V out is 0.
+[29:44] If the input voltage is negative.
+[29:47] And V out is input voltage.
+[29:50] If the input voltage is positive.
+[29:52] So one way.
+[29:53] Don't you think this is an ideal diode.
+[29:56] An ideal diode.
+[29:57] The concept of V gamma is over.
+[30:00] The concept of the voltage is over.
+[30:03] The same value is getting on the output on the positive voltage.
+[30:06] As the input.
+[30:07] And the output on the negative is 0.
+[30:10] So an ideal diode is done.
+[30:17] So it behaves as an ideal diode.
+[30:22] Now.
+[30:28] And if you want it can be made a transfer characteristic.
+[30:47] Look.
+[30:48] It will come like this.
+[30:50] In the case of positive
+[30:54] And in the case of negative
+[31:05] So here both are coming together
+[31:07] So the slope will come out to be 1
+[31:12] Ok, your slope will come out to be 1
+[31:16] This is clear
+[31:18] Now notice here that I took an idea loop amp
+[31:22] In which I put a virtual shot
+[31:24] Ok
+[31:25] But now what I say
+[31:27] Now what I say
+[31:28] Suppose there was a practical loop amp
+[31:31] Suppose there was a practical loop amp
+[31:34] Whose certain amount of open loop gain
+[31:38] Ok
+[31:40] I am not saying
+[31:42] That if
+[31:44] Open loop gain
+[31:49] Of open
+[31:57] Is finite
+[32:02] Ok
+[32:04] Then what do we do
+[32:06] Or should I do one thing
+[32:18] Now what we say
+[32:33] If I say here that open loop gain
+[32:38] Is finite
+[32:40] Then I want to know what will happen
+[32:44] Ok
+[32:46] Finite may be 10 power 5
+[32:48] But it is finite
+[32:50] V out
+[32:53] V not 1
+[32:55] Now what you will say
+[32:56] That here the differential input is
+[32:59] V in minus V out
+[33:02] This is it
+[33:04] The differential input is
+[33:06] V in minus V out
+[33:16] So here what will be V not 1
+[33:21] The output of the open loop
+[33:22] A
+[33:23] V D
+[33:25] Which is A
+[33:27] V in minus V out
+[33:30] And according to KVL logic
+[33:33] What will be V out
+[33:36] V not 1 minus V gamma
+[33:40] Ok
+[33:42] Now here V not 1 will be
+[33:44] V out minus V
+[33:46] V out will be V not 1 minus V gamma
+[33:49] So instead of V not 1
+[33:52] A V in minus V out
+[33:55] Minus V gamma
+[33:57] So arrange the terms of V out
+[34:15] So see this
+[34:20] What is left here
+[34:23] See that V gamma is reduced
+[34:25] By a factor of 1 plus A
+[34:27] If you had put a diode directly
+[34:30] Then how much drop would have come
+[34:32] Of V gamma
+[34:34] Right? The drop would have come
+[34:35] Of V gamma
+[34:36] So here the voltage drop
+[34:41] Drop of diode
+[34:44] Gets reduced
+[34:47] By a factor
+[34:49] Of 1 plus A
+[34:56] Do you understand
+[34:57] So this is the benefit of precision diode
+[35:00] In precision diode
+[35:02] Your drop becomes very less
+[35:04] As compared to a normal diode
+[35:08] Right? So you think
+[35:09] If you take A as 10 to the power 5
+[35:12] If we talk about 10 to the power 5
+[35:14] So 1 lakh
+[35:16] So the drop of 0.7
+[35:18] Is divided by 1 lakh
+[35:20] Think about it
+[35:21] The drop of 0.7
+[35:23] Is divided by 10 to the power 5
+[35:26] So how small the drop will be
+[35:28] Very small
+[35:30] Approximately negligible
+[35:32] So this is the benefit of precision diode
+[35:34] That it reduces
+[35:36] The drop
+[35:37] Or the new voltage of the diode
+[35:39] To approximately 0
+[35:41] Okay?
+[35:43] But it also has some drawback
+[35:45] Now look
+[35:46] With the help of opamp
+[35:48] You have made the practical diode
+[35:50] Like an ideal diode
+[35:52] But look when the diode is off
+[35:55] When the diode was off here
+[35:57] So here
+[35:59] Between the terminals of opamp
+[36:01] A large differential input was made
+[36:04] Which was V in
+[36:06] Correct?
+[36:07] What was VD?
+[36:09] V in
+[36:10] So the first thing
+[36:12] Between the terminals of opamp
+[36:14] A large amount of voltage
+[36:16] Comes when the diode is off
+[36:18] That is V in
+[36:20] Second thing
+[36:21] When the diode is off
+[36:22] Its peak inverse voltage
+[36:24] Is Vsat
+[36:26] Vsat can be 12V, 15V
+[36:28] That means we have to buy
+[36:30] Diode
+[36:32] Whose PIV
+[36:34] Or whose maximum reverse voltage
+[36:36] Is more than Vsat
+[36:38] Do you understand?
+[36:39] When the diode is off
+[36:40] So what is the voltage of the diode?
+[36:42] Vsat
+[36:43] So we have to buy such a diode
+[36:45] Which is more than Vsat
+[36:47] To be able to freeze the voltage
+[36:49] Okay?
+[36:50] To be able to freeze the voltage more than Vsat
+[36:52] Is it clear?
+[36:56] Son, basic electronics
+[36:58] Will be covered in this course
+[36:59] Zakir Ahmed
+[37:00] If you are preparing for ESC
+[37:02] And if you are watching my analog
+[37:03] Basic electronics
+[37:04] Is also being covered in this
+[37:06] Okay?
+[37:07] So
+[37:08] See this is it
+[37:09] When V0 is 0
+[37:10] There is a large voltage between the input terminals
+[37:13] PIV is the high of the diode
+[37:15] That is why we have to buy such a diode
+[37:18] Which can tolerate
+[37:20] More voltage
+[37:21] Than Vsat
+[37:23] And if you buy such a diode
+[37:25] Obviously more PIV
+[37:27] Then its cost will also be more
+[37:29] Or tell me
+[37:30] Its costing will also be more
+[37:32] Do you understand?
+[37:38] Naman
+[37:40] Son, there is no strategy question
+[37:42] Come on
+[37:46] V01
+[37:47] Calculated
+[37:48] Remember the location
+[37:49] Son, when the open loop gain was finite
+[37:51] Then I had put this fund in inverting
+[37:53] In non-inverting amplifier
+[37:55] V0 is equal to A into Vd
+[37:57] V0 will always be A into Vd
+[37:59] But what does negative feedback do?
+[38:02] It reduces the Vd
+[38:04] That opamp does not saturate
+[38:07] It will never be like this
+[38:09] This relation in opamp is invalid
+[38:11] V0 is equal to A into Vd
+[38:13] A into Vd is only
+[38:14] When the value of Vd is a little more
+[38:16] Because of A into Vd
+[38:18] It goes into saturation
+[38:20] What does negative feedback do?
+[38:22] It reduces Vd so much
+[38:23] That the term A into Vd
+[38:25] That will lie in the linear region
+[38:27] Okay?
+[38:28] Come on
+[38:29] Now let's come to the half wave rectifier
+[38:33] On which we are coming?
+[38:34] Half wave rectifier
+[38:37] Now look, there are two diodes here
+[38:40] One R1
+[38:41] One RF
+[38:42] One RL
+[38:43] You can ignore RL
+[38:44] It is not a big deal
+[38:45] Okay?
+[38:46] Now what will I do first?
+[38:49] First of all
+[38:50] I will use the open circuit test
+[38:53] What am I going to use?
+[38:55] Open circuit test
+[39:03] Just let it go
+[39:05] Okay
+[39:08] Okay
+[39:10] It is coming
+[39:14] Okay
+[39:16] Okay
+[39:20] Okay
+[39:21] Okay
+[39:23] Okay
+[39:24] Okay
+[39:25] Okay
+[39:26] Okay
+[39:27] Okay
+[39:28] Okay
+[39:29] Okay
+[39:30] Okay
+[39:31] Okay
+[39:32] This is V0, this is RF, okay, understand it carefully, now see what we will do again,
+[39:59] I will have to take out the voltage of both the diodes and I will judge according to it whether my diode is on or off,
+[40:08] now see there is no feedback of any kind, so it will not take a virtual shot, okay, brother,
+[40:15] no virtual shot, you can't put it here because there is no feedback, now here I am saying this voltage
+[40:24] V01, what am I saying, V01, okay, so I am saying no feedback here, so virtual shot cannot be applied,
+[40:55] now see here the positive terminal voltage is already fixed, that is 0, now what is the voltage on the inverting terminal,
+[41:10] see RL has been ignored, what voltage is going on the inverting terminal, what is coming on the negative terminal,
+[41:20] because the current is zero, so there is no drop, okay, there is no drop, now the first case, if the v i is greater than zero,
+[41:33] if the v i is greater than zero, that is, the voltage of the inverting terminal is more, then what will be V01, it will be minus Vsat, minus Vsat,
+[41:48] okay, now tell me the voltage of diode 1 from this, the v i is on this terminal of diode 1, here it is minus Vsat,
+[41:58] so v i minus minus Vsat, so v i plus Vsat, which is coming positive, correct, and tell me the voltage of diode 2,
+[42:13] that is V01 minus zero, no voltage will reach the output, which means this is minus Vsat, okay, minus Vsat,
+[42:26] so what do you understand from this, what did it come out of this, tell me, what did it come out of here,
+[42:35] this is negative, right,
+[42:42] what did it come out of here, that D1 is on, okay, I told you that once the voltage of one diode comes positive,
+[42:51] the maximum of which comes, turn it on, so once you turn on D1, after that we will check D2 again, but first turn on D1,
+[43:01] okay, we are going with a basic, those who have attended the diode will be having a lot of fun,
+[43:11] this D1, after turning it on, I will do one thing, I will show it like this, 0.7,
+[43:41] see the best, you can also show 0, it has become much lower,
+[43:47] right, if you want, you can also do a short,
+[44:08] but still I will show the drop of 0.7,
+[44:18] now see here negative feedback is completed,
+[44:38] here your negative feedback is completed,
+[44:42] negative feedback means that this is the drop of 0.7, so here you have zero volts,
+[44:54] okay, if here zero comes from the virtual shot, because negative feedback is completed,
+[45:02] so how many volts will you have here, minus 0.7 and this is why VD2 will become minus 0.7,
+[45:20] okay, so D2 will be off and V out will be zero, so when the positive half cycle is input,
+[45:32] then D1 will be on, D2 will be off and output voltage will be zero,
+[45:38] if you want to check the output voltage, then you can do it like this,
+[45:42] if you don't feel that the output is zero, then you can also check it like this,
+[45:48] suppose this is RL, now in these two series,
+[45:54] so you can say here zero volts, V out is equal to zero into RL by RL plus RF,
+[46:05] so it will be zero, think like this, right, so when you have zero on the inverting terminal,
+[46:15] then the output will be zero, now think like this, child, if your input voltage was negative,
+[46:22] right, if the input voltage was negative, then what would have been V01 here,
+[46:27] tell me what would have been V01, plus Vsat because the positive terminal voltage would have been more than negative,
+[46:35] if the positive voltage is more than negative, then minus Vsat would have been plus Vsat, correct,
+[46:42] so what am I saying, case 2 Vi less than zero, inverting terminal voltage Vi and non-inverting terminal was zero,
+[46:55] so what happened to this, differential voltage is zero minus Vi which is positive,
+[47:04] okay, because Vi is negative, so V01 is Vsat, okay, now I am not making this figure again,
+[47:20] so from a first figure say voltages, from figure 1, Vd1 is Vin minus V01, Vi minus Vsat,
+[47:39] Vi is also negative, Vsat is subtracting negative, so D1 is off, Vd2 is V01 minus V0 minus Vsat,
+[47:58] sorry, plus Vsat minus zero is Vsat, so what happened from here, D2 will be on,
+[48:07] the light is on, D2 is on, this time D1 is off and D2 is on, now let's make the circuit of this thing,
+[48:16] let's make the circuit of this thing, see D1 is off, this is on,
+[48:47] so short it from here, now you can see an inverting amplifier is done,
+[48:58] this is an inverting amplifier,
+[49:02] that's why you remember its formula, so Vout is Vin minus RF over R1, okay, minus RF by R1,
+[49:28] we have to connect with the output terminal, Lucifer, we have to connect with the final output,
+[49:33] we have to take feedback from the opamp output,
+[49:37] if you take the final output after 4 stages, then from there,
+[49:41] how will you see the feedback path, from the opamp output terminal to the negative terminal,
+[49:47] okay, so here see this value will be positive in the negative cycle,
+[49:53] because Vin is negative, so the output in the positive cycle is zero,
+[49:59] and the output in the negative cycle is positive, so the output in the positive cycle is zero,
+[50:06] and the output in the negative cycle will come out to be positive, okay,
+[50:11] so if we see this, transfer characteristic, so see,
+[50:26] so when your input voltage is positive, so what is your output, it is zero,
+[50:41] when the input voltage is negative, then the slope is negative, minus RF by R1,
+[50:48] that is, when the input is negative, then the output is positive,
+[50:57] if we think in the terms of waveform, suppose we put sinusoidal input,
+[51:04] suppose you put sinusoidal input,
+[51:18] and you want to see the output,
+[51:21] you have made the amplitude of this input,
+[51:51] so see, this is your input voltage,
+[52:08] now you are saying the output voltage is zero for the positive input,
+[52:14] and it inverts the negative one and makes it positive,
+[52:18] plus it also increases the amplitude, how much it does, it multiplies with RF by R1,
+[52:26] so basically your half wave rectifier is rectifying the negative cycle,
+[52:34] this is the place to rectify the positive cycle,
+[52:38] this is rectifying the negative cycle, correct,
+[52:43] did you understand its working, say, this working is clear,
+[52:49] so it is rectifying the negative cycle,
+[52:53] if you want it to be like a normal half wave rectifier,
+[52:58] where the positive cycle is rectified and the negative cycle rejects,
+[53:04] if we wish to reject the negative cycle and rectify the positive cycle,
+[53:26] then you reverse both the diodes, then reverse both the diodes,
+[53:35] then you reverse both the diodes,
+[53:41] so the circuit will be working upside down,
+[53:45] is this clear,
+[53:47] if you want to rectify the positive cycle, then reverse both the diodes,
+[53:58] and rectify the negative cycle, so keep the diodes as it is,
+[54:02] is it clear, tell me, did you understand the half wave rectifier,
+[54:06] confirm it once in the chat,
+[54:08] is it clear, we are analyzing it from the basics,
+[54:11] and it is not that as it is, the circuit will come in the exam,
+[54:14] it will not come in the gate,
+[54:17] maybe there will be a new circuit in the gate,
+[54:19] in which the diode will be installed,
+[54:21] you will learn this approach from me, when the diode is installed,
+[54:24] then how I am solving it,
+[54:35] then also rectifier could have said that there is no problem in the Gajendra,
+[54:42] hmm,
+[54:49] see,
+[54:51] Mr. Lokesh is asking sir, why did you make the rectifier from opamp,
+[55:01] Lokesh, read the first line of this page,
+[55:06] with the help of opamp,
+[55:09] a practical diode can be made to behave as an ideal diode,
+[55:14] so basically when you involve opamp,
+[55:17] you have finished the cut-in voltage,
+[55:20] otherwise practically when you make a rectifier from a practical diode,
+[55:24] then the drop of 0.7 will come,
+[55:26] the entire waveform cannot be rectified from above,
+[55:29] when you exceed 0.7,
+[55:32] then your waveform will be rectified,
+[55:35] before that the waveform cannot be rectified,
+[55:38] do you understand the matter,
+[55:40] so that's why I made it,
+[55:42] now you are saying that there are more circuits made from opamp,
+[55:44] like the filter or amplifier is done,
+[55:46] see the amplifier will be made from opamp,
+[55:48] why will it not be made because there is a gain there,
+[55:51] and we can control the gain by controlling the resistance,
+[55:55] second filter,
+[55:57] son when we reach the filter,
+[55:59] then we will tell why the filter is made from opamp,
+[56:01] while in the network we also read the filter,
+[56:04] passive filter,
+[56:05] so what was the problem in the passive filter,
+[56:07] which had to come on opamp,
+[56:09] okay, is it clear,
+[56:12] tell me bro, is the location clear,
+[56:16] let's go ahead,
+[56:20] come,
+[56:22] now the next circuit is full wave rectifier,
+[56:25] see this time I have reversed the diodes for your happiness,
+[56:29] okay, this time I have reversed the diodes,
+[56:33] okay, come,
+[56:37] now here,
+[56:42] yes,
+[56:43] start with the open circuit test,
+[56:45] start with the basic,
+[56:47] start with the basic that
+[56:49] write the state of the direct diodes,
+[56:51] if you say that you can write the state of the diode,
+[56:54] but if you want then let's do it with the open circuit test,
+[56:57] so see I will show you with the open circuit test,
+[56:59] so that you can clear the approach,
+[57:01] otherwise you will just keep sitting,
+[57:08] hey,
+[57:09] get straight,
+[57:13] you have to put two pamp,
+[57:28] come,
+[57:31] now here,
+[57:33] first of all an input resistance,
+[57:48] V in,
+[57:51] R,
+[57:53] then one R,
+[57:56] first one diode,
+[57:57] see we have opened the diode,
+[58:04] this second diode is also open,
+[58:13] this R came,
+[58:15] then one resistance or negative terminal,
+[58:26] and one is coming from above,
+[58:37] and you don't have to remember the circuits,
+[58:39] make a circuit and try it in the copy,
+[58:42] once a child was telling me sir,
+[58:44] to practice the circuit of analog by drawing it by hand,
+[58:47] brother, you are not going to give the exam of school,
+[58:50] okay,
+[58:53] then here,
+[59:00] this one R and this V naught,
+[59:03] all the resistances are coming,
+[59:06] okay, all are coming,
+[59:08] that is, this time there will be no gain in the amplifier,
+[59:12] your gain will remain one,
+[59:14] now see,
+[59:17] here we define the voltage of the diodes,
+[59:22] look at the diode,
+[59:24] even here it looks like 2 in full wave,
+[59:26] we don't need that 4 diode,
+[59:28] VD1 and VD2,
+[59:30] now let's start with the basic,
+[59:33] here there is no way to flow current,
+[59:36] when the diodes are opened,
+[59:38] am I right,
+[59:40] there is no way to flow current,
+[59:44] so here,
+[59:48] if we see here,
+[59:52] here I am talking about V naught 1,
+[59:55] look here the negative feedback is permanent,
+[59:59] so this is zero volt,
+[60:02] by virtual short,
+[60:09] okay, by virtual short,
+[60:12] and here there is no feedback,
+[60:17] here there is no feedback,
+[60:20] now what to do,
+[60:22] tell me,
+[60:24] we have to take out VD1 and VD2,
+[60:26] try once,
+[60:28] how much VD1 and VD2 will come,
+[60:36] now look,
+[60:38] the same amount of Gajendra is left in my mind,
+[60:40] which circuit it is,
+[60:42] otherwise take out the output,
+[60:44] what is the circuit,
+[60:46] if we take out the output of any circuit,
+[60:48] we can tell its working,
+[60:50] this is full wave rectifier,
+[60:52] what is half wave rectifier,
+[61:04] look here if you want,
+[61:06] you can directly tell V naught,
+[61:08] what,
+[61:14] here,
+[61:18] because look,
+[61:20] there is no input on this terminal,
+[61:22] your input is going from here,
+[61:24] this directly from the input,
+[61:26] the second opamp is becoming an inverting amplifier,
+[61:30] can you see this,
+[61:32] from the second input,
+[61:34] with the opamp,
+[61:36] it is becoming an inverting amplifier,
+[61:38] let me show you,
+[61:40] look here,
+[61:44] what is this,
+[61:46] and then it is like this,
+[61:48] this is an inverting amplifier,
+[61:50] look carefully,
+[61:52] this is directly working,
+[61:54] and the second input,
+[61:56] there is no input here,
+[61:58] that is, there is no second input
+[62:00] in the inverting amplifier,
+[62:02] so we got V naught,
+[62:04] but my interest was not in V naught,
+[62:06] what am I saying,
+[62:08] now look, here the voltage V in
+[62:10] will be,
+[62:12] so V naught 1,
+[62:14] see there can be two things,
+[62:16] if V in is positive,
+[62:18] then what will happen with this,
+[62:20] the voltage of negative terminal will be more than positive,
+[62:22] and V naught 1
+[62:24] will be your minus V sat,
+[62:28] okay,
+[62:30] and if V in is negative,
+[62:34] then the voltage of negative terminal will be less than positive,
+[62:36] then V naught 1
+[62:38] will be plus V sat,
+[62:40] all of you agree with me,
+[62:42] tell me,
+[62:44] all of you agree with me,
+[62:46] now this V d 1
+[62:48] here is V in,
+[62:50] so this is V naught 1
+[62:52] minus V in,
+[62:56] and here if you are saying zero,
+[62:58] then V d 2 is
+[63:00] zero minus V naught 1,
+[63:02] like this,
+[63:04] okay,
+[63:06] now look, let's take two cases,
+[63:08] V in greater than zero,
+[63:10] when V in is positive,
+[63:12] then V naught 1 is
+[63:16] minus V sat,
+[63:18] like what happened to V d 1,
+[63:24] V naught 1 minus
+[63:26] V in,
+[63:34] negative,
+[63:36] then D 1 will be off,
+[63:40] and V d 2,
+[63:42] what happened,
+[63:44] zero minus V naught 1,
+[63:46] which is plus
+[63:48] V sat,
+[63:50] positive,
+[63:52] then D 2 will be on,
+[63:54] okay,
+[63:56] D 2 will be on,
+[64:06] from here,
+[64:08] we can't select
+[64:10] the whole,
+[64:26] this is a browser,
+[64:28] okay, we will have to make the circuit,
+[64:30] now look, if we turn on D 2,
+[64:36] here,
+[64:44] look,
+[64:46] here,
+[64:48] non-inverting terminal is grounded,
+[64:52] D 1 is off,
+[64:54] D 2 is off,
+[65:04] D 2 is on,
+[65:20] okay,
+[65:22] what else is there,
+[65:24] one more car is here,
+[65:36] and one is from here,
+[65:42] now you can see this,
+[65:44] the first amplifier
+[65:46] without,
+[65:48] an inverting amplifier is completed,
+[65:50] look,
+[65:54] V in,
+[65:56] the first amplifier
+[65:58] also has an inverting amplifier,
+[66:04] if we talk about V naught 1,
+[66:06] then,
+[66:08] V in,
+[66:10] into minus R by R,
+[66:12] then minus V in,
+[66:14] which is negative,
+[66:16] and here is zero,
+[66:18] so look, V D 1 is negative,
+[66:20] think about it,
+[66:22] V D 1 is,
+[66:24] V naught 1 minus zero,
+[66:26] which is minus
+[66:28] V in,
+[66:30] so if you turn off D 1,
+[66:32] then you have accepted it correctly,
+[66:34] now look at the second amplifier,
+[66:36] two inputs are here,
+[66:44] this is the wrong wire,
+[66:48] look at the second amplifier,
+[66:50] two inputs are here,
+[66:52] one is V in from behind,
+[66:54] and one is V naught 1,
+[66:56] okay,
+[66:58] one is V naught 1,
+[67:00] and one is V in from behind,
+[67:02] so V in,
+[67:06] into minus R by R,
+[67:12] and from here,
+[67:14] V naught 1 is also here,
+[67:18] one second,
+[67:20] we are not missing anything in the circuit,
+[67:22] look, we are missing this,
+[67:24] this resistance is missing,
+[67:26] but this is R by 2,
+[67:28] okay,
+[67:36] so V in is minus R by R,
+[67:38] and in V naught 1,
+[67:40] minus R upon,
+[67:42] R by 2,
+[67:44] now you have written V naught 1
+[67:46] minus V in,
+[67:48] minus minus plus,
+[67:50] so this is V in,
+[67:52] understand,
+[67:54] this is understood,
+[67:56] V in is here,
+[67:58] turn on D 2,
+[68:02] tell me,
+[68:04] is this clear,
+[68:06] tell me quickly,
+[68:10] when private video
+[68:12] becomes public, you will come to know
+[68:14] about the shots, okay,
+[68:16] don't need to ask everyday,
+[68:20] now let's do the second case,
+[68:22] V i less than 0,
+[68:24] when V i less than 0,
+[68:26] V naught 1 is here, plus V sat,
+[68:30] which is V D 1,
+[68:32] V naught 1 minus
+[68:34] V in,
+[68:36] is V sat
+[68:38] minus V in,
+[68:40] which is positive,
+[68:42] so D 1 will be on,
+[68:46] and V D 2,
+[68:52] V naught 1,
+[68:54] wait a second,
+[68:56] V D 2,
+[68:58] how much was it,
+[69:00] here it is,
+[69:02] V D 2 is,
+[69:04] V naught 1,
+[69:06] 0 minus V naught 1,
+[69:08] which is
+[69:10] minus V naught 1,
+[69:12] which is
+[69:14] minus V sat,
+[69:16] so D 2 will be
+[69:18] off,
+[69:20] okay, so now,
+[69:22] turn on D 1,
+[69:24] turn off D 2,
+[69:26] turn off D 2,
+[69:36] see, non inverting terminal
+[69:38] is grounded,
+[69:44] now D 1 is on from here,
+[69:46] D 1 is on,
+[69:54] D 2 is off,
+[70:16] V in,
+[70:18] R,
+[70:20] R,
+[70:34] this was from here,
+[70:36] right,
+[70:38] V in,
+[70:40] R,
+[70:42] R,
+[70:44] now see again,
+[70:46] the feedback of this amplifier is complete,
+[70:48] if the feedback is complete,
+[70:50] we get 0V here,
+[70:54] we get 0V here,
+[70:56] because of which,
+[70:58] we get 0 here too,
+[71:02] okay,
+[71:04] now my brother, if we get 0 here too,
+[71:06] then see, this resistance is destroyed,
+[71:08] this cannot be done,
+[71:10] because the path here is open,
+[71:14] now,
+[71:16] the thing is,
+[71:20] if the path is open here,
+[71:22] see,
+[71:24] this is also 0,
+[71:26] from the virtual shot,
+[71:28] these are both in series,
+[71:32] so these are both destroyed,
+[71:34] why, sir?
+[71:36] because see,
+[71:38] the voltage is 0 on its left and voltage is 0 on its right,
+[71:40] how did both come in series,
+[71:42] because this path was open,
+[71:44] this path was open, so both came in series,
+[71:46] so that means,
+[71:48] what voltage will you get here too?
+[71:50] 0V,
+[71:52] will you get 0?
+[71:54] think about it, from here 0 came,
+[71:56] finally 0 reached, so what will you get in between?
+[71:58] you will get 0 only,
+[72:00] so here, V naught will be made
+[72:02] from the upper path,
+[72:04] V in,
+[72:06] minus R by R,
+[72:08] that is minus V in,
+[72:10] so what do you think?
+[72:12] see, there are two formulas of V naught,
+[72:14] it is done,
+[72:16] full wave rectifier,
+[72:18] in the positive cycle, as it is,
+[72:20] it is passing V in,
+[72:22] and in the negative cycle,
+[72:24] it is passing it by negative,
+[72:26] which means,
+[72:28] the positive cycle will go ahead,
+[72:30] and your negative cycle
+[72:32] will be inverted,
+[72:34] tell me, is this clear to everyone?
+[72:36] quickly, look at it once,
+[72:38] is it clear or not?
+[72:40] quickly, tell me,
+[72:42] is this clear to everyone?
+[72:44] tell me,
+[72:46] brother,
+[72:48] you have understood,
+[72:50] how the circuits of rectifier
+[72:52] are analyzed,
+[72:54] with the help of open circuit test,
+[72:56] so see,
+[72:58] if we make its characteristics,
+[73:00] here,
+[73:10] let's do one thing,
+[73:12] wait,
+[73:24] now,
+[73:26] see, what is the difference
+[73:28] Now the characteristic that will come in the positive half cycle is v out equal to v in and negative
+[73:56] half cycle is minus v in. So, one way is mod function, you see, this is the graph of the
+[74:03] mod function and rectifying means that this is the full wave rectification of the mod.
+[74:10] You are taking the positive as well as the negative as well as the positive. So, here v not
+[74:16] will come in the positive half cycle as it is and it will come in the negative as it is and it will come in the negative as it is.
+[74:25] So, the full wave rectification is done. Do you understand?
+[74:31] Do you understand why the opamp is applied in rectifiers so that we can finish the concept of the cut-in voltage.
+[74:39] We can cancel out the cut-in voltage. For this, we had to apply opamp with a diode in order to rectify.
+[74:48] So, you see, the precision diode, the half wave rectifier, the full wave rectifier should be cleared well.
+[74:56] Let's go to the next circuit in just a minute.
+[75:04] Let's go to the next circuit that is called as the peak detector.
+[75:08] Yes, it has a gain one so it is your slope one.
+[75:11] As you can see, this relation has come.
+[75:13] If we remove this, where is the gain in it?
+[75:19] Yes, peak detector. What does peak detector mean?
+[75:23] A circuit whose final output is v not, that should give us the peak of the input.
+[75:30] What should we give? It should give us the peak of the input.
+[75:34] If you forget this R and C for now, what is this circuit? It is a precision diode.
+[75:40] If you forget R and C for now, it is nothing but a precision diode.
+[75:47] So, what we are saying is that peak detector is a circuit whose output voltage whose v not represents
+[76:13] peak of v in. What should we get for the input on the output?
+[76:22] We should get the peak.
+[76:23] Now, what I am telling you is that there is a precision diode in the peak detector.
+[76:28] After which, we have applied a load across capacitor.
+[76:32] So, peak detector is a precision diode with a C filter.
+[77:02] We have applied a capacitor filter across the load.
+[77:12] Now, let's talk about how this circuit will work.
+[77:15] Think about it. If you take a simple diode.
+[77:18] Listen carefully. If you take a simple diode, then diode also works as a rectifier, a half wave rectifier.
+[77:25] Do you agree? Diode also works as a half wave rectifier.
+[77:29] So, you cannot say that it is nothing but a half wave rectifier with a capacitive filter.
+[77:35] Precision diode also acts as an ideal half wave rectifier.
+[78:05] So, peak detector is equal to half wave rectifier plus C filter.
+[78:24] Now, if you apply a capacitive filter in a half wave rectifier, then what will happen?
+[78:35] You can see that it works very well.
+[78:37] So, let me write the working for once.
+[78:40] You know that when the v s positive will be diode on, then the output will be v s according to the voltage follower.
+[78:52] When the diode is on, then the feedback is complete, then the output will be v s.
+[78:58] Now, here is the capacitor charges to peak value.
+[79:05] And as soon as the capacitor charges to peak, the diode becomes reverse bias and it becomes off.
+[79:18] Now, when diode is off, the capacitor will slowly discharge through R.
+[79:28] And you know that when you apply a filter, then you want to keep this discharging minimum.
+[79:35] What do you say for this?
+[79:37] That RC time constant should be very big, right?
+[79:42] RC time constant should be very big so that the discharging remains less and less.
+[79:49] Okay?
+[79:50] So, first of all, if v s is greater than v naught, you can assume that the diode is open now.
+[79:57] If you want to analyze the circuit completely, okay?
+[80:10] You applied v s here.
+[80:25] Here, you have now considered the diode as open.
+[80:33] That is why I am telling you that if someone forgets the pre-season diode, then this should be the idea
+[80:41] that how to solve the mixed circuit of diode and opamp.
+[80:48] Okay?
+[80:54] This is the diode.
+[81:01] If v s is greater than v naught, then v naught 1 will come plus v sat.
+[81:11] Diode will turn on.
+[81:14] Okay?
+[81:16] v naught will v s.
+[81:19] So, capacitor charges through v s through v s up to peak value.
+[81:34] The capacitor will charge up to peak value.
+[81:39] v s is less than v naught which means the voltage of the positive terminal is less than the negative terminal.
+[81:46] So, v naught 1 will be minus v sat which means the diode will be off.
+[81:51] If the diode is off, then the capacitor discharges through r.
+[81:59] As long as the supply is less than your output, then the capacitor will charge.
+[82:05] Sorry.
+[82:06] As long as the supply is more than the output, then the capacitor will charge.
+[82:10] And as soon as the supply goes down from the output, that is, as soon as the supply goes down from the capacitor voltage,
+[82:17] the capacitor will start discharging through resistance.
+[82:20] Okay?
+[82:21] So, we say to keep, to keep discharging, to keep discharging minimum r c time constant must be high.
+[82:44] Clear?
+[82:46] Your r c time constant must be high.
+[82:55] Till here, it has been cleared.
+[82:57] Tell me.
+[82:58] Your r c time constant must be high.
+[83:01] Now, what are you doing here?
+[83:03] How do you understand the working?
+[83:05] See, to understand the working.
+[83:18] Suppose you take an input.
+[83:20] I am drawing it with light color.
+[83:22] See like this.
+[83:25] The one with the growing oscillation.
+[83:28] You took such an input.
+[83:32] Okay?
+[83:33] Now, how will the output come?
+[83:35] This is your input.
+[83:40] So, initially,
+[83:46] v c and v naught,
+[83:48] consider this as zero.
+[83:50] That is, the capacitor is uncharged.
+[83:54] You consider this as initially the capacitor is uncharged.
+[83:59] Okay?
+[84:01] So, your capacitor will start charging from here, kids.
+[84:05] It will be charged to maximum.
+[84:07] What will happen as soon as it is charged to maximum?
+[84:10] The diode will be closed.
+[84:14] If you do not see it well, then you see.
+[84:16] As soon as it is charged to maximum, the diode is closed.
+[84:20] Now, the capacitor will slowly discharge.
+[84:23] Now, as soon as the supply voltage again,
+[84:26] the supply voltage will be more than v naught,
+[84:30] the capacitor will be charged again.
+[84:32] Then it will be charged to maximum.
+[84:34] Now, the supply voltage will go down, the diode is closed.
+[84:39] As soon as the supply goes up, the capacitor will be charged again.
+[84:44] As soon as it reaches the maximum, the diode is closed.
+[84:47] Discharging started.
+[84:49] And as soon as the Vs is more, the charging started again.
+[84:53] So, your output will be like this.
+[84:55] Did you understand?
+[84:57] Did you understand?
+[85:00] What happened here?
+[85:02] Vs less than v naught.
+[85:05] So, diode off.
+[85:09] Here,
+[85:11] Vs greater than v naught.
+[85:14] Diode on.
+[85:16] Is everyone clear? Tell me clearly.
+[85:20] Is everyone clear? How does this work?
+[85:23] So, it is nothing but a half wave rectifier with a capacitive filter.
+[85:34] Now, see, there are two small circuits like this.
+[85:38] One is antilog, that is, exponential amplifier.
+[85:43] Now, what happens here, dear?
+[85:45] Because of negative feedback,
+[85:48] zero comes here.
+[85:51] On the inverting terminal.
+[85:56] If this happens,
+[85:59] then what is the voltage of the diode?
+[86:07] Input voltage, which is positive.
+[86:11] If its input voltage is across, then the diode will turn on.
+[86:17] If the diode is on, then how much is the current of the diode?
+[86:21] I diode
+[86:23] is I saturation
+[86:29] Vd
+[86:31] by eta Vt minus 1.
+[86:35] And if you ignore 1,
+[86:40] then you can write this too.
+[86:43] Correct. Vd by
+[86:45] eta Vt. You can write this.
+[86:48] Now, my children, this current of the diode,
+[86:52] no current goes here.
+[86:55] So, the entire current will go ahead.
+[86:58] So, if you write v naught from KVL, then v naught will be
+[87:02] zero minus
+[87:05] i d into r.
+[87:08] So, what happened? Minus i s
+[87:11] r
+[87:13] e to the power v d
+[87:15] by eta Vt.
+[87:17] So, v naught is directly proportional to
+[87:20] exponential
+[87:22] v d by eta Vt.
+[87:26] So, what did you call this for?
+[87:27] Exponential
+[87:29] or antilog amplifier.
+[87:32] And v d is v i, right?
+[87:34] v d is your v i.
+[87:38] So, the input voltage
+[87:41] e to the power went to the input voltage.
+[87:48] Understood?
+[87:50] So, that is why it was called
+[87:53] exponential amplifier. It is simple.
+[87:55] The power of e here is v i,
+[87:58] meaning exponential.
+[88:00] If you want to make a log amplifier,
+[88:02] you don't need the power of e, you need ln.
+[88:05] So, you exchange the diode and resistor.
+[88:08] Like the differentiator integrator did.
+[88:11] If you want an inverse function, then you
+[88:14] inverse both of them.
+[88:16] Okay?
+[88:21] Okay, it is missing from the middle.
+[88:23] Let's talk about
+[88:29] log amplifier.
+[88:33] log amplifier
+[88:49] Now, see what you do.
+[88:54] You took the same circuit.
+[88:59] But this time,
+[89:00] you put a resistance here.
+[89:05] Now, you will put a diode.
+[89:11] It seems to be a precision diode, but it is not.
+[89:14] Because in precision diode,
+[89:16] the input was not in inverting terminal,
+[89:18] but in non-inverting.
+[89:21] Now, see, assume that it is on.
+[89:25] Now, assume that it is on.
+[89:30] So, your negative feedback is complete.
+[89:33] Due to diode.
+[89:35] By completing the negative feedback,
+[89:38] the voltage of the inverting terminal is 0V
+[89:42] by virtual short.
+[89:51] So, if i is removed,
+[90:01] this is it.
+[90:03] This is the i that will go ahead.
+[90:07] Okay?
+[90:09] This is the i that will go ahead.
+[90:11] Dear, why do we have to do it with PWL?
+[90:14] The exact equation is exponential.
+[90:16] Lucifer.
+[90:18] We need a relation of V0 and VI.
+[90:20] It cannot be solved with exponential.
+[90:22] When there is a problem, then we make the model of the diode.
+[90:26] Now, when I am making the log and anti-log,
+[90:28] so, if I replace it with the model,
+[90:31] then where will I get the log or anti-log?
+[90:33] Now, see, the current of the diode is
+[90:37] VI by R,
+[90:39] which is
+[90:41] saturation current
+[90:43] e to the power VD
+[90:46] by eta VT.
+[90:49] So, VI by
+[90:51] RIS
+[90:56] VD by
+[90:58] eta VT.
+[91:00] Now, take both the side logs.
+[91:02] Natural log.
+[91:05] L and VI by
+[91:08] RIS
+[91:10] is VD by
+[91:12] eta VT.
+[91:14] So, what will happen to VD?
+[91:25] This is it.
+[91:27] Now, if you write the output voltage,
+[91:30] it is zero minus VD.
+[91:32] If you take the negative of the log,
+[91:34] then it becomes a reciprocal actually.
+[91:39] Now, you understand one thing,
+[91:41] VI is coming into the log.
+[91:43] So, log amplifier.
+[91:45] If VI comes into the log,
+[91:47] then it will be log amplifier.
+[91:49] It is clear now.
+[91:51] Now, by combining log and anti-log,
+[91:53] you can make
+[91:55] a voltage amplifier.
+[91:58] What can you make?
+[92:00] Voltage amplifier.
+[92:02] Sorry, voltage multiplier.
+[92:04] How?
+[92:06] Look,
+[92:08] you take a log amplifier
+[92:10] and take another log amplifier.
+[92:13] And then, add the output of both the logs.
+[92:16] And after adding the output,
+[92:18] pass it to
+[92:20] one.
+[92:21] And then,
+[92:23] with the anti-log amplifier.
+[92:24] Okay.
+[92:49] Okay.
+[92:54] Look,
+[92:56] what I want to say is that
+[92:58] here, you take
+[93:01] a log amplifier.
+[93:03] If Vx comes,
+[93:05] then its output will be proportional
+[93:07] to L and Vx.
+[93:10] If you take Vy here,
+[93:12] then its output
+[93:14] will also be a log amplifier.
+[93:18] Whose proportion will it bring?
+[93:20] L and Vy.
+[93:22] Now, you add an adder.
+[93:25] When these two add,
+[93:27] then its output will be proportional
+[93:29] to log of Vx and Vy.
+[93:32] Now, add an anti-log amplifier here.
+[93:36] Anti-log means,
+[93:38] raise it in the power of E.
+[93:43] So, when you raise it in the power of E,
+[93:46] then it will be Vx and Vy.
+[93:48] Is it a multiplier?
+[93:50] Is it?
+[93:52] Is it a multiplier?
+[93:54] Tell me.
+[93:56] If I had to do division,
+[93:58] if I had to do division
+[94:00] instead of multiplication,
+[94:02] then I would have put a subtractor instead of adder.
+[94:04] Because when two logs are subtracted,
+[94:06] then actually it becomes a division.
+[94:09] Okay.
+[94:13] To divide
+[94:16] two signals.
+[94:20] Now, you can understand
+[94:22] how vast is the vast variety of applications.
+[94:25] Replace
+[94:28] adder by a subtractor.
+[94:31] But, you know,
+[94:33] in the whole opam,
+[94:35] whether it is a linear application or non-linear application,
+[94:37] you have to make an approach.
+[94:39] Okay.
+[94:41] You don't have to remember the circuit.
+[94:43] Okay.
+[94:45] You don't have to keep any method.
+[94:47] You have to clear the approach.
+[94:49] If you get used to it,
+[94:51] then you will do it.
+[94:54] Ahi Bhusan.
+[94:56] No, son, this Sunday,
+[94:58] there is no open series of MOSFET.
+[95:00] Okay.
+[95:02] But till this Sunday,
+[95:04] your opamp lectures are open,
+[95:06] which will be private on Monday.
+[95:08] We will cover filters on Monday and Tuesday.
+[95:10] Okay.
+[95:12] So, this will become private
+[95:14] so if you want to revise it,
+[95:16] then you have time till tomorrow.
+[95:17] Now, let's do some questions.
+[95:19] Just a minute.
+[95:21] Consider the circuit shown in the figure
+[95:23] that uses an ideal opamp.
+[95:25] Assume that impedance at A and B
+[95:28] do not load the preceding circuit.
+[95:31] Do not load the preceding circuit means
+[95:34] that these people here
+[95:36] are not taking any current.
+[95:38] Do you understand?
+[95:40] What does this mean?
+[95:42] That these two resistances
+[95:44] will only come in series.
+[95:45] Now, you are being asked about the output voltage.
+[95:49] RARBRCRD is given.
+[95:51] You are also given RARBRCRD in the other one.
+[95:54] And the second thing is to understand
+[95:56] what this instrumentation amplifier is.
+[95:59] Do you remember that I had written
+[96:01] this resistance R plus delta R?
+[96:06] Deepankar, if there is no load in the circuit,
+[96:09] then why are you taking the circuit?
+[96:12] Will you remove the load from the circuit?
+[96:13] I will tell you later.
+[96:15] The voltage drops in the power system.
+[96:17] Let's do one thing.
+[96:19] Remove the load.
+[96:21] Disconnect the power from our house.
+[96:23] Why will the voltage drop?
+[96:39] I have told you the internal working and structure in the first lecture.
+[96:41] I have not told you the push-pull amplifier
+[96:43] because I will give you the power amplifier.
+[96:46] If you have done that, you will be connected to it.
+[96:50] I have done the internal working and structure
+[96:52] in the first lecture in the opamp.
+[96:57] Amplifier is cascaded.
+[96:59] What else?
+[97:00] Look, this stage is a differential amplifier.
+[97:14] What is this?
+[97:17] A differential amplifier.
+[97:21] So, the output voltage that will come
+[97:27] will be 12 by 10 into
+[97:35] the voltage of the non-inverting terminal is VB.
+[97:38] The VA of the inverting is VB minus VA.
+[97:44] Now, in the first part,
+[97:47] in the RDRC series, RARB series,
+[97:49] if you remove the VB,
+[97:52] the supply is 10 into RC by RC plus RD
+[98:03] that is 5 volt.
+[98:05] VA is 10 into RB by RA plus RB.
+[98:14] This is also 5.
+[98:19] So, V0 will be 0.
+[98:22] But it will not be in the second part.
+[98:25] Your bridge is not balanced in the second part.
+[98:27] Correct.
+[98:29] Your bridge is not balanced in the second part.
+[98:32] So, what will you do in the second part?
+[98:35] 10 into RC by RC.
+[98:44] Now, RD is 120 here.
+[98:52] And VA is 5.
+[99:05] So, V0 is...
+[99:11] But look at the gain of the differential amplifier.
+[99:14] I have written it directly, right?
+[99:20] Wait a second.
+[99:21] It will be 22, not 12.
+[99:23] The direct gain I have written is 12 by 10.
+[99:25] It happens only when the resistances are equal at the top and bottom.
+[99:29] It is 110 by 10.
+[99:37] So, 6 by 11.
+[99:44] This is coming.
+[99:46] And that too the negative one.
+[99:51] Tell me, is this coming?
+[99:54] Is it 4V or not coming?
+[99:58] 5.454, where did it come from?
+[100:11] You have understood this, right?
+[100:12] This will also be 1210.
+[100:13] This will also be 1210.
+[100:14] Then you can directly write the output of the differential amplifier.
+[100:18] That 12 by 10 or non-inverting voltage minus the inverting voltage.
+[100:24] If these resistances are unequal,
+[100:26] then you will have to go from basic.
+[100:27] You will have to take a non-inverting amplifier and an inverting amplifier.
+[100:32] Then it will take a lot of effort.
+[100:34] Come on, look at the next one.
+[100:36] Find V0.
+[100:37] Come on.
+[100:42] 12.
+[100:43] Yes, after that, this output will come.
+[100:45] Look, if you do this,
+[100:48] you put the voltage division here.
+[100:50] VB into 12 by 22.
+[100:54] Then V0B will take out VB into 12 by 22.
+[101:01] And its gain will be 1 plus 12 by 10.
+[101:06] So this VB becomes 12 by 10.
+[101:11] This is written as 12 by 10 into VB.
+[101:17] Come on, look at this.
+[101:19] Find V0.
+[101:20] Come on.
+[101:22] Take out V0 in this circuit.
+[101:28] And look, start making the PYQ of OPAM.
+[101:33] Anubhav, son, I think after coming to Admit Card,
+[101:35] your refund will be there, which is fees.
+[101:38] Because Admit Card is a child of solid proof who is going to sit in the gate.
+[101:45] What is it? 0.02?
+[101:47] Let's see minus 1.98.
+[101:51] Look, no current is going to go here.
+[101:56] So these two resistances came into your series.
+[102:02] So if you want the voltage of negative terminal,
+[102:06] it is 4 into 100 by 200.
+[102:15] That is 2 volts.
+[102:17] Okay.
+[102:18] So here it is 2 volts.
+[102:21] So according to the virtual short, 2 volts will come here too.
+[102:25] Now if 2 volts come, then how much i current will come here?
+[102:33] 4 minus 2 by 100.
+[102:42] This will come.
+[102:43] Okay.
+[102:44] Now there is no current going here.
+[102:47] So it will go here, i.
+[102:49] So what will be V0?
+[102:53] 2 minus 99 i.
+[103:00] 0.02 volts.
+[103:03] Okay, 0.02 will come.
+[103:05] Is it clear?
+[103:06] Because the ground is below.
+[103:08] How did we get it clear?
+[103:10] I will try the next one.
+[103:12] Our regulated power supply shown in the figure,
+[103:15] which has an unregulated input of 15 volts,
+[103:18] okay.
+[103:19] It generates a regulated output V out,
+[103:22] power dissipation of the transistor.
+[103:24] If the unregulated input increases by 20%,
+[103:27] change in power dissipation.
+[103:36] Now look,
+[103:37] I made a voltage regulator with OPAM.
+[103:48] Okay.
+[104:03] Why is there no negative feedback?
+[104:05] It is coming here from the terminal of output.
+[104:09] Understand, from the terminal of output.
+[104:11] And anyway, in my opinion,
+[104:13] there should be a terminal opposite mark here.
+[104:17] Okay.
+[104:22] This is the terminal opposite mark.
+[104:26] I highlight the resistance.
+[104:28] 12 kOhm, 24 kOhm, 1 kOhm.
+[104:32] 12, yes, this is the inner diode.
+[104:34] It has a voltage of 6 volts.
+[104:36] 12, 24 and 1.
+[104:46] Okay.
+[104:56] Don't tell me the step of the soldering.
+[104:58] Who has asked the V out?
+[105:00] I have asked the power dissipation.
+[105:02] I have not asked the V out.
+[105:17] Look.
+[105:18] Look, there is a positive terminal voltage of 6 volts here.
+[105:22] So, there will be a negative 6 also.
+[105:25] So, there is 6 volts here.
+[105:27] But the current is zero ampere.
+[105:30] This is the reason.
+[105:32] This is series.
+[105:34] Okay.
+[105:35] Now, if there is a series,
+[105:37] then 6 volts is V out.
+[105:41] Into.
+[105:42] And look, there is no problem with its supply.
+[105:44] There is no problem with its supply.
+[105:46] There is 15 volts, 20 volts.
+[105:48] What is the difference?
+[105:52] So, here the V out is 9 volts.
+[105:55] Now, if you are getting negative feedback from the supply,
+[106:00] son, from V out to V in.
+[106:02] There is a negative feedback.
+[106:04] And how will it come?
+[106:06] You are getting feedback from one portion of the V out.
+[106:10] Now, look.
+[106:12] If you want a power dissipation,
+[106:15] then you need a voltage.
+[106:17] VCE.
+[106:19] And at the same time, you need an IC or IE.
+[106:23] If you consider the beta high,
+[106:25] then IC and IE will be equal.
+[106:28] So, how much IE will be?
+[106:30] Look.
+[106:32] This is the sum of two currents.
+[106:34] V out by 10 ohm.
+[106:37] Plus, 6 by 24 kilo ohm.
+[106:42] So, this is 0.25 milli.
+[106:44] This is 0.9.
+[106:47] 0.9.
+[106:48] And 0.25 milli.
+[106:50] So, what is the meaning of 0.25 milli?
+[106:54] You will put 3-0, right?
+[107:05] Consider it as 0.9 MPA.
+[107:09] Now, in the first part of the transistor,
+[107:13] how much VCE will come?
+[107:18] VCE.
+[107:20] This will come at 15-9.
+[107:23] 6 volts.
+[107:25] So, power.
+[107:27] If you take out the power,
+[107:29] then 6 into 0.9.
+[107:32] 5.4 watts.
+[107:35] Now, in the next case,
+[107:37] neither the output voltage is changing because of the Zener.
+[107:41] And neither your current is changing.
+[107:44] So, what will be VCE?
+[107:46] You increased the input by 20%.
+[107:52] Minus 9.
+[107:53] So, that is 9 volts.
+[107:57] And IE will remain the same.
+[108:00] So, the power that came.
+[108:03] 9 into 0.9.
+[108:06] That is 8.1 watts.
+[108:10] And what happened with this?
+[108:12] Change.
+[108:16] How much change came from this?
+[108:30] Okay.
+[108:34] This happened by 50%.
+[108:37] Okay, the change came by 50%.
+[108:41] How did the negative feedback happen?
+[108:43] Why didn't it happen?
+[108:44] Some portion of the V-out.
+[108:46] Not the whole V-out.
+[108:47] Some portion of the V-out.
+[108:49] How much?
+[108:50] 2 V-out by 3.
+[108:52] This is going back to your inverting terminal.
+[108:55] So, the voltage going to the inverting terminal
+[108:58] that is proportional to the output voltage.
+[109:02] This is not saying that we have to give feedback to the output.
+[109:05] Even in the control system, when you give feedback to the output,
+[109:08] then you give it a gain H.
+[109:10] H can be bigger than 1.
+[109:12] H can be smaller than 1.
+[109:14] But there is a feedback gain H.
+[109:17] Try to understand the output voltage going to the feedback.
+[109:20] So, how many factors are being multiplied?
+[109:23] It is getting multiplied by a factor of 2 by 3.
+[109:28] Sir, I simplified the end resistance.
+[109:30] Then I took out the current from there.
+[109:32] Which simplifies it?
+[109:34] I must have done something wrong.
+[109:35] The current must have been V-out by 10.
+[109:37] How can you deny this?
+[109:41] Come on.
+[109:42] This is not 10 kilo ohms.
+[109:44] It is 10 ohms.
+[109:48] Come on.
+[109:49] Look at the next one.
+[109:50] Find the regulated output voltage.
+[109:52] Look at this circuit.
+[109:53] Find the regulated output voltage.
+[109:59] This is the voltage of the Zener.
+[110:02] This is 3 volts.
+[110:28] What is left is 9, look at the positive terminal voltage which is 3 volts, so negative
+[110:58] terminal voltage is 3 volts, here is V out and current going here is zero, so these two
+[111:08] resistances are coming in the series, so these inverting terminals are getting 3 volts,
+[111:16] these two are in the series, so V out into 20 by 60, so V out is 9 volts, okay, simple,
+[111:32] look at the next, the transistor has VBE equal to 0.7, beta equal to 100, VCC 10 volt minus VCC is minus
+[111:42] 10 volt LED, 1.5 volt input peak voltage is 8 volt, determine the number of times the LED glows,
+[112:01] all these are not easy, the opamp is a little tough, now we will filter it from Monday,
+[112:20] the filter will also be very easy, where is the transistor, this is the transistor,
+[112:26] you can see BJT has been made, there are some kids who sleep, they open their eyes in between and immediately
+[112:43] write V out, see three times, see here zero ampere current is going, so how much is the negative
+[113:09] terminal voltage, 10 into 2 by 8 plus 2, that is 2 volts, now I say that whenever the input voltage is more than
+[113:25] the negative terminal voltage, the output here will be V not 1, this will be equal to VCC,
+[113:34] so that BJT will be on, and when BJT will be on, then the collector current will flow from here,
+[113:44] IC flows and when the current flows, then LED glows, and when V in is smaller than V negative,
+[113:59] comparator is applied, so V not will be minus VCC, so your BJT will be off, from which IC will be zero and LED is off,
+[114:15] so you have to see when the input is above 2, see when the input is above 2, once it goes up, then it goes up here again, then it goes up here again,
+[114:28] so that is LED glows three times, three times it went up from 2, when it comes down from 2, when it will be off, when it goes back up from 2, then the LED will go on,
+[114:40] so the answer will be three times, very good, see the next one, sketch the transfer characteristic V not versus V in as the input voltage varies from minus 2 volt to 2 volt,
+[114:55] this one, let me make you, first of all, to simplify, you make this circuit the magnet, basically the terminal of negative,
+[115:21] so what will I do in V negative, first I will take out the current from here, like this, how much I current is going,
+[115:32] so what will be my I, I will be V in minus 1 by 2 R, so if I ask you the voltage of negative terminal, then you will say V in minus I R,
+[115:53] which will be V in plus 1 by 2, and if I ask you R Thevenin, then R parallel R, because both the sources will be removed, that is R by 2,
+[116:08] so what will happen with this, the circuit will be very simplified, okay,
+[116:20] so look, whenever the circuit of diodes comes, even in the diodes chapter, you have been given a lot of Thevenin, so that the effort can be saved,
+[116:29] keep the same approach, look, the positive terminal is grounded, in negative, you will get VTH and RTH, simple,
+[116:36] okay, now here one diode is directly connected,
+[116:49] now you see, you have opened all the feedback, you have opened both the diodes and opened the feedback,
+[117:19] now see what I say, the voltage of this terminal is VTH, so when my VTH is greater than 0, then V0 will come out to be Vsat,
+[117:36] okay, from which VD1 will be VTH minus Vsat, if you subtract Vsat from any voltage, it will be negative, that is, D1 will be off and VD2 will be Vsat minus VTH,
+[117:57] because look, whatever input Thevenin is, all things will be smaller than your Vsat, so D2 will be on, okay, D2 will be on, similarly, when your VTH will be negative,
+[118:15] so V0 will be minus Vsat, so VD1 which will come, that will be VTH minus minus Vsat,
+[118:31] so D1 will be on, D2 will be off, okay,
+[119:01] now make two circuits, turn on D1 once and turn on D2 once, now see, if you turn on D1,
+[119:29] so V0 will come with the logic of the voltage follower, do you understand that?
+[119:39] V0 has come to be zero, no, this VTH is less than zero,
+[119:53] VTH, how much was your VN plus 1 by 2, that is, VN less than minus 1,
+[120:24] now after that D2 will be on, VTH and V0, so V0 has been converted according to an inverting amplifier,
+[120:44] minus 2 VTH, okay, and this is when VTH is positive, that is, VN plus 1 by 2 is greater than zero,
+[121:02] so VN greater than minus 1, and V0 is coming on it, 2 times minus 2 times VTH, so minus VN plus 1,
+[121:13] this is becoming minus VN plus 1, now if you see the transfer characteristic, then the threshold in VN is coming down to minus 1,
+[121:24] the threshold in VN is coming down to minus 1, before minus 1, V0 is zero,
+[121:55] this is zero, and then what is coming, then it is coming minus of VN plus 1, so minus 1 by 0 is minus 1,
+[122:11] then it is coming, okay, this is becoming, clear, minus of VN plus 1 has become,
+[122:31] that is, if you look at minus, if you look at 2, then you will see minus 3,
+[122:36] this will come, clear, how to do it, now see this was the question of diode, I did it with basic,
+[122:54] I did it with an open circuit test, so keep this basic fundamental in mind, you can make all the questions,
+[123:02] no matter how difficult it is, okay, we will make all, now see this is your assignment,
+[123:10] solve it, we will discuss it, but we will talk about filters, okay, I will complete the filter once, then
+[123:16] discuss the assignment of all three things, we will discuss both things, filter and this non-linear application,
+[123:22] and see you can start using O-Pamp's PYQ, you will go to this link, gate PYQ by AIR1,
+[123:30] you will get all the PYQs of O-Pamp, you can solve them, and you will get to learn very well,
+[123:38] no problem Rohit, you can get only one question of characteristic in gate,
+[123:43] you will get 3-4 questions, which will take time, okay, otherwise in the characteristic one,
+[123:50] you can get the value of the output for different inputs, get the value and verify in the option,
+[123:56] which option is giving the same value, the option verification is done, now see if you come to the academy,
+[124:05] there are two options, top teachers, there is a test series on the full study material app,
+[124:11] there is a video solution for the kids with an iconic question, the study material is being sent at home,
+[124:18] there are one to one guidance, there is a strategy and study plan, and in the open house session,
+[124:24] they can interact via audio, okay, and here you see that you have to go to the academy app,
+[124:31] plus you have to choose an iconic, you have to decide the duration, and you have to use the code ANKIT ESC to get maximum discount,
+[124:39] now see we have launched a 15 month subscription for 24 kids,
+[124:44] you are getting 1 month extra on this subscription till 31st October,
+[124:49] so if you buy it till Monday, then you will get 16 months, but you have to remember the code ANKIT ESC,
+[124:56] and if you see the results, we have produced 6 anchor in top 10,
+[125:00] next year you can also be one of them, just you have to join an academy and study with me personally,
+[125:07] and if there is a financial issue, then go for EMI, where you can fill your fees monthly,
+[125:12] without any interest, this EMI is approved in just 2 hours, it is at least paperwork,
+[125:18] and you can repay in a flexible duration of time, other than this,
+[125:23] for the 24 kids, there is Gurukul batch, in which Dhandesar and Gurupal sir are taking analog and mathematics,
+[125:29] we have started the same batch for the EC kids, and for the 23 kids, our team's rank improvement batch,
+[125:36] in which Pallav sir is starting the math from Monday at 3, Bheema Shankar sir is starting the network at 7.15 in the morning,
+[125:43] and for the EC kids too, we are starting the anchor with these two subjects, EDC,
+[125:49] so if you want to do revision, then you have to do the entire revision till January with us,
+[125:55] then come to the academy quickly, we have launched a 4 month subscription for you,
+[125:59] you can take 4 month or 3 month, you just have to make sure that you use the code ANKIT ESC,
+[126:05] okay, and this is my telegram channel, so that you can get all the updates,
+[126:10] and if you want the PDF of this session, within the next 15 minutes,
+[126:14] you will get it, go to the academy app's homepage, in the community, in Discover,
+[126:18] there I will get it, and you will get all the PDFs of this series,
+[126:22] you can download them and keep them for revision in the future,
+[126:25] so thank you everyone, thanks a lot kids, now we will meet Monday,
+[126:29] we will start active filters from Monday, in that, Butterworth, and Salon,
+[126:36] I am going to make you do both types of filters, which is specified in the gate syllabus,
+[126:41] after that, feedback amplifier, then oscillator and gate syllabus is over,
+[126:45] so there are three topics left, filter, feedback amplifier, oscillator,
+[126:48] there are three topics of very few lectures, there are no very long topics,
+[126:52] very easily, within the next 10-12 days, this syllabus will be over for gate exam,
+[126:58] yes, there is no class tomorrow, but tomorrow at 11 o'clock, you have to give combat,
+[127:02] the test of maths and aptitude, all the kids will give it live,
+[127:05] and they will judge how much their maths and aptitude is ready, okay,
+[127:09] so then let's meet Monday, let's crack it,
+[127:12] I will make a triple 5 timer after oscillator,
+[127:15] but there is no question from a triple 5 timer in today's date,
+[127:18] so you can skip it too, but I will do it, after oscillator,
+[127:21] there is a triple 5 timer left, tuned amplifier, and apart from this,
+[127:25] there is a power amplifier, these are the three topics that I will make for ESC, okay, thank you.

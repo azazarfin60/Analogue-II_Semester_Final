@@ -1,0 +1,89 @@
+Title: Operational Amplifier (Op-Amp) / Active Filters Solved Problem | Quiz # 305
+URL: https://www.youtube.com/watch?v=Kn4ILgtOJ9U
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and we have been given that the input
+[00:16] to this circuit is coming from one sensor.
+[00:19] So this input contains the fundamental frequency of 50 hertz as well as the higher order 5th
+[00:24] and the 7th harmonic.
+[00:27] So here we have been asked to find the attenuation which is being provided by this circuit for the
+[00:32] fundamental as well as the 5th and the 7th harmonic.
+[00:36] So basically here this circuit x like a filter.
+[00:41] So if you see over here, then this op-amp x like a low pass filter while this second op-amp
+[00:47] x like a high pass filter.
+[00:50] And if you calculate the cutoff frequency using the expression 1 divided by 2 pi times
+[00:56] rc, then for this low pass filter it will come around as 64 hertz while for this high
+[01:03] pass filter it will come around as 14 hertz.
+[01:09] And here these two filters are connected in the cascade connection.
+[01:13] That means if you see the frequency response of the overall system, then it will look like
+[01:19] this.
+[01:20] So here this frequency is around 40 hertz while this frequency is around 64 hertz.
+[01:29] That means this filter will only allow the 50 hertz frequency and it will reject the
+[01:34] 7th and the 5th harmonic.
+[01:36] So here we have been asked to find the attenuation which is being provided by this circuit for the
+[01:41] 5th and the 7th harmonic as well as for the fundamental frequency.
+[01:46] So to find that, first of all let us find the transfer function of this low pass filter.
+[01:51] So here let us say the output of this op-amp is equal to v o 1.
+[01:57] So here this v o 1 divided by v in can be given as xc 1 divided by xc 1 plus r 1.
+[02:08] That is equal to 1 divided by j omega c 1 divided by 1 divided by j omega c 1 plus r 1.
+[02:17] That is equal to 1 divided by 1 plus j times omega times r 1 times c 1.
+[02:26] So this will be the transfer function of this low pass filter.
+[02:29] And here this r 1 times c 1 is equal to 7.5 kilo ohm times 0.33 microfaraday.
+[02:40] That is equal to 2.47 millisecond.
+[02:44] So similarly let us find the transfer function of this high pass filter.
+[02:49] So the input to this high pass filter will be equal to v o 1.
+[02:54] So here this v o divided by v o 1 will be equal to r 2 divided by r 2 plus 1 divided by j omega times c 2.
+[03:04] That is equal to j times omega times r 2 times c 2 divided by 1 plus j times omega times r 2 times c 2.
+[03:15] And here this r 2 times c 2 is equal to 12 kilo ohm times 0.33 microfaraday.
+[03:24] That is equal to 3.96 millisecond.
+[03:29] So in this way we got the transfer function of this high pass filter as well as the low pass filter.
+[03:36] So if we see the overall transfer function that is v out divided by v in,
+[03:41] then it will be equal to v o 1 divided by v in times v out divided by v o 1.
+[03:48] That is equal to 1 divided by 1 plus j times omega times r 1 times c 1 times j times omega times r 2 times c 2 divided by 1 plus j times omega times r 2 times c 2.
+[04:06] So if you just consider the magnitude, then this v out divided by v in will be equal to omega times r 2 times c 2 divided by square root of 1 plus omega times r 1 times c 1 whole square times 1 divided by 1 plus omega times r 2 times c 2 whole square.
+[04:33] So this will be the overall transfer function of this active filter.
+[04:37] So in this expression by putting the value of omega at the fundamental as well as at the higher frequencies,
+[04:44] we can find the attenuation for the different frequencies.
+[04:48] So first of all, let us find the gain at the fundamental frequency.
+[04:52] So for the fundamental frequency, this omega naught is equal to 2 pi times f naught.
+[04:59] That is equal to 2 pi times 50 hertz.
+[05:02] That is equal to 314.16 radian per second.
+[05:09] So now for the fundamental frequency, this v out divided by v in will be equal to omega naught times r 2 times c 2 divided by square root of 1 plus omega naught times r 1 times c 1 whole square times square root of 2.
+[05:27] times square root of 1 plus omega naught times r 2 times C 2 whole square. So, in this
+[05:36] expression, let us put the value of omega as well as the r 1 C 1 and the r 2 C 2. So,
+[05:43] as we have seen, this r 1 times C 1 is equal to 2.47 millisecond while this r 2 times
+[05:51] C 2 is equal to 3.96 millisecond. So, if we put the value of omega naught and this r 1
+[05:59] C 1 and the r 2 C 2 in this expression, then this v out divided by v in will be equal to
+[06:06] 1.2 double 4 divided by 1.265 times 1.596 that is equal to 0.615. That means, if we pass
+[06:20] the fundamental frequency from this active filter, then the v out will be equal to 0.615 times
+[06:26] v in. So, from this we can say that at the fundamental frequency, the gain provided by this
+[06:32] active filter is equal to 20 log of v out divided by v in or if we see the attenuation,
+[06:42] then it will be the negative. That means, in dB, the attenuation will be equal to minus
+[06:48] 20 times log of v out divided by v in that is equal to minus 20 times log of 0.615. That
+[06:59] is equal to 4.21 dB. That means, at the fundamental frequency, the attenuation is equal to 4.21 dB.
+[07:09] Similarly, let us see the attenuation at the fifth harmonic. So, at the fifth harmonic,
+[07:15] this omega 5 is equal to 5 times omega naught. That is equal to 5 times 314.16. That is equal to 1.57 times
+[07:26] 10 to the power 3 radian per second. So, once again, for the fifth harmonic, this v out divided
+[07:34] by v in can be written as omega 5 times r 2 times c 2 divided by square root of 1 plus omega 5
+[07:45] times r 1 times c 1 whole square times square root of 1 plus omega 5 times r 2 times c 2 whole
+[07:55] square. So, if you put the value of omega 5 and this r 2 c 2 and the r 1 c 1 in this
+[08:02] expression, then we can write this v out divided by v in at fifth harmonic is equal to 6.217
+[08:10] divided by 6.279 times 4.004. So, here basically, we have put the value of this r 2 c 2 and the
+[08:21] omega 5 in this expression. And if you further simplify it, then this v out divided by v in will
+[08:27] come out as 0.246. That means, the attenuation at the fifth harmonic is equal to minus 20 times log of
+[08:37] v out divided by v in that is equal to minus 20 times log of 0.246 that is equal to 12.160b.
+[08:53] That means, at the fifth harmonic, the attenuation is equal to 12.DB. Similarly, let us see the
+[09:00] attenuation at the seventh harmonic. So, at the seventh harmonic, this omega 7 is equal to 7 times
+[09:07] omega naught and that is equal to 2.2 times 10 to the power 3 radian per second. And at the seventh
+[09:16] harmonic, this v out divided by v in will be equal to omega 7 times r 2 times c 2 divided by
+[09:25] square root of 1 plus omega 7 times r 1 times c 1 whole square times square root of 1 plus
+[09:36] omega 7 times r 2 times c 2 whole square. And as we have seen, this r 1 times c 1 is equal to
+[09:45] 2.47 millisecond, while the r 2 c 2 is equal to 3.96 millisecond. So, if you put the value of
+[09:54] this r 1 c 1 r 2 c 2 and the omega 7 in this expression, then this v out divided by v in will be
+[10:01] equal to 8.712 divided by 8.769 times 5.52 that is equal to 0.1798. That means, if we see the
+[10:15] attenuation, then the attenuation at the seventh harmonic will be equal to minus 20 times log of
+[10:22] v out divided by v in that is equal to minus 20 times log of 0.1798 which is roughly equal to
+[10:34] 15 dB. So, in this way, the attenuation provided by this filter at the fundamental frequency at
+[10:43] the fifth and the seventh harmonic is 4 dB, 12 dB and the 15 dB respectively. So, from this,
+[10:50] we can say that for the given question, b is the correct answer.

@@ -1,0 +1,160 @@
+Title: Op-Amp: Input Offset Voltage Explained
+URL: https://www.youtube.com/watch?v=hUu3SqRSYyA
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:15] So in this video we will understand about the input offset voltage of the opamp and it
+[00:20] is one of the DC offsets that define inside the opamp.
+[00:24] So this DC offset or the DC imperfection is the unwanted DC signal that you find along
+[00:30] with the output signal at the output terminal of the opamp.
+[00:35] So if you see the data sheet of any opamp, then you will find that 3 parameters related
+[00:40] to these offsets are defined.
+[00:42] The first is the input offset voltage, second is the input offset current and the third
+[00:47] is the input bias current.
+[00:49] So in this video we will understand about this input offset voltage and we will learn what
+[00:54] is input offset voltage and how it can affect the output of the opamp.
+[00:59] Now to understand this input offset voltage, let us assume that both the input terminals
+[01:03] of this opamp are at a zero potential and if opamp is ideal in that case the output of
+[01:10] the opamp should be equal to zero volt.
+[01:12] But actually if you see, you will find some finite voltage at the output terminal of
+[01:16] the opamp.
+[01:18] So let us understand why this finite voltage appears at the output terminal.
+[01:23] So if you see the internal structure of opamp, the first stage of this opamp is a differential
+[01:28] amplifier.
+[01:29] So actually these two transistors should be identical to each other.
+[01:33] But actually there is a slight mismatch between the two transistors and because of that both
+[01:38] transistors have a different biasing voltage.
+[01:41] So let us say this non-inviting terminal has a biasing voltage, VB1 and this inverting
+[01:48] terminal has a biasing voltage, VB2.
+[01:51] So because of slight mismatch between these biasing voltages, there is a potential difference
+[01:55] between the two terminals and this potential difference used to get amplified at the later
+[02:01] stages and because of that we used to get some offset voltage at the output terminal.
+[02:07] So now suppose if we apply the differential voltage of opposite polarity at one of the
+[02:12] opamp terminals, then we can ensure that the output of the opamp is zero volt.
+[02:17] So the definition of this input offset voltage is the amount of differential input voltage
+[02:22] which is required to apply between the two terminals such that the output of the opamp
+[02:26] will become zero volt.
+[02:29] So this input offset voltage can be a few millivolts for the general purpose opamp and it
+[02:33] can be as low as one micro volt for very high precision opamps.
+[02:38] So for example if you take the case of LM324 and LM741, the input offset voltage used
+[02:44] to be in the range of few millivolts, while if you take the very high precision opamps
+[02:48] like AD8538 and AD8551, the input offset voltage used to be in the range of few micro
+[02:55] volts.
+[02:56] Now like I said before, it is very hard to predict the polarity of this input offset voltage
+[03:01] and even if you take the two opamp ICs which are manufactured from the same wafer, it
+[03:07] is quite possible that both ICs have a different input offset voltage.
+[03:11] So the manufacturers also used to provide the maximum value of this input offset voltage.
+[03:16] So whenever you are using that opamp, it is ensure that the value of the input offset
+[03:21] voltage will be less than the maximum value.
+[03:24] So that is being said, now let us see the effect of input offset voltage on the FedEx
+[03:29] circuits.
+[03:30] So here we have an opamp which is configured in a inverting opamp configuration.
+[03:34] So to find the effect of this input offset voltage, let us assume that the input that is
+[03:39] provided to the circuit is 0 volt.
+[03:42] So in this case, some input offset voltage will be present between the two terminals and
+[03:48] the same thing can be represented by applying the input offset voltage at one of the terminals.
+[03:53] So here, this input offset voltage is applied at the non-imitting terminal and the circuit
+[03:59] will look identical even in the case of non-imitting opamp because whenever we are considering
+[04:05] the input voltage as 0, in that case inverting and the non-imitting opamp configuration looks
+[04:10] identical.
+[04:11] So now let us find the effect of input offset voltage on the output.
+[04:16] Now let us say the output voltage because of this input offset voltage is equal to V O O
+[04:21] that is the output offset voltage and it will be equal to 1 plus RF divided by R1 times
+[04:30] this input offset voltage.
+[04:32] So for the given opamp, if the value of input offset voltage is equal to 1 milli volt
+[04:37] and the DC gate of this configuration is 10, in that case the value of output offset
+[04:43] voltage will be equal to 1 milli volt.
+[04:47] Now in this circuit, suppose input signal of let us say 1 milli volt is applied at this
+[04:54] non-imitting terminal, in that case the output of this opamp will be equal to 10 milli volt.
+[05:01] So because of this input offset voltage, there will be a 10 percent error in the output
+[05:05] voltage and as I said earlier, it is hard to predict the polarity of this offset voltage.
+[05:11] So the output voltage can be either 9 milli volt or 11 milli volt.
+[05:18] So as you can see over here, the DC error in the output voltage because of this input
+[05:23] offset voltage is function of DC gain of this feedback circuit and as the DC gain of this
+[05:28] feedback circuit increases, the error in the output voltage will also increase and this
+[05:34] error is very critical parameter when you are dealing with very small input voltages.
+[05:39] For example, whenever you are using this opamp for digital to analog conversion, then it
+[05:44] is required that the error at the output should be as minimum as possible.
+[05:48] So to achieve that, either you should use the opamp which has a very low value of this
+[05:53] input offset voltage like 1 micro volt or by external means, you need to nullify the
+[05:59] effect of this input offset voltage.
+[06:01] So in the same example, suppose input offset voltage is equal to 1 micro volt, then the
+[06:07] output offset voltage will be equal to 10 times this 1 micro volt.
+[06:12] So the error in the output voltage will be equal to only 10 micro volt, while if your signal
+[06:17] is equal to 1 milli volt, then the output because of this input signal will be equal to
+[06:23] 10 milli volt.
+[06:25] So as you can see over here, in this case, the error in the output voltage has been reduced
+[06:30] by 1000 times.
+[06:32] So in this way, by using the opamp with very low value of this input offset voltage, we
+[06:37] can reduce the error in the output voltage.
+[06:41] The second method to reduce the effect of this input offset voltage is to use the DC offset
+[06:46] nulling circuits.
+[06:47] And there are many opa mice which used to come with this DC offset null pins.
+[06:52] So just by connecting the external string port between the two terminals and adjusting
+[06:57] this string port, we can nullify the effect of this input offset voltage.
+[07:02] So these are the some of the methods by which we can either reduce or remove the effect
+[07:06] of this input offset voltage.
+[07:08] So even if you use these DC nulling circuits, then also it is quite possible that you will
+[07:13] find some DC error at the output terminal.
+[07:16] And this error arises because of the change in the ambient temperature because this offset
+[07:21] voltage used to get changed with the temperature.
+[07:24] And usually it is defined as the offset voltage drift in the data sheets.
+[07:29] And it is defined by the unit of micro volt per degree centigrade.
+[07:33] So for general purpose opamps, this offset voltage drift used to be in the range of 10 to
+[07:37] 20 micro volt per degree centigrade.
+[07:40] While for very high precision opamps, this offset voltage drift used to be in the range
+[07:44] of either 1 or 0.1 micro volt per degree centigrade.
+[07:49] So now let us see the effect of this offset voltage drift on the output of the opamp by taking
+[07:54] one example.
+[07:56] So in this example, we have been given this non-inverting opamp and for the given opamp,
+[08:01] we have been given some parameters.
+[08:03] So as you can see over here, the value of RF and R1 for the given circuit is 9 to
+[08:08] long and 1 kilo ohm respectively.
+[08:10] In the input signal that is applied at the non-inverting terminal is equal to 10 milli volt.
+[08:16] Apart from that, we have been given that the offset voltage drift for the given opamp
+[08:21] is 10 micro volt per degree centigrade.
+[08:24] Now for the given circuit, assume that the DC offset nulling is carried out at a 25 degree
+[08:30] centigrade.
+[08:31] So now whenever this circuit is operated at 75 degree centigrade, then we need to find
+[08:36] the error in the output voltage because of the drift in the input offset voltage.
+[08:41] So for the given circuit, first of all, let us find the output voltage because of this
+[08:45] input voltage.
+[08:47] So here the input voltage is equal to 10 milli volt and the gain of this opamp is equal
+[08:53] to 1 plus RF carried by R1 that is equal to 10.
+[09:00] So the output voltage because of this input will be equal to 10 times this 10 milli volt
+[09:06] that is equal to 100 milli volt.
+[09:09] Now for the given opamp at 25 degree centigrade of operation, the DC offset nulling is carried
+[09:14] out.
+[09:15] So there will not be any DC error at the output because of this input offset voltage.
+[09:20] But let us see the error in the output voltage whenever it is operated at 75 degree centigrade.
+[09:26] So whenever it is operated at 75 degree centigrade, then there is a change in temperature by
+[09:31] a 50 degree.
+[09:33] So first of all, let us find out the change in input offset voltage because of this change
+[09:38] in temperature.
+[09:39] So here we have been given that change in input offset voltage with temperature is equal
+[09:45] to 10 micro volt per degree centigrade.
+[09:49] So at 50 degree change, the change in this input offset voltage will be equal to 500 micro
+[09:55] volt.
+[09:56] So this change in input offset voltage will be get amplified by the DC gain of this circuit.
+[10:03] So we can say that error because of this drift will be equal to this 500 micro volt multiplied
+[10:10] by the gain of this opamp that is equal to 10.
+[10:14] So the error in the output voltage will be equal to 5 milli volt.
+[10:18] Now like we had seen in the case of this input offset voltage, here also it is hard to predict
+[10:24] the polarity of this voltage drift.
+[10:26] So we can say that the total voltage at the output will be equal to this 100 milli volt
+[10:32] plus or minus 5 milli volt.
+[10:35] So output voltage can be either 95 milli volt or it can be 105 milli volt.
+[10:43] So as you can see over here, whenever this circuit is operated at 75 degree centigrade, at
+[10:48] the time you will see the error of 5 percent in the output voltage.
+[10:53] So this error can be minimized either by using the opamp with very low input offset drift
+[10:58] or just by maintaining the ambient temperature, we can ensure that the error in the output
+[11:03] voltage will be minimum.
+[11:05] So these are the some of the techniques by which we can reduce the effect of this offset
+[11:09] voltage drift.
+[11:10] So I hope in this video you understood what is input offset voltage and how it can affect
+[11:15] the output of your opamp.
+[11:17] So in the next video, we will see few more parameters which are related to this DC offset
+[11:22] that is input offset current and input bias current.
+[11:26] So if you have any question or suggestion, do let me know in the comment section below.
+[11:30] If you like this video, hit the like button and subscribe to the channel for more such
+[11:33] videos.

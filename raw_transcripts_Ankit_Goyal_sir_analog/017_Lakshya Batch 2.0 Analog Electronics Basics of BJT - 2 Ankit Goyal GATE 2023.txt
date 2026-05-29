@@ -1,0 +1,2578 @@
+Title: Lakshya Batch 2.0 | Analog Electronics | Basics of BJT  - 2 | Ankit Goyal | GATE 2023
+URL: https://www.youtube.com/watch?v=-6MVIHq8UXI
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone, a very good morning to all of you and welcome to the Lakshya Batch 2.0 Analog Electronics.
+[00:17] Today we are back with the second session of BJT in Analog Electronics and I hope you enjoyed the first session
+[00:27] because I saw your views, your feedback was very good in the comments of that session.
+[00:33] So I believe that you must have enjoyed it. You have observed the whole motion of the holes and electrons.
+[00:40] How do you analyze a current and now you know BJT in and out. How does it work?
+[00:47] So what will I do today? Today I will teach you the configurations of BJT.
+[00:52] I will explain in the graph how it works.
+[00:56] And there are some such phenomena in BJT which are more important than the theory point of view and more important than the understanding point of view.
+[01:04] So the understanding portion of the theory will be finished tomorrow.
+[01:09] Then we will come to the numericals of the full-on from the day after tomorrow.
+[01:13] So how do you analyze the DC analysis of BGT biasing?
+[01:18] What is the current mirror?
+[01:20] Then how do you analyze the AC analysis? How do you take out the gain of the amplifier?
+[01:25] Then your full-on numerical portion will continue.
+[01:29] But look, I have another objective for you in this course.
+[01:33] I just want to teach you to do the numerical of analog.
+[01:36] I want you to understand the basic of analog so that if there is a basic electronics in any exam
+[01:42] or there is a question related to the device, then you will crack it.
+[01:46] You should not be scared that I know how to make numericals.
+[01:50] But if someone asks what happens in the diode, what happens in BJT, what happens in the MOSFET,
+[01:54] how does it work, then I will crack it.
+[01:57] Your confidence will not be so low that you will be highly confident in it.
+[02:01] Whether it is engineering services, whether it is JEE exam, you will also make basic electronics.
+[02:07] So I can say this in a way that this is basic electronics plus analog electronics.
+[02:13] So we will enter every device and see how does it actually work.
+[02:17] Why do we use SIO2 layer?
+[02:21] SIO2 is an insulator.
+[02:23] Now what happens is on one semiconductor chip, multiple devices are fabricated.
+[02:29] So I do not want the current of one device to enter into another device.
+[02:34] When I connect it, it should not go by itself.
+[02:37] So we provide insulation in the middle.
+[02:40] Then I do not want the current of the base to enter automatically in the emitter.
+[02:44] It should go in a proper way from the flow of the charges.
+[02:48] So that both the short circuits are done.
+[02:50] So to avoid short circuiting between two devices, between two terminal of the same devices,
+[02:56] what do you provide in the middle?
+[02:58] You provide insulation.
+[03:00] And it is a very easy way to provide it.
+[03:02] You will get a silicon stick, oxidize it and become an insulator.
+[03:06] You are not doing any material deposit.
+[03:08] What are you doing?
+[03:10] You are oxidizing it.
+[03:12] So that is why SIO2 is used.
+[03:14] It is not that SIO2 is being used somewhere else.
+[03:16] It is being made from silicon.
+[03:18] Do you understand, Ravi?
+[03:20] Tell me.
+[03:21] Remember these other kids too.
+[03:23] When you talk about integrated circuits,
+[03:25] a lot of you will go ahead and go to MTEC or VLSI.
+[03:29] What happens in integrated circuits?
+[03:31] It happens on the same wafer.
+[03:33] Multiple devices are fabricated.
+[03:36] And you have to give insulation between them.
+[03:39] Okay?
+[03:41] Let's go.
+[03:42] Okay, let me start before this.
+[03:44] Right?
+[03:45] Before doing SRI Ganesh,
+[03:46] I will tell you that 20% off is going on at the academy.
+[03:49] It is going on till September 16th.
+[03:51] Means the day and night will be over.
+[03:53] So now the time has come to end this offer.
+[03:56] If you are thinking of joining, then join.
+[03:59] Right?
+[04:00] No priest will come and take this opportunity.
+[04:02] You have to join as soon as possible.
+[04:04] Because you will be launching courses for you
+[04:06] along with Gate Academy and Unacademy.
+[04:09] Okay?
+[04:11] If you have not done non-technical, then do it now.
+[04:13] Right?
+[04:14] Think of Manthan from dark to late.
+[04:16] Better late than never.
+[04:18] Even if you do it now, you will be able to do it.
+[04:21] Look at the difference in BJT's amplifier and multi-stage.
+[04:25] You can still leave it.
+[04:27] Multi-stage and differential amplifier.
+[04:28] But before that, you have to do SRI Ganesh.
+[04:31] I will tell you about Alpha.
+[04:33] How many times did I explain Alpha yesterday?
+[04:35] Ravi, watch the video again tomorrow.
+[04:37] I had told you that there are 100 holes from Ammeter.
+[04:40] Out of which, 10 holes are combined with electrons in the base.
+[04:44] So, 90 holes reach the collector.
+[04:46] These 90 holes are the ratio of the 100 holes from Ammeter to Alpha.
+[04:52] That is, how much current reaches the collector of Ammeter.
+[04:56] What fraction of Ammeter charges or Ammeter current actually reaches the collector
+[05:02] is the current gain Alpha.
+[05:04] Simple.
+[05:05] Okay?
+[05:06] Let's go.
+[05:07] First of all, I am talking about the common base transistor.
+[05:10] Yesterday, I had explained this common funda from Cricket's example.
+[05:14] That we have odd number of terminals.
+[05:17] What do we want?
+[05:18] We want even.
+[05:19] What do we want even?
+[05:21] Take one terminal as common.
+[05:23] Take that it is also in the input and it is also in the output.
+[05:27] Now, which terminal do you make out of the three?
+[05:31] According to this, there are different configurations.
+[05:34] You are making the base.
+[05:36] You are making the Ammeter.
+[05:38] Or you are making the collector.
+[05:41] According to this, your configurations will change.
+[05:45] Is it clear?
+[05:47] Now, look here, I have taken PNP transistor.
+[05:50] Now, look at this terminal of the base.
+[05:54] This terminal of the base is also in the Ammeter circuit.
+[05:58] And it is also in the collector circuit.
+[06:01] Both these places are going.
+[06:03] This base is also going in the Ammeter and also in the collector.
+[06:07] So, that is why the base is common.
+[06:10] Now, what are you showing?
+[06:12] Now, you are showing the voltage of the Ammeter base.
+[06:15] P to N.
+[06:16] You are showing the voltage of the Ammeter base.
+[06:19] And here, the voltage of the collector base of P to N.
+[06:23] The voltage of the collector base of P to N.
+[06:25] Now, that is different.
+[06:27] We will keep the voltage of the collector base negative.
+[06:30] Because we keep the collector base junction reverse bias in the active region.
+[06:36] Yesterday, I told you which is the most important region of BJT?
+[06:40] That is the active region.
+[06:42] And in the active region, the collector base is kept reverse bias.
+[06:46] That is, positive on P to negative N.
+[06:49] So, what will be the VCB?
+[06:51] It will be negative.
+[06:52] And if there is saturation, it will be positive.
+[06:54] Because both are forward bias.
+[06:56] Correct, right?
+[06:58] Do you remember everyone?
+[07:00] Let's go.
+[07:02] So, what do we say first?
+[07:05] Here, the base Ammeter junction is forward biased.
+[07:16] Right?
+[07:17] They keep it forward, whether it is active or saturation.
+[07:20] It is kept forward.
+[07:23] So, the base Ammeter junction is forward biased.
+[07:28] So, it behaves as a forward biased diode.
+[07:40] It works like a diode.
+[07:43] Do you remember the equation I wrote yesterday when I taught you the current relationship?
+[07:48] I also said that the diode equation in BJT works more as compared to your diode itself.
+[07:57] More than diode, the diode equation is asked in BJT.
+[08:01] Ghochulal, I was just explaining this.
+[08:03] If the VCB is negative, if you keep it reverse and if you keep it forward, it will be positive.
+[08:09] I have just explained this.
+[08:11] If you write it as plus or minus, if you don't write it as CB, then you will say BC.
+[08:16] Right?
+[08:17] What does VAB mean?
+[08:19] A positive, B negative.
+[08:21] So, what does VCB mean?
+[08:23] C positive, B negative.
+[08:25] The battery is upside down.
+[08:27] The battery is upside down.
+[08:28] This means this is negative because this is reverse biased.
+[08:34] I understood.
+[08:35] I have just explained this.
+[08:37] That is why I tell you to pay attention to each and every thing.
+[08:40] If you take it lightly, if you take it slow, then things will go up like this.
+[08:46] Listen to each and every word carefully.
+[08:49] Now, let me show you the current of the Ammeter.
+[08:53] Do you remember what happened in NPN?
+[08:56] The direction of the current and the polarity of the voltage has changed.
+[09:01] Do you remember?
+[09:04] Remember this.
+[09:05] When there is a conversion in NPN and PNP in BJT,
+[09:09] or if you know each and every thing, then what do you do?
+[09:13] All the current of NPN and PNP are opposite.
+[09:16] For example, if the Ammeter current is going inside the PNP, then it will come out in NPN.
+[09:21] If you are taking a voltage in PNP, then you will take it in NPN like this.
+[09:27] You will reverse the polarity of the voltage.
+[09:30] You will also reverse the direction of the current.
+[09:33] That is how you convert between NPN and PNP.
+[09:37] Now, what is VT here?
+[09:39] This is thermal voltage.
+[09:42] Correct.
+[09:45] This is your thermal voltage.
+[09:49] Which is actually
+[09:51] T by
+[09:54] 11600
+[09:56] Volt.
+[09:57] Okay.
+[09:58] This comes to you.
+[10:00] This will come to you.
+[10:02] 3.116, 25 millivolts.
+[10:04] So, this comes to the Volt.
+[10:06] Correct.
+[10:07] This is the formula of the diode.
+[10:08] I just told you.
+[10:09] Read it up.
+[10:12] Sir, please pay attention.
+[10:15] If you had read the green line, then you would not have asked where the formula came from.
+[10:20] Why do you do this?
+[10:23] Now, if you want to make it characteristic, then it should be like a diode.
+[10:28] We will call it input characteristic.
+[10:31] Okay.
+[10:32] Because in common base, we say that we put input on the emitter.
+[10:37] We take the output from the collector.
+[10:39] Then it is called as a common base.
+[10:42] Let me show you.
+[10:45] Look.
+[10:46] Here, current will come.
+[10:48] Emitter current.
+[10:49] Here, emitter to base voltage.
+[10:53] So, what happens in common base is that the input is connected at the emitter and the output is taken as the collector.
+[11:01] And the base is common in both.
+[11:04] And you should have knowledge about the input output.
+[11:08] Because if you do not know the input output, then you will not be able to do anything in the transistor.
+[11:13] That is why I am taking IE in the input current.
+[11:18] Do you see?
+[11:19] If I ask you for an output current like this, then you will say, sir, IEC.
+[11:23] Because the output is a collector.
+[11:26] Now, what will happen here?
+[11:28] Here, your exponential curve will be like this.
+[11:32] Correct?
+[11:33] You know this.
+[11:34] This is the exponential curve.
+[11:37] And here, when you are making this graph.
+[11:41] So, you will keep the second voltage constant.
+[11:45] That means, you are varying one voltage.
+[11:48] That is VAB, which you have applied on the emitter base.
+[11:52] And you are keeping the second voltage constant.
+[11:55] Okay?
+[11:56] Is this clear to me?
+[11:58] Is this clear?
+[12:00] Now, my children, if this is a diode, then when I will do its AC analysis.
+[12:05] Do you remember the diode?
+[12:07] I taught you dynamic resistance.
+[12:09] I told you to take a Q point.
+[12:11] Draw a tangent on the Q point.
+[12:14] You can get it out of the slope of that tangent.
+[12:16] Dynamic resistance.
+[12:18] Okay?
+[12:19] Dynamic resistance.
+[12:20] I told you AC resistance.
+[12:22] So, even here, my child, if you look, then emitter base junction is behaving as a diode.
+[12:28] That means, for AC analysis, it will also have a resistance.
+[12:34] It will also have a resistance.
+[12:36] So, what do we say?
+[12:40] Base emitter junction is behaving as a diode.
+[12:50] So, if I tell you that I want to know input resistance.
+[12:56] So, what will you say?
+[12:59] You will say, sir, input resistance is nothing but dynamic resistance of diode.
+[13:07] You had also said diffusion resistance.
+[13:10] Okay?
+[13:12] Now, do you remember the formula for this?
+[13:14] What was the formula of diode dynamic resistance?
+[13:17] If you remember, then write it in the chat.
+[13:20] If you remember, then write it in the chat.
+[13:22] What was it?
+[13:23] How much was the diode resistance?
+[13:25] Write it quickly in the chat.
+[13:28] Someone must have remembered the formula.
+[13:30] I had also asked a question of AC DC analysis.
+[13:32] In which there were 4 diodes.
+[13:34] Sai has written exactly right, eta v by id.
+[13:38] Your diode resistance was here.
+[13:42] Eta vt upon id.
+[13:48] Eta vt upon id.
+[13:51] Isn't it?
+[13:52] Now, mostly in cases of eta, you consider only one.
+[13:55] You consider only one, right?
+[13:57] So, I say input resistance, look here.
+[14:03] If you write the general formula, then you will write dVbe by diE.
+[14:10] You will write this.
+[14:11] If you think from the graph, then voltage by resistance slope, sorry,
+[14:15] voltage by current, you are writing the slope.
+[14:17] And the one that should come, this should come, vt.
+[14:21] Instead of the current of diode, the current of ammeter is iE.
+[14:25] And write this resistance like this, small rE.
+[14:29] Ammeter is coming, small rE.
+[14:33] Is it shining?
+[14:34] This resistance will be very useful in AC analysis.
+[14:38] This resistance will be very useful.
+[14:41] When I do AC analysis, then this value will be calculated in every question.
+[14:46] Think about this in every question.
+[14:49] Was the logic clear?
+[14:51] Tell me, was it fun?
+[14:52] The things that you are reading in the diode, how are they connected to BJT?
+[14:56] Because the base ammeter junction is diode.
+[14:59] Take this in your mind.
+[15:02] This should go to the depth of your mind.
+[15:05] The base ammeter is nothing.
+[15:07] It's just a diode.
+[15:08] So, the more things you can connect from there, the more useful it will be.
+[15:13] Okay?
+[15:15] The more things will be connected.
+[15:17] Clear?
+[15:18] Now let's come to the output characteristic.
+[15:21] Now you know the output on which you are taking?
+[15:24] You are taking the output on the collector, right?
+[15:26] So, the output current will be the collector current.
+[15:29] And the output voltage that will be between collector and base.
+[15:34] That will be between collector and base.
+[15:38] So, we are saying the output current is equal to IC.
+[15:48] Now listen carefully, dear.
+[15:50] All the children will concentrate here.
+[15:53] All the lovers in our class are lost in thoughts.
+[15:57] They will also come back.
+[15:58] They will concentrate in the class.
+[16:00] Now, dear, understand one thing.
+[16:02] Yesterday, I derived an IC relation.
+[16:05] What did I derive?
+[16:07] What did I derive?
+[16:09] Yesterday, I derived IC is alpha IE
+[16:16] plus ICBO.
+[16:20] Sir, why didn't you take beta IB?
+[16:23] Hey, donkey, here the input current is IE.
+[16:28] So, the relation of IC is IE.
+[16:30] If the input current was IB, then it would have been the beta IB.
+[16:35] What am I seeing here?
+[16:37] Dependency of output current on the input current.
+[16:42] Now, my brother will understand one thing.
+[16:45] This current is IE.
+[16:48] This is the function of VEB.
+[16:52] Now, it is written.
+[16:54] Diode one.
+[16:56] This is written.
+[16:57] Where did it go?
+[16:59] Here it is.
+[17:00] So, IE is dependent on VEB.
+[17:04] And this ICBO, I told you yesterday, is the function of temperature.
+[17:09] I told you, it doubles for every 10 degree centigrade rise in temperature.
+[17:15] That is, IC does not depend on VCB from anywhere.
+[17:21] Think about it.
+[17:23] IC does not depend on VCB from anywhere.
+[17:27] So, what am I saying?
+[17:29] IC is independent of VCB.
+[17:38] This means, no matter how much reverse bias you apply, no matter how much forward bias you apply, this is going to remain fixed.
+[17:47] This is going to remain fixed.
+[17:59] Okay.
+[18:07] Hey.
+[18:27] Okay.
+[18:28] And look, let me do one thing.
+[18:29] To remove the confusion of you people, here is EB.
+[18:34] And let me show you the voltage like this, BC.
+[18:37] Otherwise, you will get confused in NPN and PNP.
+[18:40] Okay.
+[18:41] The confusion of you people will be removed from this.
+[18:44] If VBC comes, it will come like this.
+[18:46] And if you want here too, you can write VBC instead of CB.
+[18:53] Okay.
+[18:54] So that this idea remains, I have kept the reverse bias to the junction.
+[18:57] That is why I am saying.
+[18:59] So, here too, you can use BC instead of CB.
+[19:05] So, look, I am saying IC versus VBC when you make it.
+[19:11] So, while making VBC, son, that is, when VBC is increasing, then your reverse bias is increasing.
+[19:18] When your VBC is increasing, then your reverse bias is increasing.
+[19:22] While increasing the reverse bias, IC will remain constant.
+[19:29] When you are increasing the reverse bias, then also, IC will remain constant.
+[19:35] Is this the light for everyone?
+[19:37] Is this the light for everyone, son?
+[19:40] That IC is independent of the reverse bias applied across the collector base junction.
+[19:49] Okay.
+[19:50] Did you understand these two things?
+[19:52] And it is clear that the confusion between CB and BC.
+[19:56] You can write CB, right?
+[19:59] Then you will have to say that there will be a negative CB in the reverse bias.
+[20:03] If you write BC, you can say that you will keep BC positive.
+[20:07] So that the collector base junction remains reverse.
+[20:10] CB here means common base.
+[20:12] I am thinking of this voltage CB, collector base.
+[20:15] What does CB mean here?
+[20:17] It is the output characteristic of common base.
+[20:21] Now let's come to the early effect.
+[20:23] Look, this is a delicious thing.
+[20:25] This is a delicious thing, okay?
+[20:27] I will draw it and explain it.
+[20:29] Understand it well.
+[20:48] Now you know that you keep the reverse bias of the collector base junction.
+[20:53] If you study it on NPN, if you study it on PNP.
+[20:57] I will take it on PNP only because we were taking PNP till now.
+[21:04] You know that this is P plus, this is N and this one is P minus.
+[21:11] Now you also know that there are positive ions in N here.
+[21:16] They are very densely packed because they are moderately doped.
+[21:21] The collector base is lightly doped.
+[21:25] So your ions are a little far away from there.
+[21:33] So what I was telling you about the punch through yesterday,
+[21:36] you will understand everything here.
+[21:38] Okay, this is what happened.
+[21:40] Now look here, what will happen here?
+[21:43] What will happen here?
+[21:45] What you have done is, you have kept this junction reverse bias.
+[21:56] Listen carefully, everyone.
+[21:58] If you talk about it here and there, then I don't know anything.
+[22:01] Then I will stop studying and go to Gapya.
+[22:04] If an academy can give money to go to Gapya,
+[22:07] then I don't need to study.
+[22:11] But we want to earn from honesty.
+[22:14] You want to get dishonest.
+[22:16] Sir, you should be careful with us.
+[22:19] What is the benefit of studying?
+[22:24] Okay, look here.
+[22:28] Now when you understand things, you will get clarity here very well.
+[22:32] And the question came to the early effect once.
+[22:35] Theory question.
+[22:38] And the early effect doesn't mean that it is an effect of a fast speed.
+[22:42] It was an early scientist who told us about it.
+[22:48] Now you keep this junction forward bias.
+[22:57] Okay.
+[23:01] This happened.
+[23:03] Okay, the negative terminal of the battery came.
+[23:07] Okay.
+[23:18] This is done.
+[23:19] Okay.
+[23:20] It is like this.
+[23:21] Now you will understand this.
+[23:23] What is this voltage?
+[23:25] VBC
+[23:26] And what is this?
+[23:28] V
+[23:29] EB
+[23:30] Now what do I say?
+[23:32] As you increase VBC,
+[23:34] As you increase VBC,
+[23:37] then the reverse biasing will increase on this junction.
+[23:40] Tell me.
+[23:42] As you increase VBC,
+[23:44] Okay.
+[23:45] So here the reverse biasing will increase on this junction.
+[23:48] Reverse biasing will increase.
+[23:50] Dear, then this depletion layer will spread.
+[23:53] Is it true?
+[23:54] Depletion layer will spread.
+[23:56] Everyone believes this much.
+[23:58] If the depletion layer spreads,
+[24:01] then what will happen?
+[24:03] Then the effective width of the base will decrease.
+[24:07] The effective width of the base will decrease.
+[24:10] Look, this is the total width of the base.
+[24:16] And this is the effective width after depletion.
+[24:20] Okay.
+[24:21] So the base width is less.
+[24:24] This is called base width modulation.
+[24:28] Or you can say this early effect.
+[24:30] So the early effect is that
+[24:32] when the collector increases the reverse bias of the base,
+[24:36] then the depletion layer spreads in both the directions.
+[24:39] It will spread on both the directions.
+[24:41] The difference will be more in the collector.
+[24:43] The difference will be more in the collector.
+[24:45] But it will spread on both the directions.
+[24:47] So what happens with this?
+[24:49] The width of the base will decrease.
+[24:52] So what do we write here?
+[24:54] When
+[24:57] VBC
+[24:59] increases
+[25:02] reverse bias
+[25:06] across
+[25:09] collector base junction
+[25:13] collector base junction
+[25:17] increases.
+[25:22] So
+[25:24] depletion layer
+[25:29] depletion layer
+[25:34] extends
+[25:38] in both
+[25:41] base and collector region
+[25:48] base and collector region
+[25:52] and base width reduces.
+[25:56] Okay.
+[25:58] Base width reduces
+[26:04] which is called as
+[26:12] which is called as
+[26:15] base width modulation
+[26:26] and
+[26:29] early effect.
+[26:37] Okay.
+[26:38] Base width modulation and early effect.
+[26:41] Is this clear?
+[26:44] Anand Ji is saying, sir, how will the depletion layer extend?
+[26:47] Anand, dear, you will have to see the diode for this.
+[26:50] Now you can't explain the same thing again and again.
+[26:53] What happens in reverse biasing?
+[26:55] What happens in forward biasing?
+[26:57] I had told you this in the diode.
+[26:59] When reverse bias is applied,
+[27:01] how does the depletion layer increase?
+[27:03] I had made the charges flow and showed you
+[27:05] that we extract the charges.
+[27:07] We take out the holes from the P region.
+[27:09] We take out the electron from the N region.
+[27:11] So the depletion layer increases.
+[27:14] Okay.
+[27:15] Okay, sir.
+[27:16] This is understood that the base width will be less.
+[27:19] What will we get from this?
+[27:21] What difference will we get from this?
+[27:23] Now you understand this, dear, the next thing.
+[27:25] Understand it carefully.
+[27:27] Now you understand this next thing.
+[27:29] This base emitter junction is forward.
+[27:31] Do you understand?
+[27:35] In what ratio is the depletion layer on both sides?
+[27:39] Dear, I had told you the ratio.
+[27:41] Uttkarsh, remember the charge neutrality.
+[27:43] NAXP is equal to NDXM.
+[27:47] I had told you that the depletion layer
+[27:50] will be on the base.
+[27:52] How much will be on the collector.
+[27:54] And I had written it yesterday.
+[27:55] NBXB is equal to NCXC.
+[27:58] Remember?
+[27:59] I had written it yesterday.
+[28:00] Charged neutrality in the collector base.
+[28:02] I had told you that NC is less than NB.
+[28:05] That is why XC is more than XB.
+[28:10] I had told you yesterday.
+[28:12] So, why do you do this?
+[28:14] You know everything.
+[28:16] You just need to remind you.
+[28:19] Mind your own business.
+[28:21] If you ask such questions again and again,
+[28:23] the flow of the topic will break.
+[28:24] What will happen to me?
+[28:25] You will not enjoy the topic.
+[28:27] Okay, I can answer all the doubts.
+[28:30] Now listen carefully.
+[28:32] We say that the base emitter junction
+[28:35] that flows in it, that is the diffusion current
+[28:38] because it is forward bias.
+[28:41] Now you know one thing very well.
+[28:43] Diffusion current is
+[28:46] that is proportional to the concentration gradient.
+[28:50] What does concentration gradient mean?
+[28:52] Rate of change of concentration
+[28:56] with distance.
+[28:58] How fast the concentration is changing
+[29:02] with respect to the distance
+[29:04] that is the concentration gradient.
+[29:08] Okay?
+[29:09] Now as the base emitter gets less,
+[29:13] then the concentration gradient will increase.
+[29:16] Why, sir?
+[29:17] Because the change in concentration is equal.
+[29:20] The change in concentration is equal,
+[29:22] but the distance is decreasing.
+[29:24] The concentration gradient is
+[29:26] change in distance.
+[29:29] Sorry, change in concentration
+[29:31] per unit distance.
+[29:33] So, I am saying that while going from P to N,
+[29:35] the concentration of the hole was already changing.
+[29:38] It is still changing.
+[29:40] But this distance is decreasing.
+[29:43] This means the gradient is increasing.
+[29:46] This means the rate of change is increasing.
+[29:49] And if the rate of change increases,
+[29:51] the concentration gradient increases,
+[29:54] then the diffusion current also increases.
+[29:57] Diffusion current also increases.
+[29:59] Meaning, the current coming from the emitter
+[30:02] will increase.
+[30:05] The current coming from the emitter
+[30:07] will increase your current.
+[30:10] So, the current coming from the emitter
+[30:12] will not depend only on the emitter base voltage.
+[30:16] It will also depend on the collector base voltage.
+[30:20] Now tell me, did you understand?
+[30:23] With so much energy,
+[30:25] did you understand or not?
+[30:28] What is happening with the base width decreasing?
+[30:31] Tell me quickly.
+[30:33] Write to all the people in the chat.
+[30:37] If you have fun, send some emojis.
+[30:41] We will also be happy.
+[30:44] You people travel around the world making hearts.
+[30:47] Sometimes make it for us too.
+[30:49] We are not that bad.
+[30:50] Now see, let us write it.
+[30:52] What we are saying is that
+[30:54] base emitter junction
+[30:59] is forward biased.
+[31:09] So, emitter current
+[31:17] is diffusion current.
+[31:24] Emitter current is diffusion current
+[31:30] which is proportional
+[31:36] to
+[31:44] concentration gradient.
+[31:54] Which is proportional to
+[31:57] concentration gradient.
+[32:01] Is it clear till here?
+[32:04] Is it clear till here?
+[32:07] What did we say?
+[32:09] I will also write mathematically.
+[32:11] Many children will say,
+[32:13] what is written?
+[32:14] Because the lectures behind will disappear.
+[32:17] At least, my brother saw the base emitter.
+[32:22] Now you must be thinking that
+[32:24] Sir, you did not write the area.
+[32:26] The children who have studied behind
+[32:28] did not write the area because
+[32:30] they were talking about current density.
+[32:32] I am talking about current here.
+[32:33] So, I multiplied it from the area.
+[32:35] You know that D is diffusion coefficient.
+[32:38] I told you about the Einstein relation.
+[32:41] D upon mu is equal to KT by E.
+[32:45] So, this is EAD by DC by DX.
+[32:48] So, what is DC by DX?
+[32:50] This is the concentration gradient.
+[33:00] So, as base width reduces,
+[33:06] DX will be less.
+[33:09] Concentration gradient will increase.
+[33:13] This will increase the current of diffusion.
+[33:17] Okay?
+[33:21] So, I diffusion increases.
+[33:26] Therefore, IE increases as VBC increases.
+[33:35] This is the first thing.
+[33:37] Now, understand the second effect.
+[33:39] Did you understand the first effect?
+[33:46] These base charges will be compressed closer.
+[33:49] No, my brother.
+[33:50] Charges are about density.
+[33:52] Charges are not mentioned here in DC.
+[33:55] Now, think about it.
+[33:56] I will go a little deeper with you.
+[33:58] How much do you have doping in the base?
+[34:02] The base is N type.
+[34:04] The base is N type.
+[34:06] So, the doping will be ND.
+[34:08] So, you will say how much is the concentration of electron in the base?
+[34:12] ND.
+[34:13] And how much is the hole?
+[34:14] NI square by ND.
+[34:16] This is NI square by ND.
+[34:18] This will be it.
+[34:19] Remember the mass action law.
+[34:22] If the electron density is ND, then the holes will be NI square by ND.
+[34:29] Now, look at this.
+[34:33] So, here, the concentration of holes will be NI square by ND.
+[34:45] This will be it.
+[34:46] Isn't it?
+[34:47] Why did you say PN naught?
+[34:48] Holes in N region.
+[34:50] And O also means thermal equilibrium.
+[34:53] Remember?
+[34:55] And how much will be here?
+[34:57] PN naught is NE.
+[35:01] The doping of emitter is equal to ND.
+[35:05] You will know the doping of the base.
+[35:07] Now, think about it.
+[35:09] These things are independent from size.
+[35:11] This is concentration.
+[35:12] Means per unit volume.
+[35:14] It doesn't matter if the volume increases or decreases.
+[35:18] It doesn't matter if the volume increases or decreases.
+[35:21] These are values per unit volume.
+[35:23] This is the concentration.
+[35:25] So, you can calculate the change in concentration.
+[35:29] If you take out the change in the concentration of holes,
+[35:33] it will be NE minus this value.
+[35:36] NE minus this value.
+[35:38] But, but, while the change in concentration is the same,
+[35:42] this distance is decreasing.
+[35:44] This distance is decreasing.
+[35:46] And as the distance is decreasing, the rate of change is increasing.
+[35:51] Now, do you understand?
+[35:52] The change will remain the same.
+[35:54] No matter how small the base is.
+[35:56] This change is fixed.
+[35:58] But the distance of this change is decreasing.
+[36:01] Now, do you understand?
+[36:03] The distance of this change is decreasing.
+[36:06] And what is happening by decreasing the distance?
+[36:09] This is the diffusion current increase.
+[36:12] Now, is it clear?
+[36:13] Now, think about it.
+[36:15] If the width of the base is reduced,
+[36:18] then the effective area of the base is reduced.
+[36:21] If the width of the base is reduced,
+[36:23] then the effective area of the base is reduced.
+[36:25] That is, the current of the base will also be reduced.
+[36:30] As WB reduces,
+[36:35] the effective base area decreases.
+[36:44] So, IB, because the current is proportional to the area,
+[36:48] IB will also be reduced.
+[36:51] Okay?
+[36:52] IB will also be reduced.
+[36:54] Now, if IB is reduced,
+[36:56] look at the current coming.
+[36:58] Understand this.
+[36:59] First, the emitter was coming from 100 holes.
+[37:01] Try to understand it again.
+[37:02] First, the emitter was coming from 100 holes.
+[37:04] In 10, the base was being consumed in the recombination.
+[37:08] The remaining 90 were reaching where?
+[37:10] In the collector.
+[37:12] So, your alpha.9 came.
+[37:14] Everyone knows this.
+[37:15] I will also write it down.
+[37:18] A little so that you can relate things earlier.
+[37:23] IE came.
+[37:25] There were 100 holes.
+[37:28] Out of which, the base was consumed in 10 holes.
+[37:32] Okay?
+[37:34] And it reached the collector.
+[37:36] 90 holes.
+[37:38] With which the alpha was 0.9.
+[37:41] IC by IE.
+[37:44] Isn't this right?
+[37:45] It was like this.
+[37:46] Now, you are saying now.
+[37:48] Now, more holes are coming from the emitter.
+[37:52] The current has increased.
+[37:54] Suppose, 110 holes are coming.
+[37:56] But the base is reduced.
+[37:58] The base is consuming less holes.
+[38:00] Suppose, it is consuming only 5 holes.
+[38:02] So, how much is the current of the collector?
+[38:05] 105 holes.
+[38:06] And if you take out the ratio,
+[38:08] 105 by 110.
+[38:11] This will be more than 0.9.
+[38:16] Okay?
+[38:17] So, your alpha has increased in one way.
+[38:20] Okay?
+[38:21] Your alpha has increased in one way.
+[38:24] So, it is not just that the emitter is increasing
+[38:27] by increasing the current.
+[38:28] In fact, the gain, the collector upon emitter is also increasing.
+[38:31] Your alpha is also changing.
+[38:34] Did you understand this?
+[38:35] So, many children know that
+[38:37] children remember that
+[38:39] the current is increasing.
+[38:41] But what children think is that the current gain is fixed.
+[38:44] There is no change in the current gain.
+[38:46] What I am telling you is that
+[38:48] the current gain is also increasing.
+[38:50] The current gain is also increasing.
+[38:52] So, the alpha is also increasing.
+[38:54] And if you take out the beta on both,
+[38:56] alpha by 1 minus alpha,
+[38:58] beta will also increase.
+[39:00] Beta will also increase.
+[39:01] How can you think of beta?
+[39:03] Here, 90 by 10
+[39:05] beta is coming, 9.
+[39:07] 90 by 10.
+[39:08] IC by IB.
+[39:10] Here, beta is 125 by 5.
+[39:12] IC by IB.
+[39:14] Is everyone clear about this?
+[39:16] Speak quickly.
+[39:18] Did you enjoy it?
+[39:20] Did you enjoy it?
+[39:21] Did you understand what is the early effect?
+[39:23] So, the early effect told you one thing.
+[39:26] If I summarize it.
+[39:39] We have taken so many.
+[39:41] We have taken so much knowledge.
+[40:02] What is the summary of early effect?
+[40:04] It is called as
+[40:06] reverse bias
+[40:11] across
+[40:14] CB junction
+[40:16] increases.
+[40:18] What are the effects of this?
+[40:24] I am also writing this.
+[40:26] Because if
+[40:28] NPN transistor was there,
+[40:30] we would have taken CB instead of BC.
+[40:32] We would have taken CB instead of BC.
+[40:34] So, what happens first?
+[40:36] Base width
+[40:39] reduces
+[40:42] then what happens?
+[40:44] IE
+[40:45] which is the diffusion current
+[40:48] increases
+[40:50] then what happens?
+[40:52] Base current
+[40:54] decreases
+[40:56] collector current
+[40:58] increases
+[41:00] and then
+[41:02] alpha and beta also increases.
+[41:05] Alpha and beta also increases.
+[41:08] Is this clear?
+[41:10] Is this clear?
+[41:12] Dear, I have not studied the punch through yet.
+[41:15] How will the miss happen?
+[41:17] Look at the slide of the punch through.
+[41:19] It is empty now.
+[41:20] It will come.
+[41:21] You are different.
+[41:22] I have studied.
+[41:23] I have missed you.
+[41:24] I have also missed you.
+[41:25] Now, it is left to go there.
+[41:27] Now, the thing is that
+[41:29] what will the difference be
+[41:31] on the characteristics because of this?
+[41:33] Look,
+[41:34] because of the early effect,
+[41:36] what will be the effect on the characteristics?
+[41:41] Now, let me talk about the first input characteristic.
+[41:51] First, let me talk about the input characteristic.
+[41:54] So, you know that
+[41:56] what was in between IE
+[42:00] and VEB.
+[42:02] This was IE
+[42:04] and VEB.
+[42:06] Now, what did you show?
+[42:08] Exponential, right?
+[42:10] And look at my slide.
+[42:11] I wrote one thing.
+[42:12] VCB constant.
+[42:14] Did you write it?
+[42:19] If you increase the VCB,
+[42:23] if you increase it,
+[42:25] then the current will increase.
+[42:28] Do you understand?
+[42:31] The current has increased, right?
+[42:34] Is it clear?
+[42:36] That is why I wrote that
+[42:38] VCB or VBC is constant
+[42:40] because if you increase it,
+[42:42] then the current will increase.
+[42:44] So, I wrote that
+[42:46] VCB or VBC is constant
+[42:48] because if you increase it,
+[42:50] then the current should increase.
+[42:52] Actually, the current should increase.
+[42:54] Now, you wrote in the output characteristic
+[42:57] that no matter how much VBC increases,
+[43:00] IE will remain constant.
+[43:02] You wrote that
+[43:04] no matter how much VBC increases,
+[43:06] IE will remain constant.
+[43:09] But you just said that IE increases.
+[43:12] You just said that IE increases.
+[43:17] If my brother
+[43:20] increases IC,
+[43:22] then if you see the output characteristic,
+[43:37] then the output characteristic
+[43:39] should increase.
+[43:41] Do you understand?
+[43:42] It should increase like this.
+[43:45] This is IC
+[43:50] versus VBC.
+[43:53] And you also know that
+[43:55] if you draw it on different IE,
+[43:57] for example, this is on 1 milli ampere.
+[44:00] If the IE increases,
+[44:03] then it will increase more.
+[44:08] Suppose,
+[44:11] because if IE increases,
+[44:14] then IC will increase, right?
+[44:16] This is what you wrote.
+[44:18] IC is alpha IE
+[44:20] plus IC also.
+[44:22] So, you can make it on different emitter current.
+[44:26] So, here the slope has come.
+[44:28] Is VBC increasing or IC is increasing?
+[44:30] If, my child, the slope has come,
+[44:34] then my child, you just explained that
+[44:36] it depends on VBC.
+[44:38] Earlier, he told that
+[44:40] because IE only depends on VEB,
+[44:43] then it also doesn't depend on VBC.
+[44:45] But now, I have proved that
+[44:47] IE also depends on VBC.
+[44:50] This is the graph that is telling that
+[44:52] IE only depends on VBC.
+[44:54] Brother, we didn't know the early effect earlier.
+[44:57] Earlier, we didn't know the early effect.
+[45:00] So, how we can count it?
+[45:02] Now, we have learnt that
+[45:04] the collector base voltage
+[45:06] of the output voltage
+[45:08] also affects the current of the input.
+[45:11] The output voltage
+[45:13] also affects the current of the input.
+[45:15] We have to know this now.
+[45:17] And because it affects the current of the input,
+[45:19] then it will also affect the current of the output.
+[45:22] Earlier, we said that
+[45:24] it doesn't depend on VBC or VBC.
+[45:27] That is why it doesn't even do IC.
+[45:29] Now, we have proved that
+[45:31] IE also depends on VBC
+[45:33] for which it will also do IC.
+[45:35] So, we didn't know the early effect earlier.
+[45:37] Now, we have read the early effect.
+[45:39] So, we are including it.
+[45:41] Now, when two graphs are extended
+[45:43] to the back, my children,
+[45:45] then these graphs
+[45:47] go to the x-axis and hit it like this.
+[45:51] Do you understand?
+[45:53] All these graphs
+[45:55] go to the same point and hit it.
+[46:00] This type.
+[46:02] The point at which they hit it
+[46:04] is called
+[46:06] Va
+[46:07] which is the early voltage.
+[46:09] What is it called?
+[46:11] Va
+[46:13] which is the early voltage.
+[46:15] Okay?
+[46:19] Enable or unable?
+[46:21] Enable is a good word.
+[46:23] It means that you are able to understand.
+[46:25] And unable is that you are unable to understand.
+[46:27] So, do you have to apply E or E?
+[46:30] Now, here you see that
+[46:33] when the output characteristic
+[46:35] has a slope,
+[46:37] then resistance will also come from this slope.
+[46:39] If the output characteristic
+[46:41] has a slope,
+[46:43] then if we remove this slope,
+[46:45] then resistance will also come.
+[46:47] Isn't it?
+[46:51] Look.
+[46:53] My child, if you are
+[46:55] following my classes regularly,
+[46:57] then it is difficult for me to believe
+[46:59] that you are unable to understand.
+[47:01] If you are unable to understand,
+[47:03] then try it with some other teacher.
+[47:05] What can I do in this?
+[47:07] Now, if you remove the slope here,
+[47:09] then the slope will be 1 by resistance.
+[47:11] Why, sir?
+[47:13] Why 1 by?
+[47:15] Because it is current upon voltage.
+[47:17] Current upon voltage is 1 by resistance.
+[47:19] Okay? 1 by resistance.
+[47:21] Now, what will you say here?
+[47:23] Do you know the value of this?
+[47:25] Do you know the value of this?
+[47:27] Sorry.
+[47:29] Output resistance
+[47:31] comes from here.
+[47:33] V A
+[47:35] upon I C
+[47:37] See, I also got
+[47:39] input resistance from the
+[47:41] diode logic.
+[47:43] From the slope of the output
+[47:45] characteristic, I also got
+[47:47] output resistance.
+[47:49] Now, when you question the amplifier,
+[47:51] if you have given an early voltage
+[47:53] which means that
+[47:55] you have to take the output resistance
+[47:57] and if you have not
+[47:59] given an early voltage,
+[48:01] then you do not have to take it.
+[48:03] You do not have to take it.
+[48:05] My dear Anshuman,
+[48:07] if you come directly to the 17th lecture,
+[48:09] then how will you understand analog?
+[48:11] This is the 17th lecture of this topic.
+[48:13] That is, the last 16th lecture
+[48:15] is in your song.
+[48:17] How will you cover the 16th lecture?
+[48:19] First, see the 16th lecture
+[48:21] .
+[48:23] This is clear. Tell everyone quickly.
+[48:25] Now, you also have input side
+[48:27] A C resistance.
+[48:29] Output side also A C resistance.
+[48:33] Now, let's go to the next concept.
+[48:35] V A is not in the
+[48:37] circuit, it is in the
+[48:39] Brahmendra characteristic.
+[48:41] As you see, you have
+[48:43] written A C resistance,
+[48:45] V T upon I D of
+[48:47] Ammeter Base Junction.
+[48:49] Now, when you wrote this resistance,
+[48:51] then V T was not in the
+[48:53] circuit, it was in the
+[48:55] thermal voltage. It was not in the
+[48:57] circuit like the thermal voltage.
+[48:59] It was a conversion in the voltage of
+[49:01] the temperature.
+[49:05] Now, my children,
+[49:07] here too, early voltage is not
+[49:09] an actual voltage inside the circuit.
+[49:11] Early voltage is
+[49:13] the intercept.
+[49:15] Early voltage is just
+[49:17] the intercept of this characteristic
+[49:19] on the X-axis.
+[49:21] Now, you are asking
+[49:23] how is this V A by I C?
+[49:25] The slope is current by voltage.
+[49:27] If we extend it to the back
+[49:29] , then what do we say here?
+[49:31] That we can
+[49:33] remove the resistance here.
+[49:35] Okay?
+[49:37] This will be the resistance.
+[49:43] For example, if you
+[49:45] look from here, then delta V
+[49:47] and this is I C.
+[49:49] Okay? V
+[49:51] and I C is the resistance.
+[49:53] Isn't it?
+[49:55] The physical significance has come.
+[49:57] The characteristic has changed.
+[49:59] The output resistance has come.
+[50:01] What kind of physical significance do you want?
+[50:03] Tell me.
+[50:05] A resistance has been added in the device.
+[50:07] That is the output resistance.
+[50:09] And the characteristic has changed in the device.
+[50:11] What kind of physical significance
+[50:13] do you want?
+[50:15] Now, let's come to the punch through.
+[50:17] Now, think about one thing.
+[50:19] You said that by increasing the reverse bias of the collector base,
+[50:21] the depletion layer
+[50:23] spreads in the base and in the collector.
+[50:25] And you know that the base is very thin.
+[50:27] If the depletion layer
+[50:29] spreads in the base,
+[50:31] if the depletion layer
+[50:33] spreads in the base,
+[50:35] Uttkarsh, keep the last slide open.
+[50:37] Okay? Don't spam.
+[50:39] For how long now, I am opening the last slide again.
+[50:41] I will keep it closed.
+[50:43] You are writing one comment.
+[50:45] Gate aspirant Y,
+[50:47] all are converging.
+[50:49] That is a practical observation.
+[50:51] That all the graphs that come,
+[50:53] their slope almost comes the same.
+[50:55] Okay?
+[50:57] So, their intercept comes the same.
+[50:59] We saw that.
+[51:01] And the current in the graph will come
+[51:03] according to it.
+[51:05] Like, the one whose current is more here,
+[51:07] the one whose Y is more,
+[51:09] its resistance will come less.
+[51:11] But intercept X,
+[51:13] intercept all come the same. We noticed this.
+[51:15] Okay?
+[51:17] Yes.
+[51:19] Now, we are talking about the punch through.
+[51:21] So, what did I say? When you increase the reverse bias,
+[51:23] the depletion layer spreads in the base and in the collector.
+[51:25] And because the base layer is thin,
+[51:27] after one time,
+[51:29] the whole layer of the base
+[51:31] will end.
+[51:33] The entire region of the base
+[51:35] will become the depletion layer.
+[51:37] The depletion is known as the punch through.
+[51:39] What do we call it?
+[51:41] Punch through.
+[51:43] So, what do we call it?
+[51:45] As
+[51:47] reverse bias
+[51:49] across
+[51:51] collector base junction.
+[51:55] Collector base
+[51:57] junction
+[51:59] increases
+[52:03] depletion layer spreads
+[52:07] and
+[52:09] at a
+[52:11] and at a
+[52:13] certain
+[52:15] reverse voltage
+[52:17] at a
+[52:19] certain
+[52:21] reverse voltage
+[52:23] the entire
+[52:25] base region
+[52:27] the entire
+[52:29] base region
+[52:31] the entire
+[52:33] base region
+[52:35] the entire
+[52:37] base region
+[52:39] gets depleted.
+[52:43] Okay?
+[52:47] Such a condition
+[52:55] is known as
+[52:57] punch through.
+[53:01] Okay?
+[53:03] The depletion is known as
+[53:05] punch through.
+[53:07] And this is not good
+[53:09] because the device will
+[53:11] lose its transistor behavior.
+[53:13] If the base region is depleted
+[53:15] then the transistor region is depleted
+[53:17] and the transistor operation
+[53:19] is depleted.
+[53:21] Okay? The transistor operation
+[53:23] is depleted.
+[53:25] The matter is getting cleared.
+[53:27] So, punch through is not a good thing
+[53:29] because our
+[53:31] base region gets depleted.
+[53:33] So, in this,
+[53:35] i may become very high
+[53:37] and
+[53:39] device may get damaged.
+[53:41] i can be
+[53:43] very high
+[53:45] and because of that
+[53:47] device may get
+[53:49] damaged.
+[53:55] Okay?
+[53:57] Because the current of the collector will increase
+[53:59] and the current of the collector
+[54:01] and i.e. if it increases
+[54:03] think about it.
+[54:05] The base region
+[54:07] gets narrowed
+[54:09] and your current increases.
+[54:11] Now, i am saying the base
+[54:13] width is zero.
+[54:15] That is, the diffusion current
+[54:17] will get very high.
+[54:19] If the diffusion current gets very high
+[54:21] it can actually damage the device.
+[54:23] Did you understand?
+[54:25] We were saying that the current
+[54:27] of the base width is completely depleted.
+[54:29] So, the power will increase
+[54:31] because the current will increase.
+[54:33] Okay?
+[54:35] Dear, the meaning of the damage is that
+[54:37] the heat dissipation will be so high
+[54:39] that the device can melt.
+[54:41] The device can burn. The short open
+[54:43] does not damage the short open.
+[54:45] The short open circuit does not damage the short open circuit.
+[54:47] The damage means that
+[54:49] the heat dissipation will become very high.
+[54:51] Okay?
+[54:53] The matter is cleared. Tell me quickly.
+[54:57] Now, look at the transfer characteristic here.
+[54:59] If you want to see the transfer
+[55:01] characteristic, the transfer characteristic
+[55:03] is between input and output.
+[55:05] So, for example,
+[55:07] if you look at current versus current here,
+[55:09] then the input current
+[55:11] is the current of the ammeter
+[55:13] and the output current is the current of the collector.
+[55:15] Okay?
+[55:17] The output current is the current of the collector.
+[55:19] So, if you make a graph of the collector versus
+[55:21] the ammeter current,
+[55:23] then you know that
+[55:25] IC is
+[55:27] alpha
+[55:29] IE
+[55:31] plus ICBO.
+[55:33] This is what happens.
+[55:35] So, if you keep IE0,
+[55:37] if you keep IE0,
+[55:39] then the current of the collector
+[55:41] will be ICBO.
+[55:43] That is why we call it,
+[55:45] what is ICBO?
+[55:47] Collector base current.
+[55:49] Collector
+[55:51] base
+[55:53] current
+[55:55] with ammeter open
+[55:57] with
+[55:59] ammeter
+[56:01] open.
+[56:03] Because if you open IE0
+[56:05] or ammeter,
+[56:07] then how much current will be
+[56:09] on the collector? ICBO.
+[56:11] ICBO.
+[56:13] So, its slope is alpha.
+[56:15] And think
+[56:17] that
+[56:19] since
+[56:21] IE
+[56:23] varies
+[56:25] exponentially
+[56:29] exponentially
+[56:31] with
+[56:33] VEB
+[56:37] So,
+[56:39] IC
+[56:41] also varies
+[56:45] exponentially.
+[56:47] Because IC is
+[56:49] proportional,
+[56:51] exponentially
+[56:53] with
+[56:55] VEB.
+[56:57] Okay, with
+[56:59] VEB.
+[57:01] So, IC versus
+[57:03] VEB here,
+[57:05] that will also be
+[57:07] exponential in nature.
+[57:09] That will also be
+[57:11] exponential in nature.
+[57:13] Did you understand?
+[57:15] So, whenever you take
+[57:17] the quantity of input on X-axis,
+[57:19] in such a scenario,
+[57:21] the characteristic is called
+[57:23] as the transfer characteristic.
+[57:25] Okay?
+[57:27] Now, you can take the current of input
+[57:29] on X-axis.
+[57:31] And if you want, you can take the voltage of input
+[57:33] on X-axis.
+[57:35] And you know, if you take out
+[57:37] this slope here,
+[57:39] if you take out
+[57:41] this slope,
+[57:43] you will say, sir, I want to know
+[57:45] Del VEB by Del IC
+[57:49] or, sorry,
+[57:51] reverse.
+[57:53] If you take out this slope,
+[57:55] sir, Del IC by
+[57:57] Del
+[57:59] VEB,
+[58:01] this is actually called
+[58:03] Trans Conductance.
+[58:05] Why Trans?
+[58:07] Okay, why Conductance?
+[58:09] Current by Voltage.
+[58:11] It is shown in Amplifier
+[58:13] Okay?
+[58:15] Did you understand?
+[58:17] So, the input characteristic is
+[58:19] input resistance.
+[58:21] The output characteristic is
+[58:23] output resistance.
+[58:25] And the transfer characteristic is
+[58:27] Trans Conductance.
+[58:29] The transfer characteristic is
+[58:31] Trans Conductance.
+[58:33] Did you understand all this?
+[58:35] Tell me quickly.
+[58:37] Now, sir, you only need to ask,
+[58:39] how to reduce punch through?
+[58:41] The width of the base
+[58:43] will have to be increased a little
+[58:45] so that it does not deplete quickly.
+[58:47] But there is a loss in that
+[58:49] that the current gain will fall
+[58:51] because if the base is torn,
+[58:53] then most of the holes will be recombined.
+[58:55] So, the holes in your collector
+[58:57] will be reduced.
+[58:59] So, a trade-off is done.
+[59:01] If you want to save yourself from punch through,
+[59:03] then you
+[59:05] have to sacrifice the current gain.
+[59:07] Current gain cannot be so much.
+[59:09] Okay?
+[59:11] So, it is a kind of a
+[59:13] compromise.
+[59:15] It is a kind of a trade-off.
+[59:17] Did you understand this?
+[59:19] You will have to understand one thing.
+[59:21] Or the second way is
+[59:23] not to increase the voltage of the collector base.
+[59:25] Do not increase the voltage of the collector base.
+[59:27] Ankur,
+[59:29] if you ask the question from the punch through,
+[59:31] then there is a theory.
+[59:33] What will be the numerical on this?
+[59:35] Now, the whole theory is going on.
+[59:37] How are the workings in the device?
+[59:39] How does the current depend on the voltage?
+[59:41] Since you have learned
+[59:43] three new quantities,
+[59:45] input resistance, output resistance,
+[59:47] trans conductance.
+[59:49] Right? You have understood these things.
+[59:51] Shall we go ahead?
+[59:53] Let's continue ahead.
+[59:55] Now, let's talk a little about leakage current.
+[59:57] What does leakage current mean
+[59:59] by ICBO?
+[60:01] If we
+[60:03] keep the ammeter
+[60:05] open,
+[60:07] i.e.
+[60:09] zero,
+[60:11] then the collector current
+[60:13] that is equal to
+[60:15] ICBO.
+[60:17] What is this? This is the
+[60:19] reverse saturation current.
+[60:21] Reverse saturation
+[60:23] current
+[60:25] of
+[60:27] collector base junction.
+[60:31] Okay?
+[60:33] Collector
+[60:35] base
+[60:37] junction.
+[60:39] And look at that.
+[60:41] It happens in every reverse bias diode.
+[60:43] It happens in every reverse bias diode.
+[60:45] Gate aspirant,
+[60:47] punch through,
+[60:49] it will not be avoided by changing the concentration.
+[60:51] Because we have already
+[60:53] kept the concentration of the collector low.
+[60:55] We already know that
+[60:57] your depletion layer is more in the collector.
+[60:59] But the base
+[61:01] has already depleted.
+[61:03] Brother, how long will you
+[61:05] save the base? It is okay.
+[61:07] Depletion layer is more in the collector.
+[61:09] But the collector is bigger.
+[61:11] The base is thin.
+[61:13] If the depletion layer is less there,
+[61:15] it will be crossed sometimes.
+[61:17] It will be crossed sometimes.
+[61:19] Right?
+[61:21] So, this is the
+[61:23] reverse saturation current of
+[61:25] collector base junction.
+[61:27] So, what do we say?
+[61:29] If
+[61:31] VBC
+[61:33] is greater than BVBC.
+[61:35] BVBC means
+[61:37] Breakdown
+[61:39] Voltage
+[61:41] of Collector
+[61:43] Base Junction.
+[61:45] And what is the
+[61:47] breakdown?
+[61:49] I told you yesterday, right?
+[61:51] What is the
+[61:53] breakdown here? Avalanche
+[61:55] Breakdown.
+[61:57] Why Avalanche?
+[61:59] Because there is light doping.
+[62:01] In heavy doping,
+[62:03] there is a zener breakdown.
+[62:05] So, here Avalanche breakdown is seen.
+[62:07] So, if you
+[62:09] put more than
+[62:11] the breakdown voltage,
+[62:13] then what will happen?
+[62:15] Then ICBO
+[62:17] increases rapidly.
+[62:19] Then it will increase very quickly.
+[62:23] Okay?
+[62:25] In this way,
+[62:27] the junction breakdown will be increased.
+[62:29] Okay?
+[62:35] Now, see here,
+[62:37] if you make a graph of ICBO,
+[62:39] then
+[62:41] the reverse saturation current is almost constant.
+[62:43] But don't even think
+[62:45] that it is exactly
+[62:47] constant.
+[62:49] Don't even think
+[62:51] about IC.
+[62:53] IC versus
+[62:55] VBC.
+[62:57] So, the reverse saturation
+[62:59] current increases very slowly.
+[63:01] It increases very slowly.
+[63:03] It is very slow.
+[63:05] But, son, it will increase immediately
+[63:07] as soon as you reach
+[63:09] the reverse breakdown.
+[63:11] Sir, but we used to make the third quadrant.
+[63:13] No problem, son.
+[63:15] I also showed the reverse bias voltage
+[63:17] positively.
+[63:19] I also showed the reverse current positively.
+[63:21] So, in one way, the third
+[63:23] reflection came.
+[63:25] The third reflection came.
+[63:27] In the first one.
+[63:29] This is understood as BVBC.
+[63:31] This is understood as BVBC.
+[63:33] So, what do we say?
+[63:35] Son, gradually
+[63:37] this current increases.
+[63:39] This was ICBO.
+[63:41] And as soon as the breakdown comes,
+[63:43] your current increases immediately.
+[63:45] Your current
+[63:47] increases immediately.
+[63:49] What do we say, son?
+[63:51] That IC is
+[63:53] M times ICBO.
+[63:55] Where M is
+[63:57] the
+[63:59] multiplication factor.
+[64:01] I mean, this current
+[64:03] is increasing with the voltage.
+[64:05] I am telling you its relation.
+[64:07] You have shown this current
+[64:09] gradually.
+[64:11] I am telling you its relation.
+[64:13] How is it increasing?
+[64:15] 1 minus
+[64:17] VCB
+[64:19] by
+[64:21] BVCB
+[64:23] to the power
+[64:25] N.
+[64:27] Okay?
+[64:29] To the power N.
+[64:31] There is N here.
+[64:33] From 3 to 6.
+[64:35] Okay?
+[64:37] So, I am talking about this region.
+[64:43] VCB
+[64:45] BVC.
+[64:47] So, you are talking about this region.
+[64:49] Ajay Kumar,
+[64:51] basically, there is another video
+[64:53] of analog electronics in which
+[64:55] I have taught in complete English.
+[64:57] That is already uploaded on this channel.
+[64:59] You will find the same content there.
+[65:01] You can watch that playlist.
+[65:03] The name of that playlist is
+[65:05] Tesla batch analog electronics.
+[65:07] Since the last time I taught this entire course
+[65:09] in English, this time I am taking in Hindi.
+[65:11] Surendra, you tell me.
+[65:13] The current in reverse bias
+[65:15] is drift or diffusion.
+[65:17] You tell me.
+[65:21] Yes, there is a rating of BJT
+[65:23] because we will have to tell the manufacturer
+[65:25] who has manufactured the device.
+[65:27] He will tell us
+[65:29] how much voltage can be run
+[65:31] by which the punch through is not there.
+[65:33] So, this is the responsibility of the manufacturer.
+[65:35] When you know, Surendra is over.
+[65:37] Right?
+[65:39] So, I know that
+[65:41] when I am saying that this is the reverse bias
+[65:43] and the current of the reverse bias is ICB,
+[65:45] then it must be because of the drift.
+[65:47] Right?
+[65:49] Tell me.
+[65:51] Did you understand this?
+[65:55] So, what did we say?
+[65:57] As you increase the voltage,
+[65:59] gradually the current increases
+[66:01] and as the break down increases,
+[66:03] it increases immediately.
+[66:05] There will be a break down on one voltage.
+[66:07] Okay?
+[66:09] Clear?
+[66:11] So far, everything is shining.
+[66:13] Now, look at its characteristics.
+[66:15] The first thing is
+[66:17] its input resistance is very low.
+[66:19] Why, sir?
+[66:21] Because, look,
+[66:23] which is the highest current
+[66:25] in the three currents?
+[66:29] And when the three currents
+[66:31] have the highest current,
+[66:33] then what is the lowest?
+[66:35] RE will be lowest.
+[66:37] So, its input current
+[66:39] is lowest.
+[66:41] Did you understand?
+[66:43] Highest output resistance.
+[66:45] What did you write?
+[66:47] VA upon ICQ.
+[66:51] Why don't you put it?
+[66:53] Otherwise, you will eat my life.
+[66:55] VA upon IC.
+[66:57] VA upon IC.
+[66:59] Okay?
+[67:01] How can you do an offline class
+[67:03] by doing it?
+[67:05] If I teach offline in my next life,
+[67:07] then you will come, but in the next life,
+[67:09] there will be a gate.
+[67:11] Okay?
+[67:13] Now, the lowest current gain is alpha.
+[67:15] Because, what is its current gain?
+[67:17] IC by IE.
+[67:19] Output current by input current.
+[67:21] And alpha, you know,
+[67:23] is the smallest gain in the three.
+[67:25] Alpha, beta, gamma, you told yesterday.
+[67:27] Alpha is smaller than 1.
+[67:29] Beta is much bigger.
+[67:31] It is 1 plus beta.
+[67:33] So, the smallest current gain.
+[67:35] Highest voltage gain.
+[67:37] Its voltage gain is VCB
+[67:39] by VEB.
+[67:41] So, this is the highest.
+[67:43] Okay?
+[67:45] Okay?
+[67:47] Voltage gain, but you still don't take it out.
+[67:49] We will take it out in amplifier.
+[67:51] In amplifier.
+[67:53] Moderate power gain.
+[67:55] What is power gain?
+[67:57] Power gain is
+[67:59] gain multiplied by current gain.
+[68:01] So, when brother,
+[68:03] voltage gain is highest
+[68:05] current gain is lowest,
+[68:07] then the product of both will be
+[68:09] somewhere in the middle.
+[68:11] That is why it has become moderate.
+[68:13] Moderate power gain.
+[68:15] Zero phase shift.
+[68:17] Zero phase shift means,
+[68:19] V naught and V in
+[68:21] have same phase.
+[68:23] Means, if you put sign omega t in input,
+[68:27] then you will get sign omega t in output.
+[68:29] When you will read the amplifier,
+[68:31] all these things will be derived.
+[68:33] Power gain, voltage gain,
+[68:35] phase shift.
+[68:37] All these things will be derived.
+[68:39] Large bandwidth.
+[68:41] What is its logic?
+[68:43] Gain into bandwidth is constant.
+[68:45] Its current gain is lowest.
+[68:49] Alpha low.
+[68:51] So, bandwidth is high.
+[68:53] So,
+[68:55] with this logic, its bandwidth is
+[68:57] quite high.
+[68:59] I will also read the significance of bandwidth
+[69:01] in advance.
+[69:03] After that, I will talk about bandwidth.
+[69:05] What is bandwidth?
+[69:07] What is its physical significance?
+[69:09] In case of amplifier.
+[69:13] Look.
+[69:15] Physics of
+[69:17] What is written?
+[69:19] Physics Sohind.
+[69:21] We are asking how input and output are decided?
+[69:23] It is already decided.
+[69:25] You don't have to do anything in this.
+[69:27] The configuration that was given,
+[69:29] he told.
+[69:31] You cannot take output on the
+[69:33] emitter on the collector.
+[69:35] The base is common.
+[69:37] Now, if you give input on the collector
+[69:39] and output on the emitter,
+[69:41] then the matter of the inverse active region
+[69:43] will come.
+[69:45] Where BJT is in danger of burning.
+[69:47] What will you have to do?
+[69:49] The output base on the emitter and
+[69:51] output on the collector is common.
+[69:53] Now, the player is common.
+[69:55] You can make him captain in both teams.
+[69:57] Think about it.
+[69:59] Who will be the captain?
+[70:01] The common one will play from both sides.
+[70:03] This is clear.
+[70:05] All points.
+[70:07] Now, where is its application?
+[70:09] As a constant current source.
+[70:11] If you want to implement a current source,
+[70:13] then your common base
+[70:15] configuration is used.
+[70:17] This is a non-inverting voltage amplifier.
+[70:19] This means
+[70:21] because it gives 0 degree phase shift.
+[70:23] That is why
+[70:25] you can use it as a
+[70:27] non-inverting voltage amplifier.
+[70:29] That is, output and
+[70:31] input will be in the same phase.
+[70:33] Impedance
+[70:35] matching device between low
+[70:37] and high impedance. Why?
+[70:39] Because its input
+[70:41] resistance is low
+[70:43] and output resistance is high.
+[70:45] That means, if you want to
+[70:47] convert low resistance to high resistance
+[70:49] or high to low,
+[70:51] then you can use the common base.
+[70:53] As the input
+[70:55] increases, the resistance increases.
+[70:57] As a high frequency amplifier
+[70:59] because its bandwidth is large.
+[71:01] The bandwidth is large.
+[71:03] That means, it can handle
+[71:05] the large frequency.
+[71:07] Do you understand?
+[71:09] So, all these
+[71:11] have come from its property.
+[71:13] Now,
+[71:15] a great question is
+[71:17] where do we use BJT?
+[71:19] Brother, we use BJT
+[71:21] in Amplifier.
+[71:23] We use BJT in Digital
+[71:25] in Logic Family.
+[71:27] Because if you have
+[71:29] used a little digital lab
+[71:31] in college, then
+[71:33] there are 7400 series of logic gates.
+[71:35] In which, NAND gate, NOR gate,
+[71:37] NOT gate and gates are all
+[71:39] made from BJT.
+[71:41] The 7400 series
+[71:43] which is used in college
+[71:45] to put it on the breadboard,
+[71:47] are made from all the chips from BJT.
+[71:49] So, BJT is used in
+[71:51] Digital and Analog
+[71:53] as an amplifier.
+[71:55] Now, BJT has become a very old device.
+[71:57] Now, BJT has become
+[71:59] a very old device. That is why,
+[72:01] it was replaced by MOSFET.
+[72:03] Then, MOSFET also became old.
+[72:05] So, who replaced MOSFET?
+[72:07] FinFET replaced it.
+[72:09] Now, BJT has become a very old device.
+[72:11] But our course is stuck on BJT.
+[72:13] Now, Amit Sahab is saying,
+[72:15] Sir, give a question. Amit, tell me.
+[72:17] I will give you a question.
+[72:19] What is written in the second point of this slide?
+[72:21] Now, think logically.
+[72:23] Brother, what question should I ask on the theory?
+[72:25] Give a question.
+[72:27] Until now, you have not made
+[72:29] any equation numerical.
+[72:31] So, what will you question?
+[72:33] Dear, IGBT is a power electronic device.
+[72:35] Analog electronic device is not IGBT.
+[72:37] It will go here.
+[72:39] After BJT, IGBT came.
+[72:41] It came in analog.
+[72:43] It is a constant current source.
+[72:45] Because here, IC is alpha IE.
+[72:47] And alpha is
+[72:49] very very close to 1.
+[72:51] So, IC will become
+[72:53] equal to IE.
+[72:55] Okay?
+[72:59] Let's move ahead.
+[73:01] If your talks have been completed,
+[73:03] if they have not,
+[73:05] then let's do more.
+[73:07] More than half of the children,
+[73:09] they are worried.
+[73:11] That is why they are worried about
+[73:13] how to understand BJT.
+[73:15] Right?
+[73:17] Do you know the problem?
+[73:19] God has understood us.
+[73:21] But, I am afraid that
+[73:23] analog cannot be made from me.
+[73:25] If analog cannot be made from me,
+[73:27] it means that
+[73:29] if any such question comes
+[73:31] which cannot be made from us,
+[73:33] it means that you are starting to drown yourself.
+[73:35] It means that you won't be able to understand
+[73:37] what is going on.
+[73:39] When you understand everything,
+[73:41] it is a good thing.
+[73:43] Analog is not something that
+[73:45] no one can solve.
+[73:47] It is very easy.
+[73:49] Now, there is no lab.
+[73:51] There is no lab.
+[73:53] Now, let's move on to the next configuration.
+[73:55] Common emitter configuration.
+[73:57] If the emitter is playing
+[73:59] from both the sides,
+[74:01] then we have
+[74:03] 2 o'clock base and collector
+[74:05] for input and output.
+[74:07] We cannot give input on the collector
+[74:09] because it will go in reverse active.
+[74:11] If the device gets damaged,
+[74:13] then we will give input on the base.
+[74:15] So, the base terminal
+[74:17] will work like input.
+[74:19] And the collector terminal
+[74:21] will work like
+[74:23] output.
+[74:25] And this emitter
+[74:27] will become common.
+[74:29] Will become common.
+[74:31] This is the most popular
+[74:33] configuration of BJT.
+[74:35] It means that
+[74:37] 90% of the questions
+[74:39] are made from here.
+[74:41] 90%
+[74:45] with common emitter.
+[74:47] Okay.
+[74:49] And for a long time, if the PNP and PNP are playing,
+[74:51] then let's play NPN for a while.
+[74:53] Okay. So, we have taken NPN.
+[74:55] Now, understand this circuit.
+[74:57] This is your terminal.
+[74:59] Base terminal.
+[75:01] This is emitter.
+[75:03] And this is the collector.
+[75:05] Okay.
+[75:07] This is NP and this is N.
+[75:09] Now, you have given
+[75:11] input between base and emitter.
+[75:13] Here, the PNP
+[75:15] has been forward biased.
+[75:17] The base region of PNP
+[75:19] you have forwarded it.
+[75:21] Connected with positive.
+[75:23] And the N of emitter is connected with negative.
+[75:25] So, you have forwarded this junction.
+[75:27] Base emitter.
+[75:29] Can you see? And if you have to
+[75:31] apply resistance, I told you yesterday
+[75:33] so that I can limit the current.
+[75:35] So, this is my
+[75:37] forward bias.
+[75:39] What is this?
+[75:41] Forward bias.
+[75:43] Now, don't give this second supply
+[75:45] to the collector.
+[75:47] Don't give it to the collector because
+[75:49] emitter is common this time.
+[75:51] So, where do you have to give it between
+[75:53] the collector and emitter?
+[75:55] Look at this.
+[75:57] You have connected this positive terminal
+[75:59] from the end.
+[76:01] You have connected the positive terminal
+[76:03] from the end.
+[76:05] If the positive of the battery is connected
+[76:07] from the end, then the
+[76:09] collector base region
+[76:11] will be reversed.
+[76:13] Now, don't think that
+[76:15] one junction is collector emitter
+[76:17] and one is base emitter.
+[76:19] Junctions are the same.
+[76:21] But, by giving positive
+[76:23] on the collector, the
+[76:25] collector base is reversed.
+[76:27] By giving forward on the base emitter,
+[76:29] this one is forwarded.
+[76:31] The junction does not change.
+[76:33] It is changing the common terminal for the supply.
+[76:35] Don't think that if it is a common emitter
+[76:37] then there will be an emitter in the
+[76:39] transistor in the middle.
+[76:41] The transistor is the same.
+[76:43] The base is in the middle.
+[76:45] So, there are only two junctions.
+[76:47] This junction is the collector base junction
+[76:49] because we keep the reverse bias.
+[76:51] And this junction is the emitter base junction
+[76:53] which keeps the forward bias.
+[76:55] Okay?
+[76:57] But this is the difference.
+[76:59] The supply of the collector is
+[77:01] between the emitter and the collector.
+[77:03] And the supply of the base is between
+[77:05] the base and the emitter.
+[77:07] Do you understand?
+[77:09] Electrical connections have changed.
+[77:11] The construction of the device has not changed.
+[77:13] Don't get confused
+[77:15] about this.
+[77:17] Don't get confused.
+[77:19] The connection has been cleared.
+[77:21] Tell me.
+[77:23] Keep this in mind.
+[77:25] In any case,
+[77:27] you will not give input to the collector.
+[77:29] The collector can become
+[77:31] output but it can never
+[77:33] become the input.
+[77:35] Okay? If you know this
+[77:37] and you know the common terminal
+[77:39] then you can easily judge the input and output.
+[77:41] If the emitter is common
+[77:43] then the base or the collector
+[77:45] cannot be connected to the collector
+[77:47] then the input will be in the base
+[77:49] and the collector will go to the output.
+[77:51] If the emitter or the collector
+[77:53] cannot be connected to the collector
+[77:55] then it will be connected to the emitter.
+[77:57] Okay?
+[77:59] Now let's talk about the input
+[78:01] characteristic of this.
+[78:03] So we say input
+[78:07] is connected between
+[78:11] base and emitter.
+[78:15] Okay?
+[78:21] Okay?
+[78:25] This means
+[78:27] your input current
+[78:29] cannot be connected to the emitter.
+[78:31] So you have to take the base.
+[78:35] And the input voltage
+[78:37] because it is NPN.
+[78:39] NPN cannot be connected to the emitter.
+[78:41] It cannot be connected to the emitter.
+[78:43] If the emitter was in your PNP
+[78:45] then you will take BE here.
+[78:47] Do you understand?
+[78:49] I had told you that
+[78:51] in NPN and PNP
+[78:53] the direction of the current
+[78:55] and along with that
+[78:57] the polarity of the voltage is reversed.
+[78:59] So you had said in PNP that
+[79:01] the voltage will be EB.
+[79:03] So which voltage will you take in NPN?
+[79:05] BE.
+[79:07] Which voltage will you take in NPN?
+[79:09] Now if you make
+[79:11] this characteristic
+[79:13] if you make
+[79:15] this characteristic
+[79:25] then
+[79:27] IB
+[79:29] and VB will come here.
+[79:31] You know that the base emitter junction
+[79:33] is like a diode.
+[79:35] Okay?
+[79:37] You know that the base emitter junction
+[79:39] is like a diode.
+[79:41] If it is like a diode
+[79:43] then the characteristic will be like this.
+[79:45] And what will you say in this?
+[79:47] VCE
+[79:49] Do not say CB
+[79:51] because this time there is no
+[79:53] voltage in the name of CB.
+[79:55] Your output voltage
+[79:57] is not between the collector
+[79:59] and the emitter
+[80:01] and the base.
+[80:03] If you see this supply
+[80:05] this is between the collector emitter
+[80:07] of the output side.
+[80:09] It is not between these two.
+[80:11] Output and common terminal.
+[80:13] The voltage measured
+[80:15] will be with respect to common terminal.
+[80:17] So between the base and emitter
+[80:19] the common terminal
+[80:21] will be with respect to
+[80:23] the common terminal.
+[80:25] So the voltage will always be measured
+[80:27] with respect to the common terminal.
+[80:29] Did you understand this?
+[80:31] Okay?
+[80:33] So I will also write
+[80:35] always measure
+[80:37] all voltages
+[80:47] with respect to
+[80:49] common terminal.
+[80:55] Okay?
+[80:57] Tell me
+[80:59] are you clear with me?
+[81:01] You are only changing the electrical connection.
+[81:03] No, it is not necessary that the emitter is grounded.
+[81:05] Who said that?
+[81:07] There may be a resistance on the emitter.
+[81:09] There may be a voltage on the emitter.
+[81:11] There may be a negative voltage on the emitter.
+[81:13] There may be a voltage on the emitter.
+[81:15] It is not necessary.
+[81:17] Whatever is the terminal common
+[81:19] which is connected to both the input and output
+[81:21] that is the emitter.
+[81:23] What is the polarity?
+[81:25] It is not coming.
+[81:27] NPN is like
+[81:29] NPN
+[81:31] NPN is
+[81:33] the base P and emitter N.
+[81:35] So what is the voltage?
+[81:37] It is emitter from the base.
+[81:39] Because it is a forward bias.
+[81:41] If this was P and NP
+[81:43] then the emitter would be P
+[81:45] and your base would be N.
+[81:47] So you take EB
+[81:49] and subtract N from P.
+[81:51] Now this junction is reverse.
+[81:53] The collector is always reverse.
+[81:55] So take N first
+[81:57] and P later.
+[81:59] So if N is here in the collector
+[82:01] then what will you take? CB or CE
+[82:03] and if it was PNP
+[82:05] then the collector P
+[82:07] then you take N from P
+[82:09] because of the voltage reverse
+[82:11] and say BC.
+[82:13] Do you understand? Architect.
+[82:15] You have to
+[82:17] take the voltage from P
+[82:19] to N in the base emitter.
+[82:21] On the collector side
+[82:23] you have to take N voltage.
+[82:25] Now it is clear
+[82:27] when it was PNP
+[82:29] PNP
+[82:31] then the emitter was P and the base was N
+[82:33] so you were taking EB for forward.
+[82:35] NPN is base P and emitter is N
+[82:37] so you take EB.
+[82:39] Think like this.
+[82:41] Always keep the base forward.
+[82:43] Take polarity from this.
+[82:45] Keep the collector base reverse.
+[82:47] Take polarity from that.
+[82:49] You know the current direction
+[82:51] so you know P to N.
+[82:53] The current direction is P to N only.
+[82:55] It has been clear
+[82:57] till here.
+[82:59] Now let's come to
+[83:01] the output characteristics.
+[83:03] Output characteristics.
+[83:05] Before making
+[83:07] the output characteristic
+[83:09] what I say is
+[83:11] that
+[83:13] the output terminal is the collector
+[83:15] then the output current
+[83:17] will be IC
+[83:19] and the output voltage
+[83:21] will be VCE.
+[83:23] You know the voltage
+[83:25] will always be measured
+[83:27] with respect to the common terminal.
+[83:29] Common is emitter
+[83:31] so you always
+[83:33] will not be in common respect.
+[83:35] Now what will you say here?
+[83:37] See how the voltage will be taken.
+[83:39] Sorry, characteristic.
+[83:43] Here the characteristic
+[83:45] comes like this.
+[83:49] IC
+[83:51] versus
+[83:53] VCE.
+[83:55] So
+[83:57] what is the characteristic?
+[84:01] Gradually increases
+[84:03] and then
+[84:05] becomes constant.
+[84:07] See
+[84:17] this type.
+[84:19] It becomes constant.
+[84:21] Sir, why did not
+[84:23] your flat graph come here?
+[84:25] Look
+[84:27] now listen to me carefully.
+[84:29] Last time you were making
+[84:31] IC versus VCE.
+[84:33] IC versus VBC.
+[84:35] Okay.
+[84:37] Last time you were making
+[84:39] IC versus VBC.
+[84:41] Let me go back.
+[84:47] This is what you were making
+[84:49] IC versus VBC.
+[84:51] What was the meaning of VBC?
+[84:53] Look here.
+[84:55] What did I say about VBC?
+[84:57] VBC means reverse bias voltage.
+[84:59] Do you understand?
+[85:01] Reverse bias voltage.
+[85:07] Okay.
+[85:09] So VBC was reverse bias.
+[85:11] So when my children were increasing
+[85:13] reverse bias here.
+[85:15] So this was in reverse bias.
+[85:17] If you are taking the positive value
+[85:19] of VBC.
+[85:21] So that is reverse.
+[85:23] And when the collector
+[85:25] base is reverse, then this whole region
+[85:27] was active region.
+[85:29] Which region was active?
+[85:31] Now look here.
+[85:33] When you make this graph.
+[85:35] This one.
+[85:37] Here VBC was positive.
+[85:39] That is,
+[85:41] collector base was reverse bias.
+[85:43] So this was active region.
+[85:45] Okay.
+[85:47] And here when VBC was
+[85:49] negative in this dotted one.
+[85:51] So if it was positive
+[85:53] if it was reverse, then it would be
+[85:55] negative forward.
+[85:57] So this was the region.
+[85:59] Collector base junction.
+[86:01] So it was saturation.
+[86:03] Now what happens when VCE.
+[86:05] You are talking about VCE.
+[86:07] So VCE is not directly
+[86:09] the collector base voltage.
+[86:11] VCE is
+[86:13] the voltage between the collector and the emitter.
+[86:15] It is not the collector to the
+[86:17] base voltage.
+[86:19] It is not the collector to the
+[86:21] base voltage.
+[86:23] That is why my child.
+[86:25] Let's go ahead.
+[86:27] What happened to it?
+[86:29] Yes.
+[86:31] Till here, my child.
+[86:33] This is 0.2 volts.
+[86:35] Here
+[86:37] collector base
+[86:39] junction is forward.
+[86:41] That is why it is saturation.
+[86:43] And
+[86:45] what happens here?
+[86:47] Here the collector base is
+[86:49] reverse.
+[86:51] So this becomes active region.
+[86:53] Here it was directly CB.
+[86:55] So CB is positive, then reverse.
+[86:57] And CB is negative, then forward.
+[86:59] But here it is CEE.
+[87:01] Looking at CEE.
+[87:03] You cannot tell directly forward and reverse.
+[87:05] So the threshold in CEE
+[87:07] is not 0, it is 0.2.
+[87:09] So here your region is
+[87:11] saturation.
+[87:13] What is being made? Saturation.
+[87:15] And here your region is being made
+[87:17] active.
+[87:19] And the current level
+[87:21] is coming. Beta IB.
+[87:23] Beta IB.
+[87:25] Okay.
+[87:27] Did you understand this?
+[87:29] Because now the input current is
+[87:31] IB. This time you will not
+[87:33] put the relation of alpha IE.
+[87:35] What will you put this time? Beta IB.
+[87:37] It should also have ICEO.
+[87:39] But I have not shown that.
+[87:41] Actually it is Beta IB
+[87:43] plus ICEO.
+[87:45] Beta IB plus ICEO.
+[87:47] Everyone is shocked.
+[87:49] Now Mr. Sunny is asking.
+[87:51] Collector is always bigger than base and emitter
+[87:53] than why hair change.
+[87:55] There is no change, just draw it randomly.
+[87:57] Every time I will not enter
+[87:59] physical construction.
+[88:01] Actually it happens that
+[88:03] transistors are not directly fabricated
+[88:05] like NPN or PNP.
+[88:07] If you remember the first slide of yesterday
+[88:09] then its construction
+[88:11] was very complex.
+[88:13] It was not so simple like NPN or PNP.
+[88:15] So don't think that this is how the device
+[88:17] looks like. This is just
+[88:19] the representation.
+[88:21] I will not talk about doping in representation.
+[88:23] I will not talk about size in representation.
+[88:25] Do you understand?
+[88:27] I will not say that every time N plus
+[88:29] P and then N minus
+[88:31] should be shown. Write NPN.
+[88:33] It is simple. You will understand.
+[88:35] So we do not have to talk about doping
+[88:37] and sizing.
+[88:39] When we are actually talking about the
+[88:41] representation. Okay.
+[88:43] I will write one more thing here.
+[88:45] I will write the relation of current voltage.
+[88:47] IB is
+[88:49] IBS. That is the saturation
+[88:51] current.
+[88:53] E to the power VBE
+[88:55] by
+[88:57] eta VT
+[88:59] minus 1.
+[89:01] This is the exponential characteristic.
+[89:05] This is an experimental value.
+[89:07] It is a predefined value. We did not
+[89:09] derive this point 2.
+[89:11] We observed that the transistor
+[89:13] at the bottom remains in saturation
+[89:15] and at point 2
+[89:17] remains in active region.
+[89:19] Do you understand?
+[89:31] Tell me.
+[89:33] Is everyone clear here?
+[89:35] Tell me quickly.
+[89:43] Now
+[89:45] as we know
+[89:47] that
+[89:49] the cut-in of silicon transistor
+[89:51] takes 0.7.
+[89:53] So that value is already given to us.
+[89:55] It is already given to us.
+[89:57] It is a very good thing Rohit.
+[89:59] Your 65
+[90:01] out of 18 power electronics.
+[90:03] But I expect you will score better than this.
+[90:05] In your upcoming exams.
+[90:07] We can take it even better.
+[90:09] Now see this.
+[90:11] Son.
+[90:13] If I make another graph.
+[90:15] And what should I do this time?
+[90:17] I will make a different base current.
+[90:19] Okay.
+[90:21] I am making another graph.
+[90:23] But I am making a different base current.
+[90:25] Look at one graph.
+[90:27] Increase the base current.
+[90:31] Second graph.
+[90:33] Increase the base current.
+[90:37] Third graph.
+[90:39] This region.
+[90:47] Under 0.2V.
+[90:49] This will be the saturation.
+[90:55] This will be your active.
+[90:57] And do you know what is cut-off?
+[90:59] In cut-off
+[91:01] there is no current from the emitter.
+[91:03] Because you have kept the emitter
+[91:05] reversed.
+[91:07] Or there is no current from the base.
+[91:09] When there is no current from the base.
+[91:11] Then the collector's current is zero.
+[91:15] Okay.
+[91:17] This is your cut-off.
+[91:19] That there is no current on the collector.
+[91:21] Because the input junction.
+[91:23] The input junction.
+[91:25] We reverse it.
+[91:27] We bias it.
+[91:29] If we bias it.
+[91:31] Then there will be no current from the input.
+[91:33] Meaning no one will go to the output.
+[91:35] Once explain the diagram next to the graph.
+[91:37] Explain the diagram next to the graph.
+[91:39] The one next to the graph.
+[91:43] There is no diagram here.
+[91:45] There is a graph here.
+[91:47] What diagram are you talking about?
+[91:53] Okay.
+[91:55] Now look.
+[91:57] If you want here.
+[91:59] You can remove the input resistance.
+[92:01] So you will say.
+[92:03] Input resistance.
+[92:05] Is one by the slope.
+[92:09] Because the slope will be current by voltage.
+[92:11] So.
+[92:13] Del VBE by
+[92:15] Del IB.
+[92:17] Now you just removed it.
+[92:19] Del VEB.
+[92:21] Del VEB.
+[92:23] Upon.
+[92:25] Del IE.
+[92:27] You had taken IE earlier.
+[92:29] What do you say?
+[92:33] You say.
+[92:35] You had taken RE.
+[92:39] If PNP was EB.
+[92:41] And NPN was BE.
+[92:43] You had taken this.
+[92:45] Now this IE is.
+[92:47] This is 1 plus beta IB.
+[92:49] It is.
+[92:51] IE and IB ratio.
+[92:53] It is 1 plus beta.
+[92:59] Do you understand?
+[93:01] IE and IB ratio.
+[93:03] It is 1 plus beta.
+[93:05] So look.
+[93:07] 1 plus beta RE.
+[93:11] So.
+[93:13] The input resistance of this connection.
+[93:15] My brother.
+[93:17] You understand.
+[93:19] The input resistance of this connection.
+[93:21] 1 plus beta RE is coming.
+[93:23] It has increased.
+[93:25] That is why I said.
+[93:27] It is small.
+[93:29] The resistance of the last connection.
+[93:31] It is the smallest.
+[93:33] I said.
+[93:35] I have ignored the ICO.
+[93:37] And nothing else.
+[93:39] Did you understand this?
+[93:41] 1 plus beta RE.
+[93:43] This resistance will be very useful.
+[93:45] 1 plus beta RE.
+[93:47] The input resistance in the common emitter.
+[93:49] That is.
+[93:51] 1 plus beta times.
+[93:53] The input resistance.
+[93:55] The common base configuration.
+[93:57] Of common base configuration.
+[93:59] Of common base configuration.
+[94:01] And it is like this.
+[94:03] Here.
+[94:05] Saturation region.
+[94:07] Input resistance.
+[94:09] Output resistance.
+[94:11] If I.
+[94:19] Talk about output resistance.
+[94:21] Now.
+[94:23] Output resistance.
+[94:25] Here.
+[94:27] Del V C E.
+[94:29] Upon Del I C.
+[94:31] Again.
+[94:33] This will be 1 by.
+[94:35] Slope of output.
+[94:37] Characteristic.
+[94:43] So.
+[94:45] Even here.
+[94:47] Same thing is done here.
+[94:51] Here.
+[94:53] Even here.
+[94:55] We make a graph.
+[94:57] Output characteristic.
+[94:59] And this output resistance is coming.
+[95:01] Son.
+[95:03] This is the change of one scientist.
+[95:05] Whose name was early.
+[95:07] Because he told.
+[95:09] By changing the reverse biasing.
+[95:11] What is it?
+[95:13] By changing the reverse biasing.
+[95:15] Your current.
+[95:17] It changes.
+[95:19] So he told.
+[95:21] That you.
+[95:23] Do not take it constantly.
+[95:25] In fact.
+[95:27] You have to take it while increasing.
+[95:29] If you take it while increasing.
+[95:31] Then what happens.
+[95:33] When you extend it.
+[95:35] Then it meets somewhere.
+[95:37] Which is called.
+[95:39] Early voltage.
+[95:41] What does it say? Early voltage.
+[95:43] So output resistance is always.
+[95:45] Early voltage.
+[95:47] By I.C.
+[95:49] Early voltage.
+[95:51] By I.C.
+[95:53] Okay.
+[95:55] Who told this.
+[95:57] The scientist of early name.
+[95:59] So this slope is coming.
+[96:01] Why is this slope coming.
+[96:03] Due to base width modulation.
+[96:05] Okay.
+[96:07] Which I told.
+[96:09] When the reverse bias increases.
+[96:11] The base width decreases.
+[96:13] And if the base width decreases.
+[96:15] Then what happens.
+[96:17] It happens.
+[96:19] That brother.
+[96:21] Your base width decreases.
+[96:23] Your collector.
+[96:25] And ammeter current increases.
+[96:27] The base current decreases.
+[96:29] The base current decreases.
+[96:31] Do you understand.
+[96:33] Do you understand.
+[96:35] And you people were asking.
+[96:37] Why is V A by I.C.
+[96:39] You can understand that too.
+[96:41] Why is V A by I.C.
+[96:43] You can understand that too.
+[96:49] As it is.
+[96:51] This is the current.
+[96:53] And it is going like this.
+[96:55] The same way.
+[96:57] Now this is your I.C.
+[96:59] The voltage.
+[97:01] And the voltage.
+[97:03] From here to here.
+[97:05] It is approximately Va.
+[97:07] How is that.
+[97:09] Because this forward bias voltage
+[97:11] This voltage is very less than V-A.
+[97:13] How much do you think this voltage is?
+[97:15] How much does it come?
+[97:16] 100 volts?
+[97:17] 150 volts?
+[97:18] How much does it come?
+[97:19] Compared to that, this forward voltage is very less.
+[97:23] So, let's take this voltage approximately V-A.
+[97:27] If we take this V-A,
+[97:29] then the R-out here becomes 1 by slope.
+[97:33] Do you understand?
+[97:35] Now, the logic is clear.
+[97:37] How did I write V-A by IC?
+[97:39] This voltage is called approximately V-A.
+[97:42] You can't see it in the graph.
+[97:45] This is the voltage in the range of 2-3 volts.
+[97:48] And this is 100 volts.
+[97:49] But I can't make such a big graph
+[97:51] where I can show 2-3 volts
+[97:53] and 100 volts in the same graph.
+[97:56] Otherwise, the V-A intercept is very big.
+[97:59] I won't be able to show as much as I can.
+[98:01] Do you understand?
+[98:03] Tell me.
+[98:05] Do you understand everything?
+[98:08] Tell me quickly.
+[98:10] Tell me quickly.
+[98:14] Everyone is clear, right?
+[98:16] Now, let me tell you a little more about the saturation region.
+[98:19] Okay?
+[98:20] Let me tell you a little more about the saturation region.
+[98:28] Look a little.
+[98:37] Okay, this is it.
+[98:39] This is the doping.
+[98:41] This is your region.
+[98:44] Collector base emitter.
+[98:49] In base, there is moderate doping.
+[98:58] This is your high doping.
+[99:01] Now, let me tell you a little more about the saturation region.
+[99:04] This is your high doping.
+[99:06] Now, remember, my child.
+[99:11] And here is low doping.
+[99:14] Now, remember, I taught you a concept in the diode.
+[99:19] I said, my child, built-in voltage.
+[99:25] Built-in voltage.
+[99:27] The potential barrier of any p-n junction
+[99:32] which stops the charges from crossing
+[99:35] is like this.
+[99:37] Now, look, the base emitter doping is more than the collector base.
+[99:43] So, the collector base and emitter base are common.
+[99:47] But the doping of the emitter is high and the doping of the collector is low.
+[99:51] The doping of the emitter is high and the doping of the collector is low.
+[99:55] So, I can say that
+[99:57] Vbi for emitter base
+[100:04] is greater than Vbi for collector base.
+[100:09] Therefore, V gamma for emitter base
+[100:14] is greater than V gamma for collector base.
+[100:18] Everyone agrees with me that
+[100:21] the low voltage of emitter base is greater than the collector base.
+[100:25] Everyone agrees.
+[100:27] So, the low voltage of emitter base
+[100:31] is 0.7.
+[100:33] How much do we take? 0.7.
+[100:37] And we need less voltage to forward it.
+[100:42] If we want to forward it, then how much voltage do we need?
+[100:46] 0.5.
+[100:48] How much do we need? 0.5.
+[100:51] Okay?
+[100:52] We need this much for forward biasing.
+[100:54] We need less voltage for forward biasing.
+[100:57] We need more voltage for forward biasing.
+[100:59] Okay?
+[101:01] Now, I say that if you put 0 here.
+[101:06] 0.5 is the drop.
+[101:09] So, how much will be here?
+[101:10] Minus 0.5.
+[101:12] 0.7 is the drop.
+[101:13] How much will be here?
+[101:14] Minus 0.7.
+[101:16] Now, if I tell you to take out the collector to emitter
+[101:20] then you will say that it is minus 0.5.
+[101:23] Sir, subtract minus 0.7.
+[101:26] So, how much will be here?
+[101:28] 0.2V.
+[101:29] That is why it is called 0.2V.
+[101:31] The threshold of saturation
+[101:34] between saturation and active
+[101:36] comes to 0.2V in VCE.
+[101:41] Now, do you understand where 0.2 came from?
+[101:44] Do you understand where 0.2 came from?
+[101:46] If the doping was equal,
+[101:48] then it would have come to 0V.
+[101:51] If the doping was equal,
+[101:53] then it would have come to 0V.
+[101:56] Okay?
+[101:57] Is this clear?
+[101:58] Tell me, is this clear to everyone?
+[102:01] Now tell me, what is the problem with the slope?
+[102:05] If I talk about the slope here,
+[102:08] you have seen that VCE is less than VCB.
+[102:13] You have seen that VCE is less than VCB.
+[102:25] Therefore,
+[102:27] VA in common emitter
+[102:33] is less than VA in common base.
+[102:40] Therefore,
+[102:42] R out
+[102:45] in common emitter
+[102:48] is less than R out in common base.
+[102:52] That is why it was said that
+[102:53] the highest output resistance of common base is there.
+[102:56] Do you understand?
+[102:58] That is why it was said that
+[102:59] the highest output resistance of common base is there.
+[103:02] And look, I have shown you here too.
+[103:05] The collector emitter's voltage is 0.5.
+[103:08] The collector emitter's voltage is 0.5.
+[103:14] So the collector base voltage is more than the collector emitter.
+[103:19] Sir, actually I am asking, is the IC saturating?
+[103:22] So your doubt will be that,
+[103:25] sir, why did you say this region is active
+[103:28] and why did you call it saturation?
+[103:30] Isn't this the doubt?
+[103:32] Why did you call this region active?
+[103:34] And why did you call it saturation?
+[103:36] When the IC is saturating ahead.
+[103:41] Is this the doubt?
+[103:44] Mr. Arya.
+[103:52] Reverse bias?
+[103:53] Yes, so this is the doubt.
+[103:54] I will tell you this tomorrow.
+[103:56] Why did you call it that?
+[103:57] Many people say that scientists are wrong.
+[104:00] Scientists should have called it active and saturation.
+[104:04] But saturation and active, actually,
+[104:06] scientists never called it
+[104:08] by looking at the output characteristic.
+[104:11] This scientist called it by looking at the transfer characteristic.
+[104:15] Tomorrow, I will make you
+[104:17] do the transfer characteristic of this connection.
+[104:19] Okay?
+[104:23] Now look at this.
+[104:25] I will make you do one thing.
+[104:27] I have already told you the input resistance.
+[104:29] You will get some clarity.
+[104:32] Let's give you some clarity.
+[104:47] After this, I believe that
+[104:49] you will find these things a little easy.
+[104:59] Okay?
+[105:05] First of all, in the common base,
+[105:10] input characteristic,
+[105:13] I am not taking NPN.
+[105:15] That is why I am not writing EB.
+[105:18] I am not writing EB, I am writing BE.
+[105:21] Okay?
+[105:28] And here, EB versus
+[105:32] BE.
+[105:35] So here you will write IE.
+[105:50] Here you will write IB.
+[106:03] As much as you have learned so far, I am telling you all that.
+[106:07] Here it is VCB. If positive, then collector base, reverse bias and VCB negative, then collector base, forward bias.
+[106:25] Here it is VCE. If greater than 0.2, then collector base, reverse bias and VCE less than 0.2, then collector base, forward bias.
+[106:48] This is called saturation. This is called active.
+[106:59] This is what you have learned.
+[107:01] Then what did you learn? Output characteristic.
+[107:21] This is your characteristic. How do I write all three? I have not taught common collector yet.
+[107:30] Here the input resistance was RE, VT by IE. Here it was RB, VT by IB, which is 1 plus beta RE.
+[107:50] This is what happened.
+[108:20] Now here is R out, VA by IC. But whose VA was this? Collector base.
+[108:48] And here also R out, VA by IC. But this was collector to ammeter, which is less than collector to base.
+[109:00] This was less than this. So this was our output resistance relation.
+[109:06] So these are all the things that you have learned. Now it is clear that input output resistance, current relation, active saturation are all clear.
+[109:17] Now I did not talk about trans conductance because I did not tell you about trans conductance.
+[109:23] I did not tell you about trans conductance because I did not talk about trans conductance.
+[109:35] Clear everyone?
+[109:49] 5 milli ampere Nikunj's minimum current was not maximum. So the transistor will not be damaged.
+[109:56] Okay? So now we will continue tomorrow. I will fix all these configurations tomorrow.
+[110:03] I hope there is no fear from the configuration. And you keep putting PYQ here.
+[110:09] If there is a limit of 60 minutes, then watch a session every day. You can put gate PYQ by AIR1.
+[110:17] And this Sunday there is a scholarship test. Unacademy into gate academy combat.
+[110:21] It will be of 60 minutes. It will be at 11 o'clock this Sunday.
+[110:25] And you can win 100% scholarship here.
+[110:29] And if you join Unacademy now, you are getting 20% discount.
+[110:34] There will be a lot of new courses and crash courses on this.
+[110:38] And I am going to take a comprehensive course of power electronics, EMT and measurement at Unacademy.
+[110:45] So if you want to study, then join Unacademy quickly using code ANKIT ESC.
+[110:49] And if you join, there are two, there are two subscriptions plus iconic.
+[110:56] You will get to study from top teachers. As much as it is taught, its PDF will also be available.
+[111:02] And the full study material will also be available in PDF form.
+[111:06] Test series is also included. The children of Iconic, okay?
+[111:10] If the children of Iconic ask for new doubts, then their doubts will be answered via video solution.
+[111:16] Printed notes will be available to you.
+[111:20] One to one live mentorship will be given to you.
+[111:23] Strategy and study plan will be made and you can interact in open house via audio.
+[111:28] All these things are only in Iconic. Not in plus.
+[111:34] And what you have to do is go to Unacademy app and decide if you want to take plus or iconic.
+[111:39] You have to decide duration and you are getting 20% discount per year.
+[111:43] This will come back to 10%.
+[111:46] And look at what you have to do here.
+[111:49] If you look at the result here.
+[111:51] In the result, we took out 6 ranks in top 10 in Electrical.
+[111:56] Next year, you can also have a photo in this poster as a result of Gate 23.
+[112:00] But what you have to do is, if you want to shine like these stars, then join Unacademy.
+[112:05] And for my guidance, you have to use the code ANKITESC.
+[112:08] And look, if you have financial issues, then you can take it on EMI where you can pay monthly fees.
+[112:15] EMI will be approved in just 2 hours.
+[112:18] At least it will be paperwork and flexible tenure in which you can repay the loan.
+[112:23] Now in paperwork, it looks like a pen card but apply it in the name of a member in your family.
+[112:29] Whose salary is so that the bank can give them EMI.
+[112:32] There is a question on that link. Go to that link.
+[112:35] Click on Gate PYQ by AIR1.
+[112:36] There are videos in it. I have asked questions in the videos.
+[112:40] All the PYQ of Analog.
+[112:42] And now, if you go for distance learning program or books, you will get 20% off on that.
+[112:48] Using code ANKITESC.
+[112:50] And these are the latest batches in which the Maths we have started.
+[112:53] The batches of 2024 are starting from 15th of September, i.e. from tomorrow.
+[112:58] So you can cover Maths from Mr. Uma Maheshwar.
+[113:01] Polarity will remain the same for common base and common emitter.
+[113:08] Polarity is reversed in NPN and PNP.
+[113:11] And we are starting from Maths for Electrical EC.
+[113:23] And this is my telegram channel.
+[113:26] If you join this channel, all the links of the videos are published here.
+[113:28] So you can attend any lecture from here.
+[113:32] You will not miss any session.
+[113:34] And apart from this, this is my team's contact number.
+[113:38] If you need any kind of help, then press the YouTube kids.
+[113:41] Press plus and the iconic ones.
+[113:43] My team will call you and they will help you out.
+[113:46] Apart from this, if you want a PDF of this session, then you will get it on the Academy app.
+[113:50] What do you have to do?
+[113:52] You have to install the Academy app. You have to register.
+[113:54] Go to the community section on the app homepage.
+[113:58] You will get my community in Discover.
+[114:01] You will get all the PDFs there.
+[114:04] So thank you everyone. Thanks a lot.
+[114:06] We will meet tomorrow at the same time, same place.
+[114:08] Tomorrow, this basic part will be installed.
+[114:10] And the numerical portion will start from the day after tomorrow.
+[114:12] So see you tomorrow at 11.30.
+[114:14] Let's crack it.

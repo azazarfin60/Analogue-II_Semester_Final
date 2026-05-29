@@ -1,0 +1,308 @@
+Title: Stability in Feedback Amplifier Explained | Stability Analysis using Bode Plot
+URL: https://www.youtube.com/watch?v=CDmDXRGjbIU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in the previous videos, we have seen that what is feedback amplifier and we have also
+[00:16] seen the different feedback appellars of the amplifier.
+[00:20] Now in this type of amplifier, since we are using the feedback, so it is also important
+[00:25] to discuss the stability in this feedback amplifier.
+[00:29] So as we have discussed earlier, typically, this feedback amplifiers are using the negative
+[00:34] feedback.
+[00:36] So here, this is the open loop gain of the amplifier and this beta is the feedback factor.
+[00:42] And if you see the closed loop gain of this feedback amplifier, then it can be given
+[00:46] as a divided by this one plus a beta.
+[00:51] So typically, if you see, then this open loop gain of the amplifier is the function of
+[00:55] the frequency.
+[00:57] That means with the change in the frequency, the gain of the amplifier will also change.
+[01:03] So in general, it can be represented as the A of S and it shows that it is the function
+[01:09] of the frequency.
+[01:11] So as we have discussed earlier in this feedback amplifiers, typically, this feedback network
+[01:17] is the passive network.
+[01:19] So here during our discussion, we will assume that this feedback network is the frequency
+[01:24] independent.
+[01:25] So we can say that here, this beta is also frequency independent.
+[01:30] So now if we replace this S by G omega, then this closed loop gain that is X naught divided
+[01:36] by X S can be given by following expression.
+[01:40] So here, let's focus on this A beta term.
+[01:43] So here, since it is a complex term, so it will have both magnitude and the phase.
+[01:49] And at some frequency omega 1, it may happen that its magnitude will become 1 by
+[01:55] its phase will become 1 by 8 degree.
+[01:58] So basically, it indicates that this term is the negative or another words.
+[02:04] Now we will have the positive feedback in the circuit.
+[02:07] And with this values, if we see the value of this term, then that is equal to minus 1.
+[02:13] So due to that, now this rederminator will become 0 or another words.
+[02:18] The output of this feedback amplifier will become infinite.
+[02:21] That is even if there is a very small input, then also we will get the infinite output.
+[02:27] But if you see in the actual circuits, then the output cannot go beyond the massing voltages.
+[02:33] So in such conditions, we can say that a feedback amplifier is the unstable and it is not
+[02:39] amplifying the input signal linearly.
+[02:42] So the same thing can also be seen from the signal point of view.
+[02:47] So let's say this is the input signal to the feedback amplifier.
+[02:51] And let's say at some frequency omega 1, the phase shift of the A beta will become 1
+[02:57] at 8 degree or another words.
+[02:59] When this A beta is negative, then it means that the open loop gain of this amplifier is
+[03:04] the negative.
+[03:05] Because here, we are assuming that this feedback network is the passive network and it is made
+[03:11] up of only registers.
+[03:13] That means here, this feedback network will not add any phase shift.
+[03:18] That means the entire phase shift is added by this amplifier.
+[03:22] That means here, whenever we apply the input to this feedback amplifier, then this amplifier
+[03:28] will amplify the input and it will also add the 180 degree phase shift to the input signal.
+[03:34] So now this feedback network will send the fraction of the output signal back to the input
+[03:39] side.
+[03:40] And here at some frequency omega 1, since the magnitude of the A beta is equal to 1.
+[03:46] So this feedback signal XF will have the same amplitude as the XS.
+[03:51] But here, due to the 180 degree phase shift, the signal will get inverted.
+[03:56] So initially, when we turn on the circuit, then there is no feedback in the circuit.
+[04:02] Or in other words, this XF is equal to 0.
+[04:05] So when we just turn on the circuit, then this XI is equal to XS.
+[04:11] And after the first iteration, this will be the feedback signal.
+[04:15] So now, this feedback signal will get subtracted from the source signal.
+[04:20] So here, since the feedback signal is out of phase to the source signal, so after the
+[04:25] subtraction, basically these two signals will get head rhythm.
+[04:29] And due to that, now the input signal to the amplifier will have amplitude, that is
+[04:34] two times the source signal.
+[04:36] So once again, this amplifier will amplify and invert this input signal.
+[04:42] And once again, since the A beta is equal to 1, so the feedback signal, which is coming
+[04:47] back to the input side, will have the same amplitude as the XI.
+[04:51] But this signal is 180 degree phase shift head.
+[04:55] So once again, this feedback signal will get subtracted from the source signal.
+[05:01] And due to that, now the amplitude of the input signal XI will further increase.
+[05:07] So now this amplifier will further amplify and invert this output signal.
+[05:12] So in this way, with the e-chitration, the output of the feedback amplifier will keep
+[05:17] on increasing.
+[05:19] And in this way, the amplifier output will go towards the instability.
+[05:24] So the same concept is also used in the oscillators.
+[05:27] But when we use this circuit as an amplifier, then this will lead to the instability.
+[05:34] So as I said earlier, of course, the output of the amplifier cannot increase indefinitely.
+[05:40] And eventually, it will get restricted to the basing voltage of the circuit.
+[05:45] But still, because of this instability, it will not get the desired output.
+[05:50] So this condition arises when this A beta is greater than or equal to 1.
+[05:55] And this phase shift is equal to plus minus 180 degree.
+[05:59] But on the other hand, if this A beta is less than 1, then even the phase shift is 180
+[06:04] degree, then also this term will be less than 1.
+[06:09] And hence, the denominator will be non-zero.
+[06:13] So of course, since the denominator is less than 1, so the output will also increase.
+[06:19] But eventually, it will get settled to some finite voltage.
+[06:23] And hence, in this case, we will not face the issue of the instability.
+[06:28] So we can say that the issue of the instability will arise whenever this A beta is greater
+[06:33] than or equal to 1.
+[06:35] And this phase shift is equal to 180 degree.
+[06:38] That means we should have this condition in the feedback amplifier.
+[06:42] So in the actual feedback amplifier, to check the stability, we should focus on this term
+[06:48] A beta.
+[06:49] Where the A is the open look again of the feedback amplifier and the beta is the feedback
+[06:53] factor.
+[06:55] And here, this is the function of the S. For another words, this is the function of the
+[07:00] frequency.
+[07:02] So let's say, for some feedback amplifier, we are getting this type of expression for
+[07:07] the A beta.
+[07:09] So the question is, from this expression, how do we find the stability of the amplifier?
+[07:15] So there are a couple of ways to find the stability.
+[07:18] And one of the ways using the body plot.
+[07:21] So when we discuss the control system in detail, then we will learn about this body plot
+[07:25] in more detail.
+[07:27] But here, from the feedback amplifier perspective, let us learn some basics of the body plot.
+[07:32] And let us learn using this body plot, how to check the stability of any closed look system.
+[07:38] So if you see any body plot, then in any body plot, we are drawing the two plots that
+[07:44] is magnitude and the phase plot.
+[07:47] So while plotting the magnitude plot in a transfer function, or in this case, in this expression
+[07:52] of the A beta, then we have some constant amplitude.
+[07:55] And on the logarithmic scale, it can be represented as 20 log K. And on the magnitude plot,
+[08:02] it can be represented as the constant value.
+[08:05] So until we encounter any polar zero in the expression, this amplitude will remain constant.
+[08:11] So in this expression of the A beta, at some frequency omega 1, if we encounter the
+[08:16] zero, then from this frequency onwards, the amplitude will increase at the rate of 20 dB
+[08:22] per decayed.
+[08:23] On the other end, if we encounter the pole at the omega 1, then after this omega 1 frequency,
+[08:29] the amplitude of the plot will reduce at the rate of 20 dB per decayed.
+[08:34] That means we can say that the slope of this plot is equal to minus 20 dB per decayed
+[08:40] volume.
+[08:41] On the other end, in the expression of the A beta, if we have a pole at the origin,
+[08:46] then from omega is equal to 1 onwards, as we go forward, and the amplitude will reduce
+[08:51] at the rate of 20 dB per decayed.
+[08:54] And at this omega is equal to 1, the amplitude will be equal to 0 dB.
+[08:59] And similarly, if we have a simple zero at the origin, then as we go from omega is equal
+[09:04] to 1, then the magnitude of the plot will increase at the rate of 20 dB per decayed.
+[09:11] And at this omega is equal to 1, this magnitude will be equal to 0 dB.
+[09:16] That means below this omega is equal to 1, if we see the magnitude of the plot, then
+[09:20] that is equal to negative.
+[09:23] On the other end, in the expression of the A beta, if we have a multiple poles at the
+[09:27] specific frequency, for example, the two poles at the frequency omega 1, then from omega
+[09:34] 1 onwards, this magnitude plot will reduce at the rate of 40 dB per decayed.
+[09:40] That means if we have a simple pole at the specific frequency, then the magnitude will
+[09:44] reduce at the 20 dB per decayed.
+[09:47] But on the other end, if we have a two poles, then this amplitude will reduce at the rate
+[09:52] of 40 dB per decayed.
+[09:54] And similarly, suppose we have a three poles at the omega 1, then in that case, from
+[09:59] omega 1 onwards, this amplitude will reduce at the rate of 60 dB per decayed.
+[10:05] That means with each pole, this amplitude will reduce at the rate of 20 dB per decayed.
+[10:11] And the same is the case for the multiple zeros.
+[10:15] That means for example, if we have a two zeros at the specific frequency omega 1, then
+[10:20] from omega 1 onwards, this amplitude will increase at the rate of 40 dB per decayed.
+[10:26] So this is how, based on the expression of the A beta, we can plot this magnitude plot.
+[10:32] So similarly, now let us see how to draw the phase plot.
+[10:36] So for this phase plot, in the expression of the A beta, if we have a constant value,
+[10:41] and this phase shift is equal to zero.
+[10:44] Similarly, if we have a zero at the origin, and from the beginning, the phase shift will
+[10:50] be equal to plus 90 degree.
+[10:52] Likewise, if we have a pole at the origin, and the phase shift of the plot will be equal
+[10:57] to minus 90 degree.
+[10:59] But on the other hand, if we have a pole at the specific frequency omega 1, then let us
+[11:04] see how this phase changes.
+[11:07] So at low frequencies, up to 0.1 omega 1, we can assume that the phase is almost zero.
+[11:15] And from that point onwards, the phase starts reducing.
+[11:19] And as you can see, it will reach to the minus 90 degree at the 10 omega 1.
+[11:24] And at omega 1, if we see the phase shift, then that is equal to minus 45 degree.
+[11:30] So that is how the phase changes with the single pole.
+[11:34] That means the single pole will add the phase shift of the minus 90 degree.
+[11:39] And this phase shift will occur at the frequency, with the 10 times the pole frequency.
+[11:45] That means if the first pole will occur at the omega 1 frequency, then at the 10 omega
+[11:50] 1, the phase shift of the plot will be equal to minus 90 degree.
+[11:54] And at this pole frequency omega 1, this phase shift will be equal to minus 45 degree.
+[12:00] So that is how the phase changes when we have the single pole.
+[12:05] And later on, we will see that how this phase changes when we have a more than one pole
+[12:10] in the denominator.
+[12:12] So in this way, for any given transfer function, we can draw this body plot by drawing this
+[12:17] magnitude and a phase plot.
+[12:20] So now let us see from this body plot, how we can find the stability of the feedback amplifier.
+[12:26] And for that, let us take one simple example.
+[12:30] So let's say this A beta is equal to 100 divided by his s plus 50.
+[12:36] So as you can see here, we have some constant value k.
+[12:40] And in the denominator, we have a one pole.
+[12:43] So before plotting the magnitude plot, let us represent this function in the standard
+[12:48] format.
+[12:49] So for that, if we take the 50 outside, and in the numerator, we will have this 100 divided
+[12:55] by 50, that is equal to 2.
+[12:58] And in the denominator, we will have his 1 plus s divided by 50.
+[13:04] So here.
+[13:05] And now if you see the constant term, then that is equal to 2.
+[13:09] And in the decibel, that is equal to 20 log 2, that is equal to 6 dB.
+[13:15] So if you see the magnitude plot, then it will start from the 6 dB.
+[13:20] And it will remain constant up to this 50 radian per second.
+[13:24] Because here, the first pole is arising at this frequency.
+[13:29] So from that point onwards, if we see the slope, then that will be equal to minus 20 dB
+[13:34] per decade.
+[13:36] So that is the magnitude plot for the given expression.
+[13:40] But as you know, this would a plot is incomplete without the phase plot.
+[13:45] So now, let us see the corresponding phase plot.
+[13:49] So as you can see from the expression, here we have the no zeros.
+[13:53] That means initially, the phase shift will be equal to 0.
+[13:57] And the first pole will occur at the 50 radian per second.
+[14:01] So up to 0.1 omega 1.
+[14:03] Or in this case, up to 5 radian per second, we can assume that the phase shift is equal
+[14:08] to 0.
+[14:10] And from there onwards, the phase will start reducing.
+[14:14] So it will reach to the minus 90 degree at the n omega 1.
+[14:18] Or in this case, it will reach to approximately minus 90 degree at the finite radian per
+[14:23] second.
+[14:24] And the phase shift at the 50 radian per second will be equal to minus 45 degree.
+[14:30] So here, from 0.1 omega 1 to 10 omega 1, we have drawn the constant line.
+[14:36] But if you see the actual plot, then it will look something like this.
+[14:40] So as you can see, in this one pole system, the maximum phase that we are getting is the
+[14:45] minus 90 degree.
+[14:47] And since it is less than 180 degree, so we can see that the first order systems are
+[14:52] inherently stable.
+[14:55] That means the feedback amplifiers, where the expression of the A, B, T has only one
+[14:59] pole, are inherently stable.
+[15:02] So similarly, let us see what happens when we have the two poles.
+[15:07] So let's say the expression of the A, B, T can be given by the following expression.
+[15:12] So as you can see, now we have a two poles at the omega P1 and the omega P2.
+[15:18] So first, let us see the magnitude plot.
+[15:22] So here, due to this constant K, initially, we will have the fixed amplitude.
+[15:27] That is equal to 20 log K. So up to this frequency, omega P1 is the amplitude will remain same.
+[15:34] And after that, since we are encountering the first pole, so the amplitude will start
+[15:39] reducing at the rate of 20 dB per decade.
+[15:42] That means this slope will be equal to minus 20 dB per decade.
+[15:47] And at the omega P2, since we are encountering the second pole, so this slope will further
+[15:53] reduce by the 20 dB per decade.
+[15:55] That means now, if we see this slope, then that is equal to minus 40 dB per decade.
+[16:01] So here, at some frequency, omega X, this slope will cross the horizontal axis.
+[16:08] That means at this frequency, omega X, this amplitude will become 0 dB.
+[16:12] Or we can say that this amplitude will become 1 alright.
+[16:17] So similarly, now let us see the phase plot.
+[16:21] So as you can see from the plot, here we do not have any zeros.
+[16:24] But here we have the two poles.
+[16:27] So initially, the phase shift will be equal to 0.
+[16:31] And from point 1, omega P1 onwards, the phase will start reducing.
+[16:36] And it will reach to the minus 45 degree at the omega P1.
+[16:40] And as you have discussed earlier, at the frequency of around 10 omega P1, this phase shift
+[16:45] will be close to minus 90 degree.
+[16:48] So up to point 1, omega P2, this phase shift will remain constant.
+[16:53] And after that, it will further start reducing.
+[16:56] So as you can see, it will reach to the minus 135 degree at the omega P2.
+[17:02] And further, at the 10 times omega P2 frequency, the phase shift will be close to around minus
+[17:08] 90 degree.
+[17:10] So here, between point 1, omega P1 to 10 omega P1, we have drawn the straight line.
+[17:16] And further, between point 1, omega P2 to 10 omega P2, once again, we have drawn the
+[17:22] straight line.
+[17:23] But actually, if you see the phase plot, then it will look something like this.
+[17:29] So here also, if you see at the very high frequencies, the phase of the A beta is close
+[17:34] to minus 90 degree.
+[17:37] But actually, the phase will reach to the minus 90 degree at the infinite frequency.
+[17:42] So we can say that for the two poles' systems, if we do a amplifier, we will be on the
+[17:47] verge of the instability at the very high frequencies.
+[17:51] But still, we cannot say it is the unstable.
+[17:55] But as we go from the two pole system to the three pole system, then there are chances
+[17:59] for the instability.
+[18:00] So let us see that.
+[18:03] So let us say, this is the expression of the A beta.
+[18:06] So as you can see, now we have the three poles at the omega P1, omega P2 and the omega
+[18:12] P3.
+[18:13] And in the numerator, there is some constant magnitude K.
+[18:17] So first of all, let us see the magnitude plot.
+[18:21] So here, you do some constant value K.
+[18:24] We will have some finite value up to the omega P1.
+[18:27] And at omega P1, since we are encountering the first pole, so the amplitude will start
+[18:33] reducing at the rate of 20 dB per decade.
+[18:36] Likewise, the slope will change further at the omega P2.
+[18:41] And from omega P2 onwards, the slope will become minus 40 dB per decade.
+[18:46] And once again, the slope will change at the omega P3.
+[18:51] And further, now it will reduce by the 20 dB per decade.
+[18:55] That means if we see this slope, then that is equal to minus 60 dB per decade.
+[19:00] So that is the amplitude plot.
+[19:02] And similarly, now let us see the phase plot.
+[19:06] So if you see the phase plot, then it will look like this.
+[19:10] So here, up to 0.1 omega P1, the phase will be almost 0.
+[19:15] And from 0.1 omega P1 onwards, the phase will start reducing.
+[19:20] So at omega P1, it will be close to minus 45 dB.
+[19:24] And it will reach to the minus 10 dB at the 10 omega P1.
+[19:28] So from 10 omega P1, if we further move ahead, then once again, it will start reducing.
+[19:33] And it will reach to the minus 1 dB at the omega P2.
+[19:37] And at the 10 times omega P2, which will reach to the minus 180 dB.
+[19:42] So further, if we go ahead, then the phase will further reduce.
+[19:46] And at the omega P3, it will become minus 225 dB.
+[19:51] And at the 10 times omega P3, it will be close to minus 270 dB.
+[19:56] That means if we see the phase plot, then it will look like this.
+[20:00] So now, if we see the magnitude plot, then the frequency at which this gain process,
+[20:05] the horizontal axis, or when the gain becomes 0 dB, is known as the gain crossover frequency.
+[20:12] So for stability, what we need to see is that, at this gain crossover frequency,
+[20:18] the phase of the A beta should be greater than minus 180 dB.
+[20:22] So in this case, if you see, then it is very close to minus 270 dB.
+[20:27] That means it is already less than minus 180 dB.
+[20:30] And therefore, it indicates the instability.
+[20:33] Because if you see the condition for the stability, then for a stable response,
+[20:38] at the particular frequency, this A beta should be less than 1,
+[20:42] when the phase reaches the minus 180 dB.
+[20:45] So in this case, if you see, when the phase reaches the minus 180 dB,
+[20:49] at that time, this A beta is greater than 1.
+[20:53] And therefore, the issue of the instability will occur.
+[20:57] So here, in the phase plot, the frequency at which this phase reaches the minus 180 dB,
+[21:02] is known as the phase crossover frequency.
+[21:06] That means for the stability, the gain crossover frequency of the feedback amplifier
+[21:11] should be less than the phase crossover frequency.
+[21:14] Because if this condition is followed, then at the phase crossover frequency,
+[21:18] if you see the magnitude of the A beta, then it will be less than 1.
+[21:23] So in this feedback amplifiers, or in general, in any feedback system,
+[21:27] the stability of the system is measured in terms of the phase margin.
+[21:32] So with the help of this phase margin, it is possible to find out
+[21:36] how stable is the amplifier.
+[21:38] So in the next video, we will discuss the concept of the phase margin from the feedback amplifier
+[21:43] perspective. Moreover, we will also see some composition techniques,
+[21:47] using which it is possible to improve the phase margin of the feedback amplifier.
+[21:52] And in this way, it is possible to make the feedback amplifier more stable.
+[21:57] But I hope in this video, you understood using this Bode plot,
+[22:01] how it is possible to find the stability of any feedback amplifier.
+[22:05] So if you have any questions or suggestions, then do let me know here in the comments section below.
+[22:10] If you like this video, hit the like button and subscribe to the channel for more such videos.

@@ -1,0 +1,61 @@
+Title: MOSFET- Current Mirror Solved Problem | Quiz # 322
+URL: https://www.youtube.com/watch?v=rKKJpeT7tCo
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this circuit and for the given circuit, we have
+[00:15] been asked to find the value of R such that this output current is equal to 100 microampere.
+[00:21] Moreover, we have been also asked to find the lowest possible value of this output voltage.
+[00:28] So if you closely observe this circuit, then it is the current mirrored circuit.
+[00:32] Because here, this Q1 is a diode connected transistor, while gate and source terminals
+[00:38] of these two transistors are connected together.
+[00:42] Now here, we have been given that these two transistors are perfectly matched and we
+[00:47] have been also given the values of the device parameters.
+[00:51] Now if the W by L ratio of these two transistors are different, then the drain current
+[00:56] in this second transistor can be given by this expression.
+[01:01] That means this ID2 or this output current is equal to the W by L ratio of the second
+[01:06] transistor to the W by L ratio of this first transistor times I reference.
+[01:12] But in this case, since both transistors are matched perfectly, so this ID2 or this
+[01:18] output current is equal to I reference.
+[01:23] Now for this current mirrored circuit, to work properly, this second MOSFET should also
+[01:28] operating the saturation region.
+[01:31] That means for the second MOSFET, this WDS2 should be greater than or equal to VGS-VT,
+[01:38] where the VGS is the voltage between the gate to source terminal of these both MOSFETs.
+[01:45] And in the saturation, we know that the output current can be given by this expression.
+[01:51] And in this case, this current is the output current.
+[01:55] Now here we have been given that the required output current is equal to 100 microampere
+[02:01] and we have been already given the values of the device parameters.
+[02:05] So let us put all these values and let us find the VGS-VT.
+[02:09] That means 100 microampere is equal to half times this mu and times cux that is 200 microampere
+[02:18] volt square times W by L, that is 10 micrometer divided by 1 micrometer times VGS-VT whole square.
+[02:31] Or we can say that this VGS-VT whole square that is equal to 100 microampere divided by 1000
+[02:42] microampere per volt square.
+[02:46] Or we can say that this VGS-VT that is equal to 0.316.
+[02:53] For approximately, we can say that it is equal to 0.3 volt.
+[02:59] And using this, we can find the minimum value of the output voltage.
+[03:03] Because for this current mirrored circuit, to work properly, this VGS-2 should be greater
+[03:09] than or equal to VGS-VT.
+[03:13] Or in this case, this output voltage should be greater than or equal to VGS-VT.
+[03:20] That means this minimum value of this output voltage is equal to VGS-VT.
+[03:27] For in this case, it is approximately equal to 0.3 volt.
+[03:32] So now to get the 100 microampere current, let us find the value of this R.
+[03:37] Now here, we have already calculated the value of this VGS-VT.
+[03:43] So from this, we can say that this VGS is equal to this 0.3 volt plus VT that is roughly
+[03:51] equal to 1 volt.
+[03:53] That means the voltage between the gate and the source terminal is equal to 1 volt.
+[03:59] Now for this transistor Q1, if you see, the drain and the gate terminals are connected
+[04:03] together.
+[04:05] That means the same voltage VGS will also appear between the drain and the source terminal.
+[04:11] Or in other words, we can say that the voltage at this node is also equal to 1 volt.
+[04:17] So now we can easily find the value of the R because this reference current or this
+[04:24] output current can be given as 3 volt minus 1 volt divided by R.
+[04:32] Now the required value of this output current is equal to 100 microampere.
+[04:37] So from this, we can say that the required value of R is equal to 2 volt divided by 100 micro
+[04:44] ampere that is equal to 20 kilo ohm.
+[04:48] That means to get the output current of 100 microampere, the required value of R should
+[04:53] be around 20 kilo ohm.
+[04:55] So from this, we can say that for the given current mirrored circuit, to get a value of
+[05:00] 100 microampere, the required value of R is around 20 kilo ohm.
+[05:05] While the lowest possible value of the output voltage, to keep the MOSFET in the saturation
+[05:09] region is approximately equal to 0.3 volt.
+[05:13] That means for the given question, this sees the current answer.

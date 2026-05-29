@@ -1,0 +1,40 @@
+Title: Operational Amplifier (Op-Amp) Solved Problem | Quiz # 276
+URL: https://www.youtube.com/watch?v=gw0pw4SpLpM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel all about electronics.
+[00:11] So in this question, we have been given this op-amp circuit and here we have been asked
+[00:15] to find the voltage at this node.
+[00:18] So first of all, let us find the output voltage of the given op-amp and if you see over here,
+[00:24] then the op-amp is configured in the invading configuration.
+[00:28] So we know that in the invading configuration, the output of the op-amp can be given as
+[00:33] minus RF divided by R1 times input voltage, right?
+[00:38] So here we can say that the output voltage will be equal to minus 31 kilo ohm divided
+[00:45] by 1 kilo ohm times 1 volt.
+[00:49] That is equal to minus 31 volt.
+[00:52] But if you see over here, then the supply voltage of the op-amp is plus minus 15 volt.
+[00:58] That means the output voltage of the op-amp cannot go beyond this supply voltage.
+[01:03] So here we can say that the output of this op-amp will be equal to minus saturation voltage.
+[01:10] And here since the op-amp is ideal, so let us assume that this minus saturation voltage
+[01:15] is equal to minus 15 volt.
+[01:18] That means output of the op-amp will be equal to minus 15 volt.
+[01:23] That means here the op-amp is operating in the saturation region.
+[01:28] That means even if we increase the input voltage, then also the output of the op-amp will remain
+[01:33] same.
+[01:34] And if you are aware, then the concept of the virtual ground is valid only when the op-amp
+[01:39] is operating in this linear region.
+[01:42] So if the op-amp is operating in the linear region, in that case we can say that this
+[01:47] voltage VA will be equal to 0.
+[01:50] But here since the op-amp is operating in the saturation region, so we need to find the
+[01:54] voltage VA by applying the KCL.
+[01:58] So let us apply the KCL at this node.
+[02:02] And applying the KCL, we can write voltage VA minus 1 volt divided by 1 kilo ohm plus
+[02:09] VA minus V out divided by 31 kilo ohm is equal to 0.
+[02:17] Or we can say that 31 times VA minus 1 volt plus VA minus V out is equal to 0.
+[02:27] Or we can say that 32 times VA minus 31 is equal to V out.
+[02:34] And here V out is equal to minus 15 volt.
+[02:38] So we can say that 32 times VA is equal to minus 15 plus 31 volt.
+[02:46] That means VA will be equal to 0.5 volt.
+[02:50] So here since the op-amp is operating in the saturation region, so the voltage at this
+[02:55] node A will be equal to 0.5 volt.
+[02:58] And hence we can say that for the given question, the answer is 0.5 volt.

@@ -1,0 +1,43 @@
+Title: MOSFET Solved Problem | Quiz # 307
+URL: https://www.youtube.com/watch?v=aHM_7ebAkRc
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:04] So in this question, we have been given this MOSFET circuit and here we have been given
+[00:09] that the transistor M1 and M2 are identical and their threshold voltage is also equal to
+[00:15] 1V.
+[00:16] So here we have been asked to find the state of this transistor M1 and M2.
+[00:22] So first of all, let us find the state of this transistor M2.
+[00:27] So here the gate voltage VG2 is equal to 2.5 volt while the voltage VD2 is equal to 3.5
+[00:38] volt.
+[00:40] Now for the transistor to operate in the saturation region, this train voltage VD should be greater
+[00:46] than or equal to VG minus VT, right?
+[00:50] So in this case, voltage VG2 minus VT is equal to 1.5 volt, right?
+[00:59] And since this train voltage is greater than VG2 minus VT, so we can say that this transistor
+[01:05] M2 is operating in the saturation region.
+[01:08] That means here since VD2 is greater than VG2 minus VT, so we can say that this M2 is
+[01:16] operating in the saturation region.
+[01:18] Similarly, let us find the state of this transistor M1.
+[01:23] So first of all, here let us assume that this transistor M1 is also operating in the saturation
+[01:29] region and here this current ID2 is equal to ID1, right?
+[01:35] Now here since we are assuming that this M1 is also operating in the saturation region,
+[01:40] so we can write this ID1 is equal to ID2 that is equal to K times VGS1 minus VT whole
+[01:50] square that is equal to K times VGS2 minus VT whole square.
+[01:58] That means here we have written the expression of the train current in the saturation region.
+[02:02] So from this we can say that this VGS1 is equal to VGS2.
+[02:10] Now here this VGS2 is equal to 2.5 volt minus VD1, right?
+[02:17] Because this source of this M2 is connected to the train terminal and that should be equal
+[02:22] to VGS1 that is equal to 2 volt minus 0.
+[02:27] That means if the M1 is also operating in the saturation region then this voltage VD1
+[02:33] will be equal to 0.5 volt.
+[02:36] But if this VD1 is equal to 0.5 volt then the condition for the saturation will not
+[02:42] get satisfied for this transistor M1 because for this transistor M1 this voltage VD1 is
+[02:49] equal to 0.5 volt while the voltage VD1 minus VT is equal to 2 volt minus 1 volt that
+[02:57] is equal to 1 volt.
+[02:59] And clearly as you can see here drain voltage VD1 is less than VG1 minus VT that means
+[03:06] this transistor M1 is not operating in the saturation region.
+[03:11] But since this gate voltage VG1 is greater than threshold voltage so this transistor M1
+[03:17] is operating in the linear region.
+[03:19] So from this we can say that the transistor M1 is operating in the linear region while
+[03:26] the M2 is operating in the saturation region.
+[03:33] That means from this we can say that for the given question C is the correct answer.

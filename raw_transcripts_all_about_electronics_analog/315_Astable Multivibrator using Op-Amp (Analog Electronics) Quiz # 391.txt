@@ -1,0 +1,86 @@
+Title: Astable Multivibrator using Op-Amp (Analog Electronics) | Quiz # 391
+URL: https://www.youtube.com/watch?v=IL6p8h2f8zQ
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this question, we have been given this A stable multivariate circuit and for the
+[00:15] given circuit, we have been asked to find the difference between the maximum and the minimum
+[00:19] voltage across the capacitor.
+[00:22] So in this circuit, we have been given that the op-em and all the diodes are ideal.
+[00:27] That means here, no current is flowing into the op-em terminals.
+[00:31] Moreover, since the op-em is ideal op-em, so the output of the op-em can go up to the
+[00:36] supply voltages and since the diodes are the ideal diodes, so in the forward biased condition,
+[00:43] they will act as a short circuit and in the reverse biased condition, they will act as
+[00:47] a open circuit.
+[00:49] So considering this, let us find the difference between the maximum and the minimum voltage
+[00:53] across the capacitor.
+[00:55] So we know that whenever the A stable multivariator is designed using the op-em, then the output
+[01:00] of this multivariator will change between the positive and the negative saturation voltage.
+[01:06] That means output of this multivariator will change between this plus 15 volt and the
+[01:10] minus 12 volt.
+[01:12] So first, initially, let us assume that the output of this op-em is equal to plus 15 volt.
+[01:18] And initially, this capacitor is uncharged.
+[01:22] So for this plus 15 volt, first of all, let us find the voltage at this positive terminal
+[01:27] or in other words, let us find this voltage V plus.
+[01:31] So to find that, let us consider this portion of the circuit.
+[01:36] So whenever that output voltage is equal to plus 15 volt at that time, this diode D2 will
+[01:41] be in the reverse biased condition, while this diode D1 will be in the forward biased condition.
+[01:47] That means in this state, this diode D2 will act as an open circuit.
+[01:52] And this diode D1 will act as a short circuit.
+[01:55] So if you see this portion of the circuit, and here, these two resistors are in the series
+[02:00] connection.
+[02:01] While here, because of the short circuit, this resistor will get eliminated.
+[02:07] And here, we will have only this resistor.
+[02:10] So in this condition, if we see this voltage V plus, then it is the voltage across this
+[02:15] resistor R.
+[02:17] And since the op-em is the ideal op-em, so no current is flowing into the op-em terminal
+[02:22] so using the voltage divider rule, we can say that this voltage V plus is equal to this
+[02:28] R divided by these 2R plus R times 15 volt, where this 2R is the series combination of
+[02:36] these two resistors.
+[02:39] That means in this condition, this V plus is equal to 5 volt.
+[02:44] That means initially, when the output voltage is equal to plus 15 volt, and the capacitor
+[02:48] is unchanged, then it will start charging towards this plus 15 volt.
+[02:53] And here, if you notice, then this V minus is equal to Vc.
+[02:59] That means the voltage at this inverting terminal is same as the capacitor voltage.
+[03:04] So as soon as the voltage across the capacitor will reach this 5 volt, then this V minus
+[03:10] will become greater than the V plus.
+[03:12] That means in this condition, we will see the transition at the output voltage.
+[03:17] That means up to 5 volt, this capacitor will charge.
+[03:21] And as soon as the voltage at this inverting terminal will become 5 volt, then we will
+[03:25] see the transition in the output voltage.
+[03:28] That means the output voltage will switch from the plus Vc to the minus Vc.
+[03:33] So in this case, this plus Vc is equal to plus 15 volt, while this minus Vc is equal
+[03:39] to minus 12 volt.
+[03:41] That means as soon as the capacitor voltage reaches the 5 volt, then we will see the transition
+[03:46] in the output voltage from plus 15 volt to the minus 12 volt.
+[03:51] And now the capacitor will start charging towards the minus 12 volt.
+[03:56] So in this condition, this output voltage is equal to minus 12 volt.
+[04:01] So with this output voltage, once again, let us find the voltage at this positive terminal
+[04:06] or in other words, let us find this voltage D plus.
+[04:10] So whenever this output voltage is equal to minus 12 volt at that time, this diode D1
+[04:16] will become reverse biased and it will be in the open condition.
+[04:20] On the other hand, if you see this diode D2, then it will get forward biased and it will
+[04:25] like as a short circuit.
+[04:27] And because of that, this resistor R will get eliminated.
+[04:32] That means in this branch, the total resistance is equal to 2 R, while over here, the equivalent
+[04:37] resistance is equal to R.
+[04:40] So if you see the voltage at this non-inverting terminal or this voltage V plus, then in this
+[04:45] condition, it is equal to these 2 R divided by these R plus 2 R times minus 12 volt.
+[04:54] So this will be the voltage V plus when this V out is equal to minus 12 volt.
+[04:59] And if you calculate the value, and this V plus will come out as minus 8 volt.
+[05:05] That means whenever this V out is equal to minus 12 volt at that time, this V plus is
+[05:10] equal to minus 8 volt.
+[05:13] So in this condition, the capacitor is charging towards the minus 12 volt.
+[05:18] But as soon as the voltage across the capacitor reaches the minus 8 volt, then once again,
+[05:23] we will see the transition in the output voltage.
+[05:26] Because now, this voltage V plus will become greater than the V minus.
+[05:31] And once again, the output will switch from the minus 12 volt to the plus 15 volt.
+[05:37] That means at this point, as soon as the capacitor voltage goes below the minus 8 volt, then
+[05:42] we will see the transition in the output voltage from minus 12 volt to the plus 15 volt.
+[05:48] That means at the most, the capacitor voltage can go up to minus 8 volt.
+[05:53] And on the positive side, it can go up to plus 5 volt.
+[05:57] That means here, this Vc max is equal to plus 5 volt, while this Vc minimum is equal
+[06:07] to minus 8 volt.
+[06:10] So if you see the difference between the maximum and the minimum voltage across this capacitor,
+[06:14] then it is equal to 5 minus minus 8, that is equal to plus 13 volt.
+[06:20] And therefore, for the given question, the answer is plus 13 volt.

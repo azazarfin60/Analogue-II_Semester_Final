@@ -1,0 +1,175 @@
+Title: Monostable Multivibrator using 555 Timer Explained (with Working, Applications and Derivation)
+URL: https://www.youtube.com/watch?v=ypV6gdIJJU4
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In the previous video, we briefly understood about the triple-fied timer IC and we had
+[00:21] seen the pin diagram as well as the internal block diagram of this triple-fied timer IC.
+[00:27] So in this video, let us understand how we can design a monostable multivibrator using
+[00:33] this triple-fied timer IC.
+[00:36] Now in the earlier videos, we had seen that this monostable multivibrator has only one
+[00:42] stable state.
+[00:43] So the output of this monostable multivibrator used to be in a stable state, but whenever
+[00:49] a trigger signal is applied, then momentarily the output of this monostable multivibrator
+[00:55] goes into the unstable state and after certain time it used to come back into the stable
+[01:01] state.
+[01:03] So whenever this monostable multivibrator is designed using the triple-fied timer IC, then
+[01:08] it can be used in many applications.
+[01:11] For example, it can be used for generating a timing delays which can be used for turning
+[01:17] on the relay for certain time.
+[01:19] Apart from that, it can be used for the frequency division as well as for the pulse width modulation.
+[01:26] So now let us see how we can design this monostable multivibrator using the triple-fied timer
+[01:31] IC.
+[01:33] So here is the circuit diagram using which we can design a monostable multivibrator using
+[01:38] this timer IC.
+[01:40] So as you can see over here, the discharge and the threshold pins are connected to gather
+[01:46] and using the resistor R1, they are connected to the supply voltage, while using the capacitor
+[01:52] C1, they are connected to the ground terminal.
+[01:56] So over here, this reset pin is connected to the supply voltage and here the trigger signal
+[02:03] is applied at pin number 2.
+[02:06] And over here, as we are not using any external control voltage, so this pin number 5 is connected
+[02:12] to the ground through this capacitor.
+[02:15] So now to understand the working of the circuit, let us draw this circuit along with the internal
+[02:21] block diagram.
+[02:23] So here, the same circuit is drawn along with the internal block diagram.
+[02:29] Now here, to understand the working of this circuit, initially let us assume that the output
+[02:34] of this triple-fied timer is equal to 0.
+[02:38] So whenever output is 0, at that time this q bar will become 1.
+[02:43] And whenever q bar is equal to 1, at that time this transistor will become 1.
+[02:49] And the output of this pin number 6 and 7 is connected to the ground through this transistor.
+[02:56] So whenever the output of this triple-fied timer is 1, at that time this capacitor C1 will
+[03:02] remain at a ground potential.
+[03:05] So we can say that whenever the output is 1, the input to this first comparator is equal
+[03:10] to logic 0.
+[03:13] Now like we had seen in the previous video, the voltage is at these two nodes will be
+[03:18] equal to 2 by 3 VCC and 1 by 3 VCC respectively.
+[03:22] So whenever this pin number 6 is at ground potential, then the first comparator output will be
+[03:29] equal to logic 0.
+[03:31] Because the voltage at this inverting node is more than the voltage at this non-inverting
+[03:36] node.
+[03:37] On the other hand, if you look at the second comparator, whenever the trigger signal is
+[03:41] not applied, at that time this pin number 2 is at VCC voltage.
+[03:47] So at that time the voltage at this inverting node is more than the voltage at this non-inverting
+[03:52] node.
+[03:53] So at that time the output of the second comparator will be also equal to logic 0.
+[03:58] So in that condition both are as are 0.
+[04:02] So the output of this flip flop will remain in the previous condition.
+[04:07] And in this condition the output of the triple phi timer will remain 0.
+[04:13] Now let us see what happens whenever we apply the trigger signal.
+[04:17] Now here the trigger signal is applied in such a way that during the triggering action
+[04:22] the output at this pin number 2 goes below this reference voltage.
+[04:27] So whenever the triggering action happens at that time, the voltage at this pin number
+[04:31] 2 goes below this reference voltage.
+[04:35] So at that time the output of the second comparator will become logic 1.
+[04:40] Now during this triggering action has this q bar is in logic 1 state.
+[04:46] So this pin number 6 will remain at a ground potential.
+[04:51] So the output of the first comparator will remain at logic 0.
+[04:56] So during the triggering action if you see S is equal to 1 and R is equal to 0.
+[05:02] It means that we can say that this flip flop will get set to the logic 1.
+[05:08] And whenever this flip flop output is logic 1 at that time the output of the triple phi
+[05:13] timer will also get set to the logic high.
+[05:17] So now whenever this q will become 1 this q bar will become 0.
+[05:23] And as soon as this q bar will become 0 this transistor will get switch off.
+[05:29] And now this capacitor C1 will start charging through this path.
+[05:35] So once this triggering action happens this capacitor C1 starts charging towards the supply
+[05:41] voltage.
+[05:42] Now after this triggering action happens the voltage at this pin number 2 is equal to supply
+[05:47] voltage.
+[05:49] So once again the output of the second comparator will become logic 0.
+[05:55] Now during the charging process of this capacitor whenever the voltage at this pin number 6 just
+[06:00] crosses this 2 by 3 VCC voltage then the output of the first comparator will become logic
+[06:07] 1 because at that time the voltage at this pin number 6 is more than the reference voltage.
+[06:14] So in that condition now if you see here this R is equal to 1 and S is equal to 0.
+[06:21] So at that time the output of this flip flop will become logic 0.
+[06:26] And in a way we can say that at that time the output of the triple phi timer will become
+[06:31] logic 0.
+[06:33] So in this way momentarily the output of this triple phi timer goes into the unstable
+[06:38] state.
+[06:39] And then after whenever this capacitor voltage just reaches this 2 by 3 VCC voltage then the
+[06:46] output will come back into the stable state.
+[06:49] Now as soon as this Q will become 0 this Q bar will become 1 and whenever this Q bar
+[06:56] is 1 then this transistor will get again switched on and the voltage across this capacitor
+[07:03] will get discharged through this path and once that happens both output of the comparators
+[07:09] will become logic 0.
+[07:12] So if you see this sequence in a timing diagram then it will look like this.
+[07:18] So whenever this triggering action happens that means whenever the voltage at the pin number
+[07:23] 2 just go below this 1 by 3 VCC voltage then the output of the triple phi timer will go
+[07:30] to the logic high value.
+[07:32] And at that time the capacitor will start charging towards the VCC voltage.
+[07:37] And as soon as the voltage across this capacitor just crosses this 2 by 3 VCC voltage then the
+[07:45] output of the triple phi timer will become logic 0.
+[07:49] And immediately the capacitor will get discharged through the transistor.
+[07:54] So in this way after the triggering action for a certain time period we will get the output
+[07:59] pulse.
+[08:01] So over here the duration of this pulse will depend upon the charging of this capacitor.
+[08:07] So in a way it depends upon the value of R C as well as this threshold voltage.
+[08:13] Now here we are assuming that we are using the internal life voltage and in that case
+[08:19] the time duration of the pulse can be given by this expression that is 1.1 times R 1
+[08:25] into C 1 where R 1 and C 1 are the external resistors which is connected between the pin
+[08:32] number 7 and 6.
+[08:34] So in this way using this resistor and the capacitor we can design a monostable multivibrator
+[08:41] and we can change the timing of this pulse.
+[08:44] Now like I said this monostable multivibrator is useful in many applications.
+[08:50] The first one is for generating the different timing delays.
+[08:54] So like I said by changing the value of this R 1 and C 1 we can generate a different
+[09:00] time delays.
+[09:01] So if we use the internal reference voltage in that case this time will be equal to 1.1
+[09:07] times R 1 into C 1.
+[09:09] Now let us say we want to generate a time delay of 1 second that means the duration of
+[09:15] this pulse width should be equal to 1 second.
+[09:19] So for that let us assume that C 1 is equal to 10 microfaraday and correspondingly let
+[09:25] us find out the value of this R 1.
+[09:28] So here T is equal to 1 second and if we put all these values in this expression then
+[09:35] the value of R 1 will be roughly around 91 kilo ohm.
+[09:40] So using these values we can generate a time delay of 1 second.
+[09:45] So this is the one of the application in which this monostable multivibrator can be used.
+[09:51] Apart from that it can also be used for the frequency division.
+[09:55] Now here at this pin number 2 suppose if we apply a periodic triggering signal then it
+[10:01] is possible to use this monostable multivibrator for the frequency division.
+[10:06] But over here we need to ensure that the time duration of the output pulse should be slightly
+[10:11] more than the time period of this triggering signal.
+[10:15] That means this T should be greater than this time period.
+[10:19] So in that case the output signal frequency will be half than the trigger signal frequency.
+[10:26] Apart from that this monostable multivibrator can be used for the pulse width modulation.
+[10:32] Now so far in our discussion we have only used the internal reference voltage.
+[10:37] But suppose if we use this control pin and if we apply a modulating signal at this control
+[10:43] pin then it is possible to generate the pulse width modulated output.
+[10:48] Because in that case the reference voltage will continuously change based on this modulating
+[10:52] signal and depending upon that the output pulse width will continuously change.
+[10:58] So in this way we can also generate the PWM output.
+[11:03] Now so far in our discussion we have used this expression for calculating the pulse duration.
+[11:10] But now let us also see how we have arrived to this expression.
+[11:15] So this expression can be found by finding the charging time of the capacitor.
+[11:20] And if you are aware the charging voltage of the capacitor can be given by this expression.
+[11:26] Where here we notice nothing but the supply voltage.
+[11:31] And the same expression can also be found from the expression that we have used during
+[11:35] the transient analysis.
+[11:37] That is the voltage across the capacitor will be equal to the final voltage plus V initial
+[11:44] minus V final times e to the power minus t by rc.
+[11:49] Where this final voltage is the voltage towards which the capacitor is charging.
+[11:54] So in this case it will be equal to VCC voltage.
+[11:58] While the initial voltage across the capacitor is zero.
+[12:02] So if we simplify this expression then we will get the same expression that is Vc of
+[12:07] t will be equal to VCC times 1 minus e to the power minus t by rc.
+[12:14] And over here we want to find the time t1 where the output of the capacitor reaches this
+[12:21] 2 by 3 VCC voltage.
+[12:23] So at that time the output of the capacitor will be equal to 2 by 3 VCC voltage.
+[12:29] And this expression can be written as VCC times 1 minus e to the power minus t1 divided
+[12:36] by rc.
+[12:37] So if we simplify this expression then we can write it as 1 by 3 will be equal to e to
+[12:45] the power of minus t1 divided by rc.
+[12:49] And if we take the natural log on both sides then we can write it as natural log of 1 by
+[12:56] 3 will be equal to minus t1 divided by rc.
+[13:02] Or we can say that t1 will be equal to rc times natural log of 3.
+[13:09] And this value will be approximately equal to 1.1 times rc.
+[13:14] Now over here as we have used register r1 and c1 so this expression will become 1.1 times
+[13:22] r1 times c1.
+[13:25] So using this expression we can calculate the time for which the output of this monostable
+[13:30] will go into the unstable state.
+[13:33] Or in a way we can say that using this expression we can calculate the value of the time delay.
+[13:39] So I hope in this video you understood how we can design a monostable multivibrator using
+[13:44] this triple phi timer IC.
+[13:46] And how it can be used for the different applications.
+[13:50] So if you have any question or suggestion do let me know in the comment section below.
+[13:54] If you like this video hit the like button and subscribe to the channel for more such
+[13:58] videos.

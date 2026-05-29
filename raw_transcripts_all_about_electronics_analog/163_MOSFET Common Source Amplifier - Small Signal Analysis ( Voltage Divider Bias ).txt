@@ -1,0 +1,269 @@
+Title: MOSFET Common Source Amplifier - Small Signal Analysis ( Voltage Divider Bias )
+URL: https://www.youtube.com/watch?v=T-0X1N9N5V8
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel AllAboode Electronics.
+[00:10] So in this video, we will learn how the MOSFET can be used as an amplifier in the common
+[00:15] source configuration.
+[00:17] And using the small signal analysis, we will also find the expression of the voltage gain,
+[00:22] the input impedance and the output impedance of the amplifier.
+[00:27] Now when the MOSFET is used as an amplifier, then typically it can be used in the 3 configuration
+[00:33] that is common source, common drain and the common gate configuration.
+[00:38] And out of the 3 configurations, the common source is by far the most popular MOS amplifier
+[00:43] configuration.
+[00:45] So in this configuration, the small input signal is paired between the gate and the source
+[00:50] terminal, while the output is measured between the drain and the source terminal.
+[00:56] That means as far as the AC signal is concerned, then the source terminal is common between
+[01:01] the input and the output side.
+[01:03] And hence, this configuration is known as the common source configuration.
+[01:08] Now for any voltage amplifier, the voltage gain, the input and the output impedance are
+[01:13] some of the important parameters.
+[01:16] And using the small signal analysis, it is possible to find all these parameters.
+[01:21] So as we have seen in the previous video, under the small signal approximation, the MOSFET
+[01:26] can be replaced by the small signal model.
+[01:29] And using this model, it is possible to do a small signal analysis of the given amplifier
+[01:34] circuit.
+[01:36] Now in the previous video, we have briefly talked about the common source amplifier configuration,
+[01:41] where on top of the DC biasing voltage, a small input signal was applied.
+[01:47] But practically, this is how the MOSFET is biased.
+[01:51] And using the coupling capacitors, the input signal is coupled to the amplifier.
+[01:57] So as we have discussed earlier, under the small signal approximation, it is possible to perform
+[02:02] the DC and the AC analysis separately.
+[02:06] So for the DC analysis, all these capacitors will act as an open circuit.
+[02:11] And as you can see, here the MOSFET is biased in the voltage divater biasing configuration.
+[02:16] So using the DC analysis, it is possible to set the operating point.
+[02:21] Now on top of this DC biasing, a small input signal is applied through the coupling capacitors.
+[02:28] So for this AC analysis or for this small signal analysis, all the DC voltage sources in
+[02:33] the circuit will act as a zero.
+[02:36] While at the operating frequency, the coupling and the bypass capacitors will provide a
+[02:41] parallel resistance.
+[02:43] And for the simplicity, they can be replaced by the short circuit.
+[02:47] And then after, the MOSFET will get replaced by the small signal model.
+[02:52] That means to perform the AC and ACs of any circuit, we need to follow three steps.
+[02:58] That means first consider all the DC sources in the circuit as zero.
+[03:02] And then replace all the coupling and the bypass capacitors by the short circuit.
+[03:07] And then after, replace the MOSFET by the small signal model.
+[03:12] So here, since the bypass capacitor acts as a short circuit, so this resistor RS will
+[03:17] also get short circuited.
+[03:20] And if you see the equivalent circuit, then it will look like this.
+[03:25] So here, this input signal is appearing between the gate and the ground terminal.
+[03:29] But effectively, it will appear between the gate and the source terminal.
+[03:34] Similarly, the one end of this resistor R1 and R2 is connected to the gate terminal,
+[03:39] while the other end is connected to the ground terminal.
+[03:43] That means effectively, these two resistors are connected between the gate and the source
+[03:47] terminal.
+[03:48] Similarly, this resistor Rd will appear between the drain and the source terminal.
+[03:55] So if you see the small signal equivalent circuit, then it will look like this.
+[04:00] So for this circuit, now let us find the voltage gain, the input impedance and the output impedance.
+[04:06] And first of all, let us find the input impedance.
+[04:10] So if VIN is the input signal and this IN is the input current, then this input impedance
+[04:17] is the ratio of this input signal to the input current.
+[04:22] Now here, since the gate and the source terminal will act as an open circuit, so this current
+[04:27] IN will flow through the parallel combination of this R1 and the R2.
+[04:32] That means we can say that this input voltage VIN is equal to R1 parallel R2 times IN.
+[04:40] Or we can say that this input impedance that is VIN divided by IN is equal to R1 parallel
+[04:49] R2.
+[04:51] So at the low frequencies, the input impedance of this MOSFET is very high.
+[04:56] Our ideal it is infinite, but because of this external resistors, the input impedance
+[05:01] of this configuration is equal to R1 parallel R2.
+[05:05] So to achieve the high input impedance, the value of this R1 and R2 should be very high.
+[05:11] And preferably, it should be in mega homes.
+[05:14] Similarly, now let us find the output impedance.
+[05:18] So the output impedance is the Thavenian secret impedance, which is seen from the output
+[05:22] side.
+[05:24] And to find that, we will consider all the independent sources in the circuit as 0.
+[05:29] That means we will consider this input signal as 0.
+[05:33] Now since the resistors R1 and R2 are connected in parallel with the input signal, so they
+[05:38] will also get short circuited.
+[05:41] And once the VIN is 0, then this voltage VGS will also become 0, because the voltage between
+[05:47] the gate and the source is equal to the input signal.
+[05:51] That means this independent current source will also act as a 0.
+[05:55] Or we can say that it will act as a open circuit.
+[05:59] So in this case, the Thavenian secret impedance, which is seen through the output side, is
+[06:03] equal to RD.
+[06:04] Or we can say that the output impedance is equal to RD.
+[06:10] That means for this amplifier configuration, the output impedance is equal to RD.
+[06:14] Alright, so similarly, now let us find the voltage gain.
+[06:20] So here, the output is measured between the drain and the source terminal.
+[06:26] And since this drain current ID is flowing in this anti-clockwise direction, so we can
+[06:31] say that this V out is equal to minus ID times RD.
+[06:37] That is equal to minus GM times VGS times RD.
+[06:43] And as you can see, this voltage VGS is equal to VIN.
+[06:48] So from this, we can say that this voltage V out is equal to minus GM times RD.
+[06:57] That means the voltage gain V out divided by VIN is equal to minus GM times RD.
+[07:04] So from this expression, we can say that by increasing the value of RD, we can increase
+[07:09] the gain.
+[07:11] But the value of RD cannot be increased indefinitely.
+[07:15] Because as the value of RD increases, then the voltage drop across this resistor RD
+[07:19] will increase.
+[07:21] And because of that, the voltage VDS will reduce.
+[07:25] So if this voltage drop is too large, then the MOSFET may come out of the saturation.
+[07:31] And hence, the value of the RD cannot be increased indefinitely.
+[07:36] But by cascading multiple such stages, it is possible to increase the voltage gain.
+[07:41] Alright.
+[07:43] So now, so far, we have neglected the effect of the channel and modulation.
+[07:48] And we have assumed that the output impedance of the MOSFET is infinite.
+[07:53] But considering the finite output impedance, this is the small-second equivalent circuit.
+[07:58] So as you can see, there is an additional output resistance between the drain and the source
+[08:03] terminal.
+[08:04] So in this case, the input impedance will remain the same.
+[08:08] That means in this case, Z in is equal to R1 parallel R2.
+[08:14] But now, this output impedance is the parallel combination of this R1 and the RD.
+[08:20] That means output impedance is equal to R0 parallel RD.
+[08:25] And similarly, the voltage gain AV is equal to minus GM times this RD parallel R0.
+[08:34] So considering the finite output resistance of the MOSFET, these are the expressions
+[08:38] of the output impedance and the voltage gain of this amplifier.
+[08:41] Alright.
+[08:42] So, so far, using this small signal analysis, we found the expression of the voltage gain,
+[08:49] the input impedance and the output impedance of this common source amplifier.
+[08:53] And here, this amplifier is biased using the voltage divider-bicing configuration.
+[08:59] Right?
+[09:00] So as we have seen earlier, in this voltage divider-bicing configuration, this source register
+[09:05] provides the negative feedback and it improves the basing stability, right?
+[09:11] But whenever the bypass capacitor is used, then for the AC signal, it will act as a short
+[09:16] circuit.
+[09:17] And because of that, it will not have any impact on the AC analysis.
+[09:23] But sometimes, to improve the frequency response and to improve the stability of the amplifier,
+[09:28] the source register is not bypassed.
+[09:31] And in that case, these source register will also come into the picture during the AC
+[09:37] analysis.
+[09:38] So, because of this source register, the voltage gain of this amplifier will reduce.
+[09:44] And through the small signal analysis, it will get clear to you.
+[09:47] So, now let us see the small signal analysis of this common source amplifier, and there
+[09:51] is also source register.
+[09:53] So, the procedure for the small signal analysis will remain the same.
+[09:58] So, first of all, we will replace all the coupling capacitors by the short circuit, and all
+[10:03] the DC sources in the circuit will act as a zero.
+[10:07] And then after, we will replace the MOSFET by the small signal model.
+[10:11] So, the first thing if you observe, then the source register is connected between the source
+[10:16] and the ground terminal.
+[10:18] And here, the input signal is appearing between the gate and the ground terminal.
+[10:23] Similarly, these two registers R1 and R2 are appearing between the gate and the ground
+[10:28] terminal.
+[10:29] And this register RD is appearing between the drain and the ground terminal.
+[10:34] So, if you see the equivalent circuit, and the small signal equivalent circuit will look
+[10:38] like this.
+[10:39] So, for this circuit, first of all, let us find the voltage gain.
+[10:44] Now, here, since the drain current ID is flowing in this fashion, so we can say that, this
+[10:50] output voltage V out is equal to minus ID times RD.
+[10:55] That is equal to minus GM times VGS times RD.
+[11:00] Right?
+[11:01] So now, let us find the relationship between this voltage VGS and the input signal.
+[11:06] So, if you observe over here, then this drain current ID is also flowing through this register
+[11:12] RS.
+[11:13] And let us say, because of that, the voltage drop across this register is equal to VS.
+[11:20] That means, this voltage VS is equal to ID times RS.
+[11:26] That is equal to GM times VGS times RS.
+[11:31] And here, the voltage between the gate and the ground terminal is equal to V in.
+[11:36] So, if we have to that KVL, and we can say that, this input signal V in is equal to
+[11:42] this voltage VGS plus VS.
+[11:46] That is equal to VGS plus GM times VGS times RS.
+[11:54] That is equal to VGS times 1 plus GM times RS.
+[12:01] Or from this, we can say that this voltage VGS is equal to V in divided by 1 plus GM times
+[12:10] RS.
+[12:11] So, in this way, we found the relationship between the voltage VGS and the input signal.
+[12:17] So now, let us put the value of VGS in this expression.
+[12:22] That means, from this, we can say that this output voltage V out is equal to minus GM
+[12:28] times RD times V in divided by 1 plus GM times RS.
+[12:37] Or we can say that the voltage gain AB that is V out divided by V in is equal to minus
+[12:44] GM times RD divided by 1 plus GM times RS.
+[12:50] So, this is the expression of the voltage gain when the source resistor RS is also present
+[12:56] in the amplifier.
+[12:58] And whenever this RS is equal to 0, then the voltage gain is equal to minus GM times RD.
+[13:05] And because of the presence of this RS, the voltage gain will reduce.
+[13:09] So, similarly, now let us find the input impedance.
+[13:13] So, in this case, the input impedance will remain the same.
+[13:18] Because here, the gate to source terminal acts as a open circuit.
+[13:23] That means, the input current I in is flowing through the parallel combination of this R1
+[13:27] and the R2.
+[13:29] That means, V in is equal to I in times R1 parallel R2.
+[13:35] Or we can say that this V in divided by I in or the input impedance is equal to R1 parallel
+[13:44] R2.
+[13:45] So, this is the input impedance for the common source amplifier including the source resistor.
+[13:52] And similarly, now let us find the output impedance.
+[13:56] So, as I said, the output impedance is the thavinian secret impedance which is seen through
+[14:01] the output side.
+[14:03] And to find that, we will consider all the independent sources in the circuit as 0.
+[14:09] That means, this input signal will act as a short circuit.
+[14:13] And once we consider this V in as 0, then these two resistors will also get short circuited.
+[14:20] And because of that, this voltage VGS is also equal to 0.
+[14:24] So, let us see how.
+[14:26] So, if we apply the KVL in this loop, then we can say that voltage VGS plus VS is equal
+[14:34] to 0, where this VS is the voltage drop across this resistor RS.
+[14:40] And as we have seen, this voltage VS is equal to ID times RS.
+[14:47] That is equal to GM times VGS times RS.
+[14:52] So, if you put the value of VS in this expression, then we can say that VGS plus GM times VGS times
+[15:01] RS is equal to 0.
+[15:05] That means, VGS times 1 plus GM times RS that is equal to 0.
+[15:13] That means, in this case, this voltage VGS is equal to 0.
+[15:18] That says the voltage VGS is equal to 0.
+[15:21] So, this dependent current source will act as a open circuit.
+[15:25] And in this case, the Thaminen's equivalent impedance, which is seen through the output
+[15:29] side or Z out is equal to RD.
+[15:33] That means, in this case also, the output impedance is equal to RD.
+[15:38] So, in this way, we found the expression of the input and the output impedance, as well
+[15:43] as the voltage gain for this common source amplifier and the source resistor is also present.
+[15:49] Alright, so now let us take an example so that whatever we have discussed so far, we
+[15:54] will get clear to you.
+[15:57] So here, for the given MOS amplifier, we have been asked to find the input impedance,
+[16:02] the output impedance and the voltage gain.
+[16:05] And here, we have been also given the threshold voltage, as well as the device constant for
+[16:09] the MOSFET.
+[16:11] So for the small signal analysis, we need the value of the transconnectance.
+[16:16] And to find the value of the transconnectance GM, first of all, let us do the DC analysis.
+[16:22] So for the DC analysis, all the coupling and the bypass capacitors will act as an open
+[16:26] circuit.
+[16:28] And here, assuming the gate current IG is equal to 0, we can find the voltage VG.
+[16:34] So this voltage VG is equal to N mega ohm divided by N mega ohm plus 40 mega ohm times
+[16:44] 30 volt that is equal to 6 volt.
+[16:48] So using the voltage divider rule, we can find the gate voltage VG.
+[16:52] And here, the current through the source resistor is equal to ID.
+[16:57] That means voltage Vs is equal to RS times ID.
+[17:03] That means voltage VGS is equal to 6 volt minus ID times RS.
+[17:11] And here, assuming the MOSFET is operating in the saturation region, this drain current
+[17:16] ID can be given as A times VGS minus VT whole square, where this K is the device constant.
+[17:26] Or we can say that ID is equal to A times 6 minus ID times RS minus VT that is minus
+[17:35] 3 whole square.
+[17:38] That means drain current ID is equal to 0.4 times N to the power minus 3.
+[17:45] 3 minus ID times RS whole square.
+[17:49] Or we can say that 2500 ID is equal to 9 minus 6 times ID times RS plus ID square RS square.
+[18:04] Now here, the value of RS is equal to 1.2 kilo ohm.
+[18:08] So if we put the value of RS in this expression, then we can say that 1.44 times N to the
+[18:15] power 6 times ID square minus 9700 times ID plus 9 is equal to 0.
+[18:25] So if we solve this quadratic equation, then we will get the two roots.
+[18:30] First root is 5.62 milliampere, while the second root is 1.11 milliampere.
+[18:40] Now if we take the value of ID is 5.62 milliampere, then the MOSFET will not operate in the saturation
+[18:45] region.
+[18:46] That means the value of the ID should be equal to 1.11 milliampere.
+[18:52] And with this value of the drain current, the voltage VGS will be equal to VG minus VS.
+[18:59] That is equal to 6 volt minus ID times RS.
+[19:04] That is equal to 6 minus 1.2 kilo ohm times 1.11 milliampere.
+[19:12] That is equal to 4.668 volt.
+[19:16] And the transcurrent must GM and we give 1S 2 times 8 times VGS minus VT.
+[19:25] That is equal to 0.8 times N to the power minus 3 times 4.668 minus 3.
+[19:34] That is equal to 1.33 milliampere.
+[19:38] So in this way, we got the value of the transcurrent tons.
+[19:41] And once we know the value of the transcurrent tons, then using the small signal analysis,
+[19:46] we can find the value of the required parameters.
+[19:49] So for the AC analysis, we can consider all the coupling capacitors as the short circuit
+[19:55] and we can replace all the DC sources in the circuit as 0.
+[19:59] And then after, we can replace the MOSFET by the small signal model.
+[20:04] So if you see the equivalent circuit, then it will look like this.
+[20:08] So as we have seen, in this case, the input impedance is the parallel combination of this
+[20:14] R1 and the R2.
+[20:17] This implies us as a parallel combination of these and the GOM resistors and the 40MG resistor.
+[20:24] That is equal to 8MG.
+[20:28] That means the input impedance of this amplifier configuration is equal to 8MG.
+[20:33] Similarly, the output impedance is equal to Rd and in this case it is equal to 3.33.
+[20:41] and the voltage gain is equal to minus gm times rd or in this case it is equal to minus
+[20:50] 1.33 milli cms times 3.3 kilo ohm that is equal to minus 4.43. So this is the voltage
+[21:02] gain of this amplifier. So in this way using this small signal analysis we can find the
+[21:08] different amplifier parameters. So in this video we have done the small signal analysis
+[21:14] of this common source amplifier whenever it is biased using the voltage divider biasing
+[21:19] configuration right. Similarly another popular biasing configuration for the MOSFET is
+[21:24] the range feedback bias. So similarly in the next video we will see the small signal
+[21:30] analysis of this common source amplifier and the MOSFET is biased using the range feedback
+[21:35] bias. But I hope in this video you understood the small signal analysis of this common source
+[21:40] amplifier. So if you have any question or suggestion then do let me know here in the
+[21:46] comment section below. If you like this video, hit the like button and subscribe to the
+[21:50] channel for more such videos.

@@ -1,0 +1,136 @@
+Title: Op-Amp: CMRR (Common Mode Rejection Ratio) Explained (with example)
+URL: https://www.youtube.com/watch?v=hpCu3HbAiWg
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the channel All about Electronics.
+[00:15] So in this video we will understand what is common word rejection ratio in OPEM.
+[00:20] So if you see the data sheet of any OPEM then you will find that out of the many parameters
+[00:25] the one parameter which is defined for the OPEM is common word rejection ratio.
+[00:30] So let us understand in this video what do we mean by this common word rejection ratio
+[00:35] and what is the importance of this common word rejection ratio in OPEM.
+[00:39] Now usually this parameter is defined for the differential amplifier and in the earlier
+[00:44] introductory videos of OPEM we have seen that OPEM is also differential amplifier and
+[00:49] it amplifies the differential input signal which is available between the two terminals.
+[00:54] So let us say if voltage is V1 and V2 are applied to this OPEM then the output of the
+[00:59] OPEM in open loop configuration will be the open loop gain multiplied by the difference
+[01:04] between the two input voltages.
+[01:07] So here this gain is known as the open loop gain or simply differential gain because
+[01:12] it amplifies the difference between the two input voltages.
+[01:16] Now suppose if two input voltages V1 and V2 are equal in that case the output of the
+[01:21] OPEM should be equal to 0 or in another word we can say that if two input terminals are
+[01:27] tied together to the common input voltage in that case the output of the OPEM should be
+[01:31] equal to 0.
+[01:33] So this configuration where two input voltages are equal or the two input voltages are tied
+[01:38] together to the common input voltage that configuration is known as the common word configuration
+[01:45] and the input voltage which is applied to the both input terminal is known as the common
+[01:49] word voltage.
+[01:51] So in ideal condition in this configuration the output of the OPEM should be 0 but actually
+[01:57] if you see some voltage will be available at the output and this output is known as the
+[02:03] common word output voltage.
+[02:04] Now usually this output voltage used to be less than the applied input signal or we can
+[02:09] say that the ratio of this output divided by the input is always less than 1.
+[02:15] So this ratio or the gain is commonly known as the common word gain of this OPEM.
+[02:21] So now let us see some of the sources which X as a common word input signal for this OPEM.
+[02:28] So the most common source for this common word input signal is the 50 or 60 hertz noise
+[02:32] signal which used to be present at the both input terminals.
+[02:36] Apart from that whenever the circuit is operated in a high electromagnetic field in that case
+[02:41] the electromagnetic interference which is coupled to the circuit is also common to the
+[02:45] both input terminals.
+[02:47] So these are the some of the sources of the common word input signal.
+[02:51] Now suppose if we apply the differential input signal to this OPEM in that case the output
+[02:56] of the OPEM ideally should be equal to this differential gain multiplied by this differential
+[03:02] input voltage but because of this common word input signals you will see the another term
+[03:07] in the output that is common word input gain multiplied by this common word input signal.
+[03:13] So this term basically represents the common word output voltage which appears at the output
+[03:18] side and for any OPEM this term should be as minimum as possible.
+[03:23] So in another words we can say that OPEM should be able to suppress this common word input
+[03:28] signal which is presented at the both input terminals and how well it is able to suppress
+[03:33] this common word input signal is defined by the parameter which is known as the common
+[03:38] word rejection ratio and it is the ratio of this differential gain divided by the common
+[03:43] word gain and in decibel it can be represented as 20 log of this differential gain divided
+[03:53] by the common word gain.
+[03:56] Now usually this parameter is defined for the open loop configuration and in fact the discussion
+[04:02] that we have carried out so far is also for the open loop configuration.
+[04:06] But in practical cases this OPEM is used as a differential amplifier in a closed loop
+[04:11] configuration.
+[04:13] So the value of this common word rejection ratio which is listed in the data sheet for
+[04:16] the open loop configuration can be used approximately for the closed loop configuration and using
+[04:21] this we can find the common word output voltage which is presented at the output terminal.
+[04:27] Now usually this differential amplifier is used to amplify the differential input signal
+[04:31] which is coming from the sensors and many times this differential input signal used to
+[04:36] be a very small value.
+[04:38] So now whenever this differential input is comparable to the common word input signal
+[04:43] in that case this common word rejection ratio used to be a critical parameter.
+[04:48] So in that case it is important that this differential amplifier should be able to
+[04:52] suppress the common word input signal which is presented at the both input terminals.
+[04:56] So based on this let us take one example and let us understand how well the differential
+[05:01] amplifier is able to suppress this common word input signal.
+[05:05] So in this circuit OPEM is used as a differential amplifier in a closed loop configuration.
+[05:11] So here the differential input that is being applied to the input terminal is a 1 kilo
+[05:15] odd sine wave with a peak value of 5 milli volt.
+[05:19] And here the common word input signal or the common word noise which is present at the
+[05:23] both terminal is a 58 signal with a peak value of 2 milli volt.
+[05:28] And for the given circuit the common word rejection ratio for the OPEM is 90 dB.
+[05:33] So let us find out in this example how well the circuit is able to suppress this common
+[05:38] word input signal.
+[05:40] So first of all let us find out the output voltage whenever the differential input signal
+[05:44] is applied between the two terminals.
+[05:46] So in the earlier video of differential amplifier we have seen that for this configuration the
+[05:52] output voltage can be given by the expression R2 dA by R1 multiplied by the
+[05:58] V2 minus V1.
+[06:01] So here the ratio of this R2 and R1 defines the differential gain of this amplifier.
+[06:07] And here the difference between this voltage V2 and V1 is nothing but the differential
+[06:12] input voltage which is applied between the two terminals.
+[06:15] So we can say that the output voltage is nothing but the differential gain multiplied by
+[06:20] the differential input voltage that is applied between the two terminals.
+[06:24] So in this example if you see the value of R2 and R1 are 10 kilo ohm and 1 kilo ohm
+[06:29] respectively.
+[06:30] So you can say that for this circuit the differential gain is 10 and the differential input voltage
+[06:37] that is applied between the two terminals is 1 kilo ohm sine wave with a peak value of
+[06:41] 5 milli volt.
+[06:43] So for the given circuit the output voltage will be a 1 kilo ohm sine wave with a peak
+[06:47] value of 50 milli volt.
+[06:49] So this will be the output voltage because of the differential input that is applied between
+[06:53] the two terminals.
+[06:55] Now let us see the effect of this common mode input signal which is presented at the both
+[06:59] terminals.
+[07:00] So here the common mode rejection ratio for the given circuit is equal to 90 dB and as
+[07:06] we have discussed we can approximately consider this value for the closed loop configuration.
+[07:11] So we can say that CMRR that is equal to 20 log of differential gain divided by the common
+[07:21] mode gain or we can say that the differential gain divided by the common mode gain that
+[07:27] is equal to 10 to the power 4.5 and if we calculate this value it will be roughly around
+[07:34] 31623.
+[07:36] So we can say that the common mode rejection ratio for the given circuit is equal to 31623.
+[07:45] Now as we know it is nothing but the differential gain divided by the common mode gain.
+[07:52] So we can say that the common mode gain will be equal to this differential gain divided
+[07:58] by this common mode rejection ratio.
+[08:02] Now here for the given circuit we have found that value of this differential gain is nothing
+[08:06] but 10 and we have already found the value of this common mode rejection ratio as 31623.
+[08:14] So this will be the common mode gain for the given circuit.
+[08:18] Now the common mode output voltage can be defined as the common mode gain multiplied
+[08:23] by the common mode input signal.
+[08:26] Now here we have already found the value of this common mode gain that is equal to 10 divided
+[08:31] by 31623 and here this common mode input signal is a 58 signal with the peak value of 2
+[08:39] milli volt.
+[08:41] So if you calculate it then we will find the value of this common mode output voltage
+[08:45] as 0.63 micro volt.
+[08:48] So at the output we will get the common mode output voltage of 50 hertz with the peak value
+[08:52] of 0.63 micro volt.
+[08:55] So in this way this differential amplifier suppresses the common mode input signal which
+[08:59] is presented at the input terminals and how well it is able to suppress this common
+[09:04] mode input signal it depends upon the value of this common mode rejection ratio.
+[09:09] Now this common mode rejection ratio is also function of frequency.
+[09:12] So as the frequency will increase the ability of the circuit to suppress this common mode
+[09:17] noise will also reduce.
+[09:19] So for the given example if the common mode input signal which is present at the both input
+[09:24] terminal is a high frequency noise in that case the circuit will not be able to suppress
+[09:28] that noise as efficiently as it was able to suppress the 50 hertz noise.
+[09:33] But in that case suppose the input signal frequency is way less than the high frequency
+[09:38] noise then still the input signal can be filtered out using the LOPAS filter.
+[09:43] So these are some design aspects which you should need to take care of while designing
+[09:47] the circuits.
+[09:48] So I hope in this video you understood what is common mode rejection ratio and what is
+[09:53] the importance of this parameter in the op-amp circuits.
+[09:57] So if you have any question or suggestion do let me know in the comment section below.
+[10:01] If you like this video hit the like button and subscribe to the channel for more such
+[10:05] videos.

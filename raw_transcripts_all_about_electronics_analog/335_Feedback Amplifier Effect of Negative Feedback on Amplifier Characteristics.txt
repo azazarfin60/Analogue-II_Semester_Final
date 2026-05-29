@@ -1,0 +1,385 @@
+Title: Feedback Amplifier : Effect of Negative Feedback on Amplifier Characteristics
+URL: https://www.youtube.com/watch?v=HLnOESI1eps
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:11] So in this video, we will see the effect of the negative feedback on the amplifier in
+[00:15] detail.
+[00:16] So in the previous video, we have seen the general structure of the feedback amplifier
+[00:21] and we have derived the expression of the closed loop gain of the amplifier.
+[00:25] So we have seen that if the A beta or the loop gain of the feedback amplifier is very
+[00:30] large, then this closed loop gain is approximately equal to 1 divided by beta.
+[00:36] And in that case, the gain of the feedback amplifier can be decided just by using the
+[00:41] feedback network.
+[00:43] And briefly, we have also discussed the benefits of the negative feedback on the amplifier
+[00:47] circuit.
+[00:49] So in this video, through a mathematical analysis, we will understand all these effects
+[00:54] in detail.
+[00:55] So in the previous video, we have already seen that due to the negative feedback, how
+[01:00] the gain of the amplifier reduces.
+[01:03] Because with the negative feedback, the closed loop gain of the amplifier is equal to
+[01:07] A divided by 1 plus A beta.
+[01:10] That means due to the feedback, this gain of the amplifier reduces by the factor of 1
+[01:15] plus A beta.
+[01:17] But at the same time, we are also getting other benefits.
+[01:21] So 1 by 1, let us see each one of them in detail.
+[01:25] So this negative feedback, this sensitizes the gain of the amplifier.
+[01:30] That means due to the temperature or some other external parameters, even if there is a
+[01:35] variation in the open loop gain of the amplifier, then also the variation in the closed loop gain
+[01:41] will be minimal.
+[01:43] So to understand that, once again, let us take the example of the op-amp.
+[01:48] So as you can see, here the op-amp is configured in the non-inverting configuration.
+[01:53] So here, we are taking the same values of the R1 and R2, which we have taken in the
+[01:58] previous video.
+[02:00] That means here, this R1 is equal to 1 kilo ohm, while the R2 is equal to 9 kilo ohm.
+[02:06] That means here, this feedback factor is equal to R1 divided by this R1 plus R2.
+[02:14] Or that is equal to 1 kilo ohm divided by 1 kilo ohm plus 9 kilo ohm.
+[02:21] Or that is equal to 0.1.
+[02:24] And let us say initially, this open loop gain of the op-amp is equal to 10 to the power 6.
+[02:30] So now, let us say, because of the external parameters, this open loop gain of the op-amp
+[02:36] reduces by the 20 percent.
+[02:38] So now, this open loop gain will become 0.8 times the 10 to the power 6.
+[02:45] So with this open loop gain, if we see the closed loop gain of this non-inverting amplifier,
+[02:50] then that is equal to 8S divided by 1 plus 8S times beta, where this 8S is equal to 0.8
+[02:58] times the 10 to the power 6.
+[03:01] And if you see this 8S dot beta, then that is equal to this 8S times 0.1 and that is
+[03:08] equal to 0.8 times the 10 to the power 5.
+[03:13] So if you see the value of the closed loop gain, then that is equal to 9.9998.
+[03:18] So as you can see, even if there is a 20 percent variation in the open loop gain, then also
+[03:24] there is hardly any variation in the closed loop gain.
+[03:28] So we can say that this negative feedback decensitizes the gain of the amplifier.
+[03:34] So now, let us go a little bit into the deep.
+[03:37] And through a mathematical analysis, let us understand, even if there is a variation
+[03:42] in the open loop gain, then by what factor is closed loop gain will get affected?
+[03:47] Or in other words, what is the variation in the closed loop gain?
+[03:52] So here, this closed loop gain of the feedback amplifier is equal to a divided by 1 plus
+[03:57] a beta.
+[03:59] So now, let us differentiate this expression with respect to a.
+[04:04] So here, we are assuming that this feedback factor be tides constant.
+[04:09] So if we differentiate with respect to a, then we can write it like this.
+[04:14] That means in the denominator, we will have the 1 plus a beta square.
+[04:18] Well, in the numerator, the first term will be equal to 1 plus a beta times 1.
+[04:24] That means the denominator will remain as it is and we will have the differentiation of
+[04:28] the numerator.
+[04:29] And then after, the numerator will remain as it is and we will have the differentiation
+[04:34] of the denominator.
+[04:36] So that is why the second term is equal to minus a beta.
+[04:41] So overall, if we see, then that is equal to 1 divided by 1 plus a beta whole square.
+[04:48] So further, we can write it as, this dAF that is equal to dA divided by 1 plus a beta
+[04:55] whole square.
+[04:57] So now, let us divide this expression by this first expression.
+[05:02] So now, we can write it as, this dAF divided by aF that is equal to this dA divided by 1
+[05:10] plus a beta whole square divided by this a divided by 1 plus a beta.
+[05:16] What we can write it as is 1 plus a beta divided by a.
+[05:21] So if we further rearrange it, then further we can write it as this dAF divided by aF that
+[05:27] is equal to is 1 divided by 1 plus a beta times dA divided by a.
+[05:34] So as you can see, the variation in the closed loop gain that is dAF divided by aF is lesser
+[05:40] than the closed loop gain by this factor that is equal to 1 divided by 1 plus a beta.
+[05:47] That means the negative feedback desangetizes the gain of the amplifier.
+[05:52] And if the a beta or the loop gain is very large, then the gain remains almost constant,
+[05:58] even if there is a variation in the external parameters.
+[06:02] So similarly, if you see the second positive effect of the negative feedback, then it reduces
+[06:07] the non-linear distortion in the amplifier.
+[06:10] So many times, the amplifier does not provide the same gain for the all signal levels.
+[06:16] So it is quite possible that the higher signal levels may see a different gain than the
+[06:21] lower signal levels.
+[06:23] So here for the simplicity of this wise linear characteristic, he shown for the one amplifier.
+[06:29] So as you can see up to a certain voltage level, the gain provided by the amplifier is equal
+[06:35] to 1000.
+[06:37] And then after it provides the gain of the 100.
+[06:41] So this is basically a transfer characteristic of the amplifier.
+[06:45] And as you can see, since it is a not linear, so this non-linear distortion may occur in the
+[06:51] output of the amplifier.
+[06:54] So now let us see what happens and the same amplifier is used with the proper feedback.
+[07:00] So let's say and the same amplifier is used with the proper feedback, then the feedback
+[07:05] factor is equal to 0.01.
+[07:09] So now in this region, with the feedback, if you see the close loop gain, then that is
+[07:14] equal to 1000 divided by 1 plus 10.
+[07:18] Because for this region, this gain A is equal to 1000.
+[07:22] Well, if you calculate the value of A beta, then that will be equal to 10.
+[07:27] So if you see the close loop gain, then that will be equal to 90.9.
+[07:32] Similarly, for the second region, this open loop gain is equal to 100.
+[07:37] So if you calculate the value of the close loop gain, then that will be equal to 100 divided
+[07:42] by 1 plus 1.
+[07:45] Because here, the value of the A beta is equal to 1.
+[07:49] And therefore, this close loop gain will be equal to 50.
+[07:53] That means now, with the feedback, if we see the transfer characteristic of the amplifier,
+[07:58] then it will look like this.
+[08:00] So in one region, now the gain is around 90.
+[08:04] Well, in the second region, the gain is equal to 50.
+[08:08] So earlier, without the feedback, if you move from the one region to the other region,
+[08:13] then there was a 10 fold decrease in the gain.
+[08:16] But with the feedback, it has been reduced substantially.
+[08:20] And now, the characteristic is almost linear.
+[08:24] That means with the proper feedback, all the signal levels will see almost constant gain.
+[08:30] So with this negative feedback, although it is possible to achieve this almost linear
+[08:34] characteristic, but we need to pay the price in terms of the reduction in the overall gain
+[08:39] of the amplifier.
+[08:42] So if we want to achieve the same gain, then what we can do, we can add one pre-amplifier,
+[08:48] which provides the required additional gain for this amplifier circuit.
+[08:52] For example, in this case, let's say, the pre-amplifier provides the gain of the N.
+[08:59] So in this case, the pre-amplifier will not add the non-linear distortion.
+[09:04] Because here, if you see the gain of the pre-amplifier, then it is very less.
+[09:09] That means the signal levels, even at the output of this pre-amplifier will be less.
+[09:14] And because of that, it will not see the effect of the non-linear distortion.
+[09:19] And in the next stage, we can use this feedback amplifier.
+[09:23] And in this way, it is possible to achieve the desired gain.
+[09:28] So in short, using this negative feedback, it is possible to reduce the effect of the
+[09:32] non-linear distortion.
+[09:34] So apart from that, this negative feedback also reduces the effect of the noise or the
+[09:39] interference in the amplifier circuit.
+[09:42] For more precisely, it can increase the signal to noise ratio.
+[09:47] So when the amplifier is configured in a certain way, then it is possible to achieve that.
+[09:53] So let's say we have one noisy amplifier.
+[09:57] So whenever some input signal VS is applied to that, then along with that, this noise signal
+[10:02] VN also gets amplified.
+[10:06] So for this amplifier at the output, if you see the signal to noise ratio, then that is
+[10:11] equal to this A times VS, divided by A times VN.
+[10:16] Or we can say that that is equal to VS divided by VN.
+[10:22] So now let us assume that it is possible to build another amplifier, which does not suffer
+[10:27] from the noise or the interference.
+[10:30] That means whenever the signal is applied to that amplifier, then it only amplifies the
+[10:35] input signal and it does not amplify the noise signal.
+[10:39] So what we can do?
+[10:41] We can place this amplifier just before the noisy amplifier.
+[10:46] And then after we can apply the feedback around the cascaded stage in a such a way that
+[10:51] the overall gain of the amplifier circuit will still remain the same.
+[10:56] So here this A2 is the clean amplifier and this A1 is the noisy amplifier and this A2
+[11:02] and A1 are the gain provided by the each amplifier.
+[11:07] And here this beta is the feedback factor of this feedback network.
+[11:11] So now if you see over here, then we have the voltage sources that is VS and the VN.
+[11:19] So here, my applying the superposition theorem, we can find the overall output of this feedback
+[11:24] amplifier.
+[11:26] So first let us assume that only this voltage source VS is acting alone and this VN is
+[11:31] equal to 0.
+[11:33] So let us say in this condition this output voltage is equal to V01.
+[11:39] So in this condition, if you see the overall gain in the forward direction, then that is
+[11:43] equal to A2 times A1.
+[11:47] And here this feedback is equal to beta.
+[11:50] So in this condition, if you see the output voltage V01, then that is equal to A2 times
+[11:56] A1 divided by 1 plus this A1 times A2 times beta.
+[12:01] And of course, it will get multiplied by this input signal.
+[12:04] So similarly, now let us assume that this voltage source VN is acting alone and this voltage
+[12:11] source VS is equal to 0.
+[12:13] So in this condition, now this VN is acting as the source signal.
+[12:18] That means now the gain in the forward direction is equal to A1.
+[12:22] Well, if you see the feedback path, then the overall feedback factor is equal to A2 times
+[12:28] beta.
+[12:30] And after this amplifier A2, the output voltage that is equal to A2 times beta times V out
+[12:37] will be subtracted from the noise signal.
+[12:40] So we can say that over here, this feedback factor is equal to A2 times beta while the
+[12:45] forward gain is equal to A1.
+[12:49] And in this condition, if you see the output voltage V02, then that is equal to A1 divided
+[12:54] by 1 plus A1 times A2 times beta times VN.
+[13:00] That means now the overall output voltage of this amplifier is equal to V01 plus V02.
+[13:06] And as you can see, it can be given by this expression.
+[13:11] So in this case, the first part represents the amplification of the input signal.
+[13:16] But the second part represents the amplification of the noise signal.
+[13:21] So here, if you take the ratio of these two parts, then we will get the signal to noise
+[13:26] ratio of this amplifier.
+[13:27] And in this case, that is equal to VS divided by VN times A2.
+[13:34] That means now the signal to noise ratio has been improved by the factor of A2.
+[13:40] So in this way, using the negative feedback, it is possible to improve the signal to
+[13:44] noise ratio.
+[13:45] And it is possible to reduce the effect of the noise or the interference on the amplifier
+[13:50] circuit.
+[13:51] Then if you see the next effect, then this negative feedback increases the bandwidth of the
+[13:56] amplifier.
+[13:57] So let's say we have one amplifier whose midband gain is equal to AM.
+[14:04] Or in the logarithmic scale, that is equal to 20 log AM.
+[14:09] So as you can see, this amplifier provides the constant gain in the mid frequencies.
+[14:16] And as we go beyond or above this midband frequencies, then the gain starts reducing.
+[14:21] So here, this effect is the upper cutoff frequency, while the FL is the lower cutoff frequency.
+[14:28] So as you know, the cutoff frequency is the frequency at which the gain of the amplifier
+[14:34] reduces by the 3 dB from the maximum value.
+[14:38] So here, we are assuming that if we are going beyond this cutoff frequencies, and the gain
+[14:43] of the amplifier is reducing at the rate of 20 dB per decade.
+[14:49] So here, the bandwidth of the amplifier is equal to FH-FL.
+[14:54] So we can say that here without the feedback, this FH is the upper cutoff frequency of the
+[14:59] amplifier.
+[15:00] And the FL is the lower cutoff frequency.
+[15:03] And the gain of the amplifier is equal to AM.
+[15:06] But with the feedback, this gain will reduce by the factor of 1 plus A beta.
+[15:11] Or in the decibel, it will reduce by 20 log 1 plus A beta.
+[15:17] But at the same time, if you see, then the bandwidth of the amplifier will also increase.
+[15:23] So now, his upper cutoff frequency is equal to FH-, while the lower cutoff frequency is
+[15:29] equal to FL-.
+[15:31] So here, his upper cutoff frequency FH- will increase by the factor of 1 plus A beta.
+[15:38] And likewise, this lower cutoff frequency will also reduce by the same factor.
+[15:44] That means now, due to the negative feedback, the overall bandwidth of the amplifier will
+[15:48] increase.
+[15:49] So now, mathematically, let us prove that how this negative feedback modifies the upper
+[15:55] and the lower cutoff frequency of the amplifier.
+[15:58] And first, let us see the effect of this negative feedback on the upper cutoff frequency.
+[16:04] So to find the upper cutoff frequency, we will consider this part of the frequency response.
+[16:10] And as you can see, it looks like a response of the LOPAS filter.
+[16:15] So this part of the gain response can be given as this AM times his omega H divided
+[16:21] by S plus omega H.
+[16:23] So here, the gain response of the amplifier is represented in the LOPAS domain.
+[16:29] So here, his AM is the midmen gain of the amplifier.
+[16:33] And his omega H is the higher cutoff frequency of the amplifier.
+[16:38] But here, it is represented as the angular frequency.
+[16:41] So we can say that his omega H is equal to 2 pi times FH.
+[16:47] So first, let us see how this response represents the response of the LOPAS filter.
+[16:53] So further, the same expression can also be written like this.
+[16:58] So basically, both numerator and the denominator is divided by this omega H.
+[17:04] And now, let us replace this S by G omega.
+[17:08] That means now, this expression can be written as E of omega that is equal to AM divided
+[17:14] by this G omega divided by omega H plus 1.
+[17:18] So in this expression, whenever this omega is much lesser than omega H, and this first
+[17:24] term will be lesser than the 1.
+[17:26] And in that condition, this E omega is approximately equal to AM.
+[17:32] But whenever this omega is equal to omega H, and the same expression can be written as
+[17:38] AM divided by J plus 1.
+[17:41] But if we just consider the magnitude, and that is equal to AM divided by root 2.
+[17:47] That means at the omega H, the gain will become AM divided by root 2.
+[17:52] Or in the decibel, it will reduce by the 3 dB.
+[17:56] So we can say that this expression represents the response of the LOPAS filter.
+[18:02] Or in this case, it represents this part of the frequency response.
+[18:07] So this response is the frequency response of the amplifier without feedback.
+[18:12] But now, let us see the response of this amplifier with the negative feedback.
+[18:17] So with the negative feedback, the closed loop gain of the amplifier can be given as this
+[18:22] A divided by 1 plus A beta.
+[18:25] So now, let us put the value of A as in the given expression.
+[18:29] So if we put the value, then this expression can be written like this.
+[18:34] That is equal to AM divided by S divided by omega H plus 1 divided by 1 plus is AM divided
+[18:41] by S divided by omega H plus 1 times beta.
+[18:46] So now, if we further rearrange the same expression, then it can be written like this.
+[18:52] So here, this S divided by omega H plus 1 will get cancelled out over here.
+[18:58] And further, the same expression can be written as AM divided by S divided by omega H plus
+[19:04] 1 plus AM times beta.
+[19:07] So now, if we divide both numerator and denominator by this 1 plus AM beta, then further this
+[19:14] expression can be written as AM divided by 1 plus AM beta divided by S is 1 plus S divided
+[19:21] by S is omega H times 1 plus AM beta.
+[19:26] But we can see that that is equal to AM dash divided by 1 plus S divided by omega H dash.
+[19:34] But this AM dash is the new midband gain with the feedback.
+[19:39] And as you can see over here, that is equal to AM divided by 1 plus AM beta.
+[19:44] And similarly, if we see this omega H dash, then that is equal to omega H times 1 plus
+[19:51] AM beta.
+[19:52] So as you can see, this new cutoff frequency increases by the factor of 1 plus AM beta.
+[19:59] So similarly, now let us see the effect of the negative feedback on the lower cutoff
+[20:04] frequency.
+[20:05] So for the lower cutoff frequency, we will consider this part of the frequency response.
+[20:11] So as you can see, it looks like a high pass filter response.
+[20:15] And mathematically, it can be expressed by this expression.
+[20:20] That is equal to AM times S divided by S plus omega L, where this omega L is the lower
+[20:26] cutoff frequency.
+[20:28] And once again, here it is represented as the angular frequency.
+[20:32] That means the omega L is equal to 2 pi times F L. So first of all, let me show you how
+[20:39] this expression represents the response of the high pass filter.
+[20:44] So further, this expression can be written as AM divided by this omega L divided by S plus
+[20:50] 1.
+[20:51] So basically, both numerator and denominator is divided by the S. So here, this expression
+[20:58] is represented in the Laplace domain.
+[21:01] But now, if we replace this S by the G omega, and further, this expression can be written
+[21:06] as this AM divided by this omega L divided by G omega plus 1.
+[21:12] Or further, it can be written as this AM divided by this 1 minus this G omega L divided
+[21:18] by omega.
+[21:19] Because as you know, this 1 divided by J is equal to minus J. That means further, the same
+[21:26] expression can be written like this.
+[21:29] So now whenever this omega is much greater than omega L, that means whenever we are at
+[21:35] this side of the frequency response, then this term will be much lesser than 1.
+[21:41] And in that condition, this A omega is approximately equal to AM.
+[21:46] But as the omega approaches the omega L, then the value of the A omega will reduce.
+[21:52] And whenever this omega is equal to omega L, then in that condition, the expression can
+[21:57] be written as this AM divided by 1 minus J. And if we just consider the magnitude, then
+[22:04] that is equal to AM divided by root 2.
+[22:07] That means at the lower cutoff frequency, the amplitude of this expression will reduce
+[22:12] by the factor of root 2.
+[22:14] For in the decibel, it will reduce by the 3 dB.
+[22:18] So we can say that in need of this expression, represent the response of the hypersfilter.
+[22:24] So this is the response of the amplifier without the feedback.
+[22:27] But now let us see with the feedback how it gets modified.
+[22:32] So once again, without the feedback, this is the gain of the amplifier.
+[22:37] And with the feedback, it can be given as this A divided by 1 plus A beta.
+[22:43] So in this expression, now let us put the value of the AS.
+[22:47] So by putting the value, the same expression can be written like this.
+[22:52] That is equal to EM divided by this omega L divided by S plus 1 divided by this 1 plus
+[22:59] this EM divided by omega L divided by S plus 1 times beta.
+[23:05] So now if we multiply both numerator and denominator by this omega L divided by S plus 1, and
+[23:11] further this expression can be written as this AM divided by omega L divided by S plus 1
+[23:17] plus this EM times beta.
+[23:21] So now let us divide about numerator and the denominator by the factor of 1 plus A beta.
+[23:27] So if we do that, then further this expression can be written as this AM divided by 1 plus
+[23:32] A beta divided by this 1 plus this omega L divided by S times 1 plus A beta.
+[23:41] Or further it can be written as this EM dash divided by 1 plus omega L dash divided
+[23:48] by S, where this AM dash is equal to EM divided by 1 plus A beta.
+[23:55] And if you see the omega L dash and that is equal to omega L divided by 1 plus A beta.
+[24:02] So this is the expression of the closed loop gain with the feedback.
+[24:06] And as you can see, this new lower cutoff frequency is reducing by the factor of 1 plus A beta.
+[24:12] That means due to the negative feedback, the closed loop gain reduces, but at the same
+[24:17] time the bandwidth of the amplifier also increases.
+[24:21] So let us take one example and through some numbers, let us understand it in more detail.
+[24:27] So let us say we have an amplifier whose open loop gain is equal to 10 to the power 4.
+[24:34] And whenever it is used with the feedback and this feedback factor is equal to 0.1.
+[24:40] Moreover in the open loop condition, this is the frequency response of the amplifier.
+[24:45] So here the upper cutoff frequency is equal to 50 kilohertz and the lower cutoff frequency
+[24:50] is equal to 100 hertz.
+[24:53] So with the feedback, now let us find the closed loop gain of this amplifier.
+[24:57] And it is also find out the new lower and the upper cutoff frequency of this amplifier.
+[25:03] So with the feedback, if we see the closed loop gain of the amplifier, then it will reduce
+[25:07] by the factor of 1 plus A beta.
+[25:10] But in this case, this 1 plus A beta is equal to 1 plus this 10 to the power 4 times 0.1.
+[25:18] And that is roughly equal to 1000.
+[25:21] So we can say that this closed loop gain is equal to 8 divided by 1 plus A beta.
+[25:26] But in this case, that is equal to 10 to the power 4 divided by 1000.
+[25:32] That is equal to 10.
+[25:34] Similarly with the feedback, if we see the upper and the lower cutoff frequency, then
+[25:38] this upper cutoff frequency can be given as this fh times 1 plus A beta.
+[25:44] So in this case, that is equal to 50 kilohertz times 1000.
+[25:48] But if we can say that the new upper cutoff frequency is equal to 50 megahertz.
+[25:54] While if we see the lower cutoff frequency, then it can be given as f will divided by 1 plus
+[26:01] A beta.
+[26:02] So now it will be equal to 100 hertz divided by 1000.
+[26:07] What that is equal to?
+[26:08] 0.1 hertz.
+[26:09] So as you can see we are here with the feedback, now the closed loop gain has been reduced
+[26:14] by the factor of 1000.
+[26:17] But if we see the bandwidth, then it will also increase by the same factor.
+[26:21] So let us see that.
+[26:23] So without the feedback, if you see the fh and the fl, then that is equal to 50 kilohertz
+[26:28] and the 100 hertz.
+[26:30] That means without the feedback, the bandwidth of the amplifier is equal to 50 kilohertz
+[26:35] minus 100 hertz.
+[26:37] What that is equal to 49.9 kilohertz.
+[26:41] So roughly we can say that that is equal to 50 kilohertz.
+[26:45] And if we see the gain bandwidth product, that is the multiplication of this gain and
+[26:49] the bandwidth, then that is equal to 10 to the power 4 times 50 kilohertz.
+[26:54] Therefore we can say that that is equal to 5 times 10 to the power 8.
+[26:59] So this is the gain bandwidth product without the feedback.
+[27:03] But now let us see the same thing with the feedback.
+[27:06] So with the feedback, we have seen that the closed loop gain is approximately equal to 10.
+[27:12] But now the new upper cutoff frequency is equal to 50 megahertz, while the lower cutoff
+[27:17] frequency is equal to 0.1 hertz.
+[27:20] That means now you can see the bandwidth of the amplifier.
+[27:24] That is FH dash minus FL dash and that is equal to 50 megahertz minus 0.1 hertz.
+[27:30] And that is roughly equal to 50 megahertz.
+[27:34] So as you can see, although with the feedback, the gain has been reduced by the factor of
+[27:38] 1000.
+[27:39] But by the same factor, the bandwidth of the amplifier has been increased.
+[27:44] And if you see the gain bandwidth product, then it will almost remain same.
+[27:48] So in this case, if you see the gain bandwidth product, then that is equal to 10 times 50 megahertz.
+[27:56] And that is also equal to 5 times 10 to the power 8.
+[28:00] So we can say that with the feedback also, the gain bandwidth product of the amplifier
+[28:05] will almost remain constant.
+[28:07] So in this way, with the negative feedback, the bandwidth of the amplifier will increase.
+[28:13] So here is the list of all the properties of the negative feedback.
+[28:17] And here, out of the 5 mentioned properties, we have already seen the 4 properties.
+[28:22] So now, depending on the feedback topology, the input and the output impedance of the amplifier
+[28:27] will get modified.
+[28:29] So here, briefly first of all, let us understand what do we mean by the feedback topology.
+[28:35] So in this feedback amplifier, when we are sampling the signal, then the sampled signal
+[28:40] can be either voltage or the current.
+[28:43] And similarly, when we are sending the feedback signal back to the input side, then this feedback
+[28:48] signal can be either voltage or the current.
+[28:51] So depending on whether we are sampling the voltage or the current.
+[28:55] And likewise, whether we are sending voltage or current on the input side, we can have
+[28:59] total 4 different feedback topologies.
+[29:02] So in the next video, we will learn about that in detail.
+[29:06] And for each feedback topology, we will also find out the input and the output impedance.
+[29:12] I hope in this video, you understood the effect of the negative feedback on the different
+[29:16] properties of the amplifier.
+[29:19] So if you have any question or suggestion, then do let me know here in the comment section
+[29:23] below.
+[29:24] If you like this video, hit the like button and subscribe to the channel for more such
+[29:28] videos.

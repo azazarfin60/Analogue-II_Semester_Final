@@ -1,0 +1,202 @@
+Title: BJT : Common Base Configuration Explained
+URL: https://www.youtube.com/watch?v=NMD4KECE-7I
+Source: Local Whisper (base)
+
+[00:00] Here friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the common base configuration of the BJT.
+[00:22] Now if you see, the most common application of the BJT is to use it as an amplifier.
+[00:28] That means if we apply some input signal to this BJT, let's say some sign wave, then
+[00:33] it will amplify that signal.
+[00:36] And whenever we use this BJT as an amplifier, then there are different configurations in
+[00:40] which it can be configured, like a common emitter, common base and the common collector.
+[00:47] So in each configuration, one terminal of the BJT is common to both input and the output
+[00:53] side.
+[00:54] For example, this is the diagram of the common emitter configuration of the BJT.
+[01:00] And as you can see, here the emitter terminal is common between the input and the output side.
+[01:06] So in this particular video, we will learn about the common base configuration.
+[01:11] So in case of the common base configuration, this base terminal is common between the input
+[01:16] and the output side.
+[01:19] That means here, the input is applied between the base and the emitter terminal and the
+[01:24] output is measured between the collector and the base terminal.
+[01:28] And as I said in the previous video, whenever we use this BJT as an amplifier, then it is
+[01:33] used in the active region.
+[01:36] That means the base emitter junction is forward biased and the collector base junction of
+[01:40] this BJT is reversed biased.
+[01:43] So for the NPN transistor, the applied voltage should be such that this base emitter junction
+[01:49] gets forward biased and the collector base junction gets reversed biased.
+[01:55] And for the NPN transistor, if you see the direction of the currents, then it will look
+[01:59] like this.
+[02:01] That means here, the emitter current will go away from the transistor, while the base
+[02:06] current and the collector currents will enter into the transistor.
+[02:11] So if you talk about the PNP transistor, then in case of the PNP transistor, the direction
+[02:16] of the currents will get reversed.
+[02:18] That means now the emitter current will enter into the transistor, while the base and
+[02:24] the collector currents will go away from the transistor.
+[02:27] But in any case, if you see, the emitter current is the summation of base current and the collector
+[02:33] current.
+[02:36] So in case of this PNP transistor, the emitter base junction is forward biased and the base
+[02:41] collector base junction is reversed biased.
+[02:44] Now in this common base configuration, the behavior of the device can be described by
+[02:48] the two characteristics.
+[02:51] One is the input characteristic and the second is output characteristic.
+[02:56] And these characteristics are similar to the Vi characteristics which we had seen for
+[03:00] the diode.
+[03:02] And this characteristics shows the behavior of the device when the voltage and the current
+[03:06] through the device gets changed.
+[03:09] So in this case, if you see, this emitter current is the input current and the voltage
+[03:15] between this base and the emitter terminal.
+[03:17] That means this voltage VBE is the input voltage.
+[03:21] So the input characteristics defines the relationship between this base emitter voltage and the emitter
+[03:26] current for the fixed value of this VCB.
+[03:30] And throughout our discussion, we will talk about the PN transistor.
+[03:35] So if we see the input characteristics of this common base configuration, then it will
+[03:39] look like this.
+[03:41] So here there are three curves for the different values of VCP.
+[03:46] That means for drawing the each curve, the value of VCP has been kept constant.
+[03:51] So if you look this curve, this curve looks similar to the forward characteristic of the
+[03:56] PN junction diode.
+[03:59] Because in need in this case, if you see, the PN junction on this input side has been
+[04:03] forward biased.
+[04:05] And due to that, this characteristics looks similar to the forward characteristics of the
+[04:09] PN junction diode.
+[04:12] Now one more thing if you observe in this curve, as the value of VCP increases, the curve
+[04:17] slightly shifts towards the left hand side.
+[04:20] And at the same time, this emitter current also increases.
+[04:24] And the reason is that, as the collector base junction gets more and more reverse biased,
+[04:29] the width of the depletion region will increase.
+[04:33] And due to that, this base region will get narrower.
+[04:37] So now the less voltage is required to forward bias this emitter base junction.
+[04:43] And due to that, the curve shifts a little bit on the left hand side.
+[04:48] Now from the input characteristics, we can find the input impedance of the device in this
+[04:53] particular configuration.
+[04:55] So if you find the slope of this curve, then we can find the input impedance of the device.
+[05:00] That means we can say that the input impedance or the input resistance is equal to the delta
+[05:06] VBE divided by delta I.
+[05:11] And if you see over here, even if there is a small change in the VBE, there will be a
+[05:16] huge change in the emitter current.
+[05:19] That means from this input characteristics, we can say that in this configuration, the
+[05:24] input impedance of the device is VARIO.
+[05:27] And in fact, that is expected because in the forward bias condition, the resistance of
+[05:32] the PN junction diode is very small.
+[05:35] And typically, it used to be in the ohms.
+[05:38] That means we can say that in this common base configuration, the input impedance of the
+[05:42] device is VARIO.
+[05:44] So similarly, let's talk about the output characteristics.
+[05:50] So here, this collector current is the output current and the voltage between the collector
+[05:55] and the base voltage is the output voltage.
+[05:59] So this output characteristics defines the relationship between this collector current
+[06:03] and the collector to base voltage when the input parameters are kept constant.
+[06:08] That means the output characteristic shows for the fixed value of emitter current.
+[06:13] If we change the collector to base voltage, then how the collector current will change.
+[06:19] So here, the different curves are shown for the different values of the emitter current.
+[06:24] And as you can see, as the emitter current increases, the collector current also increases
+[06:30] linearly.
+[06:32] Now in this curve, there are three regions, the active region, the cutoff region and
+[06:38] the saturation region.
+[06:41] So one by one, let's talk about all these three different regions of operation.
+[06:47] So as you can see, in case of the active region of operation, even if we increase the collector
+[06:52] to base voltage, then also the collector current almost remains constant.
+[06:58] And in this region, the relationship between the collector current and the emitter current
+[07:02] can be given as Ic is equal to alpha times Ie.
+[07:08] Now here, the emitter current is the input current and the collector current is the output
+[07:13] current.
+[07:14] So the ratio of this collector current to the emitter current gives the current gain
+[07:19] of the BJT in this common base configuration.
+[07:23] That means in this configuration, even if we increase this reverse bias voltage, then also
+[07:28] there is a marginal increase in this collector current.
+[07:32] So we can say that in this region of operation, the collector current behaves like a constant
+[07:37] current source.
+[07:39] And for the fixed value of emitter current, it is almost independent of the collector
+[07:44] to base voltage.
+[07:46] And in fact, due to this, this region is used for the amplification because in this region,
+[07:52] the collector current only changes with the change in the input current.
+[07:57] Then if we talk about the second region, then the second region of operation is the saturation
+[08:01] region.
+[08:03] So in this region, as we reduce the value of VcB, that means as the collector to base voltage
+[08:09] goes negative, then this collector current starts reducing.
+[08:13] Because as we remove this reverse bias between the collector to base junction, then the electrons,
+[08:19] which has entered into the base region from the emitter, will not able to cross this collector
+[08:23] junction.
+[08:24] And due to that, this collector current starts reducing.
+[08:28] So whenever both emitter base junction and the collector base junctions are far biased,
+[08:34] then the BJT will operate in this saturation region.
+[08:37] And the third region of operation is the cutoff region.
+[08:41] That means whenever the emitter current is 0 at that time, even if we increase this collector
+[08:46] to base voltage, then also the collector current almost remains 0.
+[08:52] That means whenever we remove the voltage between the emitter and the base terminal, then
+[08:56] the emitter current I will become 0.
+[09:00] And under this condition, the collector current Ic will be almost equal to 0.
+[09:06] And in this condition, the only collector current which exists is due to the minority
+[09:11] charge carriers.
+[09:13] Or in other words, it is only due to the reverse saturation current.
+[09:17] Because we had seen that the total collector current ICT can be given as Ic plus ICO, where
+[09:25] ICO is the reverse saturation current.
+[09:29] Now in the common base configuration, when we open this emitter terminal, the reverse
+[09:34] saturation current, which is flowing between the collector to base terminal, is known
+[09:38] as the ICO.
+[09:41] And this ICO is similar to the reverse saturation current, which we had seen for the diode.
+[09:47] So due to the improvement in the construction techniques, this reverse saturation current
+[09:52] is typically in the nano-emperes range.
+[09:54] But for the high-powered transistors, it is used to be in the range of micro-emperes.
+[10:00] On the other end, if you see this collector current Ic, then it used to be in the range
+[10:04] of milliampere.
+[10:07] And due to that, in this cutoff region, if you see this graph, the collector current
+[10:11] almost appears as a 0.
+[10:15] Now similar to the diode, this reverse saturation current is sensitive to the temperature.
+[10:21] That means as the temperature increases, this reverse saturation current will also increase.
+[10:28] So here, the total collector current ICT can be given as Ic plus Ic Bu.
+[10:36] Or if we represented in terms of the emitter current, then we can say that it is equal
+[10:41] to alpha times Ie plus Ic Bu.
+[10:46] So this will be the total collector current, which is flowing through the circuit.
+[10:50] Alright, so now let us understand briefly how the signal is getting amplified in this
+[10:56] common-based configuration.
+[10:59] And here for the simplicity, the DC basing voltages are not shown.
+[11:04] So let us say, Vi is the input voltage, which we want to amplify, and the RL is the load
+[11:10] resistor.
+[11:11] Now, as I said earlier, in this configuration, the input impedance is very low.
+[11:18] And typically, it used to be in the range of ohms.
+[11:21] So let us say here, the input impedance or the input resistance is equal to tan ohm.
+[11:27] And let us say, the input voltage is equal to 5 milli volt.
+[11:32] So we can say that the input current is equal to 5 milli volt divided by tan ohm.
+[11:37] That is equal to 0.5 milli ampere.
+[11:41] Now for a moment, if we assume that alpha is equal to 1, in that case, this output current
+[11:47] will be same as the input current.
+[11:50] Because we know that the collector current Ic can be given as alpha times Ie.
+[11:56] And for a moment, if we assume this alpha is equal to 1, in that case, this Ic and I
+[12:02] will be equal.
+[12:04] So under this condition, the output current will be same as the input current.
+[12:09] That means the same current will also flow in the output circuitry.
+[12:14] Now for the common-based configuration, the output impedance R0 is very high.
+[12:19] And in fact, that is also evident from this output characteristics.
+[12:24] Because if you see over here, in the active region of operation, even if we increase this
+[12:28] collector to base voltage, then also the collector current almost remains constant.
+[12:34] That means the output resistance, that is delta Vcb, we would buy delta Ic will be very
+[12:41] high.
+[12:42] And typically, it used to be in the range of hundreds of kilo ohms.
+[12:46] So let's say here the output impedance is equal to 100 kilo ohm.
+[12:50] And here, the value of load is equal to 1 kilo ohm.
+[12:55] So if you want to find the output voltage V0, then the V0 can be given as I0 times RL.
+[13:03] That is equal to 0.5 milliampere times 1 kilo ohm.
+[13:09] That means the output voltage V out will be equal to 0.5 volt.
+[13:14] Now here, the input voltage is 5 millivolt, while the output voltage is equal to 500 milli
+[13:19] volt.
+[13:21] That means the input signal gets amplified by the factor of 100.
+[13:25] Or we can say that here the voltage gain is equal to 100.
+[13:31] So in this way, the signal is getting amplified in this common-based configuration.
+[13:36] But if you see the current gain, that is the ratio of this collector current to the
+[13:40] A meter current, then it is less than 1.
+[13:44] That means the current gain for this common-based configuration is less than 1.
+[13:48] But it provides the voltage gain.
+[13:50] And typically, the voltage gain in this configuration varies from 50 to 300.
+[13:58] Now one more thing if you notice over here, the same current is transferred from the input
+[14:02] side towards the output side.
+[14:05] That means there is a transfer of resistor from the low resistance circuit to the high
+[14:09] resistance circuit.
+[14:11] And that is why the BJD was named as a transistor.
+[14:15] So that's it for this video.
+[14:18] And I hope in this video, you understood the basics of this common-based configuration.
+[14:23] And in the next video, we will talk about the common-meter configuration.
+[14:28] So if you have any question or suggestion, do let me know here in the comment section
+[14:32] below.
+[14:33] If you like this video, hit the like button and subscribe to no channel for more such
+[14:36] videos.

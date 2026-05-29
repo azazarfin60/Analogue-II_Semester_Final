@@ -1,0 +1,2473 @@
+Title: High Frequency Response of BJT | Lakshya Batch 2.0 - Analog Electronics | Ankit Goyal
+URL: https://www.youtube.com/watch?v=iL3S6xoEjnY
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:07] A very good morning to all of you guys and welcome back to the Creatrix YouTube channel my dear friends.
+[00:12] We are back again with the Lakshya Batch 2.0 Analog Electronics.
+[00:17] Okay, so you all know that we are preparing BJT for the Analog course.
+[00:23] And you have seen the biasing in BJT, current mirror voltage regulator.
+[00:28] You have also seen the Amplifier of BJT.
+[00:31] And now we were discussing the frequency response in which in the last session I talked to you all
+[00:37] about the low frequency response and today we are going to discuss about the high frequency response.
+[00:45] So I hope that you all are ready to like and share this session quickly.
+[00:52] Tell everyone that we have come live so that we can deal with this topic in a very good way.
+[00:59] You are going to learn a lot of good things about this topic.
+[01:03] You are going to see a good application of the network.
+[01:06] And also we are going to do questions here about the high frequency response.
+[01:12] So Anuj, you will write a question then I will not tell you, there is a question.
+[01:16] Okay, please tell me. So put the question.
+[01:20] Jeet Bittak, Cascade, Cascode, Differential Amplifier, the ones made from BJT,
+[01:24] we will see in the same chapter.
+[01:26] But the same type of amplifier can be made from MOSFET, I will tell you again along with MOSFET.
+[01:32] Okay, but for now you will see the entire application of BJT.
+[01:36] Means when this chapter will end this week, then no question can be asked outside BJT.
+[01:44] In any exam. Okay, let's start today's discussion.
+[01:50] Now see the high frequency response that we saw of BJT is like a low pass filter.
+[01:56] How? I will draw you and show you.
+[02:00] If you see the high frequency response from mid frequency, ignore the low frequency one.
+[02:08] If you just look from mid to high, then how will you see the gain versus frequency?
+[02:17] If you notice, then it will be just like a low pass kind of a filter.
+[02:23] This is how it will be, right?
+[02:25] Here what is your gain above?
+[02:29] This is mid band gain, AV mid.
+[02:33] And here you know that you define a cutoff frequency where the gain is 1 by root 2 times.
+[02:42] Or you can say that half becomes power.
+[02:46] You call this cutoff frequency, right?
+[02:48] That's right.
+[02:50] You write AV mid by root 2.
+[02:54] And here this frequency is FH.
+[03:00] So in this section, my objective will be that I have to find out the cutoff frequency.
+[03:10] In this section, I have to find out the upper cutoff frequency.
+[03:14] I have to find out the upper cutoff frequency.
+[03:22] Anuj, look.
+[03:24] The EMFT of Vishal sir on this channel is for electrical plus EC.
+[03:28] So the EC portion is not above 50-60 hours.
+[03:32] And it is neither above the electrical one.
+[03:36] If you look at the communication of the EC, then it will go up to 150 hours.
+[03:42] What did I tell you about Brahmendra?
+[03:44] Yesterday I had put the shots.
+[03:46] The topics that will be on this week will not be important for the gate electrical.
+[03:50] Okay?
+[03:52] So I had told you yesterday that the topics that will be on this week will not be important for the gate electrical.
+[03:56] It will be useful in the ESC.
+[03:58] It will be useful in both the gate and ESC for the EC.
+[04:02] But there won't be so much work in the gate of the electrical.
+[04:04] Now let's go.
+[04:06] So why is this low pass filter?
+[04:08] This low pass filter is because it is giving high gain on low frequencies.
+[04:14] And it is giving low gain on high frequencies.
+[04:18] That is why I had told that this response is similar to a low pass kind of a filter.
+[04:24] Now when you make a low pass filter in the network, you make a passive filter.
+[04:28] What do we call this passive filter?
+[04:32] Because there is no active device in it.
+[04:36] Like the amplifier of BJT.
+[04:38] There is an active device of BJT.
+[04:40] But this is called passive filter because it is constructed using passive element R and C.
+[04:48] Now first I will do its analysis.
+[04:50] And then you will compare the response of BJT and take out the cutoff frequency.
+[04:58] Now see children here.
+[05:00] If you see here you have to take out the transfer function V0 by VI.
+[05:06] So what will you write?
+[05:08] 1 upon SC divided by R plus 1 upon SC.
+[05:14] So this will be your child.
+[05:16] How much?
+[05:18] 1 by 1 plus SCR.
+[05:22] I have taken LCM.
+[05:24] Now if you take this child in J omega.
+[05:28] If you take this child in J omega.
+[05:32] Then this will be 1 upon 1 plus J omega CR.
+[05:40] What will happen?
+[05:42] 1 upon 1 plus J omega CR.
+[05:44] Now what will you write here?
+[05:46] Mod of V0 by VI is 1 upon root over 1 plus omega CR square.
+[06:02] Will you write this?
+[06:04] 1 upon root over 1 plus omega CR square.
+[06:08] Now when you make a graph of this child.
+[06:12] This 1 upon 1 plus omega CR square.
+[06:16] When you make a graph of this child.
+[06:26] So this graph.
+[06:32] This is a decreasing curve.
+[06:34] You can understand that when you increase omega.
+[06:38] Omega is in denominator.
+[06:40] So your gain will go down.
+[06:42] It will come like this.
+[06:44] Your gain is 1 on zero frequency.
+[06:48] And when this gain becomes 1 by root 2.
+[06:50] When this gain becomes 1 by root 2.
+[06:54] What do you define there?
+[06:56] You define there cut off frequency.
+[07:00] When this gain becomes 1 by root 2.
+[07:04] This is your FH.
+[07:06] So we say at omega equal to 0.
+[07:08] Gain is 1 upon 1 plus omega CR.
+[07:12] So gain is 1.
+[07:14] At omega tending to infinity.
+[07:16] Gain will come out to be 0.
+[07:20] Gain will come out to be 0.
+[07:22] That is why the low pass filter said.
+[07:24] Because the low frequencies got the gain of 1.
+[07:28] That is low frequency as it is.
+[07:30] Output will reach from the input.
+[07:32] Low frequency as it is.
+[07:34] Output will reach from the input.
+[07:36] Output will reach from the input.
+[07:38] But the high frequency got the gain 0.
+[07:41] That means the high frequency will not be able to reach from the input.
+[07:45] It will be multiplied by zero.
+[07:48] So what will be your output on high frequency?
+[07:51] It will be zero.
+[07:52] What will be your output on high frequency?
+[07:55] It will be zero.
+[07:57] Now here you will see.
+[07:59] The function of your gain.
+[08:03] How much is that?
+[08:05] 1 by root over 1 plus omega CR square.
+[08:15] Now how can you write omega CR here?
+[08:21] 1 plus omega by omega L square.
+[08:28] Sorry, not omega L.
+[08:30] Omega H.
+[08:32] 1 by 1 plus omega by omega H square.
+[08:36] Sir, what is omega H?
+[08:38] So omega H is the upper cutoff frequency.
+[08:44] Because you are talking about the high frequency response.
+[08:48] Upper cutoff frequency.
+[08:51] Whose value is 1 by RC.
+[08:54] Or you can say 1 by tau.
+[08:57] So if you take out FH, you will say 1 by 2 pi RC.
+[09:04] Or 1 by 2 pi tau.
+[09:07] And you see this.
+[09:09] If you remove 2 pi from omega and omega H.
+[09:14] Omega will also be 2 pi F.
+[09:17] And omega H is 2 pi FH.
+[09:19] So you can write the gain like this.
+[09:22] 1 plus F upon FH.
+[09:26] Whole square.
+[09:27] You can write it like this.
+[09:29] You can write the gain like this.
+[09:31] So this is the response of a low pass filter.
+[09:35] And this is the response of your BJT.
+[09:39] When we talk about the high frequency response.
+[09:44] When you design the high frequency response.
+[09:47] You will get the same output.
+[09:51] So tell me, is everyone clear here?
+[09:53] Tell me quickly.
+[09:54] Does 1 by 2 pi tau come?
+[09:56] I have told you this.
+[09:57] Is everyone clear?
+[09:59] Arpan, son, there will be no course on electrical machine design on YouTube.
+[10:03] Look at your college.
+[10:04] I can't do all the subjects.
+[10:06] You will have to make an effort in some subjects.
+[10:09] Because if your college machine is covered here.
+[10:12] And it is also covered for your gate exam.
+[10:15] If the fundamental of the machine is clear.
+[10:17] Then you can learn the machine design.
+[10:20] Especially the 4th year courses are optional.
+[10:24] Children take different courses in different places.
+[10:26] So there is no sense in that.
+[10:28] Then digital signal processing, image processing,
+[10:32] VLSI, electric machine design.
+[10:35] Advanced power system, advanced power electronics,
+[10:38] non-linear control system.
+[10:40] There is no limit in the engineering of the courses.
+[10:42] There can be many courses.
+[10:44] That's right.
+[10:46] Now we have been clear here.
+[10:49] Now the question is that sir.
+[10:52] Why is the gain less on high frequency?
+[10:55] Why is the gain less on high frequency?
+[10:59] Look, why is the gain less on high frequency?
+[11:05] It is due to
+[11:09] input capacitance.
+[11:12] Or instead of input, say internal.
+[11:16] Why is the gain less?
+[11:18] Why is the gain less on mid-band?
+[11:20] Due to internal capacitances.
+[11:23] And load capacitances.
+[11:27] And I told you that their value is small.
+[11:30] They are in Pico Farad.
+[11:32] Those who are your coupling and bypass capacitors.
+[11:36] They are in micro farad.
+[11:38] But these internal and load capacitances.
+[11:41] They are in Pico Farad.
+[11:43] They are in Pico Farad.
+[11:45] Now look at an example of this.
+[11:47] How is your gain less?
+[11:49] Tell me.
+[11:51] Look at an example of this.
+[11:53] Draw a circuit.
+[11:55] I will show you.
+[11:57] Look.
+[11:59] Like BJT.
+[12:01] If I make an AC model.
+[12:03] Okay.
+[12:05] I am bypassing the emitter here.
+[12:08] By the way, there is no input-output capacitor on high frequency.
+[12:12] Nor bypass one.
+[12:14] You know, they are shorted on high frequency.
+[12:18] So here there will be no coupling and bypass capacitor.
+[12:22] So look, like VS.
+[12:24] RS.
+[12:25] RB.
+[12:26] This RB can be the parallel combination of both the resistances of the voltage divider bias.
+[12:33] Okay.
+[12:34] RB can be the parallel combination of both the resistances of the voltage divider bias.
+[12:40] Suppose I have taken load capacitance here.
+[12:44] Now I am not talking about internal capacitance.
+[12:47] I am showing you one capacitance.
+[12:49] Which is the load capacitance.
+[12:52] What am I showing you?
+[12:54] Load capacitance.
+[12:55] So keep in mind that at high frequencies.
+[13:00] At high frequencies.
+[13:09] Coupling.
+[13:11] Coupling.
+[13:13] And bypass capacitors.
+[13:16] Coupling.
+[13:17] And bypass capacitors are shorted.
+[13:26] Now what will you do here, dear?
+[13:29] If you want to take out cut-off frequency.
+[13:31] If you want to take out cut-off frequency.
+[13:34] You know this.
+[13:36] Now by reading this section.
+[13:37] Sir, one by RC is required.
+[13:39] Or one by two pi RC is required.
+[13:42] That's all we know.
+[13:44] So first of all, we will replace BJT with its model.
+[13:48] The model used at high frequencies.
+[13:51] They use hybrid pi model.
+[13:53] Which model do we use, dear?
+[13:55] We use hybrid pi model.
+[14:05] Okay.
+[14:07] Now what happens in hybrid pi?
+[14:10] My brother.
+[14:11] Look at this.
+[14:12] This is an external circuit.
+[14:15] BJT's model comes from here.
+[14:24] Okay.
+[14:40] And look at this.
+[14:41] This is the load capacitance.
+[14:50] Okay.
+[14:53] This is R pi resistance.
+[14:56] Its across voltage is V pi.
+[14:59] This is current source, dear.
+[15:01] Your gm V pi.
+[15:03] This is R naught.
+[15:05] RC.
+[15:06] And CL.
+[15:08] This is RS.
+[15:10] And RB.
+[15:12] RS and RB.
+[15:14] This will happen, right?
+[15:16] This will happen.
+[15:17] Why do we use hybrid pi model?
+[15:20] At high frequency.
+[15:22] Because the rest of the models give inaccurate results.
+[15:25] Now I will tell you why they give inaccurate results.
+[15:27] Because in hybrid pi model, the capacitance is included.
+[15:31] The rest of the models do not consider the capacitance.
+[15:34] The internal capacitance of base emitter and collector base.
+[15:38] The one who considers them is only one model.
+[15:40] Hybrid pi.
+[15:41] How does he consider?
+[15:42] I will show you later.
+[15:44] Okay.
+[15:45] Let's deal with this first.
+[15:46] Let's deal with this first.
+[15:48] First of all, if we want to remove V pi.
+[15:52] Then VS.
+[15:54] RB parallel R pi.
+[15:59] Divided by RS.
+[16:03] Plus RB.
+[16:06] Parallel R pi.
+[16:08] This happened.
+[16:09] Okay.
+[16:10] This is V pi.
+[16:12] Now if we remove V naught.
+[16:14] Minus gm V pi.
+[16:18] Minus gm V pi.
+[16:20] This is R naught parallel RC.
+[16:25] Parallel 1 by SCL.
+[16:29] This will be.
+[16:31] Okay.
+[16:32] Either you say this.
+[16:33] Say R naught parallel RC to RL.
+[16:37] Things will get a little easier.
+[16:39] Say R naught parallel RC to RL.
+[16:46] Now what do you write here?
+[16:48] If you put the value of V pi.
+[16:51] Then the gain here.
+[16:53] V naught by VS.
+[16:56] What will this be?
+[16:58] Minus gm.
+[17:01] Okay.
+[17:03] This will be RL parallel 1 by SCL.
+[17:07] RL parallel 1 by SCL.
+[17:09] RL by SCL.
+[17:11] Divided by RL plus 1 by SCL.
+[17:16] Okay.
+[17:18] What will come here?
+[17:20] This is the voltage division factor.
+[17:23] RB parallel R pi.
+[17:26] Over RS plus RB parallel R pi.
+[17:30] This happened.
+[17:34] Okay.
+[17:35] Now if you take SCL down.
+[17:38] Then V naught by VS.
+[17:40] What happened?
+[17:41] Minus gm.
+[17:44] RL.
+[17:47] Then this is the voltage division factor.
+[17:49] RB parallel R pi.
+[17:52] Over RS plus RB parallel R pi.
+[17:56] Okay.
+[18:00] Divided by 1 plus SCL RL.
+[18:05] Now if you know.
+[18:06] Look carefully.
+[18:07] The term coming in the numerator.
+[18:09] This is mid band gain.
+[18:11] If the capacitance is not taken.
+[18:13] Then you would have got this gain.
+[18:15] So this is mid band gain.
+[18:17] So what is this basically?
+[18:19] If you look carefully.
+[18:21] Mid band gain.
+[18:23] Over 1 plus SCR.
+[18:26] So when there is only SCR in the denominator.
+[18:29] So you know.
+[18:31] It is acting like a low pass filter.
+[18:34] It is acting like a low pass filter.
+[18:37] Did you understand this?
+[18:39] Tell everyone quickly.
+[18:41] That this is the transfer function of the low pass filter.
+[18:45] Tell me.
+[18:46] Then we will go ahead.
+[18:47] This is clear.
+[18:48] This is the transfer function of the low pass filter.
+[19:10] Okay.
+[19:11] Now if you put the gain in J omega.
+[19:18] Then this will be AV mid.
+[19:21] Over 1 plus J omega.
+[19:26] RL.
+[19:28] SCL.
+[19:30] If you take out the magnitude of the gain.
+[19:33] Then this mid band gain.
+[19:35] Your mod of AV mid.
+[19:40] Over root over.
+[19:45] 1 plus omega.
+[19:48] RL.
+[19:50] SCL.
+[19:52] Square.
+[19:53] Okay.
+[19:54] So you can write this as this.
+[19:56] Mod of AV mid.
+[20:00] Over.
+[20:04] Root over.
+[20:05] 1 plus.
+[20:07] Omega by omega H.
+[20:10] Whole square.
+[20:12] Okay.
+[20:13] So this is done.
+[20:15] So basically if you plot this.
+[20:17] Then the starting gain will be.
+[20:19] AV mid.
+[20:20] And gradually gradually this will be reduced.
+[20:24] So you can also say here.
+[20:27] That at omega equal to.
+[20:29] Omega H.
+[20:31] How much is your gain.
+[20:34] Mod of AV mid by root 2.
+[20:38] This is the condition you had put.
+[20:40] Of the cutoff frequency.
+[20:42] This was the condition.
+[20:44] So omega H is the.
+[20:46] Upper cutoff frequency.
+[20:49] The light went well.
+[20:52] That why the gain is less on high frequencies.
+[20:55] So I showed you with load capacitance.
+[20:59] Sorry.
+[21:00] Upper cutoff frequency.
+[21:04] Which is 1 by.
+[21:07] RL.
+[21:09] CL.
+[21:10] Here.
+[21:11] 1 by RL.
+[21:12] CL.
+[21:13] It's clear.
+[21:14] Tell me this.
+[21:16] Tell me this.
+[21:18] And what was the shortcut of this.
+[21:20] What was the shortcut of this.
+[21:22] We would say RL is actually.
+[21:26] I had told you in the last lecture.
+[21:28] Resistance.
+[21:30] Scene by capacitor.
+[21:33] Scene by CL.
+[21:35] When.
+[21:36] VS.
+[21:37] Is.
+[21:38] Zero.
+[21:39] If you remove the source.
+[21:41] The resistance you will see is RL.
+[21:43] Remember in low frequency.
+[21:45] I had told you this.
+[21:47] Whatever capacitor is in your circuit.
+[21:50] You take out the resistance across it.
+[21:54] Then when you do 1 by RC.
+[21:56] You will get the cutoff frequency.
+[22:00] You will get the cutoff frequency.
+[22:02] And what was its name.
+[22:04] 3 dB frequency.
+[22:05] Half power frequency.
+[22:07] I have told you all these things.
+[22:09] I have told you all these things.
+[22:12] Okay.
+[22:13] If there is capacitance on the input.
+[22:16] Because of that my children.
+[22:18] Your gain decreases.
+[22:20] Like if.
+[22:22] You put a capacitance on the input.
+[22:26] Input capacitance.
+[22:30] If you put capacitance on the input.
+[22:37] Okay.
+[22:38] So what happens here.
+[22:45] Look at the source.
+[22:47] Then you need resistance across the input capacitor.
+[22:54] So I am just making the circuit of the input side.
+[22:56] Because the output side is not affecting the input.
+[23:03] Look at the capacitance on the input side.
+[23:08] I will show you how these capacitance will come on input and output.
+[23:12] Don't worry.
+[23:13] Now you are going to go to the same section.
+[23:15] I will show you how these capacitance comes.
+[23:21] Okay.
+[23:22] Now what do you say.
+[23:24] Resistance C in by C in.
+[23:26] How much.
+[23:27] Resistance.
+[23:30] C in by.
+[23:33] C in.
+[23:36] How much.
+[23:38] RS.
+[23:39] Shorten the source.
+[23:41] Parallel RB.
+[23:43] Parallel RPI.
+[23:45] So you called it R in.
+[23:47] So your cutoff frequency.
+[23:50] From this.
+[23:51] That one by.
+[23:53] R in.
+[23:54] C in.
+[23:56] Okay.
+[23:57] Or FH is done.
+[23:59] One by two pi R in C in.
+[24:01] So in this way you get two cutoff frequencies.
+[24:04] As you remember.
+[24:05] You got three in low frequency.
+[24:08] You got three in low frequency.
+[24:11] You are getting two here.
+[24:13] One is from your load side.
+[24:15] That is from the output side.
+[24:16] And one is from your input side.
+[24:19] Now what is C in and C in.
+[24:21] You will understand in a while.
+[24:24] What capacitance is applied on the input side.
+[24:27] And on the output side.
+[24:29] What capacitance is applied.
+[24:31] Now what do you say.
+[24:33] That FH.
+[24:35] Is maximum.
+[24:38] Of FH one.
+[24:40] And FH two.
+[24:44] Okay.
+[24:45] Maximum of FH.
+[24:46] Sorry.
+[24:47] Maximum of FH one.
+[24:48] And FH two.
+[24:49] Because this is an upper cutoff frequency.
+[24:51] It is like a low pass filter.
+[24:53] So as you believe.
+[24:54] One capacitance is saying.
+[24:56] That we will let the signal pass.
+[24:58] If the frequency is less than 10 kHz.
+[25:01] One is saying.
+[25:02] Sir we will let it pass less than 5 kHz.
+[25:05] One is saying.
+[25:06] Let it pass less than 5.
+[25:07] One is saying.
+[25:08] Let it pass less than 10.
+[25:10] So what will be the intersection of both.
+[25:12] Less than 5.
+[25:14] What will be the intersection of both.
+[25:16] Less than 5.
+[25:17] So what did you apply.
+[25:19] Minimum.
+[25:20] Tell me.
+[25:21] Is the minima funda clear.
+[25:23] Is the minima funda clear.
+[25:25] Okay.
+[25:26] But you know the min max.
+[25:28] It is actually.
+[25:29] Valid.
+[25:30] If.
+[25:33] Ratio.
+[25:35] Of two cutoff frequencies.
+[25:39] Is greater than four.
+[25:42] If the ratio is smaller than four.
+[25:44] Ratio.
+[25:45] What happens then.
+[25:46] I will tell you that in the multi stage.
+[25:49] How to combine multiple cutoff frequencies.
+[25:53] But if there is a vast difference in both.
+[25:56] Okay.
+[25:57] If there is a vast difference in both.
+[26:00] Then you will consider the smaller one.
+[26:03] Here.
+[26:04] But if there is a slight difference in both.
+[26:06] Almost the same.
+[26:07] There is a slight difference between them.
+[26:09] Then what will you do.
+[26:10] I will tell you this.
+[26:11] But in the multi stage amplifier.
+[26:13] How to combine multiple cutoff frequencies.
+[26:17] So once in the chat.
+[26:18] Confirm me.
+[26:19] If the children are clear to this point.
+[26:21] Then I will start a little more deep dive.
+[26:24] If you are clear to this point.
+[26:28] Tell me.
+[26:31] Four hertz.
+[26:32] The difference in ratio.
+[26:35] Logically.
+[26:36] I understood the intersection point.
+[26:38] But not the ratio.
+[26:39] See what happens.
+[26:41] Here.
+[26:42] Actually.
+[26:43] At a time.
+[26:44] Both the capacitance are working.
+[26:45] You are taking the super position.
+[26:47] My child.
+[26:48] That once you removed the C in.
+[26:49] And once you removed the C L.
+[26:51] Practically.
+[26:52] Both are present in the circuit.
+[26:54] So practically.
+[26:55] Direct from this type.
+[26:57] Is just an approximation.
+[26:59] It's just an approximation.
+[27:01] But in the circuit.
+[27:02] When both are together.
+[27:03] Both are providing different cutoff frequencies.
+[27:06] So overall.
+[27:07] The cutoff frequency of the circuit.
+[27:09] The way to remove it is different.
+[27:11] This is an approximation.
+[27:12] Which I am telling in the Minmax funda.
+[27:14] That is if.
+[27:15] There is a huge difference.
+[27:16] Between the two.
+[27:17] Frequency.
+[27:18] Do you understand.
+[27:19] Because when you remove the overall transfer function.
+[27:22] You will remove the input and output.
+[27:24] Do you understand.
+[27:25] So that is a second order filter.
+[27:27] One way.
+[27:28] Think about it.
+[27:29] Second order filter.
+[27:30] Because two energy storage elements.
+[27:32] One C L.
+[27:33] And one C N.
+[27:35] Okay.
+[27:36] So two energy storage elements.
+[27:38] Are you clear.
+[27:40] Are you clear.
+[27:41] Two energy storage elements.
+[27:43] So when overall.
+[27:44] The transfer function of the circuit.
+[27:45] Will be removed.
+[27:46] Including the both.
+[27:47] Then it will be a second order function.
+[27:50] And the second order function.
+[27:52] The overall cutoff frequency.
+[27:54] Its formula.
+[27:55] Is a little more complicated than this.
+[27:57] It is not even complicated.
+[27:58] It is a little more complicated than this.
+[28:00] But this is an approximation.
+[28:02] When there is a difference in the ground.
+[28:04] Then you consider the small one.
+[28:06] Okay.
+[28:08] Let's go now.
+[28:10] Now let's come to Miller's theorem.
+[28:12] This is a theorem of the network.
+[28:14] Miller's theorem says that.
+[28:16] Whenever an impedance.
+[28:18] Connects between two ports.
+[28:21] This is a two-port network.
+[28:23] The gain of this two-port network.
+[28:26] Output voltage by input voltage is K.
+[28:29] In between these two ports.
+[28:31] An impedance is connected.
+[28:33] Z.
+[28:34] If this happens.
+[28:36] Then you can break Z.
+[28:38] In two impedances.
+[28:40] One will be on the input.
+[28:42] And the other will be on the output.
+[28:45] If any one impedance.
+[28:48] Connected between input port and output port.
+[28:52] Then it can be resolved into two impedances.
+[28:55] One connected at the input.
+[28:57] And the other connected at the output.
+[29:00] What is the purpose of the Miller's theorem?
+[29:03] Now let's see how to break it.
+[29:05] How to break it?
+[29:07] Look at this.
+[29:08] What do we say?
+[29:10] Look at this circuit.
+[29:12] How much is the I current?
+[29:14] You can write I like this.
+[29:16] V1 minus V2 by Z.
+[29:20] Okay.
+[29:22] Now you can write V2 as KV1.
+[29:25] As per the gain.
+[29:27] As per the gain.
+[29:29] KV1 by Z.
+[29:32] So you will write V1.
+[29:35] 1 minus K by Z.
+[29:39] So you can write it like this.
+[29:41] Then V1 by Z.
+[29:44] Upon 1 minus K.
+[29:46] Now it looks like this.
+[29:48] By looking.
+[29:49] That this is an impedance.
+[29:51] Which is parallel to V1.
+[29:53] Tell me.
+[29:54] It looks like this.
+[29:56] Which is an impedance.
+[29:57] Whose across voltage is V1.
+[29:59] And the value of the impedance is Z upon 1 minus K.
+[30:02] If its across voltage is V1.
+[30:05] It means there is an impedance.
+[30:07] Which is parallel to port 1.
+[30:10] It will come only when it is parallel to port 1.
+[30:14] So I can say here.
+[30:16] That Z upon 1 minus K.
+[30:20] Is connected.
+[30:22] Parallel to input port.
+[30:25] Okay.
+[30:27] Everyone is shocked.
+[30:29] But sir.
+[30:30] You could have taken it on the output.
+[30:33] Of course.
+[30:34] If you take it on the output.
+[30:35] Then you take an current like this.
+[30:37] I dash.
+[30:38] Which runs from the output.
+[30:40] Then you say.
+[30:41] My children.
+[30:42] I dash.
+[30:43] Which is.
+[30:44] That is V2 minus V1 by Z.
+[30:47] Now if you want to take it parallel to V2.
+[30:51] Then you write V1 by Z.
+[30:54] If you want to take it parallel to V2.
+[30:56] Then you write V1 by V2 by K.
+[30:59] As V2 was written by KV1.
+[31:02] Such V1 is V2 by K.
+[31:05] So V2 upon Z upon.
+[31:08] 1 minus 1 by K.
+[31:10] Look at this.
+[31:12] So you can say.
+[31:13] This impedance is Z upon 1 minus 1 by K.
+[31:18] Its across voltage is V1.
+[31:21] This is connected across.
+[31:24] Output port.
+[31:26] This is connected across.
+[31:28] Output port.
+[31:30] So this is what we are saying.
+[31:32] Miller's theorem.
+[31:33] This is not the theorem of analog.
+[31:35] Try to understand.
+[31:36] This is a network theorem.
+[31:38] We don't study this in the network.
+[31:41] I am studying this in the analog.
+[31:44] But this is a network theorem.
+[31:46] Which can be applied in every network.
+[31:49] Where any impedance is connected between
+[31:51] your input and output.
+[31:54] Do you understand?
+[31:56] Now remember one thing.
+[31:58] There was a biasing technique.
+[32:00] Collector-Base-Bias.
+[32:01] The resistance between collector and base
+[32:04] was basically between input and output.
+[32:07] Input was base and output was collector.
+[32:10] So if we wanted.
+[32:12] We could break that resistance in two parts.
+[32:15] One was an input and one was an output.
+[32:19] Why didn't you do that?
+[32:21] Because I had an easy method.
+[32:23] I solved it by using nodal.
+[32:25] You remember.
+[32:26] I had asked an amplifier gain.
+[32:28] In which I applied nodal analysis.
+[32:31] So what is the need to break that resistance?
+[32:33] If I can remove the answer from the nodal.
+[32:36] Are you clear?
+[32:38] Now you see.
+[32:41] As if this is a two port network.
+[32:47] Okay.
+[32:48] Suppose.
+[32:52] You placed a resistance between two ports.
+[33:00] Suppose you placed a resistance here.
+[33:11] So you can break this resistance in two parts.
+[33:16] It will be written on the input side.
+[33:18] R upon 1 minus K basically is the gain.
+[33:24] And it will be written in the output.
+[33:26] R upon 1 minus 1 by K.
+[33:31] Okay.
+[33:41] If there is a resistance there.
+[33:45] This is your capacitance.
+[33:48] Because you know.
+[33:49] There are two types of element in the whole circuit.
+[33:52] Either resistance or capacitance.
+[33:56] Okay.
+[33:57] There are two things.
+[34:10] Okay.
+[34:25] Now see this.
+[34:26] Suppose this is the gain from the capacitance.
+[34:29] Now the impedance is 1 by omega C.
+[34:32] Or 1 by SC.
+[34:34] So the impedance and capacitance are in reciprocal.
+[34:39] So C into 1 minus K will have to be done.
+[34:43] Do you understand?
+[34:44] C into 1 minus K will have to be done.
+[34:47] C into 1 minus 1 by K will have to be done.
+[34:51] Clear?
+[34:52] This will not be in the factor division in the capacitance.
+[34:55] It will be in the multiplication.
+[34:57] Because Z is 1 by SC.
+[35:02] So these two are in reciprocal.
+[35:05] Yes.
+[35:06] The collector to base resistance which was taken by Susubhan.
+[35:09] What did you apply in that?
+[35:10] You applied a nodal.
+[35:12] I am saying that if you wanted you could break that resistance in two parts.
+[35:17] Now here you know what is K?
+[35:19] K is basically the gain of the 2 port network.
+[35:22] In absence of this resistor.
+[35:25] This is the gain when this resistance or this capacitance was not connected.
+[35:30] So in one way you have to solve it in two parts.
+[35:32] If you have to rewind the collector to base.
+[35:35] If I remind you again.
+[35:38] So there you have to remove that resistance first.
+[35:41] You have to remove the gain.
+[35:43] Then you have to break the resistance in two parts through the gain.
+[35:47] And then you have to remove the gain again.
+[35:49] So it will take a lot of effort.
+[35:51] Okay?
+[35:52] So I will also write here.
+[35:54] That K is the gain of 2 port network or amplifier.
+[36:05] The gain of 2 port network or amplifier is when Z is not connected between two ports.
+[36:25] That is when the gain is.
+[36:30] Okay?
+[36:31] That is when the gain is.
+[36:32] Clear?
+[36:34] So what will be the use of this?
+[36:37] You will see right now.
+[36:38] If I am telling you this theorem in today's lecture.
+[36:41] There will be some purpose.
+[36:42] I could have taught this at any time.
+[36:44] I could have taught this in the network too.
+[36:46] But still I have covered you in analog.
+[36:49] There is a purpose for that.
+[36:50] You will see right now.
+[36:51] Now look.
+[36:52] Hybrid Pi model at high frequency.
+[36:55] Which is called Giacoletto model.
+[36:59] This is the name of the scientist.
+[37:00] What did he say?
+[37:02] The BJT model on high frequency.
+[37:05] How is that?
+[37:06] Look.
+[37:07] The first one is this RB.
+[37:10] RB.
+[37:11] RB is your base spreading resistor.
+[37:17] Do you remember?
+[37:18] I had taught this in hybrid Pi too.
+[37:22] Base spreading resistor.
+[37:26] Okay?
+[37:27] Then there is RB-E.
+[37:30] What is this?
+[37:32] RB-E.
+[37:34] Or can you call it R Pi?
+[37:37] You know what is the voltage of the across?
+[37:40] The voltage of which is V Pi.
+[37:45] Then look.
+[37:46] Between the base and the emitter,
+[37:48] this is the diffusion capacitance.
+[37:51] What is the capacitance?
+[37:53] My children.
+[37:54] Diffusion capacitance.
+[37:56] And why is this?
+[37:58] Because base emitter junction is forward.
+[38:03] I had told this in the last lecture.
+[38:05] Base emitter junction is forward bias.
+[38:09] So what do we have to show in that?
+[38:12] Diffusion capacitance.
+[38:15] This is my children.
+[38:17] Transition or junction capacitance.
+[38:19] This is between the collector base.
+[38:22] Transition.
+[38:25] And junction capacitance.
+[38:30] Because where does this come from?
+[38:32] Where the collector base junction is your.
+[38:35] Reverse bias.
+[38:38] Okay?
+[38:39] This is R mu.
+[38:42] Do you remember why this comes?
+[38:44] Early effect.
+[38:46] I had already made this in the hybrid Pi.
+[38:48] I had just ignored it.
+[38:51] This is current source GM V Pi.
+[38:55] How much?
+[38:56] GM V Pi.
+[38:58] And what is this?
+[38:59] This is R naught.
+[39:01] Which is V A by I C Q.
+[39:06] Okay?
+[39:07] Do you understand the model?
+[39:09] So what have you added in this?
+[39:11] You have added two capacitances.
+[39:14] One is diffusion capacitance.
+[39:17] For the forward bias emitter base junction.
+[39:20] One is transition and junction capacitance.
+[39:24] For the reverse bias collector base junction.
+[39:28] For the reverse bias collector base junction.
+[39:31] If I had any doubt about this.
+[39:33] Now tell me.
+[39:34] Is this clear?
+[39:35] Why do we do this?
+[39:36] We could have done this too.
+[39:38] Instead of hybrid Pi.
+[39:40] We could have taken the beta model.
+[39:42] We could have taken the H model.
+[39:46] Still we took this.
+[39:48] Still we took this.
+[39:50] Why did we take this?
+[39:52] Because the capacitances were included in this.
+[39:55] We could have seen the factor of the early effect.
+[39:58] That is why we took this.
+[40:00] By the way, do you know?
+[40:01] You should not replace this.
+[40:04] By the way, do you know?
+[40:05] You can replace this with the H model.
+[40:08] Because remember, the early effect was included in the H model.
+[40:11] In terms of HR.
+[40:13] Which you were ignoring.
+[40:14] Do you remember?
+[40:15] It was the HR factor.
+[40:16] I told you to ignore it always.
+[40:18] So you can convert this model into the H model.
+[40:22] Okay?
+[40:23] Let's go.
+[40:24] Now first of all, if we make the GIACO leto model.
+[40:28] By ignoring the capacitors.
+[40:30] What are you doing?
+[40:31] We are making the GIACO leto model.
+[40:33] By ignoring the capacitors.
+[40:36] So the capacitors are removed from here.
+[40:38] Now sir, why did you make this?
+[40:40] Because I want to compare this with the H model.
+[40:47] I want to compare this with the H model.
+[40:50] As I told you, the H model is also similar.
+[40:53] So let's see.
+[40:56] This was in the H model.
+[41:13] Do you remember?
+[41:26] Look.
+[41:29] This was HIE.
+[41:33] AHREVCE.
+[41:37] Here is the collector emitter.
+[41:39] 1 by HOE.
+[41:42] And this is HFEIB.
+[41:49] Okay?
+[41:50] This voltage is VCE.
+[41:55] Now look here, it is IB.
+[41:58] This voltage is VCE.
+[42:01] Okay?
+[42:03] This is VPI.
+[42:05] This is your GM VPI.
+[42:08] Okay?
+[42:09] So what we have to check is what is the relation between these parameters.
+[42:13] Because if these two models are identical.
+[42:16] The first thing is that there should be a conversion between them.
+[42:19] The second thing is that if I want to put a capacitor in it.
+[42:22] The thing should be equal.
+[42:24] If these two models are identical.
+[42:26] The thing should be equal.
+[42:28] Let's see.
+[42:29] First of all, make the equation of this big model.
+[42:36] Look what you will write.
+[42:39] IB if you want to write.
+[42:41] Or VBE if you want to write.
+[42:45] Look, this is VBE.
+[42:50] So how will you write VBE?
+[42:52] IB is IB RB.
+[42:54] Plus the voltage of R mu.
+[42:56] Now how will you take out the voltage of R mu?
+[42:59] There is one extra node in it.
+[43:02] What should we do in this?
+[43:04] Your name of this resistance is R pi.
+[43:08] Now what can we do in this?
+[43:13] Our RB is coming.
+[43:19] Let's write it as VPI.
+[43:21] This current is I1 I2.
+[43:28] I write IB is I1 plus I2.
+[43:36] Now what will be VPI?
+[43:38] We will have to take out I2.
+[43:42] The thing is that the current of this resistance is I.
+[43:45] If I write VBE, I write IB.
+[43:49] So I1 plus I2.
+[43:51] I1 will be VPI by R pi.
+[43:59] What will be I2 here?
+[44:01] If you look at I2, then VPI minus VCE by R mu.
+[44:10] And if you write VPI in the terms of VBE,
+[44:14] then VBE minus IB RB by R pi.
+[44:23] Plus VBE minus IB RB minus VCE by R mu.
+[44:33] Now collect the terms of IB on one side.
+[44:37] I1 plus RB upon R pi plus RB upon R mu.
+[44:48] VBE 1 by R pi plus 1 by R mu minus VCE upon R mu.
+[45:02] If you take out IB from the other circuit like this,
+[45:08] then you will write VBE minus HRE VCE upon HIE.
+[45:17] This is what you will write.
+[45:19] Right?
+[45:20] This is what you will write.
+[45:22] Now look here.
+[45:24] Dear, if you simplify the first equation a little more,
+[45:33] then you can take out the relation by doing VBE.
+[45:41] Do you understand my question?
+[45:54] This is what happened.
+[46:05] Here R mu will come down first.
+[46:11] R mu has been multiplied.
+[46:14] RB R mu by R pi plus RB.
+[46:20] Okay?
+[46:21] This is what happened.
+[46:22] Now compare both of them, dear.
+[46:26] Compare both of them.
+[46:29] So 1 by HIE is 1 by R pi plus 1 by R mu.
+[46:42] Now see if you say that R mu is a very big resistance,
+[46:47] then RB by R mu and 1 by R mu can be ignored.
+[46:51] For an approximation.
+[46:54] For an approximation, if you say so,
+[46:57] if you say so,
+[47:16] then RB,
+[47:24] 1 by resistance.
+[47:27] R pi will come here.
+[47:32] So look at this.
+[47:34] Okay?
+[47:35] This is HIE.
+[47:37] Clear?
+[47:38] If I consider R mu as large,
+[47:40] now the term below it is VCEK is HRE by HIE.
+[47:45] This is 1 by R mu plus R pi plus R mu RB by R pi.
+[48:03] Okay?
+[48:05] So what will be HRE?
+[48:07] HRE means take R pi plus RB up.
+[48:18] R mu plus R pi plus R mu RB by R pi.
+[48:31] Okay?
+[48:32] This is what happened.
+[48:33] This is HRE.
+[48:35] Now the thing is that here GMV pi,
+[48:38] if you look at this VCE,
+[48:40] this is IC, right?
+[48:43] This is IC.
+[48:47] What are you saying?
+[48:48] It seems a little complicated in the H parameter.
+[48:50] Can we not do it with a hybrid pi model?
+[48:52] We will do it with a hybrid pi.
+[48:54] What am I telling you?
+[48:56] Both the models are related.
+[48:58] Your hybrid pi and H model are both related.
+[49:02] There is actually a conversion between the two.
+[49:06] Okay?
+[49:08] Now if you look at the output side,
+[49:10] then you will write IC.
+[49:13] VCE pi R naught plus GMV pi.
+[49:21] Okay?
+[49:22] What will be plus?
+[49:25] Minus I2.
+[49:29] Okay?
+[49:31] VCE by R naught plus GMV pi.
+[49:37] What will you write I2?
+[49:39] V pi minus VCE by R mu.
+[49:46] Now what could you write V pi?
+[49:52] VBE minus IBRB.
+[50:01] Minus VBE.
+[50:09] Okay?
+[50:11] Plus VCE by R mu.
+[50:16] Okay?
+[50:17] Now if you collect the terms in this IC,
+[50:21] then collect the terms of VCE,
+[50:23] collect the terms of VBE.
+[50:26] GM minus 1 by R mu.
+[50:34] VBE.
+[50:36] Okay?
+[50:38] GM minus 1 by R mu.
+[50:40] Collect the IBRB.
+[50:41] Minus GMRB.
+[50:44] Plus R...
+[50:50] IBRB by R mu.
+[50:55] Plus...
+[50:57] Sorry, minus GMRB.
+[51:03] And collect the VCE one.
+[51:06] VCE one.
+[51:09] 1 by R naught.
+[51:13] And VCE plus 1 by R mu.
+[51:18] And if you look at the other model,
+[51:20] then IC is the sum of two currents.
+[51:23] GM.
+[51:25] V pi.
+[51:28] V pi means...
+[51:29] Sorry, HFE IBRB.
+[51:34] HFE IBRB.
+[51:37] Plus VCE by...
+[51:40] Sorry, VCE into HOE.
+[51:45] Okay?
+[51:47] VCE into HOE.
+[51:49] Now what can you do here?
+[51:53] You can see the HOE directly.
+[51:56] The term of VCE.
+[52:02] But how will you compare HFE?
+[52:08] How will you compare HFE here?
+[52:11] Because here the term of VBE is extra, right?
+[52:14] There is no reason for VBE in this model.
+[52:17] This voltage is not coming here.
+[52:19] It is the time of IC 2.
+[52:20] VBE is also impacting here.
+[52:22] Because IC has three terms.
+[52:34] What can you write to VBE?
+[52:41] Then you have to approximate here.
+[52:43] Basically,
+[52:44] if you ignore the term of VBE in HFE,
+[52:47] then we can say GMRB.
+[52:50] But HFE is beta, so GMR pi should come.
+[52:53] Where did R pi disappear?
+[52:58] GM V pi.
+[53:00] IBRB.
+[53:02] R pi is one of these, right?
+[53:04] Can you write something in terms of R pi?
+[53:10] If I write V pi as IBRB,
+[53:13] then it works.
+[53:14] I know what mistake I made here.
+[53:17] Here, right?
+[53:18] V pi is IBR pi.
+[53:20] But how will you write IBR pi?
+[53:22] IB is total current, right?
+[53:29] I want VBE in terms of R pi.
+[53:31] V pi.
+[53:33] V pi is basically its voltage.
+[53:35] So I1 R pi will be there.
+[53:37] I2.
+[53:45] V pi is written as I1 R pi.
+[53:50] We have to deal with it a little more.
+[53:53] It won't be like this.
+[53:58] Because we don't want VBE in this.
+[54:01] What do we do?
+[54:04] VCE by R0.
+[54:07] Write V pi as I1 R pi.
+[54:12] Okay?
+[54:13] Minus I2.
+[54:15] What will you write I1?
+[54:17] IB minus I2.
+[54:23] IB minus I2, right?
+[54:30] Now see, now things will be easy from here.
+[54:37] I2.
+[54:45] What can you write I2?
+[54:48] V pi minus VCE by R mu.
+[54:56] GMR pi plus 1.
+[55:00] But then the term of V pi is extra again.
+[55:04] Now if you look at it as an approximation,
+[55:06] if you look at it here,
+[55:08] if R mu is large,
+[55:12] then you will have a simple factor.
+[55:15] ICS.
+[55:17] VCE by R0.
+[55:20] Plus GMR pi IB.
+[55:25] And the second model will be ICS.
+[55:29] HFE IB.
+[55:32] Plus HOE.
+[55:35] VCE.
+[55:36] If you compare it,
+[55:38] then HFE will be GMR pi.
+[55:42] And HOE will be 1 by R0.
+[55:46] So your relation will be derived from this type.
+[55:48] Okay?
+[55:50] So basically what we are saying is that
+[55:54] the parameters of your H model
+[55:57] and the parameters of this model
+[56:02] are related to the hybrid pi model.
+[56:07] They are all related to each other.
+[56:12] Look at this.
+[56:14] There are four parameters of H model in terms of hybrid pi.
+[56:18] So we were saying that hybrid pi and these two models are related.
+[56:22] We can use them interchangeably.
+[56:24] But who will we use in this whole section of hybrid pi?
+[56:29] Come.
+[56:30] First of all, I want to remove the short circuit current gain.
+[56:34] Okay?
+[56:35] What do I want to remove?
+[56:36] Short circuit current gain.
+[56:38] That means what I am doing is
+[56:41] I am making
+[56:44] RL equal to 0
+[56:49] and computing
+[56:51] current gain which is I0 by
+[56:55] Ii.
+[56:57] Sir, what happened to the capacitances here?
+[57:00] Look at it now.
+[57:01] Dear, if you look at this model here,
+[57:04] please understand this from my point of view.
+[57:06] This was the capacitance model.
+[57:08] If you ground this collector.
+[57:11] Look carefully.
+[57:12] If you connect this collector with ammeter,
+[57:15] that is, if you ground it,
+[57:17] then you don't think that the CT
+[57:19] will come between the base and the ground.
+[57:21] Listen carefully.
+[57:22] If you ground this collector,
+[57:25] then this CT will come between the base and the ground.
+[57:29] Now look at this CD.
+[57:31] This is also between the base and the ground.
+[57:33] This CT will come between the base and the ground.
+[57:37] But this CD is also between the base and the ground.
+[57:40] So, both will not come parallel.
+[57:42] Tell me.
+[57:43] Confirm quickly in the chat.
+[57:45] Don't you think these two will come parallel?
+[57:48] Will they come parallel?
+[57:50] That's why my children,
+[57:52] the model we made here
+[57:54] showed the CD and CT parallel in this.
+[57:57] Okay?
+[57:58] What happened to both in parallel?
+[58:00] It summed up.
+[58:01] There is a simple thing in parallel.
+[58:02] What happened to both?
+[58:03] It summed up.
+[58:04] You understand like this.
+[58:06] I will also show it in dotted.
+[58:12] It was like this.
+[58:13] This short circuit came in the parallel of the CD.
+[58:16] This was clear.
+[58:18] Now look here.
+[58:20] I0 by Ii is required.
+[58:22] This voltage is your V Pi.
+[58:26] So, what is V Pi?
+[58:28] And look at this.
+[58:29] R mu also came in parallel.
+[58:31] Resistance.
+[58:32] Like your seat Pi or CT came up.
+[58:35] R mu also came up like this.
+[58:37] Okay?
+[58:38] In the same way.
+[58:39] So, what will be V Pi?
+[58:41] Ii
+[58:44] I1 by S
+[58:48] Let's do SC in short.
+[58:51] SC
+[58:54] divided by, sorry.
+[58:56] These are both parallel.
+[58:58] R parallel
+[58:59] I1 by SC
+[59:02] This is V Pi.
+[59:06] Where R is?
+[59:08] What?
+[59:09] R Pi parallel R mu.
+[59:11] Tell me.
+[59:12] Is there any doubt here?
+[59:13] Cacd plus CT.
+[59:16] Cacd plus CT.
+[59:19] There was any doubt here?
+[59:21] And if you look at I0 in the circuit,
+[59:24] it is minus GM V Pi.
+[59:28] GM V Pi.
+[59:31] So, I0 is minus GM
+[59:35] R
+[59:37] parallel
+[59:38] I1 by SC
+[59:41] into Ii.
+[59:44] So, the gain that came,
+[59:46] how much is the gain?
+[59:48] Minus GM
+[59:50] R parallel I1 by SC.
+[59:51] Do you know what will happen?
+[59:53] This will happen.
+[59:56] This came.
+[59:57] This gain came.
+[59:58] So, what happened?
+[59:59] Short circuit current gain.
+[60:02] Short circuit current gain.
+[60:05] Now, this gain actually
+[60:13] Minus GM
+[60:15] R Pi parallel R mu.
+[60:19] Cacd plus CT
+[60:23] R Pi parallel R mu.
+[60:25] This came.
+[60:27] Okay?
+[60:28] Now, here, my dear,
+[60:29] this upper gain
+[60:32] is actually your mid-band gain.
+[60:35] This is your mid-band gain.
+[60:38] And the term coming down
+[60:40] is the same.
+[60:42] This is the same.
+[60:43] This is the same.
+[60:44] This is the same.
+[60:45] This is the same.
+[60:46] And the term coming down
+[60:48] is the low-pass filter one.
+[60:50] Look carefully, dear.
+[60:52] The term coming down
+[60:54] this is coming out to be a
+[60:56] low-pass filter term.
+[61:05] So, what happened?
+[61:07] This is acting as a
+[61:10] low-pass filter.
+[61:16] Which is your cut-off frequency.
+[61:20] Now, as you understand,
+[61:21] in BJT,
+[61:22] where you are talking about
+[61:23] high-frequency response,
+[61:25] the low-pass filter
+[61:27] is becoming a function there.
+[61:29] And anyway,
+[61:30] you know,
+[61:31] you can call R Pi
+[61:33] parallel R mu.
+[61:36] Because R mu is quite big.
+[61:37] It happens in mega ohms.
+[61:42] So, if you want,
+[61:43] you can call it R Pi.
+[61:44] You can call it R Pi.
+[61:45] Is this clear?
+[61:46] Will everyone speak quickly?
+[61:48] Tell everyone quickly.
+[61:50] Is it clear or not?
+[61:51] Speak quickly.
+[61:53] Is everyone clear?
+[61:54] The low-pass filter funda
+[61:56] will be fun now.
+[61:59] Let's talk about
+[62:01] the unity gain frequency here.
+[62:03] Sir, what is the unity gain frequency?
+[62:06] It is the
+[62:08] value of frequency
+[62:12] at which
+[62:15] gain of
+[62:17] amplifier.
+[62:18] See, this is an important
+[62:19] exam point of view.
+[62:21] At which
+[62:22] gain of amplifier
+[62:25] becomes
+[62:29] 1.
+[62:31] Where the gain of amplifier
+[62:33] becomes 1,
+[62:34] that is called as
+[62:35] the unity gain frequency.
+[62:38] Now, see,
+[62:39] how much the gain has come.
+[62:45] How much your gain has come.
+[62:47] See, this was coming.
+[62:50] You consider R Pi
+[62:52] parallel R mu as R Pi.
+[63:03] Okay, take it like this.
+[63:06] Okay, this was coming.
+[63:08] Now, what do you say?
+[63:10] At
+[63:12] high frequency or first
+[63:14] you take this gain
+[63:16] in J omega.
+[63:20] So, you will put J omega
+[63:22] instead of S.
+[63:30] This happened.
+[63:32] Sorry, you will put J omega instead of S.
+[63:38] Now, I say that
+[63:40] at high frequency
+[63:42] at high frequency,
+[63:44] you approximate the gain.
+[63:48] You consider the term of omega
+[63:50] as high.
+[63:52] Consider it as high
+[63:54] compared to 1.
+[63:58] This happened.
+[64:00] See, this is current gain.
+[64:02] See, the short circuit
+[64:04] is talking about current gain.
+[64:06] So, this gain
+[64:08] if you take
+[64:10] its magnitude,
+[64:12] you will remove J.
+[64:14] R Pi to R Pi is cut.
+[64:16] Gm by
+[64:18] omega C.
+[64:20] So, this gain 1
+[64:22] will come
+[64:24] when
+[64:26] omega
+[64:28] is equal to omega T
+[64:30] whose value is
+[64:32] Gm by C.
+[64:34] So, how much is the unity
+[64:36] gain frequency?
+[64:38] You have to remember the exam
+[64:40] point of view.
+[64:42] How much is the unity gain frequency?
+[64:44] F T
+[64:46] which is
+[64:48] Gm by 2 Pi C.
+[64:50] And here
+[64:52] what is C? C D plus C T.
+[64:54] This formula is very important.
+[64:56] It is directly
+[64:58] numerically asked.
+[65:00] Unity gain frequency.
+[65:02] Now, what is the importance of this?
+[65:04] Unity gain frequency
+[65:06] if you are reading,
+[65:08] then why am I reading?
+[65:10] There should be some benefit of
+[65:12] unity gain frequency.
+[65:14] Think about it.
+[65:16] There should be some benefit.
+[65:18] And see, I will tell you one more thing.
+[65:20] Unity gain frequency
+[65:22] we have removed.
+[65:24] I will tell you one more thing.
+[65:26] Before this, I will tell you its benefit.
+[65:32] See, what happens?
+[65:34] R Pi
+[65:36] which is beta by
+[65:38] Gm.
+[65:40] So,
+[65:42] Gm into R Pi
+[65:44] is equal to
+[65:46] beta.
+[65:48] So, your gain
+[65:52] is actually minus beta.
+[66:02] See, it is coming like this.
+[66:08] I have called it
+[66:10] omega beta.
+[66:12] Let me tell you what is omega beta.
+[66:14] Stop. Let me tell you what is omega beta.
+[66:16] So, when you remove
+[66:18] the magnitude of the gain,
+[66:22] this will come
+[66:24] beta.
+[66:32] So,
+[66:48] this is it.
+[66:50] Now, what do you call
+[66:52] F beta here?
+[66:54] Beta cutoff frequency.
+[66:56] What do you call it?
+[66:58] Beta
+[67:00] cutoff frequency.
+[67:02] This means
+[67:04] that when your mid-band
+[67:06] gain is beta,
+[67:08] then the gain
+[67:10] becomes
+[67:12] beta by root 2.
+[67:14] What does this mean?
+[67:16] When
+[67:18] mid-band gain
+[67:22] mid-band gain
+[67:24] is equal to beta,
+[67:26] then
+[67:28] gain becomes
+[67:30] gain becomes
+[67:34] beta by root 2
+[67:36] at
+[67:38] F equal to
+[67:40] F beta
+[67:42] whose value is what?
+[67:44] 1 by 2 Pi
+[67:48] R Pi
+[67:50] into C.
+[67:52] And what is C here?
+[67:54] C D plus C D.
+[67:56] So, when someone asks you
+[67:58] to understand beta cutoff frequency,
+[68:00] mid-band
+[68:02] gain is beta.
+[68:04] And this is talking about that frequency
+[68:06] where the gain
+[68:08] becomes beta by root 2.
+[68:10] How much the gain
+[68:12] becomes beta by root 2.
+[68:14] Is this clear?
+[68:16] Tell me, is this clear?
+[68:20] Is it clear?
+[68:22] Tell me, everyone.
+[68:24] Clear it quickly.
+[68:28] Now, what is the importance of
+[68:30] unity gain frequency?
+[68:32] What is the importance of unity gain frequency?
+[68:34] Look, unity gain frequency
+[68:36] means this is where
+[68:38] your gain 1 becomes.
+[68:40] Now, if you increase the frequency
+[68:42] more, then the gain
+[68:44] will be smaller than 1.
+[68:46] If the gain is smaller than 1,
+[68:48] then this amplifier
+[68:50] the property of amplifier is lost.
+[68:52] That means
+[68:54] an amplifier behaves
+[68:56] like an amplifier.
+[68:58] Up to what frequency?
+[69:00] Up to unity gain frequency.
+[69:02] Up to unity gain frequency.
+[69:04] So, what are we saying?
+[69:06] If BJT is used at above
+[69:08] unity gain frequency,
+[69:10] gain becomes less than 1.
+[69:12] Amplification does not occur.
+[69:14] So, unity gain frequency
+[69:16] is the highest frequency.
+[69:18] It can be run like an amplifier.
+[69:20] If you want
+[69:22] to make a good amplifier
+[69:24] if you want
+[69:26] to make a good amplifier,
+[69:28] then your unity gain frequency
+[69:30] should be high.
+[69:32] That is, up to high frequencies
+[69:34] you will get an amplification.
+[69:36] Up to high frequencies
+[69:38] you will get
+[69:40] an amplification.
+[69:42] Is this clear?
+[69:44] Tell me, is this clear?
+[69:48] Tell me, is this clear?
+[69:50] Tell me, is this clear?
+[69:52] Now, see how much your unity gain frequency
+[69:54] has come?
+[69:56] This is gm
+[69:58] by 2 pi c
+[70:00] and how much is the
+[70:02] beta cutoff frequency?
+[70:06] 1 by 2 pi
+[70:10] So, if I take
+[70:12] both the ratios, then you think
+[70:14] c cancels?
+[70:16] This will be
+[70:18] gm r pi
+[70:20] i.e. beta.
+[70:22] Now tell me, gm r pi is beta.
+[70:24] So, in one way, what is the relation
+[70:26] you have? f t
+[70:28] equal to beta into f beta.
+[70:30] So, you cannot say
+[70:32] that gain
+[70:34] into unity gain frequency
+[70:36] is gain
+[70:38] into beta cutoff frequency.
+[70:40] See, gain into frequency
+[70:42] is constant.
+[70:44] What do I say?
+[70:46] Unity gain is the only gain
+[70:48] and beta is the gain
+[70:50] on the cutoff.
+[70:52] So, see this relation.
+[70:54] This relation is so beautiful
+[70:56] that it is saying that
+[70:58] gain into cutoff frequency
+[71:00] is constant.
+[71:02] And we know this
+[71:04] by the name of
+[71:06] gain into bandwidth is constant.
+[71:08] Gain into bandwidth is
+[71:10] constant.
+[71:12] Gain into bandwidth is constant.
+[71:18] Did you understand
+[71:20] everyone?
+[71:22] Don't be so mouthful
+[71:24] and keep talking.
+[71:34] Will this be the
+[71:36] type of response?
+[71:38] So, the gain
+[71:40] that will be beta. Then you go to F beta and how much will the gain be? Beta by root 2 and then where will you get the unity gain on F t?
+[72:11] You will say below that don't use the amplifier. Don't use the frequency from this frequency.
+[72:19] Is it clear to everyone? Disham is saying Sir I am forgetting some concepts what to do.
+[72:26] You should revise. There is no other way. Obviously you will forget some things after some time. First time you are reading all things.
+[72:35] There will be little on the tips. Come on tell me once it is clear. You have clear beta cutoff frequency. You have clear unity gain frequency.
+[72:47] What did you not understand Krithibas? Tell me. What are the things that you didn't understand? Tell me quickly then I will move forward.
+[72:55] What are the things that you have not cleared in this? Tell me Krithibas.
+[73:05] Is it clear? Come on. Now see if there was a resistive load like you just took out the short circuit gain. If there was a resistive load then see I have written RL here.
+[73:27] This is RC and this is RL. Now what do we have to do? What do we have to do first? We have to use Miller's theorem.
+[73:37] So we say remove CT and R mu. First remove CT and R mu and you take out a voltage gain.
+[73:49] So do not count any capacitance in this. Do not take any capacitance.
+[74:05] This is your RB dash. This is R pi and V0 becomes minus GMV pi RL dash. RL dash is a combination of three.
+[74:31] Do you understand? I will take out the gain from here. So AV will come. V0 by V in will be minus GM RL dash R pi over RB plus R pi.
+[74:55] So this came without any capacitance. If you summarize, tell me Krithibas, where are you going?
+[75:06] This is what I have just said to remember. These cutoff frequencies have come out. This is to remember the beta cutoff frequency.
+[75:16] This is to remember the unity gain frequency. What is the significance of the unity gain frequency? The frequency at which the gain becomes your one and the beta cutoff frequency means when the midband gain is beta,
+[75:27] then at which frequency the gain becomes beta by root 2? So you have to remember the unity gain frequency. You have to remember the beta cutoff frequency.
+[75:38] First, we have to remember the models we did in relation. I just told you that both the models are interchangeably used.
+[75:49] Before that, I explained to you the Giacolato model that there is an army here and there is a CT. Before this, I told you the Miller's theorem.
+[75:57] You have to remember the Miller's theorem. You have to remember the Miller's theorem. Giacolato model should be known.
+[76:05] Then you have to remember the conversion. Then you have to remember the unity gain frequency and the beta cutoff frequency. And this gain into bandwidth is constant.
+[76:16] Now look here, when you have a gain, then what do you do? You refer these two elements in the middle to the input and output.
+[76:29] When you refer the resistance to the input, then R mu over 1 minus AV. When you refer the resistance to the output, R mu upon 1 minus 1 by AV.
+[76:45] When you refer the capacitance to the input, I am writing C mu in.
+[76:56] So CT 1 minus AV. And when you refer the capacitance to the output, CT 1 minus 1 by AV.
+[77:11] So you have to refer the input and output. Now the moment you refer the input and output, the circuit is going to be very simple.
+[77:22] Did you understand how the Miller's theorem is applied?
+[77:32] That first you have to remove the capacitance and the middle resistance and remove the gain. Then something will happen.
+[77:51] I am showing the three resistances parallel to the current source with a single resistance.
+[78:05] Then I am showing the referred value of R mu.
+[78:10] And then I am showing the output capacitor.
+[78:16] Now see what the terms are.
+[78:24] This is RB, this is Pi, this is the diffusion capacitance, this is CT 1 minus AV, this is the R in resistance, this is GMV Pi, this is RL dash,
+[78:42] this is the R out which you refer and this is CT 1 minus 1 by AV.
+[78:51] Now see here for the input cut-off frequency, you need R equivalent across CN.
+[79:02] Sir, what is CN? Sir, CN is the parallel combination of these two capacitors.
+[79:15] So tell me the frequency of your input side or R equivalent first.
+[79:20] I will write R i of the input side.
+[79:24] Now if you zero the supply then R Pi and R will also be parallel and R in.
+[79:35] Now that is different, the army people ignore everyone.
+[79:39] The army people do not take it seriously because there is a very high resistance.
+[79:46] Okay, this happened.
+[79:48] Is this clear?
+[79:50] Yes, it is referred on both the ports.
+[79:56] Now see for the output cut-off frequency, you need R equivalent across CN.
+[80:06] Sir, what is CN?
+[80:09] Look at the output side, what are the capacitance?
+[80:13] CT 1 minus 1 by AV.
+[80:18] And what are the across resistance?
+[80:21] RL dash parallel R out.
+[80:25] Now see from here two capacitance came.
+[80:27] I told you at the beginning that you have two capacitance.
+[80:33] Whenever you talk about the cut-off, you will always have two capacitances.
+[80:41] And here FH is the minimum.
+[80:46] Did you understand?
+[80:48] Confirm it quickly in the chat.
+[80:50] If you have to take out the cut-off frequency, you will get two cut-offs by using Miller's theorem.
+[80:57] On one input side and one output side.
+[80:59] And we will take both the minimum.
+[81:07] Is it clear or not?
+[81:09] Say it quickly.
+[81:12] Is it clear?
+[81:14] Come on.
+[81:15] Now see what happens?
+[81:17] There is a T-Model on the high-frequency.
+[81:19] Like the G-Aco-Lato model is a Pi model.
+[81:22] There is also a T-Model.
+[81:24] Do you remember the T-Model where you started the emitter terminal?
+[81:28] Start, remember.
+[81:30] I will show you the T-Model in Amplifier.
+[81:32] Look, remember like this.
+[81:34] This was the emitter terminal.
+[81:36] This was the base.
+[81:40] And this was the collector.
+[81:48] Come on.
+[81:50] If you agree to NPN.
+[81:52] Then take it like this.
+[81:55] Do you remember?
+[81:59] This used to be RE.
+[82:02] Current IE used to go here.
+[82:05] Alpha IE used to go here.
+[82:08] It was in the common base configuration.
+[82:10] Now see, there will be a capacitance between the collector base.
+[82:15] What is the transition capacitance?
+[82:18] And there will be one in the emitter base.
+[82:22] Diffusion Capacitance.
+[82:24] Which you are reading now.
+[82:26] Right?
+[82:27] Yes, the Ebers Mool model came.
+[82:29] I have made capacitance resistance.
+[82:43] Okay.
+[82:45] So this was the model.
+[82:47] What did I do in this?
+[82:48] Connect two capacitance.
+[82:50] What is CD here?
+[82:52] CD is
+[82:54] Diffusion Capacitance
+[82:59] of emitter base junction.
+[83:09] And do you know this?
+[83:10] I also wrote a formula.
+[83:12] I wrote like this in the diode.
+[83:14] ID
+[83:15] tau
+[83:16] by VT.
+[83:18] If you see here, it is diode emitter.
+[83:21] IE
+[83:22] tau
+[83:23] by
+[83:24] VT.
+[83:25] This was in diode.
+[83:27] In BJT, instead of diode current, which current do you use?
+[83:31] Ammeter current do you use?
+[83:33] Now VT by IE, you know it is RE.
+[83:37] Why?
+[83:39] VT by IE, you know it is RE.
+[83:43] Can you say this?
+[83:45] Diffusion Capacitance is
+[83:48] tau upon
+[83:50] RE.
+[83:51] So what is tau?
+[83:53] Minority Carrier Lifetime
+[83:57] Minority Carrier Lifetime
+[84:00] What is the significance of this?
+[84:03] Look here, what is the significance?
+[84:05] Understand it carefully.
+[84:06] Suppose there is NPN transistor.
+[84:09] In NPN transistor, your emitter is N type.
+[84:13] Correct?
+[84:14] Ammeter is N type.
+[84:16] Who gives birth to electrons?
+[84:18] Who gives birth to electrons?
+[84:20] These electrons go in the base of P type.
+[84:24] Where do they go?
+[84:25] In the base of P type.
+[84:27] If my children go in the base of P type,
+[84:31] then they recombine with the holes there.
+[84:35] And the electron gets destroyed.
+[84:38] The free electron ends.
+[84:41] This is called Lifetime.
+[84:43] That is, an electron, a free electron,
+[84:46] can survive for so long,
+[84:49] before it is destroyed.
+[84:52] So that is the Minority Carrier Lifetime.
+[84:55] So what will the Lifetime depend on?
+[84:57] On the base.
+[84:58] Because till the time this electron was in the emitter,
+[85:00] it was the emitter.
+[85:01] But as soon as it reaches the base,
+[85:04] as soon as it reaches the base,
+[85:06] what did it become?
+[85:07] Minority Carrier.
+[85:09] Because the base was P type,
+[85:11] where the electrons become the Minority Carrier.
+[85:15] So the tau is the formula for this.
+[85:18] WB square by 2 dB.
+[85:24] Okay?
+[85:25] WB means
+[85:28] the base's width.
+[85:36] And dB means
+[85:39] Diffusion Coefficient.
+[85:47] So these are the DP logos
+[85:51] for PNP Transistor.
+[85:54] And my children, these are the DN logos
+[85:56] for NPN Transistor.
+[85:59] Okay?
+[86:00] You can understand like this, my brother,
+[86:02] that when you understand here
+[86:05] what happens,
+[86:07] please explain Diffusion Length also.
+[86:09] You read Diffusion Length in devices.
+[86:11] You will bring it in Analog.
+[86:13] It will spread the idea of two meanings.
+[86:15] But let me tell you,
+[86:16] Diffusion Length means
+[86:18] when four carriers diffuse.
+[86:21] What is Diffuse?
+[86:22] When they go from higher concentration
+[86:25] to lower concentration,
+[86:27] what is the effective length
+[86:29] over which it is diffusing?
+[86:31] How much distance it is travelling
+[86:34] in its lifetime?
+[86:36] That is the Diffusion Length.
+[86:38] That is the Diffusion Length.
+[86:40] Like here,
+[86:42] when the four carriers
+[86:44] cross the base,
+[86:46] they go to the collector.
+[86:47] So basically,
+[86:48] how much length did they cross?
+[86:50] WB?
+[86:51] They crossed WB, right?
+[86:53] So from the point of view,
+[86:55] this is your Diffusion Width.
+[86:58] What is this?
+[86:59] Diffusion Width or Diffusion Length.
+[87:02] Do you understand, Anuj?
+[87:04] How much length did they diffuse?
+[87:10] Or how much width did they diffuse?
+[87:12] That is your base width or diffusion width.
+[87:15] And how much time did they take to do that?
+[87:18] That is tau.
+[87:19] How much time did they take to do that?
+[87:21] That is tau.
+[87:22] So the Minority Carrier Lifetime
+[87:24] that is WB square by 2 dB.
+[87:28] And from here,
+[87:29] you get
+[87:31] Diffusion Capacitance.
+[87:34] Diffusion Capacitance.
+[87:36] Is it clear?
+[87:37] Tell me,
+[87:39] is it clear or not?
+[87:40] All of you,
+[87:41] confirm it once.
+[87:49] No, no, we will see
+[87:51] the Diffusion Length in the base.
+[87:53] The Diffusion Length is greater
+[87:55] than the base width.
+[87:56] We will consider it to be almost equal.
+[87:58] Okay?
+[88:00] And you can write its two formulas.
+[88:02] Write in the REE terms.
+[88:04] Or write in this.
+[88:07] Okay?
+[88:09] Write in this.
+[88:10] It is clear, right?
+[88:11] The Diffusion Capacitance is done.
+[88:14] Now what do you want here, son?
+[88:17] You want the IE to be small
+[88:20] so that the Diffusion Capacitance remains small.
+[88:23] Sir, why do you want to keep the Diffusion Capacitance small?
+[88:26] Because, son, the smaller the Capacitance will be,
+[88:29] the more your Cut-off Frequency will be.
+[88:32] You know, right?
+[88:34] It is inversely proportional to the Cut-off Frequency Capacitance.
+[88:36] So, you want this.
+[88:38] I will write it.
+[88:41] At high frequency,
+[88:50] we wish to operate,
+[88:53] we wish to operate
+[88:59] BJT at
+[89:02] high
+[89:05] IE
+[89:08] so that
+[89:12] Capacitance
+[89:16] is a...
+[89:17] One second.
+[89:18] Capacitance, one second.
+[89:20] High IE
+[89:24] Capacitance will be large at high IE
+[89:26] and Capacitance will be large.
+[89:28] So, according to GM by 2 pi C,
+[89:30] our Cut-off Frequency will be low.
+[89:33] Sorry, we will have to do low IE, right?
+[89:36] Low IE.
+[89:40] So that
+[89:42] CD is
+[89:44] low
+[89:46] and
+[89:48] Cut-off Frequency is high.
+[89:50] Why do you want high Cut-off Frequency?
+[89:52] Look,
+[89:54] an amplifier
+[89:56] can give
+[89:58] faithfully
+[90:00] amplification
+[90:02] to how many frequencies
+[90:04] a capacitor can give
+[90:06] faithfully amplification.
+[90:08] This is its Cut-off Frequency
+[90:10] and this is its bandwidth.
+[90:12] So, what do you want?
+[90:14] To amplify more frequency?
+[90:16] Don't say that
+[90:18] I won't be able to work on high frequency.
+[90:20] I don't have
+[90:22] a gain on high frequency.
+[90:24] Don't say that.
+[90:26] So, you want to give
+[90:28] a good amplification
+[90:30] on high frequency
+[90:32] so that you don't have a problem.
+[90:34] Do you understand?
+[90:36] You want a good amplification on high frequency
+[90:38] so that the CD should be low
+[90:40] so that the Cut-off Frequency is high.
+[90:42] So, we always want
+[90:44] the bandwidth of the BJT
+[90:46] the bandwidth of the BJT
+[90:48] is greater than or greater than
+[90:50] because the more bandwidth
+[90:52] the greater the range of frequencies
+[90:54] can pass the BJT
+[90:56] or the greater the range
+[90:58] of frequencies
+[91:00] can amplify the BJT.
+[91:02] Is it clear?
+[91:04] Clear?
+[91:06] And your transition
+[91:08] capacitance is
+[91:10] the capacitance of the depletion layer
+[91:12] A by W
+[91:14] A is the cross section area
+[91:18] and W is the
+[91:20] depletion width
+[91:22] of the collector base junction.
+[91:32] This is the reverse bias
+[91:34] capacitance.
+[91:36] I told you, remember
+[91:38] there are space charges in the depletion layer
+[91:40] and one side is positive
+[91:42] and the other side is negative
+[91:44] the capacitance in between
+[91:46] is the
+[91:48] transition
+[91:50] capacitance.
+[91:52] Now,
+[91:54] if we talk
+[91:56] about the mid-band gain
+[91:58] mid-band gain
+[92:00] you won't consider
+[92:02] the capacitance
+[92:04] or the mid-band short-circuit current
+[92:06] gain
+[92:08] you won't consider
+[92:10] the mid-band short-circuit current
+[92:12] gain.
+[92:14] You will only make
+[92:16] the model like this.
+[92:18] Take a look.
+[92:38] Look,
+[92:40] i0
+[92:42] and iin
+[92:44] I have to take this.
+[92:46] So, i0 is
+[92:48] minus alpha i
+[92:50] which is
+[92:52] alpha into minus i
+[92:54] which is alpha
+[92:56] into iin.
+[92:58] So, what is simple here?
+[93:00] i0 by iin
+[93:02] You know
+[93:04] there is no capacitance in the mid-band, right?
+[93:10] If i is low, then the recombination
+[93:12] will also be less.
+[93:14] If recombination depends on
+[93:16] the doping density
+[93:18] i.e. my biasing current
+[93:20] biasing current
+[93:22] the current of DC bias
+[93:24] if I keep it low
+[93:26] then my capacitance will be less
+[93:28] why capacitance will be less?
+[93:30] When the
+[93:32] low number of charges will diffuse
+[93:34] the effective capacitance
+[93:36] will also be low.
+[93:38] How do you remove capacitance?
+[93:40] Do you remove it by doing Q by V?
+[93:42] For this, you remove it by DQ by DV.
+[93:44] If you keep the emitter current
+[93:46] low, then the DQ by DV
+[93:48] will also be low.
+[93:50] Do you understand, Swarov?
+[93:52] Tell me.
+[93:54] Now my children, if you
+[93:56] look at the high frequency
+[93:58] you know, it will work
+[94:00] like a low pass filter.
+[94:02] If you look at the high frequency
+[94:04] then it will work
+[94:06] like a low pass filter.
+[94:08] So, how will you write the gain?
+[94:10] 1 plus
+[94:12] F by
+[94:14] F alpha
+[94:16] square.
+[94:18] 1 by 1 upon
+[94:20] sorry, alpha upon
+[94:22] 1 plus F by F alpha
+[94:24] square.
+[94:26] What do we call here?
+[94:28] common base
+[94:32] common base
+[94:34] mid band
+[94:36] gain
+[94:40] is alpha
+[94:42] is alpha
+[94:48] gain reduces
+[94:50] at
+[94:52] high
+[94:54] frequency due to
+[94:56] capacitance.
+[94:58] And the gain is
+[95:02] alpha upon
+[95:06] 1 plus
+[95:08] F by
+[95:10] F alpha
+[95:12] square.
+[95:14] So, what will you call here F alpha?
+[95:16] Alpha cutoff frequency.
+[95:20] What does alpha cutoff frequency mean?
+[95:22] Where
+[95:24] the frequency
+[95:26] your gain
+[95:28] on which frequency
+[95:30] your gain becomes alpha by root 2.
+[95:32] How much is the gain?
+[95:34] Alpha by root 2.
+[95:36] For example, beta cutoff frequency
+[95:38] was defined for common emitter.
+[95:40] Similarly, alpha cutoff frequency
+[95:42] was defined for
+[95:44] common base
+[95:46] where your current gain
+[95:48] is alpha.
+[95:50] Where your current gain is
+[95:52] alpha.
+[95:54] And F alpha
+[95:56] is actually
+[96:02] 1 by
+[96:04] 2 pi RECD.
+[96:06] How much is it?
+[96:08] 1 by 2 pi RECD.
+[96:10] Where did I get it from?
+[96:12] From the input side.
+[96:14] There was a resistance and a capacitance on the input side.
+[96:18] 1 by 2 pi RECD.
+[96:20] Is it clear?
+[96:22] Tell me.
+[96:24] Is this thing clear?
+[96:26] Is everyone clear or not?
+[96:28] Tell me quickly.
+[96:30] Now,
+[96:32] here you see
+[96:34] this alpha cutoff frequency
+[96:36] is coming.
+[96:38] 1 by 2 pi
+[96:42] RECD is coming.
+[96:44] So, what do we want?
+[96:46] For
+[96:48] higher
+[96:52] cutoff frequency
+[96:54] should be high.
+[96:56] CD must be low.
+[96:58] How much was the CD?
+[97:00] IE
+[97:02] VT
+[97:04] by D.
+[97:06] Okay?
+[97:08] IE
+[97:10] tau
+[97:14] by VT.
+[97:16] And tau was WB
+[97:18] square by
+[97:20] 2D.
+[97:22] Now, here
+[97:24] if you want
+[97:26] to be low,
+[97:28] first you need to keep the bicing current low.
+[97:30] What did you say?
+[97:32] Keep the bicing current low.
+[97:34] What did you say?
+[97:36] What can you do?
+[97:38] First,
+[97:40] reduce the base width.
+[97:42] With reducing the base width,
+[97:44] tau will be less.
+[97:46] Tau will be less.
+[97:48] CD will be less.
+[97:50] So, your cutoff frequency
+[97:52] would be increased.
+[97:54] Reduce the width of the base.
+[97:56] The second method is to do non-uniformly of the base region.
+[98:03] Non-uniformly means to keep more doping near the emitter and less doping near the collector.
+[98:12] This will generate an automatic electric field in the base.
+[98:18] This will generate an automatic electric field in the base which will pull the charges from the emitter and take it to the collector quickly.
+[98:29] If the charges in the emitter are less, meaning their lifetime is less.
+[98:35] What is the significance of lifetime?
+[98:37] Charges from the emitter come to the base and become a minority carrier.
+[98:42] So how long do they stay in the base? That is the lifetime.
+[98:46] So if you make an electric field in the base which will take the charges from the emitter quickly and take it to the collector,
+[98:54] then what will happen? The tau will decrease.
+[98:57] If you don't do this, my children, if you keep doping uniform,
+[99:03] then such transistors are called diffusion transistors.
+[99:06] This is good in low and medium frequencies.
+[99:10] But if you want to make a high frequency transistor,
+[99:14] then you will have to take the support of non-uniform doping.
+[99:19] Did you understand what I said?
+[99:22] Did you understand what I said?
+[99:24] Okay.
+[99:25] Now the last thing, my child, the alpha cut-off frequency that has come,
+[99:29] what is this? Your 1 by 2 pi RECD where your IE tau by VT and tau is your WB square by 2D.
+[99:53] Okay?
+[99:54] Now let's see what happens in this.
+[99:57] Okay?
+[99:58] Let's see what happens in this.
+[99:59] If you look at Dn, then Dn is greater than Dp.
+[100:02] That is, the diffusion of electrons is greater than Dp.
+[100:06] Do you remember the Einstein relation I told you?
+[100:10] Dn by mu n, Dp by mu p is KT by E.
+[100:16] I told you this, right?
+[100:18] So you know that mu n is greater than mu p.
+[100:23] The child knows this because effective mass is less.
+[100:27] That is why Dn is greater than Dp.
+[100:29] If Dn is greater, then tau will be less.
+[100:33] If tau is less, then your cut-off frequency will be more.
+[100:41] So what do you say?
+[100:43] NPN transistor is better.
+[100:46] Such a diffusion coefficient of germanium is more than silicon.
+[100:51] That is why it is preferable for high frequency.
+[100:54] Lastly, if you make high frequency integrated circuit, then you use gallium arsenide.
+[101:01] Because in gallium arsenide, the mobility of electrons is the most.
+[101:06] That is, the mobility of electrons is the most in silicon and germanium in gallium arsenide at high frequency.
+[101:13] Okay?
+[101:14] So you can think that gallium arsenide is better than germanium which will be better than silicon.
+[101:20] Now look, gain into bandwidth is your constant.
+[101:24] So you have read three frequencies.
+[101:27] Look, I will summarize all here.
+[101:29] You have read three frequencies.
+[101:32] All will be summarized in this page.
+[101:34] 1 into unity gain frequency.
+[101:38] Look, beta into F beta, alpha into F alpha.
+[101:47] How much was Ft?
+[101:49] Gm by 2 pi Cd plus Ct.
+[101:57] F beta 1 by 2 pi R pi Cd plus Ct.
+[102:09] F alpha 1 by 2 pi Re and Cd.
+[102:19] Okay?
+[102:20] This is your gain into bandwidth is constant.
+[102:25] Sorry, I have written the product.
+[102:27] This is constant.
+[102:31] And look here, if alpha is smaller than 1, then F alpha will increase from Ft.
+[102:38] And if beta is bigger than 1, then F beta will be smaller than Ft.
+[102:43] Okay?
+[102:44] These are the things that will give you work in numericals.
+[102:46] And I will write here as well.
+[102:48] Look, the formula for Cd again.
+[102:50] Now I think you must have lost it.
+[103:01] Is it clear?
+[103:02] Tell me.
+[103:03] That's all for today's lecture.
+[103:06] And apart from this, the application of Miller's theorem.
+[103:09] So if you get these two things, then you have a high frequency response clear.
+[103:13] Okay?
+[103:14] What is your name?
+[103:16] Kasturba?
+[103:18] What was the name?
+[103:19] I don't know.
+[103:20] The kid just forgot the name.
+[103:21] Poor guy is worried.
+[103:23] Did you understand or not?
+[103:24] Tell me Anuj, Saurav, and others.
+[103:27] Is it clear?
+[103:28] Look at the concept of today.
+[103:30] Look at the question on this.
+[103:31] Look at the first question.
+[103:33] NPN transistor with Kruti bus.
+[103:37] Did you understand or not?
+[103:38] C pi.
+[103:39] C pi means CD.
+[103:40] Has a unity gain cut-off frequency of 400 MHz at a DC bias current of 1 milliampere.
+[103:47] This is asking C mu.
+[103:49] C mu means transition capacitance.
+[103:51] Which is parallel to R mu.
+[103:53] C pi means parallel to R pi.
+[103:56] That is the base emitter.
+[103:57] C mu means parallel to R mu.
+[104:00] Take it out.
+[104:01] Unity gain frequency is given.
+[104:03] VT is given.
+[104:04] Bias current is given.
+[104:06] C pi is given.
+[104:07] C mu is asking.
+[104:10] Okay?
+[104:11] And these lectures, I am focusing on ECE only.
+[104:15] That is why we are going in more detail.
+[104:17] We are focusing on ECE only.
+[104:20] That is why we are going in extra detail.
+[104:30] Did anyone come?
+[104:50] Look, take out the GM first.
+[104:55] DC bias current by VT.
+[105:02] Now FT is GM by 2 pi C.
+[105:07] And there is C in both.
+[105:10] Parallel combination.
+[105:13] From here, your C pi plus C mu will come.
+[105:17] GM is 1 by 26 by 2 pi.
+[105:23] And frequency is 400 MHz.
+[105:28] Okay?
+[105:29] So tell me from here, how much is C mu coming?
+[105:32] Did anyone take out C mu?
+[105:34] I will check.
+[105:44] 1.53.
+[105:46] 15.3 pico Farad.
+[105:48] So 15 pico Farad will be done.
+[105:51] Anyway, your diffusion capacitance is much smaller than the junction capacitance.
+[105:58] Look at the next one.
+[105:59] Beta cutoff frequency is given.
+[106:01] 1 MHz.
+[106:02] Beta is given.
+[106:03] 200.
+[106:04] Unity gain frequency is asking you.
+[106:07] And alpha cutoff frequency is asking you.
+[106:09] When you get the rest of the frequency,
+[106:12] then you put the gain into bandwidth fund.
+[106:16] What will you do?
+[106:17] You will put the gain into bandwidth fund.
+[106:19] Let's go.
+[106:24] Come on everyone.
+[106:47] What are you doing?
+[107:16] This is very easy.
+[107:18] 200 F beta is 1 into Ft is alpha into F alpha.
+[107:28] So how much is Ft from here?
+[107:30] 200 MHz is F beta is 1 MHz.
+[107:35] And then alpha will be beta by 1 plus beta.
+[107:44] So F alpha is 201 MHz.
+[107:52] Right?
+[107:53] 200 MHz and 201 MHz.
+[107:55] This is the answer.
+[107:58] Come on, look at the next one.
+[108:00] A transistor with Ft and HFE.
+[108:03] HFE means beta is employed in a common emitter amplifier.
+[108:08] Capacitance C4 required to give us 60 kHz.
+[108:13] Upper cutoff frequency.
+[108:15] This is asking C4 which will give you 60 kHz upper cutoff frequency.
+[108:44] Please teach EDC also in next year.
+[108:48] Let's see next year.
+[108:50] I am planning a few subjects next year.
+[108:53] I will tell you.
+[108:55] It will take time in all things.
+[108:58] Thank you, Divyanshu.
+[109:01] Things are going to go to the next level.
+[109:04] No matter how deep dive we dive in any topic.
+[109:08] At the end of the day, we will make sure that you know how many things you have to remember.
+[109:14] Okay?
+[109:15] Don't remember anything that you can't remember.
+[109:23] Assume RL is much much greater than RC.
+[109:27] This is looking quite easy.
+[109:31] Look what you will do.
+[109:33] You will write.
+[109:35] This has no use in beta.
+[109:39] Resistance.
+[109:41] When you want to remove it, remove the resistance.
+[109:45] When you make AC model, this resistance will become RC parallel RL.
+[109:50] Which will be approximately RC because RL is quite big.
+[109:54] 10 kHz.
+[109:55] Now it has called cutoff frequency 60 kHz.
+[110:00] 1 by 2 pi.
+[110:04] 10 kOhm.
+[110:06] Into C4.
+[110:08] End question.
+[110:10] Do you see?
+[110:12] The questions are answered like this.
+[110:14] Sir, what is transconductance theoretical?
+[110:18] See, transconductance means,
+[110:21] if you apply a particular input voltage,
+[110:24] if you apply an input signal,
+[110:26] how much current is being generated on its corresponding output?
+[110:31] So it is becoming 0.265 nano farad.
+[110:36] See, this is also coming.
+[110:40] Yes, electrical people can skip this topic and JFET.
+[110:46] JFET is in engineering services.
+[110:48] JFET is not even in the gate of ECE.
+[110:52] But JFET, you know, it becomes fast.
+[110:54] So they will do it well once.
+[110:56] It is not that they will leave JFET.
+[110:58] It becomes easy.
+[111:04] Omega L and Omega H are asking.
+[111:09] I think Omega L is getting it.
+[111:11] How does Omega H come out?
+[111:12] No capacitance is given.
+[111:15] First, take out Omega L.
+[111:31] Come on, tell me.
+[111:33] For Omega H, I think the data is insufficient.
+[111:36] For upper cut-off frequency.
+[111:38] Because it should have given some capacitance.
+[111:42] It should have given some C, D, C, T.
+[111:51] Come on, tell me quickly.
+[111:53] First, it will have to do DC analysis, right?
+[111:57] Only then it will come to RPI.
+[111:59] Only then it will become something.
+[112:01] First, do DC analysis and take out RPI.
+[112:12] It has not even given beta.
+[112:26] What to do? Then take beta large.
+[112:28] Take beta large.
+[112:34] If you take beta large, then RPI will come open.
+[112:42] So your input side circuit will actually become quite simple.
+[112:57] This will be 2K.
+[113:01] 0.1 microfarad.
+[113:03] This is RB.
+[113:05] And from here RPI will be open.
+[113:09] Now they have not given any output side capacitance or internal capacitance.
+[113:15] So I cannot talk much about the output.
+[113:21] Such a circuit will be made.
+[113:23] You will short this ammeter bypass capacitor.
+[113:27] The RB here will actually become a parallel combination of these two resistances.
+[113:33] 60K, parallel 5.5K.
+[113:38] Look a little.
+[113:47] 5.03816K.
+[113:52] Now if you look at the equivalent resistance of 0.1 microfarad,
+[113:58] then they will come in both series.
+[114:00] Sir, how in series?
+[114:01] Because you will first short VS.
+[114:04] As soon as you short VS, these two series will come.
+[114:08] So 7.0381K.
+[114:13] So if you are taking out omega L,
+[114:17] then omega L comes from your coupling capacitor, bypass capacitor.
+[114:23] Omega L means lower cut-off frequency.
+[114:26] So coupling capacitor and bypass capacitor comes from.
+[114:29] From where are you telling 0.05 nano farad, brother Anuj?
+[114:38] Has anyone come to the question exam?
+[114:41] So have you got the mic?
+[114:44] Has it become a kilo?
+[114:48] 0.1 micro farad.
+[114:53] No one will match the answer with this.
+[115:00] There seems to be some error in the data.
+[115:05] Because the answer I am getting from here.
+[115:10] This is getting 1, 4, 2, 0, 0.83 radian per second.
+[115:17] This can be different only when R pi is given.
+[115:21] What do you need for R pi?
+[115:24] You need the value of beta.
+[115:26] What do you need?
+[115:28] So consider its data as insufficient because it should have more data.
+[115:33] Let's see this.
+[115:35] A common emitter amplifier with the external capacitor CC connected across base collector of the transistor is shown.
+[115:43] Gm is given, R pi is given, C pi is given, C mu is given.
+[115:46] Upper cut-off frequency of the amplifier.
+[115:50] Upper cut-off frequency.
+[115:57] So this is an external capacitor in the middle, 25 pico farad.
+[116:01] I will show you this one with 25 pico farad.
+[116:05] Let me show you.
+[116:07] Because you will have to break this capacitor.
+[116:10] Look, this is a good question.
+[116:14] Don't put this capacitor now.
+[116:17] In fact, don't put any capacitor now.
+[116:23] First, take out the gain.
+[116:26] Okay?
+[116:41] This is 10 kOhm.
+[116:43] This R pi will be 20 kOhm.
+[116:47] This is Gm 5 milli ampere per volt.
+[116:51] And this is 10 kOhm.
+[116:56] Okay?
+[116:58] First, take out the gain.
+[117:02] So what will you say here?
+[117:04] V pi is Vs into 20 by 30.
+[117:10] 2 Vs by 3.
+[117:13] V0 you will write.
+[117:15] Minus 5 V pi into 10.
+[117:20] Minus 50.
+[117:22] Into 2 Vs by 3.
+[117:25] So you got the gain.
+[117:28] Minus 100 by 3.
+[117:30] Okay?
+[117:32] This gain is minus 100 by 3.
+[117:34] Now what will you do?
+[117:36] You break this capacitor on the input side.
+[117:42] You will break it on the input side.
+[117:44] 25 pico farad.
+[117:46] 1 minus AV.
+[117:48] 1 plus 100 by 3.
+[117:50] So if you do 1 plus 100 by 3.
+[117:57] 858.33.
+[118:03] pico farad.
+[118:05] C out.
+[118:09] 1 minus 1 by AV.
+[118:19] Plus, this was 100 by 3.
+[118:21] So 3 by 100.
+[118:27] 25.75.
+[118:30] This input capacitance will be connected to the CD in parallel.
+[118:37] CD which is your diffusion capacitance.
+[118:40] And this output one will go in parallel to the transition capacitance.
+[118:46] Okay?
+[118:49] One second.
+[118:51] But the input is the transition one.
+[118:54] CMU.
+[118:56] CMU is also here.
+[119:04] CMU is here.
+[119:07] And here is yours.
+[119:09] So CMU do one thing.
+[119:11] Add it first in 25.
+[119:13] CMU is 0.5.
+[119:15] So add it first in 25.
+[119:17] 0.5.
+[119:25] Because it is also between the base and the collector.
+[119:28] So take 25.5.
+[119:34] 875.5.
+[119:45] 26.265.
+[119:51] 26.265.
+[119:57] Now this output will be C out.
+[120:01] This will be CI plus CD.
+[120:03] CD is your 1.5.
+[120:05] So add 1.5 in this.
+[120:08] 877 pico farad.
+[120:11] Okay? 877 is here.
+[120:14] Now look at this.
+[120:15] You will get two cutoff frequencies.
+[120:20] 1 by 2 pi.
+[120:24] R in.
+[120:25] C in.
+[120:27] Now how much resistance will come on the input?
+[120:30] If you look at the capacitance.
+[120:32] So 10 kilo parallel 20 kilo will come on the input.
+[120:35] 0 vs.
+[120:37] 0 vs.
+[120:38] 10 or 20 parallel will come.
+[120:44] Correct?
+[120:47] Remove the supply to remove the resistance.
+[120:51] C in is your.
+[121:06] 27.22 kilohertz.
+[121:13] And on the output side.
+[121:18] So this question is very good for your revision.
+[121:29] R out.
+[121:30] There is a resistor of 10 kilo ohm on the output.
+[121:37] And this is 26.265.
+[121:44] This is 605.96 kilohertz.
+[121:50] Now what do you take?
+[121:51] Do you take the minimum of both?
+[121:55] So you are these people.
+[121:59] Both have to take the minimum.
+[122:03] Sir repeat once more.
+[122:05] Sir repeat once more.
+[122:06] Why are you writing this twice?
+[122:08] Look what I did.
+[122:10] First of all I made an AC model.
+[122:12] By removing all the capacitors.
+[122:14] Okay?
+[122:15] So when I made an AC model.
+[122:17] So I removed the gain.
+[122:19] Minus 100 by 3.
+[122:20] Is this clear, Sameer?
+[122:21] Minus 100 by 3.
+[122:23] With a simple network analysis.
+[122:25] Now what did I do?
+[122:26] This capacitance is C mu.
+[122:28] C mu means the collector base junction.
+[122:31] And this external capacitance is 25 pico farad.
+[122:35] This is also between the base and the collector.
+[122:38] And that is also between the collector base.
+[122:40] So this is parallel.
+[122:41] So this 25.5.
+[122:43] I broke it in two parts with Miller's theorem.
+[122:46] Input and output.
+[122:48] The input one.
+[122:50] This is with this C pi.
+[122:52] C pi is of the base emitter.
+[122:54] It will come in parallel with this.
+[122:56] So it will come in parallel.
+[122:58] So 1.5 is added in it.
+[123:02] Then 1.5 is added.
+[123:04] And this capacitance will be on the output.
+[123:06] This is 26.265.
+[123:08] Now I said that we need cut-off frequency.
+[123:11] So we need two capacitors across resistance.
+[123:14] One capacitance is coming here.
+[123:20] And one capacitance is coming here.
+[123:24] So if you zero the Vs of this capacitance.
+[123:27] Then these two will be seen in parallel.
+[123:29] This across resistance will be seen as 10 kilo ohms.
+[123:32] Then 1 by 2 pi RC.
+[123:34] Did you understand?
+[123:36] Tell me Sameer.
+[123:38] Did you understand or not?
+[123:40] And then we said that both of them will take minimum.
+[123:42] So we took minimum.
+[123:46] So this is your 18.357.
+[123:50] Our 27.22 is coming.
+[123:53] Gm5 2 by 3.
+[124:09] 50 100 by 3.
+[124:12] We have taken these values right.
+[124:18] Now this is given in radian or in hertz.
+[124:23] FH is asked.
+[124:25] FH means it will come in hertz.
+[124:41] This is being made.
+[124:45] If we had given an army then we would have resolved it.
+[124:48] So maybe its answer is wrong.
+[124:50] Okay.
+[124:52] Now see this is your assignment.
+[124:54] You will solve this.
+[124:56] You will make this assignment.
+[124:58] Okay.
+[124:59] And you can put PYQs on this link.
+[125:02] Your frequency response is also complete.
+[125:05] Gate PYQ by AIR1.
+[125:07] You will get PYQs in this.
+[125:10] And if you join Unacademy.
+[125:12] Then there are plus and iconic two offerings.
+[125:15] You get top teachers in two months.
+[125:17] The study material is on the app.
+[125:20] There are test series.
+[125:22] The kids who are iconic get the video solution of doubt.
+[125:27] Printed notes are sent at home.
+[125:30] You get 1 to 1 mentorship.
+[125:32] Strategy and study plan is made.
+[125:34] And open house sessions are interactive.
+[125:38] Yes, you can ask any questions.
+[125:41] And when you want to join Unacademy.
+[125:44] You have to choose a plan.
+[125:46] You have to decide the duration.
+[125:48] And you have to apply the code.
+[125:50] As soon as you apply this code.
+[125:52] You will get maximum discount.
+[125:54] And see this.
+[125:56] We have produced 6 anchors in top 10 in Electrical.
+[125:59] Next year your number can also be applied.
+[126:02] You have to join Unacademy quickly.
+[126:05] Simply using code.
+[126:07] And financial issue is that you can take it on EMI.
+[126:09] In which no interest is required.
+[126:11] It is a minimum paperwork.
+[126:13] Here you just have to give a plan card or basis card.
+[126:15] For a person in your family.
+[126:17] Whose salary comes.
+[126:19] So that they get EMI of bank.
+[126:21] And this is the latest batch.
+[126:23] My EMT has started since yesterday.
+[126:25] And from yesterday.
+[126:27] I mean from Wednesday.
+[126:29] My power electronic will start at 7 am.
+[126:31] And in Brahmastra batch.
+[126:33] In Brahmastra Plus batch.
+[126:35] Your daily doubts will be answered.
+[126:37] You will get DPP.
+[126:39] There will be a practice and strategy session.
+[126:41] You will get test series.
+[126:43] You will get the Paramount of Gate Academy.
+[126:45] Gate Academy, Workbook, Gate Academy.
+[126:47] PYQs. You will get all these things.
+[126:49] I told you.
+[126:51] Read the EMFT first.
+[126:53] Electrical EMFT and EC.
+[126:55] It is 120 hours.
+[126:57] Only EC-EC part is small.
+[126:59] And what is the difference between Brahmastra
+[127:01] and Brahmastra Plus batch.
+[127:03] In Brahmastra Plus.
+[127:05] Doubt clearing, DPP.
+[127:07] Exclusive classes, practice strategy.
+[127:09] Study, material test series.
+[127:11] Paramount of Gate Academy.
+[127:13] Workbook, PYQs.
+[127:15] You will get all these things.
+[127:17] You will get a lot of content.
+[127:19] Apart from the classes.
+[127:21] We have also released a subscription of 4 months.
+[127:23] Which kids want to give Gate 23.
+[127:25] So on this subscription for 4 months.
+[127:27] You can join the ANKIT ESC code.
+[127:29] And in 4 months.
+[127:31] You can save it in a great way.
+[127:33] In the gate exam.
+[127:35] This is my telegram channel.
+[127:37] All the courses are linked in the lecture.
+[127:39] And if there is any confusion.
+[127:41] Then you can call on this number.
+[127:43] My team's contact number is.
+[127:45] The YouTube kids press 2 plus.
+[127:47] And the iconic ones press 1.
+[127:49] So my team will help you out through this number.
+[127:51] And the PDF of this session will be available on the community.
+[127:53] Which will be available on the Academy app homepage.
+[127:55] Go there and find me on the community.
+[127:57] In Discover.
+[127:59] You will get the PDF of this session.
+[128:01] Thank you everyone. Thanks a lot.
+[128:03] Now we will meet kids.
+[128:05] Tomorrow same time same place.
+[128:07] Tomorrow we will start the multi stage amplifier.
+[128:09] Thank you everybody. Let's crack it.

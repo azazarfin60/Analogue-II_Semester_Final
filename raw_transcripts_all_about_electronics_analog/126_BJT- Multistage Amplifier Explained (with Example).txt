@@ -1,0 +1,178 @@
+Title: BJT- Multistage Amplifier Explained (with Example)
+URL: https://www.youtube.com/watch?v=PoPBaoS-qQU
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] So in this video, we will learn about the multi-stage amplifiers.
+[00:21] So in the earlier videos, we have seen that how the BJT can be used as a amplifier
+[00:27] in the different configurations.
+[00:30] And in each configuration, the amplifier provides the finite voltage gain as well as finite
+[00:35] input and the output impedance.
+[00:38] But many times, this voltage gain may not be sufficient for the particular application.
+[00:45] For example, if we want to amplify the 1mV signal to the 1V, then we require the gain of
+[00:51] the 1000.
+[00:53] And the single amplifier will not be able to provide that.
+[00:57] So in such case, we need to use the multi-stage amplifiers.
+[01:02] So to increase the gain, when the multiple amplifiers are cascaded together, then it is known
+[01:08] as the multi-stage amplifiers.
+[01:11] Apart from that, for the impedance matching on the input or output side, we also need to
+[01:16] go for the multi-stage amplifiers.
+[01:19] And to understand it, first of all, let us see the effect of the source and the load
+[01:24] resistance on the amplifier performance.
+[01:27] And first of all, let us start with the effect of the source resistance.
+[01:32] Now so far in our discussion, we have assumed that the input which is applied to the amplifier
+[01:38] has a zero source resistance.
+[01:41] But actually, if you see, every source has some finite resistance.
+[01:46] And because of the source resistance, the input signal which appears at the input of
+[01:51] the amplifier will be less than the source signal.
+[01:55] So to find the amplitude of this input signal, we can replace this amplifier by its input
+[02:00] impedance.
+[02:02] So now, this input voltage gain will be equal to Z in divided by Z in plus RS times VS.
+[02:15] And if you see the overall voltage gain, that is, V out divided by VS, then it will be
+[02:20] equal to V out divided by V in times V in divided by VS.
+[02:27] That is equal to Z in divided by Z in plus RS times AV.
+[02:36] So as you can see, now the overall voltage gain or the effective voltage gain depends
+[02:41] on the input as well as the source resistance.
+[02:45] For example, let us say, one amplifier provides the voltage gain of 100 and its input impedance
+[02:51] is equal to 1 kilo ohm.
+[02:54] Now if the source resistance RS is few ohms, let us say it is equal to 10 ohm, then in
+[03:00] that case, this overall voltage gain will be approximately equal to 100.
+[03:06] But if the source resistance RS is equal to 1 kilo ohm, then in that case, the effective
+[03:12] voltage gain or the overall voltage gain will become 50.
+[03:17] So as you can see, these source resistance can have a significant impact on the overall
+[03:22] voltage gain of the amplifier.
+[03:24] Similarly, when we connect the load to the amplifier, that it will also have an effect
+[03:30] on the overall voltage gain.
+[03:33] And to understand it, let us take the example of the common emitter amplifier.
+[03:38] So we know that for the common emitter amplifier, the voltage gain can be given as minus GM times
+[03:46] RC.
+[03:48] And let us call this voltage gain as the no-roar voltage gain.
+[03:53] Now when we connect the external load to this amplifier, then the voltage gain can be
+[03:57] given as minus GM times RC parallel RL.
+[04:05] That is equal to minus GM times RC times RL divided by RC plus RL.
+[04:15] Now here, this minus GM times RC is nothing but the no load voltage gain.
+[04:22] That means we can say that this overall voltage gain will be equal to this no load voltage
+[04:28] gain times RL divided by RC plus RL.
+[04:35] And if you are aware, then for the common emitter amplifier, this output impedance is equal
+[04:41] to RC.
+[04:43] That means we can say that the voltage gain will be equal to this no load voltage gain times
+[04:50] RL divided by RL plus Z0.
+[04:55] That is the output impedance.
+[04:58] So this is the expression of the effective voltage gain when we connect the load to the
+[05:02] amplifier.
+[05:05] So here, if this load resistance RL is much greater than the output impedance, in that
+[05:11] case, this overall voltage gain will be same as the no load voltage gain.
+[05:18] But if this load resistance is comparable to the output impedance or it is less than
+[05:23] the output impedance, in that case, this overall voltage gain will be less than the no load
+[05:28] voltage gain.
+[05:30] For example, for a one amplifier, if output impedance is 1 kilo ohm and the load resistance
+[05:36] is 2 kilo ohm, in that case, the effective voltage gain will be equal to RL divided by
+[05:44] RL plus Z0 times no load voltage gain.
+[05:49] So in this case, it will be the 2 third of the no load voltage gain.
+[05:56] So in this way, these load resistance can also affect the overall voltage gain.
+[06:02] And if we combine the effect of the source and the load resistance, then the overall voltage
+[06:07] gain, V out divided by Vs can be given as Z in divided by Z in plus RS times this no load
+[06:17] voltage gain times RL divided by RL plus Z0, where this Z in and the Z out are the input
+[06:28] and output impedance of this amplifier.
+[06:32] So as you can see, because of the source and the load resistance, the effective voltage
+[06:37] gain of the amplifier may get reduced.
+[06:40] And in fact, this effect of the source and the load resistance will also be useful
+[06:45] in our ongoing discussion on the multi stage amplifier.
+[06:48] So let us see how.
+[06:51] So when we cascade the multiple amplifier stages, then ideally, the overall voltage gain
+[06:57] will be the product of the individual voltage gain.
+[07:00] That means in this case, it will be equal to AV1 times AV2 times AV3.
+[07:08] But actually, each amplifier stage will act as a load to the previous amplifier stage.
+[07:14] And because of this loading effect, the effective voltage gain will be less than the individual
+[07:19] product of the voltage gains.
+[07:22] And to understand it, let us take the example of the 2 amplifier stages.
+[07:28] So here, the 2 amplifier stages are cascaded together.
+[07:32] And here, the Z in 1 and the Z out 1 are the input and output impedance of the first
+[07:37] amplifier.
+[07:38] Similarly, this Z in 2 and the Z out 2 are the input and output impedance of the second
+[07:44] amplifier.
+[07:46] So here, this second amplifier will act as a load for the first amplifier.
+[07:53] And to be precise, this input impedance of this second amplifier will act as a load
+[07:58] for the first amplifier.
+[08:01] That means for the first amplifier, this RL is equal to Z in 2.
+[08:08] So let us say, the input to the first amplifier that is over here is equal to V in 1.
+[08:15] So we can say that the voltage V out 1 divided by V in 1 is equal to this AV1 times RL
+[08:25] divided by RL plus Z out 1.
+[08:29] That is equal to AV1 times Z in 2 divided by Z in 2 plus ZO1.
+[08:39] So this will be the effective voltage gain of the first amplifier.
+[08:43] So now, this voltage VO1 will be the input for the second amplifier.
+[08:49] That means here, this VO1 will be equal to V in 2.
+[08:54] So similarly, now let us find the voltage gain of the second amplifier.
+[08:59] That means now, this V out 2 divided by V in 2 will be equal to this AV2 times RL divided
+[09:10] by RL plus Z out 2.
+[09:14] So this will be the effective voltage gain of the second amplifier and let us call it
+[09:19] as a AV2 effective.
+[09:23] So if we see the overall voltage gain that is V out 2 divided by V in 2, then it will
+[09:30] be equal to AV1 effective times AV2 effective.
+[09:38] Let us call this voltage gain as the AV effective.
+[09:44] And to find the voltage gain, V out 2 divided by Vs or effectively the V out divided by Vs,
+[09:50] we also need to take into account this series resistance.
+[09:54] That means V out divided by Vs will be equal to this AV effective times Z in 1 divided
+[10:04] by Z in 1 plus RS.
+[10:08] So in this way, we can find the overall voltage gain of the multi stage amplifier.
+[10:14] So let us put some number into it and let us understand it through the example.
+[10:19] So in this example, two identical common emitter amplifier stages are cascaded together.
+[10:26] So here the source resistance is 100 ohm while the load resistance RL is equal to 2
+[10:32] ohm.
+[10:34] So for this multi stage amplifier, let us find out the voltage gain V out divided by Vs.
+[10:41] And to find that, first of all, let us find the effective voltage gain of the first amplifier.
+[10:48] So for the first stage, the input impedance of this second stage will act as a load impedance.
+[10:54] That means here, this AV 1 effective will be equal to AV 1 times Z in 2 divided by Z in
+[11:05] 2 plus Z out 1.
+[11:08] That is equal to 100 times 1 kilo ohm divided by 1 kilo ohm plus 2 kilo ohm.
+[11:16] That is equal to 100 divided by 3.
+[11:20] Similarly, let us find out the effective voltage gain of the second amplifier.
+[11:25] So this AV 2 effective will be equal to AV 2 times RL divided by RL plus Z out 2.
+[11:38] That is equal to 100 times 2 kilo ohm divided by 2 kilo ohm plus 2 kilo ohm.
+[11:47] That is equal to 50.
+[11:50] So the overall voltage gain or the effective voltage gain AV effective will be equal to AV 1
+[11:57] effective times AV 2 effective.
+[12:03] That is equal to 100 divided by 3 times 100 divided by 2.
+[12:09] That is equal to 10 to the power 4 divided by 6.
+[12:14] So this effective voltage gain represents the ratio of the V out and the V in 1.
+[12:22] But to find the V out divided by V s, we also need to take into account this series resistor.
+[12:28] That means V out divided by V s can be given as this effective voltage gain times Z in 1
+[12:37] divided by Z in 1 plus RS.
+[12:42] That is equal to 10 to the power 4 divided by 6 times 1 kilo ohm divided by 1 kilo ohm
+[12:49] plus 100 ohm.
+[12:51] And if we calculate it, then this overall voltage gain will come out as 1515.
+[12:59] So instead of getting the gain of 10,000, here we are getting the gain of around 1500.
+[13:05] And that would even further reduce if this source resistor RS is in kilo ohm.
+[13:11] For example, if this source impedance is 5 kilo ohm, then in that case this overall voltage
+[13:17] gain V out divided by V s will be equal to AV effective times 1 kilo ohm divided by 1
+[13:26] kilo ohm plus 5 kilo ohm.
+[13:29] That is equal to 10 to the power 4 divided by 6 times 1 by 6.
+[13:35] That is roughly equal to 278.
+[13:39] So now if you see this voltage gain, then it is much less than the 10,000.
+[13:44] So in such case, when the source impedance is high, then the common collector or the emitter
+[13:50] follower can be used as a first stage for the impedance matching.
+[13:54] Because if you remember, the emitter follower has a high input impedance and the low output
+[13:59] impedance.
+[14:01] So if we just add the common collector stage, just before this common emitter stage, then
+[14:06] we can prevent the reduction in the voltage gain.
+[14:10] Similarly, if the load impedance is very low, then to drive such load, the emitter follower
+[14:16] or the common collector can be used as a last stage.
+[14:20] So depending on the source or the load impedance, the emitter follower can be used as a buffer
+[14:25] at the beginning or at the end of the cascade connection.
+[14:29] But it is never used as a intermediate amplifier, because the gain of this common collector amplifier
+[14:34] is less than unity.
+[14:37] Similarly, at the high frequencies, this common base amplifier can be used as a first stage
+[14:42] for the impedance matching.
+[14:45] But nevertheless, try to find the overall voltage gain of this multi stage amplifier system
+[14:51] once we add this emitter follower at the beginning.
+[14:55] And do let me know your answer in the comment section.
+[14:58] So before ending this video, this is the circuit of the two common emitter amplifiers which
+[15:03] are cascaded together.
+[15:06] So here, this is the first common emitter amplifier and this is the second one.
+[15:12] And they are coupled through the capacitor.
+[15:15] So I hope in this video, you got an overview of the multi stage amplifier and you understood
+[15:21] how the multiple amplifiers can be cascaded together.
+[15:25] So if you have any question or suggestion, do let me know here in the comment section
+[15:29] below.
+[15:30] If you like this video, hit the like button and subscribe to the channel for more such
+[15:33] videos.

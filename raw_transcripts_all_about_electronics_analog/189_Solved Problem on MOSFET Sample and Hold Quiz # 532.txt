@@ -1,0 +1,68 @@
+Title: Solved Problem on MOSFET / Sample and Hold | Quiz # 532
+URL: https://www.youtube.com/watch?v=me38wFPmjME
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel Oil Labored Electronics.
+[00:11] So in this question, we have been given the Samper and Holes circuit and in this circuit
+[00:16] the MOSFET is used as a sewage.
+[00:19] So here for the given MOSFET, we have been asked to find the minimum and the maximum
+[00:23] value of this gate voltage VG that is required for the proper sampling and the holding of
+[00:28] the given circuit.
+[00:30] So let us find that.
+[00:31] So here the given circuit is the Samper and Holes circuit and here this MOSFET is used
+[00:37] as a sewage.
+[00:39] That means whenever this MOSFET is in the on condition and it will act as a closed sewage
+[00:45] and at that time this Samper and Holes will operate in the sample mode.
+[00:50] That means in this condition this V out will follow the input signal and whenever the
+[00:56] MOSFET is in the off condition at that time it will act as a open circuit.
+[01:02] So at that time this hold capacitor will hold the last sampled value and in this way this
+[01:08] given circuit will work as the Samper and Holes.
+[01:12] So in this circuit to use the MOSFET as a sewage, we should know that how to turn on and
+[01:17] of this MOSFET.
+[01:19] Or basically we should know that how to apply the control voltage to the MOSFET such that
+[01:25] it operate as a sewage.
+[01:27] So here whenever the circuit operates in the sampling mode at that time the MOSFET will
+[01:32] remain in the on condition and if you are aware then the MOSFET will remain in the on
+[01:37] condition when the gate to source voltage is more than the threshold voltage.
+[01:43] So here we have been given that the threshold voltage for the MOSFET is equal to 3
+[01:49] so we can say that for the given MOSFET when this VG minus VS is more than 3
+[01:55] volt then the MOSFET will remain in the on condition.
+[01:59] So here to find the minimum value of this gate voltage here we should consider the maximum
+[02:04] value of the source voltage.
+[02:06] So here the maximum value of the source voltage will be same as the maximum value of the input
+[02:12] voltage because it is quite possible that during the previous hold mode the voltage across
+[02:17] this capacitor or the voltage at the source terminal is equal to VI max.
+[02:25] And here we have been given that the input voltage range is between plus minus 10 volt.
+[02:31] So we can say that here the maximum value of the input voltage is equal to plus 10 volt.
+[02:37] And the same will be the maximum value of the source voltage.
+[02:41] So we can say that over here this VG minus 10 volt should be more than 3 volt or we
+[02:47] can say that this gate voltage should be more than 13 volt.
+[02:52] That means during the sampling the gate voltage should be more than the 13 volt.
+[02:58] That means the minimum required value for the gate voltage is equal to 13 volt or we
+[03:03] can say that this VG minimum is equal to 13 volt.
+[03:10] So similarly now let us find the maximum value of the gate voltage and that will occur
+[03:15] during the hold mode.
+[03:17] So during the hold mode this MOSFET will remain in the off condition and we know that that
+[03:23] will happen whenever the voltage VG is less than the threshold voltage or we can say that
+[03:30] this VG minus VS is less than threshold voltage.
+[03:34] So here to find the maximum value of the gate voltage we should consider the minimum value
+[03:39] of the source voltage.
+[03:42] Because here even if the source voltage is at the minimum voltage in that condition also
+[03:47] this MOSFET should remain in the off condition.
+[03:50] For example if the voltage VS is equal to minus 5 volt in that condition this voltage VG
+[03:57] should be less such a way that this MOSFET remains in the off condition.
+[04:02] But here as we know the input voltage range is between plus minus 10 volt.
+[04:08] That means here this VI minimum is equal to minus 10 volt and therefore the minimum
+[04:16] value of the source voltage will also be equal to minus 10 volt.
+[04:21] So in this condition also the value of the gate voltage should be such that the MOSFET
+[04:25] remains in the off condition.
+[04:28] So here if you put the value of the VS minimum as the minus 10 volt and here these VG minus
+[04:36] 10 volt should be less than 3 volt or we can say that this VG should be less than minus
+[04:42] 7 volt.
+[04:44] So from this we can say that here the value of the gate voltage should be less than minus
+[04:49] 7 volt because if it is more than that then the MOSFET will not go in the off condition.
+[04:55] So we can say that here this VG max is equal to minus 7 volt and earlier we have seen
+[05:03] that this VG minimum is equal to 13 volt.
+[05:10] That means during the sampling time the control voltage should be at least 13 volt and during
+[05:15] the whole period this control voltage VG should not be more than minus 7 volt.
+[05:21] So from this we can say that for the given question this V is the correct answer.

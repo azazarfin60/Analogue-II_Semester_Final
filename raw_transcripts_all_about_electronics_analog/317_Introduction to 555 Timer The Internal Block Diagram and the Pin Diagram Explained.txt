@@ -1,0 +1,160 @@
+Title: Introduction to 555 Timer: The Internal Block Diagram and the Pin Diagram Explained
+URL: https://www.youtube.com/watch?v=EGmreVQ-yNM
+Source: Local Whisper (base)
+
+[00:00] Hey friends, welcome to the YouTube channel All About Electronics.
+[00:16] In this video, we will briefly learn about the Triple Phi Timer IC.
+[00:20] Now this Triple Phi Timer IC is very popular IC and it is very useful in the timing related
+[00:26] applications.
+[00:27] For example, whenever it is used as a relaxation oscillator, then it can be used as a tone generator
+[00:33] or the alarm generator.
+[00:35] And even it can be used for the frequency division or for generating the timing delays.
+[00:41] Now this Triple Phi Timer IC is available in so many packages.
+[00:45] But here we are going to talk about the 8 pin VIP package.
+[00:50] So if you see the pin diagram, then the pin diagram will look like this.
+[00:55] And here is the corresponding name of the H pin.
+[00:59] So let us briefly see the description of each pin and let us also see the internal block
+[01:04] diagram of this Triple Phi Timer.
+[01:06] So this is the internal block diagram of this Triple Phi Timer IC.
+[01:10] So if you see this block diagram, the many blocks or components are used for this Triple
+[01:15] Phi Timer.
+[01:16] The first one is the voltage divider circuit.
+[01:19] Then the next block is the comparators.
+[01:23] And if you see the output of the comparator is going to the flip flop circuit.
+[01:28] So the flip flop is the third block.
+[01:30] Then there is a discharge circuit for the discharging purpose.
+[01:34] And then after the last block is the output driver circuit.
+[01:37] So these are the basic blocks of this Triple Phi Timer IC.
+[01:41] So one by one, we will see the function of each block.
+[01:44] And at the same time, we will also understand the purpose of individual pins.
+[01:48] Now here the purpose of this pin number 1, 3 and 8 is pretty straightforward.
+[01:53] So let us first of all talk about these three pins.
+[01:56] So in this Triple Phi Timer IC, the pin number 8 is the supply voltage pin.
+[02:01] And usually the supply voltage in the range of 4.5 to 15 volt is applied at this pin.
+[02:07] And the pin number 1 is the ground pin.
+[02:11] And it is connected to the circuit ground.
+[02:14] And then if you see the third pin, then the pin number 3 is the output pin.
+[02:19] So this pin is capable of driving the TTL loads.
+[02:22] And it can source or sync up to the 200 milliampere of current.
+[02:27] Now to understand the purpose of the rest of the pins, first of all, let us understand
+[02:31] the working of each block.
+[02:33] So like I said, the first block of this Triple Phi Timer IC is the voltage divided circuit.
+[02:39] Now if you see over here, the voltage at two nodes are going to the comparator.
+[02:46] And here we are assuming that the op-amp which is used as a comparator is an ideal op-amp.
+[02:52] So no current is flowing into the op-amp terminals.
+[02:55] So we can say that from the supply voltage, the current is flowing only through these
+[02:59] three resistors.
+[03:01] And that is why we can directly apply the voltage divided rule.
+[03:05] So by applying the rule, we can say that the voltage at this node will be equal to 2R
+[03:12] divided by 2R plus R times the supply voltage.
+[03:15] Or we can say that the voltage at this node is equal to 2 by 3VCC.
+[03:21] And this voltage is given as a reference to this first comparator.
+[03:25] Similarly, the voltage at this node can be found using the voltage divided rule.
+[03:31] So the voltage at this node will be equal to R divided by R plus 2R times VCC.
+[03:37] Or we can say that it is equal to 1 by 3VCC.
+[03:41] And this voltage is given as a reference to this second comparator.
+[03:48] Now if you see over here, the other two pins which is going to this comparator is the threshold
+[03:53] and the trigger pins.
+[03:55] So these two pins are the input pins.
+[03:58] And by changing the voltage at these two pins, we can change the output of this comparator.
+[04:05] So if you see over here, the inverting node of this first comparator is at the 2 by 3VCC
+[04:11] voltage.
+[04:12] So whenever this threshold voltage goes about this 2 by 3VCC voltage, then the output
+[04:17] of the comparator will become high voltage.
+[04:20] And similarly if we talk about this second comparator, then whenever this trigger input goes
+[04:26] below this 1 by 3VCC voltage, at that time the output of the second comparator will become
+[04:32] high voltage.
+[04:34] So usually this trigger voltage used to be at the supply voltage.
+[04:38] And whenever we want to change the state of this comparator, then the trigger signal is
+[04:43] changed in a such a way that the output at this pin number 2 goes below this 1 by 3VCC
+[04:49] voltage.
+[04:50] Now let us see whenever the output of this comparator changes, then how it affects the other
+[04:55] circuitry.
+[04:56] So if you see, the output of this comparator is given to the flip flop circuit.
+[05:02] So if you observe over here, the use flip flop in this triple for timer, I say is the RS
+[05:06] flip flop.
+[05:07] So let us see the root table of this RS flip flop.
+[05:11] Now as this RS flip flop is a digital circuit, so we are considering the input voltage to
+[05:16] this flip flop as either logic 1 or logic 0.
+[05:20] So from the root table as you can see whenever both inputs are logic 0, then the output
+[05:26] of this flip flop will be same as the previous state.
+[05:30] It means that before applying these two inputs, if previously the output is either 0 or 1,
+[05:36] then after applying these two inputs, the output will remain the same.
+[05:40] On the other end, if the input to this SR flip flop are 0 and 1 respectively, at that
+[05:46] time irrespective of the previous output, the flip flop will get reset to the logic 0.
+[05:52] And likewise whenever S is 1 and RS 0 and irrespective of the previous states of this flip
+[05:59] flop, the flip flop will get set to the logic 1.
+[06:04] And whenever both inputs are logic 1, at that time the output is undefined.
+[06:10] So over here, we are only interested in these two conditions.
+[06:14] So for a moment, let us assume that this trigger signal is at a VCC voltage.
+[06:19] It means that the output of the second comparator is at logic 0 or we can say that this S is
+[06:26] equal to 0.
+[06:28] Now initially let us assume that this threshold voltage is less than this reference voltage
+[06:33] that is 2 by 3 VCC and at that time the output of this first comparator will be also equal
+[06:39] to 0.
+[06:40] So in this case, the output of the flip flop will remain as it is.
+[06:44] Now whenever this threshold voltage goes above this 2 by 3 VCC voltage, then the output
+[06:50] of the first comparator will become logic 1.
+[06:54] So at that time the output of the flip flop will be equal to 0.
+[06:58] So irrespective of the previous state, now the output of the flip flop is 0.
+[07:03] And because of that, the output of this triple-valid timer will also become 0.
+[07:08] So by this threshold voltage, we are controlling the output voltage and same is to with this
+[07:14] trigger pin.
+[07:15] So let us say the voltage at this threshold pin is less than this 2 by 3 VCC voltage.
+[07:21] That means the output of the first comparator is low voltage.
+[07:25] Now whenever this trigger signal goes below this 1 by 3 VCC voltage, then the output of
+[07:30] the second comparator will become high.
+[07:34] So in this case, S will become 1 and R will be equal to 0.
+[07:40] So this flip flop will get set to the logic 1.
+[07:44] And in a way, the output will also get set to the logic 1.
+[07:49] So using this threshold and the trigger pins, actually we are controlling the output voltage.
+[07:55] And in a way, we are controlling the timing of this output signal.
+[07:59] So to change the input voltage to this threshold pin, the external resistor and the capacitors
+[08:03] are connected between this threshold and the discharge pin through the supply voltage.
+[08:08] And the same is true with the trigger signal.
+[08:11] Then there is a one more pin using which we can also control the timing.
+[08:15] And that pin is the pin number 5.
+[08:18] So this pin is known as the control pin.
+[08:20] And it is directly connected to the inverting terminal of the first comparator.
+[08:25] Now if you see the inverting terminal of this first comparator, there is a reference voltage
+[08:30] of 2 by 3 VCC is applied using this voltage divider circuit.
+[08:34] So by default, the reference voltage to the first comparator is 2 by 3 VCC.
+[08:39] But using this control pin, we can externally apply some other reference voltage.
+[08:44] And by which we can change the timing of the output signal.
+[08:48] So using this control threshold and the trigger pins, we can change the timing of the output
+[08:53] signal.
+[08:54] Now like I said before, to change the input at this threshold pin, the external resistor
+[08:59] on the capacitors are connected between this threshold and the discharge pin.
+[09:04] So this discharge pin helps the capacitor in the discharging whenever the output is
+[09:09] in a low state.
+[09:10] So let us understand how this transistor will help the capacitor in the discharging.
+[09:17] So let's say the output of this triple-fat timer is 0V.
+[09:21] It means that this Q bar signal will be equal to 1.
+[09:25] Because here, this output driver circuit is the inverting circuit.
+[09:29] So as this Q bar is 1, so the base of this transistor will be at a high voltage.
+[09:36] So here, this transistor acts like a switch.
+[09:39] So whenever the input to this transistor is logic 1, then it will act as a closed switch
+[09:45] and it will offer a very low impedance to this capacitor.
+[09:48] So through this path, the capacitor will get discharged.
+[09:53] On the other hand, whenever this Q bar is 0 or let's say the output is high at that
+[09:58] time, the input to this transistor will be equal to 0.
+[10:03] So this transistor will act as an open switch.
+[10:06] So in that case, this transistor will provide a high impedance to this capacitor and the
+[10:12] last pin which is remained is this reset pin.
+[10:16] Now this reset pin is the logic 0 pin.
+[10:19] It means that whenever a logic 0 is applied to this pin, then the flip flop of this triple-fat
+[10:25] timer will get reset.
+[10:27] And in a way, we can say that the output of the triple-fat timer will also get reset.
+[10:32] So irrespective of the working of this triple-fat timer, whenever this reset pin goes low,
+[10:37] then the output of this triple-fat timer will become 0V.
+[10:40] Or we can say that the triple-fat timer will get reset.
+[10:45] So whenever this pin is not in a use, then it should be connected to the supply voltage.
+[10:51] So in this way, in this triple-fat timer, I see by changing the inputs, we can control
+[10:56] the timing of the output signal.
+[10:58] And by connecting the external components like resisted on the capacitor, this triple-fat
+[11:03] timer can be configured either as a A stable, mono stable and by stable multivariator.
+[11:09] So in the future videos, we will see that by connecting the external components, how
+[11:13] this triple-fat timer can be configured either as A stable, mono stable and by stable multivariator.
+[11:20] So if you have any question or suggestion, do let me know in the comment section below.
+[11:24] If you like this video, hit the like button and subscribe with a channel for more such
+[11:27] videos.

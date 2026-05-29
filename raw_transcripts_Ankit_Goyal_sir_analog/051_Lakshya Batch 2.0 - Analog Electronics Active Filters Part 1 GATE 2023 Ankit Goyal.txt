@@ -1,0 +1,1855 @@
+Title: Lakshya Batch 2.0 - Analog Electronics | Active Filters | Part 1 | GATE 2023 | Ankit Goyal
+URL: https://www.youtube.com/watch?v=uyNkaSlDBfE
+Source: Local Whisper (GPU Translation)
+
+[00:00] Good morning everyone.
+[00:12] A very good morning to all of you.
+[00:14] We are live.
+[00:15] We are back on the Creatrix YouTube Channel.
+[00:17] My dear friends, with the Lakshya Batch 2.0 Analog Electronics.
+[00:21] And as you know, we are slowly moving towards the end of Analog.
+[00:26] And today I am going to start a new topic which I will cover for you in two sessions.
+[00:31] That is the Active Filters.
+[00:34] If we talk in the syllabus of the gate, it is mentioned that Butterworth and the Salon filters.
+[00:40] Those are called as the Active Filters.
+[00:42] So today we will talk about Active Filters.
+[00:45] So if you have attended my course in the network before,
+[00:49] then you must have seen that I have covered a topic, passive filters.
+[00:53] That means those filters which are made from your passive devices like resistance,
+[00:58] capacitance, inductance.
+[01:00] So I have covered the passive filter there.
+[01:03] But now you will see how filters are made with the help of O-Pamp.
+[01:07] O-Pamp is an active device.
+[01:09] Because you do biasing in O-Pamp.
+[01:11] O-Pamp is capable of amplifying a signal.
+[01:14] So it is an active device.
+[01:16] So the filters made with the help of these active devices are said to be active filters.
+[01:21] So today our discussion will be dedicated for those active filters.
+[01:25] And at the end of this session, I will also make you questions about the active filters.
+[01:30] Which you have cracked very easily.
+[01:32] And after that you will feel that yes, we have become experts in filters.
+[01:37] Okay, so let's start then.
+[01:39] Quickly mark your attendance once.
+[01:42] Like the session.
+[01:44] You have to put your attendance.
+[01:46] Come on everybody.
+[01:47] Let's go.
+[01:48] So let's start.
+[01:50] Filter.
+[01:51] So what is a filter thing?
+[01:53] This is not the filter that comes into the work of filtering water in the house.
+[01:57] But the concept is the same.
+[01:59] If we talk about filter in general sense,
+[02:02] what happens is that it passes some things and stops some things.
+[02:06] Right?
+[02:07] Now think of a simple thing.
+[02:09] What does a water filter do?
+[02:11] It stops impurities from the water.
+[02:13] And it passes pure water forward.
+[02:16] So what do you get on the output?
+[02:18] Pure water.
+[02:19] So every device can be called a filter.
+[02:22] Which is letting some things pass.
+[02:24] And while it is stopping the other things.
+[02:27] So what is the meaning of filter in Electrical Electronics?
+[02:31] The meaning of filter is in Electrical Electronics.
+[02:35] Such a circuit which stops some frequency signals.
+[02:41] For example, if you are applying sine omega t,
+[02:44] for some values of omega,
+[02:46] this sine omega t input will not reach the output.
+[02:50] And there will be some such frequencies,
+[02:53] there will be some such values of omega.
+[02:55] On which this signal will be able to reach the output.
+[02:59] So the signal wants to go from input to output.
+[03:02] So it will be able to go for some range of frequencies.
+[03:05] And it will not be able to go for some range.
+[03:08] So that sort of a circuit,
+[03:10] that sort of a system is called as a filter.
+[03:14] So what are we saying?
+[03:17] What is a filter?
+[03:19] Filter is a circuit.
+[03:22] Wait, the thickness of the pen is a little less.
+[03:26] Filter is a circuit that passes
+[03:37] that passes
+[03:41] certain range of frequencies.
+[03:46] So actually frequency does not pass.
+[03:49] What is pass?
+[03:50] That frequency has a sinusoidal signal
+[03:54] that passes certain range of frequencies
+[03:57] while it stops other range of frequencies.
+[04:05] Or it stops other frequencies.
+[04:09] Okay.
+[04:11] Now see,
+[04:13] the frequencies which pass a filter,
+[04:17] the frequencies or the signals of the frequencies
+[04:22] are called as pass band.
+[04:25] What are they called?
+[04:26] Pass band.
+[04:27] And the frequencies which stop it,
+[04:30] they are said to be stop band.
+[04:33] They are talking about range of frequencies.
+[04:35] The range of frequencies can be called as band.
+[04:38] So what are we saying?
+[04:41] Range of frequencies
+[04:45] that can be
+[04:48] that can be
+[04:53] passed
+[04:55] by a filter
+[05:00] are said to lie
+[05:03] are said to lie
+[05:10] in pass band
+[05:14] and the frequencies
+[05:17] and the frequencies
+[05:22] being stopped
+[05:27] are said to lie
+[05:31] in stop band.
+[05:32] I am telling you basic things.
+[05:34] So the frequencies which pass pass band
+[05:37] and the ones which do not pass
+[05:39] are called as stop band.
+[05:42] So pass band and stop band
+[05:44] are seen in two range of frequencies in a filter.
+[05:48] Now see how many types of filters are there?
+[05:52] How many types of filters are there?
+[05:55] One is called low pass filter.
+[05:58] This filter is the one
+[06:00] that passes the small frequencies
+[06:02] or the low frequencies.
+[06:05] But as soon as the frequency of the signal is high,
+[06:08] it stops it.
+[06:11] It stops it.
+[06:13] Second one.
+[06:16] High pass filter.
+[06:20] High pass filter.
+[06:23] It will pass the high frequencies.
+[06:26] It will stop the small.
+[06:28] Band pass filter.
+[06:30] What does it do?
+[06:32] There are two thresholds
+[06:34] between two frequencies.
+[06:36] It passes the frequencies
+[06:38] between two frequencies
+[06:40] and stops the rest of the frequencies.
+[06:44] I mean as I said
+[06:46] it will pass
+[06:48] from 50 Hz to 50 kHz.
+[06:50] It will stop the frequencies
+[06:52] left and right of it.
+[06:54] That is a band pass filter.
+[06:56] Fourth one.
+[06:58] Band reject filter.
+[07:00] Which is just the opposite of the band pass.
+[07:03] It stops all the frequencies
+[07:06] between two frequencies
+[07:09] and passes the frequencies
+[07:11] left and right of it.
+[07:14] And fifth one.
+[07:16] All pass filter.
+[07:18] Like
+[07:20] it passes all the frequencies
+[07:23] without any attenuation.
+[07:26] I mean there is no difference.
+[07:28] The frequency is big and small.
+[07:30] All the frequencies are passing by.
+[07:33] How does it gain on different frequencies?
+[07:37] Like you know amplifier.
+[07:39] You have read the frequency response of amplifier
+[07:41] in BJT,
+[07:43] in MOSFET,
+[07:45] in O-Pamp.
+[07:47] What do you see there?
+[07:49] You see the gain versus frequency.
+[07:51] So we are saying
+[07:53] all pass filters
+[07:55] give equal gain to all frequencies.
+[07:57] So in one way
+[07:59] the ideal amplifier is done.
+[08:01] That all the frequencies are amplified.
+[08:03] But
+[08:05] do not attenuate any frequency.
+[08:07] Look when we read
+[08:09] the amplifier of BJT or MOSFET
+[08:11] why we were worried
+[08:13] that we were getting less gain
+[08:15] on low frequency and high frequency.
+[08:17] We wanted
+[08:19] to get equal gain on frequencies.
+[08:21] So who will be able to do that?
+[08:23] All pass filter.
+[08:25] So all pass filter is an ideal amplifier
+[08:27] with no frequency limitation.
+[08:29] It gives equal gain
+[08:31] to all frequencies.
+[08:33] That means low frequency, mid frequency,
+[08:35] high frequency is no problem.
+[08:37] How will its response be?
+[08:39] It will be flat.
+[08:41] Do you understand?
+[08:43] So it can amplify all frequencies
+[08:45] equally.
+[08:47] We are not going to change the gain
+[08:49] with frequency.
+[08:51] And
+[08:53] do you know what is the other thing?
+[08:55] Even if its gain is independent
+[08:57] from frequency.
+[08:59] But it gives phase shift.
+[09:01] It gives phase shift.
+[09:03] I will teach you this.
+[09:05] I will cover this filter in tomorrow's class.
+[09:07] So
+[09:09] it will provide you a phase shift.
+[09:11] So the magnitude of gain is constant.
+[09:13] But phase shift is not constant.
+[09:15] It is not.
+[09:17] Do you understand?
+[09:19] As soon as I wrote all pass filter,
+[09:21] I got a doubt.
+[09:23] First of all, listen to the whole thing.
+[09:25] It is a doubt.
+[09:27] It is clear.
+[09:29] Now the point is
+[09:31] why the active filter came?
+[09:33] We had read the money filter in the network.
+[09:35] The filter was being made with the help of RLC.
+[09:37] So what was the need
+[09:39] to apply opamp?
+[09:41] It is permissible.
+[09:43] So
+[09:45] what is the need to apply opamp?
+[09:47] The first thing is
+[09:51] gain and frequency
+[09:53] adjustment is possible.
+[10:05] The point is
+[10:07] you can control the opamp
+[10:09] gain.
+[10:11] How can you control
+[10:13] by means of resistance?
+[10:15] Opamp are small.
+[10:17] Even with opamp
+[10:19] you will have to apply RLC.
+[10:21] It is not that opamp
+[10:23] will give you a filter response.
+[10:25] The point is
+[10:27] when it can only work with RC
+[10:29] then additionally why did you apply opamp?
+[10:31] Is opamp small or big?
+[10:33] The expense is increased.
+[10:35] So what is here?
+[10:37] You can adjust the gain and frequency.
+[10:39] You can change the opamp
+[10:41] by controlling the resistance.
+[10:43] So you can control
+[10:45] the unit gain frequency.
+[10:47] The second thing
+[10:51] is
+[10:53] no loading effect
+[10:55] while cascading.
+[10:57] The input current of opamp
+[10:59] is zero.
+[11:01] So if you
+[11:03] do cascading of different filters
+[11:05] then you will not get a loading effect.
+[11:07] What happens many times?
+[11:09] As you will see in today's lecture
+[11:11] that to make band pass and band reject filter
+[11:13] we need
+[11:15] more filter.
+[11:17] So your
+[11:19] loading effect ends there.
+[11:21] So this is also one benefit
+[11:23] for you.
+[11:25] The second thing is that you can apply
+[11:27] any load on opamp.
+[11:29] There is no limitation of loading.
+[11:31] That is, any current you want
+[11:33] opamp can deliver any amount of
+[11:35] current.
+[11:37] It is very clear.
+[11:39] The biggest reason for going on active filters
+[11:41] is the first reason
+[11:43] that you can adjust
+[11:45] the gain and the frequency of
+[11:47] the amplifier or say
+[11:49] gain and the frequency of the filter.
+[11:51] Usually
+[11:53] the maximum
+[11:55] gain of the passive filter
+[11:57] is one.
+[11:59] That is, it cannot
+[12:01] amplify any signal.
+[12:03] Either it will pass it
+[12:05] or stop it.
+[12:07] But it cannot amplify.
+[12:09] But in opamp, you can decide
+[12:11] if you wish to amplify.
+[12:13] But if there is a filter, why do you amplify?
+[12:15] Look, what happens?
+[12:17] For example, there is a low pass filter.
+[12:19] The work of the low pass filter is
+[12:21] to pass the low frequencies
+[12:23] and stop the high.
+[12:25] Now usually what happens
+[12:27] on high frequencies is noise.
+[12:29] So it will stop the noise
+[12:31] but if you amplify
+[12:33] the low frequency signal,
+[12:35] what is the benefit? Finally,
+[12:37] the output you get
+[12:39] is your main signal.
+[12:41] The signal of your information
+[12:43] which is the low frequency signal
+[12:45] will be amplified.
+[12:47] That is, its quantity, its magnitude
+[12:49] will increase and your high
+[12:51] frequency noise will be suppressed.
+[12:53] So not just reject some signal
+[12:55] or some frequency, but
+[12:57] increase the amplitude
+[12:59] and increase the amplitude.
+[13:01] That is, the quantity
+[13:03] or the desirable frequency
+[13:05] can be boosted by changing
+[13:07] the gain of the amplifier.
+[13:09] Is it clear?
+[13:11] Yes, it is clear.
+[13:13] Now let's start
+[13:15] the first order
+[13:17] Butterworth Low Pass Filter.
+[13:19] So what is the meaning
+[13:21] of the first order Butterworth Low Pass Filter?
+[13:23] What is the meaning of Low Pass Filter?
+[13:25] That it will
+[13:27] pass
+[13:29] low frequencies
+[13:31] and
+[13:33] make a detailed analysis
+[13:35] and
+[13:37] attenuates
+[13:43] high frequencies.
+[13:45] It will pass
+[13:47] low frequencies
+[13:49] and attenuates
+[13:51] high frequencies.
+[13:53] Okay?
+[13:55] What is the meaning of this?
+[13:57] Reduce the amplitude.
+[13:59] Okay?
+[14:01] Ravi Teja, my PYQ
+[14:03] has an electrical EC cover.
+[14:05] Not IN.
+[14:07] And subject-by-subject playlists
+[14:09] like analog playlists
+[14:11] will have an EC-electrical
+[14:13] and both the questions will be mixed.
+[14:15] But for all the years.
+[14:17] Okay?
+[14:19] So what frequency
+[14:21] will it pass to
+[14:23] means the maximum frequency
+[14:25] that this filter will pass
+[14:27] will be called as a cut-off
+[14:29] frequency.
+[14:33] The maximum
+[14:37] frequency
+[14:41] that can be passed
+[14:43] is called
+[14:53] cut-off frequency.
+[15:03] Okay?
+[15:05] What did you say? Cut-off frequency.
+[15:07] Now here
+[15:09] you will understand one thing
+[15:11] how to do this analysis.
+[15:13] If you look carefully
+[15:15] this is a non-inverting amplifier
+[15:17] because here
+[15:19] which terminal is connected
+[15:21] to the non-inverting terminal?
+[15:23] Actually filters
+[15:25] and non-inverting can be made in both ways.
+[15:27] What I am making you today
+[15:29] is non-inverting.
+[15:31] In tomorrow's lecture, I will make you
+[15:33] an inverting filter and a saline filter.
+[15:35] So today I will make the
+[15:37] non-inverting version of Butterworth.
+[15:39] Okay?
+[15:45] Okay, let's go.
+[15:47] Now how to
+[15:49] do this analysis?
+[15:51] First of all
+[15:53] write capacitor
+[15:55] 1 by SC.
+[15:57] Now you know
+[15:59] zero current goes in OPAM
+[16:01] so these two
+[16:03] capacitors and resistors are in series.
+[16:05] So if I ask you
+[16:07] that tell me the positive V.
+[16:09] Tell me the positive V.
+[16:11] Tell me the positive V.
+[16:13] So what will you write?
+[16:15] VI
+[16:17] into 1 by SC
+[16:19] R plus
+[16:21] 1 by
+[16:23] SC.
+[16:25] Okay? R plus 1 by
+[16:27] SC.
+[16:29] Which video is
+[16:31] private, Ritesh?
+[16:33] Because if any video was private
+[16:35] then what would have been told?
+[16:37] VI over
+[16:39] 1 plus
+[16:41] SC.
+[16:43] This is done.
+[16:45] Now here, dear, here
+[16:47] we have to take out V0.
+[16:49] If you get the positive terminal voltage
+[16:51] then here
+[16:53] you can take out V0 by multiplying it.
+[16:55] Okay?
+[16:57] By multiplying it with the gain of the
+[16:59] non-inverting amplifier.
+[17:01] Okay?
+[17:03] So what will you write?
+[17:05] V positive
+[17:07] into 1 plus R2 by
+[17:09] R dash.
+[17:13] Okay?
+[17:15] So see here the gain is
+[17:17] VI
+[17:19] over 1 plus SC
+[17:21] R
+[17:23] 1 plus R2 by
+[17:25] R dash.
+[17:27] Or you can write Rf by R1
+[17:29] whatever you want to give
+[17:31] the gain.
+[17:33] So here the gain
+[17:35] of the filter
+[17:37] is called gain, transfer function
+[17:39] is called
+[17:41] 1 plus R2 by R dash
+[17:43] divided by
+[17:45] 1 plus SC
+[17:47] R.
+[17:49] And those who recognize the low pass filter
+[17:51] they also recognize that when
+[17:53] the 1 plus SCR comes down
+[17:55] then it means it is a low pass
+[17:57] kind of a filter.
+[17:59] So I had studied in BJT
+[18:01] low pass and high pass filter.
+[18:03] Remember when low frequency response
+[18:05] was done?
+[18:07] It is acting like a high pass filter
+[18:09] and when high frequency response
+[18:11] was done?
+[18:13] It is acting like a low pass type
+[18:15] of a filter.
+[18:17] Now here you see
+[18:19] write the gain
+[18:21] A
+[18:23] by
+[18:25] 1 plus
+[18:27] SCR
+[18:29] where A
+[18:31] is 1 plus
+[18:33] R2 by R dash.
+[18:35] Basically the gain of
+[18:37] non-inverting amplifier is this.
+[18:39] Now see this gain
+[18:41] you can take it in omega domain
+[18:43] in frequency domain.
+[18:45] So you can write
+[18:47] 1 plus j omega
+[18:49] C
+[18:51] R.
+[18:53] So do you know how to write this?
+[18:55] 1
+[18:57] plus j
+[18:59] omega by
+[19:01] omega H.
+[19:03] Okay?
+[19:05] Omega by omega H
+[19:07] where omega H is
+[19:09] 1 by
+[19:11] RC.
+[19:13] So see when you take out
+[19:15] the magnitude of the gain
+[19:19] then this comes.
+[19:21] Now
+[19:23] you don't have to
+[19:25] tell this.
+[19:27] The cutoff frequency is
+[19:29] where the gain is 1 by
+[19:31] R2 times.
+[19:33] Cutoff frequency
+[19:35] is the frequency at which
+[19:37] the gain becomes
+[19:39] 1 by R2 times
+[19:41] the maximum value.
+[19:43] So at cutoff
+[19:45] frequency
+[19:47] gain
+[19:49] equal to
+[19:53] maximum
+[19:55] gain by root 2
+[19:57] then this comes.
+[19:59] Omega equal to omega H
+[20:01] 1 by RC
+[20:03] i.e.
+[20:05] cutoff frequency if you take it in hertz
+[20:07] then this becomes
+[20:09] 1 by
+[20:11] 2 by
+[20:13] RC.
+[20:15] Now tell everyone
+[20:17] quickly.
+[20:19] That cutoff frequency
+[20:21] came.
+[20:23] Do you remember this work in BJT MOSFET?
+[20:25] Capacitor
+[20:27] you said that
+[20:29] we will take out the resistance
+[20:31] then 1 by RC
+[20:33] or 1 by 2 by RC
+[20:35] we can calculate the
+[20:37] cutoff frequency.
+[20:39] We can calculate the cutoff
+[20:41] frequency.
+[20:43] So what did you get?
+[20:45] This becomes the
+[20:47] cutoff frequency
+[20:49] of
+[20:51] low pass filter.
+[20:53] Okay?
+[20:55] Now
+[20:57] look at this low pass
+[20:59] how we checked this or how
+[21:01] you can check it.
+[21:03] So you can say here
+[21:05] that the mode of
+[21:07] gain
+[21:09] is A by
+[21:15] 1 plus
+[21:17] omega
+[21:19] upon omega H
+[21:21] Now here
+[21:23] when you say omega is
+[21:25] much much less than omega H
+[21:27] i.e. take a very small frequency
+[21:29] then
+[21:31] the mode of gain A will come.
+[21:33] In comparison to 1
+[21:35] ignore omega by omega H
+[21:37] and if you say
+[21:39] omega is much much greater than
+[21:41] omega H
+[21:43] it will almost be 0.
+[21:45] So what do you understand from this?
+[21:47] that the small frequencies
+[21:49] are getting the gain offer
+[21:51] and the big frequency
+[21:53] is not getting the gain offer.
+[21:55] The big frequency
+[21:57] is not getting the gain offer.
+[21:59] Look at the other thing, along with the
+[22:01] gain you can also take out the phase here.
+[22:03] 1 upon
+[22:05] you read in the control system
+[22:07] minus tan inverse
+[22:09] omega by omega H
+[22:11] So along with the gain
+[22:13] you can also take out the phase.
+[22:15] Or those who have read the signal system
+[22:17] they will know that in the signal system
+[22:19] when we talk about Fourier
+[22:21] then we see two things
+[22:23] magnitude and phase.
+[22:25] Magnitude i.e. you call the gain
+[22:27] magnitude response and the phase
+[22:29] graph that is called as the phase
+[22:31] response.
+[22:33] And even when you read the control system
+[22:35] then in the bode plot there are two graphs
+[22:37] magnitude plot and the phase
+[22:39] plot. So actually
+[22:41] do you know that the graphs for filters
+[22:43] they are always
+[22:45] drawn as a bode plot.
+[22:47] What does bode plot mean?
+[22:49] That we take the gain in the log
+[22:51] versus the log of frequency.
+[22:53] So see what happens here
+[22:55] actually when we plot
+[22:57] here
+[22:59] we take the gain in db.
+[23:01] The gain in db means
+[23:03] 20 log on a base
+[23:05] of 10
+[23:07] mod gain
+[23:09] versus here we take the log
+[23:11] of frequency on x axis.
+[23:13] Okay?
+[23:15] Why is the log of frequency
+[23:17] considered here?
+[23:19] To cover
+[23:21] wide range of frequencies
+[23:23] we have to cover more range.
+[23:25] I mean
+[23:27] I have to go to 1
+[23:29] megahertz with 1 hertz.
+[23:31] So if I plot
+[23:33] on a normal graph
+[23:35] from 10 to power 6
+[23:37] on a normal graph
+[23:39] if you start going from 1
+[23:41] to 10 to power 6
+[23:43] then leave the graph on the graph.
+[23:45] The notebook of the graph will be small.
+[23:47] If you buy the notebook of the whole shop
+[23:49] then it will be less.
+[23:51] It is such a big value.
+[23:53] But when you take it in the log
+[23:55] what is log of 1 is 0
+[23:57] and log of 10 to power 6 is 6.
+[23:59] So we can go from 0 to 6.
+[24:01] That is why we use the bodes.
+[24:03] Now here you see
+[24:05] that the transfer function
+[24:07] that you have got
+[24:09] here you get a pole.
+[24:11] Do you know the first order?
+[24:13] Because this is the first order transfer function.
+[24:15] Or you can say
+[24:17] this is the pole of the first order
+[24:19] at s equal
+[24:21] to minus 1 by rc.
+[24:23] So whenever
+[24:25] the pole comes
+[24:27] the slope in the bode
+[24:29] that is minus
+[24:31] 20 dB per decade.
+[24:33] But you pay attention here.
+[24:35] Minus 20 N is written.
+[24:37] N means
+[24:39] order of filter.
+[24:41] Order of
+[24:43] filter.
+[24:47] So for the first order filter
+[24:55] what will be the slope?
+[24:57] Minus
+[24:59] 20 dB per decade.
+[25:01] When we look at
+[25:03] the bode plot in filters
+[25:05] the slope
+[25:07] we call it the roll-off factor.
+[25:09] What do we call it?
+[25:11] Roll-off factor.
+[25:13] So the roll-off factor is always
+[25:15] minus 20 N dB per decade.
+[25:17] That is
+[25:19] N is the order of the filter.
+[25:21] So if you make the second order filter
+[25:23] then minus 40 will come.
+[25:25] If you make the third order filter
+[25:27] then minus 40 will come.
+[25:29] But if you look at the ideal
+[25:31] response here
+[25:33] if you talk about the ideal
+[25:35] understand its significance.
+[25:37] If we talk about an ideal low pass filter
+[25:39] then
+[25:41] do you know how its response
+[25:43] becomes?
+[25:45] In an ideal low pass filter
+[25:47] what happens
+[25:49] that some frequency
+[25:51] passes to some extent
+[25:53] and then suddenly
+[25:55] it becomes.
+[25:57] So here you know how the response comes
+[25:59] that see
+[26:01] the frequency passes to some extent
+[26:03] in a lot of fun.
+[26:05] Low pass filter passes from zero
+[26:07] and suddenly
+[26:09] it comes to the cutoff frequency
+[26:11] from zero.
+[26:19] So here you see
+[26:21] this is
+[26:23] abrupt jump.
+[26:25] Now if you want
+[26:27] then make this characteristic
+[26:29] but it cannot be made.
+[26:31] Practically this cannot happen.
+[26:33] That is why
+[26:35] the more steep it is
+[26:37] the closer it will go.
+[26:39] If it is going down
+[26:41] slowly and suddenly
+[26:43] then there is a lot of difference in both.
+[26:45] If it goes down suddenly
+[26:47] or goes down faster
+[26:49] then it will be near.
+[26:51] If you increase the order of filter
+[26:53] then you increase the role of factor
+[26:55] or say you increase the slope
+[26:57] and hence you closely
+[26:59] approach an ideal
+[27:01] filter.
+[27:03] Because if you want a sharp
+[27:05] like this band will be called
+[27:07] pass band
+[27:09] then you want a sharp cutoff
+[27:11] ideally that
+[27:13] a range of frequency passes
+[27:15] and then all the frequencies
+[27:17] stop.
+[27:19] The steeper it will be
+[27:21] the closer it will be.
+[27:23] So tell me if everyone understood
+[27:25] or not?
+[27:27] So what are we saying?
+[27:29] By increasing
+[27:35] order of filter
+[27:43] we can
+[27:45] increase
+[27:49] the slope
+[27:53] or role of factor
+[28:01] and make the characteristics
+[28:07] make the gain
+[28:09] response
+[28:11] steeper
+[28:13] and approach
+[28:15] and closely approach
+[28:17] an ideal filter.
+[28:21] But do you know
+[28:23] the more you increase the order
+[28:25] the more complexity increases.
+[28:27] It is simple
+[28:29] the use of more resistance and more
+[28:31] capacitances.
+[28:33] So complexity will increase
+[28:35] the cost of the circuit will also increase.
+[28:37] So it is not like
+[28:39] increase the order
+[28:41] that we will make the 10th order filter.
+[28:43] There are many other things in it
+[28:45] when the second order filter is made
+[28:47] there is a chance
+[28:49] that in this region you will see
+[28:51] fluctuation in the pass band.
+[28:53] It is not that the pass band will always
+[28:55] come flat.
+[28:57] So by making higher order filter
+[28:59] problems can be introduced.
+[29:01] The only benefit is
+[29:03] that it will be very steep.
+[29:05] This is a definite benefit
+[29:07] but problems can be many.
+[29:09] We can relate
+[29:11] steepness with time constant.
+[29:13] Not exactly
+[29:15] location.
+[29:17] Because the first order
+[29:19] can be RC
+[29:21] and the second order can be time constant RC.
+[29:23] But in the second order
+[29:25] your steepness will be
+[29:27] more as compared to the first order.
+[29:29] And anyway
+[29:31] it is in the frequency domain.
+[29:33] So we will not relate it with time constant.
+[29:35] Aman is saying why the problem comes
+[29:37] in the second order you know
+[29:39] oscillatory response can be
+[29:41] oscillatory response.
+[29:43] Even with the same
+[29:45] step input you can get an oscillatory response.
+[29:47] Do you understand?
+[29:49] So on higher order the
+[29:51] circuit gets complicated.
+[29:53] Costing also increases.
+[29:55] And there can be other problems as well.
+[29:57] That is why we prefer to have
+[29:59] either first order or second order filter.
+[30:01] We do not make it above the second order.
+[30:03] Okay.
+[30:05] Now the question is how the filter design
+[30:07] will be.
+[30:09] I mean when you
+[30:11] assume that
+[30:13] tomorrow you go to an electronics company.
+[30:15] There you become an analog
+[30:17] design engineer.
+[30:19] Okay. You become an analog
+[30:21] design engineer.
+[30:23] So there you are told to
+[30:25] design a filter.
+[30:27] So how will it be designed?
+[30:29] First of all
+[30:31] cutoff frequency
+[30:33] cutoff frequency
+[30:35] cutoff frequency
+[30:37] cutoff frequency
+[30:39] cutoff frequency
+[30:41] FH
+[30:43] must be
+[30:45] specified
+[30:49] You will get
+[30:51] some kind of specification.
+[30:53] Second
+[30:55] pass band gain
+[30:57] must be
+[30:59] specified.
+[31:03] Now see what the first thing we do is we choose the value of C, choose C equal to 1 microfarad,
+[31:21] now from here R is taken out, how? FH is 1 by 2 pi RC, then choose R2 and R dash such that
+[31:48] passband gain will come, so you will choose R2 and R dash values as per your passband gain specification
+[32:13] you will get two things, if you are designing a filter then it is very important to give two things,
+[32:21] a cutoff frequency and a passband gain, so tell me if the low pass filter is clear,
+[32:28] it is clear right, let's go ahead, let's go brother and see if we want then we can also make the actual
+[32:42] frequency response here because what is the board plot, the board plot is always an approximation,
+[32:49] the children who have read the board plot or are going to read it from the head, they will know that the board plot is an
+[32:55] approximation which is called an asymptotic approximation, the board plot is approximated from an asymptotic
+[33:02] approximation, so actually how does the gain versus frequency vary from this type, okay here the maximum
+[33:17] gain is A, so where your gain A by root 2 is your cutoff frequency, this is A by root 2 and this is your FH
+[33:38] okay, it is clear, 3db cutoff frequency, half power frequency, you can say anything, cutoff frequency,
+[33:49] half power frequency, 3db frequency, you can give it a lot of names, tell me the relation of passband and gain,
+[33:57] the gain in the passband is our gain, this is 20 log A, so this is called the passband gain, this is 1 plus
+[34:08] rf by r1, r2 by r dash, you wrote it as A, so let's say our gain in the passband is approximately A,
+[34:17] because you see from where you are going, from A to A by root 2, so you can say in this region Amin that
+[34:24] the gain is your constant in this region, okay, so this is the passband, so you have to tell in the passband
+[34:34] how much gain you want, which is your maximum gain, why C is 1 microfarad, we have chosen a standard value
+[34:44] right now, we have a very easily 1 micro farad capacitor available, that is why we have taken 1 micro farad
+[34:50] and on its basis we have taken out r, because it is very easy to get variable values in r,
+[34:55] right, we are using a standard value for other capacitors, let's go next, now if we talk about
+[35:03] Butterworth first order high pass filter, what have we changed in the high pass filter, son,
+[35:09] we have exchanged the values of C and R, that is the position of C and R, the range of frequency
+[35:17] is not controlled Amin, the range of frequency is coming from FH, FH is coming from FH, we have taken out 1 by 2 pi
+[35:25] rc, this is getting a little controlled from r2 and r dash, r2 and r dash which I said that you can
+[35:35] control C, that means unity gain frequency, as you can see, at unity gain frequency
+[35:48] omega t is much much greater than omega h, so you get mod of gain 1, okay, so if omega is much much
+[35:59] greater than omega h, then you ignore the one below, so what is omega t, it is a into omega h,
+[36:19] right, so this can be controlled from gain, omega t is unity gain frequency, it depends on the gain,
+[36:28] gain into bandwidth constant, so it can be varied by varying the gain, so I said that you can control
+[36:37] the frequency by controlling the gain, okay, now let's go ahead, so what is the work of the high pass filter,
+[36:47] it attenuates low frequencies and passes high frequencies, okay,
+[37:10] it attenuates low frequencies and passes high frequencies, so what is the change here,
+[37:19] position of r and c is exchanged as compared to low pass filter,
+[37:39] okay, now what will happen here, you pay attention here, the first thing is the non-inverting
+[37:52] amplifier, the non-inverting amplifier, because your input is in the non-inverting terminal,
+[38:01] if the output of the non-inverting amplifier is to be taken out, then first let's take out v positive,
+[38:08] see again your series will come, if this comes into your series, then what will you write v positive,
+[38:18] okay, v in, v i, into r by r plus 1 by s c,
+[38:28] a v, now v naught is v positive 1 plus r f by r 1,
+[38:47] 1 plus r f by r 1 into s c r by 1 plus s c r, okay, now the gain or transfer function
+[39:12] is here, so how much is that, the gain of the non-inverting amplifier, the gain of the non-inverting amplifier,
+[39:25] into s c r by 1 plus s c r, this is clear, the transfer function is here and the people who know
+[39:37] this, they must be seeing this, this is the same transfer function as a high pass filter,
+[39:44] high pass filter, tell me from where, tell me one thing, in the middle of the class of analog,
+[39:59] you get strategic preparation related doubts, that doesn't mean what is going on,
+[40:06] right, so aptitude, do it with crash course, Mr. Swarov will not do the crash course,
+[40:12] otherwise go to Mr. Swarov's channel and do it, okay, otherwise Mr. Annalen Sharma has made this
+[40:17] channel clear, do it with that, there are many options and communication is not such a subject that
+[40:22] it is ready with crash course, you will have to read the communication in detail, if you are an
+[40:27] PC kid, now see here, how do we write the gain, we go to the frequency domain, let's write it a
+[40:37] into j omega c r 1 plus j omega c r, okay, now what does a say here, a says pass band gain,
+[40:53] the frequencies passing, the gain offered to them is 1 plus rf by r1, now j omega c r, if you
+[41:06] divide it, then a divided by j omega c r, this term has become 1, 1 by j omega c r, 1 by j,
+[41:21] which is written as minus j, so 1 minus j by omega c r, 1 by rc, write omega l, 1 minus j
+[41:37] omega l by omega, okay, now here my children, if you take out the magnitude of gain, then how much
+[41:49] will come, the magnitude of gain will come to you, a by under root 1 plus omega l by omega square,
+[42:03] and if you take out the phase, because of the bottom, minus, but the bottom is already a minus, because of the
+[42:09] denominator, minus will come, and here already a minus, so minus minus plus, so tan inverse omega l by
+[42:18] omega, okay, here comes the phase, so a magnitude came, and what did you get, now what is here,
+[42:28] what is here, that at omega equal to omega l, magnitude of gain is equal to a by root 2,
+[42:41] okay, so what will you call omega l, this will be called as a cut off frequency, what will it be called, cut off frequency,
+[42:54] and what is the value of omega l, 1 by rc, which means the value of fl is 1 by 2 by rc, so this is
+[43:08] what you got, cut off frequency, okay, yes, BJT is the same, BJT also used a high pass, low pass filter,
+[43:17] and the gain A in BJT was called mid band gain, now see if you want to plot the magnitude of the gain,
+[43:26] children against frequency, obviously you plot on the semi log graph, you do it on the semi log paper,
+[43:34] so that you can cover more range of frequency, otherwise you will not be able to go up to kilohertz,
+[43:40] in normal graph paper, now see, on zero frequency, the denominator will be infinite,
+[43:48] denominator infinite means the zero of the gain, on infinite frequency, this A by 1 will be left,
+[43:58] so A will come, this type, okay, so this is your gain coming on high frequencies,
+[44:11] this is coming,
+[44:17] this is coming, okay, and where this gain is your A by root 2,
+[44:28] where this A by root 2 is there, this is fl, okay,
+[44:45] this response came, this response came, is it clear, now see here if your ideal high pass filter was there,
+[44:56] if an ideal high pass filter was there, then how would its response be,
+[45:04] the response coming there, the gain coming there would have suddenly increased,
+[45:09] your gain coming there would have suddenly increased, first it was zero,
+[45:15] then suddenly it would have increased to maximum,
+[45:20] there is no 1 by root 2 in the ideal filter,
+[45:38] so see here, the graph suddenly increases,
+[45:50] okay, it is clear, so this is the ideal, now if you see here,
+[45:57] then you can see a pole, or you can say this, if you see this transfer function,
+[46:03] then there is a zero and a pole, then if you want you can also draw its board plot,
+[46:08] okay, so the board plot that people have read, they can draw its board plot very easily,
+[46:13] that sir there is a zero on the origin, we will take it and then a pole is coming later,
+[46:18] then the slope of 20 dB per decade will come first and then the same slope will become our zero,
+[46:24] correct, you can make a board plot of this, there is no problem,
+[46:34] very good, it will be a decade on the initial 20 dB, you can call it as a roll off factor,
+[46:43] why not subtract from phase 180, Arindam you will have to judge the quadrant first to do all these things,
+[46:49] my brother, it is not that you will do 180 minus theta somewhere,
+[46:54] to do 180 minus theta, it is very important to have a second quadrant,
+[46:59] understand, it is not like that, it is 180 minus theta 180 plus theta, let's see from the quadrant,
+[47:05] now what will you do here, son, what will you say here too,
+[47:10] that cut off frequency FL and pass band gain must be specified,
+[47:21] these two things will have to be specified,
+[47:25] now we say choose C equal to 1 micro farad and determine
+[47:44] R, how, 1 by 2 pi RC, choose RF and R1 such that pass band gain
+[48:14] is 1 plus RF by R1, the pass band gain is 1 plus RF by R1,
+[48:27] so here you will choose both the values from your mind, RF and R1,
+[48:31] we will have to see their ratio that the ratio should be such that the pass band gain is equal to this,
+[48:38] now see the band pass filter, there is one way to make a band pass filter,
+[48:43] by the use of a high pass filter and a low pass filter,
+[48:47] and the high pass and low pass, I am taking this passive filter,
+[48:51] that is why the amplifier is installed in the middle, these two are passive filters,
+[48:56] their job is to set the cut off frequency,
+[49:01] their job is not to give gain, to give gain, I have put an amplifier in the middle,
+[49:08] so I have put filters on both the sides which are deciding the cut off frequencies in my system,
+[49:15] and I have put an amplifier in the middle which is establishing my gain,
+[49:20] now son, this high pass filter will pass more frequencies than FL, correct?
+[49:27] which frequency will pass this? Passes,
+[49:31] F greater than FL,
+[49:35] okay brother Aman,
+[49:37] what will happen on the output of amplifier?
+[49:40] Gain increases, FL will not change,
+[49:44] now I have told you that the cut off frequency does not change from gain,
+[49:47] but the shape of the response changes a little,
+[49:50] as I have told you that the gain frequency of the unit changes,
+[49:54] now this low pass filter will pass F less than FH,
+[50:00] you want to pass all the frequencies from FL to FH,
+[50:06] so therefore, this is very important here, that FL is less than FH,
+[50:12] right? As you can imagine, one filter is saying,
+[50:15] I will pass the entire pass above 10 hertz,
+[50:18] the other is saying, I will pass the pass below 100,
+[50:22] so connect both of them,
+[50:24] then they will pass the frequency from 10 to 100,
+[50:28] then it will become a band pass type of a filter,
+[50:32] do you understand?
+[50:33] if one says, I will pass it beyond 100,
+[50:36] and if one says, I will pass it below 10,
+[50:39] then this band will not pass, the band will be rejected,
+[50:41] then this will be rejected from 10 to 100,
+[50:44] so if FL is greater than FH,
+[50:47] then this is a band reject filter,
+[50:50] and until FL is smaller than FH,
+[50:52] it is a band pass type of a filter,
+[50:55] now I will come to the band reject, don't worry about it,
+[50:58] now see, for the high pass filter, first C, then R,
+[51:02] see, remember here, see,
+[51:06] what was the voltage divider in the network,
+[51:08] was it C and R, was it C and R,
+[51:11] okay, you can exchange low pass and high pass,
+[51:16] there is no problem, so first C and R,
+[51:19] then what did you get,
+[51:21] it came non-inverting amplifier,
+[51:24] non-inverting, and then it became a low pass filter from R and C,
+[51:30] now its cut-off frequency FH is 1 by 2 pi,
+[51:37] R2 is C2,
+[51:39] and its FL is 1 by 2 pi,
+[51:45] R1 is C1,
+[51:48] so you will say FL less than FH,
+[51:52] that is, it is necessary that R1 C1 is greater than R2 C2,
+[51:58] correct, this is necessary,
+[52:03] is it clear, now see here,
+[52:07] if I tell you to remove the gain overall,
+[52:11] so first you applied the high pass filter,
+[52:14] how do you write the gain,
+[52:16] SC1 R1,
+[52:18] because no amplifier came here at this stage,
+[52:22] simple SCR upon 1 plus SCR,
+[52:25] then how do you write the non-inverting amplifier,
+[52:28] 1 plus RF by R,
+[52:30] this is done,
+[52:32] then how do you write the low pass filter,
+[52:34] 1 upon 1 plus SC2 R2,
+[52:38] so what is this,
+[52:41] SC1 R1,
+[52:44] 1 plus RF by R,
+[52:52] then here,
+[52:55] 1 plus SC1 R1,
+[52:58] 1 plus SC2 R2,
+[53:02] clear, this is done,
+[53:04] do you understand everyone,
+[53:06] what is going to happen,
+[53:08] tell me quickly,
+[53:09] do you understand everyone,
+[53:12] clear,
+[53:13] there is another way to make this,
+[53:15] inverting band pass filter,
+[53:18] why are you amplifying the high frequency,
+[53:20] where are you amplifying the high frequency,
+[53:23] if we also amplify the high frequency here,
+[53:26] then this filter will cut it,
+[53:28] dear low pass,
+[53:30] do you understand,
+[53:32] here it is believed that everything will be amplified
+[53:34] by high frequency,
+[53:36] it will cut it,
+[53:38] it will reduce its gain,
+[53:40] now see if we want to make it direct,
+[53:42] band pass filter is made like this,
+[53:44] where the input is in R and C series,
+[53:47] and the feedback is in R and C parallel,
+[53:49] see how,
+[53:51] here what is this,
+[53:53] an inverting amplifier,
+[54:02] so what will be its gain,
+[54:07] minus ZF by Z1,
+[54:10] okay,
+[54:12] now what is ZF,
+[54:14] this is R2 parallel,
+[54:17] 1 by SC2,
+[54:21] R2 parallel,
+[54:23] 1 by SC2,
+[54:28] sir gain multiplication is possible,
+[54:30] when there is no loading effect,
+[54:32] but here in second and third stage,
+[54:34] there is loading effect,
+[54:36] dear this opamp is keeping both of them isolated,
+[54:39] opamp is keeping both of them isolated,
+[54:42] means the gain of opamp is 1 plus RF by RE,
+[54:45] regardless of what is the connected location here,
+[54:48] did you forget,
+[54:50] your 1 plus RF by R comes,
+[54:52] gain irrespective of load resistance comes,
+[54:55] i.e. no matter how much load is applied on the output of opamp,
+[54:59] it will never ever affect the gain of the opamp amplifier,
+[55:03] correct,
+[55:05] so the gain of the operational amplifier never changes from load,
+[55:08] that is why I am saying that this circuit will not load,
+[55:11] or because of this circuit,
+[55:13] its gain will not change,
+[55:15] okay,
+[55:17] come,
+[55:19] now here R2 parallel,
+[55:21] 1 by SC2,
+[55:28] this will become,
+[55:31] and what is Z1,
+[55:35] R1 plus 1 by SC1,
+[55:42] 1 plus SC1 R1,
+[55:48] so how much is the gain,
+[55:52] minus ZF by Z1,
+[56:00] okay,
+[56:12] now see what you should do,
+[56:14] multiply and divide from R1,
+[56:18] multiply and divide from R1,
+[56:31] now see,
+[56:36] this is not visible to you,
+[56:38] this is the gain of the low pass filter,
+[56:42] this is the high pass filter,
+[56:46] and this is,
+[56:48] gain of inverting amplifier,
+[56:52] so the same concept is formed,
+[56:54] which you have just seen,
+[56:56] that a low pass filter,
+[56:58] a high pass filter,
+[56:59] and an amplifier,
+[57:01] is it not,
+[57:03] these three things are cascaded in one way,
+[57:06] that an inverting amplifier,
+[57:08] a low pass filter,
+[57:09] a high pass filter,
+[57:11] its cut-off frequency is FL,
+[57:13] its FH,
+[57:15] so now you said that
+[57:17] FL is less than FH,
+[57:22] that is R1 C1 must be greater than
+[57:25] R2 C2,
+[57:28] so see, this is what I was saying,
+[57:30] FL is 1 by 2 pi R1 C1,
+[57:32] so 1 by 2 pi R1 C1,
+[57:34] FH is 1 by 2 pi R2 C2,
+[57:36] it will come from here,
+[57:38] so this circuit,
+[57:40] looks like a practical differentiator,
+[57:43] correct,
+[57:44] looks like a practical differentiator,
+[57:47] and it is basically a
+[57:49] inverting band pass type of a filter,
+[57:52] is it clear,
+[57:56] speak quickly,
+[57:58] is it clear,
+[58:00] now the thing is,
+[58:02] how will you design it,
+[58:04] so see,
+[58:06] cut-off frequencies,
+[58:08] what will you be specified
+[58:10] as a design engineer,
+[58:12] cut-off frequencies,
+[58:18] FL and FH
+[58:21] must be specified,
+[58:33] passband gain
+[58:41] must be specified,
+[58:51] now what do you do here,
+[58:53] now both the capacitors
+[58:55] take one microfarad,
+[58:57] because now there are two capacitors,
+[59:02] so what do we say,
+[59:04] that on the basis of FH,
+[59:08] calculate R1,
+[59:10] calculate,
+[59:19] one second,
+[59:20] FH is,
+[59:22] no, on the basis of FL,
+[59:28] and on the basis of FH,
+[59:31] calculate R2,
+[59:37] and then on the basis of gain,
+[59:39] on this RF and R1,
+[59:43] sorry, RF and R dash,
+[59:47] using gain,
+[59:51] decide,
+[59:53] RF,
+[59:55] see here,
+[59:57] your gain is your RF by R1,
+[59:59] R2 by R1,
+[60:01] so here your,
+[60:04] in,
+[60:06] second,
+[60:08] gain is,
+[60:10] gain is R2 by R1,
+[60:16] so in the second case,
+[60:18] the gain is R2 by R1,
+[60:20] it will come directly from here,
+[60:22] in the second case,
+[60:24] your R2 R1 will come from here,
+[60:26] so your gain has been established,
+[60:28] yes, band pass filter,
+[60:30] son, it is always
+[60:32] the second order,
+[60:34] band pass filter will not be the first order,
+[60:36] because there are two cut-off frequencies,
+[60:38] right,
+[60:40] FH is the threshold of low pass filter,
+[60:42] and FL is the threshold of high pass filter,
+[60:48] now see, how to make
+[60:50] band stop and band reject filter,
+[60:52] low pass filter,
+[60:54] high pass filter,
+[60:56] the output of these two is in the summing amplifier,
+[60:58] now you think this low pass filter,
+[61:00] this is the gain versus frequency,
+[61:02] and high pass filter,
+[61:04] this is the gain versus frequency,
+[61:08] if you add both,
+[61:10] such that,
+[61:12] these thresholds,
+[61:18] that FL is greater than FH,
+[61:22] this is your FL,
+[61:24] this is greater than FH,
+[61:26] then you will get such a response,
+[61:28] just add both,
+[61:30] you understand,
+[61:32] just add both,
+[61:34] such that FL is greater than
+[61:36] FH, so you will get
+[61:38] such kind of a response,
+[61:40] so what we have to do here,
+[61:42] one low pass filter, one high pass filter,
+[61:44] we have to put it in a summing amplifier,
+[61:46] see, I will make you also,
+[61:54] like,
+[61:56] what to do,
+[62:00] see,
+[62:02] here,
+[62:28] see here,
+[62:32] what did I do,
+[63:02] see,
+[63:10] this is a low pass filter,
+[63:12] a high pass filter,
+[63:14] if I put it in a positive terminal,
+[63:16] so both the input is VIE,
+[63:18] there is no current here,
+[63:24] put it in a positive terminal,
+[63:26] see,
+[63:48] see,
+[63:50] what did I do,
+[63:52] I made a non-inverting summing amplifier,
+[63:56] this is C2,
+[63:58] R2,
+[64:00] R1,
+[64:02] C1, what is this block below,
+[64:04] tell me,
+[64:06] what is this block below,
+[64:08] it is a low pass filter,
+[64:10] and what is this top one,
+[64:12] it is a high pass filter,
+[64:14] so the FH of the low pass filter,
+[64:22] and the FL of the top one,
+[64:24] this will come,
+[64:28] now, see, what did you say,
+[64:30] FL should be greater than FH,
+[64:36] which means,
+[64:38] R2 C2 is less than
+[64:40] R1 C1,
+[64:42] set it up like this,
+[64:46] what are you asking,
+[64:48] even using a sub-tractor,
+[64:50] you can do it for FL less
+[64:52] than FH,
+[64:54] if you use a sub-tractor,
+[64:56] then the gain will not be negative,
+[64:58] means one gain will come up,
+[65:00] one gain will come up,
+[65:02] if you subtract it, it will go down,
+[65:06] the input will have to be the same,
+[65:12] the input is the same,
+[65:18] okay,
+[65:20] now, see,
+[65:22] there is a way to make it,
+[65:24] that this is a voltage follower,
+[65:26] to avoid the loading effect,
+[65:28] and this is your gain,
+[65:30] it has become like an inverting,
+[65:32] right, you have made this an inverting
+[65:34] with the help of Amplifier,
+[65:36] is it clear, you can implement it like this also,
+[65:40] understand the matter,
+[65:42] this one is a low pass filter,
+[65:44] this one is a high pass filter,
+[65:46] HPF will vary,
+[65:48] means
+[65:50] high pass filter will vary,
+[65:54] and see, how the band reject filter
+[65:56] gains,
+[65:58] I don't understand,
+[66:00] what confusion are you doing,
+[66:02] that you are trying to make a great doubt,
+[66:04] in a simple thing,
+[66:06] I have just added
+[66:08] the output of two filters,
+[66:10] and nothing has been done,
+[66:16] it will come like this,
+[66:26] okay,
+[66:28] now the notch filter,
+[66:30] see what is the meaning of the notch filter,
+[66:32] this is also a band reject filter,
+[66:34] but its bandwidth
+[66:36] is very small,
+[66:38] as you can see here,
+[66:40] if you go to see the bandwidth,
+[66:42] then
+[66:44] you will see a significant
+[66:46] bandwidth,
+[66:50] okay,
+[66:52] here you will see a significant
+[66:54] bandwidth,
+[67:00] this FH,
+[67:02] this FL,
+[67:04] okay,
+[67:06] it is rejecting so many bands,
+[67:08] but when this band becomes very narrow,
+[67:10] so we say that
+[67:12] the filter is
+[67:14] rejecting only one frequency,
+[67:16] this is called as the
+[67:18] notch frequency,
+[67:20] okay,
+[67:22] notch frequency,
+[67:24] so we say
+[67:26] it is a band reject filter,
+[67:30] band reject filter,
+[67:32] band reject filter,
+[67:38] with
+[67:40] narrow band,
+[67:48] such that
+[67:50] it rejects
+[67:52] only one frequency,
+[67:54] now you must be thinking,
+[67:56] where does this work,
+[67:58] when we read instrumentation,
+[68:00] there comes a work like a spectrum analyzer,
+[68:02] okay,
+[68:04] there comes a work like a device,
+[68:06] spectrum analyzer,
+[68:08] where we see how
+[68:10] the gain of different frequencies
+[68:12] or the value of
+[68:14] different frequencies,
+[68:16] in a signal,
+[68:18] okay,
+[68:20] so the entire spectrum of a signal
+[68:22] is analyzed,
+[68:24] there you need a notch filter,
+[68:26] okay,
+[68:28] now look here,
+[68:30] with the help of R and C,
+[68:32] what have you made,
+[68:34] with the help of R and C,
+[68:36] you have made a T network,
+[68:38] correct,
+[68:40] you have made a T network,
+[68:42] 2RC, 2RC,
+[68:44] R and 2C,
+[68:46] you have made a T network,
+[68:48] and here the notch frequency
+[68:50] which it rejects,
+[68:52] that is 1 by 4 pi
+[68:54] Rc,
+[68:56] how many are there, 1 by 4 pi,
+[68:58] Rc,
+[69:00] the thing is clear,
+[69:02] in this the top 2R and C,
+[69:04] it behaves like a low pass filter,
+[69:10] it behaves like a low pass filter,
+[69:12] and this one is like a high pass,
+[69:14] so in the band reject,
+[69:16] both are required, low pass and high pass,
+[69:18] and this is making a feedback,
+[69:20] here is making a feedback,
+[69:22] voltage divider feedback,
+[69:24] using R3 and R4,
+[69:26] all of you,
+[69:28] you just have to remember this,
+[69:30] the notch frequency,
+[69:32] now the architect has to remember the circuit,
+[69:34] no one has to remember the circuit,
+[69:36] okay, you should come to know
+[69:38] how the filters judge,
+[69:40] so I don't write it as a question,
+[69:42] that brother,
+[69:46] how to judge,
+[69:50] nature of a filter,
+[69:54] when it comes to nature of a filter,
+[69:56] then
+[69:58] we have to
+[70:00] see 2 frequencies,
+[70:02] which 2 frequencies
+[70:04] are 0 and infinity,
+[70:06] which 2 frequencies
+[70:08] you judge,
+[70:10] always at 0 at
+[70:12] and infinity,
+[70:14] okay,
+[70:16] okay,
+[70:18] okay,
+[70:20] okay,
+[70:22] okay,
+[70:42] now see here,
+[70:46] omega tending to 0,
+[70:48] omega tending to 0,
+[70:50] let's open the capacitor,
+[70:52] as per 1 by omega c,
+[70:54] let's short the inductor
+[70:56] from omega L,
+[70:58] now you will say, sir, the inductor has not come,
+[71:00] suppose it has come,
+[71:02] we should be ready,
+[71:04] because the inductor comes in the filter,
+[71:06] at infinity, as per 1 by omega c,
+[71:08] capacitor short,
+[71:10] inductor open,
+[71:14] now see,
+[71:16] if your gain is
+[71:18] coming down,
+[71:20] or it is coming up high,
+[71:22] and it is coming down at infinity,
+[71:24] almost 0,
+[71:26] or in comparison,
+[71:28] infinity is coming down,
+[71:30] okay,
+[71:32] if it is coming down here,
+[71:34] and it is coming up high,
+[71:36] both places are coming up high,
+[71:42] or both places
+[71:44] are coming down,
+[71:46] as if both places are 0,
+[71:50] so in the first case,
+[71:52] if it is high on low frequency,
+[71:54] then it will work as a
+[71:56] low pass filter,
+[72:02] it is high on high frequency,
+[72:04] then it will work as a
+[72:06] high pass filter,
+[72:08] if it is high on both,
+[72:10] then it becomes twice here,
+[72:12] there can be two things here,
+[72:14] one is
+[72:16] band reject filter,
+[72:18] or
+[72:20] all pass filter,
+[72:22] so what can you do
+[72:24] to judge,
+[72:26] check on the middle frequency also,
+[72:28] right,
+[72:30] so if the gain is same there,
+[72:32] then it is all pass,
+[72:34] if the gain is less on the middle frequency,
+[72:36] then it is band reject filter,
+[72:38] and it is coming down on both,
+[72:40] means band pass filter,
+[72:42] so you will have to be a little
+[72:44] cautious in band reject and all pass,
+[72:46] the gain of all pass
+[72:48] is independent of frequency,
+[72:50] that is,
+[72:52] you get the gain on every frequency,
+[72:54] so check on the middle frequency,
+[72:56] yes, location,
+[72:58] there are both positive feedback and negative feedback,
+[73:00] and these two points
+[73:02] are connected,
+[73:04] okay,
+[73:06] let's go,
+[73:08] see,
+[73:10] nature of filter
+[73:12] and the cutoff frequency,
+[73:14] when it comes to cutoff frequency,
+[73:16] then you will have to remove
+[73:18] transfer function,
+[73:20] it will not work without that,
+[73:30] do this,
+[73:36] okay,
+[73:46] if the gain is not 1,
+[73:48] then what is the point,
+[73:50] you can say that the output of
+[73:52] band pass filter,
+[73:54] if you subtract it in input,
+[73:56] then it will work like a band stop filter,
+[73:58] okay,
+[74:04] and see, ideally
+[74:06] the syllabus of your gate,
+[74:08] analog, if everything goes well,
+[74:10] it should get completed
+[74:12] on 8th of November, means next Tuesday,
+[74:14] so we have 7 more sessions
+[74:16] left from Kaede,
+[74:18] after which we have to go to Nipat,
+[74:20] 1st session can be up and down,
+[74:22] not more than this,
+[74:24] okay,
+[74:26] the answer has come,
+[74:28] see,
+[74:30] when we have to remove the transfer function,
+[74:32] then nature will also be removed,
+[74:36] this is called R1,
+[74:38] RC,
+[74:40] this is an inverting amplifier,
+[74:44] ZF is R
+[74:46] parallel 1 by SC,
+[74:50] R by 1
+[74:52] plus SCR,
+[75:02] minus R by R1,
+[75:04] this is clearly seen,
+[75:06] the transfer function of low pass filter,
+[75:18] and 3 dB frequency,
+[75:23] 1 by 2 pi RC,
+[75:31] 2 pi 10 kilo ohm into 1 nanofarad,
+[75:34] 10 kilo ohm means 10 kPa 4,
+[75:36] 1 nanofarad 10 kPa minus 9,
+[75:38] so 10 kPa 5 by 2 pi,
+[75:40] so 100 upon 2 pi
+[75:42] and 50 upon pi,
+[75:46] 15.915 kHz,
+[75:52] this is its cutoff frequency,
+[75:56] very good,
+[76:02] Giten Bhai,
+[76:04] I have already announced,
+[76:06] what are you, you are a disgusting man,
+[76:08] I have already announced all the things,
+[76:10] I have already told all the things,
+[76:12] still your doubt is the same,
+[76:14] I have announced on this channel,
+[76:16] when will the crash course come,
+[76:18] who will take the teacher,
+[76:20] I am taking the subject, I have already told all the things,
+[76:22] and what do you want to know,
+[76:26] come on, try this,
+[76:28] all people, only here we have to tell the nature,
+[76:30] only for nature,
+[76:32] come on, see,
+[76:46] check the lower high frequency,
+[76:48] omega tending to zero,
+[76:50] and infinity,
+[76:56] and Giten, the weird thing is,
+[76:58] that I am taking the class on plus every day,
+[77:00] you are not able to ask the doubt on the audio,
+[77:04] you have to come on YouTube,
+[77:06] to ask the doubt every day,
+[77:08] while I am studying 5 hours plus every day,
+[77:10] you did not get time to come and ask,
+[77:12] right,
+[77:18] now,
+[77:42] the answer is,
+[77:44] see,
+[77:46] if you open the capacitors
+[77:48] on tending to zero,
+[77:54] if you open the capacitors,
+[78:08] it will be like this,
+[78:12] now this is VS,
+[78:14] so here,
+[78:16] zero ampere current will go,
+[78:18] so on positive terminal,
+[78:20] VS came,
+[78:22] here also VS came,
+[78:24] here V0 came,
+[78:26] and omega tending
+[78:28] to infinity,
+[78:30] capacitor is short,
+[78:34] because of which,
+[78:36] positive and negative,
+[78:38] both are voltage of terminal,
+[78:40] zero,
+[78:42] negative terminal is directly connected to output,
+[78:44] so this is also zero,
+[78:46] so gain is coming on low frequency,
+[78:48] one,
+[78:50] and gain is coming on high frequency,
+[78:52] zero,
+[78:54] so it will act as a
+[78:56] low pass filter,
+[78:58] okay,
+[79:04] omega 0 will open the capacitor,
+[79:06] low pass is coming, how high pass is coming out,
+[79:08] Bablu is telling high pass,
+[79:10] Ashok is telling high pass,
+[79:12] what are you doing,
+[79:14] look at the next one,
+[79:16] do the same thing,
+[79:40] or do one thing,
+[79:42] take out the transfer function,
+[79:44] because there is VI inverting,
+[79:46] non-inverting in both,
+[79:48] so you won't be able to say much,
+[79:50] if you open or short the capacitor,
+[79:52] okay,
+[80:08] take out the transfer function,
+[80:22] okay,
+[80:46] look,
+[80:48] look,
+[80:50] one is inverting amplifier from VI,
+[80:56] and this VI positive terminal,
+[80:58] you have to take the voltage division,
+[81:06] and then it will be a
+[81:08] non-inverting amplifier,
+[81:20] okay,
+[81:24] so this is VI,
+[81:26] LCM log,
+[81:28] when such a transfer function comes,
+[81:30] it behaves as a
+[81:32] all pass filter,
+[81:34] you read it in control,
+[81:36] whose poles and zeros are
+[81:38] about symmetric,
+[81:40] that behaves as a all pass filter,
+[81:42] I will make you do this tomorrow,
+[81:44] in the lecture of all pass filter,
+[81:46] but the recognition of all pass
+[81:48] filter is that
+[81:50] its poles and zeros are symmetric
+[81:52] about imaginary axis,
+[81:54] and here,
+[81:56] you can see the gain,
+[81:58] see this,
+[82:06] so if you take its mod,
+[82:14] A plus IOTB or A minus IOTB,
+[82:16] mod is semi,
+[82:20] under root A square plus B square,
+[82:24] so this mod will come,
+[82:26] this is one,
+[82:28] so this is what we said,
+[82:30] gain is independent of frequency,
+[82:32] let's go,
+[82:34] cut off frequency of the filter,
+[82:36] now here, you have to take out the transfer function,
+[82:38] whenever it comes to cut off frequency,
+[82:40] take out the transfer function,
+[82:42] let's go,
+[82:44] do it fast,
+[82:46] you are doing it very slow,
+[82:48] this is a simple non inverting amplifier,
+[82:50] take out the answer,
+[83:14] see,
+[83:32] so what will be its gain,
+[83:38] 1 plus R2 by Z1,
+[83:40] I will have to take out Z1,
+[83:44] R1,
+[83:46] parallel 1 by SC,
+[83:52] R1 by 1 plus SC1,
+[83:54] R1,
+[83:56] okay, this is SCR1,
+[84:04] so what is the gain,
+[84:06] R1,
+[84:08] 1 plus R2 by R1,
+[84:14] 1 plus SCR1,
+[84:16] okay,
+[84:18] this is done,
+[84:20] if you take out the LCM,
+[84:22] R1,
+[84:24] plus R2,
+[84:26] plus SC,
+[84:28] R1, R2,
+[84:30] by R1,
+[84:32] so this is done,
+[84:36] 1 plus R1 and R2,
+[84:38] take out common,
+[84:40] 1 plus R2 by R1,
+[84:42] which is gain,
+[84:44] R1 plus R2, if you take out common from here,
+[84:46] SCR1, R2 by
+[84:48] R1 plus R2,
+[84:52] will this be,
+[84:54] sorry,
+[84:56] R1,
+[85:02] 1 plus SC,
+[85:04] now see,
+[85:06] 1 plus SCR term is converted,
+[85:08] then you get cutoff frequency from here,
+[85:14] 1 by
+[85:16] R1, R2 by,
+[85:20] means R1 is parallel R2,
+[85:22] this is the same,
+[85:26] understand,
+[85:28] this is what I am saying,
+[85:30] do not put direct Jugaad,
+[85:32] now see, the answer has changed,
+[85:36] both are wrong,
+[85:38] Abhishek, Arindam,
+[85:40] Koover, all are wrong,
+[85:42] do you understand,
+[85:44] how to do here,
+[85:46] this gain of non-inverting amplifier,
+[85:48] which should have also been there,
+[85:50] along with the term 1 plus SCR,
+[85:52] cutoff frequency will come out from there,
+[85:54] whenever you talk about cutoff frequency,
+[85:56] you will always first derive
+[85:58] the transfer function,
+[86:02] see, this is saying,
+[86:04] multi-stage low pass filter
+[86:06] using ideal opamp,
+[86:08] is designed to have a gain of
+[86:10] 1000 bandwidth of 20 kHz,
+[86:12] and a response that rolls off
+[86:14] at a rate of
+[86:16] minus 60 dB per decade,
+[86:18] so how many opamps are there,
+[86:20] and what is the gain and bandwidth of every opamp,
+[86:22] tell me,
+[86:24] how many opamps are there,
+[86:26] will anyone tell this,
+[86:28] yes, cutoff frequency is the corner frequency,
+[86:34] 3,
+[86:36] how did it come out,
+[86:38] minus 20,
+[86:40] N I told you today,
+[86:48] so N has become 3,
+[86:50] now tell me the gain of each opamp,
+[86:52] gain of each opamp,
+[87:02] now see the 1000,
+[87:04] because 3 opamps have been cascaded,
+[87:08] so the gain will be the cube,
+[87:12] so the gain has come,
+[87:14] 10, okay,
+[87:16] and the bandwidth,
+[87:18] so how did it come out,
+[87:20] when the identical stages of multi-stage are cascaded,
+[87:24] this was FH,
+[87:26] power of 2,
+[87:28] 1 by N,
+[87:30] minus 1,
+[87:32] tell me from here FH,
+[87:34] this was told,
+[87:36] when multi-stage are cascaded,
+[87:38] so how do they come out,
+[87:40] tell me by keeping N here,
+[87:44] this is taught in multi-stage amplifier,
+[87:48] tell me if we keep N here,
+[87:50] then how much FH will come,
+[88:02] tell me by taking it out quickly,
+[88:04] you are taking a lot of time,
+[88:06] now I will take it out,
+[88:08] okay,
+[88:16] 39.23,
+[88:22] okay,
+[88:24] so this is a good question,
+[88:26] next look,
+[88:28] transfer function
+[88:30] and 3 dB frequency,
+[88:32] why does it look like this,
+[88:34] but this is non-inverting amplifier,
+[88:36] non-inverting amplifier,
+[88:38] so take out the transfer function,
+[88:40] 3 dB will also come from there,
+[88:42] okay, this is the last question,
+[88:44] make it quickly,
+[88:46] tomorrow we will wind up the filters,
+[88:48] after that,
+[88:50] I will give you feedback amplifier,
+[88:52] so first we will filter it,
+[88:54] discuss the person assignment,
+[88:56] then I will give feedback amplifier,
+[88:58] there will be maximum 2 classes,
+[89:00] we will come on the oscillator,
+[89:02] RC phase shift, heart lay,
+[89:04] coal pit, Schmidt trigger,
+[89:06] multivibrator,
+[89:08] astable, monostable, bistable,
+[89:10] we will do everything,
+[89:16] take it out,
+[89:18] its transfer function,
+[89:28] first we will finish the gate syllabus,
+[89:30] after that,
+[89:32] we will have 3 topics left,
+[89:34] 1.555 timer,
+[89:36] 1 tuned amplifier,
+[89:38] and 1 power amplifier,
+[89:40] you guys don't have to pay for that,
+[89:42] see, what will be the gain here,
+[89:48] 1 plus Z2 by Z1,
+[89:54] now what will be Z2,
+[90:02] Z2,
+[90:08] this is it,
+[90:10] Z1 is simple R1,
+[90:22] now if we take LCM,
+[90:32] R1 plus R2,
+[90:42] R1 plus R2 will come here,
+[90:44] so take R1 plus R2 as common,
+[90:46] and R1 from below,
+[90:48] this is the gain of non inverting amplifier,
+[90:52] so see here,
+[90:54] 2 cutoff frequencies will come,
+[90:56] 1 is R1 parallel R2,
+[90:58] and 1 is 1 plus SCR2,
+[91:06] now what will happen here,
+[91:08] when the infinite frequency will be,
+[91:10] as you can see,
+[91:12] at omega tending to infinity,
+[91:16] capacitor will be short,
+[91:20] so V0 will be same as VI,
+[91:24] at omega tending to infinity,
+[91:28] capacitor will be open,
+[91:32] so gain will be,
+[91:34] so should we consider this as high pass filter from Kaede,
+[91:38] okay,
+[91:40] should we consider this as high pass filter,
+[91:42] here gain 1 is coming,
+[91:44] here gain 1 is coming more,
+[91:46] if we consider this as high pass filter,
+[91:50] then what cutoff frequency do you take in high pass filter,
+[91:54] in high pass filter, you take that cutoff frequency,
+[91:56] which is lower,
+[91:58] if 2 cutoff frequencies are coming,
+[92:00] then you take the lower one,
+[92:02] which one will be lower,
+[92:04] 1 by
+[92:08] R2C,
+[92:10] because this resistance is bigger,
+[92:12] R2, R1 is bigger than R2,
+[92:18] tell me, is it clear,
+[92:20] come on,
+[92:22] now see this is your assignment,
+[92:24] you will solve this assignment,
+[92:26] and apart from this,
+[92:28] tomorrow we will wind up the discussion of our filters,
+[92:34] it was circular,
+[92:36] pole zero location was circular,
+[92:38] then it will be in Z-transform,
+[92:40] it will be about digital filter,
+[92:42] okay,
+[92:44] now see this link,
+[92:46] here you can go to opamp,
+[92:48] you can apply
+[92:50] most of the PYQ of analog,
+[92:52] you can apply it,
+[92:54] now see one more thing here,
+[92:56] if you come to Anacademy,
+[92:58] you have two options,
+[93:00] you will get top teachers,
+[93:02] whatever you have at home,
+[93:04] you can easily read the study material on your app,
+[93:06] it is uploaded on the whole app,
+[93:08] you can give the test, all the tests are included,
+[93:10] but what are the extra things
+[93:12] for the children of Iconic,
+[93:14] if there is a doubt in any new question,
+[93:16] video solution, printed notes for the home,
+[93:18] 1 to 1 mentorship is getting,
+[93:20] strategy and study plan is getting,
+[93:22] and in the open house session,
+[93:24] you can interact via audio,
+[93:26] and see what you have to do to join Anacademy,
+[93:28] you have to decide the plan,
+[93:30] you have to decide the duration,
+[93:32] and you have to use the code ANKIT ESE,
+[93:34] which will give you maximum discount,
+[93:36] and you will come under my guidance,
+[93:38] now see here,
+[93:40] if you still buy the subscription
+[93:42] for 15 months,
+[93:44] the children of gate 24,
+[93:46] they are getting extra for a month,
+[93:48] and this offer will be expired today,
+[93:50] so if you haven't purchased it yet,
+[93:52] then take it quickly,
+[93:54] you are getting extra for a month on the subscription for 15 months,
+[93:56] and see,
+[93:58] if you see our top rankers,
+[94:00] then last year we took out 6 ranks in the top 10,
+[94:02] this time our target is
+[94:04] 10 out of 10 rankers,
+[94:06] and you can also be one of them,
+[94:08] if you join Anacademy
+[94:10] with Ankit ESE,
+[94:12] and if there is a financial issue,
+[94:14] then you can go for EMI,
+[94:16] where you don't have to give any interest,
+[94:18] you can pay EMI monthly,
+[94:20] it will be approved in just 2 hours,
+[94:22] okay, at least the paperwork is only
+[94:24] Aadhar card, fan card,
+[94:26] and you can repay it,
+[94:28] in a flexible amount of time,
+[94:30] okay, and for the children of gate 24,
+[94:32] Dhandesar and Gurupal sir are taking,
+[94:34] analog and mathematics,
+[94:36] Gurukul batch is going on,
+[94:38] for both electrical and ESE,
+[94:40] and our rank improvement batch has started from today,
+[94:42] in which Pallav sir is starting
+[94:44] your mathematics,
+[94:46] but now Shankar sir is not able to take,
+[94:48] he is suffering from Dengu,
+[94:50] as soon as he recovers, he will start your network,
+[94:52] for the children of ESE,
+[94:54] another subject is starting from today,
+[94:56] in the rank improvement batch,
+[94:58] that is EDC, okay,
+[95:00] the rank improvement batch,
+[95:02] you can call it as Crash Course, or RIB,
+[95:04] whatever you like, and what you can do,
+[95:06] if you want to revision with us,
+[95:08] then you can come to Anacademy,
+[95:10] with a 4 month subscription,
+[95:12] you just have to apply this code,
+[95:14] Ankit ESE,
+[95:16] okay, and
+[95:18] apart from this, this is my telegram channel,
+[95:20] stay connected to it,
+[95:22] so that no class is missing,
+[95:24] no notification is missing, other than this,
+[95:26] if you want a PDF of this session,
+[95:28] in the next few minutes,
+[95:30] it will be uploaded on Anacademy Community,
+[95:32] go to the app's home page,
+[95:34] okay, go to the community,
+[95:36] go to the discover,
+[95:38] I will get it there, and you will get
+[95:40] the PDF.
+[95:42] Akash, if you want to come to my touch,
+[95:44] you can message me on telegram,
+[95:46] or you can message me on any social media platform,
+[95:48] you can message me.
+[95:50] Thank you everyone, so we will meet tomorrow,
+[95:52] we will wind up the filters tomorrow,
+[95:54] and in the future, I will discuss
+[95:56] the assignment of non-linear application filters,
+[95:58] okay, so we will meet tomorrow,
+[96:00] let's crack it.
