@@ -166,33 +166,33 @@ Because the Wilson mirror is highly accurate, the current $I$ through $Q_3$ (the
     Assuming ideal matched transistors and $0\text{V}$ DC at the bases, the voltage at the common emitter node is $V_E = -0.7\text{ V}$.
     The total tail current $I_{EE}$ is:
 
-    $$
-    I_{EE} = \frac{V_E - (-V_{EE})}{R_{EE}} = \frac{-0.7\text{ V} - (-9\text{ V})}{3.3\text{ k}\Omega} = \frac{8.3\text{ V}}{3.3\text{ k}\Omega} = 2.515\text{ mA}
-    $$
+$$
+I_{EE} = \frac{V_E - (-V_{EE})}{R_{EE}} = \frac{-0.7\text{ V} - (-9\text{ V})}{3.3\text{ k}\Omega} = \frac{8.3\text{ V}}{3.3\text{ k}\Omega} = 2.515\text{ mA}
+$$
 
 2.  **Individual Emitter/Collector Currents:**
     Because the circuit is symmetrical and $0\text{V}$ is applied to both bases, the tail current splits exactly in half.
 
-    $$
-    I_{E1} = I_{E2} = \frac{I_{EE}}{2} = \frac{2.515\text{ mA}}{2} = 1.2575\text{ mA}
-    $$
+$$
+I_{E1} = I_{E2} = \frac{I_{EE}}{2} = \frac{2.515\text{ mA}}{2} = 1.2575\text{ mA}
+$$
 
     Assuming $I_C \approx I_E$:
 
-    $$
-    I_{C1} = I_{C2} \approx 1.2575\text{ mA}
-    $$
+$$
+I_{C1} = I_{C2} \approx 1.2575\text{ mA}
+$$
 
 3.  **Output DC Voltages:**
     The DC output voltages are measured at the collectors.
 
-    $$
-    V_{o1} = V_{CC} - I_{C1}R_{C1} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 9\text{ V} - 4.904\text{ V} = 4.096\text{ V}
-    $$
+$$
+V_{o1} = V_{CC} - I_{C1}R_{C1} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 9\text{ V} - 4.904\text{ V} = 4.096\text{ V}
+$$
 
-    $$
-    V_{o2} = V_{CC} - I_{C2}R_{C2} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 4.096\text{ V}
-    $$
+$$
+V_{o2} = V_{CC} - I_{C2}R_{C2} = 9\text{ V} - (1.2575\text{ mA} \times 3.9\text{ k}\Omega) = 4.096\text{ V}
+$$
 
 Therefore, $V_{o1} = V_{o2} = 4.096\text{ V}$.
 
@@ -303,31 +303,31 @@ A voltage follower (or unity-gain buffer) is created by tying the output of an o
 2.  Since the op-amp has infinite input impedance, no current flows into its inputs.
 3.  Therefore, the current flowing through the input capacitor $C_1$ must exactly equal the current flowing through the feedback resistor $R_f$.
 
-    $$
-    i_C = i_R
-    $$
+$$
+i_C = i_R
+$$
 
 4.  The current through a capacitor is proportional to the rate of change of the voltage across it:
 
-    $$
-    i_C = C_1 \frac{d}{dt} (V_i - V_n) = C_1 \frac{dV_i}{dt} \quad (\text{since } V_n = 0)
-    $$
+$$
+i_C = C_1 \frac{d}{dt} (V_i - V_n) = C_1 \frac{dV_i}{dt} \quad (\text{since } V_n = 0)
+$$
 
 5.  The current through the feedback resistor is:
 
-    $$
-    i_R = \frac{V_n - V_o}{R_f} = -\frac{V_o}{R_f}
-    $$
+$$
+i_R = \frac{V_n - V_o}{R_f} = -\frac{V_o}{R_f}
+$$
 
 6.  Equating the two currents:
 
-    $$
-    C_1 \frac{dV_i}{dt} = -\frac{V_o}{R_f}
-    $$
+$$
+C_1 \frac{dV_i}{dt} = -\frac{V_o}{R_f}
+$$
 
-    $$
-    V_o(t) = -R_f C_1 \frac{dV_i(t)}{dt}
-    $$
+$$
+V_o(t) = -R_f C_1 \frac{dV_i(t)}{dt}
+$$
 
 This proves that the output voltage is directly proportional to the time derivative (rate of change) of the input voltage, scaled by the constant $-R_f C_1$.
 

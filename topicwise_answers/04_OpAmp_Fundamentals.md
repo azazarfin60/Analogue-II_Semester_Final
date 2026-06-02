@@ -28,15 +28,15 @@ For an operational amplifier operating with negative feedback:
 2.  The output voltage is limited by the power supply rails ($V_{sat} \approx \pm 14\text{ V}$).
 3.  The differential input voltage $V_d = V_+ - V_-$ is related to the output by:
 
-    $$
-    V_o = A_{OL} (V_+ - V_-) \Rightarrow V_+ - V_- = \frac{V_o}{A_{OL}}
-    $$
+$$
+V_o = A_{OL} (V_+ - V_-) \Rightarrow V_+ - V_- = \frac{V_o}{A_{OL}}
+$$
 
 4.  Since $A_{OL} \rightarrow \infty$, the differential input voltage must approach zero:
 
-    $$
-    V_+ - V_- \approx 0 \Rightarrow V_- \approx V_+
-    $$
+$$
+V_+ - V_- \approx 0 \Rightarrow V_- \approx V_+
+$$
 
 This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) is connected physically to Ground ($0\text{V}$), the inverting terminal ($V_-$) is held at a potential of exactly $0\text{V}$, functioning as a **Virtual Ground**. It can sink or source current but cannot maintain any voltage relative to ground.
 
@@ -57,23 +57,23 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 1.  Assume an ideal op-amp. The input current into the inverting terminal is $I_- \approx 0$.
 2.  By the virtual short principle, the voltage at the inverting terminal tracks the input voltage:
 
-    $$
-    V_- = V_+ = V_{in}
-    $$
+$$
+V_- = V_+ = V_{in}
+$$
 
 3.  Apply KCL at the inverting terminal node:
 
-    $$
-    \frac{0 - V_-}{R_1} + \frac{V_{out} - V_-}{R_f} = 0 \Rightarrow -\frac{V_{in}}{R_1} + \frac{V_{out} - V_{in}}{R_f} = 0
-    $$
+$$
+\frac{0 - V_-}{R_1} + \frac{V_{out} - V_-}{R_f} = 0 \Rightarrow -\frac{V_{in}}{R_1} + \frac{V_{out} - V_{in}}{R_f} = 0
+$$
 
-    $$
-    \frac{V_{out}}{R_f} = V_{in} \left( \frac{1}{R_1} + \frac{1}{R_f} \right) \Rightarrow V_{out} = V_{in} \left( \frac{R_f}{R_1} + 1 \right)
-    $$
+$$
+\frac{V_{out}}{R_f} = V_{in} \left( \frac{1}{R_1} + \frac{1}{R_f} \right) \Rightarrow V_{out} = V_{in} \left( \frac{R_f}{R_1} + 1 \right)
+$$
 
-    $$
-    A_v = \frac{V_{out}}{V_{in}} = 1 + \frac{R_f}{R_1}
-    $$
+$$
+A_v = \frac{V_{out}}{V_{in}} = 1 + \frac{R_f}{R_1}
+$$
 
 ---
 
@@ -84,22 +84,22 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 
 *   **Input Bias Current ($I_B$):** The average of the DC currents flowing into the inverting ($I_{B-}$) and non-inverting ($I_{B+}$) input terminals required to bias the internal input transistors:
 
-    $$
-    I_B = \frac{I_{B+} + I_{B-}}{2}
-    $$
+$$
+I_B = \frac{I_{B+} + I_{B-}}{2}
+$$
 
 *   **Input Offset Current ($I_{OS}$):** The algebraic difference between the individual input bias currents, resulting from slight mismatches in the input transistors:
 
-    $$
-    I_{OS} = |I_{B+} - I_{B-}|
-    $$
+$$
+I_{OS} = |I_{B+} - I_{B-}|
+$$
 
 *   **Input Offset Voltage ($V_{OS}$):** The DC differential voltage that must be applied across the input terminals to force the output voltage to exactly $0\text{V}$.
 *   **PSRR (Power Supply Rejection Ratio):** The ratio of the change in input offset voltage to the corresponding change in one of the power supply voltages, expressed in decibels:
 
-    $$
-    PSRR = 20\log_{10} \left( \frac{\Delta V_{OS}}{\Delta V_{CC}} \right)
-    $$
+$$
+PSRR = 20\log_{10} \left( \frac{\Delta V_{OS}}{\Delta V_{CC}} \right)
+$$
 
 ---
 

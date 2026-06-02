@@ -33,15 +33,15 @@ $$
 Since $A$ and $\beta$ are complex quantities:
 1.  **Amplitude Condition:** The loop gain magnitude must be unity:
 
-    $$
-    |A\beta| = 1
-    $$
+$$
+|A\beta| = 1
+$$
 
 2.  **Phase Condition:** The total phase shift around the closed loop must be an integer multiple of $360^\circ$ (or $0^\circ$):
 
-    $$
-    \angle A + \angle \beta = 2n\pi, \quad n \in \{0, 1, 2, \dots\}
-    $$
+$$
+\angle A + \angle \beta = 2n\pi, \quad n \in \{0, 1, 2, \dots\}
+$$
 
 ---
 
@@ -325,15 +325,15 @@ The electrical equivalent circuit consists of:
 The crystal has two distinct resonant frequencies:
 1.  **Series Resonant Frequency ($f_s$):** The series LC branch impedance falls to its minimum ($R$):
 
-    $$
-    f_s = \frac{1}{2\pi \sqrt{L C}}
-    $$
+$$
+f_s = \frac{1}{2\pi \sqrt{L C}}
+$$
 
 2.  **Parallel (Antiresonant) Frequency ($f_p$):** The series branch becomes inductive and resonates with the parallel plate capacitance $C_p$, creating a maximum impedance point:
 
-    $$
-    f_p = \frac{1}{2\pi \sqrt{L C_{eq}}} \quad \text{where} \quad C_{eq} = \frac{C \cdot C_p}{C + C_p}
-    $$
+$$
+f_p = \frac{1}{2\pi \sqrt{L C_{eq}}} \quad \text{where} \quad C_{eq} = \frac{C \cdot C_p}{C + C_p}
+$$
 
 Since $C_p \gg C$, $f_p$ is situated extremely close to $f_s$ (typically within $1\text{ kHz}$).
 

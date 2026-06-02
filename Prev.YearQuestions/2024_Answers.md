@@ -17,33 +17,33 @@ A high output impedance is highly desirable in **Current Amplifiers** or **Trans
 *   **Stage 2 (BJT CE):** $I_{EQ} = 4.0\text{ mA}$, $r_e = 6.5\ \Omega$. Input impedance $Z_{in2} = 953\ \Omega$.
 *   **Gains:**
 
-    $$
-    A_{v1} = -g_m (R_D \parallel Z_{in2}) = -2.64\text{ mS} \times (2.4\text{k} \parallel 0.953\text{k}) = -1.8
-    $$
+$$
+A_{v1} = -g_m (R_D \parallel Z_{in2}) = -2.64\text{ mS} \times (2.4\text{k} \parallel 0.953\text{k}) = -1.8
+$$
 
-    $$
-    A_{v2} = -\frac{R_C}{r_e} = -\frac{2200}{6.5} = -338.5
-    $$
+$$
+A_{v2} = -\frac{R_C}{r_e} = -\frac{2200}{6.5} = -338.5
+$$
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) = 609.3
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) = 609.3
+$$
 
 *   **Impedances:**
 
-    $$
-    Z_i = Z_{in1} = R_G = 3.3\text{ M}\Omega
-    $$
+$$
+Z_i = Z_{in1} = R_G = 3.3\text{ M}\Omega
+$$
 
-    $$
-    Z_o = R_C = 2.2\text{ k}\Omega
-    $$
+$$
+Z_o = R_C = 2.2\text{ k}\Omega
+$$
 
 *   **Output Voltage Waveform:**
 
-    $$
-    v_o(t) = A_v \cdot v_i(t) = 609.3 \times 1\sin(\omega t)\text{ mV} = 609.3\sin(\omega t)\text{ mV} = 0.609\sin(\omega t)\text{ V}
-    $$
+$$
+v_o(t) = A_v \cdot v_i(t) = 609.3 \times 1\sin(\omega t)\text{ mV} = 609.3\sin(\omega t)\text{ mV} = 0.609\sin(\omega t)\text{ V}
+$$
 
 **(c) Calculate DC bias for the NPN-PNP complementary push-pull emitter follower. [03 Marks]**
 **Answer:**
@@ -53,13 +53,13 @@ To set the DC output voltage to exactly half the supply ($V_o = V_{CC}/2 = 9\tex
 *   **Quiescent Base Currents:** $I_{BQ1} = 0\text{ A}$, $I_{BQ2} = 0\text{ A}$.
 *   **Collector-Emitter Voltages:**
 
-    $$
-    V_{CEQ1} = V_{CC} - V_o = 18\text{V} - 9\text{V} = 9\text{V}
-    $$
+$$
+V_{CEQ1} = V_{CC} - V_o = 18\text{V} - 9\text{V} = 9\text{V}
+$$
 
-    $$
-    V_{CEQ2} = 0\text{V} - V_o = 0\text{V} - 9\text{V} = -9\text{V}
-    $$
+$$
+V_{CEQ2} = 0\text{V} - V_o = 0\text{V} - 9\text{V} = -9\text{V}
+$$
 
 *(Note: True Class AB biasing requires compensating diodes to overcome the $V_{BE}$ drops, which are absent here, making it a pure Class B configuration).*
 
@@ -72,15 +72,15 @@ To set the DC output voltage to exactly half the supply ($V_o = V_{CC}/2 = 9\tex
 *   **Proof:** The emitter current of $Q_1$ is $I_{E1} = (\beta_1 + 1) I_{B1}$. This current is fed directly into the base of $Q_2$, so $I_{B2} = I_{E1}$. The total output emitter current is $I_{E2} = (\beta_2 + 1) I_{B2}$.
     Substituting $I_{B2}$:
 
-    $$
-    I_o = I_{E2} = (\beta_2 + 1)(\beta_1 + 1) I_{B1}
-    $$
+$$
+I_o = I_{E2} = (\beta_2 + 1)(\beta_1 + 1) I_{B1}
+$$
 
     Since $\beta_1, \beta_2 \gg 1$:
 
-    $$
-    I_o \approx (\beta_1 \beta_2) I_{B1} \Rightarrow \beta_D = \frac{I_o}{I_{B1}} \approx \beta_1 \beta_2
-    $$
+$$
+I_o \approx (\beta_1 \beta_2) I_{B1} \Rightarrow \beta_D = \frac{I_o}{I_{B1}} \approx \beta_1 \beta_2
+$$
 
 **(b) Calculate $Z_i, A_i, A_v$ for the Darlington Common-Emitter configuration. [04 Marks]**
 **Solution:**
@@ -111,25 +111,25 @@ $$
 The emitter is fully bypassed by $C_E$ ($R_E$ is shorted to AC ground). The output is taken from the collector ($R_C = 1.2\text{ k}\Omega$).
 *   **Input Impedance ($Z_i$):**
 
-    $$
-    Z_{base} = \beta_1 r_{e1} + \beta_1 \beta_2 r_{e2} \approx \beta_D r_{e2} = 12100 \times 2.5\ \Omega = 30.25\text{ k}\Omega
-    $$
+$$
+Z_{base} = \beta_1 r_{e1} + \beta_1 \beta_2 r_{e2} \approx \beta_D r_{e2} = 12100 \times 2.5\ \Omega = 30.25\text{ k}\Omega
+$$
 
-    $$
-    Z_i = R_{th} \parallel Z_{base} = 149.8\text{ k}\Omega \parallel 30.25\text{ k}\Omega = 25.1\text{ k}\Omega
-    $$
+$$
+Z_i = R_{th} \parallel Z_{base} = 149.8\text{ k}\Omega \parallel 30.25\text{ k}\Omega = 25.1\text{ k}\Omega
+$$
 
 *   **Voltage Gain ($A_v$):**
 
-    $$
-    A_v = -\frac{R_C}{r_{e2} + r_{e1}/\beta_2} = -\frac{1200\ \Omega}{2.5\ \Omega + 2.5\ \Omega} = -\frac{1200}{5} = -240
-    $$
+$$
+A_v = -\frac{R_C}{r_{e2} + r_{e1}/\beta_2} = -\frac{1200\ \Omega}{2.5\ \Omega + 2.5\ \Omega} = -\frac{1200}{5} = -240
+$$
 
 *   **Current Gain ($A_i$):**
 
-    $$
-    A_i = \frac{i_o}{i_{in}} = A_v \left( \frac{Z_i}{R_C} \right) = -240 \times \left( \frac{25100\ \Omega}{1200\ \Omega} \right) = -5020
-    $$
+$$
+A_i = \frac{i_o}{i_{in}} = A_v \left( \frac{Z_i}{R_C} \right) = -240 \times \left( \frac{25100\ \Omega}{1200\ \Omega} \right) = -5020
+$$
 
 **(c) Physical effect of the number of stages on cutoff frequencies and bandwidth. [02 Marks]**
 *(Identical to 2021 Q.2(a). Lower cutoff shifts higher, upper cutoff shifts lower, resulting in significant bandwidth shrinkage).*
@@ -161,41 +161,41 @@ $$
 $I_{DSS} = 10\text{ mA}, V_P = -4\text{ V}, g_{m0} = 5\text{ mS}, r_d = 20\text{ k}\Omega$. $V_{GSQ} = \frac{1}{4} V_P = -1\text{ V}$.
 1.  **Calculate $R_S$:**
 
-    $$
-    I_D = I_{DSS} \left(1 - \frac{V_{GSQ}}{V_P}\right)^2 = 10\text{ mA} \left(1 - \frac{-1}{-4}\right)^2 = 10 (0.75)^2 = 5.625\text{ mA}
-    $$
+$$
+I_D = I_{DSS} \left(1 - \frac{V_{GSQ}}{V_P}\right)^2 = 10\text{ mA} \left(1 - \frac{-1}{-4}\right)^2 = 10 (0.75)^2 = 5.625\text{ mA}
+$$
 
-    $$
-    R_S = \frac{-V_{GSQ}}{I_D} = \frac{1\text{ V}}{5.625\text{ mA}} = 177.8\ \Omega
-    $$
+$$
+R_S = \frac{-V_{GSQ}}{I_D} = \frac{1\text{ V}}{5.625\text{ mA}} = 177.8\ \Omega
+$$
 
 2.  **Calculate $g_m$:**
 
-    $$
-    g_m = g_{m0} \left(1 - \frac{V_{GSQ}}{V_P}\right) = 5\text{ mS} (0.75) = 3.75\text{ mS}
-    $$
+$$
+g_m = g_{m0} \left(1 - \frac{V_{GSQ}}{V_P}\right) = 5\text{ mS} (0.75) = 3.75\text{ mS}
+$$
 
 3.  **Calculate $R_D$ for $|A_v| = 8$:**
 
-    $$
-    |A_v| = g_m (R_D \parallel r_d \parallel R_L) = 8
-    $$
+$$
+|A_v| = g_m (R_D \parallel r_d \parallel R_L) = 8
+$$
 
-    $$
-    R_{eq} = R_D \parallel r_d \parallel R_L = \frac{8}{3.75\text{ mS}} = 2.133\text{ k}\Omega
-    $$
+$$
+R_{eq} = R_D \parallel r_d \parallel R_L = \frac{8}{3.75\text{ mS}} = 2.133\text{ k}\Omega
+$$
 
-    $$
-    \frac{1}{R_{eq}} = \frac{1}{R_D} + \frac{1}{r_d} + \frac{1}{R_L} \Rightarrow \frac{1}{2.133\text{k}} = \frac{1}{R_D} + \frac{1}{20\text{k}} + \frac{1}{10\text{M}}
-    $$
+$$
+\frac{1}{R_{eq}} = \frac{1}{R_D} + \frac{1}{r_d} + \frac{1}{R_L} \Rightarrow \frac{1}{2.133\text{k}} = \frac{1}{R_D} + \frac{1}{20\text{k}} + \frac{1}{10\text{M}}
+$$
 
-    $$
-    \frac{1}{R_D} = 0.4688\text{ mS} - 0.05\text{ mS} - 0.0001\text{ mS} = 0.4187\text{ mS}
-    $$
+$$
+\frac{1}{R_D} = 0.4688\text{ mS} - 0.05\text{ mS} - 0.0001\text{ mS} = 0.4187\text{ mS}
+$$
 
-    $$
-    R_D = \frac{1}{0.4187\text{ mS}} = 2.388\text{ k}\Omega \approx 2.4\text{ k}\Omega
-    $$
+$$
+R_D = \frac{1}{0.4187\text{ mS}} = 2.388\text{ k}\Omega \approx 2.4\text{ k}\Omega
+$$
 
 **(c) Explain CMOS digital logic inverter with schematic. [03 Marks]**
 *(Identical to 2023 Q.3(c), but explicitly 1-input. PMOS pull-up, NMOS pull-down. Input $0$ -> NMOS OFF, PMOS ON -> Output $1$. Input $1$ -> NMOS ON, PMOS OFF -> Output $0$).*
@@ -209,21 +209,21 @@ $I_{DSS} = 10\text{ mA}, V_P = -4\text{ V}, g_{m0} = 5\text{ mS}, r_d = 20\text{
 1.  A feedback capacitor $C_f$ bridges input $V_i$ and output $V_o$. The voltage gain is $A_v = V_o / V_i$, so $V_i = V_o / A_v$.
 2.  The current flowing from the output node into the capacitor is:
 
-    $$
-    I_o = \frac{V_o - V_i}{1/j\omega C_f} = j\omega C_f \left( V_o - \frac{V_o}{A_v} \right) = j\omega C_f \left( 1 - \frac{1}{A_v} \right) V_o
-    $$
+$$
+I_o = \frac{V_o - V_i}{1/j\omega C_f} = j\omega C_f \left( V_o - \frac{V_o}{A_v} \right) = j\omega C_f \left( 1 - \frac{1}{A_v} \right) V_o
+$$
 
 3.  The equivalent output impedance is:
 
-    $$
-    Z_{out} = \frac{V_o}{I_o} = \frac{1}{j\omega C_f (1 - 1/A_v)}
-    $$
+$$
+Z_{out} = \frac{V_o}{I_o} = \frac{1}{j\omega C_f (1 - 1/A_v)}
+$$
 
 4.  This perfectly matches the reactance formula $\frac{1}{j\omega C_{Mo}}$, yielding:
 
-    $$
-    C_{Mo} = C_f \left( 1 - \frac{1}{A_v} \right)
-    $$
+$$
+C_{Mo} = C_f \left( 1 - \frac{1}{A_v} \right)
+$$
 
 **(b) Determine the lower-cutoff frequency ($f_L$) for the JFET CS amplifier. [04 Marks]**
 **Solution:**
@@ -231,42 +231,42 @@ $V_{DD} = +20\text{V}, I_{DSS} = 8\text{mA}, V_P = -4\text{V}, R_S = 1\text{ k}\
 1.  **DC Biasing:**
     $V_{GS} = -I_D R_S = -1 I_D$ (in mA).
 
-    $$
-    I_D = 8 \left(1 + \frac{V_{GS}}{4}\right)^2 \Rightarrow -V_{GS} = 8 \left(1 + 0.5 V_{GS} + 0.0625 V_{GS}^2\right) = 8 + 4 V_{GS} + 0.5 V_{GS}^2
-    $$
+$$
+I_D = 8 \left(1 + \frac{V_{GS}}{4}\right)^2 \Rightarrow -V_{GS} = 8 \left(1 + 0.5 V_{GS} + 0.0625 V_{GS}^2\right) = 8 + 4 V_{GS} + 0.5 V_{GS}^2
+$$
 
-    $$
-    0.5 V_{GS}^2 + 5 V_{GS} + 8 = 0
-    $$
+$$
+0.5 V_{GS}^2 + 5 V_{GS} + 8 = 0
+$$
 
     Using the quadratic formula: $V_{GSQ} = -2\text{ V}$.
 
-    $$
-    g_m = \frac{16}{4} \left(1 - \frac{-2}{-4}\right) = 4(0.5) = 2\text{ mS}
-    $$
+$$
+g_m = \frac{16}{4} \left(1 - \frac{-2}{-4}\right) = 4(0.5) = 2\text{ mS}
+$$
 
 2.  **Cutoff Frequencies:**
     *   **Input ($f_{LG}$):**
 
-        $$
-        f_{LG} = \frac{1}{2\pi (R_{sig} + R_G) C_G} = \frac{1}{2\pi (10\text{k} + 1000\text{k}) 0.01\ \mu\text{F}} = \frac{1}{2\pi (1.01\times 10^6) (10^{-8})} = 15.7\text{ Hz}
-        $$
+$$
+f_{LG} = \frac{1}{2\pi (R_{sig} + R_G) C_G} = \frac{1}{2\pi (10\text{k} + 1000\text{k}) 0.01\ \mu\text{F}} = \frac{1}{2\pi (1.01\times 10^6) (10^{-8})} = 15.7\text{ Hz}
+$$
 
     *   **Output ($f_{LC}$):**
 
-        $$
-        f_{LC} = \frac{1}{2\pi (R_D + R_L) C_C} = \frac{1}{2\pi (4.7\text{k} + 2.2\text{k}) 0.5\ \mu\text{F}} = \frac{1}{2\pi (6900) (5\times 10^{-7})} = 46.1\text{ Hz}
-        $$
+$$
+f_{LC} = \frac{1}{2\pi (R_D + R_L) C_C} = \frac{1}{2\pi (4.7\text{k} + 2.2\text{k}) 0.5\ \mu\text{F}} = \frac{1}{2\pi (6900) (5\times 10^{-7})} = 46.1\text{ Hz}
+$$
 
     *   **Source Bypass ($f_{LS}$):**
 
-        $$
-        R_{eq} = R_S \parallel \frac{1}{g_m} = 1000 \parallel 500 = 333.3\ \Omega
-        $$
+$$
+R_{eq} = R_S \parallel \frac{1}{g_m} = 1000 \parallel 500 = 333.3\ \Omega
+$$
 
-        $$
-        f_{LS} = \frac{1}{2\pi (333.3) 2\ \mu\text{F}} = 238.7\text{ Hz}
-        $$
+$$
+f_{LS} = \frac{1}{2\pi (333.3) 2\ \mu\text{F}} = 238.7\text{ Hz}
+$$
 
 **Overall Lower Cutoff Frequency:**
 
@@ -333,15 +333,15 @@ Common-mode voltage $V_c = \frac{V_{i1} + V_{i2}}{2} = 145\ \mu\text{V}$.
 The output voltage formula accounting for CMRR is: $V_o = A_d \left( V_d + \frac{V_c}{\text{CMRR}} \right)$.
 1.  **(i) CMRR = 100:**
 
-    $$
-    V_o = 4000 \left( 10\ \mu\text{V} + \frac{145\ \mu\text{V}}{100} \right) = 4000 (10\ \mu\text{V} + 1.45\ \mu\text{V}) = 4000 (11.45\ \mu\text{V}) = 45.8\text{ mV}
-    $$
+$$
+V_o = 4000 \left( 10\ \mu\text{V} + \frac{145\ \mu\text{V}}{100} \right) = 4000 (10\ \mu\text{V} + 1.45\ \mu\text{V}) = 4000 (11.45\ \mu\text{V}) = 45.8\text{ mV}
+$$
 
 2.  **(ii) CMRR = $10^5$:**
 
-    $$
-    V_o = 4000 \left( 10\ \mu\text{V} + \frac{145\ \mu\text{V}}{100,000} \right) = 4000 (10\ \mu\text{V} + 0.00145\ \mu\text{V}) \approx 4000 (10\ \mu\text{V}) = 40.0\text{ mV}
-    $$
+$$
+V_o = 4000 \left( 10\ \mu\text{V} + \frac{145\ \mu\text{V}}{100,000} \right) = 4000 (10\ \mu\text{V} + 0.00145\ \mu\text{V}) \approx 4000 (10\ \mu\text{V}) = 40.0\text{ mV}
+$$
 
 **(b) Design circuit: $V_o = 0.5 V_1 + 3 V_2 + 2 \int V_3 d t - 5 \frac{d V_4}{d t}$. [04 Marks]**
 *(Design strategy matches 2023 Q.5(c). Convert to negative sum, apply pre-inverters, pre-differentiators, and pre-integrators, and feed into a multi-input inverting summer).*
@@ -382,20 +382,20 @@ $$
     Open-loop gain $A = -1000$. Feedback factor $\beta = -0.1$. Open-loop change $\Delta A / A = 20\%$.
     The equation for the fractional change in closed-loop gain is:
 
-    $$
-    \frac{\Delta A_f}{A_f} = \frac{1}{1 + A\beta} \left( \frac{\Delta A}{A} \right)
-    $$
+$$
+\frac{\Delta A_f}{A_f} = \frac{1}{1 + A\beta} \left( \frac{\Delta A}{A} \right)
+$$
 
     Calculate the desensitivity factor $(1 + A\beta)$:
 
-    $$
-    1 + A\beta = 1 + (-1000)(-0.1) = 1 + 100 = 101
-    $$
+$$
+1 + A\beta = 1 + (-1000)(-0.1) = 1 + 100 = 101
+$$
 
     Calculate the percentage change:
 
-    $$
-    \%\text{ Change in } A_f = \frac{1}{101} \times 20\% = 0.198\%
-    $$
+$$
+\%\text{ Change in } A_f = \frac{1}{101} \times 20\% = 0.198\%
+$$
 
     *(Conclusion: The feedback network reduced a massive $20\%$ physical gain fluctuation down to an imperceptible $0.198\%$ change).*

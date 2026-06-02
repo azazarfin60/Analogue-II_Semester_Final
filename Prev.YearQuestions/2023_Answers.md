@@ -15,80 +15,80 @@
 1.  **DC Biasing:** $V_{DD} = 20\text{V}$, $I_{DSS} = 10\text{mA}$, $V_P = -4\text{V}$, $R_S = 680\ \Omega$.
     $V_{GS} = -I_D R_S = -0.68 I_D$ (with $I_D$ in mA).
 
-    $$
-    I_D = I_{DSS}\left(1 - \frac{V_{GS}}{V_P}\right)^2 = 10\left(1 + \frac{V_{GS}}{4}\right)^2 = 10\left(1 + 0.5 V_{GS} + 0.0625 V_{GS}^2\right)
-    $$
+$$
+I_D = I_{DSS}\left(1 - \frac{V_{GS}}{V_P}\right)^2 = 10\left(1 + \frac{V_{GS}}{4}\right)^2 = 10\left(1 + 0.5 V_{GS} + 0.0625 V_{GS}^2\right)
+$$
 
-    $$
-    -\frac{V_{GS}}{0.68} = 10 + 5 V_{GS} + 0.625 V_{GS}^2 \Rightarrow -1.47 V_{GS} = 10 + 5 V_{GS} + 0.625 V_{GS}^2
-    $$
+$$
+-\frac{V_{GS}}{0.68} = 10 + 5 V_{GS} + 0.625 V_{GS}^2 \Rightarrow -1.47 V_{GS} = 10 + 5 V_{GS} + 0.625 V_{GS}^2
+$$
 
-    $$
-    0.625 V_{GS}^2 + 6.47 V_{GS} + 10 = 0
-    $$
+$$
+0.625 V_{GS}^2 + 6.47 V_{GS} + 10 = 0
+$$
 
     Applying the quadratic formula yields $V_{GS} = -1.89\text{ V}$.
 2.  **AC Parameters:**
 
-    $$
-    g_m = \frac{2 I_{DSS}}{|V_P|} \left(1 - \frac{V_{GS}}{V_P}\right) = \frac{20\text{ mA}}{4\text{ V}} \left(1 - \frac{-1.89}{-4}\right) = 5\text{ mS} (1 - 0.4725) = 2.64\text{ mS}
-    $$
+$$
+g_m = \frac{2 I_{DSS}}{|V_P|} \left(1 - \frac{V_{GS}}{V_P}\right) = \frac{20\text{ mA}}{4\text{ V}} \left(1 - \frac{-1.89}{-4}\right) = 5\text{ mS} (1 - 0.4725) = 2.64\text{ mS}
+$$
 
     Input Impedance: $Z_{in1} = R_G = 3.3\text{ M}\Omega$.
 
 **Stage 2 (NPN BJT CE):**
 1.  **DC Biasing:** $V_{CC} = 20\text{V}$, $\beta = 200$. $R_{B1} = 15\text{ k}\Omega$, $R_{B2} = 4.7\text{ k}\Omega$.
 
-    $$
-    V_{th} = 20\text{ V} \times \frac{4.7}{15 + 4.7} = 4.77\text{ V}
-    $$
+$$
+V_{th} = 20\text{ V} \times \frac{4.7}{15 + 4.7} = 4.77\text{ V}
+$$
 
-    $$
-    R_{th} = 15\text{ k}\Omega \parallel 4.7\text{ k}\Omega = 3.58\text{ k}\Omega
-    $$
+$$
+R_{th} = 15\text{ k}\Omega \parallel 4.7\text{ k}\Omega = 3.58\text{ k}\Omega
+$$
 
-    $$
-    I_E = \frac{V_{th} - V_{BE}}{R_E + R_{th}/\beta} = \frac{4.77 - 0.7}{1000 + 3580/200} = \frac{4.07\text{ V}}{1017.9\ \Omega} = 4.0\text{ mA}
-    $$
+$$
+I_E = \frac{V_{th} - V_{BE}}{R_E + R_{th}/\beta} = \frac{4.77 - 0.7}{1000 + 3580/200} = \frac{4.07\text{ V}}{1017.9\ \Omega} = 4.0\text{ mA}
+$$
 
 2.  **AC Parameters:**
 
-    $$
-    r_e = \frac{26\text{ mV}}{4.0\text{ mA}} = 6.5\ \Omega
-    $$
+$$
+r_e = \frac{26\text{ mV}}{4.0\text{ mA}} = 6.5\ \Omega
+$$
 
     Input Impedance of Stage 2:
 
-    $$
-    Z_{in2} = R_{th} \parallel \beta r_e = 3.58\text{ k}\Omega \parallel 200(6.5\ \Omega) = 3580 \parallel 1300 = 953\ \Omega \approx 0.95\text{ k}\Omega
-    $$
+$$
+Z_{in2} = R_{th} \parallel \beta r_e = 3.58\text{ k}\Omega \parallel 200(6.5\ \Omega) = 3580 \parallel 1300 = 953\ \Omega \approx 0.95\text{ k}\Omega
+$$
 
 **Overall Parameters:**
 *   **(i) Overall Voltage Gain ($A_v$):**
 
-    $$
-    A_{v1} = -g_m (R_D \parallel Z_{in2}) = -2.64\text{ mS} \times (2.4\text{ k}\Omega \parallel 0.95\text{ k}\Omega) = -2.64 \times 0.68 = -1.8
-    $$
+$$
+A_{v1} = -g_m (R_D \parallel Z_{in2}) = -2.64\text{ mS} \times (2.4\text{ k}\Omega \parallel 0.95\text{ k}\Omega) = -2.64 \times 0.68 = -1.8
+$$
 
-    $$
-    A_{v2} = -\frac{R_C}{r_e} = -\frac{2200}{6.5} = -338.5
-    $$
+$$
+A_{v2} = -\frac{R_C}{r_e} = -\frac{2200}{6.5} = -338.5
+$$
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) = 609.3
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) = 609.3
+$$
 
 *   **(ii) Input Impedance ($Z_i$):**
 
-    $$
-    Z_i = Z_{in1} = R_G = 3.3\text{ M}\Omega
-    $$
+$$
+Z_i = Z_{in1} = R_G = 3.3\text{ M}\Omega
+$$
 
 *   **(iii) Output Impedance ($Z_o$):**
 
-    $$
-    Z_o = R_C = 2.2\text{ k}\Omega
-    $$
+$$
+Z_o = R_C = 2.2\text{ k}\Omega
+$$
 
 ---
 
@@ -145,28 +145,28 @@ $R_C = 2.7\text{ k}\Omega$, $R_F = 330\text{ k}\Omega$, $h_{fe} = 120$, $h_{ie} 
 Effective collector load $R_C' = R_C \parallel r_o = 2.7\text{k} \parallel 50\text{k} = 2.56\text{ k}\Omega$.
 1.  **Voltage Gain ($A_v$):**
 
-    $$
-    A_v = -h_{fe} \frac{R_C' \parallel R_F}{h_{ie}} = -120 \frac{2.56\text{k} \parallel 330\text{k}}{1.175\text{k}} = -120 \frac{2.54\text{k}}{1.175\text{k}} = -259.4
-    $$
+$$
+A_v = -h_{fe} \frac{R_C' \parallel R_F}{h_{ie}} = -120 \frac{2.56\text{k} \parallel 330\text{k}}{1.175\text{k}} = -120 \frac{2.54\text{k}}{1.175\text{k}} = -259.4
+$$
 
 2.  **Input Impedance ($Z_i$):**
     Using Miller's theorem, the feedback resistor appears at the input as $R_{Mi} = \frac{R_F}{1 - A_v} = \frac{330\text{k}}{1 + 259.4} = 1.26\text{ k}\Omega$.
 
-    $$
-    Z_i = h_{ie} \parallel R_{Mi} = 1.175\text{ k}\Omega \parallel 1.26\text{ k}\Omega = 607\ \Omega
-    $$
+$$
+Z_i = h_{ie} \parallel R_{Mi} = 1.175\text{ k}\Omega \parallel 1.26\text{ k}\Omega = 607\ \Omega
+$$
 
 3.  **Output Impedance ($Z_o$):**
 
-    $$
-    Z_o = R_C \parallel r_o \parallel R_F \approx R_C' \parallel R_F = 2.54\text{ k}\Omega
-    $$
+$$
+Z_o = R_C \parallel r_o \parallel R_F \approx R_C' \parallel R_F = 2.54\text{ k}\Omega
+$$
 
 4.  **Current Gain ($A_i$):**
 
-    $$
-    A_i = \frac{i_o}{i_i} = \frac{v_o / R_C}{v_i / Z_i} = A_v \left( \frac{Z_i}{R_C} \right) = -259.4 \left( \frac{607\ \Omega}{2700\ \Omega} \right) = -58.3
-    $$
+$$
+A_i = \frac{i_o}{i_i} = \frac{v_o / R_C}{v_i / Z_i} = A_v \left( \frac{Z_i}{R_C} \right) = -259.4 \left( \frac{607\ \Omega}{2700\ \Omega} \right) = -58.3
+$$
 
 ---
 
@@ -177,56 +177,56 @@ $V_{DD} = 20\text{V}$, $I_{DSS} = 8\text{mA}$, $V_P = -8\text{V}$, $R_D = 6.2\te
 1.  **Self-Bias Equation:** $V_{GS} = -I_D R_S = -2.4 I_D$ (with $I_D$ in mA).
 2.  **Shockley's Equation:**
 
-    $$
-    I_D = I_{DSS} \left(1 - \frac{V_{GS}}{V_P}\right)^2 = 8 \left(1 + \frac{V_{GS}}{8}\right)^2 = 8 \left(1 + 0.25 V_{GS} + 0.0156 V_{GS}^2\right) = 8 + 2 V_{GS} + 0.125 V_{GS}^2
-    $$
+$$
+I_D = I_{DSS} \left(1 - \frac{V_{GS}}{V_P}\right)^2 = 8 \left(1 + \frac{V_{GS}}{8}\right)^2 = 8 \left(1 + 0.25 V_{GS} + 0.0156 V_{GS}^2\right) = 8 + 2 V_{GS} + 0.125 V_{GS}^2
+$$
 
 3.  **Equating:**
 
-    $$
-    -\frac{V_{GS}}{2.4} = 8 + 2 V_{GS} + 0.125 V_{GS}^2 \Rightarrow -0.417 V_{GS} = 8 + 2 V_{GS} + 0.125 V_{GS}^2
-    $$
+$$
+-\frac{V_{GS}}{2.4} = 8 + 2 V_{GS} + 0.125 V_{GS}^2 \Rightarrow -0.417 V_{GS} = 8 + 2 V_{GS} + 0.125 V_{GS}^2
+$$
 
-    $$
-    0.125 V_{GS}^2 + 2.417 V_{GS} + 8 = 0
-    $$
+$$
+0.125 V_{GS}^2 + 2.417 V_{GS} + 8 = 0
+$$
 
     Using the quadratic formula: $V_{GSQ} = -4.24\text{ V}$.
 4.  **Q-Point Drain Current:**
 
-    $$
-    I_{DQ} = \frac{-V_{GSQ}}{R_S} = \frac{4.24\text{ V}}{2.4\text{ k}\Omega} = 1.76\text{ mA}
-    $$
+$$
+I_{DQ} = \frac{-V_{GSQ}}{R_S} = \frac{4.24\text{ V}}{2.4\text{ k}\Omega} = 1.76\text{ mA}
+$$
 
 5.  **Drain Voltage ($V_D$):**
 
-    $$
-    V_D = V_{DD} - I_{DQ} R_D = 20\text{ V} - (1.76\text{ mA})(6.2\text{ k}\Omega) = 20 - 10.91 = 9.09\text{ V}
-    $$
+$$
+V_D = V_{DD} - I_{DQ} R_D = 20\text{ V} - (1.76\text{ mA})(6.2\text{ k}\Omega) = 20 - 10.91 = 9.09\text{ V}
+$$
 
 **(b) Determine $R_S$ for JFET voltage-divider bias: $V_D = 12\text{V}, V_{GSQ} = -2\text{V}$. [03 Marks]**
 **Solution:**
 1.  **Calculate Drain Current ($I_D$):**
 
-    $$
-    I_D = \frac{V_{DD} - V_D}{R_D} = \frac{16\text{ V} - 12\text{ V}}{1.8\text{ k}\Omega} = \frac{4\text{ V}}{1.8\text{ k}\Omega} = 2.22\text{ mA}
-    $$
+$$
+I_D = \frac{V_{DD} - V_D}{R_D} = \frac{16\text{ V} - 12\text{ V}}{1.8\text{ k}\Omega} = \frac{4\text{ V}}{1.8\text{ k}\Omega} = 2.22\text{ mA}
+$$
 
 2.  **Calculate Gate Voltage ($V_G$):**
 
-    $$
-    V_G = V_{DD} \frac{R_{G2}}{R_{G1} + R_{G2}} = 16\text{ V} \times \frac{47\text{ k}\Omega}{91\text{ k}\Omega + 47\text{ k}\Omega} = 16 \times \frac{47}{138} = 5.45\text{ V}
-    $$
+$$
+V_G = V_{DD} \frac{R_{G2}}{R_{G1} + R_{G2}} = 16\text{ V} \times \frac{47\text{ k}\Omega}{91\text{ k}\Omega + 47\text{ k}\Omega} = 16 \times \frac{47}{138} = 5.45\text{ V}
+$$
 
 3.  **Calculate Source Voltage ($V_S$) and $R_S$:**
 
-    $$
-    V_{GS} = V_G - V_S \Rightarrow -2\text{ V} = 5.45\text{ V} - V_S \Rightarrow V_S = 7.45\text{ V}
-    $$
+$$
+V_{GS} = V_G - V_S \Rightarrow -2\text{ V} = 5.45\text{ V} - V_S \Rightarrow V_S = 7.45\text{ V}
+$$
 
-    $$
-    R_S = \frac{V_S}{I_D} = \frac{7.45\text{ V}}{2.22\text{ mA}} = 3.35\text{ k}\Omega
-    $$
+$$
+R_S = \frac{V_S}{I_D} = \frac{7.45\text{ V}}{2.22\text{ mA}} = 3.35\text{ k}\Omega
+$$
 
 **(c) Explain electrical characteristics and structural advantages of CMOS logic gates. [03 Marks]**
 **Answer:**
@@ -288,25 +288,25 @@ The summer output yields exactly the requested equation.
 **Solution:**
 1.  **Differential Gain ($A_d$):**
 
-    $$
-    A_d = \frac{V_{o(diff)}}{V_d} = \frac{120\text{ mV}}{1\text{ mV}} = 120
-    $$
+$$
+A_d = \frac{V_{o(diff)}}{V_d} = \frac{120\text{ mV}}{1\text{ mV}} = 120
+$$
 
 2.  **Common-Mode Gain ($A_{cm}$):**
 
-    $$
-    A_{cm} = \frac{V_{o(cm)}}{V_c} = \frac{20\ \mu\text{V}}{1\text{ mV}} = \frac{0.02\text{ mV}}{1\text{ mV}} = 0.02
-    $$
+$$
+A_{cm} = \frac{V_{o(cm)}}{V_c} = \frac{20\ \mu\text{V}}{1\text{ mV}} = \frac{0.02\text{ mV}}{1\text{ mV}} = 0.02
+$$
 
 3.  **CMRR Calculation:**
 
-    $$
-    \text{CMRR}_{dB} = 20 \log_{10} \left( \frac{A_d}{A_{cm}} \right) = 20 \log_{10} \left( \frac{120}{0.02} \right) = 20 \log_{10} (6000)
-    $$
+$$
+\text{CMRR}_{dB} = 20 \log_{10} \left( \frac{A_d}{A_{cm}} \right) = 20 \log_{10} \left( \frac{120}{0.02} \right) = 20 \log_{10} (6000)
+$$
 
-    $$
-    \text{CMRR}_{dB} = 20 \times 3.778 = 75.56\text{ dB}
-    $$
+$$
+\text{CMRR}_{dB} = 20 \times 3.778 = 75.56\text{ dB}
+$$
 
 ---
 

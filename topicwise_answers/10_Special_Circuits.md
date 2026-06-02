@@ -24,16 +24,16 @@ In integrated circuits (ICs), resistors are highly space-inefficient. Instead, t
 
 *   **Logic:** $Q_1$ is diode-connected (its collector is shorted directly to its base), forcing it to operate in the active region. The current $I_{ref}$ flowing down through resistor $R$ establishes a base-emitter voltage $V_{BE}$ across $Q_1$:
 
-    $$
-    V_{BE} = V_T \ln \left( \frac{I_{ref}}{I_{s1}} \right)
-    $$
+$$
+V_{BE} = V_T \ln \left( \frac{I_{ref}}{I_{s1}} \right)
+$$
 
 *   Since the base and emitter terminals of $Q_1$ and $Q_2$ are tied directly in parallel, $Q_2$ is subjected to the exact same $V_{BE}$.
 *   Assuming perfectly matched, identical transistors ($I_{s1} = I_{s2}$):
 
-    $$
-    I_{out} = I_{s2} e^{V_{BE} / V_T} = I_{ref}
-    $$
+$$
+I_{out} = I_{s2} e^{V_{BE} / V_T} = I_{ref}
+$$
 
 The output current $I_{out}$ in the collector of $Q_2$ mirrors the reference current $I_{ref}$, behaving as a constant current sink regardless of the load voltage connected at $Q_2$'s collector.
 
@@ -85,43 +85,43 @@ The Wilson current mirror uses three transistors to drastically increase output 
 Assume identical, matched transistors with finite $\beta$:
 1.  Collector current of $Q_1$ is:
 
-    $$
-    I_{C1} = I_{ref} - I_{B3}
-    $$
+$$
+I_{C1} = I_{ref} - I_{B3}
+$$
 
 2.  Since $Q_1$ and $Q_2$ form a basic mirror, their base-emitter terminals are in parallel:
 
-    $$
-    I_{C1} = I_{C2} = I_C
-    $$
+$$
+I_{C1} = I_{C2} = I_C
+$$
 
 3.  The emitter current of $Q_3$ feeds the bases of $Q_1, Q_2$ and the collector of $Q_2$:
 
-    $$
-    I_{E3} = I_{C2} + I_{B1} + I_{B2} = I_C + \frac{2 I_C}{\beta} = I_C \left( 1 + \frac{2}{\beta} \right)
-    $$
+$$
+I_{E3} = I_{C2} + I_{B1} + I_{B2} = I_C + \frac{2 I_C}{\beta} = I_C \left( 1 + \frac{2}{\beta} \right)
+$$
 
 4.  The output current is the collector current of $Q_3$:
 
-    $$
-    I_{out} = I_{C3} = \frac{\beta}{\beta + 1} I_{E3} = \frac{\beta}{\beta + 1} I_C \left( 1 + \frac{2}{\beta} \right) = I_C \left( \frac{\beta + 2}{\beta + 1} \right)
-    $$
+$$
+I_{out} = I_{C3} = \frac{\beta}{\beta + 1} I_{E3} = \frac{\beta}{\beta + 1} I_C \left( 1 + \frac{2}{\beta} \right) = I_C \left( \frac{\beta + 2}{\beta + 1} \right)
+$$
 
 5.  Substitute $I_C = I_{ref} - I_{B3} = I_{ref} - \frac{I_{out}}{\beta}$:
 
-    $$
-    I_{out} = \left( I_{ref} - \frac{I_{out}}{\beta} \right) \left( \frac{\beta + 2}{\beta + 1} \right) \Rightarrow I_{out} \left( 1 + \frac{\beta + 2}{\beta^2 + \beta} \right) = I_{ref} \left( \frac{\beta + 2}{\beta + 1} \right)
-    $$
+$$
+I_{out} = \left( I_{ref} - \frac{I_{out}}{\beta} \right) \left( \frac{\beta + 2}{\beta + 1} \right) \Rightarrow I_{out} \left( 1 + \frac{\beta + 2}{\beta^2 + \beta} \right) = I_{ref} \left( \frac{\beta + 2}{\beta + 1} \right)
+$$
 
-    $$
-    I_{out} \left( \frac{\beta^2 + 2\beta + 2}{\beta(\beta + 1)} \right) = I_{ref} \left( \frac{\beta(\beta + 2)}{\beta(\beta + 1)} \right) \Rightarrow I_{out} = I_{ref} \left( \frac{\beta^2 + 2\beta}{\beta^2 + 2\beta + 2} \right)
-    $$
+$$
+I_{out} \left( \frac{\beta^2 + 2\beta + 2}{\beta(\beta + 1)} \right) = I_{ref} \left( \frac{\beta(\beta + 2)}{\beta(\beta + 1)} \right) \Rightarrow I_{out} = I_{ref} \left( \frac{\beta^2 + 2\beta}{\beta^2 + 2\beta + 2} \right)
+$$
 
 6.  Divide numerator and denominator by $\beta^2 + 2\beta$:
 
-    $$
-    I_{out} = I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + 2\beta}} \right) \approx I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + \beta}} \right)
-    $$
+$$
+I_{out} = I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + 2\beta}} \right) \approx I_{ref} \left( \frac{1}{1 + \frac{2}{\beta^2 + \beta}} \right)
+$$
 
 For $\beta = 100$, the transfer error is reduced to a minuscule $0.02\%$.
 

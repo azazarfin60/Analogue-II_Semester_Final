@@ -128,43 +128,43 @@ At high frequencies, the standard low-frequency BJT model is inadequate due to t
 To isolate the input and output high-frequency cutoff points:
 1.  **Miller Split:** The bridging capacitor $C_{\mu}$ is split into:
 
-    $$
-    C_{Mi} = C_{\mu} (1 - A_v) \quad \text{and} \quad C_{Mo} = C_{\mu} \left( 1 - \frac{1}{A_v} \right)
-    $$
+$$
+C_{Mi} = C_{\mu} (1 - A_v) \quad \text{and} \quad C_{Mo} = C_{\mu} \left( 1 - \frac{1}{A_v} \right)
+$$
 
 2.  **Input Upper Cutoff ($f_{Hi}$):**
     The total input shunt capacitance is:
 
-    $$
-    C_{in(total)} = C_{\pi} + C_{Mi}
-    $$
+$$
+C_{in(total)} = C_{\pi} + C_{Mi}
+$$
 
     The Thevenin resistance seen by this capacitance is:
 
-    $$
-    R_{Thi} = R_s \parallel R_B \parallel Z_{base} \quad \text{where} \quad Z_{base} \approx \beta r_e
-    $$
+$$
+R_{Thi} = R_s \parallel R_B \parallel Z_{base} \quad \text{where} \quad Z_{base} \approx \beta r_e
+$$
 
-    $$
-    f_{Hi} = \frac{1}{2\pi R_{Thi} C_{in(total)}}
-    $$
+$$
+f_{Hi} = \frac{1}{2\pi R_{Thi} C_{in(total)}}
+$$
 
 3.  **Output Upper Cutoff ($f_{Ho}$):**
     The total output shunt capacitance is:
 
-    $$
-    C_{out(total)} = C_{Mo} + C_{wiring}
-    $$
+$$
+C_{out(total)} = C_{Mo} + C_{wiring}
+$$
 
     The Thevenin resistance seen by this capacitance is:
 
-    $$
-    R_{Tho} = R_C \parallel R_L
-    $$
+$$
+R_{Tho} = R_C \parallel R_L
+$$
 
-    $$
-    f_{Ho} = \frac{1}{2\pi R_{Tho} C_{out(total)}}
-    $$
+$$
+f_{Ho} = \frac{1}{2\pi R_{Tho} C_{out(total)}}
+$$
 
 The overall system upper cutoff is defined by the lower of these two frequencies:
 

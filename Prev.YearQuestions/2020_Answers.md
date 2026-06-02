@@ -13,29 +13,29 @@
 1.  **DC Analysis:**
     The base is biased by $R_{B1} = 24\text{ k}\Omega$ and $R_{B2} = 8.2\text{ k}\Omega$.
 
-    $$
-    V_{th} = V_{CC} \frac{R_{B2}}{R_{B1} + R_{B2}} = 10\text{ V} \times \frac{8.2}{24 + 8.2} = 10 \times \frac{8.2}{32.2} = 2.546\text{ V}
-    $$
+$$
+V_{th} = V_{CC} \frac{R_{B2}}{R_{B1} + R_{B2}} = 10\text{ V} \times \frac{8.2}{24 + 8.2} = 10 \times \frac{8.2}{32.2} = 2.546\text{ V}
+$$
 
-    $$
-    R_{th} = 24\text{ k}\Omega \parallel 8.2\text{ k}\Omega = 6.11\text{ k}\Omega
-    $$
+$$
+R_{th} = 24\text{ k}\Omega \parallel 8.2\text{ k}\Omega = 6.11\text{ k}\Omega
+$$
 
-    $$
-    I_{E1} = \frac{V_{th} - V_{BE}}{R_E + R_{th}/\beta} = \frac{2.546 - 0.7}{2.2\text{ k}\Omega + 6.11\text{ k}\Omega / 150} = \frac{1.846\text{ V}}{2.24\text{ k}\Omega} = 0.824\text{ mA}
-    $$
+$$
+I_{E1} = \frac{V_{th} - V_{BE}}{R_E + R_{th}/\beta} = \frac{2.546 - 0.7}{2.2\text{ k}\Omega + 6.11\text{ k}\Omega / 150} = \frac{1.846\text{ V}}{2.24\text{ k}\Omega} = 0.824\text{ mA}
+$$
 
 2.  **AC Parameters:**
 
-    $$
-    r_{e1} = \frac{26\text{ mV}}{I_{E1}} = \frac{26\text{ mV}}{0.824\text{ mA}} = 31.55\ \Omega
-    $$
+$$
+r_{e1} = \frac{26\text{ mV}}{I_{E1}} = \frac{26\text{ mV}}{0.824\text{ mA}} = 31.55\ \Omega
+$$
 
     Input impedance of Stage 1:
 
-    $$
-    Z_{i1} = R_{B1} \parallel R_{B2} \parallel \beta r_{e1} = 6.11\text{ k}\Omega \parallel 150(31.55\ \Omega) = 6.11\text{ k}\Omega \parallel 4.73\text{ k}\Omega = 2.66\text{ k}\Omega
-    $$
+$$
+Z_{i1} = R_{B1} \parallel R_{B2} \parallel \beta r_{e1} = 6.11\text{ k}\Omega \parallel 150(31.55\ \Omega) = 6.11\text{ k}\Omega \parallel 4.73\text{ k}\Omega = 2.66\text{ k}\Omega
+$$
 
 **Stage 2: n-channel JFET (Common-Source)**
 1.  **DC Analysis:**
@@ -44,47 +44,47 @@
     Solving this yields $V_{GS} = -0.94\text{ V}$ and $I_D = 2.85\text{ mA}$.
 2.  **AC Parameters:**
 
-    $$
-    g_m = \frac{2 I_{DSS}}{|V_P|} \left(1 - \frac{V_{GS}}{V_P}\right) = \frac{12\text{ mA}}{3\text{ V}} \left(1 - \frac{-0.94}{-3}\right) = 4\text{ mS} (1 - 0.313) = 2.75\text{ mS}
-    $$
+$$
+g_m = \frac{2 I_{DSS}}{|V_P|} \left(1 - \frac{V_{GS}}{V_P}\right) = \frac{12\text{ mA}}{3\text{ V}} \left(1 - \frac{-0.94}{-3}\right) = 4\text{ mS} (1 - 0.313) = 2.75\text{ mS}
+$$
 
     Input impedance of Stage 2:
 
-    $$
-    Z_{i2} = R_G = 10\text{ M}\Omega
-    $$
+$$
+Z_{i2} = R_G = 10\text{ M}\Omega
+$$
 
 **Cascaded Parameters:**
 *   **(i) Overall Voltage Gain ($A_v$):**
     Stage 1 Voltage Gain ($A_{v1}$): The load on the BJT collector is $R_{C1} \parallel Z_{i2}$.
 
-    $$
-    A_{v1} = -\frac{R_{C1} \parallel Z_{i2}}{r_{e1}} = -\frac{2.7\text{ k}\Omega \parallel 10\text{ M}\Omega}{31.55\ \Omega} \approx -\frac{2700}{31.55} = -85.58
-    $$
+$$
+A_{v1} = -\frac{R_{C1} \parallel Z_{i2}}{r_{e1}} = -\frac{2.7\text{ k}\Omega \parallel 10\text{ M}\Omega}{31.55\ \Omega} \approx -\frac{2700}{31.55} = -85.58
+$$
 
     Stage 2 Voltage Gain ($A_{v2}$):
 
-    $$
-    A_{v2} = -g_m R_D = -2.75\text{ mS} \times 1.8\text{ k}\Omega = -4.95
-    $$
+$$
+A_{v2} = -g_m R_D = -2.75\text{ mS} \times 1.8\text{ k}\Omega = -4.95
+$$
 
     Total Voltage Gain:
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-85.58) \times (-4.95) = 423.6
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-85.58) \times (-4.95) = 423.6
+$$
 
 *   **(ii) Input Impedance ($Z_i$):**
 
-    $$
-    Z_i = Z_{i1} = 2.66\text{ k}\Omega
-    $$
+$$
+Z_i = Z_{i1} = 2.66\text{ k}\Omega
+$$
 
 *   **(iii) Output Impedance ($Z_o$):**
 
-    $$
-    Z_o = R_D = 1.8\text{ k}\Omega
-    $$
+$$
+Z_o = R_D = 1.8\text{ k}\Omega
+$$
 
 ---
 
@@ -124,33 +124,33 @@ A differential amplifier amplifies the *difference* between the two input signal
 Consider an inverting amplifier with voltage gain $A_v$ ($A_v$ is negative). A physical feedback capacitor $C_f$ is connected between the input node (voltage $V_i$) and output node (voltage $V_o$).
 1.  The current flowing through the capacitor from the input node is:
 
-    $$
-    I_i = \frac{V_i - V_o}{X_{Cf}} = \frac{V_i - A_v V_i}{1 / j\omega C_f}
-    $$
+$$
+I_i = \frac{V_i - V_o}{X_{Cf}} = \frac{V_i - A_v V_i}{1 / j\omega C_f}
+$$
 
 2.  Factor out $V_i$:
 
-    $$
-    I_i = j\omega C_f (1 - A_v) V_i
-    $$
+$$
+I_i = j\omega C_f (1 - A_v) V_i
+$$
 
 3.  The equivalent input impedance caused by this capacitor is:
 
-    $$
-    Z_{in} = \frac{V_i}{I_i} = \frac{1}{j\omega C_f (1 - A_v)}
-    $$
+$$
+Z_{in} = \frac{V_i}{I_i} = \frac{1}{j\omega C_f (1 - A_v)}
+$$
 
 4.  This is the reactance of an equivalent capacitor $C_{Mi}$ located strictly at the input to ground, where:
 
-    $$
-    Z_{in} = \frac{1}{j\omega C_{Mi}}
-    $$
+$$
+Z_{in} = \frac{1}{j\omega C_{Mi}}
+$$
 
 5.  Equating the two yields the Input Miller Capacitance:
 
-    $$
-    C_{Mi} = C_f (1 - A_v)
-    $$
+$$
+C_{Mi} = C_f (1 - A_v)
+$$
 
 ---
 
@@ -180,15 +180,15 @@ Consider an inverting amplifier with voltage gain $A_v$ ($A_v$ is negative). A p
 When multiple identical amplifier stages are cascaded, the overall bandwidth of the system **shrinks significantly**.
 1.  **Lower Cutoff Frequency ($f_L'$):** Each stage's RC coupling networks attenuate low frequencies. Cascading them compounds this attenuation. The overall lower cutoff frequency shifts **upward** (higher):
 
-    $$
-    f_L' = \frac{f_L}{\sqrt{2^{1/n} - 1}}
-    $$
+$$
+f_L' = \frac{f_L}{\sqrt{2^{1/n} - 1}}
+$$
 
 2.  **Upper Cutoff Frequency ($f_H'$):** Each stage's parasitic capacitances attenuate high frequencies. Cascading them compounds the attenuation. The overall upper cutoff frequency shifts **downward** (lower):
 
-    $$
-    f_H' = f_H \sqrt{2^{1/n} - 1}
-    $$
+$$
+f_H' = f_H \sqrt{2^{1/n} - 1}
+$$
 
 3.  **Bandwidth ($BW'$):** Because the low cutoff moves up and the high cutoff moves down, the overall bandwidth ($BW' \approx f_H' - f_L'$) becomes significantly narrower than a single stage.
 
@@ -207,26 +207,26 @@ Input Resistance: $R_{in} = R_{th} \parallel \beta r_e = 12\text{ k}\Omega \para
 **2. Low Cutoff Frequencies:**
 *   **Input Coupling ($f_{LS}$):**
 
-    $$
-    f_{LS} = \frac{1}{2\pi (R_{sig} + R_{in}) C_s} = \frac{1}{2\pi (1\text{ k}\Omega + 2.01\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi \times 3010 \times 10^{-6}} = 52.8\text{ Hz}
-    $$
+$$
+f_{LS} = \frac{1}{2\pi (R_{sig} + R_{in}) C_s} = \frac{1}{2\pi (1\text{ k}\Omega + 2.01\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi \times 3010 \times 10^{-6}} = 52.8\text{ Hz}
+$$
 
 *   **Output Coupling ($f_{LC}$):**
 
-    $$
-    f_{LC} = \frac{1}{2\pi (R_C + R_L) C_c} = \frac{1}{2\pi (4.9\text{ k}\Omega + 5\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi \times 9900 \times 10^{-6}} = 16.08\text{ Hz}
-    $$
+$$
+f_{LC} = \frac{1}{2\pi (R_C + R_L) C_c} = \frac{1}{2\pi (4.9\text{ k}\Omega + 5\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi \times 9900 \times 10^{-6}} = 16.08\text{ Hz}
+$$
 
 *   **Emitter Bypass ($f_{LE}$):**
     Equivalent resistance seen by $C_E$:
 
-    $$
-    R_e = R_E \parallel \left( r_e + \frac{R_{sig} \parallel R_{th}}{\beta} \right) = 3700 \parallel \left( 30.3 + \frac{1000 \parallel 12000}{80} \right) = 3700 \parallel \left( 30.3 + \frac{923}{80} \right) = 3700 \parallel 41.8 = 41.3\ \Omega
-    $$
+$$
+R_e = R_E \parallel \left( r_e + \frac{R_{sig} \parallel R_{th}}{\beta} \right) = 3700 \parallel \left( 30.3 + \frac{1000 \parallel 12000}{80} \right) = 3700 \parallel \left( 30.3 + \frac{923}{80} \right) = 3700 \parallel 41.8 = 41.3\ \Omega
+$$
 
-    $$
-    f_{LE} = \frac{1}{2\pi R_e C_E} = \frac{1}{2\pi (41.3) (5\ \mu\text{F})} = 770.8\text{ Hz}
-    $$
+$$
+f_{LE} = \frac{1}{2\pi R_e C_E} = \frac{1}{2\pi (41.3) (5\ \mu\text{F})} = 770.8\text{ Hz}
+$$
 
 **Overall Lower-Cutoff Frequency:**
 The overall low cutoff frequency is dominated by the highest of the individual cutoff frequencies.
@@ -280,15 +280,15 @@ To achieve both a specific $K=5$ and $Q=0.707$ (Butterworth) without mathematica
 2.  Choose $C = 10\text{ nF}$.
 3.  Calculate $R$ for $f_H = 1.5\text{ kHz}$:
 
-    $$
-    R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (1500)(10^{-8})} = 10.61\text{ k}\Omega
-    $$
+$$
+R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (1500)(10^{-8})} = 10.61\text{ k}\Omega
+$$
 
 4.  Set internal feedback resistors ($R_A, R_B$) for $K_1 = 1.586$:
 
-    $$
-    K_1 = 1 + \frac{R_F}{R_1} = 1.586 \Rightarrow \frac{R_F}{R_1} = 0.586
-    $$
+$$
+K_1 = 1 + \frac{R_F}{R_1} = 1.586 \Rightarrow \frac{R_F}{R_1} = 0.586
+$$
 
     Let $R_1 = 10\text{ k}\Omega$, then $R_F = 5.86\text{ k}\Omega$.
 
@@ -405,45 +405,45 @@ $$
 **Derivation:**
 1.  By virtual ground, the inverting terminal is at $0\text{V}$. Therefore, the input current through $R$ is exactly:
 
-    $$
-    I_{in} = \frac{V_i}{R}
-    $$
+$$
+I_{in} = \frac{V_i}{R}
+$$
 
 2.  Because the op-amp inputs draw no current, all of $I_{in}$ must flow into the collector of the feedback transistor.
 
-    $$
-    I_C = I_{in} = \frac{V_i}{R}
-    $$
+$$
+I_C = I_{in} = \frac{V_i}{R}
+$$
 
 3.  The collector current of a BJT is exponentially related to its base-emitter voltage:
 
-    $$
-    I_C = I_s e^{V_{BE} / V_T}
-    $$
+$$
+I_C = I_s e^{V_{BE} / V_T}
+$$
 
     where $I_s$ is reverse saturation current and $V_T \approx 26\text{mV}$.
 4.  The base of the NPN is grounded ($V_B = 0$). The emitter is tied to the output ($V_E = V_o$). Therefore, $V_{BE} = V_B - V_E = -V_o$.
 5.  Substitute $V_{BE}$:
 
-    $$
-    I_C = I_s e^{-V_o / V_T}
-    $$
+$$
+I_C = I_s e^{-V_o / V_T}
+$$
 
 6.  Equate the currents:
 
-    $$
-    \frac{V_i}{R} = I_s e^{-V_o / V_T} \Rightarrow \frac{V_i}{I_s R} = e^{-V_o / V_T}
-    $$
+$$
+\frac{V_i}{R} = I_s e^{-V_o / V_T} \Rightarrow \frac{V_i}{I_s R} = e^{-V_o / V_T}
+$$
 
 7.  Take the natural logarithm of both sides:
 
-    $$
-    \ln\left(\frac{V_i}{I_s R}\right) = -\frac{V_o}{V_T}
-    $$
+$$
+\ln\left(\frac{V_i}{I_s R}\right) = -\frac{V_o}{V_T}
+$$
 
-    $$
-    V_o = -V_T \ln\left( \frac{V_i}{I_s R} \right)
-    $$
+$$
+V_o = -V_T \ln\left( \frac{V_i}{I_s R} \right)
+$$
 
 The output is proportional to the natural logarithm of the input voltage.
 
@@ -477,15 +477,15 @@ Summing Channel A, B, and C into the final inverter yields exactly the required 
 The trigger threshold equations for the provided topology are:
 1.
 
-    $$
-    V_{UT} = V_{ref} \frac{R_F}{R_1 + R_F} + V_{sat} \frac{R_1}{R_1 + R_F} = 7
-    $$
+$$
+V_{UT} = V_{ref} \frac{R_F}{R_1 + R_F} + V_{sat} \frac{R_1}{R_1 + R_F} = 7
+$$
 
 2.
 
-    $$
-    V_{LT} = V_{ref} \frac{R_F}{R_1 + R_F} - V_{sat} \frac{R_1}{R_1 + R_F} = 3
-    $$
+$$
+V_{LT} = V_{ref} \frac{R_F}{R_1 + R_F} - V_{sat} \frac{R_1}{R_1 + R_F} = 3
+$$
 
 Subtracting (2) from (1):
 

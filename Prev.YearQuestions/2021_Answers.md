@@ -23,88 +23,88 @@ Both transistors are identical NPNs with $\beta = 100, V_{BE} = 0.7\text{ V}, r_
 **Stage 1: Common-Emitter (Bypassed Emitter)**
 1.  **DC Analysis:**
 
-    $$
-    V_{th1} = V_{CC} \frac{R_2}{R_1 + R_2} = 15\text{ V} \times \frac{25\text{ k}\Omega}{65\text{ k}\Omega + 25\text{ k}\Omega} = 15 \times \frac{25}{90} = 4.167\text{ V}
-    $$
+$$
+V_{th1} = V_{CC} \frac{R_2}{R_1 + R_2} = 15\text{ V} \times \frac{25\text{ k}\Omega}{65\text{ k}\Omega + 25\text{ k}\Omega} = 15 \times \frac{25}{90} = 4.167\text{ V}
+$$
 
-    $$
-    R_{th1} = 65\text{ k}\Omega \parallel 25\text{ k}\Omega = 18.06\text{ k}\Omega
-    $$
+$$
+R_{th1} = 65\text{ k}\Omega \parallel 25\text{ k}\Omega = 18.06\text{ k}\Omega
+$$
 
-    $$
-    I_{E1} = \frac{V_{th1} - V_{BE}}{R_{E1} + R_{th1}/\beta} = \frac{4.167 - 0.7}{400 + 18060/100} = \frac{3.467\text{ V}}{400 + 180.6} = \frac{3.467}{580.6} = 5.97\text{ mA}
-    $$
+$$
+I_{E1} = \frac{V_{th1} - V_{BE}}{R_{E1} + R_{th1}/\beta} = \frac{4.167 - 0.7}{400 + 18060/100} = \frac{3.467\text{ V}}{400 + 180.6} = \frac{3.467}{580.6} = 5.97\text{ mA}
+$$
 
 2.  **AC Parameters:**
 
-    $$
-    r_{e1} = \frac{26\text{ mV}}{5.97\text{ mA}} = 4.35\ \Omega
-    $$
+$$
+r_{e1} = \frac{26\text{ mV}}{5.97\text{ mA}} = 4.35\ \Omega
+$$
 
-    $$
-    Z_{i1} = R_{th1} \parallel \beta r_{e1} = 18.06\text{ k}\Omega \parallel 100(4.35) = 18.06\text{ k}\Omega \parallel 435\ \Omega = 425\ \Omega
-    $$
+$$
+Z_{i1} = R_{th1} \parallel \beta r_{e1} = 18.06\text{ k}\Omega \parallel 100(4.35) = 18.06\text{ k}\Omega \parallel 435\ \Omega = 425\ \Omega
+$$
 
 **Stage 2: Common-Emitter (Unbypassed Emitter)**
 1.  **DC Analysis:**
     The schematic shows two $400\ \Omega$ resistors in series on the emitter ($R_{E2}$ and $R_{E2'}$). Total DC emitter resistance is $800\ \Omega$.
 
-    $$
-    V_{th2} = 15\text{ V} \times \frac{25}{90} = 4.167\text{ V}
-    $$
+$$
+V_{th2} = 15\text{ V} \times \frac{25}{90} = 4.167\text{ V}
+$$
 
-    $$
-    R_{th2} = 18.06\text{ k}\Omega
-    $$
+$$
+R_{th2} = 18.06\text{ k}\Omega
+$$
 
-    $$
-    I_{E2} = \frac{4.167 - 0.7}{800 + 180.6} = \frac{3.467\text{ V}}{980.6\ \Omega} = 3.535\text{ mA}
-    $$
+$$
+I_{E2} = \frac{4.167 - 0.7}{800 + 180.6} = \frac{3.467\text{ V}}{980.6\ \Omega} = 3.535\text{ mA}
+$$
 
 2.  **AC Parameters:**
 
-    $$
-    r_{e2} = \frac{26\text{ mV}}{3.535\text{ mA}} = 7.35\ \Omega
-    $$
+$$
+r_{e2} = \frac{26\text{ mV}}{3.535\text{ mA}} = 7.35\ \Omega
+$$
 
     Total unbypassed AC emitter resistance $R_E = 800\ \Omega$.
 
-    $$
-    Z_{i2} = R_{th2} \parallel \beta (r_{e2} + R_E) = 18.06\text{ k}\Omega \parallel 100(7.35 + 800) = 18.06\text{ k}\Omega \parallel 80.7\text{ k}\Omega \approx 14.76\text{ k}\Omega
-    $$
+$$
+Z_{i2} = R_{th2} \parallel \beta (r_{e2} + R_E) = 18.06\text{ k}\Omega \parallel 100(7.35 + 800) = 18.06\text{ k}\Omega \parallel 80.7\text{ k}\Omega \approx 14.76\text{ k}\Omega
+$$
 
 **Cascaded Parameters:**
 *   **(i) Overall Voltage Gain ($A_v$):**
     Stage 1 Voltage Gain ($A_{v1}$):
 
-    $$
-    A_{v1} = -\frac{R_{C1} \parallel Z_{i2}}{r_{e1}} = -\frac{1000 \parallel 14760}{4.35} = -\frac{936.5}{4.35} = -215.3
-    $$
+$$
+A_{v1} = -\frac{R_{C1} \parallel Z_{i2}}{r_{e1}} = -\frac{1000 \parallel 14760}{4.35} = -\frac{936.5}{4.35} = -215.3
+$$
 
     Stage 2 Voltage Gain ($A_{v2}$):
 
-    $$
-    A_{v2} = -\frac{R_{C2} \parallel R_L}{r_{e2} + R_E} = -\frac{1000 \parallel 20000}{807.35} = -\frac{952.4}{807.35} = -1.18
-    $$
+$$
+A_{v2} = -\frac{R_{C2} \parallel R_L}{r_{e2} + R_E} = -\frac{1000 \parallel 20000}{807.35} = -\frac{952.4}{807.35} = -1.18
+$$
 
     Total Voltage Gain ($A_v$):
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-215.3) \times (-1.18) = 254.0
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-215.3) \times (-1.18) = 254.0
+$$
 
 *   **(ii) Input Impedance ($Z_i$):**
 
-    $$
-    Z_i = Z_{i1} = 425\ \Omega
-    $$
+$$
+Z_i = Z_{i1} = 425\ \Omega
+$$
 
 *   **(iii) Output Impedance ($Z_o$):**
     Assuming $r_o = \infty$, the output impedance is strictly the collector resistor of Stage 2.
 
-    $$
-    Z_o = R_{C2} = 1\text{ k}\Omega
-    $$
+$$
+Z_o = R_{C2} = 1\text{ k}\Omega
+$$
 
 ---
 
@@ -181,15 +181,15 @@ Because $\beta_D$ is massive, the current gain is extremely high.
     The voltage at the emitter is $-10.7\text{V}$, and the bottom of the resistor is at $-20\text{V}$.
     The current through the resistor is the emitter current $I_E \approx I_C = 4.65\text{ mA}$.
 
-    $$
-    R_E = \frac{V_E - (-V_{EE})}{I_E} = \frac{-10.7\text{ V} - (-20\text{ V})}{4.65\text{ mA}} = \frac{9.3\text{ V}}{4.65\text{ mA}} = 2000\ \Omega = 2\text{ k}\Omega
-    $$
+$$
+R_E = \frac{V_E - (-V_{EE})}{I_E} = \frac{-10.7\text{ V} - (-20\text{ V})}{4.65\text{ mA}} = \frac{9.3\text{ V}}{4.65\text{ mA}} = 2000\ \Omega = 2\text{ k}\Omega
+$$
 
 2.  **Calculate Base Voltage ($V_B$):**
 
-    $$
-    V_B = V_E + V_{BE} = -10.7\text{ V} + 0.7\text{ V} = -10.0\text{ V}
-    $$
+$$
+V_B = V_E + V_{BE} = -10.7\text{ V} + 0.7\text{ V} = -10.0\text{ V}
+$$
 
 3.  **Design the Voltage Divider ($R_1, R_2$):**
     Resistor $R_1$ connects Ground ($0\text{V}$) to the Base ($-10\text{V}$). Resistor $R_2$ connects the Base ($-10\text{V}$) to $-V_{EE}$ ($-20\text{V}$).
@@ -199,9 +199,9 @@ Because $\beta_D$ is massive, the current gain is extremely high.
     Since the voltage drops are equal, the resistors must be equal: $R_1 = R_2$.
     To ensure a "stiff" divider, the current through the divider should be roughly 10x the base current ($I_B \approx 4.65\text{mA}/100 = 46.5\ \mu\text{A}$). Let $I_{div} = 500\ \mu\text{A}$.
 
-    $$
-    R_1 + R_2 = \frac{20\text{ V}}{500\ \mu\text{A}} = 40\text{ k}\Omega
-    $$
+$$
+R_1 + R_2 = \frac{20\text{ V}}{500\ \mu\text{A}} = 40\text{ k}\Omega
+$$
 
     Therefore, $R_1 = 20\text{ k}\Omega$ and $R_2 = 20\text{ k}\Omega$. (Any equal pair between $5\text{k}$ and $20\text{k}$ is acceptable).
 
@@ -247,25 +247,25 @@ $$
 *   **Input ($f_{LS}$):**
     $R_i = R_{G1} \parallel R_{G2} = 220\text{ k}\Omega \parallel 68\text{ k}\Omega = 51.9\text{ k}\Omega$.
 
-    $$
-    f_{LS} = \frac{1}{2\pi (R_s + R_i) C_{s1}} = \frac{1}{2\pi (1.5\text{ k}\Omega + 51.9\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi (53400) (10^{-6})} = 2.98\text{ Hz}
-    $$
+$$
+f_{LS} = \frac{1}{2\pi (R_s + R_i) C_{s1}} = \frac{1}{2\pi (1.5\text{ k}\Omega + 51.9\text{ k}\Omega) 1\ \mu\text{F}} = \frac{1}{2\pi (53400) (10^{-6})} = 2.98\text{ Hz}
+$$
 
 *   **Output ($f_{LC}$):**
 
-    $$
-    f_{LC} = \frac{1}{2\pi (R_D + R_L) C_c} = \frac{1}{2\pi (3.9\text{ k}\Omega + 5.6\text{ k}\Omega) 6.8\ \mu\text{F}} = \frac{1}{2\pi (9500) (6.8 \times 10^{-6})} = 2.46\text{ Hz}
-    $$
+$$
+f_{LC} = \frac{1}{2\pi (R_D + R_L) C_c} = \frac{1}{2\pi (3.9\text{ k}\Omega + 5.6\text{ k}\Omega) 6.8\ \mu\text{F}} = \frac{1}{2\pi (9500) (6.8 \times 10^{-6})} = 2.46\text{ Hz}
+$$
 
 *   **Source Bypass ($f_{LE}$):**
 
-    $$
-    f_{LE} = \frac{1}{2\pi (R_S \parallel \frac{1}{g_m}) C_{s2}} = \frac{1}{2\pi \left( 2200 \parallel \frac{1}{1.34\text{ mS}} \right) 10\ \mu\text{F}} = \frac{1}{2\pi (2200 \parallel 746) 10\ \mu\text{F}}
-    $$
+$$
+f_{LE} = \frac{1}{2\pi (R_S \parallel \frac{1}{g_m}) C_{s2}} = \frac{1}{2\pi \left( 2200 \parallel \frac{1}{1.34\text{ mS}} \right) 10\ \mu\text{F}} = \frac{1}{2\pi (2200 \parallel 746) 10\ \mu\text{F}}
+$$
 
-    $$
-    f_{LE} = \frac{1}{2\pi (557\ \Omega) 10\ \mu\text{F}} = 28.5\text{ Hz}
-    $$
+$$
+f_{LE} = \frac{1}{2\pi (557\ \Omega) 10\ \mu\text{F}} = 28.5\text{ Hz}
+$$
 
 **Overall Lower-Cutoff Frequency:**
 Dominated by the highest individual cutoff:

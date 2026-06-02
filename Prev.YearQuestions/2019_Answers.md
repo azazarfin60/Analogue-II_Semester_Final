@@ -77,9 +77,9 @@ $$
 **Operating Principle:**
 1.  The reference current flows through $R$ and $Q_1$. Because $Q_1$ is diode-connected, it creates a specific base-emitter voltage drop ($V_{BE}$) based on this current.
 
-    $$
-    I_{ref} = \frac{V_{CC} - V_{BE}}{R}
-    $$
+$$
+I_{ref} = \frac{V_{CC} - V_{BE}}{R}
+$$
 
 2.  Because $Q_1$ and $Q_2$ are precisely matched and their bases and emitters are wired in parallel, $Q_2$ is forced to have the exact same $V_{BE}$ as $Q_1$.
 3.  According to the Ebers-Moll equation, identical transistors with identical $V_{BE}$ will draw identical collector currents. Thus, $I_{out} = I_{ref}$ (ignoring small base current errors). The circuit "mirrors" the reference current into the load attached to $Q_2$.
@@ -112,21 +112,21 @@ Dynamic resistances: $r_{e1} = r_{e2} = \frac{26\text{ mV}}{3.73\text{ mA}} = 6.
 **2. AC Voltage Gains:**
 *   **Stage 1 ($Q_1$ - Common Emitter):** Its load is the input impedance of $Q_2$ (which is a Common Base stage). The input impedance of a CB stage is $r_{e2}$.
 
-    $$
-    A_{v1} = -\frac{\text{Load}}{r_{e1}} = -\frac{r_{e2}}{r_{e1}} = -\frac{6.97}{6.97} = -1
-    $$
+$$
+A_{v1} = -\frac{\text{Load}}{r_{e1}} = -\frac{r_{e2}}{r_{e1}} = -\frac{6.97}{6.97} = -1
+$$
 
 *   **Stage 2 ($Q_2$ - Common Base):** Its load is $R_C = 1.5\text{ k}\Omega$. A CB stage is non-inverting.
 
-    $$
-    A_{v2} = +\frac{R_C}{r_{e2}} = \frac{1500}{6.97} = 215.2
-    $$
+$$
+A_{v2} = +\frac{R_C}{r_{e2}} = \frac{1500}{6.97} = 215.2
+$$
 
 *   **Overall Gain ($A_v$):**
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2
+$$
 
 **3. Output Wave Shape:**
 $v_o(t) = A_v \cdot v_i(t) = -215.2 \times 10\sin(\omega t)\text{ mV} = -2.15\sin(\omega t)\text{ V}$.
@@ -245,24 +245,24 @@ To find the upper-cutoff frequencies:
 We will use three parallel stages feeding into a final inverting summer.
 *   **Stage 1: Differentiator for $v_2$.**
 
-    $$
-    v_{o2} = -R_d C_d \frac{dv_2}{dt}
-    $$
+$$
+v_{o2} = -R_d C_d \frac{dv_2}{dt}
+$$
 
     We need a factor of $-7$ (so the final inverter makes it $+7$). Let $C_d = 10\ \mu\text{F}$ and $R_d = 700\text{ k}\Omega$, so $R_d C_d = 7$.
 *   **Stage 2: Integrator for $v_3$.**
 
-    $$
-    v_{o3} = -\frac{1}{R_{int} C_{int}} \int v_3 dt
-    $$
+$$
+v_{o3} = -\frac{1}{R_{int} C_{int}} \int v_3 dt
+$$
 
     We need a factor of $-10$ (so the final inverter makes it $+10$). Let $C_{int} = 1\ \mu\text{F}$ and $R_{int} = 100\text{ k}\Omega$, so $1/(R_{int}C_{int}) = 10$.
 *   **Stage 3: Inverting Summer.**
     The inputs to the summer are $v_1, v_{o2},$ and $v_{o3}$. The output is:
 
-    $$
-    v_o = -\left( \frac{R_f}{R_1} v_1 + \frac{R_f}{R_x} v_{o2} + \frac{R_f}{R_y} v_{o3} \right)
-    $$
+$$
+v_o = -\left( \frac{R_f}{R_1} v_1 + \frac{R_f}{R_x} v_{o2} + \frac{R_f}{R_y} v_{o3} \right)
+$$
 
     Let feedback resistor $R_f = 50\text{ k}\Omega$.
     *   For $v_1$: We want a total coefficient of $-5$. Thus $\frac{R_f}{R_1} = 5 \Rightarrow R_1 = 10\text{ k}\Omega$.
@@ -384,16 +384,16 @@ $$
 1.  **HPF Stage ($50\text{ kHz}$):**
     Let $C_H = 1\text{ nF}$.
 
-    $$
-    R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi \times 50\times 10^3 \times 1\times 10^{-9}} = 3.18\text{ k}\Omega
-    $$
+$$
+R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi \times 50\times 10^3 \times 1\times 10^{-9}} = 3.18\text{ k}\Omega
+$$
 
 2.  **LPF Stage ($100\text{ kHz}$):**
     Let $C_L = 1\text{ nF}$.
 
-    $$
-    R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi \times 100\times 10^3 \times 1\times 10^{-9}} = 1.59\text{ k}\Omega
-    $$
+$$
+R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi \times 100\times 10^3 \times 1\times 10^{-9}} = 1.59\text{ k}\Omega
+$$
 
 ---
 

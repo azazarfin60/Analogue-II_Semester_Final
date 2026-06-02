@@ -96,39 +96,39 @@ $$
 ##### Step 3: AC Parameter Analysis and Loading
 *   **Input Impedance of Stage 2 ($Z_{i2}$):**
 
-    $$
-    Z_{i2} = R_{th} \parallel \beta r_e = 3.58\text{ k}\Omega \parallel (200 \times 6.5\ \Omega) = 3.58\text{ k}\Omega \parallel 1.3\text{ k}\Omega \approx 953\ \Omega
-    $$
+$$
+Z_{i2} = R_{th} \parallel \beta r_e = 3.58\text{ k}\Omega \parallel (200 \times 6.5\ \Omega) = 3.58\text{ k}\Omega \parallel 1.3\text{ k}\Omega \approx 953\ \Omega
+$$
 
 *   **Stage 1 Gain ($A_{v1}$):**
 
-    $$
-    A_{v1} = -g_m (R_D \parallel Z_{i2}) = -2.64\text{ mS} \times (2.4\text{ k}\Omega \parallel 953\ \Omega) = -2.64\text{ mS} \times 682.3\ \Omega \approx -1.8
-    $$
+$$
+A_{v1} = -g_m (R_D \parallel Z_{i2}) = -2.64\text{ mS} \times (2.4\text{ k}\Omega \parallel 953\ \Omega) = -2.64\text{ mS} \times 682.3\ \Omega \approx -1.8
+$$
 
 *   **Stage 2 Gain ($A_{v2}$):**
 
-    $$
-    A_{v2} = -\frac{R_C}{r_e} = -\frac{2.2\text{ k}\Omega}{6.5\ \Omega} \approx -338.5
-    $$
+$$
+A_{v2} = -\frac{R_C}{r_e} = -\frac{2.2\text{ k}\Omega}{6.5\ \Omega} \approx -338.5
+$$
 
 *   **Overall Voltage Gain ($A_v$):**
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) \approx 609.3
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1.8) \times (-338.5) \approx 609.3
+$$
 
 *   **Overall Input Impedance ($Z_i$):**
 
-    $$
-    Z_i = R_G = 3.3\text{ M}\Omega
-    $$
+$$
+Z_i = R_G = 3.3\text{ M}\Omega
+$$
 
 *   **Overall Output Impedance ($Z_o$):**
 
-    $$
-    Z_o = R_C = 2.2\text{ k}\Omega
-    $$
+$$
+Z_o = R_C = 2.2\text{ k}\Omega
+$$
 
 ##### Step 4: Output Wave Shape Sketch
 For $v_i(t) = 10\sin(\omega t)\text{ mV}$:
@@ -152,45 +152,45 @@ $$
 **Solution Summary:**
 1.  **JFET DC Bias:** $V_{GS} = -0.33 I_D$. Substituting into Shockley's equation yields:
 
-    $$
-    0.667 V_{GS}^2 + 7.03 V_{GS} + 6 = 0 \Rightarrow V_{GSQ} \approx -0.94\text{ V}
-    $$
+$$
+0.667 V_{GS}^2 + 7.03 V_{GS} + 6 = 0 \Rightarrow V_{GSQ} \approx -0.94\text{ V}
+$$
 
-    $$
-    g_m = \frac{12\text{ m}}{3} \left( 1 - \frac{-0.94}{-3} \right) \approx 2.75\text{ mS}
-    $$
+$$
+g_m = \frac{12\text{ m}}{3} \left( 1 - \frac{-0.94}{-3} \right) \approx 2.75\text{ mS}
+$$
 
 2.  **BJT DC Bias:** Base current is calculated directly:
 
-    $$
-    I_B = \frac{V_{DD} - V_{BE}}{R_{B1} + (\beta+1)R_E} = \frac{10 - 0.7}{24\text{ k} + (151 \times 2.2\text{ k})} \approx 26.1\ \mu\text{A}
-    $$
+$$
+I_B = \frac{V_{DD} - V_{BE}}{R_{B1} + (\beta+1)R_E} = \frac{10 - 0.7}{24\text{ k} + (151 \times 2.2\text{ k})} \approx 26.1\ \mu\text{A}
+$$
 
-    $$
-    I_E = (\beta+1)I_B \approx 3.94\text{ mA} \Rightarrow r_e = \frac{26\text{ mV}}{3.94\text{ mA}} \approx 6.6\ \Omega
-    $$
+$$
+I_E = (\beta+1)I_B \approx 3.94\text{ mA} \Rightarrow r_e = \frac{26\text{ mV}}{3.94\text{ mA}} \approx 6.6\ \Omega
+$$
 
 3.  **AC Impedances and Gain:**
 
-    $$
-    Z_i = R_G = 10\text{ M}\Omega \quad \text{and} \quad Z_o = R_C = 2.7\text{ k}\Omega
-    $$
+$$
+Z_i = R_G = 10\text{ M}\Omega \quad \text{and} \quad Z_o = R_C = 2.7\text{ k}\Omega
+$$
 
-    $$
-    Z_{i2} = R_{B1} \parallel \beta r_e = 24\text{ k}\Omega \parallel 990\ \Omega \approx 950\ \Omega
-    $$
+$$
+Z_{i2} = R_{B1} \parallel \beta r_e = 24\text{ k}\Omega \parallel 990\ \Omega \approx 950\ \Omega
+$$
 
-    $$
-    A_{v1} = -g_m (R_D \parallel Z_{i2}) = -2.75\text{ mS} \times (1.8\text{ k} \parallel 0.95\text{ k}) \approx -1.71
-    $$
+$$
+A_{v1} = -g_m (R_D \parallel Z_{i2}) = -2.75\text{ mS} \times (1.8\text{ k} \parallel 0.95\text{ k}) \approx -1.71
+$$
 
-    $$
-    A_{v2} = -\frac{R_C}{r_e} = -\frac{2.7\text{ k}}{6.6} \approx -409.1
-    $$
+$$
+A_{v2} = -\frac{R_C}{r_e} = -\frac{2.7\text{ k}}{6.6} \approx -409.1
+$$
 
-    $$
-    A_v = A_{v1} \times A_{v2} = (-1.71) \times (-409.1) \approx 699.6
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1.71) \times (-409.1) \approx 699.6
+$$
 
 ---
 
@@ -220,49 +220,49 @@ $$
 Let the input base current to $Q_1$ be $I_{B1}$.
 1.  The collector current of $Q_1$ is:
 
-    $$
-    I_{C1} = \beta_1 I_{B1}
-    $$
+$$
+I_{C1} = \beta_1 I_{B1}
+$$
 
 2.  The emitter current of $Q_1$ is:
 
-    $$
-    I_{E1} = I_{C1} + I_{B1} = (\beta_1 + 1) I_{B1}
-    $$
+$$
+I_{E1} = I_{C1} + I_{B1} = (\beta_1 + 1) I_{B1}
+$$
 
 3.  Since $Q_1$'s emitter is tied directly to $Q_2$'s base, the base current of $Q_2$ is:
 
-    $$
-    I_{B2} = I_{E1} = (\beta_1 + 1) I_{B1}
-    $$
+$$
+I_{B2} = I_{E1} = (\beta_1 + 1) I_{B1}
+$$
 
 4.  The collector current of $Q_2$ is:
 
-    $$
-    I_{C2} = \beta_2 I_{B2} = \beta_2 (\beta_1 + 1) I_{B1}
-    $$
+$$
+I_{C2} = \beta_2 I_{B2} = \beta_2 (\beta_1 + 1) I_{B1}
+$$
 
 5.  The total composite collector current $I_C$ is the sum of both collector currents:
 
-    $$
-    I_C = I_{C1} + I_{C2} = \beta_1 I_{B1} + \beta_2 (\beta_1 + 1) I_{B1}
-    $$
+$$
+I_C = I_{C1} + I_{C2} = \beta_1 I_{B1} + \beta_2 (\beta_1 + 1) I_{B1}
+$$
 
-    $$
-    I_C = (\beta_1 + \beta_1 \beta_2 + \beta_2) I_{B1}
-    $$
+$$
+I_C = (\beta_1 + \beta_1 \beta_2 + \beta_2) I_{B1}
+$$
 
 6.  The overall current gain $\beta_D$ is:
 
-    $$
-    \beta_D = \frac{I_C}{I_{B1}} = \beta_1 \beta_2 + \beta_1 + \beta_2
-    $$
+$$
+\beta_D = \frac{I_C}{I_{B1}} = \beta_1 \beta_2 + \beta_1 + \beta_2
+$$
 
 7.  Since $\beta_1, \beta_2 \gg 1$, their product $\beta_1\beta_2$ is vastly larger than their sum ($\beta_1 + \beta_2$):
 
-    $$
-    \beta_D \approx \beta_1 \beta_2
-    $$
+$$
+\beta_D \approx \beta_1 \beta_2
+$$
 
 ---
 
@@ -276,72 +276,72 @@ Let the input base current to $Q_1$ be $I_{B1}$.
 **Solution:**
 1.  **DC Bias Analysis:**
 
-    $$
-    \beta_D \approx \beta_1 \beta_2 = 50 \times 120 = 6000
-    $$
+$$
+\beta_D \approx \beta_1 \beta_2 = 50 \times 120 = 6000
+$$
 
     Applying KVL around the base-emitter loop:
 
-    $$
-    V_{CC} - I_{B1} R_B - V_{BE1} - V_{BE2} - I_E R_E = 0
-    $$
+$$
+V_{CC} - I_{B1} R_B - V_{BE1} - V_{BE2} - I_E R_E = 0
+$$
 
     Substitute $I_E = (\beta_D + 1) I_{B1} \approx 6000 I_{B1}$:
 
-    $$
-    16 - I_{B1} (2.4\text{ M}\Omega) - 0.7 - 0.7 - 6000 I_{B1} (510) = 0
-    $$
+$$
+16 - I_{B1} (2.4\text{ M}\Omega) - 0.7 - 0.7 - 6000 I_{B1} (510) = 0
+$$
 
-    $$
-    14.6 = I_{B1} (2.4\text{ M}\Omega + 3.06\text{ M}\Omega) = I_{B1} (5.46\text{ M}\Omega)
-    $$
+$$
+14.6 = I_{B1} (2.4\text{ M}\Omega + 3.06\text{ M}\Omega) = I_{B1} (5.46\text{ M}\Omega)
+$$
 
-    $$
-    I_{B1} = \frac{14.6}{5.46\text{ M}\Omega} \approx 2.67\ \mu\text{A}
-    $$
+$$
+I_{B1} = \frac{14.6}{5.46\text{ M}\Omega} \approx 2.67\ \mu\text{A}
+$$
 
-    $$
-    I_E = 6000 \times 2.67\ \mu\text{A} \approx 16.02\text{ mA}
-    $$
+$$
+I_E = 6000 \times 2.67\ \mu\text{A} \approx 16.02\text{ mA}
+$$
 
     Calculate dynamic resistances:
 
-    $$
-    r_{e2} = \frac{26\text{ mV}}{16.02\text{ mA}} \approx 1.62\ \Omega
-    $$
+$$
+r_{e2} = \frac{26\text{ mV}}{16.02\text{ mA}} \approx 1.62\ \Omega
+$$
 
-    $$
-    I_{E1} \approx I_{B2} = \frac{I_E}{\beta_2} = \frac{16.02\text{ mA}}{120} \approx 133.5\ \mu\text{A}
-    $$
+$$
+I_{E1} \approx I_{B2} = \frac{I_E}{\beta_2} = \frac{16.02\text{ mA}}{120} \approx 133.5\ \mu\text{A}
+$$
 
-    $$
-    r_{e1} = \frac{26\text{ mV}}{133.5\ \mu\text{A}} \approx 194.7\ \Omega
-    $$
+$$
+r_{e1} = \frac{26\text{ mV}}{133.5\ \mu\text{A}} \approx 194.7\ \Omega
+$$
 
 2.  **AC Parameters:**
     Input impedance of the Darlington base:
 
-    $$
-    Z_{base} \approx \beta_1 [r_{e1} + \beta_2(r_{e2} + R_E)] \approx \beta_1 \beta_2 R_E = 6000 \times 510\ \Omega \approx 3.06\text{ M}\Omega
-    $$
+$$
+Z_{base} \approx \beta_1 [r_{e1} + \beta_2(r_{e2} + R_E)] \approx \beta_1 \beta_2 R_E = 6000 \times 510\ \Omega \approx 3.06\text{ M}\Omega
+$$
 
     Total input impedance:
 
-    $$
-    Z_i = R_B \parallel Z_{base} = 2.4\text{ M}\Omega \parallel 3.06\text{ M}\Omega \approx 1.34\text{ M}\Omega
-    $$
+$$
+Z_i = R_B \parallel Z_{base} = 2.4\text{ M}\Omega \parallel 3.06\text{ M}\Omega \approx 1.34\text{ M}\Omega
+$$
 
 3.  **Voltage Gain ($A_v$):**
 
-    $$
-    A_v = \frac{R_E}{R_E + r_{e2} + r_{e1}/\beta_2} = \frac{510}{510 + 1.62 + 194.7/120} = \frac{510}{513.24} \approx 0.994
-    $$
+$$
+A_v = \frac{R_E}{R_E + r_{e2} + r_{e1}/\beta_2} = \frac{510}{510 + 1.62 + 194.7/120} = \frac{510}{513.24} \approx 0.994
+$$
 
 4.  **Current Gain ($A_i$):**
 
-    $$
-    A_i = \frac{i_o}{i_{in}} = A_v \left( \frac{Z_i}{R_E} \right) = 0.994 \times \left( \frac{1.34\text{ M}\Omega}{510\ \Omega} \right) \approx 2612
-    $$
+$$
+A_i = \frac{i_o}{i_{in}} = A_v \left( \frac{Z_i}{R_E} \right) = 0.994 \times \left( \frac{1.34\text{ M}\Omega}{510\ \Omega} \right) \approx 2612
+$$
 
 ---
 
@@ -366,52 +366,52 @@ A Cascode configuration consists of a **Common-Emitter (CE)** stage driving a **
 1.  **DC Analysis:**
     The base voltage of $Q_1$ (bottom CE stage) is biased by $R_{B3}$:
 
-    $$
-    V_{B1} = V_{CC} \left( \frac{R_{B3}}{R_{B1} + R_{B2} + R_{B3}} \right) = 20\text{ V} \left( \frac{3.9\text{ k}\Omega}{7.5\text{ k} + 6.2\text{ k} + 3.9\text{ k}} \right) = 20 \times \frac{3.9}{17.6} \approx 4.43\text{ V}
-    $$
+$$
+V_{B1} = V_{CC} \left( \frac{R_{B3}}{R_{B1} + R_{B2} + R_{B3}} \right) = 20\text{ V} \left( \frac{3.9\text{ k}\Omega}{7.5\text{ k} + 6.2\text{ k} + 3.9\text{ k}} \right) = 20 \times \frac{3.9}{17.6} \approx 4.43\text{ V}
+$$
 
     Emitter voltage of $Q_1$:
 
-    $$
-    V_{E1} = V_{B1} - V_{BE} = 4.43 - 0.7 = 3.73\text{ V}
-    $$
+$$
+V_{E1} = V_{B1} - V_{BE} = 4.43 - 0.7 = 3.73\text{ V}
+$$
 
     Emitter current of $Q_1$:
 
-    $$
-    I_{E1} = \frac{V_{E1}}{R_E} = \frac{3.73\text{ V}}{1\text{ k}\Omega} = 3.73\text{ mA}
-    $$
+$$
+I_{E1} = \frac{V_{E1}}{R_E} = \frac{3.73\text{ V}}{1\text{ k}\Omega} = 3.73\text{ mA}
+$$
 
     Since $Q_1$ and $Q_2$ are connected in series, the emitter current of the CB stage ($Q_2$) is:
 
-    $$
-    I_{E2} \approx I_{C1} \approx I_{E1} = 3.73\text{ mA}
-    $$
+$$
+I_{E2} \approx I_{C1} \approx I_{E1} = 3.73\text{ mA}
+$$
 
     Dynamic resistances:
 
-    $$
-    r_{e1} = r_{e2} = \frac{26\text{ mV}}{3.73\text{ mA}} \approx 6.97\ \Omega
-    $$
+$$
+r_{e1} = r_{e2} = \frac{26\text{ mV}}{3.73\text{ mA}} \approx 6.97\ \Omega
+$$
 
 2.  **AC Voltage Gains:**
     *   **Stage 1 Gain ($A_{v1}$):** CE stage loaded by CB stage's input impedance $r_{e2}$:
 
-        $$
-        A_{v1} = -\frac{r_{e2}}{r_{e1}} = -1
-        $$
+$$
+A_{v1} = -\frac{r_{e2}}{r_{e1}} = -1
+$$
 
     *   **Stage 2 Gain ($A_{v2}$):** CB stage loaded by $R_C$:
 
-        $$
-        A_{v2} = +\frac{R_C}{r_{e2}} = +\frac{1.5\text{ k}\Omega}{6.97\ \Omega} \approx 215.2
-        $$
+$$
+A_{v2} = +\frac{R_C}{r_{e2}} = +\frac{1.5\text{ k}\Omega}{6.97\ \Omega} \approx 215.2
+$$
 
     *   **Overall Voltage Gain ($A_v$):**
 
-        $$
-        A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2
-        $$
+$$
+A_v = A_{v1} \times A_{v2} = (-1) \times 215.2 = -215.2
+$$
 
 ---
 
@@ -451,20 +451,20 @@ $$
 3.  This collector current drives the base of the PNP transistor $Q_2$. Hence, $I_{B2} = I_{C1} = \beta_1 I_{B1}$.
 4.  The collector current of $Q_2$ is:
 
-    $$
-    I_{C2} = \beta_2 I_{B2} = \beta_1 \beta_2 I_{B1}
-    $$
+$$
+I_{C2} = \beta_2 I_{B2} = \beta_1 \beta_2 I_{B1}
+$$
 
 5.  This collector current is returned back to the output node (emitter of $Q_1$), summing with $Q_1$'s emitter current.
 6.  The overall output current is:
 
-    $$
-    I_{out} = I_{E1} + I_{C2} \approx I_{C1} + I_{C2} = \beta_1 I_{B1} + \beta_1 \beta_2 I_{B1} \approx (\beta_1 \beta_2) I_{B1}
-    $$
+$$
+I_{out} = I_{E1} + I_{C2} \approx I_{C1} + I_{C2} = \beta_1 I_{B1} + \beta_1 \beta_2 I_{B1} \approx (\beta_1 \beta_2) I_{B1}
+$$
 
-    $$
-    A_i = \frac{I_{out}}{I_{B1}} \approx \beta_1 \beta_2
-    $$
+$$
+A_i = \frac{I_{out}}{I_{B1}} \approx \beta_1 \beta_2
+$$
 
 ---
 
@@ -480,27 +480,27 @@ Derive the phase relationship between the input and output voltage for a direct-
 1.  **Stage 1 ($Q_1$ - NPN CE):**
     The input AC signal $v_{in}$ is applied to the base of the NPN transistor. The stage operates as a common-emitter amplifier, introducing a $180^\circ$ phase inversion:
 
-    $$
-    v_{c1} = A_{v1} v_{in} \angle 180^\circ
-    $$
+$$
+v_{c1} = A_{v1} v_{in} \angle 180^\circ
+$$
 
 2.  **Stage 2 ($Q_2$ - PNP CE):**
     The collector of $Q_1$ is directly connected to the base of the PNP transistor ($v_{b2} = v_{c1}$). Since a PNP CE stage also operates in common-emitter configuration, it introduces another $180^\circ$ phase inversion:
 
-    $$
-    v_o = A_{v2} v_{b2} \angle 180^\circ
-    $$
+$$
+v_o = A_{v2} v_{b2} \angle 180^\circ
+$$
 
 3.  **Overall Response:**
     Substitute the first stage's output into the second stage:
 
-    $$
-    v_o = A_{v2} (A_{v1} v_{in} \angle 180^\circ) \angle 180^\circ = |A_{v1} A_{v2}| v_{in} \angle (180^\circ + 180^\circ)
-    $$
+$$
+v_o = A_{v2} (A_{v1} v_{in} \angle 180^\circ) \angle 180^\circ = |A_{v1} A_{v2}| v_{in} \angle (180^\circ + 180^\circ)
+$$
 
-    $$
-    v_o = A_v v_{in} \angle 360^\circ \equiv A_v v_{in} \angle 0^\circ
-    $$
+$$
+v_o = A_v v_{in} \angle 360^\circ \equiv A_v v_{in} \angle 0^\circ
+$$
 
 **Conclusion:**
 The overall phase shift is $360^\circ$ (or $0^\circ$). The output voltage $v_o(t)$ is perfectly **in-phase** with the input voltage $v_{in}(t)$.
@@ -552,30 +552,30 @@ $$
 #### 3. Voltage Gain ($A_v$)
 *   **Stage 1 Load:** The AC load on the JFET drain is:
 
-    $$
-    R_{L1} = r_d \parallel R_D \parallel Z_{i2} \quad \text{where} \quad Z_{i2} = R_1 \parallel R_2 \parallel \beta r_e
-    $$
+$$
+R_{L1} = r_d \parallel R_D \parallel Z_{i2} \quad \text{where} \quad Z_{i2} = R_1 \parallel R_2 \parallel \beta r_e
+$$
 
 *   **Stage 1 Gain ($A_{v1}$):**
 
-    $$
-    A_{v1} = -g_m (r_d \parallel R_D \parallel Z_{i2})
-    $$
+$$
+A_{v1} = -g_m (r_d \parallel R_D \parallel Z_{i2})
+$$
 
 *   **Stage 2 Load:** The AC load on the BJT collector is:
 
-    $$
-    R_{L2} = R_C \parallel r_o \approx R_C
-    $$
+$$
+R_{L2} = R_C \parallel r_o \approx R_C
+$$
 
 *   **Stage 2 Gain ($A_{v2}$):**
 
-    $$
-    A_{v2} = -\frac{R_C}{r_e}
-    $$
+$$
+A_{v2} = -\frac{R_C}{r_e}
+$$
 
 *   **Overall Gain ($A_v$):**
 
-    $$
-    A_v = A_{v1} \times A_{v2} = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C}{r_e}
-    $$
+$$
+A_v = A_{v1} \times A_{v2} = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C}{r_e}
+$$

@@ -45,18 +45,18 @@ A 3rd-order active LPF consists of a 2nd-order active stage cascaded with a 1st-
 If designed with identical $R = 10\text{ k}\Omega$ and $C = 0.1\ \mu\text{F}$:
 *   **Cutoff Frequency ($f_c$):**
 
-    $$
-    f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10\text{ k}\Omega)(0.1\ \mu\text{F})} \approx 159.15\text{ Hz}
-    $$
+$$
+f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10\text{ k}\Omega)(0.1\ \mu\text{F})} \approx 159.15\text{ Hz}
+$$
 
 *   **Frequency Response Curve Description:**
     *   **Passband ($f < 159\text{ Hz}$):** The gain is completely flat at $0\text{ dB}$ (unity).
     *   **Cutoff Point ($f = 159\text{ Hz}$):** The gain is down by exactly $-3\text{ dB}$.
     *   **Stopband ($f > 159\text{ Hz}$):** The roll-off is extremely steep. Because it is a 3rd-order filter, the asymptotic slope is:
 
-        $$
-        \text{Roll-off} = -60\text{ dB/decade} \quad (\text{or } -18\text{ dB/octave})
-        $$
+$$
+\text{Roll-off} = -60\text{ dB/decade} \quad (\text{or } -18\text{ dB/octave})
+$$
 
 ---
 
@@ -139,40 +139,40 @@ This negative value means the circuit is unstable and will oscillate.
 1.  **Select a practical capacitor value:** Let $C = 10\text{ nF}$.
 2.  **Calculate the resistor values ($R$):**
 
-    $$
-    R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (1500\text{ Hz}) (10 \times 10^{-9}\text{ F})} \approx 10.61\text{ k}\Omega
-    $$
+$$
+R = \frac{1}{2\pi f_H C} = \frac{1}{2\pi (1500\text{ Hz}) (10 \times 10^{-9}\text{ F})} \approx 10.61\text{ k}\Omega
+$$
 
 3.  **Determine the feedback resistors for $K_1 = 1.586$:**
 
-    $$
-    K_1 = 1 + \frac{R_f}{R_1} = 1.586 \Rightarrow R_f = 0.586 R_1
-    $$
+$$
+K_1 = 1 + \frac{R_f}{R_1} = 1.586 \Rightarrow R_f = 0.586 R_1
+$$
 
     Let $R_1 = 10\text{ k}\Omega$:
 
-    $$
-    R_f = 5.86\text{ k}\Omega
-    $$
+$$
+R_f = 5.86\text{ k}\Omega
+$$
 
 ##### Stage 2 (Gain Amplifier Stage):
 1.  **Calculate required gain ($K_2$):**
 
-    $$
-    K_2 = \frac{K_{total}}{K_1} = \frac{5}{1.586} \approx 3.15
-    $$
+$$
+K_2 = \frac{K_{total}}{K_1} = \frac{5}{1.586} \approx 3.15
+$$
 
 2.  **Determine feedback resistors for $K_2 = 3.15$:**
 
-    $$
-    K_2 = 1 + \frac{R_{f2}}{R_{12}} = 3.15 \Rightarrow R_{f2} = 2.15 R_{12}
-    $$
+$$
+K_2 = 1 + \frac{R_{f2}}{R_{12}} = 3.15 \Rightarrow R_{f2} = 2.15 R_{12}
+$$
 
     Let $R_{12} = 10\text{ k}\Omega$:
 
-    $$
-    R_{f2} = 21.5\text{ k}\Omega
-    $$
+$$
+R_{f2} = 21.5\text{ k}\Omega
+$$
 
 ---
 
@@ -189,15 +189,15 @@ An active Bandpass Filter can be constructed by cascading a High-Pass Filter (HP
 1.  **High-Pass Stage ($f_L = 50\text{ kHz}$):**
     Let $C_H = 1\text{ nF}$.
 
-    $$
-    R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi (50 \times 10^3\text{ Hz}) (1 \times 10^{-9}\text{ F})} \approx 3.18\text{ k}\Omega
-    $$
+$$
+R_H = \frac{1}{2\pi f_L C_H} = \frac{1}{2\pi (50 \times 10^3\text{ Hz}) (1 \times 10^{-9}\text{ F})} \approx 3.18\text{ k}\Omega
+$$
 
 2.  **Low-Pass Stage ($f_H = 100\text{ kHz}$):**
     Let $C_L = 1\text{ nF}$.
 
-    $$
-    R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi (100 \times 10^3\text{ Hz}) (1 \times 10^{-9}\text{ F})} \approx 1.59\text{ k}\Omega
-    $$
+$$
+R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi (100 \times 10^3\text{ Hz}) (1 \times 10^{-9}\text{ F})} \approx 1.59\text{ k}\Omega
+$$
 
 Connecting these two stages in series yields a flat bandpass filter spanning $50\text{ kHz}$ to $100\text{ kHz}$.

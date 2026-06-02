@@ -46,38 +46,38 @@ Assuming an open-loop amplifier with voltage gain $A$, input impedance $Z_i$, ou
 Let $f_H$ and $f_L$ be the open-loop upper and lower cutoff frequencies.
 *   **Upper Cutoff with Feedback ($f_{Hf}$):**
 
-    $$
-    A_f(f) = \frac{A(f)}{1 + A(f)\beta}
-    $$
+$$
+A_f(f) = \frac{A(f)}{1 + A(f)\beta}
+$$
 
     Substituting the high-frequency open-loop response $A(f) \approx \frac{A_{mid}}{1 + j(f/f_H)}$:
 
-    $$
-    A_f(f) = \frac{\frac{A_{mid}}{1 + j(f/f_H)}}{1 + \beta \left( \frac{A_{mid}}{1 + j(f/f_H)} \right)} = \frac{A_{mid}}{1 + j(f/f_H) + A_{mid}\beta} = \frac{A_{mid}}{(1 + A_{mid}\beta) + j(f/f_H)}
-    $$
+$$
+A_f(f) = \frac{\frac{A_{mid}}{1 + j(f/f_H)}}{1 + \beta \left( \frac{A_{mid}}{1 + j(f/f_H)} \right)} = \frac{A_{mid}}{1 + j(f/f_H) + A_{mid}\beta} = \frac{A_{mid}}{(1 + A_{mid}\beta) + j(f/f_H)}
+$$
 
     Divide both numerator and denominator by $(1 + A_{mid}\beta)$:
 
-    $$
-    A_f(f) = \frac{\frac{A_{mid}}{1 + A_{mid}\beta}}{1 + j \left( \frac{f}{f_H (1 + A_{mid}\beta)} \right)} = \frac{A_{mf}}{1 + j(f/f_{Hf})}
-    $$
+$$
+A_f(f) = \frac{\frac{A_{mid}}{1 + A_{mid}\beta}}{1 + j \left( \frac{f}{f_H (1 + A_{mid}\beta)} \right)} = \frac{A_{mf}}{1 + j(f/f_{Hf})}
+$$
 
-    $$
-    \text{Thus,} \quad f_{Hf} = f_H (1 + A_{mid}\beta) = f_H D
-    $$
+$$
+\text{Thus,} \quad f_{Hf} = f_H (1 + A_{mid}\beta) = f_H D
+$$
 
 *   **Lower Cutoff with Feedback ($f_{Lf}$):**
     Substituting the low-frequency open-loop response $A(f) \approx \frac{A_{mid}}{1 - j(f_L/f)}$:
 
-    $$
-    f_{Lf} = \frac{f_L}{1 + A_{mid}\beta} = \frac{f_L}{D}
-    $$
+$$
+f_{Lf} = \frac{f_L}{1 + A_{mid}\beta} = \frac{f_L}{D}
+$$
 
 *   **Bandwidth with Feedback ($BW_f$):**
 
-    $$
-    BW_f = f_{Hf} - f_{Lf} \approx f_H D - \frac{f_L}{D} \approx f_H D \approx BW \times (1 + A\beta)
-    $$
+$$
+BW_f = f_{Hf} - f_{Lf} \approx f_H D - \frac{f_L}{D} \approx f_H D \approx BW \times (1 + A\beta)
+$$
 
 This mathematically proves negative feedback expands the operating bandwidth by a factor of $(1+A\beta)$.
 

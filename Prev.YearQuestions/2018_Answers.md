@@ -16,32 +16,32 @@ The circuit consists of a two-stage direct-coupled amplifier:
 **Phase Derivation:**
 1.  **Stage 1 ($Q_1$):** A signal $v_{in}$ applied to the base of a CE amplifier produces a collector voltage $v_{c1}$ that is amplified and inverted.
 
-    $$
-    v_{c1} = A_{v1} \cdot v_{in} \angle 180^\circ
-    $$
+$$
+v_{c1} = A_{v1} \cdot v_{in} \angle 180^\circ
+$$
 
     This $180^\circ$ phase shift occurs because an increase in base voltage increases collector current, which increases the voltage drop across $R_C$, thus lowering the collector voltage.
 2.  **Stage 2 ($Q_2$):** The collector of $Q_1$ is directly coupled to the base of $Q_2$. Therefore, the input to Stage 2 is $v_{b2} = v_{c1}$.
     Stage 2 is also a CE amplifier (with a PNP transistor). It also introduces a phase inversion between its base and collector.
 
-    $$
-    v_{o} = A_{v2} \cdot v_{b2} \angle 180^\circ
-    $$
+$$
+v_{o} = A_{v2} \cdot v_{b2} \angle 180^\circ
+$$
 
 3.  **Overall Phase Relationship:**
     Substituting $v_{b2}$ into the output equation:
 
-    $$
-    v_o = A_{v2} \cdot (A_{v1} \cdot v_{in} \angle 180^\circ) \angle 180^\circ
-    $$
+$$
+v_o = A_{v2} \cdot (A_{v1} \cdot v_{in} \angle 180^\circ) \angle 180^\circ
+$$
 
-    $$
-    v_o = |A_{v1} A_{v2}| \cdot v_{in} \angle (180^\circ + 180^\circ)
-    $$
+$$
+v_o = |A_{v1} A_{v2}| \cdot v_{in} \angle (180^\circ + 180^\circ)
+$$
 
-    $$
-    v_o = A_v \cdot v_{in} \angle 360^\circ \equiv A_v \cdot v_{in} \angle 0^\circ
-    $$
+$$
+v_o = A_v \cdot v_{in} \angle 360^\circ \equiv A_v \cdot v_{in} \angle 0^\circ
+$$
 
 **Conclusion:** The total phase shift is $360^\circ$ (or $0^\circ$). The output voltage $V_o$ is exactly **in-phase** with the input voltage $V_i$.
 
@@ -193,9 +193,9 @@ $$
     $\frac{V_i}{R} = -C \frac{dV_o}{dt} \Rightarrow dV_o = -\frac{1}{RC} V_i dt$
 6.  Integrating both sides:
 
-    $$
-    V_o(t) = -\frac{1}{RC} \int V_i(t) dt + V_o(0)
-    $$
+$$
+V_o(t) = -\frac{1}{RC} \int V_i(t) dt + V_o(0)
+$$
 
 Because the output voltage is proportional to the time integral of the input voltage, the circuit perfectly functions as an integrating circuit.
 
@@ -207,9 +207,9 @@ Because the output voltage is proportional to the time integral of the input vol
 1.  The switch closes at $t=0$, applying a constant $V_i = 12\text{V}$ DC to the integrator.
 2.  The integration rate (slope) is:
 
-    $$
-    \frac{dV_o}{dt} = -\frac{V_i}{RC} = -\frac{12\text{ V}}{200\text{ k}\Omega \times 1\ \mu\text{F}} = -\frac{12}{0.2} = -60\text{ V/s}
-    $$
+$$
+\frac{dV_o}{dt} = -\frac{V_i}{RC} = -\frac{12\text{ V}}{200\text{ k}\Omega \times 1\ \mu\text{F}} = -\frac{12}{0.2} = -60\text{ V/s}
+$$
 
 3.  **Waveform Sketch:** The output $v_o(t)$ starts at $0\text{V}$ at $t=0$. It ramps down linearly in a straight line with a constant slope of $-60\text{ V/s}$.
 4.  Since real op-amps have finite power supply limits, the ramp will not continue indefinitely. Assuming typical $\pm 15\text{V}$ supplies, the op-amp will saturate at approx $-14\text{V}$ or $-15\text{V}$. The time it takes to saturate is $t_{sat} = \frac{-14\text{ V}}{-60\text{ V/s}} = 0.233\text{ s}$ (or $233\text{ ms}$). After this time, the output is a flat horizontal line at $-14\text{V}$.
@@ -245,26 +245,26 @@ This equation shows that for a given output amplitude $V_p$, there is an absolut
 We can achieve this using three op-amp stages.
 *   **Stage 1: Differentiator for $v_3$.**
 
-    $$
-    v_{a} = -R_d C_d \frac{d v_3}{dt}
-    $$
+$$
+v_{a} = -R_d C_d \frac{d v_3}{dt}
+$$
 
     Let $C_d = 1\ \mu\text{F}$ and $R_d = 200\text{ k}\Omega$. Then $R_d C_d = 0.2\text{ s}$.
     Result: $v_a = -0.2 \frac{d v_3}{dt}$.
 *   **Stage 2: Inverting Amplifier for $v_1$.**
 
-    $$
-    v_b = -\left(\frac{R_{f1}}{R_{i1}}\right) v_1
-    $$
+$$
+v_b = -\left(\frac{R_{f1}}{R_{i1}}\right) v_1
+$$
 
     Let $R_{i1} = 100\text{ k}\Omega$ and $R_{f1} = 50\text{ k}\Omega$. Then $R_{f1}/R_{i1} = 0.5$.
     Result: $v_b = -0.5 v_1$.
 *   **Stage 3: Inverting Summing Amplifier.**
     We sum $v_a$, $v_b$, and the $v_2$ input into a final inverting stage.
 
-    $$
-    v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)
-    $$
+$$
+v_o = -\left( \frac{R_f}{R_a} v_a + \frac{R_f}{R_b} v_b + \frac{R_f}{R_2} v_2 \right)
+$$
 
     Let the feedback resistor $R_f = 100\text{ k}\Omega$.
     *   To process $v_a$: We want $+0.2 \frac{dv_3}{dt}$, so we need a gain of $-1$ for $v_a$. Thus, $R_a = 100\text{ k}\Omega$.
@@ -272,9 +272,9 @@ We can achieve this using three op-amp stages.
     *   To process $v_2$: We want $-0.7 v_2$, so we need a gain of $+0.7$ overall. Since the summer is inverting, the summing gain must be $0.7$. Thus, $\frac{100\text{k}}{R_2} = 0.7 \Rightarrow R_2 = 142.8\text{ k}\Omega$.
 *   **Verification:**
 
-    $$
-    v_o = -\left[ 1(-0.2 d v_3/dt) + 1(-0.5 v_1) + 0.7 v_2 \right] = 0.2 \frac{d v_3}{dt} + 0.5 v_1 - 0.7 v_2
-    $$
+$$
+v_o = -\left[ 1(-0.2 d v_3/dt) + 1(-0.5 v_1) + 0.7 v_2 \right] = 0.2 \frac{d v_3}{dt} + 0.5 v_1 - 0.7 v_2
+$$
 
 ---
 
@@ -397,21 +397,21 @@ Thus, the amplifier must provide a voltage gain of at least 29 to compensate for
 **Proof:**
 1.  **Bandwidth:** All negative feedback topologies reduce the closed-loop gain ($A_f = \frac{A}{1+A\beta}$). Because the Gain-Bandwidth Product (GBP) of an amplifier is constant, a reduction in gain by a factor of $(1+A\beta)$ results in an exact proportional increase in bandwidth:
 
-    $$
-    BW_f = BW \times (1+A\beta)
-    $$
+$$
+BW_f = BW \times (1+A\beta)
+$$
 
 2.  **Input Impedance ($Z_{if}$):** The "Series" connection at the input means the feedback voltage opposes the input voltage (a subtraction in a series loop). This requires the signal source to provide a higher voltage to drive the same input current into the amplifier. By Ohm's law, a higher required voltage for the same current implies a higher impedance.
 
-    $$
-    Z_{if} = Z_i \times (1+A\beta)
-    $$
+$$
+Z_{if} = Z_i \times (1+A\beta)
+$$
 
 3.  **Output Impedance ($Z_{of}$):** The "Voltage" (or Shunt) connection at the output means the feedback network samples the output voltage in parallel. If the load changes causing the output voltage to dip, the feedback network immediately detects this and drives the amplifier harder to restore the voltage. This ability to maintain a constant voltage regardless of load is the definition of a low output impedance source (an ideal voltage source).
 
-    $$
-    Z_{of} = \frac{Z_o}{1+A\beta}
-    $$
+$$
+Z_{of} = \frac{Z_o}{1+A\beta}
+$$
 
 Combining series input mixing and parallel voltage sampling provides the best of all worlds: vastly increased bandwidth, vastly increased input impedance (preventing source loading), and vastly decreased output impedance (improving load driving capability).
 
@@ -469,25 +469,25 @@ $$
 **Calculation with Ideal Diode:**
 1.  **Charging phase ($t_c$):** Output is HIGH. The current flows from $V_{CC}$ through $R_A$. Instead of passing through $R_B$, the current takes the path of least resistance through the forward-biased ideal diode. Therefore, the capacitor charges *only* through $R_A$.
 
-    $$
-    t_c = 0.693 R_A C
-    $$
+$$
+t_c = 0.693 R_A C
+$$
 
 2.  **Discharging phase ($t_d$):** Output is LOW. The internal discharge transistor turns ON. The diode is now reverse-biased (blocking). The capacitor must discharge through $R_B$ to reach Pin 7.
 
-    $$
-    t_d = 0.693 R_B C
-    $$
+$$
+t_d = 0.693 R_B C
+$$
 
 3.  **Duty Cycle:**
 
-    $$
-    D = \frac{t_c}{t_c + t_d} = \frac{0.693 R_A C}{0.693 R_A C + 0.693 R_B C} = \frac{R_A}{R_A + R_B}
-    $$
+$$
+D = \frac{t_c}{t_c + t_d} = \frac{0.693 R_A C}{0.693 R_A C + 0.693 R_B C} = \frac{R_A}{R_A + R_B}
+$$
 
-    $$
-    D = \frac{1\text{ k}\Omega}{1\text{ k}\Omega + 10\text{ k}\Omega} \times 100\% = \frac{1}{11} \times 100\% = 9.09\%
-    $$
+$$
+D = \frac{1\text{ k}\Omega}{1\text{ k}\Omega + 10\text{ k}\Omega} \times 100\% = \frac{1}{11} \times 100\% = 9.09\%
+$$
 
 ---
 
@@ -496,9 +496,9 @@ $$
 **Solution:**
 1.  **Pulse Width Calculation:**
 
-    $$
-    W = 1.1 R C = 1.1 \times 4.7\text{ k}\Omega \times 0.1\ \mu\text{F} = 1.1 \times 4700 \times 10^{-7} = 0.000517\text{ s} = 0.517\text{ ms}
-    $$
+$$
+W = 1.1 R C = 1.1 \times 4.7\text{ k}\Omega \times 0.1\ \mu\text{F} = 1.1 \times 4700 \times 10^{-7} = 0.000517\text{ s} = 0.517\text{ ms}
+$$
 
 2.  **Waveform Description:**
     *   **$t = 0$ to $1\text{ ms}$:** The output is LOW ($0\text{V}$).
@@ -580,17 +580,17 @@ We are given $f_o = 10,000\text{ Hz}$.
 1.  **Select a practical capacitor value:** Let $C = 10\text{ nF} = 0.01\ \mu\text{F}$.
 2.  **Calculate the resistor value ($R$):**
 
-    $$
-    R = \frac{1}{2\pi f_o C} = \frac{1}{2\pi \times 10000 \times 10 \times 10^{-9}} = \frac{1}{2\pi \times 10^{-4}} = \frac{10000}{2\pi} \approx 1591.5\ \Omega
-    $$
+$$
+R = \frac{1}{2\pi f_o C} = \frac{1}{2\pi \times 10000 \times 10 \times 10^{-9}} = \frac{1}{2\pi \times 10^{-4}} = \frac{10000}{2\pi} \approx 1591.5\ \Omega
+$$
 
     Use a standard resistor value, $R = 1.6\text{ k}\Omega$.
 3.  **Determine Amplifier Gain Resistors:**
     For sustained oscillation, the non-inverting amplifier must have a gain $A_v \ge 3$.
 
-    $$
-    A_v = 1 + \frac{R_f}{R_1} \ge 3 \Rightarrow \frac{R_f}{R_1} \ge 2 \Rightarrow R_f \ge 2 R_1
-    $$
+$$
+A_v = 1 + \frac{R_f}{R_1} \ge 3 \Rightarrow \frac{R_f}{R_1} \ge 2 \Rightarrow R_f \ge 2 R_1
+$$
 
     Let $R_1 = 10\text{ k}\Omega$. Then $R_f$ must be exactly $20\text{ k}\Omega$. To ensure oscillations start, we choose $R_f$ slightly larger, e.g., $R_f = 22\text{ k}\Omega$ (or a $20\text{k}\Omega$ fixed resistor with a small potentiometer).
 

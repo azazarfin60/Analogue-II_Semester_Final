@@ -131,9 +131,10 @@
 * An oscillator is a circuit capable of generating a repetitive waveform of fixed amplitude and frequency without requiring any external input signal.
 * **Frequency & Shape:** The oscillation frequency and shape depend on the values and types of components in the feedback circuit.
 * **Oscillator Condition:**
-  $$
-  \boxed{|A\beta| = 1 \quad \text{and} \quad \angle A\beta = 0^\circ \text{ or } 360^\circ}
-  $$
+
+$$
+\boxed{|A\beta| = 1 \quad \text{and} \quad \angle A\beta = 0^\circ \text{ or } 360^\circ}
+$$
 
 ---
 
@@ -150,15 +151,19 @@
                 GND
 ```
 * **Phase Shift Derivation:**
-  $$
-  X_C = \frac{1}{\omega C}
-  $$
-  $$
-  v_o = \left( \frac{R}{R - j X_C} \right) v_i = \left( \frac{1}{1 - j \left( \frac{X_C}{R} \right)} \right) v_i
-  $$
-  $$
-  \phi = \tan^{-1} \left( \frac{X_C}{R} \right) = \tan^{-1} \left( \frac{1}{\omega R C} \right)
-  $$
+
+$$
+X_C = \frac{1}{\omega C}
+$$
+
+$$
+v_o = \left( \frac{R}{R - j X_C} \right) v_i = \left( \frac{1}{1 - j \left( \frac{X_C}{R} \right)} \right) v_i
+$$
+
+$$
+\phi = \tan^{-1} \left( \frac{X_C}{R} \right) = \tan^{-1} \left( \frac{1}{\omega R C} \right)
+$$
+
 * If $X_C = 0 \Rightarrow \phi = 0^\circ$ (high frequency limit).
 * If $R = 0 \Rightarrow \phi = 90^\circ$ (maximum theoretical shift of single stage, but practically impossible since output would be shorted).
 
@@ -209,16 +214,21 @@ Let us analyze the 3-stage high-pass RC network from output to input:
                 GND         GND         GND
 ```
 At the output node $V_o$:
+
 $$
 V_2 = I_3 (-j X_C) + V_o
 $$
+
 $$
 I_3 = \frac{V_o}{R}
 $$
+
 $$
 \Rightarrow V_2 = V_o \left( -j \frac{X_C}{R} \right) + V_o
 $$
+
 Since $-j X_C = \frac{1}{j\omega C}$:
+
 $$
 \Rightarrow V_2 = V_o \left[ 1 + \frac{1}{j\omega R C} \right]
 $$
@@ -232,31 +242,39 @@ $$
 #### Node Analysis (Continued)
 
 #### 1. Calculating $I_2$:
+
 $$
 I_2 = \frac{V_2}{R} + I_3 = \frac{V_o}{R} \left[ 1 + \frac{1}{j\omega R C} \right] + \frac{V_o}{R}
 $$
+
 $$
 \therefore I_2 = \frac{V_o}{R} \left[ 2 + \frac{1}{j\omega R C} \right]
 $$
 
 #### 2. Calculating $V_1$:
+
 $$
 V_1 = V_2 + \frac{I_2}{j\omega C}
 $$
+
 $$
 V_1 = V_o \left[ 1 + \frac{1}{j\omega R C} \right] + \frac{V_o}{R} \left[ 2 + \frac{1}{j\omega R C} \right] \times \frac{1}{j\omega C}
 $$
+
 $$
 \therefore V_1 = V_o \left[ 1 + \frac{3}{j\omega R C} - \frac{1}{\omega^2 R^2 C^2} \right]
 $$
 
 #### 3. Calculating $I_1$:
+
 $$
 I_1 = \frac{V_1}{R} + I_2
 $$
+
 $$
 I_1 = \frac{V_o}{R} \left[ 1 + \frac{3}{j\omega R C} - \frac{1}{\omega^2 R^2 C^2} \right] + \frac{V_o}{R} \left[ 2 + \frac{1}{j\omega R C} \right]
 $$
+
 $$
 \therefore I_1 = \frac{V_o}{R} \left[ 3 + \frac{4}{j\omega R C} - \frac{1}{\omega^2 R^2 C^2} \right]
 $$
@@ -268,34 +286,43 @@ $$
 ### Content
 
 #### 4. Calculating $V_{in}$ (Feedback Input):
+
 $$
 V_{in} = V_1 + \frac{I_1}{j\omega C}
 $$
+
 $$
 V_{in} = V_o \left[ 1 + \frac{3}{j\omega R C} - \frac{1}{\omega^2 R^2 C^2} \right] + \frac{V_o}{R} \left( \frac{1}{j\omega C} \right) \left[ 3 + \frac{4}{j\omega R C} - \frac{1}{\omega^2 R^2 C^2} \right]
 $$
+
 $$
 V_{in} = V_o \left[ 1 + \frac{6}{j\omega R C} - \frac{5}{\omega^2 R^2 C^2} - \frac{1}{j\omega^3 R^3 C^3} \right]
 $$
 
 #### Finding the Frequency of Oscillation:
 For the phase shift through the RC network to be exactly $180^\circ$, the feedback factor $\beta = \frac{V_o}{V_{in}}$ must be purely real. Thus, the imaginary part of the denominator must equal zero:
+
 $$
 \text{Im} = 0 \Rightarrow \frac{6}{j\omega R C} - \frac{1}{j\omega^3 R^3 C^3} = 0
 $$
+
 $$
 \Rightarrow \frac{6}{\omega R C} = \frac{1}{\omega^3 R^3 C^3} \Rightarrow \omega^2 R^2 C^2 = \frac{1}{6}
 $$
+
 $$
 \Rightarrow \omega = \frac{1}{\sqrt{6} R C}
 $$
+
 $$
 \therefore \boxed{f = \frac{1}{2\pi R C \sqrt{6}}} \quad (\text{For 3-stage RC Phase-Shift Oscillator})
 $$
+
 * General Formula for $n$-stages:
-  $$
-  f = \frac{1}{2\pi R C \sqrt{2n}}
-  $$
+
+$$
+f = \frac{1}{2\pi R C \sqrt{2n}}
+$$
 
 ---
 
@@ -314,12 +341,15 @@ $$
 
 #### Calculating the Feedback Factor ($\beta$):
 Substitute $\omega = \frac{1}{\sqrt{6} R C}$ back into the real part of $V_{in}$:
+
 $$
 V_{in} = V_o \left[ 1 - \frac{5}{\omega^2 R^2 C^2} \right]
 $$
+
 $$
 V_{in} = V_o \left[ 1 - \frac{5}{\left( \frac{1}{6 R^2 C^2} \right) R^2 C^2} \right] = V_o [1 - 30] = -29 V_o
 $$
+
 $$
 \therefore \boxed{\beta = \frac{V_o}{V_{in}} = -\frac{1}{29}}
 $$
@@ -327,10 +357,13 @@ $$
 ---
 
 #### Loop Gain Condition for Oscillation:
+
 $$
 |A\beta| = 1 \Rightarrow A \left( -\frac{1}{29} \right) = 1 \Rightarrow \boxed{A = -29}
 $$
+
 Since it's an inverting amplifier:
+
 $$
 A = -\frac{R_f}{R_1} = -29 \Rightarrow \boxed{R_f = 29 R_1}
 $$
@@ -375,12 +408,15 @@ $$
 ```
 
 #### Transfer Function of the Feedback Loop:
+
 $$
 V_o = \left( \frac{Z_2}{Z_1 + Z_2} \right) V_{in}
 $$
+
 $$
 \beta = \frac{V_o}{V_{in}} = \frac{Z_2}{Z_1 + Z_2}
 $$
+
 where:
 * **Series branch ($Z_1$):** $Z_1 = R_1 + \frac{1}{j\omega C_1}$ (High-pass characteristic)
 * **Parallel branch ($Z_2$):** $Z_2 = R_2 \parallel \frac{1}{j\omega C_2} = \frac{R_2}{1 + j\omega R_2 C_2}$ (Low-pass characteristic)
@@ -397,48 +433,63 @@ $$
 
 #### Wien Bridge Analysis (Continued):
 To achieve oscillation, the loop phase shift must be $0^\circ$ (non-inverting configuration). Thus, the imaginary part must be zero:
+
 $$
 \beta = \frac{j\omega R_2 C_1}{1 - \omega^2 R_1 R_2 C_1 C_2 + j\omega(R_1 C_1 + R_2 C_2 + R_2 C_1)}
 $$
+
 Multiply numerator and denominator by $1 - \omega^2 R_1 R_2 C_1 C_2 - j\omega(R_1 C_1 + R_2 C_2 + R_2 C_1)$ to separate real and imaginary parts.
 For the phase shift to be $0^\circ$, the real part of the denominator must be zero:
+
 $$
 1 - \omega^2 R_1 R_2 C_1 C_2 = 0 \Rightarrow \omega^2 R_1 R_2 C_1 C_2 = 1
 $$
+
 $$
 \Rightarrow \omega = \frac{1}{\sqrt{R_1 R_2 C_1 C_2}}
 $$
+
 $$
 \therefore \boxed{f = \frac{1}{2\pi \sqrt{R_1 R_2 C_1 C_2}}} \quad (\text{Resonant Frequency})
 $$
+
 * **Symmetric Component Case:** If $R_1 = R_2 = R$ and $C_1 = C_2 = C$:
-  $$
-  \therefore \boxed{f = \frac{1}{2\pi R C}}
-  $$
+
+$$
+\therefore \boxed{f = \frac{1}{2\pi R C}}
+$$
 
 ---
 
 #### Calculating the Loop Feedback Factor ($\beta$):
 Under resonant condition, the imaginary part cancels, leaving:
+
 $$
 \beta = \frac{R_2 C_1}{R_1 C_1 + R_2 C_2 + R_2 C_1}
 $$
+
 * **Symmetric Case ($R_1 = R_2$, $C_1 = C_2$):**
-  $$
-  \therefore \beta = \frac{R C}{3 R C} = \boxed{\frac{1}{3}}
-  $$
+
+$$
+\therefore \beta = \frac{R C}{3 R C} = \boxed{\frac{1}{3}}
+$$
 
 ---
 
 #### Amplifier Gain Requirement:
+
 $$
 A \beta = 1 \Rightarrow A = \frac{1}{\beta}
 $$
+
 $$
 A = \frac{R_1 C_1 + R_2 C_2 + R_2 C_1}{R_2 C_1} = \boxed{\frac{R_1}{R_2} + \frac{C_2}{C_1} + 1}
 $$
+
 * For the symmetric case:
-  $$
-  A = 1 + 1 + 1 = 3
-  $$
+
+$$
+A = 1 + 1 + 1 = 3
+$$
+
   Since $A = 1 + \frac{R_f}{R_1} = 3 \Rightarrow \boxed{R_f = 2 R_1}$ (gain of the non-inverting op-amp must be at least 3 to start oscillations).
