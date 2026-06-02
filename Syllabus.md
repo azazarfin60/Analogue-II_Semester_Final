@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](analysis_report.md)
+
 # ECE 2105: Analog Electronic Circuits-II
 **Credits: 3.00**
 
@@ -14,3 +16,5 @@
 * **Operational Amplifiers (Op-Amps):** Integrator and differentiator. Frequency response, bandwidth, other practical limitations of op-amps, and compensation techniques.
 * **Waveform Generation and Timing:** Oscillators and multi-vibrators. Timer 555 and its applications.
 * **Signal Processing Circuits:** Active filters. Negative impedance converters (NIC).
+
+[Home](index.md) | [Next](analysis_report.md)

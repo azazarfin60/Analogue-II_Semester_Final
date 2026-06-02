@@ -1,3 +1,5 @@
+[Previous](ClassTestAnswers.md) | [Home](index.md)
+
 # Digitized Class Tests - Analog Electronic Circuits-II (ECE 2105)
 
 ---
@@ -412,3 +414,5 @@ $$
    * **Pin 6 (THRESHOLD) & Pin 2 (TRIGGER)** are tied together and connected to the junction of $R_B$ and the timing capacitor $C = 0.1\ \mu\text{F}$.
    * **Pin 5 (CONTROL VOLTAGE)** connected to ground through noise-bypass capacitor $C_1 = 0.01\ \mu\text{F}$.
    * **Pin 3 (OUTPUT)** provides the square wave pulse output.
+
+[Previous](ClassTestAnswers.md) | [Home](index.md)

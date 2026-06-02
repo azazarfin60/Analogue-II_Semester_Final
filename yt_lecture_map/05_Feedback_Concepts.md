@@ -1,3 +1,5 @@
+[Previous](04_CMOS_Technology.md) | [Home](index.md) | [Next](06_Operational_Amplifiers.md)
+
 # 05: Feedback Concepts
 
 ## All About Electronics
@@ -9,3 +11,5 @@ The "All About Electronics" playlist covers feedback amplifiers, positive and ne
 Ankit Goyal Sir provides a rigorous theoretical and network-oriented discussion of feedback:
 - **Feedback Basics & Classification**: Introduces feedback loops, forward path amplifiers, feedback paths, comparator/mixer, sampler, and topology identification in "Feedback Amplifiers | Part-1" starting at [2:02](https://www.youtube.com/watch?v=a8p0d3-b3Lg&t=122s).
 - **Feedback Topologies Analysis**: Specifically covers the Shunt-Shunt (voltage shunt) feedback, trans-resistance amplifier models, and effects on input/output resistance in "Feedback Amplifiers | Part-2" starting at [2:32](https://www.youtube.com/watch?v=yNgqhsEAAnE&t=152s).
+
+[Previous](04_CMOS_Technology.md) | [Home](index.md) | [Next](06_Operational_Amplifiers.md)

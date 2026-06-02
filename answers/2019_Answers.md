@@ -1,3 +1,5 @@
+[Previous](2018_Answers.md) | [Home](index.md) | [Next](2020_Answers.md)
+
 # 📝 RUET 2019 Even Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2205)
 
@@ -471,3 +473,5 @@ R_F = 29 \times R_1 = 29 \times 1624.7 = 47116\ \Omega \approx 47\text{ k}\Omega
 $$
 
 **Design Values:** $C = 0.1\ \mu\text{F}, R = 1.62\text{ k}\Omega, R_1 = 1.62\text{ k}\Omega, R_F = 47\text{ k}\Omega$.
+
+[Previous](2018_Answers.md) | [Home](index.md) | [Next](2020_Answers.md)

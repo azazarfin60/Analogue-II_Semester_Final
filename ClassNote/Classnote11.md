@@ -1,3 +1,5 @@
+[Previous](Classnote10.md) | [Home](index.md) | [Next](Classnote12.md)
+
 # Class Note Digitization - Phase 11 (Part 2, Pages 44-53)
 
 ---
@@ -490,3 +492,5 @@ $$
   * By KCL: $I_1 = I_f = 5\text{ mA}$.
   * Voltage across $R_1$: $V_{R1} = I_1 R_1 = 5\text{ mA} \times 5\text{ k}\Omega = 25\text{ V}$.
   * Feedback Resistor: $R_f = \frac{V_n - v_o}{I_f} = \frac{0\text{ V} - 5\text{ V}}{5\text{ mA}} = -1\text{ k}\Omega$ (absolute value $1\text{ k}\Omega$ for magnitude analysis).
+
+[Previous](Classnote10.md) | [Home](index.md) | [Next](Classnote12.md)

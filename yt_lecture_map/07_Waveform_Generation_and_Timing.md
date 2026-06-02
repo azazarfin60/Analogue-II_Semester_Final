@@ -1,3 +1,5 @@
+[Previous](06_Operational_Amplifiers.md) | [Home](index.md) | [Next](08_Signal_Processing_Circuits.md)
+
 # 07: Waveform Generation and Timing
 
 ## All About Electronics
@@ -58,3 +60,5 @@ $$
   - When the digital input is **Logic 0 (0 V)**, the control voltage drops, which lowers the comparison thresholds of the internal comparators ($V_{UTP} < 2/3V_{CC}$ and $V_{LTP} < 1/3V_{CC}$). This allows the capacitor to charge and discharge much faster, shifting the output square wave to a **higher frequency ($f_{high}$)**.
   - When the digital input is **Logic 1 (or open-circuited)**, the control voltage remains at its nominal $2/3 V_{CC}$ level, and the output square wave runs at its designed **lower carrier frequency ($f_{low}$)**.
   - FSK modulation is thus achieved by dynamically changing the timing threshold levels of the capacitor charging loop.
+
+[Previous](06_Operational_Amplifiers.md) | [Home](index.md) | [Next](08_Signal_Processing_Circuits.md)

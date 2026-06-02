@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](ClassTestQuestions.md)
+
 # 📝 Class Test Answers
 # Analog Electronic Circuits-II (ECE 2105)
 
@@ -461,3 +463,5 @@ $$
 *   Total Period $T = t_c + t_d \Rightarrow$ Will **increase**.
 *   Frequency $f_o = 1/T \Rightarrow$ Will **decrease**.
 *   **Duty Cycle:** $D = \frac{R_A + R_B}{R_A + 2R_B}$. As $R_B$ becomes much larger than $R_A$ ($R_B \gg R_A$), the $R_A$ term becomes negligible. The equation approaches $D \approx \frac{R_B}{2R_B} = 0.5$. Therefore, as $R_B$ increases, the duty cycle **decreases toward 50%**.
+
+[Home](index.md) | [Next](ClassTestQuestions.md)

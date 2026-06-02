@@ -1,3 +1,5 @@
+[Previous](05_Feedback_Concepts.md) | [Home](index.md) | [Next](07_Waveform_Generation_and_Timing.md)
+
 # 06: Operational Amplifiers
 
 ## All About Electronics
@@ -20,3 +22,5 @@ Ankit Goyal Sir covers Op-Amp basics, practical features, negative feedback appl
 - **Op-Amp Characteristics & Limits**: Detailed analysis of Input Offset Voltage starting at [48:27](https://www.youtube.com/watch?v=acc99d_0OCc&t=2907s) and Slew Rate starting at [92:47](https://www.youtube.com/watch?v=acc99d_0OCc&t=5567s).
 - **Op-Amp Integrator & Differentiator**: Coverage of ideal and practical integrators and differentiators in "Negative Feedback Applications Part - 02" starting at [33:34](https://www.youtube.com/watch?v=KRwDIwmbkv4&t=2014s).
 - **Instrumentation Amplifier**: Mathematical model derivations of the 3-op-amp instrumentation amplifier, including transducer interface applications (Wheatstone bridge setups) and common-mode signal rejection analysis are derived in "Negative Feedback Applications Part - 02" starting at [08:02](https://www.youtube.com/watch?v=KRwDIwmbkv4&t=482s).
+
+[Previous](05_Feedback_Concepts.md) | [Home](index.md) | [Next](07_Waveform_Generation_and_Timing.md)

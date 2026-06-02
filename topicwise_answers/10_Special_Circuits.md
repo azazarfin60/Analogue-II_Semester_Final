@@ -1,3 +1,5 @@
+[Previous](09_CMOS_Logic.md) | [Home](index.md)
+
 # 📚 Topic 10: Special Circuits
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -269,3 +271,5 @@ $$
 $$
 
 The overall closed-loop gain of the multi-stage feedback system is exactly $-0.6$.
+
+[Previous](09_CMOS_Logic.md) | [Home](index.md)

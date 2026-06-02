@@ -1,3 +1,5 @@
+[Previous](2022_Answers.md) | [Home](index.md) | [Next](2024_Answers.md)
+
 # 📝 RUET 2023 Odd Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2105)
 
@@ -363,3 +365,5 @@ $$
 
 **(c) Design active Sallen-Key bandpass filter ($100\text{ kHz}$ to $300\text{ kHz}$). [04 Marks]**
 *(Identical to 2022 Q.6(c). Cascade a $100\text{ kHz}$ HPF ($C=1\text{nF}, R=1.6\text{k}\Omega$) and a $300\text{ kHz}$ LPF ($C=1\text{nF}, R=530\ \Omega$)).*
+
+[Previous](2022_Answers.md) | [Home](index.md) | [Next](2024_Answers.md)

@@ -1,3 +1,5 @@
+[Previous](Classnote04.md) | [Home](index.md) | [Next](Classnote06.md)
+
 # Class Note Digitization - Phase 5 (Pages 41 to 50)
 
 ---
@@ -582,3 +584,5 @@ $$
 $$
 C_o = C_{wo} + C_{ds} + C_{mo} \quad \text{with} \quad \boxed{C_{mo} = \left( 1 - \frac{1}{A_v} \right) C_{gd}}
 $$
+
+[Previous](Classnote04.md) | [Home](index.md) | [Next](Classnote06.md)

@@ -1,3 +1,5 @@
+[Previous](Classnote05.md) | [Home](index.md) | [Next](Classnote07.md)
+
 # Class Note Digitization - Phase 6 (Part 1, Pages 51-57 & Part 2, Pages 1-3)
 
 ---
@@ -545,3 +547,5 @@ where $f$ is the signal frequency and $V_p$ is the peak output voltage.
 $$
 V_1 = \left( \frac{-j X_C}{R - j X_C} \right) v_{in} = \left( \frac{1}{1 + j \omega R C} \right) v_{in}
 $$
+
+[Previous](Classnote05.md) | [Home](index.md) | [Next](Classnote07.md)

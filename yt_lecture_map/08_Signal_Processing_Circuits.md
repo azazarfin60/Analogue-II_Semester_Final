@@ -1,3 +1,5 @@
+[Previous](07_Waveform_Generation_and_Timing.md) | [Home](index.md)
+
 # 08: Signal Processing Circuits
 
 ## All About Electronics
@@ -83,3 +85,5 @@ $$
 - **Cancelling Resistance**: Used to cancel positive resistance in telephone transmission lines to minimize signal attenuation.
 - **Active Filters**: Employed in active filter design to simulate inductors (gyrators) or create stable high-Q resonators.
 - **Oscillators**: Used as a negative resistance element to sustain oscillation in LC resonant tanks.
+
+[Previous](07_Waveform_Generation_and_Timing.md) | [Home](index.md)

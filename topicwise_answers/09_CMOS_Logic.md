@@ -1,3 +1,5 @@
+[Previous](08_Active_Filters.md) | [Home](index.md) | [Next](10_Special_Circuits.md)
+
 # 📚 Topic 09: CMOS Logic
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -178,3 +180,5 @@ To implement a 3-input CMOS NAND gate (implementing $V_{out} = \overline{A \cdot
 | **1** | **0** | **1** | OFF | ON | OFF | ON | OFF | ON | **1** |
 | **1** | **1** | **0** | OFF | OFF | ON | ON | ON | OFF | **1** |
 | **1** | **1** | **1** | OFF | OFF | OFF | ON | ON | ON | **0** |
+
+[Previous](08_Active_Filters.md) | [Home](index.md) | [Next](10_Special_Circuits.md)

@@ -1,3 +1,5 @@
+[Previous](01_Multistage_Amplifiers.md) | [Home](index.md) | [Next](03_Feedback_Amplifiers.md)
+
 # 📚 Topic 02: Frequency Response
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -304,3 +306,5 @@ The overall lower cutoff frequency is dominated by the highest of these three in
 $$
 f_L \approx f_{LE} \approx 489.41\text{ Hz}
 $$
+
+[Previous](01_Multistage_Amplifiers.md) | [Home](index.md) | [Next](03_Feedback_Amplifiers.md)

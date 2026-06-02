@@ -1,3 +1,5 @@
+[Previous](2020_Answers.md) | [Home](index.md) | [Next](2022_Answers.md)
+
 # 📝 RUET 2021 Even Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2205)
 
@@ -484,3 +486,5 @@ V_o = 1.6\text{ V (peak)}
 $$
 
 **(c) Missing pulse detector circuit. [04 Marks]** *(Already answered in 2020 Q.6(c)).*
+
+[Previous](2020_Answers.md) | [Home](index.md) | [Next](2022_Answers.md)

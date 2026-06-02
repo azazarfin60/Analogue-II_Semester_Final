@@ -1,3 +1,5 @@
+[Previous](Classnote07.md) | [Home](index.md) | [Next](Classnote09.md)
+
 # Class Note Digitization - Phase 8 (Part 2, Pages 14-23)
 
 ---
@@ -493,3 +495,5 @@ A = 1 + 1 + 1 = 3
 $$
 
   Since $A = 1 + \frac{R_f}{R_1} = 3 \Rightarrow \boxed{R_f = 2 R_1}$ (gain of the non-inverting op-amp must be at least 3 to start oscillations).
+
+[Previous](Classnote07.md) | [Home](index.md) | [Next](Classnote09.md)

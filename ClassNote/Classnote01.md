@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](Classnote02.md)
+
 # Class Note Digitization - Phase 1 (Pages 1 to 10)
 
 ---
@@ -767,3 +769,5 @@ $$
 $$
 I_C \approx \frac{V_E + V_{EE}}{R_E}
 $$
+
+[Home](index.md) | [Next](Classnote02.md)

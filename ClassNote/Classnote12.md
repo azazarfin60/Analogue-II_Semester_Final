@@ -1,3 +1,5 @@
+[Previous](Classnote11.md) | [Home](index.md)
+
 # Class Note Digitization - Phase 12 (Part 2, Page 54)
 
 ---
@@ -66,3 +68,5 @@ $$
 * **555 Timer Circuits:** 1 full question set.
 * **Oscillator Circuits:** 1 full question set.
 * **Op-Amp Practical Applications:** 1 full question set.
+
+[Previous](Classnote11.md) | [Home](index.md)

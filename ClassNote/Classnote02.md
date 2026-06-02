@@ -1,3 +1,5 @@
+[Previous](Classnote01.md) | [Home](index.md) | [Next](Classnote03.md)
+
 # Class Note Digitization - Phase 2 (Pages 11 to 20)
 
 ---
@@ -681,3 +683,5 @@ $$
 $$
 A_{v_s} = \frac{V_o}{V_s} = \left( \frac{R_i}{R_i + R_s} \right) \left( \frac{R_L}{R_o + R_L} \right) A_{v_{NL}}
 $$
+
+[Previous](Classnote01.md) | [Home](index.md) | [Next](Classnote03.md)

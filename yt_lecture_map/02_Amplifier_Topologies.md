@@ -1,3 +1,5 @@
+[Previous](01_Transistor_Types.md) | [Home](index.md) | [Next](03_Frequency_Response.md)
+
 # 02: Amplifier Topologies
 
 ## All About Electronics
@@ -13,3 +15,5 @@ Ankit Goyal Sir provides rigorous mathematical derivations and exam-oriented pro
 - **General Multistage Amplifiers**: Direct-coupled, RC-coupled, and transformer-coupled multi-transistor networks are covered in "Multi-stage Amplifiers | Part-1" starting at [03:12](https://www.youtube.com/watch?v=D6T44XH92NU&t=192s).
 - **Cascode Amplifier (BJT)**: Detailed small-signal AC model analysis of a cascaded Common-Emitter and Common-Base stage, proving high output resistance, high bandwidth (due to Miller effect elimination), and high voltage gain in "Multi-stage Amplifiers | Part-2" starting at [01:40](https://www.youtube.com/watch?v=mGgygCh-mmc&t=100s).
 - **Darlington Pair (BJT)**: Extensive network analysis, biasing equations, base-to-emitter offset considerations ($2 \times V_{BE} = 1.4\text{ V}$), and overall current gain proofs are covered in "Multi-stage Amplifiers | Part-2" starting at [43:06](https://www.youtube.com/watch?v=mGgygCh-mmc&t=2586s).
+
+[Previous](01_Transistor_Types.md) | [Home](index.md) | [Next](03_Frequency_Response.md)

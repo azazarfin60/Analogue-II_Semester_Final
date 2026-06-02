@@ -1,3 +1,5 @@
+[Previous](Classnote06.md) | [Home](index.md) | [Next](Classnote08.md)
+
 # Class Note Digitization - Phase 7 (Part 2, Pages 4-13)
 
 ---
@@ -496,3 +498,5 @@ $$
   * Square waves
   * Triangular waves
   * Sawtooth waves
+
+[Previous](Classnote06.md) | [Home](index.md) | [Next](Classnote08.md)

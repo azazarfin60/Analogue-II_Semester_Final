@@ -1,3 +1,5 @@
+[Previous](05_OpAmp_Applications.md) | [Home](index.md) | [Next](07_555_Timer.md)
+
 # 📚 Topic 06: Oscillators
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -345,3 +347,5 @@ Q = \frac{\omega_0 L}{R}
 $$
 
 Because the equivalent inductance $L$ of the crystal is extremely large (often in Henries) and $R$ is tiny, the crystal only oscillates over a highly narrow phase-locked frequency range, making it practically immune to temperature changes, aging, or supply voltage drifts.
+
+[Previous](05_OpAmp_Applications.md) | [Home](index.md) | [Next](07_555_Timer.md)

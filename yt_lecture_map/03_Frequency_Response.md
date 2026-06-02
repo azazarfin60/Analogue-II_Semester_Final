@@ -1,3 +1,5 @@
+[Previous](02_Amplifier_Topologies.md) | [Home](index.md) | [Next](04_CMOS_Technology.md)
+
 # 03: Frequency Response
 
 ## All About Electronics
@@ -9,3 +11,5 @@ Ankit Goyal Sir covers BJT and MOSFET frequency response in great detail:
 - **Low Frequency Response of BJT**: Focuses on the effects of coupling and bypass capacitors on BJT gain in "Low Frequency Response of BJT" starting at [1:13](https://www.youtube.com/watch?v=smq7_LJDstE&t=73s).
 - **High Frequency Response of BJT**: Focuses on the high frequency behavior of BJT using low-pass filters and internal capacitances, starting at [1:50](https://www.youtube.com/watch?v=iL3S6xoEjnY&t=110s).
 - **Frequency Response of MOSFET**: Explains the internal and parasitic capacitances of MOSFETs and how they affect low and high-frequency responses in "Frequency Response of MOSFET" starting at [0:57](https://www.youtube.com/watch?v=UT752L38k0E&t=57s).
+
+[Previous](02_Amplifier_Topologies.md) | [Home](index.md) | [Next](04_CMOS_Technology.md)

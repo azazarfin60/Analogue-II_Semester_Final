@@ -1,3 +1,5 @@
+[Previous](Classnote08.md) | [Home](index.md) | [Next](Classnote10.md)
+
 # Class Note Digitization - Phase 9 (Part 2, Pages 24-33)
 
 ---
@@ -435,3 +437,5 @@ $$
 * **Frequency Dependencies:**
   * $f \propto R_2$ (frequency increases linearly with comparator feedback resistor).
   * $f \propto \frac{1}{R_1 R_3}$ (frequency is inversely proportional to integrator components).
+
+[Previous](Classnote08.md) | [Home](index.md) | [Next](Classnote10.md)

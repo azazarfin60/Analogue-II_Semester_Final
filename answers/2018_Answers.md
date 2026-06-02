@@ -1,3 +1,5 @@
+[Previous](2017_Answers.md) | [Home](index.md) | [Next](2019_Answers.md)
+
 # 📝 RUET 2018 Even Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2205)
 
@@ -597,3 +599,5 @@ $$
 **Final Component Values:**
 *   Feedback Network: $R = 1.6\text{ k}\Omega$, $C = 10\text{ nF}$.
 *   Amplifier Network: $R_1 = 10\text{ k}\Omega$, $R_f = 20\text{ k}\Omega$ (minimum).
+
+[Previous](2017_Answers.md) | [Home](index.md) | [Next](2019_Answers.md)

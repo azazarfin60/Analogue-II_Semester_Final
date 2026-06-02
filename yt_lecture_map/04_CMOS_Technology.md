@@ -1,3 +1,5 @@
+[Previous](03_Frequency_Response.md) | [Home](index.md) | [Next](05_Feedback_Concepts.md)
+
 # 04: CMOS Technology
 
 ## All About Electronics
@@ -7,3 +9,5 @@ The "All About Electronics" playlist does not contain a dedicated tutorial on CM
 ## Ankit Goyal Sir
 Ankit Goyal Sir covers CMOS technology from an analog standpoint in detail:
 - **CMOS Inverter**: Explains the working, design, logic symbol, and transistors involved in constructing a CMOS Inverter. An analogy is made using a simple common-emitter BJT inverter before diving into the CMOS structure in "CMOS Inverter" starting at [1:57](https://www.youtube.com/watch?v=Fdwhr8slhZY&t=117s).
+
+[Previous](03_Frequency_Response.md) | [Home](index.md) | [Next](05_Feedback_Concepts.md)

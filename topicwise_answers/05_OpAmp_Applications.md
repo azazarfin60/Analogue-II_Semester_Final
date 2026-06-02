@@ -1,3 +1,5 @@
+[Previous](04_OpAmp_Fundamentals.md) | [Home](index.md) | [Next](06_Oscillators.md)
+
 # 📚 Topic 05: OpAmp Applications
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -319,3 +321,5 @@ V_{out} = \left( \frac{R_f}{R} \right) (V_{o2} - V_{o1}) = \left( \frac{R_f}{R} 
 $$
 
 *   **Benefit:** The extremely high CMRR isolates small sensor readings from large common-mode electrical noise.
+
+[Previous](04_OpAmp_Fundamentals.md) | [Home](index.md) | [Next](06_Oscillators.md)

@@ -1,3 +1,5 @@
+[Previous](2023_Answers.md) | [Home](index.md)
+
 # 📝 RUET 2024 Odd Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2105)
 
@@ -399,3 +401,5 @@ $$
 $$
 
     *(Conclusion: The feedback network reduced a massive $20\%$ physical gain fluctuation down to an imperceptible $0.198\%$ change).*
+
+[Previous](2023_Answers.md) | [Home](index.md)

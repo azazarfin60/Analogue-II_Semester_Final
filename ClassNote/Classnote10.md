@@ -1,3 +1,5 @@
+[Previous](Classnote09.md) | [Home](index.md) | [Next](Classnote11.md)
+
 # Class Note Digitization - Phase 10 (Part 2, Pages 34-43)
 
 ---
@@ -414,3 +416,5 @@ $$
 $$
 A_{zf} = \frac{v_o}{I_s} = \frac{Z_t}{1 + Z_t \beta}
 $$
+
+[Previous](Classnote09.md) | [Home](index.md) | [Next](Classnote11.md)

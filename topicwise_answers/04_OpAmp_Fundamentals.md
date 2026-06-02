@@ -1,3 +1,5 @@
+[Previous](03_Feedback_Amplifiers.md) | [Home](index.md) | [Next](05_OpAmp_Applications.md)
+
 # 📚 Topic 04: OpAmp Fundamentals
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -224,3 +226,5 @@ Since the closed-loop gain is $10$:
 $$
 V_{p-p(in)} = \frac{V_{p-p(out)}}{\text{Gain}} = \frac{3.978\text{ V}_{p-p}}{10} \approx 0.398\text{ V}_{p-p} \quad (\text{or } 398\text{ mV}_{p-p})
 $$
+
+[Previous](03_Feedback_Amplifiers.md) | [Home](index.md) | [Next](05_OpAmp_Applications.md)

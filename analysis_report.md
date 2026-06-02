@@ -1,3 +1,5 @@
+[Previous](Syllabus.md) | [Home](index.md)
+
 # 📊 RUET ECE 2105/2205 — Analog Electronic Circuits II
 # 8-Year Exam Trend Analysis & Class Note Credibility Report
 
@@ -266,3 +268,5 @@ Based on the combined analysis of frequency, marks weight, class note coverage, 
 > [!CAUTION]
 > ### Gap Warning:
 > The **Sallen-Key active filter design** (2nd-order, component value calculation) appeared in **4 out of 8 years** but has only theoretical treatment in the class notes — no worked numerical example. This is the single biggest gap between class notes and exams. Study this from the textbook (Boylestad Ch. 15 or Sedra/Smith).
+
+[Previous](Syllabus.md) | [Home](index.md)

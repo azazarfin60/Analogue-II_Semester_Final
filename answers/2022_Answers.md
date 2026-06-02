@@ -1,3 +1,5 @@
+[Previous](2021_Answers.md) | [Home](index.md) | [Next](2023_Answers.md)
+
 # 📝 RUET 2022 Odd Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2105)
 
@@ -379,3 +381,5 @@ $$
 $$
 
 Let $R_1 = 10\text{ k}\Omega$, then set $R_f = 20\text{ k}\Omega$ (use a $22\text{k}\Omega$ trim pot to fine-tune the amplitude and prevent clipping).
+
+[Previous](2021_Answers.md) | [Home](index.md) | [Next](2023_Answers.md)

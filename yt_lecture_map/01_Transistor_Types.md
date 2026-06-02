@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](02_Amplifier_Topologies.md)
+
 # 01: Transistor Types
 
 ## All About Electronics
@@ -11,3 +13,5 @@ Ankit Goyal Sir's Lakshya Batch 2.0 covers the transistor types in detail.
 - **BJT**: The basics of BJT are introduced in "Basics of BJT - 1" starting at [2:41](https://www.youtube.com/watch?v=wZHu2XuzbUI&t=161s).
 - **FET (JFET)**: The JFET is covered starting from "JFET Part- 1" at [1:43](https://www.youtube.com/watch?v=-CGzDDHEyys&t=103s).
 - **MOSFET**: The introduction to MOSFET is covered in "Introduction to MOSFET" at [3:40](https://www.youtube.com/watch?v=ffBWEHJEFOQ&t=220s).
+
+[Home](index.md) | [Next](02_Amplifier_Topologies.md)

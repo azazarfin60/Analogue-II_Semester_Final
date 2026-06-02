@@ -1,3 +1,5 @@
+[Previous](2019_Answers.md) | [Home](index.md) | [Next](2021_Answers.md)
+
 # 📝 RUET 2020 Even Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2205)
 
@@ -519,3 +521,5 @@ $$
 $R_1 = 10\text{ k}\Omega$
 $R_F = 60\text{ k}\Omega$
 $V_{ref} = 5.833\text{ V}$
+
+[Previous](2019_Answers.md) | [Home](index.md) | [Next](2021_Answers.md)

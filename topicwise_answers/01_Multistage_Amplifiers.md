@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](02_Frequency_Response.md)
+
 # 📚 Topic 01: Multistage Amplifiers
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -579,3 +581,5 @@ $$
 $$
 A_v = A_{v1} \times A_{v2} = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C}{r_e}
 $$
+
+[Home](index.md) | [Next](02_Frequency_Response.md)

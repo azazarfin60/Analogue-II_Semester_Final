@@ -1,3 +1,5 @@
+[Previous](Classnote02.md) | [Home](index.md) | [Next](Classnote04.md)
+
 # Class Note Digitization - Phase 3 (Pages 21 to 30)
 
 ---
@@ -513,3 +515,5 @@ $$
             GND  GND       GND
 ```
 * Note: A cascode features stacked transistors to achieve wide bandwidth and high input impedance.
+
+[Previous](Classnote02.md) | [Home](index.md) | [Next](Classnote04.md)

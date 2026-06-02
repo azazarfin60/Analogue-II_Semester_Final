@@ -1,3 +1,5 @@
+[Home](index.md) | [Next](2018_Answers.md)
+
 # 📝 RUET 2017 Even Semester Examination — Answers
 # Analog Electronic Circuits II (ECE 2205)
 
@@ -513,3 +515,5 @@ $$
 
 **Wave Shape Description:**
 The output waveform is a summation of two sine waves of the same frequency but different phases and drastically different amplitudes. Because the $100\text{V}$ component dominates, the output wave shape will closely resemble a very large sine wave of $100\text{V}$ peak amplitude (shifted $-30^\circ$ in phase), with slight morphological distortion and a small phase shift introduced by subtracting the smaller $10\text{V}$ signal. (Note: In reality, an op-amp outputting $100\text{V}$ is impossible with standard $\pm 15\text{V}$ supplies, so a real circuit would heavily saturate into a square wave. Mathematically, it is the composite sine wave described above).
+
+[Home](index.md) | [Next](2018_Answers.md)

@@ -1,3 +1,5 @@
+[Previous](02_Frequency_Response.md) | [Home](index.md) | [Next](04_OpAmp_Fundamentals.md)
+
 # 📚 Topic 03: Feedback Amplifiers
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -259,3 +261,5 @@ $$
 $$
 A_i = \frac{i_o}{i_i} = A_v \left( \frac{Z_i}{R_C} \right) = -259.4 \times \left( \frac{607\ \Omega}{2700\ \Omega} \right) \approx -58.3
 $$
+
+[Previous](02_Frequency_Response.md) | [Home](index.md) | [Next](04_OpAmp_Fundamentals.md)

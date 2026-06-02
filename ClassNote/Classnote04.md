@@ -1,3 +1,5 @@
+[Previous](Classnote03.md) | [Home](index.md) | [Next](Classnote05.md)
+
 # Class Note Digitization - Phase 4 (Pages 31 to 40)
 
 ---
@@ -493,3 +495,5 @@ $$
 #### Important takeaways:
 * **Red Margin Note:** সবগুলা Capacitor এর across-এ cutoff frequency নির্ণয় করতে হবে। (The cutoff frequencies for all three capacitors must be calculated, and the largest of these three determines the overall lower cutoff frequency $f_L$ of the amplifier).
 * **Summary:** BJT low-frequency frequency response using Bode plots of individual cutoff frequencies.
+
+[Previous](Classnote03.md) | [Home](index.md) | [Next](Classnote05.md)

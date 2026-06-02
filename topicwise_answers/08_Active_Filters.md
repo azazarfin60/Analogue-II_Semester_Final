@@ -1,3 +1,5 @@
+[Previous](07_555_Timer.md) | [Home](index.md) | [Next](09_CMOS_Logic.md)
+
 # 📚 Topic 08: Active Filters
 # Analog Electronic Circuits II — Topic-Wise Repository
 
@@ -201,3 +203,5 @@ R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi (100 \times 10^3\text{ Hz}) (1 \tim
 $$
 
 Connecting these two stages in series yields a flat bandpass filter spanning $50\text{ kHz}$ to $100\text{ kHz}$.
+
+[Previous](07_555_Timer.md) | [Home](index.md) | [Next](09_CMOS_Logic.md)
