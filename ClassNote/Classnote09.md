@@ -164,7 +164,7 @@ C_{eq} = C_1 \parallel C_2 = \frac{C_1 C_2}{C_1 + C_2}
 $$
 
 $$
-\therefore \boxed{f = \frac{1}{2\pi \sqrt{L C_{eq}}}} \quad (\text{Colpitts Resonant Frequency})}
+\therefore \boxed{f = \frac{1}{2\pi \sqrt{L C_{eq}}}} \quad (\text{Colpitts Resonant Frequency})
 $$
 
 #### Loop Gain Condition:
