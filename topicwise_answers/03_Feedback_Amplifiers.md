@@ -10,6 +10,9 @@
 ### 1.1 The Four Feedback Topologies
 *[Appeared in: 2024 Q3(a), 2022 Q2(c), 2017 Q4(a)]*
 
+**Question:**
+* **(a)** Explain the functions of current-mirror circuits and show that for a basic two-transistor BJT current mirror, the base current of the reference transistor is given by $I_{B1} = \frac{I_{control}}{\beta_1 + 2}$. **[04/05 Marks, CO2]**
+
 Negative feedback is classified based on the physical parameter sampled at the output (Voltage or Current) and how the feedback signal is mixed at the input (Series or Shunt):
 
 | Feedback Topology | Output Sampling | Input Mixing | Gain Parameter | Ideal Input Impedance | Ideal Output Impedance |
@@ -24,6 +27,9 @@ Negative feedback is classified based on the physical parameter sampled at the o
 ### 1.2 Detailed View: Voltage-Shunt Feedback
 *[Appeared in: 2017 Q4(a)]*
 
+**Question:**
+* **(a)** What are the types of feedback connections? Explain voltage-shunt feedback configuration. **[04 Marks]**
+
 In a **Voltage-Shunt feedback** configuration:
 *   **Output Sampling (Voltage):** The feedback network is connected in parallel (shunt) with the load. It samples the output voltage. Parallel sampling acts to stabilize the output voltage, which translates physically to a **decrease in output impedance** ($Z_{of} = Z_o / D$).
 *   **Input Mixing (Shunt):** The feedback signal is mixed in parallel (shunt) with the input signal source. The feedback network injects a current ($I_f$) that opposes the input current ($I_i$). Mixing currents in parallel stabilizes the input voltage, requiring a higher current from the source to drive the same input voltage. This translates physically to a **decrease in input impedance** ($Z_{if} = Z_i / D$).
@@ -33,6 +39,37 @@ In a **Voltage-Shunt feedback** configuration:
 
 ## 2. Voltage-Series Negative Feedback Derivations
 *[Appeared in: 2024 Q3(b), 2021 Q2(b), 2018 Q6(a)]*
+
+**Question:**
+* **(b)** Choose the values of the drain resistor $R_D$ and source resistor $R_S$ for the JFET self-bias network shown below to achieve an AC voltage gain of $|A_v| = 8$. Assume the operating point is set at $V_{GSQ} = \frac{1}{4} V_P$. The JFET parameters are $I_{DSS} = 10\text{ mA}$, $V_P = -4\text{ V}$, $g_{m0} = 5\text{ mS}$, and dynamic drain resistance $r_d = 20\text{ k}\Omega$. **[03 Marks, CO3]**
+
+##### Circuit Diagram (Q.3(b)):
+```
+           +20V
+             |
+      +------+
+      |
+     [ ] RD
+      |
+      +------------||----+ Vo
+      |           C2     |
+    D |                 [ ] RL = 10M
+     ---                 |
+  G |   |                +--- GND
+ ---+   |
+ |  | |---
+ |    |   | S
+[ ]   +---+---+
+10M   |       |
+ |   [ ]     === CS = 40uF
+ |    | RS    |
+-+----+-------+-- GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Device Parameters:** JFET with $I_{DSS} = 10\text{ mA}$, $V_P = -4\text{ V}$, $r_d = 20\text{ k}\Omega$.
+2. **Feedback & Coupling:** Gate self-biased via $R_G = 10\text{ M}\Omega$. Source resistor $R_S$ bypassed by $C_S = 40\ \mu\text{F}$. Output load $R_L = 10\text{ M}\Omega$ coupled via capacitor $C_2 = 0.1\ \mu\text{F}$.
+3. **Target Parameters:** closed-loop gain $A_v = 8$, quiescent point $V_{GSQ} = -1\text{ V}$.
 
 Assuming an open-loop amplifier with voltage gain $A$, input impedance $Z_i$, output impedance $Z_o$, and a feedback factor $\beta$:
 
@@ -146,6 +183,9 @@ This mathematically proves the output impedance decreases by the factor $(1+A\be
 ### 3.1 Voltage-Series BJT Feedback Amplifier Parameter Extraction
 *[Appeared in: 2018 Q6(b)]*
 
+**Question:**
+* **(b)** A voltage-series feedback amplifier has an open-loop voltage gain $A = -100$, open-loop input impedance $R_i = 10\text{ k}\Omega$, open-loop output impedance $R_o = 20\text{ k}\Omega$, and feedback factor $\beta = -0.1$. Determine (i) closed-loop voltage gain ($A_f$), (ii) closed-loop input impedance ($R_{if}$), and (iii) closed-loop output impedance ($R_{of}$). **[04 Marks]**
+
 **Problem Details:**
 A voltage-series feedback amplifier has open-loop parameters: voltage gain $A = -100$, input impedance $R_i = 10\text{ k}\Omega$, and output impedance $R_o = 20\text{ k}\Omega$. The feedback factor is $\beta = -0.1$.
 
@@ -181,6 +221,58 @@ $$
 
 ### 3.2 JFET CS Feedback Loop Analysis
 *[Appeared in: 2017 Q2(b)]*
+
+**Question:**
+* **(b)** For the following network, determine the change of gain with and without feedback. The JFET transconductance is $g_m = 5800\ \mu\text{S}$. **[06 Marks]**
+
+##### Circuit Diagram (Q.2(b)):
+```
+                    +15 V (Vdd)
+                      |
+                     [ ] RD = 10k
+                      |
+             +--------+
+             |        |
+          G  |     D  |
+        +----+      +-+-+
+   Vi (~| J1        |   | J1 (JFET)
+        +-+--+      +-+-+
+          |  |        | S
+          |  |        +-----+
+          |  |              |
+          |  +--||----------+
+          |     Cc (0.01uF) |
+          |                 +-----+
+          |                 |     |
+          |                [ ]   [ ] RL = 10k
+          |            R1  [ ]   [ ]
+          |            100k |     |
+          +-----------------+     |
+          |                 |     |
+         [ ] R2 = 20k      [ ]   ---
+         [ ]               [ ]   GND
+          |                 |
+         GND               GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Device Type:** n-channel JFET operated under voltage-series negative feedback.
+2. **Gain without Feedback ($A$):**
+   * Output load resistance: $R_L' = R_D \parallel R_L = 10\text{ k}\Omega \parallel 10\text{ k}\Omega = 5\text{ k}\Omega$.
+   * Open-loop voltage gain: $A = -g_m R_L' = -5800\ \mu\text{S} \times 5\text{ k}\Omega = -29$.
+3. **Feedback Network ($\beta$):**
+   * The feedback divider network consists of series resistors $R_1 = 100\text{ k}\Omega$ and $R_2 = 20\text{ k}\Omega$ connected from output node to Ground.
+   * Feedback factor:
+
+$$
+\beta = -\frac{R_2}{R_1 + R_2} = -\frac{20\text{ k}\Omega}{100\text{ k}\Omega + 20\text{ k}\Omega} = -0.1667
+$$
+
+4. **Gain with Feedback ($A_f$):**
+
+$$
+A_f = \frac{A}{1 + \beta A}
+$$
 
 **Problem Details:**
 A JFET CS amplifier with $g_m = 5800\ \mu\text{S}$ is configured with feedback division using resistors $R_1 = 100\text{ k}\Omega$ and $R_2 = 20\text{ k}\Omega$. Load components: $R_D = 10\text{ k}\Omega$, $R_L = 10\text{ k}\Omega$. Calculate the gain change with and without feedback.
@@ -220,6 +312,33 @@ $$
 
 ### 3.3 Collector-Feedback BJT Amplifier Calculations
 *[Appeared in: 2023 Q2(c)]*
+
+**Question:**
+* **(c)** For the collector-feedback BJT amplifier network shown below, calculate the input impedance ($Z_i$), output impedance ($Z_o$), voltage gain ($A_v$), and current gain ($A_i$). The BJT parameter values are $h_{fe} = 120$, $h_{ie} = 1.175\text{ k}\Omega$, and $h_{oe} = 20\ \mu\text{A/V}$. **[03 Marks, CLO2]**
+
+##### Circuit Diagram (Q.2(c)):
+```
+             +8V
+              |
+             [ ] 2.7k
+              |
+              +---+------+---||---> Io (Vo)
+              |   |      |
+             [ ]  |    C |
+             330k |    --+
+              |   |  B |  ----+
+              +---+----+  |  /|
+                       |  |/ |
+                    Ii |  +---+
+              Vi >-||--+      | E
+                              |
+                            ----- GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Circuit Topology:** Collector-feedback self-bias amplifier.
+2. **Resistors:** Collector load $R_C = 2.7\text{ k}\Omega$, Feedback resistor $R_F = 330\text{ k}\Omega$. Emitter (E) connected directly to ground.
+3. **Coupling:** Input $v_i$ is coupled via capacitor to base. Output $v_o$ is coupled via capacitor from collector.
 
 **Problem Details:**
 A collector-feedback BJT amplifier has components: $R_C = 2.7\text{ k}\Omega$, feedback resistor $R_F = 330\text{ k}\Omega$, and h-parameters: $h_{fe} = 120$, $h_{ie} = 1.175\text{ k}\Omega$, $h_{oe} = 20\ \mu\text{S} \Rightarrow r_o = 1/h_{oe} = 50\text{ k}\Omega$. Calculate $Z_i, Z_o, A_v, A_i$.

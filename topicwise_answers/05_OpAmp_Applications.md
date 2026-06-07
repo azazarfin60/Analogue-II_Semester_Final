@@ -10,6 +10,15 @@
 ### 1.1 Practical Integrators & Differentiators
 *[Appeared in: 2024 Q5(b), 2023 Q5(b)]*
 
+**Question:**
+* **(b)** Design an op-amp summing circuit that implements the mathematical expression:
+
+$$
+V_o = -2 V_1 + 4 V_2 - 3 V_3
+$$
+
+  where $V_1, V_2, V_3$ are the inputs and $V_o$ is the output. **[03 Marks, CO2]**
+
 *   **Practical Integrator:**
     An ideal integrator ($V_o = -\frac{1}{RC}\int V_i dt$) has infinite DC gain because the feedback capacitor acts as an open circuit at $0\text{ Hz}$. Minute DC input offset voltages will integrate over time, causing the output to ramp up and saturate the rails.
     **Solution:** Connect a large feedback resistor $R_f$ in parallel with the capacitor. This caps the DC gain to $A_v = -R_f/R_{in}$ and stabilizes the circuit.
@@ -21,6 +30,15 @@
 
 ### 1.2 Designing Complex Mathematical Schematics
 *[Appeared in: 2020 Q8(b), 2019 Q4(a), 2018 Q4(b)]*
+
+**Question:**
+* **(b)** Design and draw a summing/differentiating op-amp circuit diagram to satisfy the following mathematical operation:
+
+$$
+V_o = 3 V_1 - 2 V_2 - 3 \frac{d V_1}{d t}
+$$
+
+  **[04 Marks]**
 
 #### Example Design 1: $v_o = 0.5 v_1 - 0.7 v_2 + 0.2 \frac{d v_3}{d t}$
 To implement this equation using an inverting summing configuration ($v_o = -[V_A + V_B + V_C]$):
@@ -77,6 +95,9 @@ $$
 ## 2. Non-Linear Waveform Generators
 *[Appeared in: 2017 Q6(c)]*
 
+**Question:**
+* **(c)** Draw neat schematics of pulse and triangular wave generator circuits using operational amplifiers. **[03 Marks]**
+
 *   **Pulse Generator:** An astable multivibrator utilizing asymmetric charging/discharging feedback. By placing a diode in parallel with a portion of the feedback resistor network, the capacitor charges rapidly through a low-resistance path (diode forward-biased) and discharges slowly through a high-resistance path (diode reverse-biased), creating a narrow pulse train output.
 *   **Triangular Wave Generator:** Created by cascading an astable Schmitt trigger stage (which outputs a square wave) into a practical integrator stage. The positive/negative levels of the square wave force the integrator to ramp down/up linearly, creating a highly symmetrical triangular waveform.
 
@@ -84,6 +105,9 @@ $$
 
 ## 3. Self-Study Circuit 1: Precision Rectifiers
 *[Appeared in: 2020 Q7(c), 2019 Q5(b), 2023 Q8(a)]*
+
+**Question:**
+* **(c)** Draw a precision full-wave rectifier circuit and explain its operation. **[04 Marks]**
 
 ### 3.1 Precision Half-Wave Rectifier
 A standard diode requires a forward voltage drop of $\sim 0.7\text{ V}$ to turn on, which clips small input signals. Placing the diode inside the op-amp's feedback loop overcomes this:
@@ -114,6 +138,9 @@ The output is the absolute value: $V_o = |V_{in}|$.
 
 ## 4. Self-Study Circuit 2: Log & Antilog Amplifiers
 *[Appeared in: 2022 Q7(c), 2020 Q7(b)]*
+
+**Question:**
+* **(c)** Design an antilogarithmic amplifier circuit using an op-amp and a matched diode/BJT feedback device. **[04/05 Marks, CO3]**
 
 ### 4.1 Logarithmic Amplifier Derivation
 An inverting op-amp configuration with a matched BJT placed in the feedback loop:
@@ -183,6 +210,9 @@ The output is exponentially proportional to the input voltage.
 ## 5. Self-Study Circuit 3: Negative Impedance Converter (NIC)
 *[Appeared in: 2023 Q6(b), 2019 Q5(a)]*
 
+**Question:**
+* **(b)** Explain the operational configuration of an op-amp as a Negative Impedance Converter (NIC). **[03 Marks, CLO1]**
+
 An NIC is an active op-amp configuration that simulates a negative resistance:
 
 ```
@@ -235,6 +265,9 @@ The circuit acts as a negative resistor, pushing current back into the signal so
 ### 6.1 Comparator Chattering and Hysteresis Solution
 *[Appeared in: 2019 Q4(c), 2018 Q4(c)]*
 
+**Question:**
+* **(c)** What is false triggering in a comparator circuit? How can this problem be solved practically? Explain with necessary schematics. **[04 Marks]**
+
 *   **Chattering:** When a noisy input signal slowly passes through a single comparator threshold voltage, noise spikes will cause the signal to cross the threshold multiple times. The output chatters rapidly between states, introducing false triggering.
 *   **Schmitt Trigger Solution:** Employs positive feedback to establish two separate thresholds: Upper Trigger Point ($V_{UT}$) and Lower Trigger Point ($V_{LT}$). When the rising input crosses $V_{UT}$, the output switches states and the threshold instantly drops to $V_{LT}$. Noise spikes cannot cross this new, lower threshold, keeping the output stable. The input must fall below $V_{LT}$ to switch back.
 
@@ -242,6 +275,37 @@ The circuit acts as a negative resistor, pushing current back into the signal so
 
 ### 6.2 Worked Schmitt Trigger Design
 *[Appeared in: 2020 Q8(c)]*
+
+**Question:**
+* **(c)** Design the inverting Schmitt trigger shown in Figure 8(c) to have trigger thresholds $V_{UT} = 7\text{ V}$ and $V_{LT} = 3\text{ V}$. Assume saturation limits $V_{sat} = |-V_{sat}| = 14\text{ V}$ and an input frequency of $f = 400\text{ Hz}$. Determine the values of $R_1, R_F$, and $V_{ref}$. **[04 Marks]**
+
+##### Figure 8(c) Circuit Diagram:
+```
+                                R_F
+                         +----[     ]----+
+                         |               |
+              R_1        |             -|
+      V_ref -[   ]-------+------------|  \
+                                      | A >-----o V_o
+              R_x                     |+/
+        V_s -[   ]--------------------+
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Op-Amp Schmitt Trigger:** Inverting threshold comparator configuration.
+2. **Threshold Formula:**
+
+$$
+V_{UT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) + V_{sat} \left( \frac{R_1}{R_1 + R_F} \right)
+$$
+
+$$
+V_{LT} = V_{ref} \left( \frac{R_F}{R_1 + R_F} \right) - V_{sat} \left( \frac{R_1}{R_1 + R_F} \right)
+$$
+
+3. **Reference Calculations:** Solve for $R_1, R_F$ and $V_{ref}$ using the given trigger thresholds.
+
+[Previous](2019.md) | [Home](index.md) | [Next](2021.md)
 
 **Problem Details:**
 Design an inverting Schmitt trigger with $V_{UT} = 7\text{ V}$, $V_{LT} = 3\text{ V}$. Assume saturation voltage $V_{sat} = 14\text{ V}$.
@@ -293,6 +357,9 @@ $$
 
 ## 7. Sensor Systems: 3-Op-Amp Instrumentation Amplifier
 *[Appeared in: 2020 Q2(c)]*
+
+**Question:**
+* **(c)** Define CMRR and slew rate. Draw an op-amp based circuit that solves a practical engineering problem. **[04 Marks]**
 
 Used to amplify small differential sensor signals in high-noise industrial environments:
 

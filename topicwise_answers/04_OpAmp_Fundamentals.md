@@ -10,6 +10,9 @@
 ### 1.1 Properties Comparison
 *[Appeared in: 2024 Q5(a), 2022 Q5(a), 2017 Q5(a)]*
 
+**Question:**
+* **(a)** Explain the concept of "virtual ground" in operational amplifiers. Derive the closed-loop voltage gain of a non-inverting op-amp using this concept. **[04 Marks, CO2]**
+
 | Parameter | Ideal Op-Amp | Practical Op-Amp (e.g., $\mu\text{A}741$) | Physical Significance |
 |:---|:---:|:---:|:---|
 | **Open-Loop Gain ($A_{OL}$)** | $\infty$ | $\sim 2 \times 10^5$ ($106\text{ dB}$) | Amplifies differential inputs to massive outputs. |
@@ -24,6 +27,15 @@
 
 ### 1.2 The Virtual Ground Concept
 *[Appeared in: 2022 Q5(b)]*
+
+**Question:**
+* **(b)** Design a summing/differentiating/integrating op-amp circuit whose output follows the mathematical relation:
+
+$$
+V_o = 0.5 V_1 + V_2 + 2 \int V_3 d t - 5 \frac{d V_4}{d t}
+$$
+
+  where $V_1, V_2, V_3, V_4$ are the inputs and $V_o$ is the output. **[04 Marks, CO2]**
 
 For an operational amplifier operating with negative feedback:
 1.  The open-loop gain $A_{OL}$ is extremely high ($>10^5$).
@@ -46,6 +58,9 @@ This is the **Virtual Short** principle. If the non-inverting terminal ($V_+$) i
 
 ### 1.3 Closed-Loop Gain Derivation (Non-Inverting)
 *[Appeared in: 2023 Q6(a)]*
+
+**Question:**
+* **(a)** Explain the operation and deriving the transfer characteristics of: (i) inverting amplifiers, (ii) non-inverting amplifiers. **[04 Marks, CLO1]**
 
 ```
                          Rf
@@ -84,6 +99,9 @@ $$
 ### 2.1 Standard Parameter Definitions
 *[Appeared in: 2024 Q5(a), 2022 Q5(a), 2017 Q6(a)]*
 
+**Question:**
+* **(a)** Explain the concept of "virtual ground" in operational amplifiers. Derive the closed-loop voltage gain of a non-inverting op-amp using this concept. **[04 Marks, CO2]**
+
 *   **Input Bias Current ($I_B$):** The average of the DC currents flowing into the inverting ($I_{B-}$) and non-inverting ($I_{B+}$) input terminals required to bias the internal input transistors:
 
 $$
@@ -107,6 +125,9 @@ $$
 
 ### 2.2 Slew Rate and Frequency Limitations
 *[Appeared in: 2019 Q4(b), 2017 Q4(a), 2017 Q6(b)]*
+
+**Question:**
+* **(b)** The slew rate of an op-amp is $SR = 0.5\text{ V}/\mu\text{s}$. For an inverting closed-loop amplifier with a gain of 10, find the maximum peak-to-peak input signal that can be applied without distorting the output voltage at a frequency of $f = 40\text{ kHz}$. **[04 Marks]**
 
 **Slew Rate (SR)** is the maximum physical rate of change of the output voltage of an op-amp:
 
@@ -133,6 +154,9 @@ $$
 
 ## 3. Op-Amp Frequency Compensation
 *[Appeared in: 2024 Q8(a), 2017 Q8(a)]*
+
+**Question:**
+* **(a)** Design an active op-amp based Wien bridge oscillator circuit to generate sustained sinusoidal oscillations at a frequency of $f_o = 20\text{ kHz}$. **[03 Marks, CO1]**
 
 ### 3.1 Why Frequency Compensation is Needed
 An operational amplifier consists of multiple cascaded internal transistor stages (differential input, level shifter, output buffer). Each stage introduces an RC pole, contributing to a high-frequency phase shift.
@@ -163,6 +187,39 @@ The most common technique is **Miller dominant-pole compensation**:
 
 ### 4.1 Maximum Frequency Calculation under Slew Rate Constraint
 *[Appeared in: 2017 Q6(b)]*
+
+**Question:**
+* **(b)** Determine the maximum allowable peak input voltage and maximum frequency ($f_{max}$) for the inverting op-amp configuration shown below if the op-amp slew rate is $SR = 0.5\text{ V}/\mu\text{s}$. The input is $v_i(t) = 10\sin(2\pi f t)\text{ mV}$ peak. **[05 Marks]**
+
+##### Circuit Diagram (Q.6(b)):
+```
+                   Rf = 100k
+                 +----[ ]----+
+                 |           |
+        R1 = 10k |   |\      |
+   Vi o----[ ]----+---| \     |
+                      |  \----+----> Vo
+                      |  /
+               GND o-| /
+                     |/
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Amplifier Gain:** Inverting stage closed-loop gain:
+
+$$
+A_{CL} = -\frac{R_f}{R_1} = -\frac{100\text{ k}\Omega}{10\text{ k}\Omega} = -10
+$$
+
+2. **Slew Rate Limitation:**
+
+$$
+V_o(t) = A_{CL} V_i(t) = -100\sin(2\pi f t)\text{ mV} = -0.1\sin(2\pi f t)\text{ V}
+$$
+
+$$
+SR \ge \left| \frac{d v_o}{d t} \right|_{max} = 2\pi f V_p
+$$
 
 **Problem Details:**
 An inverting op-amp has feedback resistor $R_f = 100\text{ k}\Omega$ and input resistor $R_1 = 10\text{ k}\Omega$. The slew rate is $SR = 0.5\text{ V}/\mu\text{s}$. The input signal is $v_i(t) = 10\sin(2\pi f t)\text{ mV}$ peak. Calculate the maximum operating frequency ($f_{max}$) without distortion.
@@ -198,6 +255,9 @@ $$
 
 ### 4.2 Peak-to-Peak Input Voltage under Slew Constraint
 *[Appeared in: 2019 Q4(b)]*
+
+**Question:**
+* **(b)** The slew rate of an op-amp is $SR = 0.5\text{ V}/\mu\text{s}$. For an inverting closed-loop amplifier with a gain of 10, find the maximum peak-to-peak input signal that can be applied without distorting the output voltage at a frequency of $f = 40\text{ kHz}$. **[04 Marks]**
 
 **Problem Details:**
 An op-amp circuit with a closed-loop gain of $10$ operates at $f = 40\text{ kHz}$. If the slew rate is $SR = 0.5\text{ V}/\mu\text{s}$, determine the maximum peak-to-peak input voltage ($V_{p-p(in)}$) that can be applied without causing output distortion.

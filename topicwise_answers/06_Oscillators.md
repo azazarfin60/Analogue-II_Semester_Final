@@ -10,6 +10,9 @@
 ### 1.1 The Barkhausen Criterion Derivation
 *[Appeared in: 2024 Q8(b), 2021 Q4(a), 2019 Q8(b), 2018 Q8(a)]*
 
+**Question:**
+* **(b)** Draw the circuit diagram of an op-amp based RC phase-shift oscillator and explain its operation. **[04 Marks, CO1]**
+
 An oscillator is a regenerative feedback system that generates a continuous output waveform without requiring an external AC input signal.
 
 ```
@@ -50,6 +53,9 @@ $$
 ### 1.2 Frequency & Amplitude Stability
 *[Appeared in: 2022 Q8(a), 2017 Q4(c), 2023 Q4(c)]*
 
+**Question:**
+* **(a)** Explain the engineering necessity of both frequency and amplitude stability in practical oscillator circuits. **[02 Marks, CO1]**
+
 *   **Gain Condition:** For oscillations to start, the loop gain $|A\beta|$ is designed to be slightly greater than $1$. As oscillations build, active device non-linearities reduce the amplifier gain $A$ until the system settles into a stable steady-state at $|A\beta| = 1$.
 *   **Frequency Stability Condition:** The frequency-selective feedback network must have a steep phase-vs-frequency response curve ($d\phi/d\omega$). If internal components shift due to temperature or supply fluctuations, a steep phase curve ensures the system only shifts frequency minimally to maintain the $0^\circ$ phase criterion.
 
@@ -57,6 +63,9 @@ $$
 
 ## 2. RC Phase-Shift Oscillators
 *[Appeared in: 2021 Q4(b), 2019 Q8(c), 2018 Q5(c)]*
+
+**Question:**
+* **(b)** Formulate the equations to determine the charging and discharging time periods of the timing capacitor in a 555-timer astable multivibrator. **[04 Marks, CLO2]**
 
 ### 2.1 Complete Frequency & Gain Derivation
 The RC phase-shift oscillator uses an inverting amplifier (gain $A$, contributing $180^\circ$ phase shift) and three identical high-pass RC sections in the feedback loop.
@@ -109,6 +118,51 @@ The amplifier must provide an inverting gain of at least $29$ to sustain oscilla
 ### 2.2 Worked RC Phase-Shift Design
 *[Appeared in: 2019 Q8(c)]*
 
+**Question:**
+* **(c)** Design the op-amp based 3-stage RC phase-shift oscillator shown in Figure 8(c) to operate at a frequency of $f_o = 400\text{ Hz}$. Find the values of $R$, $C$, $R_1$, and $R_F$. **[04 Marks]**
+
+##### Figure 8(c) Circuit Diagram:
+```
+                     R_1             R_F
+                 +---[ ]---+----+---[ ]---+
+                 |         |    |         |
+                ---       -|    |         |
+            R_OM| |      |  \   |         |
+                ---      | A >--+---------+
+                 |       |  /             |
+                ===      |+/              |
+                GND                       |
+                 |                        |
+                 +----||----+----||---+---||---+
+                 |    C     |    C    |   C    |
+                 |         [ ]        [ ]      [ ]
+                 |          R          R        R
+                 |          |          |        |
+                 +----------+----------+--------+
+                                       |
+                                      ===
+                                      GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Feedback Phase-Shift Loop:** Three identical high-pass $R-C$ stages connected in series. Each stage introduces a $60^\circ$ phase shift at the oscillation frequency $f_o = 400\text{ Hz}$.
+2. **Frequency Formula:**
+
+$$
+f_o = \frac{1}{2\pi \sqrt{6} R C}
+$$
+
+3. **Amplifier Stage:**
+   * Inverting amplifier with gain:
+
+$$
+A_{CL} = -\frac{R_F}{R_1} = -29
+$$
+
+   * For matching phase-shift loading: $R_1 = R$.
+
+[Previous](2018.md) | [Home](index.md) | [Next](2020.md)
+
 **Problem Details:**
 Design an op-amp based 3-stage RC phase-shift oscillator to operate at a resonant frequency of $f_o = 400\text{ Hz}$.
 
@@ -149,6 +203,9 @@ $$
 ### 3.1 Wien selective bridge analysis
 *[Appeared in: 2020 Q5(a), 2020 Q5(c)]*
 
+**Question:**
+* **(a)** Define regenerative (positive) and degenerative (negative) feedback configurations. **[02 Marks]**
+
 The non-inverting input path of the Wien Bridge oscillator contains a series RC branch and a parallel RC branch:
 
 $$
@@ -184,6 +241,11 @@ $$
 ### 3.2 Worked Wien Bridge Design
 *[Appeared in: 2018 Q8(c), 2020 Q5(c)]*
 
+**Question:**
+* **(c)** Design an op-amp based Wien bridge oscillator to operate at a frequency of $f_o = 10\text{ kHz}$. **[04 Marks]**
+
+[Previous](2017.md) | [Home](index.md) | [Next](2019.md)
+
 **Problem Details:**
 Design an op-amp based Wien bridge oscillator to operate at a frequency of $f_o = 10\text{ kHz}$.
 
@@ -214,6 +276,9 @@ To guarantee oscillations start, we can select a slightly larger standard value:
 
 ## 4. Colpitts Oscillator Derivation
 *[Appeared in: 2021 Q4(a), 2019 Q6(a), 2018 Q5(b), CT4 Q2]*
+
+**Question:**
+* **(a)** Differentiate between active and passive filters. Mention the electrical characteristics of a Sallen-Key active Butterworth low-pass filter. **[04 Marks, CLO1]**
 
 The Colpitts oscillator employs an inductive/capacitive parallel LC tank in its feedback path:
 
@@ -264,6 +329,58 @@ $$
 ### 5.1 Clapp JFET Oscillator Numerical Analysis
 *[Appeared in: 2017 Q4(b)]*
 
+**Question:**
+* **(b)** Calculate (i) Oscillation frequency ($f_o$), (ii) Feedback factor ($\beta$), and (iii) Voltage gain ($A_v$) for the Clapp JFET oscillator network shown below. **[05 Marks]**
+
+##### Circuit Diagram (Q.4(b)):
+```
+                        +15 V_DC
+                           |
+                          [ ] RFC (Radio Frequency Choke)
+                           |
+                  +---------+----------+--||----+--> Vout
+                  |         |          |  Co   |
+                  |       D |          |0.001u[ ] RL = 1k
+                  |       +-+-+        |       |
+         +--||----+--||---| J1|        |      GND
+         |  C1    |  C3   +-+-+        |
+         | 0.01u  | 0.01u   | S        |
+         |        |        GND         |
+       +-+--------+--------------------+
+       |  |                            |
+       | [ ] Rg = 10M                  |
+       |  |                            |
+       | GND                           |
+       |                               |
+       +-----+-------------------+-----+
+       |     |                   |     |
+      ---   ---                 ( )   ( )
+     C| |  C| |                L1| | L2| |
+  0.01u   0.01u               30u |   10u |
+       |     |                   |     |
+       +--+--+                   +--+--+
+          |                         |
+         GND                       GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Resonant Network Topology:** The resonant circuit uses two parallel branches connected between JFET gate and drain loops:
+   * Branch 1: Two capacitors ($C = 0.01\ \mu\text{F}$ and $C = 0.01\ \mu\text{F}$) connected in series to Ground.
+   * Branch 2: Two inductors ($L_1 = 30\ \mu\text{H}$ and $L_2 = 10\ \mu\text{H}$) connected in series to Ground.
+2. **Frequency of Resonant Tank:**
+
+$$
+L_{eq} = L_1 + L_2 = 30\ \mu\text{H} + 10\ \mu\text{H} = 40\ \mu\text{H}
+$$
+
+$$
+C_{eq} = \frac{C \cdot C}{C + C} = 0.005\ \mu\text{F}
+$$
+
+$$
+f_o = \frac{1}{2\pi \sqrt{L_{eq} C_{eq}}}
+$$
+
 **Problem Details:**
 A Clapp JFET oscillator has series tank inductors $L_1 = 30\ \mu\text{H}$ and $L_2 = 10\ \mu\text{H}$ in series, and series capacitors $C_1 = 0.01\ \mu\text{F}$ and $C_2 = 0.01\ \mu\text{F}$ in series. Calculate (i) resonant frequency $f_o$, (ii) feedback factor $\beta$, and (iii) minimum required voltage gain $A_v$.
 
@@ -308,6 +425,9 @@ $$
 
 ## 6. Crystal Oscillators
 *[Appeared in: 2020 Q5(d)]*
+
+**Question:**
+* **(d)** Write a short note on the operation and frequency stability of crystal oscillators. **[02 Marks]**
 
 ### 6.1 Equivalent Circuit and Piezoelectric Effect
 Crystal oscillators exploit the **piezoelectric effect** of a quartz crystal: when mechanical pressure is applied, it generates a voltage across its faces; conversely, when an AC voltage is applied, it vibrates mechanically at a highly stable natural resonant frequency.

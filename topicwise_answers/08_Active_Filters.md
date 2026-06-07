@@ -8,6 +8,9 @@
 ## 1. Active vs. Passive Filters
 *[Appeared in: 2024 Q6(a), 2020 Q4(a), 2021 Q3(a)]*
 
+**Question:**
+* **(a)** Explain the step-by-step working principles of a 555-timer based astable multivibrator. **[04/05 Marks, CO2]**
+
 ### 1.1 Key Differences
 *   **Active Filters:** Constructed using active elements (Operational Amplifiers) in combination with passive resistors and capacitors.
 *   **Passive Filters:** Constructed exclusively using passive components (Resistors, Capacitors, and Inductors).
@@ -29,6 +32,9 @@
 ### 2.1 Standard Filter Responses
 *[Appeared in: 2024 Q6(b)]*
 
+**Question:**
+* **(b)** Design a 555-timer astable circuit to act as a frequency driver and explain its operation. **[03 Marks, CO2]**
+
 1.  **Butterworth Filter:** Offers a **maximally flat passband** response with no ripples. It has a moderate roll-off transition region.
 2.  **Chebyshev Filter:** Offers a **steep roll-off** transition region, but introduces noticeable **amplitude ripples** in either the passband (Type I) or stopband (Type II).
 3.  **Bessel Filter:** Offers a **linear phase response** (constant time delay), preserving the shape of pulsed/digital waveforms. However, it has the slowest roll-off rate in the transition region.
@@ -37,6 +43,34 @@
 
 ### 2.2 Third-Order Active LPF Response Curves
 *[Appeared in: 2017 Q8(b)]*
+
+**Question:**
+* **(b)** Draw the frequency response curve for the active filter shown below. Assume identical component values of $R = 10\text{ k}\Omega$ and $C = 0.1\ \mu\text{F}$. **[06 Marks]**
+
+##### Circuit Diagram (Q.8(b)):
+```
+                   +--------||--------+
+                   |        C         |
+                   |   +--[ R ]--+    |
+             R     |   |   |\    |    |   R        |\
+   Vi o---[ ]------+---|---+ \   |    +--[ ]---+---| \
+                       |   |  \--+-------------+---|  \----+---> Vo
+                       |   |  /                |   |  /    |
+                      --- -| /                --- -| /    [ ] R
+                     C---  |/                C---  |/     [ ]
+                       |                       |           |
+                      GND                     GND         GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Filter Classification:** 3rd-order active Butterworth Low-Pass Filter.
+2. **Cutoff Frequency Calculation:**
+
+$$
+f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi \times 10\text{ k}\Omega \times 0.1\ \mu\text{F}} = 159.15\text{ Hz}
+$$
+
+3. **Roll-off Slope:** Since it is a 3rd-order configuration, the stopband roll-off rate is $-60\text{ dB/decade}$ (or $-18\text{ dB/octave}$).
 
 A 3rd-order active LPF consists of a 2nd-order active stage cascaded with a 1st-order active stage.
 
@@ -64,6 +98,9 @@ $$
 
 ## 3. First-Order Active Filters
 *[Appeared in: 2019 Q6(b)]*
+
+**Question:**
+* **(b)** Design an active first-order high-pass filter using an op-amp. What is the main drawback of active filters, and how can it be mitigated? **[04 Marks]**
 
 ### 3.1 First-Order Active HPF Design
 A first-order active High-Pass Filter consists of a passive series capacitor and shunt resistor connected to the non-inverting input of an op-amp, with the op-amp configured as a non-inverting gain stage.
@@ -115,6 +152,9 @@ where $K = 1 + R_f / R_1$ is the passband gain of the non-inverting amplifier st
 
 ### 4.2 Worked Sallen-Key LPF Design with Gain ($K > 1$)
 *[Appeared in: 2020 Q4(c)]*
+
+**Question:**
+* **(c)** Design and draw a second-order active Sallen-Key low-pass filter to give a high cutoff frequency of $f_H = 1.5\text{ kHz}$, a passband gain of $K = 5$, and a quality factor $Q = 0.707$. **[05 Marks]**
 
 **Problem Details:**
 Design a second-order active Sallen-Key low-pass filter with cutoff frequency $f_H = 1.5\text{ kHz}$, passband gain $K = 5$, and quality factor $Q = 0.707$.
@@ -180,6 +220,9 @@ $$
 
 ## 5. Active Bandpass Filter Cascade
 *[Appeared in: 2022 Q6(c), 2019 Q6(c)]*
+
+**Question:**
+* **(c)** Design an active Sallen-Key bandpass filter that allows signals in the frequency range between $f_L = 100\text{ kHz}$ and $f_H = 300\text{ kHz}$. **[04 Marks, CO3]**
 
 An active Bandpass Filter can be constructed by cascading a High-Pass Filter (HPF) and a Low-Pass Filter (LPF) stage in series, provided the low cutoff frequency ($f_L$) is less than the high cutoff frequency ($f_H$).
 

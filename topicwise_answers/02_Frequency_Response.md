@@ -10,6 +10,9 @@
 ### 1.1 Effect of Cascading on Cutoff Frequencies and Bandwidth
 *[Appeared in: 2024 Q2(c), 2021 Q2(a), 2020 Q3(b), 2023 Q2(b)]*
 
+**Question:**
+* **(c)** Discuss the physical effect of the number of stages on the lower-cutoff and upper-cutoff frequencies and the bandwidth of cascaded amplifiers. **[02 Marks, CO1]**
+
 When multiple stages of amplifiers are cascaded:
 1.  **Lower Cutoff Frequency ($f_{L(overall)}$):** Shifts **higher** (increases) relative to the single-stage cutoff frequency. This is because the multiple high-pass coupling and bypass capacitor networks compound their attenuation at lower frequencies.
 2.  **Upper Cutoff Frequency ($f_{H(overall)}$):** Shifts **lower** (decreases) relative to the single-stage upper cutoff frequency. This is because the multiple low-pass parasitic junction capacitance networks compound their shunting at higher frequencies.
@@ -17,6 +20,37 @@ When multiple stages of amplifiers are cascaded:
 
 ### 1.2 Mathematical Derivation of Multi-Stage Cutoffs
 *[Appeared in: 2023 Q3(b)]*
+
+**Question:**
+* **(b)** For the JFET voltage-divider bias configuration shown below, determine the value of the source resistor $R_S$ required to yield a drain voltage $V_D = 12\text{ V}$ and a quiescent gate-to-source voltage $V_{GSQ} = -2\text{ V}$. **[03 Marks, CLO2]**
+
+##### Circuit Diagram (Q.3(b)):
+```
+            +16V
+              |
+       +------+------+
+       |             |
+      [ ] 91k       [ ] 1.8k
+       |             |
+       +--------+    +------ (VD = 12V)
+       |        |    |
+       |      G |  D |
+       |       ---   |
+       |      |   |--+
+       |      |   |
+      [ ] 47k |   | S
+       |      |   +---+
+       |      |       |
+       |      |      [ ] Rs
+       |      |       |
+      -+------+-------+---- GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **DC Rails & Potentials:** $V_{DD} = 16\text{ V}$. Drain voltage is $V_D = 12\text{ V}$.
+2. **Gate divider:** $R_{G1} = 91\text{ k}\Omega$, $R_{G2} = 47\text{ k}\Omega$.
+3. **Drain path:** $R_D = 1.8\text{ k}\Omega$.
+4. **Target parameters:** $V_{GSQ} = -2\text{ V}$.
 
 Assuming $n$ identical, non-interacting cascaded stages, each with a single-stage lower cutoff frequency $f_L$ and upper cutoff frequency $f_H$:
 
@@ -64,6 +98,9 @@ Since $\sqrt{2^{1/n}-1} < 1$ for $n > 1$, the overall low-frequency limit shifts
 
 ### 2.1 Miller Capacitance Derivation
 *[Appeared in: 2024 Q4(a), 2022 Q2(a)]*
+
+**Question:**
+* **(a)** Define Miller effect capacitance. Derive the expression for the output Miller capacitance ($C_{Mo}$) of an inverting closed-loop amplifier with a voltage gain of $A_v$. **[04 Marks, CO2]**
 
 **Miller's Theorem:** An impedance $Z_f$ connected between the input and output terminals of an inverting amplifier (possessing a voltage gain $A_v$) can be replaced by two equivalent shunt impedances connected to ground at the input ($Z_{in(M)}$) and output ($Z_{out(M)}$).
 
@@ -121,6 +158,9 @@ For high-gain inverting amplifiers ($A_v \ll -1$), $C_{Mi} \approx C_f |A_v|$ an
 
 ### 2.2 High-Frequency BJT Hybrid-$\pi$ Model
 *[Appeared in: 2019 Q3(c)]*
+
+**Question:**
+* **(c)** Explain the high-frequency BJT model and discuss how to derive the upper-cutoff frequencies for an amplifier. **[03 Marks]**
 
 At high frequencies, the standard low-frequency BJT model is inadequate due to the physical charge-storage effects within the junction depletion regions. The **High-Frequency Hybrid-$\pi$ model** resolves this by adding two microscopic parasitic capacitances:
 1.  **Base-Emitter Capacitance ($C_{\pi}$ or $C_{be}$):** Formed across the forward-biased base-emitter junction (contains both depletion and diffusion capacitances).
@@ -181,6 +221,37 @@ $$
 ### 3.1 JFET Common-Source Lower Cutoff Frequency Calculation
 *[Appeared in: 2024 Q4(b), 2022 Q3(c), 2021 Q3(b)]*
 
+**Question:**
+* **(b)** Determine the lower-cutoff frequency ($f_L$) for the JFET Common-Source amplifier shown below. **[04 Marks, CO3]**
+
+##### Circuit Diagram (Q.4(b)):
+```
+                       VDD = +20V
+                        |
+                       [ ] RD = 4.7k
+                        |
+         CG = 0.01u     +---------||---------> Vo
+   Vs                    |         CC = 0.5u   |
+  ~-+- [ ] -+----||----+ |                     |
+    |  Rsig |          | |                   [ ] RL = 2.2k
+    |  =10k |        G | | D                  |
+    |      [ ] RG     ---                     +--- GND
+    |      =1M       |   |---
+    |       |        |   |
+    |       |        |   | S
+    |       |        +---+---+
+    |       |        |       |
+    |       |       [ ] RS  === CS = 2u
+    |       |       =1k      |
+  --+-------+--------+-------+--- GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Device Parameters:** JFET with $I_{DSS} = 8\text{ mA}$, $V_P = -4\text{ V}$, $r_d = \infty\ \Omega$.
+2. **Resistor values:** $R_{sig} = 10\text{ k}\Omega$, $R_G = 1\text{ M}\Omega$, $R_D = 4.7\text{ k}\Omega$, $R_S = 1\text{ k}\Omega$, $R_L = 2.2\text{ k}\Omega$.
+3. **Capacitor values:** $C_G = 0.01\ \mu\text{F}$, $C_C = 0.5\ \mu\text{F}$, $C_S = 2\ \mu\text{F}$.
+4. **Supply Voltage:** $V_{DD} = 20\text{ V}$.
+
 **Problem Details:**
 A JFET common-source amplifier has the following parameters: $I_D$ yields $g_m = 2\text{ mS}$. Biasing resistors: $R_{sig} = 10\text{ k}\Omega$, $R_G = 1\text{ M}\Omega$, $R_D = 4.7\text{ k}\Omega$, $R_S = 1\text{ k}\Omega$, and load resistor $R_L = 2.2\text{ k}\Omega$. Coupling capacitors: $C_G = 0.01\ \mu\text{F}$, $C_C = 0.5\ \mu\text{F}$, and bypass capacitor $C_S = 2\ \mu\text{F}$.
 
@@ -230,6 +301,41 @@ $$
 
 ### 3.2 BJT Common-Emitter Lower Cutoff Frequency Calculation
 *[Appeared in: 2019 Q3(b), 2020 Q3(c), CT2 Q1]*
+
+**Question:**
+* **(b)** Determine the low-cutoff frequencies ($f_{Ls}, f_{Lc}, f_{LE}$) for the BJT common-emitter amplifier network shown in Figure 3(b). **[05 Marks]**
+
+##### Figure 3(b) Circuit Diagram:
+```
+                        +20V
+                          |
+              +-----------+-----------------------+
+              |                                   |
+             [R1] (40 kOhm)                      [RC] (4 kOhm)
+              |                                   |
+              +---------------+                   +----||----o v_o
+              |               |                   |   C_out (1uF)
+             ---            |/ C                  |
+     (10uF)  | |            |                     |
+      C_in   ---            |                     [RL] (2.2 kOhm)
+              |             |                     |
+             v_i   +--------+                     ===
+                   |        |\ E                  GND
+                   |          |
+                  [R2]        +----+
+                10 kOhm       |    |
+                   |         [RE] --- CE
+                  ===       2 kOhm---(20uF)
+                  GND         |    |
+                             ===  ===
+                             GND  GND
+```
+
+##### AI-Ready Structural Walkthrough & Parameter Definitions:
+1. **Device Parameters:** NPN BJT with $\beta = 100$, $V_{BE} = 0.7\text{ V}$, $r_o = \infty$.
+2. **Biasing Network:** $R_1 = 40\text{ k}\Omega$, $R_2 = 10\text{ k}\Omega$, $R_E = 2\text{ k}\Omega$. Collector load $R_C = 4\text{ k}\Omega$.
+3. **Capacitors:** $C_{in} = 10\ \mu\text{F}$, $C_{out} = 1\ \mu\text{F}$, $C_E = 20\ \mu\text{F}$.
+4. **Load Resistor:** $R_L = 2.2\text{ k}\Omega$.
 
 **Problem Details:**
 A BJT common-emitter amplifier has parameters: $\beta = 100, V_{BE} = 0.7\text{ V}$. Resistors: $R_1 = 40\text{ k}\Omega$, $R_2 = 10\text{ k}\Omega$, $R_C = 4\text{ k}\Omega$, $R_E = 2\text{ k}\Omega$, source resistance $R_s = 0\ \Omega$, and load resistor $R_L = 2.2\text{ k}\Omega$. Capacitors: $C_{in} = 10\ \mu\text{F}$, $C_{out} = 1\ \mu\text{F}$, and bypass capacitor $C_E = 20\ \mu\text{F}$.

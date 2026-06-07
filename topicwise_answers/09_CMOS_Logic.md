@@ -10,6 +10,9 @@
 ### 1.1 Structural Advantages
 *[Appeared in: 2023 Q3(c), 2021 Q8(b)]*
 
+**Question:**
+* **(c)** Briefly explain the key electrical characteristics and structural advantages of CMOS logic gates. **[03 Marks, CLO1]**
+
 CMOS (Complementary Metal-Oxide-Semiconductor) technology pairs complementary p-channel (PMOS) and n-channel (NMOS) enhancement-mode MOSFETs. Its dominant structural advantages include:
 1.  **Ultra-Low Static Power Dissipation:** Under steady-state conditions, either the pull-up network (PMOS) or the pull-down network (NMOS) is entirely OFF. Consequently, no direct DC path exists between the power supply ($V_{DD}$) and Ground, keeping static power dissipation in the nanowatt range. Current is only drawn during active logic state transitions when charging internal gate capacitances.
 2.  **Symmetrical Rail-to-Rail Swings:** The high logic state is pulled directly to $+V_{DD}$ (via ON PMOS) and the low logic state is pulled directly to Ground (via ON NMOS), maximizing the logic signal range.
@@ -21,6 +24,9 @@ CMOS (Complementary Metal-Oxide-Semiconductor) technology pairs complementary p-
 
 ### 1.2 CMOS Inverter Operation
 *[Appeared in: 2017 Q1(c)]*
+
+**Question:**
+* **(c)** Explain with a neat sketch the operation of a CMOS circuit. Why is it called an inverter? **[04 Marks]**
 
 A CMOS inverter represents the fundamental building block of CMOS logic:
 
@@ -58,6 +64,9 @@ Because a Logic HIGH input yields a Logic LOW output, and vice versa, the circui
 ### 2.1 2-Input CMOS NAND Gate
 *[Appeared in: 2022 Q4(a), 2021 Q8(c)]*
 
+**Question:**
+* **(a)** Draw the internal block configuration of a 555 timer IC along with its standard pinout configuration. **[03 Marks, CO1]**
+
 *   **Topology:**
     *   **Pull-up Network (PMOS):** Two PMOS transistors ($Q_{P1}, Q_{P2}$) connected in **parallel** between $+V_{DD}$ and the output node.
     *   **Pull-down Network (NMOS):** Two NMOS transistors ($Q_{N1}, Q_{N2}$) connected in **series** between the output node and Ground.
@@ -93,6 +102,11 @@ Because a Logic HIGH input yields a Logic LOW output, and vice versa, the circui
 
 ### 2.2 2-Input CMOS NOR Gate
 *[Appeared in: 2021 Q8(c)]*
+
+**Question:**
+* **(c)** Design a missing pulse detector circuit using a 555 timer IC and explain its operational mechanics. **[04 Marks, CLO3]**
+
+[Previous](2020.md) | [Home](index.md) | [Next](2022.md)
 
 *   **Topology:**
     *   **Pull-up Network (PMOS):** Two PMOS transistors connected in **series** between $+V_{DD}$ and the output node.
@@ -130,6 +144,9 @@ Because a Logic HIGH input yields a Logic LOW output, and vice versa, the circui
 
 ## 3. 3-Input CMOS NAND Gate Design
 *[Appeared in: 2022 Q1(c), 2017 Q2(a)]*
+
+**Question:**
+* **(c)** Design a 3-input CMOS NAND gate and explain its operation with its truth table. **[04 Marks, CO3]**
 
 ### 3.1 Circuit Layout
 To implement a 3-input CMOS NAND gate (implementing $V_{out} = \overline{A \cdot B \cdot C}$):
