@@ -131,24 +131,29 @@ To implement a 3-input CMOS NOR gate (implementing $V_{out} = \overline{A + B + 
 
 ## 3. Current Mirrors
 
-### 3.1 Basic BJT Current Mirror
-*[Appeared in: 2022 Q1(b)]*
+### 3.1 Basic BJT Current Mirror Definition and Operation
+*[Appeared in: 2022 Q1(b), 2017 Q3(a)]*
 
 **Question:**
-* **(b)** Draw a current mirror circuit using BJTs and explain its operating logic. **[03 Marks, CO2]**
+* **(a)** Define a current mirror circuit. Why is it called a current mirror? Explain. **[04 Marks]**
+* *(Also appeared as: Draw a current mirror circuit using BJTs and explain its operating logic.)*
 
 **Answer:**
+**Definition & Naming:**
+A current mirror is a circuit designed to copy a current through one active device by controlling the current in another active device, keeping the output current constant regardless of loading. It is called a "mirror" because the output device reflects or duplicates the exact current flowing through the reference input branch.
+
+**Circuit & Operating Logic:**
 In integrated circuits, resistors take up too much space. Instead, transistors act as active current sources.
 ```text
-                  +Vcc
-                   |
-                  [R]
-                   |
-        Iref ----->+------------+
-                   |            |
-                  Q1 (Diode)   Q2 (Sink)
-                   |            |
-                  Gnd          Gnd
+                   +Vcc
+                    |
+                   [R]
+                    |
+         Iref ----->+------------+
+                    |            |
+                   Q1 (Diode)   Q2 (Sink)
+                    |            |
+                   Gnd          Gnd
 ```
 **Operating Logic:**
 *   $Q_1$ is diode-connected (collector shorted to base). This forces it to operate in the active region. The current $I_{ref}$ flows through resistor $R$. This establishes a base-emitter voltage $V_{BE}$ across $Q_1$.

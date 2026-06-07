@@ -150,6 +150,30 @@ Connect the output directly to the inverting input (a wire, $R_f = 0\ \Omega$, $
 
 ---
 
+### 4.4 Second-Order High-Pass Filter
+*[Appeared in: 2021 Q4(c)]*
+
+**Question:**
+* **(c)** Draw the circuit diagram of a second-order active Butterworth high-pass filter. **[03 Marks]**
+
+**Answer:**
+A second-order active Sallen-Key High-Pass Filter swaps the positions of the resistors and capacitors compared to the Low-Pass Filter.
+```text
+                     R1
+               +---[  ]---+
+               |          |
+         Vi o-||--+--||--(+)--[ Av ]---+---o Vo
+             C1   |  C2   |            |
+                 [R2]     |            |
+                  |       |            |
+                 Gnd      |            |
+                          +------------+
+```
+For a Butterworth response with equal components ($C_1 = C_2 = C$ and $R_1 = R_2 = R$), the amplifier gain must be set to $K = 1.586$ ($Q = 0.707$).
+The cutoff frequency is $f_c = \frac{1}{2\pi R C}$.
+
+---
+
 ## 5. Active Bandpass Filter Cascade
 *[Appeared in: 2023 Q8(c), 2022 Q6(c), 2019 Q6(c)]*
 
@@ -171,5 +195,66 @@ Let $C_L = 1\text{ nF} = 10^{-9}\text{ F}$.
 $$ R_L = \frac{1}{2\pi f_H C_L} = \frac{1}{2\pi (300 \times 10^3\text{ Hz}) (10^{-9}\text{ F})} = \frac{1}{2\pi \times 3 \times 10^{-4}} \approx 530\ \Omega $$
 
 Connecting these two active stages in series yields a flat bandpass filter spanning $100\text{ kHz}$ to $300\text{ kHz}$.
+
+---
+
+## 6. Higher-Order Filters
+
+### 6.1 Third-Order Butterworth LPF
+*[Appeared in: 2017 Q8(b)]*
+
+**Question:**
+* **(b)** Draw the frequency response curve for the active filter shown below. Assume identical component values of $R = 10\text{ k}\Omega$ and $C = 0.1\ \mu\text{F}$. **[06 Marks]**
+*(Circuit: A 3rd-order active Butterworth Low-Pass Filter made by cascading a 1st-order RC stage with a 2nd-order Sallen-Key stage).*
+
+**Answer:**
+**Step 1: Identify the Filter and Calculate Cutoff Frequency ($f_c$)**
+The circuit is a 3rd-order active low-pass filter. Since all components are identical ($R = 10\text{ k}\Omega$, $C = 0.1\ \mu\text{F}$), the cutoff frequency is:
+$$ f_c = \frac{1}{2\pi R C} = \frac{1}{2\pi (10,000\ \Omega) (0.1 \times 10^{-6}\text{ F})} = \frac{1}{2\pi \times 10^{-3}} \approx 159.15\text{ Hz} $$
+
+**Step 2: Frequency Response Curve Characteristics**
+*   **Passband:** The gain is flat (Butterworth) from $0\text{ Hz}$ up to near $f_c$.
+*   **Cutoff Point:** At $f_c = 159.15\text{ Hz}$, the gain drops by $-3\text{ dB}$.
+*   **Stopband:** Since it is a 3rd-order filter ($n=3$), the roll-off rate is $-n \times 20\text{ dB/decade} = -60\text{ dB/decade}$.
+*   **Sketch:** The sketch should show a flat horizontal line at $0\text{ dB}$ that smoothly curves down at $159\text{ Hz}$ and becomes a steep straight line sloping downward at $-60\text{ dB/decade}$.
+
+---
+
+## 7. Notch / Band-Reject Filters
+
+### 7.1 Twin-T Notch Filter
+*[Appeared in: 2019 Q8(b), 2021 Q7(d)]*
+
+**Question:**
+* **(b)** Draw the schematic of a Twin-T notch filter. Calculate its notch frequency if $R = 20\text{ k}\Omega$ and $C = 0.01\ \mu\text{F}$. **[04 Marks]**
+* *(Also appeared in 2021 Q7(d) with $R = 15\text{ k}\Omega$ and $C = 0.01\ \mu\text{F}$)*
+
+**Answer:**
+**Schematic Diagram:**
+A Twin-T notch filter uses two "T" networks in parallel: one Low-Pass T-network ($R-R-2C$) and one High-Pass T-network ($C-C-R/2$).
+```text
+                  +---[ R ]---+---[ R ]---+
+                  |           |           |
+                  |         --- 2C        |
+                  |         ---           |
+                  |           |           |
+         Vi o-----+          GND          +-----o Vo
+                  |           |           |
+                  |         [R/2]         |
+                  |           |           |
+                  +----||-----+----||-----+
+                       C           C
+```
+*Note: In an active Twin-T filter, the output $V_o$ is typically buffered by an op-amp voltage follower, and the ground connection is bootstrapped to the output to increase the $Q$ factor.*
+
+**Calculations:**
+The notch frequency (center frequency of maximum rejection) is given by the standard formula:
+$$ f_N = \frac{1}{2\pi R C} $$
+
+**For 2019 Q8(b):** $R = 20\text{ k}\Omega, C = 0.01\ \mu\text{F}$
+$$ f_N = \frac{1}{2\pi (20,000) (0.01 \times 10^{-6})} = \frac{1}{2\pi \times 2 \times 10^{-4}} \approx 795.77\text{ Hz} $$
+
+**For 2021 Q7(d):** $R = 15\text{ k}\Omega, C = 0.01\ \mu\text{F}$
+$$ f_N = \frac{1}{2\pi (15,000) (0.01 \times 10^{-6})} = \frac{1}{2\pi \times 1.5 \times 10^{-4}} \approx 1061.03\text{ Hz} $$
 
 [Previous](07_555_Timer.md) | [Home](index.md) | [Next](09_CMOS_Logic_and_Special_Circuits.md)

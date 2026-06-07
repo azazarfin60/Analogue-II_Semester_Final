@@ -5,20 +5,32 @@
 
 ---
 
-## 1. Ideal Characteristics & Virtual Ground
+## 1. Introduction and Ideal Characteristics
 
-### 1.1 Physical Parameters & The Virtual Ground Concept
-*[Appeared in: 2024 Q5(a), 2024 Q5(c), 2023 Q5(a)]*
+### 1.1 The "Operational" Amplifier
+*[Appeared in: 2023 Q5(a)]*
+
+**Question:**
+* **(a)** Why is an operational amplifier referred to as an "operational" amplifier? Explain with historical context. **[02 Marks, CLO2]**
+
+**Answer:**
+The term "operational" comes from its original historical use in analog computers. In the 1940s and 1950s, these high-gain amplifiers were combined with external resistor and capacitor networks to perform mathematical operations. They were used to add, subtract, integrate, and differentiate signals to solve complex differential equations.
+
+---
+
+### 1.2 Physical Parameters & The Virtual Ground Concept
+*[Appeared in: 2024 Q5(a), 2024 Q5(c), 2017 Q6(a)]*
 
 **Question:**
 * **(a)** Explain the concept of "virtual ground" in operational amplifiers. Derive the closed-loop voltage gain of a non-inverting op-amp using this concept. **[04 Marks, CO2]**
-* **(c)** Define and explain the physical significance of the following op-amp parameters: (i) Common-Mode Rejection Ratio (CMRR), (ii) Open-loop voltage gain ($A_{OL}$), and (iii) Input offset voltage ($V_{OS}$). **[03 Marks, CO1]**
+* **(c)** Define and explain the physical significance of the following op-amp parameters: (i) Common-Mode Rejection Ratio (CMRR), (ii) Open-loop voltage gain ($A_{OL}$), (iii) Input offset voltage ($V_{OS}$), and (iv) PSRR. **[03 Marks, CO1]**
 
 **Answer:**
 **Op-Amp Parameters:**
 1.  **Open-Loop Voltage Gain ($A_{OL}$):** The raw differential gain of the op-amp without feedback. It is ideally infinite ($\infty$), but practically very large ($\sim 10^5$ to $10^6$). Its massive size creates the virtual short concept.
 2.  **Common-Mode Rejection Ratio (CMRR):** The ratio of the differential gain ($A_d$) to the common-mode gain ($A_c$). It is ideally infinite. It measures the op-amp's ability to reject noise on both input terminals.
 3.  **Input Offset Voltage ($V_{OS}$):** The small DC voltage needed across the inputs to force the output to exactly $0\text{V}$. It is ideally zero. It comes from tiny manufacturing mismatches in the input transistors.
+4.  **Power Supply Rejection Ratio (PSRR):** The ability of the op-amp to reject noise from the power supply lines. It is ideally infinite. It prevents supply ripples from appearing at the output.
 
 **The Virtual Ground Concept:**
 In a closed-loop negative feedback circuit, the power supply rails (e.g., $\pm 15\text{V}$) constrain the output voltage ($V_o$). Since $A_{OL}$ is huge, the required differential input voltage is tiny:
@@ -146,5 +158,16 @@ The Gain-Bandwidth Product ($GBW$ or $f_T$) is a constant parameter. It is the f
 1.  **Miller Capacitance:** The parasitic capacitance between the input and output nodes of an internal stage. The Miller effect multiplies this capacitance by the stage gain. This dominates the high-frequency roll-off.
 2.  **Input Junction Capacitance:** The Base-Emitter capacitance ($C_{be}$ or $C_{\pi}$) in BJTs, and Gate-Source capacitance ($C_{gs}$) in FETs.
 3.  **Wiring and Stray Capacitances:** Parasitic capacitances from the physical traces and packaging layout that shunt high-frequency signals to ground.
+
+---
+
+### 3.2 Frequency Compensation
+*[Appeared in: 2017 Q8(a)]*
+
+**Question:**
+* **(a)** Why is frequency compensation necessary in practical operational amplifiers? **[03 Marks]**
+
+**Answer:**
+Frequency compensation is necessary to prevent high-frequency oscillations. Op-amps have multiple internal amplification stages. Each stage adds a phase shift. At high frequencies, these phase shifts can add up to $180^\circ$. If the amplifier still has a voltage gain greater than $1$ ($0\text{ dB}$) at this frequency, the negative feedback turns into positive feedback. The circuit becomes unstable and oscillates. Frequency compensation uses an internal or external capacitor (like the Miller capacitor) to artificially roll off the gain at lower frequencies. This ensures the gain drops below $1$ long before the phase shift reaches $180^\circ$.
 
 [Previous](03_Feedback_Amplifiers.md) | [Home](index.md) | [Next](05_OpAmp_Applications.md)

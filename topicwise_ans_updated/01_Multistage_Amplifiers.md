@@ -386,3 +386,140 @@ $$A_{v2} = -\frac{R_C}{r_e}$$
 $$A_v = A_{v1} \times A_{v2} = g_m (r_d \parallel R_D \parallel Z_{i2}) \times \frac{R_C}{r_e}$$
 
 [Home](index.md) | [Next](02_Frequency_Response.md)
+
+---
+
+## 6. Constant Current Source Design
+
+**Question:**
+*[Appeared in: 2021 Q2(c)]*
+* **(c)** Design an NPN BJT constant current source circuit to sink a constant current of $I = 4.65\text{ mA}$ from the collector. The negative DC supply is $-V_{EE} = -20\text{ V}$. Assume a silicon transistor with $V_{BE} = 0.7\text{ V}$ and emitter node voltage $V_E = -10.7\text{ V}$. Find the values of $R_1, R_2$ and $R_E$. **[04 Marks, CLO3]**
+
+**Answer:**
+**Step 1: Calculate Emitter Resistor ($R_E$)**
+The emitter current is roughly equal to the collector current ($I_E \approx I_C = 4.65\text{ mA}$).
+$$R_E = \frac{V_E - (-V_{EE})}{I_E} = \frac{-10.7\text{ V} - (-20\text{ V})}{4.65\text{ mA}} = \frac{9.3\text{ V}}{4.65\text{ mA}} = 2\text{ k}\Omega$$
+
+**Step 2: Calculate Base Voltage ($V_B$)**
+$$V_B = V_E + V_{BE} = -10.7\text{ V} + 0.7\text{ V} = -10\text{ V}$$
+
+**Step 3: Design Voltage Divider ($R_1, R_2$)**
+The voltage divider sets $V_B$ to $-10\text{ V}$. The divider connects between Ground ($0\text{ V}$) and $-20\text{ V}$.
+$$V_B = -V_{EE} \left( \frac{R_1}{R_1 + R_2} \right)$$
+Using $V_B = -10\text{ V}$ and $-V_{EE} = -20\text{ V}$, we see $V_B$ is exactly half the supply voltage.
+$$\frac{R_1}{R_1 + R_2} = 0.5 \implies R_1 = R_2$$
+Choose standard resistor values, for example:
+$$R_1 = 10\text{ k}\Omega$$
+$$R_2 = 10\text{ k}\Omega$$
+
+---
+
+## 7. Collector-Feedback Configuration
+
+**Question:**
+*[Appeared in: 2023 Q2(c)]*
+* **(c)** For the collector-feedback BJT amplifier network, calculate the input impedance ($Z_i$), output impedance ($Z_o$), voltage gain ($A_v$), and current gain ($A_i$). The BJT parameter values are $h_{fe} = 120$, $h_{ie} = 1.175\text{ k}\Omega$, and $h_{oe} = 20\ \mu\text{A/V}$. The circuit has $R_C = 2.7\text{ k}\Omega$ and $R_F = 330\text{ k}\Omega$. **[03 Marks, CLO2]**
+
+**Answer:**
+Convert $h$-parameters to $r_e$ model parameters:
+$$\beta = h_{fe} = 120$$
+$$r_e = \frac{h_{ie}}{\beta} = \frac{1175\ \Omega}{120} \approx 9.79\ \Omega$$
+$$r_o = \frac{1}{h_{oe}} = \frac{1}{20\ \mu\text{A/V}} = 50\text{ k}\Omega$$
+
+**1. Input Impedance ($Z_i$):**
+$$Z_i = \beta r_e \parallel \frac{R_F}{|A_v|}$$
+Assuming $|A_v| \approx R_C / r_e = 2700 / 9.79 = 275.8$:
+$$Z_i \approx 1175 \parallel \frac{330\text{ k}\Omega}{275.8} = 1175 \parallel 1196 \approx 593\ \Omega$$
+
+**2. Output Impedance ($Z_o$):**
+$$Z_o = R_C \parallel R_F \parallel r_o = 2.7\text{ k}\Omega \parallel 330\text{ k}\Omega \parallel 50\text{ k}\Omega \approx 2.55\text{ k}\Omega$$
+
+**3. Voltage Gain ($A_v$):**
+$$A_v = -\frac{R_C \parallel R_F \parallel r_o}{r_e} = -\frac{2550}{9.79} \approx -260.5$$
+
+**4. Current Gain ($A_i$):**
+$$A_i = \frac{I_o}{I_i} = A_v \left( \frac{Z_i}{R_C} \right) = -260.5 \left( \frac{593}{2700} \right) \approx -57.2$$
+
+---
+
+## 8. Push-Pull Configuration Biasing
+
+**Question:**
+*[Appeared in: 2024 Q1(c)]*
+* **(c)** Calculate the DC bias currents and voltages for the NPN-PNP complementary push-pull emitter follower stage, such that the DC output voltage is exactly half of the supply voltage ($V_o = 9\text{ V}$). Transistor parameters are: NPN $Q_1$ ($\beta_1 = 140$) and PNP $Q_2$ ($\beta_2 = 180$). The circuit has $V_{CC} = +18\text{ V}$, $R_C = 750\ \Omega$, and a base resistor $R_B = 2\text{ M}\Omega$. **[03 Marks, CO2]**
+
+**Answer:**
+**Step 1: Output Node Voltage**
+The problem specifies the quiescent output voltage is exactly half the supply voltage:
+$$V_o = \frac{18\text{ V}}{2} = 9\text{ V}$$
+
+**Step 2: Base Voltages**
+Assuming standard emitter follower configuration:
+For the NPN transistor ($Q_1$), the base voltage must be $0.7\text{ V}$ higher than the emitter.
+$$V_{B1} = V_o + 0.7\text{ V} = 9.7\text{ V}$$
+For the PNP transistor ($Q_2$), the base voltage must be $0.7\text{ V}$ lower than the emitter.
+$$V_{B2} = V_o - 0.7\text{ V} = 8.3\text{ V}$$
+
+**Step 3: Quiescent Currents**
+In a true Class B push-pull amplifier without base biasing diodes, both transistors are completely OFF under zero-signal DC conditions. Therefore, the quiescent bias currents are zero:
+$$I_{CQ1} = I_{CQ2} = 0\text{ mA}$$
+*(Note: If this is an active feedback pair, the $2\text{ M}\Omega$ resistor sets the base current $I_B = 9.7\text{ V} / 2\text{ M}\Omega = 4.85\ \mu\text{A}$, yielding $I_{C1} = 140 \times 4.85\ \mu\text{A} = 0.68\text{ mA}$.)*
+
+---
+
+## 9. JFET Biasing Configurations
+
+### 9.1 Self-Bias JFET Q-Point
+
+**Question:**
+*[Appeared in: 2023 Q3(a)]*
+* **(a)** Calculate the Q-point parameters ($I_{DQ}$ and $V_{GSQ}$) and the quiescent drain-to-ground voltage ($V_D$) for the JFET self-bias network. The JFET parameters are $I_{DSS} = 8\text{ mA}$ and $V_P = -8\text{ V}$. The circuit has $V_{DD} = 20\text{ V}$, $R_D = 6.2\text{ k}\Omega$, and $R_S = 2.4\text{ k}\Omega$. **[04 Marks, CLO2]**
+
+**Answer:**
+**Step 1: Find $V_{GSQ}$ and $I_{DQ}$**
+In a self-bias circuit, the gate draws no DC current, so $V_G = 0\text{ V}$.
+The source voltage is $V_S = I_D R_S$.
+$$V_{GS} = V_G - V_S = -I_D R_S = -2400 I_D$$
+
+Substitute into Shockley's equation:
+$$I_D = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2 = 8\text{ mA} \left( 1 - \frac{-2400 I_D}{-8} \right)^2$$
+$$I_D = 0.008 (1 - 300 I_D)^2 = 0.008 (1 - 600 I_D + 90000 I_D^2)$$
+$$720 I_D^2 - 5.8 I_D + 0.008 = 0$$
+
+Using the quadratic formula:
+$$I_D = \frac{5.8 \pm \sqrt{(-5.8)^2 - 4(720)(0.008)}}{2(720)} = \frac{5.8 \pm 3.256}{1440}$$
+This gives $I_D \approx 6.28\text{ mA}$ (rejected, $V_{GS}$ exceeds $V_P$) and $I_D \approx 1.76\text{ mA}$ (accepted).
+$$I_{DQ} = 1.76\text{ mA}$$
+
+Calculate $V_{GSQ}$:
+$$V_{GSQ} = -2400 \times 1.76\text{ mA} \approx -4.22\text{ V}$$
+
+**Step 2: Calculate Drain Voltage ($V_D$)**
+$$V_D = V_{DD} - I_D R_D = 20\text{ V} - (1.76\text{ mA} \times 6.2\text{ k}\Omega)$$
+$$V_D = 20\text{ V} - 10.91\text{ V} = 9.09\text{ V}$$
+
+---
+
+### 9.2 Voltage-Divider Bias JFET Design
+
+**Question:**
+*[Appeared in: 2023 Q3(b)]*
+* **(b)** For the JFET voltage-divider bias configuration, determine the value of the source resistor $R_S$ required to yield a drain voltage $V_D = 12\text{ V}$ and a quiescent gate-to-source voltage $V_{GSQ} = -2\text{ V}$. The circuit has $V_{DD} = 16\text{ V}$, $R_{G1} = 91\text{ k}\Omega$, $R_{G2} = 47\text{ k}\Omega$, and $R_D = 1.8\text{ k}\Omega$. **[03 Marks, CLO2]**
+
+**Answer:**
+**Step 1: Calculate Drain Current ($I_D$)**
+We know the drain voltage $V_D$ and the supply $V_{DD}$.
+$$I_D = \frac{V_{DD} - V_D}{R_D} = \frac{16\text{ V} - 12\text{ V}}{1.8\text{ k}\Omega} = \frac{4\text{ V}}{1.8\text{ k}\Omega} \approx 2.22\text{ mA}$$
+
+**Step 2: Calculate Gate Voltage ($V_G$)**
+Using the voltage divider formula:
+$$V_G = V_{DD} \left( \frac{R_{G2}}{R_{G1} + R_{G2}} \right) = 16\text{ V} \left( \frac{47\text{ k}\Omega}{91\text{ k}\Omega + 47\text{ k}\Omega} \right) = 16 \times \frac{47}{138} \approx 5.45\text{ V}$$
+
+**Step 3: Calculate Source Resistor ($R_S$)**
+We know that $V_{GS} = V_G - V_S$, and $V_S = I_D R_S$.
+$$V_{GS} = V_G - I_D R_S$$
+$$-2\text{ V} = 5.45\text{ V} - (2.22\text{ mA} \times R_S)$$
+$$2.22\text{ mA} \times R_S = 7.45\text{ V}$$
+$$R_S = \frac{7.45\text{ V}}{2.22\text{ mA}} \approx 3.35\text{ k}\Omega$$
+
+[Home](index.md) | [Next](02_Frequency_Response.md)

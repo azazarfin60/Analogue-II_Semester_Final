@@ -214,4 +214,207 @@ $$ I_{in} = \frac{V_{in} - 2 V_{in}}{R} = -\frac{V_{in}}{R} $$
 $$ Z_{in} = \frac{V_{in}}{I_{in}} = -R $$
 The circuit acts as a negative resistor. It pushes current *back* into the signal source instead of drawing it.
 
+---
+
+## 5. Mathematical Operations and Subtraction
+
+### 5.1 Voltage Subtractor
+*[Appeared in: 2021 Q3(c)]*
+
+**Question:**
+* **(c)** Design an operational amplifier based voltage subtractor circuit that provides an output voltage $V_o = V_1 - V_2$, where $V_1$ and $V_2$ are the input signals. **[04 Marks, CLO3]**
+
+**Answer:**
+A voltage subtractor (difference amplifier) uses a single op-amp with both inputs active.
+```text
+           R1            Rf
+     V1 o--[ ]----+------[ ]------+
+                  |               |
+                  +------|-\      |
+                         |  \-----+---o Vo
+                  +------|+ /
+                  |      | /
+     V2 o--[ ]----+      |/
+           R2     |
+                 [ ] Rg
+                  |
+                 GND
+```
+**Design:** Set all four resistors to the same value: $R_1 = R_2 = R_f = R_g = 10\text{ k}\Omega$.
+1.  **Non-inverting input voltage:** $V_+ = V_2 \left( \frac{R_g}{R_2 + R_g} \right) = V_2 \left( \frac{10\text{k}}{20\text{k}} \right) = \frac{V_2}{2}$
+2.  **Inverting input voltage:** By virtual short, $V_- = V_+ = \frac{V_2}{2}$
+3.  **KCL at inverting node:**
+$$ \frac{V_1 - V_-}{R_1} + \frac{V_o - V_-}{R_f} = 0 $$
+$$ \frac{V_1 - V_2/2}{10\text{k}} + \frac{V_o - V_2/2}{10\text{k}} = 0 $$
+$$ V_1 - \frac{V_2}{2} + V_o - \frac{V_2}{2} = 0 \Rightarrow V_o = V_2 - V_1 $$
+*(Note: To get exactly $V_1 - V_2$, swap the input terminals so $V_1$ connects to the non-inverting path and $V_2$ connects to the inverting path).*
+
+---
+
+### 5.2 Non-Inverting Summer
+*[Appeared in: 2022 Q5(c)]*
+
+**Question:**
+* **(c)** Determine the closed-loop output voltage $V_o$ of the multi-input op-amp summing circuit. **[03 Marks, CO3]**
+*(Given inputs $V_a, V_b, V_c$ connected via resistors $R_a, R_b, R_c$ to the non-inverting terminal. Feedback uses $R_1$ and $R_f$.)*
+
+**Answer:**
+1.  **Calculate Non-Inverting Node Voltage ($V_+$):**
+Apply Millman's Theorem at the non-inverting node:
+$$ V_+ = \frac{\frac{V_a}{R_a} + \frac{V_b}{R_b} + \frac{V_c}{R_c}}{\frac{1}{R_a} + \frac{1}{R_b} + \frac{1}{R_c}} $$
+2.  **Calculate Output Voltage ($V_o$):**
+The circuit acts as a non-inverting amplifier amplifying the node voltage $V_+$.
+$$ V_o = V_+ \left( 1 + \frac{R_f}{R_1} \right) $$
+Substitute $V_+$ to find the final summation output.
+
+---
+
+### 5.3 Cascaded Summing Circuit
+*[Appeared in: 2017 Q8(c)]*
+
+**Question:**
+* **(c)** Sketch the output voltage wave shape for the cascaded op-amp analog circuit. The inputs are $v_{s1} = 10\sin(\omega t - 30^\circ)\text{ V}$ and $v_{s2} = 10\sin(\omega t + 30^\circ)\text{ V}$. **[04 Marks]**
+*(Circuit: Stage 1 is an inverting amplifier with gain $-10$ processing $v_{s1}$. Stage 2 is an inverting summer that sums Stage 1's output with $v_{s2}$ with unity gain).*
+
+**Answer:**
+**Step 1: Stage 1 Output ($V_{o1}$)**
+$$ V_{o1} = -10 v_{s1} = -100\sin(\omega t - 30^\circ) $$
+**Step 2: Stage 2 Output ($V_o$)**
+The summing amplifier has unity gain for both inputs.
+$$ V_o = -(V_{o1} + v_{s2}) = -(-10 v_{s1} + v_{s2}) = 10 v_{s1} - v_{s2} $$
+**Step 3: Combine Waves**
+$$ V_o = 100\sin(\omega t - 30^\circ) - 10\sin(\omega t + 30^\circ) $$
+The sketch shows a large sine wave (amplitude roughly 90 to 100) that is a composite of the two phase-shifted inputs.
+
+---
+
+## 6. Integrators & Rectifiers
+
+### 6.1 Switched Integrator Waveform
+*[Appeared in: 2018 Q3(c)]*
+
+**Question:**
+* **(c)** Sketch the output voltage waveform ($v_o(t)$) for the switched op-amp integrator circuit. The switch is closed at $t = 0$ and the input is a constant $V_i = 12\text{ V}$ DC. The circuit has $R = 200\text{ k}\Omega$ and $C = 1\ \mu\text{F}$. **[04 Marks]**
+
+**Answer:**
+**Calculation:**
+The integration rate is determined by the $RC$ time constant:
+$$ \frac{d v_o(t)}{d t} = -\frac{V_i}{R C} = -\frac{12\text{ V}}{200\text{ k}\Omega \times 1\ \mu\text{F}} = -\frac{12}{0.2} = -60\text{ V/s} $$
+**Waveform Sketch:**
+For $t < 0$, $v_o = 0\text{ V}$.
+At $t = 0$, the output begins ramping downwards linearly.
+The equation is a straight line: $v_o(t) = -60t$ (in Volts).
+The sketch should show a negative-going ramp starting from $0\text{V}$ and reaching $-6\text{V}$ at $t = 0.1\text{ s}$.
+
+---
+
+### 6.2 Precision Rectifiers (Half & Full Wave)
+*[Appeared in: 2020 Q7(c), 2019 Q5(b)]*
+
+**Question:**
+* **(c)** Draw a neat schematic of a precision full-wave rectifier using op-amps and explain its operation. **[04 Marks]**
+
+**Answer:**
+A standard diode cannot rectify signals smaller than $0.7\text{ V}$. A **precision rectifier** places the diode inside the op-amp's feedback loop. The op-amp divides the $0.7\text{ V}$ drop by its huge open-loop gain ($A_{OL}$). This allows the circuit to rectify signals in the millivolt range perfectly.
+
+**Precision Half-Wave Rectifier:**
+```text
+         Vin o--(+)--[ Av ]--|>|---+---o Vout
+                 |                 |
+                GND o--(-)---------+
+```
+For positive inputs, the diode conducts, and $V_{out} = V_{in}$. For negative inputs, the diode is reverse biased, the loop breaks, and $V_{out} = 0\text{ V}$.
+
+**Precision Full-Wave Rectifier (Absolute Value Circuit):**
+It requires two op-amps.
+1.  **Stage 1:** A precision half-wave rectifier that inverts the negative half-cycles.
+2.  **Stage 2:** An inverting summing amplifier that adds the original input signal and the output of Stage 1 in a specific ratio to produce a perfect full-wave rectified output ($V_{out} = |V_{in}|$).
+
+---
+
+## 7. Comparators and Waveform Generators
+
+### 7.1 Schmitt Trigger Design
+*[Appeared in: 2020 Q8(c)]*
+
+**Question:**
+* **(c)** Design an op-amp based Schmitt trigger circuit with an Upper Trigger Point $V_{UT} = 7\text{ V}$ and a Lower Trigger Point $V_{LT} = 3\text{ V}$. Assume the op-amp saturation voltages are $\pm 15\text{ V}$. **[04 Marks]**
+
+**Answer:**
+We use an inverting Schmitt trigger with an external reference voltage $V_{ref}$.
+The trigger points are defined by the resistor ratio $n = R_1 / (R_1 + R_2)$.
+$$ V_{UT} = \frac{R_1}{R_1 + R_2} (+V_{sat}) + \frac{R_2}{R_1 + R_2} V_{ref} $$
+$$ V_{LT} = \frac{R_1}{R_1 + R_2} (-V_{sat}) + \frac{R_2}{R_1 + R_2} V_{ref} $$
+Subtracting them to find the hysteresis width $V_H$:
+$$ V_H = V_{UT} - V_{LT} = \frac{R_1}{R_1 + R_2} (2 V_{sat}) \Rightarrow 7 - 3 = 4\text{ V} $$
+$$ 4 = \frac{R_1}{R_1 + R_2} (30) \Rightarrow \frac{R_1}{R_1 + R_2} = \frac{4}{30} = \frac{2}{15} $$
+Let $R_1 = 2\text{ k}\Omega$. Then $R_1 + R_2 = 15\text{ k}\Omega$, which means $R_2 = 13\text{ k}\Omega$.
+Adding the trigger points to find $V_{ref}$:
+$$ V_{UT} + V_{LT} = \frac{R_2}{R_1 + R_2} (2 V_{ref}) \Rightarrow 10 = \frac{13}{15} (2 V_{ref}) \Rightarrow V_{ref} = \frac{150}{26} \approx 5.77\text{ V} $$
+
+---
+
+### 7.2 Pulse and Triangular Wave Generators
+*[Appeared in: 2017 Q6(c)]*
+
+**Question:**
+* **(c)** Draw neat schematics of pulse and triangular wave generator circuits using operational amplifiers. **[03 Marks]**
+
+**Answer:**
+**Triangular Wave Generator:**
+A triangular wave generator is built by cascading a Schmitt Trigger (astable multivibrator) and an Integrator.
+```text
+           +Vsat                      C
+             |                      +--||--+
+           [ R1 ]                   |      |
+             |       |\             |  |\  |
+             +-------|+\            +--|-\ |
+             |       |  \   Square  |  |  \|
+             |       |   >--o---[ R ]--|   >--o Triangular Output
+           [ R2 ] +--|- /              |+ /
+             |    |  | /               | /
+            GND   |  |/               GND
+                  |
+                  +--------------------------------+
+```
+**Pulse Generator (Astable Multivibrator):**
+A square/pulse wave generator uses an RC timing network and positive feedback to toggle between $\pm V_{sat}$.
+```text
+                  +--[ R ]--+
+                  |         |
+                  |   |\    |
+             C  +-----|-\   |
+           ---  |     |  \  |
+           ---  |     |   >-+--o Pulse Output
+            |   |  +--|+ /  |
+           GND  |  |  | /   |
+                |  |  |/    |
+                | [R1]      |
+                |  |        |
+               GND +--[R2]--+
+```
+
+---
+
+### 7.3 Op-Amp Clamping Network
+*[Appeared in: 2021 Q6(c)]*
+
+**Question:**
+* **(c)** Draw the output voltage waveform ($v_o(t)$) for the op-amp clamping network. The diodes $D_1$ and $D_2$ are ideal, and the input voltage is a pure sinusoidal signal $v_{in}(t) = 1\sin(\omega t)\text{ V}$ peak. **[04 Marks, CLO2]**
+*(Circuit: An inverting amplifier with gain $A_v = -10$. Back-to-back clipping diodes are placed at the output, clipping at $\pm 15\text{ V}$.)*
+
+**Answer:**
+**Step 1: Calculate Unclamped Output**
+The theoretical unclamped output is:
+$$ v_o'(t) = A_v v_{in}(t) = -10 \times 1\sin(\omega t)\text{ V} = -10\sin(\omega t)\text{ V} $$
+
+**Step 2: Check Clamping Limits**
+The circuit has parallel diodes connected to reference voltages of $+15\text{ V}$ and $-15\text{ V}$.
+This means the output cannot rise above $+15\text{ V}$ or fall below $-15\text{ V}$.
+
+**Step 3: Waveform Sketch**
+Since the peak theoretical voltage is $\pm 10\text{ V}$, it never reaches the $\pm 15\text{ V}$ clamping limits.
+The output remains completely **unclamped**.
+The sketch is a perfect, clean inverted sine wave with a peak amplitude of exactly $10\text{ V}$.
+
 [Previous](04_OpAmp_Fundamentals.md) | [Home](index.md) | [Next](06_Oscillators.md)
